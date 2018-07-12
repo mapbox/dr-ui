@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactTestKitchen from '@mapbox/react-test-kitchen';
-import componentIndex from './component-index';
+import componentIndex from './component-index'; // eslint-disable-line
 
 class App extends React.Component {
   render() {
@@ -10,6 +10,5 @@ class App extends React.Component {
 }
 
 const container = document.createElement('div');
-container.setAttribute('id', 'app');
 document.body.appendChild(container);
 ReactDOM.render(<App />, container);
