@@ -9,7 +9,7 @@
     "budo": "budo test/app.js -l -d -P -- -t babelify",
     "prestart": "npm run build-component-index && npm run cp-assembly",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-component-index": "rtk-index ./src ./src/test-cases-app/component-index.js",
+    "build-component-index": "rtk-index ./src/components ./src/test-cases-app/component-index.js",
     "lint": "eslint .",
     "pretest": "npm run lint",
     "precommit": "lint-staged",
@@ -53,6 +53,8 @@
     "react-dom": "^16.4.1"
   },
   "dependencies": {
-    "@mapbox/react-icon-button": "^0.3.9"
+    "@mapbox/react-icon": "^0.2.2",
+    "@mapbox/react-icon-button": "^0.3.9",
+    "extend": "^3.0.1"
   }
 }

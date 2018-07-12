@@ -1,4 +1,5 @@
-components
+./components
 node_modules
 .DS_Store
 dist
+src/test-cases-app/component-index.js
