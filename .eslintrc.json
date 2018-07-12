@@ -1,8 +1,9 @@
 {
-  "extends": [
-    "@mapbox/eslint-config-mapbox/react",
-    "@mapbox/eslint-config-mapbox/import",
-    "@mapbox/eslint-config-mapbox/promise",
-    "prettier"
-  ]
+  "env": {
+    "node": true,
+    "browser": false,
+    "commonjs": true
+  },
+  "extends": ["@mapbox/eslint-config-mapbox/node6", "prettier"],
+  "plugins": ["node"]
 }
