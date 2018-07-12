@@ -4,9 +4,12 @@
   "description": "Mapbox frontend tools for documentation websites.",
   "main": "index.js",
   "scripts": {
-    "start": "budo ./test-cases-app/index.js --dir ./test-cases-app --live --debug --pushstate -- -t babelify",
-    "prestart": "bin/build-component-index.js",
+    "start": "budo ./src/test-cases-app/test-cases-app.js --dir ./src/test-cases-app --live --debug --pushstate -- -t babelify",
+    "cp-assembly": "del ./src/test-cases-app/dist && cpy node_modules/@mapbox/mapbox-assembly/dist/*.* ./src/test-cases-app/dist",
+    "budo": "budo test/app.js -l -d -P -- -t babelify",
+    "prestart": "npm run build-component-index && npm run cp-assembly",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build-component-index": "rtk-index ./src ./src/test-cases-app/component-index.js",
     "lint": "eslint .",
     "pretest": "npm run lint",
     "precommit": "lint-staged",
@@ -25,11 +28,17 @@
   "homepage": "https://github.com/mapbox/frontend-documentation#readme",
   "devDependencies": {
     "@mapbox/eslint-config-mapbox": "^1.2.1",
+    "@mapbox/mapbox-assembly": "^0.26.0",
+    "@mapbox/react-test-kitchen": "^0.1.0",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babelify": "^8.0.0",
     "budo": "^11.3.2",
+    "cpy": "^7.0.1",
+    "cpy-cli": "^2.0.0",
+    "del": "^3.0.0",
+    "del-cli": "^1.1.0",
     "eslint": "^5.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.13.0",
@@ -48,5 +57,8 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-test-renderer": "^16.4.1"
+  },
+  "dependencies": {
+    "@mapbox/react-icon-button": "^0.3.9"
   }
 }
