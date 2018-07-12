@@ -14,6 +14,7 @@ function getTestCases(m) {
 }
 
 module.exports = [
-  { title: 'BackToTopButton', cases: getTestCases(require('./../back-to-top-button/__tests__/back-to-top-button-test-cases.js')) },
-  { title: 'TutorialCard', cases: getTestCases(require('./../tutorial-card/__tests__/tutorial-card-test-cases.js')) }
+  { title: 'BackToTopButton', cases: getTestCases(require('./../components/back-to-top-button/__tests__/back-to-top-button-test-cases.js')) },
+  { title: 'OverviewHeader', cases: getTestCases(require('./../components/overview-header/__tests__/overview-header-test-cases.js')) },
+  { title: 'TutorialCard', cases: getTestCases(require('./../components/tutorial-card/__tests__/tutorial-card-test-cases.js')) }
 ];
