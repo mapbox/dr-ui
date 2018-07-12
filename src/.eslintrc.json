@@ -1,0 +1,25 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true
+  },
+  "extends": [
+    "@mapbox/eslint-config-mapbox/react",
+    "@mapbox/eslint-config-mapbox/import",
+    "@mapbox/eslint-config-mapbox/promise",
+    "prettier"
+  ],
+  "rules": {},
+  "overrides": [
+    {
+      "files": [
+        "**/__tests__/*.test.js",
+        "test-util/*.js"
+      ],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
+}
