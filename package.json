@@ -53,6 +53,7 @@
     "react-dom": "^16.4.1"
   },
   "dependencies": {
+    "@mapbox/react-icon": "^0.2.2",
     "@mapbox/react-icon-button": "^0.3.9",
     "@mapbox/react-popover-trigger": "^0.5.6",
     "classnames": "^2.2.6",

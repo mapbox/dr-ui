@@ -6,7 +6,7 @@ import { ProductMenuDropdown } from '../product-menu-dropdown/product-menu-dropd
 // You could import this list from, say, a data selector if you like
 // On Mapbox docs pages, categories data is imported from a central location
 // to keep menus in sync across the site.
-import categoryItems from '../product-menu-dropdown/product-menu-dropdown-dummy-data';
+import { ProductMenuItems } from '../../data/product-menu-items';
 
 const popoverProps = {
   placement: 'bottom',
@@ -24,7 +24,7 @@ class ProductMenu extends React.PureComponent {
   }
 
   renderMenu() {
-    return <ProductMenuDropdown categories={categoryItems} />;
+    return <ProductMenuDropdown categories={ProductMenuItems} />;
   }
 
   onPopoverOpen() {
