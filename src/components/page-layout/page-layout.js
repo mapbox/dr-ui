@@ -39,12 +39,12 @@ class PageLayout extends React.Component {
             enabled={true}
             bottomBoundary={state.bottomBoundaryValue}
             innerZ={1}
-            top={50}
+            top={props.sidebarContentStickyTop}
             activeClass="bg-gray-faint shadow-darken-10"
           >
             <div className="txt-ms pt24-mm pt0 viewport-almost-mm scroll-auto ml36 mt-neg60 mt0-mm">
               <div className="txt-l color-blue txt-fancy mb12 block-mm none">
-                {props.sectionTitle}
+                {props.sidebarTitle}
               </div>
               {props.sidebarContent}
             </div>
@@ -63,14 +63,15 @@ class PageLayout extends React.Component {
 
 PageLayout.propTypes = {
   sidebarContent: PropTypes.any,
-  sectionTitle: PropTypes.string,
+  sidebarTitle: PropTypes.string,
   sidebarColor: PropTypes.string,
-  sidebarPaddingTop: PropTypes.string,
+  sidebarContentStickyTop: PropTypes.number,
   children: PropTypes.any
 };
 
 PageLayout.defaultProps = {
-  sidebarColor: 'bg-gray-faint'
+  sidebarColor: 'bg-gray-faint',
+  sidebarContentStickyTop: 50
 };
 
 export default PageLayout;

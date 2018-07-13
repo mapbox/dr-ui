@@ -8,7 +8,18 @@ testCases.basic = {
   component: PageLayout,
   props: {
     sidebarContent: <div>Some content</div>,
-    sectionTitle: 'Some title',
+    sidebarTitle: 'Some title',
+    children: <div>Doc content</div>
+  }
+};
+
+testCases.top = {
+  description: 'Custom top value',
+  component: PageLayout,
+  props: {
+    sidebarContent: <div>Some content</div>,
+    sidebarTitle: 'Some title',
+    sidebarContentStickyTop: 10,
     children: <div>Doc content</div>
   }
 };
@@ -18,7 +29,7 @@ testCases.color = {
   component: PageLayout,
   props: {
     sidebarContent: <div>Some content</div>,
-    sectionTitle: 'Some title',
+    sidebarTitle: 'Some title',
     sidebarColor: 'bg-white',
     children: <div>Doc content</div>
   }
