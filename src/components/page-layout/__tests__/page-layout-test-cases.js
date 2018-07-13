@@ -13,25 +13,15 @@ testCases.basic = {
   }
 };
 
-testCases.top = {
-  description: 'Custom top value',
+testCases.allTheOptions = {
+  description: 'All the options',
   component: PageLayout,
   props: {
     sidebarContent: <div>Some content</div>,
-    sidebarTitle: 'Some title',
+    children: <div>Doc content</div>,
+    sidebarTheme: 'bg-white',
     sidebarContentStickyTop: 10,
-    children: <div>Doc content</div>
-  }
-};
-
-testCases.color = {
-  description: 'Specify background color',
-  component: PageLayout,
-  props: {
-    sidebarContent: <div>Some content</div>,
-    sidebarTitle: 'Some title',
-    sidebarColor: 'bg-white',
-    children: <div>Doc content</div>
+    sidebarStackedOnNarrowScreens: true
   }
 };
 
