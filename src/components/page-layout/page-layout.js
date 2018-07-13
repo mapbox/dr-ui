@@ -1,35 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Sticky from 'react-stickynode';
-import _ from 'lodash';
+import debounce from 'debounce';
 
 class PageLayout extends React.Component {
   constructor(props) {
     super(props);
-    this.throttledHandleWindowResize = this.throttledHandleWindowResize.bind(
-      this
-    );
     this.state = {
       height: 0
     };
-  }
-
-  componentDidMount() {
-    this.throttledHandleWindowResize();
-    window.addEventListener('resize', this.throttledHandleWindowResize);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.throttledHandleWindowResize);
-  }
-
-  throttledHandleWindowResize() {
-    _.throttle(() => {
+    this.debounceHandleWindowResize = debounce(() => {
       const height = document.body.clientHeight;
       this.setState({
         bottomBoundaryValue: height - 450
       });
     }, 200);
+  }
+
+  componentDidMount() {
+    this.debounceHandleWindowResize();
+    window.addEventListener('resize', this.debounceHandleWindowResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.debounceHandleWindowResize);
   }
 
   render() {
@@ -71,6 +65,7 @@ PageLayout.propTypes = {
   sidebarContent: PropTypes.any,
   sectionTitle: PropTypes.string,
   sidebarColor: PropTypes.string,
+  sidebarPaddingTop: PropTypes.string,
   children: PropTypes.any
 };
 
