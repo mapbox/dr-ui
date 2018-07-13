@@ -17,7 +17,7 @@ class NavigationDropdown extends React.Component {
     });
 
     return (
-      <div className="py24 px24 flex-parent flex-parent--space-between-main flex-parent--center-cross">
+      <div className="py24 px24">
         <ControlSelect
           id="navigate-this-section"
           onChange={() => {
@@ -26,7 +26,6 @@ class NavigationDropdown extends React.Component {
           value={currentOption[0].value}
           options={optionsArray}
           themeControlSelect="select--stroke round-full bg-white"
-          themeControlSelectContainer="flex-child flex-child--no-shrink"
         />
       </div>
     );

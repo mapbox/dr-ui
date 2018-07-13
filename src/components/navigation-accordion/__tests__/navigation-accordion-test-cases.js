@@ -1,4 +1,3 @@
-// import React from 'react';
 import NavigationAccordion from '../navigation-accordion';
 
 const testCases = {};
@@ -19,16 +18,14 @@ testCases.basic = {
           path: 'page-two'
         }
       ],
-      seccondLevelItems: [
+      secondLevelItems: [
         {
-          level: 2,
-          slug: 'heading-one',
-          text: 'Heading one'
+          title: 'Heading one',
+          path: 'heading-one'
         },
         {
-          level: 2,
-          slug: 'heading-two',
-          text: 'Heading two'
+          title: 'Heading two',
+          path: 'heading-two'
         }
       ]
     }

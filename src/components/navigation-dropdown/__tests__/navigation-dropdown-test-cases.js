@@ -1,4 +1,3 @@
-// import React from 'react';
 import NavigationDropdown from '../navigation-dropdown';
 
 const testCases = {};
