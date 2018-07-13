@@ -2,11 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import PopoverTrigger from '@mapbox/react-popover-trigger';
 import Icon from '@mapbox/react-icon';
-import { ProductMenuDropdown } from '../product-menu-dropdown/product-menu-dropdown';
-// You could import this list from, say, a data selector if you like
-// On Mapbox docs pages, categories data is imported from a central location
-// to keep menus in sync across the site.
-import { ProductMenuItems } from '../../data/product-menu-items';
 
 const popoverProps = {
   placement: 'bottom',
@@ -23,10 +18,6 @@ class ProductMenu extends React.PureComponent {
     this.onPopoverClose = this.onPopoverClose.bind(this);
   }
 
-  renderMenu() {
-    return <ProductMenuDropdown categories={ProductMenuItems} />;
-  }
-
   onPopoverOpen() {
     this.setState({ open: true });
   }
@@ -38,7 +29,7 @@ class ProductMenu extends React.PureComponent {
   render() {
     return (
       <PopoverTrigger
-        content={this.renderMenu}
+        content={this.props.children}
         popoverProps={popoverProps}
         onPopoverOpen={this.onPopoverOpen}
         onPopoverClose={this.onPopoverClose}
@@ -60,7 +51,8 @@ class ProductMenu extends React.PureComponent {
 
 ProductMenu.propTypes = {
   platform: PropTypes.string.isRequired,
-  product: PropTypes.string.isRequired
+  product: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired
 };
 
 export { ProductMenu };
