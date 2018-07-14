@@ -11,7 +11,7 @@ class CardWithImage extends React.Component {
           href={this.props.path}
           style={{ verticalAlign: 'top' }}
         >
-          <div>{props.thumbnail}</div>
+          <div className="relative h120 mb12">{props.thumbnail}</div>
           <div className="px6 pb6">
             <div className="mb6 txt-m">{this.props.title}</div>
             <div className="txt-s opacity75">{this.props.description}</div>

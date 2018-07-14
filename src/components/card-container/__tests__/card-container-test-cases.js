@@ -20,7 +20,15 @@ testCases.basic = {
         path="path"
         description="description"
         thumbnail={
-          <img src="https://i.giphy.com/media/A9lgUYVqLeRb2/giphy.webp" />
+          <div
+            className="relative h120 mb12"
+            style={{
+              backgroundImage:
+                "url('https://i.giphy.com/media/A9lgUYVqLeRb2/giphy.webp')",
+              backgroundSize: '100% auto',
+              backgroundPosition: 'center'
+            }}
+          />
         }
       />,
       <CardWithImage
@@ -29,7 +37,15 @@ testCases.basic = {
         path="path"
         description="description"
         thumbnail={
-          <img src="https://i.giphy.com/media/A9lgUYVqLeRb2/giphy.webp" />
+          <div
+            className="relative h120 mb12"
+            style={{
+              backgroundImage:
+                "url('https://i.giphy.com/media/A9lgUYVqLeRb2/giphy.webp')",
+              backgroundSize: '100% auto',
+              backgroundPosition: 'center'
+            }}
+          />
         }
       />
     ]
