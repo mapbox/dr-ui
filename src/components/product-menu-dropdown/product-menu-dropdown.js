@@ -3,23 +3,27 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Icon from '@mapbox/react-icon';
 
+const activeDotStyle = {
+  content: '',
+  width: '6px',
+  height: '6px',
+  borderRadius: '3px',
+  background: '#4264fb',
+  position: 'absolute',
+  margin: '10px 0 0 -12px',
+  display: 'none'
+};
+
 class ProductMenuDropdown extends React.PureComponent {
   render() {
     const categoryLength = this.props.categories.length;
-    const activeDotStyle = {
-      content: '',
-      width: '6px',
-      height: '6px',
-      borderRadius: '3px',
-      background: '#4264fb',
-      position: 'absolute',
-      margin: '10px 0 0 -12px',
-      display: 'none'
-    };
     const allCategories = this.props.categories.map((category, index) => {
       const allProducts = category.products.map((product, index) => {
+        const locationTest = location
+          ? location.pathname.indexOf(product.url) > -1
+          : false;
         const liClasses = classnames('mt6 relative ', {
-          'txt-bold': product.url && location.pathname.indexOf(product.url) > -1
+          'txt-bold': product.url && locationTest
         });
         const dotClasses = classnames({
           'inline-block': location.pathname.indexOf(product.url) > -1,

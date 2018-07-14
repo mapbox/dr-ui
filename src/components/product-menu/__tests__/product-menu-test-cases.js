@@ -1,16 +1,39 @@
 import React from 'react';
 import { ProductMenu } from '../product-menu';
-// You could import this list from, say, a data selector if you like
-// On Mapbox docs pages, categories data is imported from a central location
-// to keep menus in sync across the site.
 import { ProductMenuItems } from '../../../data/product-menu-items';
 import { ProductMenuDropdown } from '../../product-menu-dropdown/product-menu-dropdown';
 
 const testCases = {};
 const noRenderCases = {};
+const locationTestItems = [
+  {
+    productCategory: 'Foo',
+    icon: 'map',
+    products: [
+      {
+        url: '/mapbox-gl-js/',
+        name: 'Foo1'
+      },
+      {
+        url: '/ios-sdk/maps/',
+        name: 'Foo2'
+      }
+    ]
+  },
+  {
+    productCategory: 'Bar',
+    icon: 'compass',
+    products: [
+      {
+        url: '/ProductMenu',
+        name: 'ProductMenu'
+      }
+    ]
+  }
+];
 
-function renderMenu() {
-  return <ProductMenuDropdown categories={ProductMenuItems} />;
+function renderMenu(items) {
+  return <ProductMenuDropdown categories={items} />;
 }
 
 function renderBoring() {
@@ -23,7 +46,17 @@ testCases.mapboxMenu = {
   props: {
     platform: 'Geography',
     product: 'Globes',
-    children: renderMenu()
+    children: renderMenu(ProductMenuItems)
+  }
+};
+
+testCases.locationMenu = {
+  component: ProductMenu,
+  description: "Fake items, but one matches this test case's location",
+  props: {
+    platform: 'Fake',
+    product: 'Location',
+    children: renderMenu(locationTestItems)
   }
 };
 
