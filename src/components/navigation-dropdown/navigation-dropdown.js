@@ -14,16 +14,14 @@ class NavigationDropdown extends React.Component {
     });
     const currentOption = optionsArray.filter(option => {
       return props.currentPath === option.value;
-    });
+    })[0];
 
     return (
       <div className="py24 px24">
         <ControlSelect
           id="navigate-this-section"
-          onChange={() => {
-            // routeToPrefixed(value);
-          }}
-          value={currentOption[0].value}
+          onChange={props.onChange}
+          value={currentOption.value}
           options={optionsArray}
           themeControlSelect="select--stroke round-full bg-white"
         />
@@ -39,7 +37,8 @@ NavigationDropdown.propTypes = {
       title: PropTypes.string.isRequired,
       path: PropTypes.string.isRequired
     })
-  ).isRequired
+  ).isRequired,
+  onChange: PropTypes.func
 };
 
 export default NavigationDropdown;

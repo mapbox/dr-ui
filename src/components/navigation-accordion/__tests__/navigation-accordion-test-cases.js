@@ -28,7 +28,8 @@ testCases.basic = {
           path: 'heading-two'
         }
       ]
-    }
+    },
+    onDropdownChange: () => {}
   }
 };
 
@@ -48,7 +49,8 @@ testCases.noSecondLevelItems = {
           path: 'page-two'
         }
       ]
-    }
+    },
+    onDropdownChange: () => {}
   }
 };
 
