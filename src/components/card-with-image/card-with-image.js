@@ -29,4 +29,4 @@ CardWithImage.propTypes = {
   thumbnail: PropTypes.node.isRequired
 };
 
-export default CardWithImage;
+export { CardWithImage };

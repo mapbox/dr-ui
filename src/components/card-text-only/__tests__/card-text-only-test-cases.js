@@ -1,4 +1,4 @@
-import CardTextOnly from '../card-text-only';
+import { CardTextOnly } from '../card-text-only';
 
 const testCases = {};
 const noRenderCases = {};

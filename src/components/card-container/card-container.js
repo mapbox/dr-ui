@@ -11,7 +11,7 @@ class CardContainer extends React.PureComponent {
           href={props.category.path}
           className="unprose mb12 block color-blue-on-hover"
         >
-          <h2 className="pt60 txt-l txt-capitalize-first" id={categoryID}>
+          <h2 className="pt60 txt-l" id={categoryID}>
             {props.category.title} ({props.cards.length})
           </h2>
         </a>
@@ -29,4 +29,4 @@ CardContainer.propTypes = {
   cards: PropTypes.array.isRequired
 };
 
-export default CardContainer;
+export { CardContainer };

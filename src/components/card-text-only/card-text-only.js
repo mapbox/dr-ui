@@ -27,4 +27,4 @@ CardTextOnly.propTypes = {
   description: PropTypes.string.isRequired
 };
 
-export default CardTextOnly;
+export { CardTextOnly };

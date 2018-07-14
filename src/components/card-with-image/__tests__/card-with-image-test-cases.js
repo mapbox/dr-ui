@@ -1,5 +1,5 @@
 import React from 'react';
-import CardWithImage from '../card-with-image';
+import { CardWithImage } from '../card-with-image';
 
 const testCases = {};
 const noRenderCases = {};
