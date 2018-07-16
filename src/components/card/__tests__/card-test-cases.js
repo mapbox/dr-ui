@@ -1,11 +1,11 @@
 import React from 'react';
-import { CardWithImage } from '../card-with-image';
+import { Card } from '../card';
 
 const testCases = {};
 const noRenderCases = {};
 
 testCases.basic = {
-  component: CardWithImage,
+  component: Card,
   description: 'Plain ol card',
   props: {
     title: 'Title',

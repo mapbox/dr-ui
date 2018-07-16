@@ -1,7 +1,6 @@
 import React from 'react';
 import { CardContainer } from '../card-container';
-import { CardWithImage } from '../../card-with-image/card-with-image';
-import { CardTextOnly } from '../../card-text-only/card-text-only';
+import { Card } from '../../card/card';
 
 const testCases = {};
 
@@ -9,12 +8,11 @@ testCases.basic = {
   component: CardContainer,
   description: 'Basic',
   props: {
-    category: {
-      title: 'Category',
-      path: '#category'
-    },
+    title: 'Category',
+    path: '#category',
+    fullWidthCards: false,
     cards: [
-      <CardWithImage
+      <Card
         key="0"
         title="Example one"
         path="path"
@@ -31,7 +29,7 @@ testCases.basic = {
           />
         }
       />,
-      <CardWithImage
+      <Card
         key="1"
         title="Example two"
         path="path"
@@ -56,23 +54,17 @@ testCases.noImage = {
   component: CardContainer,
   description: 'No thumbnail image',
   props: {
-    category: {
-      title: 'Another category',
-      path: '#another-category'
-    },
+    title: 'Another category',
+    path: '#another-category',
+    fullWidthCards: true,
     cards: [
-      <CardTextOnly
+      <Card
         key="0"
         title="Example one"
         path="path"
         description="description"
       />,
-      <CardTextOnly
-        key="1"
-        title="Example two"
-        path="path"
-        description="description"
-      />
+      <Card key="1" title="Example two" path="path" description="description" />
     ]
   }
 };
