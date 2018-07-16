@@ -75,7 +75,7 @@ class NavigationAccordion extends React.PureComponent {
     return (
       <div>
         <div className="block-mm none">{firstLevelContent}</div>
-        <div className="none-mm block bg-gray-faint">
+        <div className="none-mm block bg-gray-faint px24 py24">
           <NavigationDropdown
             currentPath={props.currentPath}
             dropdownOptions={props.contents.firstLevelItems}

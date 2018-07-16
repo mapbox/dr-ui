@@ -17,15 +17,13 @@ class NavigationDropdown extends React.Component {
     })[0];
 
     return (
-      <div className="py24 px24">
-        <ControlSelect
-          id="navigate-this-section"
-          onChange={props.onChange}
-          value={currentOption.value}
-          options={optionsArray}
-          themeControlSelect="select--stroke round-full bg-white"
-        />
-      </div>
+      <ControlSelect
+        id="navigate-this-section"
+        onChange={props.onChange}
+        value={currentOption.value}
+        options={optionsArray}
+        themeControlSelect="select--stroke round-full bg-white"
+      />
     );
   }
 }
