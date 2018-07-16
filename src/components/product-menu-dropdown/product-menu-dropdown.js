@@ -22,13 +22,27 @@ class ProductMenuDropdown extends React.PureComponent {
         const locationTest = location
           ? location.pathname.indexOf(product.url) > -1
           : false;
+
+        let isActive;
+        if (
+          product.url &&
+          locationTest &&
+          location.pathname.indexOf(product.url) > -1
+        ) {
+          isActive = true;
+        } else {
+          isActive = false;
+        }
+
         const liClasses = classnames('mt6 relative ', {
-          'txt-bold': product.url && locationTest
+          'txt-bold': isActive
         });
+
         const dotClasses = classnames({
-          'inline-block': location.pathname.indexOf(product.url) > -1,
-          none: location.pathname.indexOf(product.url) < 0
+          'inline-block': isActive,
+          none: !isActive
         });
+
         return (
           <li className={liClasses} key={index}>
             <div style={activeDotStyle} className={dotClasses} />

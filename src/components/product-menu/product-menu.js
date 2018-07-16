@@ -34,15 +34,13 @@ class ProductMenu extends React.PureComponent {
         onPopoverOpen={this.onPopoverOpen}
         onPopoverClose={this.onPopoverClose}
       >
-        <div className="fl wmax240-ml wmax180-mm flex-parent flex-parent--space-between-main flex-parent--center-cross">
-          <div className="flex-child inline-block txt-fancy txt-l cursor-pointer border-b border-b--2 border--white border--blue-on-hover txt-truncate">
+        <div className="fl wmax240-ml wmax180-mm flex-parent flex-parent--space-between-main flex-parent--center-cross cursor-pointer border-b border-b--2 border--transparent border--blue-on-hover">
+          <div className="flex-child inline-block txt-fancy txt-l txt-truncate">
             {this.props.product} SDK for {this.props.platform}
           </div>
-          <Icon
-            name="caret-down"
-            inline={true}
-            className="flex-child fr icon h30 w30"
-          />
+          <div className="flex-child fr">
+            <Icon name="caret-down" inline={true} className="icon h30 w30" />
+          </div>
         </div>
       </PopoverTrigger>
     );

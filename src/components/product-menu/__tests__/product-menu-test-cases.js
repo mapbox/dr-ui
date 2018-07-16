@@ -4,7 +4,6 @@ import { ProductMenuItems } from '../../../data/product-menu-items';
 import { ProductMenuDropdown } from '../../product-menu-dropdown/product-menu-dropdown';
 
 const testCases = {};
-const noRenderCases = {};
 const locationTestItems = [
   {
     productCategory: 'Foo',
@@ -70,4 +69,4 @@ testCases.arbitraryElement = {
   }
 };
 
-export default { testCases, noRenderCases };
+export default { testCases };
