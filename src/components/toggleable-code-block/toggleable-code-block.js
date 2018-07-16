@@ -20,15 +20,13 @@ class ToggleableCodeBlock extends React.Component {
       return snippet.preferredLanguage === true;
     })[0];
     const renderedCodeBlock = (
-      <div className="unprose mb12">
-        <CodeSnippet
-          style={{ background: '#273d56' }}
-          code={currentCodeSnippet.rawCode}
-          highlightedCode={currentCodeSnippet.highlightedCode}
-          maxHeight={480}
-          onCopy={() => {}}
-        />
-      </div>
+      <CodeSnippet
+        style={{ background: '#273d56' }}
+        code={currentCodeSnippet.rawCode}
+        highlightedCode={currentCodeSnippet.highlightedCode}
+        maxHeight={480}
+        onCopy={() => {}}
+      />
     );
     return <div>{renderedCodeBlock}</div>;
   }

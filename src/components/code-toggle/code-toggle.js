@@ -7,10 +7,10 @@ class CodeToggle extends React.Component {
     const { props } = this;
     return (
       <ControlToggleSet
-        themeToggleGroup="bg-blue py3 px3 mb12"
+        themeToggleGroup="bg-blue py3 px3"
         themeToggle="txt-s py3 toggle--white toggle--active-blue"
         onChange={value => {
-          props.changeLanguage(value);
+          props.onChange(value);
         }}
         value={
           props.options.filter(option => {

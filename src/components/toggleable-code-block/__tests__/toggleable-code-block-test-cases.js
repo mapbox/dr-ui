@@ -54,17 +54,6 @@ public class MainActivity extends AppCompatActivity {
 }
 `;
 
-const javaScriptCodeSnippet = `
-<div id='map' style='width: 400px; height: 300px;'></div>
-<script>
-  mapboxgl.accessToken = 'pk.eyJ1IjoiZXhhbXBsZXMiLCJhIjoiY2lqbmp1MzNhMDBud3VvbHhqbjY1cnV2cCJ9.uGJJU2wgtXzcBNc62vY4_A';
-    var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v10'
-  });
-</script>
-`;
-
 testCases.basic = {
   component: ToggleableCodeBlock,
   description: 'Swift highlighting',
@@ -119,25 +108,10 @@ testCases.java = {
         preferredLanguage: true
       },
       {
-        language: 'objective-c',
-        rawCode: objectiveCCodeSnippet,
-        highlightedCode: highlightCodeBlock(objectiveCCodeSnippet),
+        language: 'kotlin',
+        rawCode: '// Not available',
+        highlightedCode: '// Not available',
         preferredLanguage: false
-      }
-    ]
-  }
-};
-
-testCases.javaScript = {
-  component: ToggleableCodeBlock,
-  description: 'JavaScript highlighting',
-  props: {
-    codeSnippet: [
-      {
-        language: 'javascript',
-        rawCode: javaScriptCodeSnippet,
-        highlightedCode: highlightCodeBlock(javaScriptCodeSnippet),
-        preferredLanguage: true
       }
     ]
   }
