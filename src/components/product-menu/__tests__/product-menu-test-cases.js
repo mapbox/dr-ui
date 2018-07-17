@@ -43,8 +43,7 @@ testCases.mapboxMenu = {
   component: ProductMenu,
   description: 'Mapbox product menu',
   props: {
-    platform: 'Geography',
-    product: 'Globes',
+    productName: 'Mapbox product names',
     children: renderMenu(ProductMenuItems)
   }
 };
@@ -53,8 +52,7 @@ testCases.locationMenu = {
   component: ProductMenu,
   description: "Fake items, but one matches this test case's location",
   props: {
-    platform: 'Fake',
-    product: 'Location',
+    productName: 'Items in here',
     children: renderMenu(locationTestItems)
   }
 };
@@ -63,8 +61,7 @@ testCases.arbitraryElement = {
   component: ProductMenu,
   description: 'Product menu with something arbitrary in it',
   props: {
-    platform: 'Pizza',
-    product: 'Hut',
+    productName: 'Pizza pie',
     children: renderBoring()
   }
 };

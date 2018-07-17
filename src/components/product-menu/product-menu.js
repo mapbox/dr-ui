@@ -34,11 +34,11 @@ class ProductMenu extends React.PureComponent {
         onPopoverOpen={this.onPopoverOpen}
         onPopoverClose={this.onPopoverClose}
       >
-        <div className="fl wmax240-ml wmax180-mm flex-parent flex-parent--space-between-main flex-parent--center-cross cursor-pointer border-b border-b--2 border--transparent border--blue-on-hover">
-          <div className="flex-child inline-block txt-fancy txt-l txt-truncate">
-            {this.props.product} SDK for {this.props.platform}
+        <div className="wmax240-ml wmax180-mm flex-parent flex-parent--space-between-main flex-parent--center-cross cursor-pointer border-b border-b--2 border--transparent border--blue-on-hover">
+          <div className="flex-child txt-fancy txt-l txt-truncate">
+            {this.props.productName}
           </div>
-          <div className="flex-child fr">
+          <div className="flex-child">
             <Icon name="caret-down" inline={true} className="icon h30 w30" />
           </div>
         </div>
@@ -48,8 +48,7 @@ class ProductMenu extends React.PureComponent {
 }
 
 ProductMenu.propTypes = {
-  platform: PropTypes.string.isRequired,
-  product: PropTypes.string.isRequired,
+  productName: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired
 };
 
