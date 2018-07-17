@@ -3,10 +3,17 @@ import PropTypes from 'prop-types';
 import PopoverTrigger from '@mapbox/react-popover-trigger';
 import Icon from '@mapbox/react-icon';
 
+const popoverUserStyle = {
+  style: {
+    maxHeight: '90vh',
+    minHeight: '100%',
+    backgroundColor: '#fff'
+  }
+};
 const popoverProps = {
   placement: 'bottom',
-  themePopover:
-    'round shadow-darken25 viewport-almost-but-not-always scroll-auto scroll-styled'
+  themePopover: 'round shadow-darken25 scroll-auto scroll-styled',
+  contentElementAttributes: popoverUserStyle
 };
 
 class ProductMenu extends React.PureComponent {
