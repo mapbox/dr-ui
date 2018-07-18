@@ -5,30 +5,32 @@ import ControlToggleSet from '@mapbox/react-control-toggle-set';
 class CodeToggle extends React.Component {
   render() {
     const { props } = this;
+    const language = props.options.filter(option => {
+      return option.preferredLanguage === true;
+    })[0].language;
+    const options = props.options.map(option => {
+      return {
+        label: option.language,
+        value: option.language
+      };
+    });
     return (
       <ControlToggleSet
+        id={props.id}
         themeToggleGroup="bg-blue py3 px3"
         themeToggle="txt-s py3 toggle--white toggle--active-blue"
         onChange={value => {
           props.onChange(value);
         }}
-        value={
-          props.options.filter(option => {
-            return option.preferredLanguage === true;
-          })[0].language
-        }
-        options={props.options.map(option => {
-          return {
-            label: option.language,
-            value: option.language
-          };
-        })}
+        value={language}
+        options={options}
       />
     );
   }
 }
 
 CodeToggle.propTypes = {
+  id: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   options: PropTypes.arrayOf(
     PropTypes.shape({

@@ -7,6 +7,8 @@ testCases.basic = {
   component: CodeToggle,
   description: 'Swift preferred',
   props: {
+    id: 'one',
+    onChange: () => {},
     options: [
       {
         language: 'swift',
@@ -24,6 +26,8 @@ testCases.objectiveC = {
   component: CodeToggle,
   description: 'Objective C preferred',
   props: {
+    id: 'two',
+    onChange: () => {},
     options: [
       {
         language: 'swift',
@@ -41,6 +45,8 @@ testCases.objectiveC = {
   component: CodeToggle,
   description: 'Objective C preferred',
   props: {
+    id: 'three',
+    onChange: () => {},
     options: [
       {
         language: 'javascript',
