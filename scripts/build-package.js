@@ -40,6 +40,22 @@ function copyFiles() {
   });
 }
 
+function copyCss() {
+  makeDir(path.resolve(rootDir, 'pkg/css')).then(path => {
+    return cpy(['src/css/*.css'], path, {
+      cwd: rootDir
+    });
+  });
+}
+
+function copyData() {
+  makeDir(path.resolve(rootDir, 'pkg/data')).then(path => {
+    return cpy(['src/data/*'], path, {
+      cwd: rootDir
+    });
+  });
+}
+
 // Create a package.json that is ready to be published.
 // Should definitely not be "private" and does not need to include
 // development-only features.
@@ -59,5 +75,11 @@ function createPackageJson() {
 del(outputDir)
   .then(() => makeDir(outputDir))
   .then(() =>
-    Promise.all([compileComponents(), copyFiles(), createPackageJson()])
+    Promise.all([
+      compileComponents(),
+      copyFiles(),
+      copyCss(),
+      copyData(),
+      createPackageJson()
+    ])
   );

@@ -1,6 +1,6 @@
 # @mapbox/dr-ui
 
-Pronounced "Doctor UI". **D**ocumentation **R**eact **UI** components. See [@mapbox/dr-ui](https://github.com/mapbox/dr-ui).
+Pronounced "Doctor UI". **D**ocumentation **R**eact **UI** components. See [@mapbox/mr-ui](https://github.com/mapbox/mr-ui).
 
 UI components for Mapbox documentation projects.
 
