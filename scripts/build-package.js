@@ -36,13 +36,13 @@ function compileComponents() {
 // Copy other src files that we want in the package.
 function copySrcFiles() {
   return cpy(['css/*.css', 'data/*'], outputDir, {
-    cwd: rootDir + '/src',
+    cwd: path.join(rootDir, 'src'),
     parents: true
   });
 }
 
 // Copy non-src files that we want in the package.
-function copyFiles() {
+function copyMetaItems() {
   return cpy(['LICENSE', 'CHANGELOG.md', 'README.md'], outputDir, {
     cwd: rootDir
   });
@@ -69,7 +69,7 @@ del(outputDir)
   .then(() =>
     Promise.all([
       compileComponents(),
-      copyFiles(),
+      copyMetaItems(),
       copySrcFiles(),
       createPackageJson()
     ])
