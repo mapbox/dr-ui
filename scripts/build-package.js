@@ -33,26 +33,18 @@ function compileComponents() {
   );
 }
 
+// Copy other src files that we want in the package.
+function copySrcFiles() {
+  return cpy(['css/*.css', 'data/*'], outputDir, {
+    cwd: rootDir + '/src',
+    parents: true
+  });
+}
+
 // Copy non-src files that we want in the package.
 function copyFiles() {
   return cpy(['LICENSE', 'CHANGELOG.md', 'README.md'], outputDir, {
     cwd: rootDir
-  });
-}
-
-function copyCss() {
-  makeDir(path.resolve(rootDir, 'pkg/css')).then(path => {
-    return cpy(['src/css/*.css'], path, {
-      cwd: rootDir
-    });
-  });
-}
-
-function copyData() {
-  makeDir(path.resolve(rootDir, 'pkg/data')).then(path => {
-    return cpy(['src/data/*'], path, {
-      cwd: rootDir
-    });
   });
 }
 
@@ -78,8 +70,7 @@ del(outputDir)
     Promise.all([
       compileComponents(),
       copyFiles(),
-      copyCss(),
-      copyData(),
+      copySrcFiles(),
       createPackageJson()
     ])
   );
