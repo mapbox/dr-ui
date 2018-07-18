@@ -6,7 +6,7 @@ const noRenderCases = {};
 
 testCases.basic = {
   component: Card,
-  description: 'Plain ol card',
+  description: 'Card with image',
   props: {
     title: 'Title',
     path: 'url',
@@ -21,6 +21,16 @@ testCases.basic = {
         }}
       />
     ),
+    description: 'described.'
+  }
+};
+
+testCases.noImage = {
+  component: Card,
+  description: 'Card with no image',
+  props: {
+    title: 'Title',
+    path: 'url',
     description: 'described.'
   }
 };
