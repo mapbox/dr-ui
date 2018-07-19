@@ -10,7 +10,13 @@
     "@mapbox/eslint-config-mapbox/promise",
     "prettier"
   ],
-  "rules": {},
+  "rules": {
+    "prefer-const": "off",
+    "react/no-deprecated": "off",
+    "react/no-string-refs": "off",
+    "react/no-access-state-in-setstate": "off",
+    "react/jsx-boolean-value": "off"
+  },
   "overrides": [
     {
       "files": [

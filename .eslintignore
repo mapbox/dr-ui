@@ -5,6 +5,7 @@ coverage
 .DS_Store
 **/_batfish*
 src/docs/data
+src/components/*/index.js
 packages/**/package-lock.json
 pkg
 src/test-cases-app/component-index.js
