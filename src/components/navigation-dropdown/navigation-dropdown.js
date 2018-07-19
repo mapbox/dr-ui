@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ControlSelect from '@mapbox/react-control-select';
-// import { routeToPrefixed } from '@mapbox/batfish/modules/route-to';
+import ControlSelect from '@mapbox/mr-ui/control-select';
 
 class NavigationDropdown extends React.Component {
   render() {

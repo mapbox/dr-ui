@@ -1,5 +1,5 @@
 import React from 'react';
-import IconButton from '@mapbox/react-icon-button';
+import IconButton from '@mapbox/mr-ui/icon-button';
 
 export default class BackToTopButton extends React.Component {
   render() {

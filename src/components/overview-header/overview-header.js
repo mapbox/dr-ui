@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Icon from '@mapbox/react-icon';
+import Icon from '@mapbox/mr-ui/icon';
 
 class OverviewHeader extends React.PureComponent {
   renderVersion() {
