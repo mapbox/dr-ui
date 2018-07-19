@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import Icon from '@mapbox/react-icon';
+import Icon from '@mapbox/mr-ui/icon';
 import NavigationDropdown from '../navigation-dropdown/navigation-dropdown';
 
 class NavigationAccordion extends React.PureComponent {

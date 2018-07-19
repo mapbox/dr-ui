@@ -59,15 +59,10 @@
     "react-dom": "^16.4.1"
   },
   "dependencies": {
-    "@mapbox/react-code-snippet": "^0.1.21",
-    "@mapbox/react-control-toggle-set": "^0.4.1",
-    "@mapbox/react-control-select": "^0.5.0",
-    "@mapbox/react-icon": "^0.2.2",
-    "@mapbox/react-icon-button": "^0.3.9",
-    "@mapbox/react-popover-trigger": "^0.5.6",
-    "extend": "^3.0.1",
+    "@mapbox/mr-ui": "^0.1.0",
     "classnames": "^2.2.6",
     "debounce": "^1.1.0",
+    "extend": "^3.0.1",
     "react-stickynode": "^2.0.1"
   }
 }

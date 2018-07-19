@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import PopoverTrigger from '@mapbox/react-popover-trigger';
-import Icon from '@mapbox/react-icon';
+import PopoverTrigger from '@mapbox/mr-ui/popover-trigger';
+import Icon from '@mapbox/mr-ui/icon';
 
 const popoverUserStyle = {
   style: {

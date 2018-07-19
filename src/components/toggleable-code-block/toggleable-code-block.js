@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import CodeSnippet from '@mapbox/react-code-snippet';
+import CodeSnippet from '@mapbox/mr-ui/code-snippet';
 
 class ToggleableCodeBlock extends React.Component {
   constructor(props) {
