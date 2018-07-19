@@ -49,7 +49,7 @@ class NavigationAccordion extends React.PureComponent {
         if (isActive && secondLevelContent) {
           renderedSecondLevelContent = (
             <div className="ml24 pt0">
-              <ul className="txt-m pb12 inline-block-mm none color-blue-on-hover unprose">
+              <ul className="txt-m pb12 inline-block-mm none unprose">
                 {secondLevelContent}
               </ul>
             </div>
