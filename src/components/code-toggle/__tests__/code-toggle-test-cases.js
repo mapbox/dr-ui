@@ -1,4 +1,4 @@
-import { CodeToggle } from '../code-toggle';
+import CodeToggle from '../code-toggle';
 
 const testCases = {};
 const noRenderCases = {};

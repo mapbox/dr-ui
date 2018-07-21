@@ -28,4 +28,4 @@ ExamplesPage.propTypes = {
   cardContainers: PropTypes.arrayOf(PropTypes.node).isRequired
 };
 
-export { ExamplesPage };
+export default ExamplesPage;

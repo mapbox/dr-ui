@@ -103,4 +103,4 @@ ProductMenuDropdown.propTypes = {
   ).isRequired
 };
 
-export { ProductMenuDropdown };
+export default ProductMenuDropdown;

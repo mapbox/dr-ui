@@ -2,6 +2,10 @@ import NavigationDropdown from '../navigation-dropdown';
 
 const testCases = {};
 
+function onChangeTest() {
+  console.log('🐢 🐙 🍕');
+}
+
 testCases.basic = {
   description: 'Basic',
   component: NavigationDropdown,
@@ -16,7 +20,8 @@ testCases.basic = {
         title: 'Title two',
         path: 'page-two'
       }
-    ]
+    ],
+    onChange: onChangeTest
   }
 };
 

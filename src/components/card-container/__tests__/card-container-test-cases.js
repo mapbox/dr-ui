@@ -1,6 +1,6 @@
 import React from 'react';
-import { CardContainer } from '../card-container';
-import { Card } from '../../card/card';
+import CardContainer from '../card-container';
+import Card from '../../card/card';
 
 const testCases = {};
 

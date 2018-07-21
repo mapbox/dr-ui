@@ -49,4 +49,4 @@ ToggleableCodeBlock.propTypes = {
   ).isRequired
 };
 
-export { ToggleableCodeBlock };
+export default ToggleableCodeBlock;

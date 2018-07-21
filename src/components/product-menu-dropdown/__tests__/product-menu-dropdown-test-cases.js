@@ -1,4 +1,4 @@
-import { ProductMenuDropdown } from '../product-menu-dropdown';
+import ProductMenuDropdown from '../product-menu-dropdown';
 import { ProductMenuItems } from '../../../data/product-menu-items';
 
 const testCases = {};

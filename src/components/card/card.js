@@ -32,4 +32,4 @@ Card.propTypes = {
   thumbnail: PropTypes.node
 };
 
-export { Card };
+export default Card;

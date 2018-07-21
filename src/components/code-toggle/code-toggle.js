@@ -46,4 +46,4 @@ CodeToggle.propTypes = {
   ).isRequired
 };
 
-export { CodeToggle };
+export default CodeToggle;

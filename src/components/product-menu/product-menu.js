@@ -58,4 +58,4 @@ ProductMenu.propTypes = {
   children: PropTypes.node.isRequired
 };
 
-export { ProductMenu };
+export default ProductMenu;

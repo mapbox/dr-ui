@@ -1,4 +1,4 @@
-import { ToggleableCodeBlock } from '../toggleable-code-block';
+import ToggleableCodeBlock from '../toggleable-code-block';
 import { highlightCodeBlock } from '../../../util/highlight-code-block';
 // import { AppContext } from '../context.js';
 

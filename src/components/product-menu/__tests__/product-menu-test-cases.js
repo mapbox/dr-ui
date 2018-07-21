@@ -1,7 +1,7 @@
 import React from 'react';
-import { ProductMenu } from '../product-menu';
+import ProductMenu from '../product-menu';
 import { ProductMenuItems } from '../../../data/product-menu-items';
-import { ProductMenuDropdown } from '../../product-menu-dropdown/product-menu-dropdown';
+import ProductMenuDropdown from '../../product-menu-dropdown/product-menu-dropdown';
 
 const testCases = {};
 const locationTestItems = [

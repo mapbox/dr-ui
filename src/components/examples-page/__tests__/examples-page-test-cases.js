@@ -1,7 +1,7 @@
 import React from 'react';
-import { ExamplesPage } from '../examples-page';
-import { CardContainer } from '../../card-container/card-container';
-import { Card } from '../../card/card';
+import ExamplesPage from '../examples-page';
+import CardContainer from '../../card-container/card-container';
+import Card from '../../card/card';
 
 const testCases = {};
 

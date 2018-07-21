@@ -18,11 +18,11 @@ testCases.standard = {
           },
           {
             text: 'Mark a place',
-            url: '#foo'
+            url: '#footoo'
           },
           {
             text: 'Apply a style',
-            url: '#foo'
+            url: '#fooandyou'
           }
         ]
       },
@@ -32,11 +32,11 @@ testCases.standard = {
         items: [
           {
             text: 'Annotation models',
-            url: '#foo'
+            url: '#fooboo'
           },
           {
             text: 'Callouts',
-            url: '#foo'
+            url: '#foocrew'
           }
         ]
       },
@@ -46,7 +46,7 @@ testCases.standard = {
         items: [
           {
             text: 'Apply a style',
-            url: '#foo'
+            url: '#fooblue'
           }
         ]
       }
@@ -65,15 +65,15 @@ testCases.minimal = {
         items: [
           {
             text: 'Camera animation',
-            url: '#foo'
+            url: '#footwo'
           },
           {
             text: 'Mark a place',
-            url: '#foo'
+            url: '#foo-to'
           },
           {
             text: 'Apply a style',
-            url: '#foo'
+            url: '#footoo'
           }
         ]
       },
@@ -82,11 +82,11 @@ testCases.minimal = {
         items: [
           {
             text: 'Annotation models',
-            url: '#foo'
+            url: '#foot'
           },
           {
             text: 'Callouts',
-            url: '#foo'
+            url: '#fooz'
           }
         ]
       },
@@ -96,7 +96,7 @@ testCases.minimal = {
         items: [
           {
             text: 'Apply a style',
-            url: '#foo'
+            url: '#foobles'
           }
         ]
       }

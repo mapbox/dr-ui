@@ -36,4 +36,4 @@ CardContainer.propTypes = {
   cards: PropTypes.arrayOf(PropTypes.node).isRequired
 };
 
-export { CardContainer };
+export default CardContainer;
