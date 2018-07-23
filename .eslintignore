@@ -9,3 +9,4 @@ src/components/*/index.js
 packages/**/package-lock.json
 pkg
 src/test-cases-app/component-index.js
+src/plugins/add-links-to-headings.js
