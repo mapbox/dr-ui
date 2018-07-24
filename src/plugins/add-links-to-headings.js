@@ -1,3 +1,9 @@
+/** Use this plugin to add links to all headings in 
+    markdown files in a Batfish site. 
+    Add to the batfish.config.js file as a rehypePlugin
+    within the jsxtremeMarkdownOptions object.
+    See https://github.com/mapbox/batfish/blob/master/docs/configuration.md#jsxtrememarkdownoptions */
+
 'use strict';
 
 const visit = require('unist-util-visit');
