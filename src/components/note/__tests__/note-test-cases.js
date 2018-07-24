@@ -1,5 +1,6 @@
 import React from 'react';
 import Note from '../note';
+import BookImage from '../../book-image/book-image';
 
 const testCases = {};
 const noRenderCases = {};
@@ -8,7 +9,24 @@ testCases.basic = {
   component: Note,
   description: 'A basic note',
   props: {
-    children: <div>Here is a little thing to note.</div>
+    children: <div>Here is a little thing to note.</div>,
+    imageComponent: <BookImage />
+  }
+};
+
+testCases.basicThemed = {
+  component: Note,
+  description: 'A basic themed note',
+  props: {
+    children: <div>Here is a little note with pretty colors.</div>,
+    imageComponent: <BookImage />,
+    theme: {
+      padding: '10px 10px 10px',
+      background: 'pink',
+      fontSize: '16px',
+      lineHeight: '25px',
+      color: 'blue'
+    }
   }
 };
 
@@ -40,7 +58,8 @@ testCases.customTitle = {
           malesuada magna mollis euismod.
         </p>
       </div>
-    )
+    ),
+    imageComponent: <BookImage />
   }
 };
 
