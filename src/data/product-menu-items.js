@@ -18,6 +18,10 @@ const ProductMenuItems = [
       {
         url: '/unity-sdk/',
         name: 'Maps SDK for Unity'
+      },
+      {
+        url: '/help/studio-manual/',
+        name: 'Mapbox Studio'
       }
     ]
   },
@@ -46,16 +50,6 @@ const ProductMenuItems = [
       {
         url: '/android-docs/java/',
         name: 'Java SDK'
-      }
-    ]
-  },
-  {
-    productCategory: 'Mapbox Studio',
-    icon: 'palette',
-    products: [
-      {
-        url: '/help/studio-manual/',
-        name: 'Mapbox Studio manual'
       }
     ]
   },

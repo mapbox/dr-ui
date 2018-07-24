@@ -11,12 +11,7 @@ class ExamplesPage extends React.PureComponent {
         </div>
       );
     });
-    return (
-      <div>
-        <h1 className="txt-h1 txt-fancy mb24">{props.frontMatter.title}</h1>
-        {renderedContainers}
-      </div>
-    );
+    return <div>{renderedContainers}</div>;
   }
 }
 

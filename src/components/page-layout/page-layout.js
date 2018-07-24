@@ -8,9 +8,19 @@ class PageLayout extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      height: 0
+      bottomBoundaryValue: 0
     };
     this.debounceHandleWindowResize = debounce(() => {
+      const width = document.body.clientWidth;
+      if (width < 640) {
+        this.setState({
+          topValue: this.props.sidebarContentStickyTopNarrow
+        });
+      } else {
+        this.setState({
+          topValue: this.props.sidebarContentStickyTop
+        });
+      }
       const height = document.body.clientHeight;
       this.setState({
         bottomBoundaryValue: height - 450
@@ -50,11 +60,11 @@ class PageLayout extends React.Component {
             enabled={true}
             bottomBoundary={state.bottomBoundaryValue}
             innerZ={1}
-            top={props.sidebarContentStickyTop}
+            top={state.topValue}
             activeClass="bg-gray-faint"
           >
             <div
-              className={`pt24-mm pt0 viewport-almost-mm scroll-auto ml36 ${sidebarNarrowClasses}`}
+              className={`pt24-mm pt0 viewport-almost-mm scroll-auto ${sidebarNarrowClasses}`}
             >
               {title}
               {props.sidebarContent}
@@ -76,14 +86,14 @@ PageLayout.propTypes = {
   sidebarContent: PropTypes.node.isRequired,
   sidebarTitle: PropTypes.string,
   sidebarTheme: PropTypes.string,
-  sidebarContentStickyTop: PropTypes.number,
+  sidebarContentStickyTop: PropTypes.number.isRequired,
+  sidebarContentStickyTopNarrow: PropTypes.number.isRequired,
   sidebarStackedOnNarrowScreens: PropTypes.bool,
   children: PropTypes.node.isRequired
 };
 
 PageLayout.defaultProps = {
   sidebarTheme: 'bg-gray-faint',
-  sidebarContentStickyTop: 50,
   sidebarStackedOnNarrowScreens: false
 };
 
