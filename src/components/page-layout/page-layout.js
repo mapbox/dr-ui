@@ -84,7 +84,7 @@ class PageLayout extends React.Component {
 
 PageLayout.propTypes = {
   sidebarContent: PropTypes.node.isRequired,
-  sidebarTitle: PropTypes.string,
+  sidebarTitle: PropTypes.node,
   sidebarTheme: PropTypes.string,
   sidebarContentStickyTop: PropTypes.number.isRequired,
   sidebarContentStickyTopNarrow: PropTypes.number.isRequired,

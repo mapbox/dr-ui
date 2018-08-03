@@ -8,6 +8,7 @@ testCases.commonUseCase = {
   description: 'Common use case',
   component: PageLayout,
   props: {
+    sidebarTitle: <div className="ml36">Section title</div>,
     sidebarContent: (
       <NavigationAccordion
         currentPath="page-one"
