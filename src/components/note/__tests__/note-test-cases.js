@@ -2,11 +2,13 @@ import React from 'react';
 import Note from '../note';
 import BookImage from '../../book-image/book-image';
 import BookletImage from '../../booklet-image/booklet-image';
+import ContactImage from '../../contact-image/contact-image';
+import TroubleshootImage from '../../troubleshoot-image/troubleshoot-image';
 
 const testCases = {};
 const noRenderCases = {};
 
-testCases.basic = {
+testCases.basicBook = {
   component: Note,
   description: 'A basic note',
   props: {
@@ -15,12 +17,30 @@ testCases.basic = {
   }
 };
 
-testCases.basic2 = {
+testCases.basicBooklet = {
   component: Note,
-  description: 'A basic note with a different image',
+  description: 'A basic note with a booklet image',
   props: {
     children: <div>Here is a little thing to note.</div>,
     imageComponent: <BookletImage />
+  }
+};
+
+testCases.basicContact = {
+  component: Note,
+  description: 'A basic note with a contact image',
+  props: {
+    children: <div>Here is a little thing to note.</div>,
+    imageComponent: <ContactImage />
+  }
+};
+
+testCases.basicTroubleshoot = {
+  component: Note,
+  description: 'A basic note with a troubleshoot image',
+  props: {
+    children: <div>Here is a little thing to note.</div>,
+    imageComponent: <TroubleshootImage />
   }
 };
 
