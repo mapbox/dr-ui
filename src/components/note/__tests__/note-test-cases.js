@@ -1,6 +1,7 @@
 import React from 'react';
 import Note from '../note';
 import BookImage from '../../book-image/book-image';
+import BookletImage from '../../booklet-image/booklet-image';
 
 const testCases = {};
 const noRenderCases = {};
@@ -11,6 +12,15 @@ testCases.basic = {
   props: {
     children: <div>Here is a little thing to note.</div>,
     imageComponent: <BookImage />
+  }
+};
+
+testCases.basic2 = {
+  component: Note,
+  description: 'A basic note with a different image',
+  props: {
+    children: <div>Here is a little thing to note.</div>,
+    imageComponent: <BookletImage />
   }
 };
 
