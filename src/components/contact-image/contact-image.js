@@ -1,14 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class ContactImage extends React.Component {
   render() {
+    const { props } = this;
     return (
       <svg
         id="Layer_1"
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
-        width="108"
-        height="108"
+        width={props.width}
+        height={props.height}
         viewBox="0 0 108 108"
       >
         <title>help</title>
@@ -66,3 +68,8 @@ export default class ContactImage extends React.Component {
     );
   }
 }
+
+ContactImage.propTypes = {
+  width: PropTypes.string.isRequired,
+  height: PropTypes.string.isRequired
+};

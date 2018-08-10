@@ -13,7 +13,7 @@ testCases.basicBook = {
   description: 'A basic note',
   props: {
     children: <div>Here is a little thing to note.</div>,
-    imageComponent: <BookImage />
+    imageComponent: <BookImage width="60" height="60" />
   }
 };
 
@@ -22,7 +22,7 @@ testCases.basicBooklet = {
   description: 'A basic note with a booklet image',
   props: {
     children: <div>Here is a little thing to note.</div>,
-    imageComponent: <BookletImage />
+    imageComponent: <BookletImage width="60" height="60" />
   }
 };
 
@@ -31,7 +31,7 @@ testCases.basicContact = {
   description: 'A basic note with a contact image',
   props: {
     children: <div>Here is a little thing to note.</div>,
-    imageComponent: <ContactImage />
+    imageComponent: <ContactImage width="60" height="60" />
   }
 };
 
@@ -40,7 +40,7 @@ testCases.basicTroubleshoot = {
   description: 'A basic note with a troubleshoot image',
   props: {
     children: <div>Here is a little thing to note.</div>,
-    imageComponent: <TroubleshootImage />
+    imageComponent: <TroubleshootImage width="60" height="60" />
   }
 };
 
@@ -49,7 +49,7 @@ testCases.basicThemed = {
   description: 'A basic themed note',
   props: {
     children: <div>Here is a little note with pretty colors.</div>,
-    imageComponent: <BookImage />,
+    imageComponent: <BookImage width="60" height="60" />,
     theme: {
       padding: '10px 10px 10px',
       background: 'pink',
@@ -89,7 +89,7 @@ testCases.customTitle = {
         </p>
       </div>
     ),
-    imageComponent: <BookImage />
+    imageComponent: <BookImage width="60" height="60" />
   }
 };
 
