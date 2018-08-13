@@ -1,16 +1,46 @@
 import React from 'react';
 import Note from '../note';
 import BookImage from '../../book-image/book-image';
+import BookletImage from '../../booklet-image/booklet-image';
+import ContactImage from '../../contact-image/contact-image';
+import TroubleshootImage from '../../troubleshoot-image/troubleshoot-image';
 
 const testCases = {};
 const noRenderCases = {};
 
-testCases.basic = {
+testCases.basicBook = {
   component: Note,
   description: 'A basic note',
   props: {
     children: <div>Here is a little thing to note.</div>,
-    imageComponent: <BookImage />
+    imageComponent: <BookImage width="60" height="60" />
+  }
+};
+
+testCases.basicBooklet = {
+  component: Note,
+  description: 'A basic note with a booklet image',
+  props: {
+    children: <div>Here is a little thing to note.</div>,
+    imageComponent: <BookletImage width="60" height="60" />
+  }
+};
+
+testCases.basicContact = {
+  component: Note,
+  description: 'A basic note with a contact image',
+  props: {
+    children: <div>Here is a little thing to note.</div>,
+    imageComponent: <ContactImage width="60" height="60" />
+  }
+};
+
+testCases.basicTroubleshoot = {
+  component: Note,
+  description: 'A basic note with a troubleshoot image',
+  props: {
+    children: <div>Here is a little thing to note.</div>,
+    imageComponent: <TroubleshootImage width="60" height="60" />
   }
 };
 
@@ -19,7 +49,7 @@ testCases.basicThemed = {
   description: 'A basic themed note',
   props: {
     children: <div>Here is a little note with pretty colors.</div>,
-    imageComponent: <BookImage />,
+    imageComponent: <BookImage width="60" height="60" />,
     theme: {
       padding: '10px 10px 10px',
       background: 'pink',
@@ -59,7 +89,7 @@ testCases.customTitle = {
         </p>
       </div>
     ),
-    imageComponent: <BookImage />
+    imageComponent: <BookImage width="60" height="60" />
   }
 };
 
