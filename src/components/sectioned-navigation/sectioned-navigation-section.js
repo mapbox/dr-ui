@@ -22,8 +22,12 @@ class SectionedNavigationSection extends React.Component {
 
   renderItems() {
     return this.props.items.map(item => {
+      let activeClass = '';
+      if (item.active === true) {
+        activeClass = 'txt-bold';
+      }
       return (
-        <li key={item.url} className="mt6">
+        <li key={item.url} className={`mt6 ${activeClass}`}>
           <a href={item.url} className="color-blue-on-hover">
             {item.text}
           </a>
@@ -48,7 +52,8 @@ SectionedNavigationSection.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       text: PropTypes.string.isRequired,
-      url: PropTypes.string.isRequired
+      url: PropTypes.string.isRequired,
+      active: PropTypes.bool
     })
   ).isRequired,
   includeCount: PropTypes.bool
