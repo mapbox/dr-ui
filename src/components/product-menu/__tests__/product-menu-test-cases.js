@@ -70,12 +70,7 @@ testCases.customStyle = {
   description: 'Custom trigger style - display only',
   element: (
     <div className="bg-gray-dark py6">
-      <ProductMenu
-        productName="Light on dark"
-        themeText="txt-fancy txt-l color-white"
-        themeIcon="color-white"
-        themeUnderline="border--transparent border--white-on-hover"
-      >
+      <ProductMenu productName="Light on dark" lightText={true}>
         {renderMenu(locationTestItems)}
       </ProductMenu>
     </div>

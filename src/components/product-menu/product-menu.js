@@ -34,6 +34,12 @@ class ProductMenu extends React.PureComponent {
 
   render() {
     const { props } = this;
+    let underlineStyleClasses = 'border--blue-on-hover';
+    let textStyleClasses = '';
+    if (props.lightText) {
+      underlineStyleClasses = 'border--white-on-hover';
+      textStyleClasses = 'color-white';
+    }
     return (
       <PopoverTrigger
         content={props.children}
@@ -42,18 +48,18 @@ class ProductMenu extends React.PureComponent {
         onPopoverClose={this.onPopoverClose}
       >
         <div
-          className={`wmax240-ml wmax180-mm flex-parent flex-parent--space-between-main flex-parent--center-cross cursor-pointer border-b border-b--2 ${
-            props.themeUnderline
-          }`}
+          className={`wmax240-ml wmax180-mm flex-parent flex-parent--space-between-main flex-parent--center-cross cursor-pointer border-b border-b--2 border--transparent ${underlineStyleClasses}`}
         >
-          <div className={`flex-child ${props.themeText} txt-truncate`}>
+          <div
+            className={`flex-child txt-fancy txt-l txt-truncate ${textStyleClasses}`}
+          >
             {props.productName}
           </div>
           <div className="flex-child">
             <Icon
               name="caret-down"
               inline={true}
-              className={`icon h30 w30 ${props.themeIcon}`}
+              className={`icon h30 w30 ${textStyleClasses}`}
             />
           </div>
         </div>
@@ -64,16 +70,12 @@ class ProductMenu extends React.PureComponent {
 
 ProductMenu.propTypes = {
   productName: PropTypes.string.isRequired,
-  themeText: PropTypes.string,
-  themeIcon: PropTypes.string,
-  themeUnderline: PropTypes.string,
+  lightText: PropTypes.bool,
   children: PropTypes.node.isRequired
 };
 
 ProductMenu.defaultProps = {
-  themeText: 'txt-fancy txt-l',
-  themeIcon: '',
-  themeUnderline: 'border--transparent border--blue-on-hover'
+  lightText: false
 };
 
 export default ProductMenu;
