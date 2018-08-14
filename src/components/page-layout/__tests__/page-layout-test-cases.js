@@ -34,6 +34,7 @@ testCases.commonUseCase = {
             }
           ]
         }}
+        onDropdownChange={() => {}}
       />
     ),
     children: (
