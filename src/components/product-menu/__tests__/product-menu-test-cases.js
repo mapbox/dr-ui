@@ -66,4 +66,15 @@ testCases.arbitraryElement = {
   }
 };
 
+testCases.customStyle = {
+  description: 'Custom trigger style - display only',
+  element: (
+    <div className="bg-gray-dark py6">
+      <ProductMenu productName="Light on dark" lightText={true}>
+        {renderMenu(locationTestItems)}
+      </ProductMenu>
+    </div>
+  )
+};
+
 export default { testCases };
