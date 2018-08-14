@@ -46,7 +46,7 @@ class NavigationAccordion extends React.PureComponent {
           );
         }
         let renderedSecondLevelContent = '';
-        if (isActive && secondLevelContent) {
+        if (isActive && secondLevelContent && secondLevelContent.length > 0) {
           renderedSecondLevelContent = (
             <div className="ml24 pt0">
               <ul className="txt-m pb12 inline-block-mm none unprose">
