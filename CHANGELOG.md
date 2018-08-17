@@ -1,5 +1,7 @@
 ## Master
 
+- Add Atlas to `ProductMenuItems`. ((#48)[https://github.com/mapbox/dr-ui/pull/48/]) 
+
 ## 0.0.7
 
 - Change the `sidebarTitle` prop type in the `PageLayout` component from string to string or node. ([#43](https://github.com/mapbox/dr-ui/pull/43))
