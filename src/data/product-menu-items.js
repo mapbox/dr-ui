@@ -59,7 +59,7 @@ const ProductMenuItems = [
     products: [
       {
         url: '/atlas-server/',
-        name: 'Atlas Server'
+        name: 'Atlas'
       },
       {
         url: '/android-docs/plugins/',
