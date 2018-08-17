@@ -18,7 +18,8 @@ testCases.standard = {
           },
           {
             text: 'Mark a place',
-            url: '#footoo'
+            url: '#footoo',
+            active: true
           },
           {
             text: 'Apply a style',

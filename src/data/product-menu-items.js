@@ -20,7 +20,7 @@ const ProductMenuItems = [
         name: 'Maps SDK for Unity'
       },
       {
-        url: '/help/studio-manual/',
+        url: '/studio-manual/',
         name: 'Mapbox Studio'
       }
     ]
