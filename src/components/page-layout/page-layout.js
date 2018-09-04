@@ -61,10 +61,9 @@ class PageLayout extends React.Component {
             bottomBoundary={state.bottomBoundaryValue}
             innerZ={1}
             top={state.topValue}
-            activeClass="bg-gray-faint"
           >
             <div
-              className={`pt24-mm pt0 viewport-almost-mm scroll-auto ${sidebarNarrowClasses}`}
+              className={`pt24-mm pt0 viewport-almost-mm scroll-auto scroll-styled ${sidebarNarrowClasses}`}
             >
               {title}
               {props.sidebarContent}
