@@ -1,6 +1,7 @@
 ## Master
 
-- Add Atlas to `ProductMenuItems`. ((#48)[https://github.com/mapbox/dr-ui/pull/48/]) 
+- Add Atlas to `ProductMenuItems`. ((#48)[https://github.com/mapbox/dr-ui/pull/48/])
+- In `PageLayout`, show scroll bar automatically when the sidebar contents overflow vertically and remove `activeClass` from the `Sticky` component to prevent temporary faint gray background when `sidebarTheme` is set to something other than the default. ((#54)[https://github.com/mapbox/dr-ui/pull/54])
 
 ## 0.0.7
 
