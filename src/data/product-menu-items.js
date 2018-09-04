@@ -68,6 +68,10 @@ const ProductMenuItems = [
       {
         url: '/android-docs/core/',
         name: 'Android Core library'
+      },
+      {
+        url: '/ios-sdk/plugins/',
+        name: 'China plugin for iOS'
       }
     ]
   }
