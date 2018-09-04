@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../card';
+import LevelIndicator from '../../level-indicator/level-indicator';
 
 const testCases = {};
 const noRenderCases = {};
@@ -32,6 +33,18 @@ testCases.noImage = {
     title: 'Title',
     path: 'url',
     description: 'described.'
+  }
+};
+
+testCases.withLevelAndLanguage = {
+  component: Card,
+  description: 'Card with level and language',
+  props: {
+    title: 'This is a full-length title',
+    path: 'url',
+    description: "Here's a reasonable length for a description.",
+    level: <LevelIndicator level={2} />,
+    language: 'JavaScript'
   }
 };
 
