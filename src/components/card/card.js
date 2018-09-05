@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Icon from '@mapbox/mr-ui/icon';
+import LevelIndicator from '../level-indicator/level-indicator';
 
 class Card extends React.Component {
   render() {
@@ -14,7 +15,11 @@ class Card extends React.Component {
       );
     }
     if (props.level) {
-      renderedLevel = <div className="inline-block mr18">{props.level}</div>;
+      renderedLevel = (
+        <div className="inline-block mr18">
+          <LevelIndicator level={props.level} />
+        </div>
+      );
     }
     if (props.language) {
       renderedLanguage = (

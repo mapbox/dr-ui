@@ -4,52 +4,44 @@ import PropTypes from 'prop-types';
 const levels = {
   1: {
     label: 'beginner',
-    color: 'green',
-    opacity: 50
+    color: 'green'
   },
   2: {
     label: 'intermediate',
-    color: 'orange',
-    opacity: 75
+    color: 'orange'
   },
   3: {
     label: 'advanced',
-    color: 'red',
-    opacity: 100
+    color: 'red'
   }
 };
 
 class LevelIndicator extends React.Component {
   render() {
     const { props } = this;
-    // Get supplies in order for constructing the difficulty level bits
+    // // Get supplies in order for constructing the difficulty level bits
     const levelColor = levels[props.level].color;
     const levelLabel = levels[props.level].label;
-    const squareStyles = {
-      height: '8px',
-      borderRadius: '1px'
-    };
 
     // Make the "difficulty level" squares
-    let levelSquares = [];
-    [1, 2, 3].forEach((num, i) => {
-      let squareColor = '';
-      num > this.props.level
-        ? (squareColor = 'gray-light')
-        : (squareColor = levelColor);
-      levelSquares.push(
+    const levelSquares = Object.keys(levels).map(level => {
+      const squareColor = level > props.level ? 'gray-light' : levelColor;
+      return (
         <div
-          key={i}
-          style={squareStyles}
+          key={level}
+          style={{
+            height: '8px',
+            borderRadius: '1px'
+          }}
           className={`inline-block w6 bg-${squareColor} align-middle mr3`}
         />
       );
     });
     return (
-      <div className={`txt-s color-${levelColor}`}>
+      <div>
         {levelSquares}
         <div
-          className={`inline-block color-${levelColor} ml3 txt-bold txt-capitalize`}
+          className={`inline-block txt-s color-${levelColor} ml3 txt-bold txt-capitalize`}
         >
           {levelLabel}
         </div>
