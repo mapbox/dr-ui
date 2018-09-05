@@ -1,7 +1,10 @@
 ## Master
 
 - Add Atlas to `ProductMenuItems`. ((#48)[https://github.com/mapbox/dr-ui/pull/48/])
-- In `PageLayout`, show scroll bar automatically when the sidebar contents overflow vertically and remove `activeClass` from the `Sticky` component to prevent temporary faint gray background when `sidebarTheme` is set to something other than the default. ((#54)[https://github.com/mapbox/dr-ui/pull/54])
+- Show scroll bar automatically in `PageLayout` when the sidebar contents overflow vertically. ((#54)[https://github.com/mapbox/dr-ui/pull/54])
+- In `PageLayout`, remove `activeClass` from the `Sticky` component to prevent temporary faint gray background when `sidebarTheme` is set to something other than the default. ((#54)[https://github.com/mapbox/dr-ui/pull/54])
+- Add new `LevelIndicator` component. ((#55)[https://github.com/mapbox/dr-ui/pull/55])
+- Add optional `level` and `language` props to `Card`. ((#55)[https://github.com/mapbox/dr-ui/pull/55])
 
 ## 0.0.7
 

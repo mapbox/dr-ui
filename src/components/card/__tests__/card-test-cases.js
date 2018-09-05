@@ -35,4 +35,16 @@ testCases.noImage = {
   }
 };
 
+testCases.withLevelAndLanguage = {
+  component: Card,
+  description: 'Card with level and language',
+  props: {
+    title: 'This is a full-length title',
+    path: 'url',
+    description: "Here's a reasonable length for a description.",
+    level: 2,
+    language: 'JavaScript'
+  }
+};
+
 export default { testCases, noRenderCases };

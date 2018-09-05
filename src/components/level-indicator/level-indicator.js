@@ -1,0 +1,57 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
+const levels = {
+  1: {
+    label: 'beginner',
+    color: 'green'
+  },
+  2: {
+    label: 'intermediate',
+    color: 'orange'
+  },
+  3: {
+    label: 'advanced',
+    color: 'red'
+  }
+};
+
+class LevelIndicator extends React.Component {
+  render() {
+    const { props } = this;
+    // // Get supplies in order for constructing the difficulty level bits
+    const levelColor = levels[props.level].color;
+    const levelLabel = levels[props.level].label;
+
+    // Make the "difficulty level" squares
+    const levelSquares = Object.keys(levels).map(level => {
+      const squareColor = level > props.level ? 'gray-light' : levelColor;
+      return (
+        <div
+          key={level}
+          style={{
+            height: '8px',
+            borderRadius: '1px'
+          }}
+          className={`inline-block w6 bg-${squareColor} align-middle mr3`}
+        />
+      );
+    });
+    return (
+      <div>
+        {levelSquares}
+        <div
+          className={`inline-block txt-s color-${levelColor} ml3 txt-bold txt-capitalize`}
+        >
+          {levelLabel}
+        </div>
+      </div>
+    );
+  }
+}
+
+LevelIndicator.propTypes = {
+  level: PropTypes.oneOf([1, 2, 3]).isRequired
+};
+
+export default LevelIndicator;
