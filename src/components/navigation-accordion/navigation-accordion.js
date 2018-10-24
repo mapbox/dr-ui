@@ -10,6 +10,20 @@ class NavigationAccordion extends React.PureComponent {
     const secondLevelContent =
       props.contents.secondLevelItems &&
       props.contents.secondLevelItems.map(item => {
+        const subItems =
+          item.thirdLevelItems &&
+          item.thirdLevelItems.map(subItem => {
+            return (
+              <li key={subItem.path} className="mt6">
+                <a
+                  href={`#${subItem.path}`}
+                  className="color-blue-on-hover text-decoration-none unprose"
+                >
+                  {subItem.title}
+                </a>
+              </li>
+            );
+          });
         return (
           <li key={item.path} className="mb6">
             <a
@@ -18,6 +32,7 @@ class NavigationAccordion extends React.PureComponent {
             >
               {item.title}
             </a>
+            <ul className="pl12 color-darken75">{subItems}</ul>
           </li>
         );
       });
@@ -99,7 +114,13 @@ NavigationAccordion.propTypes = {
     secondLevelItems: PropTypes.arrayOf(
       PropTypes.shape({
         title: PropTypes.string.isRequired,
-        path: PropTypes.string.isRequired
+        path: PropTypes.string.isRequired,
+        thirdLevelItems: PropTypes.arrayOf(
+          PropTypes.shape({
+            title: PropTypes.string.isRequired,
+            path: PropTypes.string.isRequired
+          })
+        )
       })
     )
   }),
