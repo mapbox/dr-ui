@@ -105,4 +105,58 @@ testCases.minimal = {
   }
 };
 
+testCases.filter = {
+  description: 'With a title, linked section headings, counts, and filter',
+  component: SectionedNavigation,
+  props: {
+    title: 'Examples',
+    includeFilterBar: true,
+    sections: [
+      {
+        title: 'Getting started',
+        url: '#getting-started',
+        items: [
+          {
+            text: 'Camera animation',
+            url: '#foo'
+          },
+          {
+            text: 'Mark a place',
+            url: '#footoo',
+            active: true
+          },
+          {
+            text: 'Apply a style',
+            url: '#fooandyou'
+          }
+        ]
+      },
+      {
+        title: 'Markers and callouts',
+        url: '#markers',
+        items: [
+          {
+            text: 'Annotation models',
+            url: '#fooboo'
+          },
+          {
+            text: 'Callouts',
+            url: '#foocrew'
+          }
+        ]
+      },
+      {
+        title: 'Getting started again',
+        url: '#getting-started-again',
+        items: [
+          {
+            text: 'Apply a style',
+            url: '#fooblue'
+          }
+        ]
+      }
+    ]
+  }
+};
+
 export { testCases };
