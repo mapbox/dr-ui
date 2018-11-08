@@ -33,7 +33,7 @@ class SectionedNavigation extends React.Component {
       <div className="wmax360 mb24">
         <input
           onChange={e =>
-            this.setState({ filter: e.target.value }, this.filterResults())
+            this.setState({ filter: e.target.value }, this.filterResults)
           }
           type="text"
           className="px6 py6 w-full round border border--gray-light"
