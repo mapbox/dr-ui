@@ -36,9 +36,9 @@ class SectionedNavigation extends React.Component {
             this.setState({ filter: e.target.value }, this.filterResults)
           }
           type="text"
-          className="px6 py6 w-full round border border--gray-light"
+          className="px6 py6 w-full border border--gray-light"
           name="filter"
-          placeholder="Filter examples"
+          placeholder="Filter list"
         />
       </div>
     );
