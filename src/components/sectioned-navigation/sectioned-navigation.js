@@ -93,7 +93,8 @@ SectionedNavigation.propTypes = {
 };
 
 SectionedNavigation.defaultProps = {
-  includeCount: true
+  includeCount: true,
+  includeFilterBar: false
 };
 
 export default SectionedNavigation;
