@@ -8,7 +8,8 @@ class PageLayout extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      bottomBoundaryValue: 0
+      bottomBoundaryValue: 0,
+      enabled: false
     };
     this.debounceHandleWindowResize = debounce(() => {
       const width = document.body.clientWidth;
@@ -30,6 +31,9 @@ class PageLayout extends React.Component {
 
   componentDidMount() {
     this.debounceHandleWindowResize();
+    setTimeout(() => {
+      this.setState({ enabled: true });
+    }, 500);
     window.addEventListener('resize', this.debounceHandleWindowResize);
   }
 
@@ -57,7 +61,7 @@ class PageLayout extends React.Component {
       <div className="grid">
         <div className={`col col--4-mm col--12 ${props.sidebarTheme}`}>
           <Sticky
-            enabled={true}
+            enabled={state.enabled}
             bottomBoundary={state.bottomBoundaryValue}
             innerZ={1}
             top={state.topValue}
