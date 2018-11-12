@@ -16,7 +16,7 @@ export default class BackToTopButton extends React.Component {
             receivesFocus: false
           }}
           themeIcon="w36 h36 mx-auto"
-          themeButton="btn--blue w60 h60 round-full shadow-darken25"
+          themeButton="btn--blue w60 h60 px0 round-full shadow-darken25"
         />
       </div>
     );
