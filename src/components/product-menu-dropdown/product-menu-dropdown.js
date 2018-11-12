@@ -24,7 +24,14 @@ class ProductMenuDropdown extends React.PureComponent {
           : false;
 
         let isActive;
+        /* Exception for Mapbox Style Spec since it lives in the
+        mapbox-gl-js repo, but is treated as its own product. */
         if (
+          product.url === '/mapbox-gl-js/style-spec/' &&
+          location.pathname.indexOf('/mapbox-gl-js/style-spec/') > -1
+        ) {
+          isActive = true;
+        } else if (
           product.url &&
           locationTest &&
           location.pathname.indexOf(product.url) > -1
