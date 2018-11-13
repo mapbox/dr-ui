@@ -1,4 +1,4 @@
-## Master
+## 0.0.9
 
 - Add missing `index.js` file for the `LevelIndicator` component.
 - Add Mapbox Style Specification to `ProductMenuItems`. ([#62](https://github.com/mapbox/dr-ui/pull/62))
