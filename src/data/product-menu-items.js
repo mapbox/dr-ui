@@ -22,6 +22,10 @@ const ProductMenuItems = [
       {
         url: '/studio-manual/',
         name: 'Mapbox Studio'
+      },
+      {
+        url: '/mapbox-gl-js/style-spec/',
+        name: 'Mapbox Style Specification'
       }
     ]
   },
