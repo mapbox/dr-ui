@@ -32,6 +32,7 @@ class ProductMenuDropdown extends React.PureComponent {
         ) {
           isActive = true;
         } else if (
+          location.pathname.indexOf('/mapbox-gl-js/style-spec/') < 0 &&
           product.url &&
           locationTest &&
           location.pathname.indexOf(product.url) > -1
