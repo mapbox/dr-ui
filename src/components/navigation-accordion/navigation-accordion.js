@@ -7,6 +7,11 @@ import NavigationDropdown from '../navigation-dropdown/navigation-dropdown';
 class NavigationAccordion extends React.PureComponent {
   render() {
     const { props } = this;
+    function itemClasses(isActive) {
+      return classnames('color-blue-on-hover text-decoration-none unprose', {
+        'txt-bold': isActive
+      });
+    }
     const secondLevelContent =
       props.contents.secondLevelItems &&
       props.contents.secondLevelItems.map(item => {
@@ -19,12 +24,7 @@ class NavigationAccordion extends React.PureComponent {
             if (isActive) openSubItems = true;
             return (
               <li key={subItem.path} className="mt6">
-                <a
-                  href={`#${subItem.path}`}
-                  className={`color-blue-on-hover text-decoration-none unprose${
-                    isActive ? ' txt-bold' : ''
-                  }`}
-                >
+                <a href={`#${subItem.path}`} className={itemClasses(isActive)}>
                   {subItem.title}
                 </a>
               </li>
@@ -32,12 +32,7 @@ class NavigationAccordion extends React.PureComponent {
           });
         return (
           <li key={item.path} className="mb6">
-            <a
-              href={`#${item.path}`}
-              className={`color-blue-on-hover text-decoration-none unprose${
-                isActive ? ' txt-bold' : ''
-              }`}
-            >
+            <a href={`#${item.path}`} className={itemClasses(isActive)}>
               {item.title}
             </a>
             <ul className={openSubItems ? 'pl12 color-darken75' : 'none'}>
