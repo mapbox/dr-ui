@@ -10,14 +10,20 @@ class NavigationAccordion extends React.PureComponent {
     const secondLevelContent =
       props.contents.secondLevelItems &&
       props.contents.secondLevelItems.map(item => {
+        const isActive = this.props.location.hash === `#${item.path}`;
+        let openSubItems = isActive;
         const subItems =
           item.thirdLevelItems &&
           item.thirdLevelItems.map(subItem => {
+            const isActive = this.props.location.hash === `#${subItem.path}`;
+            if (isActive) openSubItems = true;
             return (
               <li key={subItem.path} className="mt6">
                 <a
                   href={`#${subItem.path}`}
-                  className="color-blue-on-hover text-decoration-none unprose"
+                  className={`color-blue-on-hover text-decoration-none unprose${
+                    isActive ? ' txt-bold' : ''
+                  }`}
                 >
                   {subItem.title}
                 </a>
@@ -28,11 +34,15 @@ class NavigationAccordion extends React.PureComponent {
           <li key={item.path} className="mb6">
             <a
               href={`#${item.path}`}
-              className="color-blue-on-hover text-decoration-none unprose"
+              className={`color-blue-on-hover text-decoration-none unprose${
+                isActive ? ' txt-bold' : ''
+              }`}
             >
               {item.title}
             </a>
-            <ul className="pl12 color-darken75">{subItems}</ul>
+            <ul className={openSubItems ? 'pl12 color-darken75' : 'none'}>
+              {subItems}
+            </ul>
           </li>
         );
       });
@@ -104,6 +114,7 @@ class NavigationAccordion extends React.PureComponent {
 
 NavigationAccordion.propTypes = {
   currentPath: PropTypes.string,
+  location: PropTypes.object.isRequired,
   contents: PropTypes.shape({
     firstLevelItems: PropTypes.arrayOf(
       PropTypes.shape({

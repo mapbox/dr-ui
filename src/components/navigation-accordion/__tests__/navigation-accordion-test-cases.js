@@ -7,6 +7,9 @@ testCases.basic = {
   component: NavigationAccordion,
   props: {
     currentPath: 'page-one',
+    location: {
+      hash: ''
+    },
     contents: {
       firstLevelItems: [
         {
@@ -38,6 +41,9 @@ testCases.noSecondLevelItems = {
   component: NavigationAccordion,
   props: {
     currentPath: 'page-one',
+    location: {
+      hash: ''
+    },
     contents: {
       firstLevelItems: [
         {
@@ -59,6 +65,9 @@ testCases.withThirdLevelItems = {
   component: NavigationAccordion,
   props: {
     currentPath: 'page-one',
+    location: {
+      hash: '#subheading-one'
+    },
     contents: {
       firstLevelItems: [
         {
