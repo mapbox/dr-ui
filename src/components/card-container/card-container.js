@@ -7,7 +7,7 @@ class CardContainer extends React.PureComponent {
     const { props } = this;
     const categoryID = props.path.split('#')[1];
     const cardClasses = classnames('col col--12 mb36', {
-      'col--6-mm': !props.fullWidthCards
+      'col--6-ml': !props.fullWidthCards
     });
     const renderedCards = props.cards.map((card, index) => {
       return (
