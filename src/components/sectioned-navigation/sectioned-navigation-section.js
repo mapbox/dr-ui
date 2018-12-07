@@ -12,7 +12,12 @@ class SectionedNavigationSection extends React.Component {
 
     if (props.url) {
       return (
-        <a href={props.url} className="color-blue-on-hover">
+        <a
+          href={props.url}
+          className={`color-blue-on-hover inline-block txt-bold color-gray ${
+            props.hideSubItems ? 'py6' : 'py12'
+          }`}
+        >
           {text}
         </a>
       );
@@ -26,32 +31,25 @@ class SectionedNavigationSection extends React.Component {
       return null;
     }
     const items = this.props.items.map(item => {
-      let activeClass = '';
-      if (item.active === true) {
-        activeClass = 'txt-bold';
-      }
       return (
-        <li key={item.url} className={`mt6 ${activeClass}`}>
-          <a href={item.url} className="color-blue-on-hover">
-            {item.text}
-          </a>
-        </li>
+        <a
+          key={item.url}
+          href={item.url}
+          className={`color-blue-on-hover inline-block mb6${
+            item.active === true ? ' txt-bold' : ''
+          }`}
+        >
+          {item.text}
+        </a>
       );
     });
-    return <ul className="mb6">{items}</ul>;
+    return <div>{items}</div>;
   }
 
   render() {
-    const { props } = this;
     return (
       <div>
-        <div
-          className={`txt-bold color-gray ${
-            props.hideSubItems ? 'py6' : 'py12'
-          }`}
-        >
-          {this.renderHeading()}
-        </div>
+        {this.renderHeading()}
         {this.renderItems()}
       </div>
     );
