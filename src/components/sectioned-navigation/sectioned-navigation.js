@@ -73,9 +73,10 @@ class SectionedNavigation extends React.Component {
         {this.renderTitle()}
         {this.renderFilterBar()}
         {this.state.visibleSections.map((section, i) => (
-          <div key={i} className="mb24">
+          <div key={i} className="">
             <SectionedNavigationSection
               includeCount={props.includeCount}
+              hideSubItems={props.hideSubItems}
               {...section}
             />
           </div>
@@ -89,12 +90,14 @@ SectionedNavigation.propTypes = {
   sections: PropTypes.arrayOf(PropTypes.object).isRequired,
   title: PropTypes.string,
   includeCount: PropTypes.bool,
-  includeFilterBar: PropTypes.bool
+  includeFilterBar: PropTypes.bool,
+  hideSubItems: PropTypes.bool
 };
 
 SectionedNavigation.defaultProps = {
   includeCount: true,
-  includeFilterBar: false
+  includeFilterBar: false,
+  hideSubItems: false
 };
 
 export default SectionedNavigation;

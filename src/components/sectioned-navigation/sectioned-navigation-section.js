@@ -21,7 +21,11 @@ class SectionedNavigationSection extends React.Component {
   }
 
   renderItems() {
-    return this.props.items.map(item => {
+    const { props } = this;
+    if (props.hideSubItems) {
+      return null;
+    }
+    const items = this.props.items.map(item => {
       let activeClass = '';
       if (item.active === true) {
         activeClass = 'txt-bold';
@@ -34,13 +38,21 @@ class SectionedNavigationSection extends React.Component {
         </li>
       );
     });
+    return <ul className="mb6">{items}</ul>;
   }
 
   render() {
+    const { props } = this;
     return (
       <div>
-        <div className="txt-m">{this.renderHeading()}</div>
-        <ul className="txt-s">{this.renderItems()}</ul>
+        <div
+          className={`txt-bold color-gray ${
+            props.hideSubItems ? 'py6' : 'py12'
+          }`}
+        >
+          {this.renderHeading()}
+        </div>
+        {this.renderItems()}
       </div>
     );
   }
@@ -56,11 +68,13 @@ SectionedNavigationSection.propTypes = {
       active: PropTypes.bool
     })
   ).isRequired,
-  includeCount: PropTypes.bool
+  includeCount: PropTypes.bool,
+  hideSubItems: PropTypes.bool
 };
 
 SectionedNavigationSection.defaultProps = {
-  includeCount: true
+  includeCount: true,
+  hideSubItems: false
 };
 
 export default SectionedNavigationSection;
