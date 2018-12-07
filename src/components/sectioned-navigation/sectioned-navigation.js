@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SectionedNavigationSection from './sectioned-navigation-section';
+import ControlText from '@mapbox/mr-ui/control-text';
 
 class SectionedNavigation extends React.Component {
   constructor(props) {
@@ -30,13 +31,13 @@ class SectionedNavigation extends React.Component {
       return null;
     }
     return (
-      <div className="wmax360 mb24">
-        <input
-          onChange={e =>
-            this.setState({ filter: e.target.value }, this.filterResults)
-          }
+      <div className="mb18">
+        <ControlText
+          onChange={e => this.setState({ filter: e }, this.filterResults)}
+          value={this.state.filter}
+          id="filter"
           type="text"
-          className="px6 py6 w-full border border--gray-light"
+          themeControlWrapper="bg-white"
           name="filter"
           placeholder="Filter list"
         />
@@ -73,7 +74,7 @@ class SectionedNavigation extends React.Component {
         {this.renderTitle()}
         {this.renderFilterBar()}
         {this.state.visibleSections.map((section, i) => (
-          <div key={i} className="">
+          <div key={i}>
             <SectionedNavigationSection
               includeCount={props.includeCount}
               hideSubItems={props.hideSubItems}
