@@ -11,7 +11,7 @@ class Card extends React.Component {
     let renderedLanguage = '';
     if (props.thumbnail) {
       renderedThumbnail = (
-        <div className="relative h120 mb12">{props.thumbnail}</div>
+        <div className="relative h120 mb6">{props.thumbnail}</div>
       );
     }
     if (props.level) {
@@ -23,22 +23,26 @@ class Card extends React.Component {
     }
     if (props.language) {
       renderedLanguage = (
-        <div className="inline-block color-gray-light txt-s txt-bold">
+        <div className="inline-block color-gray txt-s txt-bold">
           <Icon name="code" inline={true} /> {props.language}
         </div>
       );
     }
     return (
       <a
-        className="color-gray-dark transition shadow-darken10-on-hover round clip inline-block w-full px12 py12 unprose"
+        className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose"
         href={this.props.path}
       >
         {renderedThumbnail}
-        <div className="px6 pb6">
-          {renderedLevel}
-          {renderedLanguage}
+        <div>
+          <div className="mb6">
+            {renderedLevel}
+            {renderedLanguage}
+          </div>
           <div className="mb6 txt-m">{this.props.title}</div>
-          <div className="txt-s opacity75">{this.props.description}</div>
+          <div className="txt-s color-gray color-gray-on-hover">
+            {this.props.description}
+          </div>
         </div>
       </a>
     );
