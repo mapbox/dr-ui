@@ -5,22 +5,35 @@ import Icon from '@mapbox/mr-ui/icon';
 import NavigationDropdown from '../navigation-dropdown/navigation-dropdown';
 
 class NavigationAccordion extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      hash: ''
+    };
+  }
+
+  componentDidUpdate() {
+    if (typeof window !== 'undefined') {
+      this.setState({ hash: window.location.hash });
+    }
+  }
   render() {
-    const { props } = this;
+    const { props, state } = this;
     function itemClasses(isActive) {
       return classnames('color-blue-on-hover text-decoration-none unprose', {
         'txt-bold': isActive
       });
     }
+
     const secondLevelContent =
       props.contents.secondLevelItems &&
       props.contents.secondLevelItems.map(item => {
-        const isActive = props.currentPath.hash === `#${item.path}`;
+        const isActive = state.hash === `#${item.path}`;
         let openSubItems = isActive;
         const subItems =
           item.thirdLevelItems &&
           item.thirdLevelItems.map(subItem => {
-            const isActive = props.currentPath.hash === `#${subItem.path}`;
+            const isActive = state.hash === `#${subItem.path}`;
             if (isActive) openSubItems = true;
             return (
               <li key={subItem.path} className="mt6">
