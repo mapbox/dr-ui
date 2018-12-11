@@ -5,11 +5,7 @@ class ExamplesPage extends React.PureComponent {
   render() {
     const { props } = this;
     const renderedContainers = props.cardContainers.map((container, index) => {
-      return (
-        <div key={index} className="pt60">
-          {container}
-        </div>
-      );
+      return <div key={index}>{container}</div>;
     });
     return <div>{renderedContainers}</div>;
   }

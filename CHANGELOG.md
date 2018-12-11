@@ -1,3 +1,9 @@
+## Master
+
+- Remove `pt60` class from `ExamplesPage` component. ([#70](https://github.com/mapbox/dr-ui/pull/70))
+- Update styles for `Card` and `CardContainer` components for consistent padding and spacing. ([#71](https://github.com/mapbox/dr-ui/pull/71))
+- Fix z-index on `TopbarSticker` to prevent overlap with Mapbox logo on maps ([#67](https://github.com/mapbox/dr-ui/pull/67))
+
 ## 0.0.9
 
 - Add missing `index.js` file for the `LevelIndicator` component.
