@@ -10,37 +10,46 @@ class SectionedNavigationSection extends React.Component {
       text += ` (${props.items.length})`;
     }
 
+    const classes = `block txt-bold color-gray ${
+      props.hideSubItems ? 'py6' : 'py12'
+    }`;
+
     if (props.url) {
       return (
-        <a href={props.url} className="color-blue-on-hover">
+        <a href={props.url} className={`${classes} color-blue-on-hover`}>
           {text}
         </a>
       );
     }
-    return <div>{text}</div>;
+    return <div className={classes}>{text}</div>;
   }
 
   renderItems() {
-    return this.props.items.map(item => {
-      let activeClass = '';
-      if (item.active === true) {
-        activeClass = 'txt-bold';
-      }
+    const { props } = this;
+    if (props.hideSubItems) {
+      return null;
+    }
+    const items = this.props.items.map(item => {
       return (
-        <li key={item.url} className={`mt6 ${activeClass}`}>
-          <a href={item.url} className="color-blue-on-hover">
-            {item.text}
-          </a>
-        </li>
+        <a
+          key={item.url}
+          href={item.url}
+          className={`color-blue-on-hover block mb6${
+            item.active === true ? ' txt-bold' : ''
+          }`}
+        >
+          {item.text}
+        </a>
       );
     });
+    return <div>{items}</div>;
   }
 
   render() {
     return (
       <div>
-        <div className="txt-m">{this.renderHeading()}</div>
-        <ul className="txt-s">{this.renderItems()}</ul>
+        {this.renderHeading()}
+        {this.renderItems()}
       </div>
     );
   }
@@ -56,11 +65,13 @@ SectionedNavigationSection.propTypes = {
       active: PropTypes.bool
     })
   ).isRequired,
-  includeCount: PropTypes.bool
+  includeCount: PropTypes.bool,
+  hideSubItems: PropTypes.bool
 };
 
 SectionedNavigationSection.defaultProps = {
-  includeCount: true
+  includeCount: true,
+  hideSubItems: false
 };
 
 export default SectionedNavigationSection;

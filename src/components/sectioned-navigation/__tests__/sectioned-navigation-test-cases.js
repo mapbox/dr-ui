@@ -105,6 +105,58 @@ testCases.minimal = {
   }
 };
 
+testCases.headingsOnly = {
+  description: 'Without title, without sub items',
+  component: SectionedNavigation,
+  props: {
+    hideSubItems: true,
+    sections: [
+      {
+        title: 'Getting started',
+        url: '#getting-started',
+        items: [
+          {
+            text: 'Camera animation',
+            url: '#footwo'
+          },
+          {
+            text: 'Mark a place',
+            url: '#foo-to'
+          },
+          {
+            text: 'Apply a style',
+            url: '#footoo'
+          }
+        ]
+      },
+      {
+        title: 'Markers and callouts',
+        url: '#markers-and-callouts',
+        items: [
+          {
+            text: 'Annotation models',
+            url: '#foot'
+          },
+          {
+            text: 'Callouts',
+            url: '#fooz'
+          }
+        ]
+      },
+      {
+        title: 'Getting started again',
+        url: '#getting-started-again',
+        items: [
+          {
+            text: 'Apply a style',
+            url: '#foobles'
+          }
+        ]
+      }
+    ]
+  }
+};
+
 testCases.filter = {
   description: 'With a title, linked section headings, counts, and filter',
   component: SectionedNavigation,
