@@ -15,12 +15,12 @@ class NavigationAccordion extends React.PureComponent {
     const secondLevelContent =
       props.contents.secondLevelItems &&
       props.contents.secondLevelItems.map(item => {
-        const isActive = this.props.location.hash === `#${item.path}`;
+        const isActive = props.currentPath.hash === `#${item.path}`;
         let openSubItems = isActive;
         const subItems =
           item.thirdLevelItems &&
           item.thirdLevelItems.map(subItem => {
-            const isActive = this.props.location.hash === `#${subItem.path}`;
+            const isActive = props.currentPath.hash === `#${subItem.path}`;
             if (isActive) openSubItems = true;
             return (
               <li key={subItem.path} className="mt6">
@@ -109,7 +109,6 @@ class NavigationAccordion extends React.PureComponent {
 
 NavigationAccordion.propTypes = {
   currentPath: PropTypes.string,
-  location: PropTypes.object.isRequired,
   contents: PropTypes.shape({
     firstLevelItems: PropTypes.arrayOf(
       PropTypes.shape({
