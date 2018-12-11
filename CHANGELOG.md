@@ -1,3 +1,7 @@
+## Master
+
+- Remove `pt60` class from `ExamplesPage` component. ([#70](https://github.com/mapbox/dr-ui/pull/70))
+
 ## 0.0.9
 
 - Add missing `index.js` file for the `LevelIndicator` component.
