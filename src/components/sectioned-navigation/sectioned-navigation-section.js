@@ -10,19 +10,18 @@ class SectionedNavigationSection extends React.Component {
       text += ` (${props.items.length})`;
     }
 
+    const classes = `block txt-bold color-gray ${
+      props.hideSubItems ? 'py6' : 'py12'
+    }`;
+
     if (props.url) {
       return (
-        <a
-          href={props.url}
-          className={`color-blue-on-hover inline-block txt-bold color-gray ${
-            props.hideSubItems ? 'py6' : 'py12'
-          }`}
-        >
+        <a href={props.url} className={`${classes} color-blue-on-hover`}>
           {text}
         </a>
       );
     }
-    return <div>{text}</div>;
+    return <div className={classes}>{text}</div>;
   }
 
   renderItems() {
@@ -35,7 +34,7 @@ class SectionedNavigationSection extends React.Component {
         <a
           key={item.url}
           href={item.url}
-          className={`color-blue-on-hover inline-block mb6${
+          className={`color-blue-on-hover block mb6${
             item.active === true ? ' txt-bold' : ''
           }`}
         >
