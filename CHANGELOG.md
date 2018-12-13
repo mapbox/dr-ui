@@ -4,6 +4,7 @@
 - Update styles for `Card` and `CardContainer` components for consistent padding and spacing. ([#71](https://github.com/mapbox/dr-ui/pull/71))
 - Fix z-index on `TopbarSticker` to prevent overlap with Mapbox logo on maps. ([#67](https://github.com/mapbox/dr-ui/pull/67))
 - Add `hideSubItems` option to `SectionedNavigation` and active class to current page. ([#69](https://github.com/mapbox/dr-ui/pull/69))
+- Remove `ProductMenuDropdown` and refactor `ProductMenu` as a navigation link. ([#73](https://github.com/mapbox/dr-ui/pull/73))
 
 ## 0.0.9
 
