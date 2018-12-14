@@ -12,7 +12,7 @@ UI components for Mapbox documentation projects.
 npm install @mapbox/dr-ui
 ```
 
-On Mapbox projects, pair these components with version 0.26.0 of Mapbox's custom [Assembly](https://www.mapbox.com/assembly/) build. (This is not in `peerDependencies` because you might use `<link>` and `<script>` tags instead of the npm package.)
+On Mapbox projects, pair these components with version 0.26.0 of Mapbox's custom [Assembly](https://labs.mapbox.com/assembly/) build. (This is not in `peerDependencies` because you might use `<link>` and `<script>` tags instead of the npm package.)
 
 The public Assembly build should work fine, with maybe one or two hiccups.
 
