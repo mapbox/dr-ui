@@ -20,3 +20,10 @@
   font-size: 24px;
   padding-top: 40px;
 }
+
+@media screen and (min-width:640px) {
+  .scroll-auto-mm {
+    overflow: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+}
