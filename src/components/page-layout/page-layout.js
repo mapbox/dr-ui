@@ -67,7 +67,7 @@ class PageLayout extends React.Component {
             top={state.topValue}
           >
             <div
-              className={`pt24-mm pt0 viewport-almost-mm scroll-auto scroll-styled ${sidebarNarrowClasses}`}
+              className={`pt24-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled ${sidebarNarrowClasses}`}
             >
               {title}
               {props.sidebarContent}
@@ -76,7 +76,7 @@ class PageLayout extends React.Component {
         </div>
         <div
           id="docs-content"
-          className="col col--8-mm col--12 mt24 mb60 pr0-mm pr36 pl36"
+          className="col col--8-mm col--12 mt24-mm mb60 pr0-mm px12 px36-mm"
         >
           {props.children}
         </div>
