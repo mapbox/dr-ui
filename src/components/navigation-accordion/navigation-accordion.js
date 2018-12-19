@@ -3,24 +3,73 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Icon from '@mapbox/mr-ui/icon';
 import NavigationDropdown from '../navigation-dropdown/navigation-dropdown';
+import debounce from 'lodash.debounce';
+
+const debounceVal = 50;
 
 class NavigationAccordion extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      hash: ''
+      activeh2: '',
+      activeh3: ''
     };
+    this.onScrollLiveHeadingTwo = this.onScrollLiveHeadingTwo.bind(this);
+    this.onScrollLiveHeadingThree = this.onScrollLiveHeadingThree.bind(this);
   }
 
-  componentDidUpdate() {
-    if (typeof window !== 'undefined') {
-      this.setState({ hash: window.location.hash });
+  componentDidMount() {
+    this.onScrollHeadingTwo = debounce(
+      this.onScrollLiveHeadingTwo,
+      debounceVal
+    );
+    document.addEventListener('scroll', this.onScrollHeadingTwo);
+    this.onScrollLiveHeadingTwo();
+
+    this.onScrollHeadingThree = debounce(
+      this.onScrollLiveHeadingThree,
+      debounceVal
+    );
+    document.addEventListener('scroll', this.onScrollHeadingThree);
+    this.onScrollLiveHeadingThree();
+  }
+
+  onScrollLiveHeadingTwo() {
+    const sections = document.querySelectorAll('div.section-h2');
+    if (!sections.length) return;
+    for (let i = 0; i < sections.length; i++) {
+      const rect = sections[i].getBoundingClientRect();
+      if (rect.bottom > 0) {
+        this.setState({
+          activeh2: sections[i].getElementsByTagName('h2')[0]
+            ? sections[i].getElementsByTagName('h2')[0].id
+            : ''
+        });
+        return;
+      }
     }
   }
+
+  onScrollLiveHeadingThree() {
+    const sections = document.querySelectorAll('div.section-h3');
+    if (!sections.length) return;
+    for (let i = 0; i < sections.length; i++) {
+      const rect = sections[i].getBoundingClientRect();
+      if (rect.bottom > 0) {
+        this.setState({
+          activeh3: sections[i].getElementsByTagName('h3')[0]
+            ? sections[i].getElementsByTagName('h3')[0].id
+            : ''
+        });
+        return;
+      }
+    }
+  }
+
   render() {
     const { props, state } = this;
     function itemClasses(isActive) {
-      return classnames('color-blue-on-hover text-decoration-none unprose', {
+      return classnames('color-blue-on-hover', {
         'txt-bold': isActive
       });
     }
@@ -28,12 +77,12 @@ class NavigationAccordion extends React.PureComponent {
     const secondLevelContent =
       props.contents.secondLevelItems &&
       props.contents.secondLevelItems.map(item => {
-        const isActive = state.hash === `#${item.path}`;
+        const isActive = state.activeh2 === item.path;
         let openSubItems = isActive;
         const subItems =
           item.thirdLevelItems &&
           item.thirdLevelItems.map(subItem => {
-            const isActive = state.hash === `#${subItem.path}`;
+            const isActive = state.activeh3 === subItem.path;
             if (isActive) openSubItems = true;
             return (
               <li key={subItem.path} className="mt6">
