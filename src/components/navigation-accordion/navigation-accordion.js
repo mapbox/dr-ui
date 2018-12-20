@@ -17,31 +17,41 @@ class NavigationAccordion extends React.PureComponent {
     this.onScrollLive = this.onScrollLive.bind(this);
   }
 
-  componentDidMount() {
+  scrollWatch() {
     this.onScrollHeadingTwo = debounce(this.onScrollLive, debounceVal);
     document.addEventListener('scroll', () => {
-      this.onScrollHeadingTwo('h2', 'activeh2');
+      this.onScrollHeadingTwo();
     });
-    this.onScrollLive('h2', 'activeh2');
-
-    this.onScrollHeadingThree = debounce(this.onScrollLive, debounceVal);
-    document.addEventListener('scroll', () => {
-      this.onScrollHeadingThree('h3', 'activeh3');
-    });
-    this.onScrollLive('h3', 'activeh3');
+    this.onScrollLive();
   }
 
-  onScrollLive(level, key) {
-    const sections = document.querySelectorAll(`div.section-${level}`);
+  componentDidMount() {
+    this.scrollWatch();
+  }
+
+  onScrollLive() {
+    const sections = document.querySelectorAll(`div.section-h2`);
     if (!sections.length) return;
     for (let i = 0; i < sections.length; i++) {
-      const rect = sections[i].getBoundingClientRect();
-      if (rect.bottom > 0) {
+      // find the active section
+      if (sections[i].getBoundingClientRect().bottom > 0) {
         this.setState({
-          [key]: sections[i].getElementsByTagName(level)[0]
-            ? sections[i].getElementsByTagName(level)[0].id
+          [`activeh2`]: sections[i].getElementsByTagName('h2')[0]
+            ? sections[i].getElementsByTagName('h2')[0].id
             : ''
         });
+        // find the active subheading within the section
+        const subheadings = sections[i].querySelectorAll(`div.section-h3`);
+        for (let s = 0; s < subheadings.length; s++) {
+          if (subheadings[s].getBoundingClientRect().bottom > 0) {
+            this.setState({
+              [`activeh3`]: subheadings[s].getElementsByTagName('h3')[0]
+                ? subheadings[s].getElementsByTagName('h3')[0].id
+                : ''
+            });
+            return;
+          }
+        }
         return;
       }
     }
