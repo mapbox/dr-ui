@@ -14,51 +14,32 @@ class NavigationAccordion extends React.PureComponent {
       activeh2: '',
       activeh3: ''
     };
-    this.onScrollLiveHeadingTwo = this.onScrollLiveHeadingTwo.bind(this);
-    this.onScrollLiveHeadingThree = this.onScrollLiveHeadingThree.bind(this);
+    this.onScrollLive = this.onScrollLive.bind(this);
   }
 
   componentDidMount() {
-    this.onScrollHeadingTwo = debounce(
-      this.onScrollLiveHeadingTwo,
-      debounceVal
-    );
-    document.addEventListener('scroll', this.onScrollHeadingTwo);
-    this.onScrollLiveHeadingTwo();
+    this.onScrollHeadingTwo = debounce(this.onScrollLive, debounceVal);
+    document.addEventListener('scroll', () => {
+      this.onScrollHeadingTwo('h2', 'activeh2');
+    });
+    this.onScrollLive('h2', 'activeh2');
 
-    this.onScrollHeadingThree = debounce(
-      this.onScrollLiveHeadingThree,
-      debounceVal
-    );
-    document.addEventListener('scroll', this.onScrollHeadingThree);
-    this.onScrollLiveHeadingThree();
+    this.onScrollHeadingThree = debounce(this.onScrollLive, debounceVal);
+    document.addEventListener('scroll', () => {
+      this.onScrollHeadingThree('h3', 'activeh3');
+    });
+    this.onScrollLive('h3', 'activeh3');
   }
 
-  onScrollLiveHeadingTwo() {
-    const sections = document.querySelectorAll('div.section-h2');
+  onScrollLive(level, key) {
+    const sections = document.querySelectorAll(`div.section-${level}`);
     if (!sections.length) return;
     for (let i = 0; i < sections.length; i++) {
       const rect = sections[i].getBoundingClientRect();
       if (rect.bottom > 0) {
         this.setState({
-          activeh2: sections[i].getElementsByTagName('h2')[0]
-            ? sections[i].getElementsByTagName('h2')[0].id
-            : ''
-        });
-        return;
-      }
-    }
-  }
-
-  onScrollLiveHeadingThree() {
-    const sections = document.querySelectorAll('div.section-h3');
-    if (!sections.length) return;
-    for (let i = 0; i < sections.length; i++) {
-      const rect = sections[i].getBoundingClientRect();
-      if (rect.bottom > 0) {
-        this.setState({
-          activeh3: sections[i].getElementsByTagName('h3')[0]
-            ? sections[i].getElementsByTagName('h3')[0].id
+          [key]: sections[i].getElementsByTagName(level)[0]
+            ? sections[i].getElementsByTagName(level)[0].id
             : ''
         });
         return;
