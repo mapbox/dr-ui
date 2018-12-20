@@ -38,7 +38,7 @@ class NavigationAccordion extends React.PureComponent {
       // find the active section
       if (sections[i].getBoundingClientRect().bottom > 0) {
         this.setState({
-          [`activeh2`]: sections[i].getElementsByTagName('h2')[0]
+          activeh2: sections[i].getElementsByTagName('h2')[0]
             ? sections[i].getElementsByTagName('h2')[0].id
             : ''
         });
@@ -47,7 +47,7 @@ class NavigationAccordion extends React.PureComponent {
         for (let s = 0; s < subheadings.length; s++) {
           if (subheadings[s].getBoundingClientRect().bottom > 0) {
             this.setState({
-              [`activeh3`]: subheadings[s].getElementsByTagName('h3')[0]
+              activeh3: subheadings[s].getElementsByTagName('h3')[0]
                 ? subheadings[s].getElementsByTagName('h3')[0].id
                 : ''
             });
