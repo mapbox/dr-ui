@@ -17,14 +17,10 @@ class NavigationAccordion extends React.PureComponent {
     this.onScrollLive = this.onScrollLive.bind(this);
   }
 
-  scrollWatch() {
+  componentDidMount() {
     this.onScroll = debounce(this.onScrollLive, debounceVal);
     document.addEventListener('scroll', this.onScroll);
     this.onScrollLive();
-  }
-
-  componentDidMount() {
-    this.scrollWatch();
   }
 
   componentWillUnmount() {
