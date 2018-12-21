@@ -1,0 +1,12 @@
+{
+  "extends": ["@mapbox/eslint-config-mapbox/node6", "prettier"],
+  "env": {
+    "browser": false
+  },
+  "plugins": ["node"],
+  "rules": {
+    "strict": ["error", "global"],
+    "node/no-unsupported-features": ["error", { "version": 6 }],
+    "node/no-missing-require": "error"
+  }
+}

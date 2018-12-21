@@ -66,6 +66,7 @@
     "classnames": "^2.2.6",
     "debounce": "^1.2.0",
     "extend": "^3.0.2",
-    "react-stickynode": "^2.1.0"
+    "react-stickynode": "^2.1.0",
+    "rehype-sectionize-headings": "^1.0.0-rc.1"
   }
 }
