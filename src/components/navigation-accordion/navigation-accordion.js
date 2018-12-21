@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Icon from '@mapbox/mr-ui/icon';
 import NavigationDropdown from '../navigation-dropdown/navigation-dropdown';
-import debounce from 'lodash.debounce';
+import debounce from 'debounce';
 
 const debounceVal = 50;
 
