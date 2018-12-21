@@ -1,5 +1,7 @@
 # @mapbox/dr-ui
 
+[![Build Status](https://travis-ci.com/mapbox/dr-ui.svg?branch=master)](https://travis-ci.com/mapbox/dr-ui)
+
 Pronounced "Doctor UI". **D**ocumentation **R**eact **UI** components. See [@mapbox/mr-ui](https://github.com/mapbox/mr-ui).
 
 UI components for Mapbox documentation projects.
