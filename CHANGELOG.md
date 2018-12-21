@@ -1,4 +1,4 @@
-## Master
+## 0.0.13
 
 - Add scrollspy feature to `NavigationAccordion` and add plugin to create sections in markdown files based on h2 and h3 headings. ([#66](https://github.com/mapbox/dr-ui/pull/66))
 
