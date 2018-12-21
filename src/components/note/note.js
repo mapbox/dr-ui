@@ -6,11 +6,12 @@ class Note extends React.Component {
     const { props } = this;
     let titleText = 'Note';
     let themeNote = {
-      padding: '18px 18px 18px',
+      padding: '18px',
       background: '#f1faff',
       fontSize: '13px',
       lineHeight: '20px',
-      color: '#607d9c'
+      color: '#587594',
+      borderRadius: '4px'
     };
     if (props.title) {
       titleText = props.title;
