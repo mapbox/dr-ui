@@ -1,6 +1,10 @@
+## Master
+
+- Fix `bottomBoundaryValue` on `PageLayout`'s sticky sidebar to account for slimmer docs-page-shell footer. ([#88](https://github.com/mapbox/dr-ui/pull/88))
+
 ## 0.1.0
 
-- Removes ProductMenuDropdown and ProductMenuItems and refactors ProductMenu as a link. ([#73](https://github.com/mapbox/dr-ui/pull/73))
+- Removes `ProductMenuDropdown` and `ProductMenuItems` and refactors `ProductMenu` as a link. ([#73](https://github.com/mapbox/dr-ui/pull/73))
 
 ## 0.0.13
 
