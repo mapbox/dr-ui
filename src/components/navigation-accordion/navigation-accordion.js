@@ -3,22 +3,79 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Icon from '@mapbox/mr-ui/icon';
 import NavigationDropdown from '../navigation-dropdown/navigation-dropdown';
+import debounce from 'debounce';
+
+const debounceVal = 50;
 
 class NavigationAccordion extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeh2: '',
+      activeh3: ''
+    };
+    this.onScrollLive = this.onScrollLive.bind(this);
+  }
+
+  componentDidMount() {
+    this.onScroll = debounce(this.onScrollLive, debounceVal);
+    document.addEventListener('scroll', this.onScroll);
+    this.onScrollLive();
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('scroll', this.onScroll);
+  }
+
+  onScrollLive() {
+    const sections = document.querySelectorAll(`div.section-h2`);
+    if (!sections.length) return;
+    for (let i = 0; i < sections.length; i++) {
+      // find the active section
+      if (sections[i].getBoundingClientRect().bottom > 0) {
+        this.setState({
+          activeh2: sections[i].getElementsByTagName('h2')[0]
+            ? sections[i].getElementsByTagName('h2')[0].id
+            : ''
+        });
+        // find the active subheading within the section
+        const subheadings = sections[i].querySelectorAll(`div.section-h3`);
+        for (let s = 0; s < subheadings.length; s++) {
+          if (subheadings[s].getBoundingClientRect().bottom > 0) {
+            this.setState({
+              activeh3: subheadings[s].getElementsByTagName('h3')[0]
+                ? subheadings[s].getElementsByTagName('h3')[0].id
+                : ''
+            });
+            return;
+          }
+        }
+        return;
+      }
+    }
+  }
+
   render() {
-    const { props } = this;
+    const { props, state } = this;
+    function itemClasses(isActive) {
+      return classnames('color-blue-on-hover', {
+        'txt-bold': isActive
+      });
+    }
+
     const secondLevelContent =
       props.contents.secondLevelItems &&
       props.contents.secondLevelItems.map(item => {
+        const isActive = state.activeh2 === item.path;
+        let openSubItems = isActive;
         const subItems =
           item.thirdLevelItems &&
           item.thirdLevelItems.map(subItem => {
+            const isActive = state.activeh3 === subItem.path;
+            if (isActive) openSubItems = true;
             return (
               <li key={subItem.path} className="mt6">
-                <a
-                  href={`#${subItem.path}`}
-                  className="color-blue-on-hover text-decoration-none unprose"
-                >
+                <a href={`#${subItem.path}`} className={itemClasses(isActive)}>
                   {subItem.title}
                 </a>
               </li>
@@ -26,13 +83,12 @@ class NavigationAccordion extends React.PureComponent {
           });
         return (
           <li key={item.path} className="mb6">
-            <a
-              href={`#${item.path}`}
-              className="color-blue-on-hover text-decoration-none unprose"
-            >
+            <a href={`#${item.path}`} className={itemClasses(isActive)}>
               {item.title}
             </a>
-            <ul className="pl12 color-darken75">{subItems}</ul>
+            <ul className={openSubItems ? 'pl12 color-darken75' : 'none'}>
+              {subItems}
+            </ul>
           </li>
         );
       });

@@ -7,7 +7,11 @@ export default class BackToTopButton extends React.Component {
       <div className="block mx24 my24 z5">
         <IconButton
           onClick={() => {
-            document.documentElement.scrollTop = 0;
+            document.documentElement.scrollTop = 0; // fallback
+            window.scroll({
+              top: 0,
+              left: 0
+            });
           }}
           icon="arrow-up"
           tooltipProps={{
@@ -22,5 +26,3 @@ export default class BackToTopButton extends React.Component {
     );
   }
 }
-
-// {/* none-mm fixed bottom right */}
