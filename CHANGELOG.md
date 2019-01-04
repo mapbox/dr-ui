@@ -1,4 +1,4 @@
-## Master
+## 0.1.0
 
 - Removes ProductMenuDropdown and ProductMenuItems and refactors ProductMenu as a link. ([#73](https://github.com/mapbox/dr-ui/pull/73))
 
