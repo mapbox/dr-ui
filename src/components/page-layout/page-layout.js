@@ -24,7 +24,7 @@ class PageLayout extends React.Component {
       }
       const height = document.body.clientHeight;
       this.setState({
-        bottomBoundaryValue: height - 450
+        bottomBoundaryValue: height - 150
       });
     }, 200);
   }
