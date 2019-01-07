@@ -1,4 +1,4 @@
-## Master
+## 0.1.1
 
 - Fix `bottomBoundaryValue` on `PageLayout`'s sticky sidebar to account for slimmer docs-page-shell footer. ([#88](https://github.com/mapbox/dr-ui/pull/88))
 
