@@ -1,9 +1,11 @@
+#docs-content .prose h1,
 #docs-content.prose h1 {
   margin-top: 6px;
   margin-bottom: 30px;
   font-size: 36px;
 }
 
+#docs-content .prose h2,
 #docs-content.prose h2 {
   font-weight: normal !important;
   cursor: pointer;
@@ -14,6 +16,7 @@
   margin: 36px 0px 18px;
 }
 
+#docs-content .prose h3,
 #docs-content.prose h3 {
   font-weight: normal;
   cursor: pointer;
