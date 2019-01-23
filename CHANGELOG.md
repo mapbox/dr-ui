@@ -1,3 +1,8 @@
+## Master
+
+- Add optional prop (`sideBarColSize`) to change the column size of the sidebar in `PageLayout`. ([#96](https://github.com/mapbox/dr-ui/pull/96))
+- Add additional selectors for `#docs-content .prose`. ([#91](https://github.com/mapbox/dr-ui/pull/91))
+
 ## 0.1.1
 
 - Fix `bottomBoundaryValue` on `PageLayout`'s sticky sidebar to account for slimmer docs-page-shell footer. ([#88](https://github.com/mapbox/dr-ui/pull/88))
