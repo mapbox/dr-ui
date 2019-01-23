@@ -57,11 +57,19 @@ class PageLayout extends React.Component {
       'none block-mm': !props.sidebarStackedOnNarrowScreens
     });
 
+    let sideBarColSize = null;
+    if (
+      props.sideBarColSize &&
+      props.sideBarColSize > 2 &&
+      props.sideBarColSize < 7
+    )
+      sideBarColSize = props.sideBarColSize;
+
     return (
       <div className="grid">
         <div
           className={`col col--4-mm ${
-            props.sideBarColSize ? `col--${props.sideBarColSize}-ml` : ''
+            sideBarColSize ? `col--${sideBarColSize}-ml` : ''
           } col--12 ${props.sidebarTheme}`}
         >
           <Sticky
@@ -81,7 +89,7 @@ class PageLayout extends React.Component {
         <div
           id="docs-content"
           className={`col col--8-mm ${
-            props.sideBarColSize ? `col--${12 - props.sideBarColSize}-ml` : ''
+            sideBarColSize ? `col--${12 - sideBarColSize}-ml` : ''
           } col--12 mt24-mm mb60 pr0-mm px12 px36-mm`}
         >
           {props.children}
