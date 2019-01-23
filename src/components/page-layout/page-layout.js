@@ -59,7 +59,11 @@ class PageLayout extends React.Component {
 
     return (
       <div className="grid">
-        <div className={`col col--4-mm col--12 ${props.sidebarTheme}`}>
+        <div
+          className={`col col--4-mm ${
+            props.sideBarColSize ? `col--${props.sideBarColSize}-ml` : ''
+          } col--12 ${props.sidebarTheme}`}
+        >
           <Sticky
             enabled={state.stickyEnabled}
             bottomBoundary={state.bottomBoundaryValue}
@@ -76,7 +80,9 @@ class PageLayout extends React.Component {
         </div>
         <div
           id="docs-content"
-          className="col col--8-mm col--12 mt24-mm mb60 pr0-mm px12 px36-mm"
+          className={`col col--8-mm ${
+            props.sideBarColSize ? `col--${12 - props.sideBarColSize}-ml` : ''
+          } col--12 mt24-mm mb60 pr0-mm px12 px36-mm`}
         >
           {props.children}
         </div>
@@ -92,6 +98,7 @@ PageLayout.propTypes = {
   sidebarContentStickyTop: PropTypes.number.isRequired,
   sidebarContentStickyTopNarrow: PropTypes.number.isRequired,
   sidebarStackedOnNarrowScreens: PropTypes.bool,
+  sideBarColSize: PropTypes.number,
   children: PropTypes.node.isRequired
 };
 

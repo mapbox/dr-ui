@@ -16,6 +16,19 @@ testCases.basic = {
   }
 };
 
+testCases.smallSidebarCol = {
+  description: 'Basic, small sideBarCol',
+  component: PageLayout,
+  props: {
+    sidebarContent: <div>Some content</div>,
+    sidebarTitle: 'Some title',
+    sidebarContentStickyTop: 0,
+    sidebarContentStickyTopNarrow: 0,
+    sideBarColSize: 3,
+    children: <div>Doc content</div>
+  }
+};
+
 testCases.commonUseCase = {
   description: 'Common use case',
   component: PageLayout,
