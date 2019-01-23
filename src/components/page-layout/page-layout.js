@@ -35,10 +35,32 @@ class PageLayout extends React.Component {
       this.setState({ stickyEnabled: true });
     }, 500);
     window.addEventListener('resize', this.debounceHandleWindowResize);
+    if (this.props.interactiveClass) {
+      const interactiveClass = document.getElementsByClassName(
+        this.props.interactiveClass
+      );
+      for (let i = 0; i < interactiveClass.length; i++) {
+        interactiveClass[i].addEventListener(
+          'click',
+          this.debounceHandleWindowResize
+        );
+      }
+    }
   }
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.debounceHandleWindowResize);
+    if (this.props.interactiveClass) {
+      const interactiveClass = document.getElementsByClassName(
+        this.props.interactiveClass
+      );
+      for (let i = 0; i < interactiveClass.length; i++) {
+        interactiveClass[i].removeEventListener(
+          'click',
+          this.debounceHandleWindowResize
+        );
+      }
+    }
   }
 
   render() {
@@ -107,7 +129,8 @@ PageLayout.propTypes = {
   sidebarContentStickyTopNarrow: PropTypes.number.isRequired,
   sidebarStackedOnNarrowScreens: PropTypes.bool,
   sideBarColSize: PropTypes.number,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  interactiveClass: PropTypes.string
 };
 
 PageLayout.defaultProps = {
