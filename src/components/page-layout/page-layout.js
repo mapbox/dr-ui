@@ -35,6 +35,7 @@ class PageLayout extends React.Component {
       this.setState({ stickyEnabled: true });
     }, 500);
     window.addEventListener('resize', this.debounceHandleWindowResize);
+    // when available, the page will recalcute the height of the page when a user clicks and an element with the given class name
     if (this.props.interactiveClass) {
       const interactiveClass = document.getElementsByClassName(
         this.props.interactiveClass
@@ -79,6 +80,7 @@ class PageLayout extends React.Component {
       'none block-mm': !props.sidebarStackedOnNarrowScreens
     });
 
+    // if available, sets the col--#-ml size. If the value is outside of the range, it doesn't not set the col--#-ml value and sticks with the default
     let sideBarColSize = null;
     if (
       props.sideBarColSize &&
@@ -128,9 +130,9 @@ PageLayout.propTypes = {
   sidebarContentStickyTop: PropTypes.number.isRequired,
   sidebarContentStickyTopNarrow: PropTypes.number.isRequired,
   sidebarStackedOnNarrowScreens: PropTypes.bool,
-  sideBarColSize: PropTypes.number,
-  children: PropTypes.node.isRequired,
-  interactiveClass: PropTypes.string
+  sideBarColSize: PropTypes.number, // accepts numbers 3 - 6 to change the column width of the sidebar at the -ml breakpoint
+  interactiveClass: PropTypes.string, // the class name of an interactive element, when clicked PageLayout will recalculate the height of the page and sizing for the the sidebar
+  children: PropTypes.node.isRequired
 };
 
 PageLayout.defaultProps = {
