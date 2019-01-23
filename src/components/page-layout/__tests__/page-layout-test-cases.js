@@ -16,6 +16,47 @@ testCases.basic = {
   }
 };
 
+testCases.smallSidebarCol = {
+  description: 'Custom sidebar column size',
+  component: PageLayout,
+  props: {
+    sidebarContent: <div>Some content</div>,
+    sidebarTitle: 'Some title',
+    sidebarContentStickyTop: 0,
+    sidebarContentStickyTopNarrow: 0,
+    sideBarColSize: 3,
+    children: <div>Doc content</div>
+  }
+};
+
+testCases.tooSmallSidebarCol = {
+  description:
+    'Custom sidebar column size, too small - default to original size',
+  component: PageLayout,
+  props: {
+    sidebarContent: <div>Some content</div>,
+    sidebarTitle: 'Some title',
+    sidebarContentStickyTop: 0,
+    sidebarContentStickyTopNarrow: 0,
+    sideBarColSize: 2,
+    children: <div>Doc content</div>
+  }
+};
+
+testCases.tooLargeSidebarCol = {
+  description:
+    'Custom sidebar column size, too large - default to original size',
+  component: PageLayout,
+  props: {
+    sidebarContent: <div>Some content</div>,
+    sidebarTitle: 'Some title',
+    sidebarContentStickyTop: 0,
+    sidebarContentStickyTopNarrow: 0,
+    sideBarColSize: 7,
+    children: <div>Doc content</div>
+  }
+};
+
 testCases.commonUseCase = {
   description: 'Common use case',
   component: PageLayout,
