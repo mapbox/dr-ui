@@ -35,10 +35,33 @@ class PageLayout extends React.Component {
       this.setState({ stickyEnabled: true });
     }, 500);
     window.addEventListener('resize', this.debounceHandleWindowResize);
+    // when available, the page will recalculate the height of the page when a user clicks an element with the given class name
+    if (this.props.interactiveClass) {
+      const interactiveClass = document.getElementsByClassName(
+        this.props.interactiveClass
+      );
+      for (let i = 0; i < interactiveClass.length; i++) {
+        interactiveClass[i].addEventListener(
+          'click',
+          this.debounceHandleWindowResize
+        );
+      }
+    }
   }
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.debounceHandleWindowResize);
+    if (this.props.interactiveClass) {
+      const interactiveClass = document.getElementsByClassName(
+        this.props.interactiveClass
+      );
+      for (let i = 0; i < interactiveClass.length; i++) {
+        interactiveClass[i].removeEventListener(
+          'click',
+          this.debounceHandleWindowResize
+        );
+      }
+    }
   }
 
   render() {
@@ -57,6 +80,7 @@ class PageLayout extends React.Component {
       'none block-mm': !props.sidebarStackedOnNarrowScreens
     });
 
+    // if available, sets col--#-ml size for the sidebar and content elements. If the value is outside of the range, it will not set the col--#-ml values and defer to the default col sizes
     let sideBarColSize = null;
     if (
       props.sideBarColSize &&
@@ -106,7 +130,8 @@ PageLayout.propTypes = {
   sidebarContentStickyTop: PropTypes.number.isRequired,
   sidebarContentStickyTopNarrow: PropTypes.number.isRequired,
   sidebarStackedOnNarrowScreens: PropTypes.bool,
-  sideBarColSize: PropTypes.number,
+  sideBarColSize: PropTypes.number, // accepts numbers 3 - 6 to change the column width of the sidebar at the -ml breakpoint
+  interactiveClass: PropTypes.string, // the class name of an interactive element, when clicked PageLayout will recalculate the height of the page and sizing for the the sidebar
   children: PropTypes.node.isRequired
 };
 

@@ -4,6 +4,7 @@
 - Add additional selectors for `#docs-content .prose`. ([#91](https://github.com/mapbox/dr-ui/pull/91))
 - Add make-table-scroll plugin. ([#90](https://github.com/mapbox/dr-ui/pull/90))
 - Remove `px12` on content element in `PageLayout`. ([#98](https://github.com/mapbox/dr-ui/pull/98))
+- Add optional `interactiveClass` prop to watch for changes on click in `PageLayout` to adjust the sidebar height. ([#97](https://github.com/mapbox/dr-ui/pull/97))
 
 ## 0.1.1
 
