@@ -90,7 +90,7 @@ class PageLayout extends React.Component {
           id="docs-content"
           className={`col col--8-mm ${
             sideBarColSize ? `col--${12 - sideBarColSize}-ml` : ''
-          } col--12 mt24-mm mb60 pr0-mm px12 px36-mm`}
+          } col--12 mt24-mm mb60 pr0-mm px36-mm`}
         >
           {props.children}
         </div>
