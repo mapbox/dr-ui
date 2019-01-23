@@ -2,6 +2,7 @@
 
 - Add optional prop (`sideBarColSize`) to change the column size of the sidebar in `PageLayout`. ([#96](https://github.com/mapbox/dr-ui/pull/96))
 - Add additional selectors for `#docs-content .prose`. ([#91](https://github.com/mapbox/dr-ui/pull/91))
+- Add make-table-scroll plugin. ([#90](https://github.com/mapbox/dr-ui/pull/90))
 
 ## 0.1.1
 
