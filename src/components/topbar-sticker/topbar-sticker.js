@@ -16,7 +16,7 @@ class TopbarSticker extends React.PureComponent {
       const width = document.body.clientWidth;
       const height = document.body.clientHeight;
       this.setState({
-        isStuck: width > 640,
+        isStuck: width > (this.props.unStickWidth || 640),
         bottomBoundaryValue: height - 400
       });
     }, 200);
@@ -48,6 +48,7 @@ class TopbarSticker extends React.PureComponent {
 }
 
 TopbarSticker.propTypes = {
+  unStickWidth: PropTypes.number, // optional prop to change the breakpoint when the topbar will unstick
   children: PropTypes.node.isRequired
 };
 
