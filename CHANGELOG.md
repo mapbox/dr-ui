@@ -1,3 +1,7 @@
+## Master
+
+- Add optional `unStickWidth` prop to `TopbarSticker`. ([#100](https://github.com/mapbox/dr-ui/pull/100))
+
 ## 0.2.0
 
 - Add optional prop (`sideBarColSize`) to change the column size of the sidebar in `PageLayout`. ([#96](https://github.com/mapbox/dr-ui/pull/96))
