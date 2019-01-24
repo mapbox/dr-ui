@@ -1,4 +1,4 @@
-## Master
+## 0.3.0
 
 - Add optional `unStickWidth` prop to `TopbarSticker`. ([#100](https://github.com/mapbox/dr-ui/pull/100))
 
