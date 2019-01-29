@@ -44,22 +44,6 @@ testCases.basicTroubleshoot = {
   }
 };
 
-testCases.basicThemed = {
-  component: Note,
-  description: 'A basic themed note',
-  props: {
-    children: <div>Here is a little note with pretty colors.</div>,
-    imageComponent: <BookImage width="60" height="60" />,
-    theme: {
-      padding: '10px 10px 10px',
-      background: 'pink',
-      fontSize: '16px',
-      lineHeight: '25px',
-      color: 'blue'
-    }
-  }
-};
-
 testCases.customTitle = {
   component: Note,
   description: 'Note with custom title',
@@ -90,6 +74,27 @@ testCases.customTitle = {
       </div>
     ),
     imageComponent: <BookImage width="60" height="60" />
+  }
+};
+
+testCases.warning = {
+  component: Note,
+  description: 'A warning note',
+  props: {
+    theme: 'warning',
+    children: <div>Here is a little thing to note.</div>,
+    imageComponent: <BookImage width="60" height="60" />
+  }
+};
+
+testCases.error = {
+  component: Note,
+  description: 'An error note',
+  props: {
+    theme: 'error',
+    title: 'Oh, fudge!',
+    children: <div>Here is a little thing to note.</div>,
+    imageComponent: <div />
   }
 };
 
