@@ -24,6 +24,37 @@
   padding-top: 40px;
 }
 
+/* set max-height for code examples */
+.prose pre {
+  max-height: 300px;
+  overflow: auto;
+}
+
+/* styled scrollbars for long (x or y) code examples */
+.prose pre::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background: transparent;
+}
+.prose pre::-webkit-scrollbar:hover {
+  background: transparent;
+}
+.prose pre::-webkit-scrollbar-track {
+  background: none;
+}
+.prose pre::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+  width: 6px;
+  border-radius: 3px;
+}
+.prose pre::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.35);
+}
+.prose pre::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+
 @media screen and (min-width:640px) {
   .scroll-auto-mm {
     overflow: auto !important;
