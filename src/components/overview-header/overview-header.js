@@ -67,8 +67,8 @@ class OverviewHeader extends React.PureComponent {
     const featuresList = props.features.map((feature, index) => {
       return (
         <li key={index} className="ml-neg24 flex-parent">
-          <div className="flex-child flex-child--no-shrink mr6 m3">
-            <Icon name="check" themeIcon="color-gray-light" inline={true} />
+          <div className="flex-child flex-child--no-shrink mr6 m3 color-gray-light">
+            <Icon name="check" inline={true} />
           </div>
           <div className="flex-child flex-child--grow">{feature}</div>
         </li>
