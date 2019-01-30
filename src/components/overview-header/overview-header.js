@@ -7,7 +7,9 @@ class OverviewHeader extends React.PureComponent {
     const { props } = this;
 
     const versionEl = props.version !== undefined && (
-      <span>Current version: v{props.version} </span>
+      <span>
+        Current version: <code>v{props.version}</code>{' '}
+      </span>
     );
 
     const changelogLinkEl = props.changelogLink && (
@@ -49,13 +51,23 @@ class OverviewHeader extends React.PureComponent {
       </a>
     );
 
-    if (!installLinkEl && !ghLinkEl) {
+    const contactLinkEl = props.contactLink && (
+      <a
+        href={props.contactLink}
+        className="btn txt-l round inline-block color-white unprose mr24"
+      >
+        Contact us
+      </a>
+    );
+
+    if (!installLinkEl && !ghLinkEl && !contactLinkEl) {
       return null;
     }
 
     return (
       <div className="mb24">
         {installLinkEl}
+        {contactLinkEl}
         {ghLinkEl}
       </div>
     );
@@ -100,9 +112,10 @@ OverviewHeader.propTypes = {
   title: PropTypes.string.isRequired,
   image: PropTypes.node.isRequired,
   version: PropTypes.string,
-  changelogLink: PropTypes.string,
-  installLink: PropTypes.string,
-  ghLink: PropTypes.string
+  changelogLink: PropTypes.string, // creates a "View changelog" link
+  installLink: PropTypes.string, // creates a "Install" button
+  ghLink: PropTypes.string, // creates a "Contribute on GitHub" link
+  contactLink: PropTypes.string // creates a "Contact us" button
 };
 
 export default OverviewHeader;
