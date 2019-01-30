@@ -1,6 +1,7 @@
 ## Master
 
 - Update to mr-ui 0.5.0. ([#95](https://github.com/mapbox/dr-ui/pull/95))
+- Add `contactLink` prop to `OverviewHeader` to create Contact us button. ([#105](https://github.com/mapbox/dr-ui/pull/105))
 
 ## 0.3.0
 
