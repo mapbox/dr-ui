@@ -3,6 +3,7 @@ import Note from '../note';
 import BookImage from '../../book-image/book-image';
 import BookletImage from '../../booklet-image/booklet-image';
 import ContactImage from '../../contact-image/contact-image';
+import WarningImage from '../../warning-image/warning-image';
 import TroubleshootImage from '../../troubleshoot-image/troubleshoot-image';
 
 const testCases = {};
@@ -83,7 +84,7 @@ testCases.warning = {
   props: {
     theme: 'warning',
     children: <div>Here is a little thing to note.</div>,
-    imageComponent: <BookImage width="60" height="60" />
+    imageComponent: <WarningImage color="orange" width="60" height="60" />
   }
 };
 
@@ -94,7 +95,7 @@ testCases.error = {
     theme: 'error',
     title: 'Oh, fudge!',
     children: <div>Here is a little thing to note.</div>,
-    imageComponent: <div />
+    imageComponent: <WarningImage color="red" width="60" height="60" />
   }
 };
 
