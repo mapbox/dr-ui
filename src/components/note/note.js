@@ -33,7 +33,7 @@ class Note extends React.Component {
       Object.assign(themes['base'], themes[props.theme]) || themes['default'];
 
     return (
-      <div className="flex-parent flex-parent--row" style={themeNote}>
+      <div className="flex-parent flex-parent--row mb18" style={themeNote}>
         <div className="flex-child mr12">{props.imageComponent}</div>
         <div className="flex-child">
           <div className="txt-bold txt-m mb6">{titleText}</div>
