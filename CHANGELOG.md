@@ -2,6 +2,7 @@
 
 - Add prism.css to create shared syntax styles [#108](https://github.com/mapbox/dr-ui/pull/108)
 - Add new styles for fullwidth `Card` and `CardContainer`. [#104](https://github.com/mapbox/dr-ui/pull/104)
+- Add CSS to set max-height and style scrollbars for prose code examples. [#103](https://github.com/mapbox/dr-ui/pull/103)
 
 ## 0.4.0
 
