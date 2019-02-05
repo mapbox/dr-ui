@@ -61,4 +61,42 @@ testCases.some = {
   }
 };
 
+testCases.allContactUs = {
+  description: 'All, plus Contact Us button',
+  component: OverviewHeader,
+  props: {
+    features: ['Smooth scrambled eggs', 'Vegetarian sausage', 'Fruit syrups'],
+    title: 'Mapbox SDK for Breakfast',
+    version: '0.1.0',
+    changelogLink: 'https://keepachangelog.com/en/0.3.0/',
+    installLink: 'https://www.mapbox.com/install',
+    ghLink: 'https://github.com/mapbox',
+    contactLink: 'https://www.mapbox.com/contact/',
+    image: (
+      <img
+        height={300}
+        src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
+      />
+    )
+  }
+};
+
+testCases.contactUs = {
+  description: 'Adds Contact Us button',
+  component: OverviewHeader,
+  props: {
+    features: ['Smooth scrambled eggs', 'Vegetarian sausage', 'Fruit syrups'],
+    title: 'Mapbox SDK for Breakfast',
+    version: '0.1.0',
+    changelogLink: 'https://keepachangelog.com/en/0.3.0/',
+    contactLink: 'https://www.mapbox.com/contact/',
+    image: (
+      <img
+        height={300}
+        src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
+      />
+    )
+  }
+};
+
 export { testCases };
