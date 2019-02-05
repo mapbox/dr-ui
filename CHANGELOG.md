@@ -1,6 +1,7 @@
 ## Master
 
 - Add prism.css to create shared syntax styles [#108](https://github.com/mapbox/dr-ui/pull/108)
+- Add new styles for fullwidth `Card` and `CardContainer`. [#104](https://github.com/mapbox/dr-ui/pull/104)
 
 ## 0.4.0
 
