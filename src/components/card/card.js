@@ -30,17 +30,21 @@ class Card extends React.Component {
     }
     return (
       <a
-        className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose"
+        className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
         href={this.props.path}
       >
         {renderedThumbnail}
         <div>
-          <div className="mb6">
-            {renderedLevel}
-            {renderedLanguage}
-          </div>
-          <div className="mb6 txt-m">{this.props.title}</div>
-          <div className="txt-s color-gray color-gray-on-hover">
+          {renderedLevel || renderedLanguage ? (
+            <div className="mb6">
+              {renderedLevel}
+              {renderedLanguage}
+            </div>
+          ) : (
+            ''
+          )}
+          <div className="mb6">{this.props.title}</div>
+          <div className="color-gray color-gray-on-hover">
             {this.props.description}
           </div>
         </div>
