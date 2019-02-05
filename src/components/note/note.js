@@ -29,8 +29,10 @@ class Note extends React.Component {
     if (props.title) {
       titleText = props.title;
     }
-    const themeNote =
-      Object.assign(themes['base'], themes[props.theme]) || themes['default'];
+    const themeNote = Object.assign(
+      themes['base'],
+      themes[props.theme] || themes['default']
+    );
 
     return (
       <div className="flex-parent flex-parent--row mb18" style={themeNote}>
