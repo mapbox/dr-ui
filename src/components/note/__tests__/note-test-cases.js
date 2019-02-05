@@ -8,21 +8,21 @@ const noRenderCases = {};
 
 testCases.basicNote = {
   component: Note,
-  description: 'A basic note',
+  description: 'A basic note to call out information on a page.',
   props: {
-    children: <div>Here is a little thing to note.</div>,
+    children: <p>Here is a little thing to note.</p>,
     imageComponent: <BookImage size="60" />
   }
 };
 
 testCases.customTitle = {
   component: Note,
-  description: 'Note with custom title',
+  description: 'Note with custom title.',
   props: {
     title: 'A very important note',
     children: (
       <div>
-        <p className="mb12">
+        <p>
           Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo
           odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus
           eget urna mollis ornare vel eu leo. Duis mollis, est non commodo
@@ -30,14 +30,14 @@ testCases.customTitle = {
           Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam
           eget risus varius blandit sit amet non magna.
         </p>
-        <p className="mb12">
+        <p>
           Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam.
           Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum
           id ligula porta felis euismod semper. Nullam id dolor id nibh
           ultricies vehicula ut id elit. Curabitur blandit tempus porttitor.
           Maecenas sed diam eget risus varius blandit sit amet non magna.
         </p>
-        <p className="mb12">
+        <p>
           Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra
           augue. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem
           malesuada magna mollis euismod.
@@ -50,17 +50,16 @@ testCases.customTitle = {
 
 testCases.warning = {
   component: Note,
-  description: 'A warning note',
+  description:
+    'A warning note to let the user know something has changed or will change.',
   props: {
     theme: 'warning',
     title: 'This API is in beta',
     children: (
-      <div>
-        <p>
-          Have you already installed the SDK? If so,{' '}
-          <a href="#">click here to read our migration guide</a>.
-        </p>
-      </div>
+      <p>
+        The API may change without advance notice during the preview period.
+        Preview features are not supported for production use.
+      </p>
     ),
     imageComponent: <WarningImage color="orange" size="60" />
   }
@@ -68,11 +67,17 @@ testCases.warning = {
 
 testCases.error = {
   component: Note,
-  description: 'An error or troubleshooting note',
+  description:
+    'A note to display an error with steps or links on how to troubleshoot.',
   props: {
     theme: 'error',
     title: 'Error',
-    children: <div>Did something not go as planned?</div>,
+    children: (
+      <p>
+        Did something not go as planned? Check out the{' '}
+        <a href="#">troubleshooting guide</a>.
+      </p>
+    ),
     imageComponent: <WarningImage color="red" size="60" />
   }
 };
