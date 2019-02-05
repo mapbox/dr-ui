@@ -8,8 +8,8 @@ export default class WarningImage extends React.Component {
       <div
         style={{
           padding: '5px',
-          width: `${props.width}px`,
-          height: `${props.height}px`
+          width: `${props.size}px`,
+          height: `${props.size}px`
         }}
       >
         <div className={`bg-${props.color || 'blue'}-light px3 round-full`}>
@@ -28,7 +28,6 @@ c0.6,0,1,0.4,1,1v2c0,0.6-0.4,1-1,1S8,9.6,8,9V7C8,6.4,8.4,6,9,6z M9,11c0.6,0,1,0.
 }
 
 WarningImage.propTypes = {
-  width: PropTypes.string.isRequired,
-  height: PropTypes.string.isRequired,
+  size: PropTypes.string.isRequired,
   color: PropTypes.string
 };

@@ -11,7 +11,7 @@ testCases.basicNote = {
   description: 'A basic note',
   props: {
     children: <div>Here is a little thing to note.</div>,
-    imageComponent: <BookImage width="60" height="60" />
+    imageComponent: <BookImage size="60" />
   }
 };
 
@@ -44,7 +44,7 @@ testCases.customTitle = {
         </p>
       </div>
     ),
-    imageComponent: <BookImage width="60" height="60" />
+    imageComponent: <BookImage size="60" />
   }
 };
 
@@ -62,7 +62,7 @@ testCases.warning = {
         </p>
       </div>
     ),
-    imageComponent: <WarningImage color="orange" width="60" height="60" />
+    imageComponent: <WarningImage color="orange" size="60" />
   }
 };
 
@@ -73,7 +73,7 @@ testCases.error = {
     theme: 'error',
     title: 'Error',
     children: <div>Did something not go as planned?</div>,
-    imageComponent: <WarningImage color="red" width="60" height="60" />
+    imageComponent: <WarningImage color="red" size="60" />
   }
 };
 
