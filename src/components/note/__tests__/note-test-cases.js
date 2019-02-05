@@ -4,12 +4,11 @@ import BookImage from '../../book-image/book-image';
 import BookletImage from '../../booklet-image/booklet-image';
 import ContactImage from '../../contact-image/contact-image';
 import WarningImage from '../../warning-image/warning-image';
-import TroubleshootImage from '../../troubleshoot-image/troubleshoot-image';
 
 const testCases = {};
 const noRenderCases = {};
 
-testCases.basicBook = {
+testCases.basicNote = {
   component: Note,
   description: 'A basic note',
   props: {
@@ -18,30 +17,29 @@ testCases.basicBook = {
   }
 };
 
-testCases.basicBooklet = {
+testCases.relatedContentNote = {
   component: Note,
-  description: 'A basic note with a booklet image',
+  description: 'A note for related content',
   props: {
-    children: <div>Here is a little thing to note.</div>,
+    title: 'Related content',
+    children: (
+      <div className="prose">
+        <p>
+          To learn more, check out this <a href="#">cool guide</a>.
+        </p>
+      </div>
+    ),
     imageComponent: <BookletImage width="60" height="60" />
   }
 };
 
-testCases.basicContact = {
+testCases.contactNote = {
   component: Note,
-  description: 'A basic note with a contact image',
+  description: 'A note for contact information',
   props: {
-    children: <div>Here is a little thing to note.</div>,
+    title: 'Contact us',
+    children: <div>Call me. Day or night. Preferably day.</div>,
     imageComponent: <ContactImage width="60" height="60" />
-  }
-};
-
-testCases.basicTroubleshoot = {
-  component: Note,
-  description: 'A basic note with a troubleshoot image',
-  props: {
-    children: <div>Here is a little thing to note.</div>,
-    imageComponent: <TroubleshootImage width="60" height="60" />
   }
 };
 
@@ -83,6 +81,7 @@ testCases.warning = {
   description: 'A warning note',
   props: {
     theme: 'warning',
+    title: 'This API is in public beta',
     children: <div>Here is a little thing to note.</div>,
     imageComponent: <WarningImage color="orange" width="60" height="60" />
   }
@@ -90,11 +89,11 @@ testCases.warning = {
 
 testCases.error = {
   component: Note,
-  description: 'An error note',
+  description: 'An error or troubleshooting note',
   props: {
     theme: 'error',
-    title: 'Oh, fudge!',
-    children: <div>Here is a little thing to note.</div>,
+    title: 'Error',
+    children: <div>Did something not go as planned?</div>,
     imageComponent: <WarningImage color="red" width="60" height="60" />
   }
 };
