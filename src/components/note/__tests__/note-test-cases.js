@@ -1,8 +1,6 @@
 import React from 'react';
 import Note from '../note';
 import BookImage from '../../book-image/book-image';
-import BookletImage from '../../booklet-image/booklet-image';
-import ContactImage from '../../contact-image/contact-image';
 import WarningImage from '../../warning-image/warning-image';
 
 const testCases = {};
@@ -14,32 +12,6 @@ testCases.basicNote = {
   props: {
     children: <div>Here is a little thing to note.</div>,
     imageComponent: <BookImage width="60" height="60" />
-  }
-};
-
-testCases.relatedContentNote = {
-  component: Note,
-  description: 'A note for related content',
-  props: {
-    title: 'Related content',
-    children: (
-      <div className="prose">
-        <p>
-          To learn more, check out this <a href="#">cool guide</a>.
-        </p>
-      </div>
-    ),
-    imageComponent: <BookletImage width="60" height="60" />
-  }
-};
-
-testCases.contactNote = {
-  component: Note,
-  description: 'A note for contact information',
-  props: {
-    title: 'Contact us',
-    children: <div>Call me. Day or night. Preferably day.</div>,
-    imageComponent: <ContactImage width="60" height="60" />
   }
 };
 
@@ -81,8 +53,15 @@ testCases.warning = {
   description: 'A warning note',
   props: {
     theme: 'warning',
-    title: 'This API is in public beta',
-    children: <div>Here is a little thing to note.</div>,
+    title: 'This API is in beta',
+    children: (
+      <div>
+        <p>
+          Have you already installed the SDK? If so,{' '}
+          <a href="#">click here to read our migration guide</a>.
+        </p>
+      </div>
+    ),
     imageComponent: <WarningImage color="orange" width="60" height="60" />
   }
 };
