@@ -23,7 +23,7 @@ testCases.basic = {
             key="0"
             title="Example one"
             path="path"
-            description="description"
+            description="Lorem ipsum dolor sit amet."
             thumbnail={
               <div
                 className="relative h120 mb12"
@@ -40,7 +40,7 @@ testCases.basic = {
             key="1"
             title="Example two"
             path="path"
-            description="description"
+            description="Consectetur adipisicing elit"
             thumbnail={
               <div
                 className="relative h120 mb12"
@@ -64,7 +64,7 @@ testCases.basic = {
             key="0"
             title="Example one"
             path="path"
-            description="description"
+            description="Ded do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             thumbnail={
               <div
                 className="relative h120 mb12"
@@ -81,7 +81,7 @@ testCases.basic = {
             key="1"
             title="Example two"
             path="path"
-            description="description"
+            description="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             thumbnail={
               <div
                 className="relative h120 mb12"
@@ -98,7 +98,7 @@ testCases.basic = {
             key="2"
             title="Example two"
             path="path"
-            description="description"
+            description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
             thumbnail={
               <div
                 className="relative h120 mb12"
@@ -110,6 +110,63 @@ testCases.basic = {
                 }}
               />
             }
+          />
+        ]}
+      />
+    ]
+  }
+};
+
+testCases.noThumbs = {
+  component: ExamplesPage,
+  description: 'Cards with no images and full-width',
+  props: {
+    frontMatter: {
+      title: 'Title',
+      description: 'Description.'
+    },
+    cardContainers: [
+      <CardContainer
+        title="Container title one"
+        path="#container-title-one"
+        fullWidthCards={true}
+        cards={[
+          <Card
+            key="0"
+            title="Example one"
+            path="path"
+            description="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          />,
+          <Card
+            key="1"
+            title="Example two"
+            path="path"
+            description="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          />
+        ]}
+      />,
+      <CardContainer
+        title="Container title two"
+        path="#container-title-two"
+        fullWidthCards={true}
+        cards={[
+          <Card
+            key="0"
+            title="Example one"
+            path="path"
+            description="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          />,
+          <Card
+            key="1"
+            title="Example two"
+            path="path"
+            description="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          />,
+          <Card
+            key="2"
+            title="Example two"
+            path="path"
+            description="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
           />
         ]}
       />
