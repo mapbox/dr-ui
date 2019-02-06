@@ -3,6 +3,9 @@
 - Add prism.css to create shared syntax styles [#108](https://github.com/mapbox/dr-ui/pull/108)
 - Add new styles for fullwidth `Card` and `CardContainer`. [#104](https://github.com/mapbox/dr-ui/pull/104)
 - Add CSS to set max-height and style scrollbars for prose code examples. [#103](https://github.com/mapbox/dr-ui/pull/103)
+- Add warning, error, and default themes to `Note` and removes ability to pass `padding`, `background`, `fontSize`, `lineHeight`, and `color` to `Note`. [#102](https://github.com/mapbox/dr-ui/pull/102)
+- Add `WarningImage` for primary use with `Note`. [#102](https://github.com/mapbox/dr-ui/pull/102)
+- 🚨 Replace `width` and `height` props with `size` on `BookImage`, `BookletImage`, `ContactImage`, `TroubleshootImage`. [#102](https://github.com/mapbox/dr-ui/pull/102)
 
 ## 0.4.0
 
