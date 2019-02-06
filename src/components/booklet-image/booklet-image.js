@@ -9,8 +9,8 @@ export default class BookletImage extends React.Component {
         id="Layer_1"
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
-        width={props.width}
-        height={props.height}
+        width={props.size}
+        height={props.size}
         viewBox="0 0 108 108"
       >
         <title>help</title>
@@ -47,6 +47,5 @@ export default class BookletImage extends React.Component {
 }
 
 BookletImage.propTypes = {
-  width: PropTypes.string.isRequired,
-  height: PropTypes.string.isRequired
+  size: PropTypes.string.isRequired
 };
