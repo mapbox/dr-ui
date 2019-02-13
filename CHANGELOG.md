@@ -1,3 +1,7 @@
+## Master
+
+- Add ability to filter the description if it's available in `SectionedNavigation`. (#111)(https://github.com/mapbox/dr-ui/pull/111)
+
 ## 0.5.0
 
 - Add prism.css to create shared syntax styles [#108](https://github.com/mapbox/dr-ui/pull/108)

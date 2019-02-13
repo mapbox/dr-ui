@@ -170,7 +170,8 @@ testCases.filter = {
         items: [
           {
             text: 'Camera animation',
-            url: '#foo'
+            url: '#foo',
+            description: 'pizza'
           },
           {
             text: 'Mark a place',
@@ -179,7 +180,8 @@ testCases.filter = {
           },
           {
             text: 'Apply a style',
-            url: '#fooandyou'
+            url: '#fooandyou',
+            description: 'pretzels'
           }
         ]
       },
@@ -189,11 +191,13 @@ testCases.filter = {
         items: [
           {
             text: 'Annotation models',
-            url: '#fooboo'
+            url: '#fooboo',
+            description: 'pretzels'
           },
           {
             text: 'Callouts',
-            url: '#foocrew'
+            url: '#foocrew',
+            description: 'pretzels'
           }
         ]
       },
@@ -203,7 +207,8 @@ testCases.filter = {
         items: [
           {
             text: 'Apply a style',
-            url: '#fooblue'
+            url: '#fooblue',
+            description: 'ice cream'
           }
         ]
       }
