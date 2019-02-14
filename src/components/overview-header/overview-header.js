@@ -88,7 +88,7 @@ class OverviewHeader extends React.PureComponent {
     });
 
     return (
-      <div className="scroll-hidden border-b border--gray-light prose">
+      <div className="scroll-hidden border-b border--gray-light prose mb24">
         <h1 className="mb6 txt-fancy">{props.title}</h1>
         <div className="relative">
           <div className="pr12-ml mr240-ml mr0">
