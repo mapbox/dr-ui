@@ -2,6 +2,7 @@
 
 - Add ability to filter the description if it's available in `SectionedNavigation`. (#111)(https://github.com/mapbox/dr-ui/pull/111)
 - Add `mb24` to `OverviewHeader`. [#112](https://github.com/mapbox/dr-ui/pull/#112)
+- Fix `.prose pre` rules in docs-prose.css to make specific to code blocks with `.language-` prefixed classes. [#113](https://github.com/mapbox/dr-ui/pull/#113)
 
 ## 0.5.0
 
