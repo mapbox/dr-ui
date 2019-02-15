@@ -1,4 +1,4 @@
-## Master
+## 0.6.0
 
 - Add ability to filter the description if it's available in `SectionedNavigation`. (#111)(https://github.com/mapbox/dr-ui/pull/111)
 - Add `mb24` to `OverviewHeader`. [#112](https://github.com/mapbox/dr-ui/pull/#112)
