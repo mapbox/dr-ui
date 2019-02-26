@@ -134,7 +134,10 @@ class NavigationAccordion extends React.PureComponent {
                 href={page.path}
                 className="color-blue-on-hover color-gray text-decoration-none unprose flex-parent flex-parent--space-between-main flex-parent--center-cross"
               >
-                <div className={textClasses}>{title}</div>
+                <div className={textClasses}>
+                  {title}
+                  {page.tag ? page.tag : ''}
+                </div>
                 {icon}
               </a>
               {renderedSecondLevelContent}
@@ -164,6 +167,7 @@ NavigationAccordion.propTypes = {
     firstLevelItems: PropTypes.arrayOf(
       PropTypes.shape({
         title: PropTypes.string.isRequired,
+        tag: PropTypes.node,
         path: PropTypes.string.isRequired
       })
     ).isRequired,

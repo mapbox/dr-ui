@@ -1,3 +1,4 @@
+import React from 'react';
 import NavigationAccordion from '../navigation-accordion';
 
 const testCases = {};
@@ -63,10 +64,20 @@ testCases.withThirdLevelItems = {
       firstLevelItems: [
         {
           title: 'Title one',
+          tag: (
+            <div className="inline-block ml12 txt-xs txt-bold txt-uppercase px6 round color-pink bg-pink-faint">
+              Fundamentals
+            </div>
+          ),
           path: 'page-one'
         },
         {
           title: 'Title two',
+          tag: (
+            <div className="inline-block ml12 txt-xs txt-bold txt-uppercase px6 round color-blue bg-blue-faint">
+              Advanced
+            </div>
+          ),
           path: 'page-two'
         }
       ],
