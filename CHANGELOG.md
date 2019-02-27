@@ -1,4 +1,4 @@
-## Master
+## 0.7.0
 
 - Add an optional prop in `NavigationAccordion` to add tags to first level items. (#115)(https://github.com/mapbox/dr-ui/pull/115)
 
