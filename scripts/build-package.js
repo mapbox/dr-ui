@@ -35,7 +35,7 @@ function compileComponents() {
 
 // Copy other src files that we want in the package.
 function copySrcFiles() {
-  return cpy(['css/*.css', 'data/*', 'plugins/*'], outputDir, {
+  return cpy(['css/*.css', 'data/*', 'plugins/*', 'helpers/*'], outputDir, {
     cwd: path.join(rootDir, 'src'),
     parents: true
   });

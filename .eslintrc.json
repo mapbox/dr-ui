@@ -2,7 +2,8 @@
   "env": {
     "node": true,
     "browser": false,
-    "commonjs": true
+    "commonjs": true,
+    "jest": true
   },
   "extends": ["@mapbox/eslint-config-mapbox/node6", "prettier"],
   "plugins": ["node"]
