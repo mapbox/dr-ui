@@ -1,14 +1,12 @@
 {
-	"presets": ["env", "react"],
+	"presets": ["@babel/env", "@babel/react"],
 	"plugins": [
 		"transform-class-properties",
 		[
-			"transform-runtime",
+			"@babel/plugin-transform-runtime",
 			{
 				"helpers": true,
-				"polyfill": false,
-				"regenerator": false,
-				"moduleName": "babel-runtime"
+				"regenerator": false
 			}
 		]
 	]
