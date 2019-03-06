@@ -1,3 +1,7 @@
+## Master
+
+- [Patch] Use babel.config.js and update build-package.js to output components to directories during `npm run build`.(#118)(https://github.com/mapbox/dr-ui/pull/118)
+
 ## 0.8.0
 
 - Add versionSort helper function to sort version numbers for API reference dropdowns. (#117)(https://github.com/mapbox/dr-ui/pull/117)
