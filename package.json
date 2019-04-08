@@ -62,11 +62,14 @@
     "unist-util-visit": "^1.4.0"
   },
   "dependencies": {
+    "@elastic/react-search-ui": "^0.5.2",
+    "@elastic/search-ui": "^0.5.2",
+    "@elastic/search-ui-site-search-connector": "^0.5.2",
     "@mapbox/mr-ui": "^0.5.0",
     "classnames": "^2.2.6",
     "debounce": "^1.2.0",
-    "extend": "^3.0.2",
     "hastscript": "^5.0.0",
+    "react-html-parser": "^2.0.2",
     "react-stickynode": "^2.1.1",
     "rehype-sectionize-headings": "^1.0.0-rc.1"
   }
