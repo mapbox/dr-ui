@@ -1,7 +1,6 @@
 import React from 'react';
 import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
 import Popover from '@mapbox/mr-ui/popover';
-import { SearchDriver } from '@elastic/search-ui';
 import { SearchProvider, Results, SearchBox } from '@elastic/react-search-ui';
 import LevelIndicator from '../level-indicator/level-indicator';
 import ReactHtmlParser from 'react-html-parser';
@@ -13,24 +12,14 @@ const connector = new SiteSearchAPIConnector({
   documentType: ['page']
 });
 
-const driver = new SearchDriver({
-  apiConnector: connector
-});
-
 class Search extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { popoverOpen: false };
-    this.togglePopover = this.togglePopover.bind(this);
     this.setAnchor = this.setAnchor.bind(this);
     this.getAnchor = this.getAnchor.bind(this);
     this.ignore = this.ignore.bind(this);
     this.renderPopover = this.renderPopover.bind(this);
   }
-
-  togglePopover = () => {
-    this.setState(state => ({ popoverOpen: !state.popoverOpen }));
-  };
 
   setAnchor(el) {
     this.anchor = el;
@@ -44,15 +33,13 @@ class Search extends React.Component {
     return el === this.getAnchor();
   }
 
-  renderPopover = ({ children }) => {
-    if (!this.state.popoverOpen) {
-      return null;
-    }
-    return children.length ? (
+  renderPopover = props => {
+    const children = props.children;
+    return (
       <Popover
         allowPlacementAxisChange={false}
         getAnchorElement={this.getAnchor}
-        onExit={this.togglePopover}
+        onExit={props.reset}
         ignoreClickWithinElement={this.ignore}
         alignment="bottom"
         placement="bottom"
@@ -63,53 +50,12 @@ class Search extends React.Component {
             'color-text bg-white shadow-darken25 round px12 py12 scroll-auto scroll-styled'
         }}
       >
-        <ul>{children}</ul>
+        {children.length ? <ul>{children}</ul> : 'No result'}
       </Popover>
-    ) : (
-      ''
     );
   };
 
-  results = ({ children }) => this.renderPopover({ children });
-
-  searchBox = props => {
-    return (
-      <div className="relative">
-        <div className="absolute flex-parent flex-parent--center-cross flex-parent--center-main w36 h36">
-          <svg className="icon">
-            <use xlinkHref="#icon-search" />
-          </svg>
-        </div>
-        {driver.getState().isLoading && props.value ? (
-          <div className="absolute top right flex-parent flex-parent--center-cross flex-parent--center-main w36 h36">
-            <span className="loading loading--s" />
-          </div>
-        ) : (
-          ''
-        )}
-        <input
-          className="input px36"
-          onChange={e => {
-            if (e.target.value === '' || !e.target.value) {
-              // if no value, close popover and clear driver
-              this.setState({ popoverOpen: false });
-              driver.getActions().reset();
-            } else {
-              this.setState({ popoverOpen: true });
-            }
-            props.onChange(e);
-          }}
-          type="text"
-          value={props.value}
-          placeholder="Search&#8230;"
-          onFocus={e => {
-            // if there was a search and query and users clicks on input, open the popover
-            if (e.target.value && !this.state.popoverOpen) this.togglePopover();
-          }}
-        />
-      </div>
-    );
-  };
+  results = props => this.renderPopover(props);
 
   result({ fields, onClickLink, title, url }) {
     // dummy data until we've update meta in swiftype
@@ -185,17 +131,51 @@ class Search extends React.Component {
             apiConnector: connector
           }}
         >
-          {() => (
-            <div className="App">
-              <SearchBox searchAsYouType={true} view={this.searchBox} />
-              <Results
-                renderResult={this.result}
-                view={this.results}
-                titleField="title"
-                urlField="url"
-              />
-            </div>
-          )}
+          {({ isLoading, resultSearchTerm, reset }) => {
+            return (
+              <div className="App">
+                <div className="relative">
+                  <div className="absolute flex-parent flex-parent--center-cross flex-parent--center-main w36 h36">
+                    <svg className="icon">
+                      <use xlinkHref="#icon-search" />
+                    </svg>
+                  </div>
+                  {isLoading ? (
+                    <div className="absolute top right flex-parent flex-parent--center-cross flex-parent--center-main w36 h36">
+                      <span className="loading loading--s" />
+                    </div>
+                  ) : (
+                    ''
+                  )}
+
+                  <SearchBox
+                    inputProps={{
+                      className: 'input px30',
+                      placeholder: 'Search docs.mapbox.com',
+                      id: 'docs-search'
+                    }}
+                    searchAsYouType={true}
+                  />
+                </div>
+
+                {resultSearchTerm ? (
+                  <Results
+                    renderResult={this.result}
+                    view={props => {
+                      return this.results({
+                        ...props,
+                        reset
+                      });
+                    }}
+                    titleField="title"
+                    urlField="url"
+                  />
+                ) : (
+                  ''
+                )}
+              </div>
+            );
+          }}
         </SearchProvider>
       </div>
     );
