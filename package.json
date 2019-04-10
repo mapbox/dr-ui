@@ -70,6 +70,7 @@
     "hastscript": "^5.0.0",
     "react-html-parser": "^2.0.2",
     "react-stickynode": "^2.1.1",
-    "rehype-sectionize-headings": "^1.0.0-rc.1"
+    "rehype-sectionize-headings": "^1.0.0-rc.1",
+    "remove-markdown": "^0.3.0"
   }
 }

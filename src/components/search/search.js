@@ -5,6 +5,7 @@ import { SearchProvider, Results, SearchBox } from '@elastic/react-search-ui';
 import LevelIndicator from '../level-indicator/level-indicator';
 import ReactHtmlParser from 'react-html-parser';
 import Icon from '@mapbox/mr-ui/icon';
+import removeMd from 'remove-markdown';
 
 const connector = new SiteSearchAPIConnector({
   engineKey: 'zpAwGSb8YMXtF9yDeS5K', // public engine key
@@ -115,7 +116,7 @@ class Search extends React.Component {
                   ''
                 )}
               </div>
-              <div>{ReactHtmlParser(fields.excerpt)}</div>
+              <div>{ReactHtmlParser(removeMd(fields.excerpt))}</div>
             </a>
           )}
         </div>
