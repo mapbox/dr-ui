@@ -147,7 +147,7 @@ class Search extends React.Component {
               <div className="App">
                 <div className="relative">
                   <div className="absolute flex-parent flex-parent--center-cross flex-parent--center-main w36 h36">
-                    <svg className="icon">
+                    <svg className="icon color-gray">
                       <use xlinkHref="#icon-search" />
                     </svg>
                   </div>
