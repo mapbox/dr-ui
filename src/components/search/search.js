@@ -123,6 +123,16 @@ class Search extends React.Component {
     );
   }
 
+  searchBox = props => {
+    const { inputProps, onChange, onSubmit, value } = props;
+
+    return (
+      <form className="sui-search-box" onSubmit={onSubmit}>
+        <input onChange={onChange} type="text" value={value} {...inputProps} />
+      </form>
+    );
+  };
+
   render() {
     return (
       <div ref={this.setAnchor}>
@@ -155,6 +165,7 @@ class Search extends React.Component {
                       id: 'docs-search'
                     }}
                     searchAsYouType={true}
+                    view={this.searchBox}
                   />
                 </div>
 
