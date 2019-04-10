@@ -162,7 +162,7 @@ class Search extends React.Component {
                   <SearchBox
                     inputProps={{
                       className: 'input px30',
-                      placeholder: 'Search docs.mapbox.com',
+                      placeholder: 'Search docs',
                       id: 'docs-search'
                     }}
                     searchAsYouType={true}
