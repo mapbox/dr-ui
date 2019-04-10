@@ -50,6 +50,7 @@ class Search extends React.Component {
           className:
             'color-text bg-white shadow-darken25 round px12 py12 scroll-auto scroll-styled'
         }}
+        zIndex={4}
       >
         {children.length ? <ul>{children}</ul> : 'No result'}
       </Popover>
