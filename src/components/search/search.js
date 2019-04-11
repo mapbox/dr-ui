@@ -52,7 +52,11 @@ class Search extends React.Component {
         }}
         zIndex={4}
       >
-        {children.length ? <ul>{children}</ul> : 'No result'}
+        {children.length ? (
+          <ul style={{ fontSize: '13px', lineHeight: '19px' }}>{children}</ul>
+        ) : (
+          'No result'
+        )}
       </Popover>
     );
   };
@@ -60,11 +64,14 @@ class Search extends React.Component {
   results = props => this.renderPopover(props);
 
   result({ fields, onClickLink, title, url }) {
-    // dummy data until we've update meta in swiftype
-    const site = '' || fields.site;
-    const type = '' || fields.type;
-    const level = '' || fields.level;
-    const language = '' || fields.codeLanguage;
+    const site = fields.site ? fields.site : '';
+    const type = fields.contentType ? fields.contentType : '';
+    const level = fields.level
+      ? fields.level.replace(/<\/?[^>]+(>|$)/g, '')
+      : '';
+    const language = fields.codeLanguage
+      ? fields.codeLanguage.split(',').join(', ')
+      : '';
 
     return (
       <li className="mb24 px6">
@@ -81,7 +88,7 @@ class Search extends React.Component {
                 <span className="txt-bold">
                   {site && site !== title ? (
                     <span>
-                      {site}
+                      {ReactHtmlParser(site)}
                       <Icon name="chevron-right" inline={true} />
                     </span>
                   ) : (
@@ -90,11 +97,13 @@ class Search extends React.Component {
                   {ReactHtmlParser(title)}
                 </span>
               </div>
-              <div className="txt-s txt-bold">
+              <div className="mb3 txt-xs">
                 {type ? (
                   <div className="inline-block">
                     <Icon name="book" inline={true} />
-                    <span className="ml3">{type}</span>
+                    <span className="ml3 txt-capitalize">
+                      {ReactHtmlParser(type)}
+                    </span>
                   </div>
                 ) : (
                   ''
@@ -103,7 +112,7 @@ class Search extends React.Component {
                 {language ? (
                   <div className="ml12 inline-block">
                     <Icon name="code" inline={true} />
-                    <span className="ml6">{language.join(', ')}</span>
+                    <span className="ml6">{ReactHtmlParser(language)}</span>
                   </div>
                 ) : (
                   ''
