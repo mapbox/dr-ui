@@ -38,11 +38,9 @@ class LevelIndicator extends React.Component {
       );
     });
     return (
-      <div>
+      <div className="flex-parent flex-parent--center-cross">
         {levelSquares}
-        <div
-          className={`inline-block txt-s color-${levelColor} ml3 txt-bold txt-capitalize`}
-        >
+        <div className={`inline-block color-${levelColor} ml3 txt-capitalize`}>
           {levelLabel}
         </div>
       </div>
