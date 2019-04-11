@@ -39,7 +39,10 @@ class TopbarSticker extends React.PureComponent {
         bottomBoundary={this.state.bottomBoundaryValue}
         innerZ={3}
       >
-        <div className="border-t border-b border--gray-light bg-white">
+        <div
+          className="border-t border-b border--gray-light bg-white"
+          data-swiftype-index="false"
+        >
           {this.props.children}
         </div>
       </Sticky>
