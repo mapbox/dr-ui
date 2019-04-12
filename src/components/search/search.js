@@ -1,11 +1,18 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
 import Popover from '@mapbox/mr-ui/popover';
-import { SearchProvider, Results, SearchBox } from '@elastic/react-search-ui';
+import {
+  SearchProvider,
+  Results,
+  SearchBox,
+  Facet
+} from '@elastic/react-search-ui';
 import LevelIndicator from '../level-indicator/level-indicator';
 import ReactHtmlParser from 'react-html-parser';
 import Icon from '@mapbox/mr-ui/icon';
-import removeMd from 'remove-markdown';
+
+import { getFilterValueDisplay } from '@elastic/react-search-ui-views/lib/view-helpers';
 
 const connector = new SiteSearchAPIConnector({
   engineKey: 'zpAwGSb8YMXtF9yDeS5K', // public engine key
@@ -53,7 +60,12 @@ class Search extends React.Component {
         zIndex={4}
       >
         {children.length ? (
-          <ul style={{ fontSize: '13px', lineHeight: '19px' }}>{children}</ul>
+          <div>
+            <div className="mb12 txt-s border-b border--gray-faint pb3">
+              <Facet field="site" label="Site" view={this.singleLinksFacet} />
+            </div>
+            <ul style={{ fontSize: '13px', lineHeight: '19px' }}>{children}</ul>
+          </div>
         ) : (
           'No result'
         )}
@@ -67,7 +79,7 @@ class Search extends React.Component {
     const site = fields.site ? fields.site : '';
     const type = fields.contentType ? fields.contentType : '';
     const level = fields.level
-      ? fields.level.replace(/<\/?[^>]+(>|$)/g, '')
+      ? parseInt(fields.level.replace(/<\/?[^>]+(>|$)/g), '')
       : '';
     const language = fields.codeLanguage
       ? fields.codeLanguage.split(',').join(', ')
@@ -126,7 +138,7 @@ class Search extends React.Component {
                   ''
                 )}
               </div>
-              <div>{ReactHtmlParser(removeMd(fields.excerpt))}</div>
+              <div>{ReactHtmlParser(fields.excerpt)}</div>
             </a>
           )}
         </div>
@@ -144,12 +156,58 @@ class Search extends React.Component {
     );
   };
 
+  singleLinksFacet = ({ onRemove, onSelect, options, values = [] }) => {
+    const value = values[0];
+    const filterOptions = options.filter(opt => opt.value === this.props.site);
+
+    return (
+      <div className="mb6">
+        <div className="toggle-group">
+          <div className="toggle-container">
+            <a
+              onClick={e => {
+                e.preventDefault();
+                onRemove(value);
+              }}
+              className={`toggle py3 toggle--s ${
+                !value ? 'bg-gray color-white' : ''
+              }`}
+              href="/"
+            >
+              All docs
+            </a>
+          </div>
+          <div className="toggle-container">
+            {filterOptions.map(option => (
+              <a
+                key={getFilterValueDisplay(option.value)}
+                className={`toggle py3 toggle--s ${
+                  value === option.value ? 'bg-gray color-white' : ''
+                }`}
+                href="/"
+                onClick={e => {
+                  e.preventDefault();
+                  onSelect(option.value);
+                }}
+              >
+                {getFilterValueDisplay(option.value)}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   render() {
     return (
       <div ref={this.setAnchor}>
         <SearchProvider
           config={{
-            apiConnector: connector
+            apiConnector: connector,
+            facets: {
+              site: { type: 'value' }
+            }
           }}
         >
           {({ isLoading, resultSearchTerm, reset }) => {
@@ -205,5 +263,9 @@ class Search extends React.Component {
     );
   }
 }
+
+Search.propTypes = {
+  site: PropTypes.string
+};
 
 export default Search;

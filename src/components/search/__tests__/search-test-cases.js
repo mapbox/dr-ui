@@ -9,6 +9,9 @@ const testCases = {};
 
 testCases.basicNote = {
   component: Search,
+  props: {
+    site: 'Help'
+  },
   description: 'A basic search'
 };
 
@@ -29,7 +32,7 @@ testCases.commonUseCase = {
             </div>
             <div className="col col--8-mm col--12 flex-parent flex-parent--end-main-mm flex-parent--center-cross">
               <div className="wmax360 mb12 mb0-mm">
-                <Search />
+                <Search site="Help" />
               </div>
             </div>
           </div>
