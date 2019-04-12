@@ -62,7 +62,7 @@
     "unist-util-visit": "^1.4.0"
   },
   "dependencies": {
-    "@mapbox/mr-ui": "^0.5.0",
+    "@mapbox/mr-ui": "^0.7.0",
     "classnames": "^2.2.6",
     "debounce": "^1.2.0",
     "extend": "^3.0.2",
