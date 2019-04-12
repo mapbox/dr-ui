@@ -3,6 +3,10 @@
 - Add `Search` component
 - [Breaking change] Remove `txt-bold` and `txt-s` from `LevelIndicator` component to make it more flexible.
 
+## 0.9.0
+
+- Add `BetaFlag` component, `beta` prop to OverviewHeader, `beta` prop to ProductMenu; update mr-ui to v0.7.0. (#123)(https://github.com/mapbox/dr-ui/pull/123)
+
 ## 0.8.1
 
 - [Patch] Use babel.config.js and update build-package.js to output components to directories during `npm run build`.(#118)(https://github.com/mapbox/dr-ui/pull/118)
