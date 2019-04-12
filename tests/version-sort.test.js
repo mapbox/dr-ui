@@ -263,7 +263,7 @@ describe('ios', () => {
     ]);
   });
 
-  test(`allVersionsOrdered`, () => {
+  test(`newestPreRelease order`, () => {
     expect(
       sortVersions([
         '4.11.0-alpha.2',
@@ -288,5 +288,9 @@ describe('ios', () => {
       '4.10.0-alpha.2',
       '4.10.0-alpha.1'
     ]);
+  });
+
+  test(`newestPreRelease, no pre releases`, () => {
+    expect(sortVersions(['4.9.0', '4.8.0']).newestPreRelease).toEqual([]);
   });
 });
