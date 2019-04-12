@@ -112,7 +112,9 @@ class Search extends React.Component {
               <div className="mb3 txt-xs">
                 {type ? (
                   <div className="inline-block">
-                    <Icon name="book" inline={true} />
+                    <span className="">
+                      <Icon size={12} name="book" inline={true} />
+                    </span>
                     <span className="ml3 txt-capitalize">
                       {ReactHtmlParser(type)}
                     </span>
@@ -123,8 +125,10 @@ class Search extends React.Component {
 
                 {language ? (
                   <div className="ml12 inline-block">
-                    <Icon name="code" inline={true} />
-                    <span className="ml6">{ReactHtmlParser(language)}</span>
+                    <span className="">
+                      <Icon size={12} name="code" inline={true} />
+                    </span>
+                    <span className="ml3">{ReactHtmlParser(language)}</span>
                   </div>
                 ) : (
                   ''
