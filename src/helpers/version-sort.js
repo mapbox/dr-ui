@@ -26,19 +26,15 @@ export function sortVersions(versions) {
 
   const allLatestVersion = new RegExp(`^${latestStable}.+`);
 
-  const sortNewestPreRelease = allVersionsOrdered.reduce(
-    (arr, version, index) => {
+  const newestPreRelease = allVersionsOrdered
+    .reduce((arr, version, index) => {
       if (
         index < allVersionsOrdered.indexOf(latestStable) &&
         !allLatestVersion.test(version)
       )
         arr.push({ version });
       return arr;
-    },
-    []
-  );
-
-  const newestPreRelease = sortNewestPreRelease
+    }, [])
     .sort(sortBy('version'))
     .reverse()
     .map(v => v.version);
