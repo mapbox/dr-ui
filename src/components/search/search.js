@@ -61,9 +61,8 @@ class Search extends React.Component {
       >
         {children.length ? (
           <div>
-            <div className="mb12 txt-s border-b border--gray-faint pb3">
-              <Facet field="site" label="Site" view={this.singleLinksFacet} />
-            </div>
+            <Facet field="site" label="Site" view={this.singleLinksFacet} />
+
             <ul style={{ fontSize: '13px', lineHeight: '19px' }}>{children}</ul>
           </div>
         ) : (
@@ -162,11 +161,26 @@ class Search extends React.Component {
 
   singleLinksFacet = ({ onRemove, onSelect, options, values = [] }) => {
     const value = values[0];
-    const filterOptions = options.filter(opt => opt.value === this.props.site);
-
-    return (
-      <div className="mb6">
+    const siteFilter = options.filter(opt => opt.value === this.props.site)[0];
+    return siteFilter ? (
+      <div className="mb12 txt-s border-b border--gray-faint pb12">
         <div className="toggle-group">
+          <div className="toggle-container">
+            <a
+              key={getFilterValueDisplay(siteFilter.value)}
+              className={`toggle py3 toggle--s ${
+                value === siteFilter.value ? 'bg-gray color-white' : ''
+              }`}
+              href="/"
+              onClick={e => {
+                e.preventDefault();
+                onSelect(siteFilter.value);
+              }}
+            >
+              {getFilterValueDisplay(siteFilter.value)}
+            </a>
+          </div>
+
           <div className="toggle-container">
             <a
               onClick={e => {
@@ -181,25 +195,10 @@ class Search extends React.Component {
               All docs
             </a>
           </div>
-          <div className="toggle-container">
-            {filterOptions.map(option => (
-              <a
-                key={getFilterValueDisplay(option.value)}
-                className={`toggle py3 toggle--s ${
-                  value === option.value ? 'bg-gray color-white' : ''
-                }`}
-                href="/"
-                onClick={e => {
-                  e.preventDefault();
-                  onSelect(option.value);
-                }}
-              >
-                {getFilterValueDisplay(option.value)}
-              </a>
-            ))}
-          </div>
         </div>
       </div>
+    ) : (
+      ''
     );
   };
 
@@ -211,6 +210,9 @@ class Search extends React.Component {
             apiConnector: connector,
             facets: {
               site: { type: 'value' }
+            },
+            initialState: {
+              resultsPerPage: 5
             }
           }}
         >
