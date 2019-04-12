@@ -1,4 +1,4 @@
-## Master
+## 0.9.0
 
 - Add `BetaFlag` component, `beta` prop to OverviewHeader, `beta` prop to ProductMenu; update mr-ui to v0.7.0. (#123)(https://github.com/mapbox/dr-ui/pull/123)
 
