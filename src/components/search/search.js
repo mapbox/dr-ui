@@ -108,7 +108,10 @@ class Search extends React.Component {
                   {ReactHtmlParser(title)}
                 </span>
               </div>
-              <div className="mb3 txt-xs">
+
+              <div className="mb6">{ReactHtmlParser(fields.excerpt)}</div>
+
+              <div className="txt-s">
                 {type ? (
                   <div className="inline-block">
                     <span className="">
@@ -127,7 +130,7 @@ class Search extends React.Component {
                     <span className="">
                       <Icon size={12} name="code" inline={true} />
                     </span>
-                    <span className="ml3">{ReactHtmlParser(language)}</span>
+                    <span className="ml6">{ReactHtmlParser(language)}</span>
                   </div>
                 ) : (
                   ''
@@ -141,7 +144,6 @@ class Search extends React.Component {
                   ''
                 )}
               </div>
-              <div>{ReactHtmlParser(fields.excerpt)}</div>
             </a>
           )}
         </div>
