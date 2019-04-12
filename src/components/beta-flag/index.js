@@ -1,3 +1,3 @@
-import main from './back-to-top-button';
+import main from './beta-flag';
 
 export default main;
