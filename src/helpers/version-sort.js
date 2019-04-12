@@ -26,17 +26,22 @@ export function sortVersions(versions) {
 
   const allLatestVersion = new RegExp(`^${latestStable}.+`);
 
-  const newestPreRelease = allVersionsOrdered
-    .filter((version, index) => {
-      return (
+  const sortNewestPreRelease = allVersionsOrdered.reduce(
+    (arr, version, index) => {
+      if (
         index < allVersionsOrdered.indexOf(latestStable) &&
         !allLatestVersion.test(version)
-      );
-    })
-    .map(version => {
-      return version;
-    })
-    .reverse();
+      )
+        arr.push({ version });
+      return arr;
+    },
+    []
+  );
+
+  const newestPreRelease = sortNewestPreRelease
+    .sort(sortBy('version'))
+    .reverse()
+    .map(v => v.version);
 
   const versionsToDisplay = allVersionsOrdered.filter(version => {
     return !/^(\d|\.)+-(alpha|beta|rc|pre).+/.test(version);

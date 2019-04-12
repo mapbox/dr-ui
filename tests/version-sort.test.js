@@ -262,4 +262,31 @@ describe('ios', () => {
       '3.1.0'
     ]);
   });
+
+  test(`allVersionsOrdered`, () => {
+    expect(
+      sortVersions([
+        '4.11.0-alpha.2',
+        '4.10.0-beta.3',
+        '4.11.0-alpha.1',
+        '4.10.0-beta.2',
+        '4.10.0-beta.1',
+        '4.10.0-alpha.2',
+        '4.10.0-alpha.1',
+        '4.9.0',
+        '4.9.0-beta.1',
+        '4.9.0-alpha.2',
+        '4.9.0-alpha.1',
+        '4.8.0'
+      ]).newestPreRelease
+    ).toEqual([
+      '4.11.0-alpha.2',
+      '4.11.0-alpha.1',
+      '4.10.0-beta.3',
+      '4.10.0-beta.2',
+      '4.10.0-beta.1',
+      '4.10.0-alpha.2',
+      '4.10.0-alpha.1'
+    ]);
+  });
 });
