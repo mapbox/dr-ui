@@ -93,7 +93,10 @@ class OverviewHeader extends React.PureComponent {
         <h1 className="mb6 txt-fancy">
           {props.title}
           {props.beta ? (
-            <span className="ml12">
+            <span
+              className="ml12 inline-block relative"
+              style={{ top: '-7px' }}
+            >
               <BetaFlag />
             </span>
           ) : (

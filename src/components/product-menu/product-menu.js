@@ -16,7 +16,7 @@ class ProductMenu extends React.PureComponent {
       >
         {props.productName}
         {props.beta ? (
-          <span className="ml12">
+          <span className="inline-block ml6 relative" style={{ top: '-2px' }}>
             <BetaFlag />
           </span>
         ) : (
