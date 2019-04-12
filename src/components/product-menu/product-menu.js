@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import BetaFlag from '../beta-flag/beta-flag';
 
 class ProductMenu extends React.PureComponent {
   render() {
@@ -14,18 +15,28 @@ class ProductMenu extends React.PureComponent {
         }`}
       >
         {props.productName}
+        {props.beta ? (
+          <span className="ml12">
+            <BetaFlag />
+          </span>
+        ) : (
+          ''
+        )}
       </a>
     );
   }
 }
 
 ProductMenu.propTypes = {
-  productName: PropTypes.string.isRequired,
+  productName: PropTypes.oneOfType([PropTypes.string, PropTypes.node])
+    .isRequired,
+  beta: PropTypes.bool,
   lightText: PropTypes.bool,
   homePage: PropTypes.string.isRequired
 };
 
 ProductMenu.defaultProps = {
+  beta: false,
   lightText: false
 };
 

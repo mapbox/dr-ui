@@ -61,6 +61,23 @@ testCases.some = {
   }
 };
 
+testCases.beta = {
+  description: 'Beta product',
+  component: OverviewHeader,
+  props: {
+    features: ['Chips', 'Tots', 'Fries'],
+    title: 'Mapbox Potato SDK',
+    beta: true,
+    image: (
+      <img
+        width={800}
+        height={499}
+        src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
+      />
+    )
+  }
+};
+
 testCases.allContactUs = {
   description: 'All, plus Contact Us button',
   component: OverviewHeader,
