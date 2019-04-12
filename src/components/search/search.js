@@ -214,7 +214,8 @@ class Search extends React.Component {
               site: { type: 'value' }
             },
             initialState: {
-              resultsPerPage: 5
+              resultsPerPage: 5,
+              filters: [{ field: 'site', values: ['Help'], type: 'all' }] // test
             }
           }}
         >
