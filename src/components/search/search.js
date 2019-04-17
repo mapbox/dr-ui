@@ -74,15 +74,19 @@ class Search extends React.Component {
 
   results = props => this.renderPopover(props);
 
-  result({ fields, onClickLink, title, url }) {
-    const site = fields.site ? fields.site : '';
-    const type = fields.contentType ? fields.contentType : '';
-    const level = fields.level
-      ? parseInt(fields.level.replace(/<\/?[^>]+(>|$)/g), '')
-      : '';
-    const language = fields.codeLanguage
-      ? fields.codeLanguage.split(',').join(', ')
-      : '';
+  result({ result, onClickLink }) {
+    const site = result.site ? result.site.raw : '';
+    const type = result.contentType ? result.contentType.raw : '';
+
+    const level = result.level ? parseInt(result.level.raw) : '';
+    const language =
+      result.codeLanguage && result.codeLanguage.raw
+        ? result.codeLanguage.raw
+        : '';
+    const excerpt = result.excerpt.snippet || result.excerpt.raw;
+
+    const title = result.title.raw;
+    const url = result.url.raw;
 
     return (
       <li className="mb24 px6">
@@ -109,7 +113,7 @@ class Search extends React.Component {
                 </span>
               </div>
 
-              <div className="mb6">{ReactHtmlParser(fields.excerpt)}</div>
+              <div className="mb6">{ReactHtmlParser(excerpt)}</div>
 
               <div className="txt-s">
                 {type ? (
@@ -150,16 +154,6 @@ class Search extends React.Component {
       </li>
     );
   }
-
-  searchBox = props => {
-    const { inputProps, onChange, onSubmit, value } = props;
-
-    return (
-      <form className="sui-search-box" onSubmit={onSubmit}>
-        <input onChange={onChange} type="text" value={value} {...inputProps} />
-      </form>
-    );
-  };
 
   singleLinksFacet = ({ onRemove, onSelect, options, values = [] }) => {
     const value = values[0];
@@ -214,8 +208,8 @@ class Search extends React.Component {
               site: { type: 'value' }
             },
             initialState: {
-              resultsPerPage: 5,
-              filters: [{ field: 'site', values: ['Help'], type: 'all' }] // test
+              resultsPerPage: 5
+              // filters: [{ field: 'site', values: ['Help'], type: 'all' }] // test
             }
           }}
         >
@@ -245,7 +239,6 @@ class Search extends React.Component {
                       id: 'docs-search'
                     }}
                     searchAsYouType={true}
-                    view={this.searchBox}
                   />
                 </div>
 
@@ -258,8 +251,6 @@ class Search extends React.Component {
                         reset
                       });
                     }}
-                    titleField="title"
-                    urlField="url"
                   />
                 ) : (
                   ''
