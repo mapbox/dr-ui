@@ -6,12 +6,14 @@ import {
   SearchProvider,
   Results,
   SearchBox,
-  Facet
+  Facet,
+  Paging
 } from '@elastic/react-search-ui';
 import LevelIndicator from '../level-indicator/level-indicator';
 import ReactHtmlParser from 'react-html-parser';
 import Icon from '@mapbox/mr-ui/icon';
 import { getFilterValueDisplay } from '@elastic/react-search-ui-views/lib/view-helpers';
+import Pagination from 'rc-pagination';
 
 const connector = new SiteSearchAPIConnector({
   engineKey: 'zpAwGSb8YMXtF9yDeS5K', // public engine key
@@ -40,6 +42,41 @@ class Search extends React.Component {
     return el === this.getAnchor();
   }
 
+  paging({ current, resultsPerPage, onChange, totalPages }) {
+    const textItemRender = (curr, type) => {
+      if (type === 'prev') {
+        return (
+          <button
+            disabled={current === 1}
+            className="btn btn--s btn--stroke btn--gray"
+          >
+            <Icon name="chevron-left" />
+          </button>
+        );
+      }
+      if (type === 'next') {
+        return (
+          <button className="btn btn--s btn--stroke btn--gray ml6">
+            <Icon name="chevron-right" />
+          </button>
+        );
+      }
+    };
+    return (
+      <Pagination
+        current={current}
+        onChange={e => {
+          document.getElementById('swiftype-popover').scrollTop = -100; // scroll back to top
+          onChange(e);
+        }}
+        pageSize={resultsPerPage}
+        total={totalPages * resultsPerPage}
+        itemRender={textItemRender}
+        className="flex-parent"
+      />
+    );
+  }
+
   renderPopover = props => {
     const children = props.children;
     return (
@@ -53,6 +90,7 @@ class Search extends React.Component {
         receiveFocus={false}
         passthroughProps={{
           style: { maxWidth: 400, maxHeight: 400 },
+          id: 'swiftype-popover',
           className:
             'color-text bg-white shadow-darken25 round px12 py12 scroll-auto scroll-styled'
         }}
@@ -61,8 +99,8 @@ class Search extends React.Component {
         {children.length ? (
           <div>
             <Facet field="site" label="Site" view={this.singleLinksFacet} />
-
             <ul style={{ fontSize: '13px', lineHeight: '19px' }}>{children}</ul>
+            <Paging view={this.paging} />
           </div>
         ) : (
           'No result'
