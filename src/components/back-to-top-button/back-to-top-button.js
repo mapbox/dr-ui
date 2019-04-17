@@ -30,7 +30,7 @@ export default class BackToTopButton extends React.Component {
             }}
             passthroughProps={{
               className:
-                'btn--blue w60 h60 px0 round-full shadow-darken25 color-white flex-parent flex-parent--center-main'
+                'btn--blue w60 h60 px0 round-full shadow-darken25 color-white flex-parent flex-parent--center-main flex-parent--center-cross'
             }}
           >
             <Icon name="arrow-up" size={30} />
