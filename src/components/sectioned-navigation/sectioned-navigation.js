@@ -76,7 +76,7 @@ class SectionedNavigation extends React.Component {
   render() {
     const { props } = this;
     return (
-      <div>
+      <div data-swiftype-index="false">
         {this.renderTitle()}
         {this.renderFilterBar()}
         {this.state.visibleSections.map((section, i) => (
