@@ -1,3 +1,8 @@
+## Master
+
+- Add Swiftype attribute to ignore content blocks in `CardContainer`, `SectionedNavigation`, and `TopbarSticker`. (#119)(https://github.com/mapbox/dr-ui/pull/119)
+- Fix bug in Firefox where arrow was not vertically centered in `BackToTopButton`. (#122)(https://github.com/mapbox/dr-ui/pull/122)
+
 ## 0.9.0
 
 - Add `BetaFlag` component, `beta` prop to OverviewHeader, `beta` prop to ProductMenu; update mr-ui to v0.7.0. (#123)(https://github.com/mapbox/dr-ui/pull/123)
