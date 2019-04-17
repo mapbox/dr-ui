@@ -2,6 +2,7 @@
 
 - Add Swiftype attribute to ignore content blocks in `CardContainer`, `SectionedNavigation`, and `TopbarSticker`. (#119)(https://github.com/mapbox/dr-ui/pull/119)
 - Fix bug in Firefox where arrow was not vertically centered in `BackToTopButton`. (#122)(https://github.com/mapbox/dr-ui/pull/122)
+- Fix prerelease order in `sortVersion` helper function. (#124)(https://github.com/mapbox/dr-ui/pull/124)
 
 ## 0.9.0
 
