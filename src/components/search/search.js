@@ -11,7 +11,6 @@ import {
 import LevelIndicator from '../level-indicator/level-indicator';
 import ReactHtmlParser from 'react-html-parser';
 import Icon from '@mapbox/mr-ui/icon';
-
 import { getFilterValueDisplay } from '@elastic/react-search-ui-views/lib/view-helpers';
 
 const connector = new SiteSearchAPIConnector({
@@ -211,8 +210,10 @@ class Search extends React.Component {
         <SearchProvider
           config={{
             apiConnector: connector,
-            facets: {
-              site: { type: 'value' }
+            searchQuery: {
+              facets: {
+                site: { type: 'value' }
+              }
             },
             initialState: {
               resultsPerPage: 5
