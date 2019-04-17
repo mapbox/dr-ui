@@ -6,8 +6,12 @@ class CardContainer extends React.PureComponent {
   render() {
     const { props } = this;
     const categoryID = props.path.split('#')[1];
-    const cardClasses = classnames('col col--12 mb36', {
-      'col--6-ml': !props.fullWidthCards
+    const cardClasses = classnames('mb18', {
+      'col col--12 col--6-ml': !props.fullWidthCards,
+      'border-b border--darken10': props.fullWidthCards
+    });
+    const containerClasses = classnames('', {
+      'grid grid--gut36': !props.fullWidthCards
     });
     const renderedCards = props.cards.map((card, index) => {
       return (
@@ -20,10 +24,11 @@ class CardContainer extends React.PureComponent {
       <div>
         <a href={props.path} className="unprose mb18 block color-blue-on-hover">
           <h2 className="txt-bold" id={categoryID}>
-            {props.title} ({props.cards.length})
+            {props.title}{' '}
+            <span data-swiftype-index="false">({props.cards.length})</span>
           </h2>
         </a>
-        <div className="grid grid--gut36">{renderedCards}</div>
+        <div className={containerClasses}>{renderedCards}</div>
       </div>
     );
   }

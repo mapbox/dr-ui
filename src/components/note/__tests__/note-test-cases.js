@@ -1,73 +1,28 @@
 import React from 'react';
 import Note from '../note';
 import BookImage from '../../book-image/book-image';
-import BookletImage from '../../booklet-image/booklet-image';
-import ContactImage from '../../contact-image/contact-image';
-import TroubleshootImage from '../../troubleshoot-image/troubleshoot-image';
+import WarningImage from '../../warning-image/warning-image';
 
 const testCases = {};
 const noRenderCases = {};
 
-testCases.basicBook = {
+testCases.basicNote = {
   component: Note,
-  description: 'A basic note',
+  description: 'A basic note to call out information on a page.',
   props: {
-    children: <div>Here is a little thing to note.</div>,
-    imageComponent: <BookImage width="60" height="60" />
-  }
-};
-
-testCases.basicBooklet = {
-  component: Note,
-  description: 'A basic note with a booklet image',
-  props: {
-    children: <div>Here is a little thing to note.</div>,
-    imageComponent: <BookletImage width="60" height="60" />
-  }
-};
-
-testCases.basicContact = {
-  component: Note,
-  description: 'A basic note with a contact image',
-  props: {
-    children: <div>Here is a little thing to note.</div>,
-    imageComponent: <ContactImage width="60" height="60" />
-  }
-};
-
-testCases.basicTroubleshoot = {
-  component: Note,
-  description: 'A basic note with a troubleshoot image',
-  props: {
-    children: <div>Here is a little thing to note.</div>,
-    imageComponent: <TroubleshootImage width="60" height="60" />
-  }
-};
-
-testCases.basicThemed = {
-  component: Note,
-  description: 'A basic themed note',
-  props: {
-    children: <div>Here is a little note with pretty colors.</div>,
-    imageComponent: <BookImage width="60" height="60" />,
-    theme: {
-      padding: '10px 10px 10px',
-      background: 'pink',
-      fontSize: '16px',
-      lineHeight: '25px',
-      color: 'blue'
-    }
+    children: <p>Here is a little thing to note.</p>,
+    imageComponent: <BookImage size="60" />
   }
 };
 
 testCases.customTitle = {
   component: Note,
-  description: 'Note with custom title',
+  description: 'Note with custom title.',
   props: {
     title: 'A very important note',
     children: (
       <div>
-        <p className="mb12">
+        <p>
           Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo
           odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus
           eget urna mollis ornare vel eu leo. Duis mollis, est non commodo
@@ -75,21 +30,55 @@ testCases.customTitle = {
           Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam
           eget risus varius blandit sit amet non magna.
         </p>
-        <p className="mb12">
+        <p>
           Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam.
           Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum
           id ligula porta felis euismod semper. Nullam id dolor id nibh
           ultricies vehicula ut id elit. Curabitur blandit tempus porttitor.
           Maecenas sed diam eget risus varius blandit sit amet non magna.
         </p>
-        <p className="mb12">
+        <p>
           Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra
           augue. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem
           malesuada magna mollis euismod.
         </p>
       </div>
     ),
-    imageComponent: <BookImage width="60" height="60" />
+    imageComponent: <BookImage size="60" />
+  }
+};
+
+testCases.warning = {
+  component: Note,
+  description:
+    'A warning note to let the user know something has changed or will change.',
+  props: {
+    theme: 'warning',
+    title: 'This API is in beta',
+    children: (
+      <p>
+        The API may change without advance notice during the preview period.
+        Preview features are not supported for production use.
+      </p>
+    ),
+    imageComponent: <WarningImage color="orange" size="60" />
+  }
+};
+
+testCases.error = {
+  component: Note,
+  description:
+    'A note to display an error with steps or links on how to troubleshoot.',
+  props: {
+    theme: 'error',
+    title: 'Error',
+    children: (
+      <p>
+        Did something not go as planned? Check out the{' '}
+        <a href="#">troubleshooting guide</a>.
+      </p>
+    ),
+    imageComponent: <WarningImage color="red" size="60" />
   }
 };
 

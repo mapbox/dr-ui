@@ -1,6 +1,43 @@
 ## Master
 
+- Add Swiftype attribute to ignore content blocks in `CardContainer`, `SectionedNavigation`, and `TopbarSticker`. (#119)(https://github.com/mapbox/dr-ui/pull/119)
+- Fix bug in Firefox where arrow was not vertically centered in `BackToTopButton`. (#122)(https://github.com/mapbox/dr-ui/pull/122)
+
+## 0.9.0
+
+- Add `BetaFlag` component, `beta` prop to OverviewHeader, `beta` prop to ProductMenu; update mr-ui to v0.7.0. (#123)(https://github.com/mapbox/dr-ui/pull/123)
+
+## 0.8.1
+
+- [Patch] Use babel.config.js and update build-package.js to output components to directories during `npm run build`.(#118)(https://github.com/mapbox/dr-ui/pull/118)
+
+## 0.8.0
+
+- Add versionSort helper function to sort version numbers for API reference dropdowns. (#117)(https://github.com/mapbox/dr-ui/pull/117)
+
+## 0.7.0
+
+- Add an optional prop in `NavigationAccordion` to add tags to first level items. (#115)(https://github.com/mapbox/dr-ui/pull/115)
+
+## 0.6.0
+
+- Add ability to filter the description if it's available in `SectionedNavigation`. (#111)(https://github.com/mapbox/dr-ui/pull/111)
+- Add `mb24` to `OverviewHeader`. [#112](https://github.com/mapbox/dr-ui/pull/#112)
+- Fix `.prose pre` rules in docs-prose.css to make specific to code blocks with `.language-` prefixed classes. [#113](https://github.com/mapbox/dr-ui/pull/#113)
+
+## 0.5.0
+
+- Add prism.css to create shared syntax styles [#108](https://github.com/mapbox/dr-ui/pull/108)
+- Add new styles for fullwidth `Card` and `CardContainer`. [#104](https://github.com/mapbox/dr-ui/pull/104)
+- Add CSS to set max-height and style scrollbars for prose code examples. [#103](https://github.com/mapbox/dr-ui/pull/103)
+- Add warning, error, and default themes to `Note` and removes ability to pass `padding`, `background`, `fontSize`, `lineHeight`, and `color` to `Note`. [#102](https://github.com/mapbox/dr-ui/pull/102)
+- Add `WarningImage` for primary use with `Note`. [#102](https://github.com/mapbox/dr-ui/pull/102)
+- 🚨 Replace `width` and `height` props with `size` on `BookImage`, `BookletImage`, `ContactImage`, `TroubleshootImage`. [#102](https://github.com/mapbox/dr-ui/pull/102)
+
+## 0.4.0
+
 - Update to mr-ui 0.5.0. ([#95](https://github.com/mapbox/dr-ui/pull/95))
+- Add `contactLink` prop to `OverviewHeader` to create Contact us button. ([#105](https://github.com/mapbox/dr-ui/pull/105))
 
 ## 0.3.0
 

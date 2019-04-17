@@ -25,7 +25,7 @@ const srcDir = path.resolve(rootDir, 'src/components');
 // tests and examples.
 function compileComponents() {
   return execa.shell(
-    `babel "**/!(examples|__tests__)/*.js" --out-dir ${outputDir}`,
+    `babel "${rootDir}/src/components" --out-dir ${outputDir} --ignore "**/examples","**/__tests__" --config-file ${rootDir}/babel.config.js`,
     {
       cwd: srcDir,
       stdio: 'inherit'
@@ -35,7 +35,7 @@ function compileComponents() {
 
 // Copy other src files that we want in the package.
 function copySrcFiles() {
-  return cpy(['css/*.css', 'data/*', 'plugins/*'], outputDir, {
+  return cpy(['css/*.css', 'data/*', 'plugins/*', 'helpers/*'], outputDir, {
     cwd: path.join(rootDir, 'src'),
     parents: true
   });

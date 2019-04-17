@@ -50,13 +50,19 @@ class SectionedNavigation extends React.Component {
     const visibleSections = this.props.sections
       .filter(section => {
         const matchedItems = section.items.filter(item => {
-          return item.text.toLowerCase().indexOf(filter) > -1;
+          return (
+            item.text.toLowerCase().indexOf(filter) > -1 ||
+            (item.description && item.description.indexOf(filter) > -1)
+          );
         });
         return matchedItems.length > 0;
       })
       .map(filteredSection => {
         const filteredItems = filteredSection.items.filter(item => {
-          return item.text.toLowerCase().indexOf(filter) > -1;
+          return (
+            item.text.toLowerCase().indexOf(filter) > -1 ||
+            (item.description && item.description.indexOf(filter) > -1)
+          );
         });
         return {
           title: filteredSection.title,
@@ -70,7 +76,7 @@ class SectionedNavigation extends React.Component {
   render() {
     const { props } = this;
     return (
-      <div>
+      <div data-swiftype-index="false">
         {this.renderTitle()}
         {this.renderFilterBar()}
         {this.state.visibleSections.map((section, i) => (
