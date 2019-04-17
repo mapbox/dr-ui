@@ -43,4 +43,14 @@ testCases.customStyle = {
   )
 };
 
+testCases.beta = {
+  component: ProductMenu,
+  description: 'Beta product',
+  props: {
+    productName: 'Vision SDK for Android',
+    beta: true,
+    homePage: '/vision/'
+  }
+};
+
 export default { testCases };
