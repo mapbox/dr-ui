@@ -75,18 +75,19 @@ class Search extends React.Component {
   results = props => this.renderPopover(props);
 
   result({ result, onClickLink }) {
-    const site = result.site ? result.site.raw : '';
-    const type = result.contentType ? result.contentType.raw : '';
-
-    const level = result.level ? parseInt(result.level.raw) : '';
-    const language =
-      result.codeLanguage && result.codeLanguage.raw
-        ? result.codeLanguage.raw
-        : '';
+    const returnRaw = item => {
+      if (item && item.raw && typeof item.raw !== 'string')
+        return item.raw.join(', ');
+      else return item && item.raw ? item.raw : '';
+    };
+    const site = returnRaw(result.site);
+    const subsite = returnRaw(result.subsite);
+    const type = returnRaw(result.contentType);
+    const level = returnRaw(result.level);
+    const language = returnRaw(result.codeLanguage);
+    const title = returnRaw(result.title);
+    const url = returnRaw(result.url);
     const excerpt = result.excerpt.snippet || result.excerpt.raw;
-
-    const title = result.title.raw;
-    const url = result.url.raw;
 
     return (
       <li className="mb24 px6">
@@ -103,13 +104,21 @@ class Search extends React.Component {
                 <span className="txt-bold">
                   {site && site !== title ? (
                     <span>
-                      {ReactHtmlParser(site)}
+                      {site}
                       <Icon name="chevron-right" inline={true} />
                     </span>
                   ) : (
                     ''
                   )}
-                  {ReactHtmlParser(title)}
+                  {subsite && subsite !== title && subsite !== site ? (
+                    <span>
+                      {subsite}
+                      <Icon name="chevron-right" inline={true} />
+                    </span>
+                  ) : (
+                    ''
+                  )}
+                  {title}
                 </span>
               </div>
 
@@ -121,9 +130,7 @@ class Search extends React.Component {
                     <span className="">
                       <Icon size={12} name="book" inline={true} />
                     </span>
-                    <span className="ml3 txt-capitalize">
-                      {ReactHtmlParser(type)}
-                    </span>
+                    <span className="ml3 txt-capitalize">{type}</span>
                   </div>
                 ) : (
                   ''
@@ -134,7 +141,7 @@ class Search extends React.Component {
                     <span className="">
                       <Icon size={12} name="code" inline={true} />
                     </span>
-                    <span className="ml6">{ReactHtmlParser(language)}</span>
+                    <span className="ml6">{language}</span>
                   </div>
                 ) : (
                   ''
@@ -142,7 +149,7 @@ class Search extends React.Component {
 
                 {level ? (
                   <div className="ml12 inline-block">
-                    <LevelIndicator level={level} />
+                    <LevelIndicator level={parseInt(level)} />
                   </div>
                 ) : (
                   ''
