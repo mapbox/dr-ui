@@ -1,19 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
-import Popover from '@mapbox/mr-ui/popover';
-import {
-  SearchProvider,
-  Results,
-  SearchBox,
-  Facet,
-  Paging
-} from '@elastic/react-search-ui';
+import { SearchProvider, Results, SearchBox } from '@elastic/react-search-ui';
 import LevelIndicator from '../level-indicator/level-indicator';
 import ReactHtmlParser from 'react-html-parser';
 import Icon from '@mapbox/mr-ui/icon';
-import { getFilterValueDisplay } from '@elastic/react-search-ui-views/lib/view-helpers';
-import Pagination from 'rc-pagination';
+import Downshift from 'downshift';
 
 const connector = new SiteSearchAPIConnector({
   engineKey: 'zpAwGSb8YMXtF9yDeS5K', // public engine key
@@ -24,110 +16,45 @@ const connector = new SiteSearchAPIConnector({
 class Search extends React.Component {
   constructor(props) {
     super(props);
-    this.setAnchor = this.setAnchor.bind(this);
-    this.getAnchor = this.getAnchor.bind(this);
-    this.ignore = this.ignore.bind(this);
-    this.renderPopover = this.renderPopover.bind(this);
+    this.resultView = this.resultView.bind(this);
+    this.resultsView = this.resultsView.bind(this);
+    this.searchBox = this.searchBox.bind(this);
   }
 
-  setAnchor(el) {
-    this.anchor = el;
-  }
-
-  getAnchor() {
-    return this.anchor;
-  }
-
-  ignore(el) {
-    return el === this.getAnchor();
-  }
-
-  paging({ current, resultsPerPage, onChange, totalPages }) {
-    const textItemRender = (curr, type) => {
-      if (type === 'prev') {
-        return (
-          <button
-            disabled={current === 1}
-            className="btn btn--s btn--stroke btn--gray"
-          >
-            <Icon name="chevron-left" />
-          </button>
-        );
-      }
-      if (type === 'next') {
-        return (
-          <button className="btn btn--s btn--stroke btn--gray ml6">
-            <Icon name="chevron-right" />
-          </button>
-        );
-      }
-    };
-    return (
-      <Pagination
-        current={current}
-        onChange={e => {
-          document.getElementById('swiftype-popover').scrollTop = -100; // scroll back to top
-          onChange(e);
-        }}
-        pageSize={resultsPerPage}
-        total={totalPages * resultsPerPage}
-        itemRender={textItemRender}
-        className="flex-parent"
-      />
-    );
-  }
-
-  renderPopover = props => {
-    const children = props.children;
-    return (
-      <Popover
-        allowPlacementAxisChange={false}
-        getAnchorElement={this.getAnchor}
-        onExit={props.reset}
-        ignoreClickWithinElement={this.ignore}
-        alignment="bottom"
-        placement="bottom"
-        receiveFocus={false}
-        passthroughProps={{
-          style: { maxWidth: 400, maxHeight: 400 },
-          id: 'swiftype-popover',
-          className:
-            'color-text bg-white shadow-darken25 round px12 py12 scroll-auto scroll-styled'
-        }}
-        zIndex={4}
-      >
-        {children.length ? (
-          <div>
-            <Facet field="site" label="Site" view={this.singleLinksFacet} />
-            <ul style={{ fontSize: '13px', lineHeight: '19px' }}>{children}</ul>
-            <Paging view={this.paging} />
-          </div>
-        ) : (
-          'No result'
-        )}
-      </Popover>
-    );
+  returnRaw = item => {
+    if (item && item.raw && typeof item.raw !== 'string')
+      return item.raw.join(', ');
+    else return item && item.raw ? item.raw : '';
   };
 
-  results = props => this.renderPopover(props);
+  resultView = (item, index, downshiftProps) => {
+    const result = item.result;
+    const onClickLink = item.onClickLink;
+    const getItemProps = downshiftProps.getItemProps;
+    const highlighted = downshiftProps.highlightedIndex === index;
 
-  result({ result, onClickLink }) {
-    const returnRaw = item => {
-      if (item && item.raw && typeof item.raw !== 'string')
-        return item.raw.join(', ');
-      else return item && item.raw ? item.raw : '';
-    };
-    const site = returnRaw(result.site);
-    const subsite = returnRaw(result.subsite);
-    const type = returnRaw(result.contentType);
-    const level = returnRaw(result.level);
-    const language = returnRaw(result.codeLanguage);
-    const title = returnRaw(result.title);
-    const url = returnRaw(result.url);
-    const excerpt = result.excerpt.snippet || result.excerpt.raw;
+    const site = this.returnRaw(result.site);
+    const subsite = this.returnRaw(result.subsite);
+    const type = this.returnRaw(result.contentType);
+    const level = this.returnRaw(result.level);
+    const language = this.returnRaw(result.codeLanguage);
+    const title = this.returnRaw(result.title);
+    const url = this.returnRaw(result.url);
+    const excerpt = result.excerpt
+      ? result.excerpt.snippet || result.excerpt.raw
+      : '';
 
     return (
-      <li className="mb24 px6">
+      <li
+        className="py12 px18"
+        {...getItemProps({
+          key: result.id.raw,
+
+          item: result,
+          className: `${highlighted &&
+            'bg-gray-faint'} py12 px18 link--gray cursor-pointer`
+        })}
+      >
         <div className="">
           {title && url && (
             <a
@@ -136,6 +63,7 @@ class Search extends React.Component {
               onClick={onClickLink}
               target="_blank"
               rel="noopener noreferrer"
+              tabIndex="1"
             >
               <div className="mb3">
                 <span className="txt-bold">
@@ -197,54 +125,89 @@ class Search extends React.Component {
         </div>
       </li>
     );
-  }
+  };
 
-  singleLinksFacet = ({ onRemove, onSelect, options, values = [] }) => {
-    const value = values[0];
-    const siteFilter = options.filter(opt => opt.value === this.props.site)[0];
-    return siteFilter ? (
-      <div className="mb12 txt-s border-b border--gray-faint pb12">
-        <div className="toggle-group">
-          <div className="toggle-container">
-            <a
-              key={getFilterValueDisplay(siteFilter.value)}
-              className={`toggle py3 toggle--s ${
-                value === siteFilter.value ? 'bg-gray color-white' : ''
-              }`}
-              href="/"
-              onClick={e => {
-                e.preventDefault();
-                onSelect(siteFilter.value);
-              }}
-            >
-              {getFilterValueDisplay(siteFilter.value)}
-            </a>
+  resultsView = props => {
+    return (
+      <div
+        className="color-text shadow-darken25 round mt3 wmax600 absolute bg-white scroll-auto scroll-styled hmax360"
+        style={{ zIndex: 4 }}
+      >
+        {props.children.length ? (
+          <div>
+            <ul style={{ fontSize: '13px', lineHeight: '19px' }}>
+              {props.children.map((item, index) => {
+                return this.resultView(item.props, index, props.downshiftProps);
+              })}
+            </ul>
           </div>
-
-          <div className="toggle-container">
-            <a
-              onClick={e => {
-                e.preventDefault();
-                onRemove(value);
-              }}
-              className={`toggle py3 toggle--s ${
-                !value ? 'bg-gray color-white' : ''
-              }`}
-              href="/"
-            >
-              All docs
-            </a>
-          </div>
-        </div>
+        ) : (
+          <div className="py12 px12">No Results</div>
+        )}
       </div>
-    ) : (
-      ''
+    );
+  };
+
+  searchBox = props => {
+    const {
+      allAutocompletedItemsCount, // eslint-disable-line
+      autocompleteView, // eslint-disable-line
+      isFocused, // eslint-disable-line
+      inputProps,
+      onChange,
+      onSelectAutocomplete,
+      onSubmit,
+      useAutocomplete, // eslint-disable-line
+      value
+    } = props;
+
+    return (
+      <Downshift
+        inputValue={value}
+        onChange={onSelectAutocomplete}
+        onInputValueChange={newValue => {
+          if (value === newValue) return;
+          onChange(newValue);
+        }}
+        itemToString={() => value}
+      >
+        {downshiftProps => {
+          const { closeMenu, getInputProps, isOpen } = downshiftProps;
+          return (
+            <form
+              onSubmit={e => {
+                closeMenu();
+                onSubmit(e);
+              }}
+            >
+              <input
+                id="docs-search"
+                {...getInputProps({
+                  placeholder: 'Search docs',
+                  ...inputProps,
+                  className: `input px30`
+                })}
+              />
+              {isOpen && value && (
+                <Results
+                  view={props => {
+                    return this.resultsView({
+                      ...props,
+                      downshiftProps
+                    });
+                  }}
+                />
+              )}
+            </form>
+          );
+        }}
+      </Downshift>
     );
   };
 
   render() {
     return (
-      <div ref={this.setAnchor}>
+      <div>
         <SearchProvider
           config={{
             apiConnector: connector,
@@ -254,12 +217,11 @@ class Search extends React.Component {
               }
             },
             initialState: {
-              resultsPerPage: 5
-              // filters: [{ field: 'site', values: ['Help'], type: 'all' }] // test
+              resultsPerPage: 10
             }
           }}
         >
-          {({ isLoading, resultSearchTerm, reset }) => {
+          {({ isLoading }) => {
             return (
               <div className="App">
                 <div className="relative">
@@ -279,28 +241,13 @@ class Search extends React.Component {
                   )}
 
                   <SearchBox
-                    inputProps={{
-                      className: 'input px30',
-                      placeholder: 'Search docs',
-                      id: 'docs-search'
+                    autocompleteResults={{
+                      urlField: 'url'
                     }}
                     searchAsYouType={true}
+                    view={this.searchBox}
                   />
                 </div>
-
-                {resultSearchTerm ? (
-                  <Results
-                    renderResult={this.result}
-                    view={props => {
-                      return this.results({
-                        ...props,
-                        reset
-                      });
-                    }}
-                  />
-                ) : (
-                  ''
-                )}
               </div>
             );
           }}

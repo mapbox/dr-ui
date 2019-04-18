@@ -68,6 +68,7 @@
     "@mapbox/mr-ui": "^0.7.0",
     "classnames": "^2.2.6",
     "debounce": "^1.2.0",
+    "downshift": "^3.2.7",
     "hastscript": "^5.0.0",
     "rc-pagination": "^1.17.14",
     "react-html-parser": "^2.0.2",
