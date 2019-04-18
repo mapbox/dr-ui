@@ -62,7 +62,7 @@
     "unist-util-visit": "^1.4.0"
   },
   "dependencies": {
-    "@elastic/react-search-ui": "^0.6.0",
+    "@elastic/react-search-ui": "^0.6.1",
     "@elastic/react-search-ui-views": "^0.6.0",
     "@elastic/search-ui-site-search-connector": "^0.6.0",
     "@mapbox/mr-ui": "^0.7.0",

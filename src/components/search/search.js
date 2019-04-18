@@ -1,13 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
-import Popover from '@mapbox/mr-ui/popover';
 import {
   SearchProvider,
-  Results,
-  SearchBox,
-  Facet,
-  Paging
+  SearchBox
+  // Facet,
+  // Paging
 } from '@elastic/react-search-ui';
 import LevelIndicator from '../level-indicator/level-indicator';
 import ReactHtmlParser from 'react-html-parser';
@@ -22,24 +20,108 @@ const connector = new SiteSearchAPIConnector({
 });
 
 class Search extends React.Component {
-  constructor(props) {
-    super(props);
-    this.setAnchor = this.setAnchor.bind(this);
-    this.getAnchor = this.getAnchor.bind(this);
-    this.ignore = this.ignore.bind(this);
-    this.renderPopover = this.renderPopover.bind(this);
-  }
+  autocomplete({
+    autocompleteResults, // eslint-disable-line
+    autocompletedResults,
+    autocompleteSuggestions, // eslint-disable-line
+    autocompletedSuggestions, // eslint-disable-line
+    getItemProps,
+    getMenuProps, // eslint-disable-line
+    isOpen, // eslint-disable-line
+    inputValue, // eslint-disable-line
+    highlightedIndex
+  }) {
+    return (
+      <div
+        className="color-text shadow-darken25 round mt3 wmax600 absolute bg-white scroll-auto scroll-styled hmax360"
+        style={{ zIndex: 4 }}
+      >
+        <ul style={{ fontSize: '13px', lineHeight: '19px' }}>
+          {autocompletedResults.map((result, index) => {
+            const returnRaw = item => {
+              if (item && item.raw && typeof item.raw !== 'string')
+                return item.raw.join(', ');
+              else return item && item.raw ? item.raw : '';
+            };
+            const site = returnRaw(result.site);
+            const subsite = returnRaw(result.subsite);
+            const type = returnRaw(result.contentType);
+            const level = returnRaw(result.level);
+            const language = returnRaw(result.codeLanguage);
+            const title = returnRaw(result.title);
+            const excerpt = result.excerpt.snippet || result.excerpt.raw;
 
-  setAnchor(el) {
-    this.anchor = el;
-  }
+            return (
+              <li
+                {...getItemProps({
+                  key: result.id.raw,
+                  index: index,
+                  item: result,
+                  className: `${highlightedIndex === index &&
+                    'bg-gray-faint'} py12 px18 link--gray cursor-pointer`
+                })}
+              >
+                <div>
+                  <span className="txt-bold">
+                    {site && site !== title ? (
+                      <span>
+                        {site}
+                        <Icon name="chevron-right" inline={true} />
+                      </span>
+                    ) : (
+                      ''
+                    )}
+                    {subsite && subsite !== title && subsite !== site ? (
+                      <span>
+                        {subsite}
+                        <Icon name="chevron-right" inline={true} />
+                      </span>
+                    ) : (
+                      ''
+                    )}
+                    {title}
+                  </span>
+                </div>
 
-  getAnchor() {
-    return this.anchor;
-  }
+                <div className="mb6">{ReactHtmlParser(excerpt)}</div>
 
-  ignore(el) {
-    return el === this.getAnchor();
+                <div className="txt-s">
+                  {type ? (
+                    <div className="inline-block">
+                      <span className="">
+                        <Icon size={12} name="book" inline={true} />
+                      </span>
+                      <span className="ml3 txt-capitalize">{type}</span>
+                    </div>
+                  ) : (
+                    ''
+                  )}
+
+                  {language ? (
+                    <div className="ml12 inline-block">
+                      <span className="">
+                        <Icon size={12} name="code" inline={true} />
+                      </span>
+                      <span className="ml6">{language}</span>
+                    </div>
+                  ) : (
+                    ''
+                  )}
+
+                  {level ? (
+                    <div className="ml12 inline-block">
+                      <LevelIndicator level={parseInt(level)} />
+                    </div>
+                  ) : (
+                    ''
+                  )}
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    );
   }
 
   paging({ current, resultsPerPage, onChange, totalPages }) {
@@ -74,128 +156,6 @@ class Search extends React.Component {
         itemRender={textItemRender}
         className="flex-parent"
       />
-    );
-  }
-
-  renderPopover = props => {
-    const children = props.children;
-    return (
-      <Popover
-        allowPlacementAxisChange={false}
-        getAnchorElement={this.getAnchor}
-        onExit={props.reset}
-        ignoreClickWithinElement={this.ignore}
-        alignment="bottom"
-        placement="bottom"
-        receiveFocus={false}
-        passthroughProps={{
-          style: { maxWidth: 400, maxHeight: 400 },
-          id: 'swiftype-popover',
-          className:
-            'color-text bg-white shadow-darken25 round px12 py12 scroll-auto scroll-styled'
-        }}
-        zIndex={4}
-      >
-        {children.length ? (
-          <div>
-            <Facet field="site" label="Site" view={this.singleLinksFacet} />
-            <ul style={{ fontSize: '13px', lineHeight: '19px' }}>{children}</ul>
-            <Paging view={this.paging} />
-          </div>
-        ) : (
-          'No result'
-        )}
-      </Popover>
-    );
-  };
-
-  results = props => this.renderPopover(props);
-
-  result({ result, onClickLink }) {
-    const returnRaw = item => {
-      if (item && item.raw && typeof item.raw !== 'string')
-        return item.raw.join(', ');
-      else return item && item.raw ? item.raw : '';
-    };
-    const site = returnRaw(result.site);
-    const subsite = returnRaw(result.subsite);
-    const type = returnRaw(result.contentType);
-    const level = returnRaw(result.level);
-    const language = returnRaw(result.codeLanguage);
-    const title = returnRaw(result.title);
-    const url = returnRaw(result.url);
-    const excerpt = result.excerpt.snippet || result.excerpt.raw;
-
-    return (
-      <li className="mb24 px6">
-        <div className="">
-          {title && url && (
-            <a
-              className="block link--gray"
-              href={url}
-              onClick={onClickLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="mb3">
-                <span className="txt-bold">
-                  {site && site !== title ? (
-                    <span>
-                      {site}
-                      <Icon name="chevron-right" inline={true} />
-                    </span>
-                  ) : (
-                    ''
-                  )}
-                  {subsite && subsite !== title && subsite !== site ? (
-                    <span>
-                      {subsite}
-                      <Icon name="chevron-right" inline={true} />
-                    </span>
-                  ) : (
-                    ''
-                  )}
-                  {title}
-                </span>
-              </div>
-
-              <div className="mb6">{ReactHtmlParser(excerpt)}</div>
-
-              <div className="txt-s">
-                {type ? (
-                  <div className="inline-block">
-                    <span className="">
-                      <Icon size={12} name="book" inline={true} />
-                    </span>
-                    <span className="ml3 txt-capitalize">{type}</span>
-                  </div>
-                ) : (
-                  ''
-                )}
-
-                {language ? (
-                  <div className="ml12 inline-block">
-                    <span className="">
-                      <Icon size={12} name="code" inline={true} />
-                    </span>
-                    <span className="ml6">{language}</span>
-                  </div>
-                ) : (
-                  ''
-                )}
-
-                {level ? (
-                  <div className="ml12 inline-block">
-                    <LevelIndicator level={parseInt(level)} />
-                  </div>
-                ) : (
-                  ''
-                )}
-              </div>
-            </a>
-          )}
-        </div>
-      </li>
     );
   }
 
@@ -259,7 +219,7 @@ class Search extends React.Component {
             }
           }}
         >
-          {({ isLoading, resultSearchTerm, reset }) => {
+          {({ isLoading }) => {
             return (
               <div className="App">
                 <div className="relative">
@@ -284,23 +244,12 @@ class Search extends React.Component {
                       placeholder: 'Search docs',
                       id: 'docs-search'
                     }}
-                    searchAsYouType={true}
+                    autocompleteResults={{
+                      urlField: 'url'
+                    }}
+                    autocompleteView={this.autocomplete}
                   />
                 </div>
-
-                {resultSearchTerm ? (
-                  <Results
-                    renderResult={this.result}
-                    view={props => {
-                      return this.results({
-                        ...props,
-                        reset
-                      });
-                    }}
-                  />
-                ) : (
-                  ''
-                )}
               </div>
             );
           }}
