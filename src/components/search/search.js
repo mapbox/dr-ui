@@ -1,17 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
-import Popover from '@mapbox/mr-ui/popover';
-import {
-  SearchProvider,
-  Results,
-  SearchBox,
-  Facet
-} from '@elastic/react-search-ui';
+import { SearchProvider, Results, SearchBox } from '@elastic/react-search-ui';
 import LevelIndicator from '../level-indicator/level-indicator';
 import ReactHtmlParser from 'react-html-parser';
 import Icon from '@mapbox/mr-ui/icon';
-import { getFilterValueDisplay } from '@elastic/react-search-ui-views/lib/view-helpers';
+import Downshift from 'downshift';
 
 const connector = new SiteSearchAPIConnector({
   engineKey: 'zpAwGSb8YMXtF9yDeS5K', // public engine key
@@ -22,191 +16,188 @@ const connector = new SiteSearchAPIConnector({
 class Search extends React.Component {
   constructor(props) {
     super(props);
-    this.setAnchor = this.setAnchor.bind(this);
-    this.getAnchor = this.getAnchor.bind(this);
-    this.ignore = this.ignore.bind(this);
-    this.renderPopover = this.renderPopover.bind(this);
+    this.resultView = this.resultView.bind(this);
+    this.resultsView = this.resultsView.bind(this);
+    this.searchBox = this.searchBox.bind(this);
   }
 
-  setAnchor(el) {
-    this.anchor = el;
-  }
+  returnRaw = item => {
+    if (item && item.raw && typeof item.raw !== 'string')
+      return item.raw.join(', ');
+    else return item && item.raw ? item.raw : '';
+  };
 
-  getAnchor() {
-    return this.anchor;
-  }
+  resultView = (item, index, downshiftProps) => {
+    const result = item.result;
+    const getItemProps = downshiftProps.getItemProps;
+    const highlighted = downshiftProps.highlightedIndex === index;
 
-  ignore(el) {
-    return el === this.getAnchor();
-  }
+    const site = this.returnRaw(result.site);
+    const subsite = this.returnRaw(result.subsite);
+    const type = this.returnRaw(result.contentType);
+    const level = this.returnRaw(result.level);
+    const language = this.returnRaw(result.codeLanguage);
+    const title = this.returnRaw(result.title);
+    const url = this.returnRaw(result.url);
+    const excerpt = result.excerpt
+      ? result.excerpt.snippet || result.excerpt.raw
+      : '';
 
-  renderPopover = props => {
-    const children = props.children;
     return (
-      <Popover
-        allowPlacementAxisChange={false}
-        getAnchorElement={this.getAnchor}
-        onExit={props.reset}
-        ignoreClickWithinElement={this.ignore}
-        alignment="bottom"
-        placement="bottom"
-        receiveFocus={false}
-        passthroughProps={{
-          style: { maxWidth: 400, maxHeight: 400 },
-          className:
-            'color-text bg-white shadow-darken25 round px12 py12 scroll-auto scroll-styled'
-        }}
-        zIndex={4}
-      >
-        {children.length ? (
-          <div>
-            <Facet field="site" label="Site" view={this.singleLinksFacet} />
+      <li
+        className="py12 px18"
+        {...getItemProps({
+          key: result.id.raw,
 
-            <ul style={{ fontSize: '13px', lineHeight: '19px' }}>{children}</ul>
+          item: result,
+          className: `${highlighted &&
+            'bg-gray-faint'} py12 px18 link--gray cursor-pointer`
+        })}
+      >
+        {title && url && (
+          <div className="block link--gray">
+            <div className="mb3">
+              <span className="txt-bold">
+                {site && site !== title ? (
+                  <span>
+                    {site}
+                    <Icon name="chevron-right" inline={true} />
+                  </span>
+                ) : (
+                  ''
+                )}
+                {subsite && subsite !== title && subsite !== site ? (
+                  <span>
+                    {subsite}
+                    <Icon name="chevron-right" inline={true} />
+                  </span>
+                ) : (
+                  ''
+                )}
+                {title}
+              </span>
+            </div>
+
+            <div className="mb6">{ReactHtmlParser(excerpt)}</div>
+
+            <div className="txt-s">
+              {type ? (
+                <div className="inline-block">
+                  <span className="">
+                    <Icon size={12} name="book" inline={true} />
+                  </span>
+                  <span className="ml3 txt-capitalize">{type}</span>
+                </div>
+              ) : (
+                ''
+              )}
+
+              {language ? (
+                <div className="ml12 inline-block">
+                  <span className="">
+                    <Icon size={12} name="code" inline={true} />
+                  </span>
+                  <span className="ml6">{language}</span>
+                </div>
+              ) : (
+                ''
+              )}
+
+              {level ? (
+                <div className="ml12 inline-block">
+                  <LevelIndicator level={parseInt(level)} />
+                </div>
+              ) : (
+                ''
+              )}
+            </div>
           </div>
-        ) : (
-          'No result'
         )}
-      </Popover>
+      </li>
     );
   };
 
-  results = props => this.renderPopover(props);
+  resultsView = props => {
+    return (
+      <div
+        className="color-text shadow-darken25 round mt3 wmax600 absolute bg-white scroll-auto scroll-styled hmax360"
+        style={{ zIndex: 4 }}
+      >
+        {props.children.length ? (
+          <div>
+            <ul style={{ fontSize: '13px', lineHeight: '19px' }}>
+              {props.children.map((item, index) => {
+                return this.resultView(item.props, index, props.downshiftProps);
+              })}
+            </ul>
+          </div>
+        ) : (
+          <div className="py12 px12">No Results</div>
+        )}
+      </div>
+    );
+  };
 
-  result({ result, onClickLink }) {
-    const returnRaw = item => {
-      if (item && item.raw && typeof item.raw !== 'string')
-        return item.raw.join(', ');
-      else return item && item.raw ? item.raw : '';
-    };
-    const site = returnRaw(result.site);
-    const subsite = returnRaw(result.subsite);
-    const type = returnRaw(result.contentType);
-    const level = returnRaw(result.level);
-    const language = returnRaw(result.codeLanguage);
-    const title = returnRaw(result.title);
-    const url = returnRaw(result.url);
-    const excerpt = result.excerpt.snippet || result.excerpt.raw;
+  searchBox = props => {
+    const {
+      allAutocompletedItemsCount, // eslint-disable-line
+      autocompleteView, // eslint-disable-line
+      isFocused, // eslint-disable-line
+      inputProps,
+      onChange,
+      onSelectAutocomplete,
+      onSubmit,
+      useAutocomplete, // eslint-disable-line
+      value
+    } = props;
 
     return (
-      <li className="mb24 px6">
-        <div className="">
-          {title && url && (
-            <a
-              className="block link--gray"
-              href={url}
-              onClick={onClickLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="mb3">
-                <span className="txt-bold">
-                  {site && site !== title ? (
-                    <span>
-                      {site}
-                      <Icon name="chevron-right" inline={true} />
-                    </span>
-                  ) : (
-                    ''
-                  )}
-                  {subsite && subsite !== title && subsite !== site ? (
-                    <span>
-                      {subsite}
-                      <Icon name="chevron-right" inline={true} />
-                    </span>
-                  ) : (
-                    ''
-                  )}
-                  {title}
-                </span>
-              </div>
-
-              <div className="mb6">{ReactHtmlParser(excerpt)}</div>
-
-              <div className="txt-s">
-                {type ? (
-                  <div className="inline-block">
-                    <span className="">
-                      <Icon size={12} name="book" inline={true} />
-                    </span>
-                    <span className="ml3 txt-capitalize">{type}</span>
-                  </div>
-                ) : (
-                  ''
-                )}
-
-                {language ? (
-                  <div className="ml12 inline-block">
-                    <span className="">
-                      <Icon size={12} name="code" inline={true} />
-                    </span>
-                    <span className="ml6">{language}</span>
-                  </div>
-                ) : (
-                  ''
-                )}
-
-                {level ? (
-                  <div className="ml12 inline-block">
-                    <LevelIndicator level={parseInt(level)} />
-                  </div>
-                ) : (
-                  ''
-                )}
-              </div>
-            </a>
-          )}
-        </div>
-      </li>
-    );
-  }
-
-  singleLinksFacet = ({ onRemove, onSelect, options, values = [] }) => {
-    const value = values[0];
-    const siteFilter = options.filter(opt => opt.value === this.props.site)[0];
-    return siteFilter ? (
-      <div className="mb12 txt-s border-b border--gray-faint pb12">
-        <div className="toggle-group">
-          <div className="toggle-container">
-            <a
-              key={getFilterValueDisplay(siteFilter.value)}
-              className={`toggle py3 toggle--s ${
-                value === siteFilter.value ? 'bg-gray color-white' : ''
-              }`}
-              href="/"
-              onClick={e => {
-                e.preventDefault();
-                onSelect(siteFilter.value);
+      <Downshift
+        inputValue={value}
+        onChange={onSelectAutocomplete}
+        onInputValueChange={newValue => {
+          if (value === newValue) return;
+          onChange(newValue);
+        }}
+        itemToString={() => value}
+      >
+        {downshiftProps => {
+          const { closeMenu, getInputProps, isOpen } = downshiftProps;
+          return (
+            <form
+              onSubmit={e => {
+                closeMenu();
+                onSubmit(e);
               }}
             >
-              {getFilterValueDisplay(siteFilter.value)}
-            </a>
-          </div>
-
-          <div className="toggle-container">
-            <a
-              onClick={e => {
-                e.preventDefault();
-                onRemove(value);
-              }}
-              className={`toggle py3 toggle--s ${
-                !value ? 'bg-gray color-white' : ''
-              }`}
-              href="/"
-            >
-              All docs
-            </a>
-          </div>
-        </div>
-      </div>
-    ) : (
-      ''
+              <input
+                id="docs-search"
+                {...getInputProps({
+                  placeholder: 'Search docs',
+                  ...inputProps,
+                  className: `input px30`
+                })}
+              />
+              {isOpen && value && (
+                <Results
+                  view={props => {
+                    return this.resultsView({
+                      ...props,
+                      downshiftProps
+                    });
+                  }}
+                />
+              )}
+            </form>
+          );
+        }}
+      </Downshift>
     );
   };
 
   render() {
     return (
-      <div ref={this.setAnchor}>
+      <div>
         <SearchProvider
           config={{
             apiConnector: connector,
@@ -216,12 +207,11 @@ class Search extends React.Component {
               }
             },
             initialState: {
-              resultsPerPage: 5
-              // filters: [{ field: 'site', values: ['Help'], type: 'all' }] // test
+              resultsPerPage: 10
             }
           }}
         >
-          {({ isLoading, resultSearchTerm, reset }) => {
+          {({ isLoading }) => {
             return (
               <div className="App">
                 <div className="relative">
@@ -241,28 +231,13 @@ class Search extends React.Component {
                   )}
 
                   <SearchBox
-                    inputProps={{
-                      className: 'input px30',
-                      placeholder: 'Search docs',
-                      id: 'docs-search'
-                    }}
                     searchAsYouType={true}
+                    view={this.searchBox}
+                    onSelectAutocomplete={selection => {
+                      window.open(selection.url.raw, '_self'); // set to allow keyboard users to hit enter to navigate to item
+                    }}
                   />
                 </div>
-
-                {resultSearchTerm ? (
-                  <Results
-                    renderResult={this.result}
-                    view={props => {
-                      return this.results({
-                        ...props,
-                        reset
-                      });
-                    }}
-                  />
-                ) : (
-                  ''
-                )}
               </div>
             );
           }}
