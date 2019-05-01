@@ -29,7 +29,6 @@ class Search extends React.Component {
 
   resultView = (item, index, downshiftProps) => {
     const result = item.result;
-    const onClickLink = item.onClickLink;
     const getItemProps = downshiftProps.getItemProps;
     const highlighted = downshiftProps.highlightedIndex === index;
 
@@ -55,74 +54,65 @@ class Search extends React.Component {
             'bg-gray-faint'} py12 px18 link--gray cursor-pointer`
         })}
       >
-        <div className="">
-          {title && url && (
-            <a
-              className="block link--gray"
-              href={url}
-              onClick={onClickLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              tabIndex="1"
-            >
-              <div className="mb3">
-                <span className="txt-bold">
-                  {site && site !== title ? (
-                    <span>
-                      {site}
-                      <Icon name="chevron-right" inline={true} />
-                    </span>
-                  ) : (
-                    ''
-                  )}
-                  {subsite && subsite !== title && subsite !== site ? (
-                    <span>
-                      {subsite}
-                      <Icon name="chevron-right" inline={true} />
-                    </span>
-                  ) : (
-                    ''
-                  )}
-                  {title}
-                </span>
-              </div>
-
-              <div className="mb6">{ReactHtmlParser(excerpt)}</div>
-
-              <div className="txt-s">
-                {type ? (
-                  <div className="inline-block">
-                    <span className="">
-                      <Icon size={12} name="book" inline={true} />
-                    </span>
-                    <span className="ml3 txt-capitalize">{type}</span>
-                  </div>
+        {title && url && (
+          <div className="block link--gray">
+            <div className="mb3">
+              <span className="txt-bold">
+                {site && site !== title ? (
+                  <span>
+                    {site}
+                    <Icon name="chevron-right" inline={true} />
+                  </span>
                 ) : (
                   ''
                 )}
-
-                {language ? (
-                  <div className="ml12 inline-block">
-                    <span className="">
-                      <Icon size={12} name="code" inline={true} />
-                    </span>
-                    <span className="ml6">{language}</span>
-                  </div>
+                {subsite && subsite !== title && subsite !== site ? (
+                  <span>
+                    {subsite}
+                    <Icon name="chevron-right" inline={true} />
+                  </span>
                 ) : (
                   ''
                 )}
+                {title}
+              </span>
+            </div>
 
-                {level ? (
-                  <div className="ml12 inline-block">
-                    <LevelIndicator level={parseInt(level)} />
-                  </div>
-                ) : (
-                  ''
-                )}
-              </div>
-            </a>
-          )}
-        </div>
+            <div className="mb6">{ReactHtmlParser(excerpt)}</div>
+
+            <div className="txt-s">
+              {type ? (
+                <div className="inline-block">
+                  <span className="">
+                    <Icon size={12} name="book" inline={true} />
+                  </span>
+                  <span className="ml3 txt-capitalize">{type}</span>
+                </div>
+              ) : (
+                ''
+              )}
+
+              {language ? (
+                <div className="ml12 inline-block">
+                  <span className="">
+                    <Icon size={12} name="code" inline={true} />
+                  </span>
+                  <span className="ml6">{language}</span>
+                </div>
+              ) : (
+                ''
+              )}
+
+              {level ? (
+                <div className="ml12 inline-block">
+                  <LevelIndicator level={parseInt(level)} />
+                </div>
+              ) : (
+                ''
+              )}
+            </div>
+          </div>
+        )}
       </li>
     );
   };
@@ -241,11 +231,11 @@ class Search extends React.Component {
                   )}
 
                   <SearchBox
-                    autocompleteResults={{
-                      urlField: 'url'
-                    }}
                     searchAsYouType={true}
                     view={this.searchBox}
+                    onSelectAutocomplete={selection => {
+                      window.open(selection.url.raw, '_self'); // set to allow keyboard users to hit enter to navigate to item
+                    }}
                   />
                 </div>
               </div>
