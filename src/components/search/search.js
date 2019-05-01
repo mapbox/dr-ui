@@ -132,7 +132,7 @@ class Search extends React.Component {
             </ul>
           </div>
         ) : (
-          <div className="py12 px12">No Results</div>
+          props.wasSearched && <div className="py12 px12">No Results</div>
         )}
       </div>
     );
@@ -148,7 +148,8 @@ class Search extends React.Component {
       onSelectAutocomplete,
       onSubmit,
       useAutocomplete, // eslint-disable-line
-      value
+      value,
+      wasSearched
     } = props;
 
     return (
@@ -183,7 +184,8 @@ class Search extends React.Component {
                   view={props => {
                     return this.resultsView({
                       ...props,
-                      downshiftProps
+                      downshiftProps,
+                      wasSearched
                     });
                   }}
                 />
@@ -211,7 +213,7 @@ class Search extends React.Component {
             }
           }}
         >
-          {({ isLoading }) => {
+          {({ isLoading, wasSearched }) => {
             return (
               <div className="App">
                 <div className="relative">
@@ -232,7 +234,12 @@ class Search extends React.Component {
 
                   <SearchBox
                     searchAsYouType={true}
-                    view={this.searchBox}
+                    view={props => {
+                      return this.searchBox({
+                        ...props,
+                        wasSearched
+                      });
+                    }}
                     onSelectAutocomplete={selection => {
                       window.open(selection.url.raw, '_self'); // set to allow keyboard users to hit enter to navigate to item
                     }}
