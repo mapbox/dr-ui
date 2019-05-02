@@ -12,7 +12,18 @@ testCases.basicNote = {
   props: {
     site: 'Help'
   },
-  description: 'A basic search'
+  description: 'Search'
+};
+
+testCases.darkNote = {
+  description: 'Search with dark background',
+  element: (
+    <div className="py24 px24 bg-blue">
+      <div className="wmax360">
+        <Search site="Help" />
+      </div>
+    </div>
+  )
 };
 
 testCases.commonUseCase = {

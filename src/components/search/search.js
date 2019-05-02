@@ -185,7 +185,7 @@ class Search extends React.Component {
                 {...getInputProps({
                   placeholder: 'Search docs',
                   ...inputProps,
-                  className: `input px30`
+                  className: `input px30 bg-white`
                 })}
               />
               {isOpen && value && (
