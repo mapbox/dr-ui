@@ -1,11 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
-import { SearchProvider, Results, SearchBox } from '@elastic/react-search-ui';
+import {
+  SearchProvider,
+  Results,
+  SearchBox,
+  Facet
+} from '@elastic/react-search-ui';
 import LevelIndicator from '../level-indicator/level-indicator';
 import ReactHtmlParser from 'react-html-parser';
 import Icon from '@mapbox/mr-ui/icon';
 import Downshift from 'downshift';
+import { getFilterValueDisplay } from '@elastic/react-search-ui-views/lib/view-helpers';
 
 const connector = new SiteSearchAPIConnector({
   engineKey: 'zpAwGSb8YMXtF9yDeS5K', // public engine key
@@ -125,6 +131,7 @@ class Search extends React.Component {
       >
         {props.children.length ? (
           <div>
+            <Facet field="site" label="Site" view={this.singleLinksFacet} />
             <ul style={{ fontSize: '13px', lineHeight: '19px' }}>
               {props.children.map((item, index) => {
                 return this.resultView(item.props, index, props.downshiftProps);
@@ -138,6 +145,8 @@ class Search extends React.Component {
     );
   };
 
+  // using custom view to take advantage of downshift
+  // not using autocomplete because we'll want to be able to use facets
   searchBox = props => {
     const {
       allAutocompletedItemsCount, // eslint-disable-line
@@ -194,6 +203,49 @@ class Search extends React.Component {
           );
         }}
       </Downshift>
+    );
+  };
+
+  singleLinksFacet = ({ onRemove, onSelect, options, values = [] }) => {
+    const value = values[0];
+    const siteFilter = options.filter(opt => opt.value === this.props.site)[0];
+    return siteFilter ? (
+      <div className="my12 txt-s border-b border--gray-faint pb12 px6">
+        <div className="toggle-group">
+          <div className="toggle-container">
+            <a
+              key={getFilterValueDisplay(siteFilter.value)}
+              className={`toggle py3 toggle--s ${
+                value === siteFilter.value ? 'bg-gray color-white' : ''
+              }`}
+              href="/"
+              onClick={e => {
+                e.preventDefault();
+                onSelect(siteFilter.value);
+              }}
+            >
+              {getFilterValueDisplay(siteFilter.value)}
+            </a>
+          </div>
+
+          <div className="toggle-container">
+            <a
+              onClick={e => {
+                e.preventDefault();
+                onRemove(value);
+              }}
+              className={`toggle py3 toggle--s ${
+                !value ? 'bg-gray color-white' : ''
+              }`}
+              href="/"
+            >
+              All docs
+            </a>
+          </div>
+        </div>
+      </div>
+    ) : (
+      ''
     );
   };
 
