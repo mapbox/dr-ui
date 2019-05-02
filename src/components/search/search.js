@@ -213,34 +213,33 @@ class Search extends React.Component {
       <div className="my12 txt-s border-b border--gray-faint pb12 px6">
         <div className="toggle-group">
           <div className="toggle-container">
-            <a
+            <button
               key={getFilterValueDisplay(siteFilter.value)}
-              className={`toggle py3 toggle--s ${
+              className={`toggle py3 toggle--s txt-s ${
                 value === siteFilter.value ? 'bg-gray color-white' : ''
               }`}
-              href="/"
               onClick={e => {
                 e.preventDefault();
                 onSelect(siteFilter.value);
               }}
             >
               {getFilterValueDisplay(siteFilter.value)}
-            </a>
+            </button>
           </div>
 
           <div className="toggle-container">
-            <a
+            <button
               onClick={e => {
                 e.preventDefault();
                 onRemove(value);
               }}
-              className={`toggle py3 toggle--s ${
+              className={`toggle py3 toggle--s txt-s ${
                 !value ? 'bg-gray color-white' : ''
               }`}
               href="/"
             >
               All docs
-            </a>
+            </button>
           </div>
         </div>
       </div>
