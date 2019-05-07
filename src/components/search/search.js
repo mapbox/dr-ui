@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
-import { SearchProvider, Results, SearchBox } from '@elastic/react-search-ui';
+import { SearchProvider } from '@elastic/react-search-ui';
 import LevelIndicator from '../level-indicator/level-indicator';
 import ReactHtmlParser from 'react-html-parser';
 import Icon from '@mapbox/mr-ui/icon';
@@ -16,9 +16,6 @@ const connector = new SiteSearchAPIConnector({
 class Search extends React.Component {
   constructor(props) {
     super(props);
-    this.resultView = this.resultView.bind(this);
-    this.resultsView = this.resultsView.bind(this);
-    this.searchBox = this.searchBox.bind(this);
   }
 
   returnRaw = item => {
@@ -27,11 +24,9 @@ class Search extends React.Component {
     else return item && item.raw ? item.raw : '';
   };
 
-  resultView = (item, index, downshiftProps) => {
-    const result = item.result;
+  result = (result, index, downshiftProps) => {
     const getItemProps = downshiftProps.getItemProps;
     const highlighted = downshiftProps.highlightedIndex === index;
-
     const site = this.returnRaw(result.site);
     const subsite = this.returnRaw(result.subsite);
     const type = this.returnRaw(result.contentType);
@@ -42,13 +37,11 @@ class Search extends React.Component {
     const excerpt = result.excerpt
       ? result.excerpt.snippet || result.excerpt.raw
       : '';
-
     return (
-      <li
+      <div
         className="py12 px18"
         {...getItemProps({
           key: result.id.raw,
-
           item: result,
           className: `${highlighted &&
             'bg-gray-faint'} py12 px18 link--gray cursor-pointer`
@@ -113,89 +106,7 @@ class Search extends React.Component {
             </div>
           </div>
         )}
-      </li>
-    );
-  };
-
-  resultsView = props => {
-    return (
-      <div
-        className="color-text shadow-darken25 round mt3 wmax600 absolute bg-white scroll-auto scroll-styled hmax360"
-        style={{ zIndex: 4 }}
-      >
-        {props.children.length ? (
-          <div>
-            <ul style={{ fontSize: '13px', lineHeight: '19px' }}>
-              {props.children.map((item, index) => {
-                return this.resultView(item.props, index, props.downshiftProps);
-              })}
-            </ul>
-          </div>
-        ) : (
-          props.wasSearched && <div className="py12 px12">No Results</div>
-        )}
       </div>
-    );
-  };
-
-  // using custom view to take advantage of downshift
-  // not using autocomplete because we'll want to be able to use facets
-  searchBox = props => {
-    const {
-      allAutocompletedItemsCount, // eslint-disable-line
-      autocompleteView, // eslint-disable-line
-      isFocused, // eslint-disable-line
-      inputProps,
-      onChange,
-      onSelectAutocomplete,
-      onSubmit,
-      useAutocomplete, // eslint-disable-line
-      value,
-      wasSearched
-    } = props;
-
-    return (
-      <Downshift
-        inputValue={value}
-        onChange={onSelectAutocomplete}
-        onInputValueChange={newValue => {
-          if (value === newValue) return;
-          onChange(newValue);
-        }}
-        itemToString={() => value}
-      >
-        {downshiftProps => {
-          const { closeMenu, getInputProps, isOpen } = downshiftProps;
-          return (
-            <form
-              onSubmit={e => {
-                closeMenu();
-                onSubmit(e);
-              }}
-            >
-              <input
-                id="docs-search"
-                {...getInputProps({
-                  placeholder: 'Search docs',
-                  ...inputProps,
-                  className: `input px30 bg-white`
-                })}
-              />
-              {isOpen && value && (
-                <Results
-                  view={props => {
-                    return this.resultsView({
-                      ...props,
-                      downshiftProps,
-                      wasSearched
-                    });
-                  }}
-                />
-              )}
-            </form>
-          );
-        }}
-      </Downshift>
     );
   };
 
@@ -210,7 +121,13 @@ class Search extends React.Component {
             }
           }}
         >
-          {({ isLoading, wasSearched }) => {
+          {({
+            isLoading,
+            searchTerm,
+            setSearchTerm,
+            results,
+            trackClickThrough
+          }) => {
             return (
               <div className="App">
                 <div className="relative">
@@ -229,18 +146,53 @@ class Search extends React.Component {
                     ''
                   )}
 
-                  <SearchBox
-                    searchAsYouType={true}
-                    view={props => {
-                      return this.searchBox({
-                        ...props,
-                        wasSearched
-                      });
+                  <Downshift
+                    inputValue={searchTerm}
+                    onChange={selection => {
+                      trackClickThrough(selection.id.raw); // track selection click through
+                      window.open(selection.url.raw, '_self'); // open selection in current window
                     }}
-                    onSelectAutocomplete={selection => {
-                      window.open(selection.url.raw, '_self'); // set to allow keyboard users to hit enter to navigate to item
+                    onInputValueChange={newValue => {
+                      if (searchTerm === newValue) return;
+                      setSearchTerm(newValue);
                     }}
-                  />
+                    itemToString={() => searchTerm}
+                  >
+                    {downshiftProps => {
+                      const {
+                        closeMenu,
+                        getInputProps,
+                        isOpen
+                      } = downshiftProps;
+
+                      return (
+                        <form
+                          onSubmit={() => {
+                            closeMenu();
+                          }}
+                        >
+                          <input
+                            id="docs-search"
+                            {...getInputProps({
+                              placeholder: 'Search docs',
+                              className: `input px30 bg-white`
+                            })}
+                          />
+                          {isOpen && searchTerm && (
+                            <div className="color-text shadow-darken25 round mt3 absolute bg-white scroll-auto scroll-styled hmax360 absolute z4 w-full">
+                              <ul
+                                style={{ fontSize: '13px', lineHeight: '19px' }}
+                              >
+                                {results.map((result, index) =>
+                                  this.result(result, index, downshiftProps)
+                                )}
+                              </ul>
+                            </div>
+                          )}
+                        </form>
+                      );
+                    }}
+                  </Downshift>
                 </div>
               </div>
             );
