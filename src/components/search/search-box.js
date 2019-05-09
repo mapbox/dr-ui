@@ -53,16 +53,22 @@ class SearchBox extends React.Component {
               />
               {isOpen && props.searchTerm && (
                 <div className="color-text shadow-darken25 round mt3 absolute bg-white scroll-auto scroll-styled hmax360 absolute z4 w-full align-l">
-                  <ul style={{ fontSize: '13px', lineHeight: '19px' }}>
-                    {props.results.map((result, index) => (
-                      <SearchResult
-                        key={index}
-                        result={result}
-                        index={index}
-                        downshiftProps={downshiftProps}
-                      />
-                    ))}
-                  </ul>
+                  {props.results.length ? (
+                    <ul style={{ fontSize: '13px', lineHeight: '19px' }}>
+                      {props.results.map((result, index) => (
+                        <SearchResult
+                          key={index}
+                          result={result}
+                          index={index}
+                          downshiftProps={downshiftProps}
+                        />
+                      ))}
+                    </ul>
+                  ) : (
+                    <div className="py12 px12">
+                      Sorry, we didn't find anything.
+                    </div>
+                  )}
                 </div>
               )}
             </div>
