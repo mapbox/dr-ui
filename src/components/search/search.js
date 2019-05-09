@@ -64,7 +64,7 @@ class Search extends React.Component {
 }
 
 Search.propTypes = {
-  placeholder: PropTypes.string
+  placeholder: PropTypes.string // option to replace the input placehoder with a different string
 };
 
 export default Search;
