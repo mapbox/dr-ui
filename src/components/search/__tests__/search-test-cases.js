@@ -9,18 +9,16 @@ const testCases = {};
 
 testCases.basicNote = {
   component: Search,
-  props: {
-    site: 'Help'
-  },
+  props: {},
   description: 'Search'
 };
 
 testCases.darkNote = {
-  description: 'Search with dark background',
+  description: 'Search with dark background, custom placeholder',
   element: (
     <div className="py24 px24 bg-blue">
       <div className="wmax360">
-        <Search site="Help" />
+        <Search placeholder="SEARCH!" />
       </div>
     </div>
   )
@@ -43,7 +41,7 @@ testCases.commonUseCase = {
             </div>
             <div className="col col--8-mm col--12 flex-parent flex-parent--end-main-mm flex-parent--center-cross">
               <div className="wmax360 mb12 mb0-mm">
-                <Search site="Help" />
+                <Search />
               </div>
             </div>
           </div>

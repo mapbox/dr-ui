@@ -30,29 +30,30 @@ class Search extends React.Component {
             trackClickThrough
           }) => {
             return (
-              <div className="App">
-                <div className="relative">
-                  <div className="absolute flex-parent flex-parent--center-cross flex-parent--center-main w36 h36">
-                    <label htmlFor="docs-search">
-                      <svg className="icon color-gray">
-                        <use xlinkHref="#icon-search" />
-                      </svg>
-                    </label>
-                  </div>
-                  {isLoading ? (
-                    <div className="absolute top right flex-parent flex-parent--center-cross flex-parent--center-main w36 h36">
-                      <span className="loading loading--s" />
-                    </div>
-                  ) : (
-                    ''
-                  )}
-                  <SearchBox
-                    searchTerm={searchTerm}
-                    trackClickThrough={trackClickThrough}
-                    setSearchTerm={setSearchTerm}
-                    results={results}
-                  />
+              <div className="relative h36">
+                <div className="absolute flex-parent flex-parent--center-cross flex-parent--center-main w36 h36">
+                  <label htmlFor="docs-search">
+                    <svg className="icon color-gray">
+                      <use xlinkHref="#icon-search" />
+                    </svg>
+                  </label>
                 </div>
+                {isLoading ? (
+                  <div className="absolute top right flex-parent flex-parent--center-cross flex-parent--center-main w36 h36">
+                    <span className="loading loading--s" />
+                  </div>
+                ) : (
+                  ''
+                )}
+                <SearchBox
+                  searchTerm={searchTerm}
+                  trackClickThrough={trackClickThrough}
+                  setSearchTerm={setSearchTerm}
+                  results={results}
+                  placeholder={
+                    this.props.placeholder || 'Search docs.mapbox.com'
+                  }
+                />
               </div>
             );
           }}
@@ -63,7 +64,7 @@ class Search extends React.Component {
 }
 
 Search.propTypes = {
-  site: PropTypes.string
+  placeholder: PropTypes.string
 };
 
 export default Search;

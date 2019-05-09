@@ -31,10 +31,9 @@ class SearchBox extends React.Component {
             >
               <input
                 id="docs-search"
-                {...getInputProps({
-                  placeholder: 'Search docs',
-                  className: `input px30 bg-white`
-                })}
+                placeholder={props.placeholder}
+                className="input px30 bg-white"
+                {...getInputProps()}
               />
               {isOpen && props.searchTerm && (
                 <div className="color-text shadow-darken25 round mt3 absolute bg-white scroll-auto scroll-styled hmax360 absolute z4 w-full align-l">
@@ -62,7 +61,8 @@ SearchBox.propTypes = {
   searchTerm: PropTypes.string,
   trackClickThrough: PropTypes.func,
   setSearchTerm: PropTypes.func,
-  results: PropTypes.array
+  results: PropTypes.array,
+  placeholder: PropTypes.string
 };
 
 export default SearchBox;
