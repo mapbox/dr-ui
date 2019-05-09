@@ -50,7 +50,7 @@ class SearchResult extends React.Component {
                 )}
                 {subsite && subsite !== title && subsite !== site ? (
                   <span>
-                    {subsite}
+                    {subsite.replace(/\sfor\s(iOS|Android|Vision)/, '')}
                     <Icon name="chevron-right" inline={true} />
                   </span>
                 ) : (
