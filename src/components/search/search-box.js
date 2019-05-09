@@ -9,6 +9,7 @@ class SearchBox extends React.Component {
 
     return (
       <Downshift
+        id="docs-search"
         inputValue={props.searchTerm}
         onChange={selection => {
           props.trackClickThrough(selection.id.raw); // track selection click through
@@ -21,14 +22,29 @@ class SearchBox extends React.Component {
         itemToString={() => props.searchTerm}
       >
         {downshiftProps => {
-          const { closeMenu, getInputProps, isOpen } = downshiftProps;
+          const { getInputProps, isOpen, getLabelProps } = downshiftProps;
 
           return (
-            <form
-              onSubmit={() => {
-                closeMenu();
-              }}
-            >
+            <div>
+              <label
+                style={{
+                  // allow screenreaders to read the label
+                  // but hides it for everyone else
+                  position: 'absolute',
+                  width: '0.1px',
+                  height: '0.1px',
+                  margin: '-0.1px',
+                  padding: '0',
+                  overflow: 'hidden',
+                  whiteSpace: 'nowrap',
+                  border: '0',
+                  clip: 'rect(0 0 0 0)',
+                  clipPath: 'inset(100%)'
+                }}
+                {...getLabelProps()}
+              >
+                Search
+              </label>
               <input
                 id="docs-search"
                 placeholder={props.placeholder}
@@ -49,7 +65,7 @@ class SearchBox extends React.Component {
                   </ul>
                 </div>
               )}
-            </form>
+            </div>
           );
         }}
       </Downshift>
