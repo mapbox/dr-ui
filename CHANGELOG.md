@@ -1,3 +1,8 @@
+## Master
+
+- Add `Search` component
+- 🚨 [Breaking change] Remove `txt-bold` and `txt-s` from `LevelIndicator` component to make it more flexible.
+
 ## 0.10.0
 
 - Add Swiftype attribute to ignore content blocks in `CardContainer`, `SectionedNavigation`, and `TopbarSticker`. (#119)(https://github.com/mapbox/dr-ui/pull/119)
