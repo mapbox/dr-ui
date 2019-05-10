@@ -1,4 +1,4 @@
-## Master
+## 0.11.0
 
 - Add `Search` component
 - 🚨 [Breaking change] Remove `txt-bold` and `txt-s` from `LevelIndicator` component to make it more flexible.
