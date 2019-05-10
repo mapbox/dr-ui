@@ -27,7 +27,8 @@ class Search extends React.Component {
             searchTerm,
             setSearchTerm,
             results,
-            trackClickThrough
+            trackClickThrough,
+            wasSearched
           }) => {
             return (
               <div className="relative h36">
@@ -50,6 +51,7 @@ class Search extends React.Component {
                   trackClickThrough={trackClickThrough}
                   setSearchTerm={setSearchTerm}
                   results={results}
+                  wasSearched={wasSearched}
                   placeholder={
                     this.props.placeholder || 'Search docs.mapbox.com'
                   }
