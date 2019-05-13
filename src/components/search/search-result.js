@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import LevelIndicator from '../level-indicator/level-indicator';
 import ReactHtmlParser from 'react-html-parser';
 import Icon from '@mapbox/mr-ui/icon';
+import { titleGenerator } from '../../helpers/title-generator';
 
 class SearchResult extends React.Component {
   returnRaw = item => {
@@ -26,6 +27,7 @@ class SearchResult extends React.Component {
     const excerpt = props.result.excerpt
       ? props.result.excerpt.snippet || props.result.excerpt.raw
       : '';
+    const resultTitle = titleGenerator(title, subsite, site).reverse();
     return (
       <div
         className="py12 px18"
@@ -40,23 +42,16 @@ class SearchResult extends React.Component {
           <div className="block link--gray">
             <div className="mb3">
               <span className="txt-bold">
-                {site && site !== title ? (
-                  <span>
-                    {site}
-                    <Icon name="chevron-right" inline={true} />
-                  </span>
-                ) : (
-                  ''
-                )}
-                {subsite && subsite !== title && subsite !== site ? (
-                  <span>
-                    {subsite.replace(/\sfor\s(iOS|Android|Vision|Unity)/, '')}
-                    <Icon name="chevron-right" inline={true} />
-                  </span>
-                ) : (
-                  ''
-                )}
-                {title}
+                {resultTitle.map((t, index) => {
+                  return (
+                    <span key={`${props.result.id.raw}-${t}`}>
+                      {t}
+                      {resultTitle.length !== index + 1 && (
+                        <Icon name="chevron-right" inline={true} />
+                      )}
+                    </span>
+                  );
+                })}
               </span>
             </div>
 
