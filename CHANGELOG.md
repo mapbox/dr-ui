@@ -1,3 +1,7 @@
+## 0.11.1
+
+- Wrap `LevelIndicator` in `txt-s txt-bold` classes in `Card`.
+
 ## 0.11.0
 
 - Add `Search` component
