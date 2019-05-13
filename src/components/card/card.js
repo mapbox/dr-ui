@@ -16,7 +16,7 @@ class Card extends React.Component {
     }
     if (props.level) {
       renderedLevel = (
-        <div className="inline-block mr18">
+        <div className="inline-block mr18 txt-s txt-bold">
           <LevelIndicator level={props.level} />
         </div>
       );
