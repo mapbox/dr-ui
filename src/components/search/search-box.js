@@ -22,7 +22,12 @@ class SearchBox extends React.Component {
         itemToString={() => props.searchTerm}
       >
         {downshiftProps => {
-          const { getInputProps, isOpen, getLabelProps } = downshiftProps;
+          const {
+            getInputProps,
+            isOpen,
+            getLabelProps,
+            openMenu
+          } = downshiftProps;
 
           return (
             <div>
@@ -49,7 +54,7 @@ class SearchBox extends React.Component {
                 id="docs-search"
                 placeholder={props.placeholder}
                 className="input px30 bg-white"
-                {...getInputProps()}
+                {...getInputProps({ onFocus: openMenu })}
               />
               {isOpen && props.searchTerm && props.wasSearched && (
                 <div className="color-text shadow-darken25 round mt3 absolute bg-white scroll-auto scroll-styled hmax360 absolute z4 w-full align-l">
