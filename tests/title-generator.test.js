@@ -1,6 +1,6 @@
 'use strict';
 
-const tagger = require('../src/helpers/title-generator.js');
+const tagger = require('../src/components/search/title-generator.js');
 
 describe('titleGenerator', () => {
   it('no duplicated values', () => {
