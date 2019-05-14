@@ -1,3 +1,7 @@
+## 0.12.1
+
+- Move `titleGenerator` to `Search` component directory.
+
 ## 0.12.0
 
 - Add ability to revisit a search query when the input has focus for the `Search` component. [#127](https://github.com/mapbox/dr-ui/pull/127)

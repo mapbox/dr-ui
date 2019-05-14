@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import LevelIndicator from '../level-indicator/level-indicator';
 import ReactHtmlParser from 'react-html-parser';
 import Icon from '@mapbox/mr-ui/icon';
-import { titleGenerator } from '../../helpers/title-generator';
+import { titleGenerator } from './title-generator';
 
 class SearchResult extends React.Component {
   returnRaw = item => {
