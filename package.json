@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "budo ./src/test-cases-app/test-cases-app.js --dir ./src/test-cases-app --live --debug --pushstate -- -t babelify",
-    "cp-assembly": "del ./src/test-cases-app/dist && cpy node_modules/@mapbox/mapbox-assembly/dist/*.* ./src/test-cases-app/dist && cpy src/css/docs-prose.css ./src/test-cases-app/dist && cpy src/css/prism.css ./src/test-cases-app/dist",
+    "cp-assembly": "del ./src/test-cases-app/dist && cpy node_modules/@mapbox/mbx-assembly/dist/*.* ./src/test-cases-app/dist && cpy src/css/docs-prose.css ./src/test-cases-app/dist && cpy src/css/prism.css ./src/test-cases-app/dist",
     "budo": "budo test/app.js -l -d -P -- -t babelify",
     "prestart": "npm run build-component-index && npm run cp-assembly",
     "test": "jest tests/*.test.js",
@@ -33,6 +33,7 @@
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
     "@mapbox/eslint-config-mapbox": "^1.2.1",
+    "@mapbox/mbx-assembly": "^0.28.0",
     "@mapbox/react-test-kitchen": "^0.1.3",
     "babel-eslint": "^8.2.6",
     "babelify": "^10.0.0",
@@ -71,8 +72,5 @@
     "react-html-parser": "^2.0.2",
     "react-stickynode": "^2.1.1",
     "rehype-sectionize-headings": "^1.0.0-rc.1"
-  },
-  "optionalDependencies": {
-    "@mapbox/mapbox-assembly": "^0.26.0"
   }
 }
