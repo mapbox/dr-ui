@@ -1,11 +1,15 @@
+## Master
+
+- Add ability to revisit a search query when the input has focus for the `Search` component. [#127](https://github.com/mapbox/dr-ui/pull/127)
+
 ## 0.11.1
 
-- Wrap `LevelIndicator` in `txt-s txt-bold` classes in `Card`.
+- Wrap `LevelIndicator` in `txt-s txt-bold` classes in `Card`. [#/](https://github.com/mapbox/dr-ui/pull/126)
 
 ## 0.11.0
 
-- Add `Search` component
-- 🚨 [Breaking change] Remove `txt-bold` and `txt-s` from `LevelIndicator` component to make it more flexible.
+- Add `Search` component. [#121](https://github.com/mapbox/dr-ui/pull/121)
+- 🚨 Remove `txt-bold` and `txt-s` from `LevelIndicator` component to make it more flexible. [#121](https://github.com/mapbox/dr-ui/pull/121)
 
 ## 0.10.0
 
