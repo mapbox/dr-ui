@@ -1,6 +1,7 @@
 ## Master
 
 - Add ability to revisit a search query when the input has focus for the `Search` component. [#127](https://github.com/mapbox/dr-ui/pull/127)
+- Add style JSON for minimal styles used to illustrate the contents of Mapbox-maintained tilesets. [#125](https://github.com/mapbox/dr-ui/pull/125)
 
 ## 0.11.1
 
