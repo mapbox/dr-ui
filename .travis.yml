@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - '6'
+sudo: false
+notifications:
+  email: false
+cache:
+  directories:
+    - node_modules
+git:
+  depth: 3
