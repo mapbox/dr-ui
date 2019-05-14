@@ -1,7 +1,17 @@
-## Master
+## 0.11.1
+
+- Wrap `LevelIndicator` in `txt-s txt-bold` classes in `Card`.
+
+## 0.11.0
+
+- Add `Search` component
+- 🚨 [Breaking change] Remove `txt-bold` and `txt-s` from `LevelIndicator` component to make it more flexible.
+
+## 0.10.0
 
 - Add Swiftype attribute to ignore content blocks in `CardContainer`, `SectionedNavigation`, and `TopbarSticker`. (#119)(https://github.com/mapbox/dr-ui/pull/119)
 - Fix bug in Firefox where arrow was not vertically centered in `BackToTopButton`. (#122)(https://github.com/mapbox/dr-ui/pull/122)
+- Fix prerelease order in `sortVersion` helper function. (#124)(https://github.com/mapbox/dr-ui/pull/124)
 
 ## 0.9.0
 
