@@ -31,21 +31,7 @@ class Search extends React.Component {
             wasSearched
           }) => {
             return (
-              <div className="relative h36">
-                <div className="absolute flex-parent flex-parent--center-cross flex-parent--center-main w36 h36">
-                  <label htmlFor="docs-search">
-                    <svg className="icon color-gray">
-                      <use xlinkHref="#icon-search" />
-                    </svg>
-                  </label>
-                </div>
-                {isLoading ? (
-                  <div className="absolute top right flex-parent flex-parent--center-cross flex-parent--center-main w36 h36">
-                    <span className="loading loading--s" />
-                  </div>
-                ) : (
-                  ''
-                )}
+              <div className="h36 relative" style={{ minWidth: '36px' }}>
                 <SearchBox
                   searchTerm={searchTerm}
                   trackClickThrough={trackClickThrough}
@@ -53,8 +39,12 @@ class Search extends React.Component {
                   results={results}
                   wasSearched={wasSearched}
                   placeholder={
-                    this.props.placeholder || 'Search docs.mapbox.com'
+                    this.props.collapse
+                      ? ''
+                      : this.props.placeholder || 'Search docs.mapbox.com'
                   }
+                  collapse={this.props.collapse || false}
+                  isLoading={isLoading}
                 />
               </div>
             );
@@ -66,7 +56,8 @@ class Search extends React.Component {
 }
 
 Search.propTypes = {
-  placeholder: PropTypes.string // option to replace the input placehoder with a different string
+  placeholder: PropTypes.string, // option to replace the input placehoder with a different string,
+  collapse: PropTypes.bool // option collapse input
 };
 
 export default Search;

@@ -39,9 +39,14 @@ testCases.commonUseCase = {
                 <ProductMenu productName="API Documentation" homePage="/api/" />
               </div>
             </div>
-            <div className="col col--8-mm col--12 flex-parent flex-parent--end-main-mm flex-parent--center-cross">
+            <div className="col col--7-mm col--12 flex-parent flex-parent--end-main-mm flex-parent--center-cross align-r">
+              <div className="ml12 inline-block">Navigation Link 1</div>
+              <div className="ml12 inline-block">Navigation Link 2</div>
+            </div>
+
+            <div className="col col--1-mm col--12 flex-parent flex-parent--end-main-mm flex-parent--center-cross">
               <div className="wmax360 mb12 mb0-mm">
-                <Search />
+                <Search collapse={true} />
               </div>
             </div>
           </div>
