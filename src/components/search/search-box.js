@@ -31,6 +31,10 @@ class SearchBox extends React.Component {
         props.collapse && this.state.isUncollapse
     });
 
+    const loaderClasses = classnames('loading loading--s', {
+      'none-mm': props.collapse && !this.state.isUncollapse
+    });
+
     return (
       <div
         className={searchContainerClasses}
@@ -49,7 +53,7 @@ class SearchBox extends React.Component {
 
         {props.isLoading && (
           <div className="absolute top right flex-parent flex-parent--center-cross flex-parent--center-main w36 h36">
-            <span className="loading loading--s" />
+            <span className={loaderClasses} />
           </div>
         )}
         <Downshift
