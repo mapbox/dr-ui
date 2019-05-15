@@ -25,7 +25,7 @@ testCases.darkNote = {
 };
 
 testCases.commonUseCase = {
-  description: 'Search placement',
+  description: 'Search placement with `collapse` option set',
   element: (
     <div>
       <TopbarSticker>
