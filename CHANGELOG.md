@@ -1,3 +1,7 @@
+## 0.12.2
+
+- Debounce `Search` results. [#129](https://github.com/mapbox/dr-ui/pull/129)
+
 ## 0.12.1
 
 - Move `titleGenerator` to `Search` component directory.
