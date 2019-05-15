@@ -63,7 +63,7 @@ class SearchBox extends React.Component {
           }}
           onInputValueChange={newValue => {
             if (props.searchTerm === newValue) return;
-            props.setSearchTerm(newValue);
+            props.setSearchTerm(newValue, { debounce: 300 });
           }}
           itemToString={() => props.searchTerm}
         >
