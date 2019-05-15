@@ -45,7 +45,7 @@ testCases.commonUseCase = {
             </div>
 
             <div className="col col--1-mm col--12 flex-parent flex-parent--end-main-mm flex-parent--center-cross">
-              <div className="wmax360 w-full mb12 mb0-mm">
+              <div className="wmax360 mb12 mb0-mm">
                 <Search collapse={true} />
               </div>
             </div>
