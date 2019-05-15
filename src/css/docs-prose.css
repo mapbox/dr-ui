@@ -60,4 +60,7 @@
     overflow: auto !important;
     -webkit-overflow-scrolling: touch;
   }
+  .color-transparent-mm {
+    color: transparent !important;
+  }
 }

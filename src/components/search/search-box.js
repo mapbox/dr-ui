@@ -22,9 +22,7 @@ class SearchBox extends React.Component {
     const { props } = this;
 
     const inputClasses = classnames('input bg-white px30', {
-      // 'px30': (props.collapse && this.state.isUncollapse) || (!props.collapse),
-      'px0-mm': props.collapse && !this.state.isUncollapse,
-      'color-white-mm': props.collapse && !this.state.isUncollapse
+      'px0-mm color-transparent-mm': props.collapse && !this.state.isUncollapse // turn off padding and hide input color on larger screens (allows us to disable collapse on mobile)
     });
 
     const searchContainerClasses = classnames('', {
