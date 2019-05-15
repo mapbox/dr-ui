@@ -108,9 +108,11 @@ class SearchBox extends React.Component {
                   {...getInputProps({
                     onFocus: () => {
                       openMenu();
-                      this.handleCollapse();
+                      if (props.collapse) this.handleCollapse();
                     },
-                    onBlur: this.handleCollapse
+                    onBlur: () => {
+                      if (props.collapse) this.handleCollapse();
+                    }
                   })}
                 />
                 {isOpen && props.searchTerm && props.wasSearched && (
