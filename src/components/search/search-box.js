@@ -46,7 +46,7 @@ class SearchBox extends React.Component {
           </div>
         )}
         <Downshift
-          id="docs-search"
+          id={props.inputId}
           inputValue={props.searchTerm}
           onChange={selection => {
             props.trackClickThrough(selection.id.raw); // track selection click through
@@ -81,7 +81,6 @@ class SearchBox extends React.Component {
                   ref={input => {
                     this.docsSeachInput = input;
                   }}
-                  id="docs-search"
                   placeholder={props.placeholder}
                   className={inputClasses}
                   {...getInputProps({
