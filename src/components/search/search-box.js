@@ -27,7 +27,7 @@ class SearchBox extends React.Component {
 
     const searchContainerClasses = classnames('', {
       'w36-mm': props.collapse,
-      'absolute-mm wmax360 wmin300-mm':
+      'absolute-mm wmax360 wmin300-mm top right':
         props.collapse && this.state.isUncollapse
     });
 
@@ -36,10 +36,7 @@ class SearchBox extends React.Component {
     });
 
     return (
-      <div
-        className={searchContainerClasses || undefined}
-        style={props.collapse ? { top: 0, right: 0 } : undefined}
-      >
+      <div className={searchContainerClasses || undefined}>
         {props.isLoading && (
           <div className="absolute top right flex-parent flex-parent--center-cross flex-parent--center-main w36 h36">
             <span className={loaderClasses} />

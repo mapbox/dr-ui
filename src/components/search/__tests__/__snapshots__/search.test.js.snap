@@ -6,12 +6,6 @@ exports[`Search component, collapse 1`] = `
 >
   <div
     className="w36-mm"
-    style={
-      Object {
-        "right": 0,
-        "top": 0,
-      }
-    }
   >
     <div
       aria-expanded={false}

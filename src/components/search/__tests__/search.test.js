@@ -28,5 +28,9 @@ test('Search component, collapse', () => {
   expect(tree).toMatchSnapshot();
   visit(tree, 'input', node => {
     expect(node.props.placeholder).toBe('');
+    expect(node.props.className).toBe(
+      'input bg-white px30 px0-mm color-transparent-mm'
+    );
   });
+  expect(tree.children[0].props.className).toBe('w36-mm'); // collapse option adds width to container
 });
