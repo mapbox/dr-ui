@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search component, collapse 1`] = `
+<div
+  className="h36 relative"
+>
+  <div
+    className="w36-mm"
+    style={
+      Object {
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      aria-labelledby="docs-search-label"
+      aria-owns={null}
+      role="combobox"
+    >
+      <label
+        className="cursor-pointer"
+        htmlFor="docs-search-input"
+        id="docs-search-label"
+      >
+        <div
+          className="absolute flex-parent flex-parent--center-cross flex-parent--center-main w36 h36"
+        >
+          <svg
+            className="icon color-gray"
+          >
+            <title>
+              Search
+            </title>
+            <use
+              xlinkHref="#icon-search"
+            />
+          </svg>
+        </div>
+      </label>
+      <input
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-controls={null}
+        aria-labelledby="docs-search-label"
+        autoComplete="off"
+        className="input bg-white px30 px0-mm color-transparent-mm"
+        id="docs-search-input"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder=""
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Search component, no options 1`] = `
+<div
+  className="h36 relative"
+>
+  <div>
+    <div
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      aria-labelledby="docs-search-label"
+      aria-owns={null}
+      role="combobox"
+    >
+      <label
+        className="cursor-pointer"
+        htmlFor="docs-search-input"
+        id="docs-search-label"
+      >
+        <div
+          className="absolute flex-parent flex-parent--center-cross flex-parent--center-main w36 h36"
+        >
+          <svg
+            className="icon color-gray"
+          >
+            <title>
+              Search
+            </title>
+            <use
+              xlinkHref="#icon-search"
+            />
+          </svg>
+        </div>
+      </label>
+      <input
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-controls={null}
+        aria-labelledby="docs-search-label"
+        autoComplete="off"
+        className="input bg-white px30"
+        id="docs-search-input"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Search docs.mapbox.com"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Search component, placeholder 1`] = `
+<div
+  className="h36 relative"
+>
+  <div>
+    <div
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      aria-labelledby="docs-search-label"
+      aria-owns={null}
+      role="combobox"
+    >
+      <label
+        className="cursor-pointer"
+        htmlFor="docs-search-input"
+        id="docs-search-label"
+      >
+        <div
+          className="absolute flex-parent flex-parent--center-cross flex-parent--center-main w36 h36"
+        >
+          <svg
+            className="icon color-gray"
+          >
+            <title>
+              Search
+            </title>
+            <use
+              xlinkHref="#icon-search"
+            />
+          </svg>
+        </div>
+      </label>
+      <input
+        aria-activedescendant={null}
+        aria-autocomplete="list"
+        aria-controls={null}
+        aria-labelledby="docs-search-label"
+        autoComplete="off"
+        className="input bg-white px30"
+        id="docs-search-input"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        placeholder="Search me, ok?"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;

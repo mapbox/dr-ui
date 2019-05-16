@@ -2,7 +2,8 @@
   "root": true,
   "parser": "babel-eslint",
   "env": {
-    "browser": true
+    "browser": true,
+    "jest": true
   },
   "extends": [
     "@mapbox/eslint-config-mapbox/react",

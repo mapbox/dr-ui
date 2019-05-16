@@ -26,7 +26,7 @@ class SearchBox extends React.Component {
     });
 
     const searchContainerClasses = classnames('', {
-      'w36-mm cursor-pointer': props.collapse,
+      'w36-mm': props.collapse,
       'absolute-mm wmax360 wmin300-mm':
         props.collapse && this.state.isUncollapse
     });
@@ -68,9 +68,9 @@ class SearchBox extends React.Component {
 
             return (
               <div>
-                <label {...getLabelProps()}>
-                  <div className="cursor-pointer absolute flex-parent flex-parent--center-cross flex-parent--center-main w36 h36">
-                    <svg className="icon color-gray cursor-pointer ">
+                <label className="cursor-pointer" {...getLabelProps()}>
+                  <div className="absolute flex-parent flex-parent--center-cross flex-parent--center-main w36 h36">
+                    <svg className="icon color-gray">
                       <title>Search</title>
                       <use xlinkHref="#icon-search" />
                     </svg>
