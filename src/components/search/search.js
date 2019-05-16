@@ -12,6 +12,7 @@ const connector = new SiteSearchAPIConnector({
 
 class Search extends React.Component {
   render() {
+    const { props } = this;
     return (
       <SearchProvider
         config={{
@@ -30,7 +31,10 @@ class Search extends React.Component {
           wasSearched
         }) => {
           return (
-            <div className="h36 relative" style={{ minWidth: '36px' }}>
+            <div
+              className="h36 relative"
+              style={props.collapsed ? { minWidth: '36px' } : undefined}
+            >
               <SearchBox
                 searchTerm={searchTerm}
                 trackClickThrough={trackClickThrough}
@@ -38,11 +42,11 @@ class Search extends React.Component {
                 results={results}
                 wasSearched={wasSearched}
                 placeholder={
-                  this.props.collapse
+                  props.collapse
                     ? ''
-                    : this.props.placeholder || 'Search docs.mapbox.com'
+                    : props.placeholder || 'Search docs.mapbox.com'
                 }
-                collapse={this.props.collapse || false}
+                collapse={props.collapse || false}
                 isLoading={isLoading}
               />
             </div>
