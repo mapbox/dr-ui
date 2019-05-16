@@ -37,20 +37,9 @@ class SearchBox extends React.Component {
 
     return (
       <div
-        className={searchContainerClasses}
-        onClick={() => {
-          this.docsSeachInput.focus();
-        }}
-        style={{ top: 0, right: 0 }}
+        className={searchContainerClasses || undefined}
+        style={props.collapse ? { top: 0, right: 0 } : undefined}
       >
-        <div className="cursor-pointer absolute flex-parent flex-parent--center-cross flex-parent--center-main w36 h36">
-          <label htmlFor="docs-search">
-            <svg className="icon color-gray cursor-pointer ">
-              <use xlinkHref="#icon-search" />
-            </svg>
-          </label>
-        </div>
-
         {props.isLoading && (
           <div className="absolute top right flex-parent flex-parent--center-cross flex-parent--center-main w36 h36">
             <span className={loaderClasses} />
@@ -79,25 +68,15 @@ class SearchBox extends React.Component {
 
             return (
               <div>
-                <label
-                  style={{
-                    // allow screenreaders to read the label
-                    // but hides it for everyone else
-                    position: 'absolute',
-                    width: '0.1px',
-                    height: '0.1px',
-                    margin: '-0.1px',
-                    padding: '0',
-                    overflow: 'hidden',
-                    whiteSpace: 'nowrap',
-                    border: '0',
-                    clip: 'rect(0 0 0 0)',
-                    clipPath: 'inset(100%)'
-                  }}
-                  {...getLabelProps()}
-                >
-                  Search
+                <label {...getLabelProps()}>
+                  <div className="cursor-pointer absolute flex-parent flex-parent--center-cross flex-parent--center-main w36 h36">
+                    <svg className="icon color-gray cursor-pointer ">
+                      <title>Search</title>
+                      <use xlinkHref="#icon-search" />
+                    </svg>
+                  </div>
                 </label>
+
                 <input
                   ref={input => {
                     this.docsSeachInput = input;

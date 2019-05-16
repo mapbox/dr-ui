@@ -13,44 +13,42 @@ const connector = new SiteSearchAPIConnector({
 class Search extends React.Component {
   render() {
     return (
-      <div>
-        <SearchProvider
-          config={{
-            apiConnector: connector,
-            initialState: {
-              resultsPerPage: 10
-            }
-          }}
-        >
-          {({
-            isLoading,
-            searchTerm,
-            setSearchTerm,
-            results,
-            trackClickThrough,
-            wasSearched
-          }) => {
-            return (
-              <div className="h36 relative" style={{ minWidth: '36px' }}>
-                <SearchBox
-                  searchTerm={searchTerm}
-                  trackClickThrough={trackClickThrough}
-                  setSearchTerm={setSearchTerm}
-                  results={results}
-                  wasSearched={wasSearched}
-                  placeholder={
-                    this.props.collapse
-                      ? ''
-                      : this.props.placeholder || 'Search docs.mapbox.com'
-                  }
-                  collapse={this.props.collapse || false}
-                  isLoading={isLoading}
-                />
-              </div>
-            );
-          }}
-        </SearchProvider>
-      </div>
+      <SearchProvider
+        config={{
+          apiConnector: connector,
+          initialState: {
+            resultsPerPage: 10
+          }
+        }}
+      >
+        {({
+          isLoading,
+          searchTerm,
+          setSearchTerm,
+          results,
+          trackClickThrough,
+          wasSearched
+        }) => {
+          return (
+            <div className="h36 relative" style={{ minWidth: '36px' }}>
+              <SearchBox
+                searchTerm={searchTerm}
+                trackClickThrough={trackClickThrough}
+                setSearchTerm={setSearchTerm}
+                results={results}
+                wasSearched={wasSearched}
+                placeholder={
+                  this.props.collapse
+                    ? ''
+                    : this.props.placeholder || 'Search docs.mapbox.com'
+                }
+                collapse={this.props.collapse || false}
+                isLoading={isLoading}
+              />
+            </div>
+          );
+        }}
+      </SearchProvider>
     );
   }
 }
