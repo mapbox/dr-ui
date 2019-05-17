@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Icon from '@mapbox/mr-ui/icon';
 import BetaFlag from '../beta-flag/beta-flag';
+import EnterpriseFlag from '../enterprise-flag/enterprise-flag';
 
 class OverviewHeader extends React.PureComponent {
   renderVersion() {
@@ -92,6 +93,16 @@ class OverviewHeader extends React.PureComponent {
       <div className="scroll-hidden border-b border--gray-light prose mb24">
         <h1 className="mb6 txt-fancy">
           {props.title}
+          {props.enterprise ? (
+            <span
+              className="ml12 inline-block relative"
+              style={{ top: '-7px' }}
+            >
+              <EnterpriseFlag />
+            </span>
+          ) : (
+            ''
+          )}
           {props.beta ? (
             <span
               className="ml12 inline-block relative"
@@ -123,6 +134,7 @@ class OverviewHeader extends React.PureComponent {
 OverviewHeader.propTypes = {
   features: PropTypes.arrayOf(PropTypes.string).isRequired,
   title: PropTypes.string.isRequired,
+  enterprise: PropTypes.bool,
   beta: PropTypes.bool,
   image: PropTypes.node.isRequired,
   version: PropTypes.string,
@@ -133,6 +145,7 @@ OverviewHeader.propTypes = {
 };
 
 OverviewHeader.defaultProps = {
+  enterprise: false,
   beta: false
 };
 

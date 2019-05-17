@@ -47,9 +47,20 @@ testCases.beta = {
   component: ProductMenu,
   description: 'Beta product',
   props: {
-    productName: 'Vision SDK for Android',
+    productName: 'Vision SDK for iOS',
     beta: true,
     homePage: '/vision/'
+  }
+};
+
+testCases.enterprise = {
+  component: ProductMenu,
+  description: 'Enterprise product',
+  props: {
+    productName: 'Future Fancy API',
+    beta: true,
+    enterprise: true,
+    homePage: '#'
   }
 };
 
