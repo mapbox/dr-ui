@@ -2,6 +2,7 @@ import React from 'react';
 
 // TODO:
 // [ ] can we pull user is segment, are they submitting multiple times?
+// [ ] hook up segment
 
 class Feedback extends React.Component {
   constructor(props) {
@@ -13,7 +14,16 @@ class Feedback extends React.Component {
 
   sendToSegment(response) {
     console.log(`Updated in segement: ${response}`);
-    // do it
+    // MOCK FUNCTION
+    // WHAT INFO DO WE WANT TO COLLECT?
+    // IS page path, title already included or do we need to add them with the event?
+    /*
+    analytics.track('Sent feedback', {
+      response: response,
+      page: null, // page path
+      title: null// page title
+    });
+    */
   }
 
   yes() {
@@ -26,7 +36,7 @@ class Feedback extends React.Component {
   }
   render() {
     return (
-      <div className="bg-gray-faint py18 px18 round color-gray">
+      <div className="bg-gray-faint py12 px18 round color-gray">
         <div>
           {!this.state.response && (
             <div>
@@ -41,7 +51,10 @@ class Feedback extends React.Component {
           )}
           {this.state.response === 'no' && (
             <div>
-              What can we do to improve this? <a href="">contact blargb</a>
+              What can we do to improve this?{' '}
+              <a className="link" href="">
+                contact blargb
+              </a>
             </div>
           )}
           {this.state.response === 'yes' && (
