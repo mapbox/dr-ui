@@ -52,6 +52,21 @@ describe('pre-release', () => {
 describe('ios', () => {
   test(`allVersionsOrdered`, () => {
     expect(sortVersions(allIosVersions).allVersionsOrdered).toEqual([
+      '5.0.0',
+      '4.12.0-beta.1',
+      '4.12.0-alpha.2',
+      '4.12.0-alpha.1',
+      '4.11.0',
+      '4.11.0-beta.2',
+      '4.11.0-beta.1',
+      '4.11.0-alpha.2',
+      '4.11.0-alpha.1',
+      '4.10.0',
+      '4.10.0-beta.3',
+      '4.10.0-beta.2',
+      '4.10.0-beta.1',
+      '4.10.0-alpha.2',
+      '4.10.0-alpha.1',
       '4.9.0',
       '4.9.0-alpha.2',
       '4.9.0-alpha.1',
@@ -193,11 +208,11 @@ describe('ios', () => {
   });
 
   test(`latestStable`, () => {
-    expect(sortVersions(allIosVersions).latestStable).toEqual('4.9.0');
+    expect(sortVersions(allIosVersions).latestStable).toEqual('5.0.0');
   });
 
   test(`allLatestVersion`, () => {
-    expect(sortVersions(allIosVersions).allLatestVersion).toEqual(/^4.9.0.+/);
+    expect(sortVersions(allIosVersions).allLatestVersion).toEqual(/^5.0.0.+/);
   });
 
   test(`newestPreRelease`, () => {
@@ -205,6 +220,9 @@ describe('ios', () => {
   });
   test(`versionsToDisplay`, () => {
     expect(sortVersions(allIosVersions).versionsToDisplay).toEqual([
+      '5.0.0',
+      '4.11.0',
+      '4.10.0',
       '4.9.0',
       '4.8.0',
       '4.7.1',

@@ -4,7 +4,15 @@ const sortBy = key => (a, b) =>
 export function sortVersions(versions) {
   const ordered = versions.reduce((arr, v) => {
     const version = v.split('-')[0]; // remove beta or alpha flag
-    const num = parseInt(version.split('.').join('')); // parse version as number
+    const preNum = version.split('.').map(subNum => {
+      if (subNum.length === 1) {
+        return `0${subNum}`;
+      }
+      if (subNum.length === 2) {
+        return subNum;
+      }
+    });
+    const num = parseInt(preNum.join('')); // parse version as number
     arr.push({ version, num, v });
     return arr;
   }, []);
