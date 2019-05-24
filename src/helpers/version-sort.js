@@ -1,43 +1,48 @@
+const compareVersions = require('compare-versions'); //eslint-disable-line
+
 const sortBy = key => (a, b) =>
   a[key] > b[key] ? 1 : b[key] > a[key] ? -1 : 0;
 
 export function sortVersions(versions) {
-  const ordered = versions.reduce((arr, v) => {
-    const version = v.split('-')[0]; // remove beta or alpha flag
-    const num = parseInt(version.split('.').join('')); // parse version as number
-    arr.push({ version, num, v });
-    return arr;
-  }, []);
-
-  const allVersionsOrdered = [
-    ...new Set( // make uniq
-      ordered
-        .sort(sortBy('num')) // sort by the integer
-        .reverse() // put in descending order
-        .map(a => a.v)
-    )
-  ];
-
+  // make sure versions are in order
+  const allVersionsOrdered = versions.sort(compareVersions).reverse();
+  // get the latest stable version
   const latestStable = allVersionsOrdered
     .filter(version => {
       return /alpha|beta|rc|pre/.test(version) === false;
     })
     .slice(0, 1)[0];
+  // create regex to find prereleases for latest version
+  const allLatestVersion = new RegExp(`^${latestStable}-.+`);
+  // check for latest prereleases
+  const latestVersionPreReleases = allVersionsOrdered.reduce((arr, version) => {
+    if (allLatestVersion.test(version)) {
+      arr.push({ version });
+    }
+    return arr;
+  }, []);
+  // check for any release greater than latesst
+  const laterThanLatest = allVersionsOrdered.reduce((arr, version) => {
+    if (compareVersions(version, latestStable) === 1) {
+      arr.push({ version });
+    }
+    return arr;
+  }, []);
+  // if there is any prerelease greater than latest use that
+  // else use the latest version's prereleases
+  // else do nothing
+  const sortPreReleases = laterThanLatest.length
+    ? laterThanLatest
+    : latestVersionPreReleases.length
+    ? latestVersionPreReleases
+    : [];
 
-  const allLatestVersion = new RegExp(`^${latestStable}.+`);
-
-  const newestPreRelease = allVersionsOrdered
-    .reduce((arr, version, index) => {
-      if (
-        index < allVersionsOrdered.indexOf(latestStable) &&
-        !allLatestVersion.test(version)
-      )
-        arr.push({ version });
-      return arr;
-    }, [])
-    .sort(sortBy('version'))
-    .reverse()
-    .map(v => v.version);
+  const newestPreRelease =
+    sortPreReleases &&
+    sortPreReleases
+      .sort(sortBy('version'))
+      .reverse()
+      .map(v => v.version);
 
   const versionsToDisplay = allVersionsOrdered.filter(version => {
     return !/^(\d|\.)+-(alpha|beta|rc|pre).+/.test(version);
