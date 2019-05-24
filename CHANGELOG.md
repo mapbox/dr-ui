@@ -1,3 +1,7 @@
+## Master
+
+- Use [`compare-versions`](https://www.npmjs.com/package/compare-versions) in the version-sort helper function. [#132](https://github.com/mapbox/dr-ui/pull/132)
+
 ## 0.12.2
 
 - Debounce `Search` results. [#129](https://github.com/mapbox/dr-ui/pull/129)
