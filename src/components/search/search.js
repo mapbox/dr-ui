@@ -49,6 +49,7 @@ class Search extends React.Component {
                 collapse={props.collapse || false}
                 isLoading={isLoading}
                 inputId={props.inputId || 'docs-search'}
+                background={props.background}
               />
             </div>
           );
@@ -61,7 +62,12 @@ class Search extends React.Component {
 Search.propTypes = {
   placeholder: PropTypes.string, // option to replace the input placehoder with a different string,
   collapse: PropTypes.bool, // option to collapse input to fit in a crowded space
+  background: PropTypes.oneOf(['light', 'dark']),
   inputId: PropTypes.string // option to override default id for input/label, used for testing
+};
+
+Search.defaultProps = {
+  background: 'light'
 };
 
 export default Search;

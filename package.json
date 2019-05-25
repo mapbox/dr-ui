@@ -58,6 +58,7 @@
     "prettier": "^1.16.1",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
+    "react-aria-modal": "^3.0.0",
     "react-dom": "^16.7.0",
     "react-test-renderer": "^16.8.6",
     "unist-util-visit": "^1.4.0"

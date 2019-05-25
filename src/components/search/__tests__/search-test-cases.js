@@ -17,8 +17,8 @@ testCases.darkNote = {
   description: 'Search with dark background, custom placeholder',
   element: (
     <div className="py24 px24 bg-blue">
-      <div className="wmax360">
-        <Search inputId="search2" placeholder="SEARCH!" />
+      <div className="w-full">
+        <Search inputId="search2" placeholder="SEARCH!" background="dark" />
       </div>
     </div>
   )
@@ -39,13 +39,15 @@ testCases.commonUseCase = {
                 <ProductMenu productName="API Documentation" homePage="/api/" />
               </div>
             </div>
-            <div className="col col--7-mm col--12 flex-parent flex-parent--end-main-mm flex-parent--center-cross align-r mb12 mb0-mm">
-              <div className="inline-block">Navigation Link 1</div>
-              <div className="ml12 inline-block">Navigation Link 2</div>
+            <div className="col col--7-mm col--12 flex-parent flex-parent--main-mm flex-parent--center-cross align-r mb12 mb0-mm">
+              <div className="inline-block">Overview</div>
+              <div className="ml18 inline-block">Examples</div>
+              <div className="ml18 inline-block">Help</div>
+              <div className="ml18 inline-block">API Reference</div>
             </div>
 
             <div className="col col--1-mm col--12 flex-parent flex-parent--end-main-mm flex-parent--center-cross">
-              <div className="wmax360 mb12 mb0-mm">
+              <div className="w-full mb12 mb0-mm mr36">
                 <Search inputId="search3" collapse={true} />
               </div>
             </div>
