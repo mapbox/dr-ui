@@ -4,6 +4,7 @@ import Downshift from 'downshift';
 import SearchModal from './search-modal';
 import SearchResult from './search-result';
 import debounce from 'debounce';
+import Icon from '@mapbox/mr-ui/icon';
 
 class SearchBox extends React.Component {
   constructor(props) {
@@ -156,17 +157,17 @@ class SearchBox extends React.Component {
         ) : (
           <div>
             <button
-              className={`flex-parent flex-parent--center-cross flex-parent--center-main w36 h36 ${
+              className={`flex-parent flex-parent--center-cross flex-parent--center-main h36  px12 round ${
                 this.props.background === 'light'
-                  ? 'color-gray color-gray-dark-on-hover'
-                  : 'color-white color-lighten50-on-hover'
+                  ? 'color-gray color-gray-dark-on-hover bg-gray-faint'
+                  : 'color-white color-lighten50-on-hover bg-lighten10'
               }`}
               onClick={this.openModal}
             >
-              <svg className="icon">
-                <title>Search</title>
-                <use xlinkHref="#icon-search" />
-              </svg>
+              <span className={!this.props.narrow && 'mr6'}>
+                <Icon name="search" width={24} inline={true} />
+              </span>{' '}
+              {!this.props.narrow && 'Search'}
             </button>
             {this.renderModal()}
           </div>
@@ -183,7 +184,8 @@ SearchBox.propTypes = {
   results: PropTypes.array,
   placeholder: PropTypes.string,
   background: PropTypes.oneOf(['light', 'dark']).isRequired,
-  inputId: PropTypes.string
+  inputId: PropTypes.string,
+  narrow: PropTypes.bool
 };
 
 export default SearchBox;

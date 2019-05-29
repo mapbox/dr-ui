@@ -31,25 +31,18 @@ class Search extends React.Component {
           wasSearched
         }) => {
           return (
-            <div
-              className="h36 relative"
-              style={props.collapsed ? { minWidth: '36px' } : undefined}
-            >
+            <div className="h36 relative">
               <SearchBox
                 searchTerm={searchTerm}
                 trackClickThrough={trackClickThrough}
                 setSearchTerm={setSearchTerm}
                 results={results}
                 wasSearched={wasSearched}
-                placeholder={
-                  props.collapse
-                    ? ''
-                    : props.placeholder || 'Search docs.mapbox.com'
-                }
-                collapse={props.collapse || false}
+                placeholder={props.placeholder || 'Search docs.mapbox.com'}
                 isLoading={isLoading}
                 inputId={props.inputId || 'docs-search'}
                 background={props.background}
+                narrow={props.narrow}
               />
             </div>
           );
@@ -61,7 +54,7 @@ class Search extends React.Component {
 
 Search.propTypes = {
   placeholder: PropTypes.string, // option to replace the input placehoder with a different string,
-  collapse: PropTypes.bool, // option to collapse input to fit in a crowded space
+  narrow: PropTypes.bool, // option to collapse input to fit in a crowded space
   background: PropTypes.oneOf(['light', 'dark']),
   inputId: PropTypes.string // option to override default id for input/label, used for testing
 };

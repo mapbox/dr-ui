@@ -16,7 +16,7 @@ testCases.basicNote = {
 testCases.darkNote = {
   description: 'Search with dark background, custom placeholder',
   element: (
-    <div className="py24 px24 bg-blue">
+    <div className="py24 px24 bg-gray-dark">
       <div className="w-full">
         <Search inputId="search2" placeholder="SEARCH!" background="dark" />
       </div>
@@ -25,7 +25,7 @@ testCases.darkNote = {
 };
 
 testCases.commonUseCase = {
-  description: 'Search placement with `collapse` option set',
+  description: 'Search placement with `narrow` option set',
   element: (
     <div>
       <TopbarSticker>
@@ -48,7 +48,7 @@ testCases.commonUseCase = {
 
             <div className="col col--1-mm col--12 flex-parent flex-parent--end-main-mm flex-parent--center-cross">
               <div className="w-full mb12 mb0-mm mr36">
-                <Search inputId="search3" collapse={true} />
+                <Search inputId="search3" narrow={true} />
               </div>
             </div>
           </div>
