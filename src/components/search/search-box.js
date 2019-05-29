@@ -73,7 +73,7 @@ class SearchBox extends React.Component {
                     this.state.useModal ? 'w60 h60' : 'w36 h36'
                   }`}
                 >
-                  <svg className="icon color-gray">
+                  <svg className="icon color-gray w24 h24">
                     <title>Search</title>
                     <use xlinkHref="#icon-search" />
                   </svg>
@@ -152,20 +152,19 @@ class SearchBox extends React.Component {
           <div className="w-full">{this.renderSearchBar()}</div>
         ) : (
           <div>
-            <label className="cursor-pointer" onClick={this.openModal}>
-              <div className="absolute flex-parent flex-parent--center-cross flex-parent--center-main w36 h36">
-                <svg
-                  className={`icon ${
-                    this.props.background === 'light'
-                      ? 'color-gray'
-                      : 'color-white'
-                  }`}
-                >
-                  <title>Search</title>
-                  <use xlinkHref="#icon-search" />
-                </svg>
-              </div>
-            </label>
+            <button
+              className={`flex-parent flex-parent--center-cross flex-parent--center-main w36 h36 ${
+                this.props.background === 'light'
+                  ? 'color-gray color-gray-dark-on-hover'
+                  : 'color-white color-lighten50-on-hover'
+              }`}
+              onClick={this.openModal}
+            >
+              <svg className="icon">
+                <title>Search</title>
+                <use xlinkHref="#icon-search" />
+              </svg>
+            </button>
             {this.renderModal()}
           </div>
         )}
