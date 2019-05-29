@@ -25,13 +25,13 @@ testCases.darkNote = {
 };
 
 testCases.disableModal = {
-  description: 'Search with modal disabled',
+  description: 'Search with `disabledModal` option set',
   component: Search,
   element: <Search inputId="search4" disableModal={true} />
 };
 
 testCases.commonUseCase = {
-  description: 'Search placement with `narrow` option set',
+  description: 'Search with `narrow` option set',
   element: (
     <div>
       <TopbarSticker>
