@@ -36,15 +36,14 @@ export default class Modal extends React.Component {
     let closeButton = null;
     if (props.onExit) {
       closeButton = (
-        <div className="absolute top right">
+        <div className="absolute top right mt12">
           <button
             type="button"
-            style={{ marginTop: '16px' }}
             className="btn btn--white color-gray mr6"
             onClick={props.onExit}
             data-test="modal-close"
           >
-            <Icon name="close" />
+            <Icon name="close" size={24} />
           </button>
         </div>
       );
