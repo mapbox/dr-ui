@@ -73,7 +73,10 @@ class SearchBox extends React.Component {
                     this.state.useModal ? 'w60 h60' : 'w36 h36'
                   }`}
                 >
-                  <svg className="icon color-gray w24 h24">
+                  <svg
+                    className={`icon color-gray ${this.state.useModal &&
+                      'w24 h24'}`}
+                  >
                     <title>Search</title>
                     <use xlinkHref="#icon-search" />
                   </svg>
