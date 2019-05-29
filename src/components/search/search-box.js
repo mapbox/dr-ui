@@ -4,7 +4,6 @@ import Downshift from 'downshift';
 import SearchModal from './search-modal';
 import SearchResult from './search-result';
 import debounce from 'debounce';
-import Icon from '@mapbox/mr-ui/icon';
 
 class SearchBox extends React.Component {
   constructor(props) {
@@ -166,7 +165,10 @@ class SearchBox extends React.Component {
               onClick={this.openModal}
             >
               <span className={!this.props.narrow ? 'mr6' : ''}>
-                <Icon name="search" />
+                <svg className="icon">
+                  {this.props.narrow && <title>Search</title>}
+                  <use xlinkHref="#icon-search" />
+                </svg>
               </span>{' '}
               {!this.props.narrow && 'Search'}
             </button>
