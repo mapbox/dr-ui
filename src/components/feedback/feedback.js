@@ -1,9 +1,5 @@
 import React from 'react';
 
-// TODO:
-// [ ] can we pull user is segment, are they submitting multiple times?
-// [ ] hook up segment
-
 class Feedback extends React.Component {
   constructor(props) {
     super(props);
@@ -12,27 +8,33 @@ class Feedback extends React.Component {
     };
   }
 
+  // track users who click send feedback link
+  contentIntent() {
+    console.log(`Intent to submit feedback`);
+    /*
+    // TODO: 
+    analytics.track('Intent to submit docs feedback');
+    */
+  }
+
+  // track feedback response (BOOL)
   sendToSegment(response) {
     console.log(`Updated in segement: ${response}`);
-    // MOCK FUNCTION
-    // WHAT INFO DO WE WANT TO COLLECT?
-    // IS page path, title already included or do we need to add them with the event?
     /*
-    analytics.track('Sent feedback', {
-      response: response,
-      page: null, // page path
-      title: null// page title
+    // TODO:
+    analytics.track('Sent docs feedback', {
+      helpful: response
     });
     */
   }
 
   yes() {
     this.setState({ response: 'yes' });
-    this.sendToSegment('yes');
+    this.sendToSegment(true);
   }
   no() {
     this.setState({ response: 'no' });
-    this.sendToSegment('no');
+    this.sendToSegment(false);
   }
   render() {
     return (
@@ -52,7 +54,7 @@ class Feedback extends React.Component {
           {this.state.response === 'no' && (
             <div>
               What can we do to improve this?{' '}
-              <a className="link" href="">
+              <a onClick={() => this.contactIntent()} className="link" href="">
                 contact blargb
               </a>
             </div>
