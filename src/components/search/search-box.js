@@ -166,7 +166,7 @@ class SearchBox extends React.Component {
               onClick={this.openModal}
             >
               <span className={!this.props.narrow ? 'mr6' : ''}>
-                <Icon name="search" width={24} inline={true} />
+                <Icon name="search" />
               </span>{' '}
               {!this.props.narrow && 'Search'}
             </button>
