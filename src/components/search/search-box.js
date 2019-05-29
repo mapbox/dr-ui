@@ -86,7 +86,7 @@ class SearchBox extends React.Component {
                 }}
                 placeholder={this.props.placeholder}
                 className={`input bg-white ${
-                  this.state.useModal ? 'px60 h60' : 'px36 h36'
+                  this.state.useModal ? 'px60 h60 txt-l' : 'px36 h36'
                 }`}
                 {...getInputProps({
                   onFocus: () => {
@@ -96,7 +96,7 @@ class SearchBox extends React.Component {
               />
               {isOpen && props.searchTerm && props.wasSearched && (
                 <div className="color-text shadow-darken25 round mt3 bg-white scroll-auto scroll-styled hmax360 absolute z4 w-full align-l">
-                  <div style={{ fontSize: '13px', lineHeight: '19px' }}>
+                  <div>
                     {this.props.results.length ? (
                       <ul>
                         {this.props.results.map((result, index) => (
