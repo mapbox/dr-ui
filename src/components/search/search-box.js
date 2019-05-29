@@ -20,7 +20,7 @@ class SearchBox extends React.Component {
     this.checkWidth = debounce(() => {
       const width = document.body.clientWidth;
       this.setState({
-        useModal: width > 640
+        useModal: width > 640 && !this.props.disableModal
       });
     }, 200);
   }
@@ -75,8 +75,9 @@ class SearchBox extends React.Component {
                   }`}
                 >
                   <svg
-                    className={`icon color-gray ${this.state.useModal &&
-                      'w24 h24'}`}
+                    className={`icon color-gray ${
+                      this.state.useModal ? 'w24 h24' : ''
+                    }`}
                   >
                     <title>Search</title>
                     <use xlinkHref="#icon-search" />
@@ -164,7 +165,7 @@ class SearchBox extends React.Component {
               }`}
               onClick={this.openModal}
             >
-              <span className={!this.props.narrow && 'mr6'}>
+              <span className={!this.props.narrow ? 'mr6' : ''}>
                 <Icon name="search" width={24} inline={true} />
               </span>{' '}
               {!this.props.narrow && 'Search'}
@@ -185,7 +186,8 @@ SearchBox.propTypes = {
   placeholder: PropTypes.string,
   background: PropTypes.oneOf(['light', 'dark']).isRequired,
   inputId: PropTypes.string,
-  narrow: PropTypes.bool
+  narrow: PropTypes.bool,
+  disableModal: PropTypes.bool
 };
 
 export default SearchBox;

@@ -43,6 +43,7 @@ class Search extends React.Component {
                 inputId={props.inputId || 'docs-search'}
                 background={props.background}
                 narrow={props.narrow}
+                disableModal={props.disableModal}
               />
             </div>
           );
@@ -56,7 +57,8 @@ Search.propTypes = {
   placeholder: PropTypes.string, // option to replace the input placehoder with a different string,
   narrow: PropTypes.bool, // option to collapse input to fit in a crowded space
   background: PropTypes.oneOf(['light', 'dark']),
-  inputId: PropTypes.string // option to override default id for input/label, used for testing
+  inputId: PropTypes.string, // option to override default id for input/label, used for testing
+  disableModal: PropTypes.bool // option to completely disable modal if you always want an input
 };
 
 Search.defaultProps = {
