@@ -7,13 +7,13 @@ import ProductMenu from '../../product-menu/product-menu';
 
 const testCases = {};
 
-testCases.basicNote = {
+testCases.basic = {
   component: Search,
   props: {},
   description: 'Search'
 };
 
-testCases.darkNote = {
+testCases.dark = {
   description: 'Search with dark background, custom placeholder',
   element: (
     <div className="py24 px24 bg-gray-dark">
@@ -26,11 +26,10 @@ testCases.darkNote = {
 
 testCases.disableModal = {
   description: 'Search with `disabledModal` option set',
-  component: Search,
   element: <Search inputId="search4" disableModal={true} />
 };
 
-testCases.commonUseCase = {
+testCases.narrow = {
   description: 'Search with `narrow` option set',
   element: (
     <div>
@@ -110,4 +109,4 @@ testCases.commonUseCase = {
   )
 };
 
-export default { testCases };
+export { testCases };

@@ -1,36 +1,39 @@
 import React from 'react';
-import Search from '../search';
-import renderer from 'react-test-renderer';
-import visit from 'unist-util-visit';
+import { shallow } from 'enzyme';
+import { testCases } from './search-test-cases';
 
-test('Search component, no options', () => {
-  const component = renderer.create(<Search />);
-  let tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
-  visit(tree, 'input', node => {
-    expect(node.props.placeholder).toBe('Search docs.mapbox.com');
-  });
-});
-
-test('Search component, placeholder', () => {
-  const component = renderer.create(<Search placeholder="Search me, ok?" />);
-  let tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
-
-  visit(tree, 'input', node => {
-    expect(node.props.placeholder).toBe('Search me, ok?');
-  });
-});
-
-test('Search component, collapse', () => {
-  const component = renderer.create(<Search collapse={true} />);
-  let tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
-  visit(tree, 'input', node => {
-    expect(node.props.placeholder).toBe('');
-    expect(node.props.className).toBe(
-      'input bg-white px30 px0-mm color-transparent-mm'
+describe('search', () => {
+  describe(testCases.basic.description, () => {
+    const wrapper = shallow(
+      React.createElement(testCases.basic.component, testCases.basic.props)
     );
+
+    test('renders as expected', () => {
+      expect(wrapper).toMatchSnapshot();
+    });
   });
-  expect(tree.children[0].props.className).toBe('w36-mm'); // collapse option adds width to container
+
+  describe(testCases.dark.description, () => {
+    const wrapper = shallow(testCases.dark.element);
+
+    test('renders as expected', () => {
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
+  describe(testCases.disableModal.description, () => {
+    const wrapper = shallow(testCases.disableModal.element);
+
+    test('renders as expected', () => {
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
+  describe(testCases.narrow.description, () => {
+    const wrapper = shallow(testCases.narrow.element);
+
+    test('renders as expected', () => {
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
 });
