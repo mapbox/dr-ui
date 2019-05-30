@@ -1,8 +1,7 @@
-## Master
+## 0.14.0
 
 - Refactors the `Search` component to use a modal on larger screens. [#133](https://github.com/mapbox/dr-ui/pull/133).
 - Increase z-index for sticky sidebar in `PageLayout` and `TopbarSticker`. [#134](https://github.com/mapbox/dr-ui/pull/134)
-
 
 ## 0.13.0
 
