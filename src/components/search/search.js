@@ -38,9 +38,9 @@ class Search extends React.Component {
                 setSearchTerm={setSearchTerm}
                 results={results}
                 wasSearched={wasSearched}
-                placeholder={props.placeholder || 'Search docs.mapbox.com'}
+                placeholder={props.placeholder}
                 isLoading={isLoading}
-                inputId={props.inputId || 'docs-search'}
+                inputId={props.inputId}
                 background={props.background}
                 narrow={props.narrow}
                 disableModal={props.disableModal}
@@ -62,7 +62,9 @@ Search.propTypes = {
 };
 
 Search.defaultProps = {
-  background: 'light'
+  background: 'light',
+  placeholder: 'Search docs.mapbox.com',
+  inputId: 'docs-search'
 };
 
 export default Search;
