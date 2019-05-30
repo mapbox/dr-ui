@@ -128,7 +128,7 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
         Object {
           "position": "relative",
           "top": "0px",
-          "zIndex": 3,
+          "zIndex": 4,
         }
       }
     >
@@ -244,7 +244,7 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
               Object {
                 "position": "relative",
                 "top": "0px",
-                "zIndex": 1,
+                "zIndex": 3,
               }
             }
           >
