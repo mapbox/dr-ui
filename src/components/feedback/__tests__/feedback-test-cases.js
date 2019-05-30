@@ -8,13 +8,21 @@ import ProductMenu from '../../product-menu/product-menu';
 
 const testCases = {};
 
-testCases.levelOne = {
+testCases.basic = {
   component: Feedback,
   description: 'Basic'
 };
 
-testCases.commonUseCase = {
-  description: 'Search placement',
+testCases.type = {
+  component: Feedback,
+  description: 'Change type',
+  props: {
+    type: 'section'
+  }
+};
+
+testCases.common = {
+  description: 'Feedback placement',
   element: (
     <div>
       <TopbarSticker>

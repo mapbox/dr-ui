@@ -1,20 +1,24 @@
 import React from 'react';
+import ControlTextarea from '@mapbox/mr-ui/control-textarea';
+import PropTypes from 'prop-types';
 
 class Feedback extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      response: ''
+      response: undefined,
+      feedback: undefined
     };
+    this.handleFeedback = this.handleFeedback.bind(this);
+    this.sendFeedback = this.sendFeedback.bind(this);
   }
 
-  // track users who click send feedback link
-  contentIntent() {
-    console.log(`Intent to submit feedback`);
-    /*
-    // TODO: 
-    analytics.track('Intent to submit docs feedback');
-    */
+  handleFeedback(feedback) {
+    this.setState({ feedback });
+  }
+
+  sendFeedback() {
+    console.log(`Sent feedback to zendesk: ${this.state.feedback}`);
   }
 
   // track feedback response (BOOL)
@@ -42,7 +46,7 @@ class Feedback extends React.Component {
         <div>
           {!this.state.response && (
             <div>
-              <div className="mb6">Was this page helpful?</div>
+              <div className="mb6">Was this {this.props.type} helpful?</div>
               <button onClick={() => this.yes()} className="btn btn--s">
                 Yes
               </button>
@@ -51,21 +55,36 @@ class Feedback extends React.Component {
               </button>
             </div>
           )}
-          {this.state.response === 'no' && (
+          {this.state.response !== undefined && (
             <div>
-              What can we do to improve this?{' '}
-              <a onClick={() => this.contactIntent()} className="link" href="">
-                contact blargb
-              </a>
+              <div className="mb3">
+                {this.state.response === 'no'
+                  ? 'What can we do to improve this?'
+                  : 'Thanks for your feedback!'}
+              </div>
+              <ControlTextarea
+                id="zendesk-feedback"
+                themeControlWrapper="bg-white"
+                onChange={this.handleFeedback}
+                value={this.state.feedback}
+              />
+              <button className="btn btn--s mt6" onClick={this.sendFeedback}>
+                Send feedback
+              </button>
             </div>
-          )}
-          {this.state.response === 'yes' && (
-            <div>Thanks for your feedback!</div>
           )}
         </div>
       </div>
     );
   }
 }
+
+Feedback.propTypes = {
+  type: PropTypes.oneOf(['section', 'page'])
+};
+
+Feedback.defaultProps = {
+  type: 'page'
+};
 
 export default Feedback;
