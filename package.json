@@ -42,8 +42,6 @@
     "cpy-cli": "^2.0.0",
     "del": "^3.0.0",
     "del-cli": "^1.1.0",
-    "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.13.2",
     "eslint": "^5.12.1",
     "eslint-config-prettier": "^2.10.0",
     "eslint-plugin-import": "^2.15.0",
@@ -78,10 +76,6 @@
     "rehype-sectionize-headings": "^1.0.0-rc.1"
   },
   "jest": {
-    "testRegex": ".*\\.test\\.js$",
-    "setupFiles": [
-      "./src/test-utils/jest-setup.js"
-    ],
-    "clearMocks": true
+    "testRegex": ".*\\.test\\.js$"
   }
 }

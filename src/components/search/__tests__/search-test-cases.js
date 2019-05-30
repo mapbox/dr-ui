@@ -26,10 +26,15 @@ testCases.dark = {
 
 testCases.disableModal = {
   description: 'Search with `disabledModal` option set',
-  element: <Search inputId="search4" disableModal={true} />
+  element: <Search inputId="search3" disableModal={true} />
 };
 
 testCases.narrow = {
+  description: 'Search with `narrow` option set',
+  element: <Search inputId="search4" narrow={true} />
+};
+
+testCases.withLayout = {
   description: 'Search with `narrow` option set',
   element: (
     <div>
@@ -53,7 +58,7 @@ testCases.narrow = {
 
             <div className="col col--1-mm col--12 flex-parent flex-parent--end-main-mm flex-parent--center-cross">
               <div className="w-full mb12 mb0-mm mr36">
-                <Search inputId="search3" narrow={true} />
+                <Search inputId="search4" />
               </div>
             </div>
           </div>

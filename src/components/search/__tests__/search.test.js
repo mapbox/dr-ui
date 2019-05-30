@@ -1,39 +1,49 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import renderer from 'react-test-renderer';
 import { testCases } from './search-test-cases';
+// import visit from 'unist-util-visit';
 
 describe('search', () => {
   describe(testCases.basic.description, () => {
-    const wrapper = shallow(
+    const component = renderer.create(
       React.createElement(testCases.basic.component, testCases.basic.props)
     );
+    const tree = component.toJSON();
 
     test('renders as expected', () => {
-      expect(wrapper).toMatchSnapshot();
+      expect(tree).toMatchSnapshot();
     });
   });
 
   describe(testCases.dark.description, () => {
-    const wrapper = shallow(testCases.dark.element);
-
+    const component = renderer.create(testCases.dark.element);
+    const tree = component.toJSON();
     test('renders as expected', () => {
-      expect(wrapper).toMatchSnapshot();
+      expect(tree).toMatchSnapshot();
     });
   });
 
   describe(testCases.disableModal.description, () => {
-    const wrapper = shallow(testCases.disableModal.element);
-
+    const component = renderer.create(testCases.disableModal.element);
+    const tree = component.toJSON();
     test('renders as expected', () => {
-      expect(wrapper).toMatchSnapshot();
+      expect(tree).toMatchSnapshot();
     });
   });
 
   describe(testCases.narrow.description, () => {
-    const wrapper = shallow(testCases.narrow.element);
-
+    const component = renderer.create(testCases.narrow.element);
+    const tree = component.toJSON();
     test('renders as expected', () => {
-      expect(wrapper).toMatchSnapshot();
+      expect(tree).toMatchSnapshot();
+    });
+  });
+
+  describe(testCases.withLayout.description, () => {
+    const component = renderer.create(testCases.withLayout.element);
+    const tree = component.toJSON();
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
     });
   });
 });
