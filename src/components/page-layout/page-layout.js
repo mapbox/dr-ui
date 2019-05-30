@@ -99,7 +99,7 @@ class PageLayout extends React.Component {
           <Sticky
             enabled={state.stickyEnabled}
             bottomBoundary={state.bottomBoundaryValue}
-            innerZ={1}
+            innerZ={3}
             top={state.topValue}
           >
             <div
