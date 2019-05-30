@@ -80,7 +80,9 @@ class Feedback extends React.Component {
 }
 
 Feedback.propTypes = {
-  type: PropTypes.oneOf(['section', 'page'])
+  type: PropTypes.oneOf(['section', 'page']),
+  site: PropTypes.string.isRequired, // the site name
+  section: PropTypes.string // name of section the feedack component falls under
 };
 
 Feedback.defaultProps = {
