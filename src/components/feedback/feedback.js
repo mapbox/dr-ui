@@ -59,7 +59,7 @@ class Feedback extends React.Component {
             <div>
               <div className="mb3">
                 {this.state.response === 'no'
-                  ? 'What can we do to improve this?'
+                  ? `What can we do to improve this ${this.props.type}?`
                   : 'Thanks for your feedback!'}
               </div>
               <ControlTextarea
