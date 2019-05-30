@@ -8,7 +8,7 @@
     "cp-assembly": "del ./src/test-cases-app/dist && cpy node_modules/@mapbox/mbx-assembly/dist/*.* ./src/test-cases-app/dist && cpy src/css/docs-prose.css ./src/test-cases-app/dist && cpy src/css/prism.css ./src/test-cases-app/dist",
     "budo": "budo test/app.js -l -d -P -- -t babelify",
     "prestart": "npm run build-component-index && npm run cp-assembly",
-    "test": "jest tests/*.test.js",
+    "test": "jest",
     "build-component-index": "rtk-index ./src/components ./src/test-cases-app/component-index.js",
     "lint": "eslint .",
     "pretest": "npm run lint",
@@ -59,7 +59,9 @@
     "prettier": "^1.16.1",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
+    "react-aria-modal": "^3.0.0",
     "react-dom": "^16.7.0",
+    "react-test-renderer": "^16.8.6",
     "unist-util-visit": "^1.4.0"
   },
   "dependencies": {
@@ -73,5 +75,8 @@
     "react-html-parser": "^2.0.2",
     "react-stickynode": "^2.1.1",
     "rehype-sectionize-headings": "^1.0.0-rc.1"
+  },
+  "jest": {
+    "testRegex": ".*\\.test\\.js$"
   }
 }

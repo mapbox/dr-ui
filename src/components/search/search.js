@@ -12,61 +12,59 @@ const connector = new SiteSearchAPIConnector({
 
 class Search extends React.Component {
   render() {
+    const { props } = this;
     return (
-      <div>
-        <SearchProvider
-          config={{
-            apiConnector: connector,
-            initialState: {
-              resultsPerPage: 10
-            }
-          }}
-        >
-          {({
-            isLoading,
-            searchTerm,
-            setSearchTerm,
-            results,
-            trackClickThrough,
-            wasSearched
-          }) => {
-            return (
-              <div className="relative h36">
-                <div className="absolute flex-parent flex-parent--center-cross flex-parent--center-main w36 h36">
-                  <label htmlFor="docs-search">
-                    <svg className="icon color-gray">
-                      <use xlinkHref="#icon-search" />
-                    </svg>
-                  </label>
-                </div>
-                {isLoading ? (
-                  <div className="absolute top right flex-parent flex-parent--center-cross flex-parent--center-main w36 h36">
-                    <span className="loading loading--s" />
-                  </div>
-                ) : (
-                  ''
-                )}
-                <SearchBox
-                  searchTerm={searchTerm}
-                  trackClickThrough={trackClickThrough}
-                  setSearchTerm={setSearchTerm}
-                  results={results}
-                  wasSearched={wasSearched}
-                  placeholder={
-                    this.props.placeholder || 'Search docs.mapbox.com'
-                  }
-                />
-              </div>
-            );
-          }}
-        </SearchProvider>
-      </div>
+      <SearchProvider
+        config={{
+          apiConnector: connector,
+          initialState: {
+            resultsPerPage: 10
+          }
+        }}
+      >
+        {({
+          isLoading,
+          searchTerm,
+          setSearchTerm,
+          results,
+          trackClickThrough,
+          wasSearched
+        }) => {
+          return (
+            <div className="h36 relative">
+              <SearchBox
+                searchTerm={searchTerm}
+                trackClickThrough={trackClickThrough}
+                setSearchTerm={setSearchTerm}
+                results={results}
+                wasSearched={wasSearched}
+                placeholder={props.placeholder}
+                isLoading={isLoading}
+                inputId={props.inputId}
+                background={props.background}
+                narrow={props.narrow}
+                disableModal={props.disableModal}
+              />
+            </div>
+          );
+        }}
+      </SearchProvider>
     );
   }
 }
 
 Search.propTypes = {
-  placeholder: PropTypes.string // option to replace the input placehoder with a different string
+  placeholder: PropTypes.string, // option to replace the input placehoder with a different string,
+  narrow: PropTypes.bool, // option to collapse input to fit in a crowded space
+  background: PropTypes.oneOf(['light', 'dark']),
+  inputId: PropTypes.string, // option to override default id for input/label, used for testing
+  disableModal: PropTypes.bool // option to completely disable modal if you always want an input
+};
+
+Search.defaultProps = {
+  background: 'light',
+  placeholder: 'Search docs.mapbox.com',
+  inputId: 'docs-search'
 };
 
 export default Search;

@@ -1,3 +1,7 @@
+## Master
+
+- Refactors the `Search` component to use a modal on larger screens. [#133](https://github.com/mapbox/dr-ui/pull/133).
+
 ## 0.13.0
 
 - Use [`compare-versions`](https://www.npmjs.com/package/compare-versions) in the version-sort helper function. [#132](https://github.com/mapbox/dr-ui/pull/132)
