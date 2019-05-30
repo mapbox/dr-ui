@@ -10,7 +10,7 @@ class SearchBox extends React.Component {
     super(props);
     this.state = {
       modalOpen: false,
-      useModal: true
+      useModal: !this.props.disableModal
     };
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);

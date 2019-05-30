@@ -9,8 +9,8 @@ const testCases = {};
 
 testCases.basic = {
   component: Search,
-  props: {},
-  description: 'Search'
+  description: 'Basic search',
+  props: {}
 };
 
 testCases.dark = {
@@ -25,13 +25,21 @@ testCases.dark = {
 };
 
 testCases.disableModal = {
-  description: 'Search with `disabledModal` option set',
-  element: <Search inputId="search3" disableModal={true} />
+  component: Search,
+  description: 'Search with `disableModal` option set',
+  props: {
+    inputId: 'search3',
+    disableModal: true
+  }
 };
 
 testCases.narrow = {
+  component: Search,
   description: 'Search with `narrow` option set',
-  element: <Search inputId="search4" narrow={true} />
+  props: {
+    inputId: 'search4',
+    narrow: true
+  }
 };
 
 testCases.withLayout = {
