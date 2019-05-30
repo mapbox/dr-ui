@@ -1,0 +1,459 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`search Basic search renders as expected 1`] = `
+<div
+  className="h36 relative"
+>
+  <div>
+    <div>
+      <button
+        className="flex-parent flex-parent--center-cross flex-parent--center-main h36  px12 round color-gray color-gray-dark-on-hover bg-gray-faint"
+        onClick={[Function]}
+      >
+        <span
+          className="mr6"
+        >
+          <svg
+            className="icon"
+          >
+            <use
+              xlinkHref="#icon-search"
+            />
+          </svg>
+        </span>
+         
+        Search
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`search Search with \`disableModal\` option set renders as expected 1`] = `
+<div
+  className="h36 relative"
+>
+  <div>
+    <div
+      className="w-full"
+    >
+      <div
+        aria-expanded={false}
+        aria-haspopup="listbox"
+        aria-labelledby="search3-label"
+        aria-owns={null}
+        role="combobox"
+      >
+        <label
+          className="cursor-pointer"
+          htmlFor="search3-input"
+          id="search3-label"
+        >
+          <div
+            className="absolute flex-parent flex-parent--center-cross flex-parent--center-main w36 h36"
+          >
+            <svg
+              className="icon color-gray "
+            >
+              <title>
+                Search
+              </title>
+              <use
+                xlinkHref="#icon-search"
+              />
+            </svg>
+          </div>
+        </label>
+        <input
+          aria-activedescendant={null}
+          aria-autocomplete="list"
+          aria-controls={null}
+          aria-labelledby="search3-label"
+          autoComplete="off"
+          className="input bg-white px36 h36"
+          id="search3-input"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder="Search docs.mapbox.com"
+          value=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`search Search with \`narrow\` option set renders as expected 1`] = `
+<div
+  className="h36 relative"
+>
+  <div>
+    <div>
+      <button
+        className="flex-parent flex-parent--center-cross flex-parent--center-main h36  px12 round color-gray color-gray-dark-on-hover bg-gray-faint"
+        onClick={[Function]}
+      >
+        <span
+          className=""
+        >
+          <svg
+            className="icon"
+          >
+            <title>
+              Search
+            </title>
+            <use
+              xlinkHref="#icon-search"
+            />
+          </svg>
+        </span>
+         
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`search Search with \`narrow\` option set renders as expected 2`] = `
+<div>
+  <div
+    className="sticky-outer-wrapper"
+    style={Object {}}
+  >
+    <div
+      className="sticky-inner-wrapper"
+      style={
+        Object {
+          "position": "relative",
+          "top": "0px",
+          "zIndex": 3,
+        }
+      }
+    >
+      <div
+        className="border-t border-b border--gray-light bg-white"
+        data-swiftype-index="false"
+      >
+        <div
+          className="limiter"
+        >
+          <div
+            className="grid grid--gut36 mr-neg36 mr0-mm"
+          >
+            <div
+              className="col col--4-mm col--12"
+            >
+              <div
+                className="ml24-mm  flex-parent flex-parent--center-cross"
+                style={
+                  Object {
+                    "height": 52,
+                  }
+                }
+              >
+                <a
+                  className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+                  href="/api/"
+                >
+                  API Documentation
+                  
+                </a>
+              </div>
+            </div>
+            <div
+              className="col col--7-mm col--12 flex-parent flex-parent--main-mm flex-parent--center-cross align-r mb12 mb0-mm"
+            >
+              <div
+                className="inline-block"
+              >
+                Overview
+              </div>
+              <div
+                className="ml18 inline-block"
+              >
+                Examples
+              </div>
+              <div
+                className="ml18 inline-block"
+              >
+                Help
+              </div>
+              <div
+                className="ml18 inline-block"
+              >
+                API Reference
+              </div>
+            </div>
+            <div
+              className="col col--1-mm col--12 flex-parent flex-parent--end-main-mm flex-parent--center-cross"
+            >
+              <div
+                className="w-full mb12 mb0-mm mr36"
+              >
+                <div
+                  className="h36 relative"
+                >
+                  <div>
+                    <div>
+                      <button
+                        className="flex-parent flex-parent--center-cross flex-parent--center-main h36  px12 round color-gray color-gray-dark-on-hover bg-gray-faint"
+                        onClick={[Function]}
+                      >
+                        <span
+                          className="mr6"
+                        >
+                          <svg
+                            className="icon"
+                          >
+                            <use
+                              xlinkHref="#icon-search"
+                            />
+                          </svg>
+                        </span>
+                         
+                        Search
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="limiter"
+  >
+    <div
+      className="grid"
+    >
+      <div
+        className="col col--4-mm  col--12 bg-gray-faint"
+      >
+        <div
+          className="sticky-outer-wrapper"
+          style={Object {}}
+        >
+          <div
+            className="sticky-inner-wrapper"
+            style={
+              Object {
+                "position": "relative",
+                "top": "0px",
+                "zIndex": 1,
+              }
+            }
+          >
+            <div
+              className="pt24-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled block"
+            >
+              <div
+                className="txt-l color-blue txt-fancy mb12 block-mm none"
+              >
+                <div
+                  className="ml36"
+                >
+                  Section title
+                </div>
+              </div>
+              <div>
+                <div
+                  className="block-mm none"
+                >
+                  <div
+                    className="pl24-mm px0 block-mm none pr12 bg-lighten75"
+                  >
+                    <div
+                      className="py3 "
+                    >
+                      <a
+                        className="color-blue-on-hover color-gray text-decoration-none unprose flex-parent flex-parent--space-between-main flex-parent--center-cross"
+                        href="page-one"
+                      >
+                        <div
+                          className="pl12 py12 txt-bold txt-m flex-child color-black"
+                        >
+                          Title one
+                          
+                        </div>
+                      </a>
+                      <div
+                        className="ml24 pt0"
+                      >
+                        <ul
+                          className="txt-m pb12 inline-block-mm none unprose"
+                        >
+                          <li
+                            className="mb6"
+                          >
+                            <a
+                              className="color-blue-on-hover"
+                              href="#heading-one"
+                            >
+                              Heading one
+                            </a>
+                            <ul
+                              className="none"
+                            />
+                          </li>
+                          <li
+                            className="mb6"
+                          >
+                            <a
+                              className="color-blue-on-hover"
+                              href="#heading-two"
+                            >
+                              Heading two
+                            </a>
+                            <ul
+                              className="none"
+                            />
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="pl24-mm px0 block-mm none pr12"
+                  >
+                    <div
+                      className="py3  border-t border--gray-light"
+                    >
+                      <a
+                        className="color-blue-on-hover color-gray text-decoration-none unprose flex-parent flex-parent--space-between-main flex-parent--center-cross"
+                        href="page-two"
+                      >
+                        <div
+                          className="pl12 py12 txt-bold txt-m flex-child"
+                        >
+                          Title two
+                          
+                        </div>
+                        <div
+                          className="flex-child flex-child--no-shrink"
+                        >
+                          <svg
+                            className="events-none icon"
+                            focusable="false"
+                            role="presentation"
+                            style={
+                              Object {
+                                "height": 18,
+                                "width": 18,
+                              }
+                            }
+                          >
+                            <use
+                              xlinkHref="#icon-chevron-down"
+                              xmlnsXlink="http://www.w3.org/1999/xlink"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="none-mm block bg-gray-faint px24 py24"
+                >
+                  <div
+                    className="relative "
+                  >
+                    <div
+                      className="select-container "
+                    >
+                      <select
+                        aria-required={true}
+                        className="select select--stroke round-full bg-white"
+                        data-test="navigate-this-section-select"
+                        disabled={false}
+                        id="navigate-this-section"
+                        onChange={[Function]}
+                        value="page-one"
+                      >
+                        <option
+                          value="page-one"
+                        >
+                          Title one
+                        </option>
+                        <option
+                          value="page-two"
+                        >
+                          Title two
+                        </option>
+                      </select>
+                      <div
+                        className="select-arrow"
+                      />
+                    </div>
+                    <div
+                      role="alert"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="col col--8-mm  col--12 mt24-mm mb60 pr0-mm px36-mm"
+        id="docs-content"
+      >
+        <div
+          className="prose"
+        >
+          <h1>
+            Title
+          </h1>
+          <p>
+            Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`search Search with dark background, custom placeholder renders as expected 1`] = `
+<div
+  className="py24 px24 bg-gray-dark"
+>
+  <div
+    className="w-full"
+  >
+    <div
+      className="h36 relative"
+    >
+      <div>
+        <div>
+          <button
+            className="flex-parent flex-parent--center-cross flex-parent--center-main h36  px12 round color-white color-lighten50-on-hover bg-lighten10"
+            onClick={[Function]}
+          >
+            <span
+              className="mr6"
+            >
+              <svg
+                className="icon"
+              >
+                <use
+                  xlinkHref="#icon-search"
+                />
+              </svg>
+            </span>
+             
+            Search
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
