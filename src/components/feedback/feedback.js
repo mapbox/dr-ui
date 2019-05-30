@@ -27,7 +27,9 @@ class Feedback extends React.Component {
     /*
     // TODO:
     analytics.track('Sent docs feedback', {
-      helpful: response
+      helpful: response,
+      site: this.props.site,
+      section: this.props.section || null
     });
     */
   }
