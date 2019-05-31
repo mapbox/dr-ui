@@ -17,4 +17,4 @@ noRenderCases.custom = {
   }
 };
 
-export default { testCases, noRenderCases };
+export { testCases, noRenderCases };

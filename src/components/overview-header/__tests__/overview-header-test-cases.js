@@ -3,7 +3,7 @@ import OverviewHeader from '../overview-header';
 
 const testCases = {};
 
-testCases.all = {
+testCases.basic = {
   description: 'All props',
   component: OverviewHeader,
   props: {

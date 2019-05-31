@@ -57,7 +57,7 @@ testCases.tooLargeSidebarCol = {
   }
 };
 
-testCases.commonUseCase = {
+testCases.common = {
   description: 'Common use case',
   component: PageLayout,
   props: {
@@ -130,7 +130,7 @@ testCases.commonUseCase = {
   }
 };
 
-testCases.manyItems = {
+testCases.many = {
   description: 'Many first level items',
   component: PageLayout,
   props: {
@@ -235,7 +235,7 @@ testCases.manyItems = {
   }
 };
 
-testCases.codeHighlighting = {
+testCases.code = {
   description: 'Code highlighting test',
   component: PageLayout,
   props: {

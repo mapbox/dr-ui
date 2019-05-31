@@ -1,6 +1,5 @@
 import ToggleableCodeBlock from '../toggleable-code-block';
 import { highlightCodeBlock } from '../../../util/highlight-code-block';
-// import { AppContext } from '../context.js';
 
 const testCases = {};
 const noRenderCases = {};
@@ -10,7 +9,7 @@ import Mapbox
   class ViewController: UIViewController {
   override func viewDidLoad() {
   super.viewDidLoad()
-               
+
   let url = URL(string: "mapbox://styles/mapbox/streets-v10")
   let mapView = MGLMapView(frame: view.bounds, styleURL: url)
   mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -22,12 +21,12 @@ import Mapbox
 const objectiveCCodeSnippet = `
 #import "ViewController.h"
 @import Mapbox;
- 
+
 @implementation ViewController
- 
+
 - (void)viewDidLoad {
   [super viewDidLoad];
-   
+
   NSURL *url = [NSURL URLWithString:@"mapbox://styles/mapbox/streets-v10"];
   MGLMapView *mapView = [[MGLMapView alloc] initWithFrame:self.view.bounds styleURL:url];
   mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -36,14 +35,14 @@ const objectiveCCodeSnippet = `
   animated:NO];
   [self.view addSubview:mapView];
 }
- 
+
 @end
 `;
 
 const javaCodeSnippet = `
 public class MainActivity extends AppCompatActivity {
   private MapView mapView;
-   
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
   super.onCreate(savedInstanceState);
@@ -117,4 +116,4 @@ testCases.java = {
   }
 };
 
-export default { testCases, noRenderCases };
+export { testCases, noRenderCases };

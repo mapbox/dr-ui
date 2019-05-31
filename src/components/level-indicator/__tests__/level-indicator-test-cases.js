@@ -26,4 +26,4 @@ testCases.levelThree = {
   }
 };
 
-export default { testCases };
+export { testCases };

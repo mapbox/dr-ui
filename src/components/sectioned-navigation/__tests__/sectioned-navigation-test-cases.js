@@ -2,7 +2,7 @@ import SectionedNavigation from '../sectioned-navigation';
 
 const testCases = {};
 
-testCases.standard = {
+testCases.basic = {
   description: 'With a title, linked section headings, and counts',
   component: SectionedNavigation,
   props: {

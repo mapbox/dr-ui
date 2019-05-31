@@ -15,4 +15,4 @@ noRenderCases.basic = {
   props: {}
 };
 
-export default { testCases, noRenderCases };
+export { testCases, noRenderCases };
