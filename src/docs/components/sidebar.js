@@ -18,7 +18,7 @@ export default class Sidebar extends React.Component {
     });
     return (
       <div>
-        <h1 className="txt-bold txt-fancy mb3 txt-l">Dr UI</h1>
+        <h1 className="txt-bold txt-fancy mb3 txt-l">👩‍⚕️ Dr. UI</h1>
         <a
           className="flex-parent flex-parent--center-cross txt-s link link--gray"
           href="https://github.com/mapbox/dr-ui"

@@ -118,7 +118,7 @@ function LabeledDefaultValue(props) {
   }
 
   return (
-    <div className="mt12 flex-parent txt-s">
+    <div className="flex-parent">
       <div className="flex-child flex-child--no-shrink color-gray">
         Default value:
       </div>
