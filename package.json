@@ -35,6 +35,7 @@
     "@mapbox/eslint-config-mapbox": "^1.2.1",
     "@mapbox/mbx-assembly": "^0.28.2",
     "@mapbox/react-test-kitchen": "^0.1.3",
+    "@mapbox/web-analytics": "^0.5.1",
     "babel-eslint": "^8.2.6",
     "babelify": "^10.0.0",
     "budo": "^11.6.0",
