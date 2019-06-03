@@ -65,7 +65,7 @@ export default class Modal extends React.Component {
       underlayProps: { 'data-popover-ignore-clicks': true },
       underlayClass: 'bg-darken50 px12 py12 px60-mm py60-mm ',
       underlayStyle: {
-        zIndex: 3
+        zIndex: 4
       }
     };
 
