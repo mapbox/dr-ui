@@ -41,7 +41,11 @@ export default class ComponentExample extends React.Component {
           </div>
         </div>
         {this.renderCode()}
-        <div className="border border--gray-light px24 py24">
+        <div
+          className={`border border--gray-light px24 py24 ${
+            this.state.showCode ? 'round-b border-t--0' : 'round-b round-tl '
+          }`}
+        >
           {React.createElement(props.exampleModule.default)}
         </div>
       </div>
