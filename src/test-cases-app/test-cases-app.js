@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactTestKitchen from '@mapbox/react-test-kitchen';
 import componentIndex from './component-index'; // eslint-disable-line
-import '@mapbox/web-analytics'; // exposes global `initializeMapboxAnalytics()` function
+import '@mapbox/web-analytics'; // eslint-disable-line
 
 class App extends React.Component {
   componentDidMount() {
