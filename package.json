@@ -35,7 +35,6 @@
     "@mapbox/eslint-config-mapbox": "^1.2.1",
     "@mapbox/mbx-assembly": "^0.28.2",
     "@mapbox/react-test-kitchen": "^0.1.3",
-    "@mapbox/web-analytics": "^0.5.1",
     "babel-eslint": "^8.2.6",
     "babelify": "^10.0.0",
     "budo": "^11.6.0",
@@ -76,6 +75,9 @@
     "react-html-parser": "^2.0.2",
     "react-stickynode": "^2.1.1",
     "rehype-sectionize-headings": "^1.0.0-rc.1"
+  },
+  "optionalDependencies": {
+    "@mapbox/web-analytics": "^0.5.1"
   },
   "jest": {
     "testRegex": ".*\\.test\\.js$"
