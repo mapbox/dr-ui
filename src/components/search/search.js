@@ -19,6 +19,11 @@ class Search extends React.Component {
           apiConnector: connector,
           initialState: {
             resultsPerPage: 10
+          },
+          searchQuery: {
+            facets: {
+              site: { type: 'value' }
+            }
           }
         }}
       >
@@ -44,6 +49,7 @@ class Search extends React.Component {
                 background={props.background}
                 narrow={props.narrow}
                 disableModal={props.disableModal}
+                site={props.site}
               />
             </div>
           );
@@ -58,7 +64,8 @@ Search.propTypes = {
   narrow: PropTypes.bool, // option to collapse input to fit in a crowded space
   background: PropTypes.oneOf(['light', 'dark']),
   inputId: PropTypes.string, // option to override default id for input/label, used for testing
-  disableModal: PropTypes.bool // option to completely disable modal if you always want an input
+  disableModal: PropTypes.bool, // option to completely disable modal if you always want an input
+  site: PropTypes.string
 };
 
 Search.defaultProps = {

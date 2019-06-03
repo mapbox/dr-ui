@@ -4,6 +4,8 @@ import Downshift from 'downshift';
 import SearchModal from './search-modal';
 import SearchResult from './search-result';
 import debounce from 'debounce';
+import { getFilterValueDisplay } from '@elastic/react-search-ui-views/lib/view-helpers';
+import { Facet } from '@elastic/react-search-ui';
 
 class SearchBox extends React.Component {
   constructor(props) {
@@ -16,6 +18,7 @@ class SearchBox extends React.Component {
     this.closeModal = this.closeModal.bind(this);
     this.renderModal = this.renderModal.bind(this);
     this.renderSearchBar = this.renderSearchBar.bind(this);
+    this.singleLinksFacet = this.singleLinksFacet.bind(this);
     this.checkWidth = debounce(() => {
       const width = document.body.clientWidth;
       this.setState({
@@ -40,6 +43,55 @@ class SearchBox extends React.Component {
   closeModal() {
     this.setState({ modalOpen: false });
   }
+
+  singleLinksFacet = ({
+    className, // eslint-disable-line
+    label, // eslint-disable-line
+    onRemove,
+    onSelect,
+    options,
+    values = []
+  }) => {
+    const value = values[0];
+    const siteFilter = options.filter(opt => opt.value === this.props.site)[0];
+
+    return siteFilter ? (
+      <div className="py12 border-b border--gray-faint mx6">
+        <div className="toggle-group">
+          <div className="toggle-container">
+            <a
+              key={getFilterValueDisplay(siteFilter.value)}
+              className={`toggle py3 ${
+                value === siteFilter.value ? 'bg-gray color-white' : ''
+              }`}
+              href="/"
+              onClick={e => {
+                e.preventDefault();
+                onSelect(siteFilter.value);
+              }}
+            >
+              {getFilterValueDisplay(siteFilter.value)}
+            </a>
+          </div>
+
+          <div className="toggle-container">
+            <a
+              onClick={e => {
+                e.preventDefault();
+                onRemove(value);
+              }}
+              className={`toggle py3 ${!value ? 'bg-gray color-white' : ''}`}
+              href="/"
+            >
+              All docs
+            </a>
+          </div>
+        </div>
+      </div>
+    ) : (
+      ''
+    );
+  };
 
   renderSearchBar() {
     const { props } = this;
@@ -101,6 +153,11 @@ class SearchBox extends React.Component {
               {isOpen && props.searchTerm && props.wasSearched && (
                 <div className="color-text shadow-darken25 round mt3 bg-white scroll-auto scroll-styled hmax360 absolute z4 w-full align-l">
                   <div>
+                    <Facet
+                      field="site"
+                      label="Site"
+                      view={this.singleLinksFacet}
+                    />
                     {this.props.results.length ? (
                       <ul>
                         {this.props.results.map((result, index) => (
@@ -189,7 +246,8 @@ SearchBox.propTypes = {
   background: PropTypes.oneOf(['light', 'dark']).isRequired,
   inputId: PropTypes.string,
   narrow: PropTypes.bool,
-  disableModal: PropTypes.bool
+  disableModal: PropTypes.bool,
+  site: PropTypes.string
 };
 
 export default SearchBox;

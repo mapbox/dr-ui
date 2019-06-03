@@ -29,6 +29,35 @@ exports[`search Basic search renders as expected 1`] = `
 </div>
 `;
 
+exports[`search Basic search with \`site\` set to show filter toggle renders as expected 1`] = `
+<div
+  className="h36 relative"
+>
+  <div>
+    <div>
+      <button
+        className="flex-parent flex-parent--center-cross flex-parent--center-main h36  px12 round color-gray color-gray-dark-on-hover bg-gray-faint"
+        onClick={[Function]}
+      >
+        <span
+          className="mr6"
+        >
+          <svg
+            className="icon"
+          >
+            <use
+              xlinkHref="#icon-search"
+            />
+          </svg>
+        </span>
+         
+        Search
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`search Search with \`disableModal\` option set renders as expected 1`] = `
 <div
   className="h36 relative"
