@@ -13,7 +13,7 @@ export default class ComponentSection extends React.Component {
 
     return (
       <div className="mt24 mb12">
-        <h3 className="txt-h4 txt-bold mb12">Props</h3>
+        <h3 className="txt-bold mb12">Props</h3>
         <table className="table">
           <thead>
             <tr>
@@ -42,7 +42,7 @@ export default class ComponentSection extends React.Component {
 
     return (
       <div className="mt24 mb12">
-        <h3 className="txt-h4 txt-bold mb12">Examples</h3>
+        <h3 className="txt-bold mb12">Examples</h3>
         {exampleEls}
       </div>
     );
@@ -63,7 +63,7 @@ export default class ComponentSection extends React.Component {
         <div>
           <div className="inline-block">
             <a href={`#${slug}`} className="color-blue-on-hover">
-              <h2 className="txt-fancy txt-h3">{data.name}</h2>
+              <h2 className="txt-fancy txt-l">{data.name}</h2>
             </a>
           </div>
         </div>

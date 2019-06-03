@@ -6,10 +6,10 @@ export default class Sidebar extends React.Component {
   render() {
     const componentLinks = components.map(component => {
       return (
-        <li key={component.name} className="my6">
+        <li key={component.name} className="mb6">
           <a
             href={`#${component.name.toLowerCase()}`}
-            className="txt-bold color-blue-on-hover"
+            className="link link--gray"
           >
             {component.name}
           </a>
@@ -18,9 +18,9 @@ export default class Sidebar extends React.Component {
     });
     return (
       <div>
-        <h1 className="txt-bold txt-h3 txt-mono">Dr UI</h1>
+        <h1 className="txt-bold txt-fancy mb3 txt-l">Dr UI</h1>
         <a
-          className="flex-parent flex-parent--center-cross txt-s link"
+          className="flex-parent flex-parent--center-cross txt-s link link--gray"
           href="https://github.com/mapbox/dr-ui"
           target="_blank"
           rel="noopener noreferrer"
@@ -30,7 +30,7 @@ export default class Sidebar extends React.Component {
           </span>
           <span className="flex-child">View on GitHub</span>
         </a>
-        <div className="pt12 txt-s">
+        <div className="pt12 border-t border--gray-light pt12 mt12">
           <ul>{componentLinks}</ul>
         </div>
       </div>
