@@ -153,11 +153,14 @@ class SearchBox extends React.Component {
               {isOpen && props.searchTerm && props.wasSearched && (
                 <div className="color-text shadow-darken25 round mt3 bg-white scroll-auto scroll-styled hmax360 absolute z4 w-full align-l">
                   <div>
-                    <Facet
-                      field="site"
-                      label="Site"
-                      view={this.singleLinksFacet}
-                    />
+                    {this.props.site && (
+                      <Facet
+                        show={20}
+                        field="site"
+                        label="Site"
+                        view={this.singleLinksFacet}
+                      />
+                    )}
                     {this.props.results.length ? (
                       <ul>
                         {this.props.results.map((result, index) => (

@@ -65,7 +65,7 @@ Search.propTypes = {
   background: PropTypes.oneOf(['light', 'dark']),
   inputId: PropTypes.string, // option to override default id for input/label, used for testing
   disableModal: PropTypes.bool, // option to completely disable modal if you always want an input
-  site: PropTypes.string
+  site: PropTypes.string // option to add current site or all docs filter toggle
 };
 
 Search.defaultProps = {

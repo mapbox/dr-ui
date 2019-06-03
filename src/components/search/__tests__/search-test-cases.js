@@ -17,7 +17,7 @@ testCases.site = {
   component: Search,
   description: 'Basic search with `site` set to show filter toggle',
   props: {
-    site: 'Help'
+    site: 'API'
   }
 };
 
