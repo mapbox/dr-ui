@@ -48,12 +48,25 @@ class SearchBox extends React.Component {
         id={this.props.inputId}
         inputValue={this.props.searchTerm}
         onChange={selection => {
+          // track click
+          if (window && window.analytics) {
+            analytics.track('Searched docs', {
+              query: this.props.searchTerm,
+              clicked: selection.url.raw
+            });
+          }
           this.props.trackClickThrough(selection.id.raw); // track selection click through
           window.open(selection.url.raw, '_self'); // open selection in current window
         }}
         onInputValueChange={newValue => {
           if (props.searchTerm === newValue) return;
           props.setSearchTerm(newValue, { debounce: 300 });
+          // track query
+          if (window && window.analytics) {
+            analytics.track('Searched docs', {
+              query: newValue
+            });
+          }
         }}
         itemToString={() => props.searchTerm}
       >
