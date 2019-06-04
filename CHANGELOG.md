@@ -1,3 +1,7 @@
+## 0.15.1
+
+* Fix toggle in `Search` to be a button and track toggle event.
+
 ## 0.15.0
 
 * Fix z-index issue with `Search` modal and `TopbarSticker`. [#139](https://github.com/mapbox/dr-ui/pull/139)

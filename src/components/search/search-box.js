@@ -59,32 +59,38 @@ class SearchBox extends React.Component {
       <div className="py12 border-b border--gray-faint mx6">
         <div className="toggle-group">
           <div className="toggle-container">
-            <a
+            <button
               key={getFilterValueDisplay(siteFilter.value)}
               className={`toggle py3 ${
                 value === siteFilter.value ? 'bg-gray color-white' : ''
               }`}
-              href="/"
               onClick={e => {
                 e.preventDefault();
+                // track click
+                if (window && window.analytics) {
+                  analytics.track('Searched docs', {
+                    query: this.props.searchTerm,
+                    toggle: true,
+                    site: this.props.site
+                  });
+                }
                 onSelect(siteFilter.value);
               }}
             >
               {getFilterValueDisplay(siteFilter.value)}
-            </a>
+            </button>
           </div>
 
           <div className="toggle-container">
-            <a
+            <button
               onClick={e => {
                 e.preventDefault();
                 onRemove(value);
               }}
               className={`toggle py3 ${!value ? 'bg-gray color-white' : ''}`}
-              href="/"
             >
               All docs
-            </a>
+            </button>
           </div>
         </div>
       </div>
