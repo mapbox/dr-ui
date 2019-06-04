@@ -69,3 +69,9 @@ To deploy the site:
 ```
 npm run deploy-docs
 ```
+
+To add or edit the catalog site:
+
+1. Navigate to the component folder in: `src/component`
+2. Find the component's `examples/` folder.
+3. Edit the existing files or create a new file. Run `npm run start-docs` to see the updated example locally.
