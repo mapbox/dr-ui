@@ -77,6 +77,9 @@
     "react-stickynode": "^2.1.1",
     "rehype-sectionize-headings": "^1.0.0-rc.1"
   },
+  "optionalDependencies": {
+    "@mapbox/web-analytics": "^0.5.1"
+  },
   "jest": {
     "testRegex": ".*\\.test\\.js$"
   }
