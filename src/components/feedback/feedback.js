@@ -6,71 +6,90 @@ class Feedback extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      response: undefined,
+      helpful: undefined,
       feedback: undefined
     };
-    this.handleFeedback = this.handleFeedback.bind(this);
-    this.sendFeedback = this.sendFeedback.bind(this);
+    this.handleText = this.handleText.bind(this);
+    this.handleYesNo = this.handleYesNo.bind(this);
+    this.sendToZendesk = this.sendToZendesk.bind(this);
+    this.sendToSegment = this.sendToSegment.bind(this);
   }
 
-  handleFeedback(feedback) {
+  handleText(feedback) {
     this.setState({ feedback });
   }
 
-  sendFeedback() {
-    console.log(`Sent feedback to zendesk: ${this.state.feedback}`);
+  handleYesNo(helpful) {
+    this.setState({ helpful }, () => {
+      // track helpful
+      this.sendToSegment();
+    });
   }
 
-  // track feedback response (BOOL)
-  sendToSegment(response) {
-    console.log(`Updated in segement: ${response}`);
+  sendToZendesk() {
+    // TODO: Send feedback to zendesk
+    // track response
+    this.sendToSegment();
+  }
+
+  sendToSegment() {
+    // TODO: finish analytics
+    console.log(this.state);
     /*
-    // TODO:
-    analytics.track('Sent docs feedback', {
-      helpful: response,
-      site: this.props.site,
-      section: this.props.section || null
-    });
+      if (window && window.analytics) {
+        analytics.track('Sent docs feedback', {
+          zendesk: this.state.feedback,
+          helpful: this.state.helpful,
+          site: this.props.site,
+          section: this.props.section || null
+        });
+    }
     */
   }
 
-  yes() {
-    this.setState({ response: 'yes' });
-    this.sendToSegment(true);
-  }
-  no() {
-    this.setState({ response: 'no' });
-    this.sendToSegment(false);
-  }
   render() {
     return (
       <div className="bg-gray-faint py12 px18 round color-gray">
         <div>
-          {!this.state.response && (
+          {this.state.helpful === undefined && (
             <div>
               <div className="mb6">Was this {this.props.type} helpful?</div>
-              <button onClick={() => this.yes()} className="btn btn--s">
+              <button
+                onClick={() => this.handleYesNo(true)}
+                className="btn btn--s"
+              >
                 Yes
               </button>
-              <button onClick={() => this.no()} className="btn btn--s ml6">
+              <button
+                onClick={() => this.handleYesNo(false)}
+                className="btn btn--s ml6"
+              >
                 No
               </button>
             </div>
           )}
-          {this.state.response !== undefined && (
+          {this.state.helpful !== undefined && (
             <div>
               <div className="mb3">
-                {this.state.response === 'no'
-                  ? `What can we do to improve this ${this.props.type}?`
-                  : 'Thanks for your feedback!'}
+                {this.state.helpful === false
+                  ? `What can we do to improve this ${this.props.type}?` // Response to "No" click
+                  : 'Thanks for your feedback!' // Reponse to "Yes" click
+                }
               </div>
               <ControlTextarea
                 id="zendesk-feedback"
                 themeControlWrapper="bg-white"
-                onChange={this.handleFeedback}
+                onChange={this.handleText}
                 value={this.state.feedback}
               />
-              <button className="btn btn--s mt6" onClick={this.sendFeedback}>
+              <button
+                disabled={
+                  this.state.feedback === undefined ||
+                  this.state.feedback.length < 3
+                }
+                className="btn btn--s mt6"
+                onClick={this.sendToZendesk}
+              >
                 Send feedback
               </button>
             </div>

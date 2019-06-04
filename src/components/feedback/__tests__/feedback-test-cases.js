@@ -10,14 +10,19 @@ const testCases = {};
 
 testCases.basic = {
   component: Feedback,
-  description: 'Basic'
+  description: 'Basic',
+  props: {
+    type: 'section',
+    site: 'Help'
+  }
 };
 
 testCases.type = {
   component: Feedback,
   description: 'Change type',
   props: {
-    type: 'section'
+    type: 'section',
+    site: 'Help'
   }
 };
 
@@ -92,7 +97,7 @@ testCases.common = {
               ligula, eget lacinia odio sem nec elit.
             </p>
 
-            <Feedback />
+            <Feedback site="Help" />
           </div>
         </PageLayout>
       </div>
