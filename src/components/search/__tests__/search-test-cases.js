@@ -13,6 +13,14 @@ testCases.basic = {
   props: {}
 };
 
+testCases.site = {
+  component: Search,
+  description: 'Basic search with `site` set to show filter toggle',
+  props: {
+    site: 'API'
+  }
+};
+
 testCases.dark = {
   description: 'Search with dark background, custom placeholder',
   element: (
