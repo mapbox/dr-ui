@@ -62,7 +62,7 @@ export default class ComponentSection extends React.Component {
       <section id={slug} className="pt24">
         <div>
           <div className="inline-block">
-            <a href={`#${slug}`} className="color-blue-on-hover">
+            <a href={`#${slug}`} className="link link--gray">
               <h2 className="txt-fancy txt-l">{data.name}</h2>
             </a>
           </div>
@@ -97,7 +97,11 @@ function PropRow(props) {
       REQUIRED
     </span>
   );
-
+  const options = props.options
+    ? props.options.length
+      ? props.options.map(o => o.value || o.name)
+      : props.options.value
+    : undefined;
   return (
     <tr>
       <td className="txt-mono txt-bold txt-nowrap">
@@ -106,7 +110,13 @@ function PropRow(props) {
       <td className="txt-mono mx12">{props.type.name}</td>
       <td>
         <div className="prose">{props.description}</div>
-        <LabeledDefaultValue value={props.defaultValue} />
+        <LabeledDefaultValue title="Default" value={props.defaultValue} />
+        {options && (
+          <LabeledDefaultValue
+            title="Options"
+            value={JSON.stringify(options, null, 2)}
+          />
+        )}
       </td>
     </tr>
   );
@@ -118,9 +128,9 @@ function LabeledDefaultValue(props) {
   }
 
   return (
-    <div className="flex-parent">
+    <div className="flex-parent mb3">
       <div className="flex-child flex-child--no-shrink color-gray">
-        Default value:
+        {props.title}:
       </div>
       <div className="ml6 flex-child flex-child--grow">
         <DefaultValueDisplay value={props.value} />

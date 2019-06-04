@@ -72,7 +72,8 @@ function processProps(props) {
       required: ${propData.required},
       defaultValue: ${propData.defaultValue &&
         JSON.stringify(propData.defaultValue.value)},
-      description: ${renderedDescription}
+      description: ${renderedDescription},
+      options: ${JSON.stringify(propData.type.value)}
     },`;
   });
   return `{${objectBody}}`;

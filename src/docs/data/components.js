@@ -29,7 +29,8 @@ module.exports = [
         required: false,
         defaultValue:
           "'This feature is in public beta and is subject to potential changes.'",
-        description: <div />
+        description: <div />,
+        options: undefined
       }
     },
     examples: [
@@ -55,7 +56,8 @@ module.exports = [
         type: { name: "string" },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       }
     },
     examples: [
@@ -81,7 +83,8 @@ module.exports = [
         type: { name: "string" },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       }
     },
     examples: [
@@ -107,37 +110,43 @@ module.exports = [
         type: { name: "string" },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       path: {
         type: { name: "string" },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       description: {
         type: { name: "string" },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       thumbnail: {
         type: { name: "node" },
         required: false,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       level: {
         type: { name: "node" },
         required: false,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       language: {
         type: { name: "string" },
         required: false,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       }
     },
     examples: [
@@ -182,25 +191,29 @@ module.exports = [
         type: { name: "string" },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       path: {
         type: { name: "string" },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       fullWidthCards: {
         type: { name: "bool" },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       cards: {
         type: { name: "arrayOf", value: { name: "node" } },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: { name: "node" }
       }
     },
     examples: [
@@ -247,13 +260,15 @@ module.exports = [
         type: { name: "string" },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       onChange: {
         type: { name: "func" },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       options: {
         type: {
@@ -278,7 +293,24 @@ module.exports = [
         },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: {
+          name: "shape",
+          value: {
+            language: {
+              name: "enum",
+              value: [
+                { value: "'swift'", computed: false },
+                { value: "'objective-c'", computed: false },
+                { value: "'java'", computed: false },
+                { value: "'kotlin'", computed: false },
+                { value: "'javascript'", computed: false }
+              ],
+              required: true
+            },
+            preferredLanguage: { name: "bool", required: true }
+          }
+        }
       }
     },
     examples: [
@@ -319,7 +351,8 @@ module.exports = [
         type: { name: "string" },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       }
     },
     examples: [
@@ -351,13 +384,18 @@ module.exports = [
         },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: {
+          title: { name: "string", required: true },
+          description: { name: "string", required: true }
+        }
       },
       cardContainers: {
         type: { name: "arrayOf", value: { name: "node" } },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: { name: "node" }
       }
     },
     examples: [
@@ -500,7 +538,12 @@ module.exports = [
         },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: [
+          { value: "1", computed: false },
+          { value: "2", computed: false },
+          { value: "3", computed: false }
+        ]
       }
     },
     examples: [
@@ -550,7 +593,8 @@ module.exports = [
         type: { name: "string" },
         required: false,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       contents: {
         type: {
@@ -594,13 +638,50 @@ module.exports = [
         },
         required: false,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: {
+          firstLevelItems: {
+            name: "arrayOf",
+            value: {
+              name: "shape",
+              value: {
+                title: { name: "string", required: true },
+                tag: { name: "node", required: false },
+                path: { name: "string", required: true }
+              }
+            },
+            required: true
+          },
+          secondLevelItems: {
+            name: "arrayOf",
+            value: {
+              name: "shape",
+              value: {
+                title: { name: "string", required: true },
+                path: { name: "string", required: true },
+                thirdLevelItems: {
+                  name: "arrayOf",
+                  value: {
+                    name: "shape",
+                    value: {
+                      title: { name: "string", required: true },
+                      path: { name: "string", required: true }
+                    }
+                  },
+                  required: false
+                }
+              }
+            },
+            required: false
+          }
+        }
       },
       onDropdownChange: {
         type: { name: "func" },
         required: false,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       }
     },
     examples: [
@@ -653,7 +734,8 @@ module.exports = [
         type: { name: "string" },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       dropdownOptions: {
         type: {
@@ -668,13 +750,21 @@ module.exports = [
         },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: {
+          name: "shape",
+          value: {
+            title: { name: "string", required: true },
+            path: { name: "string", required: true }
+          }
+        }
       },
       onChange: {
         type: { name: "func" },
         required: false,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       }
     },
     examples: [
@@ -715,25 +805,29 @@ module.exports = [
         type: { name: "string" },
         required: false,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       children: {
         type: { name: "node" },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       imageComponent: {
         type: { name: "node" },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       theme: {
         type: { name: "string" },
         required: false,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       }
     },
     examples: [
@@ -764,55 +858,64 @@ module.exports = [
         type: { name: "arrayOf", value: { name: "string" } },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: { name: "string" }
       },
       title: {
         type: { name: "string" },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       beta: {
         type: { name: "bool" },
         required: false,
         defaultValue: "false",
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       image: {
         type: { name: "node" },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       version: {
         type: { name: "string" },
         required: false,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       changelogLink: {
         type: { name: "string" },
         required: false,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       installLink: {
         type: { name: "string" },
         required: false,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       ghLink: {
         type: { name: "string" },
         required: false,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       contactLink: {
         type: { name: "string" },
         required: false,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       }
     },
     examples: [
@@ -857,55 +960,64 @@ module.exports = [
         type: { name: "node" },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       sidebarTitle: {
         type: { name: "union", value: [{ name: "node" }, { name: "string" }] },
         required: false,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: [{ name: "node" }, { name: "string" }]
       },
       sidebarTheme: {
         type: { name: "string" },
         required: false,
         defaultValue: "'bg-gray-faint'",
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       sidebarContentStickyTop: {
         type: { name: "number" },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       sidebarContentStickyTopNarrow: {
         type: { name: "number" },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       sidebarStackedOnNarrowScreens: {
         type: { name: "bool" },
         required: false,
         defaultValue: "false",
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       sideBarColSize: {
         type: { name: "number" },
         required: false,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       interactiveClass: {
         type: { name: "string" },
         required: false,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       children: {
         type: { name: "node" },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       }
     },
     examples: []
@@ -918,25 +1030,29 @@ module.exports = [
         type: { name: "union", value: [{ name: "string" }, { name: "node" }] },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: [{ name: "string" }, { name: "node" }]
       },
       beta: {
         type: { name: "bool" },
         required: false,
         defaultValue: "false",
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       lightText: {
         type: { name: "bool" },
         required: false,
         defaultValue: "false",
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       homePage: {
         type: { name: "string" },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       }
     },
     examples: [
@@ -947,14 +1063,7 @@ module.exports = [
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ProductMenu</span></span>
-
-        <span class="token attr-name">productName</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>Mapbox product names<span class="token punctuation">'</span></span>
-        <span class="token attr-name">homePage</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>/api-documentation/<span class="token punctuation">'</span></span>
-
-      <span class="token punctuation">/></span></span>
-    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ProductMenu</span></span> <span class="token attr-name">productName</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Egg SDK<span class="token punctuation">"</span></span> <span class="token attr-name">homePage</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/egg-sdk/<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
         description: <p>Basic.</p>
@@ -967,13 +1076,7 @@ module.exports = [
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ProductMenu</span></span>
-
-        <span class="token attr-name">productName</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>Mapbox product names<span class="token punctuation">'</span></span>
-        <span class="token attr-name">homePage</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>/api-documentation/<span class="token punctuation">'</span></span>
-        <span class="token attr-name">beta</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token boolean">true</span><span class="token punctuation">}</span></span>
-
-      <span class="token punctuation">/></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ProductMenu</span></span> <span class="token attr-name">productName</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Egg SDK<span class="token punctuation">"</span></span> <span class="token attr-name">homePage</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/egg-sdk/<span class="token punctuation">"</span></span> <span class="token attr-name">beta</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token boolean">true</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span>
     <span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
@@ -989,13 +1092,15 @@ module.exports = [
         type: { name: "string" },
         required: false,
         defaultValue: "'Search docs.mapbox.com'",
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       narrow: {
         type: { name: "bool" },
         required: false,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       background: {
         type: {
@@ -1007,19 +1112,25 @@ module.exports = [
         },
         required: false,
         defaultValue: "'light'",
-        description: <div />
+        description: <div />,
+        options: [
+          { value: "'light'", computed: false },
+          { value: "'dark'", computed: false }
+        ]
       },
       inputId: {
         type: { name: "string" },
         required: false,
         defaultValue: "'docs-search'",
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       disableModal: {
         type: { name: "bool" },
         required: false,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       }
     },
     examples: [
@@ -1030,11 +1141,7 @@ module.exports = [
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Search</span></span>
-
-      <span class="token punctuation">/></span></span>
-    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Search</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
         description: <p>Basic.</p>
@@ -1049,31 +1156,36 @@ module.exports = [
         type: { name: "arrayOf", value: { name: "object" } },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: { name: "object" }
       },
       title: {
         type: { name: "string" },
         required: false,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       includeCount: {
         type: { name: "bool" },
         required: false,
         defaultValue: "true",
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       includeFilterBar: {
         type: { name: "bool" },
         required: false,
         defaultValue: "false",
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       hideSubItems: {
         type: { name: "bool" },
         required: false,
         defaultValue: "false",
-        description: <div />
+        description: <div />,
+        options: undefined
       }
     },
     examples: [
@@ -1085,10 +1197,9 @@ module.exports = [
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      <span class="token operator">&lt;</span>SectionedNavigation
-
-        title<span class="token operator">=</span> <span class="token string">'Examples'</span>
-        sections<span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">[</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SectionedNavigation</span></span>
+        <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Examples<span class="token punctuation">"</span></span>
+        <span class="token attr-name">sections</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span>
           <span class="token punctuation">{</span>
             title<span class="token punctuation">:</span> <span class="token string">'Getting started'</span><span class="token punctuation">,</span>
             url<span class="token punctuation">:</span> <span class="token string">'#getting-started'</span><span class="token punctuation">,</span>
@@ -1132,9 +1243,8 @@ module.exports = [
               <span class="token punctuation">}</span>
             <span class="token punctuation">]</span>
           <span class="token punctuation">}</span>
-        <span class="token punctuation">]</span><span class="token punctuation">}</span>
-
-      <span class="token operator">/</span><span class="token operator">></span>
+        <span class="token punctuation">]</span><span class="token punctuation">}</span></span>
+      <span class="token punctuation">/></span></span>
     <span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
@@ -1171,7 +1281,26 @@ module.exports = [
         },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: {
+          name: "shape",
+          value: {
+            language: {
+              name: "enum",
+              value: [
+                { value: "'swift'", computed: false },
+                { value: "'objective-c'", computed: false },
+                { value: "'java'", computed: false },
+                { value: "'kotlin'", computed: false },
+                { value: "'javascript'", computed: false }
+              ],
+              required: false
+            },
+            rawCode: { name: "string", required: true },
+            highlightedCode: { name: "string", required: true },
+            preferredLanguage: { name: "bool", required: true }
+          }
+        }
       }
     },
     examples: [
@@ -1183,7 +1312,6 @@ module.exports = [
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-
     <span class="token keyword">const</span> swiftCodeSnippet <span class="token operator">=</span> <span class="token template-string"><span class="token string">&#96;
     import Mapbox
       class ViewController: UIViewController {
@@ -1221,7 +1349,6 @@ module.exports = [
 
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ToggleableCodeBlock</span></span>
-
         <span class="token attr-name">codeSnippet</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span>
           <span class="token punctuation">{</span>
             language<span class="token punctuation">:</span> <span class="token string">'swift'</span><span class="token punctuation">,</span>
@@ -1236,7 +1363,6 @@ module.exports = [
             preferredLanguage<span class="token punctuation">:</span> <span class="token boolean">false</span>
           <span class="token punctuation">}</span>
         <span class="token punctuation">]</span><span class="token punctuation">}</span></span>
-
       <span class="token punctuation">/></span></span>
     <span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
@@ -1253,13 +1379,15 @@ module.exports = [
         type: { name: "number" },
         required: false,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       children: {
         type: { name: "node" },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       }
     },
     examples: [
@@ -1270,7 +1398,6 @@ module.exports = [
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> background<span class="token punctuation">:</span> <span class="token string">'pink'</span><span class="token punctuation">,</span> height<span class="token punctuation">:</span> <span class="token number">3000</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">
         </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>px24 py12<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text">Above the bar.</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
@@ -1298,7 +1425,8 @@ module.exports = [
         type: { name: "string" },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       }
     },
     examples: [
@@ -1324,13 +1452,15 @@ module.exports = [
         type: { name: "string" },
         required: true,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       },
       color: {
         type: { name: "string" },
         required: false,
         defaultValue: undefined,
-        description: <div />
+        description: <div />,
+        options: undefined
       }
     },
     examples: [
