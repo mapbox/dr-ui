@@ -55,3 +55,17 @@ The `build` command creates a `pkg/` directory that contains the code we want to
 1. Push your commit.
 1. Build the `pkg/` directory: `npm run build`.
 1. `cd` into the `pkg/` directory and publish the new version on npm.
+
+## Catalog site
+
+To run the catalog site at https://mapbox.github.io/dr-ui/:
+
+```
+npm run start-docs
+```
+
+To deploy the site:
+
+```
+npm run deploy-docs
+```
