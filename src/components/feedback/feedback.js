@@ -85,7 +85,7 @@ class Feedback extends React.Component {
               <button
                 disabled={
                   this.state.feedback === undefined ||
-                  this.state.feedback.length < 3
+                  this.state.feedback.length < 3 // disable button unless more than 3 characters are typed
                 }
                 className="btn btn--s mt6"
                 onClick={this.sendToZendesk}
@@ -101,8 +101,8 @@ class Feedback extends React.Component {
 }
 
 Feedback.propTypes = {
-  type: PropTypes.oneOf(['section', 'page']),
-  site: PropTypes.string.isRequired, // the site name
+  type: PropTypes.oneOf(['section', 'page']), // type of content the user is a evaluating
+  site: PropTypes.string.isRequired, // the site name, same value as the `site` value passed to ReactPageShell
   section: PropTypes.string // name of section the feedack component falls under
 };
 
