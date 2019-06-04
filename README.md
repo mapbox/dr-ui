@@ -64,7 +64,7 @@ To run the catalog site at https://mapbox.github.io/dr-ui/:
 npm run start-docs
 ```
 
-To deploy the site:
+To deploy the site. Run this if you've made changes to `src/docs/*` or any `src/components/*/examples/*` file.
 
 ```
 npm run deploy-docs
