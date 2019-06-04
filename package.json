@@ -56,6 +56,7 @@
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-react": "^7.12.4",
     "execa": "^0.10.0",
+    "gh-pages": "^2.0.1",
     "hard-rejection": "^1.0.0",
     "highlight.js": "^9.13.1",
     "husky": "^0.14.3",
