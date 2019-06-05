@@ -12,7 +12,6 @@ testCases.basic = {
   component: Feedback,
   description: 'Basic',
   props: {
-    type: 'section',
     site: 'Help'
   }
 };
@@ -105,4 +104,4 @@ testCases.common = {
   )
 };
 
-export default { testCases };
+export { testCases };
