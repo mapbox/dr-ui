@@ -1,0 +1,965 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
+<div>
+  <div
+    className="relative round z0 scroll-styled scroll-auto"
+    style={
+      Object {
+        "maxHeight": 480,
+      }
+    }
+  >
+    <pre>
+      <code
+        className="px0 hljs"
+      >
+        <div
+          className="relative z2"
+          data-chunk-code="chunk-0"
+        >
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 12,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "public <span class=\\"hljs-keyword\\">class</span> MainActivity extends AppCompatActivity {",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 26.45,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<span class=\\"hljs-keyword\\">private</span> MapView mapView;",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 12,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": " ",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 26.45,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "@Override",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 26.45,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "protected void on<span class=\\"hljs-constructor\\">Create(Bundle <span class=\\"hljs-params\\">savedInstanceState</span>)</span> {",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 26.45,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "super.on<span class=\\"hljs-constructor\\">Create(<span class=\\"hljs-params\\">savedInstanceState</span>)</span>;",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 26.45,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<span class=\\"hljs-module-access\\"><span class=\\"hljs-module\\"><span class=\\"hljs-identifier\\">Mapbox</span>.</span></span>get<span class=\\"hljs-constructor\\">Instance(<span class=\\"hljs-params\\">this</span>, <span class=\\"hljs-string\\">\\"pk.eyJ1IjoiZXhhbXBsZXMiLCJhIjoiY2lqbmp1MzNhMDBud3VvbHhqbjY1cnV2cCJ9.uGJJU2wgtXzcBNc62vY4_A\\"</span>)</span>;",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 26.45,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "set<span class=\\"hljs-constructor\\">ContentView(R.<span class=\\"hljs-params\\">layout</span>.<span class=\\"hljs-params\\">activity_main</span>)</span>;",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 26.45,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "mapView = (MapView) find<span class=\\"hljs-constructor\\">ViewById(R.<span class=\\"hljs-params\\">id</span>.<span class=\\"hljs-params\\">mapView</span>)</span>;",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 26.45,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "mapView.on<span class=\\"hljs-constructor\\">Create(<span class=\\"hljs-params\\">savedInstanceState</span>)</span>;",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 12,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "}",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+        </div>
+      </code>
+    </pre>
+    <div
+      className="absolute z2 top right mr6 mt6 color-white"
+    />
+  </div>
+</div>
+`;
+
+exports[`toggleable-code-block Objective C highlighting renders as expected 1`] = `
+<div>
+  <div
+    className="relative round z0 scroll-styled scroll-auto"
+    style={
+      Object {
+        "maxHeight": 480,
+      }
+    }
+  >
+    <pre>
+      <code
+        className="px0 hljs"
+      >
+        <div
+          className="relative z2"
+          data-chunk-code="chunk-0"
+        >
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 12,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<span class=\\"hljs-meta\\">#import <span class=\\"hljs-meta-string\\">\\"ViewController.h\\"</span></span>",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 12,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<span class=\\"hljs-keyword\\">@import</span> Mapbox;",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 12,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": " ",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 12,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<span class=\\"hljs-class\\"><span class=\\"hljs-keyword\\">@implementation</span> <span class=\\"hljs-title\\">ViewController</span></span>",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 12,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": " ",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 12,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "- (<span class=\\"hljs-keyword\\">void</span>)viewDidLoad {",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 26.45,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "[<span class=\\"hljs-keyword\\">super</span> viewDidLoad];",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 12,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": " ",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 26.45,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<span class=\\"hljs-built_in\\">NSURL</span> *url = [<span class=\\"hljs-built_in\\">NSURL</span> URLWithString:<span class=\\"hljs-string\\">@\\"mapbox://styles/mapbox/streets-v10\\"</span>];",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 26.45,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "MGLMapView *mapView = [[MGLMapView alloc] initWithFrame:<span class=\\"hljs-keyword\\">self</span>.view.bounds styleURL:url];",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 26.45,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "mapView.autoresizingMask = <span class=\\"hljs-built_in\\">UIViewAutoresizingFlexibleWidth</span> | <span class=\\"hljs-built_in\\">UIViewAutoresizingFlexibleHeight</span>;",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 26.45,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "[mapView setCenterCoordinate:<span class=\\"hljs-built_in\\">CLLocationCoordinate2DMake</span>(<span class=\\"hljs-number\\">59.31</span>, <span class=\\"hljs-number\\">18.06</span>)",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 26.45,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "zoomLevel:<span class=\\"hljs-number\\">9</span>",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 26.45,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "animated:<span class=\\"hljs-literal\\">NO</span>];",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 26.45,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "[<span class=\\"hljs-keyword\\">self</span>.view addSubview:mapView];",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 12,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "}",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 12,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": " ",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 12,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<span class=\\"hljs-keyword\\">@end</span>",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+        </div>
+      </code>
+    </pre>
+    <div
+      className="absolute z2 top right mr6 mt6 color-white"
+    />
+  </div>
+</div>
+`;
+
+exports[`toggleable-code-block Swift highlighting renders as expected 1`] = `
+<div>
+  <div
+    className="relative round z0 scroll-styled scroll-auto"
+    style={
+      Object {
+        "maxHeight": 480,
+      }
+    }
+  >
+    <pre>
+      <code
+        className="px0 hljs"
+      >
+        <div
+          className="relative z2"
+          data-chunk-code="chunk-0"
+        >
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 12,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "import Mapbox",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 26.45,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<span class=\\"hljs-keyword\\">class</span> ViewController: UIViewController {",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 26.45,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "override func view<span class=\\"hljs-constructor\\">DidLoad()</span> {",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 26.45,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "super.view<span class=\\"hljs-constructor\\">DidLoad()</span>",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 12,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": " ",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 26.45,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<span class=\\"hljs-keyword\\">let</span> url = <span class=\\"hljs-constructor\\">URL(<span class=\\"hljs-params\\">string</span>: <span class=\\"hljs-string\\">\\"mapbox://styles/mapbox/streets-v10\\"</span>)</span>",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 26.45,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<span class=\\"hljs-keyword\\">let</span> mapView = <span class=\\"hljs-constructor\\">MGLMapView(<span class=\\"hljs-params\\">frame</span>: <span class=\\"hljs-params\\">view</span>.<span class=\\"hljs-params\\">bounds</span>, <span class=\\"hljs-params\\">styleURL</span>: <span class=\\"hljs-params\\">url</span>)</span>",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 26.45,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "mapView.autoresizingMask = <span class=\\"hljs-literal\\">[.<span class=\\"hljs-identifier\\">flexibleWidth</span>, .<span class=\\"hljs-identifier\\">flexibleHeight</span>]</span>",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 26.45,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "mapView.set<span class=\\"hljs-constructor\\">Center(CLLocationCoordinate2D(<span class=\\"hljs-params\\">latitude</span>: 59.31, <span class=\\"hljs-params\\">longitude</span>: 18.06)</span>, zoomLevel: <span class=\\"hljs-number\\">9</span>, animated: <span class=\\"hljs-literal\\">false</span>)",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 26.45,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "view.add<span class=\\"hljs-constructor\\">Subview(<span class=\\"hljs-params\\">mapView</span>)</span>",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12"
+            style={
+              Object {
+                "paddingLeft": 12,
+              }
+            }
+          >
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "}",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 14.45,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+        </div>
+      </code>
+    </pre>
+    <div
+      className="absolute z2 top right mr6 mt6 color-white"
+    />
+  </div>
+</div>
+`;

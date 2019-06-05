@@ -1,0 +1,197 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`code-toggle Objective C preferred renders as expected 1`] = `
+<div
+  className="relative "
+>
+  <fieldset>
+    <div
+      aria-required={true}
+      className="toggle-group round-full bg-blue py3 px3"
+      data-test="two-input"
+      id="two"
+      role="radiogroup"
+    >
+      <label
+        className="toggle-container "
+      >
+        <input
+          autoFocus={false}
+          checked={false}
+          name="two"
+          onChange={[Function]}
+          type="radio"
+          value="swift"
+        />
+        <div
+          className="txt-s py3 toggle--white toggle--active-blue toggle"
+        >
+          swift
+        </div>
+      </label>
+      <label
+        className="toggle-container "
+      >
+        <input
+          autoFocus={false}
+          checked={true}
+          name="two"
+          onChange={[Function]}
+          type="radio"
+          value="objective-c"
+        />
+        <div
+          className="txt-s py3 toggle--white toggle--active-blue toggle"
+        >
+          objective-c
+        </div>
+      </label>
+    </div>
+  </fieldset>
+  <div
+    role="alert"
+  />
+</div>
+`;
+
+exports[`code-toggle Objective C preferred renders as expected 2`] = `
+<div
+  className="relative "
+>
+  <fieldset>
+    <div
+      aria-required={true}
+      className="toggle-group round-full bg-blue py3 px3"
+      data-test="three-input"
+      id="three"
+      role="radiogroup"
+    >
+      <label
+        className="toggle-container "
+      >
+        <input
+          autoFocus={false}
+          checked={false}
+          name="three"
+          onChange={[Function]}
+          type="radio"
+          value="javascript"
+        />
+        <div
+          className="txt-s py3 toggle--white toggle--active-blue toggle"
+        >
+          javascript
+        </div>
+      </label>
+      <label
+        className="toggle-container "
+      >
+        <input
+          autoFocus={false}
+          checked={true}
+          name="three"
+          onChange={[Function]}
+          type="radio"
+          value="java"
+        />
+        <div
+          className="txt-s py3 toggle--white toggle--active-blue toggle"
+        >
+          java
+        </div>
+      </label>
+      <label
+        className="toggle-container "
+      >
+        <input
+          autoFocus={false}
+          checked={false}
+          name="three"
+          onChange={[Function]}
+          type="radio"
+          value="swift"
+        />
+        <div
+          className="txt-s py3 toggle--white toggle--active-blue toggle"
+        >
+          swift
+        </div>
+      </label>
+      <label
+        className="toggle-container "
+      >
+        <input
+          autoFocus={false}
+          checked={false}
+          name="three"
+          onChange={[Function]}
+          type="radio"
+          value="objective-c"
+        />
+        <div
+          className="txt-s py3 toggle--white toggle--active-blue toggle"
+        >
+          objective-c
+        </div>
+      </label>
+    </div>
+  </fieldset>
+  <div
+    role="alert"
+  />
+</div>
+`;
+
+exports[`code-toggle Swift preferred renders as expected 1`] = `
+<div
+  className="relative "
+>
+  <fieldset>
+    <div
+      aria-required={true}
+      className="toggle-group round-full bg-blue py3 px3"
+      data-test="one-input"
+      id="one"
+      role="radiogroup"
+    >
+      <label
+        className="toggle-container "
+      >
+        <input
+          autoFocus={false}
+          checked={true}
+          name="one"
+          onChange={[Function]}
+          type="radio"
+          value="swift"
+        />
+        <div
+          className="txt-s py3 toggle--white toggle--active-blue toggle"
+        >
+          swift
+        </div>
+      </label>
+      <label
+        className="toggle-container "
+      >
+        <input
+          autoFocus={false}
+          checked={false}
+          name="one"
+          onChange={[Function]}
+          type="radio"
+          value="objective-c"
+        />
+        <div
+          className="txt-s py3 toggle--white toggle--active-blue toggle"
+        >
+          objective-c
+        </div>
+      </label>
+    </div>
+  </fieldset>
+  <div
+    role="alert"
+  />
+</div>
+`;

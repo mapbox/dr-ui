@@ -174,4 +174,4 @@ testCases.noThumbs = {
   }
 };
 
-export default { testCases };
+export { testCases };

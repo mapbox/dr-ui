@@ -69,4 +69,4 @@ testCases.noImage = {
   }
 };
 
-export default { testCases };
+export { testCases };
