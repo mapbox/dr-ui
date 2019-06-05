@@ -1,3 +1,22 @@
+## 0.15.1
+
+* Fix toggle in `Search` to be a button and track toggle event.
+
+## 0.15.0
+
+* Fix z-index issue with `Search` modal and `TopbarSticker`. [#139](https://github.com/mapbox/dr-ui/pull/139)
+* Add ability to filter `Search` results by current site or all docs. [#138](https://github.com/mapbox/dr-ui/pull/138)
+* Add Segment events for tracking queries and clicks in the `Search` component. [#140](https://github.com/mapbox/dr-ui/pull/14)
+
+## 0.14.0
+
+- Refactors the `Search` component to use a modal on larger screens. [#133](https://github.com/mapbox/dr-ui/pull/133).
+- Increase z-index for sticky sidebar in `PageLayout` and `TopbarSticker`. [#134](https://github.com/mapbox/dr-ui/pull/134)
+
+## 0.13.0
+
+- Use [`compare-versions`](https://www.npmjs.com/package/compare-versions) in the version-sort helper function. [#132](https://github.com/mapbox/dr-ui/pull/132)
+
 ## 0.12.2
 
 - Debounce `Search` results. [#129](https://github.com/mapbox/dr-ui/pull/129)

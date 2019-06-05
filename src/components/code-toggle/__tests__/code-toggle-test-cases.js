@@ -41,7 +41,7 @@ testCases.objectiveC = {
   }
 };
 
-testCases.objectiveC = {
+testCases.objectiveC2 = {
   component: CodeToggle,
   description: 'Objective C preferred',
   props: {
@@ -68,4 +68,4 @@ testCases.objectiveC = {
   }
 };
 
-export default { testCases, noRenderCases };
+export { testCases, noRenderCases };

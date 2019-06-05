@@ -7,25 +7,51 @@ import ProductMenu from '../../product-menu/product-menu';
 
 const testCases = {};
 
-testCases.basicNote = {
+testCases.basic = {
   component: Search,
-  props: {},
-  description: 'Search'
+  description: 'Basic search',
+  props: {}
 };
 
-testCases.darkNote = {
+testCases.site = {
+  component: Search,
+  description: 'Basic search with `site` set to show filter toggle',
+  props: {
+    site: 'API'
+  }
+};
+
+testCases.dark = {
   description: 'Search with dark background, custom placeholder',
   element: (
-    <div className="py24 px24 bg-blue">
-      <div className="wmax360">
-        <Search placeholder="SEARCH!" />
+    <div className="py24 px24 bg-gray-dark">
+      <div className="w-full">
+        <Search inputId="search2" placeholder="SEARCH!" background="dark" />
       </div>
     </div>
   )
 };
 
-testCases.commonUseCase = {
-  description: 'Search placement',
+testCases.disableModal = {
+  component: Search,
+  description: 'Search with `disableModal` option set',
+  props: {
+    inputId: 'search3',
+    disableModal: true
+  }
+};
+
+testCases.narrow = {
+  component: Search,
+  description: 'Search with `narrow` option set',
+  props: {
+    inputId: 'search4',
+    narrow: true
+  }
+};
+
+testCases.withLayout = {
+  description: 'Search with `narrow` option set',
   element: (
     <div>
       <TopbarSticker>
@@ -39,9 +65,16 @@ testCases.commonUseCase = {
                 <ProductMenu productName="API Documentation" homePage="/api/" />
               </div>
             </div>
-            <div className="col col--8-mm col--12 flex-parent flex-parent--end-main-mm flex-parent--center-cross">
-              <div className="wmax360 mb12 mb0-mm">
-                <Search />
+            <div className="col col--7-mm col--12 flex-parent flex-parent--main-mm flex-parent--center-cross align-r mb12 mb0-mm">
+              <div className="inline-block">Overview</div>
+              <div className="ml18 inline-block">Examples</div>
+              <div className="ml18 inline-block">Help</div>
+              <div className="ml18 inline-block">API Reference</div>
+            </div>
+
+            <div className="col col--1-mm col--12 flex-parent flex-parent--end-main-mm flex-parent--center-cross">
+              <div className="w-full mb12 mb0-mm mr36">
+                <Search inputId="search4" />
               </div>
             </div>
           </div>
@@ -90,30 +123,6 @@ testCases.commonUseCase = {
               ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing
               elit. Vestibulum id ligula porta felis euismod semper.
             </p>
-            <p>
-              Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam
-              eget risus varius blandit sit amet non magna. Vestibulum id ligula
-              porta felis euismod semper. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis
-              in, egestas eget quam. Donec id elit non mi porta gravida at eget
-              metus. Duis mollis, est non commodo luctus, nisi erat porttitor
-              ligula, eget lacinia odio sem nec elit.
-            </p>
-            <p>
-              Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
-              egestas eget quam. Curabitur blandit tempus porttitor. Duis
-              mollis, est non commodo luctus, nisi erat porttitor ligula, eget
-              lacinia odio sem nec elit. Nullam quis risus eget urna mollis
-              ornare vel eu leo. Praesent commodo cursus magna, vel scelerisque
-              nisl consectetur et. Duis mollis, est non commodo luctus, nisi
-              erat porttitor ligula, eget lacinia odio sem nec elit.
-            </p>
-            <p>
-              Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-              Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem
-              lacinia quam venenatis vestibulum. Integer posuere erat a ante
-              venenatis dapibus posuere velit aliquet.
-            </p>
           </div>
         </PageLayout>
       </div>
@@ -121,4 +130,4 @@ testCases.commonUseCase = {
   )
 };
 
-export default { testCases };
+export { testCases };

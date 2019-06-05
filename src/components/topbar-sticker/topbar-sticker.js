@@ -37,7 +37,7 @@ class TopbarSticker extends React.PureComponent {
         enabled={this.state.isStuck}
         top={0}
         bottomBoundary={this.state.bottomBoundaryValue}
-        innerZ={3}
+        innerZ={4}
       >
         <div
           className="border-t border-b border--gray-light bg-white"

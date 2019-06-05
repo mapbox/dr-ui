@@ -2,7 +2,8 @@
   "root": true,
   "parser": "babel-eslint",
   "env": {
-    "browser": true
+    "browser": true,
+    "jest": true
   },
   "extends": [
     "@mapbox/eslint-config-mapbox/react",
@@ -10,6 +11,9 @@
     "@mapbox/eslint-config-mapbox/promise",
     "prettier"
   ],
+  "globals": {
+    "analytics": true
+  },
   "rules": {
     "prefer-const": "off",
     "react/no-deprecated": "off",
