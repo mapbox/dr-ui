@@ -11,6 +11,9 @@
     "@mapbox/eslint-config-mapbox/promise",
     "prettier"
   ],
+  "globals": {
+    "analytics": true
+  },
   "rules": {
     "prefer-const": "off",
     "react/no-deprecated": "off",
