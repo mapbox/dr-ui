@@ -59,6 +59,7 @@ function createPackageJson() {
   delete publishable.devDependencies;
   delete publishable.optionalDependencies;
   delete publishable['lint-staged'];
+  delete publishable.jest;
   fs.writeFileSync(
     path.resolve(outputDir, 'package.json'),
     JSON.stringify(publishable, null, 2)
