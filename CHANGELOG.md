@@ -1,4 +1,4 @@
-## Master
+## 0.15.2
 
 * Fix build to remove `optionalDependencies` and `jest` from package.json. [#143](https://github.com/mapbox/dr-ui/pull/143)
 
