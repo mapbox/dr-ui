@@ -1,3 +1,7 @@
+## Master
+
+* Fix build to remove `optionalDependencies` and `jest` from package.json. [#143](https://github.com/mapbox/dr-ui/pull/143)
+
 ## 0.15.1
 
 * Fix toggle in `Search` to be a button and track toggle event.
