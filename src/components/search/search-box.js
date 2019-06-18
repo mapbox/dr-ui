@@ -179,39 +179,40 @@ class SearchBox extends React.Component {
                   }
                 })}
               />
-              {isOpen && props.searchTerm && props.wasSearched && (
+              {isOpen && props.searchTerm && (
                 <div className="color-text shadow-darken25 round mt3 bg-white scroll-auto scroll-styled hmax360 absolute z4 w-full align-l">
                   <div>
-                    {this.props.site && (
-                      <Facet
-                        show={20}
-                        field="site"
-                        label="Site"
-                        view={this.singleLinksFacet}
-                      />
-                    )}
-                    {this.props.results.length ? (
-                      <ul>
-                        {this.props.results.map((result, index) => (
-                          <SearchResult
-                            key={index}
-                            result={result}
-                            index={index}
-                            downshiftProps={downshiftProps}
-                          />
-                        ))}
-                      </ul>
-                    ) : (
-                      <div className="py12 px12 prose">
-                        <p>
-                          Hmmm, we didn't find anything. Reword your search, or{' '}
-                          <a href="https://support.mapbox.com/hc/en-us">
-                            contact Support
-                          </a>
-                          .
-                        </p>
-                      </div>
-                    )}
+                    <Facet
+                      show={20}
+                      field="site"
+                      label="Site"
+                      view={this.singleLinksFacet}
+                    />
+
+                    {props.wasSearched &&
+                      (this.props.results.length ? (
+                        <ul>
+                          {this.props.results.map((result, index) => (
+                            <SearchResult
+                              key={index}
+                              result={result}
+                              index={index}
+                              downshiftProps={downshiftProps}
+                            />
+                          ))}
+                        </ul>
+                      ) : (
+                        <div className="py12 px12 prose">
+                          <p>
+                            Hmmm, we didn't find anything. Reword your search,
+                            or{' '}
+                            <a href="https://support.mapbox.com/hc/en-us">
+                              contact Support
+                            </a>
+                            .
+                          </p>
+                        </div>
+                      ))}
                   </div>
                 </div>
               )}

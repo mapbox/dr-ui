@@ -1,3 +1,7 @@
+## 0.16.2
+
+* Fix bug where `Search` filter was not displaying with the first query.
+
 ## 0.16.1
 
 * Fix build that was improperly pushed to npm in 0.16.0.
