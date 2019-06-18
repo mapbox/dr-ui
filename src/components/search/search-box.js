@@ -41,6 +41,7 @@ class SearchBox extends React.Component {
   }
 
   closeModal() {
+    this.props.reset();
     this.setState({ modalOpen: false });
   }
 
@@ -118,7 +119,7 @@ class SearchBox extends React.Component {
         }}
         onInputValueChange={newValue => {
           if (props.searchTerm === newValue) return;
-          props.setSearchTerm(newValue, { debounce: 300 });
+          props.setSearchTerm(newValue, { debounce: 1500 });
           // track query
           if (window && window.analytics) {
             analytics.track('Searched docs', {
@@ -153,8 +154,17 @@ class SearchBox extends React.Component {
                     <use xlinkHref="#icon-search" />
                   </svg>
                 </div>
+                {this.props.isLoading && (
+                  <div
+                    className="loading loading--s absolute bg-white"
+                    style={{
+                      top: this.state.useModal ? '21px' : '10px',
+                      right: '26px',
+                      zIndex: 5
+                    }}
+                  />
+                )}
               </label>
-
               <input
                 ref={input => {
                   this.docsSeachInput = input;
@@ -262,7 +272,9 @@ class SearchBox extends React.Component {
 SearchBox.propTypes = {
   searchTerm: PropTypes.string,
   trackClickThrough: PropTypes.func,
+  isLoading: PropTypes.bool,
   setSearchTerm: PropTypes.func,
+  reset: PropTypes.func,
   results: PropTypes.array,
   placeholder: PropTypes.string,
   background: PropTypes.oneOf(['light', 'dark']).isRequired,
