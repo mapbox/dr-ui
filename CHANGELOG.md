@@ -1,3 +1,7 @@
+## Master
+
+* Update search-ui, add loader, increase debounce length, and reset search when modal is closed for `Search` component. [#145](https://github.com/mapbox/dr-ui/pull/145)
+
 ## 0.15.2
 
 * Fix build to remove `optionalDependencies` and `jest` from package.json. [#143](https://github.com/mapbox/dr-ui/pull/143)
