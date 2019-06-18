@@ -34,14 +34,16 @@ class Search extends React.Component {
             setSearchTerm,
             results,
             trackClickThrough,
-            wasSearched
+            wasSearched,
+            reset
           }) => ({
             isLoading,
             searchTerm,
             setSearchTerm,
             results,
             trackClickThrough,
-            wasSearched
+            wasSearched,
+            reset
           })}
         >
           {({
@@ -50,7 +52,8 @@ class Search extends React.Component {
             setSearchTerm,
             results,
             trackClickThrough,
-            wasSearched
+            wasSearched,
+            reset
           }) => {
             return (
               <div className="h36 relative">
@@ -67,6 +70,7 @@ class Search extends React.Component {
                   narrow={props.narrow}
                   disableModal={props.disableModal}
                   site={props.site}
+                  reset={reset}
                 />
               </div>
             );

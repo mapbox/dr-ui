@@ -41,6 +41,7 @@ class SearchBox extends React.Component {
   }
 
   closeModal() {
+    this.props.reset();
     this.setState({ modalOpen: false });
   }
 
@@ -273,6 +274,7 @@ SearchBox.propTypes = {
   trackClickThrough: PropTypes.func,
   isLoading: PropTypes.bool,
   setSearchTerm: PropTypes.func,
+  reset: PropTypes.func,
   results: PropTypes.array,
   placeholder: PropTypes.string,
   background: PropTypes.oneOf(['light', 'dark']).isRequired,
