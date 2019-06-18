@@ -24,9 +24,7 @@ class SearchResult extends React.Component {
     const title = this.returnRaw(props.result.title);
     const url = this.returnRaw(props.result.url);
     const excerpt = props.result.excerpt
-      ? props.result.body.snippet ||
-        props.result.excerpt.snippet ||
-        props.result.excerpt.raw
+      ? props.result.excerpt.snippet || props.result.excerpt.raw
       : '';
     const resultTitle = titleGenerator(title, subsite, site).reverse();
     return (
