@@ -15,6 +15,8 @@ class SearchResult extends React.Component {
   render() {
     const { props } = this;
 
+    console.log(props.result);
+
     const getItemProps = props.downshiftProps.getItemProps;
     const highlighted = props.downshiftProps.highlightedIndex === props.index;
     const site = this.returnRaw(props.result.site);
@@ -25,7 +27,9 @@ class SearchResult extends React.Component {
     const title = this.returnRaw(props.result.title);
     const url = this.returnRaw(props.result.url);
     const excerpt = props.result.excerpt
-      ? props.result.excerpt.snippet || props.result.excerpt.raw
+      ? props.result.body.snippet ||
+        props.result.excerpt.snippet ||
+        props.result.excerpt.raw
       : '';
     const resultTitle = titleGenerator(title, subsite, site).reverse();
     return (

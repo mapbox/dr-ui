@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
-import { SearchProvider } from '@elastic/react-search-ui';
+import { SearchProvider, WithSearch } from '@elastic/react-search-ui';
 import SearchBox from './search-box';
 
 const connector = new SiteSearchAPIConnector({
@@ -27,33 +27,51 @@ class Search extends React.Component {
           }
         }}
       >
-        {({
-          isLoading,
-          searchTerm,
-          setSearchTerm,
-          results,
-          trackClickThrough,
-          wasSearched
-        }) => {
-          return (
-            <div className="h36 relative">
-              <SearchBox
-                searchTerm={searchTerm}
-                trackClickThrough={trackClickThrough}
-                setSearchTerm={setSearchTerm}
-                results={results}
-                wasSearched={wasSearched}
-                placeholder={props.placeholder}
-                isLoading={isLoading}
-                inputId={props.inputId}
-                background={props.background}
-                narrow={props.narrow}
-                disableModal={props.disableModal}
-                site={props.site}
-              />
-            </div>
-          );
-        }}
+        <WithSearch
+          mapContextToProps={({
+            isLoading,
+            searchTerm,
+            setSearchTerm,
+            results,
+            trackClickThrough,
+            wasSearched
+          }) => ({
+            isLoading,
+            searchTerm,
+            setSearchTerm,
+            results,
+            trackClickThrough,
+            wasSearched
+          })}
+        >
+          {({
+            isLoading,
+            searchTerm,
+            setSearchTerm,
+            results,
+            trackClickThrough,
+            wasSearched
+          }) => {
+            return (
+              <div className="h36 relative">
+                <SearchBox
+                  searchTerm={searchTerm}
+                  trackClickThrough={trackClickThrough}
+                  setSearchTerm={setSearchTerm}
+                  results={results}
+                  wasSearched={wasSearched}
+                  placeholder={props.placeholder}
+                  isLoading={isLoading}
+                  inputId={props.inputId}
+                  background={props.background}
+                  narrow={props.narrow}
+                  disableModal={props.disableModal}
+                  site={props.site}
+                />
+              </div>
+            );
+          }}
+        </WithSearch>
       </SearchProvider>
     );
   }
