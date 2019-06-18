@@ -1,4 +1,4 @@
-## Master
+## 0.16.0
 
 * Update search-ui, add loader, increase debounce length, and reset search when modal is closed for `Search` component. [#145](https://github.com/mapbox/dr-ui/pull/145)
 
