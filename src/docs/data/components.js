@@ -1151,7 +1151,12 @@ module.exports = [
     <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Search</span></span> <span class="token attr-name">site</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>API<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
-        description: <p>Basic.</p>
+        description: (
+          <p>
+            Basic. Pass the name of the <code>site</code> to the component to
+            enable the site/"All docs" filter.
+          </p>
+        )
       },
       {
         exampleModule: require("/Users/katydecorah/Documents/GitHub/dr-ui/src/components/search/examples/diabled.js"),
