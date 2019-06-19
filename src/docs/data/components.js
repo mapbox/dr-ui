@@ -1131,6 +1131,13 @@ module.exports = [
         defaultValue: undefined,
         description: <div />,
         options: undefined
+      },
+      site: {
+        type: { name: "string" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
       }
     },
     examples: [
