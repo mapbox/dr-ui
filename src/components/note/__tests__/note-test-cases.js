@@ -6,7 +6,7 @@ import WarningImage from '../../warning-image/warning-image';
 const testCases = {};
 const noRenderCases = {};
 
-testCases.basicNote = {
+testCases.basic = {
   component: Note,
   description: 'A basic note to call out information on a page.',
   props: {
@@ -15,7 +15,7 @@ testCases.basicNote = {
   }
 };
 
-testCases.customTitle = {
+testCases.custom = {
   component: Note,
   description: 'Note with custom title.',
   props: {
@@ -82,4 +82,4 @@ testCases.error = {
   }
 };
 
-export default { testCases, noRenderCases };
+export { testCases, noRenderCases };

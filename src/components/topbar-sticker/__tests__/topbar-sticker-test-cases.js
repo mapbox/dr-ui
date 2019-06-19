@@ -3,7 +3,7 @@ import TopbarSticker from '../topbar-sticker';
 
 const testCases = {};
 
-testCases.display = {
+testCases.basic = {
   description: 'For display only',
   element: (
     <div style={{ background: 'pink', height: 3000 }}>

@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`back-top-top-button Just the button renders as expected 1`] = `
+<div
+  className="block mx24 my24 z5"
+>
+  <div
+    className="inline-block"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+  >
+    <button
+      className="btn--blue w60 h60 px0 round-full shadow-darken25 color-white flex-parent flex-parent--center-main flex-parent--center-cross"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 30,
+            "width": 30,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-arrow-up"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;

@@ -47,4 +47,4 @@ testCases.withLevelAndLanguage = {
   }
 };
 
-export default { testCases, noRenderCases };
+export { testCases, noRenderCases };

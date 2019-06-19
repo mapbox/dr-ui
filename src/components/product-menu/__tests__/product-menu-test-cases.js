@@ -53,4 +53,4 @@ testCases.beta = {
   }
 };
 
-export default { testCases };
+export { testCases };
