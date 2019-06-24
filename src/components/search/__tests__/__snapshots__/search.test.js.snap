@@ -262,6 +262,7 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
     >
       <div
         className="col col--4-mm  col--12 bg-gray-faint"
+        data-swiftype-index="false"
       >
         <div
           className="sticky-outer-wrapper"
