@@ -1,3 +1,7 @@
+## Master
+
+* Add data attribute to prevent Swiftype from indexing sidebar content on `PageLayout`. [#146](https://github.com/mapbox/dr-ui/pull/146)
+
 ## 0.16.2
 
 * Fix bug where `Search` filter was not displaying with the first query.
