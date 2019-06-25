@@ -1,6 +1,7 @@
 ## Master
 
 * Add data attribute to prevent Swiftype from indexing sidebar content on `PageLayout`. [#146](https://github.com/mapbox/dr-ui/pull/146)
+* Add compare-versions as a dependency to support `helpers/version-sort.js`. [#142](https://github.com/mapbox/dr-ui/pull/142)
 
 ## 0.16.2
 
