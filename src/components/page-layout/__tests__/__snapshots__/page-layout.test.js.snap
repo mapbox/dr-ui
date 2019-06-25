@@ -6,6 +6,7 @@ exports[`page-layout Basic renders as expected 1`] = `
 >
   <div
     className="col col--4-mm  col--12 bg-gray-faint"
+    data-swiftype-index="false"
   >
     <div
       className="sticky-outer-wrapper"
@@ -53,6 +54,7 @@ exports[`page-layout Code highlighting test renders as expected 1`] = `
 >
   <div
     className="col col--4-mm  col--12 bg-gray-faint"
+    data-swiftype-index="false"
   >
     <div
       className="sticky-outer-wrapper"
@@ -121,6 +123,7 @@ exports[`page-layout Common use case renders as expected 1`] = `
 >
   <div
     className="col col--4-mm  col--12 bg-gray-faint"
+    data-swiftype-index="false"
   >
     <div
       className="sticky-outer-wrapper"
@@ -325,6 +328,7 @@ exports[`page-layout Custom sidebar column size renders as expected 1`] = `
 >
   <div
     className="col col--4-mm col--3-ml col--12 bg-gray-faint"
+    data-swiftype-index="false"
   >
     <div
       className="sticky-outer-wrapper"
@@ -372,6 +376,7 @@ exports[`page-layout Custom sidebar column size, too large - default to original
 >
   <div
     className="col col--4-mm  col--12 bg-gray-faint"
+    data-swiftype-index="false"
   >
     <div
       className="sticky-outer-wrapper"
@@ -419,6 +424,7 @@ exports[`page-layout Custom sidebar column size, too small - default to original
 >
   <div
     className="col col--4-mm  col--12 bg-gray-faint"
+    data-swiftype-index="false"
   >
     <div
       className="sticky-outer-wrapper"
@@ -466,6 +472,7 @@ exports[`page-layout Many first level items renders as expected 1`] = `
 >
   <div
     className="col col--4-mm  col--12 bg-gray-faint"
+    data-swiftype-index="false"
   >
     <div
       className="sticky-outer-wrapper"
