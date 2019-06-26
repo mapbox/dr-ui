@@ -217,9 +217,7 @@ describe('ios', () => {
   });
 
   test(`newestPreRelease`, () => {
-    expect(sortVersions(allIosVersions).newestPreRelease).toEqual([
-      '5.0.0-beta.1'
-    ]);
+    expect(sortVersions(allIosVersions).newestPreRelease).toEqual([]);
   });
   test(`versionsToDisplay`, () => {
     expect(sortVersions(allIosVersions).versionsToDisplay).toEqual([
@@ -313,5 +311,33 @@ describe('ios', () => {
 
   test(`newestPreRelease, no pre releases`, () => {
     expect(sortVersions(['4.9.0', '4.8.0']).newestPreRelease).toEqual([]);
+  });
+
+  test('dont show pre releases of latest stable', () => {
+    expect(
+      sortVersions([
+        '5.1.0',
+        '5.1.0-beta.1',
+        '5.1.0-alpha.2',
+        '5.1.0-alpha.1',
+        '5.0.0',
+        '4.12.0-beta.1',
+        '4.11.0'
+      ])
+    ).toEqual({
+      allLatestVersion: /^5.1.0-.+/,
+      allVersionsOrdered: [
+        '5.1.0',
+        '5.1.0-beta.1',
+        '5.1.0-alpha.2',
+        '5.1.0-alpha.1',
+        '5.0.0',
+        '4.12.0-beta.1',
+        '4.11.0'
+      ],
+      latestStable: '5.1.0',
+      newestPreRelease: [],
+      versionsToDisplay: ['5.1.0', '5.0.0', '4.11.0']
+    });
   });
 });
