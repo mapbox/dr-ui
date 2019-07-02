@@ -42,7 +42,13 @@ export function sortVersions(versions) {
     sortPreReleases
       .sort(sortBy('version'))
       .reverse()
-      .map(v => v.version);
+      .reduce((arr, v) => {
+        // do not push pre releases of lastest stable
+        if (!allLatestVersion.test(v.version)) {
+          arr.push(v.version);
+        }
+        return arr;
+      }, []);
 
   const versionsToDisplay = allVersionsOrdered.filter(version => {
     return !/^(\d|\.)+-(alpha|beta|rc|pre).+/.test(version);
