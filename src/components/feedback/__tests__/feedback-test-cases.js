@@ -12,7 +12,12 @@ testCases.basic = {
   component: Feedback,
   description: 'Basic',
   props: {
-    site: 'Help'
+    site: 'Help',
+    eventStagingUrl:
+      'https://fbtme2z025.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
+    eventProductionUrl:
+      'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
+    location: {}
   }
 };
 
@@ -21,7 +26,12 @@ testCases.type = {
   description: 'Change type',
   props: {
     type: 'section',
-    site: 'Help'
+    site: 'Help',
+    eventStagingUrl:
+      'https://fbtme2z025.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
+    eventProductionUrl:
+      'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
+    location: {}
   }
 };
 
@@ -96,7 +106,12 @@ testCases.common = {
               ligula, eget lacinia odio sem nec elit.
             </p>
 
-            <Feedback site="Help" />
+            <Feedback
+              site="Help"
+              location={{}}
+              eventStagingUrl="https://fbtme2z025.execute-api.us-east-1.amazonaws.com/hookshot/webhook"
+              eventProductionUrl="https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook"
+            />
           </div>
         </PageLayout>
       </div>

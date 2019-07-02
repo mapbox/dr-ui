@@ -1,50 +1,73 @@
 import React from 'react';
 import ControlTextarea from '@mapbox/mr-ui/control-textarea';
 import PropTypes from 'prop-types';
+import forwardEvent from '../../helpers/forward-event';
+import uuidv4 from 'uuid/v4';
+
+const anonymousId = uuidv4(); // creates an anonymousId fallback if user is not logged or we cant get their info
 
 class Feedback extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       helpful: undefined,
-      feedback: undefined
+      feedback: undefined,
+      feedbackSent: undefined
     };
     this.handleText = this.handleText.bind(this);
     this.handleYesNo = this.handleYesNo.bind(this);
-    this.sendToZendesk = this.sendToZendesk.bind(this);
+    this.submitFeedback = this.submitFeedback.bind(this);
     this.sendToSegment = this.sendToSegment.bind(this);
   }
 
+  // pushes the text feedback to the state as the user types
   handleText(feedback) {
     this.setState({ feedback });
   }
-
+  // when user clicks YES or NO, the value is pushed to the state and then sent to segment
   handleYesNo(helpful) {
     this.setState({ helpful }, () => {
-      // track helpful
+      // track helpful rating
+      this.sendToSegment();
+    });
+  }
+  // when user click submit feedback button, the value is pushed to the state and then sent to segment
+  submitFeedback() {
+    this.setState({ feedbackSent: true }, () => {
+      // Track response to Segement
       this.sendToSegment();
     });
   }
 
-  sendToZendesk() {
-    // TODO: Send feedback to zendesk
-    // track response
-    this.sendToSegment();
-  }
-
+  // sends all available data to segment
   sendToSegment() {
-    // TODO: finish analytics
-    console.log(this.state);
-    /*
-      if (window && window.analytics) {
-        analytics.track('Sent docs feedback', {
-          zendesk: this.state.feedback,
-          helpful: this.state.helpful,
-          site: this.props.site,
-          section: this.props.section || null
-        });
-    }
-    */
+    const event = {
+      event: 'Sent docs feedback',
+      properties: {
+        helpful: this.state.helpful, // true, false
+        site: this.props.site, // name of current site, helpful for filtering in Mode
+        section: this.props.section || undefined, // (optional) name of section for longer pagers, helpful for fitering in Mode and identifying section areas
+        feedback: this.state.feedback, // (optional) textarea feedback
+        page: this.props.location || undefined, // get page context
+        userId: this.props.userName || undefined, // set user if available,
+        user: this.props.user || undefined // set user object if available
+      }
+    };
+    // if user is logged in then associate feedback with them
+    // otherwise use the a random/anonymousId
+    if (this.props.userName) event.userId = this.props.userName;
+    else event.anonymousId = anonymousId;
+    // sends event
+    forwardEvent(
+      event,
+      this.props.eventStagingUrl,
+      this.props.eventProductionUrl,
+      err => {
+        if (err) {
+          console.log(err); // eslint-disable-line
+        }
+      }
+    );
   }
 
   render() {
@@ -68,31 +91,37 @@ class Feedback extends React.Component {
               </button>
             </div>
           )}
-          {this.state.helpful !== undefined && (
-            <div>
-              <div className="mb3">
-                {this.state.helpful === false
-                  ? `What can we do to improve this ${this.props.type}?` // Response to "No" click
-                  : 'Thanks for your feedback!' // Reponse to "Yes" click
-                }
+          {this.state.helpful !== undefined &&
+            this.state.feedbackSent === undefined && (
+              <div>
+                <div className="mb3">
+                  {this.state.helpful === false
+                    ? `What can we do to improve this ${
+                        this.props.type
+                      }? (optional)` // Response to "No" click
+                    : "Thanks for your feedback! Is there anything you'd like to add? (optional)" // Reponse to "Yes" click
+                  }
+                </div>
+                <ControlTextarea
+                  id={`${this.props.section || 'docs'}-feedback`}
+                  themeControlWrapper="bg-white"
+                  onChange={this.handleText}
+                  value={this.state.feedback}
+                />
+                <button
+                  disabled={
+                    this.state.feedback === undefined ||
+                    this.state.feedback.length < 3 // disable button unless more than 3 characters are typed
+                  }
+                  className="btn btn--s mt6"
+                  onClick={this.submitFeedback}
+                >
+                  Send feedback
+                </button>
               </div>
-              <ControlTextarea
-                id="zendesk-feedback"
-                themeControlWrapper="bg-white"
-                onChange={this.handleText}
-                value={this.state.feedback}
-              />
-              <button
-                disabled={
-                  this.state.feedback === undefined ||
-                  this.state.feedback.length < 3 // disable button unless more than 3 characters are typed
-                }
-                className="btn btn--s mt6"
-                onClick={this.sendToZendesk}
-              >
-                Send feedback
-              </button>
-            </div>
+            )}
+          {this.state.feedbackSent !== undefined && (
+            <div>Thanks for your feedback!</div>
           )}
         </div>
       </div>
@@ -101,9 +130,14 @@ class Feedback extends React.Component {
 }
 
 Feedback.propTypes = {
-  type: PropTypes.oneOf(['section', 'page']), // type of content the user is a evaluating
+  type: PropTypes.string, // type of content the user is a evaluating
   site: PropTypes.string.isRequired, // the site name, same value as the `site` value passed to ReactPageShell
-  section: PropTypes.string // name of section the feedack component falls under
+  section: PropTypes.string, // name of section the feedack component falls under
+  location: PropTypes.object.isRequired, // this prop is generated by batfish and provides context for the current page
+  eventStagingUrl: PropTypes.string.isRequired, // staging webhook URL to send forward event data to
+  eventProductionUrl: PropTypes.string.isRequired, // production webhook URL to send forward event data to
+  userName: PropTypes.string, // user name
+  user: PropTypes.object // user object
 };
 
 Feedback.defaultProps = {
