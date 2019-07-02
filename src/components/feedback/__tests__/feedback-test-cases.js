@@ -13,10 +13,12 @@ testCases.basic = {
   description: 'Basic',
   props: {
     site: 'Help',
-    eventStagingUrl:
-      'https://fbtme2z025.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
-    eventProductionUrl:
-      'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
+    webhook: {
+      staging:
+        'https://fbtme2z025.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
+      production:
+        'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook'
+    },
     location: {}
   }
 };
@@ -27,10 +29,12 @@ testCases.type = {
   props: {
     type: 'section',
     site: 'Help',
-    eventStagingUrl:
-      'https://fbtme2z025.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
-    eventProductionUrl:
-      'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
+    webhook: {
+      staging:
+        'https://fbtme2z025.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
+      production:
+        'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook'
+    },
     location: {}
   }
 };
@@ -109,8 +113,12 @@ testCases.common = {
             <Feedback
               site="Help"
               location={{}}
-              eventStagingUrl="https://fbtme2z025.execute-api.us-east-1.amazonaws.com/hookshot/webhook"
-              eventProductionUrl="https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook"
+              webhook={{
+                staging:
+                  'https://fbtme2z025.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
+                production:
+                  'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook'
+              }}
             />
           </div>
         </PageLayout>

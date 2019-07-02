@@ -1,9 +1,4 @@
-export default function forwardEvent(
-  event,
-  eventStagingUrl,
-  eventProductionUrl,
-  callback
-) {
+export default function forwardEvent(event, webhook, callback) {
   callback = callback || function() {};
 
   if (typeof window === 'undefined') return;
@@ -12,7 +7,7 @@ export default function forwardEvent(
   }
 
   const isProduction = /(^|\S+\.)mapbox\.com/.test(window.location.host);
-  const url = isProduction ? eventProductionUrl : eventStagingUrl;
+  const url = isProduction ? webhook.production : webhook.staging;
 
   const xhr = new XMLHttpRequest();
   xhr.open('POST', url);
