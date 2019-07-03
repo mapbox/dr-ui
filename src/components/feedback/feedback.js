@@ -56,7 +56,7 @@ class Feedback extends React.Component {
     // otherwise use the a random/anonymousId
     if (this.props.userName) event.userId = this.props.userName;
     else event.anonymousId = anonymousId;
-    // sends event
+    // sends event to segment via forward event webhook
     forwardEvent(event, this.props.webhook, err => {
       if (err) {
         console.log(err); // eslint-disable-line
@@ -132,7 +132,7 @@ Feedback.propTypes = {
     staging: PropTypes.string.isRequired,
     production: PropTypes.string.isRequired
   }), // staging and production webhook URLs to send forward event data to
-  userName: PropTypes.string // user object
+  userName: PropTypes.string // userid if available
 };
 
 Feedback.defaultProps = {
