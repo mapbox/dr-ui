@@ -3,6 +3,7 @@ import ControlTextarea from '@mapbox/mr-ui/control-textarea';
 import PropTypes from 'prop-types';
 import forwardEvent from './forward-event';
 import uuidv4 from 'uuid/v4';
+import Icon from '@mapbox/mr-ui/icon';
 
 const anonymousId = uuidv4(); // creates an anonymousId fallback if user is not logged or we cant get their info
 
@@ -85,16 +86,24 @@ class Feedback extends React.Component {
               </button>
             </div>
           )}
+
+          {this.state.helpful !== undefined && (
+            <div>
+              <div className="inline-block bg-green color-white round-full w18 h18 align-middle mr3 mb3">
+                <Icon name="check" />
+              </div>{' '}
+              Thanks for your feedback.
+            </div>
+          )}
+
           {this.state.helpful !== undefined &&
             this.state.feedbackSent === undefined && (
-              <div>
-                <div className="mb3">
-                  {this.state.helpful === false
-                    ? `What can we do to improve this ${
-                        this.props.type
-                      }? (optional)` // Response to "No" click
-                    : "Thanks for your feedback! Is there anything you'd like to add? (optional)" // Reponse to "Yes" click
-                  }
+              <div className="mt12">
+                <div className="mb6">
+                  If you have more specific feedback
+                  {this.state.helpful === false &&
+                    ` on how we can improve this ${this.props.type}`}
+                  , you can provide it below:
                 </div>
                 <ControlTextarea
                   id={`${this.props.section || 'docs'}-feedback`}
@@ -114,9 +123,6 @@ class Feedback extends React.Component {
                 </button>
               </div>
             )}
-          {this.state.feedbackSent !== undefined && (
-            <div>Thanks for your feedback!</div>
-          )}
         </div>
       </div>
     );
