@@ -103,7 +103,7 @@ class Feedback extends React.Component {
                   If you have more specific feedback
                   {this.state.helpful === false &&
                     ` on how we can improve this ${this.props.type}`}
-                  , you can provide it below:
+                  , you can provide it below (optional):
                 </div>
                 <ControlTextarea
                   id={`${this.props.section || 'docs'}-feedback`}
