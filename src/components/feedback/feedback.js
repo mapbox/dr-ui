@@ -111,6 +111,17 @@ class Feedback extends React.Component {
                   onChange={this.handleText}
                   value={this.state.feedback}
                 />
+                <div className="txt-s mt3 txt-em">
+                  This form is for documentation feedback. If you have a
+                  technical question about how to use a Mapbox product,{' '}
+                  <a
+                    href="https://support.mapbox.com/hc/en-us"
+                    className="link"
+                  >
+                    contact Support
+                  </a>
+                  .
+                </div>
                 <button
                   disabled={
                     this.state.feedback === undefined ||
