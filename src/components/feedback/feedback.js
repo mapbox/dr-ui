@@ -107,11 +107,23 @@ class Feedback extends React.Component {
                 </div>
                 <ControlTextarea
                   id={`${this.props.section || 'docs'}-feedback`}
-                  themeControlWrapper="bg-white"
+                  themeControlWrapper="bg-white mb6"
                   onChange={this.handleText}
                   value={this.state.feedback}
                 />
-                <div className="txt-s mt3 txt-em">
+
+                <button
+                  disabled={
+                    this.state.feedback === undefined ||
+                    this.state.feedback.length < 3 // disable button unless more than 3 characters are typed
+                  }
+                  className="btn btn--s mb18"
+                  onClick={this.submitFeedback}
+                >
+                  Send feedback
+                </button>
+
+                <div className="txt-s txt-em">
                   This form is for documentation feedback. If you have a
                   technical question about how to use a Mapbox product,{' '}
                   <a
@@ -122,16 +134,6 @@ class Feedback extends React.Component {
                   </a>
                   .
                 </div>
-                <button
-                  disabled={
-                    this.state.feedback === undefined ||
-                    this.state.feedback.length < 3 // disable button unless more than 3 characters are typed
-                  }
-                  className="btn btn--s mt6"
-                  onClick={this.submitFeedback}
-                >
-                  Send feedback
-                </button>
               </div>
             )}
         </div>
