@@ -1,4 +1,4 @@
-## Master
+## 0.18.0
 
 * Add `Feedback` component. [#135](https://github.com/mapbox/dr-ui/pull/135)
 
