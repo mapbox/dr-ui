@@ -1,0 +1,264 @@
+
+{
+  "pages": [
+    {
+      "filePath": "/mapbox/vector-tiles/src/pages/reference/enterprise-boundaries-v2.md",
+      "path": "/vector-tiles/reference/enterprise-boundaries-v2/",
+      "frontMatter": {
+        "title": "Enterprise Boundaries v2",
+        "description": "Reference documentation for the Enterprise Boundaries v2 tileset.",
+        "prependJs": [
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import { LayerInfo } from '../../components/layer-info';",
+          "import { SourceLayerTypes } from '../../components/source-layer-types';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import BookImage from '@mapbox/dr-ui/book-image';"
+        ],
+        "contentType": "reference"
+      }
+    },
+    {
+      "filePath": "/mapbox/vector-tiles/src/pages/reference/enterprise-boundaries.js",
+      "path": "/vector-tiles/reference/enterprise-boundaries/",
+      "frontMatter": {}
+    },
+    {
+      "filePath": "/mapbox/vector-tiles/src/pages/reference/index.md",
+      "path": "/vector-tiles/reference/",
+      "frontMatter": {
+        "title": "Introduction",
+        "description": "Reference documentation for Mapbox-maintained vector tilesets.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import OverviewHeader from '@mapbox/dr-ui/overview-header';",
+          "import AppropriateImage from '../../components/appropriate-image';"
+        ],
+        "contentType": "reference"
+      }
+    },
+    {
+      "filePath": "/mapbox/vector-tiles/src/pages/reference/mapbox-streets.js",
+      "path": "/vector-tiles/reference/mapbox-streets/",
+      "frontMatter": {}
+    },
+    {
+      "filePath": "/mapbox/vector-tiles/src/pages/reference/mapbox-terrain.js",
+      "path": "/vector-tiles/reference/mapbox-terrain/",
+      "frontMatter": {}
+    },
+    {
+      "filePath": "/mapbox/vector-tiles/src/pages/reference/mapbox-terrain-v2.md",
+      "path": "/vector-tiles/reference/mapbox-terrain-v2/",
+      "frontMatter": {
+        "title": "Mapbox Terrain v2",
+        "description": "Reference documentation for the Mapbox Terrain v2 tileset.",
+        "mapid": "mapbox.mapbox-terrain-v2",
+        "prependJs": [
+          "import { LayerInfo } from '../../components/layer-info';",
+          "import { SourceLayerTypes } from '../../components/source-layer-types';",
+          "import { MapPreview } from '../../components/map';",
+          "import { terrainV2 } from '../../data/styles';"
+        ],
+        "contentType": "reference"
+      }
+    },
+    {
+      "filePath": "/mapbox/vector-tiles/src/pages/reference/mapbox-traffic-v1.md",
+      "path": "/vector-tiles/reference/mapbox-traffic-v1/",
+      "frontMatter": {
+        "title": "Mapbox Traffic v1",
+        "description": "Reference documentation for the Mapbox Traffic v1 tileset.",
+        "mapid": "mapbox.mapbox-traffic-v1",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import { LayerInfo } from '../../components/layer-info';",
+          "import { MapPreview } from '../../components/map';",
+          "import { trafficV1 } from '../../data/styles';"
+        ],
+        "contentType": "reference"
+      }
+    },
+    {
+      "filePath": "/mapbox/vector-tiles/src/pages/reference/mapbox-traffic.js",
+      "path": "/vector-tiles/reference/mapbox-traffic/",
+      "frontMatter": {}
+    },
+    {
+      "filePath": "/mapbox/vector-tiles/src/pages/specification/encoding-attributes.md",
+      "path": "/vector-tiles/specification/encoding-attributes/",
+      "frontMatter": {
+        "title": "Encoding attributes",
+        "prependJs": [
+          "import { EncodingAttributesDiagram } from '../../components/illustrations/encoding-attributes-diagram';"
+        ],
+        "description": "Attributes are encoded in a series of tags.",
+        "contentType": "specification"
+      }
+    },
+    {
+      "filePath": "/mapbox/vector-tiles/src/pages/specification/encoding-geometry.md",
+      "path": "/vector-tiles/specification/encoding-geometry/",
+      "frontMatter": {
+        "title": "Encoding geometry",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import { EncodingGeometryDiagram } from '../../components/illustrations/encoding-geometry-diagram';"
+        ],
+        "description": "To encode geographic information into a vector tile a tool must convert geographic coordinates, such as latitude and longitude, into vector tile grid coordinates.",
+        "contentType": "specification"
+      }
+    },
+    {
+      "filePath": "/mapbox/vector-tiles/src/pages/specification/format.md",
+      "path": "/vector-tiles/specification/format/",
+      "frontMatter": {
+        "title": "Format",
+        "prependJs": [
+          "import * as constants from '../../constants';"
+        ],
+        "description": "Vector tiles are encoded as Google Protobufs.",
+        "contentType": "specification"
+      }
+    },
+    {
+      "filePath": "/mapbox/vector-tiles/src/pages/specification/implementations.md",
+      "path": "/vector-tiles/specification/implementations/",
+      "frontMatter": {
+        "title": "Implementations",
+        "description": "Implementations of the Mapbox Vector Tile Specification are far and wide.",
+        "contentType": "specification"
+      }
+    },
+    {
+      "filePath": "/mapbox/vector-tiles/src/pages/specification/index.js",
+      "path": "/vector-tiles/specification/",
+      "frontMatter": {
+        "title": "Vector tile specification",
+        "description": "A guide to encoding tiled vector data with the Mapbox Vector Tile Specification.",
+        "contentType": "specification"
+      }
+    },
+    {
+      "filePath": "/mapbox/vector-tiles/src/pages/specification/introduction.md",
+      "path": "/vector-tiles/specification/introduction/",
+      "frontMatter": {
+        "title": "Introduction",
+        "description": "A specification is an important means of setting standards around how data is stored and encoded.",
+        "contentType": "specification"
+      }
+    },
+    {
+      "filePath": "/mapbox/vector-tiles/src/pages/specification/notincluded.md",
+      "path": "/vector-tiles/specification/notincluded/",
+      "frontMatter": {
+        "title": "What the spec doesn't cover",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import { NotIncludedDiagram } from '../../components/illustrations/not-included-diagram';"
+        ],
+        "description": "This specification is explicit in the way a vector tile should pack data.",
+        "contentType": "specification"
+      }
+    },
+    {
+      "filePath": "/mapbox/vector-tiles/src/pages/specification/versioning.md",
+      "path": "/vector-tiles/specification/versioning/",
+      "frontMatter": {
+        "title": "Versioning",
+        "description": "The specification is versioned based on major.minor notation.",
+        "contentType": "specification"
+      }
+    },
+    {
+      "filePath": "/mapbox/vector-tiles/src/pages/specification/winding-order.md",
+      "path": "/vector-tiles/specification/winding-order/",
+      "frontMatter": {
+        "title": "Winding order",
+        "prependJs": [
+          "import { WindingOrderDiagram } from '../../components/illustrations/winding-order-diagram';"
+        ],
+        "description": "Winding order refers to the direction a ring is drawn in a vector tile, either clockwise or counter-clockwise.",
+        "contentType": "specification"
+      }
+    },
+    {
+      "filePath": "/mapbox/vector-tiles/src/pages/index.js",
+      "path": "/vector-tiles/",
+      "frontMatter": {}
+    },
+    {
+      "filePath": "/mapbox/vector-tiles/src/pages/reference/mapbox-streets-v6.md",
+      "path": "/vector-tiles/reference/mapbox-streets-v6/",
+      "frontMatter": {
+        "title": "Mapbox Streets v6",
+        "description": "Reference documentation for the Mapbox Streets v6 tileset.",
+        "mapid": "mapbox.mapbox-streets-v6",
+        "prependJs": [
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import { LayerInfo } from '../../components/layer-info';",
+          "import { SourceLayerTypes } from '../../components/source-layer-types';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import WarningImage from '@mapbox/dr-ui/warning-image';"
+        ],
+        "contentType": "reference"
+      }
+    },
+    {
+      "filePath": "/mapbox/vector-tiles/src/pages/reference/mapbox-streets-v5.md",
+      "path": "/vector-tiles/reference/mapbox-streets-v5/",
+      "frontMatter": {
+        "title": "Mapbox Streets v5",
+        "description": "Reference documentation for the Mapbox Streets v5 tileset.",
+        "mapid": "mapbox.mapbox-streets-v5",
+        "prependJs": [
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import { LayerInfo } from '../../components/layer-info';",
+          "import { SourceLayerTypes } from '../../components/source-layer-types';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import WarningImage from '@mapbox/dr-ui/warning-image';"
+        ],
+        "contentType": "reference"
+      }
+    },
+    {
+      "filePath": "/mapbox/vector-tiles/src/pages/reference/mapbox-streets-v7.md",
+      "path": "/vector-tiles/reference/mapbox-streets-v7/",
+      "frontMatter": {
+        "title": "Mapbox Streets v7",
+        "description": "Reference documentation for the Mapbox Streets v7 tileset.",
+        "mapid": "mapbox.mapbox-streets-v7",
+        "prependJs": [
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import { LayerInfo } from '../../components/layer-info';",
+          "import { SourceLayerTypes } from '../../components/source-layer-types';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import BookImage from '@mapbox/dr-ui/book-image';"
+        ],
+        "contentType": "reference"
+      }
+    },
+    {
+      "filePath": "/mapbox/vector-tiles/src/pages/reference/mapbox-streets-v8.md",
+      "path": "/vector-tiles/reference/mapbox-streets-v8/",
+      "frontMatter": {
+        "title": "Mapbox Streets v8",
+        "description": "Reference documentation for the Mapbox Streets v8 tileset.",
+        "mapid": "mapbox.mapbox-streets-v8",
+        "prependJs": [
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import { LayerInfo } from '../../components/layer-info';",
+          "import { SourceLayerTypes } from '../../components/source-layer-types';",
+          "import { MapPreview } from '../../components/map';",
+          "import { streetsV8 } from '../../data/styles';"
+        ],
+        "contentType": "reference"
+      }
+    },
+    {
+      "filePath": "/mapbox/vector-tiles/node_modules/@mapbox/batfish/dist/webpack/default-not-found.js",
+      "path": "/vector-tiles/404/",
+      "is404": true,
+      "frontMatter": {}
+    }
+  ]
+}

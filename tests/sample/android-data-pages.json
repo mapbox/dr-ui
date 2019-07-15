@@ -1,0 +1,3527 @@
+{
+  "pages": [
+    {
+      "filePath": "/mapbox/android-docs/src/pages/index.js",
+      "path": "/android/",
+      "frontMatter": {}
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/java/index.js",
+      "path": "/android/java/",
+      "frontMatter": {}
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/core/index.js",
+      "path": "/android/core/",
+      "frontMatter": {}
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/index.js",
+      "path": "/android/maps/",
+      "frontMatter": {}
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/navigation/index.js",
+      "path": "/android/navigation/",
+      "frontMatter": {}
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/plugins/index.js",
+      "path": "/android/plugins/",
+      "frontMatter": {}
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/vision/index.js",
+      "path": "/android/vision/",
+      "frontMatter": {}
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/java/examples/dashed-directions-line.md",
+      "path": "/android/java/examples/dashed-directions-line/",
+      "frontMatter": {
+        "title": "Dashed directions route line",
+        "description": "Retrieve and show a dashed directions route line based on map movement.",
+        "thumbnail": "thumbnailDashedDrivingRoute",
+        "topic": "Getting started",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoDashedDirectionsLine from '../../../video/example-dashed-directions-line.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/DashedDirectionsLineActivity'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/java/examples/generate-an-optimized-route.md",
+      "path": "/android/java/examples/generate-an-optimized-route/",
+      "frontMatter": {
+        "title": "Generate an optimized route",
+        "description": "Use the Optimization API to retrieve the fastest route between 2 to 12 locations.",
+        "thumbnail": "thumbnailOptimization",
+        "topic": "Getting started",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoGenerateAnOptimizedRoute from '../../../video/example-showoptimizeddirectoinsonmap.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/OptimizationActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/java/examples/geocoding.md",
+      "path": "/android/java/examples/geocoding/",
+      "frontMatter": {
+        "title": "Make a geocode request",
+        "description": "Use the Geocoding API to receive information about specific coordinates.",
+        "thumbnail": "https://i.imgur.com/9xl3EF8.png",
+        "topic": "Getting started",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoGeocodingActivity from '../../../video/example-geocoding-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/GeocodingActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/java/examples/get-a-travel-time-matrix.md",
+      "path": "/android/java/examples/get-a-travel-time-matrix/",
+      "frontMatter": {
+        "title": "Get a travel time matrix",
+        "description": "Calculate travel times between many points.",
+        "thumbnail": "thumbnailMatrix",
+        "topic": "Getting started",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoGetATravelTimeMatrix from '../../../video/example-directionsmatrixapi.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/MatrixApiActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/java/examples/index.js",
+      "path": "/android/java/examples/",
+      "frontMatter": {
+        "title": "Examples",
+        "description": "Mapbox Java SDK code examples",
+        "product": "java"
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/java/examples/isochrone.md",
+      "path": "/android/java/examples/isochrone/",
+      "frontMatter": {
+        "title": "Make a isochrone request",
+        "description": "Use the Isochrone API to receive information about how far you can travel within a given time.",
+        "thumbnail": "https://i.imgur.com/eUByGvt.png",
+        "topic": "Getting started",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoIsochroneActivity from '../../../video/example-isochrone-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/IsochroneActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/java/examples/show-directions-on-a-map.md",
+      "path": "/android/java/examples/show-directions-on-a-map/",
+      "frontMatter": {
+        "title": "Show directions on a map",
+        "description": "Request directions between two points.",
+        "thumbnail": "thumbnailDirections",
+        "topic": "Getting started",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoShowDirectionsOnAMap from '../../../video/example-showdirectionsonamap.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/DirectionsActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/java/examples/simplify-a-polyline.md",
+      "path": "/android/java/examples/simplify-a-polyline/",
+      "frontMatter": {
+        "title": "Simplify a polyline",
+        "description": "Simplify a polyline which, depending on the set tolerance, reduces the amount of coordinates needed to create the polyline.",
+        "thumbnail": "thumbnailSimplifyLine",
+        "topic": "Getting started",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoSimplifyPolyline from '../../../video/example-simplify-polyline-javaservice.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/SimplifyPolylineActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/java/examples/tilequery.md",
+      "path": "/android/java/examples/tilequery/",
+      "frontMatter": {
+        "title": "Make a tilequery request",
+        "description": "Use the Tilequery API to search for features in a tileset. This example queries for up to 10 buildings which are within 50 meters of the single map click location.",
+        "thumbnail": "http://i.imgur.com/VkOCYwq.jpg",
+        "topic": "Getting started",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoTilequeryActivity from '../../../video/example-tilequery-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/TilequeryActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/java/examples/turf-ring.md",
+      "path": "/android/java/examples/turf-ring/",
+      "frontMatter": {
+        "title": "Hollow circle",
+        "description": "Use Turf to calculate coordinates to eventually draw a ring around a center coordinate.",
+        "thumbnail": "https://i.imgur.com/nG8xeXH.png",
+        "topic": "Data visualization",
+        "contentType": "example",
+        "language": [
+          "Java"
+        ],
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoTurfRingActivity from '../../../video/example-turf-ring-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/TurfRingActivity.js'"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/java/examples/use-map-matching.md",
+      "path": "/android/java/examples/use-map-matching/",
+      "frontMatter": {
+        "title": "Use map matching",
+        "description": "Match raw GPS points to the map so they align with the roads/pathways.",
+        "thumbnail": "thumbnailMapMatching",
+        "topic": "Getting started",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoMapMatching from '../../../video/example-mapmatching-javaservice.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/MapMatchingActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/java/overview/directions-matrix.md",
+      "path": "/android/java/overview/directions-matrix/",
+      "frontMatter": {
+        "title": "Matrix",
+        "description": "Official documentation on the Mapbox Java SDK Matrix API.",
+        "prependJs": [
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/java/overview/isochrone.md",
+      "path": "/android/java/overview/isochrone/",
+      "frontMatter": {
+        "title": "Isochrone",
+        "description": "Official documentation on the Mapbox Java SDK Isochrone API.",
+        "sideNavSections": [
+          {
+            "title": "Building the URL"
+          },
+          {
+            "title": "Overlays"
+          },
+          {
+            "title": "Downloading the image"
+          }
+        ],
+        "prependJs": [
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/java/overview/index.md",
+      "path": "/android/java/overview/",
+      "frontMatter": {
+        "title": "Introduction",
+        "description": "Official documentation for the Mapbox Java SDK.",
+        "prependJs": [
+          "import OverviewHeader from '@mapbox/dr-ui/overview-header';",
+          "import AppropriateImage from '../../../components/appropriate-image';",
+          "import constants from '../../../constants';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import { DocNote } from '../../../components/note';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/java/overview/geocoder.md",
+      "path": "/android/java/overview/geocoder/",
+      "frontMatter": {
+        "title": "Geocoder",
+        "description": "Official documentation on the Mapbox Java SDK Geocoding API.",
+        "prependJs": [
+          "import { DocNote } from '../../../components/note';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/java/overview/map-matching.md",
+      "path": "/android/java/overview/map-matching/",
+      "frontMatter": {
+        "title": "Map Matching",
+        "description": "Official documentation on the Mapbox Java SDK Map Matching API.",
+        "prependJs": [
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/java/overview/optimization.md",
+      "path": "/android/java/overview/optimization/",
+      "frontMatter": {
+        "title": "Optimization",
+        "description": "Official documentation on the Mapbox Java SDK Optimization API.",
+        "prependJs": [
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/java/overview/static-image.md",
+      "path": "/android/java/overview/static-image/",
+      "frontMatter": {
+        "title": "Static Image",
+        "description": "Official documentation on the Mapbox Java SDK Static Images API.",
+        "sideNavSections": [
+          {
+            "title": "Building the URL"
+          },
+          {
+            "title": "Overlays"
+          },
+          {
+            "title": "Downloading the image"
+          }
+        ],
+        "prependJs": [
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/java/overview/tilequery.md",
+      "path": "/android/java/overview/tilequery/",
+      "frontMatter": {
+        "title": "Tilequery",
+        "description": "Official documentation on the Mapbox Java SDK Tilequery API.",
+        "prependJs": [
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import { Floater } from '../../../components/floater';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/java/overview/turf.md",
+      "path": "/android/java/overview/turf/",
+      "frontMatter": {
+        "title": "Turf for Java",
+        "description": "Official documentation on the Mapbox Java SDK Turf library.",
+        "prependJs": [
+          "import constants from '../../../constants';",
+          "import { Floater } from '../../../components/floater';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/add-a-new-layer-below-labels.md",
+      "path": "/android/maps/examples/add-a-new-layer-below-labels/",
+      "frontMatter": {
+        "title": "Add a new layer below labels",
+        "description": "Using the second argument of addLayerBelow, you can be more precise where your layer ends up in the map stack.",
+        "thumbnail": "thumbnailAddANewLayerBelowLabels",
+        "topic": "Dynamic styling",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/GeojsonLayerInStackActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/add-a-vector-tile-source.md",
+      "path": "/android/maps/examples/add-a-vector-tile-source/",
+      "frontMatter": {
+        "title": "Add a vector tile source",
+        "description": "Add a vector source to a map and display it as a layer.",
+        "thumbnail": "thumbnailAddAVectorTileSource",
+        "topic": "Dynamic styling",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/VectorSourceActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/add-a-hillshade-layer.md",
+      "path": "/android/maps/examples/add-a-hillshade-layer/",
+      "frontMatter": {
+        "title": "Add a hillshade layer",
+        "description": "Use elevation data to show and customize hills and mountains.",
+        "thumbnail": "thumbnailAddAHillshadeLayer",
+        "topic": "Dynamic styling",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/HillShadeActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/add-a-wms-source.md",
+      "path": "/android/maps/examples/add-a-wms-source/",
+      "frontMatter": {
+        "title": "Add a WMS source",
+        "description": "Adding an external Web Map Service layer to the map.",
+        "thumbnail": "thumbnailAddAWmsSource",
+        "topic": "Dynamic styling",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/AddWmsSourceActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/add-an-image-source-with-time-lapse.md",
+      "path": "/android/maps/examples/add-an-image-source-with-time-lapse/",
+      "frontMatter": {
+        "title": "Add an image source with time lapse",
+        "description": "Use an image source and a runnable to show data changes over time.",
+        "thumbnail": "thumbnailAddAnImageSourceWithTimeLapse",
+        "topic": "Dynamic styling",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoAddAnImageSourceWithTimeLapse from '../../../video/example-showtimelapse.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/ImageSourceTimeLapseActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/adjust-a-layers-opacity.md",
+      "path": "/android/maps/examples/adjust-a-layers-opacity/",
+      "frontMatter": {
+        "title": "Adjust a layer's opacity",
+        "description": "Drag the seek bar to adjust the opacity of a raster layer on top of a map.",
+        "thumbnail": "thumbnailAdjustALayersOpacity",
+        "topic": "Dynamic styling",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoAdjustALayersOpacity from '../../../video/example-adjustalayersopacity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/AdjustLayerOpacityActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/add-multiple-heatmap-styles.md",
+      "path": "/android/maps/examples/add-multiple-heatmap-styles/",
+      "frontMatter": {
+        "title": "Add multiple heatmap styles",
+        "description": "Gain minute control over heat map coloring, size, density, and other styling.",
+        "thumbnail": "thumbnailAddMultipleHeatmapStyles",
+        "topic": "Data visualization",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoAddMultipleHeatmapStyles from '../../../video/example-stylingheatmaps.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/MultipleHeatmapStylingActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/adjust-light-location-and-color.md",
+      "path": "/android/maps/examples/adjust-light-location-and-color/",
+      "frontMatter": {
+        "title": "Adjust light location and color",
+        "description": "Change the location and color of the light that's shined on extrusions.",
+        "thumbnail": "thumbnailAdjustLightLocationAndColor",
+        "topic": "Extrusions",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoAdjustLightLocationColor from '../../../video/example-adjustlightlocationcolor.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/AdjustExtrusionLightActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/animate-marker-position.md",
+      "path": "/android/maps/examples/animate-marker-position/",
+      "frontMatter": {
+        "title": "Animate marker position",
+        "description": "Animate the marker to a new position on the map.",
+        "thumbnail": "thumbnailAnimateMarkerPosition",
+        "topic": "Dynamic styling",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoAnimateMarkerPosition from '../../../video/example-animatemarkerposition.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/AnimatedMarkerActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/animate-the-map-camera.md",
+      "path": "/android/maps/examples/animate-the-map-camera/",
+      "frontMatter": {
+        "title": "Animate the map camera",
+        "description": "Animate the map's camera position, tilt, bearing, and zoom.",
+        "thumbnail": "thumbnailAnimateTheMapCamera",
+        "topic": "Camera",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoAnimateTheMapCamera from '../../../video/example-animatethemapcamera.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/AnimateMapCameraActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/api-response-icon-update.md",
+      "path": "/android/maps/examples/api-response-icon-update/",
+      "frontMatter": {
+        "title": "Icon update based on API response",
+        "description": "Update a SymbolLayer icon based on an API call and response.",
+        "thumbnail": "http://i.imgur.com/PxuB1T8.png",
+        "topic": "Dynamic styling",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoApiResponseIconUpdateActivity from '../../../video/example-api-response-icon-update.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/SpaceStationLocationActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/bathymetry.md",
+      "path": "/android/maps/examples/bathymetry/",
+      "frontMatter": {
+        "title": "Display water depth",
+        "description": "Use data-driven styling to show bathymetry (water depth) data.",
+        "thumbnail": "https://i.imgur.com/mwhOcIR.png",
+        "topic": "Data visualization",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoBathymetryActivity from '../../../video/example-bathymetry-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/BathymetryActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/building-outline.md",
+      "path": "/android/maps/examples/building-outline/",
+      "frontMatter": {
+        "title": "Show building outline",
+        "description": "Query the building layer and show a building's outline.",
+        "thumbnail": "thumbnailBuildingOutline",
+        "topic": "Querying the map",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoBuildingOutline from '../../../video/example-building-outline.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/BuildingOutlineActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/calendar-integration.md",
+      "path": "/android/maps/examples/calendar-integration/",
+      "frontMatter": {
+        "title": "Calendar integration",
+        "description": "Show calendar event locations on the map.",
+        "thumbnail": "https://i.imgur.com/M8TU7nH.png",
+        "topic": "Data visualization",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoCalendarIntegrationActivity from '../../../video/example-calendar-integration-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/CalendarIntegrationActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/change-a-layers-color.md",
+      "path": "/android/maps/examples/change-a-layers-color/",
+      "frontMatter": {
+        "title": "Change a layer's color",
+        "description": "Using layer set to change a layer's fill color.",
+        "thumbnail": "thumbnailChangeALayersColor",
+        "topic": "Dynamic styling",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoChangeALayersColor from '../../../video/example-changealayerscolor.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/ColorSwitcherActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/change-a-maps-language.md",
+      "path": "/android/maps/examples/change-a-maps-language/",
+      "frontMatter": {
+        "title": "Change a map's language",
+        "description": "Switch the map's language dynamically.",
+        "thumbnail": "thumbnailChangeAMapsLanguage",
+        "topic": "Dynamic styling",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoChangeAMapsLanguage from '../../../video/example-changeamapslanguage.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/LanguageSwitchActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/change-color-based-on-zoom-level.md",
+      "path": "/android/maps/examples/change-color-based-on-zoom-level/",
+      "frontMatter": {
+        "title": "Change color based on zoom level",
+        "description": "Make a property depend on the map zoom level, in this case, the water layers fill color.",
+        "thumbnail": "thumbnailChangeColorBasedOnZoomLevel",
+        "topic": "Dynamic styling",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoColorDependentOnZoomLevel from '../../../video/example-colordependentonzoomlevel.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/ZoomDependentFillColorActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/circle-layer-clustering.md",
+      "path": "/android/maps/examples/circle-layer-clustering/",
+      "frontMatter": {
+        "title": "CircleLayer clusters",
+        "description": "Use GeoJSON and circle layers to visualize point data in clusters.",
+        "thumbnail": "http://i.imgur.com/fGeZhcD.png",
+        "topic": "Data visualization",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoCircleLayerClusteringActivity from '../../../video/example-createandstyleclusters.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/CircleLayerClusteringActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/click-on-a-single-layer.md",
+      "path": "/android/maps/examples/click-on-a-single-layer/",
+      "frontMatter": {
+        "title": "Click on a single layer",
+        "description": "Click on and highlight a selected a GeoJSON polygon.",
+        "thumbnail": "thumbnailClickOnASingleLayer",
+        "topic": "User interaction",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoClickOnSingleLayer from '../../../video/example-clickonsinglelayer.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/ClickOnLayerActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/create-a-line-layer.md",
+      "path": "/android/maps/examples/create-a-line-layer/",
+      "frontMatter": {
+        "title": "Create a line layer",
+        "description": "Create a GeoJSON line source, style it using properties, and add the layer to the map.",
+        "thumbnail": "thumbnailCreateALineLayer",
+        "topic": "Data visualization",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/LineLayerActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/count-features-in-a-selected-area.md",
+      "path": "/android/maps/examples/count-features-in-a-selected-area/",
+      "frontMatter": {
+        "title": "Count features in a selected area",
+        "description": "Get the feature count inside a bounding box and highlight all the  buidings.",
+        "thumbnail": "thumbnailCountFeaturesInASelectedArea",
+        "topic": "User interaction",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoCountFeaturesInASelectedArea from '../../../video/example-featurecount.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/FeatureCountActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/click-to-add-image.md",
+      "path": "/android/maps/examples/click-to-add-image/",
+      "frontMatter": {
+        "title": "Click to add photo",
+        "description": "Select a photo on the device and add it on the map tap location.",
+        "thumbnail": "https://i.imgur.com/uPIH5Ck.png",
+        "topic": "Dynamic styling",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoClickToAddImageActivity from '../../../video/example-click-to-add-image-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/ClickToAddImageActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/create-a-simple-map-view.md",
+      "path": "/android/maps/examples/create-a-simple-map-view/",
+      "frontMatter": {
+        "title": "Create a simple map view",
+        "description": "Learn how to quickly display a Mapbox Street map in your app.",
+        "topic": "Getting started",
+        "thumbnail": "thumbnailCreateASimpleMapView",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoSimpleMapViewVideo from '../../../video/example-simple-mapview.mp4'",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode, rawKotlinCode } from '../../../example-code/SimpleMapViewActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/create-hotspots-from-points.md",
+      "path": "/android/maps/examples/create-hotspots-from-points/",
+      "frontMatter": {
+        "title": "Create hotspots from points",
+        "description": "Use the Maps SDK to visualize point data as hotspots.",
+        "thumbnail": "thumbnailCreateHotspotsFromPoints",
+        "topic": "Data visualization",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoCreateHotspotsFromPoints from '../../../video/example-createhotspotsfrompoints.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/CreateHotspotsActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/dashed-line-directions-picker.md",
+      "path": "/android/maps/examples/dashed-line-directions-picker/",
+      "frontMatter": {
+        "title": "Directions to selected location",
+        "description": "Show a dotted directions route to a location that\\'s based on map movement.",
+        "thumbnail": "https://i.imgur.com/0dpCI14.png",
+        "topic": "User interaction",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoDashedLineDirectionsPickerActivity from '../../../video/example-dashed-line-directions-picker-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/DashedLineDirectionsPickerActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/data-time-lapse.md",
+      "path": "/android/maps/examples/data-time-lapse/",
+      "frontMatter": {
+        "title": "Data time lapse",
+        "description": "Use data-driven styling to visualize point data with a time lapse effect; rainfall in China in this example.",
+        "thumbnail": "thumbnailDataTimeLapse",
+        "topic": "Data visualization",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoDataTimeLapse from '../../../video/example-data-time-lapse.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/AddRainFallStyleActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/display-3d-building-height-based-on-vector-data.md",
+      "path": "/android/maps/examples/display-3d-building-height-based-on-vector-data/",
+      "frontMatter": {
+        "title": "Display 3D building height based on vector data",
+        "description": "Use imported vector data to set the height of 3D building extrusions.",
+        "thumbnail": "thumbnailDisplay3dBuildingHeightBasedOnVectorData",
+        "topic": "Extrusions",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/PopulationDensityExtrusionActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/display-a-heatmap.md",
+      "path": "/android/maps/examples/display-a-heatmap/",
+      "frontMatter": {
+        "title": "Display a heatmap",
+        "description": "Add and customize a heatmap to visualize data.",
+        "thumbnail": "thumbnailDisplayAHeatmap",
+        "topic": "Data visualization",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoDisplayAHeatmap from '../../../video/example-showheatmapdata.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/HeatmapActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/display-a-snapshot-notification.md",
+      "path": "/android/maps/examples/display-a-snapshot-notification/",
+      "frontMatter": {
+        "title": "Display a snapshot notification",
+        "description": "Show a snapshotted map image in a notification.",
+        "thumbnail": "thumbnailDisplayASnapshotNotification",
+        "topic": "Image generation",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoDisplayASnapshotNotification from '../../../video/example-snapshotnotification.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/SnapshotNotificationActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/display-data-with-a-time-lapse-effect.md",
+      "path": "/android/maps/examples/display-data-with-a-time-lapse-effect/",
+      "frontMatter": {
+        "title": "Display data with a time lapse effect",
+        "description": "Use data-driven styling to visualize point data with a time lapse effect; rainfall in China in this example.",
+        "thumbnail": "thumbnailDisplayDataWithATimeLapseEffect",
+        "topic": "Data visualization",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoDisplayDataWithATimeLapseEffect from '../../../video/example-datatimelapse.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/AddRainFallStyleActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/download-a-simple-offline-map.md",
+      "path": "/android/maps/examples/download-a-simple-offline-map/",
+      "frontMatter": {
+        "title": "Download a simple offline map",
+        "description": "Download and view an offline map using the Maps SDK.",
+        "thumbnail": "thumbnailDownloadASimpleOfflineMap",
+        "topic": "Offline",
+        "prependJs": [
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/SimpleOfflineMapActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/draw-a-geojson-line.md",
+      "path": "/android/maps/examples/draw-a-geojson-line/",
+      "frontMatter": {
+        "title": "Draw a GeoJSON line",
+        "description": "Draw a polyline by parsing a GeoJSON file with the Map SDK.",
+        "thumbnail": "thumbnailDrawAGeojsonLine",
+        "topic": "Data visualization",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/DrawGeojsonLineActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/draw-a-polygon-with-holes.md",
+      "path": "/android/maps/examples/draw-a-polygon-with-holes/",
+      "frontMatter": {
+        "title": "Draw a polygon with holes",
+        "description": "Draw a vector polygon with holes on a map using the Map SDK.",
+        "thumbnail": "thumbnailDrawAPolygonWithHolder",
+        "topic": "Data visualization",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/PolygonHolesActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/draw-a-polygon.md",
+      "path": "/android/maps/examples/draw-a-polygon/",
+      "frontMatter": {
+        "title": "Draw a polygon",
+        "description": "Draw a vector polygon on a map with the Map SDK.",
+        "thumbnail": "thumbnailDrawAPolygon",
+        "topic": "Data visualization",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/DrawPolygonActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/dynamically-build-a-map-view.md",
+      "path": "/android/maps/examples/dynamically-build-a-map-view/",
+      "frontMatter": {
+        "title": "Dynamically build a map view",
+        "description": "Add a mapview in a dynamically created layout.",
+        "thumbnail": "thumbnailDynamicallyBuildAMapView",
+        "topic": "Getting started",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/MapboxMapOptionActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/draw-multiple-geometries.md",
+      "path": "/android/maps/examples/draw-multiple-geometries/",
+      "frontMatter": {
+        "title": "Draw multiple geometries",
+        "description": "Gain minute control over heat map coloring, size, density, and other styling.",
+        "thumbnail": "thumbnailDrawMultipleGeometries",
+        "topic": "Data visualization",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/MultipleGeometriesActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/finger-draw-query.md",
+      "path": "/android/maps/examples/finger-draw-query/",
+      "frontMatter": {
+        "title": "Drawing search area",
+        "description": "Drag a finger on the map to draw a search area.",
+        "thumbnail": "https://i.imgur.com/vf5uZyS.png",
+        "topic": "User interaction",
+        "contentType": "example",
+        "language": [
+          "Java"
+        ],
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoFingerDrawQueryActivity from '../../../video/example-finger-draw-query-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/FingerDrawQueryActivity.js'"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/extrude-polygons-for-3d-indoor-mapping.md",
+      "path": "/android/maps/examples/extrude-polygons-for-3d-indoor-mapping/",
+      "frontMatter": {
+        "title": "Extrude polygons for 3D indoor mapping",
+        "description": "Create a 3D indoor map with the full-extrude-height paint property.",
+        "thumbnail": "thumbnailExtrudePolygonsFor3DIndoorMapping",
+        "topic": "Extrusions",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/Indoor3DMapActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/fit-camera-in-bounding-box.md",
+      "path": "/android/maps/examples/fit-camera-in-bounding-box/",
+      "frontMatter": {
+        "title": "Fit camera in bounding box",
+        "description": "Position the camera so that all the given markers are in view.",
+        "thumbnail": "thumbnailFitCameraInBoundingBox",
+        "topic": "Camera",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoFitCameraInBoundingBox from '../../../video/example-fitcamerainboundingbox.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/BoundingBoxCameraActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/floor-plan.md",
+      "path": "/android/maps/examples/floor-plan/",
+      "frontMatter": {
+        "title": "Indoor mapping floor plan",
+        "description": "Display an indoor map of a building with toggles to switch between floor levels.",
+        "thumbnail": "thumbnailIndoorFloorPlan",
+        "topic": "Dynamic styling",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoIndoorFloorPlan from '../../../video/example-indoor-floor-plan.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/IndoorMapActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/highlighted-line.md",
+      "path": "/android/maps/examples/highlighted-line/",
+      "frontMatter": {
+        "title": "Highlight selected line",
+        "description": "Tap on a line and add a highlight effect behind it.",
+        "thumbnail": "thumbnailHighlightedLine",
+        "topic": "User interaction",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoHighlightedLine from '../../../video/example-highlighted-line.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/HighlightedLineActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/index.js",
+      "path": "/android/maps/examples/",
+      "frontMatter": {
+        "title": "Examples",
+        "description": "Code examples for the Mapbox Maps SDK for Android.",
+        "product": "maps"
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/icon-size-change-on-click.md",
+      "path": "/android/maps/examples/icon-size-change-on-click/",
+      "frontMatter": {
+        "title": "Symbol layer icon size change",
+        "description": "Query the map and animate the change in a SymbolLayer icon's size if clicked on.",
+        "thumbnail": "http://i.imgur.com/TQ4iA0L.png",
+        "topic": "User interaction",
+        "contentType": "example",
+        "language": [
+          "Java"
+        ],
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoIconSizeChangeOnClickActivity from '../../../video/example-icon-size-change-on-click-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/IconSizeChangeOnClickActivity.js'"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/inset-map.md",
+      "path": "/android/maps/examples/inset-map/",
+      "frontMatter": {
+        "title": "Inset map",
+        "description": "Show a smaller inset map fragment and link it to a larger map for two map interaction. Ideal for gaming.",
+        "thumbnail": "thumbnailInsetMap",
+        "topic": "User interaction",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoInsetMap from '../../../video/example-inset-map.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/InsetMapActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/join-local-json-data-with-vector-tile-geometries.md",
+      "path": "/android/maps/examples/join-local-json-data-with-vector-tile-geometries/",
+      "frontMatter": {
+        "title": "Join local JSON data with vector tile geometries",
+        "description": "Style a choropleth map by merging local JSON data with vector tile geometries.",
+        "thumbnail": "thumbnailJoinLocalJsonDataWithVectorTileGeometries",
+        "topic": "Data visualization",
+        "prependJs": [
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/ChoroplethJsonVectorMixActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/line-gradient.md",
+      "path": "/android/maps/examples/line-gradient/",
+      "frontMatter": {
+        "title": "Line gradient",
+        "description": "Style a line with colored gradient.",
+        "thumbnail": "https://i.imgur.com/cXthmpV.png",
+        "topic": "Data visualization",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoLineGradientActivity from '../../../video/example-line-gradient-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/LineGradientActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/location-component-camera-options.md",
+      "path": "/android/maps/examples/location-component-camera-options/",
+      "frontMatter": {
+        "title": "Location camera options",
+        "description": "Use LocationComponent camera options to customize map camera behavior.",
+        "thumbnail": "https://i.imgur.com/Q2cB3NY.png",
+        "topic": "Device location",
+        "contentType": "example",
+        "language": [
+          "Java"
+        ],
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoLocationComponentCameraOptionsActivity from '../../../video/example-location-component-camera-options-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/LocationComponentCameraOptionsActivity.js'"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/location-component-options.md",
+      "path": "/android/maps/examples/location-component-options/",
+      "frontMatter": {
+        "title": "Customized location icon",
+        "description": "Use location component options to customize the user location information.",
+        "thumbnail": "https://i.imgur.com/4HiEJC1.png",
+        "topic": "Device location",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoLocationComponentOptionsActivity from '../../../video/example-location-component-options-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/LocationComponentOptionsActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/location-picker.md",
+      "path": "/android/maps/examples/location-picker/",
+      "frontMatter": {
+        "title": "Location picker",
+        "description": "Drop a marker at a specific location and then perform reverse geocoding.",
+        "thumbnail": "http://i.imgur.com/0JTVwaa.png",
+        "topic": "User interaction",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoLocationPickerActivity from '../../../video/example-location-picker-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/LocationPickerActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/map-fog-background.md",
+      "path": "/android/maps/examples/map-fog-background/",
+      "frontMatter": {
+        "title": "Background fog",
+        "description": "Add a gradient on top of a MapView to show a background fog effect.",
+        "thumbnail": "https://i.imgur.com/NcSGgD8.png",
+        "topic": "User interaction",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoMapFogBackgroundActivity from '../../../video/example-map-fog-background-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/MapFogBackgroundActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/marker-following-route.md",
+      "path": "/android/maps/examples/marker-following-route/",
+      "frontMatter": {
+        "title": "Marker following route",
+        "description": "Using a map matched GeoJSON route, the marker travels along the route at consistent speed.",
+        "thumbnail": "http://i.imgur.com/spsZu9X.png",
+        "topic": "Dynamic styling",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoMarkerFollowingRouteActivity from '../../../video/example-marker-following-route-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/MarkerFollowingRouteActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/missing-icon.md",
+      "path": "/android/maps/examples/missing-icon/",
+      "frontMatter": {
+        "title": "Style with missing icon",
+        "description": "Provide an icon when a Style fails to load one.",
+        "thumbnail": "https://i.imgur.com/lSk2tDB.png",
+        "topic": "Dynamic styling",
+        "contentType": "example",
+        "language": [
+          "Java"
+        ],
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoMissingIconActivity from '../../../video/example-missing-icon-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/MissingIconActivity.js'"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/marker-symbol-layer.md",
+      "path": "/android/maps/examples/marker-symbol-layer/",
+      "frontMatter": {
+        "title": "Marker symbol layer",
+        "description": "Display markers on the map with SymbolLayer icons.",
+        "thumbnail": "https://i.imgur.com/Q5TJIca.png",
+        "topic": "Data visualization",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoSymbolLayerMarkerIcon from '../../../video/example-marker-symbol-layer.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/BasicSymbolLayerActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/moving-icon-with-trailing-line.md",
+      "path": "/android/maps/examples/moving-icon-with-trailing-line/",
+      "frontMatter": {
+        "title": "Line behind moving icon",
+        "description": "Draw a line behind a moving SymbolLayer icon which moves along a Mapbox Directions API route.",
+        "thumbnail": "https://i.imgur.com/jyrQn10.png",
+        "topic": "Data visualization",
+        "contentType": "example",
+        "language": [
+          "Java"
+        ],
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoMovingIconWithTrailingLineActivity from '../../../video/example-moving-icon-with-trailing-line-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/MovingIconWithTrailingLineActivity.js'"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/multiple-expressions-temperature-change.md",
+      "path": "/android/maps/examples/multiple-expressions-temperature-change/",
+      "frontMatter": {
+        "title": "Multiple expressions",
+        "description": "Use multiple expressions to visualize unit change in data.",
+        "thumbnail": "thumbnailMultipleExpressions",
+        "topic": "Data visualization",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoMultipleExpressions from '../../../video/example-multiple-expresions-temp-change.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/ExpressionIntegrationActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/picture-in-picture.md",
+      "path": "/android/maps/examples/picture-in-picture/",
+      "frontMatter": {
+        "title": "Picture-in-picture",
+        "description": "Use the Android system's picture-in-picture functionality to maintain a map in a separate window (requires Android O and above).",
+        "thumbnail": "thumbnailPictureInPicture",
+        "topic": "Dynamic styling",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoPictureInPicture from '../../../video/example-picture-in-picture.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/PictureInPictureActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/pulsing-layer-opacity.md",
+      "path": "/android/maps/examples/pulsing-layer-opacity/",
+      "frontMatter": {
+        "title": "Pulsing layer opacity",
+        "description": "Use the style API to adjust layers' opacity to highlight data. Los Angeles' parks, hotels, and attractions are displayed in this example.",
+        "thumbnail": "thumbnailPulsingOpacity",
+        "topic": "Dynamic styling",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoPulsingOpacity from '../../../video/example-pulsing-opacity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/PulsingLayerOpacityColorActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/query-a-map-feature.md",
+      "path": "/android/maps/examples/query-a-map-feature/",
+      "frontMatter": {
+        "title": "Query a map feature",
+        "description": "Click the map to add a marker at the location and display the maps property information for this feature.",
+        "thumbnail": "thumbnailQueryAMapFeature",
+        "topic": "Querying the map",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoQueryAMapFeature from '../../../video/example-queryamapfeature.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/QueryFeatureActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/recyclerview-interaction.md",
+      "path": "/android/maps/examples/recyclerview-interaction/",
+      "frontMatter": {
+        "title": "RecyclerView integration",
+        "description": "Manipulate the map based on RecyclerView interactions.",
+        "thumbnail": "thumbnailRecyclerViewInteraction",
+        "topic": "User interaction",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoRecyclerViewInteraction from '../../../video/example-recyclerview-interaction.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/RecyclerViewOnMapActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/redo-search-in-area.md",
+      "path": "/android/maps/examples/redo-search-in-area/",
+      "frontMatter": {
+        "title": "Search again in an area",
+        "description": "Redo search for certain features in a certain area once the map is moved.",
+        "thumbnail": "thumbnailRedoSearch",
+        "topic": "User interaction",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoRedoSearch from '../../../video/example-redo-search.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/RedoSearchInAreaActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/restrict-map-panning.md",
+      "path": "/android/maps/examples/restrict-map-panning/",
+      "frontMatter": {
+        "title": "Restrict map panning",
+        "description": "Prevent a map from being panned to a different place.",
+        "thumbnail": "thumbnailRestrictMapPanning",
+        "topic": "Camera",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoRestrictMapPanning from '../../../video/example-restrictmappanning.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/RestrictCameraActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/rotate-extrustions.md",
+      "path": "/android/maps/examples/rotate-extrustions/",
+      "frontMatter": {
+        "title": "Rotate extrusions",
+        "description": "Rotate a map with 3D buildings.",
+        "thumbnail": "thumbnailRotateExtrusions",
+        "topic": "Extrusions",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoRotateAndTilt3DBuildings from '../../../video/example-rotateandtilt3dbuildings.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/RotationExtrusionActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/revealed-polygon-hole-outline.md",
+      "path": "/android/maps/examples/revealed-polygon-hole-outline/",
+      "frontMatter": {
+        "title": "Outlined polygon hole",
+        "description": "Outline a polygon hole to highlight a revealed region.",
+        "thumbnail": null,
+        "topic": "Data visualization",
+        "contentType": "example",
+        "language": [
+          "Java"
+        ],
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoRevealedPolygonHoleOutlineActivity from '../../../video/example-revealed-polygon-hole-outline-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/RevealedPolygonHoleOutlineActivity.js'"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/rotating-text-anchor-position.md",
+      "path": "/android/maps/examples/rotating-text-anchor-position/",
+      "frontMatter": {
+        "title": "Text anchor position",
+        "description": "Adjust the anchor position of SymbolLayer text fields.",
+        "thumbnail": "https://i.imgur.com/w8cP6Wn.png",
+        "topic": "Dynamic styling",
+        "contentType": "example",
+        "language": [
+          "Java"
+        ],
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoRotatingTextAnchorPositionActivity from '../../../video/example-rotating-text-anchor-position-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/RotatingTextAnchorPositionActivity.js'"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/satellite-land-select.md",
+      "path": "/android/maps/examples/satellite-land-select/",
+      "frontMatter": {
+        "title": "Satellite land select",
+        "description": "View satellite photos and click to outline an area of land.",
+        "thumbnail": "https://i.imgur.com/tfbO1m4.png",
+        "topic": "Data visualization",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoSatelliteLandSelectActivity from '../../../video/example-satellite-land-select-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/SatelliteLandSelectActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/select-a-building.md",
+      "path": "/android/maps/examples/select-a-building/",
+      "frontMatter": {
+        "title": "Select a building",
+        "description": "Use the query feature to select a building, get its geometry and draw a polygon highlighting it.",
+        "thumbnail": "http://i.imgur.com/bImud7u.png",
+        "topic": "Querying the map",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoSelectABuilding from '../../../video/example-selectabuilding.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/SelectBuildingActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/satellite-opacity-on-zoom.md",
+      "path": "/android/maps/examples/satellite-opacity-on-zoom/",
+      "frontMatter": {
+        "title": "Satellite opacity fade",
+        "description": "Adjust the opacity of a satellite raster layer based on zoom level.",
+        "thumbnail": "https://i.imgur.com/1sPnDx5.png",
+        "topic": "Dynamic styling",
+        "contentType": "example",
+        "language": [
+          "Java"
+        ],
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoSatelliteOpacityOnZoomActivity from '../../../video/example-switchmapstyleswithfade.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/SatelliteOpacityOnZoomActivity.js'"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/set-up-offline-manager.md",
+      "path": "/android/maps/examples/set-up-offline-manager/",
+      "frontMatter": {
+        "title": "Set up offline manager",
+        "description": "Download, view, navigate to, and delete an offline region.",
+        "thumbnail": "thumbnailSetUpOfflineManager",
+        "topic": "Offline",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoOfflineManager from '../../../video/example-offlinemanager.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/OfflineManagerActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/share-a-snapshot.md",
+      "path": "/android/maps/examples/share-a-snapshot/",
+      "frontMatter": {
+        "title": "Share a snapshot",
+        "description": "Send and share a map snapshot image.",
+        "thumbnail": "thumbnailShareASnapshot",
+        "topic": "Image generation",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoSnapshotShare from '../../../video/example-shareasnapshotimage.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/SnapshotShareActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/show-a-users-location-on-a-fragment.md",
+      "path": "/android/maps/examples/show-a-users-location-on-a-fragment/",
+      "frontMatter": {
+        "title": "Add user's location to a map fragment",
+        "description": "Use the LocationComponent to show a user's location in a map fragment.",
+        "thumbnail": "thumbnailLocationComponentFragment",
+        "topic": "Device location",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoShowAUsersLocationInFragment from '../../../video/show-user-location-in-fragment.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/LocationComponentFragmentActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/show-a-users-location.md",
+      "path": "/android/maps/examples/show-a-users-location/",
+      "frontMatter": {
+        "title": "Show a user's location",
+        "description": "Use the LocationComponent to show the user's current location on the map.",
+        "thumbnail": "thumbnailLocationComponent",
+        "topic": "Device location",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoShowAUsersLocation from '../../../video/example-showauserslocation.mp4'",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode, rawKotlinCode } from '../../../example-code/LocationComponentActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/show-and-hide-layer.md",
+      "path": "/android/maps/examples/show-and-hide-layer/",
+      "frontMatter": {
+        "title": "Show and hide layers",
+        "description": "Create a custom layer switcher to display different datasets.",
+        "thumbnail": "thumbnailShowAndHideLayers",
+        "topic": "Dynamic styling",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoShowAndHideLayers from '../../../video/example-showandhidelayers.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/ShowHideLayersActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/slowly-rotating-camera.md",
+      "path": "/android/maps/examples/slowly-rotating-camera/",
+      "frontMatter": {
+        "title": "Rotating camera",
+        "description": "Slowly have the camera circle around a single point.",
+        "thumbnail": "https://i.imgur.com/uuiOK5D.png",
+        "topic": "Camera",
+        "contentType": "example",
+        "language": [
+          "Java"
+        ],
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoSlowlyRotatingCameraActivity from '../../../video/example-slowly-rotating-camera-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/SlowlyRotatingCameraActivity.js'"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/snaking-directions-route.md",
+      "path": "/android/maps/examples/snaking-directions-route/",
+      "frontMatter": {
+        "title": "Snaking directions",
+        "description": "Rather than showing the directions route all at once, have it \"snake\" from the origin to destination.",
+        "thumbnail": "https://i.imgur.com/6jWEFJi.png",
+        "topic": "User interaction",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoSnakingDirectionsRouteActivity from '../../../video/example-snaking-directions-line.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/SnakingDirectionsRouteActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/style-circles-categorically.md",
+      "path": "/android/maps/examples/style-circles-categorically/",
+      "frontMatter": {
+        "title": "Style circles categorically",
+        "description": "Using a categorical circle-color property function for a visualization.",
+        "thumbnail": "thumbnailStyleCirclesCategorically",
+        "topic": "Dynamic styling",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode, rawKotlinCode } from '../../../example-code/StyleCirclesCategoricallyActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/style-lines-using-an-identity-property-function.md",
+      "path": "/android/maps/examples/style-lines-using-an-identity-property-function/",
+      "frontMatter": {
+        "title": "Style lines using an identity property function",
+        "description": "Using an identity line-color property function for a visualization.",
+        "thumbnail": "thumbnailStyleLinesUsingAsIdentityPropertyFunction",
+        "topic": "Dynamic styling",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/StyleLineIdentityPropertyActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/symbol-collision-detection.md",
+      "path": "/android/maps/examples/symbol-collision-detection/",
+      "frontMatter": {
+        "title": "Toggle collision detection",
+        "description": "Allow or deny text and icons to overlap and collide.",
+        "thumbnail": "https://i.imgur.com/nV1YnIv.png",
+        "topic": "Dynamic styling",
+        "contentType": "example",
+        "language": [
+          "Java"
+        ],
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoSymbolCollisionDetectionActivity from '../../../video/example-symbol-collision-detection-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/SymbolCollisionDetectionActivity.js'"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/support-map-fragment.md",
+      "path": "/android/maps/examples/support-map-fragment/",
+      "frontMatter": {
+        "title": "Map fragment",
+        "description": "Include a map fragment within your app.",
+        "thumbnail": "thumbnailSupportMapFragment",
+        "topic": "Getting started",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoSupportMapFragment from '../../../video/example-support-map-fragment.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/SupportMapFragmentActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/symbol-layer-clustering.md",
+      "path": "/android/maps/examples/symbol-layer-clustering/",
+      "frontMatter": {
+        "title": "SymbolLayer image clustering",
+        "description": "Use GeoJSON and SymbolLayer icons to view clustered images.",
+        "thumbnail": "thumbnailSymbolLayerClustering",
+        "topic": "Data visualization",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoSymbolLayerClustering from '../../../video/example-symbol-layer-clustering.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/ImageClusteringActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/symbol-layer-info-window.md",
+      "path": "/android/maps/examples/symbol-layer-info-window/",
+      "frontMatter": {
+        "title": "SymbolLayer info window",
+        "description": "Use SymbolLayer and icons to show data in a BubbleLayout \"info window\".",
+        "thumbnail": "thumbnailSymbolLayerInfoWindow",
+        "topic": "Dynamic styling",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoSymbolLayerInfoWindow from '../../../video/example-symbol-layer-info-window.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/InfoWindowSymbolLayerActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/symbol-switch-on-zoom.md",
+      "path": "/android/maps/examples/symbol-switch-on-zoom/",
+      "frontMatter": {
+        "title": "Zoom-based icon switch",
+        "description": "Change SymbolLayer icons based on the camera\\'s zoom level.",
+        "thumbnail": "https://i.imgur.com/sbWU4Ui.png",
+        "topic": "Dynamic styling",
+        "contentType": "example",
+        "language": [
+          "Java"
+        ],
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoSymbolSwitchOnZoomActivity from '../../../video/example-symbol-switch-on-zoom-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/SymbolSwitchOnZoomActivity.js'"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/symbollayer-mapillary.md",
+      "path": "/android/maps/examples/symbollayer-mapillary/",
+      "frontMatter": {
+        "title": "SymbolLayer icons and Mapillary integration",
+        "description": "Add markers via SymbolLayer and manipulate the data in real time. A Mapillary integration is also showcased in this example.",
+        "thumbnail": "thumbnailMapillary",
+        "topic": "Dynamic styling",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoMapillary from '../../../video/example-mapillary.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/SymbolLayerMapillaryActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/text-field-formatting.md",
+      "path": "/android/maps/examples/text-field-formatting/",
+      "frontMatter": {
+        "title": "Adjust formatting of text labels",
+        "description": "Use runtime styling to toggle the color, size, and font of SymbolLayer text fields.",
+        "thumbnail": "https://i.imgur.com/MSoIYmU.png",
+        "topic": "Dynamic styling",
+        "contentType": "example",
+        "language": [
+          "Java"
+        ],
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoTextFieldFormattingActivity from '../../../video/example-text-field-formatting-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/TextFieldFormattingActivity.js'"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/text-field-multiple-formats.md",
+      "path": "/android/maps/examples/text-field-multiple-formats/",
+      "frontMatter": {
+        "title": "Multiple text formats",
+        "description": "Use a format expression to style labels in multiple ways.",
+        "thumbnail": "https://i.imgur.com/dpiGiTg.png",
+        "topic": "Dynamic styling",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoTextFieldMultipleFormatsActivity from '../../../video/example-text-field-multiple-formats-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/TextFieldMultipleFormatsActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/transparent-background.md",
+      "path": "/android/maps/examples/transparent-background/",
+      "frontMatter": {
+        "title": "Transparent background",
+        "description": "Create a transparent background and fill it with something such as a video of moving water.",
+        "thumbnail": "thumbnailTransparentBackground",
+        "topic": "Dynamic styling",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoTransparentBackground from '../../../video/example-transparent-background.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/TransparentBackgroundActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/update-by-zoom-level.md",
+      "path": "/android/maps/examples/update-by-zoom-level/",
+      "frontMatter": {
+        "title": "Update by zoom level",
+        "description": "Display state or county population depending on zoom level.",
+        "thumbnail": "thumbnailUpdateByZoomLevel",
+        "topic": "Data visualization",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoUpdateByZoomLevel from '../../../video/example-updatechoroplethlayerbyzoom.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/ChoroplethZoomChangeActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/use-a-local-style-source.md",
+      "path": "/android/maps/examples/use-a-local-style-source/",
+      "frontMatter": {
+        "title": "Use a local style source",
+        "description": "Example loads the map style via a locally stored style JSON file or custom raster style.",
+        "thumbnail": "thumbnailUseALocalStyleSource",
+        "topic": "Map style",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoUseALocalStyleSource from '../../../video/example-localstyleorcustomrasterstyle.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/LocalStyleSourceActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/use-a-mapbox-studio-style.md",
+      "path": "/android/maps/examples/use-a-mapbox-studio-style/",
+      "frontMatter": {
+        "title": "Use a Mapbox Studio style",
+        "description": "Use a custom Mapbox-hosted style.",
+        "thumbnail": "thumbnailUseAMapboxStudioStyle",
+        "topic": "Map style",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/MapboxStudioStyleActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/use-an-image-source.md",
+      "path": "/android/maps/examples/use-an-image-source/",
+      "frontMatter": {
+        "title": "Use an image source",
+        "description": "Use an image source to display images on the map.",
+        "thumbnail": "thumbnailUseAnImageSource",
+        "topic": "Dynamic styling",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/ImageSourceActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/use-default-styles.md",
+      "path": "/android/maps/examples/use-default-styles/",
+      "frontMatter": {
+        "title": "Use default styles",
+        "description": "Use a variety of professionally designed styles with the Map SDK.",
+        "thumbnail": "thumbnailUseDefaultStyles",
+        "topic": "Map style",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoDefaultStyles from '../../../video/example-defaultstyles.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/DefaultStyleActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/use-geojson-data-to-set-extrusion-height.md",
+      "path": "/android/maps/examples/use-geojson-data-to-set-extrusion-height/",
+      "frontMatter": {
+        "title": "Use GeoJSON data to set extrusion height",
+        "description": "Use data-driven styling and GeoJSON data to set extrusions' heights.",
+        "thumbnail": "thumbnailUseGeojsonDataToSetExtrusionHeight",
+        "topic": "Extrusions",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoGeojsonMarathonExtrusion from '../../../video/example-marathon-geojson-extrusion.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/MarathonExtrusionActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/value-animator-icon-animation.md",
+      "path": "/android/maps/examples/value-animator-icon-animation/",
+      "frontMatter": {
+        "title": "Animated icon movement",
+        "description": "Use Android system interpolators to animate SymbolLayer icons movement.",
+        "thumbnail": "https://i.imgur.com/JfLf69C.png",
+        "topic": "Dynamic styling",
+        "contentType": "example",
+        "language": [
+          "Java"
+        ],
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoValueAnimatorIconAnimationActivity from '../../../video/example-value-animator-icon-animation-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/ValueAnimatorIconAnimationActivity.js'"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/examples/variable-label-placement.md",
+      "path": "/android/maps/examples/variable-label-placement/",
+      "frontMatter": {
+        "title": "Variable label placement",
+        "description": "To increase the chance of high-priority labels staying visible, provide the map renderer a list of preferred text anchor positions.",
+        "thumbnail": "https://i.imgur.com/vLgFvlZ.jpg",
+        "topic": "Dynamic styling",
+        "contentType": "example",
+        "language": [
+          "Java"
+        ],
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoVariableLabelPlacementActivity from '../../../video/example-variable-label-placement-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/VariableLabelPlacementActivity.js'"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/help/index.js",
+      "path": "/android/maps/help/",
+      "frontMatter": {
+        "title": "Help",
+        "description": "Tutorials, troubleshooting guides and more to help you get started with the Mapbox Maps SDK for Android.",
+        "product": "maps"
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/overview/clustering.md",
+      "path": "/android/maps/overview/clustering/",
+      "frontMatter": {
+        "title": "Data clustering",
+        "description": "Learn how to use the Mapbox Maps SDK for Android to show clustered data on the map.",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image';",
+          "import { Floater } from '../../../components/floater';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/overview/expressions.md",
+      "path": "/android/maps/overview/expressions/",
+      "frontMatter": {
+        "title": "Expressions",
+        "description": "The Mapbox Maps SDK for Android.",
+        "contentType": "guide"
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/overview/query.md",
+      "path": "/android/maps/overview/query/",
+      "frontMatter": {
+        "title": "Query map features",
+        "description": "Official documentation about querying map features within the Mapbox Maps SDK for Android. Discover how to retrieve information about a selected place of interest.",
+        "prependJs": [
+          "import { Floater } from '../../../components/floater';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/overview/snapshotter.md",
+      "path": "/android/maps/overview/snapshotter/",
+      "frontMatter": {
+        "title": "Snapshotter",
+        "description": "Take a static snapshot photo of the map to use on the device in your app, a notification, or even to share with others.",
+        "prependJs": [
+          "import { Floater } from '../../../components/floater';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/overview/styling-map.md",
+      "path": "/android/maps/overview/styling-map/",
+      "frontMatter": {
+        "title": "Styling the map",
+        "description": "Learn how to use the Mapbox Maps SDK for Android to change your map style to a custom style or a pre-made style made by the talented Mapbox cartography team.",
+        "prependJs": [
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/navigation/examples/embedded-navigation.md",
+      "path": "/android/navigation/examples/embedded-navigation/",
+      "frontMatter": {
+        "title": "Embedded navigation",
+        "description": "Navigation in a view which contains other views.",
+        "topic": "Getting started",
+        "thumbnail": "thumbnailEmbeddedNavigation",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/EmbeddedNavigationActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/navigation/examples/index.js",
+      "path": "/android/navigation/examples/",
+      "frontMatter": {
+        "title": "Examples",
+        "description": "Code examples for the Mapbox Navigation SDK for Android.",
+        "product": "navigation"
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/navigation/examples/mock-navigation.md",
+      "path": "/android/navigation/examples/mock-navigation/",
+      "frontMatter": {
+        "title": "Mock navigation",
+        "description": "Mock a navigation session using a mock location engine.",
+        "topic": "Getting started",
+        "thumbnail": "thumbnailMockNavigation",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/MockNavigationActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/navigation/examples/navigation-map-route.md",
+      "path": "/android/navigation/examples/navigation-map-route/",
+      "frontMatter": {
+        "title": "Navigation map route",
+        "description": "Shows different styles using NavigationMapRoute.",
+        "topic": "Getting started",
+        "thumbnail": "thumbnailNavigationMapRoute",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/NavigationMapRouteActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/navigation/examples/navigation-view.md",
+      "path": "/android/navigation/examples/navigation-view/",
+      "frontMatter": {
+        "title": "Navigation views",
+        "description": "Create a drop-in navigation UI experience.",
+        "topic": "Getting started",
+        "thumbnail": "thumbnailNavigationView",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/NavigationViewActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/navigation/examples/navigationview-with-fragment.md",
+      "path": "/android/navigation/examples/navigationview-with-fragment/",
+      "frontMatter": {
+        "title": "NavigationView with Fragment",
+        "description": "NavigationView implemented with Fragment.",
+        "topic": "Getting started",
+        "thumbnail": "thumbnailNavigationViewWithFragment",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/NavigationViewWithFragmentActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/navigation/examples/reroute.md",
+      "path": "/android/navigation/examples/reroute/",
+      "frontMatter": {
+        "title": "Reroute",
+        "description": "Test the reroute feature inside the Navigation SDK for Android.",
+        "topic": "Getting started",
+        "thumbnail": "thumbnailReroute",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/RerouteActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/navigation/examples/waypoint-navigation.md",
+      "path": "/android/navigation/examples/waypoint-navigation/",
+      "frontMatter": {
+        "title": "Waypoint navigation",
+        "description": "Navigation with waypoints between destinations.",
+        "topic": "Getting started",
+        "thumbnail": "thumbnailWaypointNavigation",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/WaypointNavigationActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/navigation/help/index.js",
+      "path": "/android/navigation/help/",
+      "frontMatter": {
+        "title": "Help",
+        "description": "Tutorials, troubleshooting guides and more to help you get started with the Mapbox Navigation SDK for Android.",
+        "product": "navigation"
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/navigation/overview/camera.md",
+      "path": "/android/navigation/overview/camera/",
+      "frontMatter": {
+        "title": "Map camera",
+        "description": "Fine grain control over the map camera during your Android app navigation experience with the Mapbox Navigation SDK for Android. Click to learn how.",
+        "products": [
+          "Navigation SDK",
+          "Navigation UI SDK"
+        ],
+        "prependJs": [
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import BookImage from '@mapbox/dr-ui/book-image';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/navigation/overview/faster-route.md",
+      "path": "/android/navigation/overview/faster-route/",
+      "frontMatter": {
+        "title": "Faster-route detection",
+        "description": "Faster-route detection in the Mapbox Navigation SDK for Android. Read all about it in this official Mapbox documentation.",
+        "products": [
+          "Navigation SDK"
+        ],
+        "prependJs": [
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import BookImage from '@mapbox/dr-ui/book-image';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/navigation/overview/localization.md",
+      "path": "/android/navigation/overview/localization/",
+      "frontMatter": {
+        "title": "Localization and internationalization",
+        "description": "Learn how the Mapbox Navigation SDK determines which language and units of measurement to use for voice and text instructions. Use the default method or customize it for your application.",
+        "products": [
+          "Navigation SDK"
+        ],
+        "prependJs": [
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import BookImage from '@mapbox/dr-ui/book-image';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/navigation/overview/map-matching.md",
+      "path": "/android/navigation/overview/map-matching/",
+      "frontMatter": {
+        "title": "Custom routes",
+        "description": "Use the Mapbox Map Matching API with the Mapbox Navigation SDK or Navigation UI SDK for Android.",
+        "products": [
+          "Navigation SDK",
+          "Navigation UI SDK"
+        ],
+        "prependJs": [
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/navigation/overview/notifications.md",
+      "path": "/android/navigation/overview/notifications/",
+      "frontMatter": {
+        "title": "Device notifications",
+        "description": "Mapbox documentation about how notifications work in the Mapbox Navigation SDK for Android.",
+        "products": [
+          "Navigation SDK"
+        ],
+        "prependJs": [
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/navigation/overview/off-route.md",
+      "path": "/android/navigation/overview/off-route/",
+      "frontMatter": {
+        "title": "Off-route detection",
+        "description": "Learn how to use and customize off-route detection with the Mapbox Navigation SDK for Android for your Android app's navigation experience.",
+        "products": [
+          "Navigation SDK"
+        ],
+        "prependJs": [
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import BookImage from '@mapbox/dr-ui/book-image';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/navigation/overview/user-interaction.md",
+      "path": "/android/navigation/overview/user-interaction/",
+      "frontMatter": {
+        "title": "User interaction",
+        "description": "Understand how to listen for user interaction with the Mapbox Navigation UI SDK for Android.",
+        "products": [
+          "Navigation UI SDK"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/navigation/overview/user-location.md",
+      "path": "/android/navigation/overview/user-location/",
+      "frontMatter": {
+        "title": "User location",
+        "description": "Learn how to retrieve and manager user location in the Mapbox Navigation SDK and Navigation UI SDK for Android.",
+        "products": [
+          "Navigation SDK",
+          "Navigation UI SDK"
+        ],
+        "tag": "fundamentals",
+        "prependJs": [
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import BookImage from '@mapbox/dr-ui/book-image';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/plugins/examples/change-map-text-to-device-language.md",
+      "path": "/android/plugins/examples/change-map-text-to-device-language/",
+      "frontMatter": {
+        "title": "Change map text to device language",
+        "description": "Automatically change map label text to the language set on the device.",
+        "thumbnail": "thumbnailLocalization",
+        "topic": "Getting started",
+        "prependJs": [
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/LocalizationPluginActivity.js'"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/plugins/examples/display-3d-buildings-on-any-map-style.md",
+      "path": "/android/plugins/examples/display-3d-buildings-on-any-map-style/",
+      "frontMatter": {
+        "title": "Display 3D buildings on any map style",
+        "description": "Toggle building layer on and off and can be used with any style.",
+        "thumbnail": "thumbnailBuilding",
+        "topic": "Getting started",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoBuildingPlugin from '../../../video/example-building-plugin.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/BuildingPluginActivity.js'"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/plugins/examples/global-location-search.md",
+      "path": "/android/plugins/examples/global-location-search/",
+      "frontMatter": {
+        "title": "Global location search",
+        "description": "Add geocoding search functionality and UI for finding any region, country, place, or address in the world.",
+        "thumbnail": "thumbnailPlaces",
+        "topic": "Getting started",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoGlobalLocationSearch from '../../../video/example-locationsearch.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/PlacesPluginActivity.js'"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/plugins/examples/index.js",
+      "path": "/android/plugins/examples/",
+      "frontMatter": {
+        "title": "Examples",
+        "description": "Working code examples of Mapbox Plugins for Android",
+        "product": "plugins"
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/plugins/examples/marker-view-plugin.md",
+      "path": "/android/plugins/examples/marker-view-plugin/",
+      "frontMatter": {
+        "title": "MarkerView",
+        "description": "Create a marker with an Android-system View.",
+        "thumbnail": "https://i.imgur.com/DyDVUJr.png",
+        "topic": "Getting started",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoMarkerViewPluginActivity from '../../../video/example-marker-view-plugin-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/MarkerViewPluginActivity.js'"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/plugins/examples/place-picker.md",
+      "path": "/android/plugins/examples/place-picker/",
+      "frontMatter": {
+        "title": "Place Picker",
+        "description": "Use the place picker function of the Places Plugin to choose a specific location in the world.",
+        "thumbnail": "thumbnailPlacePicker",
+        "topic": "Getting started",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoPlacePicker from '../../../video/example-place-picker.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/PlaceSelectionPluginActivity.js'"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/plugins/examples/scalebar-plugin.md",
+      "path": "/android/plugins/examples/scalebar-plugin/",
+      "frontMatter": {
+        "title": "Scale bar",
+        "description": "Add a scale bar to determine distance based on zoom level.",
+        "thumbnail": "https://i.imgur.com/YIGSu0C.png",
+        "topic": "Getting started",
+        "contentType": "example",
+        "language": [
+          "Java"
+        ],
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoScalebarPluginActivity from '../../../video/example-scalebar-plugin-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/ScalebarPluginActivity.js'"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/plugins/examples/show-real-time-traffic-on-a-map.md",
+      "path": "/android/plugins/examples/show-real-time-traffic-on-a-map/",
+      "frontMatter": {
+        "title": "Show real-time traffic on a map",
+        "description": "Toggle the Mapbox Traffic plugin to display real-time traffic data on top of your map.",
+        "thumbnail": "thumbnailTrafficPlugin",
+        "topic": "Getting started",
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoTrafficPlugin from '../../../video/example-traffic-plugin.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/TrafficPluginActivity.js'"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/plugins/examples/symbol-listener.md",
+      "path": "/android/plugins/examples/symbol-listener/",
+      "frontMatter": {
+        "title": "Symbol listener",
+        "description": "Listen for SymbolLayer icon interaction using the Annotation plugin and its built-in listeners.",
+        "thumbnail": "https://i.imgur.com/r9fuJBJ.png",
+        "topic": "Getting started",
+        "contentType": "example",
+        "language": [
+          "Java"
+        ],
+        "prependJs": [
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import videoSymbolListenerActivity from '../../../video/example-symbol-listener-activity.mp4'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode } from '../../../example-code/SymbolListenerActivity.js'"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/plugins/overview/building.md",
+      "path": "/android/plugins/overview/building/",
+      "frontMatter": {
+        "title": "Building",
+        "description": "Read official documentation on the Mapbox Android Building Plugin and how its several lines of code can help you add 3D buildings to your Android app's map.",
+        "prependJs": [
+          "import constants from '../../../constants';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/plugins/overview/index.md",
+      "path": "/android/plugins/overview/",
+      "frontMatter": {
+        "title": "Introduction",
+        "description": "Overview of Mapbox Android plugins.",
+        "prependJs": [
+          "import OverviewHeader from '@mapbox/dr-ui/overview-header';",
+          "import AppropriateImage from '../../../components/appropriate-image';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import constants from '../../../constants';"
+        ],
+        "contentType": "guide"
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/plugins/overview/markerview.md",
+      "path": "/android/plugins/overview/markerview/",
+      "frontMatter": {
+        "title": "MarkerView",
+        "description": "Read docs on the Mapbox MarkerView Plugin for Android. Quickly customize and add Android view-based markers to a Mapbox map.",
+        "prependJs": [
+          "import constants from '../../../constants';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import { WarningNote } from '../../../components/warning-note';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/plugins/overview/offline.md",
+      "path": "/android/plugins/overview/offline/",
+      "frontMatter": {
+        "title": "Offline",
+        "description": "Mapbox Android Offline Plugin.",
+        "prependJs": [
+          "import constants from '../../../constants';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/plugins/overview/scalebar.md",
+      "path": "/android/plugins/overview/scalebar/",
+      "frontMatter": {
+        "title": "Scale bar",
+        "description": "Read docs on the Mapbox Scale Bar Plugin for Android. Provide a display of how far various map features are from one another at a certain zoom level.",
+        "prependJs": [
+          "import constants from '../../../constants';",
+          "import AppropriateImage from '../../../components/appropriate-image';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import { Floater } from '../../../components/floater';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/plugins/overview/traffic.md",
+      "path": "/android/plugins/overview/traffic/",
+      "frontMatter": {
+        "title": "Traffic",
+        "description": "Discover how to display real-time road traffic on your Android map with the Mapbox Android Traffic Plugin. All it requires is two lines of code.",
+        "prependJs": [
+          "import constants from '../../../constants';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/vision/examples/basic-blue-line-ar-navigation.md",
+      "path": "/android/vision/examples/basic-blue-line-ar-navigation/",
+      "frontMatter": {
+        "title": "Basic blue-line AR navigation",
+        "description": "Project a blue route line on the view of the road through your device.",
+        "topic": "AR",
+        "thumbnail": "thumbnailVisionBlueLineArNavigation",
+        "prependJs": [
+          "import ExampleARNavigation from '../../../video/example-ar-navigation.mp4'",
+          "import { VideoWithDeviceFrame } from '../../../components/video-with-device-frame'",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode, rawKotlinCode } from '../../../example-code/SampleArActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/vision/examples/index.js",
+      "path": "/android/vision/examples/",
+      "frontMatter": {
+        "title": "Examples",
+        "description": "Working code examples of Mapbox Vision SDK for Android",
+        "product": "vision"
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/vision/examples/set-up-an-external-camera-source.md",
+      "path": "/android/vision/examples/set-up-an-external-camera-source/",
+      "frontMatter": {
+        "title": "Set up an external camera source",
+        "description": "Use an external camera source instead of a device's built-in camera.",
+        "topic": "Getting started",
+        "thumbnail": "thumbnailVisionSetUpAnExternalCamera",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode, rawKotlinCode } from '../../../example-code/SampleExternalCameraSource.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/vision/examples/speeding-alerts.md",
+      "path": "/android/vision/examples/speeding-alerts/",
+      "frontMatter": {
+        "title": "Speeding alerts",
+        "description": "Display an alert when the vehicle is speeding.",
+        "topic": "Safety",
+        "thumbnail": "thumbnailVisionSpeedingAlert",
+        "prependJs": [
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle'",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block'",
+          "import { rawJavaCode, rawKotlinCode } from '../../../example-code/SampleSafetyActivity.js'"
+        ],
+        "contentType": "example",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/vision/overview/ar.md",
+      "path": "/android/vision/overview/ar/",
+      "frontMatter": {
+        "title": "AR navigation",
+        "description": "Introduction to Mapbox Vision AR for Android.",
+        "prependJs": [
+          "import constants from '../../../constants';",
+          "import ChevronousText from '@mapbox/mr-ui/chevronous-text';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import BookImage from '@mapbox/dr-ui/book-image';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide"
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/vision/overview/safety.md",
+      "path": "/android/vision/overview/safety/",
+      "frontMatter": {
+        "title": "Safety alerts",
+        "description": "Introduction to Mapbox Vision Safety for Android.",
+        "prependJs": [
+          "import constants from '../../../constants';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide"
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/vision/overview/testing-and-development.md",
+      "path": "/android/vision/overview/testing-and-development/",
+      "frontMatter": {
+        "title": "Testing and development",
+        "description": "An overview of strategies for testing and developing with the Vision SDK.",
+        "contentType": "guide",
+        "prependJs": [
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/core/overview/index.md",
+      "path": "/android/core/overview/",
+      "frontMatter": {
+        "title": "Introduction",
+        "description": "Overview of the Mapbox Core Libraries for Android. Easily handle device location, permissions, and connectivity for any app.",
+        "prependJs": [
+          "import OverviewHeader from '@mapbox/dr-ui/overview-header';",
+          "import AppropriateImage from '../../../components/appropriate-image';",
+          "import constants from '../../../constants';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide"
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/java/overview/directions.md",
+      "path": "/android/java/overview/directions/",
+      "frontMatter": {
+        "title": "Directions",
+        "description": "Official documentation on the Mapbox Java SDK Directions API.",
+        "prependJs": [
+          "import { Floater } from '../../../components/floater';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import constants from '../../../constants';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/overview/annotations.md",
+      "path": "/android/maps/overview/annotations/",
+      "frontMatter": {
+        "title": "Annotations",
+        "description": "Looking to annotate a map with the Mapbox Maps SDK for Android. Read this documentation to learn about markers, info windows, lines, polygons, plus more.",
+        "prependJs": [
+          "import { Floater } from '../../../components/floater';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import { WarningNote } from '../../../components/warning-note';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/overview/camera.md",
+      "path": "/android/maps/overview/camera/",
+      "frontMatter": {
+        "title": "Camera",
+        "description": "Information about map camera behavior in the Mapbox Maps SDK for Android. Updating the camera position. Restricting the camera. It's all covered inside.",
+        "prependJs": [
+          "import { Floater } from '../../../components/floater';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/overview/events.md",
+      "path": "/android/maps/overview/events/",
+      "frontMatter": {
+        "title": "Events",
+        "description": "Documentation about map events within the Mapbox Maps SDK for Android. Read about map clicking, flinging, moving, and other Mapbox map events.",
+        "prependJs": [
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/overview/gestures.md",
+      "path": "/android/maps/overview/gestures/",
+      "frontMatter": {
+        "title": "Gestures",
+        "description": "Detecting gestures in the Mapbox Maps SDK for Android.",
+        "prependJs": [
+          "import constants from '../../../constants';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/overview/index.md",
+      "path": "/android/maps/overview/",
+      "frontMatter": {
+        "title": "Introduction",
+        "description": "The official overview documentation for the Mapbox Maps SDK for Android. Learn how to customize your Android app's maps, visualize data, and much more.",
+        "prependJs": [
+          "import OverviewHeader from '@mapbox/dr-ui/overview-header';",
+          "import AppropriateImage from '../../../components/appropriate-image';",
+          "import { Floater } from '../../../components/floater';",
+          "import constants from '../../../constants';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import { WarningNote } from '../../../components/warning-note';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/navigation/overview/index.md",
+      "path": "/android/navigation/overview/",
+      "frontMatter": {
+        "title": "Introduction",
+        "description": "Official documentation and overview of the Mapbox Navigation SDK for Android.",
+        "prependJs": [
+          "import OverviewHeader from '@mapbox/dr-ui/overview-header';",
+          "import AppropriateImage from '../../../components/appropriate-image';",
+          "import constants from '../../../constants';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import BookImage from '@mapbox/dr-ui/book-image';",
+          "import { FundamentalsTag } from '../../../components/fundamentals-tag';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/navigation/overview/map-styling.md",
+      "path": "/android/navigation/overview/map-styling/",
+      "frontMatter": {
+        "title": "Map and app design",
+        "description": "Customize the look of your application made with the Mapbox Navigation UI SDK including adding map styles, styling the route line, and styling non-map UI elements.",
+        "products": [
+          "Navigation UI SDK"
+        ],
+        "prependJs": [
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import AppropriateImage from '../../../components/appropriate-image';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import BookImage from '@mapbox/dr-ui/book-image';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/navigation/overview/route-generation.md",
+      "path": "/android/navigation/overview/route-generation/",
+      "frontMatter": {
+        "title": "Route generation",
+        "description": "Learn how to generate routes for use in the Mapbox Navigation SDK or Navigation UI SDK for Android.",
+        "products": [
+          "Navigation SDK"
+        ],
+        "tag": "fundamentals",
+        "prependJs": [
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import constants from '../../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import BookImage from '@mapbox/dr-ui/book-image';",
+          "import { BearingToleranceMap } from '../../../components/bearing-tolerance-map';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/navigation/overview/route-progress.md",
+      "path": "/android/navigation/overview/route-progress/",
+      "frontMatter": {
+        "title": "Route progress",
+        "description": "Learn how to use a user's progress information along a route with the Mapbox Navigation SDK and Navigation UI for Android.",
+        "products": [
+          "Navigation UI SDK",
+          "Navigation SDK"
+        ],
+        "tag": "fundamentals",
+        "prependJs": [
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import { RouteLegStepMap } from '../../../components/route-leg-step-map';",
+          "import AppropriateImage from '../../../components/appropriate-image'",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import BookImage from '@mapbox/dr-ui/book-image';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/plugins/overview/annotation.md",
+      "path": "/android/plugins/overview/annotation/",
+      "frontMatter": {
+        "title": "Annotation",
+        "description": "Mapbox Android Annotation Plugin.",
+        "prependJs": [
+          "import constants from '../../../constants';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import { Floater } from '../../../components/floater';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/plugins/overview/china.md",
+      "path": "/android/plugins/overview/china/",
+      "frontMatter": {
+        "title": "China",
+        "description": "Read official documentation on the Mapbox China Plugin for Android, which maximizes the Mapbox Maps SDK for Android's performance inside China.",
+        "prependJs": [
+          "import constants from '../../../constants';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/plugins/overview/localization.md",
+      "path": "/android/plugins/overview/localization/",
+      "frontMatter": {
+        "title": "Localization",
+        "description": "Mapbox Android Localization Plugin.",
+        "prependJs": [
+          "import constants from '../../../constants';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/plugins/overview/location-layer.md",
+      "path": "/android/plugins/overview/location-layer/",
+      "frontMatter": {
+        "title": "Location",
+        "description": "Offical documentation about the Mapbox Android Location Layer Plugin. Show the Android device's location on a Mapbox Map in a few quick steps.",
+        "prependJs": [
+          "import constants from '../../../constants';",
+          "import AppropriateImage from '../../../components/appropriate-image';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import { WarningNote } from '../../../components/warning-note';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/vision/overview/index.md",
+      "path": "/android/vision/overview/",
+      "frontMatter": {
+        "title": "Introduction",
+        "description": "The official overview documentation for the Mapbox Vision SDK for Android.",
+        "prependJs": [
+          "import OverviewHeader from '@mapbox/dr-ui/overview-header';",
+          "import AppropriateImage from '../../../components/appropriate-image';",
+          "import ChevronousText from '@mapbox/mr-ui/chevronous-text';",
+          "import constants from '../../../constants';",
+          "import { DownloadNote } from '../../../components/download-note';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';"
+        ],
+        "contentType": "guide"
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/overview/data-driven-styling.md",
+      "path": "/android/maps/overview/data-driven-styling/",
+      "frontMatter": {
+        "title": "Data-driven styling",
+        "description": "Documentation for changing the look and feel of your Mapbox map in real time with the Mapbox Maps SDK for Android.",
+        "prependJs": [
+          "import { Floater } from '../../../components/floater';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import { WarningNote } from '../../../components/warning-note';",
+          "import { DocNote } from '../../../components/note';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/overview/location-component.md",
+      "path": "/android/maps/overview/location-component/",
+      "frontMatter": {
+        "title": "Showing device location",
+        "description": "Showing device location with the Mapbox Maps SDK for Android.",
+        "prependJs": [
+          "import constants from '../../../constants';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import AppropriateImage from '../../../components/appropriate-image';",
+          "import { DocNote } from '../../../components/note';",
+          "import { Floater } from '../../../components/floater';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/navigation/overview/milestones.md",
+      "path": "/android/navigation/overview/milestones/",
+      "frontMatter": {
+        "title": "Maneuver instructions",
+        "description": "Learn how default and custom milestones are used to trigger text and voice instructions in the core Mapbox Navigation SDK and Navigation UI SDK for Android.",
+        "products": [
+          "Navigation SDK",
+          "Navigation UI SDK"
+        ],
+        "prependJs": [
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import BookImage from '@mapbox/dr-ui/book-image';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/navigation/overview/offline-routing.md",
+      "path": "/android/navigation/overview/offline-routing/",
+      "frontMatter": {
+        "title": "Offline routing",
+        "description": "Mapbox offline navigation provides routing functionality from the Navigation SDK for Android in non-connected environments.",
+        "products": [
+          "Navigation SDK"
+        ],
+        "prependJs": [
+          "import constants from '../../../constants';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import BookImage from '@mapbox/dr-ui/book-image';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/plugins/overview/places.md",
+      "path": "/android/plugins/overview/places/",
+      "frontMatter": {
+        "title": "Places",
+        "description": "Read docs on the Mapbox Places Plugin for Android. Easily search destinations, explore what's nearby, or find favorite restaurants, coffee shops, or stores.",
+        "prependJs": [
+          "import constants from '../../../constants';",
+          "import AppropriateImage from '../../../components/appropriate-image';",
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import { DocNote } from '../../../components/note';",
+          "import { Floater } from '../../../components/floater';",
+          "import { Check } from '../../../components/check';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/src/pages/maps/overview/offline.md",
+      "path": "/android/maps/overview/offline/",
+      "frontMatter": {
+        "title": "Offline",
+        "description": "The Mapbox Maps SDK for Android supports offline maps, which works for situation when your Android app has no internet connection. Get started with offline docs here.",
+        "prependJs": [
+          "import CodeLanguageToggle from '../../../components/code-language-toggle';",
+          "import ToggleableCodeBlock from '../../../components/toggleable-code-block';",
+          "import { WarningNote } from '../../../components/warning-note';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import BookImage from '@mapbox/dr-ui/book-image';",
+          "import constants from '../../../constants';",
+          "import { WarningNote } from '../../../components/warning-note';"
+        ],
+        "contentType": "guide",
+        "language": [
+          "Java",
+          "Kotlin"
+        ]
+      }
+    },
+    {
+      "filePath": "/mapbox/android-docs/node_modules/@mapbox/batfish/dist/webpack/default-not-found.js",
+      "path": "/android/404/",
+      "is404": true,
+      "frontMatter": {}
+    }
+  ]
+}
