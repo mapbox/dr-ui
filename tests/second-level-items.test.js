@@ -1266,4 +1266,555 @@ describe('buildSecondLevelItems', () => {
       }
     ]);
   });
+
+  it('Example: Vector tiles > Mapbox Streets v8', () => {
+    expect(
+      build.buildSecondLevelItems([
+        {
+          text: 'Overview',
+          slug: 'overview',
+          level: 2
+        },
+        {
+          text: 'Data sources & updates',
+          slug: 'data-sources--updates',
+          level: 3
+        },
+        {
+          text: 'Multiple geometry types',
+          slug: 'multiple-geometry-types',
+          level: 3
+        },
+        {
+          text: 'OpenStreetMap IDs',
+          slug: 'openstreetmap-ids',
+          level: 3
+        },
+        {
+          text: 'Data stability',
+          slug: 'data-stability',
+          level: 2
+        },
+        {
+          text: 'Common fields',
+          slug: 'common-fields',
+          level: 2
+        },
+        {
+          text: 'name text & name_<lang-code> text',
+          slug: 'name-text--name_lang-code-text',
+          level: 3
+        },
+        {
+          text: 'name_script text',
+          slug: 'name_script-text',
+          level: 3
+        },
+        {
+          text: 'sizerank number',
+          slug: 'sizerank-number',
+          level: 3
+        },
+        {
+          text: 'filterrank number',
+          slug: 'filterrank-number',
+          level: 3
+        },
+        {
+          text: 'maki text',
+          slug: 'maki-text',
+          level: 3
+        },
+        {
+          text: 'Layer Reference',
+          slug: 'layer-reference',
+          level: 2
+        },
+        {
+          text: 'admin',
+          slug: 'admin',
+          level: 3
+        },
+        {
+          text: '<!--admin--> admin_level number',
+          slug: '--admin---admin_level-number',
+          level: 4
+        },
+        {
+          text: '<!--admin--> worldview text',
+          slug: '--admin---worldview-text',
+          level: 4
+        },
+        {
+          text: '<!--admin--> disputed text',
+          slug: '--admin---disputed-text',
+          level: 4
+        },
+        {
+          text: '<!--admin--> maritime text',
+          slug: '--admin---maritime-text',
+          level: 4
+        },
+        {
+          text: '<!--admin--> iso_3166_1 text',
+          slug: '--admin---iso_3166_1-text',
+          level: 4
+        },
+        {
+          text: 'aeroway',
+          slug: 'aeroway',
+          level: 3
+        },
+        {
+          text: '<!--aeroway--> type text',
+          slug: '--aeroway---type-text',
+          level: 4
+        },
+        {
+          text: '<!--aeroway--> ref text',
+          slug: '--aeroway---ref-text',
+          level: 4
+        },
+        {
+          text: 'airport_label',
+          slug: 'airport_label',
+          level: 3
+        },
+        {
+          text: '<!--airport_label--> ref text',
+          slug: '--airport_label---ref-text',
+          level: 4
+        },
+        {
+          text: '<!--airport_label--> maki text',
+          slug: '--airport_label---maki-text',
+          level: 4
+        },
+        {
+          text: 'building',
+          slug: 'building',
+          level: 3
+        },
+        {
+          text: '<!--building--> underground text',
+          slug: '--building---underground-text',
+          level: 4
+        },
+        {
+          text: '<!--building--> type text',
+          slug: '--building---type-text',
+          level: 4
+        },
+        {
+          text: '<!--building--> height number',
+          slug: '--building---height-number',
+          level: 4
+        },
+        {
+          text: '<!--building--> min_height number',
+          slug: '--building---min_height-number',
+          level: 4
+        },
+        {
+          text: '<!--building--> extrude text',
+          slug: '--building---extrude-text',
+          level: 4
+        },
+        {
+          text: 'housenum_label',
+          slug: 'housenum_label',
+          level: 3
+        },
+        {
+          text: '<!--housenum_label--> house_num text',
+          slug: '--housenum_label---house_num-text',
+          level: 4
+        },
+        {
+          text: 'landuse_overlay',
+          slug: 'landuse_overlay',
+          level: 3
+        },
+        {
+          text: '<!--landuse_overlay--> class text',
+          slug: '--landuse_overlay---class-text',
+          level: 4
+        },
+        {
+          text: '<!--landuse_overlay--> type text',
+          slug: '--landuse_overlay---type-text',
+          level: 4
+        },
+        {
+          text: 'landuse',
+          slug: 'landuse',
+          level: 3
+        },
+        {
+          text: '<!--landuse--> class text',
+          slug: '--landuse---class-text',
+          level: 4
+        },
+        {
+          text: '<!--landuse--> type text',
+          slug: '--landuse---type-text',
+          level: 4
+        },
+        {
+          text: 'motorway_junction',
+          slug: 'motorway_junction',
+          level: 3
+        },
+        {
+          text: '<!--motorway_junction--> ref text, reflen number, & name text',
+          slug: '--motorway_junction---ref-text-reflen-number--name-text',
+          level: 4
+        },
+        {
+          text: '<!--motorway_junction--> class text & type text',
+          slug: '--motorway_junction---class-text--type-text',
+          level: 4
+        },
+        {
+          text: 'natural_label',
+          slug: 'natural_label',
+          level: 3
+        },
+        {
+          text: '<!--natural_label--> class text & maki text',
+          slug: '--natural_label---class-text--maki-text',
+          level: 4
+        },
+        {
+          text: '<!--natural_label--> elevation_m number & elevation_ft number',
+          slug: '--natural_label---elevation_m-number--elevation_ft-number',
+          level: 4
+        },
+        {
+          text: 'place_label',
+          slug: 'place_label',
+          level: 3
+        },
+        {
+          text: '<!--place_label--> type text',
+          slug: '--place_label---type-text',
+          level: 4
+        },
+        {
+          text: '<!--place_label--> class text',
+          slug: '--place_label---class-text',
+          level: 4
+        },
+        {
+          text: '<!--place_label--> symbolrank number',
+          slug: '--place_label---symbolrank-number',
+          level: 4
+        },
+        {
+          text: '<!--place_label--> iso_3166_1 text',
+          slug: '--place_label---iso_3166_1-text',
+          level: 4
+        },
+        {
+          text: '<!--place_label--> capital number',
+          slug: '--place_label---capital-number',
+          level: 4
+        },
+        {
+          text: '<!--place_label--> abbr text',
+          slug: '--place_label---abbr-text',
+          level: 4
+        },
+        {
+          text: '<!--place_label--> text_anchor text',
+          slug: '--place_label---text_anchor-text',
+          level: 4
+        },
+        {
+          text: 'poi_label',
+          slug: 'poi_label',
+          level: 3
+        },
+        {
+          text: '<!--poi_label--> class text',
+          slug: '--poi_label---class-text',
+          level: 4
+        },
+        {
+          text: '<!--poi_label--> type text',
+          slug: '--poi_label---type-text',
+          level: 4
+        },
+        {
+          text: '<!--poi_label--> category_en text & category_zh-Hans text',
+          slug: '--poi_label---category_en-text--category_zh-hans-text',
+          level: 4
+        },
+        {
+          text: 'road',
+          slug: 'road',
+          level: 3
+        },
+        {
+          text: '<!--road--> class text',
+          slug: '--road---class-text',
+          level: 4
+        },
+        {
+          text: '<!--road--> oneway text',
+          slug: '--road---oneway-text',
+          level: 4
+        },
+        {
+          text: '<!--road--> structure text',
+          slug: '--road---structure-text',
+          level: 4
+        },
+        {
+          text: '<!--road--> bike_lane text',
+          slug: '--road---bike_lane-text',
+          level: 4
+        },
+        {
+          text: '<!--road--> iso_3166_1 text',
+          slug: '--road---iso_3166_1-text',
+          level: 4
+        },
+        {
+          text: '<!--road--> iso_3166_2 text',
+          slug: '--road---iso_3166_2-text',
+          level: 4
+        },
+        {
+          text: '<!--road--> ref text & reflen number',
+          slug: '--road---ref-text--reflen-number',
+          level: 4
+        },
+        {
+          text: '<!--road--> shield text',
+          slug: '--road---shield-text',
+          level: 4
+        },
+        {
+          text: '<!--road--> shield_text_color text',
+          slug: '--road---shield_text_color-text',
+          level: 4
+        },
+        {
+          text: '<!--road--> type text',
+          slug: '--road---type-text',
+          level: 4
+        },
+        {
+          text: '<!--road--> layer number',
+          slug: '--road---layer-number',
+          level: 4
+        },
+        {
+          text: '<!--road--> len number',
+          slug: '--road---len-number',
+          level: 4
+        },
+        {
+          text: 'structure',
+          slug: 'structure',
+          level: 3
+        },
+        {
+          text: '<!--structure--> class text',
+          slug: '--structure---class-text',
+          level: 4
+        },
+        {
+          text: '<!--structure--> type text',
+          slug: '--structure---type-text',
+          level: 4
+        },
+        {
+          text: 'transit_stop_label',
+          slug: 'transit_stop_label',
+          level: 3
+        },
+        {
+          text: '<!--transit_stop_label--> stop_type text',
+          slug: '--transit_stop_label---stop_type-text',
+          level: 4
+        },
+        {
+          text: '<!--transit_stop_label--> mode text',
+          slug: '--transit_stop_label---mode-text',
+          level: 4
+        },
+        {
+          text: '<!--transit_stop_label--> maki text',
+          slug: '--transit_stop_label---maki-text',
+          level: 4
+        },
+        {
+          text: '<!--transit_stop_label--> network text',
+          slug: '--transit_stop_label---network-text',
+          level: 4
+        },
+        {
+          text: 'water',
+          slug: 'water',
+          level: 3
+        },
+        {
+          text: 'waterway',
+          slug: 'waterway',
+          level: 3
+        },
+        {
+          text: '<!--waterway--> class text & type text',
+          slug: '--waterway---class-text--type-text',
+          level: 4
+        },
+        {
+          text: 'Changelog',
+          slug: 'changelog',
+          level: 2
+        }
+      ])
+    ).toEqual([
+      {
+        title: 'Overview',
+        path: 'overview',
+        thirdLevelItems: [
+          {
+            title: 'Data sources & updates',
+            path: 'data-sources--updates'
+          },
+          {
+            title: 'Multiple geometry types',
+            path: 'multiple-geometry-types'
+          },
+          {
+            title: 'OpenStreetMap IDs',
+            path: 'openstreetmap-ids'
+          }
+        ]
+      },
+      {
+        title: 'Data stability',
+        path: 'data-stability',
+        thirdLevelItems: []
+      },
+      {
+        title: 'Common fields',
+        path: 'common-fields',
+        thirdLevelItems: [
+          {
+            title: 'name text & name_<lang-code> text',
+            path: 'name-text--name_lang-code-text'
+          },
+          {
+            title: 'name_script text',
+            path: 'name_script-text'
+          },
+          {
+            title: 'sizerank number',
+            path: 'sizerank-number'
+          },
+          {
+            title: 'filterrank number',
+            path: 'filterrank-number'
+          },
+          {
+            title: 'maki text',
+            path: 'maki-text'
+          }
+        ]
+      },
+      {
+        title: 'Layer Reference',
+        path: 'layer-reference',
+        thirdLevelItems: [
+          {
+            title: 'admin',
+            path: 'admin'
+          },
+          {
+            title: 'aeroway',
+            path: 'aeroway'
+          },
+          {
+            title: 'airport_label',
+            path: 'airport_label'
+          },
+          {
+            title: 'building',
+            path: 'building'
+          },
+          {
+            title: 'housenum_label',
+            path: 'housenum_label'
+          },
+          {
+            title: 'landuse_overlay',
+            path: 'landuse_overlay'
+          },
+          {
+            title: 'landuse',
+            path: 'landuse'
+          },
+          {
+            title: 'motorway_junction',
+            path: 'motorway_junction'
+          },
+          {
+            title: 'natural_label',
+            path: 'natural_label'
+          },
+          {
+            title: 'place_label',
+            path: 'place_label'
+          },
+          {
+            title: 'poi_label',
+            path: 'poi_label'
+          },
+          {
+            title: 'road',
+            path: 'road'
+          },
+          {
+            title: 'structure',
+            path: 'structure'
+          },
+          {
+            title: 'transit_stop_label',
+            path: 'transit_stop_label'
+          },
+          {
+            title: 'water',
+            path: 'water'
+          },
+          {
+            title: 'waterway',
+            path: 'waterway'
+          }
+        ]
+      },
+      {
+        title: 'Changelog',
+        path: 'changelog',
+        thirdLevelItems: []
+      }
+    ]);
+  });
+
+  it('Example: Mapbox GL JS > Overview', () => {
+    expect(
+      build.buildSecondLevelItems([
+        { text: 'Quickstart', slug: 'quickstart', level: 2 },
+        { text: 'CSP Directives', slug: 'csp-directives', level: 2 },
+        { text: 'Mapbox CSS', slug: 'mapbox-css', level: 2 }
+      ])
+    ).toEqual([
+      { path: 'quickstart', thirdLevelItems: [], title: 'Quickstart' },
+      { path: 'csp-directives', thirdLevelItems: [], title: 'CSP Directives' },
+      { path: 'mapbox-css', thirdLevelItems: [], title: 'Mapbox CSS' }
+    ]);
+  });
 });
