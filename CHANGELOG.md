@@ -1,3 +1,7 @@
+## 0.18.0
+
+* Add `Feedback` component. [#135](https://github.com/mapbox/dr-ui/pull/135)
+
 ## 0.17.0
 
 * Add data attribute to prevent Swiftype from indexing sidebar content on `PageLayout`. [#146](https://github.com/mapbox/dr-ui/pull/146)
