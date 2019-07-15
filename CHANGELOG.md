@@ -1,3 +1,7 @@
+## Master
+
+* Add create-redirect.js helper function. [#144](https://github.com/mapbox/dr-ui/pull/144)
+
 ## 0.18.0
 
 * Add `Feedback` component. [#135](https://github.com/mapbox/dr-ui/pull/135)
