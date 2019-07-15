@@ -282,8 +282,7 @@ SearchBox.propTypes = {
   inputId: PropTypes.string,
   narrow: PropTypes.bool,
   disableModal: PropTypes.bool,
-  site: PropTypes.string,
-  wasSearched: PropTypes.bool
+  site: PropTypes.string
 };
 
 export default SearchBox;
