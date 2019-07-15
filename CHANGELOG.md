@@ -1,4 +1,4 @@
-## Master
+## 0.18.1
 
 * Update security vulnerabilities in dependencies. [#152](https://github.com/mapbox/dr-ui/pull/152)
 
