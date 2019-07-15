@@ -1,3 +1,7 @@
+## Master
+
+* Update security vulnerabilities in dependencies. [#152](https://github.com/mapbox/dr-ui/pull/152)
+
 ## 0.18.0
 
 * Add `Feedback` component. [#135](https://github.com/mapbox/dr-ui/pull/135)
