@@ -1,3 +1,7 @@
+## Master
+
+* Add create-redirect.js helper function. [#144](https://github.com/mapbox/dr-ui/pull/144)
+
 ## 0.18.2
 
 * Fix missing proptype for `Search`. [#151](https://github.com/mapbox/dr-ui/pull/151)
