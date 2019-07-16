@@ -1,3 +1,7 @@
+## 0.18.2
+
+* Fix missing proptype for `Search`. [#151](https://github.com/mapbox/dr-ui/pull/151)
+
 ## 0.18.1
 
 * Update security vulnerabilities in dependencies. [#152](https://github.com/mapbox/dr-ui/pull/152)
