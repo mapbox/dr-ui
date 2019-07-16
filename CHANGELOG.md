@@ -2,6 +2,14 @@
 
 * Add create-redirect.js helper function. [#144](https://github.com/mapbox/dr-ui/pull/144)
 
+## 0.18.2
+
+* Fix missing proptype for `Search`. [#151](https://github.com/mapbox/dr-ui/pull/151)
+
+## 0.18.1
+
+* Update security vulnerabilities in dependencies. [#152](https://github.com/mapbox/dr-ui/pull/152)
+
 ## 0.18.0
 
 * Add `Feedback` component. [#135](https://github.com/mapbox/dr-ui/pull/135)
