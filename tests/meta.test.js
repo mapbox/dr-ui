@@ -3,6 +3,10 @@
 const { metaMaker } = require('../src/helpers/meta.js');
 
 describe('meta', () => {
+  test(`handles null values`, () => {
+    expect(metaMaker(null, null, null)).toEqual({});
+  });
+
   test(`api docs example`, () => {
     expect(
       metaMaker(
@@ -56,7 +60,7 @@ describe('meta', () => {
           ]
         },
         { pathname: '/api/', hash: '', search: '' },
-        {}
+        null
       )
     ).toEqual({
       title: 'Introduction',
