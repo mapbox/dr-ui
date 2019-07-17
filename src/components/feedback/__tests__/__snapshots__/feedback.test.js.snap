@@ -1,151 +1,66 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`search Basic search renders as expected 1`] = `
+exports[`feedback Basic renders as expected 1`] = `
 <div
-  className="h36 relative"
+  className="bg-gray-faint py12 px18 round color-gray"
 >
   <div>
     <div>
-      <button
-        className="flex-parent flex-parent--center-cross flex-parent--center-main h36  px12 round color-gray color-gray-dark-on-hover bg-gray-faint"
-        onClick={[Function]}
-      >
-        <span
-          className="mr6"
-        >
-          <svg
-            className="icon"
-          >
-            <use
-              xlinkHref="#icon-search"
-            />
-          </svg>
-        </span>
-         
-        Search
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`search Basic search with \`site\` set to show filter toggle renders as expected 1`] = `
-<div
-  className="h36 relative"
->
-  <div>
-    <div>
-      <button
-        className="flex-parent flex-parent--center-cross flex-parent--center-main h36  px12 round color-gray color-gray-dark-on-hover bg-gray-faint"
-        onClick={[Function]}
-      >
-        <span
-          className="mr6"
-        >
-          <svg
-            className="icon"
-          >
-            <use
-              xlinkHref="#icon-search"
-            />
-          </svg>
-        </span>
-         
-        Search
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`search Search with \`disableModal\` option set renders as expected 1`] = `
-<div
-  className="h36 relative"
->
-  <div>
-    <div
-      className="w-full"
-    >
       <div
-        aria-expanded={false}
-        aria-haspopup="listbox"
-        aria-labelledby="search3-label"
-        aria-owns={null}
-        role="combobox"
+        className="mb6"
       >
-        <label
-          className="cursor-pointer"
-          htmlFor="search3-input"
-          id="search3-label"
-        >
-          <div
-            className="absolute flex-parent flex-parent--center-cross flex-parent--center-main w36 h36"
-          >
-            <svg
-              className="icon color-gray "
-            >
-              <title>
-                Search
-              </title>
-              <use
-                xlinkHref="#icon-search"
-              />
-            </svg>
-          </div>
-        </label>
-        <input
-          aria-activedescendant={null}
-          aria-autocomplete="list"
-          aria-controls={null}
-          aria-labelledby="search3-label"
-          autoComplete="off"
-          className="input bg-white px36 h36"
-          id="search3-input"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          placeholder="Search docs.mapbox.com"
-          value=""
-        />
+        Was this 
+        page
+         helpful?
       </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`search Search with \`narrow\` option set renders as expected 1`] = `
-<div
-  className="h36 relative"
->
-  <div>
-    <div>
       <button
-        className="flex-parent flex-parent--center-cross flex-parent--center-main h36  px12 round color-gray color-gray-dark-on-hover bg-gray-faint"
+        className="btn btn--s"
         onClick={[Function]}
       >
-        <span
-          className=""
-        >
-          <svg
-            className="icon"
-          >
-            <title>
-              Search
-            </title>
-            <use
-              xlinkHref="#icon-search"
-            />
-          </svg>
-        </span>
-         
+        Yes
+      </button>
+      <button
+        className="btn btn--s ml6"
+        onClick={[Function]}
+      >
+        No
       </button>
     </div>
   </div>
 </div>
 `;
 
-exports[`search Search with \`narrow\` option set renders as expected 2`] = `
+exports[`feedback Change type renders as expected 1`] = `
+<div
+  className="bg-gray-faint py12 px18 round color-gray"
+>
+  <div>
+    <div>
+      <div
+        className="mb6"
+      >
+        Was this 
+        section
+         helpful?
+      </div>
+      <button
+        className="btn btn--s"
+        onClick={[Function]}
+      >
+        Yes
+      </button>
+      <button
+        className="btn btn--s ml6"
+        onClick={[Function]}
+      >
+        No
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`feedback Feedback placement renders as expected 1`] = `
 <div>
   <div
     className="sticky-outer-wrapper"
@@ -189,64 +104,6 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
                   API Documentation
                   
                 </a>
-              </div>
-            </div>
-            <div
-              className="col col--7-mm col--12 flex-parent flex-parent--main-mm flex-parent--center-cross align-r mb12 mb0-mm"
-            >
-              <div
-                className="inline-block"
-              >
-                Overview
-              </div>
-              <div
-                className="ml18 inline-block"
-              >
-                Examples
-              </div>
-              <div
-                className="ml18 inline-block"
-              >
-                Help
-              </div>
-              <div
-                className="ml18 inline-block"
-              >
-                API Reference
-              </div>
-            </div>
-            <div
-              className="col col--1-mm col--12 flex-parent flex-parent--end-main-mm flex-parent--center-cross"
-            >
-              <div
-                className="w-full mb12 mb0-mm mr36"
-              >
-                <div
-                  className="h36 relative"
-                >
-                  <div>
-                    <div>
-                      <button
-                        className="flex-parent flex-parent--center-cross flex-parent--center-main h36  px12 round color-gray color-gray-dark-on-hover bg-gray-faint"
-                        onClick={[Function]}
-                      >
-                        <span
-                          className="mr6"
-                        >
-                          <svg
-                            className="icon"
-                          >
-                            <use
-                              xlinkHref="#icon-search"
-                            />
-                          </svg>
-                        </span>
-                         
-                        Search
-                      </button>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -444,43 +301,36 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
           <p>
             Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.
           </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`search Search with dark background, custom placeholder renders as expected 1`] = `
-<div
-  className="py24 px24 bg-gray-dark"
->
-  <div
-    className="w-full"
-  >
-    <div
-      className="h36 relative"
-    >
-      <div>
-        <div>
-          <button
-            className="flex-parent flex-parent--center-cross flex-parent--center-main h36  px12 round color-white color-lighten50-on-hover bg-lighten10"
-            onClick={[Function]}
+          <p>
+            Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+          </p>
+          <div
+            className="bg-gray-faint py12 px18 round color-gray"
           >
-            <span
-              className="mr6"
-            >
-              <svg
-                className="icon"
-              >
-                <use
-                  xlinkHref="#icon-search"
-                />
-              </svg>
-            </span>
-             
-            Search
-          </button>
+            <div>
+              <div>
+                <div
+                  className="mb6"
+                >
+                  Was this 
+                  page
+                   helpful?
+                </div>
+                <button
+                  className="btn btn--s"
+                  onClick={[Function]}
+                >
+                  Yes
+                </button>
+                <button
+                  className="btn btn--s ml6"
+                  onClick={[Function]}
+                >
+                  No
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

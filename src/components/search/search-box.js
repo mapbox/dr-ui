@@ -41,6 +41,7 @@ class SearchBox extends React.Component {
   }
 
   closeModal() {
+    this.props.reset();
     this.setState({ modalOpen: false });
   }
 
@@ -118,7 +119,7 @@ class SearchBox extends React.Component {
         }}
         onInputValueChange={newValue => {
           if (props.searchTerm === newValue) return;
-          props.setSearchTerm(newValue, { debounce: 300 });
+          props.setSearchTerm(newValue, { debounce: 1500 });
           // track query
           if (window && window.analytics) {
             analytics.track('Searched docs', {
@@ -153,8 +154,17 @@ class SearchBox extends React.Component {
                     <use xlinkHref="#icon-search" />
                   </svg>
                 </div>
+                {this.props.isLoading && (
+                  <div
+                    className="loading loading--s absolute bg-white"
+                    style={{
+                      top: this.state.useModal ? '21px' : '10px',
+                      right: '26px',
+                      zIndex: 5
+                    }}
+                  />
+                )}
               </label>
-
               <input
                 ref={input => {
                   this.docsSeachInput = input;
@@ -169,39 +179,40 @@ class SearchBox extends React.Component {
                   }
                 })}
               />
-              {isOpen && props.searchTerm && props.wasSearched && (
+              {isOpen && props.searchTerm && (
                 <div className="color-text shadow-darken25 round mt3 bg-white scroll-auto scroll-styled hmax360 absolute z4 w-full align-l">
                   <div>
-                    {this.props.site && (
-                      <Facet
-                        show={20}
-                        field="site"
-                        label="Site"
-                        view={this.singleLinksFacet}
-                      />
-                    )}
-                    {this.props.results.length ? (
-                      <ul>
-                        {this.props.results.map((result, index) => (
-                          <SearchResult
-                            key={index}
-                            result={result}
-                            index={index}
-                            downshiftProps={downshiftProps}
-                          />
-                        ))}
-                      </ul>
-                    ) : (
-                      <div className="py12 px12 prose">
-                        <p>
-                          Hmmm, we didn't find anything. Reword your search, or{' '}
-                          <a href="https://support.mapbox.com/hc/en-us">
-                            contact Support
-                          </a>
-                          .
-                        </p>
-                      </div>
-                    )}
+                    <Facet
+                      show={20}
+                      field="site"
+                      label="Site"
+                      view={this.singleLinksFacet}
+                    />
+
+                    {props.wasSearched &&
+                      (this.props.results.length ? (
+                        <ul>
+                          {this.props.results.map((result, index) => (
+                            <SearchResult
+                              key={index}
+                              result={result}
+                              index={index}
+                              downshiftProps={downshiftProps}
+                            />
+                          ))}
+                        </ul>
+                      ) : (
+                        <div className="py12 px12 prose">
+                          <p>
+                            Hmmm, we didn't find anything. Reword your search,
+                            or{' '}
+                            <a href="https://support.mapbox.com/hc/en-us">
+                              contact Support
+                            </a>
+                            .
+                          </p>
+                        </div>
+                      ))}
                   </div>
                 </div>
               )}
@@ -262,14 +273,17 @@ class SearchBox extends React.Component {
 SearchBox.propTypes = {
   searchTerm: PropTypes.string,
   trackClickThrough: PropTypes.func,
+  isLoading: PropTypes.bool,
   setSearchTerm: PropTypes.func,
+  reset: PropTypes.func,
   results: PropTypes.array,
   placeholder: PropTypes.string,
   background: PropTypes.oneOf(['light', 'dark']).isRequired,
   inputId: PropTypes.string,
   narrow: PropTypes.bool,
   disableModal: PropTypes.bool,
-  site: PropTypes.string
+  site: PropTypes.string,
+  wasSearched: PropTypes.bool
 };
 
 export default SearchBox;

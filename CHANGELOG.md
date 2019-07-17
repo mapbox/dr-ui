@@ -1,3 +1,41 @@
+## Master
+
+* Add create-redirect.js helper function. [#144](https://github.com/mapbox/dr-ui/pull/144)
+
+## 0.18.2
+
+* Fix missing proptype for `Search`. [#151](https://github.com/mapbox/dr-ui/pull/151)
+
+## 0.18.1
+
+* Update security vulnerabilities in dependencies. [#152](https://github.com/mapbox/dr-ui/pull/152)
+
+## 0.18.0
+
+* Add `Feedback` component. [#135](https://github.com/mapbox/dr-ui/pull/135)
+
+## 0.17.0
+
+* Add data attribute to prevent Swiftype from indexing sidebar content on `PageLayout`. [#146](https://github.com/mapbox/dr-ui/pull/146)
+* Add compare-versions as a dependency to support `helpers/version-sort.js`. [#142](https://github.com/mapbox/dr-ui/pull/142)
+* Fix `version-sort` helper function so it does not push pre-releases of the latest stable version. [#148](https://github.com/mapbox/dr-ui/pull/148)
+
+## 0.16.2
+
+* Fix bug where `Search` filter was not displaying with the first query.
+
+## 0.16.1
+
+* Fix build that was improperly pushed to npm in 0.16.0.
+
+## 0.16.0
+
+* Update search-ui, add loader, increase debounce length, and reset search when modal is closed for `Search` component. [#145](https://github.com/mapbox/dr-ui/pull/145)
+
+## 0.15.2
+
+* Fix build to remove `optionalDependencies` and `jest` from package.json. [#143](https://github.com/mapbox/dr-ui/pull/143)
+
 ## 0.15.1
 
 * Fix toggle in `Search` to be a button and track toggle event.
