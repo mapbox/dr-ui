@@ -18,24 +18,25 @@ export default class Sidebar extends React.Component {
     });
     return (
       <div className="relative">
-        <div className="fixed w300 left top px24 py6 bg-gray-faint border-b border--darken10 shadow-darken10">
-          <h1 className="txt-bold txt-fancy mb3 txt-l">Dr. UI</h1>
+        <div className="fixed w300 left top px24 py12 bg-white border-b border--darken10">
+          <h1 className="txt-bold txt-fancy mb6 txt-l">Dr. UI</h1>
+          <div>
+            <a
+              className="flex-parent flex-parent--center-cross link link--gray txt-s"
+              href="https://github.com/mapbox/dr-ui"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="flex-child mr6">
+                <Icon name="github" />
+              </span>
+              <span className="flex-child">View on GitHub</span>
+            </a>
+          </div>
         </div>
-        <div className="pt12 my30">
+
+        <div className="pt24 mt36">
           <ul>{componentLinks}</ul>
-        </div>
-        <div>
-          <a
-            className="flex-parent flex-parent--center-cross link link--gray"
-            href="https://github.com/mapbox/dr-ui"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className="flex-child mr6">
-              <Icon name="github" />
-            </span>
-            <span className="flex-child">View on GitHub</span>
-          </a>
         </div>
       </div>
     );

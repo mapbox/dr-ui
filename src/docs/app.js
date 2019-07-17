@@ -18,7 +18,7 @@ export default class App extends React.Component {
     });
     return (
       <div>
-        <div className="fixed top left bottom w300 py24 px24 scroll-styled scroll-auto  bg-gray-faint">
+        <div className="fixed top left bottom w300 py24 px24 scroll-styled scroll-auto">
           <Sidebar />
         </div>
         <div className="ml300 px24">{componentEls}</div>

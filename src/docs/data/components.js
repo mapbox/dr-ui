@@ -524,6 +524,64 @@ module.exports = [
     ]
   },
   {
+    name: "Feedback",
+    description: null,
+    props: {
+      type: {
+        type: { name: "string" },
+        required: false,
+        defaultValue: "'page'",
+        description: <div />,
+        options: undefined
+      },
+      site: {
+        type: { name: "string" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      section: {
+        type: { name: "string" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      location: {
+        type: { name: "object" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      webhook: {
+        type: {
+          name: "shape",
+          value: {
+            staging: { name: "string", required: true },
+            production: { name: "string", required: true }
+          }
+        },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: {
+          staging: { name: "string", required: true },
+          production: { name: "string", required: true }
+        }
+      },
+      userName: {
+        type: { name: "string" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      }
+    },
+    examples: []
+  },
+  {
     name: "LevelIndicator",
     description: null,
     props: {
