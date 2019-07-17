@@ -95,6 +95,7 @@ class PageLayout extends React.Component {
           className={`col col--4-mm ${
             sideBarColSize ? `col--${sideBarColSize}-ml` : ''
           } col--12 ${props.sidebarTheme}`}
+          data-swiftype-index="false"
         >
           <Sticky
             enabled={state.stickyEnabled}
