@@ -64,9 +64,9 @@
     "unist-util-visit": "^1.4.0"
   },
   "dependencies": {
-    "@elastic/react-search-ui": "^0.10.0",
-    "@elastic/react-search-ui-views": "^0.10.0",
-    "@elastic/search-ui-site-search-connector": "^0.10.0",
+    "@elastic/react-search-ui": "^1.0.0",
+    "@elastic/react-search-ui-views": "^1.0.0",
+    "@elastic/search-ui-site-search-connector": "^1.0.0",
     "@mapbox/mr-ui": "^0.7.0",
     "classnames": "^2.2.6",
     "compare-versions": "^3.4.0",
@@ -77,9 +77,6 @@
     "react-stickynode": "^2.1.1",
     "rehype-sectionize-headings": "^1.0.0-rc.1",
     "uuid": "^3.3.2"
-  },
-  "optionalDependencies": {
-    "@mapbox/web-analytics": "^0.5.1"
   },
   "jest": {
     "testRegex": ".*\\.test\\.js$"
