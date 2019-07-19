@@ -1,4 +1,4 @@
-## Master
+## 0.19.0
 
 * Add create-redirect.js helper function. [#144](https://github.com/mapbox/dr-ui/pull/144)
 * Update to v1.0.0 of search-ui for `Search`. [#156](https://github.com/mapbox/dr-ui/pull/144)
