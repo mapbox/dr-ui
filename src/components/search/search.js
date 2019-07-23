@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
 import { SearchProvider, WithSearch } from '@elastic/react-search-ui';
 import SearchBox from './search-box';
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
 
 const connector = new SiteSearchAPIConnector({
   engineKey: 'zpAwGSb8YMXtF9yDeS5K', // public engine key
