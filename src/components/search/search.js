@@ -1,10 +1,10 @@
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
 import React from 'react';
 import PropTypes from 'prop-types';
 import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
 import { SearchProvider, WithSearch } from '@elastic/react-search-ui';
 import SearchBox from './search-box';
-import 'core-js/stable';
-import 'regenerator-runtime/runtime';
 
 const connector = new SiteSearchAPIConnector({
   engineKey: 'zpAwGSb8YMXtF9yDeS5K', // public engine key
@@ -15,7 +15,11 @@ const connector = new SiteSearchAPIConnector({
 class Search extends React.Component {
   render() {
     const { props } = this;
-    return (
+    const isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+    // do not load search component on IE 11
+    return isIE11 ? (
+      ''
+    ) : (
       <SearchProvider
         config={{
           apiConnector: connector,
