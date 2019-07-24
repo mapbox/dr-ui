@@ -13,7 +13,11 @@ const connector = new SiteSearchAPIConnector({
 class Search extends React.Component {
   render() {
     const { props } = this;
-    return (
+    const isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+    // do not load search component on IE 11
+    return isIE11 ? (
+      ''
+    ) : (
       <SearchProvider
         config={{
           apiConnector: connector,
