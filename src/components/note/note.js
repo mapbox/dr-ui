@@ -29,7 +29,19 @@ class Note extends React.Component {
     if (props.title) {
       titleText = props.title;
     }
-    const themeNote = Object.assign(
+
+    const createStyles = (base, theme) => {
+      let styles = {};
+      for (let style in base) {
+        styles[style] = base[style];
+      }
+      for (let style in theme) {
+        styles[style] = theme[style];
+      }
+      return styles;
+    };
+
+    const themeNote = createStyles(
       themes['base'],
       themes[props.theme] || themes['default']
     );
