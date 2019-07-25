@@ -1,6 +1,10 @@
+## Master
+
+* Fix `Note` in IE11 by replacing Object.assign with a function.[#159](https://github.com/mapbox/dr-ui/pull/159)
+ 
 ## 0.19.2
 
-* Fix logic for window and document in `Search`. [#158](https://github.com/mapbox/dr-ui/pull/160)
+* Fix logic for window and document in `Search`. [#160](https://github.com/mapbox/dr-ui/pull/160)
 
 ## 0.19.1
 
