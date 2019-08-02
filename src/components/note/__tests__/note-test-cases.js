@@ -2,6 +2,7 @@ import React from 'react';
 import Note from '../note';
 import BookImage from '../../book-image/book-image';
 import WarningImage from '../../warning-image/warning-image';
+import NewImage from '../../new-image/new-image';
 
 const testCases = {};
 const noRenderCases = {};
@@ -94,7 +95,7 @@ testCases.new = {
         Check out the new <a href="#">Pizza API</a>. Build the perfect pie!
       </p>
     ),
-    imageComponent: <WarningImage color="green" size="60" />
+    imageComponent: <NewImage color="green" size="60" />
   }
 };
 

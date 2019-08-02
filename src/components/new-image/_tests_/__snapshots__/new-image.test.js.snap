@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`new-image Basic renders as expected 1`] = `
+<div
+  style={
+    Object {
+      "height": "60px",
+      "padding": "5px",
+      "width": "60px",
+    }
+  }
+>
+  <div
+    className="bg-blue-light px3 round-full"
+  >
+    <svg
+      className="color-blue"
+      viewBox="0 0 18 18"
+    >
+      <title>
+        warning
+      </title>
+      <path
+        d="M13.7,6.7c0,2.5-3.6,6.9-4.7,8.3c-1.1-1.4-4.7-5.8-4.7-8.3S6.7,2,9,2S13.7,4.2,13.7,6.7z"
+        style={
+          Object {
+            "fill": "currentColor",
+          }
+        }
+      />
+    </svg>
+  </div>
+</div>
+`;
