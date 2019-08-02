@@ -82,4 +82,20 @@ testCases.error = {
   }
 };
 
+testCases.new = {
+  component: Note,
+  description:
+    'A note to display with a message about new products or features.',
+  props: {
+    theme: 'new',
+    title: 'New!',
+    children: (
+      <p>
+        Check out the new <a href="#">Pizza API</a>. Build the perfect pie!
+      </p>
+    ),
+    imageComponent: <WarningImage color="green" size="60" />
+  }
+};
+
 export { testCases, noRenderCases };
