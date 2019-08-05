@@ -14,7 +14,7 @@ exports[`new-image Basic renders as expected 1`] = `
     className="bg-blue-light px3 round-full"
   >
     <svg
-      className="color-blue"
+      className="color-blue mt3"
       viewBox="0 0 18 18"
     >
       <title>
