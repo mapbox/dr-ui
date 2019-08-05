@@ -18,14 +18,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mapbox/frontend-documentation.git"
+    "url": "git+https://github.com/mapbox/dr-ui.git"
   },
   "author": "Mapbox",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/mapbox/frontend-documentation/issues"
+    "url": "https://github.com/mapbox/dr-ui/issues"
   },
-  "homepage": "https://github.com/mapbox/frontend-documentation#readme",
+  "homepage": "https://github.com/mapbox/dr-ui#readme",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
