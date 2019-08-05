@@ -33,9 +33,29 @@ function compileComponents() {
   );
 }
 
+function compileHelpers() {
+  return execa.shell(
+    `babel "${rootDir}/src/helpers" --out-dir ${outputDir}/helpers --ignore "**/examples","**/__tests__" --config-file ${rootDir}/babel.config.js`,
+    {
+      cwd: srcDir,
+      stdio: 'inherit'
+    }
+  );
+}
+
+function compilePlugins() {
+  return execa.shell(
+    `babel "${rootDir}/src/plugins" --out-dir ${outputDir}/plugins --ignore "**/examples","**/__tests__" --config-file ${rootDir}/babel.config.js`,
+    {
+      cwd: srcDir,
+      stdio: 'inherit'
+    }
+  );
+}
+
 // Copy other src files that we want in the package.
 function copySrcFiles() {
-  return cpy(['css/*.css', 'data/*', 'plugins/*', 'helpers/*'], outputDir, {
+  return cpy(['css/*.css'], outputDir, {
     cwd: path.join(rootDir, 'src'),
     parents: true
   });
@@ -71,6 +91,8 @@ del(outputDir)
   .then(() =>
     Promise.all([
       compileComponents(),
+      compileHelpers(),
+      compilePlugins(),
       copyMetaItems(),
       copySrcFiles(),
       createPackageJson()
