@@ -2,6 +2,7 @@ import React from 'react';
 import Note from '../note';
 import BookImage from '../../book-image/book-image';
 import WarningImage from '../../warning-image/warning-image';
+import NewImage from '../../new-image/new-image';
 
 const testCases = {};
 const noRenderCases = {};
@@ -79,6 +80,22 @@ testCases.error = {
       </p>
     ),
     imageComponent: <WarningImage color="red" size="60" />
+  }
+};
+
+testCases.new = {
+  component: Note,
+  description:
+    'A note to display with a message about new products or features.',
+  props: {
+    theme: 'new',
+    title: 'New!',
+    children: (
+      <p>
+        Check out the new <a href="#">Pizza API</a>. Build the perfect pie!
+      </p>
+    ),
+    imageComponent: <NewImage color="green" size="60" />
   }
 };
 
