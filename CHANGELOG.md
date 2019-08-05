@@ -1,3 +1,6 @@
+## Master
+* Add a new `Note` style with a green background that will be used to show off new or updated products or features. [#162](https://github.com/mapbox/dr-ui/pull/162) 
+
 ## 0.19.3
 
 * Fix `Note` in IE11 by replacing Object.assign with a function.[#159](https://github.com/mapbox/dr-ui/pull/159)
