@@ -13,7 +13,7 @@ export default class NewImage extends React.Component {
         }}
       >
         <div className={`bg-${props.color || 'blue'}-light px3 round-full`}>
-          <svg viewBox="0 0 18 18" className={`color-${props.color || 'blue'}`}>
+          <svg viewBox="0 0 18 18" className={`color-${props.color || 'blue'} mt3`}>
             <title>warning</title>
             <path
               style={{ fill: 'currentColor' }}
