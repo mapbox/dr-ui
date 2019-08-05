@@ -15,7 +15,7 @@ testCases.basic = {
     site: 'Help',
     webhook: {
       staging:
-        'https://fbtme2z025.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
+        'https://evj5gwoa8j.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
       production:
         'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook'
     },
@@ -31,7 +31,7 @@ testCases.type = {
     site: 'Help',
     webhook: {
       staging:
-        'https://fbtme2z025.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
+        'https://evj5gwoa8j.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
       production:
         'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook'
     },
@@ -115,7 +115,7 @@ testCases.common = {
               location={{}}
               webhook={{
                 staging:
-                  'https://fbtme2z025.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
+                  'https://evj5gwoa8j.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
                 production:
                   'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook'
               }}
