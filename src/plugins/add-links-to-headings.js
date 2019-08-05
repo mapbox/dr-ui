@@ -6,7 +6,8 @@
 
 const visit = require('unist-util-visit');
 
-const headings = new Set(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']);
+// Since this is a backend plugin, we can use Set
+const headings = new Set(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']); // eslint-disable-line es/no-set
 
 module.exports = () => {
   return transformer;
