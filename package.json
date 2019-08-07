@@ -46,6 +46,7 @@
     "del-cli": "^1.1.0",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^2.10.0",
+    "eslint-plugin-compat": "^3.3.0",
     "eslint-plugin-es": "^1.4.0",
     "eslint-plugin-import": "^2.15.0",
     "eslint-plugin-node": "^6.0.1",
@@ -83,5 +84,13 @@
   },
   "jest": {
     "testRegex": ".*\\.test\\.js$"
-  }
+  },
+  "browserslist": [
+    "last 4 Chrome versions",
+    "last 4 Firefox versions",
+    "last 4 Safari versions",
+    "iOS >= 7",
+    "Android >= 4.4",
+    "IE >= 11"
+  ]
 }
