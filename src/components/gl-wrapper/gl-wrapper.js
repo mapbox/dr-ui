@@ -15,6 +15,8 @@ export default class GLWrapper extends React.Component {
     this.setState({ supported: supported() });
   }
   render() {
+    // wait for supported() to push to state
+    if (this.state.supported === undefined) return <div />;
     return this.state.supported ? (
       this.props.map
     ) : (
