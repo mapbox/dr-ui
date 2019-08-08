@@ -9,7 +9,13 @@ testCases.basic = {
   description: 'Basic',
   props: {
     map: (
-      <iframe src="https://docs.mapbox.com/help/demos/how-mapbox-works/map-design.html" />
+      <iframe
+        src="https://giphy.com/embed/JIX9t2j0ZTN9S"
+        width="480"
+        height="480"
+        frameBorder="0"
+        allowFullScreen
+      />
     )
   }
 };
