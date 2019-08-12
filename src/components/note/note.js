@@ -24,6 +24,10 @@ class Note extends React.Component {
       error: {
         background: '#fbe5e5',
         color: '#ba3b3f'
+      },
+      new: {
+        background: '#e8f5ee',
+        color: '#1b7d4f'
       }
     };
     if (props.title) {
