@@ -8,7 +8,7 @@ testCases.basic = {
   component: GLWrapper,
   description: 'Basic',
   props: {
-    map: (
+    children: (
       <iframe
         src="https://giphy.com/embed/JIX9t2j0ZTN9S"
         width="480"
