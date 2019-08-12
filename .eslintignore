@@ -9,3 +9,6 @@ src/components/*/index.js
 packages/**/package-lock.json
 pkg
 src/test-cases-app/component-index.js
+_site*
+example*
+batfish.config.js

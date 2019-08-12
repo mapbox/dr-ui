@@ -9,3 +9,7 @@ cache:
     - node_modules
 git:
   depth: 3
+
+script:
+  - npm test
+  - npm run build-batfish

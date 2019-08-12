@@ -1,0 +1,21 @@
+{
+  "extends": "./eslint-config-base.json",
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "globals": {
+    "MapboxPageShell": true
+  },
+  "plugins": ["react"],
+  "rules": {
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error"
+  }
+}

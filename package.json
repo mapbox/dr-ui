@@ -14,7 +14,9 @@
     "pretest": "npm run lint",
     "precommit": "lint-staged",
     "format": "prettier '**/*.js' --write",
-    "build": "scripts/build-module-indexes.js && scripts/build-package.js"
+    "build": "scripts/build-module-indexes.js && scripts/build-package.js",
+    "start-batfish": "npm run build && batfish start",
+    "build-batfish": "npm run build && batfish build"
   },
   "repository": {
     "type": "git",
@@ -32,9 +34,11 @@
     "@babel/plugin-proposal-class-properties": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
+    "@mapbox/batfish": "^1.9.8",
     "@mapbox/eslint-config-mapbox": "^1.2.1",
     "@mapbox/mbx-assembly": "^0.28.2",
     "@mapbox/react-test-kitchen": "^0.1.3",
+    "@mapbox/rehype-prism": "^0.3.1",
     "babel-eslint": "^8.2.6",
     "babelify": "^10.0.0",
     "budo": "^11.6.0",
@@ -55,12 +59,17 @@
     "jest": "^24.1.0",
     "lint-staged": "^7.3.0",
     "make-dir": "^1.3.0",
+    "path": "^0.12.7",
     "prettier": "^1.16.1",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-aria-modal": "^3.0.0",
     "react-dom": "^16.7.0",
+    "react-helmet": "^5.2.1",
+    "react-scrollspy": "^3.4.0",
     "react-test-renderer": "^16.8.6",
+    "rehype-slug": "^2.0.3",
+    "slugify": "^1.3.4",
     "unist-util-visit": "^1.4.0"
   },
   "dependencies": {
