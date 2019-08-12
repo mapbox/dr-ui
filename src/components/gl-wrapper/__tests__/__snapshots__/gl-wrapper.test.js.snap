@@ -65,7 +65,8 @@ c0.6,0,1,0.4,1,1v2c0,0.6-0.4,1-1,1S8,9.6,8,9V7C8,6.4,8.4,6,9,6z M9,11c0.6,0,1,0.
     >
       WebGL support
     </a>
-    . Please check that you are using a supported browser and that 
+    . Please check that you are using a supported browser and that
+     
     <a
       className="link"
       href="https://get.webgl.org/"
