@@ -39,9 +39,11 @@ npm start
 
 ```
 
-Docs build process and automated testing coming soon.
+To run the demo Batfish site:
 
-When making changes to the build script, test that the module builds correctly by running `npm run build` and then linking the local package with another local repo. Make sure you are able to run the local repo without errors from dr-ui.
+```bash
+npm run start-batfish
+```
 
 ## Tests
 

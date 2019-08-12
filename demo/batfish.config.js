@@ -5,7 +5,7 @@ const pageShellDir = path.join(__dirname, './vendor/docs-page-shell');
 module.exports = () => {
   const config = {
     siteOrigin: 'https://docs.mapbox.com',
-    siteBasePath: '/dr-ui-kit',
+    siteBasePath: '/demo',
     productionDevtool: 'source-map',
     pagesDirectory: path.join(__dirname, 'src/pages/'),
     outputDirectory: path.join(__dirname, '_site/'),

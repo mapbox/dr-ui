@@ -14,7 +14,8 @@
     "pretest": "npm run lint",
     "precommit": "lint-staged",
     "format": "prettier '**/*.js' --write",
-    "build": "scripts/build-module-indexes.js && scripts/build-package.js"
+    "build": "scripts/build-module-indexes.js && scripts/build-package.js",
+    "start-batfish": "npm run build && cd demo/ && npm ci && npm run start"
   },
   "repository": {
     "type": "git",

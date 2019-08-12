@@ -15,7 +15,7 @@ contentType: guide
         "Cool",
         "Ready-to-go"
         ]}
-      title='dr-ui kit'
+      title='Demo'
       image={<div />}
     />
 }}
