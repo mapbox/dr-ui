@@ -11,3 +11,4 @@ pkg
 src/test-cases-app/component-index.js
 _site*
 demo/vendor/*
+demo/batfish.config.js
