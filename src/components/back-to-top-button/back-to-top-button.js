@@ -23,10 +23,7 @@ export default class BackToTopButton extends React.Component {
           <Button
             onClick={() => {
               document.documentElement.scrollTop = 0; // fallback
-              window.scroll({
-                top: 0,
-                left: 0
-              });
+              window.scroll(0, 0);
             }}
             passthroughProps={{
               className:
