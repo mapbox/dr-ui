@@ -57,18 +57,20 @@ c0.6,0,1,0.4,1,1v2c0,0.6-0.4,1-1,1S8,9.6,8,9V7C8,6.4,8.4,6,9,6z M9,11c0.6,0,1,0.
     >
       Mapbox GL unsupported
     </div>
-    Mapbox GL requires 
+    Mapbox GL requires
+     
     <a
-      href="http://caniuse.com/webgl"
+      className="link"
+      href="https://caniuse.com/#feat=webgl"
     >
       WebGL support
     </a>
-    . Please check that you are using a supported browser and that WebGL is
-     
+    . Please check that you are using a supported browser and that 
     <a
-      href="http://get.webgl.org/"
+      className="link"
+      href="https://get.webgl.org/"
     >
-      enabled
+      WebGL is enabled
     </a>
     .
   </div>

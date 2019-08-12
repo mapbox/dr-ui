@@ -25,9 +25,15 @@ export default class GLWrapper extends React.Component {
         theme="warning"
         imageComponent={<WarningImage color="orange" size="60" />}
       >
-        Mapbox GL requires <a href="http://caniuse.com/webgl">WebGL support</a>.
-        Please check that you are using a supported browser and that WebGL is{' '}
-        <a href="http://get.webgl.org/">enabled</a>.
+        Mapbox GL requires{' '}
+        <a className="link" href="https://caniuse.com/#feat=webgl">
+          WebGL support
+        </a>
+        . Please check that you are using a supported browser and that{' '}
+        <a className="link" href="https://get.webgl.org/">
+          WebGL is enabled
+        </a>
+        .
       </Note>
     );
   }
