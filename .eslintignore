@@ -10,4 +10,4 @@ packages/**/package-lock.json
 pkg
 src/test-cases-app/component-index.js
 _site*
-demo*
+demo/vendor/*

@@ -24,10 +24,7 @@ class LayoutExamples extends React.PureComponent {
                 title={doc.title}
                 description={doc.description}
                 path={doc.path}
-                thumbnail={
-                  <div
-                  />
-                }
+                thumbnail={<div />}
                 level={doc.level}
                 language={doc.language ? doc.language.join(', ') : ''}
               />

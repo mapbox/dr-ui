@@ -23,10 +23,7 @@ module.exports = () => {
     ),
     inlineJs: [{ filename: path.join(pageShellDir, 'page-shell-script.js') }],
     jsxtremeMarkdownOptions: {
-      wrapper: path.join(
-        __dirname,
-        'src/components/markdown-page-shell.js'
-      ),
+      wrapper: path.join(__dirname, 'src/components/markdown-page-shell.js'),
       rehypePlugins: [
         require('rehype-slug'),
         require('@mapbox/rehype-prism'),
