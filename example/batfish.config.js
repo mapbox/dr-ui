@@ -1,39 +1,38 @@
 'use strict';
 
 const path = require('path');
-const pageShellDir = path.join(__dirname, './example/vendor/docs-page-shell');
-
+const pageShellDir = path.join(__dirname, './vendor/docs-page-shell');
 module.exports = () => {
   const config = {
     siteOrigin: 'https://docs.mapbox.com',
     siteBasePath: '/dr-ui-kit',
     productionDevtool: 'source-map',
-    pagesDirectory: `${__dirname}/example/src/pages`,
+    pagesDirectory: path.join(__dirname, 'src/pages/'),
     outputDirectory: path.join(__dirname, '_site/'),
     temporaryDirectory: path.join(__dirname, '_site_tmp/'),
     stylesheets: [
       require.resolve('@mapbox/mbx-assembly/dist/assembly.css'),
       path.join(pageShellDir, 'page-shell-styles.css'),
-      path.join(__dirname, './example/src/css/site.css'),
-      require.resolve('./pkg/css/docs-prose.css'),
-      require.resolve('./pkg/css/prism.css')
+      path.join(__dirname, './src/css/site.css'),
+      require.resolve('../pkg/css/docs-prose.css'),
+      require.resolve('../pkg/css/prism.css')
     ],
     applicationWrapperPath: path.join(
       __dirname,
-      'example/src/components/application-wrapper.js'
+      'src/components/application-wrapper.js'
     ),
     inlineJs: [{ filename: path.join(pageShellDir, 'page-shell-script.js') }],
     jsxtremeMarkdownOptions: {
       wrapper: path.join(
         __dirname,
-        'example/src/components/markdown-page-shell.js'
+        'src/components/markdown-page-shell.js'
       ),
       rehypePlugins: [
         require('rehype-slug'),
         require('@mapbox/rehype-prism'),
-        require('./pkg/plugins/add-links-to-headings'),
-        require('./pkg/plugins/create-sections'),
-        require('./pkg/plugins/make-table-scroll')
+        require('../pkg/plugins/add-links-to-headings'),
+        require('../pkg/plugins/create-sections'),
+        require('../pkg/plugins/make-table-scroll')
       ]
     },
     devBrowserslist: false,
