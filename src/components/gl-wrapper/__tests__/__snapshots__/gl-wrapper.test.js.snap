@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`back-top-top-button Basic renders as expected 1`] = `
+exports[`gl-wrapper Basic renders as expected 1`] = `
 <div
   className="flex-parent flex-parent--row mb18"
   style={

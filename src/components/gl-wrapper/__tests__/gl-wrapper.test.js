@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { testCases } from './gl-wrapper-test-cases.js';
 
-describe('back-top-top-button', () => {
+describe('gl-wrapper', () => {
   describe(testCases.basic.description, () => {
     let testCase;
     let wrapper;
