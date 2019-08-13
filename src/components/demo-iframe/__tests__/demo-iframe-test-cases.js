@@ -25,9 +25,7 @@ testCases.nogl = {
   component: DemoIframe,
   description: '`gl` is false',
   props: {
-    src:
-      'https://api.mapbox.com/styles/v1/examples/cjj0b5ie80ec32so5uo8ox21m.html?fresh=true&title=true&access_token=MapboxAccessToken#15/40.751589/-73.986485/-28/60',
-    MapboxAccessToken: 'p.key10101010101010101010',
+    src: 'https://giphy.com/embed/ule4vhcY1xEKQ',
     gl: false
   }
 };
