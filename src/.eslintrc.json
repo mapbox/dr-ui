@@ -5,10 +5,16 @@
     "browser": true,
     "jest": true
   },
+  "plugins": ["es"],
   "extends": [
     "@mapbox/eslint-config-mapbox/react",
     "@mapbox/eslint-config-mapbox/import",
     "@mapbox/eslint-config-mapbox/promise",
+    "plugin:es/no-2018",
+    "plugin:es/no-2017",
+    "plugin:es/no-2016",
+    "plugin:es/no-2015",
+    "plugin:compat/recommended",
     "prettier"
   ],
   "globals": {
@@ -19,7 +25,15 @@
     "react/no-deprecated": "off",
     "react/no-string-refs": "off",
     "react/no-access-state-in-setstate": "off",
-    "react/jsx-boolean-value": "off"
+    "react/jsx-boolean-value": "off",
+    "es/no-modules": "off",
+    "es/no-block-scoped-variables": "off",
+    "es/no-arrow-functions": "off",
+    "es/no-classes": "off",
+    "es/no-template-literals": "off",
+    "es/no-property-shorthands": "off",
+    "es/no-destructuring": "off",
+    "es/no-object-assign": "off"
   },
   "overrides": [
     {
@@ -31,5 +45,11 @@
         "jest": true
       }
     }
-  ]
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "polyfills": ["Object.assign"]
+  }
 }
