@@ -57,4 +57,23 @@ describe('demo-iframe', () => {
       expect(tree).toMatchSnapshot();
     });
   });
+
+  describe(testCases.nogl.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.nogl;
+      wrapper = renderer.create(
+        React.createElement(testCase.component, testCase.props)
+      );
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree.children[0].type).toBe('iframe');
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });

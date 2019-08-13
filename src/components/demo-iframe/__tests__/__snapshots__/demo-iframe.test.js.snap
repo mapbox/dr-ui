@@ -1,5 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`demo-iframe \`gl\` is false renders as expected 1`] = `
+<div>
+  <iframe
+    height="400px"
+    src="https://api.mapbox.com/styles/v1/examples/cjj0b5ie80ec32so5uo8ox21m.html?fresh=true&title=true&access_token=p.key10101010101010101010#15/40.751589/-73.986485/-28/60"
+    width="100%"
+  />
+  <a
+    className="link"
+    href="https://api.mapbox.com/styles/v1/examples/cjj0b5ie80ec32so5uo8ox21m.html?fresh=true&title=true&access_token=p.key10101010101010101010#15/40.751589/-73.986485/-28/60"
+  >
+    <span>
+      View fullscreen
+       
+      <span
+        className="txt-nowrap"
+      >
+        demo
+        <svg
+          className="events-none icon inline-block align-t"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": "1.5em",
+              "width": "1.5em",
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-chevron-right"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </span>
+    </span>
+  </a>
+</div>
+`;
+
 exports[`demo-iframe Basic renders as expected 1`] = `
 <div
   className="flex-parent flex-parent--row mb18"

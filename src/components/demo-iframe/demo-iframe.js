@@ -4,6 +4,10 @@ import ChevronousText from '@mapbox/mr-ui/chevronous-text';
 import GLWrapper from '../gl-wrapper/gl-wrapper';
 
 export default class DemoIframe extends React.Component {
+  static defaultProps = {
+    gl: true
+  };
+
   constructor(props) {
     super(props);
     this.state = {
@@ -36,18 +40,21 @@ export default class DemoIframe extends React.Component {
       ? props.src.replace('MapboxAccessToken', this.state.mapboxAccessToken)
       : props.src;
 
-    return (
-      <GLWrapper>
+    const contents = (
+      <div>
         <iframe src={src} width="100%" height="400px" />
         <a href={src} className="link">
           <ChevronousText text="View fullscreen demo" />
         </a>
-      </GLWrapper>
+      </div>
     );
+
+    return props.gl ? <GLWrapper>{contents}</GLWrapper> : contents;
   }
 }
 
 DemoIframe.propTypes = {
-  src: PropTypes.string.isRequired,
-  MapboxAccessToken: PropTypes.string
+  src: PropTypes.string.isRequired, // absolute URL src for iframe
+  gl: PropTypes.bool, // set to false if the iframe does not use GL
+  MapboxAccessToken: PropTypes.string // optional token value
 };
