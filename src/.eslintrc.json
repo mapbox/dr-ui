@@ -18,7 +18,8 @@
     "prettier"
   ],
   "globals": {
-    "analytics": true
+    "analytics": true,
+    "MapboxPageShell": true
   },
   "rules": {
     "prefer-const": "off",
