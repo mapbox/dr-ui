@@ -74,6 +74,7 @@
     "@elastic/react-search-ui": "^1.0.0",
     "@elastic/react-search-ui-views": "^1.0.0",
     "@elastic/search-ui-site-search-connector": "^1.0.0",
+    "@mapbox/mapbox-gl-supported": "^1.4.1",
     "@mapbox/mr-ui": "^0.7.0",
     "classnames": "^2.2.6",
     "compare-versions": "^3.4.0",
