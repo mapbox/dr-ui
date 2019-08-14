@@ -1,3 +1,7 @@
+## 0.20.1
+
+* Add core-js as a dependency.
+
 ## 0.20.0
 
 * Add syntax highlighting helper functions for HTML, Java, JSON, JSX, Objective-C, Swift, and XML. [#172](https://github.com/mapbox/dr-ui/pull/172)
