@@ -5,15 +5,7 @@ export default class ContactImage extends React.Component {
   render() {
     const { props } = this;
     return (
-      <svg
-        id="Layer_1"
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        width={props.size}
-        height={props.size}
-        viewBox="0 0 108 108"
-      >
-        <title>help</title>
+      <svg width={props.size} height={props.size} viewBox="0 0 108 108">
         <circle cx="53" cy="54" r="45" fill="#ada0ea" />
         <rect
           x="25.7418"
@@ -70,5 +62,9 @@ export default class ContactImage extends React.Component {
 }
 
 ContactImage.propTypes = {
-  size: PropTypes.string.isRequired
+  size: PropTypes.number
+};
+
+ContactImage.defaultProps = {
+  size: 60
 };

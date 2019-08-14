@@ -5,15 +5,7 @@ export default class TroubleshootImage extends React.Component {
   render() {
     const { props } = this;
     return (
-      <svg
-        id="Layer_1"
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        width={props.size}
-        height={props.size}
-        viewBox="0 0 108 108"
-      >
-        <title>help</title>
+      <svg width={props.size} height={props.size} viewBox="0 0 108 108">
         <circle cx="53" cy="55" r="45" fill="#ffb9a9" />
         <path
           d="M25.0084,35.8985H62.6662a0,0,0,0,1,0,0V77.808a0,0,0,0,1,0,0H30.7175a5.7091,5.7091,0,0,1-5.7091-5.7091v-36.2A0,0,0,0,1,25.0084,35.8985Z"
@@ -58,5 +50,9 @@ export default class TroubleshootImage extends React.Component {
 }
 
 TroubleshootImage.propTypes = {
-  size: PropTypes.string.isRequired
+  size: PropTypes.number
+};
+
+TroubleshootImage.defaultProps = {
+  size: 60
 };

@@ -2,11 +2,37 @@ import WarningImage from '../warning-image';
 
 const testCases = {};
 
-testCases.basic = {
+testCases.warning = {
   component: WarningImage,
-  description: 'Basic',
+  description: 'Warning',
   props: {
-    size: '60'
+    color: 'orange'
+  }
+};
+
+testCases.bigger = {
+  component: WarningImage,
+  description: 'Bigger icon',
+  props: {
+    size: 120,
+    color: 'orange'
+  }
+};
+
+testCases.error = {
+  component: WarningImage,
+  description: 'Error',
+  props: {
+    color: 'red'
+  }
+};
+
+testCases.biggerRed = {
+  component: WarningImage,
+  description: 'Bigger icon',
+  props: {
+    size: 120,
+    color: 'red'
   }
 };
 

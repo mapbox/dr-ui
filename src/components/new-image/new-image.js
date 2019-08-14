@@ -5,28 +5,21 @@ export default class NewImage extends React.Component {
   render() {
     const { props } = this;
     return (
-      <div
-        style={{
-          padding: '5px',
-          width: `${props.size}px`,
-          height: `${props.size}px`
-        }}
-      >
-        <div className={`bg-${props.color || 'blue'}-light px3 round-full`}>
-          <svg viewBox="0 0 18 18" className={`color-${props.color || 'blue'} mt3`}>
-            <title>warning</title>
-            <path
-              style={{ fill: 'currentColor' }}
-              d="M13.7,6.7c0,2.5-3.6,6.9-4.7,8.3c-1.1-1.4-4.7-5.8-4.7-8.3S6.7,2,9,2S13.7,4.2,13.7,6.7z"
-            />
-          </svg>
-        </div>
-      </div>
+      <svg width={props.size} height={props.size} viewBox="0 0 60 60">
+        <circle fill="#83e5af" cx="29.4" cy="30.3" r="25" />
+        <path
+          fill="#3dbc7d"
+          d="M39.6,26.4c0,5.4-7.8,14.9-10.1,17.9c-2.4-3-10.1-12.5-10.1-17.9s5.2-10.1,10.1-10.1S39.6,21.1,39.6,26.4z"
+        />
+      </svg>
     );
   }
 }
 
 NewImage.propTypes = {
-  size: PropTypes.string.isRequired,
-  color: PropTypes.string
+  size: PropTypes.number
+};
+
+NewImage.defaultProps = {
+  size: 60
 };

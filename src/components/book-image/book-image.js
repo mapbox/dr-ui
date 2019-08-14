@@ -5,15 +5,7 @@ export default class BookImage extends React.Component {
   render() {
     const { props } = this;
     return (
-      <svg
-        id="Layer_1"
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        width={props.size}
-        height={props.size}
-        viewBox="0 0 108 108"
-      >
-        <title>help</title>
+      <svg width={props.size} height={props.size} viewBox="0 0 108 108">
         <circle cx="53" cy="55" r="45" fill="#47b9f3" />
         <rect
           x="27.2732"
@@ -39,5 +31,9 @@ export default class BookImage extends React.Component {
 }
 
 BookImage.propTypes = {
-  size: PropTypes.string.isRequired
+  size: PropTypes.number
+};
+
+BookImage.defaultProps = {
+  size: 60
 };
