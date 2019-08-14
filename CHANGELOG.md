@@ -1,4 +1,5 @@
-## Master
+## 0.20.0
+
 * Add syntax highlighting helper functions for HTML, Java, JSON, JSX, Objective-C, Swift, and XML. [#172](https://github.com/mapbox/dr-ui/pull/172)
 * Add a new `Note` style with a green background that will be used to show off new or updated products or features. [#162](https://github.com/mapbox/dr-ui/pull/162)
 * Fix `window.scroll()` on `BackToTopButton`. [#167](https://github.com/mapbox/dr-ui/pull/167)
