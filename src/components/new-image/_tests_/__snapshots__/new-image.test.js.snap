@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`new-image Basic renders as expected 1`] = `
+<svg
+  height={60}
+  viewBox="0 0 60 60"
+  width={60}
+>
+  <circle
+    cx="29.4"
+    cy="30.3"
+    fill="#83e5af"
+    r="25"
+  />
+  <path
+    d="M39.6 26.4c0 5.4-7.8 14.9-10.1 17.9-2.4-3-10.1-12.5-10.1-17.9s5.2-10.1 10.1-10.1 10.1 4.8 10.1 10.1z"
+    fill="#3dbc7d"
+  />
+</svg>
+`;
+
+exports[`new-image Bigger icon renders as expected 1`] = `
+<svg
+  height={120}
+  viewBox="0 0 60 60"
+  width={120}
+>
+  <circle
+    cx="29.4"
+    cy="30.3"
+    fill="#83e5af"
+    r="25"
+  />
+  <path
+    d="M39.6 26.4c0 5.4-7.8 14.9-10.1 17.9-2.4-3-10.1-12.5-10.1-17.9s5.2-10.1 10.1-10.1 10.1 4.8 10.1 10.1z"
+    fill="#3dbc7d"
+  />
+</svg>
+`;

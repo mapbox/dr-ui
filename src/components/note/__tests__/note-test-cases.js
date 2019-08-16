@@ -2,6 +2,7 @@ import React from 'react';
 import Note from '../note';
 import BookImage from '../../book-image/book-image';
 import WarningImage from '../../warning-image/warning-image';
+import NewImage from '../../new-image/new-image';
 
 const testCases = {};
 const noRenderCases = {};
@@ -11,7 +12,7 @@ testCases.basic = {
   description: 'A basic note to call out information on a page.',
   props: {
     children: <p>Here is a little thing to note.</p>,
-    imageComponent: <BookImage size="60" />
+    imageComponent: <BookImage />
   }
 };
 
@@ -44,7 +45,7 @@ testCases.custom = {
         </p>
       </div>
     ),
-    imageComponent: <BookImage size="60" />
+    imageComponent: <BookImage />
   }
 };
 
@@ -61,7 +62,7 @@ testCases.warning = {
         Preview features are not supported for production use.
       </p>
     ),
-    imageComponent: <WarningImage color="orange" size="60" />
+    imageComponent: <WarningImage color="orange" />
   }
 };
 
@@ -78,7 +79,23 @@ testCases.error = {
         <a href="#">troubleshooting guide</a>.
       </p>
     ),
-    imageComponent: <WarningImage color="red" size="60" />
+    imageComponent: <WarningImage color="red" />
+  }
+};
+
+testCases.new = {
+  component: Note,
+  description:
+    'A note to display with a message about new products or features.',
+  props: {
+    theme: 'new',
+    title: 'New!',
+    children: (
+      <p>
+        Check out the new <a href="#">Pizza API</a>. Build the perfect pie!
+      </p>
+    ),
+    imageComponent: <NewImage />
   }
 };
 

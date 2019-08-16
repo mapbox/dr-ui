@@ -5,18 +5,10 @@ export default class BookletImage extends React.Component {
   render() {
     const { props } = this;
     return (
-      <svg
-        id="Layer_1"
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        width={props.size}
-        height={props.size}
-        viewBox="0 0 108 108"
-      >
-        <title>help</title>
+      <svg width={props.size} height={props.size} viewBox="0 0 108 108">
         <circle cx="53" cy="55" r="45" fill="#83e5af" />
         <path
-          d="M63.2378,70H39.8685a5.8873,5.8873,0,0,0-5.7527,4.8416,6.137,6.137,0,0,0-.1092.8683A5.8982,5.8982,0,0,0,39.7622,82H63.77A5.341,5.341,0,0,0,69,76.5544V64A5.8847,5.8847,0,0,1,63.2378,70Z"
+          d="M63.238 70h-23.37a5.887 5.887 0 0 0-5.752 4.842 6.137 6.137 0 0 0-.11.868A5.898 5.898 0 0 0 39.763 82H63.77A5.341 5.341 0 0 0 69 76.554V64a5.885 5.885 0 0 1-5.762 6z"
           fill="#30aa67"
         />
         <rect
@@ -24,12 +16,12 @@ export default class BookletImage extends React.Component {
           y="38"
           width="34"
           height="39"
-          rx="4.7443"
-          ry="4.7443"
+          rx="4.744"
+          ry="4.744"
           fill="#3dbc7d"
         />
         <path
-          d="M63.2378,70.2569A5.7919,5.7919,0,0,0,69,64.4358V32.2566A4.2566,4.2566,0,0,0,64.7434,28H38.2566A4.2566,4.2566,0,0,0,34,32.2566V75h.107a5.9177,5.9177,0,0,1,5.8179-4.7431"
+          d="M63.238 70.257A5.792 5.792 0 0 0 69 64.436v-32.18A4.257 4.257 0 0 0 64.743 28H38.257A4.257 4.257 0 0 0 34 32.257V75h.107a5.918 5.918 0 0 1 5.818-4.743"
           fill="#4bd18b"
         />
         <rect
@@ -37,8 +29,8 @@ export default class BookletImage extends React.Component {
           y="33"
           width="25"
           height="15"
-          rx="2.1365"
-          ry="2.1365"
+          rx="2.136"
+          ry="2.136"
           fill="#3dbc7d"
         />
       </svg>
@@ -47,5 +39,9 @@ export default class BookletImage extends React.Component {
 }
 
 BookletImage.propTypes = {
-  size: PropTypes.string.isRequired
+  size: PropTypes.number
+};
+
+BookletImage.defaultProps = {
+  size: 60
 };
