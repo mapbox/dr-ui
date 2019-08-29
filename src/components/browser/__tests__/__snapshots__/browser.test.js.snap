@@ -1,0 +1,418 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`browser  renders as expected 1`] = `
+<div
+  className="shadow-darken25 round bg-white"
+>
+  <div
+    className="bg-gray h30-mm h18 round-t"
+  >
+    <div
+      className="color-white flex-parent flex-parent--center-cross h30-mm h18 px6"
+    >
+      <span
+        className="color-red-light"
+      >
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 18,
+              "width": 18,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-circle"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </span>
+      <span
+        className="color-yellow-light"
+      >
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 18,
+              "width": 18,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-circle"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </span>
+      <span
+        className="color-green-light"
+      >
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 18,
+              "width": 18,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-circle"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>
+  <div
+    className="block-mm none"
+  >
+    <div
+      className="h30 bg-gray-faint color-gray flex-parent flex-parent--space-between-main px6 flex-parent--center-cross"
+    >
+      <div
+        className="flex-parent-inline flex-parent--space-between-main flex-parent--center-cross mr18"
+        style={
+          Object {
+            "width": "70px",
+          }
+        }
+      >
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 18,
+              "width": 18,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-arrow-left"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 18,
+              "width": 18,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-arrow-right"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 18,
+              "width": 18,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-rotate"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </div>
+      <div
+        className="w120 h18 bg-white round-full flex-child--grow px12"
+      />
+      <div
+        className="flex-parent-inline flex-parent--space-between-main align-r flex-parent--center-cross ml18"
+        style={
+          Object {
+            "width": "70px",
+          }
+        }
+      >
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 18,
+              "width": 18,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-heart"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 18,
+              "width": 18,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-mapbox"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 18,
+              "width": 18,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-menu"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <img
+    alt="manage-styles"
+    className="round-b"
+    src="https://docs.mapbox.com/studio-manual/assets/ref-styles-manage-styles-1200-599fd585f5f2d8e0729d5fe37f9722c0.webp"
+  />
+</div>
+`;
+
+exports[`browser  renders as expected 2`] = `
+<div
+  className="shadow-darken25 round bg-white"
+>
+  <div
+    className="bg-gray h30-mm h18 round-t"
+  >
+    <div
+      className="color-white flex-parent flex-parent--center-cross h30-mm h18 px6"
+    >
+      <span
+        className="color-red-light"
+      >
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 18,
+              "width": 18,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-circle"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </span>
+      <span
+        className="color-yellow-light"
+      >
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 18,
+              "width": 18,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-circle"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </span>
+      <span
+        className="color-green-light"
+      >
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 18,
+              "width": 18,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-circle"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>
+  <div
+    className="block-mm none"
+  >
+    <div
+      className="h30 bg-gray-faint color-gray flex-parent flex-parent--space-between-main px6 flex-parent--center-cross"
+    >
+      <div
+        className="flex-parent-inline flex-parent--space-between-main flex-parent--center-cross mr18"
+        style={
+          Object {
+            "width": "70px",
+          }
+        }
+      >
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 18,
+              "width": 18,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-arrow-left"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 18,
+              "width": 18,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-arrow-right"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 18,
+              "width": 18,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-rotate"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </div>
+      <div
+        className="w120 h18 bg-white round-full flex-child--grow px12"
+      />
+      <div
+        className="flex-parent-inline flex-parent--space-between-main align-r flex-parent--center-cross ml18"
+        style={
+          Object {
+            "width": "70px",
+          }
+        }
+      >
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 18,
+              "width": 18,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-heart"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 18,
+              "width": 18,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-mapbox"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 18,
+              "width": 18,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-menu"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <video
+    autoPlay={true}
+    className="block mx-auto round-b"
+    loop={true}
+    muted={true}
+    src="https://docs.mapbox.com/studio-manual/assets/filter-source-layer-8794aabd77c86712e6aee99bb764182e.mp4"
+    title="animated GIF walking through how to filter a source layer by adding a vector source clicking Filter > Create filter > select a data field from the list provided > select a value from the list provided"
+    type="video/mp4"
+    width="100%"
+  >
+    Your browser doesn't support embedded videos.
+  </video>
+</div>
+`;
