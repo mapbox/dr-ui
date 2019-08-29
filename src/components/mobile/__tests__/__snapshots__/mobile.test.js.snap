@@ -1,0 +1,393 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mobile Android landscape renders as expected 1`] = `
+<div
+  className="shadow-darken25 mx-auto border border--gray relative wmax600 h300 flex-parent"
+  style={
+    Object {
+      "borderRadius": "30px",
+      "borderWidth": "12px",
+      "height": undefined,
+    }
+  }
+>
+  <div
+    className="bg-gray absolute h3 round-t"
+    style={
+      Object {
+        "left": "180px",
+        "top": "-15px",
+        "width": "90px",
+      }
+    }
+  />
+  <div
+    className="bg-gray absolute h3 round-t"
+    style={
+      Object {
+        "left": "90px",
+        "top": "-15px",
+        "width": "45px",
+      }
+    }
+  />
+  <div
+    className="flex-parent flex-parent--center-cross h-auto bg-gray w36 pl12"
+    style={
+      Object {
+        "borderRadius": "0",
+      }
+    }
+  >
+    <div
+      className="bg-gray flex-child flex-child--grow flex-parent relative "
+      style={
+        Object {
+          "borderRadius": "0",
+          "height": "calc(300 - 24px)",
+        }
+      }
+    >
+      <div
+        className="bg-lighten10 round-full flex-child h60 w6"
+      />
+      <div
+        className="bg-lighten10 round-full w6 h6 flex-child absolute"
+        style={
+          Object {
+            "bottom": "-12px",
+            "left": undefined,
+            "order": undefined,
+          }
+        }
+      />
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "backgroundImage": "url(https://dl.dropbox.com/s/asvxjgtil5cp0hv/ios-landscape.png?dl=0)",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "cover",
+        "borderRadius": undefined,
+        "height": "100%",
+        "marginLeft": undefined,
+        "width": "calc(100% - 36px)",
+      }
+    }
+  />
+  <div
+    className="flex-parent   bg-gray flex-parent--center-main flex-parent--center-cross w36  "
+    style={Object {}}
+  >
+    <div
+      className="bg-lighten10 round-full flex-child h60 w6"
+    />
+  </div>
+</div>
+`;
+
+exports[`mobile Android portrait renders as expected 1`] = `
+<div
+  className="shadow-darken25 mx-auto border border--gray relative wmax300"
+  style={
+    Object {
+      "borderRadius": "30px",
+      "borderWidth": "12px",
+      "height": "550px",
+    }
+  }
+>
+  <div
+    className="bg-gray absolute w3 round-r"
+    style={
+      Object {
+        "height": "80px",
+        "right": "-15px",
+        "top": "180px",
+      }
+    }
+  />
+  <div
+    className="bg-gray absolute w3 round-r"
+    style={
+      Object {
+        "height": "45px",
+        "right": "-15px",
+        "top": "90px",
+      }
+    }
+  />
+  <div
+    className="flex-parent flex-parent--center-cross"
+    style={
+      Object {
+        "borderRadius": "0",
+      }
+    }
+  >
+    <div
+      className="bg-gray flex-child flex-child--grow flex-parent relative  flex-parent--center-main  mx-auto w-full h36 pt12"
+      style={
+        Object {
+          "borderRadius": "0",
+          "height": false,
+        }
+      }
+    >
+      <div
+        className="bg-lighten10 round-full flex-child w60 h6"
+      />
+      <div
+        className="bg-lighten10 round-full w6 h6 flex-child relative"
+        style={
+          Object {
+            "bottom": undefined,
+            "left": "-12px",
+            "order": -1,
+          }
+        }
+      />
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "backgroundImage": "url(https://dl.dropbox.com/s/yd4hr9yxeu3pm7o/ios-portrait.png)",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "cover",
+        "borderRadius": undefined,
+        "height": "calc(100% - 72px)",
+        "marginLeft": undefined,
+        "width": undefined,
+      }
+    }
+  />
+  <div
+    className="flex-parent   bg-gray flex-parent--center-main flex-parent--center-cross h36  "
+    style={Object {}}
+  >
+    <div
+      className="bg-lighten10 round-full flex-child w60 h6"
+    />
+  </div>
+</div>
+`;
+
+exports[`mobile iOS landscape renders as expected 1`] = `
+<div
+  className="shadow-darken25 mx-auto border border--gray relative wmax600 h300 flex-parent"
+  style={
+    Object {
+      "borderRadius": "30px",
+      "borderWidth": "12px",
+      "height": undefined,
+    }
+  }
+>
+  <div
+    className="bg-gray absolute h3 round-t"
+    style={
+      Object {
+        "left": "60px",
+        "top": "-15px",
+        "width": "90px",
+      }
+    }
+  />
+  <div
+    className="flex-parent absolute flex-parent--space-between-main w60"
+    style={
+      Object {
+        "bottom": "-15px",
+        "left": "55px",
+      }
+    }
+  >
+    <div
+      className="bg-gray h3 round-b w24"
+    />
+    <div
+      className="bg-gray h3 round-b w24"
+    />
+  </div>
+  <div
+    className="flex-parent flex-parent--center-cross h-auto w18"
+    style={
+      Object {
+        "borderRadius": "18px 18px 0 0 ",
+      }
+    }
+  >
+    <div
+      className="bg-gray flex-child flex-child--grow flex-parent relative h120 flex-parent--center-main flex-parent--column flex-parent--column-reverse"
+      style={
+        Object {
+          "borderRadius": "0 12px 12px 0",
+          "height": false,
+        }
+      }
+    >
+      <div
+        className="absolute  "
+        style={
+          Object {
+            "background": "radial-gradient(circle at right top, transparent 0, transparent 75%, #5b7897 75%, #5b7897 100%)",
+            "height": "10px",
+            "marginLeft": false,
+            "top": "-10px",
+            "width": "10px",
+          }
+        }
+      />
+      <div
+        className="bg-lighten10 round-full flex-child h60 w6"
+      />
+      <div
+        className="bg-lighten10 round-full w6 h6 flex-child mb6 mt-neg12"
+        style={
+          Object {
+            "bottom": undefined,
+            "left": undefined,
+            "order": undefined,
+          }
+        }
+      />
+      <div
+        className="absolute "
+        style={
+          Object {
+            "background": "radial-gradient(circle at bottom right, transparent 0, transparent 75%, #5b7897 75%, #5b7897 100%)",
+            "bottom": "-10px",
+            "height": "10px",
+            "marginRight": false,
+            "width": "10px",
+          }
+        }
+      />
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "backgroundImage": "url(https://dl.dropbox.com/s/asvxjgtil5cp0hv/ios-landscape.png?dl=0)",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "cover",
+        "borderRadius": "18px",
+        "height": "100%",
+        "marginLeft": "-18px",
+        "width": "100%",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`mobile iOS portrait renders as expected 1`] = `
+<div
+  className="shadow-darken25 mx-auto border border--gray relative wmax300"
+  style={
+    Object {
+      "borderRadius": "30px",
+      "borderWidth": "12px",
+      "height": "550px",
+    }
+  }
+>
+  <div
+    className="bg-gray absolute w3 round-r"
+    style={
+      Object {
+        "height": "80px",
+        "right": "-15px",
+        "top": "90px",
+      }
+    }
+  />
+  <div
+    className="flex-parent absolute flex-parent--space-between-main flex-parent--column h60"
+    style={
+      Object {
+        "left": "-15px",
+        "top": "75px",
+      }
+    }
+  >
+    <div
+      className="bg-gray w3 round-l h24"
+    />
+    <div
+      className="bg-gray w3 round-l h24"
+    />
+  </div>
+  <div
+    className="flex-parent flex-parent--center-cross"
+    style={
+      Object {
+        "borderRadius": "0",
+      }
+    }
+  >
+    <div
+      className="bg-gray flex-child flex-child--grow flex-parent relative  flex-parent--center-main  mx-auto h18 wmax120"
+      style={
+        Object {
+          "borderRadius": "0 0 12px 12px",
+          "height": false,
+        }
+      }
+    >
+      <div
+        className="absolute   top left"
+        style={
+          Object {
+            "background": "radial-gradient(circle at bottom left, transparent 0, transparent 75%, #5b7897 75%, #5b7897 100%)",
+            "height": "10px",
+            "marginLeft": "-10px",
+            "top": false,
+            "width": "10px",
+          }
+        }
+      />
+      <div
+        className="bg-lighten10 round-full flex-child w60 h6"
+      />
+      <div
+        className="bg-lighten10 round-full w6 h6 flex-child ml6 mr-neg12"
+        style={
+          Object {
+            "bottom": undefined,
+            "left": undefined,
+            "order": undefined,
+          }
+        }
+      />
+      <div
+        className="absolute  top right"
+        style={
+          Object {
+            "background": "radial-gradient(circle at bottom right, transparent 0, transparent 75%, #5b7897 75%, #5b7897 100%)",
+            "bottom": false,
+            "height": "10px",
+            "marginRight": "-10px",
+            "width": "10px",
+          }
+        }
+      />
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "backgroundImage": "url(https://dl.dropbox.com/s/yd4hr9yxeu3pm7o/ios-portrait.png)",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "cover",
+        "borderRadius": "0 0 18px 18px",
+        "height": "calc(100% - 18px)",
+        "marginLeft": undefined,
+        "width": undefined,
+      }
+    }
+  />
+</div>
+`;
