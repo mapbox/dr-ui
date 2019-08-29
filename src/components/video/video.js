@@ -2,23 +2,24 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default class Video extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { reducedMotion: false };
-  }
-
-  componentDidMount() {
-    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-    if (mediaQuery.matches) this.setState({ reducedMotion: true });
-  }
-
   render() {
+    let videoProps = {
+      autoPlay: true,
+      loop: true
+    };
+    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const reducedMotion = window !== 'undefined' ? mediaQuery.matches : false;
+    if (reducedMotion) {
+      videoProps = {
+        autoPlay: undefined,
+        loop: undefined,
+        controls: true
+      };
+    }
     return (
       <div>
         <video
-          autoPlay={!this.state.reducedMotion}
-          loop={!this.state.reducedMotion}
-          controls={this.state.reducedMotion}
+          {...videoProps}
           muted
           width="100%"
           className="block mx-auto"
