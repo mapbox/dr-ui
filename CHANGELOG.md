@@ -1,3 +1,8 @@
+## master
+
+* Add `Video` component. [#176](https://github.com/mapbox/dr-ui/pull/176)
+* Add `Browser` component. [#177](https://github.com/mapbox/dr-ui/pull/177)
+
 ## 0.20.1
 
 * Add core-js as a dependency.
