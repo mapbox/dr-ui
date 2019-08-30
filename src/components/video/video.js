@@ -7,8 +7,10 @@ export default class Video extends React.Component {
       autoPlay: true,
       loop: true
     };
-    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const reducedMotion = window !== 'undefined' ? mediaQuery.matches : false;
+    const reducedMotion =
+      window !== 'undefined'
+        ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        : false;
     if (reducedMotion) {
       videoProps = {
         autoPlay: undefined,
