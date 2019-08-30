@@ -36,7 +36,8 @@ Here are some commands you'll probably want to use:
 ```bash
 # Start the test-cases app.
 npm start
-
+# Stare the test-cases app, compatible with IE11 (removes Search component).
+npm run start-legacy
 ```
 
 Docs build process and automated testing coming soon.
