@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "budo ./src/test-cases-app/test-cases-app.js --dir ./src/test-cases-app --live --debug --pushstate -- -t babelify",
-    "cp-assembly": "del ./src/test-cases-app/dist && cpy node_modules/@mapbox/mbx-assembly/dist/*.* ./src/test-cases-app/dist && cpy src/css/docs-prose.css ./src/test-cases-app/dist && cpy src/css/prism.css ./src/test-cases-app/dist",
+    "cp-assembly": "del ./src/test-cases-app/dist && cpy node_modules/@mapbox/mbx-assembly/dist/*.* ./src/test-cases-app/dist && cpy src/css/docs-prose.css ./src/test-cases-app/dist && cpy src/css/prism.css ./src/test-cases-app/dist && cpy ./src/test-cases-app/assets/* ./src/test-cases-app/dist",
     "budo": "budo test/app.js -l -d -P -- -t babelify",
     "prestart": "npm run build-component-index && npm run cp-assembly",
     "test": "jest",
