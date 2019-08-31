@@ -1,3 +1,10 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import CodeSnippet from '@mapbox/mr-ui/code-snippet';
+import CodeSnippetTitle from '../code-snippet-title/code-snippet-title';
+import { highlightXml } from '../../helpers/highlight-xml';
+
+let highlightTheme = `
 code[class*='language-'],
 pre[class*='language-'] {
   color: #273d56;
@@ -113,8 +120,43 @@ pre[class*='language-'] {
 .token.entity {
   cursor: help;
 }
+`;
 
-/* Line numbers */
-[data-content]::before {
-  content: attr(data-content);
+export default class AndroidLayoutCodeBlock extends React.Component {
+  renderTitle = () => {
+    const titleProps = {
+      filename: this.props.filename,
+      link: this.props.link ? this.props.link : undefined
+    };
+    return <CodeSnippetTitle {...titleProps} />;
+  };
+
+  render() {
+    return (
+      <div className="unprose my24">
+        {this.props.filename && this.renderTitle()}
+        {this.props.code && (
+          <div className="round" style={{ backgroundColor: '#f4f7fb' }}>
+            <CodeSnippet
+              code={this.props.code}
+              highlightedCode={highlightXml(this.props.code)}
+              highlightThemeCss={highlightTheme}
+              onCopy={() => {}}
+            />
+          </div>
+        )}
+      </div>
+    );
+  }
 }
+
+AndroidLayoutCodeBlock.propTypes = {
+  /* Optional `filename` to be displayed as a kind of title for the code snippet. */
+  filename: PropTypes.string,
+  /* Optional `link` to a GitHub file. */
+  link: PropTypes.string,
+  /* Raw (unhighlighted) code. When the user clicks a copy
+  button, this is what they'll get. If no highlightedCode
+  is provided, code is displayed. */
+  code: PropTypes.string.isRequired
+};
