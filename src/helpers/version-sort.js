@@ -1,4 +1,4 @@
-const compareVersions = require('compare-versions'); //eslint-disable-line
+const compareVersions = require('compare-versions');
 
 const sortBy = key => (a, b) =>
   a[key] > b[key] ? 1 : b[key] > a[key] ? -1 : 0;

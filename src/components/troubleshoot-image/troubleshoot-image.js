@@ -5,51 +5,28 @@ export default class TroubleshootImage extends React.Component {
   render() {
     const { props } = this;
     return (
-      <svg
-        id="Layer_1"
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        width={props.size}
-        height={props.size}
-        viewBox="0 0 108 108"
-      >
-        <title>help</title>
+      <svg width={props.size} height={props.size} viewBox="0 0 108 108">
         <circle cx="53" cy="55" r="45" fill="#ffb9a9" />
         <path
-          d="M25.0084,35.8985H62.6662a0,0,0,0,1,0,0V77.808a0,0,0,0,1,0,0H30.7175a5.7091,5.7091,0,0,1-5.7091-5.7091v-36.2A0,0,0,0,1,25.0084,35.8985Z"
+          d="M25.008 35.898h37.658v41.91H30.718a5.71 5.71 0 0 1-5.71-5.71v-36.2z"
           fill="#fff"
         />
         <path
-          d="M62.6662,35.8985H82.71a0,0,0,0,1,0,0v36.2a5.7091,5.7091,0,0,1-5.7091,5.7091H62.6662a0,0,0,0,1,0,0V35.8985A0,0,0,0,1,62.6662,35.8985Z"
+          d="M62.666 35.898H82.71v36.2a5.71 5.71 0 0 1-5.71 5.71H62.667v-41.91z"
           fill="#fc7e5b"
         />
         <circle cx="43.607" cy="62.393" r="9.393" fill="#fc7e5b" />
-        <line
-          x1="37.5"
-          y1="62.3197"
-          x2="49.5"
-          y2="62.3197"
+        <path
           fill="none"
           stroke="#fff"
-          strokeMiterlimit="10"
-          strokeWidth="3"
-        />
-        <line
-          x1="43.5179"
-          y1="56.5"
-          x2="43.5"
-          y2="67.5"
-          fill="none"
-          stroke="#fff"
-          strokeMiterlimit="10"
-          strokeWidth="3"
+          d="M37.5 62.32h12M43.518 56.5l-.018 11"
         />
         <path
-          d="M55.4484,48.6536H21.9706a1.6516,1.6516,0,0,1-1.536-2.2586l4.388-11.1038H62.6662l-5.718,12.4023A1.6516,1.6516,0,0,1,55.4484,48.6536Z"
+          d="M55.448 48.654H21.971a1.652 1.652 0 0 1-1.536-2.259l4.388-11.104h37.843l-5.718 12.402a1.652 1.652 0 0 1-1.5.96z"
           fill="#d85a3d"
         />
         <path
-          d="M69.5624,48.6536H86.3467A1.6516,1.6516,0,0,0,87.8808,46.39L83.4536,35.2911H62.6662l5.3816,12.37A1.6516,1.6516,0,0,0,69.5624,48.6536Z"
+          d="M69.562 48.654h16.785a1.652 1.652 0 0 0 1.534-2.264l-4.427-11.099H62.666l5.382 12.37a1.652 1.652 0 0 0 1.514.993z"
           fill="#d85a3d"
         />
       </svg>
@@ -58,5 +35,9 @@ export default class TroubleshootImage extends React.Component {
 }
 
 TroubleshootImage.propTypes = {
-  size: PropTypes.string.isRequired
+  size: PropTypes.number
+};
+
+TroubleshootImage.defaultProps = {
+  size: 60
 };

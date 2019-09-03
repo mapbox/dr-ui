@@ -18,16 +18,10 @@ exports[`note A basic note to call out information on a page. renders as expecte
     className="flex-child mr12"
   >
     <svg
-      data-name="Layer 1"
-      height="60"
-      id="Layer_1"
+      height={60}
       viewBox="0 0 108 108"
-      width="60"
-      xmlns="http://www.w3.org/2000/svg"
+      width={60}
     >
-      <title>
-        help
-      </title>
       <circle
         cx="53"
         cy="55"
@@ -36,20 +30,20 @@ exports[`note A basic note to call out information on a page. renders as expecte
       />
       <rect
         fill="#1274c6"
-        height="34.5008"
-        rx="5.2192"
-        ry="5.2192"
-        transform="translate(0.6201 -0.5605) rotate(0.6049)"
-        width="52.2541"
-        x="27.2732"
-        y="41.2042"
+        height="34.501"
+        rx="5.219"
+        ry="5.219"
+        transform="rotate(.605 53.4 58.455)"
+        width="52.254"
+        x="27.273"
+        y="41.204"
       />
       <path
-        d="M64.1,34.8478s-9.9116-.76-10.0085,8.42-.0922,24.7363-.0922,24.7363,4.823-3.0455,8.79-3.0037l15.4041.1626A1.7881,1.7881,0,0,0,80,63.3935L80.281,36.792A1.7732,1.7732,0,0,0,78.5267,35Z"
+        d="M64.1 34.848s-9.912-.76-10.008 8.42-.093 24.736-.093 24.736S58.822 64.96 62.79 65l15.404.163A1.788 1.788 0 0 0 80 63.393l.281-26.601A1.773 1.773 0 0 0 78.527 35z"
         fill="#309ef9"
       />
       <path
-        d="M43.971,34.157s10.21-.5625,10.1107,8.821S53.997,68,53.997,68s-5.25-2.9574-9.3313-3.0005L28.78,64.8314A1.7863,1.7863,0,0,1,27,63.04l.2881-27.2857A1.7863,1.7863,0,0,1,29.1058,34Z"
+        d="M43.971 34.157s10.21-.563 10.11 8.821S53.998 68 53.998 68s-5.25-2.957-9.331-3L28.78 64.83A1.786 1.786 0 0 1 27 63.04l.288-27.286A1.786 1.786 0 0 1 29.106 34z"
         fill="#0d84fd"
       />
     </svg>
@@ -86,37 +80,23 @@ exports[`note A note to display an error with steps or links on how to troublesh
   <div
     className="flex-child mr12"
   >
-    <div
-      style={
-        Object {
-          "height": "60px",
-          "padding": "5px",
-          "width": "60px",
-        }
-      }
+    <svg
+      className="color-red"
+      height={60}
+      viewBox="0 0 60 60"
+      width={60}
     >
-      <div
-        className="bg-red-light px3 round-full"
-      >
-        <svg
-          className="color-red"
-          viewBox="0 0 18 18"
-        >
-          <title>
-            warning
-          </title>
-          <path
-            d="M9,3C8.4,3,7.8,3.3,7.5,3.8L3.2,13c-0.5,0.8,0,2,1.1,2H9h4.7c1.1,0,1.6-1.2,1.1-2l-4.3-9.2C10.2,3.3,9.6,3,9,3z M9,6
-c0.6,0,1,0.4,1,1v2c0,0.6-0.4,1-1,1S8,9.6,8,9V7C8,6.4,8.4,6,9,6z M9,11c0.6,0,1,0.4,1,1s-0.4,1-1,1s-1-0.4-1-1S8.4,11,9,11z"
-            style={
-              Object {
-                "fill": "currentColor",
-              }
-            }
-          />
-        </svg>
-      </div>
-    </div>
+      <circle
+        cx="30"
+        cy="30"
+        fill="#ffb9a9"
+        r="25"
+      />
+      <path
+        d="M30 15.7c-1.3 0-2.7.7-3.3 1.8l-9.6 20.4c-1.1 1.8 0 4.4 2.4 4.4h20.9c2.4 0 3.6-2.7 2.4-4.4l-9.6-20.4c-.5-1.2-1.9-1.8-3.2-1.8zm0 6.6c1.3 0 2.2.9 2.2 2.2V29c0 1.3-.9 2.2-2.2 2.2-1.3 0-2.2-.9-2.2-2.2v-4.4c0-1.4.9-2.3 2.2-2.3zm0 11.1c1.3 0 2.2.9 2.2 2.2s-.9 2.2-2.2 2.2c-1.3 0-2.2-.9-2.2-2.2s.9-2.2 2.2-2.2z"
+        fill="#d85a3d"
+      />
+    </svg>
   </div>
   <div
     className="flex-child"
@@ -140,6 +120,61 @@ c0.6,0,1,0.4,1,1v2c0,0.6-0.4,1-1,1S8,9.6,8,9V7C8,6.4,8.4,6,9,6z M9,11c0.6,0,1,0.
 </div>
 `;
 
+exports[`note A note to display with a message about new products or features. renders as expected 1`] = `
+<div
+  className="flex-parent flex-parent--row mb18"
+  style={
+    Object {
+      "background": "#e8f5ee",
+      "borderRadius": "4px",
+      "color": "#1b7d4f",
+      "fontSize": "13px",
+      "lineHeight": "20px",
+      "padding": "18px",
+    }
+  }
+>
+  <div
+    className="flex-child mr12"
+  >
+    <svg
+      height={60}
+      viewBox="0 0 60 60"
+      width={60}
+    >
+      <circle
+        cx="29.4"
+        cy="30.3"
+        fill="#83e5af"
+        r="25"
+      />
+      <path
+        d="M39.6 26.4c0 5.4-7.8 14.9-10.1 17.9-2.4-3-10.1-12.5-10.1-17.9s5.2-10.1 10.1-10.1 10.1 4.8 10.1 10.1z"
+        fill="#3dbc7d"
+      />
+    </svg>
+  </div>
+  <div
+    className="flex-child"
+  >
+    <div
+      className="txt-bold txt-m mb6"
+    >
+      New!
+    </div>
+    <p>
+      Check out the new 
+      <a
+        href="#"
+      >
+        Pizza API
+      </a>
+      . Build the perfect pie!
+    </p>
+  </div>
+</div>
+`;
+
 exports[`note A warning note to let the user know something has changed or will change. renders as expected 1`] = `
 <div
   className="flex-parent flex-parent--row mb18"
@@ -157,37 +192,23 @@ exports[`note A warning note to let the user know something has changed or will 
   <div
     className="flex-child mr12"
   >
-    <div
-      style={
-        Object {
-          "height": "60px",
-          "padding": "5px",
-          "width": "60px",
-        }
-      }
+    <svg
+      className="color-orange"
+      height={60}
+      viewBox="0 0 60 60"
+      width={60}
     >
-      <div
-        className="bg-orange-light px3 round-full"
-      >
-        <svg
-          className="color-orange"
-          viewBox="0 0 18 18"
-        >
-          <title>
-            warning
-          </title>
-          <path
-            d="M9,3C8.4,3,7.8,3.3,7.5,3.8L3.2,13c-0.5,0.8,0,2,1.1,2H9h4.7c1.1,0,1.6-1.2,1.1-2l-4.3-9.2C10.2,3.3,9.6,3,9,3z M9,6
-c0.6,0,1,0.4,1,1v2c0,0.6-0.4,1-1,1S8,9.6,8,9V7C8,6.4,8.4,6,9,6z M9,11c0.6,0,1,0.4,1,1s-0.4,1-1,1s-1-0.4-1-1S8.4,11,9,11z"
-            style={
-              Object {
-                "fill": "currentColor",
-              }
-            }
-          />
-        </svg>
-      </div>
-    </div>
+      <circle
+        cx="30"
+        cy="30"
+        fill="#fbcea6"
+        r="25"
+      />
+      <path
+        d="M30 15.7c-1.3 0-2.7.7-3.3 1.8l-9.6 20.4c-1.1 1.8 0 4.4 2.4 4.4h20.9c2.4 0 3.6-2.7 2.4-4.4l-9.6-20.4c-.5-1.2-1.9-1.8-3.2-1.8zm0 6.6c1.3 0 2.2.9 2.2 2.2V29c0 1.3-.9 2.2-2.2 2.2-1.3 0-2.2-.9-2.2-2.2v-4.4c0-1.4.9-2.3 2.2-2.3zm0 11.1c1.3 0 2.2.9 2.2 2.2s-.9 2.2-2.2 2.2c-1.3 0-2.2-.9-2.2-2.2s.9-2.2 2.2-2.2z"
+        fill="#ba7334"
+      />
+    </svg>
   </div>
   <div
     className="flex-child"
@@ -222,16 +243,10 @@ exports[`note Note with custom title. renders as expected 1`] = `
     className="flex-child mr12"
   >
     <svg
-      data-name="Layer 1"
-      height="60"
-      id="Layer_1"
+      height={60}
       viewBox="0 0 108 108"
-      width="60"
-      xmlns="http://www.w3.org/2000/svg"
+      width={60}
     >
-      <title>
-        help
-      </title>
       <circle
         cx="53"
         cy="55"
@@ -240,20 +255,20 @@ exports[`note Note with custom title. renders as expected 1`] = `
       />
       <rect
         fill="#1274c6"
-        height="34.5008"
-        rx="5.2192"
-        ry="5.2192"
-        transform="translate(0.6201 -0.5605) rotate(0.6049)"
-        width="52.2541"
-        x="27.2732"
-        y="41.2042"
+        height="34.501"
+        rx="5.219"
+        ry="5.219"
+        transform="rotate(.605 53.4 58.455)"
+        width="52.254"
+        x="27.273"
+        y="41.204"
       />
       <path
-        d="M64.1,34.8478s-9.9116-.76-10.0085,8.42-.0922,24.7363-.0922,24.7363,4.823-3.0455,8.79-3.0037l15.4041.1626A1.7881,1.7881,0,0,0,80,63.3935L80.281,36.792A1.7732,1.7732,0,0,0,78.5267,35Z"
+        d="M64.1 34.848s-9.912-.76-10.008 8.42-.093 24.736-.093 24.736S58.822 64.96 62.79 65l15.404.163A1.788 1.788 0 0 0 80 63.393l.281-26.601A1.773 1.773 0 0 0 78.527 35z"
         fill="#309ef9"
       />
       <path
-        d="M43.971,34.157s10.21-.5625,10.1107,8.821S53.997,68,53.997,68s-5.25-2.9574-9.3313-3.0005L28.78,64.8314A1.7863,1.7863,0,0,1,27,63.04l.2881-27.2857A1.7863,1.7863,0,0,1,29.1058,34Z"
+        d="M43.971 34.157s10.21-.563 10.11 8.821S53.998 68 53.998 68s-5.25-2.957-9.331-3L28.78 64.83A1.786 1.786 0 0 1 27 63.04l.288-27.286A1.786 1.786 0 0 1 29.106 34z"
         fill="#0d84fd"
       />
     </svg>

@@ -1,11 +1,25 @@
-## Master
+## master
+
+* Add `Video` component. [#176](https://github.com/mapbox/dr-ui/pull/176)
+* Add `Browser` component. [#177](https://github.com/mapbox/dr-ui/pull/177)
+
+## 0.20.1
+
+* Add core-js as a dependency.
+
+## 0.20.0
+
+* Add syntax highlighting helper functions for HTML, Java, JSON, JSX, Objective-C, Swift, and XML. [#172](https://github.com/mapbox/dr-ui/pull/172)
 * Add a new `Note` style with a green background that will be used to show off new or updated products or features. [#162](https://github.com/mapbox/dr-ui/pull/162)
 * Fix `window.scroll()` on `BackToTopButton`. [#167](https://github.com/mapbox/dr-ui/pull/167)
 * Enable babel polyfill on `Search` component. [#165](https://github.com/mapbox/dr-ui/pull/165)
+* Add babel config to helpers and plugins, add eslint plugins to catch new JavaScript features. [#164](https://github.com/mapbox/dr-ui/pull/164)
+* Add `GLWrapper` and `DemoIframe` components. [#166](https://github.com/mapbox/dr-ui/pull/166)
+* Refactor image components to fix IE11 bug and set default size. [#171](https://github.com/mapbox/dr-ui/pull/171)
 
 ## 0.19.3
 
-* Fix `Note` in IE11 by replacing Object.assign with a function.[#159](https://github.com/mapbox/dr-ui/pull/159)
+* Fix `Note` in IE11 by replacing Object.assign with a function. [#159](https://github.com/mapbox/dr-ui/pull/159)
 
 ## 0.19.2
 

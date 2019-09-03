@@ -12,7 +12,7 @@ testCases.basic = {
   description: 'A basic note to call out information on a page.',
   props: {
     children: <p>Here is a little thing to note.</p>,
-    imageComponent: <BookImage size="60" />
+    imageComponent: <BookImage />
   }
 };
 
@@ -45,7 +45,7 @@ testCases.custom = {
         </p>
       </div>
     ),
-    imageComponent: <BookImage size="60" />
+    imageComponent: <BookImage />
   }
 };
 
@@ -62,7 +62,7 @@ testCases.warning = {
         Preview features are not supported for production use.
       </p>
     ),
-    imageComponent: <WarningImage color="orange" size="60" />
+    imageComponent: <WarningImage color="orange" />
   }
 };
 
@@ -79,7 +79,7 @@ testCases.error = {
         <a href="#">troubleshooting guide</a>.
       </p>
     ),
-    imageComponent: <WarningImage color="red" size="60" />
+    imageComponent: <WarningImage color="red" />
   }
 };
 
@@ -95,7 +95,7 @@ testCases.new = {
         Check out the new <a href="#">Pizza API</a>. Build the perfect pie!
       </p>
     ),
-    imageComponent: <NewImage color="green" size="60" />
+    imageComponent: <NewImage />
   }
 };
 

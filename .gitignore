@@ -4,4 +4,4 @@ node_modules
 dist
 pkg
 src/test-cases-app/component-index.js
-_site*
+src/components/syntax-highlighting/index.js

@@ -4,9 +4,14 @@ const testCases = {};
 
 testCases.basic = {
   component: ContactImage,
-  description: 'Basic',
+  description: 'Basic'
+};
+
+testCases.bigger = {
+  component: ContactImage,
+  description: 'Bigger icon',
   props: {
-    size: '60'
+    size: 120
   }
 };
 
