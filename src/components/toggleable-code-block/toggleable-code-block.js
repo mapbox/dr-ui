@@ -199,11 +199,10 @@ export default class ToggleableCodeBlock extends React.Component {
 ToggleableCodeBlock.propTypes = {
   /* A unique `id` is required for the language toggle. */
   id: PropTypes.string.isRequired,
-  /*  */
+  /* Language that is currently selected. */
   selectedLanguage: PropTypes.string.isRequired,
   /* Raw (unhighlighted) code. When the user clicks a copy
-  button, this is what they'll get. If no highlightedCode
-  is provided, code is displayed. */
+  button, this is what they'll get. */
   code: PropTypes.string.isRequired,
   /* The HTML output of running code through a syntax highlighter.
   This should use a /helper/higlight-* function. */

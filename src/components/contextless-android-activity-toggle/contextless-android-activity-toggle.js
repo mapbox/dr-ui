@@ -48,7 +48,7 @@ export default class ContextlessAndroidActivityToggle extends React.Component {
     };
 
     return (
-      <div className="my24">
+      <div className="my24 prose">
         <ToggleableCodeBlock
           {...snippetProps}
           id={id}
@@ -82,9 +82,7 @@ ContextlessAndroidActivityToggle.propTypes = {
     preferredLanguage: PropTypes.shape({
       android: PropTypes.oneOf(['kotlin', 'java']).isRequired
     }).isRequired,
-    changeLanguage: PropTypes.shape({
-      android: PropTypes.func.isRequired
-    }).isRequired
+    changeLanguage: PropTypes.func.isRequired
   }).isRequired,
   /* A unique `id` is required for the language toggle. */
   id: PropTypes.string.isRequired,

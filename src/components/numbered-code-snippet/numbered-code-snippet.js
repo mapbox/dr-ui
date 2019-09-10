@@ -191,7 +191,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
         const displayLine = line.replace(/^[ ]*/, '');
 
         const lineNumberClasses = classnames(
-          'absolute fl color-gray-light align-r pr6',
+          'absolute fl color-gray align-r pr6',
           {
             'w30 py3': codeChunk.live,
             w36: !codeChunk.live

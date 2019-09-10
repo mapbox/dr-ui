@@ -15,7 +15,7 @@ testCases.withLink = {
   description: 'With a link',
   props: {
     filename: 'MainActivity.java',
-    link: '#'
+    link: 'https://github.com/mapbox/'
   }
 };
 

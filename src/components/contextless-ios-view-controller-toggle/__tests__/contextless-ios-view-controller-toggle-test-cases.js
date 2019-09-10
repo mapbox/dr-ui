@@ -81,7 +81,7 @@ testCases.filename = {
     context: contextObjectiveC,
     id: 'test-java-kotlin-filename',
     filename: 'ViewController',
-    link: '#',
+    link: 'https://github.com/mapbox/',
     swift: swift,
     objectiveC: objectiveC,
     limitHeight: true
@@ -95,7 +95,7 @@ testCases.copyRange = {
     context: contextObjectiveC,
     id: 'test-java-kotlin-copy-range',
     filename: 'ViewController',
-    link: '#',
+    link: 'https://github.com/mapbox/',
     swift: swift,
     objectiveC: objectiveC,
     limitHeight: true,

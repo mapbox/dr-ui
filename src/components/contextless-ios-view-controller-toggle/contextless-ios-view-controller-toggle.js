@@ -44,7 +44,7 @@ export default class ContextlessIosViewControllerToggle extends React.Component 
     };
 
     return (
-      <div className="my24">
+      <div className="my24 prose">
         <ToggleableCodeBlock
           {...snippetProps}
           id={id}
@@ -78,9 +78,7 @@ ContextlessIosViewControllerToggle.propTypes = {
     preferredLanguage: PropTypes.shape({
       ios: PropTypes.oneOf(['objectiveC', 'swift']).isRequired
     }).isRequired,
-    changeLanguage: PropTypes.shape({
-      ios: PropTypes.func.isRequired
-    }).isRequired
+    changeLanguage: PropTypes.func.isRequired
   }).isRequired,
   /* A unique `id` is required for the language toggle. */
   id: PropTypes.string.isRequired,

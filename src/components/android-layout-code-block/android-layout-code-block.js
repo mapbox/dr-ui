@@ -133,10 +133,10 @@ export default class AndroidLayoutCodeBlock extends React.Component {
 
   render() {
     return (
-      <div className="unprose my24">
+      <div className="my24">
         {this.props.filename && this.renderTitle()}
         {this.props.code && (
-          <div className="round" style={{ backgroundColor: '#f4f7fb' }}>
+          <div className="round prose" style={{ backgroundColor: '#f4f7fb' }}>
             <CodeSnippet
               code={this.props.code}
               highlightedCode={highlightXml(this.props.code)}

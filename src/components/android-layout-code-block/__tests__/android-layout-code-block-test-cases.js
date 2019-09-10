@@ -43,7 +43,7 @@ testCases.custom = {
   description: 'With link to GitHub file',
   props: {
     filename: 'activity_styles_runtime_styling',
-    link: '#',
+    link: 'https://github.com/mapbox/',
     code: `<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:mapbox="http://schemas.android.com/apk/res-auto"
