@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "budo ./src/test-cases-app/test-cases-app.js --dir ./src/test-cases-app --live --debug --pushstate -- -t babelify",
-    "cp-assembly": "del ./src/test-cases-app/dist && cpy node_modules/@mapbox/mbx-assembly/dist/*.* ./src/test-cases-app/dist && cpy src/css/docs-prose.css ./src/test-cases-app/dist && cpy src/css/prism.css ./src/test-cases-app/dist",
+    "cp-assembly": "del ./src/test-cases-app/dist && cpy node_modules/@mapbox/mbx-assembly/dist/*.* ./src/test-cases-app/dist && cpy src/css/docs-prose.css ./src/test-cases-app/dist && cpy src/css/prism.css ./src/test-cases-app/dist && cpy ./src/test-cases-app/assets/* ./src/test-cases-app/dist",
     "budo": "budo test/app.js -l -d -P -- -t babelify",
     "prestart": "npm run build-component-index && npm run cp-assembly",
     "test": "jest",
@@ -18,7 +18,8 @@
     "start-docs": "scripts/build-module-indexes.js && scripts/build-docs-data.js && underreact start --config='src/docs/docs-underreact.config.js'",
     "build-docs": "scripts/build-module-indexes.js && scripts/build-docs-data.js && underreact build --config='src/docs/docs-underreact.config.js'",
     "serve-static-docs": "underreact serve-static --config='src/docs/docs-underreact.config.js'",
-    "deploy-docs": "npm run build-docs && gh-pages -d src/docs/_site"
+    "deploy-docs": "npm run build-docs && gh-pages -d src/docs/_site",
+    "start-legacy": "npm run build-component-index && node scripts/rm-search.js && npm run cp-assembly && budo ./src/test-cases-app/test-cases-app.js --dir ./src/test-cases-app --live --debug --pushstate -- -t babelify"
   },
   "repository": {
     "type": "git",
