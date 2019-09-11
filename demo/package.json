@@ -4,7 +4,7 @@
     "build": "batfish build"
   },
   "dependencies": {
-    "@mapbox/dr-ui": "file:/Users/katydecorah/Documents/GitHub/dr-ui/pkg",
+    "@mapbox/dr-ui": "../pkg",
     "@mapbox/batfish": "^1.11.1",
     "@mapbox/rehype-prism": "^0.3.1",
     "path": "^0.12.7",
