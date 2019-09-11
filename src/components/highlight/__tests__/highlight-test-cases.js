@@ -1,11 +1,11 @@
 import CodeSnippet from '@mapbox/mr-ui/code-snippet';
-import { highlightSwift } from '../../../helpers/highlight-swift';
-import { highlightObjectivec } from '../../../helpers/highlight-objectivec';
-import { highlightJava } from '../../../helpers/highlight-java';
-import { highlightJson } from '../../../helpers/highlight-json';
-import { highlightJsx } from '../../../helpers/highlight-jsx';
-import { highlightHtml } from '../../../helpers/highlight-html';
-import { highlightXml } from '../../../helpers/highlight-xml';
+import { highlightSwift } from '../swift';
+import { highlightObjectivec } from '../objectivec';
+import { highlightJava } from '../java';
+import { highlightJson } from '../json';
+import { highlightJsx } from '../jsx';
+import { highlightHtml } from '../html';
+import { highlightXml } from '../xml';
 
 const testCases = {};
 const noRenderCases = {};
