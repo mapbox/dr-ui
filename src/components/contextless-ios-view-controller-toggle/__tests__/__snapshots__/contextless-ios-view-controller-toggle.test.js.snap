@@ -1,0 +1,301 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`contextless-ios-view-controller-toggle Basic renders as expected 1`] = `
+<div
+  className="my24 prose"
+>
+  <div
+    className="my24"
+  >
+    
+    <div
+      className="relative round z0 scroll-styled scroll-auto"
+      style={
+        Object {
+          "maxHeight": 480,
+        }
+      }
+    >
+      <pre>
+        <code
+          className="px0 hljs"
+        >
+          <div
+            className="relative z2"
+            data-chunk-code="chunk-0"
+          >
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token comment\\">// 'style' in this case refers to an MGLStyle object.</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token keyword\\">let</span> layer <span class=\\"token operator\\">=</span> style<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">layer</span><span class=\\"token punctuation\\">(</span>withIdentifier<span class=\\"token punctuation\\">:</span> <span class=\\"token string\\">\\"place-city-sm\\"</span><span class=\\"token punctuation\\">)</span> <span class=\\"token keyword\\">as</span><span class=\\"token operator\\">!</span> <span class=\\"token builtin\\">MGLSymbolStyleLayer</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token keyword\\">let</span> spanish <span class=\\"token operator\\">=</span> <span class=\\"token function\\">Locale</span><span class=\\"token punctuation\\">(</span>identifier<span class=\\"token punctuation\\">:</span> <span class=\\"token string\\">\\"es\\"</span><span class=\\"token punctuation\\">)</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "layer<span class=\\"token punctuation\\">.</span>text <span class=\\"token operator\\">=</span> layer<span class=\\"token punctuation\\">.</span>text<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">mgl_expressionLocalized</span><span class=\\"token punctuation\\">(</span>into<span class=\\"token punctuation\\">:</span> spanish<span class=\\"token punctuation\\">)</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+          </div>
+        </code>
+      </pre>
+      <div
+        className="absolute z2 top right mr6 mt6 color-white"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`contextless-ios-view-controller-toggle Two languages renders as expected 1`] = `
+<div
+  className="my24 prose"
+>
+  <div
+    className="my24"
+  >
+    <div
+      className="mb12"
+    >
+      <div
+        className="relative "
+      >
+        <fieldset>
+          <div
+            aria-required={true}
+            className="toggle-group round-full bg-blue py3 px3"
+            data-test="test-java-kotlin-input"
+            id="test-java-kotlin"
+            role="radiogroup"
+          >
+            <label
+              className="toggle-container "
+            >
+              <input
+                autoFocus={false}
+                checked={true}
+                name="test-java-kotlin"
+                onChange={[Function]}
+                type="radio"
+                value="swift"
+              />
+              <div
+                className="txt-s py3 toggle--white toggle--active-blue toggle"
+              >
+                Swift
+              </div>
+            </label>
+            <label
+              className="toggle-container "
+            >
+              <input
+                autoFocus={false}
+                checked={false}
+                name="test-java-kotlin"
+                onChange={[Function]}
+                type="radio"
+                value="objectiveC"
+              />
+              <div
+                className="txt-s py3 toggle--white toggle--active-blue toggle"
+              >
+                Objective-C
+              </div>
+            </label>
+          </div>
+        </fieldset>
+        <div
+          role="alert"
+        />
+      </div>
+    </div>
+    <div
+      className="relative round z0 scroll-styled scroll-auto"
+      style={
+        Object {
+          "maxHeight": 480,
+        }
+      }
+    >
+      <pre>
+        <code
+          className="px0 hljs"
+        >
+          <div
+            className="relative z2"
+            data-chunk-code="chunk-0"
+          >
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token comment\\">// 'style' in this case refers to an MGLStyle object.</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token keyword\\">let</span> layer <span class=\\"token operator\\">=</span> style<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">layer</span><span class=\\"token punctuation\\">(</span>withIdentifier<span class=\\"token punctuation\\">:</span> <span class=\\"token string\\">\\"place-city-sm\\"</span><span class=\\"token punctuation\\">)</span> <span class=\\"token keyword\\">as</span><span class=\\"token operator\\">!</span> <span class=\\"token builtin\\">MGLSymbolStyleLayer</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token keyword\\">let</span> spanish <span class=\\"token operator\\">=</span> <span class=\\"token function\\">Locale</span><span class=\\"token punctuation\\">(</span>identifier<span class=\\"token punctuation\\">:</span> <span class=\\"token string\\">\\"es\\"</span><span class=\\"token punctuation\\">)</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "layer<span class=\\"token punctuation\\">.</span>text <span class=\\"token operator\\">=</span> layer<span class=\\"token punctuation\\">.</span>text<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">mgl_expressionLocalized</span><span class=\\"token punctuation\\">(</span>into<span class=\\"token punctuation\\">:</span> spanish<span class=\\"token punctuation\\">)</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+          </div>
+        </code>
+      </pre>
+      <div
+        className="absolute z2 top right mr6 mt6 color-white"
+      />
+    </div>
+  </div>
+</div>
+`;
