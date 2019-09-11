@@ -2,7 +2,7 @@
 title: Overview
 description: Set up your site.
 prependJs:
-- "import OverviewHeader from '../../../../pkg/overview-header';"
+- "import OverviewHeader from '@mapbox/dr-ui/overview-header';"
 layout: accordion
 order: 1
 navOrder: 1

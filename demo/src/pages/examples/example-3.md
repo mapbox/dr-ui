@@ -7,7 +7,7 @@ language:
 topic:
 - Cool
 - Awesome
-thumbnail: headerImage
+thumbnail: thumb
 layout: cards-toc
 ---
 

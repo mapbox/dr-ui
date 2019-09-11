@@ -1,7 +1,7 @@
 import React from 'react';
-import ExamplesPage from '../../../../pkg/examples-page';
-import CardContainer from '../../../../pkg/card-container';
-import Card from '../../../../pkg/card';
+import ExamplesPage from '@mapbox/dr-ui/examples-page';
+import CardContainer from '@mapbox/dr-ui/card-container';
+import Card from '@mapbox/dr-ui/card';
 import slugify from 'slugify';
 import PropTypes from 'prop-types';
 
@@ -24,7 +24,17 @@ class LayoutExamples extends React.PureComponent {
                 title={doc.title}
                 description={doc.description}
                 path={doc.path}
-                thumbnail={<div />}
+                thumbnail={
+                  <div
+                    className="top right bottom left absolute round"
+                    style={{
+                      backgroundImage: `url(/img/${doc.thumbnail}.png)`,
+                      backgroundRepeat: 'no-repeat',
+                      backgroundPosition: 'center center',
+                      backgroundSize: 'cover'
+                    }}
+                  />
+                }
                 level={doc.level}
                 language={doc.language ? doc.language.join(', ') : ''}
               />

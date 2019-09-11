@@ -6,7 +6,7 @@ language:
 - JavaScript
 topic:
 - Cool
-thumbnail: headerImage
+thumbnail: thumb
 layout: cards-toc
 ---
 

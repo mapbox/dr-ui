@@ -3,12 +3,12 @@ import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 import { withLocation } from '@mapbox/batfish/modules/with-location';
 import ReactPageShell from '../../vendor/docs-page-shell/react-page-shell.js';
-import TopbarSticker from '../../../pkg/topbar-sticker';
-import ProductMenu from '../../../pkg/product-menu/product-menu';
+import TopbarSticker from '@mapbox/dr-ui/topbar-sticker';
+import ProductMenu from '@mapbox/dr-ui/product-menu/product-menu';
 import TabList from '@mapbox/mr-ui/tab-list';
-import PageLayout from '../../../pkg/page-layout';
+import PageLayout from '@mapbox/dr-ui/page-layout';
 import orderedPages from '@mapbox/batfish/data/ordered-pages'; // eslint-disable-line
-import Search from '../../../pkg/search';
+import Search from '@mapbox/dr-ui/search';
 import constants from '../constants';
 import LayoutAccordion from './layouts/accordion';
 import LayoutToc from './layouts/toc';

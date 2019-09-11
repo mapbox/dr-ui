@@ -1,6 +1,6 @@
 import React from 'react';
 import PageShell from './page-shell';
-import Feedback from '../../../pkg/feedback';
+import Feedback from '@mapbox/dr-ui/feedback';
 import constants from '../constants.json';
 
 export default class MarkdownPageshell extends React.Component {

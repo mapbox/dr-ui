@@ -1,6 +1,6 @@
 import React from 'react';
 import { routeToPrefixed } from '@mapbox/batfish/modules/route-to';
-import NavigationAccordion from '../../../../pkg/navigation-accordion';
+import NavigationAccordion from '@mapbox/dr-ui/navigation-accordion';
 import PropTypes from 'prop-types';
 
 class LayoutAccordion extends React.PureComponent {

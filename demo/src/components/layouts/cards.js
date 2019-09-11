@@ -1,6 +1,6 @@
 import React from 'react';
 import slugify from 'slugify';
-import SectionedNavigation from '../../../../pkg/sectioned-navigation';
+import SectionedNavigation from '@mapbox/dr-ui/sectioned-navigation';
 import PropTypes from 'prop-types';
 
 class LayoutCards extends React.PureComponent {
