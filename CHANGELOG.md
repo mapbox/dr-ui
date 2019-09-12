@@ -2,6 +2,8 @@
 
 * Add `Video` component. [#176](https://github.com/mapbox/dr-ui/pull/176)
 * Add `Browser` component. [#177](https://github.com/mapbox/dr-ui/pull/177)
+* 🚨Breaking changes:
+  * Move all syntax highlighter functions from helpers directory to highlight component and simplifies each highlighter file name. [#180](https://github.com/mapbox/dr-ui/pull/180)
 
 ## 0.20.1
 
