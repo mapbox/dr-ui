@@ -155,10 +155,11 @@ export default class ToggleableCodeBlock extends React.Component {
   };
 
   renderTitle = () => {
-    const { filename, link } = this.props;
+    const { filename, link, options } = this.props;
     const titleProps = {
       filename: filename,
-      link: link ? link : undefined
+      link: link ? link : undefined,
+      toggle: options && options.length > 1 ? this.renderToggle() : undefined
     };
     return <CodeSnippetTitle {...titleProps} />;
   };
@@ -166,15 +167,13 @@ export default class ToggleableCodeBlock extends React.Component {
   renderToggle = () => {
     const { id, changeLanguage, options } = this.props;
     return (
-      <div className="mb12">
-        <CodeToggle
-          id={id}
-          onChange={value => {
-            changeLanguage(value);
-          }}
-          options={options}
-        />
-      </div>
+      <CodeToggle
+        id={id}
+        onChange={value => {
+          changeLanguage(value);
+        }}
+        options={options}
+      />
     );
   };
 
@@ -184,12 +183,11 @@ export default class ToggleableCodeBlock extends React.Component {
   };
 
   render() {
-    const { filename, options, code } = this.props;
+    const { filename, code } = this.props;
 
     return (
       <div className="my24">
         {filename && this.renderTitle()}
-        {options && options.length > 1 ? this.renderToggle() : ''}
         {code && this.renderSnippet(code)}
       </div>
     );

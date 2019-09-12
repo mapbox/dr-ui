@@ -11,16 +11,12 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
       className="flex-child"
     >
       <div
-        className="txt-bold mb6 color-gray-dark"
+        className="inline-block txt-bold mb6 color-gray-dark"
       >
         ThisIsAFile.extension
       </div>
-    </div>
-    <div
-      className="flex-child"
-    >
       <div
-        className="flex-child"
+        className="inline-block ml12"
       >
         <a
           className="unprose link"
@@ -47,111 +43,111 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
         </a>
       </div>
     </div>
-  </div>
-  <div
-    className="mb12"
-  >
     <div
-      className="relative "
+      className="flex-child"
     >
-      <fieldset>
-        <div
-          aria-required={true}
-          className="toggle-group round-full bg-blue py3 px3"
-          data-test="test-java-filename-input"
-          id="test-java-filename"
-          role="radiogroup"
-        >
-          <label
-            className="toggle-container "
-          >
-            <input
-              autoFocus={false}
-              checked={false}
-              name="test-java-filename"
-              onChange={[Function]}
-              type="radio"
-              value="javascript"
-            />
-            <div
-              className="txt-s py3 toggle--white toggle--active-blue toggle"
-            >
-              JavaScript
-            </div>
-          </label>
-          <label
-            className="toggle-container "
-          >
-            <input
-              autoFocus={false}
-              checked={false}
-              name="test-java-filename"
-              onChange={[Function]}
-              type="radio"
-              value="swift"
-            />
-            <div
-              className="txt-s py3 toggle--white toggle--active-blue toggle"
-            >
-              Swift
-            </div>
-          </label>
-          <label
-            className="toggle-container "
-          >
-            <input
-              autoFocus={false}
-              checked={false}
-              name="test-java-filename"
-              onChange={[Function]}
-              type="radio"
-              value="objectiveC"
-            />
-            <div
-              className="txt-s py3 toggle--white toggle--active-blue toggle"
-            >
-              Objective-C
-            </div>
-          </label>
-          <label
-            className="toggle-container "
-          >
-            <input
-              autoFocus={false}
-              checked={true}
-              name="test-java-filename"
-              onChange={[Function]}
-              type="radio"
-              value="java"
-            />
-            <div
-              className="txt-s py3 toggle--white toggle--active-blue toggle"
-            >
-              Java
-            </div>
-          </label>
-          <label
-            className="toggle-container "
-          >
-            <input
-              autoFocus={false}
-              checked={false}
-              name="test-java-filename"
-              onChange={[Function]}
-              type="radio"
-              value="kotlin"
-            />
-            <div
-              className="txt-s py3 toggle--white toggle--active-blue toggle"
-            >
-              Kotlin
-            </div>
-          </label>
-        </div>
-      </fieldset>
       <div
-        role="alert"
-      />
+        className="relative "
+      >
+        <fieldset>
+          <div
+            aria-required={true}
+            className="toggle-group round-full bg-blue py3 px3"
+            data-test="test-java-filename-input"
+            id="test-java-filename"
+            role="radiogroup"
+          >
+            <label
+              className="toggle-container "
+            >
+              <input
+                autoFocus={false}
+                checked={false}
+                name="test-java-filename"
+                onChange={[Function]}
+                type="radio"
+                value="javascript"
+              />
+              <div
+                className="txt-s py3 toggle--white toggle--active-blue toggle"
+              >
+                JavaScript
+              </div>
+            </label>
+            <label
+              className="toggle-container "
+            >
+              <input
+                autoFocus={false}
+                checked={false}
+                name="test-java-filename"
+                onChange={[Function]}
+                type="radio"
+                value="swift"
+              />
+              <div
+                className="txt-s py3 toggle--white toggle--active-blue toggle"
+              >
+                Swift
+              </div>
+            </label>
+            <label
+              className="toggle-container "
+            >
+              <input
+                autoFocus={false}
+                checked={false}
+                name="test-java-filename"
+                onChange={[Function]}
+                type="radio"
+                value="objectiveC"
+              />
+              <div
+                className="txt-s py3 toggle--white toggle--active-blue toggle"
+              >
+                Objective-C
+              </div>
+            </label>
+            <label
+              className="toggle-container "
+            >
+              <input
+                autoFocus={false}
+                checked={true}
+                name="test-java-filename"
+                onChange={[Function]}
+                type="radio"
+                value="java"
+              />
+              <div
+                className="txt-s py3 toggle--white toggle--active-blue toggle"
+              >
+                Java
+              </div>
+            </label>
+            <label
+              className="toggle-container "
+            >
+              <input
+                autoFocus={false}
+                checked={false}
+                name="test-java-filename"
+                onChange={[Function]}
+                type="radio"
+                value="kotlin"
+              />
+              <div
+                className="txt-s py3 toggle--white toggle--active-blue toggle"
+              >
+                Kotlin
+              </div>
+            </label>
+          </div>
+        </fieldset>
+        <div
+          role="alert"
+        />
+      </div>
     </div>
   </div>
   <div

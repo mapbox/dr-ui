@@ -684,16 +684,12 @@ exports[`android-layout-code-block With link to GitHub file renders as expected 
       className="flex-child"
     >
       <div
-        className="txt-bold mb6 color-gray-dark"
+        className="inline-block txt-bold mb6 color-gray-dark"
       >
         activity_styles_runtime_styling
       </div>
-    </div>
-    <div
-      className="flex-child"
-    >
       <div
-        className="flex-child"
+        className="inline-block ml12"
       >
         <a
           className="unprose link"

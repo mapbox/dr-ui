@@ -2,13 +2,13 @@
 
 exports[`code-snippet-title Basic renders as expected 1`] = `
 <div
-  className="mb6"
+  className="flex-parent-mm flex-parent--space-between-main-mm mb6"
 >
   <div
-    className=""
+    className="flex-child"
   >
     <div
-      className="txt-bold mb6 color-gray-dark"
+      className="inline-block txt-bold mb6 color-gray-dark"
     >
       MainActivity.java
     </div>
@@ -24,16 +24,12 @@ exports[`code-snippet-title With a link renders as expected 1`] = `
     className="flex-child"
   >
     <div
-      className="txt-bold mb6 color-gray-dark"
+      className="inline-block txt-bold mb6 color-gray-dark"
     >
       MainActivity.java
     </div>
-  </div>
-  <div
-    className="flex-child"
-  >
     <div
-      className="flex-child"
+      className="inline-block ml12"
     >
       <a
         className="unprose link"
@@ -58,6 +54,104 @@ exports[`code-snippet-title With a link renders as expected 1`] = `
         </svg>
          View on GitHub
       </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`code-snippet-title With a toggle renders as expected 1`] = `
+<div
+  className="flex-parent-mm flex-parent--space-between-main-mm mb6"
+>
+  <div
+    className="flex-child"
+  >
+    <div
+      className="inline-block txt-bold mb6 color-gray-dark"
+    >
+      ViewController
+    </div>
+    <div
+      className="inline-block ml12"
+    >
+      <a
+        className="unprose link"
+        href="https://github.com/mapbox/"
+        title="View ViewController on GitHub"
+      >
+        <svg
+          className="events-none icon inline-block align-t"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 18,
+              "width": 18,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-github"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+         View on GitHub
+      </a>
+    </div>
+  </div>
+  <div
+    className="flex-child"
+  >
+    <div
+      className="relative "
+    >
+      <fieldset>
+        <div
+          aria-required={true}
+          className="toggle-group round-full bg-blue py3 px3"
+          data-test="some-id-input"
+          id="some-id"
+          role="radiogroup"
+        >
+          <label
+            className="toggle-container "
+          >
+            <input
+              autoFocus={false}
+              checked={true}
+              name="some-id"
+              onChange={[Function]}
+              type="radio"
+              value="swift"
+            />
+            <div
+              className="txt-s py3 toggle--white toggle--active-blue toggle"
+            >
+              Swift
+            </div>
+          </label>
+          <label
+            className="toggle-container "
+          >
+            <input
+              autoFocus={false}
+              checked={false}
+              name="some-id"
+              onChange={[Function]}
+              type="radio"
+              value="objectiveC"
+            />
+            <div
+              className="txt-s py3 toggle--white toggle--active-blue toggle"
+            >
+              Objective-C
+            </div>
+          </label>
+        </div>
+      </fieldset>
+      <div
+        role="alert"
+      />
     </div>
   </div>
 </div>

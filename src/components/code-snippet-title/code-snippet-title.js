@@ -5,13 +5,15 @@ import Icon from '@mapbox/mr-ui/icon';
 export default class CodeSnippetTitle extends React.Component {
   renderFilename = () => {
     return (
-      <div className="txt-bold mb6 color-gray-dark">{this.props.filename}</div>
+      <div className="inline-block txt-bold mb6 color-gray-dark">
+        {this.props.filename}
+      </div>
     );
   };
 
   renderLink = () => {
     return (
-      <div className="flex-child">
+      <div className="inline-block ml12">
         <a
           className="unprose link"
           href={this.props.link}
@@ -24,15 +26,14 @@ export default class CodeSnippetTitle extends React.Component {
   };
 
   render() {
-    const { link } = this.props;
+    const { link, toggle } = this.props;
     return (
-      <div
-        className={`${
-          link ? 'flex-parent-mm flex-parent--space-between-main-mm ' : ''
-        }mb6`}
-      >
-        <div className={link ? 'flex-child' : ''}>{this.renderFilename()}</div>
-        {link && <div className="flex-child">{this.renderLink()}</div>}
+      <div className="flex-parent-mm flex-parent--space-between-main-mm mb6">
+        <div className="flex-child">
+          {this.renderFilename()}
+          {link && this.renderLink()}
+        </div>
+        {toggle && <div className="flex-child">{toggle}</div>}
       </div>
     );
   }
@@ -55,5 +56,7 @@ CodeSnippetTitle.propTypes = {
           '`. Validation failed.'
       );
     }
-  }
+  },
+  /* Language toggle to be displayed. */
+  toggle: PropTypes.node
 };

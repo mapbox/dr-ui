@@ -7,7 +7,6 @@ exports[`contextless-android-activity-toggle Basic renders as expected 1`] = `
   <div
     className="my24"
   >
-    
     <div
       className="relative round z0 scroll-styled scroll-auto"
       style={
@@ -284,61 +283,6 @@ exports[`contextless-android-activity-toggle Two languages renders as expected 1
   <div
     className="my24"
   >
-    <div
-      className="mb12"
-    >
-      <div
-        className="relative "
-      >
-        <fieldset>
-          <div
-            aria-required={true}
-            className="toggle-group round-full bg-blue py3 px3"
-            data-test="test-java-kotlin-input"
-            id="test-java-kotlin"
-            role="radiogroup"
-          >
-            <label
-              className="toggle-container "
-            >
-              <input
-                autoFocus={false}
-                checked={true}
-                name="test-java-kotlin"
-                onChange={[Function]}
-                type="radio"
-                value="java"
-              />
-              <div
-                className="txt-s py3 toggle--white toggle--active-blue toggle"
-              >
-                Java
-              </div>
-            </label>
-            <label
-              className="toggle-container "
-            >
-              <input
-                autoFocus={false}
-                checked={false}
-                name="test-java-kotlin"
-                onChange={[Function]}
-                type="radio"
-                value="kotlin"
-              />
-              <div
-                className="txt-s py3 toggle--white toggle--active-blue toggle"
-              >
-                Kotlin
-              </div>
-            </label>
-          </div>
-        </fieldset>
-        <div
-          role="alert"
-        />
-      </div>
-    </div>
     <div
       className="relative round z0 scroll-styled scroll-auto"
       style={
