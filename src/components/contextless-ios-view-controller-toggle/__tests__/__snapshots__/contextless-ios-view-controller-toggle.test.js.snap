@@ -7,6 +7,7 @@ exports[`contextless-ios-view-controller-toggle Basic renders as expected 1`] = 
   <div
     className="my24"
   >
+    
     <div
       className="relative round z0 scroll-styled scroll-auto"
       style={
@@ -129,6 +130,72 @@ exports[`contextless-ios-view-controller-toggle Two languages renders as expecte
   <div
     className="my24"
   >
+    <div
+      className="flex-parent-mm flex-parent--space-between-main-mm mb6"
+    >
+      <div
+        className="flex-child"
+      >
+        <div
+          className="inline-block txt-bold mb6 color-gray-dark"
+        />
+      </div>
+      <div
+        className="flex-child"
+      >
+        <div
+          className="relative "
+        >
+          <fieldset>
+            <div
+              aria-required={true}
+              className="toggle-group round-full bg-blue py3 px3"
+              data-test="test-java-kotlin-input"
+              id="test-java-kotlin"
+              role="radiogroup"
+            >
+              <label
+                className="toggle-container "
+              >
+                <input
+                  autoFocus={false}
+                  checked={true}
+                  name="test-java-kotlin"
+                  onChange={[Function]}
+                  type="radio"
+                  value="swift"
+                />
+                <div
+                  className="txt-s py3 toggle--white toggle--active-blue toggle"
+                >
+                  Swift
+                </div>
+              </label>
+              <label
+                className="toggle-container "
+              >
+                <input
+                  autoFocus={false}
+                  checked={false}
+                  name="test-java-kotlin"
+                  onChange={[Function]}
+                  type="radio"
+                  value="objectiveC"
+                />
+                <div
+                  className="txt-s py3 toggle--white toggle--active-blue toggle"
+                >
+                  Objective-C
+                </div>
+              </label>
+            </div>
+          </fieldset>
+          <div
+            role="alert"
+          />
+        </div>
+      </div>
+    </div>
     <div
       className="relative round z0 scroll-styled scroll-auto"
       style={

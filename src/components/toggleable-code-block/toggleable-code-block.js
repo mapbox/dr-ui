@@ -183,11 +183,11 @@ export default class ToggleableCodeBlock extends React.Component {
   };
 
   render() {
-    const { filename, code } = this.props;
-
+    const { filename, options, code } = this.props;
+    const multipleOptions = options && options.length > 1;
     return (
       <div className="my24">
-        {filename && this.renderTitle()}
+        {filename || multipleOptions ? this.renderTitle() : ''}
         {code && this.renderSnippet(code)}
       </div>
     );

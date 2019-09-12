@@ -16,7 +16,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
         ThisIsAFile.extension
       </div>
       <div
-        className="inline-block ml12"
+        className="inline-block ml12-mm"
       >
         <a
           className="unprose link"

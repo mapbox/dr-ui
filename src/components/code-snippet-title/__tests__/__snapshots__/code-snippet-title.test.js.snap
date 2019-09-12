@@ -29,7 +29,7 @@ exports[`code-snippet-title With a link renders as expected 1`] = `
       MainActivity.java
     </div>
     <div
-      className="inline-block ml12"
+      className="inline-block ml12-mm"
     >
       <a
         className="unprose link"
@@ -72,7 +72,7 @@ exports[`code-snippet-title With a toggle renders as expected 1`] = `
       ViewController
     </div>
     <div
-      className="inline-block ml12"
+      className="inline-block ml12-mm"
     >
       <a
         className="unprose link"
