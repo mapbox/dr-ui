@@ -2,8 +2,32 @@
 
 * Add `Video` component. [#176](https://github.com/mapbox/dr-ui/pull/176)
 * Add `Browser` component. [#177](https://github.com/mapbox/dr-ui/pull/177)
+* Add `CodeSnippetTitle` component. [#179](https://github.com/mapbox/dr-ui/pull/179)
+* Modify the `CodeToggle` component to allow for the toggle labels to be different from the values and remove restrictions on specific strings for the `language` prop. [#179](https://github.com/mapbox/dr-ui/pull/179)
+- Add `ContextlessAndroidActivityToggle` component that styles the `ToggleableCodeSnippet` component specifically for toggling between Activity code written in Java and Kotlin. It should be used with [context](https://reactjs.org/docs/context.html) defined in the repo where it is being used. [#179](https://github.com/mapbox/dr-ui/pull/179)
+- Add `ContextlessIosViewControllerToggle` component that styles the `ToggleableCodeSnippet` component specifically for toggling between ViewController code written in Swift and Objective-C. It should be used with [context](https://reactjs.org/docs/context.html) defined in the repo where it is being used. [#179](https://github.com/mapbox/dr-ui/pull/179)
+- Add `NumberedCodeSnippet` component for displaying line numbers and styling designated `copyRanges` inside snippets. [#179](https://github.com/mapbox/dr-ui/pull/179)
+- Add `AndroidLayoutCodeBlock` component. [#179](https://github.com/mapbox/dr-ui/pull/179)
+- Modify `prism.css` to add styling for numbered lines in the `NumberedCodeSnippet` component. [#179](https://github.com/mapbox/dr-ui/pull/179)
+- Add `highlight/kotlin.js` to add syntax highlighting for Kotlin code snippets. [#179](https://github.com/mapbox/dr-ui/pull/179)
+
 * 🚨Breaking changes:
   * Move all syntax highlighter functions from helpers directory to highlight component and simplifies each highlighter file name. [#180](https://github.com/mapbox/dr-ui/pull/180)
+  * Modify the `ToggleableCodeBlock` component to include the code toggle when more than one `option` exists. Changes to props include:
+    * Removes the `codeSnippet`
+    * Replaces `codeSnippet.language` with `selectedLanguage`
+    * Replaces `codeSnippet.rawCode` with `code`
+    * Replaces `codeSnippet.highlightedCode` with `highlightedCode`
+    * Removes `codeSnippet.preferredLanguage`
+    * Adds a required `id`
+    * Adds an optional `copyRanges`
+    * Adds an optional `options`
+    * Adds an optional `changeLanguage`
+    * Adds an optional `filename`
+    * Adds an optional `link`
+    * Adds an optional `limitHeight` (defaults to `true`)
+
+    See [#179](https://github.com/mapbox/dr-ui/pull/179)
 
 ## 0.20.1
 

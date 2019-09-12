@@ -1,0 +1,1289 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`android-layout-code-block Basic renders as expected 1`] = `
+<div
+  className="my24"
+>
+  <div
+    className="prose"
+  >
+    <div
+      className="relative round z0 scroll-styled"
+      style={Object {}}
+    >
+      <pre>
+        <code
+          className="px0 hljs"
+        >
+          <div
+            className="relative z2"
+            data-chunk-code="chunk-0"
+          >
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token prolog\\">&lt;?xml version=\\"1.0\\" encoding=\\"utf-8\\"?></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>android.support.constraint.ConstraintLayout</span> <span class=\\"token attr-name\\"><span class=\\"token namespace\\">xmlns:</span>android</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>http://schemas.android.com/apk/res/android<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">xmlns:</span>mapbox</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>http://schemas.android.com/apk/res-auto<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_width</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>match_parent<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_height</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>match_parent<span class=\\"token punctuation\\">\\"</span></span><span class=\\"token punctuation\\">></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 19.225,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": " ",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>com.mapbox.mapboxsdk.maps.MapView</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>id</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>@+id/mapView<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_width</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>match_parent<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_height</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>match_parent<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>mapbox_cameraTargetLat</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>38.9098<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>mapbox_cameraTargetLng</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>-77.0295<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>mapbox_cameraZoom</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>12<span class=\\"token punctuation\\">\\"</span></span> <span class=\\"token punctuation\\">/></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 19.225,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": " ",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>Button</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>id</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>@+id/startButton<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_width</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>fill_parent<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_height</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>wrap_content<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_marginStart</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>16dp<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_marginLeft</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>16dp<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_marginTop</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>16dp<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_marginEnd</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>16dp<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>background</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>@color/mapboxGrayLight<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>enabled</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>false<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>text</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>Start navigation<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>textColor</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>@color/mapboxWhite<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>layout_constraintStart_toStartOf</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>parent<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>layout_constraintTop_toTopOf</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>parent<span class=\\"token punctuation\\">\\"</span></span> <span class=\\"token punctuation\\">/></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;/</span>android.support.constraint.ConstraintLayout</span><span class=\\"token punctuation\\">></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+          </div>
+        </code>
+      </pre>
+      <div
+        className="absolute z2 top right mr6 mt6 color-white"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`android-layout-code-block With link to GitHub file renders as expected 1`] = `
+<div
+  className="my24"
+>
+  <div
+    className="flex-parent-mm flex-parent--space-between-main-mm mb6"
+  >
+    <div
+      className="flex-child"
+    >
+      <div
+        className="inline-block txt-bold mb6 color-gray-dark"
+      >
+        activity_styles_runtime_styling
+      </div>
+      <div
+        className="inline-block ml12-mm"
+      >
+        <a
+          className="unprose link"
+          href="https://github.com/mapbox/"
+          title="View activity_styles_runtime_styling on GitHub"
+        >
+          <svg
+            className="events-none icon inline-block align-t"
+            focusable="false"
+            role="presentation"
+            style={
+              Object {
+                "height": 18,
+                "width": 18,
+              }
+            }
+          >
+            <use
+              xlinkHref="#icon-github"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            />
+          </svg>
+           View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="prose"
+  >
+    <div
+      className="relative round z0 scroll-styled"
+      style={Object {}}
+    >
+      <pre>
+        <code
+          className="px0 hljs"
+        >
+          <div
+            className="relative z2"
+            data-chunk-code="chunk-0"
+          >
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>android.support.constraint.ConstraintLayout</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 40.9,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">xmlns:</span>android</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>http://schemas.android.com/apk/res/android<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 40.9,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">xmlns:</span>mapbox</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>http://schemas.android.com/apk/res-auto<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 40.9,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_width</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>match_parent<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 40.9,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_height</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>match_parent<span class=\\"token punctuation\\">\\"</span></span><span class=\\"token punctuation\\">></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": " ",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 40.9,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>com.mapbox.mapboxsdk.maps.MapView</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 69.8,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>id</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>@+id/runtime_mapview<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 69.8,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_width</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>match_parent<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 69.8,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_height</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>match_parent<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 69.8,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>mapbox_cameraTargetLat</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>19.948045<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 69.8,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>mapbox_cameraTargetLng</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>-84.654463<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 69.8,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>mapbox_cameraZoom</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>3.371717<span class=\\"token punctuation\\">\\"</span></span> <span class=\\"token punctuation\\">/></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": " ",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 40.9,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>android.support.design.widget.FloatingActionButton</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 69.8,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>id</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>@+id/floatingActionButton<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 69.8,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_width</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>wrap_content<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 69.8,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_height</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>wrap_content<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 69.8,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_marginEnd</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>16dp<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 69.8,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_marginRight</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>16dp<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 69.8,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_marginBottom</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>16dp<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 69.8,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>layout_constraintBottom_toBottomOf</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>parent<span class=\\"token punctuation\\">\\"</span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 69.8,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>layout_constraintEnd_toEndOf</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>parent<span class=\\"token punctuation\\">\\"</span></span> <span class=\\"token punctuation\\">/></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": " ",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;/</span>android.support.constraint.ConstraintLayout</span><span class=\\"token punctuation\\">></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+          </div>
+        </code>
+      </pre>
+      <div
+        className="absolute z2 top right mr6 mt6 color-white"
+      />
+    </div>
+  </div>
+</div>
+`;

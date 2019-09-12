@@ -11,11 +11,13 @@ testCases.basic = {
     onChange: () => {},
     options: [
       {
+        label: 'Swift',
         language: 'swift',
         preferredLanguage: true
       },
       {
-        language: 'objective-c',
+        label: 'Objective-C',
+        language: 'objectiveC',
         preferredLanguage: false
       }
     ]
@@ -30,11 +32,13 @@ testCases.objectiveC = {
     onChange: () => {},
     options: [
       {
+        label: 'Swift',
         language: 'swift',
         preferredLanguage: false
       },
       {
-        language: 'objective-c',
+        label: 'Objective-C',
+        language: 'objectiveC',
         preferredLanguage: true
       }
     ]
@@ -43,25 +47,29 @@ testCases.objectiveC = {
 
 testCases.objectiveC2 = {
   component: CodeToggle,
-  description: 'Objective C preferred',
+  description: 'Java preferred',
   props: {
     id: 'three',
     onChange: () => {},
     options: [
       {
+        label: 'JavaScript',
         language: 'javascript',
         preferredLanguage: false
       },
       {
+        label: 'Java',
         language: 'java',
         preferredLanguage: true
       },
       {
+        label: 'Swift',
         language: 'swift',
         preferredLanguage: false
       },
       {
-        language: 'objective-c',
+        label: 'Objective-C',
+        language: 'objectiveC',
         preferredLanguage: false
       }
     ]
