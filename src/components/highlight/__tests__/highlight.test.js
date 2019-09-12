@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { testCases } from './syntax-highlighting-test-cases.js';
+import { testCases } from './highlight-test-cases.js';
 
 describe('syntax-highlighting', () => {
   describe(testCases.basic.description, () => {
