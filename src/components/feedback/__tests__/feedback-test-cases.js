@@ -19,6 +19,7 @@ testCases.basic = {
       production:
         'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook'
     },
+    preferredLanguage: 'Swift',
     location: {}
   }
 };
