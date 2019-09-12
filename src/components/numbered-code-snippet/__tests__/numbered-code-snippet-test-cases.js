@@ -1,3 +1,14 @@
+import NumberedCodeSnippet from '../numbered-code-snippet';
+import { highlightSwift } from '../../highlight/swift';
+
+const testCases = {};
+
+const code = `// 'style' in this case refers to an MGLStyle object.
+let layer = style.layer(withIdentifier: "place-city-sm") as! MGLSymbolStyleLayer
+let spanish = Locale(identifier: "es")
+layer.text = layer.text.mgl_expressionLocalized(into: spanish)`;
+
+let highlightTheme = `
 code[class*='language-'],
 pre[class*='language-'] {
   color: #273d56;
@@ -113,8 +124,19 @@ pre[class*='language-'] {
 .token.entity {
   cursor: help;
 }
+`;
 
-/* Line numbers */
-[data-content]::before {
-  content: attr(data-content);
-}
+testCases.basic = {
+  component: NumberedCodeSnippet,
+  description: 'Basic',
+  props: {
+    code: code,
+    highlightedCode: highlightSwift(code),
+    maxHeight: 450,
+    highlightThemeCss: highlightTheme,
+    copyRanges: [[2, 3]],
+    onCopy: () => {}
+  }
+};
+
+export { testCases };
