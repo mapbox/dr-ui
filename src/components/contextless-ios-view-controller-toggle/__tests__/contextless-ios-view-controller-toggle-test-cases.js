@@ -18,7 +18,9 @@ const contextSwift = {
   preferredLanguage: {
     ios: 'swift'
   },
-  changeLanguage: () => {}
+  changeLanguage: {
+    ios: () => {}
+  }
 };
 
 const contextObjectiveC = {
@@ -37,7 +39,9 @@ const contextObjectiveC = {
   preferredLanguage: {
     ios: 'objectiveC'
   },
-  changeLanguage: () => {}
+  changeLanguage: {
+    ios: () => {}
+  }
 };
 
 const swift = `// 'style' in this case refers to an MGLStyle object.

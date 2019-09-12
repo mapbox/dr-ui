@@ -18,7 +18,9 @@ const contextJava = {
   preferredLanguage: {
     android: 'java'
   },
-  changeLanguage: () => {}
+  changeLanguage: {
+    android: () => {}
+  }
 };
 
 const contextKotlin = {
@@ -37,7 +39,9 @@ const contextKotlin = {
   preferredLanguage: {
     android: 'kotlin'
   },
-  changeLanguage: () => {}
+  changeLanguage: {
+    android: () => {}
+  }
 };
 
 const java = `map.getStyle(new Style.OnStyleLoaded() {

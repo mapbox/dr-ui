@@ -82,7 +82,9 @@ ContextlessAndroidActivityToggle.propTypes = {
     preferredLanguage: PropTypes.shape({
       android: PropTypes.oneOf(['kotlin', 'java']).isRequired
     }).isRequired,
-    changeLanguage: PropTypes.func.isRequired
+    changeLanguage: PropTypes.shape({
+      android: PropTypes.func.isRequired
+    }).isRequired
   }).isRequired,
   /* A unique `id` is required for the language toggle. */
   id: PropTypes.string.isRequired,

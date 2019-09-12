@@ -78,7 +78,9 @@ ContextlessIosViewControllerToggle.propTypes = {
     preferredLanguage: PropTypes.shape({
       ios: PropTypes.oneOf(['objectiveC', 'swift']).isRequired
     }).isRequired,
-    changeLanguage: PropTypes.func.isRequired
+    changeLanguage: PropTypes.shape({
+      ios: PropTypes.func.isRequired
+    }).isRequired
   }).isRequired,
   /* A unique `id` is required for the language toggle. */
   id: PropTypes.string.isRequired,
