@@ -27,7 +27,7 @@
     * Adds an optional `link`
     * Adds an optional `limitHeight` (defaults to `true`)
 
-  See [#179](https://github.com/mapbox/dr-ui/pull/179)
+    See [#179](https://github.com/mapbox/dr-ui/pull/179)
 
 ## 0.20.1
 
