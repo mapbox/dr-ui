@@ -10,6 +10,7 @@
 - Add `AndroidLayoutCodeBlock` component. [#179](https://github.com/mapbox/dr-ui/pull/179)
 - Modify `prism.css` to add styling for numbered lines in the `NumberedCodeSnippet` component. [#179](https://github.com/mapbox/dr-ui/pull/179)
 - Add `highlight/kotlin.js` to add syntax highlighting for Kotlin code snippets. [#179](https://github.com/mapbox/dr-ui/pull/179)
+* Add `preferredLanguage` as prop for `Feedback` and include browser name, version, and operating system with the event. [#183](https://github.com/mapbox/dr-ui/pull/183)
 
 * 🚨Breaking changes:
   * Move all syntax highlighter functions from helpers directory to highlight component and simplifies each highlighter file name. [#180](https://github.com/mapbox/dr-ui/pull/180)
