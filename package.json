@@ -80,6 +80,7 @@
     "compare-versions": "^3.4.0",
     "core-js": "^3.2.1",
     "debounce": "^1.2.0",
+    "detect-browser": "^4.7.0",
     "downshift": "^3.2.7",
     "hastscript": "^5.0.0",
     "prismjs": "^1.15.0",
