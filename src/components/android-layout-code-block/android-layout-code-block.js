@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import CodeSnippet from '@mapbox/mr-ui/code-snippet';
 import CodeSnippetTitle from '../code-snippet-title/code-snippet-title';
-import { highlightXml } from '../../helpers/highlight-xml';
+import { highlightXml } from '../highlight/xml';
 
 let highlightTheme = `
 code[class*='language-'],

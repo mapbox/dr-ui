@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ToggleableCodeBlock from '../toggleable-code-block/toggleable-code-block';
-import { highlightJava } from '../../helpers/highlight-java';
-import { highlightKotlin } from '../../helpers/highlight-kotlin';
+import { highlightJava } from '../highlight/java';
+import { highlightKotlin } from '../highlight/kotlin';
 
 export default class ContextlessAndroidActivityToggle extends React.Component {
   checkPreference = language => {

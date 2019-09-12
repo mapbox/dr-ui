@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ToggleableCodeBlock from '../toggleable-code-block/toggleable-code-block';
-import { highlightSwift } from '../../helpers/highlight-swift';
-import { highlightObjectivec } from '../../helpers/highlight-objectivec';
+import { highlightSwift } from '../highlight/swift';
+import { highlightObjectivec } from '../highlight/objectivec';
 
 export default class ContextlessIosViewControllerToggle extends React.Component {
   static defaultProps = {

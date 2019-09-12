@@ -1,5 +1,5 @@
 import ToggleableCodeBlock from '../toggleable-code-block';
-import { highlightJava } from '../../../helpers/highlight-java';
+import { highlightJava } from '../../highlight/java';
 
 const testCases = {};
 const noRenderCases = {};

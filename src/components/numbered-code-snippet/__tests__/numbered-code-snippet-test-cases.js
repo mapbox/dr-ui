@@ -1,5 +1,5 @@
 import NumberedCodeSnippet from '../numbered-code-snippet';
-import { highlightSwift } from '../../../helpers/highlight-swift';
+import { highlightSwift } from '../../highlight/swift';
 
 const testCases = {};
 

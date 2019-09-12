@@ -6,6 +6,7 @@ import { highlightJson } from '../json';
 import { highlightJsx } from '../jsx';
 import { highlightHtml } from '../html';
 import { highlightXml } from '../xml';
+import { highlightKotlin } from '../kotlin';
 
 const testCases = {};
 const noRenderCases = {};
@@ -277,6 +278,11 @@ const xmlCodeSnippet = `<?xml version="1.0" encoding="utf-8"?>
 
 </android.support.constraint.ConstraintLayout>`;
 
+const kotlinCodeSnippet = `map?.getStyle {
+  val settlementLabelLayer = it.getLayer("settlement-label")
+  settlementLabelLayer?.setProperties(textField("{name_ru}"))
+}`;
+
 testCases.basic = {
   component: CodeSnippet,
   description: 'Swift highlighting',
@@ -343,6 +349,16 @@ testCases.xml = {
   props: {
     code: xmlCodeSnippet,
     highlightedCode: highlightXml(xmlCodeSnippet),
+    highlightThemeCss: css
+  }
+};
+
+testCases.kotlin = {
+  component: CodeSnippet,
+  description: 'Kotlin highlighting',
+  props: {
+    code: kotlinCodeSnippet,
+    highlightedCode: highlightKotlin(kotlinCodeSnippet),
     highlightThemeCss: css
   }
 };
