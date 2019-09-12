@@ -8,7 +8,7 @@
 - Add `ContextlessIosViewControllerToggle` component that styles the `ToggleableCodeSnippet` component specifically for toggling between ViewController code written in Swift and Objective-C. It should be used with [context](https://reactjs.org/docs/context.html) defined in the repo where it is being used. [#179](https://github.com/mapbox/dr-ui/pull/179)
 - Add `NumberedCodeSnippet` component for displaying line numbers and styling designated `copyRanges` inside snippets. [#179](https://github.com/mapbox/dr-ui/pull/179)
 - Add `AndroidLayoutCodeBlock` component. [#179](https://github.com/mapbox/dr-ui/pull/179)
-- Modify `prism.css`** to add styling for numbered lines in the `NumberedCodeSnippet` component. [#179](https://github.com/mapbox/dr-ui/pull/179)
+- Modify `prism.css` to add styling for numbered lines in the `NumberedCodeSnippet` component. [#179](https://github.com/mapbox/dr-ui/pull/179)
 - Add `highlight/kotlin.js` to add syntax highlighting for Kotlin code snippets. [#179](https://github.com/mapbox/dr-ui/pull/179)
 
 * 🚨Breaking changes:
