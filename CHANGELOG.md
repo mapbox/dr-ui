@@ -1,3 +1,9 @@
+# Changelog
+
+## Master
+
+* Add `environment` and `location` to the request in `Feedback`. [#184](https://github.com/mapbox/dr-ui/pull/184)
+
 ## 0.21.0
 
 * Add `Video` component. [#176](https://github.com/mapbox/dr-ui/pull/176)
