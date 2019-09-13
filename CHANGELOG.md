@@ -1,6 +1,6 @@
 # Changelog
 
-## Master
+## 0.21.1
 
 * Add `environment` and `location` to the request in `Feedback`. [#184](https://github.com/mapbox/dr-ui/pull/184)
 
