@@ -1,4 +1,4 @@
-## master
+## 0.21.0
 
 * Add `Video` component. [#176](https://github.com/mapbox/dr-ui/pull/176)
 * Add `Browser` component. [#177](https://github.com/mapbox/dr-ui/pull/177)
