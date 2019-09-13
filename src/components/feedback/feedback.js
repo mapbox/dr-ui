@@ -61,7 +61,7 @@ class Feedback extends React.Component {
         environment: /(^|\S+\.)mapbox\.com/.test(getWindow().location.host)
           ? 'production'
           : 'staging', // staging or production
-        host: getWindow().location || undefined // pull full window.location
+        location: getWindow().location || undefined // pull full window.location
       }
     };
     // if user is logged in then associate feedback with them
