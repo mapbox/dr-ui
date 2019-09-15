@@ -1,27 +1,39 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import getWindow from '@mapbox/mr-ui/utils/get-window';
 
 export default class Video extends React.Component {
-  render() {
-    let videoProps = {
-      autoPlay: true,
-      loop: true
+  constructor(props) {
+    super(props);
+    this.state = {
+      videoProps: {
+        autoPlay: true,
+        loop: true,
+        controls: undefined
+      }
     };
+  }
+
+  componentDidMount() {
     const reducedMotion =
-      window !== 'undefined'
-        ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
-        : false;
+      getWindow().matchMedia('(prefers-reduced-motion: reduce)').matches ||
+      false;
     if (reducedMotion) {
-      videoProps = {
-        autoPlay: undefined,
-        loop: undefined,
-        controls: true
-      };
+      this.setState({
+        videoProps: {
+          autoPlay: undefined,
+          loop: undefined,
+          controls: true
+        }
+      });
     }
+  }
+
+  render() {
     return (
       <div>
         <video
-          {...videoProps}
+          {...this.state.videoProps}
           muted
           width="100%"
           className="block mx-auto"
