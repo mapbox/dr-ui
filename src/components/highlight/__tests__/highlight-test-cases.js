@@ -1,11 +1,12 @@
 import CodeSnippet from '@mapbox/mr-ui/code-snippet';
-import { highlightSwift } from '../../../helpers/highlight-swift';
-import { highlightObjectivec } from '../../../helpers/highlight-objectivec';
-import { highlightJava } from '../../../helpers/highlight-java';
-import { highlightJson } from '../../../helpers/highlight-json';
-import { highlightJsx } from '../../../helpers/highlight-jsx';
-import { highlightHtml } from '../../../helpers/highlight-html';
-import { highlightXml } from '../../../helpers/highlight-xml';
+import { highlightSwift } from '../swift';
+import { highlightObjectivec } from '../objectivec';
+import { highlightJava } from '../java';
+import { highlightJson } from '../json';
+import { highlightJsx } from '../jsx';
+import { highlightHtml } from '../html';
+import { highlightXml } from '../xml';
+import { highlightKotlin } from '../kotlin';
 
 const testCases = {};
 const noRenderCases = {};
@@ -277,6 +278,11 @@ const xmlCodeSnippet = `<?xml version="1.0" encoding="utf-8"?>
 
 </android.support.constraint.ConstraintLayout>`;
 
+const kotlinCodeSnippet = `map?.getStyle {
+  val settlementLabelLayer = it.getLayer("settlement-label")
+  settlementLabelLayer?.setProperties(textField("{name_ru}"))
+}`;
+
 testCases.basic = {
   component: CodeSnippet,
   description: 'Swift highlighting',
@@ -343,6 +349,16 @@ testCases.xml = {
   props: {
     code: xmlCodeSnippet,
     highlightedCode: highlightXml(xmlCodeSnippet),
+    highlightThemeCss: css
+  }
+};
+
+testCases.kotlin = {
+  component: CodeSnippet,
+  description: 'Kotlin highlighting',
+  props: {
+    code: kotlinCodeSnippet,
+    highlightedCode: highlightKotlin(kotlinCodeSnippet),
     highlightThemeCss: css
   }
 };

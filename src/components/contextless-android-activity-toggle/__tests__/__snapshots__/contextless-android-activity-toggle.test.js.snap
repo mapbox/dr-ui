@@ -1,0 +1,620 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`contextless-android-activity-toggle Basic renders as expected 1`] = `
+<div
+  className="my24 prose"
+>
+  <div
+    className="my24"
+  >
+    
+    <div
+      className="relative round z0 scroll-styled scroll-auto"
+      style={
+        Object {
+          "maxHeight": 480,
+        }
+      }
+    >
+      <pre>
+        <code
+          className="px0 hljs"
+        >
+          <div
+            className="relative z2"
+            data-chunk-code="chunk-0"
+          >
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "map<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getStyle</span><span class=\\"token punctuation\\">(</span><span class=\\"token keyword\\">new</span> <span class=\\"token class-name\\">Style<span class=\\"token punctuation\\">.</span>OnStyleLoaded</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 26.45,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token annotation punctuation\\">@Override</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 26.45,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token keyword\\">public</span> <span class=\\"token keyword\\">void</span> <span class=\\"token function\\">onStyleLoaded</span><span class=\\"token punctuation\\">(</span><span class=\\"token annotation punctuation\\">@NonNull</span> Style style<span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 26.45,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": " ",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 40.9,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Layer settlementLabelLayer <span class=\\"token operator\\">=</span> style<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getLayer</span><span class=\\"token punctuation\\">(</span><span class=\\"token string\\">\\"settlement-label\\"</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 40.9,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": " ",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 40.9,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token keyword\\">if</span> <span class=\\"token punctuation\\">(</span>settlementLabelLayer <span class=\\"token operator\\">!=</span> null<span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 55.349999999999994,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "settlementLabelLayer<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">setProperties</span><span class=\\"token punctuation\\">(</span><span class=\\"token function\\">textField</span><span class=\\"token punctuation\\">(</span><span class=\\"token string\\">\\"{name_ru}\\"</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 40.9,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token punctuation\\">}</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 26.45,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token punctuation\\">}</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token punctuation\\">}</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+          </div>
+        </code>
+      </pre>
+      <div
+        className="absolute z2 top right mr6 mt6 color-white"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`contextless-android-activity-toggle Two languages renders as expected 1`] = `
+<div
+  className="my24 prose"
+>
+  <div
+    className="my24"
+  >
+    <div
+      className="flex-parent-mm flex-parent--space-between-main-mm mb6"
+    >
+      <div
+        className="flex-child"
+      >
+        <div
+          className="inline-block txt-bold mb6 color-gray-dark"
+        />
+      </div>
+      <div
+        className="flex-child"
+      >
+        <div
+          className="relative "
+        >
+          <fieldset>
+            <div
+              aria-required={true}
+              className="toggle-group round-full bg-blue py3 px3"
+              data-test="test-java-kotlin-input"
+              id="test-java-kotlin"
+              role="radiogroup"
+            >
+              <label
+                className="toggle-container "
+              >
+                <input
+                  autoFocus={false}
+                  checked={true}
+                  name="test-java-kotlin"
+                  onChange={[Function]}
+                  type="radio"
+                  value="java"
+                />
+                <div
+                  className="txt-s py3 toggle--white toggle--active-blue toggle"
+                >
+                  Java
+                </div>
+              </label>
+              <label
+                className="toggle-container "
+              >
+                <input
+                  autoFocus={false}
+                  checked={false}
+                  name="test-java-kotlin"
+                  onChange={[Function]}
+                  type="radio"
+                  value="kotlin"
+                />
+                <div
+                  className="txt-s py3 toggle--white toggle--active-blue toggle"
+                >
+                  Kotlin
+                </div>
+              </label>
+            </div>
+          </fieldset>
+          <div
+            role="alert"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="relative round z0 scroll-styled scroll-auto"
+      style={
+        Object {
+          "maxHeight": 480,
+        }
+      }
+    >
+      <pre>
+        <code
+          className="px0 hljs"
+        >
+          <div
+            className="relative z2"
+            data-chunk-code="chunk-0"
+          >
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "map<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getStyle</span><span class=\\"token punctuation\\">(</span><span class=\\"token keyword\\">new</span> <span class=\\"token class-name\\">Style<span class=\\"token punctuation\\">.</span>OnStyleLoaded</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 26.45,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token annotation punctuation\\">@Override</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 26.45,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token keyword\\">public</span> <span class=\\"token keyword\\">void</span> <span class=\\"token function\\">onStyleLoaded</span><span class=\\"token punctuation\\">(</span><span class=\\"token annotation punctuation\\">@NonNull</span> Style style<span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 26.45,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": " ",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 40.9,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Layer settlementLabelLayer <span class=\\"token operator\\">=</span> style<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getLayer</span><span class=\\"token punctuation\\">(</span><span class=\\"token string\\">\\"settlement-label\\"</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 40.9,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": " ",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 40.9,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token keyword\\">if</span> <span class=\\"token punctuation\\">(</span>settlementLabelLayer <span class=\\"token operator\\">!=</span> null<span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 55.349999999999994,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "settlementLabelLayer<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">setProperties</span><span class=\\"token punctuation\\">(</span><span class=\\"token function\\">textField</span><span class=\\"token punctuation\\">(</span><span class=\\"token string\\">\\"{name_ru}\\"</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 40.9,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token punctuation\\">}</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 26.45,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token punctuation\\">}</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token punctuation\\">}</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+          </div>
+        </code>
+      </pre>
+      <div
+        className="absolute z2 top right mr6 mt6 color-white"
+      />
+    </div>
+  </div>
+</div>
+`;

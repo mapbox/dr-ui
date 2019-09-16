@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import forwardEvent from './forward-event';
 import uuidv4 from 'uuid/v4';
 import Icon from '@mapbox/mr-ui/icon';
+import { detect } from 'detect-browser';
+import getWindow from '@mapbox/mr-ui/utils/get-window';
 
 const anonymousId = uuidv4(); // creates an anonymousId fallback if user is not logged or we cant get their info
 
@@ -42,15 +44,24 @@ class Feedback extends React.Component {
 
   // sends all available data to segment
   sendToSegment() {
+    const browser = detect();
     const event = {
       event: 'Sent docs feedback',
       properties: {
         helpful: this.state.helpful, // true, false
         site: this.props.site, // name of current site, helpful for filtering in Mode
+        browser: browser && browser.name, // get user's browser
+        browserVersion: browser && browser.version, // get user's browser version
+        os: browser && browser.os, // get user's operating system
         section: this.props.section || undefined, // (optional) name of section for longer pagers, helpful for fitering in Mode and identifying section areas
         feedback: this.state.feedback, // (optional) textarea feedback
         page: this.props.location || undefined, // get page context
-        userId: this.props.userName || undefined // set user if available
+        userId: this.props.userName || undefined, // set user if available
+        preferredLanguage: this.props.preferredLanguage || undefined, // set user preferred lanuage if available
+        environment: /(^|\S+\.)mapbox\.com/.test(getWindow().location.host)
+          ? 'production'
+          : 'staging', // staging or production
+        location: getWindow().location || undefined // pull full window.location
       }
     };
     // if user is logged in then associate feedback with them
@@ -151,7 +162,8 @@ Feedback.propTypes = {
     staging: PropTypes.string.isRequired,
     production: PropTypes.string.isRequired
   }), // staging and production webhook URLs to send forward event data to
-  userName: PropTypes.string // userid if available
+  userName: PropTypes.string, // userid if available
+  preferredLanguage: PropTypes.string // preferred code language if available
 };
 
 Feedback.defaultProps = {
