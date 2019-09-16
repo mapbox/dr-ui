@@ -8,7 +8,7 @@ export default class Video extends React.Component {
       loop: true
     };
     const reducedMotion =
-      window !== 'undefined'
+      typeof window !== 'undefined'
         ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
         : false;
     if (reducedMotion) {
