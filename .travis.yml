@@ -12,7 +12,4 @@ git:
 
 script:
   - npm test
-  - npm run build
-  - cd demo
-  - npm ci
-  - npm run build
+  - npm run build-batfish
