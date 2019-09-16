@@ -1,5 +1,9 @@
 # Changelog
 
+## master
+
+* Fix build error in `Video` component. [#186](https://github.com/mapbox/dr-ui/pull/186)
+
 ## 0.21.1
 
 * Add `environment` and `location` to the request in `Feedback`. [#184](https://github.com/mapbox/dr-ui/pull/184)
