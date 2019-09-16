@@ -5,7 +5,6 @@ import forwardEvent from './forward-event';
 import uuidv4 from 'uuid/v4';
 import Icon from '@mapbox/mr-ui/icon';
 import { detect } from 'detect-browser';
-import getWindow from '@mapbox/mr-ui/utils/get-window';
 
 const anonymousId = uuidv4(); // creates an anonymousId fallback if user is not logged or we cant get their info
 
@@ -45,6 +44,14 @@ class Feedback extends React.Component {
   // sends all available data to segment
   sendToSegment() {
     const browser = detect();
+    const environment =
+      typeof window !== 'undefined'
+        ? /(^|\S+\.)mapbox\.com/.test(window.location.host)
+          ? 'production'
+          : 'staging'
+        : undefined;
+    const location =
+      typeof window !== 'undefined' ? window.location : undefined;
     const event = {
       event: 'Sent docs feedback',
       properties: {
@@ -58,10 +65,8 @@ class Feedback extends React.Component {
         page: this.props.location || undefined, // get page context
         userId: this.props.userName || undefined, // set user if available
         preferredLanguage: this.props.preferredLanguage || undefined, // set user preferred lanuage if available
-        environment: /(^|\S+\.)mapbox\.com/.test(getWindow().location.host)
-          ? 'production'
-          : 'staging', // staging or production
-        location: getWindow().location || undefined // pull full window.location
+        environment, // staging or production
+        location // pull full window.location
       }
     };
     // if user is logged in then associate feedback with them
