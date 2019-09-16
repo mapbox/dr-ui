@@ -3,6 +3,7 @@
 ## master
 
 * Fix build error in `Video` component. [#186](https://github.com/mapbox/dr-ui/pull/186)
+* Fix window evaluation in `Feedback` component. [#187](https://github.com/mapbox/dr-ui/pull/187)
 
 ## 0.21.1
 
