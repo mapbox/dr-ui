@@ -40,13 +40,13 @@ npm start
 npm run start-legacy
 ```
 
-To run the demo Batfish site:
+The `demo/` directory contains a demo Batfish site to test components locally. You can add the component to the site and view it with:
 
 ```bash
 npm run start-batfish
 ```
 
-To make sure the components will build:
+Travis will also build the demo site to make sure there are no errors at build time. You can also test that the demo site will build with:
 
 ```bash
 npm run build-batfish
