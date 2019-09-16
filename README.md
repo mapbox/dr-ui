@@ -46,6 +46,12 @@ To run the demo Batfish site:
 npm run start-batfish
 ```
 
+To make sure the components will build:
+
+```bash
+npm run build-batfish
+```
+
 ## Tests
 
 Each component should have a `__tests__` folder with a `component-name-test-cases.js` and `component-name.test.js`. The `*test-cases.js` file should include variations of the component in use to demonstrate the different capabilities and properites for the component. The `*.test.js` file should create a unit test for each test case found in `*test-cases.js`.

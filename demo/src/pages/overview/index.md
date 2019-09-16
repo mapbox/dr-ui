@@ -3,6 +3,8 @@ title: Overview
 description: Set up your site.
 prependJs:
 - "import OverviewHeader from '@mapbox/dr-ui/overview-header';"
+- "import Video from '@mapbox/dr-ui/video';"
+- "import Browser from '@mapbox/dr-ui/browser';"
 layout: accordion
 order: 1
 navOrder: 1
@@ -21,3 +23,5 @@ contentType: guide
 }}
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+{{<Browser><Video src="/demo/video/browser-example.mp4" title="example" /></Browser>}}

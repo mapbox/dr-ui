@@ -16,6 +16,7 @@
     "format": "prettier '**/*.js' --write",
     "build": "scripts/build-module-indexes.js && scripts/build-package.js",
     "start-batfish": "npm run build && cd demo/ && npm ci && npm run start",
+    "build-batfish": "npm run build && cd demo/ && npm ci && npm run build",
     "start-legacy": "npm run build-component-index && node scripts/rm-search.js && npm run cp-assembly && budo ./src/test-cases-app/test-cases-app.js --dir ./src/test-cases-app --live --debug --pushstate -- -t babelify"
   },
   "repository": {
