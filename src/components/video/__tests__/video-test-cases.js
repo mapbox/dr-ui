@@ -7,7 +7,8 @@ testCases.basic = {
   component: Video,
   description: 'Basic',
   props: {
-    src: './assets/browser-example.mp4',
+    src:
+      'https://github.com/mapbox/android-docs/blob/publisher-production/src/video/example-bathymetry-activity.mp4?raw=true',
     title: 'A video!'
   }
 };
@@ -16,7 +17,8 @@ noRenderCases.reducedMotion = {
   component: Video,
   description: 'Reduced motion',
   props: {
-    src: './assets/browser-example.mp4',
+    src:
+      'https://github.com/mapbox/android-docs/blob/publisher-production/src/video/example-bathymetry-activity.mp4?raw=true',
     title: 'A video!'
   }
 };
