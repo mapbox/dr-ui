@@ -2,6 +2,34 @@
 const React = require("react");
 module.exports = [
   {
+    name: "AndroidLayoutCodeBlock",
+    description: null,
+    props: {
+      filename: {
+        type: { name: "string" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      link: {
+        type: { name: "string" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      code: {
+        type: { name: "string" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      }
+    },
+    examples: []
+  },
+  {
     name: "BackToTopButton",
     description: null,
     props: null,
@@ -13,7 +41,7 @@ module.exports = [
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">BackToTopButton</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>BackToTopButton</span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
         description: <p>Basic.</p>
@@ -41,7 +69,7 @@ module.exports = [
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">BetaFlag</span></span> <span class="token attr-name">tooltipText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Cool!<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>BetaFlag</span> <span class="token attr-name">tooltipText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Cool!<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
         description: <p>Basic.</p>
@@ -53,9 +81,9 @@ module.exports = [
     description: null,
     props: {
       size: {
-        type: { name: "string" },
-        required: true,
-        defaultValue: undefined,
+        type: { name: "number" },
+        required: false,
+        defaultValue: "60",
         description: <div />,
         options: undefined
       }
@@ -68,7 +96,7 @@ module.exports = [
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">BookImage</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>60<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>BookImage</span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>60<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
         description: <p>Basic.</p>
@@ -80,9 +108,9 @@ module.exports = [
     description: null,
     props: {
       size: {
-        type: { name: "string" },
-        required: true,
-        defaultValue: undefined,
+        type: { name: "number" },
+        required: false,
+        defaultValue: "60",
         description: <div />,
         options: undefined
       }
@@ -95,12 +123,26 @@ module.exports = [
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">BookletImage</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>60<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>BookletImage</span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>60<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
         description: <p>Basic.</p>
       }
     ]
+  },
+  {
+    name: "Browser",
+    description: null,
+    props: {
+      children: {
+        type: { name: "node" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      }
+    },
+    examples: []
   },
   {
     name: "Card",
@@ -158,7 +200,7 @@ module.exports = [
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Card</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Card</span>
         <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Cupidatat<span class="token punctuation">"</span></span>
         <span class="token attr-name">path</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/api/<span class="token punctuation">"</span></span>
         <span class="token attr-name">thumbnail</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>
@@ -226,18 +268,18 @@ module.exports = [
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">CardContainer</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CardContainer</span>
         <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Another category<span class="token punctuation">"</span></span>
         <span class="token attr-name">path</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#another-category<span class="token punctuation">"</span></span>
         <span class="token attr-name">fullWidthCards</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token boolean">true</span><span class="token punctuation">}</span></span>
         <span class="token attr-name">cards</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Card</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Card</span>
             <span class="token attr-name">key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span>
             <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Example one<span class="token punctuation">"</span></span>
             <span class="token attr-name">path</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>path<span class="token punctuation">"</span></span>
             <span class="token attr-name">description</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>description<span class="token punctuation">"</span></span>
           <span class="token punctuation">/></span></span><span class="token punctuation">,</span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Card</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Card</span>
             <span class="token attr-name">key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>1<span class="token punctuation">"</span></span>
             <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Example two<span class="token punctuation">"</span></span>
             <span class="token attr-name">path</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>path<span class="token punctuation">"</span></span>
@@ -251,6 +293,38 @@ module.exports = [
         description: <p>Basic.</p>
       }
     ]
+  },
+  {
+    name: "CodeSnippetTitle",
+    description: null,
+    props: {
+      filename: {
+        type: { name: "string" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      link: {
+        type: {
+          name: "custom",
+          raw:
+            "function(props, propName, componentName) {\n  if (props[propName] && !/^https:\\/\\/github\\.com\\//.test(props[propName])) {\n    return new Error(\n      'Invalid prop `' +\n        propName +\n        '` supplied to' +\n        ' `' +\n        componentName +\n        '`. Validation failed.'\n    );\n  }\n}"
+        },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      toggle: {
+        type: { name: "node" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      }
+    },
+    examples: []
   },
   {
     name: "CodeToggle",
@@ -276,17 +350,8 @@ module.exports = [
           value: {
             name: "shape",
             value: {
-              language: {
-                name: "enum",
-                value: [
-                  { value: "'swift'", computed: false },
-                  { value: "'objective-c'", computed: false },
-                  { value: "'java'", computed: false },
-                  { value: "'kotlin'", computed: false },
-                  { value: "'javascript'", computed: false }
-                ],
-                required: true
-              },
+              label: { name: "string", required: true },
+              language: { name: "string", required: true },
               preferredLanguage: { name: "bool", required: true }
             }
           }
@@ -297,17 +362,8 @@ module.exports = [
         options: {
           name: "shape",
           value: {
-            language: {
-              name: "enum",
-              value: [
-                { value: "'swift'", computed: false },
-                { value: "'objective-c'", computed: false },
-                { value: "'java'", computed: false },
-                { value: "'kotlin'", computed: false },
-                { value: "'javascript'", computed: false }
-              ],
-              required: true
-            },
+            label: { name: "string", required: true },
+            language: { name: "string", required: true },
             preferredLanguage: { name: "bool", required: true }
           }
         }
@@ -322,7 +378,7 @@ module.exports = [
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">CodeToggle</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CodeToggle</span>
         <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>one<span class="token punctuation">"</span></span>
         <span class="token attr-name">onChange</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">}</span></span>
         <span class="token attr-name">options</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span>
@@ -348,9 +404,9 @@ module.exports = [
     description: null,
     props: {
       size: {
-        type: { name: "string" },
-        required: true,
-        defaultValue: undefined,
+        type: { name: "number" },
+        required: false,
+        defaultValue: "60",
         description: <div />,
         options: undefined
       }
@@ -363,12 +419,394 @@ module.exports = [
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ContactImage</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>60<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ContactImage</span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>60<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
         description: <p>Basic.</p>
       }
     ]
+  },
+  {
+    name: "ContextlessAndroidActivityToggle",
+    description: null,
+    props: {
+      context: {
+        type: {
+          name: "shape",
+          value: {
+            languages: {
+              name: "shape",
+              value: {
+                android: {
+                  name: "arrayOf",
+                  value: {
+                    name: "shape",
+                    value: {
+                      label: {
+                        name: "enum",
+                        value: [
+                          { value: "'Kotlin'", computed: false },
+                          { value: "'Java'", computed: false }
+                        ],
+                        required: true
+                      },
+                      value: {
+                        name: "enum",
+                        value: [
+                          { value: "'kotlin'", computed: false },
+                          { value: "'java'", computed: false }
+                        ],
+                        required: true
+                      }
+                    }
+                  },
+                  required: true
+                }
+              },
+              required: true
+            },
+            preferredLanguage: {
+              name: "shape",
+              value: {
+                android: {
+                  name: "enum",
+                  value: [
+                    { value: "'kotlin'", computed: false },
+                    { value: "'java'", computed: false }
+                  ],
+                  required: true
+                }
+              },
+              required: true
+            },
+            changeLanguage: {
+              name: "shape",
+              value: { android: { name: "func", required: true } },
+              required: true
+            }
+          }
+        },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: {
+          languages: {
+            name: "shape",
+            value: {
+              android: {
+                name: "arrayOf",
+                value: {
+                  name: "shape",
+                  value: {
+                    label: {
+                      name: "enum",
+                      value: [
+                        { value: "'Kotlin'", computed: false },
+                        { value: "'Java'", computed: false }
+                      ],
+                      required: true
+                    },
+                    value: {
+                      name: "enum",
+                      value: [
+                        { value: "'kotlin'", computed: false },
+                        { value: "'java'", computed: false }
+                      ],
+                      required: true
+                    }
+                  }
+                },
+                required: true
+              }
+            },
+            required: true
+          },
+          preferredLanguage: {
+            name: "shape",
+            value: {
+              android: {
+                name: "enum",
+                value: [
+                  { value: "'kotlin'", computed: false },
+                  { value: "'java'", computed: false }
+                ],
+                required: true
+              }
+            },
+            required: true
+          },
+          changeLanguage: {
+            name: "shape",
+            value: { android: { name: "func", required: true } },
+            required: true
+          }
+        }
+      },
+      id: {
+        type: { name: "string" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      java: {
+        type: { name: "string" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      kotlin: {
+        type: { name: "string" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      copyRanges: {
+        type: {
+          name: "shape",
+          value: {
+            java: { name: "array", required: false },
+            kotlin: { name: "array", required: false }
+          }
+        },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: {
+          java: { name: "array", required: false },
+          kotlin: { name: "array", required: false }
+        }
+      },
+      filename: {
+        type: { name: "string" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      link: {
+        type: { name: "string" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      limitHeight: {
+        type: { name: "bool" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      }
+    },
+    examples: []
+  },
+  {
+    name: "ContextlessIosViewControllerToggle",
+    description: null,
+    props: {
+      context: {
+        type: {
+          name: "shape",
+          value: {
+            languages: {
+              name: "shape",
+              value: {
+                ios: {
+                  name: "arrayOf",
+                  value: {
+                    name: "shape",
+                    value: {
+                      label: {
+                        name: "enum",
+                        value: [
+                          { value: "'Objective-C'", computed: false },
+                          { value: "'Swift'", computed: false }
+                        ],
+                        required: true
+                      },
+                      value: {
+                        name: "enum",
+                        value: [
+                          { value: "'objectiveC'", computed: false },
+                          { value: "'swift'", computed: false }
+                        ],
+                        required: true
+                      }
+                    }
+                  },
+                  required: true
+                }
+              },
+              required: true
+            },
+            preferredLanguage: {
+              name: "shape",
+              value: {
+                ios: {
+                  name: "enum",
+                  value: [
+                    { value: "'objectiveC'", computed: false },
+                    { value: "'swift'", computed: false }
+                  ],
+                  required: true
+                }
+              },
+              required: true
+            },
+            changeLanguage: {
+              name: "shape",
+              value: { ios: { name: "func", required: true } },
+              required: true
+            }
+          }
+        },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: {
+          languages: {
+            name: "shape",
+            value: {
+              ios: {
+                name: "arrayOf",
+                value: {
+                  name: "shape",
+                  value: {
+                    label: {
+                      name: "enum",
+                      value: [
+                        { value: "'Objective-C'", computed: false },
+                        { value: "'Swift'", computed: false }
+                      ],
+                      required: true
+                    },
+                    value: {
+                      name: "enum",
+                      value: [
+                        { value: "'objectiveC'", computed: false },
+                        { value: "'swift'", computed: false }
+                      ],
+                      required: true
+                    }
+                  }
+                },
+                required: true
+              }
+            },
+            required: true
+          },
+          preferredLanguage: {
+            name: "shape",
+            value: {
+              ios: {
+                name: "enum",
+                value: [
+                  { value: "'objectiveC'", computed: false },
+                  { value: "'swift'", computed: false }
+                ],
+                required: true
+              }
+            },
+            required: true
+          },
+          changeLanguage: {
+            name: "shape",
+            value: { ios: { name: "func", required: true } },
+            required: true
+          }
+        }
+      },
+      id: {
+        type: { name: "string" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      swift: {
+        type: { name: "string" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      objectiveC: {
+        type: { name: "string" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      copyRanges: {
+        type: {
+          name: "shape",
+          value: {
+            swift: { name: "array", required: false },
+            objectiveC: { name: "array", required: false }
+          }
+        },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: {
+          swift: { name: "array", required: false },
+          objectiveC: { name: "array", required: false }
+        }
+      },
+      filename: {
+        type: { name: "string" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      link: {
+        type: { name: "string" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      limitHeight: {
+        type: { name: "bool" },
+        required: false,
+        defaultValue: "true",
+        description: <div />,
+        options: undefined
+      }
+    },
+    examples: []
+  },
+  {
+    name: "DemoIframe",
+    description: null,
+    props: {
+      src: {
+        type: { name: "string" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      gl: {
+        type: { name: "bool" },
+        required: false,
+        defaultValue: "true",
+        description: <div />,
+        options: undefined
+      },
+      MapboxAccessToken: {
+        type: { name: "string" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      }
+    },
+    examples: []
   },
   {
     name: "ExamplesPage",
@@ -409,7 +847,7 @@ module.exports = [
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ExamplesPage</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ExamplesPage</span>
         <span class="token attr-name">frontMatter</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
           title<span class="token punctuation">:</span> <span class="token string">'Title'</span><span class="token punctuation">,</span>
           description<span class="token punctuation">:</span> <span class="token string">'Description.'</span>
@@ -437,7 +875,7 @@ module.exports = [
                   <span class="token punctuation">/></span></span>
                 <span class="token punctuation">}</span></span>
               <span class="token punctuation">/></span></span><span class="token punctuation">,</span>
-              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Card</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Card</span>
                 <span class="token attr-name">key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>1<span class="token punctuation">"</span></span>
                 <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Example two<span class="token punctuation">"</span></span>
                 <span class="token attr-name">path</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>path<span class="token punctuation">"</span></span>
@@ -456,7 +894,7 @@ module.exports = [
               <span class="token punctuation">/></span></span>
             <span class="token punctuation">]</span><span class="token punctuation">}</span>
           <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">,</span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">CardContainer</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CardContainer</span>
             <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Container title two<span class="token punctuation">"</span></span>
             <span class="token attr-name">path</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#container-title-two<span class="token punctuation">"</span></span>
             <span class="token attr-name">fullWidthCards</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token boolean">false</span><span class="token punctuation">}</span></span>
@@ -478,7 +916,7 @@ module.exports = [
                   <span class="token punctuation">/></span></span>
                 <span class="token punctuation">}</span></span>
               <span class="token punctuation">/></span></span><span class="token punctuation">,</span>
-              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Card</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Card</span>
                 <span class="token attr-name">key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>1<span class="token punctuation">"</span></span>
                 <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Example two<span class="token punctuation">"</span></span>
                 <span class="token attr-name">path</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>path<span class="token punctuation">"</span></span>
@@ -495,7 +933,7 @@ module.exports = [
                   <span class="token punctuation">/></span></span>
                 <span class="token punctuation">}</span></span>
               <span class="token punctuation">/></span></span><span class="token punctuation">,</span>
-              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Card</span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Card</span>
                 <span class="token attr-name">key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>2<span class="token punctuation">"</span></span>
                 <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Example two<span class="token punctuation">"</span></span>
                 <span class="token attr-name">path</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>path<span class="token punctuation">"</span></span>
@@ -577,8 +1015,35 @@ module.exports = [
         defaultValue: undefined,
         description: <div />,
         options: undefined
+      },
+      preferredLanguage: {
+        type: { name: "string" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
       }
     },
+    examples: []
+  },
+  {
+    name: "GLWrapper",
+    description: null,
+    props: {
+      children: {
+        type: { name: "node" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      }
+    },
+    examples: []
+  },
+  {
+    name: "Highlight",
+    description: null,
+    props: null,
     examples: []
   },
   {
@@ -612,7 +1077,7 @@ module.exports = [
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">LevelIndicator</span></span> <span class="token attr-name">level</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token number">3</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>LevelIndicator</span> <span class="token attr-name">level</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token number">3</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
         description: <p>Advanced.</p>
@@ -624,7 +1089,7 @@ module.exports = [
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">LevelIndicator</span></span> <span class="token attr-name">level</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>LevelIndicator</span> <span class="token attr-name">level</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
         description: <p>Beginner.</p>
@@ -636,7 +1101,7 @@ module.exports = [
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">LevelIndicator</span></span> <span class="token attr-name">level</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token number">2</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>LevelIndicator</span> <span class="token attr-name">level</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token number">2</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
         description: <p>Intermediate.</p>
@@ -751,7 +1216,7 @@ module.exports = [
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">NavigationAccordion</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>NavigationAccordion</span>
         <span class="token attr-name">currentPath</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>page-one<span class="token punctuation">"</span></span>
         <span class="token attr-name">contents</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
           firstLevelItems<span class="token punctuation">:</span> <span class="token punctuation">[</span>
@@ -834,7 +1299,7 @@ module.exports = [
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">NavigationDropdown</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>NavigationDropdown</span>
         <span class="token attr-name">currentPath</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>page-one<span class="token punctuation">"</span></span>
         <span class="token attr-name">dropdownOptions</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span>
           <span class="token punctuation">{</span>
@@ -854,6 +1319,20 @@ module.exports = [
         description: <p>Basic.</p>
       }
     ]
+  },
+  {
+    name: "NewImage",
+    description: null,
+    props: {
+      size: {
+        type: { name: "number" },
+        required: false,
+        defaultValue: "60",
+        description: <div />,
+        options: undefined
+      }
+    },
+    examples: []
   },
   {
     name: "Note",
@@ -898,15 +1377,135 @@ module.exports = [
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Note</span></span> <span class="token attr-name">imageComponent</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">BookImage</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>60<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Note</span> <span class="token attr-name">imageComponent</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>BookImage</span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>60<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">
         Here is a little thing to note.
-      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Note</span></span><span class="token punctuation">></span></span>
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Note</span><span class="token punctuation">></span></span>
     <span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
         description: <p>Basic.</p>
       }
     ]
+  },
+  {
+    name: "NumberedCodeSnippet",
+    description: null,
+    props: {
+      code: {
+        type: { name: "string" },
+        required: true,
+        defaultValue: undefined,
+        description: (
+          <p>
+            Raw (unhighlighted) code. When the user clicks a copy button, this
+            is what they'll get. If no <code>highlightedCode</code> is provided,{" "}
+            <code>code</code> is displayed.
+          </p>
+        ),
+        options: undefined
+      },
+      highlightedCode: {
+        type: { name: "string" },
+        required: false,
+        defaultValue: undefined,
+        description: (
+          <p>
+            The HTML output of running code through a syntax highlighter. If
+            this is not provided, <code>code</code> is displayed, instead. The
+            default theme CSS assumes the highlighter is{" "}
+            <a href="https://github.com/isagalaev/highlight.js">
+              <code>highlight.js</code>
+            </a>
+            . If you are using another highlighter, provide your own theme.
+          </p>
+        ),
+        options: undefined
+      },
+      copyRanges: {
+        type: {
+          name: "arrayOf",
+          value: { name: "arrayOf", value: { name: "number" } }
+        },
+        required: false,
+        defaultValue: undefined,
+        description: (
+          <p>
+            Specific line ranges that should be independently copiable. Each
+            range is a two-value array, consisting of the starting and ending
+            line. If this is not provided, the entire snippet is copiable.
+          </p>
+        ),
+        options: { name: "arrayOf", value: { name: "number" } }
+      },
+      maxHeight: {
+        type: { name: "number" },
+        required: false,
+        defaultValue: undefined,
+        description: (
+          <p>
+            A maximum height for the snippet. If the code exceeds this height,
+            the snippet will scroll internally.
+          </p>
+        ),
+        options: undefined
+      },
+      onCopy: {
+        type: { name: "func" },
+        required: false,
+        defaultValue: undefined,
+        description: (
+          <p>
+            A callback that is invoked when the snippet (or a chunk of the
+            snippet) is copied. If <code>copyRanges</code> are provided, the
+            callback is passed the index (0-based) of the chunk that was copied.
+          </p>
+        ),
+        options: undefined
+      },
+      highlightThemeCss: {
+        type: { name: "string" },
+        required: true,
+        defaultValue: undefined,
+        description: (
+          <p>
+            CSS that styles the highlighted code. The default theme is a{" "}
+            <a href="https://highlightjs.readthedocs.io/en/latest/style-guide.html#defining-a-theme">
+              <code>highlight.js</code> theme
+            </a>{" "}
+            theme. It is the dark theme used on mapbox.com's installation flow.
+          </p>
+        ),
+        options: undefined
+      },
+      characterWidth: {
+        type: { name: "number" },
+        required: false,
+        defaultValue: "7.225",
+        description: (
+          <p>
+            The width of a character in the theme's monospace font, used for
+            indentation. If you use a font or font-size different than the
+            default theme, you may need to change this value.
+          </p>
+        ),
+        options: undefined
+      },
+      scrollToLive: {
+        type: { name: "bool" },
+        required: false,
+        defaultValue: "true",
+        description: (
+          <p>
+            If the first live chunk (from the <code>copyRanges</code> prop) is
+            not visible in the snippet given the <code>maxHeight</code>, then
+            autoscroll to make sure the live chunk is in view when the page
+            loads. *
+          </p>
+        ),
+        options: undefined
+      }
+    },
+    examples: []
   },
   {
     name: "OverviewHeader",
@@ -985,7 +1584,7 @@ module.exports = [
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">OverviewHeader</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>OverviewHeader</span>
         <span class="token attr-name">features</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span>
           <span class="token string">'Smooth scrambled eggs'</span><span class="token punctuation">,</span>
           <span class="token string">'Vegetarian sausage'</span><span class="token punctuation">,</span>
@@ -1121,7 +1720,7 @@ module.exports = [
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ProductMenu</span></span> <span class="token attr-name">productName</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Egg SDK<span class="token punctuation">"</span></span> <span class="token attr-name">homePage</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/egg-sdk/<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ProductMenu</span> <span class="token attr-name">productName</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Egg SDK<span class="token punctuation">"</span></span> <span class="token attr-name">homePage</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/egg-sdk/<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
         description: <p>Basic.</p>
@@ -1134,7 +1733,7 @@ module.exports = [
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ProductMenu</span></span> <span class="token attr-name">productName</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Egg SDK<span class="token punctuation">"</span></span> <span class="token attr-name">homePage</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/egg-sdk/<span class="token punctuation">"</span></span> <span class="token attr-name">beta</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token boolean">true</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ProductMenu</span> <span class="token attr-name">productName</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Egg SDK<span class="token punctuation">"</span></span> <span class="token attr-name">homePage</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/egg-sdk/<span class="token punctuation">"</span></span> <span class="token attr-name">beta</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token boolean">true</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span>
     <span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
@@ -1206,7 +1805,7 @@ module.exports = [
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Search</span></span> <span class="token attr-name">site</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>API<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Search</span> <span class="token attr-name">site</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>API<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
         description: (
@@ -1223,7 +1822,7 @@ module.exports = [
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Search</span></span> <span class="token attr-name">disableModal</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token boolean">true</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Search</span> <span class="token attr-name">disableModal</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token boolean">true</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
         description: <p>Disable modal, only show input.</p>
@@ -1235,7 +1834,7 @@ module.exports = [
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Search</span></span> <span class="token attr-name">narrow</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token boolean">true</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Search</span> <span class="token attr-name">narrow</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token boolean">true</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
         description: <p>Narrow.</p>
@@ -1291,7 +1890,7 @@ module.exports = [
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">SectionedNavigation</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>SectionedNavigation</span>
         <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Examples<span class="token punctuation">"</span></span>
         <span class="token attr-name">sections</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span>
           <span class="token punctuation">{</span>
@@ -1350,51 +1949,75 @@ module.exports = [
     name: "ToggleableCodeBlock",
     description: null,
     props: {
-      codeSnippet: {
-        type: {
-          name: "arrayOf",
-          value: {
-            name: "shape",
-            value: {
-              language: {
-                name: "enum",
-                value: [
-                  { value: "'swift'", computed: false },
-                  { value: "'objective-c'", computed: false },
-                  { value: "'java'", computed: false },
-                  { value: "'kotlin'", computed: false },
-                  { value: "'javascript'", computed: false }
-                ],
-                required: false
-              },
-              rawCode: { name: "string", required: true },
-              highlightedCode: { name: "string", required: true },
-              preferredLanguage: { name: "bool", required: true }
-            }
-          }
-        },
+      id: {
+        type: { name: "string" },
         required: true,
         defaultValue: undefined,
         description: <div />,
-        options: {
-          name: "shape",
-          value: {
-            language: {
-              name: "enum",
-              value: [
-                { value: "'swift'", computed: false },
-                { value: "'objective-c'", computed: false },
-                { value: "'java'", computed: false },
-                { value: "'kotlin'", computed: false },
-                { value: "'javascript'", computed: false }
-              ],
-              required: false
-            },
-            rawCode: { name: "string", required: true },
-            highlightedCode: { name: "string", required: true },
-            preferredLanguage: { name: "bool", required: true }
-          }
-        }
+        options: undefined
+      },
+      selectedLanguage: {
+        type: { name: "string" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      code: {
+        type: { name: "string" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      highlightedCode: {
+        type: { name: "string" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      copyRanges: {
+        type: { name: "object" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      options: {
+        type: { name: "array" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      changeLanguage: {
+        type: { name: "func" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      filename: {
+        type: { name: "string" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      link: {
+        type: { name: "string" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      limitHeight: {
+        type: { name: "bool" },
+        required: false,
+        defaultValue: "true",
+        description: <div />,
+        options: undefined
       }
     },
     examples: [
@@ -1442,7 +2065,7 @@ module.exports = [
     &#96;</span></span><span class="token punctuation">;</span>
 
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ToggleableCodeBlock</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ToggleableCodeBlock</span>
         <span class="token attr-name">codeSnippet</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span>
           <span class="token punctuation">{</span>
             language<span class="token punctuation">:</span> <span class="token string">'swift'</span><span class="token punctuation">,</span>
@@ -1495,11 +2118,11 @@ module.exports = [
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> background<span class="token punctuation">:</span> <span class="token string">'pink'</span><span class="token punctuation">,</span> height<span class="token punctuation">:</span> <span class="token number">3000</span> <span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">
         </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>px24 py12<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text">Above the bar.</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
-        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">TopbarSticker</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TopbarSticker</span><span class="token punctuation">></span></span><span class="token plain-text">
           </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>px24 py12<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text">
             Here's some content that sticks to the top.
           </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
-        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">TopbarSticker</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>TopbarSticker</span><span class="token punctuation">></span></span><span class="token plain-text">
         </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>px24 py12<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text">
           Below the bar, with lots of space to scroll.
         </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
@@ -1516,9 +2139,9 @@ module.exports = [
     description: null,
     props: {
       size: {
-        type: { name: "string" },
-        required: true,
-        defaultValue: undefined,
+        type: { name: "number" },
+        required: false,
+        defaultValue: "60",
         description: <div />,
         options: undefined
       }
@@ -1531,7 +2154,7 @@ module.exports = [
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">TroubleshootImage</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>60<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TroubleshootImage</span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>60<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
         description: <p>Basic.</p>
@@ -1539,22 +2162,52 @@ module.exports = [
     ]
   },
   {
-    name: "WarningImage",
+    name: "Video",
     description: null,
     props: {
-      size: {
+      src: {
         type: { name: "string" },
         required: true,
         defaultValue: undefined,
         description: <div />,
         options: undefined
       },
-      color: {
+      title: {
         type: { name: "string" },
-        required: false,
+        required: true,
         defaultValue: undefined,
         description: <div />,
         options: undefined
+      }
+    },
+    examples: []
+  },
+  {
+    name: "WarningImage",
+    description: null,
+    props: {
+      size: {
+        type: { name: "number" },
+        required: false,
+        defaultValue: "60",
+        description: <div />,
+        options: undefined
+      },
+      color: {
+        type: {
+          name: "enum",
+          value: [
+            { value: "'red'", computed: false },
+            { value: "'orange'", computed: false }
+          ]
+        },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: [
+          { value: "'red'", computed: false },
+          { value: "'orange'", computed: false }
+        ]
       }
     },
     examples: [
@@ -1565,7 +2218,7 @@ module.exports = [
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">WarningImage</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>60<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>WarningImage</span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>60<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
         description: <p>Basic.</p>
