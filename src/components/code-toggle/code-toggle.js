@@ -10,7 +10,7 @@ class CodeToggle extends React.Component {
     })[0].language;
     const options = props.options.map(option => {
       return {
-        label: option.language,
+        label: option.label,
         value: option.language
       };
     });
@@ -34,13 +34,8 @@ CodeToggle.propTypes = {
   onChange: PropTypes.func.isRequired,
   options: PropTypes.arrayOf(
     PropTypes.shape({
-      language: PropTypes.oneOf([
-        'swift',
-        'objective-c',
-        'java',
-        'kotlin',
-        'javascript'
-      ]).isRequired,
+      label: PropTypes.string.isRequired,
+      language: PropTypes.string.isRequired,
       preferredLanguage: PropTypes.bool.isRequired
     })
   ).isRequired

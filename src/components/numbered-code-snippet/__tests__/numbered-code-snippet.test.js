@@ -1,8 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { testCases } from './toggleable-code-block-test-cases.js';
+import { testCases } from './numbered-code-snippet-test-cases.js';
 
-describe('toggleable-code-block', () => {
+describe('numbered-code-snippet', () => {
   describe(testCases.basic.description, () => {
     let testCase;
     let wrapper;
