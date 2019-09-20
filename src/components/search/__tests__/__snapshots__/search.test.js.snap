@@ -7,14 +7,15 @@ exports[`search Basic search renders as expected 1`] = `
   <div>
     <div>
       <button
-        className="flex-parent flex-parent--center-cross flex-parent--center-main h36  px12 round color-gray color-gray-dark-on-hover bg-gray-faint"
+        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke "
         onClick={[Function]}
+        style={Object {}}
       >
         <span
           className="mr6"
         >
           <svg
-            className="icon"
+            className="icon w18 h18"
           >
             <use
               xlinkHref="#icon-search"
@@ -36,14 +37,15 @@ exports[`search Basic search with \`site\` set to show filter toggle renders as 
   <div>
     <div>
       <button
-        className="flex-parent flex-parent--center-cross flex-parent--center-main h36  px12 round color-gray color-gray-dark-on-hover bg-gray-faint"
+        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke "
         onClick={[Function]}
+        style={Object {}}
       >
         <span
           className="mr6"
         >
           <svg
-            className="icon"
+            className="icon w18 h18"
           >
             <use
               xlinkHref="#icon-search"
@@ -121,14 +123,20 @@ exports[`search Search with \`narrow\` option set renders as expected 1`] = `
   <div>
     <div>
       <button
-        className="flex-parent flex-parent--center-cross flex-parent--center-main h36  px12 round color-gray color-gray-dark-on-hover bg-gray-faint"
+        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke "
         onClick={[Function]}
+        style={
+          Object {
+            "paddingLeft": "12px",
+            "paddingRight": "12px",
+          }
+        }
       >
         <span
           className=""
         >
           <svg
-            className="icon"
+            className="icon w18 h18"
           >
             <title>
               Search
@@ -227,14 +235,15 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
                   <div>
                     <div>
                       <button
-                        className="flex-parent flex-parent--center-cross flex-parent--center-main h36  px12 round color-gray color-gray-dark-on-hover bg-gray-faint"
+                        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke "
                         onClick={[Function]}
+                        style={Object {}}
                       >
                         <span
                           className="mr6"
                         >
                           <svg
-                            className="icon"
+                            className="icon w18 h18"
                           >
                             <use
                               xlinkHref="#icon-search"
@@ -464,14 +473,15 @@ exports[`search Search with dark background, custom placeholder renders as expec
       <div>
         <div>
           <button
-            className="flex-parent flex-parent--center-cross flex-parent--center-main h36  px12 round color-white color-lighten50-on-hover bg-lighten10"
+            className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke btn--white"
             onClick={[Function]}
+            style={Object {}}
           >
             <span
               className="mr6"
             >
               <svg
-                className="icon"
+                className="icon w18 h18"
               >
                 <use
                   xlinkHref="#icon-search"
