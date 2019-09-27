@@ -7,6 +7,7 @@ import { highlightJsx } from '../jsx';
 import { highlightHtml } from '../html';
 import { highlightXml } from '../xml';
 import { highlightKotlin } from '../kotlin';
+import { highlightCss } from '../css';
 
 const testCases = {};
 const noRenderCases = {};
@@ -283,6 +284,17 @@ const kotlinCodeSnippet = `map?.getStyle {
   settlementLabelLayer?.setProperties(textField("{name_ru}"))
 }`;
 
+const cssCodeSnippet = `body {
+  margin: 0;
+  padding: 0;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}`;
+
 testCases.basic = {
   component: CodeSnippet,
   description: 'Swift highlighting',
@@ -359,6 +371,16 @@ testCases.kotlin = {
   props: {
     code: kotlinCodeSnippet,
     highlightedCode: highlightKotlin(kotlinCodeSnippet),
+    highlightThemeCss: css
+  }
+};
+
+testCases.css = {
+  component: CodeSnippet,
+  description: 'CSS highlighting',
+  props: {
+    code: cssCodeSnippet,
+    highlightedCode: highlightCss(cssCodeSnippet),
     highlightThemeCss: css
   }
 };
