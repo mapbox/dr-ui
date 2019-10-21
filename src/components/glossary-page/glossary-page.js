@@ -3,61 +3,41 @@ import GlossarySection from '../glossary-section/glossary-section';
 import PropTypes from 'prop-types';
 
 export default class GlossaryPage extends React.PureComponent {
-  makeSectionComponents(termsArr) {
-    let builtSections = [];
-    let currentLetterEntries = [];
-
-    for (let i = 0; i < termsArr.length; i++) {
-      const thisLetter = termsArr[i].title.charAt(0).toLowerCase();
-      const nextLetter =
-        i === termsArr.length - 1
-          ? termsArr[i].title.charAt(0).toLowerCase()
-          : termsArr[i + 1].title.charAt(0).toLowerCase();
-
-      if (thisLetter < nextLetter) {
-        currentLetterEntries.push(termsArr[i]);
-        const thisLetterSectionComp = (
-          <GlossarySection
-            key={thisLetter}
-            letter={thisLetter}
-            entries={currentLetterEntries}
-          />
-        );
-        builtSections.push(thisLetterSectionComp);
-        currentLetterEntries = [];
-      } else if (thisLetter === nextLetter) {
-        if (i === termsArr.length - 1) {
-          // last entry
-          currentLetterEntries.push(termsArr[i]);
-          const thisLetterSectionComp = (
-            <GlossarySection
-              key={thisLetter}
-              letter={thisLetter}
-              entries={currentLetterEntries}
-            />
-          );
-          builtSections.push(thisLetterSectionComp);
-        } else {
-          currentLetterEntries.push(termsArr[i]);
-        }
-      }
-    }
-    return builtSections;
+  makeSectionComponents(terms) {
+    return terms.map(term => {
+      return (
+        <GlossarySection
+          key={term.letter}
+          letter={term.letter}
+          entries={term.entries}
+        />
+      );
+    });
   }
 
   render() {
-    // double-check for sorted terms
-    const alphabetizedTerms = this.props.entries.sort((a, b) => {
-      const titleA = a.title.toUpperCase();
-      const titleB = b.title.toUpperCase();
-      if (titleA < titleB) {
-        return -1;
-      }
-      if (titleA > titleB) {
-        return 1;
-      }
-      return 0;
-    });
+    const sortBy = key => (a, b) =>
+      a[key].toLowerCase() > b[key].toLowerCase()
+        ? 1
+        : b[key].toLowerCase() > a[key].toLowerCase()
+        ? -1
+        : 0;
+
+    // alphabetized the list of terms
+    const alphabetizedTerms = this.props.entries
+      .reduce((arr, entry) => {
+        // get the first letter
+        const letter = entry.title[0].toLowerCase();
+        // find all the entries that start with "letter" and then sort by title
+        const entries = this.props.entries
+          .filter(e => e.title[0].toLowerCase() === letter)
+          .sort(sortBy('title'));
+        // if the letter doesn't exist in "arr" yet, push the letter with matching entries
+        if (!arr.filter(l => l.letter === letter).length)
+          arr.push({ letter, entries });
+        return arr;
+      }, [])
+      .sort(sortBy('letter'));
 
     return (
       <div className="mt36">
