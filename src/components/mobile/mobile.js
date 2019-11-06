@@ -14,7 +14,7 @@ class MobileIllustration extends React.PureComponent {
 
     const config = {
       containerClasses: classnames(
-        'shadow-darken25 mx-auto border border--gray relative',
+        'shadow-darken25 mx-auto border border--gray-dark relative',
         {
           wmax300: portrait,
           'wmax600 h300 flex-parent': landscape
@@ -30,7 +30,7 @@ class MobileIllustration extends React.PureComponent {
         {
           'h-auto': landscape,
           w18: landscape && ios,
-          'bg-gray w36 pl12': android && landscape
+          'bg-gray-dark w36 pl12': android && landscape
         }
       ),
       notchContainerStyles: {
@@ -43,7 +43,7 @@ class MobileIllustration extends React.PureComponent {
       notchCurveLeftStyles: {
         background: `radial-gradient(circle at ${
           portrait ? 'bottom left' : 'right top'
-        }, transparent 0, transparent 75%, #5b7897 75%, #5b7897 100%)`,
+        }, transparent 0, transparent 75%, #23374d 75%, #23374d 100%)`,
         height: '10px',
         width: '10px',
         marginLeft: portrait && '-10px',
@@ -54,14 +54,14 @@ class MobileIllustration extends React.PureComponent {
       }),
       notchCurveRightStyles: {
         background:
-          'radial-gradient(circle at bottom right, transparent 0, transparent 75%, #5b7897 75%, #5b7897 100%)',
+          'radial-gradient(circle at bottom right, transparent 0, transparent 75%, #23374d 75%, #23374d 100%)',
         height: '10px',
         width: '10px',
         marginRight: portrait && '-10px',
         bottom: landscape && '-10px'
       },
       notchClasses: classnames(
-        'bg-gray flex-child flex-child--grow flex-parent relative',
+        'bg-gray-dark flex-child flex-child--grow flex-parent relative',
         {
           ' flex-parent--center-main  mx-auto': portrait,
           'h18 wmax120': portrait && ios,
@@ -96,7 +96,7 @@ class MobileIllustration extends React.PureComponent {
         left: android && portrait ? '-12px' : undefined,
         bottom: android && landscape ? '-12px' : undefined
       },
-      powerClasses: classnames('bg-gray absolute', {
+      powerClasses: classnames('bg-gray-dark absolute', {
         'w3 round-r': portrait,
         'h3 round-t': landscape
       }),
@@ -104,7 +104,7 @@ class MobileIllustration extends React.PureComponent {
         ? { top: android ? '180px' : '90px', right: '-15px', height: '80px' }
         : { top: '-15px', left: android ? '180px' : '60px', width: '90px' },
 
-      otherButtonClasses: classnames('bg-gray absolute', {
+      otherButtonClasses: classnames('bg-gray-dark absolute', {
         'w3 round-r': portrait,
         'h3 round-t': landscape
       }),
@@ -118,7 +118,7 @@ class MobileIllustration extends React.PureComponent {
             left: '55px',
             bottom: '-15px'
           },
-      soundClasses: classnames('bg-gray', {
+      soundClasses: classnames('bg-gray-dark', {
         'w3 round-l h24': portrait,
         'h3 round-b w24': landscape
       }),
@@ -130,7 +130,7 @@ class MobileIllustration extends React.PureComponent {
         }
       ),
       receiverClasses: classnames(
-        'flex-parent   bg-gray flex-parent--center-main flex-parent--center-cross',
+        'flex-parent   bg-gray-dark flex-parent--center-main flex-parent--center-cross',
         {
           'h36  ': portrait,
           'w36  ': landscape
