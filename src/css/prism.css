@@ -113,3 +113,8 @@ pre[class*='language-'] {
 .token.entity {
   cursor: help;
 }
+
+/* Line numbers */
+[data-content]::before {
+  content: attr(data-content);
+}

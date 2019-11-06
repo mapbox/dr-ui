@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`glossary-section Basic renders as expected 1`] = `
+<div
+  className="mb60"
+>
+  <h3
+    className="ml18 mb6 txt-l color-gray"
+  >
+    C
+  </h3>
+  <div
+    className="flex-parent flex-parent--wrap"
+  >
+    <div
+      className="mb6 w240 flex-child"
+    >
+      <a
+        className="color-gray-dark transition shadow-darken10-on-hover round clip inline-block w-full px12 py12 unprose"
+        href="#chip"
+        style={
+          Object {
+            "verticalAlign": "top",
+          }
+        }
+      >
+        <div
+          className="px6 pb6"
+        >
+          <div
+            className="mb6 txt-l"
+          >
+            Chip
+          </div>
+          <div
+            className="txt-s color-gray"
+          >
+            A thin, crispy, and typically savory snack. It can be made of potatoes, corn, or a variety of other foods.
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      className="mb6 w240 flex-child"
+    >
+      <a
+        className="color-gray-dark transition shadow-darken10-on-hover round clip inline-block w-full px12 py12 unprose"
+        href="#candy"
+        style={
+          Object {
+            "verticalAlign": "top",
+          }
+        }
+      >
+        <div
+          className="px6 pb6"
+        >
+          <div
+            className="mb6 txt-l"
+          >
+            Candy
+          </div>
+          <div
+            className="txt-s color-gray"
+          >
+            A sweet snack that is often fruity or chocolately or both!
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;
