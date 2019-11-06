@@ -66,7 +66,7 @@ exports[`mobile Android landscape renders as expected 1`] = `
   <div
     style={
       Object {
-        "backgroundImage": "url(https://dl.dropbox.com/s/asvxjgtil5cp0hv/ios-landscape.png?dl=0)",
+        "backgroundImage": "url(./assets/ios-horizontal.png)",
         "backgroundRepeat": "no-repeat",
         "backgroundSize": "cover",
         "borderRadius": undefined,
@@ -153,7 +153,7 @@ exports[`mobile Android portrait renders as expected 1`] = `
   <div
     style={
       Object {
-        "backgroundImage": "url(https://dl.dropbox.com/s/yd4hr9yxeu3pm7o/ios-portrait.png)",
+        "backgroundImage": "url(./assets/ios-vertical.png)",
         "backgroundRepeat": "no-repeat",
         "backgroundSize": "cover",
         "borderRadius": undefined,
@@ -401,7 +401,7 @@ exports[`mobile iOS portrait renders as expected 1`] = `
   <div
     style={
       Object {
-        "backgroundImage": "url(https://dl.dropbox.com/s/yd4hr9yxeu3pm7o/ios-portrait.png)",
+        "backgroundImage": "url(./assets/ios-vertical.png)",
         "backgroundRepeat": "no-repeat",
         "backgroundSize": "cover",
         "borderRadius": "0 0 18px 18px",
