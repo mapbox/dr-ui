@@ -56,4 +56,22 @@ describe('syntax-highlighting', () => {
       expect(tree).toMatchSnapshot();
     });
   });
+
+  describe(testCases.css.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.css;
+      wrapper = renderer.create(
+        React.createElement(testCase.component, testCase.props)
+      );
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });
