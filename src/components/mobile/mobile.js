@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
+import Video from '../video';
 
 class MobileIllustration extends React.PureComponent {
   render() {
@@ -137,9 +138,12 @@ class MobileIllustration extends React.PureComponent {
       ),
       receiverStyles: {},
       screenStyles: {
-        backgroundImage: `url(${props.imagePath})`,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
+        ...(props.videoPath && { overflow: 'hidden' }),
+        ...(props.imagePath && {
+          backgroundImage: `url(${props.imagePath})`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
+        }),
         borderRadius: portrait
           ? ios
             ? '0 0 18px 18px'
@@ -200,7 +204,9 @@ class MobileIllustration extends React.PureComponent {
           </div>
         </div>
         {/* screen */}
-        <div style={config.screenStyles} />
+        <div style={config.screenStyles}>
+          {props.videoPath && <Video src={props.videoPath} title={props.alt} />}
+        </div>
         {/* receiver */}
         {android && (
           <div className={config.receiverClasses} style={config.receiverStyles}>
@@ -213,7 +219,8 @@ class MobileIllustration extends React.PureComponent {
 }
 
 MobileIllustration.propTypes = {
-  imagePath: PropTypes.string.isRequired,
+  imagePath: PropTypes.string,
+  videoPath: PropTypes.string,
   alt: PropTypes.string.isRequired,
   mode: PropTypes.oneOf(['portrait', 'landscape']).isRequired,
   platform: PropTypes.oneOf(['ios', 'android']).isRequired

@@ -6,8 +6,7 @@ testCases.iosHori = {
   component: Mobile,
   description: 'iOS landscape',
   props: {
-    imagePath:
-      'https://dl.dropbox.com/s/asvxjgtil5cp0hv/ios-landscape.png?dl=0',
+    videoPath: './assets/browser-example.mp4',
     alt: 'manage styles',
     mode: 'landscape',
     platform: 'ios'
