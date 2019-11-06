@@ -66,16 +66,19 @@ exports[`mobile Android landscape renders as expected 1`] = `
   <div
     style={
       Object {
-        "backgroundImage": "url(./assets/ios-horizontal.png)",
-        "backgroundRepeat": "no-repeat",
-        "backgroundSize": "cover",
         "borderRadius": undefined,
         "height": "100%",
         "marginLeft": undefined,
+        "overflow": "hidden",
         "width": "calc(100% - 36px)",
       }
     }
-  />
+  >
+    <img
+      alt="example"
+      src="./assets/ios-horizontal.png"
+    />
+  </div>
   <div
     className="flex-parent   bg-gray-dark flex-parent--center-main flex-parent--center-cross w36  "
     style={Object {}}
@@ -153,16 +156,19 @@ exports[`mobile Android portrait renders as expected 1`] = `
   <div
     style={
       Object {
-        "backgroundImage": "url(./assets/ios-vertical.png)",
-        "backgroundRepeat": "no-repeat",
-        "backgroundSize": "cover",
         "borderRadius": undefined,
         "height": "calc(100% - 72px)",
         "marginLeft": undefined,
+        "overflow": "hidden",
         "width": undefined,
       }
     }
-  />
+  >
+    <img
+      alt="example"
+      src="./assets/ios-vertical.png"
+    />
+  </div>
   <div
     className="flex-parent   bg-gray-dark flex-parent--center-main flex-parent--center-cross h36  "
     style={Object {}}
@@ -285,7 +291,7 @@ exports[`mobile iOS landscape renders as expected 1`] = `
         loop={true}
         muted={true}
         src="./assets/browser-example.mp4"
-        title="manage styles"
+        title="example"
         type="video/mp4"
         width="100%"
       >
@@ -401,15 +407,18 @@ exports[`mobile iOS portrait renders as expected 1`] = `
   <div
     style={
       Object {
-        "backgroundImage": "url(./assets/ios-vertical.png)",
-        "backgroundRepeat": "no-repeat",
-        "backgroundSize": "cover",
         "borderRadius": "0 0 18px 18px",
         "height": "calc(100% - 18px)",
         "marginLeft": undefined,
+        "overflow": "hidden",
         "width": undefined,
       }
     }
-  />
+  >
+    <img
+      alt="example"
+      src="./assets/ios-vertical.png"
+    />
+  </div>
 </div>
 `;
