@@ -215,8 +215,8 @@ class MobileIllustration extends React.PureComponent {
 MobileIllustration.propTypes = {
   imagePath: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
-  mode: PropTypes.string.isRequired,
-  platform: PropTypes.string.isRequired
+  mode: PropTypes.oneOf(['portrait', 'landscape']).isRequired,
+  platform: PropTypes.oneOf(['ios', 'android']).isRequired
 };
 
 export default MobileIllustration;
