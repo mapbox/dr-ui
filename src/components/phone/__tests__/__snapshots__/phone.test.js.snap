@@ -62,7 +62,7 @@ exports[`phone Android landscape renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="relative flex-parent flex-parent--center-cross flex-parent--center-main  hmin240-mm hmin60"
+    className="relative flex-parent flex-parent--center-cross flex-parent--center-main  hmin120-mm hmin60"
     style={
       Object {
         "borderRadius": undefined,
@@ -282,7 +282,7 @@ exports[`phone iOS landscape renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="relative flex-parent flex-parent--center-cross flex-parent--center-main  hmin240-mm hmin60"
+    className="relative flex-parent flex-parent--center-cross flex-parent--center-main  hmin120-mm hmin60"
     style={
       Object {
         "borderRadius": "18px",

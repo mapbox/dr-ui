@@ -136,7 +136,7 @@ class Phone extends React.PureComponent {
       screenClasses: classnames(
         'relative flex-parent flex-parent--center-cross flex-parent--center-main ',
         {
-          'hmin240-mm hmin60': landscape,
+          'hmin120-mm hmin60': landscape,
           hmin300: portrait
         }
       ),
