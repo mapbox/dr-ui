@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-class MobileIllustration extends React.PureComponent {
+class Phone extends React.PureComponent {
   render() {
     const { props } = this;
 
@@ -210,10 +210,10 @@ class MobileIllustration extends React.PureComponent {
   }
 }
 
-MobileIllustration.propTypes = {
+Phone.propTypes = {
   asset: PropTypes.node.isRequired,
   mode: PropTypes.oneOf(['portrait', 'landscape']).isRequired,
   platform: PropTypes.oneOf(['ios', 'android']).isRequired
 };
 
-export default MobileIllustration;
+export default Phone;

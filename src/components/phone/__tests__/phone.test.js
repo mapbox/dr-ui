@@ -1,8 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { testCases } from './mobile-test-cases.js';
+import { testCases } from './phone-test-cases.js';
 
-describe('mobile', () => {
+describe('phone', () => {
   describe(testCases.iosHori.description, () => {
     let testCase;
     let wrapper;

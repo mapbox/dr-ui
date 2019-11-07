@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`mobile Android landscape renders as expected 1`] = `
+exports[`phone Android landscape renders as expected 1`] = `
 <div
   className="shadow-darken25 mx-auto border border--gray-dark relative wmax600 hm240 flex-parent"
   style={
@@ -89,7 +89,7 @@ exports[`mobile Android landscape renders as expected 1`] = `
 </div>
 `;
 
-exports[`mobile Android portrait renders as expected 1`] = `
+exports[`phone Android portrait renders as expected 1`] = `
 <div
   className="shadow-darken25 mx-auto border border--gray-dark relative wmax300 hmin300"
   style={
@@ -178,7 +178,7 @@ exports[`mobile Android portrait renders as expected 1`] = `
 </div>
 `;
 
-exports[`mobile iOS landscape renders as expected 1`] = `
+exports[`phone iOS landscape renders as expected 1`] = `
 <div
   className="shadow-darken25 mx-auto border border--gray-dark relative wmax600 hm240 flex-parent"
   style={
@@ -308,7 +308,7 @@ exports[`mobile iOS landscape renders as expected 1`] = `
 </div>
 `;
 
-exports[`mobile iOS portrait renders as expected 1`] = `
+exports[`phone iOS portrait renders as expected 1`] = `
 <div
   className="shadow-darken25 mx-auto border border--gray-dark relative wmax300 hmin300"
   style={

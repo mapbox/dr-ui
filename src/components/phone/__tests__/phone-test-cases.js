@@ -1,11 +1,11 @@
 import React from 'react';
-import Mobile from '../mobile';
+import Phone from '../phone';
 import Video from '../../video';
 
 const testCases = {};
 
 testCases.iosHori = {
-  component: Mobile,
+  component: Phone,
   description: 'iOS landscape',
   props: {
     asset: <Video src="./assets/browser-example.mp4" title="example" />,
@@ -16,7 +16,7 @@ testCases.iosHori = {
 };
 
 testCases.iosVert = {
-  component: Mobile,
+  component: Phone,
   description: 'iOS portrait',
   props: {
     asset: <img src="./assets/ios-vertical.png" alt="example" />,
@@ -26,7 +26,7 @@ testCases.iosVert = {
 };
 
 testCases.androidLandscape = {
-  component: Mobile,
+  component: Phone,
   description: 'Android landscape',
   props: {
     asset: <img src="./assets/ios-horizontal.png" alt="example" />,
@@ -35,7 +35,7 @@ testCases.androidLandscape = {
   }
 };
 testCases.androidVert = {
-  component: Mobile,
+  component: Phone,
   description: 'Android portrait',
   props: {
     asset: <img src="./assets/ios-vertical.png" alt="example" />,
