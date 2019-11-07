@@ -2,7 +2,7 @@
 
 exports[`phone Android landscape renders as expected 1`] = `
 <div
-  className="shadow-darken25 mx-auto border border--gray-dark relative wmax600 hm240 flex-parent"
+  className="shadow-darken25 mx-auto border border--gray-dark relative wmax600 flex-parent"
   style={
     Object {
       "borderRadius": "30px",
@@ -62,6 +62,7 @@ exports[`phone Android landscape renders as expected 1`] = `
     </div>
   </div>
   <div
+    className="bg-darken75 relative flex-parent flex-parent--center-cross flex-parent--center-main  hmin240"
     style={
       Object {
         "borderRadius": undefined,
@@ -72,10 +73,17 @@ exports[`phone Android landscape renders as expected 1`] = `
       }
     }
   >
-    <img
-      alt="example"
-      src="./assets/ios-horizontal.png"
+    <div
+      className="loading loading--dark absolute z0"
     />
+    <div
+      className="relative z1"
+    >
+      <img
+        alt="example"
+        src="./assets/ios-horizontal.png"
+      />
+    </div>
   </div>
   <div
     className="flex-parent bg-gray-dark flex-parent--center-main flex-parent--center-cross w36"
@@ -89,7 +97,7 @@ exports[`phone Android landscape renders as expected 1`] = `
 
 exports[`phone Android portrait renders as expected 1`] = `
 <div
-  className="shadow-darken25 mx-auto border border--gray-dark relative wmax300 hmin300"
+  className="shadow-darken25 mx-auto border border--gray-dark relative wmax300"
   style={
     Object {
       "borderRadius": "30px",
@@ -149,6 +157,7 @@ exports[`phone Android portrait renders as expected 1`] = `
     </div>
   </div>
   <div
+    className="bg-darken75 relative flex-parent flex-parent--center-cross flex-parent--center-main  hmin300"
     style={
       Object {
         "borderRadius": undefined,
@@ -159,10 +168,17 @@ exports[`phone Android portrait renders as expected 1`] = `
       }
     }
   >
-    <img
-      alt="example"
-      src="./assets/ios-vertical.png"
+    <div
+      className="loading loading--dark absolute z0"
     />
+    <div
+      className="relative z1"
+    >
+      <img
+        alt="example"
+        src="./assets/ios-vertical.png"
+      />
+    </div>
   </div>
   <div
     className="flex-parent bg-gray-dark flex-parent--center-main flex-parent--center-cross h36"
@@ -176,7 +192,7 @@ exports[`phone Android portrait renders as expected 1`] = `
 
 exports[`phone iOS landscape renders as expected 1`] = `
 <div
-  className="shadow-darken25 mx-auto border border--gray-dark relative wmax600 hm240 flex-parent"
+  className="shadow-darken25 mx-auto border border--gray-dark relative wmax600 flex-parent"
   style={
     Object {
       "borderRadius": "30px",
@@ -266,6 +282,7 @@ exports[`phone iOS landscape renders as expected 1`] = `
     </div>
   </div>
   <div
+    className="bg-darken75 relative flex-parent flex-parent--center-cross flex-parent--center-main  hmin240"
     style={
       Object {
         "borderRadius": "18px",
@@ -276,28 +293,35 @@ exports[`phone iOS landscape renders as expected 1`] = `
       }
     }
   >
-    <div>
-      <video
-        autoPlay={true}
-        className="block mx-auto"
-        loop={true}
-        muted={true}
-        src="./assets/browser-example.mp4"
-        title="example"
-        type="video/mp4"
-        width="100%"
-      >
-        <p>
-          Your browser doesn't support HTML5 video. Here is a
-           
-          <a
-            href="./assets/browser-example.mp4"
-          >
-            link to the video
-          </a>
-           instead.
-        </p>
-      </video>
+    <div
+      className="loading loading--dark absolute z0"
+    />
+    <div
+      className="relative z1"
+    >
+      <div>
+        <video
+          autoPlay={true}
+          className="block mx-auto"
+          loop={true}
+          muted={true}
+          src="./assets/browser-example.mp4"
+          title="example"
+          type="video/mp4"
+          width="100%"
+        >
+          <p>
+            Your browser doesn't support HTML5 video. Here is a
+             
+            <a
+              href="./assets/browser-example.mp4"
+            >
+              link to the video
+            </a>
+             instead.
+          </p>
+        </video>
+      </div>
     </div>
   </div>
 </div>
@@ -305,7 +329,7 @@ exports[`phone iOS landscape renders as expected 1`] = `
 
 exports[`phone iOS portrait renders as expected 1`] = `
 <div
-  className="shadow-darken25 mx-auto border border--gray-dark relative wmax300 hmin300"
+  className="shadow-darken25 mx-auto border border--gray-dark relative wmax300"
   style={
     Object {
       "borderRadius": "30px",
@@ -395,6 +419,7 @@ exports[`phone iOS portrait renders as expected 1`] = `
     </div>
   </div>
   <div
+    className="bg-darken75 relative flex-parent flex-parent--center-cross flex-parent--center-main  hmin300"
     style={
       Object {
         "borderRadius": "0 0 18px 18px",
@@ -405,10 +430,17 @@ exports[`phone iOS portrait renders as expected 1`] = `
       }
     }
   >
-    <img
-      alt="example"
-      src="./assets/ios-vertical.png"
+    <div
+      className="loading loading--dark absolute z0"
     />
+    <div
+      className="relative z1"
+    >
+      <img
+        alt="example"
+        src="./assets/ios-vertical.png"
+      />
+    </div>
   </div>
 </div>
 `;

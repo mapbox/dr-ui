@@ -15,8 +15,8 @@ class Phone extends React.PureComponent {
       containerClasses: classnames(
         'shadow-darken25 mx-auto border border--gray-dark relative',
         {
-          'wmax300 hmin300': portrait,
-          'wmax600 hm240 flex-parent': landscape
+          wmax300: portrait,
+          'wmax600 flex-parent': landscape
         }
       ),
       containerStyles: {
@@ -132,6 +132,13 @@ class Phone extends React.PureComponent {
           w36: landscape
         }
       ),
+      screenClasses: classnames(
+        'bg-darken75 relative flex-parent flex-parent--center-cross flex-parent--center-main ',
+        {
+          hmin300: portrait,
+          hmin240: landscape
+        }
+      ),
       screenStyles: {
         overflow: 'hidden',
         borderRadius: portrait
@@ -194,7 +201,10 @@ class Phone extends React.PureComponent {
           </div>
         </div>
         {/* screen */}
-        <div style={config.screenStyles}>{props.children}</div>
+        <div style={config.screenStyles} className={config.screenClasses}>
+          <div className="loading loading--dark absolute z0" />
+          <div className="relative z1">{props.children}</div>
+        </div>
         {/* receiver */}
         {android && (
           <div className={config.receiverClasses}>
