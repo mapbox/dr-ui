@@ -11,7 +11,7 @@ exports[`mobile Android landscape renders as expected 1`] = `
   }
 >
   <div
-    className="bg-gray-dark absolute h3 round-t"
+    className="bg-gray-dark absolute h3 round-t none block-mm"
     style={
       Object {
         "left": "180px",
@@ -21,7 +21,7 @@ exports[`mobile Android landscape renders as expected 1`] = `
     }
   />
   <div
-    className="bg-gray-dark absolute h3 round-t"
+    className="bg-gray-dark absolute h3 round-t none block-mm"
     style={
       Object {
         "left": "90px",
@@ -189,7 +189,7 @@ exports[`mobile iOS landscape renders as expected 1`] = `
   }
 >
   <div
-    className="bg-gray-dark absolute h3 round-t"
+    className="bg-gray-dark absolute h3 round-t none block-mm"
     style={
       Object {
         "left": "60px",
@@ -208,10 +208,10 @@ exports[`mobile iOS landscape renders as expected 1`] = `
     }
   >
     <div
-      className="bg-gray-dark h3 round-b w24"
+      className="bg-gray-dark h3 round-b w24 none block-mm"
     />
     <div
-      className="bg-gray-dark h3 round-b w24"
+      className="bg-gray-dark h3 round-b w24 none block-mm"
     />
   </div>
   <div

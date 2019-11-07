@@ -96,7 +96,7 @@ class MobileIllustration extends React.PureComponent {
       },
       powerClasses: classnames('bg-gray-dark absolute', {
         'w3 round-r': portrait,
-        'h3 round-t': landscape
+        'h3 round-t none block-mm': landscape
       }),
       powerStyles: portrait
         ? { top: android ? '180px' : '90px', right: '-15px', height: '80px' }
@@ -104,7 +104,7 @@ class MobileIllustration extends React.PureComponent {
 
       otherButtonClasses: classnames('bg-gray-dark absolute', {
         'w3 round-r': portrait,
-        'h3 round-t': landscape
+        'h3 round-t none block-mm': landscape
       }),
       otherButtonStyles: portrait
         ? { top: '90px', right: '-15px', height: '45px' }
@@ -118,7 +118,7 @@ class MobileIllustration extends React.PureComponent {
           },
       soundClasses: classnames('bg-gray-dark', {
         'w3 round-l h24': portrait,
-        'h3 round-b w24': landscape
+        'h3 round-b w24 none block-mm': landscape
       }),
       soundContainerClasses: classnames(
         'flex-parent absolute flex-parent--space-between-main',
