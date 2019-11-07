@@ -198,7 +198,7 @@ class Phone extends React.PureComponent {
           </div>
         </div>
         {/* screen */}
-        <div style={config.screenStyles}>{props.asset}</div>
+        <div style={config.screenStyles}>{props.children}</div>
         {/* receiver */}
         {android && (
           <div className={config.receiverClasses} style={config.receiverStyles}>
@@ -211,7 +211,7 @@ class Phone extends React.PureComponent {
 }
 
 Phone.propTypes = {
-  asset: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
   mode: PropTypes.oneOf(['portrait', 'landscape']).isRequired,
   platform: PropTypes.oneOf(['ios', 'android']).isRequired
 };
