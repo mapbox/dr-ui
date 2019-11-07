@@ -2,7 +2,7 @@
 
 exports[`phone Android landscape renders as expected 1`] = `
 <div
-  className="shadow-darken25 mx-auto border border--gray-dark relative wmax600 flex-parent"
+  className="shadow-darken25 mx-auto border border--gray-dark relative bg-darken75 wmax600 flex-parent"
   style={
     Object {
       "borderRadius": "30px",
@@ -62,7 +62,7 @@ exports[`phone Android landscape renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="bg-darken75 relative flex-parent flex-parent--center-cross flex-parent--center-main  hmin240"
+    className="relative flex-parent flex-parent--center-cross flex-parent--center-main  hmin240-mm hmin60"
     style={
       Object {
         "borderRadius": undefined,
@@ -97,7 +97,7 @@ exports[`phone Android landscape renders as expected 1`] = `
 
 exports[`phone Android portrait renders as expected 1`] = `
 <div
-  className="shadow-darken25 mx-auto border border--gray-dark relative wmax300"
+  className="shadow-darken25 mx-auto border border--gray-dark relative bg-darken75 wmax300"
   style={
     Object {
       "borderRadius": "30px",
@@ -157,7 +157,7 @@ exports[`phone Android portrait renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="bg-darken75 relative flex-parent flex-parent--center-cross flex-parent--center-main  hmin300"
+    className="relative flex-parent flex-parent--center-cross flex-parent--center-main  hmin300"
     style={
       Object {
         "borderRadius": undefined,
@@ -192,7 +192,7 @@ exports[`phone Android portrait renders as expected 1`] = `
 
 exports[`phone iOS landscape renders as expected 1`] = `
 <div
-  className="shadow-darken25 mx-auto border border--gray-dark relative wmax600 flex-parent"
+  className="shadow-darken25 mx-auto border border--gray-dark relative bg-darken75 wmax600 flex-parent"
   style={
     Object {
       "borderRadius": "30px",
@@ -282,7 +282,7 @@ exports[`phone iOS landscape renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="bg-darken75 relative flex-parent flex-parent--center-cross flex-parent--center-main  hmin240"
+    className="relative flex-parent flex-parent--center-cross flex-parent--center-main  hmin240-mm hmin60"
     style={
       Object {
         "borderRadius": "18px",
@@ -329,7 +329,7 @@ exports[`phone iOS landscape renders as expected 1`] = `
 
 exports[`phone iOS portrait renders as expected 1`] = `
 <div
-  className="shadow-darken25 mx-auto border border--gray-dark relative wmax300"
+  className="shadow-darken25 mx-auto border border--gray-dark relative bg-darken75 wmax300"
   style={
     Object {
       "borderRadius": "30px",
@@ -364,7 +364,7 @@ exports[`phone iOS portrait renders as expected 1`] = `
     />
   </div>
   <div
-    className="flex-parent flex-parent--center-cross"
+    className="flex-parent flex-parent--center-cross bg-white round-t-full"
     style={
       Object {
         "borderRadius": "0",
@@ -419,7 +419,7 @@ exports[`phone iOS portrait renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="bg-darken75 relative flex-parent flex-parent--center-cross flex-parent--center-main  hmin300"
+    className="relative flex-parent flex-parent--center-cross flex-parent--center-main  hmin300"
     style={
       Object {
         "borderRadius": "0 0 18px 18px",

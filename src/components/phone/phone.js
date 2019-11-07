@@ -13,7 +13,7 @@ class Phone extends React.PureComponent {
 
     const config = {
       containerClasses: classnames(
-        'shadow-darken25 mx-auto border border--gray-dark relative',
+        'shadow-darken25 mx-auto border border--gray-dark relative bg-darken75',
         {
           wmax300: portrait,
           'wmax600 flex-parent': landscape
@@ -28,7 +28,8 @@ class Phone extends React.PureComponent {
         {
           'h-auto': landscape,
           w18: landscape && ios,
-          'bg-gray-dark w36 pl12': android && landscape
+          'bg-gray-dark w36 pl12': android && landscape,
+          'bg-white round-t-full': portrait && ios
         }
       ),
       notchContainerStyles: {
@@ -133,10 +134,10 @@ class Phone extends React.PureComponent {
         }
       ),
       screenClasses: classnames(
-        'bg-darken75 relative flex-parent flex-parent--center-cross flex-parent--center-main ',
+        'relative flex-parent flex-parent--center-cross flex-parent--center-main ',
         {
-          hmin300: portrait,
-          hmin240: landscape
+          'hmin240-mm hmin60': landscape,
+          hmin300: portrait
         }
       ),
       screenStyles: {
