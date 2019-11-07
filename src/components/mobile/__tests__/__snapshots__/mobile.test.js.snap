@@ -2,12 +2,11 @@
 
 exports[`mobile Android landscape renders as expected 1`] = `
 <div
-  className="shadow-darken25 mx-auto border border--gray-dark relative wmax600 h300 flex-parent"
+  className="shadow-darken25 mx-auto border border--gray-dark relative wmax600 hm240 flex-parent"
   style={
     Object {
       "borderRadius": "30px",
       "borderWidth": "12px",
-      "height": undefined,
     }
   }
 >
@@ -92,12 +91,11 @@ exports[`mobile Android landscape renders as expected 1`] = `
 
 exports[`mobile Android portrait renders as expected 1`] = `
 <div
-  className="shadow-darken25 mx-auto border border--gray-dark relative wmax300"
+  className="shadow-darken25 mx-auto border border--gray-dark relative wmax300 hmin300"
   style={
     Object {
       "borderRadius": "30px",
       "borderWidth": "12px",
-      "height": "550px",
     }
   }
 >
@@ -182,12 +180,11 @@ exports[`mobile Android portrait renders as expected 1`] = `
 
 exports[`mobile iOS landscape renders as expected 1`] = `
 <div
-  className="shadow-darken25 mx-auto border border--gray-dark relative wmax600 h300 flex-parent"
+  className="shadow-darken25 mx-auto border border--gray-dark relative wmax600 hm240 flex-parent"
   style={
     Object {
       "borderRadius": "30px",
       "borderWidth": "12px",
-      "height": undefined,
     }
   }
 >
@@ -313,12 +310,11 @@ exports[`mobile iOS landscape renders as expected 1`] = `
 
 exports[`mobile iOS portrait renders as expected 1`] = `
 <div
-  className="shadow-darken25 mx-auto border border--gray-dark relative wmax300"
+  className="shadow-darken25 mx-auto border border--gray-dark relative wmax300 hmin300"
   style={
     Object {
       "borderRadius": "30px",
       "borderWidth": "12px",
-      "height": "550px",
     }
   }
 >

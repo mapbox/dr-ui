@@ -15,14 +15,13 @@ class MobileIllustration extends React.PureComponent {
       containerClasses: classnames(
         'shadow-darken25 mx-auto border border--gray-dark relative',
         {
-          wmax300: portrait,
-          'wmax600 h300 flex-parent': landscape
+          'wmax300 hmin300': portrait,
+          'wmax600 hm240 flex-parent': landscape
         }
       ),
       containerStyles: {
         borderRadius: '30px',
-        borderWidth: '12px',
-        height: portrait ? '550px' : undefined
+        borderWidth: '12px'
       },
       notchContainerClasses: classnames(
         'flex-parent flex-parent--center-cross',
