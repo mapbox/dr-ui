@@ -61,12 +61,11 @@ class Phone extends React.PureComponent {
       notchClasses: classnames(
         'bg-gray-dark flex-child flex-child--grow flex-parent relative',
         {
-          ' flex-parent--center-main  mx-auto': portrait,
+          'flex-parent--center-main mx-auto': portrait,
           'h18 wmax120': portrait && ios,
           'h120 flex-parent--center-main flex-parent--column flex-parent--column-reverse':
             landscape && ios,
-          'w-full h36 pt12': android && portrait,
-          '': android && landscape
+          'w-full h36 pt12': android && portrait
         }
       ),
       notchStyles: {
@@ -76,8 +75,7 @@ class Phone extends React.PureComponent {
             : '0'
           : ios
           ? '0 12px 12px 0'
-          : '0',
-        height: landscape && android && 'calc(300 - 24px)'
+          : '0'
       },
       speakerClasses: classnames('bg-lighten10 round-full flex-child', {
         'w60 h6': portrait,
@@ -128,16 +126,14 @@ class Phone extends React.PureComponent {
         }
       ),
       receiverClasses: classnames(
-        'flex-parent   bg-gray-dark flex-parent--center-main flex-parent--center-cross',
+        'flex-parent bg-gray-dark flex-parent--center-main flex-parent--center-cross',
         {
-          'h36  ': portrait,
-          'w36  ': landscape
+          h36: portrait,
+          w36: landscape
         }
       ),
-      receiverStyles: {},
       screenStyles: {
         overflow: 'hidden',
-
         borderRadius: portrait
           ? ios
             ? '0 0 18px 18px'
@@ -201,7 +197,7 @@ class Phone extends React.PureComponent {
         <div style={config.screenStyles}>{props.children}</div>
         {/* receiver */}
         {android && (
-          <div className={config.receiverClasses} style={config.receiverStyles}>
+          <div className={config.receiverClasses}>
             <div className={config.speakerClasses} />
           </div>
         )}

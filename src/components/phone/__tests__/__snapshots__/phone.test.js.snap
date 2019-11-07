@@ -39,11 +39,10 @@ exports[`phone Android landscape renders as expected 1`] = `
     }
   >
     <div
-      className="bg-gray-dark flex-child flex-child--grow flex-parent relative "
+      className="bg-gray-dark flex-child flex-child--grow flex-parent relative"
       style={
         Object {
           "borderRadius": "0",
-          "height": "calc(300 - 24px)",
         }
       }
     >
@@ -79,8 +78,7 @@ exports[`phone Android landscape renders as expected 1`] = `
     />
   </div>
   <div
-    className="flex-parent   bg-gray-dark flex-parent--center-main flex-parent--center-cross w36  "
-    style={Object {}}
+    className="flex-parent bg-gray-dark flex-parent--center-main flex-parent--center-cross w36"
   >
     <div
       className="bg-lighten10 round-full flex-child h60 w6"
@@ -128,11 +126,10 @@ exports[`phone Android portrait renders as expected 1`] = `
     }
   >
     <div
-      className="bg-gray-dark flex-child flex-child--grow flex-parent relative  flex-parent--center-main  mx-auto w-full h36 pt12"
+      className="bg-gray-dark flex-child flex-child--grow flex-parent relative flex-parent--center-main mx-auto w-full h36 pt12"
       style={
         Object {
           "borderRadius": "0",
-          "height": false,
         }
       }
     >
@@ -168,8 +165,7 @@ exports[`phone Android portrait renders as expected 1`] = `
     />
   </div>
   <div
-    className="flex-parent   bg-gray-dark flex-parent--center-main flex-parent--center-cross h36  "
-    style={Object {}}
+    className="flex-parent bg-gray-dark flex-parent--center-main flex-parent--center-cross h36"
   >
     <div
       className="bg-lighten10 round-full flex-child w60 h6"
@@ -227,7 +223,6 @@ exports[`phone iOS landscape renders as expected 1`] = `
       style={
         Object {
           "borderRadius": "0 12px 12px 0",
-          "height": false,
         }
       }
     >
@@ -353,11 +348,10 @@ exports[`phone iOS portrait renders as expected 1`] = `
     }
   >
     <div
-      className="bg-gray-dark flex-child flex-child--grow flex-parent relative  flex-parent--center-main  mx-auto h18 wmax120"
+      className="bg-gray-dark flex-child flex-child--grow flex-parent relative flex-parent--center-main mx-auto h18 wmax120"
       style={
         Object {
           "borderRadius": "0 0 12px 12px",
-          "height": false,
         }
       }
     >
