@@ -31,7 +31,7 @@ exports[`phone Android landscape renders as expected 1`] = `
     }
   />
   <div
-    className="flex-parent flex-parent--center-cross h-auto bg-gray-dark w36 pl12"
+    className="flex-parent flex-parent--center-cross z1 relative h-auto bg-gray-dark w36 pl12"
     style={
       Object {
         "borderRadius": "0",
@@ -77,7 +77,7 @@ exports[`phone Android landscape renders as expected 1`] = `
       className="loading loading--dark absolute z0"
     />
     <div
-      className="relative z1"
+      className="relative"
     >
       <img
         alt="example"
@@ -126,7 +126,7 @@ exports[`phone Android portrait renders as expected 1`] = `
     }
   />
   <div
-    className="flex-parent flex-parent--center-cross"
+    className="flex-parent flex-parent--center-cross z1 relative"
     style={
       Object {
         "borderRadius": "0",
@@ -172,7 +172,7 @@ exports[`phone Android portrait renders as expected 1`] = `
       className="loading loading--dark absolute z0"
     />
     <div
-      className="relative z1"
+      className="relative"
     >
       <img
         alt="example"
@@ -227,7 +227,7 @@ exports[`phone iOS landscape renders as expected 1`] = `
     />
   </div>
   <div
-    className="flex-parent flex-parent--center-cross h-auto w18"
+    className="flex-parent flex-parent--center-cross z1 relative h-auto w18"
     style={
       Object {
         "borderRadius": "18px 18px 0 0 ",
@@ -297,7 +297,7 @@ exports[`phone iOS landscape renders as expected 1`] = `
       className="loading loading--dark absolute z0"
     />
     <div
-      className="relative z1"
+      className="relative"
     >
       <div>
         <video
@@ -364,7 +364,7 @@ exports[`phone iOS portrait renders as expected 1`] = `
     />
   </div>
   <div
-    className="flex-parent flex-parent--center-cross bg-white round-t-full"
+    className="flex-parent flex-parent--center-cross z1 relative bg-white round-t-full"
     style={
       Object {
         "borderRadius": "0",
@@ -434,7 +434,7 @@ exports[`phone iOS portrait renders as expected 1`] = `
       className="loading loading--dark absolute z0"
     />
     <div
-      className="relative z1"
+      className="relative"
     >
       <img
         alt="example"

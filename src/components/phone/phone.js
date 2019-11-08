@@ -24,7 +24,7 @@ class Phone extends React.PureComponent {
         borderWidth: '12px'
       },
       notchContainerClasses: classnames(
-        'flex-parent flex-parent--center-cross',
+        'flex-parent flex-parent--center-cross z1 relative',
         {
           'h-auto': landscape,
           w18: landscape && ios,
@@ -204,7 +204,7 @@ class Phone extends React.PureComponent {
         {/* screen */}
         <div style={config.screenStyles} className={config.screenClasses}>
           <div className="loading loading--dark absolute z0" />
-          <div className="relative z1">{props.children}</div>
+          <div className="relative">{props.children}</div>
         </div>
         {/* receiver */}
         {android && (
