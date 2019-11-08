@@ -68,6 +68,7 @@ exports[`phone Android landscape renders as expected 1`] = `
         "borderRadius": undefined,
         "height": "100%",
         "marginLeft": undefined,
+        "marginTop": undefined,
         "overflow": "hidden",
         "width": "calc(100% - 36px)",
       }
@@ -163,6 +164,7 @@ exports[`phone Android portrait renders as expected 1`] = `
         "borderRadius": undefined,
         "height": "calc(100% - 72px)",
         "marginLeft": undefined,
+        "marginTop": undefined,
         "overflow": "hidden",
         "width": undefined,
       }
@@ -288,6 +290,7 @@ exports[`phone iOS landscape renders as expected 1`] = `
         "borderRadius": "18px",
         "height": "100%",
         "marginLeft": "-18px",
+        "marginTop": undefined,
         "overflow": "hidden",
         "width": "100%",
       }
@@ -364,7 +367,7 @@ exports[`phone iOS portrait renders as expected 1`] = `
     />
   </div>
   <div
-    className="flex-parent flex-parent--center-cross z1 relative bg-white round-t-full"
+    className="flex-parent flex-parent--center-cross z1 relative round-t-full"
     style={
       Object {
         "borderRadius": "0",
@@ -422,9 +425,10 @@ exports[`phone iOS portrait renders as expected 1`] = `
     className="relative flex-parent flex-parent--center-cross flex-parent--center-main  hmin300"
     style={
       Object {
-        "borderRadius": "0 0 18px 18px",
+        "borderRadius": "18px",
         "height": "calc(100% - 18px)",
         "marginLeft": undefined,
+        "marginTop": "-18px",
         "overflow": "hidden",
         "width": undefined,
       }

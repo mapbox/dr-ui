@@ -29,7 +29,7 @@ class Phone extends React.PureComponent {
           'h-auto': landscape,
           w18: landscape && ios,
           'bg-gray-dark w36 pl12': android && landscape,
-          'bg-white round-t-full': portrait && ios
+          'round-t-full': portrait && ios
         }
       ),
       notchContainerStyles: {
@@ -142,15 +142,10 @@ class Phone extends React.PureComponent {
       ),
       screenStyles: {
         overflow: 'hidden',
-        borderRadius: portrait
-          ? ios
-            ? '0 0 18px 18px'
-            : undefined
-          : ios
-          ? '18px'
-          : undefined,
+        borderRadius: ios ? '18px' : undefined,
         height: portrait ? `calc(100% - ${ios ? '18px' : '72px'})` : '100%',
         width: landscape ? (android ? `calc(100% - 36px)` : '100%') : undefined,
+        marginTop: portrait && ios ? '-18px' : undefined,
         marginLeft: landscape && ios ? '-18px' : undefined
       }
     };
