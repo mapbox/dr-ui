@@ -1,6 +1,6 @@
 # Changelog
 
-## master
+## 0.22.0
 
 * Add a CSS highlighter option to the `Highlight` component. [#191](https://github.com/mapbox/dr-ui/pull/191)
 * Add `GlossaryCard`, `GlossarySection`, and `GlossaryPage` components. [#192](https://github.com/mapbox/dr-ui/pull/192)
