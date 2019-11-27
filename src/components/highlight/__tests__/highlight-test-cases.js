@@ -1,3 +1,4 @@
+/* eslint-disable xss/no-mixed-html*/
 import CodeSnippet from '@mapbox/mr-ui/code-snippet';
 import { highlightSwift } from '../swift';
 import { highlightObjectivec } from '../objectivec';
