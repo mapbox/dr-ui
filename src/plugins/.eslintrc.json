@@ -1,5 +1,5 @@
 {
-  "extends": ["@mapbox/eslint-config-mapbox/node6", "prettier"],
+  "extends": ["@mapbox/eslint-config-mapbox/node10", "prettier"],
   "env": {
     "browser": false
   },

@@ -50,7 +50,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
     injectedThemes.push(theme);
     const doc = getWindow().document;
     this.styleTag = doc.createElement('style');
-    this.styleTag.innerHTML = theme;
+    this.styleTag.innerHTML = `${theme}`;
     doc.head.appendChild(this.styleTag);
   }
 
