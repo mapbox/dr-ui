@@ -8,6 +8,7 @@ export function extractor(fullHtml) {
     hrefRegex = /href=("|')([^']*?)("|')/g,
     scriptRegex = /<script>((.|\n)*)<\/script>/,
     cssRegex = /<style>((.|\n)*)<\/style>/,
+    bodyRegex = /<body[\s\S]*?>((.|\n)*)<\/body>/,
     moreCss = fullHtml.match(cssRegex);
   // output for code panels
   let html = `${fullHtml.replace(scriptRegex, '')}`,
@@ -34,8 +35,10 @@ export function extractor(fullHtml) {
     resources.css = resources.css.concat(hrefArr);
     html = `${html.replace(/<link[\s\S]*?>/g, '')}`;
   }
-  // only return between body tags
-  html = html.match(/<body[\s\S]*?>((.|\n)*)<\/body>/)[1];
+  // return remaining content between body tags
+  if (html.match(bodyRegex)) {
+    html = html.match(bodyRegex)[1];
+  }
 
   return {
     html,
