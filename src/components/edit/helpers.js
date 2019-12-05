@@ -1,3 +1,10 @@
+/**
+ * Extracts additional JS and CSS from HTML code block
+ * @param {object} resources - an object with arrays for JS and CSS CDNs`{js: [], css: []}`
+ * @param {string} fullHtml - the full HTML code you want to extra from
+ * @param {string} additionalHtml - an additional HTML code block to pull from (optional)
+ * @param {string} additionalCss - an additional CSS code block to pull from (optional)
+ */
 export function extractor(resources, fullHtml, additionalHtml, additionalCss) {
   const htmlTemp = additionalHtml ? additionalHtml : fullHtml;
   let css = additionalCss;

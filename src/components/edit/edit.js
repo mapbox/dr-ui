@@ -24,7 +24,6 @@ function format(code, parser, plugin) {
   try {
     return prettier.format(code, { parser: parser, plugins: [plugin] });
   } catch (err) {
-    // return unformatted code, but send error to sentry for us to fix
     Sentry.configureScope(scope => {
       scope.setTag('type', 'edit buttons');
     });
@@ -33,18 +32,33 @@ function format(code, parser, plugin) {
   }
 }
 
+class Button extends React.Component {
+  render() {
+    const platform = this.props.platform;
+    const btnClass = 'btn btn--s cursor-pointer round';
+    return (
+      <input
+        style={{ border: 0 }}
+        type="submit"
+        className={btnClass}
+        value={`Edit in ${platform}`}
+        onClick={() => {
+          if (window && window.analytics) {
+            analytics.track(`Clicked Edit in ${platform}`);
+          }
+        }}
+      />
+    );
+  }
+}
+
 export default class Edit extends React.Component {
   render() {
     let { css, js, html, head, resources, frontMatter } = this.props;
-
     const projectMeta = meta(frontMatter);
-
     css = format(css, 'css', parserCss);
     js = format(js, 'babel', parserJs);
     html = format(html, 'html', parserHtml);
-
-    const btnClass = 'btn btn--s cursor-pointer round';
-
     return (
       <>
         <form
@@ -52,17 +66,7 @@ export default class Edit extends React.Component {
           method="post"
           action="http://jsfiddle.net/api/post/library/pure/"
         >
-          <input
-            style={{ border: 0 }}
-            type="submit"
-            className={btnClass}
-            value="Edit in JSFiddle"
-            onClick={() => {
-              if (window && window.analytics) {
-                analytics.track('Clicked Edit in JSFiddle');
-              }
-            }}
-          />
+          <Button platform="JSFiddle" />
           <input type="hidden" name="wrap" value="b" />
           <input type="hidden" name="css" value={css} />
           <input type="hidden" name="html" value={html} />
@@ -100,28 +104,21 @@ export default class Edit extends React.Component {
               head: head
             })}
           />
-
-          <input
-            style={{ border: 0 }}
-            type="submit"
-            className={btnClass}
-            value="Edit in CodePen"
-            onClick={() => {
-              if (window && window.analytics) {
-                analytics.track('Clicked Edit in CodePen');
-              }
-            }}
-          />
+          <Button platform="CodePen" />
         </form>
       </>
     );
   }
 }
 
+Button.propTypes = {
+  platform: PropTypes.oneOf(['JSFiddle', 'CodePen']).isRequired
+};
+
 Edit.propTypes = {
   css: PropTypes.string.isRequired, // CSS panel contents
   js: PropTypes.string.isRequired, // JS panel contents
-  html: PropTypes.string.isRequired, // html panel contents
+  html: PropTypes.string.isRequired, // HTML panel contents
   head: PropTypes.string, // extra html to add to the head of the document (CodePen)
   frontMatter: PropTypes.shape({
     title: PropTypes.string.isRequired,
