@@ -1,22 +1,16 @@
-/**
- * Extracts additional JS and CSS from HTML code block
- * @param {object} resources - an object with arrays for JS and CSS CDNs`{js: [], css: []}`
- * @param {string} fullHtml - the full HTML code you want to extra from
- * @param {string} additionalHtml - an additional HTML code block to pull from (optional)
- * @param {string} additionalCss - an additional CSS code block to pull from (optional)
- */
-export function extractor(resources, fullHtml, additionalHtml, additionalCss) {
-  const htmlTemp = additionalHtml ? additionalHtml : fullHtml;
-  let css = additionalCss;
+/* eslint-disable xss/no-mixed-html */
 
+export function extractor(fullHtml) {
+  let css = '',
+    resources = { js: [], css: [] };
   // regex to find and extract css and scripts in html
   const srcRegex = /src=("|')([^']*?)("|')/g,
     hrefRegex = /href=("|')([^']*?)("|')/g,
     scriptRegex = /<script>((.|\n)*)<\/script>/,
     cssRegex = /<style>((.|\n)*)<\/style>/,
-    moreCss = htmlTemp.match(cssRegex);
+    moreCss = fullHtml.match(cssRegex);
   // output for code panels
-  let html = `${htmlTemp.replace(scriptRegex, '')}`,
+  let html = `${fullHtml.replace(scriptRegex, '')}`,
     js = fullHtml.match(scriptRegex)[1];
 
   // extract inline css from html, append to css var, then remove from html output
@@ -25,21 +19,24 @@ export function extractor(resources, fullHtml, additionalHtml, additionalCss) {
     html = `${html.replace(cssRegex, '')}`;
   }
   // extract inline scripts from html, add them as resources, then remove from html output
-  if (htmlTemp.match(srcRegex)) {
-    const srcArr = htmlTemp
+  if (fullHtml.match(srcRegex)) {
+    const srcArr = fullHtml
       .match(srcRegex)
       .map(src => src.replace('src=', '').replace(/["']/g, ''));
     resources.js = resources.js.concat(srcArr);
     html = `${html.replace(/<script[\s\S]*?>[\s\S]*?<\/script>/g, '')}`;
   }
   // extract inline stylesheets from html, add them as resources, then remove from html output
-  if (htmlTemp.match(hrefRegex)) {
-    const hrefArr = htmlTemp
+  if (fullHtml.match(hrefRegex)) {
+    const hrefArr = fullHtml
       .match(hrefRegex)
       .map(src => src.replace('href=', '').replace(/["']/g, ''));
     resources.css = resources.css.concat(hrefArr);
     html = `${html.replace(/<link[\s\S]*?>/g, '')}`;
   }
+  // only return between body tags
+  html = html.match(/<body[\s\S]*?>((.|\n)*)<\/body>/)[1];
+
   return {
     html,
     css,
