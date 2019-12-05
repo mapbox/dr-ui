@@ -1,3 +1,5 @@
+/* eslint-disable xss/no-mixed-html */
+
 import * as helpers from '../helpers.js';
 
 describe('edit helpers', () => {
@@ -12,7 +14,7 @@ describe('edit helpers', () => {
       js: ['https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'],
       css: ['https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css']
     };
-    expect(helpers.extractor(resources, css, fullHtml, snippet)).toEqual({
+    expect(helpers.extractor(resources, fullHtml, snippet, css)).toEqual({
       css: `body { margin: 0; padding: 0; }
 #map { position: absolute; top: 0; bottom: 0; width: 100%; };`,
       html: `<div id='map'></div>
@@ -44,7 +46,7 @@ var map = new mapboxgl.Map({
       js: ['https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'],
       css: ['https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css']
     };
-    expect(helpers.extractor(resources, css, fullHtml, snippet)).toEqual({
+    expect(helpers.extractor(resources, fullHtml, snippet, css)).toEqual({
       css: `body { margin: 0; padding: 0; }
 #map { position: absolute; top: 0; bottom: 0; width: 100%; };`,
       html: `

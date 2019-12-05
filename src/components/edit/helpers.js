@@ -1,5 +1,7 @@
-export function extractor(resources, css, fullHtml, snippet) {
-  const htmlTemp = snippet || fullHtml;
+export function extractor(resources, fullHtml, additionalHtml, additionalCss) {
+  const htmlTemp = additionalHtml ? additionalHtml : fullHtml;
+  let css = additionalCss;
+
   // regex to find and extract css and scripts in html
   const srcRegex = /src=("|')([^']*?)("|')/g,
     hrefRegex = /href=("|')([^']*?)("|')/g,
@@ -7,13 +9,13 @@ export function extractor(resources, css, fullHtml, snippet) {
     cssRegex = /<style>((.|\n)*)<\/style>/,
     moreCss = htmlTemp.match(cssRegex);
   // output for code panels
-  let html = htmlTemp.replace(scriptRegex, ''),
+  let html = `${htmlTemp.replace(scriptRegex, '')}`,
     js = fullHtml.match(scriptRegex)[1];
 
   // extract inline css from html, append to css var, then remove from html output
   if (moreCss) {
-    css += moreCss[0].replace('</style>', '').replace('<style>', '');
-    html = html.replace(cssRegex, '');
+    css += `${moreCss[0].replace(/<[^>]*>/g, '')}`;
+    html = `${html.replace(cssRegex, '')}`;
   }
   // extract inline scripts from html, add them as resources, then remove from html output
   if (htmlTemp.match(srcRegex)) {
@@ -21,7 +23,7 @@ export function extractor(resources, css, fullHtml, snippet) {
       .match(srcRegex)
       .map(src => src.replace('src=', '').replace(/["']/g, ''));
     resources.js = resources.js.concat(srcArr);
-    html = html.replace(/<script[\s\S]*?>[\s\S]*?<\/script>/g, '');
+    html = `${html.replace(/<script[\s\S]*?>[\s\S]*?<\/script>/g, '')}`;
   }
   // extract inline stylesheets from html, add them as resources, then remove from html output
   if (htmlTemp.match(hrefRegex)) {
@@ -29,7 +31,7 @@ export function extractor(resources, css, fullHtml, snippet) {
       .match(hrefRegex)
       .map(src => src.replace('href=', '').replace(/["']/g, ''));
     resources.css = resources.css.concat(hrefArr);
-    html = html.replace(/<link[\s\S]*?>/g, '');
+    html = `${html.replace(/<link[\s\S]*?>/g, '')}`;
   }
   return {
     html,
