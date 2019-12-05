@@ -78,6 +78,7 @@
     "@elastic/search-ui-site-search-connector": "^1.0.0",
     "@mapbox/mapbox-gl-supported": "^1.4.1",
     "@mapbox/mr-ui": "^0.7.0",
+    "@sentry/browser": "^5.10.1",
     "classnames": "^2.2.6",
     "compare-versions": "^3.4.0",
     "core-js": "^3.2.1",

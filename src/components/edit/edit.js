@@ -7,6 +7,7 @@ import parserCss from 'prettier/parser-postcss';
 import parserJs from 'prettier/parser-babylon';
 import parserHtml from 'prettier/parser-html';
 import stripMd from 'remove-markdown';
+import * as Sentry from '@sentry/browser';
 
 function meta(frontMatter) {
   let description = frontMatter.description,
@@ -24,7 +25,10 @@ function format(code, parser, plugin) {
     return prettier.format(code, { parser: parser, plugins: [plugin] });
   } catch (err) {
     // return unformatted code, but send error to sentry for us to fix
-    // TODO: SEND TO SENTRY
+    Sentry.configureScope(scope => {
+      scope.setTag('type', 'edit buttons');
+    });
+    Sentry.captureException(new Error(err));
     return code;
   }
 }
