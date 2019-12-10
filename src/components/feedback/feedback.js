@@ -35,25 +35,18 @@ class Feedback extends React.Component {
   }
   // when user click submit feedback button, the value is pushed to the state and then sent to segment
   submitFeedback() {
+    // initialize docs-feedback sentry project
     Sentry.init({
       dsn: 'https://eccc8b561b9a461990309b01d33d54e3@sentry.io/1848287'
     });
     Sentry.configureScope(scope => {
-      scope.setTag('site', this.props.site);
-      scope.setTag('helpful', this.state.helpful);
-      scope.setTag('section', this.props.section);
-      scope.setTag('preferredLanguage', this.props.preferredLanguage);
-      scope.setTag('type', 'Feedback');
-      scope.setLevel('info');
-      scope.setFingerprint([
-        '{{default}}',
-        this.props.location.pathname,
-        this.props.location.hash,
-        this.props.section
-      ]);
+      scope.setTag('site', this.props.site); // site name
+      scope.setTag('helpful', this.state.helpful); // the user's boolean rating
+      scope.setTag('section', this.props.section); // section of the page (if available)
+      scope.setTag('preferredLanguage', this.props.preferredLanguage); // user's preferred language, if set
+      scope.setLevel('info'); // sets the message as "info" (rather than warning)
     });
-    Sentry.captureMessage(this.state.feedback);
-
+    Sentry.captureMessage(this.state.feedback); // capture the feedback as a message
     this.setState({ feedbackSent: true }, () => {
       // Track response to Segement
       this.sendToSegment();
