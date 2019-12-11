@@ -119,4 +119,20 @@ describe('search', () => {
       expect(tree).toMatchSnapshot();
     });
   });
+
+  describe(testCases.withConnector.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.withLayout;
+      wrapper = renderer.create(testCase.element);
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });

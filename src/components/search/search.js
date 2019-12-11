@@ -97,7 +97,7 @@ Search.propTypes = {
   inputId: PropTypes.string, // option to override default id for input/label, used for testing
   disableModal: PropTypes.bool, // option to completely disable modal if you always want an input
   site: PropTypes.string, // option to add current site or all docs filter toggle
-  connector: PropTypes.object // option to connect to a custom search engine
+  connector: PropTypes.instanceOf(SiteSearchAPIConnector) // option to connect to a custom search engine
 };
 
 Search.defaultProps = {

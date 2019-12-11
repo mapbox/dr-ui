@@ -5,6 +5,7 @@ import NavigationAccordion from '../../navigation-accordion/navigation-accordion
 import TopbarSticker from '../../topbar-sticker/topbar-sticker';
 import ProductMenu from '../../product-menu/product-menu';
 import TabList from '@mapbox/mr-ui/tab-list';
+import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
 
 const testCases = {};
 
@@ -133,6 +134,19 @@ testCases.withLayout = {
       </div>
     </div>
   )
+};
+
+testCases.withConnector = {
+  component: Search,
+  description: 'Search with custom connector',
+  props: {
+    inputId: 'search5',
+    connector: new SiteSearchAPIConnector({
+      engineKey: '123',
+      engineName: 'find-it',
+      documentType: ['hams']
+    })
+  }
 };
 
 export { testCases };
