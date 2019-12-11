@@ -25,7 +25,7 @@ class Search extends React.Component {
     ) : (
       <SearchProvider
         config={{
-          apiConnector: connector,
+          apiConnector: props.connector || connector,
           initialState: {
             resultsPerPage: 10
           },
@@ -96,7 +96,8 @@ Search.propTypes = {
   background: PropTypes.oneOf(['light', 'dark']),
   inputId: PropTypes.string, // option to override default id for input/label, used for testing
   disableModal: PropTypes.bool, // option to completely disable modal if you always want an input
-  site: PropTypes.string // option to add current site or all docs filter toggle
+  site: PropTypes.string, // option to add current site or all docs filter toggle
+  connector: PropTypes.object // option to connect to a custom search engine
 };
 
 Search.defaultProps = {
