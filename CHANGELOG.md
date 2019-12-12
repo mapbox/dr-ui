@@ -1,5 +1,9 @@
 # Changelog
 
+## master
+
+* Allow caller to provide a custom `connector` to the `Search` component. [#200](https://github.com/mapbox/dr-ui/pull/200)
+
 ## 0.22.0
 
 * Add a CSS highlighter option to the `Highlight` component. [#191](https://github.com/mapbox/dr-ui/pull/191)
