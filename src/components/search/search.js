@@ -6,12 +6,6 @@ import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
 import { SearchProvider, WithSearch } from '@elastic/react-search-ui';
 import SearchBox from './search-box';
 
-const connector = new SiteSearchAPIConnector({
-  engineKey: 'zpAwGSb8YMXtF9yDeS5K', // public engine key
-  engineName: 'docs',
-  documentType: ['page']
-});
-
 class Search extends React.Component {
   render() {
     const { props } = this;
@@ -25,7 +19,7 @@ class Search extends React.Component {
     ) : (
       <SearchProvider
         config={{
-          apiConnector: props.connector || connector,
+          apiConnector: props.connector,
           initialState: {
             resultsPerPage: 10
           },
@@ -103,7 +97,12 @@ Search.propTypes = {
 Search.defaultProps = {
   background: 'light',
   placeholder: 'Search docs.mapbox.com',
-  inputId: 'docs-search'
+  inputId: 'docs-search',
+  connector: new SiteSearchAPIConnector({
+    engineKey: 'zpAwGSb8YMXtF9yDeS5K', // public engine key
+    engineName: 'docs',
+    documentType: ['page']
+  })
 };
 
 export default Search;

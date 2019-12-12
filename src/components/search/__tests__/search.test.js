@@ -2,6 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { testCases } from './search-test-cases';
 import visit from 'unist-util-visit';
+import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
 
 describe('search', () => {
   describe(testCases.basic.description, () => {
@@ -126,13 +127,20 @@ describe('search', () => {
     let tree;
 
     beforeEach(() => {
-      testCase = testCases.withLayout;
-      wrapper = renderer.create(testCase.element);
+      testCase = testCases.withConnector;
+      wrapper = renderer.create(
+        React.createElement(testCase.component, testCase.props)
+      );
       tree = wrapper.toJSON();
     });
 
     test('renders as expected', () => {
       expect(tree).toMatchSnapshot();
+    });
+
+    test('uses provided connector', () => {
+      expect(testCase.props.connector).toBeInstanceOf(SiteSearchAPIConnector);
+      expect(testCase.props.connector.engineKey).toBe('123');
     });
   });
 });
