@@ -12,6 +12,17 @@ testCases.basic = {
   }
 };
 
+testCases.noImage = {
+  component: Note,
+  description: 'Default note with no image',
+  props: {
+    children: (
+      <p>Here is a little thing to note, but it doesn't have an image.</p>
+    ),
+    image: false
+  }
+};
+
 testCases.custom = {
   component: Note,
   description: 'Note with custom title.',

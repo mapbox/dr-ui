@@ -21,6 +21,24 @@ describe('note', () => {
     });
   });
 
+  describe(testCases.noImage.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.noImage;
+      wrapper = renderer.create(
+        React.createElement(testCase.component, testCase.props)
+      );
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
+
   describe(testCases.custom.description, () => {
     let testCase;
     let wrapper;

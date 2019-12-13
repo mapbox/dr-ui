@@ -25,7 +25,7 @@ Image.propTypes = {
 
 class Note extends React.Component {
   render() {
-    const { theme, title, children } = this.props;
+    const { theme, title, children, image } = this.props;
     let themes = {
       default: {
         background: '#f1faff',
@@ -64,7 +64,7 @@ class Note extends React.Component {
           color: themes[theme].color
         }}
       >
-        <div className="flex-child mr12">{themes[theme].image}</div>
+        {image && <div className="flex-child mr12">{themes[theme].image}</div>}
         <div className="flex-child prose">
           <div className="txt-bold txt-m mb6">{title}</div>
           {children}
@@ -76,12 +76,14 @@ class Note extends React.Component {
 
 Note.defaultProps = {
   theme: 'default',
-  title: 'Note'
+  title: 'Note',
+  image: true
 };
 
 Note.propTypes = {
   title: PropTypes.string,
   children: PropTypes.node.isRequired,
+  image: PropTypes.bool,
   theme: PropTypes.oneOf([
     'warning',
     'error',
