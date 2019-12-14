@@ -12,7 +12,7 @@ testCases.basic = {
   component: Feedback,
   description: 'Basic',
   props: {
-    site: 'Help',
+    site: 'Mapbox GL JS',
     webhook: {
       staging:
         'https://evj5gwoa8j.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
@@ -20,7 +20,11 @@ testCases.basic = {
         'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook'
     },
     preferredLanguage: 'Swift',
-    location: {}
+    section: 'LngLat',
+    location: {
+      pathname: '/mapbox-gl-js/api/',
+      hash: '#lnglat'
+    }
   }
 };
 

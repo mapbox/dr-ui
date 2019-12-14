@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import forwardEvent from './forward-event';
 import uuidv4 from 'uuid/v4';
 import Icon from '@mapbox/mr-ui/icon';
-import { detect } from 'detect-browser';
+import * as Sentry from '@sentry/browser';
 
 const anonymousId = uuidv4(); // creates an anonymousId fallback if user is not logged or we cant get their info
 
@@ -35,6 +35,18 @@ class Feedback extends React.Component {
   }
   // when user click submit feedback button, the value is pushed to the state and then sent to segment
   submitFeedback() {
+    // initialize docs-feedback sentry project
+    Sentry.init({
+      dsn: this.props.feedbackSentryDsn
+    });
+    Sentry.configureScope(scope => {
+      scope.setTag('site', this.props.site); // site name
+      scope.setTag('helpful', this.state.helpful); // the user's boolean rating
+      scope.setTag('section', this.props.section); // section of the page (if available)
+      scope.setTag('preferredLanguage', this.props.preferredLanguage); // user's preferred language, if set
+      scope.setLevel('info'); // sets the message as "info" (rather than warning)
+    });
+    Sentry.captureMessage(this.state.feedback); // capture the feedback as a message
     this.setState({ feedbackSent: true }, () => {
       // Track response to Segement
       this.sendToSegment();
@@ -43,7 +55,6 @@ class Feedback extends React.Component {
 
   // sends all available data to segment
   sendToSegment() {
-    const browser = detect();
     const environment =
       typeof window !== 'undefined'
         ? /(^|\S+\.)mapbox\.com/.test(window.location.host)
@@ -57,14 +68,10 @@ class Feedback extends React.Component {
       properties: {
         helpful: this.state.helpful, // true, false
         site: this.props.site, // name of current site, helpful for filtering in Mode
-        browser: browser && browser.name, // get user's browser
-        browserVersion: browser && browser.version, // get user's browser version
-        os: browser && browser.os, // get user's operating system
         section: this.props.section || undefined, // (optional) name of section for longer pagers, helpful for fitering in Mode and identifying section areas
         feedback: this.state.feedback, // (optional) textarea feedback
         page: this.props.location || undefined, // get page context
         userId: this.props.userName || undefined, // set user if available
-        preferredLanguage: this.props.preferredLanguage || undefined, // set user preferred lanuage if available
         environment, // staging or production
         location // pull full window.location
       }
@@ -168,11 +175,14 @@ Feedback.propTypes = {
     production: PropTypes.string.isRequired
   }), // staging and production webhook URLs to send forward event data to
   userName: PropTypes.string, // userid if available
-  preferredLanguage: PropTypes.string // preferred code language if available
+  preferredLanguage: PropTypes.string, // preferred code language if available
+  feedbackSentryDsn: PropTypes.string // Sentry DSN (URL) to send text feedback to for issue management
 };
 
 Feedback.defaultProps = {
-  type: 'page'
+  type: 'page',
+  feedbackSentryDsn:
+    'https://eccc8b561b9a461990309b01d33d54e3@sentry.io/1848287'
 };
 
 export default Feedback;
