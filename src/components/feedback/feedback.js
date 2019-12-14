@@ -37,7 +37,7 @@ class Feedback extends React.Component {
   submitFeedback() {
     // initialize docs-feedback sentry project
     Sentry.init({
-      dsn: 'https://eccc8b561b9a461990309b01d33d54e3@sentry.io/1848287'
+      dsn: this.props.feedbackSentryDsn
     });
     Sentry.configureScope(scope => {
       scope.setTag('site', this.props.site); // site name
@@ -175,11 +175,14 @@ Feedback.propTypes = {
     production: PropTypes.string.isRequired
   }), // staging and production webhook URLs to send forward event data to
   userName: PropTypes.string, // userid if available
-  preferredLanguage: PropTypes.string // preferred code language if available
+  preferredLanguage: PropTypes.string, // preferred code language if available
+  feedbackSentryDsn: PropTypes.string // Sentry DSN (URL) to send text feedback to for issue management
 };
 
 Feedback.defaultProps = {
-  type: 'page'
+  type: 'page',
+  feedbackSentryDsn:
+    'https://eccc8b561b9a461990309b01d33d54e3@sentry.io/1848287'
 };
 
 export default Feedback;
