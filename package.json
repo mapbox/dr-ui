@@ -14,8 +14,7 @@
     "pretest": "npm run lint",
     "precommit": "lint-staged",
     "format": "prettier '**/*.js' --write",
-    "build": "scripts/build-module-indexes.js && scripts/build-package.js",
-    "start-legacy": "npm run build-component-index && node scripts/rm-search.js && npm run cp-assembly && budo ./src/test-cases-app/test-cases-app.js --dir ./src/test-cases-app --live --debug --pushstate -- -t babelify"
+    "build": "scripts/build-module-indexes.js && scripts/build-package.js"
   },
   "repository": {
     "type": "git",

@@ -9,14 +9,7 @@ import SearchBox from './search-box';
 class Search extends React.Component {
   render() {
     const { props } = this;
-    const isIE11 =
-      typeof window !== 'undefined' &&
-      !!window.MSInputMethodContext &&
-      (typeof document !== 'undefined' && !!document.documentMode);
-    // do not load search component on IE 11
-    return isIE11 ? (
-      ''
-    ) : (
+    return (
       <SearchProvider
         config={{
           apiConnector: props.connector,
