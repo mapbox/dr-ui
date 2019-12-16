@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import debounce from 'debounce';
 import classnames from 'classnames';
 import CopyButton from '@mapbox/mr-ui/copy-button';
+import { HideLines, ShowLines } from './show-hide-lines';
 
 function getWindow() {
   if (typeof window === undefined) {
@@ -36,8 +37,15 @@ export default class NumberedCodeSnippet extends React.PureComponent {
 
   static defaultProps = {
     characterWidth: 7.225, // Will need to change this if we change font size
-    scrollToLive: true
+    scrollToLive: false
   };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      expanded: false
+    };
+  }
 
   componentDidMount() {
     this.adjustPositions();
@@ -176,7 +184,9 @@ export default class NumberedCodeSnippet extends React.PureComponent {
         let lineClasses = 'pr12';
         if (codeChunk.live) lineClasses += ' py3';
         if (!codeChunk.live && props.copyRanges !== undefined)
-          lineClasses += ' opacity50 bg-darken10';
+          lineClasses += ` opacity50 bg-darken10 ${
+            this.state.expanded ? '' : 'h0 scroll-hidden'
+          }`;
 
         // Remove leading spaces, which are replaced with padding to avoid
         // weird behaviors that occur when there are long unbroken strings:
@@ -241,16 +251,36 @@ export default class NumberedCodeSnippet extends React.PureComponent {
             {lineEls}
           </div>
         );
+      } else if (codeChunk.live) {
+        codeElements.push(
+          <div key={i} className="relative z2" data-chunk-code={chunkId}>
+            {lineEls}
+          </div>
+        );
       } else {
         codeElements.push(
           <div
             key={i}
             // z-index this line above the highlighted background element for
             // live chunks
-            className="relative z2"
+            className={`relative z2 ${this.state.expanded ? '' : 'h36'}`}
             data-chunk-code={chunkId}
           >
-            {lineEls}
+            {this.state.expanded ? (
+              <HideLines
+                onClick={() => {
+                  this.setState({ expanded: !this.state.expanded });
+                }}
+              >
+                {lineEls}
+              </HideLines>
+            ) : (
+              <ShowLines
+                onClick={() => {
+                  this.setState({ expanded: !this.state.expanded });
+                }}
+              />
+            )}
           </div>
         );
       }
