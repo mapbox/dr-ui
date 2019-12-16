@@ -1,5 +1,9 @@
 # Changelog
 
+## Master
+
+* Add Sentry to `Feedback` component for text feedback issue management. [#198](https://github.com/mapbox/dr-ui/pull/198)
+
 ## 0.23.0
 
 * Allow caller to provide a custom `connector` to the `Search` component. [#200](https://github.com/mapbox/dr-ui/pull/200)
