@@ -166,41 +166,54 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
         className="px0 hljs"
       >
         <div
-          className="relative z2"
+          className="relative z2 h36"
           data-chunk-code="chunk-0"
         >
           <div
-            className="pr12 opacity50 bg-darken10"
-            style={
-              Object {
-                "paddingLeft": 12,
-              }
-            }
+            className="wfull bg-blue-faint color-blue pl12 py6 cursor-pointer txt-s h36 flex-parent flex-parent--center-cross"
+            onClick={[Function]}
           >
             <div
-              className="absolute fl color-gray align-r pr6 w36"
-              data-content={1}
-              style={
-                Object {
-                  "marginLeft": -12,
-                  "marginTop": -0,
+              className="flex-child"
+            >
+              <svg
+                className="events-none icon"
+                focusable="false"
+                role="presentation"
+                style={
+                  Object {
+                    "height": 12,
+                    "width": 12,
+                  }
                 }
-              }
-              unselectable="on"
-            />
+              >
+                <use
+                  xlinkHref="#icon-chevron-up"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                />
+              </svg>
+              <svg
+                className="events-none icon"
+                focusable="false"
+                role="presentation"
+                style={
+                  Object {
+                    "height": 12,
+                    "width": 12,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="#icon-chevron-down"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                />
+              </svg>
+            </div>
             <div
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "<span class=\\"token keyword\\">public</span> <span class=\\"token keyword\\">class</span> <span class=\\"token class-name\\">MainActivity</span> <span class=\\"token keyword\\">extends</span> <span class=\\"token class-name\\">AppCompatActivity</span> <span class=\\"token punctuation\\">{</span>",
-                }
-              }
-              style={
-                Object {
-                  "marginLeft": 43.349999999999994,
-                  "textIndent": -14.45,
-                }
-              }
-            />
+              className="flex-child ml12"
+            >
+              Show hidden lines
+            </div>
           </div>
         </div>
         <div
@@ -242,74 +255,54 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
           </div>
         </div>
         <div
-          className="relative z2"
+          className="relative z2 h36"
           data-chunk-code="chunk-2"
         >
           <div
-            className="pr12 opacity50 bg-darken10"
-            style={
-              Object {
-                "paddingLeft": 12,
-              }
-            }
+            className="wfull bg-blue-faint color-blue pl12 py6 cursor-pointer txt-s h36 flex-parent flex-parent--center-cross"
+            onClick={[Function]}
           >
             <div
-              className="absolute fl color-gray align-r pr6 w36"
-              data-content={3}
-              style={
-                Object {
-                  "marginLeft": -12,
-                  "marginTop": -0,
+              className="flex-child"
+            >
+              <svg
+                className="events-none icon"
+                focusable="false"
+                role="presentation"
+                style={
+                  Object {
+                    "height": 12,
+                    "width": 12,
+                  }
                 }
-              }
-              unselectable="on"
-            />
+              >
+                <use
+                  xlinkHref="#icon-chevron-up"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                />
+              </svg>
+              <svg
+                className="events-none icon"
+                focusable="false"
+                role="presentation"
+                style={
+                  Object {
+                    "height": 12,
+                    "width": 12,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="#icon-chevron-down"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                />
+              </svg>
+            </div>
             <div
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": " ",
-                }
-              }
-              style={
-                Object {
-                  "marginLeft": 43.349999999999994,
-                  "textIndent": -14.45,
-                }
-              }
-            />
-          </div>
-          <div
-            className="pr12 opacity50 bg-darken10"
-            style={
-              Object {
-                "paddingLeft": 26.45,
-              }
-            }
-          >
-            <div
-              className="absolute fl color-gray align-r pr6 w36"
-              data-content={4}
-              style={
-                Object {
-                  "marginLeft": -26.45,
-                  "marginTop": -0,
-                }
-              }
-              unselectable="on"
-            />
-            <div
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "<span class=\\"token annotation punctuation\\">@Override</span>",
-                }
-              }
-              style={
-                Object {
-                  "marginLeft": 43.349999999999994,
-                  "textIndent": -14.45,
-                }
-              }
-            />
+              className="flex-child ml12"
+            >
+              Show hidden lines
+            </div>
           </div>
         </div>
         <div
@@ -450,107 +443,54 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
           </div>
         </div>
         <div
-          className="relative z2"
+          className="relative z2 h36"
           data-chunk-code="chunk-4"
         >
           <div
-            className="pr12 opacity50 bg-darken10"
-            style={
-              Object {
-                "paddingLeft": 26.45,
-              }
-            }
+            className="wfull bg-blue-faint color-blue pl12 py6 cursor-pointer txt-s h36 flex-parent flex-parent--center-cross"
+            onClick={[Function]}
           >
             <div
-              className="absolute fl color-gray align-r pr6 w36"
-              data-content={9}
-              style={
-                Object {
-                  "marginLeft": -26.45,
-                  "marginTop": -0,
+              className="flex-child"
+            >
+              <svg
+                className="events-none icon"
+                focusable="false"
+                role="presentation"
+                style={
+                  Object {
+                    "height": 12,
+                    "width": 12,
+                  }
                 }
-              }
-              unselectable="on"
-            />
+              >
+                <use
+                  xlinkHref="#icon-chevron-up"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                />
+              </svg>
+              <svg
+                className="events-none icon"
+                focusable="false"
+                role="presentation"
+                style={
+                  Object {
+                    "height": 12,
+                    "width": 12,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="#icon-chevron-down"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                />
+              </svg>
+            </div>
             <div
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "mapView <span class=\\"token operator\\">=</span> <span class=\\"token punctuation\\">(</span>MapView<span class=\\"token punctuation\\">)</span> <span class=\\"token function\\">findViewById</span><span class=\\"token punctuation\\">(</span>R<span class=\\"token punctuation\\">.</span>id<span class=\\"token punctuation\\">.</span>mapView<span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
-                }
-              }
-              style={
-                Object {
-                  "marginLeft": 43.349999999999994,
-                  "textIndent": -14.45,
-                }
-              }
-            />
-          </div>
-          <div
-            className="pr12 opacity50 bg-darken10"
-            style={
-              Object {
-                "paddingLeft": 26.45,
-              }
-            }
-          >
-            <div
-              className="absolute fl color-gray align-r pr6 w36"
-              data-content={10}
-              style={
-                Object {
-                  "marginLeft": -26.45,
-                  "marginTop": -0,
-                }
-              }
-              unselectable="on"
-            />
-            <div
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "mapView<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">onCreate</span><span class=\\"token punctuation\\">(</span>savedInstanceState<span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
-                }
-              }
-              style={
-                Object {
-                  "marginLeft": 43.349999999999994,
-                  "textIndent": -14.45,
-                }
-              }
-            />
-          </div>
-          <div
-            className="pr12 opacity50 bg-darken10"
-            style={
-              Object {
-                "paddingLeft": 12,
-              }
-            }
-          >
-            <div
-              className="absolute fl color-gray align-r pr6 w36"
-              data-content={11}
-              style={
-                Object {
-                  "marginLeft": -12,
-                  "marginTop": -0,
-                }
-              }
-              unselectable="on"
-            />
-            <div
-              dangerouslySetInnerHTML={
-                Object {
-                  "__html": "<span class=\\"token punctuation\\">}</span>",
-                }
-              }
-              style={
-                Object {
-                  "marginLeft": 43.349999999999994,
-                  "textIndent": -14.45,
-                }
-              }
-            />
+              className="flex-child ml12"
+            >
+              Show hidden lines
+            </div>
           </div>
         </div>
       </code>

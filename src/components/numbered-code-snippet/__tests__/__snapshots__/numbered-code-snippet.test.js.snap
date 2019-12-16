@@ -17,41 +17,54 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
       className="px0 hljs"
     >
       <div
-        className="relative z2"
+        className="relative z2 h36"
         data-chunk-code="chunk-0"
       >
         <div
-          className="pr12 opacity50 bg-darken10"
-          style={
-            Object {
-              "paddingLeft": 12,
-            }
-          }
+          className="wfull bg-blue-faint color-blue pl12 py6 cursor-pointer txt-s h36 flex-parent flex-parent--center-cross"
+          onClick={[Function]}
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
-            data-content={1}
-            style={
-              Object {
-                "marginLeft": -12,
-                "marginTop": -0,
+            className="flex-child"
+          >
+            <svg
+              className="events-none icon"
+              focusable="false"
+              role="presentation"
+              style={
+                Object {
+                  "height": 12,
+                  "width": 12,
+                }
               }
-            }
-            unselectable="on"
-          />
+            >
+              <use
+                xlinkHref="#icon-chevron-up"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              />
+            </svg>
+            <svg
+              className="events-none icon"
+              focusable="false"
+              role="presentation"
+              style={
+                Object {
+                  "height": 12,
+                  "width": 12,
+                }
+              }
+            >
+              <use
+                xlinkHref="#icon-chevron-down"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              />
+            </svg>
+          </div>
           <div
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "<span class=\\"token comment\\">// 'style' in this case refers to an MGLStyle object.</span>",
-              }
-            }
-            style={
-              Object {
-                "marginLeft": 43.349999999999994,
-                "textIndent": -14.45,
-              }
-            }
-          />
+            className="flex-child ml12"
+          >
+            Show hidden lines
+          </div>
         </div>
       </div>
       <div
@@ -126,41 +139,54 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
         </div>
       </div>
       <div
-        className="relative z2"
+        className="relative z2 h36"
         data-chunk-code="chunk-2"
       >
         <div
-          className="pr12 opacity50 bg-darken10"
-          style={
-            Object {
-              "paddingLeft": 12,
-            }
-          }
+          className="wfull bg-blue-faint color-blue pl12 py6 cursor-pointer txt-s h36 flex-parent flex-parent--center-cross"
+          onClick={[Function]}
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
-            data-content={4}
-            style={
-              Object {
-                "marginLeft": -12,
-                "marginTop": -0,
+            className="flex-child"
+          >
+            <svg
+              className="events-none icon"
+              focusable="false"
+              role="presentation"
+              style={
+                Object {
+                  "height": 12,
+                  "width": 12,
+                }
               }
-            }
-            unselectable="on"
-          />
+            >
+              <use
+                xlinkHref="#icon-chevron-up"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              />
+            </svg>
+            <svg
+              className="events-none icon"
+              focusable="false"
+              role="presentation"
+              style={
+                Object {
+                  "height": 12,
+                  "width": 12,
+                }
+              }
+            >
+              <use
+                xlinkHref="#icon-chevron-down"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              />
+            </svg>
+          </div>
           <div
-            dangerouslySetInnerHTML={
-              Object {
-                "__html": "layer<span class=\\"token punctuation\\">.</span>text <span class=\\"token operator\\">=</span> layer<span class=\\"token punctuation\\">.</span>text<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">mgl_expressionLocalized</span><span class=\\"token punctuation\\">(</span>into<span class=\\"token punctuation\\">:</span> spanish<span class=\\"token punctuation\\">)</span>",
-              }
-            }
-            style={
-              Object {
-                "marginLeft": 43.349999999999994,
-                "textIndent": -14.45,
-              }
-            }
-          />
+            className="flex-child ml12"
+          >
+            Show hidden lines
+          </div>
         </div>
       </div>
     </code>
