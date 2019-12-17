@@ -11,59 +11,72 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
   }
 >
   <pre
-    className="my-neg12 py12 ml-neg12 pl12 mobile-snippet"
+    className="mt-neg12 pt12 ml-neg12 pl12 mobile-snippet"
   >
     <code
       className="px0 hljs"
     >
       <div
-        className="relative z2 h36"
+        className="relative z2 h30"
         data-chunk-code="chunk-0"
       >
         <div
-          className="wfull bg-blue-faint color-blue pl12 py6 cursor-pointer txt-s h36 flex-parent flex-parent--center-cross"
+          className="wfull bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
           onClick={[Function]}
         >
           <div
             className="flex-child"
           >
-            <svg
-              className="events-none icon"
-              focusable="false"
-              role="presentation"
-              style={
-                Object {
-                  "height": 12,
-                  "width": 12,
-                }
-              }
+            <div
+              className="mb-neg3"
             >
-              <use
-                xlinkHref="#icon-chevron-up"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-              />
-            </svg>
-            <svg
-              className="events-none icon"
-              focusable="false"
-              role="presentation"
-              style={
-                Object {
-                  "height": 12,
-                  "width": 12,
+              <svg
+                className="events-none icon"
+                focusable="false"
+                role="presentation"
+                style={
+                  Object {
+                    "height": 12,
+                    "width": 12,
+                  }
                 }
-              }
+              >
+                <use
+                  xlinkHref="#icon-chevron-up"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                />
+              </svg>
+            </div>
+            <div
+              className="mt-neg3"
             >
-              <use
-                xlinkHref="#icon-chevron-down"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-              />
-            </svg>
+              <svg
+                className="events-none icon"
+                focusable="false"
+                role="presentation"
+                style={
+                  Object {
+                    "height": 12,
+                    "width": 12,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="#icon-chevron-down"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                />
+              </svg>
+            </div>
           </div>
           <div
-            className="flex-child ml12"
+            className="flex-child"
+            style={
+              Object {
+                "marginLeft": "8px",
+              }
+            }
           >
-            Show hidden lines
+            show hidden lines
           </div>
         </div>
       </div>
@@ -75,16 +88,16 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           className="pr12 py3"
           style={
             Object {
-              "paddingLeft": 12,
+              "paddingLeft": 40.9,
             }
           }
         >
           <div
             className="absolute fl color-gray align-r pr6 w30 py3"
-            data-content={2}
+            data-content={6}
             style={
               Object {
-                "marginLeft": -6,
+                "marginLeft": -34.9,
                 "marginTop": -3,
               }
             }
@@ -93,7 +106,40 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "<span class=\\"token keyword\\">let</span> layer <span class=\\"token operator\\">=</span> style<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">layer</span><span class=\\"token punctuation\\">(</span>withIdentifier<span class=\\"token punctuation\\">:</span> <span class=\\"token string\\">\\"place-city-sm\\"</span><span class=\\"token punctuation\\">)</span> <span class=\\"token keyword\\">as</span><span class=\\"token operator\\">!</span> <span class=\\"token builtin\\">MGLSymbolStyleLayer</span>",
+                "__html": "<span class=\\"token keyword\\">override</span> <span class=\\"token keyword\\">func</span> <span class=\\"token function\\">viewDidLoad</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+              }
+            }
+            style={
+              Object {
+                "marginLeft": 43.349999999999994,
+                "textIndent": -14.45,
+              }
+            }
+          />
+        </div>
+        <div
+          className="pr12 py3"
+          style={
+            Object {
+              "paddingLeft": 69.8,
+            }
+          }
+        >
+          <div
+            className="absolute fl color-gray align-r pr6 w30 py3"
+            data-content={7}
+            style={
+              Object {
+                "marginLeft": -63.8,
+                "marginTop": -3,
+              }
+            }
+            unselectable="on"
+          />
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<span class=\\"token keyword\\">super</span><span class=\\"token punctuation\\">.</span><span class=\\"token function\\">viewDidLoad</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span>",
               }
             }
             style={
@@ -114,7 +160,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
         >
           <div
             className="absolute fl color-gray align-r pr6 w30 py3"
-            data-content={3}
+            data-content={8}
             style={
               Object {
                 "marginLeft": -6,
@@ -126,7 +172,304 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "<span class=\\"token keyword\\">let</span> spanish <span class=\\"token operator\\">=</span> <span class=\\"token function\\">Locale</span><span class=\\"token punctuation\\">(</span>identifier<span class=\\"token punctuation\\">:</span> <span class=\\"token string\\">\\"es\\"</span><span class=\\"token punctuation\\">)</span>",
+                "__html": " ",
+              }
+            }
+            style={
+              Object {
+                "marginLeft": 43.349999999999994,
+                "textIndent": -14.45,
+              }
+            }
+          />
+        </div>
+        <div
+          className="pr12 py3"
+          style={
+            Object {
+              "paddingLeft": 69.8,
+            }
+          }
+        >
+          <div
+            className="absolute fl color-gray align-r pr6 w30 py3"
+            data-content={9}
+            style={
+              Object {
+                "marginLeft": -63.8,
+                "marginTop": -3,
+              }
+            }
+            unselectable="on"
+          />
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<span class=\\"token keyword\\">let</span> mapView <span class=\\"token operator\\">=</span> <span class=\\"token function\\">MGLMapView</span><span class=\\"token punctuation\\">(</span>frame<span class=\\"token punctuation\\">:</span> view<span class=\\"token punctuation\\">.</span>bounds<span class=\\"token punctuation\\">)</span>",
+              }
+            }
+            style={
+              Object {
+                "marginLeft": 43.349999999999994,
+                "textIndent": -14.45,
+              }
+            }
+          />
+        </div>
+        <div
+          className="pr12 py3"
+          style={
+            Object {
+              "paddingLeft": 69.8,
+            }
+          }
+        >
+          <div
+            className="absolute fl color-gray align-r pr6 w30 py3"
+            data-content={10}
+            style={
+              Object {
+                "marginLeft": -63.8,
+                "marginTop": -3,
+              }
+            }
+            unselectable="on"
+          />
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "mapView<span class=\\"token punctuation\\">.</span>styleURL <span class=\\"token operator\\">=</span> <span class=\\"token builtin\\">MGLStyle</span><span class=\\"token punctuation\\">.</span>lightStyleURL",
+              }
+            }
+            style={
+              Object {
+                "marginLeft": 43.349999999999994,
+                "textIndent": -14.45,
+              }
+            }
+          />
+        </div>
+        <div
+          className="pr12 py3"
+          style={
+            Object {
+              "paddingLeft": 69.8,
+            }
+          }
+        >
+          <div
+            className="absolute fl color-gray align-r pr6 w30 py3"
+            data-content={11}
+            style={
+              Object {
+                "marginLeft": -63.8,
+                "marginTop": -3,
+              }
+            }
+            unselectable="on"
+          />
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "mapView<span class=\\"token punctuation\\">.</span>autoresizingMask <span class=\\"token operator\\">=</span> <span class=\\"token punctuation\\">[</span><span class=\\"token punctuation\\">.</span>flexibleWidth<span class=\\"token punctuation\\">,</span> <span class=\\"token punctuation\\">.</span>flexibleHeight<span class=\\"token punctuation\\">]</span>",
+              }
+            }
+            style={
+              Object {
+                "marginLeft": 43.349999999999994,
+                "textIndent": -14.45,
+              }
+            }
+          />
+        </div>
+        <div
+          className="pr12 py3"
+          style={
+            Object {
+              "paddingLeft": 12,
+            }
+          }
+        >
+          <div
+            className="absolute fl color-gray align-r pr6 w30 py3"
+            data-content={12}
+            style={
+              Object {
+                "marginLeft": -6,
+                "marginTop": -3,
+              }
+            }
+            unselectable="on"
+          />
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": " ",
+              }
+            }
+            style={
+              Object {
+                "marginLeft": 43.349999999999994,
+                "textIndent": -14.45,
+              }
+            }
+          />
+        </div>
+        <div
+          className="pr12 py3"
+          style={
+            Object {
+              "paddingLeft": 69.8,
+            }
+          }
+        >
+          <div
+            className="absolute fl color-gray align-r pr6 w30 py3"
+            data-content={13}
+            style={
+              Object {
+                "marginLeft": -63.8,
+                "marginTop": -3,
+              }
+            }
+            unselectable="on"
+          />
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "mapView<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">setCenter</span><span class=\\"token punctuation\\">(</span><span class=\\"token function\\">CLLocationCoordinate2D</span><span class=\\"token punctuation\\">(</span>latitude<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">44.971</span><span class=\\"token punctuation\\">,</span> longitude<span class=\\"token punctuation\\">:</span> <span class=\\"token operator\\">-</span><span class=\\"token number\\">93.261</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">,</span> zoomLevel<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">10</span><span class=\\"token punctuation\\">,</span> animated<span class=\\"token punctuation\\">:</span> <span class=\\"token boolean\\">false</span><span class=\\"token punctuation\\">)</span>",
+              }
+            }
+            style={
+              Object {
+                "marginLeft": 43.349999999999994,
+                "textIndent": -14.45,
+              }
+            }
+          />
+        </div>
+        <div
+          className="pr12 py3"
+          style={
+            Object {
+              "paddingLeft": 12,
+            }
+          }
+        >
+          <div
+            className="absolute fl color-gray align-r pr6 w30 py3"
+            data-content={14}
+            style={
+              Object {
+                "marginLeft": -6,
+                "marginTop": -3,
+              }
+            }
+            unselectable="on"
+          />
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": " ",
+              }
+            }
+            style={
+              Object {
+                "marginLeft": 43.349999999999994,
+                "textIndent": -14.45,
+              }
+            }
+          />
+        </div>
+        <div
+          className="pr12 py3"
+          style={
+            Object {
+              "paddingLeft": 69.8,
+            }
+          }
+        >
+          <div
+            className="absolute fl color-gray align-r pr6 w30 py3"
+            data-content={15}
+            style={
+              Object {
+                "marginLeft": -63.8,
+                "marginTop": -3,
+              }
+            }
+            unselectable="on"
+          />
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "mapView<span class=\\"token punctuation\\">.</span>delegate <span class=\\"token operator\\">=</span> <span class=\\"token keyword\\">self</span>",
+              }
+            }
+            style={
+              Object {
+                "marginLeft": 43.349999999999994,
+                "textIndent": -14.45,
+              }
+            }
+          />
+        </div>
+        <div
+          className="pr12 py3"
+          style={
+            Object {
+              "paddingLeft": 69.8,
+            }
+          }
+        >
+          <div
+            className="absolute fl color-gray align-r pr6 w30 py3"
+            data-content={16}
+            style={
+              Object {
+                "marginLeft": -63.8,
+                "marginTop": -3,
+              }
+            }
+            unselectable="on"
+          />
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "view<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">addSubview</span><span class=\\"token punctuation\\">(</span>mapView<span class=\\"token punctuation\\">)</span>",
+              }
+            }
+            style={
+              Object {
+                "marginLeft": 43.349999999999994,
+                "textIndent": -14.45,
+              }
+            }
+          />
+        </div>
+        <div
+          className="pr12 py3"
+          style={
+            Object {
+              "paddingLeft": 40.9,
+            }
+          }
+        >
+          <div
+            className="absolute fl color-gray align-r pr6 w30 py3"
+            data-content={17}
+            style={
+              Object {
+                "marginLeft": -34.9,
+                "marginTop": -3,
+              }
+            }
+            unselectable="on"
+          />
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<span class=\\"token punctuation\\">}</span>",
               }
             }
             style={
@@ -139,60 +482,73 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
         </div>
       </div>
       <div
-        className="relative z2 h36"
+        className="relative z2 h30"
         data-chunk-code="chunk-2"
       >
         <div
-          className="wfull bg-blue-faint color-blue pl12 py6 cursor-pointer txt-s h36 flex-parent flex-parent--center-cross"
+          className="wfull bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
           onClick={[Function]}
         >
           <div
             className="flex-child"
           >
-            <svg
-              className="events-none icon"
-              focusable="false"
-              role="presentation"
-              style={
-                Object {
-                  "height": 12,
-                  "width": 12,
-                }
-              }
+            <div
+              className="mb-neg3"
             >
-              <use
-                xlinkHref="#icon-chevron-up"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-              />
-            </svg>
-            <svg
-              className="events-none icon"
-              focusable="false"
-              role="presentation"
-              style={
-                Object {
-                  "height": 12,
-                  "width": 12,
+              <svg
+                className="events-none icon"
+                focusable="false"
+                role="presentation"
+                style={
+                  Object {
+                    "height": 12,
+                    "width": 12,
+                  }
                 }
-              }
+              >
+                <use
+                  xlinkHref="#icon-chevron-up"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                />
+              </svg>
+            </div>
+            <div
+              className="mt-neg3"
             >
-              <use
-                xlinkHref="#icon-chevron-down"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-              />
-            </svg>
+              <svg
+                className="events-none icon"
+                focusable="false"
+                role="presentation"
+                style={
+                  Object {
+                    "height": 12,
+                    "width": 12,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="#icon-chevron-down"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                />
+              </svg>
+            </div>
           </div>
           <div
-            className="flex-child ml12"
+            className="flex-child"
+            style={
+              Object {
+                "marginLeft": "8px",
+              }
+            }
           >
-            Show hidden lines
+            show hidden lines
           </div>
         </div>
       </div>
     </code>
   </pre>
   <div
-    className="bg-lighten50 absolute left right"
+    className="bg-lighten75 absolute left right"
     data-chunk-overlay="chunk-1"
     style={
       Object {

@@ -160,59 +160,72 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
     }
   >
     <pre
-      className="my-neg12 py12 ml-neg12 pl12 mobile-snippet"
+      className="mt-neg12 pt12 ml-neg12 pl12 mobile-snippet"
     >
       <code
         className="px0 hljs"
       >
         <div
-          className="relative z2 h36"
+          className="relative z2 h30"
           data-chunk-code="chunk-0"
         >
           <div
-            className="wfull bg-blue-faint color-blue pl12 py6 cursor-pointer txt-s h36 flex-parent flex-parent--center-cross"
+            className="wfull bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
             onClick={[Function]}
           >
             <div
               className="flex-child"
             >
-              <svg
-                className="events-none icon"
-                focusable="false"
-                role="presentation"
-                style={
-                  Object {
-                    "height": 12,
-                    "width": 12,
-                  }
-                }
+              <div
+                className="mb-neg3"
               >
-                <use
-                  xlinkHref="#icon-chevron-up"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                />
-              </svg>
-              <svg
-                className="events-none icon"
-                focusable="false"
-                role="presentation"
-                style={
-                  Object {
-                    "height": 12,
-                    "width": 12,
+                <svg
+                  className="events-none icon"
+                  focusable="false"
+                  role="presentation"
+                  style={
+                    Object {
+                      "height": 12,
+                      "width": 12,
+                    }
                   }
-                }
+                >
+                  <use
+                    xlinkHref="#icon-chevron-up"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  />
+                </svg>
+              </div>
+              <div
+                className="mt-neg3"
               >
-                <use
-                  xlinkHref="#icon-chevron-down"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                />
-              </svg>
+                <svg
+                  className="events-none icon"
+                  focusable="false"
+                  role="presentation"
+                  style={
+                    Object {
+                      "height": 12,
+                      "width": 12,
+                    }
+                  }
+                >
+                  <use
+                    xlinkHref="#icon-chevron-down"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  />
+                </svg>
+              </div>
             </div>
             <div
-              className="flex-child ml12"
+              className="flex-child"
+              style={
+                Object {
+                  "marginLeft": "8px",
+                }
+              }
             >
-              Show hidden lines
+              show hidden lines
             </div>
           </div>
         </div>
@@ -255,53 +268,66 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
           </div>
         </div>
         <div
-          className="relative z2 h36"
+          className="relative z2 h30"
           data-chunk-code="chunk-2"
         >
           <div
-            className="wfull bg-blue-faint color-blue pl12 py6 cursor-pointer txt-s h36 flex-parent flex-parent--center-cross"
+            className="wfull bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
             onClick={[Function]}
           >
             <div
               className="flex-child"
             >
-              <svg
-                className="events-none icon"
-                focusable="false"
-                role="presentation"
-                style={
-                  Object {
-                    "height": 12,
-                    "width": 12,
-                  }
-                }
+              <div
+                className="mb-neg3"
               >
-                <use
-                  xlinkHref="#icon-chevron-up"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                />
-              </svg>
-              <svg
-                className="events-none icon"
-                focusable="false"
-                role="presentation"
-                style={
-                  Object {
-                    "height": 12,
-                    "width": 12,
+                <svg
+                  className="events-none icon"
+                  focusable="false"
+                  role="presentation"
+                  style={
+                    Object {
+                      "height": 12,
+                      "width": 12,
+                    }
                   }
-                }
+                >
+                  <use
+                    xlinkHref="#icon-chevron-up"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  />
+                </svg>
+              </div>
+              <div
+                className="mt-neg3"
               >
-                <use
-                  xlinkHref="#icon-chevron-down"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                />
-              </svg>
+                <svg
+                  className="events-none icon"
+                  focusable="false"
+                  role="presentation"
+                  style={
+                    Object {
+                      "height": 12,
+                      "width": 12,
+                    }
+                  }
+                >
+                  <use
+                    xlinkHref="#icon-chevron-down"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  />
+                </svg>
+              </div>
             </div>
             <div
-              className="flex-child ml12"
+              className="flex-child"
+              style={
+                Object {
+                  "marginLeft": "8px",
+                }
+              }
             >
-              Show hidden lines
+              show hidden lines
             </div>
           </div>
         </div>
@@ -443,60 +469,73 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
           </div>
         </div>
         <div
-          className="relative z2 h36"
+          className="relative z2 h30"
           data-chunk-code="chunk-4"
         >
           <div
-            className="wfull bg-blue-faint color-blue pl12 py6 cursor-pointer txt-s h36 flex-parent flex-parent--center-cross"
+            className="wfull bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
             onClick={[Function]}
           >
             <div
               className="flex-child"
             >
-              <svg
-                className="events-none icon"
-                focusable="false"
-                role="presentation"
-                style={
-                  Object {
-                    "height": 12,
-                    "width": 12,
-                  }
-                }
+              <div
+                className="mb-neg3"
               >
-                <use
-                  xlinkHref="#icon-chevron-up"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                />
-              </svg>
-              <svg
-                className="events-none icon"
-                focusable="false"
-                role="presentation"
-                style={
-                  Object {
-                    "height": 12,
-                    "width": 12,
+                <svg
+                  className="events-none icon"
+                  focusable="false"
+                  role="presentation"
+                  style={
+                    Object {
+                      "height": 12,
+                      "width": 12,
+                    }
                   }
-                }
+                >
+                  <use
+                    xlinkHref="#icon-chevron-up"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  />
+                </svg>
+              </div>
+              <div
+                className="mt-neg3"
               >
-                <use
-                  xlinkHref="#icon-chevron-down"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                />
-              </svg>
+                <svg
+                  className="events-none icon"
+                  focusable="false"
+                  role="presentation"
+                  style={
+                    Object {
+                      "height": 12,
+                      "width": 12,
+                    }
+                  }
+                >
+                  <use
+                    xlinkHref="#icon-chevron-down"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  />
+                </svg>
+              </div>
             </div>
             <div
-              className="flex-child ml12"
+              className="flex-child"
+              style={
+                Object {
+                  "marginLeft": "8px",
+                }
+              }
             >
-              Show hidden lines
+              show hidden lines
             </div>
           </div>
         </div>
       </code>
     </pre>
     <div
-      className="bg-lighten50 absolute left right"
+      className="bg-lighten75 absolute left right"
       data-chunk-overlay="chunk-1"
       style={
         Object {
@@ -509,7 +548,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
       />
     </div>
     <div
-      className="bg-lighten50 absolute left right"
+      className="bg-lighten75 absolute left right"
       data-chunk-overlay="chunk-3"
       style={
         Object {

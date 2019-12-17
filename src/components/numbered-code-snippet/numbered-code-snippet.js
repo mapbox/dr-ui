@@ -114,7 +114,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
       overlayElement.style.opacity = '1';
       copyElement.style.opacity = '1';
     }
-  }, 300);
+  }, 10);
 
   onContainerElement = element => {
     this.containerElement = element;
@@ -184,9 +184,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
         let lineClasses = 'pr12';
         if (codeChunk.live) lineClasses += ' py3';
         if (!codeChunk.live && props.copyRanges !== undefined)
-          lineClasses += ` opacity50 bg-darken10 ${
-            this.state.expanded ? '' : 'h0 scroll-hidden'
-          }`;
+          lineClasses += this.state.expanded ? '' : 'h0 scroll-hidden';
 
         // Remove leading spaces, which are replaced with padding to avoid
         // weird behaviors that occur when there are long unbroken strings:
@@ -263,7 +261,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
             key={i}
             // z-index this line above the highlighted background element for
             // live chunks
-            className={`relative z2 ${this.state.expanded ? '' : 'h36'}`}
+            className={`relative z2 ${this.state.expanded ? '' : 'h30'}`}
             data-chunk-code={chunkId}
           >
             {this.state.expanded ? (
@@ -290,7 +288,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
           <div
             key={i}
             data-chunk-overlay={chunkId}
-            className="bg-lighten50 absolute left right"
+            className="bg-lighten75 absolute left right"
             style={{ opacity: 0 }}
           >
             <div className="bg-blue h-full w6" />
@@ -341,7 +339,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
         ref={this.onContainerElement}
         style={{ ...containerStyles, backgroundColor: '#f4f7fb' }}
       >
-        <pre className="my-neg12 py12 ml-neg12 pl12 mobile-snippet">
+        <pre className="mt-neg12 pt12 ml-neg12 pl12 mobile-snippet">
           <code className={codeClasses}>{codeElements}</code>
         </pre>
         {copyAllButton}
