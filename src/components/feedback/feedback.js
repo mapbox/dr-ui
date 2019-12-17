@@ -7,6 +7,12 @@ import Icon from '@mapbox/mr-ui/icon';
 import * as Sentry from '@sentry/browser';
 
 const anonymousId = uuidv4(); // creates an anonymousId fallback if user is not logged or we cant get their info
+const environment =
+  typeof window !== 'undefined'
+    ? /(^|\S+\.)mapbox\.com/.test(window.location.host)
+      ? 'production'
+      : 'staging'
+    : undefined;
 
 class Feedback extends React.Component {
   constructor(props) {
@@ -37,13 +43,15 @@ class Feedback extends React.Component {
   submitFeedback() {
     // initialize docs-feedback sentry project
     Sentry.init({
-      dsn: this.props.feedbackSentryDsn
+      dsn: this.props.feedbackSentryDsn,
+      environment
     });
     Sentry.configureScope(scope => {
       scope.setTag('site', this.props.site); // site name
       scope.setTag('helpful', this.state.helpful); // the user's boolean rating
-      scope.setTag('section', this.props.section); // section of the page (if available)
-      scope.setTag('preferredLanguage', this.props.preferredLanguage); // user's preferred language, if set
+      if (this.props.section) scope.setTag('section', this.props.section); // section of the page (if available)
+      if (this.props.preferredLanguage)
+        scope.setTag('preferredLanguage', this.props.preferredLanguage); // user's preferred language (if available)
       scope.setLevel('info'); // sets the message as "info" (rather than warning)
     });
     Sentry.captureMessage(this.state.feedback); // capture the feedback as a message
@@ -55,12 +63,6 @@ class Feedback extends React.Component {
 
   // sends all available data to segment
   sendToSegment() {
-    const environment =
-      typeof window !== 'undefined'
-        ? /(^|\S+\.)mapbox\.com/.test(window.location.host)
-          ? 'production'
-          : 'staging'
-        : undefined;
     const location =
       typeof window !== 'undefined' ? window.location : undefined;
     const event = {
