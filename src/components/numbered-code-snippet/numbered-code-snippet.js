@@ -49,7 +49,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
 
   componentDidMount() {
     this.adjustPositions();
-    getWindow().addEventListener('resize', this.adjustPositions);
+    getWindow().addEventListener('resize', this.adjustPositionsResize);
 
     const theme = this.props.highlightThemeCss;
 
@@ -62,8 +62,14 @@ export default class NumberedCodeSnippet extends React.PureComponent {
     doc.head.appendChild(this.styleTag);
   }
 
-  componentDidUpdate() {
-    this.adjustPositions();
+  componentDidUpdate(prevState, prevProps) {
+    /* If state or props changed, use the debounceless version */
+    if (prevState !== this.state || prevProps !== this.props) {
+      this.adjustPositions();
+      /* If the state and props objects didn't change, use the debounce version */
+    } else {
+      this.adjustPositionsResize();
+    }
     if (this.props.scrollToLive && this.props.maxHeight) {
       let offsetFromTop = null;
       if (this.firstLiveElement && this.firstLiveElement.offsetTop !== null) {
@@ -77,10 +83,14 @@ export default class NumberedCodeSnippet extends React.PureComponent {
   }
 
   componentWillUnmount() {
-    getWindow().removeEventListener('resize', this.adjustPositions);
+    getWindow().removeEventListener('resize', this.adjustPositionsResize);
   }
 
-  adjustPositions = debounce(() => {
+  adjustPositionsResize = debounce(() => {
+    this.adjustPositions();
+  }, 300);
+
+  adjustPositions = () => {
     const { containerElement } = this;
     if (!containerElement) return;
 
@@ -114,7 +124,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
       overlayElement.style.opacity = '1';
       copyElement.style.opacity = '1';
     }
-  }, 10);
+  };
 
   onContainerElement = element => {
     this.containerElement = element;
