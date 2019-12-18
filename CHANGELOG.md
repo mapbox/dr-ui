@@ -1,8 +1,9 @@
 # Changelog
 
-## Master
+## 0.24.0
 
 * Add Sentry to `Feedback` component for text feedback issue management. [#198](https://github.com/mapbox/dr-ui/pull/198)
+* Add support for `groovy` syntax highlighting. [#201](https://github.com/mapbox/dr-ui/pull/201)
 
 ## 0.23.0
 
