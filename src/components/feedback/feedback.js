@@ -41,20 +41,22 @@ class Feedback extends React.Component {
   }
   // when user click submit feedback button, the value is pushed to the state and then sent to segment
   submitFeedback() {
-    // initialize docs-feedback sentry project
-    Sentry.init({
-      dsn: this.props.feedbackSentryDsn,
-      environment
-    });
-    Sentry.configureScope(scope => {
-      scope.setTag('site', this.props.site); // site name
-      scope.setTag('helpful', this.state.helpful); // the user's boolean rating
-      if (this.props.section) scope.setTag('section', this.props.section); // section of the page (if available)
-      if (this.props.preferredLanguage)
-        scope.setTag('preferredLanguage', this.props.preferredLanguage); // user's preferred language (if available)
-      scope.setLevel('info'); // sets the message as "info" (rather than warning)
-    });
-    Sentry.captureMessage(this.state.feedback); // capture the feedback as a message
+    // initialize docs-feedback sentry project if enabled
+    if (this.props.feedbackSentryDsn !== false) {
+      Sentry.init({
+        dsn: this.props.feedbackSentryDsn,
+        environment
+      });
+      Sentry.configureScope(scope => {
+        scope.setTag('site', this.props.site); // site name
+        scope.setTag('helpful', this.state.helpful); // the user's boolean rating
+        if (this.props.section) scope.setTag('section', this.props.section); // section of the page (if available)
+        if (this.props.preferredLanguage)
+          scope.setTag('preferredLanguage', this.props.preferredLanguage); // user's preferred language (if available)
+        scope.setLevel('info'); // sets the message as "info" (rather than warning)
+      });
+      Sentry.captureMessage(this.state.feedback); // capture the feedback as a message
+    }
     this.setState({ feedbackSent: true }, () => {
       // Track response to Segement
       this.sendToSegment();
@@ -178,7 +180,7 @@ Feedback.propTypes = {
   }), // staging and production webhook URLs to send forward event data to
   userName: PropTypes.string, // userid if available
   preferredLanguage: PropTypes.string, // preferred code language if available
-  feedbackSentryDsn: PropTypes.string // Sentry DSN (URL) to send text feedback to for issue management
+  feedbackSentryDsn: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]) // Sentry DSN (URL) to send text feedback to for issue management or "false" to not send feedback to Sentry
 };
 
 Feedback.defaultProps = {
