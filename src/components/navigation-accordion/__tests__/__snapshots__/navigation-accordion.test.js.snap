@@ -480,7 +480,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
                             Object {
                               "background": "#feefe2",
                               "borderColor": "#dea573",
-                              "color": "#9d5d25",
+                              "color": "#945823",
                             }
                           }
                         >

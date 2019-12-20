@@ -1,0 +1,415 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`themes Custom tag renders as expected 1`] = `null`;
+
+exports[`themes Default renders as expected 1`] = `
+<div
+  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
+  style={
+    Object {
+      "background": "#f4f7fb",
+      "color": "#547190",
+    }
+  }
+>
+  <div
+    className="flex-child mr18 none block-mm pt3"
+  >
+    <div
+      className="bg-gray-light round-full color-gray flex-parent flex-parent--center-main flex-parent--center-cross"
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
+    >
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": "40",
+            "width": "40",
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-book"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="flex-child prose"
+  >
+    <div
+      className="txt-bold txt-m mb6"
+    >
+      Note
+    </div>
+    Default note
+  </div>
+</div>
+`;
+
+exports[`themes download renders as expected 1`] = `
+<div>
+   
+  <div
+    className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
+    style={
+      Object {
+        "background": "#f2effa",
+        "color": "#5a3fc0",
+      }
+    }
+  >
+    <div
+      className="flex-child mr18 none block-mm pt3"
+    >
+      <div
+        className="bg-purple-light round-full color-purple flex-parent flex-parent--center-main flex-parent--center-cross"
+        style={
+          Object {
+            "height": 50,
+            "width": 50,
+          }
+        }
+      >
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": "40",
+              "width": "40",
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-arrow-down"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="flex-child prose"
+    >
+      <div
+        className="txt-bold txt-m mb6"
+      >
+        Download
+      </div>
+      download note
+    </div>
+  </div>
+</div>
+`;
+
+exports[`themes error renders as expected 1`] = `
+<div>
+   
+  <div
+    className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
+    style={
+      Object {
+        "background": "#fbe5e5",
+        "color": "#ba3b3f",
+      }
+    }
+  >
+    <div
+      className="flex-child mr18 none block-mm pt3"
+    >
+      <div
+        className="bg-red-light round-full color-red flex-parent flex-parent--center-main flex-parent--center-cross"
+        style={
+          Object {
+            "height": 50,
+            "width": 50,
+          }
+        }
+      >
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": "40",
+              "width": "40",
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-alert"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="flex-child prose"
+    >
+      <div
+        className="txt-bold txt-m mb6"
+      >
+        Error
+      </div>
+      error note
+    </div>
+  </div>
+</div>
+`;
+
+exports[`themes fundamentals renders as expected 1`] = `
+<div>
+   
+  <div
+    className="inline-block"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+  >
+    <div
+      aria-describedby="tooltip-4"
+      className="txt-s txt-bold round px6 inline-block cursor-default border"
+      style={
+        Object {
+          "background": "#fff0f7",
+          "borderColor": "#fd8ac0",
+          "color": "#cf1c61",
+        }
+      }
+    >
+      Fundamentals
+    </div>
+    <div
+      className="hide-visually"
+      id="tooltip-4"
+      role="tooltip"
+    >
+      <div
+        className="txt-s wmax120"
+      >
+        The concepts described here are fundamental to using this product.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`themes legacy or warning renders as expected 1`] = `
+<div>
+   
+  <div
+    className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
+    style={
+      Object {
+        "background": "#feefe2",
+        "color": "#945823",
+      }
+    }
+  >
+    <div
+      className="flex-child mr18 none block-mm pt3"
+    >
+      <div
+        className="bg-orange-light round-full color-orange flex-parent flex-parent--center-main flex-parent--center-cross"
+        style={
+          Object {
+            "height": 50,
+            "width": 50,
+          }
+        }
+      >
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": "40",
+              "width": "40",
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-alert"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="flex-child prose"
+    >
+      <div
+        className="txt-bold txt-m mb6"
+      >
+        Legacy
+      </div>
+      legacy note
+    </div>
+  </div>
+  <div
+    className="inline-block"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+  >
+    <div
+      aria-describedby="tooltip-3"
+      className="txt-s txt-bold round px6 inline-block cursor-default border"
+      style={
+        Object {
+          "background": "#feefe2",
+          "borderColor": "#dea573",
+          "color": "#945823",
+        }
+      }
+    >
+      Legacy
+    </div>
+    <div
+      className="hide-visually"
+      id="tooltip-3"
+      role="tooltip"
+    >
+      <div
+        className="txt-s wmax120"
+      >
+        This feature is no longer in active development.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`themes new or beta renders as expected 1`] = `
+<div>
+  <div
+    className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
+    style={
+      Object {
+        "background": "#e8f5ee",
+        "color": "#1b7d4f",
+      }
+    }
+  >
+    <div
+      className="flex-child mr18 none block-mm pt3"
+    >
+      <div
+        className="bg-green-light round-full color-green flex-parent flex-parent--center-main flex-parent--center-cross"
+        style={
+          Object {
+            "height": 50,
+            "width": 50,
+          }
+        }
+      >
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": "40",
+              "width": "40",
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-marker"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="flex-child prose"
+    >
+      <div
+        className="txt-bold txt-m mb6"
+      >
+        Beta
+      </div>
+      Beta note
+    </div>
+  </div>
+   
+  <div
+    className="inline-block"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+  >
+    <div
+      aria-describedby="tooltip-1"
+      className="txt-s txt-bold round px6 inline-block cursor-default border"
+      style={
+        Object {
+          "background": "#e8f5ee",
+          "borderColor": "#75c684",
+          "color": "#1b7d4f",
+        }
+      }
+    >
+      Beta
+    </div>
+    <div
+      className="hide-visually"
+      id="tooltip-1"
+      role="tooltip"
+    >
+      <div
+        className="txt-s wmax120"
+      >
+        This feature is in public beta and is subject to changes.
+      </div>
+    </div>
+  </div>
+   
+  <div
+    className="inline-block"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+  >
+    <div
+      aria-describedby="tooltip-2"
+      className="txt-s txt-bold round px6 inline-block cursor-default border"
+      style={
+        Object {
+          "background": "#e8f5ee",
+          "borderColor": "#75c684",
+          "color": "#1b7d4f",
+        }
+      }
+    >
+      New!
+    </div>
+    <div
+      className="hide-visually"
+      id="tooltip-2"
+      role="tooltip"
+    >
+      <div
+        className="txt-s wmax120"
+      >
+        This feature was released recently.
+      </div>
+    </div>
+  </div>
+</div>
+`;

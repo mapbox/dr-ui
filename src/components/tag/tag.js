@@ -1,66 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Tooltip from '@mapbox/mr-ui/tooltip';
+import themes from '../themes';
 
 export default class Tag extends React.Component {
   render() {
-    let themes = {
-      beta: {
-        label: 'Beta',
-        tooltipText:
-          'This feature is in public beta and is subject to changes.',
-        styles: {
-          background: '#e8f5ee',
-          color: '#1b7d4f',
-          borderColor: '#75c684'
-        }
-      },
-      fundamentals: {
-        label: 'Fundamentals',
-        tooltipText:
-          'The concepts described here are fundamental to using this product.',
-        styles: {
-          background: '#fff0f7',
-          color: '#cf1c61',
-          borderColor: '#fd8ac0'
-        }
-      },
-      legacy: {
-        label: 'Legacy',
-        tooltipText: 'This feature is no longer in active development.',
-        styles: {
-          background: '#feefe2',
-          color: '#9d5d25',
-          borderColor: '#dea573'
-        }
-      },
-      new: {
-        label: 'New!',
-        tooltipText: 'This feature was released recently.',
-        styles: {
-          background: '#e8f5ee',
-          color: '#1b7d4f',
-          borderColor: '#75c684'
-        }
-      },
-      custom: {
-        label: this.props.customLabel,
-        tooltipText: this.props.customTooltipText,
-        styles: this.props.customStyles
-      }
+    const theme = themes[this.props.theme] || {
+      label: this.props.customLabel,
+      tooltipText: this.props.customTooltipText,
+      styles: this.props.customStyles
     };
 
     return (
-      <Tooltip
-        content={themes[this.props.theme].tooltipText}
-        maxWidth="small"
-        placement="top"
-      >
+      <Tooltip content={theme.tooltipText} maxWidth="small" placement="top">
         <div
-          style={themes[this.props.theme].styles}
+          style={theme.styles}
           className="txt-s txt-bold round px6 inline-block cursor-default border"
         >
-          {themes[this.props.theme].label}
+          {theme.label}
         </div>
       </Tooltip>
     );
