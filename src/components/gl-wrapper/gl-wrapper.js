@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import supported from '@mapbox/mapbox-gl-supported';
 import Note from '../note';
-import WarningImage from '../warning-image';
 
 export default class GLWrapper extends React.Component {
   constructor(props) {
@@ -20,11 +19,7 @@ export default class GLWrapper extends React.Component {
     return this.state.supported ? (
       this.props.children
     ) : (
-      <Note
-        title="Mapbox GL unsupported"
-        theme="warning"
-        imageComponent={<WarningImage color="orange" />}
-      >
+      <Note title="Mapbox GL unsupported" theme="warning">
         Mapbox GL requires{' '}
         <a className="link" href="https://caniuse.com/#feat=webgl">
           WebGL support
