@@ -10,7 +10,7 @@ exports[`back-top-top-button Basic renders as expected 1`] = `
 >
   <div
     aria-describedby="tooltip-1"
-    className="txt-s txt-bold round px6 ml6 inline-block cursor-default border border--green-light"
+    className="txt-s txt-bold round px6 inline-block cursor-default border border--green-light"
     style={
       Object {
         "backgroundColor": "rgb(232, 245, 238)",

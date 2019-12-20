@@ -1,5 +1,6 @@
 import React from 'react';
 import NavigationAccordion from '../navigation-accordion';
+import BetaFlag from '../../beta-flag/beta-flag';
 
 const testCases = {};
 
@@ -64,20 +65,10 @@ testCases.withThirdLevelItems = {
       firstLevelItems: [
         {
           title: 'Title one',
-          tag: (
-            <div className="inline-block ml12 txt-xs txt-bold txt-uppercase px6 round color-pink bg-pink-faint">
-              Fundamentals
-            </div>
-          ),
           path: 'page-one'
         },
         {
           title: 'Title two',
-          tag: (
-            <div className="inline-block ml12 txt-xs txt-bold txt-uppercase px6 round color-blue bg-blue-faint">
-              Advanced
-            </div>
-          ),
           path: 'page-two'
         }
       ],
@@ -88,7 +79,7 @@ testCases.withThirdLevelItems = {
           thirdLevelItems: [
             {
               title: 'Subheading one',
-              path: 'subheading-one'
+              path: ''
             },
             {
               title: 'Subheading two',
@@ -98,6 +89,50 @@ testCases.withThirdLevelItems = {
         },
         {
           title: 'Heading two',
+          path: 'heading-two'
+        }
+      ]
+    },
+    onDropdownChange: () => {}
+  }
+};
+
+testCases.withTags = {
+  description: 'Titles with tags',
+  component: NavigationAccordion,
+  props: {
+    currentPath: 'page-one',
+    contents: {
+      firstLevelItems: [
+        {
+          title: 'Title one',
+          path: 'page-one'
+        },
+        {
+          title: 'Title two',
+          tag: <BetaFlag />,
+          path: 'page-two'
+        }
+      ],
+      secondLevelItems: [
+        {
+          title: 'Heading one',
+          path: 'heading-one',
+          thirdLevelItems: [
+            {
+              title: 'Subheading one',
+              tag: <BetaFlag />,
+              path: ''
+            },
+            {
+              title: 'Subheading two',
+              path: 'subheading-two'
+            }
+          ]
+        },
+        {
+          title: 'Heading two',
+          tag: <BetaFlag />,
           path: 'heading-two'
         }
       ]

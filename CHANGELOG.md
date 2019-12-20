@@ -4,6 +4,7 @@
 
 * Add IE11 compatibility for the `Search` component.
 * Update `BetaFlag` component styling. [#207](https://github.com/mapbox/dr-ui/pull/207)
+* Add an optional `tag` prop for second and third level headings in `NavigationAccordion`. [#212](https://github.com/mapbox/dr-ui/pull/212)
 
 ## 0.24.0
 
