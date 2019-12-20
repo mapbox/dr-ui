@@ -81,7 +81,6 @@ testCases.error = {
     'A note to display an error with steps or links on how to troubleshoot.',
   props: {
     theme: 'error',
-    title: 'Error',
     children: (
       <p>
         Did something not go as planned? Check out the{' '}
@@ -97,7 +96,6 @@ testCases.new = {
     'A note to display with a message about new products or features.',
   props: {
     theme: 'new',
-    title: 'New!',
     children: (
       <p>
         Style components in Mapbox Studio are now available in public beta for
@@ -113,7 +111,6 @@ testCases.beta = {
   description: 'A note to flag information about a beta release/product',
   props: {
     theme: 'beta',
-    title: 'Public Beta',
     children: (
       <p>
         Style components in Mapbox Studio are now available in public beta for
