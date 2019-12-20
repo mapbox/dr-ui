@@ -4,6 +4,7 @@ import classnames from 'classnames';
 import Icon from '@mapbox/mr-ui/icon';
 import NavigationDropdown from '../navigation-dropdown/navigation-dropdown';
 import debounce from 'debounce';
+import Tag from '../tag/tag';
 
 const debounceVal = 50;
 
@@ -78,7 +79,9 @@ class NavigationAccordion extends React.PureComponent {
                 <a href={`#${subItem.path}`} className={itemClasses(isActive)}>
                   {subItem.title}
                   {subItem.tag ? (
-                    <span className="ml6">{subItem.tag}</span>
+                    <span className="ml6">
+                      <Tag theme={subItem.tag} />
+                    </span>
                   ) : (
                     ''
                   )}
@@ -90,7 +93,13 @@ class NavigationAccordion extends React.PureComponent {
           <li key={item.path} className="mb6">
             <a href={`#${item.path}`} className={itemClasses(isActive)}>
               {item.title}
-              {item.tag ? <span className="ml6">{item.tag}</span> : ''}
+              {item.tag ? (
+                <span className="ml6">
+                  <Tag theme={item.tag} />
+                </span>
+              ) : (
+                ''
+              )}
             </a>
             <ul className={openSubItems ? 'pl12 color-darken75' : 'none'}>
               {subItems}
@@ -142,7 +151,13 @@ class NavigationAccordion extends React.PureComponent {
               >
                 <div className={textClasses}>
                   {title}
-                  {page.tag ? <span className="ml6">{page.tag}</span> : ''}
+                  {page.tag ? (
+                    <span className="ml6">
+                      <Tag theme={page.tag} />
+                    </span>
+                  ) : (
+                    ''
+                  )}
                 </div>
                 {icon}
               </a>
@@ -173,19 +188,37 @@ NavigationAccordion.propTypes = {
     firstLevelItems: PropTypes.arrayOf(
       PropTypes.shape({
         title: PropTypes.string.isRequired,
-        tag: PropTypes.node,
+        tag: PropTypes.oneOf([
+          'legacy',
+          'beta',
+          'fundamentals',
+          'new',
+          'custom'
+        ]),
         path: PropTypes.string.isRequired
       })
     ).isRequired,
     secondLevelItems: PropTypes.arrayOf(
       PropTypes.shape({
         title: PropTypes.string.isRequired,
-        tag: PropTypes.node,
+        tag: PropTypes.oneOf([
+          'legacy',
+          'beta',
+          'fundamentals',
+          'new',
+          'custom'
+        ]),
         path: PropTypes.string.isRequired,
         thirdLevelItems: PropTypes.arrayOf(
           PropTypes.shape({
             title: PropTypes.string.isRequired,
-            tag: PropTypes.node,
+            tag: PropTypes.oneOf([
+              'legacy',
+              'beta',
+              'fundamentals',
+              'new',
+              'custom'
+            ]),
             path: PropTypes.string.isRequired
           })
         )

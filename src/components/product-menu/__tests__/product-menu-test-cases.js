@@ -48,7 +48,7 @@ testCases.beta = {
   description: 'Beta product',
   props: {
     productName: 'Vision SDK for Android',
-    beta: true,
+    tag: 'beta',
     homePage: '/vision/'
   }
 };

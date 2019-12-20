@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`back-top-top-button Basic renders as expected 1`] = `
+exports[`back-top-top-button Beta tag renders as expected 1`] = `
 <div
   className="inline-block"
   onBlur={[Function]}
@@ -10,11 +10,12 @@ exports[`back-top-top-button Basic renders as expected 1`] = `
 >
   <div
     aria-describedby="tooltip-1"
-    className="txt-s txt-bold round px6 inline-block cursor-default border border--green-light"
+    className="txt-s txt-bold round px6 inline-block cursor-default border"
     style={
       Object {
-        "backgroundColor": "rgb(232, 245, 238)",
-        "color": "rgb(27, 125, 79)",
+        "background": "#e8f5ee",
+        "borderColor": "#75c684",
+        "color": "#1b7d4f",
       }
     }
   >

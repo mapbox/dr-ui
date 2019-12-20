@@ -1,6 +1,4 @@
-import React from 'react';
 import NavigationAccordion from '../navigation-accordion';
-import BetaFlag from '../../beta-flag/beta-flag';
 
 const testCases = {};
 
@@ -110,7 +108,7 @@ testCases.withTags = {
         },
         {
           title: 'Title two',
-          tag: <BetaFlag />,
+          tag: 'beta',
           path: 'page-two'
         }
       ],
@@ -121,7 +119,7 @@ testCases.withTags = {
           thirdLevelItems: [
             {
               title: 'Subheading one',
-              tag: <BetaFlag />,
+              tag: 'legacy',
               path: ''
             },
             {
@@ -132,7 +130,7 @@ testCases.withTags = {
         },
         {
           title: 'Heading two',
-          tag: <BetaFlag />,
+          tag: 'fundamentals',
           path: 'heading-two'
         }
       ]

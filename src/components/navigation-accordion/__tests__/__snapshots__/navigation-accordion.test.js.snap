@@ -475,15 +475,16 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
                       >
                         <div
                           aria-describedby="tooltip-1"
-                          className="txt-s txt-bold round px6 inline-block cursor-default border border--green-light"
+                          className="txt-s txt-bold round px6 inline-block cursor-default border"
                           style={
                             Object {
-                              "backgroundColor": "rgb(232, 245, 238)",
-                              "color": "rgb(27, 125, 79)",
+                              "background": "#feefe2",
+                              "borderColor": "#dea573",
+                              "color": "#9d5d25",
                             }
                           }
                         >
-                          Beta
+                          Legacy
                         </div>
                         <div
                           className="hide-visually"
@@ -493,7 +494,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
                           <div
                             className="txt-s wmax120"
                           >
-                            This feature is in public beta and is subject to changes.
+                            This feature is no longer in active development.
                           </div>
                         </div>
                       </div>
@@ -533,15 +534,16 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
                   >
                     <div
                       aria-describedby="tooltip-2"
-                      className="txt-s txt-bold round px6 inline-block cursor-default border border--green-light"
+                      className="txt-s txt-bold round px6 inline-block cursor-default border"
                       style={
                         Object {
-                          "backgroundColor": "rgb(232, 245, 238)",
-                          "color": "rgb(27, 125, 79)",
+                          "background": "#fff0f7",
+                          "borderColor": "#fd8ac0",
+                          "color": "#cf1c61",
                         }
                       }
                     >
-                      Beta
+                      Fundamentals
                     </div>
                     <div
                       className="hide-visually"
@@ -551,7 +553,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
                       <div
                         className="txt-s wmax120"
                       >
-                        This feature is in public beta and is subject to changes.
+                        The concepts described here are fundamental to using this product.
                       </div>
                     </div>
                   </div>
@@ -591,11 +593,12 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
               >
                 <div
                   aria-describedby="tooltip-3"
-                  className="txt-s txt-bold round px6 inline-block cursor-default border border--green-light"
+                  className="txt-s txt-bold round px6 inline-block cursor-default border"
                   style={
                     Object {
-                      "backgroundColor": "rgb(232, 245, 238)",
-                      "color": "rgb(27, 125, 79)",
+                      "background": "#e8f5ee",
+                      "borderColor": "#75c684",
+                      "color": "#1b7d4f",
                     }
                   }
                 >

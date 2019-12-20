@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Icon from '@mapbox/mr-ui/icon';
-import BetaFlag from '../beta-flag/beta-flag';
+import Tag from '../tag/tag';
 
 class OverviewHeader extends React.PureComponent {
   renderVersion() {
@@ -92,12 +92,12 @@ class OverviewHeader extends React.PureComponent {
       <div className="scroll-hidden border-b border--gray-light prose mb24">
         <h1 className="mb6 txt-fancy">
           {props.title}
-          {props.beta ? (
+          {props.tag ? (
             <span
               className="ml12 inline-block relative"
               style={{ top: '-7px' }}
             >
-              <BetaFlag />
+              <Tag theme={props.tag} />
             </span>
           ) : (
             ''
@@ -123,17 +123,13 @@ class OverviewHeader extends React.PureComponent {
 OverviewHeader.propTypes = {
   features: PropTypes.arrayOf(PropTypes.string).isRequired,
   title: PropTypes.string.isRequired,
-  beta: PropTypes.bool,
+  tag: PropTypes.oneOf(['legacy', 'beta', 'fundamentals', 'new', 'custom']),
   image: PropTypes.node.isRequired,
   version: PropTypes.string,
   changelogLink: PropTypes.string, // creates a "View changelog" link
   installLink: PropTypes.string, // creates a "Install" button
   ghLink: PropTypes.string, // creates a "Contribute on GitHub" link
   contactLink: PropTypes.string // creates a "Contact us" button
-};
-
-OverviewHeader.defaultProps = {
-  beta: false
 };
 
 export default OverviewHeader;

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BetaFlag from '../beta-flag/beta-flag';
+import Tag from '../tag/tag';
 
 class ProductMenu extends React.PureComponent {
   render() {
@@ -15,9 +15,9 @@ class ProductMenu extends React.PureComponent {
         }`}
       >
         {props.productName}
-        {props.beta ? (
+        {props.tag ? (
           <span className="inline-block ml6 relative" style={{ top: '-2px' }}>
-            <BetaFlag />
+            <Tag theme={props.tag} />
           </span>
         ) : (
           ''
@@ -30,13 +30,12 @@ class ProductMenu extends React.PureComponent {
 ProductMenu.propTypes = {
   productName: PropTypes.oneOfType([PropTypes.string, PropTypes.node])
     .isRequired,
-  beta: PropTypes.bool,
+  tag: PropTypes.oneOf(['legacy', 'beta', 'fundamentals', 'new', 'custom']),
   lightText: PropTypes.bool,
   homePage: PropTypes.string.isRequired
 };
 
 ProductMenu.defaultProps = {
-  beta: false,
   lightText: false
 };
 

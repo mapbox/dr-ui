@@ -67,7 +67,7 @@ testCases.beta = {
   props: {
     features: ['Chips', 'Tots', 'Fries'],
     title: 'Mapbox Potato SDK',
-    beta: true,
+    tag: 'beta',
     image: (
       <img
         width={800}

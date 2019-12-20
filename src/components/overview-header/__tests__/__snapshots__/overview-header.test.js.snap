@@ -549,11 +549,12 @@ exports[`overview-header Beta product renders as expected 1`] = `
       >
         <div
           aria-describedby="tooltip-1"
-          className="txt-s txt-bold round px6 inline-block cursor-default border border--green-light"
+          className="txt-s txt-bold round px6 inline-block cursor-default border"
           style={
             Object {
-              "backgroundColor": "rgb(232, 245, 238)",
-              "color": "rgb(27, 125, 79)",
+              "background": "#e8f5ee",
+              "borderColor": "#75c684",
+              "color": "#1b7d4f",
             }
           }
         >
