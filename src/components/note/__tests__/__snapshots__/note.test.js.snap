@@ -1,5 +1,60 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`note A legacy note, has same styling as warning renders as expected 1`] = `
+<div
+  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
+  style={
+    Object {
+      "background": "#feefe2",
+      "color": "#945823",
+    }
+  }
+>
+  <div
+    className="flex-child mr12"
+  >
+    <div
+      className="bg-orange-light round-full color-orange flex-parent flex-parent--center-main flex-parent--center-cross"
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
+    >
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": "40",
+            "width": "40",
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-alert"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="flex-child prose"
+  >
+    <div
+      className="txt-bold txt-m mb6"
+    >
+      Warning
+    </div>
+    <p>
+      This is a legacy product.
+    </p>
+  </div>
+</div>
+`;
+
 exports[`note A note to display an error with steps or links on how to troubleshoot. renders as expected 1`] = `
 <div
   className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
@@ -109,6 +164,61 @@ exports[`note A note to display with a message about new products or features. r
       className="txt-bold txt-m mb6"
     >
       New!
+    </div>
+    <p>
+      Style components in Mapbox Studio are now available in public beta for every user. To start building, log in to Studio or sign up for an account to start making your first map.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`note A note to flag information about a beta release/product renders as expected 1`] = `
+<div
+  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
+  style={
+    Object {
+      "background": "#e8f5ee",
+      "color": "#1b7d4f",
+    }
+  }
+>
+  <div
+    className="flex-child mr12"
+  >
+    <div
+      className="bg-green-light round-full color-green flex-parent flex-parent--center-main flex-parent--center-cross"
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
+    >
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": "40",
+            "width": "40",
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-marker"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="flex-child prose"
+  >
+    <div
+      className="txt-bold txt-m mb6"
+    >
+      Beta
     </div>
     <p>
       Style components in Mapbox Studio are now available in public beta for every user. To start building, log in to Studio or sign up for an account to start making your first map.
@@ -311,6 +421,61 @@ exports[`note Note with custom title. renders as expected 1`] = `
         Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod.
       </p>
     </div>
+  </div>
+</div>
+`;
+
+exports[`note download renders as expected 1`] = `
+<div
+  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
+  style={
+    Object {
+      "background": "#f2effa",
+      "color": "#5a3fc0",
+    }
+  }
+>
+  <div
+    className="flex-child mr12"
+  >
+    <div
+      className="bg-purple-light round-full color-purple flex-parent flex-parent--center-main flex-parent--center-cross"
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
+    >
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": "40",
+            "width": "40",
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-arrow-down"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="flex-child prose"
+  >
+    <div
+      className="txt-bold txt-m mb6"
+    >
+      Download from vision.mapbox.com/install
+    </div>
+    <p>
+      You must download the relevant dependencies from vision.mapbox.com/install before continuing. You can download the dependency directly or import it into your project using Maven. This will require that you are logged into your Mapbox account.
+    </p>
   </div>
 </div>
 `;
