@@ -349,7 +349,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
         ref={this.onContainerElement}
         style={{ ...containerStyles, backgroundColor: '#f4f7fb' }}
       >
-        <pre className="mt-neg12 pt12 ml-neg12 pl12 mobile-snippet">
+        <pre className="mt-neg12 pt12 ml-neg12 pl12 mobile-snippet txt-break-word">
           <code className={codeClasses}>{codeElements}</code>
         </pre>
         {copyAllButton}

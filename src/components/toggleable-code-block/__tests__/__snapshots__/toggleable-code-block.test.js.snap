@@ -160,7 +160,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
     }
   >
     <pre
-      className="mt-neg12 pt12 ml-neg12 pl12 mobile-snippet"
+      className="mt-neg12 pt12 ml-neg12 pl12 mobile-snippet txt-break-word"
     >
       <code
         className="px0 hljs"
