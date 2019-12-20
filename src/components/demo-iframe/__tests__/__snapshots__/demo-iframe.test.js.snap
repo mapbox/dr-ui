@@ -51,7 +51,7 @@ exports[`demo-iframe Basic renders as expected 1`] = `
   }
 >
   <div
-    className="flex-child mr12"
+    className="flex-child mr18 none block-mm pt3"
   >
     <div
       className="bg-orange-light round-full color-orange flex-parent flex-parent--center-main flex-parent--center-cross"
@@ -122,7 +122,7 @@ exports[`demo-iframe With token renders as expected 1`] = `
   }
 >
   <div
-    className="flex-child mr12"
+    className="flex-child mr18 none block-mm pt3"
   >
     <div
       className="bg-orange-light round-full color-orange flex-parent flex-parent--center-main flex-parent--center-cross"

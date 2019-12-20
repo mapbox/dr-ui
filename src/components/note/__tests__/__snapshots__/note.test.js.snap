@@ -11,7 +11,7 @@ exports[`note A legacy note, has same styling as warning renders as expected 1`]
   }
 >
   <div
-    className="flex-child mr12"
+    className="flex-child mr18 none block-mm pt3"
   >
     <div
       className="bg-orange-light round-full color-orange flex-parent flex-parent--center-main flex-parent--center-cross"
@@ -66,7 +66,7 @@ exports[`note A note to display an error with steps or links on how to troublesh
   }
 >
   <div
-    className="flex-child mr12"
+    className="flex-child mr18 none block-mm pt3"
   >
     <div
       className="bg-red-light round-full color-red flex-parent flex-parent--center-main flex-parent--center-cross"
@@ -128,7 +128,7 @@ exports[`note A note to display with a message about new products or features. r
   }
 >
   <div
-    className="flex-child mr12"
+    className="flex-child mr18 none block-mm pt3"
   >
     <div
       className="bg-green-light round-full color-green flex-parent flex-parent--center-main flex-parent--center-cross"
@@ -183,7 +183,7 @@ exports[`note A note to flag information about a beta release/product renders as
   }
 >
   <div
-    className="flex-child mr12"
+    className="flex-child mr18 none block-mm pt3"
   >
     <div
       className="bg-green-light round-full color-green flex-parent flex-parent--center-main flex-parent--center-cross"
@@ -238,7 +238,7 @@ exports[`note A warning note to let the user know something has changed or will 
   }
 >
   <div
-    className="flex-child mr12"
+    className="flex-child mr18 none block-mm pt3"
   >
     <div
       className="bg-orange-light round-full color-orange flex-parent flex-parent--center-main flex-parent--center-cross"
@@ -293,7 +293,7 @@ exports[`note Default note renders as expected 1`] = `
   }
 >
   <div
-    className="flex-child mr12"
+    className="flex-child mr18 none block-mm pt3"
   >
     <div
       className="bg-gray-light round-full color-gray flex-parent flex-parent--center-main flex-parent--center-cross"
@@ -373,7 +373,7 @@ exports[`note Note with custom title. renders as expected 1`] = `
   }
 >
   <div
-    className="flex-child mr12"
+    className="flex-child mr18 none block-mm pt3"
   >
     <div
       className="bg-gray-light round-full color-gray flex-parent flex-parent--center-main flex-parent--center-cross"
@@ -436,7 +436,7 @@ exports[`note download renders as expected 1`] = `
   }
 >
   <div
-    className="flex-child mr12"
+    className="flex-child mr18 none block-mm pt3"
   >
     <div
       className="bg-purple-light round-full color-purple flex-parent flex-parent--center-main flex-parent--center-cross"

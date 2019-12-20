@@ -70,7 +70,11 @@ class Note extends React.Component {
           color: themes[theme].color
         }}
       >
-        {image && <div className="flex-child mr12">{themes[theme].image}</div>}
+        {image && (
+          <div className="flex-child mr18 none block-mm pt3">
+            {themes[theme].image}
+          </div>
+        )}
         <div className="flex-child prose">
           <div className="txt-bold txt-m mb6">
             {title || themes[theme].title}

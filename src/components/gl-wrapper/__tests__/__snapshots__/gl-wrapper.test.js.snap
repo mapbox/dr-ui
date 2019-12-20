@@ -11,7 +11,7 @@ exports[`gl-wrapper Basic renders as expected 1`] = `
   }
 >
   <div
-    className="flex-child mr12"
+    className="flex-child mr18 none block-mm pt3"
   >
     <div
       className="bg-orange-light round-full color-orange flex-parent flex-parent--center-main flex-parent--center-cross"
