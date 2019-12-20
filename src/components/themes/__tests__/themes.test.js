@@ -1,15 +1,41 @@
 import renderer from 'react-test-renderer';
+import ColorContrastChecker from 'color-contrast-checker';
 import { testCases } from './themes-test-cases';
 import themes from '../themes';
 
+const ccc = new ColorContrastChecker();
+
 describe('themes', () => {
   Object.keys(themes).forEach(theme => {
-    test(`theme: ${theme}`, () => {
-      expect(themes[theme].label).toBeDefined();
-      expect(themes[theme].styles).toBeDefined();
-      expect(typeof themes[theme].styles).toBe('object');
-      expect(themes[theme].styles.background).toBeDefined();
-      expect(themes[theme].styles.color).toBeDefined();
+    describe(`theme: ${theme}`, () => {
+      test('has label', () => {
+        expect(themes[theme].label).toBeDefined();
+        expect(
+          themes[theme].label[0].toUpperCase() === themes[theme].label[0]
+        ).toBeTruthy();
+      });
+
+      if (themes[theme].tooltipText) {
+        test('tooltipText ends with period', () => {
+          expect(themes[theme].tooltipText.endsWith('.')).toBeTruthy();
+        });
+      }
+
+      test('has styles', () => {
+        expect(themes[theme].styles).toBeDefined();
+        expect(typeof themes[theme].styles).toBe('object');
+        expect(themes[theme].styles.background).toBeDefined();
+        expect(themes[theme].styles.color).toBeDefined();
+      });
+
+      test(`styles color and background contrast is WCAG AA compliant`, () => {
+        expect(
+          ccc.isLevelAA(
+            themes[theme].styles.color,
+            themes[theme].styles.background
+          )
+        ).toBeTruthy();
+      });
     });
   });
 
