@@ -80,8 +80,8 @@ class RelatedPage extends React.Component {
             </div>
           </div>
           <div
+            className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
             style={{ borderColor: 'inherit', borderLeftWidth: '2px' }}
-            className={`flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l`}
           >
             <Icon name="chevron-right" size={30} />
           </div>
