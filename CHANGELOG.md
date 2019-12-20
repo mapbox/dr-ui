@@ -1,5 +1,9 @@
 # Changelog
 
+## master
+
+* Add IE11 compatibility for the `Search` component.
+
 ## 0.24.0
 
 * Add Sentry to `Feedback` component for text feedback issue management. [#198](https://github.com/mapbox/dr-ui/pull/198)
