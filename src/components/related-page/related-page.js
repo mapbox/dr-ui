@@ -9,17 +9,11 @@ class RelatedPage extends React.Component {
   render() {
     const { props } = this;
     const contentTypes = {
-      base: {
-        // applied to every note
-        padding: '18px',
-        fontSize: '13px',
-        lineHeight: '20px',
-        borderRadius: '4px'
-      },
       tutorial: {
         label: 'tutorial',
         image: <BookletImage />,
-        color: 'green'
+        color: 'green',
+        a11yColor: '#1b7d4f'
       },
       troubleshooting: {
         label: 'troubleshooting',
@@ -34,67 +28,72 @@ class RelatedPage extends React.Component {
       glossary: {
         label: 'glossary',
         image: <div className="round w60 h60 bg-orange-light" />,
-        color: 'orange'
+        color: 'orange',
+        a11yColor: '#a7662c'
       },
       example: {
         label: 'example',
         image: <div className="round w60 h60 bg-pink-light" />,
         color: 'pink'
       },
-      fallback: {
-        label: 'related doc',
-        image: <div />,
+      default: {
+        label: 'related',
         color: 'gray'
       }
     };
 
+    const theme = contentTypes[this.props.contentType];
+
     return (
-      <div>
-        <a
-          href={props.url}
-          className={`unprose block cursor-pointer color-${
-            contentTypes[props.contentType || 'fallback'].color
-          } color-${
-            contentTypes[props.contentType || 'fallback'].color
-          }-dark-on-hover`}
+      <a
+        href={props.url}
+        className={`unprose block cursor-pointer color-${theme.color} color-${
+          theme.color
+        }-dark-on-hover transition mb18`}
+      >
+        <div
+          className={`round flex-parent flex-parent--stretch-cross border border--${
+            theme.color
+          }-light border--${theme.color}-dark-on-hover border--2 transition`}
         >
-          <div
-            className={`flex-parent flex-parent--stretch-cross border border-color-${
-              contentTypes[props.contentType || 'fallback'].color
-            } border-color-${
-              contentTypes[props.contentType || 'fallback'].color
-            }-dark-on-hover`}
-            style={{
-              fontSize: '13px',
-              lineHeight: '20px',
-              borderRadius: '4px'
-            }}
-          >
-            <div className="flex-child flex-child--grow px12 py12">
-              <div className="flex-parent flex-parent--row">
-                <div className="flex-child mr12">
-                  {contentTypes[props.contentType || 'fallback'].image}
+          <div className="flex-child flex-child--grow px18 pt30 pb18">
+            <div className="flex-parent flex-parent--row">
+              {theme.image && (
+                <div className="flex-child pt6 mr18 none block-mm">
+                  {theme.image}
                 </div>
-                <div className="flex-child">
-                  <div className="txt-fancy txt-uppercase">
-                    {contentTypes[props.contentType || 'fallback'].label}
-                  </div>
-                  <div className="color-gray-dark color-black-on-hover">
-                    <div className="txt-bold">{props.title}</div>
-                    {props.description && props.description}
-                  </div>
+              )}
+              <div className="flex-child">
+                <div
+                  style={{ color: theme.a11yColor }}
+                  className={`txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 ${
+                    !theme.a11yColor ? `color-${theme.color}-dark` : ''
+                  }`}
+                >
+                  {theme.label}
+                </div>
+                <div className="color-gray-dark color-black-on-hover transition">
+                  <div className="txt-bold">{props.title}</div>
+                  {props.description && props.description}
                 </div>
               </div>
             </div>
-            <div className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l">
-              <Icon name="chevron-right" size={30} />
-            </div>
           </div>
-        </a>
-      </div>
+          <div
+            className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+            style={{ borderColor: 'inherit', borderLeftWidth: '2px' }}
+          >
+            <Icon name="chevron-right" size={30} />
+          </div>
+        </div>
+      </a>
     );
   }
 }
+
+RelatedPage.defaultProps = {
+  contentType: 'default'
+};
 
 RelatedPage.propTypes = {
   contentType: PropTypes.oneOf([
@@ -102,7 +101,8 @@ RelatedPage.propTypes = {
     'glossary',
     'guide',
     'tutorial',
-    'troubleshooting'
+    'troubleshooting',
+    'default'
   ]),
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
