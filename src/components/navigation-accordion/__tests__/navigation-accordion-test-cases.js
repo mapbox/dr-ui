@@ -2,12 +2,6 @@ import React from 'react';
 import NavigationAccordion from '../navigation-accordion';
 import BetaFlag from '../../beta-flag/beta-flag';
 
-const BetaFlagWithMargin = (
-  <span className="ml6">
-    <BetaFlag />
-  </span>
-);
-
 const testCases = {};
 
 testCases.basic = {
@@ -116,7 +110,7 @@ testCases.withTags = {
         },
         {
           title: 'Title two',
-          tag: BetaFlagWithMargin,
+          tag: <BetaFlag />,
           path: 'page-two'
         }
       ],
@@ -127,7 +121,7 @@ testCases.withTags = {
           thirdLevelItems: [
             {
               title: 'Subheading one',
-              tag: BetaFlagWithMargin,
+              tag: <BetaFlag />,
               path: ''
             },
             {
@@ -138,7 +132,7 @@ testCases.withTags = {
         },
         {
           title: 'Heading two',
-          tag: BetaFlagWithMargin,
+          tag: <BetaFlag />,
           path: 'heading-two'
         }
       ]

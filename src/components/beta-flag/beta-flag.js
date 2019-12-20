@@ -15,7 +15,7 @@ export default class BetaFlag extends React.Component {
             backgroundColor: 'rgb(232, 245, 238)',
             color: 'rgb(27, 125, 79)'
           }}
-          className="txt-s txt-bold round px6 ml6 inline-block cursor-default border border--green-light"
+          className="txt-s txt-bold round px6 inline-block cursor-default border border--green-light"
         >
           Beta
         </div>
