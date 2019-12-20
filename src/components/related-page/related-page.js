@@ -4,6 +4,8 @@ import Icon from '@mapbox/mr-ui/icon';
 import TroubleshootImage from '../troubleshoot-image/troubleshoot-image';
 import BookletImage from '../booklet-image/booklet-image';
 import BookImage from '../book-image/book-image';
+import GlossaryImage from '../glossary-image/glossary-image';
+import ExampleImage from '../example-image/example-image';
 
 class RelatedPage extends React.Component {
   render() {
@@ -27,13 +29,13 @@ class RelatedPage extends React.Component {
       },
       glossary: {
         label: 'glossary',
-        image: <div className="round w60 h60 bg-orange-light" />,
+        image: <GlossaryImage />,
         color: 'orange',
         a11yColor: '#a7662c'
       },
       example: {
         label: 'example',
-        image: <div className="round w60 h60 bg-pink-light" />,
+        image: <ExampleImage />,
         color: 'pink'
       },
       default: {

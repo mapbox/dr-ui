@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`glossary-image Basic renders as expected 1`] = `
+<svg
+  height={60}
+  viewBox="0 0 108 108"
+  width={60}
+>
+  <circle
+    cx="50"
+    cy="50"
+    fill="#FFCC99"
+    r="50"
+  />
+  <ellipse
+    cx="38.2"
+    cy="42"
+    fill="#EF882B"
+    rx="21.4"
+    ry="21.4"
+    transform="matrix(0.6389 -0.7693 0.7693 0.6389 -18.4907 44.561)"
+  />
+  <path
+    d="M50,51.5l0.5-0.6c1.4-1.6,3.8-1.9,5.4-0.5l21.7,18c1.6,1.4,1.9,3.8,0.5,5.4l-0.5,0.6 c-1.4,1.6-3.8,1.9-5.4,0.5l-21.7-18C48.8,55.6,48.6,53.1,50,51.5z"
+    fill="#FCA148"
+  />
+  <path
+    d="M61.1,65.6l4.8-5.8c1.4-1.6,3.8-1.9,5.4-0.5l12.3,10.2c1.6,1.4,1.9,3.8,0.5,5.4l-4.8,5.8 c-1.4,1.6-3.8,1.9-5.4,0.5L61.6,71C59.9,69.7,59.7,67.3,61.1,65.6z"
+    fill="#FF9933"
+  />
+  <ellipse
+    cx="36.4"
+    cy="39.3"
+    fill="#FCA148"
+    rx="21.4"
+    ry="21.4"
+    transform="matrix(0.6389 -0.7693 0.7693 0.6389 -17.0778 42.2176)"
+  />
+  <ellipse
+    cx="36"
+    cy="38.9"
+    fill="#FFFFFF"
+    rx="14.7"
+    ry="14.7"
+    transform="matrix(0.6389 -0.7693 0.7693 0.6389 -16.897 41.7131)"
+  />
+  <path
+    d="M69.5,63.2l7.9,6.6"
+    fill="none"
+    stroke="#F8B854"
+    strokeLinecap="round"
+    strokeMiterlimit="10"
+    strokeWidth="4"
+  />
+  <path
+    d="M36.2,33.5l-5.7,10.3 M36.6,33.5l5.7,10.3 M32.9,42l7.1,0"
+    fill="none"
+    stroke="#FF9933"
+    strokeLinecap="round"
+    strokeMiterlimit="10"
+    strokeWidth="4"
+  />
+</svg>
+`;
+
+exports[`glossary-image Bigger renders as expected 1`] = `
+<svg
+  height={120}
+  viewBox="0 0 108 108"
+  width={120}
+>
+  <circle
+    cx="50"
+    cy="50"
+    fill="#FFCC99"
+    r="50"
+  />
+  <ellipse
+    cx="38.2"
+    cy="42"
+    fill="#EF882B"
+    rx="21.4"
+    ry="21.4"
+    transform="matrix(0.6389 -0.7693 0.7693 0.6389 -18.4907 44.561)"
+  />
+  <path
+    d="M50,51.5l0.5-0.6c1.4-1.6,3.8-1.9,5.4-0.5l21.7,18c1.6,1.4,1.9,3.8,0.5,5.4l-0.5,0.6 c-1.4,1.6-3.8,1.9-5.4,0.5l-21.7-18C48.8,55.6,48.6,53.1,50,51.5z"
+    fill="#FCA148"
+  />
+  <path
+    d="M61.1,65.6l4.8-5.8c1.4-1.6,3.8-1.9,5.4-0.5l12.3,10.2c1.6,1.4,1.9,3.8,0.5,5.4l-4.8,5.8 c-1.4,1.6-3.8,1.9-5.4,0.5L61.6,71C59.9,69.7,59.7,67.3,61.1,65.6z"
+    fill="#FF9933"
+  />
+  <ellipse
+    cx="36.4"
+    cy="39.3"
+    fill="#FCA148"
+    rx="21.4"
+    ry="21.4"
+    transform="matrix(0.6389 -0.7693 0.7693 0.6389 -17.0778 42.2176)"
+  />
+  <ellipse
+    cx="36"
+    cy="38.9"
+    fill="#FFFFFF"
+    rx="14.7"
+    ry="14.7"
+    transform="matrix(0.6389 -0.7693 0.7693 0.6389 -16.897 41.7131)"
+  />
+  <path
+    d="M69.5,63.2l7.9,6.6"
+    fill="none"
+    stroke="#F8B854"
+    strokeLinecap="round"
+    strokeMiterlimit="10"
+    strokeWidth="4"
+  />
+  <path
+    d="M36.2,33.5l-5.7,10.3 M36.6,33.5l5.7,10.3 M32.9,42l7.1,0"
+    fill="none"
+    stroke="#FF9933"
+    strokeLinecap="round"
+    strokeMiterlimit="10"
+    strokeWidth="4"
+  />
+</svg>
+`;
