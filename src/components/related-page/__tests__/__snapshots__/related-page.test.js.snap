@@ -1,0 +1,474 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`related-page example renders as expected 1`] = `
+<div>
+  <a
+    className="unprose block cursor-pointer color-pink color-pink-dark-on-hover"
+    href="https://docs.mapbox.com/android/maps/examples/add-a-vector-tile-source/"
+  >
+    <div
+      className="flex-parent flex-parent--stretch-cross border border-color-pink border-color-pink-dark-on-hover"
+      style={
+        Object {
+          "borderRadius": "4px",
+          "fontSize": "13px",
+          "lineHeight": "20px",
+        }
+      }
+    >
+      <div
+        className="flex-child flex-child--grow px12 py12"
+      >
+        <div
+          className="flex-parent flex-parent--row"
+        >
+          <div
+            className="flex-child mr12"
+          >
+            <div
+              className="round w60 h60 bg-pink-light"
+            />
+          </div>
+          <div
+            className="flex-child"
+          >
+            <div
+              className="txt-fancy txt-uppercase"
+            >
+              example
+            </div>
+            <div
+              className="color-gray-dark color-black-on-hover"
+            >
+              <div
+                className="txt-bold"
+              >
+                Add a vector tile source
+              </div>
+              Add a vector source to a map and display it as a layer.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+      >
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 30,
+              "width": 30,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-chevron-right"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </div>
+    </div>
+  </a>
+</div>
+`;
+
+exports[`related-page glossary renders as expected 1`] = `
+<div>
+  <a
+    className="unprose block cursor-pointer color-orange color-orange-dark-on-hover"
+    href="https://docs.mapbox.com/help/glossary/zoom-level/"
+  >
+    <div
+      className="flex-parent flex-parent--stretch-cross border border-color-orange border-color-orange-dark-on-hover"
+      style={
+        Object {
+          "borderRadius": "4px",
+          "fontSize": "13px",
+          "lineHeight": "20px",
+        }
+      }
+    >
+      <div
+        className="flex-child flex-child--grow px12 py12"
+      >
+        <div
+          className="flex-parent flex-parent--row"
+        >
+          <div
+            className="flex-child mr12"
+          >
+            <div
+              className="round w60 h60 bg-orange-light"
+            />
+          </div>
+          <div
+            className="flex-child"
+          >
+            <div
+              className="txt-fancy txt-uppercase"
+            >
+              glossary
+            </div>
+            <div
+              className="color-gray-dark color-black-on-hover"
+            >
+              <div
+                className="txt-bold"
+              >
+                zoom level
+              </div>
+              A zoom level determines how much of a map is visible.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+      >
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 30,
+              "width": 30,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-chevron-right"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </div>
+    </div>
+  </a>
+</div>
+`;
+
+exports[`related-page guide renders as expected 1`] = `
+<div>
+  <a
+    className="unprose block cursor-pointer color-blue color-blue-dark-on-hover"
+    href="https://docs.mapbox.com/help/troubleshooting/collaboration-best-practices/"
+  >
+    <div
+      className="flex-parent flex-parent--stretch-cross border border-color-blue border-color-blue-dark-on-hover"
+      style={
+        Object {
+          "borderRadius": "4px",
+          "fontSize": "13px",
+          "lineHeight": "20px",
+        }
+      }
+    >
+      <div
+        className="flex-child flex-child--grow px12 py12"
+      >
+        <div
+          className="flex-parent flex-parent--row"
+        >
+          <div
+            className="flex-child mr12"
+          >
+            <svg
+              height={60}
+              viewBox="0 0 108 108"
+              width={60}
+            >
+              <circle
+                cx="53"
+                cy="55"
+                fill="#47b9f3"
+                r="45"
+              />
+              <rect
+                fill="#1274c6"
+                height="34.501"
+                rx="5.219"
+                ry="5.219"
+                transform="rotate(.605 53.4 58.455)"
+                width="52.254"
+                x="27.273"
+                y="41.204"
+              />
+              <path
+                d="M64.1 34.848s-9.912-.76-10.008 8.42-.093 24.736-.093 24.736S58.822 64.96 62.79 65l15.404.163A1.788 1.788 0 0 0 80 63.393l.281-26.601A1.773 1.773 0 0 0 78.527 35z"
+                fill="#309ef9"
+              />
+              <path
+                d="M43.971 34.157s10.21-.563 10.11 8.821S53.998 68 53.998 68s-5.25-2.957-9.331-3L28.78 64.83A1.786 1.786 0 0 1 27 63.04l.288-27.286A1.786 1.786 0 0 1 29.106 34z"
+                fill="#0d84fd"
+              />
+            </svg>
+          </div>
+          <div
+            className="flex-child"
+          >
+            <div
+              className="txt-fancy txt-uppercase"
+            >
+              guide
+            </div>
+            <div
+              className="color-gray-dark color-black-on-hover"
+            >
+              <div
+                className="txt-bold"
+              >
+                Access tokens
+              </div>
+              Learn how access tokens work and how to create and manage your access tokens.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+      >
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 30,
+              "width": 30,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-chevron-right"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </div>
+    </div>
+  </a>
+</div>
+`;
+
+exports[`related-page troubleshooting renders as expected 1`] = `
+<div>
+  <a
+    className="unprose block cursor-pointer color-red color-red-dark-on-hover"
+    href="https://docs.mapbox.com/help/troubleshooting/collaboration-best-practices/"
+  >
+    <div
+      className="flex-parent flex-parent--stretch-cross border border-color-red border-color-red-dark-on-hover"
+      style={
+        Object {
+          "borderRadius": "4px",
+          "fontSize": "13px",
+          "lineHeight": "20px",
+        }
+      }
+    >
+      <div
+        className="flex-child flex-child--grow px12 py12"
+      >
+        <div
+          className="flex-parent flex-parent--row"
+        >
+          <div
+            className="flex-child mr12"
+          >
+            <svg
+              height={60}
+              viewBox="0 0 108 108"
+              width={60}
+            >
+              <circle
+                cx="53"
+                cy="55"
+                fill="#ffb9a9"
+                r="45"
+              />
+              <path
+                d="M25.008 35.898h37.658v41.91H30.718a5.71 5.71 0 0 1-5.71-5.71v-36.2z"
+                fill="#fff"
+              />
+              <path
+                d="M62.666 35.898H82.71v36.2a5.71 5.71 0 0 1-5.71 5.71H62.667v-41.91z"
+                fill="#fc7e5b"
+              />
+              <circle
+                cx="43.607"
+                cy="62.393"
+                fill="#fc7e5b"
+                r="9.393"
+              />
+              <path
+                d="M37.5 62.32h12M43.518 56.5l-.018 11"
+                fill="none"
+                stroke="#fff"
+              />
+              <path
+                d="M55.448 48.654H21.971a1.652 1.652 0 0 1-1.536-2.259l4.388-11.104h37.843l-5.718 12.402a1.652 1.652 0 0 1-1.5.96z"
+                fill="#d85a3d"
+              />
+              <path
+                d="M69.562 48.654h16.785a1.652 1.652 0 0 0 1.534-2.264l-4.427-11.099H62.666l5.382 12.37a1.652 1.652 0 0 0 1.514.993z"
+                fill="#d85a3d"
+              />
+            </svg>
+          </div>
+          <div
+            className="flex-child"
+          >
+            <div
+              className="txt-fancy txt-uppercase"
+            >
+              troubleshooting
+            </div>
+            <div
+              className="color-gray-dark color-black-on-hover"
+            >
+              <div
+                className="txt-bold"
+              >
+                Collaboration best practices
+              </div>
+              Learn best practices for setting up an account and collaborating on projects.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+      >
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 30,
+              "width": 30,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-chevron-right"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </div>
+    </div>
+  </a>
+</div>
+`;
+
+exports[`related-page tutorial renders as expected 1`] = `
+<div>
+  <a
+    className="unprose block cursor-pointer color-green color-green-dark-on-hover"
+    href="https://docs.mapbox.com/help/tutorials/first-steps-android-sdk/"
+  >
+    <div
+      className="flex-parent flex-parent--stretch-cross border border-color-green border-color-green-dark-on-hover"
+      style={
+        Object {
+          "borderRadius": "4px",
+          "fontSize": "13px",
+          "lineHeight": "20px",
+        }
+      }
+    >
+      <div
+        className="flex-child flex-child--grow px12 py12"
+      >
+        <div
+          className="flex-parent flex-parent--row"
+        >
+          <div
+            className="flex-child mr12"
+          >
+            <svg
+              height={60}
+              viewBox="0 0 108 108"
+              width={60}
+            >
+              <circle
+                cx="53"
+                cy="55"
+                fill="#83e5af"
+                r="45"
+              />
+              <path
+                d="M63.238 70h-23.37a5.887 5.887 0 0 0-5.752 4.842 6.137 6.137 0 0 0-.11.868A5.898 5.898 0 0 0 39.763 82H63.77A5.341 5.341 0 0 0 69 76.554V64a5.885 5.885 0 0 1-5.762 6z"
+                fill="#30aa67"
+              />
+              <rect
+                fill="#3dbc7d"
+                height="39"
+                rx="4.744"
+                ry="4.744"
+                width="34"
+                x="39"
+                y="38"
+              />
+              <path
+                d="M63.238 70.257A5.792 5.792 0 0 0 69 64.436v-32.18A4.257 4.257 0 0 0 64.743 28H38.257A4.257 4.257 0 0 0 34 32.257V75h.107a5.918 5.918 0 0 1 5.818-4.743"
+                fill="#4bd18b"
+              />
+              <rect
+                fill="#3dbc7d"
+                height="15"
+                rx="2.136"
+                ry="2.136"
+                width="25"
+                x="39"
+                y="33"
+              />
+            </svg>
+          </div>
+          <div
+            className="flex-child"
+          >
+            <div
+              className="txt-fancy txt-uppercase"
+            >
+              tutorial
+            </div>
+            <div
+              className="color-gray-dark color-black-on-hover"
+            >
+              <div
+                className="txt-bold"
+              >
+                First steps with the Mapbox Maps SDK for Android
+              </div>
+              Walk through installing the Mapbox Maps SDK for Android, getting a map on the screen, and changing the map style.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+      >
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 30,
+              "width": 30,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-chevron-right"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </div>
+    </div>
+  </a>
+</div>
+`;
