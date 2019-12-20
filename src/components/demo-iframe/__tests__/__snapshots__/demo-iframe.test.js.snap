@@ -54,7 +54,7 @@ exports[`demo-iframe Basic renders as expected 1`] = `
     className="flex-child mr12"
   >
     <div
-      className="bg-orange-light round-full color-orange-dark flex-parent flex-parent--center-main flex-parent--center-cross"
+      className="bg-orange-light round-full color-orange flex-parent flex-parent--center-main flex-parent--center-cross"
       style={
         Object {
           "height": 50,
@@ -125,7 +125,7 @@ exports[`demo-iframe With token renders as expected 1`] = `
     className="flex-child mr12"
   >
     <div
-      className="bg-orange-light round-full color-orange-dark flex-parent flex-parent--center-main flex-parent--center-cross"
+      className="bg-orange-light round-full color-orange flex-parent flex-parent--center-main flex-parent--center-cross"
       style={
         Object {
           "height": 50,

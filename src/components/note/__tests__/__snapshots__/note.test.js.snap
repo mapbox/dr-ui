@@ -14,7 +14,7 @@ exports[`note A note to display an error with steps or links on how to troublesh
     className="flex-child mr12"
   >
     <div
-      className="bg-red-light round-full color-red-dark flex-parent flex-parent--center-main flex-parent--center-cross"
+      className="bg-red-light round-full color-red flex-parent flex-parent--center-main flex-parent--center-cross"
       style={
         Object {
           "height": 50,
@@ -76,7 +76,7 @@ exports[`note A note to display with a message about new products or features. r
     className="flex-child mr12"
   >
     <div
-      className="bg-green-light round-full color-green-dark flex-parent flex-parent--center-main flex-parent--center-cross"
+      className="bg-green-light round-full color-green flex-parent flex-parent--center-main flex-parent--center-cross"
       style={
         Object {
           "height": 50,
@@ -131,7 +131,7 @@ exports[`note A warning note to let the user know something has changed or will 
     className="flex-child mr12"
   >
     <div
-      className="bg-orange-light round-full color-orange-dark flex-parent flex-parent--center-main flex-parent--center-cross"
+      className="bg-orange-light round-full color-orange flex-parent flex-parent--center-main flex-parent--center-cross"
       style={
         Object {
           "height": 50,
@@ -177,44 +177,40 @@ exports[`note Default note renders as expected 1`] = `
   className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
   style={
     Object {
-      "background": "#f1faff",
-      "color": "#587594",
+      "background": "#f4f7fb",
+      "color": "#547190",
     }
   }
 >
   <div
     className="flex-child mr12"
   >
-    <svg
-      height={60}
-      viewBox="0 0 108 108"
-      width={60}
+    <div
+      className="bg-gray-light round-full color-gray flex-parent flex-parent--center-main flex-parent--center-cross"
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
     >
-      <circle
-        cx="53"
-        cy="55"
-        fill="#47b9f3"
-        r="45"
-      />
-      <rect
-        fill="#1274c6"
-        height="34.501"
-        rx="5.219"
-        ry="5.219"
-        transform="rotate(.605 53.4 58.455)"
-        width="52.254"
-        x="27.273"
-        y="41.204"
-      />
-      <path
-        d="M64.1 34.848s-9.912-.76-10.008 8.42-.093 24.736-.093 24.736S58.822 64.96 62.79 65l15.404.163A1.788 1.788 0 0 0 80 63.393l.281-26.601A1.773 1.773 0 0 0 78.527 35z"
-        fill="#309ef9"
-      />
-      <path
-        d="M43.971 34.157s10.21-.563 10.11 8.821S53.998 68 53.998 68s-5.25-2.957-9.331-3L28.78 64.83A1.786 1.786 0 0 1 27 63.04l.288-27.286A1.786 1.786 0 0 1 29.106 34z"
-        fill="#0d84fd"
-      />
-    </svg>
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": "40",
+            "width": "40",
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-book"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
   </div>
   <div
     className="flex-child prose"
@@ -236,8 +232,8 @@ exports[`note Default note with no image renders as expected 1`] = `
   className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
   style={
     Object {
-      "background": "#f1faff",
-      "color": "#587594",
+      "background": "#f4f7fb",
+      "color": "#547190",
     }
   }
 >
@@ -261,44 +257,40 @@ exports[`note Note with custom title. renders as expected 1`] = `
   className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
   style={
     Object {
-      "background": "#f1faff",
-      "color": "#587594",
+      "background": "#f4f7fb",
+      "color": "#547190",
     }
   }
 >
   <div
     className="flex-child mr12"
   >
-    <svg
-      height={60}
-      viewBox="0 0 108 108"
-      width={60}
+    <div
+      className="bg-gray-light round-full color-gray flex-parent flex-parent--center-main flex-parent--center-cross"
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
     >
-      <circle
-        cx="53"
-        cy="55"
-        fill="#47b9f3"
-        r="45"
-      />
-      <rect
-        fill="#1274c6"
-        height="34.501"
-        rx="5.219"
-        ry="5.219"
-        transform="rotate(.605 53.4 58.455)"
-        width="52.254"
-        x="27.273"
-        y="41.204"
-      />
-      <path
-        d="M64.1 34.848s-9.912-.76-10.008 8.42-.093 24.736-.093 24.736S58.822 64.96 62.79 65l15.404.163A1.788 1.788 0 0 0 80 63.393l.281-26.601A1.773 1.773 0 0 0 78.527 35z"
-        fill="#309ef9"
-      />
-      <path
-        d="M43.971 34.157s10.21-.563 10.11 8.821S53.998 68 53.998 68s-5.25-2.957-9.331-3L28.78 64.83A1.786 1.786 0 0 1 27 63.04l.288-27.286A1.786 1.786 0 0 1 29.106 34z"
-        fill="#0d84fd"
-      />
-    </svg>
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": "40",
+            "width": "40",
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-book"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
   </div>
   <div
     className="flex-child prose"

@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import BookImage from '../book-image/book-image';
 import Icon from '@mapbox/mr-ui/icon';
 
 class Image extends React.Component {
@@ -9,7 +8,7 @@ class Image extends React.Component {
     const { color, icon } = this.props;
     return (
       <div
-        className={`bg-${color}-light round-full color-${color}-dark flex-parent flex-parent--center-main flex-parent--center-cross`}
+        className={`bg-${color}-light round-full color-${color} flex-parent flex-parent--center-main flex-parent--center-cross`}
         style={{ width: 50, height: 50 }}
       >
         <Icon name={icon} size="40" />
@@ -28,9 +27,9 @@ class Note extends React.Component {
     const { theme, title, children, image } = this.props;
     let themes = {
       default: {
-        background: '#f1faff',
-        color: '#587594',
-        image: <BookImage />
+        background: '#f4f7fb',
+        color: '#547190',
+        image: <Image icon="book" color="gray" />
       },
       warning: {
         background: '#feefe2',
