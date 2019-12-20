@@ -186,6 +186,7 @@ exports[`page-layout Common use case renders as expected 1`] = `
                           href="#heading-one"
                         >
                           Heading one
+                          
                         </a>
                         <ul
                           className="none"
@@ -199,6 +200,7 @@ exports[`page-layout Common use case renders as expected 1`] = `
                           href="#heading-two"
                         >
                           Heading two
+                          
                         </a>
                         <ul
                           className="none"
@@ -535,6 +537,7 @@ exports[`page-layout Many first level items renders as expected 1`] = `
                           href="#heading-one"
                         >
                           Heading one
+                          
                         </a>
                         <ul
                           className="none"
@@ -548,6 +551,7 @@ exports[`page-layout Many first level items renders as expected 1`] = `
                           href="#heading-two"
                         >
                           Heading two
+                          
                         </a>
                         <ul
                           className="none"

@@ -9,6 +9,7 @@ import { highlightHtml } from '../html';
 import { highlightXml } from '../xml';
 import { highlightKotlin } from '../kotlin';
 import { highlightCss } from '../css';
+import { highlightGroovy } from '../groovy';
 
 const testCases = {};
 const noRenderCases = {};
@@ -296,6 +297,13 @@ const cssCodeSnippet = `body {
   width: 100%;
 }`;
 
+const groovyCodeSnippet = `repositories {
+  mavenCentral()
+}
+dependencies {
+  implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:8.5.0'
+}`;
+
 testCases.basic = {
   component: CodeSnippet,
   description: 'Swift highlighting',
@@ -382,6 +390,16 @@ testCases.css = {
   props: {
     code: cssCodeSnippet,
     highlightedCode: highlightCss(cssCodeSnippet),
+    highlightThemeCss: css
+  }
+};
+
+testCases.groovy = {
+  component: CodeSnippet,
+  description: 'Groovy highlighting',
+  props: {
+    code: groovyCodeSnippet,
+    highlightedCode: highlightGroovy(groovyCodeSnippet),
     highlightThemeCss: css
   }
 };

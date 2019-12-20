@@ -1,5 +1,16 @@
 # Changelog
 
+## master
+
+* Add IE11 compatibility for the `Search` component.
+* Update `BetaFlag` component styling. [#207](https://github.com/mapbox/dr-ui/pull/207)
+* Add an optional `tag` prop for second and third level headings in `NavigationAccordion`. [#212](https://github.com/mapbox/dr-ui/pull/212)
+
+## 0.24.0
+
+* Add Sentry to `Feedback` component for text feedback issue management. [#198](https://github.com/mapbox/dr-ui/pull/198)
+* Add support for `groovy` syntax highlighting. [#201](https://github.com/mapbox/dr-ui/pull/201)
+
 ## 0.23.0
 
 * Allow caller to provide a custom `connector` to the `Search` component. [#200](https://github.com/mapbox/dr-ui/pull/200)
