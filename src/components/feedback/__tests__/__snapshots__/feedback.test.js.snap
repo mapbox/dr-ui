@@ -102,7 +102,6 @@ exports[`feedback Feedback placement renders as expected 1`] = `
                   href="/api/"
                 >
                   API Documentation
-                  
                 </a>
               </div>
             </div>

@@ -537,13 +537,13 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
                       className="txt-s txt-bold round px6 inline-block cursor-default border"
                       style={
                         Object {
-                          "background": "#fff0f7",
-                          "borderColor": "#fd8ac0",
-                          "color": "#cf1c61",
+                          "background": "#FEDADA",
+                          "borderColor": "#FD8383",
+                          "color": "#bb2224",
                         }
                       }
                     >
-                      Fundamentals
+                      Custom
                     </div>
                     <div
                       className="hide-visually"
@@ -553,7 +553,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
                       <div
                         className="txt-s wmax120"
                       >
-                        The concepts described here are fundamental to using this product.
+                        This is a custom tag.
                       </div>
                     </div>
                   </div>

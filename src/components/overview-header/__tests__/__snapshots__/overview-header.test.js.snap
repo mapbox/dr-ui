@@ -8,7 +8,6 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
     className="mb6 txt-fancy"
   >
     Mapbox SDK for Breakfast
-    
   </h1>
   <div
     className="relative"
@@ -158,7 +157,6 @@ exports[`overview-header All props renders as expected 1`] = `
     className="mb6 txt-fancy"
   >
     Mapbox SDK for Breakfast
-    
   </h1>
   <div
     className="relative"
@@ -342,7 +340,6 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
     className="mb6 txt-fancy"
   >
     Mapbox SDK for Breakfast
-    
   </h1>
   <div
     className="relative"
@@ -698,7 +695,6 @@ exports[`overview-header No optional props renders as expected 1`] = `
     className="mb6 txt-fancy"
   >
     Mapbox SDK that You've Never Heard Of
-    
   </h1>
   <div
     className="relative"
@@ -882,7 +878,6 @@ exports[`overview-header Some optional props renders as expected 1`] = `
     className="mb6 txt-fancy"
   >
     Mapbox SDK for Breakfast
-    
   </h1>
   <div
     className="relative"
