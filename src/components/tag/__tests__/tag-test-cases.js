@@ -44,7 +44,7 @@ testCases.custom = {
     customTooltipText: 'Contact us for access to this feature.',
     customStyles: {
       background: '#FEDADA',
-      color: '#DA2E30',
+      color: '#bb2224',
       borderColor: '#FD8383'
     }
   }
