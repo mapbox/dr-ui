@@ -2,7 +2,11 @@
 
 ## master
 
-* Add IE11 compatibility for the `Search` component.
+* Add IE11 compatibility for the `Search` component. [#203](https://github.com/mapbox/dr-ui/pull/203)
+* Update `BetaFlag` component styling. [#207](https://github.com/mapbox/dr-ui/pull/207)
+* Add an optional `tag` prop for second and third level headings in `NavigationAccordion`. [#212](https://github.com/mapbox/dr-ui/pull/212)
+* Add `beta` and `download` themes to `Note`. [#202](https://github.com/mapbox/dr-ui/pull/202)
+* 🚨Remove `imageComponent` option from `Note`. The theme will select the accompanying image or you can pass `image={false}` to prevent the theme's image from appearing in `Note`. [#202](https://github.com/mapbox/dr-ui/pull/202)
 
 ## 0.24.0
 

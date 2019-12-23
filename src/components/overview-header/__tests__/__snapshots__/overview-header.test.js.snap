@@ -549,7 +549,13 @@ exports[`overview-header Beta product renders as expected 1`] = `
       >
         <div
           aria-describedby="tooltip-1"
-          className="txt-s txt-bold round px6 py3 inline-block cursor-default bg-orange-faint color-orange-dark "
+          className="txt-s txt-bold round px6 inline-block cursor-default border border--green-light"
+          style={
+            Object {
+              "backgroundColor": "rgb(232, 245, 238)",
+              "color": "rgb(27, 125, 79)",
+            }
+          }
         >
           Beta
         </div>
@@ -561,7 +567,7 @@ exports[`overview-header Beta product renders as expected 1`] = `
           <div
             className="txt-s wmax120"
           >
-            This feature is in public beta and is subject to potential changes.
+            This feature is in public beta and is subject to changes.
           </div>
         </div>
       </div>
