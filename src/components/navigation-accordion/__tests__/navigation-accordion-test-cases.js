@@ -130,7 +130,16 @@ testCases.withTags = {
         },
         {
           title: 'Heading two',
-          tag: 'fundamentals',
+          tag: 'custom',
+          customTagProps: {
+            customLabel: 'Custom',
+            customTooltipText: 'This is a custom tag.',
+            customStyles: {
+              background: '#FEDADA',
+              color: '#bb2224',
+              borderColor: '#FD8383'
+            }
+          },
           path: 'heading-two'
         }
       ]

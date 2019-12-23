@@ -59,7 +59,6 @@ exports[`product-menu Custom trigger style - display only renders as expected 1`
     href="/api-documentation/"
   >
     Light on dark
-    
   </a>
 </div>
 `;
@@ -70,7 +69,6 @@ exports[`product-menu Fake items, but one matches this test case's location rend
   href="/api-documentation/"
 >
   Items in here
-  
 </a>
 `;
 
@@ -80,7 +78,6 @@ exports[`product-menu Mapbox product menu renders as expected 1`] = `
   href="/api-documentation/"
 >
   Mapbox product names
-  
 </a>
 `;
 
@@ -90,6 +87,5 @@ exports[`product-menu Product menu with something arbitrary in it renders as exp
   href="/api-documentation/"
 >
   Pizza pie
-  
 </a>
 `;

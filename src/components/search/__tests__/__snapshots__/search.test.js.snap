@@ -195,7 +195,6 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
                   href="/api/"
                 >
                   API Documentation
-                  
                 </a>
               </div>
             </div>

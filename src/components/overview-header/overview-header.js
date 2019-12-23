@@ -74,6 +74,26 @@ class OverviewHeader extends React.PureComponent {
     );
   }
 
+  buildTag = item => {
+    const tagProps = {
+      theme: item.tag,
+      customLabel: item.customTagProps
+        ? item.customTagProps.customLabel
+        : undefined,
+      customTooltipText: item.customTagProps
+        ? item.customTagProps.customTooltipText
+        : undefined,
+      customStyles: item.customTagProps
+        ? item.customTagProps.customStyles
+        : undefined
+    };
+    return (
+      <span className="ml12 inline-block relative" style={{ top: '-7px' }}>
+        <Tag {...tagProps} />
+      </span>
+    );
+  };
+
   render() {
     const { props } = this;
 
@@ -92,16 +112,7 @@ class OverviewHeader extends React.PureComponent {
       <div className="scroll-hidden border-b border--gray-light prose mb24">
         <h1 className="mb6 txt-fancy">
           {props.title}
-          {props.tag ? (
-            <span
-              className="ml12 inline-block relative"
-              style={{ top: '-7px' }}
-            >
-              <Tag theme={props.tag} />
-            </span>
-          ) : (
-            ''
-          )}
+          {props.tag && this.buildTag(props)}
         </h1>
         <div className="relative">
           <div className="pr12-ml mr240-ml mr0">
@@ -124,6 +135,16 @@ OverviewHeader.propTypes = {
   features: PropTypes.arrayOf(PropTypes.string).isRequired,
   title: PropTypes.string.isRequired,
   tag: PropTypes.oneOf(['legacy', 'beta', 'fundamentals', 'new', 'custom']),
+  /* Required if tag is set to `custom` */
+  customTagProps: PropTypes.shape({
+    customLabel: PropTypes.string.isRequired,
+    customTooltipText: PropTypes.string.isRequired,
+    customStyles: PropTypes.shape({
+      background: PropTypes.string.isRequired,
+      color: PropTypes.string.isRequired,
+      borderColor: PropTypes.string.isRequired
+    }).isRequired
+  }),
   image: PropTypes.node.isRequired,
   version: PropTypes.string,
   changelogLink: PropTypes.string, // creates a "View changelog" link
