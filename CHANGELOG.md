@@ -8,6 +8,8 @@
 * Add `beta` and `download` themes to `Note`. [#202](https://github.com/mapbox/dr-ui/pull/202)
 * 🚨Remove `imageComponent` option from `Note`. The theme will select the accompanying image or you can pass `image={false}` to prevent the theme's image from appearing in `Note`. [#202](https://github.com/mapbox/dr-ui/pull/202)
 * Add `RelatedPage` component. [#213](https://github.com/mapbox/dr-ui/pull/213)
+* Add `GlossaryImage` component. [#213](https://github.com/mapbox/dr-ui/pull/213)
+* Add `ExampleImage` component. [#213](https://github.com/mapbox/dr-ui/pull/213)
 
 ## 0.24.0
 
