@@ -86,14 +86,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
     /**
      * Set the syntax highlighting theme.
      */
-    const theme = this.props.highlightThemeCss;
-    /* Do not load themes that have already been injected. */
-    if (injectedThemes.indexOf(theme) !== -1) return;
-    injectedThemes.push(theme);
-    const doc = getWindow().document;
-    this.styleTag = doc.createElement('style');
-    this.styleTag.innerHTML = `${theme}`;
-    doc.head.appendChild(this.styleTag);
+    this.setTheme();
 
     /**
      * If a maxHeight is set AND the non-highlighted lines are not collapsed,
@@ -124,6 +117,17 @@ export default class NumberedCodeSnippet extends React.PureComponent {
   componentWillUnmount() {
     getWindow().removeEventListener('resize', this.adjustPositionsResize);
   }
+
+  setTheme = () => {
+    const theme = this.props.highlightThemeCss;
+    /* Do not load themes that have already been injected. */
+    if (injectedThemes.indexOf(theme) !== -1) return;
+    injectedThemes.push(theme);
+    const doc = getWindow().document;
+    this.styleTag = doc.createElement('style');
+    this.styleTag.innerHTML = `${theme}`;
+    doc.head.appendChild(this.styleTag);
+  };
 
   adjustPositions = () => {
     const { containerElement } = this;
