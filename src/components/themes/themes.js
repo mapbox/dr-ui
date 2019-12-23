@@ -17,7 +17,16 @@ class Image extends React.Component {
 }
 
 Image.propTypes = {
-  color: PropTypes.string,
+  color: PropTypes.oneOf([
+    'gray',
+    'orange',
+    'red',
+    'green',
+    'purple',
+    'pink',
+    'yellow',
+    'blue'
+  ]).isRequired,
   icon: PropTypes.string
 };
 
