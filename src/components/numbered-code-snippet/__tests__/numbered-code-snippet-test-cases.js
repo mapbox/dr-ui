@@ -177,4 +177,18 @@ testCases.basic = {
   }
 };
 
+testCases.noCollapse = {
+  component: NumberedCodeSnippet,
+  description: "Don't collapse lines",
+  props: {
+    collapseLines: false,
+    code: code,
+    highlightedCode: highlightSwift(code),
+    maxHeight: 450,
+    highlightThemeCss: highlightTheme,
+    copyRanges: [[21, 23], [38, 38]],
+    onCopy: () => {}
+  }
+};
+
 export { testCases };

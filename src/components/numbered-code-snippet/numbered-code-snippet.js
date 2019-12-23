@@ -12,32 +12,59 @@ function getWindow() {
   return window;
 }
 
-// Theme cache, used to prevent the creation of multiple <style> elements with the same content.
+/* Theme cache, used to prevent the creation of multiple <style> elements with the same content. */
 const injectedThemes = [];
 
 export default class NumberedCodeSnippet extends React.PureComponent {
   static propTypes = {
-    /** Raw (unhighlighted) code. When the user clicks a copy button, this is what they'll get. If no `highlightedCode` is provided, `code` is displayed. */
+    /**
+     * Raw (unhighlighted) code. When the user clicks a copy button, this is what they'll get.
+     * If no `highlightedCode` is provided, `code` is displayed.
+     */
     code: PropTypes.string.isRequired,
-    /** The HTML output of running code through a syntax highlighter. If this is not provided, `code` is displayed, instead. The default theme CSS assumes the highlighter is [`highlight.js`](https://github.com/isagalaev/highlight.js). If you are using another highlighter, provide your own theme. */
+    /**
+     * The HTML output of running code through a syntax highlighter. If this is not provided,
+     * `code` is displayed, instead. The default theme CSS assumes the highlighter is
+     * [`highlight.js`](https://github.com/isagalaev/highlight.js). If you are using another
+     * highlighter, provide your own theme.
+     */
     highlightedCode: PropTypes.string,
-    /** Specific line ranges that should be independently copiable. Each range is a two-value array, consisting of the starting and ending line. If this is not provided, the entire snippet is copiable. */
+    /**
+     * Specific line ranges that should be independently copiable. Each range is a two-value array,
+     * consisting of the starting and ending line. If this is not provided, the entire snippet is copiable.
+     */
     copyRanges: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.number)),
-    /** A maximum height for the snippet. If the code exceeds this height, the snippet will scroll internally. */
+    /**
+     * A maximum height for the snippet. If the code exceeds this height, the snippet will scroll internally.
+     */
     maxHeight: PropTypes.number,
-    /** A callback that is invoked when the snippet (or a chunk of the snippet) is copied. If `copyRanges` are provided, the callback is passed the index (0-based) of the chunk that was copied. */
+    /**
+     * A callback that is invoked when the snippet (or a chunk of the snippet) is copied. If `copyRanges`
+     * are provided, the callback is passed the index (0-based) of the chunk that was copied.
+     */
     onCopy: PropTypes.func,
-    /** CSS that styles the highlighted code. The default theme is a [`highlight.js` theme](https://highlightjs.readthedocs.io/en/latest/style-guide.html#defining-a-theme) theme. It is the dark theme used on mapbox.com's installation flow. */
+    /**
+     * CSS that styles the highlighted code.
+     */
     highlightThemeCss: PropTypes.string.isRequired,
-    /** The width of a character in the theme's monospace font, used for indentation. If you use a font or font-size different than the default theme, you may need to change this value. */
+    /**
+     * The width of a character in the theme's monospace font, used for indentation. If you use a font or
+     * font-size different than the default theme, you may need to change this value.
+     */
     characterWidth: PropTypes.number,
-    /** If the first live chunk (from the `copyRanges` prop) is not visible in the snippet given the `maxHeight`, then autoscroll to make sure the live chunk is in view when the page loads. **/
-    scrollToLive: PropTypes.bool
+    /**
+     * Determines if non-copiable lines (when using `copyRanges`) should be collapsed. Default is true.
+     *
+     * If false, a `maxHeight` is defined, and the first live chunk (from the `copyRanges` prop) is not
+     * visible in the snippet given the `maxHeight`, the component will autoscroll to make sure the live
+     * chunk is in view when the page loads.
+     */
+    collapseLines: PropTypes.bool
   };
 
   static defaultProps = {
     characterWidth: 7.225, // Will need to change this if we change font size
-    scrollToLive: false
+    collapseLines: true
   };
 
   constructor(props) {
@@ -48,29 +75,31 @@ export default class NumberedCodeSnippet extends React.PureComponent {
   }
 
   componentDidMount() {
+    /**
+     * After the component mounts, adjust the position of the highlighted lines,
+     * and add an event listener with a debounced version of the same function
+     * whenever the window is resized.
+     */
     this.adjustPositions();
     getWindow().addEventListener('resize', this.adjustPositionsResize);
 
+    /**
+     * Set the syntax highlighting theme.
+     */
     const theme = this.props.highlightThemeCss;
-
-    // Do not load themes that have already been injected.
+    /* Do not load themes that have already been injected. */
     if (injectedThemes.indexOf(theme) !== -1) return;
     injectedThemes.push(theme);
     const doc = getWindow().document;
     this.styleTag = doc.createElement('style');
     this.styleTag.innerHTML = `${theme}`;
     doc.head.appendChild(this.styleTag);
-  }
 
-  componentDidUpdate(prevState, prevProps) {
-    /* If state or props changed, use the debounceless version */
-    if (prevState !== this.state || prevProps !== this.props) {
-      this.adjustPositions();
-      /* If the state and props objects didn't change, use the debounce version */
-    } else {
-      this.adjustPositionsResize();
-    }
-    if (this.props.scrollToLive && this.props.maxHeight) {
+    /**
+     * If a maxHeight is set AND the non-highlighted lines are not collapsed,
+     * scroll to the first live chunk.
+     */
+    if (this.props.maxHeight && !this.props.collapseLines) {
       let offsetFromTop = null;
       if (this.firstLiveElement && this.firstLiveElement.offsetTop !== null) {
         /* Get the offset from top of parent element. */
@@ -82,21 +111,29 @@ export default class NumberedCodeSnippet extends React.PureComponent {
     }
   }
 
+  componentDidUpdate(prevState, prevProps) {
+    /* If state or props changed, use the debounceless version. */
+    if (prevState !== this.state || prevProps !== this.props) {
+      this.adjustPositions();
+      /* If the state and props objects didn't change, use the debounce version. */
+    } else {
+      this.adjustPositionsResize();
+    }
+  }
+
   componentWillUnmount() {
     getWindow().removeEventListener('resize', this.adjustPositionsResize);
   }
 
-  adjustPositionsResize = debounce(() => {
-    this.adjustPositions();
-  }, 300);
-
   adjustPositions = () => {
     const { containerElement } = this;
+
     if (!containerElement) return;
 
     const chunkOverlays = containerElement.querySelectorAll(
       '[data-chunk-overlay]'
     );
+
     for (let i = 0, l = chunkOverlays.length; i < l; i++) {
       const overlayElement = chunkOverlays[i];
       const chunkId = overlayElement.getAttribute('data-chunk-overlay');
@@ -119,12 +156,22 @@ export default class NumberedCodeSnippet extends React.PureComponent {
       copyElement.style.top = `${codeElement.offsetTop + 2}px`;
       overlayElement.style.height = `${codeElement.clientHeight}px`;
 
-      // Since these elements move into position a split-second after the component
-      // mounts and renders, we'll fade them in after they're positioned
+      /**
+       * Since these elements move into position a split-second after the component
+       * mounts and renders, we'll fade them in after they're positioned
+       */
       overlayElement.style.opacity = '1';
       copyElement.style.opacity = '1';
     }
   };
+
+  /**
+   * Uses debounce to prevent adjusting position to happen too many times when using
+   * `adjustPositions` with events that are fired continuously (e.g. window is resized).
+   */
+  adjustPositionsResize = debounce(() => {
+    this.adjustPositions();
+  }, 300);
 
   onContainerElement = element => {
     this.containerElement = element;
@@ -138,14 +185,17 @@ export default class NumberedCodeSnippet extends React.PureComponent {
     const { props } = this;
 
     const rawCodeLines = props.code.trim().split('\n');
-    // If highlightedCode is not provided, show raw code.
+
+    /* If highlightedCode is not provided, show raw code. */
     const displayCode = props.highlightedCode || props.code;
     const splitDisplayCode = displayCode.trim().split('\n');
 
-    // Use copyRanges to split the highlighted code into chunks,
-    // some of which are "live", i.e. copyable, some which are not.
-    // If there are no copyRanges, the whole snippet is copyable and there
-    // is no fancy live-chunk styling.
+    /**
+     * Use copyRanges to split the highlighted code into chunks,
+     * some of which are "live", i.e. copyable, some which are not.
+     * If there are no copyRanges, the whole snippet is copyable and there
+     * is no fancy live-chunk styling.
+     */
     const mutableCopyRanges =
       props.copyRanges !== undefined && props.copyRanges.slice();
     let currentLiveRange = mutableCopyRanges && mutableCopyRanges.shift();
@@ -193,13 +243,21 @@ export default class NumberedCodeSnippet extends React.PureComponent {
         // Left padding is determined below
         let lineClasses = 'pr12';
         if (codeChunk.live) lineClasses += ' py3';
-        if (!codeChunk.live && props.copyRanges !== undefined)
-          lineClasses += this.state.expanded ? '' : 'h0 scroll-hidden';
+        if (!codeChunk.live && props.copyRanges !== undefined) {
+          if (props.collapseLines) {
+            lineClasses += this.state.expanded ? '' : ' h0 scroll-hidden';
+          } else {
+            lineClasses += ' opacity50 bg-darken10';
+          }
+        }
 
-        // Remove leading spaces, which are replaced with padding to avoid
-        // weird behaviors that occur when there are long unbroken strings:
-        // a line break might be introduced between the leading spaces and the
-        // long word, creating an empty line that nobody wanted.
+        /**
+         * Remove leading spaces, which are replaced with padding to avoid
+         * weird behaviors that occur when there are long unbroken strings:
+         * a line break might be introduced between the leading spaces and the
+         * long word, creating an empty line that nobody wanted.
+         */
+
         const indentingSpacesMatch = line.match(/^[ ]*/);
         const indentingSpaces = indentingSpacesMatch
           ? indentingSpacesMatch[0]
@@ -231,10 +289,12 @@ export default class NumberedCodeSnippet extends React.PureComponent {
               data-content={previousCount + i + 1}
             />
             <div
-              // We must use dangerouslySetInnerHTML because we've already
-              // highlighted the code with lowlight, so we have an HTML string
+              /**
+               * We must use dangerouslySetInnerHTML because we've already
+               * highlighted the code with lowlight, so we have an HTML string
+               */
               dangerouslySetInnerHTML={{ __html: displayLine || ' ' }}
-              // Super fancy hanging indent
+              /* Super fancy hanging indent. */
               style={{
                 textIndent: -2 * props.characterWidth,
                 marginLeft: 6 * props.characterWidth
@@ -250,8 +310,10 @@ export default class NumberedCodeSnippet extends React.PureComponent {
         codeElements.push(
           <div
             key={i}
-            // z-index this line above the highlighted background element for
-            // live chunks
+            /**
+             * z-index this line above the highlighted background element for
+             * live chunks
+             */
             ref={this.onFirstLive}
             className="relative z2"
             data-chunk-code={chunkId}
@@ -266,29 +328,33 @@ export default class NumberedCodeSnippet extends React.PureComponent {
           </div>
         );
       } else {
+        const expandCollapseButtons = this.state.expanded ? (
+          <HideLines
+            onClick={() => {
+              this.setState({ expanded: !this.state.expanded });
+            }}
+          >
+            {lineEls}
+          </HideLines>
+        ) : (
+          <ShowLines
+            onClick={() => {
+              this.setState({ expanded: !this.state.expanded });
+            }}
+          />
+        );
         codeElements.push(
           <div
             key={i}
-            // z-index this line above the highlighted background element for
-            // live chunks
-            className={`relative z2 ${this.state.expanded ? '' : 'h30'}`}
+            /**
+             * z-index this line above the highlighted background element for
+             * live chunks
+             */
+            className={`relative z2 ${props.collapseLines &&
+              (this.state.expanded ? '' : 'h30')}`}
             data-chunk-code={chunkId}
           >
-            {this.state.expanded ? (
-              <HideLines
-                onClick={() => {
-                  this.setState({ expanded: !this.state.expanded });
-                }}
-              >
-                {lineEls}
-              </HideLines>
-            ) : (
-              <ShowLines
-                onClick={() => {
-                  this.setState({ expanded: !this.state.expanded });
-                }}
-              />
-            )}
+            {props.collapseLines ? expandCollapseButtons : lineEls}
           </div>
         );
       }
@@ -324,7 +390,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
       previousCount = previousCount + lineEls.length;
     });
 
-    // Prevent the default x-axis padding because each line pads itself
+    /* Prevent the default x-axis padding because each line pads itself. */
     let codeClasses = 'px0 hljs';
 
     let copyAllButton = null;
@@ -349,7 +415,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
         ref={this.onContainerElement}
         style={{ ...containerStyles, backgroundColor: '#f4f7fb' }}
       >
-        <pre className="mt-neg12 pt12 ml-neg12 pl12 mobile-snippet txt-break-word">
+        <pre className="my-neg12 pt12 ml-neg12 pl12 pr0 mobile-snippet txt-break-word">
           <code className={codeClasses}>{codeElements}</code>
         </pre>
         {copyAllButton}
