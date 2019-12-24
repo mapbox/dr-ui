@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Icon from '@mapbox/mr-ui/icon';
-import BetaFlag from '../beta-flag/beta-flag';
+import Tag from '../tag/tag';
 
 class OverviewHeader extends React.PureComponent {
   renderVersion() {
@@ -74,6 +74,26 @@ class OverviewHeader extends React.PureComponent {
     );
   }
 
+  buildTag = item => {
+    const tagProps = {
+      theme: item.tag,
+      customLabel: item.customTagProps
+        ? item.customTagProps.customLabel
+        : undefined,
+      customTooltipText: item.customTagProps
+        ? item.customTagProps.customTooltipText
+        : undefined,
+      customStyles: item.customTagProps
+        ? item.customTagProps.customStyles
+        : undefined
+    };
+    return (
+      <span className="ml12 inline-block relative" style={{ top: '-7px' }}>
+        <Tag {...tagProps} />
+      </span>
+    );
+  };
+
   render() {
     const { props } = this;
 
@@ -92,16 +112,7 @@ class OverviewHeader extends React.PureComponent {
       <div className="scroll-hidden border-b border--gray-light prose mb24">
         <h1 className="mb6 txt-fancy">
           {props.title}
-          {props.beta ? (
-            <span
-              className="ml12 inline-block relative"
-              style={{ top: '-7px' }}
-            >
-              <BetaFlag />
-            </span>
-          ) : (
-            ''
-          )}
+          {props.tag && this.buildTag(props)}
         </h1>
         <div className="relative">
           <div className="pr12-ml mr240-ml mr0">
@@ -123,17 +134,23 @@ class OverviewHeader extends React.PureComponent {
 OverviewHeader.propTypes = {
   features: PropTypes.arrayOf(PropTypes.string).isRequired,
   title: PropTypes.string.isRequired,
-  beta: PropTypes.bool,
+  tag: PropTypes.oneOf(['legacy', 'beta', 'fundamentals', 'new', 'custom']),
+  /* Required if tag is set to `custom` */
+  customTagProps: PropTypes.shape({
+    customLabel: PropTypes.string.isRequired,
+    customTooltipText: PropTypes.string.isRequired,
+    customStyles: PropTypes.shape({
+      background: PropTypes.string.isRequired,
+      color: PropTypes.string.isRequired,
+      borderColor: PropTypes.string.isRequired
+    }).isRequired
+  }),
   image: PropTypes.node.isRequired,
   version: PropTypes.string,
   changelogLink: PropTypes.string, // creates a "View changelog" link
   installLink: PropTypes.string, // creates a "Install" button
   ghLink: PropTypes.string, // creates a "Contribute on GitHub" link
   contactLink: PropTypes.string // creates a "Contact us" button
-};
-
-OverviewHeader.defaultProps = {
-  beta: false
 };
 
 export default OverviewHeader;

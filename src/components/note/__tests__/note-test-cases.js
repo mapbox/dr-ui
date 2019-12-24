@@ -1,18 +1,25 @@
 import React from 'react';
 import Note from '../note';
-import BookImage from '../../book-image/book-image';
-import WarningImage from '../../warning-image/warning-image';
-import NewImage from '../../new-image/new-image';
 
 const testCases = {};
 const noRenderCases = {};
 
 testCases.basic = {
   component: Note,
-  description: 'A basic note to call out information on a page.',
+  description: 'Default note',
   props: {
-    children: <p>Here is a little thing to note.</p>,
-    imageComponent: <BookImage />
+    children: <p>Here is a little thing to note.</p>
+  }
+};
+
+testCases.noImage = {
+  component: Note,
+  description: 'Default note with no image',
+  props: {
+    children: (
+      <p>Here is a little thing to note, but it doesn't have an image.</p>
+    ),
+    image: false
   }
 };
 
@@ -44,8 +51,7 @@ testCases.custom = {
           malesuada magna mollis euismod.
         </p>
       </div>
-    ),
-    imageComponent: <BookImage />
+    )
   }
 };
 
@@ -55,14 +61,17 @@ testCases.warning = {
     'A warning note to let the user know something has changed or will change.',
   props: {
     theme: 'warning',
-    title: 'This API is in beta',
-    children: (
-      <p>
-        The API may change without advance notice during the preview period.
-        Preview features are not supported for production use.
-      </p>
-    ),
-    imageComponent: <WarningImage color="orange" />
+    title: 'Be careful',
+    children: <p>This is a warning.</p>
+  }
+};
+
+testCases.legacy = {
+  component: Note,
+  description: 'A legacy note, has same styling as warning',
+  props: {
+    theme: 'warning',
+    children: <p>This is a legacy product.</p>
   }
 };
 
@@ -72,14 +81,12 @@ testCases.error = {
     'A note to display an error with steps or links on how to troubleshoot.',
   props: {
     theme: 'error',
-    title: 'Error',
     children: (
       <p>
         Did something not go as planned? Check out the{' '}
         <a href="#">troubleshooting guide</a>.
       </p>
-    ),
-    imageComponent: <WarningImage color="red" />
+    )
   }
 };
 
@@ -89,13 +96,45 @@ testCases.new = {
     'A note to display with a message about new products or features.',
   props: {
     theme: 'new',
-    title: 'New!',
     children: (
       <p>
-        Check out the new <a href="#">Pizza API</a>. Build the perfect pie!
+        Style components in Mapbox Studio are now available in public beta for
+        every user. To start building, log in to Studio or sign up for an
+        account to start making your first map.
       </p>
-    ),
-    imageComponent: <NewImage />
+    )
+  }
+};
+
+testCases.beta = {
+  component: Note,
+  description: 'A note to flag information about a beta release/product',
+  props: {
+    theme: 'beta',
+    children: (
+      <p>
+        Style components in Mapbox Studio are now available in public beta for
+        every user. To start building, log in to Studio or sign up for an
+        account to start making your first map.
+      </p>
+    )
+  }
+};
+
+testCases.download = {
+  component: Note,
+  description: 'download',
+  props: {
+    theme: 'download',
+    title: 'Download from vision.mapbox.com/install',
+    children: (
+      <p>
+        You must download the relevant dependencies from
+        vision.mapbox.com/install before continuing. You can download the
+        dependency directly or import it into your project using Maven. This
+        will require that you are logged into your Mapbox account.
+      </p>
+    )
   }
 };
 

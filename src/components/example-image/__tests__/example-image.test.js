@@ -1,8 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { testCases } from './new-image-test-cases.js';
+import { testCases } from './example-image-test-cases.js';
 
-describe('new-image', () => {
+describe('example-image', () => {
   describe(testCases.basic.description, () => {
     let testCase;
     let wrapper;

@@ -1,8 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BetaFlag from '../beta-flag/beta-flag';
+import Tag from '../tag/tag';
 
 class ProductMenu extends React.PureComponent {
+  buildTag = item => {
+    const tagProps = {
+      theme: item.tag,
+      customLabel: item.customTagProps
+        ? item.customTagProps.customLabel
+        : undefined,
+      customTooltipText: item.customTagProps
+        ? item.customTagProps.customTooltipText
+        : undefined,
+      customStyles: item.customTagProps
+        ? item.customTagProps.customStyles
+        : undefined
+    };
+    return (
+      <span className="inline-block ml6 relative" style={{ top: '-2px' }}>
+        <Tag {...tagProps} />
+      </span>
+    );
+  };
+
   render() {
     const { props } = this;
     return (
@@ -15,13 +35,7 @@ class ProductMenu extends React.PureComponent {
         }`}
       >
         {props.productName}
-        {props.beta ? (
-          <span className="inline-block ml6 relative" style={{ top: '-2px' }}>
-            <BetaFlag />
-          </span>
-        ) : (
-          ''
-        )}
+        {props.tag && this.buildTag(props)}
       </a>
     );
   }
@@ -30,13 +44,22 @@ class ProductMenu extends React.PureComponent {
 ProductMenu.propTypes = {
   productName: PropTypes.oneOfType([PropTypes.string, PropTypes.node])
     .isRequired,
-  beta: PropTypes.bool,
+  tag: PropTypes.oneOf(['legacy', 'beta', 'fundamentals', 'new', 'custom']),
+  /* Required if tag is set to `custom` */
+  customTagProps: PropTypes.shape({
+    customLabel: PropTypes.string.isRequired,
+    customTooltipText: PropTypes.string.isRequired,
+    customStyles: PropTypes.shape({
+      background: PropTypes.string.isRequired,
+      color: PropTypes.string.isRequired,
+      borderColor: PropTypes.string.isRequired
+    }).isRequired
+  }),
   lightText: PropTypes.bool,
   homePage: PropTypes.string.isRequired
 };
 
 ProductMenu.defaultProps = {
-  beta: false,
   lightText: false
 };
 
