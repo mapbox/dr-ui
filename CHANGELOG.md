@@ -13,7 +13,8 @@
   * Remove `BetaFlag`. Use `<Tag theme="beta" />` instead.
   * Update existing components ( `OverviewHeader`, `NavigationAccordion` `ProductMenu`). Pass a string to the `tag` prop to use a predefined `theme`. To use a custom theme, pass `custom` to the `theme` prop and add a `customTagProps` prop. `customTagProps` is required when using the `custom` theme.
 * Add an optional `tag` prop for second and third level headings in `NavigationAccordion`. [#212](https://github.com/mapbox/dr-ui/pull/212)
-    
+* Update `NumberedCodeSnippet` to include the option to hide lines not included in `copyRanges`. Lines are hidden by default. [#206](https://github.com/mapbox/dr-ui/pull/206)
+
 ## 0.24.0
 
 * Add Sentry to `Feedback` component for text feedback issue management. [#198](https://github.com/mapbox/dr-ui/pull/198)
