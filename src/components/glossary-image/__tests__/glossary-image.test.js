@@ -1,8 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { testCases } from './numbered-code-snippet-test-cases.js';
+import { testCases } from './glossary-image-test-cases.js';
 
-describe('numbered-code-snippet', () => {
+describe('glossary-image', () => {
   describe(testCases.basic.description, () => {
     let testCase;
     let wrapper;
@@ -20,13 +20,14 @@ describe('numbered-code-snippet', () => {
       expect(tree).toMatchSnapshot();
     });
   });
-  describe(testCases.noCollapse.description, () => {
+
+  describe(testCases.bigger.description, () => {
     let testCase;
     let wrapper;
     let tree;
 
     beforeEach(() => {
-      testCase = testCases.noCollapse;
+      testCase = testCases.bigger;
       wrapper = renderer.create(
         React.createElement(testCase.component, testCase.props)
       );

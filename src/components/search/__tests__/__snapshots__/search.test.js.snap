@@ -195,7 +195,6 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
                   href="/api/"
                 >
                   API Documentation
-                  
                 </a>
               </div>
             </div>
@@ -384,6 +383,7 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
                               href="#heading-one"
                             >
                               Heading one
+                              
                             </a>
                             <ul
                               className="none"
@@ -397,6 +397,7 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
                               href="#heading-two"
                             >
                               Heading two
+                              
                             </a>
                             <ul
                               className="none"
