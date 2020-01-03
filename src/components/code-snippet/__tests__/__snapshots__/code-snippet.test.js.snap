@@ -31,7 +31,7 @@ exports[`CodeSnippet A CodeSnippet with every feature (edit buttons, title) rend
       <form
         action="http://jsfiddle.net/api/post/library/pure/"
         className="inline-block"
-        method="post"
+        method="POST"
         target="_blank"
       >
         <input

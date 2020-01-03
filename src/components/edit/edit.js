@@ -32,6 +32,23 @@ function format(code, parser, plugin) {
   }
 }
 
+class Form extends React.Component {
+  render() {
+    let classes = `inline-block`;
+    if (this.props.classes) classes += ` ${this.props.classes}`;
+    return (
+      <form
+        className={classes}
+        method="POST"
+        action={this.props.action}
+        target="_blank"
+      >
+        {this.props.children}
+      </form>
+    );
+  }
+}
+
 class Button extends React.Component {
   render() {
     const platform = this.props.platform;
@@ -61,12 +78,7 @@ export default class Edit extends React.Component {
     html = format(html, 'html', parserHtml);
     return (
       <>
-        <form
-          className="inline-block"
-          method="post"
-          action="http://jsfiddle.net/api/post/library/pure/"
-          target="_blank"
-        >
+        <Form action="http://jsfiddle.net/api/post/library/pure/">
           <Button platform="JSFiddle" />
           <input type="hidden" name="wrap" value="b" />
           <input type="hidden" name="css" value={css} />
@@ -83,14 +95,9 @@ export default class Edit extends React.Component {
             name="description"
             value={stripMd(projectMeta.description)}
           />
-        </form>
+        </Form>
 
-        <form
-          className="inline-block ml6"
-          action="https://codepen.io/pen/define"
-          method="POST"
-          target="_blank"
-        >
+        <Form classes="ml6" action="https://codepen.io/pen/define">
           <input
             type="hidden"
             name="data"
@@ -109,11 +116,17 @@ export default class Edit extends React.Component {
             })}
           />
           <Button platform="CodePen" />
-        </form>
+        </Form>
       </>
     );
   }
 }
+
+Form.propTypes = {
+  children: PropTypes.node.isRequired,
+  action: PropTypes.string.isRequired,
+  classes: PropTypes.string
+};
 
 Button.propTypes = {
   platform: PropTypes.oneOf(['JSFiddle', 'CodePen']).isRequired
