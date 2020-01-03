@@ -56,7 +56,9 @@ class CodeSnippet extends React.Component {
             {...this.props}
             highlightThemeCss={highlightThemeCss}
             highlightedCode={highlightedCode}
-            onCopy={() => {}}
+            onCopy={() => {
+              analytics.track('Copied example with clipboard');
+            }}
           />
         </div>
       </div>
