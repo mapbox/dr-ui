@@ -31,10 +31,19 @@ testCases.download = {
 };
 
 testCases.beta = {
-  description: 'new or beta',
+  description: 'beta',
   element: (
     <div>
-      <Note theme="beta">Beta note</Note> <Tag theme="beta" />{' '}
+      <Note theme="beta">Beta note.</Note> <Tag theme="beta" />
+    </div>
+  )
+};
+
+testCases.new = {
+  description: 'new',
+  element: (
+    <div>
+      <Note theme="new">New note.</Note>
       <Tag theme="new" />
     </div>
   )

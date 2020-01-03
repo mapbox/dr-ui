@@ -151,7 +151,7 @@ exports[`note A note to display with a message about new products or features. r
         }
       >
         <use
-          xlinkHref="#icon-marker"
+          xlinkHref="#icon-plus"
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
@@ -177,8 +177,8 @@ exports[`note A note to flag information about a beta release/product renders as
   className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
   style={
     Object {
-      "background": "#e8f5ee",
-      "color": "#1b7d4f",
+      "background": "#edf0fd",
+      "color": "#3658ee",
     }
   }
 >
@@ -186,7 +186,7 @@ exports[`note A note to flag information about a beta release/product renders as
     className="flex-child mr18 none block-mm pt3"
   >
     <div
-      className="bg-green-light round-full color-green flex-parent flex-parent--center-main flex-parent--center-cross"
+      className="bg-blue-light round-full color-blue flex-parent flex-parent--center-main flex-parent--center-cross"
       style={
         Object {
           "height": 50,

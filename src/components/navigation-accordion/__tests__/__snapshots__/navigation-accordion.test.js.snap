@@ -596,9 +596,9 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
                   className="txt-s txt-bold round px6 inline-block cursor-default border"
                   style={
                     Object {
-                      "background": "#e8f5ee",
-                      "borderColor": "#75c684",
-                      "color": "#1b7d4f",
+                      "background": "#edf0fd",
+                      "borderColor": "#4264fb",
+                      "color": "#3658ee",
                     }
                   }
                 >

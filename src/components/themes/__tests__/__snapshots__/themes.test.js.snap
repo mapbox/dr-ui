@@ -55,6 +55,94 @@ exports[`themes Default renders as expected 1`] = `
 </div>
 `;
 
+exports[`themes beta renders as expected 1`] = `
+<div>
+  <div
+    className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
+    style={
+      Object {
+        "background": "#edf0fd",
+        "color": "#3658ee",
+      }
+    }
+  >
+    <div
+      className="flex-child mr18 none block-mm pt3"
+    >
+      <div
+        className="bg-blue-light round-full color-blue flex-parent flex-parent--center-main flex-parent--center-cross"
+        style={
+          Object {
+            "height": 50,
+            "width": 50,
+          }
+        }
+      >
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": "40",
+              "width": "40",
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-marker"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="flex-child prose"
+    >
+      <div
+        className="txt-bold txt-m mb6"
+      >
+        Beta
+      </div>
+      Beta note.
+    </div>
+  </div>
+   
+  <div
+    className="inline-block"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+  >
+    <div
+      aria-describedby="tooltip-1"
+      className="txt-s txt-bold round px6 inline-block cursor-default border"
+      style={
+        Object {
+          "background": "#edf0fd",
+          "borderColor": "#4264fb",
+          "color": "#3658ee",
+        }
+      }
+    >
+      Beta
+    </div>
+    <div
+      className="hide-visually"
+      id="tooltip-1"
+      role="tooltip"
+    >
+      <div
+        className="txt-s wmax120"
+      >
+        This feature is in public beta and is subject to changes.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`themes download renders as expected 1`] = `
 <div>
    
@@ -178,7 +266,7 @@ exports[`themes fundamentals renders as expected 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      aria-describedby="tooltip-4"
+      aria-describedby="tooltip-3"
       className="txt-s txt-bold round px6 inline-block cursor-default border"
       style={
         Object {
@@ -192,7 +280,7 @@ exports[`themes fundamentals renders as expected 1`] = `
     </div>
     <div
       className="hide-visually"
-      id="tooltip-4"
+      id="tooltip-3"
       role="tooltip"
     >
       <div
@@ -266,7 +354,7 @@ exports[`themes legacy or warning renders as expected 1`] = `
     onKeyDown={[Function]}
   >
     <div
-      aria-describedby="tooltip-3"
+      aria-describedby="tooltip-2"
       className="txt-s txt-bold round px6 inline-block cursor-default border"
       style={
         Object {
@@ -280,134 +368,13 @@ exports[`themes legacy or warning renders as expected 1`] = `
     </div>
     <div
       className="hide-visually"
-      id="tooltip-3"
-      role="tooltip"
-    >
-      <div
-        className="txt-s wmax120"
-      >
-        This feature is no longer in active development.
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`themes new or beta renders as expected 1`] = `
-<div>
-  <div
-    className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
-    style={
-      Object {
-        "background": "#e8f5ee",
-        "color": "#1b7d4f",
-      }
-    }
-  >
-    <div
-      className="flex-child mr18 none block-mm pt3"
-    >
-      <div
-        className="bg-green-light round-full color-green flex-parent flex-parent--center-main flex-parent--center-cross"
-        style={
-          Object {
-            "height": 50,
-            "width": 50,
-          }
-        }
-      >
-        <svg
-          className="events-none icon"
-          focusable="false"
-          role="presentation"
-          style={
-            Object {
-              "height": "40",
-              "width": "40",
-            }
-          }
-        >
-          <use
-            xlinkHref="#icon-marker"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-          />
-        </svg>
-      </div>
-    </div>
-    <div
-      className="flex-child prose"
-    >
-      <div
-        className="txt-bold txt-m mb6"
-      >
-        Beta
-      </div>
-      Beta note
-    </div>
-  </div>
-   
-  <div
-    className="inline-block"
-    onBlur={[Function]}
-    onClick={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-  >
-    <div
-      aria-describedby="tooltip-1"
-      className="txt-s txt-bold round px6 inline-block cursor-default border"
-      style={
-        Object {
-          "background": "#e8f5ee",
-          "borderColor": "#75c684",
-          "color": "#1b7d4f",
-        }
-      }
-    >
-      Beta
-    </div>
-    <div
-      className="hide-visually"
-      id="tooltip-1"
-      role="tooltip"
-    >
-      <div
-        className="txt-s wmax120"
-      >
-        This feature is in public beta and is subject to changes.
-      </div>
-    </div>
-  </div>
-   
-  <div
-    className="inline-block"
-    onBlur={[Function]}
-    onClick={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-  >
-    <div
-      aria-describedby="tooltip-2"
-      className="txt-s txt-bold round px6 inline-block cursor-default border"
-      style={
-        Object {
-          "background": "#e8f5ee",
-          "borderColor": "#75c684",
-          "color": "#1b7d4f",
-        }
-      }
-    >
-      New!
-    </div>
-    <div
-      className="hide-visually"
       id="tooltip-2"
       role="tooltip"
     >
       <div
         className="txt-s wmax120"
       >
-        This feature was released recently.
+        This feature is no longer in active development.
       </div>
     </div>
   </div>

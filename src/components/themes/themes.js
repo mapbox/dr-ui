@@ -57,9 +57,19 @@ const themes = {
     }
   },
   beta: {
-    image: <Image icon="marker" color="green" />,
+    image: <Image icon="marker" color="blue" />,
     label: 'Beta',
     tooltipText: 'This feature is in public beta and is subject to changes.',
+    styles: {
+      background: '#edf0fd',
+      color: '#3658ee',
+      borderColor: '#4264fb'
+    }
+  },
+  new: {
+    image: <Image icon="plus" color="green" />,
+    label: 'New!',
+    tooltipText: 'This feature was released recently.',
     styles: {
       background: '#e8f5ee',
       color: '#1b7d4f',
@@ -88,10 +98,6 @@ const themes = {
 /* duplicate themes */
 themes.legacy = Object.assign({}, themes.warning);
 themes.legacy.label = 'Legacy';
-(themes.legacy.tooltipText =
-  'This feature is no longer in active development.'),
-  (themes.new = Object.assign({}, themes.beta));
-themes.new.label = 'New!';
-themes.new.tooltipText = 'This feature was released recently.';
+themes.legacy.tooltipText = 'This feature is no longer in active development.';
 
 export default themes;
