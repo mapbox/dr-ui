@@ -132,4 +132,22 @@ map.addControl(new MapboxGeocoder({
       }
     });
   });
+
+  test('example with more than one <style>', () => {
+    const fullHtml =
+      "<!DOCTYPE html>\n<html>\n<head>\n<meta charset='utf-8' />\n<title>Render world copies</title>\n<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />\n<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.js'></script>\n<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.css' rel='stylesheet' />\n<style>\n	body { margin: 0; padding: 0; }\n	#map { position: absolute; top: 0; bottom: 0; width: 100%; };\n</style>\n</head>\n<body>\n<style>\n    #menu {\n        position: absolute;\n        background: #fff;\n        padding: 10px;\n        font-family: 'Open Sans', sans-serif;\n    }\n</style>\n<div id='map'></div>\n<div id='menu'>\n    <div>Set <code>renderWorldCopies</code> to:</div>\n    <div>\n        <input type='radio' id='true' name='rtoggle' value='true' checked />\n        <label for='true'>true</label>\n    </div>\n    <div>\n        <input type='radio' id='false' name='rtoggle' value='false' />\n        <label for='false'>false</label>\n    </div>\n</div>\n<script>\n	mapboxgl.accessToken = '<your access token here>';\n    var map = new mapboxgl.Map({\n        container: 'map', // container id\n        style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location\n        center: [0, 0], // starting position [lng, lat]\n        zoom: 0 // starting zoom\n    });\n    var renderOptions = document.getElementById('menu');\n    var inputs = renderOptions.getElementsByTagName('input');\n    function switchRenderOption(option) {\n        var status = option.target.id;\n        map.setRenderWorldCopies(status === 'true');\n    }\n    for (var i = 0; i < inputs.length; i++) {\n        inputs[i].onclick = switchRenderOption;\n    }\n</script>\n</body>\n</html>";
+
+    expect(helpers.extractor(fullHtml)).toEqual({
+      html:
+        "\n\n<div id='map'></div>\n<div id='menu'>\n    <div>Set <code>renderWorldCopies</code> to:</div>\n    <div>\n        <input type='radio' id='true' name='rtoggle' value='true' checked />\n        <label for='true'>true</label>\n    </div>\n    <div>\n        <input type='radio' id='false' name='rtoggle' value='false' />\n        <label for='false'>false</label>\n    </div>\n</div>\n\n",
+      css:
+        "\n\tbody { margin: 0; padding: 0; }\n\t#map { position: absolute; top: 0; bottom: 0; width: 100%; };\n\n    #menu {\n        position: absolute;\n        background: #fff;\n        padding: 10px;\n        font-family: 'Open Sans', sans-serif;\n    }\n",
+      js:
+        "\n\tmapboxgl.accessToken = '<your access token here>';\n    var map = new mapboxgl.Map({\n        container: 'map', // container id\n        style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location\n        center: [0, 0], // starting position [lng, lat]\n        zoom: 0 // starting zoom\n    });\n    var renderOptions = document.getElementById('menu');\n    var inputs = renderOptions.getElementsByTagName('input');\n    function switchRenderOption(option) {\n        var status = option.target.id;\n        map.setRenderWorldCopies(status === 'true');\n    }\n    for (var i = 0; i < inputs.length; i++) {\n        inputs[i].onclick = switchRenderOption;\n    }\n",
+      resources: {
+        js: ['https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.js'],
+        css: ['https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.css']
+      }
+    });
+  });
 });
