@@ -65,6 +65,7 @@ export default class Edit extends React.Component {
           className="inline-block"
           method="post"
           action="http://jsfiddle.net/api/post/library/pure/"
+          target="_blank"
         >
           <Button platform="JSFiddle" />
           <input type="hidden" name="wrap" value="b" />
@@ -88,6 +89,7 @@ export default class Edit extends React.Component {
           className="inline-block ml6"
           action="https://codepen.io/pen/define"
           method="POST"
+          target="_blank"
         >
           <input
             type="hidden"

@@ -6,6 +6,7 @@ Array [
     action="http://jsfiddle.net/api/post/library/pure/"
     className="inline-block"
     method="post"
+    target="_blank"
   >
     <input
       className="btn btn--s cursor-pointer round"
@@ -82,6 +83,7 @@ See the example: https://docs.mapbox.com//mapbox-gl-js/example/simple-map/"
     action="https://codepen.io/pen/define"
     className="inline-block ml6"
     method="POST"
+    target="_blank"
   >
     <input
       name="data"
