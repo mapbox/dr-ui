@@ -67,7 +67,7 @@ testCases.beta = {
   props: {
     features: ['Chips', 'Tots', 'Fries'],
     title: 'Mapbox Potato SDK',
-    beta: true,
+    tag: 'beta',
     image: (
       <img
         width={800}
@@ -110,6 +110,32 @@ testCases.contactUs = {
     image: (
       <img
         height={300}
+        src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
+      />
+    )
+  }
+};
+
+testCases.customTag = {
+  description: 'Custom tag',
+  component: OverviewHeader,
+  props: {
+    features: ['Chips', 'Tots', 'Fries'],
+    title: 'Mapbox Potato SDK',
+    tag: 'custom',
+    customTagProps: {
+      customLabel: 'Custom',
+      customTooltipText: 'This is a custom tag.',
+      customStyles: {
+        background: '#FEDADA',
+        color: '#bb2224',
+        borderColor: '#FD8383'
+      }
+    },
+    image: (
+      <img
+        width={800}
+        height={499}
         src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
       />
     )

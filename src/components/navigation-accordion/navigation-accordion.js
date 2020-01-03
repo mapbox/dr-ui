@@ -4,6 +4,7 @@ import classnames from 'classnames';
 import Icon from '@mapbox/mr-ui/icon';
 import NavigationDropdown from '../navigation-dropdown/navigation-dropdown';
 import debounce from 'debounce';
+import Tag from '../tag/tag';
 
 const debounceVal = 50;
 
@@ -55,6 +56,26 @@ class NavigationAccordion extends React.PureComponent {
     }
   }
 
+  buildTag = item => {
+    const tagProps = {
+      theme: item.tag,
+      customLabel: item.customTagProps
+        ? item.customTagProps.customLabel
+        : undefined,
+      customTooltipText: item.customTagProps
+        ? item.customTagProps.customTooltipText
+        : undefined,
+      customStyles: item.customTagProps
+        ? item.customTagProps.customStyles
+        : undefined
+    };
+    return (
+      <span className="ml6">
+        <Tag {...tagProps} />
+      </span>
+    );
+  };
+
   render() {
     const { props, state } = this;
     function itemClasses(isActive) {
@@ -77,6 +98,7 @@ class NavigationAccordion extends React.PureComponent {
               <li key={subItem.path} className="mt6">
                 <a href={`#${subItem.path}`} className={itemClasses(isActive)}>
                   {subItem.title}
+                  {subItem.tag ? this.buildTag(subItem) : ''}
                 </a>
               </li>
             );
@@ -85,6 +107,7 @@ class NavigationAccordion extends React.PureComponent {
           <li key={item.path} className="mb6">
             <a href={`#${item.path}`} className={itemClasses(isActive)}>
               {item.title}
+              {item.tag ? this.buildTag(item) : ''}
             </a>
             <ul className={openSubItems ? 'pl12 color-darken75' : 'none'}>
               {subItems}
@@ -136,7 +159,7 @@ class NavigationAccordion extends React.PureComponent {
               >
                 <div className={textClasses}>
                   {title}
-                  {page.tag ? page.tag : ''}
+                  {page.tag ? this.buildTag(page) : ''}
                 </div>
                 {icon}
               </a>
@@ -167,17 +190,67 @@ NavigationAccordion.propTypes = {
     firstLevelItems: PropTypes.arrayOf(
       PropTypes.shape({
         title: PropTypes.string.isRequired,
-        tag: PropTypes.node,
+        tag: PropTypes.oneOf([
+          'legacy',
+          'beta',
+          'fundamentals',
+          'new',
+          'custom'
+        ]),
+        /* Required if tag is set to `custom` */
+        customTagProps: PropTypes.shape({
+          customLabel: PropTypes.string.isRequired,
+          customTooltipText: PropTypes.string.isRequired,
+          customStyles: PropTypes.shape({
+            background: PropTypes.string.isRequired,
+            color: PropTypes.string.isRequired,
+            borderColor: PropTypes.string.isRequired
+          }).isRequired
+        }),
         path: PropTypes.string.isRequired
       })
     ).isRequired,
     secondLevelItems: PropTypes.arrayOf(
       PropTypes.shape({
         title: PropTypes.string.isRequired,
+        tag: PropTypes.oneOf([
+          'legacy',
+          'beta',
+          'fundamentals',
+          'new',
+          'custom'
+        ]),
+        /* Required if tag is set to `custom` */
+        customTagProps: PropTypes.shape({
+          customLabel: PropTypes.string.isRequired,
+          customTooltipText: PropTypes.string.isRequired,
+          customStyles: PropTypes.shape({
+            background: PropTypes.string.isRequired,
+            color: PropTypes.string.isRequired,
+            borderColor: PropTypes.string.isRequired
+          }).isRequired
+        }),
         path: PropTypes.string.isRequired,
         thirdLevelItems: PropTypes.arrayOf(
           PropTypes.shape({
             title: PropTypes.string.isRequired,
+            tag: PropTypes.oneOf([
+              'legacy',
+              'beta',
+              'fundamentals',
+              'new',
+              'custom'
+            ]),
+            /* Required if tag is set to `custom` */
+            customTagProps: PropTypes.shape({
+              customLabel: PropTypes.string.isRequired,
+              customTooltipText: PropTypes.string.isRequired,
+              customStyles: PropTypes.shape({
+                background: PropTypes.string.isRequired,
+                color: PropTypes.string.isRequired,
+                borderColor: PropTypes.string.isRequired
+              }).isRequired
+            }),
             path: PropTypes.string.isRequired
           })
         )

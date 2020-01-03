@@ -195,7 +195,6 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
                   href="/api/"
                 >
                   API Documentation
-                  
                 </a>
               </div>
             </div>
@@ -384,6 +383,7 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
                               href="#heading-one"
                             >
                               Heading one
+                              
                             </a>
                             <ul
                               className="none"
@@ -397,6 +397,7 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
                               href="#heading-two"
                             >
                               Heading two
+                              
                             </a>
                             <ul
                               className="none"
@@ -505,6 +506,36 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
           </p>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`search Search with custom connector renders as expected 1`] = `
+<div
+  className="h36 relative"
+>
+  <div>
+    <div>
+      <button
+        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke "
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <span
+          className="mr6"
+        >
+          <svg
+            className="icon w18 h18"
+          >
+            <use
+              xlinkHref="#icon-search"
+            />
+          </svg>
+        </span>
+         
+        Search
+      </button>
     </div>
   </div>
 </div>

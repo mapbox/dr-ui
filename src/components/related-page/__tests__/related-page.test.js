@@ -1,15 +1,15 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { testCases } from './warning-image-test-cases.js';
+import { testCases } from './related-page-test-cases.js';
 
-describe('warning-image', () => {
-  describe(testCases.warning.description, () => {
+describe('related-page', () => {
+  describe(testCases.tutorial.description, () => {
     let testCase;
     let wrapper;
     let tree;
 
     beforeEach(() => {
-      testCase = testCases.warning;
+      testCase = testCases.tutorial;
       wrapper = renderer.create(
         React.createElement(testCase.component, testCase.props)
       );
@@ -20,14 +20,13 @@ describe('warning-image', () => {
       expect(tree).toMatchSnapshot();
     });
   });
-
-  describe(testCases.error.description, () => {
+  describe(testCases.troubleshooting.description, () => {
     let testCase;
     let wrapper;
     let tree;
 
     beforeEach(() => {
-      testCase = testCases.error;
+      testCase = testCases.troubleshooting;
       wrapper = renderer.create(
         React.createElement(testCase.component, testCase.props)
       );
@@ -38,14 +37,13 @@ describe('warning-image', () => {
       expect(tree).toMatchSnapshot();
     });
   });
-
-  describe(testCases.bigger.description, () => {
+  describe(testCases.guide.description, () => {
     let testCase;
     let wrapper;
     let tree;
 
     beforeEach(() => {
-      testCase = testCases.bigger;
+      testCase = testCases.guide;
       wrapper = renderer.create(
         React.createElement(testCase.component, testCase.props)
       );
@@ -56,14 +54,30 @@ describe('warning-image', () => {
       expect(tree).toMatchSnapshot();
     });
   });
-
-  describe(testCases.biggerRed.description, () => {
+  describe(testCases.glossary.description, () => {
     let testCase;
     let wrapper;
     let tree;
 
     beforeEach(() => {
-      testCase = testCases.biggerRed;
+      testCase = testCases.glossary;
+      wrapper = renderer.create(
+        React.createElement(testCase.component, testCase.props)
+      );
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
+  describe(testCases.example.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.example;
       wrapper = renderer.create(
         React.createElement(testCase.component, testCase.props)
       );

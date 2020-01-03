@@ -48,8 +48,27 @@ testCases.beta = {
   description: 'Beta product',
   props: {
     productName: 'Vision SDK for Android',
-    beta: true,
+    tag: 'beta',
     homePage: '/vision/'
+  }
+};
+
+testCases.customTag = {
+  component: ProductMenu,
+  description: 'Beta product',
+  props: {
+    productName: 'Potato SDK',
+    tag: 'custom',
+    customTagProps: {
+      customLabel: 'Custom',
+      customTooltipText: 'This is a custom tag.',
+      customStyles: {
+        background: '#FEDADA',
+        color: '#bb2224',
+        borderColor: '#FD8383'
+      }
+    },
+    homePage: '#'
   }
 };
 

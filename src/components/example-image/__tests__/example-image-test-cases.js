@@ -1,15 +1,15 @@
-import NewImage from '../new-image';
+import ExampleImage from '../example-image';
 
 const testCases = {};
 
 testCases.basic = {
-  component: NewImage,
+  component: ExampleImage,
   description: 'Basic'
 };
 
 testCases.bigger = {
-  component: NewImage,
-  description: 'Bigger icon',
+  component: ExampleImage,
+  description: 'Bigger',
   props: {
     size: 120
   }

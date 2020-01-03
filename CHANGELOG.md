@@ -1,5 +1,33 @@
 # Changelog
 
+## master
+
+* Add IE11 compatibility for the `Search` component. [#203](https://github.com/mapbox/dr-ui/pull/203)
+* Add `beta` and `download` themes to `Note`. [#202](https://github.com/mapbox/dr-ui/pull/202)
+* 🚨Remove `imageComponent` option from `Note`. The theme will select the accompanying image or you can pass `image={false}` to prevent the theme's image from appearing in `Note`. [#202](https://github.com/mapbox/dr-ui/pull/202)
+* Add `RelatedPage` component. [#213](https://github.com/mapbox/dr-ui/pull/213)
+* Add `GlossaryImage` component. [#213](https://github.com/mapbox/dr-ui/pull/213)
+* Add `ExampleImage` component. [#213](https://github.com/mapbox/dr-ui/pull/213)
+* 🚨 Refactor how tags are defined and applied to other components ([#216](https://github.com/mapbox/dr-ui/pull/216)).
+  * Add generic `Tag` component with several `theme` options.
+  * Remove `BetaFlag`. Use `<Tag theme="beta" />` instead.
+  * Update existing components ( `OverviewHeader`, `NavigationAccordion` `ProductMenu`). Pass a string to the `tag` prop to use a predefined `theme`. To use a custom theme, pass `custom` to the `theme` prop and add a `customTagProps` prop. `customTagProps` is required when using the `custom` theme.
+* Add an optional `tag` prop for second and third level headings in `NavigationAccordion`. [#212](https://github.com/mapbox/dr-ui/pull/212)
+* Update `NumberedCodeSnippet` to include the option to hide lines not included in `copyRanges`. Lines are hidden by default. [#206](https://github.com/mapbox/dr-ui/pull/206)
+* Update `Feedback` component's Sentry integration. [#209](https://github.com/mapbox/dr-ui/pull/209)
+  - Conditionally set `section` and `preferredLanguage`.
+  - Set the `environment`.
+  - Allow `feedbackSentryDsn` to accept boolean (false) to disable sending text feedback to Sentry. 🚨 If you're using the Feedback component, but not using Sentry to triage feedback, set this value to false.
+
+## 0.24.0
+
+* Add Sentry to `Feedback` component for text feedback issue management. [#198](https://github.com/mapbox/dr-ui/pull/198)
+* Add support for `groovy` syntax highlighting. [#201](https://github.com/mapbox/dr-ui/pull/201)
+
+## 0.23.0
+
+* Allow caller to provide a custom `connector` to the `Search` component. [#200](https://github.com/mapbox/dr-ui/pull/200)
+
 ## 0.22.0
 
 * Add a CSS highlighter option to the `Highlight` component. [#191](https://github.com/mapbox/dr-ui/pull/191)

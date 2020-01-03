@@ -1,31 +1,18 @@
-import 'core-js/stable';
-import 'regenerator-runtime/runtime';
+import 'react-app-polyfill/ie11';
+import 'react-app-polyfill/stable';
 import React from 'react';
 import PropTypes from 'prop-types';
 import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
 import { SearchProvider, WithSearch } from '@elastic/react-search-ui';
 import SearchBox from './search-box';
 
-const connector = new SiteSearchAPIConnector({
-  engineKey: 'zpAwGSb8YMXtF9yDeS5K', // public engine key
-  engineName: 'docs',
-  documentType: ['page']
-});
-
 class Search extends React.Component {
   render() {
     const { props } = this;
-    const isIE11 =
-      typeof window !== 'undefined' &&
-      !!window.MSInputMethodContext &&
-      (typeof document !== 'undefined' && !!document.documentMode);
-    // do not load search component on IE 11
-    return isIE11 ? (
-      ''
-    ) : (
+    return (
       <SearchProvider
         config={{
-          apiConnector: connector,
+          apiConnector: props.connector,
           initialState: {
             resultsPerPage: 10
           },
@@ -96,13 +83,19 @@ Search.propTypes = {
   background: PropTypes.oneOf(['light', 'dark']),
   inputId: PropTypes.string, // option to override default id for input/label, used for testing
   disableModal: PropTypes.bool, // option to completely disable modal if you always want an input
-  site: PropTypes.string // option to add current site or all docs filter toggle
+  site: PropTypes.string, // option to add current site or all docs filter toggle
+  connector: PropTypes.instanceOf(SiteSearchAPIConnector) // option to connect to a custom search engine
 };
 
 Search.defaultProps = {
   background: 'light',
   placeholder: 'Search docs.mapbox.com',
-  inputId: 'docs-search'
+  inputId: 'docs-search',
+  connector: new SiteSearchAPIConnector({
+    engineKey: 'zpAwGSb8YMXtF9yDeS5K', // public engine key
+    engineName: 'docs',
+    documentType: ['page']
+  })
 };
 
 export default Search;
