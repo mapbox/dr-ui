@@ -1,0 +1,275 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CodeSnippet A CodeSnippet with every feature (edit buttons, title) renders as expected 1`] = `
+<div
+  data-swiftype-index="false"
+>
+  <div
+    className="flex-parent-mm flex-parent--space-between-main-mm mb6"
+  >
+    <div
+      className="flex-child"
+    >
+      <div
+        className="inline-block txt-bold mb6 color-gray-dark"
+      >
+        index.html
+      </div>
+    </div>
+  </div>
+  <div
+    className="relative prose"
+  >
+    <div
+      className="absolute-mm mb6 mb0-mm top right mr36-mm z2"
+      style={
+        Object {
+          "marginTop": "4px",
+        }
+      }
+    >
+      <form
+        action="http://jsfiddle.net/api/post/library/pure/"
+        className="inline-block"
+        method="post"
+      >
+        <input
+          className="btn btn--s cursor-pointer round"
+          onClick={[Function]}
+          style={
+            Object {
+              "border": 0,
+            }
+          }
+          type="submit"
+          value="Edit in JSFiddle"
+        />
+        <input
+          name="wrap"
+          type="hidden"
+          value="b"
+        />
+        <input
+          name="css"
+          type="hidden"
+          value="h1 {
+  color: red;
+}
+"
+        />
+        <input
+          name="html"
+          type="hidden"
+          value="<h1>gurd murn!</h1>
+"
+        />
+        <input
+          name="js"
+          type="hidden"
+          value="console.log(\\"hurn\\");
+"
+        />
+        <input
+          name="title"
+          type="hidden"
+          value="My Code"
+        />
+        <input
+          name="resources"
+          type="hidden"
+          value={Array []}
+        />
+        <input
+          name="description"
+          type="hidden"
+          value="cool code by mapbox
+
+See the example: https://docs.mapbox.com//site"
+        />
+      </form>
+      <form
+        action="https://codepen.io/pen/define"
+        className="inline-block ml6"
+        method="POST"
+      >
+        <input
+          name="data"
+          type="hidden"
+          value="{\\"title\\":\\"My Code\\",\\"html\\":\\"<h1>gurd murn!</h1>\\\\n\\",\\"description\\":\\"cool code by mapbox\\\\n\\\\nSee the example: [https://docs.mapbox.com//site](https://docs.mapbox.com//site)\\",\\"tags\\":[\\"mapbox\\",\\"maps\\"],\\"css\\":\\"h1 {\\\\n  color: red;\\\\n}\\\\n\\",\\"js\\":\\"console.log(\\\\\\"hurn\\\\\\");\\\\n\\",\\"css_external\\":\\"\\",\\"js_external\\":\\"\\"}"
+        />
+        <input
+          className="btn btn--s cursor-pointer round"
+          onClick={[Function]}
+          style={
+            Object {
+              "border": 0,
+            }
+          }
+          type="submit"
+          value="Edit in CodePen"
+        />
+      </form>
+    </div>
+    <div
+      className="relative round z0 scroll-styled"
+      style={Object {}}
+    >
+      <pre>
+        <code
+          className="px0 hljs"
+        >
+          <div
+            className="relative z2"
+            data-chunk-code="chunk-0"
+          >
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>h1</span><span class=\\"token punctuation\\">></span></span>hi<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;/</span>h1</span><span class=\\"token punctuation\\">></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+          </div>
+        </code>
+      </pre>
+      <div
+        className="absolute z2 top right mr6 mt6 color-white"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CodeSnippet CodeSnippet without edit buttons renders as expected 1`] = `
+<div
+  data-swiftype-index="false"
+>
+  <div
+    className="flex-parent-mm flex-parent--space-between-main-mm mb6"
+  >
+    <div
+      className="flex-child"
+    >
+      <div
+        className="inline-block txt-bold mb6 color-gray-dark"
+      >
+        index.html
+      </div>
+    </div>
+  </div>
+  <div
+    className="relative prose"
+  >
+    
+    <div
+      className="relative round z0 scroll-styled"
+      style={Object {}}
+    >
+      <pre>
+        <code
+          className="px0 hljs"
+        >
+          <div
+            className="relative z2"
+            data-chunk-code="chunk-0"
+          >
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>h1</span><span class=\\"token punctuation\\">></span></span>hi<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;/</span>h1</span><span class=\\"token punctuation\\">></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+          </div>
+        </code>
+      </pre>
+      <div
+        className="absolute z2 top right mr6 mt6 color-white"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CodeSnippet CodeSnippet without title renders as expected 1`] = `
+<div
+  data-swiftype-index="false"
+>
+  <div
+    className="relative prose"
+  >
+    
+    <div
+      className="relative round z0 scroll-styled"
+      style={Object {}}
+    >
+      <pre>
+        <code
+          className="px0 hljs"
+        >
+          <div
+            className="relative z2"
+            data-chunk-code="chunk-0"
+          >
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>h1</span><span class=\\"token punctuation\\">></span></span>hi<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;/</span>h1</span><span class=\\"token punctuation\\">></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+          </div>
+        </code>
+      </pre>
+      <div
+        className="absolute z2 top right mr6 mt6 color-white"
+      />
+    </div>
+  </div>
+</div>
+`;

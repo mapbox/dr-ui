@@ -75,7 +75,7 @@ export default class Edit extends React.Component {
           <input
             type="hidden"
             name="resources"
-            value={resources.js.concat(resources.css)}
+            value={resources ? resources.js.concat(resources.css) : []}
           />
           <input
             type="hidden"
@@ -99,8 +99,10 @@ export default class Edit extends React.Component {
               tags: projectMeta.tags,
               css: css,
               js: js,
-              css_external: resources.css.join(';'),
-              js_external: resources.js.join(';'),
+              css_external:
+                resources && resources.css ? resources.css.join(';') : '',
+              js_external:
+                resources && resources.js ? resources.js.join(';') : '',
               head: head
             })}
           />
