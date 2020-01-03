@@ -9,6 +9,7 @@ import parserHtml from 'prettier/parser-html';
 import stripMd from 'remove-markdown';
 import * as Sentry from '@sentry/browser';
 
+// formats the metadata
 function meta(frontMatter) {
   let description = frontMatter.description,
     path = `https://docs.mapbox.com/${frontMatter.pathname}`;
@@ -20,6 +21,7 @@ function meta(frontMatter) {
   };
 }
 
+// formats the code with prettier
 function format(code, parser, plugin) {
   try {
     return prettier.format(code, { parser: parser, plugins: [plugin] });
@@ -32,6 +34,7 @@ function format(code, parser, plugin) {
   }
 }
 
+// creates a form wrapper for each platform
 class Form extends React.Component {
   render() {
     let classes = `inline-block`;
@@ -49,6 +52,7 @@ class Form extends React.Component {
   }
 }
 
+// creates the actual button that the user can click
 class Button extends React.Component {
   render() {
     const platform = this.props.platform;
