@@ -82,7 +82,7 @@ export default class Edit extends React.Component {
     html = format(html, 'html', parserHtml);
     return (
       <>
-        <Form action="http://jsfiddle.net/api/post/library/pure/">
+        <Form action="https://jsfiddle.net/api/post/library/pure/">
           <Button platform="JSFiddle" />
           <input type="hidden" name="wrap" value="b" />
           <input type="hidden" name="css" value={css} />
