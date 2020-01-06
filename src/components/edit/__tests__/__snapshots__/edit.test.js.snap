@@ -3,7 +3,7 @@
 exports[`edit Basic example renders as expected 1`] = `
 Array [
   <form
-    action="http://jsfiddle.net/api/post/library/pure/"
+    action="https://jsfiddle.net/api/post/library/pure/"
     className="inline-block"
     method="POST"
     target="_blank"
