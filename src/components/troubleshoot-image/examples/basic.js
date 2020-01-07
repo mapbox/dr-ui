@@ -6,6 +6,6 @@ import TroubleshootImage from '../troubleshoot-image';
 
 export default class Example extends React.Component {
   render() {
-    return <TroubleshootImage size="60" />;
+    return <TroubleshootImage />;
   }
 }

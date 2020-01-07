@@ -12,11 +12,13 @@ export default class Example extends React.Component {
         onChange={() => {}}
         options={[
           {
+            label: 'Swift',
             language: 'swift',
             preferredLanguage: true
           },
           {
-            language: 'objective-c',
+            label: 'Objective-C',
+            language: 'objectiveC',
             preferredLanguage: false
           }
         ]}

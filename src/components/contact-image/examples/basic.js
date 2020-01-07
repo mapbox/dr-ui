@@ -6,6 +6,6 @@ import ContactImage from '../contact-image';
 
 export default class Example extends React.Component {
   render() {
-    return <ContactImage size="60" />;
+    return <ContactImage />;
   }
 }

@@ -98,11 +98,6 @@ function PropRow(props) {
     </span>
   );
 
-  console.log(
-    props.name,
-    props.options && props.options.length ? typeof props.options : null
-  );
-
   const options = props.options
     ? props.options.length && typeof props.options === 'object'
       ? props.options.map(o => o.value || o.name)

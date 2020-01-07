@@ -6,6 +6,6 @@ import BookletImage from '../booklet-image';
 
 export default class Example extends React.Component {
   render() {
-    return <BookletImage size="60" />;
+    return <BookletImage />;
   }
 }
