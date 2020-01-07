@@ -56,4 +56,22 @@ describe('CodeSnippet', () => {
       expect(tree).toMatchSnapshot();
     });
   });
+
+  describe(testCases.withHelpers.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.withHelpers;
+      wrapper = renderer.create(
+        React.createElement(testCase.component, testCase.props)
+      );
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });
