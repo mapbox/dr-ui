@@ -87,14 +87,18 @@ function processComponent(hyphenName) {
     pify(fs.readFile)(srcFilename, 'utf8'),
     getExamples(componentDir)
   ]).then(([code, examples]) => {
-    const parsedData = reactDocgen.parse(code);
-    return `{
-      name: '${parsedData.displayName}',
-      description: ${jsxtremeMarkdown.toJsx(parsedData.description).trim() ||
-        'null'},
-      props: ${processProps(parsedData.props)},
-      examples: [${examples.join(',')}]
-    }`;
+    try {
+      const parsedData = reactDocgen.parse(code);
+      return `{
+        name: '${parsedData.displayName}',
+        description: ${jsxtremeMarkdown.toJsx(parsedData.description).trim() ||
+          'null'},
+        props: ${processProps(parsedData.props)},
+        examples: [${examples.join(',')}]
+      }`;
+    } catch (err) {
+      console.log('err, skipping', srcFilename);
+    }
   });
 }
 

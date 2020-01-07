@@ -51,6 +51,7 @@
     "babelify": "^10.0.0",
     "budo": "^11.6.3",
     "color-contrast-checker": "^1.5.0",
+    "core-js": "^2.6.11",
     "cpy": "^7.0.1",
     "cpy-cli": "^2.0.0",
     "del": "^3.0.0",

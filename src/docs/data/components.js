@@ -49,34 +49,6 @@ module.exports = [
     ]
   },
   {
-    name: "BetaFlag",
-    description: null,
-    props: {
-      tooltipText: {
-        type: { name: "string" },
-        required: false,
-        defaultValue:
-          "'This feature is in public beta and is subject to potential changes.'",
-        description: <div />,
-        options: undefined
-      }
-    },
-    examples: [
-      {
-        exampleModule: require("/Users/katydecorah/Documents/GitHub/dr-ui/src/components/beta-flag/examples/basic.js"),
-        code: `<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
-<span class="token keyword">import</span> BetaFlag <span class="token keyword">from</span> <span class="token string">'@mapbox/mr-ui/beta-flag'</span><span class="token punctuation">;</span>
-
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
-  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>BetaFlag</span> <span class="token attr-name">tooltipText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Cool!<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>`,
-        description: <p>Basic.</p>
-      }
-    ]
-  },
-  {
     name: "BookImage",
     description: null,
     props: {
@@ -288,6 +260,108 @@ module.exports = [
         <span class="token punctuation">]</span><span class="token punctuation">}</span></span>
       <span class="token punctuation">/></span></span>
     <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>`,
+        description: <p>Basic.</p>
+      }
+    ]
+  },
+  {
+    name: "CodeSnippet",
+    description: null,
+    props: {
+      code: {
+        type: { name: "string" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      highlighter: {
+        type: { name: "func" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      filename: {
+        type: { name: "string" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      maxHeight: {
+        type: { name: "number" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      edit: {
+        type: {
+          name: "shape",
+          value: {
+            css: { name: "string", required: true },
+            js: { name: "string", required: true },
+            html: { name: "string", required: true },
+            head: { name: "string", required: false },
+            frontMatter: {
+              name: "shape",
+              value: {
+                title: { name: "string", required: true },
+                description: { name: "string", required: true },
+                pathname: { name: "string", required: true }
+              },
+              required: false
+            },
+            resources: {
+              name: "shape",
+              value: {
+                js: { name: "array", required: false },
+                css: { name: "array", required: false }
+              },
+              required: false
+            }
+          }
+        },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: {
+          css: { name: "string", required: true },
+          js: { name: "string", required: true },
+          html: { name: "string", required: true },
+          head: { name: "string", required: false },
+          frontMatter: {
+            name: "shape",
+            value: {
+              title: { name: "string", required: true },
+              description: { name: "string", required: true },
+              pathname: { name: "string", required: true }
+            },
+            required: false
+          },
+          resources: {
+            name: "shape",
+            value: {
+              js: { name: "array", required: false },
+              css: { name: "array", required: false }
+            },
+            required: false
+          }
+        }
+      }
+    },
+    examples: [
+      {
+        exampleModule: require("/Users/katydecorah/Documents/GitHub/dr-ui/src/components/code-snippet/examples/basic.js"),
+        code: `<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> CodeSnippet <span class="token keyword">from</span> <span class="token string">'@mapbox/mr-ui/code-snippet'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CodeSnippet</span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
         description: <p>Basic.</p>
@@ -809,6 +883,89 @@ module.exports = [
     examples: []
   },
   {
+    name: "Edit",
+    description: null,
+    props: {
+      css: {
+        type: { name: "string" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      js: {
+        type: { name: "string" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      html: {
+        type: { name: "string" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      head: {
+        type: { name: "string" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      frontMatter: {
+        type: {
+          name: "shape",
+          value: {
+            title: { name: "string", required: true },
+            description: { name: "string", required: true },
+            pathname: { name: "string", required: true }
+          }
+        },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: {
+          title: { name: "string", required: true },
+          description: { name: "string", required: true },
+          pathname: { name: "string", required: true }
+        }
+      },
+      resources: {
+        type: {
+          name: "shape",
+          value: {
+            js: { name: "array", required: false },
+            css: { name: "array", required: false }
+          }
+        },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: {
+          js: { name: "array", required: false },
+          css: { name: "array", required: false }
+        }
+      }
+    },
+    examples: []
+  },
+  {
+    name: "ExampleImage",
+    description: null,
+    props: {
+      size: {
+        type: { name: "number" },
+        required: false,
+        defaultValue: "60",
+        description: <div />,
+        options: undefined
+      }
+    },
+    examples: []
+  },
+  {
     name: "ExamplesPage",
     description: null,
     props: {
@@ -1022,6 +1179,14 @@ module.exports = [
         defaultValue: undefined,
         description: <div />,
         options: undefined
+      },
+      feedbackSentryDsn: {
+        type: { name: "union", value: [{ name: "string" }, { name: "bool" }] },
+        required: false,
+        defaultValue:
+          "'https://eccc8b561b9a461990309b01d33d54e3@sentry.io/1848287'",
+        description: <div />,
+        options: [{ name: "string" }, { name: "bool" }]
       }
     },
     examples: []
@@ -1036,6 +1201,117 @@ module.exports = [
         defaultValue: undefined,
         description: <div />,
         options: undefined
+      }
+    },
+    examples: []
+  },
+  {
+    name: "GlossaryCard",
+    description: null,
+    props: {
+      entryTitle: {
+        type: { name: "string" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      entryUrl: {
+        type: { name: "string" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      entryDescription: {
+        type: { name: "string" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      }
+    },
+    examples: []
+  },
+  {
+    name: "GlossaryImage",
+    description: null,
+    props: {
+      size: {
+        type: { name: "number" },
+        required: false,
+        defaultValue: "60",
+        description: <div />,
+        options: undefined
+      }
+    },
+    examples: []
+  },
+  {
+    name: "GlossaryPage",
+    description: null,
+    props: {
+      entries: {
+        type: {
+          name: "arrayOf",
+          value: {
+            name: "shape",
+            value: {
+              path: { name: "string", required: true },
+              title: { name: "string", required: true },
+              description: { name: "string", required: true }
+            }
+          }
+        },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: {
+          name: "shape",
+          value: {
+            path: { name: "string", required: true },
+            title: { name: "string", required: true },
+            description: { name: "string", required: true }
+          }
+        }
+      }
+    },
+    examples: []
+  },
+  {
+    name: "GlossarySection",
+    description: null,
+    props: {
+      letter: {
+        type: { name: "string" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      entries: {
+        type: {
+          name: "arrayOf",
+          value: {
+            name: "shape",
+            value: {
+              path: { name: "string", required: true },
+              title: { name: "string", required: true },
+              description: { name: "string", required: true }
+            }
+          }
+        },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: {
+          name: "shape",
+          value: {
+            path: { name: "string", required: true },
+            title: { name: "string", required: true },
+            description: { name: "string", required: true }
+          }
+        }
       }
     },
     examples: []
@@ -1129,7 +1405,34 @@ module.exports = [
                 name: "shape",
                 value: {
                   title: { name: "string", required: true },
-                  tag: { name: "node", required: false },
+                  tag: {
+                    name: "enum",
+                    value: [
+                      { value: "'legacy'", computed: false },
+                      { value: "'beta'", computed: false },
+                      { value: "'fundamentals'", computed: false },
+                      { value: "'new'", computed: false },
+                      { value: "'custom'", computed: false }
+                    ],
+                    required: false
+                  },
+                  customTagProps: {
+                    name: "shape",
+                    value: {
+                      customLabel: { name: "string", required: true },
+                      customTooltipText: { name: "string", required: true },
+                      customStyles: {
+                        name: "shape",
+                        value: {
+                          background: { name: "string", required: true },
+                          color: { name: "string", required: true },
+                          borderColor: { name: "string", required: true }
+                        },
+                        required: true
+                      }
+                    },
+                    required: false
+                  },
                   path: { name: "string", required: true }
                 }
               },
@@ -1141,6 +1444,34 @@ module.exports = [
                 name: "shape",
                 value: {
                   title: { name: "string", required: true },
+                  tag: {
+                    name: "enum",
+                    value: [
+                      { value: "'legacy'", computed: false },
+                      { value: "'beta'", computed: false },
+                      { value: "'fundamentals'", computed: false },
+                      { value: "'new'", computed: false },
+                      { value: "'custom'", computed: false }
+                    ],
+                    required: false
+                  },
+                  customTagProps: {
+                    name: "shape",
+                    value: {
+                      customLabel: { name: "string", required: true },
+                      customTooltipText: { name: "string", required: true },
+                      customStyles: {
+                        name: "shape",
+                        value: {
+                          background: { name: "string", required: true },
+                          color: { name: "string", required: true },
+                          borderColor: { name: "string", required: true }
+                        },
+                        required: true
+                      }
+                    },
+                    required: false
+                  },
                   path: { name: "string", required: true },
                   thirdLevelItems: {
                     name: "arrayOf",
@@ -1148,6 +1479,37 @@ module.exports = [
                       name: "shape",
                       value: {
                         title: { name: "string", required: true },
+                        tag: {
+                          name: "enum",
+                          value: [
+                            { value: "'legacy'", computed: false },
+                            { value: "'beta'", computed: false },
+                            { value: "'fundamentals'", computed: false },
+                            { value: "'new'", computed: false },
+                            { value: "'custom'", computed: false }
+                          ],
+                          required: false
+                        },
+                        customTagProps: {
+                          name: "shape",
+                          value: {
+                            customLabel: { name: "string", required: true },
+                            customTooltipText: {
+                              name: "string",
+                              required: true
+                            },
+                            customStyles: {
+                              name: "shape",
+                              value: {
+                                background: { name: "string", required: true },
+                                color: { name: "string", required: true },
+                                borderColor: { name: "string", required: true }
+                              },
+                              required: true
+                            }
+                          },
+                          required: false
+                        },
                         path: { name: "string", required: true }
                       }
                     },
@@ -1169,7 +1531,34 @@ module.exports = [
               name: "shape",
               value: {
                 title: { name: "string", required: true },
-                tag: { name: "node", required: false },
+                tag: {
+                  name: "enum",
+                  value: [
+                    { value: "'legacy'", computed: false },
+                    { value: "'beta'", computed: false },
+                    { value: "'fundamentals'", computed: false },
+                    { value: "'new'", computed: false },
+                    { value: "'custom'", computed: false }
+                  ],
+                  required: false
+                },
+                customTagProps: {
+                  name: "shape",
+                  value: {
+                    customLabel: { name: "string", required: true },
+                    customTooltipText: { name: "string", required: true },
+                    customStyles: {
+                      name: "shape",
+                      value: {
+                        background: { name: "string", required: true },
+                        color: { name: "string", required: true },
+                        borderColor: { name: "string", required: true }
+                      },
+                      required: true
+                    }
+                  },
+                  required: false
+                },
                 path: { name: "string", required: true }
               }
             },
@@ -1181,6 +1570,34 @@ module.exports = [
               name: "shape",
               value: {
                 title: { name: "string", required: true },
+                tag: {
+                  name: "enum",
+                  value: [
+                    { value: "'legacy'", computed: false },
+                    { value: "'beta'", computed: false },
+                    { value: "'fundamentals'", computed: false },
+                    { value: "'new'", computed: false },
+                    { value: "'custom'", computed: false }
+                  ],
+                  required: false
+                },
+                customTagProps: {
+                  name: "shape",
+                  value: {
+                    customLabel: { name: "string", required: true },
+                    customTooltipText: { name: "string", required: true },
+                    customStyles: {
+                      name: "shape",
+                      value: {
+                        background: { name: "string", required: true },
+                        color: { name: "string", required: true },
+                        borderColor: { name: "string", required: true }
+                      },
+                      required: true
+                    }
+                  },
+                  required: false
+                },
                 path: { name: "string", required: true },
                 thirdLevelItems: {
                   name: "arrayOf",
@@ -1188,6 +1605,34 @@ module.exports = [
                     name: "shape",
                     value: {
                       title: { name: "string", required: true },
+                      tag: {
+                        name: "enum",
+                        value: [
+                          { value: "'legacy'", computed: false },
+                          { value: "'beta'", computed: false },
+                          { value: "'fundamentals'", computed: false },
+                          { value: "'new'", computed: false },
+                          { value: "'custom'", computed: false }
+                        ],
+                        required: false
+                      },
+                      customTagProps: {
+                        name: "shape",
+                        value: {
+                          customLabel: { name: "string", required: true },
+                          customTooltipText: { name: "string", required: true },
+                          customStyles: {
+                            name: "shape",
+                            value: {
+                              background: { name: "string", required: true },
+                              color: { name: "string", required: true },
+                              borderColor: { name: "string", required: true }
+                            },
+                            required: true
+                          }
+                        },
+                        required: false
+                      },
                       path: { name: "string", required: true }
                     }
                   },
@@ -1321,20 +1766,6 @@ module.exports = [
     ]
   },
   {
-    name: "NewImage",
-    description: null,
-    props: {
-      size: {
-        type: { name: "number" },
-        required: false,
-        defaultValue: "60",
-        description: <div />,
-        options: undefined
-      }
-    },
-    examples: []
-  },
-  {
     name: "Note",
     description: null,
     props: {
@@ -1352,19 +1783,38 @@ module.exports = [
         description: <div />,
         options: undefined
       },
-      imageComponent: {
-        type: { name: "node" },
-        required: true,
-        defaultValue: undefined,
+      image: {
+        type: { name: "bool" },
+        required: false,
+        defaultValue: "true",
         description: <div />,
         options: undefined
       },
       theme: {
-        type: { name: "string" },
+        type: {
+          name: "enum",
+          value: [
+            { value: "'warning'", computed: false },
+            { value: "'error'", computed: false },
+            { value: "'download'", computed: false },
+            { value: "'legacy'", computed: false },
+            { value: "'beta'", computed: false },
+            { value: "'default'", computed: false },
+            { value: "'new'", computed: false }
+          ]
+        },
         required: false,
-        defaultValue: undefined,
+        defaultValue: "'default'",
         description: <div />,
-        options: undefined
+        options: [
+          { value: "'warning'", computed: false },
+          { value: "'error'", computed: false },
+          { value: "'download'", computed: false },
+          { value: "'legacy'", computed: false },
+          { value: "'beta'", computed: false },
+          { value: "'default'", computed: false },
+          { value: "'new'", computed: false }
+        ]
       }
     },
     examples: [
@@ -1411,8 +1861,9 @@ module.exports = [
         description: (
           <p>
             The HTML output of running code through a syntax highlighter. If
-            this is not provided, <code>code</code> is displayed, instead. The
-            default theme CSS assumes the highlighter is{" "}
+            this is not provided,
+            <code>code</code> is displayed, instead. The default theme CSS
+            assumes the highlighter is
             <a href="https://github.com/isagalaev/highlight.js">
               <code>highlight.js</code>
             </a>
@@ -1456,8 +1907,9 @@ module.exports = [
         description: (
           <p>
             A callback that is invoked when the snippet (or a chunk of the
-            snippet) is copied. If <code>copyRanges</code> are provided, the
-            callback is passed the index (0-based) of the chunk that was copied.
+            snippet) is copied. If <code>copyRanges</code>
+            are provided, the callback is passed the index (0-based) of the
+            chunk that was copied.
           </p>
         ),
         options: undefined
@@ -1466,15 +1918,7 @@ module.exports = [
         type: { name: "string" },
         required: true,
         defaultValue: undefined,
-        description: (
-          <p>
-            CSS that styles the highlighted code. The default theme is a{" "}
-            <a href="https://highlightjs.readthedocs.io/en/latest/style-guide.html#defining-a-theme">
-              <code>highlight.js</code> theme
-            </a>{" "}
-            theme. It is the dark theme used on mapbox.com's installation flow.
-          </p>
-        ),
+        description: <p>CSS that styles the highlighted code.</p>,
         options: undefined
       },
       characterWidth: {
@@ -1490,17 +1934,24 @@ module.exports = [
         ),
         options: undefined
       },
-      scrollToLive: {
+      collapseLines: {
         type: { name: "bool" },
         required: false,
         defaultValue: "true",
         description: (
-          <p>
-            If the first live chunk (from the <code>copyRanges</code> prop) is
-            not visible in the snippet given the <code>maxHeight</code>, then
-            autoscroll to make sure the live chunk is in view when the page
-            loads. *
-          </p>
+          <div>
+            <p>
+              Determines if non-copiable lines (when using{" "}
+              <code>copyRanges</code>) should be collapsed. Default is true.
+            </p>
+            <p>
+              If false, a <code>maxHeight</code> is defined, and the first live
+              chunk (from the <code>copyRanges</code> prop) is not visible in
+              the snippet given the <code>maxHeight</code>, the component will
+              autoscroll to make sure the live chunk is in view when the page
+              loads.
+            </p>
+          </div>
         ),
         options: undefined
       }
@@ -1525,12 +1976,61 @@ module.exports = [
         description: <div />,
         options: undefined
       },
-      beta: {
-        type: { name: "bool" },
+      tag: {
+        type: {
+          name: "enum",
+          value: [
+            { value: "'legacy'", computed: false },
+            { value: "'beta'", computed: false },
+            { value: "'fundamentals'", computed: false },
+            { value: "'new'", computed: false },
+            { value: "'custom'", computed: false }
+          ]
+        },
         required: false,
-        defaultValue: "false",
+        defaultValue: undefined,
         description: <div />,
-        options: undefined
+        options: [
+          { value: "'legacy'", computed: false },
+          { value: "'beta'", computed: false },
+          { value: "'fundamentals'", computed: false },
+          { value: "'new'", computed: false },
+          { value: "'custom'", computed: false }
+        ]
+      },
+      customTagProps: {
+        type: {
+          name: "shape",
+          value: {
+            customLabel: { name: "string", required: true },
+            customTooltipText: { name: "string", required: true },
+            customStyles: {
+              name: "shape",
+              value: {
+                background: { name: "string", required: true },
+                color: { name: "string", required: true },
+                borderColor: { name: "string", required: true }
+              },
+              required: true
+            }
+          }
+        },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: {
+          customLabel: { name: "string", required: true },
+          customTooltipText: { name: "string", required: true },
+          customStyles: {
+            name: "shape",
+            value: {
+              background: { name: "string", required: true },
+              color: { name: "string", required: true },
+              borderColor: { name: "string", required: true }
+            },
+            required: true
+          }
+        }
       },
       image: {
         type: { name: "node" },
@@ -1680,6 +2180,52 @@ module.exports = [
     examples: []
   },
   {
+    name: "Phone",
+    description: null,
+    props: {
+      children: {
+        type: { name: "node" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      mode: {
+        type: {
+          name: "enum",
+          value: [
+            { value: "'portrait'", computed: false },
+            { value: "'landscape'", computed: false }
+          ]
+        },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: [
+          { value: "'portrait'", computed: false },
+          { value: "'landscape'", computed: false }
+        ]
+      },
+      platform: {
+        type: {
+          name: "enum",
+          value: [
+            { value: "'ios'", computed: false },
+            { value: "'android'", computed: false }
+          ]
+        },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: [
+          { value: "'ios'", computed: false },
+          { value: "'android'", computed: false }
+        ]
+      }
+    },
+    examples: []
+  },
+  {
     name: "ProductMenu",
     description: null,
     props: {
@@ -1690,12 +2236,61 @@ module.exports = [
         description: <div />,
         options: [{ name: "string" }, { name: "node" }]
       },
-      beta: {
-        type: { name: "bool" },
+      tag: {
+        type: {
+          name: "enum",
+          value: [
+            { value: "'legacy'", computed: false },
+            { value: "'beta'", computed: false },
+            { value: "'fundamentals'", computed: false },
+            { value: "'new'", computed: false },
+            { value: "'custom'", computed: false }
+          ]
+        },
         required: false,
-        defaultValue: "false",
+        defaultValue: undefined,
         description: <div />,
-        options: undefined
+        options: [
+          { value: "'legacy'", computed: false },
+          { value: "'beta'", computed: false },
+          { value: "'fundamentals'", computed: false },
+          { value: "'new'", computed: false },
+          { value: "'custom'", computed: false }
+        ]
+      },
+      customTagProps: {
+        type: {
+          name: "shape",
+          value: {
+            customLabel: { name: "string", required: true },
+            customTooltipText: { name: "string", required: true },
+            customStyles: {
+              name: "shape",
+              value: {
+                background: { name: "string", required: true },
+                color: { name: "string", required: true },
+                borderColor: { name: "string", required: true }
+              },
+              required: true
+            }
+          }
+        },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: {
+          customLabel: { name: "string", required: true },
+          customTooltipText: { name: "string", required: true },
+          customStyles: {
+            name: "shape",
+            value: {
+              background: { name: "string", required: true },
+              color: { name: "string", required: true },
+              borderColor: { name: "string", required: true }
+            },
+            required: true
+          }
+        }
       },
       lightText: {
         type: { name: "bool" },
@@ -1740,6 +2335,58 @@ module.exports = [
         description: <p>Beta.</p>
       }
     ]
+  },
+  {
+    name: "RelatedPage",
+    description: null,
+    props: {
+      contentType: {
+        type: {
+          name: "enum",
+          value: [
+            { value: "'example'", computed: false },
+            { value: "'glossary'", computed: false },
+            { value: "'guide'", computed: false },
+            { value: "'tutorial'", computed: false },
+            { value: "'troubleshooting'", computed: false },
+            { value: "'default'", computed: false }
+          ]
+        },
+        required: false,
+        defaultValue: "'default'",
+        description: <div />,
+        options: [
+          { value: "'example'", computed: false },
+          { value: "'glossary'", computed: false },
+          { value: "'guide'", computed: false },
+          { value: "'tutorial'", computed: false },
+          { value: "'troubleshooting'", computed: false },
+          { value: "'default'", computed: false }
+        ]
+      },
+      title: {
+        type: { name: "string" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      description: {
+        type: { name: "string" },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      url: {
+        type: { name: "string" },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      }
+    },
+    examples: []
   },
   {
     name: "Search",
@@ -1795,6 +2442,14 @@ module.exports = [
         defaultValue: undefined,
         description: <div />,
         options: undefined
+      },
+      connector: {
+        type: { name: "instanceOf", value: "SiteSearchAPIConnector" },
+        required: false,
+        defaultValue:
+          "new SiteSearchAPIConnector({\n  engineKey: 'zpAwGSb8YMXtF9yDeS5K', // public engine key\n  engineName: 'docs',\n  documentType: ['page']\n})",
+        description: <div />,
+        options: "SiteSearchAPIConnector"
       }
     },
     examples: [
@@ -1944,6 +2599,68 @@ module.exports = [
         description: <p>Basic.</p>
       }
     ]
+  },
+  {
+    name: "Tag",
+    description: null,
+    props: {
+      theme: {
+        type: {
+          name: "enum",
+          value: [
+            { value: "'beta'", computed: false },
+            { value: "'fundamentals'", computed: false },
+            { value: "'legacy'", computed: false },
+            { value: "'new'", computed: false },
+            { value: "'custom'", computed: false }
+          ]
+        },
+        required: true,
+        defaultValue: undefined,
+        description: <div />,
+        options: [
+          { value: "'beta'", computed: false },
+          { value: "'fundamentals'", computed: false },
+          { value: "'legacy'", computed: false },
+          { value: "'new'", computed: false },
+          { value: "'custom'", computed: false }
+        ]
+      },
+      customLabel: {
+        type: {
+          name: "custom",
+          raw:
+            "(props, componentName) => {\n  if (props.theme === 'custom' && !props.customLabel) {\n    return new Error(\n      `The \"customLabel\" prop is required when using the \"custom\" theme in '${componentName}'.`\n    );\n  } else if (\n    props.theme === 'custom' &&\n    typeof props.customLabel !== 'string'\n  ) {\n    return new Error(\n      `The \"customLabel\" prop in '${componentName} must be a string'.`\n    );\n  }\n}"
+        },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      customTooltipText: {
+        type: {
+          name: "custom",
+          raw:
+            "(props, componentName) => {\n  if (props.theme === 'custom' && !props.customTooltipText) {\n    return new Error(\n      `The \"customTooltipText\" prop is required when using the \"custom\" theme in '${componentName}'.`\n    );\n  } else if (\n    props.theme === 'custom' &&\n    typeof props.customTooltipText !== 'string'\n  ) {\n    return new Error(\n      `The \"customTooltipText\" prop in '${componentName} must be a string'.`\n    );\n  }\n}"
+        },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      },
+      customStyles: {
+        type: {
+          name: "custom",
+          raw:
+            "(props, componentName) => {\n  if (props.theme === 'custom') {\n    if (!props.customStyles) {\n      return new Error(\n        `The \"customStyles\" prop is required when using the \"custom\" theme in '${componentName}'.`\n      );\n    } else if (typeof props.customStyles !== 'object') {\n      return new Error(\n        `The \"customStyles\" prop in '${componentName} must be an object'.`\n      );\n    } else if (\n      !props.customStyles.background ||\n      typeof props.customStyles.background !== 'string'\n    ) {\n      return new Error(\n        `The \"customStyles.background\" prop in '${componentName} is required when using the \"custom\" theme and must be a string'.`\n      );\n    } else if (\n      !props.customStyles.color ||\n      typeof props.customStyles.color !== 'string'\n    ) {\n      return new Error(\n        `The \"customStyles.color\" prop in '${componentName} is required when using the \"custom\" theme and must be a string'.`\n      );\n    } else if (\n      !props.customStyles.borderColor ||\n      typeof props.customStyles.borderColor !== 'string'\n    ) {\n      return new Error(\n        `The \"customStyles.borderColor\" prop in '${componentName} is required when using the \"custom\" theme and must be a string'.`\n      );\n    }\n  }\n}"
+        },
+        required: false,
+        defaultValue: undefined,
+        description: <div />,
+        options: undefined
+      }
+    },
+    examples: []
   },
   {
     name: "ToggleableCodeBlock",
@@ -2181,48 +2898,5 @@ module.exports = [
       }
     },
     examples: []
-  },
-  {
-    name: "WarningImage",
-    description: null,
-    props: {
-      size: {
-        type: { name: "number" },
-        required: false,
-        defaultValue: "60",
-        description: <div />,
-        options: undefined
-      },
-      color: {
-        type: {
-          name: "enum",
-          value: [
-            { value: "'red'", computed: false },
-            { value: "'orange'", computed: false }
-          ]
-        },
-        required: true,
-        defaultValue: undefined,
-        description: <div />,
-        options: [
-          { value: "'red'", computed: false },
-          { value: "'orange'", computed: false }
-        ]
-      }
-    },
-    examples: [
-      {
-        exampleModule: require("/Users/katydecorah/Documents/GitHub/dr-ui/src/components/warning-image/examples/basic.js"),
-        code: `<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
-<span class="token keyword">import</span> WarningImage <span class="token keyword">from</span> <span class="token string">'@mapbox/mr-ui/warning-image'</span><span class="token punctuation">;</span>
-
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
-  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>WarningImage</span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>60<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>`,
-        description: <p>Basic.</p>
-      }
-    ]
   }
 ];

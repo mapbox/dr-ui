@@ -97,11 +97,18 @@ function PropRow(props) {
       REQUIRED
     </span>
   );
+
+  console.log(
+    props.name,
+    props.options && props.options.length ? typeof props.options : null
+  );
+
   const options = props.options
-    ? props.options.length
+    ? props.options.length && typeof props.options === 'object'
       ? props.options.map(o => o.value || o.name)
       : props.options.value
     : undefined;
+
   return (
     <tr>
       <td className="txt-mono txt-bold txt-nowrap">
