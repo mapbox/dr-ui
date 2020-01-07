@@ -255,7 +255,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
             <div
               dangerouslySetInnerHTML={
                 Object {
-                  "__html": "<span class=\\"token keyword\\">private</span> MapView mapView<span class=\\"token punctuation\\">;</span>",
+                  "__html": "<span class=\\"token keyword\\">private</span> <span class=\\"token class-name\\">MapView</span> mapView<span class=\\"token punctuation\\">;</span>",
                 }
               }
               style={
@@ -357,7 +357,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
             <div
               dangerouslySetInnerHTML={
                 Object {
-                  "__html": "<span class=\\"token keyword\\">protected</span> <span class=\\"token keyword\\">void</span> <span class=\\"token function\\">onCreate</span><span class=\\"token punctuation\\">(</span>Bundle savedInstanceState<span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                  "__html": "<span class=\\"token keyword\\">protected</span> <span class=\\"token keyword\\">void</span> <span class=\\"token function\\">onCreate</span><span class=\\"token punctuation\\">(</span><span class=\\"token class-name\\">Bundle</span> savedInstanceState<span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
                 }
               }
               style={
@@ -423,7 +423,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
             <div
               dangerouslySetInnerHTML={
                 Object {
-                  "__html": "Mapbox<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getInstance</span><span class=\\"token punctuation\\">(</span><span class=\\"token keyword\\">this</span><span class=\\"token punctuation\\">,</span> <span class=\\"token string\\">\\"your-token\\"</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
+                  "__html": "<span class=\\"token class-name\\">Mapbox</span><span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getInstance</span><span class=\\"token punctuation\\">(</span><span class=\\"token keyword\\">this</span><span class=\\"token punctuation\\">,</span> <span class=\\"token string\\">\\"your-token\\"</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
                 }
               }
               style={
@@ -456,7 +456,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
             <div
               dangerouslySetInnerHTML={
                 Object {
-                  "__html": "<span class=\\"token function\\">setContentView</span><span class=\\"token punctuation\\">(</span>R<span class=\\"token punctuation\\">.</span>layout<span class=\\"token punctuation\\">.</span>activity_main<span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
+                  "__html": "<span class=\\"token function\\">setContentView</span><span class=\\"token punctuation\\">(</span><span class=\\"token class-name\\">R</span><span class=\\"token punctuation\\">.</span>layout<span class=\\"token punctuation\\">.</span>activity_main<span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
                 }
               }
               style={
