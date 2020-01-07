@@ -23,7 +23,14 @@ exports[`product-menu Beta product renders as expected 1`] = `
     >
       <div
         aria-describedby="tooltip-1"
-        className="txt-s txt-bold round px6 py3 inline-block cursor-default bg-orange-faint color-orange-dark "
+        className="txt-s txt-bold round px6 inline-block cursor-default border"
+        style={
+          Object {
+            "background": "#edf0fd",
+            "borderColor": "#4264fb",
+            "color": "#3658ee",
+          }
+        }
       >
         Beta
       </div>
@@ -35,7 +42,7 @@ exports[`product-menu Beta product renders as expected 1`] = `
         <div
           className="txt-s wmax120"
         >
-          This feature is in public beta and is subject to potential changes.
+          This feature is in public beta and is subject to changes.
         </div>
       </div>
     </div>
@@ -52,7 +59,6 @@ exports[`product-menu Custom trigger style - display only renders as expected 1`
     href="/api-documentation/"
   >
     Light on dark
-    
   </a>
 </div>
 `;
@@ -63,7 +69,6 @@ exports[`product-menu Fake items, but one matches this test case's location rend
   href="/api-documentation/"
 >
   Items in here
-  
 </a>
 `;
 
@@ -73,7 +78,6 @@ exports[`product-menu Mapbox product menu renders as expected 1`] = `
   href="/api-documentation/"
 >
   Mapbox product names
-  
 </a>
 `;
 
@@ -83,6 +87,5 @@ exports[`product-menu Product menu with something arbitrary in it renders as exp
   href="/api-documentation/"
 >
   Pizza pie
-  
 </a>
 `;

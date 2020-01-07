@@ -20,4 +20,21 @@ describe('numbered-code-snippet', () => {
       expect(tree).toMatchSnapshot();
     });
   });
+  describe(testCases.noCollapse.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.noCollapse;
+      wrapper = renderer.create(
+        React.createElement(testCase.component, testCase.props)
+      );
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });

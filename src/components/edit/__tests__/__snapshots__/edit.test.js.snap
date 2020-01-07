@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`edit Basic example renders as expected 1`] = `
+Array [
+  <form
+    action="https://jsfiddle.net/api/post/library/pure/"
+    className="inline-block"
+    method="POST"
+    target="_blank"
+  >
+    <input
+      className="btn btn--s cursor-pointer round"
+      onClick={[Function]}
+      style={
+        Object {
+          "border": 0,
+        }
+      }
+      type="submit"
+      value="Edit in JSFiddle"
+    />
+    <input
+      name="wrap"
+      type="hidden"
+      value="b"
+    />
+    <input
+      name="css"
+      type="hidden"
+      value="body {
+  margin: 0;
+  padding: 0;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+"
+    />
+    <input
+      name="html"
+      type="hidden"
+      value="<div id=\\"map\\"></div>
+"
+    />
+    <input
+      name="js"
+      type="hidden"
+      value="var map = new mapboxgl.Map({
+  container: \\"map\\", // container id
+  style: \\"mapbox://styles/mapbox/streets-v11\\", // stylesheet location
+  center: [-74.5, 40], // starting position [lng, lat]
+  zoom: 9 // starting zoom
+});
+"
+    />
+    <input
+      name="title"
+      type="hidden"
+      value="Display a map"
+    />
+    <input
+      name="resources"
+      type="hidden"
+      value={
+        Array [
+          "https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js",
+          "https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css",
+        ]
+      }
+    />
+    <input
+      name="description"
+      type="hidden"
+      value="Initialize a map in an HTML element with Mapbox GL JS.
+
+See the example: https://docs.mapbox.com//mapbox-gl-js/example/simple-map/"
+    />
+  </form>,
+  <form
+    action="https://codepen.io/pen/define"
+    className="inline-block ml6"
+    method="POST"
+    target="_blank"
+  >
+    <input
+      name="data"
+      type="hidden"
+      value="{\\"title\\":\\"Display a map\\",\\"html\\":\\"<div id=\\\\\\"map\\\\\\"></div>\\\\n\\",\\"description\\":\\"Initialize a map in an HTML element with Mapbox GL JS.\\\\n\\\\nSee the example: [https://docs.mapbox.com//mapbox-gl-js/example/simple-map/](https://docs.mapbox.com//mapbox-gl-js/example/simple-map/)\\",\\"tags\\":[\\"mapbox\\",\\"maps\\"],\\"css\\":\\"body {\\\\n  margin: 0;\\\\n  padding: 0;\\\\n}\\\\n#map {\\\\n  position: absolute;\\\\n  top: 0;\\\\n  bottom: 0;\\\\n  width: 100%;\\\\n}\\\\n\\",\\"js\\":\\"var map = new mapboxgl.Map({\\\\n  container: \\\\\\"map\\\\\\", // container id\\\\n  style: \\\\\\"mapbox://styles/mapbox/streets-v11\\\\\\", // stylesheet location\\\\n  center: [-74.5, 40], // starting position [lng, lat]\\\\n  zoom: 9 // starting zoom\\\\n});\\\\n\\",\\"css_external\\":\\"https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css\\",\\"js_external\\":\\"https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js\\",\\"head\\":\\"<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />\\"}"
+    />
+    <input
+      className="btn btn--s cursor-pointer round"
+      onClick={[Function]}
+      style={
+        Object {
+          "border": 0,
+        }
+      }
+      type="submit"
+      value="Edit in CodePen"
+    />
+  </form>,
+]
+`;

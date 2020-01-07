@@ -12,7 +12,7 @@ testCases.basic = {
   component: Feedback,
   description: 'Basic',
   props: {
-    site: 'Help',
+    site: 'Mapbox GL JS',
     webhook: {
       staging:
         'https://evj5gwoa8j.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
@@ -20,7 +20,11 @@ testCases.basic = {
         'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook'
     },
     preferredLanguage: 'Swift',
-    location: {}
+    section: 'LngLat',
+    location: {
+      pathname: '/mapbox-gl-js/api/',
+      hash: '#lnglat'
+    }
   }
 };
 
@@ -37,6 +41,27 @@ testCases.type = {
         'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook'
     },
     location: {}
+  }
+};
+
+testCases.noSentry = {
+  component: Feedback,
+  description: 'Does not send text feedback to Sentry',
+  props: {
+    site: 'Mapbox GL JS',
+    webhook: {
+      staging:
+        'https://evj5gwoa8j.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
+      production:
+        'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook'
+    },
+    feedbackSentryDsn: false,
+    preferredLanguage: 'Swift',
+    section: 'LngLat',
+    location: {
+      pathname: '/mapbox-gl-js/api/',
+      hash: '#lnglat'
+    }
   }
 };
 

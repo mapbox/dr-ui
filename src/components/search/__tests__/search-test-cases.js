@@ -4,6 +4,8 @@ import PageLayout from '../../page-layout/page-layout';
 import NavigationAccordion from '../../navigation-accordion/navigation-accordion';
 import TopbarSticker from '../../topbar-sticker/topbar-sticker';
 import ProductMenu from '../../product-menu/product-menu';
+import TabList from '@mapbox/mr-ui/tab-list';
+import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
 
 const testCases = {};
 
@@ -65,14 +67,18 @@ testCases.withLayout = {
                 <ProductMenu productName="API Documentation" homePage="/api/" />
               </div>
             </div>
-            <div className="col col--7-mm col--12 flex-parent flex-parent--main-mm flex-parent--center-cross align-r mb12 mb0-mm">
-              <div className="inline-block">Overview</div>
-              <div className="ml18 inline-block">Examples</div>
-              <div className="ml18 inline-block">Help</div>
-              <div className="ml18 inline-block">API Reference</div>
+            <div className="col col--6-mm col--12 flex-parent flex-parent--main-mm flex-parent--center-cross align-r mb12 mb0-mm">
+              <TabList
+                items={[
+                  { id: 'one', label: 'Label one' },
+                  { id: 'two', label: 'Label two' },
+                  { id: 'three', label: 'Label three' },
+                  { id: 'four', label: 'Label four' }
+                ]}
+              />
             </div>
 
-            <div className="col col--1-mm col--12 flex-parent flex-parent--end-main-mm flex-parent--center-cross">
+            <div className="col col--2-mm col--12 flex-parent flex-parent--end-main-mm flex-parent--center-cross">
               <div className="w-full mb12 mb0-mm mr36">
                 <Search inputId="search4" />
               </div>
@@ -128,6 +134,19 @@ testCases.withLayout = {
       </div>
     </div>
   )
+};
+
+testCases.withConnector = {
+  component: Search,
+  description: 'Search with custom connector',
+  props: {
+    inputId: 'search5',
+    connector: new SiteSearchAPIConnector({
+      engineKey: '123',
+      engineName: 'find-it',
+      documentType: ['hams']
+    })
+  }
 };
 
 export { testCases };

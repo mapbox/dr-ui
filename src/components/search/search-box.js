@@ -247,15 +247,18 @@ class SearchBox extends React.Component {
         ) : (
           <div>
             <button
-              className={`flex-parent flex-parent--center-cross flex-parent--center-main h36  px12 round ${
-                this.props.background === 'light'
-                  ? 'color-gray color-gray-dark-on-hover bg-gray-faint'
-                  : 'color-white color-lighten50-on-hover bg-lighten10'
+              className={`flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke ${
+                this.props.background !== 'light' ? 'btn--white' : ''
               }`}
+              style={
+                this.props.narrow
+                  ? { paddingLeft: '12px', paddingRight: '12px' }
+                  : {}
+              }
               onClick={this.openModal}
             >
               <span className={!this.props.narrow ? 'mr6' : ''}>
-                <svg className="icon">
+                <svg className="icon w18 h18">
                   {this.props.narrow && <title>Search</title>}
                   <use xlinkHref="#icon-search" />
                 </svg>

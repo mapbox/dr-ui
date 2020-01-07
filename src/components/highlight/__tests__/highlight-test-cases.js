@@ -1,3 +1,4 @@
+/* eslint-disable xss/no-mixed-html*/
 import CodeSnippet from '@mapbox/mr-ui/code-snippet';
 import { highlightSwift } from '../swift';
 import { highlightObjectivec } from '../objectivec';
@@ -7,126 +8,12 @@ import { highlightJsx } from '../jsx';
 import { highlightHtml } from '../html';
 import { highlightXml } from '../xml';
 import { highlightKotlin } from '../kotlin';
+import { highlightCss } from '../css';
+import { highlightGroovy } from '../groovy';
+import { highlightThemeCss } from '../../highlight/theme-css.js';
 
 const testCases = {};
 const noRenderCases = {};
-
-const css = `code[class*='language-'],
-pre[class*='language-'] {
-  color: #273d56;
-  background: none;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 1.5;
-
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-}
-
-/* Code blocks */
-pre[class*='language-'] {
-  padding: 1em;
-  margin: 0.5em 0;
-  overflow: auto;
-  border-radius: 0.3em;
-}
-
-:not(pre) > code[class*='language-'],
-pre[class*='language-'] {
-  background: #272822;
-}
-
-/* Inline code */
-:not(pre) > code[class*='language-'] {
-  padding: 0.1em;
-  border-radius: 0.3em;
-  white-space: normal;
-}
-
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  color: #53708e;
-}
-
-.token.punctuation {
-  color: #273d56;
-}
-
-.namespace {
-  opacity: 0.7;
-}
-
-.token.property,
-.token.tag,
-.token.constant,
-.token.symbol,
-.token.deleted {
-  color: #314ccd;
-}
-
-.token.boolean,
-.token.number {
-  color: #7753eb;
-}
-
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-  color: #ce2c69;
-}
-
-.token.operator,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string,
-.token.variable {
-  color: #273d56;
-}
-
-.token.atrule,
-.token.attr-value,
-.token.function,
-.token.class-name {
-  color: #4264fb;
-}
-
-.token.keyword {
-  color: #314ccd;
-}
-
-.token.regex,
-.token.important {
-  color: #fd971f;
-}
-
-.token.important,
-.token.bold {
-  font-weight: bold;
-}
-.token.italic {
-  font-style: italic;
-}
-
-.token.entity {
-  cursor: help;
-}
-`;
 
 const swiftCodeSnippet = `
 import Mapbox
@@ -283,13 +170,31 @@ const kotlinCodeSnippet = `map?.getStyle {
   settlementLabelLayer?.setProperties(textField("{name_ru}"))
 }`;
 
+const cssCodeSnippet = `body {
+  margin: 0;
+  padding: 0;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}`;
+
+const groovyCodeSnippet = `repositories {
+  mavenCentral()
+}
+dependencies {
+  implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:8.5.0'
+}`;
+
 testCases.basic = {
   component: CodeSnippet,
   description: 'Swift highlighting',
   props: {
     code: swiftCodeSnippet,
     highlightedCode: highlightSwift(swiftCodeSnippet),
-    highlightThemeCss: css
+    highlightThemeCss: highlightThemeCss
   }
 };
 
@@ -299,7 +204,7 @@ testCases.objc = {
   props: {
     code: objectiveCCodeSnippet,
     highlightedCode: highlightObjectivec(objectiveCCodeSnippet),
-    highlightThemeCss: css
+    highlightThemeCss: highlightThemeCss
   }
 };
 
@@ -309,7 +214,7 @@ testCases.java = {
   props: {
     code: javaCodeSnippet,
     highlightedCode: highlightJava(javaCodeSnippet),
-    highlightThemeCss: css
+    highlightThemeCss: highlightThemeCss
   }
 };
 
@@ -319,7 +224,7 @@ testCases.json = {
   props: {
     code: jsonCodeSnippet,
     highlightedCode: highlightJson(jsonCodeSnippet),
-    highlightThemeCss: css
+    highlightThemeCss: highlightThemeCss
   }
 };
 
@@ -329,7 +234,7 @@ testCases.jsx = {
   props: {
     code: jsxCodeSnippet,
     highlightedCode: highlightJsx(jsxCodeSnippet),
-    highlightThemeCss: css
+    highlightThemeCss: highlightThemeCss
   }
 };
 
@@ -339,7 +244,7 @@ testCases.html = {
   props: {
     code: htmlCodeSnippet,
     highlightedCode: highlightHtml(htmlCodeSnippet),
-    highlightThemeCss: css
+    highlightThemeCss: highlightThemeCss
   }
 };
 
@@ -349,7 +254,7 @@ testCases.xml = {
   props: {
     code: xmlCodeSnippet,
     highlightedCode: highlightXml(xmlCodeSnippet),
-    highlightThemeCss: css
+    highlightThemeCss: highlightThemeCss
   }
 };
 
@@ -359,7 +264,27 @@ testCases.kotlin = {
   props: {
     code: kotlinCodeSnippet,
     highlightedCode: highlightKotlin(kotlinCodeSnippet),
-    highlightThemeCss: css
+    highlightThemeCss: highlightThemeCss
+  }
+};
+
+testCases.css = {
+  component: CodeSnippet,
+  description: 'CSS highlighting',
+  props: {
+    code: cssCodeSnippet,
+    highlightedCode: highlightCss(cssCodeSnippet),
+    highlightThemeCss: highlightThemeCss
+  }
+};
+
+testCases.groovy = {
+  component: CodeSnippet,
+  description: 'Groovy highlighting',
+  props: {
+    code: groovyCodeSnippet,
+    highlightedCode: highlightGroovy(groovyCodeSnippet),
+    highlightThemeCss: highlightThemeCss
   }
 };
 

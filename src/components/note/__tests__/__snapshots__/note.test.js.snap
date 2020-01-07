@@ -1,63 +1,55 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`note A basic note to call out information on a page. renders as expected 1`] = `
+exports[`note A legacy note, has same styling as warning renders as expected 1`] = `
 <div
-  className="flex-parent flex-parent--row mb18"
+  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
   style={
     Object {
-      "background": "#f1faff",
-      "borderRadius": "4px",
-      "color": "#587594",
-      "fontSize": "13px",
-      "lineHeight": "20px",
-      "padding": "18px",
+      "background": "#feefe2",
+      "color": "#945823",
     }
   }
 >
   <div
-    className="flex-child mr12"
+    className="flex-child mr18 none block-mm pt3"
   >
-    <svg
-      height={60}
-      viewBox="0 0 108 108"
-      width={60}
+    <div
+      className="bg-orange-light round-full color-orange flex-parent flex-parent--center-main flex-parent--center-cross"
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
     >
-      <circle
-        cx="53"
-        cy="55"
-        fill="#47b9f3"
-        r="45"
-      />
-      <rect
-        fill="#1274c6"
-        height="34.501"
-        rx="5.219"
-        ry="5.219"
-        transform="rotate(.605 53.4 58.455)"
-        width="52.254"
-        x="27.273"
-        y="41.204"
-      />
-      <path
-        d="M64.1 34.848s-9.912-.76-10.008 8.42-.093 24.736-.093 24.736S58.822 64.96 62.79 65l15.404.163A1.788 1.788 0 0 0 80 63.393l.281-26.601A1.773 1.773 0 0 0 78.527 35z"
-        fill="#309ef9"
-      />
-      <path
-        d="M43.971 34.157s10.21-.563 10.11 8.821S53.998 68 53.998 68s-5.25-2.957-9.331-3L28.78 64.83A1.786 1.786 0 0 1 27 63.04l.288-27.286A1.786 1.786 0 0 1 29.106 34z"
-        fill="#0d84fd"
-      />
-    </svg>
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": "40",
+            "width": "40",
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-alert"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
   </div>
   <div
-    className="flex-child"
+    className="flex-child prose"
   >
     <div
       className="txt-bold txt-m mb6"
     >
-      Note
+      Warning
     </div>
     <p>
-      Here is a little thing to note.
+      This is a legacy product.
     </p>
   </div>
 </div>
@@ -65,41 +57,46 @@ exports[`note A basic note to call out information on a page. renders as expecte
 
 exports[`note A note to display an error with steps or links on how to troubleshoot. renders as expected 1`] = `
 <div
-  className="flex-parent flex-parent--row mb18"
+  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
   style={
     Object {
       "background": "#fbe5e5",
-      "borderRadius": "4px",
       "color": "#ba3b3f",
-      "fontSize": "13px",
-      "lineHeight": "20px",
-      "padding": "18px",
     }
   }
 >
   <div
-    className="flex-child mr12"
+    className="flex-child mr18 none block-mm pt3"
   >
-    <svg
-      className="color-red"
-      height={60}
-      viewBox="0 0 60 60"
-      width={60}
+    <div
+      className="bg-red-light round-full color-red flex-parent flex-parent--center-main flex-parent--center-cross"
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
     >
-      <circle
-        cx="30"
-        cy="30"
-        fill="#ffb9a9"
-        r="25"
-      />
-      <path
-        d="M30 15.7c-1.3 0-2.7.7-3.3 1.8l-9.6 20.4c-1.1 1.8 0 4.4 2.4 4.4h20.9c2.4 0 3.6-2.7 2.4-4.4l-9.6-20.4c-.5-1.2-1.9-1.8-3.2-1.8zm0 6.6c1.3 0 2.2.9 2.2 2.2V29c0 1.3-.9 2.2-2.2 2.2-1.3 0-2.2-.9-2.2-2.2v-4.4c0-1.4.9-2.3 2.2-2.3zm0 11.1c1.3 0 2.2.9 2.2 2.2s-.9 2.2-2.2 2.2c-1.3 0-2.2-.9-2.2-2.2s.9-2.2 2.2-2.2z"
-        fill="#d85a3d"
-      />
-    </svg>
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": "40",
+            "width": "40",
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-alert"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
   </div>
   <div
-    className="flex-child"
+    className="flex-child prose"
   >
     <div
       className="txt-bold txt-m mb6"
@@ -122,40 +119,46 @@ exports[`note A note to display an error with steps or links on how to troublesh
 
 exports[`note A note to display with a message about new products or features. renders as expected 1`] = `
 <div
-  className="flex-parent flex-parent--row mb18"
+  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
   style={
     Object {
       "background": "#e8f5ee",
-      "borderRadius": "4px",
       "color": "#1b7d4f",
-      "fontSize": "13px",
-      "lineHeight": "20px",
-      "padding": "18px",
     }
   }
 >
   <div
-    className="flex-child mr12"
+    className="flex-child mr18 none block-mm pt3"
   >
-    <svg
-      height={60}
-      viewBox="0 0 60 60"
-      width={60}
+    <div
+      className="bg-green-light round-full color-green flex-parent flex-parent--center-main flex-parent--center-cross"
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
     >
-      <circle
-        cx="29.4"
-        cy="30.3"
-        fill="#83e5af"
-        r="25"
-      />
-      <path
-        d="M39.6 26.4c0 5.4-7.8 14.9-10.1 17.9-2.4-3-10.1-12.5-10.1-17.9s5.2-10.1 10.1-10.1 10.1 4.8 10.1 10.1z"
-        fill="#3dbc7d"
-      />
-    </svg>
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": "40",
+            "width": "40",
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-plus"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
   </div>
   <div
-    className="flex-child"
+    className="flex-child prose"
   >
     <div
       className="txt-bold txt-m mb6"
@@ -163,13 +166,62 @@ exports[`note A note to display with a message about new products or features. r
       New!
     </div>
     <p>
-      Check out the new 
-      <a
-        href="#"
+      Style components in Mapbox Studio are now available in public beta for every user. To start building, log in to Studio or sign up for an account to start making your first map.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`note A note to flag information about a beta release/product renders as expected 1`] = `
+<div
+  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
+  style={
+    Object {
+      "background": "#edf0fd",
+      "color": "#3658ee",
+    }
+  }
+>
+  <div
+    className="flex-child mr18 none block-mm pt3"
+  >
+    <div
+      className="bg-blue-light round-full color-blue flex-parent flex-parent--center-main flex-parent--center-cross"
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
+    >
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": "40",
+            "width": "40",
+          }
+        }
       >
-        Pizza API
-      </a>
-      . Build the perfect pie!
+        <use
+          xlinkHref="#icon-marker"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="flex-child prose"
+  >
+    <div
+      className="txt-bold txt-m mb6"
+    >
+      Beta
+    </div>
+    <p>
+      Style components in Mapbox Studio are now available in public beta for every user. To start building, log in to Studio or sign up for an account to start making your first map.
     </p>
   </div>
 </div>
@@ -177,49 +229,134 @@ exports[`note A note to display with a message about new products or features. r
 
 exports[`note A warning note to let the user know something has changed or will change. renders as expected 1`] = `
 <div
-  className="flex-parent flex-parent--row mb18"
+  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
   style={
     Object {
       "background": "#feefe2",
-      "borderRadius": "4px",
       "color": "#945823",
-      "fontSize": "13px",
-      "lineHeight": "20px",
-      "padding": "18px",
     }
   }
 >
   <div
-    className="flex-child mr12"
+    className="flex-child mr18 none block-mm pt3"
   >
-    <svg
-      className="color-orange"
-      height={60}
-      viewBox="0 0 60 60"
-      width={60}
+    <div
+      className="bg-orange-light round-full color-orange flex-parent flex-parent--center-main flex-parent--center-cross"
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
     >
-      <circle
-        cx="30"
-        cy="30"
-        fill="#fbcea6"
-        r="25"
-      />
-      <path
-        d="M30 15.7c-1.3 0-2.7.7-3.3 1.8l-9.6 20.4c-1.1 1.8 0 4.4 2.4 4.4h20.9c2.4 0 3.6-2.7 2.4-4.4l-9.6-20.4c-.5-1.2-1.9-1.8-3.2-1.8zm0 6.6c1.3 0 2.2.9 2.2 2.2V29c0 1.3-.9 2.2-2.2 2.2-1.3 0-2.2-.9-2.2-2.2v-4.4c0-1.4.9-2.3 2.2-2.3zm0 11.1c1.3 0 2.2.9 2.2 2.2s-.9 2.2-2.2 2.2c-1.3 0-2.2-.9-2.2-2.2s.9-2.2 2.2-2.2z"
-        fill="#ba7334"
-      />
-    </svg>
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": "40",
+            "width": "40",
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-alert"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
   </div>
   <div
-    className="flex-child"
+    className="flex-child prose"
   >
     <div
       className="txt-bold txt-m mb6"
     >
-      This API is in beta
+      Be careful
     </div>
     <p>
-      The API may change without advance notice during the preview period. Preview features are not supported for production use.
+      This is a warning.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`note Default note renders as expected 1`] = `
+<div
+  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
+  style={
+    Object {
+      "background": "#f4f7fb",
+      "color": "#547190",
+    }
+  }
+>
+  <div
+    className="flex-child mr18 none block-mm pt3"
+  >
+    <div
+      className="bg-gray-light round-full color-gray flex-parent flex-parent--center-main flex-parent--center-cross"
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
+    >
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": "40",
+            "width": "40",
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-book"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="flex-child prose"
+  >
+    <div
+      className="txt-bold txt-m mb6"
+    >
+      Note
+    </div>
+    <p>
+      Here is a little thing to note.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`note Default note with no image renders as expected 1`] = `
+<div
+  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
+  style={
+    Object {
+      "background": "#f4f7fb",
+      "color": "#547190",
+    }
+  }
+>
+  <div
+    className="flex-child prose"
+  >
+    <div
+      className="txt-bold txt-m mb6"
+    >
+      Note
+    </div>
+    <p>
+      Here is a little thing to note, but it doesn't have an image.
     </p>
   </div>
 </div>
@@ -227,54 +364,46 @@ exports[`note A warning note to let the user know something has changed or will 
 
 exports[`note Note with custom title. renders as expected 1`] = `
 <div
-  className="flex-parent flex-parent--row mb18"
+  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
   style={
     Object {
-      "background": "#f1faff",
-      "borderRadius": "4px",
-      "color": "#587594",
-      "fontSize": "13px",
-      "lineHeight": "20px",
-      "padding": "18px",
+      "background": "#f4f7fb",
+      "color": "#547190",
     }
   }
 >
   <div
-    className="flex-child mr12"
+    className="flex-child mr18 none block-mm pt3"
   >
-    <svg
-      height={60}
-      viewBox="0 0 108 108"
-      width={60}
+    <div
+      className="bg-gray-light round-full color-gray flex-parent flex-parent--center-main flex-parent--center-cross"
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
     >
-      <circle
-        cx="53"
-        cy="55"
-        fill="#47b9f3"
-        r="45"
-      />
-      <rect
-        fill="#1274c6"
-        height="34.501"
-        rx="5.219"
-        ry="5.219"
-        transform="rotate(.605 53.4 58.455)"
-        width="52.254"
-        x="27.273"
-        y="41.204"
-      />
-      <path
-        d="M64.1 34.848s-9.912-.76-10.008 8.42-.093 24.736-.093 24.736S58.822 64.96 62.79 65l15.404.163A1.788 1.788 0 0 0 80 63.393l.281-26.601A1.773 1.773 0 0 0 78.527 35z"
-        fill="#309ef9"
-      />
-      <path
-        d="M43.971 34.157s10.21-.563 10.11 8.821S53.998 68 53.998 68s-5.25-2.957-9.331-3L28.78 64.83A1.786 1.786 0 0 1 27 63.04l.288-27.286A1.786 1.786 0 0 1 29.106 34z"
-        fill="#0d84fd"
-      />
-    </svg>
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": "40",
+            "width": "40",
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-book"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
   </div>
   <div
-    className="flex-child"
+    className="flex-child prose"
   >
     <div
       className="txt-bold txt-m mb6"
@@ -292,6 +421,61 @@ exports[`note Note with custom title. renders as expected 1`] = `
         Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod.
       </p>
     </div>
+  </div>
+</div>
+`;
+
+exports[`note download renders as expected 1`] = `
+<div
+  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
+  style={
+    Object {
+      "background": "#f2effa",
+      "color": "#5a3fc0",
+    }
+  }
+>
+  <div
+    className="flex-child mr18 none block-mm pt3"
+  >
+    <div
+      className="bg-purple-light round-full color-purple flex-parent flex-parent--center-main flex-parent--center-cross"
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
+    >
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": "40",
+            "width": "40",
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-arrow-down"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="flex-child prose"
+  >
+    <div
+      className="txt-bold txt-m mb6"
+    >
+      Download from vision.mapbox.com/install
+    </div>
+    <p>
+      You must download the relevant dependencies from vision.mapbox.com/install before continuing. You can download the dependency directly or import it into your project using Maven. This will require that you are logged into your Mapbox account.
+    </p>
   </div>
 </div>
 `;

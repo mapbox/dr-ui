@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`back-top-top-button Beta tag renders as expected 1`] = `
+<div
+  className="inline-block"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+>
+  <div
+    aria-describedby="tooltip-1"
+    className="txt-s txt-bold round px6 inline-block cursor-default border"
+    style={
+      Object {
+        "background": "#edf0fd",
+        "borderColor": "#4264fb",
+        "color": "#3658ee",
+      }
+    }
+  >
+    Beta
+  </div>
+  <div
+    className="hide-visually"
+    id="tooltip-1"
+    role="tooltip"
+  >
+    <div
+      className="txt-s wmax120"
+    >
+      This feature is in public beta and is subject to changes.
+    </div>
+  </div>
+</div>
+`;
