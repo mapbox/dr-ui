@@ -20,6 +20,8 @@
   - 🚨 Allow `feedbackSentryDsn` to accept boolean (false) to disable sending text feedback to Sentry. If you're using the Feedback component, but not using Sentry to triage feedback, set this value to false.
 * Create `Themes` component to hold shared styles for `Tag` and `Note`. [#217](https://github.com/mapbox/dr-ui/pull/217)
 * Create `highlight/theme-css` which exports prism.css as string and allows us to easily import prism.css into mr-ui `CodeSnippet` and other components. [#218](https://github.com/mapbox/dr-ui/pull/218)
+* Create `Edit` component to add "Edit in JSFiddle" and "Edit in CodePen" buttons to code blocks. [#197](https://github.com/mapbox/dr-ui/pull/197)
+* Create `CodeSnippet` component as a wrapper to mr-ui's `CodeSnippet` with options to use `Edit` or `CodeSnippetTitle` components. [#197](https://github.com/mapbox/dr-ui/pull/197)
 
 ## 0.24.0
 
