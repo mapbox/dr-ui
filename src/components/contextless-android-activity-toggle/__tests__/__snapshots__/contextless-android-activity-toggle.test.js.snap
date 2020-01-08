@@ -35,7 +35,7 @@ exports[`contextless-android-activity-toggle Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "map<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getStyle</span><span class=\\"token punctuation\\">(</span><span class=\\"token keyword\\">new</span> <span class=\\"token class-name\\">Style<span class=\\"token punctuation\\">.</span>OnStyleLoaded</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                    "__html": "map<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getStyle</span><span class=\\"token punctuation\\">(</span><span class=\\"token keyword\\">new</span> <span class=\\"token class-name\\">Style</span><span class=\\"token punctuation\\">.</span><span class=\\"token class-name\\">OnStyleLoaded</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
                   }
                 }
                 style={
@@ -79,7 +79,7 @@ exports[`contextless-android-activity-toggle Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token keyword\\">public</span> <span class=\\"token keyword\\">void</span> <span class=\\"token function\\">onStyleLoaded</span><span class=\\"token punctuation\\">(</span><span class=\\"token annotation punctuation\\">@NonNull</span> Style style<span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                    "__html": "<span class=\\"token keyword\\">public</span> <span class=\\"token keyword\\">void</span> <span class=\\"token function\\">onStyleLoaded</span><span class=\\"token punctuation\\">(</span><span class=\\"token annotation punctuation\\">@NonNull</span> <span class=\\"token class-name\\">Style</span> style<span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
                   }
                 }
                 style={
@@ -123,7 +123,7 @@ exports[`contextless-android-activity-toggle Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "Layer settlementLabelLayer <span class=\\"token operator\\">=</span> style<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getLayer</span><span class=\\"token punctuation\\">(</span><span class=\\"token string\\">\\"settlement-label\\"</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
+                    "__html": "<span class=\\"token class-name\\">Layer</span> settlementLabelLayer <span class=\\"token operator\\">=</span> style<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getLayer</span><span class=\\"token punctuation\\">(</span><span class=\\"token string\\">\\"settlement-label\\"</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
                   }
                 }
                 style={
@@ -167,7 +167,7 @@ exports[`contextless-android-activity-toggle Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token keyword\\">if</span> <span class=\\"token punctuation\\">(</span>settlementLabelLayer <span class=\\"token operator\\">!=</span> null<span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                    "__html": "<span class=\\"token keyword\\">if</span> <span class=\\"token punctuation\\">(</span>settlementLabelLayer <span class=\\"token operator\\">!=</span> <span class=\\"token keyword\\">null</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
                   }
                 }
                 style={
@@ -377,7 +377,7 @@ exports[`contextless-android-activity-toggle Two languages renders as expected 1
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "map<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getStyle</span><span class=\\"token punctuation\\">(</span><span class=\\"token keyword\\">new</span> <span class=\\"token class-name\\">Style<span class=\\"token punctuation\\">.</span>OnStyleLoaded</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                    "__html": "map<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getStyle</span><span class=\\"token punctuation\\">(</span><span class=\\"token keyword\\">new</span> <span class=\\"token class-name\\">Style</span><span class=\\"token punctuation\\">.</span><span class=\\"token class-name\\">OnStyleLoaded</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
                   }
                 }
                 style={
@@ -421,7 +421,7 @@ exports[`contextless-android-activity-toggle Two languages renders as expected 1
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token keyword\\">public</span> <span class=\\"token keyword\\">void</span> <span class=\\"token function\\">onStyleLoaded</span><span class=\\"token punctuation\\">(</span><span class=\\"token annotation punctuation\\">@NonNull</span> Style style<span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                    "__html": "<span class=\\"token keyword\\">public</span> <span class=\\"token keyword\\">void</span> <span class=\\"token function\\">onStyleLoaded</span><span class=\\"token punctuation\\">(</span><span class=\\"token annotation punctuation\\">@NonNull</span> <span class=\\"token class-name\\">Style</span> style<span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
                   }
                 }
                 style={
@@ -465,7 +465,7 @@ exports[`contextless-android-activity-toggle Two languages renders as expected 1
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "Layer settlementLabelLayer <span class=\\"token operator\\">=</span> style<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getLayer</span><span class=\\"token punctuation\\">(</span><span class=\\"token string\\">\\"settlement-label\\"</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
+                    "__html": "<span class=\\"token class-name\\">Layer</span> settlementLabelLayer <span class=\\"token operator\\">=</span> style<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getLayer</span><span class=\\"token punctuation\\">(</span><span class=\\"token string\\">\\"settlement-label\\"</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
                   }
                 }
                 style={
@@ -509,7 +509,7 @@ exports[`contextless-android-activity-toggle Two languages renders as expected 1
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token keyword\\">if</span> <span class=\\"token punctuation\\">(</span>settlementLabelLayer <span class=\\"token operator\\">!=</span> null<span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                    "__html": "<span class=\\"token keyword\\">if</span> <span class=\\"token punctuation\\">(</span>settlementLabelLayer <span class=\\"token operator\\">!=</span> <span class=\\"token keyword\\">null</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
                   }
                 }
                 style={
