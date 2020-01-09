@@ -1,6 +1,6 @@
 # Changelog
 
-## master
+## 0.25.0
 
 * Add IE11 compatibility for the `Search` component. [#203](https://github.com/mapbox/dr-ui/pull/203)
 * Add `beta` and `download` themes to `Note`. [#202](https://github.com/mapbox/dr-ui/pull/202)
