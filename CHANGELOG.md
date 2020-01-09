@@ -23,6 +23,7 @@
 * Create `Edit` component to add "Edit in JSFiddle" and "Edit in CodePen" buttons to code blocks. [#197](https://github.com/mapbox/dr-ui/pull/197)
 * Create `CodeSnippet` component as a wrapper to mr-ui's `CodeSnippet` with options to use `Edit` or `CodeSnippetTitle` components. [#197](https://github.com/mapbox/dr-ui/pull/197)
 * Update dependencies: @elastic/react-search-ui@1.3.1, @elastic/react-search-ui-views@1.3.1, @elastic/search-ui-site-search-connector@1.3.1, @mabpox/mr-ui@0.7.4, @sentry/browser@5.10.2, prismjs@1.18.0, react-aria-model@4.0.0. [#220](https://github.com/mapbox/dr-ui/pull/220)
+* Remove `cursor: pointer` rule from H2 and H3 elements. [#222](https://github.com/mapbox/dr-ui/pull/222)
 
 ## 0.24.0
 
