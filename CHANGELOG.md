@@ -1,5 +1,9 @@
 # Changelog
 
+## Master
+
+* Darken text color for `Note` and `Tag` themes. [#223](https://github.com/mapbox/dr-ui/pull/223)
+
 ## 0.25.1
 
 * Add IE11 compatibility for the `Search` component. [#203](https://github.com/mapbox/dr-ui/pull/203)
