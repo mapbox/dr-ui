@@ -549,9 +549,9 @@ exports[`overview-header Beta product renders as expected 1`] = `
           className="txt-s txt-bold round px6 inline-block cursor-default border"
           style={
             Object {
-              "background": "#edf0fd",
-              "borderColor": "#4264fb",
-              "color": "#3658ee",
+              "background": "#f1f3fd",
+              "borderColor": "#0428c8",
+              "color": "#0c248d",
             }
           }
         >

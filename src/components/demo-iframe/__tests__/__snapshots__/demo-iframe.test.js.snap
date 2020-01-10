@@ -46,7 +46,7 @@ exports[`demo-iframe Basic renders as expected 1`] = `
   style={
     Object {
       "background": "#feefe2",
-      "color": "#945823",
+      "color": "#78471c",
     }
   }
 >
@@ -117,7 +117,7 @@ exports[`demo-iframe With token renders as expected 1`] = `
   style={
     Object {
       "background": "#feefe2",
-      "color": "#945823",
+      "color": "#78471c",
     }
   }
 >

@@ -6,7 +6,7 @@ exports[`gl-wrapper Basic renders as expected 1`] = `
   style={
     Object {
       "background": "#feefe2",
-      "color": "#945823",
+      "color": "#78471c",
     }
   }
 >
