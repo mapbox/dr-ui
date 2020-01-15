@@ -53,22 +53,17 @@ exports[`CodeSnippet A CodeSnippet with every feature (edit buttons, title) rend
         <input
           name="css"
           type="hidden"
-          value="h1 {
-  color: red;
-}
-"
+          value="h1 {color: red}"
         />
         <input
           name="html"
           type="hidden"
-          value="<h1>gurd murn!</h1>
-"
+          value="<h1>gurd murn!</h1>"
         />
         <input
           name="js"
           type="hidden"
-          value="console.log(\\"hurn\\");
-"
+          value="console.log('hurn')"
         />
         <input
           name="title"
@@ -97,7 +92,7 @@ See the example: https://docs.mapbox.com//site"
         <input
           name="data"
           type="hidden"
-          value="{\\"title\\":\\"My Code\\",\\"html\\":\\"<h1>gurd murn!</h1>\\\\n\\",\\"description\\":\\"cool code by mapbox\\\\n\\\\nSee the example: [https://docs.mapbox.com//site](https://docs.mapbox.com//site)\\",\\"tags\\":[\\"mapbox\\",\\"maps\\"],\\"css\\":\\"h1 {\\\\n  color: red;\\\\n}\\\\n\\",\\"js\\":\\"console.log(\\\\\\"hurn\\\\\\");\\\\n\\",\\"css_external\\":\\"\\",\\"js_external\\":\\"\\"}"
+          value="{\\"title\\":\\"My Code\\",\\"html\\":\\"<h1>gurd murn!</h1>\\",\\"description\\":\\"cool code by mapbox\\\\n\\\\nSee the example: [https://docs.mapbox.com//site](https://docs.mapbox.com//site)\\",\\"tags\\":[\\"mapbox\\",\\"maps\\"],\\"css\\":\\"h1 {color: red}\\",\\"js\\":\\"console.log('hurn')\\",\\"css_external\\":\\"\\",\\"js_external\\":\\"\\"}"
         />
         <input
           className="btn btn--s cursor-pointer round"
@@ -210,33 +205,30 @@ exports[`CodeSnippet CodeSnippet with edit buttons and extractor renders as expe
         <input
           name="css"
           type="hidden"
-          value="body {
-  margin: 0;
-  padding: 0;
-}
-#map {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-}
+          value="
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; };
 "
         />
         <input
           name="html"
           type="hidden"
-          value="<div id=\\"map\\"></div>
+          value="
+<div id='map'></div>
+
+
 "
         />
         <input
           name="js"
           type="hidden"
-          value="mapboxgl.accessToken = \\"<your access token here>\\";
+          value="
+mapboxgl.accessToken = '<your access token here>';
 var map = new mapboxgl.Map({
-  container: \\"map\\", // container id
-  style: \\"mapbox://styles/mapbox/streets-v11\\", // stylesheet location
-  center: [-74.5, 40], // starting position [lng, lat]
-  zoom: 9 // starting zoom
+	container: 'map', // container id
+	style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+	center: [-74.50, 40], // starting position [lng, lat]
+	zoom: 9 // starting zoom
 });
 "
         />
@@ -272,7 +264,7 @@ See the example: https://docs.mapbox.com//mapbox-gl-js/example/simple-map/"
         <input
           name="data"
           type="hidden"
-          value="{\\"title\\":\\"Display a map\\",\\"html\\":\\"<div id=\\\\\\"map\\\\\\"></div>\\\\n\\",\\"description\\":\\"Initialize a map in an HTML element with Mapbox GL JS.\\\\n\\\\nSee the example: [https://docs.mapbox.com//mapbox-gl-js/example/simple-map/](https://docs.mapbox.com//mapbox-gl-js/example/simple-map/)\\",\\"tags\\":[\\"mapbox\\",\\"maps\\"],\\"css\\":\\"body {\\\\n  margin: 0;\\\\n  padding: 0;\\\\n}\\\\n#map {\\\\n  position: absolute;\\\\n  top: 0;\\\\n  bottom: 0;\\\\n  width: 100%;\\\\n}\\\\n\\",\\"js\\":\\"mapboxgl.accessToken = \\\\\\"<your access token here>\\\\\\";\\\\nvar map = new mapboxgl.Map({\\\\n  container: \\\\\\"map\\\\\\", // container id\\\\n  style: \\\\\\"mapbox://styles/mapbox/streets-v11\\\\\\", // stylesheet location\\\\n  center: [-74.5, 40], // starting position [lng, lat]\\\\n  zoom: 9 // starting zoom\\\\n});\\\\n\\",\\"css_external\\":\\"https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css\\",\\"js_external\\":\\"https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js\\"}"
+          value="{\\"title\\":\\"Display a map\\",\\"html\\":\\"\\\\r\\\\n<div id='map'></div>\\\\r\\\\n\\\\r\\\\n\\\\r\\\\n\\",\\"description\\":\\"Initialize a map in an HTML element with Mapbox GL JS.\\\\n\\\\nSee the example: [https://docs.mapbox.com//mapbox-gl-js/example/simple-map/](https://docs.mapbox.com//mapbox-gl-js/example/simple-map/)\\",\\"tags\\":[\\"mapbox\\",\\"maps\\"],\\"css\\":\\"\\\\r\\\\nbody { margin: 0; padding: 0; }\\\\r\\\\n#map { position: absolute; top: 0; bottom: 0; width: 100%; };\\\\r\\\\n\\",\\"js\\":\\"\\\\r\\\\nmapboxgl.accessToken = '<your access token here>';\\\\r\\\\nvar map = new mapboxgl.Map({\\\\r\\\\n\\\\tcontainer: 'map', // container id\\\\r\\\\n\\\\tstyle: 'mapbox://styles/mapbox/streets-v11', // stylesheet location\\\\r\\\\n\\\\tcenter: [-74.50, 40], // starting position [lng, lat]\\\\r\\\\n\\\\tzoom: 9 // starting zoom\\\\r\\\\n});\\\\r\\\\n\\",\\"css_external\\":\\"https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css\\",\\"js_external\\":\\"https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js\\"}"
         />
         <input
           className="btn btn--s cursor-pointer round"
