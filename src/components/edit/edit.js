@@ -2,12 +2,8 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import prettier from 'prettier/standalone';
-import parserCss from 'prettier/parser-postcss';
-import parserJs from 'prettier/parser-babylon';
-import parserHtml from 'prettier/parser-html';
+import indent from 'indent.js';
 import stripMd from 'remove-markdown';
-import * as Sentry from '@sentry/browser';
 
 // formats the metadata
 function meta(frontMatter) {
@@ -19,19 +15,6 @@ function meta(frontMatter) {
     description,
     tags: ['mapbox', 'maps']
   };
-}
-
-// formats the code with prettier
-function format(code, parser, plugin) {
-  try {
-    return prettier.format(code, { parser: parser, plugins: [plugin] });
-  } catch (err) {
-    Sentry.configureScope(scope => {
-      scope.setTag('type', 'edit buttons');
-    });
-    Sentry.captureException(new Error(err));
-    return code;
-  }
 }
 
 // creates a form wrapper for each platform
@@ -77,9 +60,9 @@ export default class Edit extends React.Component {
   render() {
     let { css, js, html, head, resources, frontMatter } = this.props;
     const projectMeta = meta(frontMatter);
-    css = format(css, 'css', parserCss);
-    js = format(js, 'babel', parserJs);
-    html = format(html, 'html', parserHtml);
+    css = indent.css(css);
+    js = indent.js(js);
+    html = indent.html(html);
     return (
       <>
         <Form action="https://jsfiddle.net/api/post/library/pure/">

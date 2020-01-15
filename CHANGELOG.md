@@ -1,5 +1,9 @@
 # Changelog
 
+## Master
+
+* Replace Prettier (in browser) for Indent.js to fix IE 11 compatibility issue. [#226](https://github.com/mapbox/dr-ui/pull/226)
+
 ## 0.25.2
 
 * Darken text color for `Note` and `Tag` themes. [#223](https://github.com/mapbox/dr-ui/pull/223)
