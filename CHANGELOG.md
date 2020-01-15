@@ -1,6 +1,6 @@
 # Changelog
 
-## Master
+## 0.25.3
 
 * Replace Prettier (in browser) for Indent.js to fix IE 11 compatibility issue. [#226](https://github.com/mapbox/dr-ui/pull/226)
 
