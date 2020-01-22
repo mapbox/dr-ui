@@ -2,7 +2,6 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import indent from 'indent.js';
 import stripMd from 'remove-markdown';
 
 // formats the metadata
@@ -60,9 +59,6 @@ export default class Edit extends React.Component {
   render() {
     let { css, js, html, head, resources, frontMatter } = this.props;
     const projectMeta = meta(frontMatter);
-    css = indent.css(css);
-    js = indent.js(js);
-    html = indent.html(html);
     return (
       <>
         <Form action="https://jsfiddle.net/api/post/library/pure/">
@@ -91,10 +87,13 @@ export default class Edit extends React.Component {
             value={JSON.stringify({
               title: projectMeta.title,
               html: html,
+              html_pre_processor: 'none',
               description: projectMeta.description,
               tags: projectMeta.tags,
               css: css,
+              css_pre_processor: 'none',
               js: js,
+              js_pre_processor: 'none',
               css_external:
                 resources && resources.css ? resources.css.join(';') : '',
               js_external:
