@@ -1,6 +1,6 @@
 # Changelog
 
-## Master
+## 0.25.4
 
 * Remove code formatter (Indent.js) from `Edit` component. [#228](https://github.com/mapbox/dr-ui/pull/228)
 
