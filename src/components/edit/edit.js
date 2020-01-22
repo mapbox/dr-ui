@@ -87,10 +87,13 @@ export default class Edit extends React.Component {
             value={JSON.stringify({
               title: projectMeta.title,
               html: html,
+              html_pre_processor: 'none',
               description: projectMeta.description,
               tags: projectMeta.tags,
               css: css,
+              css_pre_processor: 'none',
               js: js,
+              js_pre_processor: 'none',
               css_external:
                 resources && resources.css ? resources.css.join(';') : '',
               js_external:
