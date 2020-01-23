@@ -68,8 +68,8 @@ exports[`demo-iframe Basic renders as expected 1`] = `
         role="presentation"
         style={
           Object {
-            "height": "40",
-            "width": "40",
+            "height": 40,
+            "width": 40,
           }
         }
       >
@@ -139,8 +139,8 @@ exports[`demo-iframe With token renders as expected 1`] = `
         role="presentation"
         style={
           Object {
-            "height": "40",
-            "width": "40",
+            "height": 40,
+            "width": 40,
           }
         }
       >
