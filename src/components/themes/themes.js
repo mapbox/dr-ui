@@ -10,7 +10,7 @@ class Image extends React.Component {
         className={`bg-${color}-light round-full color-${color} flex-parent flex-parent--center-main flex-parent--center-cross`}
         style={{ width: 50, height: 50 }}
       >
-        <Icon name={icon} size="40" />
+        <Icon name={icon} size={40} />
       </div>
     );
   }

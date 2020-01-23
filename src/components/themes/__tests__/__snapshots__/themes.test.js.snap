@@ -30,8 +30,8 @@ exports[`themes Default renders as expected 1`] = `
         role="presentation"
         style={
           Object {
-            "height": "40",
-            "width": "40",
+            "height": 40,
+            "width": 40,
           }
         }
       >
@@ -84,8 +84,8 @@ exports[`themes beta renders as expected 1`] = `
           role="presentation"
           style={
             Object {
-              "height": "40",
-              "width": "40",
+              "height": 40,
+              "width": 40,
             }
           }
         >
@@ -173,8 +173,8 @@ exports[`themes download renders as expected 1`] = `
           role="presentation"
           style={
             Object {
-              "height": "40",
-              "width": "40",
+              "height": 40,
+              "width": 40,
             }
           }
         >
@@ -229,8 +229,8 @@ exports[`themes error renders as expected 1`] = `
           role="presentation"
           style={
             Object {
-              "height": "40",
-              "width": "40",
+              "height": 40,
+              "width": 40,
             }
           }
         >
@@ -323,8 +323,8 @@ exports[`themes legacy or warning renders as expected 1`] = `
           role="presentation"
           style={
             Object {
-              "height": "40",
-              "width": "40",
+              "height": 40,
+              "width": 40,
             }
           }
         >
