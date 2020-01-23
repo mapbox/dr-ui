@@ -1,5 +1,9 @@
 # Changelog
 
+## Master
+
+* Fix icons in `Note` by setting `size` as a number to correct their size in Firefox. [#233](https://github.com/mapbox/dr-ui/pull/233)
+
 ## 0.25.4
 
 * Remove code formatter (Indent.js) from `Edit` component. [#228](https://github.com/mapbox/dr-ui/pull/228)
