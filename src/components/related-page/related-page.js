@@ -73,7 +73,7 @@ class RelatedPage extends React.Component {
         image: props.vimeoThumbnail ? (
           <VimeoThumbnail image={props.vimeoThumbnail} />
         ) : (
-          <VimeoPlayImage fill="#7753eb" icon={true} />
+          <VimeoPlayImage fill="#7753eb" fallbackIcon={true} />
         )
       },
       default: {

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Modal from '@mapbox/mr-ui/modal';
 
+// creates the modal
 export class VimeoModal extends React.Component {
   render() {
     const { vimeoId, closeModal, title } = this.props;
@@ -41,6 +42,7 @@ VimeoModal.propTypes = {
   title: PropTypes.string.isRequired
 };
 
+// creates the video thumbnail with play button overlay
 export class VimeoThumbnail extends React.Component {
   render() {
     const { image } = this.props;
@@ -72,11 +74,12 @@ VimeoThumbnail.propTypes = {
   image: PropTypes.string.isRequired
 };
 
+// creates play button icon
 export class VimeoPlayImage extends React.Component {
   render() {
     // if icon = true; then use the icon wrapper
     const IconWrapper = ({ wrap, children }) =>
-      this.props.icon ? wrap(children) : children;
+      this.props.fallbackIcon ? wrap(children) : children;
     return (
       <IconWrapper
         wrap={children => (
@@ -103,12 +106,13 @@ export class VimeoPlayImage extends React.Component {
     );
   }
 }
+
 VimeoPlayImage.defaultProps = {
   fill: '#fff',
-  icon: false
+  fallbackIcon: false
 };
 
 VimeoPlayImage.propTypes = {
   fill: PropTypes.oneOf(['#fff', '#7753eb']),
-  icon: PropTypes.bool
+  fallbackIcon: PropTypes.bool
 };
