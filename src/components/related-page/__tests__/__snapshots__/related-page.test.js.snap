@@ -122,6 +122,78 @@ exports[`related-page example renders as expected 1`] = `
 </a>
 `;
 
+exports[`related-page fallback with children renders as expected 1`] = `
+<a
+  className="unprose block cursor-pointer color-gray color-gray-dark-on-hover transition mb18"
+  href="https://docs.mapbox.com/"
+>
+  <div
+    className="round flex-parent flex-parent--stretch-cross border border--gray-light border--gray-dark-on-hover border--2 transition"
+  >
+    <div
+      className="flex-child flex-child--grow px18 pt30 pb18"
+    >
+      <div
+        className="flex-parent flex-parent--row"
+      >
+        <div
+          className="flex-child"
+        >
+          <div
+            className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-gray-dark"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+          >
+            related
+          </div>
+          <div
+            className="color-gray-dark color-black-on-hover transition"
+          >
+            <div
+              className="txt-bold"
+            >
+              See all documentation
+            </div>
+            <p>
+              Browse all Mapbox documentation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+      style={
+        Object {
+          "borderColor": "inherit",
+          "borderLeftWidth": "2px",
+        }
+      }
+    >
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 30,
+            "width": 30,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-chevron-right"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
+  </div>
+</a>
+`;
+
 exports[`related-page glossary renders as expected 1`] = `
 <a
   className="unprose block cursor-pointer color-orange color-orange-dark-on-hover transition mb18"

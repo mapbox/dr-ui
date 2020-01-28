@@ -88,4 +88,19 @@ describe('related-page', () => {
       expect(tree).toMatchSnapshot();
     });
   });
+  describe(testCases.children.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.children;
+      wrapper = renderer.create(testCase.element);
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });

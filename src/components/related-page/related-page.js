@@ -76,7 +76,7 @@ class RelatedPage extends React.Component {
                 </div>
                 <div className="color-gray-dark color-black-on-hover transition">
                   <div className="txt-bold">{props.title}</div>
-                  {props.description && props.description}
+                  {props.children}
                 </div>
               </div>
             </div>
@@ -107,7 +107,7 @@ RelatedPage.propTypes = {
     'default'
   ]),
   title: PropTypes.string.isRequired,
-  description: PropTypes.string,
+  children: PropTypes.node.isRequired,
   url: PropTypes.string.isRequired
 };
 
