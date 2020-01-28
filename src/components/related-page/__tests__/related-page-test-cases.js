@@ -76,7 +76,7 @@ testCases.video = {
   }
 };
 
-testCases.video2 = {
+testCases.videoNoImage = {
   component: RelatedPage,
   description: 'video with svg image fallback',
   props: {
