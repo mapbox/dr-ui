@@ -9,7 +9,7 @@ exports[`related-page example renders as expected 1`] = `
     className="round flex-parent flex-parent--stretch-cross border border--pink-light border--pink-dark-on-hover border--2 transition"
   >
     <div
-      className="flex-child  flex-child--grow px18 pt30 pb18"
+      className="flex-child flex-child--grow px18 pt30 pb18"
     >
       <div
         className="flex-parent-mm flex-parent--row"
@@ -131,7 +131,7 @@ exports[`related-page glossary renders as expected 1`] = `
     className="round flex-parent flex-parent--stretch-cross border border--orange-light border--orange-dark-on-hover border--2 transition"
   >
     <div
-      className="flex-child  flex-child--grow px18 pt30 pb18"
+      className="flex-child flex-child--grow px18 pt30 pb18"
     >
       <div
         className="flex-parent-mm flex-parent--row"
@@ -265,7 +265,7 @@ exports[`related-page guide renders as expected 1`] = `
     className="round flex-parent flex-parent--stretch-cross border border--blue-light border--blue-dark-on-hover border--2 transition"
   >
     <div
-      className="flex-child  flex-child--grow px18 pt30 pb18"
+      className="flex-child flex-child--grow px18 pt30 pb18"
     >
       <div
         className="flex-parent-mm flex-parent--row"
@@ -369,7 +369,7 @@ exports[`related-page troubleshooting renders as expected 1`] = `
     className="round flex-parent flex-parent--stretch-cross border border--red-light border--red-dark-on-hover border--2 transition"
   >
     <div
-      className="flex-child  flex-child--grow px18 pt30 pb18"
+      className="flex-child flex-child--grow px18 pt30 pb18"
     >
       <div
         className="flex-parent-mm flex-parent--row"
@@ -482,7 +482,7 @@ exports[`related-page tutorial renders as expected 1`] = `
     className="round flex-parent flex-parent--stretch-cross border border--green-light border--green-dark-on-hover border--2 transition"
   >
     <div
-      className="flex-child  flex-child--grow px18 pt30 pb18"
+      className="flex-child flex-child--grow px18 pt30 pb18"
     >
       <div
         className="flex-parent-mm flex-parent--row"
@@ -594,7 +594,7 @@ exports[`related-page video renders as expected 1`] = `
     className="round flex-parent flex-parent--stretch-cross border border--purple-light border--purple-dark-on-hover border--2 transition"
   >
     <div
-      className="flex-child  flex-child--grow px18 pt30 pb18"
+      className="flex-child flex-child--grow px18 pt30 pb18"
     >
       <div
         className="flex-parent-mm flex-parent--row"
@@ -677,7 +677,7 @@ exports[`related-page video with svg image fallback renders as expected 1`] = `
     className="round flex-parent flex-parent--stretch-cross border border--purple-light border--purple-dark-on-hover border--2 transition"
   >
     <div
-      className="flex-child  flex-child--grow px18 pt30 pb18"
+      className="flex-child flex-child--grow px18 pt30 pb18"
     >
       <div
         className="flex-parent-mm flex-parent--row"

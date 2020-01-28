@@ -98,7 +98,7 @@ class RelatedPage extends React.Component {
               theme.color
             }-light border--${theme.color}-dark-on-hover border--2 transition`}
           >
-            <div className="flex-child  flex-child--grow px18 pt30 pb18">
+            <div className="flex-child flex-child--grow px18 pt30 pb18">
               <div className="flex-parent-mm flex-parent--row">
                 {theme.image && (
                   <div
