@@ -85,7 +85,7 @@ class RelatedPage extends React.Component {
     const theme = contentTypes[this.props.contentType];
 
     return (
-      <div>
+      <React.Fragment>
         <a
           onClick={props.vimeoId ? this.handleClick : undefined}
           href={props.vimeoId ? undefined : props.url}
@@ -138,7 +138,7 @@ class RelatedPage extends React.Component {
           </div>
         </a>
         {this.props.vimeoId && this.renderModal()}
-      </div>
+      </React.Fragment>
     );
   }
 }

@@ -1,759 +1,745 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`related-page example renders as expected 1`] = `
-<div>
-  <a
-    className="unprose block cursor-pointer color-pink color-pink-dark-on-hover transition mb18"
-    href="https://docs.mapbox.com/android/maps/examples/add-a-vector-tile-source/"
+<a
+  className="unprose block cursor-pointer color-pink color-pink-dark-on-hover transition mb18"
+  href="https://docs.mapbox.com/android/maps/examples/add-a-vector-tile-source/"
+>
+  <div
+    className="round flex-parent flex-parent--stretch-cross border border--pink-light border--pink-dark-on-hover border--2 transition"
   >
     <div
-      className="round flex-parent flex-parent--stretch-cross border border--pink-light border--pink-dark-on-hover border--2 transition"
+      className="flex-child  flex-child--grow px18 pt30 pb18"
     >
       <div
-        className="flex-child  flex-child--grow px18 pt30 pb18"
+        className="flex-parent-mm flex-parent--row"
       >
         <div
-          className="flex-parent-mm flex-parent--row"
+          className="flex-child pt6 mr18 none block-mm"
+        >
+          <svg
+            height={60}
+            viewBox="0 0 108 108"
+            width={60}
+          >
+            <circle
+              cx="50"
+              cy="50"
+              fill="#FEDCED"
+              r="50"
+            />
+            <path
+              d="M39.7,13.1l24.9,0c3.8,0,6.9,3.1,7,6.9l0.1,59.9c0,3.8-3.1,6.9-6.9,7l-24.9,0c-3.8,0-6.9-3.1-7-6.9 l-0.1-59.9C32.8,16.3,35.9,13.1,39.7,13.1z"
+              fill="#FD4296"
+            />
+            <path
+              d="M35.3,13.1l24.9,0c3.8,0,6.9,3.1,7,6.9l0.1,59.9c0,3.8-3.1,6.9-6.9,7l-24.9,0c-3.8,0-6.9-3.1-7-6.9 l-0.1-59.9C28.3,16.3,31.4,13.1,35.3,13.1z"
+              fill="#FD8AC0"
+            />
+            <path
+              d="M32.8,22l31.2,0L64,74.8l-31.2,0L32.8,22z"
+              fill="#FEDCED"
+            />
+            <path
+              d="M37.2,24l23.1,0c1,0,1.8,1.1,1.8,2.4l0,12c0,1.3-0.8,2.4-1.8,2.4l-23.1,0c-1,0-1.8-1.1-1.8-2.4l0-12 C35.3,25,36.2,24,37.2,24z"
+              fill="#FFFFFF"
+            />
+            <path
+              d="M45,68.9l7.5,0"
+              fill="none"
+              stroke="#FD4296"
+              strokeLinecap="round"
+              strokeMiterlimit="10"
+              strokeWidth="4"
+            />
+            <path
+              d="M58.5,54.2c0-5.4-4.4-9.8-9.8-9.8c-0.1,0-0.2,0-0.3,0c-5.4,0.2-9.6,4.7-9.5,10.1c0.1,3.9,2.5,7.3,6.1,8.7 l2.9,5c0.3,0.5,0.9,0.6,1.3,0.4c0.1-0.1,0.3-0.2,0.4-0.4l2.9-5.1C56.2,61.7,58.5,58.2,58.5,54.2z"
+              fill="#FD8AC0"
+            />
+            <ellipse
+              cx="48.8"
+              cy="54.5"
+              fill="#FFFFFF"
+              rx="4.4"
+              ry="4.4"
+              transform="matrix(1 -1.361355e-03 1.361355e-03 1 -7.416176e-02 6.647271e-02)"
+            />
+          </svg>
+        </div>
+        <div
+          className="flex-child"
         >
           <div
-            className="flex-child pt6 mr18 none block-mm"
+            className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-pink-dark"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
           >
-            <svg
-              height={60}
-              viewBox="0 0 108 108"
-              width={60}
-            >
-              <circle
-                cx="50"
-                cy="50"
-                fill="#FEDCED"
-                r="50"
-              />
-              <path
-                d="M39.7,13.1l24.9,0c3.8,0,6.9,3.1,7,6.9l0.1,59.9c0,3.8-3.1,6.9-6.9,7l-24.9,0c-3.8,0-6.9-3.1-7-6.9 l-0.1-59.9C32.8,16.3,35.9,13.1,39.7,13.1z"
-                fill="#FD4296"
-              />
-              <path
-                d="M35.3,13.1l24.9,0c3.8,0,6.9,3.1,7,6.9l0.1,59.9c0,3.8-3.1,6.9-6.9,7l-24.9,0c-3.8,0-6.9-3.1-7-6.9 l-0.1-59.9C28.3,16.3,31.4,13.1,35.3,13.1z"
-                fill="#FD8AC0"
-              />
-              <path
-                d="M32.8,22l31.2,0L64,74.8l-31.2,0L32.8,22z"
-                fill="#FEDCED"
-              />
-              <path
-                d="M37.2,24l23.1,0c1,0,1.8,1.1,1.8,2.4l0,12c0,1.3-0.8,2.4-1.8,2.4l-23.1,0c-1,0-1.8-1.1-1.8-2.4l0-12 C35.3,25,36.2,24,37.2,24z"
-                fill="#FFFFFF"
-              />
-              <path
-                d="M45,68.9l7.5,0"
-                fill="none"
-                stroke="#FD4296"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                strokeWidth="4"
-              />
-              <path
-                d="M58.5,54.2c0-5.4-4.4-9.8-9.8-9.8c-0.1,0-0.2,0-0.3,0c-5.4,0.2-9.6,4.7-9.5,10.1c0.1,3.9,2.5,7.3,6.1,8.7 l2.9,5c0.3,0.5,0.9,0.6,1.3,0.4c0.1-0.1,0.3-0.2,0.4-0.4l2.9-5.1C56.2,61.7,58.5,58.2,58.5,54.2z"
-                fill="#FD8AC0"
-              />
-              <ellipse
-                cx="48.8"
-                cy="54.5"
-                fill="#FFFFFF"
-                rx="4.4"
-                ry="4.4"
-                transform="matrix(1 -1.361355e-03 1.361355e-03 1 -7.416176e-02 6.647271e-02)"
-              />
-            </svg>
+            example
           </div>
           <div
-            className="flex-child"
+            className="color-gray-dark color-black-on-hover transition"
           >
             <div
-              className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-pink-dark"
-              style={
-                Object {
-                  "color": undefined,
-                }
-              }
+              className="txt-bold"
             >
-              example
+              Add a vector tile source
             </div>
-            <div
-              className="color-gray-dark color-black-on-hover transition"
-            >
-              <div
-                className="txt-bold"
-              >
-                Add a vector tile source
-              </div>
-              Add a vector source to a map and display it as a layer.
-            </div>
+            Add a vector source to a map and display it as a layer.
           </div>
         </div>
       </div>
-      <div
-        className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+    </div>
+    <div
+      className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+      style={
+        Object {
+          "borderColor": "inherit",
+          "borderLeftWidth": "2px",
+        }
+      }
+    >
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
         style={
           Object {
-            "borderColor": "inherit",
-            "borderLeftWidth": "2px",
+            "height": 30,
+            "width": 30,
           }
         }
       >
-        <svg
-          className="events-none icon"
-          focusable="false"
-          role="presentation"
-          style={
-            Object {
-              "height": 30,
-              "width": 30,
-            }
-          }
-        >
-          <use
-            xlinkHref="#icon-chevron-right"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-          />
-        </svg>
-      </div>
+        <use
+          xlinkHref="#icon-chevron-right"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
     </div>
-  </a>
-</div>
+  </div>
+</a>
 `;
 
 exports[`related-page glossary renders as expected 1`] = `
-<div>
-  <a
-    className="unprose block cursor-pointer color-orange color-orange-dark-on-hover transition mb18"
-    href="https://docs.mapbox.com/help/glossary/zoom-level/"
+<a
+  className="unprose block cursor-pointer color-orange color-orange-dark-on-hover transition mb18"
+  href="https://docs.mapbox.com/help/glossary/zoom-level/"
+>
+  <div
+    className="round flex-parent flex-parent--stretch-cross border border--orange-light border--orange-dark-on-hover border--2 transition"
   >
     <div
-      className="round flex-parent flex-parent--stretch-cross border border--orange-light border--orange-dark-on-hover border--2 transition"
+      className="flex-child  flex-child--grow px18 pt30 pb18"
     >
       <div
-        className="flex-child  flex-child--grow px18 pt30 pb18"
+        className="flex-parent-mm flex-parent--row"
       >
         <div
-          className="flex-parent-mm flex-parent--row"
+          className="flex-child pt6 mr18 none block-mm"
+        >
+          <svg
+            height={60}
+            viewBox="0 0 108 108"
+            width={60}
+          >
+            <circle
+              cx="50"
+              cy="50"
+              fill="#FFCC99"
+              r="50"
+            />
+            <ellipse
+              cx="38.2"
+              cy="42"
+              fill="#EF882B"
+              rx="21.4"
+              ry="21.4"
+              transform="matrix(0.6389 -0.7693 0.7693 0.6389 -18.4907 44.561)"
+            />
+            <path
+              d="M50,51.5l0.5-0.6c1.4-1.6,3.8-1.9,5.4-0.5l21.7,18c1.6,1.4,1.9,3.8,0.5,5.4l-0.5,0.6 c-1.4,1.6-3.8,1.9-5.4,0.5l-21.7-18C48.8,55.6,48.6,53.1,50,51.5z"
+              fill="#FCA148"
+            />
+            <path
+              d="M61.1,65.6l4.8-5.8c1.4-1.6,3.8-1.9,5.4-0.5l12.3,10.2c1.6,1.4,1.9,3.8,0.5,5.4l-4.8,5.8 c-1.4,1.6-3.8,1.9-5.4,0.5L61.6,71C59.9,69.7,59.7,67.3,61.1,65.6z"
+              fill="#FF9933"
+            />
+            <ellipse
+              cx="36.4"
+              cy="39.3"
+              fill="#FCA148"
+              rx="21.4"
+              ry="21.4"
+              transform="matrix(0.6389 -0.7693 0.7693 0.6389 -17.0778 42.2176)"
+            />
+            <ellipse
+              cx="36"
+              cy="38.9"
+              fill="#FFFFFF"
+              rx="14.7"
+              ry="14.7"
+              transform="matrix(0.6389 -0.7693 0.7693 0.6389 -16.897 41.7131)"
+            />
+            <path
+              d="M69.5,63.2l7.9,6.6"
+              fill="none"
+              stroke="#F8B854"
+              strokeLinecap="round"
+              strokeMiterlimit="10"
+              strokeWidth="4"
+            />
+            <path
+              d="M36.2,33.5l-5.7,10.3 M36.6,33.5l5.7,10.3 M32.9,42l7.1,0"
+              fill="none"
+              stroke="#FF9933"
+              strokeLinecap="round"
+              strokeMiterlimit="10"
+              strokeWidth="4"
+            />
+          </svg>
+        </div>
+        <div
+          className="flex-child"
         >
           <div
-            className="flex-child pt6 mr18 none block-mm"
+            className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 "
+            style={
+              Object {
+                "color": "#a7662c",
+              }
+            }
           >
-            <svg
-              height={60}
-              viewBox="0 0 108 108"
-              width={60}
-            >
-              <circle
-                cx="50"
-                cy="50"
-                fill="#FFCC99"
-                r="50"
-              />
-              <ellipse
-                cx="38.2"
-                cy="42"
-                fill="#EF882B"
-                rx="21.4"
-                ry="21.4"
-                transform="matrix(0.6389 -0.7693 0.7693 0.6389 -18.4907 44.561)"
-              />
-              <path
-                d="M50,51.5l0.5-0.6c1.4-1.6,3.8-1.9,5.4-0.5l21.7,18c1.6,1.4,1.9,3.8,0.5,5.4l-0.5,0.6 c-1.4,1.6-3.8,1.9-5.4,0.5l-21.7-18C48.8,55.6,48.6,53.1,50,51.5z"
-                fill="#FCA148"
-              />
-              <path
-                d="M61.1,65.6l4.8-5.8c1.4-1.6,3.8-1.9,5.4-0.5l12.3,10.2c1.6,1.4,1.9,3.8,0.5,5.4l-4.8,5.8 c-1.4,1.6-3.8,1.9-5.4,0.5L61.6,71C59.9,69.7,59.7,67.3,61.1,65.6z"
-                fill="#FF9933"
-              />
-              <ellipse
-                cx="36.4"
-                cy="39.3"
-                fill="#FCA148"
-                rx="21.4"
-                ry="21.4"
-                transform="matrix(0.6389 -0.7693 0.7693 0.6389 -17.0778 42.2176)"
-              />
-              <ellipse
-                cx="36"
-                cy="38.9"
-                fill="#FFFFFF"
-                rx="14.7"
-                ry="14.7"
-                transform="matrix(0.6389 -0.7693 0.7693 0.6389 -16.897 41.7131)"
-              />
-              <path
-                d="M69.5,63.2l7.9,6.6"
-                fill="none"
-                stroke="#F8B854"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                strokeWidth="4"
-              />
-              <path
-                d="M36.2,33.5l-5.7,10.3 M36.6,33.5l5.7,10.3 M32.9,42l7.1,0"
-                fill="none"
-                stroke="#FF9933"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                strokeWidth="4"
-              />
-            </svg>
+            glossary
           </div>
           <div
-            className="flex-child"
+            className="color-gray-dark color-black-on-hover transition"
           >
             <div
-              className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 "
-              style={
-                Object {
-                  "color": "#a7662c",
-                }
-              }
+              className="txt-bold"
             >
-              glossary
+              zoom level
             </div>
-            <div
-              className="color-gray-dark color-black-on-hover transition"
-            >
-              <div
-                className="txt-bold"
-              >
-                zoom level
-              </div>
-              A zoom level determines how much of a map is visible.
-            </div>
+            A zoom level determines how much of a map is visible.
           </div>
         </div>
       </div>
-      <div
-        className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+    </div>
+    <div
+      className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+      style={
+        Object {
+          "borderColor": "inherit",
+          "borderLeftWidth": "2px",
+        }
+      }
+    >
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
         style={
           Object {
-            "borderColor": "inherit",
-            "borderLeftWidth": "2px",
+            "height": 30,
+            "width": 30,
           }
         }
       >
-        <svg
-          className="events-none icon"
-          focusable="false"
-          role="presentation"
-          style={
-            Object {
-              "height": 30,
-              "width": 30,
-            }
-          }
-        >
-          <use
-            xlinkHref="#icon-chevron-right"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-          />
-        </svg>
-      </div>
+        <use
+          xlinkHref="#icon-chevron-right"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
     </div>
-  </a>
-</div>
+  </div>
+</a>
 `;
 
 exports[`related-page guide renders as expected 1`] = `
-<div>
-  <a
-    className="unprose block cursor-pointer color-blue color-blue-dark-on-hover transition mb18"
-    href="https://docs.mapbox.com/help/troubleshooting/collaboration-best-practices/"
+<a
+  className="unprose block cursor-pointer color-blue color-blue-dark-on-hover transition mb18"
+  href="https://docs.mapbox.com/help/troubleshooting/collaboration-best-practices/"
+>
+  <div
+    className="round flex-parent flex-parent--stretch-cross border border--blue-light border--blue-dark-on-hover border--2 transition"
   >
     <div
-      className="round flex-parent flex-parent--stretch-cross border border--blue-light border--blue-dark-on-hover border--2 transition"
+      className="flex-child  flex-child--grow px18 pt30 pb18"
     >
       <div
-        className="flex-child  flex-child--grow px18 pt30 pb18"
+        className="flex-parent-mm flex-parent--row"
       >
         <div
-          className="flex-parent-mm flex-parent--row"
+          className="flex-child pt6 mr18 none block-mm"
+        >
+          <svg
+            height={60}
+            viewBox="0 0 108 108"
+            width={60}
+          >
+            <circle
+              cx="53"
+              cy="55"
+              fill="#47b9f3"
+              r="45"
+            />
+            <rect
+              fill="#1274c6"
+              height="34.501"
+              rx="5.219"
+              ry="5.219"
+              transform="rotate(.605 53.4 58.455)"
+              width="52.254"
+              x="27.273"
+              y="41.204"
+            />
+            <path
+              d="M64.1 34.848s-9.912-.76-10.008 8.42-.093 24.736-.093 24.736S58.822 64.96 62.79 65l15.404.163A1.788 1.788 0 0 0 80 63.393l.281-26.601A1.773 1.773 0 0 0 78.527 35z"
+              fill="#309ef9"
+            />
+            <path
+              d="M43.971 34.157s10.21-.563 10.11 8.821S53.998 68 53.998 68s-5.25-2.957-9.331-3L28.78 64.83A1.786 1.786 0 0 1 27 63.04l.288-27.286A1.786 1.786 0 0 1 29.106 34z"
+              fill="#0d84fd"
+            />
+          </svg>
+        </div>
+        <div
+          className="flex-child"
         >
           <div
-            className="flex-child pt6 mr18 none block-mm"
+            className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-blue-dark"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
           >
-            <svg
-              height={60}
-              viewBox="0 0 108 108"
-              width={60}
-            >
-              <circle
-                cx="53"
-                cy="55"
-                fill="#47b9f3"
-                r="45"
-              />
-              <rect
-                fill="#1274c6"
-                height="34.501"
-                rx="5.219"
-                ry="5.219"
-                transform="rotate(.605 53.4 58.455)"
-                width="52.254"
-                x="27.273"
-                y="41.204"
-              />
-              <path
-                d="M64.1 34.848s-9.912-.76-10.008 8.42-.093 24.736-.093 24.736S58.822 64.96 62.79 65l15.404.163A1.788 1.788 0 0 0 80 63.393l.281-26.601A1.773 1.773 0 0 0 78.527 35z"
-                fill="#309ef9"
-              />
-              <path
-                d="M43.971 34.157s10.21-.563 10.11 8.821S53.998 68 53.998 68s-5.25-2.957-9.331-3L28.78 64.83A1.786 1.786 0 0 1 27 63.04l.288-27.286A1.786 1.786 0 0 1 29.106 34z"
-                fill="#0d84fd"
-              />
-            </svg>
+            guide
           </div>
           <div
-            className="flex-child"
+            className="color-gray-dark color-black-on-hover transition"
           >
             <div
-              className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-blue-dark"
-              style={
-                Object {
-                  "color": undefined,
-                }
-              }
+              className="txt-bold"
             >
-              guide
+              Access tokens
             </div>
-            <div
-              className="color-gray-dark color-black-on-hover transition"
-            >
-              <div
-                className="txt-bold"
-              >
-                Access tokens
-              </div>
-              Learn how access tokens work and how to create and manage your access tokens.
-            </div>
+            Learn how access tokens work and how to create and manage your access tokens.
           </div>
         </div>
       </div>
-      <div
-        className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+    </div>
+    <div
+      className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+      style={
+        Object {
+          "borderColor": "inherit",
+          "borderLeftWidth": "2px",
+        }
+      }
+    >
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
         style={
           Object {
-            "borderColor": "inherit",
-            "borderLeftWidth": "2px",
+            "height": 30,
+            "width": 30,
           }
         }
       >
-        <svg
-          className="events-none icon"
-          focusable="false"
-          role="presentation"
-          style={
-            Object {
-              "height": 30,
-              "width": 30,
-            }
-          }
-        >
-          <use
-            xlinkHref="#icon-chevron-right"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-          />
-        </svg>
-      </div>
+        <use
+          xlinkHref="#icon-chevron-right"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
     </div>
-  </a>
-</div>
+  </div>
+</a>
 `;
 
 exports[`related-page troubleshooting renders as expected 1`] = `
-<div>
-  <a
-    className="unprose block cursor-pointer color-red color-red-dark-on-hover transition mb18"
-    href="https://docs.mapbox.com/help/troubleshooting/collaboration-best-practices/"
+<a
+  className="unprose block cursor-pointer color-red color-red-dark-on-hover transition mb18"
+  href="https://docs.mapbox.com/help/troubleshooting/collaboration-best-practices/"
+>
+  <div
+    className="round flex-parent flex-parent--stretch-cross border border--red-light border--red-dark-on-hover border--2 transition"
   >
     <div
-      className="round flex-parent flex-parent--stretch-cross border border--red-light border--red-dark-on-hover border--2 transition"
+      className="flex-child  flex-child--grow px18 pt30 pb18"
     >
       <div
-        className="flex-child  flex-child--grow px18 pt30 pb18"
+        className="flex-parent-mm flex-parent--row"
       >
         <div
-          className="flex-parent-mm flex-parent--row"
+          className="flex-child pt6 mr18 none block-mm"
+        >
+          <svg
+            height={60}
+            viewBox="0 0 108 108"
+            width={60}
+          >
+            <circle
+              cx="53"
+              cy="55"
+              fill="#ffb9a9"
+              r="45"
+            />
+            <path
+              d="M25.008 35.898h37.658v41.91H30.718a5.71 5.71 0 0 1-5.71-5.71v-36.2z"
+              fill="#fff"
+            />
+            <path
+              d="M62.666 35.898H82.71v36.2a5.71 5.71 0 0 1-5.71 5.71H62.667v-41.91z"
+              fill="#fc7e5b"
+            />
+            <circle
+              cx="43.607"
+              cy="62.393"
+              fill="#fc7e5b"
+              r="9.393"
+            />
+            <path
+              d="M37.5 62.32h12M43.518 56.5l-.018 11"
+              fill="none"
+              stroke="#fff"
+            />
+            <path
+              d="M55.448 48.654H21.971a1.652 1.652 0 0 1-1.536-2.259l4.388-11.104h37.843l-5.718 12.402a1.652 1.652 0 0 1-1.5.96z"
+              fill="#d85a3d"
+            />
+            <path
+              d="M69.562 48.654h16.785a1.652 1.652 0 0 0 1.534-2.264l-4.427-11.099H62.666l5.382 12.37a1.652 1.652 0 0 0 1.514.993z"
+              fill="#d85a3d"
+            />
+          </svg>
+        </div>
+        <div
+          className="flex-child"
         >
           <div
-            className="flex-child pt6 mr18 none block-mm"
+            className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-red-dark"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
           >
-            <svg
-              height={60}
-              viewBox="0 0 108 108"
-              width={60}
-            >
-              <circle
-                cx="53"
-                cy="55"
-                fill="#ffb9a9"
-                r="45"
-              />
-              <path
-                d="M25.008 35.898h37.658v41.91H30.718a5.71 5.71 0 0 1-5.71-5.71v-36.2z"
-                fill="#fff"
-              />
-              <path
-                d="M62.666 35.898H82.71v36.2a5.71 5.71 0 0 1-5.71 5.71H62.667v-41.91z"
-                fill="#fc7e5b"
-              />
-              <circle
-                cx="43.607"
-                cy="62.393"
-                fill="#fc7e5b"
-                r="9.393"
-              />
-              <path
-                d="M37.5 62.32h12M43.518 56.5l-.018 11"
-                fill="none"
-                stroke="#fff"
-              />
-              <path
-                d="M55.448 48.654H21.971a1.652 1.652 0 0 1-1.536-2.259l4.388-11.104h37.843l-5.718 12.402a1.652 1.652 0 0 1-1.5.96z"
-                fill="#d85a3d"
-              />
-              <path
-                d="M69.562 48.654h16.785a1.652 1.652 0 0 0 1.534-2.264l-4.427-11.099H62.666l5.382 12.37a1.652 1.652 0 0 0 1.514.993z"
-                fill="#d85a3d"
-              />
-            </svg>
+            troubleshooting
           </div>
           <div
-            className="flex-child"
+            className="color-gray-dark color-black-on-hover transition"
           >
             <div
-              className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-red-dark"
-              style={
-                Object {
-                  "color": undefined,
-                }
-              }
+              className="txt-bold"
             >
-              troubleshooting
+              Collaboration best practices
             </div>
-            <div
-              className="color-gray-dark color-black-on-hover transition"
-            >
-              <div
-                className="txt-bold"
-              >
-                Collaboration best practices
-              </div>
-              Learn best practices for setting up an account and collaborating on projects.
-            </div>
+            Learn best practices for setting up an account and collaborating on projects.
           </div>
         </div>
       </div>
-      <div
-        className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+    </div>
+    <div
+      className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+      style={
+        Object {
+          "borderColor": "inherit",
+          "borderLeftWidth": "2px",
+        }
+      }
+    >
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
         style={
           Object {
-            "borderColor": "inherit",
-            "borderLeftWidth": "2px",
+            "height": 30,
+            "width": 30,
           }
         }
       >
-        <svg
-          className="events-none icon"
-          focusable="false"
-          role="presentation"
-          style={
-            Object {
-              "height": 30,
-              "width": 30,
-            }
-          }
-        >
-          <use
-            xlinkHref="#icon-chevron-right"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-          />
-        </svg>
-      </div>
+        <use
+          xlinkHref="#icon-chevron-right"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
     </div>
-  </a>
-</div>
+  </div>
+</a>
 `;
 
 exports[`related-page tutorial renders as expected 1`] = `
-<div>
-  <a
-    className="unprose block cursor-pointer color-green color-green-dark-on-hover transition mb18"
-    href="https://docs.mapbox.com/help/tutorials/first-steps-android-sdk/"
+<a
+  className="unprose block cursor-pointer color-green color-green-dark-on-hover transition mb18"
+  href="https://docs.mapbox.com/help/tutorials/first-steps-android-sdk/"
+>
+  <div
+    className="round flex-parent flex-parent--stretch-cross border border--green-light border--green-dark-on-hover border--2 transition"
   >
     <div
-      className="round flex-parent flex-parent--stretch-cross border border--green-light border--green-dark-on-hover border--2 transition"
+      className="flex-child  flex-child--grow px18 pt30 pb18"
     >
       <div
-        className="flex-child  flex-child--grow px18 pt30 pb18"
+        className="flex-parent-mm flex-parent--row"
       >
         <div
-          className="flex-parent-mm flex-parent--row"
+          className="flex-child pt6 mr18 none block-mm"
+        >
+          <svg
+            height={60}
+            viewBox="0 0 108 108"
+            width={60}
+          >
+            <circle
+              cx="53"
+              cy="55"
+              fill="#83e5af"
+              r="45"
+            />
+            <path
+              d="M63.238 70h-23.37a5.887 5.887 0 0 0-5.752 4.842 6.137 6.137 0 0 0-.11.868A5.898 5.898 0 0 0 39.763 82H63.77A5.341 5.341 0 0 0 69 76.554V64a5.885 5.885 0 0 1-5.762 6z"
+              fill="#30aa67"
+            />
+            <rect
+              fill="#3dbc7d"
+              height="39"
+              rx="4.744"
+              ry="4.744"
+              width="34"
+              x="39"
+              y="38"
+            />
+            <path
+              d="M63.238 70.257A5.792 5.792 0 0 0 69 64.436v-32.18A4.257 4.257 0 0 0 64.743 28H38.257A4.257 4.257 0 0 0 34 32.257V75h.107a5.918 5.918 0 0 1 5.818-4.743"
+              fill="#4bd18b"
+            />
+            <rect
+              fill="#3dbc7d"
+              height="15"
+              rx="2.136"
+              ry="2.136"
+              width="25"
+              x="39"
+              y="33"
+            />
+          </svg>
+        </div>
+        <div
+          className="flex-child"
         >
           <div
-            className="flex-child pt6 mr18 none block-mm"
+            className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 "
+            style={
+              Object {
+                "color": "#1b7d4f",
+              }
+            }
           >
-            <svg
-              height={60}
-              viewBox="0 0 108 108"
-              width={60}
-            >
-              <circle
-                cx="53"
-                cy="55"
-                fill="#83e5af"
-                r="45"
-              />
-              <path
-                d="M63.238 70h-23.37a5.887 5.887 0 0 0-5.752 4.842 6.137 6.137 0 0 0-.11.868A5.898 5.898 0 0 0 39.763 82H63.77A5.341 5.341 0 0 0 69 76.554V64a5.885 5.885 0 0 1-5.762 6z"
-                fill="#30aa67"
-              />
-              <rect
-                fill="#3dbc7d"
-                height="39"
-                rx="4.744"
-                ry="4.744"
-                width="34"
-                x="39"
-                y="38"
-              />
-              <path
-                d="M63.238 70.257A5.792 5.792 0 0 0 69 64.436v-32.18A4.257 4.257 0 0 0 64.743 28H38.257A4.257 4.257 0 0 0 34 32.257V75h.107a5.918 5.918 0 0 1 5.818-4.743"
-                fill="#4bd18b"
-              />
-              <rect
-                fill="#3dbc7d"
-                height="15"
-                rx="2.136"
-                ry="2.136"
-                width="25"
-                x="39"
-                y="33"
-              />
-            </svg>
+            tutorial
           </div>
           <div
-            className="flex-child"
+            className="color-gray-dark color-black-on-hover transition"
           >
             <div
-              className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 "
-              style={
-                Object {
-                  "color": "#1b7d4f",
-                }
-              }
+              className="txt-bold"
             >
-              tutorial
+              First steps with the Mapbox Maps SDK for Android
             </div>
-            <div
-              className="color-gray-dark color-black-on-hover transition"
-            >
-              <div
-                className="txt-bold"
-              >
-                First steps with the Mapbox Maps SDK for Android
-              </div>
-              Walk through installing the Mapbox Maps SDK for Android, getting a map on the screen, and changing the map style.
-            </div>
+            Walk through installing the Mapbox Maps SDK for Android, getting a map on the screen, and changing the map style.
           </div>
         </div>
       </div>
-      <div
-        className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+    </div>
+    <div
+      className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+      style={
+        Object {
+          "borderColor": "inherit",
+          "borderLeftWidth": "2px",
+        }
+      }
+    >
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
         style={
           Object {
-            "borderColor": "inherit",
-            "borderLeftWidth": "2px",
+            "height": 30,
+            "width": 30,
           }
         }
       >
-        <svg
-          className="events-none icon"
-          focusable="false"
-          role="presentation"
-          style={
-            Object {
-              "height": 30,
-              "width": 30,
-            }
-          }
-        >
-          <use
-            xlinkHref="#icon-chevron-right"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-          />
-        </svg>
-      </div>
+        <use
+          xlinkHref="#icon-chevron-right"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
     </div>
-  </a>
-</div>
+  </div>
+</a>
 `;
 
 exports[`related-page video renders as expected 1`] = `
-<div>
-  <a
-    className="unprose block cursor-pointer color-purple color-purple-dark-on-hover transition mb18"
-    onClick={[Function]}
+<a
+  className="unprose block cursor-pointer color-purple color-purple-dark-on-hover transition mb18"
+  onClick={[Function]}
+>
+  <div
+    className="round flex-parent flex-parent--stretch-cross border border--purple-light border--purple-dark-on-hover border--2 transition"
   >
     <div
-      className="round flex-parent flex-parent--stretch-cross border border--purple-light border--purple-dark-on-hover border--2 transition"
+      className="flex-child  flex-child--grow px18 pt30 pb18"
     >
       <div
-        className="flex-child  flex-child--grow px18 pt30 pb18"
+        className="flex-parent-mm flex-parent--row"
       >
         <div
-          className="flex-parent-mm flex-parent--row"
+          className="relative mr18 h-full wmin180"
         >
           <div
-            className="relative mr18 h-full wmin180"
-          >
-            <div
-              className="bg-darken75 round absolute"
-              style={
-                Object {
-                  "left": "50%",
-                  "padding": "4% 9% 1%",
-                  "top": "50%",
-                  "transform": "translate(-50%, -50%)",
-                  "width": "30%",
-                }
+            className="bg-darken75 round absolute"
+            style={
+              Object {
+                "left": "50%",
+                "padding": "4% 9% 1%",
+                "top": "50%",
+                "transform": "translate(-50%, -50%)",
+                "width": "30%",
               }
+            }
+          >
+            <svg
+              aria-labelledby="play-icon-title"
+              fill="#fff"
+              focusable="false"
+              role="img"
+              viewBox="0 0 20 20"
+              width="100%"
             >
-              <svg
-                aria-labelledby="play-icon-title"
-                fill="#fff"
-                focusable="false"
-                role="img"
-                viewBox="0 0 20 20"
-                width="100%"
+              <title
+                id="play-icon-title"
               >
-                <title
-                  id="play-icon-title"
-                >
-                  Play
-                </title>
-                <polygon
-                  points="1,0 20,10 1,20"
-                />
-              </svg>
-            </div>
-            <img
-              alt=""
-              className="w240-ml w180-mm w-full block inline-block-mm round mt-neg12 h-full mb18 mb0-mm"
-              src="assets/vimeo_thumb.jpg"
-            />
+                Play
+              </title>
+              <polygon
+                points="1,0 20,10 1,20"
+              />
+            </svg>
+          </div>
+          <img
+            alt=""
+            className="w240-ml w180-mm w-full block inline-block-mm round mt-neg12 h-full mb18 mb0-mm"
+            src="assets/vimeo_thumb.jpg"
+          />
+        </div>
+        <div
+          className="flex-child"
+        >
+          <div
+            className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-purple-dark"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+          >
+            video
           </div>
           <div
-            className="flex-child"
+            className="color-gray-dark color-black-on-hover transition"
           >
             <div
-              className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-purple-dark"
-              style={
-                Object {
-                  "color": undefined,
-                }
-              }
+              className="txt-bold"
             >
-              video
+              How to eject a Style Component in Mapbox Studio
             </div>
-            <div
-              className="color-gray-dark color-black-on-hover transition"
-            >
-              <div
-                className="txt-bold"
-              >
-                How to eject a Style Component in Mapbox Studio
-              </div>
-              Style Components provide sensible defaults and quick opportunities for customization by optimizing the most common property changes for styles and packaging them into simple drop-down options, sliders, and toggles.
-            </div>
+            Style Components provide sensible defaults and quick opportunities for customization by optimizing the most common property changes for styles and packaging them into simple drop-down options, sliders, and toggles.
           </div>
         </div>
       </div>
     </div>
-  </a>
-</div>
+  </div>
+</a>
 `;
 
 exports[`related-page video with svg image fallback renders as expected 1`] = `
-<div>
-  <a
-    className="unprose block cursor-pointer color-purple color-purple-dark-on-hover transition mb18"
-    onClick={[Function]}
+<a
+  className="unprose block cursor-pointer color-purple color-purple-dark-on-hover transition mb18"
+  onClick={[Function]}
+>
+  <div
+    className="round flex-parent flex-parent--stretch-cross border border--purple-light border--purple-dark-on-hover border--2 transition"
   >
     <div
-      className="round flex-parent flex-parent--stretch-cross border border--purple-light border--purple-dark-on-hover border--2 transition"
+      className="flex-child  flex-child--grow px18 pt30 pb18"
     >
       <div
-        className="flex-child  flex-child--grow px18 pt30 pb18"
+        className="flex-parent-mm flex-parent--row"
       >
         <div
-          className="flex-parent-mm flex-parent--row"
+          className="flex-child pt6 mr18 none block-mm"
         >
           <div
-            className="flex-child pt6 mr18 none block-mm"
-          >
-            <div
-              className="bg-purple-light round-full"
-              style={
-                Object {
-                  "height": 55,
-                  "padding": "15px 12px 15px 18px",
-                  "width": 55,
-                }
+            className="bg-purple-light round-full"
+            style={
+              Object {
+                "height": 55,
+                "padding": "15px 12px 15px 18px",
+                "width": 55,
               }
+            }
+          >
+            <svg
+              aria-labelledby="play-icon-title"
+              fill="#7753eb"
+              focusable="false"
+              role="img"
+              viewBox="0 0 20 20"
+              width="100%"
             >
-              <svg
-                aria-labelledby="play-icon-title"
-                fill="#7753eb"
-                focusable="false"
-                role="img"
-                viewBox="0 0 20 20"
-                width="100%"
+              <title
+                id="play-icon-title"
               >
-                <title
-                  id="play-icon-title"
-                >
-                  Play
-                </title>
-                <polygon
-                  points="1,0 20,10 1,20"
-                />
-              </svg>
-            </div>
+                Play
+              </title>
+              <polygon
+                points="1,0 20,10 1,20"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          className="flex-child"
+        >
+          <div
+            className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-purple-dark"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+          >
+            video
           </div>
           <div
-            className="flex-child"
+            className="color-gray-dark color-black-on-hover transition"
           >
             <div
-              className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-purple-dark"
-              style={
-                Object {
-                  "color": undefined,
-                }
-              }
+              className="txt-bold"
             >
-              video
+              How to eject a Style Component in Mapbox Studio
             </div>
-            <div
-              className="color-gray-dark color-black-on-hover transition"
-            >
-              <div
-                className="txt-bold"
-              >
-                How to eject a Style Component in Mapbox Studio
-              </div>
-              Style Components provide sensible defaults and quick opportunities for customization by optimizing the most common property changes for styles and packaging them into simple drop-down options, sliders, and toggles.
-            </div>
+            Style Components provide sensible defaults and quick opportunities for customization by optimizing the most common property changes for styles and packaging them into simple drop-down options, sliders, and toggles.
           </div>
         </div>
       </div>
     </div>
-  </a>
-</div>
+  </div>
+</a>
 `;
