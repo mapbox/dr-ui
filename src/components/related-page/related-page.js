@@ -84,11 +84,13 @@ class RelatedPage extends React.Component {
 
     const theme = contentTypes[this.props.contentType];
 
+    const showVideoModal = props.vimeoId && props.contentType === 'video';
+
     return (
       <React.Fragment>
         <a
-          onClick={props.vimeoId ? this.handleClick : undefined}
-          href={props.vimeoId ? undefined : props.url}
+          onClick={showVideoModal ? this.handleClick : undefined}
+          href={showVideoModal ? undefined : props.url}
           className={`unprose block cursor-pointer color-${theme.color} color-${
             theme.color
           }-dark-on-hover transition mb18`}
@@ -103,7 +105,7 @@ class RelatedPage extends React.Component {
                 {theme.image && (
                   <div
                     className={
-                      props.vimeoThumbnail
+                      this.props.contentType === 'video' && props.vimeoThumbnail
                         ? 'relative mr18 h-full wmin180'
                         : 'flex-child pt6 mr18 none block-mm'
                     }
@@ -127,7 +129,7 @@ class RelatedPage extends React.Component {
                 </div>
               </div>
             </div>
-            {!props.vimeoId && (
+            {!showVideoModal && (
               <div
                 className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
                 style={{ borderColor: 'inherit', borderLeftWidth: '2px' }}
@@ -137,7 +139,7 @@ class RelatedPage extends React.Component {
             )}
           </div>
         </a>
-        {this.props.vimeoId && this.renderModal()}
+        {showVideoModal && this.renderModal()}
       </React.Fragment>
     );
   }
@@ -148,6 +150,7 @@ RelatedPage.defaultProps = {
 };
 
 RelatedPage.propTypes = {
+  // Required. The content-type of the related page.
   contentType: PropTypes.oneOf([
     'example',
     'glossary',
@@ -156,12 +159,60 @@ RelatedPage.propTypes = {
     'troubleshooting',
     'video',
     'default'
-  ]), // Required. The content-type of the related page.
-  title: PropTypes.string.isRequired, // Required. Title of the related page in the context of the current page.
-  description: PropTypes.string, // Required. Description of the related page in the context of the current page.
-  url: PropTypes.string, // Required if `vimeoId` is not set. The link to the related page.
-  vimeoId: PropTypes.string, // Required if `url` is not set. Pass a vimeoId to open the video in a modal.
-  vimeoThumbnail: PropTypes.string // Optional. Pass a thumbnail image of the video or an play button icon will be the fallback.
+  ]),
+  // Required. Title of the related page in the context of the current page.
+  title: PropTypes.string.isRequired,
+  // Required. Description of the related page in the context of the current page.
+  description: PropTypes.string,
+  // Required if `vimeoId` is not set. The link to the related page.
+  url: (props, propName, componentName) => {
+    if (props[propName] && typeof props[propName] !== 'string') {
+      return new Error(
+        `\`${propName}\` expected a string, but received ${typeof props[
+          propName
+        ]}.`
+      );
+    }
+    if (props.contentType !== 'video' && !props[propName]) {
+      return new Error(
+        `\`${propName}\` is required when contentType=${props.contentType}.`
+      );
+    }
+    if (
+      (!props.vimeoId && !props[propName]) ||
+      (props.vimeoId && props[propName])
+    ) {
+      return new Error(
+        `\`url\` or \`vimeoId\` must be supplied to ${componentName}.`
+      );
+    }
+  },
+  // Required if `url` is not set. Pass a vimeoId to open the video in a modal.
+  vimeoId: (props, propName, componentName) => {
+    if (props[propName] && typeof props[propName] !== 'string') {
+      return new Error(
+        `\`${propName}\` expected a string, but received ${typeof props[
+          propName
+        ]}.`
+      );
+    }
+    if ((!props.url && !props[propName]) || (props.url && props[propName])) {
+      return new Error(
+        `\`url\` or \`vimeoId\` must be supplied to ${componentName}.`
+      );
+    }
+  },
+  // Optional. Pass a thumbnail image of the video or an play button icon will be the fallback.
+  vimeoThumbnail: (props, propName, componentName) => {
+    if (
+      props.contentType &&
+      props.contentType !== 'video' &&
+      props.vimeoThumbnail
+    )
+      return new Error(
+        `\`${propName}\` only works with \`contentType=video\` in ${componentName}`
+      );
+  }
 };
 
 export default RelatedPage;
