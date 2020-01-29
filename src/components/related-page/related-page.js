@@ -85,6 +85,8 @@ class RelatedPage extends React.Component {
     const theme = contentTypes[this.props.contentType];
 
     const showVideoModal = props.vimeoId && props.contentType === 'video';
+    const showVideoThumbnail =
+      this.props.contentType === 'video' && props.vimeoThumbnail;
 
     return (
       <React.Fragment>
@@ -103,15 +105,13 @@ class RelatedPage extends React.Component {
             <div className="flex-child flex-child--grow px18 pt30 pb18">
               <div
                 className={`flex-parent${
-                  this.props.contentType === 'video' && props.vimeoThumbnail
-                    ? '-ml'
-                    : ''
+                  showVideoThumbnail ? '-ml' : ''
                 } flex-parent--start-cross`}
               >
                 {theme.image && (
                   <div
                     className={
-                      this.props.contentType === 'video' && props.vimeoThumbnail
+                      showVideoThumbnail
                         ? 'flex-child relative w-full wmin120 wmax240-ml mr18-ml mt18-ml mt-neg12'
                         : 'flex-child pt6 mr18 none block-mm'
                     }
@@ -119,7 +119,11 @@ class RelatedPage extends React.Component {
                     {theme.image}
                   </div>
                 )}
-                <div className="flex-child wmin180">
+                <div
+                  className={`flex-child${
+                    showVideoThumbnail ? ' wmin180' : ''
+                  }`}
+                >
                   <div
                     style={{ color: theme.a11yColor }}
                     className={`txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 ${

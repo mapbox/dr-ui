@@ -67,7 +67,7 @@ exports[`related-page example renders as expected 1`] = `
           </svg>
         </div>
         <div
-          className="flex-child wmin180"
+          className="flex-child"
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-pink-dark"
@@ -201,7 +201,7 @@ exports[`related-page glossary renders as expected 1`] = `
           </svg>
         </div>
         <div
-          className="flex-child wmin180"
+          className="flex-child"
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 "
@@ -305,7 +305,7 @@ exports[`related-page guide renders as expected 1`] = `
           </svg>
         </div>
         <div
-          className="flex-child wmin180"
+          className="flex-child"
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-blue-dark"
@@ -418,7 +418,7 @@ exports[`related-page troubleshooting renders as expected 1`] = `
           </svg>
         </div>
         <div
-          className="flex-child wmin180"
+          className="flex-child"
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-red-dark"
@@ -530,7 +530,7 @@ exports[`related-page tutorial renders as expected 1`] = `
           </svg>
         </div>
         <div
-          className="flex-child wmin180"
+          className="flex-child"
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 "
@@ -715,7 +715,7 @@ exports[`related-page video with svg image fallback renders as expected 1`] = `
           </div>
         </div>
         <div
-          className="flex-child wmin180"
+          className="flex-child"
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-purple-dark"
