@@ -78,7 +78,8 @@ VimeoThumbnail.propTypes = {
 // creates play button icon
 export class VimeoPlayImage extends React.Component {
   render() {
-    // if icon = true; then use the icon wrapper
+    // if fallbackIcon, then use the icon wrapper
+    // to add the circle background
     const IconWrapper = ({ wrap, children }) =>
       this.props.fallbackIcon ? wrap(children) : children;
     return (
@@ -98,7 +99,7 @@ export class VimeoPlayImage extends React.Component {
           focusable="false"
           aria-labelledby="play-icon-title"
           role="img"
-          fill={this.props.fill}
+          fill={this.props.fallbackIcon ? '#7753eb' : '#fff'}
         >
           <title id="play-icon-title">Play</title>
           <polygon points="1,0 20,10 1,20" />
@@ -109,11 +110,9 @@ export class VimeoPlayImage extends React.Component {
 }
 
 VimeoPlayImage.defaultProps = {
-  fill: '#fff',
   fallbackIcon: false
 };
 
 VimeoPlayImage.propTypes = {
-  fill: PropTypes.oneOf(['#fff', '#7753eb']),
   fallbackIcon: PropTypes.bool
 };
