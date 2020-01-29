@@ -12,7 +12,7 @@ exports[`related-page example renders as expected 1`] = `
       className="flex-child flex-child--grow px18 pt30 pb18"
     >
       <div
-        className="flex-parent-ml flex-parent--start-cross"
+        className="flex-parent flex-parent--start-cross"
       >
         <div
           className="flex-child pt6 mr18 none block-mm"
@@ -67,7 +67,7 @@ exports[`related-page example renders as expected 1`] = `
           </svg>
         </div>
         <div
-          className="flex-child"
+          className="flex-child wmin180"
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-pink-dark"
@@ -134,7 +134,7 @@ exports[`related-page glossary renders as expected 1`] = `
       className="flex-child flex-child--grow px18 pt30 pb18"
     >
       <div
-        className="flex-parent-ml flex-parent--start-cross"
+        className="flex-parent flex-parent--start-cross"
       >
         <div
           className="flex-child pt6 mr18 none block-mm"
@@ -201,7 +201,7 @@ exports[`related-page glossary renders as expected 1`] = `
           </svg>
         </div>
         <div
-          className="flex-child"
+          className="flex-child wmin180"
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 "
@@ -268,7 +268,7 @@ exports[`related-page guide renders as expected 1`] = `
       className="flex-child flex-child--grow px18 pt30 pb18"
     >
       <div
-        className="flex-parent-ml flex-parent--start-cross"
+        className="flex-parent flex-parent--start-cross"
       >
         <div
           className="flex-child pt6 mr18 none block-mm"
@@ -305,7 +305,7 @@ exports[`related-page guide renders as expected 1`] = `
           </svg>
         </div>
         <div
-          className="flex-child"
+          className="flex-child wmin180"
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-blue-dark"
@@ -372,7 +372,7 @@ exports[`related-page troubleshooting renders as expected 1`] = `
       className="flex-child flex-child--grow px18 pt30 pb18"
     >
       <div
-        className="flex-parent-ml flex-parent--start-cross"
+        className="flex-parent flex-parent--start-cross"
       >
         <div
           className="flex-child pt6 mr18 none block-mm"
@@ -418,7 +418,7 @@ exports[`related-page troubleshooting renders as expected 1`] = `
           </svg>
         </div>
         <div
-          className="flex-child"
+          className="flex-child wmin180"
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-red-dark"
@@ -485,7 +485,7 @@ exports[`related-page tutorial renders as expected 1`] = `
       className="flex-child flex-child--grow px18 pt30 pb18"
     >
       <div
-        className="flex-parent-ml flex-parent--start-cross"
+        className="flex-parent flex-parent--start-cross"
       >
         <div
           className="flex-child pt6 mr18 none block-mm"
@@ -530,7 +530,7 @@ exports[`related-page tutorial renders as expected 1`] = `
           </svg>
         </div>
         <div
-          className="flex-child"
+          className="flex-child wmin180"
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 "
@@ -600,7 +600,7 @@ exports[`related-page video renders as expected 1`] = `
         className="flex-parent-ml flex-parent--start-cross"
       >
         <div
-          className="flex-child flex-child--no-shrink relative mr18 wmax180-ml mt18-ml"
+          className="flex-child relative w-full wmin120 wmax240-ml mr18-ml mt18-ml mt-neg12"
         >
           <div
             className="bg-darken75 round absolute"
@@ -639,7 +639,7 @@ exports[`related-page video renders as expected 1`] = `
           />
         </div>
         <div
-          className="flex-child"
+          className="flex-child wmin180"
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-purple-dark"
@@ -680,7 +680,7 @@ exports[`related-page video with svg image fallback renders as expected 1`] = `
       className="flex-child flex-child--grow px18 pt30 pb18"
     >
       <div
-        className="flex-parent-ml flex-parent--start-cross"
+        className="flex-parent flex-parent--start-cross"
       >
         <div
           className="flex-child pt6 mr18 none block-mm"
@@ -715,7 +715,7 @@ exports[`related-page video with svg image fallback renders as expected 1`] = `
           </div>
         </div>
         <div
-          className="flex-child"
+          className="flex-child wmin180"
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-purple-dark"
