@@ -55,6 +55,7 @@ export class VimeoThumbnail extends React.Component {
             left: '50%',
             transform: 'translate(-50%, -50%)',
             width: '30%',
+            height: '36%',
             padding: '4% 9% 1%'
           }}
         >

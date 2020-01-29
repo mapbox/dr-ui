@@ -606,6 +606,7 @@ exports[`related-page video renders as expected 1`] = `
             className="bg-darken75 round absolute"
             style={
               Object {
+                "height": "36%",
                 "left": "50%",
                 "padding": "4% 9% 1%",
                 "top": "50%",
