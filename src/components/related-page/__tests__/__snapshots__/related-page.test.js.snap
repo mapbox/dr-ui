@@ -12,7 +12,7 @@ exports[`related-page example renders as expected 1`] = `
       className="flex-child flex-child--grow px18 pt30 pb18"
     >
       <div
-        className="flex-parent flex-parent--start-cross"
+        className="flex-parent flex-parent--row"
       >
         <div
           className="flex-child pt6 mr18 none block-mm"
@@ -134,7 +134,7 @@ exports[`related-page glossary renders as expected 1`] = `
       className="flex-child flex-child--grow px18 pt30 pb18"
     >
       <div
-        className="flex-parent flex-parent--start-cross"
+        className="flex-parent flex-parent--row"
       >
         <div
           className="flex-child pt6 mr18 none block-mm"
@@ -268,7 +268,7 @@ exports[`related-page guide renders as expected 1`] = `
       className="flex-child flex-child--grow px18 pt30 pb18"
     >
       <div
-        className="flex-parent flex-parent--start-cross"
+        className="flex-parent flex-parent--row"
       >
         <div
           className="flex-child pt6 mr18 none block-mm"
@@ -372,7 +372,7 @@ exports[`related-page troubleshooting renders as expected 1`] = `
       className="flex-child flex-child--grow px18 pt30 pb18"
     >
       <div
-        className="flex-parent flex-parent--start-cross"
+        className="flex-parent flex-parent--row"
       >
         <div
           className="flex-child pt6 mr18 none block-mm"
@@ -485,7 +485,7 @@ exports[`related-page tutorial renders as expected 1`] = `
       className="flex-child flex-child--grow px18 pt30 pb18"
     >
       <div
-        className="flex-parent flex-parent--start-cross"
+        className="flex-parent flex-parent--row"
       >
         <div
           className="flex-child pt6 mr18 none block-mm"
@@ -680,7 +680,7 @@ exports[`related-page video with svg image fallback renders as expected 1`] = `
       className="flex-child flex-child--grow px18 pt30 pb18"
     >
       <div
-        className="flex-parent flex-parent--start-cross"
+        className="flex-parent flex-parent--row"
       >
         <div
           className="flex-child pt6 mr18 none block-mm"

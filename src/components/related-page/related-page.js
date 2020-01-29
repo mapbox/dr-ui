@@ -7,6 +7,7 @@ import BookImage from '../book-image/book-image';
 import GlossaryImage from '../glossary-image/glossary-image';
 import ExampleImage from '../example-image/example-image';
 import { VimeoModal, VimeoThumbnail, VimeoPlayImage } from './vimeo';
+import classnames from 'classnames';
 
 class RelatedPage extends React.Component {
   constructor(props) {
@@ -88,6 +89,20 @@ class RelatedPage extends React.Component {
     const showVideoThumbnail =
       this.props.contentType === 'video' && props.vimeoThumbnail;
 
+    const contentContainerClasses = classnames('', {
+      'flex-parent-ml flex-parent--start-cross': showVideoThumbnail,
+      'flex-parent flex-parent--row': !showVideoThumbnail
+    });
+
+    const imageClasses = classnames('flex-child', {
+      'relative w-full wmin120 wmax240-ml mr18-ml mt18-ml mt-neg12': showVideoThumbnail,
+      'pt6 mr18 none block-mm': !showVideoThumbnail
+    });
+
+    const contentClasses = classnames('flex-child', {
+      wmin180: showVideoThumbnail
+    });
+
     return (
       <React.Fragment>
         <a
@@ -103,27 +118,11 @@ class RelatedPage extends React.Component {
             }-light border--${theme.color}-dark-on-hover border--2 transition`}
           >
             <div className="flex-child flex-child--grow px18 pt30 pb18">
-              <div
-                className={`flex-parent${
-                  showVideoThumbnail ? '-ml' : ''
-                } flex-parent--start-cross`}
-              >
+              <div className={contentContainerClasses}>
                 {theme.image && (
-                  <div
-                    className={
-                      showVideoThumbnail
-                        ? 'flex-child relative w-full wmin120 wmax240-ml mr18-ml mt18-ml mt-neg12'
-                        : 'flex-child pt6 mr18 none block-mm'
-                    }
-                  >
-                    {theme.image}
-                  </div>
+                  <div className={imageClasses}>{theme.image}</div>
                 )}
-                <div
-                  className={`flex-child${
-                    showVideoThumbnail ? ' wmin180' : ''
-                  }`}
-                >
+                <div className={contentClasses}>
                   <div
                     style={{ color: theme.a11yColor }}
                     className={`txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 ${
