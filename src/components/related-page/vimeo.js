@@ -62,7 +62,7 @@ export class VimeoThumbnail extends React.Component {
         </div>
         <img
           alt=""
-          className="w240-mm w-full block inline-block-mm round mt-neg12 h-full mb18 mb0-mm"
+          className="w-full block round h-full mb24 mb0-ml"
           src={image}
         />
       </React.Fragment>

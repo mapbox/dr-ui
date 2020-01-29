@@ -101,12 +101,12 @@ class RelatedPage extends React.Component {
             }-light border--${theme.color}-dark-on-hover border--2 transition`}
           >
             <div className="flex-child flex-child--grow px18 pt30 pb18">
-              <div className="flex-parent-mm flex-parent--row">
+              <div className="flex-parent-ml flex-parent--start-cross">
                 {theme.image && (
                   <div
                     className={
                       this.props.contentType === 'video' && props.vimeoThumbnail
-                        ? 'relative mr18 h-full wmin240-mm'
+                        ? 'flex-child flex-child--no-shrink relative mr18 wmax180-ml mt18-ml'
                         : 'flex-child pt6 mr18 none block-mm'
                     }
                   >
