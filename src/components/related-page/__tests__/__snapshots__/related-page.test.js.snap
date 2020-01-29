@@ -600,7 +600,7 @@ exports[`related-page video renders as expected 1`] = `
         className="flex-parent-mm flex-parent--row"
       >
         <div
-          className="relative mr18 h-full wmin180"
+          className="relative mr18 h-full wmin240-mm"
         >
           <div
             className="bg-darken75 round absolute"
@@ -634,7 +634,7 @@ exports[`related-page video renders as expected 1`] = `
           </div>
           <img
             alt=""
-            className="w240-ml w180-mm w-full block inline-block-mm round mt-neg12 h-full mb18 mb0-mm"
+            className="w240-mm w-full block inline-block-mm round mt-neg12 h-full mb18 mb0-mm"
             src="assets/vimeo_thumb.jpg"
           />
         </div>

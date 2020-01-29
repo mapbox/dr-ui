@@ -106,7 +106,7 @@ class RelatedPage extends React.Component {
                   <div
                     className={
                       this.props.contentType === 'video' && props.vimeoThumbnail
-                        ? 'relative mr18 h-full wmin180'
+                        ? 'relative mr18 h-full wmin240-mm'
                         : 'flex-child pt6 mr18 none block-mm'
                     }
                   >
