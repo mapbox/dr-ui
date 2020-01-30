@@ -22,10 +22,6 @@
   padding-top: 40px;
 }
 
-/* make code snippet background darker in Note */
-.dr-ui--note pre {
-  background: rgba(31, 51, 73, 0.05) !important;
-}
 /* make links darker in Note to improve color contrast */
 .dr-ui--note a {
   color: #3151df !important;
