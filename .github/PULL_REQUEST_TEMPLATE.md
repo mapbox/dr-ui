@@ -5,6 +5,7 @@
 <!-- complete this checklist when adding a new component or package -->
 
 - [ ] No errors logged to console.
+- [ ] Accessibility score in Chrome Developer Tools Audit/Lighthouse is 100%.
 - [ ] Component is accessible at mobile-size viewport.
 - [ ] Component is accessible at tablet-size viewport.
 - [ ] Component is accessible at laptop-size viewport.
