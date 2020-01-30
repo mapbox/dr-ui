@@ -50,17 +50,20 @@ exports[`note A legacy note, has same styling as warning renders as expected 1`]
     </div>
     <div>
       <p>
-        You can create custom styles with 
+        You can create custom styles with
+         
         <a
           href="https://studio.mapbox.com"
         >
           Mapbox Studio
         </a>
-         and then add them to your app. To programmatically add one of your custom styles to your 
+         and then add them to your app. To programmatically add one of your custom styles to your
+         
         <code>
           mapboxMap
         </code>
-        , head to your 
+        , head to your
+         
         <a
           href="https://studio.mapbox.com/styles/"
         >
@@ -76,7 +79,8 @@ exports[`note A legacy note, has same styling as warning renders as expected 1`]
         <code>
           mapboxMap
         </code>
-         object with 
+         object with
+         
         <code>
           setStyleUrl();
         </code>
@@ -212,17 +216,20 @@ exports[`note A note to display an error with steps or links on how to troublesh
     </div>
     <div>
       <p>
-        You can create custom styles with 
+        You can create custom styles with
+         
         <a
           href="https://studio.mapbox.com"
         >
           Mapbox Studio
         </a>
-         and then add them to your app. To programmatically add one of your custom styles to your 
+         and then add them to your app. To programmatically add one of your custom styles to your
+         
         <code>
           mapboxMap
         </code>
-        , head to your 
+        , head to your
+         
         <a
           href="https://studio.mapbox.com/styles/"
         >
@@ -238,7 +245,8 @@ exports[`note A note to display an error with steps or links on how to troublesh
         <code>
           mapboxMap
         </code>
-         object with 
+         object with
+         
         <code>
           setStyleUrl();
         </code>
@@ -374,17 +382,20 @@ exports[`note A note to display with a message about new products or features. r
     </div>
     <div>
       <p>
-        You can create custom styles with 
+        You can create custom styles with
+         
         <a
           href="https://studio.mapbox.com"
         >
           Mapbox Studio
         </a>
-         and then add them to your app. To programmatically add one of your custom styles to your 
+         and then add them to your app. To programmatically add one of your custom styles to your
+         
         <code>
           mapboxMap
         </code>
-        , head to your 
+        , head to your
+         
         <a
           href="https://studio.mapbox.com/styles/"
         >
@@ -400,7 +411,8 @@ exports[`note A note to display with a message about new products or features. r
         <code>
           mapboxMap
         </code>
-         object with 
+         object with
+         
         <code>
           setStyleUrl();
         </code>
@@ -536,17 +548,20 @@ exports[`note A note to flag information about a beta release/product renders as
     </div>
     <div>
       <p>
-        You can create custom styles with 
+        You can create custom styles with
+         
         <a
           href="https://studio.mapbox.com"
         >
           Mapbox Studio
         </a>
-         and then add them to your app. To programmatically add one of your custom styles to your 
+         and then add them to your app. To programmatically add one of your custom styles to your
+         
         <code>
           mapboxMap
         </code>
-        , head to your 
+        , head to your
+         
         <a
           href="https://studio.mapbox.com/styles/"
         >
@@ -562,7 +577,8 @@ exports[`note A note to flag information about a beta release/product renders as
         <code>
           mapboxMap
         </code>
-         object with 
+         object with
+         
         <code>
           setStyleUrl();
         </code>
@@ -698,17 +714,20 @@ exports[`note A warning note to let the user know something has changed or will 
     </div>
     <div>
       <p>
-        You can create custom styles with 
+        You can create custom styles with
+         
         <a
           href="https://studio.mapbox.com"
         >
           Mapbox Studio
         </a>
-         and then add them to your app. To programmatically add one of your custom styles to your 
+         and then add them to your app. To programmatically add one of your custom styles to your
+         
         <code>
           mapboxMap
         </code>
-        , head to your 
+        , head to your
+         
         <a
           href="https://studio.mapbox.com/styles/"
         >
@@ -724,7 +743,8 @@ exports[`note A warning note to let the user know something has changed or will 
         <code>
           mapboxMap
         </code>
-         object with 
+         object with
+         
         <code>
           setStyleUrl();
         </code>
@@ -915,17 +935,20 @@ exports[`note Note with custom title. renders as expected 1`] = `
     </div>
     <div>
       <p>
-        You can create custom styles with 
+        You can create custom styles with
+         
         <a
           href="https://studio.mapbox.com"
         >
           Mapbox Studio
         </a>
-         and then add them to your app. To programmatically add one of your custom styles to your 
+         and then add them to your app. To programmatically add one of your custom styles to your
+         
         <code>
           mapboxMap
         </code>
-        , head to your 
+        , head to your
+         
         <a
           href="https://studio.mapbox.com/styles/"
         >
@@ -941,7 +964,8 @@ exports[`note Note with custom title. renders as expected 1`] = `
         <code>
           mapboxMap
         </code>
-         object with 
+         object with
+         
         <code>
           setStyleUrl();
         </code>
@@ -1077,17 +1101,20 @@ exports[`note download renders as expected 1`] = `
     </div>
     <div>
       <p>
-        You can create custom styles with 
+        You can create custom styles with
+         
         <a
           href="https://studio.mapbox.com"
         >
           Mapbox Studio
         </a>
-         and then add them to your app. To programmatically add one of your custom styles to your 
+         and then add them to your app. To programmatically add one of your custom styles to your
+         
         <code>
           mapboxMap
         </code>
-        , head to your 
+        , head to your
+         
         <a
           href="https://studio.mapbox.com/styles/"
         >
@@ -1103,7 +1130,8 @@ exports[`note download renders as expected 1`] = `
         <code>
           mapboxMap
         </code>
-         object with 
+         object with
+         
         <code>
           setStyleUrl();
         </code>
