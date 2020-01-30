@@ -4,6 +4,42 @@ import Note from '../note';
 const testCases = {};
 const noRenderCases = {};
 
+const htmlSample = () => {
+  return (
+    <div>
+      <p>
+        You can create custom styles with{' '}
+        <a href="https://studio.mapbox.com">Mapbox Studio</a> and then add them
+        to your app. To programmatically add one of your custom styles to your{' '}
+        <code>mapboxMap</code>, head to your{' '}
+        <a href="https://studio.mapbox.com/styles/">styles page</a>, copy your
+        style's <a href="/help/glossary/style-url/">style URL</a>, and then add
+        it to your <code>mapboxMap</code> object with{' '}
+        <code>setStyleUrl();</code>:
+      </p>
+      <pre className=" language-java">
+        <code className=" language-java">
+          mapboxMap<span className="token punctuation">.</span>
+          <span className="token function">setStyle</span>
+          <span className="token punctuation">(</span>
+          <span className="token keyword">new</span>{' '}
+          <span className="token class-name">Style</span>
+          <span className="token punctuation">.</span>
+          <span className="token class-name">Builder</span>
+          <span className="token punctuation">(</span>
+          <span className="token punctuation">)</span>
+          <span className="token punctuation">.</span>
+          <span className="token function">fromUri</span>
+          <span className="token punctuation">(</span>
+          <span className="token string">
+            "mapbox://styles/your-mapbox-username/your-style-ID"
+          </span>
+        </code>
+      </pre>
+    </div>
+  );
+};
+
 testCases.basic = {
   component: Note,
   description: 'Default note',
@@ -17,30 +53,7 @@ testCases.custom = {
   description: 'Note with custom title.',
   props: {
     title: 'A very important note',
-    children: (
-      <div>
-        <p>
-          Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo
-          odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus
-          eget urna mollis ornare vel eu leo. Duis mollis, est non commodo
-          luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-          Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam
-          eget risus varius blandit sit amet non magna.
-        </p>
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam.
-          Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum
-          id ligula porta felis euismod semper. Nullam id dolor id nibh
-          ultricies vehicula ut id elit. Curabitur blandit tempus porttitor.
-          Maecenas sed diam eget risus varius blandit sit amet non magna.
-        </p>
-        <p>
-          Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra
-          augue. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem
-          malesuada magna mollis euismod.
-        </p>
-      </div>
-    )
+    children: htmlSample()
   }
 };
 
@@ -51,7 +64,7 @@ testCases.warning = {
   props: {
     theme: 'warning',
     title: 'Be careful',
-    children: <p>This is a warning.</p>
+    children: htmlSample()
   }
 };
 
@@ -60,7 +73,7 @@ testCases.legacy = {
   description: 'A legacy note, has same styling as warning',
   props: {
     theme: 'warning',
-    children: <p>This is a legacy product.</p>
+    children: htmlSample()
   }
 };
 
@@ -70,12 +83,7 @@ testCases.error = {
     'A note to display an error with steps or links on how to troubleshoot.',
   props: {
     theme: 'error',
-    children: (
-      <p>
-        Did something not go as planned? Check out the{' '}
-        <a href="#">troubleshooting guide</a>.
-      </p>
-    )
+    children: htmlSample()
   }
 };
 
@@ -85,13 +93,7 @@ testCases.new = {
     'A note to display with a message about new products or features.',
   props: {
     theme: 'new',
-    children: (
-      <p>
-        Style components in Mapbox Studio are now available in public beta for
-        every user. To start building, log in to Studio or sign up for an
-        account to start making your first map.
-      </p>
-    )
+    children: htmlSample()
   }
 };
 
@@ -100,13 +102,7 @@ testCases.beta = {
   description: 'A note to flag information about a beta release/product',
   props: {
     theme: 'beta',
-    children: (
-      <p>
-        Style components in Mapbox Studio are now available in public beta for
-        every user. To start building, log in to Studio or sign up for an
-        account to start making your first map.
-      </p>
-    )
+    children: htmlSample()
   }
 };
 
@@ -116,14 +112,7 @@ testCases.download = {
   props: {
     theme: 'download',
     title: 'Download from vision.mapbox.com/install',
-    children: (
-      <p>
-        You must download the relevant dependencies from
-        vision.mapbox.com/install before continuing. You can download the
-        dependency directly or import it into your project using Maven. This
-        will require that you are logged into your Mapbox account.
-      </p>
-    )
+    children: htmlSample()
   }
 };
 

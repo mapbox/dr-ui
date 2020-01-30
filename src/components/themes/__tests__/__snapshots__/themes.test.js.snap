@@ -207,7 +207,7 @@ exports[`themes error renders as expected 1`] = `
     style={
       Object {
         "background": "#fbe5e5",
-        "color": "#ba3b3f",
+        "color": "#9b3134",
       }
     }
   >
