@@ -1,5 +1,9 @@
 # Changelog
 
+## Master
+
+* Fix overflow issue with `RelatedPage` in IE11. [#238](https://github.com/mapbox/dr-ui/pull/238)
+
 ## 0.25.5
 
 * Fix icons in `Note` by setting `size` as a number to correct their size in Firefox. [#233](https://github.com/mapbox/dr-ui/pull/233)
