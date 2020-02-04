@@ -600,7 +600,7 @@ exports[`related-page video renders as expected 1`] = `
         className="flex-parent-ml flex-parent--start-cross"
       >
         <div
-          className="flex-child relative w-full wmin120 wmax240-ml mr18-ml mt18-ml mt-neg12"
+          className="flex-child relative w-full wmin120 wmax240-ml mr18-ml mt-neg12"
         >
           <div
             className="bg-darken75 round absolute"

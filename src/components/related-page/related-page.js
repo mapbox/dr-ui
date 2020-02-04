@@ -95,7 +95,7 @@ class RelatedPage extends React.Component {
     });
 
     const imageClasses = classnames('flex-child', {
-      'relative w-full wmin120 wmax240-ml mr18-ml mt18-ml mt-neg12': showVideoThumbnail,
+      'relative w-full wmin120 wmax240-ml mr18-ml mt-neg12': showVideoThumbnail,
       'pt6 mr18 none block-mm': !showVideoThumbnail
     });
 
