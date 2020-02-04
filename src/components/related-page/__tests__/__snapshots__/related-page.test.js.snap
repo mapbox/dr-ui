@@ -620,6 +620,11 @@ exports[`related-page video renders as expected 1`] = `
   >
     <div
       className="flex-child flex-child--grow px18 pt30 pb18"
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
     >
       <div
         className="flex-parent-ml flex-parent--start-cross"
@@ -704,6 +709,11 @@ exports[`related-page video with svg image fallback renders as expected 1`] = `
   >
     <div
       className="flex-child flex-child--grow px18 pt30 pb18"
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
     >
       <div
         className="flex-parent flex-parent--row"
