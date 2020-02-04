@@ -1,5 +1,10 @@
 # Changelog
 
+## Master
+
+* Fix overflow issue with `RelatedPage` in IE11. [#238](https://github.com/mapbox/dr-ui/pull/238)
+* Create Vimeo modal option (`vimeoId` and `vimeoThumbnail`) for `RelatedPage`. [#236](https://github.com/mapbox/dr-ui/pull/236)
+
 ## 0.25.5
 
 * Fix icons in `Note` by setting `size` as a number to correct their size in Firefox. [#233](https://github.com/mapbox/dr-ui/pull/233)
