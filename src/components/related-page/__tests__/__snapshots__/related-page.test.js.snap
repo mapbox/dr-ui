@@ -10,6 +10,11 @@ exports[`related-page example renders as expected 1`] = `
   >
     <div
       className="flex-child flex-child--grow px18 pt30 pb18"
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
     >
       <div
         className="flex-parent flex-parent--row"
@@ -132,6 +137,11 @@ exports[`related-page glossary renders as expected 1`] = `
   >
     <div
       className="flex-child flex-child--grow px18 pt30 pb18"
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
     >
       <div
         className="flex-parent flex-parent--row"
@@ -266,6 +276,11 @@ exports[`related-page guide renders as expected 1`] = `
   >
     <div
       className="flex-child flex-child--grow px18 pt30 pb18"
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
     >
       <div
         className="flex-parent flex-parent--row"
@@ -498,6 +513,11 @@ exports[`related-page troubleshooting renders as expected 1`] = `
   >
     <div
       className="flex-child flex-child--grow px18 pt30 pb18"
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
     >
       <div
         className="flex-parent flex-parent--row"
@@ -611,6 +631,11 @@ exports[`related-page tutorial renders as expected 1`] = `
   >
     <div
       className="flex-child flex-child--grow px18 pt30 pb18"
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
     >
       <div
         className="flex-parent flex-parent--row"
