@@ -3,6 +3,7 @@
 ## Master
 
 * Fix overflow issue with `RelatedPage` in IE11. [#238](https://github.com/mapbox/dr-ui/pull/238)
+* Create Vimeo modal option (`vimeoId` and `vimeoThumbnail`) for `RelatedPage`. [#236](https://github.com/mapbox/dr-ui/pull/236)
 
 ## 0.25.5
 
