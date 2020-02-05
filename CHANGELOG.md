@@ -1,6 +1,6 @@
 # Changelog
 
-## Master
+## 0.26.0
 
 * Updates to `RelatedPage` component:
   * 🚨 Replace `description` with children and make it required. [#239](https://github.com/mapbox/dr-ui/pull/239)
