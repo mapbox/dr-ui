@@ -64,6 +64,18 @@ testCases.example = {
   }
 };
 
+testCases.playground = {
+  component: RelatedPage,
+  description: 'playground',
+  props: {
+    contentType: 'playground',
+    title: 'Tilequery API playground',
+    description:
+      'To create and run sample Tilequery API queries and see the results displayed on a map, use the Tilequery API playground.',
+    url: 'https://docs.mapbox.com/playground/tilequery/'
+  }
+};
+
 testCases.video = {
   component: RelatedPage,
   description: 'video',
