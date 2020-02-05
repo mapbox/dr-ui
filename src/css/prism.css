@@ -93,6 +93,24 @@ pre[class*='language-'] {
   color: #4264fb;
 }
 
+/* slightly darker to make improve contrast when code is a in a Note */
+.dr-ui--note .token.atrule,
+.dr-ui--note .token.attr-value,
+.dr-ui--note .token.function,
+.dr-ui--note .token.class-name {
+  color: #2a4de4;
+}
+
+/* slightly darker to make improve contrast when code is a in a Note */
+.dr-ui--note .token.selector,
+.dr-ui--note .token.attr-name,
+.dr-ui--note .token.string,
+.dr-ui--note .token.char,
+.dr-ui--note .token.builtin,
+.dr-ui--note .token.inserted {
+  color: #ae2056;
+}
+
 .token.keyword {
   color: #314ccd;
 }

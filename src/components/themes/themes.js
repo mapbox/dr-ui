@@ -53,7 +53,7 @@ const themes = {
     label: 'Error',
     styles: {
       background: '#fbe5e5',
-      color: '#ba3b3f'
+      color: '#9b3134'
     }
   },
   beta: {

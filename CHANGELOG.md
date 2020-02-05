@@ -7,6 +7,9 @@
   * Fix overflow issue in IE11. [#238](https://github.com/mapbox/dr-ui/pull/238)
   * Create Vimeo modal option (`vimeoId` and `vimeoThumbnail`) . [#236](https://github.com/mapbox/dr-ui/pull/236)
   * Add playground theme. [#234](https://github.com/mapbox/dr-ui/pull/234)
+* Updates to `Note` component. [#240](https://github.com/mapbox/dr-ui/pull/240)
+  * 🚨 Remove `image` option, every Note will use the theme's defined image.
+  * Improve color contrast on elements inside the component.
 
 ## 0.25.5
 
