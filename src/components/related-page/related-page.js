@@ -142,7 +142,7 @@ class RelatedPage extends React.Component {
                   </div>
                   <div className="color-gray-dark color-black-on-hover transition">
                     <div className="txt-bold">{props.title}</div>
-                    {props.description && props.description}
+                    {props.children}
                   </div>
                 </div>
               </div>
@@ -182,7 +182,7 @@ RelatedPage.propTypes = {
   // Required. Title of the related page in the context of the current page.
   title: PropTypes.string.isRequired,
   // Required. Description of the related page in the context of the current page.
-  description: PropTypes.string,
+  children: PropTypes.node.isRequired,
   // Required if `vimeoId` is not set. The link to the related page.
   url: (props, propName, componentName) => {
     if (props[propName] && typeof props[propName] !== 'string') {

@@ -89,6 +89,21 @@ describe('related-page', () => {
     });
   });
 
+  describe(testCases.children.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.children;
+      wrapper = renderer.create(testCase.element);
+      tree = wrapper.toJSON();
+    });
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
+
   describe(testCases.playground.description, () => {
     let testCase;
     let wrapper;
