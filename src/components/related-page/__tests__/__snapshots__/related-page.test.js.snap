@@ -127,6 +127,83 @@ exports[`related-page example renders as expected 1`] = `
 </a>
 `;
 
+exports[`related-page fallback with children renders as expected 1`] = `
+<a
+  className="unprose block cursor-pointer color-gray color-gray-dark-on-hover transition mb18"
+  href="https://docs.mapbox.com/"
+>
+  <div
+    className="round flex-parent flex-parent--stretch-cross border border--gray-light border--gray-dark-on-hover border--2 transition"
+  >
+    <div
+      className="flex-child flex-child--grow px18 pt30 pb18"
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <div
+        className="flex-parent flex-parent--row"
+      >
+        <div
+          className="flex-child"
+        >
+          <div
+            className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-gray-dark"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+          >
+            related
+          </div>
+          <div
+            className="color-gray-dark color-black-on-hover transition"
+          >
+            <div
+              className="txt-bold"
+            >
+              See all documentation
+            </div>
+            <p>
+              Browse all Mapbox documentation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+      style={
+        Object {
+          "borderColor": "inherit",
+          "borderLeftWidth": "2px",
+        }
+      }
+    >
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 30,
+            "width": 30,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-chevron-right"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
+  </div>
+</a>
+`;
+
 exports[`related-page glossary renders as expected 1`] = `
 <a
   className="unprose block cursor-pointer color-orange color-orange-dark-on-hover transition mb18"
@@ -341,6 +418,138 @@ exports[`related-page guide renders as expected 1`] = `
               Access tokens
             </div>
             Learn how access tokens work and how to create and manage your access tokens.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+      style={
+        Object {
+          "borderColor": "inherit",
+          "borderLeftWidth": "2px",
+        }
+      }
+    >
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 30,
+            "width": 30,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-chevron-right"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
+  </div>
+</a>
+`;
+
+exports[`related-page playground renders as expected 1`] = `
+<a
+  className="unprose block cursor-pointer color-gray color-gray-dark-on-hover transition mb18"
+  href="https://docs.mapbox.com/playground/tilequery/"
+>
+  <div
+    className="round flex-parent flex-parent--stretch-cross border border--gray-light border--gray-dark-on-hover border--2 transition"
+  >
+    <div
+      className="flex-child flex-child--grow px18 pt30 pb18"
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <div
+        className="flex-parent flex-parent--row"
+      >
+        <div
+          className="flex-child pt6 mr18 none block-mm"
+        >
+          <svg
+            height={60}
+            viewBox="0 0 60 60"
+            width={60}
+          >
+            <circle
+              cx="29.4"
+              cy="30.6"
+              fill="#3F5B75"
+              r="25"
+            />
+            <path
+              d="M44.4 48.1s0-.1 0 0c0-.7-.1-1.5-.5-2.4L33.5 25.6h-3.7l-3.7-.1-10.4 20.1c-.4 1-.6 1.8-.5 2.5 0 2.4 6.5 4.4 14.7 4.4 7.9 0 14.4-1.9 14.5-4.4z"
+              fill="#0E1519"
+            />
+            <path
+              d="M43.4 43.8L33.3 24.5V17h.4c.4 0 .7-.3.7-.7 0-.4-.3-.7-.7-.7h-7.9c-.4 0-.7.3-.7.7s.3.7.7.7h.3v7.6L16.1 44c-.3.8-.5 1.4-.4 2v.3c.4 2.3 6.5 4.1 14.1 4.1 7.8 0 14.1-2 14.1-4.3 0-.6-.1-1.5-.5-2.3z"
+              fill="#CDDCE8"
+            />
+            <path
+              d="M39.3 42l-6.9-13.4h-4.9l-7 13.4c-.3.6-.4 1.2-.4 1.6 0 1.7 4.4 3 9.8 3 5.3 0 9.7-1.3 9.7-3 0-.5-.1-1-.3-1.6z"
+              fill="#FFF"
+            />
+            <circle
+              cx="31.1"
+              cy="19.6"
+              fill="#FFF"
+              r="1.2"
+            />
+            <circle
+              cx="27"
+              cy="8.6"
+              fill="#FFF"
+              r="1.2"
+            />
+            <circle
+              cx="29"
+              cy="24"
+              fill="#FFF"
+              r="1.2"
+            />
+            <circle
+              cx="29"
+              cy="15"
+              fill="#FFF"
+              r="1.8"
+            />
+            <circle
+              cx="32.4"
+              cy="11.1"
+              fill="#FFF"
+              r="1.4"
+            />
+          </svg>
+        </div>
+        <div
+          className="flex-child"
+        >
+          <div
+            className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-gray-dark"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+          >
+            playground
+          </div>
+          <div
+            className="color-gray-dark color-black-on-hover transition"
+          >
+            <div
+              className="txt-bold"
+            >
+              Tilequery API playground
+            </div>
           </div>
         </div>
       </div>
@@ -605,6 +814,176 @@ exports[`related-page tutorial renders as expected 1`] = `
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+    </div>
+  </div>
+</a>
+`;
+
+exports[`related-page video renders as expected 1`] = `
+<a
+  className="unprose block cursor-pointer color-purple color-purple-dark-on-hover transition mb18"
+  onClick={[Function]}
+>
+  <div
+    className="round flex-parent flex-parent--stretch-cross border border--purple-light border--purple-dark-on-hover border--2 transition"
+  >
+    <div
+      className="flex-child flex-child--grow px18 pt30 pb18"
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <div
+        className="flex-parent-ml flex-parent--start-cross"
+      >
+        <div
+          className="flex-child relative w-full wmin120 wmax240-ml mr18-ml mt-neg12"
+        >
+          <div
+            className="bg-darken75 round absolute"
+            style={
+              Object {
+                "height": "36%",
+                "left": "50%",
+                "padding": "4% 9% 1%",
+                "top": "50%",
+                "transform": "translate(-50%, -50%)",
+                "width": "30%",
+              }
+            }
+          >
+            <svg
+              aria-labelledby="play-icon-title"
+              fill="#fff"
+              focusable="false"
+              role="img"
+              viewBox="0 0 20 20"
+              width="100%"
+            >
+              <title
+                id="play-icon-title"
+              >
+                Play
+              </title>
+              <polygon
+                points="1,0 20,10 1,20"
+              />
+            </svg>
+          </div>
+          <img
+            alt=""
+            className="w-full block round h-full mb24 mb0-ml"
+            src="assets/vimeo_thumb.jpg"
+          />
+        </div>
+        <div
+          className="flex-child wmin180"
+        >
+          <div
+            className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-purple-dark"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+          >
+            video
+          </div>
+          <div
+            className="color-gray-dark color-black-on-hover transition"
+          >
+            <div
+              className="txt-bold"
+            >
+              How to eject a Style Component in Mapbox Studio
+            </div>
+            Style Components provide sensible defaults and quick opportunities for customization by optimizing the most common property changes for styles and packaging them into simple drop-down options, sliders, and toggles.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
+`;
+
+exports[`related-page video with svg image fallback renders as expected 1`] = `
+<a
+  className="unprose block cursor-pointer color-purple color-purple-dark-on-hover transition mb18"
+  onClick={[Function]}
+>
+  <div
+    className="round flex-parent flex-parent--stretch-cross border border--purple-light border--purple-dark-on-hover border--2 transition"
+  >
+    <div
+      className="flex-child flex-child--grow px18 pt30 pb18"
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <div
+        className="flex-parent flex-parent--row"
+      >
+        <div
+          className="flex-child pt6 mr18 none block-mm"
+        >
+          <div
+            className="bg-purple-light round-full"
+            style={
+              Object {
+                "height": 55,
+                "padding": "15px 12px 15px 18px",
+                "width": 55,
+              }
+            }
+          >
+            <svg
+              aria-labelledby="play-icon-title"
+              fill="#7753eb"
+              focusable="false"
+              role="img"
+              viewBox="0 0 20 20"
+              width="100%"
+            >
+              <title
+                id="play-icon-title"
+              >
+                Play
+              </title>
+              <polygon
+                points="1,0 20,10 1,20"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          className="flex-child"
+        >
+          <div
+            className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-purple-dark"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+          >
+            video
+          </div>
+          <div
+            className="color-gray-dark color-black-on-hover transition"
+          >
+            <div
+              className="txt-bold"
+            >
+              How to eject a Style Component in Mapbox Studio
+            </div>
+            Style Components provide sensible defaults and quick opportunities for customization by optimizing the most common property changes for styles and packaging them into simple drop-down options, sliders, and toggles.
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </a>
