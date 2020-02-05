@@ -6,6 +6,7 @@ import BookletImage from '../booklet-image/booklet-image';
 import BookImage from '../book-image/book-image';
 import GlossaryImage from '../glossary-image/glossary-image';
 import ExampleImage from '../example-image/example-image';
+import PlaygroundImage from '../playground-image/playground-image';
 import { VimeoModal, VimeoThumbnail, VimeoPlayImage } from './vimeo';
 import classnames from 'classnames';
 
@@ -76,6 +77,11 @@ class RelatedPage extends React.Component {
         ) : (
           <VimeoPlayImage fallbackIcon={true} />
         )
+      },
+      playground: {
+        label: 'playground',
+        image: <PlaygroundImage />,
+        color: 'gray'
       },
       default: {
         label: 'related',
@@ -169,6 +175,7 @@ RelatedPage.propTypes = {
     'guide',
     'tutorial',
     'troubleshooting',
+    'playground',
     'video',
     'default'
   ]),
