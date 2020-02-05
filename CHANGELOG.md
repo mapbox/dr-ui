@@ -2,9 +2,11 @@
 
 ## Master
 
-* Fix overflow issue with `RelatedPage` in IE11. [#238](https://github.com/mapbox/dr-ui/pull/238)
-* Create Vimeo modal option (`vimeoId` and `vimeoThumbnail`) for `RelatedPage`. [#236](https://github.com/mapbox/dr-ui/pull/236)
-* Add playground theme from `RelatedPage`. [#234](https://github.com/mapbox/dr-ui/pull/234)
+* Updates to `RelatedPage` component:
+  * 🚨 Replace `description` with children and make it required. [#239](https://github.com/mapbox/dr-ui/pull/239)
+  * Fix overflow issue in IE11. [#238](https://github.com/mapbox/dr-ui/pull/238)
+  * Create Vimeo modal option (`vimeoId` and `vimeoThumbnail`) . [#236](https://github.com/mapbox/dr-ui/pull/236)
+  * Add playground theme. [#234](https://github.com/mapbox/dr-ui/pull/234)
 
 ## 0.25.5
 
