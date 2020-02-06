@@ -157,6 +157,7 @@ class Feedback extends React.Component {
                   </div>
                 </div>
                 <button
+                  id={`${this.props.section || 'docs'}-feedback-submit`}
                   disabled={
                     this.state.feedback === undefined ||
                     this.state.feedback.length < 3 || // disable button unless more than 3 characters are typed
