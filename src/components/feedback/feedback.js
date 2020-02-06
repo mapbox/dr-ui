@@ -5,7 +5,9 @@ import forwardEvent from './forward-event';
 import uuidv4 from 'uuid/v4';
 import Icon from '@mapbox/mr-ui/icon';
 import * as Sentry from '@sentry/browser';
+import classnames from 'classnames';
 
+const feedbackLimit = 250; // character limit for the feedback textarea
 const anonymousId = uuidv4(); // creates an anonymousId fallback if user is not logged or we cant get their info
 const environment =
   typeof window !== 'undefined'
@@ -93,6 +95,10 @@ class Feedback extends React.Component {
   }
 
   render() {
+    const feedbackLength = this.state.feedback
+      ? feedbackLimit - this.state.feedback.length
+      : feedbackLimit;
+    const feedbackOverLimit = feedbackLength < 0;
     return (
       <div className="bg-gray-faint py12 px18 round color-gray">
         <div>
@@ -132,23 +138,41 @@ class Feedback extends React.Component {
                     ` on how we can improve this ${this.props.type}`}
                   , you can provide it below (optional):
                 </div>
-                <ControlTextarea
-                  id={`${this.props.section || 'docs'}-feedback`}
-                  themeControlWrapper="bg-white mb6"
-                  onChange={this.handleText}
-                  value={this.state.feedback}
-                />
-
+                <div className="relative">
+                  <ControlTextarea
+                    id={`${this.props.section || 'docs'}-feedback`}
+                    themeControlWrapper="bg-white mb6"
+                    onChange={this.handleText}
+                    value={this.state.feedback}
+                  />
+                  <div
+                    className={classnames(
+                      'absolute bottom right mb6 mr18 txt-mono',
+                      {
+                        'color-red': feedbackOverLimit
+                      }
+                    )}
+                  >
+                    {feedbackLength}
+                  </div>
+                </div>
                 <button
                   disabled={
                     this.state.feedback === undefined ||
-                    this.state.feedback.length < 3 // disable button unless more than 3 characters are typed
+                    this.state.feedback.length < 3 || // disable button unless more than 3 characters are typed
+                    feedbackOverLimit
                   }
-                  className="btn btn--s mb18"
+                  className="btn btn--s mb18 inline-block"
                   onClick={this.submitFeedback}
                 >
                   Send feedback
                 </button>
+                {feedbackOverLimit && (
+                  <span className="ml12 color-red txt-s bg-red-faint round inline-block py3 px12">
+                    <Icon name="alert" inline={true} /> Your message is over the{' '}
+                    {feedbackLimit} character limit.
+                  </span>
+                )}
 
                 <div className="txt-s txt-em">
                   This form is for documentation feedback. If you have a
