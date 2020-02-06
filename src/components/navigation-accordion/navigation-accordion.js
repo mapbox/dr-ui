@@ -15,6 +15,7 @@ class NavigationAccordion extends React.PureComponent {
       activeh2: '',
       activeh3: ''
     };
+    this.activeSidebar = React.createRef();
     this.onScrollLive = this.onScrollLive.bind(this);
   }
 
@@ -22,6 +23,7 @@ class NavigationAccordion extends React.PureComponent {
     this.onScroll = debounce(this.onScrollLive, debounceVal);
     document.addEventListener('scroll', this.onScroll);
     this.onScrollLive();
+    this.scrollToActiveSideBar();
   }
 
   componentWillUnmount() {
@@ -74,6 +76,11 @@ class NavigationAccordion extends React.PureComponent {
         <Tag {...tagProps} />
       </span>
     );
+  };
+
+  scrollToActiveSideBar = () => {
+    const sideBar = document.getElementById('dr-ui--page-layout-sidebar');
+    if (sideBar) sideBar.scrollTo(0, this.activeSidebar.current.offsetTop);
   };
 
   render() {
@@ -151,7 +158,11 @@ class NavigationAccordion extends React.PureComponent {
         }
 
         return (
-          <div key={index} className={activeSectionClasses}>
+          <div
+            key={index}
+            className={activeSectionClasses}
+            ref={isActive ? this.activeSidebar : undefined}
+          >
             <div className={breakLineClasses}>
               <a
                 href={page.path}

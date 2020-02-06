@@ -136,6 +136,7 @@ exports[`feedback Feedback placement renders as expected 1`] = `
           >
             <div
               className="pt24-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled block"
+              id="dr-ui--page-layout-sidebar"
             >
               <div
                 className="txt-l color-blue txt-fancy mb12 block-mm none"
