@@ -80,7 +80,8 @@ class NavigationAccordion extends React.PureComponent {
 
   scrollToActiveSideBar = () => {
     const sideBar = document.getElementById('dr-ui--page-layout-sidebar');
-    if (sideBar) sideBar.scrollTo(0, this.activeSidebar.current.offsetTop);
+    if (sideBar && this.activeSidebar.current)
+      sideBar.scrollTo(0, this.activeSidebar.current.offsetTop);
   };
 
   render() {
