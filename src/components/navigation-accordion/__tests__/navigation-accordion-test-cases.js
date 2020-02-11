@@ -153,7 +153,7 @@ testCases.withTags = {
 testCases.many = {
   description: 'Many first level items',
   element: (
-    <div>
+    <div className="limiter">
       <PageLayout
         sidebarContentStickyTop={60}
         sidebarContentStickyTopNarrow={0}
