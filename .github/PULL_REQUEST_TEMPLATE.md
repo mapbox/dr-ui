@@ -10,6 +10,7 @@
 - [ ] Component is accessible at tablet-size viewport.
 - [ ] Component is accessible at laptop-size viewport.
 - [ ] Component is accessible at big-monitor-size viewport.
+- [ ] If applicable, create a PR in a site repo, copy the component, and test it. Push to staging and instruct the reviewer to test the component in-page.
 
 Open the test cases app locally on:
 
