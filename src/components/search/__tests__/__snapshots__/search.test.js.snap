@@ -382,6 +382,7 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
                             <a
                               className="color-blue-on-hover"
                               href="#heading-one"
+                              id="#heading-one-sidebar"
                             >
                               Heading one
                               
@@ -396,6 +397,7 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
                             <a
                               className="color-blue-on-hover"
                               href="#heading-two"
+                              id="#heading-two-sidebar"
                             >
                               Heading two
                               
