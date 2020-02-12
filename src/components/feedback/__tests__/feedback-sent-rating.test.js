@@ -50,6 +50,8 @@ describe('Feedback character limit', () => {
     // make sure character counter is equal
     const charCounter = feedback.find('#dr-ui--feedback-char-counter').at(0);
     expect(charCounter.props().children).toEqual(974);
+    // snapshot
+    expect(toJson(feedback)).toMatchSnapshot();
   });
 
   test('Character limit too long, user cannot submit feedback', () => {
@@ -72,5 +74,7 @@ describe('Feedback character limit', () => {
     // make sure character counter is equal
     const charCounter = feedback.find('#dr-ui--feedback-char-counter').at(0);
     expect(charCounter.props().children).toEqual(-340);
+    // snapshot
+    expect(toJson(feedback)).toMatchSnapshot();
   });
 });
