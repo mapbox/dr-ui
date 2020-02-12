@@ -28,18 +28,29 @@ exports[`Sent helpful rating basic 1`] = `
         If you have more specific feedback
         , you can provide it below (optional):
       </div>
-      <ControlTextarea
-        id="docs-feedback"
-        noAuto={false}
-        onChange={[Function]}
-        optional={false}
-        themeControlTextarea="textarea hmin120"
-        themeControlWrapper="bg-white mb6"
-        value=""
-      />
+      <div
+        className="relative"
+      >
+        <ControlTextarea
+          id="docs-feedback"
+          noAuto={false}
+          onChange={[Function]}
+          optional={false}
+          themeControlTextarea="textarea hmin120"
+          themeControlWrapper="bg-white mb6"
+          value=""
+        />
+        <div
+          className="absolute bottom right mb6 mr18 txt-mono"
+          id="dr-ui--feedback-char-counter"
+        >
+          1000
+        </div>
+      </div>
       <button
-        className="btn btn--s mb18"
+        className="btn btn--s mb18 inline-block"
         disabled={true}
+        id="dr-ui--feedback-submit-button"
         onClick={[Function]}
       >
         Send feedback
