@@ -147,6 +147,7 @@ class Feedback extends React.Component {
                     value={this.state.feedback}
                   />
                   <div
+                    id="dr-ui--feedback-char-counter"
                     className={classnames(
                       'absolute bottom right mb6 mr18 txt-mono',
                       {
@@ -158,7 +159,9 @@ class Feedback extends React.Component {
                   </div>
                 </div>
                 <button
-                  id={`${this.props.section || 'docs'}-feedback-submit`}
+                  id={`dr-ui--feedback-submit-button${
+                    this.props.section ? `-${this.props.section}` : ''
+                  }`}
                   disabled={
                     this.state.feedback === undefined ||
                     this.state.feedback.length < 3 || // disable button unless more than 3 characters are typed
@@ -170,7 +173,10 @@ class Feedback extends React.Component {
                   Send feedback
                 </button>
                 {feedbackOverLimit && (
-                  <span className="ml12 color-red txt-s bg-red-faint round inline-block py3 px12">
+                  <span
+                    id="dr-ui--feedback-overlimit"
+                    className="ml12 color-red txt-s bg-red-faint round inline-block py3 px12"
+                  >
                     <Icon name="alert" inline={true} /> Your message is over the{' '}
                     {feedbackLimit} character limit.
                   </span>

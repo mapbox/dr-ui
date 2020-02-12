@@ -74,10 +74,18 @@ describe('feedback interactions', () => {
     });
     // make sure submit button is not disabled
     const submitBtn = feedback
-      .find('#docs-feedback-submit')
+      .find('#dr-ui--feedback-submit-button')
       .at(0)
       .props();
     expect(submitBtn.disabled).toBe(false);
+
+    // make sure overlimit warning is not shown
+    const overlimitWarning = feedback.find('#dr-ui--feedback-overlimit').at(0);
+    expect(overlimitWarning.exists()).toBe(false);
+
+    // make sure character counter is equal
+    const charCounter = feedback.find('#dr-ui--feedback-char-counter').at(0);
+    expect(charCounter.props().children).toEqual(974);
   });
 
   test('character limit too long, user cannot submit feedback', () => {
@@ -88,9 +96,17 @@ describe('feedback interactions', () => {
     });
     // make sure submit button is disabled
     const submitBtn = feedback
-      .find('#docs-feedback-submit')
+      .find('#dr-ui--feedback-submit-button')
       .at(0)
       .props();
     expect(submitBtn.disabled).toBe(true);
+
+    // make sure overlimit warning is shown
+    const overlimitWarning = feedback.find('#dr-ui--feedback-overlimit').at(0);
+    expect(overlimitWarning.exists()).toBe(true);
+
+    // make sure character counter is equal
+    const charCounter = feedback.find('#dr-ui--feedback-char-counter').at(0);
+    expect(charCounter.props().children).toEqual(-340);
   });
 });
