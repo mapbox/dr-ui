@@ -9,7 +9,6 @@ configure({ adapter: new Adapter() });
 describe('Sent helpful rating', () => {
   const feedback = shallow(
     <Feedback
-      key="idk"
       site="dr-ui"
       location={{
         pathname: '/mapbox-gl-js/api/',
