@@ -2,6 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class SectionedNavigationSection extends React.Component {
+  constructor(props) {
+    super(props);
+    this.activeSidebar = React.createRef();
+  }
+
+  componentDidMount() {
+    const sideBar = document.getElementById('dr-ui--page-layout-sidebar');
+    if (!sideBar) return;
+    if (this.activeSidebar.current) {
+      sideBar.scrollTop = this.activeSidebar.current.offsetTop;
+    }
+  }
+
   renderHeading() {
     const { props } = this;
 
@@ -34,6 +47,7 @@ class SectionedNavigationSection extends React.Component {
         <a
           key={item.url}
           href={item.url}
+          ref={item.active ? this.activeSidebar : undefined}
           className={`color-blue-on-hover block mb6${
             item.active === true ? ' txt-bold' : ''
           }`}
