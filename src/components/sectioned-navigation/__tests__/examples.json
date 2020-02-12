@@ -1,7 +1,7 @@
 [
   {
     "title": "Styles",
-    "url": "/mapbox-gl-js/examples/#styles",
+    "url": "#styles",
     "items": [
       {
         "text": "Add an animated icon to the map",
@@ -67,7 +67,7 @@
   },
   {
     "title": "Layers",
-    "url": "/mapbox-gl-js/examples/#layers",
+    "url": "#layers",
     "items": [
       {
         "text": "Display buildings in 3D",
@@ -265,7 +265,7 @@
   },
   {
     "title": "Sources",
-    "url": "/mapbox-gl-js/examples/#sources",
+    "url": "#sources",
     "items": [
       {
         "text": "Join local JSON data with vector tile geometries",
@@ -325,7 +325,7 @@
   },
   {
     "title": "User interaction",
-    "url": "/mapbox-gl-js/examples/#user-interaction",
+    "url": "#user-interaction",
     "items": [
       {
         "text": "Animate 3D buildings based on ambient sounds",
@@ -451,7 +451,7 @@
   },
   {
     "title": "Camera",
-    "url": "/mapbox-gl-js/examples/#camera",
+    "url": "#camera",
     "items": [
       {
         "text": "Animate map camera around a point",
@@ -523,7 +523,7 @@
   },
   {
     "title": "Controls and overlays",
-    "url": "/mapbox-gl-js/examples/#controls-and-overlays",
+    "url": "#controls-and-overlays",
     "items": [
       {
         "text": "Animate a marker",
@@ -631,7 +631,7 @@
   },
   {
     "title": "Geocoder",
-    "url": "/mapbox-gl-js/examples/#geocoder",
+    "url": "#geocoder",
     "items": [
       {
         "text": "Supplement forward geocoding search results from another data source",
@@ -685,7 +685,7 @@
   },
   {
     "title": "Browser support",
-    "url": "/mapbox-gl-js/examples/#browser-support",
+    "url": "#browser-support",
     "items": [
       {
         "text": "Check for browser support",
@@ -697,7 +697,7 @@
   },
   {
     "title": "Internationalization support",
-    "url": "/mapbox-gl-js/examples/#internationalization",
+    "url": "#internationalization",
     "items": [
       {
         "text": "Use locally generated ideographs",
