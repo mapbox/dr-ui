@@ -76,13 +76,13 @@ class SectionedNavigation extends React.Component {
         {this.renderTitle()}
         {this.renderFilterBar()}
         {visibleSections.map((section, i) => (
-          <div key={i}>
+          <React.Fragment key={i}>
             <SectionedNavigationSection
               includeCount={props.includeCount}
               hideSubItems={props.hideSubItems}
               {...section}
             />
-          </div>
+          </React.Fragment>
         ))}
       </div>
     );
