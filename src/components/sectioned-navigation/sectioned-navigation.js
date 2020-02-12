@@ -68,7 +68,8 @@ class SectionedNavigation extends React.Component {
         return {
           title: filteredSection.title,
           url: filteredSection.url,
-          items: filteredItems
+          items: filteredItems,
+          id: filteredSection.id || undefined
         };
       });
     return (

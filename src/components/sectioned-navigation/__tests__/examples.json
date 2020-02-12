@@ -1,7 +1,7 @@
 [
   {
     "title": "Styles",
-    "url": "#styles",
+    "url": "/mapbox-gl-js/examples/#styles",
     "items": [
       {
         "text": "Add an animated icon to the map",
@@ -63,11 +63,12 @@
         "url": "/mapbox-gl-js/example/simple-map/",
         "active": false
       }
-    ]
+    ],
+    "id": "styles"
   },
   {
     "title": "Layers",
-    "url": "#layers",
+    "url": "/mapbox-gl-js/examples/#layers",
     "items": [
       {
         "text": "Display buildings in 3D",
@@ -112,15 +113,15 @@
         "active": false
       },
       {
-        "text": "Change building color based on zoom level",
-        "description": "Uses the [interpolate expression](/mapbox-gl-js/style-spec#expressions-interpolate) to ease-in the building layer and smoothly fade from one color to the next.",
-        "url": "/mapbox-gl-js/example/change-building-color-based-on-zoom-level/",
-        "active": false
-      },
-      {
         "text": "Change the case of labels",
         "description": "Use the [upcase](/mapbox-gl-js/style-spec#expressions-upcase) and [downcase](/mapbox-gl-js/style-spec#expressions-downcase) expressions to change the case of labels.",
         "url": "/mapbox-gl-js/example/change-case-of-labels/",
+        "active": false
+      },
+      {
+        "text": "Change building color based on zoom level",
+        "description": "Uses the [interpolate expression](/mapbox-gl-js/style-spec#expressions-interpolate) to ease-in the building layer and smoothly fade from one color to the next.",
+        "url": "/mapbox-gl-js/example/change-building-color-based-on-zoom-level/",
         "active": false
       },
       {
@@ -130,15 +131,15 @@
         "active": false
       },
       {
-        "text": "Create and style clusters",
-        "description": "Use Mapbox GL JS' built-in functions to visualize points as clusters.",
-        "url": "/mapbox-gl-js/example/cluster/",
-        "active": false
-      },
-      {
         "text": "Change a layer's color with buttons",
         "description": "Using [`setPaintProperty`](/mapbox-gl-js/api#map#setpaintproperty) to change a layer's fill color.",
         "url": "/mapbox-gl-js/example/color-switcher/",
+        "active": false
+      },
+      {
+        "text": "Create and style clusters",
+        "description": "Use Mapbox GL JS' built-in functions to visualize points as clusters.",
+        "url": "/mapbox-gl-js/example/cluster/",
         "active": false
       },
       {
@@ -178,15 +179,15 @@
         "active": false
       },
       {
-        "text": "Add a new layer below labels",
-        "description": "Using the second argument of [`addLayer`](/mapbox-gl-js/api/#map#addlayer), you can be more precise.",
-        "url": "/mapbox-gl-js/example/geojson-layer-in-stack/",
-        "active": false
-      },
-      {
         "text": "Add a GeoJSON line",
         "description": "Add a GeoJSON line to a map.",
         "url": "/mapbox-gl-js/example/geojson-line/",
+        "active": false
+      },
+      {
+        "text": "Add a new layer below labels",
+        "description": "Using the second argument of [`addLayer`](/mapbox-gl-js/api/#map#addlayer), you can be more precise.",
+        "url": "/mapbox-gl-js/example/geojson-layer-in-stack/",
         "active": false
       },
       {
@@ -261,11 +262,12 @@
         "url": "/mapbox-gl-js/example/visualize-population-density/",
         "active": false
       }
-    ]
+    ],
+    "id": "layers"
   },
   {
     "title": "Sources",
-    "url": "#sources",
+    "url": "/mapbox-gl-js/examples/#sources",
     "items": [
       {
         "text": "Join local JSON data with vector tile geometries",
@@ -321,11 +323,12 @@
         "url": "/mapbox-gl-js/example/wms/",
         "active": false
       }
-    ]
+    ],
+    "id": "sources"
   },
   {
     "title": "User interaction",
-    "url": "#user-interaction",
+    "url": "/mapbox-gl-js/examples/#user-interaction",
     "items": [
       {
         "text": "Animate 3D buildings based on ambient sounds",
@@ -406,15 +409,15 @@
         "active": false
       },
       {
-        "text": "Select features around a clicked point",
-        "description": "Click on the map to query features using [`queryRenderedFeatures`](/mapbox-gl-js/api#map#queryrenderedfeatures).",
-        "url": "/mapbox-gl-js/example/queryrenderedfeatures-around-point/",
-        "active": false
-      },
-      {
         "text": "Get features under the mouse pointer",
         "description": "Using [`queryRenderedFeatures`](/mapbox-gl-js/api/#map#queryrenderedfeatures) to show properties of hovered-over map elements.",
         "url": "/mapbox-gl-js/example/queryrenderedfeatures/",
+        "active": false
+      },
+      {
+        "text": "Select features around a clicked point",
+        "description": "Click on the map to query features using [`queryRenderedFeatures`](/mapbox-gl-js/api#map#queryrenderedfeatures).",
+        "url": "/mapbox-gl-js/example/queryrenderedfeatures-around-point/",
         "active": false
       },
       {
@@ -447,11 +450,12 @@
         "url": "/mapbox-gl-js/example/zoomto-linestring/",
         "active": false
       }
-    ]
+    ],
+    "id": "user-interaction"
   },
   {
     "title": "Camera",
-    "url": "#camera",
+    "url": "/mapbox-gl-js/examples/#camera",
     "items": [
       {
         "text": "Animate map camera around a point",
@@ -519,11 +523,12 @@
         "url": "/mapbox-gl-js/example/set-perspective/",
         "active": false
       }
-    ]
+    ],
+    "id": "camera"
   },
   {
     "title": "Controls and overlays",
-    "url": "#controls-and-overlays",
+    "url": "/mapbox-gl-js/examples/#controls-and-overlays",
     "items": [
       {
         "text": "Animate a marker",
@@ -610,15 +615,15 @@
         "active": false
       },
       {
-        "text": "Display a popup on hover",
-        "description": "When a user hovers over a [`symbol`](/mapbox-gl-js/style-spec#layers-symbol), show a [`Popup`](/mapbox-gl-js/api/#popup) containing more information.",
-        "url": "/mapbox-gl-js/example/popup-on-hover/",
-        "active": false
-      },
-      {
         "text": "Display a popup",
         "description": "Add a [`Popup`](/mapbox-gl-js/api/#popup) to the map.",
         "url": "/mapbox-gl-js/example/popup/",
+        "active": false
+      },
+      {
+        "text": "Display a popup on hover",
+        "description": "When a user hovers over a [`symbol`](/mapbox-gl-js/style-spec#layers-symbol), show a [`Popup`](/mapbox-gl-js/api/#popup) containing more information.",
+        "url": "/mapbox-gl-js/example/popup-on-hover/",
         "active": false
       },
       {
@@ -627,11 +632,12 @@
         "url": "/mapbox-gl-js/example/set-popup/",
         "active": false
       }
-    ]
+    ],
+    "id": "controls-and-overlays"
   },
   {
     "title": "Geocoder",
-    "url": "#geocoder",
+    "url": "/mapbox-gl-js/examples/#geocoder",
     "items": [
       {
         "text": "Supplement forward geocoding search results from another data source",
@@ -652,15 +658,15 @@
         "active": false
       },
       {
-        "text": "Limit geocoder results to a named region",
-        "description": "Use the [mapbox-gl-geocoder](https://github.com/mapbox/mapbox-gl-geocoder) control to search for places using Mapbox Geocoding API limiting results to a region.",
-        "url": "/mapbox-gl-js/example/mapbox-gl-geocoder-limit-region/",
-        "active": false
-      },
-      {
         "text": "Place the geocoder input outside the map",
         "description": "Use the [mapbox-gl-geocoder](https://github.com/mapbox/mapbox-gl-geocoder) control to search for places using Mapbox Geocoding API attached to an element outside the map.",
         "url": "/mapbox-gl-js/example/mapbox-gl-geocoder-outside-the-map/",
+        "active": false
+      },
+      {
+        "text": "Limit geocoder results to a named region",
+        "description": "Use the [mapbox-gl-geocoder](https://github.com/mapbox/mapbox-gl-geocoder) control to search for places using Mapbox Geocoding API limiting results to a region.",
+        "url": "/mapbox-gl-js/example/mapbox-gl-geocoder-limit-region/",
         "active": false
       },
       {
@@ -681,11 +687,12 @@
         "url": "/mapbox-gl-js/example/point-from-geocoder-result/",
         "active": false
       }
-    ]
+    ],
+    "id": "geocoder"
   },
   {
     "title": "Browser support",
-    "url": "#browser-support",
+    "url": "/mapbox-gl-js/examples/#browser-support",
     "items": [
       {
         "text": "Check for browser support",
@@ -693,11 +700,12 @@
         "url": "/mapbox-gl-js/example/check-for-support/",
         "active": false
       }
-    ]
+    ],
+    "id": "browser-support"
   },
   {
     "title": "Internationalization support",
-    "url": "#internationalization",
+    "url": "/mapbox-gl-js/examples/#internationalization",
     "items": [
       {
         "text": "Use locally generated ideographs",
@@ -711,6 +719,7 @@
         "url": "/mapbox-gl-js/example/mapbox-gl-rtl-text/",
         "active": false
       }
-    ]
+    ],
+    "id": "internationalization"
   }
 ]

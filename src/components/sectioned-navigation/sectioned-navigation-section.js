@@ -9,8 +9,23 @@ class SectionedNavigationSection extends React.Component {
   }
 
   componentDidMount() {
+    this.scrollToActiveSidebar();
+  }
+
+  scrollToActiveSidebar() {
     const sideBar = document.getElementById('dr-ui--page-layout-sidebar');
     if (!sideBar) return;
+    if (window && window.location.hash) {
+      // find the heading item in the scrollbar
+      let heading = document.getElementById(
+        `${window.location.hash.replace('#', '')}-sidebar`
+      );
+      // if the heading exists and offsetTop > 0; scroll to that item in the sidebar
+      if (heading && heading.offsetTop > 0) {
+        sideBar.scrollTop = heading.offsetTop;
+        return;
+      }
+    }
     if (this.activeSidebar.current) {
       sideBar.scrollTop = this.activeSidebar.current.offsetTop;
     }
@@ -32,7 +47,7 @@ class SectionedNavigationSection extends React.Component {
 
     if (props.url) {
       return (
-        <a href={props.url} className={classes}>
+        <a id={`${props.id}-sidebar`} href={props.url} className={classes}>
           {text}
         </a>
       );
@@ -75,6 +90,7 @@ class SectionedNavigationSection extends React.Component {
 SectionedNavigationSection.propTypes = {
   title: PropTypes.string.isRequired,
   url: PropTypes.string,
+  id: PropTypes.string,
   items: PropTypes.arrayOf(
     PropTypes.shape({
       text: PropTypes.string.isRequired,

@@ -12,6 +12,7 @@ exports[`sectioned-navigation With a title, linked section headings, and counts 
   <a
     className="block txt-bold color-gray py12 color-blue-on-hover"
     href="#getting-started"
+    id="getting-started-sidebar"
   >
     Getting started (3)
   </a>
@@ -36,6 +37,7 @@ exports[`sectioned-navigation With a title, linked section headings, and counts 
   <a
     className="block txt-bold color-gray py12 color-blue-on-hover"
     href="#markers"
+    id="markers-sidebar"
   >
     Markers and callouts (2)
   </a>
@@ -54,6 +56,7 @@ exports[`sectioned-navigation With a title, linked section headings, and counts 
   <a
     className="block txt-bold color-gray py12 color-blue-on-hover"
     href="#getting-started-again"
+    id="getting-started-again-sidebar"
   >
     Getting started again (1)
   </a>
@@ -100,6 +103,7 @@ exports[`sectioned-navigation With a title, linked section headings, counts, and
   <a
     className="block txt-bold color-gray py12 color-blue-on-hover"
     href="#getting-started"
+    id="getting-started-sidebar"
   >
     Getting started (3)
   </a>
@@ -124,6 +128,7 @@ exports[`sectioned-navigation With a title, linked section headings, counts, and
   <a
     className="block txt-bold color-gray py12 color-blue-on-hover"
     href="#markers"
+    id="markers-sidebar"
   >
     Markers and callouts (2)
   </a>
@@ -142,6 +147,7 @@ exports[`sectioned-navigation With a title, linked section headings, counts, and
   <a
     className="block txt-bold color-gray py12 color-blue-on-hover"
     href="#getting-started-again"
+    id="getting-started-again-sidebar"
   >
     Getting started again (1)
   </a>
@@ -201,6 +207,7 @@ exports[`sectioned-navigation Without title, without linked section headings, wi
   <a
     className="block txt-bold color-gray py12 color-blue-on-hover"
     href="#getting-started-again"
+    id="getting-started-again-sidebar"
   >
     Getting started again
   </a>
@@ -220,18 +227,21 @@ exports[`sectioned-navigation Without title, without sub items renders as expect
   <a
     className="block txt-bold color-gray py6 color-blue-on-hover"
     href="#getting-started"
+    id="getting-started-sidebar"
   >
     Getting started (3)
   </a>
   <a
     className="block txt-bold color-gray py6 color-blue-on-hover"
     href="#markers-and-callouts"
+    id="markers-and-callouts-sidebar"
   >
     Markers and callouts (2)
   </a>
   <a
     className="block txt-bold color-gray py6 color-blue-on-hover"
     href="#getting-started-again"
+    id="getting-started-again-sidebar"
   >
     Getting started again (1)
   </a>

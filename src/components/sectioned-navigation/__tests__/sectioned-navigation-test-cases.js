@@ -14,6 +14,7 @@ testCases.basic = {
       {
         title: 'Getting started',
         url: '#getting-started',
+        id: 'getting-started',
         items: [
           {
             text: 'Camera animation',
@@ -33,6 +34,7 @@ testCases.basic = {
       {
         title: 'Markers and callouts',
         url: '#markers',
+        id: 'markers',
         items: [
           {
             text: 'Annotation models',
@@ -47,6 +49,7 @@ testCases.basic = {
       {
         title: 'Getting started again',
         url: '#getting-started-again',
+        id: 'getting-started-again',
         items: [
           {
             text: 'Apply a style',
@@ -97,6 +100,7 @@ testCases.minimal = {
       {
         title: 'Getting started again',
         url: '#getting-started-again',
+        id: 'getting-started-again',
         items: [
           {
             text: 'Apply a style',
@@ -117,6 +121,7 @@ testCases.headingsOnly = {
       {
         title: 'Getting started',
         url: '#getting-started',
+        id: 'getting-started',
         items: [
           {
             text: 'Camera animation',
@@ -135,6 +140,7 @@ testCases.headingsOnly = {
       {
         title: 'Markers and callouts',
         url: '#markers-and-callouts',
+        id: 'markers-and-callouts',
         items: [
           {
             text: 'Annotation models',
@@ -149,6 +155,7 @@ testCases.headingsOnly = {
       {
         title: 'Getting started again',
         url: '#getting-started-again',
+        id: 'getting-started-again',
         items: [
           {
             text: 'Apply a style',
@@ -170,6 +177,7 @@ testCases.filter = {
       {
         title: 'Getting started',
         url: '#getting-started',
+        id: 'getting-started',
         items: [
           {
             text: 'Camera animation',
@@ -191,6 +199,7 @@ testCases.filter = {
       {
         title: 'Markers and callouts',
         url: '#markers',
+        id: 'markers',
         items: [
           {
             text: 'Annotation models',
@@ -207,6 +216,7 @@ testCases.filter = {
       {
         title: 'Getting started again',
         url: '#getting-started-again',
+        id: 'getting-started-again',
         items: [
           {
             text: 'Apply a style',
