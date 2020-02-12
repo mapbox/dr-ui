@@ -7,8 +7,7 @@ class SectionedNavigation extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      filter: '',
-      visibleSections: this.props.sections
+      filter: ''
     };
   }
 
@@ -45,7 +44,9 @@ class SectionedNavigation extends React.Component {
     );
   }
 
-  filterResults() {
+  render() {
+    const { props } = this;
+
     const filter = this.state.filter.toLowerCase().trim();
     const visibleSections = this.props.sections
       .filter(section => {
@@ -70,16 +71,11 @@ class SectionedNavigation extends React.Component {
           items: filteredItems
         };
       });
-    this.setState({ visibleSections: visibleSections });
-  }
-
-  render() {
-    const { props } = this;
     return (
       <div data-swiftype-index="false">
         {this.renderTitle()}
         {this.renderFilterBar()}
-        {this.state.visibleSections.map((section, i) => (
+        {visibleSections.map((section, i) => (
           <div key={i}>
             <SectionedNavigationSection
               includeCount={props.includeCount}
