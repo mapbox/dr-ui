@@ -7,7 +7,7 @@ import Icon from '@mapbox/mr-ui/icon';
 import * as Sentry from '@sentry/browser';
 import classnames from 'classnames';
 
-const feedbackLimit = 250; // character limit for the feedback textarea
+const feedbackLimit = 1000; // character limit for the feedback textarea
 const anonymousId = uuidv4(); // creates an anonymousId fallback if user is not logged or we cant get their info
 const environment =
   typeof window !== 'undefined'
@@ -47,6 +47,7 @@ class Feedback extends React.Component {
     if (this.props.feedbackSentryDsn !== false) {
       Sentry.init({
         dsn: this.props.feedbackSentryDsn,
+        maxValueLength: feedbackLimit,
         environment
       });
       Sentry.configureScope(scope => {
