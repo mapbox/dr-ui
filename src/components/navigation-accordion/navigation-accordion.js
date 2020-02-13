@@ -97,6 +97,12 @@ class NavigationAccordion extends React.PureComponent {
             return (
               <li key={subItem.path} className="mt6">
                 <a href={`#${subItem.path}`} className={itemClasses(isActive)}>
+                  {subItem.icon && (
+                    <span className="mr6 ml-neg12 w18 h18 align-middle inline-block bg-gray-faint round-full">
+                      <Icon size={16} name={subItem.icon} />
+                    </span>
+                  )}
+
                   {subItem.title}
                   {subItem.tag ? this.buildTag(subItem) : ''}
                 </a>
@@ -234,6 +240,7 @@ NavigationAccordion.propTypes = {
         thirdLevelItems: PropTypes.arrayOf(
           PropTypes.shape({
             title: PropTypes.string.isRequired,
+            icon: PropTypes.string,
             tag: PropTypes.oneOf([
               'legacy',
               'beta',
