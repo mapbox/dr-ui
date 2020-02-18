@@ -1,5 +1,9 @@
 # Changelog
 
+## Master
+
+* Add feature to scroll to active item in `SectionedNavigation` onload. [#249](https://github.com/mapbox/dr-ui/pull/249)
+
 ## 0.26.0
 
 * Updates to `RelatedPage` component:

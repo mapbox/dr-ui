@@ -550,6 +550,7 @@ exports[`related-page playground renders as expected 1`] = `
             >
               Tilequery API playground
             </div>
+            To create and run sample Tilequery API queries and see the results displayed on a map, use the Tilequery API playground.
           </div>
         </div>
       </div>
