@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sent helpful rating basic 1`] = `
+<div
+  className="bg-gray-faint py12 px18 round color-gray"
+>
+  <div>
+    <div>
+      <div
+        className="inline-block bg-green color-white round-full w18 h18 align-middle mr3 mb3"
+      >
+        <Icon
+          inline={false}
+          name="check"
+          passthroughProps={Object {}}
+          size={18}
+        />
+      </div>
+       
+      Thanks for your feedback.
+    </div>
+    <div
+      className="mt12"
+    >
+      <div
+        className="mb6"
+      >
+        If you have more specific feedback
+        , you can provide it below (optional):
+      </div>
+      <ControlTextarea
+        id="docs-feedback"
+        noAuto={false}
+        onChange={[Function]}
+        optional={false}
+        themeControlTextarea="textarea hmin120"
+        themeControlWrapper="bg-white mb6"
+        value=""
+      />
+      <button
+        className="btn btn--s mb18"
+        disabled={true}
+        onClick={[Function]}
+      >
+        Send feedback
+      </button>
+      <div
+        className="txt-s txt-em"
+      >
+        This form is for documentation feedback. If you have a technical question about how to use a Mapbox product,
+         
+        <a
+          className="link"
+          href="https://support.mapbox.com/hc/en-us"
+        >
+          contact Support
+        </a>
+        .
+      </div>
+    </div>
+  </div>
+</div>
+`;
