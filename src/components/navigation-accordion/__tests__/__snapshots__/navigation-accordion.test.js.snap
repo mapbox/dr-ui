@@ -462,6 +462,7 @@ exports[`navigation-accordion Shows third level items with icons renders as expe
               <a
                 className="color-blue-on-hover"
                 href="#heading-one"
+                id="#heading-one-sidebar"
               >
                 Heading one
                 
@@ -481,6 +482,7 @@ exports[`navigation-accordion Shows third level items with icons renders as expe
                   <a
                     className="color-blue-on-hover txt-bold"
                     href="#"
+                    id="#-sidebar"
                   >
                     <span
                       className="mr6 w18 h18 align-middle inline-block bg-gray-faint round-full"
@@ -518,6 +520,7 @@ exports[`navigation-accordion Shows third level items with icons renders as expe
                   <a
                     className="color-blue-on-hover"
                     href="#subheading-two"
+                    id="#subheading-two-sidebar"
                   >
                     <span
                       className="mr6 w18 h18 align-middle inline-block bg-gray-faint round-full"
@@ -555,6 +558,7 @@ exports[`navigation-accordion Shows third level items with icons renders as expe
                   <a
                     className="color-blue-on-hover"
                     href="#subheading-three"
+                    id="#subheading-three-sidebar"
                   >
                     <span
                       className="mr6 w18 h18 align-middle inline-block bg-gray-faint round-full"
@@ -588,6 +592,7 @@ exports[`navigation-accordion Shows third level items with icons renders as expe
               <a
                 className="color-blue-on-hover"
                 href="#heading-two"
+                id="#heading-two-sidebar"
               >
                 Heading two
                 
