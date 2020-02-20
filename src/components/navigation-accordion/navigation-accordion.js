@@ -15,6 +15,7 @@ class NavigationAccordion extends React.PureComponent {
       activeh2: '',
       activeh3: ''
     };
+    this.activeSidebar = React.createRef();
     this.onScrollLive = this.onScrollLive.bind(this);
   }
 
@@ -22,6 +23,7 @@ class NavigationAccordion extends React.PureComponent {
     this.onScroll = debounce(this.onScrollLive, debounceVal);
     document.addEventListener('scroll', this.onScroll);
     this.onScrollLive();
+    this.scrollToActiveSideBar();
   }
 
   componentWillUnmount() {
@@ -41,6 +43,8 @@ class NavigationAccordion extends React.PureComponent {
         });
         // find the active subheading within the section
         const subheadings = sections[i].querySelectorAll(`div.section-h3`);
+        // if there are no subheadings, clear out the activeh3
+        if (!subheadings.length) this.setState({ activeh3: undefined });
         for (let s = 0; s < subheadings.length; s++) {
           if (subheadings[s].getBoundingClientRect().bottom > 0) {
             this.setState({
@@ -76,6 +80,44 @@ class NavigationAccordion extends React.PureComponent {
     );
   };
 
+  // utility function to find ancestor via selector (sel) of a specified element (el)
+  findAncestor = (el, sel) => {
+    while (
+      (el = el.parentElement) &&
+      !(el.matches || el.matchesSelector).call(el, sel)
+    );
+    return el;
+  };
+
+  scrollToActiveSideBar = () => {
+    const sideBar = document.getElementById('dr-ui--page-layout-sidebar');
+    // if there is no sidebar then we can't scroll to anything.
+    if (!sideBar) return;
+    // [1] scroll to hash location (h2 or h3) if it exists
+    if (window && window.location.hash) {
+      // find the heading item in the scrollbar
+      let heading = document.getElementById(`${window.location.hash}-sidebar`);
+      // h3 will return 0 because initially it's parent (ul.none)  makes the h3 sidebar item invisible with no offsetTop
+      // we will remove the 'none' class from the ul
+      // then find the heading again now that it's visibile and has an offsetTop
+      if (heading && heading.offsetTop === 0) {
+        const parent = this.findAncestor(heading, 'ul.none');
+        if (parent) parent.classList.remove('none');
+        heading = document.getElementById(`${window.location.hash}-sidebar`);
+      }
+      // if the heading exists and offsetTop > 0; scroll to that item in the sidebar
+      if (heading && heading.offsetTop > 0) {
+        sideBar.scrollTop = heading.offsetTop;
+        return;
+      }
+    }
+
+    // [2] if there's no heading, then scroll to open title item
+    if (this.activeSidebar.current) {
+      sideBar.scrollTop = this.activeSidebar.current.offsetTop;
+    }
+  };
+
   render() {
     const { props, state } = this;
     function itemClasses(isActive) {
@@ -96,7 +138,11 @@ class NavigationAccordion extends React.PureComponent {
             if (isActive) openSubItems = true;
             return (
               <li key={subItem.path} className="mt6">
-                <a href={`#${subItem.path}`} className={itemClasses(isActive)}>
+                <a
+                  href={`#${subItem.path}`}
+                  id={`#${subItem.path}-sidebar`}
+                  className={itemClasses(isActive)}
+                >
                   {subItem.title}
                   {subItem.tag ? this.buildTag(subItem) : ''}
                 </a>
@@ -105,7 +151,11 @@ class NavigationAccordion extends React.PureComponent {
           });
         return (
           <li key={item.path} className="mb6">
-            <a href={`#${item.path}`} className={itemClasses(isActive)}>
+            <a
+              href={`#${item.path}`}
+              id={`#${item.path}-sidebar`}
+              className={itemClasses(isActive)}
+            >
               {item.title}
               {item.tag ? this.buildTag(item) : ''}
             </a>
@@ -148,7 +198,11 @@ class NavigationAccordion extends React.PureComponent {
         }
 
         return (
-          <div key={index} className={activeSectionClasses}>
+          <div
+            key={index}
+            className={activeSectionClasses}
+            ref={isActive ? this.activeSidebar : undefined}
+          >
             <div className={breakLineClasses}>
               <a
                 href={page.path}
