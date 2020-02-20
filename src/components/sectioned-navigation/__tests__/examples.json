@@ -1,0 +1,725 @@
+[
+  {
+    "title": "Styles",
+    "url": "/mapbox-gl-js/examples/#styles",
+    "items": [
+      {
+        "text": "Add an animated icon to the map",
+        "description": "Add an animated icon to the map that was generated at runtime with a Canvas.",
+        "url": "/mapbox-gl-js/example/add-image-animated/",
+        "active": false
+      },
+      {
+        "text": "Add a generated icon to the map",
+        "description": "Add an icon to the map that was generated at runtime.",
+        "url": "/mapbox-gl-js/example/add-image-generated/",
+        "active": false
+      },
+      {
+        "text": "Generate and add a missing icon to the map",
+        "description": "Dynamically generate a missing icon at runtime and add it to the map.",
+        "url": "/mapbox-gl-js/example/add-image-missing-generated/",
+        "active": false
+      },
+      {
+        "text": "Add a stretchable image to the map",
+        "description": "Use a stretchable image as a background for text. Stretchable images allow some parts of the image to stretch while keeping other parts, such as corners, at a constant size. Set the layout property \"icon-text-fit\" to \"both\" to use the image as background for the text.",
+        "url": "/mapbox-gl-js/example/add-image-stretchable/",
+        "active": false
+      },
+      {
+        "text": "Add an icon to the map",
+        "description": "Add an icon to the map from an external URL and use it in a [symbol layer](/mapbox-gl-js/style-spec#layers-symbol).",
+        "url": "/mapbox-gl-js/example/add-image/",
+        "active": false
+      },
+      {
+        "text": "Display a map with a custom style",
+        "description": "Using a custom Mapbox-hosted style.",
+        "url": "/mapbox-gl-js/example/custom-style-id/",
+        "active": false
+      },
+      {
+        "text": "Render world copies",
+        "description": "Toggle between rendering a single world and multiple copies of the world.",
+        "url": "/mapbox-gl-js/example/render-world-copies/",
+        "active": false
+      },
+      {
+        "text": "Display a satellite map",
+        "description": "Satellite raster baselayer.",
+        "url": "/mapbox-gl-js/example/satellite-map/",
+        "active": false
+      },
+      {
+        "text": "Change a map's style",
+        "description": "Switch to another map style.",
+        "url": "/mapbox-gl-js/example/setstyle/",
+        "active": false
+      },
+      {
+        "text": "Display a map",
+        "description": "Initialize a map in an HTML element with Mapbox GL JS.",
+        "url": "/mapbox-gl-js/example/simple-map/",
+        "active": false
+      }
+    ],
+    "id": "styles"
+  },
+  {
+    "title": "Layers",
+    "url": "/mapbox-gl-js/examples/#layers",
+    "items": [
+      {
+        "text": "Display buildings in 3D",
+        "description": "Use [extrusions](/mapbox-gl-js/style-spec#layers-fill-extrusion) to display buildings' height in 3D.",
+        "url": "/mapbox-gl-js/example/3d-buildings/",
+        "active": false
+      },
+      {
+        "text": "Extrude polygons for 3D indoor mapping",
+        "description": "Create a 3D indoor map with the fill-extrude-height paint property.",
+        "url": "/mapbox-gl-js/example/3d-extrusion-floorplan/",
+        "active": false
+      },
+      {
+        "text": "Add a 3D model",
+        "description": "Use a [custom style layer](/mapbox-gl-js/api/#customlayerinterface) with [three.js](https://threejs.org) to add a 3D model to the map.",
+        "url": "/mapbox-gl-js/example/add-3d-model/",
+        "active": false
+      },
+      {
+        "text": "Adjust a layer's opacity",
+        "description": "Drag the range slider to adjust the opacity of a [raster layer](/mapbox-gl-js/style-spec/#layers-raster) on top of a map.",
+        "url": "/mapbox-gl-js/example/adjust-layer-opacity/",
+        "active": false
+      },
+      {
+        "text": "Animate a line",
+        "description": "Animate a line by updating a GeoJSON source on each frame.",
+        "url": "/mapbox-gl-js/example/animate-a-line/",
+        "active": false
+      },
+      {
+        "text": "Animate a series of images",
+        "description": "Use a series of [image sources](/mapbox-gl-js/style-spec#sources-image) to create an animation.",
+        "url": "/mapbox-gl-js/example/animate-images/",
+        "active": false
+      },
+      {
+        "text": "Animate a point",
+        "description": "Animate the position of a point by updating a GeoJSON source on each frame.",
+        "url": "/mapbox-gl-js/example/animate-point-along-line/",
+        "active": false
+      },
+      {
+        "text": "Change the case of labels",
+        "description": "Use the [upcase](/mapbox-gl-js/style-spec#expressions-upcase) and [downcase](/mapbox-gl-js/style-spec#expressions-downcase) expressions to change the case of labels.",
+        "url": "/mapbox-gl-js/example/change-case-of-labels/",
+        "active": false
+      },
+      {
+        "text": "Change building color based on zoom level",
+        "description": "Uses the [interpolate expression](/mapbox-gl-js/style-spec#expressions-interpolate) to ease-in the building layer and smoothly fade from one color to the next.",
+        "url": "/mapbox-gl-js/example/change-building-color-based-on-zoom-level/",
+        "active": false
+      },
+      {
+        "text": "Display HTML clusters with custom properties",
+        "description": "This advanced example uses Mapbox GL JS clustering with HTML markers and custom property expressions. To use HTML or SVG for clusters in place of a Mapbox GL layer, you have to manually synchronize the clustered source with a pool of marker objects that updates continuously while the map view changes.",
+        "url": "/mapbox-gl-js/example/cluster-html/",
+        "active": false
+      },
+      {
+        "text": "Change a layer's color with buttons",
+        "description": "Using [`setPaintProperty`](/mapbox-gl-js/api#map#setpaintproperty) to change a layer's fill color.",
+        "url": "/mapbox-gl-js/example/color-switcher/",
+        "active": false
+      },
+      {
+        "text": "Create and style clusters",
+        "description": "Use Mapbox GL JS' built-in functions to visualize points as clusters.",
+        "url": "/mapbox-gl-js/example/cluster/",
+        "active": false
+      },
+      {
+        "text": "Add a custom style layer",
+        "description": "Use a custom style layer to render custom WebGL content.",
+        "url": "/mapbox-gl-js/example/custom-style-layer/",
+        "active": false
+      },
+      {
+        "text": "Style circles with a data-driven property",
+        "description": "Creating a visualization with a data expression for [`circle-color`](/mapbox-gl-js/style-spec#paint-circle-circle-color).",
+        "url": "/mapbox-gl-js/example/data-driven-circle-colors/",
+        "active": false
+      },
+      {
+        "text": "Style lines with a data-driven property",
+        "description": "Creating a visualization with a data expression for [`line-color`](/mapbox-gl-js/style-spec#paint-line-line-color).",
+        "url": "/mapbox-gl-js/example/data-driven-lines/",
+        "active": false
+      },
+      {
+        "text": "Display and style rich text labels",
+        "description": "Uses the [format expression](/mapbox-gl-js/style-spec#expressions-types-format) to display country labels in both English and in the local language.",
+        "url": "/mapbox-gl-js/example/display-and-style-rich-text-labels/",
+        "active": false
+      },
+      {
+        "text": "Use a fallback image",
+        "description": "Fallback to another image when a requested image is not available.",
+        "url": "/mapbox-gl-js/example/fallback-image/",
+        "active": false
+      },
+      {
+        "text": "Add a pattern to a polygon",
+        "description": "Use [fill-pattern](https://docs.mapbox.com/mapbox-gl-js/style-spec/#paint-fill-fill-pattern) to draw a polygon from a repeating image pattern.",
+        "url": "/mapbox-gl-js/example/fill-pattern/",
+        "active": false
+      },
+      {
+        "text": "Add a GeoJSON line",
+        "description": "Add a GeoJSON line to a map.",
+        "url": "/mapbox-gl-js/example/geojson-line/",
+        "active": false
+      },
+      {
+        "text": "Add a new layer below labels",
+        "description": "Using the second argument of [`addLayer`](/mapbox-gl-js/api/#map#addlayer), you can be more precise.",
+        "url": "/mapbox-gl-js/example/geojson-layer-in-stack/",
+        "active": false
+      },
+      {
+        "text": "Draw GeoJSON points",
+        "description": "Draw points from a GeoJSON collection to a map.",
+        "url": "/mapbox-gl-js/example/geojson-markers/",
+        "active": false
+      },
+      {
+        "text": "Add a GeoJSON polygon",
+        "description": "Style a polygon with the [fill layer](/mapbox-gl-js/style-spec#layers-fill) type.",
+        "url": "/mapbox-gl-js/example/geojson-polygon/",
+        "active": false
+      },
+      {
+        "text": "Create a heatmap layer",
+        "description": "Visualize earthquake frequency by location using a [heatmap layer](/mapbox-gl-js/style-spec#layers-heatmap).",
+        "url": "/mapbox-gl-js/example/heatmap-layer/",
+        "active": false
+      },
+      {
+        "text": "Add hillshading",
+        "description": "Adds raster hillshading to a map.",
+        "url": "/mapbox-gl-js/example/hillshade/",
+        "active": false
+      },
+      {
+        "text": "Create a gradient line using an expression",
+        "description": "Use the [`line-gradient`](/mapbox-gl-js/style-spec#paint-line-line-gradient) paint property and an expression to visualize distance from the starting point of a line.",
+        "url": "/mapbox-gl-js/example/line-gradient/",
+        "active": false
+      },
+      {
+        "text": "Add multiple geometries from one GeoJSON source",
+        "description": "Add a polygon and circle layer from the same GeoJSON source.",
+        "url": "/mapbox-gl-js/example/multiple-geometries/",
+        "active": false
+      },
+      {
+        "text": "Style ocean depth data",
+        "description": "Uses the [interpolate expression](/mapbox-gl-js/style-spec#expressions-interpolate) with a cubic bezier curve expression to style bathymetry data.",
+        "url": "/mapbox-gl-js/example/style-ocean-depth-data/",
+        "active": false
+      },
+      {
+        "text": "Show and hide layers",
+        "description": "Create a custom layer switcher to display different datasets.",
+        "url": "/mapbox-gl-js/example/toggle-layers/",
+        "active": false
+      },
+      {
+        "text": "Change worldview of administrative boundaries",
+        "description": "Uses the [worldview](https://www.mapbox.com/vector-tiles/mapbox-streets-v8/#-worldview-text) value to adjust administrative boundaries based on the map's audience. You can see the worldview options within the worldviews variable in this example. They are as follows:\n- **CN**: Boundaries for a mainland Chinese audience/worldview, but not officially approved for use in the PRC.\n- **IN**: Boundaries conforming to cartographic requirements for use in India.\n- **US**: Boundaries for an American audience, & which are generally appropriate outside of China & India.\n  Lines do not necessarily reflect official US foreign policy.\n",
+        "url": "/mapbox-gl-js/example/toggle-worldviews/",
+        "active": false
+      },
+      {
+        "text": "Update a choropleth layer by zoom level",
+        "description": "Using 2014 census data, display state or county population depending on zoom level.",
+        "url": "/mapbox-gl-js/example/updating-choropleth/",
+        "active": false
+      },
+      {
+        "text": "Variable label placement",
+        "description": "Use `text-variable-anchor` to allow high priority labels to shift position to stay on the map.",
+        "url": "/mapbox-gl-js/example/variable-label-placement/",
+        "active": false
+      },
+      {
+        "text": "Visualize population density",
+        "description": "Using a [`variable binding expression`](/mapbox-gl-js/style-spec#expressions-variable-binding) to calculate and display population density.",
+        "url": "/mapbox-gl-js/example/visualize-population-density/",
+        "active": false
+      }
+    ],
+    "id": "layers"
+  },
+  {
+    "title": "Sources",
+    "url": "/mapbox-gl-js/examples/#sources",
+    "items": [
+      {
+        "text": "Join local JSON data with vector tile geometries",
+        "description": "Style a choropleth by merging local JSON data with vector tile geometries.",
+        "url": "/mapbox-gl-js/example/data-join/",
+        "active": false
+      },
+      {
+        "text": "Add an image",
+        "description": "Dark vector baselayer with radar weather image overlay.",
+        "url": "/mapbox-gl-js/example/image-on-a-map/",
+        "active": false
+      },
+      {
+        "text": "Add live realtime data",
+        "description": "Use realtime GeoJSON data streams to move a [`symbol`](/mapbox-gl-js/style-spec#layers-symbol) on your map.",
+        "url": "/mapbox-gl-js/example/live-geojson/",
+        "active": false
+      },
+      {
+        "text": "Update a feature in realtime",
+        "description": "Change an existing feature on your map in realtime by updating its data.",
+        "url": "/mapbox-gl-js/example/live-update-feature/",
+        "active": false
+      },
+      {
+        "text": "Add a raster tile source",
+        "description": "Add a third-party raster source to the map.",
+        "url": "/mapbox-gl-js/example/map-tiles/",
+        "active": false
+      },
+      {
+        "text": "Add a third party vector tile source",
+        "description": "Render vector data provided by [Mapillary](https://www.mapillary.com/developer/tiles-documentation/#sequence-layer).",
+        "url": "/mapbox-gl-js/example/third-party/",
+        "active": false
+      },
+      {
+        "text": "Add a vector tile source",
+        "description": "Add a [vector source](/mapbox-gl-js/style-spec#sources-vector) to a map.",
+        "url": "/mapbox-gl-js/example/vector-source/",
+        "active": false
+      },
+      {
+        "text": "Add a video",
+        "description": "Satellite raster baselayer with video on top. Click on the map to play and pause.",
+        "url": "/mapbox-gl-js/example/video-on-a-map/",
+        "active": false
+      },
+      {
+        "text": "Add a WMS source",
+        "description": "Adding an external Web Map Service layer to the map.",
+        "url": "/mapbox-gl-js/example/wms/",
+        "active": false
+      }
+    ],
+    "id": "sources"
+  },
+  {
+    "title": "User interaction",
+    "url": "/mapbox-gl-js/examples/#user-interaction",
+    "items": [
+      {
+        "text": "Animate 3D buildings based on ambient sounds",
+        "description": "Connects the runtime styling API with the Web Audio API, creating a map where the 3D buildings dance to the rhythm of your ambient environment.",
+        "url": "/mapbox-gl-js/example/dancing-buildings/",
+        "active": false
+      },
+      {
+        "text": "Disable map rotation",
+        "description": "Prevent users from rotating a map.",
+        "url": "/mapbox-gl-js/example/disable-rotation/",
+        "active": false
+      },
+      {
+        "text": "Create a draggable Marker",
+        "description": "Drag the [`Marker`](/mapbox-gl-js/api/#marker) to a new location on a map and populates its coordinates in a display.",
+        "url": "/mapbox-gl-js/example/drag-a-marker/",
+        "active": false
+      },
+      {
+        "text": "Create a draggable point",
+        "description": "Drag the point to a new location on a map and populates its coordinates in a display.",
+        "url": "/mapbox-gl-js/example/drag-a-point/",
+        "active": false
+      },
+      {
+        "text": "Filter features within map view",
+        "description": "Move the map to query viewable features in a vector tile layer and filter by typing in an input.",
+        "url": "/mapbox-gl-js/example/filter-features-within-map-view/",
+        "active": false
+      },
+      {
+        "text": "Filter symbols by text input",
+        "description": "Filter [symbols](/mapbox-gl-js/style-spec#layers-symbol) by icon name by typing in a text input.",
+        "url": "/mapbox-gl-js/example/filter-markers-by-input/",
+        "active": false
+      },
+      {
+        "text": "Filter symbols by toggling a list",
+        "description": "Filter a set of [symbols](/mapbox-gl-js/style-spec#layers-symbol) based on a property value in the data.",
+        "url": "/mapbox-gl-js/example/filter-markers/",
+        "active": false
+      },
+      {
+        "text": "Create a hover effect",
+        "description": "Using events and [feature states](/mapbox-gl-js/api/#map#setfeaturestate) to create a per feature hover effect.",
+        "url": "/mapbox-gl-js/example/hover-styles/",
+        "active": false
+      },
+      {
+        "text": "Display a non-interactive map",
+        "description": "Setting interactive: false to create a static map.",
+        "url": "/mapbox-gl-js/example/interactive-false/",
+        "active": false
+      },
+      {
+        "text": "Change a map's language",
+        "description": "Using [`setLayoutProperty`](/mapbox-gl-js/api/#map#setlayoutproperty) to switch languages dynamically. For a more complete solution see the [mapbox-gl-language](https://github.com/mapbox/mapbox-gl-language/) plugin.",
+        "url": "/mapbox-gl-js/example/language-switch/",
+        "active": false
+      },
+      {
+        "text": "Measure distances",
+        "description": "Click points on a map to create lines that measure distanced using [turf.length](https://turfjs.org/docs/#length).",
+        "url": "/mapbox-gl-js/example/measure/",
+        "active": false
+      },
+      {
+        "text": "Get coordinates of the mouse pointer",
+        "description": "Showing mouse position on hover with pixel and latitude and longitude coordinates.",
+        "url": "/mapbox-gl-js/example/mouse-position/",
+        "active": false
+      },
+      {
+        "text": "Highlight features containing similar data",
+        "description": "Hover over counties to highlight counties that share the same name.",
+        "url": "/mapbox-gl-js/example/query-similar-features/",
+        "active": false
+      },
+      {
+        "text": "Get features under the mouse pointer",
+        "description": "Using [`queryRenderedFeatures`](/mapbox-gl-js/api/#map#queryrenderedfeatures) to show properties of hovered-over map elements.",
+        "url": "/mapbox-gl-js/example/queryrenderedfeatures/",
+        "active": false
+      },
+      {
+        "text": "Select features around a clicked point",
+        "description": "Click on the map to query features using [`queryRenderedFeatures`](/mapbox-gl-js/api#map#queryrenderedfeatures).",
+        "url": "/mapbox-gl-js/example/queryrenderedfeatures-around-point/",
+        "active": false
+      },
+      {
+        "text": "Restrict map panning to an area",
+        "description": "Prevent a map from being panned to a different place by setting [`maxBounds`](https://docs.mapbox.com/mapbox-gl-js/api#map#setmaxbounds).",
+        "url": "/mapbox-gl-js/example/restrict-bounds/",
+        "active": false
+      },
+      {
+        "text": "Create a time slider",
+        "description": "Drag the range slider to visualize earthquakes that were greater than 5.9 magnitude in 2015.",
+        "url": "/mapbox-gl-js/example/timeline-animation/",
+        "active": false
+      },
+      {
+        "text": "Toggle interactions",
+        "description": "Enable or disable UI handlers on a map.",
+        "url": "/mapbox-gl-js/example/toggle-interaction-handlers/",
+        "active": false
+      },
+      {
+        "text": "Highlight features within a bounding box",
+        "description": "Hold the Shift key and drag the map to query features using [`queryRenderedFeatures`](/mapbox-gl-js/api/#map#queryrenderedfeatures).",
+        "url": "/mapbox-gl-js/example/using-box-queryrenderedfeatures/",
+        "active": false
+      },
+      {
+        "text": "Fit to the bounds of a LineString",
+        "description": "Get the bounds of a LineString by passing its first coordinates to [`LngLatBounds`](/mapbox-gl-js/api/#lnglatbounds) and chaining [`extend`](/mapbox-gl-js/api/#lnglatbounds#extend) to include the last coordinates.",
+        "url": "/mapbox-gl-js/example/zoomto-linestring/",
+        "active": false
+      }
+    ],
+    "id": "user-interaction"
+  },
+  {
+    "title": "Camera",
+    "url": "/mapbox-gl-js/examples/#camera",
+    "items": [
+      {
+        "text": "Animate map camera around a point",
+        "description": "Animate map camera around a point.",
+        "url": "/mapbox-gl-js/example/animate-camera-around-point/",
+        "active": false
+      },
+      {
+        "text": "Animate a point along a route",
+        "description": "Use [Turf](http://turfjs.org/) to smoothly animate a point along the distance of a line.",
+        "url": "/mapbox-gl-js/example/animate-point-along-route/",
+        "active": false
+      },
+      {
+        "text": "Center the map on a clicked symbol",
+        "description": "Using events and [`flyTo`](/mapbox-gl-js/api/#map#flyto) to center the map on a [`symbol`](/mapbox-gl-js/style-spec#layers-symbol).",
+        "url": "/mapbox-gl-js/example/center-on-symbol/",
+        "active": false
+      },
+      {
+        "text": "Fit a map to a bounding box",
+        "description": "Use [`fitBounds`](/mapbox-gl-js/api/#map#fitbounds) to show a specific area of the map in view, regardless of the pixel size of the map.",
+        "url": "/mapbox-gl-js/example/fitbounds/",
+        "active": false
+      },
+      {
+        "text": "Slowly fly to a location",
+        "description": "Using [`flyTo`](/mapbox-gl-js/api/#map#flyto) with flyOptions.",
+        "url": "/mapbox-gl-js/example/flyto-options/",
+        "active": false
+      },
+      {
+        "text": "Fly to a location",
+        "description": "Using [`flyTo`](/mapbox-gl-js/api/#map#flyto) to smoothly interpolate between locations.",
+        "url": "/mapbox-gl-js/example/flyto/",
+        "active": false
+      },
+      {
+        "text": "Navigate the map with game-like controls",
+        "description": "Move around the map with game-like controls.",
+        "url": "/mapbox-gl-js/example/game-controls/",
+        "active": false
+      },
+      {
+        "text": "Jump to a series of locations",
+        "description": "Use the [jumpTo function](/mapbox-gl-js/api/#map#jumpto) to showcase multiple locations.",
+        "url": "/mapbox-gl-js/example/jump-to/",
+        "active": false
+      },
+      {
+        "text": "Play map locations as a slideshow",
+        "description": "Autoplay the locations of boroughs in New York City.",
+        "url": "/mapbox-gl-js/example/playback-locations/",
+        "active": false
+      },
+      {
+        "text": "Fly to a location based on scroll position",
+        "description": "Scroll down through the story and the map will fly to the chapter's location.",
+        "url": "/mapbox-gl-js/example/scroll-fly-to/",
+        "active": false
+      },
+      {
+        "text": "Set pitch and bearing",
+        "description": "Map options extend [`CameraOptions`](/mapbox-gl-js/api/#cameraoptions), so you can set more than just center and zoom.",
+        "url": "/mapbox-gl-js/example/set-perspective/",
+        "active": false
+      }
+    ],
+    "id": "camera"
+  },
+  {
+    "title": "Controls and overlays",
+    "url": "/mapbox-gl-js/examples/#controls-and-overlays",
+    "items": [
+      {
+        "text": "Animate a marker",
+        "description": "Animate the position of a [`Marker`](/mapbox-gl-js/api/#marker) by updating its location on each frame.",
+        "url": "/mapbox-gl-js/example/animate-marker/",
+        "active": true
+      },
+      {
+        "text": "Change the default position for attribution",
+        "description": "Place attribution in the `top-left` position when initializing a map.",
+        "url": "/mapbox-gl-js/example/attribution-position/",
+        "active": false
+      },
+      {
+        "text": "Add custom icons with Markers",
+        "description": "Use [`Marker`](/mapbox-gl-js/api/#marker) to add custom icons to your map.",
+        "url": "/mapbox-gl-js/example/custom-marker-icons/",
+        "active": false
+      },
+      {
+        "text": "Disable scroll zoom",
+        "description": "Prevents scroll from zooming a map.",
+        "url": "/mapbox-gl-js/example/disable-scroll-zoom/",
+        "active": false
+      },
+      {
+        "text": "View a fullscreen map",
+        "description": "Toggle between current view and fullscreen mode.",
+        "url": "/mapbox-gl-js/example/fullscreen/",
+        "active": false
+      },
+      {
+        "text": "Locate the user",
+        "description": "Geolocate the user and then track their current location on the map using the [`GeolocateControl`](/mapbox-gl-js/api/#geolocatecontrol).",
+        "url": "/mapbox-gl-js/example/locate-user/",
+        "active": false
+      },
+      {
+        "text": "Swipe between maps",
+        "description": "Use [mapbox-gl-compare](https://github.com/mapbox/mapbox-gl-compare) to swipe between and synchronize two maps.",
+        "url": "/mapbox-gl-js/example/mapbox-gl-compare/",
+        "active": false
+      },
+      {
+        "text": "Display driving directions",
+        "description": "Use the [mapbox-gl-directions](https://github.com/mapbox/mapbox-gl-directions) plugin to show results from the Mapbox Directions API. Click the map to add an origin and destination.",
+        "url": "/mapbox-gl-js/example/mapbox-gl-directions/",
+        "active": false
+      },
+      {
+        "text": "Show drawn polygon area",
+        "description": "Use [mapbox-gl-draw](https://github.com/mapbox/mapbox-gl-draw) to draw a polygon and [Turf.js](http://turfjs.org/) to calculate its area in square meters.",
+        "url": "/mapbox-gl-js/example/mapbox-gl-draw/",
+        "active": false
+      },
+      {
+        "text": "Add a geocoder",
+        "description": "Use the [mapbox-gl-geocoder](https://github.com/mapbox/mapbox-gl-geocoder) control to search for places using Mapbox Geocoding API. Check out our [Search Playground](https://www.mapbox.com/search-playground/) to explore geocoding query parameters and how they affect the results.",
+        "url": "/mapbox-gl-js/example/mapbox-gl-geocoder/",
+        "active": false
+      },
+      {
+        "text": "Add a marker using a place name",
+        "description": "Add a [`Marker`](/mapbox-gl-js/api#marker) using a place name or address for its location using the [forward geocoder](https://www.mapbox.com/api-documentation/search/#geocoding).",
+        "url": "/mapbox-gl-js/example/marker-from-geocode/",
+        "active": false
+      },
+      {
+        "text": "Display map navigation controls",
+        "description": "Zoom and rotation controls to make map navigation more obvious.",
+        "url": "/mapbox-gl-js/example/navigation/",
+        "active": false
+      },
+      {
+        "text": "Show polygon information on click",
+        "description": "When a user clicks a polygon, show a [`Popup`](/mapbox-gl-js/api/#popup) containing more information.",
+        "url": "/mapbox-gl-js/example/polygon-popup-on-click/",
+        "active": false
+      },
+      {
+        "text": "Display a popup on click",
+        "description": "When a user clicks a symbol, show a [`Popup`](/mapbox-gl-js/api/#popup) containing more information. The symbols are from the [Maki](https://labs.mapbox.com/maki-icons/) symbol set used in the Mapbox Streets style.",
+        "url": "/mapbox-gl-js/example/popup-on-click/",
+        "active": false
+      },
+      {
+        "text": "Display a popup",
+        "description": "Add a [`Popup`](/mapbox-gl-js/api/#popup) to the map.",
+        "url": "/mapbox-gl-js/example/popup/",
+        "active": false
+      },
+      {
+        "text": "Display a popup on hover",
+        "description": "When a user hovers over a [`symbol`](/mapbox-gl-js/style-spec#layers-symbol), show a [`Popup`](/mapbox-gl-js/api/#popup) containing more information.",
+        "url": "/mapbox-gl-js/example/popup-on-hover/",
+        "active": false
+      },
+      {
+        "text": "Attach a popup to a marker instance",
+        "description": "Attach a [`Popup`](/mapbox-gl-js/api/#popup) to a [Marker](/mapbox-gl-js/api/#marker) and display it on click.",
+        "url": "/mapbox-gl-js/example/set-popup/",
+        "active": false
+      }
+    ],
+    "id": "controls-and-overlays"
+  },
+  {
+    "title": "Geocoder",
+    "url": "/mapbox-gl-js/examples/#geocoder",
+    "items": [
+      {
+        "text": "Supplement forward geocoding search results from another data source",
+        "description": "Use the [mapbox-gl-geocoder](https://github.com/mapbox/mapbox-gl-geocoder) control to search for places using Mapbox Geocoding API, supplementing results from a local data source or function, in this case to match Chicago Park names with text input.",
+        "url": "/mapbox-gl-js/example/forward-geocode-custom-data/",
+        "active": false
+      },
+      {
+        "text": "Accept coordinates as input to a geocoder",
+        "description": "Use the [mapbox-gl-geocoder](https://github.com/mapbox/mapbox-gl-geocoder) control to search for places using Mapbox Geocoding API, while accepting geographic coordinates provided as input.",
+        "url": "/mapbox-gl-js/example/mapbox-gl-geocoder-accept-coordinates/",
+        "active": false
+      },
+      {
+        "text": "Use a custom render function with a geocoder",
+        "description": "Use a custom html rendering function with the [mapbox-gl-geocoder](https://github.com/mapbox/mapbox-gl-geocoder) to customize how the dropdown menu is displayed.",
+        "url": "/mapbox-gl-js/example/mapbox-gl-geocoder-custom-render/",
+        "active": false
+      },
+      {
+        "text": "Place the geocoder input outside the map",
+        "description": "Use the [mapbox-gl-geocoder](https://github.com/mapbox/mapbox-gl-geocoder) control to search for places using Mapbox Geocoding API attached to an element outside the map.",
+        "url": "/mapbox-gl-js/example/mapbox-gl-geocoder-outside-the-map/",
+        "active": false
+      },
+      {
+        "text": "Limit geocoder results to a named region",
+        "description": "Use the [mapbox-gl-geocoder](https://github.com/mapbox/mapbox-gl-geocoder) control to search for places using Mapbox Geocoding API limiting results to a region.",
+        "url": "/mapbox-gl-js/example/mapbox-gl-geocoder-limit-region/",
+        "active": false
+      },
+      {
+        "text": "Use a custom camera animation with a geocoder",
+        "description": "Use camera animation options with the [mapbox-gl-geocoder](https://github.com/mapbox/mapbox-gl-geocoder) to create a custom animation when a result is selected.",
+        "url": "/mapbox-gl-js/example/mapbox-gl-geocoder-with-flyto/",
+        "active": false
+      },
+      {
+        "text": "Localize the geocoder to a given language",
+        "description": "Localize the [mapbox-gl-geocoder](https://github.com/mapbox/mapbox-gl-geocoder) to set the UI language and improve result relevance in that language.",
+        "url": "/mapbox-gl-js/example/mapbox-gl-geocoder-with-language/",
+        "active": false
+      },
+      {
+        "text": "Set a point after Geocoder result",
+        "description": "Style a [Marker](https://docs.mapbox.com/mapbox-gl-js/api/#marker) used to mark the location of the [mapbox-gl-geocoder](https://github.com/mapbox/mapbox-gl-geocoder) result.",
+        "url": "/mapbox-gl-js/example/point-from-geocoder-result/",
+        "active": false
+      }
+    ],
+    "id": "geocoder"
+  },
+  {
+    "title": "Browser support",
+    "url": "/mapbox-gl-js/examples/#browser-support",
+    "items": [
+      {
+        "text": "Check for browser support",
+        "description": "Check for Mapbox GL browser support.",
+        "url": "/mapbox-gl-js/example/check-for-support/",
+        "active": false
+      }
+    ],
+    "id": "browser-support"
+  },
+  {
+    "title": "Internationalization support",
+    "url": "/mapbox-gl-js/examples/#internationalization",
+    "items": [
+      {
+        "text": "Use locally generated ideographs",
+        "description": "Rendering Chinese/Japanese/Korean (CJK) ideographs and precomposed Hangul Syllables requires downloading large amounts of font data, which can significantly slow map load times. Use the `localIdeographFontFamily` setting to speed up map load times by using locally available fonts instead of font data fetched from the server. This setting defines a CSS 'font-family' for locally overriding generation of glyphs in the 'CJK Unified Ideographs' and 'Hangul Syllables' Unicode ranges. In these ranges, font settings from the map's style will be ignored in favor of the locally available font. Keywords in the fontstack defined in the map's style (light/regular/medium/bold) will be translated into a CSS 'font-weight'.\n\nThis setting is enabled by default to use the system 'sans-serif' font. When overriding this setting, keep in mind that the fonts you select may not be available on all users' devices. It is best to specify at least one broadly available fallback font class such as 'sans-serif'. Note that [Mapbox Studio](https://studio.mapbox.com/) sets this value to `false` by default.",
+        "url": "/mapbox-gl-js/example/local-ideographs/",
+        "active": false
+      },
+      {
+        "text": "Add support for right-to-left scripts",
+        "description": "Use the [mapbox-gl-rtl-text](https://github.com/mapbox/mapbox-gl-rtl-text) plugin to support the Arabic or Hebrew languages, which are written right-to-left.\nBy setting the `lazy` parameter to `true`, the plugin is only loaded when the map first encounters Hebrew or Arabic text.\nMapbox Studio loads this plugin by default.",
+        "url": "/mapbox-gl-js/example/mapbox-gl-rtl-text/",
+        "active": false
+      }
+    ],
+    "id": "internationalization"
+  }
+]
