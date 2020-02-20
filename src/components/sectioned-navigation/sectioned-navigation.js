@@ -30,7 +30,7 @@ class SectionedNavigation extends React.Component {
       return null;
     }
     return (
-      <div className="mb18">
+      <div className="mb3">
         <ControlText
           onChange={e => this.setState({ filter: e }, this.filterResults)}
           value={this.state.filter}
@@ -73,7 +73,7 @@ class SectionedNavigation extends React.Component {
         };
       });
     return (
-      <div data-swiftype-index="false">
+      <div className="mx24" data-swiftype-index="false">
         {this.renderTitle()}
         {this.renderFilterBar()}
         {visibleSections.map((section, i) => (
