@@ -6,7 +6,7 @@ exports[`navigation-accordion Basic renders as expected 1`] = `
     className="block-mm none"
   >
     <div
-      className="pl24-mm px0 block-mm none pr12 bg-lighten75"
+      className="px12 block-mm none bg-lighten75"
     >
       <div
         className="py3 "
@@ -61,7 +61,7 @@ exports[`navigation-accordion Basic renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="pl24-mm px0 block-mm none pr12"
+      className="px12 block-mm none"
     >
       <div
         className="py3  border-t border--gray-light"
@@ -148,7 +148,7 @@ exports[`navigation-accordion No second level items renders as expected 1`] = `
     className="block-mm none"
   >
     <div
-      className="pl24-mm px0 block-mm none pr12 bg-lighten75"
+      className="px12 block-mm none bg-lighten75"
     >
       <div
         className="py3 "
@@ -168,7 +168,7 @@ exports[`navigation-accordion No second level items renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="pl24-mm px0 block-mm none pr12"
+      className="px12 block-mm none"
     >
       <div
         className="py3  border-t border--gray-light"
@@ -255,7 +255,7 @@ exports[`navigation-accordion Shows third level items renders as expected 1`] = 
     className="block-mm none"
   >
     <div
-      className="pl24-mm px0 block-mm none pr12 bg-lighten75"
+      className="px12 block-mm none bg-lighten75"
     >
       <div
         className="py3 "
@@ -333,7 +333,7 @@ exports[`navigation-accordion Shows third level items renders as expected 1`] = 
       </div>
     </div>
     <div
-      className="pl24-mm px0 block-mm none pr12"
+      className="px12 block-mm none"
     >
       <div
         className="py3  border-t border--gray-light"
@@ -420,7 +420,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
     className="block-mm none"
   >
     <div
-      className="pl24-mm px0 block-mm none pr12 bg-lighten75"
+      className="px12 block-mm none bg-lighten75"
     >
       <div
         className="py3 "
@@ -568,7 +568,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="pl24-mm px0 block-mm none pr12"
+      className="px12 block-mm none"
     >
       <div
         className="py3  border-t border--gray-light"

@@ -69,7 +69,7 @@ class PageLayout extends React.Component {
     let title = '';
     if (props.sidebarTitle) {
       title = (
-        <div className="txt-l color-blue txt-fancy mb12 block-mm none">
+        <div className="txt-l color-blue txt-fancy mb12 block-mm none mx24">
           {props.sidebarTitle}
         </div>
       );

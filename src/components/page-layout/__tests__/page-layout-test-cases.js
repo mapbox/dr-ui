@@ -61,7 +61,7 @@ testCases.common = {
   description: 'Common use case',
   component: PageLayout,
   props: {
-    sidebarTitle: <div className="ml36">Section title</div>,
+    sidebarTitle: 'Section title',
     sidebarContent: (
       <NavigationAccordion
         currentPath="page-one"
@@ -134,7 +134,7 @@ testCases.many = {
   description: 'Many first level items',
   component: PageLayout,
   props: {
-    sidebarTitle: <div className="ml36">Section title</div>,
+    sidebarTitle: 'Section title',
     sidebarContent: (
       <NavigationAccordion
         currentPath="page-one"
