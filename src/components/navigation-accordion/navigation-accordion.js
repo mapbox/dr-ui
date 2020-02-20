@@ -102,7 +102,7 @@ class NavigationAccordion extends React.PureComponent {
       // then find the heading again now that it's visibile and has an offsetTop
       if (heading && heading.offsetTop === 0) {
         const parent = this.findAncestor(heading, 'ul.none');
-        parent.classList.remove('none');
+        if (parent) parent.classList.remove('none');
         heading = document.getElementById(`${window.location.hash}-sidebar`);
       }
       // if the heading exists and offsetTop > 0; scroll to that item in the sidebar
