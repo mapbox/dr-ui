@@ -36,6 +36,7 @@ exports[`navigation-accordion Basic renders as expected 1`] = `
               <a
                 className="color-blue-on-hover"
                 href="#heading-one"
+                id="#heading-one-sidebar"
               >
                 Heading one
                 
@@ -50,6 +51,7 @@ exports[`navigation-accordion Basic renders as expected 1`] = `
               <a
                 className="color-blue-on-hover"
                 href="#heading-two"
+                id="#heading-two-sidebar"
               >
                 Heading two
                 
@@ -289,6 +291,7 @@ exports[`navigation-accordion Shows third level items renders as expected 1`] = 
               <a
                 className="color-blue-on-hover"
                 href="#heading-one"
+                id="#heading-one-sidebar"
               >
                 Heading one
                 
@@ -302,6 +305,7 @@ exports[`navigation-accordion Shows third level items renders as expected 1`] = 
                   <a
                     className="color-blue-on-hover txt-bold"
                     href="#"
+                    id="#-sidebar"
                   >
                     Subheading one
                     
@@ -313,6 +317,7 @@ exports[`navigation-accordion Shows third level items renders as expected 1`] = 
                   <a
                     className="color-blue-on-hover"
                     href="#subheading-two"
+                    id="#subheading-two-sidebar"
                   >
                     Subheading two
                     
@@ -326,6 +331,7 @@ exports[`navigation-accordion Shows third level items renders as expected 1`] = 
               <a
                 className="color-blue-on-hover"
                 href="#heading-two"
+                id="#heading-two-sidebar"
               >
                 Heading two
                 
@@ -712,6 +718,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
               <a
                 className="color-blue-on-hover"
                 href="#heading-one"
+                id="#heading-one-sidebar"
               >
                 Heading one
                 
@@ -725,6 +732,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
                   <a
                     className="color-blue-on-hover txt-bold"
                     href="#"
+                    id="#-sidebar"
                   >
                     Subheading one
                     <span
@@ -771,6 +779,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
                   <a
                     className="color-blue-on-hover"
                     href="#subheading-two"
+                    id="#subheading-two-sidebar"
                   >
                     Subheading two
                     
@@ -784,6 +793,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
               <a
                 className="color-blue-on-hover"
                 href="#heading-two"
+                id="#heading-two-sidebar"
               >
                 Heading two
                 <span

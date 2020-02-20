@@ -182,6 +182,7 @@ exports[`feedback Feedback placement renders as expected 1`] = `
                             <a
                               className="color-blue-on-hover"
                               href="#heading-one"
+                              id="#heading-one-sidebar"
                             >
                               Heading one
                               
@@ -196,6 +197,7 @@ exports[`feedback Feedback placement renders as expected 1`] = `
                             <a
                               className="color-blue-on-hover"
                               href="#heading-two"
+                              id="#heading-two-sidebar"
                             >
                               Heading two
                               

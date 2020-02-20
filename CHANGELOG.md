@@ -3,6 +3,7 @@
 ## Master
 
 * Add feature to scroll to active item in `SectionedNavigation` onload. [#249](https://github.com/mapbox/dr-ui/pull/249)
+* Add feature to scroll to active item in `NavigationAccordion` onload. [#247](https://github.com/mapbox/dr-ui/pull/247)
 
 ## 0.26.0
 
