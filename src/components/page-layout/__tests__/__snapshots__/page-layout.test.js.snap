@@ -23,7 +23,7 @@ exports[`page-layout Basic renders as expected 1`] = `
         }
       >
         <div
-          className="pt24-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled none block-mm"
+          className="pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled none block-mm"
           id="dr-ui--page-layout-sidebar"
         >
           <div
@@ -72,7 +72,7 @@ exports[`page-layout Code highlighting test renders as expected 1`] = `
         }
       >
         <div
-          className="pt24-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled none block-mm"
+          className="pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled none block-mm"
           id="dr-ui--page-layout-sidebar"
         >
           <div
@@ -142,7 +142,7 @@ exports[`page-layout Common use case renders as expected 1`] = `
         }
       >
         <div
-          className="pt24-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled block"
+          className="pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled block"
           id="dr-ui--page-layout-sidebar"
         >
           <div
@@ -346,7 +346,7 @@ exports[`page-layout Custom sidebar column size renders as expected 1`] = `
         }
       >
         <div
-          className="pt24-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled none block-mm"
+          className="pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled none block-mm"
           id="dr-ui--page-layout-sidebar"
         >
           <div
@@ -395,7 +395,7 @@ exports[`page-layout Custom sidebar column size, too large - default to original
         }
       >
         <div
-          className="pt24-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled none block-mm"
+          className="pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled none block-mm"
           id="dr-ui--page-layout-sidebar"
         >
           <div
@@ -444,7 +444,7 @@ exports[`page-layout Custom sidebar column size, too small - default to original
         }
       >
         <div
-          className="pt24-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled none block-mm"
+          className="pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled none block-mm"
           id="dr-ui--page-layout-sidebar"
         >
           <div
@@ -493,7 +493,7 @@ exports[`page-layout Many first level items renders as expected 1`] = `
         }
       >
         <div
-          className="pt24-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled block"
+          className="pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled block"
           id="dr-ui--page-layout-sidebar"
         >
           <div

@@ -104,7 +104,7 @@ class PageLayout extends React.Component {
             top={state.topValue}
           >
             <div
-              className={`pt24-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled ${sidebarNarrowClasses}`}
+              className={`pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled ${sidebarNarrowClasses}`}
               id="dr-ui--page-layout-sidebar"
             >
               {title}
