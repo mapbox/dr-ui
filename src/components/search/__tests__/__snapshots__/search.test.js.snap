@@ -343,11 +343,7 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
               <div
                 className="txt-l color-blue txt-fancy mb12 block-mm none mx24"
               >
-                <div
-                  className="ml36"
-                >
-                  Section title
-                </div>
+                Section title
               </div>
               <div>
                 <div
