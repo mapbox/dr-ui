@@ -349,7 +349,9 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
                   Section title
                 </div>
               </div>
-              <div>
+              <div
+                className="dr-ui--navigation-accordion"
+              >
                 <div
                   className="block-mm none"
                 >

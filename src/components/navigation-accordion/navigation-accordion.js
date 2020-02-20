@@ -95,10 +95,16 @@ class NavigationAccordion extends React.PureComponent {
             const isActive = state.activeh3 === subItem.path;
             if (isActive) openSubItems = true;
             return (
-              <li key={subItem.path} className="mt6">
+              <li
+                key={subItem.path}
+                className="mt6"
+                style={
+                  subItem.icon && { textIndent: '-24px', marginLeft: '11px' }
+                }
+              >
                 <a href={`#${subItem.path}`} className={itemClasses(isActive)}>
                   {subItem.icon && (
-                    <span className="mr6 ml-neg12 w18 h18 align-middle inline-block bg-gray-faint round-full">
+                    <span className="mr6 w18 h18 align-middle inline-block bg-gray-faint round-full">
                       <Icon size={16} name={subItem.icon} />
                     </span>
                   )}
@@ -176,7 +182,7 @@ class NavigationAccordion extends React.PureComponent {
       }
     );
     return (
-      <div>
+      <div className="dr-ui--navigation-accordion">
         <div className="block-mm none">{firstLevelContent}</div>
         <div className="none-mm block bg-gray-faint px24 py24">
           <NavigationDropdown

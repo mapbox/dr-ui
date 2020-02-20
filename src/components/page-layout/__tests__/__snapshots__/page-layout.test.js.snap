@@ -154,7 +154,9 @@ exports[`page-layout Common use case renders as expected 1`] = `
               Section title
             </div>
           </div>
-          <div>
+          <div
+            className="dr-ui--navigation-accordion"
+          >
             <div
               className="block-mm none"
             >
@@ -509,7 +511,9 @@ exports[`page-layout Many first level items renders as expected 1`] = `
               Section title
             </div>
           </div>
-          <div>
+          <div
+            className="dr-ui--navigation-accordion"
+          >
             <div
               className="block-mm none"
             >

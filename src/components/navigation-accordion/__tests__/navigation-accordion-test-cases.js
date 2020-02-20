@@ -125,6 +125,11 @@ testCases.withThirdLevelItemsWithIcons = {
               title: 'Subheading two',
               path: 'subheading-two',
               icon: 'paint'
+            },
+            {
+              title: 'Subheading three is long so we should wrap it nicely',
+              path: 'subheading-three',
+              icon: 'star'
             }
           ]
         },

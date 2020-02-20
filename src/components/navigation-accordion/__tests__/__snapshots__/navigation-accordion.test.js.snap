@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`navigation-accordion Basic renders as expected 1`] = `
-<div>
+<div
+  className="dr-ui--navigation-accordion"
+>
   <div
     className="block-mm none"
   >
@@ -143,7 +145,9 @@ exports[`navigation-accordion Basic renders as expected 1`] = `
 `;
 
 exports[`navigation-accordion No second level items renders as expected 1`] = `
-<div>
+<div
+  className="dr-ui--navigation-accordion"
+>
   <div
     className="block-mm none"
   >
@@ -250,7 +254,9 @@ exports[`navigation-accordion No second level items renders as expected 1`] = `
 `;
 
 exports[`navigation-accordion Shows third level items renders as expected 1`] = `
-<div>
+<div
+  className="dr-ui--navigation-accordion"
+>
   <div
     className="block-mm none"
   >
@@ -415,7 +421,9 @@ exports[`navigation-accordion Shows third level items renders as expected 1`] = 
 `;
 
 exports[`navigation-accordion Shows third level items with icons renders as expected 1`] = `
-<div>
+<div
+  className="dr-ui--navigation-accordion"
+>
   <div
     className="block-mm none"
   >
@@ -457,13 +465,19 @@ exports[`navigation-accordion Shows third level items with icons renders as expe
               >
                 <li
                   className="mt6"
+                  style={
+                    Object {
+                      "marginLeft": "11px",
+                      "textIndent": "-24px",
+                    }
+                  }
                 >
                   <a
                     className="color-blue-on-hover txt-bold"
                     href="#"
                   >
                     <span
-                      className="mr6 ml-neg12 w18 h18 align-middle inline-block bg-gray-faint round-full"
+                      className="mr6 w18 h18 align-middle inline-block bg-gray-faint round-full"
                     >
                       <svg
                         className="events-none icon"
@@ -488,13 +502,19 @@ exports[`navigation-accordion Shows third level items with icons renders as expe
                 </li>
                 <li
                   className="mt6"
+                  style={
+                    Object {
+                      "marginLeft": "11px",
+                      "textIndent": "-24px",
+                    }
+                  }
                 >
                   <a
                     className="color-blue-on-hover"
                     href="#subheading-two"
                   >
                     <span
-                      className="mr6 ml-neg12 w18 h18 align-middle inline-block bg-gray-faint round-full"
+                      className="mr6 w18 h18 align-middle inline-block bg-gray-faint round-full"
                     >
                       <svg
                         className="events-none icon"
@@ -514,6 +534,43 @@ exports[`navigation-accordion Shows third level items with icons renders as expe
                       </svg>
                     </span>
                     Subheading two
+                    
+                  </a>
+                </li>
+                <li
+                  className="mt6"
+                  style={
+                    Object {
+                      "marginLeft": "11px",
+                      "textIndent": "-24px",
+                    }
+                  }
+                >
+                  <a
+                    className="color-blue-on-hover"
+                    href="#subheading-three"
+                  >
+                    <span
+                      className="mr6 w18 h18 align-middle inline-block bg-gray-faint round-full"
+                    >
+                      <svg
+                        className="events-none icon"
+                        focusable="false"
+                        role="presentation"
+                        style={
+                          Object {
+                            "height": 16,
+                            "width": 16,
+                          }
+                        }
+                      >
+                        <use
+                          xlinkHref="#icon-star"
+                          xmlnsXlink="http://www.w3.org/1999/xlink"
+                        />
+                      </svg>
+                    </span>
+                    Subheading three is long so we should wrap it nicely
                     
                   </a>
                 </li>
@@ -620,7 +677,9 @@ exports[`navigation-accordion Shows third level items with icons renders as expe
 `;
 
 exports[`navigation-accordion Titles with tags renders as expected 1`] = `
-<div>
+<div
+  className="dr-ui--navigation-accordion"
+>
   <div
     className="block-mm none"
   >
