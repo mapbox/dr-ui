@@ -1,6 +1,11 @@
 
+<!-- list what changes this PR introduces -->
 
-## QA Checklist
+## How to test
+
+<!-- list steps on how the reviewer can test this change -->
+
+## QA checklist
 
 <!-- complete this checklist when adding a new component or package -->
 
@@ -10,7 +15,7 @@
 - [ ] Component is accessible at tablet-size viewport.
 - [ ] Component is accessible at laptop-size viewport.
 - [ ] Component is accessible at big-monitor-size viewport.
-- [ ] If applicable, create a PR in a site repo, copy the component, and test it. Push to staging and instruct the reviewer to test the component in-page.
+- [ ] Create a PR in a site repo, copy the component, and test it. Push to staging and let the reviewer know they can also test the component there.
 
 Open the test cases app locally on:
 
