@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Sent helpful rating basic 1`] = `
+exports[`Sent helpful rating snapshot snapshot 1`] = `
 <div
   className="bg-gray-faint py12 px18 round color-gray"
 >

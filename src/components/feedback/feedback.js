@@ -13,6 +13,7 @@ const environment =
       ? 'production'
       : 'staging'
     : undefined;
+const location = typeof window !== 'undefined' ? window.location : undefined;
 
 class Feedback extends React.Component {
   constructor(props) {
@@ -20,7 +21,8 @@ class Feedback extends React.Component {
     this.state = {
       helpful: undefined,
       feedback: undefined,
-      feedbackSent: undefined
+      feedbackSent: undefined,
+      event: undefined
     };
     this.handleText = this.handleText.bind(this);
     this.handleYesNo = this.handleYesNo.bind(this);
@@ -34,11 +36,47 @@ class Feedback extends React.Component {
   }
   // when user clicks YES or NO, the value is pushed to the state and then sent to segment
   handleYesNo(helpful) {
-    this.setState({ helpful }, () => {
+    const event = this.createSegmentEvent(helpful);
+    this.setState({ helpful, event }, () => {
       // track helpful rating
       this.sendToSegment();
     });
   }
+
+  // create event object to sent to Segment
+  createSegmentEvent(helpful, feedback) {
+    return {
+      event: 'Sent docs feedback',
+      properties: {
+        // true, false,
+        helpful: helpful,
+        // text feedback
+        ...(feedback && { feedback: feedback }),
+        // name of current site, helpful for filtering in Mode
+        site: this.props.site,
+        // (optional) name of section for longer pagers, helpful for fitering in Mode and identifying section areas
+        section: this.props.section || undefined,
+        // get page context
+        page: this.props.location || undefined,
+        // set user if available
+        userId: this.props.userName || undefined,
+        ...(!this.props.userName && { anonymousId: anonymousId }),
+        // staging or production
+        environment,
+        // pull full window.location
+        location: {
+          hash: location.hash,
+          host: location.host,
+          hostname: location.hostname,
+          href: location.href,
+          origin: location.origin,
+          pathname: location.pathname,
+          search: location.search
+        }
+      }
+    };
+  }
+
   // when user click submit feedback button, the value is pushed to the state and then sent to segment
   submitFeedback() {
     // initialize docs-feedback sentry project if enabled
@@ -57,7 +95,11 @@ class Feedback extends React.Component {
       });
       Sentry.captureMessage(this.state.feedback); // capture the feedback as a message
     }
-    this.setState({ feedbackSent: true }, () => {
+    const event = this.createSegmentEvent(
+      this.state.helpful,
+      this.state.feedback
+    );
+    this.setState({ feedbackSent: true, event }, () => {
       // Track response to Segement
       this.sendToSegment();
     });
@@ -65,27 +107,8 @@ class Feedback extends React.Component {
 
   // sends all available data to segment
   sendToSegment() {
-    const location =
-      typeof window !== 'undefined' ? window.location : undefined;
-    const event = {
-      event: 'Sent docs feedback',
-      properties: {
-        helpful: this.state.helpful, // true, false
-        site: this.props.site, // name of current site, helpful for filtering in Mode
-        section: this.props.section || undefined, // (optional) name of section for longer pagers, helpful for fitering in Mode and identifying section areas
-        feedback: this.state.feedback, // (optional) textarea feedback
-        page: this.props.location || undefined, // get page context
-        userId: this.props.userName || undefined, // set user if available
-        environment, // staging or production
-        location // pull full window.location
-      }
-    };
-    // if user is logged in then associate feedback with them
-    // otherwise use the a random/anonymousId
-    if (this.props.userName) event.userId = this.props.userName;
-    else event.anonymousId = anonymousId;
     // sends event to segment via forward event webhook
-    forwardEvent(event, this.props.webhook, err => {
+    forwardEvent(this.state.event, this.props.webhook, err => {
       if (err) {
         console.log(err); // eslint-disable-line
       }
@@ -100,12 +123,14 @@ class Feedback extends React.Component {
             <div>
               <div className="mb6">Was this {this.props.type} helpful?</div>
               <button
+                id="dr-ui--feedback-yes"
                 onClick={() => this.handleYesNo(true)}
                 className="btn btn--s"
               >
                 Yes
               </button>
               <button
+                id="dr-ui--feedback-no"
                 onClick={() => this.handleYesNo(false)}
                 className="btn btn--s ml6"
               >
@@ -144,6 +169,7 @@ class Feedback extends React.Component {
                     this.state.feedback === undefined ||
                     this.state.feedback.length < 3 // disable button unless more than 3 characters are typed
                   }
+                  id={`${this.props.section || 'docs'}-submit-feedback`}
                   className="btn btn--s mb18"
                   onClick={this.submitFeedback}
                 >
