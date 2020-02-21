@@ -27,7 +27,7 @@ class Feedback extends React.Component {
     };
     this.handleText = this.handleText.bind(this);
     this.handleYesNo = this.handleYesNo.bind(this);
-    this.submitFeedback = this.submitFeedback.bind(this);
+    this.handleSubmitFeedback = this.handleSubmitFeedback.bind(this);
     this.sendToSegment = this.sendToSegment.bind(this);
   }
 
@@ -44,17 +44,37 @@ class Feedback extends React.Component {
   handleText(feedback) {
     this.setState({ feedback });
   }
-  // when user clicks YES or NO, the value is pushed to the state and then sent to segment
+
+  // handles when user clicks YES or NO button
   handleYesNo(helpful) {
-    const event = this.createSegmentEvent(helpful);
-    this.setState({ helpful, event }, () => {
-      // track helpful rating
-      this.sendToSegment();
+    // sets user rating to the state
+    this.setState({ helpful }, () => {
+      // creates event to send to Segment and sets it to the state
+      this.setState({ event: this.createSegmentEvent() }, () => {
+        // sends helpful rating to Segment
+        this.sendToSegment();
+      });
     });
   }
 
+  // handles sending feedback to Sentry (and Segment) when the user clicks SUBMIT FEEDBACK button
+  handleSubmitFeedback() {
+    // sets event to the state and marks feedbackSent as true
+    this.setState(
+      { feedbackSent: true, event: this.createSegmentEvent() },
+      () => {
+        // sends event to Segment
+        this.sendToSegment();
+        // if enabled, sends feedback to Sentry
+        if (this.props.feedbackSentryDsn !== false) {
+          this.sendToSentry();
+        }
+      }
+    );
+  }
+
   // create event object to sent to Segment
-  createSegmentEvent(helpful, feedback) {
+  createSegmentEvent() {
     return {
       event: 'Sent docs feedback',
       // set user if available (needed for forward-event request)
@@ -62,9 +82,9 @@ class Feedback extends React.Component {
       ...(!this.props.userName && { anonymousId: anonymousId }),
       properties: {
         // true, false,
-        helpful: helpful,
+        helpful: this.state.helpful,
         // text feedback
-        ...(feedback && { feedback: feedback }),
+        ...(this.state.feedback && { feedback: this.state.feedback }),
         // name of current site, helpful for filtering in Mode
         site: this.props.site,
         // (optional) name of section for longer pagers, helpful for fitering in Mode and identifying section areas
@@ -76,7 +96,7 @@ class Feedback extends React.Component {
         ...(!this.props.userName && { anonymousId: anonymousId }),
         // staging or production
         environment,
-        // pull full window.location
+        // pull window.location
         location: {
           hash: location.hash,
           host: location.host,
@@ -90,42 +110,31 @@ class Feedback extends React.Component {
     };
   }
 
-  // when user click submit feedback button, the value is pushed to the state and then sent to segment
-  submitFeedback() {
-    // initialize docs-feedback sentry project if enabled
-    if (this.props.feedbackSentryDsn !== false) {
-      Sentry.init({
-        dsn: this.props.feedbackSentryDsn,
-        environment
-      });
-      Sentry.configureScope(scope => {
-        scope.setTag('site', this.props.site); // site name
-        scope.setTag('helpful', this.state.helpful); // the user's boolean rating
-        if (this.props.section) scope.setTag('section', this.props.section); // section of the page (if available)
-        if (this.props.preferredLanguage)
-          scope.setTag('preferredLanguage', this.props.preferredLanguage); // user's preferred language (if available)
-        scope.setLevel('info'); // sets the message as "info" (rather than warning)
-      });
-      Sentry.captureMessage(this.state.feedback); // capture the feedback as a message
-    }
-    const event = this.createSegmentEvent(
-      this.state.helpful,
-      this.state.feedback
-    );
-    this.setState({ feedbackSent: true, event }, () => {
-      // Track response to Segement
-      this.sendToSegment();
-    });
-  }
-
-  // sends all available data to segment
+  // sends event to Segment
   sendToSegment() {
-    // sends event to segment via forward event webhook
+    // sends event to Segment via forward event webhook
     forwardEvent(this.state.event, this.props.webhook, err => {
       if (err) {
         console.log(err); // eslint-disable-line
       }
     });
+  }
+
+  // sends text feedback to Sentry
+  sendToSentry() {
+    Sentry.init({
+      dsn: this.props.feedbackSentryDsn,
+      environment
+    });
+    Sentry.configureScope(scope => {
+      scope.setTag('site', this.props.site); // site name
+      scope.setTag('helpful', this.state.helpful); // the user's boolean rating
+      if (this.props.section) scope.setTag('section', this.props.section); // section of the page (if available)
+      if (this.props.preferredLanguage)
+        scope.setTag('preferredLanguage', this.props.preferredLanguage); // user's preferred language (if available)
+      scope.setLevel('info'); // sets the message as "info" (rather than warning)
+    });
+    Sentry.captureMessage(this.state.feedback); // capture the feedback as a message
   }
 
   render() {
@@ -184,7 +193,7 @@ class Feedback extends React.Component {
                   }
                   id={this.createId('submit')}
                   className="btn btn--s mb18"
-                  onClick={this.submitFeedback}
+                  onClick={this.handleSubmitFeedback}
                 >
                   Send feedback
                 </button>
