@@ -15,14 +15,14 @@ exports[`feedback Basic renders as expected 1`] = `
       </div>
       <button
         className="btn btn--s"
-        id="dr-ui--feedback-LngLat-yes"
+        id="dr-ui--feedback-lnglat-yes"
         onClick={[Function]}
       >
         Yes
       </button>
       <button
         className="btn btn--s ml6"
-        id="dr-ui--feedback-LngLat-no"
+        id="dr-ui--feedback-lnglat-no"
         onClick={[Function]}
       >
         No

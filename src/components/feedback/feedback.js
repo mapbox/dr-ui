@@ -5,6 +5,7 @@ import forwardEvent from './forward-event';
 import uuidv4 from 'uuid/v4';
 import Icon from '@mapbox/mr-ui/icon';
 import * as Sentry from '@sentry/browser';
+import slugify from 'slugify';
 
 const anonymousId = uuidv4(); // creates an anonymousId fallback if user is not logged or we cant get their info
 const environment =
@@ -30,8 +31,13 @@ class Feedback extends React.Component {
     this.sendToSegment = this.sendToSegment.bind(this);
   }
 
+  // creates a unique id for an element
   createId = el => {
-    return `dr-ui--feedback-${this.props.section || 'page'}-${el}`;
+    const section = slugify(this.props.section || 'page', {
+      replacement: '-',
+      lower: true
+    });
+    return `dr-ui--feedback-${section}-${el}`;
   };
 
   // pushes the text feedback to the state as the user types
