@@ -176,12 +176,9 @@ class NavigationAccordion extends React.PureComponent {
         const textClasses = classnames('pl12 py12 txt-bold txt-m flex-child', {
           'color-black': isActive
         });
-        const activeSectionClasses = classnames(
-          'pl24-mm px0 block-mm none pr12',
-          {
-            'bg-lighten75': isActive
-          }
-        );
+        const activeSectionClasses = classnames('px12 block-mm none', {
+          'bg-lighten75': isActive
+        });
         if (!isActive) {
           icon = (
             <div className="flex-child flex-child--no-shrink">
