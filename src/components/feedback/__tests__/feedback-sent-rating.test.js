@@ -22,10 +22,11 @@ describe('Sent helpful rating - yes', () => {
     />
   );
   test('clicked yes', () => {
-    feedback.find('#dr-ui--feedback-yes').simulate('click');
+    feedback.find('#dr-ui--feedback-page-yes').simulate('click');
     expect(feedback.state()).toEqual({
       event: {
         event: 'Sent docs feedback',
+        userId: 'decorah',
         properties: {
           environment: 'staging',
           helpful: true,
@@ -67,10 +68,11 @@ describe('Sent helpful rating - no', () => {
     />
   );
   test('clicked no', () => {
-    feedback.find('#dr-ui--feedback-no').simulate('click');
+    feedback.find('#dr-ui--feedback-page-no').simulate('click');
     expect(feedback.state()).toEqual({
       event: {
         event: 'Sent docs feedback',
+        userId: 'decorah',
         properties: {
           environment: 'staging',
           helpful: false,

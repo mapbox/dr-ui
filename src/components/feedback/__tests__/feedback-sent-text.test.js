@@ -29,19 +29,20 @@ describe('Sent text feedback', () => {
     });
     // simulate typing feedback
     feedback
-      .find('#docs-feedback')
+      .find('#dr-ui--feedback-page-text')
       .at(0)
       .props()
       .onChange('cool beans!');
     // simulate submit button click
     feedback
-      .find('#docs-submit-feedback')
+      .find('#dr-ui--feedback-page-submit')
       .at(0)
       .simulate('click');
 
     expect(feedback.state()).toEqual({
       event: {
         event: 'Sent docs feedback',
+        userId: 'decorah',
         properties: {
           environment: 'staging',
           feedback: 'cool beans!',
@@ -87,7 +88,7 @@ describe('Sent text feedback', () => {
     feedbackSent: true
   });
 
-  test('basic', () => {
+  test('snapshot', () => {
     expect(toJson(feedback)).toMatchSnapshot();
   });
 });

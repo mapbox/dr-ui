@@ -30,6 +30,10 @@ class Feedback extends React.Component {
     this.sendToSegment = this.sendToSegment.bind(this);
   }
 
+  createId = el => {
+    return `dr-ui--feedback-${this.props.section || 'page'}-${el}`;
+  };
+
   // pushes the text feedback to the state as the user types
   handleText(feedback) {
     this.setState({ feedback });
@@ -47,6 +51,9 @@ class Feedback extends React.Component {
   createSegmentEvent(helpful, feedback) {
     return {
       event: 'Sent docs feedback',
+      // set user if available (needed for forward-event request)
+      userId: this.props.userName || undefined,
+      ...(!this.props.userName && { anonymousId: anonymousId }),
       properties: {
         // true, false,
         helpful: helpful,
@@ -58,7 +65,7 @@ class Feedback extends React.Component {
         section: this.props.section || undefined,
         // get page context
         page: this.props.location || undefined,
-        // set user if available
+        // set user if available (needed for mode reports)
         userId: this.props.userName || undefined,
         ...(!this.props.userName && { anonymousId: anonymousId }),
         // staging or production
@@ -123,14 +130,14 @@ class Feedback extends React.Component {
             <div>
               <div className="mb6">Was this {this.props.type} helpful?</div>
               <button
-                id="dr-ui--feedback-yes"
+                id={this.createId('yes')}
                 onClick={() => this.handleYesNo(true)}
                 className="btn btn--s"
               >
                 Yes
               </button>
               <button
-                id="dr-ui--feedback-no"
+                id={this.createId('no')}
                 onClick={() => this.handleYesNo(false)}
                 className="btn btn--s ml6"
               >
@@ -158,7 +165,7 @@ class Feedback extends React.Component {
                   , you can provide it below (optional):
                 </div>
                 <ControlTextarea
-                  id={`${this.props.section || 'docs'}-feedback`}
+                  id={this.createId('text')}
                   themeControlWrapper="bg-white mb6"
                   onChange={this.handleText}
                   value={this.state.feedback}
@@ -169,7 +176,7 @@ class Feedback extends React.Component {
                     this.state.feedback === undefined ||
                     this.state.feedback.length < 3 // disable button unless more than 3 characters are typed
                   }
-                  id={`${this.props.section || 'docs'}-submit-feedback`}
+                  id={this.createId('submit')}
                   className="btn btn--s mb18"
                   onClick={this.submitFeedback}
                 >

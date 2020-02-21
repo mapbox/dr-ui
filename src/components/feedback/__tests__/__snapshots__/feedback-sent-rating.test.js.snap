@@ -29,7 +29,7 @@ exports[`Sent helpful rating snapshot snapshot 1`] = `
         , you can provide it below (optional):
       </div>
       <ControlTextarea
-        id="docs-feedback"
+        id="dr-ui--feedback-page-text"
         noAuto={false}
         onChange={[Function]}
         optional={false}
@@ -40,6 +40,7 @@ exports[`Sent helpful rating snapshot snapshot 1`] = `
       <button
         className="btn btn--s mb18"
         disabled={true}
+        id="dr-ui--feedback-page-submit"
         onClick={[Function]}
       >
         Send feedback
