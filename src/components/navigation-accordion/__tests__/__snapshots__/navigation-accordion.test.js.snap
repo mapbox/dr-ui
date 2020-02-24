@@ -434,7 +434,7 @@ exports[`navigation-accordion Shows third level items with icons renders as expe
     className="block-mm none"
   >
     <div
-      className="pl24-mm px0 block-mm none pr12 bg-lighten75"
+      className="px12 block-mm none bg-lighten75"
     >
       <div
         className="py3 "
@@ -606,7 +606,7 @@ exports[`navigation-accordion Shows third level items with icons renders as expe
       </div>
     </div>
     <div
-      className="pl24-mm px0 block-mm none pr12"
+      className="px12 block-mm none"
     >
       <div
         className="py3  border-t border--gray-light"
