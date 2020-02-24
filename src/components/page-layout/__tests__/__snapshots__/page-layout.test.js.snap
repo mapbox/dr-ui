@@ -23,11 +23,11 @@ exports[`page-layout Basic renders as expected 1`] = `
         }
       >
         <div
-          className="pt24-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled none block-mm"
+          className="pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled none block-mm"
           id="dr-ui--page-layout-sidebar"
         >
           <div
-            className="txt-l color-blue txt-fancy mb12 block-mm none"
+            className="txt-l color-blue txt-fancy mb12 block-mm none mx24"
           >
             Some title
           </div>
@@ -72,11 +72,11 @@ exports[`page-layout Code highlighting test renders as expected 1`] = `
         }
       >
         <div
-          className="pt24-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled none block-mm"
+          className="pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled none block-mm"
           id="dr-ui--page-layout-sidebar"
         >
           <div
-            className="txt-l color-blue txt-fancy mb12 block-mm none"
+            className="txt-l color-blue txt-fancy mb12 block-mm none mx24"
           >
             Some title
           </div>
@@ -142,17 +142,13 @@ exports[`page-layout Common use case renders as expected 1`] = `
         }
       >
         <div
-          className="pt24-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled block"
+          className="pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled block"
           id="dr-ui--page-layout-sidebar"
         >
           <div
-            className="txt-l color-blue txt-fancy mb12 block-mm none"
+            className="txt-l color-blue txt-fancy mb12 block-mm none mx24"
           >
-            <div
-              className="ml36"
-            >
-              Section title
-            </div>
+            Section title
           </div>
           <div
             className="dr-ui--navigation-accordion"
@@ -161,7 +157,7 @@ exports[`page-layout Common use case renders as expected 1`] = `
               className="block-mm none"
             >
               <div
-                className="pl24-mm px0 block-mm none pr12 bg-lighten75"
+                className="px12 block-mm none bg-lighten75"
               >
                 <div
                   className="py3 "
@@ -218,7 +214,7 @@ exports[`page-layout Common use case renders as expected 1`] = `
                 </div>
               </div>
               <div
-                className="pl24-mm px0 block-mm none pr12"
+                className="px12 block-mm none"
               >
                 <div
                   className="py3  border-t border--gray-light"
@@ -354,11 +350,11 @@ exports[`page-layout Custom sidebar column size renders as expected 1`] = `
         }
       >
         <div
-          className="pt24-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled none block-mm"
+          className="pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled none block-mm"
           id="dr-ui--page-layout-sidebar"
         >
           <div
-            className="txt-l color-blue txt-fancy mb12 block-mm none"
+            className="txt-l color-blue txt-fancy mb12 block-mm none mx24"
           >
             Some title
           </div>
@@ -403,11 +399,11 @@ exports[`page-layout Custom sidebar column size, too large - default to original
         }
       >
         <div
-          className="pt24-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled none block-mm"
+          className="pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled none block-mm"
           id="dr-ui--page-layout-sidebar"
         >
           <div
-            className="txt-l color-blue txt-fancy mb12 block-mm none"
+            className="txt-l color-blue txt-fancy mb12 block-mm none mx24"
           >
             Some title
           </div>
@@ -452,11 +448,11 @@ exports[`page-layout Custom sidebar column size, too small - default to original
         }
       >
         <div
-          className="pt24-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled none block-mm"
+          className="pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled none block-mm"
           id="dr-ui--page-layout-sidebar"
         >
           <div
-            className="txt-l color-blue txt-fancy mb12 block-mm none"
+            className="txt-l color-blue txt-fancy mb12 block-mm none mx24"
           >
             Some title
           </div>
@@ -501,17 +497,13 @@ exports[`page-layout Many first level items renders as expected 1`] = `
         }
       >
         <div
-          className="pt24-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled block"
+          className="pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled block"
           id="dr-ui--page-layout-sidebar"
         >
           <div
-            className="txt-l color-blue txt-fancy mb12 block-mm none"
+            className="txt-l color-blue txt-fancy mb12 block-mm none mx24"
           >
-            <div
-              className="ml36"
-            >
-              Section title
-            </div>
+            Section title
           </div>
           <div
             className="dr-ui--navigation-accordion"
@@ -520,7 +512,7 @@ exports[`page-layout Many first level items renders as expected 1`] = `
               className="block-mm none"
             >
               <div
-                className="pl24-mm px0 block-mm none pr12 bg-lighten75"
+                className="px12 block-mm none bg-lighten75"
               >
                 <div
                   className="py3 "
@@ -577,7 +569,7 @@ exports[`page-layout Many first level items renders as expected 1`] = `
                 </div>
               </div>
               <div
-                className="pl24-mm px0 block-mm none pr12"
+                className="px12 block-mm none"
               >
                 <div
                   className="py3  border-t border--gray-light"
@@ -617,7 +609,7 @@ exports[`page-layout Many first level items renders as expected 1`] = `
                 </div>
               </div>
               <div
-                className="pl24-mm px0 block-mm none pr12"
+                className="px12 block-mm none"
               >
                 <div
                   className="py3  border-t border--gray-light"
@@ -657,7 +649,7 @@ exports[`page-layout Many first level items renders as expected 1`] = `
                 </div>
               </div>
               <div
-                className="pl24-mm px0 block-mm none pr12"
+                className="px12 block-mm none"
               >
                 <div
                   className="py3  border-t border--gray-light"
@@ -697,7 +689,7 @@ exports[`page-layout Many first level items renders as expected 1`] = `
                 </div>
               </div>
               <div
-                className="pl24-mm px0 block-mm none pr12"
+                className="px12 block-mm none"
               >
                 <div
                   className="py3  border-t border--gray-light"
@@ -737,7 +729,7 @@ exports[`page-layout Many first level items renders as expected 1`] = `
                 </div>
               </div>
               <div
-                className="pl24-mm px0 block-mm none pr12"
+                className="px12 block-mm none"
               >
                 <div
                   className="py3  border-t border--gray-light"
@@ -777,7 +769,7 @@ exports[`page-layout Many first level items renders as expected 1`] = `
                 </div>
               </div>
               <div
-                className="pl24-mm px0 block-mm none pr12"
+                className="px12 block-mm none"
               >
                 <div
                   className="py3  border-t border--gray-light"
@@ -817,7 +809,7 @@ exports[`page-layout Many first level items renders as expected 1`] = `
                 </div>
               </div>
               <div
-                className="pl24-mm px0 block-mm none pr12"
+                className="px12 block-mm none"
               >
                 <div
                   className="py3  border-t border--gray-light"
@@ -857,7 +849,7 @@ exports[`page-layout Many first level items renders as expected 1`] = `
                 </div>
               </div>
               <div
-                className="pl24-mm px0 block-mm none pr12"
+                className="px12 block-mm none"
               >
                 <div
                   className="py3  border-t border--gray-light"
@@ -897,7 +889,7 @@ exports[`page-layout Many first level items renders as expected 1`] = `
                 </div>
               </div>
               <div
-                className="pl24-mm px0 block-mm none pr12"
+                className="px12 block-mm none"
               >
                 <div
                   className="py3  border-t border--gray-light"
