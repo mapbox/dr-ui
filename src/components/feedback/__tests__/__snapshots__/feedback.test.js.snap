@@ -143,7 +143,9 @@ exports[`feedback Feedback placement renders as expected 1`] = `
               >
                 Section title
               </div>
-              <div>
+              <div
+                className="dr-ui--navigation-accordion"
+              >
                 <div
                   className="block-mm none"
                 >
