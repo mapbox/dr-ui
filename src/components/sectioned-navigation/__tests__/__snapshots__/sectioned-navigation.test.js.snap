@@ -2,6 +2,7 @@
 
 exports[`sectioned-navigation With a title, linked section headings, and counts renders as expected 1`] = `
 <div
+  className="mx24"
   data-swiftype-index="false"
 >
   <div
@@ -71,6 +72,7 @@ exports[`sectioned-navigation With a title, linked section headings, and counts 
 
 exports[`sectioned-navigation With a title, linked section headings, counts, and filter renders as expected 1`] = `
 <div
+  className="mx24"
   data-swiftype-index="false"
 >
   <div
@@ -79,7 +81,7 @@ exports[`sectioned-navigation With a title, linked section headings, counts, and
     Examples
   </div>
   <div
-    className="mb18"
+    className="mb3"
   >
     <div
       className="relative bg-white"
@@ -162,6 +164,7 @@ exports[`sectioned-navigation With a title, linked section headings, counts, and
 
 exports[`sectioned-navigation Without title, without linked section headings, without counts renders as expected 1`] = `
 <div
+  className="mx24"
   data-swiftype-index="false"
 >
   <div
@@ -222,6 +225,7 @@ exports[`sectioned-navigation Without title, without linked section headings, wi
 
 exports[`sectioned-navigation Without title, without sub items renders as expected 1`] = `
 <div
+  className="mx24"
   data-swiftype-index="false"
 >
   <a

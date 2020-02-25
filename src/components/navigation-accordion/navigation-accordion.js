@@ -137,12 +137,24 @@ class NavigationAccordion extends React.PureComponent {
             const isActive = state.activeh3 === subItem.path;
             if (isActive) openSubItems = true;
             return (
-              <li key={subItem.path} className="mt6">
+              <li
+                key={subItem.path}
+                className="mt6"
+                style={
+                  subItem.icon && { textIndent: '-24px', marginLeft: '11px' }
+                }
+              >
                 <a
                   href={`#${subItem.path}`}
                   id={`#${subItem.path}-sidebar`}
                   className={itemClasses(isActive)}
                 >
+                  {subItem.icon && (
+                    <span className="mr6 w18 h18 align-middle inline-block bg-gray-faint round-full">
+                      <Icon size={16} name={subItem.icon} />
+                    </span>
+                  )}
+
                   {subItem.title}
                   {subItem.tag ? this.buildTag(subItem) : ''}
                 </a>
@@ -176,12 +188,9 @@ class NavigationAccordion extends React.PureComponent {
         const textClasses = classnames('pl12 py12 txt-bold txt-m flex-child', {
           'color-black': isActive
         });
-        const activeSectionClasses = classnames(
-          'pl24-mm px0 block-mm none pr12',
-          {
-            'bg-lighten75': isActive
-          }
-        );
+        const activeSectionClasses = classnames('px12 block-mm none', {
+          'bg-lighten75': isActive
+        });
         if (!isActive) {
           icon = (
             <div className="flex-child flex-child--no-shrink">
@@ -224,7 +233,7 @@ class NavigationAccordion extends React.PureComponent {
       }
     );
     return (
-      <div>
+      <div className="dr-ui--navigation-accordion">
         <div className="block-mm none">{firstLevelContent}</div>
         <div className="none-mm block bg-gray-faint px24 py24">
           <NavigationDropdown
@@ -288,6 +297,7 @@ NavigationAccordion.propTypes = {
         thirdLevelItems: PropTypes.arrayOf(
           PropTypes.shape({
             title: PropTypes.string.isRequired,
+            icon: PropTypes.string,
             tag: PropTypes.oneOf([
               'legacy',
               'beta',
