@@ -25,10 +25,6 @@ class Feedback extends React.Component {
       feedbackSent: undefined,
       event: undefined
     };
-    this.handleText = this.handleText.bind(this);
-    this.handleYesNo = this.handleYesNo.bind(this);
-    this.handleSubmitFeedback = this.handleSubmitFeedback.bind(this);
-    this.sendToSegment = this.sendToSegment.bind(this);
   }
 
   // creates a unique id for an element
@@ -41,12 +37,12 @@ class Feedback extends React.Component {
   };
 
   // pushes the text feedback to the state as the user types
-  handleText(feedback) {
+  handleText = feedback => {
     this.setState({ feedback });
-  }
+  };
 
   // handles when user clicks YES or NO button
-  handleYesNo(helpful) {
+  handleYesNo = helpful => {
     // sets user rating to the state
     this.setState({ helpful }, () => {
       // creates event to send to Segment and sets it to the state
@@ -55,10 +51,10 @@ class Feedback extends React.Component {
         this.sendToSegment();
       });
     });
-  }
+  };
 
   // handles sending feedback to Sentry (and Segment) when the user clicks SUBMIT FEEDBACK button
-  handleSubmitFeedback() {
+  handleSubmitFeedback = () => {
     // sets event to the state and marks feedbackSent as true
     this.setState(
       { feedbackSent: true, event: this.createSegmentEvent() },
@@ -71,10 +67,10 @@ class Feedback extends React.Component {
         }
       }
     );
-  }
+  };
 
   // create event object to sent to Segment
-  createSegmentEvent() {
+  createSegmentEvent = () => {
     return {
       event: 'Sent docs feedback',
       // set user if available (needed for forward-event request)
@@ -108,20 +104,20 @@ class Feedback extends React.Component {
         }
       }
     };
-  }
+  };
 
   // sends event to Segment
-  sendToSegment() {
+  sendToSegment = () => {
     // sends event to Segment via forward event webhook
     forwardEvent(this.state.event, this.props.webhook, err => {
       if (err) {
         console.log(err); // eslint-disable-line
       }
     });
-  }
+  };
 
   // sends text feedback to Sentry
-  sendToSentry() {
+  sendToSentry = () => {
     Sentry.init({
       dsn: this.props.feedbackSentryDsn,
       environment
@@ -135,7 +131,7 @@ class Feedback extends React.Component {
       scope.setLevel('info'); // sets the message as "info" (rather than warning)
     });
     Sentry.captureMessage(this.state.feedback); // capture the feedback as a message
-  }
+  };
 
   render() {
     return (
