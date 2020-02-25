@@ -110,14 +110,12 @@ class Feedback extends React.Component {
   sendToSegment = () => {
     // sends event to Segment via forward event webhook
     forwardEvent(this.state.event, this.props.webhook, err => {
-      if (err) {
-        console.log(err); // eslint-disable-line
-      }
+      if (err) this.sendToSentry('error', err);
     });
   };
 
   // sends text feedback to Sentry
-  sendToSentry = () => {
+  sendToSentry = (level, error) => {
     Sentry.init({
       dsn: this.props.feedbackSentryDsn,
       environment
@@ -128,7 +126,8 @@ class Feedback extends React.Component {
       if (this.props.section) scope.setTag('section', this.props.section); // section of the page (if available)
       if (this.props.preferredLanguage)
         scope.setTag('preferredLanguage', this.props.preferredLanguage); // user's preferred language (if available)
-      scope.setLevel('info'); // sets the message as "info" (rather than warning)
+      scope.setLevel(level || 'info'); // sets the message as "info" by default
+      if (error) Sentry.setExtra('error', error); // send error message (if available)
     });
     Sentry.captureMessage(this.state.feedback); // capture the feedback as a message
   };
