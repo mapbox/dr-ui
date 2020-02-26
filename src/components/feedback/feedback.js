@@ -73,24 +73,25 @@ class Feedback extends React.Component {
   createSegmentEvent = () => {
     return {
       event: 'Sent docs feedback',
-      // set user if available (needed for forward-event request)
-      ...(this.props.user && this.props.user && { userId: this.props.user.id }),
-      ...(!this.props.user && { anonymousId: anonymousId }),
+      // set user if available else set anonymousId (needed for forward-event request)
+      ...(this.props.user && this.props.user.id
+        ? { userId: this.props.user.id }
+        : { anonymousId: anonymousId }),
       properties: {
         // true, false
         helpful: this.state.helpful,
         // text feedback, if available
         ...(this.state.feedback && { feedback: this.state.feedback }),
-        // name of current site, important for filtering in Mode
+        // name of current site (important for filtering in Mode)
         site: this.props.site,
         // (optional) name of section for longer pagers, helpful for fitering in Mode and identifying section areas
         section: this.props.section || undefined,
         // get page context
         page: this.props.location || undefined,
-        // set user, if available (needed for mode reports)
-        ...(this.props.user &&
-          this.props.user && { userId: this.props.user.id }),
-        // set anonymousId, if userId is unavailable
+        // set user if available else set anonymousId (needed for Mode)
+        ...(this.props.user && this.props.user.id
+          ? { userId: this.props.user.id }
+          : { anonymousId: anonymousId }),
         ...(!this.props.user && { anonymousId: anonymousId }),
         // set plan, if available
         ...(this.props.user &&
@@ -138,7 +139,7 @@ class Feedback extends React.Component {
       if (this.props.preferredLanguage)
         scope.setTag('preferredLanguage', this.props.preferredLanguage);
       // set tags for the user's plan (if available)
-      if (this.props.user.plan && this.props.user.plan.id)
+      if (this.props.user && this.props.user.plan && this.props.user.plan.id)
         scope.setTag('plan', this.props.user.plan.id);
       // set user attributes (if available)
       if (this.props.user) {
