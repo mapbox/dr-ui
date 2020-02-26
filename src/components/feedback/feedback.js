@@ -191,7 +191,7 @@ class Feedback extends React.Component {
                   <div
                     id={this.createId('counter')}
                     className={classnames(
-                      'absolute bottom right mb6 mr18 txt-mono',
+                      'absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s',
                       {
                         'color-red': feedbackOverLimit
                       }
@@ -200,27 +200,29 @@ class Feedback extends React.Component {
                     {feedbackLength}
                   </div>
                 </div>
-                <button
-                  id={this.createId('submit')}
-                  disabled={
-                    this.state.feedback === undefined ||
-                    this.state.feedback.length < 3 || // disable button unless more than 3 characters are typed
-                    feedbackOverLimit
-                  }
-                  className="btn btn--s mb18 inline-block"
-                  onClick={this.handleSubmitFeedback}
-                >
-                  Send feedback
-                </button>
-                {feedbackOverLimit && (
-                  <span
-                    id={this.createId('overlimit')}
-                    className="ml12 color-red txt-s bg-red-faint round inline-block py3 px12"
+                <div className="mb12">
+                  <button
+                    id={this.createId('submit')}
+                    disabled={
+                      this.state.feedback === undefined ||
+                      this.state.feedback.length < 3 || // disable button unless more than 3 characters are typed
+                      feedbackOverLimit
+                    }
+                    className="btn btn--s mb6 mr12 inline-block"
+                    onClick={this.handleSubmitFeedback}
                   >
-                    <Icon name="alert" inline={true} /> Your message is over the{' '}
-                    {feedbackLimit} character limit.
-                  </span>
-                )}
+                    Send feedback
+                  </button>
+                  {feedbackOverLimit && (
+                    <span
+                      id={this.createId('overlimit')}
+                      className="color-red txt-s bg-red-faint round inline-block py3 px12"
+                    >
+                      <Icon name="alert" inline={true} /> Your message is over
+                      the {feedbackLimit} character limit.
+                    </span>
+                  )}
+                </div>
 
                 <div className="txt-s txt-em">
                   This form is for documentation feedback. If you have a

@@ -86,20 +86,24 @@ exports[`Feedback character limit Character limit ok, user can submit feedback 1
             </ControlWrapper>
           </ControlTextarea>
           <div
-            className="absolute bottom right mb6 mr18 txt-mono"
+            className="absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s"
             id="dr-ui--feedback-page-counter"
           >
             974
           </div>
         </div>
-        <button
-          className="btn btn--s mb18 inline-block"
-          disabled={false}
-          id="dr-ui--feedback-page-submit"
-          onClick={[Function]}
+        <div
+          className="mb12"
         >
-          Send feedback
-        </button>
+          <button
+            className="btn btn--s mb6 mr12 inline-block"
+            disabled={false}
+            id="dr-ui--feedback-page-submit"
+            onClick={[Function]}
+          >
+            Send feedback
+          </button>
+        </div>
         <div
           className="txt-s txt-em"
         >
@@ -205,52 +209,55 @@ exports[`Feedback character limit Character limit too long, user cannot submit f
             </ControlWrapper>
           </ControlTextarea>
           <div
-            className="absolute bottom right mb6 mr18 txt-mono color-red"
+            className="absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s color-red"
             id="dr-ui--feedback-page-counter"
           >
             -340
           </div>
         </div>
-        <button
-          className="btn btn--s mb18 inline-block"
-          disabled={true}
-          id="dr-ui--feedback-page-submit"
-          onClick={[Function]}
+        <div
+          className="mb12"
         >
-          Send feedback
-        </button>
-        <span
-          className="ml12 color-red txt-s bg-red-faint round inline-block py3 px12"
-          id="dr-ui--feedback-page-overlimit"
-        >
-          <Icon
-            inline={true}
-            name="alert"
-            passthroughProps={Object {}}
-            size={18}
+          <button
+            className="btn btn--s mb6 mr12 inline-block"
+            disabled={true}
+            id="dr-ui--feedback-page-submit"
+            onClick={[Function]}
           >
-            <svg
-              className="events-none icon inline-block align-t"
-              focusable="false"
-              role="presentation"
-              style={
-                Object {
-                  "height": 18,
-                  "width": 18,
-                }
-              }
+            Send feedback
+          </button>
+          <span
+            className="color-red txt-s bg-red-faint round inline-block py3 px12"
+            id="dr-ui--feedback-page-overlimit"
+          >
+            <Icon
+              inline={true}
+              name="alert"
+              passthroughProps={Object {}}
+              size={18}
             >
-              <use
-                xlinkHref="#icon-alert"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-              />
-            </svg>
-          </Icon>
-           Your message is over the
-           
-          1000
-           character limit.
-        </span>
+              <svg
+                className="events-none icon inline-block align-t"
+                focusable="false"
+                role="presentation"
+                style={
+                  Object {
+                    "height": 18,
+                    "width": 18,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="#icon-alert"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                />
+              </svg>
+            </Icon>
+             Your message is over the 
+            1000
+             character limit.
+          </span>
+        </div>
         <div
           className="txt-s txt-em"
         >
@@ -311,20 +318,24 @@ exports[`Sent helpful rating snapshot snapshot 1`] = `
           value=""
         />
         <div
-          className="absolute bottom right mb6 mr18 txt-mono"
+          className="absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s"
           id="dr-ui--feedback-page-counter"
         >
           1000
         </div>
       </div>
-      <button
-        className="btn btn--s mb18 inline-block"
-        disabled={true}
-        id="dr-ui--feedback-page-submit"
-        onClick={[Function]}
+      <div
+        className="mb12"
       >
-        Send feedback
-      </button>
+        <button
+          className="btn btn--s mb6 mr12 inline-block"
+          disabled={true}
+          id="dr-ui--feedback-page-submit"
+          onClick={[Function]}
+        >
+          Send feedback
+        </button>
+      </div>
       <div
         className="txt-s txt-em"
       >
