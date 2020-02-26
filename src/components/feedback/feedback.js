@@ -74,8 +74,9 @@ class Feedback extends React.Component {
     return {
       event: 'Sent docs feedback',
       // set user if available (needed for forward-event request)
-      userId: this.props.user.id || undefined,
-      ...(!this.props.user.id && { anonymousId: anonymousId }),
+      ...(this.props.user && this.props.user && { userId: this.props.user.id }),
+      ...(!this.props.user &&
+        !this.props.user.id && { anonymousId: anonymousId }),
       properties: {
         // true, false
         helpful: this.state.helpful,
@@ -91,7 +92,8 @@ class Feedback extends React.Component {
         ...(this.props.user &&
           this.props.user && { userId: this.props.user.id }),
         // set anonymousId, if userId is unavailable
-        ...(!this.props.user && { anonymousId: anonymousId }),
+        ...(!this.props.user &&
+          !this.props.user.id && { anonymousId: anonymousId }),
         // set plan, if available
         ...(this.props.user &&
           this.props.user.plan && { planId: this.props.user.plan.id }),
