@@ -14,7 +14,13 @@ describe('Sent helpful rating - yes', () => {
         pathname: '/mapbox-gl-js/api/',
         hash: '#lnglat'
       }}
-      userName="decorah"
+      user={{
+        id: 'decorah',
+        email: 'decorah@mapbox.com',
+        plan: {
+          id: 'staff'
+        }
+      }}
       webhook={{
         production: '',
         staging: ''
@@ -40,6 +46,7 @@ describe('Sent helpful rating - yes', () => {
             search: ''
           },
           page: { hash: '#lnglat', pathname: '/mapbox-gl-js/api/' },
+          planId: 'staff',
           section: undefined,
           site: 'dr-ui',
           userId: 'decorah'
@@ -60,7 +67,13 @@ describe('Sent helpful rating - no', () => {
         pathname: '/mapbox-gl-js/api/',
         hash: '#lnglat'
       }}
-      userName="decorah"
+      user={{
+        id: 'decorah',
+        email: 'decorah@mapbox.com',
+        plan: {
+          id: 'staff'
+        }
+      }}
       webhook={{
         production: '',
         staging: ''
@@ -86,6 +99,7 @@ describe('Sent helpful rating - no', () => {
             search: ''
           },
           page: { hash: '#lnglat', pathname: '/mapbox-gl-js/api/' },
+          planId: 'staff',
           section: undefined,
           site: 'dr-ui',
           userId: 'decorah'

@@ -14,7 +14,13 @@ describe('Sent text feedback', () => {
         pathname: '/mapbox-gl-js/api/',
         hash: '#lnglat'
       }}
-      userName="decorah"
+      user={{
+        id: 'decorah',
+        email: 'decorah@mapbox.com',
+        plan: {
+          id: 'staff'
+        }
+      }}
       webhook={{
         production: '',
         staging: ''
@@ -60,6 +66,7 @@ describe('Sent text feedback', () => {
             hash: '#lnglat',
             pathname: '/mapbox-gl-js/api/'
           },
+          planId: 'staff',
           section: undefined,
           site: 'dr-ui',
           userId: 'decorah'
