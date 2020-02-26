@@ -337,23 +337,22 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
             }
           >
             <div
-              className="pt24-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled block"
+              className="pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled block"
+              id="dr-ui--page-layout-sidebar"
             >
               <div
-                className="txt-l color-blue txt-fancy mb12 block-mm none"
+                className="txt-l color-blue txt-fancy mb12 block-mm none mx24"
               >
-                <div
-                  className="ml36"
-                >
-                  Section title
-                </div>
+                Section title
               </div>
-              <div>
+              <div
+                className="dr-ui--navigation-accordion"
+              >
                 <div
                   className="block-mm none"
                 >
                   <div
-                    className="pl24-mm px0 block-mm none pr12 bg-lighten75"
+                    className="px12 block-mm none bg-lighten75"
                   >
                     <div
                       className="py3 "
@@ -381,6 +380,7 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
                             <a
                               className="color-blue-on-hover"
                               href="#heading-one"
+                              id="#heading-one-sidebar"
                             >
                               Heading one
                               
@@ -395,6 +395,7 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
                             <a
                               className="color-blue-on-hover"
                               href="#heading-two"
+                              id="#heading-two-sidebar"
                             >
                               Heading two
                               
@@ -408,7 +409,7 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
                     </div>
                   </div>
                   <div
-                    className="pl24-mm px0 block-mm none pr12"
+                    className="px12 block-mm none"
                   >
                     <div
                       className="py3  border-t border--gray-light"

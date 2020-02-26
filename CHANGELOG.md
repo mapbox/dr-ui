@@ -1,5 +1,14 @@
 # Changelog
 
+## Master
+
+* Add feature to scroll to active item in `SectionedNavigation` onload. [#249](https://github.com/mapbox/dr-ui/pull/249)
+* Add feature to scroll to active item in `NavigationAccordion` onload. [#247](https://github.com/mapbox/dr-ui/pull/247)
+* Improve text alignment of sidebar including `NavigationAccordion`, `SectionedNavigation`, and `PageLayout` `sidebarTitle`. [#254](https://github.com/mapbox/dr-ui/pull/254)
+  - 🚨Check the `sidebarTitle` value of `PageLayout`, you should not need additional margin or padding classes. The sidebar text should line up with the `PageLayout` title text.
+* Add `icon` option for third level items in `NavigationAccordion`. [#252](https://github.com/mapbox/dr-ui/pull/252)
+* Add Sentry to `Feedback` to catch failed forward-event events. [#256](https://github.com/mapbox/dr-ui/pull/256)
+
 ## 0.26.0
 
 * Updates to `RelatedPage` component:

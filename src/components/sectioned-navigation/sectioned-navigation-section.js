@@ -1,7 +1,36 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 
 class SectionedNavigationSection extends React.Component {
+  constructor(props) {
+    super(props);
+    this.activeSidebar = React.createRef();
+  }
+
+  componentDidMount() {
+    this.scrollToActiveSidebar();
+  }
+
+  scrollToActiveSidebar() {
+    const sideBar = document.getElementById('dr-ui--page-layout-sidebar');
+    if (!sideBar) return;
+    if (window && window.location.hash) {
+      // find the heading item in the scrollbar
+      let heading = document.getElementById(
+        `${window.location.hash.replace('#', '')}-sidebar`
+      );
+      // if the heading exists and offsetTop > 0; scroll to that item in the sidebar
+      if (heading && heading.offsetTop > 0) {
+        sideBar.scrollTop = heading.offsetTop;
+        return;
+      }
+    }
+    if (this.activeSidebar.current) {
+      sideBar.scrollTop = this.activeSidebar.current.offsetTop;
+    }
+  }
+
   renderHeading() {
     const { props } = this;
 
@@ -10,13 +39,15 @@ class SectionedNavigationSection extends React.Component {
       text += ` (${props.items.length})`;
     }
 
-    const classes = `block txt-bold color-gray ${
-      props.hideSubItems ? 'py6' : 'py12'
-    }`;
+    const classes = classnames('block txt-bold color-gray', {
+      py6: props.hideSubItems,
+      py12: !props.hideSubItems,
+      'color-blue-on-hover': props.url
+    });
 
     if (props.url) {
       return (
-        <a href={props.url} className={`${classes} color-blue-on-hover`}>
+        <a id={`${props.id}-sidebar`} href={props.url} className={classes}>
           {text}
         </a>
       );
@@ -34,23 +65,24 @@ class SectionedNavigationSection extends React.Component {
         <a
           key={item.url}
           href={item.url}
-          className={`color-blue-on-hover block mb6${
-            item.active === true ? ' txt-bold' : ''
-          }`}
+          ref={item.active ? this.activeSidebar : undefined}
+          className={classnames('color-blue-on-hover block mb6', {
+            'txt-bold': item.active
+          })}
         >
           {item.text}
         </a>
       );
     });
-    return <div>{items}</div>;
+    return <React.Fragment>{items}</React.Fragment>;
   }
 
   render() {
     return (
-      <div>
+      <React.Fragment>
         {this.renderHeading()}
         {this.renderItems()}
-      </div>
+      </React.Fragment>
     );
   }
 }
@@ -58,6 +90,7 @@ class SectionedNavigationSection extends React.Component {
 SectionedNavigationSection.propTypes = {
   title: PropTypes.string.isRequired,
   url: PropTypes.string,
+  id: PropTypes.string,
   items: PropTypes.arrayOf(
     PropTypes.shape({
       text: PropTypes.string.isRequired,

@@ -55,7 +55,7 @@ exports[`Feedback character limit Character limit ok, user can submit feedback 1
           className="relative"
         >
           <ControlTextarea
-            id="docs-feedback"
+            id="dr-ui--feedback-page-text"
             noAuto={false}
             onChange={[Function]}
             optional={false}
@@ -64,7 +64,7 @@ exports[`Feedback character limit Character limit ok, user can submit feedback 1
             value="Lorem ipsum dolor sit amet"
           >
             <ControlWrapper
-              id="docs-feedback"
+              id="dr-ui--feedback-page-text"
               themeControlWrapper="bg-white mb6"
             >
               <div
@@ -73,9 +73,9 @@ exports[`Feedback character limit Character limit ok, user can submit feedback 1
                 <textarea
                   aria-required={true}
                   className="textarea hmin120"
-                  data-test="docs-feedback-textarea"
-                  id="docs-feedback"
-                  name="docs-feedback"
+                  data-test="dr-ui--feedback-page-text-textarea"
+                  id="dr-ui--feedback-page-text"
+                  name="dr-ui--feedback-page-text"
                   onChange={[Function]}
                   value="Lorem ipsum dolor sit amet"
                 />
@@ -87,7 +87,7 @@ exports[`Feedback character limit Character limit ok, user can submit feedback 1
           </ControlTextarea>
           <div
             className="absolute bottom right mb6 mr18 txt-mono"
-            id="dr-ui--feedback-char-counter"
+            id="dr-ui--feedback-page-counter"
           >
             974
           </div>
@@ -95,7 +95,7 @@ exports[`Feedback character limit Character limit ok, user can submit feedback 1
         <button
           className="btn btn--s mb18 inline-block"
           disabled={false}
-          id="dr-ui--feedback-submit-button"
+          id="dr-ui--feedback-page-submit"
           onClick={[Function]}
         >
           Send feedback
@@ -174,7 +174,7 @@ exports[`Feedback character limit Character limit too long, user cannot submit f
           className="relative"
         >
           <ControlTextarea
-            id="docs-feedback"
+            id="dr-ui--feedback-page-text"
             noAuto={false}
             onChange={[Function]}
             optional={false}
@@ -183,7 +183,7 @@ exports[`Feedback character limit Character limit too long, user cannot submit f
             value="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
           >
             <ControlWrapper
-              id="docs-feedback"
+              id="dr-ui--feedback-page-text"
               themeControlWrapper="bg-white mb6"
             >
               <div
@@ -192,9 +192,9 @@ exports[`Feedback character limit Character limit too long, user cannot submit f
                 <textarea
                   aria-required={true}
                   className="textarea hmin120"
-                  data-test="docs-feedback-textarea"
-                  id="docs-feedback"
-                  name="docs-feedback"
+                  data-test="dr-ui--feedback-page-text-textarea"
+                  id="dr-ui--feedback-page-text"
+                  name="dr-ui--feedback-page-text"
                   onChange={[Function]}
                   value="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 />
@@ -206,7 +206,7 @@ exports[`Feedback character limit Character limit too long, user cannot submit f
           </ControlTextarea>
           <div
             className="absolute bottom right mb6 mr18 txt-mono color-red"
-            id="dr-ui--feedback-char-counter"
+            id="dr-ui--feedback-page-counter"
           >
             -340
           </div>
@@ -214,14 +214,14 @@ exports[`Feedback character limit Character limit too long, user cannot submit f
         <button
           className="btn btn--s mb18 inline-block"
           disabled={true}
-          id="dr-ui--feedback-submit-button"
+          id="dr-ui--feedback-page-submit"
           onClick={[Function]}
         >
           Send feedback
         </button>
         <span
           className="ml12 color-red txt-s bg-red-faint round inline-block py3 px12"
-          id="dr-ui--feedback-overlimit"
+          id="dr-ui--feedback-page-overlimit"
         >
           <Icon
             inline={true}
@@ -270,7 +270,7 @@ exports[`Feedback character limit Character limit too long, user cannot submit f
 </Feedback>
 `;
 
-exports[`Sent helpful rating basic 1`] = `
+exports[`Sent helpful rating snapshot snapshot 1`] = `
 <div
   className="bg-gray-faint py12 px18 round color-gray"
 >
@@ -302,7 +302,7 @@ exports[`Sent helpful rating basic 1`] = `
         className="relative"
       >
         <ControlTextarea
-          id="docs-feedback"
+          id="dr-ui--feedback-page-text"
           noAuto={false}
           onChange={[Function]}
           optional={false}
@@ -312,7 +312,7 @@ exports[`Sent helpful rating basic 1`] = `
         />
         <div
           className="absolute bottom right mb6 mr18 txt-mono"
-          id="dr-ui--feedback-char-counter"
+          id="dr-ui--feedback-page-counter"
         >
           1000
         </div>
@@ -320,7 +320,7 @@ exports[`Sent helpful rating basic 1`] = `
       <button
         className="btn btn--s mb18 inline-block"
         disabled={true}
-        id="dr-ui--feedback-submit-button"
+        id="dr-ui--feedback-page-submit"
         onClick={[Function]}
       >
         Send feedback

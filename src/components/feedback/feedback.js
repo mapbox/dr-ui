@@ -6,6 +6,7 @@ import uuidv4 from 'uuid/v4';
 import Icon from '@mapbox/mr-ui/icon';
 import * as Sentry from '@sentry/browser';
 import classnames from 'classnames';
+import slugify from 'slugify';
 
 const feedbackLimit = 1000; // character limit for the feedback textarea
 const anonymousId = uuidv4(); // creates an anonymousId fallback if user is not logged or we cant get their info
@@ -15,6 +16,7 @@ const environment =
       ? 'production'
       : 'staging'
     : undefined;
+const location = typeof window !== 'undefined' ? window.location : undefined;
 
 class Feedback extends React.Component {
   constructor(props) {
@@ -22,78 +24,116 @@ class Feedback extends React.Component {
     this.state = {
       helpful: undefined,
       feedback: undefined,
-      feedbackSent: undefined
+      feedbackSent: undefined,
+      event: undefined
     };
-    this.handleText = this.handleText.bind(this);
-    this.handleYesNo = this.handleYesNo.bind(this);
-    this.submitFeedback = this.submitFeedback.bind(this);
-    this.sendToSegment = this.sendToSegment.bind(this);
   }
+
+  // creates a unique id for an element
+  createId = el => {
+    const section = slugify(this.props.section || 'page', {
+      replacement: '-',
+      lower: true
+    });
+    return `dr-ui--feedback-${section}-${el}`;
+  };
 
   // pushes the text feedback to the state as the user types
-  handleText(feedback) {
+  handleText = feedback => {
     this.setState({ feedback });
-  }
-  // when user clicks YES or NO, the value is pushed to the state and then sent to segment
-  handleYesNo(helpful) {
-    this.setState({ helpful }, () => {
-      // track helpful rating
-      this.sendToSegment();
-    });
-  }
-  // when user click submit feedback button, the value is pushed to the state and then sent to segment
-  submitFeedback() {
-    // initialize docs-feedback sentry project if enabled
-    if (this.props.feedbackSentryDsn !== false) {
-      Sentry.init({
-        dsn: this.props.feedbackSentryDsn,
-        maxValueLength: feedbackLimit,
-        environment
-      });
-      Sentry.configureScope(scope => {
-        scope.setTag('site', this.props.site); // site name
-        scope.setTag('helpful', this.state.helpful); // the user's boolean rating
-        if (this.props.section) scope.setTag('section', this.props.section); // section of the page (if available)
-        if (this.props.preferredLanguage)
-          scope.setTag('preferredLanguage', this.props.preferredLanguage); // user's preferred language (if available)
-        scope.setLevel('info'); // sets the message as "info" (rather than warning)
-      });
-      Sentry.captureMessage(this.state.feedback); // capture the feedback as a message
-    }
-    this.setState({ feedbackSent: true }, () => {
-      // Track response to Segement
-      this.sendToSegment();
-    });
-  }
+  };
 
-  // sends all available data to segment
-  sendToSegment() {
-    const location =
-      typeof window !== 'undefined' ? window.location : undefined;
-    const event = {
+  // handles when user clicks YES or NO button
+  handleYesNo = helpful => {
+    // sets user rating to the state
+    this.setState({ helpful }, () => {
+      // creates event to send to Segment and sets it to the state
+      this.setState({ event: this.createSegmentEvent() }, () => {
+        // sends helpful rating to Segment
+        this.sendToSegment();
+      });
+    });
+  };
+
+  // handles sending feedback to Sentry (and Segment) when the user clicks SUBMIT FEEDBACK button
+  handleSubmitFeedback = () => {
+    // sets event to the state and marks feedbackSent as true
+    this.setState(
+      { feedbackSent: true, event: this.createSegmentEvent() },
+      () => {
+        // sends event to Segment
+        this.sendToSegment();
+        // if enabled, sends feedback to Sentry
+        if (this.props.feedbackSentryDsn !== false) {
+          this.sendToSentry();
+        }
+      }
+    );
+  };
+
+  // create event object to sent to Segment
+  createSegmentEvent = () => {
+    return {
       event: 'Sent docs feedback',
+      // set user if available (needed for forward-event request)
+      userId: this.props.userName || undefined,
+      ...(!this.props.userName && { anonymousId: anonymousId }),
       properties: {
-        helpful: this.state.helpful, // true, false
-        site: this.props.site, // name of current site, helpful for filtering in Mode
-        section: this.props.section || undefined, // (optional) name of section for longer pagers, helpful for fitering in Mode and identifying section areas
-        feedback: this.state.feedback, // (optional) textarea feedback
-        page: this.props.location || undefined, // get page context
-        userId: this.props.userName || undefined, // set user if available
-        environment, // staging or production
-        location // pull full window.location
+        // true, false,
+        helpful: this.state.helpful,
+        // text feedback
+        ...(this.state.feedback && { feedback: this.state.feedback }),
+        // name of current site, helpful for filtering in Mode
+        site: this.props.site,
+        // (optional) name of section for longer pagers, helpful for fitering in Mode and identifying section areas
+        section: this.props.section || undefined,
+        // get page context
+        page: this.props.location || undefined,
+        // set user if available (needed for mode reports)
+        userId: this.props.userName || undefined,
+        ...(!this.props.userName && { anonymousId: anonymousId }),
+        // staging or production
+        environment,
+        // pull window.location
+        location: {
+          hash: location.hash,
+          host: location.host,
+          hostname: location.hostname,
+          href: location.href,
+          origin: location.origin,
+          pathname: location.pathname,
+          search: location.search
+        }
       }
     };
-    // if user is logged in then associate feedback with them
-    // otherwise use the a random/anonymousId
-    if (this.props.userName) event.userId = this.props.userName;
-    else event.anonymousId = anonymousId;
-    // sends event to segment via forward event webhook
-    forwardEvent(event, this.props.webhook, err => {
-      if (err) {
-        console.log(err); // eslint-disable-line
-      }
+  };
+
+  // sends event to Segment
+  sendToSegment = () => {
+    // sends event to Segment via forward event webhook
+    forwardEvent(this.state.event, this.props.webhook, err => {
+      if (err) this.sendToSentry('error', err);
     });
-  }
+  };
+
+  // sends text feedback to Sentry
+  sendToSentry = (level, error) => {
+    Sentry.init({
+      dsn: this.props.feedbackSentryDsn,
+      maxValueLength: feedbackLimit,
+      environment
+    });
+    Sentry.configureScope(scope => {
+      scope.setTag('site', this.props.site); // site name
+      scope.setTag('helpful', this.state.helpful); // the user's boolean rating
+      if (this.props.section) scope.setTag('section', this.props.section); // section of the page (if available)
+      if (this.props.preferredLanguage)
+        scope.setTag('preferredLanguage', this.props.preferredLanguage); // user's preferred language (if available)
+      scope.setLevel(level || 'info'); // sets the message as "info" by default
+      if (error) Sentry.setExtra('error', error); // send error message (if available)
+    });
+    Sentry.captureMessage(this.state.feedback); // capture the feedback as a message
+  };
 
   render() {
     const feedbackLength = this.state.feedback
@@ -107,12 +147,14 @@ class Feedback extends React.Component {
             <div>
               <div className="mb6">Was this {this.props.type} helpful?</div>
               <button
+                id={this.createId('yes')}
                 onClick={() => this.handleYesNo(true)}
                 className="btn btn--s"
               >
                 Yes
               </button>
               <button
+                id={this.createId('no')}
                 onClick={() => this.handleYesNo(false)}
                 className="btn btn--s ml6"
               >
@@ -141,13 +183,13 @@ class Feedback extends React.Component {
                 </div>
                 <div className="relative">
                   <ControlTextarea
-                    id={`${this.props.section || 'docs'}-feedback`}
+                    id={this.createId('text')}
                     themeControlWrapper="bg-white mb6"
                     onChange={this.handleText}
                     value={this.state.feedback}
                   />
                   <div
-                    id="dr-ui--feedback-char-counter"
+                    id={this.createId('counter')}
                     className={classnames(
                       'absolute bottom right mb6 mr18 txt-mono',
                       {
@@ -159,22 +201,20 @@ class Feedback extends React.Component {
                   </div>
                 </div>
                 <button
-                  id={`dr-ui--feedback-submit-button${
-                    this.props.section ? `-${this.props.section}` : ''
-                  }`}
+                  id={this.createId('submit')}
                   disabled={
                     this.state.feedback === undefined ||
                     this.state.feedback.length < 3 || // disable button unless more than 3 characters are typed
                     feedbackOverLimit
                   }
                   className="btn btn--s mb18 inline-block"
-                  onClick={this.submitFeedback}
+                  onClick={this.handleSubmitFeedback}
                 >
                   Send feedback
                 </button>
                 {feedbackOverLimit && (
                   <span
-                    id="dr-ui--feedback-overlimit"
+                    id={this.createId('overlimit')}
                     className="ml12 color-red txt-s bg-red-faint round inline-block py3 px12"
                   >
                     <Icon name="alert" inline={true} /> Your message is over the{' '}

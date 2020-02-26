@@ -88,7 +88,7 @@ testCases.withLayout = {
       </TopbarSticker>
       <div className="limiter">
         <PageLayout
-          sidebarTitle={<div className="ml36">Section title</div>}
+          sidebarTitle="Section title"
           sidebarContent={
             <NavigationAccordion
               currentPath="page-one"
