@@ -10,7 +10,7 @@ const testCases = {};
 
 testCases.basic = {
   component: Feedback,
-  description: 'Basic',
+  description: 'Basic (sends user information as `decorah`)',
   props: {
     site: 'dr-ui',
     webhook: {
@@ -37,7 +37,7 @@ testCases.basic = {
 
 testCases.type = {
   component: Feedback,
-  description: 'Change type',
+  description: 'Change type (sends anonymous user information)',
   props: {
     type: 'section',
     site: 'dr-ui',
@@ -53,7 +53,8 @@ testCases.type = {
 
 testCases.noSentry = {
   component: Feedback,
-  description: 'Does not send text feedback to Sentry',
+  description:
+    'Does not send text feedback to Sentry (sends anonymous user information)',
   props: {
     site: 'dr-ui',
     webhook: {
@@ -73,7 +74,7 @@ testCases.noSentry = {
 };
 
 testCases.common = {
-  description: 'Feedback placement',
+  description: 'Feedback placement (sends anonymous user information)',
   element: (
     <div>
       <TopbarSticker>
