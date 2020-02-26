@@ -85,12 +85,18 @@ exports[`Feedback character limit Character limit ok, user can submit feedback 1
               </div>
             </ControlWrapper>
           </ControlTextarea>
-          <div
-            className="absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s"
-            id="dr-ui--feedback-page-counter"
+          <FeedbackCounter
+            createId={[Function]}
+            feedbackLength={974}
+            feedbackOverLimit={false}
           >
-            974
-          </div>
+            <div
+              className="absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s"
+              id="dr-ui--feedback-page-counter"
+            >
+              974
+            </div>
+          </FeedbackCounter>
         </div>
         <div
           className="mb12"
@@ -208,12 +214,18 @@ exports[`Feedback character limit Character limit too long, user cannot submit f
               </div>
             </ControlWrapper>
           </ControlTextarea>
-          <div
-            className="absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s color-red"
-            id="dr-ui--feedback-page-counter"
+          <FeedbackCounter
+            createId={[Function]}
+            feedbackLength={-340}
+            feedbackOverLimit={true}
           >
-            -340
-          </div>
+            <div
+              className="absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s color-red"
+              id="dr-ui--feedback-page-counter"
+            >
+              -340
+            </div>
+          </FeedbackCounter>
         </div>
         <div
           className="mb12"
@@ -226,37 +238,42 @@ exports[`Feedback character limit Character limit too long, user cannot submit f
           >
             Send feedback
           </button>
-          <span
-            className="color-red txt-s bg-red-faint round inline-block py3 px12"
-            id="dr-ui--feedback-page-overlimit"
+          <OverLimitWarning
+            createId={[Function]}
+            feedbackLimit={1000}
           >
-            <Icon
-              inline={true}
-              name="alert"
-              passthroughProps={Object {}}
-              size={18}
+            <span
+              className="color-red txt-s bg-red-faint round inline-block py3 px12"
+              id="dr-ui--feedback-page-overlimit"
             >
-              <svg
-                className="events-none icon inline-block align-t"
-                focusable="false"
-                role="presentation"
-                style={
-                  Object {
-                    "height": 18,
-                    "width": 18,
-                  }
-                }
+              <Icon
+                inline={true}
+                name="alert"
+                passthroughProps={Object {}}
+                size={18}
               >
-                <use
-                  xlinkHref="#icon-alert"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                />
-              </svg>
-            </Icon>
-             Your message is over the 
-            1000
-             character limit.
-          </span>
+                <svg
+                  className="events-none icon inline-block align-t"
+                  focusable="false"
+                  role="presentation"
+                  style={
+                    Object {
+                      "height": 18,
+                      "width": 18,
+                    }
+                  }
+                >
+                  <use
+                    xlinkHref="#icon-alert"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  />
+                </svg>
+              </Icon>
+               Your message is over the 
+              1000
+               character limit.
+            </span>
+          </OverLimitWarning>
         </div>
         <div
           className="txt-s txt-em"
@@ -317,12 +334,11 @@ exports[`Sent helpful rating snapshot snapshot 1`] = `
           themeControlWrapper="bg-white mb6"
           value=""
         />
-        <div
-          className="absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s"
-          id="dr-ui--feedback-page-counter"
-        >
-          1000
-        </div>
+        <FeedbackCounter
+          createId={[Function]}
+          feedbackLength={1000}
+          feedbackOverLimit={false}
+        />
       </div>
       <div
         className="mb12"

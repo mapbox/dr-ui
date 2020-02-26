@@ -188,17 +188,11 @@ class Feedback extends React.Component {
                     onChange={this.handleText}
                     value={this.state.feedback}
                   />
-                  <div
-                    id={this.createId('counter')}
-                    className={classnames(
-                      'absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s',
-                      {
-                        'color-red': feedbackOverLimit
-                      }
-                    )}
-                  >
-                    {feedbackLength}
-                  </div>
+                  <FeedbackCounter
+                    createId={this.createId}
+                    feedbackOverLimit={feedbackOverLimit}
+                    feedbackLength={feedbackLength}
+                  />
                 </div>
                 <div className="mb12">
                   <button
@@ -214,13 +208,10 @@ class Feedback extends React.Component {
                     Send feedback
                   </button>
                   {feedbackOverLimit && (
-                    <span
-                      id={this.createId('overlimit')}
-                      className="color-red txt-s bg-red-faint round inline-block py3 px12"
-                    >
-                      <Icon name="alert" inline={true} /> Your message is over
-                      the {feedbackLimit} character limit.
-                    </span>
+                    <FeedbackOverlimitWarning
+                      createId={this.createId}
+                      feedbackLimit={feedbackLimit}
+                    />
                   )}
                 </div>
 
@@ -242,6 +233,51 @@ class Feedback extends React.Component {
     );
   }
 }
+
+// character counter that appears in the bottom-right of the feedback textarea
+class FeedbackCounter extends React.Component {
+  render() {
+    return (
+      <div
+        id={this.props.createId('counter')}
+        className={classnames(
+          'absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s',
+          {
+            'color-red': this.props.feedbackOverLimit
+          }
+        )}
+      >
+        {this.props.feedbackLength}
+      </div>
+    );
+  }
+}
+
+FeedbackCounter.propTypes = {
+  createId: PropTypes.func.isRequired,
+  feedbackOverLimit: PropTypes.bool.isRequired,
+  feedbackLength: PropTypes.number.isRequired
+};
+
+// inline warning message that will appear if the user enters > 1000 characters in the feedback textarea
+class FeedbackOverlimitWarning extends React.Component {
+  render() {
+    return (
+      <span
+        id={this.props.createId('overlimit')}
+        className="color-red txt-s bg-red-faint round inline-block py3 px12"
+      >
+        <Icon name="alert" inline={true} /> Your message is over the{' '}
+        {this.props.feedbackLimit} character limit.
+      </span>
+    );
+  }
+}
+
+FeedbackOverlimitWarning.propTypes = {
+  createId: PropTypes.func.isRequired,
+  feedbackLimit: PropTypes.number.isRequired
+};
 
 Feedback.propTypes = {
   type: PropTypes.string, // type of content the user is a evaluating
