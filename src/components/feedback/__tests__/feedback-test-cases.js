@@ -12,7 +12,7 @@ testCases.basic = {
   component: Feedback,
   description: 'Basic',
   props: {
-    site: 'Mapbox GL JS',
+    site: 'dr-ui',
     webhook: {
       staging:
         'https://evj5gwoa8j.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
@@ -20,9 +20,16 @@ testCases.basic = {
         'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook'
     },
     preferredLanguage: 'Swift',
+    user: {
+      id: 'decorah',
+      email: 'decorah@mapbox.com',
+      plan: {
+        id: 'staff'
+      }
+    },
     section: 'LngLat',
     location: {
-      pathname: '/mapbox-gl-js/api/',
+      pathname: '/dr-ui/feedback/',
       hash: '#lnglat'
     }
   }
@@ -33,7 +40,7 @@ testCases.type = {
   description: 'Change type',
   props: {
     type: 'section',
-    site: 'Help',
+    site: 'dr-ui',
     webhook: {
       staging:
         'https://evj5gwoa8j.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
@@ -48,7 +55,7 @@ testCases.noSentry = {
   component: Feedback,
   description: 'Does not send text feedback to Sentry',
   props: {
-    site: 'Mapbox GL JS',
+    site: 'dr-ui',
     webhook: {
       staging:
         'https://evj5gwoa8j.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
@@ -59,7 +66,7 @@ testCases.noSentry = {
     preferredLanguage: 'Swift',
     section: 'LngLat',
     location: {
-      pathname: '/mapbox-gl-js/api/',
+      pathname: '/dr-ui/api/',
       hash: '#lnglat'
     }
   }
@@ -137,7 +144,7 @@ testCases.common = {
             </p>
 
             <Feedback
-              site="Help"
+              site="dr-ui"
               location={{}}
               webhook={{
                 staging:
