@@ -238,7 +238,7 @@ exports[`Feedback character limit Character limit too long, user cannot submit f
           >
             Send feedback
           </button>
-          <OverLimitWarning
+          <FeedbackOverlimitWarning
             createId={[Function]}
             feedbackLimit={1000}
           >
@@ -269,11 +269,12 @@ exports[`Feedback character limit Character limit too long, user cannot submit f
                   />
                 </svg>
               </Icon>
-               Your message is over the 
+               Your message is over the
+               
               1000
                character limit.
             </span>
-          </OverLimitWarning>
+          </FeedbackOverlimitWarning>
         </div>
         <div
           className="txt-s txt-em"
