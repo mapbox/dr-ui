@@ -15,10 +15,10 @@ describe('Sent helpful rating - yes', () => {
         hash: '#lnglat'
       }}
       user={{
-        id: 'decorah',
-        email: 'decorah@mapbox.com',
+        id: 'crocsfan19',
+        email: 'crocsfan19@mapbox.com',
         plan: {
-          id: 'staff'
+          id: 'starter'
         }
       }}
       webhook={{
@@ -32,7 +32,7 @@ describe('Sent helpful rating - yes', () => {
     expect(feedback.state()).toEqual({
       event: {
         event: 'Sent docs feedback',
-        userId: 'decorah',
+        userId: 'crocsfan19',
         properties: {
           environment: 'staging',
           helpful: true,
@@ -46,10 +46,10 @@ describe('Sent helpful rating - yes', () => {
             search: ''
           },
           page: { hash: '#lnglat', pathname: '/mapbox-gl-js/api/' },
-          plan: 'staff',
+          plan: 'starter',
           section: undefined,
           site: 'dr-ui',
-          userId: 'decorah'
+          userId: 'crocsfan19'
         }
       },
       feedback: undefined,
@@ -68,10 +68,10 @@ describe('Sent helpful rating - no', () => {
         hash: '#lnglat'
       }}
       user={{
-        id: 'decorah',
-        email: 'decorah@mapbox.com',
+        id: 'crocsfan19',
+        email: 'crocsfan19@mapbox.com',
         plan: {
-          id: 'staff'
+          id: 'starter'
         }
       }}
       webhook={{
@@ -85,7 +85,7 @@ describe('Sent helpful rating - no', () => {
     expect(feedback.state()).toEqual({
       event: {
         event: 'Sent docs feedback',
-        userId: 'decorah',
+        userId: 'crocsfan19',
         properties: {
           environment: 'staging',
           helpful: false,
@@ -99,10 +99,10 @@ describe('Sent helpful rating - no', () => {
             search: ''
           },
           page: { hash: '#lnglat', pathname: '/mapbox-gl-js/api/' },
-          plan: 'staff',
+          plan: 'starter',
           section: undefined,
           site: 'dr-ui',
-          userId: 'decorah'
+          userId: 'crocsfan19'
         }
       },
       feedback: undefined,

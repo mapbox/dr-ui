@@ -10,7 +10,7 @@ const testCases = {};
 
 testCases.basic = {
   component: Feedback,
-  description: 'Basic (sends user information as `decorah`)',
+  description: 'Basic (sends user information as `crocsfan19`)',
   props: {
     site: 'dr-ui',
     webhook: {
@@ -21,10 +21,10 @@ testCases.basic = {
     },
     preferredLanguage: 'Swift',
     user: {
-      id: 'decorah',
-      email: 'decorah@mapbox.com',
+      id: 'crocsfan19',
+      email: 'crocsfan19@mapbox.com',
       plan: {
-        id: 'staff'
+        id: 'starter'
       }
     },
     section: 'LngLat',

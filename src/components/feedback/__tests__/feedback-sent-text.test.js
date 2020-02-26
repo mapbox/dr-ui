@@ -15,10 +15,10 @@ describe('Sent text feedback', () => {
         hash: '#lnglat'
       }}
       user={{
-        id: 'decorah',
-        email: 'decorah@mapbox.com',
+        id: 'crocsfan19',
+        email: 'crocsfan19@mapbox.com',
         plan: {
-          id: 'staff'
+          id: 'starter'
         }
       }}
       webhook={{
@@ -48,7 +48,7 @@ describe('Sent text feedback', () => {
     expect(feedback.state()).toEqual({
       event: {
         event: 'Sent docs feedback',
-        userId: 'decorah',
+        userId: 'crocsfan19',
         properties: {
           environment: 'staging',
           feedback: 'cool beans!',
@@ -66,10 +66,10 @@ describe('Sent text feedback', () => {
             hash: '#lnglat',
             pathname: '/mapbox-gl-js/api/'
           },
-          plan: 'staff',
+          plan: 'starter',
           section: undefined,
           site: 'dr-ui',
-          userId: 'decorah'
+          userId: 'crocsfan19'
         }
       },
       feedback: 'cool beans!',
