@@ -137,6 +137,9 @@ class Feedback extends React.Component {
       // set tags for the user's preferred language (if available)
       if (this.props.preferredLanguage)
         scope.setTag('preferredLanguage', this.props.preferredLanguage);
+      // set tags for the user's plan (if available)
+      if (this.props.user.plan && this.props.user.plan.id)
+        scope.setTag('plan', this.props.user.plan.id);
       // set user attributes (if available)
       if (this.props.user) {
         Sentry.setUser({
