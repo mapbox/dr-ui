@@ -15,12 +15,14 @@ exports[`feedback Basic renders as expected 1`] = `
       </div>
       <button
         className="btn btn--s"
+        id="dr-ui--feedback-lnglat-yes"
         onClick={[Function]}
       >
         Yes
       </button>
       <button
         className="btn btn--s ml6"
+        id="dr-ui--feedback-lnglat-no"
         onClick={[Function]}
       >
         No
@@ -45,12 +47,14 @@ exports[`feedback Change type renders as expected 1`] = `
       </div>
       <button
         className="btn btn--s"
+        id="dr-ui--feedback-page-yes"
         onClick={[Function]}
       >
         Yes
       </button>
       <button
         className="btn btn--s ml6"
+        id="dr-ui--feedback-page-no"
         onClick={[Function]}
       >
         No
@@ -320,12 +324,14 @@ exports[`feedback Feedback placement renders as expected 1`] = `
                 </div>
                 <button
                   className="btn btn--s"
+                  id="dr-ui--feedback-page-yes"
                   onClick={[Function]}
                 >
                   Yes
                 </button>
                 <button
                   className="btn btn--s ml6"
+                  id="dr-ui--feedback-page-no"
                   onClick={[Function]}
                 >
                   No

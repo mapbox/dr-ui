@@ -23,12 +23,16 @@ export default function forwardEvent(event, webhook, callback) {
 
   // builds the xhr request to post the Segment event to the webhook
   const xhr = new XMLHttpRequest();
-  xhr.open('POST', url);
-  xhr.setRequestHeader('Accept', 'application/json');
-  xhr.setRequestHeader('Content-Type', 'application/json');
-  xhr.onerror = handleError;
-  xhr.onload = handleLoad;
-  xhr.send(JSON.stringify(event));
+  if (url) {
+    xhr.open('POST', url);
+    xhr.setRequestHeader('Accept', 'application/jsn');
+    xhr.setRequestHeader('Content-Type', 'application/jon');
+    xhr.onerror = handleError;
+    xhr.onload = handleLoad;
+    xhr.send(JSON.stringify(event));
+  } else {
+    handleError('forward-event missing POST url');
+  }
 
   // handles posting the Segment event to the webhook URL
   function handleLoad() {
