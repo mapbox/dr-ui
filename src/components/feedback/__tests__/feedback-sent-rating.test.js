@@ -46,7 +46,7 @@ describe('Sent helpful rating - yes', () => {
             search: ''
           },
           page: { hash: '#lnglat', pathname: '/mapbox-gl-js/api/' },
-          planId: 'staff',
+          plan: 'staff',
           section: undefined,
           site: 'dr-ui',
           userId: 'decorah'
@@ -99,7 +99,7 @@ describe('Sent helpful rating - no', () => {
             search: ''
           },
           page: { hash: '#lnglat', pathname: '/mapbox-gl-js/api/' },
-          planId: 'staff',
+          plan: 'staff',
           section: undefined,
           site: 'dr-ui',
           userId: 'decorah'

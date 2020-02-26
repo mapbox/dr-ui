@@ -94,7 +94,7 @@ class Feedback extends React.Component {
         ...(!this.props.user && { anonymousId: anonymousId }),
         // set plan, if available
         ...(this.props.user &&
-          this.props.user.plan && { planId: this.props.user.plan.id }),
+          this.props.user.plan && { plan: this.props.user.plan.id }),
         // get environment: staging or production
         environment: environment,
         // get full window location
@@ -143,7 +143,9 @@ class Feedback extends React.Component {
           ...(this.props.user.id && { username: this.props.user.id }),
           ...(this.props.user.email && { email: this.props.user.email }),
           ...(this.props.user.plan &&
-            this.props.user.plan.id && { plan: this.props.user.plan.id })
+            this.props.user.plan.id && {
+              data: { plan: this.props.user.plan.id }
+            })
         });
       }
       // send error message (if available)
