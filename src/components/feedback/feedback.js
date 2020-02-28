@@ -5,8 +5,10 @@ import forwardEvent from './forward-event';
 import uuidv4 from 'uuid/v4';
 import Icon from '@mapbox/mr-ui/icon';
 import * as Sentry from '@sentry/browser';
+import classnames from 'classnames';
 import slugify from 'slugify';
 
+const feedbackLimit = 1000; // character limit for the feedback textarea
 const anonymousId = uuidv4(); // creates an anonymousId fallback if user is not logged or we cant get their info
 const environment =
   typeof window !== 'undefined'
@@ -118,6 +120,7 @@ class Feedback extends React.Component {
   sendToSentry = (level, error) => {
     Sentry.init({
       dsn: this.props.feedbackSentryDsn,
+      maxValueLength: feedbackLimit,
       environment
     });
     Sentry.configureScope(scope => {
@@ -133,6 +136,10 @@ class Feedback extends React.Component {
   };
 
   render() {
+    const feedbackLength = this.state.feedback
+      ? feedbackLimit - this.state.feedback.length
+      : feedbackLimit;
+    const feedbackOverLimit = feedbackLength < 0;
     return (
       <div className="bg-gray-faint py12 px18 round color-gray">
         <div>
@@ -174,24 +181,39 @@ class Feedback extends React.Component {
                     ` on how we can improve this ${this.props.type}`}
                   , you can provide it below (optional):
                 </div>
-                <ControlTextarea
-                  id={this.createId('text')}
-                  themeControlWrapper="bg-white mb6"
-                  onChange={this.handleText}
-                  value={this.state.feedback}
-                />
-
-                <button
-                  disabled={
-                    this.state.feedback === undefined ||
-                    this.state.feedback.length < 3 // disable button unless more than 3 characters are typed
-                  }
-                  id={this.createId('submit')}
-                  className="btn btn--s mb18"
-                  onClick={this.handleSubmitFeedback}
-                >
-                  Send feedback
-                </button>
+                <div className="relative">
+                  <ControlTextarea
+                    id={this.createId('text')}
+                    themeControlWrapper="bg-white mb6"
+                    onChange={this.handleText}
+                    value={this.state.feedback}
+                  />
+                  <FeedbackCounter
+                    createId={this.createId}
+                    feedbackOverLimit={feedbackOverLimit}
+                    feedbackLength={feedbackLength}
+                  />
+                </div>
+                <div className="mb12">
+                  <button
+                    id={this.createId('submit')}
+                    disabled={
+                      this.state.feedback === undefined ||
+                      this.state.feedback.length < 3 || // disable button unless more than 3 characters are typed
+                      feedbackOverLimit
+                    }
+                    className="btn btn--s mb6 mr12 inline-block"
+                    onClick={this.handleSubmitFeedback}
+                  >
+                    Send feedback
+                  </button>
+                  {feedbackOverLimit && (
+                    <FeedbackOverlimitWarning
+                      createId={this.createId}
+                      feedbackLimit={feedbackLimit}
+                    />
+                  )}
+                </div>
 
                 <div className="txt-s txt-em">
                   This form is for documentation feedback. If you have a
@@ -211,6 +233,51 @@ class Feedback extends React.Component {
     );
   }
 }
+
+// character counter that appears in the bottom-right of the feedback textarea
+class FeedbackCounter extends React.Component {
+  render() {
+    return (
+      <div
+        id={this.props.createId('counter')}
+        className={classnames(
+          'absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s',
+          {
+            'color-red': this.props.feedbackOverLimit
+          }
+        )}
+      >
+        {this.props.feedbackLength}
+      </div>
+    );
+  }
+}
+
+FeedbackCounter.propTypes = {
+  createId: PropTypes.func.isRequired,
+  feedbackOverLimit: PropTypes.bool.isRequired,
+  feedbackLength: PropTypes.number.isRequired
+};
+
+// inline warning message that will appear if the user enters > 1000 characters in the feedback textarea
+class FeedbackOverlimitWarning extends React.Component {
+  render() {
+    return (
+      <span
+        id={this.props.createId('overlimit')}
+        className="color-red txt-s bg-red-faint round inline-block py3 px12"
+      >
+        <Icon name="alert" inline={true} /> Your message is over the{' '}
+        {this.props.feedbackLimit} character limit.
+      </span>
+    );
+  }
+}
+
+FeedbackOverlimitWarning.propTypes = {
+  createId: PropTypes.func.isRequired,
+  feedbackLimit: PropTypes.number.isRequired
+};
 
 Feedback.propTypes = {
   type: PropTypes.string, // type of content the user is a evaluating
