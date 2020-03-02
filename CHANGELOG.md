@@ -9,6 +9,8 @@
 * Add `icon` option for third level items in `NavigationAccordion`. [#252](https://github.com/mapbox/dr-ui/pull/252)
 * Add Sentry to `Feedback` to catch failed forward-event events. [#256](https://github.com/mapbox/dr-ui/pull/256)
 * Set character limit on `Feeback` text feedback to 1000 characters and set Sentry's `maxValueLength` to the same to prevent truncated feedback. [#244](https://github.com/mapbox/dr-ui/pull/244)
+* Send basic user metadata to Sentry through the `Feedback` component. [#255](https://github.com/mapbox/dr-ui/pull/255)
+  - 🚨 The `userName` prop has been replaced by `user` object.
 
 ## 0.26.0
 

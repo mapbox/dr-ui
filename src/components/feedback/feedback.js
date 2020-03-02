@@ -75,26 +75,32 @@ class Feedback extends React.Component {
   createSegmentEvent = () => {
     return {
       event: 'Sent docs feedback',
-      // set user if available (needed for forward-event request)
-      userId: this.props.userName || undefined,
-      ...(!this.props.userName && { anonymousId: anonymousId }),
+      // set user if available else set anonymousId (needed for forward-event request)
+      ...(this.props.user && this.props.user.id
+        ? { userId: this.props.user.id }
+        : { anonymousId: anonymousId }),
       properties: {
-        // true, false,
+        // true, false
         helpful: this.state.helpful,
-        // text feedback
+        // text feedback, if available
         ...(this.state.feedback && { feedback: this.state.feedback }),
-        // name of current site, helpful for filtering in Mode
+        // name of current site (important for filtering in Mode)
         site: this.props.site,
         // (optional) name of section for longer pagers, helpful for fitering in Mode and identifying section areas
         section: this.props.section || undefined,
         // get page context
         page: this.props.location || undefined,
-        // set user if available (needed for mode reports)
-        userId: this.props.userName || undefined,
-        ...(!this.props.userName && { anonymousId: anonymousId }),
-        // staging or production
-        environment,
-        // pull window.location
+        // set user if available else set anonymousId (needed for Mode)
+        ...(this.props.user && this.props.user.id
+          ? { userId: this.props.user.id }
+          : { anonymousId: anonymousId }),
+        ...(!this.props.user && { anonymousId: anonymousId }),
+        // set plan, if available
+        ...(this.props.user &&
+          this.props.user.plan && { plan: this.props.user.plan.id }),
+        // get environment: staging or production
+        environment: environment,
+        // get full window location
         location: {
           hash: location.hash,
           host: location.host,
@@ -118,21 +124,44 @@ class Feedback extends React.Component {
 
   // sends text feedback to Sentry
   sendToSentry = (level, error) => {
+    // initialize Sentry project to send the feedback
     Sentry.init({
       dsn: this.props.feedbackSentryDsn,
       maxValueLength: feedbackLimit,
       environment
     });
+    // configure data to send with feeedback
     Sentry.configureScope(scope => {
-      scope.setTag('site', this.props.site); // site name
-      scope.setTag('helpful', this.state.helpful); // the user's boolean rating
-      if (this.props.section) scope.setTag('section', this.props.section); // section of the page (if available)
+      // set tag for site name
+      scope.setTag('site', this.props.site);
+      // set tag for the user's boolean rating
+      scope.setTag('helpful', this.state.helpful);
+      // set tag for the section of the page (if available)
+      if (this.props.section) scope.setTag('section', this.props.section);
+      // set tags for the user's preferred language (if available)
       if (this.props.preferredLanguage)
-        scope.setTag('preferredLanguage', this.props.preferredLanguage); // user's preferred language (if available)
-      scope.setLevel(level || 'info'); // sets the message as "info" by default
-      if (error) Sentry.setExtra('error', error); // send error message (if available)
+        scope.setTag('preferredLanguage', this.props.preferredLanguage);
+      // set tags for the user's plan (if available)
+      if (this.props.user && this.props.user.plan && this.props.user.plan.id)
+        scope.setTag('plan', this.props.user.plan.id);
+      // set user attributes (if available)
+      if (this.props.user) {
+        Sentry.setUser({
+          ...(this.props.user.id && { username: this.props.user.id }),
+          ...(this.props.user.email && { email: this.props.user.email }),
+          ...(this.props.user.plan &&
+            this.props.user.plan.id && {
+              data: { plan: this.props.user.plan.id }
+            })
+        });
+      }
+      // send error message (if available)
+      if (error) Sentry.setExtra('error', error);
+      // set the message as "info" (rather than warning)
+      scope.setLevel(level || 'info');
     });
-    Sentry.captureMessage(this.state.feedback); // capture the feedback as a message
+    // capture the feedback as a message
+    Sentry.captureMessage(this.state.feedback);
   };
 
   render() {
@@ -288,7 +317,12 @@ Feedback.propTypes = {
     staging: PropTypes.string.isRequired,
     production: PropTypes.string.isRequired
   }), // staging and production webhook URLs to send forward event data to
-  userName: PropTypes.string, // userid if available
+  user: PropTypes.shape({
+    // user object if available
+    id: PropTypes.string,
+    email: PropTypes.string,
+    plan: PropTypes.shape({ id: PropTypes.string })
+  }),
   preferredLanguage: PropTypes.string, // preferred code language if available
   feedbackSentryDsn: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]) // Sentry DSN (URL) to send text feedback to for issue management or "false" to not send feedback to Sentry
 };
