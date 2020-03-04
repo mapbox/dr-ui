@@ -171,13 +171,13 @@ exports[`feedback Feedback placement (sends anonymous user information) renders 
                         </div>
                       </a>
                       <div
-                        className="ml24 pt0"
+                        className="ml12 pt0"
                       >
                         <ul
                           className="txt-m pb12 inline-block-mm none unprose"
                         >
                           <li
-                            className="mb6"
+                            className="mb3"
                           >
                             <a
                               className="color-blue-on-hover"
@@ -192,7 +192,7 @@ exports[`feedback Feedback placement (sends anonymous user information) renders 
                             />
                           </li>
                           <li
-                            className="mb6"
+                            className="mb3"
                           >
                             <a
                               className="color-blue-on-hover"

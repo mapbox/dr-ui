@@ -35,6 +35,38 @@ testCases.basic = {
   }
 };
 
+testCases.passiveSections = {
+  description: 'With passive sections',
+  component: NavigationAccordion,
+  props: {
+    currentPath: 'page-one',
+    contents: {
+      firstLevelItems: [
+        {
+          title: 'Title one',
+          path: 'page-one'
+        },
+        {
+          title: 'Title two',
+          path: 'page-two'
+        }
+      ],
+      secondLevelItems: [
+        { title: 'Methods and events', passiveSection: true },
+        { title: 'Get map state', path: '#' },
+        { title: 'Modify map state', path: '#' },
+        { title: 'Layers, styles, sources', path: '#' },
+        { title: 'Properties', passiveSection: true },
+        { title: 'accessToken', path: '#' },
+        { title: 'baseApiUrl', path: '#' },
+        { title: 'workerCount', path: '#' },
+        { title: 'maxParallelImageRequests', path: '#' }
+      ]
+    },
+    onDropdownChange: () => {}
+  }
+};
+
 testCases.noSecondLevelItems = {
   description: 'No second level items',
   component: NavigationAccordion,

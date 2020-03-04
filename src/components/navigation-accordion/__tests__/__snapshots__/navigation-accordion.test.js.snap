@@ -25,13 +25,13 @@ exports[`navigation-accordion Basic renders as expected 1`] = `
           </div>
         </a>
         <div
-          className="ml24 pt0"
+          className="ml12 pt0"
         >
           <ul
             className="txt-m pb12 inline-block-mm none unprose"
           >
             <li
-              className="mb6"
+              className="mb3"
             >
               <a
                 className="color-blue-on-hover"
@@ -46,7 +46,7 @@ exports[`navigation-accordion Basic renders as expected 1`] = `
               />
             </li>
             <li
-              className="mb6"
+              className="mb3"
             >
               <a
                 className="color-blue-on-hover"
@@ -280,13 +280,13 @@ exports[`navigation-accordion Shows third level items renders as expected 1`] = 
           </div>
         </a>
         <div
-          className="ml24 pt0"
+          className="ml12 pt0"
         >
           <ul
             className="txt-m pb12 inline-block-mm none unprose"
           >
             <li
-              className="mb6"
+              className="mb3"
             >
               <a
                 className="color-blue-on-hover"
@@ -303,7 +303,7 @@ exports[`navigation-accordion Shows third level items renders as expected 1`] = 
                   className="mt6"
                 >
                   <a
-                    className="color-blue-on-hover txt-bold"
+                    className="color-blue-on-hover txt-bold color-gray"
                     href="#"
                     id="#-sidebar"
                   >
@@ -326,7 +326,7 @@ exports[`navigation-accordion Shows third level items renders as expected 1`] = 
               </ul>
             </li>
             <li
-              className="mb6"
+              className="mb3"
             >
               <a
                 className="color-blue-on-hover"
@@ -451,13 +451,13 @@ exports[`navigation-accordion Shows third level items with icons renders as expe
           </div>
         </a>
         <div
-          className="ml24 pt0"
+          className="ml12 pt0"
         >
           <ul
             className="txt-m pb12 inline-block-mm none unprose"
           >
             <li
-              className="mb6"
+              className="mb3"
             >
               <a
                 className="color-blue-on-hover"
@@ -480,7 +480,7 @@ exports[`navigation-accordion Shows third level items with icons renders as expe
                   }
                 >
                   <a
-                    className="color-blue-on-hover txt-bold"
+                    className="color-blue-on-hover txt-bold color-gray"
                     href="#"
                     id="#-sidebar"
                   >
@@ -587,7 +587,7 @@ exports[`navigation-accordion Shows third level items with icons renders as expe
               </ul>
             </li>
             <li
-              className="mb6"
+              className="mb3"
             >
               <a
                 className="color-blue-on-hover"
@@ -712,13 +712,13 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
           </div>
         </a>
         <div
-          className="ml24 pt0"
+          className="ml12 pt0"
         >
           <ul
             className="txt-m pb12 inline-block-mm none unprose"
           >
             <li
-              className="mb6"
+              className="mb3"
             >
               <a
                 className="color-blue-on-hover"
@@ -735,7 +735,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
                   className="mt6"
                 >
                   <a
-                    className="color-blue-on-hover txt-bold"
+                    className="color-blue-on-hover txt-bold color-gray"
                     href="#"
                     id="#-sidebar"
                   >
@@ -793,7 +793,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
               </ul>
             </li>
             <li
-              className="mb6"
+              className="mb3"
             >
               <a
                 className="color-blue-on-hover"

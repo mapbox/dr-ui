@@ -8,6 +8,23 @@ import Tag from '../tag/tag';
 
 const debounceVal = 50;
 
+class PassiveSection extends React.Component {
+  render() {
+    return (
+      <div
+        className="color-gray txt-s txt-uppercase"
+        style={{ letterSpacing: '0.025em' }}
+      >
+        {this.props.title}
+      </div>
+    );
+  }
+}
+
+PassiveSection.propTypes = {
+  title: PropTypes.string.isRequired
+};
+
 class NavigationAccordion extends React.PureComponent {
   constructor(props) {
     super(props);
@@ -122,13 +139,13 @@ class NavigationAccordion extends React.PureComponent {
     const { props, state } = this;
     function itemClasses(isActive) {
       return classnames('color-blue-on-hover', {
-        'txt-bold': isActive
+        'txt-bold color-gray': isActive
       });
     }
 
     const secondLevelContent =
       props.contents.secondLevelItems &&
-      props.contents.secondLevelItems.map(item => {
+      props.contents.secondLevelItems.map((item, index) => {
         const isActive = state.activeh2 === item.path;
         let openSubItems = isActive;
         const subItems =
@@ -162,15 +179,25 @@ class NavigationAccordion extends React.PureComponent {
             );
           });
         return (
-          <li key={item.path} className="mb6">
-            <a
-              href={`#${item.path}`}
-              id={`#${item.path}-sidebar`}
-              className={itemClasses(isActive)}
-            >
-              {item.title}
-              {item.tag ? this.buildTag(item) : ''}
-            </a>
+          <li
+            key={item.path}
+            className={classnames('', {
+              mb3: !item.passiveSection,
+              mt18: item.passiveSection && index !== 0
+            })}
+          >
+            {item.passiveSection ? (
+              <PassiveSection title={item.title} />
+            ) : (
+              <a
+                href={`#${item.path}`}
+                id={`#${item.path}-sidebar`}
+                className={itemClasses(isActive)}
+              >
+                {item.title}
+                {item.tag ? this.buildTag(item) : ''}
+              </a>
+            )}
             <ul className={openSubItems ? 'pl12 color-darken75' : 'none'}>
               {subItems}
             </ul>
@@ -201,7 +228,7 @@ class NavigationAccordion extends React.PureComponent {
         let renderedSecondLevelContent = '';
         if (isActive && secondLevelContent && secondLevelContent.length > 0) {
           renderedSecondLevelContent = (
-            <div className="ml24 pt0">
+            <div className="ml12 pt0">
               <ul className="txt-m pb12 inline-block-mm none unprose">
                 {secondLevelContent}
               </ul>
@@ -283,6 +310,7 @@ NavigationAccordion.propTypes = {
           'new',
           'custom'
         ]),
+        passiveSection: PropTypes.bool,
         /* Required if tag is set to `custom` */
         customTagProps: PropTypes.shape({
           customLabel: PropTypes.string.isRequired,
