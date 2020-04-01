@@ -1,5 +1,11 @@
 # Changelog
 
+## Master
+
+* Update `NavigationDropdown` to use accessible menu.
+  - 🚨`onDropdownChange` prop for `NavigationAccordion` and `onChange` prop for `NavigationDropdown` is now defunct and should be removed. This function is set automatically in `NavigationDropdown`.
+  - 🚨`dropdownOptions` prop for `NavigationDropdown` is now `options`.
+
 ## 0.27.0
 
 * Add feature to scroll to active item in `SectionedNavigation` onload. [#249](https://github.com/mapbox/dr-ui/pull/249)

@@ -2,26 +2,21 @@ import NavigationDropdown from '../navigation-dropdown';
 
 const testCases = {};
 
-function onChangeTest() {
-  console.log('🐢 🐙 🍕');
-}
-
 testCases.basic = {
   description: 'Basic',
   component: NavigationDropdown,
   props: {
-    currentPath: 'page-one',
-    dropdownOptions: [
+    currentPath: 'Feedback',
+    options: [
       {
-        title: 'Title one',
-        path: 'page-one'
+        label: 'NavigationAccordion',
+        value: 'NavigationAccordion'
       },
       {
-        title: 'Title two',
-        path: 'page-two'
+        label: 'Feedback',
+        value: 'Feedback'
       }
-    ],
-    onChange: onChangeTest
+    ]
   }
 };
 

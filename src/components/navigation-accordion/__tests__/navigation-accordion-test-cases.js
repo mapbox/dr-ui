@@ -30,8 +30,7 @@ testCases.basic = {
           path: 'heading-two'
         }
       ]
-    },
-    onDropdownChange: () => {}
+    }
   }
 };
 
@@ -52,7 +51,7 @@ testCases.noSecondLevelItems = {
         }
       ]
     },
-    onDropdownChange: () => {}
+    navigationDropdownId: 'no-second'
   }
 };
 
@@ -93,7 +92,7 @@ testCases.withThirdLevelItems = {
         }
       ]
     },
-    onDropdownChange: () => {}
+    navigationDropdownId: 'with-third'
   }
 };
 
@@ -141,7 +140,7 @@ testCases.withThirdLevelItemsWithIcons = {
         }
       ]
     },
-    onDropdownChange: () => {}
+    navigationDropdownId: 'with-icons'
   }
 };
 
@@ -194,7 +193,7 @@ testCases.withTags = {
         }
       ]
     },
-    onDropdownChange: () => {}
+    navigationDropdownId: 'titles'
   }
 };
 
@@ -306,7 +305,7 @@ testCases.many = {
                 }
               ]
             }}
-            onDropdownChange={() => {}}
+            navigationDropdownId="many"
           />
         }
       >

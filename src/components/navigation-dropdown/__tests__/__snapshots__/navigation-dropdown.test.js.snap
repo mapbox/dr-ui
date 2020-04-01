@@ -2,37 +2,37 @@
 
 exports[`navigation-dropdown Basic renders as expected 1`] = `
 <div
-  className="relative "
+  className="dr-ui--navigation-dropdown relative"
 >
-  <div
-    className="select-container "
+  <button
+    className="select select--stroke bg-white round-full txt-truncate"
+    data-inclusive-menu-opens="navigate-this-section"
+    type="button"
   >
-    <select
-      aria-required={true}
-      className="select select--stroke round-full bg-white"
-      data-test="navigate-this-section-select"
-      disabled={false}
-      id="navigate-this-section"
-      onChange={[Function]}
-      value="page-one"
-    >
-      <option
-        value="page-one"
-      >
-        Title one
-      </option>
-      <option
-        value="page-two"
-      >
-        Title two
-      </option>
-    </select>
+    Feedback
     <div
+      aria-hidden="true"
       className="select-arrow"
     />
-  </div>
+  </button>
   <div
-    role="alert"
-  />
+    className="absolute bg-white round py6 mt3 border border--gray-light shadow-darken10 z4  hmax300 w-full scroll-auto scroll-styled "
+    id="navigate-this-section"
+  >
+    <button
+      className="block w-full px12 py3 link link--gray bg-gray-faint-on-hover"
+      onClick={[Function]}
+      type="button"
+    >
+      NavigationAccordion
+    </button>
+    <button
+      className="block w-full px12 py3 link link--gray bg-gray-faint-on-hover txt-bold"
+      onClick={[Function]}
+      type="button"
+    >
+      Feedback
+    </button>
+  </div>
 </div>
 `;
