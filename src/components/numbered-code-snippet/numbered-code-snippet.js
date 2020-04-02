@@ -217,8 +217,11 @@ export default class NumberedCodeSnippet extends React.PureComponent {
       });
       currentChunk = [];
     };
-    for (let i = 0, l = splitDisplayCode.length; i < l; i++) {
-      const chunk = splitDisplayCode[i];
+    for (let i = 0, l = splitDisplayCode.length + 1; i < l; i++) {
+      const chunk =
+        typeof splitDisplayCode[i] === 'string'
+          ? splitDisplayCode[i]
+          : undefined;
       const lineNumber = i + 1;
       if (currentLiveRange && lineNumber === currentLiveRange[0]) {
         endCurrentChunk({ live: false });
@@ -226,10 +229,12 @@ export default class NumberedCodeSnippet extends React.PureComponent {
         endCurrentChunk({ live: true });
         currentLiveRange = mutableCopyRanges && mutableCopyRanges.shift();
       }
-      currentChunk.push({
-        highlighted: chunk,
-        raw: rawCodeLines[i]
-      });
+      if (chunk !== undefined) {
+        currentChunk.push({
+          highlighted: chunk,
+          raw: rawCodeLines[i]
+        });
+      }
     }
     if (currentChunk.length) {
       endCurrentChunk({ live: false });
@@ -242,7 +247,6 @@ export default class NumberedCodeSnippet extends React.PureComponent {
     let liveChunkCount = -1; // Incremented to give CopyButtons an identifier
     allChunks.forEach((codeChunk, i) => {
       const chunkId = `chunk-${i}`;
-
       const lineEls = codeChunk.highlightedLines.map((line, i) => {
         // Left padding is determined below
         let lineClasses = 'pr12';
@@ -331,7 +335,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
             {lineEls}
           </div>
         );
-      } else {
+      } else if (!codeChunk.live && lineEls.length) {
         const expandCollapseButtons = this.state.expanded ? (
           <HideLines
             onClick={() => {

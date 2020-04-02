@@ -74,4 +74,30 @@ testCases.noCollapse = {
   }
 };
 
+testCases.firstLine = {
+  component: NumberedCodeSnippet,
+  description: 'First line',
+  props: {
+    code: code,
+    highlightedCode: highlightSwift(code),
+    maxHeight: 450,
+    highlightThemeCss: highlightThemeCss,
+    copyRanges: [[1, 5]],
+    onCopy: () => {}
+  }
+};
+
+testCases.lastLine = {
+  component: NumberedCodeSnippet,
+  description: 'Last line',
+  props: {
+    code: code,
+    highlightedCode: highlightSwift(code),
+    maxHeight: 450,
+    highlightThemeCss: highlightThemeCss,
+    copyRanges: [[38, 42]],
+    onCopy: () => {}
+  }
+};
+
 export { testCases };
