@@ -111,12 +111,6 @@ pre[class*='language-'] {
   color: #ae2056;
 }
 
-/* slightly darker to make improve contrast when code is in a Note */
-.dr-ui--note .token.boolean,
-.dr-ui--note .token.number {
-  color: #6f4be4;
-}
-
 .token.keyword {
   color: #314ccd;
 }
