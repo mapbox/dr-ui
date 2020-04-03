@@ -250,8 +250,6 @@ export default class NumberedCodeSnippet extends React.PureComponent {
         if (!codeChunk.live && props.copyRanges !== undefined) {
           if (props.collapseLines) {
             lineClasses += this.state.expanded ? '' : ' h0 scroll-hidden';
-          } else {
-            lineClasses += ' opacity50 bg-darken10';
           }
         }
 
@@ -368,7 +366,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
           <div
             key={i}
             data-chunk-overlay={chunkId}
-            className="bg-lighten75 absolute left right"
+            className="bg-white absolute left right"
             style={{ opacity: 0 }}
           >
             <div className="bg-blue h-full w6" />
