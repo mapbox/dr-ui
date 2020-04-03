@@ -547,7 +547,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
     </code>
   </pre>
   <div
-    className="bg-lighten75 absolute left right"
+    className="bg-white absolute left right"
     data-chunk-overlay="chunk-1"
     style={
       Object {
@@ -592,7 +592,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
         data-chunk-code="chunk-0"
       >
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -625,7 +625,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -658,7 +658,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -691,7 +691,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -724,7 +724,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -757,7 +757,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 40.9,
@@ -790,7 +790,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -823,7 +823,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -856,7 +856,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -889,7 +889,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -922,7 +922,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -955,7 +955,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -988,7 +988,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -1021,7 +1021,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -1054,7 +1054,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -1087,7 +1087,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -1120,7 +1120,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 40.9,
@@ -1153,7 +1153,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -1186,7 +1186,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 40.9,
@@ -1219,7 +1219,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -1361,7 +1361,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
         data-chunk-code="chunk-2"
       >
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -1394,7 +1394,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -1427,7 +1427,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -1460,7 +1460,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -1493,7 +1493,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -1526,7 +1526,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -1559,7 +1559,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -1592,7 +1592,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -1625,7 +1625,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -1658,7 +1658,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -1691,7 +1691,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 98.69999999999999,
@@ -1724,7 +1724,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 98.69999999999999,
@@ -1757,7 +1757,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -1790,7 +1790,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -1866,7 +1866,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
         data-chunk-code="chunk-4"
       >
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -1899,7 +1899,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -1932,7 +1932,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 40.9,
@@ -1965,7 +1965,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -2001,7 +2001,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
     </code>
   </pre>
   <div
-    className="bg-lighten75 absolute left right"
+    className="bg-white absolute left right"
     data-chunk-overlay="chunk-1"
     style={
       Object {
@@ -2014,7 +2014,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
     />
   </div>
   <div
-    className="bg-lighten75 absolute left right"
+    className="bg-white absolute left right"
     data-chunk-overlay="chunk-3"
     style={
       Object {

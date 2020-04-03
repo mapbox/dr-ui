@@ -534,7 +534,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
       </code>
     </pre>
     <div
-      className="bg-lighten75 absolute left right"
+      className="bg-white absolute left right"
       data-chunk-overlay="chunk-1"
       style={
         Object {
@@ -547,7 +547,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
       />
     </div>
     <div
-      className="bg-lighten75 absolute left right"
+      className="bg-white absolute left right"
       data-chunk-overlay="chunk-3"
       style={
         Object {
