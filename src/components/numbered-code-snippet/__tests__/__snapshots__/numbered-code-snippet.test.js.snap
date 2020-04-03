@@ -2,16 +2,15 @@
 
 exports[`numbered-code-snippet Basic renders as expected 1`] = `
 <div
-  className="relative round z0 scroll-styled scroll-auto"
+  className="prose relative round z0 scroll-styled scroll-auto"
   style={
     Object {
-      "backgroundColor": "#f4f7fb",
       "maxHeight": 450,
     }
   }
 >
   <pre
-    className="my-neg12 pt12 ml-neg12 pl12 pr0 mobile-snippet txt-break-word"
+    className="py0 px0 txt-break-word"
   >
     <code
       className="px0 hljs"
@@ -575,16 +574,15 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
 
 exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
 <div
-  className="relative round z0 scroll-styled scroll-auto"
+  className="prose relative round z0 scroll-styled scroll-auto"
   style={
     Object {
-      "backgroundColor": "#f4f7fb",
       "maxHeight": 450,
     }
   }
 >
   <pre
-    className="my-neg12 pt12 ml-neg12 pl12 pr0 mobile-snippet txt-break-word"
+    className="py0 px0 txt-break-word"
   >
     <code
       className="px0 hljs"

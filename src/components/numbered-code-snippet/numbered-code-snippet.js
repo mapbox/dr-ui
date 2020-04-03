@@ -406,7 +406,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
       );
     }
 
-    let containerClasses = 'relative round z0 scroll-styled';
+    let containerClasses = 'prose relative round z0 scroll-styled';
     if (props.maxHeight !== undefined) containerClasses += ' scroll-auto';
 
     const containerStyles = {};
@@ -417,9 +417,9 @@ export default class NumberedCodeSnippet extends React.PureComponent {
       <div
         className={containerClasses}
         ref={this.onContainerElement}
-        style={{ ...containerStyles, backgroundColor: '#f4f7fb' }}
+        style={{ ...containerStyles }}
       >
-        <pre className="my-neg12 pt12 ml-neg12 pl12 pr0 mobile-snippet txt-break-word">
+        <pre className="py0 px0 txt-break-word">
           <code className={codeClasses}>{codeElements}</code>
         </pre>
         {copyAllButton}
