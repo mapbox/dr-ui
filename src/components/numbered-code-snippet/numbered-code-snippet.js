@@ -246,7 +246,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
       const lineEls = codeChunk.highlightedLines.map((line, i) => {
         // Left padding is determined below
         let lineClasses = 'pr12';
-        if (codeChunk.live) lineClasses += ' py3';
+        if (codeChunk.live) lineClasses += ' py3 bg-white';
         if (!codeChunk.live && props.copyRanges !== undefined) {
           if (props.collapseLines) {
             lineClasses += this.state.expanded ? '' : ' h0 scroll-hidden';
@@ -366,10 +366,10 @@ export default class NumberedCodeSnippet extends React.PureComponent {
           <div
             key={i}
             data-chunk-overlay={chunkId}
-            className="bg-white absolute left right"
+            className="absolute left right z2 w6"
             style={{ opacity: 0 }}
           >
-            <div className="bg-blue h-full w6" />
+            <div className="bg-blue h-full" />
           </div>
         );
 
@@ -417,7 +417,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
         ref={this.onContainerElement}
         style={{ ...containerStyles }}
       >
-        <pre className="py0 px0 txt-break-word">
+        <pre className="py0 px0 txt-break-word mb0">
           <code className={codeClasses}>{codeElements}</code>
         </pre>
         {copyAllButton}
