@@ -151,16 +151,15 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="relative round z0 scroll-styled scroll-auto"
+    className="prose relative round z0 scroll-styled scroll-auto"
     style={
       Object {
-        "backgroundColor": "#f4f7fb",
         "maxHeight": 480,
       }
     }
   >
     <pre
-      className="my-neg12 pt12 ml-neg12 pl12 pr0 mobile-snippet txt-break-word"
+      className="py0 px0 txt-break-word mb0"
     >
       <code
         className="px0 hljs"
@@ -234,7 +233,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
           data-chunk-code="chunk-1"
         >
           <div
-            className="pr12 py3"
+            className="pr12 py3 bg-white"
             style={
               Object {
                 "paddingLeft": 26.45,
@@ -336,7 +335,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
           data-chunk-code="chunk-3"
         >
           <div
-            className="pr12 py3"
+            className="pr12 py3 bg-white"
             style={
               Object {
                 "paddingLeft": 26.45,
@@ -369,7 +368,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
             />
           </div>
           <div
-            className="pr12 py3"
+            className="pr12 py3 bg-white"
             style={
               Object {
                 "paddingLeft": 26.45,
@@ -402,7 +401,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
             />
           </div>
           <div
-            className="pr12 py3"
+            className="pr12 py3 bg-white"
             style={
               Object {
                 "paddingLeft": 26.45,
@@ -435,7 +434,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
             />
           </div>
           <div
-            className="pr12 py3"
+            className="pr12 py3 bg-white"
             style={
               Object {
                 "paddingLeft": 26.45,
@@ -535,7 +534,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
       </code>
     </pre>
     <div
-      className="bg-lighten75 absolute left right"
+      className="absolute left right z2 w6"
       data-chunk-overlay="chunk-1"
       style={
         Object {
@@ -544,11 +543,11 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
       }
     >
       <div
-        className="bg-blue h-full w6"
+        className="bg-blue h-full"
       />
     </div>
     <div
-      className="bg-lighten75 absolute left right"
+      className="absolute left right z2 w6"
       data-chunk-overlay="chunk-3"
       style={
         Object {
@@ -557,7 +556,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
       }
     >
       <div
-        className="bg-blue h-full w6"
+        className="bg-blue h-full"
       />
     </div>
     <div
