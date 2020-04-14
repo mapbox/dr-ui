@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Sticky from 'react-stickynode';
 import debounce from 'debounce';
 import classnames from 'classnames';
+import ErrorBoundary from '../error-boundary/error-boundary';
 
 class PageLayout extends React.Component {
   constructor(props) {
@@ -118,7 +119,7 @@ class PageLayout extends React.Component {
             sideBarColSize ? `col--${12 - sideBarColSize}-ml` : ''
           } col--12 mt24-mm mb60 pr0-mm px36-mm`}
         >
-          {props.children}
+          <ErrorBoundary>{props.children}</ErrorBoundary>
         </div>
       </div>
     );

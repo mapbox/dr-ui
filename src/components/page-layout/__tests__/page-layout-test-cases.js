@@ -330,4 +330,22 @@ testCases.code = {
   }
 };
 
+const BadFunction = () => {};
+
+testCases.oops = {
+  description: 'Trigger error boundary in content',
+  component: PageLayout,
+  props: {
+    sidebarContent: <div>Some content</div>,
+    sidebarTitle: 'Some title',
+    sidebarContentStickyTop: 0,
+    sidebarContentStickyTopNarrow: 0,
+    children: (
+      <div>
+        <BadFunction /> Doc content
+      </div>
+    )
+  }
+};
+
 export { testCases };
