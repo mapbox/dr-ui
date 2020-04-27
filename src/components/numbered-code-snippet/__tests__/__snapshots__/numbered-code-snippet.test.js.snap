@@ -2051,16 +2051,15 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
 
 exports[`numbered-code-snippet First line renders as expected 1`] = `
 <div
-  className="relative round z0 scroll-styled scroll-auto"
+  className="prose relative round z0 scroll-styled scroll-auto"
   style={
     Object {
-      "backgroundColor": "#f4f7fb",
       "maxHeight": 450,
     }
   }
 >
   <pre
-    className="my-neg12 pt12 ml-neg12 pl12 pr0 mobile-snippet txt-break-word"
+    className="py0 px0 txt-break-word mb0"
   >
     <code
       className="px0 hljs"
@@ -2070,7 +2069,7 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
         data-chunk-code="chunk-1"
       >
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 12,
@@ -2103,7 +2102,7 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 12,
@@ -2136,7 +2135,7 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 12,
@@ -2169,7 +2168,7 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 12,
@@ -2202,7 +2201,7 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 12,
@@ -2302,7 +2301,7 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
     </code>
   </pre>
   <div
-    className="bg-lighten75 absolute left right"
+    className="absolute left right z2 w6"
     data-chunk-overlay="chunk-1"
     style={
       Object {
@@ -2311,7 +2310,7 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
     }
   >
     <div
-      className="bg-blue h-full w6"
+      className="bg-blue h-full"
     />
   </div>
   <div
@@ -2329,16 +2328,15 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
 
 exports[`numbered-code-snippet Last line renders as expected 1`] = `
 <div
-  className="relative round z0 scroll-styled scroll-auto"
+  className="prose relative round z0 scroll-styled scroll-auto"
   style={
     Object {
-      "backgroundColor": "#f4f7fb",
       "maxHeight": 450,
     }
   }
 >
   <pre
-    className="my-neg12 pt12 ml-neg12 pl12 pr0 mobile-snippet txt-break-word"
+    className="py0 px0 txt-break-word mb0"
   >
     <code
       className="px0 hljs"
@@ -2412,7 +2410,7 @@ exports[`numbered-code-snippet Last line renders as expected 1`] = `
         data-chunk-code="chunk-1"
       >
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -2445,7 +2443,7 @@ exports[`numbered-code-snippet Last line renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 12,
@@ -2478,7 +2476,7 @@ exports[`numbered-code-snippet Last line renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -2511,7 +2509,7 @@ exports[`numbered-code-snippet Last line renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 40.9,
@@ -2544,7 +2542,7 @@ exports[`numbered-code-snippet Last line renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 12,
@@ -2580,7 +2578,7 @@ exports[`numbered-code-snippet Last line renders as expected 1`] = `
     </code>
   </pre>
   <div
-    className="bg-lighten75 absolute left right"
+    className="absolute left right z2 w6"
     data-chunk-overlay="chunk-1"
     style={
       Object {
@@ -2589,7 +2587,7 @@ exports[`numbered-code-snippet Last line renders as expected 1`] = `
     }
   >
     <div
-      className="bg-blue h-full w6"
+      className="bg-blue h-full"
     />
   </div>
   <div
