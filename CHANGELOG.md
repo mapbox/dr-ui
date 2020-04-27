@@ -1,5 +1,9 @@
 # Changelog
 
+## Master
+
+* Fix padding, background, and color contrast in `NumberedCodeSnippet` component. [#269](https://github.com/mapbox/dr-ui/pull/269)
+
 ## 0.27.0
 
 * Add feature to scroll to active item in `SectionedNavigation` onload. [#249](https://github.com/mapbox/dr-ui/pull/249)

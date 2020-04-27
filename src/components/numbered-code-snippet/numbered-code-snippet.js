@@ -250,12 +250,10 @@ export default class NumberedCodeSnippet extends React.PureComponent {
       const lineEls = codeChunk.highlightedLines.map((line, i) => {
         // Left padding is determined below
         let lineClasses = 'pr12';
-        if (codeChunk.live) lineClasses += ' py3';
+        if (codeChunk.live) lineClasses += ' py3 bg-white';
         if (!codeChunk.live && props.copyRanges !== undefined) {
           if (props.collapseLines) {
             lineClasses += this.state.expanded ? '' : ' h0 scroll-hidden';
-          } else {
-            lineClasses += ' opacity50 bg-darken10';
           }
         }
 
@@ -372,10 +370,10 @@ export default class NumberedCodeSnippet extends React.PureComponent {
           <div
             key={i}
             data-chunk-overlay={chunkId}
-            className="bg-lighten75 absolute left right"
+            className="absolute left right z2 w6"
             style={{ opacity: 0 }}
           >
-            <div className="bg-blue h-full w6" />
+            <div className="bg-blue h-full" />
           </div>
         );
 
@@ -410,7 +408,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
       );
     }
 
-    let containerClasses = 'relative round z0 scroll-styled';
+    let containerClasses = 'prose relative round z0 scroll-styled';
     if (props.maxHeight !== undefined) containerClasses += ' scroll-auto';
 
     const containerStyles = {};
@@ -421,9 +419,9 @@ export default class NumberedCodeSnippet extends React.PureComponent {
       <div
         className={containerClasses}
         ref={this.onContainerElement}
-        style={{ ...containerStyles, backgroundColor: '#f4f7fb' }}
+        style={{ ...containerStyles }}
       >
-        <pre className="my-neg12 pt12 ml-neg12 pl12 pr0 mobile-snippet txt-break-word">
+        <pre className="py0 px0 txt-break-word mb0">
           <code className={codeClasses}>{codeElements}</code>
         </pre>
         {copyAllButton}
