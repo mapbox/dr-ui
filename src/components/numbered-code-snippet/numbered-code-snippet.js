@@ -271,7 +271,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
     /**
      * After iterating through all lines, if the currentChunk still contains
      * contents that means the chunk has not yet been added to the allChunks
-     * array (which is doen with endCurrentChunk).
+     * array (which is done with endCurrentChunk).
      */
     if (currentChunk.length) {
       /**
