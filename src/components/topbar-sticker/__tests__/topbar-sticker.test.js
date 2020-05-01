@@ -33,4 +33,20 @@ describe('topbar-sticker', () => {
       expect(tree).toMatchSnapshot();
     });
   });
+
+  describe(testCases.unStick.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.unStick;
+      wrapper = renderer.create(testCase.element);
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });

@@ -37,4 +37,19 @@ testCases.unStickSooner = {
   )
 };
 
+testCases.unStick = {
+  description: 'Unstuck',
+  element: (
+    <div style={{ background: 'coral', height: 2000 }}>
+      <div className="px24 py12">Above the bar.</div>
+      <TopbarSticker isStuck={false}>
+        <div className="px24 py12">I'm not sticky</div>
+      </TopbarSticker>
+      <div className="px24 py12">
+        Below the bar, with lots of space to scroll.
+      </div>
+    </div>
+  )
+};
+
 export { testCases };

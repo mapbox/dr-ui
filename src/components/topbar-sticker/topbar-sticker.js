@@ -23,12 +23,16 @@ class TopbarSticker extends React.PureComponent {
   }
 
   componentDidMount() {
-    this.checkStickiness();
-    window.addEventListener('resize', this.checkStickiness);
+    if (this.props.isStuck) {
+      this.checkStickiness();
+      window.addEventListener('resize', this.checkStickiness);
+    }
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.checkStickiness);
+    if (this.props.isStuck) {
+      window.removeEventListener('resize', this.checkStickiness);
+    }
   }
 
   render() {
@@ -50,8 +54,13 @@ class TopbarSticker extends React.PureComponent {
   }
 }
 
+TopbarSticker.defaultProps = {
+  isStuck: true
+};
+
 TopbarSticker.propTypes = {
   unStickWidth: PropTypes.number, // optional prop to change the breakpoint when the topbar will unstick
+  isStuck: PropTypes.bool, // optional prop to completely unstick TopbarSticker. TopbarSticker is sticky by default (true).
   children: PropTypes.node.isRequired
 };
 
