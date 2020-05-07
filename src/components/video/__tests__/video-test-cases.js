@@ -12,6 +12,17 @@ testCases.basic = {
   }
 };
 
+testCases.settings = {
+  component: Video,
+  description: 'Turn off autoplay and loop',
+  props: {
+    src: './assets/browser-example.mp4',
+    title: 'A video!',
+    autoplay: false,
+    loop: false
+  }
+};
+
 noRenderCases.reducedMotion = {
   component: Video,
   description: 'Reduced motion',
