@@ -67,52 +67,32 @@ exports[`feedback Change type (sends anonymous user information) renders as expe
 exports[`feedback Feedback placement (sends anonymous user information) renders as expected 1`] = `
 <div>
   <div
-    className="sticky-outer-wrapper"
-    style={Object {}}
+    className="border-t border-b border--gray-light bg-white"
+    data-swiftype-index="false"
   >
     <div
-      className="sticky-inner-wrapper"
-      style={
-        Object {
-          "position": "relative",
-          "top": "0px",
-          "zIndex": 4,
-        }
-      }
+      className="limiter"
     >
       <div
-        className="border-t border-b border--gray-light bg-white"
-        data-swiftype-index="false"
+        className="grid grid--gut36 mr-neg36 mr0-mm"
       >
         <div
-          className="limiter"
+          className="col col--4-mm col--12"
         >
           <div
-            className="limiter"
+            className="ml24-mm  flex-parent flex-parent--center-cross"
+            style={
+              Object {
+                "height": 52,
+              }
+            }
           >
-            <div
-              className="grid grid--gut36 mr-neg36 mr0-mm"
+            <a
+              className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+              href="/api/"
             >
-              <div
-                className="col col--4-mm col--12"
-              >
-                <div
-                  className="ml24-mm  flex-parent flex-parent--center-cross"
-                  style={
-                    Object {
-                      "height": 52,
-                    }
-                  }
-                >
-                  <a
-                    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
-                    href="/api/"
-                  >
-                    API Documentation
-                  </a>
-                </div>
-              </div>
-            </div>
+              API Documentation
+            </a>
           </div>
         </div>
       </div>
