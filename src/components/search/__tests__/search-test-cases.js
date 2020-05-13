@@ -2,7 +2,7 @@ import React from 'react';
 import Search from '../search';
 import PageLayout from '../../page-layout/page-layout';
 import NavigationAccordion from '../../navigation-accordion/navigation-accordion';
-import TopbarSticker from '../../topbar-sticker/topbar-sticker';
+import Topbar from '../../topbar/topbar';
 import ProductMenu from '../../product-menu/product-menu';
 import TabList from '@mapbox/mr-ui/tab-list';
 import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
@@ -56,36 +56,34 @@ testCases.withLayout = {
   description: 'Search with `narrow` option set',
   element: (
     <div>
-      <TopbarSticker>
-        <div className="limiter">
-          <div className="grid grid--gut36 mr-neg36 mr0-mm">
-            <div className="col col--4-mm col--12">
-              <div
-                className="ml24-mm  flex-parent flex-parent--center-cross"
-                style={{ height: 52 }}
-              >
-                <ProductMenu productName="API Documentation" homePage="/api/" />
-              </div>
+      <Topbar>
+        <div className="grid grid--gut36 mr-neg36 mr0-mm">
+          <div className="col col--4-mm col--12">
+            <div
+              className="ml24-mm  flex-parent flex-parent--center-cross"
+              style={{ height: 52 }}
+            >
+              <ProductMenu productName="API Documentation" homePage="/api/" />
             </div>
-            <div className="col col--6-mm col--12 flex-parent flex-parent--main-mm flex-parent--center-cross align-r mb12 mb0-mm">
-              <TabList
-                items={[
-                  { id: 'one', label: 'Label one' },
-                  { id: 'two', label: 'Label two' },
-                  { id: 'three', label: 'Label three' },
-                  { id: 'four', label: 'Label four' }
-                ]}
-              />
-            </div>
+          </div>
+          <div className="col col--6-mm col--12 flex-parent flex-parent--main-mm flex-parent--center-cross align-r mb12 mb0-mm">
+            <TabList
+              items={[
+                { id: 'one', label: 'Label one' },
+                { id: 'two', label: 'Label two' },
+                { id: 'three', label: 'Label three' },
+                { id: 'four', label: 'Label four' }
+              ]}
+            />
+          </div>
 
-            <div className="col col--2-mm col--12 flex-parent flex-parent--end-main-mm flex-parent--center-cross">
-              <div className="w-full mb12 mb0-mm mr36">
-                <Search inputId="search4" />
-              </div>
+          <div className="col col--2-mm col--12 flex-parent flex-parent--end-main-mm flex-parent--center-cross">
+            <div className="w-full mb12 mb0-mm mr36">
+              <Search inputId="search4" />
             </div>
           </div>
         </div>
-      </TopbarSticker>
+      </Topbar>
       <div className="limiter">
         <PageLayout
           sidebarTitle="Section title"
