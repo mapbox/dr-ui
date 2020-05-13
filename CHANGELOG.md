@@ -4,6 +4,7 @@
 
 * Fix padding, background, and color contrast in `NumberedCodeSnippet` component. [#269](https://github.com/mapbox/dr-ui/pull/269)
 * Fix a bug in `NumberedCodeSnippet` where if the last line was included in `copyRanges` that code chunk would not be highlighted. [#268](https://github.com/mapbox/dr-ui/pull/268)
+* Add `Topbar` component. [#274](https://github.com/mapbox/dr-ui/pull/274)
 
 ## 0.27.0
 

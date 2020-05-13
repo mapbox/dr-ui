@@ -1,5 +1,5 @@
 import React from 'react';
-import TopbarSticker from '../topbar-sticker';
+import Topbar from '../topbar';
 import ProductMenu from '../../product-menu/product-menu';
 import Search from '../../search/search';
 
@@ -10,7 +10,7 @@ testCases.basic = {
   element: (
     <div style={{ background: 'pink', height: 3000 }}>
       <div className="px24 py12">Above the bar.</div>
-      <TopbarSticker>
+      <Topbar>
         <div className="grid">
           <div className="col col--4-mm col--12">
             <div className="ml24-mm pt12" style={{ height: 52 }}>
@@ -23,24 +23,7 @@ testCases.basic = {
             </div>
           </div>
         </div>
-      </TopbarSticker>
-      <div className="px24 py12">
-        Below the bar, with lots of space to scroll.
-      </div>
-    </div>
-  )
-};
-
-testCases.unStickSooner = {
-  description: 'Unsticks at 900px',
-  element: (
-    <div style={{ background: 'blue', height: 3000 }}>
-      <div className="px24 py12">Above the bar.</div>
-      <TopbarSticker unStickWidth={900}>
-        <div className="px24 py12">
-          I'm going to unstick at 900px wide or less!
-        </div>
-      </TopbarSticker>
+      </Topbar>
       <div className="px24 py12">
         Below the bar, with lots of space to scroll.
       </div>
