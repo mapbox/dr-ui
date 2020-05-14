@@ -106,7 +106,7 @@ exports[`product-menu Custom trigger style - display only renders as expected 1`
     className="flex-parent"
   >
     <a
-      className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate  color-white color-gray-light-on-hover"
+      className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-white color-gray-light-on-hover"
       href="/api-documentation/"
     >
       Light on dark

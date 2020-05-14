@@ -33,7 +33,7 @@ class ProductMenu extends React.PureComponent {
           className={classnames(
             'wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate',
             {
-              ' color-white color-gray-light-on-hover': props.lightText,
+              'color-white color-gray-light-on-hover': props.lightText,
               'color-blue-on-hover': !props.lightText
             }
           )}
