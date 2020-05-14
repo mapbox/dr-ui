@@ -1,18 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`product-menu Beta product renders as expected 1`] = `
-<a
-  className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
-  href="/vision/"
+<div
+  className="flex-parent"
 >
-  Vision SDK for Android
+  <a
+    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+    href="/vision/"
+  >
+    Vision SDK for Android
+  </a>
   <span
-    className="inline-block ml6 relative"
-    style={
-      Object {
-        "top": "-2px",
-      }
-    }
+    className="flex-child ml3"
   >
     <div
       className="inline-block"
@@ -47,45 +46,110 @@ exports[`product-menu Beta product renders as expected 1`] = `
       </div>
     </div>
   </span>
-</a>
+</div>
+`;
+
+exports[`product-menu Beta product renders as expected 2`] = `
+<div
+  className="flex-parent"
+>
+  <a
+    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+    href="/vision/"
+  >
+    Navigation SDK for Android
+  </a>
+  <span
+    className="flex-child ml3"
+  >
+    <div
+      className="inline-block"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+    >
+      <div
+        aria-describedby="tooltip-2"
+        className="txt-s txt-bold round px6 inline-block cursor-default border"
+        style={
+          Object {
+            "background": "#f1f3fd",
+            "borderColor": "#0428c8",
+            "color": "#0c248d",
+          }
+        }
+      >
+        Beta
+      </div>
+      <div
+        className="hide-visually"
+        id="tooltip-2"
+        role="tooltip"
+      >
+        <div
+          className="txt-s wmax120"
+        >
+          This feature is in public beta and is subject to changes.
+        </div>
+      </div>
+    </div>
+  </span>
+</div>
 `;
 
 exports[`product-menu Custom trigger style - display only renders as expected 1`] = `
 <div
   className="bg-gray-dark py6"
 >
-  <a
-    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-white color-gray-light-on-hover"
-    href="/api-documentation/"
+  <div
+    className="flex-parent"
   >
-    Light on dark
-  </a>
+    <a
+      className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate  color-white color-gray-light-on-hover"
+      href="/api-documentation/"
+    >
+      Light on dark
+    </a>
+  </div>
 </div>
 `;
 
 exports[`product-menu Fake items, but one matches this test case's location renders as expected 1`] = `
-<a
-  className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
-  href="/api-documentation/"
+<div
+  className="flex-parent"
 >
-  Items in here
-</a>
+  <a
+    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+    href="/api-documentation/"
+  >
+    Items in here
+  </a>
+</div>
 `;
 
 exports[`product-menu Mapbox product menu renders as expected 1`] = `
-<a
-  className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
-  href="/api-documentation/"
+<div
+  className="flex-parent"
 >
-  Mapbox product names
-</a>
+  <a
+    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+    href="/api-documentation/"
+  >
+    Mapbox product names
+  </a>
+</div>
 `;
 
 exports[`product-menu Product menu with something arbitrary in it renders as expected 1`] = `
-<a
-  className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
-  href="/api-documentation/"
+<div
+  className="flex-parent"
 >
-  Pizza pie
-</a>
+  <a
+    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+    href="/api-documentation/"
+  >
+    Pizza pie
+  </a>
+</div>
 `;

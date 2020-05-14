@@ -35,12 +35,16 @@ exports[`topbar-sticker For display only renders as expected 1`] = `
               }
             }
           >
-            <a
-              className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
-              href="/dr-ui/"
+            <div
+              className="flex-parent"
             >
-              Dr. UI
-            </a>
+              <a
+                className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+                href="/dr-ui/"
+              >
+                Dr. UI
+              </a>
+            </div>
           </div>
         </div>
         <div

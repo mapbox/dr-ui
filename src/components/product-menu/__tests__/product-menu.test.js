@@ -90,4 +90,21 @@ describe('product-menu', () => {
       expect(tree).toMatchSnapshot();
     });
   });
+  describe(testCases.betaLong.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.betaLong;
+      wrapper = renderer.create(
+        React.createElement(testCase.component, testCase.props)
+      );
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });

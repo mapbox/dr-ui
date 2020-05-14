@@ -87,12 +87,16 @@ exports[`feedback Feedback placement (sends anonymous user information) renders 
               }
             }
           >
-            <a
-              className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
-              href="/api/"
+            <div
+              className="flex-parent"
             >
-              API Documentation
-            </a>
+              <a
+                className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+                href="/api/"
+              >
+                API Documentation
+              </a>
+            </div>
           </div>
         </div>
       </div>
