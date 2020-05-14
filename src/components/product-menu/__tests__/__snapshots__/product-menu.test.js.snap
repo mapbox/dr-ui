@@ -11,7 +11,7 @@ exports[`product-menu Beta product renders as expected 1`] = `
     Vision SDK for Android
   </a>
   <span
-    className="flex-child ml3"
+    className="flex-child ml6"
   >
     <div
       className="inline-block"
@@ -60,7 +60,7 @@ exports[`product-menu Beta product renders as expected 2`] = `
     Navigation SDK for Android
   </a>
   <span
-    className="flex-child ml3"
+    className="flex-child ml6"
   >
     <div
       className="inline-block"
