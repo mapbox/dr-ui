@@ -18,7 +18,7 @@ class ProductMenu extends React.PureComponent {
         : undefined
     };
     return (
-      <span className="flex-child ml6">
+      <span className="flex-child mx6">
         <Tag {...tagProps} />
       </span>
     );
