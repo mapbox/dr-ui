@@ -194,6 +194,7 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
               className="fl"
             >
               <button
+                aria-label="one"
                 className="px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block border-b border--transparent "
                 data-test="one"
                 onClick={[Function]}
@@ -206,6 +207,7 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
               className="fl"
             >
               <button
+                aria-label="two"
                 className="px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block border-b border--transparent "
                 data-test="two"
                 onClick={[Function]}
@@ -218,6 +220,7 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
               className="fl"
             >
               <button
+                aria-label="three"
                 className="px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block-mm none border--transparent "
                 data-test="three"
                 onClick={[Function]}
@@ -230,6 +233,7 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
               className="fl"
             >
               <button
+                aria-label="four"
                 className="px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block-mm none border--transparent "
                 data-test="four"
                 onClick={[Function]}
@@ -249,6 +253,7 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
                 onKeyDown={[Function]}
               >
                 <button
+                  aria-label="More"
                   className="px6 py12 mr12 align-l cursor-pointer none-mm"
                   type="button"
                 >
