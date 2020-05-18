@@ -23,7 +23,19 @@ export default class ContextlessAndroidActivityToggle extends React.Component {
 
     let selectedCode = '';
     if (context) {
-      selectedCode = this.checkPreference('kotlin') ? kotlin : java;
+      if (kotlin === undefined) {
+        /* If there is no kotlin code, use java. */
+        selectedCode = java;
+      } else if (java === undefined) {
+        /* If there is no java code, use kotlin. */
+        selectedCode = kotlin;
+      } else if (this.checkPreference('kotlin')) {
+        /** If there is both java and kotlin code,
+         * use the preferred language. */
+        selectedCode = kotlin;
+      } else {
+        selectedCode = java;
+      }
     }
 
     const snippetProps = {
@@ -89,7 +101,7 @@ ContextlessAndroidActivityToggle.propTypes = {
   /* A unique `id` is required for the language toggle. */
   id: PropTypes.string.isRequired,
   /* Every code snippet must include raw Java code. */
-  java: PropTypes.string.isRequired,
+  java: PropTypes.string,
   /* Optionally, the code snippet can include raw Kotlin code.
   If this is included, the language toggle will be displayed. */
   kotlin: PropTypes.string,
