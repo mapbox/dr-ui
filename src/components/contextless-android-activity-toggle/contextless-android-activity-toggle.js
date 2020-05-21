@@ -4,6 +4,24 @@ import ToggleableCodeBlock from '../toggleable-code-block/toggleable-code-block'
 import { highlightJava } from '../highlight/java';
 import { highlightKotlin } from '../highlight/kotlin';
 
+export function findSelectedCode(kotlin, java, preference) {
+  let selectedCode = '';
+  if (kotlin === undefined) {
+    /* If there is no kotlin code, use java. */
+    selectedCode = java;
+  } else if (java === undefined) {
+    /* If there is no java code, use kotlin. */
+    selectedCode = kotlin;
+  } else if (preference === 'kotlin') {
+    /** If there is both java and kotlin code,
+     * use the preferred language. */
+    selectedCode = kotlin;
+  } else {
+    selectedCode = java;
+  }
+  return selectedCode;
+}
+
 export default class ContextlessAndroidActivityToggle extends React.Component {
   checkPreference = language => {
     return this.props.context.preferredLanguage.android === language;
@@ -21,22 +39,11 @@ export default class ContextlessAndroidActivityToggle extends React.Component {
       limitHeight
     } = this.props;
 
-    let selectedCode = '';
-    if (context) {
-      if (kotlin === undefined) {
-        /* If there is no kotlin code, use java. */
-        selectedCode = java;
-      } else if (java === undefined) {
-        /* If there is no java code, use kotlin. */
-        selectedCode = kotlin;
-      } else if (this.checkPreference('kotlin')) {
-        /** If there is both java and kotlin code,
-         * use the preferred language. */
-        selectedCode = kotlin;
-      } else {
-        selectedCode = java;
-      }
-    }
+    const selectedCode = findSelectedCode(
+      kotlin,
+      java,
+      context.preferredLanguage.android
+    );
 
     const snippetProps = {
       copyRanges: copyRanges || undefined,
