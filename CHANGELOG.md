@@ -1,5 +1,9 @@
 # Changelog
 
+## Master
+
+- Allow Kotlin-only activities in `ContextlessAndroidActivityToggle`. [#278](https://github.com/mapbox/dr-ui/pull/278)
+
 ## 0.28.0
 
 * Fix padding, background, and color contrast in `NumberedCodeSnippet` component. [#269](https://github.com/mapbox/dr-ui/pull/269)
