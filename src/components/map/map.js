@@ -17,7 +17,14 @@ class Map extends React.PureComponent {
   };
 
   initMap() {
-    const { style, center, zoom, accessToken } = this.props;
+    const {
+      style,
+      center,
+      zoom,
+      accessToken,
+      navControls,
+      onMapLoad
+    } = this.props;
 
     if (accessToken) {
       mapboxgl.accessToken = accessToken;
@@ -27,6 +34,16 @@ class Map extends React.PureComponent {
         center: center,
         zoom: zoom
       });
+
+      if (navControls) {
+        this.map.addControl(new mapboxgl.NavigationControl());
+      }
+
+      if (onMapLoad) {
+        this.map.on('load', () => {
+          onMapLoad(this.map); // pass `map` to onMapLoad function to perform changes to it
+        });
+      }
     }
   }
 
@@ -50,7 +67,8 @@ Map.defaultProps = {
   width: '100%',
   style: `mapbox://styles/mapbox/streets-v11`,
   zoom: 16,
-  center: [-73.989, 40.733]
+  center: [-73.989, 40.733],
+  navControls: false
 };
 
 Map.propTypes = {
@@ -59,7 +77,9 @@ Map.propTypes = {
   style: PropTypes.string,
   zoom: PropTypes.number,
   center: PropTypes.array,
-  accessToken: PropTypes.string
+  accessToken: PropTypes.string,
+  onMapLoad: PropTypes.func, // function to perform on map load
+  navControls: PropTypes.bool // enable navigation controls
 };
 
 export default Map;
