@@ -6,58 +6,87 @@ import GLWrapper from '../gl-wrapper/gl-wrapper';
 class Map extends React.PureComponent {
   constructor(props) {
     super(props);
+    this.state = {
+      loading: true
+    };
     this.mapContainer = React.createRef();
   }
 
+  handleToken = () => {
+    const { accessToken } = this.props;
+    // check if `MapboxPageShell` is available
+    const hasMapboxPageShell = typeof MapboxPageShell !== 'undefined';
+    if (hasMapboxPageShell) {
+      MapboxPageShell.afterUserCheck(() => {
+        mapboxgl.accessToken = MapboxPageShell.getMapboxAccessToken();
+      });
+    } else if (accessToken) {
+      mapboxgl.accessToken = accessToken;
+    } else {
+      // send error to Sentry?
+    }
+  };
+
   // wait for GLWrapper to let us know if we can load the map
   loadMap = status => {
+    // if loadMap returns true, we can load the map
     if (status) {
-      this.initMap();
+      // make sure there is an accessToken prop or a token from MapboxPageShell
+      this.handleToken();
+      // once the token is set, initialize the map
+      if (mapboxgl.accessToken) {
+        this.setState({ loading: false }, () => {
+          this.initMap();
+        });
+      }
     }
   };
 
   initMap() {
-    const {
-      style,
-      center,
-      zoom,
-      accessToken,
-      navControls,
-      onMapLoad
-    } = this.props;
+    const { style, center, zoom, navControls, onMapLoad } = this.props;
 
-    if (accessToken) {
-      mapboxgl.accessToken = accessToken;
-      this.map = new mapboxgl.Map({
-        container: this.mapContainer.current,
-        style: style,
-        center: center,
-        zoom: zoom
+    this.map = new mapboxgl.Map({
+      container: this.mapContainer.current,
+      style: style,
+      center: center,
+      zoom: zoom
+    });
+
+    if (navControls) {
+      this.map.addControl(new mapboxgl.NavigationControl());
+    }
+
+    if (onMapLoad) {
+      this.map.on('load', () => {
+        onMapLoad(this.map); // pass `map` to onMapLoad function to perform changes to it
       });
-
-      if (navControls) {
-        this.map.addControl(new mapboxgl.NavigationControl());
-      }
-
-      if (onMapLoad) {
-        this.map.on('load', () => {
-          onMapLoad(this.map); // pass `map` to onMapLoad function to perform changes to it
-        });
-      }
     }
   }
 
   renderMap() {
-    const { height, width, accessToken } = this.props;
-    if (!accessToken) return <div>Missing access token.</div>;
+    const { height, width } = this.props;
     return (
       <div style={{ width: width, height: height }} ref={this.mapContainer} />
     );
   }
 
-  render() {
+  renderLoader() {
+    const { height } = this.props;
     return (
-      <GLWrapper loadMapCallback={this.loadMap}>{this.renderMap()}</GLWrapper>
+      <div style={{ height: height }} className="relative">
+        <div className="flex-parent flex-parent--center-cross flex-parent--center-main absolute top right bottom left bg-darken10 z5">
+          <div className="flex-child loading" />
+        </div>
+      </div>
+    );
+  }
+
+  render() {
+    const { loading } = this.state;
+    return (
+      <GLWrapper loadMapCallback={this.loadMap}>
+        {loading ? this.renderLoader() : this.renderMap()}
+      </GLWrapper>
     );
   }
 }
