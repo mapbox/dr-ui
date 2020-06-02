@@ -1,6 +1,6 @@
 # Changelog
 
-## Master
+## 0.29.1
 
 - Remove `limiter` from `Topbar`. [#282](https://github.com/mapbox/dr-ui/pull/282)
 
