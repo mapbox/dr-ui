@@ -8,7 +8,7 @@ class Topbar extends React.PureComponent {
         className="border-t border-b border--gray-light bg-white"
         data-swiftype-index="false"
       >
-        <div className="limiter">{this.props.children}</div>
+        {this.props.children}
       </div>
     );
   }

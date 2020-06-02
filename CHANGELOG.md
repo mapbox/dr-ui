@@ -1,5 +1,9 @@
 # Changelog
 
+## Master
+
+- Remove `limiter` from `Topbar`. [#282](https://github.com/mapbox/dr-ui/pull/282)
+
 ## 0.29.0
 
 - Allow Kotlin-only activities in `ContextlessAndroidActivityToggle`. [#278](https://github.com/mapbox/dr-ui/pull/278)

@@ -78,13 +78,15 @@ testCases.common = {
   element: (
     <div>
       <Topbar>
-        <div className="grid grid--gut36 mr-neg36 mr0-mm">
-          <div className="col col--4-mm col--12">
-            <div
-              className="ml24-mm  flex-parent flex-parent--center-cross"
-              style={{ height: 52 }}
-            >
-              <ProductMenu productName="API Documentation" homePage="/api/" />
+        <div className="limiter">
+          <div className="grid grid--gut36 mr-neg36 mr0-mm">
+            <div className="col col--4-mm col--12">
+              <div
+                className="ml24-mm  flex-parent flex-parent--center-cross"
+                style={{ height: 52 }}
+              >
+                <ProductMenu productName="API Documentation" homePage="/api/" />
+              </div>
             </div>
           </div>
         </div>
