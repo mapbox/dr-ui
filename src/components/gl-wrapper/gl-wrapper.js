@@ -11,7 +11,11 @@ export default class GLWrapper extends React.Component {
     };
   }
   componentDidMount() {
-    this.setState({ supported: supported() });
+    this.setState({ supported: supported() }, () => {
+      // send status callback if provided
+      if (this.props.loadMapCallback)
+        this.props.loadMapCallback(this.state.supported);
+    });
   }
   render() {
     // wait for supported() to push to state
@@ -35,5 +39,6 @@ export default class GLWrapper extends React.Component {
 }
 
 GLWrapper.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  loadMapCallback: PropTypes.func
 };
