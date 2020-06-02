@@ -20,8 +20,11 @@ testCases.opts = {
   props: {
     zoom: 1,
     height: 200,
-    width: 200,
-    accessToken: token
+    width: 400,
+    accessToken: token,
+    scrollZoom: false,
+    navControls: true,
+    themeMapContainer: 'round shadow-darken25 mx-auto my30'
   }
 };
 

@@ -43,7 +43,14 @@ class Map extends React.PureComponent {
   };
 
   initMap() {
-    const { style, center, zoom, navControls, onMapLoad } = this.props;
+    const {
+      style,
+      center,
+      zoom,
+      navControls,
+      onMapLoad,
+      scrollZoom
+    } = this.props;
 
     this.map = new mapboxgl.Map({
       container: this.mapContainer.current,
@@ -56,6 +63,10 @@ class Map extends React.PureComponent {
       this.map.addControl(new mapboxgl.NavigationControl());
     }
 
+    if (!scrollZoom) {
+      this.map.scrollZoom.disable();
+    }
+
     if (onMapLoad) {
       this.map.on('load', () => {
         onMapLoad(this.map); // pass `map` to onMapLoad function to perform changes to it
@@ -64,9 +75,13 @@ class Map extends React.PureComponent {
   }
 
   renderMap() {
-    const { height, width } = this.props;
+    const { height, width, themeMapContainer } = this.props;
     return (
-      <div style={{ width: width, height: height }} ref={this.mapContainer} />
+      <div
+        className={themeMapContainer}
+        style={{ width: width, height: height }}
+        ref={this.mapContainer}
+      />
     );
   }
 
@@ -94,10 +109,12 @@ class Map extends React.PureComponent {
 Map.defaultProps = {
   height: 400,
   width: '100%',
-  style: `mapbox://styles/mapbox/streets-v11`,
+  style: 'mapbox://styles/mapbox/streets-v11',
   zoom: 16,
   center: [-73.989, 40.733],
-  navControls: false
+  navControls: false,
+  themeMapContainer: '',
+  scrollZoom: true
 };
 
 Map.propTypes = {
@@ -108,7 +125,9 @@ Map.propTypes = {
   center: PropTypes.array,
   accessToken: PropTypes.string,
   onMapLoad: PropTypes.func, // function to perform on map load
-  navControls: PropTypes.bool // enable navigation controls
+  navControls: PropTypes.bool, // enable navigation controls
+  themeMapContainer: PropTypes.string,
+  scrollZoom: PropTypes.bool
 };
 
 export default Map;
