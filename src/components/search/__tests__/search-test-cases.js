@@ -57,29 +57,31 @@ testCases.withLayout = {
   element: (
     <div>
       <Topbar>
-        <div className="grid grid--gut36 mr-neg36 mr0-mm">
-          <div className="col col--4-mm col--12">
-            <div
-              className="ml24-mm  flex-parent flex-parent--center-cross"
-              style={{ height: 52 }}
-            >
-              <ProductMenu productName="API Documentation" homePage="/api/" />
+        <div className="limiter">
+          <div className="grid grid--gut36 mr-neg36 mr0-mm">
+            <div className="col col--4-mm col--12">
+              <div
+                className="ml24-mm  flex-parent flex-parent--center-cross"
+                style={{ height: 52 }}
+              >
+                <ProductMenu productName="API Documentation" homePage="/api/" />
+              </div>
             </div>
-          </div>
-          <div className="col col--6-mm col--12 flex-parent flex-parent--main-mm flex-parent--center-cross align-r mb12 mb0-mm">
-            <TabList
-              items={[
-                { id: 'one', label: 'Label one' },
-                { id: 'two', label: 'Label two' },
-                { id: 'three', label: 'Label three' },
-                { id: 'four', label: 'Label four' }
-              ]}
-            />
-          </div>
+            <div className="col col--6-mm col--12 flex-parent flex-parent--main-mm flex-parent--center-cross align-r mb12 mb0-mm">
+              <TabList
+                items={[
+                  { id: 'one', label: 'Label one' },
+                  { id: 'two', label: 'Label two' },
+                  { id: 'three', label: 'Label three' },
+                  { id: 'four', label: 'Label four' }
+                ]}
+              />
+            </div>
 
-          <div className="col col--2-mm col--12 flex-parent flex-parent--end-main-mm flex-parent--center-cross">
-            <div className="w-full mb12 mb0-mm mr36">
-              <Search inputId="search4" />
+            <div className="col col--2-mm col--12 flex-parent flex-parent--end-main-mm flex-parent--center-cross">
+              <div className="w-full mb12 mb0-mm mr36">
+                <Search inputId="search4" />
+              </div>
             </div>
           </div>
         </div>
