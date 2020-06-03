@@ -31,10 +31,9 @@ Only the component itself and whatever *it* depends on will be drawn into your b
 
 ## Development
 
-To run the test-cases app:
+To run the test cases app:
 
 ```bash
-# Start the test-cases app.
 npm start
 ```
 
