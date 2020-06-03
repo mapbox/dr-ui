@@ -3,6 +3,14 @@ import PropTypes from 'prop-types';
 import mapboxgl from 'mapbox-gl';
 import GLWrapper from '../gl-wrapper/gl-wrapper';
 
+/*
+`Map` the following checks to make sure it's safe to load the map:
+1. Display a loader.
+2. Check with GLWrapper to make sure the user's browser supports GL.
+3. Attempt to get the `MapboxPageShell` then checks for an `accessToken` prop.
+4. If the user has GL enabled and an accessToken are avilable: remove the loader and load the map.
+*/
+
 class Map extends React.PureComponent {
   constructor(props) {
     super(props);
@@ -33,7 +41,7 @@ class Map extends React.PureComponent {
     if (status) {
       // make sure there is an accessToken prop or a token from MapboxPageShell
       this.handleToken();
-      // once the token is set, initialize the map
+      // once the token is set, turn off the loader and initialize the map
       if (mapboxgl.accessToken) {
         this.setState({ loading: false }, () => {
           this.initMap();
@@ -59,17 +67,21 @@ class Map extends React.PureComponent {
       zoom: zoom
     });
 
+    // add navigation controls
     if (navControls) {
       this.map.addControl(new mapboxgl.NavigationControl());
     }
 
+    // disable scrollZoom
     if (!scrollZoom) {
       this.map.scrollZoom.disable();
     }
 
+    // handle custom function on map load
     if (onMapLoad) {
       this.map.on('load', () => {
-        onMapLoad(this.map); // pass `map` to onMapLoad function to perform changes to it
+        // pass `map` to the custom onMapLoad function to perform changes to it
+        onMapLoad(this.map);
       });
     }
   }
@@ -87,6 +99,7 @@ class Map extends React.PureComponent {
 
   renderLoader() {
     const { height } = this.props;
+    // height of the loader matches height of map to prevent layout reflow
     return (
       <div style={{ height: height }} className="relative">
         <div className="flex-parent flex-parent--center-cross flex-parent--center-main absolute top right bottom left bg-darken10 z5">
