@@ -20,16 +20,24 @@ class Map extends React.PureComponent {
     this.mapContainer = React.createRef();
   }
 
+  // turn off loader and set the token
+  setToken = token => {
+    this.setState({ loading: false }, () => {
+      mapboxgl.accessToken = token;
+      this.initMap();
+    });
+  };
+
   handleToken = () => {
     const { accessToken } = this.props;
     // check if `MapboxPageShell` is available
     const hasMapboxPageShell = typeof MapboxPageShell !== 'undefined';
     if (hasMapboxPageShell) {
       MapboxPageShell.afterUserCheck(() => {
-        mapboxgl.accessToken = MapboxPageShell.getMapboxAccessToken();
+        this.setToken(MapboxPageShell.getMapboxAccessToken());
       });
     } else if (accessToken) {
-      mapboxgl.accessToken = accessToken;
+      this.setToken(accessToken);
     } else {
       // send error to Sentry?
     }
@@ -41,12 +49,6 @@ class Map extends React.PureComponent {
     if (status) {
       // make sure there is an accessToken prop or a token from MapboxPageShell
       this.handleToken();
-      // once the token is set, turn off the loader and initialize the map
-      if (mapboxgl.accessToken) {
-        this.setState({ loading: false }, () => {
-          this.initMap();
-        });
-      }
     }
   };
 
