@@ -134,15 +134,25 @@ Map.defaultProps = {
 };
 
 Map.propTypes = {
+  // map container width
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  // map container height
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  // map style url
   style: PropTypes.string,
+  // map zoom
   zoom: PropTypes.number,
+  // map center [lng, lat]
   center: PropTypes.array,
+  // optional accessToken if `MapboxPageShell` is not available
   accessToken: PropTypes.string,
-  onMapLoad: PropTypes.func, // function to perform on map load
-  navControls: PropTypes.bool, // enable navigation controls
+  // function to perform on map load
+  onMapLoad: PropTypes.func,
+  // enable navigation controls (default false)
+  navControls: PropTypes.bool,
+  // set classes to the map's container
   themeMapContainer: PropTypes.string,
+  // disable scrollZoom (default true)
   scrollZoom: PropTypes.bool
 };
 
