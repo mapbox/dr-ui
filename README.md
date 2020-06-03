@@ -31,11 +31,17 @@ Only the component itself and whatever *it* depends on will be drawn into your b
 
 ## Development
 
-Here are some commands you'll probably want to use:
+To run the test-cases app:
 
 ```bash
 # Start the test-cases app.
 npm start
+```
+
+Some test cases require a Mapbox access token. In this repo's root folder, create a file called `.env` (it will be ignored by git) with the following contents (replace `pk.ey...` with your own Mapbox access token):
+
+```
+MapboxAccessToken=pk.ey...
 ```
 
 Docs build process and automated testing coming soon.

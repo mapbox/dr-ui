@@ -5,3 +5,4 @@ dist
 pkg
 src/test-cases-app/component-index.js
 src/components/syntax-highlighting/index.js
+.env

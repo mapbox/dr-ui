@@ -4,13 +4,11 @@ import mapboxgl from 'mapbox-gl';
 
 const testCases = {};
 
-const token = '';
-
 testCases.basic = {
   component: Map,
   description: 'Default map.',
   props: {
-    accessToken: token
+    accessToken: process.env.MapboxAccessToken
   }
 };
 
@@ -21,7 +19,7 @@ testCases.opts = {
     zoom: 1,
     height: 200,
     width: 400,
-    accessToken: token,
+    accessToken: process.env.MapboxAccessToken,
     scrollZoom: false,
     navControls: true,
     themeMapContainer: 'round shadow-darken25 mx-auto my30'
@@ -32,7 +30,7 @@ testCases.onMapLoad = {
   component: Map,
   description: 'Pass function on map load',
   props: {
-    accessToken: token,
+    accessToken: process.env.MapboxAccessToken,
     center: [-96, 37.8],
     zoom: 3,
     onMapLoad: map => {
@@ -114,7 +112,11 @@ testCases.onMapLoadAnother = {
         className="absolute top left mt6 ml6 bg-white py6 px12 txt-s txt-mono round z3 color-gray"
         id="coordinates"
       />
-      <Map accessToken={token} center={[0, 0]} onMapLoad={addMarker} />
+      <Map
+        accessToken={process.env.MapboxAccessToken}
+        center={[0, 0]}
+        onMapLoad={addMarker}
+      />
     </div>
   )
 };
