@@ -4,7 +4,7 @@ import mapboxgl from 'mapbox-gl';
 import GLWrapper from '../gl-wrapper/gl-wrapper';
 
 /*
-`Map` the following checks to make sure it's safe to load the map:
+`Map` performs the following checks to make sure it's safe to load the map:
 1. Display a loader.
 2. Check with GLWrapper to make sure the user's browser supports GL.
 3. Attempt to get the `MapboxPageShell` then checks for an `accessToken` prop.
