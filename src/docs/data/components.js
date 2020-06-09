@@ -545,8 +545,10 @@ mapbox:layout_constraintTop_toTopOf="parent" />
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Basic</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">CodeSnippet</span></span> <span class="token attr-name">code</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">&lt;h1>Hello world!&lt;/h1></span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">}</span></span>
-      <span class="token attr-name">highlighter</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> highlightHtml<span class="token punctuation">}</span></span><span class="token punctuation">/></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">CodeSnippet</span></span>
+        <span class="token attr-name">code</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">&lt;h1>Hello world!&lt;/h1></span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">}</span></span>
+        <span class="token attr-name">highlighter</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> highlightHtml<span class="token punctuation">}</span></span>
+      <span class="token punctuation">/></span></span>
     <span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
@@ -560,23 +562,27 @@ mapbox:layout_constraintTop_toTopOf="parent" />
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Everything</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">CodeSnippet</span></span> <span class="token attr-name">code</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">&lt;h1>Hello world!&lt;/h1></span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">}</span></span>
-    <span class="token attr-name">highlighter</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> highlightHtml<span class="token punctuation">}</span></span>
-    <span class="token attr-name">filename</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>index.html<span class="token punctuation">'</span></span>
-    <span class="token attr-name">edit</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
-      html<span class="token operator">:</span> <span class="token string">'&lt;h1>Hello world!&lt;/h1>'</span><span class="token punctuation">,</span>
-      css<span class="token operator">:</span> <span class="token string">'h1 {color: red}'</span><span class="token punctuation">,</span>
-      js<span class="token operator">:</span> <span class="token string">"console.log('hello!')"</span><span class="token punctuation">,</span>
-      resources<span class="token operator">:</span> <span class="token punctuation">{</span>
-        js<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-        css<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-      <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      frontMatter<span class="token operator">:</span> <span class="token punctuation">{</span>
-        title<span class="token operator">:</span> <span class="token string">'My Code'</span><span class="token punctuation">,</span>
-        description<span class="token operator">:</span> <span class="token string">'cool code by mapbox'</span><span class="token punctuation">,</span>
-        pathname<span class="token operator">:</span> <span class="token string">'/dr-ui'</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">CodeSnippet</span></span>
+        <span class="token attr-name">code</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">&lt;h1>Hello world!&lt;/h1></span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">}</span></span>
+        <span class="token attr-name">highlighter</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> highlightHtml<span class="token punctuation">}</span></span>
+        <span class="token attr-name">filename</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>index.html<span class="token punctuation">"</span></span>
+        <span class="token attr-name">edit</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+          html<span class="token operator">:</span> <span class="token string">'&lt;h1>Hello world!&lt;/h1>'</span><span class="token punctuation">,</span>
+          css<span class="token operator">:</span> <span class="token string">'h1 {color: red}'</span><span class="token punctuation">,</span>
+          js<span class="token operator">:</span> <span class="token string">"console.log('hello!')"</span><span class="token punctuation">,</span>
+          resources<span class="token operator">:</span> <span class="token punctuation">{</span>
+            js<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            css<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          frontMatter<span class="token operator">:</span> <span class="token punctuation">{</span>
+            title<span class="token operator">:</span> <span class="token string">'My Code'</span><span class="token punctuation">,</span>
+            description<span class="token operator">:</span> <span class="token string">'cool code by mapbox'</span><span class="token punctuation">,</span>
+            pathname<span class="token operator">:</span> <span class="token string">'/dr-ui'</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+      <span class="token punctuation">/></span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
         description: <p>CodeSnippet with every feature</p>
@@ -589,7 +595,7 @@ mapbox:layout_constraintTop_toTopOf="parent" />
     props: {
       filename: {
         type: { name: "string" },
-        required: false,
+        required: true,
         defaultValue: undefined,
         description: <div />,
         options: undefined
@@ -619,17 +625,53 @@ mapbox:layout_constraintTop_toTopOf="parent" />
         code: `<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> CodeSnippetTitle <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/code-snippet-title'</span><span class="token punctuation">;</span>
 
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Basic</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">CodeSnippetTitle</span></span>
         <span class="token attr-name">filename</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>MainActivity.java<span class="token punctuation">"</span></span>
-        <span class="token attr-name">link</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://github.com/mapbox/dr-ui<span class="token punctuation">"</span></span>
+        <span class="token attr-name">link</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://github.com/mapbox/<span class="token punctuation">"</span></span>
       <span class="token punctuation">/></span></span>
     <span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
         description: <p>Basic.</p>
+      },
+      {
+        exampleModule: require("/Users/katydecorah/Documents/GitHub/dr-ui/src/components/code-snippet-title/examples/custom.js"),
+        code: `<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> CodeSnippetTitle <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/code-snippet-title'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> CodeToggle <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/code-toggle'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Custom</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">CodeSnippetTitle</span></span>
+        <span class="token attr-name">filename</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ViewController<span class="token punctuation">"</span></span>
+        <span class="token attr-name">link</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://github.com/mapbox/<span class="token punctuation">"</span></span>
+        <span class="token attr-name">toggle</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">CodeToggle</span></span>
+            <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>some-id<span class="token punctuation">"</span></span>
+            <span class="token attr-name">onChange</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+            <span class="token attr-name">options</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span>
+              <span class="token punctuation">{</span>
+                label<span class="token operator">:</span> <span class="token string">'Swift'</span><span class="token punctuation">,</span>
+                language<span class="token operator">:</span> <span class="token string">'swift'</span><span class="token punctuation">,</span>
+                preferredLanguage<span class="token operator">:</span> <span class="token boolean">true</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+              <span class="token punctuation">{</span>
+                label<span class="token operator">:</span> <span class="token string">'Objective-C'</span><span class="token punctuation">,</span>
+                language<span class="token operator">:</span> <span class="token string">'objectiveC'</span><span class="token punctuation">,</span>
+                preferredLanguage<span class="token operator">:</span> <span class="token boolean">false</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span><span class="token punctuation">}</span></span>
+          <span class="token punctuation">/></span></span>
+        <span class="token punctuation">)</span><span class="token punctuation">}</span></span>
+      <span class="token punctuation">/></span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>`,
+        description: <p>With toggle</p>
       }
     ]
   },
