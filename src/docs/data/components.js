@@ -1720,13 +1720,13 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">GLWrapper</span></span><span class="token punctuation">></span></span><span class="token plain-text">
-      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span>
-        <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://giphy.com/embed/JIX9t2j0ZTN9S<span class="token punctuation">"</span></span>
-        <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>480<span class="token punctuation">"</span></span>
-        <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>480<span class="token punctuation">"</span></span>
-        <span class="token attr-name">frameBorder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span>
-        <span class="token attr-name">allowFullScreen</span>
-      <span class="token punctuation">/></span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span>
+          <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://giphy.com/embed/JIX9t2j0ZTN9S<span class="token punctuation">"</span></span>
+          <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>480<span class="token punctuation">"</span></span>
+          <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>480<span class="token punctuation">"</span></span>
+          <span class="token attr-name">frameBorder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span>
+          <span class="token attr-name">allowFullScreen</span>
+        <span class="token punctuation">/></span></span><span class="token plain-text">
       </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">GLWrapper</span></span><span class="token punctuation">></span></span>
     <span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
@@ -1761,7 +1761,26 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
         options: undefined
       }
     },
-    examples: []
+    examples: [
+      {
+        exampleModule: require("/Users/katydecorah/Documents/GitHub/dr-ui/src/components/glossary-card/examples/basic.js"),
+        code: `<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> GlossaryCard <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/glossary-card'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Basic</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">GlossaryCard</span></span>
+        <span class="token attr-name">entryUrl</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#donut<span class="token punctuation">"</span></span>
+        <span class="token attr-name">entryTitle</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Donut<span class="token punctuation">"</span></span>
+        <span class="token attr-name">entryDescription</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>A delicious fried dough treat typically shaped as a circle with a hole in the middle.<span class="token punctuation">"</span></span>
+      <span class="token punctuation">/></span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>`,
+        description: <p>Basic.</p>
+      }
+    ]
   },
   {
     name: "GlossaryImage",
@@ -1775,7 +1794,20 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
         options: undefined
       }
     },
-    examples: []
+    examples: [
+      {
+        exampleModule: require("/Users/katydecorah/Documents/GitHub/dr-ui/src/components/glossary-image/examples/basic.js"),
+        code: `<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> GlossaryImage <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/glossary-image'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Basic</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">GlossaryImage</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>`,
+        description: <p>Basic.</p>
+      }
+    ]
   },
   {
     name: "GlossaryPage",
@@ -1806,7 +1838,49 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
         }
       }
     },
-    examples: []
+    examples: [
+      {
+        exampleModule: require("/Users/katydecorah/Documents/GitHub/dr-ui/src/components/glossary-page/examples/basic.js"),
+        code: `<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> GlossaryPage <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/glossary-page'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Basic</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">GlossaryPage</span></span>
+        <span class="token attr-name">entries</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            path<span class="token operator">:</span> <span class="token string">'#donut'</span><span class="token punctuation">,</span>
+            title<span class="token operator">:</span> <span class="token string">'Donut'</span><span class="token punctuation">,</span>
+            description<span class="token operator">:</span>
+              <span class="token string">'A delicious fried dough treat typically shaped as a circle with a hole in the middle.'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            path<span class="token operator">:</span> <span class="token string">'#chip'</span><span class="token punctuation">,</span>
+            title<span class="token operator">:</span> <span class="token string">'Chip'</span><span class="token punctuation">,</span>
+            description<span class="token operator">:</span>
+              <span class="token string">'A thin, crispy, and typically savory snack. It can be made of potatoes, corn, or a variety of other foods.'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            path<span class="token operator">:</span> <span class="token string">'#candy'</span><span class="token punctuation">,</span>
+            title<span class="token operator">:</span> <span class="token string">'Candy'</span><span class="token punctuation">,</span>
+            description<span class="token operator">:</span>
+              <span class="token string">'A sweet snack that is often fruity or chocolately or both!'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            path<span class="token operator">:</span> <span class="token string">'#granola-bar'</span><span class="token punctuation">,</span>
+            title<span class="token operator">:</span> <span class="token string">'Granola bar'</span><span class="token punctuation">,</span>
+            description<span class="token operator">:</span>
+              <span class="token string">'Like granola, but pressed together in a rectangular bar. It can be crunchy or chewy.'</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span><span class="token punctuation">}</span></span>
+      <span class="token punctuation">/></span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>`,
+        description: <p>Basic.</p>
+      }
+    ]
   },
   {
     name: "GlossarySection",
@@ -1844,7 +1918,38 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
         }
       }
     },
-    examples: []
+    examples: [
+      {
+        exampleModule: require("/Users/katydecorah/Documents/GitHub/dr-ui/src/components/glossary-section/examples/basic.js"),
+        code: `<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> GlossarySection <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/glossary-section'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Basic</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">GlossarySection</span></span>
+        <span class="token attr-name">letter</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>C<span class="token punctuation">"</span></span>
+        <span class="token attr-name">entries</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            path<span class="token operator">:</span> <span class="token string">'#chip'</span><span class="token punctuation">,</span>
+            title<span class="token operator">:</span> <span class="token string">'Chip'</span><span class="token punctuation">,</span>
+            description<span class="token operator">:</span>
+              <span class="token string">'A thin, crispy, and typically savory snack. It can be made of potatoes, corn, or a variety of other foods.'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            path<span class="token operator">:</span> <span class="token string">'#candy'</span><span class="token punctuation">,</span>
+            title<span class="token operator">:</span> <span class="token string">'Candy'</span><span class="token punctuation">,</span>
+            description<span class="token operator">:</span>
+              <span class="token string">'A sweet snack that is often fruity or chocolately or both!'</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span><span class="token punctuation">}</span></span>
+      <span class="token punctuation">/></span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>`,
+        description: <p>Basic.</p>
+      }
+    ]
   },
   {
     name: "Highlight",
