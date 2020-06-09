@@ -3499,9 +3499,7 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Basic</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Tag</span></span> <span class="token attr-name">theme</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>beta<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
-    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Tag</span></span> <span class="token attr-name">theme</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>beta<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
         description: <p>Basic.</p>
@@ -3514,14 +3512,16 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Custom</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Tag</span></span> <span class="token attr-name">theme</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>custom<span class="token punctuation">'</span></span>
-      <span class="token attr-name">customLabel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>Limited access<span class="token punctuation">'</span></span>
-      <span class="token attr-name">customTooltipText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>Contact us for access to this feature.<span class="token punctuation">'</span></span>
-      <span class="token attr-name">customStyles</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span> <span class="token punctuation">{</span>
-        background<span class="token operator">:</span> <span class="token string">'#FEDADA'</span><span class="token punctuation">,</span>
-        color<span class="token operator">:</span> <span class="token string">'#bb2224'</span><span class="token punctuation">,</span>
-        borderColor<span class="token operator">:</span> <span class="token string">'#FD8383'</span>
-      <span class="token punctuation">}</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Tag</span></span>
+        <span class="token attr-name">theme</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>custom<span class="token punctuation">"</span></span>
+        <span class="token attr-name">customLabel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Limited access<span class="token punctuation">"</span></span>
+        <span class="token attr-name">customTooltipText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Contact us for access to this feature.<span class="token punctuation">"</span></span>
+        <span class="token attr-name">customStyles</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+          background<span class="token operator">:</span> <span class="token string">'#FEDADA'</span><span class="token punctuation">,</span>
+          color<span class="token operator">:</span> <span class="token string">'#bb2224'</span><span class="token punctuation">,</span>
+          borderColor<span class="token operator">:</span> <span class="token string">'#FD8383'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+      <span class="token punctuation">/></span></span>
     <span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
@@ -3611,7 +3611,7 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
 <span class="token keyword">import</span> ToggleableCodeBlock <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/toggleable-code-block'</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token punctuation">{</span> highlightJava <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/highlight/java'</span><span class="token punctuation">;</span>
 
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Basic</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">const</span> javaCodeSnippet <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">
     public class MainActivity extends AppCompatActivity {
