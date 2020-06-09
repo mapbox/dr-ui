@@ -213,7 +213,7 @@ mapbox:layout_constraintTop_toTopOf="parent" />
         </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span>
           <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>./assets/browser-example.png<span class="token punctuation">"</span></span>
           <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>round-b<span class="token punctuation">"</span></span>
-          <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>manage-styles<span class="token punctuation">"</span></span>
+          <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Manage styles in Studio.<span class="token punctuation">"</span></span>
         <span class="token punctuation">/></span></span><span class="token plain-text">
       </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Browser</span></span><span class="token punctuation">></span></span>
     <span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -276,31 +276,54 @@ mapbox:layout_constraintTop_toTopOf="parent" />
         code: `<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> Card <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/card'</span><span class="token punctuation">;</span>
 
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Basic</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Card</span></span>
-        <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Cupidatat<span class="token punctuation">"</span></span>
-        <span class="token attr-name">path</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/api/<span class="token punctuation">"</span></span>
-        <span class="token attr-name">thumbnail</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>
-          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>
-            <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>relative h120 mb12<span class="token punctuation">"</span></span>
-            <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
-              backgroundImage<span class="token operator">:</span>
-                <span class="token string">"url('https://i.giphy.com/media/A9lgUYVqLeRb2/giphy.gif')"</span><span class="token punctuation">,</span>
-              backgroundSize<span class="token operator">:</span> <span class="token string">'100% auto'</span><span class="token punctuation">,</span>
-              backgroundPosition<span class="token operator">:</span> <span class="token string">'center'</span>
-            <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
-          <span class="token punctuation">/></span></span>
-        <span class="token punctuation">}</span></span>
-        <span class="token attr-name">description</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span class="token punctuation">"</span></span>
-        <span class="token attr-name">level</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">}</span></span>
-        <span class="token attr-name">language</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>JavaScript<span class="token punctuation">"</span></span>
-      <span class="token punctuation">/></span></span>
+      <span class="token operator">&lt;</span>Card
+
+      title<span class="token operator">=</span><span class="token string">'My cool card'</span>
+      path<span class="token operator">=</span> <span class="token string">'url'</span>
+      level<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">2</span><span class="token punctuation">}</span>
+      language<span class="token operator">=</span><span class="token string">'JavaScript'</span>
+      thumbnail<span class="token operator">=</span><span class="token punctuation">{</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>
+          <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>relative h120 mb12<span class="token punctuation">"</span></span>
+          <span class="token attr-name">style</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+            backgroundImage<span class="token operator">:</span>
+              <span class="token string">"url('https://i.giphy.com/media/A9lgUYVqLeRb2/giphy.gif')"</span><span class="token punctuation">,</span>
+            backgroundSize<span class="token operator">:</span> <span class="token string">'100% auto'</span><span class="token punctuation">,</span>
+            backgroundPosition<span class="token operator">:</span> <span class="token string">'center'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+        <span class="token punctuation">/></span></span>
+      <span class="token punctuation">}</span>
+      description<span class="token operator">=</span><span class="token string">"This card is very cool."</span>
+
+
+      <span class="token operator">/</span><span class="token operator">></span>
     <span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
         description: <p>Basic.</p>
+      },
+      {
+        exampleModule: require("/Users/katydecorah/Documents/GitHub/dr-ui/src/components/card/examples/custom.js"),
+        code: `<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Card <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/card'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Basic</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>Card
+      title<span class="token operator">=</span><span class="token string">'My cool card'</span>
+      path<span class="token operator">=</span> <span class="token string">'url'</span>
+      level<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">2</span><span class="token punctuation">}</span>
+      language<span class="token operator">=</span><span class="token string">'JavaScript'</span>
+      description<span class="token operator">=</span><span class="token string">"This card is still cool despite not having a thumbnail."</span>
+      <span class="token operator">/</span><span class="token operator">></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>`,
+        description: <p>No image</p>
       }
     ]
   },
