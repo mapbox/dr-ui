@@ -1,15 +1,13 @@
+import React from 'react';
+import Basic from '../examples/basic';
 import Video from '../video';
 
 const testCases = {};
 const noRenderCases = {};
 
 testCases.basic = {
-  component: Video,
   description: 'Basic',
-  props: {
-    src: './assets/browser-example.mp4',
-    title: 'A video!'
-  }
+  element: <Basic />
 };
 
 noRenderCases.reducedMotion = {
