@@ -60,6 +60,7 @@ testCases.basic = {
   element: <Basic />
 };
 ```
+- Add test cases for more examples as needed.
 
 ### `/[component-name].test.js`
 
