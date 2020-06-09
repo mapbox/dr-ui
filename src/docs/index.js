@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './app';
-import './prism-theme.css';
+import './prism.css';
 
 const container = document.createElement('div');
 document.body.appendChild(container);
