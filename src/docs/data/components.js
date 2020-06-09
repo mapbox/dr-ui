@@ -2615,17 +2615,17 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
             style.addLayer(layer)
         }
     }</span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">;</span>
-    
-    <span class="token keyword">return</span> <span class="token operator">&lt;</span>NumberedCodeSnippet
-    code<span class="token operator">=</span> <span class="token punctuation">{</span>code<span class="token punctuation">}</span>
-    highlightedCode<span class="token operator">=</span> <span class="token punctuation">{</span><span class="token function">highlightSwift</span><span class="token punctuation">(</span>code<span class="token punctuation">)</span><span class="token punctuation">}</span>
-    maxHeight<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">450</span><span class="token punctuation">}</span>
-    highlightThemeCss<span class="token operator">=</span><span class="token punctuation">{</span>highlightThemeCss<span class="token punctuation">}</span>
-    copyRanges<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">17</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
-    onCopy<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
 
-
-    <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">NumberedCodeSnippet</span></span>
+        <span class="token attr-name">code</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>code<span class="token punctuation">}</span></span>
+        <span class="token attr-name">highlightedCode</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token function">highlightSwift</span><span class="token punctuation">(</span>code<span class="token punctuation">)</span><span class="token punctuation">}</span></span>
+        <span class="token attr-name">maxHeight</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token number">450</span><span class="token punctuation">}</span></span>
+        <span class="token attr-name">highlightThemeCss</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>highlightThemeCss<span class="token punctuation">}</span></span>
+        <span class="token attr-name">copyRanges</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">17</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">}</span></span>
+        <span class="token attr-name">onCopy</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+      <span class="token punctuation">/></span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
         description: <p>Basic.</p>
@@ -2755,7 +2755,7 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
         code: `<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> OverviewHeader <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/overview-header'</span><span class="token punctuation">;</span>
 
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Basic</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">OverviewHeader</span></span>
