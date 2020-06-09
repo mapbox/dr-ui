@@ -1453,7 +1453,7 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
 <span class="token keyword">import</span> Card <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/card/card'</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> CardContainer <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/card-container/card-container'</span><span class="token punctuation">;</span>
 
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Basic</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ExamplesPage</span></span>

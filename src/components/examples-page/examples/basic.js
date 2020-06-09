@@ -6,7 +6,7 @@ import ExamplesPage from '../examples-page';
 import Card from '../../card/card';
 import CardContainer from '../../card-container/card-container';
 
-export default class Example extends React.Component {
+export default class Basic extends React.Component {
   render() {
     return (
       <ExamplesPage
