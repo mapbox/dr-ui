@@ -1,6 +1,6 @@
 /*
 Basic.
-Pass the name of the `site` to the component to enable the site/"All docs" filter.
+Pass the name of the `site` to the component to enable the site or "All docs" toggle.
 */
 import React from 'react';
 import Search from '../search';
