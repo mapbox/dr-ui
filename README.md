@@ -112,4 +112,4 @@ npm run deploy-docs
 1. Find the component's `examples/` folder.
 2. Edit the existing files or create a new file. Run `npm run start-docs` to see the updated example locally.
 
-You can also import an example into the [component's test cases app](#tests) if you want to add tests and to help prevent duplicated code between the catalog and test cases app site.
+💡Every example should also be added as a test case and have a corresponding snapshot test. This will help get the catalog and test cases site up to date.
