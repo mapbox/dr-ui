@@ -44,9 +44,25 @@ When making changes to the build script, test that the module builds correctly b
 
 ## Tests
 
-Each component should have a `__tests__` folder with a `component-name-test-cases.js` and `component-name.test.js`. The `*test-cases.js` file should include variations of the component in use to demonstrate the different capabilities and properites for the component. The `*.test.js` file should create a unit test for each test case found in `*test-cases.js`.
+Each component should have a `__tests__` directory with the following files:
 
-Run the tests:
+### `/[component-name]-test-cases.js`
+
+- The `*test-cases.js` file should include variations of the component in use to demonstrate the different capabilities and properties for the component.
+- The first test case should be a basic, or common, usage of the component. The code for this test case is shared with the [catalog site](#catalog-site) and will live in the `examples/basic.js`. From the `test-cases.js` file, import the component `import Basic from '../examples/basic';` and then create the test case:
+
+```js
+testCases.basic = {
+  description: 'Basic',
+  element: <Basic />
+};
+```
+
+### `/[component-name].test.js`
+
+- The `*.test.js` file should create a unit test for each test case found in `*test-cases.js`.
+
+### Run the tests:
 
 ```
 npm test
@@ -79,14 +95,17 @@ To run the catalog site at https://mapbox.github.io/dr-ui/:
 npm run start-docs
 ```
 
+### Deploy
+
 To deploy the site. Run this if you've made changes to `src/docs/*` or any `src/components/*/examples/*` file.
 
 ```
 npm run deploy-docs
 ```
 
-To add or edit the catalog site:
+### To add or edit the catalog site:
 
-1. Navigate to the component folder in: `src/component`
-2. Find the component's `examples/` folder.
-3. Edit the existing files or create a new file. Run `npm run start-docs` to see the updated example locally.
+1. Find the component's `examples/` folder.
+2. Edit the existing files or create a new file. Run `npm run start-docs` to see the updated example locally.
+
+You can also import an example into the [component's test cases app](#tests) if you want to add tests and to help prevent duplicated code between the catalog and test cases app site.
