@@ -4,7 +4,7 @@ Basic.
 import React from 'react';
 import CodeToggle from '../code-toggle';
 
-export default class Example extends React.Component {
+export default class Basic extends React.Component {
   render() {
     return (
       <CodeToggle
