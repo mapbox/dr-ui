@@ -49,9 +49,12 @@ Each component should have a `__tests__` directory with the following files:
 ### `/[component-name]-test-cases.js`
 
 - The `*test-cases.js` file should include variations of the component in use to demonstrate the different capabilities and properties for the component.
-- The first test case should be a basic, or common, usage of the component. The code for this test case is shared with the [catalog site](#catalog-site) and will live in the `examples/basic.js`. From the `test-cases.js` file, import the component `import Basic from '../examples/basic';` and then create the test case:
+- The first test case should be a basic, or common, usage of the component. The code for this test case is shared with the [catalog site](#catalog-site) and will live in the `examples/basic.js`. An example of importing an example into a test case:
 
 ```js
+import React from 'react';
+import Basic from '../examples/basic';
+
 testCases.basic = {
   description: 'Basic',
   element: <Basic />
