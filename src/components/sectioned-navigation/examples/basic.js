@@ -4,7 +4,7 @@ Basic.
 import React from 'react';
 import SectionedNavigation from '../sectioned-navigation';
 
-export default class Example extends React.Component {
+export default class Basic extends React.Component {
   render() {
     return (
       <SectionedNavigation
@@ -13,6 +13,7 @@ export default class Example extends React.Component {
           {
             title: 'Getting started',
             url: '#getting-started',
+            id: 'getting-started',
             items: [
               {
                 text: 'Camera animation',
@@ -32,6 +33,7 @@ export default class Example extends React.Component {
           {
             title: 'Markers and callouts',
             url: '#markers',
+            id: 'markers',
             items: [
               {
                 text: 'Annotation models',
@@ -46,6 +48,7 @@ export default class Example extends React.Component {
           {
             title: 'Getting started again',
             url: '#getting-started-again',
+            id: 'getting-started-again',
             items: [
               {
                 text: 'Apply a style',
