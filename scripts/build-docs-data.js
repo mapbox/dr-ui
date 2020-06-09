@@ -31,7 +31,7 @@ function processExampleFile(filename) {
     }
     code = code
       // Replace imported component paths with npm package paths.
-      .replace(/from '\.\.\/(\.\.\/)?/g, `from '@mapbox/mr-ui/`)
+      .replace(/from '\.\.\/(\.\.\/)?/g, `from '@mapbox/dr-ui/`)
       // Remove block comments (especially the description).
       .replace(/\/\*[\s\S]*?\*\/[\s]*/, '')
       .trim();
