@@ -1190,7 +1190,6 @@ mapbox:layout_constraintTop_toTopOf="parent" />
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Basic</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-
     <span class="token keyword">const</span> contextSwift <span class="token operator">=</span> <span class="token punctuation">{</span>
       languages<span class="token operator">:</span> <span class="token punctuation">{</span>
         ios<span class="token operator">:</span> <span class="token punctuation">[</span>
@@ -1212,10 +1211,11 @@ mapbox:layout_constraintTop_toTopOf="parent" />
       <span class="token punctuation">}</span>
     <span class="token punctuation">}</span><span class="token punctuation">;</span>
 
-    <span class="token keyword">const</span> swift <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">// 'style' in this case refers to an MGLStyle object.
-    let layer = style.layer(withIdentifier: "place-city-sm") as! MGLSymbolStyleLayer
-    let spanish = Locale(identifier: "es")
-    layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> swift <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">
+// 'style' in this case refers to an MGLStyle object.
+let layer = style.layer(withIdentifier: "place-city-sm") as! MGLSymbolStyleLayer
+let spanish = Locale(identifier: "es")
+layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">;</span>
 
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ContextlessIosViewControllerToggle</span></span>
@@ -1258,7 +1258,20 @@ mapbox:layout_constraintTop_toTopOf="parent" />
         options: undefined
       }
     },
-    examples: []
+    examples: [
+      {
+        exampleModule: require("/Users/katydecorah/Documents/GitHub/dr-ui/src/components/demo-iframe/examples/basic.js"),
+        code: `<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> DemoIframe <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/demo-iframe'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Basic</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">DemoIframe</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>./assets/ios-horizontal.png<span class="token punctuation">'</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>`,
+        description: <p>Basic.</p>
+      }
+    ]
   },
   {
     name: "Edit",
