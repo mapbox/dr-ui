@@ -2375,7 +2375,7 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
             path<span class="token operator">:</span> <span class="token string">'page-two'</span>
           <span class="token punctuation">}</span>
         <span class="token punctuation">]</span><span class="token punctuation">}</span></span>
-        <span class="token attr-name">onChange</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+        <span class="token attr-name">onChange</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">}</span></span>
       <span class="token punctuation">/></span></span>
     <span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
