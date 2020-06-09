@@ -7,7 +7,11 @@ import ProductMenu from '../product-menu';
 export default class Example extends React.Component {
   render() {
     return (
-      <ProductMenu productName="Egg SDK" homePage="/egg-sdk/" beta={true} />
+      <ProductMenu
+        productName="Vision SDK for Android"
+        homePage="/vision/"
+        tag="beta"
+      />
     );
   }
 }

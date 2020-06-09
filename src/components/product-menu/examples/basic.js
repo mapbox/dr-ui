@@ -6,6 +6,6 @@ import ProductMenu from '../product-menu';
 
 export default class Example extends React.Component {
   render() {
-    return <ProductMenu productName="Egg SDK" homePage="/egg-sdk/" />;
+    return <ProductMenu productName="Mapbox product menu" homePage="/dr-ui/" />;
   }
 }
