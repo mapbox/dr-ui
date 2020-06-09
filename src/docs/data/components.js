@@ -1349,23 +1349,40 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Basic</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      <span class="token operator">&lt;</span>Edit
-      html<span class="token operator">=</span><span class="token string">"&lt;h1>hello world!&lt;/h1>&lt;div id='map'>&lt;/div>"</span>
-      css<span class="token operator">=</span><span class="token string">'body { margin: 0; padding: 0; background: yellow; }\n        #map { position: absolute; top: 0; bottom: 0; width: 100%; };'</span>
-      frontMatter<span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">{</span>
-        description<span class="token operator">:</span> <span class="token string">'Initialize a map in an HTML element with Mapbox GL JS.'</span><span class="token punctuation">,</span>
-        pathname<span class="token operator">:</span> <span class="token string">'/mapbox-gl-js/example/simple-map/'</span><span class="token punctuation">,</span>
-        title<span class="token operator">:</span> <span class="token string">'Display a map'</span>
-      <span class="token punctuation">}</span><span class="token punctuation">}</span>
-      head<span class="token operator">=</span><span class="token punctuation">{</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">&lt;meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' /></span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">}</span>
-      js<span class="token operator">=</span><span class="token string">"var map = new mapboxgl.Map({\n    container: 'map', // container id\n    style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location\n    center: [-74.50, 40], // starting position [lng, lat]\n    zoom: 9 // starting zoom\n});"</span>
-      resources<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
-        js<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-        css<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css'</span><span class="token punctuation">]</span>
-      <span class="token punctuation">}</span><span class="token punctuation">}</span>
-
-
-       <span class="token operator">/</span><span class="token operator">></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Edit</span></span>
+        <span class="token attr-name">html</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">&lt;h1>hello world!&lt;/h1>&lt;div id='map'>&lt;/div></span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">}</span></span>
+        <span class="token attr-name">css</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">
+          body {
+            margin: 0;
+            padding: 0;
+            background: yellow;
+          }
+          #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+          }
+        </span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">}</span></span>
+        <span class="token attr-name">frontMatter</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+          description<span class="token operator">:</span> <span class="token string">'Initialize a map in an HTML element with Mapbox GL JS.'</span><span class="token punctuation">,</span>
+          pathname<span class="token operator">:</span> <span class="token string">'/mapbox-gl-js/example/simple-map/'</span><span class="token punctuation">,</span>
+          title<span class="token operator">:</span> <span class="token string">'Display a map'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+        <span class="token attr-name">head</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">&lt;meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' /></span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">}</span></span>
+        <span class="token attr-name">js</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">var map = new mapboxgl.Map({
+          container: 'map', // container id
+          style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+          center: [-74.50, 40], // starting position [lng, lat]
+          zoom: 9 // starting zoom
+});</span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">}</span></span>
+        <span class="token attr-name">resources</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+          js<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          css<span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">'https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css'</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+      <span class="token punctuation">/></span></span>
     <span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
@@ -1385,7 +1402,20 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
         options: undefined
       }
     },
-    examples: []
+    examples: [
+      {
+        exampleModule: require("/Users/katydecorah/Documents/GitHub/dr-ui/src/components/example-image/examples/basic.js"),
+        code: `<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> ExampleImage <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/example-image'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Basic</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ExampleImage</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>`,
+        description: <p>Basic.</p>
+      }
+    ]
   },
   {
     name: "ExamplesPage",
