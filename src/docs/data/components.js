@@ -952,7 +952,63 @@ mapbox:layout_constraintTop_toTopOf="parent" />
         options: undefined
       }
     },
-    examples: []
+    examples: [
+      {
+        exampleModule: require("/Users/katydecorah/Documents/GitHub/dr-ui/src/components/contextless-android-activity-toggle/examples/basic.js"),
+        code: `<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> ContextlessAndroidActivityToggle <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/contextless-android-activity-toggle'</span><span class="token punctuation">;</span>
+
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Basic</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">const</span> contextJava <span class="token operator">=</span> <span class="token punctuation">{</span>
+      languages<span class="token operator">:</span> <span class="token punctuation">{</span>
+        android<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            label<span class="token operator">:</span> <span class="token string">'Java'</span><span class="token punctuation">,</span>
+            value<span class="token operator">:</span> <span class="token string">'java'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            label<span class="token operator">:</span> <span class="token string">'Kotlin'</span><span class="token punctuation">,</span>
+            value<span class="token operator">:</span> <span class="token string">'kotlin'</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      preferredLanguage<span class="token operator">:</span> <span class="token punctuation">{</span>
+        android<span class="token operator">:</span> <span class="token string">'java'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      changeLanguage<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token function-variable function">android</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+
+    <span class="token keyword">const</span> java <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">map.getStyle(new Style.OnStyleLoaded() {
+      @Override
+      public void onStyleLoaded(@NonNull Style style) {
+
+        Layer settlementLabelLayer = style.getLayer("settlement-label");
+
+        if (settlementLabelLayer != null) {
+          settlementLabelLayer.setProperties(textField("{name_ru}"));
+        }
+      }
+    });</span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ContextlessAndroidActivityToggle</span></span>
+      <span class="token attr-name">context</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>contextJava<span class="token punctuation">}</span></span>
+      <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>test-java-only<span class="token punctuation">'</span></span>
+      <span class="token attr-name">java</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>java<span class="token punctuation">}</span></span>
+      <span class="token attr-name">limitHeight</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token boolean">true</span><span class="token punctuation">}</span></span>
+      <span class="token attr-name">onCopy</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+       <span class="token punctuation">/></span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>`,
+        description: <p>Basic.</p>
+      }
+    ]
   },
   {
     name: "ContextlessIosViewControllerToggle",
