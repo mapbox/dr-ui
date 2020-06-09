@@ -595,7 +595,7 @@ mapbox:layout_constraintTop_toTopOf="parent" />
     props: {
       filename: {
         type: { name: "string" },
-        required: true,
+        required: false,
         defaultValue: undefined,
         description: <div />,
         options: undefined
