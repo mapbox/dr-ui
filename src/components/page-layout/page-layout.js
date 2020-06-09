@@ -32,7 +32,7 @@ class PageLayout extends React.Component {
   componentDidMount() {
     this.debounceHandleWindowResize();
     setTimeout(() => {
-      this.setState({ stickyEnabled: true });
+      if (this.props.stickyEnabled) this.setState({ stickyEnabled: true });
     }, 500);
     window.addEventListener('resize', this.debounceHandleWindowResize);
     // when available, the page will recalculate the height of the page when a user clicks an element with the given class name
@@ -134,12 +134,14 @@ PageLayout.propTypes = {
   sidebarStackedOnNarrowScreens: PropTypes.bool,
   sideBarColSize: PropTypes.number, // accepts numbers 3 - 6 to change the column width of the sidebar at the -ml breakpoint
   interactiveClass: PropTypes.string, // the class name of an interactive element, when clicked PageLayout will recalculate the height of the page and sizing for the the sidebar
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  stickyEnabled: PropTypes.bool
 };
 
 PageLayout.defaultProps = {
   sidebarTheme: 'bg-gray-faint',
-  sidebarStackedOnNarrowScreens: false
+  sidebarStackedOnNarrowScreens: false,
+  stickyEnabled: true
 };
 
 export default PageLayout;
