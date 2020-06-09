@@ -1955,7 +1955,43 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
     name: "Highlight",
     description: null,
     props: null,
-    examples: []
+    examples: [
+      {
+        exampleModule: require("/Users/katydecorah/Documents/GitHub/dr-ui/src/components/highlight/examples/basic.js"),
+        code: `<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> highlightSwift <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/swift'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> highlightThemeCss <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/theme-css.js'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> CodeSnippet <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/code-snippet'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Basic</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">const</span> swiftCodeSnippet <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">
+    import Mapbox
+      class ViewController: UIViewController {
+      override func viewDidLoad() {
+      super.viewDidLoad()
+
+      let url = URL(string: "mapbox://styles/mapbox/streets-v10")
+      let mapView = MGLMapView(frame: view.bounds, styleURL: url)
+      mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+      mapView.setCenter(CLLocationCoordinate2D(latitude: 59.31, longitude: 18.06), zoomLevel: 9, animated: false)
+      view.addSubview(mapView)
+    }
+    </span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token operator">&lt;</span>CodeSnippet
+
+    code<span class="token operator">=</span><span class="token punctuation">{</span>swiftCodeSnippet<span class="token punctuation">}</span>
+    highlighter<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> highlightSwift<span class="token punctuation">}</span>
+    highlightThemeCss<span class="token operator">=</span> <span class="token punctuation">{</span>highlightThemeCss<span class="token punctuation">}</span>
+
+     <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>`,
+        description: <p>Using highlighter with CodeSnippet.</p>
+      }
+    ]
   },
   {
     name: "LevelIndicator",
@@ -3834,8 +3870,7 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Video</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>./assets/browser-example.mp4<span class="token punctuation">'</span></span>
-    <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>A video!<span class="token punctuation">'</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Video</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>./assets/browser-example.mp4<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>A video!<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
         description: <p>Basic.</p>
