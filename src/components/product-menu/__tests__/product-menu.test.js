@@ -78,9 +78,7 @@ describe('product-menu', () => {
 
     beforeEach(() => {
       testCase = testCases.beta;
-      wrapper = renderer.create(
-        React.createElement(testCase.component, testCase.props)
-      );
+      wrapper = renderer.create(testCase.element);
       tree = wrapper.toJSON();
     });
 

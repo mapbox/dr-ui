@@ -27,7 +27,8 @@ Array [
     <input
       name="css"
       type="hidden"
-      value="body {
+      value="
+          body {
             margin: 0;
             padding: 0;
             background: yellow;
@@ -87,7 +88,7 @@ See the example: https://docs.mapbox.com//mapbox-gl-js/example/simple-map/"
     <input
       name="data"
       type="hidden"
-      value="{\\"title\\":\\"Display a map\\",\\"html\\":\\"<h1>hello world!</h1><div id='map'></div>\\",\\"html_pre_processor\\":\\"none\\",\\"description\\":\\"Initialize a map in an HTML element with Mapbox GL JS.\\\\n\\\\nSee the example: [https://docs.mapbox.com//mapbox-gl-js/example/simple-map/](https://docs.mapbox.com//mapbox-gl-js/example/simple-map/)\\",\\"tags\\":[\\"mapbox\\",\\"maps\\"],\\"css\\":\\"body {\\\\n            margin: 0;\\\\n            padding: 0;\\\\n            background: yellow;\\\\n          }\\\\n          #map {\\\\n            position: absolute;\\\\n            top: 0;\\\\n            bottom: 0;\\\\n            width: 100%;\\\\n          }\\\\n        \\",\\"css_pre_processor\\":\\"none\\",\\"js\\":\\"var map = new mapboxgl.Map({\\\\n          container: 'map', // container id\\\\n          style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location\\\\n          center: [-74.50, 40], // starting position [lng, lat]\\\\n          zoom: 9 // starting zoom\\\\n});\\",\\"js_pre_processor\\":\\"none\\",\\"css_external\\":\\"https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css\\",\\"js_external\\":\\"https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js\\",\\"head\\":\\"<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />\\"}"
+      value="{\\"title\\":\\"Display a map\\",\\"html\\":\\"<h1>hello world!</h1><div id='map'></div>\\",\\"html_pre_processor\\":\\"none\\",\\"description\\":\\"Initialize a map in an HTML element with Mapbox GL JS.\\\\n\\\\nSee the example: [https://docs.mapbox.com//mapbox-gl-js/example/simple-map/](https://docs.mapbox.com//mapbox-gl-js/example/simple-map/)\\",\\"tags\\":[\\"mapbox\\",\\"maps\\"],\\"css\\":\\"\\\\n          body {\\\\n            margin: 0;\\\\n            padding: 0;\\\\n            background: yellow;\\\\n          }\\\\n          #map {\\\\n            position: absolute;\\\\n            top: 0;\\\\n            bottom: 0;\\\\n            width: 100%;\\\\n          }\\\\n        \\",\\"css_pre_processor\\":\\"none\\",\\"js\\":\\"var map = new mapboxgl.Map({\\\\n          container: 'map', // container id\\\\n          style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location\\\\n          center: [-74.50, 40], // starting position [lng, lat]\\\\n          zoom: 9 // starting zoom\\\\n});\\",\\"js_pre_processor\\":\\"none\\",\\"css_external\\":\\"https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css\\",\\"js_external\\":\\"https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js\\",\\"head\\":\\"<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />\\"}"
     />
     <input
       className="btn btn--s cursor-pointer round"
