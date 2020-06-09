@@ -1670,17 +1670,14 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token punctuation">(</span>
       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Feedback</span></span>
-
-
-
-        <span class="token attr-name">site</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>dr-ui<span class="token punctuation">'</span></span>
+        <span class="token attr-name">site</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>dr-ui<span class="token punctuation">"</span></span>
         <span class="token attr-name">webhook</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
           staging<span class="token operator">:</span>
             <span class="token string">'https://evj5gwoa8j.execute-api.us-east-1.amazonaws.com/hookshot/webhook'</span><span class="token punctuation">,</span>
           production<span class="token operator">:</span>
             <span class="token string">'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook'</span>
         <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
-        <span class="token attr-name">preferredLanguage</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>Swift<span class="token punctuation">'</span></span>
+        <span class="token attr-name">preferredLanguage</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Swift<span class="token punctuation">"</span></span>
         <span class="token attr-name">user</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
           id<span class="token operator">:</span> <span class="token string">'crocsfan19'</span><span class="token punctuation">,</span>
           email<span class="token operator">:</span> <span class="token string">'crocsfan19@mapbox.com'</span><span class="token punctuation">,</span>
@@ -1688,14 +1685,12 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
             id<span class="token operator">:</span> <span class="token string">'starter'</span>
           <span class="token punctuation">}</span>
         <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
-        <span class="token attr-name">section</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>LngLat<span class="token punctuation">'</span></span>
+        <span class="token attr-name">section</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>LngLat<span class="token punctuation">"</span></span>
         <span class="token attr-name">location</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
           pathname<span class="token operator">:</span> <span class="token string">'/dr-ui/feedback/'</span><span class="token punctuation">,</span>
           hash<span class="token operator">:</span> <span class="token string">'#lnglat'</span>
         <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
-
-
-       <span class="token punctuation">/></span></span>
+      <span class="token punctuation">/></span></span>
     <span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>`,
@@ -1715,7 +1710,30 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
         options: undefined
       }
     },
-    examples: []
+    examples: [
+      {
+        exampleModule: require("/Users/katydecorah/Documents/GitHub/dr-ui/src/components/gl-wrapper/examples/basic.js"),
+        code: `<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> GLWrapper <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/gl-wrapper'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Basic</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">GLWrapper</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span>
+        <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://giphy.com/embed/JIX9t2j0ZTN9S<span class="token punctuation">"</span></span>
+        <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>480<span class="token punctuation">"</span></span>
+        <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>480<span class="token punctuation">"</span></span>
+        <span class="token attr-name">frameBorder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span>
+        <span class="token attr-name">allowFullScreen</span>
+      <span class="token punctuation">/></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">GLWrapper</span></span><span class="token punctuation">></span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>`,
+        description: <p>Basic.</p>
+      }
+    ]
   },
   {
     name: "GlossaryCard",
