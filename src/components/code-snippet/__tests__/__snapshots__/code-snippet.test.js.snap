@@ -53,22 +53,17 @@ exports[`CodeSnippet A CodeSnippet with every feature (edit buttons, title) rend
         <input
           name="css"
           type="hidden"
-          value="h1 {
-  color: red;
-}
-"
+          value="h1 {color: red}"
         />
         <input
           name="html"
           type="hidden"
-          value="<h1>gurd murn!</h1>
-"
+          value="<h1>gurd murn!</h1>"
         />
         <input
           name="js"
           type="hidden"
-          value="console.log(\\"hurn\\");
-"
+          value="console.log('hurn')"
         />
         <input
           name="title"
@@ -97,7 +92,7 @@ See the example: https://docs.mapbox.com//site"
         <input
           name="data"
           type="hidden"
-          value="{\\"title\\":\\"My Code\\",\\"html\\":\\"<h1>gurd murn!</h1>\\\\n\\",\\"description\\":\\"cool code by mapbox\\\\n\\\\nSee the example: [https://docs.mapbox.com//site](https://docs.mapbox.com//site)\\",\\"tags\\":[\\"mapbox\\",\\"maps\\"],\\"css\\":\\"h1 {\\\\n  color: red;\\\\n}\\\\n\\",\\"js\\":\\"console.log(\\\\\\"hurn\\\\\\");\\\\n\\",\\"css_external\\":\\"\\",\\"js_external\\":\\"\\"}"
+          value="{\\"title\\":\\"My Code\\",\\"html\\":\\"<h1>gurd murn!</h1>\\",\\"html_pre_processor\\":\\"none\\",\\"description\\":\\"cool code by mapbox\\\\n\\\\nSee the example: [https://docs.mapbox.com//site](https://docs.mapbox.com//site)\\",\\"tags\\":[\\"mapbox\\",\\"maps\\"],\\"css\\":\\"h1 {color: red}\\",\\"css_pre_processor\\":\\"none\\",\\"js\\":\\"console.log('hurn')\\",\\"js_pre_processor\\":\\"none\\",\\"css_external\\":\\"\\",\\"js_external\\":\\"\\"}"
         />
         <input
           className="btn btn--s cursor-pointer round"
@@ -210,33 +205,30 @@ exports[`CodeSnippet CodeSnippet with edit buttons and extractor renders as expe
         <input
           name="css"
           type="hidden"
-          value="body {
-  margin: 0;
-  padding: 0;
-}
-#map {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-}
+          value="
+    body { margin: 0; padding: 0; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; };
 "
         />
         <input
           name="html"
           type="hidden"
-          value="<div id=\\"map\\"></div>
+          value="
+<div id='map'></div>
+
+
 "
         />
         <input
           name="js"
           type="hidden"
-          value="mapboxgl.accessToken = \\"<your access token here>\\";
+          value="
+mapboxgl.accessToken = '<your access token here>';
 var map = new mapboxgl.Map({
-  container: \\"map\\", // container id
-  style: \\"mapbox://styles/mapbox/streets-v11\\", // stylesheet location
-  center: [-74.5, 40], // starting position [lng, lat]
-  zoom: 9 // starting zoom
+    container: 'map', // container id
+    style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+    center: [-74.50, 40], // starting position [lng, lat]
+    zoom: 9 // starting zoom
 });
 "
         />
@@ -272,7 +264,7 @@ See the example: https://docs.mapbox.com//mapbox-gl-js/example/simple-map/"
         <input
           name="data"
           type="hidden"
-          value="{\\"title\\":\\"Display a map\\",\\"html\\":\\"<div id=\\\\\\"map\\\\\\"></div>\\\\n\\",\\"description\\":\\"Initialize a map in an HTML element with Mapbox GL JS.\\\\n\\\\nSee the example: [https://docs.mapbox.com//mapbox-gl-js/example/simple-map/](https://docs.mapbox.com//mapbox-gl-js/example/simple-map/)\\",\\"tags\\":[\\"mapbox\\",\\"maps\\"],\\"css\\":\\"body {\\\\n  margin: 0;\\\\n  padding: 0;\\\\n}\\\\n#map {\\\\n  position: absolute;\\\\n  top: 0;\\\\n  bottom: 0;\\\\n  width: 100%;\\\\n}\\\\n\\",\\"js\\":\\"mapboxgl.accessToken = \\\\\\"<your access token here>\\\\\\";\\\\nvar map = new mapboxgl.Map({\\\\n  container: \\\\\\"map\\\\\\", // container id\\\\n  style: \\\\\\"mapbox://styles/mapbox/streets-v11\\\\\\", // stylesheet location\\\\n  center: [-74.5, 40], // starting position [lng, lat]\\\\n  zoom: 9 // starting zoom\\\\n});\\\\n\\",\\"css_external\\":\\"https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css\\",\\"js_external\\":\\"https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js\\"}"
+          value="{\\"title\\":\\"Display a map\\",\\"html\\":\\"\\\\n<div id='map'></div>\\\\n\\\\n\\\\n\\",\\"html_pre_processor\\":\\"none\\",\\"description\\":\\"Initialize a map in an HTML element with Mapbox GL JS.\\\\n\\\\nSee the example: [https://docs.mapbox.com//mapbox-gl-js/example/simple-map/](https://docs.mapbox.com//mapbox-gl-js/example/simple-map/)\\",\\"tags\\":[\\"mapbox\\",\\"maps\\"],\\"css\\":\\"\\\\n    body { margin: 0; padding: 0; }\\\\n        #map { position: absolute; top: 0; bottom: 0; width: 100%; };\\\\n\\",\\"css_pre_processor\\":\\"none\\",\\"js\\":\\"\\\\nmapboxgl.accessToken = '<your access token here>';\\\\nvar map = new mapboxgl.Map({\\\\n    container: 'map', // container id\\\\n    style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location\\\\n    center: [-74.50, 40], // starting position [lng, lat]\\\\n    zoom: 9 // starting zoom\\\\n});\\\\n\\",\\"js_pre_processor\\":\\"none\\",\\"css_external\\":\\"https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css\\",\\"js_external\\":\\"https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js\\"}"
         />
         <input
           className="btn btn--s cursor-pointer round"
@@ -442,7 +434,7 @@ See the example: https://docs.mapbox.com//mapbox-gl-js/example/simple-map/"
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>script</span> <span class=\\"token attr-name\\">src</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">'</span>https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js<span class=\\"token punctuation\\">'</span></span><span class=\\"token punctuation\\">></span></span><span class=\\"token script language-javascript\\"></span><span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;/</span>script</span><span class=\\"token punctuation\\">></span></span>",
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>script</span> <span class=\\"token attr-name\\">src</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">'</span>https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js<span class=\\"token punctuation\\">'</span></span><span class=\\"token punctuation\\">></span></span><span class=\\"token script\\"></span><span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;/</span>script</span><span class=\\"token punctuation\\">></span></span>",
                   }
                 }
                 style={
@@ -486,7 +478,7 @@ See the example: https://docs.mapbox.com//mapbox-gl-js/example/simple-map/"
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>style</span><span class=\\"token punctuation\\">></span></span><span class=\\"token style language-css\\">",
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>style</span><span class=\\"token punctuation\\">></span></span><span class=\\"token style\\"><span class=\\"token language-css\\">",
                   }
                 }
                 style={
@@ -552,7 +544,7 @@ See the example: https://docs.mapbox.com//mapbox-gl-js/example/simple-map/"
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "</span><span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;/</span>style</span><span class=\\"token punctuation\\">></span></span>",
+                    "__html": "</span></span><span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;/</span>style</span><span class=\\"token punctuation\\">></span></span>",
                   }
                 }
                 style={
@@ -640,7 +632,7 @@ See the example: https://docs.mapbox.com//mapbox-gl-js/example/simple-map/"
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>script</span><span class=\\"token punctuation\\">></span></span><span class=\\"token script language-javascript\\">",
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>script</span><span class=\\"token punctuation\\">></span></span><span class=\\"token script\\"><span class=\\"token language-javascript\\">",
                   }
                 }
                 style={
@@ -706,7 +698,7 @@ See the example: https://docs.mapbox.com//mapbox-gl-js/example/simple-map/"
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "container<span class=\\"token punctuation\\">:</span> <span class=\\"token string\\">'map'</span><span class=\\"token punctuation\\">,</span> <span class=\\"token comment\\">// container id</span>",
+                    "__html": "container<span class=\\"token operator\\">:</span> <span class=\\"token string\\">'map'</span><span class=\\"token punctuation\\">,</span> <span class=\\"token comment\\">// container id</span>",
                   }
                 }
                 style={
@@ -728,7 +720,7 @@ See the example: https://docs.mapbox.com//mapbox-gl-js/example/simple-map/"
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "style<span class=\\"token punctuation\\">:</span> <span class=\\"token string\\">'mapbox://styles/mapbox/streets-v11'</span><span class=\\"token punctuation\\">,</span> <span class=\\"token comment\\">// stylesheet location</span>",
+                    "__html": "style<span class=\\"token operator\\">:</span> <span class=\\"token string\\">'mapbox://styles/mapbox/streets-v11'</span><span class=\\"token punctuation\\">,</span> <span class=\\"token comment\\">// stylesheet location</span>",
                   }
                 }
                 style={
@@ -750,7 +742,7 @@ See the example: https://docs.mapbox.com//mapbox-gl-js/example/simple-map/"
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "center<span class=\\"token punctuation\\">:</span> <span class=\\"token punctuation\\">[</span><span class=\\"token operator\\">-</span><span class=\\"token number\\">74.50</span><span class=\\"token punctuation\\">,</span> <span class=\\"token number\\">40</span><span class=\\"token punctuation\\">]</span><span class=\\"token punctuation\\">,</span> <span class=\\"token comment\\">// starting position [lng, lat]</span>",
+                    "__html": "center<span class=\\"token operator\\">:</span> <span class=\\"token punctuation\\">[</span><span class=\\"token operator\\">-</span><span class=\\"token number\\">74.50</span><span class=\\"token punctuation\\">,</span> <span class=\\"token number\\">40</span><span class=\\"token punctuation\\">]</span><span class=\\"token punctuation\\">,</span> <span class=\\"token comment\\">// starting position [lng, lat]</span>",
                   }
                 }
                 style={
@@ -772,7 +764,7 @@ See the example: https://docs.mapbox.com//mapbox-gl-js/example/simple-map/"
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "zoom<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">9</span> <span class=\\"token comment\\">// starting zoom</span>",
+                    "__html": "zoom<span class=\\"token operator\\">:</span> <span class=\\"token number\\">9</span> <span class=\\"token comment\\">// starting zoom</span>",
                   }
                 }
                 style={
@@ -816,7 +808,7 @@ See the example: https://docs.mapbox.com//mapbox-gl-js/example/simple-map/"
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "</span><span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;/</span>script</span><span class=\\"token punctuation\\">></span></span>",
+                    "__html": "</span></span><span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;/</span>script</span><span class=\\"token punctuation\\">></span></span>",
                   }
                 }
                 style={

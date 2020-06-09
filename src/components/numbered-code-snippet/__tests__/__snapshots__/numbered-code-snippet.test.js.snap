@@ -2,16 +2,15 @@
 
 exports[`numbered-code-snippet Basic renders as expected 1`] = `
 <div
-  className="relative round z0 scroll-styled scroll-auto"
+  className="prose relative round z0 scroll-styled scroll-auto"
   style={
     Object {
-      "backgroundColor": "#f4f7fb",
       "maxHeight": 450,
     }
   }
 >
   <pre
-    className="my-neg12 pt12 ml-neg12 pl12 pr0 mobile-snippet txt-break-word"
+    className="py0 px0 txt-break-word mb0"
   >
     <code
       className="px0 hljs"
@@ -85,7 +84,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
         data-chunk-code="chunk-1"
       >
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 40.9,
@@ -118,7 +117,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -151,7 +150,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 12,
@@ -184,7 +183,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -217,7 +216,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -250,7 +249,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -283,7 +282,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 12,
@@ -316,7 +315,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -349,7 +348,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 12,
@@ -382,7 +381,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -415,7 +414,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -448,7 +447,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 40.9,
@@ -548,7 +547,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
     </code>
   </pre>
   <div
-    className="bg-lighten75 absolute left right"
+    className="absolute left right z2 w6"
     data-chunk-overlay="chunk-1"
     style={
       Object {
@@ -557,7 +556,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
     }
   >
     <div
-      className="bg-blue h-full w6"
+      className="bg-blue h-full"
     />
   </div>
   <div
@@ -575,16 +574,15 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
 
 exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
 <div
-  className="relative round z0 scroll-styled scroll-auto"
+  className="prose relative round z0 scroll-styled scroll-auto"
   style={
     Object {
-      "backgroundColor": "#f4f7fb",
       "maxHeight": 450,
     }
   }
 >
   <pre
-    className="my-neg12 pt12 ml-neg12 pl12 pr0 mobile-snippet txt-break-word"
+    className="py0 px0 txt-break-word mb0"
   >
     <code
       className="px0 hljs"
@@ -594,7 +592,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
         data-chunk-code="chunk-0"
       >
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -627,7 +625,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -660,7 +658,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -693,7 +691,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -726,7 +724,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -759,7 +757,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 40.9,
@@ -792,7 +790,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -825,7 +823,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -858,7 +856,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -891,7 +889,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -924,7 +922,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -957,7 +955,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -990,7 +988,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -1023,7 +1021,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -1056,7 +1054,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -1089,7 +1087,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -1122,7 +1120,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 40.9,
@@ -1155,7 +1153,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -1188,7 +1186,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 40.9,
@@ -1221,7 +1219,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -1259,7 +1257,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
         data-chunk-code="chunk-1"
       >
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -1292,7 +1290,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 12,
@@ -1325,7 +1323,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -1363,7 +1361,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
         data-chunk-code="chunk-2"
       >
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -1396,7 +1394,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -1429,7 +1427,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -1462,7 +1460,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -1495,7 +1493,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -1528,7 +1526,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -1561,7 +1559,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -1594,7 +1592,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -1627,7 +1625,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -1660,7 +1658,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -1693,7 +1691,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 98.69999999999999,
@@ -1726,7 +1724,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 98.69999999999999,
@@ -1759,7 +1757,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -1792,7 +1790,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -1830,7 +1828,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
         data-chunk-code="chunk-3"
       >
         <div
-          className="pr12 py3"
+          className="pr12 py3 bg-white"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -1868,7 +1866,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
         data-chunk-code="chunk-4"
       >
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -1901,7 +1899,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 69.8,
@@ -1934,7 +1932,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 40.9,
@@ -1967,7 +1965,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           />
         </div>
         <div
-          className="pr12 opacity50 bg-darken10"
+          className="pr12"
           style={
             Object {
               "paddingLeft": 12,
@@ -2003,7 +2001,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
     </code>
   </pre>
   <div
-    className="bg-lighten75 absolute left right"
+    className="absolute left right z2 w6"
     data-chunk-overlay="chunk-1"
     style={
       Object {
@@ -2012,11 +2010,11 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
     }
   >
     <div
-      className="bg-blue h-full w6"
+      className="bg-blue h-full"
     />
   </div>
   <div
-    className="bg-lighten75 absolute left right"
+    className="absolute left right z2 w6"
     data-chunk-overlay="chunk-3"
     style={
       Object {
@@ -2025,7 +2023,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
     }
   >
     <div
-      className="bg-blue h-full w6"
+      className="bg-blue h-full"
     />
   </div>
   <div
@@ -2041,6 +2039,560 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
   <div
     className="absolute z3 right mr3 color-white"
     data-chunk-copy="chunk-3"
+    style={
+      Object {
+        "opacity": 0,
+        "transition": "opacity 300ms linear",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`numbered-code-snippet First line renders as expected 1`] = `
+<div
+  className="prose relative round z0 scroll-styled scroll-auto"
+  style={
+    Object {
+      "maxHeight": 450,
+    }
+  }
+>
+  <pre
+    className="py0 px0 txt-break-word mb0"
+  >
+    <code
+      className="px0 hljs"
+    >
+      <div
+        className="relative z2"
+        data-chunk-code="chunk-1"
+      >
+        <div
+          className="pr12 py3 bg-white"
+          style={
+            Object {
+              "paddingLeft": 12,
+            }
+          }
+        >
+          <div
+            className="absolute fl color-gray align-r pr6 w30 py3"
+            data-content={1}
+            style={
+              Object {
+                "marginLeft": -6,
+                "marginTop": -3,
+              }
+            }
+            unselectable="on"
+          />
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<span class=\\"token keyword\\">import</span> <span class=\\"token builtin\\">UIKit</span>",
+              }
+            }
+            style={
+              Object {
+                "marginLeft": 43.349999999999994,
+                "textIndent": -14.45,
+              }
+            }
+          />
+        </div>
+        <div
+          className="pr12 py3 bg-white"
+          style={
+            Object {
+              "paddingLeft": 12,
+            }
+          }
+        >
+          <div
+            className="absolute fl color-gray align-r pr6 w30 py3"
+            data-content={2}
+            style={
+              Object {
+                "marginLeft": -6,
+                "marginTop": -3,
+              }
+            }
+            unselectable="on"
+          />
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<span class=\\"token keyword\\">import</span> <span class=\\"token builtin\\">Mapbox</span>",
+              }
+            }
+            style={
+              Object {
+                "marginLeft": 43.349999999999994,
+                "textIndent": -14.45,
+              }
+            }
+          />
+        </div>
+        <div
+          className="pr12 py3 bg-white"
+          style={
+            Object {
+              "paddingLeft": 12,
+            }
+          }
+        >
+          <div
+            className="absolute fl color-gray align-r pr6 w30 py3"
+            data-content={3}
+            style={
+              Object {
+                "marginLeft": -6,
+                "marginTop": -3,
+              }
+            }
+            unselectable="on"
+          />
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": " ",
+              }
+            }
+            style={
+              Object {
+                "marginLeft": 43.349999999999994,
+                "textIndent": -14.45,
+              }
+            }
+          />
+        </div>
+        <div
+          className="pr12 py3 bg-white"
+          style={
+            Object {
+              "paddingLeft": 12,
+            }
+          }
+        >
+          <div
+            className="absolute fl color-gray align-r pr6 w30 py3"
+            data-content={4}
+            style={
+              Object {
+                "marginLeft": -6,
+                "marginTop": -3,
+              }
+            }
+            unselectable="on"
+          />
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<span class=\\"token keyword\\">class</span> <span class=\\"token class-name\\">DDSCircleLayerTutorialViewController</span><span class=\\"token punctuation\\">:</span> <span class=\\"token builtin\\">UIViewController</span><span class=\\"token punctuation\\">,</span> <span class=\\"token builtin\\">MGLMapViewDelegate</span> <span class=\\"token punctuation\\">{</span>",
+              }
+            }
+            style={
+              Object {
+                "marginLeft": 43.349999999999994,
+                "textIndent": -14.45,
+              }
+            }
+          />
+        </div>
+        <div
+          className="pr12 py3 bg-white"
+          style={
+            Object {
+              "paddingLeft": 12,
+            }
+          }
+        >
+          <div
+            className="absolute fl color-gray align-r pr6 w30 py3"
+            data-content={5}
+            style={
+              Object {
+                "marginLeft": -6,
+                "marginTop": -3,
+              }
+            }
+            unselectable="on"
+          />
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": " ",
+              }
+            }
+            style={
+              Object {
+                "marginLeft": 43.349999999999994,
+                "textIndent": -14.45,
+              }
+            }
+          />
+        </div>
+      </div>
+      <div
+        className="relative z2 h30"
+        data-chunk-code="chunk-2"
+      >
+        <div
+          className="wfull bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
+          onClick={[Function]}
+        >
+          <div
+            className="flex-child"
+          >
+            <div
+              className="mb-neg3"
+            >
+              <svg
+                className="events-none icon"
+                focusable="false"
+                role="presentation"
+                style={
+                  Object {
+                    "height": 12,
+                    "width": 12,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="#icon-chevron-up"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                />
+              </svg>
+            </div>
+            <div
+              className="mt-neg3"
+            >
+              <svg
+                className="events-none icon"
+                focusable="false"
+                role="presentation"
+                style={
+                  Object {
+                    "height": 12,
+                    "width": 12,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="#icon-chevron-down"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            className="flex-child"
+            style={
+              Object {
+                "marginLeft": "8px",
+              }
+            }
+          >
+            show hidden lines
+          </div>
+        </div>
+      </div>
+    </code>
+  </pre>
+  <div
+    className="absolute left right z2 w6"
+    data-chunk-overlay="chunk-1"
+    style={
+      Object {
+        "opacity": 0,
+      }
+    }
+  >
+    <div
+      className="bg-blue h-full"
+    />
+  </div>
+  <div
+    className="absolute z3 right mr3 color-white"
+    data-chunk-copy="chunk-1"
+    style={
+      Object {
+        "opacity": 0,
+        "transition": "opacity 300ms linear",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`numbered-code-snippet Last line renders as expected 1`] = `
+<div
+  className="prose relative round z0 scroll-styled scroll-auto"
+  style={
+    Object {
+      "maxHeight": 450,
+    }
+  }
+>
+  <pre
+    className="py0 px0 txt-break-word mb0"
+  >
+    <code
+      className="px0 hljs"
+    >
+      <div
+        className="relative z2 h30"
+        data-chunk-code="chunk-0"
+      >
+        <div
+          className="wfull bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
+          onClick={[Function]}
+        >
+          <div
+            className="flex-child"
+          >
+            <div
+              className="mb-neg3"
+            >
+              <svg
+                className="events-none icon"
+                focusable="false"
+                role="presentation"
+                style={
+                  Object {
+                    "height": 12,
+                    "width": 12,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="#icon-chevron-up"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                />
+              </svg>
+            </div>
+            <div
+              className="mt-neg3"
+            >
+              <svg
+                className="events-none icon"
+                focusable="false"
+                role="presentation"
+                style={
+                  Object {
+                    "height": 12,
+                    "width": 12,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="#icon-chevron-down"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            className="flex-child"
+            style={
+              Object {
+                "marginLeft": "8px",
+              }
+            }
+          >
+            show hidden lines
+          </div>
+        </div>
+      </div>
+      <div
+        className="relative z2"
+        data-chunk-code="chunk-1"
+      >
+        <div
+          className="pr12 py3 bg-white"
+          style={
+            Object {
+              "paddingLeft": 69.8,
+            }
+          }
+        >
+          <div
+            className="absolute fl color-gray align-r pr6 w30 py3"
+            data-content={38}
+            style={
+              Object {
+                "marginLeft": -63.8,
+                "marginTop": -3,
+              }
+            }
+            unselectable="on"
+          />
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "layer<span class=\\"token punctuation\\">.</span>circleRadius <span class=\\"token operator\\">=</span> <span class=\\"token function\\">NSExpression</span><span class=\\"token punctuation\\">(</span>format<span class=\\"token punctuation\\">:</span> <span class=\\"token string\\">\\"mgl_interpolate:withCurveType:parameters:stops:($zoomLevel, 'linear', nil, %@)\\"</span><span class=\\"token punctuation\\">,</span> zoomStops<span class=\\"token punctuation\\">)</span>",
+              }
+            }
+            style={
+              Object {
+                "marginLeft": 43.349999999999994,
+                "textIndent": -14.45,
+              }
+            }
+          />
+        </div>
+        <div
+          className="pr12 py3 bg-white"
+          style={
+            Object {
+              "paddingLeft": 12,
+            }
+          }
+        >
+          <div
+            className="absolute fl color-gray align-r pr6 w30 py3"
+            data-content={39}
+            style={
+              Object {
+                "marginLeft": -6,
+                "marginTop": -3,
+              }
+            }
+            unselectable="on"
+          />
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": " ",
+              }
+            }
+            style={
+              Object {
+                "marginLeft": 43.349999999999994,
+                "textIndent": -14.45,
+              }
+            }
+          />
+        </div>
+        <div
+          className="pr12 py3 bg-white"
+          style={
+            Object {
+              "paddingLeft": 69.8,
+            }
+          }
+        >
+          <div
+            className="absolute fl color-gray align-r pr6 w30 py3"
+            data-content={40}
+            style={
+              Object {
+                "marginLeft": -63.8,
+                "marginTop": -3,
+              }
+            }
+            unselectable="on"
+          />
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "style<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">addLayer</span><span class=\\"token punctuation\\">(</span>layer<span class=\\"token punctuation\\">)</span>",
+              }
+            }
+            style={
+              Object {
+                "marginLeft": 43.349999999999994,
+                "textIndent": -14.45,
+              }
+            }
+          />
+        </div>
+        <div
+          className="pr12 py3 bg-white"
+          style={
+            Object {
+              "paddingLeft": 40.9,
+            }
+          }
+        >
+          <div
+            className="absolute fl color-gray align-r pr6 w30 py3"
+            data-content={41}
+            style={
+              Object {
+                "marginLeft": -34.9,
+                "marginTop": -3,
+              }
+            }
+            unselectable="on"
+          />
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<span class=\\"token punctuation\\">}</span>",
+              }
+            }
+            style={
+              Object {
+                "marginLeft": 43.349999999999994,
+                "textIndent": -14.45,
+              }
+            }
+          />
+        </div>
+        <div
+          className="pr12 py3 bg-white"
+          style={
+            Object {
+              "paddingLeft": 12,
+            }
+          }
+        >
+          <div
+            className="absolute fl color-gray align-r pr6 w30 py3"
+            data-content={42}
+            style={
+              Object {
+                "marginLeft": -6,
+                "marginTop": -3,
+              }
+            }
+            unselectable="on"
+          />
+          <div
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "<span class=\\"token punctuation\\">}</span>",
+              }
+            }
+            style={
+              Object {
+                "marginLeft": 43.349999999999994,
+                "textIndent": -14.45,
+              }
+            }
+          />
+        </div>
+      </div>
+    </code>
+  </pre>
+  <div
+    className="absolute left right z2 w6"
+    data-chunk-overlay="chunk-1"
+    style={
+      Object {
+        "opacity": 0,
+      }
+    }
+  >
+    <div
+      className="bg-blue h-full"
+    />
+  </div>
+  <div
+    className="absolute z3 right mr3 color-white"
+    data-chunk-copy="chunk-1"
     style={
       Object {
         "opacity": 0,

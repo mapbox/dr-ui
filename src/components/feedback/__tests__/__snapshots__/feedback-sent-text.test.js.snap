@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sent text feedback snapshot 1`] = `
+<div
+  className="bg-gray-faint py12 px18 round color-gray"
+>
+  <div>
+    <div>
+      <div
+        className="inline-block bg-green color-white round-full w18 h18 align-middle mr3 mb3"
+      >
+        <Icon
+          inline={false}
+          name="check"
+          passthroughProps={Object {}}
+          size={18}
+        />
+      </div>
+       
+      Thanks for your feedback.
+    </div>
+  </div>
+</div>
+`;

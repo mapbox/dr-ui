@@ -6,7 +6,7 @@ exports[`note A legacy note, has same styling as warning renders as expected 1`]
   style={
     Object {
       "background": "#feefe2",
-      "color": "#945823",
+      "color": "#78471c",
     }
   }
 >
@@ -28,8 +28,8 @@ exports[`note A legacy note, has same styling as warning renders as expected 1`]
         role="presentation"
         style={
           Object {
-            "height": "40",
-            "width": "40",
+            "height": 40,
+            "width": 40,
           }
         }
       >
@@ -48,9 +48,120 @@ exports[`note A legacy note, has same styling as warning renders as expected 1`]
     >
       Warning
     </div>
-    <p>
-      This is a legacy product.
-    </p>
+    <div>
+      <p>
+        You can create custom styles with
+         
+        <a
+          href="https://studio.mapbox.com"
+        >
+          Mapbox Studio
+        </a>
+         and then add them to your app. To programmatically add one of your custom styles to your
+         
+        <code>
+          mapboxMap
+        </code>
+        , head to your
+         
+        <a
+          href="https://studio.mapbox.com/styles/"
+        >
+          styles page
+        </a>
+        , copy your style's 
+        <a
+          href="/help/glossary/style-url/"
+        >
+          style URL
+        </a>
+        , and then add it to your 
+        <code>
+          mapboxMap
+        </code>
+         object with
+         
+        <code>
+          setStyleUrl();
+        </code>
+        :
+      </p>
+      <pre
+        className=" language-java"
+      >
+        <code
+          className=" language-java"
+        >
+          mapboxMap
+          <span
+            className="token punctuation"
+          >
+            .
+          </span>
+          <span
+            className="token function"
+          >
+            setStyle
+          </span>
+          <span
+            className="token punctuation"
+          >
+            (
+          </span>
+          <span
+            className="token keyword"
+          >
+            new
+          </span>
+           
+          <span
+            className="token class-name"
+          >
+            Style
+          </span>
+          <span
+            className="token punctuation"
+          >
+            .
+          </span>
+          <span
+            className="token class-name"
+          >
+            Builder
+          </span>
+          <span
+            className="token punctuation"
+          >
+            (
+          </span>
+          <span
+            className="token punctuation"
+          >
+            )
+          </span>
+          <span
+            className="token punctuation"
+          >
+            .
+          </span>
+          <span
+            className="token function"
+          >
+            fromUri
+          </span>
+          <span
+            className="token punctuation"
+          >
+            (
+          </span>
+          <span
+            className="token string"
+          >
+            "mapbox://styles/your-mapbox-username/your-style-ID"
+          </span>
+        </code>
+      </pre>
+    </div>
   </div>
 </div>
 `;
@@ -61,7 +172,7 @@ exports[`note A note to display an error with steps or links on how to troublesh
   style={
     Object {
       "background": "#fbe5e5",
-      "color": "#ba3b3f",
+      "color": "#9b3134",
     }
   }
 >
@@ -83,8 +194,8 @@ exports[`note A note to display an error with steps or links on how to troublesh
         role="presentation"
         style={
           Object {
-            "height": "40",
-            "width": "40",
+            "height": 40,
+            "width": 40,
           }
         }
       >
@@ -103,16 +214,120 @@ exports[`note A note to display an error with steps or links on how to troublesh
     >
       Error
     </div>
-    <p>
-      Did something not go as planned? Check out the
-       
-      <a
-        href="#"
+    <div>
+      <p>
+        You can create custom styles with
+         
+        <a
+          href="https://studio.mapbox.com"
+        >
+          Mapbox Studio
+        </a>
+         and then add them to your app. To programmatically add one of your custom styles to your
+         
+        <code>
+          mapboxMap
+        </code>
+        , head to your
+         
+        <a
+          href="https://studio.mapbox.com/styles/"
+        >
+          styles page
+        </a>
+        , copy your style's 
+        <a
+          href="/help/glossary/style-url/"
+        >
+          style URL
+        </a>
+        , and then add it to your 
+        <code>
+          mapboxMap
+        </code>
+         object with
+         
+        <code>
+          setStyleUrl();
+        </code>
+        :
+      </p>
+      <pre
+        className=" language-java"
       >
-        troubleshooting guide
-      </a>
-      .
-    </p>
+        <code
+          className=" language-java"
+        >
+          mapboxMap
+          <span
+            className="token punctuation"
+          >
+            .
+          </span>
+          <span
+            className="token function"
+          >
+            setStyle
+          </span>
+          <span
+            className="token punctuation"
+          >
+            (
+          </span>
+          <span
+            className="token keyword"
+          >
+            new
+          </span>
+           
+          <span
+            className="token class-name"
+          >
+            Style
+          </span>
+          <span
+            className="token punctuation"
+          >
+            .
+          </span>
+          <span
+            className="token class-name"
+          >
+            Builder
+          </span>
+          <span
+            className="token punctuation"
+          >
+            (
+          </span>
+          <span
+            className="token punctuation"
+          >
+            )
+          </span>
+          <span
+            className="token punctuation"
+          >
+            .
+          </span>
+          <span
+            className="token function"
+          >
+            fromUri
+          </span>
+          <span
+            className="token punctuation"
+          >
+            (
+          </span>
+          <span
+            className="token string"
+          >
+            "mapbox://styles/your-mapbox-username/your-style-ID"
+          </span>
+        </code>
+      </pre>
+    </div>
   </div>
 </div>
 `;
@@ -123,7 +338,7 @@ exports[`note A note to display with a message about new products or features. r
   style={
     Object {
       "background": "#e8f5ee",
-      "color": "#1b7d4f",
+      "color": "#15603d",
     }
   }
 >
@@ -145,8 +360,8 @@ exports[`note A note to display with a message about new products or features. r
         role="presentation"
         style={
           Object {
-            "height": "40",
-            "width": "40",
+            "height": 40,
+            "width": 40,
           }
         }
       >
@@ -165,9 +380,120 @@ exports[`note A note to display with a message about new products or features. r
     >
       New!
     </div>
-    <p>
-      Style components in Mapbox Studio are now available in public beta for every user. To start building, log in to Studio or sign up for an account to start making your first map.
-    </p>
+    <div>
+      <p>
+        You can create custom styles with
+         
+        <a
+          href="https://studio.mapbox.com"
+        >
+          Mapbox Studio
+        </a>
+         and then add them to your app. To programmatically add one of your custom styles to your
+         
+        <code>
+          mapboxMap
+        </code>
+        , head to your
+         
+        <a
+          href="https://studio.mapbox.com/styles/"
+        >
+          styles page
+        </a>
+        , copy your style's 
+        <a
+          href="/help/glossary/style-url/"
+        >
+          style URL
+        </a>
+        , and then add it to your 
+        <code>
+          mapboxMap
+        </code>
+         object with
+         
+        <code>
+          setStyleUrl();
+        </code>
+        :
+      </p>
+      <pre
+        className=" language-java"
+      >
+        <code
+          className=" language-java"
+        >
+          mapboxMap
+          <span
+            className="token punctuation"
+          >
+            .
+          </span>
+          <span
+            className="token function"
+          >
+            setStyle
+          </span>
+          <span
+            className="token punctuation"
+          >
+            (
+          </span>
+          <span
+            className="token keyword"
+          >
+            new
+          </span>
+           
+          <span
+            className="token class-name"
+          >
+            Style
+          </span>
+          <span
+            className="token punctuation"
+          >
+            .
+          </span>
+          <span
+            className="token class-name"
+          >
+            Builder
+          </span>
+          <span
+            className="token punctuation"
+          >
+            (
+          </span>
+          <span
+            className="token punctuation"
+          >
+            )
+          </span>
+          <span
+            className="token punctuation"
+          >
+            .
+          </span>
+          <span
+            className="token function"
+          >
+            fromUri
+          </span>
+          <span
+            className="token punctuation"
+          >
+            (
+          </span>
+          <span
+            className="token string"
+          >
+            "mapbox://styles/your-mapbox-username/your-style-ID"
+          </span>
+        </code>
+      </pre>
+    </div>
   </div>
 </div>
 `;
@@ -177,8 +503,8 @@ exports[`note A note to flag information about a beta release/product renders as
   className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
   style={
     Object {
-      "background": "#edf0fd",
-      "color": "#3658ee",
+      "background": "#f1f3fd",
+      "color": "#0c248d",
     }
   }
 >
@@ -200,8 +526,8 @@ exports[`note A note to flag information about a beta release/product renders as
         role="presentation"
         style={
           Object {
-            "height": "40",
-            "width": "40",
+            "height": 40,
+            "width": 40,
           }
         }
       >
@@ -220,9 +546,120 @@ exports[`note A note to flag information about a beta release/product renders as
     >
       Beta
     </div>
-    <p>
-      Style components in Mapbox Studio are now available in public beta for every user. To start building, log in to Studio or sign up for an account to start making your first map.
-    </p>
+    <div>
+      <p>
+        You can create custom styles with
+         
+        <a
+          href="https://studio.mapbox.com"
+        >
+          Mapbox Studio
+        </a>
+         and then add them to your app. To programmatically add one of your custom styles to your
+         
+        <code>
+          mapboxMap
+        </code>
+        , head to your
+         
+        <a
+          href="https://studio.mapbox.com/styles/"
+        >
+          styles page
+        </a>
+        , copy your style's 
+        <a
+          href="/help/glossary/style-url/"
+        >
+          style URL
+        </a>
+        , and then add it to your 
+        <code>
+          mapboxMap
+        </code>
+         object with
+         
+        <code>
+          setStyleUrl();
+        </code>
+        :
+      </p>
+      <pre
+        className=" language-java"
+      >
+        <code
+          className=" language-java"
+        >
+          mapboxMap
+          <span
+            className="token punctuation"
+          >
+            .
+          </span>
+          <span
+            className="token function"
+          >
+            setStyle
+          </span>
+          <span
+            className="token punctuation"
+          >
+            (
+          </span>
+          <span
+            className="token keyword"
+          >
+            new
+          </span>
+           
+          <span
+            className="token class-name"
+          >
+            Style
+          </span>
+          <span
+            className="token punctuation"
+          >
+            .
+          </span>
+          <span
+            className="token class-name"
+          >
+            Builder
+          </span>
+          <span
+            className="token punctuation"
+          >
+            (
+          </span>
+          <span
+            className="token punctuation"
+          >
+            )
+          </span>
+          <span
+            className="token punctuation"
+          >
+            .
+          </span>
+          <span
+            className="token function"
+          >
+            fromUri
+          </span>
+          <span
+            className="token punctuation"
+          >
+            (
+          </span>
+          <span
+            className="token string"
+          >
+            "mapbox://styles/your-mapbox-username/your-style-ID"
+          </span>
+        </code>
+      </pre>
+    </div>
   </div>
 </div>
 `;
@@ -233,7 +670,7 @@ exports[`note A warning note to let the user know something has changed or will 
   style={
     Object {
       "background": "#feefe2",
-      "color": "#945823",
+      "color": "#78471c",
     }
   }
 >
@@ -255,8 +692,8 @@ exports[`note A warning note to let the user know something has changed or will 
         role="presentation"
         style={
           Object {
-            "height": "40",
-            "width": "40",
+            "height": 40,
+            "width": 40,
           }
         }
       >
@@ -275,9 +712,120 @@ exports[`note A warning note to let the user know something has changed or will 
     >
       Be careful
     </div>
-    <p>
-      This is a warning.
-    </p>
+    <div>
+      <p>
+        You can create custom styles with
+         
+        <a
+          href="https://studio.mapbox.com"
+        >
+          Mapbox Studio
+        </a>
+         and then add them to your app. To programmatically add one of your custom styles to your
+         
+        <code>
+          mapboxMap
+        </code>
+        , head to your
+         
+        <a
+          href="https://studio.mapbox.com/styles/"
+        >
+          styles page
+        </a>
+        , copy your style's 
+        <a
+          href="/help/glossary/style-url/"
+        >
+          style URL
+        </a>
+        , and then add it to your 
+        <code>
+          mapboxMap
+        </code>
+         object with
+         
+        <code>
+          setStyleUrl();
+        </code>
+        :
+      </p>
+      <pre
+        className=" language-java"
+      >
+        <code
+          className=" language-java"
+        >
+          mapboxMap
+          <span
+            className="token punctuation"
+          >
+            .
+          </span>
+          <span
+            className="token function"
+          >
+            setStyle
+          </span>
+          <span
+            className="token punctuation"
+          >
+            (
+          </span>
+          <span
+            className="token keyword"
+          >
+            new
+          </span>
+           
+          <span
+            className="token class-name"
+          >
+            Style
+          </span>
+          <span
+            className="token punctuation"
+          >
+            .
+          </span>
+          <span
+            className="token class-name"
+          >
+            Builder
+          </span>
+          <span
+            className="token punctuation"
+          >
+            (
+          </span>
+          <span
+            className="token punctuation"
+          >
+            )
+          </span>
+          <span
+            className="token punctuation"
+          >
+            .
+          </span>
+          <span
+            className="token function"
+          >
+            fromUri
+          </span>
+          <span
+            className="token punctuation"
+          >
+            (
+          </span>
+          <span
+            className="token string"
+          >
+            "mapbox://styles/your-mapbox-username/your-style-ID"
+          </span>
+        </code>
+      </pre>
+    </div>
   </div>
 </div>
 `;
@@ -288,7 +836,7 @@ exports[`note Default note renders as expected 1`] = `
   style={
     Object {
       "background": "#f4f7fb",
-      "color": "#547190",
+      "color": "#425870",
     }
   }
 >
@@ -310,8 +858,8 @@ exports[`note Default note renders as expected 1`] = `
         role="presentation"
         style={
           Object {
-            "height": "40",
-            "width": "40",
+            "height": 40,
+            "width": 40,
           }
         }
       >
@@ -337,38 +885,13 @@ exports[`note Default note renders as expected 1`] = `
 </div>
 `;
 
-exports[`note Default note with no image renders as expected 1`] = `
-<div
-  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
-  style={
-    Object {
-      "background": "#f4f7fb",
-      "color": "#547190",
-    }
-  }
->
-  <div
-    className="flex-child prose"
-  >
-    <div
-      className="txt-bold txt-m mb6"
-    >
-      Note
-    </div>
-    <p>
-      Here is a little thing to note, but it doesn't have an image.
-    </p>
-  </div>
-</div>
-`;
-
 exports[`note Note with custom title. renders as expected 1`] = `
 <div
   className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
   style={
     Object {
       "background": "#f4f7fb",
-      "color": "#547190",
+      "color": "#425870",
     }
   }
 >
@@ -390,8 +913,8 @@ exports[`note Note with custom title. renders as expected 1`] = `
         role="presentation"
         style={
           Object {
-            "height": "40",
-            "width": "40",
+            "height": 40,
+            "width": 40,
           }
         }
       >
@@ -412,14 +935,117 @@ exports[`note Note with custom title. renders as expected 1`] = `
     </div>
     <div>
       <p>
-        Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna.
+        You can create custom styles with
+         
+        <a
+          href="https://studio.mapbox.com"
+        >
+          Mapbox Studio
+        </a>
+         and then add them to your app. To programmatically add one of your custom styles to your
+         
+        <code>
+          mapboxMap
+        </code>
+        , head to your
+         
+        <a
+          href="https://studio.mapbox.com/styles/"
+        >
+          styles page
+        </a>
+        , copy your style's 
+        <a
+          href="/help/glossary/style-url/"
+        >
+          style URL
+        </a>
+        , and then add it to your 
+        <code>
+          mapboxMap
+        </code>
+         object with
+         
+        <code>
+          setStyleUrl();
+        </code>
+        :
       </p>
-      <p>
-        Cras mattis consectetur purus sit amet fermentum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor. Maecenas sed diam eget risus varius blandit sit amet non magna.
-      </p>
-      <p>
-        Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod.
-      </p>
+      <pre
+        className=" language-java"
+      >
+        <code
+          className=" language-java"
+        >
+          mapboxMap
+          <span
+            className="token punctuation"
+          >
+            .
+          </span>
+          <span
+            className="token function"
+          >
+            setStyle
+          </span>
+          <span
+            className="token punctuation"
+          >
+            (
+          </span>
+          <span
+            className="token keyword"
+          >
+            new
+          </span>
+           
+          <span
+            className="token class-name"
+          >
+            Style
+          </span>
+          <span
+            className="token punctuation"
+          >
+            .
+          </span>
+          <span
+            className="token class-name"
+          >
+            Builder
+          </span>
+          <span
+            className="token punctuation"
+          >
+            (
+          </span>
+          <span
+            className="token punctuation"
+          >
+            )
+          </span>
+          <span
+            className="token punctuation"
+          >
+            .
+          </span>
+          <span
+            className="token function"
+          >
+            fromUri
+          </span>
+          <span
+            className="token punctuation"
+          >
+            (
+          </span>
+          <span
+            className="token string"
+          >
+            "mapbox://styles/your-mapbox-username/your-style-ID"
+          </span>
+        </code>
+      </pre>
     </div>
   </div>
 </div>
@@ -431,7 +1057,7 @@ exports[`note download renders as expected 1`] = `
   style={
     Object {
       "background": "#f2effa",
-      "color": "#5a3fc0",
+      "color": "#452f92",
     }
   }
 >
@@ -453,8 +1079,8 @@ exports[`note download renders as expected 1`] = `
         role="presentation"
         style={
           Object {
-            "height": "40",
-            "width": "40",
+            "height": 40,
+            "width": 40,
           }
         }
       >
@@ -473,9 +1099,120 @@ exports[`note download renders as expected 1`] = `
     >
       Download from vision.mapbox.com/install
     </div>
-    <p>
-      You must download the relevant dependencies from vision.mapbox.com/install before continuing. You can download the dependency directly or import it into your project using Maven. This will require that you are logged into your Mapbox account.
-    </p>
+    <div>
+      <p>
+        You can create custom styles with
+         
+        <a
+          href="https://studio.mapbox.com"
+        >
+          Mapbox Studio
+        </a>
+         and then add them to your app. To programmatically add one of your custom styles to your
+         
+        <code>
+          mapboxMap
+        </code>
+        , head to your
+         
+        <a
+          href="https://studio.mapbox.com/styles/"
+        >
+          styles page
+        </a>
+        , copy your style's 
+        <a
+          href="/help/glossary/style-url/"
+        >
+          style URL
+        </a>
+        , and then add it to your 
+        <code>
+          mapboxMap
+        </code>
+         object with
+         
+        <code>
+          setStyleUrl();
+        </code>
+        :
+      </p>
+      <pre
+        className=" language-java"
+      >
+        <code
+          className=" language-java"
+        >
+          mapboxMap
+          <span
+            className="token punctuation"
+          >
+            .
+          </span>
+          <span
+            className="token function"
+          >
+            setStyle
+          </span>
+          <span
+            className="token punctuation"
+          >
+            (
+          </span>
+          <span
+            className="token keyword"
+          >
+            new
+          </span>
+           
+          <span
+            className="token class-name"
+          >
+            Style
+          </span>
+          <span
+            className="token punctuation"
+          >
+            .
+          </span>
+          <span
+            className="token class-name"
+          >
+            Builder
+          </span>
+          <span
+            className="token punctuation"
+          >
+            (
+          </span>
+          <span
+            className="token punctuation"
+          >
+            )
+          </span>
+          <span
+            className="token punctuation"
+          >
+            .
+          </span>
+          <span
+            className="token function"
+          >
+            fromUri
+          </span>
+          <span
+            className="token punctuation"
+          >
+            (
+          </span>
+          <span
+            className="token string"
+          >
+            "mapbox://styles/your-mapbox-username/your-style-ID"
+          </span>
+        </code>
+      </pre>
+    </div>
   </div>
 </div>
 `;

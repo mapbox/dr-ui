@@ -2,6 +2,7 @@
 
 exports[`sectioned-navigation With a title, linked section headings, and counts renders as expected 1`] = `
 <div
+  className="mx24"
   data-swiftype-index="false"
 >
   <div
@@ -9,83 +10,69 @@ exports[`sectioned-navigation With a title, linked section headings, and counts 
   >
     Examples
   </div>
-  <div>
-    <div>
-      <a
-        className="block txt-bold color-gray py12 color-blue-on-hover"
-        href="#getting-started"
-      >
-        Getting started (3)
-      </a>
-      <div>
-        <a
-          className="color-blue-on-hover block mb6"
-          href="#foo"
-        >
-          Camera animation
-        </a>
-        <a
-          className="color-blue-on-hover block mb6 txt-bold"
-          href="#footoo"
-        >
-          Mark a place
-        </a>
-        <a
-          className="color-blue-on-hover block mb6"
-          href="#fooandyou"
-        >
-          Apply a style
-        </a>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div>
-      <a
-        className="block txt-bold color-gray py12 color-blue-on-hover"
-        href="#markers"
-      >
-        Markers and callouts (2)
-      </a>
-      <div>
-        <a
-          className="color-blue-on-hover block mb6"
-          href="#fooboo"
-        >
-          Annotation models
-        </a>
-        <a
-          className="color-blue-on-hover block mb6"
-          href="#foocrew"
-        >
-          Callouts
-        </a>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div>
-      <a
-        className="block txt-bold color-gray py12 color-blue-on-hover"
-        href="#getting-started-again"
-      >
-        Getting started again (1)
-      </a>
-      <div>
-        <a
-          className="color-blue-on-hover block mb6"
-          href="#fooblue"
-        >
-          Apply a style
-        </a>
-      </div>
-    </div>
-  </div>
+  <a
+    className="block txt-bold color-gray py12 color-blue-on-hover"
+    href="#getting-started"
+    id="getting-started-sidebar"
+  >
+    Getting started (3)
+  </a>
+  <a
+    className="color-blue-on-hover block mb6"
+    href="#foo"
+  >
+    Camera animation
+  </a>
+  <a
+    className="color-blue-on-hover block mb6 txt-bold"
+    href="#footoo"
+  >
+    Mark a place
+  </a>
+  <a
+    className="color-blue-on-hover block mb6"
+    href="#fooandyou"
+  >
+    Apply a style
+  </a>
+  <a
+    className="block txt-bold color-gray py12 color-blue-on-hover"
+    href="#markers"
+    id="markers-sidebar"
+  >
+    Markers and callouts (2)
+  </a>
+  <a
+    className="color-blue-on-hover block mb6"
+    href="#fooboo"
+  >
+    Annotation models
+  </a>
+  <a
+    className="color-blue-on-hover block mb6"
+    href="#foocrew"
+  >
+    Callouts
+  </a>
+  <a
+    className="block txt-bold color-gray py12 color-blue-on-hover"
+    href="#getting-started-again"
+    id="getting-started-again-sidebar"
+  >
+    Getting started again (1)
+  </a>
+  <a
+    className="color-blue-on-hover block mb6"
+    href="#fooblue"
+  >
+    Apply a style
+  </a>
 </div>
 `;
 
 exports[`sectioned-navigation With a title, linked section headings, counts, and filter renders as expected 1`] = `
 <div
+  className="mx24"
   data-swiftype-index="false"
 >
   <div
@@ -94,7 +81,7 @@ exports[`sectioned-navigation With a title, linked section headings, counts, and
     Examples
   </div>
   <div
-    className="mb18"
+    className="mb3"
   >
     <div
       className="relative bg-white"
@@ -115,191 +102,152 @@ exports[`sectioned-navigation With a title, linked section headings, counts, and
       />
     </div>
   </div>
-  <div>
-    <div>
-      <a
-        className="block txt-bold color-gray py12 color-blue-on-hover"
-        href="#getting-started"
-      >
-        Getting started (3)
-      </a>
-      <div>
-        <a
-          className="color-blue-on-hover block mb6"
-          href="#foo"
-        >
-          Camera animation
-        </a>
-        <a
-          className="color-blue-on-hover block mb6 txt-bold"
-          href="#footoo"
-        >
-          Mark a place
-        </a>
-        <a
-          className="color-blue-on-hover block mb6"
-          href="#fooandyou"
-        >
-          Apply a style
-        </a>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div>
-      <a
-        className="block txt-bold color-gray py12 color-blue-on-hover"
-        href="#markers"
-      >
-        Markers and callouts (2)
-      </a>
-      <div>
-        <a
-          className="color-blue-on-hover block mb6"
-          href="#fooboo"
-        >
-          Annotation models
-        </a>
-        <a
-          className="color-blue-on-hover block mb6"
-          href="#foocrew"
-        >
-          Callouts
-        </a>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div>
-      <a
-        className="block txt-bold color-gray py12 color-blue-on-hover"
-        href="#getting-started-again"
-      >
-        Getting started again (1)
-      </a>
-      <div>
-        <a
-          className="color-blue-on-hover block mb6"
-          href="#fooblue"
-        >
-          Apply a style
-        </a>
-      </div>
-    </div>
-  </div>
+  <a
+    className="block txt-bold color-gray py12 color-blue-on-hover"
+    href="#getting-started"
+    id="getting-started-sidebar"
+  >
+    Getting started (3)
+  </a>
+  <a
+    className="color-blue-on-hover block mb6"
+    href="#foo"
+  >
+    Camera animation
+  </a>
+  <a
+    className="color-blue-on-hover block mb6 txt-bold"
+    href="#footoo"
+  >
+    Mark a place
+  </a>
+  <a
+    className="color-blue-on-hover block mb6"
+    href="#fooandyou"
+  >
+    Apply a style
+  </a>
+  <a
+    className="block txt-bold color-gray py12 color-blue-on-hover"
+    href="#markers"
+    id="markers-sidebar"
+  >
+    Markers and callouts (2)
+  </a>
+  <a
+    className="color-blue-on-hover block mb6"
+    href="#fooboo"
+  >
+    Annotation models
+  </a>
+  <a
+    className="color-blue-on-hover block mb6"
+    href="#foocrew"
+  >
+    Callouts
+  </a>
+  <a
+    className="block txt-bold color-gray py12 color-blue-on-hover"
+    href="#getting-started-again"
+    id="getting-started-again-sidebar"
+  >
+    Getting started again (1)
+  </a>
+  <a
+    className="color-blue-on-hover block mb6"
+    href="#fooblue"
+  >
+    Apply a style
+  </a>
 </div>
 `;
 
 exports[`sectioned-navigation Without title, without linked section headings, without counts renders as expected 1`] = `
 <div
+  className="mx24"
   data-swiftype-index="false"
 >
-  <div>
-    <div>
-      <div
-        className="block txt-bold color-gray py12"
-      >
-        Getting started
-      </div>
-      <div>
-        <a
-          className="color-blue-on-hover block mb6"
-          href="#footwo"
-        >
-          Camera animation
-        </a>
-        <a
-          className="color-blue-on-hover block mb6"
-          href="#foo-to"
-        >
-          Mark a place
-        </a>
-        <a
-          className="color-blue-on-hover block mb6"
-          href="#footoo"
-        >
-          Apply a style
-        </a>
-      </div>
-    </div>
+  <div
+    className="block txt-bold color-gray py12"
+  >
+    Getting started
   </div>
-  <div>
-    <div>
-      <div
-        className="block txt-bold color-gray py12"
-      >
-        Markers and callouts
-      </div>
-      <div>
-        <a
-          className="color-blue-on-hover block mb6"
-          href="#foot"
-        >
-          Annotation models
-        </a>
-        <a
-          className="color-blue-on-hover block mb6"
-          href="#fooz"
-        >
-          Callouts
-        </a>
-      </div>
-    </div>
+  <a
+    className="color-blue-on-hover block mb6"
+    href="#footwo"
+  >
+    Camera animation
+  </a>
+  <a
+    className="color-blue-on-hover block mb6"
+    href="#foo-to"
+  >
+    Mark a place
+  </a>
+  <a
+    className="color-blue-on-hover block mb6"
+    href="#footoo"
+  >
+    Apply a style
+  </a>
+  <div
+    className="block txt-bold color-gray py12"
+  >
+    Markers and callouts
   </div>
-  <div>
-    <div>
-      <a
-        className="block txt-bold color-gray py12 color-blue-on-hover"
-        href="#getting-started-again"
-      >
-        Getting started again
-      </a>
-      <div>
-        <a
-          className="color-blue-on-hover block mb6"
-          href="#foobles"
-        >
-          Apply a style
-        </a>
-      </div>
-    </div>
-  </div>
+  <a
+    className="color-blue-on-hover block mb6"
+    href="#foot"
+  >
+    Annotation models
+  </a>
+  <a
+    className="color-blue-on-hover block mb6"
+    href="#fooz"
+  >
+    Callouts
+  </a>
+  <a
+    className="block txt-bold color-gray py12 color-blue-on-hover"
+    href="#getting-started-again"
+    id="getting-started-again-sidebar"
+  >
+    Getting started again
+  </a>
+  <a
+    className="color-blue-on-hover block mb6"
+    href="#foobles"
+  >
+    Apply a style
+  </a>
 </div>
 `;
 
 exports[`sectioned-navigation Without title, without sub items renders as expected 1`] = `
 <div
+  className="mx24"
   data-swiftype-index="false"
 >
-  <div>
-    <div>
-      <a
-        className="block txt-bold color-gray py6 color-blue-on-hover"
-        href="#getting-started"
-      >
-        Getting started (3)
-      </a>
-    </div>
-  </div>
-  <div>
-    <div>
-      <a
-        className="block txt-bold color-gray py6 color-blue-on-hover"
-        href="#markers-and-callouts"
-      >
-        Markers and callouts (2)
-      </a>
-    </div>
-  </div>
-  <div>
-    <div>
-      <a
-        className="block txt-bold color-gray py6 color-blue-on-hover"
-        href="#getting-started-again"
-      >
-        Getting started again (1)
-      </a>
-    </div>
-  </div>
+  <a
+    className="block txt-bold color-gray py6 color-blue-on-hover"
+    href="#getting-started"
+    id="getting-started-sidebar"
+  >
+    Getting started (3)
+  </a>
+  <a
+    className="block txt-bold color-gray py6 color-blue-on-hover"
+    href="#markers-and-callouts"
+    id="markers-and-callouts-sidebar"
+  >
+    Markers and callouts (2)
+  </a>
+  <a
+    className="block txt-bold color-gray py6 color-blue-on-hover"
+    href="#getting-started-again"
+    id="getting-started-again-sidebar"
+  >
+    Getting started again (1)
+  </a>
 </div>
 `;

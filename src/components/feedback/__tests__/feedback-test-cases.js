@@ -3,16 +3,16 @@ import Feedback from '../feedback';
 import React from 'react';
 import PageLayout from '../../page-layout/page-layout';
 import NavigationAccordion from '../../navigation-accordion/navigation-accordion';
-import TopbarSticker from '../../topbar-sticker/topbar-sticker';
+import Topbar from '../../topbar/topbar';
 import ProductMenu from '../../product-menu/product-menu';
 
 const testCases = {};
 
 testCases.basic = {
   component: Feedback,
-  description: 'Basic',
+  description: 'Basic (sends user information as `crocsfan19`)',
   props: {
-    site: 'Mapbox GL JS',
+    site: 'dr-ui',
     webhook: {
       staging:
         'https://evj5gwoa8j.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
@@ -20,9 +20,16 @@ testCases.basic = {
         'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook'
     },
     preferredLanguage: 'Swift',
+    user: {
+      id: 'crocsfan19',
+      email: 'crocsfan19@mapbox.com',
+      plan: {
+        id: 'starter'
+      }
+    },
     section: 'LngLat',
     location: {
-      pathname: '/mapbox-gl-js/api/',
+      pathname: '/dr-ui/feedback/',
       hash: '#lnglat'
     }
   }
@@ -30,10 +37,10 @@ testCases.basic = {
 
 testCases.type = {
   component: Feedback,
-  description: 'Change type',
+  description: 'Change type (sends anonymous user information)',
   props: {
     type: 'section',
-    site: 'Help',
+    site: 'dr-ui',
     webhook: {
       staging:
         'https://evj5gwoa8j.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
@@ -46,9 +53,10 @@ testCases.type = {
 
 testCases.noSentry = {
   component: Feedback,
-  description: 'Does not send text feedback to Sentry',
+  description:
+    'Does not send text feedback to Sentry (sends anonymous user information)',
   props: {
-    site: 'Mapbox GL JS',
+    site: 'dr-ui',
     webhook: {
       staging:
         'https://evj5gwoa8j.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
@@ -59,17 +67,17 @@ testCases.noSentry = {
     preferredLanguage: 'Swift',
     section: 'LngLat',
     location: {
-      pathname: '/mapbox-gl-js/api/',
+      pathname: '/dr-ui/api/',
       hash: '#lnglat'
     }
   }
 };
 
 testCases.common = {
-  description: 'Feedback placement',
+  description: 'Feedback placement (sends anonymous user information)',
   element: (
     <div>
-      <TopbarSticker>
+      <Topbar>
         <div className="limiter">
           <div className="grid grid--gut36 mr-neg36 mr0-mm">
             <div className="col col--4-mm col--12">
@@ -82,10 +90,10 @@ testCases.common = {
             </div>
           </div>
         </div>
-      </TopbarSticker>
+      </Topbar>
       <div className="limiter">
         <PageLayout
-          sidebarTitle={<div className="ml36">Section title</div>}
+          sidebarTitle="Section title"
           sidebarContent={
             <NavigationAccordion
               currentPath="page-one"
@@ -137,7 +145,7 @@ testCases.common = {
             </p>
 
             <Feedback
-              site="Help"
+              site="dr-ui"
               location={{}}
               webhook={{
                 staging:

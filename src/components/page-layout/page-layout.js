@@ -69,7 +69,7 @@ class PageLayout extends React.Component {
     let title = '';
     if (props.sidebarTitle) {
       title = (
-        <div className="txt-l color-blue txt-fancy mb12 block-mm none">
+        <div className="txt-l color-blue txt-fancy mb12 block-mm none mx24">
           {props.sidebarTitle}
         </div>
       );
@@ -104,7 +104,8 @@ class PageLayout extends React.Component {
             top={state.topValue}
           >
             <div
-              className={`pt24-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled ${sidebarNarrowClasses}`}
+              className={`pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled ${sidebarNarrowClasses}`}
+              id="dr-ui--page-layout-sidebar"
             >
               {title}
               {props.sidebarContent}

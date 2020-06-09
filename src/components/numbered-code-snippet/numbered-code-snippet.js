@@ -217,22 +217,81 @@ export default class NumberedCodeSnippet extends React.PureComponent {
       });
       currentChunk = [];
     };
+    /** Iterate through every line of code. */
     for (let i = 0, l = splitDisplayCode.length; i < l; i++) {
+      /**
+       * Set the chunk equal to the contents of the line. This may include
+       * empty strings where empty lines are added to improve readability.
+       */
       const chunk = splitDisplayCode[i];
+
+      /** Set the line number. */
       const lineNumber = i + 1;
+
+      /**
+       * If there is a defined copy range that includes either the current
+       * lineNumber or an upcoming lineNumber, currentLiveRange will be equal
+       * to that copy range (an array of two numbers).
+       */
       if (currentLiveRange && lineNumber === currentLiveRange[0]) {
+        /**
+         * If there is a currentLiveRange and the lineNumber is equal to
+         * the beginning of the currentLiveRange, use endCurrentChunk to:
+         *   - stop adding lines to the current chunk
+         *   - add that chunk to the allChunks array as a non-live chunk
+         *   - start a fresh currentChunk array
+         */
         endCurrentChunk({ live: false });
       } else if (currentLiveRange && lineNumber > currentLiveRange[1]) {
+        /**
+         * If there is a currentLiveRange and the lineNumber is more than the
+         * the last line number of the currentLiveRange (the second number in
+         * the copy range array), use endCurrentChunk to:
+         *   - stop adding lines to the current chunk
+         *   - add that complete chunk to the allChunks array as a live chunk
+         *   - start a fresh currentChunk array
+         */
         endCurrentChunk({ live: true });
+        /**
+         * Then look for the next copy range. If none exists, currentLiveRange
+         * will be undefined.
+         */
         currentLiveRange = mutableCopyRanges && mutableCopyRanges.shift();
       }
+      /**
+       * Push the contents of the line you're currently iterating over
+       * to the currentChunk.
+       */
       currentChunk.push({
         highlighted: chunk,
         raw: rawCodeLines[i]
       });
     }
+
+    /**
+     * After iterating through all lines, if the currentChunk still contains
+     * contents that means the chunk has not yet been added to the allChunks
+     * array (which is done with endCurrentChunk).
+     */
     if (currentChunk.length) {
-      endCurrentChunk({ live: false });
+      /**
+       * If a currentLiveRange also still exists after iterating through
+       * all lines, that means the live chunk continues to the last line of
+       * the code snippet.
+       */
+      if (currentLiveRange) {
+        /**
+         * If a currentLiveRange exists, end the current chunk and add it to
+         * the allChunks array as a live chunk.
+         */
+        endCurrentChunk({ live: true });
+      } else {
+        /**
+         * If a currentLiveRange does not exist, end the current chunk and add
+         * it to the allChunks array as a non-live chunk.
+         */
+        endCurrentChunk({ live: false });
+      }
     }
 
     const codeElements = [];
@@ -242,16 +301,13 @@ export default class NumberedCodeSnippet extends React.PureComponent {
     let liveChunkCount = -1; // Incremented to give CopyButtons an identifier
     allChunks.forEach((codeChunk, i) => {
       const chunkId = `chunk-${i}`;
-
       const lineEls = codeChunk.highlightedLines.map((line, i) => {
         // Left padding is determined below
         let lineClasses = 'pr12';
-        if (codeChunk.live) lineClasses += ' py3';
+        if (codeChunk.live) lineClasses += ' py3 bg-white';
         if (!codeChunk.live && props.copyRanges !== undefined) {
           if (props.collapseLines) {
             lineClasses += this.state.expanded ? '' : ' h0 scroll-hidden';
-          } else {
-            lineClasses += ' opacity50 bg-darken10';
           }
         }
 
@@ -331,7 +387,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
             {lineEls}
           </div>
         );
-      } else {
+      } else if (!codeChunk.live && lineEls.length) {
         const expandCollapseButtons = this.state.expanded ? (
           <HideLines
             onClick={() => {
@@ -368,10 +424,10 @@ export default class NumberedCodeSnippet extends React.PureComponent {
           <div
             key={i}
             data-chunk-overlay={chunkId}
-            className="bg-lighten75 absolute left right"
+            className="absolute left right z2 w6"
             style={{ opacity: 0 }}
           >
-            <div className="bg-blue h-full w6" />
+            <div className="bg-blue h-full" />
           </div>
         );
 
@@ -406,7 +462,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
       );
     }
 
-    let containerClasses = 'relative round z0 scroll-styled';
+    let containerClasses = 'prose relative round z0 scroll-styled';
     if (props.maxHeight !== undefined) containerClasses += ' scroll-auto';
 
     const containerStyles = {};
@@ -417,9 +473,9 @@ export default class NumberedCodeSnippet extends React.PureComponent {
       <div
         className={containerClasses}
         ref={this.onContainerElement}
-        style={{ ...containerStyles, backgroundColor: '#f4f7fb' }}
+        style={{ ...containerStyles }}
       >
-        <pre className="my-neg12 pt12 ml-neg12 pl12 pr0 mobile-snippet txt-break-word">
+        <pre className="py0 px0 txt-break-word mb0">
           <code className={codeClasses}>{codeElements}</code>
         </pre>
         {copyAllButton}

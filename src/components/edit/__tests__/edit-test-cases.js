@@ -10,9 +10,9 @@ testCases.basic = {
   component: Edit,
   description: 'Basic example',
   props: {
-    html: "<div id='map'></div>",
+    html: "<h1>hello world!</h1><div id='map'></div>",
     css:
-      'body { margin: 0; padding: 0; }\n        #map { position: absolute; top: 0; bottom: 0; width: 100%; };',
+      'body { margin: 0; padding: 0; background: yellow; }\n        #map { position: absolute; top: 0; bottom: 0; width: 100%; };',
     frontMatter: {
       description: 'Initialize a map in an HTML element with Mapbox GL JS.',
       pathname: '/mapbox-gl-js/example/simple-map/',
@@ -29,7 +29,7 @@ testCases.basic = {
 };
 
 const code = helpers.extractor(
-  "<!DOCTYPE html>\n<html>\n<head>\n<meta charset='utf-8' />\n<title>Display a map</title>\n<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />\n<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>\n<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />\n<style>\n    body { margin: 0; padding: 0; }\n        #map { position: absolute; top: 0; bottom: 0; width: 100%; };\n</style><style>body {background: red;}</style>\n</head>\n<body>\n<div id='map'></div>\n<script>\nmapboxgl.accessToken = '<your access token here>';\nvar map = new mapboxgl.Map({\n    container: 'map', // container id\n    style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location\n    center: [-74.50, 40], // starting position [lng, lat]\n    zoom: 9 // starting zoom\n});\n</script>\n\n</body>\n</html>"
+  "<!DOCTYPE html>\n<html>\n<head>\n<meta charset='utf-8' />\n<title>Display a map</title>\n<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />\n<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>\n<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />\n<style>\n    body { margin: 0; padding: 0; }\n        #map { position: absolute; top: 0; bottom: 0; width: 100%; }\n</style><style>h1 {color: red;}</style>\n</head>\n<body>\n<h1>Hello world!</h1><div id='map'></div>\n<script>\nconsole.log('hi')</script>\n\n</body>\n</html>"
 );
 
 testCases.basicWithHelpers = {

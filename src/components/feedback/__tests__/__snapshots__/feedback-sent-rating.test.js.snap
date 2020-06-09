@@ -1,0 +1,372 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Feedback character limit Character limit ok, user can submit feedback 1`] = `
+<Feedback
+  feedbackSentryDsn="https://eccc8b561b9a461990309b01d33d54e3@sentry.io/1848287"
+  location={Object {}}
+  site="dr-ui"
+  type="page"
+>
+  <div
+    className="bg-gray-faint py12 px18 round color-gray"
+  >
+    <div>
+      <div>
+        <div
+          className="inline-block bg-green color-white round-full w18 h18 align-middle mr3 mb3"
+        >
+          <Icon
+            inline={false}
+            name="check"
+            passthroughProps={Object {}}
+            size={18}
+          >
+            <svg
+              className="events-none icon"
+              focusable="false"
+              role="presentation"
+              style={
+                Object {
+                  "height": 18,
+                  "width": 18,
+                }
+              }
+            >
+              <use
+                xlinkHref="#icon-check"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              />
+            </svg>
+          </Icon>
+        </div>
+         
+        Thanks for your feedback.
+      </div>
+      <div
+        className="mt12"
+      >
+        <div
+          className="mb6"
+        >
+          If you have more specific feedback
+          , you can provide it below (optional):
+        </div>
+        <div
+          className="relative"
+        >
+          <ControlTextarea
+            id="dr-ui--feedback-page-text"
+            noAuto={false}
+            onChange={[Function]}
+            optional={false}
+            themeControlTextarea="textarea hmin120"
+            themeControlWrapper="bg-white mb6"
+            value="Lorem ipsum dolor sit amet"
+          >
+            <ControlWrapper
+              id="dr-ui--feedback-page-text"
+              themeControlWrapper="bg-white mb6"
+            >
+              <div
+                className="relative bg-white mb6"
+              >
+                <textarea
+                  aria-required={true}
+                  className="textarea hmin120"
+                  data-test="dr-ui--feedback-page-text-textarea"
+                  id="dr-ui--feedback-page-text"
+                  name="dr-ui--feedback-page-text"
+                  onChange={[Function]}
+                  value="Lorem ipsum dolor sit amet"
+                />
+                <div
+                  role="alert"
+                />
+              </div>
+            </ControlWrapper>
+          </ControlTextarea>
+          <FeedbackCounter
+            createId={[Function]}
+            feedbackLength={974}
+            feedbackOverLimit={false}
+          >
+            <div
+              className="absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s"
+              id="dr-ui--feedback-page-counter"
+            >
+              974
+            </div>
+          </FeedbackCounter>
+        </div>
+        <div
+          className="mb12"
+        >
+          <button
+            className="btn btn--s mb6 mr12 inline-block"
+            disabled={false}
+            id="dr-ui--feedback-page-submit"
+            onClick={[Function]}
+          >
+            Send feedback
+          </button>
+        </div>
+        <div
+          className="txt-s txt-em"
+        >
+          This form is for documentation feedback. If you have a technical question about how to use a Mapbox product,
+           
+          <a
+            className="link"
+            href="https://support.mapbox.com/hc/en-us"
+          >
+            contact Support
+          </a>
+          .
+        </div>
+      </div>
+    </div>
+  </div>
+</Feedback>
+`;
+
+exports[`Feedback character limit Character limit too long, user cannot submit feedback 1`] = `
+<Feedback
+  feedbackSentryDsn="https://eccc8b561b9a461990309b01d33d54e3@sentry.io/1848287"
+  location={Object {}}
+  site="dr-ui"
+  type="page"
+>
+  <div
+    className="bg-gray-faint py12 px18 round color-gray"
+  >
+    <div>
+      <div>
+        <div
+          className="inline-block bg-green color-white round-full w18 h18 align-middle mr3 mb3"
+        >
+          <Icon
+            inline={false}
+            name="check"
+            passthroughProps={Object {}}
+            size={18}
+          >
+            <svg
+              className="events-none icon"
+              focusable="false"
+              role="presentation"
+              style={
+                Object {
+                  "height": 18,
+                  "width": 18,
+                }
+              }
+            >
+              <use
+                xlinkHref="#icon-check"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              />
+            </svg>
+          </Icon>
+        </div>
+         
+        Thanks for your feedback.
+      </div>
+      <div
+        className="mt12"
+      >
+        <div
+          className="mb6"
+        >
+          If you have more specific feedback
+          , you can provide it below (optional):
+        </div>
+        <div
+          className="relative"
+        >
+          <ControlTextarea
+            id="dr-ui--feedback-page-text"
+            noAuto={false}
+            onChange={[Function]}
+            optional={false}
+            themeControlTextarea="textarea hmin120"
+            themeControlWrapper="bg-white mb6"
+            value="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          >
+            <ControlWrapper
+              id="dr-ui--feedback-page-text"
+              themeControlWrapper="bg-white mb6"
+            >
+              <div
+                className="relative bg-white mb6"
+              >
+                <textarea
+                  aria-required={true}
+                  className="textarea hmin120"
+                  data-test="dr-ui--feedback-page-text-textarea"
+                  id="dr-ui--feedback-page-text"
+                  name="dr-ui--feedback-page-text"
+                  onChange={[Function]}
+                  value="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                />
+                <div
+                  role="alert"
+                />
+              </div>
+            </ControlWrapper>
+          </ControlTextarea>
+          <FeedbackCounter
+            createId={[Function]}
+            feedbackLength={-340}
+            feedbackOverLimit={true}
+          >
+            <div
+              className="absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s color-red"
+              id="dr-ui--feedback-page-counter"
+            >
+              -340
+            </div>
+          </FeedbackCounter>
+        </div>
+        <div
+          className="mb12"
+        >
+          <button
+            className="btn btn--s mb6 mr12 inline-block"
+            disabled={true}
+            id="dr-ui--feedback-page-submit"
+            onClick={[Function]}
+          >
+            Send feedback
+          </button>
+          <FeedbackOverlimitWarning
+            createId={[Function]}
+            feedbackLimit={1000}
+          >
+            <span
+              className="color-red txt-s bg-red-faint round inline-block py3 px12"
+              id="dr-ui--feedback-page-overlimit"
+            >
+              <Icon
+                inline={true}
+                name="alert"
+                passthroughProps={Object {}}
+                size={18}
+              >
+                <svg
+                  className="events-none icon inline-block align-t"
+                  focusable="false"
+                  role="presentation"
+                  style={
+                    Object {
+                      "height": 18,
+                      "width": 18,
+                    }
+                  }
+                >
+                  <use
+                    xlinkHref="#icon-alert"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  />
+                </svg>
+              </Icon>
+               Your message is over the
+               
+              1000
+               character limit.
+            </span>
+          </FeedbackOverlimitWarning>
+        </div>
+        <div
+          className="txt-s txt-em"
+        >
+          This form is for documentation feedback. If you have a technical question about how to use a Mapbox product,
+           
+          <a
+            className="link"
+            href="https://support.mapbox.com/hc/en-us"
+          >
+            contact Support
+          </a>
+          .
+        </div>
+      </div>
+    </div>
+  </div>
+</Feedback>
+`;
+
+exports[`Sent helpful rating snapshot snapshot 1`] = `
+<div
+  className="bg-gray-faint py12 px18 round color-gray"
+>
+  <div>
+    <div>
+      <div
+        className="inline-block bg-green color-white round-full w18 h18 align-middle mr3 mb3"
+      >
+        <Icon
+          inline={false}
+          name="check"
+          passthroughProps={Object {}}
+          size={18}
+        />
+      </div>
+       
+      Thanks for your feedback.
+    </div>
+    <div
+      className="mt12"
+    >
+      <div
+        className="mb6"
+      >
+        If you have more specific feedback
+        , you can provide it below (optional):
+      </div>
+      <div
+        className="relative"
+      >
+        <ControlTextarea
+          id="dr-ui--feedback-page-text"
+          noAuto={false}
+          onChange={[Function]}
+          optional={false}
+          themeControlTextarea="textarea hmin120"
+          themeControlWrapper="bg-white mb6"
+          value=""
+        />
+        <FeedbackCounter
+          createId={[Function]}
+          feedbackLength={1000}
+          feedbackOverLimit={false}
+        />
+      </div>
+      <div
+        className="mb12"
+      >
+        <button
+          className="btn btn--s mb6 mr12 inline-block"
+          disabled={true}
+          id="dr-ui--feedback-page-submit"
+          onClick={[Function]}
+        >
+          Send feedback
+        </button>
+      </div>
+      <div
+        className="txt-s txt-em"
+      >
+        This form is for documentation feedback. If you have a technical question about how to use a Mapbox product,
+         
+        <a
+          className="link"
+          href="https://support.mapbox.com/hc/en-us"
+        >
+          contact Support
+        </a>
+        .
+      </div>
+    </div>
+  </div>
+</div>
+`;

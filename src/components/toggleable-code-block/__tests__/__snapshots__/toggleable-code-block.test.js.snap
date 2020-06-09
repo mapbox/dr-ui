@@ -151,16 +151,15 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="relative round z0 scroll-styled scroll-auto"
+    className="prose relative round z0 scroll-styled scroll-auto"
     style={
       Object {
-        "backgroundColor": "#f4f7fb",
         "maxHeight": 480,
       }
     }
   >
     <pre
-      className="my-neg12 pt12 ml-neg12 pl12 pr0 mobile-snippet txt-break-word"
+      className="py0 px0 txt-break-word mb0"
     >
       <code
         className="px0 hljs"
@@ -234,7 +233,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
           data-chunk-code="chunk-1"
         >
           <div
-            className="pr12 py3"
+            className="pr12 py3 bg-white"
             style={
               Object {
                 "paddingLeft": 26.45,
@@ -255,7 +254,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
             <div
               dangerouslySetInnerHTML={
                 Object {
-                  "__html": "<span class=\\"token keyword\\">private</span> MapView mapView<span class=\\"token punctuation\\">;</span>",
+                  "__html": "<span class=\\"token keyword\\">private</span> <span class=\\"token class-name\\">MapView</span> mapView<span class=\\"token punctuation\\">;</span>",
                 }
               }
               style={
@@ -336,7 +335,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
           data-chunk-code="chunk-3"
         >
           <div
-            className="pr12 py3"
+            className="pr12 py3 bg-white"
             style={
               Object {
                 "paddingLeft": 26.45,
@@ -357,7 +356,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
             <div
               dangerouslySetInnerHTML={
                 Object {
-                  "__html": "<span class=\\"token keyword\\">protected</span> <span class=\\"token keyword\\">void</span> <span class=\\"token function\\">onCreate</span><span class=\\"token punctuation\\">(</span>Bundle savedInstanceState<span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                  "__html": "<span class=\\"token keyword\\">protected</span> <span class=\\"token keyword\\">void</span> <span class=\\"token function\\">onCreate</span><span class=\\"token punctuation\\">(</span><span class=\\"token class-name\\">Bundle</span> savedInstanceState<span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
                 }
               }
               style={
@@ -369,7 +368,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
             />
           </div>
           <div
-            className="pr12 py3"
+            className="pr12 py3 bg-white"
             style={
               Object {
                 "paddingLeft": 26.45,
@@ -402,7 +401,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
             />
           </div>
           <div
-            className="pr12 py3"
+            className="pr12 py3 bg-white"
             style={
               Object {
                 "paddingLeft": 26.45,
@@ -423,7 +422,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
             <div
               dangerouslySetInnerHTML={
                 Object {
-                  "__html": "Mapbox<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getInstance</span><span class=\\"token punctuation\\">(</span><span class=\\"token keyword\\">this</span><span class=\\"token punctuation\\">,</span> <span class=\\"token string\\">\\"your-token\\"</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
+                  "__html": "<span class=\\"token class-name\\">Mapbox</span><span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getInstance</span><span class=\\"token punctuation\\">(</span><span class=\\"token keyword\\">this</span><span class=\\"token punctuation\\">,</span> <span class=\\"token string\\">\\"your-token\\"</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
                 }
               }
               style={
@@ -435,7 +434,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
             />
           </div>
           <div
-            className="pr12 py3"
+            className="pr12 py3 bg-white"
             style={
               Object {
                 "paddingLeft": 26.45,
@@ -456,7 +455,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
             <div
               dangerouslySetInnerHTML={
                 Object {
-                  "__html": "<span class=\\"token function\\">setContentView</span><span class=\\"token punctuation\\">(</span>R<span class=\\"token punctuation\\">.</span>layout<span class=\\"token punctuation\\">.</span>activity_main<span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
+                  "__html": "<span class=\\"token function\\">setContentView</span><span class=\\"token punctuation\\">(</span><span class=\\"token class-name\\">R</span><span class=\\"token punctuation\\">.</span>layout<span class=\\"token punctuation\\">.</span>activity_main<span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
                 }
               }
               style={
@@ -535,7 +534,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
       </code>
     </pre>
     <div
-      className="bg-lighten75 absolute left right"
+      className="absolute left right z2 w6"
       data-chunk-overlay="chunk-1"
       style={
         Object {
@@ -544,11 +543,11 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
       }
     >
       <div
-        className="bg-blue h-full w6"
+        className="bg-blue h-full"
       />
     </div>
     <div
-      className="bg-lighten75 absolute left right"
+      className="absolute left right z2 w6"
       data-chunk-overlay="chunk-3"
       style={
         Object {
@@ -557,7 +556,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
       }
     >
       <div
-        className="bg-blue h-full w6"
+        className="bg-blue h-full"
       />
     </div>
     <div

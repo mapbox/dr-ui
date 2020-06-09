@@ -10,7 +10,7 @@ class Image extends React.Component {
         className={`bg-${color}-light round-full color-${color} flex-parent flex-parent--center-main flex-parent--center-cross`}
         style={{ width: 50, height: 50 }}
       >
-        <Icon name={icon} size="40" />
+        <Icon name={icon} size={40} />
       </div>
     );
   }
@@ -36,7 +36,7 @@ const themes = {
     label: 'Note',
     styles: {
       background: '#f4f7fb',
-      color: '#547190'
+      color: '#425870'
     }
   },
   warning: {
@@ -44,8 +44,8 @@ const themes = {
     label: 'Warning',
     styles: {
       background: '#feefe2',
-      color: '#945823',
-      borderColor: '#dea573'
+      color: '#78471c',
+      borderColor: '#ba6e2c'
     }
   },
   error: {
@@ -53,7 +53,7 @@ const themes = {
     label: 'Error',
     styles: {
       background: '#fbe5e5',
-      color: '#ba3b3f'
+      color: '#9b3134'
     }
   },
   beta: {
@@ -61,9 +61,9 @@ const themes = {
     label: 'Beta',
     tooltipText: 'This feature is in public beta and is subject to changes.',
     styles: {
-      background: '#edf0fd',
-      color: '#3658ee',
-      borderColor: '#4264fb'
+      background: '#f1f3fd',
+      color: '#0c248d',
+      borderColor: '#0428c8'
     }
   },
   new: {
@@ -72,8 +72,8 @@ const themes = {
     tooltipText: 'This feature was released recently.',
     styles: {
       background: '#e8f5ee',
-      color: '#1b7d4f',
-      borderColor: '#75c684'
+      color: '#15603d',
+      borderColor: '#378645'
     }
   },
   download: {
@@ -81,7 +81,7 @@ const themes = {
     label: 'Download',
     styles: {
       background: '#f2effa',
-      color: '#5a3fc0'
+      color: '#452f92'
     }
   },
   fundamentals: {

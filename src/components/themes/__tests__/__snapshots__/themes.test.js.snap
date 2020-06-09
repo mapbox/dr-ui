@@ -8,7 +8,7 @@ exports[`themes Default renders as expected 1`] = `
   style={
     Object {
       "background": "#f4f7fb",
-      "color": "#547190",
+      "color": "#425870",
     }
   }
 >
@@ -30,8 +30,8 @@ exports[`themes Default renders as expected 1`] = `
         role="presentation"
         style={
           Object {
-            "height": "40",
-            "width": "40",
+            "height": 40,
+            "width": 40,
           }
         }
       >
@@ -61,8 +61,8 @@ exports[`themes beta renders as expected 1`] = `
     className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
     style={
       Object {
-        "background": "#edf0fd",
-        "color": "#3658ee",
+        "background": "#f1f3fd",
+        "color": "#0c248d",
       }
     }
   >
@@ -84,8 +84,8 @@ exports[`themes beta renders as expected 1`] = `
           role="presentation"
           style={
             Object {
-              "height": "40",
-              "width": "40",
+              "height": 40,
+              "width": 40,
             }
           }
         >
@@ -120,9 +120,9 @@ exports[`themes beta renders as expected 1`] = `
       className="txt-s txt-bold round px6 inline-block cursor-default border"
       style={
         Object {
-          "background": "#edf0fd",
-          "borderColor": "#4264fb",
-          "color": "#3658ee",
+          "background": "#f1f3fd",
+          "borderColor": "#0428c8",
+          "color": "#0c248d",
         }
       }
     >
@@ -151,7 +151,7 @@ exports[`themes download renders as expected 1`] = `
     style={
       Object {
         "background": "#f2effa",
-        "color": "#5a3fc0",
+        "color": "#452f92",
       }
     }
   >
@@ -173,8 +173,8 @@ exports[`themes download renders as expected 1`] = `
           role="presentation"
           style={
             Object {
-              "height": "40",
-              "width": "40",
+              "height": 40,
+              "width": 40,
             }
           }
         >
@@ -207,7 +207,7 @@ exports[`themes error renders as expected 1`] = `
     style={
       Object {
         "background": "#fbe5e5",
-        "color": "#ba3b3f",
+        "color": "#9b3134",
       }
     }
   >
@@ -229,8 +229,8 @@ exports[`themes error renders as expected 1`] = `
           role="presentation"
           style={
             Object {
-              "height": "40",
-              "width": "40",
+              "height": 40,
+              "width": 40,
             }
           }
         >
@@ -301,7 +301,7 @@ exports[`themes legacy or warning renders as expected 1`] = `
     style={
       Object {
         "background": "#feefe2",
-        "color": "#945823",
+        "color": "#78471c",
       }
     }
   >
@@ -323,8 +323,8 @@ exports[`themes legacy or warning renders as expected 1`] = `
           role="presentation"
           style={
             Object {
-              "height": "40",
-              "width": "40",
+              "height": 40,
+              "width": 40,
             }
           }
         >
@@ -359,8 +359,8 @@ exports[`themes legacy or warning renders as expected 1`] = `
       style={
         Object {
           "background": "#feefe2",
-          "borderColor": "#dea573",
-          "color": "#945823",
+          "borderColor": "#ba6e2c",
+          "color": "#78471c",
         }
       }
     >

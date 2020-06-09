@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`feedback Basic renders as expected 1`] = `
+exports[`feedback Basic (sends user information as \`crocsfan19\`) renders as expected 1`] = `
 <div
   className="bg-gray-faint py12 px18 round color-gray"
 >
@@ -15,12 +15,14 @@ exports[`feedback Basic renders as expected 1`] = `
       </div>
       <button
         className="btn btn--s"
+        id="dr-ui--feedback-lnglat-yes"
         onClick={[Function]}
       >
         Yes
       </button>
       <button
         className="btn btn--s ml6"
+        id="dr-ui--feedback-lnglat-no"
         onClick={[Function]}
       >
         No
@@ -30,7 +32,7 @@ exports[`feedback Basic renders as expected 1`] = `
 </div>
 `;
 
-exports[`feedback Change type renders as expected 1`] = `
+exports[`feedback Change type (sends anonymous user information) renders as expected 1`] = `
 <div
   className="bg-gray-faint py12 px18 round color-gray"
 >
@@ -45,12 +47,14 @@ exports[`feedback Change type renders as expected 1`] = `
       </div>
       <button
         className="btn btn--s"
+        id="dr-ui--feedback-page-yes"
         onClick={[Function]}
       >
         Yes
       </button>
       <button
         className="btn btn--s ml6"
+        id="dr-ui--feedback-page-no"
         onClick={[Function]}
       >
         No
@@ -60,50 +64,38 @@ exports[`feedback Change type renders as expected 1`] = `
 </div>
 `;
 
-exports[`feedback Feedback placement renders as expected 1`] = `
+exports[`feedback Feedback placement (sends anonymous user information) renders as expected 1`] = `
 <div>
   <div
-    className="sticky-outer-wrapper"
-    style={Object {}}
+    className="border-t border-b border--gray-light bg-white"
+    data-swiftype-index="false"
   >
     <div
-      className="sticky-inner-wrapper"
-      style={
-        Object {
-          "position": "relative",
-          "top": "0px",
-          "zIndex": 4,
-        }
-      }
+      className="limiter"
     >
       <div
-        className="border-t border-b border--gray-light bg-white"
-        data-swiftype-index="false"
+        className="grid grid--gut36 mr-neg36 mr0-mm"
       >
         <div
-          className="limiter"
+          className="col col--4-mm col--12"
         >
           <div
-            className="grid grid--gut36 mr-neg36 mr0-mm"
+            className="ml24-mm  flex-parent flex-parent--center-cross"
+            style={
+              Object {
+                "height": 52,
+              }
+            }
           >
             <div
-              className="col col--4-mm col--12"
+              className="flex-parent"
             >
-              <div
-                className="ml24-mm  flex-parent flex-parent--center-cross"
-                style={
-                  Object {
-                    "height": 52,
-                  }
-                }
+              <a
+                className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+                href="/api/"
               >
-                <a
-                  className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
-                  href="/api/"
-                >
-                  API Documentation
-                </a>
-              </div>
+                API Documentation
+              </a>
             </div>
           </div>
         </div>
@@ -135,23 +127,22 @@ exports[`feedback Feedback placement renders as expected 1`] = `
             }
           >
             <div
-              className="pt24-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled block"
+              className="pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled block"
+              id="dr-ui--page-layout-sidebar"
             >
               <div
-                className="txt-l color-blue txt-fancy mb12 block-mm none"
+                className="txt-l color-blue txt-fancy mb12 block-mm none mx24"
               >
-                <div
-                  className="ml36"
-                >
-                  Section title
-                </div>
+                Section title
               </div>
-              <div>
+              <div
+                className="dr-ui--navigation-accordion"
+              >
                 <div
                   className="block-mm none"
                 >
                   <div
-                    className="pl24-mm px0 block-mm none pr12 bg-lighten75"
+                    className="px12 block-mm none bg-lighten75"
                   >
                     <div
                       className="py3 "
@@ -179,6 +170,7 @@ exports[`feedback Feedback placement renders as expected 1`] = `
                             <a
                               className="color-blue-on-hover"
                               href="#heading-one"
+                              id="#heading-one-sidebar"
                             >
                               Heading one
                               
@@ -193,6 +185,7 @@ exports[`feedback Feedback placement renders as expected 1`] = `
                             <a
                               className="color-blue-on-hover"
                               href="#heading-two"
+                              id="#heading-two-sidebar"
                             >
                               Heading two
                               
@@ -206,7 +199,7 @@ exports[`feedback Feedback placement renders as expected 1`] = `
                     </div>
                   </div>
                   <div
-                    className="pl24-mm px0 block-mm none pr12"
+                    className="px12 block-mm none"
                   >
                     <div
                       className="py3  border-t border--gray-light"
@@ -319,12 +312,14 @@ exports[`feedback Feedback placement renders as expected 1`] = `
                 </div>
                 <button
                   className="btn btn--s"
+                  id="dr-ui--feedback-page-yes"
                   onClick={[Function]}
                 >
                   Yes
                 </button>
                 <button
                   className="btn btn--s ml6"
+                  id="dr-ui--feedback-page-no"
                   onClick={[Function]}
                 >
                   No

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Topbar from '../topbar/topbar';
 import Sticky from 'react-stickynode';
 import debounce from 'debounce';
 
@@ -39,12 +40,7 @@ class TopbarSticker extends React.PureComponent {
         bottomBoundary={this.state.bottomBoundaryValue}
         innerZ={4}
       >
-        <div
-          className="border-t border-b border--gray-light bg-white"
-          data-swiftype-index="false"
-        >
-          {this.props.children}
-        </div>
+        <Topbar>{this.props.children}</Topbar>
       </Sticky>
     );
   }

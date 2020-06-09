@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Tag from '../tag/tag';
+import classnames from 'classnames';
 
 class ProductMenu extends React.PureComponent {
   buildTag = item => {
@@ -17,7 +18,7 @@ class ProductMenu extends React.PureComponent {
         : undefined
     };
     return (
-      <span className="inline-block ml6 relative" style={{ top: '-2px' }}>
+      <span className="flex-child mx6">
         <Tag {...tagProps} />
       </span>
     );
@@ -26,17 +27,21 @@ class ProductMenu extends React.PureComponent {
   render() {
     const { props } = this;
     return (
-      <a
-        href={props.homePage}
-        className={`wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate${
-          props.lightText
-            ? ' color-white color-gray-light-on-hover'
-            : ' color-blue-on-hover'
-        }`}
-      >
-        {props.productName}
+      <div className="flex-parent">
+        <a
+          href={props.homePage}
+          className={classnames(
+            'wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate',
+            {
+              'color-white color-gray-light-on-hover': props.lightText,
+              'color-blue-on-hover': !props.lightText
+            }
+          )}
+        >
+          {props.productName}
+        </a>
         {props.tag && this.buildTag(props)}
-      </a>
+      </div>
     );
   }
 }

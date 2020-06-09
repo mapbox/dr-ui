@@ -1,12 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`navigation-accordion Basic renders as expected 1`] = `
-<div>
+<div
+  className="dr-ui--navigation-accordion"
+>
   <div
     className="block-mm none"
   >
     <div
-      className="pl24-mm px0 block-mm none pr12 bg-lighten75"
+      className="px12 block-mm none bg-lighten75"
     >
       <div
         className="py3 "
@@ -34,6 +36,7 @@ exports[`navigation-accordion Basic renders as expected 1`] = `
               <a
                 className="color-blue-on-hover"
                 href="#heading-one"
+                id="#heading-one-sidebar"
               >
                 Heading one
                 
@@ -48,6 +51,7 @@ exports[`navigation-accordion Basic renders as expected 1`] = `
               <a
                 className="color-blue-on-hover"
                 href="#heading-two"
+                id="#heading-two-sidebar"
               >
                 Heading two
                 
@@ -61,7 +65,7 @@ exports[`navigation-accordion Basic renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="pl24-mm px0 block-mm none pr12"
+      className="px12 block-mm none"
     >
       <div
         className="py3  border-t border--gray-light"
@@ -143,12 +147,14 @@ exports[`navigation-accordion Basic renders as expected 1`] = `
 `;
 
 exports[`navigation-accordion No second level items renders as expected 1`] = `
-<div>
+<div
+  className="dr-ui--navigation-accordion"
+>
   <div
     className="block-mm none"
   >
     <div
-      className="pl24-mm px0 block-mm none pr12 bg-lighten75"
+      className="px12 block-mm none bg-lighten75"
     >
       <div
         className="py3 "
@@ -168,7 +174,7 @@ exports[`navigation-accordion No second level items renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="pl24-mm px0 block-mm none pr12"
+      className="px12 block-mm none"
     >
       <div
         className="py3  border-t border--gray-light"
@@ -250,12 +256,14 @@ exports[`navigation-accordion No second level items renders as expected 1`] = `
 `;
 
 exports[`navigation-accordion Shows third level items renders as expected 1`] = `
-<div>
+<div
+  className="dr-ui--navigation-accordion"
+>
   <div
     className="block-mm none"
   >
     <div
-      className="pl24-mm px0 block-mm none pr12 bg-lighten75"
+      className="px12 block-mm none bg-lighten75"
     >
       <div
         className="py3 "
@@ -283,6 +291,7 @@ exports[`navigation-accordion Shows third level items renders as expected 1`] = 
               <a
                 className="color-blue-on-hover"
                 href="#heading-one"
+                id="#heading-one-sidebar"
               >
                 Heading one
                 
@@ -296,6 +305,7 @@ exports[`navigation-accordion Shows third level items renders as expected 1`] = 
                   <a
                     className="color-blue-on-hover txt-bold"
                     href="#"
+                    id="#-sidebar"
                   >
                     Subheading one
                     
@@ -307,6 +317,7 @@ exports[`navigation-accordion Shows third level items renders as expected 1`] = 
                   <a
                     className="color-blue-on-hover"
                     href="#subheading-two"
+                    id="#subheading-two-sidebar"
                   >
                     Subheading two
                     
@@ -320,6 +331,7 @@ exports[`navigation-accordion Shows third level items renders as expected 1`] = 
               <a
                 className="color-blue-on-hover"
                 href="#heading-two"
+                id="#heading-two-sidebar"
               >
                 Heading two
                 
@@ -333,7 +345,268 @@ exports[`navigation-accordion Shows third level items renders as expected 1`] = 
       </div>
     </div>
     <div
-      className="pl24-mm px0 block-mm none pr12"
+      className="px12 block-mm none"
+    >
+      <div
+        className="py3  border-t border--gray-light"
+      >
+        <a
+          className="color-blue-on-hover color-gray text-decoration-none unprose flex-parent flex-parent--space-between-main flex-parent--center-cross"
+          href="page-two"
+        >
+          <div
+            className="pl12 py12 txt-bold txt-m flex-child"
+          >
+            Title two
+            
+          </div>
+          <div
+            className="flex-child flex-child--no-shrink"
+          >
+            <svg
+              className="events-none icon"
+              focusable="false"
+              role="presentation"
+              style={
+                Object {
+                  "height": 18,
+                  "width": 18,
+                }
+              }
+            >
+              <use
+                xlinkHref="#icon-chevron-down"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              />
+            </svg>
+          </div>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+  <div
+    className="none-mm block bg-gray-faint px24 py24"
+  >
+    <div
+      className="relative "
+    >
+      <div
+        className="select-container "
+      >
+        <select
+          aria-required={true}
+          className="select select--stroke round-full bg-white"
+          data-test="navigate-this-section-select"
+          disabled={false}
+          id="navigate-this-section"
+          onChange={[Function]}
+          value="page-one"
+        >
+          <option
+            value="page-one"
+          >
+            Title one
+          </option>
+          <option
+            value="page-two"
+          >
+            Title two
+          </option>
+        </select>
+        <div
+          className="select-arrow"
+        />
+      </div>
+      <div
+        role="alert"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`navigation-accordion Shows third level items with icons renders as expected 1`] = `
+<div
+  className="dr-ui--navigation-accordion"
+>
+  <div
+    className="block-mm none"
+  >
+    <div
+      className="px12 block-mm none bg-lighten75"
+    >
+      <div
+        className="py3 "
+      >
+        <a
+          className="color-blue-on-hover color-gray text-decoration-none unprose flex-parent flex-parent--space-between-main flex-parent--center-cross"
+          href="page-one"
+        >
+          <div
+            className="pl12 py12 txt-bold txt-m flex-child color-black"
+          >
+            Title one
+            
+          </div>
+        </a>
+        <div
+          className="ml24 pt0"
+        >
+          <ul
+            className="txt-m pb12 inline-block-mm none unprose"
+          >
+            <li
+              className="mb6"
+            >
+              <a
+                className="color-blue-on-hover"
+                href="#heading-one"
+                id="#heading-one-sidebar"
+              >
+                Heading one
+                
+              </a>
+              <ul
+                className="pl12 color-darken75"
+              >
+                <li
+                  className="mt6"
+                  style={
+                    Object {
+                      "marginLeft": "11px",
+                      "textIndent": "-24px",
+                    }
+                  }
+                >
+                  <a
+                    className="color-blue-on-hover txt-bold"
+                    href="#"
+                    id="#-sidebar"
+                  >
+                    <span
+                      className="mr6 w18 h18 align-middle inline-block bg-gray-faint round-full"
+                    >
+                      <svg
+                        className="events-none icon"
+                        focusable="false"
+                        role="presentation"
+                        style={
+                          Object {
+                            "height": 16,
+                            "width": 16,
+                          }
+                        }
+                      >
+                        <use
+                          xlinkHref="#icon-paint"
+                          xmlnsXlink="http://www.w3.org/1999/xlink"
+                        />
+                      </svg>
+                    </span>
+                    Subheading one
+                    
+                  </a>
+                </li>
+                <li
+                  className="mt6"
+                  style={
+                    Object {
+                      "marginLeft": "11px",
+                      "textIndent": "-24px",
+                    }
+                  }
+                >
+                  <a
+                    className="color-blue-on-hover"
+                    href="#subheading-two"
+                    id="#subheading-two-sidebar"
+                  >
+                    <span
+                      className="mr6 w18 h18 align-middle inline-block bg-gray-faint round-full"
+                    >
+                      <svg
+                        className="events-none icon"
+                        focusable="false"
+                        role="presentation"
+                        style={
+                          Object {
+                            "height": 16,
+                            "width": 16,
+                          }
+                        }
+                      >
+                        <use
+                          xlinkHref="#icon-paint"
+                          xmlnsXlink="http://www.w3.org/1999/xlink"
+                        />
+                      </svg>
+                    </span>
+                    Subheading two
+                    
+                  </a>
+                </li>
+                <li
+                  className="mt6"
+                  style={
+                    Object {
+                      "marginLeft": "11px",
+                      "textIndent": "-24px",
+                    }
+                  }
+                >
+                  <a
+                    className="color-blue-on-hover"
+                    href="#subheading-three"
+                    id="#subheading-three-sidebar"
+                  >
+                    <span
+                      className="mr6 w18 h18 align-middle inline-block bg-gray-faint round-full"
+                    >
+                      <svg
+                        className="events-none icon"
+                        focusable="false"
+                        role="presentation"
+                        style={
+                          Object {
+                            "height": 16,
+                            "width": 16,
+                          }
+                        }
+                      >
+                        <use
+                          xlinkHref="#icon-star"
+                          xmlnsXlink="http://www.w3.org/1999/xlink"
+                        />
+                      </svg>
+                    </span>
+                    Subheading three is long so we should wrap it nicely
+                    
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li
+              className="mb6"
+            >
+              <a
+                className="color-blue-on-hover"
+                href="#heading-two"
+                id="#heading-two-sidebar"
+              >
+                Heading two
+                
+              </a>
+              <ul
+                className="none"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      className="px12 block-mm none"
     >
       <div
         className="py3  border-t border--gray-light"
@@ -415,12 +688,14 @@ exports[`navigation-accordion Shows third level items renders as expected 1`] = 
 `;
 
 exports[`navigation-accordion Titles with tags renders as expected 1`] = `
-<div>
+<div
+  className="dr-ui--navigation-accordion"
+>
   <div
     className="block-mm none"
   >
     <div
-      className="pl24-mm px0 block-mm none pr12 bg-lighten75"
+      className="px12 block-mm none bg-lighten75"
     >
       <div
         className="py3 "
@@ -448,6 +723,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
               <a
                 className="color-blue-on-hover"
                 href="#heading-one"
+                id="#heading-one-sidebar"
               >
                 Heading one
                 
@@ -461,6 +737,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
                   <a
                     className="color-blue-on-hover txt-bold"
                     href="#"
+                    id="#-sidebar"
                   >
                     Subheading one
                     <span
@@ -479,8 +756,8 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
                           style={
                             Object {
                               "background": "#feefe2",
-                              "borderColor": "#dea573",
-                              "color": "#945823",
+                              "borderColor": "#ba6e2c",
+                              "color": "#78471c",
                             }
                           }
                         >
@@ -507,6 +784,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
                   <a
                     className="color-blue-on-hover"
                     href="#subheading-two"
+                    id="#subheading-two-sidebar"
                   >
                     Subheading two
                     
@@ -520,6 +798,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
               <a
                 className="color-blue-on-hover"
                 href="#heading-two"
+                id="#heading-two-sidebar"
               >
                 Heading two
                 <span
@@ -568,7 +847,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="pl24-mm px0 block-mm none pr12"
+      className="px12 block-mm none"
     >
       <div
         className="py3  border-t border--gray-light"
@@ -596,9 +875,9 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
                   className="txt-s txt-bold round px6 inline-block cursor-default border"
                   style={
                     Object {
-                      "background": "#edf0fd",
-                      "borderColor": "#4264fb",
-                      "color": "#3658ee",
+                      "background": "#f1f3fd",
+                      "borderColor": "#0428c8",
+                      "color": "#0c248d",
                     }
                   }
                 >

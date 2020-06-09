@@ -7,8 +7,7 @@ class SectionedNavigation extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      filter: '',
-      visibleSections: this.props.sections
+      filter: ''
     };
   }
 
@@ -31,7 +30,7 @@ class SectionedNavigation extends React.Component {
       return null;
     }
     return (
-      <div className="mb18">
+      <div className="mb3">
         <ControlText
           onChange={e => this.setState({ filter: e }, this.filterResults)}
           value={this.state.filter}
@@ -45,7 +44,9 @@ class SectionedNavigation extends React.Component {
     );
   }
 
-  filterResults() {
+  render() {
+    const { props } = this;
+
     const filter = this.state.filter.toLowerCase().trim();
     const visibleSections = this.props.sections
       .filter(section => {
@@ -67,26 +68,22 @@ class SectionedNavigation extends React.Component {
         return {
           title: filteredSection.title,
           url: filteredSection.url,
-          items: filteredItems
+          items: filteredItems,
+          id: filteredSection.id || undefined
         };
       });
-    this.setState({ visibleSections: visibleSections });
-  }
-
-  render() {
-    const { props } = this;
     return (
-      <div data-swiftype-index="false">
+      <div className="mx24" data-swiftype-index="false">
         {this.renderTitle()}
         {this.renderFilterBar()}
-        {this.state.visibleSections.map((section, i) => (
-          <div key={i}>
+        {visibleSections.map((section, i) => (
+          <React.Fragment key={i}>
             <SectionedNavigationSection
               includeCount={props.includeCount}
               hideSubItems={props.hideSubItems}
               {...section}
             />
-          </div>
+          </React.Fragment>
         ))}
       </div>
     );
