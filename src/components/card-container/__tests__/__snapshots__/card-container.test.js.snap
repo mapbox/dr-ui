@@ -100,7 +100,7 @@ exports[`card-container Basic renders as expected 1`] = `
 </div>
 `;
 
-exports[`card-container No thumbnail image renders as expected 1`] = `
+exports[`card-container Full width renders as expected 1`] = `
 <div>
   <a
     className="unprose mb18 block color-blue-on-hover"
