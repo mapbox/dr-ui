@@ -2435,7 +2435,7 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
         code: `<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> Note <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/note'</span><span class="token punctuation">;</span>
 
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Example</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Basic</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
   <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Note</span></span><span class="token punctuation">></span></span><span class="token plain-text">Here is a little thing to note.</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Note</span></span><span class="token punctuation">></span></span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
@@ -2563,7 +2563,74 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
         options: undefined
       }
     },
-    examples: []
+    examples: [
+      {
+        exampleModule: require("/Users/katydecorah/Documents/GitHub/dr-ui/src/components/numbered-code-snippet/examples/basic.js"),
+        code: `<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> NumberedCodeSnippet <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/numbered-code-snippet'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> highlightSwift <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/highlight/swift'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> highlightThemeCss <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/highlight/theme-css.js'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Basic</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> code <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">import UIKit
+    import Mapbox
+
+    class DDSCircleLayerTutorialViewController: UIViewController, MGLMapViewDelegate {
+
+        override func viewDidLoad() {
+            super.viewDidLoad()
+
+            let mapView = MGLMapView(frame: view.bounds)
+            mapView.styleURL = MGLStyle.lightStyleURL
+            mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+
+            mapView.setCenter(CLLocationCoordinate2D(latitude: 44.971, longitude: -93.261), zoomLevel: 10, animated: false)
+
+            mapView.delegate = self
+            view.addSubview(mapView)
+        }
+
+        func mapView(_ mapView: MGLMapView, didFinishLoading style: MGLStyle) {
+
+            let source = MGLVectorTileSource(identifier: "historical-places", configurationURL: URL(string: "mapbox://examples.5zzwbooj")!)
+
+            style.addSource(source)
+
+            let layer = MGLCircleStyleLayer(identifier: "landmarks", source: source)
+
+            layer.sourceLayerIdentifier = "HPC_landmarks-b60kqn"
+
+            layer.circleColor = NSExpression(forConstantValue: #colorLiteral(red: 0.67, green: 0.28, blue: 0.13, alpha: 1))
+
+            layer.circleOpacity = NSExpression(forConstantValue: 0.8)
+
+            let zoomStops = [
+                10: NSExpression(format: "(2018 - Constructi) / 30"),
+                13: NSExpression(format: "(2018 - Constructi) / 10")
+            ]
+
+            layer.circleRadius = NSExpression(format: "mgl_interpolate:withCurveType:parameters:stops:(&#36;zoomLevel, 'linear', nil, %@)", zoomStops)
+
+            style.addLayer(layer)
+        }
+    }</span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">;</span>
+    
+    <span class="token keyword">return</span> <span class="token operator">&lt;</span>NumberedCodeSnippet
+    code<span class="token operator">=</span> <span class="token punctuation">{</span>code<span class="token punctuation">}</span>
+    highlightedCode<span class="token operator">=</span> <span class="token punctuation">{</span><span class="token function">highlightSwift</span><span class="token punctuation">(</span>code<span class="token punctuation">)</span><span class="token punctuation">}</span>
+    maxHeight<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">450</span><span class="token punctuation">}</span>
+    highlightThemeCss<span class="token operator">=</span><span class="token punctuation">{</span>highlightThemeCss<span class="token punctuation">}</span>
+    copyRanges<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">17</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+    onCopy<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
+
+
+    <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>`,
+        description: <p>Basic.</p>
+      }
+    ]
   },
   {
     name: "OverviewHeader",
