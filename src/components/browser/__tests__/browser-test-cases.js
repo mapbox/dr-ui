@@ -1,25 +1,17 @@
-import Browser from '../browser';
 import React from 'react';
+import Browser from '../browser';
+import Basic from '../examples/basic';
 
 const testCases = {};
 
 testCases.basic = {
-  component: Browser,
-  description: '',
-  props: {
-    children: (
-      <img
-        src="./assets/browser-example.png"
-        className="round-b"
-        alt="manage-styles"
-      />
-    )
-  }
+  description: 'With image',
+  element: <Basic />
 };
 
 testCases.video = {
   component: Browser,
-  description: '',
+  description: 'With video',
   props: {
     children: (
       <video

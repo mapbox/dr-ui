@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`browser  renders as expected 1`] = `
+exports[`browser With image renders as expected 1`] = `
 <div
   className="shadow-darken25 round bg-white"
 >
@@ -198,14 +198,14 @@ exports[`browser  renders as expected 1`] = `
     </div>
   </div>
   <img
-    alt="manage-styles"
+    alt="Manage styles in Studio."
     className="round-b"
     src="./assets/browser-example.png"
   />
 </div>
 `;
 
-exports[`browser  renders as expected 2`] = `
+exports[`browser With video renders as expected 1`] = `
 <div
   className="shadow-darken25 round bg-white"
 >

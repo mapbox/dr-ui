@@ -17,8 +17,9 @@
     "format": "prettier '**/*.js' --write",
     "prebuild": "npm run build-theme-css",
     "build": "scripts/build-module-indexes.js && scripts/build-package.js",
-    "start-docs": "scripts/build-module-indexes.js && scripts/build-docs-data.js && underreact start --config='src/docs/docs-underreact.config.js'",
-    "build-docs": "scripts/build-module-indexes.js && scripts/build-docs-data.js && underreact build --config='src/docs/docs-underreact.config.js'",
+    "prepare-docs": "cpy ./src/test-cases-app/assets/* ./src/docs/public/assets/",
+    "start-docs": "npm run prepare-docs && scripts/build-module-indexes.js && scripts/build-docs-data.js && underreact start --config='src/docs/docs-underreact.config.js'",
+    "build-docs": "npm run prepare-docs && scripts/build-module-indexes.js && scripts/build-docs-data.js && underreact build --config='src/docs/docs-underreact.config.js'",
     "serve-static-docs": "underreact serve-static --config='src/docs/docs-underreact.config.js'",
     "deploy-docs": "npm run build-docs && gh-pages -d src/docs/_site"
   },
