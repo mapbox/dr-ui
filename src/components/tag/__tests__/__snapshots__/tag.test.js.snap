@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`back-top-top-button Beta tag renders as expected 1`] = `
+exports[`tag Beta tag renders as expected 1`] = `
 <div
   className="inline-block"
   onBlur={[Function]}
@@ -30,6 +30,41 @@ exports[`back-top-top-button Beta tag renders as expected 1`] = `
       className="txt-s wmax120"
     >
       This feature is in public beta and is subject to changes.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`tag Custom tag renders as expected 1`] = `
+<div
+  className="inline-block"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+>
+  <div
+    aria-describedby="tooltip-2"
+    className="txt-s txt-bold round px6 inline-block cursor-default border"
+    style={
+      Object {
+        "background": "#FEDADA",
+        "borderColor": "#FD8383",
+        "color": "#bb2224",
+      }
+    }
+  >
+    Limited access
+  </div>
+  <div
+    className="hide-visually"
+    id="tooltip-2"
+    role="tooltip"
+  >
+    <div
+      className="txt-s wmax120"
+    >
+      Contact us for access to this feature.
     </div>
   </div>
 </div>

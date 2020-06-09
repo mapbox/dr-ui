@@ -3379,6 +3379,7 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
           <span class="token punctuation">{</span>
             title<span class="token operator">:</span> <span class="token string">'Getting started'</span><span class="token punctuation">,</span>
             url<span class="token operator">:</span> <span class="token string">'#getting-started'</span><span class="token punctuation">,</span>
+            id<span class="token operator">:</span> <span class="token string">'getting-started'</span><span class="token punctuation">,</span>
             items<span class="token operator">:</span> <span class="token punctuation">[</span>
               <span class="token punctuation">{</span>
                 text<span class="token operator">:</span> <span class="token string">'Camera animation'</span><span class="token punctuation">,</span>
@@ -3398,6 +3399,7 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
           <span class="token punctuation">{</span>
             title<span class="token operator">:</span> <span class="token string">'Markers and callouts'</span><span class="token punctuation">,</span>
             url<span class="token operator">:</span> <span class="token string">'#markers'</span><span class="token punctuation">,</span>
+            id<span class="token operator">:</span> <span class="token string">'markers'</span><span class="token punctuation">,</span>
             items<span class="token operator">:</span> <span class="token punctuation">[</span>
               <span class="token punctuation">{</span>
                 text<span class="token operator">:</span> <span class="token string">'Annotation models'</span><span class="token punctuation">,</span>
@@ -3412,6 +3414,7 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
           <span class="token punctuation">{</span>
             title<span class="token operator">:</span> <span class="token string">'Getting started again'</span><span class="token punctuation">,</span>
             url<span class="token operator">:</span> <span class="token string">'#getting-started-again'</span><span class="token punctuation">,</span>
+            id<span class="token operator">:</span> <span class="token string">'getting-started-again'</span><span class="token punctuation">,</span>
             items<span class="token operator">:</span> <span class="token punctuation">[</span>
               <span class="token punctuation">{</span>
                 text<span class="token operator">:</span> <span class="token string">'Apply a style'</span><span class="token punctuation">,</span>
@@ -3488,7 +3491,43 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)</span><span class
         options: undefined
       }
     },
-    examples: []
+    examples: [
+      {
+        exampleModule: require("/Users/katydecorah/Documents/GitHub/dr-ui/src/components/tag/examples/basic.js"),
+        code: `<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Tag <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/tag'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Basic</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Tag</span></span> <span class="token attr-name">theme</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>beta<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>`,
+        description: <p>Basic.</p>
+      },
+      {
+        exampleModule: require("/Users/katydecorah/Documents/GitHub/dr-ui/src/components/tag/examples/custom.js"),
+        code: `<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Tag <span class="token keyword">from</span> <span class="token string">'@mapbox/dr-ui/tag'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">Custom</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Tag</span></span> <span class="token attr-name">theme</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>custom<span class="token punctuation">'</span></span>
+      <span class="token attr-name">customLabel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>Limited access<span class="token punctuation">'</span></span>
+      <span class="token attr-name">customTooltipText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>Contact us for access to this feature.<span class="token punctuation">'</span></span>
+      <span class="token attr-name">customStyles</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span> <span class="token punctuation">{</span>
+        background<span class="token operator">:</span> <span class="token string">'#FEDADA'</span><span class="token punctuation">,</span>
+        color<span class="token operator">:</span> <span class="token string">'#bb2224'</span><span class="token punctuation">,</span>
+        borderColor<span class="token operator">:</span> <span class="token string">'#FD8383'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>`,
+        description: <p>Custom.</p>
+      }
+    ]
   },
   {
     name: "ToggleableCodeBlock",
