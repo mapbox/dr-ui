@@ -5,12 +5,7 @@
     "Note",
     "RelatedPage",
     "Search",
-    "Tag"
-  ],
-  "Examples": [
-    "Card",
-    "CardContainer",
-    "ExamplesPage",
+    "Tag",
     "Browser",
     "DemoIframe",
     "GLWrapper",
@@ -42,7 +37,10 @@
     "ProductMenu",
     "SectionedNavigation",
     "Topbar",
-    "TopbarSticker"
+    "TopbarSticker",
+    "Card",
+    "CardContainer",
+    "ExamplesPage"
   ],
   "Images": [
     "BookImage",
