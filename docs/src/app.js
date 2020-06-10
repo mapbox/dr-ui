@@ -2,7 +2,6 @@ import React from 'react';
 import components from './data/components'; // eslint-disable-line
 import ComponentSection from './components/component-section';
 import Sidebar from './components/sidebar';
-import Icon from '@mapbox/mr-ui/icon';
 import Topbar from '../../src/components/topbar';
 import ProductMenu from '../../src/components/product-menu';
 import OverviewHeader from '../../src/components/overview-header';
@@ -31,18 +30,6 @@ export default class App extends React.Component {
               <div className="col col--4-mm col--12">
                 <div className="ml24-mm pt12" style={{ height: 52 }}>
                   <ProductMenu productName="Dr. UI" homePage="/dr-ui/" />
-                </div>
-              </div>
-              <div className="col col--8-mm col--12">
-                <div className="pt12" style={{ height: 52 }}>
-                  <a
-                    className="link link--gray"
-                    href="https://github.com/mapbox/dr-ui"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Icon name="github" inline={true} /> View on GitHub
-                  </a>
                 </div>
               </div>
             </div>
