@@ -28,7 +28,7 @@ export default class App extends React.Component {
           <div className="limiter">
             <div className="grid">
               <div className="col col--4-mm col--12">
-                <div className="ml24-mm pt12" style={{ height: 52 }}>
+                <div className="ml18-mm pt12" style={{ height: 52 }}>
                   <ProductMenu productName="Dr. UI" homePage="/dr-ui/" />
                 </div>
               </div>
@@ -37,6 +37,7 @@ export default class App extends React.Component {
         </Topbar>
         <div className="limiter">
           <PageLayout
+            sideBarColSize={3}
             sidebarContentStickyTop={0}
             sidebarContentStickyTopNarrow={0}
             sidebarContent={<Sidebar />}
