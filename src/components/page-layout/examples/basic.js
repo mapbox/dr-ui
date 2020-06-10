@@ -12,7 +12,6 @@ export default class Basic extends React.Component {
         sidebarTitle="Some title"
         sidebarContentStickyTop={0}
         sidebarContentStickyTopNarrow={0}
-        stickyEnabled={false} // Set this to {true}. It's disabled for the purposes of the catalog layout.
       >
         <div>Doc content</div>
       </PageLayout>
