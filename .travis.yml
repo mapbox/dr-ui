@@ -6,6 +6,5 @@ notifications:
   email: false
 
 scripts:
-  - npm run prepare-docs
-  - npm test
   - npm run build-docs
+  - npm test
