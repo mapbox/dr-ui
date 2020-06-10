@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionedNavigation from '../../../src/components/sectioned-navigation';
-import categories from '../data/categories.json';
+import categories from '../categories.json';
 
 export default class Sidebar extends React.Component {
   render() {

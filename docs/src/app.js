@@ -7,7 +7,7 @@ import ProductMenu from '../../src/components/product-menu';
 import OverviewHeader from '../../src/components/overview-header';
 import Note from '../../src/components/note';
 import PageLayout from '../../src/components/page-layout';
-import categories from './data/categories.json';
+import categories from './categories.json';
 
 const version = require('../../package.json').version;
 
