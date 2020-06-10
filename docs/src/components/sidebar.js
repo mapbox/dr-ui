@@ -9,7 +9,7 @@ export default class Sidebar extends React.Component {
         <li key={component.name} className="mb3">
           <a
             href={`#${component.name.toLowerCase()}`}
-            className="link link--gray"
+            className="link color-gray-dark color-blue-on-hover"
           >
             {component.name}
           </a>
