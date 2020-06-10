@@ -1,0 +1,55 @@
+{
+  "Features": [
+    "Feedback",
+    "LevelIndicator",
+    "Note",
+    "RelatedPage",
+    "Search",
+    "Tag"
+  ],
+  "Examples": [
+    "Card",
+    "CardContainer",
+    "ExamplesPage",
+    "Browser",
+    "DemoIframe",
+    "GLWrapper",
+    "Phone",
+    "Video"
+  ],
+  "Code": [
+    "AndroidLayoutCodeBlock",
+    "CodeSnippet",
+    "CodeSnippetTitle",
+    "CodeToggle",
+    "ContextlessAndroidActivityToggle",
+    "ContextlessIosViewControllerToggle",
+    "Edit",
+    "Highlight",
+    "NumberedCodeSnippet",
+    "ToggleableCodeBlock"
+  ],
+  "Layout": [
+    "BackToTopButton",
+    "GlossaryCard",
+    "GlossaryImage",
+    "GlossaryPage",
+    "GlossarySection",
+    "OverviewHeader",
+    "NavigationAccordion",
+    "NavigationDropdown",
+    "PageLayout",
+    "ProductMenu",
+    "SectionedNavigation",
+    "Topbar",
+    "TopbarSticker"
+  ],
+  "Images": [
+    "BookImage",
+    "BookletImage",
+    "ContactImage",
+    "ExampleImage",
+    "PlaygroundImage",
+    "TroubleshootImage"
+  ]
+}

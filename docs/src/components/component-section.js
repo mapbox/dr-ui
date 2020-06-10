@@ -13,7 +13,7 @@ export default class ComponentSection extends React.Component {
 
     return (
       <div className="mt24 mb12">
-        <h3 className="txt-bold mb12">Props</h3>
+        <h4 className="txt-bold mb6">Props</h4>
         <table className="table">
           <thead>
             <tr>
@@ -42,7 +42,7 @@ export default class ComponentSection extends React.Component {
 
     return (
       <div className="mt24 mb12">
-        <h3 className="txt-bold mb12">Examples</h3>
+        <h4 className="txt-bold mb12">Examples</h4>
         {exampleEls}
       </div>
     );
@@ -59,11 +59,11 @@ export default class ComponentSection extends React.Component {
 
     return (
       <section id={slug}>
-        <h2 className="txt-fancy txt-h3">
+        <h3 className="txt-h4 txt-bold txt-mono">
           <a href={`#${slug}`} className="color-blue-on-hover">
             {data.name}
           </a>
-        </h2>
+        </h3>
 
         <div className="mt6 mb12 txt-s color-gray" />
         {description}

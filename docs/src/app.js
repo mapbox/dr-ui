@@ -7,18 +7,29 @@ import ProductMenu from '../../src/components/product-menu';
 import OverviewHeader from '../../src/components/overview-header';
 import Note from '../../src/components/note';
 import PageLayout from '../../src/components/page-layout';
+import categories from './data/categories.json';
 
 const version = require('../../package.json').version;
 
 export default class App extends React.Component {
   render() {
-    const componentEls = components.map(component => {
+    const componentEls = Object.keys(categories).map(category => {
       return (
-        <div
-          key={component.name}
-          className="pt30 mb30 border-t border--darken10"
-        >
-          <ComponentSection data={component} />
+        <div key={category}>
+          <h2 className="txt-fancy txt-h3" id={category.toLowerCase()}>
+            {category}
+          </h2>
+          {categories[category].map(comp => {
+            const component = components.filter(f => f.name === comp)[0];
+            return (
+              <div
+                key={component.name}
+                className="pt30 mb30 border-t border--darken10"
+              >
+                <ComponentSection data={component} />
+              </div>
+            );
+          })}
         </div>
       );
     });

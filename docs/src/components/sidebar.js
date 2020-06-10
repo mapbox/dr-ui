@@ -1,25 +1,23 @@
 import React from 'react';
-
-import components from '../data/components'; // eslint-disable-line
+import SectionedNavigation from '../../../src/components/sectioned-navigation';
+import categories from '../data/categories.json';
 
 export default class Sidebar extends React.Component {
   render() {
-    const componentLinks = components.map(component => {
-      return (
-        <li key={component.name} className="mb6">
-          <a
-            href={`#${component.name.toLowerCase()}`}
-            className="link link--gray txt-s txt-bold txt-truncate"
-          >
-            {component.name}
-          </a>
-        </li>
-      );
-    });
+    const slug = string => string.toLowerCase();
+
     return (
-      <div className="relative px18">
-        <ul>{componentLinks}</ul>
-      </div>
+      <SectionedNavigation
+        sections={Object.keys(categories).map(category => ({
+          title: category,
+          url: `#${slug(category)}`,
+          id: `${slug(category)}`,
+          items: categories[category].map(item => ({
+            text: item,
+            url: `#${slug(item)}`
+          }))
+        }))}
+      />
     );
   }
 }
