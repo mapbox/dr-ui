@@ -4,7 +4,7 @@ node_modules
 dist
 pkg
 src/test-cases-app/component-index.js
-docs/src/pages/assets/
+docs/src/pages/files/
 docs/src/data/components.js
 docs/src/prism.css
 _site*

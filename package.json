@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "budo ./src/test-cases-app/test-cases-app.js --dir ./src/test-cases-app --live --debug --pushstate -- -t babelify",
-    "cp-assembly": "del ./src/test-cases-app/dist && cpy node_modules/@mapbox/mbx-assembly/dist/*.* ./src/test-cases-app/dist && cpy src/css/docs-prose.css ./src/test-cases-app/dist && cpy src/css/prism.css ./src/test-cases-app/dist && cpy ./src/test-cases-app/assets/* ./src/test-cases-app/dist",
+    "cp-assembly": "del ./src/test-cases-app/dist && cpy node_modules/@mapbox/mbx-assembly/dist/*.* ./src/test-cases-app/dist && cpy src/css/docs-prose.css ./src/test-cases-app/dist && cpy src/css/prism.css ./src/test-cases-app/dist && cpy ./src/test-cases-app/files/* ./src/test-cases-app/dist",
     "build-theme-css": "node scripts/create-theme-css.js",
     "budo": "budo test/app.js -l -d -P -- -t babelify",
     "prestart": "npm run build-theme-css && npm run build-component-index && npm run cp-assembly",
@@ -17,7 +17,7 @@
     "format": "prettier '**/*.js' --write",
     "prebuild": "npm run build-theme-css",
     "build": "scripts/build-module-indexes.js && scripts/build-package.js",
-    "prepare-docs": "cpy ./src/test-cases-app/assets/* ./docs/src/pages/assets/",
+    "prepare-docs": "cpy ./src/test-cases-app/files/* ./docs/src/pages/files/",
     "start-docs": "npm run prepare-docs && scripts/build-module-indexes.js && scripts/build-docs-data.js && batfish start --config='docs/batfish.config.js'",
     "build-docs": "npm run prepare-docs && scripts/build-module-indexes.js && scripts/build-docs-data.js && batfish build --config='docs/batfish.config.js'",
     "serve-static-docs": "batfish serve-static --config='docs/batfish.config.js'",
