@@ -8,6 +8,8 @@ export default class Sidebar extends React.Component {
 
     return (
       <SectionedNavigation
+        includeFilterBar={true}
+        title="Components"
         sections={Object.keys(categories).map(category => ({
           title: category,
           url: `#${slug(category)}`,
