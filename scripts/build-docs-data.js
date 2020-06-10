@@ -12,10 +12,6 @@ const prettier = require('prettier');
 const fs = require('fs');
 const reactDocgen = require('react-docgen');
 const jsxtremeMarkdown = require('@mapbox/jsxtreme-markdown');
-const Prism = require('prismjs');
-const loadLanguages = require('prismjs/components/');
-
-loadLanguages(['jsx']);
 
 const dataDir = path.resolve(__dirname, '../docs/src/data');
 const srcDir = path.resolve(__dirname, '../src/components');
@@ -36,14 +32,13 @@ function processExampleFile(filename) {
       .replace(/\/\*[\s\S]*?\*\/[\s]*/, '')
       .trim();
 
-    const highlightedCode = Prism.highlight(code, Prism.languages.jsx, 'jsx');
     const renderedDescription = encodeJsx(
       jsxtremeMarkdown.toJsx(descriptionMatch[1].trim())
     );
 
     return `{
       exampleModule: require('${filename}'),
-      code: \`${encodeJsx(highlightedCode)}\`,
+      code: \`${encodeJsx(code)}\`,
       description: ${renderedDescription}
     }`;
   });

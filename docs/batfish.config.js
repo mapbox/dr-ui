@@ -8,7 +8,8 @@ module.exports = () => {
     stylesheets: [
       require.resolve('@mapbox/mbx-assembly/dist/assembly.css'),
       require.resolve('../src/css/docs-prose.css'),
-      require.resolve('../src/css/prism.css')
+      require.resolve('../src/css/prism.css'),
+      path.join(__dirname, './src/css/site.css')
     ]
   };
 };

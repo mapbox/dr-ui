@@ -1,5 +1,11 @@
 /* eslint-disable react/no-danger */
 import React from 'react';
+import CodeSnippet from '../../../src/components/code-snippet';
+import { highlightJsx } from '../../../src/components/highlight/jsx';
+
+function decodeJsx(x) {
+  return x.replace(/&#96;/g, '`').replace(/&#36;/g, /\$/);
+}
 
 export default class ComponentExample extends React.Component {
   state = {
@@ -15,13 +21,11 @@ export default class ComponentExample extends React.Component {
       return null;
     }
     return (
-      <div className="prose">
-        <pre
-          className="my0 round-tl pre language-jsx unround-tr unround-b border--gray-light border"
-          style={{ maxHeight: 300 }}
-        >
-          <code dangerouslySetInnerHTML={{ __html: `${this.props.code}` }} />
-        </pre>
+      <div className="border border--gray-light round-tl">
+        <CodeSnippet
+          code={decodeJsx(this.props.code)}
+          highlighter={() => highlightJsx}
+        />
       </div>
     );
   }
