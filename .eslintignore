@@ -6,4 +6,4 @@ pkg
 src/test-cases-app/component-index.js
 dist
 docs/src/data/components.js
-_site
+_site*

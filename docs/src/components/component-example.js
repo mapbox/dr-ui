@@ -17,7 +17,7 @@ export default class ComponentExample extends React.Component {
     return (
       <div className="prose">
         <pre
-          className="my0 round-tl pre language-jsx unround-tr unround-b"
+          className="my0 round-tl pre language-jsx unround-tr unround-b border--gray-light border"
           style={{ maxHeight: 300 }}
         >
           <code dangerouslySetInnerHTML={{ __html: `${this.props.code}` }} />

@@ -57,16 +57,14 @@ export default class ComponentSection extends React.Component {
 
     const slug = data.name.toLowerCase();
 
-    // Top padding gives us the whitespace we want with hash links.
     return (
-      <section id={slug} className="pt24">
-        <div>
-          <div className="inline-block">
-            <a href={`#${slug}`} className="link link--gray">
-              <h2 className="txt-fancy txt-l">{data.name}</h2>
-            </a>
-          </div>
-        </div>
+      <section id={slug}>
+        <h2 className="txt-fancy txt-h3">
+          <a href={`#${slug}`} className="color-blue-on-hover">
+            {data.name}
+          </a>
+        </h2>
+
         <div className="mt6 mb12 txt-s color-gray" />
         {description}
         {this.renderAllExamples()}
@@ -149,5 +147,7 @@ function DefaultValueDisplay(props) {
       </pre>
     );
   }
-  return <div className="inline-block txt-code">{props.value}</div>;
+  return (
+    <div className="inline-block txt-code txt-break-word">{props.value}</div>
+  );
 }
