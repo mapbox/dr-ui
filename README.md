@@ -90,6 +90,7 @@ The `build` command creates a `pkg/` directory that contains the code we want to
 1. Push your commit.
 1. Build the `pkg/` directory: `npm run build`.
 1. `cd` into the `pkg/` directory and publish the new version on npm.
+1. `cd` back to the root directory and run `npm run deploy-docs`.
 
 ## Catalog site
 
