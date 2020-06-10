@@ -17,7 +17,7 @@ const loadLanguages = require('prismjs/components/');
 
 loadLanguages(['jsx']);
 
-const dataDir = path.resolve(__dirname, '../src/docs/data');
+const dataDir = path.resolve(__dirname, '../docs/src/data');
 const srcDir = path.resolve(__dirname, '../src/components');
 const dataFilename = path.resolve(dataDir, 'components.js');
 const excludeSourceDirs = new Set(['page-loading-indicator', 'utils']);

@@ -4,5 +4,7 @@ node_modules
 dist
 pkg
 src/test-cases-app/component-index.js
-src/components/syntax-highlighting/index.js
-src/docs/public/assets/
+docs/src/pages/assets/
+docs/src/data/components.js
+docs/src/prism.css
+_site*

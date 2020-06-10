@@ -2,9 +2,8 @@
 coverage
 .DS_Store
 _batfish*
-src/docs/data
 pkg
 src/test-cases-app/component-index.js
 dist
-**/*underreact.config.js
-html.js
+docs/src/data/components.js
+_site
