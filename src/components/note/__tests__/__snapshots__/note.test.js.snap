@@ -878,7 +878,9 @@ exports[`note Default note renders as expected 1`] = `
     >
       Note
     </div>
-    Here is a little thing to note.
+    <p>
+      Here is a little thing to note.
+    </p>
   </div>
 </div>
 `;

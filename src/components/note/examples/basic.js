@@ -6,6 +6,10 @@ import Note from '../note';
 
 export default class Basic extends React.Component {
   render() {
-    return <Note>Here is a little thing to note.</Note>;
+    return (
+      <Note>
+        <p>Here is a little thing to note.</p>
+      </Note>
+    );
   }
 }
