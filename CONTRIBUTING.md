@@ -33,28 +33,12 @@ npm test
 
 Every component should have a `__tests__` directory with the following files:
 
-### `/[component-name]-test-cases.js`
-
-- The `*test-cases.js` file includes variations of the component in use to demonstrate the different capabilities and properties for the component.
-- Every catalog example must have a test case. An example of importing an example into a test case:
-
-```js
-import React from 'react';
-import Basic from '../examples/basic';
-
-testCases.basic = {
-  description: 'Basic',
-  element: <Basic />
-};
-```
-
-### `/[component-name].test.js`
-
-- The `*.test.js` file should create a unit test for each test case found in `*test-cases.js`.
+- `/[component-name]-test-cases.js`. The `*test-cases.js` file includes variations of the component to demonstrate different capabilities and properties for the component. Every catalog example must have a test case.
+- `/[component-name].test.js`. The `*.test.js` file should create a unit test for each test case found in `*test-cases.js`.
 
 ## Add a new component
 
-Run the `new` command to generate all the files you'll need to create a new component. The command accepts an argument with the name of the component:
+Run the `new` command to generate all the files and starter code to create a new component. The command accepts an argument with the name of the component:
 
 ```
 node scripts/new.js Button
