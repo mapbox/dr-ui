@@ -49,7 +49,7 @@ class LevelIndicator extends React.Component {
 }
 
 LevelIndicator.propTypes = {
-  level: PropTypes.oneOf([1, 2, 3]).isRequired // 1, 2, or 3
+  level: PropTypes.oneOf([1, 2, 3]).isRequired
 };
 
 export default LevelIndicator;
