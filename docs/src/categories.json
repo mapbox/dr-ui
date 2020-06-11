@@ -24,14 +24,6 @@
     "NumberedCodeSnippet",
     "ToggleableCodeBlock"
   ],
-  "Images": [
-    "BookImage",
-    "BookletImage",
-    "ContactImage",
-    "ExampleImage",
-    "PlaygroundImage",
-    "TroubleshootImage"
-  ],
   "Layout": [
     "BackToTopButton",
     "GlossaryCard",
@@ -41,13 +33,21 @@
     "OverviewHeader",
     "NavigationAccordion",
     "NavigationDropdown",
+    "PageLayout",
     "ProductMenu",
     "SectionedNavigation",
     "Topbar",
+    "TopbarSticker",
     "Card",
     "CardContainer",
-    "ExamplesPage",
-    "TopbarSticker",
-    "PageLayout"
+    "ExamplesPage"
+  ],
+  "Images": [
+    "BookImage",
+    "BookletImage",
+    "ContactImage",
+    "ExampleImage",
+    "PlaygroundImage",
+    "TroubleshootImage"
   ]
 }
