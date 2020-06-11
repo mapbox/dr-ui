@@ -47,15 +47,16 @@ node scripts/new.js responsive button
 
 The command will create the following folder structure:
 
-`src/components/[component-name]/`
-- `index.js`
-- `[component-name].js`
-- `examples`
-  - `basic.js`
-- `__tests__`
-  - `[component-name]-test-cases.js`
-  - `[component-name].test.js`
-
+```
+src/components/[component-name]/
+  index.js
+  [component-name].js
+  examples/
+    basic.js
+  __tests__/
+    [component-name]-test-cases.js
+    [component-name].test.js
+```
 
 ## Publish a new dr-ui version
 
