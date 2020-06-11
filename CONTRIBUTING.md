@@ -4,10 +4,10 @@ This repo has two sites:
 
 - **The [catalog site](https://mapbox.github.io/dr-ui/) built with Batfish.**
   - The catalog contains examples of most common uses for each component and lists all available properties.
-  - Our CI runs `npm run build` to make sure that the catalog site can build without failures, which also helps make sure that all components are production ready.
+  - To make sure all our components are production ready with Batfish, CI runs the `npm run build-docs`.
+  - Every catalog example must have a test case.
 - **The test cases app available locally.**
   - The test cases app builds a local development site and snapshot tests for each component. The test cases app also includes less common use cases.
-  - Every catalog example must have a test case to help make sure both sites stay up-to-date.
 
 ## Commands
 
@@ -51,6 +51,26 @@ testCases.basic = {
 ### `/[component-name].test.js`
 
 - The `*.test.js` file should create a unit test for each test case found in `*test-cases.js`.
+
+## Add a new component
+
+Run the `new` command to generate all the files you'll need to create a new component. The command accepts an argument with the name of the component:
+
+```
+node scripts/new.js Button
+node scripts/new.js responsive button
+```
+
+The command will create the following folder structure:
+
+`src/components/[component-name]/`
+- `index.js`
+- `[component-name].js`
+- `examples`
+  - `basic.js`
+- `__tests__`
+  - `[component-name]-test-cases.js`
+  - `[component-name].test.js`
 
 
 ## Publish a new dr-ui version
