@@ -1,9 +1,20 @@
 # Changelog
 
-## Master
+## 0.29.1
+
+- Remove `limiter` from `Topbar`. [#282](https://github.com/mapbox/dr-ui/pull/282)
+
+## 0.29.0
+
+- Allow Kotlin-only activities in `ContextlessAndroidActivityToggle`. [#278](https://github.com/mapbox/dr-ui/pull/278)
+
+## 0.28.0
 
 * Fix padding, background, and color contrast in `NumberedCodeSnippet` component. [#269](https://github.com/mapbox/dr-ui/pull/269)
 * Fix a bug in `NumberedCodeSnippet` where if the last line was included in `copyRanges` that code chunk would not be highlighted. [#268](https://github.com/mapbox/dr-ui/pull/268)
+* Add `Topbar` component. [#274](https://github.com/mapbox/dr-ui/pull/274)
+* Update mr-ui and other dependencies for security fixes. [#266](https://github.com/mapbox/dr-ui/pull/266)
+* Prevent `ProductMenu` from truncating `tag`. [#277](https://github.com/mapbox/dr-ui/pull/277)
 
 ## 0.27.0
 

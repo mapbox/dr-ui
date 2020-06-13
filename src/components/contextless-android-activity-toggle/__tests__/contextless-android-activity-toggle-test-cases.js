@@ -86,6 +86,18 @@ testCases.twoLang = {
   }
 };
 
+testCases.kotlinOnly = {
+  component: ContextlessAndroidActivityToggle,
+  description: 'Kotlin only',
+  props: {
+    context: contextJava,
+    id: 'test-kotlin-only',
+    kotlin: kotlin,
+    limitHeight: true,
+    onCopy: () => {}
+  }
+};
+
 testCases.filename = {
   component: ContextlessAndroidActivityToggle,
   description: 'Two languages with filename',
