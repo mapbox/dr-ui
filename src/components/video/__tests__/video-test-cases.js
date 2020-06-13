@@ -21,4 +21,15 @@ noRenderCases.reducedMotion = {
   }
 };
 
+testCases.iframe = {
+  component: Video,
+  description: 'Load video with an iframe (for Vimeo, YouTube, etc)',
+  props: {
+    src: 'https://player.vimeo.com/video/388379420',
+    themeVideoContainer: 'bg-gray-dark',
+    iframe: true,
+    title: 'Another video!'
+  }
+};
+
 export { testCases, noRenderCases };

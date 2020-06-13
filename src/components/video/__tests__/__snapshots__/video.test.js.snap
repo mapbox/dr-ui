@@ -26,6 +26,35 @@ exports[`video Basic renders as expected 1`] = `
 </div>
 `;
 
+exports[`video Load video with an iframe (for Vimeo, YouTube, etc) renders as expected 1`] = `
+<div
+  className="bg-gray-dark"
+  style={
+    Object {
+      "padding": "62.5% 0 0 0",
+      "position": "relative",
+    }
+  }
+>
+  <iframe
+    allow="autoplay; fullscreen"
+    allowFullScreen={true}
+    frameBorder="0"
+    src="https://player.vimeo.com/video/388379420"
+    style={
+      Object {
+        "height": "100%",
+        "left": 0,
+        "position": "absolute",
+        "top": 0,
+        "width": "100%",
+      }
+    }
+    title="Another video!"
+  />
+</div>
+`;
+
 exports[`video Reduced motion renders as expected 1`] = `
 <div>
   <video

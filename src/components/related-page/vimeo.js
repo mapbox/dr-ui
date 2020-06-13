@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Modal from '@mapbox/mr-ui/modal';
+import Video from '../video';
 
 // creates the modal
 export class VimeoModal extends React.Component {
@@ -13,21 +14,11 @@ export class VimeoModal extends React.Component {
         onExit={closeModal}
       >
         <div className="py36">
-          <div style={{ padding: '62.5% 0 0 0', position: 'relative' }}>
-            <iframe
-              src={`https://player.vimeo.com/video/${vimeoId}?title=0&byline=0&portrait=0`}
-              style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%'
-              }}
-              frameBorder="0"
-              allow="autoplay; fullscreen"
-              allowFullScreen
-            />
-          </div>
+          <Video
+            iframe={true}
+            title={`Video: ${title}`}
+            src={`https://player.vimeo.com/video/${vimeoId}?title=0&byline=0&portrait=0`}
+          />
         </div>
       </Modal>
     );
