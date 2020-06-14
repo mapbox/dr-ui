@@ -1,5 +1,9 @@
 # Changelog
 
+## Master
+
+- Update `@sentry/browser` and add it as a peer dependency. [#292](https://github.com/mapbox/dr-ui/pull/292)
+
 ## 0.29.1
 
 - Remove `limiter` from `Topbar`. [#282](https://github.com/mapbox/dr-ui/pull/282)
