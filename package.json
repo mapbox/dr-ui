@@ -98,6 +98,8 @@
     "uuid": "^3.3.2"
   },
   "peerDependencies": {
+    "@mapbox/mr-ui": "^0.9.1",
+    "@mapbox/mbx-assembly": "^0.28.2",
     "@sentry/browser": "5.17.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"

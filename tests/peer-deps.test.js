@@ -23,4 +23,18 @@ describe('peerDependencies are up-to-date', () => {
         peerDependencies['react-dom']
     ).toBeTruthy();
   });
+
+  test(`@mapbox/mr-ui`, () => {
+    expect(
+      dependencies['@mapbox/mr-ui'] ===
+        peerDependencies['@mapbox/mr-ui']
+    ).toBeTruthy();
+  });
+
+  test(`@mapbox/mbx-assembly`, () => {
+    expect(
+      devDependencies['@mapbox/mbx-assembly'] ===
+        peerDependencies['@mapbox/mbx-assembly']
+    ).toBeTruthy();
+  });
 });
