@@ -33,7 +33,7 @@ testCases.onMapLoad = {
     accessToken: process.env.MapboxAccessToken,
     center: [-96, 37.8],
     zoom: 3,
-    onMapLoad: map => {
+    onMapLoad: (map) => {
       map.addSource('points', {
         type: 'geojson',
         data: {

@@ -21,7 +21,7 @@ class Map extends React.PureComponent {
   }
 
   // wait for GLWrapper to let us know if we can load the map
-  loadMap = status => {
+  loadMap = (status) => {
     // if loadMap returns true, we can load the map
     if (status) {
       // make sure there is an accessToken prop or a token from MapboxPageShell
@@ -45,7 +45,7 @@ class Map extends React.PureComponent {
   };
 
   // turn off loader and set the token
-  setToken = token => {
+  setToken = (token) => {
     this.setState({ loading: false }, () => {
       mapboxgl.accessToken = token;
       // once we have the token, we can load the map
