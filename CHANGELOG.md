@@ -2,7 +2,7 @@
 
 ## Master
 
-- Update `@sentry/browser` and add it as a peer dependency. [#292](https://github.com/mapbox/dr-ui/pull/292)
+- Update `@sentry/browser` and add it as a peer dependency along with `react`, `react-dom`, `@mapbox/mr-ui`, and `@mapbox/mbx-assembly`. [#292](https://github.com/mapbox/dr-ui/pull/292)
 
 ## 0.29.1
 
