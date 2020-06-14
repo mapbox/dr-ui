@@ -3,7 +3,7 @@ import Feedback from '../feedback';
 import React from 'react';
 import PageLayout from '../../page-layout/page-layout';
 import NavigationAccordion from '../../navigation-accordion/navigation-accordion';
-import TopbarSticker from '../../topbar-sticker/topbar-sticker';
+import Topbar from '../../topbar/topbar';
 import ProductMenu from '../../product-menu/product-menu';
 
 const testCases = {};
@@ -77,7 +77,7 @@ testCases.common = {
   description: 'Feedback placement (sends anonymous user information)',
   element: (
     <div>
-      <TopbarSticker>
+      <Topbar>
         <div className="limiter">
           <div className="grid grid--gut36 mr-neg36 mr0-mm">
             <div className="col col--4-mm col--12">
@@ -90,7 +90,7 @@ testCases.common = {
             </div>
           </div>
         </div>
-      </TopbarSticker>
+      </Topbar>
       <div className="limiter">
         <PageLayout
           sidebarTitle="Section title"

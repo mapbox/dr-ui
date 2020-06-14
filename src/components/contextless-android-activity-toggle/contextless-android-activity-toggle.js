@@ -4,6 +4,24 @@ import ToggleableCodeBlock from '../toggleable-code-block/toggleable-code-block'
 import { highlightJava } from '../highlight/java';
 import { highlightKotlin } from '../highlight/kotlin';
 
+export function findSelectedCode(kotlin, java, preference) {
+  let selectedCode = '';
+  if (kotlin === undefined) {
+    /* If there is no kotlin code, use java. */
+    selectedCode = java;
+  } else if (java === undefined) {
+    /* If there is no java code, use kotlin. */
+    selectedCode = kotlin;
+  } else if (preference === 'kotlin') {
+    /** If there is both java and kotlin code,
+     * use the preferred language. */
+    selectedCode = kotlin;
+  } else {
+    selectedCode = java;
+  }
+  return selectedCode;
+}
+
 export default class ContextlessAndroidActivityToggle extends React.Component {
   checkPreference = language => {
     return this.props.context.preferredLanguage.android === language;
@@ -21,10 +39,11 @@ export default class ContextlessAndroidActivityToggle extends React.Component {
       limitHeight
     } = this.props;
 
-    let selectedCode = '';
-    if (context) {
-      selectedCode = this.checkPreference('kotlin') ? kotlin : java;
-    }
+    const selectedCode = findSelectedCode(
+      kotlin,
+      java,
+      context.preferredLanguage.android
+    );
 
     const snippetProps = {
       copyRanges: copyRanges || undefined,
@@ -89,7 +108,7 @@ ContextlessAndroidActivityToggle.propTypes = {
   /* A unique `id` is required for the language toggle. */
   id: PropTypes.string.isRequired,
   /* Every code snippet must include raw Java code. */
-  java: PropTypes.string.isRequired,
+  java: PropTypes.string,
   /* Optionally, the code snippet can include raw Kotlin code.
   If this is included, the language toggle will be displayed. */
   kotlin: PropTypes.string,

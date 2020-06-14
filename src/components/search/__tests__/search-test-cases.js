@@ -2,7 +2,7 @@ import React from 'react';
 import Search from '../search';
 import PageLayout from '../../page-layout/page-layout';
 import NavigationAccordion from '../../navigation-accordion/navigation-accordion';
-import TopbarSticker from '../../topbar-sticker/topbar-sticker';
+import Topbar from '../../topbar/topbar';
 import ProductMenu from '../../product-menu/product-menu';
 import TabList from '@mapbox/mr-ui/tab-list';
 import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
@@ -56,7 +56,7 @@ testCases.withLayout = {
   description: 'Search with `narrow` option set',
   element: (
     <div>
-      <TopbarSticker>
+      <Topbar>
         <div className="limiter">
           <div className="grid grid--gut36 mr-neg36 mr0-mm">
             <div className="col col--4-mm col--12">
@@ -85,7 +85,7 @@ testCases.withLayout = {
             </div>
           </div>
         </div>
-      </TopbarSticker>
+      </Topbar>
       <div className="limiter">
         <PageLayout
           sidebarTitle="Section title"
