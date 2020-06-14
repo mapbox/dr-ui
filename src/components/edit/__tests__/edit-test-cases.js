@@ -49,4 +49,24 @@ testCases.basicWithHelpers = {
   }
 };
 
+testCases.noCss = {
+  component: Edit,
+  description: 'No CSS',
+  props: {
+    html: "<h1>hello world!</h1><div id='map'></div>",
+    frontMatter: {
+      description: 'Initialize a map in an HTML element with Mapbox GL JS.',
+      pathname: '/mapbox-gl-js/example/simple-map/',
+      title: 'Display a map'
+    },
+    head: `<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />`,
+    js:
+      "var map = new mapboxgl.Map({\n    container: 'map', // container id\n    style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location\n    center: [-74.50, 40], // starting position [lng, lat]\n    zoom: 9 // starting zoom\n});",
+    resources: {
+      js: ['https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'],
+      css: ['https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css']
+    }
+  }
+};
+
 export { testCases, noRenderCases };

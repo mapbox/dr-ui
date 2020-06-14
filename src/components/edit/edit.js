@@ -119,7 +119,7 @@ Button.propTypes = {
 };
 
 Edit.propTypes = {
-  css: PropTypes.string.isRequired, // CSS panel contents
+  css: PropTypes.string, // CSS panel contents
   js: PropTypes.string.isRequired, // JS panel contents
   html: PropTypes.string.isRequired, // HTML panel contents
   head: PropTypes.string, // extra html to add to the head of the document (CodePen)

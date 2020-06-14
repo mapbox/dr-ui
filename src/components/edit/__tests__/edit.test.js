@@ -20,4 +20,22 @@ describe('edit', () => {
       expect(tree).toMatchSnapshot();
     });
   });
+
+  describe(testCases.noCss.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.noCss;
+      wrapper = renderer.create(
+        React.createElement(testCase.component, testCase.props)
+      );
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });
