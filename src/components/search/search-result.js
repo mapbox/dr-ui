@@ -6,7 +6,7 @@ import Icon from '@mapbox/mr-ui/icon';
 import { titleGenerator } from './title-generator';
 
 class SearchResult extends React.Component {
-  returnRaw = item => {
+  returnRaw = (item) => {
     if (item && item.raw && typeof item.raw !== 'string')
       return item.raw.join(', ');
     else return item && item.raw ? item.raw : '';
@@ -33,8 +33,9 @@ class SearchResult extends React.Component {
         {...getItemProps({
           key: props.result.id.raw,
           item: props.result,
-          className: `${highlighted &&
-            'bg-gray-faint'} py12 px18 link--gray cursor-pointer`
+          className: `${
+            highlighted && 'bg-gray-faint'
+          } py12 px18 link--gray cursor-pointer`
         })}
       >
         {title && url && (

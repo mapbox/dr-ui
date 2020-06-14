@@ -14,7 +14,7 @@
     "lint": "eslint .",
     "pretest": "npm run lint",
     "precommit": "lint-staged",
-    "format": "prettier '**/*.js' --write",
+    "format": "prettier --write '**/*.{js,css,html,json,yml,md}'",
     "prebuild": "npm run build-theme-css",
     "build": "scripts/build-module-indexes.js && scripts/build-package.js"
   },
@@ -39,6 +39,7 @@
     "@mapbox/eslint-config-docs": "^0.4.2",
     "@mapbox/eslint-config-mapbox": "^2.0.1",
     "@mapbox/mbx-assembly": "^0.28.2",
+    "@mapbox/prettier-config-docs": "^0.2.1",
     "@mapbox/react-test-kitchen": "^0.1.3",
     "babel-eslint": "^10.1.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
@@ -68,7 +69,7 @@
     "lint-staged": "^7.3.0",
     "make-dir": "^1.3.0",
     "pify": "^4.0.1",
-    "prettier": "^1.16.1",
+    "prettier": "^2.0.5",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
@@ -107,5 +108,6 @@
     "iOS >= 7",
     "Android >= 4.4",
     "IE >= 11"
-  ]
+  ],
+  "prettier": "@mapbox/prettier-config-docs"
 }

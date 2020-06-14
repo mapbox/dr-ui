@@ -24,7 +24,7 @@ class LevelIndicator extends React.Component {
     const levelLabel = levels[props.level].label;
 
     // Make the "difficulty level" squares
-    const levelSquares = Object.keys(levels).map(level => {
+    const levelSquares = Object.keys(levels).map((level) => {
       const squareColor = level > props.level ? 'gray-light' : levelColor;
       return (
         <div
