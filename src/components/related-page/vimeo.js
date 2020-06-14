@@ -82,7 +82,7 @@ export class VimeoPlayImage extends React.Component {
       this.props.fallbackIcon ? wrap(children) : children;
     return (
       <IconWrapper
-        wrap={children => (
+        wrap={(children) => (
           <div
             style={{ width: 55, height: 55, padding: '15px 12px 15px 18px' }}
             className="bg-purple-light round-full"
