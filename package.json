@@ -98,7 +98,7 @@
     "uuid": "^3.3.2"
   },
   "peerDependencies": {
-    "@sentry/browser": "^5.17.0"
+    "@sentry/browser": "5.17.0"
   },
   "jest": {
     "testRegex": ".*\\.test\\.js$"
