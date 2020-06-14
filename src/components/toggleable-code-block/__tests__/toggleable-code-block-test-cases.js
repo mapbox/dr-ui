@@ -27,7 +27,10 @@ testCases.basic = {
     code: javaCodeSnippet,
     highlightedCode: highlightJava(javaCodeSnippet),
     copyRanges: {
-      java: [[2, 2], [5, 8]]
+      java: [
+        [2, 2],
+        [5, 8]
+      ]
     },
     options: [
       {

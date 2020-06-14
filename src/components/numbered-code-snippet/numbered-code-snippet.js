@@ -177,11 +177,11 @@ export default class NumberedCodeSnippet extends React.PureComponent {
     this.adjustPositions();
   }, 300);
 
-  onContainerElement = element => {
+  onContainerElement = (element) => {
     this.containerElement = element;
   };
 
-  onFirstLive = element => {
+  onFirstLive = (element) => {
     this.firstLiveElement = element;
   };
 
@@ -208,7 +208,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
     const endCurrentChunk = ({ live }) => {
       allChunks.push({
         live,
-        highlightedLines: currentChunk.map(line => line.highlighted),
+        highlightedLines: currentChunk.map((line) => line.highlighted),
         raw: currentChunk.reduce(
           (result, line) => (result += line.raw + '\n'),
           ''
@@ -410,8 +410,9 @@ export default class NumberedCodeSnippet extends React.PureComponent {
              * z-index this line above the highlighted background element for
              * live chunks
              */
-            className={`relative z2 ${props.collapseLines &&
-              (this.state.expanded ? '' : 'h30')}`}
+            className={`relative z2 ${
+              props.collapseLines && (this.state.expanded ? '' : 'h30')
+            }`}
             data-chunk-code={chunkId}
           >
             {props.collapseLines ? expandCollapseButtons : lineEls}

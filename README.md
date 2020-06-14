@@ -27,7 +27,7 @@ import Card from '@mapbox/dr-ui/card';
 import BackToTopButton from '@mapbox/dr-ui/back-to-top-button';
 ```
 
-Only the component itself and whatever *it* depends on will be drawn into your bundle.
+Only the component itself and whatever _it_ depends on will be drawn into your bundle.
 
 ## Development
 
