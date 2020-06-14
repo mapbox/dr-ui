@@ -40,10 +40,7 @@ describe('Sent text feedback', () => {
       .props()
       .onChange('cool beans!');
     // simulate submit button click
-    feedback
-      .find('#dr-ui--feedback-page-submit')
-      .at(0)
-      .simulate('click');
+    feedback.find('#dr-ui--feedback-page-submit').at(0).simulate('click');
 
     expect(feedback.state()).toEqual({
       event: {

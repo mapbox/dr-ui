@@ -1,6 +1,6 @@
 const compareVersions = require('compare-versions');
 
-const sortBy = key => (a, b) =>
+const sortBy = (key) => (a, b) =>
   a[key] > b[key] ? 1 : b[key] > a[key] ? -1 : 0;
 
 export function sortVersions(versions) {
@@ -8,7 +8,7 @@ export function sortVersions(versions) {
   const allVersionsOrdered = versions.sort(compareVersions).reverse();
   // get the latest stable version
   const latestStable = allVersionsOrdered
-    .filter(version => {
+    .filter((version) => {
       return /alpha|beta|rc|pre/.test(version) === false;
     })
     .slice(0, 1)[0];
@@ -50,7 +50,7 @@ export function sortVersions(versions) {
         return arr;
       }, []);
 
-  const versionsToDisplay = allVersionsOrdered.filter(version => {
+  const versionsToDisplay = allVersionsOrdered.filter((version) => {
     return !/^(\d|\.)+-(alpha|beta|rc|pre).+/.test(version);
   });
 
