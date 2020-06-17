@@ -6,3 +6,5 @@ updates:
       interval: 'weekly'
     reviewers:
       - 'katydecorah'
+    allow:
+      - dependency-type: direct
