@@ -48,7 +48,7 @@
     "cpy": "^7.0.1",
     "cpy-cli": "^3.1.1",
     "del": "^3.0.0",
-    "del-cli": "^1.1.0",
+    "del-cli": "^3.0.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.4.4",
