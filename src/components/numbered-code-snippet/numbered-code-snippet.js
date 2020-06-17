@@ -24,9 +24,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
     code: PropTypes.string.isRequired,
     /**
      * The HTML output of running code through a syntax highlighter. If this is not provided,
-     * `code` is displayed, instead. The default theme CSS assumes the highlighter is
-     * [`highlight.js`](https://github.com/isagalaev/highlight.js). If you are using another
-     * highlighter, provide your own theme.
+     * `code` is displayed, instead.
      */
     highlightedCode: PropTypes.string,
     /**
