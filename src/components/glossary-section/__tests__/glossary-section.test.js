@@ -1,4 +1,3 @@
-import React from 'react';
 import renderer from 'react-test-renderer';
 import { testCases } from './glossary-section-test-cases';
 
@@ -10,9 +9,7 @@ describe('glossary-section', () => {
 
     beforeEach(() => {
       testCase = testCases.basic;
-      wrapper = renderer.create(
-        React.createElement(testCase.component, testCase.props)
-      );
+      wrapper = renderer.create(testCase.element);
       tree = wrapper.toJSON();
     });
 

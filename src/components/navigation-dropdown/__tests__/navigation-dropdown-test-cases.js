@@ -1,28 +1,11 @@
-import NavigationDropdown from '../navigation-dropdown';
+import React from 'react';
+import Basic from '../examples/basic';
 
 const testCases = {};
 
-function onChangeTest() {
-  console.log('🐢 🐙 🍕');
-}
-
 testCases.basic = {
   description: 'Basic',
-  component: NavigationDropdown,
-  props: {
-    currentPath: 'page-one',
-    dropdownOptions: [
-      {
-        title: 'Title one',
-        path: 'page-one'
-      },
-      {
-        title: 'Title two',
-        path: 'page-two'
-      }
-    ],
-    onChange: onChangeTest
-  }
+  element: <Basic />
 };
 
 export { testCases };

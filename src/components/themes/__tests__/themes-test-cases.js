@@ -1,6 +1,7 @@
 import React from 'react';
 import Tag from '../../tag/tag';
 import Note from '../../note/note';
+import Basic from '../examples/basic';
 
 const testCases = {};
 const noRenderCases = {};
@@ -41,12 +42,7 @@ testCases.beta = {
 
 testCases.new = {
   description: 'new',
-  element: (
-    <div>
-      <Note theme="new">New note.</Note>
-      <Tag theme="new" />
-    </div>
-  )
+  element: <Basic />
 };
 
 testCases.legacy = {

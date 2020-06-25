@@ -10,9 +10,7 @@ describe('book-image', () => {
 
     beforeEach(() => {
       testCase = testCases.basic;
-      wrapper = renderer.create(
-        React.createElement(testCase.component, testCase.props)
-      );
+      wrapper = renderer.create(testCase.element);
       tree = wrapper.toJSON();
     });
 

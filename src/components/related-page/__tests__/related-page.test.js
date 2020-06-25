@@ -10,9 +10,7 @@ describe('related-page', () => {
 
     beforeEach(() => {
       testCase = testCases.tutorial;
-      wrapper = renderer.create(
-        React.createElement(testCase.component, testCase.props)
-      );
+      wrapper = renderer.create(testCase.element);
       tree = wrapper.toJSON();
     });
 
@@ -129,9 +127,7 @@ describe('related-page', () => {
 
     beforeEach(() => {
       testCase = testCases.video;
-      wrapper = renderer.create(
-        React.createElement(testCase.component, testCase.props)
-      );
+      wrapper = renderer.create(testCase.element);
       tree = wrapper.toJSON();
     });
 

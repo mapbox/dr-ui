@@ -87,7 +87,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           className="pr12 py3 bg-white"
           style={
             Object {
-              "paddingLeft": 40.9,
+              "paddingLeft": 69.8,
             }
           }
         >
@@ -96,7 +96,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
             data-content={6}
             style={
               Object {
-                "marginLeft": -34.9,
+                "marginLeft": -63.8,
                 "marginTop": -3,
               }
             }
@@ -120,7 +120,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           className="pr12 py3 bg-white"
           style={
             Object {
-              "paddingLeft": 69.8,
+              "paddingLeft": 98.69999999999999,
             }
           }
         >
@@ -129,7 +129,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
             data-content={7}
             style={
               Object {
-                "marginLeft": -63.8,
+                "marginLeft": -92.69999999999999,
                 "marginTop": -3,
               }
             }
@@ -186,7 +186,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           className="pr12 py3 bg-white"
           style={
             Object {
-              "paddingLeft": 69.8,
+              "paddingLeft": 98.69999999999999,
             }
           }
         >
@@ -195,7 +195,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
             data-content={9}
             style={
               Object {
-                "marginLeft": -63.8,
+                "marginLeft": -92.69999999999999,
                 "marginTop": -3,
               }
             }
@@ -219,7 +219,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           className="pr12 py3 bg-white"
           style={
             Object {
-              "paddingLeft": 69.8,
+              "paddingLeft": 98.69999999999999,
             }
           }
         >
@@ -228,7 +228,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
             data-content={10}
             style={
               Object {
-                "marginLeft": -63.8,
+                "marginLeft": -92.69999999999999,
                 "marginTop": -3,
               }
             }
@@ -252,7 +252,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           className="pr12 py3 bg-white"
           style={
             Object {
-              "paddingLeft": 69.8,
+              "paddingLeft": 98.69999999999999,
             }
           }
         >
@@ -261,7 +261,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
             data-content={11}
             style={
               Object {
-                "marginLeft": -63.8,
+                "marginLeft": -92.69999999999999,
                 "marginTop": -3,
               }
             }
@@ -318,7 +318,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           className="pr12 py3 bg-white"
           style={
             Object {
-              "paddingLeft": 69.8,
+              "paddingLeft": 98.69999999999999,
             }
           }
         >
@@ -327,7 +327,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
             data-content={13}
             style={
               Object {
-                "marginLeft": -63.8,
+                "marginLeft": -92.69999999999999,
                 "marginTop": -3,
               }
             }
@@ -384,7 +384,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           className="pr12 py3 bg-white"
           style={
             Object {
-              "paddingLeft": 69.8,
+              "paddingLeft": 98.69999999999999,
             }
           }
         >
@@ -393,7 +393,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
             data-content={15}
             style={
               Object {
-                "marginLeft": -63.8,
+                "marginLeft": -92.69999999999999,
                 "marginTop": -3,
               }
             }
@@ -417,7 +417,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           className="pr12 py3 bg-white"
           style={
             Object {
-              "paddingLeft": 69.8,
+              "paddingLeft": 98.69999999999999,
             }
           }
         >
@@ -426,7 +426,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
             data-content={16}
             style={
               Object {
-                "marginLeft": -63.8,
+                "marginLeft": -92.69999999999999,
                 "marginTop": -3,
               }
             }
@@ -450,7 +450,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           className="pr12 py3 bg-white"
           style={
             Object {
-              "paddingLeft": 40.9,
+              "paddingLeft": 69.8,
             }
           }
         >
@@ -459,7 +459,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
             data-content={17}
             style={
               Object {
-                "marginLeft": -34.9,
+                "marginLeft": -63.8,
                 "marginTop": -3,
               }
             }
