@@ -1,12 +1,12 @@
 module.exports = {
-  indexJs: componentFileName => {
+  indexJs: (componentFileName) => {
     return `import main from './${componentFileName}';
 
 export default main;
     `;
   },
 
-  componentJs: componentName => {
+  componentJs: (componentName) => {
     return `import React from 'react';
 import PropTypes from 'prop-types';
 

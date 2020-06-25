@@ -28,7 +28,10 @@ export default class Basic extends React.Component {
         code={javaCodeSnippet}
         highlightedCode={highlightJava(javaCodeSnippet)}
         copyRanges={{
-          java: [[2, 2], [5, 8]]
+          java: [
+            [2, 2],
+            [5, 8]
+          ]
         }}
         changeLanguage={() => {}}
         filename="ThisIsAFile.extension"

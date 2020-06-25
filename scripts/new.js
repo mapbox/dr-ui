@@ -18,7 +18,7 @@ if (process.argv[2] === undefined) {
 function CamelCase(str) {
   return str
     .split(' ')
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join('');
 }
 

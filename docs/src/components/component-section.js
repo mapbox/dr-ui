@@ -7,7 +7,7 @@ export default class ComponentSection extends React.Component {
     const { data } = this.props;
     if (!data) return null;
 
-    const propRows = sortedProps(data.props).map(propData => {
+    const propRows = sortedProps(data.props).map((propData) => {
       return <PropRow key={propData.name} {...propData} />;
     });
 
@@ -98,7 +98,7 @@ function PropRow(props) {
 
   const options = props.options
     ? props.options.length && typeof props.options === 'object'
-      ? props.options.map(o => o.value || o.name)
+      ? props.options.map((o) => o.value || o.name)
       : props.options.value
     : undefined;
 
