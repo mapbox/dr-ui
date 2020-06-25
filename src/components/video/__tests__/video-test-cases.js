@@ -1,5 +1,6 @@
 import React from 'react';
 import Basic from '../examples/basic';
+import Settings from '../examples/settings';
 import Video from '../video';
 
 const testCases = {};
@@ -11,14 +12,8 @@ testCases.basic = {
 };
 
 testCases.settings = {
-  component: Video,
   description: 'Turn off autoplay and loop',
-  props: {
-    src: './assets/browser-example.mp4',
-    title: 'A video!',
-    autoplay: false,
-    loop: false
-  }
+  element: <Settings />
 };
 
 noRenderCases.reducedMotion = {
