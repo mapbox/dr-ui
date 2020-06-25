@@ -15,13 +15,18 @@ export default class ErrorBoundary extends React.Component {
 
   componentDidCatch(error, errorInfo) {
     this.setState({ error });
-    Sentry.withScope(scope => {
+    Sentry.withScope((scope) => {
       // set tag to allow us to filter this event in Sentry
       scope.setTag('alertType', 'ErrorBoundary');
       // set extra error info
       scope.setExtra('errorInfo', errorInfo);
       // if available, include additional details
-      if (this.props.moreInfo) scope.setExtra('moreInfo', this.props.moreInfo);
+      if (this.props.moreInfoObject) {
+        // push each key/value from this.props.moreInfoObject as an extra scope
+        Object.keys(this.props.moreInfoObject).forEach((item) =>
+          scope.setExtra(item, this.props.moreInfoObject[item])
+        );
+      }
       Sentry.captureException(error);
     });
   }
@@ -50,5 +55,5 @@ export default class ErrorBoundary extends React.Component {
 
 ErrorBoundary.propTypes = {
   children: PropTypes.node.isRequired,
-  moreInfo: PropTypes.any
+  moreInfoObject: PropTypes.object
 };
