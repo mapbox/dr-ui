@@ -1,28 +1,18 @@
 import React from 'react';
+import Basic from '../examples/basic';
+import Oops from '../examples/oops';
 import ErrorBoundary from '../error-boundary';
 
 const testCases = {};
 
-const BadFunction = () => {};
-
 testCases.basic = {
   description: 'Basic',
-  component: ErrorBoundary,
-  props: {
-    children: 'My cool website'
-  }
+  element: <Basic />
 };
 
 testCases.oops = {
-  description: 'Trigger error',
   component: ErrorBoundary,
-  props: {
-    children: (
-      <div>
-        My cool website <BadFunction />
-      </div>
-    )
-  }
+  element: <Oops />
 };
 
 export { testCases };
