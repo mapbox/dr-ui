@@ -2,12 +2,7 @@
 
 exports[`topbar-sticker For display only renders as expected 1`] = `
 <div
-  style={
-    Object {
-      "background": "pink",
-      "height": 3000,
-    }
-  }
+  className="h300"
 >
   <div
     className="px24 py12"

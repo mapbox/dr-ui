@@ -9,7 +9,7 @@
  *
  */
 export default function forwardEvent(event, webhook, callback) {
-  callback = callback || function() {};
+  callback = callback || function () {};
 
   // window and event must be present to make the proper request
   if (typeof window === 'undefined') return;

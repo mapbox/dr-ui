@@ -82,7 +82,7 @@ exports[`phone Android landscape renders as expected 1`] = `
     >
       <img
         alt="example"
-        src="./assets/ios-horizontal.png"
+        src="./files/ios-horizontal.png"
       />
     </div>
   </div>
@@ -178,7 +178,7 @@ exports[`phone Android portrait renders as expected 1`] = `
     >
       <img
         alt="example"
-        src="./assets/ios-vertical.png"
+        src="./files/ios-vertical.png"
       />
     </div>
   </div>
@@ -347,7 +347,7 @@ exports[`phone iOS landscape renders as expected 1`] = `
           onEnded={[Function]}
           onPause={[Function]}
           onPlay={[Function]}
-          src="./assets/browser-example.mp4"
+          src="./files/browser-example.mp4"
           title="example"
           type="video/mp4"
           width="100%"
@@ -356,7 +356,7 @@ exports[`phone iOS landscape renders as expected 1`] = `
             Your browser doesn't support HTML5 video. Here is a
              
             <a
-              href="./assets/browser-example.mp4"
+              href="./files/browser-example.mp4"
             >
               link to the video
             </a>
@@ -481,7 +481,7 @@ exports[`phone iOS portrait renders as expected 1`] = `
     >
       <img
         alt="example"
-        src="./assets/ios-vertical.png"
+        src="./files/ios-vertical.png"
       />
     </div>
   </div>
