@@ -9,7 +9,7 @@ describe('video', () => {
     let tree;
 
     beforeEach(() => {
-      window.matchMedia = jest.fn().mockImplementation(query => {
+      window.matchMedia = jest.fn().mockImplementation((query) => {
         return {
           matches: false,
           media: query,
@@ -35,7 +35,7 @@ describe('video', () => {
     let tree;
 
     beforeEach(() => {
-      window.matchMedia = jest.fn().mockImplementation(query => {
+      window.matchMedia = jest.fn().mockImplementation((query) => {
         return {
           matches: true,
           media: query,

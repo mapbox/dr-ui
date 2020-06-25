@@ -60,7 +60,7 @@ class SectionedNavigationSection extends React.Component {
     if (props.hideSubItems) {
       return null;
     }
-    const items = this.props.items.map(item => {
+    const items = this.props.items.map((item) => {
       return (
         <a
           key={item.url}

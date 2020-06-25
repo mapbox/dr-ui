@@ -1,6 +1,6 @@
 # @mapbox/dr-ui
 
-[![Build Status](https://travis-ci.com/mapbox/dr-ui.svg?branch=master)](https://travis-ci.com/mapbox/dr-ui)
+[![Build Status](https://travis-ci.com/mapbox/dr-ui.svg?branch=main)](https://travis-ci.com/mapbox/dr-ui)
 
 Pronounced "Doctor UI". **D**ocumentation **R**eact **UI** components. See [@mapbox/mr-ui](https://github.com/mapbox/mr-ui).
 
@@ -27,7 +27,7 @@ import Card from '@mapbox/dr-ui/card';
 import BackToTopButton from '@mapbox/dr-ui/back-to-top-button';
 ```
 
-Only the component itself and whatever *it* depends on will be drawn into your bundle.
+Only the component itself and whatever _it_ depends on will be drawn into your bundle.
 
 ## Development
 

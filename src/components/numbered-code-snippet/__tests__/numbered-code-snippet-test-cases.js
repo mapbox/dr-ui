@@ -63,7 +63,10 @@ testCases.noCollapse = {
     highlightedCode: highlightSwift(code),
     maxHeight: 450,
     highlightThemeCss: highlightThemeCss,
-    copyRanges: [[21, 23], [38, 38]],
+    copyRanges: [
+      [21, 23],
+      [38, 38]
+    ],
     onCopy: () => {}
   }
 };

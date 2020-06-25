@@ -71,7 +71,7 @@ describe('search', () => {
     });
 
     test('input element exists', () => {
-      visit(tree, 'input', node => {
+      visit(tree, 'input', (node) => {
         expect(node.type).toBe('input');
       });
     });
@@ -93,7 +93,7 @@ describe('search', () => {
     });
 
     test('title element exists [a11y]', () => {
-      visit(tree, 'title', node => {
+      visit(tree, 'title', (node) => {
         expect(node.children[0]).toBe('Search');
       });
     });

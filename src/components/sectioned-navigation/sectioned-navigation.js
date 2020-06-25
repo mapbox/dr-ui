@@ -32,7 +32,7 @@ class SectionedNavigation extends React.Component {
     return (
       <div className="mb3">
         <ControlText
-          onChange={e => this.setState({ filter: e }, this.filterResults)}
+          onChange={(e) => this.setState({ filter: e }, this.filterResults)}
           value={this.state.filter}
           id="filter"
           type="text"
@@ -49,8 +49,8 @@ class SectionedNavigation extends React.Component {
 
     const filter = this.state.filter.toLowerCase().trim();
     const visibleSections = this.props.sections
-      .filter(section => {
-        const matchedItems = section.items.filter(item => {
+      .filter((section) => {
+        const matchedItems = section.items.filter((item) => {
           return (
             item.text.toLowerCase().indexOf(filter) > -1 ||
             (item.description && item.description.indexOf(filter) > -1)
@@ -58,8 +58,8 @@ class SectionedNavigation extends React.Component {
         });
         return matchedItems.length > 0;
       })
-      .map(filteredSection => {
-        const filteredItems = filteredSection.items.filter(item => {
+      .map((filteredSection) => {
+        const filteredItems = filteredSection.items.filter((item) => {
           return (
             item.text.toLowerCase().indexOf(filter) > -1 ||
             (item.description && item.description.indexOf(filter) > -1)
