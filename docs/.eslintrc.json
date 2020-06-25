@@ -1,0 +1,7 @@
+{
+  "extends": ["../conf/eslint-config-base.json", "@mapbox/eslint-config-docs"],
+  "rules": {
+    "es/no-object-assign": "off",
+    "react/prop-types": "off"
+  }
+}

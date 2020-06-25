@@ -1,16 +1,11 @@
-import GlossaryCard from '../glossary-card';
+import React from 'react';
+import Basic from '../examples/basic';
 
 const testCases = {};
 
 testCases.basic = {
-  component: GlossaryCard,
   description: 'Basic',
-  props: {
-    entryUrl: '#donut',
-    entryTitle: 'Donut',
-    entryDescription:
-      'A delicious fried dough treat typically shaped as a circle with a hole in the middle.'
-  }
+  element: <Basic />
 };
 
 export { testCases };

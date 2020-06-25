@@ -6,16 +6,14 @@ import PageLayout from '../../page-layout/page-layout';
 import NavigationAccordion from '../../navigation-accordion/navigation-accordion';
 import Topbar from '../../topbar/topbar';
 import TabList from '@mapbox/mr-ui/tab-list';
+import Basic from '../examples/basic';
+import Beta from '../examples/beta';
 
 const testCases = {};
 
-testCases.mapboxMenu = {
-  component: ProductMenu,
-  description: 'Mapbox product menu',
-  props: {
-    productName: 'Mapbox product names',
-    homePage: '/api-documentation/'
-  }
+testCases.basic = {
+  description: 'Basic',
+  element: <Basic />
 };
 
 testCases.locationMenu = {
@@ -50,13 +48,8 @@ testCases.customStyle = {
 };
 
 testCases.beta = {
-  component: ProductMenu,
   description: 'Beta product',
-  props: {
-    productName: 'Vision SDK for Android',
-    tag: 'beta',
-    homePage: '/vision/'
-  }
+  element: <Beta />
 };
 
 testCases.betaLong = {

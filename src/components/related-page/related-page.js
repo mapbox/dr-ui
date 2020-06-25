@@ -114,14 +114,10 @@ class RelatedPage extends React.Component {
         <a
           onClick={showVideoModal ? this.handleClick : undefined}
           href={showVideoModal ? undefined : props.url}
-          className={`unprose block cursor-pointer color-${theme.color} color-${
-            theme.color
-          }-dark-on-hover transition mb18`}
+          className={`unprose block cursor-pointer color-${theme.color} color-${theme.color}-dark-on-hover transition mb18`}
         >
           <div
-            className={`round flex-parent flex-parent--stretch-cross border border--${
-              theme.color
-            }-light border--${theme.color}-dark-on-hover border--2 transition`}
+            className={`round flex-parent flex-parent--stretch-cross border border--${theme.color}-light border--${theme.color}-dark-on-hover border--2 transition`}
           >
             <div
               className="flex-child flex-child--grow px18 pt30 pb18"

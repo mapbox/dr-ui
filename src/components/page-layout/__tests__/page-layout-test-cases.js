@@ -1,19 +1,13 @@
 import React from 'react';
 import PageLayout from '../page-layout';
 import NavigationAccordion from '../../navigation-accordion/navigation-accordion';
+import Basic from '../examples/basic';
 
 const testCases = {};
 
 testCases.basic = {
   description: 'Basic',
-  component: PageLayout,
-  props: {
-    sidebarContent: <div>Some content</div>,
-    sidebarTitle: 'Some title',
-    sidebarContentStickyTop: 0,
-    sidebarContentStickyTopNarrow: 0,
-    children: <div>Doc content</div>
-  }
+  element: <Basic />
 };
 
 testCases.smallSidebarCol = {

@@ -12,22 +12,6 @@ exports[`code-snippet-title Basic renders as expected 1`] = `
     >
       MainActivity.java
     </div>
-  </div>
-</div>
-`;
-
-exports[`code-snippet-title With a link renders as expected 1`] = `
-<div
-  className="flex-parent-mm flex-parent--space-between-main-mm mb6"
->
-  <div
-    className="flex-child"
-  >
-    <div
-      className="inline-block txt-bold mb6 color-gray-dark"
-    >
-      MainActivity.java
-    </div>
     <div
       className="inline-block ml12-mm"
     >
