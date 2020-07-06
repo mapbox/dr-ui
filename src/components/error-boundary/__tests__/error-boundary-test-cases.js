@@ -1,6 +1,5 @@
 import React from 'react';
 import Basic from '../examples/basic';
-import Oops from '../examples/oops';
 import ErrorBoundary from '../error-boundary';
 
 const testCases = {};
@@ -10,9 +9,18 @@ testCases.basic = {
   element: <Basic />
 };
 
+const BadFunction = () => {};
+
 testCases.oops = {
+  description: 'Trigger error',
   component: ErrorBoundary,
-  element: <Oops />
+  props: {
+    children: (
+      <div>
+        My cool website <BadFunction />
+      </div>
+    )
+  }
 };
 
 export { testCases };
