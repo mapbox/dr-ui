@@ -1,5 +1,5 @@
 /*
-"example" layout, index page (has navOrder in frontmatter)
+"example" layout, interior page.
 */
 import React from 'react';
 import PageLayout from '../page-layout';
@@ -32,8 +32,7 @@ export default class Basic extends React.Component {
         frontMatter={{
           title: 'Examples',
           layout: 'example',
-          description: 'Lots of handy examples.',
-          navOrder: 1
+          description: 'Lots of handy examples.'
         }}
         AppropriateImage={AppropriateImage}
         navigation={{
