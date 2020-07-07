@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`buildToc 1`] = `
+Array [
+  <li
+    className="pb6"
+  >
+    <a
+      className="color-blue-on-hover"
+      href="#heading-1"
+    >
+      Heading 1
+    </a>
+  </li>,
+  <li
+    className="mb6 color-gray"
+  >
+    <a
+      className="color-blue-on-hover"
+      href="#heading-a"
+    >
+      Heading a
+    </a>
+  </li>,
+  <li
+    className="mb6 color-gray"
+  >
+    <a
+      className="color-blue-on-hover"
+      href="#heading-b"
+    >
+      Heading b
+    </a>
+  </li>,
+  <li
+    className="mb6 color-gray mb24"
+  >
+    <a
+      className="color-blue-on-hover"
+      href="#heading-c"
+    >
+      Heading c
+    </a>
+  </li>,
+  <li
+    className="pb6"
+  >
+    <a
+      className="color-blue-on-hover"
+      href="#heading-2"
+    >
+      Heading 2
+    </a>
+  </li>,
+  <li
+    className="mb6 color-gray"
+  >
+    <a
+      className="color-blue-on-hover"
+      href="#heading-a-1"
+    >
+      Heading a
+    </a>
+  </li>,
+  <li
+    className="mb6 color-gray"
+  >
+    <a
+      className="color-blue-on-hover"
+      href="#heading-b-1"
+    >
+      Heading b
+    </a>
+  </li>,
+  <li
+    className="mb6 color-gray"
+  >
+    <a
+      className="color-blue-on-hover"
+      href="#heading-c-1"
+    >
+      Heading c
+    </a>
+  </li>,
+]
+`;

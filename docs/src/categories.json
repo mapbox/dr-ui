@@ -25,6 +25,7 @@
     "ToggleableCodeBlock"
   ],
   "Layout": [
+    "PageLayout",
     "BackToTopButton",
     "GlossaryCard",
     "GlossaryImage",

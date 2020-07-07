@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`buildSecondLevel Deeply nested 1`] = `
+Array [
+  Object {
+    "path": "heading-2a",
+    "thirdLevelItems": Array [],
+    "title": "Heading 2a",
+  },
+  Object {
+    "path": "heading-2b",
+    "thirdLevelItems": Array [
+      Object {
+        "path": "heading-2b3a",
+        "title": "Heading 2b.3a",
+      },
+      Object {
+        "path": "heading-2b3b",
+        "title": "Heading 2b.3b",
+      },
+      Object {
+        "path": "heading-2b3c",
+        "title": "Heading 2b.3c",
+      },
+    ],
+    "title": "Heading 2b",
+  },
+  Object {
+    "path": "heading-2c",
+    "thirdLevelItems": Array [],
+    "title": "Heading 2c",
+  },
+  Object {
+    "path": "heading-2d",
+    "thirdLevelItems": Array [
+      Object {
+        "path": "heading-2d3a",
+        "title": "Heading 2d.3a",
+      },
+      Object {
+        "path": "heading-2d3b",
+        "title": "Heading 2d.3b",
+      },
+    ],
+    "title": "Heading 2d",
+  },
+  Object {
+    "path": "heading-2d-1",
+    "thirdLevelItems": Array [],
+    "title": "Heading 2d",
+  },
+]
+`;
+
+exports[`buildSecondLevel Simple 1`] = `
+Array [
+  Object {
+    "path": "how-to-use-this-repository",
+    "thirdLevelItems": Array [],
+    "title": "How to use this repository",
+  },
+  Object {
+    "path": "links",
+    "thirdLevelItems": Array [],
+    "title": "Links",
+  },
+]
+`;
+
+exports[`buildSecondLevel With headings (api-documentation) 1`] = `
+Array [
+  Object {
+    "path": "tokens",
+    "thirdLevelItems": Array [
+      Object {
+        "path": "token-format",
+        "title": "Token format",
+      },
+      Object {
+        "path": "token-metadata-object",
+        "title": "Token metadata object",
+      },
+      Object {
+        "path": "list-tokens",
+        "title": "List tokens",
+      },
+      Object {
+        "path": "create-a-token",
+        "title": "Create a token",
+      },
+      Object {
+        "path": "create-a-temporary-token",
+        "title": "Create a temporary token",
+      },
+      Object {
+        "path": "update-a-token",
+        "title": "Update a token",
+      },
+      Object {
+        "path": "delete-a-token",
+        "title": "Delete a token",
+      },
+      Object {
+        "path": "retrieve-a-token",
+        "title": "Retrieve a token",
+      },
+      Object {
+        "path": "list-scopes",
+        "title": "List scopes",
+      },
+      Object {
+        "path": "tokens-api-errors",
+        "title": "Tokens API errors",
+      },
+      Object {
+        "path": "tokens-api-restrictions-and-limits",
+        "title": "Tokens API restrictions and limits",
+      },
+    ],
+    "title": "Tokens",
+  },
+]
+`;
