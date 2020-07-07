@@ -40,7 +40,8 @@
     "TopbarSticker",
     "Card",
     "CardContainer",
-    "ExamplesPage"
+    "ExamplesPage",
+    "AnalyticsShell"
   ],
   "Images": [
     "BookImage",
