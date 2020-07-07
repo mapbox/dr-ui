@@ -1,5 +1,5 @@
 import React from 'react';
-import Page from '../examples/page';
+import Page from '../examples/basic';
 import Example from '../examples/example';
 
 const testCases = {};
