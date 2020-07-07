@@ -1,0 +1,723 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`buildNavigation multi structure 1`] = `
+Object {
+  "beta/navigation": Object {
+    "accordion": Object {
+      "/docs-starter-kit/beta/navigation/overview/": Array [
+        Object {
+          "path": "/docs-starter-kit/beta/navigation/overview/",
+          "title": "Overview",
+        },
+        Object {
+          "path": "/docs-starter-kit/beta/navigation/overview/layouts/",
+          "title": "Layouts",
+        },
+        Object {
+          "path": "/docs-starter-kit/beta/navigation/overview/navigation/",
+          "title": "Navigation",
+        },
+        Object {
+          "path": "/docs-starter-kit/beta/navigation/overview/images/",
+          "title": "Images and videos",
+        },
+        Object {
+          "path": "/docs-starter-kit/beta/navigation/overview/constants/",
+          "title": "Constants",
+        },
+        Object {
+          "path": "/docs-starter-kit/beta/navigation/overview/frontmatter/",
+          "tag": "fundamentals",
+          "title": "Frontmatter",
+        },
+      ],
+    },
+    "navTabs": Array [
+      Object {
+        "href": "/docs-starter-kit/beta/navigation/overview/",
+        "id": "/docs-starter-kit/beta/navigation/overview/",
+        "label": "Overview",
+      },
+      Object {
+        "href": "/docs-starter-kit/beta/navigation/specification/",
+        "id": "/docs-starter-kit/beta/navigation/specification/",
+        "label": "Specification",
+      },
+      Object {
+        "href": "/docs-starter-kit/beta/navigation/examples/",
+        "id": "/docs-starter-kit/beta/navigation/examples/",
+        "label": "Examples",
+      },
+    ],
+    "path": "beta/navigation",
+    "title": "Beta Navigation SDK for iOS",
+  },
+  "hierarchy": Object {
+    "/docs-starter-kit/beta/navigation/examples/": Object {
+      "parent": "/docs-starter-kit/beta/navigation/examples/",
+      "section": Object {
+        "path": "beta/navigation",
+        "title": "Beta Navigation SDK for iOS",
+      },
+      "title": "Examples",
+    },
+    "/docs-starter-kit/beta/navigation/examples/example-1/": Object {
+      "parent": "/docs-starter-kit/beta/navigation/examples/",
+      "section": Object {
+        "path": "beta/navigation",
+        "title": "Beta Navigation SDK for iOS",
+      },
+      "title": "Examples",
+    },
+    "/docs-starter-kit/beta/navigation/examples/example-2/": Object {
+      "parent": "/docs-starter-kit/beta/navigation/examples/",
+      "section": Object {
+        "path": "beta/navigation",
+        "title": "Beta Navigation SDK for iOS",
+      },
+      "title": "Examples",
+    },
+    "/docs-starter-kit/beta/navigation/examples/example-3/": Object {
+      "parent": "/docs-starter-kit/beta/navigation/examples/",
+      "section": Object {
+        "path": "beta/navigation",
+        "title": "Beta Navigation SDK for iOS",
+      },
+      "title": "Examples",
+    },
+    "/docs-starter-kit/beta/navigation/overview/": Object {
+      "parent": "/docs-starter-kit/beta/navigation/overview/",
+      "section": Object {
+        "path": "beta/navigation",
+        "title": "Beta Navigation SDK for iOS",
+      },
+      "title": "Overview",
+    },
+    "/docs-starter-kit/beta/navigation/overview/constants/": Object {
+      "parent": "/docs-starter-kit/beta/navigation/overview/",
+      "section": Object {
+        "path": "beta/navigation",
+        "title": "Beta Navigation SDK for iOS",
+      },
+      "title": "Overview",
+    },
+    "/docs-starter-kit/beta/navigation/overview/frontmatter/": Object {
+      "parent": "/docs-starter-kit/beta/navigation/overview/",
+      "section": Object {
+        "path": "beta/navigation",
+        "title": "Beta Navigation SDK for iOS",
+      },
+      "title": "Overview",
+    },
+    "/docs-starter-kit/beta/navigation/overview/images/": Object {
+      "parent": "/docs-starter-kit/beta/navigation/overview/",
+      "section": Object {
+        "path": "beta/navigation",
+        "title": "Beta Navigation SDK for iOS",
+      },
+      "title": "Overview",
+    },
+    "/docs-starter-kit/beta/navigation/overview/layouts/": Object {
+      "parent": "/docs-starter-kit/beta/navigation/overview/",
+      "section": Object {
+        "path": "beta/navigation",
+        "title": "Beta Navigation SDK for iOS",
+      },
+      "title": "Overview",
+    },
+    "/docs-starter-kit/beta/navigation/overview/navigation/": Object {
+      "parent": "/docs-starter-kit/beta/navigation/overview/",
+      "section": Object {
+        "path": "beta/navigation",
+        "title": "Beta Navigation SDK for iOS",
+      },
+      "title": "Overview",
+    },
+    "/docs-starter-kit/beta/navigation/specification/": Object {
+      "parent": "/docs-starter-kit/beta/navigation/specification/",
+      "section": Object {
+        "path": "beta/navigation",
+        "title": "Beta Navigation SDK for iOS",
+      },
+      "title": "Specification",
+    },
+    "/docs-starter-kit/maps/examples/": Object {
+      "parent": "/docs-starter-kit/maps/examples/",
+      "section": Object {
+        "path": "maps",
+        "title": "Maps SDK for iOS",
+      },
+      "title": "Examples",
+    },
+    "/docs-starter-kit/maps/examples/example-1/": Object {
+      "parent": "/docs-starter-kit/maps/examples/",
+      "section": Object {
+        "path": "maps",
+        "title": "Maps SDK for iOS",
+      },
+      "title": "Examples",
+    },
+    "/docs-starter-kit/maps/examples/example-2/": Object {
+      "parent": "/docs-starter-kit/maps/examples/",
+      "section": Object {
+        "path": "maps",
+        "title": "Maps SDK for iOS",
+      },
+      "title": "Examples",
+    },
+    "/docs-starter-kit/maps/examples/example-3/": Object {
+      "parent": "/docs-starter-kit/maps/examples/",
+      "section": Object {
+        "path": "maps",
+        "title": "Maps SDK for iOS",
+      },
+      "title": "Examples",
+    },
+    "/docs-starter-kit/maps/overview/": Object {
+      "parent": "/docs-starter-kit/maps/overview/",
+      "section": Object {
+        "path": "maps",
+        "title": "Maps SDK for iOS",
+      },
+      "title": "Overview",
+    },
+    "/docs-starter-kit/maps/overview/constants/": Object {
+      "parent": "/docs-starter-kit/maps/overview/",
+      "section": Object {
+        "path": "maps",
+        "title": "Maps SDK for iOS",
+      },
+      "title": "Overview",
+    },
+    "/docs-starter-kit/maps/overview/frontmatter/": Object {
+      "parent": "/docs-starter-kit/maps/overview/",
+      "section": Object {
+        "path": "maps",
+        "title": "Maps SDK for iOS",
+      },
+      "title": "Overview",
+    },
+    "/docs-starter-kit/maps/overview/images/": Object {
+      "parent": "/docs-starter-kit/maps/overview/",
+      "section": Object {
+        "path": "maps",
+        "title": "Maps SDK for iOS",
+      },
+      "title": "Overview",
+    },
+    "/docs-starter-kit/maps/overview/layouts/": Object {
+      "parent": "/docs-starter-kit/maps/overview/",
+      "section": Object {
+        "path": "maps",
+        "title": "Maps SDK for iOS",
+      },
+      "title": "Overview",
+    },
+    "/docs-starter-kit/maps/overview/navigation/": Object {
+      "parent": "/docs-starter-kit/maps/overview/",
+      "section": Object {
+        "path": "maps",
+        "title": "Maps SDK for iOS",
+      },
+      "title": "Overview",
+    },
+    "/docs-starter-kit/maps/specification/": Object {
+      "parent": "/docs-starter-kit/maps/specification/",
+      "section": Object {
+        "path": "maps",
+        "title": "Maps SDK for iOS",
+      },
+      "title": "Specification",
+    },
+    "/docs-starter-kit/navigation/examples/": Object {
+      "parent": "/docs-starter-kit/navigation/examples/",
+      "section": Object {
+        "path": "navigation",
+        "title": "Navigation SDK for iOS",
+      },
+      "title": "Examples",
+    },
+    "/docs-starter-kit/navigation/examples/example-1/": Object {
+      "parent": "/docs-starter-kit/navigation/examples/",
+      "section": Object {
+        "path": "navigation",
+        "title": "Navigation SDK for iOS",
+      },
+      "title": "Examples",
+    },
+    "/docs-starter-kit/navigation/examples/example-2/": Object {
+      "parent": "/docs-starter-kit/navigation/examples/",
+      "section": Object {
+        "path": "navigation",
+        "title": "Navigation SDK for iOS",
+      },
+      "title": "Examples",
+    },
+    "/docs-starter-kit/navigation/examples/example-3/": Object {
+      "parent": "/docs-starter-kit/navigation/examples/",
+      "section": Object {
+        "path": "navigation",
+        "title": "Navigation SDK for iOS",
+      },
+      "title": "Examples",
+    },
+    "/docs-starter-kit/navigation/overview/": Object {
+      "parent": "/docs-starter-kit/navigation/overview/",
+      "section": Object {
+        "path": "navigation",
+        "title": "Navigation SDK for iOS",
+      },
+      "title": "Overview",
+    },
+    "/docs-starter-kit/navigation/overview/constants/": Object {
+      "parent": "/docs-starter-kit/navigation/overview/",
+      "section": Object {
+        "path": "navigation",
+        "title": "Navigation SDK for iOS",
+      },
+      "title": "Overview",
+    },
+    "/docs-starter-kit/navigation/overview/frontmatter/": Object {
+      "parent": "/docs-starter-kit/navigation/overview/",
+      "section": Object {
+        "path": "navigation",
+        "title": "Navigation SDK for iOS",
+      },
+      "title": "Overview",
+    },
+    "/docs-starter-kit/navigation/overview/images/": Object {
+      "parent": "/docs-starter-kit/navigation/overview/",
+      "section": Object {
+        "path": "navigation",
+        "title": "Navigation SDK for iOS",
+      },
+      "title": "Overview",
+    },
+    "/docs-starter-kit/navigation/overview/layouts/": Object {
+      "parent": "/docs-starter-kit/navigation/overview/",
+      "section": Object {
+        "path": "navigation",
+        "title": "Navigation SDK for iOS",
+      },
+      "title": "Overview",
+    },
+    "/docs-starter-kit/navigation/overview/navigation/": Object {
+      "parent": "/docs-starter-kit/navigation/overview/",
+      "section": Object {
+        "path": "navigation",
+        "title": "Navigation SDK for iOS",
+      },
+      "title": "Overview",
+    },
+    "/docs-starter-kit/navigation/specification/": Object {
+      "parent": "/docs-starter-kit/navigation/specification/",
+      "section": Object {
+        "path": "navigation",
+        "title": "Navigation SDK for iOS",
+      },
+      "title": "Specification",
+    },
+    "/docs-starter-kit/vision/examples/": Object {
+      "parent": "/docs-starter-kit/vision/examples/",
+      "section": Object {
+        "path": "vision",
+        "title": "Vision SDK for iOS",
+      },
+      "title": "Examples",
+    },
+    "/docs-starter-kit/vision/examples/example-1/": Object {
+      "parent": "/docs-starter-kit/vision/examples/",
+      "section": Object {
+        "path": "vision",
+        "title": "Vision SDK for iOS",
+      },
+      "title": "Examples",
+    },
+    "/docs-starter-kit/vision/examples/example-2/": Object {
+      "parent": "/docs-starter-kit/vision/examples/",
+      "section": Object {
+        "path": "vision",
+        "title": "Vision SDK for iOS",
+      },
+      "title": "Examples",
+    },
+    "/docs-starter-kit/vision/examples/example-3/": Object {
+      "parent": "/docs-starter-kit/vision/examples/",
+      "section": Object {
+        "path": "vision",
+        "title": "Vision SDK for iOS",
+      },
+      "title": "Examples",
+    },
+    "/docs-starter-kit/vision/overview/": Object {
+      "parent": "/docs-starter-kit/vision/overview/",
+      "section": Object {
+        "path": "vision",
+        "title": "Vision SDK for iOS",
+      },
+      "title": "Overview",
+    },
+    "/docs-starter-kit/vision/overview/constants/": Object {
+      "parent": "/docs-starter-kit/vision/overview/",
+      "section": Object {
+        "path": "vision",
+        "title": "Vision SDK for iOS",
+      },
+      "title": "Overview",
+    },
+    "/docs-starter-kit/vision/overview/frontmatter/": Object {
+      "parent": "/docs-starter-kit/vision/overview/",
+      "section": Object {
+        "path": "vision",
+        "title": "Vision SDK for iOS",
+      },
+      "title": "Overview",
+    },
+    "/docs-starter-kit/vision/overview/images/": Object {
+      "parent": "/docs-starter-kit/vision/overview/",
+      "section": Object {
+        "path": "vision",
+        "title": "Vision SDK for iOS",
+      },
+      "title": "Overview",
+    },
+    "/docs-starter-kit/vision/overview/layouts/": Object {
+      "parent": "/docs-starter-kit/vision/overview/",
+      "section": Object {
+        "path": "vision",
+        "title": "Vision SDK for iOS",
+      },
+      "title": "Overview",
+    },
+    "/docs-starter-kit/vision/overview/navigation/": Object {
+      "parent": "/docs-starter-kit/vision/overview/",
+      "section": Object {
+        "path": "vision",
+        "title": "Vision SDK for iOS",
+      },
+      "title": "Overview",
+    },
+    "/docs-starter-kit/vision/specification/": Object {
+      "parent": "/docs-starter-kit/vision/specification/",
+      "section": Object {
+        "path": "vision",
+        "title": "Vision SDK for iOS",
+      },
+      "title": "Specification",
+    },
+  },
+  "maps": Object {
+    "accordion": Object {
+      "/docs-starter-kit/maps/overview/": Array [
+        Object {
+          "path": "/docs-starter-kit/maps/overview/",
+          "title": "Overview",
+        },
+        Object {
+          "path": "/docs-starter-kit/maps/overview/layouts/",
+          "title": "Layouts",
+        },
+        Object {
+          "path": "/docs-starter-kit/maps/overview/navigation/",
+          "title": "Navigation",
+        },
+        Object {
+          "path": "/docs-starter-kit/maps/overview/images/",
+          "title": "Images and videos",
+        },
+        Object {
+          "path": "/docs-starter-kit/maps/overview/constants/",
+          "title": "Constants",
+        },
+        Object {
+          "path": "/docs-starter-kit/maps/overview/frontmatter/",
+          "tag": "fundamentals",
+          "title": "Frontmatter",
+        },
+      ],
+    },
+    "navTabs": Array [
+      Object {
+        "href": "/docs-starter-kit/maps/overview/",
+        "id": "/docs-starter-kit/maps/overview/",
+        "label": "Overview",
+      },
+      Object {
+        "href": "/docs-starter-kit/maps/specification/",
+        "id": "/docs-starter-kit/maps/specification/",
+        "label": "Specification",
+      },
+      Object {
+        "href": "/docs-starter-kit/maps/examples/",
+        "id": "/docs-starter-kit/maps/examples/",
+        "label": "Examples",
+      },
+      Object {
+        "href": "/ios/api/maps/5.9.0/index.html",
+        "id": "API-Reference",
+        "items": Array [
+          Object {
+            "href": "/ios/api/maps/5.9.0/index.html",
+            "latest": true,
+            "title": "5.9.0",
+          },
+          Object {
+            "href": "/ios/api/maps/5.8.0/index.html",
+            "latest": false,
+            "title": "5.8.0",
+          },
+          Object {
+            "href": "/ios/api/maps/5.7.0/index.html",
+            "latest": false,
+            "title": "5.7.0",
+          },
+          Object {
+            "href": "/ios/api/maps/5.6.0/index.html",
+            "latest": false,
+            "title": "5.6.0",
+          },
+          Object {
+            "href": "/ios/api/maps/5.5.0/index.html",
+            "latest": false,
+            "title": "5.5.0",
+          },
+          Object {
+            "href": "/ios/api/maps/5.4.0/index.html",
+            "latest": false,
+            "title": "5.4.0",
+          },
+          Object {
+            "href": "/ios/api/maps/5.3.0/index.html",
+            "latest": false,
+            "title": "5.3.0",
+          },
+          Object {
+            "href": "/ios/api/maps/5.2.0/index.html",
+            "latest": false,
+            "title": "5.2.0",
+          },
+          Object {
+            "href": "/ios/api/maps/5.1.0/index.html",
+            "latest": false,
+            "title": "5.1.0",
+          },
+          Object {
+            "href": "/ios/api/maps/5.0.0/index.html",
+            "latest": false,
+            "title": "5.0.0",
+          },
+        ],
+        "label": "API Reference",
+      },
+    ],
+    "path": "maps",
+    "title": "Maps SDK for iOS",
+  },
+  "navigation": Object {
+    "accordion": Object {
+      "/docs-starter-kit/navigation/overview/": Array [
+        Object {
+          "path": "/docs-starter-kit/navigation/overview/",
+          "title": "Overview",
+        },
+        Object {
+          "path": "/docs-starter-kit/navigation/overview/layouts/",
+          "title": "Layouts",
+        },
+        Object {
+          "path": "/docs-starter-kit/navigation/overview/navigation/",
+          "title": "Navigation",
+        },
+        Object {
+          "path": "/docs-starter-kit/navigation/overview/images/",
+          "title": "Images and videos",
+        },
+        Object {
+          "path": "/docs-starter-kit/navigation/overview/constants/",
+          "title": "Constants",
+        },
+        Object {
+          "path": "/docs-starter-kit/navigation/overview/frontmatter/",
+          "tag": "fundamentals",
+          "title": "Frontmatter",
+        },
+      ],
+    },
+    "navTabs": Array [
+      Object {
+        "href": "/docs-starter-kit/navigation/overview/",
+        "id": "/docs-starter-kit/navigation/overview/",
+        "label": "Overview",
+      },
+      Object {
+        "href": "/docs-starter-kit/navigation/specification/",
+        "id": "/docs-starter-kit/navigation/specification/",
+        "label": "Specification",
+      },
+      Object {
+        "href": "/docs-starter-kit/navigation/examples/",
+        "id": "/docs-starter-kit/navigation/examples/",
+        "label": "Examples",
+      },
+    ],
+    "path": "navigation",
+    "title": "Navigation SDK for iOS",
+  },
+  "vision": Object {
+    "accordion": Object {
+      "/docs-starter-kit/vision/overview/": Array [
+        Object {
+          "path": "/docs-starter-kit/vision/overview/",
+          "title": "Overview",
+        },
+        Object {
+          "path": "/docs-starter-kit/vision/overview/layouts/",
+          "title": "Layouts",
+        },
+        Object {
+          "path": "/docs-starter-kit/vision/overview/navigation/",
+          "title": "Navigation",
+        },
+        Object {
+          "path": "/docs-starter-kit/vision/overview/images/",
+          "title": "Images and videos",
+        },
+        Object {
+          "path": "/docs-starter-kit/vision/overview/constants/",
+          "title": "Constants",
+        },
+        Object {
+          "path": "/docs-starter-kit/vision/overview/frontmatter/",
+          "tag": "fundamentals",
+          "title": "Frontmatter",
+        },
+      ],
+    },
+    "navTabs": Array [
+      Object {
+        "href": "/docs-starter-kit/vision/overview/",
+        "id": "/docs-starter-kit/vision/overview/",
+        "label": "Overview",
+      },
+      Object {
+        "href": "/docs-starter-kit/vision/specification/",
+        "id": "/docs-starter-kit/vision/specification/",
+        "label": "Specification",
+      },
+      Object {
+        "href": "/docs-starter-kit/vision/examples/",
+        "id": "/docs-starter-kit/vision/examples/",
+        "label": "Examples",
+      },
+    ],
+    "path": "vision",
+    "title": "Vision SDK for iOS",
+  },
+}
+`;
+
+exports[`buildNavigation single structure 1`] = `
+Object {
+  "accordion": Object {
+    "/docs-starter-kit/overview/": Array [
+      Object {
+        "path": "/docs-starter-kit/overview/",
+        "title": "Overview",
+      },
+      Object {
+        "path": "/docs-starter-kit/overview/layouts/",
+        "title": "Layouts",
+      },
+      Object {
+        "path": "/docs-starter-kit/overview/navigation/",
+        "title": "Navigation",
+      },
+      Object {
+        "path": "/docs-starter-kit/overview/images/",
+        "title": "Images and videos",
+      },
+      Object {
+        "path": "/docs-starter-kit/overview/constants/",
+        "title": "Constants",
+      },
+      Object {
+        "path": "/docs-starter-kit/overview/frontmatter/",
+        "tag": "fundamentals",
+        "title": "Frontmatter",
+      },
+    ],
+  },
+  "hierarchy": Object {
+    "/docs-starter-kit/demo/": Object {
+      "parent": "/docs-starter-kit/demo/",
+      "title": "Demo",
+    },
+    "/docs-starter-kit/examples/": Object {
+      "parent": "/docs-starter-kit/examples/",
+      "title": "Examples",
+    },
+    "/docs-starter-kit/examples/example-1/": Object {
+      "parent": "/docs-starter-kit/examples/",
+      "title": "Examples",
+    },
+    "/docs-starter-kit/examples/example-2/": Object {
+      "parent": "/docs-starter-kit/examples/",
+      "title": "Examples",
+    },
+    "/docs-starter-kit/examples/example-3/": Object {
+      "parent": "/docs-starter-kit/examples/",
+      "title": "Examples",
+    },
+    "/docs-starter-kit/overview/": Object {
+      "parent": "/docs-starter-kit/overview/",
+      "title": "Overview",
+    },
+    "/docs-starter-kit/overview/constants/": Object {
+      "parent": "/docs-starter-kit/overview/",
+      "title": "Overview",
+    },
+    "/docs-starter-kit/overview/frontmatter/": Object {
+      "parent": "/docs-starter-kit/overview/",
+      "title": "Overview",
+    },
+    "/docs-starter-kit/overview/images/": Object {
+      "parent": "/docs-starter-kit/overview/",
+      "title": "Overview",
+    },
+    "/docs-starter-kit/overview/layouts/": Object {
+      "parent": "/docs-starter-kit/overview/",
+      "title": "Overview",
+    },
+    "/docs-starter-kit/overview/navigation/": Object {
+      "parent": "/docs-starter-kit/overview/",
+      "title": "Overview",
+    },
+    "/docs-starter-kit/specification/": Object {
+      "parent": "/docs-starter-kit/specification/",
+      "title": "Specification",
+    },
+  },
+  "navTabs": Array [
+    Object {
+      "href": "/docs-starter-kit/overview/",
+      "id": "/docs-starter-kit/overview/",
+      "label": "Overview",
+    },
+    Object {
+      "href": "/docs-starter-kit/specification/",
+      "id": "/docs-starter-kit/specification/",
+      "label": "Specification",
+    },
+    Object {
+      "href": "/docs-starter-kit/examples/",
+      "id": "/docs-starter-kit/examples/",
+      "label": "Examples",
+    },
+    Object {
+      "href": "/docs-starter-kit/demo/",
+      "id": "/docs-starter-kit/demo/",
+      "label": "Demo",
+    },
+  ],
+}
+`;

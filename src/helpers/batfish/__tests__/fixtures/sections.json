@@ -1,0 +1,74 @@
+[
+  {
+    "path": "maps",
+    "title": "Maps SDK for iOS",
+    "dropdown": {
+      "label": "API Reference",
+      "items": [
+        {
+          "title": "5.9.0",
+          "href": "/ios/api/maps/5.9.0/index.html",
+          "latest": true
+        },
+        {
+          "title": "5.8.0",
+          "href": "/ios/api/maps/5.8.0/index.html",
+          "latest": false
+        },
+        {
+          "title": "5.7.0",
+          "href": "/ios/api/maps/5.7.0/index.html",
+          "latest": false
+        },
+        {
+          "title": "5.6.0",
+          "href": "/ios/api/maps/5.6.0/index.html",
+          "latest": false
+        },
+        {
+          "title": "5.5.0",
+          "href": "/ios/api/maps/5.5.0/index.html",
+          "latest": false
+        },
+        {
+          "title": "5.4.0",
+          "href": "/ios/api/maps/5.4.0/index.html",
+          "latest": false
+        },
+        {
+          "title": "5.3.0",
+          "href": "/ios/api/maps/5.3.0/index.html",
+          "latest": false
+        },
+        {
+          "title": "5.2.0",
+          "href": "/ios/api/maps/5.2.0/index.html",
+          "latest": false
+        },
+        {
+          "title": "5.1.0",
+          "href": "/ios/api/maps/5.1.0/index.html",
+          "latest": false
+        },
+        {
+          "title": "5.0.0",
+          "href": "/ios/api/maps/5.0.0/index.html",
+          "latest": false
+        }
+      ]
+    }
+  },
+  {
+    "path": "navigation",
+    "title": "Navigation SDK for iOS"
+  },
+  {
+    "path": "beta/navigation",
+    "title": "Beta Navigation SDK for iOS",
+    "tag": "beta"
+  },
+  {
+    "path": "vision",
+    "title": "Vision SDK for iOS"
+  }
+]

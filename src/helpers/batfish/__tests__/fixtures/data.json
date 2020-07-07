@@ -1,0 +1,172 @@
+{
+  "pages": [
+    {
+      "filePath": "/docs-starter-kit/src/pages/index.js",
+      "path": "/docs-starter-kit/",
+      "frontMatter": {}
+    },
+    {
+      "filePath": "/docs-starter-kit/src/pages/examples/example-1.md",
+      "path": "/docs-starter-kit/examples/example-1/",
+      "frontMatter": {
+        "title": "Example 1",
+        "description": "Replace me.",
+        "contentType": "example",
+        "language": ["JavaScript"],
+        "topic": ["Cool"],
+        "thumbnail": "header-image",
+        "layout": "example"
+      }
+    },
+    {
+      "filePath": "/docs-starter-kit/src/pages/examples/example-2.md",
+      "path": "/docs-starter-kit/examples/example-2/",
+      "frontMatter": {
+        "title": "Example 2",
+        "description": "Replace me.",
+        "contentType": "example",
+        "language": ["JavaScript"],
+        "topic": ["Cool"],
+        "thumbnail": "header-image",
+        "layout": "example"
+      }
+    },
+    {
+      "filePath": "/docs-starter-kit/src/pages/examples/example-3.md",
+      "path": "/docs-starter-kit/examples/example-3/",
+      "frontMatter": {
+        "title": "Example 3",
+        "description": "Replace me.",
+        "contentType": "example",
+        "language": ["JavaScript"],
+        "topic": ["Cool", "Awesome"],
+        "thumbnail": "header-image",
+        "layout": "example"
+      }
+    },
+    {
+      "filePath": "/docs-starter-kit/src/pages/hidden/index.md",
+      "path": "/docs-starter-kit/hidden/",
+      "frontMatter": {
+        "title": "Hidden page",
+        "description": "You can't see me in the top level navigation.",
+        "contentType": "guide",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/docs-starter-kit/src/pages/examples/index.md",
+      "path": "/docs-starter-kit/examples/",
+      "frontMatter": {
+        "title": "Examples",
+        "description": "Replace me.",
+        "contentType": "example",
+        "language": ["JavaScript"],
+        "navOrder": 3,
+        "layout": "example"
+      }
+    },
+    {
+      "filePath": "/docs-starter-kit/src/pages/demo/index.md",
+      "path": "/docs-starter-kit/demo/",
+      "frontMatter": {
+        "title": "Demo",
+        "description": "Replace me.",
+        "contentType": "reference",
+        "language": ["JavaScript"],
+        "navOrder": 3,
+        "layout": "full"
+      }
+    },
+    {
+      "filePath": "/docs-starter-kit/src/pages/overview/constants.md",
+      "path": "/docs-starter-kit/overview/constants/",
+      "frontMatter": {
+        "title": "Constants",
+        "description": "How to store constants in your repository.",
+        "contentType": "reference",
+        "order": 5,
+        "layout": "accordion"
+      }
+    },
+    {
+      "filePath": "/docs-starter-kit/src/pages/overview/frontmatter.md",
+      "path": "/docs-starter-kit/overview/frontmatter/",
+      "frontMatter": {
+        "title": "Frontmatter",
+        "description": "Learn about all the options for adding data to your page.",
+        "contentType": "guide",
+        "prependJs": ["import Note from '@mapbox/dr-ui/note';"],
+        "order": 6,
+        "beta": ["A beta section"],
+        "tag": "fundamentals",
+        "layout": "accordion"
+      }
+    },
+    {
+      "filePath": "/docs-starter-kit/src/pages/overview/images.md",
+      "path": "/docs-starter-kit/overview/images/",
+      "frontMatter": {
+        "title": "Images and videos",
+        "description": "How to add images, videos, gifs.",
+        "contentType": "reference",
+        "order": 4,
+        "prependJs": [
+          "import AppropriateImage from '../../components/appropriate-image';"
+        ],
+        "layout": "accordion"
+      }
+    },
+    {
+      "filePath": "/docs-starter-kit/src/pages/overview/index.md",
+      "path": "/docs-starter-kit/overview/",
+      "frontMatter": {
+        "title": "Overview",
+        "description": "Set up your site.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import OverviewHeader from '@mapbox/dr-ui/overview-header';",
+          "import AppropriateImage from '../../components/appropriate-image';"
+        ],
+        "layout": "accordion",
+        "order": 1,
+        "navOrder": 1,
+        "contentType": "guide"
+      }
+    },
+    {
+      "filePath": "/docs-starter-kit/src/pages/overview/layouts.md",
+      "path": "/docs-starter-kit/overview/layouts/",
+      "frontMatter": {
+        "title": "Layouts",
+        "description": "Learn about different layout options.",
+        "contentType": "guide",
+        "order": 2,
+        "layout": "accordion"
+      }
+    },
+    {
+      "filePath": "/docs-starter-kit/src/pages/overview/navigation.md",
+      "path": "/docs-starter-kit/overview/navigation/",
+      "frontMatter": {
+        "title": "Navigation",
+        "description": "How to add pages to the top and side navigation.",
+        "contentType": "guide",
+        "order": 3,
+        "layout": "accordion"
+      }
+    },
+    {
+      "filePath": "/docs-starter-kit/src/pages/specification/index.md",
+      "path": "/docs-starter-kit/specification/",
+      "frontMatter": {
+        "title": "Specification",
+        "description": "Replace me.",
+        "contentType": "example",
+        "language": ["JavaScript"],
+        "navOrder": 2,
+        "layout": "page"
+      }
+    }
+  ]
+}
