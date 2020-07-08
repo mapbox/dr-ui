@@ -1,11 +1,14 @@
 ---
-title: Overview
+title: dr-ui
 description: UI components for Mapbox documentation projects.
 prependJs:
   - "import Note from '../../../src/components/note'"
   - "import OverviewHeader from '../../../src/components/overview-header'"
   - "import App from '../app.js'"
   - "const version = require('../../../package.json').version;"
+layout: example
+hideFeedback: true
+hideTitle: true
 ---
 
 {{<OverviewHeader
@@ -29,4 +32,4 @@ UI components for Mapbox documentation projects.
 This project is for internal Mapbox usage. The code is open source and we appreciate bug reports; but we will only consider feature requests and pull requests from Mapbox developers.
 {{</Note>}}
 
-{{<App />}}
+{{<App {...this.props} />}}
