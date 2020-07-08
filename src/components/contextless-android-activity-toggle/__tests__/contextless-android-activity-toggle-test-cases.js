@@ -1,4 +1,6 @@
+import React from 'react';
 import ContextlessAndroidActivityToggle from '../contextless-android-activity-toggle';
+import Basic from '../examples/basic';
 
 const testCases = {};
 
@@ -47,9 +49,9 @@ const contextKotlin = {
 const java = `map.getStyle(new Style.OnStyleLoaded() {
   @Override
   public void onStyleLoaded(@NonNull Style style) {
-  
+
     Layer settlementLabelLayer = style.getLayer("settlement-label");
-    
+
     if (settlementLabelLayer != null) {
       settlementLabelLayer.setProperties(textField("{name_ru}"));
     }
@@ -62,15 +64,8 @@ const kotlin = `map?.getStyle {
 }`;
 
 testCases.basic = {
-  component: ContextlessAndroidActivityToggle,
   description: 'Basic',
-  props: {
-    context: contextJava,
-    id: 'test-java-only',
-    java: java,
-    limitHeight: true,
-    onCopy: () => {}
-  }
+  element: <Basic />
 };
 
 testCases.twoLang = {

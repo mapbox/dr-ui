@@ -1,18 +1,13 @@
 import React from 'react';
 import RelatedPage from '../related-page';
+import Basic from '../examples/basic';
+import VideoExample from '../examples/video';
 
 const testCases = {};
 
 testCases.tutorial = {
-  component: RelatedPage,
   description: 'tutorial',
-  props: {
-    contentType: 'tutorial',
-    title: 'First steps with the Mapbox Maps SDK for Android',
-    children:
-      'Walk through installing the Mapbox Maps SDK for Android, getting a map on the screen, and changing the map style.',
-    url: 'https://docs.mapbox.com/help/tutorials/first-steps-android-sdk/'
-  }
+  element: <Basic />
 };
 
 testCases.troubleshooting = {
@@ -77,16 +72,8 @@ testCases.playground = {
 };
 
 testCases.video = {
-  component: RelatedPage,
   description: 'video',
-  props: {
-    contentType: 'video',
-    title: 'How to eject a Style Component in Mapbox Studio',
-    children:
-      'Style Components provide sensible defaults and quick opportunities for customization by optimizing the most common property changes for styles and packaging them into simple drop-down options, sliders, and toggles.',
-    vimeoId: '378704089',
-    vimeoThumbnail: 'assets/vimeo_thumb.jpg'
-  }
+  element: <VideoExample />
 };
 
 testCases.videoNoImage = {

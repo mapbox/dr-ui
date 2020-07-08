@@ -1,6 +1,6 @@
 /* eslint-disable xss/no-mixed-html*/
-import CodeSnippet from '@mapbox/mr-ui/code-snippet';
-import { highlightSwift } from '../swift';
+import React from 'react';
+import CodeSnippet from '../../code-snippet/code-snippet';
 import { highlightObjectivec } from '../objectivec';
 import { highlightJava } from '../java';
 import { highlightJson } from '../json';
@@ -11,23 +11,10 @@ import { highlightKotlin } from '../kotlin';
 import { highlightCss } from '../css';
 import { highlightGroovy } from '../groovy';
 import { highlightThemeCss } from '../../highlight/theme-css.js';
+import Basic from '../examples/basic';
 
 const testCases = {};
 const noRenderCases = {};
-
-const swiftCodeSnippet = `
-import Mapbox
-  class ViewController: UIViewController {
-  override func viewDidLoad() {
-  super.viewDidLoad()
-
-  let url = URL(string: "mapbox://styles/mapbox/streets-v10")
-  let mapView = MGLMapView(frame: view.bounds, styleURL: url)
-  mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-  mapView.setCenter(CLLocationCoordinate2D(latitude: 59.31, longitude: 18.06), zoomLevel: 9, animated: false)
-  view.addSubview(mapView)
-}
-`;
 
 const objectiveCCodeSnippet = `
 #import "ViewController.h"
@@ -189,13 +176,8 @@ dependencies {
 }`;
 
 testCases.basic = {
-  component: CodeSnippet,
   description: 'Swift highlighting',
-  props: {
-    code: swiftCodeSnippet,
-    highlightedCode: highlightSwift(swiftCodeSnippet),
-    highlightThemeCss: highlightThemeCss
-  }
+  element: <Basic />
 };
 
 testCases.objc = {
@@ -203,7 +185,7 @@ testCases.objc = {
   description: 'Objective C highlighting',
   props: {
     code: objectiveCCodeSnippet,
-    highlightedCode: highlightObjectivec(objectiveCCodeSnippet),
+    highlighter: () => highlightObjectivec,
     highlightThemeCss: highlightThemeCss
   }
 };
@@ -213,7 +195,7 @@ testCases.java = {
   description: 'Java highlighting',
   props: {
     code: javaCodeSnippet,
-    highlightedCode: highlightJava(javaCodeSnippet),
+    highlighter: () => highlightJava,
     highlightThemeCss: highlightThemeCss
   }
 };
@@ -223,7 +205,7 @@ testCases.json = {
   description: 'JSON highlighting',
   props: {
     code: jsonCodeSnippet,
-    highlightedCode: highlightJson(jsonCodeSnippet),
+    highlighter: () => highlightJson,
     highlightThemeCss: highlightThemeCss
   }
 };
@@ -233,7 +215,7 @@ testCases.jsx = {
   description: 'JSX highlighting',
   props: {
     code: jsxCodeSnippet,
-    highlightedCode: highlightJsx(jsxCodeSnippet),
+    highlighter: () => highlightJsx,
     highlightThemeCss: highlightThemeCss
   }
 };
@@ -243,7 +225,7 @@ testCases.html = {
   description: 'HTML highlighting',
   props: {
     code: htmlCodeSnippet,
-    highlightedCode: highlightHtml(htmlCodeSnippet),
+    highlighter: () => highlightHtml,
     highlightThemeCss: highlightThemeCss
   }
 };
@@ -253,7 +235,7 @@ testCases.xml = {
   description: 'XML highlighting',
   props: {
     code: xmlCodeSnippet,
-    highlightedCode: highlightXml(xmlCodeSnippet),
+    highlighter: () => highlightXml,
     highlightThemeCss: highlightThemeCss
   }
 };
@@ -263,7 +245,7 @@ testCases.kotlin = {
   description: 'Kotlin highlighting',
   props: {
     code: kotlinCodeSnippet,
-    highlightedCode: highlightKotlin(kotlinCodeSnippet),
+    highlighter: () => highlightKotlin,
     highlightThemeCss: highlightThemeCss
   }
 };
@@ -273,7 +255,7 @@ testCases.css = {
   description: 'CSS highlighting',
   props: {
     code: cssCodeSnippet,
-    highlightedCode: highlightCss(cssCodeSnippet),
+    highlighter: () => highlightCss,
     highlightThemeCss: highlightThemeCss
   }
 };
@@ -283,7 +265,7 @@ testCases.groovy = {
   description: 'Groovy highlighting',
   props: {
     code: groovyCodeSnippet,
-    highlightedCode: highlightGroovy(groovyCodeSnippet),
+    highlighter: () => highlightGroovy,
     highlightThemeCss: highlightThemeCss
   }
 };

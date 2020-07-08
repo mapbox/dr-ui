@@ -1,23 +1,12 @@
-import GLWrapper from '../gl-wrapper';
 import React from 'react';
+import Basic from '../examples/basic';
 
 const testCases = {};
 const noRenderCases = {};
 
 testCases.basic = {
-  component: GLWrapper,
   description: 'Basic',
-  props: {
-    children: (
-      <iframe
-        src="https://giphy.com/embed/JIX9t2j0ZTN9S"
-        width="480"
-        height="480"
-        frameBorder="0"
-        allowFullScreen
-      />
-    )
-  }
+  element: <Basic />
 };
 
 export { testCases, noRenderCases };

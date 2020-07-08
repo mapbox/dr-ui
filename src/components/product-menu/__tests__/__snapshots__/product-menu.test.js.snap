@@ -1,5 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`product-menu Basic renders as expected 1`] = `
+<div
+  className="flex-parent"
+>
+  <a
+    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+    href="/dr-ui/"
+  >
+    Mapbox product menu
+  </a>
+</div>
+`;
+
 exports[`product-menu Beta product renders as expected 1`] = `
 <div
   className="flex-parent"
@@ -124,19 +137,6 @@ exports[`product-menu Fake items, but one matches this test case's location rend
     href="/api-documentation/"
   >
     Items in here
-  </a>
-</div>
-`;
-
-exports[`product-menu Mapbox product menu renders as expected 1`] = `
-<div
-  className="flex-parent"
->
-  <a
-    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
-    href="/api-documentation/"
-  >
-    Mapbox product names
   </a>
 </div>
 `;
