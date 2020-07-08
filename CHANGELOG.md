@@ -1,5 +1,9 @@
 # Changelog
 
+## Main
+
+- Add aria-label to `BackToTopButton`. [#290](https://github.com/mapbox/dr-ui/pull/290)
+
 ## 0.29.1
 
 - Remove `limiter` from `Topbar`. [#282](https://github.com/mapbox/dr-ui/pull/282)
