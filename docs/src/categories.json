@@ -40,7 +40,8 @@
     "TopbarSticker",
     "Card",
     "CardContainer",
-    "ExamplesPage"
+    "ExamplesPage",
+    "TabList"
   ],
   "Images": [
     "BookImage",
