@@ -115,7 +115,10 @@
     "react-dom": "^16.13.1"
   },
   "jest": {
-    "testRegex": ".*\\.test\\.js$"
+    "testRegex": ".*\\.test\\.js$",
+    "setupFiles": [
+      "./src/test-utils/jest-setup.js"
+    ]
   },
   "browserslist": [
     "last 4 Chrome versions",
