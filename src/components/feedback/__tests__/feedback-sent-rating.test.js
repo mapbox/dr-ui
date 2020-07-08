@@ -1,10 +1,7 @@
 import React from 'react';
 import Feedback from '..';
 import toJson from 'enzyme-to-json';
-import { configure, shallow, mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-
-configure({ adapter: new Adapter() });
+import { shallow, mount } from 'enzyme';
 
 describe('Sent helpful rating - yes', () => {
   const feedback = mount(
