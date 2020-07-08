@@ -6,13 +6,15 @@ import Topbar from '../../topbar/topbar';
 import ProductMenu from '../../product-menu/product-menu';
 import TabList from '@mapbox/mr-ui/tab-list';
 import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
+import Basic from '../examples/basic';
+import DisableModal from '../examples/disabled';
+import Narrow from '../examples/narrow';
 
 const testCases = {};
 
 testCases.basic = {
-  component: Search,
   description: 'Basic search',
-  props: {}
+  element: <Basic />
 };
 
 testCases.site = {
@@ -35,21 +37,13 @@ testCases.dark = {
 };
 
 testCases.disableModal = {
-  component: Search,
   description: 'Search with `disableModal` option set',
-  props: {
-    inputId: 'search3',
-    disableModal: true
-  }
+  element: <DisableModal />
 };
 
 testCases.narrow = {
-  component: Search,
   description: 'Search with `narrow` option set',
-  props: {
-    inputId: 'search4',
-    narrow: true
-  }
+  element: <Narrow />
 };
 
 testCases.withLayout = {

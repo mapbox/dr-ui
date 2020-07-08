@@ -1,4 +1,5 @@
 import React from 'react';
+import Basic from '../examples/basic';
 import Note from '../note';
 
 const testCases = {};
@@ -41,11 +42,8 @@ const htmlSample = () => {
 };
 
 testCases.basic = {
-  component: Note,
   description: 'Default note',
-  props: {
-    children: <p>Here is a little thing to note.</p>
-  }
+  element: <Basic />
 };
 
 testCases.custom = {

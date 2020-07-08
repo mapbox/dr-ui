@@ -45,7 +45,7 @@ CodeSnippetTitle.propTypes = {
   filename: PropTypes.string,
   /* Optional `link` to a GitHub file. If this is set, the rendered component
   will include a "View on Github" link. */
-  link: function(props, propName, componentName) {
+  link: function (props, propName, componentName) {
     if (props[propName] && !/^https:\/\/github\.com\//.test(props[propName])) {
       return new Error(
         'Invalid prop `' +

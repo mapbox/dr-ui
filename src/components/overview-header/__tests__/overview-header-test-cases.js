@@ -1,25 +1,12 @@
 import React from 'react';
+import Basic from '../examples/basic';
 import OverviewHeader from '../overview-header';
 
 const testCases = {};
 
 testCases.basic = {
-  description: 'All props',
-  component: OverviewHeader,
-  props: {
-    features: ['Smooth scrambled eggs', 'Vegetarian sausage', 'Fruit syrups'],
-    title: 'Mapbox SDK for Breakfast',
-    version: '0.1.0',
-    changelogLink: 'https://keepachangelog.com/en/0.3.0/',
-    installLink: 'https://www.mapbox.com/install',
-    ghLink: 'https://github.com/mapbox',
-    image: (
-      <img
-        height={300}
-        src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
-      />
-    )
-  }
+  description: 'Basic',
+  element: <Basic />
 };
 
 testCases.none = {

@@ -71,14 +71,14 @@ exports[`search Search with \`disableModal\` option set renders as expected 1`] 
       <div
         aria-expanded={false}
         aria-haspopup="listbox"
-        aria-labelledby="search3-label"
+        aria-labelledby="docs-search-label"
         aria-owns={null}
         role="combobox"
       >
         <label
           className="cursor-pointer"
-          htmlFor="search3-input"
-          id="search3-label"
+          htmlFor="docs-search-input"
+          id="docs-search-label"
         >
           <div
             className="absolute flex-parent flex-parent--center-cross flex-parent--center-main w36 h36"
@@ -99,10 +99,10 @@ exports[`search Search with \`disableModal\` option set renders as expected 1`] 
           aria-activedescendant={null}
           aria-autocomplete="list"
           aria-controls={null}
-          aria-labelledby="search3-label"
+          aria-labelledby="docs-search-label"
           autoComplete="off"
           className="input bg-white px36 h36"
-          id="search3-input"
+          id="docs-search-input"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}

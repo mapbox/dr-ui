@@ -11,7 +11,7 @@ const highlightThemeCss = \`${css.replace(/\s+/g, '')}\`;
 
 export { highlightThemeCss };
 `,
-  err => {
+  (err) => {
     if (err) return console.log(err);
     console.log('📝 Wrote theme-css.js');
   }

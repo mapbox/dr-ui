@@ -1,27 +1,11 @@
-import GlossarySection from '../glossary-section';
+import React from 'react';
+import Basic from '../examples/basic';
 
 const testCases = {};
 
 testCases.basic = {
-  component: GlossarySection,
   description: 'Basic',
-  props: {
-    letter: 'C',
-    entries: [
-      {
-        path: '#chip',
-        title: 'Chip',
-        description:
-          'A thin, crispy, and typically savory snack. It can be made of potatoes, corn, or a variety of other foods.'
-      },
-      {
-        path: '#candy',
-        title: 'Candy',
-        description:
-          'A sweet snack that is often fruity or chocolately or both!'
-      }
-    ]
-  }
+  element: <Basic />
 };
 
 export { testCases };

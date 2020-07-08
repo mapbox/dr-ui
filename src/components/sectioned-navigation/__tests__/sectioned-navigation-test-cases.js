@@ -2,63 +2,13 @@ import React from 'react';
 import SectionedNavigation from '../sectioned-navigation';
 import PageLayout from '../../page-layout/page-layout';
 import examples from './examples';
+import Basic from '../examples/basic';
 
 const testCases = {};
 
 testCases.basic = {
   description: 'With a title, linked section headings, and counts',
-  component: SectionedNavigation,
-  props: {
-    title: 'Examples',
-    sections: [
-      {
-        title: 'Getting started',
-        url: '#getting-started',
-        id: 'getting-started',
-        items: [
-          {
-            text: 'Camera animation',
-            url: '#foo'
-          },
-          {
-            text: 'Mark a place',
-            url: '#footoo',
-            active: true
-          },
-          {
-            text: 'Apply a style',
-            url: '#fooandyou'
-          }
-        ]
-      },
-      {
-        title: 'Markers and callouts',
-        url: '#markers',
-        id: 'markers',
-        items: [
-          {
-            text: 'Annotation models',
-            url: '#fooboo'
-          },
-          {
-            text: 'Callouts',
-            url: '#foocrew'
-          }
-        ]
-      },
-      {
-        title: 'Getting started again',
-        url: '#getting-started-again',
-        id: 'getting-started-again',
-        items: [
-          {
-            text: 'Apply a style',
-            url: '#fooblue'
-          }
-        ]
-      }
-    ]
-  }
+  element: <Basic />
 };
 
 testCases.minimal = {

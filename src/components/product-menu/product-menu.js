@@ -4,7 +4,7 @@ import Tag from '../tag/tag';
 import classnames from 'classnames';
 
 class ProductMenu extends React.PureComponent {
-  buildTag = item => {
+  buildTag = (item) => {
     const tagProps = {
       theme: item.tag,
       customLabel: item.customTagProps

@@ -1,10 +1,12 @@
+import React from 'react';
 import BookletImage from '../booklet-image';
+import Basic from '../examples/basic';
 
 const testCases = {};
 
 testCases.basic = {
-  component: BookletImage,
-  description: 'Basic'
+  description: 'Basic',
+  element: <Basic />
 };
 
 testCases.bigger = {

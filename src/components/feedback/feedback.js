@@ -30,7 +30,7 @@ class Feedback extends React.Component {
   }
 
   // creates a unique id for an element
-  createId = el => {
+  createId = (el) => {
     const section = slugify(this.props.section || 'page', {
       replacement: '-',
       lower: true
@@ -39,12 +39,12 @@ class Feedback extends React.Component {
   };
 
   // pushes the text feedback to the state as the user types
-  handleText = feedback => {
+  handleText = (feedback) => {
     this.setState({ feedback });
   };
 
   // handles when user clicks YES or NO button
-  handleYesNo = helpful => {
+  handleYesNo = (helpful) => {
     // sets user rating to the state
     this.setState({ helpful }, () => {
       // creates event to send to Segment and sets it to the state
@@ -117,7 +117,7 @@ class Feedback extends React.Component {
   // sends event to Segment
   sendToSegment = () => {
     // sends event to Segment via forward event webhook
-    forwardEvent(this.state.event, this.props.webhook, err => {
+    forwardEvent(this.state.event, this.props.webhook, (err) => {
       if (err) this.sendToSentry('error', err);
     });
   };
@@ -131,7 +131,7 @@ class Feedback extends React.Component {
       environment
     });
     // configure data to send with feeedback
-    Sentry.configureScope(scope => {
+    Sentry.configureScope((scope) => {
       // set tag for site name
       scope.setTag('site', this.props.site);
       // set tag for the user's boolean rating
