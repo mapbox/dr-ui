@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PopoverTrigger from '@mapbox/mr-ui/popover-trigger';
+import Icon from '@mapbox/mr-ui/icon';
+import classnames from 'classnames';
 
 export default class TabList extends React.PureComponent {
   /** If you change propTypes, also change propNames. */
@@ -17,7 +19,14 @@ export default class TabList extends React.PureComponent {
         /** Link to the page the lab list item should take you to when clicked. */
         href: PropTypes.string,
         /** Flag to disable the clickability of an tab list item. */
-        disabled: PropTypes.bool
+        disabled: PropTypes.bool,
+        items: PropTypes.arrayOf(
+          PropTypes.shape({
+            label: PropTypes.bool,
+            title: PropTypes.string.isRequired,
+            href: PropTypes.string.isRequired
+          })
+        )
       })
     ).isRequired,
     /** Callback when an tab list header item is clicked.
@@ -46,22 +55,9 @@ export default class TabList extends React.PureComponent {
     themeItemDisabled: 'color-gray-light'
   };
 
-  constructor(props) {
-    super(props);
-    this.state = { openPopover: false }; // eslint-disable-line
-  }
-
   onChange = (id) => {
     const { onChange } = this.props;
     onChange(id);
-  };
-
-  handlePopoverOpen = () => {
-    this.setState({ openPopover: true }); // eslint-disable-line
-  };
-
-  handlePopoverClose = () => {
-    this.setState({ openPopover: false }); // eslint-disable-line
   };
 
   render() {
@@ -75,7 +71,7 @@ export default class TabList extends React.PureComponent {
       themeItemDisabled
     } = this.props;
 
-    const renderAllItems = (item, truncatedClasses) => {
+    const renderAllItems = (item, truncatedClasses, renderState) => {
       /** The classes that the active item should have. */
       let activeClasses = '';
       if (item.id === activeItem) {
@@ -92,7 +88,10 @@ export default class TabList extends React.PureComponent {
       let renderedItemClasses = `px6 mr24 fl-mm align-center-mm align-l py12 ${themeItem} ${truncatedClasses} ${activeClasses} ${disabledClasses}`;
       let renderedItem = null;
       /** If the item contains an href, make a link. */
-      if (item.href) {
+      if (
+        (item.href && !item.items) ||
+        (item.items && renderState === 'dropdown')
+      ) {
         renderedItem = (
           <a
             key={item.id}
@@ -103,8 +102,17 @@ export default class TabList extends React.PureComponent {
             {item.label}
           </a>
         );
-        /** If the item does not contain an href, make a button. */
+      } else if (item.items && renderState === 'sometimes') {
+        /** If the item contains items */
+        renderedItem = (
+          <div className={`inline-block ${renderedItemClasses}`}>
+            <div className="none block-mm">
+              <CustomDropdown label={item.label} dropdownContent={item.items} />
+            </div>
+          </div>
+        );
       } else {
+        /** If the item does not contain an href, make a button. */
         renderedItem = (
           <button
             aria-label={item.id}
@@ -128,7 +136,7 @@ export default class TabList extends React.PureComponent {
       .map((item, index) => {
         return (
           <div key={index} className="fl">
-            {renderAllItems(item, 'inline-block border-b')}
+            {renderAllItems(item, 'inline-block border-b', 'always')}
           </div>
         );
       });
@@ -141,7 +149,7 @@ export default class TabList extends React.PureComponent {
       .map((item, index) => {
         return (
           <div key={index} className="fl">
-            {renderAllItems(item, 'inline-block-mm none')}
+            {renderAllItems(item, 'inline-block-mm none', 'sometimes')}
           </div>
         );
       });
@@ -155,7 +163,7 @@ export default class TabList extends React.PureComponent {
       .map((item, index) => {
         return (
           <div key={index} className="block">
-            {renderAllItems(item, themeItemTruncated)}
+            {renderAllItems(item, themeItemTruncated, 'dropdown')}
           </div>
         );
       });
@@ -164,23 +172,7 @@ export default class TabList extends React.PureComponent {
      a popover that contains the `dropdownMenuItems`. */
     const moreButton = (
       <div className="fl">
-        <PopoverTrigger
-          content={dropdownMenuItems}
-          onPopoverOpen={this.handlePopoverOpen}
-          onPopoverClose={this.handlePopoverClose}
-          receiveFocus={true}
-          respondsToFocus={false}
-          respondsToHover={true}
-          trapFocus={true}
-          popoverProps={{
-            placement: 'bottom',
-            themePopover:
-              'round shadow-darken25 h480 scroll-auto px12 py12 scroll-styled'
-          }}
-          triggerProps={{
-            'data-test': 'more-dropdown-menu'
-          }}
-        >
+        <Popover content={dropdownMenuItems}>
           <button
             aria-label="More"
             className="px6 py12 mr12 align-l cursor-pointer none-mm"
@@ -188,7 +180,7 @@ export default class TabList extends React.PureComponent {
           >
             More +
           </button>
-        </PopoverTrigger>
+        </Popover>
       </div>
     );
 
@@ -201,3 +193,81 @@ export default class TabList extends React.PureComponent {
     );
   }
 }
+
+class Popover extends React.Component {
+  render() {
+    const { content, children } = this.props;
+    return (
+      <PopoverTrigger
+        content={content}
+        onPopoverOpen={this.handlePopoverOpen}
+        onPopoverClose={this.handlePopoverClose}
+        receiveFocus={true}
+        respondsToFocus={false}
+        respondsToHover={true}
+        trapFocus={true}
+        popoverProps={{
+          placement: 'bottom',
+          themePopover:
+            'round shadow-darken25 h480 scroll-auto px12 py12 scroll-styled'
+        }}
+        triggerProps={{
+          'data-test': 'more-dropdown-menu'
+        }}
+      >
+        {children}
+      </PopoverTrigger>
+    );
+  }
+}
+
+Popover.propTypes = {
+  content: PropTypes.any,
+  children: PropTypes.node
+};
+
+class CustomDropdown extends React.Component {
+  getPopoverContent = () => {
+    const { dropdownContent } = this.props;
+    return (
+      <ul>
+        {dropdownContent.map((item) => (
+          <li key={item.title}>
+            <a
+              className={classnames('link', {
+                'txt-bold link--blue': item.latest,
+                'link--gray': !item.latest
+              })}
+              href={item.href}
+            >
+              {item.title}
+              {item.latest && <span> &mdash; latest stable</span>}
+            </a>
+          </li>
+        ))}
+      </ul>
+    );
+  };
+
+  render() {
+    const { label } = this.props;
+    return (
+      <Popover content={this.getPopoverContent}>
+        <button className="py0">
+          {label}
+          <span className="color-gray-light ml6">
+            <Icon name="chevron-down" inline={true} />
+          </span>
+          <span className="none-mm color-gray-light ml6">
+            <Icon name="share" inline={true} />
+          </span>
+        </button>
+      </Popover>
+    );
+  }
+}
+
+CustomDropdown.propTypes = {
+  dropdownContent: PropTypes.array.isRequired,
+  label: PropTypes.string.isRequired
+};

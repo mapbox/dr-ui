@@ -1,4 +1,5 @@
 import React from 'react';
+import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import { testCases } from './tab-list-test-cases';
@@ -8,8 +9,40 @@ describe('TabList', () => {
   let wrapper;
 
   describe(testCases.basic.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
     beforeEach(() => {
       testCase = testCases.basic;
+      wrapper = renderer.create(testCase.element);
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
+
+  describe(testCases.dropdown.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.dropdown;
+      wrapper = renderer.create(testCase.element);
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
+
+  describe(testCases.simple.description, () => {
+    beforeEach(() => {
+      testCase = testCases.simple;
       wrapper = shallow(
         React.createElement(testCase.component, testCase.props)
       );

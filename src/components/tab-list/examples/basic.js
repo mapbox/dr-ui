@@ -4,27 +4,32 @@ Basic.
 import React from 'react';
 import TabList from '../tab-list';
 
-export default class Example extends React.Component {
-  state = {
-    activeItem: ''
-  };
-
-  onChange = (id) => {
-    this.setState({
-      activeItem: id === this.state.activeItem ? '' : id
-    });
-  };
-
+export default class Basic extends React.Component {
   render() {
     return (
       <TabList
-        onChange={this.onChange}
-        activeItem={this.state.activeItem}
+        activeItem="specification"
         items={[
-          { id: 'one', label: 'Label one' },
-          { id: 'two', label: 'Label two' },
-          { id: 'three', label: 'Label three' },
-          { id: 'four', label: 'Label four' }
+          {
+            href: '/dr-ui/overview/',
+            id: 'overview',
+            label: 'Overview'
+          },
+          {
+            href: '/dr-ui/specification/',
+            id: 'specification',
+            label: 'Specification'
+          },
+          {
+            href: '/dr-ui/examples/',
+            id: 'examples',
+            label: 'Examples'
+          },
+          {
+            href: '/dr-ui/demo/',
+            id: 'demo',
+            label: 'Demo'
+          }
         ]}
       />
     );

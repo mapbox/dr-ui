@@ -1,12 +1,24 @@
 import React from 'react';
 import safeSpy from '../../../test-utils/safe-spy';
 import TabList from '../tab-list';
+import Basic from '../examples/basic';
+import Dropdown from '../examples/dropdown';
 import Icon from '@mapbox/mr-ui/icon';
 
 const testCases = {};
 
 testCases.basic = {
-  description: 'basic',
+  description: 'Basic',
+  element: <Basic />
+};
+
+testCases.dropdown = {
+  description: 'Dropdown',
+  element: <Dropdown />
+};
+
+testCases.simple = {
+  description: 'simple',
   component: TabList,
   props: {
     onChange: safeSpy(),
