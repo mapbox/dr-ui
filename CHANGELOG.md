@@ -2,6 +2,11 @@
 
 ## Layouts
 
+## 0.29.2
+
+- Add aria-label to `BackToTopButton`. [#290](https://github.com/mapbox/dr-ui/pull/290)
+- Update `@sentry/browser` and add it as a peer dependency along with `react`, `react-dom`, `@mapbox/mr-ui`, and `@mapbox/mbx-assembly`. [#292](https://github.com/mapbox/dr-ui/pull/292)
+
 ## 0.29.1
 
 - Remove `limiter` from `Topbar`. [#282](https://github.com/mapbox/dr-ui/pull/282)
