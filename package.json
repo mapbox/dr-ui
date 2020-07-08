@@ -70,7 +70,6 @@
     "execa": "^0.10.0",
     "gh-pages": "^2.0.1",
     "hard-rejection": "^1.0.0",
-    "highlight.js": "^9.13.1",
     "husky": "^4.2.5",
     "jest": "^26.0.1",
     "lint-staged": "^10.2.10",
