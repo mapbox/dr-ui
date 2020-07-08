@@ -1,6 +1,6 @@
 # @mapbox/dr-ui
 
-[![Build Status](https://travis-ci.com/mapbox/dr-ui.svg?branch=master)](https://travis-ci.com/mapbox/dr-ui)
+[![Build Status](https://travis-ci.com/mapbox/dr-ui.svg?branch=main)](https://travis-ci.com/mapbox/dr-ui)
 
 Pronounced "Doctor UI". **D**ocumentation **R**eact **UI** components. See [@mapbox/mr-ui](https://github.com/mapbox/mr-ui).
 
@@ -31,42 +31,4 @@ Only the component itself and whatever _it_ depends on will be drawn into your b
 
 ## Development
 
-Here are some commands you'll probably want to use:
-
-```bash
-# Start the test-cases app.
-npm start
-```
-
-Docs build process and automated testing coming soon.
-
-When making changes to the build script, test that the module builds correctly by running `npm run build` and then linking the local package with another local repo. Make sure you are able to run the local repo without errors from dr-ui.
-
-## Tests
-
-Each component should have a `__tests__` folder with a `component-name-test-cases.js` and `component-name.test.js`. The `*test-cases.js` file should include variations of the component in use to demonstrate the different capabilities and properites for the component. The `*.test.js` file should create a unit test for each test case found in `*test-cases.js`.
-
-Run the tests:
-
-```
-npm test
-```
-
-Update snapshots (run when making changes to `*.test.js`):
-
-```
-npm test -- -u
-```
-
-### Publishing
-
-The `build` command creates a `pkg/` directory that contains the code we want to publish, organized the way we want it. So `pkg/` is the directory that we publish. `pkg/package.json` is a clone of `package.json` but with `private: true` removed.
-
-1. Document changes in the CHANGELOG.
-1. Increment the version key in package.json and package-lock.json.
-1. Make sure all this is committed, typically with a commit message like `Prepare 0.0.11`.
-1. Create a tag. No message is necessary, since the changelog includes explanations of changes. For example: `git tag -a 0.0.11 -m ""`.
-1. Push the tag: `git push --tags`.
-1. Push your commit.
-1. Build the `pkg/` directory: `npm run build`.
-1. `cd` into the `pkg/` directory and publish the new version on npm.
+See [CONTRIBUTING.md](CONTRIBUTING.md).

@@ -5,34 +5,14 @@ import PageLayout from '../../page-layout/page-layout';
 import NavigationAccordion from '../../navigation-accordion/navigation-accordion';
 import Topbar from '../../topbar/topbar';
 import ProductMenu from '../../product-menu/product-menu';
+import Basic from '../examples/basic';
 
 const testCases = {};
 
 testCases.basic = {
   component: Feedback,
   description: 'Basic (sends user information as `crocsfan19`)',
-  props: {
-    site: 'dr-ui',
-    webhook: {
-      staging:
-        'https://evj5gwoa8j.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
-      production:
-        'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook'
-    },
-    preferredLanguage: 'Swift',
-    user: {
-      id: 'crocsfan19',
-      email: 'crocsfan19@mapbox.com',
-      plan: {
-        id: 'starter'
-      }
-    },
-    section: 'LngLat',
-    location: {
-      pathname: '/dr-ui/feedback/',
-      hash: '#lnglat'
-    }
-  }
+  element: <Basic />
 };
 
 testCases.type = {

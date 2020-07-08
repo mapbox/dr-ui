@@ -1,14 +1,13 @@
+import React from 'react';
 import DemoIframe from '../demo-iframe';
+import Basic from '../examples/basic';
 
 const testCases = {};
 const noRenderCases = {};
 
 testCases.basic = {
-  component: DemoIframe,
   description: 'Basic',
-  props: {
-    src: 'https://giphy.com/embed/JIX9t2j0ZTN9S'
-  }
+  element: <Basic />
 };
 
 testCases.token = {

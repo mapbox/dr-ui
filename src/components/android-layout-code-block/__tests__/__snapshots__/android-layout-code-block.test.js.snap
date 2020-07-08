@@ -133,7 +133,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               className="pr12"
               style={
                 Object {
-                  "paddingLeft": 19.225,
+                  "paddingLeft": 12,
                 }
               }
             >
@@ -309,7 +309,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               className="pr12"
               style={
                 Object {
-                  "paddingLeft": 19.225,
+                  "paddingLeft": 12,
                 }
               }
             >

@@ -1,13 +1,13 @@
 import React from 'react';
 import BackToTopButton from '../back-to-top-button';
+import Basic from '../examples/basic';
 
 const testCases = {};
 const noRenderCases = {};
 
 testCases.basic = {
-  component: BackToTopButton,
   description: 'Just the button',
-  props: {}
+  element: <Basic />
 };
 
 testCases.tall = {
@@ -17,12 +17,6 @@ testCases.tall = {
       <BackToTopButton />
     </div>
   )
-};
-
-noRenderCases.basic = {
-  component: BackToTopButton,
-  description: 'Just the button',
-  props: {}
 };
 
 export { testCases, noRenderCases };

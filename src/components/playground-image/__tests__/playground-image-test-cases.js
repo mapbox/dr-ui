@@ -1,10 +1,12 @@
+import React from 'react';
 import PlaygroundImage from '../playground-image';
+import Basic from '../examples/basic';
 
 const testCases = {};
 
 testCases.basic = {
-  component: PlaygroundImage,
-  description: 'Basic'
+  description: 'Basic',
+  element: <Basic />
 };
 
 testCases.bigger = {

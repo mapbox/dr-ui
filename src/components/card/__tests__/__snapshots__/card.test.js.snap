@@ -20,22 +20,87 @@ exports[`card Card with image renders as expected 1`] = `
     />
   </div>
   <div>
-    
     <div
       className="mb6"
     >
-      Title
+      <div
+        className="inline-block mr18 txt-s txt-bold"
+      >
+        <div
+          className="flex-parent flex-parent--center-cross"
+        >
+          <div
+            className="inline-block w6 bg-orange align-middle mr3"
+            style={
+              Object {
+                "borderRadius": "1px",
+                "height": "8px",
+              }
+            }
+          />
+          <div
+            className="inline-block w6 bg-orange align-middle mr3"
+            style={
+              Object {
+                "borderRadius": "1px",
+                "height": "8px",
+              }
+            }
+          />
+          <div
+            className="inline-block w6 bg-gray-light align-middle mr3"
+            style={
+              Object {
+                "borderRadius": "1px",
+                "height": "8px",
+              }
+            }
+          />
+          <div
+            className="inline-block color-orange ml3 txt-capitalize"
+          >
+            intermediate
+          </div>
+        </div>
+      </div>
+      <div
+        className="inline-block color-gray txt-s txt-bold"
+      >
+        <svg
+          className="events-none icon inline-block align-t"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 18,
+              "width": 18,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-code"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+         
+        JavaScript
+      </div>
+    </div>
+    <div
+      className="mb6"
+    >
+      My cool card
     </div>
     <div
       className="color-gray color-gray-on-hover"
     >
-      described.
+      This card is very cool.
     </div>
   </div>
 </a>
 `;
 
-exports[`card Card with level and language renders as expected 1`] = `
+exports[`card Card with no image renders as expected 1`] = `
 <a
   className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
   href="url"
@@ -111,34 +176,12 @@ exports[`card Card with level and language renders as expected 1`] = `
     <div
       className="mb6"
     >
-      This is a full-length title
+      My cool card
     </div>
     <div
       className="color-gray color-gray-on-hover"
     >
-      Here's a reasonable length for a description.
-    </div>
-  </div>
-</a>
-`;
-
-exports[`card Card with no image renders as expected 1`] = `
-<a
-  className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
-  href="url"
->
-  
-  <div>
-    
-    <div
-      className="mb6"
-    >
-      Title
-    </div>
-    <div
-      className="color-gray color-gray-on-hover"
-    >
-      described.
+      This card is still cool despite not having a thumbnail.
     </div>
   </div>
 </a>

@@ -1,27 +1,13 @@
+import React from 'react';
 import CodeToggle from '../code-toggle';
+import Basic from '../examples/basic';
 
 const testCases = {};
 const noRenderCases = {};
 
 testCases.basic = {
-  component: CodeToggle,
   description: 'Swift preferred',
-  props: {
-    id: 'one',
-    onChange: () => {},
-    options: [
-      {
-        label: 'Swift',
-        language: 'swift',
-        preferredLanguage: true
-      },
-      {
-        label: 'Objective-C',
-        language: 'objectiveC',
-        preferredLanguage: false
-      }
-    ]
-  }
+  element: <Basic />
 };
 
 testCases.objectiveC = {
