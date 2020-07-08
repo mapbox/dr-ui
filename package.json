@@ -16,7 +16,7 @@
     "format": "prettier --write '**/*.{js,css,html,json,yml,md}'",
     "prebuild": "npm run build-theme-css",
     "build": "scripts/build-module-indexes.js && scripts/build-package.js",
-    "prepare-docs": "cpy ./src/test-cases-app/files/* ./docs/src/pages/files/ && scripts/build-module-indexes.js && scripts/build-docs-data.js",
+    "prepare-docs": "cpy ./src/test-cases-app/files/* ./docs/src/pages/files/ && cpy CHANGELOG.md ./docs/src/pages/ --rename=changelog.md && scripts/build-module-indexes.js && scripts/build-docs-data.js",
     "start-docs": "npm run prepare-docs && batfish start --config='docs/batfish.config.js'",
     "build-docs": "npm run prepare-docs && batfish build --config='docs/batfish.config.js'",
     "serve-static-docs": "batfish serve-static --config='docs/batfish.config.js'",
@@ -82,7 +82,11 @@
     "react-docgen": "^5.3.0",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
+    "react-scrollspy": "^3.4.2",
     "react-test-renderer": "^16.13.1",
+    "rehype-slug": "^3.0.0",
+    "remark": "^12.0.0",
+    "remark-html": "^11.0.2",
     "unist-util-visit": "^1.4.0"
   },
   "dependencies": {
