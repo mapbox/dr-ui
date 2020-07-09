@@ -1,3 +1,9 @@
+import * as Sentry from '@sentry/browser';
+
+Sentry.init({
+  dsn: 'https://b3f28ae6545c49a8a294f5b8cdf057e6@sentry.io/2991114',
+  environment: 'staging'
+});
 /**
  * A XHR-powered function that accepts your Segment event, sends it to the endpoint, and then forwards it to Segment.
  * Events will be sent to one of two Segment projects:
@@ -14,8 +20,15 @@ export default function forwardEvent(event, webhook, callback) {
   // window and event must be present to make the proper request
   if (typeof window === 'undefined') return;
   if (!event) {
+    Sentry.captureException('event argument required');
     throw new Error('event argument required');
   }
+
+  // set the event as extra context
+  Sentry.configureScope((scope) => {
+    scope.setExtra('event', event);
+  });
+
   // checks if the current page is on production or staging
   // then determines which webhook to post to
   const isProduction = /(^|\S+\.)mapbox\.com/.test(window.location.host);
@@ -57,6 +70,7 @@ export default function forwardEvent(event, webhook, callback) {
 
   // handles xhr error
   function handleError(error) {
+    Sentry.captureException(error);
     callback(error);
   }
 }
