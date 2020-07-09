@@ -6,17 +6,48 @@ import Sidebar from './components/sidebar';
 import PageLayoutTopbar from './components/topbar';
 import { findHasSection, findParentPath } from './utils';
 
+// default configuration for each layout
+// each option can be overriden in the frontMatter
+const layoutConfig = {
+  page: {
+    sidebar: 'toc', // heading table of contents
+    sidebarTheme: '' // blank sidebar background
+  },
+  accordion: {
+    sidebar: 'accordion', // NavigationAccordion sidebar
+    sidebarTheme: 'bg-gray-faint' // sidebar background
+  },
+  example: {
+    sidebar: 'sectioned', // SectionedNavigation sidebar
+    hideSubItems: false, // show headings and subitems in sitebar
+    sidebarTheme: 'bg-gray-faint', // sidebar background
+    includeFilterBar: false // hide filter bar
+  },
+  exampleIndex: {
+    sidebar: 'sectioned', // SectionedNavigation sidebar
+    hideSubItems: true, // only show sidebar headings
+    showCards: true, // show example cards
+    hideFeedback: true, // hide feedback module
+    sidebarTheme: 'bg-gray-faint', // sidebar background
+    includeFilterBar: false // hide filter bar
+  },
+  full: {
+    sidebar: 'none' // no sidebar
+  }
+};
+
 export default class PageLayout extends React.Component {
   render() {
     const {
       location,
       navigation,
       constants,
-      sidebarTheme,
-      topBarSticker
+      topBarSticker,
+      frontMatter
     } = this.props;
 
-    const { layout } = this.props.frontMatter;
+    const { navOrder } = frontMatter;
+
     // determine's if this is a single or multli-level site (the latter has sections)
     const hasSection = findHasSection(navigation, location.pathname);
     // get the parent's path, we need this for the top nav
@@ -25,6 +56,17 @@ export default class PageLayout extends React.Component {
     const switchedNavigation = hasSection
       ? navigation[hasSection.path]
       : navigation;
+
+    // set default layout to page
+    if (!frontMatter.layout) frontMatter.layout = 'page';
+
+    // if layout is example and has navOrder assume 'exampleIndex' layout
+    const config = {
+      ...(navOrder && frontMatter.layout === 'example'
+        ? layoutConfig.exampleIndex
+        : layoutConfig[frontMatter.layout]),
+      ...frontMatter
+    };
 
     return (
       <div>
@@ -37,21 +79,26 @@ export default class PageLayout extends React.Component {
         />
         <div className="limiter">
           <div className="grid">
-            {layout !== 'full' && (
-              <div className={`col col--4-mm col--12 ${sidebarTheme}`}>
+            {config.sidebar !== 'none' && (
+              <div className={`col col--4-mm col--12 ${config.sidebarTheme}`}>
                 <Sidebar
                   {...this.props}
                   navigation={switchedNavigation}
                   parentPath={parentPath}
+                  layoutConfig={config}
                 />
               </div>
             )}
             <div
               className={classnames('col col--12', {
-                'col--8-mm': layout !== 'full'
+                'col--8-mm': config.sidebar !== 'none'
               })}
             >
-              <Content {...this.props} parentPath={parentPath} />
+              <Content
+                {...this.props}
+                parentPath={parentPath}
+                layoutConfig={config}
+              />
             </div>
           </div>
         </div>
@@ -63,13 +110,20 @@ export default class PageLayout extends React.Component {
 PageLayout.propTypes = {
   children: PropTypes.node,
   frontMatter: PropTypes.shape({
+    headings: PropTypes.array,
+    navOrder: PropTypes.number,
+    layout: PropTypes.oneOf([
+      'page',
+      'accordion',
+      'example',
+      'exampleIndex',
+      'full'
+    ]),
+    hideTitle: PropTypes.bool,
     hideFeedback: PropTypes.bool,
-    layout: PropTypes.oneOf(['page', 'accordion', 'example', 'full']),
-    hideTitle: PropTypes.bool
+    includeFilterBar: PropTypes.bool
   }),
   location: PropTypes.object.isRequired,
-  sidebarTheme: PropTypes.string,
-  parentPath: PropTypes.string,
   navigation: PropTypes.shape({
     title: PropTypes.string,
     tag: PropTypes.string,
@@ -86,16 +140,6 @@ PageLayout.propTypes = {
       staging: PropTypes.string.isRequired
     }).isRequired
   }).isRequired,
-  AppropriateImage: PropTypes.func, // pass the local AppropriateImage component to use with "example" layout
-  topBarSticker: PropTypes.bool, // disable TopBarSticker
-  includeFilterBar: PropTypes.bool
-};
-
-PageLayout.defaultProps = {
-  sidebarTheme: 'bg-gray-faint',
-  frontMatter: {
-    layout: 'page',
-    hideTitle: false
-  },
-  includeFilterBar: false
+  AppropriateImage: PropTypes.func, // pass the local AppropriateImage component to use with "exampleIndex" layout
+  topBarSticker: PropTypes.bool // disable TopBarSticker
 };

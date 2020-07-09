@@ -57,16 +57,18 @@ export default class Sidebar extends React.Component {
       parentPath,
       headings,
       topics,
-      includeFilterBar
+      layoutConfig
     } = this.props;
 
-    const { layout, navOrder } = frontMatter;
+    const { accordion } = navigation;
 
-    switch (layout) {
+    const { hideSubItems, sidebar, includeFilterBar } = layoutConfig;
+
+    switch (sidebar) {
       case 'accordion':
         return (
           <SidebarAccordion
-            navItems={navigation.accordion[parentPath]}
+            navItems={accordion[parentPath]}
             frontMatter={frontMatter}
             location={location}
             headings={headings}
@@ -74,15 +76,15 @@ export default class Sidebar extends React.Component {
             {children}
           </SidebarAccordion>
         );
-      case 'page':
+      case 'toc':
         return (
           <SidebarPage headings={frontMatter.headings}>{children}</SidebarPage>
         );
-      case 'example':
+      case 'sectioned':
         return (
           <SidebarExamples
             topics={topics[parentPath].topics}
-            hideSubItems={navOrder ? true : false}
+            hideSubItems={hideSubItems}
             sectionPath={parentPath}
             includeFilterBar={includeFilterBar}
           />
@@ -121,12 +123,15 @@ Sidebar.propTypes = {
   }).isRequired,
   headings: PropTypes.array,
   frontMatter: PropTypes.shape({
-    layout: PropTypes.oneOf(['page', 'accordion', 'example', 'full']),
     navOrder: PropTypes.number,
     headings: PropTypes.array
   }).isRequired,
   children: PropTypes.node,
   parentPath: PropTypes.string,
   topics: PropTypes.object,
-  includeFilterBar: PropTypes.bool
+  layoutConfig: PropTypes.shape({
+    sidebar: PropTypes.oneOf(['none', 'toc', 'accordion', 'sectioned']),
+    hideSubItems: PropTypes.bool,
+    includeFilterBar: PropTypes.bool
+  })
 };

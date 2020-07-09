@@ -23,10 +23,6 @@ export default class SidebarExamples extends React.PureComponent {
   }
 }
 
-SidebarExamples.defaultProps = {
-  hideSubItems: true
-};
-
 SidebarExamples.propTypes = {
   topics: PropTypes.array,
   hideSubItems: PropTypes.bool,

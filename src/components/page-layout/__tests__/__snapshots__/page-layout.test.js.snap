@@ -527,7 +527,7 @@ exports[`page-layout Accordion layout renders as expected 1`] = `
         className="col col--12 col--8-mm"
       >
         <div
-          className="mt24-mm pr0-mm mb60 px36-mm"
+          className="mt24-mm pr0-mm mb60 px24-mm"
           id="docs-content"
         >
           <div
@@ -805,7 +805,7 @@ exports[`page-layout Example (index) layout renders as expected 1`] = `
         className="col col--12 col--8-mm"
       >
         <div
-          className="mt24-mm pr0-mm mb60 px36-mm"
+          className="mt24-mm pr0-mm mb60 px24-mm"
           id="docs-content"
         >
           <div
@@ -1342,7 +1342,7 @@ exports[`page-layout Example page layout renders as expected 1`] = `
         className="col col--12 col--8-mm"
       >
         <div
-          className="mt24-mm pr0-mm mb60 px36-mm"
+          className="mt24-mm pr0-mm mb60 px24-mm"
           id="docs-content"
         >
           <div
@@ -1565,7 +1565,7 @@ exports[`page-layout Page layout renders as expected 1`] = `
       className="grid"
     >
       <div
-        className="col col--4-mm col--12 bg-gray-faint"
+        className="col col--4-mm col--12 "
       >
         <div
           data-swiftype-index="false"
@@ -1626,7 +1626,7 @@ exports[`page-layout Page layout renders as expected 1`] = `
         className="col col--12 col--8-mm"
       >
         <div
-          className="mt24-mm pr0-mm mb60 px36-mm"
+          className="mt24-mm pr0-mm mb60 px24-mm"
           id="docs-content"
         >
           <div

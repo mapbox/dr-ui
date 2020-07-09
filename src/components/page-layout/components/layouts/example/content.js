@@ -52,6 +52,9 @@ export default class LayoutExamples extends React.PureComponent {
 
 LayoutExamples.propTypes = {
   topics: PropTypes.array,
-  frontMatter: PropTypes.object.isRequired,
+  frontMatter: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired
+  }).isRequired,
   AppropriateImage: PropTypes.func.isRequired
 };

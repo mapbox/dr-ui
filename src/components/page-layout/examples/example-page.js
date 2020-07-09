@@ -32,7 +32,7 @@ export default class Basic extends React.Component {
         frontMatter={{
           title: 'Examples',
           layout: 'example',
-          description: 'Lots of handy examples.'
+          description: 'An example of a page.'
         }}
         AppropriateImage={AppropriateImage}
         navigation={{

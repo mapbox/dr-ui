@@ -17,14 +17,15 @@ export default class Content extends React.Component {
       />
     );
   };
-
   renderFeedback = () => {
-    const { frontMatter, location, section } = this.props;
+    const { location, section, layoutConfig } = this.props;
+    const { layout } = layoutConfig;
+
     const { SITE, FORWARD_EVENT_WEBHOOK } = this.props.constants;
     return (
       <div className="mt36">
         <Feedback
-          type={frontMatter.layout === 'example' ? 'example' : ''}
+          type={layout === 'example' ? 'example' : ''}
           site={SITE}
           location={location}
           section={section}
@@ -34,26 +35,25 @@ export default class Content extends React.Component {
     );
   };
   render() {
-    const { children, frontMatter } = this.props;
-    const { hideFeedback, layout, hideTitle, title } = frontMatter;
-
-    const isExamplesIndex = layout === 'example' && frontMatter.navOrder;
+    const { children, frontMatter, layoutConfig } = this.props;
+    const { title } = frontMatter;
+    const { hideFeedback, hideTitle, showCards, sidebar } = layoutConfig;
 
     return (
       <UserContextProvider>
         <div
           id="docs-content"
           className={classnames('mt24-mm pr0-mm', {
-            'mb60 px36-mm': layout !== 'full',
-            'px24-mm': layout === 'full'
+            'mb60 px24-mm': sidebar !== 'none',
+            'px24-mm': sidebar === 'none'
           })}
         >
           <div className="prose">
             {!hideTitle && <h1 className="txt-fancy">{title}</h1>}
             {children}
-            {!isExamplesIndex && !hideFeedback ? this.renderFeedback() : ''}
+            {!hideFeedback ? this.renderFeedback() : ''}
           </div>
-          {isExamplesIndex ? this.renderExamplesIndex() : ''}
+          {showCards ? this.renderExamplesIndex() : ''}
         </div>
       </UserContextProvider>
     );
@@ -63,11 +63,7 @@ export default class Content extends React.Component {
 Content.propTypes = {
   children: PropTypes.node,
   frontMatter: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    hideFeedback: PropTypes.bool,
-    navOrder: PropTypes.number,
-    layout: PropTypes.string,
-    hideTitle: PropTypes.bool
+    title: PropTypes.string.isRequired
   }).isRequired,
   location: PropTypes.object.isRequired,
   parentPath: PropTypes.string,
@@ -81,5 +77,12 @@ Content.propTypes = {
       production: PropTypes.string.isRequired,
       staging: PropTypes.string.isRequired
     }).isRequired
-  }).isRequired
+  }).isRequired,
+  layoutConfig: PropTypes.shape({
+    layout: PropTypes.string,
+    hideTitle: PropTypes.bool,
+    showCards: PropTypes.bool,
+    hideFeedback: PropTypes.bool,
+    sidebar: PropTypes.string.isRequired
+  })
 };

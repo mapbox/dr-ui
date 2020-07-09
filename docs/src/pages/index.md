@@ -7,7 +7,10 @@ prependJs:
   - "import App from '../app.js'"
   - "const version = require('../../../package.json').version;"
 layout: example
-hideFeedback: true
+hideSubItems: false
+showCards: false
+includeFilterBar: true
+navOrder: 1
 hideTitle: true
 ---
 
