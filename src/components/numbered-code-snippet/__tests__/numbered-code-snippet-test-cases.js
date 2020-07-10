@@ -1,6 +1,8 @@
+import React from 'react';
 import NumberedCodeSnippet from '../numbered-code-snippet';
 import { highlightSwift } from '../../highlight/swift';
 import { highlightThemeCss } from '../../highlight/theme-css.js';
+import Basic from '../examples/basic';
 
 const testCases = {};
 
@@ -48,16 +50,8 @@ class DDSCircleLayerTutorialViewController: UIViewController, MGLMapViewDelegate
 }`;
 
 testCases.basic = {
-  component: NumberedCodeSnippet,
   description: 'Basic',
-  props: {
-    code: code,
-    highlightedCode: highlightSwift(code),
-    maxHeight: 450,
-    highlightThemeCss: highlightThemeCss,
-    copyRanges: [[6, 17]],
-    onCopy: () => {}
-  }
+  element: <Basic />
 };
 
 testCases.noCollapse = {
@@ -69,7 +63,36 @@ testCases.noCollapse = {
     highlightedCode: highlightSwift(code),
     maxHeight: 450,
     highlightThemeCss: highlightThemeCss,
-    copyRanges: [[21, 23], [38, 38]],
+    copyRanges: [
+      [21, 23],
+      [38, 38]
+    ],
+    onCopy: () => {}
+  }
+};
+
+testCases.firstLine = {
+  component: NumberedCodeSnippet,
+  description: 'First line',
+  props: {
+    code: code,
+    highlightedCode: highlightSwift(code),
+    maxHeight: 450,
+    highlightThemeCss: highlightThemeCss,
+    copyRanges: [[1, 5]],
+    onCopy: () => {}
+  }
+};
+
+testCases.lastLine = {
+  component: NumberedCodeSnippet,
+  description: 'Last line',
+  props: {
+    code: code,
+    highlightedCode: highlightSwift(code),
+    maxHeight: 450,
+    highlightThemeCss: highlightThemeCss,
+    copyRanges: [[38, 42]],
     onCopy: () => {}
   }
 };

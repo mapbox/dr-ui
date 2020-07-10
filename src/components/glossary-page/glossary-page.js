@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 export default class GlossaryPage extends React.PureComponent {
   makeSectionComponents(terms) {
-    return terms.map(term => {
+    return terms.map((term) => {
       return (
         <GlossarySection
           key={term.letter}
@@ -16,7 +16,7 @@ export default class GlossaryPage extends React.PureComponent {
   }
 
   render() {
-    const sortBy = key => (a, b) =>
+    const sortBy = (key) => (a, b) =>
       a[key].toLowerCase() > b[key].toLowerCase()
         ? 1
         : b[key].toLowerCase() > a[key].toLowerCase()
@@ -30,10 +30,10 @@ export default class GlossaryPage extends React.PureComponent {
         const letter = entry.title[0].toLowerCase();
         // find all the entries that start with "letter" and then sort by title
         const entries = this.props.entries
-          .filter(e => e.title[0].toLowerCase() === letter)
+          .filter((e) => e.title[0].toLowerCase() === letter)
           .sort(sortBy('title'));
         // if the letter doesn't exist in "arr" yet, push the letter with matching entries
-        if (!arr.filter(l => l.letter === letter).length)
+        if (!arr.filter((l) => l.letter === letter).length)
           arr.push({ letter, entries });
         return arr;
       }, [])

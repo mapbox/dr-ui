@@ -6,7 +6,7 @@ import themes from '../themes';
 const ccc = new ColorContrastChecker();
 
 describe('themes', () => {
-  Object.keys(themes).forEach(theme => {
+  Object.keys(themes).forEach((theme) => {
     describe(`theme: ${theme}`, () => {
       test('has label', () => {
         expect(themes[theme].label).toBeDefined();

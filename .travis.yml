@@ -4,8 +4,7 @@ node_js:
 sudo: false
 notifications:
   email: false
-cache:
-  directories:
-    - node_modules
-git:
-  depth: 3
+
+scripts:
+  - npm run build-docs
+  - npm test

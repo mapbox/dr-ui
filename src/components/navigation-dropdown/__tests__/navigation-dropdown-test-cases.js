@@ -1,23 +1,11 @@
-import NavigationDropdown from '../navigation-dropdown';
+import React from 'react';
+import Basic from '../examples/basic';
 
 const testCases = {};
 
 testCases.basic = {
   description: 'Basic',
-  component: NavigationDropdown,
-  props: {
-    currentPath: 'Feedback',
-    options: [
-      {
-        label: 'NavigationAccordion',
-        value: 'NavigationAccordion'
-      },
-      {
-        label: 'Feedback',
-        value: 'Feedback'
-      }
-    ]
-  }
+  element: <Basic />
 };
 
 export { testCases };

@@ -29,10 +29,23 @@ exports[`page-layout Basic renders as expected 1`] = `
           <div
             className="txt-l color-blue txt-fancy mb12 block-mm none mx24"
           >
-            Some title
+            My page title
           </div>
-          <div>
-            Some content
+          <div
+            className="px24"
+          >
+            <a
+              className="link block mb6"
+              href="#section-1"
+            >
+              Section 1
+            </a>
+            <a
+              className="link block mb6"
+              href="#section-2"
+            >
+              Section 2
+            </a>
           </div>
         </div>
       </div>
@@ -42,8 +55,31 @@ exports[`page-layout Basic renders as expected 1`] = `
     className="col col--8-mm  col--12 mt24-mm mb60 pr0-mm px36-mm"
     id="docs-content"
   >
-    <div>
-      Doc content
+    <div
+      className="prose"
+    >
+      <h1>
+        PageLayout
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <h2
+        id="section-1"
+      >
+        Section 1
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <h2
+        id="section-2"
+      >
+        Section 2
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
     </div>
   </div>
 </div>

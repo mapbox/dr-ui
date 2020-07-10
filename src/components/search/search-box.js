@@ -54,7 +54,9 @@ class SearchBox extends React.Component {
     values = []
   }) => {
     const value = values[0];
-    const siteFilter = options.filter(opt => opt.value === this.props.site)[0];
+    const siteFilter = options.filter(
+      (opt) => opt.value === this.props.site
+    )[0];
 
     return siteFilter ? (
       <div className="py12 border-b border--gray-faint mx6">
@@ -65,7 +67,7 @@ class SearchBox extends React.Component {
               className={`toggle py3 ${
                 value === siteFilter.value ? 'bg-gray color-white' : ''
               }`}
-              onClick={e => {
+              onClick={(e) => {
                 e.preventDefault();
                 // track click
                 if (window && window.analytics) {
@@ -84,7 +86,7 @@ class SearchBox extends React.Component {
 
           <div className="toggle-container">
             <button
-              onClick={e => {
+              onClick={(e) => {
                 e.preventDefault();
                 onRemove(value);
               }}
@@ -106,7 +108,7 @@ class SearchBox extends React.Component {
       <Downshift
         id={this.props.inputId}
         inputValue={this.props.searchTerm}
-        onChange={selection => {
+        onChange={(selection) => {
           // track click
           if (window && window.analytics) {
             analytics.track('Searched docs', {
@@ -117,7 +119,7 @@ class SearchBox extends React.Component {
           this.props.trackClickThrough(selection.id.raw); // track selection click through
           window.open(selection.url.raw, '_self'); // open selection in current window
         }}
-        onInputValueChange={newValue => {
+        onInputValueChange={(newValue) => {
           if (props.searchTerm === newValue) return;
           props.setSearchTerm(newValue, { debounce: 1500 });
           // track query
@@ -129,7 +131,7 @@ class SearchBox extends React.Component {
         }}
         itemToString={() => props.searchTerm}
       >
-        {downshiftProps => {
+        {(downshiftProps) => {
           const {
             getInputProps,
             isOpen,
@@ -166,7 +168,7 @@ class SearchBox extends React.Component {
                 )}
               </label>
               <input
-                ref={input => {
+                ref={(input) => {
                   this.docsSeachInput = input;
                 }}
                 placeholder={this.props.placeholder}

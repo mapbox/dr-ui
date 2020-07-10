@@ -3,36 +3,16 @@ import Feedback from '../feedback';
 import React from 'react';
 import PageLayout from '../../page-layout/page-layout';
 import NavigationAccordion from '../../navigation-accordion/navigation-accordion';
-import TopbarSticker from '../../topbar-sticker/topbar-sticker';
+import Topbar from '../../topbar/topbar';
 import ProductMenu from '../../product-menu/product-menu';
+import Basic from '../examples/basic';
 
 const testCases = {};
 
 testCases.basic = {
   component: Feedback,
   description: 'Basic (sends user information as `crocsfan19`)',
-  props: {
-    site: 'dr-ui',
-    webhook: {
-      staging:
-        'https://evj5gwoa8j.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
-      production:
-        'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook'
-    },
-    preferredLanguage: 'Swift',
-    user: {
-      id: 'crocsfan19',
-      email: 'crocsfan19@mapbox.com',
-      plan: {
-        id: 'starter'
-      }
-    },
-    section: 'LngLat',
-    location: {
-      pathname: '/dr-ui/feedback/',
-      hash: '#lnglat'
-    }
-  }
+  element: <Basic />
 };
 
 testCases.type = {
@@ -77,7 +57,7 @@ testCases.common = {
   description: 'Feedback placement (sends anonymous user information)',
   element: (
     <div>
-      <TopbarSticker>
+      <Topbar>
         <div className="limiter">
           <div className="grid grid--gut36 mr-neg36 mr0-mm">
             <div className="col col--4-mm col--12">
@@ -90,7 +70,7 @@ testCases.common = {
             </div>
           </div>
         </div>
-      </TopbarSticker>
+      </Topbar>
       <div className="limiter">
         <PageLayout
           sidebarTitle="Section title"

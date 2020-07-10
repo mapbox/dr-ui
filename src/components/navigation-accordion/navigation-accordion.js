@@ -60,7 +60,7 @@ class NavigationAccordion extends React.PureComponent {
     }
   }
 
-  buildTag = item => {
+  buildTag = (item) => {
     const tagProps = {
       theme: item.tag,
       customLabel: item.customTagProps
@@ -128,12 +128,12 @@ class NavigationAccordion extends React.PureComponent {
 
     const secondLevelContent =
       props.contents.secondLevelItems &&
-      props.contents.secondLevelItems.map(item => {
+      props.contents.secondLevelItems.map((item) => {
         const isActive = state.activeh2 === item.path;
         let openSubItems = isActive;
         const subItems =
           item.thirdLevelItems &&
-          item.thirdLevelItems.map(subItem => {
+          item.thirdLevelItems.map((subItem) => {
             const isActive = state.activeh3 === subItem.path;
             if (isActive) openSubItems = true;
             return (

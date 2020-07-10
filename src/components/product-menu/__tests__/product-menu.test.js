@@ -3,16 +3,14 @@ import renderer from 'react-test-renderer';
 import { testCases } from './product-menu-test-cases.js';
 
 describe('product-menu', () => {
-  describe(testCases.mapboxMenu.description, () => {
+  describe(testCases.basic.description, () => {
     let testCase;
     let wrapper;
     let tree;
 
     beforeEach(() => {
-      testCase = testCases.mapboxMenu;
-      wrapper = renderer.create(
-        React.createElement(testCase.component, testCase.props)
-      );
+      testCase = testCases.basic;
+      wrapper = renderer.create(testCase.element);
       tree = wrapper.toJSON();
     });
 
@@ -80,6 +78,21 @@ describe('product-menu', () => {
 
     beforeEach(() => {
       testCase = testCases.beta;
+      wrapper = renderer.create(testCase.element);
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
+  describe(testCases.betaLong.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.betaLong;
       wrapper = renderer.create(
         React.createElement(testCase.component, testCase.props)
       );

@@ -50,7 +50,7 @@ exports[`contextless-android-activity-toggle Basic renders as expected 1`] = `
               className="pr12"
               style={
                 Object {
-                  "paddingLeft": 26.45,
+                  "paddingLeft": 55.349999999999994,
                 }
               }
             >
@@ -72,7 +72,7 @@ exports[`contextless-android-activity-toggle Basic renders as expected 1`] = `
               className="pr12"
               style={
                 Object {
-                  "paddingLeft": 26.45,
+                  "paddingLeft": 55.349999999999994,
                 }
               }
             >
@@ -94,7 +94,7 @@ exports[`contextless-android-activity-toggle Basic renders as expected 1`] = `
               className="pr12"
               style={
                 Object {
-                  "paddingLeft": 26.45,
+                  "paddingLeft": 12,
                 }
               }
             >
@@ -116,7 +116,7 @@ exports[`contextless-android-activity-toggle Basic renders as expected 1`] = `
               className="pr12"
               style={
                 Object {
-                  "paddingLeft": 40.9,
+                  "paddingLeft": 69.8,
                 }
               }
             >
@@ -138,7 +138,7 @@ exports[`contextless-android-activity-toggle Basic renders as expected 1`] = `
               className="pr12"
               style={
                 Object {
-                  "paddingLeft": 40.9,
+                  "paddingLeft": 12,
                 }
               }
             >
@@ -160,7 +160,7 @@ exports[`contextless-android-activity-toggle Basic renders as expected 1`] = `
               className="pr12"
               style={
                 Object {
-                  "paddingLeft": 40.9,
+                  "paddingLeft": 69.8,
                 }
               }
             >
@@ -182,7 +182,7 @@ exports[`contextless-android-activity-toggle Basic renders as expected 1`] = `
               className="pr12"
               style={
                 Object {
-                  "paddingLeft": 55.349999999999994,
+                  "paddingLeft": 84.25,
                 }
               }
             >
@@ -204,7 +204,7 @@ exports[`contextless-android-activity-toggle Basic renders as expected 1`] = `
               className="pr12"
               style={
                 Object {
-                  "paddingLeft": 40.9,
+                  "paddingLeft": 69.8,
                 }
               }
             >
@@ -212,6 +212,107 @@ exports[`contextless-android-activity-toggle Basic renders as expected 1`] = `
                 dangerouslySetInnerHTML={
                   Object {
                     "__html": "<span class=\\"token punctuation\\">}</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 55.349999999999994,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token punctuation\\">}</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 40.9,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token punctuation\\">}</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+          </div>
+        </code>
+      </pre>
+      <div
+        className="absolute z2 top right mr6 mt6 color-white"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`contextless-android-activity-toggle Kotlin only renders as expected 1`] = `
+<div
+  className="my24 prose"
+>
+  <div
+    className="my24"
+  >
+    
+    <div
+      className="relative round z0 scroll-styled scroll-auto"
+      style={
+        Object {
+          "maxHeight": 480,
+        }
+      }
+    >
+      <pre>
+        <code
+          className="px0 hljs"
+        >
+          <div
+            className="relative z2"
+            data-chunk-code="chunk-0"
+          >
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "map<span class=\\"token operator\\">?</span><span class=\\"token punctuation\\">.</span>getStyle <span class=\\"token punctuation\\">{</span>",
                   }
                 }
                 style={
@@ -233,7 +334,29 @@ exports[`contextless-android-activity-toggle Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token punctuation\\">}</span>",
+                    "__html": "val settlementLabelLayer <span class=\\"token operator\\">=</span> it<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getLayer</span><span class=\\"token punctuation\\">(</span><span class=\\"token string\\">\\"settlement-label\\"</span><span class=\\"token punctuation\\">)</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 26.45,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "settlementLabelLayer<span class=\\"token operator\\">?</span><span class=\\"token punctuation\\">.</span><span class=\\"token function\\">setProperties</span><span class=\\"token punctuation\\">(</span><span class=\\"token function\\">textField</span><span class=\\"token punctuation\\">(</span><span class=\\"token string\\">\\"{name_ru}\\"</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">)</span>",
                   }
                 }
                 style={
@@ -255,7 +378,7 @@ exports[`contextless-android-activity-toggle Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token punctuation\\">}</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
+                    "__html": "<span class=\\"token punctuation\\">}</span>",
                   }
                 }
                 style={
@@ -436,7 +559,7 @@ exports[`contextless-android-activity-toggle Two languages renders as expected 1
               className="pr12"
               style={
                 Object {
-                  "paddingLeft": 26.45,
+                  "paddingLeft": 12,
                 }
               }
             >
@@ -480,7 +603,7 @@ exports[`contextless-android-activity-toggle Two languages renders as expected 1
               className="pr12"
               style={
                 Object {
-                  "paddingLeft": 40.9,
+                  "paddingLeft": 12,
                 }
               }
             >
