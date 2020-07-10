@@ -3,7 +3,7 @@
 
 const slugify = require('slugify');
 
-function buildTopics(data) {
+function buildTopics(data, append) {
   let obj = {};
 
   const pages = data.pages.map((p) => ({
@@ -26,7 +26,7 @@ function buildTopics(data) {
       }
     });
 
-  return obj;
+  return Object.assign(obj, append);
 }
 
 module.exports = {

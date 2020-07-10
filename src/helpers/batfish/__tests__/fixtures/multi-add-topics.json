@@ -1,0 +1,83 @@
+{
+  "/docs-starter-kit/help/": {
+    "url": "/docs-starter-kit/help/",
+    "title": "Help",
+    "topics": [
+      {
+        "count": 4,
+        "name": "Tutorials",
+        "url": "/docs-starter-kit/help/#tutorials",
+        "pages": [
+          {
+            "text": "First steps with the Mapbox Maps SDK for Android",
+            "title": "First steps with the Mapbox Maps SDK for Android",
+            "description": "Walk through installing the Mapbox Maps SDK for Android, getting a map on the screen, and changing the map style",
+            "path": "/help/tutorials/first-steps-android-sdk/"
+          },
+          {
+            "text": "Runtime styling for Android",
+            "title": "Runtime styling for Android",
+            "description": "Change various properties of a map based on user interaction and other \"runtime\" situations.",
+            "path": "/help/tutorials/android-runtime-styling-intro/"
+          },
+          {
+            "text": "Data-driven styling for Android",
+            "title": "Data-driven styling for Android",
+            "description": "Create a map for Android that styles a circle based on a data attribute.",
+            "path": "/help/tutorials/android-dds-circle-layer/"
+          },
+          {
+            "text": "Build a store locator for Android",
+            "title": "Build a store locator for Android",
+            "description": "Build a store locator to integrate into a an Android application.",
+            "path": "/help/tutorials/android-store-locator/"
+          }
+        ]
+      },
+      {
+        "count": 3,
+        "name": "Troubleshooting",
+        "url": "/docs-starter-kit/help/#troubleshooting",
+        "pages": [
+          {
+            "text": "Understanding Android APK size",
+            "title": "Understanding Android APK size",
+            "description": "Learn how to measure and optimize your Android app’s size.",
+            "path": "/help/troubleshooting/android-apk-size/"
+          },
+          {
+            "text": "Change your map’s label language",
+            "title": "Change your map’s label language",
+            "description": "Learn about available languages and how to change your map’s language.",
+            "path": "/help/troubleshooting/change-language/"
+          },
+          {
+            "text": "Offline maps",
+            "title": "Offline maps",
+            "description": "Learn about how offline maps work.",
+            "path": "/help/troubleshooting/mobile-offline/"
+          }
+        ]
+      },
+      {
+        "count": 2,
+        "name": "Interactive tools",
+        "url": "/docs-starter-kit/help/#interactive-tools",
+        "pages": [
+          {
+            "text": "Mapbox offline tile count estimator",
+            "title": "Mapbox offline tile count estimator",
+            "description": "Estimate the number of tiles required to download an offline region using the Mapbox Maps SDK for Android and iOS.",
+            "path": "/playground/offline-estimator/"
+          },
+          {
+            "text": "Marker playground",
+            "title": "Marker playground",
+            "description": "Add a marker to the map and view the platform-specific code to recreate this map in your own iOS, Android, React Native, or web application.",
+            "path": "/playground/marker/"
+          }
+        ]
+      }
+    ]
+  }
+}

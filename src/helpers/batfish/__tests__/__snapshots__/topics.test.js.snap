@@ -1,5 +1,184 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`buildTopics append topics 1`] = `
+Object {
+  "/docs-starter-kit/examples/": Object {
+    "contentType": "example",
+    "description": "Replace me.",
+    "language": Array [
+      "JavaScript",
+    ],
+    "layout": "example",
+    "navOrder": 3,
+    "path": "/docs-starter-kit/examples/",
+    "title": "Examples",
+    "topics": Array [
+      Object {
+        "count": 3,
+        "name": "Cool",
+        "pages": Array [
+          Object {
+            "contentType": "example",
+            "description": "Replace me.",
+            "language": Array [
+              "JavaScript",
+            ],
+            "layout": "example",
+            "path": "/docs-starter-kit/examples/example-1/",
+            "text": "Example 1",
+            "thumbnail": "header-image",
+            "title": "Example 1",
+            "topic": Array [
+              "Cool",
+            ],
+            "url": "/docs-starter-kit/examples/example-1/",
+          },
+          Object {
+            "contentType": "example",
+            "description": "Replace me.",
+            "language": Array [
+              "JavaScript",
+            ],
+            "layout": "example",
+            "path": "/docs-starter-kit/examples/example-2/",
+            "text": "Example 2",
+            "thumbnail": "header-image",
+            "title": "Example 2",
+            "topic": Array [
+              "Cool",
+            ],
+            "url": "/docs-starter-kit/examples/example-2/",
+          },
+          Object {
+            "contentType": "example",
+            "description": "Replace me.",
+            "language": Array [
+              "JavaScript",
+            ],
+            "layout": "example",
+            "path": "/docs-starter-kit/examples/example-3/",
+            "text": "Example 3",
+            "thumbnail": "header-image",
+            "title": "Example 3",
+            "topic": Array [
+              "Cool",
+              "Awesome",
+            ],
+            "url": "/docs-starter-kit/examples/example-3/",
+          },
+        ],
+        "url": "/docs-starter-kit/examples/#cool",
+      },
+      Object {
+        "count": 1,
+        "name": "Awesome",
+        "pages": Array [
+          Object {
+            "contentType": "example",
+            "description": "Replace me.",
+            "language": Array [
+              "JavaScript",
+            ],
+            "layout": "example",
+            "path": "/docs-starter-kit/examples/example-3/",
+            "text": "Example 3",
+            "thumbnail": "header-image",
+            "title": "Example 3",
+            "topic": Array [
+              "Cool",
+              "Awesome",
+            ],
+            "url": "/docs-starter-kit/examples/example-3/",
+          },
+        ],
+        "url": "/docs-starter-kit/examples/#awesome",
+      },
+    ],
+  },
+  "/docs-starter-kit/help/": Object {
+    "title": "Help",
+    "topics": Array [
+      Object {
+        "count": 4,
+        "name": "Tutorials",
+        "pages": Array [
+          Object {
+            "description": "Walk through installing the Mapbox Maps SDK for Android, getting a map on the screen, and changing the map style",
+            "path": "/help/tutorials/first-steps-android-sdk/",
+            "text": "First steps with the Mapbox Maps SDK for Android",
+            "title": "First steps with the Mapbox Maps SDK for Android",
+          },
+          Object {
+            "description": "Change various properties of a map based on user interaction and other \\"runtime\\" situations.",
+            "path": "/help/tutorials/android-runtime-styling-intro/",
+            "text": "Runtime styling for Android",
+            "title": "Runtime styling for Android",
+          },
+          Object {
+            "description": "Create a map for Android that styles a circle based on a data attribute.",
+            "path": "/help/tutorials/android-dds-circle-layer/",
+            "text": "Data-driven styling for Android",
+            "title": "Data-driven styling for Android",
+          },
+          Object {
+            "description": "Build a store locator to integrate into a an Android application.",
+            "path": "/help/tutorials/android-store-locator/",
+            "text": "Build a store locator for Android",
+            "title": "Build a store locator for Android",
+          },
+        ],
+        "url": "/docs-starter-kit/help/#tutorials",
+      },
+      Object {
+        "count": 3,
+        "name": "Troubleshooting",
+        "pages": Array [
+          Object {
+            "description": "Learn how to measure and optimize your Android app’s size.",
+            "path": "/help/troubleshooting/android-apk-size/",
+            "text": "Understanding Android APK size",
+            "title": "Understanding Android APK size",
+          },
+          Object {
+            "description": "Learn about available languages and how to change your map’s language.",
+            "path": "/help/troubleshooting/change-language/",
+            "text": "Change your map’s label language",
+            "title": "Change your map’s label language",
+          },
+          Object {
+            "description": "Learn about how offline maps work.",
+            "path": "/help/troubleshooting/mobile-offline/",
+            "text": "Offline maps",
+            "title": "Offline maps",
+          },
+        ],
+        "url": "/docs-starter-kit/help/#troubleshooting",
+      },
+      Object {
+        "count": 2,
+        "name": "Interactive tools",
+        "pages": Array [
+          Object {
+            "description": "Estimate the number of tiles required to download an offline region using the Mapbox Maps SDK for Android and iOS.",
+            "path": "/playground/offline-estimator/",
+            "text": "Mapbox offline tile count estimator",
+            "title": "Mapbox offline tile count estimator",
+          },
+          Object {
+            "description": "Add a marker to the map and view the platform-specific code to recreate this map in your own iOS, Android, React Native, or web application.",
+            "path": "/playground/marker/",
+            "text": "Marker playground",
+            "title": "Marker playground",
+          },
+        ],
+        "url": "/docs-starter-kit/help/#interactive-tools",
+      },
+    ],
+    "url": "/docs-starter-kit/help/",
+  },
+}
+`;
+
 exports[`buildTopics multi structure 1`] = `
 Object {
   "/docs-starter-kit/beta/navigation/examples/": Object {
