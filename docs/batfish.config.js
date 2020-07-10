@@ -16,6 +16,16 @@ module.exports = () => {
       require.resolve('../src/css/prism.css'),
       require.resolve('./src/css/site.css')
     ],
+    applicationWrapperPath: path.join(__dirname, 'src/components/wrapper.js'),
+    jsxtremeMarkdownOptions: {
+      wrapper: path.join(__dirname, 'src/components/page-shell.js'),
+      rehypePlugins: [
+        require('rehype-slug'),
+        require('../src/plugins/add-links-to-headings'),
+        require('../src/plugins/create-sections'),
+        require('../src/plugins/make-table-scroll')
+      ]
+    },
     dataSelectors: {
       navigation: (data) => buildNavigation(siteBasePath, data),
       topics: (data) => buildTopics(data)
