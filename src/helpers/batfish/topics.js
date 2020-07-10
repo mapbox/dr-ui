@@ -38,7 +38,8 @@ function generateTopics(path, pages) {
   const uniqTopics = [
     ...new Set(
       pages.reduce((arr, page) => {
-        if (page.topic) arr = arr.concat(page.topic);
+        if (page.topics) arr = arr.concat(page.topics);
+        if (page.topic) arr.push(page.topic);
         return arr;
       }, [])
     )
@@ -46,8 +47,17 @@ function generateTopics(path, pages) {
   // loop through data and slot them in
   return uniqTopics.reduce((set, topic) => {
     const subPages = pages.reduce((arr, page) => {
+      if (page.topics) {
+        if (page.topics.indexOf(topic) > -1) {
+          arr.push({
+            text: page.title, // needed for sectionednavigation
+            url: page.path, // needed for sectionednavigation
+            ...page
+          });
+        }
+      }
       if (page.topic) {
-        if (page.topic.indexOf(topic) > -1) {
+        if (page.topic === topic) {
           arr.push({
             text: page.title, // needed for sectionednavigation
             url: page.path, // needed for sectionednavigation
@@ -57,6 +67,7 @@ function generateTopics(path, pages) {
       }
       return arr;
     }, []);
+
     set.push({
       name: topic,
       pages: subPages,

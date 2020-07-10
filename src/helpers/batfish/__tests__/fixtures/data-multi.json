@@ -18,7 +18,7 @@
         "description": "Replace me.",
         "contentType": "example",
         "language": ["JavaScript"],
-        "topic": ["Cool"],
+        "topics": ["Cool"],
         "thumbnail": "header-image",
         "layout": "example"
       }
@@ -31,7 +31,7 @@
         "description": "Replace me.",
         "contentType": "example",
         "language": ["JavaScript"],
-        "topic": ["Cool"],
+        "topics": ["Cool"],
         "thumbnail": "header-image",
         "layout": "example"
       }
@@ -56,7 +56,7 @@
         "description": "Replace me.",
         "contentType": "example",
         "language": ["JavaScript"],
-        "topic": ["Cool", "Awesome"],
+        "topics": ["Cool", "Awesome"],
         "thumbnail": "header-image",
         "layout": "example"
       }
@@ -169,7 +169,7 @@
         "description": "Replace me.",
         "contentType": "example",
         "language": ["JavaScript"],
-        "topic": ["Cool"],
+        "topics": ["Cool"],
         "thumbnail": "header-image",
         "layout": "example"
       }
@@ -182,7 +182,7 @@
         "description": "Replace me.",
         "contentType": "example",
         "language": ["JavaScript"],
-        "topic": ["Cool"],
+        "topics": ["Cool"],
         "thumbnail": "header-image",
         "layout": "example"
       }
@@ -195,7 +195,7 @@
         "description": "Replace me.",
         "contentType": "example",
         "language": ["JavaScript"],
-        "topic": ["Cool", "Awesome"],
+        "topics": ["Cool", "Awesome"],
         "thumbnail": "header-image",
         "layout": "example"
       }
@@ -320,7 +320,7 @@
         "description": "Replace me.",
         "contentType": "example",
         "language": ["JavaScript"],
-        "topic": ["Cool"],
+        "topics": ["Cool"],
         "thumbnail": "header-image",
         "layout": "example"
       }
@@ -333,7 +333,7 @@
         "description": "Replace me.",
         "contentType": "example",
         "language": ["JavaScript"],
-        "topic": ["Cool"],
+        "topics": ["Cool"],
         "thumbnail": "header-image",
         "layout": "example"
       }
@@ -346,7 +346,7 @@
         "description": "Replace me.",
         "contentType": "example",
         "language": ["JavaScript"],
-        "topic": ["Cool", "Awesome"],
+        "topics": ["Cool", "Awesome"],
         "thumbnail": "header-image",
         "layout": "example"
       }
@@ -471,7 +471,7 @@
         "description": "Replace me.",
         "contentType": "example",
         "language": ["JavaScript"],
-        "topic": ["Cool"],
+        "topics": ["Cool"],
         "thumbnail": "header-image",
         "layout": "example"
       }
@@ -484,7 +484,7 @@
         "description": "Replace me.",
         "contentType": "example",
         "language": ["JavaScript"],
-        "topic": ["Cool"],
+        "topics": ["Cool"],
         "thumbnail": "header-image",
         "layout": "example"
       }
@@ -497,7 +497,7 @@
         "description": "Replace me.",
         "contentType": "example",
         "language": ["JavaScript"],
-        "topic": ["Cool", "Awesome"],
+        "topics": ["Cool", "Awesome"],
         "thumbnail": "header-image",
         "layout": "example"
       }
