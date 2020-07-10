@@ -130,7 +130,7 @@ export default class Basic extends React.Component {
                     layout: 'example',
                     path: '/PageLayout/example-3/',
                     text: 'Example 3',
-                    thumbnail: 'header-image',
+                    thumbnail: '/files/ios-horizontal.png',
                     title: 'Example 3',
                     topic: ['Cool', 'Awesome'],
                     url: '/PageLayout/example-3/'

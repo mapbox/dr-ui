@@ -126,6 +126,7 @@ Each `layout` is a configuration of different components. You can override any l
 - `sidebar` - one of: `toc`, `accordion`, `sectioned`, `none`
 - `sidebarTheme` - Mapbox Assembly class names to style the sidebar container.
 - `showCards` - enables `CardsContainer`
+- `fullWidthCards` - makes CardContainer full width
    */
   frontMatter: PropTypes.shape({
     headings: PropTypes.array,
@@ -142,7 +143,8 @@ Each `layout` is a configuration of different components. You can override any l
     includeFilterBar: PropTypes.bool,
     sidebar: PropTypes.oneOf(['toc', 'accordion', 'sectioned', 'none']),
     sidebarTheme: PropTypes.string,
-    showCards: PropTypes.bool
+    showCards: PropTypes.bool,
+    fullWidthCards: PropTypes.bool
   }).isRequired,
   /**
 - `navTabs` - links to be shown in the `TabList` of `TopBarSticker`, formatted as an array of object: `[{"href": "/overview", "id": "overview", "label": "Overview"}]`

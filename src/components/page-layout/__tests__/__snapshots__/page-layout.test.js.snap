@@ -1039,7 +1039,15 @@ exports[`page-layout Example (index) layout renders as expected 1`] = `
                       <div
                         className="relative h120 mb6"
                       >
-                        <div />
+                        <div
+                          className="absolute top bottom w-full h-full round"
+                          style={
+                            Object {
+                              "background": "url(/files/ios-horizontal.png)",
+                              "backgroundSize": "100%",
+                            }
+                          }
+                        />
                       </div>
                       <div>
                         <div
