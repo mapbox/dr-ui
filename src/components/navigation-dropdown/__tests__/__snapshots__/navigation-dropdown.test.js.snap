@@ -9,7 +9,7 @@ exports[`navigation-dropdown Basic renders as expected 1`] = `
     data-inclusive-menu-opens="navigate-this-section"
     type="button"
   >
-    Feedback
+    Title one
     <div
       aria-hidden="true"
       className="select-arrow"
@@ -20,18 +20,18 @@ exports[`navigation-dropdown Basic renders as expected 1`] = `
     id="navigate-this-section"
   >
     <button
-      className="block w-full px12 py3 link link--gray bg-gray-faint-on-hover"
-      onClick={[Function]}
-      type="button"
-    >
-      NavigationAccordion
-    </button>
-    <button
       className="block w-full px12 py3 link link--gray bg-gray-faint-on-hover txt-bold"
       onClick={[Function]}
       type="button"
     >
-      Feedback
+      Title one
+    </button>
+    <button
+      className="block w-full px12 py3 link link--gray bg-gray-faint-on-hover"
+      onClick={[Function]}
+      type="button"
+    >
+      Title two
     </button>
   </div>
 </div>

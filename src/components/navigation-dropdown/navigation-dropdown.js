@@ -14,7 +14,7 @@ class NavigationDropdown extends React.Component {
     this.menu = null;
   }
 
-  saveButtonRef = ref => {
+  saveButtonRef = (ref) => {
     this.buttonNode = ref;
   };
 
@@ -39,7 +39,7 @@ class NavigationDropdown extends React.Component {
           id={this.props.id}
           className="absolute bg-white round py6 mt3 border border--gray-light shadow-darken10 z4  hmax300 w-full scroll-auto scroll-styled "
         >
-          {options.map(option => {
+          {options.map((option) => {
             return (
               <MenuItem
                 key={option.label}
@@ -104,7 +104,7 @@ MenuItem.propTypes = {
 // returns a label for small devices
 // and a label for large devices
 function getLabel(options, currentPath) {
-  return options.filter(option => {
+  return options.filter((option) => {
     return currentPath === option.value;
   })[0].label;
 }

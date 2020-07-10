@@ -239,7 +239,7 @@ class NavigationAccordion extends React.PureComponent {
           <NavigationDropdown
             id={props.navigationDropdownId}
             currentPath={props.currentPath}
-            options={props.contents.firstLevelItems.map(option => {
+            options={props.contents.firstLevelItems.map((option) => {
               return {
                 label: option.title,
                 value: option.path
