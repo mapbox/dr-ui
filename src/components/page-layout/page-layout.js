@@ -47,7 +47,7 @@ export default class PageLayout extends React.Component {
       frontMatter
     } = this.props;
 
-    const { navOrder } = frontMatter;
+    const { navOrder, noShellHeaderBuffer } = frontMatter;
 
     // determine's if this is a single or multli-level site (the latter has sections)
     const hasSection = findHasSection(navigation, location.pathname);
@@ -71,7 +71,7 @@ export default class PageLayout extends React.Component {
 
     return (
       <div>
-        <div className="shell-header-buffer" />
+        {!noShellHeaderBuffer && <div className="shell-header-buffer" />}
         <PageLayoutTopbar
           constants={constants}
           navigation={switchedNavigation}
@@ -127,6 +127,7 @@ Each `layout` is a configuration of different components. You can override any l
 - `sidebarTheme` - Mapbox Assembly class names to style the sidebar container.
 - `showCards` - enables `CardsContainer`
 - `fullWidthCards` - makes CardContainer full width
+- `unProse` - if `true`, remove the "prose" class from PageLayout, this is helpful for non-content pages.
    */
   frontMatter: PropTypes.shape({
     headings: PropTypes.array,
@@ -144,7 +145,9 @@ Each `layout` is a configuration of different components. You can override any l
     sidebar: PropTypes.oneOf(['toc', 'accordion', 'sectioned', 'none']),
     sidebarTheme: PropTypes.string,
     showCards: PropTypes.bool,
-    fullWidthCards: PropTypes.bool
+    fullWidthCards: PropTypes.bool,
+    unProse: PropTypes.bool,
+    noShellHeaderBuffer: PropTypes.bool
   }).isRequired,
   /**
 - `navTabs` - links to be shown in the `TabList` of `TopBarSticker`, formatted as an array of object: `[{"href": "/overview", "id": "overview", "label": "Overview"}]`

@@ -36,7 +36,7 @@ export default class Content extends React.Component {
   };
   render() {
     const { children, frontMatter, layoutConfig } = this.props;
-    const { title } = frontMatter;
+    const { title, unProse } = frontMatter;
     const { hideFeedback, hideTitle, showCards, sidebar } = layoutConfig;
 
     return (
@@ -48,7 +48,11 @@ export default class Content extends React.Component {
             'px24-mm': sidebar === 'none'
           })}
         >
-          <div className="prose">
+          <div
+            className={classnames('', {
+              prose: unProse !== true
+            })}
+          >
             {!hideTitle && <h1 className="txt-fancy">{title}</h1>}
             {children}
             {!hideFeedback ? this.renderFeedback() : ''}
@@ -63,7 +67,8 @@ export default class Content extends React.Component {
 Content.propTypes = {
   children: PropTypes.node,
   frontMatter: PropTypes.shape({
-    title: PropTypes.string.isRequired
+    title: PropTypes.string.isRequired,
+    unProse: PropTypes.bool
   }).isRequired,
   location: PropTypes.object.isRequired,
   parentPath: PropTypes.string,
