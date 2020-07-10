@@ -208,8 +208,10 @@ class Popover extends React.Component {
         trapFocus={true}
         popoverProps={{
           placement: 'bottom',
-          themePopover:
-            'round shadow-darken25 h480 scroll-auto px12 py12 scroll-styled'
+          passthroughProps: {
+            className:
+              'round shadow-darken25 h480 scroll-auto px12 py12 scroll-styled'
+          }
         }}
         triggerProps={{
           'data-test': 'more-dropdown-menu'
