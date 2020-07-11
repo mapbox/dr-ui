@@ -1,9 +1,8 @@
 # Changelog
 
-## Master
+## Main
 
 - Update `NavigationDropdown` to use accessible menu.
-  - 🚨`onDropdownChange` prop for `NavigationAccordion` and `onChange` prop for `NavigationDropdown` is now defunct and should be removed. This function is set automatically in `NavigationDropdown`.
   - 🚨`dropdownOptions` prop for `NavigationDropdown` is now `options`.
 
 ## 0.29.2
