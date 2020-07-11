@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Downshift from 'downshift';
 import classnames from 'classnames';
 
-export default class NavigationDropdown extends React.Component {
+class NavigationDropdown extends React.Component {
   render() {
     const { options, currentPath, id, onChange } = this.props;
     const selectedItem = options.filter((f) => f.value === currentPath)[0];
@@ -82,3 +82,5 @@ NavigationDropdown.propTypes = {
   ).isRequired,
   onChange: PropTypes.func
 };
+
+export default NavigationDropdown;
