@@ -92,6 +92,9 @@ class NavigationDropdown extends React.Component {
 NavigationDropdown.defaultProps = {
   id: 'navigate-this-section',
   onChange: (selection) => {
+    if (window && window.analytics) {
+      analytics.track('Selected item from NavigationDropdown', selection);
+    }
     if (selection.value && window) window.location = selection.value;
   },
   themeButton: 'select select--stroke bg-white round-full txt-truncate relative'
