@@ -19,9 +19,6 @@ export default class Basic extends React.Component {
             value: 'page-two'
           }
         ]}
-        onChange={(selection) => {
-          console.log('selection', selection);
-        }}
       />
     );
   }

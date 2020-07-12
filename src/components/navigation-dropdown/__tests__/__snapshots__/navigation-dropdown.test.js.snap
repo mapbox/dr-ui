@@ -1,41 +1,83 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`navigation-dropdown API Reference renders as expected 1`] = `
-<div
-  className="dr-ui--navigation-dropdown"
->
+<div>
   <div
-    aria-expanded={false}
-    aria-haspopup="listbox"
-    aria-labelledby="api-reference-menu-label"
-    aria-owns={null}
-    role="combobox"
+    className="dr-ui--navigation-dropdown"
   >
-    <label
-      className="hide-visually"
-      htmlFor="api-reference-menu-input"
-      id="api-reference-menu-label"
+    <div
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      aria-labelledby="api-reference-menu-label"
+      aria-owns={null}
+      role="combobox"
     >
-      Navigation
-    </label>
-    <button
-      aria-haspopup={true}
-      aria-label="open menu"
-      className="relative inline-block px6 mr24 w-full py12"
-      data-toggle={true}
-      onBlur={[Function]}
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      role="button"
-      type="button"
+      <label
+        className="hide-visually"
+        htmlFor="api-reference-menu-input"
+        id="api-reference-menu-label"
+      >
+        Navigation
+      </label>
+      <button
+        aria-haspopup={true}
+        aria-label="open menu"
+        className="relative inline-block px6 mr24 w-full py12"
+        data-toggle={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        role="button"
+        type="button"
+      >
+        API Reference
+        <div
+          aria-hidden="true"
+          className="select-arrow"
+        />
+      </button>
+    </div>
+  </div>
+  <p>
+    Nested example. Non-value items are treated as headings:
+  </p>
+  <div
+    className="dr-ui--navigation-dropdown"
+  >
+    <div
+      aria-expanded={false}
+      aria-haspopup="listbox"
+      aria-labelledby="api-reference-menu-nested-label"
+      aria-owns={null}
+      role="combobox"
     >
-      API Reference
-      <div
-        aria-hidden="true"
-        className="select-arrow"
-      />
-    </button>
+      <label
+        className="hide-visually"
+        htmlFor="api-reference-menu-nested-input"
+        id="api-reference-menu-nested-label"
+      >
+        Navigation
+      </label>
+      <button
+        aria-haspopup={true}
+        aria-label="open menu"
+        className="relative inline-block px6 mr24 w-full py12"
+        data-toggle={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        role="button"
+        type="button"
+      >
+        API Reference
+        <div
+          aria-hidden="true"
+          className="select-arrow"
+        />
+      </button>
+    </div>
   </div>
 </div>
 `;

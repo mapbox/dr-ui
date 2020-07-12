@@ -4,6 +4,30 @@ import Downshift from 'downshift';
 import classnames from 'classnames';
 
 class NavigationDropdown extends React.Component {
+  renderItem = (item, highlightedIndex, getItemProps, index) => {
+    // don't show "latest" flag if the previous item is also latest
+    const prevItem = this.props.options[index - 1];
+    const prevItemIsLatest = prevItem && prevItem.latest;
+
+    return (
+      <li
+        className={classnames('block w-full px12', {
+          'bg-gray-faint': highlightedIndex === index, // change color on highlight, match hover
+          'link bg-gray-faint-on-hover py3': item.value, // all items with a value are links
+          'link--gray': !item.latest && item.value, // all non latest links are gray
+          'txt-bold': item.latest, // every latest item is bold
+          'link--blue': item.latest && item.value, // latest items with value are blue links
+          mt18: !item.value && index !== 0 // add margin-top to non link elements
+        })}
+        key={`${item.label}-${item.value}`}
+        {...getItemProps({ item, index, disabled: item.value ? false : true })}
+      >
+        {item.label}
+        {item.latest && !prevItemIsLatest ? <span> &mdash; latest</span> : ''}
+      </li>
+    );
+  };
+
   render() {
     const {
       options,
@@ -16,6 +40,7 @@ class NavigationDropdown extends React.Component {
     const selectedItem = currentPath
       ? options.filter((f) => f.value === currentPath)[0]
       : undefined;
+
     return (
       <div className="dr-ui--navigation-dropdown">
         <Downshift
@@ -44,25 +69,16 @@ class NavigationDropdown extends React.Component {
               {isOpen && (
                 <ul
                   {...getMenuProps()}
-                  className="absolute bg-white round shadow-darken25 hmax240 scroll-auto py6 mt3 scroll-styled z4"
+                  className="absolute bg-white round shadow-darken25 wmin180 hmax240 scroll-auto py6 mt3 scroll-styled z4"
                 >
-                  {options.map((item, index) => (
-                    <li
-                      className={classnames(
-                        'block w-full px12 py6 link bg-gray-faint-on-hover',
-                        {
-                          'bg-gray-faint': highlightedIndex === index,
-                          'link--gray': !item.latest,
-                          'txt-bold link--blue': item.latest
-                        }
-                      )}
-                      key={item.value}
-                      {...getItemProps({ item, index })}
-                    >
-                      {item.label}
-                      {item.latest ? <span> &mdash; latest stable</span> : ''}
-                    </li>
-                  ))}
+                  {options.map((item, index) => {
+                    return this.renderItem(
+                      item,
+                      highlightedIndex,
+                      getItemProps,
+                      index
+                    );
+                  })}
                 </ul>
               )}
             </div>
@@ -88,7 +104,7 @@ NavigationDropdown.propTypes = {
   options: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string.isRequired,
-      value: PropTypes.string.isRequired,
+      value: PropTypes.string,
       latest: PropTypes.bool
     })
   ).isRequired,
