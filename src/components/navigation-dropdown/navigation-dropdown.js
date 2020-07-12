@@ -28,6 +28,12 @@ class NavigationDropdown extends React.Component {
     );
   };
 
+  selectedItem = (currentPath, options) => {
+    return currentPath
+      ? options.filter((f) => f.value === currentPath)[0]
+      : undefined;
+  };
+
   render() {
     const {
       options,
@@ -37,23 +43,22 @@ class NavigationDropdown extends React.Component {
       themeButton,
       label
     } = this.props;
-    const selectedItem = currentPath
-      ? options.filter((f) => f.value === currentPath)[0]
-      : undefined;
 
     return (
       <div className="dr-ui--navigation-dropdown">
         <Downshift
           id={id}
-          initialSelectedItem={selectedItem}
+          initialSelectedItem={this.selectedItem(currentPath, options)}
           itemToString={(item) => (item ? item.value : '')}
           onChange={(selection) => {
+            // track selection in analytics
             if (window && window.analytics) {
               analytics.track(
                 'Selected item from NavigationDropdown',
                 selection
               );
             }
+            // handle onChange function
             onChange(selection);
           }}
         >
@@ -100,7 +105,8 @@ class NavigationDropdown extends React.Component {
 NavigationDropdown.defaultProps = {
   id: 'navigate-this-section',
   onChange: (selection) => {
-    if (selection.value && window) window.location = selection.value;
+    if (selection && selection.value && window)
+      window.location = selection.value;
   },
   themeButton: 'select select--stroke bg-white round-full txt-truncate relative'
 };
