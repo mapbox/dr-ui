@@ -1,8 +1,48 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`navigation-dropdown API Reference renders as expected 1`] = `
+<div
+  className="dr-ui--navigation-dropdown"
+>
+  <div
+    aria-expanded={false}
+    aria-haspopup="listbox"
+    aria-labelledby="api-reference-menu-label"
+    aria-owns={null}
+    role="combobox"
+  >
+    <label
+      className="hide-visually"
+      htmlFor="api-reference-menu-input"
+      id="api-reference-menu-label"
+    >
+      Navigation
+    </label>
+    <button
+      aria-haspopup={true}
+      aria-label="open menu"
+      className="relative inline-block px6 mr24 w-full py12"
+      data-toggle={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      role="button"
+      type="button"
+    >
+      API Reference
+      <div
+        aria-hidden="true"
+        className="select-arrow"
+      />
+    </button>
+  </div>
+</div>
+`;
+
 exports[`navigation-dropdown Basic renders as expected 1`] = `
 <div
-  className="dr-ui--navigation-dropdown relative"
+  className="dr-ui--navigation-dropdown"
 >
   <div
     aria-expanded={false}
@@ -21,7 +61,7 @@ exports[`navigation-dropdown Basic renders as expected 1`] = `
     <button
       aria-haspopup={true}
       aria-label="open menu"
-      className="select select--stroke bg-white round-full txt-truncate"
+      className="select select--stroke bg-white round-full txt-truncate relative"
       data-toggle={true}
       onBlur={[Function]}
       onClick={[Function]}

@@ -17,4 +17,20 @@ describe('navigation-dropdown', () => {
       expect(tree).toMatchSnapshot();
     });
   });
+
+  describe(testCases.api.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.api;
+      wrapper = renderer.create(testCase.element);
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });
