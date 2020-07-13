@@ -2,7 +2,7 @@
 
 ## Layouts
 
-- Update `NavigationDropdown` to use accessible menu. [#267](https://github.com/mapbox/dr-ui/pull/267)
+- Update `NavigationDropdown` to use accessible menu and support API version. [#267](https://github.com/mapbox/dr-ui/pull/267)
 
 ## 0.29.2
 
