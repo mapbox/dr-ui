@@ -4,60 +4,7 @@ import PopoverTrigger from '@mapbox/mr-ui/popover-trigger';
 import Icon from '@mapbox/mr-ui/icon';
 import classnames from 'classnames';
 
-export default class TabList extends React.PureComponent {
-  /** If you change propTypes, also change propNames. */
-  static propTypes = {
-    items: PropTypes.arrayOf(
-      PropTypes.shape({
-        /** Identifying value for tab list item. */
-        id: PropTypes.string.isRequired,
-        /** The name of the tab to be displayed. */
-        label: PropTypes.oneOfType([PropTypes.string, PropTypes.node])
-          .isRequired,
-        /** Determines if the state of the tab list item is active. */
-        active: PropTypes.bool,
-        /** Link to the page the lab list item should take you to when clicked. */
-        href: PropTypes.string,
-        /** Flag to disable the clickability of an tab list item. */
-        disabled: PropTypes.bool,
-        items: PropTypes.arrayOf(
-          PropTypes.shape({
-            label: PropTypes.bool,
-            title: PropTypes.string.isRequired,
-            href: PropTypes.string.isRequired
-          })
-        )
-      })
-    ).isRequired,
-    /** Callback when an tab list header item is clicked.
-     Note that this should be a function that is passed an `id` argument. */
-    onChange: PropTypes.func,
-    /** Value should coorespond to an `id` within the items array. */
-    activeItem: PropTypes.string,
-    /** Index of the first item in the `items` array that
-     should move to the dropdown on narrow screens. */
-    truncateBy: PropTypes.number,
-    /** If `true`, turn TabList into dropdown. */
-    truncateAll: PropTypes.bool,
-    /** CSS classes to apply to the tab list item. */
-    themeItem: PropTypes.string,
-    /** CSS classes to apply to the active tab list item. */
-    themeItemActive: PropTypes.string,
-    /** CSS classes to apply to items when they are truncated. */
-    themeItemTruncated: PropTypes.string,
-    /** CSS classes to apply to the tab list item when `disabled` is true */
-    themeItemDisabled: PropTypes.string
-  };
-
-  static defaultProps = {
-    truncateAll: false,
-    truncateBy: 2,
-    themeItem: 'border-b-mm border-b--2',
-    themeItemActive: 'border--blue txt-bold',
-    themeItemTruncated: 'border-b--0',
-    themeItemDisabled: 'color-gray-light'
-  };
-
+export default class TabList extends React.Component {
   onChange = (id) => {
     const { onChange } = this.props;
     onChange(id);
@@ -218,6 +165,57 @@ export default class TabList extends React.PureComponent {
     );
   }
 }
+
+TabList.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      /** Identifying value for tab list item. */
+      id: PropTypes.string.isRequired,
+      /** The name of the tab to be displayed. */
+      label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
+      /** Determines if the state of the tab list item is active. */
+      active: PropTypes.bool,
+      /** Link to the page the lab list item should take you to when clicked. */
+      href: PropTypes.string,
+      /** Flag to disable the clickability of an tab list item. */
+      disabled: PropTypes.bool,
+      items: PropTypes.arrayOf(
+        PropTypes.shape({
+          label: PropTypes.bool,
+          title: PropTypes.string.isRequired,
+          href: PropTypes.string.isRequired
+        })
+      )
+    })
+  ).isRequired,
+  /** Callback when an tab list header item is clicked.
+   Note that this should be a function that is passed an `id` argument. */
+  onChange: PropTypes.func,
+  /** Value should coorespond to an `id` within the items array. */
+  activeItem: PropTypes.string,
+  /** Index of the first item in the `items` array that
+   should move to the dropdown on narrow screens. */
+  truncateBy: PropTypes.number,
+  /** If `true`, turn TabList into dropdown. */
+  truncateAll: PropTypes.bool,
+  /** CSS classes to apply to the tab list item. */
+  themeItem: PropTypes.string,
+  /** CSS classes to apply to the active tab list item. */
+  themeItemActive: PropTypes.string,
+  /** CSS classes to apply to items when they are truncated. */
+  themeItemTruncated: PropTypes.string,
+  /** CSS classes to apply to the tab list item when `disabled` is true */
+  themeItemDisabled: PropTypes.string
+};
+
+TabList.defaultProps = {
+  truncateAll: false,
+  truncateBy: 2,
+  themeItem: 'border-b-mm border-b--2',
+  themeItemActive: 'border--blue txt-bold',
+  themeItemTruncated: 'border-b--0',
+  themeItemDisabled: 'color-gray-light'
+};
 
 class Popover extends React.Component {
   render() {
