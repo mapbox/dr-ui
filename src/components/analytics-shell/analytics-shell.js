@@ -2,13 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 import * as Sentry from '@sentry/browser';
-
-const environment =
-  typeof window !== 'undefined'
-    ? /(^|\S+\.)mapbox\.com/.test(window.location.host)
-      ? 'production'
-      : 'staging'
-    : undefined;
+import env from './env';
 
 export default class AnalyticsShell extends React.Component {
   componentDidMount() {
@@ -28,7 +22,7 @@ export default class AnalyticsShell extends React.Component {
     if (!disableSentry) {
       Sentry.init({
         ...sentry,
-        environment
+        environment: env()
       });
     }
   }
