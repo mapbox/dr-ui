@@ -577,6 +577,46 @@ exports[`page-layout Accordion layout renders as expected 1`] = `
       </div>
     </div>
   </div>
+  <div
+    className="fixed block none-mm mx24 my24 z5 bottom right"
+  >
+    <div
+      className="block mx24 my24 z5"
+    >
+      <div
+        className="inline-block"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+      >
+        <button
+          aria-label="Back to top"
+          className="btn--blue w60 h60 px0 round-full shadow-darken25 color-white flex-parent flex-parent--center-main flex-parent--center-cross"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="events-none icon"
+            focusable="false"
+            role="presentation"
+            style={
+              Object {
+                "height": 30,
+                "width": 30,
+              }
+            }
+          >
+            <use
+              xlinkHref="#icon-arrow-up"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
@@ -1098,6 +1138,46 @@ exports[`page-layout Example (index) layout renders as expected 1`] = `
       </div>
     </div>
   </div>
+  <div
+    className="fixed block none-mm mx24 my24 z5 bottom right"
+  >
+    <div
+      className="block mx24 my24 z5"
+    >
+      <div
+        className="inline-block"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+      >
+        <button
+          aria-label="Back to top"
+          className="btn--blue w60 h60 px0 round-full shadow-darken25 color-white flex-parent flex-parent--center-main flex-parent--center-cross"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="events-none icon"
+            focusable="false"
+            role="presentation"
+            style={
+              Object {
+                "height": 30,
+                "width": 30,
+              }
+            }
+          >
+            <use
+              xlinkHref="#icon-arrow-up"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
@@ -1397,6 +1477,46 @@ exports[`page-layout Example page layout renders as expected 1`] = `
           </div>
           
         </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="fixed block none-mm mx24 my24 z5 bottom right"
+  >
+    <div
+      className="block mx24 my24 z5"
+    >
+      <div
+        className="inline-block"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+      >
+        <button
+          aria-label="Back to top"
+          className="btn--blue w60 h60 px0 round-full shadow-darken25 color-white flex-parent flex-parent--center-main flex-parent--center-cross"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="events-none icon"
+            focusable="false"
+            role="presentation"
+            style={
+              Object {
+                "height": 30,
+                "width": 30,
+              }
+            }
+          >
+            <use
+              xlinkHref="#icon-arrow-up"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            />
+          </svg>
+        </button>
       </div>
     </div>
   </div>
@@ -1703,6 +1823,46 @@ exports[`page-layout Page layout renders as expected 1`] = `
       </div>
     </div>
   </div>
+  <div
+    className="fixed block none-mm mx24 my24 z5 bottom right"
+  >
+    <div
+      className="block mx24 my24 z5"
+    >
+      <div
+        className="inline-block"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+      >
+        <button
+          aria-label="Back to top"
+          className="btn--blue w60 h60 px0 round-full shadow-darken25 color-white flex-parent flex-parent--center-main flex-parent--center-cross"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="events-none icon"
+            focusable="false"
+            role="presentation"
+            style={
+              Object {
+                "height": 30,
+                "width": 30,
+              }
+            }
+          >
+            <use
+              xlinkHref="#icon-arrow-up"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
@@ -1945,6 +2105,46 @@ exports[`page-layout full layout renders as expected 1`] = `
           </div>
           
         </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="fixed block none-mm mx24 my24 z5 bottom right"
+  >
+    <div
+      className="block mx24 my24 z5"
+    >
+      <div
+        className="inline-block"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+      >
+        <button
+          aria-label="Back to top"
+          className="btn--blue w60 h60 px0 round-full shadow-darken25 color-white flex-parent flex-parent--center-main flex-parent--center-cross"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="events-none icon"
+            focusable="false"
+            role="presentation"
+            style={
+              Object {
+                "height": 30,
+                "width": 30,
+              }
+            }
+          >
+            <use
+              xlinkHref="#icon-arrow-up"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            />
+          </svg>
+        </button>
       </div>
     </div>
   </div>
