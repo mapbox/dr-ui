@@ -40,6 +40,22 @@ describe('TabList', () => {
     });
   });
 
+  describe(testCases.allDropdown.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.allDropdown;
+      wrapper = renderer.create(testCase.element);
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
+
   describe(testCases.simple.description, () => {
     beforeEach(() => {
       testCase = testCases.simple;

@@ -37,6 +37,8 @@ export default class TabList extends React.PureComponent {
     /** Index of the first item in the `items` array that
      should move to the dropdown on narrow screens. */
     truncateBy: PropTypes.number,
+    /** If `true`, turn TabList into dropdown. */
+    truncateAll: PropTypes.bool,
     /** CSS classes to apply to the tab list item. */
     themeItem: PropTypes.string,
     /** CSS classes to apply to the active tab list item. */
@@ -48,6 +50,7 @@ export default class TabList extends React.PureComponent {
   };
 
   static defaultProps = {
+    truncateAll: false,
     truncateBy: 2,
     themeItem: 'border-b-mm border-b--2',
     themeItemActive: 'border--blue txt-bold',
@@ -60,16 +63,33 @@ export default class TabList extends React.PureComponent {
     onChange(id);
   };
 
+  activeLabel = () => {
+    const defaultLabel = 'Menu';
+    if (!this.props.activeItem) return defaultLabel;
+    const findActiveItem = this.props.items.filter(
+      (f) => f.id === this.props.activeItem
+    );
+    return findActiveItem && findActiveItem[0] && findActiveItem[0].label
+      ? findActiveItem[0].label
+      : defaultLabel;
+  };
+
   render() {
     const {
       items,
       activeItem,
-      truncateBy,
-      themeItem,
-      themeItemActive,
+      truncateAll,
       themeItemTruncated,
       themeItemDisabled
     } = this.props;
+    let { truncateBy, themeItemActive, themeItem } = this.props;
+
+    // if truncateAll, override themes
+    if (truncateAll) {
+      truncateBy = 0;
+      themeItemActive = 'txt-bold';
+      themeItem = '';
+    }
 
     const renderAllItems = (item, truncatedClasses, renderState) => {
       /** The classes that the active item should have. */
@@ -175,10 +195,15 @@ export default class TabList extends React.PureComponent {
         <Popover content={dropdownMenuItems}>
           <button
             aria-label="More"
-            className="px6 py12 mr12 align-l cursor-pointer none-mm"
+            className={classnames('px6 py12 mr12 align-l cursor-pointer', {
+              'none-mm': !truncateAll // do not hide if `truncateAll`
+            })}
             type="button"
           >
-            More +
+            {truncateAll ? this.activeLabel() : 'More'}{' '}
+            <span className="color-gray ml6">
+              <Icon name="chevron-down" inline={true} />
+            </span>
           </button>
         </Popover>
       </div>
@@ -186,8 +211,8 @@ export default class TabList extends React.PureComponent {
 
     return (
       <div className="clearfix">
-        {alwaysRenderedItems}
-        {sometimesHiddenItems}
+        {!truncateAll && alwaysRenderedItems}
+        {!truncateAll && sometimesHiddenItems}
         {moreButton}
       </div>
     );
@@ -257,10 +282,10 @@ class CustomDropdown extends React.Component {
       <Popover content={this.getPopoverContent}>
         <button className="py0">
           {label}
-          <span className="color-gray-light ml6">
+          <span className="color-gray ml6">
             <Icon name="chevron-down" inline={true} />
           </span>
-          <span className="none-mm color-gray-light ml6">
+          <span className="none-mm color-gray ml6">
             <Icon name="share" inline={true} />
           </span>
         </button>

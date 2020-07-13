@@ -63,7 +63,28 @@ exports[`TabList Basic renders as expected 1`] = `
         className="px6 py12 mr12 align-l cursor-pointer none-mm"
         type="button"
       >
-        More +
+        More
+         
+        <span
+          className="color-gray ml6"
+        >
+          <svg
+            className="events-none icon inline-block align-t"
+            focusable="false"
+            role="presentation"
+            style={
+              Object {
+                "height": 18,
+                "width": 18,
+              }
+            }
+          >
+            <use
+              xlinkHref="#icon-chevron-down"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            />
+          </svg>
+        </span>
       </button>
     </div>
   </div>
@@ -128,7 +149,7 @@ exports[`TabList Dropdown renders as expected 1`] = `
           >
             API Reference
             <span
-              className="color-gray-light ml6"
+              className="color-gray ml6"
             >
               <svg
                 className="events-none icon inline-block align-t"
@@ -148,7 +169,7 @@ exports[`TabList Dropdown renders as expected 1`] = `
               </svg>
             </span>
             <span
-              className="none-mm color-gray-light ml6"
+              className="none-mm color-gray ml6"
             >
               <svg
                 className="events-none icon inline-block align-t"
@@ -187,7 +208,75 @@ exports[`TabList Dropdown renders as expected 1`] = `
         className="px6 py12 mr12 align-l cursor-pointer none-mm"
         type="button"
       >
-        More +
+        More
+         
+        <span
+          className="color-gray ml6"
+        >
+          <svg
+            className="events-none icon inline-block align-t"
+            focusable="false"
+            role="presentation"
+            style={
+              Object {
+                "height": 18,
+                "width": 18,
+              }
+            }
+          >
+            <use
+              xlinkHref="#icon-chevron-down"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TabList Use \`truncateAll\` to turn TabList into dropdown. (Used by Help.) renders as expected 1`] = `
+<div
+  className="clearfix"
+>
+  <div
+    className="fl"
+  >
+    <div
+      className="inline-block"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+    >
+      <button
+        aria-label="More"
+        className="px6 py12 mr12 align-l cursor-pointer"
+        type="button"
+      >
+        Specification
+         
+        <span
+          className="color-gray ml6"
+        >
+          <svg
+            className="events-none icon inline-block align-t"
+            focusable="false"
+            role="presentation"
+            style={
+              Object {
+                "height": 18,
+                "width": 18,
+              }
+            }
+          >
+            <use
+              xlinkHref="#icon-chevron-down"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            />
+          </svg>
+        </span>
       </button>
     </div>
   </div>
@@ -303,7 +392,18 @@ exports[`TabList a label contains a node renders 1`] = `
         className="px6 py12 mr12 align-l cursor-pointer none-mm"
         type="button"
       >
-        More +
+        More
+         
+        <span
+          className="color-gray ml6"
+        >
+          <Icon
+            inline={true}
+            name="chevron-down"
+            passthroughProps={Object {}}
+            size={18}
+          />
+        </span>
       </button>
     </Popover>
   </div>
@@ -402,7 +502,18 @@ exports[`TabList links renders 1`] = `
         className="px6 py12 mr12 align-l cursor-pointer none-mm"
         type="button"
       >
-        More +
+        More
+         
+        <span
+          className="color-gray ml6"
+        >
+          <Icon
+            inline={true}
+            name="chevron-down"
+            passthroughProps={Object {}}
+            size={18}
+          />
+        </span>
       </button>
     </Popover>
   </div>
@@ -513,7 +624,18 @@ exports[`TabList simple renders 1`] = `
         className="px6 py12 mr12 align-l cursor-pointer none-mm"
         type="button"
       >
-        More +
+        More
+         
+        <span
+          className="color-gray ml6"
+        >
+          <Icon
+            inline={true}
+            name="chevron-down"
+            passthroughProps={Object {}}
+            size={18}
+          />
+        </span>
       </button>
     </Popover>
   </div>
@@ -634,7 +756,18 @@ exports[`TabList truncate all renders 1`] = `
         className="px6 py12 mr12 align-l cursor-pointer none-mm"
         type="button"
       >
-        More +
+        More
+         
+        <span
+          className="color-gray ml6"
+        >
+          <Icon
+            inline={true}
+            name="chevron-down"
+            passthroughProps={Object {}}
+            size={18}
+          />
+        </span>
       </button>
     </Popover>
   </div>

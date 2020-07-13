@@ -3,6 +3,7 @@ import safeSpy from '../../../test-utils/safe-spy';
 import TabList from '../tab-list';
 import Basic from '../examples/basic';
 import Dropdown from '../examples/dropdown';
+import AllDropdown from '../examples/all-dropdown';
 import Icon from '@mapbox/mr-ui/icon';
 
 const testCases = {};
@@ -15,6 +16,12 @@ testCases.basic = {
 testCases.dropdown = {
   description: 'Dropdown',
   element: <Dropdown />
+};
+
+testCases.allDropdown = {
+  description:
+    'Use `truncateAll` to turn TabList into dropdown. (Used by Help.)',
+  element: <AllDropdown />
 };
 
 testCases.simple = {
