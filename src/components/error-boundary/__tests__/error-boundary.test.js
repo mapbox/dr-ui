@@ -1,39 +1,41 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { testCases } from './error-boundary-test-cases.js';
+import { mount } from 'enzyme';
 
 describe('error-boundary', () => {
   describe(testCases.basic.description, () => {
-    let testCase;
-    let wrapper;
-    let tree;
-
-    beforeEach(() => {
-      testCase = testCases.basic;
-      wrapper = renderer.create(testCase.element);
-      tree = wrapper.toJSON();
-    });
+    const testCase = testCases.basic;
 
     test('renders as expected', () => {
-      expect(tree).toMatchSnapshot();
+      const wrapper = renderer.create(testCase.element).toJSON();
+      expect(wrapper).toMatchSnapshot();
+    });
+
+    test('no error', () => {
+      const wrapper = mount(testCase.element);
+      expect(wrapper.state()).toEqual(null);
     });
   });
 
   describe(testCases.oops.description, () => {
-    let testCase;
-    let wrapper;
-    let tree;
-
-    beforeEach(() => {
-      testCase = testCases.oops;
-      wrapper = renderer.create(
-        React.createElement(testCase.component, testCase.props)
-      );
-      tree = wrapper.toJSON();
-    });
+    const testCase = testCases.oops;
 
     test('renders as expected', () => {
-      expect(tree).toMatchSnapshot();
+      const wrapper = renderer
+        .create(React.createElement(testCase.component, testCase.props))
+        .toJSON();
+      expect(wrapper).toMatchSnapshot();
+    });
+
+    test('error is caught', () => {
+      const wrapper = mount(
+        React.createElement(testCase.component, testCase.props)
+      );
+      const err = new Error(
+        'BadFunction(...): Nothing was returned from render. This usually means a return statement is missing. Or, to render nothing, return null.'
+      );
+      expect(wrapper.state()).toEqual({ hasError: true, error: err });
     });
   });
 });
