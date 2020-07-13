@@ -69,10 +69,10 @@ function NavigationDropdown(props) {
       <li
         className={classnames('block w-full px12', {
           'bg-gray-faint': highlightedIndex === index, // change color on highlight, match hover
-          'link bg-gray-faint-on-hover py3': item.path, // all items with a value are links
+          'link bg-gray-faint-on-hover py3': item.path, // all items with a path are links
           'link--gray': !item.latest && item.path, // all non latest links are gray
           'txt-bold': item.latest, // every latest item is bold
-          'link--blue': item.latest && item.path, // latest items with value are blue links
+          'link--blue': item.latest && item.path, // latest items with path are blue links
           mt18: !item.path && index !== 0 // add margin-top to non link elements
         })}
         key={index}
