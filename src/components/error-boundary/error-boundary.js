@@ -57,6 +57,7 @@ export default class ErrorBoundary extends React.Component {
 }
 
 ErrorBoundary.propTypes = {
+  /** Wrap ErrorBoundary around components to catch any errors triggered from within those nodes. */
   children: PropTypes.node.isRequired,
   /** Each key/value will be added as extra context to the Sentry issue. */
   setExtra: PropTypes.object
