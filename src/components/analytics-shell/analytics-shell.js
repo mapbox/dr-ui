@@ -61,15 +61,20 @@ AnalyticsShell.defaultProps = {
 
 AnalyticsShell.propTypes = {
   children: PropTypes.node.isRequired,
+  /** Location object (often provided by Batfish), `pathname` is current page's relative path. */
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired
   }).isRequired,
+  /** Production website domain. */
   domain: PropTypes.string,
+  /** Customize [Sentry options](https://docs.sentry.io/error-reporting/configuration/?platform=browser). */
   sentry: PropTypes.shape({
-    // Customize Sentry options: https://docs.sentry.io/error-reporting/configuration/?platform=browser
     dsn: PropTypes.string
   }),
-  webAnalytics: PropTypes.object, // Customize web-analytics options: https://github.com/mapbox/web-analytics
-  disableSentry: PropTypes.bool, // If true, Sentry will not initialize.
-  disableWebAnalytics: PropTypes.bool // If true, Mapbox analytics (initializeMapboxAnalytics) will not initialize.
+  /** Customize [web-analytics options](https://github.com/mapbox/web-analytics). */
+  webAnalytics: PropTypes.object,
+  /** If `true`, Sentry will not initialize. */
+  disableSentry: PropTypes.bool,
+  /** If `true`, Mapbox analytics (`initializeMapboxAnalytics`) will not initialize. */
+  disableWebAnalytics: PropTypes.bool
 };
