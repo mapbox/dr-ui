@@ -10,7 +10,7 @@ export default class Basic extends React.Component {
       <div>
         <NavigationDropdown
           id="api-reference-menu"
-          themeButton="relative inline-block px6 mr24 w-full py12"
+          themeButtonOption="menuItem"
           label="API Reference"
           options={[
             { label: '15.0.0', latest: true, value: '/api/maps/15.0.0' },
@@ -32,7 +32,7 @@ export default class Basic extends React.Component {
         <p>Nested example. Non-value items are treated as headings:</p>
         <NavigationDropdown
           id="api-reference-menu-nested"
-          themeButton="relative inline-block px6 mr24 w-full py12"
+          themeButtonOption="menuItem"
           label="API Reference"
           options={[
             { label: '90.0.0', latest: true },

@@ -3,121 +3,139 @@
 exports[`navigation-dropdown API Reference renders as expected 1`] = `
 <div>
   <div
-    className="dr-ui--navigation-dropdown"
+    className="dr-ui--navigation-dropdown relative"
   >
-    <div
+    <button
       aria-expanded={false}
-      aria-haspopup="listbox"
-      aria-labelledby="api-reference-menu-label"
-      aria-owns={null}
-      role="combobox"
+      aria-haspopup="true"
+      aria-label="Navigation"
+      aria-labelledby=""
+      className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate relative relative inline-block px6 mr24 w-full py12"
+      id="api-reference-menu-toggle-button"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
     >
-      <label
-        className="hide-visually"
-        htmlFor="api-reference-menu-input"
-        id="api-reference-menu-label"
+      API Reference
+      <svg
+        className="events-none icon inline-block align-t"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 18,
+            "width": 18,
+          }
+        }
       >
-        Navigation
-      </label>
-      <button
-        aria-haspopup={true}
-        aria-label="open menu"
-        className="relative inline-block px6 mr24 w-full py12"
-        data-toggle={true}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        role="button"
-        type="button"
-      >
-        API Reference
-        <div
-          aria-hidden="true"
-          className="select-arrow"
+        <use
+          xlinkHref="#icon-chevron-down"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
         />
-      </button>
-    </div>
+      </svg>
+    </button>
+    <ul
+      aria-labelledby="api-reference-menu-toggle-button"
+      className=""
+      id="api-reference-menu-menu"
+      onBlur={[Function]}
+      onKeyDown={[Function]}
+      onMouseLeave={[Function]}
+      role="none"
+      tabIndex={-1}
+    />
   </div>
   <p>
     Nested example. Non-value items are treated as headings:
   </p>
   <div
-    className="dr-ui--navigation-dropdown"
+    className="dr-ui--navigation-dropdown relative"
   >
-    <div
+    <button
       aria-expanded={false}
-      aria-haspopup="listbox"
-      aria-labelledby="api-reference-menu-nested-label"
-      aria-owns={null}
-      role="combobox"
+      aria-haspopup="true"
+      aria-label="Navigation"
+      aria-labelledby=""
+      className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate relative relative inline-block px6 mr24 w-full py12"
+      id="api-reference-menu-nested-toggle-button"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      role="button"
     >
-      <label
-        className="hide-visually"
-        htmlFor="api-reference-menu-nested-input"
-        id="api-reference-menu-nested-label"
+      API Reference
+      <svg
+        className="events-none icon inline-block align-t"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 18,
+            "width": 18,
+          }
+        }
       >
-        Navigation
-      </label>
-      <button
-        aria-haspopup={true}
-        aria-label="open menu"
-        className="relative inline-block px6 mr24 w-full py12"
-        data-toggle={true}
-        onBlur={[Function]}
-        onClick={[Function]}
-        onKeyDown={[Function]}
-        onKeyUp={[Function]}
-        role="button"
-        type="button"
-      >
-        API Reference
-        <div
-          aria-hidden="true"
-          className="select-arrow"
+        <use
+          xlinkHref="#icon-chevron-down"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
         />
-      </button>
-    </div>
+      </svg>
+    </button>
+    <ul
+      aria-labelledby="api-reference-menu-nested-toggle-button"
+      className=""
+      id="api-reference-menu-nested-menu"
+      onBlur={[Function]}
+      onKeyDown={[Function]}
+      onMouseLeave={[Function]}
+      role="none"
+      tabIndex={-1}
+    />
   </div>
 </div>
 `;
 
 exports[`navigation-dropdown Basic renders as expected 1`] = `
 <div
-  className="dr-ui--navigation-dropdown"
+  className="dr-ui--navigation-dropdown relative"
 >
-  <div
+  <button
     aria-expanded={false}
-    aria-haspopup="listbox"
-    aria-labelledby="navigate-this-section-label"
-    aria-owns={null}
-    role="combobox"
+    aria-haspopup="true"
+    aria-label="Navigation"
+    aria-labelledby=""
+    className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate relative border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover"
+    id="navigation-dropdown-toggle-button"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
   >
-    <label
-      className="hide-visually"
-      htmlFor="navigate-this-section-input"
-      id="navigate-this-section-label"
+    Title one
+    <svg
+      className="events-none icon inline-block align-t"
+      focusable="false"
+      role="presentation"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
+        }
+      }
     >
-      Navigation
-    </label>
-    <button
-      aria-haspopup={true}
-      aria-label="open menu"
-      className="select select--stroke bg-white round-full txt-truncate relative"
-      data-toggle={true}
-      onBlur={[Function]}
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      onKeyUp={[Function]}
-      role="button"
-      type="button"
-    >
-      Title one
-      <div
-        aria-hidden="true"
-        className="select-arrow"
+      <use
+        xlinkHref="#icon-chevron-down"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
       />
-    </button>
-  </div>
+    </svg>
+  </button>
+  <ul
+    aria-labelledby="navigation-dropdown-toggle-button"
+    className=""
+    id="navigation-dropdown-menu"
+    onBlur={[Function]}
+    onKeyDown={[Function]}
+    onMouseLeave={[Function]}
+    role="none"
+    tabIndex={-1}
+  />
 </div>
 `;

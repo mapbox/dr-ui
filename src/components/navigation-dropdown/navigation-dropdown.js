@@ -1,14 +1,70 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Downshift from 'downshift';
+import Icon from '@mapbox/mr-ui/icon';
+import { useSelect } from 'downshift';
 import classnames from 'classnames';
 
-class NavigationDropdown extends React.Component {
-  renderItem = (item, highlightedIndex, getItemProps, index) => {
-    // don't show "latest" flag if the previous item is also latest
-    const prevItem = this.props.options[index - 1];
-    const prevItemIsLatest = prevItem && prevItem.latest;
+const themeButtonOptions = {
+  default:
+    'border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover',
+  menuItem: 'relative inline-block px6 mr24 w-full py12'
+};
 
+function NavigationDropdown(props) {
+  const {
+    options,
+    currentPath,
+    onChange,
+    themeButton,
+    themeButtonOption,
+    label,
+    id
+  } = props;
+
+  // determine theme button classes
+  // use `themeButton` string or try themeButtonOption[option]
+  // default to themeButtonOption.default
+  const themeButtonClasses = themeButton
+    ? themeButton
+    : themeButtonOptions[themeButtonOption] || themeButtonOptions.default;
+
+  // called when an item is selected
+  function handleChange(selectedItem) {
+    // track selection in analytics
+    if (window && window.analytics) {
+      analytics.track('Selected item from NavigationDropdown', selectedItem);
+    }
+    // handle onChange function
+    onChange(selectedItem);
+  }
+
+  // determines if there is an active item
+  const currentItem = currentPath
+    ? options.filter((f) => f.value === currentPath)[0]
+    : undefined;
+
+  // create useSelect instances
+  // https://github.com/downshift-js/downshift/tree/master/src/hooks/useSelect
+  const {
+    isOpen,
+    selectedItem,
+    getToggleButtonProps,
+    getMenuProps,
+    highlightedIndex,
+    getItemProps
+  } = useSelect({
+    items: options,
+    id,
+    initialSelectedItem: currentItem,
+    itemToString: (item) => (item ? item.value : ''),
+    onSelectedItemChange: ({ selectedItem }) => handleChange(selectedItem)
+  });
+
+  // renders individual menu item
+  const renderItem = (item, index) => {
+    // don't show "latest" flag if the previous item is also latest
+    const prevItem = options[index - 1];
+    const prevItemIsLatest = prevItem && prevItem.latest;
     return (
       <li
         className={classnames('block w-full px12', {
@@ -21,6 +77,7 @@ class NavigationDropdown extends React.Component {
         })}
         key={`${item.label}-${item.value}`}
         {...getItemProps({ item, index, disabled: item.value ? false : true })}
+        role="menuitem"
       >
         {item.label}
         {item.latest && !prevItemIsLatest ? <span> &mdash; latest</span> : ''}
@@ -28,93 +85,52 @@ class NavigationDropdown extends React.Component {
     );
   };
 
-  selectedItem = (currentPath, options) => {
-    return currentPath
-      ? options.filter((f) => f.value === currentPath)[0]
-      : undefined;
-  };
-
-  render() {
-    const {
-      options,
-      currentPath,
-      id,
-      onChange,
-      themeButton,
-      label
-    } = this.props;
-
-    return (
-      <div className="dr-ui--navigation-dropdown">
-        <Downshift
-          id={id}
-          initialSelectedItem={this.selectedItem(currentPath, options)}
-          itemToString={(item) => (item ? item.value : '')}
-          onChange={(selection) => {
-            // track selection in analytics
-            if (window && window.analytics) {
-              analytics.track(
-                'Selected item from NavigationDropdown',
-                selection
-              );
-            }
-            // handle onChange function
-            onChange(selection);
-          }}
-        >
-          {({
-            isOpen,
-            selectedItem,
-            getToggleButtonProps,
-            getLabelProps,
-            getMenuProps,
-            getItemProps,
-            highlightedIndex
-          }) => (
-            <div>
-              <label className="hide-visually" {...getLabelProps()}>
-                Navigation
-              </label>
-              <button className={themeButton} {...getToggleButtonProps()}>
-                {selectedItem ? selectedItem.label : label}
-                <div className="select-arrow" aria-hidden="true" />
-              </button>
-              {isOpen && (
-                <ul
-                  {...getMenuProps()}
-                  className="absolute bg-white round shadow-darken25 wmin180 hmax240 scroll-auto py6 mt3 scroll-styled z4"
-                >
-                  {options.map((item, index) => {
-                    return this.renderItem(
-                      item,
-                      highlightedIndex,
-                      getItemProps,
-                      index
-                    );
-                  })}
-                </ul>
-              )}
-            </div>
-          )}
-        </Downshift>
-      </div>
-    );
-  }
+  return (
+    <div className="dr-ui--navigation-dropdown relative">
+      <button
+        {...getToggleButtonProps({}, { suppressRefError: true })}
+        role="button" // override role as button
+        aria-haspopup="true" // override haspopup as true
+        className={`flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate relative ${themeButtonClasses}`}
+        aria-label="Navigation" // manually set aria-label
+        aria-labelledby="" // reset value
+      >
+        {selectedItem ? selectedItem.label : label}
+        <Icon name="chevron-down" inline={true} />
+      </button>
+      <ul
+        {...getMenuProps({}, { suppressRefError: true })}
+        aria-labelledby={
+          getToggleButtonProps({}, { suppressRefError: true }).id
+        } // labeled by button
+        className={classnames('', {
+          'absolute bg-white round shadow-darken25 wmin180 w-full hmax240 scroll-auto py6 mt3 scroll-styled z4 ml0': isOpen
+        })}
+        role={isOpen ? 'menu' : 'none'} // set role as menu when open
+      >
+        {isOpen && options.map((item, index) => renderItem(item, index))}
+      </ul>
+    </div>
+  );
 }
 
 NavigationDropdown.defaultProps = {
-  id: 'navigate-this-section',
+  id: 'navigation-dropdown',
   onChange: (selection) => {
     if (selection && selection.value && window)
       window.location = selection.value;
   },
-  themeButton: 'select select--stroke bg-white round-full txt-truncate relative'
+  themeButtonOption: 'default'
 };
 
 NavigationDropdown.propTypes = {
+  /** unique id for the component */
   id: PropTypes.string,
+  /** if no `currentPath`, `label` is the default label of the dropdown */
   label: PropTypes.string,
+  /** the page's current relative path */
   currentPath: PropTypes.string,
+  /** */
   options: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string.isRequired,
@@ -122,7 +138,11 @@ NavigationDropdown.propTypes = {
       latest: PropTypes.bool
     })
   ).isRequired,
+  /** function to call when an item is selected */
   onChange: PropTypes.func,
+  /** theme options for the dropdown button */
+  themeButtonOption: PropTypes.oneOf(['menuItem', 'default']),
+  /** class names for the dropdown button */
   themeButton: PropTypes.string
 };
 
