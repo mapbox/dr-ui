@@ -12,7 +12,7 @@ const themeButtonOptions = {
 
 function NavigationDropdown(props) {
   const {
-    options,
+    dropdownOptions,
     currentPath,
     onChange,
     themeButton,
@@ -40,7 +40,7 @@ function NavigationDropdown(props) {
 
   // determines if there is an active item
   const currentItem = currentPath
-    ? options.filter((f) => f.value === currentPath)[0]
+    ? dropdownOptions.filter((f) => f.path === currentPath)[0]
     : undefined;
 
   // create useSelect instances
@@ -53,33 +53,33 @@ function NavigationDropdown(props) {
     highlightedIndex,
     getItemProps
   } = useSelect({
-    items: options,
+    items: dropdownOptions,
     id,
     initialSelectedItem: currentItem,
-    itemToString: (item) => (item ? item.value : ''),
+    itemToString: (item) => (item ? item.path : ''),
     onSelectedItemChange: ({ selectedItem }) => handleChange(selectedItem)
   });
 
   // renders individual menu item
   const renderItem = (item, index) => {
     // don't show "latest" flag if the previous item is also latest
-    const prevItem = options[index - 1];
+    const prevItem = dropdownOptions[index - 1];
     const prevItemIsLatest = prevItem && prevItem.latest;
     return (
       <li
         className={classnames('block w-full px12', {
           'bg-gray-faint': highlightedIndex === index, // change color on highlight, match hover
-          'link bg-gray-faint-on-hover py3': item.value, // all items with a value are links
-          'link--gray': !item.latest && item.value, // all non latest links are gray
+          'link bg-gray-faint-on-hover py3': item.path, // all items with a value are links
+          'link--gray': !item.latest && item.path, // all non latest links are gray
           'txt-bold': item.latest, // every latest item is bold
-          'link--blue': item.latest && item.value, // latest items with value are blue links
-          mt18: !item.value && index !== 0 // add margin-top to non link elements
+          'link--blue': item.latest && item.path, // latest items with value are blue links
+          mt18: !item.path && index !== 0 // add margin-top to non link elements
         })}
-        key={`${item.label}-${item.value}`}
-        {...getItemProps({ item, index, disabled: item.value ? false : true })}
+        key={index}
+        {...getItemProps({ item, index, disabled: item.path ? false : true })}
         role="menuitem"
       >
-        {item.label}
+        {item.title}
         {item.latest && !prevItemIsLatest ? <span> &mdash; latest</span> : ''}
       </li>
     );
@@ -95,7 +95,7 @@ function NavigationDropdown(props) {
         aria-label="Navigation" // manually set aria-label
         aria-labelledby="" // reset value
       >
-        {selectedItem ? selectedItem.label : label}
+        {selectedItem ? selectedItem.title : label}
         <Icon name="chevron-down" inline={true} />
       </button>
       <ul
@@ -108,7 +108,8 @@ function NavigationDropdown(props) {
         })}
         role={isOpen ? 'menu' : 'none'} // set role as menu when open
       >
-        {isOpen && options.map((item, index) => renderItem(item, index))}
+        {isOpen &&
+          dropdownOptions.map((item, index) => renderItem(item, index))}
       </ul>
     </div>
   );
@@ -117,8 +118,7 @@ function NavigationDropdown(props) {
 NavigationDropdown.defaultProps = {
   id: 'navigation-dropdown',
   onChange: (selection) => {
-    if (selection && selection.value && window)
-      window.location = selection.value;
+    if (selection && selection.path && window) window.location = selection.path;
   },
   themeButtonOption: 'default'
 };
@@ -131,10 +131,10 @@ NavigationDropdown.propTypes = {
   /** the page's current relative path */
   currentPath: PropTypes.string,
   /** */
-  options: PropTypes.arrayOf(
+  dropdownOptions: PropTypes.arrayOf(
     PropTypes.shape({
-      label: PropTypes.string.isRequired,
-      value: PropTypes.string,
+      title: PropTypes.string.isRequired,
+      path: PropTypes.string,
       latest: PropTypes.bool
     })
   ).isRequired,

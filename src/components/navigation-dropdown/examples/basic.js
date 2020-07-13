@@ -9,14 +9,14 @@ export default class Basic extends React.Component {
     return (
       <NavigationDropdown
         currentPath="page-one"
-        options={[
+        dropdownOptions={[
           {
-            label: 'Title one',
-            value: 'page-one'
+            title: 'Title one',
+            path: 'page-one'
           },
           {
-            label: 'Title two',
-            value: 'page-two'
+            title: 'Title two',
+            path: 'page-two'
           }
         ]}
       />
