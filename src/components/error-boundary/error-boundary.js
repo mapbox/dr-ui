@@ -14,6 +14,7 @@ export default class ErrorBoundary extends React.Component {
   }
 
   componentDidCatch(error, errorInfo) {
+    const { setExtra } = this.props;
     this.setState({ error });
     Sentry.withScope((scope) => {
       // set tag to allow us to filter this event in Sentry
@@ -21,18 +22,20 @@ export default class ErrorBoundary extends React.Component {
       // set extra error info
       scope.setExtra('errorInfo', errorInfo);
       // if available, include additional details
-      if (this.props.moreInfoObject) {
-        // push each key/value from this.props.moreInfoObject as an extra scope
-        Object.keys(this.props.moreInfoObject).forEach((item) =>
-          scope.setExtra(item, this.props.moreInfoObject[item])
-        );
+      if (setExtra) {
+        // push each key/value from setExtraObject as an extra scope
+        Object.keys(setExtra).forEach((key) => {
+          const value = setExtra[key];
+          if (key && value) scope.setExtra(key, value);
+        });
       }
       Sentry.captureException(error);
     });
   }
 
   render() {
-    if (this.state.hasError) {
+    const { hasError, error } = this.state;
+    if (hasError) {
       return (
         <Note theme="error" title="Something went wrong">
           <p>
@@ -40,9 +43,9 @@ export default class ErrorBoundary extends React.Component {
           </p>
           <details>
             <summary className="cursor-pointer">Error details</summary>
-            {this.state.error && (
+            {error && error.message && (
               <pre>
-                <code>{JSON.stringify(this.state.error, null, 2)}</code>
+                <code>{error.message}</code>
               </pre>
             )}
           </details>
@@ -55,5 +58,6 @@ export default class ErrorBoundary extends React.Component {
 
 ErrorBoundary.propTypes = {
   children: PropTypes.node.isRequired,
-  moreInfoObject: PropTypes.object
+  /** Each key/value will be added as extra context to the Sentry issue. */
+  setExtra: PropTypes.object
 };

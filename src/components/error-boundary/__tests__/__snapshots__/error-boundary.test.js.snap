@@ -61,10 +61,7 @@ exports[`error-boundary Trigger error renders as expected 1`] = `
       </summary>
       <pre>
         <code>
-          {
-  "name": "Invariant Violation",
-  "framesToPop": 1
-}
+          BadFunction(...): Nothing was returned from render. This usually means a return statement is missing. Or, to render nothing, return null.
         </code>
       </pre>
     </details>
