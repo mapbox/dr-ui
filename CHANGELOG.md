@@ -1,6 +1,6 @@
 # Changelog
 
-## Main
+## Layouts
 
 - Update `NavigationDropdown` to use accessible menu.
   - 🚨`dropdownOptions` prop for `NavigationDropdown` is now `options`.
