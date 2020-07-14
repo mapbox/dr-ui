@@ -1,5 +1,5 @@
 ---
-title: dr-ui
+title: Components
 description: UI components for Mapbox documentation projects.
 prependJs:
   - "import Note from '../../../src/components/note'"
@@ -12,6 +12,7 @@ showCards: false
 includeFilterBar: true
 navOrder: 1
 hideTitle: true
+unProse: true
 ---
 
 {{<OverviewHeader
