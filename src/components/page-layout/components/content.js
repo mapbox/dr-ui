@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Feedback from '../../feedback/feedback';
 import LayoutExamples from './layouts/example/content.js';
-import { UserContextProvider } from '../context/user-context';
 
 export default class Content extends React.Component {
   renderExamplesIndex = () => {
@@ -40,26 +39,24 @@ export default class Content extends React.Component {
     const { hideFeedback, hideTitle, showCards, sidebar } = layoutConfig;
 
     return (
-      <UserContextProvider>
+      <div
+        id="docs-content"
+        className={classnames('mt24-mm pr0-mm', {
+          'mb60 px24-mm': sidebar !== 'none',
+          'px24-mm': sidebar === 'none'
+        })}
+      >
         <div
-          id="docs-content"
-          className={classnames('mt24-mm pr0-mm', {
-            'mb60 px24-mm': sidebar !== 'none',
-            'px24-mm': sidebar === 'none'
+          className={classnames('', {
+            prose: unProse !== true
           })}
         >
-          <div
-            className={classnames('', {
-              prose: unProse !== true
-            })}
-          >
-            {!hideTitle && <h1 className="txt-fancy">{title}</h1>}
-            {children}
-            {!hideFeedback ? this.renderFeedback() : ''}
-          </div>
-          {showCards ? this.renderExamplesIndex() : ''}
+          {!hideTitle && <h1 className="txt-fancy">{title}</h1>}
+          {children}
+          {!hideFeedback ? this.renderFeedback() : ''}
         </div>
-      </UserContextProvider>
+        {showCards ? this.renderExamplesIndex() : ''}
+      </div>
     );
   }
 }
