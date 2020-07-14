@@ -1,24 +1,45 @@
-# Data selectors
+---
+title: Batfish helpers
+description: Batfish data selector functions to build navigation and topic datasets.
+navOrder: 2
+prependJs:
+  - "import navigation from '@mapbox/batfish/data/navigation';"
+---
 
-dr-ui has a few `dataSelectors` in `batfish.config.js` to help build page metadata and site hierarchy. Each data selector has tests to assert the shape of the data.
+# Batfish helpers
 
-## `navigation`
+Dr. UI has two functions that are used in `dataSelectors` in `batfish.config.js` to help build page metadata and site hierarchy. Each data selector has tests to assert the shape of the data.
+
+## Navigation
 
 `navigation` builds data for the dr-ui navigation components `TabList` and `NavigationAccordion`.
+
+### Arguments
+
+- `siteBasePath`, required. The function requires the `siteBasePath`.
+- `data`, object. Provided by the data selector.
+- `sections`, array. See [Shape of multi-level sections](#shape-of-multi-level-sections).
 
 ### Set up in batfish.config.js
 
 ```js
-const { buildNavigation } = require('@mapbox/dr-ui/helpers/batfish/navigation.js');
+const {
+  buildNavigation
+} = require('@mapbox/dr-ui/helpers/batfish/navigation.js');
 
-...
+const siteBasePath = '/help';
 
-dataSelectors: {
-  navigation: data => buildNavigation(siteBasePath, data)
-}
+module.exports = () => {
+  return {
+    siteBasePath: siteBasePath,
+    dataSelectors: {
+      navigation: (data) => buildNavigation(siteBasePath, data)
+    }
+  };
+};
 ```
 
-For multi-level sites, pass an [array to define each section](#shape-of-multi-level-sections-object):
+Multi-level sites require and additional configuration array:
 
 ```js
 dataSelectors: {
@@ -33,40 +54,70 @@ dataSelectors: {
 ### Usage
 
 ```js
+import React from 'react';
 import navigation from '@mapbox/batfish/data/navigation';
 
-<TabList items={navigation.navTabs} />;
+class SideBar extends React.Component {
+  render () {
+    return (
+      <TabList items={navigation.navTabs} />;
+    )
+  }
+}
 ```
 
-## `topics`
+### Output
+
+- `navTabs`. Provides the top-level navigation for the site and is powered by the `navOrder` field in the frontMatter of those pages.
+- `accordion`. Provides the data for `NavigationAccordion`.
+- `hierarchy`. Provides the parent path for each page.
+
+#### Sample
+
+```json
+{{JSON.stringify(navigation,null,2)}}
+```
+
+## Topics
 
 `topics` collects all topics for subpages to build the examples (cards) layout.
+
+### Arguments
+
+- `data`, object. Provided by the data selector.
 
 ### Set up in batfish.config.js
 
 ```js
 const { buildTopics } = require('@mapbox/dr-ui/helpers/batfish/topics.js');
 
-...
-
-dataSelectors: {
-  topics: data => buildTopics(data)
-}
+module.exports = () => {
+  return {
+    dataSelectors: {
+      topics: (data) => buildTopics(data)
+    }
+  };
+};
 ```
 
 ### Usage
 
 ```js
+import React from 'react';
 import topics from '@mapbox/batfish/data/topics';
 
-const topicList = topics['/docs-starter-kit/examples/'].topics;
+class SideBar extends React.Component {
+  render() {
+    const topicList = topics['/docs-starter-kit/examples/'].topics;
+  }
+}
 ```
 
-## Shape of multi-level `sections` object
+## Shape of multi-level `sections`
 
 - `path` (required) string. Top-level folder in `src/pages`.
 - `title` (required) string. Title of the product.
-- `tag` (optional) string. Name of tag to add to ProductMenu. [options](https://github.com/mapbox/dr-ui/blob/729c2efd229587571c260de6438395890894f811/src/components/product-menu/product-menu.js#L52).
+- `tag` (optional) string. Name of tag to add to ProductMenu. [See options](/dr-ui/#productmenu).
 - `dropdown` (optional) object. Label and items to display as a dropdown.
 
 ### Example
@@ -113,6 +164,8 @@ const topicList = topics['/docs-starter-kit/examples/'].topics;
 ]
 ```
 
+### Sample output
+
 ## Troubleshooting
 
 If data is not building as you expect:
@@ -127,5 +180,5 @@ navigation: data => {
 ```
 
 2. Run `npm start` and the build process will write the JSON file to the fixture folder.
-3. In `tests/navigation.test.js` and/or `tests/pages.test.js` create a new test case that loads in `data-example.json` (rather than data.json).
+3. In `tests/navigation.test.js` and/or `tests/topics.test.js` create a new test case that loads in `data-example.json` (rather than data.json).
 4. Make any necessary changes to `data/navigation.js` and/or `data/pages.js` until all test cases pass.
