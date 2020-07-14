@@ -7,15 +7,11 @@ import Icon from '@mapbox/mr-ui/icon';
 import * as Sentry from '@sentry/browser';
 import classnames from 'classnames';
 import slugify from 'slugify';
+import env from '../analytics-shell/env';
 
 const feedbackLimit = 1000; // character limit for the feedback textarea
 const anonymousId = uuidv4(); // creates an anonymousId fallback if user is not logged or we cant get their info
-const environment =
-  typeof window !== 'undefined'
-    ? /(^|\S+\.)mapbox\.com/.test(window.location.host)
-      ? 'production'
-      : 'staging'
-    : undefined;
+const environment = env();
 const location = typeof window !== 'undefined' ? window.location : undefined;
 
 class Feedback extends React.Component {
