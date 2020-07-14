@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Sticky from 'react-stickynode';
 import debounce from 'debounce';
 import classnames from 'classnames';
+import { UserContextProvider } from './context/user-context';
 
 class PageLayout extends React.Component {
   constructor(props) {
@@ -90,37 +91,39 @@ class PageLayout extends React.Component {
       sideBarColSize = props.sideBarColSize;
 
     return (
-      <div className="grid">
-        <div
-          className={`col col--4-mm ${
-            sideBarColSize ? `col--${sideBarColSize}-ml` : ''
-          } col--12 ${props.sidebarTheme}`}
-          data-swiftype-index="false"
-        >
-          <Sticky
-            enabled={state.stickyEnabled}
-            bottomBoundary={state.bottomBoundaryValue}
-            innerZ={3}
-            top={state.topValue}
+      <UserContextProvider>
+        <div className="grid">
+          <div
+            className={`col col--4-mm ${
+              sideBarColSize ? `col--${sideBarColSize}-ml` : ''
+            } col--12 ${props.sidebarTheme}`}
+            data-swiftype-index="false"
           >
-            <div
-              className={`pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled ${sidebarNarrowClasses}`}
-              id="dr-ui--page-layout-sidebar"
+            <Sticky
+              enabled={state.stickyEnabled}
+              bottomBoundary={state.bottomBoundaryValue}
+              innerZ={3}
+              top={state.topValue}
             >
-              {title}
-              {props.sidebarContent}
-            </div>
-          </Sticky>
+              <div
+                className={`pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled ${sidebarNarrowClasses}`}
+                id="dr-ui--page-layout-sidebar"
+              >
+                {title}
+                {props.sidebarContent}
+              </div>
+            </Sticky>
+          </div>
+          <div
+            id="docs-content"
+            className={`col col--8-mm ${
+              sideBarColSize ? `col--${12 - sideBarColSize}-ml` : ''
+            } col--12 mt24-mm mb60 pr0-mm px36-mm`}
+          >
+            {props.children}
+          </div>
         </div>
-        <div
-          id="docs-content"
-          className={`col col--8-mm ${
-            sideBarColSize ? `col--${12 - sideBarColSize}-ml` : ''
-          } col--12 mt24-mm mb60 pr0-mm px36-mm`}
-        >
-          {props.children}
-        </div>
-      </div>
+      </UserContextProvider>
     );
   }
 }
