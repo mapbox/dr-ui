@@ -115,6 +115,7 @@ export default class PageLayout extends React.Component {
 
 PageLayout.propTypes = {
   children: PropTypes.node,
+  /** Provided by Batfish, the `pathnam` (relative url) of the current page is required */
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired
   }).isRequired,
@@ -132,7 +133,8 @@ Each `layout` is a configuration of different components. You can override any l
 - `sidebarTheme` - Mapbox Assembly class names to style the sidebar container.
 - `showCards` - enables `CardsContainer`
 - `fullWidthCards` - makes CardContainer full width
-- `unProse` - if `true`, remove the "prose" class from PageLayout, this is helpful for non-content pages.
+- `unProse` - if `true`, remove the "prose" class from PageLayout. This is helpful for non-content pages.
+- `noShellHeaderBuffer` - if `true`, remove the header buffer div. This is helpful for custom headers like on the Help page.
    */
   frontMatter: PropTypes.shape({
     headings: PropTypes.array,
@@ -201,7 +203,7 @@ Each `layout` is a configuration of different components. You can override any l
       staging: PropTypes.string.isRequired
     }).isRequired
   }).isRequired,
-  /** Required if using the `exampleIndex` layout. The value is the local `AppropriateImage` component. */
+  /** Required if using the `exampleIndex` layout along with image ids. The value is the local `AppropriateImage` component. */
   AppropriateImage: PropTypes.func,
   /** If false, unstick the TopBarSticker */
   topBarSticker: PropTypes.bool
