@@ -4,6 +4,10 @@
 
 - Add `AnalyticsShell` component. [#307](https://github.com/mapbox/dr-ui/pull/307)
 
+## Main
+
+- Add `ErrorBoundary` component. [#272](https://github.com/mapbox/dr-ui/pull/272)
+
 ## 0.29.2
 
 - Add aria-label to `BackToTopButton`. [#290](https://github.com/mapbox/dr-ui/pull/290)

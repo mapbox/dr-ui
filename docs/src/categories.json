@@ -41,7 +41,8 @@
     "Card",
     "CardContainer",
     "ExamplesPage",
-    "AnalyticsShell"
+    "AnalyticsShell",
+    "ErrorBoundary"
   ],
   "Images": [
     "BookImage",
