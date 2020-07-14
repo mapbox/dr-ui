@@ -101,7 +101,8 @@ function NavigationDropdown(props) {
           item,
           index,
           disabled: !item.path, // if no path, disable the item
-          role: 'menuitem' // set role as menuitem
+          role: 'menuitem', // set role as menuitem
+          'aria-label': item.ariaLabel || undefined
         })}
         className={classnames('block w-full px12', {
           'bg-gray-faint': highlightedIndex === index, // change color on highlight, match hover
@@ -161,12 +162,18 @@ NavigationDropdown.propTypes = {
   label: PropTypes.string,
   /** the page's current relative path */
   currentPath: PropTypes.string,
-  /** */
+  /** Array of dropdown items:
+- `title` - The title of the link.
+- `path` - The URL for the link. If empty, the item will be treated as a heading, which is helpful for nested API Reference dropdowns.
+- `latest` - If `true`, the "latest" label will be added to the link text.
+- `ariaLabel` - Applies the value as an `aria-label` to the link. This is helpful for nested API reference to provide proper context for each link.
+  */
   dropdownOptions: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,
       path: PropTypes.string,
-      latest: PropTypes.bool
+      latest: PropTypes.bool,
+      ariaLabel: PropTypes.string
     })
   ).isRequired,
   /** function to call when an item is selected */

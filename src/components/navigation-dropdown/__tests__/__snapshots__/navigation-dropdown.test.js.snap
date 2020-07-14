@@ -273,6 +273,7 @@ exports[`navigation-dropdown API Reference, nested renders as expected 1`] = `
       </span>
     </li>
     <li
+      aria-label="90.0.0 vision-sdk"
       aria-selected="false"
       className="block w-full px12 link bg-gray-faint-on-hover py3 link--blue txt-bold"
       disabled={false}
@@ -285,6 +286,7 @@ exports[`navigation-dropdown API Reference, nested renders as expected 1`] = `
       
     </li>
     <li
+      aria-label="90.0.0 vision-ar"
       aria-selected="false"
       className="block w-full px12 link bg-gray-faint-on-hover py3 link--blue txt-bold"
       disabled={false}
@@ -297,6 +299,7 @@ exports[`navigation-dropdown API Reference, nested renders as expected 1`] = `
       
     </li>
     <li
+      aria-label="90.0.0 vision-safety"
       aria-selected="false"
       className="block w-full px12 link bg-gray-faint-on-hover py3 link--blue txt-bold"
       disabled={false}
@@ -319,6 +322,7 @@ exports[`navigation-dropdown API Reference, nested renders as expected 1`] = `
       
     </li>
     <li
+      aria-label="80.0.0 vision-sdk"
       aria-selected="false"
       className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
       disabled={false}
@@ -331,6 +335,7 @@ exports[`navigation-dropdown API Reference, nested renders as expected 1`] = `
       
     </li>
     <li
+      aria-label="80.0.0 vision-ar"
       aria-selected="false"
       className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
       disabled={false}
@@ -343,6 +348,7 @@ exports[`navigation-dropdown API Reference, nested renders as expected 1`] = `
       
     </li>
     <li
+      aria-label="80.0.0 vision-safety"
       aria-selected="false"
       className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
       disabled={false}
@@ -365,6 +371,7 @@ exports[`navigation-dropdown API Reference, nested renders as expected 1`] = `
       
     </li>
     <li
+      aria-label="70.0.0 vision-sdk"
       aria-selected="false"
       className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
       disabled={false}
@@ -377,6 +384,7 @@ exports[`navigation-dropdown API Reference, nested renders as expected 1`] = `
       
     </li>
     <li
+      aria-label="70.0.0 vision-ar"
       aria-selected="false"
       className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
       disabled={false}
@@ -389,6 +397,7 @@ exports[`navigation-dropdown API Reference, nested renders as expected 1`] = `
       
     </li>
     <li
+      aria-label="70.0.0 vision-safety"
       aria-selected="false"
       className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
       disabled={false}
@@ -411,6 +420,7 @@ exports[`navigation-dropdown API Reference, nested renders as expected 1`] = `
       
     </li>
     <li
+      aria-label="60.0.0 vision-sdk"
       aria-selected="false"
       className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
       disabled={false}
@@ -423,6 +433,7 @@ exports[`navigation-dropdown API Reference, nested renders as expected 1`] = `
       
     </li>
     <li
+      aria-label="60.0.0 vision-ar"
       aria-selected="false"
       className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
       disabled={false}
@@ -435,6 +446,7 @@ exports[`navigation-dropdown API Reference, nested renders as expected 1`] = `
       
     </li>
     <li
+      aria-label="60.0.0 vision-safety"
       aria-selected="false"
       className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
       disabled={false}
@@ -457,6 +469,7 @@ exports[`navigation-dropdown API Reference, nested renders as expected 1`] = `
       
     </li>
     <li
+      aria-label="50.0.0 vision-sdk"
       aria-selected="false"
       className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
       disabled={false}
@@ -469,6 +482,7 @@ exports[`navigation-dropdown API Reference, nested renders as expected 1`] = `
       
     </li>
     <li
+      aria-label="50.0.0 vision-ar"
       aria-selected="false"
       className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
       disabled={false}
@@ -481,6 +495,7 @@ exports[`navigation-dropdown API Reference, nested renders as expected 1`] = `
       
     </li>
     <li
+      aria-label="50.0.0 vision-safety"
       aria-selected="false"
       className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
       disabled={false}
