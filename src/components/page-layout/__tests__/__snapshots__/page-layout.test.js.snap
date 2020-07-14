@@ -297,10 +297,10 @@ exports[`page-layout Common use case renders as expected 1`] = `
                 className="dr-ui--navigation-dropdown relative"
               >
                 <button
+                  aria-controls="navigation-accordion-dropdown-menu"
                   aria-expanded={false}
                   aria-haspopup="true"
-                  aria-label="Navigation"
-                  aria-labelledby=""
+                  aria-label="Toggle menu"
                   className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate relative border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover"
                   id="navigation-accordion-dropdown-toggle-button"
                   onClick={[Function]}
@@ -327,14 +327,39 @@ exports[`page-layout Common use case renders as expected 1`] = `
                 </button>
                 <ul
                   aria-labelledby="navigation-accordion-dropdown-toggle-button"
-                  className=""
+                  className="none"
                   id="navigation-accordion-dropdown-menu"
                   onBlur={[Function]}
                   onKeyDown={[Function]}
                   onMouseLeave={[Function]}
-                  role="none"
+                  role="menu"
                   tabIndex={-1}
-                />
+                >
+                  <li
+                    aria-selected="true"
+                    className="block w-full px12 bg-gray-faint link bg-gray-faint-on-hover py3 link--gray"
+                    disabled={false}
+                    id="navigation-accordion-dropdown-item-0"
+                    onClick={[Function]}
+                    onMouseMove={[Function]}
+                    role="menuitem"
+                  >
+                    Title one
+                    
+                  </li>
+                  <li
+                    aria-selected="false"
+                    className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+                    disabled={false}
+                    id="navigation-accordion-dropdown-item-1"
+                    onClick={[Function]}
+                    onMouseMove={[Function]}
+                    role="menuitem"
+                  >
+                    Title two
+                    
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -981,10 +1006,10 @@ exports[`page-layout Many first level items renders as expected 1`] = `
                 className="dr-ui--navigation-dropdown relative"
               >
                 <button
+                  aria-controls="navigation-accordion-dropdown-menu"
                   aria-expanded={false}
                   aria-haspopup="true"
-                  aria-label="Navigation"
-                  aria-labelledby=""
+                  aria-label="Toggle menu"
                   className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate relative border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover"
                   id="navigation-accordion-dropdown-toggle-button"
                   onClick={[Function]}
@@ -1011,14 +1036,135 @@ exports[`page-layout Many first level items renders as expected 1`] = `
                 </button>
                 <ul
                   aria-labelledby="navigation-accordion-dropdown-toggle-button"
-                  className=""
+                  className="none"
                   id="navigation-accordion-dropdown-menu"
                   onBlur={[Function]}
                   onKeyDown={[Function]}
                   onMouseLeave={[Function]}
-                  role="none"
+                  role="menu"
                   tabIndex={-1}
-                />
+                >
+                  <li
+                    aria-selected="true"
+                    className="block w-full px12 bg-gray-faint link bg-gray-faint-on-hover py3 link--gray"
+                    disabled={false}
+                    id="navigation-accordion-dropdown-item-0"
+                    onClick={[Function]}
+                    onMouseMove={[Function]}
+                    role="menuitem"
+                  >
+                    Title one
+                    
+                  </li>
+                  <li
+                    aria-selected="false"
+                    className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+                    disabled={false}
+                    id="navigation-accordion-dropdown-item-1"
+                    onClick={[Function]}
+                    onMouseMove={[Function]}
+                    role="menuitem"
+                  >
+                    Title two
+                    
+                  </li>
+                  <li
+                    aria-selected="false"
+                    className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+                    disabled={false}
+                    id="navigation-accordion-dropdown-item-2"
+                    onClick={[Function]}
+                    onMouseMove={[Function]}
+                    role="menuitem"
+                  >
+                    Title three
+                    
+                  </li>
+                  <li
+                    aria-selected="false"
+                    className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+                    disabled={false}
+                    id="navigation-accordion-dropdown-item-3"
+                    onClick={[Function]}
+                    onMouseMove={[Function]}
+                    role="menuitem"
+                  >
+                    Title four
+                    
+                  </li>
+                  <li
+                    aria-selected="false"
+                    className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+                    disabled={false}
+                    id="navigation-accordion-dropdown-item-4"
+                    onClick={[Function]}
+                    onMouseMove={[Function]}
+                    role="menuitem"
+                  >
+                    Title five
+                    
+                  </li>
+                  <li
+                    aria-selected="false"
+                    className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+                    disabled={false}
+                    id="navigation-accordion-dropdown-item-5"
+                    onClick={[Function]}
+                    onMouseMove={[Function]}
+                    role="menuitem"
+                  >
+                    Title six
+                    
+                  </li>
+                  <li
+                    aria-selected="false"
+                    className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+                    disabled={false}
+                    id="navigation-accordion-dropdown-item-6"
+                    onClick={[Function]}
+                    onMouseMove={[Function]}
+                    role="menuitem"
+                  >
+                    Title seven
+                    
+                  </li>
+                  <li
+                    aria-selected="false"
+                    className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+                    disabled={false}
+                    id="navigation-accordion-dropdown-item-7"
+                    onClick={[Function]}
+                    onMouseMove={[Function]}
+                    role="menuitem"
+                  >
+                    Title eight
+                    
+                  </li>
+                  <li
+                    aria-selected="false"
+                    className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+                    disabled={false}
+                    id="navigation-accordion-dropdown-item-8"
+                    onClick={[Function]}
+                    onMouseMove={[Function]}
+                    role="menuitem"
+                  >
+                    Title nine
+                    
+                  </li>
+                  <li
+                    aria-selected="false"
+                    className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+                    disabled={false}
+                    id="navigation-accordion-dropdown-item-9"
+                    onClick={[Function]}
+                    onMouseMove={[Function]}
+                    role="menuitem"
+                  >
+                    Title ten
+                    
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

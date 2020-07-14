@@ -4,11 +4,36 @@ import Icon from '@mapbox/mr-ui/icon';
 import { useSelect } from 'downshift';
 import classnames from 'classnames';
 
-const themeButtonOptions = {
-  default:
-    'border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover',
-  menuItem: 'relative inline-block px6 mr24 w-full py12'
-};
+// called when an item is selected
+function handleChange(selectedItem, onChange) {
+  // track selection in analytics
+  if (window && window.analytics) {
+    analytics.track('Selected item from NavigationDropdown', selectedItem);
+  }
+  // handle onChange function
+  onChange(selectedItem);
+}
+
+// determines if there is an active item
+function findActiveItem(currentPath, dropdownOptions) {
+  return currentPath
+    ? dropdownOptions.filter((f) => f.path === currentPath)[0]
+    : undefined;
+}
+
+// determine theme button classes
+// use `themeButton` string or try themeButtonOption[option]
+// default to themeButtonOption.default
+function themeClasses(themeButton, themeButtonOption) {
+  const themeButtonOptions = {
+    default:
+      'border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover',
+    menuItem: 'relative inline-block px6 mr24 w-full py12'
+  };
+  return themeButton
+    ? themeButton
+    : themeButtonOptions[themeButtonOption] || themeButtonOptions.default;
+}
 
 function NavigationDropdown(props) {
   const {
@@ -21,29 +46,7 @@ function NavigationDropdown(props) {
     id
   } = props;
 
-  // determine theme button classes
-  // use `themeButton` string or try themeButtonOption[option]
-  // default to themeButtonOption.default
-  const themeButtonClasses = themeButton
-    ? themeButton
-    : themeButtonOptions[themeButtonOption] || themeButtonOptions.default;
-
-  // called when an item is selected
-  function handleChange(selectedItem) {
-    // track selection in analytics
-    if (window && window.analytics) {
-      analytics.track('Selected item from NavigationDropdown', selectedItem);
-    }
-    // handle onChange function
-    onChange(selectedItem);
-  }
-
-  // determines if there is an active item
-  const currentItem = currentPath
-    ? dropdownOptions.filter((f) => f.path === currentPath)[0]
-    : undefined;
-
-  // create useSelect instances
+  // create useSelect instance
   // https://github.com/downshift-js/downshift/tree/master/src/hooks/useSelect
   const {
     isOpen,
@@ -54,19 +57,52 @@ function NavigationDropdown(props) {
     getItemProps
   } = useSelect({
     items: dropdownOptions,
-    id,
-    initialSelectedItem: currentItem,
+    id: id,
+    initialSelectedItem: findActiveItem(currentPath, dropdownOptions),
     itemToString: (item) => (item ? item.path : ''),
-    onSelectedItemChange: ({ selectedItem }) => handleChange(selectedItem)
+    onSelectedItemChange: ({ selectedItem }) =>
+      handleChange(selectedItem, onChange)
   });
 
-  // renders individual menu item
+  const buttonId = getToggleButtonProps({}).id;
+  const menuId = getMenuProps({}).id;
+
+  // Render toggle button
+  const renderButton = (
+    <button
+      {...getToggleButtonProps(
+        {
+          'aria-label': 'Toggle menu', // manually set aria-label
+          'aria-labelledby': undefined, // reset value
+          'aria-haspopup': 'true', // override haspopup as true
+          role: 'button', // override role as button
+          'aria-controls': menuId // the button controls the menu (ul)
+        },
+        { suppressRefError: true }
+      )}
+      className={`flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate relative ${themeClasses(
+        themeButton,
+        themeButtonOption
+      )}`}
+    >
+      {selectedItem ? selectedItem.title : label}
+      <Icon name="chevron-down" inline={true} />
+    </button>
+  );
+
+  // Render individual menu item
   const renderItem = (item, index) => {
     // don't show "latest" flag if the previous item is also latest
     const prevItem = dropdownOptions[index - 1];
     const prevItemIsLatest = prevItem && prevItem.latest;
     return (
       <li
+        {...getItemProps({
+          item,
+          index,
+          disabled: item.path ? false : true, // if no path, disable the item
+          role: 'menuitem' // set role as menuitem
+        })}
         className={classnames('block w-full px12', {
           'bg-gray-faint': highlightedIndex === index, // change color on highlight, match hover
           'link bg-gray-faint-on-hover py3': item.path, // all items with a path are links
@@ -76,8 +112,6 @@ function NavigationDropdown(props) {
           mt18: !item.path && index !== 0 // add margin-top to non link elements
         })}
         key={index}
-        {...getItemProps({ item, index, disabled: item.path ? false : true })}
-        role="menuitem"
       >
         {item.title}
         {item.latest && !prevItemIsLatest ? <span> &mdash; latest</span> : ''}
@@ -85,32 +119,29 @@ function NavigationDropdown(props) {
     );
   };
 
+  // Render menu and menu items
+  const renderMenu = (
+    <ul
+      {...getMenuProps(
+        {
+          'aria-labelledby': buttonId, // the button labels the menu
+          role: 'menu' // set role as menu
+        },
+        { suppressRefError: true }
+      )}
+      className={classnames('', {
+        'absolute bg-white round shadow-darken25 wmin180 w-full hmax240 scroll-auto py6 mt3 scroll-styled z4 ml0': isOpen,
+        none: !isOpen // hide menu when it isn't open
+      })}
+    >
+      {dropdownOptions.map((item, index) => renderItem(item, index))}
+    </ul>
+  );
+
   return (
     <div className="dr-ui--navigation-dropdown relative">
-      <button
-        {...getToggleButtonProps({}, { suppressRefError: true })}
-        role="button" // override role as button
-        aria-haspopup="true" // override haspopup as true
-        className={`flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate relative ${themeButtonClasses}`}
-        aria-label="Navigation" // manually set aria-label
-        aria-labelledby="" // reset value
-      >
-        {selectedItem ? selectedItem.title : label}
-        <Icon name="chevron-down" inline={true} />
-      </button>
-      <ul
-        {...getMenuProps({}, { suppressRefError: true })}
-        aria-labelledby={
-          getToggleButtonProps({}, { suppressRefError: true }).id
-        } // labeled by button
-        className={classnames('', {
-          'absolute bg-white round shadow-darken25 wmin180 w-full hmax240 scroll-auto py6 mt3 scroll-styled z4 ml0': isOpen
-        })}
-        role={isOpen ? 'menu' : 'none'} // set role as menu when open
-      >
-        {isOpen &&
-          dropdownOptions.map((item, index) => renderItem(item, index))}
-      </ul>
+      {renderButton}
+      {renderMenu}
     </div>
   );
 }

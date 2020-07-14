@@ -6,10 +6,10 @@ exports[`navigation-dropdown API Reference renders as expected 1`] = `
     className="dr-ui--navigation-dropdown relative"
   >
     <button
+      aria-controls="api-reference-menu-menu"
       aria-expanded={false}
       aria-haspopup="true"
-      aria-label="Navigation"
-      aria-labelledby=""
+      aria-label="Toggle menu"
       className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate relative relative inline-block px6 mr24 w-full py12"
       id="api-reference-menu-toggle-button"
       onClick={[Function]}
@@ -36,14 +36,185 @@ exports[`navigation-dropdown API Reference renders as expected 1`] = `
     </button>
     <ul
       aria-labelledby="api-reference-menu-toggle-button"
-      className=""
+      className="none"
       id="api-reference-menu-menu"
       onBlur={[Function]}
       onKeyDown={[Function]}
       onMouseLeave={[Function]}
-      role="none"
+      role="menu"
       tabIndex={-1}
-    />
+    >
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 txt-bold link--blue"
+        disabled={false}
+        id="api-reference-menu-item-0"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        15.0.0
+        <span>
+           — latest
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-item-1"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        14.0.0
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-item-2"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        13.0.0
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-item-3"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        11.0.0
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-item-4"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        10.0.0
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-item-5"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        9.0.0
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-item-6"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        8.0.0
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-item-7"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        7.0.0
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-item-8"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        6.0.0
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-item-9"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        5.0.0
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-item-10"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        4.0.0
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-item-11"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        3.0.0
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-item-12"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        2.0.0
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-item-13"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        1.0.0
+        
+      </li>
+    </ul>
   </div>
   <p>
     Nested example. Non-value items are treated as headings:
@@ -52,10 +223,10 @@ exports[`navigation-dropdown API Reference renders as expected 1`] = `
     className="dr-ui--navigation-dropdown relative"
   >
     <button
+      aria-controls="api-reference-menu-nested-menu"
       aria-expanded={false}
       aria-haspopup="true"
-      aria-label="Navigation"
-      aria-labelledby=""
+      aria-label="Toggle menu"
       className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate relative relative inline-block px6 mr24 w-full py12"
       id="api-reference-menu-nested-toggle-button"
       onClick={[Function]}
@@ -82,14 +253,247 @@ exports[`navigation-dropdown API Reference renders as expected 1`] = `
     </button>
     <ul
       aria-labelledby="api-reference-menu-nested-toggle-button"
-      className=""
+      className="none"
       id="api-reference-menu-nested-menu"
       onBlur={[Function]}
       onKeyDown={[Function]}
       onMouseLeave={[Function]}
-      role="none"
+      role="menu"
       tabIndex={-1}
-    />
+    >
+      <li
+        aria-selected="false"
+        className="block w-full px12 txt-bold"
+        disabled={true}
+        id="api-reference-menu-nested-item-0"
+        role="menuitem"
+      >
+        90.0.0
+        <span>
+           — latest
+        </span>
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 txt-bold link--blue"
+        disabled={false}
+        id="api-reference-menu-nested-item-1"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        vision-sdk
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 txt-bold link--blue"
+        disabled={false}
+        id="api-reference-menu-nested-item-2"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        vision-ar
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 txt-bold link--blue"
+        disabled={false}
+        id="api-reference-menu-nested-item-3"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        vision-safety
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 mt18"
+        disabled={true}
+        id="api-reference-menu-nested-item-4"
+        role="menuitem"
+      >
+        80.0.0
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-nested-item-5"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        vision-sdk
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-nested-item-6"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        vision-ar
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-nested-item-7"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        vision-safety
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 mt18"
+        disabled={true}
+        id="api-reference-menu-nested-item-8"
+        role="menuitem"
+      >
+        70.0.0
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-nested-item-9"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        vision-sdk
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-nested-item-10"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        vision-ar
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-nested-item-11"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        vision-safety
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 mt18"
+        disabled={true}
+        id="api-reference-menu-nested-item-12"
+        role="menuitem"
+      >
+        60.0.0
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-nested-item-13"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        vision-sdk
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-nested-item-14"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        vision-ar
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-nested-item-15"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        vision-safety
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 mt18"
+        disabled={true}
+        id="api-reference-menu-nested-item-16"
+        role="menuitem"
+      >
+        50.0.0
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-nested-item-17"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        vision-sdk
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-nested-item-18"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        vision-ar
+        
+      </li>
+      <li
+        aria-selected="false"
+        className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+        disabled={false}
+        id="api-reference-menu-nested-item-19"
+        onClick={[Function]}
+        onMouseMove={[Function]}
+        role="menuitem"
+      >
+        vision-safety
+        
+      </li>
+    </ul>
   </div>
 </div>
 `;
@@ -99,10 +503,10 @@ exports[`navigation-dropdown Basic renders as expected 1`] = `
   className="dr-ui--navigation-dropdown relative"
 >
   <button
+    aria-controls="navigation-dropdown-menu"
     aria-expanded={false}
     aria-haspopup="true"
-    aria-label="Navigation"
-    aria-labelledby=""
+    aria-label="Toggle menu"
     className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate relative border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover"
     id="navigation-dropdown-toggle-button"
     onClick={[Function]}
@@ -129,13 +533,38 @@ exports[`navigation-dropdown Basic renders as expected 1`] = `
   </button>
   <ul
     aria-labelledby="navigation-dropdown-toggle-button"
-    className=""
+    className="none"
     id="navigation-dropdown-menu"
     onBlur={[Function]}
     onKeyDown={[Function]}
     onMouseLeave={[Function]}
-    role="none"
+    role="menu"
     tabIndex={-1}
-  />
+  >
+    <li
+      aria-selected="true"
+      className="block w-full px12 bg-gray-faint link bg-gray-faint-on-hover py3 link--gray"
+      disabled={false}
+      id="navigation-dropdown-item-0"
+      onClick={[Function]}
+      onMouseMove={[Function]}
+      role="menuitem"
+    >
+      Title one
+      
+    </li>
+    <li
+      aria-selected="false"
+      className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+      disabled={false}
+      id="navigation-dropdown-item-1"
+      onClick={[Function]}
+      onMouseMove={[Function]}
+      role="menuitem"
+    >
+      Title two
+      
+    </li>
+  </ul>
 </div>
 `;
