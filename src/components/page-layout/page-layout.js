@@ -40,14 +40,59 @@ const layoutConfig = {
 };
 
 export default class PageLayout extends React.Component {
+  // render the page's top bar navigation
+  renderTopbar = (switchedNavigation, parentPath) => {
+    const { constants, topBarSticker } = this.props;
+    return (
+      <PageLayoutTopbar
+        constants={constants}
+        navigation={switchedNavigation}
+        parentPath={parentPath}
+        topBarSticker={topBarSticker}
+      />
+    );
+  };
+
+  // render the page's sidebar
+  renderSidebar = (config, switchedNavigation, parentPath) => {
+    const { customSidebar } = this.props;
+    return (
+      config.sidebar !== 'none' && (
+        <div className={`col col--4-mm col--12 ${config.sidebarTheme}`}>
+          {customSidebar ? (
+            customSidebar
+          ) : (
+            <Sidebar
+              {...this.props}
+              navigation={switchedNavigation}
+              parentPath={parentPath}
+              layoutConfig={config}
+            />
+          )}
+        </div>
+      )
+    );
+  };
+
+  // render the page's content
+  renderContent = (config, parentPath) => {
+    return (
+      <div
+        className={classnames('col col--12', {
+          'col--8-mm': config.sidebar !== 'none'
+        })}
+      >
+        <Content
+          {...this.props}
+          parentPath={parentPath}
+          layoutConfig={config}
+        />
+      </div>
+    );
+  };
+
   render() {
-    const {
-      location,
-      navigation,
-      constants,
-      topBarSticker,
-      frontMatter
-    } = this.props;
+    const { location, navigation, frontMatter } = this.props;
 
     const { navOrder, noShellHeaderBuffer } = frontMatter;
 
@@ -74,35 +119,11 @@ export default class PageLayout extends React.Component {
     return (
       <ErrorBoundary>
         {!noShellHeaderBuffer && <div className="shell-header-buffer" />}
-        <PageLayoutTopbar
-          constants={constants}
-          navigation={switchedNavigation}
-          parentPath={parentPath}
-          topBarSticker={topBarSticker}
-        />
+        {this.renderTopbar(switchedNavigation, parentPath)}
         <div className="limiter">
           <div className="grid">
-            {config.sidebar !== 'none' && (
-              <div className={`col col--4-mm col--12 ${config.sidebarTheme}`}>
-                <Sidebar
-                  {...this.props}
-                  navigation={switchedNavigation}
-                  parentPath={parentPath}
-                  layoutConfig={config}
-                />
-              </div>
-            )}
-            <div
-              className={classnames('col col--12', {
-                'col--8-mm': config.sidebar !== 'none'
-              })}
-            >
-              <Content
-                {...this.props}
-                parentPath={parentPath}
-                layoutConfig={config}
-              />
-            </div>
+            {this.renderSidebar(config, switchedNavigation, parentPath)}
+            {this.renderContent(config, parentPath)}
           </div>
         </div>
         <div className="fixed block none-mm mx24 my24 z5 bottom right">
@@ -206,5 +227,7 @@ Each `layout` is a configuration of different components. You can override any l
   /** Required if using the `exampleIndex` layout along with image ids. The value is the local `AppropriateImage` component. */
   AppropriateImage: PropTypes.func,
   /** If false, unstick the TopBarSticker */
-  topBarSticker: PropTypes.bool
+  topBarSticker: PropTypes.bool,
+  /** Create a completely custom sidebar. */
+  customSidebar: PropTypes.node
 };
