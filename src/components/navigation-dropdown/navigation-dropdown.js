@@ -152,7 +152,8 @@ NavigationDropdown.defaultProps = {
   onChange: (selection) => {
     if (selection && selection.path && window) window.location = selection.path;
   },
-  themeButtonOption: 'default'
+  themeButtonOption: 'default',
+  label: 'Menu'
 };
 
 NavigationDropdown.propTypes = {
