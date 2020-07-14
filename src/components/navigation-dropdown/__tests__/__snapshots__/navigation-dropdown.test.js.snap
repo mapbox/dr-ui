@@ -45,7 +45,7 @@ exports[`navigation-dropdown API Reference renders as expected 1`] = `
   >
     <li
       aria-selected="false"
-      className="block w-full px12 link bg-gray-faint-on-hover py3 txt-bold link--blue"
+      className="block w-full px12 link bg-gray-faint-on-hover py3 link--blue txt-bold"
       disabled={false}
       id="api-reference-menu-item-0"
       onClick={[Function]}
@@ -274,7 +274,7 @@ exports[`navigation-dropdown API Reference, nested renders as expected 1`] = `
     </li>
     <li
       aria-selected="false"
-      className="block w-full px12 link bg-gray-faint-on-hover py3 txt-bold link--blue"
+      className="block w-full px12 link bg-gray-faint-on-hover py3 link--blue txt-bold"
       disabled={false}
       id="api-reference-menu-nested-item-1"
       onClick={[Function]}
@@ -286,7 +286,7 @@ exports[`navigation-dropdown API Reference, nested renders as expected 1`] = `
     </li>
     <li
       aria-selected="false"
-      className="block w-full px12 link bg-gray-faint-on-hover py3 txt-bold link--blue"
+      className="block w-full px12 link bg-gray-faint-on-hover py3 link--blue txt-bold"
       disabled={false}
       id="api-reference-menu-nested-item-2"
       onClick={[Function]}
@@ -298,7 +298,7 @@ exports[`navigation-dropdown API Reference, nested renders as expected 1`] = `
     </li>
     <li
       aria-selected="false"
-      className="block w-full px12 link bg-gray-faint-on-hover py3 txt-bold link--blue"
+      className="block w-full px12 link bg-gray-faint-on-hover py3 link--blue txt-bold"
       disabled={false}
       id="api-reference-menu-nested-item-3"
       onClick={[Function]}

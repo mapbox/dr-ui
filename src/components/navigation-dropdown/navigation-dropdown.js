@@ -72,11 +72,11 @@ function NavigationDropdown(props) {
     <button
       {...getToggleButtonProps(
         {
-          'aria-label': 'Toggle menu', // manually set aria-label
-          'aria-labelledby': undefined, // reset value
+          'aria-label': 'Toggle menu', // manually set aria-label to better describe button's function
+          'aria-labelledby': undefined, // reset value since we are setting aria-label
           'aria-haspopup': 'true', // override haspopup as true
           role: 'button', // override role as button
-          'aria-controls': menuId // the button controls the menu (ul)
+          'aria-controls': menuId // this button controls the menu in renderMenu
         },
         { suppressRefError: true }
       )}
@@ -100,16 +100,16 @@ function NavigationDropdown(props) {
         {...getItemProps({
           item,
           index,
-          disabled: item.path ? false : true, // if no path, disable the item
+          disabled: !item.path, // if no path, disable the item
           role: 'menuitem' // set role as menuitem
         })}
         className={classnames('block w-full px12', {
           'bg-gray-faint': highlightedIndex === index, // change color on highlight, match hover
           'link bg-gray-faint-on-hover py3': item.path, // all items with a path are links
-          'link--gray': !item.latest && item.path, // all non latest links are gray
-          'txt-bold': item.latest, // every latest item is bold
+          'link--gray': !item.latest && item.path, // all non-latest links are gray
           'link--blue': item.latest && item.path, // latest items with path are blue links
-          mt18: !item.path && index !== 0 // add margin-top to non link elements
+          'txt-bold': item.latest, // every latest item is bold
+          mt18: !item.path && index !== 0 // add margin-top to non-link elements
         })}
         key={index}
       >
