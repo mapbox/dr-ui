@@ -33,4 +33,20 @@ describe('navigation-dropdown', () => {
       expect(tree).toMatchSnapshot();
     });
   });
+
+  describe(testCases.apiNested.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.apiNested;
+      wrapper = renderer.create(testCase.element);
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });
