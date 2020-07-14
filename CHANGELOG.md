@@ -4,6 +4,10 @@
 
 - Update `NavigationDropdown` to use accessible menu and support API version. [#267](https://github.com/mapbox/dr-ui/pull/267)
 
+## Main
+
+- Add `ErrorBoundary` component. [#272](https://github.com/mapbox/dr-ui/pull/272)
+
 ## 0.29.2
 
 - Add aria-label to `BackToTopButton`. [#290](https://github.com/mapbox/dr-ui/pull/290)
