@@ -23,4 +23,20 @@ testCases.oops = {
   }
 };
 
+testCases.oopsCustom = {
+  description: 'Trigger error with custom title and note contents',
+  component: ErrorBoundary,
+  props: {
+    errorNoteTitle: 'Well this is embarassing',
+    errorNote: (
+      <p>This feature is having trouble loading, please try again later.</p>
+    ),
+    children: (
+      <div>
+        My cool website <BadFunction />
+      </div>
+    )
+  }
+};
+
 export { testCases };

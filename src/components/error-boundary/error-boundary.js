@@ -35,12 +35,11 @@ export default class ErrorBoundary extends React.Component {
 
   render() {
     const { hasError, error } = this.state;
+    const { errorNote, errorNoteTitle } = this.props;
     if (hasError) {
       return (
-        <Note theme="error" title="Something went wrong">
-          <p>
-            We sent the error to the team. Please refresh the page to try again.
-          </p>
+        <Note theme="error" title={errorNoteTitle}>
+          {errorNote}
           <details>
             <summary className="cursor-pointer">Error details</summary>
             {error && error.message && (
@@ -56,9 +55,20 @@ export default class ErrorBoundary extends React.Component {
   }
 }
 
+ErrorBoundary.defaultProps = {
+  errorNoteTitle: 'Something went wrong',
+  errorNote: (
+    <p>We sent the error to the team. Please refresh the page to try again.</p>
+  )
+};
+
 ErrorBoundary.propTypes = {
   /** Wrap ErrorBoundary around components to catch any errors triggered from within those nodes. */
   children: PropTypes.node.isRequired,
+  /** Title of error note. */
+  errorNoteTitle: PropTypes.string,
+  /** Contents of error note. */
+  errorNote: PropTypes.node,
   /** Each key/value will be added as extra context to the Sentry issue. */
   setExtra: PropTypes.object
 };

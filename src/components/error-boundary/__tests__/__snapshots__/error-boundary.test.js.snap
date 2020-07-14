@@ -68,3 +68,70 @@ exports[`error-boundary Trigger error renders as expected 1`] = `
   </div>
 </div>
 `;
+
+exports[`error-boundary Trigger error with custom title and note contents renders as expected 1`] = `
+<div
+  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
+  style={
+    Object {
+      "background": "#fbe5e5",
+      "color": "#9b3134",
+    }
+  }
+>
+  <div
+    className="flex-child mr18 none block-mm pt3"
+  >
+    <div
+      className="bg-red-light round-full color-red flex-parent flex-parent--center-main flex-parent--center-cross"
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
+    >
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 40,
+            "width": 40,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-alert"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="flex-child prose"
+  >
+    <div
+      className="txt-bold txt-m mb6"
+    >
+      Well this is embarassing
+    </div>
+    <p>
+      This feature is having trouble loading, please try again later.
+    </p>
+    <details>
+      <summary
+        className="cursor-pointer"
+      >
+        Error details
+      </summary>
+      <pre>
+        <code>
+          BadFunction(...): Nothing was returned from render. This usually means a return statement is missing. Or, to render nothing, return null.
+        </code>
+      </pre>
+    </details>
+  </div>
+</div>
+`;
