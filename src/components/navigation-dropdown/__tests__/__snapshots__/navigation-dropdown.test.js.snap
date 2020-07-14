@@ -526,7 +526,7 @@ exports[`navigation-dropdown Basic renders as expected 1`] = `
     onKeyDown={[Function]}
     role="button"
   >
-    Title one
+    Home
     <svg
       className="events-none icon inline-block align-t"
       focusable="false"
@@ -563,7 +563,7 @@ exports[`navigation-dropdown Basic renders as expected 1`] = `
       onMouseMove={[Function]}
       role="menuitem"
     >
-      Title one
+      Home
       
     </li>
     <li
@@ -575,7 +575,75 @@ exports[`navigation-dropdown Basic renders as expected 1`] = `
       onMouseMove={[Function]}
       role="menuitem"
     >
-      Title two
+      How Mapbox Works
+      
+    </li>
+    <li
+      aria-selected="false"
+      className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+      disabled={false}
+      id="navigation-dropdown-item-2"
+      onClick={[Function]}
+      onMouseMove={[Function]}
+      role="menuitem"
+    >
+      Tutorials 
+      <div
+        className="inline-block"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+      >
+        <div
+          aria-describedby="tooltip-1"
+          className="txt-s txt-bold round px6 inline-block cursor-default border"
+          style={
+            Object {
+              "background": "#e8f5ee",
+              "borderColor": "#378645",
+              "color": "#15603d",
+            }
+          }
+        >
+          New!
+        </div>
+        <div
+          className="hide-visually"
+          id="tooltip-1"
+          role="tooltip"
+        >
+          <div
+            className="txt-s wmax120"
+          >
+            This feature was released recently.
+          </div>
+        </div>
+      </div>
+      
+    </li>
+    <li
+      aria-selected="false"
+      className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+      disabled={false}
+      id="navigation-dropdown-item-3"
+      onClick={[Function]}
+      onMouseMove={[Function]}
+      role="menuitem"
+    >
+      Troubleshooting
+      
+    </li>
+    <li
+      aria-selected="false"
+      className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
+      disabled={false}
+      id="navigation-dropdown-item-4"
+      onClick={[Function]}
+      onMouseMove={[Function]}
+      role="menuitem"
+    >
+      Glossary
       
     </li>
   </ul>
