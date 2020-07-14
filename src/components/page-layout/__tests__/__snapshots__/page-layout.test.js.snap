@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`page-layout Accordion layout renders as expected 1`] = `
-<div>
+Array [
   <div
     className="shell-header-buffer"
-  />
+  />,
   <div
     className="sticky-outer-wrapper"
     style={Object {}}
@@ -162,7 +162,7 @@ exports[`page-layout Accordion layout renders as expected 1`] = `
         </div>
       </div>
     </div>
-  </div>
+  </div>,
   <div
     className="limiter"
   >
@@ -576,7 +576,7 @@ exports[`page-layout Accordion layout renders as expected 1`] = `
         </div>
       </div>
     </div>
-  </div>
+  </div>,
   <div
     className="fixed block none-mm mx24 my24 z5 bottom right"
   >
@@ -616,15 +616,15 @@ exports[`page-layout Accordion layout renders as expected 1`] = `
         </button>
       </div>
     </div>
-  </div>
-</div>
+  </div>,
+]
 `;
 
 exports[`page-layout Example (index) layout renders as expected 1`] = `
-<div>
+Array [
   <div
     className="shell-header-buffer"
-  />
+  />,
   <div
     className="sticky-outer-wrapper"
     style={Object {}}
@@ -782,7 +782,7 @@ exports[`page-layout Example (index) layout renders as expected 1`] = `
         </div>
       </div>
     </div>
-  </div>
+  </div>,
   <div
     className="limiter"
   >
@@ -1137,7 +1137,7 @@ exports[`page-layout Example (index) layout renders as expected 1`] = `
         </div>
       </div>
     </div>
-  </div>
+  </div>,
   <div
     className="fixed block none-mm mx24 my24 z5 bottom right"
   >
@@ -1177,15 +1177,15 @@ exports[`page-layout Example (index) layout renders as expected 1`] = `
         </button>
       </div>
     </div>
-  </div>
-</div>
+  </div>,
+]
 `;
 
 exports[`page-layout Example page layout renders as expected 1`] = `
-<div>
+Array [
   <div
     className="shell-header-buffer"
-  />
+  />,
   <div
     className="sticky-outer-wrapper"
     style={Object {}}
@@ -1343,7 +1343,7 @@ exports[`page-layout Example page layout renders as expected 1`] = `
         </div>
       </div>
     </div>
-  </div>
+  </div>,
   <div
     className="limiter"
   >
@@ -1479,7 +1479,7 @@ exports[`page-layout Example page layout renders as expected 1`] = `
         </div>
       </div>
     </div>
-  </div>
+  </div>,
   <div
     className="fixed block none-mm mx24 my24 z5 bottom right"
   >
@@ -1519,15 +1519,15 @@ exports[`page-layout Example page layout renders as expected 1`] = `
         </button>
       </div>
     </div>
-  </div>
-</div>
+  </div>,
+]
 `;
 
 exports[`page-layout Page layout renders as expected 1`] = `
-<div>
+Array [
   <div
     className="shell-header-buffer"
-  />
+  />,
   <div
     className="sticky-outer-wrapper"
     style={Object {}}
@@ -1685,7 +1685,7 @@ exports[`page-layout Page layout renders as expected 1`] = `
         </div>
       </div>
     </div>
-  </div>
+  </div>,
   <div
     className="limiter"
   >
@@ -1822,7 +1822,7 @@ exports[`page-layout Page layout renders as expected 1`] = `
         </div>
       </div>
     </div>
-  </div>
+  </div>,
   <div
     className="fixed block none-mm mx24 my24 z5 bottom right"
   >
@@ -1862,15 +1862,15 @@ exports[`page-layout Page layout renders as expected 1`] = `
         </button>
       </div>
     </div>
-  </div>
-</div>
+  </div>,
+]
 `;
 
 exports[`page-layout full layout renders as expected 1`] = `
-<div>
+Array [
   <div
     className="shell-header-buffer"
-  />
+  />,
   <div
     className="sticky-outer-wrapper"
     style={Object {}}
@@ -2028,7 +2028,7 @@ exports[`page-layout full layout renders as expected 1`] = `
         </div>
       </div>
     </div>
-  </div>
+  </div>,
   <div
     className="limiter"
   >
@@ -2107,7 +2107,7 @@ exports[`page-layout full layout renders as expected 1`] = `
         </div>
       </div>
     </div>
-  </div>
+  </div>,
   <div
     className="fixed block none-mm mx24 my24 z5 bottom right"
   >
@@ -2147,6 +2147,6 @@ exports[`page-layout full layout renders as expected 1`] = `
         </button>
       </div>
     </div>
-  </div>
-</div>
+  </div>,
+]
 `;

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import BackToTopButton from '../back-to-top-button/back-to-top-button';
+import ErrorBoundary from '../error-boundary/error-boundary';
 import Content from './components/content';
 import Sidebar from './components/sidebar';
 import PageLayoutTopbar from './components/topbar';
@@ -71,7 +72,7 @@ export default class PageLayout extends React.Component {
     };
 
     return (
-      <div>
+      <ErrorBoundary>
         {!noShellHeaderBuffer && <div className="shell-header-buffer" />}
         <PageLayoutTopbar
           constants={constants}
@@ -107,7 +108,7 @@ export default class PageLayout extends React.Component {
         <div className="fixed block none-mm mx24 my24 z5 bottom right">
           <BackToTopButton />
         </div>
-      </div>
+      </ErrorBoundary>
     );
   }
 }
