@@ -119,11 +119,17 @@ export default class PageLayout extends React.Component {
     return (
       <ErrorBoundary>
         {!noShellHeaderBuffer && <div className="shell-header-buffer" />}
-        {this.renderTopbar(switchedNavigation, parentPath)}
+        <ErrorBoundary>
+          {this.renderTopbar(switchedNavigation, parentPath)}
+        </ErrorBoundary>
         <div className="limiter">
           <div className="grid">
-            {this.renderSidebar(config, switchedNavigation, parentPath)}
-            {this.renderContent(config, parentPath)}
+            <ErrorBoundary>
+              {this.renderSidebar(config, switchedNavigation, parentPath)}
+            </ErrorBoundary>
+            <ErrorBoundary>
+              {this.renderContent(config, parentPath)}
+            </ErrorBoundary>
           </div>
         </div>
         <div className="fixed block none-mm mx24 my24 z5 bottom right">
