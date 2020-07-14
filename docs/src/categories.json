@@ -41,7 +41,8 @@
     "Card",
     "CardContainer",
     "ExamplesPage",
-    "TabList"
+    "TabList",
+    "ErrorBoundary"
   ],
   "Images": [
     "BookImage",
