@@ -1,8 +1,13 @@
 const path = require('path');
 
+const { buildNavigation } = require('../src/helpers/batfish/navigation.js');
+const { buildTopics } = require('../src/helpers/batfish/topics.js');
+
+const siteBasePath = '/dr-ui';
+
 module.exports = () => {
   return {
-    siteBasePath: '/dr-ui',
+    siteBasePath,
     outputDirectory: path.join(__dirname, '_site/'),
     temporaryDirectory: path.join(__dirname, '_site_tmp/'),
     stylesheets: [
@@ -20,6 +25,10 @@ module.exports = () => {
         require('../src/plugins/create-sections'),
         require('../src/plugins/make-table-scroll')
       ]
+    },
+    dataSelectors: {
+      navigation: (data) => buildNavigation(siteBasePath, data),
+      topics: (data) => buildTopics(data)
     }
   };
 };

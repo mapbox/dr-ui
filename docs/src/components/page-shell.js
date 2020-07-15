@@ -37,6 +37,11 @@ class PageShell extends React.Component {
                   items={[
                     { label: 'Components', id: '/dr-ui/', href: '/dr-ui/' },
                     {
+                      label: 'Batfish helpers',
+                      id: '/dr-ui/batfish-helpers/',
+                      href: '/dr-ui/batfish-helpers/'
+                    },
+                    {
                       label: 'Changelog',
                       id: '/dr-ui/changelog/',
                       href: '/dr-ui/changelog/'
