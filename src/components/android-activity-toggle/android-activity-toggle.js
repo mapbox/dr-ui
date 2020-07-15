@@ -4,24 +4,7 @@ import ToggleableCodeBlock from '../toggleable-code-block/toggleable-code-block'
 import { highlightJava } from '../highlight/java';
 import { highlightKotlin } from '../highlight/kotlin';
 import ContextConsumer from '../page-layout/context/user-context';
-
-export function findSelectedCode(kotlin, java, preference) {
-  let selectedCode = '';
-  if (kotlin === undefined) {
-    /* If there is no kotlin code, use java. */
-    selectedCode = java;
-  } else if (java === undefined) {
-    /* If there is no java code, use kotlin. */
-    selectedCode = kotlin;
-  } else if (preference === 'kotlin') {
-    /** If there is both java and kotlin code,
-     * use the preferred language. */
-    selectedCode = kotlin;
-  } else {
-    selectedCode = java;
-  }
-  return selectedCode;
-}
+import findSelectedCode from './find-selected';
 
 export default class AndroidActivityToggle extends React.Component {
   render() {
@@ -40,7 +23,7 @@ export default class AndroidActivityToggle extends React.Component {
         <ContextConsumer>
           {({ setLanguage, userPreferredLanguage }) => {
             const language = userPreferredLanguage['android'];
-            const selectedCode = findSelectedCode(kotlin, java, language);
+            const selectedCode = findSelectedCode({ kotlin, java }, language);
             const snippetProps = {
               copyRanges: copyRanges || undefined,
               filename: filename || undefined,

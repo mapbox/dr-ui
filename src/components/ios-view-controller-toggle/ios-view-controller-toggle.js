@@ -4,6 +4,7 @@ import ToggleableCodeBlock from '../toggleable-code-block/toggleable-code-block'
 import { highlightSwift } from '../highlight/swift';
 import { highlightObjectivec } from '../highlight/objectivec';
 import ContextConsumer from '../page-layout/context/user-context';
+import findSelectedCode from '../android-activity-toggle/find-selected';
 
 export default class IosViewControllerToggle extends React.Component {
   static defaultProps = {
@@ -18,7 +19,10 @@ export default class IosViewControllerToggle extends React.Component {
         <ContextConsumer>
           {({ setLanguage, userPreferredLanguage }) => {
             const language = userPreferredLanguage['ios'];
-            const selectedCode = language === 'objectiveC' ? objectiveC : swift;
+            const selectedCode = findSelectedCode(
+              { objectiveC, swift },
+              language
+            );
             const snippetProps = {
               copyRanges: this.props.copyRanges || undefined,
               filename: this.props.filename || undefined,
