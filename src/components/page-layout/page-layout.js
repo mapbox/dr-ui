@@ -42,13 +42,14 @@ const layoutConfig = {
 export default class PageLayout extends React.Component {
   // render the page's top bar navigation
   renderTopbar = (switchedNavigation, parentPath) => {
-    const { constants, topBarSticker } = this.props;
+    const { constants, topBarSticker, tabListAppend } = this.props;
     return (
       <PageLayoutTopbar
         constants={constants}
         navigation={switchedNavigation}
         parentPath={parentPath}
         topBarSticker={topBarSticker}
+        tabListAppend={tabListAppend}
       />
     );
   };
@@ -235,5 +236,11 @@ Each `layout` is a configuration of different components. You can override any l
   /** If false, unstick the TopBarSticker */
   topBarSticker: PropTypes.bool,
   /** Create a completely custom sidebar. */
-  customSidebar: PropTypes.node
+  customSidebar: PropTypes.node,
+  /** Append item to TabList. This is used by iOS and Android site's API reference. */
+  tabListAppend: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    label: PropTypes.node.isRequired,
+    href: PropTypes.string.isRequired
+  })
 };

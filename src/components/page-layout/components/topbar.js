@@ -8,10 +8,13 @@ import TabList from '@mapbox/mr-ui/tab-list';
 
 export default class PageLayoutTopbar extends React.Component {
   render() {
-    const { parentPath, topBarSticker } = this.props;
-    const { title, tag, path, navTabs } = this.props.navigation;
+    const { parentPath, topBarSticker, tabListAppend } = this.props;
+    const { title, tag, path } = this.props.navigation;
+    let { navTabs } = this.props.navigation;
     const { SITE, BASEURL } = this.props.constants;
     const Wrapper = topBarSticker ? TopbarSticker : Topbar;
+    // if tabListAppend, append it to navTabs
+    if (tabListAppend && navTabs) navTabs.push(tabListAppend);
     return (
       <Wrapper>
         <div className="limiter">
@@ -56,5 +59,6 @@ PageLayoutTopbar.propTypes = {
     SITE: PropTypes.string.isRequired,
     BASEURL: PropTypes.string.isRequired
   }).isRequired,
-  topBarSticker: PropTypes.bool
+  topBarSticker: PropTypes.bool,
+  tabListAppend: PropTypes.node
 };
