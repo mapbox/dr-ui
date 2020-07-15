@@ -1,7 +1,6 @@
 const { buildTopics } = require('../topics.js');
 const data = require('./fixtures/data.json');
 const dataMulti = require('./fixtures/data-multi.json');
-const addTopics = require('./fixtures/multi-add-topics.json');
 
 describe('buildTopics', () => {
   it('single structure', () => {
@@ -10,9 +9,5 @@ describe('buildTopics', () => {
 
   it('multi structure', () => {
     expect(buildTopics(dataMulti)).toMatchSnapshot();
-  });
-
-  it('append topics', () => {
-    expect(buildTopics(data, addTopics)).toMatchSnapshot();
   });
 });
