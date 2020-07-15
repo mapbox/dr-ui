@@ -4,11 +4,14 @@ description: Batfish data selector functions to build navigation and topic datas
 navOrder: 2
 prependJs:
   - "import navigation from '@mapbox/batfish/data/navigation';"
+  - "import topics from '@mapbox/batfish/data/topics';"
 ---
 
 # Batfish helpers
 
 Dr. UI has two functions that are used in `dataSelectors` in `batfish.config.js` to help build page metadata and site hierarchy. Each data selector has tests to assert the shape of the data.
+
+These dataset functions often use the page's relative pathname as a unique identifier.
 
 ## Navigation
 
@@ -108,8 +111,22 @@ import topics from '@mapbox/batfish/data/topics';
 
 class SideBar extends React.Component {
   render() {
-    const topicList = topics['/docs-starter-kit/examples/'].topics;
+    const topicList = topics['/dr-ui/examples/'].topics;
   }
+}
+```
+
+### Output
+
+- The shape of topics is an object, where the top-level keys are pathnames for top level pages that have subpages with `topics` or `topic`.
+  - Each object has a `topics`. It contains a unique list of topics, ordered by count of pages with that topic.
+    - Each topic has `pages`. It contains metadata for each page that has that topic.
+
+#### Sample
+
+```json
+{
+  "/dr-ui/examples/" : {{JSON.stringify(topics["/dr-ui/examples/"],null,2)}}
 }
 ```
 
@@ -163,8 +180,6 @@ class SideBar extends React.Component {
   }
 ]
 ```
-
-### Sample output
 
 ## Troubleshooting
 
