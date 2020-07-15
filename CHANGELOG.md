@@ -3,6 +3,7 @@
 ## Layouts
 
 - Add `AnalyticsShell` component. [#307](https://github.com/mapbox/dr-ui/pull/307)
+- Add Batfish helpers: navigation and topics.
 
 ## Main
 
