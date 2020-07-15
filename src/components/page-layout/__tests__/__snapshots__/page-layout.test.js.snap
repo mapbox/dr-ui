@@ -190,7 +190,6 @@ Array [
               }
             >
               <div
-                className="sidebarNarrowClasses"
                 id="dr-ui--page-layout-sidebar"
               >
                 <div
@@ -810,7 +809,6 @@ Array [
               }
             >
               <div
-                className="sidebarNarrowClasses"
                 id="dr-ui--page-layout-sidebar"
               >
                 <div
@@ -1371,7 +1369,6 @@ Array [
               }
             >
               <div
-                className="sidebarNarrowClasses"
                 id="dr-ui--page-layout-sidebar"
               >
                 <div
@@ -1713,7 +1710,6 @@ Array [
               }
             >
               <div
-                className="sidebarNarrowClasses"
                 id="dr-ui--page-layout-sidebar"
               >
                 <div
