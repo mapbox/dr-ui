@@ -2,8 +2,6 @@
 title: Example 3
 description: Replace me.
 contentType: example
-language:
-  - JavaScript
 topics:
   - Navigation
   - Geocoding

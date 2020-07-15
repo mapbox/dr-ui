@@ -2,8 +2,6 @@
 title: Example 1
 description: Replace me.
 contentType: example
-language:
-  - JavaScript
 topics:
   - Navigation
 thumbnail: header-image

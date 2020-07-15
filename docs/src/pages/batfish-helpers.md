@@ -7,8 +7,6 @@ prependJs:
   - "import topics from '@mapbox/batfish/data/topics';"
 ---
 
-# Batfish helpers
-
 Dr. UI has two functions that are used in `dataSelectors` in `batfish.config.js` to help build page metadata and site hierarchy. Each data selector has tests to assert the shape of the data.
 
 These dataset functions often use the page's relative pathname as a unique identifier.
