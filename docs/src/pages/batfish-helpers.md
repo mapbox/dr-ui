@@ -135,7 +135,6 @@ class SideBar extends React.Component {
 - `path` (required) string. Top-level folder in `src/pages`.
 - `title` (required) string. Title of the product.
 - `tag` (optional) string. Name of tag to add to ProductMenu. [See options](/dr-ui/#productmenu).
-- `dropdown` (optional) object. Label and items to display as a dropdown.
 
 ### Example
 
@@ -144,26 +143,6 @@ class SideBar extends React.Component {
   {
     "path": "maps",
     "title": "Maps SDK for iOS",
-    "dropdown": {
-      "label": "API Reference",
-      "items": [
-        {
-          "title": "5.9.0",
-          "href": "/ios/api/maps/5.9.0/index.html",
-          "latest": true
-        },
-        {
-          "title": "5.8.0",
-          "href": "/ios/api/maps/5.8.0/index.html",
-          "latest": false
-        },
-        {
-          "title": "5.7.0",
-          "href": "/ios/api/maps/5.7.0/index.html",
-          "latest": false
-        }
-      ]
-    }
   },
   {
     "path": "navigation",

@@ -452,63 +452,6 @@ Object {
         "id": "/docs-starter-kit/maps/examples/",
         "label": "Examples",
       },
-      Object {
-        "href": "/ios/api/maps/5.9.0/index.html",
-        "id": "API-Reference",
-        "items": Array [
-          Object {
-            "href": "/ios/api/maps/5.9.0/index.html",
-            "latest": true,
-            "title": "5.9.0",
-          },
-          Object {
-            "href": "/ios/api/maps/5.8.0/index.html",
-            "latest": false,
-            "title": "5.8.0",
-          },
-          Object {
-            "href": "/ios/api/maps/5.7.0/index.html",
-            "latest": false,
-            "title": "5.7.0",
-          },
-          Object {
-            "href": "/ios/api/maps/5.6.0/index.html",
-            "latest": false,
-            "title": "5.6.0",
-          },
-          Object {
-            "href": "/ios/api/maps/5.5.0/index.html",
-            "latest": false,
-            "title": "5.5.0",
-          },
-          Object {
-            "href": "/ios/api/maps/5.4.0/index.html",
-            "latest": false,
-            "title": "5.4.0",
-          },
-          Object {
-            "href": "/ios/api/maps/5.3.0/index.html",
-            "latest": false,
-            "title": "5.3.0",
-          },
-          Object {
-            "href": "/ios/api/maps/5.2.0/index.html",
-            "latest": false,
-            "title": "5.2.0",
-          },
-          Object {
-            "href": "/ios/api/maps/5.1.0/index.html",
-            "latest": false,
-            "title": "5.1.0",
-          },
-          Object {
-            "href": "/ios/api/maps/5.0.0/index.html",
-            "latest": false,
-            "title": "5.0.0",
-          },
-        ],
-        "label": "API Reference",
-      },
     ],
     "path": "maps",
     "title": "Maps SDK for iOS",

@@ -1,6 +1,5 @@
 // creates a page hierarchy based on top navigation item (as dictated by frontMatter.navOrder)
 // see: data/README.md to learn more about navigation
-const slugify = require('slugify');
 
 function buildNavigation(siteBasePath, data, sections) {
   let obj = {};
@@ -104,25 +103,14 @@ function buildMultiLevels(sections, pages) {
   );
 }
 
-function buildNavTabs(organized, section) {
-  const tabs = Object.keys(organized).map((path) => {
+function buildNavTabs(organized) {
+  return Object.keys(organized).map((path) => {
     return {
       label: organized[path].title,
       id: path,
       href: path
     };
   });
-
-  if (section && section.dropdown) {
-    tabs.push({
-      label: section.dropdown.label,
-      href: section.dropdown.items[0].href,
-      id: slugify(section.dropdown.label),
-      items: section.dropdown.items
-    });
-  }
-
-  return tabs;
 }
 
 function buildAccordion(organized) {
