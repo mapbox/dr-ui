@@ -1,5 +1,5 @@
 // builds all the data you need for a given page's path
-// see: data/README.md to learn more about buildPages
+// see: https://mapbox.github.io/dr-ui/batfish-helpers/#topics
 
 const slugify = require('slugify');
 

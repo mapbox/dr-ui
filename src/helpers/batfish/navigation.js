@@ -1,5 +1,5 @@
 // creates a page hierarchy based on top navigation item (as dictated by frontMatter.navOrder)
-// see: data/README.md to learn more about navigation
+// see: https://mapbox.github.io/dr-ui/batfish-helpers/
 
 function buildNavigation(siteBasePath, data, sections) {
   let obj = {};
