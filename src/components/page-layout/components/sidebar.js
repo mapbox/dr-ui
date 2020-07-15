@@ -94,6 +94,7 @@ export default class Sidebar extends React.Component {
 
   render() {
     const { stickyEnabled, bottomBoundaryValue, topValue } = this.state;
+    const { customSidebar } = this.props;
 
     return (
       <div data-swiftype-index="false">
@@ -103,8 +104,8 @@ export default class Sidebar extends React.Component {
           innerZ={3}
           top={topValue}
         >
-          <div className="sidebarNarrowClasses" id="dr-ui--page-layout-sidebar">
-            {this.getSidebarContent()}
+          <div id="dr-ui--page-layout-sidebar">
+            {customSidebar ? customSidebar : this.getSidebarContent()}
           </div>
         </Sticky>
       </div>
@@ -133,5 +134,6 @@ Sidebar.propTypes = {
     sidebar: PropTypes.oneOf(['none', 'toc', 'accordion', 'sectioned']),
     hideSubItems: PropTypes.bool,
     includeFilterBar: PropTypes.bool
-  })
+  }),
+  customSidebar: PropTypes.node
 };

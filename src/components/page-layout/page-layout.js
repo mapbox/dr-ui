@@ -60,16 +60,13 @@ export default class PageLayout extends React.Component {
     return (
       config.sidebar !== 'none' && (
         <div className={`col col--4-mm col--12 ${config.sidebarTheme}`}>
-          {customSidebar ? (
-            customSidebar
-          ) : (
-            <Sidebar
-              {...this.props}
-              navigation={switchedNavigation}
-              parentPath={parentPath}
-              layoutConfig={config}
-            />
-          )}
+          <Sidebar
+            {...this.props}
+            navigation={switchedNavigation}
+            parentPath={parentPath}
+            layoutConfig={config}
+            customSidebar={customSidebar}
+          />
         </div>
       )
     );
