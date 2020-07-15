@@ -21,3 +21,7 @@
   position: sticky !important;
   top: 0px !important;
 }
+
+pre {
+  max-height: 300px;
+}

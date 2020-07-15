@@ -1,0 +1,19 @@
+[
+  {
+    "path": "maps",
+    "title": "Maps SDK for iOS"
+  },
+  {
+    "path": "navigation",
+    "title": "Navigation SDK for iOS"
+  },
+  {
+    "path": "beta/navigation",
+    "title": "Beta Navigation SDK for iOS",
+    "tag": "beta"
+  },
+  {
+    "path": "vision",
+    "title": "Vision SDK for iOS"
+  }
+]

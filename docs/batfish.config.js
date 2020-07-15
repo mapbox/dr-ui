@@ -1,6 +1,7 @@
 const path = require('path');
 
-// const { buildNavigation } = require('../src/helpers/batfish/navigation.js');
+const { buildNavigation } = require('../src/helpers/batfish/navigation.js');
+const { buildTopics } = require('../src/helpers/batfish/topics.js');
 
 const siteBasePath = '/dr-ui';
 
@@ -26,7 +27,8 @@ module.exports = () => {
       ]
     },
     dataSelectors: {
-      // navigation: (data) => buildNavigation(siteBasePath, data)
+      navigation: (data) => buildNavigation(siteBasePath, data),
+      topics: (data) => buildTopics(data)
     }
   };
 };
