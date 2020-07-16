@@ -6,7 +6,7 @@ import ProductMenu from '../../product-menu/product-menu';
 import Search from '../../search/search';
 import TabList from '@mapbox/mr-ui/tab-list';
 
-export default class PageLayoutTopbar extends React.Component {
+export default class PageLayoutTopbar extends React.PureComponent {
   render() {
     const { parentPath, topBarSticker, tabListAppend } = this.props;
     const { title, tag, path } = this.props.navigation;
@@ -14,7 +14,12 @@ export default class PageLayoutTopbar extends React.Component {
     const { SITE, BASEURL } = this.props.constants;
     const Wrapper = topBarSticker ? TopbarSticker : Topbar;
     // if tabListAppend, append it to navTabs
-    if (tabListAppend && navTabs) navTabs.push(tabListAppend);
+    if (tabListAppend && navTabs) {
+      tabListAppend.map((tab) => {
+        if (navTabs.filter((f) => f.id === tab.id).length === 0)
+          navTabs.push(tab);
+      });
+    }
     return (
       <Wrapper>
         <div className="limiter">
