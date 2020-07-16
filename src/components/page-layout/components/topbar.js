@@ -28,10 +28,10 @@ export default class PageLayoutTopbar extends React.Component {
                 />
               </div>
             </div>
-            <div className="col col--5-mm col--12">
+            <div className="col col--6-mm col--12">
               {navTabs && <TabList items={navTabs} activeItem={parentPath} />}
             </div>
-            <div className="col col--3-mm col--12">
+            <div className="col col--2-mm col--12">
               <div className="flex-parent-mm flex-parent--center-cross flex-parent--end-main h-full-mm wmax300 wmax-full-mm my0-mm my12">
                 <Search site={SITE} />
               </div>
