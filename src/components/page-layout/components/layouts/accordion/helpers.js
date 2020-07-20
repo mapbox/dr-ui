@@ -43,6 +43,7 @@ function buildThirdLevel(orderedHeadings, nextHeading, h2) {
 }
 
 function parseHeadings(frontMatter, headings) {
+  if (!headings) return [];
   return headings.map((heading, index) => {
     const tag = heading.tag || parseBeta(frontMatter, heading);
     return {
