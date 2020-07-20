@@ -4,9 +4,10 @@
 export function buildSecondLevel(frontMatter, headings) {
   if (!frontMatter.headings && !headings) return [];
   // parse headings
-  const orderedHeadings = frontMatter.headings
-    ? parseHeadings(frontMatter, frontMatter.headings)
-    : parseHeadings(frontMatter, headings);
+  const orderedHeadings =
+    frontMatter.headings && frontMatter.headings.length > 1
+      ? parseHeadings(frontMatter, frontMatter.headings)
+      : parseHeadings(frontMatter, headings);
   // find top level headings (h2)
   const topLevelHeadings = orderedHeadings.filter((h) => h.level === 2);
   // return data
@@ -43,7 +44,7 @@ function buildThirdLevel(orderedHeadings, nextHeading, h2) {
 
 function parseHeadings(frontMatter, headings) {
   return headings.map((heading, index) => {
-    const tag = parseBeta(frontMatter, heading);
+    const tag = heading.tag || parseBeta(frontMatter, heading);
     return {
       level: heading.level,
       text: heading.text,

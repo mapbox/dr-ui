@@ -56,7 +56,7 @@ export default class PageLayout extends React.Component {
 
   // render the page's sidebar
   renderSidebar = (config, switchedNavigation, parentPath) => {
-    const { customSidebar } = this.props;
+    const { customSidebar, headings } = this.props;
     return (
       config.sidebar !== 'none' && (
         <div className={`col col--4-mm col--12 ${config.sidebarTheme}`}>
@@ -66,6 +66,7 @@ export default class PageLayout extends React.Component {
             parentPath={parentPath}
             layoutConfig={config}
             customSidebar={customSidebar}
+            headings={headings}
           />
         </div>
       )
@@ -239,5 +240,7 @@ Each `layout` is a configuration of different components. You can override any l
     id: PropTypes.string.isRequired,
     label: PropTypes.node.isRequired,
     href: PropTypes.string.isRequired
-  })
+  }),
+  /** For when headings are dynamic, this is used by API docs */
+  headings: PropTypes.array
 };
