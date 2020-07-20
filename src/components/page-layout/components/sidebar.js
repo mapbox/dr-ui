@@ -62,6 +62,8 @@ export default class Sidebar extends React.Component {
 
     const { accordion } = navigation;
 
+    const { sidebarTitle } = frontMatter;
+
     const { hideSubItems, sidebar, includeFilterBar } = layoutConfig;
 
     switch (sidebar) {
@@ -87,6 +89,7 @@ export default class Sidebar extends React.Component {
             hideSubItems={hideSubItems}
             sectionPath={parentPath}
             includeFilterBar={includeFilterBar}
+            sidebarTitle={sidebarTitle}
           />
         );
     }
@@ -125,7 +128,8 @@ Sidebar.propTypes = {
   headings: PropTypes.array,
   frontMatter: PropTypes.shape({
     navOrder: PropTypes.number,
-    headings: PropTypes.array
+    headings: PropTypes.array,
+    sidebarTitle: PropTypes.string
   }).isRequired,
   children: PropTypes.node,
   parentPath: PropTypes.string,
