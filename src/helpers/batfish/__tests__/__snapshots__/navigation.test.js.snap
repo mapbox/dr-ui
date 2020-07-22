@@ -584,20 +584,20 @@ Object {
         "title": "Example 3",
       },
       Object {
-        "path": "/dr-ui/split/",
-        "title": "Split pages",
+        "path": "/dr-ui/examples/",
+        "title": "Examples",
       },
       Object {
         "path": "/dr-ui/",
         "title": "Components",
       },
       Object {
-        "path": "/dr-ui/split/marsupials/",
-        "title": "Marsupials",
-      },
-      Object {
         "path": "/dr-ui/split/second/",
         "title": "Second section",
+      },
+      Object {
+        "path": "/dr-ui/split/marsupials/",
+        "title": "Marsupials",
       },
       Object {
         "path": "/dr-ui/split/third/",
@@ -608,8 +608,8 @@ Object {
         "title": undefined,
       },
       Object {
-        "path": "/dr-ui/examples/",
-        "title": "Examples",
+        "path": "/dr-ui/split/",
+        "title": "Split pages",
       },
     ],
     "/dr-ui/split/": Array [

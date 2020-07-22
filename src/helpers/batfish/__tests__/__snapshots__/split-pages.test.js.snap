@@ -350,7 +350,7 @@ Object {
       },
       Object {
         "level": 2,
-        "slug": "sub-three-1",
+        "slug": "sub-three",
         "text": "Sub three",
       },
       Object {
@@ -422,7 +422,7 @@ Object {
         "headings": Array [
           Object {
             "level": 2,
-            "slug": "sub-three-1",
+            "slug": "sub-three",
             "text": "Sub three",
           },
           Object {
