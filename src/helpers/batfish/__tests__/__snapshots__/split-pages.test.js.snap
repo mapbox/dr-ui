@@ -1,0 +1,442 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`buildSplitPages 1`] = `
+Object {
+  "/dr-ui/split/marsupials/": Object {
+    "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/marsupials/index.js",
+    "frontMatter": Object {
+      "contentType": "API",
+      "description": "This is the first section",
+      "hideFeedback": true,
+      "layout": "accordion",
+      "order": 2,
+      "splitPages": true,
+      "title": "Marsupials",
+    },
+    "headings": Array [
+      Object {
+        "level": 2,
+        "slug": "kangaroos",
+        "text": "Kangaroos",
+      },
+      Object {
+        "level": 3,
+        "slug": "taxonomy-and-description",
+        "text": "Taxonomy and description",
+      },
+      Object {
+        "level": 3,
+        "slug": "comparison-with-wallabies",
+        "text": "Comparison with wallabies",
+      },
+      Object {
+        "level": 3,
+        "slug": "biology-and-behavior",
+        "text": "Biology and behavior",
+      },
+      Object {
+        "level": 2,
+        "slug": "opossum",
+        "text": "Opossum",
+      },
+      Object {
+        "level": 3,
+        "slug": "range",
+        "text": "Range",
+      },
+      Object {
+        "level": 3,
+        "slug": "description",
+        "text": "Description",
+      },
+      Object {
+        "level": 3,
+        "slug": "life-span",
+        "text": "Life span",
+      },
+      Object {
+        "level": 3,
+        "slug": "reproduction",
+        "text": "Reproduction",
+      },
+      Object {
+        "level": 3,
+        "slug": "historical-references",
+        "text": "Historical references",
+      },
+      Object {
+        "level": 2,
+        "slug": "tasmanian-devil",
+        "text": "Tasmanian devil",
+      },
+      Object {
+        "level": 3,
+        "slug": "conservation-status",
+        "text": "Conservation status",
+      },
+      Object {
+        "level": 3,
+        "slug": "relationship-with-humans",
+        "text": "Relationship with humans",
+      },
+    ],
+    "pages": Array [
+      Object {
+        "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/marsupials/sections/kangaroos.md",
+        "frontMatter": Object {
+          "contentType": "API",
+          "description": "This is subsection one.",
+          "order": 1,
+          "splitPage": true,
+          "title": "Kangaroos",
+        },
+        "headings": Array [
+          Object {
+            "level": 2,
+            "slug": "kangaroos",
+            "text": "Kangaroos",
+          },
+          Object {
+            "level": 3,
+            "slug": "taxonomy-and-description",
+            "text": "Taxonomy and description",
+          },
+          Object {
+            "level": 3,
+            "slug": "comparison-with-wallabies",
+            "text": "Comparison with wallabies",
+          },
+          Object {
+            "level": 3,
+            "slug": "biology-and-behavior",
+            "text": "Biology and behavior",
+          },
+        ],
+        "order": 1,
+        "path": "/dr-ui/split/marsupials/sections/kangaroos/",
+        "slug": "kangaroos",
+      },
+      Object {
+        "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/marsupials/sections/opposum.md",
+        "frontMatter": Object {
+          "contentType": "API",
+          "description": "This is subsection two.",
+          "order": 2,
+          "splitPage": true,
+          "title": "Opossum",
+        },
+        "headings": Array [
+          Object {
+            "level": 2,
+            "slug": "opossum",
+            "text": "Opossum",
+          },
+          Object {
+            "level": 3,
+            "slug": "range",
+            "text": "Range",
+          },
+          Object {
+            "level": 3,
+            "slug": "description",
+            "text": "Description",
+          },
+          Object {
+            "level": 3,
+            "slug": "life-span",
+            "text": "Life span",
+          },
+          Object {
+            "level": 3,
+            "slug": "reproduction",
+            "text": "Reproduction",
+          },
+          Object {
+            "level": 3,
+            "slug": "historical-references",
+            "text": "Historical references",
+          },
+        ],
+        "order": 2,
+        "path": "/dr-ui/split/marsupials/sections/opposum/",
+        "slug": "opossum",
+      },
+      Object {
+        "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/marsupials/sections/tasmanian.md",
+        "frontMatter": Object {
+          "contentType": "API",
+          "description": "This is subsection three.",
+          "order": 3,
+          "splitPage": true,
+          "title": "Tasmanian devil",
+        },
+        "headings": Array [
+          Object {
+            "level": 2,
+            "slug": "tasmanian-devil",
+            "text": "Tasmanian devil",
+          },
+          Object {
+            "level": 3,
+            "slug": "conservation-status",
+            "text": "Conservation status",
+          },
+          Object {
+            "level": 3,
+            "slug": "relationship-with-humans",
+            "text": "Relationship with humans",
+          },
+        ],
+        "order": 3,
+        "path": "/dr-ui/split/marsupials/sections/tasmanian/",
+        "slug": "tasmanian-devil",
+      },
+    ],
+    "path": "/dr-ui/split/marsupials/",
+  },
+  "/dr-ui/split/second/": Object {
+    "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/second/index.js",
+    "frontMatter": Object {
+      "contentType": "API",
+      "description": "This is the second section.",
+      "hideFeedback": true,
+      "layout": "accordion",
+      "order": 3,
+      "splitPages": true,
+      "title": "Second section",
+    },
+    "headings": Array [
+      Object {
+        "level": 2,
+        "slug": "sub-one",
+        "text": "Sub one",
+      },
+      Object {
+        "level": 2,
+        "slug": "sub-one---a",
+        "text": "Sub one - a",
+      },
+      Object {
+        "level": 2,
+        "slug": "sub-two",
+        "text": "Sub two",
+      },
+      Object {
+        "level": 2,
+        "slug": "sub-two---a",
+        "text": "Sub two - a",
+      },
+      Object {
+        "level": 2,
+        "slug": "sub-three",
+        "text": "Sub three",
+      },
+      Object {
+        "level": 2,
+        "slug": "sub-three---a",
+        "text": "Sub three - a",
+      },
+    ],
+    "pages": Array [
+      Object {
+        "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/second/sections/sub-one.md",
+        "frontMatter": Object {
+          "contentType": "API",
+          "description": "This is subsection one.",
+          "order": 1,
+          "splitPage": true,
+          "title": "Sub one",
+        },
+        "headings": Array [
+          Object {
+            "level": 2,
+            "slug": "sub-one",
+            "text": "Sub one",
+          },
+          Object {
+            "level": 2,
+            "slug": "sub-one---a",
+            "text": "Sub one - a",
+          },
+        ],
+        "order": 1,
+        "path": "/dr-ui/split/second/sections/sub-one/",
+        "slug": "sub-one",
+      },
+      Object {
+        "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/second/sections/sub-two.md",
+        "frontMatter": Object {
+          "contentType": "API",
+          "description": "This is subsection two.",
+          "order": 2,
+          "splitPage": true,
+          "title": "Sub two",
+        },
+        "headings": Array [
+          Object {
+            "level": 2,
+            "slug": "sub-two",
+            "text": "Sub two",
+          },
+          Object {
+            "level": 2,
+            "slug": "sub-two---a",
+            "text": "Sub two - a",
+          },
+        ],
+        "order": 2,
+        "path": "/dr-ui/split/second/sections/sub-two/",
+        "slug": "sub-two",
+      },
+      Object {
+        "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/second/sections/sub-three.md",
+        "frontMatter": Object {
+          "contentType": "API",
+          "description": "This is subsection three.",
+          "order": 3,
+          "splitPage": true,
+          "title": "Sub three",
+        },
+        "headings": Array [
+          Object {
+            "level": 2,
+            "slug": "sub-three",
+            "text": "Sub three",
+          },
+          Object {
+            "level": 2,
+            "slug": "sub-three---a",
+            "text": "Sub three - a",
+          },
+        ],
+        "order": 3,
+        "path": "/dr-ui/split/second/sections/sub-three/",
+        "slug": "sub-three",
+      },
+    ],
+    "path": "/dr-ui/split/second/",
+  },
+  "/dr-ui/split/third/": Object {
+    "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/third/index.js",
+    "frontMatter": Object {
+      "contentType": "API",
+      "description": "This is the third section.",
+      "hideFeedback": true,
+      "layout": "accordion",
+      "order": 4,
+      "splitPages": true,
+      "title": "Third section",
+    },
+    "headings": Array [
+      Object {
+        "level": 2,
+        "slug": "sub-one",
+        "text": "Sub one",
+      },
+      Object {
+        "level": 2,
+        "slug": "sub-one---a",
+        "text": "Sub one - a",
+      },
+      Object {
+        "level": 2,
+        "slug": "sub-two",
+        "text": "Sub two",
+      },
+      Object {
+        "level": 2,
+        "slug": "sub-two---a",
+        "text": "Sub two - a",
+      },
+      Object {
+        "level": 2,
+        "slug": "sub-three-1",
+        "text": "Sub three",
+      },
+      Object {
+        "level": 2,
+        "slug": "sub-three---a",
+        "text": "Sub three - a",
+      },
+    ],
+    "pages": Array [
+      Object {
+        "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/third/sections/sub-one.md",
+        "frontMatter": Object {
+          "contentType": "API",
+          "description": "This is subsection one.",
+          "order": 1,
+          "splitPage": true,
+          "title": "Sub one",
+        },
+        "headings": Array [
+          Object {
+            "level": 2,
+            "slug": "sub-one",
+            "text": "Sub one",
+          },
+          Object {
+            "level": 2,
+            "slug": "sub-one---a",
+            "text": "Sub one - a",
+          },
+        ],
+        "order": 1,
+        "path": "/dr-ui/split/third/sections/sub-one/",
+        "slug": "sub-one",
+      },
+      Object {
+        "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/third/sections/sub-two.md",
+        "frontMatter": Object {
+          "contentType": "API",
+          "description": "This is subsection two.",
+          "order": 2,
+          "splitPage": true,
+          "title": "Sub two",
+        },
+        "headings": Array [
+          Object {
+            "level": 2,
+            "slug": "sub-two",
+            "text": "Sub two",
+          },
+          Object {
+            "level": 2,
+            "slug": "sub-two---a",
+            "text": "Sub two - a",
+          },
+        ],
+        "order": 2,
+        "path": "/dr-ui/split/third/sections/sub-two/",
+        "slug": "sub-two",
+      },
+      Object {
+        "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/third/sections/sub-three.md",
+        "frontMatter": Object {
+          "contentType": "API",
+          "description": "This is subsection three.",
+          "order": 3,
+          "splitPage": true,
+          "title": "Sub three",
+        },
+        "headings": Array [
+          Object {
+            "level": 2,
+            "slug": "sub-three-1",
+            "text": "Sub three",
+          },
+          Object {
+            "level": 2,
+            "slug": "sub-three---a",
+            "text": "Sub three - a",
+          },
+        ],
+        "order": 3,
+        "path": "/dr-ui/split/third/sections/sub-three/",
+        "slug": "sub-three",
+      },
+    ],
+    "path": "/dr-ui/split/third/",
+  },
+}
+`;

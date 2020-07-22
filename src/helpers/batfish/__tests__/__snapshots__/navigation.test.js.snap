@@ -562,104 +562,145 @@ Object {
 exports[`buildNavigation single structure 1`] = `
 Object {
   "accordion": Object {
-    "/docs-starter-kit/overview/": Array [
+    "/dr-ui/": Array [
       Object {
-        "path": "/docs-starter-kit/overview/",
-        "title": "Overview",
+        "path": "/dr-ui/batfish-helpers/",
+        "title": "Batfish helpers",
       },
       Object {
-        "path": "/docs-starter-kit/overview/layouts/",
-        "title": "Layouts",
+        "path": "/dr-ui/404/",
+        "title": undefined,
       },
       Object {
-        "path": "/docs-starter-kit/overview/navigation/",
-        "title": "Navigation",
+        "path": "/dr-ui/examples/example-1/",
+        "title": "Example 1",
       },
       Object {
-        "path": "/docs-starter-kit/overview/images/",
-        "title": "Images and videos",
+        "path": "/dr-ui/examples/example-2/",
+        "title": "Example 2",
       },
       Object {
-        "path": "/docs-starter-kit/overview/constants/",
-        "title": "Constants",
+        "path": "/dr-ui/examples/example-3/",
+        "title": "Example 3",
       },
       Object {
-        "path": "/docs-starter-kit/overview/frontmatter/",
-        "tag": "fundamentals",
-        "title": "Frontmatter",
+        "path": "/dr-ui/split/",
+        "title": "Split pages",
+      },
+      Object {
+        "path": "/dr-ui/",
+        "title": "Components",
+      },
+      Object {
+        "path": "/dr-ui/split/marsupials/",
+        "title": "Marsupials",
+      },
+      Object {
+        "path": "/dr-ui/split/second/",
+        "title": "Second section",
+      },
+      Object {
+        "path": "/dr-ui/split/third/",
+        "title": "Third section",
+      },
+      Object {
+        "path": "/dr-ui/changelog/",
+        "title": undefined,
+      },
+      Object {
+        "path": "/dr-ui/examples/",
+        "title": "Examples",
+      },
+    ],
+    "/dr-ui/split/": Array [
+      Object {
+        "path": "/dr-ui/split/",
+        "title": "Split pages",
+      },
+      Object {
+        "path": "/dr-ui/split/marsupials/",
+        "title": "Marsupials",
+      },
+      Object {
+        "path": "/dr-ui/split/second/",
+        "title": "Second section",
+      },
+      Object {
+        "path": "/dr-ui/split/third/",
+        "title": "Third section",
       },
     ],
   },
   "hierarchy": Object {
-    "/docs-starter-kit/demo/": Object {
-      "parent": "/docs-starter-kit/demo/",
-      "title": "Demo",
+    "/dr-ui/": Object {
+      "parent": "/dr-ui/",
+      "title": "Components",
     },
-    "/docs-starter-kit/examples/": Object {
-      "parent": "/docs-starter-kit/examples/",
+    "/dr-ui/404/": Object {
+      "parent": "/dr-ui/",
+      "title": "Components",
+    },
+    "/dr-ui/batfish-helpers/": Object {
+      "parent": "/dr-ui/batfish-helpers/",
+      "title": "Batfish helpers",
+    },
+    "/dr-ui/changelog/": Object {
+      "parent": "/dr-ui/",
+      "title": "Components",
+    },
+    "/dr-ui/examples/": Object {
+      "parent": "/dr-ui/examples/",
       "title": "Examples",
     },
-    "/docs-starter-kit/examples/example-1/": Object {
-      "parent": "/docs-starter-kit/examples/",
+    "/dr-ui/examples/example-1/": Object {
+      "parent": "/dr-ui/examples/",
       "title": "Examples",
     },
-    "/docs-starter-kit/examples/example-2/": Object {
-      "parent": "/docs-starter-kit/examples/",
+    "/dr-ui/examples/example-2/": Object {
+      "parent": "/dr-ui/examples/",
       "title": "Examples",
     },
-    "/docs-starter-kit/examples/example-3/": Object {
-      "parent": "/docs-starter-kit/examples/",
+    "/dr-ui/examples/example-3/": Object {
+      "parent": "/dr-ui/examples/",
       "title": "Examples",
     },
-    "/docs-starter-kit/overview/": Object {
-      "parent": "/docs-starter-kit/overview/",
-      "title": "Overview",
+    "/dr-ui/split/": Object {
+      "parent": "/dr-ui/split/",
+      "title": "Split pages",
     },
-    "/docs-starter-kit/overview/constants/": Object {
-      "parent": "/docs-starter-kit/overview/",
-      "title": "Overview",
+    "/dr-ui/split/marsupials/": Object {
+      "parent": "/dr-ui/split/",
+      "title": "Split pages",
     },
-    "/docs-starter-kit/overview/frontmatter/": Object {
-      "parent": "/docs-starter-kit/overview/",
-      "title": "Overview",
+    "/dr-ui/split/second/": Object {
+      "parent": "/dr-ui/split/",
+      "title": "Split pages",
     },
-    "/docs-starter-kit/overview/images/": Object {
-      "parent": "/docs-starter-kit/overview/",
-      "title": "Overview",
-    },
-    "/docs-starter-kit/overview/layouts/": Object {
-      "parent": "/docs-starter-kit/overview/",
-      "title": "Overview",
-    },
-    "/docs-starter-kit/overview/navigation/": Object {
-      "parent": "/docs-starter-kit/overview/",
-      "title": "Overview",
-    },
-    "/docs-starter-kit/specification/": Object {
-      "parent": "/docs-starter-kit/specification/",
-      "title": "Specification",
+    "/dr-ui/split/third/": Object {
+      "parent": "/dr-ui/split/",
+      "title": "Split pages",
     },
   },
   "navTabs": Array [
     Object {
-      "href": "/docs-starter-kit/overview/",
-      "id": "/docs-starter-kit/overview/",
-      "label": "Overview",
+      "href": "/dr-ui/",
+      "id": "/dr-ui/",
+      "label": "Components",
     },
     Object {
-      "href": "/docs-starter-kit/specification/",
-      "id": "/docs-starter-kit/specification/",
-      "label": "Specification",
+      "href": "/dr-ui/batfish-helpers/",
+      "id": "/dr-ui/batfish-helpers/",
+      "label": "Batfish helpers",
     },
     Object {
-      "href": "/docs-starter-kit/examples/",
-      "id": "/docs-starter-kit/examples/",
+      "href": "/dr-ui/examples/",
+      "id": "/dr-ui/examples/",
       "label": "Examples",
     },
     Object {
-      "href": "/docs-starter-kit/demo/",
-      "id": "/docs-starter-kit/demo/",
-      "label": "Demo",
+      "href": "/dr-ui/split/",
+      "id": "/dr-ui/split/",
+      "label": "Split pages",
     },
   ],
 }

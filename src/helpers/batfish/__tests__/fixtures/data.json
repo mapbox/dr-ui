@@ -1,172 +1,258 @@
 {
   "pages": [
     {
-      "filePath": "/docs-starter-kit/src/pages/index.js",
-      "path": "/docs-starter-kit/",
-      "frontMatter": {}
+      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/batfish-helpers.md",
+      "path": "/dr-ui/batfish-helpers/",
+      "frontMatter": {
+        "title": "Batfish helpers",
+        "description": "Batfish data selector functions to build navigation and topic datasets.",
+        "navOrder": 2,
+        "prependJs": [
+          "import navigation from '@mapbox/batfish/data/navigation';",
+          "import topics from '@mapbox/batfish/data/topics';",
+          "import splitPages from '@mapbox/batfish/data/split-pages';"
+        ]
+      }
     },
     {
-      "filePath": "/docs-starter-kit/src/pages/examples/example-1.md",
-      "path": "/docs-starter-kit/examples/example-1/",
+      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/index.md",
+      "path": "/dr-ui/",
+      "frontMatter": {
+        "title": "Components",
+        "description": "UI components for Mapbox documentation projects.",
+        "prependJs": [
+          "import Note from '../../../src/components/note'",
+          "import OverviewHeader from '../../../src/components/overview-header'",
+          "import App from '../app.js'",
+          "const version = require('../../../package.json').version;"
+        ],
+        "layout": "example",
+        "hideSubItems": false,
+        "showCards": false,
+        "includeFilterBar": true,
+        "navOrder": 1,
+        "hideTitle": true,
+        "unProse": true
+      }
+    },
+    {
+      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/examples/example-1.md",
+      "path": "/dr-ui/examples/example-1/",
       "frontMatter": {
         "title": "Example 1",
         "description": "Replace me.",
         "contentType": "example",
-        "language": ["JavaScript"],
-        "topics": ["Cool"],
+        "topics": ["Navigation"],
         "thumbnail": "header-image",
         "layout": "example"
       }
     },
     {
-      "filePath": "/docs-starter-kit/src/pages/examples/example-2.md",
-      "path": "/docs-starter-kit/examples/example-2/",
+      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/examples/example-2.md",
+      "path": "/dr-ui/examples/example-2/",
       "frontMatter": {
         "title": "Example 2",
         "description": "Replace me.",
         "contentType": "example",
-        "language": ["JavaScript"],
-        "topics": ["Cool"],
+        "topics": ["Navigation"],
         "thumbnail": "header-image",
         "layout": "example"
       }
     },
     {
-      "filePath": "/docs-starter-kit/src/pages/examples/example-3.md",
-      "path": "/docs-starter-kit/examples/example-3/",
+      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/examples/example-3.md",
+      "path": "/dr-ui/examples/example-3/",
       "frontMatter": {
         "title": "Example 3",
         "description": "Replace me.",
         "contentType": "example",
-        "language": ["JavaScript"],
-        "topics": ["Cool", "Awesome"],
+        "topics": ["Navigation", "Geocoding"],
         "thumbnail": "header-image",
         "layout": "example"
       }
     },
     {
-      "filePath": "/docs-starter-kit/src/pages/hidden/index.md",
-      "path": "/docs-starter-kit/hidden/",
-      "frontMatter": {
-        "title": "Hidden page",
-        "description": "You can't see me in the top level navigation.",
-        "contentType": "guide",
-        "layout": "page"
-      }
-    },
-    {
-      "filePath": "/docs-starter-kit/src/pages/examples/index.md",
-      "path": "/docs-starter-kit/examples/",
+      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/examples/index.md",
+      "path": "/dr-ui/examples/",
       "frontMatter": {
         "title": "Examples",
         "description": "Replace me.",
         "contentType": "example",
         "language": ["JavaScript"],
         "navOrder": 3,
-        "layout": "example"
+        "layout": "example",
+        "fullWidthCards": true
       }
     },
     {
-      "filePath": "/docs-starter-kit/src/pages/demo/index.md",
-      "path": "/docs-starter-kit/demo/",
+      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/index.md",
+      "path": "/dr-ui/split/",
       "frontMatter": {
-        "title": "Demo",
-        "description": "Replace me.",
-        "contentType": "reference",
-        "language": ["JavaScript"],
-        "navOrder": 3,
-        "layout": "full"
-      }
-    },
-    {
-      "filePath": "/docs-starter-kit/src/pages/overview/constants.md",
-      "path": "/docs-starter-kit/overview/constants/",
-      "frontMatter": {
-        "title": "Constants",
-        "description": "How to store constants in your repository.",
-        "contentType": "reference",
-        "order": 5,
-        "layout": "accordion"
-      }
-    },
-    {
-      "filePath": "/docs-starter-kit/src/pages/overview/frontmatter.md",
-      "path": "/docs-starter-kit/overview/frontmatter/",
-      "frontMatter": {
-        "title": "Frontmatter",
-        "description": "Learn about all the options for adding data to your page.",
-        "contentType": "guide",
-        "prependJs": ["import Note from '@mapbox/dr-ui/note';"],
-        "order": 6,
-        "beta": ["A beta section"],
-        "tag": "fundamentals",
-        "layout": "accordion"
-      }
-    },
-    {
-      "filePath": "/docs-starter-kit/src/pages/overview/images.md",
-      "path": "/docs-starter-kit/overview/images/",
-      "frontMatter": {
-        "title": "Images and videos",
-        "description": "How to add images, videos, gifs.",
-        "contentType": "reference",
-        "order": 4,
-        "prependJs": [
-          "import AppropriateImage from '../../components/appropriate-image';"
-        ],
-        "layout": "accordion"
-      }
-    },
-    {
-      "filePath": "/docs-starter-kit/src/pages/overview/index.md",
-      "path": "/docs-starter-kit/overview/",
-      "frontMatter": {
-        "title": "Overview",
-        "description": "Set up your site.",
-        "prependJs": [
-          "import * as constants from '../../constants';",
-          "import OverviewHeader from '@mapbox/dr-ui/overview-header';",
-          "import AppropriateImage from '../../components/appropriate-image';"
-        ],
+        "title": "Split pages",
+        "description": "An introduction to use split pages.",
+        "contentType": "API",
         "layout": "accordion",
         "order": 1,
-        "navOrder": 1,
-        "contentType": "guide"
+        "navOrder": 4,
+        "prependJs": [
+          "import Note from '../../../../src/components/note/note';",
+          "import MainPage from '!raw-loader!./marsupials/index.js';",
+          "import SubOne from '!raw-loader!./marsupials/sections/kangaroos.md';",
+          "import SplitPageShell from '!raw-loader!../../components/split-page-shell.js';",
+          "import CodeSnippet from '../../../../src/components/code-snippet/code-snippet';",
+          "import { highlightJsx } from '../../../../src/components/highlight/jsx';",
+          "import { highlightHtml } from '../../../../src/components/highlight/html';"
+        ]
       }
     },
     {
-      "filePath": "/docs-starter-kit/src/pages/overview/layouts.md",
-      "path": "/docs-starter-kit/overview/layouts/",
+      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/second/index.js",
+      "path": "/dr-ui/split/second/",
       "frontMatter": {
-        "title": "Layouts",
-        "description": "Learn about different layout options.",
-        "contentType": "guide",
-        "order": 2,
-        "layout": "accordion"
-      }
-    },
-    {
-      "filePath": "/docs-starter-kit/src/pages/overview/navigation.md",
-      "path": "/docs-starter-kit/overview/navigation/",
-      "frontMatter": {
-        "title": "Navigation",
-        "description": "How to add pages to the top and side navigation.",
-        "contentType": "guide",
+        "title": "Second section",
+        "description": "This is the second section.",
+        "splitPages": true,
         "order": 3,
-        "layout": "accordion"
+        "layout": "accordion",
+        "contentType": "API",
+        "hideFeedback": true
       }
     },
     {
-      "filePath": "/docs-starter-kit/src/pages/specification/index.md",
-      "path": "/docs-starter-kit/specification/",
+      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/marsupials/index.js",
+      "path": "/dr-ui/split/marsupials/",
       "frontMatter": {
-        "title": "Specification",
-        "description": "Replace me.",
-        "contentType": "example",
-        "language": ["JavaScript"],
-        "navOrder": 2,
-        "layout": "page"
+        "title": "Marsupials",
+        "description": "This is the first section",
+        "splitPages": true,
+        "order": 2,
+        "layout": "accordion",
+        "contentType": "API",
+        "hideFeedback": true
       }
+    },
+    {
+      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/third/index.js",
+      "path": "/dr-ui/split/third/",
+      "frontMatter": {
+        "title": "Third section",
+        "description": "This is the third section.",
+        "splitPages": true,
+        "order": 4,
+        "layout": "accordion",
+        "contentType": "API",
+        "hideFeedback": true
+      }
+    },
+    {
+      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/marsupials/sections/kangaroos.md",
+      "path": "/dr-ui/split/marsupials/sections/kangaroos/",
+      "frontMatter": {
+        "title": "Kangaroos",
+        "description": "This is subsection one.",
+        "contentType": "API",
+        "order": 1,
+        "splitPage": true
+      }
+    },
+    {
+      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/marsupials/sections/opposum.md",
+      "path": "/dr-ui/split/marsupials/sections/opposum/",
+      "frontMatter": {
+        "title": "Opossum",
+        "description": "This is subsection two.",
+        "contentType": "API",
+        "order": 2,
+        "splitPage": true
+      }
+    },
+    {
+      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/marsupials/sections/tasmanian.md",
+      "path": "/dr-ui/split/marsupials/sections/tasmanian/",
+      "frontMatter": {
+        "title": "Tasmanian devil",
+        "description": "This is subsection three.",
+        "contentType": "API",
+        "order": 3,
+        "splitPage": true
+      }
+    },
+    {
+      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/second/sections/sub-one.md",
+      "path": "/dr-ui/split/second/sections/sub-one/",
+      "frontMatter": {
+        "title": "Sub one",
+        "description": "This is subsection one.",
+        "contentType": "API",
+        "order": 1,
+        "splitPage": true
+      }
+    },
+    {
+      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/second/sections/sub-three.md",
+      "path": "/dr-ui/split/second/sections/sub-three/",
+      "frontMatter": {
+        "title": "Sub three",
+        "description": "This is subsection three.",
+        "contentType": "API",
+        "order": 3,
+        "splitPage": true
+      }
+    },
+    {
+      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/second/sections/sub-two.md",
+      "path": "/dr-ui/split/second/sections/sub-two/",
+      "frontMatter": {
+        "title": "Sub two",
+        "description": "This is subsection two.",
+        "contentType": "API",
+        "order": 2,
+        "splitPage": true
+      }
+    },
+    {
+      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/third/sections/sub-three.md",
+      "path": "/dr-ui/split/third/sections/sub-three/",
+      "frontMatter": {
+        "title": "Sub three",
+        "description": "This is subsection three.",
+        "contentType": "API",
+        "order": 3,
+        "splitPage": true
+      }
+    },
+    {
+      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/third/sections/sub-two.md",
+      "path": "/dr-ui/split/third/sections/sub-two/",
+      "frontMatter": {
+        "title": "Sub two",
+        "description": "This is subsection two.",
+        "contentType": "API",
+        "order": 2,
+        "splitPage": true
+      }
+    },
+    {
+      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/third/sections/sub-one.md",
+      "path": "/dr-ui/split/third/sections/sub-one/",
+      "frontMatter": {
+        "title": "Sub one",
+        "description": "This is subsection one.",
+        "contentType": "API",
+        "order": 1,
+        "splitPage": true
+      }
+    },
+    {
+      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/changelog.md",
+      "path": "/dr-ui/changelog/",
+      "frontMatter": {}
+    },
+    {
+      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/node_modules/@mapbox/batfish/dist/webpack/default-not-found.js",
+      "path": "/dr-ui/404/",
+      "is404": true,
+      "frontMatter": {}
     }
   ]
 }

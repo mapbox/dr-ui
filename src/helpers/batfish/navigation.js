@@ -46,6 +46,7 @@ function buildHierarchy(organized, section) {
 function findChildren(pages, parent) {
   return pages
     .filter((page) => page.path.startsWith(parent.path))
+    .filter((page) => !page.splitPage) // exclude individual `splitPage` from navAccordion
     .sort((a, b) => parseInt(a.order) - parseInt(b.order));
 }
 
@@ -77,7 +78,9 @@ function formatPages(siteBasePath, data, sections) {
       customTagProps: p.frontMatter.customTagProps
     }),
     ...(p.frontMatter.layout && { layout: p.frontMatter.layout }),
-    ...(sections && { section: findSection(siteBasePath, p, sections) })
+    ...(sections && { section: findSection(siteBasePath, p, sections) }),
+    ...(p.frontMatter.splitPage && { splitPage: p.frontMatter.splitPage }),
+    ...(p.frontMatter.splitPages && { splitPages: p.frontMatter.splitPages })
   }));
 }
 

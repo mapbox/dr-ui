@@ -5,6 +5,7 @@ navOrder: 2
 prependJs:
   - "import navigation from '@mapbox/batfish/data/navigation';"
   - "import topics from '@mapbox/batfish/data/topics';"
+  - "import splitPages from '@mapbox/batfish/data/split-pages';"
 ---
 
 Dr. UI has two functions that are used in `dataSelectors` in `batfish.config.js` to help build page metadata and site hierarchy. Each data selector has tests to assert the shape of the data.
@@ -156,6 +157,61 @@ class SideBar extends React.Component {
     "title": "Vision SDK for iOS"
   }
 ]
+```
+
+## Split pages
+
+`split-pages` automatically pulls together multiples pages to builds headings for a single page.
+
+### Arguments
+
+- `data`, object. Provided by the data selector.
+
+### Set up in batfish.config.js
+
+```js
+const {
+  buildSplitPages
+} = require('@mapbox/dr-ui/helpers/batfish/split-pages.js');
+
+module.exports = () => {
+  return {
+    dataSelectors: {
+      splitPages: (data) => buildSplitPages(data)
+    }
+  };
+};
+```
+
+### Usage
+
+```js
+import React from 'react';
+import splitPages from '@mapbox/batfish/data/split-pages';
+
+class PageShell extends React.Component {
+  render() {
+    const { children, location, frontMatter } = this.props;
+    const isSplitPage = splitPages[location.pathname];
+
+    return (
+      <PageLayout headings={isSplitPage ? isSplitPage.headings : undefined}>
+        {children}
+      </PageLayout>
+    );
+  }
+}
+```
+
+### Output
+
+- The shape is an object, where the top-level keys are pathnames for top level pages that have split pages.
+  - Each object has a `headings` array. It contains all the headings for the page.
+
+#### Sample
+
+```json
+{{JSON.stringify(splitPages, null,2)}}
 ```
 
 ## Troubleshooting

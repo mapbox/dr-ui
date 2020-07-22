@@ -3,6 +3,8 @@ const path = require('path');
 const { buildNavigation } = require('../src/helpers/batfish/navigation.js');
 const { buildTopics } = require('../src/helpers/batfish/topics.js');
 
+const { buildSplitPages } = require('../src/helpers/batfish/split-pages.js');
+
 const siteBasePath = '/dr-ui';
 
 module.exports = () => {
@@ -18,7 +20,13 @@ module.exports = () => {
     ],
     applicationWrapperPath: path.join(__dirname, 'src/components/wrapper.js'),
     jsxtremeMarkdownOptions: {
-      wrapper: path.join(__dirname, 'src/components/page-shell.js'),
+      getWrapper: (resource) => {
+        if (/\/sections\//.test(resource)) {
+          return path.join(__dirname, './src/components/split-page-shell.js');
+        } else {
+          return path.join(__dirname, 'src/components/page-shell.js');
+        }
+      },
       rehypePlugins: [
         require('rehype-slug'),
         require('../src/plugins/add-links-to-headings'),
@@ -28,7 +36,13 @@ module.exports = () => {
     },
     dataSelectors: {
       navigation: (data) => buildNavigation(siteBasePath, data),
-      topics: (data) => buildTopics(data)
+      topics: (data) => buildTopics(data),
+      splitPages: (data) => buildSplitPages(data)
+      /*dataSync: (data) =>
+        require('fs').writeFileSync(
+          './src/helpers/batfish/__tests__/fixtures/data.json',
+          JSON.stringify(data, null, 2)
+        )*/
     }
   };
 };

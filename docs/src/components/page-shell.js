@@ -5,17 +5,18 @@ import PageLayout from '../../../src/components/page-layout';
 import Sidebar from './sidebar';
 import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line
 import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line
+
 import constants from '../constants';
 
 class PageShell extends React.Component {
   render() {
-    const { children, location, frontMatter } = this.props;
-
+    const { children, location, frontMatter, headings } = this.props;
     return (
       <PageLayout
         includeFilterBar={true}
         topBarSticker={false}
         topics={topics}
+        headings={headings}
         frontMatter={frontMatter}
         location={location}
         constants={constants}
