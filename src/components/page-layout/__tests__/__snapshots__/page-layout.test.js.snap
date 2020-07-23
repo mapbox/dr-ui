@@ -526,7 +526,7 @@ Array [
         className="col col--12 col--8-mm"
       >
         <div
-          className="mt24-mm pr0-mm mb60 px24-mm"
+          className="mt24-mm pr0-mm mb60 px24-mm mt60 pt30 mt0-mm pt0-mm"
           id="docs-content"
         >
           <div
