@@ -43,7 +43,8 @@ export default class Content extends React.Component {
         id="docs-content"
         className={classnames('mt24-mm pr0-mm', {
           'mb60 px24-mm': sidebar !== 'none',
-          'px24-mm': sidebar === 'none'
+          'px24-mm': sidebar === 'none',
+          'mt60 pt30 mt0-mm pt0-mm': sidebar === 'accordion' // clear the mobile sticky nav
         })}
       >
         <div
