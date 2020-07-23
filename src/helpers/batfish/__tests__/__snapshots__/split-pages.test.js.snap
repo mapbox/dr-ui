@@ -17,6 +17,7 @@ Object {
       Object {
         "level": 2,
         "slug": "kangaroos",
+        "tag": "beta",
         "text": "Kangaroos",
       },
       Object {
@@ -88,12 +89,14 @@ Object {
           "description": "This is subsection one.",
           "order": 1,
           "splitPage": true,
+          "tag": "beta",
           "title": "Kangaroos",
         },
         "headings": Array [
           Object {
             "level": 2,
             "slug": "kangaroos",
+            "tag": "beta",
             "text": "Kangaroos",
           },
           Object {

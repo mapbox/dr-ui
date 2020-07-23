@@ -4,6 +4,7 @@ description: This is subsection one.
 contentType: API
 order: 1
 splitPage: true
+tag: beta
 ---
 
 ## Kangaroos

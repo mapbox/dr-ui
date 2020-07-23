@@ -68,7 +68,8 @@ function getHeadings(page) {
       level: node.depth,
       text: label,
       slug: slugger.slug(firstNode),
-      ...(page.frontMatter.tag && { tag: page.frontMatter.tag })
+      ...(page.frontMatter.tag &&
+        node.depth === 2 && { tag: page.frontMatter.tag }) // only show tag for first item
     });
   });
   slugger.reset(); // reset slugger

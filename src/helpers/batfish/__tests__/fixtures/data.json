@@ -106,19 +106,6 @@
       }
     },
     {
-      "filePath": "./docs/src/pages/split/second/index.js",
-      "path": "/dr-ui/split/second/",
-      "frontMatter": {
-        "title": "Second section",
-        "description": "This is the second section.",
-        "splitPages": true,
-        "order": 3,
-        "layout": "accordion",
-        "contentType": "API",
-        "hideFeedback": true
-      }
-    },
-    {
       "filePath": "./docs/src/pages/split/marsupials/index.js",
       "path": "/dr-ui/split/marsupials/",
       "frontMatter": {
@@ -126,6 +113,19 @@
         "description": "This is the first section",
         "splitPages": true,
         "order": 2,
+        "layout": "accordion",
+        "contentType": "API",
+        "hideFeedback": true
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/split/second/index.js",
+      "path": "/dr-ui/split/second/",
+      "frontMatter": {
+        "title": "Second section",
+        "description": "This is the second section.",
+        "splitPages": true,
+        "order": 3,
         "layout": "accordion",
         "contentType": "API",
         "hideFeedback": true
@@ -152,7 +152,8 @@
         "description": "This is subsection one.",
         "contentType": "API",
         "order": 1,
-        "splitPage": true
+        "splitPage": true,
+        "tag": "beta"
       }
     },
     {
@@ -211,6 +212,17 @@
       }
     },
     {
+      "filePath": "./docs/src/pages/split/third/sections/sub-one.md",
+      "path": "/dr-ui/split/third/sections/sub-one/",
+      "frontMatter": {
+        "title": "Sub one",
+        "description": "This is subsection one.",
+        "contentType": "API",
+        "order": 1,
+        "splitPage": true
+      }
+    },
+    {
       "filePath": "./docs/src/pages/split/third/sections/sub-three.md",
       "path": "/dr-ui/split/third/sections/sub-three/",
       "frontMatter": {
@@ -229,17 +241,6 @@
         "description": "This is subsection two.",
         "contentType": "API",
         "order": 2,
-        "splitPage": true
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/split/third/sections/sub-one.md",
-      "path": "/dr-ui/split/third/sections/sub-one/",
-      "frontMatter": {
-        "title": "Sub one",
-        "description": "This is subsection one.",
-        "contentType": "API",
-        "order": 1,
         "splitPage": true
       }
     },

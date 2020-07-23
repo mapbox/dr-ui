@@ -630,12 +630,12 @@ Object {
         "title": "Split pages",
       },
       Object {
-        "path": "/dr-ui/split/second/",
-        "title": "Second section",
-      },
-      Object {
         "path": "/dr-ui/split/marsupials/",
         "title": "Marsupials",
+      },
+      Object {
+        "path": "/dr-ui/split/second/",
+        "title": "Second section",
       },
       Object {
         "path": "/dr-ui/split/third/",
