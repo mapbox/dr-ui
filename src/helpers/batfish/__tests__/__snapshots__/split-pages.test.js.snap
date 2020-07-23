@@ -3,7 +3,7 @@
 exports[`buildSplitPages 1`] = `
 Object {
   "/dr-ui/split/marsupials/": Object {
-    "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/marsupials/index.js",
+    "filePath": "./docs/src/pages/split/marsupials/index.js",
     "frontMatter": Object {
       "contentType": "API",
       "description": "This is the first section",
@@ -82,7 +82,7 @@ Object {
     ],
     "pages": Array [
       Object {
-        "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/marsupials/sections/kangaroos.md",
+        "filePath": "./docs/src/pages/split/marsupials/sections/kangaroos.md",
         "frontMatter": Object {
           "contentType": "API",
           "description": "This is subsection one.",
@@ -117,7 +117,7 @@ Object {
         "slug": "kangaroos",
       },
       Object {
-        "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/marsupials/sections/opposum.md",
+        "filePath": "./docs/src/pages/split/marsupials/sections/opposum.md",
         "frontMatter": Object {
           "contentType": "API",
           "description": "This is subsection two.",
@@ -162,7 +162,7 @@ Object {
         "slug": "opossum",
       },
       Object {
-        "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/marsupials/sections/tasmanian.md",
+        "filePath": "./docs/src/pages/split/marsupials/sections/tasmanian.md",
         "frontMatter": Object {
           "contentType": "API",
           "description": "This is subsection three.",
@@ -195,7 +195,7 @@ Object {
     "path": "/dr-ui/split/marsupials/",
   },
   "/dr-ui/split/second/": Object {
-    "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/second/index.js",
+    "filePath": "./docs/src/pages/split/second/index.js",
     "frontMatter": Object {
       "contentType": "API",
       "description": "This is the second section.",
@@ -239,7 +239,7 @@ Object {
     ],
     "pages": Array [
       Object {
-        "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/second/sections/sub-one.md",
+        "filePath": "./docs/src/pages/split/second/sections/sub-one.md",
         "frontMatter": Object {
           "contentType": "API",
           "description": "This is subsection one.",
@@ -264,7 +264,7 @@ Object {
         "slug": "sub-one",
       },
       Object {
-        "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/second/sections/sub-two.md",
+        "filePath": "./docs/src/pages/split/second/sections/sub-two.md",
         "frontMatter": Object {
           "contentType": "API",
           "description": "This is subsection two.",
@@ -289,7 +289,7 @@ Object {
         "slug": "sub-two",
       },
       Object {
-        "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/second/sections/sub-three.md",
+        "filePath": "./docs/src/pages/split/second/sections/sub-three.md",
         "frontMatter": Object {
           "contentType": "API",
           "description": "This is subsection three.",
@@ -317,7 +317,7 @@ Object {
     "path": "/dr-ui/split/second/",
   },
   "/dr-ui/split/third/": Object {
-    "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/third/index.js",
+    "filePath": "./docs/src/pages/split/third/index.js",
     "frontMatter": Object {
       "contentType": "API",
       "description": "This is the third section.",
@@ -361,7 +361,7 @@ Object {
     ],
     "pages": Array [
       Object {
-        "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/third/sections/sub-one.md",
+        "filePath": "./docs/src/pages/split/third/sections/sub-one.md",
         "frontMatter": Object {
           "contentType": "API",
           "description": "This is subsection one.",
@@ -386,7 +386,7 @@ Object {
         "slug": "sub-one",
       },
       Object {
-        "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/third/sections/sub-two.md",
+        "filePath": "./docs/src/pages/split/third/sections/sub-two.md",
         "frontMatter": Object {
           "contentType": "API",
           "description": "This is subsection two.",
@@ -411,7 +411,7 @@ Object {
         "slug": "sub-two",
       },
       Object {
-        "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/third/sections/sub-three.md",
+        "filePath": "./docs/src/pages/split/third/sections/sub-three.md",
         "frontMatter": Object {
           "contentType": "API",
           "description": "This is subsection three.",

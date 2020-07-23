@@ -1,7 +1,7 @@
 {
   "pages": [
     {
-      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/batfish-helpers.md",
+      "filePath": "./docs/src/pages/batfish-helpers.md",
       "path": "/dr-ui/batfish-helpers/",
       "frontMatter": {
         "title": "Batfish helpers",
@@ -15,7 +15,7 @@
       }
     },
     {
-      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/index.md",
+      "filePath": "./docs/src/pages/index.md",
       "path": "/dr-ui/",
       "frontMatter": {
         "title": "Components",
@@ -36,7 +36,7 @@
       }
     },
     {
-      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/examples/example-1.md",
+      "filePath": "./docs/src/pages/examples/example-1.md",
       "path": "/dr-ui/examples/example-1/",
       "frontMatter": {
         "title": "Example 1",
@@ -48,7 +48,7 @@
       }
     },
     {
-      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/examples/example-2.md",
+      "filePath": "./docs/src/pages/examples/example-2.md",
       "path": "/dr-ui/examples/example-2/",
       "frontMatter": {
         "title": "Example 2",
@@ -60,7 +60,7 @@
       }
     },
     {
-      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/examples/example-3.md",
+      "filePath": "./docs/src/pages/examples/example-3.md",
       "path": "/dr-ui/examples/example-3/",
       "frontMatter": {
         "title": "Example 3",
@@ -72,7 +72,7 @@
       }
     },
     {
-      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/examples/index.md",
+      "filePath": "./docs/src/pages/examples/index.md",
       "path": "/dr-ui/examples/",
       "frontMatter": {
         "title": "Examples",
@@ -85,7 +85,7 @@
       }
     },
     {
-      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/index.md",
+      "filePath": "./docs/src/pages/split/index.md",
       "path": "/dr-ui/split/",
       "frontMatter": {
         "title": "Split pages",
@@ -106,7 +106,7 @@
       }
     },
     {
-      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/second/index.js",
+      "filePath": "./docs/src/pages/split/second/index.js",
       "path": "/dr-ui/split/second/",
       "frontMatter": {
         "title": "Second section",
@@ -119,7 +119,7 @@
       }
     },
     {
-      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/marsupials/index.js",
+      "filePath": "./docs/src/pages/split/marsupials/index.js",
       "path": "/dr-ui/split/marsupials/",
       "frontMatter": {
         "title": "Marsupials",
@@ -132,7 +132,7 @@
       }
     },
     {
-      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/third/index.js",
+      "filePath": "./docs/src/pages/split/third/index.js",
       "path": "/dr-ui/split/third/",
       "frontMatter": {
         "title": "Third section",
@@ -145,7 +145,7 @@
       }
     },
     {
-      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/marsupials/sections/kangaroos.md",
+      "filePath": "./docs/src/pages/split/marsupials/sections/kangaroos.md",
       "path": "/dr-ui/split/marsupials/sections/kangaroos/",
       "frontMatter": {
         "title": "Kangaroos",
@@ -156,7 +156,7 @@
       }
     },
     {
-      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/marsupials/sections/opposum.md",
+      "filePath": "./docs/src/pages/split/marsupials/sections/opposum.md",
       "path": "/dr-ui/split/marsupials/sections/opposum/",
       "frontMatter": {
         "title": "Opossum",
@@ -167,7 +167,7 @@
       }
     },
     {
-      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/marsupials/sections/tasmanian.md",
+      "filePath": "./docs/src/pages/split/marsupials/sections/tasmanian.md",
       "path": "/dr-ui/split/marsupials/sections/tasmanian/",
       "frontMatter": {
         "title": "Tasmanian devil",
@@ -178,7 +178,7 @@
       }
     },
     {
-      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/second/sections/sub-one.md",
+      "filePath": "./docs/src/pages/split/second/sections/sub-one.md",
       "path": "/dr-ui/split/second/sections/sub-one/",
       "frontMatter": {
         "title": "Sub one",
@@ -189,7 +189,7 @@
       }
     },
     {
-      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/second/sections/sub-three.md",
+      "filePath": "./docs/src/pages/split/second/sections/sub-three.md",
       "path": "/dr-ui/split/second/sections/sub-three/",
       "frontMatter": {
         "title": "Sub three",
@@ -200,7 +200,7 @@
       }
     },
     {
-      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/second/sections/sub-two.md",
+      "filePath": "./docs/src/pages/split/second/sections/sub-two.md",
       "path": "/dr-ui/split/second/sections/sub-two/",
       "frontMatter": {
         "title": "Sub two",
@@ -211,7 +211,7 @@
       }
     },
     {
-      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/third/sections/sub-three.md",
+      "filePath": "./docs/src/pages/split/third/sections/sub-three.md",
       "path": "/dr-ui/split/third/sections/sub-three/",
       "frontMatter": {
         "title": "Sub three",
@@ -222,7 +222,7 @@
       }
     },
     {
-      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/third/sections/sub-two.md",
+      "filePath": "./docs/src/pages/split/third/sections/sub-two.md",
       "path": "/dr-ui/split/third/sections/sub-two/",
       "frontMatter": {
         "title": "Sub two",
@@ -233,7 +233,7 @@
       }
     },
     {
-      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/split/third/sections/sub-one.md",
+      "filePath": "./docs/src/pages/split/third/sections/sub-one.md",
       "path": "/dr-ui/split/third/sections/sub-one/",
       "frontMatter": {
         "title": "Sub one",
@@ -244,12 +244,12 @@
       }
     },
     {
-      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/changelog.md",
+      "filePath": "./docs/src/pages/changelog.md",
       "path": "/dr-ui/changelog/",
       "frontMatter": {}
     },
     {
-      "filePath": "/Users/katydecorah/Documents/GitHub/dr-ui/node_modules/@mapbox/batfish/dist/webpack/default-not-found.js",
+      "filePath": "./node_modules/@mapbox/batfish/dist/webpack/default-not-found.js",
       "path": "/dr-ui/404/",
       "is404": true,
       "frontMatter": {}
