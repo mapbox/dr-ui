@@ -80,7 +80,8 @@ function formatPages(siteBasePath, data, sections) {
     ...(p.frontMatter.layout && { layout: p.frontMatter.layout }),
     ...(sections && { section: findSection(siteBasePath, p, sections) }),
     ...(p.frontMatter.splitPage && { splitPage: p.frontMatter.splitPage }),
-    ...(p.frontMatter.splitPages && { splitPages: p.frontMatter.splitPages })
+    ...(p.frontMatter.splitPages && { splitPages: p.frontMatter.splitPages }),
+    ...(p.frontMatter.hideFromNav && { hideFromNav: p.frontMatter.hideFromNav })
   }));
 }
 
@@ -118,7 +119,7 @@ function buildNavTabs(organized) {
 
 function buildAccordion(organized) {
   return Object.keys(organized).reduce((obj, path) => {
-    const pages = organized[path].pages;
+    const pages = organized[path].pages.filter((f) => !f.hideFromNav);
     const findAccordionLayout = pages.filter((p) => p.layout === 'accordion');
     if (findAccordionLayout.length > 0) {
       obj[path] = pages.map((p) => ({

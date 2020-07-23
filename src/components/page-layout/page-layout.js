@@ -162,6 +162,7 @@ Each `layout` is a configuration of different components. You can override any l
 - `unProse` - if `true`, remove the "prose" class from PageLayout. This is helpful for non-content pages.
 - `noShellHeaderBuffer` - if `true`, remove the header buffer div. This is helpful for custom headers like on the Help page.
 - `sidebarTitle` - an optional title to add to sidebar.
+- `hideFromNav` - if `true`, remove an item from appearing in NavigationAccordion.
    */
   frontMatter: PropTypes.shape({
     headings: PropTypes.array,
@@ -182,7 +183,8 @@ Each `layout` is a configuration of different components. You can override any l
     fullWidthCards: PropTypes.bool,
     unProse: PropTypes.bool,
     noShellHeaderBuffer: PropTypes.bool,
-    sidebarTitle: PropTypes.string
+    sidebarTitle: PropTypes.string,
+    hideFromNav: PropTypes.bool
   }).isRequired,
   /**
 - `navTabs` - links to be shown in the `TabList` of `TopBarSticker`, formatted as an array of object: `[{"href": "/overview", "id": "overview", "label": "Overview"}]`

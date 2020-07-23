@@ -15,4 +15,36 @@ describe('buildNavigation', () => {
       buildNavigation(siteBasePath, dataMulti, sections)
     ).toMatchSnapshot();
   });
+
+  it('hideFromNav, removes items', () => {
+    expect(
+      buildNavigation(siteBasePath, {
+        pages: [
+          {
+            path: '/dr-ui/level-one/',
+            frontMatter: {
+              title: 'Top page',
+              layout: 'accordion',
+              navOrder: 1
+            }
+          },
+          {
+            path: '/dr-ui/level-one/a/',
+            frontMatter: {
+              title: 'Page a',
+              layout: 'accordion',
+              hideFromNav: true
+            }
+          },
+          {
+            path: '/dr-ui/level-one/b/',
+            frontMatter: {
+              title: 'Page b',
+              layout: 'accordion'
+            }
+          }
+        ]
+      })
+    ).toMatchSnapshot();
+  });
 });

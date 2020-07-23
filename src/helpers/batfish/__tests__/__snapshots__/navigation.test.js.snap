@@ -1,5 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`buildNavigation hideFromNav, removes items 1`] = `
+Object {
+  "accordion": Object {
+    "/dr-ui/level-one/": Array [
+      Object {
+        "path": "/dr-ui/level-one/",
+        "title": "Top page",
+      },
+      Object {
+        "path": "/dr-ui/level-one/b/",
+        "title": "Page b",
+      },
+    ],
+  },
+  "hierarchy": Object {
+    "/dr-ui/level-one/": Object {
+      "parent": "/dr-ui/level-one/",
+      "title": "Top page",
+    },
+    "/dr-ui/level-one/a/": Object {
+      "parent": "/dr-ui/level-one/",
+      "title": "Top page",
+    },
+    "/dr-ui/level-one/b/": Object {
+      "parent": "/dr-ui/level-one/",
+      "title": "Top page",
+    },
+  },
+  "navTabs": Array [
+    Object {
+      "href": "/dr-ui/level-one/",
+      "id": "/dr-ui/level-one/",
+      "label": "Top page",
+    },
+  ],
+}
+`;
+
 exports[`buildNavigation multi structure 1`] = `
 Object {
   "beta/navigation": Object {
