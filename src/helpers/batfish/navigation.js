@@ -68,21 +68,25 @@ function organizePages(pages) {
 
 // format pages with data we need to process the content
 function formatPages(siteBasePath, data, sections) {
-  return data.pages.map((p) => ({
-    title: p.frontMatter.title,
-    path: p.path,
-    ...(p.frontMatter.order && { order: p.frontMatter.order }),
-    ...(p.frontMatter.navOrder && { navOrder: p.frontMatter.navOrder }),
-    ...(p.frontMatter.tag && { tag: p.frontMatter.tag }),
-    ...(p.frontMatter.customTagProps && {
-      customTagProps: p.frontMatter.customTagProps
-    }),
-    ...(p.frontMatter.layout && { layout: p.frontMatter.layout }),
-    ...(sections && { section: findSection(siteBasePath, p, sections) }),
-    ...(p.frontMatter.splitPage && { splitPage: p.frontMatter.splitPage }),
-    ...(p.frontMatter.splitPages && { splitPages: p.frontMatter.splitPages }),
-    ...(p.frontMatter.hideFromNav && { hideFromNav: p.frontMatter.hideFromNav })
-  }));
+  return data.pages
+    .filter((f) => !f.is404) // remove the batfish 404 page
+    .map((p) => ({
+      title: p.frontMatter.title,
+      path: p.path,
+      ...(p.frontMatter.order && { order: p.frontMatter.order }),
+      ...(p.frontMatter.navOrder && { navOrder: p.frontMatter.navOrder }),
+      ...(p.frontMatter.tag && { tag: p.frontMatter.tag }),
+      ...(p.frontMatter.customTagProps && {
+        customTagProps: p.frontMatter.customTagProps
+      }),
+      ...(p.frontMatter.layout && { layout: p.frontMatter.layout }),
+      ...(sections && { section: findSection(siteBasePath, p, sections) }),
+      ...(p.frontMatter.splitPage && { splitPage: p.frontMatter.splitPage }),
+      ...(p.frontMatter.splitPages && { splitPages: p.frontMatter.splitPages }),
+      ...(p.frontMatter.hideFromNav && {
+        hideFromNav: p.frontMatter.hideFromNav
+      })
+    }));
 }
 
 function buildMultiLevels(sections, pages) {
