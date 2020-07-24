@@ -6,20 +6,31 @@ import ProductMenu from '../../product-menu/product-menu';
 import Search from '../../search/search';
 import TabList from '@mapbox/mr-ui/tab-list';
 
-export default class PageLayoutTopbar extends React.PureComponent {
-  render() {
-    const { parentPath, topBarSticker, tabListAppend } = this.props;
-    const { title, tag, path } = this.props.navigation;
+export default class PageLayoutTopbar extends React.Component {
+  renderNavTabs = () => {
+    const { tabListAppend } = this.props;
     let { navTabs } = this.props.navigation;
-    const { SITE, BASEURL } = this.props.constants;
-    const Wrapper = topBarSticker ? TopbarSticker : Topbar;
+    if (!navTabs) return;
+    // we need to do this to switch iOS and Android's mobile navigation
     // if tabListAppend, append it to navTabs
     if (tabListAppend && navTabs) {
+      // first remove all appended items to avoid duplicates
+      navTabs = navTabs.filter((f) => !f.appended);
+      // finally add any items to appeneded, but make sure it's a unique id being added
       tabListAppend.map((tab) => {
         if (navTabs.filter((f) => f.id === tab.id).length === 0)
-          navTabs.push(tab);
+          navTabs.push({ ...tab, appended: true });
       });
     }
+    return navTabs;
+  };
+
+  render() {
+    const { parentPath, topBarSticker, navigation, constants } = this.props;
+    const { title, tag, path } = navigation;
+    let { navTabs } = navigation;
+    const { SITE, BASEURL } = constants;
+    const Wrapper = topBarSticker ? TopbarSticker : Topbar;
     return (
       <Wrapper>
         <div className="limiter">
@@ -29,12 +40,14 @@ export default class PageLayoutTopbar extends React.PureComponent {
                 <ProductMenu
                   productName={title || SITE}
                   tag={tag || undefined}
-                  homePage={`${BASEURL}${path || ''}`}
+                  homePage={`${BASEURL}/${path || ''}`}
                 />
               </div>
             </div>
             <div className="col col--6-mm col--12">
-              {navTabs && <TabList items={navTabs} activeItem={parentPath} />}
+              {navTabs && (
+                <TabList items={this.renderNavTabs()} activeItem={parentPath} />
+              )}
             </div>
             <div className="col col--2-mm col--12">
               <div className="flex-parent-mm flex-parent--center-cross flex-parent--end-main h-full-mm wmax300 wmax-full-mm my0-mm my12">
@@ -65,5 +78,5 @@ PageLayoutTopbar.propTypes = {
     BASEURL: PropTypes.string.isRequired
   }).isRequired,
   topBarSticker: PropTypes.bool,
-  tabListAppend: PropTypes.node
+  tabListAppend: PropTypes.array
 };
