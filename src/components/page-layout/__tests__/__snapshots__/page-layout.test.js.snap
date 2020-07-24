@@ -45,7 +45,7 @@ Array [
                 >
                   <a
                     className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
-                    href="/dr-ui"
+                    href="/dr-ui/"
                   >
                     dr-ui
                   </a>
@@ -664,7 +664,7 @@ Array [
                 >
                   <a
                     className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
-                    href="/dr-ui"
+                    href="/dr-ui/"
                   >
                     dr-ui
                   </a>
@@ -1224,7 +1224,7 @@ Array [
                 >
                   <a
                     className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
-                    href="/dr-ui"
+                    href="/dr-ui/"
                   >
                     dr-ui
                   </a>
@@ -1565,7 +1565,7 @@ Array [
                 >
                   <a
                     className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
-                    href="/dr-ui"
+                    href="/dr-ui/"
                   >
                     dr-ui
                   </a>
@@ -1907,7 +1907,7 @@ Array [
                 >
                   <a
                     className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
-                    href="/dr-ui"
+                    href="/dr-ui/"
                   >
                     dr-ui
                   </a>
