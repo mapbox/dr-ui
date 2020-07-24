@@ -50,6 +50,7 @@ Object {
       },
     ],
     "path": "beta/navigation",
+    "tag": "beta",
     "title": "Beta Navigation SDK for iOS",
   },
   "hierarchy": Object {

@@ -89,6 +89,7 @@ function buildMultiLevels(sections, pages) {
       obj[section.path] = {
         path: section.path,
         title: section.title,
+        ...(section.tag && { tag: section.tag }),
         navTabs: buildNavTabs(organized, section),
         accordion: buildAccordion(organized)
       };
