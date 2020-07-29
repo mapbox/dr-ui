@@ -1,29 +1,17 @@
 ---
-title: Split pages
+title: How to use spit pages
 description: An introduction to use split pages.
-contentType: API
-layout: accordion
-order: 1
-navOrder: 4
+order: 2
+splitPage: true
 prependJs:
-  - "import Note from '../../../../src/components/note/note';"
-  - "import MainPage from '!raw-loader!./marsupials/index.js';"
-  - "import SubOne from '!raw-loader!./marsupials/sections/kangaroos.md';"
-  - "import SplitPageShell from '!raw-loader!../../components/split-page-shell.js';"
-  - "import CodeSnippet from '../../../../src/components/code-snippet/code-snippet';"
-  - "import { highlightJsx } from '../../../../src/components/highlight/jsx';"
-  - "import { highlightHtml } from '../../../../src/components/highlight/html';"
+  - "import Note from '../../../../../../src/components/note/note';"
+  - "import MainPage from '!raw-loader!../index.js';"
+  - "import SubOne from '!raw-loader!./intro.md';"
+  - "import SplitPageShell from '!raw-loader!../../../../components/split-page-shell.js';"
+  - "import CodeSnippet from '../../../../../../src/components/code-snippet/code-snippet';"
+  - "import { highlightJsx } from '../../../../../../src/components/highlight/jsx';"
+  - "import { highlightHtml } from '../../../../../../src/components/highlight/html';"
 ---
-
-This is a demo of how to use `split-pages` batfish selector.
-
-To improve developer experience, we sometimes split a long page into multiple markdown files and then allow Batfish to combine them into a single page.
-
-This pattern is used by API documentation, Studio Manual, and Accounts.
-
-{{ <Note theme="warning"> }}
-Each individual split page must have unique headings. This is currently a limitation of this pattern.
-{{</Note>}}
 
 ## How to use split pages
 
@@ -35,7 +23,7 @@ Each individual split page must have unique headings. This is currently a limita
 - Import the splitPages function to override the page's headings.
 - It's usually a good idea to set `hideFeedback: true`.
 
-{{ <div className="mb18"><CodeSnippet code={`${MainPage}`} highlighter={() => highlightJsx} filename="src/pages/split/marsupials/index.js" /></div>}}
+{{ <div className="mb18"><CodeSnippet code={`${MainPage}`} highlighter={() => highlightJsx} filename="src/pages/guides/sections/index.js" /></div>}}
 
 {{ <Note> }}
 The main file must be a JavaScript file to make sure the scroll spy on the sidebar works correctly.
@@ -48,9 +36,9 @@ The main file must be a JavaScript file to make sure the scroll spy on the sideb
 - Add `splitPage: true` to the frontMatter.
 - Add `order` to designate the order the page appears.
 
-{{ <CodeSnippet code={`${SubOne}`} highlighter={() => highlightHtml} filename="src/pages/split/marsupials/sections/kangaroos.md" />}}
+{{ <CodeSnippet code={`${SubOne}`} highlighter={() => highlightHtml} filename="src/pages/guides/sections/intro.md" />}}
 
-### 3. Create `split-page-shell`
+### 3. Create split-page-shell
 
 You will need a wrapper to handle each split page and update the batfish.config.js to use that page shell:
 
@@ -72,4 +60,6 @@ In `split-page-shell`, it's a usually a good idea to add the Feedback module wit
 
 ### 4. Create redirects
 
-You will need to create redirects in subdomain-docs.
+You will need to create redirects in [subdomain-docs](https://github.com/mapbox/subdomain-docs).
+
+See [Redirects for Studio Manual reference "sections" pages #75](https://github.com/mapbox/subdomain-docs/pull/75) for a similiar example.

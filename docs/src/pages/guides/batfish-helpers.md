@@ -1,7 +1,9 @@
 ---
 title: Batfish helpers
 description: Batfish data selector functions to build navigation and topic datasets.
-navOrder: 2
+order: 2
+layout: accordion
+hideFeedback: true
 prependJs:
   - "import navigation from '@mapbox/batfish/data/navigation';"
   - "import topics from '@mapbox/batfish/data/topics';"

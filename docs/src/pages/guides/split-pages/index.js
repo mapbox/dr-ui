@@ -1,8 +1,8 @@
 /*---
-title: Marsupials
+title: Split pages
 description: This is the first section
 splitPages: true
-order: 2
+order: 3
 layout: accordion
 contentType: API
 hideFeedback: true
@@ -11,9 +11,9 @@ hideFeedback: true
 import React from 'react';
 
 // Import each markdown file.
-import Kanagroos from './sections/kangaroos.md';
-import Opposum from './sections/opposum.md';
-import TasmanianDevil from './sections/tasmanian.md';
+import Intro from './sections/intro.md';
+import HowTo from './sections/how-to.md';
+import Limitations from './sections/limitations.md';
 import PageShell from '../../../components/page-shell';
 
 // Import splitPage function
@@ -26,9 +26,9 @@ export default class Page extends React.Component {
     const headings = splitPages[location.pathname].headings;
     return (
       <PageShell headings={headings} {...this.props}>
-        <Kanagroos location={location} />
-        <Opposum location={location} />
-        <TasmanianDevil location={location} />
+        <Intro location={location} />
+        <HowTo location={location} />
+        <Limitations location={location} />
       </PageShell>
     );
   }
