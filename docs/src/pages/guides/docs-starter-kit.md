@@ -9,4 +9,11 @@ prependJs:
   - "import topics from '@mapbox/batfish/data/topics';"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+[Docs starter kit](https://github.com/mapbox/docs-starter-kit) is a template repo to create a new documentation site under the docs subdomain. The template comes fully loaded with the all the default Dr. UI components that you can customize to your needs.
+
+## How to use docs start kit
+
+1. Click "Use this template" button from the [docs starter kit repository](https://github.com/mapbox/docs-starter-kit).
+2. In your new repository, create a new branch `publisher-staging` to begin your customizations and complete the checklist found in the README.
+3. When ready, create a pull request to make sure all tests are passing.
+4. Work with the docs team on getting your site live.
