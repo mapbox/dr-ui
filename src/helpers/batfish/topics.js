@@ -2,6 +2,7 @@
 // see: https://mapbox.github.io/dr-ui/batfish-helpers/#topics
 
 const slugify = require('slugify');
+const removeMd = require('remove-markdown');
 
 function buildTopics(data, append) {
   let obj = {};
@@ -52,6 +53,7 @@ function generateTopics(path, pages) {
           arr.push({
             text: page.title, // needed for sectionednavigation
             url: page.path, // needed for sectionednavigation
+            description: removeMd(page.description),
             ...page
           });
         }
@@ -61,6 +63,7 @@ function generateTopics(path, pages) {
           arr.push({
             text: page.title, // needed for sectionednavigation
             url: page.path, // needed for sectionednavigation
+            description: removeMd(page.description),
             ...page
           });
         }
