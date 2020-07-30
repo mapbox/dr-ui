@@ -3,7 +3,11 @@
 
 const slugify = require('slugify');
 
-function buildTopics(data, append) {
+const sortBy = (key) => {
+  return (a, b) => (a[key] > b[key] ? 1 : b[key] > a[key] ? -1 : 0);
+};
+
+function buildTopics(data, append, sortingArr) {
   let obj = {};
 
   const pages = data.pages.map((p) => ({
@@ -19,7 +23,11 @@ function buildTopics(data, append) {
         page.path.startsWith(parent.path)
       );
 
-      const topics = generateTopics(parent.path, children);
+      const topics = sortTopics(
+        generateTopics(parent.path, children),
+        sortingArr
+      );
+
       if (topics.length > 0) {
         obj[parent.path] = parent;
         parent.topics = topics;
@@ -32,6 +40,16 @@ function buildTopics(data, append) {
 module.exports = {
   buildTopics
 };
+
+function sortTopics(topics, sortingArr) {
+  if (sortingArr) {
+    return topics.sort(
+      (a, b) => sortingArr.indexOf(a.name) - sortingArr.indexOf(b.name)
+    );
+  } else {
+    return topics.sort(sortBy('count')).reverse();
+  }
+}
 
 function generateTopics(path, pages) {
   // get unique topics

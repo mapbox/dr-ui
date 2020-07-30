@@ -474,3 +474,101 @@ Object {
   },
 }
 `;
+
+exports[`buildTopics sortingArr 1`] = `
+Object {
+  "/docs-starter-kit/examples/": Object {
+    "contentType": "example",
+    "description": "Replace me.",
+    "language": Array [
+      "JavaScript",
+    ],
+    "layout": "example",
+    "navOrder": 3,
+    "path": "/docs-starter-kit/examples/",
+    "title": "Examples",
+    "topics": Array [
+      Object {
+        "count": 1,
+        "name": "Awesome",
+        "pages": Array [
+          Object {
+            "contentType": "example",
+            "description": "Replace me.",
+            "language": Array [
+              "JavaScript",
+            ],
+            "layout": "example",
+            "path": "/docs-starter-kit/examples/example-3/",
+            "text": "Example 3",
+            "thumbnail": "header-image",
+            "title": "Example 3",
+            "topics": Array [
+              "Cool",
+              "Awesome",
+            ],
+            "url": "/docs-starter-kit/examples/example-3/",
+          },
+        ],
+        "url": "/docs-starter-kit/examples/#awesome",
+      },
+      Object {
+        "count": 3,
+        "name": "Cool",
+        "pages": Array [
+          Object {
+            "contentType": "example",
+            "description": "Replace me.",
+            "language": Array [
+              "JavaScript",
+            ],
+            "layout": "example",
+            "path": "/docs-starter-kit/examples/example-1/",
+            "text": "Example 1",
+            "thumbnail": "header-image",
+            "title": "Example 1",
+            "topics": Array [
+              "Cool",
+            ],
+            "url": "/docs-starter-kit/examples/example-1/",
+          },
+          Object {
+            "contentType": "example",
+            "description": "Replace me.",
+            "language": Array [
+              "JavaScript",
+            ],
+            "layout": "example",
+            "path": "/docs-starter-kit/examples/example-2/",
+            "text": "Example 2",
+            "thumbnail": "header-image",
+            "title": "Example 2",
+            "topics": Array [
+              "Cool",
+            ],
+            "url": "/docs-starter-kit/examples/example-2/",
+          },
+          Object {
+            "contentType": "example",
+            "description": "Replace me.",
+            "language": Array [
+              "JavaScript",
+            ],
+            "layout": "example",
+            "path": "/docs-starter-kit/examples/example-3/",
+            "text": "Example 3",
+            "thumbnail": "header-image",
+            "title": "Example 3",
+            "topics": Array [
+              "Cool",
+              "Awesome",
+            ],
+            "url": "/docs-starter-kit/examples/example-3/",
+          },
+        ],
+        "url": "/docs-starter-kit/examples/#cool",
+      },
+    ],
+  },
+}
+`;
