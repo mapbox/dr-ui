@@ -6,5 +6,6 @@ module.exports = {
     '@babel/plugin-proposal-class-properties',
     '@babel/plugin-transform-arrow-functions',
     '@babel/plugin-transform-object-assign'
-  ]
+  ],
+  ignore: ['**/__tests__', '**/examples']
 };

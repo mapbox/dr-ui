@@ -10,4 +10,8 @@ describe('buildTopics', () => {
   it('multi structure', () => {
     expect(buildTopics(dataMulti)).toMatchSnapshot();
   });
+
+  it('sortingArr', () => {
+    expect(buildTopics(data, null, ['Awesome', 'Cool'])).toMatchSnapshot();
+  });
 });

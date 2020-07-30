@@ -87,6 +87,8 @@ class SideBar extends React.Component {
 ### Arguments
 
 - `data`, object. Provided by the data selector.
+- `append`, object. Append additional data, this is helpful if you have programmatic data (like the Mapbox GL JS Plugins page) and want to take advantage of the example layout.
+- `sortArr`, array. An array of topics that is in the order you want the topics to display.
 
 ### Set up in batfish.config.js
 
