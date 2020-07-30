@@ -16,6 +16,7 @@ class Search extends React.Component {
           initialState: {
             resultsPerPage: 10
           },
+          trackUrlState: false,
           searchQuery: {
             facets: {
               site: { type: 'value' }
