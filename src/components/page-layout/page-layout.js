@@ -163,6 +163,8 @@ Each `layout` is a configuration of different components. You can override any l
 - `noShellHeaderBuffer` - if `true`, remove the header buffer div. This is helpful for custom headers like on the Help page.
 - `sidebarTitle` - an optional title to add to sidebar.
 - `hideFromNav` - if `true`, remove an item from appearing in NavigationAccordion.
+- `hideCardLanguage` - if `true`, hide the language from the Card in the ExamplesIndex layout
+- `hideCardDescription` - if `true`, hide the description from the Card in the ExamplesIndex layout
    */
   frontMatter: PropTypes.shape({
     headings: PropTypes.array,
@@ -184,7 +186,9 @@ Each `layout` is a configuration of different components. You can override any l
     unProse: PropTypes.bool,
     noShellHeaderBuffer: PropTypes.bool,
     sidebarTitle: PropTypes.string,
-    hideFromNav: PropTypes.bool
+    hideFromNav: PropTypes.bool,
+    hideCardLanguage: PropTypes.bool,
+    hideCardDescription: PropTypes.bool
   }).isRequired,
   /**
 - `navTabs` - links to be shown in the `TabList` of `TopBarSticker`, formatted as an array of object: `[{"href": "/overview", "id": "overview", "label": "Overview"}]`
