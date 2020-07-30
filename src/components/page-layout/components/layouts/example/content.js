@@ -33,7 +33,11 @@ export default class LayoutExamples extends React.PureComponent {
   };
   render() {
     const { topics, frontMatter, AppropriateImage } = this.props;
-    const { fullWidthCards } = frontMatter;
+    const {
+      fullWidthCards,
+      hideCardDescription,
+      hideCardLanguage
+    } = frontMatter;
 
     const renderedCardContainers = topics.map((topic, i) => {
       const cardsForTopic = topic.pages.map((page) => {
@@ -41,7 +45,7 @@ export default class LayoutExamples extends React.PureComponent {
           <Card
             key={page.title}
             title={page.title}
-            description={page.description}
+            description={hideCardDescription ? undefined : page.description}
             path={page.path}
             thumbnail={
               page.thumbnail
@@ -49,7 +53,13 @@ export default class LayoutExamples extends React.PureComponent {
                 : undefined
             }
             level={page.level}
-            language={page.language ? page.language.join(', ') : ''}
+            language={
+              hideCardLanguage
+                ? undefined
+                : page.language
+                ? page.language.join(', ')
+                : undefined
+            }
           />
         );
       });
@@ -95,7 +105,9 @@ LayoutExamples.propTypes = {
   frontMatter: PropTypes.shape({
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    fullWidthCards: PropTypes.bool
+    fullWidthCards: PropTypes.bool,
+    hideCardDescription: PropTypes.bool,
+    hideCardLanguage: PropTypes.bool
   }).isRequired,
   AppropriateImage: PropTypes.func
 };
