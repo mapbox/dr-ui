@@ -562,105 +562,56 @@ Object {
 
 exports[`buildNavigation single structure 1`] = `
 Object {
-  "accordion": Object {
-    "/docs-starter-kit/overview/": Array [
-      Object {
-        "path": "/docs-starter-kit/overview/",
-        "title": "Overview",
-      },
-      Object {
-        "path": "/docs-starter-kit/overview/layouts/",
-        "title": "Layouts",
-      },
-      Object {
-        "path": "/docs-starter-kit/overview/navigation/",
-        "title": "Navigation",
-      },
-      Object {
-        "path": "/docs-starter-kit/overview/images/",
-        "title": "Images and videos",
-      },
-      Object {
-        "path": "/docs-starter-kit/overview/constants/",
-        "title": "Constants",
-      },
-      Object {
-        "path": "/docs-starter-kit/overview/frontmatter/",
-        "tag": "fundamentals",
-        "title": "Frontmatter",
-      },
-    ],
-  },
+  "accordion": Object {},
   "hierarchy": Object {
-    "/docs-starter-kit/demo/": Object {
-      "parent": "/docs-starter-kit/demo/",
-      "title": "Demo",
+    "/dr-ui/": Object {
+      "parent": "/dr-ui/",
+      "title": "Overview",
     },
-    "/docs-starter-kit/examples/": Object {
-      "parent": "/docs-starter-kit/examples/",
+    "/dr-ui/404/": Object {
+      "parent": "/dr-ui/",
+      "title": "Overview",
+    },
+    "/dr-ui/batfish-helpers/": Object {
+      "parent": "/dr-ui/batfish-helpers/",
+      "title": "Batfish helpers",
+    },
+    "/dr-ui/changelog/": Object {
+      "parent": "/dr-ui/",
+      "title": "Overview",
+    },
+    "/dr-ui/examples/": Object {
+      "parent": "/dr-ui/examples/",
       "title": "Examples",
     },
-    "/docs-starter-kit/examples/example-1/": Object {
-      "parent": "/docs-starter-kit/examples/",
+    "/dr-ui/examples/example-1/": Object {
+      "parent": "/dr-ui/examples/",
       "title": "Examples",
     },
-    "/docs-starter-kit/examples/example-2/": Object {
-      "parent": "/docs-starter-kit/examples/",
+    "/dr-ui/examples/example-2/": Object {
+      "parent": "/dr-ui/examples/",
       "title": "Examples",
     },
-    "/docs-starter-kit/examples/example-3/": Object {
-      "parent": "/docs-starter-kit/examples/",
+    "/dr-ui/examples/example-3/": Object {
+      "parent": "/dr-ui/examples/",
       "title": "Examples",
-    },
-    "/docs-starter-kit/overview/": Object {
-      "parent": "/docs-starter-kit/overview/",
-      "title": "Overview",
-    },
-    "/docs-starter-kit/overview/constants/": Object {
-      "parent": "/docs-starter-kit/overview/",
-      "title": "Overview",
-    },
-    "/docs-starter-kit/overview/frontmatter/": Object {
-      "parent": "/docs-starter-kit/overview/",
-      "title": "Overview",
-    },
-    "/docs-starter-kit/overview/images/": Object {
-      "parent": "/docs-starter-kit/overview/",
-      "title": "Overview",
-    },
-    "/docs-starter-kit/overview/layouts/": Object {
-      "parent": "/docs-starter-kit/overview/",
-      "title": "Overview",
-    },
-    "/docs-starter-kit/overview/navigation/": Object {
-      "parent": "/docs-starter-kit/overview/",
-      "title": "Overview",
-    },
-    "/docs-starter-kit/specification/": Object {
-      "parent": "/docs-starter-kit/specification/",
-      "title": "Specification",
     },
   },
   "navTabs": Array [
     Object {
-      "href": "/docs-starter-kit/overview/",
-      "id": "/docs-starter-kit/overview/",
+      "href": "/dr-ui/",
+      "id": "/dr-ui/",
       "label": "Overview",
     },
     Object {
-      "href": "/docs-starter-kit/specification/",
-      "id": "/docs-starter-kit/specification/",
-      "label": "Specification",
+      "href": "/dr-ui/batfish-helpers/",
+      "id": "/dr-ui/batfish-helpers/",
+      "label": "Batfish helpers",
     },
     Object {
-      "href": "/docs-starter-kit/examples/",
-      "id": "/docs-starter-kit/examples/",
+      "href": "/dr-ui/examples/",
+      "id": "/dr-ui/examples/",
       "label": "Examples",
-    },
-    Object {
-      "href": "/docs-starter-kit/demo/",
-      "id": "/docs-starter-kit/demo/",
-      "label": "Demo",
     },
   ],
 }
