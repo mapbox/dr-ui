@@ -1,19 +1,6 @@
 {
   "pages": [
     {
-      "filePath": "./docs/src/pages/examples/example-1.md",
-      "path": "/dr-ui/examples/example-1/",
-      "frontMatter": {
-        "title": "Example 1",
-        "description": "Replace me.",
-        "contentType": "example",
-        "topics": ["Navigation"],
-        "thumbnail": "header-image",
-        "layout": "example",
-        "products": ["Documentation"]
-      }
-    },
-    {
       "filePath": "./docs/src/pages/index.md",
       "path": "/dr-ui/",
       "frontMatter": {
@@ -26,7 +13,6 @@
           "const version = require('../../../package.json').version;"
         ],
         "layout": "example",
-        "products": ["Documentation"],
         "hideSubItems": false,
         "showCards": false,
         "includeFilterBar": true,
@@ -36,29 +22,29 @@
       }
     },
     {
-      "filePath": "./docs/src/pages/examples/example-2.md",
-      "path": "/dr-ui/examples/example-2/",
+      "filePath": "./docs/src/pages/examples/example-1.md",
+      "path": "/dr-ui/examples/example-1/",
       "frontMatter": {
-        "title": "Example 2",
+        "title": "Example 1",
         "description": "Replace me.",
         "contentType": "example",
         "topics": ["Navigation"],
         "thumbnail": "header-image",
-        "layout": "example",
-        "products": ["Documentation"]
+        "layout": "example"
       }
     },
     {
-      "filePath": "./docs/src/pages/examples/example-3.md",
-      "path": "/dr-ui/examples/example-3/",
+      "filePath": "./docs/src/pages/guides/batfish-helpers.md",
+      "path": "/dr-ui/guides/batfish-helpers/",
       "frontMatter": {
-        "title": "Example 3",
-        "description": "Replace me.",
-        "contentType": "example",
-        "topics": ["Navigation", "Geocoding"],
-        "thumbnail": "header-image",
-        "layout": "example",
-        "products": ["Documentation"]
+        "title": "Batfish helpers",
+        "description": "Batfish data selector functions to build navigation and topic datasets.",
+        "order": 2,
+        "layout": "accordion",
+        "prependJs": [
+          "import navigation from '@mapbox/batfish/data/navigation';",
+          "import topics from '@mapbox/batfish/data/topics';"
+        ]
       }
     },
     {
@@ -71,24 +57,7 @@
         "language": ["JavaScript"],
         "navOrder": 3,
         "layout": "example",
-        "fullWidthCards": true,
-        "products": ["Documentation"]
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/guides/batfish-helpers.md",
-      "path": "/dr-ui/guides/batfish-helpers/",
-      "frontMatter": {
-        "title": "Batfish helpers",
-        "description": "Batfish data selector functions to build navigation and topic datasets.",
-        "order": 2,
-        "layout": "accordion",
-        "hideFeedback": true,
-        "prependJs": [
-          "import navigation from '@mapbox/batfish/data/navigation';",
-          "import topics from '@mapbox/batfish/data/topics';",
-          "import splitPages from '@mapbox/batfish/data/split-pages';"
-        ]
+        "fullWidthCards": true
       }
     },
     {
@@ -103,67 +72,33 @@
       }
     },
     {
-      "filePath": "./docs/src/pages/guides/split-pages/sections/how-to.md",
-      "path": "/dr-ui/guides/split-pages/sections/how-to/",
-      "frontMatter": {
-        "title": "How to use spit pages",
-        "description": "An introduction to use split pages.",
-        "order": 2,
-        "splitPage": true,
-        "products": ["Mapbox fundamentals"],
-        "prependJs": [
-          "import Note from '../../../../../../src/components/note/note';",
-          "import MainPage from '!raw-loader!../index.js';",
-          "import SubOne from '!raw-loader!./intro.md';",
-          "import SplitPageShell from '!raw-loader!../../../../components/split-page-shell.js';",
-          "import CodeSnippet from '../../../../../../src/components/code-snippet/code-snippet';",
-          "import { highlightJsx } from '../../../../../../src/components/highlight/jsx';",
-          "import { highlightHtml } from '../../../../../../src/components/highlight/html';"
-        ]
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/guides/split-pages/index.js",
-      "path": "/dr-ui/guides/split-pages/",
-      "frontMatter": {
-        "title": "Split pages",
-        "description": "This is the first section",
-        "splitPages": true,
-        "order": 3,
-        "layout": "accordion",
-        "contentType": "API",
-        "hideFeedback": true
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/guides/split-pages/sections/intro.md",
-      "path": "/dr-ui/guides/split-pages/sections/intro/",
-      "frontMatter": {
-        "title": "Introduction to split pages",
-        "description": "An introduction to use split pages.",
-        "order": 1,
-        "splitPage": true,
-        "products": ["Documentation"],
-        "prependJs": [
-          "import Note from '../../../../../../src/components/note/note';"
-        ]
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/guides/split-pages/sections/limitations.md",
-      "path": "/dr-ui/guides/split-pages/sections/limitations/",
-      "frontMatter": {
-        "title": "Limitations",
-        "description": "Limitations to the split page pattern.",
-        "order": 3,
-        "splitPage": true,
-        "products": ["Mapbox fundamentals"]
-      }
-    },
-    {
       "filePath": "./docs/src/pages/changelog.md",
       "path": "/dr-ui/changelog/",
       "frontMatter": {}
+    },
+    {
+      "filePath": "./docs/src/pages/examples/example-3.md",
+      "path": "/dr-ui/examples/example-3/",
+      "frontMatter": {
+        "title": "Example 3",
+        "description": "Replace me.",
+        "contentType": "example",
+        "topics": ["Navigation", "Geocoding"],
+        "thumbnail": "header-image",
+        "layout": "example"
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/examples/example-2.md",
+      "path": "/dr-ui/examples/example-2/",
+      "frontMatter": {
+        "title": "Example 2",
+        "description": "Replace me.",
+        "contentType": "example",
+        "topics": ["Navigation"],
+        "thumbnail": "header-image",
+        "layout": "example"
+      }
     },
     {
       "filePath": "./node_modules/@mapbox/batfish/dist/webpack/default-not-found.js",
