@@ -1,43 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`buildNavigation hideFromNav, removes items 1`] = `
-Object {
-  "accordion": Object {
-    "/dr-ui/level-one/": Array [
-      Object {
-        "path": "/dr-ui/level-one/",
-        "title": "Top page",
-      },
-      Object {
-        "path": "/dr-ui/level-one/b/",
-        "title": "Page b",
-      },
-    ],
-  },
-  "hierarchy": Object {
-    "/dr-ui/level-one/": Object {
-      "parent": "/dr-ui/level-one/",
-      "title": "Top page",
-    },
-    "/dr-ui/level-one/a/": Object {
-      "parent": "/dr-ui/level-one/",
-      "title": "Top page",
-    },
-    "/dr-ui/level-one/b/": Object {
-      "parent": "/dr-ui/level-one/",
-      "title": "Top page",
-    },
-  },
-  "navTabs": Array [
-    Object {
-      "href": "/dr-ui/level-one/",
-      "id": "/dr-ui/level-one/",
-      "label": "Top page",
-    },
-  ],
-}
-`;
-
 exports[`buildNavigation multi structure 1`] = `
 Object {
   "beta/navigation": Object {
@@ -600,64 +562,19 @@ Object {
 
 exports[`buildNavigation single structure 1`] = `
 Object {
-  "accordion": Object {
-    "/dr-ui/": Array [
-      Object {
-        "path": "/dr-ui/",
-        "title": "Components",
-      },
-      Object {
-        "path": "/dr-ui/examples/example-2/",
-        "title": "Example 2",
-      },
-      Object {
-        "path": "/dr-ui/guides/",
-        "title": "Guides",
-      },
-      Object {
-        "path": "/dr-ui/guides/batfish-helpers/",
-        "title": "Batfish helpers",
-      },
-      Object {
-        "path": "/dr-ui/guides/split-pages/",
-        "title": "Split pages",
-      },
-      Object {
-        "path": "/dr-ui/examples/",
-        "title": "Examples",
-      },
-      Object {
-        "path": "/dr-ui/changelog/",
-        "title": undefined,
-      },
-      Object {
-        "path": "/dr-ui/examples/example-3/",
-        "title": "Example 3",
-      },
-      Object {
-        "path": "/dr-ui/examples/example-1/",
-        "title": "Example 1",
-      },
-    ],
-    "/dr-ui/guides/": Array [
-      Object {
-        "path": "/dr-ui/guides/",
-        "title": "Guides",
-      },
-      Object {
-        "path": "/dr-ui/guides/batfish-helpers/",
-        "title": "Batfish helpers",
-      },
-      Object {
-        "path": "/dr-ui/guides/split-pages/",
-        "title": "Split pages",
-      },
-    ],
-  },
+  "accordion": Object {},
   "hierarchy": Object {
     "/dr-ui/": Object {
       "parent": "/dr-ui/",
       "title": "Components",
+    },
+    "/dr-ui/404/": Object {
+      "parent": "/dr-ui/",
+      "title": "Components",
+    },
+    "/dr-ui/batfish-helpers/": Object {
+      "parent": "/dr-ui/batfish-helpers/",
+      "title": "Batfish helpers",
     },
     "/dr-ui/changelog/": Object {
       "parent": "/dr-ui/",
@@ -679,18 +596,6 @@ Object {
       "parent": "/dr-ui/examples/",
       "title": "Examples",
     },
-    "/dr-ui/guides/": Object {
-      "parent": "/dr-ui/guides/",
-      "title": "Guides",
-    },
-    "/dr-ui/guides/batfish-helpers/": Object {
-      "parent": "/dr-ui/guides/",
-      "title": "Guides",
-    },
-    "/dr-ui/guides/split-pages/": Object {
-      "parent": "/dr-ui/guides/",
-      "title": "Guides",
-    },
   },
   "navTabs": Array [
     Object {
@@ -699,9 +604,9 @@ Object {
       "label": "Components",
     },
     Object {
-      "href": "/dr-ui/guides/",
-      "id": "/dr-ui/guides/",
-      "label": "Guides",
+      "href": "/dr-ui/batfish-helpers/",
+      "id": "/dr-ui/batfish-helpers/",
+      "label": "Batfish helpers",
     },
     Object {
       "href": "/dr-ui/examples/",
