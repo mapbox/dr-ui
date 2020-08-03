@@ -4,6 +4,8 @@ description: This is subsection three.
 contentType: API
 order: 3
 splitPage: true
+products:
+  - Documentation
 ---
 
 ## Tasmanian devil

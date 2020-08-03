@@ -7,6 +7,8 @@ prependJs:
   - "import App from '../app.js'"
   - "const version = require('../../../package.json').version;"
 layout: example
+products:
+  - Documentation
 hideSubItems: false
 showCards: false
 includeFilterBar: true

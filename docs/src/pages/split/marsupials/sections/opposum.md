@@ -4,6 +4,8 @@ description: This is subsection two.
 contentType: API
 order: 2
 splitPage: true
+products:
+  - Documentation
 ---
 
 ## Opossum

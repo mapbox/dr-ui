@@ -88,6 +88,10 @@ Object {
           "contentType": "API",
           "description": "This is subsection one.",
           "order": 1,
+          "products": Array [
+            "Documentation",
+            "Mapbox fundamentals",
+          ],
           "splitPage": true,
           "tag": "beta",
           "title": "Kangaroos",
@@ -117,6 +121,12 @@ Object {
         ],
         "order": 1,
         "path": "/dr-ui/split/marsupials/sections/kangaroos/",
+        "platforms": undefined,
+        "products": Array [
+          "Documentation",
+          "Mapbox fundamentals",
+        ],
+        "services": undefined,
         "slug": "kangaroos",
       },
       Object {
@@ -125,6 +135,9 @@ Object {
           "contentType": "API",
           "description": "This is subsection two.",
           "order": 2,
+          "products": Array [
+            "Documentation",
+          ],
           "splitPage": true,
           "title": "Opossum",
         },
@@ -162,6 +175,11 @@ Object {
         ],
         "order": 2,
         "path": "/dr-ui/split/marsupials/sections/opposum/",
+        "platforms": undefined,
+        "products": Array [
+          "Documentation",
+        ],
+        "services": undefined,
         "slug": "opossum",
       },
       Object {
@@ -170,6 +188,9 @@ Object {
           "contentType": "API",
           "description": "This is subsection three.",
           "order": 3,
+          "products": Array [
+            "Documentation",
+          ],
           "splitPage": true,
           "title": "Tasmanian devil",
         },
@@ -192,10 +213,21 @@ Object {
         ],
         "order": 3,
         "path": "/dr-ui/split/marsupials/sections/tasmanian/",
+        "platforms": undefined,
+        "products": Array [
+          "Documentation",
+        ],
+        "services": undefined,
         "slug": "tasmanian-devil",
       },
     ],
     "path": "/dr-ui/split/marsupials/",
+    "platforms": Array [],
+    "products": Array [
+      "Documentation",
+      "Mapbox fundamentals",
+    ],
+    "services": Array [],
   },
   "/dr-ui/split/second/": Object {
     "filePath": "./docs/src/pages/split/second/index.js",
@@ -247,6 +279,9 @@ Object {
           "contentType": "API",
           "description": "This is subsection one.",
           "order": 1,
+          "products": Array [
+            "Documentation",
+          ],
           "splitPage": true,
           "title": "Sub one",
         },
@@ -264,6 +299,11 @@ Object {
         ],
         "order": 1,
         "path": "/dr-ui/split/second/sections/sub-one/",
+        "platforms": undefined,
+        "products": Array [
+          "Documentation",
+        ],
+        "services": undefined,
         "slug": "sub-one",
       },
       Object {
@@ -272,6 +312,9 @@ Object {
           "contentType": "API",
           "description": "This is subsection two.",
           "order": 2,
+          "products": Array [
+            "Documentation",
+          ],
           "splitPage": true,
           "title": "Sub two",
         },
@@ -289,6 +332,11 @@ Object {
         ],
         "order": 2,
         "path": "/dr-ui/split/second/sections/sub-two/",
+        "platforms": undefined,
+        "products": Array [
+          "Documentation",
+        ],
+        "services": undefined,
         "slug": "sub-two",
       },
       Object {
@@ -297,6 +345,9 @@ Object {
           "contentType": "API",
           "description": "This is subsection three.",
           "order": 3,
+          "products": Array [
+            "Documentation",
+          ],
           "splitPage": true,
           "title": "Sub three",
         },
@@ -314,10 +365,20 @@ Object {
         ],
         "order": 3,
         "path": "/dr-ui/split/second/sections/sub-three/",
+        "platforms": undefined,
+        "products": Array [
+          "Documentation",
+        ],
+        "services": undefined,
         "slug": "sub-three",
       },
     ],
     "path": "/dr-ui/split/second/",
+    "platforms": Array [],
+    "products": Array [
+      "Documentation",
+    ],
+    "services": Array [],
   },
   "/dr-ui/split/third/": Object {
     "filePath": "./docs/src/pages/split/third/index.js",
@@ -369,6 +430,9 @@ Object {
           "contentType": "API",
           "description": "This is subsection one.",
           "order": 1,
+          "products": Array [
+            "Documentation",
+          ],
           "splitPage": true,
           "title": "Sub one",
         },
@@ -386,6 +450,11 @@ Object {
         ],
         "order": 1,
         "path": "/dr-ui/split/third/sections/sub-one/",
+        "platforms": undefined,
+        "products": Array [
+          "Documentation",
+        ],
+        "services": undefined,
         "slug": "sub-one",
       },
       Object {
@@ -394,6 +463,9 @@ Object {
           "contentType": "API",
           "description": "This is subsection two.",
           "order": 2,
+          "products": Array [
+            "Documentation",
+          ],
           "splitPage": true,
           "title": "Sub two",
         },
@@ -411,6 +483,11 @@ Object {
         ],
         "order": 2,
         "path": "/dr-ui/split/third/sections/sub-two/",
+        "platforms": undefined,
+        "products": Array [
+          "Documentation",
+        ],
+        "services": undefined,
         "slug": "sub-two",
       },
       Object {
@@ -419,6 +496,9 @@ Object {
           "contentType": "API",
           "description": "This is subsection three.",
           "order": 3,
+          "products": Array [
+            "Documentation",
+          ],
           "splitPage": true,
           "title": "Sub three",
         },
@@ -436,10 +516,20 @@ Object {
         ],
         "order": 3,
         "path": "/dr-ui/split/third/sections/sub-three/",
+        "platforms": undefined,
+        "products": Array [
+          "Documentation",
+        ],
+        "services": undefined,
         "slug": "sub-three",
       },
     ],
     "path": "/dr-ui/split/third/",
+    "platforms": Array [],
+    "products": Array [
+      "Documentation",
+    ],
+    "services": Array [],
   },
 }
 `;

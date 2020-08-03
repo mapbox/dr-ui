@@ -5,6 +5,8 @@ contentType: API
 layout: accordion
 order: 1
 navOrder: 4
+products:
+  - Documentation
 prependJs:
   - "import Note from '../../../../src/components/note/note';"
   - "import MainPage from '!raw-loader!./marsupials/index.js';"

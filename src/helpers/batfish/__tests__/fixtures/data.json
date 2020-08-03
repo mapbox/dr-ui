@@ -7,6 +7,7 @@
         "title": "Batfish helpers",
         "description": "Batfish data selector functions to build navigation and topic datasets.",
         "navOrder": 2,
+        "products": ["Documentation"],
         "prependJs": [
           "import navigation from '@mapbox/batfish/data/navigation';",
           "import topics from '@mapbox/batfish/data/topics';",
@@ -27,6 +28,7 @@
           "const version = require('../../../package.json').version;"
         ],
         "layout": "example",
+        "products": ["Documentation"],
         "hideSubItems": false,
         "showCards": false,
         "includeFilterBar": true,
@@ -44,7 +46,8 @@
         "contentType": "example",
         "topics": ["Navigation"],
         "thumbnail": "header-image",
-        "layout": "example"
+        "layout": "example",
+        "products": ["Documentation"]
       }
     },
     {
@@ -56,7 +59,8 @@
         "contentType": "example",
         "topics": ["Navigation"],
         "thumbnail": "header-image",
-        "layout": "example"
+        "layout": "example",
+        "products": ["Documentation"]
       }
     },
     {
@@ -68,7 +72,8 @@
         "contentType": "example",
         "topics": ["Navigation", "Geocoding"],
         "thumbnail": "header-image",
-        "layout": "example"
+        "layout": "example",
+        "products": ["Documentation"]
       }
     },
     {
@@ -81,7 +86,8 @@
         "language": ["JavaScript"],
         "navOrder": 3,
         "layout": "example",
-        "fullWidthCards": true
+        "fullWidthCards": true,
+        "products": ["Documentation"]
       }
     },
     {
@@ -94,6 +100,7 @@
         "layout": "accordion",
         "order": 1,
         "navOrder": 4,
+        "products": ["Documentation"],
         "prependJs": [
           "import Note from '../../../../src/components/note/note';",
           "import MainPage from '!raw-loader!./marsupials/index.js';",
@@ -119,16 +126,112 @@
       }
     },
     {
-      "filePath": "./docs/src/pages/split/second/index.js",
-      "path": "/dr-ui/split/second/",
+      "filePath": "./docs/src/pages/split/marsupials/sections/kangaroos.md",
+      "path": "/dr-ui/split/marsupials/sections/kangaroos/",
       "frontMatter": {
-        "title": "Second section",
-        "description": "This is the second section.",
-        "splitPages": true,
-        "order": 3,
-        "layout": "accordion",
+        "title": "Kangaroos",
+        "description": "This is subsection one.",
         "contentType": "API",
-        "hideFeedback": true
+        "order": 1,
+        "splitPage": true,
+        "tag": "beta",
+        "products": ["Documentation", "Mapbox fundamentals"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/split/marsupials/sections/opposum.md",
+      "path": "/dr-ui/split/marsupials/sections/opposum/",
+      "frontMatter": {
+        "title": "Opossum",
+        "description": "This is subsection two.",
+        "contentType": "API",
+        "order": 2,
+        "splitPage": true,
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/split/marsupials/sections/tasmanian.md",
+      "path": "/dr-ui/split/marsupials/sections/tasmanian/",
+      "frontMatter": {
+        "title": "Tasmanian devil",
+        "description": "This is subsection three.",
+        "contentType": "API",
+        "order": 3,
+        "splitPage": true,
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/split/third/sections/sub-one.md",
+      "path": "/dr-ui/split/third/sections/sub-one/",
+      "frontMatter": {
+        "title": "Sub one",
+        "description": "This is subsection one.",
+        "contentType": "API",
+        "order": 1,
+        "splitPage": true,
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/split/third/sections/sub-three.md",
+      "path": "/dr-ui/split/third/sections/sub-three/",
+      "frontMatter": {
+        "title": "Sub three",
+        "description": "This is subsection three.",
+        "contentType": "API",
+        "order": 3,
+        "splitPage": true,
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/split/third/sections/sub-two.md",
+      "path": "/dr-ui/split/third/sections/sub-two/",
+      "frontMatter": {
+        "title": "Sub two",
+        "description": "This is subsection two.",
+        "contentType": "API",
+        "order": 2,
+        "splitPage": true,
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/split/second/sections/sub-one.md",
+      "path": "/dr-ui/split/second/sections/sub-one/",
+      "frontMatter": {
+        "title": "Sub one",
+        "description": "This is subsection one.",
+        "contentType": "API",
+        "order": 1,
+        "splitPage": true,
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/split/second/sections/sub-three.md",
+      "path": "/dr-ui/split/second/sections/sub-three/",
+      "frontMatter": {
+        "title": "Sub three",
+        "description": "This is subsection three.",
+        "contentType": "API",
+        "order": 3,
+        "splitPage": true,
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/split/second/sections/sub-two.md",
+      "path": "/dr-ui/split/second/sections/sub-two/",
+      "frontMatter": {
+        "title": "Sub two",
+        "description": "This is subsection two.",
+        "contentType": "API",
+        "order": 2,
+        "splitPage": true,
+        "products": ["Documentation"]
       }
     },
     {
@@ -145,103 +248,16 @@
       }
     },
     {
-      "filePath": "./docs/src/pages/split/marsupials/sections/kangaroos.md",
-      "path": "/dr-ui/split/marsupials/sections/kangaroos/",
+      "filePath": "./docs/src/pages/split/second/index.js",
+      "path": "/dr-ui/split/second/",
       "frontMatter": {
-        "title": "Kangaroos",
-        "description": "This is subsection one.",
-        "contentType": "API",
-        "order": 1,
-        "splitPage": true,
-        "tag": "beta"
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/split/marsupials/sections/opposum.md",
-      "path": "/dr-ui/split/marsupials/sections/opposum/",
-      "frontMatter": {
-        "title": "Opossum",
-        "description": "This is subsection two.",
-        "contentType": "API",
-        "order": 2,
-        "splitPage": true
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/split/marsupials/sections/tasmanian.md",
-      "path": "/dr-ui/split/marsupials/sections/tasmanian/",
-      "frontMatter": {
-        "title": "Tasmanian devil",
-        "description": "This is subsection three.",
-        "contentType": "API",
+        "title": "Second section",
+        "description": "This is the second section.",
+        "splitPages": true,
         "order": 3,
-        "splitPage": true
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/split/second/sections/sub-one.md",
-      "path": "/dr-ui/split/second/sections/sub-one/",
-      "frontMatter": {
-        "title": "Sub one",
-        "description": "This is subsection one.",
+        "layout": "accordion",
         "contentType": "API",
-        "order": 1,
-        "splitPage": true
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/split/second/sections/sub-three.md",
-      "path": "/dr-ui/split/second/sections/sub-three/",
-      "frontMatter": {
-        "title": "Sub three",
-        "description": "This is subsection three.",
-        "contentType": "API",
-        "order": 3,
-        "splitPage": true
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/split/second/sections/sub-two.md",
-      "path": "/dr-ui/split/second/sections/sub-two/",
-      "frontMatter": {
-        "title": "Sub two",
-        "description": "This is subsection two.",
-        "contentType": "API",
-        "order": 2,
-        "splitPage": true
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/split/third/sections/sub-one.md",
-      "path": "/dr-ui/split/third/sections/sub-one/",
-      "frontMatter": {
-        "title": "Sub one",
-        "description": "This is subsection one.",
-        "contentType": "API",
-        "order": 1,
-        "splitPage": true
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/split/third/sections/sub-three.md",
-      "path": "/dr-ui/split/third/sections/sub-three/",
-      "frontMatter": {
-        "title": "Sub three",
-        "description": "This is subsection three.",
-        "contentType": "API",
-        "order": 3,
-        "splitPage": true
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/split/third/sections/sub-two.md",
-      "path": "/dr-ui/split/third/sections/sub-two/",
-      "frontMatter": {
-        "title": "Sub two",
-        "description": "This is subsection two.",
-        "contentType": "API",
-        "order": 2,
-        "splitPage": true
+        "hideFeedback": true
       }
     },
     {

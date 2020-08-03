@@ -4,6 +4,8 @@ description: This is subsection one.
 contentType: API
 order: 1
 splitPage: true
+products:
+  - Documentation
 ---
 
 ## Sub one

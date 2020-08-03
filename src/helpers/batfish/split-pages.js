@@ -26,7 +26,10 @@ function buildSplitPages(data) {
     obj[page.path] = {
       ...page,
       pages: splitPages,
-      headings: combineHeadings(splitPages)
+      headings: combine(splitPages, 'headings'),
+      products: combine(splitPages, 'products'),
+      services: combine(splitPages, 'services'),
+      platforms: combine(splitPages, 'platforms')
     };
     return obj;
   }, {});
@@ -39,16 +42,20 @@ function findSplitPages(data, page) {
       ...page,
       headings: getHeadings(page),
       slug: slugger.slug(page.frontMatter.title),
+      products: page.frontMatter.products,
+      services: page.frontMatter.services,
+      platforms: page.frontMatter.platforms,
       order: page.frontMatter.order // pull out order for easy sorting
     }))
     .sort(sortBy('order'));
 }
 
-function combineHeadings(pages) {
-  return pages.reduce((arr, page) => {
-    if (page.headings) arr = arr.concat(page.headings);
+function combine(pages, field) {
+  const combinedArray = pages.reduce((arr, page) => {
+    if (page[field]) arr = arr.concat(page[field]);
     return arr;
   }, []);
+  return uniq(combinedArray);
 }
 
 function getHeadings(page) {
@@ -74,6 +81,14 @@ function getHeadings(page) {
   });
   slugger.reset(); // reset slugger
   return headings;
+}
+
+// return a unique array
+function uniq(arr) {
+  if (!arr) return [];
+  return arr.filter((elem, index) => {
+    return arr.indexOf(elem) === index;
+  });
 }
 
 module.exports = {

@@ -635,12 +635,12 @@ Object {
         "title": "Marsupials",
       },
       Object {
-        "path": "/dr-ui/split/second/",
-        "title": "Second section",
-      },
-      Object {
         "path": "/dr-ui/split/third/",
         "title": "Third section",
+      },
+      Object {
+        "path": "/dr-ui/split/second/",
+        "title": "Second section",
       },
       Object {
         "path": "/dr-ui/examples/",
