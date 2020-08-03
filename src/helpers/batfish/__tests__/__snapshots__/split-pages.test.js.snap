@@ -20,6 +20,16 @@ Object {
         "text": "Introduction to split pages",
       },
       Object {
+        "level": 3,
+        "slug": "set-up",
+        "text": "Set up",
+      },
+      Object {
+        "level": 3,
+        "slug": "current-uses-cases",
+        "text": "Current uses cases",
+      },
+      Object {
         "level": 2,
         "slug": "how-to-use-split-pages",
         "text": "How to use split pages",
@@ -70,6 +80,16 @@ Object {
             "level": 2,
             "slug": "introduction-to-split-pages",
             "text": "Introduction to split pages",
+          },
+          Object {
+            "level": 3,
+            "slug": "set-up",
+            "text": "Set up",
+          },
+          Object {
+            "level": 3,
+            "slug": "current-uses-cases",
+            "text": "Current uses cases",
           },
         ],
         "order": 1,

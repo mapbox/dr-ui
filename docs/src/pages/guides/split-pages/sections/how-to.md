@@ -19,49 +19,52 @@ prependJs:
 
 ### 1. Create the main page
 
-- You must add `splitPages: true` to the frontMatter.
+The main page is where all the partial markdown files will be combined and displayed.
+
+- Create an `.js` file. The main file must be a JavaScript file to make sure the scroll spy on the sidebar works correctly.
+- Add `splitPages: true` to the frontMatter.
 - Add `order` to designate the order of appears in the `NavgiationAccordion`.
 - Import each markdown file in the main page.
 - Import the splitPages function to override the page's headings.
-- It's usually a good idea to set `hideFeedback: true`.
+- Set `hideFeedback: true` in the frontmatter of the main page (usually).
 
-{{ <div className="mb18"><CodeSnippet code={`${MainPage}`} highlighter={() => highlightJsx} filename="src/pages/guides/sections/index.js" /></div>}}
-
-{{ <Note> }}
-The main file must be a JavaScript file to make sure the scroll spy on the sidebar works correctly.
-{{</Note>}}
+{{ <div className="mb18"><CodeSnippet code={`${MainPage}`} highlighter={() => highlightJsx} filename="src/pages/guides/split-pages/index.js" /></div>}}
 
 ### 2. Create the split pages
+
+You must save the partial markdown files in a folder adjacent to the main JavaScript page.
 
 - Create a folder, `sections`, adjacent to the main page.
 - Create markdown file for each page.
 - Add `splitPage: true` to the frontMatter.
 - Add `order` to designate the order the page appears.
 
-{{ <CodeSnippet code={`${SubOne}`} highlighter={() => highlightHtml} filename="src/pages/guides/sections/intro.md" />}}
+{{ <CodeSnippet code={`${SubOne}`} highlighter={() => highlightHtml} filename="src/pages/guides/split-pages/sections/intro.md" />}}
 
 ### 3. Create split-page-shell
 
-You will need a wrapper to handle each split page and update the batfish.config.js to use that page shell:
+You will need a wrapper to handle each split page, this is usually called `src/components/split-page-shell.js`.
 
-{{ <CodeSnippet code={`jsxtremeMarkdownOptions: {
-getWrapper: resource => {
-  if (/\/sections\//.test(resource)) {
-    return path.join(
-      __dirname,
-      './src/components/split-page-shell.js'
-    );
-  } else {
-    return path.join(__dirname, 'src/components/page-shell.js')
-  }
-}`} highlighter={() => highlightJsx} filename="batfish.config.js" />}}
-
-In `split-page-shell`, it's a usually a good idea to add the Feedback module with the `section` prop set to the title of the split page.
+- Add the Feedback module with the `section` prop set to the title of the split page (usually).
 
 {{ <CodeSnippet code={`${SplitPageShell}`} highlighter={() => highlightJsx} filename="src/components/split-page-shell.js" />}}
 
+You will need to update `batfish.config.js` to initiate the new wrapper on the markdown partial files:
+
+{{ <CodeSnippet code={`jsxtremeMarkdownOptions: {
+getWrapper: resource => {
+ if (/\/sections\//.test(resource)) {
+   return path.join(
+     __dirname,
+     './src/components/split-page-shell.js'
+   );
+ } else {
+   return path.join(__dirname, 'src/components/page-shell.js')
+ }
+}`} highlighter={() => highlightJsx} filename="batfish.config.js" />}}
+
 ### 4. Create redirects
 
-You will need to create redirects in [subdomain-docs](https://github.com/mapbox/subdomain-docs).
+You will need to create redirects in [subdomain-docs](https://github.com/mapbox/subdomain-docs) to redirect the partial files to the main file.
 
-See [Redirects for Studio Manual reference "sections" pages #75](https://github.com/mapbox/subdomain-docs/pull/75) for a similiar example.
+See [Redirects for Studio Manual reference "sections" pages #75](https://github.com/mapbox/subdomain-docs/pull/75) for a similar example.

@@ -13,6 +13,14 @@ prependJs:
 
 This pages is a demo of using split pages and steps on how to implement it on a site.
 
-To improve developer experience, we sometimes split a long page into multiple markdown files and then allow Batfish to combine them into a single page.
+To improve developer experience, we sometimes split a long page into multiple markdown files (also known as partial files) and then allow Batfish to combine them into a single page.
+
+### Set up
+
+- You will need to import the [`split-pages`](../batfish-helpers/#split-pages) Batfish helper in your site's `batfish.config.js` file.
+- All partial files must be in a folder adjacent to the main page. The steps in [How to use split pages](#how-to-use-split-pages) provides examples on how to structure your files.
+- Read through [the limitations of this pattern](#limitations).
+
+### Current uses cases
 
 This split pages pattern is used by API documentation, Studio Manual, and Accounts.
