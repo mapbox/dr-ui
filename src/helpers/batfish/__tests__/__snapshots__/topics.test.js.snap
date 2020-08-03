@@ -407,22 +407,6 @@ Object {
             "contentType": "example",
             "description": "Replace me.",
             "layout": "example",
-            "path": "/dr-ui/examples/example-1/",
-            "products": Array [
-              "Documentation",
-            ],
-            "text": "Example 1",
-            "thumbnail": "header-image",
-            "title": "Example 1",
-            "topics": Array [
-              "Navigation",
-            ],
-            "url": "/dr-ui/examples/example-1/",
-          },
-          Object {
-            "contentType": "example",
-            "description": "Replace me.",
-            "layout": "example",
             "path": "/dr-ui/examples/example-2/",
             "products": Array [
               "Documentation",
@@ -451,6 +435,22 @@ Object {
               "Geocoding",
             ],
             "url": "/dr-ui/examples/example-3/",
+          },
+          Object {
+            "contentType": "example",
+            "description": "Replace me.",
+            "layout": "example",
+            "path": "/dr-ui/examples/example-1/",
+            "products": Array [
+              "Documentation",
+            ],
+            "text": "Example 1",
+            "thumbnail": "header-image",
+            "title": "Example 1",
+            "topics": Array [
+              "Navigation",
+            ],
+            "url": "/dr-ui/examples/example-1/",
           },
         ],
         "url": "/dr-ui/#navigation",
@@ -505,22 +505,6 @@ Object {
             "contentType": "example",
             "description": "Replace me.",
             "layout": "example",
-            "path": "/dr-ui/examples/example-1/",
-            "products": Array [
-              "Documentation",
-            ],
-            "text": "Example 1",
-            "thumbnail": "header-image",
-            "title": "Example 1",
-            "topics": Array [
-              "Navigation",
-            ],
-            "url": "/dr-ui/examples/example-1/",
-          },
-          Object {
-            "contentType": "example",
-            "description": "Replace me.",
-            "layout": "example",
             "path": "/dr-ui/examples/example-2/",
             "products": Array [
               "Documentation",
@@ -549,6 +533,22 @@ Object {
               "Geocoding",
             ],
             "url": "/dr-ui/examples/example-3/",
+          },
+          Object {
+            "contentType": "example",
+            "description": "Replace me.",
+            "layout": "example",
+            "path": "/dr-ui/examples/example-1/",
+            "products": Array [
+              "Documentation",
+            ],
+            "text": "Example 1",
+            "thumbnail": "header-image",
+            "title": "Example 1",
+            "topics": Array [
+              "Navigation",
+            ],
+            "url": "/dr-ui/examples/example-1/",
           },
         ],
         "url": "/dr-ui/examples/#navigation",
@@ -612,22 +612,6 @@ Object {
             "contentType": "example",
             "description": "Replace me.",
             "layout": "example",
-            "path": "/dr-ui/examples/example-1/",
-            "products": Array [
-              "Documentation",
-            ],
-            "text": "Example 1",
-            "thumbnail": "header-image",
-            "title": "Example 1",
-            "topics": Array [
-              "Navigation",
-            ],
-            "url": "/dr-ui/examples/example-1/",
-          },
-          Object {
-            "contentType": "example",
-            "description": "Replace me.",
-            "layout": "example",
             "path": "/dr-ui/examples/example-2/",
             "products": Array [
               "Documentation",
@@ -656,6 +640,22 @@ Object {
               "Geocoding",
             ],
             "url": "/dr-ui/examples/example-3/",
+          },
+          Object {
+            "contentType": "example",
+            "description": "Replace me.",
+            "layout": "example",
+            "path": "/dr-ui/examples/example-1/",
+            "products": Array [
+              "Documentation",
+            ],
+            "text": "Example 1",
+            "thumbnail": "header-image",
+            "title": "Example 1",
+            "topics": Array [
+              "Navigation",
+            ],
+            "url": "/dr-ui/examples/example-1/",
           },
         ],
         "url": "/dr-ui/#navigation",
@@ -710,22 +710,6 @@ Object {
             "contentType": "example",
             "description": "Replace me.",
             "layout": "example",
-            "path": "/dr-ui/examples/example-1/",
-            "products": Array [
-              "Documentation",
-            ],
-            "text": "Example 1",
-            "thumbnail": "header-image",
-            "title": "Example 1",
-            "topics": Array [
-              "Navigation",
-            ],
-            "url": "/dr-ui/examples/example-1/",
-          },
-          Object {
-            "contentType": "example",
-            "description": "Replace me.",
-            "layout": "example",
             "path": "/dr-ui/examples/example-2/",
             "products": Array [
               "Documentation",
@@ -754,6 +738,22 @@ Object {
               "Geocoding",
             ],
             "url": "/dr-ui/examples/example-3/",
+          },
+          Object {
+            "contentType": "example",
+            "description": "Replace me.",
+            "layout": "example",
+            "path": "/dr-ui/examples/example-1/",
+            "products": Array [
+              "Documentation",
+            ],
+            "text": "Example 1",
+            "thumbnail": "header-image",
+            "title": "Example 1",
+            "topics": Array [
+              "Navigation",
+            ],
+            "url": "/dr-ui/examples/example-1/",
           },
         ],
         "url": "/dr-ui/examples/#navigation",

@@ -603,66 +603,54 @@ Object {
   "accordion": Object {
     "/dr-ui/": Array [
       Object {
-        "path": "/dr-ui/batfish-helpers/",
-        "title": "Batfish helpers",
-      },
-      Object {
-        "path": "/dr-ui/changelog/",
-        "title": undefined,
-      },
-      Object {
-        "path": "/dr-ui/examples/example-1/",
-        "title": "Example 1",
+        "path": "/dr-ui/",
+        "title": "Components",
       },
       Object {
         "path": "/dr-ui/examples/example-2/",
         "title": "Example 2",
       },
       Object {
-        "path": "/dr-ui/examples/example-3/",
-        "title": "Example 3",
+        "path": "/dr-ui/guides/",
+        "title": "Guides",
       },
       Object {
-        "path": "/dr-ui/",
-        "title": "Components",
+        "path": "/dr-ui/guides/batfish-helpers/",
+        "title": "Batfish helpers",
       },
       Object {
-        "path": "/dr-ui/split/",
+        "path": "/dr-ui/guides/split-pages/",
         "title": "Split pages",
-      },
-      Object {
-        "path": "/dr-ui/split/marsupials/",
-        "title": "Marsupials",
-      },
-      Object {
-        "path": "/dr-ui/split/third/",
-        "title": "Third section",
-      },
-      Object {
-        "path": "/dr-ui/split/second/",
-        "title": "Second section",
       },
       Object {
         "path": "/dr-ui/examples/",
         "title": "Examples",
       },
+      Object {
+        "path": "/dr-ui/changelog/",
+        "title": undefined,
+      },
+      Object {
+        "path": "/dr-ui/examples/example-3/",
+        "title": "Example 3",
+      },
+      Object {
+        "path": "/dr-ui/examples/example-1/",
+        "title": "Example 1",
+      },
     ],
-    "/dr-ui/split/": Array [
+    "/dr-ui/guides/": Array [
       Object {
-        "path": "/dr-ui/split/",
+        "path": "/dr-ui/guides/",
+        "title": "Guides",
+      },
+      Object {
+        "path": "/dr-ui/guides/batfish-helpers/",
+        "title": "Batfish helpers",
+      },
+      Object {
+        "path": "/dr-ui/guides/split-pages/",
         "title": "Split pages",
-      },
-      Object {
-        "path": "/dr-ui/split/marsupials/",
-        "title": "Marsupials",
-      },
-      Object {
-        "path": "/dr-ui/split/second/",
-        "title": "Second section",
-      },
-      Object {
-        "path": "/dr-ui/split/third/",
-        "title": "Third section",
       },
     ],
   },
@@ -670,10 +658,6 @@ Object {
     "/dr-ui/": Object {
       "parent": "/dr-ui/",
       "title": "Components",
-    },
-    "/dr-ui/batfish-helpers/": Object {
-      "parent": "/dr-ui/batfish-helpers/",
-      "title": "Batfish helpers",
     },
     "/dr-ui/changelog/": Object {
       "parent": "/dr-ui/",
@@ -695,21 +679,17 @@ Object {
       "parent": "/dr-ui/examples/",
       "title": "Examples",
     },
-    "/dr-ui/split/": Object {
-      "parent": "/dr-ui/split/",
-      "title": "Split pages",
+    "/dr-ui/guides/": Object {
+      "parent": "/dr-ui/guides/",
+      "title": "Guides",
     },
-    "/dr-ui/split/marsupials/": Object {
-      "parent": "/dr-ui/split/",
-      "title": "Split pages",
+    "/dr-ui/guides/batfish-helpers/": Object {
+      "parent": "/dr-ui/guides/",
+      "title": "Guides",
     },
-    "/dr-ui/split/second/": Object {
-      "parent": "/dr-ui/split/",
-      "title": "Split pages",
-    },
-    "/dr-ui/split/third/": Object {
-      "parent": "/dr-ui/split/",
-      "title": "Split pages",
+    "/dr-ui/guides/split-pages/": Object {
+      "parent": "/dr-ui/guides/",
+      "title": "Guides",
     },
   },
   "navTabs": Array [
@@ -719,19 +699,14 @@ Object {
       "label": "Components",
     },
     Object {
-      "href": "/dr-ui/batfish-helpers/",
-      "id": "/dr-ui/batfish-helpers/",
-      "label": "Batfish helpers",
+      "href": "/dr-ui/guides/",
+      "id": "/dr-ui/guides/",
+      "label": "Guides",
     },
     Object {
       "href": "/dr-ui/examples/",
       "id": "/dr-ui/examples/",
       "label": "Examples",
-    },
-    Object {
-      "href": "/dr-ui/split/",
-      "id": "/dr-ui/split/",
-      "label": "Split pages",
     },
   ],
 }
