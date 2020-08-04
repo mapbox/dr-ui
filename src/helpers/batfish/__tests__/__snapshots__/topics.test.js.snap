@@ -393,9 +393,6 @@ Object {
       "import App from '../app.js'",
       "const version = require('../../../package.json').version;",
     ],
-    "products": Array [
-      "Documentation",
-    ],
     "showCards": false,
     "title": "Components",
     "topics": Array [
@@ -408,9 +405,6 @@ Object {
             "description": "Replace me.",
             "layout": "example",
             "path": "/dr-ui/examples/example-1/",
-            "products": Array [
-              "Documentation",
-            ],
             "text": "Example 1",
             "thumbnail": "header-image",
             "title": "Example 1",
@@ -424,9 +418,6 @@ Object {
             "description": "Replace me.",
             "layout": "example",
             "path": "/dr-ui/examples/example-2/",
-            "products": Array [
-              "Documentation",
-            ],
             "text": "Example 2",
             "thumbnail": "header-image",
             "title": "Example 2",
@@ -440,9 +431,6 @@ Object {
             "description": "Replace me.",
             "layout": "example",
             "path": "/dr-ui/examples/example-3/",
-            "products": Array [
-              "Documentation",
-            ],
             "text": "Example 3",
             "thumbnail": "header-image",
             "title": "Example 3",
@@ -464,9 +452,6 @@ Object {
             "description": "Replace me.",
             "layout": "example",
             "path": "/dr-ui/examples/example-3/",
-            "products": Array [
-              "Documentation",
-            ],
             "text": "Example 3",
             "thumbnail": "header-image",
             "title": "Example 3",
@@ -492,9 +477,6 @@ Object {
     "layout": "example",
     "navOrder": 3,
     "path": "/dr-ui/examples/",
-    "products": Array [
-      "Documentation",
-    ],
     "title": "Examples",
     "topics": Array [
       Object {
@@ -506,9 +488,6 @@ Object {
             "description": "Replace me.",
             "layout": "example",
             "path": "/dr-ui/examples/example-1/",
-            "products": Array [
-              "Documentation",
-            ],
             "text": "Example 1",
             "thumbnail": "header-image",
             "title": "Example 1",
@@ -522,9 +501,6 @@ Object {
             "description": "Replace me.",
             "layout": "example",
             "path": "/dr-ui/examples/example-2/",
-            "products": Array [
-              "Documentation",
-            ],
             "text": "Example 2",
             "thumbnail": "header-image",
             "title": "Example 2",
@@ -538,9 +514,6 @@ Object {
             "description": "Replace me.",
             "layout": "example",
             "path": "/dr-ui/examples/example-3/",
-            "products": Array [
-              "Documentation",
-            ],
             "text": "Example 3",
             "thumbnail": "header-image",
             "title": "Example 3",
@@ -562,9 +535,6 @@ Object {
             "description": "Replace me.",
             "layout": "example",
             "path": "/dr-ui/examples/example-3/",
-            "products": Array [
-              "Documentation",
-            ],
             "text": "Example 3",
             "thumbnail": "header-image",
             "title": "Example 3",
@@ -598,9 +568,6 @@ Object {
       "import App from '../app.js'",
       "const version = require('../../../package.json').version;",
     ],
-    "products": Array [
-      "Documentation",
-    ],
     "showCards": false,
     "title": "Components",
     "topics": Array [
@@ -613,9 +580,6 @@ Object {
             "description": "Replace me.",
             "layout": "example",
             "path": "/dr-ui/examples/example-1/",
-            "products": Array [
-              "Documentation",
-            ],
             "text": "Example 1",
             "thumbnail": "header-image",
             "title": "Example 1",
@@ -629,9 +593,6 @@ Object {
             "description": "Replace me.",
             "layout": "example",
             "path": "/dr-ui/examples/example-2/",
-            "products": Array [
-              "Documentation",
-            ],
             "text": "Example 2",
             "thumbnail": "header-image",
             "title": "Example 2",
@@ -645,9 +606,6 @@ Object {
             "description": "Replace me.",
             "layout": "example",
             "path": "/dr-ui/examples/example-3/",
-            "products": Array [
-              "Documentation",
-            ],
             "text": "Example 3",
             "thumbnail": "header-image",
             "title": "Example 3",
@@ -669,9 +627,6 @@ Object {
             "description": "Replace me.",
             "layout": "example",
             "path": "/dr-ui/examples/example-3/",
-            "products": Array [
-              "Documentation",
-            ],
             "text": "Example 3",
             "thumbnail": "header-image",
             "title": "Example 3",
@@ -697,9 +652,6 @@ Object {
     "layout": "example",
     "navOrder": 3,
     "path": "/dr-ui/examples/",
-    "products": Array [
-      "Documentation",
-    ],
     "title": "Examples",
     "topics": Array [
       Object {
@@ -711,9 +663,6 @@ Object {
             "description": "Replace me.",
             "layout": "example",
             "path": "/dr-ui/examples/example-1/",
-            "products": Array [
-              "Documentation",
-            ],
             "text": "Example 1",
             "thumbnail": "header-image",
             "title": "Example 1",
@@ -727,9 +676,6 @@ Object {
             "description": "Replace me.",
             "layout": "example",
             "path": "/dr-ui/examples/example-2/",
-            "products": Array [
-              "Documentation",
-            ],
             "text": "Example 2",
             "thumbnail": "header-image",
             "title": "Example 2",
@@ -743,9 +689,6 @@ Object {
             "description": "Replace me.",
             "layout": "example",
             "path": "/dr-ui/examples/example-3/",
-            "products": Array [
-              "Documentation",
-            ],
             "text": "Example 3",
             "thumbnail": "header-image",
             "title": "Example 3",
@@ -767,9 +710,6 @@ Object {
             "description": "Replace me.",
             "layout": "example",
             "path": "/dr-ui/examples/example-3/",
-            "products": Array [
-              "Documentation",
-            ],
             "text": "Example 3",
             "thumbnail": "header-image",
             "title": "Example 3",

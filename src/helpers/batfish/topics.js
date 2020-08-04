@@ -86,14 +86,16 @@ function generateTopics(path, pages) {
       return arr;
     }, []);
 
-    set.push({
-      name: topic,
-      pages: subPages,
-      count: subPages.length,
-      url: `${path}#${slugify(topic, {
-        lower: true
-      })}`
-    });
+    if (topic && typeof topic === 'string') {
+      set.push({
+        name: topic,
+        pages: subPages,
+        count: subPages.length,
+        url: `${path}#${slugify(topic, {
+          lower: true
+        })}`
+      });
+    }
     return set;
   }, []);
 }

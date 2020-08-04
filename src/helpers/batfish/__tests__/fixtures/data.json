@@ -1,26 +1,9 @@
 {
   "pages": [
     {
-      "filePath": "./docs/src/pages/index.md",
-      "path": "/dr-ui/",
-      "frontMatter": {
-        "title": "Components",
-        "description": "UI components for Mapbox documentation projects.",
-        "prependJs": [
-          "import Note from '../../../src/components/note'",
-          "import OverviewHeader from '../../../src/components/overview-header'",
-          "import App from '../app.js'",
-          "const version = require('../../../package.json').version;"
-        ],
-        "layout": "example",
-        "products": ["Documentation"],
-        "hideSubItems": false,
-        "showCards": false,
-        "includeFilterBar": true,
-        "navOrder": 1,
-        "hideTitle": true,
-        "unProse": true
-      }
+      "filePath": "./docs/src/pages/changelog.md",
+      "path": "/dr-ui/changelog/",
+      "frontMatter": {}
     },
     {
       "filePath": "./docs/src/pages/examples/example-1.md",
@@ -31,8 +14,7 @@
         "contentType": "example",
         "topics": ["Navigation"],
         "thumbnail": "header-image",
-        "layout": "example",
-        "products": ["Documentation"]
+        "layout": "example"
       }
     },
     {
@@ -44,8 +26,19 @@
         "contentType": "example",
         "topics": ["Navigation"],
         "thumbnail": "header-image",
-        "layout": "example",
-        "products": ["Documentation"]
+        "layout": "example"
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/examples/example-3.md",
+      "path": "/dr-ui/examples/example-3/",
+      "frontMatter": {
+        "title": "Example 3",
+        "description": "Replace me.",
+        "contentType": "example",
+        "topics": ["Navigation", "Geocoding"],
+        "thumbnail": "header-image",
+        "layout": "example"
       }
     },
     {
@@ -58,8 +51,7 @@
         "language": ["JavaScript"],
         "navOrder": 3,
         "layout": "example",
-        "fullWidthCards": true,
-        "products": ["Documentation"]
+        "fullWidthCards": true
       }
     },
     {
@@ -70,25 +62,10 @@
         "description": "Batfish data selector functions to build navigation and topic datasets.",
         "order": 2,
         "layout": "accordion",
-        "hideFeedback": true,
         "prependJs": [
           "import navigation from '@mapbox/batfish/data/navigation';",
-          "import topics from '@mapbox/batfish/data/topics';",
-          "import splitPages from '@mapbox/batfish/data/split-pages';"
+          "import topics from '@mapbox/batfish/data/topics';"
         ]
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/examples/example-3.md",
-      "path": "/dr-ui/examples/example-3/",
-      "frontMatter": {
-        "title": "Example 3",
-        "description": "Replace me.",
-        "contentType": "example",
-        "topics": ["Navigation", "Geocoding"],
-        "thumbnail": "header-image",
-        "layout": "example",
-        "products": ["Documentation"]
       }
     },
     {
@@ -103,79 +80,25 @@
       }
     },
     {
-      "filePath": "./docs/src/pages/guides/split-pages/index.js",
-      "path": "/dr-ui/guides/split-pages/",
+      "filePath": "./docs/src/pages/index.md",
+      "path": "/dr-ui/",
       "frontMatter": {
-        "title": "Split pages",
-        "description": "This is the first section",
-        "splitPages": true,
-        "order": 3,
-        "layout": "accordion",
-        "contentType": "API",
-        "hideFeedback": true
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/guides/split-pages/sections/how-to.md",
-      "path": "/dr-ui/guides/split-pages/sections/how-to/",
-      "frontMatter": {
-        "title": "How to use spit pages",
-        "description": "An introduction to use split pages.",
-        "order": 2,
-        "splitPage": true,
-        "products": ["Mapbox fundamentals"],
+        "title": "Components",
+        "description": "UI components for Mapbox documentation projects.",
         "prependJs": [
-          "import Note from '../../../../../../src/components/note/note';",
-          "import MainPage from '!raw-loader!../index.js';",
-          "import SubOne from '!raw-loader!./intro.md';",
-          "import SplitPageShell from '!raw-loader!../../../../components/split-page-shell.js';",
-          "import CodeSnippet from '../../../../../../src/components/code-snippet/code-snippet';",
-          "import { highlightJsx } from '../../../../../../src/components/highlight/jsx';",
-          "import { highlightHtml } from '../../../../../../src/components/highlight/html';"
-        ]
+          "import Note from '../../../src/components/note'",
+          "import OverviewHeader from '../../../src/components/overview-header'",
+          "import App from '../app.js'",
+          "const version = require('../../../package.json').version;"
+        ],
+        "layout": "example",
+        "hideSubItems": false,
+        "showCards": false,
+        "includeFilterBar": true,
+        "navOrder": 1,
+        "hideTitle": true,
+        "unProse": true
       }
-    },
-    {
-      "filePath": "./docs/src/pages/guides/split-pages/sections/intro.md",
-      "path": "/dr-ui/guides/split-pages/sections/intro/",
-      "frontMatter": {
-        "title": "Introduction to split pages",
-        "description": "An introduction to use split pages.",
-        "order": 1,
-        "splitPage": true,
-        "products": ["Documentation"],
-        "prependJs": [
-          "import Note from '../../../../../../src/components/note/note';"
-        ]
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/guides/split-pages/sections/limitations.md",
-      "path": "/dr-ui/guides/split-pages/sections/limitations/",
-      "frontMatter": {
-        "title": "Limitations",
-        "description": "Limitations to the split page pattern.",
-        "order": 3,
-        "splitPage": true,
-        "products": ["Mapbox fundamentals"]
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/guides/split-pages/sections/tag-debugger.md",
-      "path": "/dr-ui/guides/split-pages/sections/tag-debugger/",
-      "frontMatter": {
-        "title": "Tag debugger",
-        "description": "Limitations to the split page pattern.",
-        "order": 4,
-        "splitPage": true,
-        "tag": "beta",
-        "products": ["Mapbox fundamentals"]
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/changelog.md",
-      "path": "/dr-ui/changelog/",
-      "frontMatter": {}
     },
     {
       "filePath": "./node_modules/@mapbox/batfish/dist/webpack/default-not-found.js",
