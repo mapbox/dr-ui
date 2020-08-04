@@ -615,20 +615,20 @@ Object {
         "title": "Example 2",
       },
       Object {
-        "path": "/dr-ui/examples/example-3/",
-        "title": "Example 3",
-      },
-      Object {
         "path": "/dr-ui/examples/",
         "title": "Examples",
       },
       Object {
-        "path": "/dr-ui/guides/",
-        "title": "Guides",
-      },
-      Object {
         "path": "/dr-ui/guides/batfish-helpers/",
         "title": "Batfish helpers",
+      },
+      Object {
+        "path": "/dr-ui/examples/example-3/",
+        "title": "Example 3",
+      },
+      Object {
+        "path": "/dr-ui/guides/",
+        "title": "Guides",
       },
       Object {
         "path": "/dr-ui/guides/split-pages/",

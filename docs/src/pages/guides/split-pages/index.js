@@ -14,6 +14,7 @@ import React from 'react';
 import Intro from './sections/intro.md';
 import HowTo from './sections/how-to.md';
 import Limitations from './sections/limitations.md';
+import TagDebugger from './sections/tag-debugger.md';
 import PageShell from '../../../components/page-shell';
 
 // Import splitPage function
@@ -29,6 +30,7 @@ export default class Page extends React.Component {
         <Intro location={location} />
         <HowTo location={location} />
         <Limitations location={location} />
+        <TagDebugger location={location} />
       </PageShell>
     );
   }

@@ -59,6 +59,12 @@ Object {
         "slug": "limitations",
         "text": "Limitations",
       },
+      Object {
+        "level": 2,
+        "slug": "tag-debugger",
+        "tag": "beta",
+        "text": "Tag debugger",
+      },
     ],
     "pages": Array [
       Object {
@@ -183,6 +189,35 @@ Object {
         ],
         "services": undefined,
         "slug": "limitations",
+      },
+      Object {
+        "filePath": "./docs/src/pages/guides/split-pages/sections/tag-debugger.md",
+        "frontMatter": Object {
+          "description": "Limitations to the split page pattern.",
+          "order": 4,
+          "products": Array [
+            "Mapbox fundamentals",
+          ],
+          "splitPage": true,
+          "tag": "beta",
+          "title": "Tag debugger",
+        },
+        "headings": Array [
+          Object {
+            "level": 2,
+            "slug": "tag-debugger",
+            "tag": "beta",
+            "text": "Tag debugger",
+          },
+        ],
+        "order": 4,
+        "path": "/dr-ui/guides/split-pages/sections/tag-debugger/",
+        "platforms": undefined,
+        "products": Array [
+          "Mapbox fundamentals",
+        ],
+        "services": undefined,
+        "slug": "tag-debugger",
       },
     ],
     "path": "/dr-ui/guides/split-pages/",
