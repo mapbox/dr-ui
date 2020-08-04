@@ -565,16 +565,20 @@ Object {
   "accordion": Object {
     "/dr-ui/": Array [
       Object {
-        "path": "/dr-ui/",
-        "title": "Components",
+        "path": "/dr-ui/changelog/",
+        "title": undefined,
       },
       Object {
         "path": "/dr-ui/examples/example-1/",
         "title": "Example 1",
       },
       Object {
-        "path": "/dr-ui/guides/batfish-helpers/",
-        "title": "Batfish helpers",
+        "path": "/dr-ui/examples/example-2/",
+        "title": "Example 2",
+      },
+      Object {
+        "path": "/dr-ui/examples/example-3/",
+        "title": "Example 3",
       },
       Object {
         "path": "/dr-ui/examples/",
@@ -585,16 +589,12 @@ Object {
         "title": "Guides",
       },
       Object {
-        "path": "/dr-ui/changelog/",
-        "title": undefined,
+        "path": "/dr-ui/guides/batfish-helpers/",
+        "title": "Batfish helpers",
       },
       Object {
-        "path": "/dr-ui/examples/example-3/",
-        "title": "Example 3",
-      },
-      Object {
-        "path": "/dr-ui/examples/example-2/",
-        "title": "Example 2",
+        "path": "/dr-ui/",
+        "title": "Components",
       },
       Object {
         "path": "/dr-ui/404/",
