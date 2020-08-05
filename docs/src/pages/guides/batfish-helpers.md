@@ -163,7 +163,7 @@ class SideBar extends React.Component {
 
 ## Split pages
 
-`split-pages` supports groups of pages that uses the [split page pattern](../split-pages/) by generating and collecting `headings`, `products`, `services`, and `platform` arrays for the main page to reference.
+`split-pages` supports groups of pages that use the [split page pattern](../split-pages/) by generating and collecting `headings`, `products`, `services`, and `platforms` arrays for the main page to reference.
 
 ### Arguments
 

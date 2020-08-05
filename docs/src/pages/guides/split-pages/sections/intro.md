@@ -6,7 +6,6 @@ splitPage: true
 products:
   - Documentation
 prependJs:
-  - "import Note from '../../../../../../src/components/note/note';"
 ---
 
 ## Introduction to split pages

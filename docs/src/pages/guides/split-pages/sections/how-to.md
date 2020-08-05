@@ -21,8 +21,8 @@ prependJs:
 
 The main page is where all the partial markdown files will be combined and displayed.
 
-- Create an `.js` file. The main file must be a JavaScript file to make sure the scroll spy on the sidebar works correctly.
-- Add `splitPages: true` to the frontMatter.
+- Create an `index.js` file. The main file must be a JavaScript file to make sure the scroll spy on the sidebar works correctly.
+- Add `splitPages: true` to the frontmatter.
 - Add `order` to designate the order of appears in the `NavgiationAccordion`.
 - Import each markdown file in the main page.
 - Import the splitPages function to override the page's headings.
