@@ -37,8 +37,8 @@ You must save the partial markdown files in a folder adjacent to the main JavaSc
 
 - Create a folder, `sections`, adjacent to the main page.
 - Create markdown file for each page.
-- Add `splitPage: true` to the frontMatter.
-- Add `order` to designate the order the page appears.
+- Add `splitPage: true` to the frontmatter.
+- Add `order: # number` to designate the order of pages - this is necessary in generating the headings. You will need to make sure this is the same order as the imported partial files in the main page.
 
 {{ <CodeSnippet code={`${SubOne}`} highlighter={() => highlightHtml} filename="src/pages/guides/split-pages/sections/intro.md" />}}
 
