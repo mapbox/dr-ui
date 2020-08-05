@@ -1,21 +1,6 @@
 {
   "pages": [
     {
-      "filePath": "./docs/src/pages/index.md",
-      "path": "/dr-ui/",
-      "frontMatter": {
-        "title": "Overview",
-        "description": "UI components for Mapbox documentation projects.",
-        "prependJs": [
-          "import Note from '../../../src/components/note'",
-          "import OverviewHeader from '../../../src/components/overview-header'",
-          "import App from '../app.js'",
-          "const version = require('../../../package.json').version;"
-        ],
-        "navOrder": 1
-      }
-    },
-    {
       "filePath": "./docs/src/pages/batfish-helpers.md",
       "path": "/dr-ui/batfish-helpers/",
       "frontMatter": {
@@ -27,6 +12,11 @@
           "import topics from '@mapbox/batfish/data/topics';"
         ]
       }
+    },
+    {
+      "filePath": "./docs/src/pages/changelog.md",
+      "path": "/dr-ui/changelog/",
+      "frontMatter": {}
     },
     {
       "filePath": "./docs/src/pages/examples/example-1.md",
@@ -80,9 +70,19 @@
       }
     },
     {
-      "filePath": "./docs/src/pages/changelog.md",
-      "path": "/dr-ui/changelog/",
-      "frontMatter": {}
+      "filePath": "./docs/src/pages/index.md",
+      "path": "/dr-ui/",
+      "frontMatter": {
+        "title": "Overview",
+        "description": "UI components for Mapbox documentation projects.",
+        "prependJs": [
+          "import Note from '../../../src/components/note'",
+          "import OverviewHeader from '../../../src/components/overview-header'",
+          "import App from '../app.js'",
+          "const version = require('../../../package.json').version;"
+        ],
+        "navOrder": 1
+      }
     },
     {
       "filePath": "./node_modules/@mapbox/batfish/dist/webpack/default-not-found.js",

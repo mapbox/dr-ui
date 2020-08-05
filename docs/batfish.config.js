@@ -7,7 +7,7 @@ const siteBasePath = '/dr-ui';
 
 module.exports = () => {
   return {
-    siteBasePath,
+    siteBasePath: siteBasePath,
     outputDirectory: path.join(__dirname, '_site/'),
     temporaryDirectory: path.join(__dirname, '_site_tmp/'),
     stylesheets: [
@@ -28,7 +28,24 @@ module.exports = () => {
     },
     dataSelectors: {
       navigation: (data) => buildNavigation(siteBasePath, data),
-      topics: (data) => buildTopics(data)
+      topics: (data) => buildTopics(data),
+      sync: (data) => {
+        /* syncs data to fixtures to properly test batfish selectors */
+        const sortBy = (key) => {
+          return (a, b) => (a[key] > b[key] ? 1 : b[key] > a[key] ? -1 : 0);
+        };
+        // cleans up file path and sorts by filepath to keep a consistent order
+        const pages = data.pages
+          .map((page) => ({
+            ...page,
+            filePath: `.${page.filePath.split('dr-ui')[1]}`
+          }))
+          .sort(sortBy('filePath'));
+        require('fs').writeFileSync(
+          './src/helpers/batfish/__tests__/fixtures/data.json',
+          JSON.stringify({ pages: pages }, null, 2)
+        );
+      }
     }
   };
 };
