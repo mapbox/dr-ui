@@ -35,7 +35,7 @@ function compileComponents() {
 
 function compileHelpers() {
   return execa.shell(
-    `babel "${rootDir}/src/helpers" --out-dir ${outputDir}/helpers --config-file ${rootDir}/babel.config.js`,
+    `babel "${rootDir}/src/helpers" --out-dir ${outputDir}/helpers --ignore "${rootDir}/src/helpers/**/__tests__" --config-file ${rootDir}/babel.config.js`,
     {
       cwd: srcDir,
       stdio: 'inherit'
