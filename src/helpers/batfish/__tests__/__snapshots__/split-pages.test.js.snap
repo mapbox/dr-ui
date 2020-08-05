@@ -46,8 +46,8 @@ Object {
       },
       Object {
         "level": 3,
-        "slug": "3-create-split-page-shell",
-        "text": "3. Create split-page-shell",
+        "slug": "3-update-the-batfish-configuration",
+        "text": "3. Update the Batfish configuration",
       },
       Object {
         "level": 3,
@@ -71,10 +71,9 @@ Object {
         "filePath": "./docs/src/pages/guides/split-pages/sections/intro.md",
         "frontMatter": Object {
           "description": "An introduction to use split pages.",
+          "hideFeedback": true,
           "order": 1,
-          "prependJs": Array [
-            "import Note from '../../../../../../src/components/note/note';",
-          ],
+          "prependJs": null,
           "products": Array [
             "Documentation",
           ],
@@ -111,6 +110,7 @@ Object {
         "filePath": "./docs/src/pages/guides/split-pages/sections/how-to.md",
         "frontMatter": Object {
           "description": "An introduction to use split pages.",
+          "hideFeedback": true,
           "order": 2,
           "prependJs": Array [
             "import Note from '../../../../../../src/components/note/note';",
@@ -145,8 +145,8 @@ Object {
           },
           Object {
             "level": 3,
-            "slug": "3-create-split-page-shell",
-            "text": "3. Create split-page-shell",
+            "slug": "3-update-the-batfish-configuration",
+            "text": "3. Update the Batfish configuration",
           },
           Object {
             "level": 3,
@@ -167,6 +167,7 @@ Object {
         "filePath": "./docs/src/pages/guides/split-pages/sections/limitations.md",
         "frontMatter": Object {
           "description": "Limitations to the split page pattern.",
+          "hideFeedback": true,
           "order": 3,
           "products": Array [
             "Mapbox fundamentals",
@@ -194,6 +195,7 @@ Object {
         "filePath": "./docs/src/pages/guides/split-pages/sections/tag-debugger.md",
         "frontMatter": Object {
           "description": "Limitations to the split page pattern.",
+          "hideFeedback": true,
           "order": 4,
           "products": Array [
             "Mapbox fundamentals",

@@ -4,6 +4,7 @@ description: Limitations to the split page pattern.
 order: 4
 splitPage: true
 tag: beta
+hideFeedback: true
 products:
   - Mapbox fundamentals
 ---

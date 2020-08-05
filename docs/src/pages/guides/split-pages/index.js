@@ -27,10 +27,10 @@ export default class Page extends React.Component {
     const headings = splitPages[location.pathname].headings;
     return (
       <PageShell headings={headings} {...this.props}>
-        <Intro location={location} />
-        <HowTo location={location} />
-        <Limitations location={location} />
-        <TagDebugger location={location} />
+        <Intro {...this.props} />
+        <HowTo {...this.props} />
+        <Limitations {...this.props} />
+        <TagDebugger {...this.props} />
       </PageShell>
     );
   }

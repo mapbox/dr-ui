@@ -3,6 +3,7 @@ title: Limitations
 description: Limitations to the split page pattern.
 order: 3
 splitPage: true
+hideFeedback: true
 products:
   - Mapbox fundamentals
 ---

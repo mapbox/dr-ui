@@ -122,6 +122,7 @@
         "description": "An introduction to use split pages.",
         "order": 2,
         "splitPage": true,
+        "hideFeedback": true,
         "products": ["Mapbox fundamentals"],
         "prependJs": [
           "import Note from '../../../../../../src/components/note/note';",
@@ -142,10 +143,9 @@
         "description": "An introduction to use split pages.",
         "order": 1,
         "splitPage": true,
+        "hideFeedback": true,
         "products": ["Documentation"],
-        "prependJs": [
-          "import Note from '../../../../../../src/components/note/note';"
-        ]
+        "prependJs": null
       }
     },
     {
@@ -156,6 +156,7 @@
         "description": "Limitations to the split page pattern.",
         "order": 3,
         "splitPage": true,
+        "hideFeedback": true,
         "products": ["Mapbox fundamentals"]
       }
     },
@@ -168,6 +169,7 @@
         "order": 4,
         "splitPage": true,
         "tag": "beta",
+        "hideFeedback": true,
         "products": ["Mapbox fundamentals"]
       }
     },

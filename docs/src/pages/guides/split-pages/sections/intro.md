@@ -3,6 +3,7 @@ title: Introduction to split pages
 description: An introduction to use split pages.
 order: 1
 splitPage: true
+hideFeedback: true
 products:
   - Documentation
 prependJs:

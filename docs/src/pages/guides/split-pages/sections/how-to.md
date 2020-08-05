@@ -3,6 +3,7 @@ title: How to use spit pages
 description: An introduction to use split pages.
 order: 2
 splitPage: true
+hideFeedback: true
 products:
   - Mapbox fundamentals
 prependJs:
@@ -41,15 +42,20 @@ You must save the partial markdown files in a folder adjacent to the main JavaSc
 
 {{ <CodeSnippet code={`${SubOne}`} highlighter={() => highlightHtml} filename="src/pages/guides/split-pages/sections/intro.md" />}}
 
-### 3. Create split-page-shell
+### 3. Update the Batfish configuration
 
-You will need a wrapper to handle each split page, this is usually called `src/components/split-page-shell.js`.
+You will need to update the Batfish configuration to define the wrapper component for the partial markdown files and load the [`split-pages`](../batfish-helpers/#split-pages) Batfish helper function.
 
-- Add the Feedback module with the `section` prop set to the title of the split page (usually).
+#### SplitPage wrapper
+
+Use the SplitPage component to create a wrapper for each markdown partial file. You will likely also need to create a local wrapper component to pass the page's constants file to the component - the Feedback component requires data from the constants file.
+
+1. Create a local component and load in the SplitPage component and your local constants file.
+2. Pass all props and the constants to the SplitPage component:
 
 {{ <CodeSnippet code={`${SplitPageShell}`} highlighter={() => highlightJsx} filename="src/components/split-page-shell.js" />}}
 
-You will need to update `batfish.config.js` to initiate the new wrapper on the markdown partial files:
+Update `batfish.config.js` to initiate the new wrapper on the markdown partial files:
 
 {{ <CodeSnippet code={`jsxtremeMarkdownOptions: {
 getWrapper: resource => {
@@ -63,8 +69,34 @@ getWrapper: resource => {
  }
 }`} highlighter={() => highlightJsx} filename="batfish.config.js" />}}
 
+- If you do not want the Feedback component to appear after each partial markdown page, you can reference `@mapbox/dr-ui/page-layout/split-page` instead of the local `split-page-shell.js` in `batfish.config.js`.
+- You can turn off the Feedback component from any partial markdown page by setting `hideFeedback: true` in the frontmatter of the desired page.
+
+#### Use the split-pages Batfish data selector
+
+The split-pages Batfish data selector will combine metadata and headings for all partial markdown files and create a single source for the main page to reference.
+
+To add the split-pages data selector to your site:
+
+1. Import the split-pages function in `batfish.config.js`.
+2. Create a new `splitPages` dataSelector that references the `buildSplitPages` function.
+
+{{ <CodeSnippet code={`const {
+buildSplitPages
+} = require('@mapbox/dr-ui/helpers/batfish/split-pages.js');
+
+module.exports = () => {
+return {
+dataSelectors: {
+splitPages: (data) => buildSplitPages(data)
+}
+};
+};`} highlighter={() => highlightJsx} filename="batfish.config.js" />}}
+
+Learn more about the [`split-pages`](../batfish-helpers/#split-pages) Batfish helper function.
+
 ### 4. Create redirects
 
-You will need to create redirects in [subdomain-docs](https://github.com/mapbox/subdomain-docs) to redirect the partial files to the main file.
+You will need to create redirects in [subdomain-docs](https://github.com/mapbox/subdomain-docs) to redirect the partial files to the main file. All pages in `src/pages/` will resolve at a URL on docs.mapbox.com. We create redirects for each partial markdown file to make sure users, or more likely web crawlers, do not index or reference this page.
 
 See [Redirects for Studio Manual reference "sections" pages #75](https://github.com/mapbox/subdomain-docs/pull/75) for a similar example.
