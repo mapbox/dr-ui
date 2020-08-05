@@ -80,6 +80,22 @@
       }
     },
     {
+      "filePath": "./docs/src/pages/guides/page-layout.md",
+      "path": "/dr-ui/guides/page-layout/",
+      "frontMatter": {
+        "title": "PageLayout component",
+        "description": "All about building with PageLayout.",
+        "order": 3,
+        "layout": "accordion",
+        "hideFeedback": true,
+        "prependJs": [
+          "import layoutConfig from '../../../../src/components/page-layout/layout.config.js'",
+          "import components from '../../data/components';",
+          "import FrontMatter from '../../components/frontmatter.js';"
+        ]
+      }
+    },
+    {
       "filePath": "./docs/src/pages/index.md",
       "path": "/dr-ui/",
       "frontMatter": {
