@@ -7,37 +7,9 @@ import Content from './components/content';
 import Sidebar from './components/sidebar';
 import PageLayoutTopbar from './components/topbar';
 import { findHasSection, findParentPath } from './utils';
-
 // default configuration for each layout
-// each option can be overriden in the frontMatter
-
-const layoutConfig = {
-  page: {
-    sidebar: 'toc', // heading table of contents
-    sidebarTheme: '' // blank sidebar background
-  },
-  accordion: {
-    sidebar: 'accordion', // NavigationAccordion sidebar
-    sidebarTheme: 'bg-gray-faint' // sidebar background
-  },
-  example: {
-    sidebar: 'sectioned', // SectionedNavigation sidebar
-    hideSubItems: false, // show headings and subitems in sitebar
-    sidebarTheme: 'bg-gray-faint', // sidebar background
-    includeFilterBar: false // hide filter bar
-  },
-  exampleIndex: {
-    sidebar: 'sectioned', // SectionedNavigation sidebar
-    hideSubItems: true, // only show sidebar headings
-    showCards: true, // show example cards
-    hideFeedback: true, // hide feedback module
-    sidebarTheme: 'bg-gray-faint', // sidebar background
-    includeFilterBar: false // hide filter bar
-  },
-  full: {
-    sidebar: 'none' // no sidebar
-  }
-};
+// every option can be overriden in the frontMatter
+import layoutConfig from './layout.config.js';
 
 export default class PageLayout extends React.Component {
   // render the page's top bar navigation

@@ -85,7 +85,7 @@ function generateTopics(path, pages) {
       }
       return arr;
     }, []);
-
+    // TODO: investigate why non-strings can be passed here
     if (topic && typeof topic === 'string') {
       set.push({
         name: topic,

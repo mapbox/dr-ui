@@ -1,4 +1,5 @@
 import Feedback from '../feedback';
+
 import React from 'react';
 import Basic from '../examples/basic';
 
