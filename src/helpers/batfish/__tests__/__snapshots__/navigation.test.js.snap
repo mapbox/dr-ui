@@ -593,6 +593,10 @@ Object {
         "title": "Batfish helpers",
       },
       Object {
+        "path": "/dr-ui/guides/page-layout/",
+        "title": "PageLayout component",
+      },
+      Object {
         "path": "/dr-ui/",
         "title": "Components",
       },
@@ -609,6 +613,10 @@ Object {
       Object {
         "path": "/dr-ui/guides/batfish-helpers/",
         "title": "Batfish helpers",
+      },
+      Object {
+        "path": "/dr-ui/guides/page-layout/",
+        "title": "PageLayout component",
       },
     ],
   },
@@ -646,6 +654,10 @@ Object {
       "title": "Guides",
     },
     "/dr-ui/guides/batfish-helpers/": Object {
+      "parent": "/dr-ui/guides/",
+      "title": "Guides",
+    },
+    "/dr-ui/guides/page-layout/": Object {
       "parent": "/dr-ui/guides/",
       "title": "Guides",
     },
