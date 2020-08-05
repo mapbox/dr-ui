@@ -7,9 +7,11 @@
         "title": "Batfish helpers",
         "description": "Batfish data selector functions to build navigation and topic datasets.",
         "navOrder": 2,
+        "contentType": "guide",
+        "hideFeedback": true,
         "prependJs": [
-          "import navigation from '@mapbox/batfish/data/navigation';",
-          "import topics from '@mapbox/batfish/data/topics';"
+          "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
+          "import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line"
         ]
       }
     },
@@ -27,8 +29,7 @@
         "contentType": "example",
         "language": ["JavaScript"],
         "topics": ["Navigation"],
-        "thumbnail": "header-image",
-        "layout": "example"
+        "thumbnail": "header-image"
       }
     },
     {
@@ -40,8 +41,7 @@
         "contentType": "example",
         "language": ["JavaScript"],
         "topics": ["Navigation"],
-        "thumbnail": "header-image",
-        "layout": "example"
+        "thumbnail": "header-image"
       }
     },
     {
@@ -53,8 +53,7 @@
         "contentType": "example",
         "language": ["JavaScript"],
         "topics": ["Navigation", "Geocoding"],
-        "thumbnail": "header-image",
-        "layout": "example"
+        "thumbnail": "header-image"
       }
     },
     {
@@ -79,8 +78,11 @@
           "import Note from '../../../src/components/note'",
           "import OverviewHeader from '../../../src/components/overview-header'",
           "import App from '../app.js'",
-          "const version = require('../../../package.json').version;"
+          "const version = require('../../../package.json').version; // eslint-disable-line"
         ],
+        "layout": "example",
+        "products": ["Documentation"],
+        "contentType": "reference",
         "navOrder": 1
       }
     },

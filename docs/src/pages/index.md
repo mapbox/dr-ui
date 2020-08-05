@@ -5,7 +5,11 @@ prependJs:
   - "import Note from '../../../src/components/note'"
   - "import OverviewHeader from '../../../src/components/overview-header'"
   - "import App from '../app.js'"
-  - "const version = require('../../../package.json').version;"
+  - "const version = require('../../../package.json').version; // eslint-disable-line"
+layout: example
+products:
+  - Documentation
+contentType: reference
 navOrder: 1
 ---
 
@@ -18,7 +22,7 @@ navOrder: 1
   title="Dr. UI"
   version={version}
   changelogLink="/dr-ui/changelog/"
-  installLink="https://github.com/mapbox/dr-ui/blob/master/README.md"
+  installLink="https://github.com/mapbox/dr-ui/blob/main/README.md"
   ghLink="https://github.com/mapbox/dr-ui"
 />}}
 

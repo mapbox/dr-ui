@@ -380,14 +380,19 @@ Object {
 exports[`buildTopics single structure 1`] = `
 Object {
   "/dr-ui/": Object {
+    "contentType": "reference",
     "description": "UI components for Mapbox documentation projects.",
+    "layout": "example",
     "navOrder": 1,
     "path": "/dr-ui/",
     "prependJs": Array [
       "import Note from '../../../src/components/note'",
       "import OverviewHeader from '../../../src/components/overview-header'",
       "import App from '../app.js'",
-      "const version = require('../../../package.json').version;",
+      "const version = require('../../../package.json').version; // eslint-disable-line",
+    ],
+    "products": Array [
+      "Documentation",
     ],
     "title": "Overview",
     "topics": Array [
@@ -401,7 +406,6 @@ Object {
             "language": Array [
               "JavaScript",
             ],
-            "layout": "example",
             "path": "/dr-ui/examples/example-1/",
             "text": "Example 1",
             "thumbnail": "header-image",
@@ -417,7 +421,6 @@ Object {
             "language": Array [
               "JavaScript",
             ],
-            "layout": "example",
             "path": "/dr-ui/examples/example-2/",
             "text": "Example 2",
             "thumbnail": "header-image",
@@ -433,7 +436,6 @@ Object {
             "language": Array [
               "JavaScript",
             ],
-            "layout": "example",
             "path": "/dr-ui/examples/example-3/",
             "text": "Example 3",
             "thumbnail": "header-image",
@@ -457,7 +459,6 @@ Object {
             "language": Array [
               "JavaScript",
             ],
-            "layout": "example",
             "path": "/dr-ui/examples/example-3/",
             "text": "Example 3",
             "thumbnail": "header-image",
@@ -494,7 +495,6 @@ Object {
             "language": Array [
               "JavaScript",
             ],
-            "layout": "example",
             "path": "/dr-ui/examples/example-1/",
             "text": "Example 1",
             "thumbnail": "header-image",
@@ -510,7 +510,6 @@ Object {
             "language": Array [
               "JavaScript",
             ],
-            "layout": "example",
             "path": "/dr-ui/examples/example-2/",
             "text": "Example 2",
             "thumbnail": "header-image",
@@ -526,7 +525,6 @@ Object {
             "language": Array [
               "JavaScript",
             ],
-            "layout": "example",
             "path": "/dr-ui/examples/example-3/",
             "text": "Example 3",
             "thumbnail": "header-image",
@@ -550,7 +548,6 @@ Object {
             "language": Array [
               "JavaScript",
             ],
-            "layout": "example",
             "path": "/dr-ui/examples/example-3/",
             "text": "Example 3",
             "thumbnail": "header-image",
