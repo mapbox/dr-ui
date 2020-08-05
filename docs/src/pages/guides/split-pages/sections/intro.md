@@ -23,4 +23,4 @@ To improve developer experience, we sometimes split a long page into multiple ma
 
 ### Current uses cases
 
-This split pages pattern is used by API documentation, Studio Manual, and Accounts.
+This split pages pattern is used by [API documentation](https://docs.mapbox.com/api/maps/), [Studio manual reference](https://docs.mapbox.com/studio-manual/reference/), [Accounts pricing page](https://docs.mapbox.com/accounts/overview/pricing/), and [Vector Tiles Specification](https://docs.mapbox.com/vector-tiles/specification/).
