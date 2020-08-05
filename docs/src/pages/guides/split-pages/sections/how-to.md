@@ -97,6 +97,6 @@ Learn more about the [`split-pages`](../batfish-helpers/#split-pages) Batfish he
 
 ### 4. Create redirects
 
-You will need to create redirects in [subdomain-docs](https://github.com/mapbox/subdomain-docs) to redirect the partial files to the main file. All pages in `src/pages/` will resolve at a URL on docs.mapbox.com. We create redirects for each partial markdown file to make sure users, or more likely web crawlers, do not index or reference this page.
+You will need to create redirects in [subdomain-docs](https://github.com/mapbox/subdomain-docs) to redirect the partial files to the main file to prevent users, or more likely web crawlers from accessing the page partials.
 
 See [Redirects for Studio Manual reference "sections" pages #75](https://github.com/mapbox/subdomain-docs/pull/75) for a similar example.

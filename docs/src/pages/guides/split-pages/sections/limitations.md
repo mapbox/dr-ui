@@ -14,4 +14,6 @@ There are several known limitations to using split pages:
 
 - All headings must be unique across all pages that come together on the main page.
 - You _must_ create redirects for each for the markdown partial pages. See [Create redirects](#4-create-redirects) section.
+  - All pages in `src/pages/` will resolve at a URL on docs.mapbox.com. We create redirects for each partial markdown file to make sure users, or more likely web crawlers, do not index or reference this page.
+  - While it's possible to store the partial markdown files in a directory outside of `src/pages/` this will require updating our content-based tests to properly test and lint these page partials in addition to all pages in `src/pages/`.
 - The main page must be a JavaScript file (not markdown). This will enable the scrollspy sidebar to sync properly with the content headings.
