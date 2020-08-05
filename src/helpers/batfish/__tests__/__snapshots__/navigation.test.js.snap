@@ -600,10 +600,6 @@ Object {
         "path": "/dr-ui/",
         "title": "Components",
       },
-      Object {
-        "path": "/dr-ui/404/",
-        "title": undefined,
-      },
     ],
     "/dr-ui/guides/": Array [
       Object {
@@ -622,10 +618,6 @@ Object {
   },
   "hierarchy": Object {
     "/dr-ui/": Object {
-      "parent": "/dr-ui/",
-      "title": "Components",
-    },
-    "/dr-ui/404/": Object {
       "parent": "/dr-ui/",
       "title": "Components",
     },
