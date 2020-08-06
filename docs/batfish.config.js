@@ -21,6 +21,7 @@ module.exports = () => {
       wrapper: path.join(__dirname, 'src/components/page-shell.js'),
       rehypePlugins: [
         require('rehype-slug'),
+        require('@mapbox/rehype-prism'),
         require('../src/plugins/add-links-to-headings'),
         require('../src/plugins/create-sections'),
         require('../src/plugins/make-table-scroll')
