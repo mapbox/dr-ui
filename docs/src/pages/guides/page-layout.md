@@ -4,6 +4,7 @@ description: All about building with PageLayout.
 order: 3
 layout: accordion
 hideFeedback: true
+contentType: guide
 prependJs:
   - "import layoutConfig from '../../../../src/components/page-layout/layout.config.js'"
   - "import components from '../../data/components';"
@@ -40,7 +41,7 @@ The [remark-lint-mapbox/frontmatter](https://github.com/mapbox/remark-lint-mapbo
 
 ## How can I override a layout?
 
-You can define any available frontMatter prop in the frontMatter of your page to override it. The following fields are configurable in your page's frontmatter:
+You can define any available frontmatter prop in the frontmatter of your page to override it. The following fields are configurable in your page's frontmatter:
 
 {{<FrontMatter />}}
 
@@ -57,4 +58,4 @@ The example below will turn of the feedback component for every page:
 } />
 ```
 
-(Note: the frontMatter value in the example above should be wrapped in double `{{`, but Batfish is too eager to parse it.)
+(Note: the frontmatter value in the example above should be wrapped in double `{{`, but Batfish is too eager to parse it.)

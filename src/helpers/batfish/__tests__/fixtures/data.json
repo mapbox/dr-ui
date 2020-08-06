@@ -10,12 +10,12 @@
       "path": "/dr-ui/examples/example-1/",
       "frontMatter": {
         "title": "Example 1",
-        "description": "Replace me.",
+        "description": "This is example 1.",
         "contentType": "example",
         "topics": ["Navigation"],
         "thumbnail": "header-image",
-        "layout": "example",
-        "products": ["Documentation"]
+        "language": ["JavaScript"],
+        "layout": "example"
       }
     },
     {
@@ -23,12 +23,12 @@
       "path": "/dr-ui/examples/example-2/",
       "frontMatter": {
         "title": "Example 2",
-        "description": "Replace me.",
+        "description": "This is example 2.",
         "contentType": "example",
         "topics": ["Navigation"],
         "thumbnail": "header-image",
-        "layout": "example",
-        "products": ["Documentation"]
+        "language": ["JavaScript"],
+        "layout": "example"
       }
     },
     {
@@ -36,12 +36,12 @@
       "path": "/dr-ui/examples/example-3/",
       "frontMatter": {
         "title": "Example 3",
-        "description": "Replace me.",
+        "description": "This is example 3.",
         "contentType": "example",
         "topics": ["Navigation", "Geocoding"],
         "thumbnail": "header-image",
-        "layout": "example",
-        "products": ["Documentation"]
+        "language": ["JavaScript"],
+        "layout": "example"
       }
     },
     {
@@ -54,8 +54,7 @@
         "language": ["JavaScript"],
         "navOrder": 3,
         "layout": "example",
-        "fullWidthCards": true,
-        "products": ["Documentation"]
+        "fullWidthCards": true
       }
     },
     {
@@ -65,12 +64,12 @@
         "title": "Batfish helpers",
         "description": "Batfish data selector functions to build navigation and topic datasets.",
         "order": 2,
-        "layout": "accordion",
+        "contentType": "guide",
         "hideFeedback": true,
+        "layout": "accordion",
         "prependJs": [
-          "import navigation from '@mapbox/batfish/data/navigation';",
-          "import topics from '@mapbox/batfish/data/topics';",
-          "import splitPages from '@mapbox/batfish/data/split-pages';"
+          "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
+          "import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line"
         ]
       }
     },
@@ -82,7 +81,8 @@
         "description": "Guides to building sites with Dr. UI.",
         "layout": "accordion",
         "navOrder": 2,
-        "order": 1
+        "order": 1,
+        "contentType": "guide"
       }
     },
     {
@@ -94,83 +94,12 @@
         "order": 3,
         "layout": "accordion",
         "hideFeedback": true,
+        "contentType": "guide",
         "prependJs": [
           "import layoutConfig from '../../../../src/components/page-layout/layout.config.js'",
           "import components from '../../data/components';",
           "import FrontMatter from '../../components/frontmatter.js';"
         ]
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/guides/split-pages/index.js",
-      "path": "/dr-ui/guides/split-pages/",
-      "frontMatter": {
-        "title": "Split pages",
-        "description": "This is the first section",
-        "splitPages": true,
-        "order": 3,
-        "layout": "accordion",
-        "contentType": "API",
-        "hideFeedback": true
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/guides/split-pages/sections/how-to.md",
-      "path": "/dr-ui/guides/split-pages/sections/how-to/",
-      "frontMatter": {
-        "title": "How to use spit pages",
-        "description": "An introduction to use split pages.",
-        "order": 2,
-        "splitPage": true,
-        "hideFeedback": true,
-        "products": ["Mapbox fundamentals"],
-        "prependJs": [
-          "import Note from '../../../../../../src/components/note/note';",
-          "import MainPage from '!raw-loader!../index.js';",
-          "import SubOne from '!raw-loader!./intro.md';",
-          "import SplitPageShell from '!raw-loader!../../../../components/split-page-shell.js';",
-          "import CodeSnippet from '../../../../../../src/components/code-snippet/code-snippet';",
-          "import { highlightJsx } from '../../../../../../src/components/highlight/jsx';",
-          "import { highlightHtml } from '../../../../../../src/components/highlight/html';"
-        ]
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/guides/split-pages/sections/intro.md",
-      "path": "/dr-ui/guides/split-pages/sections/intro/",
-      "frontMatter": {
-        "title": "Introduction to split pages",
-        "description": "An introduction to use split pages.",
-        "order": 1,
-        "splitPage": true,
-        "hideFeedback": true,
-        "products": ["Documentation"],
-        "prependJs": null
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/guides/split-pages/sections/limitations.md",
-      "path": "/dr-ui/guides/split-pages/sections/limitations/",
-      "frontMatter": {
-        "title": "Limitations",
-        "description": "Limitations to the split page pattern.",
-        "order": 3,
-        "splitPage": true,
-        "hideFeedback": true,
-        "products": ["Mapbox fundamentals"]
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/guides/split-pages/sections/tag-debugger.md",
-      "path": "/dr-ui/guides/split-pages/sections/tag-debugger/",
-      "frontMatter": {
-        "title": "Tag debugger",
-        "description": "Limitations to the split page pattern.",
-        "order": 4,
-        "splitPage": true,
-        "tag": "beta",
-        "hideFeedback": true,
-        "products": ["Mapbox fundamentals"]
       }
     },
     {
@@ -183,13 +112,14 @@
           "import Note from '../../../src/components/note'",
           "import OverviewHeader from '../../../src/components/overview-header'",
           "import App from '../app.js'",
-          "const version = require('../../../package.json').version;"
+          "const version = require('../../../package.json').version; // eslint-disable-line"
         ],
         "layout": "example",
-        "products": ["Documentation"],
         "hideSubItems": false,
         "showCards": false,
         "includeFilterBar": true,
+        "products": ["Documentation"],
+        "contentType": "reference",
         "navOrder": 1,
         "hideTitle": true,
         "unProse": true
