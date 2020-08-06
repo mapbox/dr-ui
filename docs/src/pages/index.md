@@ -6,21 +6,16 @@ layout: example
 contentType: reference
 products:
   - Documentation
+hideSubItems: false
+showCards: false
+includeFilterBar: true
+hideTitle: true
+unProse: true
 prependJs:
   - "import Note from '../../../src/components/note'"
   - "import OverviewHeader from '../../../src/components/overview-header'"
   - "import App from '../app.js'"
   - "const version = require('../../../package.json').version; // eslint-disable-line"
-layout: example
-hideSubItems: false
-showCards: false
-includeFilterBar: true
-products:
-  - Documentation
-contentType: reference
-navOrder: 1
-hideTitle: true
-unProse: true
 ---
 
 {{<OverviewHeader
