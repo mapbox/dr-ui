@@ -87,7 +87,8 @@
         "layout": "accordion",
         "navOrder": 2,
         "order": 1,
-        "contentType": "guide"
+        "contentType": "guide",
+        "products": ["Documentation"]
       }
     },
     {
@@ -100,6 +101,7 @@
         "layout": "accordion",
         "hideFeedback": true,
         "contentType": "guide",
+        "products": ["Documentation"],
         "prependJs": [
           "import layoutConfig from '../../../../src/components/page-layout/layout.config.js'",
           "import components from '../../data/components'; // eslint-disable-line",

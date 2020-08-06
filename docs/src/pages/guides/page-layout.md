@@ -5,6 +5,8 @@ order: 3
 layout: accordion
 hideFeedback: true
 contentType: guide
+products:
+  - Documentation
 prependJs:
   - "import layoutConfig from '../../../../src/components/page-layout/layout.config.js'"
   - "import components from '../../data/components'; // eslint-disable-line"
