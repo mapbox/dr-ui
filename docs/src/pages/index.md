@@ -12,8 +12,6 @@ products:
 hideSubItems: false
 showCards: false
 includeFilterBar: true
-products:
-  - Documentation
 contentType: reference
 navOrder: 1
 hideTitle: true

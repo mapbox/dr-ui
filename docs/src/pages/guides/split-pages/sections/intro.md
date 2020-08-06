@@ -6,7 +6,7 @@ splitPage: true
 hideFeedback: true
 products:
   - Documentation
-prependJs:
+contentType: guide
 ---
 
 ## Introduction to split pages
@@ -17,8 +17,8 @@ To improve developer experience, we sometimes split a long page into multiple ma
 
 ### Set up
 
-- You will need to import the [`split-pages`](../batfish-helpers/#split-pages) Batfish helper in your site's `batfish.config.js` file.
-- All partial files must be in a folder adjacent to the main page. The steps in [How to use split pages](#how-to-use-split-pages) provides examples on how to structure your files.
+- You will need to import the [`split-pages`](/dr-ui/guides/batfish-helpers/#split-pages) Batfish helper in your site's `batfish.config.js` file.
+- All partial files must be in a folder next to the main page. The steps in [How to use split pages](#how-to-use-split-pages) provides examples on how to structure your files.
 - Read through [the limitations of this pattern](#limitations).
 
 ### Current uses cases

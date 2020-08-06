@@ -7,6 +7,7 @@ tag: beta
 hideFeedback: true
 products:
   - Mapbox fundamentals
+contentType: guide
 ---
 
 ## Tag debugger

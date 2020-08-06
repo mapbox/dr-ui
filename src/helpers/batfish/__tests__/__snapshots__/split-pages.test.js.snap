@@ -70,10 +70,10 @@ Object {
       Object {
         "filePath": "./docs/src/pages/guides/split-pages/sections/intro.md",
         "frontMatter": Object {
+          "contentType": "guide",
           "description": "An introduction to use split pages.",
           "hideFeedback": true,
           "order": 1,
-          "prependJs": null,
           "products": Array [
             "Documentation",
           ],
@@ -109,14 +109,14 @@ Object {
       Object {
         "filePath": "./docs/src/pages/guides/split-pages/sections/how-to.md",
         "frontMatter": Object {
+          "contentType": "guide",
           "description": "An introduction to use split pages.",
           "hideFeedback": true,
           "order": 2,
           "prependJs": Array [
-            "import Note from '../../../../../../src/components/note/note';",
-            "import MainPage from '!raw-loader!../index.js';",
-            "import SubOne from '!raw-loader!./intro.md';",
-            "import SplitPageShell from '!raw-loader!../../../../components/split-page-shell.js';",
+            "import MainPage from '!raw-loader!../index.js'; //eslint-disable-line",
+            "import SubOne from '!raw-loader!./intro.md'; //eslint-disable-line",
+            "import SplitPageShell from '!raw-loader!../../../../components/split-page-shell.js'; //eslint-disable-line",
             "import CodeSnippet from '../../../../../../src/components/code-snippet/code-snippet';",
             "import { highlightJsx } from '../../../../../../src/components/highlight/jsx';",
             "import { highlightHtml } from '../../../../../../src/components/highlight/html';",
@@ -166,6 +166,7 @@ Object {
       Object {
         "filePath": "./docs/src/pages/guides/split-pages/sections/limitations.md",
         "frontMatter": Object {
+          "contentType": "guide",
           "description": "Limitations to the split page pattern.",
           "hideFeedback": true,
           "order": 3,
@@ -194,6 +195,7 @@ Object {
       Object {
         "filePath": "./docs/src/pages/guides/split-pages/sections/tag-debugger.md",
         "frontMatter": Object {
+          "contentType": "guide",
           "description": "Limitations to the split page pattern.",
           "hideFeedback": true,
           "order": 4,

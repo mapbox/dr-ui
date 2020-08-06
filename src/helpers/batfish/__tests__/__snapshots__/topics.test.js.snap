@@ -397,9 +397,6 @@ Object {
     "products": Array [
       "Documentation",
     ],
-    "products": Array [
-      "Documentation",
-    ],
     "showCards": false,
     "title": "Components",
     "topics": Array [
@@ -626,9 +623,6 @@ Object {
       "import OverviewHeader from '../../../src/components/overview-header'",
       "import App from '../app.js'",
       "const version = require('../../../package.json').version; // eslint-disable-line",
-    ],
-    "products": Array [
-      "Documentation",
     ],
     "products": Array [
       "Documentation",

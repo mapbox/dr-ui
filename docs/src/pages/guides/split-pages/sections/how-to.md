@@ -4,13 +4,13 @@ description: An introduction to use split pages.
 order: 2
 splitPage: true
 hideFeedback: true
+contentType: guide
 products:
   - Mapbox fundamentals
 prependJs:
-  - "import Note from '../../../../../../src/components/note/note';"
-  - "import MainPage from '!raw-loader!../index.js';"
-  - "import SubOne from '!raw-loader!./intro.md';"
-  - "import SplitPageShell from '!raw-loader!../../../../components/split-page-shell.js';"
+  - "import MainPage from '!raw-loader!../index.js'; //eslint-disable-line"
+  - "import SubOne from '!raw-loader!./intro.md'; //eslint-disable-line"
+  - "import SplitPageShell from '!raw-loader!../../../../components/split-page-shell.js'; //eslint-disable-line"
   - "import CodeSnippet from '../../../../../../src/components/code-snippet/code-snippet';"
   - "import { highlightJsx } from '../../../../../../src/components/highlight/jsx';"
   - "import { highlightHtml } from '../../../../../../src/components/highlight/html';"
@@ -24,27 +24,27 @@ The main page is where all the partial markdown files will be combined and displ
 
 - Create an `index.js` file. The main file must be a JavaScript file to make sure the scroll spy on the sidebar works correctly.
 - Add `splitPages: true` to the frontmatter.
-- Add `order` to designate the order of appears in the `NavgiationAccordion`.
+- Add `order` to choose the order of appears in the `NavgiationAccordion`.
 - Import each markdown file in the main page.
-- Import the splitPages function to override the page's headings.
+- Import the `splitPages` function to override the page's headings.
 - Set `hideFeedback: true` in the frontmatter of the main page (usually).
 
 {{ <div className="mb18"><CodeSnippet code={`${MainPage}`} highlighter={() => highlightJsx} filename="src/pages/guides/split-pages/index.js" /></div>}}
 
 ### 2. Create the split pages
 
-You must save the partial markdown files in a folder adjacent to the main JavaScript page.
+You must save the partial markdown files in a folder next to the main JavaScript page.
 
-- Create a folder, `sections`, adjacent to the main page.
+- Create a folder, `sections`, next to the main page.
 - Create markdown file for each page.
 - Add `splitPage: true` to the frontmatter.
-- Add `order: # number` to designate the order of pages - this is necessary in generating the headings. You will need to make sure this is the same order as the imported partial files in the main page.
+- Add `order:` to chose the order of pages - this is necessary in generating the headings. You will need to make sure this is the same order as the imported partial files in the main page.
 
 {{ <CodeSnippet code={`${SubOne}`} highlighter={() => highlightHtml} filename="src/pages/guides/split-pages/sections/intro.md" />}}
 
 ### 3. Update the Batfish configuration
 
-You will need to update the Batfish configuration to define the wrapper component for the partial markdown files and load the [`split-pages`](../batfish-helpers/#split-pages) Batfish helper function.
+You will need to update the Batfish configuration to define the wrapper component for the partial markdown files and load the [`split-pages`](/dr-ui/guides/batfish-helpers/#split-pages) Batfish helper function.
 
 #### SplitPage wrapper
 
@@ -55,7 +55,7 @@ Use the SplitPage component to create a wrapper for each markdown partial file. 
 
 {{ <CodeSnippet code={`${SplitPageShell}`} highlighter={() => highlightJsx} filename="src/components/split-page-shell.js" />}}
 
-Update `batfish.config.js` to initiate the new wrapper on the markdown partial files:
+Update `batfish.config.js` to define the new wrapper on the markdown partial files:
 
 {{ <CodeSnippet code={`jsxtremeMarkdownOptions: {
 getWrapper: resource => {
@@ -81,6 +81,8 @@ To add the split-pages data selector to your site:
 1. Import the split-pages function in `batfish.config.js`.
 2. Create a new `splitPages` dataSelector that references the `buildSplitPages` function.
 
+<!-- copyeditor ignore mapbox -->
+
 {{ <CodeSnippet code={`const {
 buildSplitPages
 } = require('@mapbox/dr-ui/helpers/batfish/split-pages.js');
@@ -93,7 +95,7 @@ splitPages: (data) => buildSplitPages(data)
 };
 };`} highlighter={() => highlightJsx} filename="batfish.config.js" />}}
 
-Learn more about the [`split-pages`](../batfish-helpers/#split-pages) Batfish helper function.
+Learn more about the [`split-pages`](/dr-ui/guides/batfish-helpers/#split-pages) Batfish helper function.
 
 ### 4. Create redirects
 
