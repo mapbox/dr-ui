@@ -2,12 +2,12 @@
 title: Example 3
 description: This is example 3.
 contentType: example
+language:
+  - JavaScript
 topics:
   - Navigation
   - Geocoding
 thumbnail: header-image
-language:
-  - JavaScript
 layout: example
 products:
   - Documentation

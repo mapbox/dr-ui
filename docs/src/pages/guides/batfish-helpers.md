@@ -5,6 +5,8 @@ order: 2
 contentType: guide
 hideFeedback: true
 layout: accordion
+products:
+  - Documentation
 prependJs:
   - "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line"
   - "import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line"
