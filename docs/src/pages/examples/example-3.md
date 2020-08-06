@@ -1,12 +1,15 @@
 ---
 title: Example 3
-description: Replace me.
+description: This is example 3.
 contentType: example
 topics:
   - Navigation
   - Geocoding
 thumbnail: header-image
-layout: example
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Welcome to Mapbox! Mapbox is a developer platform used across industries to create custom applications that solve problems with maps, data, and spatial analysis. Mapbox's tools are building blocks that support every part of the web and mobile map-making process. Whether your goal is to build a beautiful map to match your website or to build a full-featured geoprocessing application, we have you covered.
+
+## Heading
+
+Welcome to Mapbox! Mapbox is a developer platform used across industries to create custom applications that solve problems with maps, data, and spatial analysis. Mapbox's tools are building blocks that support every part of the web and mobile map-making process. Whether your goal is to build a beautiful map to match your website or to build a full-featured geoprocessing application, we have you covered.

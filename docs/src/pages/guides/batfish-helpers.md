@@ -2,10 +2,12 @@
 title: Batfish helpers
 description: Batfish data selector functions to build navigation and topic datasets.
 order: 2
+contentType: guide
+hideFeedback: true
 layout: accordion
 prependJs:
-  - "import navigation from '@mapbox/batfish/data/navigation';"
-  - "import topics from '@mapbox/batfish/data/topics';"
+  - "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line"
+  - "import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line"
 ---
 
 Dr. UI has two functions that are used in `dataSelectors` in `batfish.config.js` to help build page metadata and site hierarchy. Each data selector has tests to assert the shape of the data.
