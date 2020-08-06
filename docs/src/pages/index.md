@@ -7,11 +7,11 @@ prependJs:
   - "import App from '../app.js'"
   - "const version = require('../../../package.json').version; // eslint-disable-line"
 layout: example
-products:
-  - Documentation
 hideSubItems: false
 showCards: false
 includeFilterBar: true
+products:
+  - Documentation
 contentType: reference
 navOrder: 1
 hideTitle: true
