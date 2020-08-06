@@ -1,21 +1,6 @@
 {
   "pages": [
     {
-      "filePath": "./docs/src/pages/batfish-helpers.md",
-      "path": "/dr-ui/batfish-helpers/",
-      "frontMatter": {
-        "title": "Batfish helpers",
-        "description": "Batfish data selector functions to build navigation and topic datasets.",
-        "navOrder": 2,
-        "contentType": "guide",
-        "hideFeedback": true,
-        "prependJs": [
-          "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
-          "import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line"
-        ]
-      }
-    },
-    {
       "filePath": "./docs/src/pages/changelog.md",
       "path": "/dr-ui/changelog/",
       "frontMatter": {}
@@ -27,9 +12,10 @@
         "title": "Example 1",
         "description": "This is example 1.",
         "contentType": "example",
-        "language": ["JavaScript"],
         "topics": ["Navigation"],
-        "thumbnail": "header-image"
+        "thumbnail": "header-image",
+        "language": ["JavaScript"],
+        "layout": "example"
       }
     },
     {
@@ -39,9 +25,10 @@
         "title": "Example 2",
         "description": "This is example 2.",
         "contentType": "example",
-        "language": ["JavaScript"],
         "topics": ["Navigation"],
-        "thumbnail": "header-image"
+        "thumbnail": "header-image",
+        "language": ["JavaScript"],
+        "layout": "example"
       }
     },
     {
@@ -51,9 +38,10 @@
         "title": "Example 3",
         "description": "This is example 3.",
         "contentType": "example",
-        "language": ["JavaScript"],
         "topics": ["Navigation", "Geocoding"],
-        "thumbnail": "header-image"
+        "thumbnail": "header-image",
+        "language": ["JavaScript"],
+        "layout": "example"
       }
     },
     {
@@ -64,14 +52,61 @@
         "description": "Replace me.",
         "contentType": "example",
         "language": ["JavaScript"],
-        "navOrder": 3
+        "navOrder": 3,
+        "layout": "example",
+        "fullWidthCards": true
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/guides/batfish-helpers.md",
+      "path": "/dr-ui/guides/batfish-helpers/",
+      "frontMatter": {
+        "title": "Batfish helpers",
+        "description": "Batfish data selector functions to build navigation and topic datasets.",
+        "order": 2,
+        "contentType": "guide",
+        "hideFeedback": true,
+        "layout": "accordion",
+        "prependJs": [
+          "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
+          "import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line"
+        ]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/guides/index.md",
+      "path": "/dr-ui/guides/",
+      "frontMatter": {
+        "title": "Guides",
+        "description": "Guides to building sites with Dr. UI.",
+        "layout": "accordion",
+        "navOrder": 2,
+        "order": 1,
+        "contentType": "guide"
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/guides/page-layout.md",
+      "path": "/dr-ui/guides/page-layout/",
+      "frontMatter": {
+        "title": "PageLayout component",
+        "description": "All about building with PageLayout.",
+        "order": 3,
+        "layout": "accordion",
+        "hideFeedback": true,
+        "contentType": "guide",
+        "prependJs": [
+          "import layoutConfig from '../../../../src/components/page-layout/layout.config.js'",
+          "import components from '../../data/components';",
+          "import FrontMatter from '../../components/frontmatter.js';"
+        ]
       }
     },
     {
       "filePath": "./docs/src/pages/index.md",
       "path": "/dr-ui/",
       "frontMatter": {
-        "title": "Overview",
+        "title": "Components",
         "description": "UI components for Mapbox documentation projects.",
         "prependJs": [
           "import Note from '../../../src/components/note'",
@@ -80,9 +115,14 @@
           "const version = require('../../../package.json').version; // eslint-disable-line"
         ],
         "layout": "example",
+        "hideSubItems": false,
+        "showCards": false,
+        "includeFilterBar": true,
         "products": ["Documentation"],
         "contentType": "reference",
-        "navOrder": 1
+        "navOrder": 1,
+        "hideTitle": true,
+        "unProse": true
       }
     },
     {

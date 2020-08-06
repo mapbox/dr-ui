@@ -8,5 +8,3 @@ navOrder: 3
 layout: example
 fullWidthCards: true
 ---
-
-This page uses the examples layout and automatically pulls in the other pages in its folder to create the card layout below:

@@ -382,6 +382,9 @@ Object {
   "/dr-ui/": Object {
     "contentType": "reference",
     "description": "UI components for Mapbox documentation projects.",
+    "hideSubItems": false,
+    "hideTitle": true,
+    "includeFilterBar": true,
     "layout": "example",
     "navOrder": 1,
     "path": "/dr-ui/",
@@ -394,7 +397,8 @@ Object {
     "products": Array [
       "Documentation",
     ],
-    "title": "Overview",
+    "showCards": false,
+    "title": "Components",
     "topics": Array [
       Object {
         "count": 3,
@@ -406,6 +410,7 @@ Object {
             "language": Array [
               "JavaScript",
             ],
+            "layout": "example",
             "path": "/dr-ui/examples/example-1/",
             "text": "Example 1",
             "thumbnail": "header-image",
@@ -421,6 +426,7 @@ Object {
             "language": Array [
               "JavaScript",
             ],
+            "layout": "example",
             "path": "/dr-ui/examples/example-2/",
             "text": "Example 2",
             "thumbnail": "header-image",
@@ -436,6 +442,7 @@ Object {
             "language": Array [
               "JavaScript",
             ],
+            "layout": "example",
             "path": "/dr-ui/examples/example-3/",
             "text": "Example 3",
             "thumbnail": "header-image",
@@ -459,6 +466,7 @@ Object {
             "language": Array [
               "JavaScript",
             ],
+            "layout": "example",
             "path": "/dr-ui/examples/example-3/",
             "text": "Example 3",
             "thumbnail": "header-image",
@@ -473,13 +481,16 @@ Object {
         "url": "/dr-ui/#geocoding",
       },
     ],
+    "unProse": true,
   },
   "/dr-ui/examples/": Object {
     "contentType": "example",
     "description": "Replace me.",
+    "fullWidthCards": true,
     "language": Array [
       "JavaScript",
     ],
+    "layout": "example",
     "navOrder": 3,
     "path": "/dr-ui/examples/",
     "title": "Examples",
@@ -494,6 +505,7 @@ Object {
             "language": Array [
               "JavaScript",
             ],
+            "layout": "example",
             "path": "/dr-ui/examples/example-1/",
             "text": "Example 1",
             "thumbnail": "header-image",
@@ -509,6 +521,7 @@ Object {
             "language": Array [
               "JavaScript",
             ],
+            "layout": "example",
             "path": "/dr-ui/examples/example-2/",
             "text": "Example 2",
             "thumbnail": "header-image",
@@ -524,6 +537,7 @@ Object {
             "language": Array [
               "JavaScript",
             ],
+            "layout": "example",
             "path": "/dr-ui/examples/example-3/",
             "text": "Example 3",
             "thumbnail": "header-image",
@@ -547,6 +561,210 @@ Object {
             "language": Array [
               "JavaScript",
             ],
+            "layout": "example",
+            "path": "/dr-ui/examples/example-3/",
+            "text": "Example 3",
+            "thumbnail": "header-image",
+            "title": "Example 3",
+            "topics": Array [
+              "Navigation",
+              "Geocoding",
+            ],
+            "url": "/dr-ui/examples/example-3/",
+          },
+        ],
+        "url": "/dr-ui/examples/#geocoding",
+      },
+    ],
+  },
+}
+`;
+
+exports[`buildTopics sortingArr 1`] = `
+Object {
+  "/dr-ui/": Object {
+    "contentType": "reference",
+    "description": "UI components for Mapbox documentation projects.",
+    "hideSubItems": false,
+    "hideTitle": true,
+    "includeFilterBar": true,
+    "layout": "example",
+    "navOrder": 1,
+    "path": "/dr-ui/",
+    "prependJs": Array [
+      "import Note from '../../../src/components/note'",
+      "import OverviewHeader from '../../../src/components/overview-header'",
+      "import App from '../app.js'",
+      "const version = require('../../../package.json').version; // eslint-disable-line",
+    ],
+    "products": Array [
+      "Documentation",
+    ],
+    "showCards": false,
+    "title": "Components",
+    "topics": Array [
+      Object {
+        "count": 3,
+        "name": "Navigation",
+        "pages": Array [
+          Object {
+            "contentType": "example",
+            "description": "This is example 1.",
+            "language": Array [
+              "JavaScript",
+            ],
+            "layout": "example",
+            "path": "/dr-ui/examples/example-1/",
+            "text": "Example 1",
+            "thumbnail": "header-image",
+            "title": "Example 1",
+            "topics": Array [
+              "Navigation",
+            ],
+            "url": "/dr-ui/examples/example-1/",
+          },
+          Object {
+            "contentType": "example",
+            "description": "This is example 2.",
+            "language": Array [
+              "JavaScript",
+            ],
+            "layout": "example",
+            "path": "/dr-ui/examples/example-2/",
+            "text": "Example 2",
+            "thumbnail": "header-image",
+            "title": "Example 2",
+            "topics": Array [
+              "Navigation",
+            ],
+            "url": "/dr-ui/examples/example-2/",
+          },
+          Object {
+            "contentType": "example",
+            "description": "This is example 3.",
+            "language": Array [
+              "JavaScript",
+            ],
+            "layout": "example",
+            "path": "/dr-ui/examples/example-3/",
+            "text": "Example 3",
+            "thumbnail": "header-image",
+            "title": "Example 3",
+            "topics": Array [
+              "Navigation",
+              "Geocoding",
+            ],
+            "url": "/dr-ui/examples/example-3/",
+          },
+        ],
+        "url": "/dr-ui/#navigation",
+      },
+      Object {
+        "count": 1,
+        "name": "Geocoding",
+        "pages": Array [
+          Object {
+            "contentType": "example",
+            "description": "This is example 3.",
+            "language": Array [
+              "JavaScript",
+            ],
+            "layout": "example",
+            "path": "/dr-ui/examples/example-3/",
+            "text": "Example 3",
+            "thumbnail": "header-image",
+            "title": "Example 3",
+            "topics": Array [
+              "Navigation",
+              "Geocoding",
+            ],
+            "url": "/dr-ui/examples/example-3/",
+          },
+        ],
+        "url": "/dr-ui/#geocoding",
+      },
+    ],
+    "unProse": true,
+  },
+  "/dr-ui/examples/": Object {
+    "contentType": "example",
+    "description": "Replace me.",
+    "fullWidthCards": true,
+    "language": Array [
+      "JavaScript",
+    ],
+    "layout": "example",
+    "navOrder": 3,
+    "path": "/dr-ui/examples/",
+    "title": "Examples",
+    "topics": Array [
+      Object {
+        "count": 3,
+        "name": "Navigation",
+        "pages": Array [
+          Object {
+            "contentType": "example",
+            "description": "This is example 1.",
+            "language": Array [
+              "JavaScript",
+            ],
+            "layout": "example",
+            "path": "/dr-ui/examples/example-1/",
+            "text": "Example 1",
+            "thumbnail": "header-image",
+            "title": "Example 1",
+            "topics": Array [
+              "Navigation",
+            ],
+            "url": "/dr-ui/examples/example-1/",
+          },
+          Object {
+            "contentType": "example",
+            "description": "This is example 2.",
+            "language": Array [
+              "JavaScript",
+            ],
+            "layout": "example",
+            "path": "/dr-ui/examples/example-2/",
+            "text": "Example 2",
+            "thumbnail": "header-image",
+            "title": "Example 2",
+            "topics": Array [
+              "Navigation",
+            ],
+            "url": "/dr-ui/examples/example-2/",
+          },
+          Object {
+            "contentType": "example",
+            "description": "This is example 3.",
+            "language": Array [
+              "JavaScript",
+            ],
+            "layout": "example",
+            "path": "/dr-ui/examples/example-3/",
+            "text": "Example 3",
+            "thumbnail": "header-image",
+            "title": "Example 3",
+            "topics": Array [
+              "Navigation",
+              "Geocoding",
+            ],
+            "url": "/dr-ui/examples/example-3/",
+          },
+        ],
+        "url": "/dr-ui/examples/#navigation",
+      },
+      Object {
+        "count": 1,
+        "name": "Geocoding",
+        "pages": Array [
+          Object {
+            "contentType": "example",
+            "description": "This is example 3.",
+            "language": Array [
+              "JavaScript",
+            ],
+            "layout": "example",
             "path": "/dr-ui/examples/example-3/",
             "text": "Example 3",
             "thumbnail": "header-image",
