@@ -8,28 +8,22 @@ contentType: guide
 products:
   - Documentation
 prependJs:
-  - "import layoutConfig from '../../../../src/components/page-layout/layout.config.js'"
   - "import components from '../../data/components'; // eslint-disable-line"
   - "import FrontMatter from '../../components/frontmatter.js';"
+  - "import OtherProps from '../../components/other-props.js';"
+  - "import LayoutUsage from '../../components/layout-usage.js';"
+  - "import frontmatter from '!raw-loader!../../components/snippets/frontmatter.js';// eslint-disable-line"
 ---
 
-The `PageLayout` component is one of the more complex Dr. UI components. Its defaults help keep our pages consistent, but it has plenty of overrides that you configure and the page and site level. This guide will describe how to work with this component.
+The `PageLayout` component is the main controller for building page layouts with Dr. UI. There are several layouts to chose from that will help keep our pages consistent, but offer customization at the page and site level. This guide will describe how to work with this component.
 
-## How are layouts configured?
+## Layouts
 
 The `PageLayout` component comes with several layouts that you can define in your page's frontmatter. Each layout is a set of opinionated configurations, but you have to option customize the layout by setting additional frontmatter fields.
 
-## What are the layouts?
+{{<LayoutUsage />}}
 
-Layout options: `{{components.find(f => f.name === 'PageLayout').props.frontMatter.type.value.layout.value.map(v => v.value).join(', ')}}`
-
-Each layout has the following default configurations:
-
-```json
-{{JSON.stringify(layoutConfig,null,2)}}
-```
-
-## How do I set a layout?
+### How do I set a layout?
 
 In the frontmatter of the page, set the field `layout` to valid layout value.
 
@@ -41,23 +35,39 @@ layout: page
 
 The [remark-lint-mapbox/frontmatter](https://github.com/mapbox/remark-lint-mapbox/tree/main/frontmatter) linter will help assert that every markdown page has a valid layout.
 
-## How can I override a layout?
+### How can I override a layout?
 
-You can define any available frontmatter prop in the frontmatter of your page to override it. The following fields are configurable in your page's frontmatter:
+The following fields are configurable in your page's frontmatter:
 
 {{<FrontMatter />}}
 
-## How can I set defaults for multiple pages?
+### How can I set defaults for multiple pages or an entire site?
 
 When you create your PageLayout component in your site's page shell, you can define or redefine the frontmatter object.
 
 The example below will turn of the feedback component for every page:
 
-```jsx
-<PageLayout frontMatter={
-  ...this.props.frontMatter,
-  hideFeedback: true
-} />
+```
+{{frontmatter}}
 ```
 
-(Note: the frontmatter value in the example above should be wrapped in double `{{`, but Batfish is too eager to parse it.)
+## Topics and navigation
+
+The PageLayout component accepts a `topics` and `navigation` prop to define all the topics for examples and the site's navigation system, respectively.
+
+In most cases, you can use Batfish helpers to automatically generate this dataset. See the following resources on how to install these functions and use them with PageLayout:
+
+- [topics](/dr-ui/guides/batfish-helpers/#topics)
+- [navigation](/dr-ui/guides/batfish-helpers/#navigation)
+
+## Other props
+
+The PageLayout component accepts several more props to further customize your site.
+
+{{<OtherProps />}}
+
+## Top level navigation
+
+To define the top level navigation for your site, add `navOrder: 1` to the frontmatter of each top level page. Increment the number to reflect your desired order.
+
+You may need to restart Batfish to make the changes appear.

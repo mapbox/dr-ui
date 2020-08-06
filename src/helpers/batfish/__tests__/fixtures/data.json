@@ -104,9 +104,11 @@
         "contentType": "guide",
         "products": ["Documentation"],
         "prependJs": [
-          "import layoutConfig from '../../../../src/components/page-layout/layout.config.js'",
           "import components from '../../data/components'; // eslint-disable-line",
-          "import FrontMatter from '../../components/frontmatter.js';"
+          "import FrontMatter from '../../components/frontmatter.js';",
+          "import OtherProps from '../../components/other-props.js';",
+          "import LayoutUsage from '../../components/layout-usage.js';",
+          "import frontmatter from '!raw-loader!../../components/snippets/frontmatter.js';// eslint-disable-line"
         ]
       }
     },

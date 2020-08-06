@@ -64,10 +64,10 @@ dataSelectors: {
 import React from 'react';
 import navigation from '@mapbox/batfish/data/navigation';
 
-class SideBar extends React.Component {
+class PageShell extends React.Component {
   render () {
     return (
-      <TabList items={navigation.navTabs} />;
+      <PageLayout navigation={navigation} />;
     )
   }
 }
@@ -115,9 +115,11 @@ module.exports = () => {
 import React from 'react';
 import topics from '@mapbox/batfish/data/topics';
 
-class SideBar extends React.Component {
+class PageShell extends React.Component {
   render() {
-    const topicList = topics['/dr-ui/examples/'].topics;
+    return (
+      <PageLayout topics={topics} />;
+    )
   }
 }
 ```
