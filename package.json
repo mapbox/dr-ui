@@ -9,7 +9,7 @@
     "build-theme-css": "node scripts/create-theme-css.js",
     "budo": "budo test/app.js -l -d -P -- -t babelify",
     "prestart": "npm run build-theme-css && npm run build-component-index && npm run cp-assembly",
-    "test": "jest && npm run lint-md",
+    "test": "jest && npm run lint-md && npm run test-content",
     "build-component-index": "rtk-index ./src/components ./src/test-cases-app/component-index.js",
     "lint": "eslint .",
     "pretest": "npm run prepare-docs && npm run lint",
@@ -21,7 +21,8 @@
     "build-docs": "npm run prepare-docs && batfish build --config='docs/batfish.config.js'",
     "serve-static-docs": "batfish serve-static --config='docs/batfish.config.js'",
     "deploy-docs": "npm run build-docs && gh-pages -d docs/_site",
-    "lint-md": "remark docs/src/pages/"
+    "lint-md": "remark docs/src/pages/",
+    "test-content": "copyeditor docs/src/pages --dict docs/local.dic"
   },
   "repository": {
     "type": "git",
@@ -42,6 +43,7 @@
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
     "@mapbox/batfish": "^2.0.1",
+    "@mapbox/copyeditor": "^0.9.0",
     "@mapbox/eslint-config-docs": "^0.6.0",
     "@mapbox/eslint-config-mapbox": "^3.0.0",
     "@mapbox/jsxtreme-markdown": "^1.0.0",

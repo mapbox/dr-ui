@@ -16,7 +16,7 @@ navOrder: 1
 {{<OverviewHeader
   features={[
     'React components',
-    'Support for IE11 and all modern browsers'
+    'Support for IE 11 and all modern browsers'
   ]}
   image={<div />}
   title="Dr. UI"
@@ -26,7 +26,7 @@ navOrder: 1
   ghLink="https://github.com/mapbox/dr-ui"
 />}}
 
-Pronounced "Doctor UI". **D**ocumentation **R**eact **UI** components. [See @mapbox/mr-ui](https://mapbox.github.io/mr-ui/).
+Pronounced "Doctor UI". **D**ocumentation **R**eact **UI** components. [See `@mapbox/mr-ui`](https://mapbox.github.io/mr-ui/).
 
 UI components for Mapbox documentation projects.
 

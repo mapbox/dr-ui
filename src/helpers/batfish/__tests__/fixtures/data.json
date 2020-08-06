@@ -25,7 +25,7 @@
       "path": "/dr-ui/examples/example-1/",
       "frontMatter": {
         "title": "Example 1",
-        "description": "Replace me.",
+        "description": "This is example 1.",
         "contentType": "example",
         "language": ["JavaScript"],
         "topics": ["Navigation"],
@@ -37,7 +37,7 @@
       "path": "/dr-ui/examples/example-2/",
       "frontMatter": {
         "title": "Example 2",
-        "description": "Replace me.",
+        "description": "This is example 2.",
         "contentType": "example",
         "language": ["JavaScript"],
         "topics": ["Navigation"],
@@ -49,7 +49,7 @@
       "path": "/dr-ui/examples/example-3/",
       "frontMatter": {
         "title": "Example 3",
-        "description": "Replace me.",
+        "description": "This is example 3.",
         "contentType": "example",
         "language": ["JavaScript"],
         "topics": ["Navigation", "Geocoding"],
@@ -64,8 +64,7 @@
         "description": "Replace me.",
         "contentType": "example",
         "language": ["JavaScript"],
-        "navOrder": 3,
-        "layout": "example"
+        "navOrder": 3
       }
     },
     {

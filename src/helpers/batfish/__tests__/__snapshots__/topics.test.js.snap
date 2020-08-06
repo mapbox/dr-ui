@@ -402,7 +402,7 @@ Object {
         "pages": Array [
           Object {
             "contentType": "example",
-            "description": "Replace me.",
+            "description": "This is example 1.",
             "language": Array [
               "JavaScript",
             ],
@@ -417,7 +417,7 @@ Object {
           },
           Object {
             "contentType": "example",
-            "description": "Replace me.",
+            "description": "This is example 2.",
             "language": Array [
               "JavaScript",
             ],
@@ -432,7 +432,7 @@ Object {
           },
           Object {
             "contentType": "example",
-            "description": "Replace me.",
+            "description": "This is example 3.",
             "language": Array [
               "JavaScript",
             ],
@@ -455,7 +455,7 @@ Object {
         "pages": Array [
           Object {
             "contentType": "example",
-            "description": "Replace me.",
+            "description": "This is example 3.",
             "language": Array [
               "JavaScript",
             ],
@@ -480,7 +480,6 @@ Object {
     "language": Array [
       "JavaScript",
     ],
-    "layout": "example",
     "navOrder": 3,
     "path": "/dr-ui/examples/",
     "title": "Examples",
@@ -491,7 +490,7 @@ Object {
         "pages": Array [
           Object {
             "contentType": "example",
-            "description": "Replace me.",
+            "description": "This is example 1.",
             "language": Array [
               "JavaScript",
             ],
@@ -506,7 +505,7 @@ Object {
           },
           Object {
             "contentType": "example",
-            "description": "Replace me.",
+            "description": "This is example 2.",
             "language": Array [
               "JavaScript",
             ],
@@ -521,7 +520,7 @@ Object {
           },
           Object {
             "contentType": "example",
-            "description": "Replace me.",
+            "description": "This is example 3.",
             "language": Array [
               "JavaScript",
             ],
@@ -544,7 +543,7 @@ Object {
         "pages": Array [
           Object {
             "contentType": "example",
-            "description": "Replace me.",
+            "description": "This is example 3.",
             "language": Array [
               "JavaScript",
             ],
