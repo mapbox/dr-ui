@@ -74,7 +74,8 @@
         "products": ["Documentation"],
         "prependJs": [
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
-          "import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line"
+          "import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line",
+          "import splitPages from '@mapbox/batfish/data/split-pages'; // eslint-disable-line"
         ]
       }
     },
@@ -105,6 +106,80 @@
           "import components from '../../data/components'; // eslint-disable-line",
           "import FrontMatter from '../../components/frontmatter.js';"
         ]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/guides/split-pages/index.js",
+      "path": "/dr-ui/guides/split-pages/",
+      "frontMatter": {
+        "title": "Split pages",
+        "description": "This is the first section",
+        "splitPages": true,
+        "order": 3,
+        "layout": "accordion",
+        "contentType": "API",
+        "hideFeedback": true
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/guides/split-pages/sections/how-to.md",
+      "path": "/dr-ui/guides/split-pages/sections/how-to/",
+      "frontMatter": {
+        "title": "How to use spit pages",
+        "description": "An introduction to use split pages.",
+        "order": 2,
+        "splitPage": true,
+        "hideFeedback": true,
+        "contentType": "guide",
+        "products": ["Mapbox fundamentals"],
+        "prependJs": [
+          "import MainPage from '!raw-loader!../index.js'; //eslint-disable-line",
+          "import SubOne from '!raw-loader!./intro.md'; //eslint-disable-line",
+          "import SplitPageShell from '!raw-loader!../../../../components/split-page-shell.js'; //eslint-disable-line",
+          "import CodeSnippet from '../../../../../../src/components/code-snippet/code-snippet';",
+          "import { highlightJsx } from '../../../../../../src/components/highlight/jsx';",
+          "import { highlightHtml } from '../../../../../../src/components/highlight/html';"
+        ]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/guides/split-pages/sections/intro.md",
+      "path": "/dr-ui/guides/split-pages/sections/intro/",
+      "frontMatter": {
+        "title": "Introduction to split pages",
+        "description": "An introduction to use split pages.",
+        "order": 1,
+        "splitPage": true,
+        "hideFeedback": true,
+        "products": ["Documentation"],
+        "contentType": "guide"
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/guides/split-pages/sections/limitations.md",
+      "path": "/dr-ui/guides/split-pages/sections/limitations/",
+      "frontMatter": {
+        "title": "Limitations",
+        "description": "Limitations to the split page pattern.",
+        "order": 3,
+        "splitPage": true,
+        "hideFeedback": true,
+        "products": ["Mapbox fundamentals"],
+        "contentType": "guide"
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/guides/split-pages/sections/tag-debugger.md",
+      "path": "/dr-ui/guides/split-pages/sections/tag-debugger/",
+      "frontMatter": {
+        "title": "Tag debugger",
+        "description": "Limitations to the split page pattern.",
+        "order": 4,
+        "splitPage": true,
+        "tag": "beta",
+        "hideFeedback": true,
+        "products": ["Mapbox fundamentals"],
+        "contentType": "guide"
       }
     },
     {
