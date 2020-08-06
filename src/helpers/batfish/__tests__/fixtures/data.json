@@ -97,7 +97,7 @@
         "contentType": "guide",
         "prependJs": [
           "import layoutConfig from '../../../../src/components/page-layout/layout.config.js'",
-          "import components from '../../data/components';",
+          "import components from '../../data/components'; // eslint-disable-line",
           "import FrontMatter from '../../components/frontmatter.js';"
         ]
       }
