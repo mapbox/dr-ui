@@ -18,27 +18,33 @@ prependJs:
 
 ## How to use split pages
 
+Before you begin using this pattern, read through [the limitations](#limitations) to make sure this is the right option for your site.
+
 ### 1. Create the main page
 
 The main page is where all the partial markdown files will be combined and displayed.
 
-- Create an `index.js` file. The main file must be a JavaScript file to make sure the scroll spy on the sidebar works correctly.
-- Add `splitPages: true` to the frontmatter.
-- Add `order` to choose the order of appears in the `NavgiationAccordion`.
-- Import each markdown file in the main page.
-- Import the `splitPages` function to override the page's headings.
-- Set `hideFeedback: true` in the frontmatter of the main page (usually).
+1. Create an `index.js` file. The main file must be a JavaScript file to make sure the scroll spy on the sidebar works correctly.
+2. In the frontmatter of the page:
+   - Add `splitPages: true` to the frontmatter.
+   - Add `order` to choose the order of appears in the `NavgiationAccordion`.
+   - Set `hideFeedback: true` (usually).
+3. Import each markdown file in the main page.
+4. Import the `splitPages` function to override the page's headings. (Depending on your set-up, this step may happen in the site's page-shell instead.)
+
+#### Example
 
 {{ <div className="mb18"><CodeSnippet code={`${MainPage}`} highlighter={() => highlightJsx} filename="src/pages/guides/split-pages/index.js" /></div>}}
 
 ### 2. Create the split pages
 
-You must save the partial markdown files in a folder next to the main JavaScript page.
+1. Create new directory, `sections/`, in the same folder of the `index.js` you create in the previous step.
+2. Create markdown file for each page in the `sections/` directory.
+3. To each markdown file:
+   - Add `splitPage: true` to the frontmatter.
+   - Add `order:` to chose the order of pages - this is necessary in generating the headings. You will need to make sure this is the same order as the imported partial files in the main page.
 
-- Create a folder, `sections`, next to the main page.
-- Create markdown file for each page.
-- Add `splitPage: true` to the frontmatter.
-- Add `order:` to chose the order of pages - this is necessary in generating the headings. You will need to make sure this is the same order as the imported partial files in the main page.
+#### Example
 
 {{ <CodeSnippet code={`${SubOne}`} highlighter={() => highlightHtml} filename="src/pages/guides/split-pages/sections/intro.md" />}}
 
@@ -48,14 +54,20 @@ You will need to update the Batfish configuration to define the wrapper componen
 
 #### SplitPage wrapper
 
-Use the SplitPage component to create a wrapper for each markdown partial file. You will likely also need to create a local wrapper component to pass the page's constants file to the component - the Feedback component requires data from the constants file.
+Use the [SplitPage component](https://github.com/mapbox/dr-ui/blob/main/src/components/page-layout/split-page.js) (`@mapbox/dr-ui/page-layout/split-page`) to create a wrapper for each markdown partial file. You will likely also need to create a local wrapper component to pass the page's constants file to the component - the Feedback component requires data from the constants file.
 
-1. Create a local component and load in the SplitPage component and your local constants file.
-2. Pass all props and the constants to the SplitPage component:
+1. Create a local component: `split-page-shel.js`.
+2. Import the SplitPage component: `import SplitPage from '@mapbox/dr-ui/page-layout/split-page';`
+3. Import the site's local constant's file.
+4. Pass all props and the `constants` to the SplitPage component.
+
+##### Example
 
 {{ <CodeSnippet code={`${SplitPageShell}`} highlighter={() => highlightJsx} filename="src/components/split-page-shell.js" />}}
 
-Update `batfish.config.js` to define the new wrapper on the markdown partial files:
+#### Define SplitPage wrapper in the Batfish configuration
+
+1. Update `batfish.config.js` to define the new wrapper on the markdown partial files:
 
 {{ <CodeSnippet code={`jsxtremeMarkdownOptions: {
 getWrapper: resource => {

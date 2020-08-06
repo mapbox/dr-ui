@@ -11,15 +11,13 @@ contentType: guide
 
 ## Introduction to split pages
 
-This pages is a demo of using split pages and steps on how to implement it on a site.
+This page demos the split page pattern and provides steps on how to implement it on a site.
 
-To improve developer experience, we sometimes split a long page into multiple markdown files (also known as partial files) and then allow Batfish to combine them into a single page.
+### What is the split page pattern?
 
-### Set up
+The split page pattern splits a longer page into multiple markdown files (also known as partial files) and then imports the markdown files into a single page.
 
-- You will need to import the [`split-pages`](/dr-ui/guides/batfish-helpers/#split-pages) Batfish helper in your site's `batfish.config.js` file.
-- All partial files must be in a folder next to the main page. The steps in [How to use split pages](#how-to-use-split-pages) provides examples on how to structure your files.
-- Read through [the limitations of this pattern](#limitations).
+This pattern is helpful for improving internal developer experience.
 
 ### Current uses cases
 
