@@ -18,17 +18,17 @@ prependJs:
 
 ## How to use split pages
 
-Before you begin using this pattern, read through [the limitations](#limitations) to make sure this is the right option for your site.
+Before you begin using this pattern, read about its [limitations](#limitations) to make sure it's the right option for your site.
 
 ### 1. Create the main page
 
-The main page is where all the partial markdown files will be combined and displayed.
+The main page is where you will combine all the partial markdown files.
 
 1. Create an `index.js` file. The main file must be a JavaScript file to make sure the scroll spy on the sidebar works correctly.
 2. In the frontmatter of the page:
    - Add `splitPages: true` to the frontmatter.
    - Add `order` to choose the order of appears in the `NavgiationAccordion`.
-   - Set `hideFeedback: true` (usually).
+   - Set `hideFeedback: true` (usually). If your partial files will have feedback enabled, you'll want to disable the feedback from also appearing at the bottom of the page.
 3. Import each markdown file in the main page.
 4. Import the `splitPages` function to override the page's headings. (Depending on your set-up, this step may happen in the site's page-shell instead.)
 
@@ -38,9 +38,9 @@ The main page is where all the partial markdown files will be combined and displ
 
 ### 2. Create the split pages
 
-1. Create new directory, `sections/`, in the same folder of the `index.js` you create in the previous step.
-2. Create markdown file for each page in the `sections/` directory.
-3. To each markdown file:
+1. Create new directory, `sections/`, in the same folder as the `index.js` you created in the previous step.
+2. In the `sections/` directory, compose your markdown files.
+3. In each markdown file:
    - Add `splitPage: true` to the frontmatter.
    - Add `order:` to chose the order of pages - this is necessary in generating the headings. You will need to make sure this is the same order as the imported partial files in the main page.
 
@@ -54,9 +54,9 @@ You will need to update the Batfish configuration to define the wrapper componen
 
 #### SplitPage wrapper
 
-Use the [SplitPage component](https://github.com/mapbox/dr-ui/blob/main/src/components/page-layout/split-page.js) (`@mapbox/dr-ui/page-layout/split-page`) to create a wrapper for each markdown partial file. You will likely also need to create a local wrapper component to pass the page's constants file to the component - the Feedback component requires data from the constants file.
+Use the [SplitPage component](https://github.com/mapbox/dr-ui/blob/main/src/components/page-layout/split-page.js) (`@mapbox/dr-ui/page-layout/split-page`) as the wrapper for each markdown partial file. You will likely also need to create a local wrapper component to pass the page's constants file to the component since the Feedback component requires data from the constants file.
 
-1. Create a local component: `split-page-shel.js`.
+1. Create a local component: `src/components/split-page-shell.js`.
 2. Import the SplitPage component: `import SplitPage from '@mapbox/dr-ui/page-layout/split-page';`
 3. Import the site's local constant's file.
 4. Pass all props and the `constants` to the SplitPage component.
@@ -67,7 +67,7 @@ Use the [SplitPage component](https://github.com/mapbox/dr-ui/blob/main/src/comp
 
 #### Define SplitPage wrapper in the Batfish configuration
 
-1. Update `batfish.config.js` to define the new wrapper on the markdown partial files:
+1. Update `batfish.config.js` to define the new wrapper and using a logic, only apply the wrapper to files in the `sections/` directory:
 
 {{ <CodeSnippet code={`jsxtremeMarkdownOptions: {
 getWrapper: resource => {
@@ -86,12 +86,10 @@ getWrapper: resource => {
 
 #### Use the split-pages Batfish data selector
 
-The split-pages Batfish data selector will combine metadata and headings for all partial markdown files and create a single source for the main page to reference.
+The [`split-pages`](/dr-ui/guides/batfish-helpers/#split-pages) Batfish data selector will combine metadata and headings for all partial markdown files and create a single source for the main page to reference.
 
-To add the split-pages data selector to your site:
-
-1. Import the split-pages function in `batfish.config.js`.
-2. Create a new `splitPages` dataSelector that references the `buildSplitPages` function.
+1. Import the `buildSplitPages` function in `batfish.config.js`.
+2. Create a new `splitPages` dataSelector that returns the `buildSplitPages` function.
 
 <!-- copyeditor ignore mapbox -->
 
@@ -107,10 +105,8 @@ splitPages: (data) => buildSplitPages(data)
 };
 };`} highlighter={() => highlightJsx} filename="batfish.config.js" />}}
 
-Learn more about the [`split-pages`](/dr-ui/guides/batfish-helpers/#split-pages) Batfish helper function.
-
 ### 4. Create redirects
 
-You will need to create redirects in [subdomain-docs](https://github.com/mapbox/subdomain-docs) to redirect the partial files to the main file to prevent users, or more likely web crawlers from accessing the page partials.
+You will need to create redirects in [subdomain-docs](https://github.com/mapbox/subdomain-docs) to redirect the partial files to the main file. The redirects will prevent users, or more likely web crawlers, from accessing the page partials.
 
 See [Redirects for Studio Manual reference "sections" pages #75](https://github.com/mapbox/subdomain-docs/pull/75) for a similar example.

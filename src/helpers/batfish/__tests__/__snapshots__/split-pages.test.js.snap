@@ -16,21 +16,6 @@ Object {
     "headings": Array [
       Object {
         "level": 2,
-        "slug": "introduction-to-split-pages",
-        "text": "Introduction to split pages",
-      },
-      Object {
-        "level": 3,
-        "slug": "what-is-the-split-page-pattern",
-        "text": "What is the split page pattern?",
-      },
-      Object {
-        "level": 3,
-        "slug": "current-uses-cases",
-        "text": "Current uses cases",
-      },
-      Object {
-        "level": 2,
         "slug": "how-to-use-split-pages",
         "text": "How to use split pages",
       },
@@ -80,23 +65,7 @@ Object {
           "splitPage": true,
           "title": "Introduction to split pages",
         },
-        "headings": Array [
-          Object {
-            "level": 2,
-            "slug": "introduction-to-split-pages",
-            "text": "Introduction to split pages",
-          },
-          Object {
-            "level": 3,
-            "slug": "what-is-the-split-page-pattern",
-            "text": "What is the split page pattern?",
-          },
-          Object {
-            "level": 3,
-            "slug": "current-uses-cases",
-            "text": "Current uses cases",
-          },
-        ],
+        "headings": Array [],
         "order": 1,
         "path": "/dr-ui/guides/split-pages/sections/intro/",
         "platforms": undefined,
