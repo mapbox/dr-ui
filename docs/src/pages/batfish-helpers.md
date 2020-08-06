@@ -4,6 +4,8 @@ description: Batfish data selector functions to build navigation and topic datas
 navOrder: 2
 contentType: guide
 hideFeedback: true
+products:
+  - Documentation
 prependJs:
   - "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line"
   - "import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line"

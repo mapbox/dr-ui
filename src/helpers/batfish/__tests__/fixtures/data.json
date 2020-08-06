@@ -9,6 +9,7 @@
         "navOrder": 2,
         "contentType": "guide",
         "hideFeedback": true,
+        "products": ["Documentation"],
         "prependJs": [
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
           "import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line"
@@ -29,7 +30,8 @@
         "contentType": "example",
         "language": ["JavaScript"],
         "topics": ["Navigation"],
-        "thumbnail": "header-image"
+        "thumbnail": "header-image",
+        "products": ["Documentation"]
       }
     },
     {
@@ -41,7 +43,8 @@
         "contentType": "example",
         "language": ["JavaScript"],
         "topics": ["Navigation"],
-        "thumbnail": "header-image"
+        "thumbnail": "header-image",
+        "products": ["Documentation"]
       }
     },
     {
@@ -53,7 +56,8 @@
         "contentType": "example",
         "language": ["JavaScript"],
         "topics": ["Navigation", "Geocoding"],
-        "thumbnail": "header-image"
+        "thumbnail": "header-image",
+        "products": ["Documentation"]
       }
     },
     {
@@ -64,7 +68,8 @@
         "description": "Replace me.",
         "contentType": "example",
         "language": ["JavaScript"],
-        "navOrder": 3
+        "navOrder": 3,
+        "products": ["Documentation"]
       }
     },
     {
@@ -73,16 +78,16 @@
       "frontMatter": {
         "title": "Overview",
         "description": "UI components for Mapbox documentation projects.",
+        "navOrder": 1,
+        "layout": "example",
+        "contentType": "reference",
+        "products": ["Documentation"],
         "prependJs": [
           "import Note from '../../../src/components/note'",
           "import OverviewHeader from '../../../src/components/overview-header'",
           "import App from '../app.js'",
           "const version = require('../../../package.json').version; // eslint-disable-line"
-        ],
-        "layout": "example",
-        "products": ["Documentation"],
-        "contentType": "reference",
-        "navOrder": 1
+        ]
       }
     },
     {

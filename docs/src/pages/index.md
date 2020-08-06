@@ -1,16 +1,16 @@
 ---
 title: Overview
 description: UI components for Mapbox documentation projects.
+navOrder: 1
+layout: example
+contentType: reference
+products:
+  - Documentation
 prependJs:
   - "import Note from '../../../src/components/note'"
   - "import OverviewHeader from '../../../src/components/overview-header'"
   - "import App from '../app.js'"
   - "const version = require('../../../package.json').version; // eslint-disable-line"
-layout: example
-products:
-  - Documentation
-contentType: reference
-navOrder: 1
 ---
 
 {{<OverviewHeader
