@@ -2,11 +2,11 @@
 title: Example 1
 description: This is example 1.
 contentType: example
+language:
+  - JavaScript
 topics:
   - Navigation
 thumbnail: header-image
-language:
-  - JavaScript
 layout: example
 products:
   - Documentation
