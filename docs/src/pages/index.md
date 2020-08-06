@@ -1,6 +1,11 @@
 ---
 title: Components
 description: UI components for Mapbox documentation projects.
+navOrder: 1
+layout: example
+contentType: reference
+products:
+  - Documentation
 prependJs:
   - "import Note from '../../../src/components/note'"
   - "import OverviewHeader from '../../../src/components/overview-header'"

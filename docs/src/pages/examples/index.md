@@ -7,4 +7,6 @@ language:
 navOrder: 3
 layout: example
 fullWidthCards: true
+products:
+  - Documentation
 ---
