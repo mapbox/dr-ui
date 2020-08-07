@@ -1,4 +1,4 @@
-const { buildNavigation } = require('../navigation.js');
+const { buildNavigation } = require('../index.js');
 const data = require('./fixtures/data.json');
 const dataMulti = require('./fixtures/data-multi.json');
 const sections = require('./fixtures/sections.json');
