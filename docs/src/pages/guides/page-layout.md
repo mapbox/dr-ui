@@ -15,17 +15,19 @@ prependJs:
   - "import frontmatter from '!raw-loader!../../components/snippets/frontmatter.js';// eslint-disable-line"
 ---
 
-The `PageLayout` component is the main controller for building page layouts with Dr. UI. There are several layouts to chose from that will help keep our pages consistent, but offer customization at the page and site level. This guide will describe how to work with this component.
+The PageLayout component is the main controller for building pages with Dr. UI offering five layout options. PageLayout provides everything from the site's navigation, to the sidebar contents, and main content area. It also includes common components like Search and Feedback.
+
+While the [docs-starter-kit](https://github.com/mapbox/docs-starter-kit) configures PageLayout with the most common setup, this guide describes all available options to working and customizing the component.
 
 ## Layouts
 
-The `PageLayout` component comes with several layouts that you can define in your page's frontmatter. Each layout is a set of opinionated configurations, but you have to option customize the layout by setting additional frontmatter fields.
+The `PageLayout` component comes with several layouts that you define in your page's frontmatter. Each layout is a set of opinionated configurations, but you have to option customize the layout by setting additional frontmatter fields.
 
 {{<LayoutUsage />}}
 
 ### How do I set a layout?
 
-In the frontmatter of the page, set the field `layout` to valid layout value.
+In the frontmatter of the page, set the field `layout` to a valid layout value.
 
 Example:
 
@@ -35,9 +37,7 @@ layout: page
 
 The [remark-lint-mapbox/frontmatter](https://github.com/mapbox/remark-lint-mapbox/tree/main/frontmatter) linter will help assert that every markdown page has a valid layout.
 
-### How can I override a layout?
-
-The following fields are configurable in your page's frontmatter:
+### How can I customize the layout?
 
 {{<FrontMatter />}}
 
@@ -60,9 +60,9 @@ In most cases, you can use Batfish helpers to automatically generate this datase
 - [topics](/dr-ui/guides/batfish-helpers/#topics)
 - [navigation](/dr-ui/guides/batfish-helpers/#navigation)
 
-## Other props
+## Other PageLayout props
 
-The PageLayout component accepts several more props to further customize your site.
+The PageLayout component accepts the following props for you to further customize your site:
 
 {{<OtherProps />}}
 
@@ -71,3 +71,26 @@ The PageLayout component accepts several more props to further customize your si
 To define the top level navigation for your site, add `navOrder: 1` to the frontmatter of each top level page. Increment the number to reflect your desired order.
 
 You may need to restart Batfish to make the changes appear.
+
+## Custom sidebars
+
+Sites like Mapbox GL JS require custom sidebars since is data is derived from multiple sources. Similarly, the [Dr. UI component's page](/dr-ui/) also uses a custom sidebar, see the example below for how to conditionally display a custom sidebar:
+
+```jsx
+import Sidebar from './sidebar';
+
+class PageShell extends React.Component {
+  render() {
+    const { location } = this.props;
+    return (
+      <PageLayout
+        customSidebar={
+          location.pathname === '/dr-ui/' ? <Sidebar /> : undefined
+        }
+      >
+        {children}
+      </PageLayout>
+    );
+  }
+}
+```
