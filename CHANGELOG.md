@@ -3,6 +3,7 @@
 ## Main
 
 - Add `ErrorBoundary` component. [#272](https://github.com/mapbox/dr-ui/pull/272)
+- Pin the version numbers for all search-ui dependencies. [#321](https://github.com/mapbox/dr-ui/pull/321)
 
 ## 0.29.2
 
