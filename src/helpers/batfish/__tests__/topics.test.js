@@ -1,4 +1,4 @@
-const { buildTopics } = require('../topics.js');
+const { buildTopics } = require('../index.js');
 const data = require('./fixtures/data.json');
 const dataMulti = require('./fixtures/data-multi.json');
 
