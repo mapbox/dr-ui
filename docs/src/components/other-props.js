@@ -26,7 +26,6 @@ export default class OtherProps extends React.Component {
             .filter((f) => exclude.indexOf(f) === -1)
             .map((prop) => {
               const { description, type, options } = props[prop];
-              console.log('options', options);
               return (
                 <tr key={prop}>
                   <td>
