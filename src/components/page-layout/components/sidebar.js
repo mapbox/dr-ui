@@ -109,7 +109,7 @@ export default class Sidebar extends React.Component {
         >
           <div
             className={classnames('', {
-              'pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled': !customSidebar
+              'viewport-almost-mm scroll-auto-mm scroll-styled': !customSidebar
             })}
             id="dr-ui--page-layout-sidebar"
           >
