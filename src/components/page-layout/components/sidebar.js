@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Sticky from 'react-stickynode';
 import debounce from 'debounce';
-
+import classnames from 'classnames';
 import SidebarAccordion from './layouts/accordion/sidebar';
 import SidebarPage from './layouts/page/sidebar';
 import SidebarExamples from './layouts/example/sidebar';
@@ -107,7 +107,12 @@ export default class Sidebar extends React.Component {
           innerZ={3}
           top={topValue}
         >
-          <div id="dr-ui--page-layout-sidebar">
+          <div
+            className={classnames('', {
+              'pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled': !customSidebar
+            })}
+            id="dr-ui--page-layout-sidebar"
+          >
             {customSidebar ? customSidebar : this.getSidebarContent()}
           </div>
         </Sticky>

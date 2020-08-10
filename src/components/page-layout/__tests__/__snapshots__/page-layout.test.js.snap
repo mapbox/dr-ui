@@ -190,6 +190,7 @@ Array [
               }
             >
               <div
+                className="pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled"
                 id="dr-ui--page-layout-sidebar"
               >
                 <div
@@ -809,6 +810,7 @@ Array [
               }
             >
               <div
+                className="pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled"
                 id="dr-ui--page-layout-sidebar"
               >
                 <div
@@ -1369,6 +1371,7 @@ Array [
               }
             >
               <div
+                className="pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled"
                 id="dr-ui--page-layout-sidebar"
               >
                 <div
@@ -1710,6 +1713,7 @@ Array [
               }
             >
               <div
+                className="pt12-mm pt0 viewport-almost-mm scroll-auto-mm scroll-styled"
                 id="dr-ui--page-layout-sidebar"
               >
                 <div
