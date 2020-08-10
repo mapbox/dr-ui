@@ -113,16 +113,14 @@ export default class PageLayout extends React.Component {
 
 PageLayout.propTypes = {
   children: PropTypes.node,
-  /** Provided by Batfish, the `pathnam` (relative url) of the current page is required */
+  /** Provided by Batfish, the `pathname` (relative url) of the current page is required */
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired
   }).isRequired,
   /**
-Define the layout:
-- `layout` - one of: `page`, `accordion`, `example`, `full`, `exampleIndex`.
-
-Field | Description | Conditions
+`frontMatter` prop | Description | Conditions
 ---|---|---
+`layout` | One of: `page`, `accordion`, `example`, `full`, `exampleIndex`. |
 `navOrder` | If defined with a number, the page will be added as a top level navigation item. This is the canonical way for defining a top level page. |
 `hideTitle` | Hide the title of the page. |
 `hideFeedback` | Remove the feedback component from the bottom of the page. |
