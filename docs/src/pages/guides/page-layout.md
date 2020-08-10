@@ -75,7 +75,7 @@ In most cases, you can use Batfish helpers to automatically generate this datase
 
 ## Multi-structured sites
 
-Most docs.mapbox.com sites use a single structure, which means it documents a single product. However, [iOS](https://docs.mapbox.com/ios/maps/overview/) and [Android](https://docs.mapbox.com/android/maps/overview/) use a multi-structure to document maps, navigation, and search.
+Most docs.mapbox.com sites use a single structure, which means it documents a single product. But [iOS](https://docs.mapbox.com/ios/maps/overview/) and [Android](https://docs.mapbox.com/android/maps/overview/) use a multi-structure to document maps, navigation, and search.
 
 The [navigation](/dr-ui/guides/batfish-helpers/#navigation) Batfish helper function can handle multi-structured sites and build the `navigation` dataset required for PageLayout automatically. You will need to include a configuration object to define each part of the site. See [shape of multi-level sections](/dr-ui/guides/batfish-helpers/#shape-of-multi-level-sections) for how to write a configuration object.
 
