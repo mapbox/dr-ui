@@ -24,12 +24,12 @@ Before you begin using this pattern, read about its [limitations](#limitations) 
 
 The main page is where you will combine all the partial markdown files.
 
-1. Create an `index.js` file. The main file must be a JavaScript file to make sure the scroll spy on the sidebar works correctly.
-2. In the frontmatter of the page:
+1. Create an `index.js` file, this is the main page. It must be a JavaScript file so that the sidebar scroll spy will work correctly.
+2. In the frontmatter of the main page:
    - Add `splitPages: true` to the frontmatter.
-   - Add `order` to choose the order of appears in the `NavgiationAccordion`.
-   - Set `hideFeedback: true` (usually). If your partial files will have feedback enabled, you'll want to disable the feedback from also appearing at the bottom of the page.
-3. Import each markdown file in the main page.
+   - Add `order` to choose the order in which it will appear in the `NavgiationAccordion`.
+   - Set `hideFeedback: true` (usually). If the partial files will have feedback enabled, you'll want to disable the feedback from also appearing at the bottom of the page.
+3. Once created, import each partial file in the main page.
 4. Import the `splitPages` function to override the page's headings. (Depending on your set-up, this step may happen in the site's page-shell instead.)
 
 #### Example
@@ -42,7 +42,7 @@ The main page is where you will combine all the partial markdown files.
 2. In the `sections/` directory, compose your markdown files.
 3. In each markdown file:
    - Add `splitPage: true` to the frontmatter.
-   - Add `order:` to chose the order in which each section (or partial markdown file) will appear on the final page - this is necessary in generating the headings. You will need to make sure this is the same order as the imported partial files in the main page.
+   - Add `order:` to chose the order in which each section (or partial markdown file) will appear on the main page - this is necessary in generating the headings. You will need to make sure this is the same order as the imported partial files in the main page.
 
 #### Example
 
