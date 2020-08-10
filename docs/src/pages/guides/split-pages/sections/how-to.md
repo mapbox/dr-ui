@@ -38,11 +38,11 @@ The main page is where you will combine all the partial markdown files.
 
 ### 2. Create the split pages
 
-1. Create new directory, `sections/`, in the same folder as the `index.js` you created in the previous step.
+1. Create a new directory, `sections/`, in the same folder as the `index.js` you created in the previous step.
 2. In the `sections/` directory, compose your markdown files.
 3. In each markdown file:
    - Add `splitPage: true` to the frontmatter.
-   - Add `order:` to chose the order of pages - this is necessary in generating the headings. You will need to make sure this is the same order as the imported partial files in the main page.
+   - Add `order:` to chose the order in which each section (or partial markdown file) will appear on the final page - this is necessary in generating the headings. You will need to make sure this is the same order as the imported partial files in the main page.
 
 #### Example
 
@@ -81,8 +81,8 @@ getWrapper: resource => {
  }
 }`} highlighter={() => highlightJsx} filename="batfish.config.js" />}}
 
-- If you do not want the Feedback component to appear after each partial markdown page, you can reference `@mapbox/dr-ui/page-layout/split-page` instead of the local `split-page-shell.js` in `batfish.config.js`.
-- You can turn off the Feedback component from any partial markdown page by setting `hideFeedback: true` in the frontmatter of the desired page.
+- If you do not want the Feedback component to appear after each section (or partial markdown file), you can reference `@mapbox/dr-ui/page-layout/split-page` instead of the local `split-page-shell.js` in `batfish.config.js`.
+- You can turn off the Feedback component from any partial markdown file by setting `hideFeedback: true` in the frontmatter of the desired section.
 
 #### Use the split-pages Batfish data selector
 

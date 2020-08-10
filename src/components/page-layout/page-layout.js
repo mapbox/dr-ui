@@ -138,7 +138,7 @@ For `exampleIndex` layout:
 - `showCards` - enable or disable the `CardsContainer`. This is helpful for pages like the dr-ui Components page.
 
 For `accordion` layout or `sidebar: accordion`:
-- `hideFromNav` - if `true`, remove an item from appearing in NavigationAccordion.
+- `hideFromNav` - if `true`, remove an item from appearing in NavigationAccordion. (This is used in API docs.)
 
 Uncommon features:
 - `unProse` - if `true`, remove the "prose" class from PageLayout. This is helpful for non-content pages.
