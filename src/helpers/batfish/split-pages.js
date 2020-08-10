@@ -26,10 +26,7 @@ function buildSplitPages(data) {
     obj[page.path] = {
       ...page,
       pages: splitPages,
-      headings: combine(splitPages, 'headings'),
-      products: combine(splitPages, 'products'),
-      services: combine(splitPages, 'services'),
-      platforms: combine(splitPages, 'platforms')
+      headings: combine(splitPages, 'headings')
     };
     return obj;
   }, {});
@@ -42,9 +39,6 @@ function findSplitPages(data, page) {
       ...page,
       headings: getHeadings(page),
       slug: slugger.slug(page.frontMatter.title),
-      products: page.frontMatter.products,
-      services: page.frontMatter.services,
-      platforms: page.frontMatter.platforms,
       order: page.frontMatter.order // pull out order for easy sorting
     }))
     .sort(sortBy('order'));

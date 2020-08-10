@@ -68,11 +68,6 @@ Object {
         "headings": Array [],
         "order": 1,
         "path": "/dr-ui/guides/split-pages/sections/intro/",
-        "platforms": undefined,
-        "products": Array [
-          "Documentation",
-        ],
-        "services": undefined,
         "slug": "introduction-to-split-pages",
       },
       Object {
@@ -125,11 +120,6 @@ Object {
         ],
         "order": 2,
         "path": "/dr-ui/guides/split-pages/sections/how-to/",
-        "platforms": undefined,
-        "products": Array [
-          "Mapbox fundamentals",
-        ],
-        "services": undefined,
         "slug": "how-to-use-spit-pages",
       },
       Object {
@@ -154,11 +144,6 @@ Object {
         ],
         "order": 3,
         "path": "/dr-ui/guides/split-pages/sections/limitations/",
-        "platforms": undefined,
-        "products": Array [
-          "Mapbox fundamentals",
-        ],
-        "services": undefined,
         "slug": "limitations",
       },
       Object {
@@ -185,21 +170,10 @@ Object {
         ],
         "order": 4,
         "path": "/dr-ui/guides/split-pages/sections/tag-debugger/",
-        "platforms": undefined,
-        "products": Array [
-          "Mapbox fundamentals",
-        ],
-        "services": undefined,
         "slug": "tag-debugger",
       },
     ],
     "path": "/dr-ui/guides/split-pages/",
-    "platforms": Array [],
-    "products": Array [
-      "Documentation",
-      "Mapbox fundamentals",
-    ],
-    "services": Array [],
   },
 }
 `;

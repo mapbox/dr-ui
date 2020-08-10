@@ -170,7 +170,7 @@ class PageShell extends React.Component {
 
 ## Split pages
 
-`split-pages` supports groups of pages that use the [split page pattern](/dr-ui/guides/split-pages/) by generating and collecting `headings`, `products`, `services`, and `platforms` arrays for the main page to reference.
+`split-pages` supports groups of pages that use the [split page pattern](/dr-ui/guides/split-pages/) by generating and collecting `headings` for the main page to reference.
 
 ### Arguments
 
@@ -216,9 +216,6 @@ class PageShell extends React.Component {
 
 - The shape is an object, where the top-level keys are pathnames for top level pages that have split pages.
   - Each object has a `headings` array. It contains all the headings for the page.
-  - Each object has a `products` array. It contains all the products for the page.
-  - Each object may have a `platforms` array. It contains all the platforms for the page.
-  - Each object may have a `services` array. It contains all the services for the page.
 
 #### Sample
 

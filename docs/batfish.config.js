@@ -1,9 +1,9 @@
 const path = require('path');
-
-const { buildNavigation } = require('../src/helpers/batfish/navigation.js');
-const { buildTopics } = require('../src/helpers/batfish/topics.js');
-
-const { buildSplitPages } = require('../src/helpers/batfish/split-pages.js');
+const {
+  buildNavigation,
+  buildTopics,
+  buildSplitPages
+} = require('../src/helpers/batfish/index.js');
 
 const siteBasePath = '/dr-ui';
 
