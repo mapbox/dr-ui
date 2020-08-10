@@ -52,7 +52,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>android.support.constraint.ConstraintLayout</span> <span class=\\"token attr-name\\"><span class=\\"token namespace\\">xmlns:</span>android</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>http://schemas.android.com/apk/res/android<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>android.support.constraint.ConstraintLayout</span> <span class=\\"token attr-name\\"><span class=\\"token namespace\\">xmlns:</span>android</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>http://schemas.android.com/apk/res/android<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -74,7 +74,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">xmlns:</span>mapbox</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>http://schemas.android.com/apk/res-auto<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">xmlns:</span>mapbox</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>http://schemas.android.com/apk/res-auto<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -96,7 +96,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_width</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>match_parent<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_width</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>match_parent<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -118,7 +118,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_height</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>match_parent<span class=\\"token punctuation\\">\\"</span></span><span class=\\"token punctuation\\">></span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_height</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>match_parent<span class=\\"token punctuation\\">\\"</span></span><span class=\\"token punctuation\\">></span></span>",
                   }
                 }
                 style={
@@ -184,7 +184,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>id</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>@+id/mapView<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>id</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>@+id/mapView<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -206,7 +206,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_width</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>match_parent<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_width</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>match_parent<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -228,7 +228,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_height</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>match_parent<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_height</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>match_parent<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -250,7 +250,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>mapbox_cameraTargetLat</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>38.9098<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>mapbox_cameraTargetLat</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>38.9098<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -272,7 +272,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>mapbox_cameraTargetLng</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>-77.0295<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>mapbox_cameraTargetLng</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>-77.0295<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -294,7 +294,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>mapbox_cameraZoom</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>12<span class=\\"token punctuation\\">\\"</span></span> <span class=\\"token punctuation\\">/></span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>mapbox_cameraZoom</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>12<span class=\\"token punctuation\\">\\"</span></span> <span class=\\"token punctuation\\">/></span></span>",
                   }
                 }
                 style={
@@ -360,7 +360,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>id</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>@+id/startButton<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>id</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>@+id/startButton<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -382,7 +382,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_width</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>fill_parent<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_width</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>fill_parent<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -404,7 +404,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_height</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>wrap_content<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_height</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>wrap_content<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -426,7 +426,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_marginStart</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>16dp<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_marginStart</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>16dp<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -448,7 +448,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_marginLeft</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>16dp<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_marginLeft</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>16dp<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -470,7 +470,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_marginTop</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>16dp<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_marginTop</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>16dp<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -492,7 +492,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_marginEnd</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>16dp<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_marginEnd</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>16dp<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -514,7 +514,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>background</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>@color/mapboxGrayLight<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>background</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>@color/mapboxGrayLight<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -536,7 +536,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>enabled</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>false<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>enabled</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>false<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -558,7 +558,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>text</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>Start navigation<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>text</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>Start navigation<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -580,7 +580,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>textColor</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>@color/mapboxWhite<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>textColor</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>@color/mapboxWhite<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -602,7 +602,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>layout_constraintStart_toStartOf</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>parent<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>layout_constraintStart_toStartOf</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>parent<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -624,7 +624,7 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>layout_constraintTop_toTopOf</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>parent<span class=\\"token punctuation\\">\\"</span></span> <span class=\\"token punctuation\\">/></span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>layout_constraintTop_toTopOf</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>parent<span class=\\"token punctuation\\">\\"</span></span> <span class=\\"token punctuation\\">/></span></span>",
                   }
                 }
                 style={
@@ -760,7 +760,7 @@ exports[`android-layout-code-block With link to GitHub file renders as expected 
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">xmlns:</span>android</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>http://schemas.android.com/apk/res/android<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">xmlns:</span>android</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>http://schemas.android.com/apk/res/android<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -782,7 +782,7 @@ exports[`android-layout-code-block With link to GitHub file renders as expected 
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">xmlns:</span>mapbox</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>http://schemas.android.com/apk/res-auto<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">xmlns:</span>mapbox</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>http://schemas.android.com/apk/res-auto<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -804,7 +804,7 @@ exports[`android-layout-code-block With link to GitHub file renders as expected 
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_width</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>match_parent<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_width</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>match_parent<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -826,7 +826,7 @@ exports[`android-layout-code-block With link to GitHub file renders as expected 
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_height</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>match_parent<span class=\\"token punctuation\\">\\"</span></span><span class=\\"token punctuation\\">></span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_height</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>match_parent<span class=\\"token punctuation\\">\\"</span></span><span class=\\"token punctuation\\">></span></span>",
                   }
                 }
                 style={
@@ -892,7 +892,7 @@ exports[`android-layout-code-block With link to GitHub file renders as expected 
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>id</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>@+id/runtime_mapview<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>id</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>@+id/runtime_mapview<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -914,7 +914,7 @@ exports[`android-layout-code-block With link to GitHub file renders as expected 
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_width</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>match_parent<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_width</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>match_parent<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -936,7 +936,7 @@ exports[`android-layout-code-block With link to GitHub file renders as expected 
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_height</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>match_parent<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_height</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>match_parent<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -958,7 +958,7 @@ exports[`android-layout-code-block With link to GitHub file renders as expected 
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>mapbox_cameraTargetLat</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>19.948045<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>mapbox_cameraTargetLat</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>19.948045<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -980,7 +980,7 @@ exports[`android-layout-code-block With link to GitHub file renders as expected 
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>mapbox_cameraTargetLng</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>-84.654463<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>mapbox_cameraTargetLng</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>-84.654463<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -1002,7 +1002,7 @@ exports[`android-layout-code-block With link to GitHub file renders as expected 
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>mapbox_cameraZoom</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>3.371717<span class=\\"token punctuation\\">\\"</span></span> <span class=\\"token punctuation\\">/></span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>mapbox_cameraZoom</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>3.371717<span class=\\"token punctuation\\">\\"</span></span> <span class=\\"token punctuation\\">/></span></span>",
                   }
                 }
                 style={
@@ -1068,7 +1068,7 @@ exports[`android-layout-code-block With link to GitHub file renders as expected 
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>id</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>@+id/floatingActionButton<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>id</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>@+id/floatingActionButton<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -1090,7 +1090,7 @@ exports[`android-layout-code-block With link to GitHub file renders as expected 
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_width</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>wrap_content<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_width</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>wrap_content<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -1112,7 +1112,7 @@ exports[`android-layout-code-block With link to GitHub file renders as expected 
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_height</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>wrap_content<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_height</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>wrap_content<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -1134,7 +1134,7 @@ exports[`android-layout-code-block With link to GitHub file renders as expected 
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_marginEnd</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>16dp<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_marginEnd</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>16dp<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -1156,7 +1156,7 @@ exports[`android-layout-code-block With link to GitHub file renders as expected 
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_marginRight</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>16dp<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_marginRight</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>16dp<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -1178,7 +1178,7 @@ exports[`android-layout-code-block With link to GitHub file renders as expected 
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_marginBottom</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>16dp<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">android:</span>layout_marginBottom</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>16dp<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -1200,7 +1200,7 @@ exports[`android-layout-code-block With link to GitHub file renders as expected 
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>layout_constraintBottom_toBottomOf</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>parent<span class=\\"token punctuation\\">\\"</span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>layout_constraintBottom_toBottomOf</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>parent<span class=\\"token punctuation\\">\\"</span></span>",
                   }
                 }
                 style={
@@ -1222,7 +1222,7 @@ exports[`android-layout-code-block With link to GitHub file renders as expected 
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>layout_constraintEnd_toEndOf</span><span class=\\"token attr-value\\"><span class=\\"token punctuation\\">=</span><span class=\\"token punctuation\\">\\"</span>parent<span class=\\"token punctuation\\">\\"</span></span> <span class=\\"token punctuation\\">/></span></span>",
+                    "__html": "<span class=\\"token attr-name\\"><span class=\\"token namespace\\">mapbox:</span>layout_constraintEnd_toEndOf</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">\\"</span>parent<span class=\\"token punctuation\\">\\"</span></span> <span class=\\"token punctuation\\">/></span></span>",
                   }
                 }
                 style={
