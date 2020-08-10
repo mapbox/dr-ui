@@ -12,6 +12,8 @@ describe('buildTopics', () => {
   });
 
   it('sortingArr', () => {
-    expect(buildTopics(data, null, ['Awesome', 'Cool'])).toMatchSnapshot();
+    expect(
+      buildTopics(data, null, ['Geocoding', 'Navigation'])
+    ).toMatchSnapshot();
   });
 });
