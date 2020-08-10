@@ -555,7 +555,7 @@ exports[`syntax-highlighting Objective C highlighting renders as expected 1`] = 
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token macro property\\">#<span class=\\"token directive keyword\\">import</span> \\"ViewController.h\\"</span>",
+                    "__html": "<span class=\\"token macro property\\"><span class=\\"token directive-hash\\">#</span><span class=\\"token directive keyword\\">import</span> <span class=\\"token string\\">\\"ViewController.h\\"</span></span>",
                   }
                 }
                 style={
@@ -731,7 +731,7 @@ exports[`syntax-highlighting Objective C highlighting renders as expected 1`] = 
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "NSURL <span class=\\"token operator\\">*</span>url <span class=\\"token operator\\">=</span> <span class=\\"token punctuation\\">[</span>NSURL URLWithString<span class=\\"token punctuation\\">:</span><span class=\\"token string\\">@\\"mapbox://styles/mapbox/streets-v10\\"</span><span class=\\"token punctuation\\">]</span><span class=\\"token punctuation\\">;</span>",
+                    "__html": "NSURL <span class=\\"token operator\\">*</span>url <span class=\\"token operator\\">=</span> <span class=\\"token punctuation\\">[</span>NSURL URLWithString<span class=\\"token punctuation\\">:</span><span class=\\"token operator\\">@</span>\\"mapbox<span class=\\"token punctuation\\">:</span><span class=\\"token comment\\">//styles/mapbox/streets-v10\\"];</span>",
                   }
                 }
                 style={
