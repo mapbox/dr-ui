@@ -61,13 +61,15 @@ class SectionedNavigationSection extends React.Component {
       return null;
     }
     const items = this.props.items.map((item) => {
+      const isActive =
+        item.active || (props.location && props.location.pathname === item.url);
       return (
         <a
           key={item.url}
           href={item.url}
-          ref={item.active ? this.activeSidebar : undefined}
+          ref={isActive ? this.activeSidebar : undefined}
           className={classnames('color-blue-on-hover block mb6', {
-            'txt-bold': item.active
+            'txt-bold': isActive
           })}
         >
           {item.text}
@@ -99,7 +101,10 @@ SectionedNavigationSection.propTypes = {
     })
   ).isRequired,
   includeCount: PropTypes.bool,
-  hideSubItems: PropTypes.bool
+  hideSubItems: PropTypes.bool,
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired
+  })
 };
 
 SectionedNavigationSection.defaultProps = {

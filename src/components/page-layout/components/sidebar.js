@@ -90,6 +90,7 @@ export default class Sidebar extends React.Component {
             sectionPath={parentPath}
             includeFilterBar={includeFilterBar}
             sidebarTitle={sidebarTitle}
+            location={this.props.location}
           />
         );
     }
