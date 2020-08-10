@@ -39,7 +39,7 @@ PageShell.propTypes = {
     level: PropTypes.number,
     headings: PropTypes.array
   }).isRequired,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node
 };
 
 export default PageShell;
