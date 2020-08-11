@@ -98,15 +98,16 @@ export default class Sidebar extends React.Component {
 
   render() {
     const { stickyEnabled, bottomBoundaryValue, topValue } = this.state;
-    const { customSidebar } = this.props;
-
+    const { customSidebar, topBarSticker } = this.props;
+    // if topBarSticker is turned off (false), set topValue to 0
+    const top = topBarSticker ? topValue : 0;
     return (
       <div data-swiftype-index="false">
         <Sticky
           enabled={stickyEnabled}
           bottomBoundary={bottomBoundaryValue}
           innerZ={3}
-          top={topValue}
+          top={top}
         >
           <div
             className={classnames('', {
@@ -145,5 +146,6 @@ Sidebar.propTypes = {
     hideSubItems: PropTypes.bool,
     includeFilterBar: PropTypes.bool
   }),
-  customSidebar: PropTypes.node
+  customSidebar: PropTypes.node,
+  topBarSticker: PropTypes.bool
 };

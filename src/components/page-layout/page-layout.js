@@ -28,7 +28,7 @@ export default class PageLayout extends React.Component {
 
   // render the page's sidebar
   renderSidebar = (config, switchedNavigation, parentPath) => {
-    const { customSidebar, headings } = this.props;
+    const { customSidebar, headings, topBarSticker } = this.props;
     return (
       config.sidebar !== 'none' && (
         <div className={`col col--4-mm col--12 ${config.sidebarTheme}`}>
@@ -39,6 +39,7 @@ export default class PageLayout extends React.Component {
             layoutConfig={config}
             customSidebar={customSidebar}
             headings={headings}
+            topBarSticker={topBarSticker}
           />
         </div>
       )
@@ -110,6 +111,11 @@ export default class PageLayout extends React.Component {
     );
   }
 }
+
+PageLayout.defaultProps = {
+  // topbar sticker is sticky by default
+  topBarSticker: true
+};
 
 PageLayout.propTypes = {
   children: PropTypes.node,
