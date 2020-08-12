@@ -5,6 +5,7 @@
 - Add `AnalyticsShell` component. [#307](https://github.com/mapbox/dr-ui/pull/307)
 - Add Batfish helpers: navigation and topics.
 - Update PageLayout to accept layouts.
+- 🚨 The `user` props is deprecated in `Feedback`. The component will now fetch this data. [#324](https://github.com/mapbox/dr-ui/pull/324)
 
 ## 0.30.0
 
