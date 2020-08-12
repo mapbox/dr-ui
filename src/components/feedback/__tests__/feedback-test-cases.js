@@ -7,13 +7,13 @@ const testCases = {};
 
 testCases.basic = {
   component: Feedback,
-  description: 'Basic (sends user information as `crocsfan19`)',
+  description: 'Basic',
   element: <Basic />
 };
 
 testCases.type = {
   component: Feedback,
-  description: 'Change type (sends anonymous user information)',
+  description: 'Change type',
   props: {
     type: 'section',
     site: 'dr-ui',
@@ -29,8 +29,7 @@ testCases.type = {
 
 testCases.noSentry = {
   component: Feedback,
-  description:
-    'Does not send text feedback to Sentry (sends anonymous user information)',
+  description: 'Does not send text feedback to Sentry',
   props: {
     site: 'dr-ui',
     webhook: {

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`feedback Basic (sends user information as \`crocsfan19\`) renders as expected 1`] = `
+exports[`feedback Basic renders as expected 1`] = `
 <div
   className="bg-gray-faint py12 px18 round color-gray"
 >
@@ -32,7 +32,7 @@ exports[`feedback Basic (sends user information as \`crocsfan19\`) renders as ex
 </div>
 `;
 
-exports[`feedback Change type (sends anonymous user information) renders as expected 1`] = `
+exports[`feedback Change type renders as expected 1`] = `
 <div
   className="bg-gray-faint py12 px18 round color-gray"
 >
