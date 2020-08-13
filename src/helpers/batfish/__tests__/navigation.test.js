@@ -3,6 +3,8 @@ const data = require('./fixtures/data.json');
 const dataMulti = require('./fixtures/data-multi.json');
 const sections = require('./fixtures/sections.json');
 
+const apiDebug = require('./fixtures/api-debug.json');
+
 const siteBasePath = '/docs-starter-kit';
 
 describe('buildNavigation', () => {
@@ -14,6 +16,38 @@ describe('buildNavigation', () => {
     expect(
       buildNavigation(siteBasePath, dataMulti, sections)
     ).toMatchSnapshot();
+  });
+
+  it('accordion pages are sorted by order', () => {
+    expect(buildNavigation('/api', apiDebug).accordion).toEqual({
+      '/api/': [
+        {
+          path: '/api/',
+          title: 'Introduction'
+        },
+        {
+          path: '/api/maps/',
+          title: 'Maps service'
+        },
+        {
+          path: '/api/navigation/',
+          title: 'Navigation service'
+        },
+        {
+          path: '/api/search/',
+          title: 'Search service'
+        },
+
+        {
+          path: '/api/accounts/',
+          title: 'Accounts service'
+        },
+        {
+          path: '/api/changelog/',
+          title: 'Changelog'
+        }
+      ]
+    });
   });
 
   it('hideFromNav, removes items', () => {

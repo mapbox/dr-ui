@@ -124,7 +124,9 @@ function buildNavTabs(organized) {
 
 function buildAccordion(organized) {
   return Object.keys(organized).reduce((obj, path) => {
-    const pages = organized[path].pages.filter((f) => !f.hideFromNav);
+    const pages = organized[path].pages
+      .filter((f) => !f.hideFromNav)
+      .sort((a, b) => parseInt(a.order) - parseInt(b.order));
     const findAccordionLayout = pages.filter((p) => p.layout === 'accordion');
     if (findAccordionLayout.length > 0) {
       obj[path] = pages.map((p) => ({
