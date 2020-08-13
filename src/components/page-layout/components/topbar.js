@@ -45,7 +45,7 @@ export default class PageLayoutTopbar extends React.Component {
               </div>
             </div>
             <div className="col col--6-mm col--12">
-              {navTabs && (
+              {navTabs && navTabs.length > 0 && (
                 <TabList items={this.renderNavTabs()} activeItem={parentPath} />
               )}
             </div>
