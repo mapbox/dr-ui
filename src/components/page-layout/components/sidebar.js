@@ -111,7 +111,9 @@ export default class Sidebar extends React.Component {
         >
           <div
             className={classnames('', {
-              'viewport-almost-mm scroll-auto-mm scroll-styled': !customSidebar
+              'scroll-auto-mm scroll-styled': !customSidebar,
+              'viewport-almost-mm': !customSidebar && topBarSticker,
+              'viewport-full-mm': !customSidebar && !topBarSticker // if topbar sticker is not sticky, make sidebar go full height
             })}
             id="dr-ui--page-layout-sidebar"
           >
