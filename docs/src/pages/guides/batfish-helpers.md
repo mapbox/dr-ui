@@ -125,7 +125,7 @@ class PageShell extends React.Component {
 
 ### Output
 
-- The shape of topics is an object, where the top-level keys are pathnames for top level pages that have subpages with `topics` or `topic`.
+- The shape of topics is an object, where the top-level keys are pathnames for top-level pages that have subpages with `topics` or `topic`.
   - Each object has a `topics`. It contains a unique list of topics, ordered by count of pages with that topic.
     - Each topic has `pages`. It contains metadata for each page that has that topic.
 

@@ -127,7 +127,7 @@ PageLayout.propTypes = {
 `frontMatter` prop | Description | Conditions
 ---|---|---
 `layout` | One of: `page`, `accordion`, `example`, `full`, `exampleIndex`. |
-`navOrder` | If defined with a number, the page will be added as a top level navigation item. This is the canonical way for defining a top level page. |
+`navOrder` | If defined with a number, the page will be added to TabList in the navigation bar. This is the canonical way for defining a top-level page. |
 `hideTitle` | Hide the title of the page. |
 `hideFeedback` | Remove the feedback component from the bottom of the page. |
 `sidebar` | one of: `toc`, `accordion`, `sectioned`, `none` | all layouts except `none`

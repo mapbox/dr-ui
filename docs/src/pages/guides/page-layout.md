@@ -13,6 +13,9 @@ prependJs:
   - "import OtherProps from '../../components/other-props.js';"
   - "import LayoutUsage from '../../components/layout-usage.js';"
   - "import frontmatter from '!raw-loader!../../components/snippets/frontmatter.js';// eslint-disable-line"
+  - "import Topbar from '../../../../src/components/page-layout/components/topbar.js';"
+  - "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line"
+  - "import constants from '../../constants.json';"
 ---
 
 The [`PageLayout`](/dr-ui/#pagelayout) component is the main controller for building pages with Dr. UI and offers five layout options. `PageLayout` provides everything from the site's navigation, to the sidebar contents, and main content area. It also includes common components like Search and Feedback.
@@ -87,11 +90,47 @@ The `PageLayout` component accepts the following props for you to further custom
 
 {{<OtherProps />}}
 
-## Top level navigation
+## Navigation bar
 
-To define the top level navigation for your site, add `navOrder: 1` to the frontmatter of each top level page. Increment the number to reflect your desired order.
+The navigation bar appears at the top of every page. It uses [`ProductMenu`](/dr-ui/#productmenu) to show the site title, [`Search`](/dr-ui/#search) to add search feature, and [`TabList`](https://mapbox.github.io/mr-ui/#tablist) to list the top-level pages for the site.
 
-When developing locally, you may need to restart your local server to see the changes reflected in the site.
+{{<div className=''>
+<Topbar navigation={navigation} parentPath="/dr-ui/guides/" constants={constants} />
+
+  <div><em>The navigation bar for this site.</em></div>
+  </div>
+}}
+
+### What are top-level pages?
+
+Top-level pages are a small set of pages that define a section of the site. These pages build the content hierarchy and act as a homepage for each section. The hierarchy is also important for telling `TabList` which section the user is now on so it can add a blue bottom border indicator.
+
+For example, this page falls under [Guides](/dr-ui/guides/), a top-level page. Since you're visiting a page under the Guide's section, the Guides link in the `TabList` has a blue bottom border indicator to help show you where you are on the site.
+
+Top-level pages almost always follow the folder structure in `src/pages/`. For example a site with the following folder structure likely uses `examples/index.md`, `help/index.md`, and `overview/index.md` as it's top-level pages:
+
+```
+src/
+  pages/
+    examples/
+      index.md
+      clustering.md
+      markers.md
+    help/
+      index.md
+    overview/
+      index.md
+```
+
+### How do I define top-level pages for a site?
+
+You can define a top-level page by adding `navOrder: 1` to the frontmatter of the desired pages. Increment the number to reflect the order you want them to appear in the navigation bar. Once updated, these pages will automatically populate the navigation bar.
+
+Things to consider:
+
+- Your site must have at least one top-level page.
+- If your site requires more than four top-level pages, you should reconsider the information architecture of the site.
+- When developing locally, you may need to restart your local server to see the changes reflected in the site.
 
 ## Custom sidebars
 
