@@ -141,7 +141,7 @@ class PageShell extends React.Component {
 
 - `path` (required) string. Top-level folder in `src/pages`.
 - `title` (required) string. Title of the product.
-- `tag` (optional) string. Name of tag to add to ProductMenu. [See options](/dr-ui/#productmenu).
+- `tag` (optional) string. Name of tag to add to `ProductMenu`. [See options](/dr-ui/#productmenu).
 
 ### Example
 
