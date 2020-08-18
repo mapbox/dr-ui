@@ -6,6 +6,10 @@
 - Add Batfish helpers: navigation and topics.
 - Update PageLayout to accept layouts.
 
+## Main
+
+- Update dependencies. [#326](https://github.com/mapbox/dr-ui/pull/326)
+
 ## 0.30.0
 
 - Add `ErrorBoundary` component. [#272](https://github.com/mapbox/dr-ui/pull/272)
