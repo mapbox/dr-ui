@@ -1,5 +1,5 @@
 import React from 'react';
-import Page from '../examples/basic';
+import Page from '../examples/page';
 import Example from '../examples/example';
 import ExamplePage from '../examples/example-page';
 import Accordion from '../examples/accordion';
