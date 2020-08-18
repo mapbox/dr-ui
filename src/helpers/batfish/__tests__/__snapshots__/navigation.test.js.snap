@@ -569,8 +569,8 @@ Object {
         "title": undefined,
       },
       Object {
-        "path": "/dr-ui/examples/example-1/",
-        "title": "Example 1",
+        "path": "/dr-ui/404/",
+        "title": undefined,
       },
       Object {
         "path": "/dr-ui/examples/example-2/",
@@ -585,12 +585,16 @@ Object {
         "title": "Examples",
       },
       Object {
+        "path": "/dr-ui/examples/example-1/",
+        "title": "Example 1",
+      },
+      Object {
         "path": "/dr-ui/guides/",
         "title": "Guides",
       },
       Object {
-        "path": "/dr-ui/guides/batfish-helpers/",
-        "title": "Batfish helpers",
+        "path": "/dr-ui/guides/multi-structured/",
+        "title": "Multi-structured sites",
       },
       Object {
         "path": "/dr-ui/guides/page-layout/",
@@ -601,8 +605,8 @@ Object {
         "title": "Components",
       },
       Object {
-        "path": "/dr-ui/404/",
-        "title": undefined,
+        "path": "/dr-ui/guides/batfish-helpers/",
+        "title": "Batfish helpers",
       },
     ],
     "/dr-ui/guides/": Array [
@@ -617,6 +621,10 @@ Object {
       Object {
         "path": "/dr-ui/guides/page-layout/",
         "title": "PageLayout component",
+      },
+      Object {
+        "path": "/dr-ui/guides/multi-structured/",
+        "title": "Multi-structured sites",
       },
     ],
   },
@@ -654,6 +662,10 @@ Object {
       "title": "Guides",
     },
     "/dr-ui/guides/batfish-helpers/": Object {
+      "parent": "/dr-ui/guides/",
+      "title": "Guides",
+    },
+    "/dr-ui/guides/multi-structured/": Object {
       "parent": "/dr-ui/guides/",
       "title": "Guides",
     },

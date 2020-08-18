@@ -68,7 +68,7 @@ export default class PageLayout extends React.Component {
 
     const { navOrder, noShellHeaderBuffer } = frontMatter;
 
-    // determine's if this is a single or multi-level site (the latter has sections)
+    // determine's if this is a single or multi-structured site (the latter has sections)
     const hasSection = findHasSection(navigation, location.pathname);
     // get the parent's path, we need this for the top nav
     const parentPath = findParentPath(navigation, location.pathname);

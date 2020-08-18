@@ -92,6 +92,19 @@
       }
     },
     {
+      "filePath": "./docs/src/pages/guides/multi-structured.md",
+      "path": "/dr-ui/guides/multi-structured/",
+      "frontMatter": {
+        "title": "Multi-structured sites",
+        "description": "How to build a site with more than one product.",
+        "order": 4,
+        "layout": "accordion",
+        "hideFeedback": true,
+        "contentType": "guide",
+        "products": ["Documentation"]
+      }
+    },
+    {
       "filePath": "./docs/src/pages/guides/page-layout.md",
       "path": "/dr-ui/guides/page-layout/",
       "frontMatter": {

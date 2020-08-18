@@ -24,7 +24,7 @@ These dataset functions often use the page's relative pathname as a unique ident
 
 - `siteBasePath`, required. The function requires the `siteBasePath`.
 - `data`, object. Provided by the data selector.
-- `sections`, array. See [Shape of multi-level sections](#shape-of-multi-level-sections).
+- `sections`, array. See [Shape of multi-structured sections](#shape-of-multi-structured-sections).
 
 ### Set up in batfish.config.js
 
@@ -45,7 +45,7 @@ module.exports = () => {
 };
 ```
 
-Multi-level sites require and additional configuration array:
+Multi-structured sites require and additional configuration array:
 
 ```js
 dataSelectors: {
@@ -137,7 +137,7 @@ class PageShell extends React.Component {
 }
 ```
 
-## Shape of multi-level `sections`
+## Shape of multi-structured `sections`
 
 - `path` (required) string. Top-level folder in `src/pages`.
 - `title` (required) string. Title of the product.

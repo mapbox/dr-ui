@@ -15,7 +15,7 @@ prependJs:
   - "import frontmatter from '!raw-loader!../../components/snippets/frontmatter.js';// eslint-disable-line"
 ---
 
-The `PageLayout` component is the main controller for building pages with Dr. UI and offers five layout options. `PageLayout` provides everything from the site's navigation, to the sidebar contents, and main content area. It also includes common components like Search and Feedback.
+The [`PageLayout`](/dr-ui/#pagelayout) component is the main controller for building pages with Dr. UI and offers five layout options. `PageLayout` provides everything from the site's navigation, to the sidebar contents, and main content area. It also includes common components like Search and Feedback.
 
 While the [docs-starter-kit](https://github.com/mapbox/docs-starter-kit) configures `PageLayout` with the most common setup, this guide describes all available options to working and customizing the component.
 
@@ -77,7 +77,9 @@ In most cases, you can use Batfish helpers to automatically generate this datase
 
 Most docs.mapbox.com sites use a single structure, which means it documents a single product. But [iOS](https://docs.mapbox.com/ios/maps/overview/) and [Android](https://docs.mapbox.com/android/maps/overview/) use a multi-structure to document maps, navigation, and search.
 
-The [navigation](/dr-ui/guides/batfish-helpers/#navigation) Batfish helper function can handle multi-structured sites and build the `navigation` dataset required for `PageLayout` automatically. You will need to include a configuration object to define each part of the site. See [shape of multi-level sections](/dr-ui/guides/batfish-helpers/#shape-of-multi-level-sections) for how to write a configuration object.
+The [navigation](/dr-ui/guides/batfish-helpers/#navigation) Batfish helper function can handle multi-structured sites and build the `navigation` dataset required for `PageLayout` automatically. You will need to include a configuration object to define each part of the site. See [shape of multi-structured sections](/dr-ui/guides/batfish-helpers/#shape-of-multi-structured-sections) for how to write a configuration object.
+
+**See the [Multi-structured guide](/dr-ui/guides/multi-structured/) for steps on building a new site.**
 
 ## Other `PageLayout` props
 
