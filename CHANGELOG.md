@@ -5,6 +5,10 @@
 - Add `AnalyticsShell` component. [#307](https://github.com/mapbox/dr-ui/pull/307)
 - Add Batfish helpers: navigation and topics.
 
+## Main
+
+- Update dependencies. [#326](https://github.com/mapbox/dr-ui/pull/326)
+
 ## 0.30.0
 
 - Add `ErrorBoundary` component. [#272](https://github.com/mapbox/dr-ui/pull/272)
