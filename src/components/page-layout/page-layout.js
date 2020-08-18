@@ -68,7 +68,7 @@ export default class PageLayout extends React.Component {
 
     const { navOrder, noShellHeaderBuffer } = frontMatter;
 
-    // determine's if this is a single or multli-level site (the latter has sections)
+    // determine's if this is a single or multi-level site (the latter has sections)
     const hasSection = findHasSection(navigation, location.pathname);
     // get the parent's path, we need this for the top nav
     const parentPath = findParentPath(navigation, location.pathname);
@@ -170,7 +170,7 @@ PageLayout.propTypes = {
 - `navTabs` - links to be shown in the `TabList` of `TopBarSticker`, formatted as an array of object: `[{"href": "/overview", "id": "overview", "label": "Overview"}]`
 - `accordion` - links to be added to NavigationAccordion, formatted as an object where the top key is the main page's path: `{"/overview/": [{"path": "/overview/", "title": "Overview"}, {"path": "/overview/layouts/", "title": "Layouts"}]}`
 - `hierarchy` - Object of every path and their parent: `{"/overview/layous": {"parent": "/overview", "title": "Overview"}}`
-- `title` - required for mult-structured layouts, this is the title for the `ProductMenu`
+- `title` - required for multi-structured layouts, this is the title for the `ProductMenu`
 - `tag` - optional `tag` name to pass to `ProductMenu`, [see available options](#productmenu).
 */
   navigation: PropTypes.shape({
@@ -213,7 +213,7 @@ PageLayout.propTypes = {
       staging: PropTypes.string.isRequired
     }).isRequired
   }).isRequired,
-  /** Required if using the `exampleIndex` layout along with image ids. The value is the local `AppropriateImage` component. */
+  /** Required if using the `exampleIndex` layout along with `imageId`s. The value is the local `AppropriateImage` component. */
   AppropriateImage: PropTypes.func,
   /** If false, unstick the TopBarSticker */
   topBarSticker: PropTypes.bool,
