@@ -21,7 +21,7 @@ While the [docs-starter-kit](https://github.com/mapbox/docs-starter-kit) configu
 
 ## Layouts
 
-The `PageLayout` component comes with several layouts that you define in your page's frontmatter. Each layout is a set of opinionated configurations, but you have to option customize the layout by setting additional frontmatter fields.
+The `PageLayout` component comes with several layouts that you define in your page's frontmatter. Each layout is a set of opinionated configurations, but you have the option to customize the layout by setting additional frontmatter fields.
 
 {{<LayoutUsage data={{
   page:
@@ -58,7 +58,7 @@ You can set any of the following `frontMatter` props from the frontmatter in you
 
 When you create your PageLayout component in your site's page shell, you can define or redefine the frontmatter object.
 
-The example below will turn of the feedback component for every page:
+The example below will turn off the feedback component for every page:
 
 ```
 {{frontmatter}}
@@ -66,7 +66,7 @@ The example below will turn of the feedback component for every page:
 
 ## Topics and navigation
 
-The PageLayout component accepts a `topics` and `navigation` prop to define all the topics for examples and the site's navigation system, respectively.
+The PageLayout component accepts `topics` and `navigation` props to define all the topics for examples and the site's navigation system, respectively.
 
 In most cases, you can use Batfish helpers to automatically generate this dataset. See the following resources on how to install these functions and use them with PageLayout:
 
@@ -89,11 +89,11 @@ The PageLayout component accepts the following props for you to further customiz
 
 To define the top level navigation for your site, add `navOrder: 1` to the frontmatter of each top level page. Increment the number to reflect your desired order.
 
-You may need to restart Batfish to make the changes appear.
+When developing locally, you may need to restart your local server to see the changes reflected in the site.
 
 ## Custom sidebars
 
-Sites like Mapbox GL JS require custom sidebars since is data is derived from multiple sources. Similarly, the [Dr. UI component's page](/dr-ui/) also uses a custom sidebar, see the example below for how to conditionally display a custom sidebar:
+Sites like Mapbox GL JS require custom sidebars since the data is derived from multiple sources. Similarly, the [Dr. UI component's page](/dr-ui/) also uses a custom sidebar, see the example below for how to conditionally display a custom sidebar:
 
 ```jsx
 import Sidebar from './sidebar';
