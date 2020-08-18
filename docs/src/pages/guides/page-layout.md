@@ -95,10 +95,11 @@ The `PageLayout` component accepts the following props for you to further custom
 
 The navigation bar appears at the top of every page. It uses [`ProductMenu`](/dr-ui/#productmenu) to show the site title, [`Search`](/dr-ui/#search) to add search feature, and [`TabList`](https://mapbox.github.io/mr-ui/#tablist) to list the top-level pages for the site.
 
-{{<div className=''>
-<Topbar navigation={navigation} parentPath="/dr-ui/guides/" constants={constants} />
+{{
 
-  <div><em>The navigation bar for this site.</em></div>
+  <div className=''>
+    <Topbar navigation={navigation} parentPath="/dr-ui/guides/" constants={constants} />
+    <div><em>The navigation bar for this site.</em></div>
   </div>
 }}
 
