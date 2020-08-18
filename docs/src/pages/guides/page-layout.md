@@ -16,6 +16,7 @@ prependJs:
   - "import Topbar from '../../../../src/components/page-layout/components/topbar.js';"
   - "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line"
   - "import constants from '../../constants.json';"
+  - "import Note from '../../../../src/components/note';"
 ---
 
 The [`PageLayout`](/dr-ui/#pagelayout) component is the main controller for building pages with Dr. UI and offers five layout options. `PageLayout` provides everything from the site's navigation, to the sidebar contents, and main content area. It also includes common components like Search and Feedback.
@@ -131,6 +132,15 @@ Things to consider:
 - Your site must have at least one top-level page.
 - If your site requires more than four top-level pages, you should reconsider the information architecture of the site.
 - When developing locally, you may need to restart your local server to see the changes reflected in the site.
+
+{{<Note>}}
+The frontmatter props `navOrder` and `order` have different functions.
+
+- `navOrder` identifies a top-level page and its order.
+- `order` sets the order for all pages in a section that uses the `accordion` layout.
+
+For top-level pages using the `accordion` layout, besides setting `navOrder`, you will also set `order: 1` to make sure that the top-level page appears first in the [`NavigationAccordion`](/dr-ui/#navigationaccordion)
+{{</Note>}}
 
 ## Custom sidebars
 
