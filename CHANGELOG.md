@@ -3,8 +3,13 @@
 ## Layouts
 
 - Add `AnalyticsShell` component. [#307](https://github.com/mapbox/dr-ui/pull/307)
-- Add Batfish helpers: navigation and topics.
-- Update PageLayout to accept layouts.
+- Add Batfish helpers: `navigation` and `topics`. [#310](https://github.com/mapbox/dr-ui/pull/310)
+- Add Batfish helper: `split-pages`. [#317](https://github.com/mapbox/dr-ui/pull/317)
+- Update `PageLayout` to accept layouts. [#309](https://github.com/mapbox/dr-ui/pull/309)
+  - The added layouts: `page`, `accordion`, `example`, `full`, `exampleIndex`.
+  - 🚨 The following props are deprecated and are no longer configurable: `sidebarTitle`, `sidebarContent`, `sidebarContentStickyTop`, `sidebarContentStickyTopNarrow`, `sidebarStackedOnNarrowScreens`, `sideBarColSize`, `interactiveClass`.
+  - `sidebarTheme` is now defined from the `frontMatter` object.
+  - See the [`PageLayout`](http://mapbox.github.io/dr-ui/guides/page-layout/) guide for more information on building with this component.
 - 🚨 The `user` props is deprecated in `Feedback`. The component will now fetch this data. [#324](https://github.com/mapbox/dr-ui/pull/324)
 
 ## Main
