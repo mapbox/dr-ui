@@ -253,23 +253,31 @@ exports[`feedback Feedback placement (sends anonymous user information) renders 
                       className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover"
                       onClick={[Function]}
                     >
-                      Title one
-                      <svg
-                        className="events-none icon inline-block align-t"
-                        focusable="false"
-                        role="presentation"
-                        style={
-                          Object {
-                            "height": 18,
-                            "width": 18,
-                          }
-                        }
+                      <div
+                        className="txt-truncate"
                       >
-                        <use
-                          xlinkHref="#icon-chevron-down"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
-                        />
-                      </svg>
+                        Title one
+                      </div>
+                      <div
+                        className="flex-child--no-shrink w18"
+                      >
+                        <svg
+                          className="events-none icon inline-block align-t"
+                          focusable="false"
+                          role="presentation"
+                          style={
+                            Object {
+                              "height": 18,
+                              "width": 18,
+                            }
+                          }
+                        >
+                          <use
+                            xlinkHref="#icon-chevron-down"
+                            xmlnsXlink="http://www.w3.org/1999/xlink"
+                          />
+                        </svg>
+                      </div>
                     </button>
                     <nav
                       aria-hidden={true}
@@ -281,7 +289,7 @@ exports[`feedback Feedback placement (sends anonymous user information) renders 
                           className="mb3"
                         >
                           <a
-                            className="link link--gray"
+                            className="link link--gray block py6 px12"
                             href="page-one"
                           >
                             Title one
@@ -291,7 +299,7 @@ exports[`feedback Feedback placement (sends anonymous user information) renders 
                           className="mb3"
                         >
                           <a
-                            className="link link--gray"
+                            className="link link--gray block py6 px12"
                             href="page-two"
                           >
                             Title two

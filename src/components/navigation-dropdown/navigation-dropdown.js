@@ -13,6 +13,7 @@ class NavigationDropdown extends React.Component {
   }
 
   triggerHideMenu = (event) => {
+    // if the current elementis not inside the dropdownContainer, then hide the menu
     if (!this.dropdownContainer.current.contains(event.target)) {
       this.hideMenu();
     }
@@ -62,21 +63,25 @@ class NavigationDropdown extends React.Component {
           aria-expanded={!dropdownClosed}
           className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover"
         >
-          {currentOption ? currentOption.title : label}
-          <Icon name="chevron-down" inline={true} />
+          <div className="txt-truncate">
+            {currentOption ? currentOption.title : label}
+          </div>
+          <div className="flex-child--no-shrink w18">
+            <Icon name="chevron-down" inline={true} />
+          </div>
         </button>
         <nav
           id={id}
           className={classnames('', {
             none: dropdownClosed,
-            'absolute round bg-white shadow-darken10 w-full py12 px12 mt6 z5': !dropdownClosed
+            'absolute round bg-white shadow-darken10 w-full mt6 z5 py6 hmax240 scroll-auto scroll-styled': !dropdownClosed
           })}
           aria-hidden={dropdownClosed}
         >
           <ul>
             {dropdownOptions.map((opt) => (
               <li key={opt.title} className="mb3">
-                <a className="link link--gray" href={opt.path}>
+                <a className="link link--gray block py6 px12" href={opt.path}>
                   {opt.title}
                 </a>
               </li>

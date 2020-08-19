@@ -12,23 +12,31 @@ exports[`navigation-dropdown Basic renders as expected 1`] = `
     className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover"
     onClick={[Function]}
   >
-    Title one
-    <svg
-      className="events-none icon inline-block align-t"
-      focusable="false"
-      role="presentation"
-      style={
-        Object {
-          "height": 18,
-          "width": 18,
-        }
-      }
+    <div
+      className="txt-truncate"
     >
-      <use
-        xlinkHref="#icon-chevron-down"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-      />
-    </svg>
+      Title one
+    </div>
+    <div
+      className="flex-child--no-shrink w18"
+    >
+      <svg
+        className="events-none icon inline-block align-t"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 18,
+            "width": 18,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-chevron-down"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
   </button>
   <nav
     aria-hidden={true}
@@ -40,7 +48,7 @@ exports[`navigation-dropdown Basic renders as expected 1`] = `
         className="mb3"
       >
         <a
-          className="link link--gray"
+          className="link link--gray block py6 px12"
           href="page-one"
         >
           Title one
@@ -50,7 +58,7 @@ exports[`navigation-dropdown Basic renders as expected 1`] = `
         className="mb3"
       >
         <a
-          className="link link--gray"
+          className="link link--gray block py6 px12"
           href="page-two"
         >
           Title two
@@ -73,23 +81,31 @@ exports[`navigation-dropdown Custom label renders as expected 1`] = `
     className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover"
     onClick={[Function]}
   >
-    Options
-    <svg
-      className="events-none icon inline-block align-t"
-      focusable="false"
-      role="presentation"
-      style={
-        Object {
-          "height": 18,
-          "width": 18,
-        }
-      }
+    <div
+      className="txt-truncate"
     >
-      <use
-        xlinkHref="#icon-chevron-down"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-      />
-    </svg>
+      Options
+    </div>
+    <div
+      className="flex-child--no-shrink w18"
+    >
+      <svg
+        className="events-none icon inline-block align-t"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 18,
+            "width": 18,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-chevron-down"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
   </button>
   <nav
     aria-hidden={true}
@@ -101,7 +117,7 @@ exports[`navigation-dropdown Custom label renders as expected 1`] = `
         className="mb3"
       >
         <a
-          className="link link--gray"
+          className="link link--gray block py6 px12"
           href="page-one"
         >
           Title one
@@ -111,10 +127,209 @@ exports[`navigation-dropdown Custom label renders as expected 1`] = `
         className="mb3"
       >
         <a
-          className="link link--gray"
+          className="link link--gray block py6 px12"
           href="page-two"
         >
           Title two
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`navigation-dropdown Many dropdown items renders as expected 1`] = `
+<div
+  className="dr-ui--navigation-dropdown relative"
+>
+  <button
+    aria-controls="many"
+    aria-expanded={false}
+    aria-haspopup="true"
+    aria-label="Toggle menu"
+    className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover"
+    onClick={[Function]}
+  >
+    <div
+      className="txt-truncate"
+    >
+      Page 7
+    </div>
+    <div
+      className="flex-child--no-shrink w18"
+    >
+      <svg
+        className="events-none icon inline-block align-t"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 18,
+            "width": 18,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-chevron-down"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
+  </button>
+  <nav
+    aria-hidden={true}
+    className="none"
+    id="many"
+  >
+    <ul>
+      <li
+        className="mb3"
+      >
+        <a
+          className="link link--gray block py6 px12"
+          href="page-0"
+        >
+          Page 0
+        </a>
+      </li>
+      <li
+        className="mb3"
+      >
+        <a
+          className="link link--gray block py6 px12"
+          href="page-1"
+        >
+          Page 1
+        </a>
+      </li>
+      <li
+        className="mb3"
+      >
+        <a
+          className="link link--gray block py6 px12"
+          href="page-2"
+        >
+          Page 2
+        </a>
+      </li>
+      <li
+        className="mb3"
+      >
+        <a
+          className="link link--gray block py6 px12"
+          href="page-3"
+        >
+          Page 3
+        </a>
+      </li>
+      <li
+        className="mb3"
+      >
+        <a
+          className="link link--gray block py6 px12"
+          href="page-4"
+        >
+          Page 4
+        </a>
+      </li>
+      <li
+        className="mb3"
+      >
+        <a
+          className="link link--gray block py6 px12"
+          href="page-5"
+        >
+          Page 5
+        </a>
+      </li>
+      <li
+        className="mb3"
+      >
+        <a
+          className="link link--gray block py6 px12"
+          href="page-6"
+        >
+          Page 6
+        </a>
+      </li>
+      <li
+        className="mb3"
+      >
+        <a
+          className="link link--gray block py6 px12"
+          href="page-7"
+        >
+          Page 7
+        </a>
+      </li>
+      <li
+        className="mb3"
+      >
+        <a
+          className="link link--gray block py6 px12"
+          href="page-8"
+        >
+          Page 8
+        </a>
+      </li>
+      <li
+        className="mb3"
+      >
+        <a
+          className="link link--gray block py6 px12"
+          href="page-9"
+        >
+          Page 9
+        </a>
+      </li>
+      <li
+        className="mb3"
+      >
+        <a
+          className="link link--gray block py6 px12"
+          href="page-10"
+        >
+          Page 10
+        </a>
+      </li>
+      <li
+        className="mb3"
+      >
+        <a
+          className="link link--gray block py6 px12"
+          href="page-11"
+        >
+          Page 11
+        </a>
+      </li>
+      <li
+        className="mb3"
+      >
+        <a
+          className="link link--gray block py6 px12"
+          href="page-12"
+        >
+          Page 12
+        </a>
+      </li>
+      <li
+        className="mb3"
+      >
+        <a
+          className="link link--gray block py6 px12"
+          href="page-13"
+        >
+          Page 13
+        </a>
+      </li>
+      <li
+        className="mb3"
+      >
+        <a
+          className="link link--gray block py6 px12"
+          href="page-14"
+        >
+          Page 14
         </a>
       </li>
     </ul>
@@ -134,23 +349,31 @@ exports[`navigation-dropdown Missing \`currentPath\` renders as expected 1`] = `
     className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover"
     onClick={[Function]}
   >
-    Menu
-    <svg
-      className="events-none icon inline-block align-t"
-      focusable="false"
-      role="presentation"
-      style={
-        Object {
-          "height": 18,
-          "width": 18,
-        }
-      }
+    <div
+      className="txt-truncate"
     >
-      <use
-        xlinkHref="#icon-chevron-down"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-      />
-    </svg>
+      Menu
+    </div>
+    <div
+      className="flex-child--no-shrink w18"
+    >
+      <svg
+        className="events-none icon inline-block align-t"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 18,
+            "width": 18,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-chevron-down"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
   </button>
   <nav
     aria-hidden={true}
@@ -162,7 +385,7 @@ exports[`navigation-dropdown Missing \`currentPath\` renders as expected 1`] = `
         className="mb3"
       >
         <a
-          className="link link--gray"
+          className="link link--gray block py6 px12"
           href="page-one"
         >
           Title one
@@ -172,7 +395,76 @@ exports[`navigation-dropdown Missing \`currentPath\` renders as expected 1`] = `
         className="mb3"
       >
         <a
-          className="link link--gray"
+          className="link link--gray block py6 px12"
+          href="page-two"
+        >
+          Title two
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`navigation-dropdown Super long title will be truncated renders as expected 1`] = `
+<div
+  className="dr-ui--navigation-dropdown relative"
+>
+  <button
+    aria-controls="super"
+    aria-expanded={false}
+    aria-haspopup="true"
+    aria-label="Toggle menu"
+    className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover"
+    onClick={[Function]}
+  >
+    <div
+      className="txt-truncate"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+    </div>
+    <div
+      className="flex-child--no-shrink w18"
+    >
+      <svg
+        className="events-none icon inline-block align-t"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 18,
+            "width": 18,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-chevron-down"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </div>
+  </button>
+  <nav
+    aria-hidden={true}
+    className="none"
+    id="super"
+  >
+    <ul>
+      <li
+        className="mb3"
+      >
+        <a
+          className="link link--gray block py6 px12"
+          href="page-one"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+        </a>
+      </li>
+      <li
+        className="mb3"
+      >
+        <a
+          className="link link--gray block py6 px12"
           href="page-two"
         >
           Title two

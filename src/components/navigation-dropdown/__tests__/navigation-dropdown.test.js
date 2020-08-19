@@ -49,4 +49,36 @@ describe('navigation-dropdown', () => {
       expect(tree).toMatchSnapshot();
     });
   });
+
+  describe(testCases.many.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.many;
+      wrapper = renderer.create(testCase.element);
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
+
+  describe(testCases.superLong.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.superLong;
+      wrapper = renderer.create(testCase.element);
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });
