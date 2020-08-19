@@ -93,6 +93,19 @@
       }
     },
     {
+      "filePath": "./docs/src/pages/guides/multi-structured.md",
+      "path": "/dr-ui/guides/multi-structured/",
+      "frontMatter": {
+        "title": "Multi-structured sites",
+        "description": "How to build a site with more than one product.",
+        "order": 4,
+        "layout": "accordion",
+        "hideFeedback": true,
+        "contentType": "guide",
+        "products": ["Documentation"]
+      }
+    },
+    {
       "filePath": "./docs/src/pages/guides/page-layout.md",
       "path": "/dr-ui/guides/page-layout/",
       "frontMatter": {
@@ -108,7 +121,11 @@
           "import FrontMatter from '../../components/frontmatter.js';",
           "import OtherProps from '../../components/other-props.js';",
           "import LayoutUsage from '../../components/layout-usage.js';",
-          "import frontmatter from '!raw-loader!../../components/snippets/frontmatter.js';// eslint-disable-line"
+          "import frontmatter from '!raw-loader!../../components/snippets/frontmatter.js';// eslint-disable-line",
+          "import Topbar from '../../../../src/components/page-layout/components/topbar.js';",
+          "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
+          "import constants from '../../constants.json';",
+          "import Note from '../../../../src/components/note';"
         ]
       }
     },

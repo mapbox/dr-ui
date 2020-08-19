@@ -607,8 +607,8 @@ Object {
         "title": undefined,
       },
       Object {
-        "path": "/dr-ui/examples/example-1/",
-        "title": "Example 1",
+        "path": "/dr-ui/guides/",
+        "title": "Guides",
       },
       Object {
         "path": "/dr-ui/examples/example-2/",
@@ -623,8 +623,8 @@ Object {
         "title": "Examples",
       },
       Object {
-        "path": "/dr-ui/guides/",
-        "title": "Guides",
+        "path": "/dr-ui/",
+        "title": "Components",
       },
       Object {
         "path": "/dr-ui/guides/batfish-helpers/",
@@ -639,8 +639,12 @@ Object {
         "title": "Split pages",
       },
       Object {
-        "path": "/dr-ui/",
-        "title": "Components",
+        "path": "/dr-ui/guides/multi-structured/",
+        "title": "Multi-structured sites",
+      },
+      Object {
+        "path": "/dr-ui/examples/example-1/",
+        "title": "Example 1",
       },
     ],
     "/dr-ui/guides/": Array [
@@ -659,6 +663,10 @@ Object {
       Object {
         "path": "/dr-ui/guides/split-pages/",
         "title": "Split pages",
+      },
+      Object {
+        "path": "/dr-ui/guides/multi-structured/",
+        "title": "Multi-structured sites",
       },
     ],
   },
@@ -692,6 +700,10 @@ Object {
       "title": "Guides",
     },
     "/dr-ui/guides/batfish-helpers/": Object {
+      "parent": "/dr-ui/guides/",
+      "title": "Guides",
+    },
+    "/dr-ui/guides/multi-structured/": Object {
       "parent": "/dr-ui/guides/",
       "title": "Guides",
     },

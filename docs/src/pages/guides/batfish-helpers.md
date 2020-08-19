@@ -19,13 +19,13 @@ These dataset functions often use the page's relative pathname as a unique ident
 
 ## Navigation
 
-`navigation` builds data for the dr-ui navigation components `TabList` and `NavigationAccordion`.
+`navigation` builds data for the dr-ui navigation components [`TabList`](https://mapbox.github.io/mr-ui/#tablist) and [`NavigationAccordion`](/dr-ui/#navigationaccordion).
 
 ### Arguments
 
 - `siteBasePath`, required. The function requires the `siteBasePath`.
 - `data`, object. Provided by the data selector.
-- `sections`, array. See [Shape of multi-level sections](#shape-of-multi-level-sections).
+- `sections`, array. See [Shape of multi-structured sections](#shape-of-multi-structured-sections).
 
 ### Set up in batfish.config.js
 
@@ -46,7 +46,7 @@ module.exports = () => {
 };
 ```
 
-Multi-level sites require and additional configuration array:
+Multi-structured sites require and additional configuration array:
 
 ```js
 dataSelectors: {
@@ -76,7 +76,7 @@ class PageShell extends React.Component {
 ### Output
 
 - `navTabs`. Provides the top-level navigation for the site and is powered by the `navOrder` field in the frontMatter of those pages.
-- `accordion`. Provides the data for `NavigationAccordion`.
+- `accordion`. Provides the data for [`NavigationAccordion`](/dr-ui/#navigationaccordion).
 - `hierarchy`. Provides the parent path for each page.
 
 #### Sample
@@ -126,7 +126,7 @@ class PageShell extends React.Component {
 
 ### Output
 
-- The shape of topics is an object, where the top-level keys are pathnames for top level pages that have subpages with `topics` or `topic`.
+- The shape of topics is an object, where the top-level keys are pathnames for top-level pages that have subpages with `topics` or `topic`.
   - Each object has a `topics`. It contains a unique list of topics, ordered by count of pages with that topic.
     - Each topic has `pages`. It contains metadata for each page that has that topic.
 
@@ -138,11 +138,11 @@ class PageShell extends React.Component {
 }
 ```
 
-## Shape of multi-level `sections`
+## Shape of multi-structured `sections`
 
 - `path` (required) string. Top-level folder in `src/pages`.
 - `title` (required) string. Title of the product.
-- `tag` (optional) string. Name of tag to add to `ProductMenu`. [See options](/dr-ui/#productmenu).
+- `tag` (optional) string. Name of tag to add to [`ProductMenu`](/dr-ui/#productmenu).
 
 ### Example
 
