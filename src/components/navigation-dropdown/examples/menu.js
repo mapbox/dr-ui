@@ -1,5 +1,5 @@
 /*
-Basic.
+Missing `currentPath`.
 */
 import React from 'react';
 import NavigationDropdown from '../navigation-dropdown';
@@ -8,7 +8,7 @@ export default class Basic extends React.Component {
   render() {
     return (
       <NavigationDropdown
-        currentPath="page-one"
+        id="menu"
         dropdownOptions={[
           {
             title: 'Title one',

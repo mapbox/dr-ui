@@ -1,5 +1,5 @@
 /*
-Basic.
+Custom `label`
 */
 import React from 'react';
 import NavigationDropdown from '../navigation-dropdown';
@@ -8,7 +8,8 @@ export default class Basic extends React.Component {
   render() {
     return (
       <NavigationDropdown
-        currentPath="page-one"
+        id="label"
+        label="Options"
         dropdownOptions={[
           {
             title: 'Title one',

@@ -69,7 +69,7 @@ class NavigationDropdown extends React.Component {
           id={id}
           className={classnames('', {
             none: dropdownClosed,
-            'absolute round bg-white shadow-darken10 w-full py12 px12 mt6': !dropdownClosed
+            'absolute round bg-white shadow-darken10 w-full py12 px12 mt6 z5': !dropdownClosed
           })}
           aria-hidden={dropdownClosed}
         >
