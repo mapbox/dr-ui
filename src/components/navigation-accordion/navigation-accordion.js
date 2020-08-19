@@ -239,7 +239,6 @@ class NavigationAccordion extends React.PureComponent {
           <NavigationDropdown
             currentPath={props.currentPath}
             dropdownOptions={props.contents.firstLevelItems}
-            onChange={props.onDropdownChange}
           />
         </div>
       </div>
@@ -320,8 +319,7 @@ NavigationAccordion.propTypes = {
         )
       })
     )
-  }),
-  onDropdownChange: PropTypes.func
+  })
 };
 
 export default NavigationAccordion;

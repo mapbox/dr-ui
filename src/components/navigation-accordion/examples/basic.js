@@ -31,7 +31,6 @@ export default class Basic extends React.Component {
             }
           ]
         }}
-        onDropdownChange={() => {}}
       />
     );
   }

@@ -446,38 +446,62 @@ exports[`search Search with \`narrow\` option set renders as expected 2`] = `
                   className="none-mm block bg-gray-faint px24 py24"
                 >
                   <div
-                    className="relative "
+                    className="dr-ui--navigation-dropdown relative"
                   >
-                    <div
-                      className="select-container "
+                    <button
+                      aria-controls="dr-ui--navigation-dropdown"
+                      aria-expanded={false}
+                      aria-haspopup="true"
+                      aria-label="Toggle menu"
+                      className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover"
+                      onClick={[Function]}
                     >
-                      <select
-                        aria-required={true}
-                        className="select select--stroke round-full bg-white"
-                        data-test="navigate-this-section-select"
-                        disabled={false}
-                        id="navigate-this-section"
-                        onChange={[Function]}
-                        value="page-one"
+                      Title one
+                      <svg
+                        className="events-none icon inline-block align-t"
+                        focusable="false"
+                        role="presentation"
+                        style={
+                          Object {
+                            "height": 18,
+                            "width": 18,
+                          }
+                        }
                       >
-                        <option
-                          value="page-one"
+                        <use
+                          xlinkHref="#icon-chevron-down"
+                          xmlnsXlink="http://www.w3.org/1999/xlink"
+                        />
+                      </svg>
+                    </button>
+                    <nav
+                      aria-hidden={true}
+                      className="none"
+                      id="dr-ui--navigation-dropdown"
+                    >
+                      <ul>
+                        <li
+                          className="mb3"
                         >
-                          Title one
-                        </option>
-                        <option
-                          value="page-two"
+                          <a
+                            className="link link--gray"
+                            href="page-one"
+                          >
+                            Title one
+                          </a>
+                        </li>
+                        <li
+                          className="mb3"
                         >
-                          Title two
-                        </option>
-                      </select>
-                      <div
-                        className="select-arrow"
-                      />
-                    </div>
-                    <div
-                      role="alert"
-                    />
+                          <a
+                            className="link link--gray"
+                            href="page-two"
+                          >
+                            Title two
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
                   </div>
                 </div>
               </div>

@@ -123,7 +123,6 @@ testCases.withLayout = {
                   }
                 ]
               }}
-              onDropdownChange={() => {}}
             />
           }
           sidebarContentStickyTop={60}

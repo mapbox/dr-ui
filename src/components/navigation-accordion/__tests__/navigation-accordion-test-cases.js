@@ -26,8 +26,7 @@ testCases.noSecondLevelItems = {
           path: 'page-two'
         }
       ]
-    },
-    onDropdownChange: () => {}
+    }
   }
 };
 
@@ -67,8 +66,7 @@ testCases.withThirdLevelItems = {
           path: 'heading-two'
         }
       ]
-    },
-    onDropdownChange: () => {}
+    }
   }
 };
 
@@ -115,8 +113,7 @@ testCases.withThirdLevelItemsWithIcons = {
           path: 'heading-two'
         }
       ]
-    },
-    onDropdownChange: () => {}
+    }
   }
 };
 
@@ -168,8 +165,7 @@ testCases.withTags = {
           path: 'heading-two'
         }
       ]
-    },
-    onDropdownChange: () => {}
+    }
   }
 };
 
@@ -281,7 +277,6 @@ testCases.many = {
                 }
               ]
             }}
-            onDropdownChange={() => {}}
           />
         }
       >

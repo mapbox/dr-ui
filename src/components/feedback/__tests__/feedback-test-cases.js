@@ -99,7 +99,6 @@ testCases.common = {
                   }
                 ]
               }}
-              onDropdownChange={() => {}}
             />
           }
           sidebarContentStickyTop={60}
