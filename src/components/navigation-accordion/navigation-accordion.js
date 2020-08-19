@@ -235,8 +235,9 @@ class NavigationAccordion extends React.PureComponent {
     return (
       <div className="dr-ui--navigation-accordion">
         <div className="block-mm none">{firstLevelContent}</div>
-        <div className="none-mm block bg-gray-faint px24 py24">
+        <div className="none-mm block bg-gray-faint px24 py12">
           <NavigationDropdown
+            id={props.navigationDropdownId}
             currentPath={props.currentPath}
             dropdownOptions={props.contents.firstLevelItems}
           />
@@ -319,7 +320,9 @@ NavigationAccordion.propTypes = {
         )
       })
     )
-  })
+  }),
+  /** if there is more than one NavigationDropdown on the page, pass a unique id */
+  navigationDropdownId: PropTypes.string
 };
 
 export default NavigationAccordion;

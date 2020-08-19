@@ -106,7 +106,7 @@ exports[`navigation-accordion Basic renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="none-mm block bg-gray-faint px24 py24"
+    className="none-mm block bg-gray-faint px24 py12"
   >
     <div
       className="dr-ui--navigation-dropdown relative"
@@ -239,13 +239,13 @@ exports[`navigation-accordion No second level items renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="none-mm block bg-gray-faint px24 py24"
+    className="none-mm block bg-gray-faint px24 py12"
   >
     <div
       className="dr-ui--navigation-dropdown relative"
     >
       <button
-        aria-controls="dr-ui--navigation-dropdown"
+        aria-controls="navigation-2"
         aria-expanded={false}
         aria-haspopup="true"
         aria-label="Toggle menu"
@@ -273,7 +273,7 @@ exports[`navigation-accordion No second level items renders as expected 1`] = `
       <nav
         aria-hidden={true}
         className="none"
-        id="dr-ui--navigation-dropdown"
+        id="navigation-2"
       >
         <ul>
           <li
@@ -434,13 +434,13 @@ exports[`navigation-accordion Shows third level items renders as expected 1`] = 
     </div>
   </div>
   <div
-    className="none-mm block bg-gray-faint px24 py24"
+    className="none-mm block bg-gray-faint px24 py12"
   >
     <div
       className="dr-ui--navigation-dropdown relative"
     >
       <button
-        aria-controls="dr-ui--navigation-dropdown"
+        aria-controls="navigation-3"
         aria-expanded={false}
         aria-haspopup="true"
         aria-label="Toggle menu"
@@ -468,7 +468,7 @@ exports[`navigation-accordion Shows third level items renders as expected 1`] = 
       <nav
         aria-hidden={true}
         className="none"
-        id="dr-ui--navigation-dropdown"
+        id="navigation-3"
       >
         <ul>
           <li
@@ -719,13 +719,13 @@ exports[`navigation-accordion Shows third level items with icons renders as expe
     </div>
   </div>
   <div
-    className="none-mm block bg-gray-faint px24 py24"
+    className="none-mm block bg-gray-faint px24 py12"
   >
     <div
       className="dr-ui--navigation-dropdown relative"
     >
       <button
-        aria-controls="dr-ui--navigation-dropdown"
+        aria-controls="navigation-4"
         aria-expanded={false}
         aria-haspopup="true"
         aria-label="Toggle menu"
@@ -753,7 +753,7 @@ exports[`navigation-accordion Shows third level items with icons renders as expe
       <nav
         aria-hidden={true}
         className="none"
-        id="dr-ui--navigation-dropdown"
+        id="navigation-4"
       >
         <ul>
           <li
@@ -1019,13 +1019,13 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="none-mm block bg-gray-faint px24 py24"
+    className="none-mm block bg-gray-faint px24 py12"
   >
     <div
       className="dr-ui--navigation-dropdown relative"
     >
       <button
-        aria-controls="dr-ui--navigation-dropdown"
+        aria-controls="navigation-5"
         aria-expanded={false}
         aria-haspopup="true"
         aria-label="Toggle menu"
@@ -1053,7 +1053,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
       <nav
         aria-hidden={true}
         className="none"
-        id="dr-ui--navigation-dropdown"
+        id="navigation-5"
       >
         <ul>
           <li

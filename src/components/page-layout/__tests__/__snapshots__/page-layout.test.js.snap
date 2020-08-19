@@ -291,7 +291,7 @@ exports[`page-layout Common use case renders as expected 1`] = `
               </div>
             </div>
             <div
-              className="none-mm block bg-gray-faint px24 py24"
+              className="none-mm block bg-gray-faint px24 py12"
             >
               <div
                 className="dr-ui--navigation-dropdown relative"
@@ -990,7 +990,7 @@ exports[`page-layout Many first level items renders as expected 1`] = `
               </div>
             </div>
             <div
-              className="none-mm block bg-gray-faint px24 py24"
+              className="none-mm block bg-gray-faint px24 py12"
             >
               <div
                 className="dr-ui--navigation-dropdown relative"

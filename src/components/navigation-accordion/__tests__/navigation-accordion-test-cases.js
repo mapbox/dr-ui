@@ -15,6 +15,7 @@ testCases.noSecondLevelItems = {
   component: NavigationAccordion,
   props: {
     currentPath: 'page-one',
+    navigationDropdownId: 'navigation-2',
     contents: {
       firstLevelItems: [
         {
@@ -35,6 +36,7 @@ testCases.withThirdLevelItems = {
   component: NavigationAccordion,
   props: {
     currentPath: 'page-one',
+    navigationDropdownId: 'navigation-3',
     contents: {
       firstLevelItems: [
         {
@@ -75,6 +77,7 @@ testCases.withThirdLevelItemsWithIcons = {
   component: NavigationAccordion,
   props: {
     currentPath: 'page-one',
+    navigationDropdownId: 'navigation-4',
     contents: {
       firstLevelItems: [
         {
@@ -122,6 +125,7 @@ testCases.withTags = {
   component: NavigationAccordion,
   props: {
     currentPath: 'page-one',
+    navigationDropdownId: 'navigation-5',
     contents: {
       firstLevelItems: [
         {
@@ -181,6 +185,7 @@ testCases.many = {
         sidebarContent={
           <NavigationAccordion
             currentPath="page-eight"
+            navigationDropdownId="navigation-6"
             contents={{
               firstLevelItems: [
                 {
