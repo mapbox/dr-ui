@@ -240,7 +240,6 @@ class NavigationAccordion extends React.PureComponent {
             id={props.navigationDropdownId}
             currentPath={props.currentPath}
             dropdownOptions={props.contents.firstLevelItems}
-            onChange={props.onDropdownChange}
           />
         </div>
       </div>
@@ -327,9 +326,7 @@ NavigationAccordion.propTypes = {
     )
   }),
   /** if there is more than one NavigationDropdown on the page, pass a unique id */
-  navigationDropdownId: PropTypes.string,
-  /** custom function to handle click, defaults to `window.location = value;` */
-  onDropdownChange: PropTypes.func
+  navigationDropdownId: PropTypes.string
 };
 
 export default NavigationAccordion;

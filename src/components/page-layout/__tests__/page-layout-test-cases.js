@@ -81,7 +81,6 @@ testCases.common = {
             }
           ]
         }}
-        onDropdownChange={() => {}}
       />
     ),
     children: (
@@ -186,7 +185,6 @@ testCases.many = {
             }
           ]
         }}
-        onDropdownChange={() => {}}
       />
     ),
     children: (

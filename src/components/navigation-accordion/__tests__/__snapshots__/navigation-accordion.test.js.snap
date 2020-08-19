@@ -112,15 +112,12 @@ exports[`navigation-accordion Basic renders as expected 1`] = `
       className="dr-ui--navigation-dropdown relative"
     >
       <button
-        aria-controls="navigation-accordion-dropdown-menu"
+        aria-controls="navigation-accordion-dropdown"
         aria-expanded={false}
         aria-haspopup="true"
         aria-label="Toggle menu"
-        className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate relative border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover"
-        id="navigation-accordion-dropdown-toggle-button"
+        className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover"
         onClick={[Function]}
-        onKeyDown={[Function]}
-        role="button"
       >
         Title one
         <svg
@@ -140,41 +137,34 @@ exports[`navigation-accordion Basic renders as expected 1`] = `
           />
         </svg>
       </button>
-      <ul
-        aria-labelledby="navigation-accordion-dropdown-toggle-button"
+      <nav
+        aria-hidden={true}
         className="none"
-        id="navigation-accordion-dropdown-menu"
-        onBlur={[Function]}
-        onKeyDown={[Function]}
-        onMouseLeave={[Function]}
-        role="menu"
-        tabIndex={-1}
+        id="navigation-accordion-dropdown"
       >
-        <li
-          aria-selected="true"
-          className="block w-full px12 bg-gray-faint link bg-gray-faint-on-hover py3 link--gray"
-          disabled={false}
-          id="navigation-accordion-dropdown-item-0"
-          onClick={[Function]}
-          onMouseMove={[Function]}
-          role="menuitem"
-        >
-          Title one
-          
-        </li>
-        <li
-          aria-selected="false"
-          className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
-          disabled={false}
-          id="navigation-accordion-dropdown-item-1"
-          onClick={[Function]}
-          onMouseMove={[Function]}
-          role="menuitem"
-        >
-          Title two
-          
-        </li>
-      </ul>
+        <ul>
+          <li
+            className="mb3"
+          >
+            <a
+              className="link link--gray"
+              href="page-one"
+            >
+              Title one
+            </a>
+          </li>
+          <li
+            className="mb3"
+          >
+            <a
+              className="link link--gray"
+              href="page-two"
+            >
+              Title two
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </div>
 </div>
@@ -255,15 +245,12 @@ exports[`navigation-accordion No second level items renders as expected 1`] = `
       className="dr-ui--navigation-dropdown relative"
     >
       <button
-        aria-controls="no-second-menu"
+        aria-controls="no-second"
         aria-expanded={false}
         aria-haspopup="true"
         aria-label="Toggle menu"
-        className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate relative border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover"
-        id="no-second-toggle-button"
+        className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover"
         onClick={[Function]}
-        onKeyDown={[Function]}
-        role="button"
       >
         Title one
         <svg
@@ -283,41 +270,34 @@ exports[`navigation-accordion No second level items renders as expected 1`] = `
           />
         </svg>
       </button>
-      <ul
-        aria-labelledby="no-second-toggle-button"
+      <nav
+        aria-hidden={true}
         className="none"
-        id="no-second-menu"
-        onBlur={[Function]}
-        onKeyDown={[Function]}
-        onMouseLeave={[Function]}
-        role="menu"
-        tabIndex={-1}
+        id="no-second"
       >
-        <li
-          aria-selected="true"
-          className="block w-full px12 bg-gray-faint link bg-gray-faint-on-hover py3 link--gray"
-          disabled={false}
-          id="no-second-item-0"
-          onClick={[Function]}
-          onMouseMove={[Function]}
-          role="menuitem"
-        >
-          Title one
-          
-        </li>
-        <li
-          aria-selected="false"
-          className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
-          disabled={false}
-          id="no-second-item-1"
-          onClick={[Function]}
-          onMouseMove={[Function]}
-          role="menuitem"
-        >
-          Title two
-          
-        </li>
-      </ul>
+        <ul>
+          <li
+            className="mb3"
+          >
+            <a
+              className="link link--gray"
+              href="page-one"
+            >
+              Title one
+            </a>
+          </li>
+          <li
+            className="mb3"
+          >
+            <a
+              className="link link--gray"
+              href="page-two"
+            >
+              Title two
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </div>
 </div>
@@ -460,15 +440,12 @@ exports[`navigation-accordion Shows third level items renders as expected 1`] = 
       className="dr-ui--navigation-dropdown relative"
     >
       <button
-        aria-controls="with-third-menu"
+        aria-controls="with-third"
         aria-expanded={false}
         aria-haspopup="true"
         aria-label="Toggle menu"
-        className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate relative border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover"
-        id="with-third-toggle-button"
+        className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover"
         onClick={[Function]}
-        onKeyDown={[Function]}
-        role="button"
       >
         Title one
         <svg
@@ -488,41 +465,34 @@ exports[`navigation-accordion Shows third level items renders as expected 1`] = 
           />
         </svg>
       </button>
-      <ul
-        aria-labelledby="with-third-toggle-button"
+      <nav
+        aria-hidden={true}
         className="none"
-        id="with-third-menu"
-        onBlur={[Function]}
-        onKeyDown={[Function]}
-        onMouseLeave={[Function]}
-        role="menu"
-        tabIndex={-1}
+        id="with-third"
       >
-        <li
-          aria-selected="true"
-          className="block w-full px12 bg-gray-faint link bg-gray-faint-on-hover py3 link--gray"
-          disabled={false}
-          id="with-third-item-0"
-          onClick={[Function]}
-          onMouseMove={[Function]}
-          role="menuitem"
-        >
-          Title one
-          
-        </li>
-        <li
-          aria-selected="false"
-          className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
-          disabled={false}
-          id="with-third-item-1"
-          onClick={[Function]}
-          onMouseMove={[Function]}
-          role="menuitem"
-        >
-          Title two
-          
-        </li>
-      </ul>
+        <ul>
+          <li
+            className="mb3"
+          >
+            <a
+              className="link link--gray"
+              href="page-one"
+            >
+              Title one
+            </a>
+          </li>
+          <li
+            className="mb3"
+          >
+            <a
+              className="link link--gray"
+              href="page-two"
+            >
+              Title two
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </div>
 </div>
@@ -755,15 +725,12 @@ exports[`navigation-accordion Shows third level items with icons renders as expe
       className="dr-ui--navigation-dropdown relative"
     >
       <button
-        aria-controls="with-icons-menu"
+        aria-controls="with-icons"
         aria-expanded={false}
         aria-haspopup="true"
         aria-label="Toggle menu"
-        className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate relative border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover"
-        id="with-icons-toggle-button"
+        className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover"
         onClick={[Function]}
-        onKeyDown={[Function]}
-        role="button"
       >
         Title one
         <svg
@@ -783,41 +750,34 @@ exports[`navigation-accordion Shows third level items with icons renders as expe
           />
         </svg>
       </button>
-      <ul
-        aria-labelledby="with-icons-toggle-button"
+      <nav
+        aria-hidden={true}
         className="none"
-        id="with-icons-menu"
-        onBlur={[Function]}
-        onKeyDown={[Function]}
-        onMouseLeave={[Function]}
-        role="menu"
-        tabIndex={-1}
+        id="with-icons"
       >
-        <li
-          aria-selected="true"
-          className="block w-full px12 bg-gray-faint link bg-gray-faint-on-hover py3 link--gray"
-          disabled={false}
-          id="with-icons-item-0"
-          onClick={[Function]}
-          onMouseMove={[Function]}
-          role="menuitem"
-        >
-          Title one
-          
-        </li>
-        <li
-          aria-selected="false"
-          className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
-          disabled={false}
-          id="with-icons-item-1"
-          onClick={[Function]}
-          onMouseMove={[Function]}
-          role="menuitem"
-        >
-          Title two
-          
-        </li>
-      </ul>
+        <ul>
+          <li
+            className="mb3"
+          >
+            <a
+              className="link link--gray"
+              href="page-one"
+            >
+              Title one
+            </a>
+          </li>
+          <li
+            className="mb3"
+          >
+            <a
+              className="link link--gray"
+              href="page-two"
+            >
+              Title two
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </div>
 </div>
@@ -1065,15 +1025,12 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
       className="dr-ui--navigation-dropdown relative"
     >
       <button
-        aria-controls="titles-menu"
+        aria-controls="titles"
         aria-expanded={false}
         aria-haspopup="true"
         aria-label="Toggle menu"
-        className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate relative border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover"
-        id="titles-toggle-button"
+        className="flex-parent flex-parent--center-main flex-parent--space-between-main txt-truncate border border--gray-light py6 px12 bg-white round-full w-full color-gray-on-hover"
         onClick={[Function]}
-        onKeyDown={[Function]}
-        role="button"
       >
         Title one
         <svg
@@ -1093,41 +1050,34 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
           />
         </svg>
       </button>
-      <ul
-        aria-labelledby="titles-toggle-button"
+      <nav
+        aria-hidden={true}
         className="none"
-        id="titles-menu"
-        onBlur={[Function]}
-        onKeyDown={[Function]}
-        onMouseLeave={[Function]}
-        role="menu"
-        tabIndex={-1}
+        id="titles"
       >
-        <li
-          aria-selected="true"
-          className="block w-full px12 bg-gray-faint link bg-gray-faint-on-hover py3 link--gray"
-          disabled={false}
-          id="titles-item-0"
-          onClick={[Function]}
-          onMouseMove={[Function]}
-          role="menuitem"
-        >
-          Title one
-          
-        </li>
-        <li
-          aria-selected="false"
-          className="block w-full px12 link bg-gray-faint-on-hover py3 link--gray"
-          disabled={false}
-          id="titles-item-1"
-          onClick={[Function]}
-          onMouseMove={[Function]}
-          role="menuitem"
-        >
-          Title two
-          
-        </li>
-      </ul>
+        <ul>
+          <li
+            className="mb3"
+          >
+            <a
+              className="link link--gray"
+              href="page-one"
+            >
+              Title one
+            </a>
+          </li>
+          <li
+            className="mb3"
+          >
+            <a
+              className="link link--gray"
+              href="page-two"
+            >
+              Title two
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </div>
 </div>
