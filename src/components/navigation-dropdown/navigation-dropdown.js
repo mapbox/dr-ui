@@ -34,6 +34,20 @@ class NavigationDropdown extends React.Component {
     );
   }
 
+  componentWillUnmount() {
+    // clean up event listeners
+    document.removeEventListener(
+      'click',
+      (event) => this.triggerHideMenu(event),
+      true
+    );
+    document.removeEventListener(
+      'focusin',
+      (event) => this.triggerHideMenu(event),
+      true
+    );
+  }
+
   hideMenu = () => {
     this.setState({ dropdownClosed: true });
   };
