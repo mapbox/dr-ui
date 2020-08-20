@@ -9,7 +9,7 @@ export default class SidebarPage extends React.PureComponent {
     if (!headings) return <div />;
     const sections = buildSections(this.props.headings);
     return (
-      <div className="mx24 py12">
+      <div className="mx24 py12 none block-mm">
         <Scrollspy
           items={buildScollspyItems(sections)}
           currentClassName="txt-bold"

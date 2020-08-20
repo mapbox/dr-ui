@@ -1717,7 +1717,7 @@ Array [
                 id="dr-ui--page-layout-sidebar"
               >
                 <div
-                  className="mx24 py12"
+                  className="mx24 py12 none block-mm"
                 >
                   <ul
                     className=""
