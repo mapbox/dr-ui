@@ -41,9 +41,10 @@ export default class Content extends React.Component {
     return (
       <div
         id="docs-content"
-        className={classnames('mt24-mm pr0-mm', {
+        className={classnames('pr0-mm', {
           'mb60 px24-mm': sidebar !== 'none',
           'px24-mm': sidebar === 'none',
+          mt24: sidebar !== 'accordion', // add mt to all layouts (except accordion)
           'mt60 pt30 mt0-mm pt0-mm': sidebar === 'accordion' // clear the mobile sticky nav
         })}
       >
