@@ -10,8 +10,11 @@ export default class AnalyticsShell extends React.Component {
       disableWebAnalytics,
       disableSentry,
       webAnalytics,
-      sentry
+      sentry,
+      mbxMetadata
     } = this.props;
+    // set mapbox metadata before initializing analytics
+    if (!disableWebAnalytics) window.mbxMetadata = mbxMetadata;
     // initialize analytics
     if (window && window.initializeMapboxAnalytics && !disableWebAnalytics) {
       window.initializeMapboxAnalytics({
@@ -59,6 +62,10 @@ AnalyticsShell.defaultProps = {
   }
 };
 
+AnalyticsShell.defaultProps = {
+  mbxMetadata: {}
+};
+
 AnalyticsShell.propTypes = {
   children: PropTypes.node.isRequired,
   /** Location object (often provided by Batfish), `pathname` is current page's relative path. */
@@ -76,5 +83,12 @@ AnalyticsShell.propTypes = {
   /** If `true`, Sentry will not initialize. */
   disableSentry: PropTypes.bool,
   /** If `true`, Mapbox analytics (`initializeMapboxAnalytics`) will not initialize. */
-  disableWebAnalytics: PropTypes.bool
+  disableWebAnalytics: PropTypes.bool,
+  /** Object of properties to send to Segment */
+  mbxMetadata: PropTypes.shape({
+    product: PropTypes.string,
+    service: PropTypes.string,
+    content_type: PropTypes.string,
+    platform: PropTypes.string
+  })
 };
