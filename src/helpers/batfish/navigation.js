@@ -46,6 +46,7 @@ function buildHierarchy(organized, section) {
 function findChildren(pages, parent) {
   return pages
     .filter((page) => page.path.startsWith(parent.path))
+    .filter((page) => !page.splitPage) // exclude individual `splitPage` from navAccordion
     .sort((a, b) => parseInt(a.order) - parseInt(b.order));
 }
 
@@ -67,18 +68,25 @@ function organizePages(pages) {
 
 // format pages with data we need to process the content
 function formatPages(siteBasePath, data, sections) {
-  return data.pages.map((p) => ({
-    title: p.frontMatter.title,
-    path: p.path,
-    ...(p.frontMatter.order && { order: p.frontMatter.order }),
-    ...(p.frontMatter.navOrder && { navOrder: p.frontMatter.navOrder }),
-    ...(p.frontMatter.tag && { tag: p.frontMatter.tag }),
-    ...(p.frontMatter.customTagProps && {
-      customTagProps: p.frontMatter.customTagProps
-    }),
-    ...(p.frontMatter.layout && { layout: p.frontMatter.layout }),
-    ...(sections && { section: findSection(siteBasePath, p, sections) })
-  }));
+  return data.pages
+    .filter((f) => !f.is404) // remove the batfish 404 page
+    .map((p) => ({
+      title: p.frontMatter.title,
+      path: p.path,
+      ...(p.frontMatter.order && { order: p.frontMatter.order }),
+      ...(p.frontMatter.navOrder && { navOrder: p.frontMatter.navOrder }),
+      ...(p.frontMatter.tag && { tag: p.frontMatter.tag }),
+      ...(p.frontMatter.customTagProps && {
+        customTagProps: p.frontMatter.customTagProps
+      }),
+      ...(p.frontMatter.layout && { layout: p.frontMatter.layout }),
+      ...(sections && { section: findSection(siteBasePath, p, sections) }),
+      ...(p.frontMatter.splitPage && { splitPage: p.frontMatter.splitPage }),
+      ...(p.frontMatter.splitPages && { splitPages: p.frontMatter.splitPages }),
+      ...(p.frontMatter.hideFromNav && {
+        hideFromNav: p.frontMatter.hideFromNav
+      })
+    }));
 }
 
 function buildMultiLevels(sections, pages) {
@@ -116,7 +124,9 @@ function buildNavTabs(organized) {
 
 function buildAccordion(organized) {
   return Object.keys(organized).reduce((obj, path) => {
-    const pages = organized[path].pages;
+    const pages = organized[path].pages
+      .filter((f) => !f.hideFromNav)
+      .sort((a, b) => parseInt(a.order) - parseInt(b.order));
     const findAccordionLayout = pages.filter((p) => p.layout === 'accordion');
     if (findAccordionLayout.length > 0) {
       obj[path] = pages.map((p) => ({

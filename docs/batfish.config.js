@@ -1,7 +1,9 @@
 const path = require('path');
-
-const { buildNavigation } = require('../src/helpers/batfish/navigation.js');
-const { buildTopics } = require('../src/helpers/batfish/topics.js');
+const {
+  buildNavigation,
+  buildTopics,
+  buildSplitPages
+} = require('../src/helpers/batfish/index.js');
 
 const siteBasePath = '/dr-ui';
 
@@ -18,7 +20,13 @@ module.exports = () => {
     ],
     applicationWrapperPath: path.join(__dirname, 'src/components/wrapper.js'),
     jsxtremeMarkdownOptions: {
-      wrapper: path.join(__dirname, 'src/components/page-shell.js'),
+      getWrapper: (resource) => {
+        if (/\/sections\//.test(resource)) {
+          return path.join(__dirname, './src/components/split-page-shell.js');
+        } else {
+          return path.join(__dirname, 'src/components/page-shell.js');
+        }
+      },
       rehypePlugins: [
         require('rehype-slug'),
         require('@mapbox/rehype-prism'),
@@ -30,6 +38,7 @@ module.exports = () => {
     dataSelectors: {
       navigation: (data) => buildNavigation(siteBasePath, data),
       topics: (data) => buildTopics(data),
+      splitPages: (data) => buildSplitPages(data),
       sync: (data) => {
         /* syncs data to fixtures to properly test batfish selectors */
         const sortBy = (key) => {
