@@ -109,7 +109,7 @@ Top-level pages are a small set of pages that define a section of the site. Thes
 
 For example, this page falls under [Guides](/dr-ui/guides/), a top-level page. Since you're visiting a page under the Guide's section, the Guides link in the `TabList` has a blue bottom border indicator to help show you where you are on the site.
 
-Top-level pages almost always follow the folder structure in `src/pages/`. For example a site with the following folder structure likely uses `examples/index.md`, `help/index.md`, and `overview/index.md` as it's top-level pages:
+Top-level pages almost always follow the folder structure in `src/pages/`. For example a site with the following folder structure likely uses `examples/index.md`, `help/index.md`, and `overview/index.md` as its top-level pages:
 
 ```
 src/
@@ -137,7 +137,7 @@ Things to consider:
 {{<Note>}}
 The frontmatter props `navOrder` and `order` have different functions.
 
-- `navOrder` identifies a top-level page and its order.
+- `navOrder` identifies a top-level page and its position in the `TabList` across the top of the page.
 - `order` sets the order for all pages in a section that uses the `accordion` layout.
 
 For top-level pages using the `accordion` layout, besides setting `navOrder`, you will also set `order: 1` to make sure that the top-level page appears first in the [`NavigationAccordion`](/dr-ui/#navigationaccordion)

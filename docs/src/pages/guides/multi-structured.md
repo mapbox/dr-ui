@@ -9,7 +9,7 @@ products:
   - Documentation
 ---
 
-Most docs.mapbox.com sites use a single structure, which means it documents a single product. But [iOS](https://docs.mapbox.com/ios/maps/overview/) and [Android](https://docs.mapbox.com/android/maps/overview/) use a multi-structure to document maps, navigation, and search.
+Most docs.mapbox.com sites use a single structure, which means it documents a single product. But [iOS](https://docs.mapbox.com/ios/maps/overview/) and [Android](https://docs.mapbox.com/android/maps/overview/) use a multi-structure to document several products (for example the Maps SDK, Navigation SDK, and Plugins).
 
 This guide will walk you through creating a new multi-structured site.
 
