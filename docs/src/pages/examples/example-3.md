@@ -8,6 +8,7 @@ topics:
   - Navigation
   - Geocoding
 thumbnail: header-image
+layout: example
 products:
   - Documentation
 ---

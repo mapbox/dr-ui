@@ -5,11 +5,11 @@ function buildNavigation(siteBasePath, data, sections) {
   let obj = {};
   // get page data ready to be organized
   const pages = formatPages(siteBasePath, data, sections);
-  // if sections are defined, organize by sections first to build a multi-level structure
+  // if sections are defined, organize by sections first to build a multi-structured structure
   if (sections) {
     obj = buildMultiLevels(sections, pages);
   } else {
-    // otherwise build a single level structure
+    // otherwise build a single structure
     const organized = organizePages(pages);
     obj.navTabs = buildNavTabs(organized);
     obj.accordion = buildAccordion(organized);
@@ -89,6 +89,7 @@ function buildMultiLevels(sections, pages) {
       obj[section.path] = {
         path: section.path,
         title: section.title,
+        ...(section.tag && { tag: section.tag }),
         navTabs: buildNavTabs(organized, section),
         accordion: buildAccordion(organized)
       };

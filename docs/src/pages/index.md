@@ -1,11 +1,16 @@
 ---
-title: Overview
+title: Components
 description: UI components for Mapbox documentation projects.
 navOrder: 1
 layout: example
 contentType: reference
 products:
   - Documentation
+hideSubItems: false
+showCards: false
+includeFilterBar: true
+hideTitle: true
+unProse: true
 prependJs:
   - "import Note from '../../../src/components/note'"
   - "import OverviewHeader from '../../../src/components/overview-header'"
@@ -34,4 +39,4 @@ UI components for Mapbox documentation projects.
 This project is for internal Mapbox usage. The code is open source and we appreciate bug reports; but we will only consider feature requests and pull requests from Mapbox developers.
 {{</Note>}}
 
-{{<App />}}
+{{<App {...this.props} />}}

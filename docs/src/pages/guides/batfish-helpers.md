@@ -1,9 +1,10 @@
 ---
 title: Batfish helpers
 description: Batfish data selector functions to build navigation and topic datasets.
-navOrder: 2
+order: 2
 contentType: guide
 hideFeedback: true
+layout: accordion
 products:
   - Documentation
 prependJs:
@@ -11,21 +12,19 @@ prependJs:
   - "import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line"
 ---
 
-# Batfish helpers
-
 Dr. UI has two functions that are used in `dataSelectors` in `batfish.config.js` to help build page metadata and site hierarchy. Each data selector has tests to assert the shape of the data.
 
 These dataset functions often use the page's relative pathname as a unique identifier.
 
 ## Navigation
 
-`navigation` builds data for the dr-ui navigation components `TabList` and `NavigationAccordion`.
+`navigation` builds data for the dr-ui navigation components [`TabList`](https://mapbox.github.io/mr-ui/#tablist) and [`NavigationAccordion`](/dr-ui/#navigationaccordion).
 
 ### Arguments
 
 - `siteBasePath`, required. The function requires the `siteBasePath`.
 - `data`, object. Provided by the data selector.
-- `sections`, array. See [Shape of multi-level sections](#shape-of-multi-level-sections).
+- `sections`, array. See [Shape of multi-structured sections](#shape-of-multi-structured-sections).
 
 ### Set up in batfish.config.js
 
@@ -46,7 +45,7 @@ module.exports = () => {
 };
 ```
 
-Multi-level sites require and additional configuration array:
+Multi-structured sites require and additional configuration array:
 
 ```js
 dataSelectors: {
@@ -64,10 +63,10 @@ dataSelectors: {
 import React from 'react';
 import navigation from '@mapbox/batfish/data/navigation';
 
-class SideBar extends React.Component {
+class PageShell extends React.Component {
   render () {
     return (
-      <TabList items={navigation.navTabs} />;
+      <PageLayout navigation={navigation} />;
     )
   }
 }
@@ -76,7 +75,7 @@ class SideBar extends React.Component {
 ### Output
 
 - `navTabs`. Provides the top-level navigation for the site and is powered by the `navOrder` field in the frontMatter of those pages.
-- `accordion`. Provides the data for `NavigationAccordion`.
+- `accordion`. Provides the data for [`NavigationAccordion`](/dr-ui/#navigationaccordion).
 - `hierarchy`. Provides the parent path for each page.
 
 #### Sample
@@ -92,6 +91,8 @@ class SideBar extends React.Component {
 ### Arguments
 
 - `data`, object. Provided by the data selector.
+- `append`, object. Append additional data, this is helpful if you have programmatic data (like the [Mapbox GL JS Plugins](https://docs.mapbox.com/mapbox-gl-js/plugins/) page) and want to take advantage of the example layout.
+- `sortArr`, array. An array of topics that is in the order you want the topics to display.
 
 ### Set up in batfish.config.js
 
@@ -113,16 +114,18 @@ module.exports = () => {
 import React from 'react';
 import topics from '@mapbox/batfish/data/topics';
 
-class SideBar extends React.Component {
+class PageShell extends React.Component {
   render() {
-    const topicList = topics['/dr-ui/examples/'].topics;
+    return (
+      <PageLayout topics={topics} />;
+    )
   }
 }
 ```
 
 ### Output
 
-- The shape of topics is an object, where the top-level keys are pathnames for top level pages that have subpages with `topics` or `topic`.
+- The shape of topics is an object, where the top-level keys are pathnames for top-level pages that have subpages with `topics` or `topic`.
   - Each object has a `topics`. It contains a unique list of topics, ordered by count of pages with that topic.
     - Each topic has `pages`. It contains metadata for each page that has that topic.
 
@@ -134,11 +137,11 @@ class SideBar extends React.Component {
 }
 ```
 
-## Shape of multi-level `sections`
+## Shape of multi-structured `sections`
 
 - `path` (required) string. Top-level folder in `src/pages`.
 - `title` (required) string. Title of the product.
-- `tag` (optional) string. Name of tag to add to ProductMenu. [See options](/dr-ui/#productmenu).
+- `tag` (optional) string. Name of tag to add to [`ProductMenu`](/dr-ui/#productmenu).
 
 ### Example
 

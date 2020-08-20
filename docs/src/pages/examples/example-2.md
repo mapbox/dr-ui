@@ -7,6 +7,7 @@ language:
 topics:
   - Navigation
 thumbnail: header-image
+layout: example
 products:
   - Documentation
 ---

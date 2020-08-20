@@ -3,7 +3,11 @@
 
 const slugify = require('slugify');
 
-function buildTopics(data) {
+const sortBy = (key) => {
+  return (a, b) => (a[key] > b[key] ? 1 : b[key] > a[key] ? -1 : 0);
+};
+
+function buildTopics(data, append, sortingArr) {
   let obj = {};
 
   const pages = data.pages.map((p) => ({
@@ -19,19 +23,57 @@ function buildTopics(data) {
         page.path.startsWith(parent.path)
       );
 
-      const topics = generateTopics(parent.path, children);
+      const topics = sortTopics(
+        generateTopics(parent.path, children),
+        sortingArr
+      );
+
       if (topics.length > 0) {
         obj[parent.path] = parent;
         parent.topics = topics;
       }
     });
 
-  return obj;
+  return Object.assign(obj, append);
 }
 
 module.exports = {
   buildTopics
 };
+
+function sortTopics(topics, sortingArr) {
+  if (sortingArr) {
+    return sortTopicsByArr(topics, sortingArr);
+  } else {
+    return sortByCount(topics);
+  }
+}
+
+function sortByCount(topics) {
+  return topics.sort(sortBy('count')).reverse();
+}
+
+function sortTopicsByArr(topics, sortingArr) {
+  // set topicOrder to the index of the topic name in sortingArr
+  const preSort = topics.map((topic) => ({
+    ...topic,
+    topicOrder: sortingArr.indexOf(topic.name)
+  }));
+  // create array of topics that do not have a topicOrder
+  // this happens when the topic name is not defined in the sortingArr
+  // so they will get added to the bottom and then sorted by count
+  const unSorted = sortByCount(preSort.filter((f) => f.topicOrder === -1));
+  // create array of topics that have a topicOrder
+  const sorted = preSort.filter((f) => f.topicOrder > -1);
+  return sorted
+    .sort(sortBy('topicOrder')) // sort the array with topicOrder first
+    .concat(unSorted) // append the unsorted array
+    .map((topic) => {
+      // delete topicOrder
+      delete topic.topicOrder;
+      return topic;
+    });
+}
 
 function generateTopics(path, pages) {
   // get unique topics
@@ -67,7 +109,7 @@ function generateTopics(path, pages) {
       }
       return arr;
     }, []);
-    // TODO: investigate why none strings can be passed here
+    // TODO: investigate why non-strings can be passed here
     if (topic && typeof topic === 'string') {
       set.push({
         name: topic,

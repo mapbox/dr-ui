@@ -81,6 +81,7 @@ class SectionedNavigation extends React.Component {
             <SectionedNavigationSection
               includeCount={props.includeCount}
               hideSubItems={props.hideSubItems}
+              location={props.location}
               {...section}
             />
           </React.Fragment>
@@ -95,7 +96,10 @@ SectionedNavigation.propTypes = {
   title: PropTypes.string,
   includeCount: PropTypes.bool,
   includeFilterBar: PropTypes.bool,
-  hideSubItems: PropTypes.bool
+  hideSubItems: PropTypes.bool,
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired
+  })
 };
 
 SectionedNavigation.defaultProps = {

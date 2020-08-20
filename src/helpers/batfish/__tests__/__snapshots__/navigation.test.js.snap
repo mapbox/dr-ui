@@ -50,6 +50,7 @@ Object {
       },
     ],
     "path": "beta/navigation",
+    "tag": "beta",
     "title": "Beta Navigation SDK for iOS",
   },
   "hierarchy": Object {
@@ -561,23 +562,84 @@ Object {
 
 exports[`buildNavigation single structure 1`] = `
 Object {
-  "accordion": Object {},
+  "accordion": Object {
+    "/dr-ui/": Array [
+      Object {
+        "path": "/dr-ui/changelog/",
+        "title": undefined,
+      },
+      Object {
+        "path": "/dr-ui/404/",
+        "title": undefined,
+      },
+      Object {
+        "path": "/dr-ui/examples/example-2/",
+        "title": "Example 2",
+      },
+      Object {
+        "path": "/dr-ui/examples/example-3/",
+        "title": "Example 3",
+      },
+      Object {
+        "path": "/dr-ui/examples/",
+        "title": "Examples",
+      },
+      Object {
+        "path": "/dr-ui/examples/example-1/",
+        "title": "Example 1",
+      },
+      Object {
+        "path": "/dr-ui/guides/",
+        "title": "Guides",
+      },
+      Object {
+        "path": "/dr-ui/guides/multi-structured/",
+        "title": "Multi-structured sites",
+      },
+      Object {
+        "path": "/dr-ui/guides/page-layout/",
+        "title": "PageLayout component",
+      },
+      Object {
+        "path": "/dr-ui/",
+        "title": "Components",
+      },
+      Object {
+        "path": "/dr-ui/guides/batfish-helpers/",
+        "title": "Batfish helpers",
+      },
+    ],
+    "/dr-ui/guides/": Array [
+      Object {
+        "path": "/dr-ui/guides/",
+        "title": "Guides",
+      },
+      Object {
+        "path": "/dr-ui/guides/batfish-helpers/",
+        "title": "Batfish helpers",
+      },
+      Object {
+        "path": "/dr-ui/guides/page-layout/",
+        "title": "PageLayout component",
+      },
+      Object {
+        "path": "/dr-ui/guides/multi-structured/",
+        "title": "Multi-structured sites",
+      },
+    ],
+  },
   "hierarchy": Object {
     "/dr-ui/": Object {
       "parent": "/dr-ui/",
-      "title": "Overview",
+      "title": "Components",
     },
     "/dr-ui/404/": Object {
       "parent": "/dr-ui/",
-      "title": "Overview",
-    },
-    "/dr-ui/batfish-helpers/": Object {
-      "parent": "/dr-ui/batfish-helpers/",
-      "title": "Batfish helpers",
+      "title": "Components",
     },
     "/dr-ui/changelog/": Object {
       "parent": "/dr-ui/",
-      "title": "Overview",
+      "title": "Components",
     },
     "/dr-ui/examples/": Object {
       "parent": "/dr-ui/examples/",
@@ -595,17 +657,33 @@ Object {
       "parent": "/dr-ui/examples/",
       "title": "Examples",
     },
+    "/dr-ui/guides/": Object {
+      "parent": "/dr-ui/guides/",
+      "title": "Guides",
+    },
+    "/dr-ui/guides/batfish-helpers/": Object {
+      "parent": "/dr-ui/guides/",
+      "title": "Guides",
+    },
+    "/dr-ui/guides/multi-structured/": Object {
+      "parent": "/dr-ui/guides/",
+      "title": "Guides",
+    },
+    "/dr-ui/guides/page-layout/": Object {
+      "parent": "/dr-ui/guides/",
+      "title": "Guides",
+    },
   },
   "navTabs": Array [
     Object {
       "href": "/dr-ui/",
       "id": "/dr-ui/",
-      "label": "Overview",
+      "label": "Components",
     },
     Object {
-      "href": "/dr-ui/batfish-helpers/",
-      "id": "/dr-ui/batfish-helpers/",
-      "label": "Batfish helpers",
+      "href": "/dr-ui/guides/",
+      "id": "/dr-ui/guides/",
+      "label": "Guides",
     },
     Object {
       "href": "/dr-ui/examples/",
