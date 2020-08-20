@@ -5,7 +5,6 @@ import PageLayout from '../../../src/components/page-layout';
 import Sidebar from './sidebar';
 import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line
 import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line
-
 import constants from '../constants';
 
 class PageShell extends React.Component {
