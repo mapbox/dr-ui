@@ -59,10 +59,7 @@ AnalyticsShell.defaultProps = {
     segmentIntegrations: {
       Drift: false
     }
-  }
-};
-
-AnalyticsShell.defaultProps = {
+  },
   mbxMetadata: {}
 };
 
