@@ -4,6 +4,7 @@ const dataMulti = require('./fixtures/data-multi.json');
 const sections = require('./fixtures/sections.json');
 
 const apiDebug = require('./fixtures/api-debug.json');
+const helpDebug = require('./fixtures/help-debug.json');
 
 const siteBasePath = '/docs-starter-kit';
 
@@ -16,6 +17,10 @@ describe('buildNavigation', () => {
     expect(
       buildNavigation(siteBasePath, dataMulti, sections)
     ).toMatchSnapshot();
+  });
+
+  it.only('help glossary is sorted alphabetical', () => {
+    expect(buildNavigation('/help', helpDebug).accordion).toMatchSnapshot();
   });
 
   it('accordion pages are sorted by order', () => {

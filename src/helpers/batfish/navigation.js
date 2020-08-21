@@ -144,12 +144,16 @@ function accordionSorter(arr) {
   const formatted = arr.map((item) => ({
     ...item,
     // assign an empty string if there is no title
-    ...(!item.title && { title: '' }),
-    // set super high order if non is selected, this will allow for alphabetical sort on these items
-    ...(!item.order && { order: 100 })
+    ...(!item.title && { title: '' })
   }));
-  // order alphabetical then by order
-  return sortOrder(sortAlpha(formatted));
+  const withOrder = formatted.filter((f) => f.order);
+  const withOutOrder = formatted.filter((f) => !f.order);
+  return [
+    // add items with `order` and sort them
+    ...sortOrder(withOrder),
+    // add items without `order` and sort them alphabetically
+    ...sortAlpha(withOutOrder)
+  ];
 }
 
 function sortOrder(arr) {
@@ -157,7 +161,9 @@ function sortOrder(arr) {
 }
 
 function sortAlpha(arr) {
-  return arr.sort((a, b) => a.title.localeCompare(b.title));
+  return arr.sort((a, b) =>
+    a.title.localeCompare(b.title, { sensitivity: 'base' })
+  );
 }
 
 module.exports = {
