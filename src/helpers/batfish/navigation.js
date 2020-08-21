@@ -124,12 +124,12 @@ function buildNavTabs(organized) {
 
 function buildAccordion(organized) {
   return Object.keys(organized).reduce((obj, path) => {
-    const pages = organized[path].pages
-      .filter((f) => !f.hideFromNav)
-      .sort((a, b) => parseInt(a.order) - parseInt(b.order));
-    const findAccordionLayout = pages.filter((p) => p.layout === 'accordion');
-    if (findAccordionLayout.length > 0) {
-      obj[path] = pages.map((p) => ({
+    const pages = organized[path].pages.filter(
+      (f) => !f.hideFromNav && f.layout === 'accordion'
+    );
+    const sortedPages = accordionSorter(pages);
+    if (sortedPages.length > 0) {
+      obj[path] = sortedPages.map((p) => ({
         title: p.title,
         path: p.path,
         ...(p.tag && { tag: p.tag }),
@@ -138,6 +138,26 @@ function buildAccordion(organized) {
     }
     return obj;
   }, {});
+}
+
+function accordionSorter(arr) {
+  const formatted = arr.map((item) => ({
+    ...item,
+    // assign an empty string if there is no title
+    ...(!item.title && { title: '' }),
+    // set super high order if non is selected, this will allow for alphabetical sort on these items
+    ...(!item.order && { order: 100 })
+  }));
+  // order alphabetical then by order
+  return sortOrder(sortAlpha(formatted));
+}
+
+function sortOrder(arr) {
+  return arr.sort((a, b) => parseInt(a.order) - parseInt(b.order));
+}
+
+function sortAlpha(arr) {
+  return arr.sort((a, b) => a.title.localeCompare(b.title));
 }
 
 module.exports = {

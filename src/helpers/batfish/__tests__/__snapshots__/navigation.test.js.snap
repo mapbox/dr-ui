@@ -5,12 +5,12 @@ Object {
   "accordion": Object {
     "/dr-ui/level-one/": Array [
       Object {
-        "path": "/dr-ui/level-one/",
-        "title": "Top page",
-      },
-      Object {
         "path": "/dr-ui/level-one/b/",
         "title": "Page b",
+      },
+      Object {
+        "path": "/dr-ui/level-one/",
+        "title": "Top page",
       },
     ],
   },
@@ -603,28 +603,8 @@ Object {
   "accordion": Object {
     "/dr-ui/": Array [
       Object {
-        "path": "/dr-ui/changelog/",
-        "title": undefined,
-      },
-      Object {
         "path": "/dr-ui/guides/",
         "title": "Guides",
-      },
-      Object {
-        "path": "/dr-ui/examples/example-2/",
-        "title": "Example 2",
-      },
-      Object {
-        "path": "/dr-ui/examples/example-3/",
-        "title": "Example 3",
-      },
-      Object {
-        "path": "/dr-ui/examples/",
-        "title": "Examples",
-      },
-      Object {
-        "path": "/dr-ui/",
-        "title": "Components",
       },
       Object {
         "path": "/dr-ui/guides/batfish-helpers/",
@@ -641,10 +621,6 @@ Object {
       Object {
         "path": "/dr-ui/guides/multi-structured/",
         "title": "Multi-structured sites",
-      },
-      Object {
-        "path": "/dr-ui/examples/example-1/",
-        "title": "Example 1",
       },
     ],
     "/dr-ui/guides/": Array [
