@@ -37,7 +37,8 @@ function buildThirdLevel(orderedHeadings, nextHeading, h2) {
     return {
       title: heading.text,
       path: heading.slug,
-      ...(heading.tag && { tag: heading.tag || undefined })
+      ...(heading.tag && { tag: heading.tag || undefined }),
+      ...(heading.icon && { icon: heading.icon || undefined })
     };
   });
 }
@@ -51,7 +52,8 @@ function parseHeadings(frontMatter, headings) {
       text: heading.text,
       slug: heading.slug,
       order: index,
-      ...(tag && { tag: tag })
+      ...(tag && { tag: tag }),
+      ...(heading.icon && { icon: heading.icon })
     };
   });
 }
