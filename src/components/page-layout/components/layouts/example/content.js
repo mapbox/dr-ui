@@ -12,8 +12,10 @@ export default class LayoutExamples extends React.PureComponent {
         <div
           className="absolute top bottom w-full h-full round"
           style={{
-            background: `url(${thumbnail})`,
-            backgroundSize: '100%'
+            backgroundImage: `url(${thumbnail})`,
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover'
           }}
         />
       );
@@ -21,7 +23,9 @@ export default class LayoutExamples extends React.PureComponent {
       // if thumbnail has AppropriateImage function and thumbnail exists, handle with AppropriateImage
       return (
         <AppropriateImage
-          style={{ borderRadius: '4px' }}
+          style={{
+            borderRadius: '4px'
+          }}
           imageId={thumbnail}
           background={true}
         />
