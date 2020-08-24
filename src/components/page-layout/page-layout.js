@@ -139,6 +139,7 @@ PageLayout.propTypes = {
 `hideCardDescription` | If `true`, hide the description from all Cards. | `exampleIndex` layout
 `fullWidthCards` | Makes CardContainer full width. | `exampleIndex` layout
 `showCards` | Enable or disable the `CardsContainer`. This is helpful for pages like the dr-ui Components page. | `exampleIndex` layout
+`cardColSize` | A number to define the column sizes for the Cards | `exampleIndex` layout
 `unProse` | If `true`, remove the "prose" class from PageLayout. This is helpful for non-content pages. |
 `noShellHeaderBuffer` | If `true`, remove the header buffer div. This is helpful for custom headers like on the Help page. |
 `hideFromNav` | If `true`, remove an item from appearing in NavigationAccordion. (This is used in API docs.) | `accordion` layout or `sidebar: accordion`
@@ -161,6 +162,7 @@ PageLayout.propTypes = {
     sidebarTheme: PropTypes.string,
     showCards: PropTypes.bool,
     fullWidthCards: PropTypes.bool,
+    cardColSize: PropTypes.number,
     unProse: PropTypes.bool,
     noShellHeaderBuffer: PropTypes.bool,
     sidebarTitle: PropTypes.string,

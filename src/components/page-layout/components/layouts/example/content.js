@@ -40,7 +40,8 @@ export default class LayoutExamples extends React.PureComponent {
     const {
       fullWidthCards,
       hideCardDescription,
-      hideCardLanguage
+      hideCardLanguage,
+      cardColSize
     } = frontMatter;
 
     const renderedCardContainers = topics.map((topic, i) => {
@@ -70,6 +71,7 @@ export default class LayoutExamples extends React.PureComponent {
       if (cardsForTopic.length > 0) {
         return (
           <CardContainer
+            cardColSize={cardColSize}
             key={i}
             title={topic.name}
             path={topic.url}
@@ -111,7 +113,8 @@ LayoutExamples.propTypes = {
     description: PropTypes.string.isRequired,
     fullWidthCards: PropTypes.bool,
     hideCardDescription: PropTypes.bool,
-    hideCardLanguage: PropTypes.bool
+    hideCardLanguage: PropTypes.bool,
+    cardColSize: PropTypes.number
   }).isRequired,
   AppropriateImage: PropTypes.func
 };

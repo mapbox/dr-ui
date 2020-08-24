@@ -14,6 +14,7 @@ Introducing layouts in `PageLayout`. See the [`PageLayout`](http://mapbox.github
   - Component now includes `TopbarSticker/Topbar`, `Search`, and `Feedback` components.
 - 🚨 The `user` props is deprecated in `Feedback`. The component will now fetch this data and you can safely remove the `user` prop from this component. [#324](https://github.com/mapbox/dr-ui/pull/324)
 - Update dependencies. [#326](https://github.com/mapbox/dr-ui/pull/326)
+- Add `cardColSize` prop to `CardContainer` to adjust size of cards.
 
 ## 0.30.0
 
