@@ -24,6 +24,7 @@ export default class Content extends React.Component {
     return (
       <div className="mt36">
         <Feedback
+          {...this.props}
           type={layout === 'example' ? 'example' : ''}
           site={SITE}
           location={location}
