@@ -46,7 +46,7 @@ CardContainer.propTypes = {
   path: PropTypes.string.isRequired,
   fullWidthCards: PropTypes.bool.isRequired,
   cards: PropTypes.arrayOf(PropTypes.node).isRequired,
-  cardColSize: PropTypes.oneOf([1, 2, 3, 4, 5])
+  cardColSize: PropTypes.oneOf([1, 2, 3, 4, 5, 6])
 };
 
 export default CardContainer;

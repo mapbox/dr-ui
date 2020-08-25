@@ -29,7 +29,7 @@ export default class SplitPage extends React.Component {
 }
 
 SplitPage.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   frontMatter: PropTypes.shape({
     title: PropTypes.string.isRequired,
     hideFeedback: PropTypes.bool
