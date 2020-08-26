@@ -1,0 +1,508 @@
+<!doctype html><html lang="en"><head><title data-react-helmet="true">Dr. UI</title>
+
+<meta data-react-helmet="true" charset="utf-8"/><meta data-react-helmet="true" name="viewport" content="width=device-width,initial-scale=1"/><meta data-react-helmet="true" name="robots" content="noindex"/>
+
+
+
+<style>a,code,div,h1,h2,h3,h4,html,li,ol,p,pre,span,ul{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}body{padding:0;vertical-align:baseline}html{-webkit-box-sizing:border-box;box-sizing:border-box}h1,h2,h3,h4{font-weight:400}*,::after,::before,:after,:before{-webkit-box-sizing:inherit;box-sizing:inherit}ol,ul{list-style:none}body,button{margin:0;border:0}button{background:0 0;color:inherit;font:inherit;padding:0;width:auto;text-align:left;-webkit-appearance:none;-moz-appearance:none;appearance:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;border-radius:0}button:disabled{cursor:default}button::-moz-focus-inner{padding:0;border:0}a{text-decoration:none;color:inherit}svg{display:inline-block}.select,pre{display:block}pre{white-space:pre-wrap;-moz-tab-size:2;-o-tab-size:2;tab-size:2}@font-face{font-family:'Open Sans';font-weight:400;src:url(https://api.mapbox.com/mapbox-assembly/fonts/opensans-regular.v1.woff2) format('woff2'),url(https://api.mapbox.com/mapbox-assembly/fonts/opensans-regular.v1.woff) format('woff')}@font-face{font-family:'Open Sans';font-weight:300;src:url(https://api.mapbox.com/mapbox-assembly/fonts/opensans-light.v1.woff2) format('woff2'),url(https://api.mapbox.com/mapbox-assembly/fonts/opensans-light.v1.woff) format('woff')}@font-face{font-family:'Open Sans';font-style:italic;src:url(https://api.mapbox.com/mapbox-assembly/fonts/opensans-italic.v1.woff2) format('woff2'),url(https://api.mapbox.com/mapbox-assembly/fonts/opensans-italic.v1.woff) format('woff')}@font-face{font-family:'Open Sans';font-weight:700;src:url(https://api.mapbox.com/mapbox-assembly/fonts/opensans-bold.v1.woff2) format('woff2'),url(https://api.mapbox.com/mapbox-assembly/fonts/opensans-bold.v1.woff) format('woff')}@font-face{font-family:'Open Sans';font-weight:700;font-style:italic;src:url(https://api.mapbox.com/mapbox-assembly/fonts/opensans-bolditalic.v1.woff2) format('woff2'),url(https://api.mapbox.com/mapbox-assembly/fonts/opensans-bolditalic.v1.woff) format('woff')}.select{font-family:inherit;background:0 0;border:0;margin:0;-webkit-box-shadow:inset 0 0 0 1px #c6d2e1;box-shadow:inset 0 0 0 1px #c6d2e1;border-radius:4px;-webkit-transition:background-color .125s,-webkit-box-shadow .125s;transition:background-color .125s,box-shadow .125s;transition:background-color .125s,box-shadow .125s,-webkit-box-shadow .125s;width:100%}.select:focus{-webkit-box-shadow:inset 0 0 0 1px #4264fb;box-shadow:inset 0 0 0 1px #4264fb}.select:disabled{-webkit-box-shadow:inset 0 0 0 1px rgba(147,167,191,.25);box-shadow:inset 0 0 0 1px rgba(147,167,191,.25);pointer-events:none;color:rgba(31,51,73,.25);background-color:rgba(147,167,191,.25);border-color:transparent}.select-container{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;position:relative;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.select{-webkit-appearance:none;-moz-appearance:none;appearance:none;background-color:transparent;font-size:15px;line-height:24px;color:currentColor;padding:6px 30px 6px 12px;cursor:pointer}.select-arrow{position:absolute;right:12px;top:calc(50% - 1px);pointer-events:none;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid #c6d2e1;width:8px;height:8px;margin-top:-1px;-webkit-transition:border-top-color .125s;transition:border-top-color .125s}.select:focus+.select-arrow{border-top-color:#4264fb}.select option{background-color:#fff;color:#1f3349}.select option:disabled{color:rgba(31,51,73,.25)}.select::-ms-expand{display:none}@media all and (-ms-high-contrast:active){.select:focus::-ms-value{background-color:transparent;color:inherit}}@media all and (-ms-high-contrast:none){.select:focus::-ms-value{background-color:transparent;color:inherit}}.select:disabled+.select-arrow{border-top-color:rgba(31,51,73,.25)}body{color:#1f3349;font-size:15px;line-height:24px;font-family:'Open Sans',sans-serif;font-weight:400;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%}.prose code:not(.unprose),.prose pre:not(.unprose){font-family:'Menlo','Bitstream Vera Sans Mono','Monaco','Consolas',monospace;white-space:pre-wrap;font-size:90%;line-height:1.5em;background:rgba(31,51,73,.05);border-radius:3px}.prose pre:not(.unprose){padding:12px;overflow:auto;margin-bottom:12px}.prose pre code:not(.unprose){background:0 0;padding:0}.prose code:not(.unprose){padding:2px 4px}.txt-bold{font-weight:700!important}.txt-l{font-size:18px;line-height:30px}.txt-m{font-size:15px;line-height:24px}.prose ol:not(.unprose),.prose ul:not(.unprose){margin-left:24px}.prose ol:not(.unprose),.prose p:not(.unprose),.prose ul:not(.unprose){margin-bottom:12px}.prose ul ul ul:not(.unprose),.prose ul ul:not(.unprose){margin-bottom:6px}.prose ul:not(.unprose){list-style:disc}.prose ol:not(.unprose){list-style:decimal}.prose li:not(.unprose){display:list-item;margin-bottom:6px}.txt-truncate{display:block;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.prose h1:not(.unprose){font-weight:700;font-size:45px;line-height:54px;margin-bottom:12px;padding-top:36px}.prose h2:not(.unprose),.prose h3:not(.unprose),.prose h4:not(.unprose){font-weight:700;font-size:35px;line-height:42px;margin-bottom:12px;padding-top:24px}.prose h3:not(.unprose),.prose h4:not(.unprose){font-size:30px;line-height:36px}.prose h4:not(.unprose){font-size:18px;line-height:24px;padding-top:18px}.prose a:not(.unprose){color:#4264fb;text-decoration:underline}.prose a:not(.unprose):hover{color:#314ccd}.prose h1:first-child:not(.unprose),.prose h2:first-child:not(.unprose),.prose h3:first-child:not(.unprose),.prose h4:first-child:not(.unprose){padding-top:0}.prose :last-child:not(.unprose){margin-bottom:0}.align-l{text-align:left!important}.border-t{border-style:solid;border-top-width:1px}.border-b{border-style:solid;border-bottom-width:1px}.border-b--2{border-bottom-width:2px!important}.round-full{border-radius:9999px!important}.cursor-pointer{cursor:pointer!important}.icon{display:block;fill:currentColor;height:1em;width:1em}.limiter{padding-left:24px;padding-right:24px;width:100%}@media screen and (min-width:640px){.limiter{margin-left:auto;margin-right:auto;width:91.666666666%;max-width:1200px;padding-left:0;padding-right:0}}@media screen and (min-width:800px){.limiter{width:83.33333333%}}.grid{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-ms-flex-wrap:wrap!important;flex-wrap:wrap!important}.col{display:block;max-width:100%;-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-negative:1;flex-shrink:1}.col--12{-webkit-box-flex:0;-ms-flex:none;flex:none;width:100%!important}.block,.clearfix::after{display:block!important}.inline-block{display:inline-block!important}.none{display:none!important}.fixed{position:fixed!important}.absolute{position:absolute!important}.relative{position:relative!important}.right{right:0!important}.left{left:0!important}.bottom{bottom:0!important}.z5{z-index:5!important}.flex-parent{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important}.flex-parent--center-main{-webkit-box-pack:center!important;-ms-flex-pack:center!important;justify-content:center!important}.flex-parent--center-cross{-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important}.flex-parent--end-main{-webkit-box-pack:end!important;-ms-flex-pack:end!important;justify-content:flex-end!important}.flex-parent--space-between-main{-webkit-box-pack:justify!important;-ms-flex-pack:justify!important;justify-content:space-between!important}.flex-child{display:block;max-width:100%}.flex-child--no-shrink{-ms-flex-negative:0!important;flex-shrink:0!important}.fl{float:left!important}.clearfix::after{content:''!important;clear:both!important}.my12{margin-top:12px!important;margin-bottom:12px!important}.my24{margin-top:24px!important;margin-bottom:24px!important}.mx24{margin-left:24px!important;margin-right:24px!important}.mt6{margin-top:6px!important}.mt24{margin-top:24px!important}.mt60{margin-top:60px!important}.mr-neg36{margin-right:-36px!important}.mr12{margin-right:12px!important}.mr24{margin-right:24px!important}.mb6{margin-bottom:6px!important}.mb60{margin-bottom:60px!important}.ml-neg24{margin-left:-24px!important}.ml24{margin-left:24px!important}.py3{padding-top:3px!important;padding-bottom:3px!important}.py12{padding-top:12px!important;padding-bottom:12px!important}.py24{padding-top:24px!important;padding-bottom:24px!important}.px0{padding-left:0!important;padding-right:0!important}.px6{padding-left:6px!important;padding-right:6px!important}.px12{padding-left:12px!important;padding-right:12px!important}.px24{padding-left:24px!important;padding-right:24px!important}.pt0{padding-top:0!important}.pt12{padding-top:12px!important}.pt30{padding-top:30px!important}.pb12{padding-bottom:12px!important}.pl12{padding-left:12px!important}.w60{width:60px!important}.wmax300{max-width:300px!important}.h60{height:60px!important}@media screen and (min-width:640px){.my0-mm{margin-top:0!important;margin-bottom:0!important}.mx0-mm{margin-left:0!important;margin-right:0!important}.mt24-mm{margin-top:24px!important}.ml24-mm{margin-left:24px!important}.px24-mm{padding-left:24px!important;padding-right:24px!important}.pt0-mm{padding-top:0!important}.pr0-mm{padding-right:0!important}.wmax180-mm{max-width:180px!important}.wmax-full-mm{max-width:100%!important}.h-full-mm{height:100%!important}}@media screen and (min-width:800px){.wmax240-ml{max-width:240px!important}}.prose pre::-webkit-scrollbar,.scroll-styled::-webkit-scrollbar{width:6px;height:6px;background:0 0}.prose pre::-webkit-scrollbar:hover,.scroll-styled::-webkit-scrollbar:hover{background:0 0}.scroll-styled::-webkit-scrollbar-track{background:0 0}.scroll-styled::-webkit-scrollbar-thumb{background:rgba(0,0,0,.25);border-color:transparent;width:6px;border-radius:3px}.prose pre::-webkit-scrollbar-thumb:hover,.scroll-styled::-webkit-scrollbar-thumb:hover{background:rgba(0,0,0,.35)}.prose pre::-webkit-scrollbar-track,.prose pre::-webkit-scrollbar-track:hover,.scroll-styled::-webkit-scrollbar-track:hover{background:0 0}.events-none{-webkit-touch-callout:none;pointer-events:none}@font-face{font-family:'Cera';font-weight:700;src:url(https://api.mapbox.com/mapbox-assembly/fonts/CeraPRO-Bold.v1.woff2) format('woff2'),url(https://api.mapbox.com/mapbox-assembly/fonts/CeraPRO-Bold.v1.woff) format('woff')}@font-face{font-family:'Cera';font-style:italic;src:url(https://api.mapbox.com/mapbox-assembly/fonts/CeraPRO-BoldItalic.v1.woff2) format('woff2'),url(https://api.mapbox.com/mapbox-assembly/fonts/CeraPRO-BoldItalic.v1.woff) format('woff')}.txt-fancy{font-family:'Cera','Open Sans',sans-serif!important;font-weight:700}.btn--blue{background-color:#4264fb}.btn--blue:hover{background-color:#314ccd}.color-gray{color:#5b7897!important}.color-white{color:#fff!important}.color-black{color:#070b10!important}.bg-gray-faint{background-color:#f4f7fb!important}.bg-lighten75{background-color:rgba(255,255,255,.75)!important}.bg-white{background-color:#fff!important}.border--gray-light{border-color:#c6d2e1!important}.border--blue{border-color:#4264fb!important}.border--transparent{border-color:transparent!important}.shadow-darken25{-webkit-box-shadow:0 0 10px 2px rgba(31,51,73,.25)!important;box-shadow:0 0 10px 2px rgba(31,51,73,.25)!important}.color-blue-on-hover:hover{color:#4264fb!important}@media screen and (min-width:640px){.col--2-mm,.col--4-mm,.col--6-mm,.col--8-mm{-webkit-box-flex:0;-ms-flex:none;flex:none;width:16.6666%!important}.col--4-mm,.col--6-mm,.col--8-mm{width:33.3333%!important}.col--6-mm,.col--8-mm{width:50%!important}.col--8-mm{width:66.6666%!important}.block-mm{display:block!important}.inline-block-mm{display:inline-block!important}.none-mm{display:none!important}.relative-mm{position:relative!important}.viewport-full-mm{height:100vh!important}.flex-parent-mm{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important}.fl-mm{float:left!important}.border-b-mm{border-style:solid;border-bottom-width:1px}}#docs-content .prose h1{margin-top:6px;margin-bottom:30px;font-size:36px}#docs-content .prose h2{font-weight:400!important;font-size:30px;border-top:1px solid!important;border-color:#d6dee8!important;padding-top:60px;margin:36px 0 18px}#docs-content .prose h3{font-weight:400;font-size:24px;padding-top:40px}.prose pre[class*=language-]{max-height:300px;overflow:auto}.prose pre::-webkit-scrollbar-thumb{background:rgba(0,0,0,.25);border-color:transparent;width:6px;border-radius:3px}@media screen and (min-width:640px){.scroll-auto-mm{overflow:auto!important;-webkit-overflow-scrolling:touch}}code[class*=language-],pre[class*=language-]{color:#273d56;background:0 0;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em;background:#272822}.token.punctuation{color:#273d56}.token.property{color:#314ccd}.token.number{color:#7753eb}.token.string{color:#ce2c69}.token.operator,.token.variable{color:#273d56}.token.class-name,.token.function{color:#385af5}.token.keyword{color:#314ccd}.prose pre,pre{max-height:300px;margin-bottom:18px!important}
+/*# sourceMappingURL=batfish-styles-56cd35dc35e82b97078a492359798b9d.css.map */</style>
+<script id="loadCss">document.addEventListener('DOMContentLoaded',function(){var s=document.createElement('link');s.rel='stylesheet';s.href='/dr-ui/assets/batfish-styles-56cd35dc35e82b97078a492359798b9d.css';document.head.insertBefore(s, document.getElementById('loadCss'));});</script>
+</head><body><div id="batfish-content"><div data-reactroot=""><div class="shell-header-buffer"></div><div class="border-t border-b border--gray-light bg-white" data-swiftype-index="false"><div class="limiter"><div class="grid"><div class="col col--4-mm col--12" style="min-height:50px"><div class="ml24-mm pt12"><div class="flex-parent"><a href="/dr-ui/" class="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover">Dr. UI</a></div></div></div><div class="col col--6-mm col--12"><div class="clearfix"><div class="fl"><a href="/dr-ui/" class="inline-block px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block border-b border--transparent " data-test="/dr-ui/">Components</a></div><div class="fl"><a href="/dr-ui/guides/" class="inline-block px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block border-b border--blue txt-bold " data-test="/dr-ui/guides/">Guides</a></div><div class="fl"><a href="/dr-ui/examples/" class="inline-block px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block-mm none border--transparent " data-test="/dr-ui/examples/">Examples</a></div><div class="fl"><div class="inline-block"><button aria-label="More" class="px6 py12 mr12 align-l cursor-pointer none-mm" type="button">More +</button></div></div></div></div><div class="col col--2-mm col--12"><div class="flex-parent-mm flex-parent--center-cross flex-parent--end-main h-full-mm wmax300 wmax-full-mm my0-mm my12"></div></div></div></div></div><div class="limiter"><div class="grid"><div class="col col--4-mm col--12 bg-gray-faint"><div data-swiftype-index="false"><div class="sticky-outer-wrapper"><div class="sticky-inner-wrapper" style="position:relative;top:0px;z-index:3"><div class="viewport-full-mm scroll-auto-mm scroll-styled" id="dr-ui--page-layout-sidebar"><div class="mx0-mm ml-neg24 mr-neg36 relative-mm absolute right left"><div class="dr-ui--navigation-accordion"><div class="block-mm none"><div class="px12 block-mm none"><div class="py3 "><a href="/dr-ui/guides/" class="color-blue-on-hover color-gray text-decoration-none unprose flex-parent flex-parent--space-between-main flex-parent--center-cross"><div class="pl12 py12 txt-bold txt-m flex-child">Guides</div><div class="flex-child flex-child--no-shrink"><svg role="presentation" focusable="false" class="events-none icon" style="width:18px;height:18px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-chevron-down"></use></svg></div></a></div></div><div class="px12 block-mm none bg-lighten75"><div class="py3  border-t border--gray-light"><a href="/dr-ui/guides/batfish-helpers/" class="color-blue-on-hover color-gray text-decoration-none unprose flex-parent flex-parent--space-between-main flex-parent--center-cross"><div class="pl12 py12 txt-bold txt-m flex-child color-black">Batfish helpers</div></a><div class="ml24 pt0"><ul class="txt-m pb12 inline-block-mm none unprose"><li class="mb6"><a href="#navigation" id="#navigation-sidebar" class="color-blue-on-hover">Navigation</a><ul class="none"><li class="mt6"><a href="#arguments" id="#arguments-sidebar" class="color-blue-on-hover">Arguments</a></li><li class="mt6"><a href="#set-up-in-batfishconfigjs" id="#set-up-in-batfishconfigjs-sidebar" class="color-blue-on-hover">Set up in batfish.config.js</a></li><li class="mt6"><a href="#usage" id="#usage-sidebar" class="color-blue-on-hover">Usage</a></li><li class="mt6"><a href="#output" id="#output-sidebar" class="color-blue-on-hover">Output</a></li></ul></li><li class="mb6"><a href="#topics" id="#topics-sidebar" class="color-blue-on-hover">Topics</a><ul class="none"><li class="mt6"><a href="#arguments-1" id="#arguments-1-sidebar" class="color-blue-on-hover">Arguments</a></li><li class="mt6"><a href="#set-up-in-batfishconfigjs-1" id="#set-up-in-batfishconfigjs-1-sidebar" class="color-blue-on-hover">Set up in batfish.config.js</a></li><li class="mt6"><a href="#usage-1" id="#usage-1-sidebar" class="color-blue-on-hover">Usage</a></li><li class="mt6"><a href="#output-1" id="#output-1-sidebar" class="color-blue-on-hover">Output</a></li></ul></li><li class="mb6"><a href="#shape-of-multi-structured-sections" id="#shape-of-multi-structured-sections-sidebar" class="color-blue-on-hover">Shape of multi-structured sections</a><ul class="none"><li class="mt6"><a href="#example" id="#example-sidebar" class="color-blue-on-hover">Example</a></li></ul></li><li class="mb6"><a href="#split-pages" id="#split-pages-sidebar" class="color-blue-on-hover">Split pages</a><ul class="none"><li class="mt6"><a href="#arguments-2" id="#arguments-2-sidebar" class="color-blue-on-hover">Arguments</a></li><li class="mt6"><a href="#set-up-in-batfishconfigjs-2" id="#set-up-in-batfishconfigjs-2-sidebar" class="color-blue-on-hover">Set up in batfish.config.js</a></li><li class="mt6"><a href="#usage-2" id="#usage-2-sidebar" class="color-blue-on-hover">Usage</a></li><li class="mt6"><a href="#output-2" id="#output-2-sidebar" class="color-blue-on-hover">Output</a></li></ul></li><li class="mb6"><a href="#troubleshooting" id="#troubleshooting-sidebar" class="color-blue-on-hover">Troubleshooting</a><ul class="none"></ul></li></ul></div></div></div><div class="px12 block-mm none"><div class="py3  border-t border--gray-light"><a href="/dr-ui/guides/page-layout/" class="color-blue-on-hover color-gray text-decoration-none unprose flex-parent flex-parent--space-between-main flex-parent--center-cross"><div class="pl12 py12 txt-bold txt-m flex-child">PageLayout component</div><div class="flex-child flex-child--no-shrink"><svg role="presentation" focusable="false" class="events-none icon" style="width:18px;height:18px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-chevron-down"></use></svg></div></a></div></div><div class="px12 block-mm none"><div class="py3  border-t border--gray-light"><a href="/dr-ui/guides/split-pages/" class="color-blue-on-hover color-gray text-decoration-none unprose flex-parent flex-parent--space-between-main flex-parent--center-cross"><div class="pl12 py12 txt-bold txt-m flex-child">Split pages</div><div class="flex-child flex-child--no-shrink"><svg role="presentation" focusable="false" class="events-none icon" style="width:18px;height:18px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-chevron-down"></use></svg></div></a></div></div><div class="px12 block-mm none"><div class="py3  border-t border--gray-light"><a href="/dr-ui/guides/multi-structured/" class="color-blue-on-hover color-gray text-decoration-none unprose flex-parent flex-parent--space-between-main flex-parent--center-cross"><div class="pl12 py12 txt-bold txt-m flex-child">Multi-structured sites</div><div class="flex-child flex-child--no-shrink"><svg role="presentation" focusable="false" class="events-none icon" style="width:18px;height:18px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-chevron-down"></use></svg></div></a></div></div></div><div class="none-mm block bg-gray-faint px24 py24"><div class="relative "><div class="select-container "><select id="navigate-this-section" class="select select--stroke round-full bg-white" aria-required="true" data-test="navigate-this-section-select"><option value="/dr-ui/guides/">Guides</option><option selected="" value="/dr-ui/guides/batfish-helpers/">Batfish helpers</option><option value="/dr-ui/guides/page-layout/">PageLayout component</option><option value="/dr-ui/guides/split-pages/">Split pages</option><option value="/dr-ui/guides/multi-structured/">Multi-structured sites</option></select><div class="select-arrow"></div></div><div role="alert"></div></div></div></div></div></div></div></div></div></div><div class="col col--12 col--8-mm"><div id="docs-content" class="pr0-mm mt24 mb60 px24-mm mt24-mm mt60 pt30 pt0-mm"><div class="prose"><h1 class="txt-fancy">Batfish helpers</h1><div><div class="section section-h2"><div class="body h3-section-list"><div class="section section-h3"><div class="body"><p>Dr. UI has two functions that are used in <code>dataSelectors</code> in <code>batfish.config.js</code> to help build page metadata and site hierarchy. Each data selector has tests to assert the shape of the data.</p><p>These dataset functions often use the page&#x27;s relative pathname as a unique identifier.</p></div></div></div></div><div class="section section-h2 "><h2 id="navigation"><a href="#navigation" class="unprose color-blue-on-hover">Navigation</a></h2><div class="body h3-section-list "><div class="section section-h3"><div class="body"><p><code>navigation</code> builds data for the dr-ui navigation components <a href="https://mapbox.github.io/mr-ui/#tablist"><code>TabList</code></a> and <a href="/dr-ui/#navigationaccordion"><code>NavigationAccordion</code></a>.</p></div></div><div class="section section-h3 "><h3 id="arguments"><a href="#arguments" class="unprose color-blue-on-hover">Arguments</a></h3><div class="body "><ul><li><code>siteBasePath</code>, required. The function requires the <code>siteBasePath</code>.</li><li><code>data</code>, object. Provided by the data selector.</li><li><code>sections</code>, array. See <a href="#shape-of-multi-structured-sections">Shape of multi-structured sections</a>.</li></ul></div></div><div class="section section-h3 "><h3 id="set-up-in-batfishconfigjs"><a href="#set-up-in-batfishconfigjs" class="unprose color-blue-on-hover">Set up in batfish.config.js</a></h3><div class="body "><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token punctuation">{</span>
+<!-- -->  <!-- -->buildNavigation<!-- -->
+<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&#x27;@mapbox/dr-ui/helpers/batfish/navigation.js&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<!-- -->
+<span class="token keyword">const</span> siteBasePath <span class="token operator">=</span> <span class="token string">&#x27;/help&#x27;</span><span class="token punctuation">;</span>
+<!-- -->
+<!-- -->module<span class="token punctuation">.</span><span class="token method-variable function-variable method function property-access">exports</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
+<!-- -->  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+<!-- -->    <!-- -->siteBasePath<span class="token operator">:</span> siteBasePath<span class="token punctuation">,</span>
+<!-- -->    <!-- -->dataSelectors<span class="token operator">:</span> <span class="token punctuation">{</span>
+<!-- -->      <span class="token function-variable function">navigation</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token function">buildNavigation</span><span class="token punctuation">(</span>siteBasePath<span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+<!-- -->    <span class="token punctuation">}</span>
+<!-- -->  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre><p>Multi-structured sites require and additional configuration array:</p><pre class="language-js"><code class="language-js">dataSelectors<span class="token operator">:</span> <span class="token punctuation">{</span>
+<!-- -->  <span class="token function-variable function">navigation</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span>
+<!-- -->    <span class="token function">buildNavigation</span><span class="token punctuation">(</span>siteBasePath<span class="token punctuation">,</span> data<span class="token punctuation">,</span> <span class="token punctuation">[</span>
+<!-- -->      <span class="token punctuation">{</span> path<span class="token operator">:</span> <span class="token string">&#x27;maps&#x27;</span><span class="token punctuation">,</span> title<span class="token operator">:</span> <span class="token string">&#x27;Maps SDK for iOS&#x27;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<!-- -->      <span class="token punctuation">{</span> path<span class="token operator">:</span> <span class="token string">&#x27;navigation&#x27;</span><span class="token punctuation">,</span> title<span class="token operator">:</span> <span class="token string">&#x27;Navigation SDK for iOS&#x27;</span> <span class="token punctuation">}</span>
+<!-- -->    <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div><div class="section section-h3 "><h3 id="usage"><a href="#usage" class="unprose color-blue-on-hover">Usage</a></h3><div class="body "><pre class="language-js"><code class="language-js"><span class="token keyword module">import</span> <span class="token maybe-class-name">React</span> <span class="token keyword module">from</span> <span class="token string">&#x27;react&#x27;</span><span class="token punctuation">;</span>
+<span class="token keyword module">import</span> navigation <span class="token keyword module">from</span> <span class="token string">&#x27;@mapbox/batfish/data/navigation&#x27;</span><span class="token punctuation">;</span>
+<!-- -->
+<span class="token keyword">class</span> <span class="token class-name">PageShell</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+<!-- -->  <span class="token function">render</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<!-- -->    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+<!-- -->      <span class="token operator">&lt;</span><span class="token maybe-class-name">PageLayout</span> navigation<span class="token operator">=</span><span class="token punctuation">{</span>navigation<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<!-- -->    <span class="token punctuation">)</span>
+<!-- -->  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div><div class="section section-h3 "><h3 id="output"><a href="#output" class="unprose color-blue-on-hover">Output</a></h3><div class="body "><ul><li><code>navTabs</code>. Provides the top-level navigation for the site and is powered by the <code>navOrder</code> field in the frontMatter of those pages.</li><li><code>accordion</code>. Provides the data for <a href="/dr-ui/#navigationaccordion"><code>NavigationAccordion</code></a>.</li><li><code>hierarchy</code>. Provides the parent path for each page.</li></ul><h4 id="sample"><a href="#sample" class="unprose color-blue-on-hover">Sample</a></h4><pre class="language-json"><code class="language-json"><span class="token number">{
+  &quot;navTabs&quot;: [
+    {
+      &quot;label&quot;: &quot;Components&quot;,
+      &quot;id&quot;: &quot;/dr-ui/&quot;,
+      &quot;href&quot;: &quot;/dr-ui/&quot;
+    },
+    {
+      &quot;label&quot;: &quot;Guides&quot;,
+      &quot;id&quot;: &quot;/dr-ui/guides/&quot;,
+      &quot;href&quot;: &quot;/dr-ui/guides/&quot;
+    },
+    {
+      &quot;label&quot;: &quot;Examples&quot;,
+      &quot;id&quot;: &quot;/dr-ui/examples/&quot;,
+      &quot;href&quot;: &quot;/dr-ui/examples/&quot;
+    }
+  ],
+  &quot;accordion&quot;: {
+    &quot;/dr-ui/&quot;: [
+      {
+        &quot;title&quot;: &quot;Guides&quot;,
+        &quot;path&quot;: &quot;/dr-ui/guides/&quot;
+      },
+      {
+        &quot;title&quot;: &quot;Batfish helpers&quot;,
+        &quot;path&quot;: &quot;/dr-ui/guides/batfish-helpers/&quot;
+      },
+      {
+        &quot;title&quot;: &quot;PageLayout component&quot;,
+        &quot;path&quot;: &quot;/dr-ui/guides/page-layout/&quot;
+      },
+      {
+        &quot;title&quot;: &quot;Split pages&quot;,
+        &quot;path&quot;: &quot;/dr-ui/guides/split-pages/&quot;
+      },
+      {
+        &quot;title&quot;: &quot;Multi-structured sites&quot;,
+        &quot;path&quot;: &quot;/dr-ui/guides/multi-structured/&quot;
+      }
+    ],
+    &quot;/dr-ui/guides/&quot;: [
+      {
+        &quot;title&quot;: &quot;Guides&quot;,
+        &quot;path&quot;: &quot;/dr-ui/guides/&quot;
+      },
+      {
+        &quot;title&quot;: &quot;Batfish helpers&quot;,
+        &quot;path&quot;: &quot;/dr-ui/guides/batfish-helpers/&quot;
+      },
+      {
+        &quot;title&quot;: &quot;PageLayout component&quot;,
+        &quot;path&quot;: &quot;/dr-ui/guides/page-layout/&quot;
+      },
+      {
+        &quot;title&quot;: &quot;Split pages&quot;,
+        &quot;path&quot;: &quot;/dr-ui/guides/split-pages/&quot;
+      },
+      {
+        &quot;title&quot;: &quot;Multi-structured sites&quot;,
+        &quot;path&quot;: &quot;/dr-ui/guides/multi-structured/&quot;
+      }
+    ]
+  },
+  &quot;hierarchy&quot;: {
+    &quot;/dr-ui/examples/example-1/&quot;: {
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;parent&quot;: &quot;/dr-ui/examples/&quot;
+    },
+    &quot;/dr-ui/changelog/&quot;: {
+      &quot;title&quot;: &quot;Components&quot;,
+      &quot;parent&quot;: &quot;/dr-ui/&quot;
+    },
+    &quot;/dr-ui/examples/example-2/&quot;: {
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;parent&quot;: &quot;/dr-ui/examples/&quot;
+    },
+    &quot;/dr-ui/examples/example-3/&quot;: {
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;parent&quot;: &quot;/dr-ui/examples/&quot;
+    },
+    &quot;/dr-ui/examples/&quot;: {
+      &quot;title&quot;: &quot;Examples&quot;,
+      &quot;parent&quot;: &quot;/dr-ui/examples/&quot;
+    },
+    &quot;/dr-ui/&quot;: {
+      &quot;title&quot;: &quot;Components&quot;,
+      &quot;parent&quot;: &quot;/dr-ui/&quot;
+    },
+    &quot;/dr-ui/guides/&quot;: {
+      &quot;title&quot;: &quot;Guides&quot;,
+      &quot;parent&quot;: &quot;/dr-ui/guides/&quot;
+    },
+    &quot;/dr-ui/guides/multi-structured/&quot;: {
+      &quot;title&quot;: &quot;Guides&quot;,
+      &quot;parent&quot;: &quot;/dr-ui/guides/&quot;
+    },
+    &quot;/dr-ui/guides/page-layout/&quot;: {
+      &quot;title&quot;: &quot;Guides&quot;,
+      &quot;parent&quot;: &quot;/dr-ui/guides/&quot;
+    },
+    &quot;/dr-ui/guides/split-pages/&quot;: {
+      &quot;title&quot;: &quot;Guides&quot;,
+      &quot;parent&quot;: &quot;/dr-ui/guides/&quot;
+    },
+    &quot;/dr-ui/guides/batfish-helpers/&quot;: {
+      &quot;title&quot;: &quot;Guides&quot;,
+      &quot;parent&quot;: &quot;/dr-ui/guides/&quot;
+    }
+  }
+}</span>
+</code></pre></div></div></div></div><div class="section section-h2 "><h2 id="topics"><a href="#topics" class="unprose color-blue-on-hover">Topics</a></h2><div class="body h3-section-list "><div class="section section-h3"><div class="body"><p><code>topics</code> collects all topics for subpages to build the examples (cards) layout.</p></div></div><div class="section section-h3 "><h3 id="arguments-1"><a href="#arguments-1" class="unprose color-blue-on-hover">Arguments</a></h3><div class="body "><ul><li><code>data</code>, object. Provided by the data selector.</li><li><code>append</code>, object. Append additional data, this is helpful if you have programmatic data (like the <a href="https://docs.mapbox.com/mapbox-gl-js/plugins/">Mapbox GL JS Plugins</a> page) and want to take advantage of the example layout.</li><li><code>sortArr</code>, array. An array of topics that is in the order you want the topics to display.</li></ul></div></div><div class="section section-h3 "><h3 id="set-up-in-batfishconfigjs-1"><a href="#set-up-in-batfishconfigjs-1" class="unprose color-blue-on-hover">Set up in batfish.config.js</a></h3><div class="body "><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token punctuation">{</span> buildTopics <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&#x27;@mapbox/dr-ui/helpers/batfish/topics.js&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<!-- -->
+<!-- -->module<span class="token punctuation">.</span><span class="token method-variable function-variable method function property-access">exports</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
+<!-- -->  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+<!-- -->    <!-- -->dataSelectors<span class="token operator">:</span> <span class="token punctuation">{</span>
+<!-- -->      <span class="token function-variable function">topics</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token function">buildTopics</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+<!-- -->    <span class="token punctuation">}</span>
+<!-- -->  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></div><div class="section section-h3 "><h3 id="usage-1"><a href="#usage-1" class="unprose color-blue-on-hover">Usage</a></h3><div class="body "><pre class="language-js"><code class="language-js"><span class="token keyword module">import</span> <span class="token maybe-class-name">React</span> <span class="token keyword module">from</span> <span class="token string">&#x27;react&#x27;</span><span class="token punctuation">;</span>
+<span class="token keyword module">import</span> topics <span class="token keyword module">from</span> <span class="token string">&#x27;@mapbox/batfish/data/topics&#x27;</span><span class="token punctuation">;</span>
+<!-- -->
+<span class="token keyword">class</span> <span class="token class-name">PageShell</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+<!-- -->  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<!-- -->    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+<!-- -->      <span class="token operator">&lt;</span><span class="token maybe-class-name">PageLayout</span> topics<span class="token operator">=</span><span class="token punctuation">{</span>topics<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+<!-- -->    <span class="token punctuation">)</span>
+<!-- -->  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div><div class="section section-h3 "><h3 id="output-1"><a href="#output-1" class="unprose color-blue-on-hover">Output</a></h3><div class="body "><ul><li>The shape of topics is an object, where the top-level keys are pathnames for top-level pages that have subpages with <code>topics</code> or <code>topic</code>.<ul><li>Each object has a <code>topics</code>. It contains a unique list of topics, ordered by count of pages with that topic.<ul><li>Each topic has <code>pages</code>. It contains metadata for each page that has that topic.</li></ul></li></ul></li></ul><h4 id="sample-1"><a href="#sample-1" class="unprose color-blue-on-hover">Sample</a></h4><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+<!-- -->  <span class="token property">&quot;/dr-ui/examples/&quot;</span> <span class="token operator">:</span> <span class="token number">{
+  &quot;path&quot;: &quot;/dr-ui/examples/&quot;,
+  &quot;title&quot;: &quot;Examples&quot;,
+  &quot;description&quot;: &quot;Replace me.&quot;,
+  &quot;contentType&quot;: &quot;example&quot;,
+  &quot;language&quot;: [
+    &quot;JavaScript&quot;
+  ],
+  &quot;navOrder&quot;: 3,
+  &quot;layout&quot;: &quot;example&quot;,
+  &quot;fullWidthCards&quot;: true,
+  &quot;products&quot;: [
+    &quot;Documentation&quot;
+  ],
+  &quot;topics&quot;: [
+    {
+      &quot;name&quot;: &quot;Navigation&quot;,
+      &quot;pages&quot;: [
+        {
+          &quot;text&quot;: &quot;Example 1&quot;,
+          &quot;url&quot;: &quot;/dr-ui/examples/example-1/&quot;,
+          &quot;path&quot;: &quot;/dr-ui/examples/example-1/&quot;,
+          &quot;title&quot;: &quot;Example 1&quot;,
+          &quot;description&quot;: &quot;This is example 1.&quot;,
+          &quot;contentType&quot;: &quot;example&quot;,
+          &quot;language&quot;: [
+            &quot;JavaScript&quot;
+          ],
+          &quot;topics&quot;: [
+            &quot;Navigation&quot;
+          ],
+          &quot;thumbnail&quot;: &quot;header-image&quot;,
+          &quot;layout&quot;: &quot;example&quot;,
+          &quot;products&quot;: [
+            &quot;Documentation&quot;
+          ]
+        },
+        {
+          &quot;text&quot;: &quot;Example 2&quot;,
+          &quot;url&quot;: &quot;/dr-ui/examples/example-2/&quot;,
+          &quot;path&quot;: &quot;/dr-ui/examples/example-2/&quot;,
+          &quot;title&quot;: &quot;Example 2&quot;,
+          &quot;description&quot;: &quot;This is example 2.&quot;,
+          &quot;contentType&quot;: &quot;example&quot;,
+          &quot;language&quot;: [
+            &quot;JavaScript&quot;
+          ],
+          &quot;topics&quot;: [
+            &quot;Navigation&quot;
+          ],
+          &quot;thumbnail&quot;: &quot;header-image&quot;,
+          &quot;layout&quot;: &quot;example&quot;,
+          &quot;products&quot;: [
+            &quot;Documentation&quot;
+          ]
+        },
+        {
+          &quot;text&quot;: &quot;Example 3&quot;,
+          &quot;url&quot;: &quot;/dr-ui/examples/example-3/&quot;,
+          &quot;path&quot;: &quot;/dr-ui/examples/example-3/&quot;,
+          &quot;title&quot;: &quot;Example 3&quot;,
+          &quot;description&quot;: &quot;This is example 3.&quot;,
+          &quot;contentType&quot;: &quot;example&quot;,
+          &quot;language&quot;: [
+            &quot;JavaScript&quot;
+          ],
+          &quot;topics&quot;: [
+            &quot;Navigation&quot;,
+            &quot;Geocoding&quot;
+          ],
+          &quot;thumbnail&quot;: &quot;header-image&quot;,
+          &quot;layout&quot;: &quot;example&quot;,
+          &quot;products&quot;: [
+            &quot;Documentation&quot;
+          ]
+        }
+      ],
+      &quot;count&quot;: 3,
+      &quot;url&quot;: &quot;/dr-ui/examples/#navigation&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Geocoding&quot;,
+      &quot;pages&quot;: [
+        {
+          &quot;text&quot;: &quot;Example 3&quot;,
+          &quot;url&quot;: &quot;/dr-ui/examples/example-3/&quot;,
+          &quot;path&quot;: &quot;/dr-ui/examples/example-3/&quot;,
+          &quot;title&quot;: &quot;Example 3&quot;,
+          &quot;description&quot;: &quot;This is example 3.&quot;,
+          &quot;contentType&quot;: &quot;example&quot;,
+          &quot;language&quot;: [
+            &quot;JavaScript&quot;
+          ],
+          &quot;topics&quot;: [
+            &quot;Navigation&quot;,
+            &quot;Geocoding&quot;
+          ],
+          &quot;thumbnail&quot;: &quot;header-image&quot;,
+          &quot;layout&quot;: &quot;example&quot;,
+          &quot;products&quot;: [
+            &quot;Documentation&quot;
+          ]
+        }
+      ],
+      &quot;count&quot;: 1,
+      &quot;url&quot;: &quot;/dr-ui/examples/#geocoding&quot;
+    }
+  ]
+}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div></div></div><div class="section section-h2 "><h2 id="shape-of-multi-structured-sections"><a href="#shape-of-multi-structured-sections" class="unprose color-blue-on-hover">Shape of multi-structured <code>sections</code></a></h2><div class="body h3-section-list "><div class="section section-h3"><div class="body"><ul><li><code>path</code> (required) string. Top-level folder in <code>src/pages</code>.</li><li><code>title</code> (required) string. Title of the product.</li><li><code>tag</code> (optional) string. Name of tag to add to <a href="/dr-ui/#productmenu"><code>ProductMenu</code></a>.</li></ul></div></div><div class="section section-h3 "><h3 id="example"><a href="#example" class="unprose color-blue-on-hover">Example</a></h3><div class="body "><pre class="language-json"><code class="language-JSON"><span class="token punctuation">[</span>
+<!-- -->  <span class="token punctuation">{</span>
+<!-- -->    <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;maps&quot;</span><span class="token punctuation">,</span>
+<!-- -->    <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Maps SDK for iOS&quot;</span><span class="token punctuation">,</span>
+<!-- -->  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<!-- -->  <span class="token punctuation">{</span>
+<!-- -->    <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;navigation&quot;</span><span class="token punctuation">,</span>
+<!-- -->    <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Navigation SDK for iOS&quot;</span>
+<!-- -->  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<!-- -->  <span class="token punctuation">{</span>
+<!-- -->    <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;beta/navigation&quot;</span><span class="token punctuation">,</span>
+<!-- -->    <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Beta Navigation SDK for iOS&quot;</span><span class="token punctuation">,</span>
+<!-- -->    <span class="token property">&quot;tag&quot;</span><span class="token operator">:</span> <span class="token string">&quot;beta&quot;</span>
+<!-- -->  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<!-- -->  <span class="token punctuation">{</span>
+<!-- -->    <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vision&quot;</span><span class="token punctuation">,</span>
+<!-- -->    <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Vision SDK for iOS&quot;</span>
+<!-- -->  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div></div></div></div><div class="section section-h2 "><h2 id="split-pages"><a href="#split-pages" class="unprose color-blue-on-hover">Split pages</a></h2><div class="body h3-section-list "><div class="section section-h3"><div class="body"><p><code>split-pages</code> supports groups of pages that use the <a href="/dr-ui/guides/split-pages/">split page pattern</a> by generating and collecting <code>headings</code> for the main page to reference.</p></div></div><div class="section section-h3 "><h3 id="arguments-2"><a href="#arguments-2" class="unprose color-blue-on-hover">Arguments</a></h3><div class="body "><ul><li><code>data</code>, object. Provided by the data selector.</li></ul></div></div><div class="section section-h3 "><h3 id="set-up-in-batfishconfigjs-2"><a href="#set-up-in-batfishconfigjs-2" class="unprose color-blue-on-hover">Set up in batfish.config.js</a></h3><div class="body "><pre class="language-js"><code class="language-js"><span class="token keyword">const</span> <span class="token punctuation">{</span>
+<!-- -->  <!-- -->buildSplitPages<!-- -->
+<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&#x27;@mapbox/dr-ui/helpers/batfish/split-pages.js&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<!-- -->
+<!-- -->module<span class="token punctuation">.</span><span class="token method-variable function-variable method function property-access">exports</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
+<!-- -->  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+<!-- -->    <!-- -->dataSelectors<span class="token operator">:</span> <span class="token punctuation">{</span>
+<!-- -->      <span class="token function-variable function">splitPages</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token function">buildSplitPages</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+<!-- -->    <span class="token punctuation">}</span>
+<!-- -->  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></div><div class="section section-h3 "><h3 id="usage-2"><a href="#usage-2" class="unprose color-blue-on-hover">Usage</a></h3><div class="body "><pre class="language-js"><code class="language-js"><span class="token keyword module">import</span> <span class="token maybe-class-name">React</span> <span class="token keyword module">from</span> <span class="token string">&#x27;react&#x27;</span><span class="token punctuation">;</span>
+<span class="token keyword module">import</span> splitPages <span class="token keyword module">from</span> <span class="token string">&#x27;@mapbox/batfish/data/split-pages&#x27;</span><span class="token punctuation">;</span>
+<!-- -->
+<span class="token keyword">class</span> <span class="token class-name">PageShell</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+<!-- -->  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<!-- -->    <span class="token keyword">const</span> <span class="token punctuation">{</span> children<span class="token punctuation">,</span> <span class="token dom variable">location</span><span class="token punctuation">,</span> frontMatter <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token property-access">props</span><span class="token punctuation">;</span>
+<!-- -->    <span class="token keyword">const</span> isSplitPage <span class="token operator">=</span> splitPages<span class="token punctuation">[</span><span class="token dom variable">location</span><span class="token punctuation">.</span><span class="token property-access">pathname</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<!-- -->
+<!-- -->    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+<!-- -->      <span class="token operator">&lt;</span><span class="token maybe-class-name">PageLayout</span> headings<span class="token operator">=</span><span class="token punctuation">{</span>isSplitPage <span class="token operator">?</span> isSplitPage<span class="token punctuation">.</span><span class="token property-access">headings</span> <span class="token operator">:</span> <span class="token keyword nil">undefined</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+<!-- -->        <span class="token punctuation">{</span>children<span class="token punctuation">}</span>
+<!-- -->      <span class="token operator">&lt;</span><span class="token operator">/</span><span class="token maybe-class-name">PageLayout</span><span class="token operator">&gt;</span>
+<!-- -->    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<!-- -->  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div><div class="section section-h3 "><h3 id="output-2"><a href="#output-2" class="unprose color-blue-on-hover">Output</a></h3><div class="body "><ul><li>The shape is an object, where the top-level keys are pathnames for top level pages that have split pages.<ul><li>Each object has a <code>headings</code> array. It contains all the headings for the page.</li></ul></li></ul><h4 id="sample-2"><a href="#sample-2" class="unprose color-blue-on-hover">Sample</a></h4><pre class="language-json"><code class="language-json"><span class="token number">{
+  &quot;/dr-ui/guides/split-pages/&quot;: {
+    &quot;filePath&quot;: &quot;/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/guides/split-pages/index.js&quot;,
+    &quot;path&quot;: &quot;/dr-ui/guides/split-pages/&quot;,
+    &quot;frontMatter&quot;: {
+      &quot;title&quot;: &quot;Split pages&quot;,
+      &quot;description&quot;: &quot;This is the first section&quot;,
+      &quot;splitPages&quot;: true,
+      &quot;order&quot;: 3,
+      &quot;layout&quot;: &quot;accordion&quot;,
+      &quot;contentType&quot;: &quot;API&quot;,
+      &quot;hideFeedback&quot;: true
+    },
+    &quot;pages&quot;: [
+      {
+        &quot;filePath&quot;: &quot;/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/guides/split-pages/sections/intro.md&quot;,
+        &quot;path&quot;: &quot;/dr-ui/guides/split-pages/sections/intro/&quot;,
+        &quot;frontMatter&quot;: {
+          &quot;title&quot;: &quot;Introduction to split pages&quot;,
+          &quot;description&quot;: &quot;An introduction to use split pages.&quot;,
+          &quot;order&quot;: 1,
+          &quot;splitPage&quot;: true,
+          &quot;hideFeedback&quot;: true,
+          &quot;products&quot;: [
+            &quot;Documentation&quot;
+          ],
+          &quot;contentType&quot;: &quot;guide&quot;
+        },
+        &quot;headings&quot;: [],
+        &quot;slug&quot;: &quot;introduction-to-split-pages&quot;,
+        &quot;order&quot;: 1
+      },
+      {
+        &quot;filePath&quot;: &quot;/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/guides/split-pages/sections/how-to.md&quot;,
+        &quot;path&quot;: &quot;/dr-ui/guides/split-pages/sections/how-to/&quot;,
+        &quot;frontMatter&quot;: {
+          &quot;title&quot;: &quot;How to use spit pages&quot;,
+          &quot;description&quot;: &quot;An introduction to use split pages.&quot;,
+          &quot;order&quot;: 2,
+          &quot;splitPage&quot;: true,
+          &quot;hideFeedback&quot;: true,
+          &quot;contentType&quot;: &quot;guide&quot;,
+          &quot;products&quot;: [
+            &quot;Mapbox fundamentals&quot;
+          ],
+          &quot;prependJs&quot;: [
+            &quot;import MainPage from &#x27;!raw-loader!../index.js&#x27;; //eslint-disable-line&quot;,
+            &quot;import SubOne from &#x27;!raw-loader!./intro.md&#x27;; //eslint-disable-line&quot;,
+            &quot;import SplitPageShell from &#x27;!raw-loader!../../../../components/split-page-shell.js&#x27;; //eslint-disable-line&quot;,
+            &quot;import CodeSnippet from &#x27;../../../../../../src/components/code-snippet/code-snippet&#x27;;&quot;,
+            &quot;import { highlightJsx } from &#x27;../../../../../../src/components/highlight/jsx&#x27;;&quot;,
+            &quot;import { highlightHtml } from &#x27;../../../../../../src/components/highlight/html&#x27;;&quot;
+          ]
+        },
+        &quot;headings&quot;: [
+          {
+            &quot;level&quot;: 2,
+            &quot;text&quot;: &quot;How to use split pages&quot;,
+            &quot;slug&quot;: &quot;how-to-use-split-pages&quot;
+          },
+          {
+            &quot;level&quot;: 3,
+            &quot;text&quot;: &quot;1. Create the main page&quot;,
+            &quot;slug&quot;: &quot;1-create-the-main-page&quot;
+          },
+          {
+            &quot;level&quot;: 3,
+            &quot;text&quot;: &quot;2. Create the split pages&quot;,
+            &quot;slug&quot;: &quot;2-create-the-split-pages&quot;
+          },
+          {
+            &quot;level&quot;: 3,
+            &quot;text&quot;: &quot;3. Update the Batfish configuration&quot;,
+            &quot;slug&quot;: &quot;3-update-the-batfish-configuration&quot;
+          },
+          {
+            &quot;level&quot;: 3,
+            &quot;text&quot;: &quot;4. Create redirects&quot;,
+            &quot;slug&quot;: &quot;4-create-redirects&quot;
+          }
+        ],
+        &quot;slug&quot;: &quot;how-to-use-spit-pages&quot;,
+        &quot;order&quot;: 2
+      },
+      {
+        &quot;filePath&quot;: &quot;/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/guides/split-pages/sections/limitations.md&quot;,
+        &quot;path&quot;: &quot;/dr-ui/guides/split-pages/sections/limitations/&quot;,
+        &quot;frontMatter&quot;: {
+          &quot;title&quot;: &quot;Limitations&quot;,
+          &quot;description&quot;: &quot;Limitations to the split page pattern.&quot;,
+          &quot;order&quot;: 3,
+          &quot;splitPage&quot;: true,
+          &quot;hideFeedback&quot;: true,
+          &quot;products&quot;: [
+            &quot;Mapbox fundamentals&quot;
+          ],
+          &quot;contentType&quot;: &quot;guide&quot;
+        },
+        &quot;headings&quot;: [
+          {
+            &quot;level&quot;: 2,
+            &quot;text&quot;: &quot;Limitations&quot;,
+            &quot;slug&quot;: &quot;limitations&quot;
+          }
+        ],
+        &quot;slug&quot;: &quot;limitations&quot;,
+        &quot;order&quot;: 3
+      },
+      {
+        &quot;filePath&quot;: &quot;/Users/katydecorah/Documents/GitHub/dr-ui/docs/src/pages/guides/split-pages/sections/tag-debugger.md&quot;,
+        &quot;path&quot;: &quot;/dr-ui/guides/split-pages/sections/tag-debugger/&quot;,
+        &quot;frontMatter&quot;: {
+          &quot;title&quot;: &quot;Tag debugger&quot;,
+          &quot;description&quot;: &quot;Limitations to the split page pattern.&quot;,
+          &quot;order&quot;: 4,
+          &quot;splitPage&quot;: true,
+          &quot;tag&quot;: &quot;beta&quot;,
+          &quot;hideFeedback&quot;: true,
+          &quot;products&quot;: [
+            &quot;Mapbox fundamentals&quot;
+          ],
+          &quot;contentType&quot;: &quot;guide&quot;
+        },
+        &quot;headings&quot;: [
+          {
+            &quot;level&quot;: 2,
+            &quot;text&quot;: &quot;Tag debugger&quot;,
+            &quot;slug&quot;: &quot;tag-debugger&quot;,
+            &quot;tag&quot;: &quot;beta&quot;
+          }
+        ],
+        &quot;slug&quot;: &quot;tag-debugger&quot;,
+        &quot;order&quot;: 4
+      }
+    ],
+    &quot;headings&quot;: [
+      {
+        &quot;level&quot;: 2,
+        &quot;text&quot;: &quot;How to use split pages&quot;,
+        &quot;slug&quot;: &quot;how-to-use-split-pages&quot;
+      },
+      {
+        &quot;level&quot;: 3,
+        &quot;text&quot;: &quot;1. Create the main page&quot;,
+        &quot;slug&quot;: &quot;1-create-the-main-page&quot;
+      },
+      {
+        &quot;level&quot;: 3,
+        &quot;text&quot;: &quot;2. Create the split pages&quot;,
+        &quot;slug&quot;: &quot;2-create-the-split-pages&quot;
+      },
+      {
+        &quot;level&quot;: 3,
+        &quot;text&quot;: &quot;3. Update the Batfish configuration&quot;,
+        &quot;slug&quot;: &quot;3-update-the-batfish-configuration&quot;
+      },
+      {
+        &quot;level&quot;: 3,
+        &quot;text&quot;: &quot;4. Create redirects&quot;,
+        &quot;slug&quot;: &quot;4-create-redirects&quot;
+      },
+      {
+        &quot;level&quot;: 2,
+        &quot;text&quot;: &quot;Limitations&quot;,
+        &quot;slug&quot;: &quot;limitations&quot;
+      },
+      {
+        &quot;level&quot;: 2,
+        &quot;text&quot;: &quot;Tag debugger&quot;,
+        &quot;slug&quot;: &quot;tag-debugger&quot;,
+        &quot;tag&quot;: &quot;beta&quot;
+      }
+    ]
+  }
+}</span>
+</code></pre></div></div></div></div><div class="section section-h2 "><h2 id="troubleshooting"><a href="#troubleshooting" class="unprose color-blue-on-hover">Troubleshooting</a></h2><div class="body h3-section-list "><div class="section section-h3"><div class="body"><p>If data is not building as you expect:</p><ol><li>Temporarily change a dataSelector in the batfish.config.js to dump out your pages data as a test fixture (rename <code>data-example.json</code> to something meaningful to your use case):</li></ol><pre class="language-js"><code class="language-js"><span class="token function-variable function">navigation</span><span class="token operator">:</span> <span class="token parameter">data</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
+<!-- -->  <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&#x27;fs&#x27;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">writeFileSync</span><span class="token punctuation">(</span><span class="token string">&#x27;./tests/fixtures/data-example.json&#x27;</span><span class="token punctuation">,</span> <span class="token known-class-name class-name">JSON</span><span class="token punctuation">.</span><span class="token method function property-access">stringify</span><span class="token punctuation">(</span>data<span class="token punctuation">,</span> <span class="token keyword null nil">null</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<!-- -->  <span class="token keyword">return</span> <span class="token function">buildNavigation</span><span class="token punctuation">(</span>siteBasePath<span class="token punctuation">,</span> data<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre><ol start="2"><li>Run <code>npm start</code> and the build process will write the JSON file to the fixture folder.</li><li>In <code>tests/navigation.test.js</code> and/or <code>tests/topics.test.js</code> create a new test case that loads in <code>data-example.json</code> (rather than data.json).</li><li>Make any necessary changes to <code>data/navigation.js</code> and/or <code>data/pages.js</code> until all test cases pass.</li></ol></div></div></div></div></div></div></div></div></div></div><div class="fixed block none-mm mx24 my24 z5 bottom right"><div class="block mx24 my24 z5"><div class="inline-block"><button type="button" class="btn--blue w60 h60 px0 round-full shadow-darken25 color-white flex-parent flex-parent--center-main flex-parent--center-cross" aria-label="Back to top"><svg role="presentation" focusable="false" class="events-none icon" style="width:30px;height:30px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-up"></use></svg></button></div></div></div></div></div><div><script>!function(o){function e(e){for(var r,a,t=e[0],i=e[1],u=e[2],n=0,d=[];n<t.length;n++)a=t[n],Object.prototype.hasOwnProperty.call(l,a)&&l[a]&&d.push(l[a][0]),l[a]=0;for(r in i)Object.prototype.hasOwnProperty.call(i,r)&&(o[r]=i[r]);for(f&&f(e);d.length;)d.shift()();return p.push.apply(p,u||[]),s()}function s(){for(var e,r=0;r<p.length;r++){for(var a=p[r],t=!0,i=1;i<a.length;i++){var u=a[i];0!==l[u]&&(t=!1)}t&&(p.splice(r--,1),e=c(c.s=a[0]))}return e}var a={},l={21:0},p=[];function c(e){if(a[e])return a[e].exports;var r=a[e]={i:e,l:!1,exports:{}};return o[e].call(r.exports,r,r.exports,c),r.l=!0,r.exports}c.e=function(i){var e,u,n,r,d,a=[],t=l[i];return 0!==t&&(t?a.push(t[2]):(e=new Promise(function(e,r){t=l[i]=[e,r]}),a.push(t[2]=e),(u=document.createElement("script")).charset="utf-8",u.timeout=120,c.nc&&u.setAttribute("nonce",c.nc),u.src=c.p+""+({0:"vendors~dr-ui~dr-ui-changelog~dr-ui-examples~dr-ui-examples-example-1~dr-ui-examples-example-2~dr-ui~a8f6d408",1:"vendors~dr-ui~dr-ui-changelog~dr-ui-examples~dr-ui-examples-example-1~dr-ui-examples-example-2~dr-ui~fec2092b",2:"vendors~dr-ui~dr-ui-changelog~dr-ui-examples~dr-ui-examples-example-1~dr-ui-examples-example-2~dr-ui~b933cb9e",3:"dr-ui-changelog~dr-ui-examples~dr-ui-examples-example-1~dr-ui-examples-example-2~dr-ui-examples-exam~f126f6ee",4:"vendors~dr-ui~dr-ui-guides-page-layout~dr-ui-guides-split-pages~dr-ui-guides-split-pages-sections-how-to",6:"dr-ui",7:"dr-ui-changelog",8:"dr-ui-examples",9:"dr-ui-examples-example-1",10:"dr-ui-examples-example-2",11:"dr-ui-examples-example-3",12:"dr-ui-guides",13:"dr-ui-guides-batfish-helpers",14:"dr-ui-guides-multi-structured",15:"dr-ui-guides-page-layout",16:"dr-ui-guides-split-pages",17:"dr-ui-guides-split-pages-sections-how-to",18:"dr-ui-guides-split-pages-sections-intro",19:"dr-ui-guides-split-pages-sections-limitations",20:"dr-ui-guides-split-pages-sections-tag-debugger",23:"vendors~assembly-js"}[i]||i)+"-"+{0:"854b1f25303a2c7aaf63",1:"d5020de4789a18f235a4",2:"6ac02e48673565341b28",3:"abe53a785cd89a48eac0",4:"68b5196083a4f13668c4",6:"49a71fe282fd7aa79a1d",7:"a80214ed85142fa30500",8:"3b7366058e7e09b215b0",9:"11657a2810749733fe6b",10:"1cfc6b9ff309012cabcd",11:"4df136aefc4fa46944e6",12:"1b257a2812909f9a9279",13:"65439e886b67b512e0b6",14:"4e410d028cdd05ff1ce5",15:"b1cc9c0f2a57fb2edde8",16:"4a2e08320fefd11bd9dc",17:"45ffa7d095b6529307b7",18:"96a3491d19b7e81a8a98",19:"0e8d1c62af286b497332",20:"c17f9d1e249f688b1baf",23:"cf2a60673aa3f231c02c"}[i]+".chunk.js",n=new Error,r=function(e){u.onerror=u.onload=null,clearTimeout(d);var r,a,t=l[i];0!==t&&(t&&(r=e&&("load"===e.type?"missing":e.type),a=e&&e.target&&e.target.src,n.message="Loading chunk "+i+" failed.\n("+r+": "+a+")",n.name="ChunkLoadError",n.type=r,n.request=a,t[1](n)),l[i]=void 0)},d=setTimeout(function(){r({type:"timeout",target:u})},12e4),u.onerror=u.onload=r,document.head.appendChild(u))),Promise.all(a)},c.m=o,c.c=a,c.d=function(e,r,a){c.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:a})},c.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},c.t=function(r,e){if(1&e&&(r=c(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var a=Object.create(null);if(c.r(a),Object.defineProperty(a,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var t in r)c.d(a,t,function(e){return r[e]}.bind(null,t));return a},c.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return c.d(r,"a",r),r},c.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},c.p="/dr-ui/assets/",c.oe=function(e){throw console.error(e),e};var r=window.webpackJsonp=window.webpackJsonp||[],t=r.push.bind(r);r.push=e,r=r.slice();for(var i=0;i<r.length;i++)e(r[i]);var f=t;s()}([]);</script>
+<script src="/dr-ui/assets/vendor-7144e2bd2e82ed24bcbf.chunk.js"></script>
+<script src="/dr-ui/assets/app-dd95353146e2423b6f34.chunk.js"></script></div></body></html>
