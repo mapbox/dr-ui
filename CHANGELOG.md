@@ -1,5 +1,9 @@
 # Changelog
 
+# 1.0.1
+
+- Fix the `type` prop in `PageLayout`'s `Feedback` component.
+
 ## 1.0.0
 
 Introducing layouts in `PageLayout`. See the [`PageLayout`](http://mapbox.github.io/dr-ui/guides/page-layout/) guide for more information on building with this component.

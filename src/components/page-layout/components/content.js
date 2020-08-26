@@ -25,7 +25,7 @@ export default class Content extends React.Component {
       <div className="mt36">
         <Feedback
           {...this.props}
-          type={layout === 'example' ? 'example' : ''}
+          type={layout === 'example' ? 'example' : undefined}
           site={SITE}
           location={location}
           section={section}
