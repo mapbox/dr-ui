@@ -1,0 +1,8 @@
+{
+  "extends": ["../../../conf/eslint-config-base.json"],
+  "parser": "babel-eslint",
+  "rules": {
+    "es/no-object-assign": "off",
+    "es/no-set": "off"
+  }
+}

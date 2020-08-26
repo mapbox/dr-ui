@@ -25,6 +25,7 @@
     "ToggleableCodeBlock"
   ],
   "Layout": [
+    "PageLayout",
     "BackToTopButton",
     "GlossaryCard",
     "GlossaryImage",
@@ -33,7 +34,6 @@
     "OverviewHeader",
     "NavigationAccordion",
     "NavigationDropdown",
-    "PageLayout",
     "ProductMenu",
     "SectionedNavigation",
     "Topbar",
@@ -41,6 +41,7 @@
     "Card",
     "CardContainer",
     "ExamplesPage",
+    "AnalyticsShell",
     "ErrorBoundary"
   ],
   "Images": [

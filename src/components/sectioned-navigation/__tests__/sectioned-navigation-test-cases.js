@@ -1,7 +1,5 @@
 import React from 'react';
 import SectionedNavigation from '../sectioned-navigation';
-import PageLayout from '../../page-layout/page-layout';
-import examples from './examples';
 import Basic from '../examples/basic';
 
 const testCases = {};
@@ -176,23 +174,6 @@ testCases.filter = {
         ]
       }
     ]
-  }
-};
-
-testCases.page = {
-  description: 'PageLayout',
-  component: PageLayout,
-  props: {
-    sidebarContent: (
-      <SectionedNavigation
-        title="Examples"
-        includeFilterBar={true}
-        sections={examples}
-      />
-    ),
-    sidebarContentStickyTop: 0,
-    sidebarContentStickyTopNarrow: 0,
-    children: <div>Doc content</div>
   }
 };
 

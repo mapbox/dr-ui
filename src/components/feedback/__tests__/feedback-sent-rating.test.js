@@ -11,19 +11,21 @@ describe('Sent helpful rating - yes', () => {
         pathname: '/mapbox-gl-js/api/',
         hash: '#lnglat'
       }}
-      user={{
-        id: 'crocsfan19',
-        email: 'crocsfan19@mapbox.com',
-        plan: {
-          id: 'starter'
-        }
-      }}
       webhook={{
         production: '',
         staging: ''
       }}
     />
   );
+  feedback.setState({
+    user: {
+      id: 'crocsfan19',
+      email: 'crocsfan19@mapbox.com',
+      plan: {
+        id: 'starter'
+      }
+    }
+  });
   test('clicked yes', () => {
     feedback.find('#dr-ui--feedback-page-yes').simulate('click');
     expect(feedback.state()).toEqual({
@@ -51,7 +53,14 @@ describe('Sent helpful rating - yes', () => {
       },
       feedback: undefined,
       feedbackSent: undefined,
-      helpful: true
+      helpful: true,
+      user: {
+        id: 'crocsfan19',
+        email: 'crocsfan19@mapbox.com',
+        plan: {
+          id: 'starter'
+        }
+      }
     });
   });
 });
@@ -64,19 +73,22 @@ describe('Sent helpful rating - no', () => {
         pathname: '/mapbox-gl-js/api/',
         hash: '#lnglat'
       }}
-      user={{
-        id: 'crocsfan19',
-        email: 'crocsfan19@mapbox.com',
-        plan: {
-          id: 'starter'
-        }
-      }}
       webhook={{
         production: '',
         staging: ''
       }}
     />
   );
+
+  feedback.setState({
+    user: {
+      id: 'crocsfan19',
+      email: 'crocsfan19@mapbox.com',
+      plan: {
+        id: 'starter'
+      }
+    }
+  });
   test('clicked no', () => {
     feedback.find('#dr-ui--feedback-page-no').simulate('click');
     expect(feedback.state()).toEqual({
@@ -104,7 +116,14 @@ describe('Sent helpful rating - no', () => {
       },
       feedback: undefined,
       feedbackSent: undefined,
-      helpful: false
+      helpful: false,
+      user: {
+        id: 'crocsfan19',
+        email: 'crocsfan19@mapbox.com',
+        plan: {
+          id: 'starter'
+        }
+      }
     });
   });
 });

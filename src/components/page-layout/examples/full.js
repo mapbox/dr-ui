@@ -1,5 +1,5 @@
 /*
-Basic.
+"full" layout.
 */
 import React from 'react';
 import PageLayout from '../page-layout';
@@ -8,22 +8,53 @@ export default class Basic extends React.Component {
   render() {
     return (
       <PageLayout
-        sidebarTitle="My page title"
-        sidebarContent={
-          <div className="px24">
-            <a className="link block mb6" href="#section-1">
-              Section 1
-            </a>
-            <a className="link block mb6" href="#section-2">
-              Section 2
-            </a>
-          </div>
-        }
-        sidebarContentStickyTop={0}
-        sidebarContentStickyTopNarrow={0}
+        constants={{
+          SITE: 'dr-ui',
+          BASEURL: '/dr-ui',
+          FORWARD_EVENT_WEBHOOK: {
+            production: '123',
+            staging: '123'
+          }
+        }}
+        location={{
+          pathname: '/PageLayout/'
+        }}
+        frontMatter={{
+          title: 'Overview',
+          layout: 'full'
+        }}
+        navigation={{
+          hierarchy: {
+            '/PageLayout/': {
+              parent: '/dr-ui/',
+              title: 'Demo'
+            }
+          },
+          navTabs: [
+            {
+              href: '/PageLayout/',
+              id: '/PageLayout/',
+              label: 'Overview'
+            },
+            {
+              href: '/PageLayout/specification/',
+              id: '/PageLayout/specification/',
+              label: 'Specification'
+            },
+            {
+              href: '/PageLayout/examples/',
+              id: '/PageLayout/examples/',
+              label: 'Examples'
+            },
+            {
+              href: '/PageLayout/demo/',
+              id: '/PageLayout/demo/',
+              label: 'Demo'
+            }
+          ]
+        }}
       >
-        <div className="prose">
-          <h1>PageLayout</h1>
+        <React.Fragment>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -53,7 +84,7 @@ export default class Basic extends React.Component {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-        </div>
+        </React.Fragment>
       </PageLayout>
     );
   }

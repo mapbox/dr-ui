@@ -1,0 +1,8 @@
+{
+  "SITE": "Dr. UI",
+  "BASEURL": "/dr-ui",
+  "FORWARD_EVENT_WEBHOOK": {
+    "production": "null",
+    "staging": "null"
+  }
+}

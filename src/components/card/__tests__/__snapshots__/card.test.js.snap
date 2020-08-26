@@ -12,7 +12,7 @@ exports[`card Card with image renders as expected 1`] = `
       className="relative h120 mb12"
       style={
         Object {
-          "backgroundImage": "url('https://i.giphy.com/media/A9lgUYVqLeRb2/giphy.gif')",
+          "backgroundImage": "url('./files/simple-map.png')",
           "backgroundPosition": "center",
           "backgroundSize": "100% auto",
         }

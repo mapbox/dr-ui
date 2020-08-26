@@ -7,15 +7,11 @@ import Icon from '@mapbox/mr-ui/icon';
 import * as Sentry from '@sentry/browser';
 import classnames from 'classnames';
 import slugify from 'slugify';
+import env from '../analytics-shell/env';
 
 const feedbackLimit = 1000; // character limit for the feedback textarea
 const anonymousId = uuidv4(); // creates an anonymousId fallback if user is not logged or we cant get their info
-const environment =
-  typeof window !== 'undefined'
-    ? /(^|\S+\.)mapbox\.com/.test(window.location.host)
-      ? 'production'
-      : 'staging'
-    : undefined;
+const environment = env();
 const location = typeof window !== 'undefined' ? window.location : undefined;
 
 class Feedback extends React.Component {
@@ -25,8 +21,18 @@ class Feedback extends React.Component {
       helpful: undefined,
       feedback: undefined,
       feedbackSent: undefined,
-      event: undefined
+      event: undefined,
+      user: undefined
     };
+  }
+  componentDidMount() {
+    if (typeof MapboxPageShell !== 'undefined') {
+      MapboxPageShell.afterUserCheck(() => {
+        this.setState({
+          user: MapboxPageShell.getUser() || undefined
+        });
+      });
+    }
   }
 
   // creates a unique id for an element
@@ -76,8 +82,8 @@ class Feedback extends React.Component {
     return {
       event: 'Sent docs feedback',
       // set user if available else set anonymousId (needed for forward-event request)
-      ...(this.props.user && this.props.user.id
-        ? { userId: this.props.user.id }
+      ...(this.state.user && this.state.user.id
+        ? { userId: this.state.user.id }
         : { anonymousId: anonymousId }),
       properties: {
         // true, false
@@ -91,13 +97,13 @@ class Feedback extends React.Component {
         // get page context
         page: this.props.location || undefined,
         // set user if available else set anonymousId (needed for Mode)
-        ...(this.props.user && this.props.user.id
-          ? { userId: this.props.user.id }
+        ...(this.state.user && this.state.user.id
+          ? { userId: this.state.user.id }
           : { anonymousId: anonymousId }),
-        ...(!this.props.user && { anonymousId: anonymousId }),
+        ...(!this.state.user && { anonymousId: anonymousId }),
         // set plan, if available
-        ...(this.props.user &&
-          this.props.user.plan && { plan: this.props.user.plan.id }),
+        ...(this.state.user &&
+          this.state.user.plan && { plan: this.state.user.plan.id }),
         // get environment: staging or production
         environment: environment,
         // get full window location
@@ -142,16 +148,16 @@ class Feedback extends React.Component {
       if (this.props.preferredLanguage)
         scope.setTag('preferredLanguage', this.props.preferredLanguage);
       // set tags for the user's plan (if available)
-      if (this.props.user && this.props.user.plan && this.props.user.plan.id)
-        scope.setTag('plan', this.props.user.plan.id);
+      if (this.state.user && this.state.user.plan && this.state.user.plan.id)
+        scope.setTag('plan', this.state.user.plan.id);
       // set user attributes (if available)
-      if (this.props.user) {
+      if (this.state.user) {
         Sentry.setUser({
-          ...(this.props.user.id && { username: this.props.user.id }),
-          ...(this.props.user.email && { email: this.props.user.email }),
-          ...(this.props.user.plan &&
-            this.props.user.plan.id && {
-              data: { plan: this.props.user.plan.id }
+          ...(this.state.user.id && { username: this.state.user.id }),
+          ...(this.state.user.email && { email: this.state.user.email }),
+          ...(this.state.user.plan &&
+            this.state.user.plan.id && {
+              data: { plan: this.state.user.plan.id }
             })
         });
       }
@@ -317,12 +323,6 @@ Feedback.propTypes = {
     staging: PropTypes.string.isRequired,
     production: PropTypes.string.isRequired
   }), // staging and production webhook URLs to send forward event data to
-  user: PropTypes.shape({
-    // user object if available
-    id: PropTypes.string,
-    email: PropTypes.string,
-    plan: PropTypes.shape({ id: PropTypes.string })
-  }),
   preferredLanguage: PropTypes.string, // preferred code language if available
   feedbackSentryDsn: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]) // Sentry DSN (URL) to send text feedback to for issue management or "false" to not send feedback to Sentry
 };

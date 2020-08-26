@@ -11,19 +11,21 @@ describe('Sent text feedback', () => {
         pathname: '/mapbox-gl-js/api/',
         hash: '#lnglat'
       }}
-      user={{
-        id: 'crocsfan19',
-        email: 'crocsfan19@mapbox.com',
-        plan: {
-          id: 'starter'
-        }
-      }}
       webhook={{
         production: '',
         staging: ''
       }}
     />
   );
+  feedback.setState({
+    user: {
+      id: 'crocsfan19',
+      email: 'crocsfan19@mapbox.com',
+      plan: {
+        id: 'starter'
+      }
+    }
+  });
 
   test('clicked yes and sent feedback', () => {
     // click yes
@@ -68,7 +70,14 @@ describe('Sent text feedback', () => {
       },
       feedback: 'cool beans!',
       feedbackSent: true,
-      helpful: true
+      helpful: true,
+      user: {
+        id: 'crocsfan19',
+        email: 'crocsfan19@mapbox.com',
+        plan: {
+          id: 'starter'
+        }
+      }
     });
   });
 });

@@ -16,13 +16,6 @@ export default class Basic extends React.Component {
             'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook'
         }}
         preferredLanguage="Swift"
-        user={{
-          id: 'crocsfan19',
-          email: 'crocsfan19@mapbox.com',
-          plan: {
-            id: 'starter'
-          }
-        }}
         section="LngLat"
         location={{
           pathname: '/dr-ui/feedback/',
