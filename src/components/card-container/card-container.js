@@ -38,13 +38,14 @@ class CardContainer extends React.PureComponent {
 }
 
 CardContainer.defaultProps = {
-  cardColSize: 6
+  cardColSize: 6,
+  fullWidthCards: false
 };
 
 CardContainer.propTypes = {
   title: PropTypes.string.isRequired,
   path: PropTypes.string.isRequired,
-  fullWidthCards: PropTypes.bool.isRequired,
+  fullWidthCards: PropTypes.bool,
   cards: PropTypes.arrayOf(PropTypes.node).isRequired,
   cardColSize: PropTypes.oneOf([1, 2, 3, 4, 5, 6])
 };

@@ -29,8 +29,7 @@ export default class Basic extends React.Component {
                   <div
                     className="relative h120 mb12"
                     style={{
-                      backgroundImage:
-                        "url('https://i.giphy.com/media/A9lgUYVqLeRb2/giphy.gif')",
+                      backgroundImage: "url('./files/simple-map.png')",
                       backgroundSize: '100% auto',
                       backgroundPosition: 'center'
                     }}
@@ -46,8 +45,7 @@ export default class Basic extends React.Component {
                   <div
                     className="relative h120 mb12"
                     style={{
-                      backgroundImage:
-                        "url('https://i.giphy.com/media/A9lgUYVqLeRb2/giphy.gif')",
+                      backgroundImage: "url('./files/simple-map.png')",
                       backgroundSize: '100% auto',
                       backgroundPosition: 'center'
                     }}
@@ -70,8 +68,7 @@ export default class Basic extends React.Component {
                   <div
                     className="relative h120 mb12"
                     style={{
-                      backgroundImage:
-                        "url('https://i.giphy.com/media/A9lgUYVqLeRb2/giphy.gif')",
+                      backgroundImage: "url('./files/simple-map.png')",
                       backgroundSize: '100% auto',
                       backgroundPosition: 'center'
                     }}
@@ -87,8 +84,7 @@ export default class Basic extends React.Component {
                   <div
                     className="relative h120 mb12"
                     style={{
-                      backgroundImage:
-                        "url('https://i.giphy.com/media/A9lgUYVqLeRb2/giphy.gif')",
+                      backgroundImage: "url('./files/simple-map.png')",
                       backgroundSize: '100% auto',
                       backgroundPosition: 'center'
                     }}
@@ -104,8 +100,7 @@ export default class Basic extends React.Component {
                   <div
                     className="relative h120 mb12"
                     style={{
-                      backgroundImage:
-                        "url('https://i.giphy.com/media/A9lgUYVqLeRb2/giphy.gif')",
+                      backgroundImage: "url('./files/simple-map.png')",
                       backgroundSize: '100% auto',
                       backgroundPosition: 'center'
                     }}
