@@ -17,6 +17,7 @@ export default class PageLayout extends React.Component {
     const { constants, topBarSticker, tabListAppend } = this.props;
     return (
       <PageLayoutTopbar
+        {...this.props}
         constants={constants}
         navigation={switchedNavigation}
         parentPath={parentPath}
@@ -232,5 +233,11 @@ PageLayout.propTypes = {
     })
   ),
   /** For when headings are dynamic, this is used by API docs */
-  headings: PropTypes.array
+  headings: PropTypes.array,
+  /** For `Search` component */
+  placeholder: PropTypes.string,
+  /** For `Search` component */
+  connector: PropTypes.string,
+  /** For `Feedback` component */
+  feedbackSentryDsn: PropTypes.oneOfType([PropTypes.bool, PropTypes.string])
 };
