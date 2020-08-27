@@ -10,6 +10,7 @@ import { findHasSection, findParentPath } from './utils';
 // default configuration for each layout
 // every option can be overriden in the frontMatter
 import layoutConfig from './layout.config.js';
+import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
 
 export default class PageLayout extends React.Component {
   // render the page's top bar navigation
@@ -237,7 +238,7 @@ PageLayout.propTypes = {
   /** For `Search` component */
   placeholder: PropTypes.string,
   /** For `Search` component */
-  connector: PropTypes.string,
+  connector: PropTypes.instanceOf(SiteSearchAPIConnector),
   /** For `Feedback` component */
   feedbackSentryDsn: PropTypes.oneOfType([PropTypes.bool, PropTypes.string])
 };

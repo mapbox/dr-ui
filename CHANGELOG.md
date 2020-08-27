@@ -1,5 +1,9 @@
 # Changelog
 
+# 1.0.2
+
+- Fix the `connector` prop in `PageLayout`.
+
 # 1.0.1
 
 - Fix the `type` prop in `PageLayout`'s `Feedback` component.
