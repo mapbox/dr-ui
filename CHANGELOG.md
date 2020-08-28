@@ -3,6 +3,7 @@
 # Main
 
 - Fix element spacing within `PageLayoutTopbar`.
+- Add `formatTopics` Batfish helper function. [#328](https://github.com/mapbox/dr-ui/pull/328)
 
 # 1.0.2
 
