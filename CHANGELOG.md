@@ -1,5 +1,9 @@
 # Changelog
 
+# Main
+
+- Fix element spacing within `PageLayoutTopbar`.
+
 # 1.0.2
 
 - Fix the `connector` prop in `PageLayout`.

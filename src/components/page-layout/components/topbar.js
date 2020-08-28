@@ -35,8 +35,11 @@ export default class PageLayoutTopbar extends React.Component {
       <Wrapper>
         <div className="limiter">
           <div className="grid">
-            <div className="col col--4-mm col--12" style={{ minHeight: 50 }}>
-              <div className="ml24-mm pt12">
+            <div className="col col--4-mm col--12">
+              <div
+                className="ml24-mm flex-parent-mm flex-parent--start-main h30"
+                style={{ marginTop: 10 }}
+              >
                 <ProductMenu
                   productName={title || SITE}
                   tag={tag || undefined}
@@ -50,7 +53,10 @@ export default class PageLayoutTopbar extends React.Component {
               )}
             </div>
             <div className="col col--2-mm col--12">
-              <div className="flex-parent-mm flex-parent--center-cross flex-parent--end-main h-full-mm wmax300 wmax-full-mm my0-mm my12">
+              <div
+                className="flex-parent-mm flex-parent--end-main h-full-mm wmax300 h36 mb12 mb0-mm"
+                style={{ marginTop: 7 }}
+              >
                 <Search {...this.props} site={SITE} />
               </div>
             </div>
