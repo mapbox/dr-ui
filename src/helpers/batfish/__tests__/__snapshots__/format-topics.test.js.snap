@@ -118,7 +118,6 @@ Object {
         "url": "/android/maps/help/#interactive-tools",
       },
     ],
-    "url": "/android/maps/help/",
   },
   "/android/navigation/help/": Object {
     "topics": Array [
@@ -169,7 +168,6 @@ Object {
         "url": "/android/navigation/help/#tutorials-1",
       },
     ],
-    "url": "/android/navigation/help/",
   },
   "/android/vision/help/": Object {
     "topics": Array [
@@ -221,63 +219,64 @@ Object {
         "url": "/android/vision/help/#tutorials",
       },
     ],
-    "url": "/android/vision/help/",
   },
 }
 `;
 
 exports[`formatTopics mts, single product 1`] = `
 Object {
-  "/mapbox-tiling-service/help/": Array [
-    Object {
-      "count": 3,
-      "pages": Array [
-        Object {
-          "description": "Follow these practices to optimize your tileset processing and tileset hosting costs when you tile data using Mapbox Tiling Service or the Mapbox Uploads API.",
-          "path": "https://docs.mapbox.com/help/troubleshooting/manage-tileset-costs/",
-          "text": "Manage your tileset processing and tileset hosting costs",
-          "title": "Manage your tileset processing and tileset hosting costs",
-          "url": "https://docs.mapbox.com/help/troubleshooting/manage-tileset-costs/",
-        },
-        Object {
-          "description": "Learn how to manually adjust the zoom extent of your tilesets.",
-          "path": "https://docs.mapbox.com/help/troubleshooting/adjust-tileset-zoom-extent/",
-          "text": "Adjust the zoom extent of your tileset",
-          "title": "Adjust the zoom extent of your tileset",
-          "url": "https://docs.mapbox.com/help/troubleshooting/adjust-tileset-zoom-extent/",
-        },
-        Object {
-          "description": "Learn how to prepare data for upload, interpret error messages, and troubleshoot failed uploads.",
-          "path": "https://docs.mapbox.com/help/troubleshooting/optimize-map-label-placement/",
-          "text": "Upload data to Mapbox",
-          "title": "Upload data to Mapbox",
-          "url": "https://docs.mapbox.com/help/troubleshooting/optimize-map-label-placement/",
-        },
-      ],
-      "title": "Troubleshooting",
-      "url": "/mapbox-tiling-service/help/#troubleshooting",
-    },
-    Object {
-      "count": 2,
-      "pages": Array [
-        Object {
-          "description": "Create isochrones with the Mapbox Isochrone and Mapbox Tiling Service, and perform geofencing with the Mapbox Tilequery API.",
-          "path": "https://docs.mapbox.com/help/tutorials/geofencing-with-isochrones-and-tilesets/",
-          "text": "Using geofences for location-based notifications and events",
-          "title": "Using geofences for location-based notifications and events",
-          "url": "https://docs.mapbox.com/help/tutorials/geofencing-with-isochrones-and-tilesets/",
-        },
-        Object {
-          "description": "Learn how to use the Tilesets CLI, a tool for accessing Mapbox Tiling Service (MTS), to create new Mapbox tilesets.",
-          "path": "https://docs.mapbox.com/help/tutorials/get-started-mts-and-tilesets-cli/",
-          "text": "Get started using Mapbox Tiling Service and the Tilesets CLI",
-          "title": "Get started using Mapbox Tiling Service and the Tilesets CLI",
-          "url": "https://docs.mapbox.com/help/tutorials/get-started-mts-and-tilesets-cli/",
-        },
-      ],
-      "title": "Tutorials",
-      "url": "/mapbox-tiling-service/help/#tutorials",
-    },
-  ],
+  "/mapbox-tiling-service/help/": Object {
+    "topics": Array [
+      Object {
+        "count": 3,
+        "name": "Troubleshooting",
+        "pages": Array [
+          Object {
+            "description": "Follow these practices to optimize your tileset processing and tileset hosting costs when you tile data using Mapbox Tiling Service or the Mapbox Uploads API.",
+            "path": "https://docs.mapbox.com/help/troubleshooting/manage-tileset-costs/",
+            "text": "Manage your tileset processing and tileset hosting costs",
+            "title": "Manage your tileset processing and tileset hosting costs",
+            "url": "https://docs.mapbox.com/help/troubleshooting/manage-tileset-costs/",
+          },
+          Object {
+            "description": "Learn how to manually adjust the zoom extent of your tilesets.",
+            "path": "https://docs.mapbox.com/help/troubleshooting/adjust-tileset-zoom-extent/",
+            "text": "Adjust the zoom extent of your tileset",
+            "title": "Adjust the zoom extent of your tileset",
+            "url": "https://docs.mapbox.com/help/troubleshooting/adjust-tileset-zoom-extent/",
+          },
+          Object {
+            "description": "Learn how to prepare data for upload, interpret error messages, and troubleshoot failed uploads.",
+            "path": "https://docs.mapbox.com/help/troubleshooting/optimize-map-label-placement/",
+            "text": "Upload data to Mapbox",
+            "title": "Upload data to Mapbox",
+            "url": "https://docs.mapbox.com/help/troubleshooting/optimize-map-label-placement/",
+          },
+        ],
+        "url": "/mapbox-tiling-service/help/#troubleshooting",
+      },
+      Object {
+        "count": 2,
+        "name": "Tutorials",
+        "pages": Array [
+          Object {
+            "description": "Create isochrones with the Mapbox Isochrone and Mapbox Tiling Service, and perform geofencing with the Mapbox Tilequery API.",
+            "path": "https://docs.mapbox.com/help/tutorials/geofencing-with-isochrones-and-tilesets/",
+            "text": "Using geofences for location-based notifications and events",
+            "title": "Using geofences for location-based notifications and events",
+            "url": "https://docs.mapbox.com/help/tutorials/geofencing-with-isochrones-and-tilesets/",
+          },
+          Object {
+            "description": "Learn how to use the Tilesets CLI, a tool for accessing Mapbox Tiling Service (MTS), to create new Mapbox tilesets.",
+            "path": "https://docs.mapbox.com/help/tutorials/get-started-mts-and-tilesets-cli/",
+            "text": "Get started using Mapbox Tiling Service and the Tilesets CLI",
+            "title": "Get started using Mapbox Tiling Service and the Tilesets CLI",
+            "url": "https://docs.mapbox.com/help/tutorials/get-started-mts-and-tilesets-cli/",
+          },
+        ],
+        "url": "/mapbox-tiling-service/help/#tutorials",
+      },
+    ],
+  },
 }
 `;

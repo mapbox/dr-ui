@@ -26,7 +26,6 @@ function topicsWithProducts(baseurl, tabName, contentTypesArr, products) {
       return arr;
     }, []);
     obj[url] = {
-      url,
       topics: sortByCount(topics)
     };
     return obj;
@@ -52,7 +51,7 @@ function topicsWithoutProducts(contentTypesArr, url) {
     contentTypesArr.reduce((arr, type) => {
       const pages = type.pages.map((page) => formatEachGuide(page));
       arr.push({
-        ...type,
+        name: type.title,
         count: pages.length,
         url: `${url}#${slugger.slug(type.title)}`,
         pages
@@ -76,7 +75,9 @@ function formatTopics(baseurl, tabName, contentTypesArr, products) {
   else {
     const url = createUrl(baseurl, tabName);
     return {
-      [url]: topicsWithoutProducts(contentTypesArr, url)
+      [url]: {
+        topics: topicsWithoutProducts(contentTypesArr, url)
+      }
     };
   }
 }

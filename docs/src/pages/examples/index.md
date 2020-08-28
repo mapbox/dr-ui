@@ -7,6 +7,11 @@ language:
 navOrder: 3
 layout: example
 fullWidthCards: true
+hideTitle: true
 products:
   - Documentation
 ---
+
+{{<div className="mb18 txt-l color-gray">}}
+This is an example of using [`topics` function](/dr-ui/guides/batfish-helpers/#topics) to build the examples dataset.
+{{</div>}}

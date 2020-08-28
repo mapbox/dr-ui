@@ -499,6 +499,7 @@ Object {
     "contentType": "example",
     "description": "Replace me.",
     "fullWidthCards": true,
+    "hideTitle": true,
     "language": Array [
       "JavaScript",
     ],
@@ -729,6 +730,7 @@ Object {
     "contentType": "example",
     "description": "Replace me.",
     "fullWidthCards": true,
+    "hideTitle": true,
     "language": Array [
       "JavaScript",
     ],
@@ -959,6 +961,7 @@ Object {
     "contentType": "example",
     "description": "Replace me.",
     "fullWidthCards": true,
+    "hideTitle": true,
     "language": Array [
       "JavaScript",
     ],
