@@ -54,8 +54,8 @@ export default class PageLayoutTopbar extends React.Component {
             </div>
             <div className="col col--2-mm col--12">
               <div
-                className="flex-parent-mm flex-parent--end-main h-full-mm wmax300 h36 mb12 mb0-mm"
-                style={{ marginTop: 7 }}
+                className="flex-parent-mm flex-parent--end-main h-full-mm wmax300 h36"
+                style={{ marginTop: 7, marginBottom: 7 }}
               >
                 <Search {...this.props} site={SITE} />
               </div>

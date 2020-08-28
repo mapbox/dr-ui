@@ -1,5 +1,9 @@
 # Changelog
 
+# 1.1.1
+
+- Fix margin on `Search` in `PageLayout`.
+
 # 1.1.0
 
 - Fix element spacing within `PageLayoutTopbar`.

@@ -30,28 +30,7 @@ export default class Basic extends React.Component {
               title: 'Demo'
             }
           },
-          navTabs: [
-            {
-              href: '/PageLayout/',
-              id: '/PageLayout/',
-              label: 'Overview'
-            },
-            {
-              href: '/PageLayout/specification/',
-              id: '/PageLayout/specification/',
-              label: 'Specification'
-            },
-            {
-              href: '/PageLayout/examples/',
-              id: '/PageLayout/examples/',
-              label: 'Examples'
-            },
-            {
-              href: '/PageLayout/demo/',
-              id: '/PageLayout/demo/',
-              label: 'Demo'
-            }
-          ]
+          navTabs: [] // example with no navTabs
         }}
       >
         <React.Fragment>
