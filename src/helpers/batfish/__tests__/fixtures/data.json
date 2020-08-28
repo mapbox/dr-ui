@@ -58,6 +58,7 @@
         "navOrder": 3,
         "layout": "example",
         "fullWidthCards": true,
+        "hideTitle": true,
         "products": ["Documentation"]
       }
     },
@@ -75,7 +76,9 @@
         "prependJs": [
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
           "import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line",
-          "import splitPages from '@mapbox/batfish/data/split-pages'; // eslint-disable-line"
+          "import splitPages from '@mapbox/batfish/data/split-pages'; // eslint-disable-line",
+          "import relatedMts from '../../../../src/helpers/batfish/__tests__/fixtures/related-mts.json';",
+          "import relatedAndroid from '../../../../src/helpers/batfish/__tests__/fixtures/related-android.json';"
         ]
       }
     },
@@ -201,6 +204,20 @@
         "hideFeedback": true,
         "products": ["Mapbox fundamentals"],
         "contentType": "guide"
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/help/index.md",
+      "path": "/dr-ui/help/",
+      "frontMatter": {
+        "title": "Help",
+        "description": "Example of a Help page.",
+        "contentType": "example",
+        "navOrder": 4,
+        "layout": "example",
+        "fullWidthCards": true,
+        "hideTitle": true,
+        "products": ["Documentation"]
       }
     },
     {
