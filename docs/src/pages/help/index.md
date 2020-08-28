@@ -8,7 +8,7 @@ fullWidthCards: true
 hideTitle: true
 products:
   - Documentation
-# data lives in docs/src/related.json
+# data lives in ./src/helpers/batfish/__tests__/fixtures/related-mts.json
 ---
 
 {{<div className="mb18 txt-l color-gray">}}

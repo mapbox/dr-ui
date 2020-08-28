@@ -5,7 +5,7 @@ const {
   buildSplitPages,
   formatTopics
 } = require('../src/helpers/batfish/index.js');
-const relatedJson = require('./src/related.json');
+const relatedJson = require('../src/helpers/batfish/__tests__/fixtures/related-mts.json');
 
 const siteBasePath = '/dr-ui';
 
