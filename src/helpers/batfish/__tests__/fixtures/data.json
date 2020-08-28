@@ -75,7 +75,9 @@
         "prependJs": [
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
           "import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line",
-          "import splitPages from '@mapbox/batfish/data/split-pages'; // eslint-disable-line"
+          "import splitPages from '@mapbox/batfish/data/split-pages'; // eslint-disable-line",
+          "import relatedMts from '../../../../src/helpers/batfish/__tests__/fixtures/related-mts.json';",
+          "import relatedAndroid from '../../../../src/helpers/batfish/__tests__/fixtures/related-android.json';"
         ]
       }
     },

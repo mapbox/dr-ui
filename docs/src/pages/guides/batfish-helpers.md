@@ -11,6 +11,8 @@ prependJs:
   - "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line"
   - "import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line"
   - "import splitPages from '@mapbox/batfish/data/split-pages'; // eslint-disable-line"
+  - "import relatedMts from '../../../../src/helpers/batfish/__tests__/fixtures/related-mts.json';"
+  - "import relatedAndroid from '../../../../src/helpers/batfish/__tests__/fixtures/related-android.json';"
 ---
 
 Dr. UI has two functions that are used in `dataSelectors` in `batfish.config.js` to help build page metadata and site hierarchy. Each data selector has tests to assert the shape of the data.
@@ -92,7 +94,7 @@ class PageShell extends React.Component {
 ### Arguments
 
 - `data`, object. Provided by the data selector.
-- `append`, object. Append additional data, this is helpful if you have programmatic data (like the [Mapbox GL JS Plugins](https://docs.mapbox.com/mapbox-gl-js/plugins/) page) and want to take advantage of the example layout.
+- `append`, object. Append additional data, this is helpful if you have programmatic data (like the [Mapbox GL JS Plugins](https://docs.mapbox.com/mapbox-gl-js/plugins/) or [iOS Help](https://docs.mapbox.com/ios/maps/help/)) and want to take advantage of the example layout. The [`formatTopics` helper](#format-topics-helper) can help build this dataset.
 - `sortArr`, array. An array of topics that is in the order you want the topics to display.
 
 ### Set up in batfish.config.js
@@ -104,6 +106,8 @@ module.exports = () => {
   return {
     dataSelectors: {
       topics: (data) => buildTopics(data)
+      // sorted topics
+      // topics: (data) => buildTopics(data, null, ['Getting started'])
     }
   };
 };
@@ -136,6 +140,62 @@ class PageShell extends React.Component {
 {
   "/dr-ui/examples/" : {{JSON.stringify(topics["/dr-ui/examples/"],null,2)}}
 }
+```
+
+## Append topics helper
+
+[iOS](https://docs.mapbox.com/ios/maps/help/), [Android](https://docs.mapbox.com/android/maps/help/), and [Unity](https://docs.mapbox.com/unity/maps/help/) have Help pages that list all the Help tutorials and troubleshooting guides for that site's product.
+
+With the `formatTopics` Batfish helper, you can build this dataset and then pass the result as the `append` argument to the [`topics` Batfish data selector](#topics). By doing so, you can use `layout: example` on your new Help page without any added code or configuration.
+
+### Arguments
+
+- `baseurl`, string. The site's base URL as defined in the `batfish.config.js`.
+- `tabName`, string. This is often `help` or the page path name that this data will be displayed on.
+- `contentTypesArr`, array. An array of objects organized by content type. Each item has an array of pages. See [`contentTypesArr` samples](#contenttypesarr-samples) to see the shape of this array.
+- `products`, array. This optional argument is for [multi-structured sites](/dr-ui/guides/multi-structured/) and will be the values of the paths for each subsite. Each page item in `contentTypesArr` should have a `products` array that identifies which product the page belongs to. Use one or more values from this products array. See [Multi-structured site sample](#multi-structured-site-sample) for an example.
+
+### Set up in batfish.config.js
+
+```js
+const {
+  buildTopics,
+  formatTopics
+} = require('@mapbox/dr-ui/helpers/batfish/topics.js');
+const relatedHelpPages = require('./data/releated-help-pages.json');
+
+const siteBasePath = '/android';
+
+// for a single-structured site:
+const appendTopics = formatTopics(siteBasePath, 'help', relatedHelpPages);
+
+// for a multi-structured site:
+// const appendTopics = formatTopics(siteBasePath, 'help', relatedHelpPages, ['maps', 'navigation', 'vision']);
+
+module.exports = () => {
+  return {
+    siteBasePath: siteBasePath,
+    dataSelectors: {
+      topics: (data) => buildTopics(data, appendTopics)
+    }
+  };
+};
+```
+
+The [output](#output-1) and [usage](#usage-1) is the same as the `topics` Batfish helper.
+
+### `contentTypesArr` samples
+
+#### Single-structured site sample
+
+```json
+{{JSON.stringify(relatedMts, null,2)}}
+```
+
+#### Multi-structured site sample
+
+```json
+{{JSON.stringify(relatedAndroid, null,2)}}
 ```
 
 ## Shape of multi-structured `sections`

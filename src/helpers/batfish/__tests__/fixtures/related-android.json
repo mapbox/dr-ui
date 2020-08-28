@@ -1,0 +1,101 @@
+[
+  {
+    "title": "Tutorials",
+    "pages": [
+      {
+        "title": "First steps with the Mapbox Maps SDK for Android",
+        "description": "Walk through installing the Mapbox Maps SDK for Android, getting a map on the screen, and changing the map style",
+        "path": "https://docs.mapbox.com/help/tutorials/first-steps-android-sdk/",
+        "products": ["maps"]
+      },
+      {
+        "title": "Runtime styling for Android",
+        "description": "Change various properties of a map based on user interaction and other \"runtime\" situations.",
+        "path": "https://docs.mapbox.com/help/tutorials/android-runtime-styling-intro/",
+        "products": ["maps"]
+      },
+      {
+        "title": "Data-driven styling for Android",
+        "description": "Create a map for Android that styles a circle based on a data attribute.",
+        "path": "https://docs.mapbox.com/help/tutorials/android-dds-circle-layer/",
+        "products": ["maps"]
+      },
+      {
+        "title": "Build a store locator for Android",
+        "description": "Build a store locator to integrate into a an Android application.",
+        "path": "https://docs.mapbox.com/help/tutorials/android-store-locator/",
+        "products": ["maps"]
+      },
+      {
+        "title": "Build a navigation app for Android",
+        "description": "Integrate navigation into any Android application.",
+        "path": "https://docs.mapbox.com/help/tutorials/android-navigation-sdk/",
+        "products": ["navigation"]
+      },
+      {
+        "title": "Draw custom detections",
+        "description": "Highlight car detections using green circles",
+        "path": "https://docs.mapbox.com/help/tutorials/android-vision-custom-detections-tutorial/",
+        "products": ["vision"]
+      },
+      {
+        "title": "AR styling",
+        "description": "Customize visual AR experience using the Mapbox Vision AR SDK",
+        "path": "https://docs.mapbox.com/help/tutorials/android-vision-ar-customization/",
+        "products": ["vision"]
+      },
+      {
+        "title": "External USB camera usage",
+        "description": "Integrate external USB camera to use it with Mapbox Vision SDK",
+        "path": "https://docs.mapbox.com/help/tutorials/android-vision-sdk-usb-camera/",
+        "products": ["vision"]
+      },
+      {
+        "title": "Draw POI objects",
+        "description": "Draw points of interest using the Mapbox Vision SDK",
+        "path": "https://docs.mapbox.com/help/tutorials/android-vision-poi-drawing/",
+        "products": ["vision"]
+      }
+    ]
+  },
+  {
+    "title": "Troubleshooting",
+    "pages": [
+      {
+        "title": "Understanding Android APK size",
+        "description": "Learn how to measure and optimize your Android app’s size.",
+        "path": "https://docs.mapbox.com/help/troubleshooting/android-apk-size/",
+        "products": ["maps", "navigation"]
+      },
+      {
+        "title": "Change your map’s label language",
+        "description": "Learn about available languages and how to change your map’s language.",
+        "path": "https://docs.mapbox.com/help/troubleshooting/change-language/",
+        "products": ["maps", "navigation"]
+      },
+      {
+        "title": "Offline maps",
+        "description": "Learn about how offline maps work.",
+        "path": "https://docs.mapbox.com/help/troubleshooting/mobile-offline/",
+        "products": ["maps"]
+      }
+    ]
+  },
+  {
+    "title": "Interactive tools",
+    "pages": [
+      {
+        "title": "Mapbox offline tile count estimator",
+        "description": "Estimate the number of tiles required to download an offline region using the Mapbox Maps SDK for Android and iOS.",
+        "path": "https://docs.mapbox.com/playground/offline-estimator/",
+        "products": ["maps"]
+      },
+      {
+        "title": "Marker playground",
+        "description": "Add a marker to the map and view the platform-specific code to recreate this map in your own iOS, Android, React Native, or web application.",
+        "path": "https://docs.mapbox.com/playground/marker/",
+        "products": ["maps"]
+      }
+    ]
+  }
+]

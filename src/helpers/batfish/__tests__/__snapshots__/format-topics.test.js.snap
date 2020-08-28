@@ -1,0 +1,283 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`formatTopics android, many products 1`] = `
+Object {
+  "/android/maps/help/": Object {
+    "topics": Array [
+      Object {
+        "count": 4,
+        "name": "Tutorials",
+        "pages": Array [
+          Object {
+            "description": "Walk through installing the Mapbox Maps SDK for Android, getting a map on the screen, and changing the map style",
+            "path": "https://docs.mapbox.com/help/tutorials/first-steps-android-sdk/",
+            "products": Array [
+              "maps",
+            ],
+            "text": "First steps with the Mapbox Maps SDK for Android",
+            "title": "First steps with the Mapbox Maps SDK for Android",
+            "url": "https://docs.mapbox.com/help/tutorials/first-steps-android-sdk/",
+          },
+          Object {
+            "description": "Change various properties of a map based on user interaction and other \\"runtime\\" situations.",
+            "path": "https://docs.mapbox.com/help/tutorials/android-runtime-styling-intro/",
+            "products": Array [
+              "maps",
+            ],
+            "text": "Runtime styling for Android",
+            "title": "Runtime styling for Android",
+            "url": "https://docs.mapbox.com/help/tutorials/android-runtime-styling-intro/",
+          },
+          Object {
+            "description": "Create a map for Android that styles a circle based on a data attribute.",
+            "path": "https://docs.mapbox.com/help/tutorials/android-dds-circle-layer/",
+            "products": Array [
+              "maps",
+            ],
+            "text": "Data-driven styling for Android",
+            "title": "Data-driven styling for Android",
+            "url": "https://docs.mapbox.com/help/tutorials/android-dds-circle-layer/",
+          },
+          Object {
+            "description": "Build a store locator to integrate into a an Android application.",
+            "path": "https://docs.mapbox.com/help/tutorials/android-store-locator/",
+            "products": Array [
+              "maps",
+            ],
+            "text": "Build a store locator for Android",
+            "title": "Build a store locator for Android",
+            "url": "https://docs.mapbox.com/help/tutorials/android-store-locator/",
+          },
+        ],
+        "url": "/android/maps/help/#tutorials",
+      },
+      Object {
+        "count": 3,
+        "name": "Troubleshooting",
+        "pages": Array [
+          Object {
+            "description": "Learn how to measure and optimize your Android app’s size.",
+            "path": "https://docs.mapbox.com/help/troubleshooting/android-apk-size/",
+            "products": Array [
+              "maps",
+              "navigation",
+            ],
+            "text": "Understanding Android APK size",
+            "title": "Understanding Android APK size",
+            "url": "https://docs.mapbox.com/help/troubleshooting/android-apk-size/",
+          },
+          Object {
+            "description": "Learn about available languages and how to change your map’s language.",
+            "path": "https://docs.mapbox.com/help/troubleshooting/change-language/",
+            "products": Array [
+              "maps",
+              "navigation",
+            ],
+            "text": "Change your map’s label language",
+            "title": "Change your map’s label language",
+            "url": "https://docs.mapbox.com/help/troubleshooting/change-language/",
+          },
+          Object {
+            "description": "Learn about how offline maps work.",
+            "path": "https://docs.mapbox.com/help/troubleshooting/mobile-offline/",
+            "products": Array [
+              "maps",
+            ],
+            "text": "Offline maps",
+            "title": "Offline maps",
+            "url": "https://docs.mapbox.com/help/troubleshooting/mobile-offline/",
+          },
+        ],
+        "url": "/android/maps/help/#troubleshooting",
+      },
+      Object {
+        "count": 2,
+        "name": "Interactive tools",
+        "pages": Array [
+          Object {
+            "description": "Estimate the number of tiles required to download an offline region using the Mapbox Maps SDK for Android and iOS.",
+            "path": "https://docs.mapbox.com/playground/offline-estimator/",
+            "products": Array [
+              "maps",
+            ],
+            "text": "Mapbox offline tile count estimator",
+            "title": "Mapbox offline tile count estimator",
+            "url": "https://docs.mapbox.com/playground/offline-estimator/",
+          },
+          Object {
+            "description": "Add a marker to the map and view the platform-specific code to recreate this map in your own iOS, Android, React Native, or web application.",
+            "path": "https://docs.mapbox.com/playground/marker/",
+            "products": Array [
+              "maps",
+            ],
+            "text": "Marker playground",
+            "title": "Marker playground",
+            "url": "https://docs.mapbox.com/playground/marker/",
+          },
+        ],
+        "url": "/android/maps/help/#interactive-tools",
+      },
+    ],
+    "url": "/android/maps/help/",
+  },
+  "/android/navigation/help/": Object {
+    "topics": Array [
+      Object {
+        "count": 2,
+        "name": "Troubleshooting",
+        "pages": Array [
+          Object {
+            "description": "Learn how to measure and optimize your Android app’s size.",
+            "path": "https://docs.mapbox.com/help/troubleshooting/android-apk-size/",
+            "products": Array [
+              "maps",
+              "navigation",
+            ],
+            "text": "Understanding Android APK size",
+            "title": "Understanding Android APK size",
+            "url": "https://docs.mapbox.com/help/troubleshooting/android-apk-size/",
+          },
+          Object {
+            "description": "Learn about available languages and how to change your map’s language.",
+            "path": "https://docs.mapbox.com/help/troubleshooting/change-language/",
+            "products": Array [
+              "maps",
+              "navigation",
+            ],
+            "text": "Change your map’s label language",
+            "title": "Change your map’s label language",
+            "url": "https://docs.mapbox.com/help/troubleshooting/change-language/",
+          },
+        ],
+        "url": "/android/navigation/help/#troubleshooting-1",
+      },
+      Object {
+        "count": 1,
+        "name": "Tutorials",
+        "pages": Array [
+          Object {
+            "description": "Integrate navigation into any Android application.",
+            "path": "https://docs.mapbox.com/help/tutorials/android-navigation-sdk/",
+            "products": Array [
+              "navigation",
+            ],
+            "text": "Build a navigation app for Android",
+            "title": "Build a navigation app for Android",
+            "url": "https://docs.mapbox.com/help/tutorials/android-navigation-sdk/",
+          },
+        ],
+        "url": "/android/navigation/help/#tutorials-1",
+      },
+    ],
+    "url": "/android/navigation/help/",
+  },
+  "/android/vision/help/": Object {
+    "topics": Array [
+      Object {
+        "count": 4,
+        "name": "Tutorials",
+        "pages": Array [
+          Object {
+            "description": "Highlight car detections using green circles",
+            "path": "https://docs.mapbox.com/help/tutorials/android-vision-custom-detections-tutorial/",
+            "products": Array [
+              "vision",
+            ],
+            "text": "Draw custom detections",
+            "title": "Draw custom detections",
+            "url": "https://docs.mapbox.com/help/tutorials/android-vision-custom-detections-tutorial/",
+          },
+          Object {
+            "description": "Customize visual AR experience using the Mapbox Vision AR SDK",
+            "path": "https://docs.mapbox.com/help/tutorials/android-vision-ar-customization/",
+            "products": Array [
+              "vision",
+            ],
+            "text": "AR styling",
+            "title": "AR styling",
+            "url": "https://docs.mapbox.com/help/tutorials/android-vision-ar-customization/",
+          },
+          Object {
+            "description": "Integrate external USB camera to use it with Mapbox Vision SDK",
+            "path": "https://docs.mapbox.com/help/tutorials/android-vision-sdk-usb-camera/",
+            "products": Array [
+              "vision",
+            ],
+            "text": "External USB camera usage",
+            "title": "External USB camera usage",
+            "url": "https://docs.mapbox.com/help/tutorials/android-vision-sdk-usb-camera/",
+          },
+          Object {
+            "description": "Draw points of interest using the Mapbox Vision SDK",
+            "path": "https://docs.mapbox.com/help/tutorials/android-vision-poi-drawing/",
+            "products": Array [
+              "vision",
+            ],
+            "text": "Draw POI objects",
+            "title": "Draw POI objects",
+            "url": "https://docs.mapbox.com/help/tutorials/android-vision-poi-drawing/",
+          },
+        ],
+        "url": "/android/vision/help/#tutorials",
+      },
+    ],
+    "url": "/android/vision/help/",
+  },
+}
+`;
+
+exports[`formatTopics mts, single product 1`] = `
+Object {
+  "/mapbox-tiling-service/help/": Array [
+    Object {
+      "count": 3,
+      "pages": Array [
+        Object {
+          "description": "Follow these practices to optimize your tileset processing and tileset hosting costs when you tile data using Mapbox Tiling Service or the Mapbox Uploads API.",
+          "path": "https://docs.mapbox.com/help/troubleshooting/manage-tileset-costs/",
+          "text": "Manage your tileset processing and tileset hosting costs",
+          "title": "Manage your tileset processing and tileset hosting costs",
+          "url": "https://docs.mapbox.com/help/troubleshooting/manage-tileset-costs/",
+        },
+        Object {
+          "description": "Learn how to manually adjust the zoom extent of your tilesets.",
+          "path": "https://docs.mapbox.com/help/troubleshooting/adjust-tileset-zoom-extent/",
+          "text": "Adjust the zoom extent of your tileset",
+          "title": "Adjust the zoom extent of your tileset",
+          "url": "https://docs.mapbox.com/help/troubleshooting/adjust-tileset-zoom-extent/",
+        },
+        Object {
+          "description": "Learn how to prepare data for upload, interpret error messages, and troubleshoot failed uploads.",
+          "path": "https://docs.mapbox.com/help/troubleshooting/optimize-map-label-placement/",
+          "text": "Upload data to Mapbox",
+          "title": "Upload data to Mapbox",
+          "url": "https://docs.mapbox.com/help/troubleshooting/optimize-map-label-placement/",
+        },
+      ],
+      "title": "Troubleshooting",
+      "url": "/mapbox-tiling-service/help/#troubleshooting",
+    },
+    Object {
+      "count": 2,
+      "pages": Array [
+        Object {
+          "description": "Create isochrones with the Mapbox Isochrone and Mapbox Tiling Service, and perform geofencing with the Mapbox Tilequery API.",
+          "path": "https://docs.mapbox.com/help/tutorials/geofencing-with-isochrones-and-tilesets/",
+          "text": "Using geofences for location-based notifications and events",
+          "title": "Using geofences for location-based notifications and events",
+          "url": "https://docs.mapbox.com/help/tutorials/geofencing-with-isochrones-and-tilesets/",
+        },
+        Object {
+          "description": "Learn how to use the Tilesets CLI, a tool for accessing Mapbox Tiling Service (MTS), to create new Mapbox tilesets.",
+          "path": "https://docs.mapbox.com/help/tutorials/get-started-mts-and-tilesets-cli/",
+          "text": "Get started using Mapbox Tiling Service and the Tilesets CLI",
+          "title": "Get started using Mapbox Tiling Service and the Tilesets CLI",
+          "url": "https://docs.mapbox.com/help/tutorials/get-started-mts-and-tilesets-cli/",
+        },
+      ],
+      "title": "Tutorials",
+      "url": "/mapbox-tiling-service/help/#tutorials",
+    },
+  ],
+}
+`;
