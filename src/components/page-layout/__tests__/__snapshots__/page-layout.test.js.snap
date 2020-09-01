@@ -25,6 +25,11 @@ Array [
       >
         <div
           className="limiter"
+          style={
+            Object {
+              "minHeight": "50px",
+            }
+          }
         >
           <div
             className="grid"
@@ -651,6 +656,11 @@ Array [
       >
         <div
           className="limiter"
+          style={
+            Object {
+              "minHeight": "50px",
+            }
+          }
         >
           <div
             className="grid"
@@ -1220,6 +1230,11 @@ Array [
       >
         <div
           className="limiter"
+          style={
+            Object {
+              "minHeight": "50px",
+            }
+          }
         >
           <div
             className="grid"
@@ -1568,6 +1583,11 @@ Array [
       >
         <div
           className="limiter"
+          style={
+            Object {
+              "minHeight": "50px",
+            }
+          }
         >
           <div
             className="grid"
@@ -1917,6 +1937,11 @@ Array [
       >
         <div
           className="limiter"
+          style={
+            Object {
+              "minHeight": "50px",
+            }
+          }
         >
           <div
             className="grid"

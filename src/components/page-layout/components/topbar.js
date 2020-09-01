@@ -33,7 +33,7 @@ export default class PageLayoutTopbar extends React.Component {
     const Wrapper = topBarSticker ? TopbarSticker : Topbar;
     return (
       <Wrapper>
-        <div className="limiter">
+        <div className="limiter" style={{ minHeight: '50px' }}>
           <div className="grid">
             <div className="col col--4-mm col--12">
               <div

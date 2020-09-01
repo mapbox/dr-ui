@@ -1,5 +1,9 @@
 # Changelog
 
+# 1.1.2
+
+- Set `minHeight` on `PageLayoutTopbar` to prevent layout shift as the `Search` component loads.
+
 # 1.1.1
 
 - Fix margin on `Search` in `PageLayout`.
