@@ -1,5 +1,9 @@
 # Changelog
 
+# 1.1.3
+
+- Fix xhr headers in ForwardEvent function.
+
 # 1.1.2
 
 - Set `minHeight` on `PageLayoutTopbar` to prevent layout shift as the `Search` component loads.
