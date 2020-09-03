@@ -33,6 +33,43 @@ testCases.examplePage = {
   element: <ExamplePage />
 };
 
+testCases.hideTopBar = {
+  description: 'Hide PageLayoutTopbar',
+  element: (
+    <PageLayout
+      constants={{
+        SITE: 'dr-ui',
+        BASEURL: '/dr-ui',
+        FORWARD_EVENT_WEBHOOK: {
+          production: '123',
+          staging: '123'
+        }
+      }}
+      location={{
+        pathname: '/PageLayout/'
+      }}
+      frontMatter={{
+        title: 'Overview',
+        layout: 'page',
+        headings: [
+          { text: 'Section 1', slug: 'section-1', level: 2 },
+          { text: 'Section 2', slug: 'section-2', level: 2 }
+        ]
+      }}
+      hideTopBar={true}
+      navigation={{
+        hierarchy: {
+          '/PageLayout/': {
+            parent: '/dr-ui/',
+            title: 'Demo'
+          }
+        },
+        navTabs: []
+      }}
+    />
+  )
+};
+
 testCases.friendOfDocs = {
   description: 'Customize Search, Feedback',
   element: (

@@ -15,7 +15,8 @@ import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
 export default class PageLayout extends React.Component {
   // render the page's top bar navigation
   renderTopbar = (switchedNavigation, parentPath) => {
-    const { constants, topBarSticker, tabListAppend } = this.props;
+    const { constants, topBarSticker, tabListAppend, hideTopBar } = this.props;
+    if (hideTopBar) return null;
     return (
       <PageLayoutTopbar
         {...this.props}
@@ -116,7 +117,9 @@ export default class PageLayout extends React.Component {
 
 PageLayout.defaultProps = {
   // topbar sticker is sticky by default
-  topBarSticker: true
+  topBarSticker: true,
+  // topbar is visible by default
+  hideTopBar: false
 };
 
 PageLayout.propTypes = {
@@ -223,6 +226,8 @@ PageLayout.propTypes = {
   AppropriateImage: PropTypes.func,
   /** If false, unstick the TopBarSticker */
   topBarSticker: PropTypes.bool,
+  /** If true, remove the TopBar completely */
+  hideTopBar: PropTypes.bool,
   /** Create a completely custom sidebar. */
   customSidebar: PropTypes.node,
   /** Append item to TabList. This is used by iOS and Android site's API reference. */

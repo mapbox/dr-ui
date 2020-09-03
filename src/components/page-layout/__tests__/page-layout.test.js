@@ -81,4 +81,20 @@ describe('page-layout', () => {
       expect(tree).toMatchSnapshot();
     });
   });
+
+  describe(testCases.hideTopBar.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.hideTopBar;
+      wrapper = renderer.create(testCase.element);
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });

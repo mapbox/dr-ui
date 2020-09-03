@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.5
+
+- Add `hideTopBar` prop to `PageLayout` to completely remove `PageLayoutTopbar`.
+
 ## 1.1.4
 
 - Fix truncation on `ProductMenu`.
