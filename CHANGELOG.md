@@ -1,27 +1,31 @@
 # Changelog
 
-# 1.1.3
+## 1.1.4
+
+- Fix truncation on `ProductMenu`.
+
+## 1.1.3
 
 - Fix xhr headers in ForwardEvent function.
 
-# 1.1.2
+## 1.1.2
 
 - Set `minHeight` on `PageLayoutTopbar` to prevent layout shift as the `Search` component loads.
 
-# 1.1.1
+## 1.1.1
 
 - Fix margin on `Search` in `PageLayout`.
 
-# 1.1.0
+## 1.1.0
 
 - Fix element spacing within `PageLayoutTopbar`.
 - Add `formatTopics` Batfish helper function. [#328](https://github.com/mapbox/dr-ui/pull/328)
 
-# 1.0.2
+## 1.0.2
 
 - Fix the `connector` prop in `PageLayout`.
 
-# 1.0.1
+## 1.0.1
 
 - Fix the `type` prop in `PageLayout`'s `Feedback` component.
 

@@ -18,7 +18,7 @@ class ProductMenu extends React.PureComponent {
         : undefined
     };
     return (
-      <span className="flex-child mx6">
+      <span className="flex-child flex-child--no-shrink mx6">
         <Tag {...tagProps} />
       </span>
     );
@@ -27,16 +27,13 @@ class ProductMenu extends React.PureComponent {
   render() {
     const { props } = this;
     return (
-      <div className="flex-parent">
+      <div className="flex-parent" style={{ overflow: 'hidden' }}>
         <a
           href={props.homePage}
-          className={classnames(
-            'wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate',
-            {
-              'color-white color-gray-light-on-hover': props.lightText,
-              'color-blue-on-hover': !props.lightText
-            }
-          )}
+          className={classnames('flex-child txt-fancy txt-l txt-truncate', {
+            'color-white color-gray-light-on-hover': props.lightText,
+            'color-blue-on-hover': !props.lightText
+          })}
         >
           {props.productName}
         </a>

@@ -26,6 +26,8 @@ export default class Basic extends React.Component {
           navOrder: 1
         }}
         navigation={{
+          title: 'Search SDK for Android',
+          tag: 'beta',
           hierarchy: {
             '/PageLayout/': {
               parent: '/PageLayout/',

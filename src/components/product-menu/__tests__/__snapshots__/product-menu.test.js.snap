@@ -3,9 +3,14 @@
 exports[`product-menu Basic renders as expected 1`] = `
 <div
   className="flex-parent"
+  style={
+    Object {
+      "overflow": "hidden",
+    }
+  }
 >
   <a
-    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+    className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
     href="/dr-ui/"
   >
     Mapbox product menu
@@ -16,15 +21,20 @@ exports[`product-menu Basic renders as expected 1`] = `
 exports[`product-menu Beta product renders as expected 1`] = `
 <div
   className="flex-parent"
+  style={
+    Object {
+      "overflow": "hidden",
+    }
+  }
 >
   <a
-    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+    className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
     href="/vision/"
   >
     Vision SDK for Android
   </a>
   <span
-    className="flex-child mx6"
+    className="flex-child flex-child--no-shrink mx6"
   >
     <div
       className="inline-block"
@@ -65,15 +75,20 @@ exports[`product-menu Beta product renders as expected 1`] = `
 exports[`product-menu Beta product renders as expected 2`] = `
 <div
   className="flex-parent"
+  style={
+    Object {
+      "overflow": "hidden",
+    }
+  }
 >
   <a
-    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+    className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
     href="/vision/"
   >
     Navigation SDK for Android
   </a>
   <span
-    className="flex-child mx6"
+    className="flex-child flex-child--no-shrink mx6"
   >
     <div
       className="inline-block"
@@ -117,9 +132,14 @@ exports[`product-menu Custom trigger style - display only renders as expected 1`
 >
   <div
     className="flex-parent"
+    style={
+      Object {
+        "overflow": "hidden",
+      }
+    }
   >
     <a
-      className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-white color-gray-light-on-hover"
+      className="flex-child txt-fancy txt-l txt-truncate color-white color-gray-light-on-hover"
       href="/api-documentation/"
     >
       Light on dark
@@ -131,9 +151,14 @@ exports[`product-menu Custom trigger style - display only renders as expected 1`
 exports[`product-menu Fake items, but one matches this test case's location renders as expected 1`] = `
 <div
   className="flex-parent"
+  style={
+    Object {
+      "overflow": "hidden",
+    }
+  }
 >
   <a
-    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+    className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
     href="/api-documentation/"
   >
     Items in here
@@ -144,9 +169,14 @@ exports[`product-menu Fake items, but one matches this test case's location rend
 exports[`product-menu Product menu with something arbitrary in it renders as expected 1`] = `
 <div
   className="flex-parent"
+  style={
+    Object {
+      "overflow": "hidden",
+    }
+  }
 >
   <a
-    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+    className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
     href="/api-documentation/"
   >
     Pizza pie

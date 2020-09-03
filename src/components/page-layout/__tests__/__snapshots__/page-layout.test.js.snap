@@ -47,13 +47,54 @@ Array [
               >
                 <div
                   className="flex-parent"
+                  style={
+                    Object {
+                      "overflow": "hidden",
+                    }
+                  }
                 >
                   <a
-                    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+                    className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
                     href="/dr-ui/"
                   >
-                    dr-ui
+                    Search SDK for Android
                   </a>
+                  <span
+                    className="flex-child flex-child--no-shrink mx6"
+                  >
+                    <div
+                      className="inline-block"
+                      onBlur={[Function]}
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onKeyDown={[Function]}
+                    >
+                      <div
+                        aria-describedby="tooltip-1"
+                        className="txt-s txt-bold round px6 inline-block cursor-default border"
+                        style={
+                          Object {
+                            "background": "#f1f3fd",
+                            "borderColor": "#0428c8",
+                            "color": "#0c248d",
+                          }
+                        }
+                      >
+                        Beta
+                      </div>
+                      <div
+                        className="hide-visually"
+                        id="tooltip-1"
+                        role="tooltip"
+                      >
+                        <div
+                          className="txt-s wmax120"
+                        >
+                          This feature is in public beta and is subject to changes.
+                        </div>
+                      </div>
+                    </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -418,7 +459,7 @@ Array [
                                   onKeyDown={[Function]}
                                 >
                                   <div
-                                    aria-describedby="tooltip-1"
+                                    aria-describedby="tooltip-2"
                                     className="txt-s txt-bold round px6 inline-block cursor-default border"
                                     style={
                                       Object {
@@ -432,7 +473,7 @@ Array [
                                   </div>
                                   <div
                                     className="hide-visually"
-                                    id="tooltip-1"
+                                    id="tooltip-2"
                                     role="tooltip"
                                   >
                                     <div
@@ -678,9 +719,14 @@ Array [
               >
                 <div
                   className="flex-parent"
+                  style={
+                    Object {
+                      "overflow": "hidden",
+                    }
+                  }
                 >
                   <a
-                    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+                    className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
                     href="/dr-ui/"
                   >
                     dr-ui
@@ -1252,9 +1298,14 @@ Array [
               >
                 <div
                   className="flex-parent"
+                  style={
+                    Object {
+                      "overflow": "hidden",
+                    }
+                  }
                 >
                   <a
-                    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+                    className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
                     href="/dr-ui/"
                   >
                     dr-ui
@@ -1605,9 +1656,14 @@ Array [
               >
                 <div
                   className="flex-parent"
+                  style={
+                    Object {
+                      "overflow": "hidden",
+                    }
+                  }
                 >
                   <a
-                    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+                    className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
                     href="/dr-ui/"
                   >
                     dr-ui
@@ -1959,9 +2015,14 @@ Array [
               >
                 <div
                   className="flex-parent"
+                  style={
+                    Object {
+                      "overflow": "hidden",
+                    }
+                  }
                 >
                   <a
-                    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+                    className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
                     href="/dr-ui/"
                   >
                     dr-ui
