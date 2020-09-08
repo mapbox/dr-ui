@@ -26,7 +26,13 @@ export default class PageLayoutTopbar extends React.Component {
   };
 
   render() {
-    const { parentPath, topBarSticker, navigation, constants } = this.props;
+    const {
+      parentPath,
+      topBarSticker,
+      navigation,
+      constants,
+      hideSearch
+    } = this.props;
     const { title, tag, path } = navigation;
     let { navTabs } = navigation;
     const { SITE, BASEURL } = constants;
@@ -53,12 +59,16 @@ export default class PageLayoutTopbar extends React.Component {
               )}
             </div>
             <div className="col col--2-mm col--12">
-              <div
-                className="flex-parent-mm flex-parent--end-main h-full-mm wmax300 h36"
-                style={{ marginTop: 7, marginBottom: 7 }}
-              >
-                <Search {...this.props} site={SITE} />
-              </div>
+              {hideSearch ? (
+                ''
+              ) : (
+                <div
+                  className="flex-parent-mm flex-parent--end-main h-full-mm wmax300 h36"
+                  style={{ marginTop: 7, marginBottom: 7 }}
+                >
+                  <Search {...this.props} site={SITE} />
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -84,5 +94,6 @@ PageLayoutTopbar.propTypes = {
     BASEURL: PropTypes.string.isRequired
   }).isRequired,
   topBarSticker: PropTypes.bool,
-  tabListAppend: PropTypes.array
+  tabListAppend: PropTypes.array,
+  hideSearch: PropTypes.bool
 };
