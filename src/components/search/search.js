@@ -16,6 +16,7 @@ class Search extends React.Component {
           initialState: {
             resultsPerPage: 10
           },
+          trackUrlState: props.resultsOnly ? false : true, // do not push search query to URL if using resultsOnly
           searchQuery: {
             facets: {
               site: { type: 'value' }
@@ -52,7 +53,9 @@ class Search extends React.Component {
             reset
           }) => {
             return (
-              <div className="h36 relative">
+              <div
+                className={`${this.props.resultsOnly ? '' : 'h36 '}relative`}
+              >
                 <SearchBox
                   searchTerm={searchTerm}
                   trackClickThrough={trackClickThrough}
@@ -67,6 +70,9 @@ class Search extends React.Component {
                   disableModal={props.disableModal}
                   site={props.site}
                   reset={reset}
+                  resultsOnly={props.resultsOnly}
+                  segmentTrackEvent={props.segmentTrackEvent}
+                  overrideSearchTerm={props.overrideSearchTerm}
                 />
               </div>
             );
@@ -78,13 +84,25 @@ class Search extends React.Component {
 }
 
 Search.propTypes = {
-  placeholder: PropTypes.string, // option to replace the input placehoder with a different string,
-  narrow: PropTypes.bool, // option to collapse input to fit in a crowded space
+  /** replace the input placehoder with a different string */
+  placeholder: PropTypes.string,
+  /** collapse input to fit in a crowded space */
+  narrow: PropTypes.bool, //
   background: PropTypes.oneOf(['light', 'dark']),
-  inputId: PropTypes.string, // option to override default id for input/label, used for testing
-  disableModal: PropTypes.bool, // option to completely disable modal if you always want an input
-  site: PropTypes.string, // option to add current site or all docs filter toggle
-  connector: PropTypes.instanceOf(SiteSearchAPIConnector) // option to connect to a custom search engine
+  /** override default id for input/label, used for testing */
+  inputId: PropTypes.string,
+  /** disable modal if you always want an input */
+  disableModal: PropTypes.bool,
+  //* add current site filter toggle */
+  site: PropTypes.string,
+  /** option to connect to a custom search engine */
+  connector: PropTypes.instanceOf(SiteSearchAPIConnector),
+  /** If true, only show results from search */
+  resultsOnly: PropTypes.bool,
+  /** If `resultsOnly: true` set `overrideSearchTerm` to set the search term */
+  overrideSearchTerm: PropTypes.string,
+  /** Segment track event, default is (Searched docs) */
+  segmentTrackEvent: PropTypes.string
 };
 
 Search.defaultProps = {
@@ -95,7 +113,9 @@ Search.defaultProps = {
     engineKey: 'zpAwGSb8YMXtF9yDeS5K', // public engine key
     engineName: 'docs',
     documentType: ['page']
-  })
+  }),
+  resultsOnly: false,
+  segmentTrackEvent: 'Searched docs'
 };
 
 export default Search;

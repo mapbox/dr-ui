@@ -220,3 +220,29 @@ exports[`search Search with dark background, custom placeholder renders as expec
   </div>
 </div>
 `;
+
+exports[`search Set resultsOnly to true. renders as expected 1`] = `
+<div
+  className="relative"
+>
+  <div>
+    <div
+      className="w-full"
+    >
+      <div
+        aria-expanded={false}
+        aria-haspopup="listbox"
+        aria-labelledby="search6-label"
+        aria-owns={null}
+        role="combobox"
+      >
+        <div
+          className="color-text round mt3 bg-white w-full align-l"
+        >
+          <div />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

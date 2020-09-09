@@ -121,4 +121,22 @@ describe('search', () => {
       expect(testCase.props.connector.engineKey).toBe('123');
     });
   });
+
+  describe(testCases.resultsOnly.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.resultsOnly;
+      wrapper = renderer.create(
+        React.createElement(testCase.component, testCase.props)
+      );
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });

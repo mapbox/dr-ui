@@ -54,4 +54,15 @@ testCases.withConnector = {
   }
 };
 
+testCases.resultsOnly = {
+  component: Search,
+  description:
+    'Set resultsOnly to true. To test this, uncomment `overrideSearchTerm` and then run the tests cases app.',
+  props: {
+    inputId: 'search6',
+    resultsOnly: true
+    //overrideSearchTerm: 'Studio'
+  }
+};
+
 export { testCases };

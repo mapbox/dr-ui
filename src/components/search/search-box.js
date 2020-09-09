@@ -6,6 +6,7 @@ import SearchResult from './search-result';
 import debounce from 'debounce';
 import { getFilterValueDisplay } from '@elastic/react-search-ui-views/lib/view-helpers';
 import { Facet } from '@elastic/react-search-ui';
+import classnames from 'classnames';
 
 class SearchBox extends React.Component {
   constructor(props) {
@@ -25,6 +26,11 @@ class SearchBox extends React.Component {
         useModal: width > 640 && !this.props.disableModal
       });
     }, 200);
+
+    // if resultsOnly and overrideSearchTerm, set the search term
+    if (this.props.resultsOnly && this.props.overrideSearchTerm) {
+      props.setSearchTerm(this.props.overrideSearchTerm);
+    }
   }
 
   componentDidMount() {
@@ -71,7 +77,7 @@ class SearchBox extends React.Component {
                 e.preventDefault();
                 // track click
                 if (window && window.analytics) {
-                  analytics.track('Searched docs', {
+                  analytics.track(this.props.segmentTrackEvent, {
                     query: this.props.searchTerm,
                     toggle: true,
                     site: this.props.site
@@ -111,7 +117,7 @@ class SearchBox extends React.Component {
         onChange={(selection) => {
           // track click
           if (window && window.analytics) {
-            analytics.track('Searched docs', {
+            analytics.track(this.props.segmentTrackEvent, {
               query: this.props.searchTerm,
               clicked: selection.url.raw
             });
@@ -124,7 +130,7 @@ class SearchBox extends React.Component {
           props.setSearchTerm(newValue, { debounce: 1500 });
           // track query
           if (window && window.analytics) {
-            analytics.track('Searched docs', {
+            analytics.track(this.props.segmentTrackEvent, {
               query: newValue
             });
           }
@@ -141,48 +147,60 @@ class SearchBox extends React.Component {
 
           return (
             <div>
-              <label className="cursor-pointer" {...getLabelProps()}>
-                <div
-                  className={`absolute flex-parent flex-parent--center-cross flex-parent--center-main ${
-                    this.state.useModal ? 'w60 h60' : 'w36 h36'
-                  }`}
-                >
-                  <svg
-                    className={`icon color-gray ${
-                      this.state.useModal ? 'w24 h24' : ''
-                    }`}
-                  >
-                    <title>Search</title>
-                    <use xlinkHref="#icon-search" />
-                  </svg>
-                </div>
-                {this.props.isLoading && (
-                  <div
-                    className="loading loading--s absolute bg-white"
-                    style={{
-                      top: this.state.useModal ? '21px' : '10px',
-                      right: '26px',
-                      zIndex: 5
+              {!props.resultsOnly && (
+                <React.Fragment>
+                  <label className="cursor-pointer" {...getLabelProps()}>
+                    <div
+                      className={`absolute flex-parent flex-parent--center-cross flex-parent--center-main ${
+                        this.state.useModal ? 'w60 h60' : 'w36 h36'
+                      }`}
+                    >
+                      <svg
+                        className={`icon color-gray ${
+                          this.state.useModal ? 'w24 h24' : ''
+                        }`}
+                      >
+                        <title>Search</title>
+                        <use xlinkHref="#icon-search" />
+                      </svg>
+                    </div>
+                    {this.props.isLoading && (
+                      <div
+                        className="loading loading--s absolute bg-white"
+                        style={{
+                          top: this.state.useModal ? '21px' : '10px',
+                          right: '26px',
+                          zIndex: 5
+                        }}
+                      />
+                    )}
+                  </label>
+                  <input
+                    ref={(input) => {
+                      this.docsSeachInput = input;
                     }}
+                    placeholder={this.props.placeholder}
+                    className={classnames('input bg-white', {
+                      'px60 h60 txt-l': this.state.useModal,
+                      'px36 h36': !this.state.useModal
+                    })}
+                    {...getInputProps({
+                      onFocus: () => {
+                        openMenu();
+                      }
+                    })}
                   />
-                )}
-              </label>
-              <input
-                ref={(input) => {
-                  this.docsSeachInput = input;
-                }}
-                placeholder={this.props.placeholder}
-                className={`input bg-white ${
-                  this.state.useModal ? 'px60 h60 txt-l' : 'px36 h36'
-                }`}
-                {...getInputProps({
-                  onFocus: () => {
-                    openMenu();
-                  }
-                })}
-              />
-              {isOpen && props.searchTerm && (
-                <div className="color-text shadow-darken25 round mt3 bg-white scroll-auto scroll-styled hmax360 absolute z4 w-full align-l">
+                </React.Fragment>
+              )}
+              {(isOpen || props.resultsOnly) && props.searchTerm && (
+                <div
+                  className={classnames(
+                    'color-text round mt3 bg-white w-full align-l',
+                    {
+                      'hmax360 scroll-auto scroll-styled hmax360 absolute shadow-darken25 z4': !props.resultsOnly
+                    }
+                  )}
+                >
                   <div>
                     <Facet
                       show={20}
@@ -242,9 +260,10 @@ class SearchBox extends React.Component {
   }
 
   render() {
+    const { resultsOnly } = this.props;
     return (
       <div>
-        {!this.state.useModal ? (
+        {!this.state.useModal || resultsOnly ? (
           <div className="w-full">{this.renderSearchBar()}</div>
         ) : (
           <div>
@@ -288,7 +307,10 @@ SearchBox.propTypes = {
   narrow: PropTypes.bool,
   disableModal: PropTypes.bool,
   site: PropTypes.string,
-  wasSearched: PropTypes.bool
+  wasSearched: PropTypes.bool,
+  resultsOnly: PropTypes.bool,
+  segmentTrackEvent: PropTypes.string,
+  overrideSearchTerm: PropTypes.string
 };
 
 export default SearchBox;
