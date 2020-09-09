@@ -8,22 +8,23 @@ export default class Example extends React.Component {
       query: undefined
     };
   }
-  handleBtn = (query) => this.setState({ query: query });
+  handleSelect = (e) => {
+    this.setState({ query: e.target.value });
+  };
   render() {
     return (
       <div>
-        <button
-          className="btn btn--s mr3"
-          onClick={() => this.handleBtn('Studio')}
+        <select
+          defaultValue=""
+          value={this.state.query}
+          onChange={this.handleSelect}
         >
-          Studio
-        </button>
-        <button
-          className="btn btn--s"
-          onClick={() => this.handleBtn('Geocoding')}
-        >
-          Geocoding
-        </button>
+          <option value="" disabled>
+            Select a product
+          </option>
+          <option value="Studio">Studio</option>
+          <option value="Geocoding">Geocoding</option>
+        </select>
         <div className="hmax360 scroll-auto scroll-styled">
           <Search
             inputId="search6"

@@ -221,20 +221,29 @@ exports[`search Search with dark background, custom placeholder renders as expec
 </div>
 `;
 
-exports[`search Set \`resultsOnly: true\` to true. Click a button to change the query. renders as expected 1`] = `
+exports[`search Set \`resultsOnly: true\` to true. Select an item to see search results. renders as expected 1`] = `
 <div>
-  <button
-    className="btn btn--s mr3"
-    onClick={[Function]}
+  <select
+    defaultValue=""
+    onChange={[Function]}
   >
-    Studio
-  </button>
-  <button
-    className="btn btn--s"
-    onClick={[Function]}
-  >
-    Geocoding
-  </button>
+    <option
+      disabled={true}
+      value=""
+    >
+      Select a product
+    </option>
+    <option
+      value="Studio"
+    >
+      Studio
+    </option>
+    <option
+      value="Geocoding"
+    >
+      Geocoding
+    </option>
+  </select>
   <div
     className="hmax360 scroll-auto scroll-styled"
   >

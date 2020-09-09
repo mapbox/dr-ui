@@ -58,7 +58,7 @@ testCases.withConnector = {
 testCases.resultsOnly = {
   component: Search,
   description:
-    'Set `resultsOnly: true` to true. Click a button to change the query.',
+    'Set `resultsOnly: true` to true. Select an item to see search results.',
   element: <Results />
 };
 
