@@ -4,6 +4,7 @@ import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
 import Basic from '../examples/basic';
 import DisableModal from '../examples/disabled';
 import Narrow from '../examples/narrow';
+import Results from './results';
 
 const testCases = {};
 
@@ -57,12 +58,8 @@ testCases.withConnector = {
 testCases.resultsOnly = {
   component: Search,
   description:
-    'Set resultsOnly to true. To test this, uncomment `overrideSearchTerm` and then run the tests cases app.',
-  props: {
-    inputId: 'search6',
-    resultsOnly: true
-    //overrideSearchTerm: 'Studio'
-  }
+    'Set `resultsOnly: true` to true. Click a button to change the query.',
+  element: <Results />
 };
 
 export { testCases };

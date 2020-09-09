@@ -129,9 +129,7 @@ describe('search', () => {
 
     beforeEach(() => {
       testCase = testCases.resultsOnly;
-      wrapper = renderer.create(
-        React.createElement(testCase.component, testCase.props)
-      );
+      wrapper = renderer.create(testCase.element);
       tree = wrapper.toJSON();
     });
 

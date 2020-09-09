@@ -221,25 +221,39 @@ exports[`search Search with dark background, custom placeholder renders as expec
 </div>
 `;
 
-exports[`search Set resultsOnly to true. renders as expected 1`] = `
-<div
-  className="relative"
->
-  <div>
+exports[`search Set \`resultsOnly: true\` to true. Click a button to change the query. renders as expected 1`] = `
+<div>
+  <button
+    className="btn btn--s mr3"
+    onClick={[Function]}
+  >
+    Studio
+  </button>
+  <button
+    className="btn btn--s"
+    onClick={[Function]}
+  >
+    Geocoding
+  </button>
+  <div
+    className="hmax360 scroll-auto scroll-styled"
+  >
     <div
-      className="w-full"
+      className="relative"
     >
-      <div
-        aria-expanded={false}
-        aria-haspopup="listbox"
-        aria-labelledby="search6-label"
-        aria-owns={null}
-        role="combobox"
-      >
+      <div>
         <div
-          className="color-text round mt3 bg-white w-full align-l"
+          className="w-full"
         >
-          <div />
+          <div
+            aria-expanded={false}
+            aria-haspopup="listbox"
+            aria-labelledby="search6-label"
+            aria-owns={null}
+            role="combobox"
+          >
+            
+          </div>
         </div>
       </div>
     </div>
