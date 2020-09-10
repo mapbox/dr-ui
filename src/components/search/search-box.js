@@ -193,46 +193,53 @@ class SearchBox extends React.Component {
                 </React.Fragment>
               )}
               {(isOpen || props.resultsOnly) && props.searchTerm && (
-                <div
-                  className={classnames(
-                    'color-text round mt3 bg-white w-full align-l',
-                    {
-                      'hmax360 scroll-auto scroll-styled hmax360 absolute shadow-darken25 z4': !props.resultsOnly
-                    }
+                <div>
+                  {props.isLoading && (
+                    <div className="w-full h360 bg-white opacity75 absolute">
+                      <div className="loading mx-auto mt60" />
+                    </div>
                   )}
-                >
-                  <div>
-                    <Facet
-                      show={20}
-                      field="site"
-                      label="Site"
-                      view={this.singleLinksFacet}
-                    />
+                  <div
+                    className={classnames(
+                      'color-text round mt3 bg-white w-full align-l',
+                      {
+                        'hmax360 scroll-auto scroll-styled hmax360 absolute shadow-darken25 z4': !props.resultsOnly
+                      }
+                    )}
+                  >
+                    <div>
+                      <Facet
+                        show={20}
+                        field="site"
+                        label="Site"
+                        view={this.singleLinksFacet}
+                      />
 
-                    {props.wasSearched &&
-                      (this.props.results.length ? (
-                        <ul>
-                          {this.props.results.map((result, index) => (
-                            <SearchResult
-                              key={index}
-                              result={result}
-                              index={index}
-                              downshiftProps={downshiftProps}
-                            />
-                          ))}
-                        </ul>
-                      ) : (
-                        <div className="py12 px12 prose">
-                          <p>
-                            Hmmm, we didn't find anything. Reword your search,
-                            or{' '}
-                            <a href="https://support.mapbox.com/hc/en-us">
-                              contact Support
-                            </a>
-                            .
-                          </p>
-                        </div>
-                      ))}
+                      {props.wasSearched &&
+                        (this.props.results.length ? (
+                          <ul>
+                            {this.props.results.map((result, index) => (
+                              <SearchResult
+                                key={index}
+                                result={result}
+                                index={index}
+                                downshiftProps={downshiftProps}
+                              />
+                            ))}
+                          </ul>
+                        ) : (
+                          <div className="py12 px12 prose">
+                            <p>
+                              Hmmm, we didn't find anything. Reword your search,
+                              or{' '}
+                              <a href="https://support.mapbox.com/hc/en-us">
+                                contact Support
+                              </a>
+                              .
+                            </p>
+                          </div>
+                        ))}
+                    </div>
                   </div>
                 </div>
               )}
