@@ -14,8 +14,13 @@ class SearchResult extends React.Component {
 
   render() {
     const { props } = this;
-    const getItemProps = props.downshiftProps.getItemProps;
-    const highlighted = props.downshiftProps.highlightedIndex === props.index;
+    console.log(props.downshiftProps);
+    const getItemProps = props.downshiftProps
+      ? props.downshiftProps.getItemProps
+      : () => {};
+    const highlighted =
+      props.downshiftProps &&
+      props.downshiftProps.highlightedIndex === props.index;
     const site = this.returnRaw(props.result.site);
     const subsite = this.returnRaw(props.result.subsite);
     const type = this.returnRaw(props.result.contentType);

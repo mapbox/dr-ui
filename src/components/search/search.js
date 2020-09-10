@@ -73,6 +73,7 @@ class Search extends React.Component {
                   resultsOnly={props.resultsOnly}
                   segmentTrackEvent={props.segmentTrackEvent}
                   overrideSearchTerm={props.overrideSearchTerm}
+                  defaultResults={props.defaultResults}
                 />
               </div>
             );
@@ -93,7 +94,7 @@ Search.propTypes = {
   inputId: PropTypes.string,
   /** disable modal if you always want an input */
   disableModal: PropTypes.bool,
-  //* add current site filter toggle */
+  /** add current site filter toggle */
   site: PropTypes.string,
   /** option to connect to a custom search engine */
   connector: PropTypes.instanceOf(SiteSearchAPIConnector),
@@ -102,7 +103,21 @@ Search.propTypes = {
   /** If `resultsOnly: true` set `overrideSearchTerm` to set the search term */
   overrideSearchTerm: PropTypes.string,
   /** Segment track event, default is (Searched docs) */
-  segmentTrackEvent: PropTypes.string
+  segmentTrackEvent: PropTypes.string,
+  /** If `resultsOnly: true` and `!overrideSearchTerm`, display list of default results*/
+  defaultResults: PropTypes.arrayOf(
+    PropTypes.shape({
+      codeLanguage: PropTypes.shape({ raw: PropTypes.string }),
+      contentType: PropTypes.shape({ raw: PropTypes.string }),
+      excerpt: PropTypes.shape({ raw: PropTypes.string }),
+      id: PropTypes.shape({ raw: PropTypes.string }),
+      level: PropTypes.shape({ raw: PropTypes.string }),
+      site: PropTypes.shape({ raw: PropTypes.string }),
+      subsite: PropTypes.shape({ raw: PropTypes.string }),
+      title: PropTypes.shape({ raw: PropTypes.string }),
+      url: PropTypes.shape({ raw: PropTypes.string })
+    })
+  )
 };
 
 Search.defaultProps = {
