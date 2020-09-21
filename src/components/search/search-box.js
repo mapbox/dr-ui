@@ -110,18 +110,6 @@ class SearchBox extends React.Component {
 
   renderSearchBar() {
     const { props } = this;
-    const defaultResultsList =
-      props.defaultResults &&
-      props.defaultResults.map((result, index) => {
-        return (
-          <SearchResult
-            key={index}
-            result={result}
-            index={index}
-            themeCompact={props.themeCompact}
-          />
-        );
-      });
     return (
       <Downshift
         id={this.props.inputId}
@@ -211,59 +199,55 @@ class SearchBox extends React.Component {
                       <div className="loading mx-auto mt60" />
                     </div>
                   )}
-                  {props.resultsOnly && !props.overrideSearchTerm ? (
-                    <div>{defaultResultsList}</div>
-                  ) : (
-                    <div
-                      className={classnames(
-                        'color-text round mt3 bg-white w-full align-l',
-                        {
-                          'hmax360 scroll-auto scroll-styled hmax360 absolute shadow-darken25 z4': !props.resultsOnly
-                        }
-                      )}
-                    >
-                      <div>
-                        <Facet
-                          show={20}
-                          field="site"
-                          label="Site"
-                          view={this.singleLinksFacet}
-                        />
+                  <div
+                    className={classnames(
+                      'color-text round mt3 bg-white w-full align-l',
+                      {
+                        'hmax360 scroll-auto scroll-styled hmax360 absolute shadow-darken25 z4': !props.resultsOnly
+                      }
+                    )}
+                  >
+                    <div>
+                      <Facet
+                        show={20}
+                        field="site"
+                        label="Site"
+                        view={this.singleLinksFacet}
+                      />
 
-                        {props.wasSearched &&
-                          (this.props.results.length ? (
-                            <ul>
-                              {this.props.results.map((result, index) => (
-                                <SearchResult
-                                  key={index}
-                                  result={result}
-                                  index={index}
-                                  downshiftProps={downshiftProps}
-                                  themeCompact={props.themeCompact}
-                                />
-                              ))}
-                            </ul>
-                          ) : (
-                            <div
-                              className={`px12 ${
-                                props.themeCompact ? 'py6 txt-s' : 'py12 prose'
-                              }`}
-                            >
-                              {props.customEmptyResultMessage || (
-                                <p>
-                                  Hmmm, we didn't find anything. Reword your
-                                  search, or{' '}
-                                  <a href="https://support.mapbox.com/hc/en-us">
-                                    contact Support
-                                  </a>
-                                  .
-                                </p>
-                              )}
-                            </div>
-                          ))}
-                      </div>
+                      {props.wasSearched &&
+                        (this.props.results.length ? (
+                          <ul>
+                            {this.props.results.map((result, index) => (
+                              <SearchResult
+                                key={index}
+                                result={result}
+                                index={index}
+                                downshiftProps={downshiftProps}
+                                themeCompact={props.themeCompact}
+                              />
+                            ))}
+                          </ul>
+                        ) : (
+                          <div
+                            className={`px12 ${
+                              props.themeCompact ? 'py6 txt-s' : 'py12 prose'
+                            }`}
+                          >
+                            {props.customEmptyResultMessage || (
+                              <p>
+                                Hmmm, we didn't find anything. Reword your
+                                search, or{' '}
+                                <a href="https://support.mapbox.com/hc/en-us">
+                                  contact Support
+                                </a>
+                                .
+                              </p>
+                            )}
+                          </div>
+                        ))}
                     </div>
-                  )}
+                  </div>
                 </div>
               )}
             </div>
@@ -341,19 +325,6 @@ SearchBox.propTypes = {
   resultsOnly: PropTypes.bool,
   segmentTrackEvent: PropTypes.string,
   overrideSearchTerm: PropTypes.string,
-  defaultResults: PropTypes.arrayOf(
-    PropTypes.shape({
-      codeLanguage: PropTypes.shape({ raw: PropTypes.string }),
-      contentType: PropTypes.shape({ raw: PropTypes.string }),
-      excerpt: PropTypes.shape({ raw: PropTypes.string }),
-      id: PropTypes.shape({ raw: PropTypes.string }),
-      level: PropTypes.shape({ raw: PropTypes.string }),
-      site: PropTypes.shape({ raw: PropTypes.string }),
-      subsite: PropTypes.shape({ raw: PropTypes.string }),
-      title: PropTypes.shape({ raw: PropTypes.string }),
-      url: PropTypes.shape({ raw: PropTypes.string })
-    })
-  ),
   themeCompact: PropTypes.bool,
   customEmptyResultMessage: PropTypes.node
 };
