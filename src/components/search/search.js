@@ -73,7 +73,6 @@ class Search extends React.Component {
                   resultsOnly={props.resultsOnly}
                   segmentTrackEvent={props.segmentTrackEvent}
                   overrideSearchTerm={props.overrideSearchTerm}
-                  defaultResults={props.defaultResults}
                   themeCompact={props.themeCompact}
                   customEmptyResultMessage={props.customEmptyResultMessage}
                 />
@@ -106,20 +105,6 @@ Search.propTypes = {
   overrideSearchTerm: PropTypes.string,
   /** Segment track event, default is (Searched docs) */
   segmentTrackEvent: PropTypes.string,
-  /** If `resultsOnly: true` and `!overrideSearchTerm`, display list of default results */
-  defaultResults: PropTypes.arrayOf(
-    PropTypes.shape({
-      codeLanguage: PropTypes.shape({ raw: PropTypes.string }),
-      contentType: PropTypes.shape({ raw: PropTypes.string }),
-      excerpt: PropTypes.shape({ raw: PropTypes.string }),
-      id: PropTypes.shape({ raw: PropTypes.string }),
-      level: PropTypes.shape({ raw: PropTypes.string }),
-      site: PropTypes.shape({ raw: PropTypes.string }),
-      subsite: PropTypes.shape({ raw: PropTypes.string }),
-      title: PropTypes.shape({ raw: PropTypes.string }),
-      url: PropTypes.shape({ raw: PropTypes.string })
-    })
-  ),
   /** If true, enable compact mode utilizing smaller text and padding, default false */
   themeCompact: PropTypes.bool,
   /** Node to display when there are no search results for the given query */
