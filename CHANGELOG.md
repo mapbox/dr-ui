@@ -1,5 +1,9 @@
 # Changelog
 
+## Info arch
+
+- TBD
+
 ## 1.1.6
 
 - Add `hideSearch` prop to `PageLayout` to remove the `Search` component in `PageLayoutTopbar`.
