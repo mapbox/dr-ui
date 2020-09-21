@@ -40,6 +40,7 @@ export default class Example extends React.Component {
           <option value="">Blank</option>
           <option value="Studio">Studio</option>
           <option value="Geocoding">Geocoding</option>
+          <option value="Banana">Banana</option>
         </select>
         <div className="hmax360 scroll-auto scroll-styled">
           <Search
@@ -48,6 +49,12 @@ export default class Example extends React.Component {
             resultsOnly={true}
             defaultResults={defaultResults}
             themeCompact={true}
+            customEmptyResultMessage={
+              <p>
+                Hmmm, we didn't find anything. We'll help you take a closer look
+                once you get in touch!
+              </p>
+            }
           />
         </div>
       </div>

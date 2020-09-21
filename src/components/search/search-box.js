@@ -244,15 +244,21 @@ class SearchBox extends React.Component {
                               ))}
                             </ul>
                           ) : (
-                            <div className="py12 px12 prose">
-                              <p>
-                                Hmmm, we didn't find anything. Reword your
-                                search, or{' '}
-                                <a href="https://support.mapbox.com/hc/en-us">
-                                  contact Support
-                                </a>
-                                .
-                              </p>
+                            <div
+                              className={`px12 ${
+                                props.themeCompact ? 'py6 txt-s' : 'py12 prose'
+                              }`}
+                            >
+                              {props.customEmptyResultMessage || (
+                                <p>
+                                  Hmmm, we didn't find anything. Reword your
+                                  search, or{' '}
+                                  <a href="https://support.mapbox.com/hc/en-us">
+                                    contact Support
+                                  </a>
+                                  .
+                                </p>
+                              )}
                             </div>
                           ))}
                       </div>
@@ -348,7 +354,8 @@ SearchBox.propTypes = {
       url: PropTypes.shape({ raw: PropTypes.string })
     })
   ),
-  themeCompact: PropTypes.bool
+  themeCompact: PropTypes.bool,
+  customEmptyResultMessage: PropTypes.node
 };
 
 export default SearchBox;

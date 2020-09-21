@@ -75,6 +75,7 @@ class Search extends React.Component {
                   overrideSearchTerm={props.overrideSearchTerm}
                   defaultResults={props.defaultResults}
                   themeCompact={props.themeCompact}
+                  customEmptyResultMessage={props.customEmptyResultMessage}
                 />
               </div>
             );
@@ -120,7 +121,9 @@ Search.propTypes = {
     })
   ),
   /** If true, enable compact mode utilizing smaller text and padding, default false */
-  themeCompact: PropTypes.bool
+  themeCompact: PropTypes.bool,
+  /** Node to display when there are no search results for the given query */
+  customEmptyResultMessage: PropTypes.node
 };
 
 Search.defaultProps = {
