@@ -74,6 +74,7 @@ class Search extends React.Component {
                   segmentTrackEvent={props.segmentTrackEvent}
                   overrideSearchTerm={props.overrideSearchTerm}
                   defaultResults={props.defaultResults}
+                  themeCompact={props.themeCompact}
                 />
               </div>
             );
@@ -104,7 +105,7 @@ Search.propTypes = {
   overrideSearchTerm: PropTypes.string,
   /** Segment track event, default is (Searched docs) */
   segmentTrackEvent: PropTypes.string,
-  /** If `resultsOnly: true` and `!overrideSearchTerm`, display list of default results*/
+  /** If `resultsOnly: true` and `!overrideSearchTerm`, display list of default results */
   defaultResults: PropTypes.arrayOf(
     PropTypes.shape({
       codeLanguage: PropTypes.shape({ raw: PropTypes.string }),
@@ -117,7 +118,9 @@ Search.propTypes = {
       title: PropTypes.shape({ raw: PropTypes.string }),
       url: PropTypes.shape({ raw: PropTypes.string })
     })
-  )
+  ),
+  /** If true, enable compact mode utilizing smaller text and padding, default false */
+  themeCompact: PropTypes.bool
 };
 
 Search.defaultProps = {
@@ -130,7 +133,8 @@ Search.defaultProps = {
     documentType: ['page']
   }),
   resultsOnly: false,
-  segmentTrackEvent: 'Searched docs'
+  segmentTrackEvent: 'Searched docs',
+  themeCompact: false
 };
 
 export default Search;

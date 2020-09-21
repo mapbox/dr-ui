@@ -113,7 +113,14 @@ class SearchBox extends React.Component {
     const defaultResultsList =
       props.defaultResults &&
       props.defaultResults.map((result, index) => {
-        return <SearchResult key={index} result={result} index={index} />;
+        return (
+          <SearchResult
+            key={index}
+            result={result}
+            index={index}
+            themeCompact={props.themeCompact}
+          />
+        );
       });
     return (
       <Downshift
@@ -232,6 +239,7 @@ class SearchBox extends React.Component {
                                   result={result}
                                   index={index}
                                   downshiftProps={downshiftProps}
+                                  themeCompact={props.themeCompact}
                                 />
                               ))}
                             </ul>
@@ -339,7 +347,8 @@ SearchBox.propTypes = {
       title: PropTypes.shape({ raw: PropTypes.string }),
       url: PropTypes.shape({ raw: PropTypes.string })
     })
-  )
+  ),
+  themeCompact: PropTypes.bool
 };
 
 export default SearchBox;

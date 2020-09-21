@@ -47,6 +47,7 @@ export default class Example extends React.Component {
             overrideSearchTerm={this.state.query}
             resultsOnly={true}
             defaultResults={defaultResults}
+            themeCompact={true}
           />
         </div>
       </div>
