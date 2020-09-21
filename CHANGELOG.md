@@ -2,7 +2,7 @@
 
 ## Info arch
 
-- TBD
+- Add `Breadcrumb` component. [#331](https://github.com/mapbox/dr-ui/pull/331).
 
 ## 1.1.6
 
