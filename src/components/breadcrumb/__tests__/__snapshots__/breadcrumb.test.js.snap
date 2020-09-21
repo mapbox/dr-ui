@@ -1,0 +1,471 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb Basic renders as expected 1`] = `
+<div
+  className="dr-ui--breadcrumb none block-mm px24 pt12"
+  data-swiftype-index="false"
+>
+  <a
+    className="link"
+    href="https://docs.mapbox.com"
+  >
+    All docs
+  </a>
+  <span
+    className="color-gray-light inline-block px6"
+  >
+    <svg
+      className="events-none icon inline-block align-t"
+      focusable="false"
+      role="presentation"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
+        }
+      }
+    >
+      <use
+        xlinkHref="#icon-chevron-right"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+  </span>
+  <a
+    className="link"
+    href="/mapbox-gl-js/"
+  >
+    Mapbox GL JS
+  </a>
+  <span
+    className="color-gray-light inline-block px6"
+  >
+    <svg
+      className="events-none icon inline-block align-t"
+      focusable="false"
+      role="presentation"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
+        }
+      }
+    >
+      <use
+        xlinkHref="#icon-chevron-right"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+  </span>
+  <a
+    className="link"
+    href="/mapbox-gl-js/examples/"
+  >
+    Examples
+  </a>
+  <span
+    className="color-gray-light inline-block px6"
+  >
+    <svg
+      className="events-none icon inline-block align-t"
+      focusable="false"
+      role="presentation"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
+        }
+      }
+    >
+      <use
+        xlinkHref="#icon-chevron-right"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+  </span>
+  <span
+    className="color-gray"
+  >
+    Display a map
+  </span>
+</div>
+`;
+
+exports[`Breadcrumb Each link has a unique path renders as expected 1`] = `
+<div
+  className="dr-ui--breadcrumb none block-mm px24 pt12"
+  data-swiftype-index="false"
+>
+  <a
+    className="link"
+    href="https://docs.mapbox.com"
+  >
+    All docs
+  </a>
+  <span
+    className="color-gray-light inline-block px6"
+  >
+    <svg
+      className="events-none icon inline-block align-t"
+      focusable="false"
+      role="presentation"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
+        }
+      }
+    >
+      <use
+        xlinkHref="#icon-chevron-right"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+  </span>
+  <a
+    className="link"
+    href="/api/"
+  >
+    API
+  </a>
+  <span
+    className="color-gray-light inline-block px6"
+  >
+    <svg
+      className="events-none icon inline-block align-t"
+      focusable="false"
+      role="presentation"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
+        }
+      }
+    >
+      <use
+        xlinkHref="#icon-chevron-right"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+  </span>
+  <span
+    className="color-gray"
+  >
+    Maps service
+  </span>
+</div>
+`;
+
+exports[`Breadcrumb Each title is unique. renders as expected 1`] = `
+<div
+  className="dr-ui--breadcrumb none block-mm px24 pt12"
+  data-swiftype-index="false"
+>
+  <a
+    className="link"
+    href="https://docs.mapbox.com"
+  >
+    All docs
+  </a>
+  <span
+    className="color-gray-light inline-block px6"
+  >
+    <svg
+      className="events-none icon inline-block align-t"
+      focusable="false"
+      role="presentation"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
+        }
+      }
+    >
+      <use
+        xlinkHref="#icon-chevron-right"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+  </span>
+  <a
+    className="link"
+    href="/dr-ui/"
+  >
+    Dr. UI
+  </a>
+  <span
+    className="color-gray-light inline-block px6"
+  >
+    <svg
+      className="events-none icon inline-block align-t"
+      focusable="false"
+      role="presentation"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
+        }
+      }
+    >
+      <use
+        xlinkHref="#icon-chevron-right"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+  </span>
+  <span
+    className="color-gray"
+  >
+    Help
+  </span>
+</div>
+`;
+
+exports[`Breadcrumb Has subsite renders as expected 1`] = `
+<div
+  className="dr-ui--breadcrumb none block-mm px24 pt12"
+  data-swiftype-index="false"
+>
+  <a
+    className="link"
+    href="https://docs.mapbox.com"
+  >
+    All docs
+  </a>
+  <span
+    className="color-gray-light inline-block px6"
+  >
+    <svg
+      className="events-none icon inline-block align-t"
+      focusable="false"
+      role="presentation"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
+        }
+      }
+    >
+      <use
+        xlinkHref="#icon-chevron-right"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+  </span>
+  <a
+    className="link"
+    href="/android/"
+  >
+    Android
+  </a>
+  <span
+    className="color-gray-light inline-block px6"
+  >
+    <svg
+      className="events-none icon inline-block align-t"
+      focusable="false"
+      role="presentation"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
+        }
+      }
+    >
+      <use
+        xlinkHref="#icon-chevron-right"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+  </span>
+  <a
+    className="link"
+    href="/android/maps/overview/"
+  >
+    Maps SDK
+  </a>
+  <span
+    className="color-gray-light inline-block px6"
+  >
+    <svg
+      className="events-none icon inline-block align-t"
+      focusable="false"
+      role="presentation"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
+        }
+      }
+    >
+      <use
+        xlinkHref="#icon-chevron-right"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+  </span>
+  <span
+    className="color-gray"
+  >
+    Camera
+  </span>
+</div>
+`;
+
+exports[`Breadcrumb Hide breadcrumb if there is only one item (and domain is false) renders as expected 1`] = `null`;
+
+exports[`Breadcrumb Set \`domain: false\` renders as expected 1`] = `
+<div
+  className="dr-ui--breadcrumb none block-mm px24 pt12"
+  data-swiftype-index="false"
+>
+  <a
+    className="link"
+    href="/mapbox-gl-js/"
+  >
+    Mapbox GL JS
+  </a>
+  <span
+    className="color-gray-light inline-block px6"
+  >
+    <svg
+      className="events-none icon inline-block align-t"
+      focusable="false"
+      role="presentation"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
+        }
+      }
+    >
+      <use
+        xlinkHref="#icon-chevron-right"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+  </span>
+  <a
+    className="link"
+    href="/mapbox-gl-js/examples/"
+  >
+    Examples
+  </a>
+  <span
+    className="color-gray-light inline-block px6"
+  >
+    <svg
+      className="events-none icon inline-block align-t"
+      focusable="false"
+      role="presentation"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
+        }
+      }
+    >
+      <use
+        xlinkHref="#icon-chevron-right"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+  </span>
+  <span
+    className="color-gray"
+  >
+    Display a map
+  </span>
+</div>
+`;
+
+exports[`Breadcrumb Set \`domain\` renders as expected 1`] = `
+<div
+  className="dr-ui--breadcrumb none block-mm px24 pt12"
+  data-swiftype-index="false"
+>
+  <a
+    className="link"
+    href="https://platform.mapbox.com"
+  >
+    Platform
+  </a>
+  <span
+    className="color-gray-light inline-block px6"
+  >
+    <svg
+      className="events-none icon inline-block align-t"
+      focusable="false"
+      role="presentation"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
+        }
+      }
+    >
+      <use
+        xlinkHref="#icon-chevron-right"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+  </span>
+  <a
+    className="link"
+    href="/mapbox-gl-js/"
+  >
+    Mapbox GL JS
+  </a>
+  <span
+    className="color-gray-light inline-block px6"
+  >
+    <svg
+      className="events-none icon inline-block align-t"
+      focusable="false"
+      role="presentation"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
+        }
+      }
+    >
+      <use
+        xlinkHref="#icon-chevron-right"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+  </span>
+  <a
+    className="link"
+    href="/mapbox-gl-js/examples/"
+  >
+    Examples
+  </a>
+  <span
+    className="color-gray-light inline-block px6"
+  >
+    <svg
+      className="events-none icon inline-block align-t"
+      focusable="false"
+      role="presentation"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
+        }
+      }
+    >
+      <use
+        xlinkHref="#icon-chevron-right"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+  </span>
+  <span
+    className="color-gray"
+  >
+    Display a map
+  </span>
+</div>
+`;

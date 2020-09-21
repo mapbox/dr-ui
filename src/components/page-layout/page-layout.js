@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import BackToTopButton from '../back-to-top-button/back-to-top-button';
 import ErrorBoundary from '../error-boundary/error-boundary';
+import Breadcrumb from '../breadcrumb/breadcrumb';
 import Content from './components/content';
 import Sidebar from './components/sidebar';
 import PageLayoutTopbar from './components/topbar';
@@ -57,13 +58,29 @@ export default class PageLayout extends React.Component {
   };
 
   // render the page's content
-  renderContent = (config, parentPath) => {
+  renderContent = (config, parentPath, parent) => {
     return (
       <div
         className={classnames('col col--12', {
           'col--8-mm': config.sidebar !== 'none'
         })}
       >
+        <Breadcrumb
+          domain={false}
+          site={{
+            title: this.props.constants.SITE,
+            path: `${this.props.constants.BASEURL}/`
+          }}
+          section={{
+            title: parent.title,
+            path: parent.parent
+          }}
+          currentPage={{
+            title: this.props.frontMatter.title,
+            path: this.props.location.pathname
+          }}
+        />
+
         <Content
           {...this.props}
           parentPath={parentPath}
@@ -110,7 +127,11 @@ export default class PageLayout extends React.Component {
               {this.renderSidebar(config, switchedNavigation, parentPath)}
             </ErrorBoundary>
             <ErrorBoundary>
-              {this.renderContent(config, parentPath)}
+              {this.renderContent(
+                config,
+                parentPath,
+                switchedNavigation.hierarchy[location.pathname]
+              )}
             </ErrorBoundary>
           </div>
         </div>
@@ -182,7 +203,8 @@ PageLayout.propTypes = {
     sidebarTitle: PropTypes.string,
     hideFromNav: PropTypes.bool,
     hideCardLanguage: PropTypes.bool,
-    hideCardDescription: PropTypes.bool
+    hideCardDescription: PropTypes.bool,
+    title: PropTypes.string
   }).isRequired,
   /**
 - `navTabs` - links to be shown in the `TabList` of `TopBarSticker`, formatted as an array of object: `[{"href": "/overview", "id": "overview", "label": "Overview"}]`
