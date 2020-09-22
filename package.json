@@ -9,7 +9,7 @@
     "build-theme-css": "node scripts/create-theme-css.js",
     "budo": "budo test/app.js -l -d -P -- -t babelify",
     "prestart": "npm run build-theme-css && npm run build-component-index && npm run cp-assembly",
-    "test": "jest && npm run lint-md && npm run test-content",
+    "test": "npm run lint-md && npm run test-content && jest",
     "build-component-index": "rtk-index ./src/components ./src/test-cases-app/component-index.js",
     "lint": "eslint .",
     "pretest": "npm run prepare-docs && npm run lint",
