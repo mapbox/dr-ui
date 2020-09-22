@@ -62,11 +62,8 @@ src/components/[component-name]/
 
 The `build` command creates a `pkg/` directory that contains the code we want to publish, organized the way we want it. So `pkg/` is the directory that we publish. `pkg/package.json` is a clone of `package.json` but with `private: true` removed.
 
-1. Document changes in the CHANGELOG.
-1. Increment the version key in package.json and package-lock.json.
-1. Make sure all this is committed, typically with a commit message like `Prepare 0.0.11`.
-1. Create a tag. No message is necessary, since the changelog includes explanations of changes. For example: `git tag -a 0.0.11 -m ""`.
-1. Push the tag: `git push --tags`.
+1. Document changes in the CHANGELOG and commit the file.
+1. Run `npm version <major|minor|patch>` to increment the version number in package.json and package-lock.json. This will automatically create a commit and tag for the release.
 1. Push your commit.
 1. Build the `pkg/` directory: `npm run build`.
 1. `cd` into the `pkg/` directory and publish the new version on npm.
