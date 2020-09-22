@@ -140,6 +140,8 @@ class Feedback extends React.Component {
     Sentry.configureScope((scope) => {
       // set tag for site name
       scope.setTag('site', this.props.site);
+      // set tag for referrer, if available
+      if ('referrer' in document) scope.setTag('referrer', document.referrer);
       // set tag for the user's boolean rating
       scope.setTag('helpful', this.state.helpful);
       // set tag for the section of the page (if available)
