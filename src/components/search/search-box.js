@@ -234,7 +234,7 @@ class SearchBox extends React.Component {
                               props.themeCompact ? 'py6 txt-s' : 'py12 prose'
                             }`}
                           >
-                            {props.customEmptyResultMessage || (
+                            {props.emptyResultMessage || (
                               <p>
                                 Hmmm, we didn't find anything. Reword your
                                 search, or{' '}
@@ -326,7 +326,7 @@ SearchBox.propTypes = {
   segmentTrackEvent: PropTypes.string,
   overrideSearchTerm: PropTypes.string,
   themeCompact: PropTypes.bool,
-  customEmptyResultMessage: PropTypes.node
+  emptyResultMessage: PropTypes.node
 };
 
 export default SearchBox;

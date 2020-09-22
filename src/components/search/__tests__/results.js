@@ -32,7 +32,7 @@ export default class Example extends React.Component {
             overrideSearchTerm={this.state.query}
             resultsOnly={true}
             themeCompact={true}
-            customEmptyResultMessage={
+            emptyResultMessage={
               <p>
                 Hmmm, we didn't find anything. We'll help you take a closer look
                 once you get in touch!

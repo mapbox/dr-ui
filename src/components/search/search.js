@@ -74,7 +74,7 @@ class Search extends React.Component {
                   segmentTrackEvent={props.segmentTrackEvent}
                   overrideSearchTerm={props.overrideSearchTerm}
                   themeCompact={props.themeCompact}
-                  customEmptyResultMessage={props.customEmptyResultMessage}
+                  emptyResultMessage={props.emptyResultMessage}
                 />
               </div>
             );
@@ -108,7 +108,7 @@ Search.propTypes = {
   /** If true, enable compact mode utilizing smaller text and padding, default false */
   themeCompact: PropTypes.bool,
   /** Node to display when there are no search results for the given query */
-  customEmptyResultMessage: PropTypes.node
+  emptyResultMessage: PropTypes.node
 };
 
 Search.defaultProps = {
@@ -122,7 +122,13 @@ Search.defaultProps = {
   }),
   resultsOnly: false,
   segmentTrackEvent: 'Searched docs',
-  themeCompact: false
+  themeCompact: false,
+  emptyResultMessage: (
+    <p>
+      Hmmm, we didn't find anything. Reword your search, or{' '}
+      <a href="https://support.mapbox.com/hc/en-us">contact Support</a>.
+    </p>
+  )
 };
 
 export default Search;
