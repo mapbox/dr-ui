@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.0
+
+- Set new `referrer` tag in `Feedback`.
+- Bump Sentry version to `5.24.2`.
+
 ## 1.1.6
 
 - Add `hideSearch` prop to `PageLayout` to remove the `Search` component in `PageLayoutTopbar`.
