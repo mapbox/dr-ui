@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`search Basic search renders as expected 1`] = `
+exports[`search Basic search with \`site\` set to show filter toggle. Open https://app.swiftype.com/engines/docs/analytics/live while developing to watch query usage. renders as expected 1`] = `
 <div
   className="h36 relative"
 >
@@ -30,7 +30,7 @@ exports[`search Basic search renders as expected 1`] = `
 </div>
 `;
 
-exports[`search Basic search with \`site\` set to show filter toggle renders as expected 1`] = `
+exports[`search Basic search. Open https://app.swiftype.com/engines/docs/analytics/live while developing to watch query usage. renders as expected 1`] = `
 <div
   className="h36 relative"
 >
@@ -60,7 +60,7 @@ exports[`search Basic search with \`site\` set to show filter toggle renders as 
 </div>
 `;
 
-exports[`search Search with \`disableModal\` option set renders as expected 1`] = `
+exports[`search Search with \`disableModal\` option set. Open https://app.swiftype.com/engines/docs/analytics/live while developing to watch query usage. renders as expected 1`] = `
 <div
   className="h36 relative"
 >
@@ -116,7 +116,7 @@ exports[`search Search with \`disableModal\` option set renders as expected 1`] 
 </div>
 `;
 
-exports[`search Search with \`narrow\` option set renders as expected 1`] = `
+exports[`search Search with \`narrow\` option set. Open https://app.swiftype.com/engines/docs/analytics/live while developing to watch query usage. renders as expected 1`] = `
 <div
   className="h36 relative"
 >
@@ -153,7 +153,7 @@ exports[`search Search with \`narrow\` option set renders as expected 1`] = `
 </div>
 `;
 
-exports[`search Search with custom connector renders as expected 1`] = `
+exports[`search Search with custom connector. Open https://app.swiftype.com/engines/docs/analytics/live while developing to watch query usage. renders as expected 1`] = `
 <div
   className="h36 relative"
 >
@@ -183,7 +183,7 @@ exports[`search Search with custom connector renders as expected 1`] = `
 </div>
 `;
 
-exports[`search Search with dark background, custom placeholder renders as expected 1`] = `
+exports[`search Search with dark background, custom placeholder. Open https://app.swiftype.com/engines/docs/analytics/live while developing to watch query usage. renders as expected 1`] = `
 <div
   className="py24 px24 bg-gray-dark"
 >
@@ -221,7 +221,7 @@ exports[`search Search with dark background, custom placeholder renders as expec
 </div>
 `;
 
-exports[`search Set \`resultsOnly: true\` to true. Select an item to see search results, with a custom message when there are no search results for a particular query. renders as expected 1`] = `
+exports[`search Set \`resultsOnly: true\` to true. Select an item to see search results, with a custom message when there are no search results for a particular query. Open https://app.swiftype.com/engines/docs/analytics/live while developing to watch query usage. renders as expected 1`] = `
 <div>
   <select
     defaultValue=""
