@@ -71,14 +71,14 @@ exports[`search Search with \`disableModal\` option set. Open https://app.swifty
       <div
         aria-expanded={false}
         aria-haspopup="listbox"
-        aria-labelledby="docs-search-label"
+        aria-labelledby="disabled-example-label"
         aria-owns={null}
         role="combobox"
       >
         <label
           className="cursor-pointer"
-          htmlFor="docs-search-input"
-          id="docs-search-label"
+          htmlFor="disabled-example-input"
+          id="disabled-example-label"
         >
           <div
             className="absolute flex-parent flex-parent--center-cross flex-parent--center-main w36 h36"
@@ -99,10 +99,10 @@ exports[`search Search with \`disableModal\` option set. Open https://app.swifty
           aria-activedescendant={null}
           aria-autocomplete="list"
           aria-controls={null}
-          aria-labelledby="docs-search-label"
+          aria-labelledby="disabled-example-label"
           autoComplete="off"
           className="input bg-white px36 h36"
-          id="docs-search-input"
+          id="disabled-example-input"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}

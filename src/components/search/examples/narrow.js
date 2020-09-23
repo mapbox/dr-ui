@@ -6,6 +6,6 @@ import Search from '../search';
 
 export default class Example extends React.Component {
   render() {
-    return <Search narrow={true} />;
+    return <Search inputId="narrow-example" narrow={true} />;
   }
 }
