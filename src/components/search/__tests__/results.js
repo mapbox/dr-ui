@@ -15,6 +15,7 @@ export default class Example extends React.Component {
     return (
       <div>
         <select
+          aria-label="Select a product"
           defaultValue=""
           value={this.state.query}
           onChange={this.handleSelect}
