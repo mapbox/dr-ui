@@ -84,7 +84,7 @@ exports[`search Search with \`disableModal\` option set. Open https://app.swifty
             className="absolute flex-parent flex-parent--center-cross flex-parent--center-main w36 h36"
           >
             <svg
-              className="icon color-gray "
+              className="icon color-gray"
             >
               <title>
                 Search
@@ -224,6 +224,7 @@ exports[`search Search with dark background, custom placeholder. Open https://ap
 exports[`search Set \`resultsOnly: true\` to true. Select an item to see search results, with a custom message when there are no search results for a particular query. Open https://app.swiftype.com/engines/docs/analytics/live while developing to watch query usage. renders as expected 1`] = `
 <div>
   <select
+    aria-label="Select a product"
     defaultValue=""
     onChange={[Function]}
   >

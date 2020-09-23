@@ -67,7 +67,7 @@ class Search extends React.Component {
                   inputId={props.inputId}
                   background={props.background}
                   narrow={props.narrow}
-                  disableModal={props.disableModal}
+                  disableModal={props.disableModal || props.resultsOnly} // disable modal if resultsOnly === true
                   site={props.site}
                   reset={reset}
                   resultsOnly={props.resultsOnly}

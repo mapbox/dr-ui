@@ -151,14 +151,18 @@ class SearchBox extends React.Component {
                 <React.Fragment>
                   <label className="cursor-pointer" {...getLabelProps()}>
                     <div
-                      className={`absolute flex-parent flex-parent--center-cross flex-parent--center-main ${
-                        this.state.useModal ? 'w60 h60' : 'w36 h36'
-                      }`}
+                      className={classnames(
+                        'absolute flex-parent flex-parent--center-cross flex-parent--center-main',
+                        {
+                          'w60 h60': this.state.useModal,
+                          'w36 h36': !this.state.useModal
+                        }
+                      )}
                     >
                       <svg
-                        className={`icon color-gray ${
-                          this.state.useModal ? 'w24 h24' : ''
-                        }`}
+                        className={classnames('icon color-gray', {
+                          'w24 h24': this.state.useModal
+                        })}
                       >
                         <title>Search</title>
                         <use xlinkHref="#icon-search" />
@@ -193,7 +197,7 @@ class SearchBox extends React.Component {
                 </React.Fragment>
               )}
               {(isOpen || props.resultsOnly) && props.searchTerm && (
-                <div>
+                <React.Fragment>
                   {props.isLoading && (
                     <div className="w-full h360 bg-white opacity75 absolute">
                       <div className="loading mx-auto mt60" />
@@ -203,11 +207,11 @@ class SearchBox extends React.Component {
                     className={classnames(
                       'color-text round mt3 bg-white w-full align-l',
                       {
-                        'hmax360 scroll-auto scroll-styled hmax360 absolute shadow-darken25 z4': !props.resultsOnly
+                        'hmax360 scroll-auto scroll-styled absolute shadow-darken25 z4': !props.resultsOnly
                       }
                     )}
                   >
-                    <div>
+                    <React.Fragment>
                       <Facet
                         show={20}
                         field="site"
@@ -230,25 +234,17 @@ class SearchBox extends React.Component {
                           </ul>
                         ) : (
                           <div
-                            className={`px12 ${
-                              props.themeCompact ? 'py6 txt-s' : 'py12 prose'
-                            }`}
+                            className={classnames('px12', {
+                              'py6 txt-s': props.themeCompact,
+                              'py12 prose': !props.themeCompact
+                            })}
                           >
-                            {props.emptyResultMessage || (
-                              <p>
-                                Hmmm, we didn't find anything. Reword your
-                                search, or{' '}
-                                <a href="https://support.mapbox.com/hc/en-us">
-                                  contact Support
-                                </a>
-                                .
-                              </p>
-                            )}
+                            {props.emptyResultMessage}
                           </div>
                         ))}
-                    </div>
+                    </React.Fragment>
                   </div>
-                </div>
+                </React.Fragment>
               )}
             </div>
           );
@@ -274,10 +270,9 @@ class SearchBox extends React.Component {
   }
 
   render() {
-    const { resultsOnly } = this.props;
     return (
       <div>
-        {!this.state.useModal || resultsOnly ? (
+        {!this.state.useModal ? (
           <div className="w-full">{this.renderSearchBar()}</div>
         ) : (
           <div>
