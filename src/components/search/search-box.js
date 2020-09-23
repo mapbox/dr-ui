@@ -270,16 +270,25 @@ class SearchBox extends React.Component {
   }
 
   render() {
+    // hide results until overrideSearchTerm not null
+    const hideResultsOnly = this.props.resultsOnly
+      ? this.props.overrideSearchTerm === undefined
+      : false;
     return (
       <div>
         {!this.state.useModal ? (
-          <div className="w-full">{this.renderSearchBar()}</div>
+          !hideResultsOnly && (
+            <div className="w-full">{this.renderSearchBar()}</div>
+          )
         ) : (
           <div>
             <button
-              className={`flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke ${
-                this.props.background !== 'light' ? 'btn--white' : ''
-              }`}
+              className={classnames(
+                'flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke',
+                {
+                  'btn--white': this.props.background !== 'light'
+                }
+              )}
               style={
                 this.props.narrow
                   ? { paddingLeft: '12px', paddingRight: '12px' }
@@ -287,7 +296,11 @@ class SearchBox extends React.Component {
               }
               onClick={this.openModal}
             >
-              <span className={!this.props.narrow ? 'mr6' : ''}>
+              <span
+                className={classnames('', {
+                  mr6: !this.props.narrow
+                })}
+              >
                 <svg className="icon w18 h18">
                   {this.props.narrow && <title>Search</title>}
                   <use xlinkHref="#icon-search" />

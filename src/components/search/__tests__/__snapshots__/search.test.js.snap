@@ -7,7 +7,7 @@ exports[`search Basic search with \`site\` set to show filter toggle. Open https
   <div>
     <div>
       <button
-        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke "
+        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke"
         onClick={[Function]}
         style={Object {}}
       >
@@ -37,7 +37,7 @@ exports[`search Basic search. Open https://app.swiftype.com/engines/docs/analyti
   <div>
     <div>
       <button
-        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke "
+        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke"
         onClick={[Function]}
         style={Object {}}
       >
@@ -123,7 +123,7 @@ exports[`search Search with \`narrow\` option set. Open https://app.swiftype.com
   <div>
     <div>
       <button
-        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke "
+        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke"
         onClick={[Function]}
         style={
           Object {
@@ -160,7 +160,7 @@ exports[`search Search with custom connector. Open https://app.swiftype.com/engi
   <div>
     <div>
       <button
-        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke "
+        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke"
         onClick={[Function]}
         style={Object {}}
       >
@@ -256,21 +256,7 @@ exports[`search Set \`resultsOnly: true\` to true. Select an item to see search 
     <div
       className="relative"
     >
-      <div>
-        <div
-          className="w-full"
-        >
-          <div
-            aria-expanded={false}
-            aria-haspopup="listbox"
-            aria-labelledby="search6-label"
-            aria-owns={null}
-            role="combobox"
-          >
-            
-          </div>
-        </div>
-      </div>
+      <div />
     </div>
   </div>
 </div>
