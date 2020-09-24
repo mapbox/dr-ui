@@ -229,6 +229,7 @@ class SearchBox extends React.Component {
                                 index={index}
                                 downshiftProps={downshiftProps}
                                 themeCompact={props.themeCompact}
+                                resultBorder={props.resultBorder}
                               />
                             ))}
                           </ul>
@@ -334,7 +335,8 @@ SearchBox.propTypes = {
   segmentTrackEvent: PropTypes.string,
   overrideSearchTerm: PropTypes.string,
   themeCompact: PropTypes.bool,
-  emptyResultMessage: PropTypes.node
+  emptyResultMessage: PropTypes.node,
+  resultBorder: PropTypes.bool
 };
 
 export default SearchBox;

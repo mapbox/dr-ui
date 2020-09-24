@@ -38,6 +38,8 @@ class SearchResult extends React.Component {
           item: props.result,
           className: `${highlighted && 'bg-gray-faint'} px12 ${
             props.themeCompact ? 'py6 txt-s' : 'py12'
+          } ${
+            props.resultBorder ? 'border-t border--gray-light' : ''
           } link--gray cursor-pointer`
         })}
       >
@@ -102,7 +104,8 @@ SearchResult.propTypes = {
   result: PropTypes.object,
   index: PropTypes.number,
   downshiftProps: PropTypes.object,
-  themeCompact: PropTypes.bool
+  themeCompact: PropTypes.bool,
+  resultBorder: PropTypes.bool
 };
 
 export default SearchResult;

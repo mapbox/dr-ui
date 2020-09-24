@@ -39,6 +39,7 @@ export default class Example extends React.Component {
                 once you get in touch!
               </p>
             }
+            resultBorder={true}
           />
         </div>
       </div>

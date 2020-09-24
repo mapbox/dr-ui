@@ -58,7 +58,7 @@ testCases.withConnector = {
 testCases.resultsOnly = {
   component: Search,
   description:
-    'Set `resultsOnly: true` to true. Select an item to see search results, with a custom message when there are no search results for a particular query.',
+    'Set `resultsOnly: true` to true. Select an item to see search results, with a custom message when there are no search results for a particular query, and borders added to each search result.',
   element: <Results />
 };
 
