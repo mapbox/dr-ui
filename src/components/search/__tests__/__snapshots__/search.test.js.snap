@@ -221,7 +221,7 @@ exports[`search Search with dark background, custom placeholder. Open https://ap
 </div>
 `;
 
-exports[`search Set \`resultsOnly: true\` to true. Select an item to see search results, with a custom message when there are no search results for a particular query. Open https://app.swiftype.com/engines/docs/analytics/live while developing to watch query usage. renders as expected 1`] = `
+exports[`search Set \`resultsOnly: true\` to true. Select an item to see search results, with a custom message when there are no search results for a particular query, and borders added to each search result. Open https://app.swiftype.com/engines/docs/analytics/live while developing to watch query usage. renders as expected 1`] = `
 <div>
   <select
     aria-label="Select a product"
