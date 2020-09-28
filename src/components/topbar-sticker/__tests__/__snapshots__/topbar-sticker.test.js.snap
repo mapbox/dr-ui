@@ -46,9 +46,14 @@ exports[`topbar-sticker For display only renders as expected 1`] = `
               >
                 <div
                   className="flex-parent"
+                  style={
+                    Object {
+                      "overflow": "hidden",
+                    }
+                  }
                 >
                   <a
-                    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+                    className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
                     href="/dr-ui/"
                   >
                     Dr. UI
@@ -68,7 +73,7 @@ exports[`topbar-sticker For display only renders as expected 1`] = `
                   <div>
                     <div>
                       <button
-                        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke "
+                        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke"
                         onClick={[Function]}
                         style={Object {}}
                       >

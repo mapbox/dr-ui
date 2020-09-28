@@ -6,10 +6,13 @@ class CardContainer extends React.PureComponent {
   render() {
     const { props } = this;
     const categoryID = props.path.split('#')[1];
-    const cardClasses = classnames('mb18', {
-      'col col--12 col--6-ml': !props.fullWidthCards,
-      'border-b border--darken10': props.fullWidthCards
-    });
+    let cardClasses = 'mb18 ';
+    if (!props.fullWidthCards) {
+      cardClasses += `col col--12 col--${this.props.cardColSize}-ml`;
+    } else {
+      cardClasses += 'border-b border--darken10';
+    }
+
     const containerClasses = classnames('', {
       'grid grid--gut36': !props.fullWidthCards
     });
@@ -34,11 +37,17 @@ class CardContainer extends React.PureComponent {
   }
 }
 
+CardContainer.defaultProps = {
+  cardColSize: 6,
+  fullWidthCards: false
+};
+
 CardContainer.propTypes = {
   title: PropTypes.string.isRequired,
   path: PropTypes.string.isRequired,
-  fullWidthCards: PropTypes.bool.isRequired,
-  cards: PropTypes.arrayOf(PropTypes.node).isRequired
+  fullWidthCards: PropTypes.bool,
+  cards: PropTypes.arrayOf(PropTypes.node).isRequired,
+  cardColSize: PropTypes.oneOf([1, 2, 3, 4, 5, 6])
 };
 
 export default CardContainer;

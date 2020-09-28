@@ -1,15 +1,14 @@
-import React from 'react';
 import renderer from 'react-test-renderer';
 import { testCases } from './page-layout-test-cases.js';
 
 describe('page-layout', () => {
-  describe(testCases.basic.description, () => {
+  describe(testCases.page.description, () => {
     let testCase;
     let wrapper;
     let tree;
 
     beforeEach(() => {
-      testCase = testCases.basic;
+      testCase = testCases.page;
       wrapper = renderer.create(testCase.element);
       tree = wrapper.toJSON();
     });
@@ -19,16 +18,14 @@ describe('page-layout', () => {
     });
   });
 
-  describe(testCases.tooSmallSidebarCol.description, () => {
+  describe(testCases.example.description, () => {
     let testCase;
     let wrapper;
     let tree;
 
     beforeEach(() => {
-      testCase = testCases.tooSmallSidebarCol;
-      wrapper = renderer.create(
-        React.createElement(testCase.component, testCase.props)
-      );
+      testCase = testCases.example;
+      wrapper = renderer.create(testCase.element);
       tree = wrapper.toJSON();
     });
 
@@ -37,16 +34,14 @@ describe('page-layout', () => {
     });
   });
 
-  describe(testCases.smallSidebarCol.description, () => {
+  describe(testCases.full.description, () => {
     let testCase;
     let wrapper;
     let tree;
 
     beforeEach(() => {
-      testCase = testCases.smallSidebarCol;
-      wrapper = renderer.create(
-        React.createElement(testCase.component, testCase.props)
-      );
+      testCase = testCases.full;
+      wrapper = renderer.create(testCase.element);
       tree = wrapper.toJSON();
     });
 
@@ -55,16 +50,14 @@ describe('page-layout', () => {
     });
   });
 
-  describe(testCases.tooLargeSidebarCol.description, () => {
+  describe(testCases.examplePage.description, () => {
     let testCase;
     let wrapper;
     let tree;
 
     beforeEach(() => {
-      testCase = testCases.tooLargeSidebarCol;
-      wrapper = renderer.create(
-        React.createElement(testCase.component, testCase.props)
-      );
+      testCase = testCases.examplePage;
+      wrapper = renderer.create(testCase.element);
       tree = wrapper.toJSON();
     });
 
@@ -73,16 +66,14 @@ describe('page-layout', () => {
     });
   });
 
-  describe(testCases.common.description, () => {
+  describe(testCases.accordion.description, () => {
     let testCase;
     let wrapper;
     let tree;
 
     beforeEach(() => {
-      testCase = testCases.common;
-      wrapper = renderer.create(
-        React.createElement(testCase.component, testCase.props)
-      );
+      testCase = testCases.accordion;
+      wrapper = renderer.create(testCase.element);
       tree = wrapper.toJSON();
     });
 
@@ -91,16 +82,14 @@ describe('page-layout', () => {
     });
   });
 
-  describe(testCases.many.description, () => {
+  describe(testCases.hideTopBar.description, () => {
     let testCase;
     let wrapper;
     let tree;
 
     beforeEach(() => {
-      testCase = testCases.many;
-      wrapper = renderer.create(
-        React.createElement(testCase.component, testCase.props)
-      );
+      testCase = testCases.hideTopBar;
+      wrapper = renderer.create(testCase.element);
       tree = wrapper.toJSON();
     });
 
@@ -109,16 +98,14 @@ describe('page-layout', () => {
     });
   });
 
-  describe(testCases.code.description, () => {
+  describe(testCases.hideSearch.description, () => {
     let testCase;
     let wrapper;
     let tree;
 
     beforeEach(() => {
-      testCase = testCases.code;
-      wrapper = renderer.create(
-        React.createElement(testCase.component, testCase.props)
-      );
+      testCase = testCases.hideSearch;
+      wrapper = renderer.create(testCase.element);
       tree = wrapper.toJSON();
     });
 

@@ -1,0 +1,253 @@
+{
+  "pages": [
+    {
+      "filePath": "./docs/src/pages/changelog.md",
+      "path": "/dr-ui/changelog/",
+      "frontMatter": {}
+    },
+    {
+      "filePath": "./docs/src/pages/examples/example-1.md",
+      "path": "/dr-ui/examples/example-1/",
+      "frontMatter": {
+        "title": "Example 1",
+        "description": "This is example 1.",
+        "contentType": "example",
+        "language": ["JavaScript"],
+        "topics": ["Navigation"],
+        "thumbnail": "header-image",
+        "layout": "example",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/examples/example-2.md",
+      "path": "/dr-ui/examples/example-2/",
+      "frontMatter": {
+        "title": "Example 2",
+        "description": "This is example 2.",
+        "contentType": "example",
+        "language": ["JavaScript"],
+        "topics": ["Navigation"],
+        "thumbnail": "header-image",
+        "layout": "example",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/examples/example-3.md",
+      "path": "/dr-ui/examples/example-3/",
+      "frontMatter": {
+        "title": "Example 3",
+        "description": "This is example 3.",
+        "contentType": "example",
+        "language": ["JavaScript"],
+        "topics": ["Navigation", "Geocoding"],
+        "thumbnail": "header-image",
+        "layout": "example",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/examples/index.md",
+      "path": "/dr-ui/examples/",
+      "frontMatter": {
+        "title": "Examples",
+        "description": "Replace me.",
+        "contentType": "example",
+        "language": ["JavaScript"],
+        "navOrder": 3,
+        "layout": "example",
+        "fullWidthCards": true,
+        "hideTitle": true,
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/guides/batfish-helpers.md",
+      "path": "/dr-ui/guides/batfish-helpers/",
+      "frontMatter": {
+        "title": "Batfish helpers",
+        "description": "Batfish data selector functions to build navigation and topic datasets.",
+        "order": 2,
+        "contentType": "guide",
+        "hideFeedback": true,
+        "layout": "accordion",
+        "products": ["Documentation"],
+        "prependJs": [
+          "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
+          "import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line",
+          "import splitPages from '@mapbox/batfish/data/split-pages'; // eslint-disable-line",
+          "import relatedMts from '../../../../src/helpers/batfish/__tests__/fixtures/related-mts.json';",
+          "import relatedAndroid from '../../../../src/helpers/batfish/__tests__/fixtures/related-android.json';"
+        ]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/guides/index.md",
+      "path": "/dr-ui/guides/",
+      "frontMatter": {
+        "title": "Guides",
+        "description": "Guides to building sites with Dr. UI.",
+        "layout": "accordion",
+        "navOrder": 2,
+        "order": 1,
+        "contentType": "guide",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/guides/multi-structured.md",
+      "path": "/dr-ui/guides/multi-structured/",
+      "frontMatter": {
+        "title": "Multi-structured sites",
+        "description": "How to build a site with more than one product.",
+        "order": 4,
+        "layout": "accordion",
+        "hideFeedback": true,
+        "contentType": "guide",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/guides/page-layout.md",
+      "path": "/dr-ui/guides/page-layout/",
+      "frontMatter": {
+        "title": "PageLayout component",
+        "description": "All about building with PageLayout.",
+        "order": 3,
+        "layout": "accordion",
+        "hideFeedback": true,
+        "contentType": "guide",
+        "products": ["Documentation"],
+        "prependJs": [
+          "import components from '../../data/components'; // eslint-disable-line",
+          "import FrontMatter from '../../components/frontmatter.js';",
+          "import OtherProps from '../../components/other-props.js';",
+          "import LayoutUsage from '../../components/layout-usage.js';",
+          "import frontmatter from '!raw-loader!../../components/snippets/frontmatter.js';// eslint-disable-line",
+          "import Topbar from '../../../../src/components/page-layout/components/topbar.js';",
+          "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
+          "import constants from '../../constants.json';",
+          "import Note from '../../../../src/components/note';"
+        ]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/guides/split-pages/index.js",
+      "path": "/dr-ui/guides/split-pages/",
+      "frontMatter": {
+        "title": "Split pages",
+        "description": "This is the first section",
+        "splitPages": true,
+        "order": 3,
+        "layout": "accordion",
+        "contentType": "API",
+        "hideFeedback": true
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/guides/split-pages/sections/how-to.md",
+      "path": "/dr-ui/guides/split-pages/sections/how-to/",
+      "frontMatter": {
+        "title": "How to use spit pages",
+        "description": "An introduction to use split pages.",
+        "order": 2,
+        "splitPage": true,
+        "hideFeedback": true,
+        "contentType": "guide",
+        "products": ["Mapbox fundamentals"],
+        "prependJs": [
+          "import MainPage from '!raw-loader!../index.js'; //eslint-disable-line",
+          "import SubOne from '!raw-loader!./intro.md'; //eslint-disable-line",
+          "import SplitPageShell from '!raw-loader!../../../../components/split-page-shell.js'; //eslint-disable-line",
+          "import CodeSnippet from '../../../../../../src/components/code-snippet/code-snippet';",
+          "import { highlightJsx } from '../../../../../../src/components/highlight/jsx';",
+          "import { highlightHtml } from '../../../../../../src/components/highlight/html';"
+        ]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/guides/split-pages/sections/intro.md",
+      "path": "/dr-ui/guides/split-pages/sections/intro/",
+      "frontMatter": {
+        "title": "Introduction to split pages",
+        "description": "An introduction to use split pages.",
+        "order": 1,
+        "splitPage": true,
+        "hideFeedback": true,
+        "products": ["Documentation"],
+        "contentType": "guide"
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/guides/split-pages/sections/limitations.md",
+      "path": "/dr-ui/guides/split-pages/sections/limitations/",
+      "frontMatter": {
+        "title": "Limitations",
+        "description": "Limitations to the split page pattern.",
+        "order": 3,
+        "splitPage": true,
+        "hideFeedback": true,
+        "products": ["Mapbox fundamentals"],
+        "contentType": "guide"
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/guides/split-pages/sections/tag-debugger.md",
+      "path": "/dr-ui/guides/split-pages/sections/tag-debugger/",
+      "frontMatter": {
+        "title": "Tag debugger",
+        "description": "Limitations to the split page pattern.",
+        "order": 4,
+        "splitPage": true,
+        "tag": "beta",
+        "hideFeedback": true,
+        "products": ["Mapbox fundamentals"],
+        "contentType": "guide"
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/help/index.md",
+      "path": "/dr-ui/help/",
+      "frontMatter": {
+        "title": "Help",
+        "description": "Example of a Help page.",
+        "contentType": "example",
+        "navOrder": 4,
+        "layout": "example",
+        "fullWidthCards": true,
+        "hideTitle": true,
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/index.md",
+      "path": "/dr-ui/",
+      "frontMatter": {
+        "title": "Components",
+        "description": "UI components for Mapbox documentation projects.",
+        "navOrder": 1,
+        "layout": "example",
+        "contentType": "reference",
+        "products": ["Documentation"],
+        "hideSubItems": false,
+        "showCards": false,
+        "includeFilterBar": true,
+        "hideTitle": true,
+        "unProse": true,
+        "prependJs": [
+          "import Note from '../../../src/components/note'",
+          "import OverviewHeader from '../../../src/components/overview-header'",
+          "import App from '../app.js'",
+          "const version = require('../../../package.json').version; // eslint-disable-line"
+        ]
+      }
+    },
+    {
+      "filePath": "./node_modules/@mapbox/batfish/dist/webpack/default-not-found.js",
+      "path": "/dr-ui/404/",
+      "is404": true,
+      "frontMatter": {}
+    }
+  ]
+}

@@ -35,7 +35,7 @@ export default class ComponentSection extends React.Component {
     const exampleEls = data.examples.map((example, i) => {
       return (
         <div key={i} className="mb12">
-          <ComponentExample {...example} />
+          <ComponentExample title={data.name} {...example} />
         </div>
       );
     });

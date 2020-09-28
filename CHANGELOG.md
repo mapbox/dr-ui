@@ -2,9 +2,74 @@
 
 ## Main
 
-- Update dependencies. [#326](https://github.com/mapbox/dr-ui/pull/326)
 - 🚨 Update `NavigationDropdown` to use an accessible navigation. [#327](https://github.com/mapbox/dr-ui/pull/327)
   - The `onDropdownChange` prop is deprecated. All items in the dropdown are rendered as links.
+
+## 1.3.0
+
+- Add new props to `Search` to allow further customization by other subdomains. [#329](https://github.com/mapbox/dr-ui/pull/329)
+  - Add `resultsOnly` and `overrideSearchTerm` that will display only the Swiftype results for the given search term.
+  - Add `themeCompact` to condense result padding when enabled.
+  - Add `emptyResultMessage` to change the message when Swiftype returns no results for a query.
+  - Add `segmentTrackEvent` to change the name of the Segment event that is capture during a search.
+
+## 1.2.0
+
+- Set new `referrer` tag in `Feedback`.
+- Bump Sentry version to `5.24.2`.
+
+## 1.1.6
+
+- Add `hideSearch` prop to `PageLayout` to remove the `Search` component in `PageLayoutTopbar`.
+
+## 1.1.5
+
+- Add `hideTopBar` prop to `PageLayout` to completely remove `PageLayoutTopbar`.
+
+## 1.1.4
+
+- Fix truncation on `ProductMenu`.
+
+## 1.1.3
+
+- Fix xhr headers in ForwardEvent function.
+
+## 1.1.2
+
+- Set `minHeight` on `PageLayoutTopbar` to prevent layout shift as the `Search` component loads.
+
+## 1.1.1
+
+- Fix margin on `Search` in `PageLayout`.
+
+## 1.1.0
+
+- Fix element spacing within `PageLayoutTopbar`.
+- Add `formatTopics` Batfish helper function. [#328](https://github.com/mapbox/dr-ui/pull/328)
+
+## 1.0.2
+
+- Fix the `connector` prop in `PageLayout`.
+
+## 1.0.1
+
+- Fix the `type` prop in `PageLayout`'s `Feedback` component.
+
+## 1.0.0
+
+Introducing layouts in `PageLayout`. See the [`PageLayout`](http://mapbox.github.io/dr-ui/guides/page-layout/) guide for more information on building with this component.
+
+- Add `AnalyticsShell` component. [#307](https://github.com/mapbox/dr-ui/pull/307)
+- Add Batfish helpers: `navigation` and `topics`. [#310](https://github.com/mapbox/dr-ui/pull/310)
+- Add Batfish helper: `split-pages`. [#317](https://github.com/mapbox/dr-ui/pull/317)
+- Update `PageLayout` to accept layouts. [#309](https://github.com/mapbox/dr-ui/pull/309)
+  - The added layouts: `page`, `accordion`, `example`, `full`, `exampleIndex`.
+  - 🚨 The following props are deprecated and are no longer configurable: `sidebarTitle`, `sidebarContent`, `sidebarContentStickyTop`, `sidebarContentStickyTopNarrow`, `sidebarStackedOnNarrowScreens`, `sideBarColSize`, `interactiveClass`.
+  - `sidebarTheme` is now defined from the `frontMatter` object.
+  - Component now includes `TopbarSticker/Topbar`, `Search`, and `Feedback` components.
+- 🚨 The `user` props is deprecated in `Feedback`. The component will now fetch this data and you can safely remove the `user` prop from this component. [#324](https://github.com/mapbox/dr-ui/pull/324)
+- Update dependencies. [#326](https://github.com/mapbox/dr-ui/pull/326)
+- Add `cardColSize` prop to `CardContainer` to adjust size of cards.
 
 ## 0.30.0
 

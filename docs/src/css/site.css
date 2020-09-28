@@ -21,3 +21,17 @@
   position: sticky !important;
   top: 0px !important;
 }
+
+pre,
+.prose pre {
+  max-height: 300px;
+  margin-bottom: 18px !important;
+}
+
+/* set height on examples to prevent page from shifting once their resources load */
+.component-example-demoiframe,
+.component-example-browser,
+.component-example-phone,
+.component-example-video {
+  height: 500px;
+}
