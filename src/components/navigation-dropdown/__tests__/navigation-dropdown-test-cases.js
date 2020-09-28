@@ -17,12 +17,10 @@ testCases.many = {
     <NavigationDropdown
       currentPath="page-7"
       id="many"
-      dropdownOptions={Array(15)
-        .fill()
-        .map((item, index) => ({
-          title: `Page ${index}`,
-          path: `page-${index}`
-        }))}
+      dropdownOptions={Array.apply(null, { length: 15 }).map((item, index) => ({
+        title: `Page ${index}`,
+        path: `page-${index}`
+      }))}
     />
   )
 };
