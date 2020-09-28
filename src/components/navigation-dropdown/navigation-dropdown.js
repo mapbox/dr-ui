@@ -13,7 +13,7 @@ class NavigationDropdown extends React.Component {
   }
 
   triggerHideMenu = (event) => {
-    // if the current elementis not inside the dropdownContainer, then hide the menu
+    // hide the menu if the current element is not inside the dropdownContainer
     if (!this.dropdownContainer.current.contains(event.target)) {
       this.hideMenu();
     }
@@ -35,7 +35,6 @@ class NavigationDropdown extends React.Component {
   }
 
   componentWillUnmount() {
-    // clean up event listeners
     document.removeEventListener(
       'click',
       (event) => this.triggerHideMenu(event),
@@ -119,6 +118,7 @@ NavigationDropdown.propTypes = {
   currentPath: PropTypes.string,
   /** if no `currentPath`, `label` is the default label of the dropdown */
   label: PropTypes.string,
+  /** array of dropdown options */
   dropdownOptions: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,
