@@ -1,6 +1,6 @@
 # Changelog
 
-## Main
+## Info arch
 
 - 🚨 Update `NavigationDropdown` to use an accessible navigation. [#327](https://github.com/mapbox/dr-ui/pull/327)
   - The `onDropdownChange` prop is deprecated. All items in the dropdown are rendered as links.
