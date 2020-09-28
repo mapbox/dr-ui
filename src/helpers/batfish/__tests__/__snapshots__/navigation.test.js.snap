@@ -1164,6 +1164,10 @@ Object {
       "parent": "/dr-ui/guides/",
       "title": "Guides",
     },
+    "/dr-ui/help/": Object {
+      "parent": "/dr-ui/help/",
+      "title": "Help",
+    },
   },
   "navTabs": Array [
     Object {
@@ -1180,6 +1184,11 @@ Object {
       "href": "/dr-ui/examples/",
       "id": "/dr-ui/examples/",
       "label": "Examples",
+    },
+    Object {
+      "href": "/dr-ui/help/",
+      "id": "/dr-ui/help/",
+      "label": "Help",
     },
   ],
 }

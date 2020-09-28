@@ -19,7 +19,7 @@ describe('buildNavigation', () => {
     ).toMatchSnapshot();
   });
 
-  it.only('help glossary is sorted alphabetical', () => {
+  it('help glossary is sorted alphabetical', () => {
     expect(buildNavigation('/help', helpDebug).accordion).toMatchSnapshot();
   });
 

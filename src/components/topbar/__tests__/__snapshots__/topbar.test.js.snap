@@ -51,7 +51,7 @@ exports[`topbar-sticker Basic renders as expected 1`] = `
             <div>
               <div>
                 <button
-                  className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke "
+                  className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke"
                   onClick={[Function]}
                   style={Object {}}
                 >

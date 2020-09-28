@@ -4,6 +4,19 @@
 
 - TBD
 
+## 1.3.0
+
+- Add new props to `Search` to allow further customization by other subdomains. [#329](https://github.com/mapbox/dr-ui/pull/329)
+  - Add `resultsOnly` and `overrideSearchTerm` that will display only the Swiftype results for the given search term.
+  - Add `themeCompact` to condense result padding when enabled.
+  - Add `emptyResultMessage` to change the message when Swiftype returns no results for a query.
+  - Add `segmentTrackEvent` to change the name of the Segment event that is capture during a search.
+
+## 1.2.0
+
+- Set new `referrer` tag in `Feedback`.
+- Bump Sentry version to `5.24.2`.
+
 ## 1.1.6
 
 - Add `hideSearch` prop to `PageLayout` to remove the `Search` component in `PageLayoutTopbar`.
