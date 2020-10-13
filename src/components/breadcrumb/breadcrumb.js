@@ -64,18 +64,22 @@ Breadcrumb.propTypes = {
     }),
     PropTypes.bool
   ]),
+  /** Title of the site and homepage path */
   site: PropTypes.shape({
     title: PropTypes.string.isRequired,
     path: PropTypes.string.isRequired
   }),
+  /** Subsite title and homepage path (if using multi-structured layout) */
   subsite: PropTypes.shape({
     title: PropTypes.string.isRequired,
     path: PropTypes.string.isRequired
   }),
+  /** Section of the site (example: Guides, Tutorials, Examples) and path */
   section: PropTypes.shape({
     title: PropTypes.string.isRequired,
     path: PropTypes.string.isRequired
   }),
+  /** Current page title and path */
   currentPage: PropTypes.shape({
     title: PropTypes.string.isRequired,
     path: PropTypes.string.isRequired
