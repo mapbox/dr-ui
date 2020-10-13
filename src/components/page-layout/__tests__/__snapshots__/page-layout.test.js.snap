@@ -187,7 +187,7 @@ Array [
                   <div>
                     <div>
                       <button
-                        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke "
+                        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke"
                         onClick={[Function]}
                         style={Object {}}
                       >
@@ -859,7 +859,7 @@ Array [
                   <div>
                     <div>
                       <button
-                        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke "
+                        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke"
                         onClick={[Function]}
                         style={Object {}}
                       >
@@ -1474,7 +1474,7 @@ Array [
                   <div>
                     <div>
                       <button
-                        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke "
+                        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke"
                         onClick={[Function]}
                         style={Object {}}
                       >
@@ -2070,7 +2070,7 @@ Array [
                   <div>
                     <div>
                       <button
-                        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke "
+                        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke"
                         onClick={[Function]}
                         style={Object {}}
                       >
@@ -2726,7 +2726,7 @@ Array [
                   <div>
                     <div>
                       <button
-                        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke "
+                        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke"
                         onClick={[Function]}
                         style={Object {}}
                       >
