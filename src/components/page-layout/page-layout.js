@@ -59,6 +59,7 @@ export default class PageLayout extends React.Component {
 
   // render the page's content
   renderContent = (config, parentPath, parent) => {
+    const { constants, frontMatter, location } = this.props;
     return (
       <div
         className={classnames('col col--12', {
@@ -68,16 +69,16 @@ export default class PageLayout extends React.Component {
         <Breadcrumb
           domain={false}
           site={{
-            title: this.props.constants.SITE,
-            path: `${this.props.constants.BASEURL}/`
+            title: constants.SITE,
+            path: `${constants.BASEURL}/`
           }}
           section={{
             title: parent.title,
             path: parent.parent
           }}
           currentPage={{
-            title: this.props.frontMatter.title,
-            path: this.props.location.pathname
+            title: frontMatter.title,
+            path: location.pathname
           }}
         />
 
