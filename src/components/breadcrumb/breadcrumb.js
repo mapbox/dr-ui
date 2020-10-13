@@ -1,17 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Icon from '@mapbox/mr-ui/icon';
-
-// cleans breadcrumbs
-// does not add a link if the path or title already exists
-function uniquePaths(links) {
-  return links.reduce((arr, item) => {
-    const pathExists = arr.filter((f) => f.path === item.path).length > 0;
-    const titleExists = arr.filter((f) => f.title === item.title).length > 0;
-    if (!pathExists && !titleExists) arr.push(item);
-    return arr;
-  }, []);
-}
+import { createUniqueCrumbs } from './utils';
 
 export default class Breadcrumb extends React.Component {
   render() {
@@ -28,7 +18,7 @@ export default class Breadcrumb extends React.Component {
       </React.Fragment>
     );
 
-    const createLinks = uniquePaths([
+    const createLinks = createUniqueCrumbs([
       ...(domain !== false ? [domain] : []),
       ...(site ? [site] : []),
       ...(subsite ? [subsite] : []),
