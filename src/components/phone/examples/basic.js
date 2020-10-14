@@ -9,7 +9,7 @@ export default class Basic extends React.Component {
   render() {
     return (
       <Phone mode="landscape" platform="ios">
-        <Video src="/files/browser-example.mp4" title="example" />
+        <Video src="./files/browser-example.mp4" title="example" />
       </Phone>
     );
   }

@@ -22,7 +22,7 @@ export default class Example extends React.Component {
               <div
                 className="relative h120 mb12"
                 style={{
-                  backgroundImage: "url('/files/simple-map.png')",
+                  backgroundImage: "url('./files/simple-map.png')",
                   backgroundSize: '100% auto',
                   backgroundPosition: 'center'
                 }}
@@ -38,7 +38,7 @@ export default class Example extends React.Component {
               <div
                 className="relative h120 mb12"
                 style={{
-                  backgroundImage: "url('/files/simple-map.png')",
+                  backgroundImage: "url('./files/simple-map.png')",
                   backgroundSize: '100% auto',
                   backgroundPosition: 'center'
                 }}

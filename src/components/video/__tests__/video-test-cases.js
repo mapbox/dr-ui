@@ -14,7 +14,7 @@ noRenderCases.reducedMotion = {
   component: Video,
   description: 'Reduced motion',
   props: {
-    src: '/files/browser-example.mp4',
+    src: './files/browser-example.mp4',
     title: 'A video!'
   }
 };

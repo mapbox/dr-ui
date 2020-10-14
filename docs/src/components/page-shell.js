@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PageLayout from '../../../src/components/page-layout';
-import Helmet from 'react-helmet';
+
 import Sidebar from './sidebar';
 import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line
 import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line
@@ -11,26 +11,21 @@ class PageShell extends React.Component {
   render() {
     const { children, location, frontMatter, headings } = this.props;
     return (
-      <React.Fragment>
-        <Helmet>
-          <base href="/dr-ui/" />
-        </Helmet>
-        <PageLayout
-          includeFilterBar={true}
-          topBarSticker={false}
-          topics={topics}
-          headings={headings}
-          frontMatter={frontMatter}
-          location={location}
-          constants={constants}
-          navigation={navigation}
-          customSidebar={
-            location.pathname === '/dr-ui/' ? <Sidebar /> : undefined
-          }
-        >
-          {children}
-        </PageLayout>
-      </React.Fragment>
+      <PageLayout
+        includeFilterBar={true}
+        topBarSticker={false}
+        topics={topics}
+        headings={headings}
+        frontMatter={frontMatter}
+        location={location}
+        constants={constants}
+        navigation={navigation}
+        customSidebar={
+          location.pathname === '/dr-ui/' ? <Sidebar /> : undefined
+        }
+      >
+        {children}
+      </PageLayout>
     );
   }
 }

@@ -11,7 +11,7 @@ export default class Basic extends React.Component {
         contentType="video"
         title="How to eject a Style Component in Mapbox Studio"
         vimeoId="378704089"
-        vimeoThumbnail="/files/vimeo_thumb.jpg"
+        vimeoThumbnail="files/vimeo_thumb.jpg"
       >
         Style Components provide sensible defaults and quick opportunities for
         customization by optimizing the most common property changes for styles

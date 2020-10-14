@@ -9,7 +9,7 @@ export default class Basic extends React.Component {
     return (
       <Browser>
         <img
-          src="/files/browser-example.png"
+          src="./files/browser-example.png"
           className="round-b"
           alt="Manage styles in Studio."
         />

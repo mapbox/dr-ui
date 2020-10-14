@@ -200,7 +200,7 @@ exports[`browser With image renders as expected 1`] = `
   <img
     alt="Manage styles in Studio."
     className="round-b"
-    src="/files/browser-example.png"
+    src="./files/browser-example.png"
   />
 </div>
 `;
@@ -407,7 +407,7 @@ exports[`browser With video renders as expected 1`] = `
     className="block mx-auto round-b"
     loop={true}
     muted={true}
-    src="/files/browser-example.mp4"
+    src="./files/browser-example.mp4"
     title="animated GIF walking through how to filter a source layer by adding a vector source clicking Filter > Create filter > select a data field from the list provided > select a value from the list provided"
     type="video/mp4"
     width="100%"
