@@ -44,7 +44,9 @@ export default class Breadcrumb extends React.Component {
               {link.title}
             </Link>
           ) : (
-            <span className="color-gray">{link.title}</span>
+            <span key={link.title} className="color-gray">
+              {link.title}
+            </span>
           );
         })}
       </div>
