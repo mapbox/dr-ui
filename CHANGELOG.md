@@ -2,7 +2,7 @@
 
 ## Info arch
 
-- Add `Breadcrumb` component. [#331](https://github.com/mapbox/dr-ui/pull/331).
+- Add `Breadcrumb` component. This component is included as a feature in `PageLayout`. [#331](https://github.com/mapbox/dr-ui/pull/331).
 
 ## 1.3.0
 
