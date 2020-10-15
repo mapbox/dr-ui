@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Icon from '@mapbox/mr-ui/icon';
-import { createUniqueCrumbs } from './utils';
 
 export default class Breadcrumb extends React.Component {
   render() {
-    const { domain, links, location, themeWrapper } = this.props;
+    const { links, location, themeWrapper } = this.props;
 
     const Link = (props) => (
       <React.Fragment>
@@ -18,17 +17,12 @@ export default class Breadcrumb extends React.Component {
       </React.Fragment>
     );
 
-    const createLinks = createUniqueCrumbs([
-      ...(domain !== false ? [domain] : []),
-      ...(links ? links : [])
-    ]);
-
-    return createLinks.length > 1 ? (
+    return links.length > 1 ? (
       <div
         className={`dr-ui--breadcrumb ${themeWrapper}`}
         data-swiftype-index="false"
       >
-        {createLinks.map((link) => {
+        {links.map((link) => {
           return link.path !== location.pathname ? (
             <Link key={link.title} href={link.path}>
               {link.title}
@@ -45,14 +39,6 @@ export default class Breadcrumb extends React.Component {
 }
 
 Breadcrumb.propTypes = {
-  /** If `false`, do not show "All docs" as first breadcrumb link */
-  domain: PropTypes.oneOfType([
-    PropTypes.shape({
-      title: PropTypes.string.isRequired,
-      path: PropTypes.string.isRequired
-    }),
-    PropTypes.bool
-  ]),
   /** Array of links to build the breadcrumb */
   links: PropTypes.arrayOf(
     PropTypes.shape({
@@ -69,9 +55,5 @@ Breadcrumb.propTypes = {
 };
 
 Breadcrumb.defaultProps = {
-  domain: {
-    title: 'All docs',
-    path: 'https://docs.mapbox.com'
-  },
   themeWrapper: ''
 };

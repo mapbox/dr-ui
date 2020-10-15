@@ -82,22 +82,6 @@ describe('Breadcrumb', () => {
     });
   });
 
-  describe(testCases.noDomain.description, () => {
-    let testCase;
-    let wrapper;
-    let tree;
-
-    beforeEach(() => {
-      testCase = testCases.noDomain;
-      wrapper = renderer.create(testCase.element);
-      tree = wrapper.toJSON();
-    });
-
-    test('renders as expected', () => {
-      expect(tree).toMatchSnapshot();
-    });
-  });
-
   describe(testCases.hide.description, () => {
     let testCase;
     let wrapper;

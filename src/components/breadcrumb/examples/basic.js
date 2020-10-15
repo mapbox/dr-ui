@@ -1,6 +1,5 @@
 /*
 Display breadcrumbs for a page.
-All docs > Site > Subsite > Section > Page title
 */
 import React from 'react';
 import Breadcrumb from '../breadcrumb';

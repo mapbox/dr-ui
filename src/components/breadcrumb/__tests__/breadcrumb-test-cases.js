@@ -90,76 +90,46 @@ testCases.subSite = {
 };
 
 testCases.domain = {
-  description: 'Set `domain`',
+  description: 'Example of Platform docs site',
   element: (
     <Breadcrumb
       links={[
         {
-          title: 'Mapbox GL JS',
-          path: '/mapbox-gl-js/'
+          title: 'Platform',
+          path: 'https://platform.mapbox.com'
         },
         {
-          title: 'Examples',
-          path: '/mapbox-gl-js/examples/'
+          title: 'CI Systems',
+          path: '/developer-experience/ci-systems/'
         },
         {
-          title: 'Display a map',
-          path: '/mapbox-gl-js/examples/display-a-map/'
+          title: 'Reference',
+          path: '/developer-experience/ci-systems/reference/'
+        },
+        {
+          title: 'Managing credentials',
+          path:
+            '/developer-experience/ci-systems/reference/managing-credentials/'
         }
       ]}
-      domain={{
-        title: 'Platform',
-        path: 'https://platform.mapbox.com'
-      }}
       location={{
-        pathname: '/mapbox-gl-js/examples/display-a-map/'
-      }}
-    />
-  )
-};
-
-testCases.noDomain = {
-  description: 'Set `domain: false`',
-  element: (
-    <Breadcrumb
-      links={[
-        {
-          title: 'Mapbox GL JS',
-          path: '/mapbox-gl-js/'
-        },
-        {
-          title: 'Examples',
-          path: '/mapbox-gl-js/examples/'
-        },
-        {
-          title: 'Display a map',
-          path: '/mapbox-gl-js/examples/display-a-map/'
-        }
-      ]}
-      domain={false}
-      location={{
-        pathname: '/mapbox-gl-js/examples/display-a-map/'
+        pathname:
+          '/developer-experience/ci-systems/reference/managing-credentials/'
       }}
     />
   )
 };
 
 testCases.hide = {
-  description:
-    'Hide breadcrumb if there is only one item (and domain is false)',
+  description: 'Hide breadcrumb if there is only one item',
   element: (
     <Breadcrumb
       links={[
         {
           title: 'Dr. UI',
           path: '/dr-ui/'
-        },
-        {
-          title: 'Dr. UI',
-          path: '/dr-ui/'
         }
       ]}
-      domain={false}
       location={{
         pathname: '/dr-ui/'
       }}

@@ -7,7 +7,8 @@ import Breadcrumb from '../breadcrumb/breadcrumb';
 import Content from './components/content';
 import Sidebar from './components/sidebar';
 import PageLayoutTopbar from './components/topbar';
-import { findHasSection, findParentPath } from './utils';
+import { findHasSection, findParentPath, createUniqueCrumbs } from './utils';
+
 // default configuration for each layout
 // every option can be overriden in the frontMatter
 import layoutConfig from './layout.config.js';
@@ -58,8 +59,28 @@ export default class PageLayout extends React.Component {
   };
 
   // render the page's content
-  renderContent = (config, parentPath, parent) => {
+  renderContent = (config, parentPath, parent, hasSection) => {
     const { constants, frontMatter, location } = this.props;
+    const crumbs = createUniqueCrumbs([
+      {
+        title: 'All docs',
+        path: 'https://docs.mapbox.com'
+      },
+      {
+        title: constants.SITE,
+        path: `${constants.BASEURL}/`
+      },
+      // if multi-structured site add the section name
+      ...(hasSection ? { title: hasSection.title, path: hasSection.path } : []),
+      {
+        title: parent.title,
+        path: parent.parent
+      },
+      {
+        title: frontMatter.title,
+        path: location.pathname
+      }
+    ]);
     return (
       <div
         className={classnames('col col--12', {
@@ -70,20 +91,7 @@ export default class PageLayout extends React.Component {
           themeWrapper="none block-mm px24 pt12"
           domain={false}
           location={location}
-          links={[
-            {
-              title: constants.SITE,
-              path: `${constants.BASEURL}/`
-            },
-            {
-              title: parent.title,
-              path: parent.parent
-            },
-            {
-              title: frontMatter.title,
-              path: location.pathname
-            }
-          ]}
+          links={crumbs}
         />
 
         <Content
@@ -135,7 +143,8 @@ export default class PageLayout extends React.Component {
               {this.renderContent(
                 config,
                 parentPath,
-                switchedNavigation.hierarchy[location.pathname]
+                switchedNavigation.hierarchy[location.pathname],
+                hasSection
               )}
             </ErrorBoundary>
           </div>
