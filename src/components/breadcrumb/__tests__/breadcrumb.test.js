@@ -18,38 +18,6 @@ describe('Breadcrumb', () => {
     });
   });
 
-  describe(testCases.uniqPath.description, () => {
-    let testCase;
-    let wrapper;
-    let tree;
-
-    beforeEach(() => {
-      testCase = testCases.uniqPath;
-      wrapper = renderer.create(testCase.element);
-      tree = wrapper.toJSON();
-    });
-
-    test('renders as expected', () => {
-      expect(tree).toMatchSnapshot();
-    });
-  });
-
-  describe(testCases.uniqTitle.description, () => {
-    let testCase;
-    let wrapper;
-    let tree;
-
-    beforeEach(() => {
-      testCase = testCases.uniqTitle;
-      wrapper = renderer.create(testCase.element);
-      tree = wrapper.toJSON();
-    });
-
-    test('renders as expected', () => {
-      expect(tree).toMatchSnapshot();
-    });
-  });
-
   describe(testCases.subSite.description, () => {
     let testCase;
     let wrapper;

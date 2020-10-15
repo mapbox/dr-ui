@@ -10,56 +10,6 @@ testCases.basic = {
   element: <Basic />
 };
 
-testCases.uniqPath = {
-  description: 'Each link has a unique path',
-  element: (
-    <Breadcrumb
-      links={[
-        {
-          title: 'API',
-          path: '/api/'
-        },
-        {
-          title: 'API',
-          path: '/api/'
-        },
-        {
-          title: 'Maps service',
-          path: '/api/maps/'
-        }
-      ]}
-      location={{
-        pathname: '/api/maps/'
-      }}
-    />
-  )
-};
-
-testCases.uniqTitle = {
-  description: 'Each title is unique.',
-  element: (
-    <Breadcrumb
-      links={[
-        {
-          title: 'Dr. UI',
-          path: '/dr-ui/'
-        },
-        {
-          title: 'Help',
-          path: '/dr-ui/help/'
-        },
-        {
-          title: 'Help',
-          path: '/dr-ui/help/'
-        }
-      ]}
-      location={{
-        pathname: '/dr-ui/help/'
-      }}
-    />
-  )
-};
-
 testCases.subSite = {
   description: 'Has subsite',
   element: (
