@@ -69,18 +69,21 @@ export default class PageLayout extends React.Component {
         <Breadcrumb
           themeWrapper="none block-mm px24 pt12"
           domain={false}
-          site={{
-            title: constants.SITE,
-            path: `${constants.BASEURL}/`
-          }}
-          section={{
-            title: parent.title,
-            path: parent.parent
-          }}
-          currentPage={{
-            title: frontMatter.title,
-            path: location.pathname
-          }}
+          location={location}
+          links={[
+            {
+              title: constants.SITE,
+              path: `${constants.BASEURL}/`
+            },
+            {
+              title: parent.title,
+              path: parent.parent
+            },
+            {
+              title: frontMatter.title,
+              path: location.pathname
+            }
+          ]}
         />
 
         <Content

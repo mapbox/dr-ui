@@ -9,17 +9,22 @@ export default class Basic extends React.Component {
   render() {
     return (
       <Breadcrumb
-        currentPage={{
-          title: 'Display a map',
-          path: '/mapbox-gl-js/examples/display-a-map/'
-        }}
-        site={{
-          title: 'Mapbox GL JS',
-          path: '/mapbox-gl-js/'
-        }}
-        section={{
-          title: 'Examples',
-          path: '/mapbox-gl-js/examples/'
+        links={[
+          {
+            title: 'Mapbox GL JS',
+            path: '/mapbox-gl-js/'
+          },
+          {
+            title: 'Examples',
+            path: '/mapbox-gl-js/examples/'
+          },
+          {
+            title: 'Display a map',
+            path: '/mapbox-gl-js/examples/display-a-map/'
+          }
+        ]}
+        location={{
+          pathname: '/mapbox-gl-js/examples/display-a-map/'
         }}
       />
     );

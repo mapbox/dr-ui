@@ -14,17 +14,22 @@ testCases.uniqPath = {
   description: 'Each link has a unique path',
   element: (
     <Breadcrumb
-      currentPage={{
-        title: 'Maps service',
-        path: '/api/maps/'
-      }}
-      site={{
-        title: 'API',
-        path: '/api/'
-      }}
-      section={{
-        title: 'API',
-        path: '/api/'
+      links={[
+        {
+          title: 'API',
+          path: '/api/'
+        },
+        {
+          title: 'API',
+          path: '/api/'
+        },
+        {
+          title: 'Maps service',
+          path: '/api/maps/'
+        }
+      ]}
+      location={{
+        pathname: '/api/maps/'
       }}
     />
   )
@@ -34,17 +39,22 @@ testCases.uniqTitle = {
   description: 'Each title is unique.',
   element: (
     <Breadcrumb
-      currentPage={{
-        title: 'Help',
-        path: '/dr-ui/help/'
-      }}
-      site={{
-        title: 'Dr. UI',
-        path: '/dr-ui/'
-      }}
-      section={{
-        title: 'Help',
-        path: '/dr-ui/help/'
+      links={[
+        {
+          title: 'Dr. UI',
+          path: '/dr-ui/'
+        },
+        {
+          title: 'Help',
+          path: '/dr-ui/help/'
+        },
+        {
+          title: 'Help',
+          path: '/dr-ui/help/'
+        }
+      ]}
+      location={{
+        pathname: '/dr-ui/help/'
       }}
     />
   )
@@ -54,21 +64,26 @@ testCases.subSite = {
   description: 'Has subsite',
   element: (
     <Breadcrumb
-      currentPage={{
-        title: 'Camera',
-        path: '/android/maps/overview/camera/'
-      }}
-      site={{
-        title: 'Android',
-        path: '/android/'
-      }}
-      subsite={{
-        title: 'Maps SDK',
-        path: '/android/maps/overview/'
-      }}
-      section={{
-        title: 'Overview',
-        path: '/android/maps/overview/'
+      links={[
+        {
+          title: 'Android',
+          path: '/android/'
+        },
+        {
+          title: 'Maps SDK',
+          path: '/android/maps/overview/'
+        },
+        {
+          title: 'Overview',
+          path: '/android/maps/overview/'
+        },
+        {
+          title: 'Camera',
+          path: '/android/maps/overview/camera/'
+        }
+      ]}
+      location={{
+        pathname: '/android/maps/overview/camera/'
       }}
     />
   )
@@ -78,21 +93,26 @@ testCases.domain = {
   description: 'Set `domain`',
   element: (
     <Breadcrumb
-      currentPage={{
-        title: 'Display a map',
-        path: '/mapbox-gl-js/examples/display-a-map/'
-      }}
+      links={[
+        {
+          title: 'Mapbox GL JS',
+          path: '/mapbox-gl-js/'
+        },
+        {
+          title: 'Examples',
+          path: '/mapbox-gl-js/examples/'
+        },
+        {
+          title: 'Display a map',
+          path: '/mapbox-gl-js/examples/display-a-map/'
+        }
+      ]}
       domain={{
         title: 'Platform',
         path: 'https://platform.mapbox.com'
       }}
-      site={{
-        title: 'Mapbox GL JS',
-        path: '/mapbox-gl-js/'
-      }}
-      section={{
-        title: 'Examples',
-        path: '/mapbox-gl-js/examples/'
+      location={{
+        pathname: '/mapbox-gl-js/examples/display-a-map/'
       }}
     />
   )
@@ -102,18 +122,23 @@ testCases.noDomain = {
   description: 'Set `domain: false`',
   element: (
     <Breadcrumb
-      currentPage={{
-        title: 'Display a map',
-        path: '/mapbox-gl-js/examples/display-a-map/'
-      }}
+      links={[
+        {
+          title: 'Mapbox GL JS',
+          path: '/mapbox-gl-js/'
+        },
+        {
+          title: 'Examples',
+          path: '/mapbox-gl-js/examples/'
+        },
+        {
+          title: 'Display a map',
+          path: '/mapbox-gl-js/examples/display-a-map/'
+        }
+      ]}
       domain={false}
-      site={{
-        title: 'Mapbox GL JS',
-        path: '/mapbox-gl-js/'
-      }}
-      section={{
-        title: 'Examples',
-        path: '/mapbox-gl-js/examples/'
+      location={{
+        pathname: '/mapbox-gl-js/examples/display-a-map/'
       }}
     />
   )
@@ -124,14 +149,19 @@ testCases.hide = {
     'Hide breadcrumb if there is only one item (and domain is false)',
   element: (
     <Breadcrumb
-      currentPage={{
-        title: 'Dr. UI',
-        path: '/dr-ui/'
-      }}
+      links={[
+        {
+          title: 'Dr. UI',
+          path: '/dr-ui/'
+        },
+        {
+          title: 'Dr. UI',
+          path: '/dr-ui/'
+        }
+      ]}
       domain={false}
-      site={{
-        title: 'Dr. UI',
-        path: '/dr-ui/'
+      location={{
+        pathname: '/dr-ui/'
       }}
     />
   )

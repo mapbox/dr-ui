@@ -5,14 +5,7 @@ import { createUniqueCrumbs } from './utils';
 
 export default class Breadcrumb extends React.Component {
   render() {
-    const {
-      currentPage,
-      section,
-      domain,
-      site,
-      subsite,
-      themeWrapper
-    } = this.props;
+    const { domain, links, location, themeWrapper } = this.props;
 
     const Link = (props) => (
       <React.Fragment>
@@ -27,10 +20,7 @@ export default class Breadcrumb extends React.Component {
 
     const createLinks = createUniqueCrumbs([
       ...(domain !== false ? [domain] : []),
-      ...(site ? [site] : []),
-      ...(subsite ? [subsite] : []),
-      ...(section ? [section] : []),
-      ...(currentPage ? [currentPage] : [])
+      ...(links ? links : [])
     ]);
 
     return createLinks.length > 1 ? (
@@ -39,7 +29,7 @@ export default class Breadcrumb extends React.Component {
         data-swiftype-index="false"
       >
         {createLinks.map((link) => {
-          return link.path !== currentPage.path ? (
+          return link.path !== location.pathname ? (
             <Link key={link.title} href={link.path}>
               {link.title}
             </Link>
@@ -63,25 +53,16 @@ Breadcrumb.propTypes = {
     }),
     PropTypes.bool
   ]),
-  /** Title of the site and homepage path */
-  site: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    path: PropTypes.string.isRequired
-  }),
-  /** Subsite title and homepage path (if using multi-structured layout) */
-  subsite: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    path: PropTypes.string.isRequired
-  }),
-  /** Section of the site (example: Guides, Tutorials, Examples) and path */
-  section: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    path: PropTypes.string.isRequired
-  }),
-  /** Current page title and path */
-  currentPage: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    path: PropTypes.string.isRequired
+  /** Array of links to build the breadcrumb */
+  links: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      path: PropTypes.string.isRequired
+    })
+  ),
+  /** Current page pathname */
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired
   }).isRequired,
   /** Assembly classes to apply to the containing wrapper */
   themeWrapper: PropTypes.string
