@@ -5,7 +5,14 @@ import { createUniqueCrumbs } from './utils';
 
 export default class Breadcrumb extends React.Component {
   render() {
-    const { currentPage, section, domain, site, subsite } = this.props;
+    const {
+      currentPage,
+      section,
+      domain,
+      site,
+      subsite,
+      themeWrapper
+    } = this.props;
 
     const Link = (props) => (
       <React.Fragment>
@@ -28,7 +35,7 @@ export default class Breadcrumb extends React.Component {
 
     return createLinks.length > 1 ? (
       <div
-        className="dr-ui--breadcrumb none block-mm px24 pt12"
+        className={`dr-ui--breadcrumb ${themeWrapper}`}
         data-swiftype-index="false"
       >
         {createLinks.map((link) => {
@@ -73,12 +80,15 @@ Breadcrumb.propTypes = {
   currentPage: PropTypes.shape({
     title: PropTypes.string.isRequired,
     path: PropTypes.string.isRequired
-  }).isRequired
+  }).isRequired,
+  /** Assembly classes to apply to the containing wrapper */
+  themeWrapper: PropTypes.string
 };
 
 Breadcrumb.defaultProps = {
   domain: {
     title: 'All docs',
     path: 'https://docs.mapbox.com'
-  }
+  },
+  themeWrapper: ''
 };

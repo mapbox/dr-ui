@@ -2,7 +2,7 @@
 
 exports[`Breadcrumb Basic renders as expected 1`] = `
 <div
-  className="dr-ui--breadcrumb none block-mm px24 pt12"
+  className="dr-ui--breadcrumb "
   data-swiftype-index="false"
 >
   <a
@@ -93,7 +93,7 @@ exports[`Breadcrumb Basic renders as expected 1`] = `
 
 exports[`Breadcrumb Each link has a unique path renders as expected 1`] = `
 <div
-  className="dr-ui--breadcrumb none block-mm px24 pt12"
+  className="dr-ui--breadcrumb "
   data-swiftype-index="false"
 >
   <a
@@ -158,7 +158,7 @@ exports[`Breadcrumb Each link has a unique path renders as expected 1`] = `
 
 exports[`Breadcrumb Each title is unique. renders as expected 1`] = `
 <div
-  className="dr-ui--breadcrumb none block-mm px24 pt12"
+  className="dr-ui--breadcrumb "
   data-swiftype-index="false"
 >
   <a
@@ -223,7 +223,7 @@ exports[`Breadcrumb Each title is unique. renders as expected 1`] = `
 
 exports[`Breadcrumb Has subsite renders as expected 1`] = `
 <div
-  className="dr-ui--breadcrumb none block-mm px24 pt12"
+  className="dr-ui--breadcrumb "
   data-swiftype-index="false"
 >
   <a
@@ -316,7 +316,7 @@ exports[`Breadcrumb Hide breadcrumb if there is only one item (and domain is fal
 
 exports[`Breadcrumb Set \`domain: false\` renders as expected 1`] = `
 <div
-  className="dr-ui--breadcrumb none block-mm px24 pt12"
+  className="dr-ui--breadcrumb "
   data-swiftype-index="false"
 >
   <a
@@ -381,7 +381,7 @@ exports[`Breadcrumb Set \`domain: false\` renders as expected 1`] = `
 
 exports[`Breadcrumb Set \`domain\` renders as expected 1`] = `
 <div
-  className="dr-ui--breadcrumb none block-mm px24 pt12"
+  className="dr-ui--breadcrumb "
   data-swiftype-index="false"
 >
   <a

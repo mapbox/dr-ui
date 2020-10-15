@@ -67,6 +67,7 @@ export default class PageLayout extends React.Component {
         })}
       >
         <Breadcrumb
+          themeWrapper="none block-mm px24 pt12"
           domain={false}
           site={{
             title: constants.SITE,
