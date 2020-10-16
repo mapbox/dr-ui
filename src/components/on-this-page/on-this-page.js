@@ -55,7 +55,7 @@ export default class OnThisPage extends React.PureComponent {
     const createId = (slug) => `on-this-page-${slug}`;
 
     return (
-      <div className="dr-ui--page-layout-aside mb36-mxl mb18 none block-mm">
+      <div className="dr-ui--page-layout-aside mb36-mxl mb18">
         <AsideHeading>On this page</AsideHeading>
         <ul id="aside-nav" className="unprose">
           {sections.map((heading) => (
