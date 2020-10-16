@@ -41,10 +41,10 @@ exports[`OnThisPage Basic renders as expected 1`] = `
                 Heading 1
               </a>
               <ul
-                className="aside-h3 my6 none"
+                className="aside-h3 my6 none pl12"
               >
                 <li
-                  className="mb6-mxl mb3 pl12 relative"
+                  className="mb6-mxl mb3 relative"
                   data-heading-section="on-this-page-heading-1"
                   style={
                     Object {
@@ -52,6 +52,31 @@ exports[`OnThisPage Basic renders as expected 1`] = `
                     }
                   }
                 >
+                  <div
+                    className="color-darken75 mr6 w18 h18 bg-gray-faint round-full flex-parent-inline flex-parent--center-main flex-parent--center-cross relative ml-neg12"
+                    style={
+                      Object {
+                        "top": 3,
+                      }
+                    }
+                  >
+                    <svg
+                      className="events-none icon"
+                      focusable="false"
+                      role="presentation"
+                      style={
+                        Object {
+                          "height": 16,
+                          "width": 16,
+                        }
+                      }
+                    >
+                      <use
+                        xlinkHref="#icon-paint"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                      />
+                    </svg>
+                  </div>
                   <a
                     className="link link--gray"
                     href="#heading-a"
@@ -60,7 +85,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
                   </a>
                 </li>
                 <li
-                  className="mb6-mxl mb3 pl12 relative"
+                  className="mb6-mxl mb3 relative"
                   data-heading-section="on-this-page-heading-1"
                   style={
                     Object {
@@ -68,6 +93,31 @@ exports[`OnThisPage Basic renders as expected 1`] = `
                     }
                   }
                 >
+                  <div
+                    className="color-darken75 mr6 w18 h18 bg-gray-faint round-full flex-parent-inline flex-parent--center-main flex-parent--center-cross relative ml-neg12"
+                    style={
+                      Object {
+                        "top": 3,
+                      }
+                    }
+                  >
+                    <svg
+                      className="events-none icon"
+                      focusable="false"
+                      role="presentation"
+                      style={
+                        Object {
+                          "height": 16,
+                          "width": 16,
+                        }
+                      }
+                    >
+                      <use
+                        xlinkHref="#icon-paint"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                      />
+                    </svg>
+                  </div>
                   <a
                     className="link link--gray"
                     href="#heading-b"
@@ -76,7 +126,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
                   </a>
                 </li>
                 <li
-                  className="mb6-mxl mb3 pl12 relative"
+                  className="mb6-mxl mb3 relative"
                   data-heading-section="on-this-page-heading-1"
                   style={
                     Object {
@@ -84,6 +134,31 @@ exports[`OnThisPage Basic renders as expected 1`] = `
                     }
                   }
                 >
+                  <div
+                    className="color-darken75 mr6 w18 h18 bg-gray-faint round-full flex-parent-inline flex-parent--center-main flex-parent--center-cross relative ml-neg12"
+                    style={
+                      Object {
+                        "top": 3,
+                      }
+                    }
+                  >
+                    <svg
+                      className="events-none icon"
+                      focusable="false"
+                      role="presentation"
+                      style={
+                        Object {
+                          "height": 16,
+                          "width": 16,
+                        }
+                      }
+                    >
+                      <use
+                        xlinkHref="#icon-paint"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                      />
+                    </svg>
+                  </div>
                   <a
                     className="link link--gray"
                     href="#heading-c"
@@ -109,10 +184,10 @@ exports[`OnThisPage Basic renders as expected 1`] = `
                 Heading 2
               </a>
               <ul
-                className="aside-h3 my6 none"
+                className="aside-h3 my6 none pl12"
               >
                 <li
-                  className="mb6-mxl mb3 pl12 relative"
+                  className="mb6-mxl mb3 relative"
                   data-heading-section="on-this-page-heading-2"
                   style={
                     Object {
@@ -128,7 +203,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
                   </a>
                 </li>
                 <li
-                  className="mb6-mxl mb3 pl12 relative"
+                  className="mb6-mxl mb3 relative"
                   data-heading-section="on-this-page-heading-2"
                   style={
                     Object {
@@ -144,7 +219,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
                   </a>
                 </li>
                 <li
-                  className="mb6-mxl mb3 pl12 relative"
+                  className="mb6-mxl mb3 relative"
                   data-heading-section="on-this-page-heading-2"
                   style={
                     Object {

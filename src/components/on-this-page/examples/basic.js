@@ -14,9 +14,24 @@ export default class Basic extends React.Component {
               <OnThisPage
                 headings={[
                   { text: 'Heading 1', slug: 'heading-1', level: 2 },
-                  { text: 'Heading a', slug: 'heading-a', level: 3 },
-                  { text: 'Heading b', slug: 'heading-b', level: 3 },
-                  { text: 'Heading c', slug: 'heading-c', level: 3 },
+                  {
+                    text: 'Heading a',
+                    slug: 'heading-a',
+                    level: 3,
+                    icon: 'paint'
+                  },
+                  {
+                    text: 'Heading b',
+                    slug: 'heading-b',
+                    level: 3,
+                    icon: 'paint'
+                  },
+                  {
+                    text: 'Heading c',
+                    slug: 'heading-c',
+                    level: 3,
+                    icon: 'paint'
+                  },
                   { text: 'Heading 2', slug: 'heading-2', level: 2 },
                   { text: 'Heading a 1', slug: 'heading-a-1', level: 3 },
                   { text: 'Heading b 1', slug: 'heading-b-1', level: 3 },

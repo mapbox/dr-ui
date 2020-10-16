@@ -72,23 +72,24 @@ export default class OnThisPage extends React.PureComponent {
             >
               <Link href={heading.slug}>{heading.text}</Link>
               {heading.subItems && heading.subItems.length > 0 && (
-                <ul className="aside-h3 my6 none">
+                <ul className="aside-h3 my6 none pl12">
                   {heading.subItems.map((subHeading) => {
                     return (
                       <li
                         data-heading-section={createId(heading.slug)}
                         key={subHeading.slug}
-                        className="mb6-mxl mb3 pl12 relative"
+                        className="mb6-mxl mb3 relative"
                         style={{ wordBreak: 'break-word' }}
                       >
                         {subHeading.icon && (
                           <div
-                            className="absolute color-gray"
-                            style={{ top: '4px', left: '-1px' }}
+                            className="color-darken75 mr6 w18 h18 bg-gray-faint round-full flex-parent-inline flex-parent--center-main flex-parent--center-cross relative ml-neg12"
+                            style={{ top: 3 }}
                           >
-                            <Icon size={12} name={subHeading.icon} />
+                            <Icon size={16} name={subHeading.icon} />
                           </div>
                         )}
+
                         <Link href={subHeading.slug}>{subHeading.text}</Link>
                       </li>
                     );
