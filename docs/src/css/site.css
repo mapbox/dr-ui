@@ -35,3 +35,13 @@ pre,
 .component-example-video {
   height: 500px;
 }
+
+/* Prevent tables from overflowing */
+.prose table {
+  table-layout: fixed;
+}
+table pre,
+table code,
+.prose td {
+  word-break: break-word;
+}

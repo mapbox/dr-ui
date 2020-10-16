@@ -18,7 +18,7 @@ export default class App extends React.Component {
           <h2 className="txt-fancy txt-h3" id={category.toLowerCase()}>
             {category}
           </h2>
-          {categories[category].sort().map((comp) => {
+          {categories[category].map((comp) => {
             const component = components.filter((f) => f.name === comp)[0];
             return (
               <div

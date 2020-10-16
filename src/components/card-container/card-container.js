@@ -26,7 +26,7 @@ class CardContainer extends React.PureComponent {
     return (
       <div>
         <a href={props.path} className="unprose mb18 block color-blue-on-hover">
-          <h2 className="txt-bold" id={categoryID}>
+          <h2 className="txt-bold unprose" id={categoryID}>
             {props.title}{' '}
             <span data-swiftype-index="false">({props.cards.length})</span>
           </h2>

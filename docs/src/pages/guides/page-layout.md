@@ -3,7 +3,6 @@ title: PageLayout component
 description: All about building with PageLayout.
 order: 3
 layout: accordion
-hideFeedback: true
 contentType: guide
 products:
   - Documentation

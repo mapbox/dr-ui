@@ -4,7 +4,6 @@ import Sticky from 'react-stickynode';
 import debounce from 'debounce';
 import classnames from 'classnames';
 import SidebarAccordion from './layouts/accordion/sidebar';
-import SidebarPage from './layouts/page/sidebar';
 import SidebarExamples from './layouts/example/sidebar';
 
 const sidebarContentStickyTop = 60;
@@ -77,10 +76,6 @@ export default class Sidebar extends React.Component {
           >
             {children}
           </SidebarAccordion>
-        );
-      case 'toc':
-        return (
-          <SidebarPage headings={frontMatter.headings}>{children}</SidebarPage>
         );
       case 'sectioned':
         return (

@@ -8,12 +8,14 @@ export default {
     sidebarTheme: 'bg-gray-faint' // sidebar background
   },
   example: {
+    aside: 'none', // do not show aside
     sidebar: 'sectioned', // SectionedNavigation sidebar
     hideSubItems: false, // show headings and subitems in sitebar
     sidebarTheme: 'bg-gray-faint', // sidebar background
     includeFilterBar: false // hide filter bar
   },
   exampleIndex: {
+    aside: 'none', // do not show aside
     sidebar: 'sectioned', // SectionedNavigation sidebar
     hideSubItems: true, // only show sidebar headings
     showCards: true, // show example cards
@@ -22,6 +24,7 @@ export default {
     includeFilterBar: false // hide filter bar
   },
   full: {
+    aside: 'none', // do not show aside
     sidebar: 'none' // no sidebar
   }
 };

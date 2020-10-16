@@ -7,7 +7,6 @@ Object {
     "frontMatter": Object {
       "contentType": "API",
       "description": "This is the first section",
-      "hideFeedback": true,
       "layout": "accordion",
       "order": 3,
       "splitPages": true,

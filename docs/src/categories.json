@@ -26,6 +26,7 @@
   ],
   "Layout": [
     "PageLayout",
+    "OnThisPage",
     "BackToTopButton",
     "GlossaryCard",
     "GlossaryImage",

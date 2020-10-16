@@ -5,8 +5,8 @@
   font-size: 36px;
 }
 
-#docs-content .prose h2,
-#docs-content.prose h2 {
+#docs-content .prose h2:not(.unprose),
+#docs-content.prose h2:not(.unprose) {
   font-weight: normal !important;
   font-size: 30px;
   border-top: 1px solid !important;
@@ -63,4 +63,38 @@
     overflow: auto !important;
     -webkit-overflow-scrolling: touch;
   }
+}
+
+@media screen and (max-width: 1200px) {
+  /* unstick aside on smaller devices */
+  .dr-ui--page-layout-aside .sticky-inner-wrapper {
+    position: static !important;
+    transform: none !important;
+    width: auto !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* move aside to right on larger screens */
+  .dr-ui--page-layout-aside {
+    order: 2;
+  }
+  .scroll-auto-mxl {
+    overflow: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* lessen scale on larger screens */
+  .dr-ui--page-layout-aside li {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+.dr-ui--page-layout-aside .aside-active .aside-h3 {
+  display: block !important;
+}
+
+.dr-ui--page-layout-aside .active > a {
+  color: #4264fb; /* color-blue */
 }

@@ -2,7 +2,12 @@
 
 ## Info arch
 
-- TBD
+- Create `OnThisPage` component that displays headings on the page and performs scroll spy to indicate where you are on the page.
+  - 🚨This update removed the need for the `@mapbox/dr-ui/plugins/create-sections` plugin and it is now deprecated. You can safely remove it from your `batfish.config.js`;
+- Add `aside` feature to `PageLayout`. This new feature includes the `OnThisPage` and `Feedback` components. On larger devices, the aside is stuck to the right-side of the screen. On smaller devices, `OnThisPage` moves inline below the page's title and `Feedback` will appear at the bottom of the page.
+- Updated design for `Feedback` component. Removed background color and use `AsideHeading` which is introduced with `OnThisPage` component.
+- Updates to `docs-prose.css`:
+  - You can now use `.unprose` class on `h2` elements within `#doc-content` to remove the styling.
 
 ## 1.3.0
 

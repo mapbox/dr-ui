@@ -3,7 +3,6 @@ title: Batfish helpers
 description: Batfish data selector functions to build navigation and topic datasets.
 order: 2
 contentType: guide
-hideFeedback: true
 layout: accordion
 products:
   - Documentation
