@@ -8,8 +8,8 @@ export default class Basic extends React.Component {
   render() {
     return (
       <div className="limiter">
-        <div className="grid grid--gut30">
-          <div className="col col--2-mxl col--12 relative dr-ui--page-layout-aside">
+        <div className="grid grid--gut60">
+          <div className="col col--5-mxl col--12 relative dr-ui--page-layout-aside">
             <div className="fixed-mxl">
               <OnThisPage
                 headings={[
@@ -17,31 +17,43 @@ export default class Basic extends React.Component {
                   {
                     text: 'Heading a',
                     slug: 'heading-a',
-                    level: 3,
-                    icon: 'paint'
+                    level: 3
                   },
                   {
                     text: 'Heading b',
                     slug: 'heading-b',
-                    level: 3,
-                    icon: 'paint'
+                    level: 3
                   },
                   {
                     text: 'Heading c',
                     slug: 'heading-c',
+                    level: 3
+                  },
+                  { text: 'Heading 2', slug: 'heading-2', level: 2 },
+                  {
+                    text: 'Heading a 1',
+                    slug: 'heading-a-1',
                     level: 3,
                     icon: 'paint'
                   },
-                  { text: 'Heading 2', slug: 'heading-2', level: 2 },
-                  { text: 'Heading a 1', slug: 'heading-a-1', level: 3 },
-                  { text: 'Heading b 1', slug: 'heading-b-1', level: 3 },
-                  { text: 'Heading c 1', slug: 'heading-c-1', level: 3 }
+                  {
+                    text: 'Heading b 1',
+                    slug: 'heading-b-1',
+                    level: 3,
+                    icon: 'paint'
+                  },
+                  {
+                    text: 'Heading c 1',
+                    slug: 'heading-c-1',
+                    level: 3,
+                    icon: 'paint'
+                  }
                 ]}
               />
             </div>
           </div>
 
-          <div className="col col--10-mxl col--12 prose pb600">
+          <div className="col col--7-mxl col--12 prose pb600">
             <h2 id="heading-1">Heading 1</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
