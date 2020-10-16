@@ -41,6 +41,7 @@
     "Card",
     "CardContainer",
     "ExamplesPage",
+    "Breadcrumb",
     "AnalyticsShell",
     "ErrorBoundary"
   ],
