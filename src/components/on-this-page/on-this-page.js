@@ -13,9 +13,7 @@ export default class OnThisPage extends React.PureComponent {
         events: true
       });
     } catch (error) {
-      Sentry.withScope(() => {
-        Sentry.captureException(error);
-      });
+      Sentry.captureException(error);
     }
 
     document.addEventListener(
