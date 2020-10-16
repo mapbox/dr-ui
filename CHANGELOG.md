@@ -2,6 +2,7 @@
 
 ## Info arch
 
+- Add `Breadcrumb` component. This component is included as a feature in `PageLayout`. [#331](https://github.com/mapbox/dr-ui/pull/331).
 - Create `OnThisPage` component that displays headings on the page and performs scroll spy to indicate where you are on the page.
   - 🚨This update removed the need for the `@mapbox/dr-ui/plugins/create-sections` plugin and it is now deprecated. You can safely remove it from your `batfish.config.js`;
 - Add `aside` feature to `PageLayout`. This new feature includes the `OnThisPage` and `Feedback` components. On larger devices, the aside is stuck to the right-side of the screen. On smaller devices, `OnThisPage` moves inline below the page's title and `Feedback` will appear at the bottom of the page.
