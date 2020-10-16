@@ -3,13 +3,20 @@ import PropTypes from 'prop-types';
 import Gumshoe from 'gumshoejs';
 import Icon from '@mapbox/mr-ui/icon';
 import { AsideHeading, buildSections } from './helpers';
+import * as Sentry from '@sentry/browser';
 
 export default class OnThisPage extends React.PureComponent {
   componentDidMount() {
-    new Gumshoe('#aside-nav a', {
-      navClass: 'active',
-      events: true
-    });
+    try {
+      new Gumshoe('#aside-nav a', {
+        navClass: 'active',
+        events: true
+      });
+    } catch (error) {
+      Sentry.withScope(() => {
+        Sentry.captureException(error);
+      });
+    }
 
     document.addEventListener(
       'gumshoeActivate',
