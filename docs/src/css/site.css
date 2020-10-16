@@ -3,11 +3,12 @@
 }
 
 /* override sticky behavior on PageLayout and TopbarSticker */
-#docs-content .sticky-outer-wrapper.active .sticky-inner-wrapper {
+.sticky-outer-wrapper .sticky-inner-wrapper {
   position: relative !important;
   transform: none !important;
   height: auto !important;
 }
+
 #docs-content div#dr-ui--page-layout-sidebar {
   position: relative;
   height: 50px !important;
