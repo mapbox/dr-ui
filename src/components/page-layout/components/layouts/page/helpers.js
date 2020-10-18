@@ -1,5 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
+import UncontrolledAccordion from '@mapbox/mr-ui/uncontrolled-accordion';
 
 export function buildSections(headings) {
   if (!headings) return [];
@@ -33,4 +34,42 @@ export function buildToc(sections) {
       </li>
     );
   });
+}
+
+export function buildSitesNav(navSites) {
+  function buildSubItems(site) {
+    if (!site.sectionPages) return;
+    const siteItems = site.sectionPages.map((page, index) => {
+      return (
+        <li key={index}>
+          <a href={page.path}>
+            {page.title}
+          </a>
+        </li>
+      );
+    });
+
+    return siteItems;
+  }
+
+  function buildItems() {
+    const items = navSites.map((site, index) => {
+      const { title, path } = site.sectionTitle;
+      return {
+        id: title,
+        header: () => <a key={index} href={path}>{title}</a>,
+        body: () => <ul key={index}>{buildSubItems(site.sitePages)}</ul>
+      }
+    });
+
+    return items;
+  }
+
+  return (
+    <UncontrolledAccordion
+      items={[
+        buildItems()
+      ]}
+    />
+  )
 }

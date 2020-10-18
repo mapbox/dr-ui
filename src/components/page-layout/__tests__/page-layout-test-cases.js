@@ -33,7 +33,7 @@ testCases.examplePage = {
   element: <ExamplePage />
 };
 
-testCases.hideTopBar = {
+/* testCases.hideTopBar = {
   description: 'Hide PageLayoutTopbar',
   element: (
     <PageLayout
@@ -68,7 +68,7 @@ testCases.hideTopBar = {
       }}
     />
   )
-};
+}; */
 
 testCases.hideSearch = {
   description: 'Set hideSearch to remove Search component',

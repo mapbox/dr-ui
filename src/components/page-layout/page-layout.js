@@ -5,7 +5,7 @@ import BackToTopButton from '../back-to-top-button/back-to-top-button';
 import ErrorBoundary from '../error-boundary/error-boundary';
 import Content from './components/content';
 import Sidebar from './components/sidebar';
-import PageLayoutTopbar from './components/topbar';
+/* import PageLayoutTopbar from './components/topbar'; */
 import { findHasSection, findParentPath } from './utils';
 // default configuration for each layout
 // every option can be overriden in the frontMatter
@@ -13,34 +13,12 @@ import layoutConfig from './layout.config.js';
 import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
 
 export default class PageLayout extends React.Component {
-  // render the page's top bar navigation
-  renderTopbar = (switchedNavigation, parentPath) => {
-    const {
-      constants,
-      topBarSticker,
-      tabListAppend,
-      hideTopBar,
-      hideSearch
-    } = this.props;
-    if (hideTopBar) return null;
-    return (
-      <PageLayoutTopbar
-        {...this.props}
-        constants={constants}
-        navigation={switchedNavigation}
-        parentPath={parentPath}
-        topBarSticker={topBarSticker}
-        tabListAppend={tabListAppend}
-        hideSearch={hideSearch}
-      />
-    );
-  };
-
   // render the page's sidebar
   renderSidebar = (config, switchedNavigation, parentPath) => {
-    const { customSidebar, headings, topBarSticker } = this.props;
+    const { customSidebar, headings/* , topBarSticker */ } = this.props;
     return (
       config.sidebar !== 'none' && (
+        // 👹 Fix padding now that sticker is gone
         <div className={`col col--4-mm col--12 ${config.sidebarTheme}`}>
           <Sidebar
             {...this.props}
@@ -49,7 +27,6 @@ export default class PageLayout extends React.Component {
             layoutConfig={config}
             customSidebar={customSidebar}
             headings={headings}
-            topBarSticker={topBarSticker}
           />
         </div>
       )
@@ -101,9 +78,6 @@ export default class PageLayout extends React.Component {
     return (
       <ErrorBoundary>
         {!noShellHeaderBuffer && <div className="shell-header-buffer" />}
-        <ErrorBoundary>
-          {this.renderTopbar(switchedNavigation, parentPath)}
-        </ErrorBoundary>
         <div className="limiter">
           <div className="grid">
             <ErrorBoundary>
@@ -121,15 +95,6 @@ export default class PageLayout extends React.Component {
     );
   }
 }
-
-PageLayout.defaultProps = {
-  // topbar sticker is sticky by default
-  topBarSticker: true,
-  // topbar is visible by default
-  hideTopBar: false,
-  // search is visible in TopBar by default
-  hideSearch: false
-};
 
 PageLayout.propTypes = {
   children: PropTypes.node,
@@ -234,11 +199,11 @@ PageLayout.propTypes = {
   /** Required if using the `exampleIndex` layout along with `imageId`s. The value is the local `AppropriateImage` component. */
   AppropriateImage: PropTypes.func,
   /** If false, unstick the TopBarSticker */
-  topBarSticker: PropTypes.bool,
+  /* topBarSticker: PropTypes.bool, */
   /** If true, remove the TopBar completely */
-  hideTopBar: PropTypes.bool,
+  /* hideTopBar: PropTypes.bool, */
   //* If true, remove the Search component from TopBar */
-  hideSearch: PropTypes.bool,
+  /* hideSearch: PropTypes.bool, */
   /** Create a completely custom sidebar. */
   customSidebar: PropTypes.node,
   /** Append item to TabList. This is used by iOS and Android site's API reference. */
