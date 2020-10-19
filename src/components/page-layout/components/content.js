@@ -4,7 +4,6 @@ import classnames from 'classnames';
 import LayoutExamples from './layouts/example/content.js';
 import OnThisPage from '../../on-this-page/on-this-page';
 import Feedback from '../../feedback/feedback';
-import Sticky from 'react-stickynode';
 
 export default class Content extends React.Component {
   renderExamplesIndex = () => {
@@ -44,18 +43,19 @@ export default class Content extends React.Component {
       headings.length > 0 &&
       (layout === 'page' || layout === 'accordion');
     return (
-      <Sticky top={30} activeClass="pt30">
-        <aside
-          data-swiftype-index="false"
-          className="scroll-auto-mxl scroll-styled viewport-almost-mxl"
-        >
-          {this.props.customAside ? this.props.customAside : undefined}
-          {showToc && <OnThisPage headings={headings} />}
-          {!hideFeedback && (
-            <div className="none block-mxl">{this.renderFeedback()}</div>
-          )}
-        </aside>
-      </Sticky>
+      <aside
+        data-swiftype-index="false"
+        className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl"
+        style={{ top: '50px' }}
+      >
+        {this.props.customAside ? this.props.customAside : undefined}
+        {showToc && headings && headings.length > 0 && (
+          <OnThisPage headings={headings} />
+        )}
+        {!hideFeedback && (
+          <div className="none block-mxl">{this.renderFeedback()}</div>
+        )}
+      </aside>
     );
   };
 

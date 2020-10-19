@@ -10,7 +10,7 @@ export default class Basic extends React.Component {
       <div className="limiter">
         <div className="grid grid--gut60">
           <div className="col col--5-mxl col--12 relative dr-ui--page-layout-aside">
-            <div className="fixed-mxl">
+            <div className="sticky-mxl top">
               <OnThisPage
                 headings={[
                   { text: 'Heading 1', slug: 'heading-1', level: 2 },
@@ -54,7 +54,9 @@ export default class Basic extends React.Component {
           </div>
 
           <div className="col col--7-mxl col--12 prose pb600">
-            <h2 id="heading-1">Heading 1</h2>
+            <h2 id="heading-1" className="anchor">
+              Heading 1
+            </h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -64,7 +66,9 @@ export default class Basic extends React.Component {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <h3 id="heading-a">Heading a</h3>
+            <h3 id="heading-a" className="anchor">
+              Heading a
+            </h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -74,7 +78,9 @@ export default class Basic extends React.Component {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <h3 id="heading-b">Heading b</h3>
+            <h3 id="heading-b" className="anchor">
+              Heading b
+            </h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -84,7 +90,9 @@ export default class Basic extends React.Component {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <h3 id="heading-c">Heading c</h3>
+            <h3 id="heading-c" className="anchor">
+              Heading c
+            </h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -94,7 +102,9 @@ export default class Basic extends React.Component {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <h2 id="heading-2">Heading 2</h2>
+            <h2 id="heading-2" className="anchor">
+              Heading 2
+            </h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -104,26 +114,9 @@ export default class Basic extends React.Component {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <h3 id="heading-a-1">Heading a 1</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <h3 id="heading-b-1">Heading b 1</h3>
+            <h3 id="heading-a-1" className="anchor">
+              Heading a 1
+            </h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -142,7 +135,30 @@ export default class Basic extends React.Component {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <h3 id="heading-c-1">Heading c 1</h3>
+            <h3 id="heading-b-1" className="anchor">
+              Heading b 1
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <h3 id="heading-c-1" className="anchor">
+              Heading c 1
+            </h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut

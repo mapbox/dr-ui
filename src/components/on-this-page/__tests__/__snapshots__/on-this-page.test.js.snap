@@ -11,7 +11,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
       className="col col--5-mxl col--12 relative dr-ui--page-layout-aside"
     >
       <div
-        className="fixed-mxl"
+        className="sticky-mxl top"
       >
         <div
           className="dr-ui--page-layout-aside mb36-mxl mb18"
@@ -22,71 +22,66 @@ exports[`OnThisPage Basic renders as expected 1`] = `
             On this page
           </h2>
           <ul
-            className="unprose"
-            id="aside-nav"
+            className=""
           >
             <li
-              className="mb6-mxl mb3"
-              id="on-this-page-heading-1"
-              style={
-                Object {
-                  "wordBreak": "break-word",
-                }
-              }
+              className="mb3 mb6-mxl"
             >
               <a
-                className="link link--gray"
+                className="link inline-block link--gray"
                 href="#heading-1"
+                style={
+                  Object {
+                    "wordBreak": "break-word",
+                  }
+                }
               >
                 Heading 1
               </a>
               <ul
-                className="aside-h3 my6 none pl12"
+                className="none my6"
               >
                 <li
-                  className="mb6-mxl mb3 relative"
-                  data-heading-section="on-this-page-heading-1"
-                  style={
-                    Object {
-                      "wordBreak": "break-word",
-                    }
-                  }
+                  className="mb3"
                 >
                   <a
-                    className="link link--gray"
+                    className="link inline-block link--gray"
                     href="#heading-a"
+                    style={
+                      Object {
+                        "wordBreak": "break-word",
+                      }
+                    }
                   >
                     Heading a
                   </a>
                 </li>
                 <li
-                  className="mb6-mxl mb3 relative"
-                  data-heading-section="on-this-page-heading-1"
-                  style={
-                    Object {
-                      "wordBreak": "break-word",
-                    }
-                  }
+                  className="mb3"
                 >
                   <a
-                    className="link link--gray"
+                    className="link inline-block link--gray"
                     href="#heading-b"
+                    style={
+                      Object {
+                        "wordBreak": "break-word",
+                      }
+                    }
                   >
                     Heading b
                   </a>
                 </li>
                 <li
-                  className="mb6-mxl mb3 relative"
-                  data-heading-section="on-this-page-heading-1"
-                  style={
-                    Object {
-                      "wordBreak": "break-word",
-                    }
-                  }
+                  className="mb3"
                 >
                   <a
-                    className="link link--gray"
+                    className="link inline-block link--gray"
                     href="#heading-c"
+                    style={
+                      Object {
+                        "wordBreak": "break-word",
+                      }
+                    }
                   >
                     Heading c
                   </a>
@@ -94,143 +89,139 @@ exports[`OnThisPage Basic renders as expected 1`] = `
               </ul>
             </li>
             <li
-              className="mb6-mxl mb3"
-              id="on-this-page-heading-2"
-              style={
-                Object {
-                  "wordBreak": "break-word",
-                }
-              }
+              className="mb3 mb6-mxl"
             >
               <a
-                className="link link--gray"
+                className="link inline-block link--gray"
                 href="#heading-2"
+                style={
+                  Object {
+                    "wordBreak": "break-word",
+                  }
+                }
               >
                 Heading 2
               </a>
               <ul
-                className="aside-h3 my6 none pl12"
+                className="none my6"
               >
                 <li
-                  className="mb6-mxl mb3 relative"
-                  data-heading-section="on-this-page-heading-2"
-                  style={
-                    Object {
-                      "wordBreak": "break-word",
-                    }
-                  }
+                  className="mb3"
                 >
-                  <div
-                    className="color-darken75 mr6 w18 h18 bg-gray-faint round-full flex-parent-inline flex-parent--center-main flex-parent--center-cross relative ml-neg12"
+                  <a
+                    className="link inline-block link--gray"
+                    href="#heading-a-1"
                     style={
                       Object {
-                        "top": 3,
+                        "wordBreak": "break-word",
                       }
                     }
                   >
-                    <svg
-                      className="events-none icon"
-                      focusable="false"
-                      role="presentation"
+                    <div
+                      className="color-darken75 mr6 w18 h18 bg-gray-faint round-full flex-parent-inline flex-parent--center-main flex-parent--center-cross relative ml-neg12"
                       style={
                         Object {
-                          "height": 16,
-                          "width": 16,
+                          "top": 3,
                         }
                       }
                     >
-                      <use
-                        xlinkHref="#icon-paint"
-                        xmlnsXlink="http://www.w3.org/1999/xlink"
-                      />
-                    </svg>
-                  </div>
-                  <a
-                    className="link link--gray"
-                    href="#heading-a-1"
-                  >
+                      <svg
+                        className="events-none icon"
+                        focusable="false"
+                        role="presentation"
+                        style={
+                          Object {
+                            "height": 16,
+                            "width": 16,
+                          }
+                        }
+                      >
+                        <use
+                          xlinkHref="#icon-paint"
+                          xmlnsXlink="http://www.w3.org/1999/xlink"
+                        />
+                      </svg>
+                    </div>
                     Heading a 1
                   </a>
                 </li>
                 <li
-                  className="mb6-mxl mb3 relative"
-                  data-heading-section="on-this-page-heading-2"
-                  style={
-                    Object {
-                      "wordBreak": "break-word",
-                    }
-                  }
+                  className="mb3"
                 >
-                  <div
-                    className="color-darken75 mr6 w18 h18 bg-gray-faint round-full flex-parent-inline flex-parent--center-main flex-parent--center-cross relative ml-neg12"
+                  <a
+                    className="link inline-block link--gray"
+                    href="#heading-b-1"
                     style={
                       Object {
-                        "top": 3,
+                        "wordBreak": "break-word",
                       }
                     }
                   >
-                    <svg
-                      className="events-none icon"
-                      focusable="false"
-                      role="presentation"
+                    <div
+                      className="color-darken75 mr6 w18 h18 bg-gray-faint round-full flex-parent-inline flex-parent--center-main flex-parent--center-cross relative ml-neg12"
                       style={
                         Object {
-                          "height": 16,
-                          "width": 16,
+                          "top": 3,
                         }
                       }
                     >
-                      <use
-                        xlinkHref="#icon-paint"
-                        xmlnsXlink="http://www.w3.org/1999/xlink"
-                      />
-                    </svg>
-                  </div>
-                  <a
-                    className="link link--gray"
-                    href="#heading-b-1"
-                  >
+                      <svg
+                        className="events-none icon"
+                        focusable="false"
+                        role="presentation"
+                        style={
+                          Object {
+                            "height": 16,
+                            "width": 16,
+                          }
+                        }
+                      >
+                        <use
+                          xlinkHref="#icon-paint"
+                          xmlnsXlink="http://www.w3.org/1999/xlink"
+                        />
+                      </svg>
+                    </div>
                     Heading b 1
                   </a>
                 </li>
                 <li
-                  className="mb6-mxl mb3 relative"
-                  data-heading-section="on-this-page-heading-2"
-                  style={
-                    Object {
-                      "wordBreak": "break-word",
-                    }
-                  }
+                  className="mb3"
                 >
-                  <div
-                    className="color-darken75 mr6 w18 h18 bg-gray-faint round-full flex-parent-inline flex-parent--center-main flex-parent--center-cross relative ml-neg12"
+                  <a
+                    className="link inline-block link--gray"
+                    href="#heading-c-1"
                     style={
                       Object {
-                        "top": 3,
+                        "wordBreak": "break-word",
                       }
                     }
                   >
-                    <svg
-                      className="events-none icon"
-                      focusable="false"
-                      role="presentation"
+                    <div
+                      className="color-darken75 mr6 w18 h18 bg-gray-faint round-full flex-parent-inline flex-parent--center-main flex-parent--center-cross relative ml-neg12"
                       style={
                         Object {
-                          "height": 16,
-                          "width": 16,
+                          "top": 3,
                         }
                       }
                     >
-                      <use
-                        xlinkHref="#icon-paint"
-                        xmlnsXlink="http://www.w3.org/1999/xlink"
-                      />
-                    </svg>
-                  </div>
-                  <a
-                    className="link link--gray"
-                    href="#heading-c-1"
-                  >
+                      <svg
+                        className="events-none icon"
+                        focusable="false"
+                        role="presentation"
+                        style={
+                          Object {
+                            "height": 16,
+                            "width": 16,
+                          }
+                        }
+                      >
+                        <use
+                          xlinkHref="#icon-paint"
+                          xmlnsXlink="http://www.w3.org/1999/xlink"
+                        />
+                      </svg>
+                    </div>
                     Heading c 1
                   </a>
                 </li>
@@ -244,6 +235,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
       className="col col--7-mxl col--12 prose pb600"
     >
       <h2
+        className="anchor"
         id="heading-1"
       >
         Heading 1
@@ -252,6 +244,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
       <h3
+        className="anchor"
         id="heading-a"
       >
         Heading a
@@ -260,6 +253,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
       <h3
+        className="anchor"
         id="heading-b"
       >
         Heading b
@@ -268,6 +262,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
       <h3
+        className="anchor"
         id="heading-c"
       >
         Heading c
@@ -276,6 +271,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
       <h2
+        className="anchor"
         id="heading-2"
       >
         Heading 2
@@ -284,6 +280,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
       <h3
+        className="anchor"
         id="heading-a-1"
       >
         Heading a 1
@@ -295,6 +292,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
       <h3
+        className="anchor"
         id="heading-b-1"
       >
         Heading b 1
@@ -306,6 +304,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
       <h3
+        className="anchor"
         id="heading-c-1"
       >
         Heading c 1

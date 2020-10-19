@@ -19,8 +19,13 @@ export function buildSections(headings) {
   return pickedHeadings.reduce((arr, heading, index) => {
     if (heading.level === 2) {
       arr.push({
-        ...heading,
-        subItems: findSubItems(pickedHeadings, index)
+        id: heading.slug,
+        value: heading.text,
+        children: findSubItems(pickedHeadings, index).map((sub) => ({
+          id: sub.slug,
+          value: sub.text,
+          ...(sub.icon && { icon: sub.icon })
+        }))
       });
     }
     return arr;

@@ -14,7 +14,7 @@ exports[`topbar-sticker For display only renders as expected 1`] = `
     style={Object {}}
   >
     <div
-      className="sticky-inner-wrapper "
+      className="sticky-inner-wrapper"
       style={
         Object {
           "position": "relative",
@@ -128,7 +128,7 @@ exports[`topbar-sticker Unsticks at 900px renders as expected 1`] = `
     style={Object {}}
   >
     <div
-      className="sticky-inner-wrapper "
+      className="sticky-inner-wrapper"
       style={
         Object {
           "position": "relative",

@@ -10,7 +10,7 @@ Array [
     style={Object {}}
   >
     <div
-      className="sticky-inner-wrapper "
+      className="sticky-inner-wrapper"
       style={
         Object {
           "position": "relative",
@@ -232,7 +232,7 @@ Array [
             style={Object {}}
           >
             <div
-              className="sticky-inner-wrapper "
+              className="sticky-inner-wrapper"
               style={
                 Object {
                   "position": "relative",
@@ -659,59 +659,47 @@ Array [
             <div
               className="dr-ui--page-layout-aside col col--4-mxl"
             >
-              <div
-                className="sticky-outer-wrapper"
-                style={Object {}}
+              <aside
+                className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl"
+                data-swiftype-index="false"
+                style={
+                  Object {
+                    "top": "50px",
+                  }
+                }
               >
                 <div
-                  className="sticky-inner-wrapper "
-                  style={
-                    Object {
-                      "position": "relative",
-                      "top": "",
-                      "transform": "translate3d(0,0px,0)",
-                      "zIndex": undefined,
-                    }
-                  }
+                  className="none block-mxl"
                 >
-                  <aside
-                    className="scroll-auto-mxl scroll-styled viewport-almost-mxl"
-                    data-swiftype-index="false"
+                  <div
+                    className="dr-ui--feedback"
                   >
-                    <div
-                      className="none block-mxl"
-                    >
-                      <div
-                        className="dr-ui--feedback"
+                    <div>
+                      <h2
+                        className="unprose txt-h4 txt-fancy mb12"
                       >
-                        <div>
-                          <h2
-                            className="unprose txt-h4 txt-fancy mb12"
-                          >
-                            Was this 
-                            page
-                             helpful?
-                          </h2>
-                          <button
-                            className="btn btn--s"
-                            id="dr-ui--feedback-page-yes"
-                            onClick={[Function]}
-                          >
-                            Yes
-                          </button>
-                          <button
-                            className="btn btn--s ml6"
-                            id="dr-ui--feedback-page-no"
-                            onClick={[Function]}
-                          >
-                            No
-                          </button>
-                        </div>
-                      </div>
+                        Was this 
+                        page
+                         helpful?
+                      </h2>
+                      <button
+                        className="btn btn--s"
+                        id="dr-ui--feedback-page-yes"
+                        onClick={[Function]}
+                      >
+                        Yes
+                      </button>
+                      <button
+                        className="btn btn--s ml6"
+                        id="dr-ui--feedback-page-no"
+                        onClick={[Function]}
+                      >
+                        No
+                      </button>
                     </div>
-                  </aside>
+                  </div>
                 </div>
-              </div>
+              </aside>
             </div>
             <div
               className="col col--8-mxl col--12 prose"
@@ -807,7 +795,7 @@ Array [
     style={Object {}}
   >
     <div
-      className="sticky-inner-wrapper "
+      className="sticky-inner-wrapper"
       style={
         Object {
           "position": "relative",
@@ -993,7 +981,7 @@ Array [
             style={Object {}}
           >
             <div
-              className="sticky-inner-wrapper "
+              className="sticky-inner-wrapper"
               style={
                 Object {
                   "position": "relative",
@@ -1486,7 +1474,7 @@ Array [
     style={Object {}}
   >
     <div
-      className="sticky-inner-wrapper "
+      className="sticky-inner-wrapper"
       style={
         Object {
           "position": "relative",
@@ -1672,7 +1660,7 @@ Array [
             style={Object {}}
           >
             <div
-              className="sticky-inner-wrapper "
+              className="sticky-inner-wrapper"
               style={
                 Object {
                   "position": "relative",
@@ -1924,7 +1912,7 @@ Array [
             style={Object {}}
           >
             <div
-              className="sticky-inner-wrapper "
+              className="sticky-inner-wrapper"
               style={
                 Object {
                   "position": "relative",
@@ -2025,105 +2013,90 @@ Array [
             <div
               className="dr-ui--page-layout-aside col col--4-mxl"
             >
-              <div
-                className="sticky-outer-wrapper"
-                style={Object {}}
+              <aside
+                className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl"
+                data-swiftype-index="false"
+                style={
+                  Object {
+                    "top": "50px",
+                  }
+                }
               >
                 <div
-                  className="sticky-inner-wrapper "
-                  style={
-                    Object {
-                      "position": "relative",
-                      "top": "",
-                      "transform": "translate3d(0,0px,0)",
-                      "zIndex": undefined,
-                    }
-                  }
+                  className="dr-ui--page-layout-aside mb36-mxl mb18"
                 >
-                  <aside
-                    className="scroll-auto-mxl scroll-styled viewport-almost-mxl"
-                    data-swiftype-index="false"
+                  <h2
+                    className="unprose txt-h4 txt-fancy mb12"
                   >
-                    <div
-                      className="dr-ui--page-layout-aside mb36-mxl mb18"
+                    On this page
+                  </h2>
+                  <ul
+                    className=""
+                  >
+                    <li
+                      className="mb3 mb6-mxl"
                     >
+                      <a
+                        className="link inline-block link--gray"
+                        href="#section-1"
+                        style={
+                          Object {
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        Section 1
+                      </a>
+                    </li>
+                    <li
+                      className="mb3 mb6-mxl"
+                    >
+                      <a
+                        className="link inline-block link--gray"
+                        href="#section-2"
+                        style={
+                          Object {
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        Section 2
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  className="none block-mxl"
+                >
+                  <div
+                    className="dr-ui--feedback"
+                  >
+                    <div>
                       <h2
                         className="unprose txt-h4 txt-fancy mb12"
                       >
-                        On this page
+                        Was this 
+                        page
+                         helpful?
                       </h2>
-                      <ul
-                        className="unprose"
-                        id="aside-nav"
+                      <button
+                        className="btn btn--s"
+                        id="dr-ui--feedback-page-yes"
+                        onClick={[Function]}
                       >
-                        <li
-                          className="mb6-mxl mb3"
-                          id="on-this-page-section-1"
-                          style={
-                            Object {
-                              "wordBreak": "break-word",
-                            }
-                          }
-                        >
-                          <a
-                            className="link link--gray"
-                            href="#section-1"
-                          >
-                            Section 1
-                          </a>
-                        </li>
-                        <li
-                          className="mb6-mxl mb3"
-                          id="on-this-page-section-2"
-                          style={
-                            Object {
-                              "wordBreak": "break-word",
-                            }
-                          }
-                        >
-                          <a
-                            className="link link--gray"
-                            href="#section-2"
-                          >
-                            Section 2
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div
-                      className="none block-mxl"
-                    >
-                      <div
-                        className="dr-ui--feedback"
+                        Yes
+                      </button>
+                      <button
+                        className="btn btn--s ml6"
+                        id="dr-ui--feedback-page-no"
+                        onClick={[Function]}
                       >
-                        <div>
-                          <h2
-                            className="unprose txt-h4 txt-fancy mb12"
-                          >
-                            Was this 
-                            page
-                             helpful?
-                          </h2>
-                          <button
-                            className="btn btn--s"
-                            id="dr-ui--feedback-page-yes"
-                            onClick={[Function]}
-                          >
-                            Yes
-                          </button>
-                          <button
-                            className="btn btn--s ml6"
-                            id="dr-ui--feedback-page-no"
-                            onClick={[Function]}
-                          >
-                            No
-                          </button>
-                        </div>
-                      </div>
+                        No
+                      </button>
                     </div>
-                  </aside>
+                  </div>
                 </div>
-              </div>
+              </aside>
             </div>
             <div
               className="col col--8-mxl col--12 prose"
@@ -2219,7 +2192,7 @@ Array [
     style={Object {}}
   >
     <div
-      className="sticky-inner-wrapper "
+      className="sticky-inner-wrapper"
       style={
         Object {
           "position": "relative",
@@ -2405,7 +2378,7 @@ Array [
             style={Object {}}
           >
             <div
-              className="sticky-inner-wrapper "
+              className="sticky-inner-wrapper"
               style={
                 Object {
                   "position": "relative",
@@ -2506,105 +2479,90 @@ Array [
             <div
               className="dr-ui--page-layout-aside col col--4-mxl"
             >
-              <div
-                className="sticky-outer-wrapper"
-                style={Object {}}
+              <aside
+                className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl"
+                data-swiftype-index="false"
+                style={
+                  Object {
+                    "top": "50px",
+                  }
+                }
               >
                 <div
-                  className="sticky-inner-wrapper "
-                  style={
-                    Object {
-                      "position": "relative",
-                      "top": "",
-                      "transform": "translate3d(0,0px,0)",
-                      "zIndex": undefined,
-                    }
-                  }
+                  className="dr-ui--page-layout-aside mb36-mxl mb18"
                 >
-                  <aside
-                    className="scroll-auto-mxl scroll-styled viewport-almost-mxl"
-                    data-swiftype-index="false"
+                  <h2
+                    className="unprose txt-h4 txt-fancy mb12"
                   >
-                    <div
-                      className="dr-ui--page-layout-aside mb36-mxl mb18"
+                    On this page
+                  </h2>
+                  <ul
+                    className=""
+                  >
+                    <li
+                      className="mb3 mb6-mxl"
                     >
+                      <a
+                        className="link inline-block link--gray"
+                        href="#section-1"
+                        style={
+                          Object {
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        Section 1
+                      </a>
+                    </li>
+                    <li
+                      className="mb3 mb6-mxl"
+                    >
+                      <a
+                        className="link inline-block link--gray"
+                        href="#section-2"
+                        style={
+                          Object {
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        Section 2
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  className="none block-mxl"
+                >
+                  <div
+                    className="dr-ui--feedback"
+                  >
+                    <div>
                       <h2
                         className="unprose txt-h4 txt-fancy mb12"
                       >
-                        On this page
+                        Was this 
+                        page
+                         helpful?
                       </h2>
-                      <ul
-                        className="unprose"
-                        id="aside-nav"
+                      <button
+                        className="btn btn--s"
+                        id="dr-ui--feedback-page-yes"
+                        onClick={[Function]}
                       >
-                        <li
-                          className="mb6-mxl mb3"
-                          id="on-this-page-section-1"
-                          style={
-                            Object {
-                              "wordBreak": "break-word",
-                            }
-                          }
-                        >
-                          <a
-                            className="link link--gray"
-                            href="#section-1"
-                          >
-                            Section 1
-                          </a>
-                        </li>
-                        <li
-                          className="mb6-mxl mb3"
-                          id="on-this-page-section-2"
-                          style={
-                            Object {
-                              "wordBreak": "break-word",
-                            }
-                          }
-                        >
-                          <a
-                            className="link link--gray"
-                            href="#section-2"
-                          >
-                            Section 2
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div
-                      className="none block-mxl"
-                    >
-                      <div
-                        className="dr-ui--feedback"
+                        Yes
+                      </button>
+                      <button
+                        className="btn btn--s ml6"
+                        id="dr-ui--feedback-page-no"
+                        onClick={[Function]}
                       >
-                        <div>
-                          <h2
-                            className="unprose txt-h4 txt-fancy mb12"
-                          >
-                            Was this 
-                            page
-                             helpful?
-                          </h2>
-                          <button
-                            className="btn btn--s"
-                            id="dr-ui--feedback-page-yes"
-                            onClick={[Function]}
-                          >
-                            Yes
-                          </button>
-                          <button
-                            className="btn btn--s ml6"
-                            id="dr-ui--feedback-page-no"
-                            onClick={[Function]}
-                          >
-                            No
-                          </button>
-                        </div>
-                      </div>
+                        No
+                      </button>
                     </div>
-                  </aside>
+                  </div>
                 </div>
-              </div>
+              </aside>
             </div>
             <div
               className="col col--8-mxl col--12 prose"
@@ -2719,7 +2677,7 @@ Array [
     style={Object {}}
   >
     <div
-      className="sticky-inner-wrapper "
+      className="sticky-inner-wrapper"
       style={
         Object {
           "position": "relative",
@@ -2858,7 +2816,7 @@ Array [
             style={Object {}}
           >
             <div
-              className="sticky-inner-wrapper "
+              className="sticky-inner-wrapper"
               style={
                 Object {
                   "position": "relative",
@@ -2959,105 +2917,90 @@ Array [
             <div
               className="dr-ui--page-layout-aside col col--4-mxl"
             >
-              <div
-                className="sticky-outer-wrapper"
-                style={Object {}}
+              <aside
+                className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl"
+                data-swiftype-index="false"
+                style={
+                  Object {
+                    "top": "50px",
+                  }
+                }
               >
                 <div
-                  className="sticky-inner-wrapper "
-                  style={
-                    Object {
-                      "position": "relative",
-                      "top": "",
-                      "transform": "translate3d(0,0px,0)",
-                      "zIndex": undefined,
-                    }
-                  }
+                  className="dr-ui--page-layout-aside mb36-mxl mb18"
                 >
-                  <aside
-                    className="scroll-auto-mxl scroll-styled viewport-almost-mxl"
-                    data-swiftype-index="false"
+                  <h2
+                    className="unprose txt-h4 txt-fancy mb12"
                   >
-                    <div
-                      className="dr-ui--page-layout-aside mb36-mxl mb18"
+                    On this page
+                  </h2>
+                  <ul
+                    className=""
+                  >
+                    <li
+                      className="mb3 mb6-mxl"
                     >
+                      <a
+                        className="link inline-block link--gray"
+                        href="#section-1"
+                        style={
+                          Object {
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        Section 1
+                      </a>
+                    </li>
+                    <li
+                      className="mb3 mb6-mxl"
+                    >
+                      <a
+                        className="link inline-block link--gray"
+                        href="#section-2"
+                        style={
+                          Object {
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        Section 2
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  className="none block-mxl"
+                >
+                  <div
+                    className="dr-ui--feedback"
+                  >
+                    <div>
                       <h2
                         className="unprose txt-h4 txt-fancy mb12"
                       >
-                        On this page
+                        Was this 
+                        page
+                         helpful?
                       </h2>
-                      <ul
-                        className="unprose"
-                        id="aside-nav"
+                      <button
+                        className="btn btn--s"
+                        id="dr-ui--feedback-page-yes"
+                        onClick={[Function]}
                       >
-                        <li
-                          className="mb6-mxl mb3"
-                          id="on-this-page-section-1"
-                          style={
-                            Object {
-                              "wordBreak": "break-word",
-                            }
-                          }
-                        >
-                          <a
-                            className="link link--gray"
-                            href="#section-1"
-                          >
-                            Section 1
-                          </a>
-                        </li>
-                        <li
-                          className="mb6-mxl mb3"
-                          id="on-this-page-section-2"
-                          style={
-                            Object {
-                              "wordBreak": "break-word",
-                            }
-                          }
-                        >
-                          <a
-                            className="link link--gray"
-                            href="#section-2"
-                          >
-                            Section 2
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div
-                      className="none block-mxl"
-                    >
-                      <div
-                        className="dr-ui--feedback"
+                        Yes
+                      </button>
+                      <button
+                        className="btn btn--s ml6"
+                        id="dr-ui--feedback-page-no"
+                        onClick={[Function]}
                       >
-                        <div>
-                          <h2
-                            className="unprose txt-h4 txt-fancy mb12"
-                          >
-                            Was this 
-                            page
-                             helpful?
-                          </h2>
-                          <button
-                            className="btn btn--s"
-                            id="dr-ui--feedback-page-yes"
-                            onClick={[Function]}
-                          >
-                            Yes
-                          </button>
-                          <button
-                            className="btn btn--s ml6"
-                            id="dr-ui--feedback-page-no"
-                            onClick={[Function]}
-                          >
-                            No
-                          </button>
-                        </div>
-                      </div>
+                        No
+                      </button>
                     </div>
-                  </aside>
+                  </div>
                 </div>
-              </div>
+              </aside>
             </div>
             <div
               className="col col--8-mxl col--12 prose"
@@ -3153,7 +3096,7 @@ Array [
     style={Object {}}
   >
     <div
-      className="sticky-inner-wrapper "
+      className="sticky-inner-wrapper"
       style={
         Object {
           "position": "relative",
