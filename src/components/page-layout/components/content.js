@@ -50,7 +50,7 @@ export default class Content extends React.Component {
       >
         {this.props.customAside ? this.props.customAside : undefined}
         {showToc && headings && headings.length > 0 && (
-          <OnThisPage headings={headings} />
+          <OnThisPage headings={headings} themeWrapper="mb36-mxl mb18" />
         )}
         {!hideFeedback && (
           <div className="none block-mxl">{this.renderFeedback()}</div>

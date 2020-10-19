@@ -59,7 +59,7 @@ export default class OnThisPage extends React.PureComponent {
   };
 
   render() {
-    const { headings } = this.props;
+    const { headings, themeWrapper } = this.props;
     const { lastActiveLink } = this.state;
 
     if (!headings) return <div />;
@@ -110,7 +110,7 @@ export default class OnThisPage extends React.PureComponent {
     };
 
     return (
-      <div className="dr-ui--on-this-page mb36-mxl mb18">
+      <div className={`dr-ui--on-this-page ${themeWrapper}`}>
         <AsideHeading>On this page</AsideHeading>
         <Headings headings={sections} />
       </div>
@@ -119,7 +119,6 @@ export default class OnThisPage extends React.PureComponent {
 }
 
 OnThisPage.propTypes = {
-  topOffset: PropTypes.number,
   /** Array of headings */
   headings: PropTypes.arrayOf(
     PropTypes.shape({
@@ -133,9 +132,14 @@ OnThisPage.propTypes = {
         })
       )
     })
-  )
+  ),
+  /** Assembly classes to apply to the containing wrapper */
+  themeWrapper: PropTypes.string,
+  /** Threshold that the anchor must pass to be considered the active anchor */
+  topOffset: PropTypes.number
 };
 
 OnThisPage.defaultProps = {
-  topOffset: 50
+  topOffset: 50,
+  themeWrapper: ''
 };

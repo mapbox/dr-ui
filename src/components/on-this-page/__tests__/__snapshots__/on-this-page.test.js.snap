@@ -14,7 +14,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
         className="sticky-mxl top"
       >
         <div
-          className="dr-ui--on-this-page mb36-mxl mb18"
+          className="dr-ui--on-this-page "
         >
           <h2
             className="unprose txt-h4 txt-fancy mb12"
