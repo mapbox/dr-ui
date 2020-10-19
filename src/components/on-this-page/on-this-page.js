@@ -1,9 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { AsideHeading, buildSections } from './helpers';
+import {
+  AsideHeading,
+  buildSections,
+  HeadingIcon,
+  getActiveHeaderAnchor
+} from './helpers';
 import classnames from 'classnames';
-import Icon from '@mapbox/mr-ui/icon';
 import debounce from 'debounce';
+
+// check if client body width is >= 1200
+const isMXL = document.body.clientWidth >= '1200';
 
 export default class OnThisPage extends React.PureComponent {
   constructor(props) {
@@ -12,62 +19,43 @@ export default class OnThisPage extends React.PureComponent {
       lastActiveLink: undefined
     };
   }
+
   componentDidMount() {
-    this.onScroll = debounce(this.setActiveLink, 50);
-    document.addEventListener('scroll', this.onScroll);
-    this.setActiveLink();
+    // on larger screens
+    if (isMXL) {
+      // create a debounced event listener on "scroll"
+      this.onScroll = debounce(this.setActiveLink, 50);
+      document.addEventListener('scroll', this.onScroll);
+      // set active link on load
+      this.setActiveLink();
+    }
   }
 
   componentWillUnmount() {
-    document.removeEventListener('scroll', this.onScroll);
+    // on larger screens, tear down event listener
+    if (isMXL) document.removeEventListener('scroll', this.onScroll);
   }
 
+  // set the active link based on the heading that is scrolled into view
   setActiveLink = () => {
     const { topOffset } = this.props;
-    function getActiveHeaderAnchor() {
-      // get all docs-content headers and then convert nodelist to array
-      const headersAnchors = Array.prototype.slice.call(
-        document.querySelectorAll(
-          '#docs-content h2.anchor, #docs-content h3.anchor'
-        )
-      );
-      // if there are no found header anchors, return undefined
-      if (!headersAnchors || headersAnchors.length === 0) return undefined;
-
-      const firstAnchorUnderViewportTop = headersAnchors.find((anchor) => {
-        const { top } = anchor.getBoundingClientRect();
-        return top >= topOffset;
-      });
-      if (firstAnchorUnderViewportTop) {
-        // If first anchor in viewport is under a certain threshold, we consider it's not the active anchor.
-        // In such case, the active anchor is the previous one (if it exists), that may be above the viewport
-        if (
-          firstAnchorUnderViewportTop.getBoundingClientRect().top >= topOffset
-        ) {
-          const previousAnchor =
-            headersAnchors[
-              headersAnchors.indexOf(firstAnchorUnderViewportTop) - 1
-            ];
-          return previousAnchor !== null && previousAnchor !== void 0
-            ? previousAnchor
-            : firstAnchorUnderViewportTop;
-        }
-        // If the anchor is at the top of the viewport, we consider it's the first anchor
-        else {
-          return firstAnchorUnderViewportTop;
-        }
-      }
-      // no anchor under viewport top
-      else {
-        return headersAnchors[headersAnchors.length - 1];
-      }
-    }
-    const activeHeaderAnchor = getActiveHeaderAnchor();
+    const activeHeaderAnchor = getActiveHeaderAnchor(topOffset);
+    // if activeHeaderAnchor has an id, set it as the lastActiveLink
     if (activeHeaderAnchor && activeHeaderAnchor.id) {
       this.setState({
         lastActiveLink: activeHeaderAnchor.id
       });
     }
+  };
+
+  // if the h2 or a (sub) h3 id matches `lastActiveLink`, mark this section as active
+  findActiveSection = (heading) => {
+    const { lastActiveLink } = this.state;
+    return (
+      (heading.children &&
+        heading.children.filter((f) => f.id === lastActiveLink).length > 0) ||
+      heading.id === lastActiveLink
+    );
   };
 
   render() {
@@ -81,7 +69,6 @@ export default class OnThisPage extends React.PureComponent {
       if (!headings || !headings.length) {
         return null;
       }
-
       return (
         <ul
           className={classnames('', {
@@ -91,11 +78,7 @@ export default class OnThisPage extends React.PureComponent {
           })}
         >
           {headings.map((heading) => {
-            const isActiveSection =
-              (heading.children &&
-                heading.children.filter((f) => f.id === lastActiveLink).length >
-                  0) ||
-              heading.id === lastActiveLink;
+            const isActiveSection = this.findActiveSection(heading);
             return (
               <li
                 key={heading.id}
@@ -111,14 +94,7 @@ export default class OnThisPage extends React.PureComponent {
                     'link--gray': heading.id !== lastActiveLink
                   })}
                 >
-                  {heading.icon && (
-                    <div
-                      className="color-darken75 mr6 w18 h18 bg-gray-faint round-full flex-parent-inline flex-parent--center-main flex-parent--center-cross relative ml-neg12"
-                      style={{ top: 3 }}
-                    >
-                      <Icon size={16} name={heading.icon} />
-                    </div>
-                  )}
+                  {heading.icon && <HeadingIcon name={heading.icon} />}
                   {heading.value}
                 </a>
                 <Headings
@@ -134,7 +110,7 @@ export default class OnThisPage extends React.PureComponent {
     };
 
     return (
-      <div className="dr-ui--page-layout-aside mb36-mxl mb18">
+      <div className="dr-ui--on-this-page mb36-mxl mb18">
         <AsideHeading>On this page</AsideHeading>
         <Headings headings={sections} />
       </div>

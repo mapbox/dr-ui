@@ -2023,7 +2023,7 @@ Array [
                 }
               >
                 <div
-                  className="dr-ui--page-layout-aside mb36-mxl mb18"
+                  className="dr-ui--on-this-page mb36-mxl mb18"
                 >
                   <h2
                     className="unprose txt-h4 txt-fancy mb12"
@@ -2489,7 +2489,7 @@ Array [
                 }
               >
                 <div
-                  className="dr-ui--page-layout-aside mb36-mxl mb18"
+                  className="dr-ui--on-this-page mb36-mxl mb18"
                 >
                   <h2
                     className="unprose txt-h4 txt-fancy mb12"
@@ -2927,7 +2927,7 @@ Array [
                 }
               >
                 <div
-                  className="dr-ui--page-layout-aside mb36-mxl mb18"
+                  className="dr-ui--on-this-page mb36-mxl mb18"
                 >
                   <h2
                     className="unprose txt-h4 txt-fancy mb12"

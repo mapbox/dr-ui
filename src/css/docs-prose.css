@@ -70,13 +70,14 @@
     position: sticky;
   }
 
-  /* move aside to right on larger screens */
-  .dr-ui--page-layout-aside {
-    order: 2;
-  }
   .scroll-auto-mxl {
     overflow: auto !important;
     -webkit-overflow-scrolling: touch;
+  }
+
+  /* move aside to right on larger screens */
+  .dr-ui--page-layout-aside {
+    order: 2;
   }
 
   /* lessen scale on larger screens */
@@ -87,8 +88,8 @@
 }
 
 @media screen and (max-width: 1200px) {
-  /* on smaller screens always hide h3s in OnThisPage */
-  .dr-ui--page-layout-aside li ul {
+  /* on smaller screens always hide h3s in Aside's OnThisPage */
+  .dr-ui--page-layout-aside .dr-ui--on-this-page li ul {
     display: none !important;
   }
 }
