@@ -10,7 +10,8 @@ import classnames from 'classnames';
 import debounce from 'debounce';
 
 // check if client body width is >= 1200
-const isMXL = document.body.clientWidth >= 1200;
+const isMXL =
+  typeof document !== 'undefined' ? document.body.clientWidth >= 1200 : false;
 
 export default class OnThisPage extends React.PureComponent {
   constructor(props) {
