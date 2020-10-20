@@ -12,6 +12,7 @@
   - Removed background color and use `AsideHeading` component to style the component's heading.
 - Update `docs-prose.css`.
   - You can now use `.unprose` class on `#docs-content h2` elements to remove the styling.
+  - Add `sticky-mxl` and `scroll-auto-mxl` classes to enable a sticky position and scrolling on displays >= 1200 pixels.
 
 ## 1.3.0
 
