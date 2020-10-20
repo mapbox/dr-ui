@@ -80,8 +80,8 @@
     order: 2;
   }
 
-  /* lessen scale on larger screens */
-  .dr-ui--page-layout-aside li {
+  /* lessen scale of Aside's OnThisPage links on larger screens */
+  .dr-ui--page-layout-aside .dr-ui--on-this-page li {
     font-size: 14px;
     line-height: 1.4;
   }
