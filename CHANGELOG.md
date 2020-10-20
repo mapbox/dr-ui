@@ -7,7 +7,7 @@
   - 🚨This update removes the need for the `@mapbox/dr-ui/plugins/create-sections` plugin and it is now deprecated. You can safely remove it from your `batfish.config.js`.
   - 🚨All h2 and h3 elements that will appear as links in the `OnThisPage` component must have the class `anchor`. The `add-links-to-headings` plugin will automatically add this class to markdown headings, but if you add HTML headings to the page, then you must add the `anchor` class to each h2 and h3 element to make sure the scroll spy can detect these headings.
 - Update `PageLayout` component.
-  - Add aside feature which includes the `OnThisPage` and `Feedback` components. On larger devices, the aside is stuck to the right-side of the screen. On smaller devices, `OnThisPage` moves inline below the page's title and `Feedback` will appear at the bottom of the page.
+  - Add aside feature which includes the `OnThisPage` and `Feedback` components. On larger devices, the aside is stuck to the right-side of the screen. On smaller devices, `OnThisPage` moves inline below the page's title and `Feedback` will appear at the bottom of the page. The aside feature does not stick on IE 11 and remains static, but still performs the core functionality of providing anchor links.
 - Update `Feedback` component.
   - Removed background color and use `AsideHeading` component to style the component's heading.
 - Update `docs-prose.css`.
