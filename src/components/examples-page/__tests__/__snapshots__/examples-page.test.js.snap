@@ -9,7 +9,7 @@ exports[`examples-page Basic renders as expected 1`] = `
         href="#container-title-one"
       >
         <h2
-          className="txt-bold unprose"
+          className="txt-bold"
           id="container-title-one"
         >
           Container title one
@@ -108,7 +108,7 @@ exports[`examples-page Basic renders as expected 1`] = `
         href="#container-title-two"
       >
         <h2
-          className="txt-bold unprose"
+          className="txt-bold"
           id="container-title-two"
         >
           Container title two
@@ -248,7 +248,7 @@ exports[`examples-page Cards with no images and full-width renders as expected 1
         href="#container-title-one"
       >
         <h2
-          className="txt-bold unprose"
+          className="txt-bold"
           id="container-title-one"
         >
           Container title one
@@ -321,7 +321,7 @@ exports[`examples-page Cards with no images and full-width renders as expected 1
         href="#container-title-two"
       >
         <h2
-          className="txt-bold unprose"
+          className="txt-bold"
           id="container-title-two"
         >
           Container title two

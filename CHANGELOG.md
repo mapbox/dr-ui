@@ -11,7 +11,7 @@
 - Update `Feedback` component.
   - Removed background color and use `AsideHeading` component to style the component's heading.
 - Update `docs-prose.css`.
-  - You can now use `.unprose` class on `h2` elements to remove the styling.
+  - You can now use `.unprose` class on `#docs-content h2` elements to remove the styling.
 
 ## 1.3.0
 

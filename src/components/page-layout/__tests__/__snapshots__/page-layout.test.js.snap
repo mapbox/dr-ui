@@ -1114,7 +1114,7 @@ Array [
                       href="/PageLayout/#cool"
                     >
                       <h2
-                        className="txt-bold unprose"
+                        className="txt-bold"
                         id="cool"
                       >
                         Cool
@@ -1300,7 +1300,7 @@ Array [
                       href="/PageLayout/#awesome"
                     >
                       <h2
-                        className="txt-bold unprose"
+                        className="txt-bold"
                         id="awesome"
                       >
                         Awesome
