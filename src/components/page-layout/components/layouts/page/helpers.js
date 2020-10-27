@@ -1,6 +1,5 @@
 import React from 'react';
 import classnames from 'classnames';
-import UncontrolledAccordion from '@mapbox/mr-ui/uncontrolled-accordion';
 
 export function buildSections(headings) {
   if (!headings) return [];
@@ -36,40 +35,31 @@ export function buildToc(sections) {
   });
 }
 
-export function buildSitesNav(navSites) {
-  function buildSubItems(site) {
-    if (!site.sectionPages) return;
-    const siteItems = site.sectionPages.map((page, index) => {
-      return (
-        <li key={index}>
-          <a href={page.path}>
-            {page.title}
-          </a>
-        </li>
-      );
-    });
+export function describePageStructure(navigation, parentPath) {
+  // navigation.pages -- just uses "organized" for now
+  const { pages, navTabs } = navigation;
+  const tabIndex = navTabs.findIndex((tab) => tab.id === parentPath);
+  if (!tabIndex) return;
 
-    return siteItems;
-  }
+  let filteredPages = [];
+  // End up with an array of page objects
+  Object.keys(pages).forEach((page) => {
+    const isChild = page === navTabs[tabIndex].id;
+    // Possibly need to account for empty pages lists
+    if (isChild) {
+      // Only get pages with "page" layout,
+      const matchingPages = pages[page].pages.filter((child) => {
+        const isPageParent = child.path === parentPath;
+        if (isPageParent) return false;
+        if (!child.layout || child.layout !== 'page') return false;
+        return true;
+      });
+      filteredPages.push(...matchingPages);
+    }
+  });
 
-  function buildItems() {
-    const items = navSites.map((site, index) => {
-      const { title, path } = site.sectionTitle;
-      return {
-        id: title,
-        header: () => <a key={index} href={path}>{title}</a>,
-        body: () => <ul key={index}>{buildSubItems(site.sitePages)}</ul>
-      }
-    });
+  // Only add filtered pages to active tab
+  navTabs[tabIndex].pages = [...filteredPages];
 
-    return items;
-  }
-
-  return (
-    <UncontrolledAccordion
-      items={[
-        buildItems()
-      ]}
-    />
-  )
+  return navTabs;
 }

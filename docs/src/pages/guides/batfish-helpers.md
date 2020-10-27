@@ -4,7 +4,7 @@ description: Batfish data selector functions to build navigation and topic datas
 order: 2
 contentType: guide
 hideFeedback: true
-layout: accordion
+layout: page
 products:
   - Documentation
 prependJs:

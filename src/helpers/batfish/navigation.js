@@ -14,6 +14,7 @@ function buildNavigation(siteBasePath, data, sections) {
     obj.navTabs = buildNavTabs(organized);
     obj.accordion = buildAccordion(organized);
     obj.hierarchy = buildHierarchy(organized);
+    obj.pages = organized;
   }
   return obj;
 }

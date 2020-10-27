@@ -1,65 +1,117 @@
 import React from 'react';
-import Scrollspy from 'react-scrollspy';
 import PropTypes from 'prop-types';
-import { buildSitesNav } from './helpers';
+import classnames from 'classnames';
+import { describePageStructure } from './helpers';
+import { findParentPath } from '../../../utils';
 
 export default class SidebarPage extends React.PureComponent {
-  render() {
-    const { navSites } = this.props;
-    if (!navSites) return <div />;
-    /* const sites = buildSections(this.props.navSites); */
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeItem: null,
+      navStructure: null
+    };
+  }
+
+  componentDidMount() {
+    const { navigation, location } = this.props;
+    const isInNavTabs = navigation.navTabs.some((tab) =>
+      Object.prototype.hasOwnProperty.call(tab, location.pathname)
+    );
+    const thisSidebarParent = isInNavTabs
+      ? location.pathname
+      : findParentPath(navigation, location.pathname);
+
+    const navStructure = describePageStructure(
+      this.props.navigation,
+      thisSidebarParent
+    );
+    this.setState({
+      navStructure,
+      activeItem: location.pathname
+    });
+  }
+
+  renderHeader(index, href, label) {
     return (
-      <div className="mx24 py12 none block-mm">
-        {/* 
-          * We should no longer need any scrollspy or a TOC
-        <Scrollspy
-          items={buildScollspyItems(sites)}
-          currentClassName="txt-bold"
-        >
-          {buildToc(sites)}
-        </Scrollspy> */}
-        {buildSitesNav(navSites)}
-      </div>
+      <a
+        href={href}
+        className="navItems inline-block txt-l txt-bold color-darken50 txt-uppercase"
+      >
+        {label}
+      </a>
+    );
+  }
+  renderBodySubItems(site, activeItem) {
+    if (!site.pages) return;
+    // if page.id matches active item
+    // Apply special classnames
+    const subItems = site.pages.map((page, index) => {
+      const isActive = activeItem === page.path;
+      const subItemClasses = classnames(
+        'color-gray-dark txt-bold py6 pl18 mt12 ml3 round-full',
+        {
+          'bg-blue-faint color-blue': isActive
+        }
+      );
+      return (
+        <li className={subItemClasses} key={index}>
+          <a href={page.path}>{page.title}</a>
+        </li>
+      );
+    });
+
+    return subItems;
+  }
+  renderBody(index, pages, activeItem) {
+    return <ul key={index}>{this.renderBodySubItems(pages, activeItem)}</ul>;
+  }
+
+  renderItems() {
+    if (!this.state.navStructure) return [];
+    const { navStructure, activeItem } = this.state;
+
+    const items = navStructure.map((parentPage, index) => {
+      const { label, id, href } = parentPage;
+      const headerEls = this.renderHeader(index, href, label);
+      const bodyEls = this.renderBody(index, parentPage, activeItem);
+      return {
+        id: id,
+        header: headerEls,
+        body: bodyEls
+      };
+    });
+
+    return items;
+  }
+
+  renderSidebar(items) {
+    const parentItems = items.map((item, index) => {
+      const containerClasses = classnames('sidebar-item pl12 py24', {
+        'border-t border--gray-light ': index !== 0
+      });
+      return (
+        <React.Fragment>
+          <div key={index} className={containerClasses}>
+            {item.header}
+            {item.body}
+          </div>
+        </React.Fragment>
+      );
+    });
+
+    return parentItems;
+  }
+
+  render() {
+    const items = this.renderItems();
+    return (
+      <div className="mx24 py12 none block-mm">{this.renderSidebar(items)}</div>
     );
   }
 }
 
-/*
- * Example:  
-[
-  {
-    site: {
-      sectionTitle: {
-        title: 'Breakfast',
-        path: '/meals/breakfast/'
-      },
-      sitePages: [
-        {
-          title: 'Eggs',
-          path: '/meals/breakfast/eggs/'
-        },
-        {
-          title: 'Pancakes',
-          path: '/meals/breakfast/pancakes/'
-        }
-      ]
-    }
-  },
-  {...}
-] 
-*/
-
 SidebarPage.propTypes = {
-  navSites: PropTypes.arrayOf(PropTypes.shape({
-    site: PropTypes.shape({
-      sectionTitle: PropTypes.shape({
-        title: PropTypes.string,
-        path: PropTypes.string
-      }),
-      sitePages: PropTypes.arrayOf(PropTypes.shape({
-        title: PropTypes.string,
-        path: PropTypes.string
-      }))
-    })
-  }))
+  navigation: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired
 };
