@@ -2022,11 +2022,13 @@ Array [
                   }
                 }
               >
-                <div
+                <nav
+                  aria-labelledby="on-this-page"
                   className="dr-ui--on-this-page mb36-mxl mb18"
                 >
                   <h2
                     className="unprose txt-h4 txt-fancy mb12"
+                    id="on-this-page"
                   >
                     On this page
                   </h2>
@@ -2064,7 +2066,7 @@ Array [
                       </a>
                     </li>
                   </ul>
-                </div>
+                </nav>
                 <div
                   className="none block-mxl"
                 >
@@ -2488,11 +2490,13 @@ Array [
                   }
                 }
               >
-                <div
+                <nav
+                  aria-labelledby="on-this-page"
                   className="dr-ui--on-this-page mb36-mxl mb18"
                 >
                   <h2
                     className="unprose txt-h4 txt-fancy mb12"
+                    id="on-this-page"
                   >
                     On this page
                   </h2>
@@ -2530,7 +2534,7 @@ Array [
                       </a>
                     </li>
                   </ul>
-                </div>
+                </nav>
                 <div
                   className="none block-mxl"
                 >
@@ -2926,11 +2930,13 @@ Array [
                   }
                 }
               >
-                <div
+                <nav
+                  aria-labelledby="on-this-page"
                   className="dr-ui--on-this-page mb36-mxl mb18"
                 >
                   <h2
                     className="unprose txt-h4 txt-fancy mb12"
+                    id="on-this-page"
                   >
                     On this page
                   </h2>
@@ -2968,7 +2974,7 @@ Array [
                       </a>
                     </li>
                   </ul>
-                </div>
+                </nav>
                 <div
                   className="none block-mxl"
                 >

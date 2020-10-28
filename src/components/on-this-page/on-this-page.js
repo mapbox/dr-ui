@@ -110,10 +110,13 @@ export default class OnThisPage extends React.PureComponent {
     };
 
     return (
-      <div className={`dr-ui--on-this-page ${themeWrapper}`}>
-        <AsideHeading>On this page</AsideHeading>
+      <nav
+        aria-labelledby="on-this-page"
+        className={`dr-ui--on-this-page ${themeWrapper}`}
+      >
+        <AsideHeading id="on-this-page">On this page</AsideHeading>
         <Headings headings={sections} />
-      </div>
+      </nav>
     );
   }
 }

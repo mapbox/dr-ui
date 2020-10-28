@@ -81,13 +81,16 @@ export function getActiveHeaderAnchor(topOffset) {
 export class AsideHeading extends React.PureComponent {
   render() {
     return (
-      <h2 className="unprose txt-h4 txt-fancy mb12">{this.props.children}</h2>
+      <h2 id={this.props.id} className="unprose txt-h4 txt-fancy mb12">
+        {this.props.children}
+      </h2>
     );
   }
 }
 
 AsideHeading.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
+  id: PropTypes.string
 };
 
 export class HeadingIcon extends React.PureComponent {

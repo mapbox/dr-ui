@@ -13,11 +13,13 @@ exports[`OnThisPage Basic renders as expected 1`] = `
       <div
         className="sticky-mxl top"
       >
-        <div
+        <nav
+          aria-labelledby="on-this-page"
           className="dr-ui--on-this-page "
         >
           <h2
             className="unprose txt-h4 txt-fancy mb12"
+            id="on-this-page"
           >
             On this page
           </h2>
@@ -258,7 +260,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
               </a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
     </div>
     <div
