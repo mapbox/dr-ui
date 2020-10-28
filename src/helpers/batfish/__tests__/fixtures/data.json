@@ -59,6 +59,7 @@
         "layout": "example",
         "fullWidthCards": true,
         "hideTitle": true,
+        "hideFeedback": true,
         "products": ["Documentation"]
       }
     },
@@ -70,7 +71,6 @@
         "description": "Batfish data selector functions to build navigation and topic datasets.",
         "order": 2,
         "contentType": "guide",
-        "hideFeedback": true,
         "layout": "accordion",
         "products": ["Documentation"],
         "prependJs": [
@@ -103,7 +103,6 @@
         "description": "How to build a site with more than one product.",
         "order": 4,
         "layout": "accordion",
-        "hideFeedback": true,
         "contentType": "guide",
         "products": ["Documentation"]
       }
@@ -116,7 +115,6 @@
         "description": "All about building with PageLayout.",
         "order": 3,
         "layout": "accordion",
-        "hideFeedback": true,
         "contentType": "guide",
         "products": ["Documentation"],
         "prependJs": [
@@ -141,8 +139,7 @@
         "splitPages": true,
         "order": 3,
         "layout": "accordion",
-        "contentType": "API",
-        "hideFeedback": true
+        "contentType": "API"
       }
     },
     {
@@ -214,7 +211,7 @@
         "description": "Example of a Help page.",
         "contentType": "example",
         "navOrder": 4,
-        "layout": "example",
+        "layout": "exampleIndex",
         "fullWidthCards": true,
         "hideTitle": true,
         "products": ["Documentation"]
@@ -227,7 +224,7 @@
         "title": "Components",
         "description": "UI components for Mapbox documentation projects.",
         "navOrder": 1,
-        "layout": "example",
+        "layout": "page",
         "contentType": "reference",
         "products": ["Documentation"],
         "hideSubItems": false,

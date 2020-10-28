@@ -5,8 +5,8 @@
   font-size: 36px;
 }
 
-#docs-content .prose h2,
-#docs-content.prose h2 {
+#docs-content .prose h2:not(.unprose),
+#docs-content.prose h2:not(.unprose) {
   font-weight: normal !important;
   font-size: 30px;
   border-top: 1px solid !important;
@@ -62,5 +62,34 @@
   .scroll-auto-mm {
     overflow: auto !important;
     -webkit-overflow-scrolling: touch;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sticky-mxl {
+    position: sticky;
+  }
+
+  .scroll-auto-mxl {
+    overflow: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* move aside to right on larger screens */
+  .dr-ui--page-layout-aside {
+    order: 2;
+  }
+
+  /* lessen scale of Aside's OnThisPage links on larger screens */
+  .dr-ui--page-layout-aside .dr-ui--on-this-page li {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* on smaller screens always hide h3s in Aside's OnThisPage */
+  .dr-ui--page-layout-aside .dr-ui--on-this-page li ul {
+    display: none !important;
   }
 }

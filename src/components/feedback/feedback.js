@@ -8,6 +8,7 @@ import * as Sentry from '@sentry/browser';
 import classnames from 'classnames';
 import slugify from 'slugify';
 import env from '../analytics-shell/env';
+import { AsideHeading } from '../on-this-page/helpers';
 
 const feedbackLimit = 1000; // character limit for the feedback textarea
 const anonymousId = uuidv4(); // creates an anonymousId fallback if user is not logged or we cant get their info
@@ -178,94 +179,84 @@ class Feedback extends React.Component {
       : feedbackLimit;
     const feedbackOverLimit = feedbackLength < 0;
     return (
-      <div className="bg-gray-faint py12 px18 round color-gray">
-        <div>
-          {this.state.helpful === undefined && (
-            <div>
-              <div className="mb6">Was this {this.props.type} helpful?</div>
-              <button
-                id={this.createId('yes')}
-                onClick={() => this.handleYesNo(true)}
-                className="btn btn--s"
-              >
-                Yes
-              </button>
-              <button
-                id={this.createId('no')}
-                onClick={() => this.handleYesNo(false)}
-                className="btn btn--s ml6"
-              >
-                No
-              </button>
-            </div>
-          )}
+      <div className="dr-ui--feedback">
+        {this.state.helpful === undefined && (
+          <div>
+            <AsideHeading>Was this {this.props.type} helpful?</AsideHeading>
+            <button
+              id={this.createId('yes')}
+              onClick={() => this.handleYesNo(true)}
+              className="btn btn--s"
+            >
+              Yes
+            </button>
+            <button
+              id={this.createId('no')}
+              onClick={() => this.handleYesNo(false)}
+              className="btn btn--s ml6"
+            >
+              No
+            </button>
+          </div>
+        )}
 
-          {this.state.helpful !== undefined && (
-            <div>
-              <div className="inline-block bg-green color-white round-full w18 h18 align-middle mr3 mb3">
-                <Icon name="check" />
-              </div>{' '}
-              Thanks for your feedback.
-            </div>
-          )}
+        {this.state.helpful !== undefined && (
+          <AsideHeading>Thanks for your feedback.</AsideHeading>
+        )}
 
-          {this.state.helpful !== undefined &&
-            this.state.feedbackSent === undefined && (
-              <div className="mt12">
-                <div className="mb6">
-                  If you have more specific feedback
-                  {this.state.helpful === false &&
-                    ` on how we can improve this ${this.props.type}`}
-                  , you can provide it below (optional):
-                </div>
-                <div className="relative">
-                  <ControlTextarea
-                    id={this.createId('text')}
-                    themeControlWrapper="bg-white mb6"
-                    onChange={this.handleText}
-                    value={this.state.feedback}
-                  />
-                  <FeedbackCounter
-                    createId={this.createId}
-                    feedbackOverLimit={feedbackOverLimit}
-                    feedbackLength={feedbackLength}
-                  />
-                </div>
-                <div className="mb12">
-                  <button
-                    id={this.createId('submit')}
-                    disabled={
-                      this.state.feedback === undefined ||
-                      this.state.feedback.length < 3 || // disable button unless more than 3 characters are typed
-                      feedbackOverLimit
-                    }
-                    className="btn btn--s mb6 mr12 inline-block"
-                    onClick={this.handleSubmitFeedback}
-                  >
-                    Send feedback
-                  </button>
-                  {feedbackOverLimit && (
-                    <FeedbackOverlimitWarning
-                      createId={this.createId}
-                      feedbackLimit={feedbackLimit}
-                    />
-                  )}
-                </div>
-
-                <div className="txt-s txt-em">
-                  This form is for documentation feedback. If you have a
-                  technical question about how to use a Mapbox product,{' '}
-                  <a
-                    href="https://support.mapbox.com/hc/en-us"
-                    className="link"
-                  >
-                    contact Support
-                  </a>
-                  .
-                </div>
+        {this.state.helpful !== undefined &&
+          this.state.feedbackSent === undefined && (
+            <div className="mt12">
+              <div className="mb6">
+                If you have more specific feedback
+                {this.state.helpful === false &&
+                  ` on how we can improve this ${this.props.type}`}
+                , you can provide it below (optional):
               </div>
-            )}
-        </div>
+              <div className="relative">
+                <ControlTextarea
+                  id={this.createId('text')}
+                  themeControlWrapper="bg-white mb6"
+                  onChange={this.handleText}
+                  value={this.state.feedback}
+                />
+                <FeedbackCounter
+                  createId={this.createId}
+                  feedbackOverLimit={feedbackOverLimit}
+                  feedbackLength={feedbackLength}
+                />
+              </div>
+              <div className="mb12">
+                <button
+                  id={this.createId('submit')}
+                  disabled={
+                    this.state.feedback === undefined ||
+                    this.state.feedback.length < 3 || // disable button unless more than 3 characters are typed
+                    feedbackOverLimit
+                  }
+                  className="btn btn--s mb6 mr12 inline-block"
+                  onClick={this.handleSubmitFeedback}
+                >
+                  Send feedback
+                </button>
+                {feedbackOverLimit && (
+                  <FeedbackOverlimitWarning
+                    createId={this.createId}
+                    feedbackLimit={feedbackLimit}
+                  />
+                )}
+              </div>
+
+              <div className="txt-s txt-em">
+                This form is for documentation feedback. If you have a technical
+                question about how to use a Mapbox product,{' '}
+                <a href="https://support.mapbox.com/hc/en-us" className="link">
+                  contact Support
+                </a>
+                .
+              </div>
+            </div>
+          )}
       </div>
     );
   }
