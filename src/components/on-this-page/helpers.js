@@ -34,6 +34,7 @@ export function buildSections(headings) {
 }
 
 // finds the active header anchor
+// adapted from https://github.com/facebook/docusaurus/blob/2aae77124eaaac3d768547a88f77c4b2402f7dec/packages/docusaurus-theme-classic/src/theme/hooks/useTOCHighlight.ts
 export function getActiveHeaderAnchor(topOffset) {
   // get all docs-content headers and then convert nodelist to array
   const headersAnchors = Array.prototype.slice.call(
