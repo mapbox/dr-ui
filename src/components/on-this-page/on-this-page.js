@@ -49,8 +49,8 @@ export default class OnThisPage extends React.PureComponent {
     }
   };
 
-  // if the h2 or a (sub) h3 id matches `lastActiveLink`, mark this section as active
-  findActiveSection = (heading) => {
+  // if the h2 or a (sub) h3 id matches `lastActiveLink` return true
+  isActive = (heading) => {
     const { lastActiveLink } = this.state;
     return (
       (heading.children &&
@@ -79,7 +79,6 @@ export default class OnThisPage extends React.PureComponent {
           })}
         >
           {headings.map((heading) => {
-            const isActiveSection = this.findActiveSection(heading);
             return (
               <li
                 key={heading.id}
@@ -100,7 +99,7 @@ export default class OnThisPage extends React.PureComponent {
                 </a>
                 <Headings
                   isChild
-                  active={isActiveSection}
+                  active={this.isActive(heading)}
                   headings={heading.children}
                 />
               </li>
