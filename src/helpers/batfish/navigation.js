@@ -14,7 +14,6 @@ function buildNavigation(siteBasePath, data, sections) {
     obj.navTabs = buildNavTabs(organized);
     obj.accordion = buildAccordion(organized);
     obj.hierarchy = buildHierarchy(organized);
-    obj.pages = organized;
   }
   return obj;
 }
@@ -126,7 +125,7 @@ function buildNavTabs(organized) {
 function buildAccordion(organized) {
   return Object.keys(organized).reduce((obj, path) => {
     const pages = organized[path].pages.filter(
-      (f) => !f.hideFromNav && f.layout === 'accordion'
+      (f) => !f.hideFromNav && f.layout === 'page'
     );
     const sortedPages = accordionSorter(pages);
     if (sortedPages.length > 0) {

@@ -105,8 +105,7 @@ Sidebar.propTypes = {
     tag: PropTypes.string,
     navTabs: PropTypes.array,
     path: PropTypes.string,
-    accordion: PropTypes.object,
-    pages: PropTypes.object
+    accordion: PropTypes.object
   }).isRequired,
   frontMatter: PropTypes.shape({
     navOrder: PropTypes.number,

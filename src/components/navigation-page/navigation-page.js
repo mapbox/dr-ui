@@ -84,10 +84,10 @@ export default class NavigationPage extends React.PureComponent {
   }
 
   renderSidebar(items) {
-    const parentItems = items.map((item, index) => {
+    const sidebarItems = items.map((item, index) => {
       return (
         <React.Fragment key={index}>
-          <div className='sidebar-item pt24'>
+          <div className='pt24'>
             {item.header}
             {item.body}
           </div>
@@ -95,7 +95,7 @@ export default class NavigationPage extends React.PureComponent {
       );
     });
 
-    return parentItems;
+    return sidebarItems;
   }
 
   render() {
