@@ -1,5 +1,8 @@
 # Changelog
 
+- Remove NavigationAccordion from page layouts and replace with simpler sidebar.
+- Move navigation tabs from page layout and move into the left sidebar.
+
 ## 1.3.0
 
 - Add new props to `Search` to allow further customization by other subdomains. [#329](https://github.com/mapbox/dr-ui/pull/329)

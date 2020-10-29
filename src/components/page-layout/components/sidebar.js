@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Sticky from 'react-stickynode';
 import debounce from 'debounce';
 import classnames from 'classnames';
-import SidebarPage from './layouts/page/sidebar';
+import SidebarPage from './page-sidebar';
 import SidebarExamples from './layouts/example/sidebar';
 
 const sidebarContentStickyTop = 60;
@@ -58,29 +58,15 @@ export default class Sidebar extends React.Component {
       layoutConfig
     } = this.props;
 
+    /* Should we support some of these other features as well?
     const { sidebarTitle } = frontMatter;
+    const { hideSubItems, sidebar, includeFilterBar } = layoutConfig; */
 
-    const { hideSubItems, sidebar, includeFilterBar } = layoutConfig;
-
-    switch (sidebar) {
-      case 'toc':
-        return (
-          <SidebarPage navigation={navigation} location={location}>
-            {children}
-          </SidebarPage>
-        );
-      case 'sectioned':
-        return (
-          <SidebarExamples
-            topics={topics[parentPath].topics}
-            hideSubItems={hideSubItems}
-            sectionPath={parentPath}
-            includeFilterBar={includeFilterBar}
-            sidebarTitle={sidebarTitle}
-            location={this.props.location}
-          />
-        );
-    }
+    return (
+      <SidebarPage navigation={navigation} location={location}>
+        {children}
+      </SidebarPage>
+    );
   };
 
   render() {

@@ -3,6 +3,7 @@ title: Page layout
 description: Example of page layout page.
 contentType: example
 navOrder: 5
+order: 1
 layout: page
 products:
   - Documentation

@@ -34,32 +34,3 @@ export function buildToc(sections) {
     );
   });
 }
-
-export function describePageStructure(navigation, parentPath) {
-  // navigation.pages -- just uses "organized" for now
-  const { pages, navTabs } = navigation;
-  const tabIndex = navTabs.findIndex((tab) => tab.id === parentPath);
-  if (!tabIndex) return;
-
-  let filteredPages = [];
-  // End up with an array of page objects
-  Object.keys(pages).forEach((page) => {
-    const isChild = page === navTabs[tabIndex].id;
-    // Possibly need to account for empty pages lists
-    if (isChild) {
-      // Only get pages with "page" layout,
-      const matchingPages = pages[page].pages.filter((child) => {
-        const isPageParent = child.path === parentPath;
-        if (isPageParent) return false;
-        if (!child.layout || child.layout !== 'page') return false;
-        return true;
-      });
-      filteredPages.push(...matchingPages);
-    }
-  });
-
-  // Only add filtered pages to active tab
-  navTabs[tabIndex].pages = [...filteredPages];
-
-  return navTabs;
-}
