@@ -6,23 +6,40 @@
       "frontMatter": {}
     },
     {
+      "filePath": "./docs/src/pages/components/index.md",
+      "path": "/dr-ui/components/",
+      "frontMatter": {
+        "title": "Components",
+        "description": "UI components for Mapbox documentation projects.",
+        "navOrder": 1,
+        "layout": "example",
+        "contentType": "reference",
+        "products": ["Documentation"],
+        "hideSubItems": false,
+        "showCards": false,
+        "includeFilterBar": true,
+        "hideTitle": true,
+        "unProse": true,
+        "prependJs": [
+          "import Note from '../../../../src/components/note'",
+          "import OverviewHeader from '../../../../src/components/overview-header'",
+          "import App from '../../app.js'",
+          "const version = require('../../../../package.json').version; // eslint-disable-line"
+        ]
+      }
+    },
+    {
       "filePath": "./docs/src/pages/examples/example-1.md",
       "path": "/dr-ui/examples/example-1/",
       "frontMatter": {
         "title": "Example 1",
         "description": "This is example 1.",
         "contentType": "example",
-        "language": [
-          "JavaScript"
-        ],
-        "topics": [
-          "Navigation"
-        ],
+        "language": ["JavaScript"],
+        "topics": ["Navigation"],
         "thumbnail": "header-image",
         "layout": "example",
-        "products": [
-          "Documentation"
-        ]
+        "products": ["Documentation"]
       }
     },
     {
@@ -32,17 +49,11 @@
         "title": "Example 2",
         "description": "This is example 2.",
         "contentType": "example",
-        "language": [
-          "JavaScript"
-        ],
-        "topics": [
-          "Navigation"
-        ],
+        "language": ["JavaScript"],
+        "topics": ["Navigation"],
         "thumbnail": "header-image",
         "layout": "example",
-        "products": [
-          "Documentation"
-        ]
+        "products": ["Documentation"]
       }
     },
     {
@@ -52,18 +63,11 @@
         "title": "Example 3",
         "description": "This is example 3.",
         "contentType": "example",
-        "language": [
-          "JavaScript"
-        ],
-        "topics": [
-          "Navigation",
-          "Geocoding"
-        ],
+        "language": ["JavaScript"],
+        "topics": ["Navigation", "Geocoding"],
         "thumbnail": "header-image",
         "layout": "example",
-        "products": [
-          "Documentation"
-        ]
+        "products": ["Documentation"]
       }
     },
     {
@@ -73,21 +77,22 @@
         "title": "Examples",
         "description": "Replace me.",
         "contentType": "example",
-        "language": [
-          "JavaScript"
-        ],
+        "language": ["JavaScript"],
         "navOrder": 3,
         "layout": "example",
         "fullWidthCards": true,
         "hideTitle": true,
-        "products": [
-          "Documentation"
-        ]
+        "products": ["Documentation"]
       }
     },
     {
-      "filePath": "./docs/src/pages/guides/batfish-helpers.md",
-      "path": "/dr-ui/guides/batfish-helpers/",
+      "filePath": "./docs/src/pages/guides/index.js",
+      "path": "/dr-ui/guides/",
+      "frontMatter": {}
+    },
+    {
+      "filePath": "./docs/src/pages/guides/overview/batfish-helpers.md",
+      "path": "/dr-ui/guides/overview/batfish-helpers/",
       "frontMatter": {
         "title": "Batfish helpers",
         "description": "Batfish data selector functions to build navigation and topic datasets.",
@@ -95,21 +100,19 @@
         "contentType": "guide",
         "hideFeedback": true,
         "layout": "page",
-        "products": [
-          "Documentation"
-        ],
+        "products": ["Documentation"],
         "prependJs": [
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
           "import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line",
           "import splitPages from '@mapbox/batfish/data/split-pages'; // eslint-disable-line",
-          "import relatedMts from '../../../../src/helpers/batfish/__tests__/fixtures/related-mts.json';",
-          "import relatedAndroid from '../../../../src/helpers/batfish/__tests__/fixtures/related-android.json';"
+          "import relatedMts from '../../../../../src/helpers/batfish/__tests__/fixtures/related-mts.json';",
+          "import relatedAndroid from '../../../../../src/helpers/batfish/__tests__/fixtures/related-android.json';"
         ]
       }
     },
     {
-      "filePath": "./docs/src/pages/guides/index.md",
-      "path": "/dr-ui/guides/",
+      "filePath": "./docs/src/pages/guides/overview/index.md",
+      "path": "/dr-ui/guides/overview/",
       "frontMatter": {
         "title": "Guides",
         "description": "Guides to building sites with Dr. UI.",
@@ -117,14 +120,12 @@
         "navOrder": 2,
         "order": 1,
         "contentType": "guide",
-        "products": [
-          "Documentation"
-        ]
+        "products": ["Documentation"]
       }
     },
     {
-      "filePath": "./docs/src/pages/guides/multi-structured.md",
-      "path": "/dr-ui/guides/multi-structured/",
+      "filePath": "./docs/src/pages/guides/overview/multi-structured.md",
+      "path": "/dr-ui/guides/overview/multi-structured/",
       "frontMatter": {
         "title": "Multi-structured sites",
         "description": "How to build a site with more than one product.",
@@ -132,14 +133,12 @@
         "layout": "page",
         "hideFeedback": true,
         "contentType": "guide",
-        "products": [
-          "Documentation"
-        ]
+        "products": ["Documentation"]
       }
     },
     {
-      "filePath": "./docs/src/pages/guides/page-layout.md",
-      "path": "/dr-ui/guides/page-layout/",
+      "filePath": "./docs/src/pages/guides/overview/page-layout.md",
+      "path": "/dr-ui/guides/overview/page-layout/",
       "frontMatter": {
         "title": "PageLayout component",
         "description": "All about building with PageLayout.",
@@ -147,19 +146,17 @@
         "layout": "page",
         "hideFeedback": true,
         "contentType": "guide",
-        "products": [
-          "Documentation"
-        ],
+        "products": ["Documentation"],
         "prependJs": [
-          "import components from '../../data/components'; // eslint-disable-line",
-          "import FrontMatter from '../../components/frontmatter.js';",
-          "import OtherProps from '../../components/other-props.js';",
-          "import LayoutUsage from '../../components/layout-usage.js';",
-          "import frontmatter from '!raw-loader!../../components/snippets/frontmatter.js';// eslint-disable-line",
-          "import Topbar from '../../../../src/components/page-layout/components/topbar.js';",
+          "import components from '../../../data/components'; // eslint-disable-line",
+          "import FrontMatter from '../../../components/frontmatter.js';",
+          "import OtherProps from '../../../components/other-props.js';",
+          "import LayoutUsage from '../../../components/layout-usage.js';",
+          "import frontmatter from '!raw-loader!../../../components/snippets/frontmatter.js';// eslint-disable-line",
+          "import Topbar from '../../../../../src/components/page-layout/components/topbar.js';",
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
-          "import constants from '../../constants.json';",
-          "import Note from '../../../../src/components/note';"
+          "import constants from '../../../constants.json';",
+          "import Note from '../../../../../src/components/note';"
         ]
       }
     },
@@ -186,9 +183,7 @@
         "splitPage": true,
         "hideFeedback": true,
         "contentType": "guide",
-        "products": [
-          "Mapbox fundamentals"
-        ],
+        "products": ["Mapbox fundamentals"],
         "prependJs": [
           "import MainPage from '!raw-loader!../index.js'; //eslint-disable-line",
           "import SubOne from '!raw-loader!./intro.md'; //eslint-disable-line",
@@ -208,9 +203,7 @@
         "order": 1,
         "splitPage": true,
         "hideFeedback": true,
-        "products": [
-          "Documentation"
-        ],
+        "products": ["Documentation"],
         "contentType": "guide"
       }
     },
@@ -223,9 +216,7 @@
         "order": 3,
         "splitPage": true,
         "hideFeedback": true,
-        "products": [
-          "Mapbox fundamentals"
-        ],
+        "products": ["Mapbox fundamentals"],
         "contentType": "guide"
       }
     },
@@ -239,9 +230,7 @@
         "splitPage": true,
         "tag": "beta",
         "hideFeedback": true,
-        "products": [
-          "Mapbox fundamentals"
-        ],
+        "products": ["Mapbox fundamentals"],
         "contentType": "guide"
       }
     },
@@ -256,52 +245,33 @@
         "layout": "example",
         "fullWidthCards": true,
         "hideTitle": true,
-        "products": [
-          "Documentation"
-        ]
+        "products": ["Documentation"]
       }
     },
     {
-      "filePath": "./docs/src/pages/index.md",
+      "filePath": "./docs/src/pages/index.js",
       "path": "/dr-ui/",
-      "frontMatter": {
-        "title": "Components",
-        "description": "UI components for Mapbox documentation projects.",
-        "navOrder": 1,
-        "layout": "example",
-        "contentType": "reference",
-        "products": [
-          "Documentation"
-        ],
-        "hideSubItems": false,
-        "showCards": false,
-        "includeFilterBar": true,
-        "hideTitle": true,
-        "unProse": true,
-        "prependJs": [
-          "import Note from '../../../src/components/note'",
-          "import OverviewHeader from '../../../src/components/overview-header'",
-          "import App from '../app.js'",
-          "const version = require('../../../package.json').version; // eslint-disable-line"
-        ]
-      }
+      "frontMatter": {}
     },
     {
-      "filePath": "./docs/src/pages/page/grizzlies.md",
-      "path": "/dr-ui/page/grizzlies/",
+      "filePath": "./docs/src/pages/page/index.js",
+      "path": "/dr-ui/page/",
+      "frontMatter": {}
+    },
+    {
+      "filePath": "./docs/src/pages/page/overview/grizzlies.md",
+      "path": "/dr-ui/page/overview/grizzlies/",
       "frontMatter": {
         "title": "Grizzly bears",
         "description": "Bears enjoy a good layout.",
         "contentType": "guide",
         "layout": "page",
-        "products": [
-          "Documentation"
-        ]
+        "products": ["Documentation"]
       }
     },
     {
-      "filePath": "./docs/src/pages/page/index.md",
-      "path": "/dr-ui/page/",
+      "filePath": "./docs/src/pages/page/overview/index.md",
+      "path": "/dr-ui/page/overview/",
       "frontMatter": {
         "title": "Page layout",
         "description": "Example of page layout page.",
@@ -309,22 +279,18 @@
         "navOrder": 5,
         "order": 1,
         "layout": "page",
-        "products": [
-          "Documentation"
-        ]
+        "products": ["Documentation"]
       }
     },
     {
-      "filePath": "./docs/src/pages/page/squid.md",
-      "path": "/dr-ui/page/squid/",
+      "filePath": "./docs/src/pages/page/overview/squid.md",
+      "path": "/dr-ui/page/overview/squid/",
       "frontMatter": {
         "title": "Squid",
         "description": "The cephalopods are here.",
         "contentType": "guide",
         "layout": "page",
-        "products": [
-          "Documentation"
-        ]
+        "products": ["Documentation"]
       }
     },
     {

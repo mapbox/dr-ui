@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import NavigationPage from '../../navigation-page';
+import NavigationAccordion from '../../navigation-accordion';
 import { findParentPath } from '../utils';
 
 export default class PageSidebar extends React.Component {
@@ -19,19 +19,24 @@ export default class PageSidebar extends React.Component {
   }
 
   render() {
-    const { navigation, location } = this.props;
-    
+    const { navigation, location, constants } = this.props;
+
     return (
-      <NavigationPage
+      <NavigationAccordion
         navigation={navigation}
         location={location}
+        constants={constants}
         parentPage={this.getParentPage()}
-    />
+      />
     );
   }
 }
 
 PageSidebar.propTypes = {
   navigation: PropTypes.object.isRequired,
-  location: PropTypes.object.isRequired
+  location: PropTypes.object.isRequired,
+  constants: PropTypes.shape({
+    SITE: PropTypes.string.isRequired,
+    BASEURL: PropTypes.string.isRequired
+  }).isRequired
 };

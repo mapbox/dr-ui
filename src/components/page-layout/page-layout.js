@@ -14,17 +14,17 @@ import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
 export default class PageLayout extends React.Component {
   // render the page's sidebar
   renderSidebar = (config, switchedNavigation, parentPath) => {
-    const { customSidebar, headings } = this.props;
+    const { customSidebar, constants } = this.props;
     return (
       config.sidebar !== 'none' && (
         <div className={`col col--4-mm col--12 ${config.sidebarTheme}`}>
           <Sidebar
             {...this.props}
             navigation={switchedNavigation}
+            constants={constants}
             parentPath={parentPath}
             layoutConfig={config}
             customSidebar={customSidebar}
-            headings={headings}
           />
         </div>
       )

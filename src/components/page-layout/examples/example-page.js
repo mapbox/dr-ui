@@ -42,6 +42,22 @@ export default class Basic extends React.Component {
               title: 'Demo'
             }
           },
+          accordion: {
+            '/PageLayout/': [
+              {
+                path: '/PageLayout/specifications/',
+                title: 'Specifications'
+              },
+              {
+                path: '/PageLayout/examples/',
+                title: 'Examples'
+              },
+              {
+                path: '/PageLayout/demo/',
+                title: 'Demo'
+              }
+            ]
+          },
           navTabs: [
             {
               href: '/PageLayout/',

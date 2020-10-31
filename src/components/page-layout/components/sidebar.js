@@ -4,7 +4,6 @@ import Sticky from 'react-stickynode';
 import debounce from 'debounce';
 import classnames from 'classnames';
 import SidebarPage from './page-sidebar';
-import SidebarExamples from './layouts/example/sidebar';
 
 const sidebarContentStickyTop = 60;
 const sidebarContentStickyTopNarrow = 0;
@@ -48,22 +47,14 @@ export default class Sidebar extends React.Component {
   }
 
   getSidebarContent = () => {
-    const {
-      location,
-      navigation,
-      frontMatter,
-      children,
-      parentPath,
-      topics,
-      layoutConfig
-    } = this.props;
-
-    /* Should we support some of these other features as well?
-    const { sidebarTitle } = frontMatter;
-    const { hideSubItems, sidebar, includeFilterBar } = layoutConfig; */
+    const { location, navigation, children, constants } = this.props;
 
     return (
-      <SidebarPage navigation={navigation} location={location}>
+      <SidebarPage
+        constants={constants}
+        navigation={navigation}
+        location={location}
+      >
         {children}
       </SidebarPage>
     );
@@ -113,13 +104,15 @@ Sidebar.propTypes = {
     sidebarTitle: PropTypes.string
   }).isRequired,
   children: PropTypes.node,
-  parentPath: PropTypes.string,
-  topics: PropTypes.object,
   layoutConfig: PropTypes.shape({
     sidebar: PropTypes.oneOf(['none', 'toc', 'accordion', 'sectioned']),
     hideSubItems: PropTypes.bool,
     includeFilterBar: PropTypes.bool
   }),
   customSidebar: PropTypes.node,
-  topBarSticker: PropTypes.bool
+  topBarSticker: PropTypes.bool,
+  constants: PropTypes.shape({
+    SITE: PropTypes.string.isRequired,
+    BASEURL: PropTypes.string.isRequired
+  }).isRequired
 };

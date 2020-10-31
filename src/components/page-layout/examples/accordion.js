@@ -21,7 +21,7 @@ export default class Basic extends React.Component {
         }}
         frontMatter={{
           title: 'Overview',
-          layout: 'accordion',
+          layout: 'page',
           description: 'This is the overview!',
           navOrder: 1
         }}

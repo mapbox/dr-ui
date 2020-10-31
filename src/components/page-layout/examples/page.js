@@ -55,7 +55,23 @@ export default class Basic extends React.Component {
               id: '/PageLayout/demo/',
               label: 'Demo'
             }
-          ]
+          ],
+          accordion: {
+            '/PageLayout/': [
+              {
+                path: '/PageLayout/specifications/',
+                title: 'Specifications'
+              },
+              {
+                path: '/PageLayout/examples/',
+                title: 'Examples'
+              },
+              {
+                path: '/PageLayout/demo/',
+                title: 'Demo'
+              }
+            ]
+          }
         }}
       >
         <React.Fragment>

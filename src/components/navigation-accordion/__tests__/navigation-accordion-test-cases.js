@@ -1,32 +1,53 @@
-import React from 'react';
 import NavigationAccordion from '../navigation-accordion';
-import Basic from '../examples/basic';
 
 const testCases = {};
 
-testCases.basic = {
-  description: 'Basic',
-  element: <Basic />
+const navigation = {
+  navTabs: [
+    {
+      label: 'Overview',
+      id: '/dr-ui/overview/',
+      href: '/dr-ui/overview/'
+    },
+    {
+      label: 'Examples',
+      id: '/dr-ui/examples/',
+      href: '/dr-ui/examples/'
+    }
+  ],
+  accordion: {
+    '/dr-ui/overview/': [
+      {
+        path: '/dr-ui/overview/permissions/',
+        title: 'Permissions'
+      }
+    ],
+    '/dr-ui/examples/': [
+      {
+        path: '/dr-ui/examples/basic/',
+        title: 'Basic example'
+      },
+      {
+        path: '/dr-ui/examples/fancy/',
+        title: 'Fancy example'
+      }
+    ]
+  }
 };
 
-testCases.noSecondLevelItems = {
-  description: 'No second level items',
+const constants = {
+  SITE: 'Dr. UI',
+  BASEURL: '/dr-ui/'
+};
+
+testCases.basic = {
+  description: 'Basic NavigationAccordion',
   component: NavigationAccordion,
   props: {
-    currentPath: 'page-one',
-    contents: {
-      firstLevelItems: [
-        {
-          title: 'Title one',
-          path: 'page-one'
-        },
-        {
-          title: 'Title two',
-          path: 'page-two'
-        }
-      ]
-    },
-    onDropdownChange: () => {}
+    navigation: { navigation },
+    location: { pathName: '/dr-ui/sample/' },
+    parentPage: '/dr-ui/',
+    constants: { constants }
   }
 };
 

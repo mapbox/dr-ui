@@ -12,10 +12,10 @@ includeFilterBar: true
 hideTitle: true
 unProse: true
 prependJs:
-  - "import Note from '../../../src/components/note'"
-  - "import OverviewHeader from '../../../src/components/overview-header'"
-  - "import App from '../app.js'"
-  - "const version = require('../../../package.json').version; // eslint-disable-line"
+  - "import Note from '../../../../src/components/note'"
+  - "import OverviewHeader from '../../../../src/components/overview-header'"
+  - "import App from '../../app.js'"
+  - "const version = require('../../../../package.json').version; // eslint-disable-line"
 ---
 
 {{<OverviewHeader

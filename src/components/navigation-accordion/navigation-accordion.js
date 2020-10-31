@@ -1,327 +1,135 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
+import ProductMenu from '../../components/product-menu';
 import Icon from '@mapbox/mr-ui/icon';
-import NavigationDropdown from '../navigation-dropdown/navigation-dropdown';
-import debounce from 'debounce';
-import Tag from '../tag/tag';
 
-const debounceVal = 50;
-
-class NavigationAccordion extends React.PureComponent {
+export default class NavigationAccordion extends React.PureComponent {
   constructor(props) {
     super(props);
-    this.state = {
-      activeh2: '',
-      activeh3: ''
-    };
-    this.activeSidebar = React.createRef();
-    this.onScrollLive = this.onScrollLive.bind(this);
   }
 
-  componentDidMount() {
-    this.onScroll = debounce(this.onScrollLive, debounceVal);
-    document.addEventListener('scroll', this.onScroll);
-    this.onScrollLive();
-    this.scrollToActiveSideBar();
-  }
-
-  componentWillUnmount() {
-    document.removeEventListener('scroll', this.onScroll);
-  }
-
-  onScrollLive() {
-    const sections = document.querySelectorAll(`div.section-h2`);
-    if (!sections.length) return;
-    for (let i = 0; i < sections.length; i++) {
-      // find the active section
-      if (sections[i].getBoundingClientRect().bottom > 0) {
-        this.setState({
-          activeh2: sections[i].getElementsByTagName('h2')[0]
-            ? sections[i].getElementsByTagName('h2')[0].id
-            : ''
-        });
-        // find the active subheading within the section
-        const subheadings = sections[i].querySelectorAll(`div.section-h3`);
-        // if there are no subheadings, clear out the activeh3
-        if (!subheadings.length) this.setState({ activeh3: undefined });
-        for (let s = 0; s < subheadings.length; s++) {
-          if (subheadings[s].getBoundingClientRect().bottom > 0) {
-            this.setState({
-              activeh3: subheadings[s].getElementsByTagName('h3')[0]
-                ? subheadings[s].getElementsByTagName('h3')[0].id
-                : ''
-            });
-            return;
-          }
-        }
-        return;
+  renderHeader(href, label, hasChildren) {
+    const { parentPage } = this.props;
+    const isActive = parentPage === href;
+    const headerClasses = classnames(
+      'txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full',
+      {
+        'align-left round-l-full bg-blue-faint color-blue': isActive,
+        'color-darken50': !isActive
       }
-    }
-  }
-
-  buildTag = (item) => {
-    const tagProps = {
-      theme: item.tag,
-      customLabel: item.customTagProps
-        ? item.customTagProps.customLabel
-        : undefined,
-      customTooltipText: item.customTagProps
-        ? item.customTagProps.customTooltipText
-        : undefined,
-      customStyles: item.customTagProps
-        ? item.customTagProps.customStyles
-        : undefined
+    );
+    const chevronStyle = {
+      'margin-left': '3px'
     };
+
     return (
-      <span className="ml6">
-        <Tag {...tagProps} />
-      </span>
+      <a href={href} className={headerClasses}>
+        {label}
+        {hasChildren && (
+          <span style={chevronStyle}>
+            <Icon
+              name={isActive ? 'chevron-down' : 'chevron-right'}
+              inline={true}
+            />
+          </span>
+        )}
+      </a>
     );
-  };
+  }
+  renderBody(subItems, activeItem) {
+    const { parentPage } = this.props;
 
-  // utility function to find ancestor via selector (sel) of a specified element (el)
-  findAncestor = (el, sel) => {
-    while (
-      (el = el.parentElement) &&
-      !(el.matches || el.matchesSelector).call(el, sel)
-    );
-    return el;
-  };
-
-  scrollToActiveSideBar = () => {
-    const sideBar = document.getElementById('dr-ui--page-layout-sidebar');
-    // if there is no sidebar then we can't scroll to anything.
-    if (!sideBar) return;
-    // [1] scroll to hash location (h2 or h3) if it exists
-    if (window && window.location.hash) {
-      // find the heading item in the scrollbar
-      let heading = document.getElementById(`${window.location.hash}-sidebar`);
-      // h3 will return 0 because initially it's parent (ul.none)  makes the h3 sidebar item invisible with no offsetTop
-      // we will remove the 'none' class from the ul
-      // then find the heading again now that it's visibile and has an offsetTop
-      if (heading && heading.offsetTop === 0) {
-        const parent = this.findAncestor(heading, 'ul.none');
-        if (parent) parent.classList.remove('none');
-        heading = document.getElementById(`${window.location.hash}-sidebar`);
-      }
-      // if the heading exists and offsetTop > 0; scroll to that item in the sidebar
-      if (heading && heading.offsetTop > 0) {
-        sideBar.scrollTop = heading.offsetTop;
-        return;
-      }
-    }
-
-    // [2] if there's no heading, then scroll to open title item
-    if (this.activeSidebar.current) {
-      sideBar.scrollTop = this.activeSidebar.current.offsetTop;
-    }
-  };
-
-  render() {
-    const { props, state } = this;
-    function itemClasses(isActive) {
-      return classnames('color-blue-on-hover', {
-        'txt-bold': isActive
-      });
-    }
-
-    const secondLevelContent =
-      props.contents.secondLevelItems &&
-      props.contents.secondLevelItems.map((item) => {
-        const isActive = state.activeh2 === item.path;
-        let openSubItems = isActive;
-        const subItems =
-          item.thirdLevelItems &&
-          item.thirdLevelItems.map((subItem) => {
-            const isActive = state.activeh3 === subItem.path;
-            if (isActive) openSubItems = true;
-            return (
-              <li
-                key={subItem.path}
-                className="mt6"
-                style={
-                  subItem.icon && { textIndent: '-24px', marginLeft: '11px' }
-                }
-              >
-                <a
-                  href={`#${subItem.path}`}
-                  id={`#${subItem.path}-sidebar`}
-                  className={itemClasses(isActive)}
-                >
-                  {subItem.icon && (
-                    <span className="mr6 w18 h18 align-middle inline-block bg-gray-faint round-full">
-                      <Icon size={16} name={subItem.icon} />
-                    </span>
-                  )}
-
-                  {subItem.title}
-                  {subItem.tag ? this.buildTag(subItem) : ''}
-                </a>
-              </li>
-            );
-          });
+    const subItemEls = subItems
+      .filter((page) => {
+        return page.path !== parentPage;
+      })
+      .map((page) => {
+        const isActive = activeItem === page.path;
+        const subItemClasses = classnames('py6 pl30 align-left round-full', {
+          'color-gray-dark txt-bold': isActive,
+          'color-gray': !isActive
+        });
         return (
-          <li key={item.path} className="mb6">
-            <a
-              href={`#${item.path}`}
-              id={`#${item.path}-sidebar`}
-              className={itemClasses(isActive)}
-            >
-              {item.title}
-              {item.tag ? this.buildTag(item) : ''}
+          <li className={subItemClasses} key={page.title}>
+            <a className="inline-block w-full" href={page.path}>
+              {page.title}
             </a>
-            <ul className={openSubItems ? 'pl12 color-darken75' : 'none'}>
-              {subItems}
-            </ul>
           </li>
         );
       });
-    const firstLevelContent = props.contents.firstLevelItems.map(
-      (page, index) => {
-        const title = page.title;
-        let icon = null;
-        const isActive = this.props.currentPath === page.path;
-        const breakLineClasses = classnames('py3 ', {
-          'border-t border--gray-light': index !== 0
-        });
-        const textClasses = classnames('pl12 py12 txt-bold txt-m flex-child', {
-          'color-black': isActive
-        });
-        const activeSectionClasses = classnames('px12 block-mm none', {
-          'bg-lighten75': isActive
-        });
-        if (!isActive) {
-          icon = (
-            <div className="flex-child flex-child--no-shrink">
-              <Icon name="chevron-down" className="icon color-gray h24 w24" />
-            </div>
-          );
-        }
-        let renderedSecondLevelContent = '';
-        if (isActive && secondLevelContent && secondLevelContent.length > 0) {
-          renderedSecondLevelContent = (
-            <div className="ml24 pt0">
-              <ul className="txt-m pb12 inline-block-mm none unprose">
-                {secondLevelContent}
-              </ul>
-            </div>
-          );
-        }
 
-        return (
-          <div
-            key={index}
-            className={activeSectionClasses}
-            ref={isActive ? this.activeSidebar : undefined}
-          >
-            <div className={breakLineClasses}>
-              <a
-                href={page.path}
-                className="color-blue-on-hover color-gray text-decoration-none unprose flex-parent flex-parent--space-between-main flex-parent--center-cross"
-              >
-                <div className={textClasses}>
-                  {title}
-                  {page.tag ? this.buildTag(page) : ''}
-                </div>
-                {icon}
-              </a>
-              {renderedSecondLevelContent}
-            </div>
+    return <ul>{subItemEls}</ul>;
+  }
+
+  renderItems() {
+    const { navigation, parentPage } = this.props;
+    const activeItem = this.props.location.pathname;
+    const firstLevelItems = navigation.navTabs;
+
+    const items = firstLevelItems.map((pageSection) => {
+      const { label, id, href } = pageSection;
+      const secondLevelItems = navigation.accordion[pageSection.href];
+      return {
+        id: id,
+        header: this.renderHeader(
+          href,
+          label,
+          secondLevelItems && secondLevelItems.length > 0
+        ),
+        body:
+          pageSection.id === parentPage
+            ? this.renderBody(secondLevelItems, activeItem)
+            : []
+      };
+    });
+
+    return items;
+  }
+
+  renderSidebar(items) {
+    const sidebarItems = items.map((item, index) => {
+      return (
+        <React.Fragment key={index}>
+          <div className="pt6">
+            {item.header}
+            {item.body}
           </div>
-        );
-      }
-    );
+        </React.Fragment>
+      );
+    });
+
+    return sidebarItems;
+  }
+
+  render() {
+    const { constants, navigation } = this.props;
+    const { SITE, BASEURL } = constants;
+    const { title, tag, path } = navigation;
+
+    const items = this.renderItems();
+
     return (
-      <div className="dr-ui--navigation-accordion">
-        <div className="block-mm none">{firstLevelContent}</div>
-        <div className="none-mm block bg-gray-faint px24 py24">
-          <NavigationDropdown
-            currentPath={props.currentPath}
-            dropdownOptions={props.contents.firstLevelItems}
-            onChange={props.onDropdownChange}
+      <div className="py12 none block-mm">
+        <div className="ml18 my18">
+          <ProductMenu
+            productName={title || SITE}
+            tag={tag || undefined}
+            homePage={`${BASEURL}/${path || ''}`}
           />
         </div>
+        {this.renderSidebar(items)}
       </div>
     );
   }
 }
 
 NavigationAccordion.propTypes = {
-  currentPath: PropTypes.string,
-  contents: PropTypes.shape({
-    firstLevelItems: PropTypes.arrayOf(
-      PropTypes.shape({
-        title: PropTypes.string.isRequired,
-        tag: PropTypes.oneOf([
-          'legacy',
-          'beta',
-          'fundamentals',
-          'new',
-          'custom'
-        ]),
-        /* Required if tag is set to `custom` */
-        customTagProps: PropTypes.shape({
-          customLabel: PropTypes.string.isRequired,
-          customTooltipText: PropTypes.string.isRequired,
-          customStyles: PropTypes.shape({
-            background: PropTypes.string.isRequired,
-            color: PropTypes.string.isRequired,
-            borderColor: PropTypes.string.isRequired
-          }).isRequired
-        }),
-        path: PropTypes.string.isRequired
-      })
-    ).isRequired,
-    secondLevelItems: PropTypes.arrayOf(
-      PropTypes.shape({
-        title: PropTypes.string.isRequired,
-        tag: PropTypes.oneOf([
-          'legacy',
-          'beta',
-          'fundamentals',
-          'new',
-          'custom'
-        ]),
-        /* Required if tag is set to `custom` */
-        customTagProps: PropTypes.shape({
-          customLabel: PropTypes.string.isRequired,
-          customTooltipText: PropTypes.string.isRequired,
-          customStyles: PropTypes.shape({
-            background: PropTypes.string.isRequired,
-            color: PropTypes.string.isRequired,
-            borderColor: PropTypes.string.isRequired
-          }).isRequired
-        }),
-        path: PropTypes.string.isRequired,
-        thirdLevelItems: PropTypes.arrayOf(
-          PropTypes.shape({
-            title: PropTypes.string.isRequired,
-            icon: PropTypes.string,
-            tag: PropTypes.oneOf([
-              'legacy',
-              'beta',
-              'fundamentals',
-              'new',
-              'custom'
-            ]),
-            /* Required if tag is set to `custom` */
-            customTagProps: PropTypes.shape({
-              customLabel: PropTypes.string.isRequired,
-              customTooltipText: PropTypes.string.isRequired,
-              customStyles: PropTypes.shape({
-                background: PropTypes.string.isRequired,
-                color: PropTypes.string.isRequired,
-                borderColor: PropTypes.string.isRequired
-              }).isRequired
-            }),
-            path: PropTypes.string.isRequired
-          })
-        )
-      })
-    )
-  }),
-  onDropdownChange: PropTypes.func
+  navigation: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired,
+  parentPage: PropTypes.string.isRequired,
+  constants: PropTypes.shape({
+    SITE: PropTypes.string.isRequired,
+    BASEURL: PropTypes.string.isRequired
+  }).isRequired
 };
-
-export default NavigationAccordion;
