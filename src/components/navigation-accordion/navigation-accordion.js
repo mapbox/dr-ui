@@ -39,7 +39,6 @@ export default class NavigationAccordion extends React.PureComponent {
   }
   renderBody(subItems, activeItem) {
     const { parentPage } = this.props;
-    if (!subItems) return;
 
     const subItemEls = subItems
       .filter((page) => {
@@ -70,16 +69,16 @@ export default class NavigationAccordion extends React.PureComponent {
 
     const items = firstLevelItems.map((pageSection) => {
       const { label, id, href } = pageSection;
-      const secondLevelItems = navigation.accordion[pageSection.href];
+      const secondLevelItems = navigation.accordion[pageSection.href] || [];
       return {
         id: id,
         header: this.renderHeader(
           href,
           label,
-          secondLevelItems && secondLevelItems.length > 0
+          secondLevelItems && secondLevelItems.length > 1
         ),
         body:
-          pageSection.id === parentPage
+          pageSection.id === parentPage && secondLevelItems.length > 1
             ? this.renderBody(secondLevelItems, activeItem)
             : []
       };

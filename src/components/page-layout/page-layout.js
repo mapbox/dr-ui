@@ -19,7 +19,7 @@ export default class PageLayout extends React.Component {
     const { customSidebar, constants } = this.props;
     return (
       config.sidebar !== 'none' && (
-        <div className={`col col--4-mm col--12 ${config.sidebarTheme}`}>
+        <div className={`col col--3-mm col--12 ${config.sidebarTheme}`}>
           <Sidebar
             {...this.props}
             navigation={switchedNavigation}
@@ -59,7 +59,7 @@ export default class PageLayout extends React.Component {
     return (
       <div
         className={classnames('col col--12', {
-          'col--8-mm': config.sidebar !== 'none'
+          'col--9-mm': config.sidebar !== 'none'
         })}
       >
         <Breadcrumb

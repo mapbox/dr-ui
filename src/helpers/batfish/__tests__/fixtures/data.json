@@ -254,46 +254,6 @@
       "frontMatter": {}
     },
     {
-      "filePath": "./docs/src/pages/page/index.js",
-      "path": "/dr-ui/page/",
-      "frontMatter": {}
-    },
-    {
-      "filePath": "./docs/src/pages/page/overview/grizzlies.md",
-      "path": "/dr-ui/page/overview/grizzlies/",
-      "frontMatter": {
-        "title": "Grizzly bears",
-        "description": "Bears enjoy a good layout.",
-        "contentType": "guide",
-        "layout": "page",
-        "products": ["Documentation"]
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/page/overview/index.md",
-      "path": "/dr-ui/page/overview/",
-      "frontMatter": {
-        "title": "Page layout",
-        "description": "Example of page layout page.",
-        "contentType": "example",
-        "navOrder": 5,
-        "order": 1,
-        "layout": "page",
-        "products": ["Documentation"]
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/page/overview/squid.md",
-      "path": "/dr-ui/page/overview/squid/",
-      "frontMatter": {
-        "title": "Squid",
-        "description": "The cephalopods are here.",
-        "contentType": "guide",
-        "layout": "page",
-        "products": ["Documentation"]
-      }
-    },
-    {
       "filePath": "./node_modules/@mapbox/batfish/dist/webpack/default-not-found.js",
       "path": "/dr-ui/404/",
       "is404": true,

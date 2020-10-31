@@ -1011,20 +1011,6 @@ Object {
         "title": "Multi-structured sites",
       },
     ],
-    "/dr-ui/page/overview/": Array [
-      Object {
-        "path": "/dr-ui/page/overview/",
-        "title": "Page layout",
-      },
-      Object {
-        "path": "/dr-ui/page/overview/grizzlies/",
-        "title": "Grizzly bears",
-      },
-      Object {
-        "path": "/dr-ui/page/overview/squid/",
-        "title": "Squid",
-      },
-    ],
   },
   "hierarchy": Object {
     "/dr-ui/components/": Object {
@@ -1067,18 +1053,6 @@ Object {
       "parent": "/dr-ui/help/",
       "title": "Help",
     },
-    "/dr-ui/page/overview/": Object {
-      "parent": "/dr-ui/page/overview/",
-      "title": "Page layout",
-    },
-    "/dr-ui/page/overview/grizzlies/": Object {
-      "parent": "/dr-ui/page/overview/",
-      "title": "Page layout",
-    },
-    "/dr-ui/page/overview/squid/": Object {
-      "parent": "/dr-ui/page/overview/",
-      "title": "Page layout",
-    },
   },
   "navTabs": Array [
     Object {
@@ -1100,11 +1074,6 @@ Object {
       "href": "/dr-ui/help/",
       "id": "/dr-ui/help/",
       "label": "Help",
-    },
-    Object {
-      "href": "/dr-ui/page/overview/",
-      "id": "/dr-ui/page/overview/",
-      "label": "Page layout",
     },
   ],
 }
