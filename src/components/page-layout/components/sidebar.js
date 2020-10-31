@@ -6,28 +6,14 @@ import classnames from 'classnames';
 import NavigationAccordion from '../../navigation-accordion';
 import { findParentPath } from '../utils';
 
-const sidebarContentStickyTop = 60;
-const sidebarContentStickyTopNarrow = 0;
-
 export default class Sidebar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       bottomBoundaryValue: 0,
-      stickyEnabled: false,
-      topValue: 0
+      stickyEnabled: false
     };
     this.debounceHandleWindowResize = debounce(() => {
-      const width = document.body.clientWidth;
-      if (width < 640) {
-        this.setState({
-          topValue: sidebarContentStickyTopNarrow
-        });
-      } else {
-        this.setState({
-          topValue: sidebarContentStickyTop
-        });
-      }
       const height = document.body.clientHeight;
       this.setState({
         bottomBoundaryValue: height - 150
@@ -73,22 +59,19 @@ export default class Sidebar extends React.Component {
   };
 
   render() {
-    const { stickyEnabled, bottomBoundaryValue, topValue } = this.state;
-    const { customSidebar, topBarSticker } = this.props;
-    // if topBarSticker is turned off (false), set topValue to 0
-    const top = topBarSticker ? topValue : 0;
+    const { stickyEnabled, bottomBoundaryValue } = this.state;
+    const { customSidebar } = this.props;
+
     return (
       <div data-swiftype-index="false">
         <Sticky
           enabled={stickyEnabled}
           bottomBoundary={bottomBoundaryValue}
           innerZ={3}
-          top={top}
+          top={0}
         >
           <div
             className={classnames('', {
-              'viewport-almost-mm': !customSidebar && topBarSticker,
-              'viewport-full-mm': !customSidebar && !topBarSticker, // if topbar sticker is not sticky, make sidebar go full height
               'scroll-auto-mm scroll-styled': !customSidebar
             })}
             id="dr-ui--page-layout-sidebar"
@@ -122,7 +105,6 @@ Sidebar.propTypes = {
     includeFilterBar: PropTypes.bool
   }),
   customSidebar: PropTypes.node,
-  topBarSticker: PropTypes.bool,
   constants: PropTypes.shape({
     SITE: PropTypes.string.isRequired,
     BASEURL: PropTypes.string.isRequired
