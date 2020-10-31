@@ -5,7 +5,7 @@ import BackToTopButton from '../back-to-top-button/back-to-top-button';
 import ErrorBoundary from '../error-boundary/error-boundary';
 import Breadcrumb from '../breadcrumb/breadcrumb';
 import Content from './components/content';
-import Sidebar from './components/page-sidebar';
+import Sidebar from './components/sidebar';
 import { findHasSection, findParentPath, createUniqueCrumbs } from './utils';
 
 // default configuration for each layout

@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import Sticky from 'react-stickynode';
 import debounce from 'debounce';
 import classnames from 'classnames';
-import SidebarPage from './page-sidebar';
+import NavigationAccordion from '../../navigation-accordion';
+import { findParentPath } from '../utils';
 
 const sidebarContentStickyTop = 60;
 const sidebarContentStickyTopNarrow = 0;
@@ -46,17 +47,28 @@ export default class Sidebar extends React.Component {
     window.removeEventListener('resize', this.debounceHandleWindowResize);
   }
 
+  getParentPage() {
+    const { navigation, location } = this.props;
+    const pageIsTab = navigation.navTabs.some((tab) =>
+      Object.prototype.hasOwnProperty.call(tab, location.pathname)
+    );
+    return pageIsTab
+      ? location.pathname
+      : findParentPath(navigation, location.pathname);
+  }
+
   getSidebarContent = () => {
     const { location, navigation, children, constants } = this.props;
 
     return (
-      <SidebarPage
+      <NavigationAccordion
         constants={constants}
         navigation={navigation}
         location={location}
+        parentPage={this.getParentPage()}
       >
         {children}
-      </SidebarPage>
+      </NavigationAccordion>
     );
   };
 
