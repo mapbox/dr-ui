@@ -6,223 +6,13 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="sticky-outer-wrapper"
-    style={Object {}}
-  >
-    <div
-      className="sticky-inner-wrapper"
-      style={
-        Object {
-          "position": "relative",
-          "top": "0px",
-          "zIndex": 4,
-        }
-      }
-    >
-      <div
-        className="border-t border-b border--gray-light bg-white"
-        data-swiftype-index="false"
-      >
-        <div
-          className="limiter"
-          style={
-            Object {
-              "minHeight": "50px",
-            }
-          }
-        >
-          <div
-            className="grid"
-          >
-            <div
-              className="col col--4-mm col--12"
-            >
-              <div
-                className="ml24-mm flex-parent-mm flex-parent--start-main h30"
-                style={
-                  Object {
-                    "marginTop": 10,
-                  }
-                }
-              >
-                <div
-                  className="flex-parent"
-                  style={
-                    Object {
-                      "overflow": "hidden",
-                    }
-                  }
-                >
-                  <a
-                    className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
-                    href="/dr-ui/"
-                  >
-                    Search SDK for Android
-                  </a>
-                  <span
-                    className="flex-child flex-child--no-shrink mx6"
-                  >
-                    <div
-                      className="inline-block"
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      onKeyDown={[Function]}
-                    >
-                      <div
-                        aria-describedby="tooltip-1"
-                        className="txt-s txt-bold round px6 inline-block cursor-default border"
-                        style={
-                          Object {
-                            "background": "#f1f3fd",
-                            "borderColor": "#0428c8",
-                            "color": "#0c248d",
-                          }
-                        }
-                      >
-                        Beta
-                      </div>
-                      <div
-                        className="hide-visually"
-                        id="tooltip-1"
-                        role="tooltip"
-                      >
-                        <div
-                          className="txt-s wmax120"
-                        >
-                          This feature is in public beta and is subject to changes.
-                        </div>
-                      </div>
-                    </div>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col col--6-mm col--12"
-            >
-              <div
-                className="clearfix"
-              >
-                <div
-                  className="fl"
-                >
-                  <a
-                    className="inline-block px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block border-b border--blue txt-bold "
-                    data-test="/PageLayout/"
-                    href="/PageLayout/"
-                  >
-                    Overview
-                  </a>
-                </div>
-                <div
-                  className="fl"
-                >
-                  <a
-                    className="inline-block px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block border-b border--transparent "
-                    data-test="/PageLayout/specification/"
-                    href="/PageLayout/specification/"
-                  >
-                    Specification
-                  </a>
-                </div>
-                <div
-                  className="fl"
-                >
-                  <a
-                    className="inline-block px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block-mm none border--transparent "
-                    data-test="/PageLayout/examples/"
-                    href="/PageLayout/examples/"
-                  >
-                    Examples
-                  </a>
-                </div>
-                <div
-                  className="fl"
-                >
-                  <a
-                    className="inline-block px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block-mm none border--transparent "
-                    data-test="/PageLayout/demo/"
-                    href="/PageLayout/demo/"
-                  >
-                    Demo
-                  </a>
-                </div>
-                <div
-                  className="fl"
-                >
-                  <div
-                    className="inline-block"
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                  >
-                    <button
-                      aria-label="More"
-                      className="px6 py12 mr12 align-l cursor-pointer none-mm"
-                      type="button"
-                    >
-                      More +
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col col--2-mm col--12"
-            >
-              <div
-                className="flex-parent-mm flex-parent--end-main h-full-mm wmax300 h36"
-                style={
-                  Object {
-                    "marginBottom": 7,
-                    "marginTop": 7,
-                  }
-                }
-              >
-                <div
-                  className="h36 relative"
-                >
-                  <div>
-                    <div>
-                      <button
-                        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke"
-                        onClick={[Function]}
-                        style={Object {}}
-                      >
-                        <span
-                          className="mr6"
-                        >
-                          <svg
-                            className="icon w18 h18"
-                          >
-                            <use
-                              xlinkHref="#icon-search"
-                            />
-                          </svg>
-                        </span>
-                         
-                        Search
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
     className="limiter"
   >
     <div
       className="grid"
     >
       <div
-        className="col col--4-mm col--12 bg-gray-faint"
+        className="col col--4-mm col--12 "
       >
         <div
           data-swiftype-index="false"
@@ -242,332 +32,182 @@ Array [
               }
             >
               <div
-                className="viewport-almost-mm scroll-auto-mm scroll-styled"
+                className="viewport-full-mm scroll-auto-mm scroll-styled"
                 id="dr-ui--page-layout-sidebar"
               >
                 <div
-                  className="mx0-mm ml-neg24 mr-neg36 relative-mm absolute right left"
+                  className="py12 none block-mm"
                 >
                   <div
-                    className="dr-ui--navigation-accordion"
+                    className="ml18 my18"
                   >
                     <div
-                      className="block-mm none"
+                      className="flex-parent"
+                      style={
+                        Object {
+                          "overflow": "hidden",
+                        }
+                      }
                     >
-                      <div
-                        className="px12 block-mm none bg-lighten75"
+                      <a
+                        className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
+                        href="/dr-ui/"
+                      >
+                        Search SDK for Android
+                      </a>
+                      <span
+                        className="flex-child flex-child--no-shrink mx6"
                       >
                         <div
-                          className="py3 "
+                          className="inline-block"
+                          onBlur={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onKeyDown={[Function]}
                         >
-                          <a
-                            className="color-blue-on-hover color-gray text-decoration-none unprose flex-parent flex-parent--space-between-main flex-parent--center-cross"
-                            href="/PageLayout/"
-                          >
-                            <div
-                              className="pl12 py12 txt-bold txt-m flex-child color-black"
-                            >
-                              Overview
-                              
-                            </div>
-                          </a>
-                          
-                        </div>
-                      </div>
-                      <div
-                        className="px12 block-mm none"
-                      >
-                        <div
-                          className="py3  border-t border--gray-light"
-                        >
-                          <a
-                            className="color-blue-on-hover color-gray text-decoration-none unprose flex-parent flex-parent--space-between-main flex-parent--center-cross"
-                            href="/PageLayout/layouts/"
-                          >
-                            <div
-                              className="pl12 py12 txt-bold txt-m flex-child"
-                            >
-                              Layouts
-                              
-                            </div>
-                            <div
-                              className="flex-child flex-child--no-shrink"
-                            >
-                              <svg
-                                className="events-none icon"
-                                focusable="false"
-                                role="presentation"
-                                style={
-                                  Object {
-                                    "height": 18,
-                                    "width": 18,
-                                  }
-                                }
-                              >
-                                <use
-                                  xlinkHref="#icon-chevron-down"
-                                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                                />
-                              </svg>
-                            </div>
-                          </a>
-                          
-                        </div>
-                      </div>
-                      <div
-                        className="px12 block-mm none"
-                      >
-                        <div
-                          className="py3  border-t border--gray-light"
-                        >
-                          <a
-                            className="color-blue-on-hover color-gray text-decoration-none unprose flex-parent flex-parent--space-between-main flex-parent--center-cross"
-                            href="/PageLayout/navigation/"
-                          >
-                            <div
-                              className="pl12 py12 txt-bold txt-m flex-child"
-                            >
-                              Navigation
-                              
-                            </div>
-                            <div
-                              className="flex-child flex-child--no-shrink"
-                            >
-                              <svg
-                                className="events-none icon"
-                                focusable="false"
-                                role="presentation"
-                                style={
-                                  Object {
-                                    "height": 18,
-                                    "width": 18,
-                                  }
-                                }
-                              >
-                                <use
-                                  xlinkHref="#icon-chevron-down"
-                                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                                />
-                              </svg>
-                            </div>
-                          </a>
-                          
-                        </div>
-                      </div>
-                      <div
-                        className="px12 block-mm none"
-                      >
-                        <div
-                          className="py3  border-t border--gray-light"
-                        >
-                          <a
-                            className="color-blue-on-hover color-gray text-decoration-none unprose flex-parent flex-parent--space-between-main flex-parent--center-cross"
-                            href="/PageLayout/images/"
-                          >
-                            <div
-                              className="pl12 py12 txt-bold txt-m flex-child"
-                            >
-                              Images and videos
-                              
-                            </div>
-                            <div
-                              className="flex-child flex-child--no-shrink"
-                            >
-                              <svg
-                                className="events-none icon"
-                                focusable="false"
-                                role="presentation"
-                                style={
-                                  Object {
-                                    "height": 18,
-                                    "width": 18,
-                                  }
-                                }
-                              >
-                                <use
-                                  xlinkHref="#icon-chevron-down"
-                                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                                />
-                              </svg>
-                            </div>
-                          </a>
-                          
-                        </div>
-                      </div>
-                      <div
-                        className="px12 block-mm none"
-                      >
-                        <div
-                          className="py3  border-t border--gray-light"
-                        >
-                          <a
-                            className="color-blue-on-hover color-gray text-decoration-none unprose flex-parent flex-parent--space-between-main flex-parent--center-cross"
-                            href="/PageLayout/constants/"
-                          >
-                            <div
-                              className="pl12 py12 txt-bold txt-m flex-child"
-                            >
-                              Constants
-                              
-                            </div>
-                            <div
-                              className="flex-child flex-child--no-shrink"
-                            >
-                              <svg
-                                className="events-none icon"
-                                focusable="false"
-                                role="presentation"
-                                style={
-                                  Object {
-                                    "height": 18,
-                                    "width": 18,
-                                  }
-                                }
-                              >
-                                <use
-                                  xlinkHref="#icon-chevron-down"
-                                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                                />
-                              </svg>
-                            </div>
-                          </a>
-                          
-                        </div>
-                      </div>
-                      <div
-                        className="px12 block-mm none"
-                      >
-                        <div
-                          className="py3  border-t border--gray-light"
-                        >
-                          <a
-                            className="color-blue-on-hover color-gray text-decoration-none unprose flex-parent flex-parent--space-between-main flex-parent--center-cross"
-                            href="/PageLayout/frontmatter/"
-                          >
-                            <div
-                              className="pl12 py12 txt-bold txt-m flex-child"
-                            >
-                              Frontmatter
-                              <span
-                                className="ml6"
-                              >
-                                <div
-                                  className="inline-block"
-                                  onBlur={[Function]}
-                                  onClick={[Function]}
-                                  onFocus={[Function]}
-                                  onKeyDown={[Function]}
-                                >
-                                  <div
-                                    aria-describedby="tooltip-2"
-                                    className="txt-s txt-bold round px6 inline-block cursor-default border"
-                                    style={
-                                      Object {
-                                        "background": "#fff0f7",
-                                        "borderColor": "#fd8ac0",
-                                        "color": "#cf1c61",
-                                      }
-                                    }
-                                  >
-                                    Fundamentals
-                                  </div>
-                                  <div
-                                    className="hide-visually"
-                                    id="tooltip-2"
-                                    role="tooltip"
-                                  >
-                                    <div
-                                      className="txt-s wmax120"
-                                    >
-                                      The concepts described here are fundamental to using this product.
-                                    </div>
-                                  </div>
-                                </div>
-                              </span>
-                            </div>
-                            <div
-                              className="flex-child flex-child--no-shrink"
-                            >
-                              <svg
-                                className="events-none icon"
-                                focusable="false"
-                                role="presentation"
-                                style={
-                                  Object {
-                                    "height": 18,
-                                    "width": 18,
-                                  }
-                                }
-                              >
-                                <use
-                                  xlinkHref="#icon-chevron-down"
-                                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                                />
-                              </svg>
-                            </div>
-                          </a>
-                          
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      className="none-mm block bg-gray-faint px24 py24"
-                    >
-                      <div
-                        className="relative "
-                      >
-                        <div
-                          className="select-container "
-                        >
-                          <select
-                            aria-required={true}
-                            className="select select--stroke round-full bg-white"
-                            data-test="navigate-this-section-select"
-                            disabled={false}
-                            id="navigate-this-section"
-                            onChange={[Function]}
-                            value="/PageLayout/"
-                          >
-                            <option
-                              value="/PageLayout/"
-                            >
-                              Overview
-                            </option>
-                            <option
-                              value="/PageLayout/layouts/"
-                            >
-                              Layouts
-                            </option>
-                            <option
-                              value="/PageLayout/navigation/"
-                            >
-                              Navigation
-                            </option>
-                            <option
-                              value="/PageLayout/images/"
-                            >
-                              Images and videos
-                            </option>
-                            <option
-                              value="/PageLayout/constants/"
-                            >
-                              Constants
-                            </option>
-                            <option
-                              value="/PageLayout/frontmatter/"
-                            >
-                              Frontmatter
-                            </option>
-                          </select>
                           <div
-                            className="select-arrow"
-                          />
+                            aria-describedby="tooltip-1"
+                            className="txt-s txt-bold round px6 inline-block cursor-default border"
+                            style={
+                              Object {
+                                "background": "#f1f3fd",
+                                "borderColor": "#0428c8",
+                                "color": "#0c248d",
+                              }
+                            }
+                          >
+                            Beta
+                          </div>
+                          <div
+                            className="hide-visually"
+                            id="tooltip-1"
+                            role="tooltip"
+                          >
+                            <div
+                              className="txt-s wmax120"
+                            >
+                              This feature is in public beta and is subject to changes.
+                            </div>
+                          </div>
                         </div>
-                        <div
-                          role="alert"
-                        />
-                      </div>
+                      </span>
                     </div>
+                  </div>
+                  <div
+                    className="pt6"
+                  >
+                    <a
+                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full align-left round-l-full bg-blue-faint color-blue"
+                      href="/PageLayout/"
+                    >
+                      Overview
+                      <span
+                        style={
+                          Object {
+                            "margin-left": "3px",
+                          }
+                        }
+                      >
+                        <svg
+                          className="events-none icon inline-block align-t"
+                          focusable="false"
+                          role="presentation"
+                          style={
+                            Object {
+                              "height": 18,
+                              "width": 18,
+                            }
+                          }
+                        >
+                          <use
+                            xlinkHref="#icon-chevron-down"
+                            xmlnsXlink="http://www.w3.org/1999/xlink"
+                          />
+                        </svg>
+                      </span>
+                    </a>
+                    <ul>
+                      <li
+                        className="py6 pl30 align-left round-full color-gray"
+                      >
+                        <a
+                          className="inline-block w-full"
+                          href="/PageLayout/layouts/"
+                        >
+                          Layouts
+                        </a>
+                      </li>
+                      <li
+                        className="py6 pl30 align-left round-full color-gray"
+                      >
+                        <a
+                          className="inline-block w-full"
+                          href="/PageLayout/navigation/"
+                        >
+                          Navigation
+                        </a>
+                      </li>
+                      <li
+                        className="py6 pl30 align-left round-full color-gray"
+                      >
+                        <a
+                          className="inline-block w-full"
+                          href="/PageLayout/images/"
+                        >
+                          Images and videos
+                        </a>
+                      </li>
+                      <li
+                        className="py6 pl30 align-left round-full color-gray"
+                      >
+                        <a
+                          className="inline-block w-full"
+                          href="/PageLayout/constants/"
+                        >
+                          Constants
+                        </a>
+                      </li>
+                      <li
+                        className="py6 pl30 align-left round-full color-gray"
+                      >
+                        <a
+                          className="inline-block w-full"
+                          href="/PageLayout/frontmatter/"
+                        >
+                          Frontmatter
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    className="pt6"
+                  >
+                    <a
+                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
+                      href="/PageLayout/specification/"
+                    >
+                      Specification
+                    </a>
+                  </div>
+                  <div
+                    className="pt6"
+                  >
+                    <a
+                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
+                      href="/PageLayout/examples/"
+                    >
+                      Examples
+                    </a>
+                  </div>
+                  <div
+                    className="pt6"
+                  >
+                    <a
+                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
+                      href="/PageLayout/demo/"
+                    >
+                      Demo
+                    </a>
                   </div>
                 </div>
               </div>
@@ -579,7 +219,7 @@ Array [
         className="col col--12 col--8-mm"
       >
         <div
-          className="pr0-mm mt24 mb60 px24-mm mt24-mm mt60 pt30 pt0-mm"
+          className="pr0-mm mt24 mb60 px24-mm"
           id="docs-content"
         >
           <div
@@ -678,187 +318,13 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="sticky-outer-wrapper"
-    style={Object {}}
-  >
-    <div
-      className="sticky-inner-wrapper"
-      style={
-        Object {
-          "position": "relative",
-          "top": "0px",
-          "zIndex": 4,
-        }
-      }
-    >
-      <div
-        className="border-t border-b border--gray-light bg-white"
-        data-swiftype-index="false"
-      >
-        <div
-          className="limiter"
-          style={
-            Object {
-              "minHeight": "50px",
-            }
-          }
-        >
-          <div
-            className="grid"
-          >
-            <div
-              className="col col--4-mm col--12"
-            >
-              <div
-                className="ml24-mm flex-parent-mm flex-parent--start-main h30"
-                style={
-                  Object {
-                    "marginTop": 10,
-                  }
-                }
-              >
-                <div
-                  className="flex-parent"
-                  style={
-                    Object {
-                      "overflow": "hidden",
-                    }
-                  }
-                >
-                  <a
-                    className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
-                    href="/dr-ui/"
-                  >
-                    dr-ui
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col col--6-mm col--12"
-            >
-              <div
-                className="clearfix"
-              >
-                <div
-                  className="fl"
-                >
-                  <a
-                    className="inline-block px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block border-b border--blue txt-bold "
-                    data-test="/PageLayout/"
-                    href="/PageLayout/"
-                  >
-                    Overview
-                  </a>
-                </div>
-                <div
-                  className="fl"
-                >
-                  <a
-                    className="inline-block px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block border-b border--transparent "
-                    data-test="/PageLayout/specification/"
-                    href="/PageLayout/specification/"
-                  >
-                    Specification
-                  </a>
-                </div>
-                <div
-                  className="fl"
-                >
-                  <a
-                    className="inline-block px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block-mm none border--transparent "
-                    data-test="/PageLayout/examples/"
-                    href="/PageLayout/examples/"
-                  >
-                    Examples
-                  </a>
-                </div>
-                <div
-                  className="fl"
-                >
-                  <a
-                    className="inline-block px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block-mm none border--transparent "
-                    data-test="/PageLayout/demo/"
-                    href="/PageLayout/demo/"
-                  >
-                    Demo
-                  </a>
-                </div>
-                <div
-                  className="fl"
-                >
-                  <div
-                    className="inline-block"
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                  >
-                    <button
-                      aria-label="More"
-                      className="px6 py12 mr12 align-l cursor-pointer none-mm"
-                      type="button"
-                    >
-                      More +
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col col--2-mm col--12"
-            >
-              <div
-                className="flex-parent-mm flex-parent--end-main h-full-mm wmax300 h36"
-                style={
-                  Object {
-                    "marginBottom": 7,
-                    "marginTop": 7,
-                  }
-                }
-              >
-                <div
-                  className="h36 relative"
-                >
-                  <div>
-                    <div>
-                      <button
-                        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke"
-                        onClick={[Function]}
-                        style={Object {}}
-                      >
-                        <span
-                          className="mr6"
-                        >
-                          <svg
-                            className="icon w18 h18"
-                          >
-                            <use
-                              xlinkHref="#icon-search"
-                            />
-                          </svg>
-                        </span>
-                         
-                        Search
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
     className="limiter"
   >
     <div
       className="grid"
     >
       <div
-        className="col col--4-mm col--12 bg-gray-faint"
+        className="col col--4-mm col--12 undefined"
       >
         <div
           data-swiftype-index="false"
@@ -878,29 +344,125 @@ Array [
               }
             >
               <div
-                className="viewport-almost-mm scroll-auto-mm scroll-styled"
+                className="viewport-full-mm scroll-auto-mm scroll-styled"
                 id="dr-ui--page-layout-sidebar"
               >
                 <div
-                  className="none block-mm py12"
+                  className="py12 none block-mm"
                 >
                   <div
-                    className="mx24"
-                    data-swiftype-index="false"
+                    className="ml18 my18"
+                  >
+                    <div
+                      className="flex-parent"
+                      style={
+                        Object {
+                          "overflow": "hidden",
+                        }
+                      }
+                    >
+                      <a
+                        className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
+                        href="/dr-ui/"
+                      >
+                        dr-ui
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    className="pt6"
                   >
                     <a
-                      className="block txt-bold color-gray py6 color-blue-on-hover"
-                      href="/PageLayout/#cool"
-                      id="undefined-sidebar"
+                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full align-left round-l-full bg-blue-faint color-blue"
+                      href="/PageLayout/"
                     >
-                      Cool (3)
+                      Overview
+                      <span
+                        style={
+                          Object {
+                            "margin-left": "3px",
+                          }
+                        }
+                      >
+                        <svg
+                          className="events-none icon inline-block align-t"
+                          focusable="false"
+                          role="presentation"
+                          style={
+                            Object {
+                              "height": 18,
+                              "width": 18,
+                            }
+                          }
+                        >
+                          <use
+                            xlinkHref="#icon-chevron-down"
+                            xmlnsXlink="http://www.w3.org/1999/xlink"
+                          />
+                        </svg>
+                      </span>
                     </a>
+                    <ul>
+                      <li
+                        className="py6 pl30 align-left round-full color-gray"
+                      >
+                        <a
+                          className="inline-block w-full"
+                          href="/PageLayout/specifications/"
+                        >
+                          Specifications
+                        </a>
+                      </li>
+                      <li
+                        className="py6 pl30 align-left round-full color-gray"
+                      >
+                        <a
+                          className="inline-block w-full"
+                          href="/PageLayout/examples/"
+                        >
+                          Examples
+                        </a>
+                      </li>
+                      <li
+                        className="py6 pl30 align-left round-full color-gray"
+                      >
+                        <a
+                          className="inline-block w-full"
+                          href="/PageLayout/demo/"
+                        >
+                          Demo
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    className="pt6"
+                  >
                     <a
-                      className="block txt-bold color-gray py6 color-blue-on-hover"
-                      href="/PageLayout/#awesome"
-                      id="undefined-sidebar"
+                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
+                      href="/PageLayout/specification/"
                     >
-                      Awesome (1)
+                      Specification
+                    </a>
+                  </div>
+                  <div
+                    className="pt6"
+                  >
+                    <a
+                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
+                      href="/PageLayout/examples/"
+                    >
+                      Examples
+                    </a>
+                  </div>
+                  <div
+                    className="pt6"
+                  >
+                    <a
+                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
+                      href="/PageLayout/demo/"
+                    >
+                      Demo
                     </a>
                   </div>
                 </div>
@@ -1257,187 +819,13 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="sticky-outer-wrapper"
-    style={Object {}}
-  >
-    <div
-      className="sticky-inner-wrapper"
-      style={
-        Object {
-          "position": "relative",
-          "top": "0px",
-          "zIndex": 4,
-        }
-      }
-    >
-      <div
-        className="border-t border-b border--gray-light bg-white"
-        data-swiftype-index="false"
-      >
-        <div
-          className="limiter"
-          style={
-            Object {
-              "minHeight": "50px",
-            }
-          }
-        >
-          <div
-            className="grid"
-          >
-            <div
-              className="col col--4-mm col--12"
-            >
-              <div
-                className="ml24-mm flex-parent-mm flex-parent--start-main h30"
-                style={
-                  Object {
-                    "marginTop": 10,
-                  }
-                }
-              >
-                <div
-                  className="flex-parent"
-                  style={
-                    Object {
-                      "overflow": "hidden",
-                    }
-                  }
-                >
-                  <a
-                    className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
-                    href="/dr-ui/"
-                  >
-                    dr-ui
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col col--6-mm col--12"
-            >
-              <div
-                className="clearfix"
-              >
-                <div
-                  className="fl"
-                >
-                  <a
-                    className="inline-block px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block border-b border--blue txt-bold "
-                    data-test="/PageLayout/"
-                    href="/PageLayout/"
-                  >
-                    Overview
-                  </a>
-                </div>
-                <div
-                  className="fl"
-                >
-                  <a
-                    className="inline-block px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block border-b border--transparent "
-                    data-test="/PageLayout/specification/"
-                    href="/PageLayout/specification/"
-                  >
-                    Specification
-                  </a>
-                </div>
-                <div
-                  className="fl"
-                >
-                  <a
-                    className="inline-block px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block-mm none border--transparent "
-                    data-test="/PageLayout/examples/"
-                    href="/PageLayout/examples/"
-                  >
-                    Examples
-                  </a>
-                </div>
-                <div
-                  className="fl"
-                >
-                  <a
-                    className="inline-block px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block-mm none border--transparent "
-                    data-test="/PageLayout/demo/"
-                    href="/PageLayout/demo/"
-                  >
-                    Demo
-                  </a>
-                </div>
-                <div
-                  className="fl"
-                >
-                  <div
-                    className="inline-block"
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                  >
-                    <button
-                      aria-label="More"
-                      className="px6 py12 mr12 align-l cursor-pointer none-mm"
-                      type="button"
-                    >
-                      More +
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col col--2-mm col--12"
-            >
-              <div
-                className="flex-parent-mm flex-parent--end-main h-full-mm wmax300 h36"
-                style={
-                  Object {
-                    "marginBottom": 7,
-                    "marginTop": 7,
-                  }
-                }
-              >
-                <div
-                  className="h36 relative"
-                >
-                  <div>
-                    <div>
-                      <button
-                        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke"
-                        onClick={[Function]}
-                        style={Object {}}
-                      >
-                        <span
-                          className="mr6"
-                        >
-                          <svg
-                            className="icon w18 h18"
-                          >
-                            <use
-                              xlinkHref="#icon-search"
-                            />
-                          </svg>
-                        </span>
-                         
-                        Search
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
     className="limiter"
   >
     <div
       className="grid"
     >
       <div
-        className="col col--4-mm col--12 bg-gray-faint"
+        className="col col--4-mm col--12 undefined"
       >
         <div
           data-swiftype-index="false"
@@ -1457,53 +845,125 @@ Array [
               }
             >
               <div
-                className="viewport-almost-mm scroll-auto-mm scroll-styled"
+                className="viewport-full-mm scroll-auto-mm scroll-styled"
                 id="dr-ui--page-layout-sidebar"
               >
                 <div
-                  className="none block-mm py12"
+                  className="py12 none block-mm"
                 >
                   <div
-                    className="mx24"
-                    data-swiftype-index="false"
+                    className="ml18 my18"
+                  >
+                    <div
+                      className="flex-parent"
+                      style={
+                        Object {
+                          "overflow": "hidden",
+                        }
+                      }
+                    >
+                      <a
+                        className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
+                        href="/dr-ui/"
+                      >
+                        dr-ui
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    className="pt6"
                   >
                     <a
-                      className="block txt-bold color-gray py12 color-blue-on-hover"
-                      href="/PageLayout/#cool"
-                      id="undefined-sidebar"
+                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full align-left round-l-full bg-blue-faint color-blue"
+                      href="/PageLayout/"
                     >
-                      Cool (3)
+                      Overview
+                      <span
+                        style={
+                          Object {
+                            "margin-left": "3px",
+                          }
+                        }
+                      >
+                        <svg
+                          className="events-none icon inline-block align-t"
+                          focusable="false"
+                          role="presentation"
+                          style={
+                            Object {
+                              "height": 18,
+                              "width": 18,
+                            }
+                          }
+                        >
+                          <use
+                            xlinkHref="#icon-chevron-down"
+                            xmlnsXlink="http://www.w3.org/1999/xlink"
+                          />
+                        </svg>
+                      </span>
                     </a>
+                    <ul>
+                      <li
+                        className="py6 pl30 align-left round-full color-gray"
+                      >
+                        <a
+                          className="inline-block w-full"
+                          href="/PageLayout/specifications/"
+                        >
+                          Specifications
+                        </a>
+                      </li>
+                      <li
+                        className="py6 pl30 align-left round-full color-gray"
+                      >
+                        <a
+                          className="inline-block w-full"
+                          href="/PageLayout/examples/"
+                        >
+                          Examples
+                        </a>
+                      </li>
+                      <li
+                        className="py6 pl30 align-left round-full color-gray"
+                      >
+                        <a
+                          className="inline-block w-full"
+                          href="/PageLayout/demo/"
+                        >
+                          Demo
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    className="pt6"
+                  >
                     <a
-                      className="color-blue-on-hover block mb6"
-                      href="/PageLayout/example-1/"
+                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
+                      href="/PageLayout/specification/"
                     >
-                      Example 1
+                      Specification
                     </a>
+                  </div>
+                  <div
+                    className="pt6"
+                  >
                     <a
-                      className="color-blue-on-hover block mb6"
-                      href="/PageLayout/example-2/"
+                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
+                      href="/PageLayout/examples/"
                     >
-                      Example 2
+                      Examples
                     </a>
+                  </div>
+                  <div
+                    className="pt6"
+                  >
                     <a
-                      className="color-blue-on-hover block mb6"
-                      href="/PageLayout/example-3/"
+                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
+                      href="/PageLayout/demo/"
                     >
-                      Example 3
-                    </a>
-                    <a
-                      className="block txt-bold color-gray py12 color-blue-on-hover"
-                      href="/PageLayout/#awesome"
-                      id="undefined-sidebar"
-                    >
-                      Awesome (1)
-                    </a>
-                    <a
-                      className="color-blue-on-hover block mb6"
-                      href="/PageLayout/example-3/"
-                    >
-                      Example 3
+                      Demo
                     </a>
                   </div>
                 </div>
@@ -1609,352 +1069,12 @@ Array [
 ]
 `;
 
-exports[`page-layout Hide PageLayoutTopbar renders as expected 1`] = `
-Array [
-  <div
-    className="shell-header-buffer"
-  />,
-  <div
-    className="limiter"
-  >
-    <div
-      className="grid"
-    >
-      <div
-        className="col col--4-mm col--12 "
-      >
-        <div
-          data-swiftype-index="false"
-        >
-          <div
-            className="sticky-outer-wrapper"
-            style={Object {}}
-          >
-            <div
-              className="sticky-inner-wrapper"
-              style={
-                Object {
-                  "position": "relative",
-                  "top": "0px",
-                  "zIndex": 3,
-                }
-              }
-            >
-              <div
-                className="viewport-almost-mm scroll-auto-mm scroll-styled"
-                id="dr-ui--page-layout-sidebar"
-              >
-                <div
-                  className="mx24 py12 none block-mm"
-                >
-                  <ul
-                    className=""
-                    style={Object {}}
-                  >
-                    <li
-                      className="pb6 mb6"
-                    >
-                      <a
-                        className="color-blue-on-hover"
-                        href="#section-1"
-                      >
-                        Section 1
-                      </a>
-                    </li>
-                    <li
-                      className="pb6"
-                    >
-                      <a
-                        className="color-blue-on-hover"
-                        href="#section-2"
-                      >
-                        Section 2
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="col col--12 col--8-mm"
-      >
-        <div
-          className="pr0-mm mt24 mb60 px24-mm"
-          id="docs-content"
-        >
-          <div
-            className="prose"
-          >
-            <h1
-              className="txt-fancy"
-            >
-              Overview
-            </h1>
-            <div
-              className="mt36"
-            >
-              <div
-                className="bg-gray-faint py12 px18 round color-gray"
-              >
-                <div>
-                  <div>
-                    <div
-                      className="mb6"
-                    >
-                      Was this 
-                      page
-                       helpful?
-                    </div>
-                    <button
-                      className="btn btn--s"
-                      id="dr-ui--feedback-page-yes"
-                      onClick={[Function]}
-                    >
-                      Yes
-                    </button>
-                    <button
-                      className="btn btn--s ml6"
-                      id="dr-ui--feedback-page-no"
-                      onClick={[Function]}
-                    >
-                      No
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
-    className="fixed block none-mm mx24 my24 z5 bottom right"
-  >
-    <div
-      className="block mx24 my24 z5"
-    >
-      <div
-        className="inline-block"
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-      >
-        <button
-          aria-label="Back to top"
-          className="btn--blue w60 h60 px0 round-full shadow-darken25 color-white flex-parent flex-parent--center-main flex-parent--center-cross"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <svg
-            className="events-none icon"
-            focusable="false"
-            role="presentation"
-            style={
-              Object {
-                "height": 30,
-                "width": 30,
-              }
-            }
-          >
-            <use
-              xlinkHref="#icon-arrow-up"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>,
-]
-`;
-
 exports[`page-layout Page layout renders as expected 1`] = `
 Array [
   <div
     className="shell-header-buffer"
   />,
   <div
-    className="sticky-outer-wrapper"
-    style={Object {}}
-  >
-    <div
-      className="sticky-inner-wrapper"
-      style={
-        Object {
-          "position": "relative",
-          "top": "0px",
-          "zIndex": 4,
-        }
-      }
-    >
-      <div
-        className="border-t border-b border--gray-light bg-white"
-        data-swiftype-index="false"
-      >
-        <div
-          className="limiter"
-          style={
-            Object {
-              "minHeight": "50px",
-            }
-          }
-        >
-          <div
-            className="grid"
-          >
-            <div
-              className="col col--4-mm col--12"
-            >
-              <div
-                className="ml24-mm flex-parent-mm flex-parent--start-main h30"
-                style={
-                  Object {
-                    "marginTop": 10,
-                  }
-                }
-              >
-                <div
-                  className="flex-parent"
-                  style={
-                    Object {
-                      "overflow": "hidden",
-                    }
-                  }
-                >
-                  <a
-                    className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
-                    href="/dr-ui/"
-                  >
-                    dr-ui
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col col--6-mm col--12"
-            >
-              <div
-                className="clearfix"
-              >
-                <div
-                  className="fl"
-                >
-                  <a
-                    className="inline-block px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block border-b border--transparent "
-                    data-test="/PageLayout/"
-                    href="/PageLayout/"
-                  >
-                    Overview
-                  </a>
-                </div>
-                <div
-                  className="fl"
-                >
-                  <a
-                    className="inline-block px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block border-b border--transparent "
-                    data-test="/PageLayout/specification/"
-                    href="/PageLayout/specification/"
-                  >
-                    Specification
-                  </a>
-                </div>
-                <div
-                  className="fl"
-                >
-                  <a
-                    className="inline-block px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block-mm none border--transparent "
-                    data-test="/PageLayout/examples/"
-                    href="/PageLayout/examples/"
-                  >
-                    Examples
-                  </a>
-                </div>
-                <div
-                  className="fl"
-                >
-                  <a
-                    className="inline-block px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block-mm none border--transparent "
-                    data-test="/PageLayout/demo/"
-                    href="/PageLayout/demo/"
-                  >
-                    Demo
-                  </a>
-                </div>
-                <div
-                  className="fl"
-                >
-                  <div
-                    className="inline-block"
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                  >
-                    <button
-                      aria-label="More"
-                      className="px6 py12 mr12 align-l cursor-pointer none-mm"
-                      type="button"
-                    >
-                      More +
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col col--2-mm col--12"
-            >
-              <div
-                className="flex-parent-mm flex-parent--end-main h-full-mm wmax300 h36"
-                style={
-                  Object {
-                    "marginBottom": 7,
-                    "marginTop": 7,
-                  }
-                }
-              >
-                <div
-                  className="h36 relative"
-                >
-                  <div>
-                    <div>
-                      <button
-                        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke"
-                        onClick={[Function]}
-                        style={Object {}}
-                      >
-                        <span
-                          className="mr6"
-                        >
-                          <svg
-                            className="icon w18 h18"
-                          >
-                            <use
-                              xlinkHref="#icon-search"
-                            />
-                          </svg>
-                        </span>
-                         
-                        Search
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
     className="limiter"
   >
     <div
@@ -1981,37 +1101,95 @@ Array [
               }
             >
               <div
-                className="viewport-almost-mm scroll-auto-mm scroll-styled"
+                className="viewport-full-mm scroll-auto-mm scroll-styled"
                 id="dr-ui--page-layout-sidebar"
               >
                 <div
-                  className="mx24 py12 none block-mm"
+                  className="py12 none block-mm"
                 >
-                  <ul
-                    className=""
-                    style={Object {}}
+                  <div
+                    className="ml18 my18"
                   >
-                    <li
-                      className="pb6 mb6"
+                    <div
+                      className="flex-parent"
+                      style={
+                        Object {
+                          "overflow": "hidden",
+                        }
+                      }
                     >
                       <a
-                        className="color-blue-on-hover"
-                        href="#section-1"
+                        className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
+                        href="/dr-ui/"
                       >
-                        Section 1
+                        dr-ui
                       </a>
-                    </li>
-                    <li
-                      className="pb6"
+                    </div>
+                  </div>
+                  <div
+                    className="pt6"
+                  >
+                    <a
+                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
+                      href="/PageLayout/"
                     >
-                      <a
-                        className="color-blue-on-hover"
-                        href="#section-2"
+                      Overview
+                      <span
+                        style={
+                          Object {
+                            "margin-left": "3px",
+                          }
+                        }
                       >
-                        Section 2
-                      </a>
-                    </li>
-                  </ul>
+                        <svg
+                          className="events-none icon inline-block align-t"
+                          focusable="false"
+                          role="presentation"
+                          style={
+                            Object {
+                              "height": 18,
+                              "width": 18,
+                            }
+                          }
+                        >
+                          <use
+                            xlinkHref="#icon-chevron-right"
+                            xmlnsXlink="http://www.w3.org/1999/xlink"
+                          />
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+                  <div
+                    className="pt6"
+                  >
+                    <a
+                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
+                      href="/PageLayout/specification/"
+                    >
+                      Specification
+                    </a>
+                  </div>
+                  <div
+                    className="pt6"
+                  >
+                    <a
+                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
+                      href="/PageLayout/examples/"
+                    >
+                      Examples
+                    </a>
+                  </div>
+                  <div
+                    className="pt6"
+                  >
+                    <a
+                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
+                      href="/PageLayout/demo/"
+                    >
+                      Demo
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -2140,194 +1318,73 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="sticky-outer-wrapper"
-    style={Object {}}
-  >
-    <div
-      className="sticky-inner-wrapper"
-      style={
-        Object {
-          "position": "relative",
-          "top": "0px",
-          "zIndex": 4,
-        }
-      }
-    >
-      <div
-        className="border-t border-b border--gray-light bg-white"
-        data-swiftype-index="false"
-      >
-        <div
-          className="limiter"
-          style={
-            Object {
-              "minHeight": "50px",
-            }
-          }
-        >
-          <div
-            className="grid"
-          >
-            <div
-              className="col col--4-mm col--12"
-            >
-              <div
-                className="ml24-mm flex-parent-mm flex-parent--start-main h30"
-                style={
-                  Object {
-                    "marginTop": 10,
-                  }
-                }
-              >
-                <div
-                  className="flex-parent"
-                  style={
-                    Object {
-                      "overflow": "hidden",
-                    }
-                  }
-                >
-                  <a
-                    className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
-                    href="/dr-ui/"
-                  >
-                    dr-ui
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col col--6-mm col--12"
-            >
-              <div
-                className="clearfix"
-              >
-                <div
-                  className="fl"
-                >
-                  <a
-                    className="inline-block px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block border-b border--transparent "
-                    data-test="/PageLayout/"
-                    href="/PageLayout/"
-                  >
-                    Overview
-                  </a>
-                </div>
-                <div
-                  className="fl"
-                >
-                  <a
-                    className="inline-block px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block border-b border--transparent "
-                    data-test="/PageLayout/specification/"
-                    href="/PageLayout/specification/"
-                  >
-                    Specification
-                  </a>
-                </div>
-                <div
-                  className="fl"
-                >
-                  <a
-                    className="inline-block px6 mr24 fl-mm align-center-mm align-l py12 border-b-mm border-b--2 inline-block-mm none border--transparent "
-                    data-test="/PageLayout/examples/"
-                    href="/PageLayout/examples/"
-                  >
-                    Examples
-                  </a>
-                </div>
-                <div
-                  className="fl"
-                >
-                  <div
-                    className="inline-block"
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
-                  >
-                    <button
-                      aria-label="More"
-                      className="px6 py12 mr12 align-l cursor-pointer none-mm"
-                      type="button"
-                    >
-                      More +
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col col--2-mm col--12"
-            >
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
     className="limiter"
   >
     <div
       className="grid"
     >
       <div
-        className="col col--4-mm col--12 "
+        className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
+        style={
+          Object {
+            "background": "#fbe5e5",
+            "color": "#9b3134",
+          }
+        }
       >
         <div
-          data-swiftype-index="false"
+          className="flex-child mr18 none block-mm pt3"
         >
           <div
-            className="sticky-outer-wrapper"
-            style={Object {}}
+            className="bg-red-light round-full color-red flex-parent flex-parent--center-main flex-parent--center-cross"
+            style={
+              Object {
+                "height": 50,
+                "width": 50,
+              }
+            }
           >
-            <div
-              className="sticky-inner-wrapper"
+            <svg
+              className="events-none icon"
+              focusable="false"
+              role="presentation"
               style={
                 Object {
-                  "position": "relative",
-                  "top": "0px",
-                  "zIndex": 3,
+                  "height": 40,
+                  "width": 40,
                 }
               }
             >
-              <div
-                className="viewport-almost-mm scroll-auto-mm scroll-styled"
-                id="dr-ui--page-layout-sidebar"
-              >
-                <div
-                  className="mx24 py12 none block-mm"
-                >
-                  <ul
-                    className=""
-                    style={Object {}}
-                  >
-                    <li
-                      className="pb6 mb6"
-                    >
-                      <a
-                        className="color-blue-on-hover"
-                        href="#section-1"
-                      >
-                        Section 1
-                      </a>
-                    </li>
-                    <li
-                      className="pb6"
-                    >
-                      <a
-                        className="color-blue-on-hover"
-                        href="#section-2"
-                      >
-                        Section 2
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+              <use
+                xlinkHref="#icon-alert"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              />
+            </svg>
           </div>
+        </div>
+        <div
+          className="flex-child prose"
+        >
+          <div
+            className="txt-bold txt-m mb6"
+          >
+            Something went wrong
+          </div>
+          <p>
+            We sent the error to the team. Please refresh the page to try again.
+          </p>
+          <details>
+            <summary
+              className="cursor-pointer"
+            >
+              Error details
+            </summary>
+            <pre>
+              <code>
+                Cannot read property '/PageLayout/' of undefined
+              </code>
+            </pre>
+          </details>
         </div>
       </div>
       <div
@@ -2432,112 +1489,6 @@ Array [
   <div
     className="shell-header-buffer"
   />,
-  <div
-    className="sticky-outer-wrapper"
-    style={Object {}}
-  >
-    <div
-      className="sticky-inner-wrapper"
-      style={
-        Object {
-          "position": "relative",
-          "top": "0px",
-          "zIndex": 4,
-        }
-      }
-    >
-      <div
-        className="border-t border-b border--gray-light bg-white"
-        data-swiftype-index="false"
-      >
-        <div
-          className="limiter"
-          style={
-            Object {
-              "minHeight": "50px",
-            }
-          }
-        >
-          <div
-            className="grid"
-          >
-            <div
-              className="col col--4-mm col--12"
-            >
-              <div
-                className="ml24-mm flex-parent-mm flex-parent--start-main h30"
-                style={
-                  Object {
-                    "marginTop": 10,
-                  }
-                }
-              >
-                <div
-                  className="flex-parent"
-                  style={
-                    Object {
-                      "overflow": "hidden",
-                    }
-                  }
-                >
-                  <a
-                    className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
-                    href="/dr-ui/"
-                  >
-                    dr-ui
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col col--6-mm col--12"
-            />
-            <div
-              className="col col--2-mm col--12"
-            >
-              <div
-                className="flex-parent-mm flex-parent--end-main h-full-mm wmax300 h36"
-                style={
-                  Object {
-                    "marginBottom": 7,
-                    "marginTop": 7,
-                  }
-                }
-              >
-                <div
-                  className="h36 relative"
-                >
-                  <div>
-                    <div>
-                      <button
-                        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke"
-                        onClick={[Function]}
-                        style={Object {}}
-                      >
-                        <span
-                          className="mr6"
-                        >
-                          <svg
-                            className="icon w18 h18"
-                          >
-                            <use
-                              xlinkHref="#icon-search"
-                            />
-                          </svg>
-                        </span>
-                         
-                        Search
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>,
   <div
     className="limiter"
   >

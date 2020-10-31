@@ -82,22 +82,6 @@ describe('page-layout', () => {
     });
   });
 
-  describe(testCases.hideTopBar.description, () => {
-    let testCase;
-    let wrapper;
-    let tree;
-
-    beforeEach(() => {
-      testCase = testCases.hideTopBar;
-      wrapper = renderer.create(testCase.element);
-      tree = wrapper.toJSON();
-    });
-
-    test('renders as expected', () => {
-      expect(tree).toMatchSnapshot();
-    });
-  });
-
   describe(testCases.hideSearch.description, () => {
     let testCase;
     let wrapper;

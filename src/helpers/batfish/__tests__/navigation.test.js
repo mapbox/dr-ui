@@ -24,6 +24,7 @@ describe('buildNavigation', () => {
   });
 
   it('accordion pages are sorted by order', () => {
+    console.log(buildNavigation('/api', apiDebug));
     expect(buildNavigation('/api', apiDebug).accordion).toEqual({
       '/api/': [
         {

@@ -8,7 +8,7 @@ Object {
       "contentType": "API",
       "description": "This is the first section",
       "hideFeedback": true,
-      "layout": "accordion",
+      "layout": "page",
       "order": 3,
       "splitPages": true,
       "title": "Split pages",
