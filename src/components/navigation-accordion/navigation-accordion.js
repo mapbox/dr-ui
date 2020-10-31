@@ -62,7 +62,7 @@ export default class NavigationAccordion extends React.PureComponent {
     return <ul>{subItemEls}</ul>;
   }
 
-  renderItems() {
+  renderSidebar() {
     const { navigation, parentPage } = this.props;
     const activeItem = this.props.location.pathname;
     const firstLevelItems = navigation.navTabs;
@@ -84,10 +84,6 @@ export default class NavigationAccordion extends React.PureComponent {
       };
     });
 
-    return items;
-  }
-
-  renderSidebar(items) {
     const sidebarItems = items.map((item, index) => {
       return (
         <React.Fragment key={index}>
@@ -107,7 +103,7 @@ export default class NavigationAccordion extends React.PureComponent {
     const { SITE, BASEURL } = constants;
     const { title, tag, path } = navigation;
 
-    const items = this.renderItems();
+    const items = this.renderSidebar();
 
     return (
       <div className="py12 none block-mm">
