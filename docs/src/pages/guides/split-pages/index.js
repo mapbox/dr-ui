@@ -5,7 +5,6 @@ splitPages: true
 order: 3
 layout: page
 contentType: API
-hideFeedback: true
 ---*/
 
 import React from 'react';

@@ -2,7 +2,7 @@
 title: Components
 description: UI components for Mapbox documentation projects.
 navOrder: 1
-layout: example
+layout: page
 contentType: reference
 products:
   - Documentation

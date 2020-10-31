@@ -31,7 +31,7 @@ export default class Basic extends React.Component {
         }}
         frontMatter={{
           title: 'Examples',
-          layout: 'example',
+          layout: 'exampleIndex',
           description: 'Lots of handy examples.',
           navOrder: 1
         }}

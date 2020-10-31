@@ -3,9 +3,11 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import BackToTopButton from '../back-to-top-button/back-to-top-button';
 import ErrorBoundary from '../error-boundary/error-boundary';
+import Breadcrumb from '../breadcrumb/breadcrumb';
 import Content from './components/content';
-import Sidebar from './components/sidebar';
-import { findHasSection, findParentPath } from './utils';
+import Sidebar from './components/page-sidebar';
+import { findHasSection, findParentPath, createUniqueCrumbs } from './utils';
+
 // default configuration for each layout
 // every option can be overriden in the frontMatter
 import layoutConfig from './layout.config.js';
@@ -32,13 +34,41 @@ export default class PageLayout extends React.Component {
   };
 
   // render the page's content
-  renderContent = (config, parentPath) => {
+  renderContent = (config, parentPath, parent, hasSection) => {
+    const { constants, frontMatter, location } = this.props;
+    const crumbs = createUniqueCrumbs([
+      {
+        title: 'All docs',
+        path: 'https://docs.mapbox.com'
+      },
+      {
+        title: constants.SITE,
+        path: `${constants.BASEURL}/`
+      },
+      // if multi-structured site add the section name
+      ...(hasSection ? { title: hasSection.title, path: hasSection.path } : []),
+      {
+        title: parent.title,
+        path: parent.parent
+      },
+      {
+        title: frontMatter.title,
+        path: location.pathname
+      }
+    ]);
     return (
       <div
         className={classnames('col col--12', {
           'col--8-mm': config.sidebar !== 'none'
         })}
       >
+        <Breadcrumb
+          themeWrapper="none block-mm px24 pt12"
+          domain={false}
+          location={location}
+          links={crumbs}
+        />
+
         <Content
           {...this.props}
           parentPath={parentPath}
@@ -82,7 +112,12 @@ export default class PageLayout extends React.Component {
               {this.renderSidebar(config, switchedNavigation, parentPath)}
             </ErrorBoundary>
             <ErrorBoundary>
-              {this.renderContent(config, parentPath)}
+              {this.renderContent(
+                config,
+                parentPath,
+                switchedNavigation.hierarchy[location.pathname],
+                hasSection
+              )}
             </ErrorBoundary>
           </div>
         </div>
@@ -145,7 +180,8 @@ PageLayout.propTypes = {
     sidebarTitle: PropTypes.string,
     hideFromNav: PropTypes.bool,
     hideCardLanguage: PropTypes.bool,
-    hideCardDescription: PropTypes.bool
+    hideCardDescription: PropTypes.bool,
+    title: PropTypes.string
   }).isRequired,
   /**
 - `navTabs` - links to be shown in the `TabList` of `TopBarSticker`, formatted as an array of object: `[{"href": "/overview", "id": "overview", "label": "Overview"}]`

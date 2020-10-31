@@ -80,7 +80,25 @@ testCases.hideSearch = {
             id: '/PageLayout/examples/',
             label: 'Examples'
           }
-        ]
+        ],
+        accordion: {
+          '/dr-ui/overview/': [
+            {
+              path: '/dr-ui/overview/permissions/',
+              title: 'Permissions'
+            }
+          ],
+          '/dr-ui/examples/': [
+            {
+              path: '/dr-ui/examples/basic/',
+              title: 'Basic example'
+            },
+            {
+              path: '/dr-ui/examples/fancy/',
+              title: 'Fancy example'
+            }
+          ]
+        }
       }}
     />
   )
@@ -119,7 +137,25 @@ testCases.friendOfDocs = {
             title: 'Demo'
           }
         },
-        navTabs: []
+        navTabs: [],
+        accordion: {
+          '/dr-ui/overview/': [
+            {
+              path: '/dr-ui/overview/permissions/',
+              title: 'Permissions'
+            }
+          ],
+          '/dr-ui/examples/': [
+            {
+              path: '/dr-ui/examples/basic/',
+              title: 'Basic example'
+            },
+            {
+              path: '/dr-ui/examples/fancy/',
+              title: 'Fancy example'
+            }
+          ]
+        }
       }}
     />
   )

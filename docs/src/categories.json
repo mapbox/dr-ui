@@ -26,6 +26,7 @@
   ],
   "Layout": [
     "PageLayout",
+    "OnThisPage",
     "BackToTopButton",
     "GlossaryCard",
     "GlossaryImage",
@@ -41,6 +42,7 @@
     "Card",
     "CardContainer",
     "ExamplesPage",
+    "Breadcrumb",
     "AnalyticsShell",
     "ErrorBoundary"
   ],

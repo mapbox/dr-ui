@@ -987,6 +987,12 @@ Object {
 exports[`buildNavigation single structure 1`] = `
 Object {
   "accordion": Object {
+    "/dr-ui/components/": Array [
+      Object {
+        "path": "/dr-ui/components/",
+        "title": "Components",
+      },
+    ],
     "/dr-ui/guides/overview/": Array [
       Object {
         "path": "/dr-ui/guides/overview/",

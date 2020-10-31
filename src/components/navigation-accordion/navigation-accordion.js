@@ -20,7 +20,7 @@ export default class NavigationAccordion extends React.PureComponent {
       }
     );
     const chevronStyle = {
-      'margin-left': '3px'
+      marginLeft: '3px'
     };
 
     return (
@@ -39,6 +39,7 @@ export default class NavigationAccordion extends React.PureComponent {
   }
   renderBody(subItems, activeItem) {
     const { parentPage } = this.props;
+    if (!subItems) return;
 
     const subItemEls = subItems
       .filter((page) => {
@@ -111,7 +112,7 @@ export default class NavigationAccordion extends React.PureComponent {
 
     return (
       <div className="py12 none block-mm">
-        <div className="ml18 my18">
+        <div className="ml18 mb18">
           <ProductMenu
             productName={title || SITE}
             tag={tag || undefined}

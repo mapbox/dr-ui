@@ -12,7 +12,7 @@
         "title": "Components",
         "description": "UI components for Mapbox documentation projects.",
         "navOrder": 1,
-        "layout": "example",
+        "layout": "page",
         "contentType": "reference",
         "products": ["Documentation"],
         "hideSubItems": false,
@@ -82,6 +82,7 @@
         "layout": "example",
         "fullWidthCards": true,
         "hideTitle": true,
+        "hideFeedback": true,
         "products": ["Documentation"]
       }
     },
@@ -169,8 +170,7 @@
         "splitPages": true,
         "order": 3,
         "layout": "page",
-        "contentType": "API",
-        "hideFeedback": true
+        "contentType": "API"
       }
     },
     {
@@ -242,7 +242,7 @@
         "description": "Example of a Help page.",
         "contentType": "example",
         "navOrder": 4,
-        "layout": "example",
+        "layout": "exampleIndex",
         "fullWidthCards": true,
         "hideTitle": true,
         "products": ["Documentation"]
