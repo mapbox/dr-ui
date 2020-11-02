@@ -23,7 +23,7 @@
   font-size: 30px;
   border-top: 1px solid !important;
   border-color: #d6dee8 !important;
-  padding-top: 60px;
+  padding-top: 30px;
   margin: 36px 0px 18px;
 }
 
@@ -31,7 +31,6 @@
 #docs-content.prose h3 {
   font-weight: normal;
   font-size: 24px;
-  padding-top: 40px;
 }
 
 /* make links darker in Note to improve color contrast */
