@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
 import BackToTopButton from '../back-to-top-button/back-to-top-button';
 import ErrorBoundary from '../error-boundary/error-boundary';
 import Breadcrumb from '../breadcrumb/breadcrumb';
@@ -18,17 +17,17 @@ export default class PageLayout extends React.Component {
   renderSidebar = (config, switchedNavigation, parentPath) => {
     const { constants } = this.props;
     return (
-      config.sidebar !== 'none' && (
-        <div className={`col col--3-mm col--12 ${config.sidebarTheme}`}>
-          <Sidebar
-            {...this.props}
-            navigation={switchedNavigation}
-            constants={constants}
-            parentPath={parentPath}
-            layoutConfig={config}
-          />
-        </div>
-      )
+      <div
+        className={`flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml ${config.sidebarTheme}`}
+      >
+        <Sidebar
+          {...this.props}
+          navigation={switchedNavigation}
+          constants={constants}
+          parentPath={parentPath}
+          layoutConfig={config}
+        />
+      </div>
     );
   };
 
@@ -56,11 +55,7 @@ export default class PageLayout extends React.Component {
       }
     ]);
     return (
-      <div
-        className={classnames('col col--12', {
-          'col--9-mm': config.sidebar !== 'none'
-        })}
-      >
+      <div className="flex-child flex-child--grow">
         <Breadcrumb
           themeWrapper="none block-mm px24 pt12"
           domain={false}
@@ -106,7 +101,7 @@ export default class PageLayout extends React.Component {
       <ErrorBoundary>
         {!noShellHeaderBuffer && <div className="shell-header-buffer" />}
         <div className="limiter limiter--wide">
-          <div className="grid grid--gut12">
+          <div className="flex-parent-mm">
             <ErrorBoundary>
               {this.renderSidebar(config, switchedNavigation, parentPath)}
             </ErrorBoundary>

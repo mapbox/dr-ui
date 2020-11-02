@@ -9,10 +9,10 @@ Array [
     className="limiter limiter--wide"
   >
     <div
-      className="grid grid--gut12"
+      className="flex-parent-mm"
     >
       <div
-        className="col col--3-mm col--12 "
+        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml "
       >
         <div
           className="sticky-mm"
@@ -210,7 +210,7 @@ Array [
         </div>
       </div>
       <div
-        className="col col--12 col--9-mm"
+        className="flex-child flex-child--grow"
       >
         <div
           className="dr-ui--breadcrumb none block-mm px24 pt12"
@@ -428,10 +428,10 @@ Array [
     className="limiter limiter--wide"
   >
     <div
-      className="grid grid--gut12"
+      className="flex-parent-mm"
     >
       <div
-        className="col col--3-mm col--12 undefined"
+        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml undefined"
       >
         <div
           className="sticky-mm"
@@ -573,7 +573,7 @@ Array [
         </div>
       </div>
       <div
-        className="col col--12 col--9-mm"
+        className="flex-child flex-child--grow"
       >
         <div
           className="dr-ui--breadcrumb none block-mm px24 pt12"
@@ -1023,10 +1023,10 @@ Array [
     className="limiter limiter--wide"
   >
     <div
-      className="grid grid--gut12"
+      className="flex-parent-mm"
     >
       <div
-        className="col col--3-mm col--12 undefined"
+        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml undefined"
       >
         <div
           className="sticky-mm"
@@ -1168,7 +1168,7 @@ Array [
         </div>
       </div>
       <div
-        className="col col--12 col--9-mm"
+        className="flex-child flex-child--grow"
       >
         <div
           className="dr-ui--breadcrumb none block-mm px24 pt12"
@@ -1341,10 +1341,10 @@ Array [
     className="limiter limiter--wide"
   >
     <div
-      className="grid grid--gut12"
+      className="flex-parent-mm"
     >
       <div
-        className="col col--3-mm col--12 "
+        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml "
       >
         <div
           className="sticky-mm"
@@ -1452,7 +1452,7 @@ Array [
         </div>
       </div>
       <div
-        className="col col--12 col--9-mm"
+        className="flex-child flex-child--grow"
       >
         <div
           className="dr-ui--breadcrumb none block-mm px24 pt12"
@@ -1734,10 +1734,10 @@ Array [
     className="limiter limiter--wide"
   >
     <div
-      className="grid grid--gut12"
+      className="flex-parent-mm"
     >
       <div
-        className="col col--3-mm col--12 "
+        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml "
       >
         <div
           className="sticky-mm"
@@ -1832,7 +1832,7 @@ Array [
         </div>
       </div>
       <div
-        className="col col--12 col--9-mm"
+        className="flex-child flex-child--grow"
       >
         <div
           className="dr-ui--breadcrumb none block-mm px24 pt12"
@@ -2095,10 +2095,10 @@ Array [
     className="limiter limiter--wide"
   >
     <div
-      className="grid grid--gut12"
+      className="flex-parent-mm"
     >
       <div
-        className="col col--3-mm col--12 undefined"
+        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml undefined"
       >
         <div
           className="sticky-mm"
@@ -2151,7 +2151,7 @@ Array [
         </div>
       </div>
       <div
-        className="col col--12 col--9-mm"
+        className="flex-child flex-child--grow"
       >
         <div
           className="dr-ui--breadcrumb none block-mm px24 pt12"
