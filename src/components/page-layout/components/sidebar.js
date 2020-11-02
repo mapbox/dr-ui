@@ -1,37 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Sticky from 'react-stickynode';
-import debounce from 'debounce';
 import NavigationAccordion from '../../navigation-accordion';
 import ProductMenu from '../../product-menu/product-menu';
 
 export default class Sidebar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      bottomBoundaryValue: 0,
-      stickyEnabled: false
-    };
-    this.debounceHandleWindowResize = debounce(() => {
-      const height = document.body.clientHeight;
-      this.setState({
-        bottomBoundaryValue: height - 150
-      });
-    }, 200);
-  }
-
-  componentDidMount() {
-    this.debounceHandleWindowResize();
-    setTimeout(() => {
-      this.setState({ stickyEnabled: true });
-    }, 500);
-    window.addEventListener('resize', this.debounceHandleWindowResize);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.debounceHandleWindowResize);
-  }
-
   getSidebarContent = () => {
     const {
       location,
@@ -53,30 +25,25 @@ export default class Sidebar extends React.Component {
   };
 
   render() {
-    const { stickyEnabled, bottomBoundaryValue } = this.state;
     const { constants, navigation } = this.props;
     const { SITE, BASEURL } = constants;
     const { title, tag, path } = navigation;
 
     return (
-      <div data-swiftype-index="false">
-        <Sticky
-          enabled={stickyEnabled}
-          bottomBoundary={bottomBoundaryValue}
-          innerZ={3}
-          top={0}
-        >
-          <div id="dr-ui--page-layout-sidebar">
-            <div className="my12 ml12">
-              <ProductMenu
-                productName={title || SITE}
-                tag={tag || undefined}
-                homePage={`${BASEURL}/${path || ''}`}
-              />
-            </div>
-            {this.getSidebarContent()}
-          </div>
-        </Sticky>
+      <div
+        data-swiftype-index="false"
+        id="dr-ui--page-layout-sidebar"
+        className="sticky-mm"
+        style={{ top: 0 }}
+      >
+        <div className="my12">
+          <ProductMenu
+            productName={title || SITE}
+            tag={tag || undefined}
+            homePage={`${BASEURL}/${path || ''}`}
+          />
+        </div>
+        {this.getSidebarContent()}
       </div>
     );
   }

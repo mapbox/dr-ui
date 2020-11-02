@@ -73,7 +73,7 @@ export default class NavigationAccordion extends React.PureComponent {
     });
 
     return (
-      <nav>
+      <nav className="ml-neg12">
         <ul>{sidebarItems}</ul>
       </nav>
     );
