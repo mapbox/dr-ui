@@ -98,7 +98,6 @@
         "description": "Batfish data selector functions to build navigation and topic datasets.",
         "order": 2,
         "contentType": "guide",
-        "hideFeedback": true,
         "layout": "page",
         "products": ["Documentation"],
         "prependJs": [
@@ -131,7 +130,6 @@
         "description": "How to build a site with more than one product.",
         "order": 4,
         "layout": "page",
-        "hideFeedback": true,
         "contentType": "guide",
         "products": ["Documentation"]
       }
@@ -144,7 +142,6 @@
         "description": "All about building with PageLayout.",
         "order": 3,
         "layout": "page",
-        "hideFeedback": true,
         "contentType": "guide",
         "products": ["Documentation"],
         "prependJs": [

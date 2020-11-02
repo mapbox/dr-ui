@@ -3,7 +3,6 @@ title: Multi-structured sites
 description: How to build a site with more than one product.
 order: 4
 layout: page
-hideFeedback: true
 contentType: guide
 products:
   - Documentation

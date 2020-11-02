@@ -6,10 +6,10 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="limiter"
+    className="limiter limiter--wide"
   >
     <div
-      className="grid"
+      className="grid grid--gut12"
     >
       <div
         className="col col--3-mm col--12 "
@@ -436,10 +436,10 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="limiter"
+    className="limiter limiter--wide"
   >
     <div
-      className="grid"
+      className="grid grid--gut12"
     >
       <div
         className="col col--3-mm col--12 undefined"
@@ -1042,10 +1042,10 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="limiter"
+    className="limiter limiter--wide"
   >
     <div
-      className="grid"
+      className="grid grid--gut12"
     >
       <div
         className="col col--3-mm col--12 undefined"
@@ -1371,10 +1371,10 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="limiter"
+    className="limiter limiter--wide"
   >
     <div
-      className="grid"
+      className="grid grid--gut12"
     >
       <div
         className="col col--3-mm col--12 "
@@ -1775,10 +1775,10 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="limiter"
+    className="limiter limiter--wide"
   >
     <div
-      className="grid"
+      className="grid grid--gut12"
     >
       <div
         className="col col--3-mm col--12 "
@@ -2147,10 +2147,10 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="limiter"
+    className="limiter limiter--wide"
   >
     <div
-      className="grid"
+      className="grid grid--gut12"
     >
       <div
         className="col col--3-mm col--12 undefined"
