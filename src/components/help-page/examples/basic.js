@@ -2,14 +2,14 @@
 Basic.
 */
 import React from 'react';
-import ExamplesPage from '../examples-page';
+import HelpPage from '../help-page';
 import Card from '../../card/card';
 import CardContainer from '../../card-container/card-container';
 
 export default class Basic extends React.Component {
   render() {
     return (
-      <ExamplesPage
+      <HelpPage
         frontMatter={{
           title: 'Title',
           description: 'Description.'

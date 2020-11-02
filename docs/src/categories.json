@@ -41,7 +41,7 @@
     "TopbarSticker",
     "Card",
     "CardContainer",
-    "ExamplesPage",
+    "HelpPage",
     "Breadcrumb",
     "AnalyticsShell",
     "ErrorBoundary"

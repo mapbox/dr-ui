@@ -1,5 +1,5 @@
 import React from 'react';
-import ExamplesPage from '../examples-page';
+import HelpPage from '../help-page';
 import CardContainer from '../../card-container/card-container';
 import Card from '../../card/card';
 import Basic from '../examples/basic';
@@ -12,7 +12,7 @@ testCases.basic = {
 };
 
 testCases.noThumbs = {
-  component: ExamplesPage,
+  component: HelpPage,
   description: 'Cards with no images and full-width',
   props: {
     frontMatter: {

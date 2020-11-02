@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { testCases } from './examples-page-test-cases.js';
+import { testCases } from './help-page-test-cases.js';
 
 describe('examples-page', () => {
   describe(testCases.basic.description, () => {
