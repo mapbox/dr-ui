@@ -1,38 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import ProductMenu from '../../components/product-menu';
 import Icon from '@mapbox/mr-ui/icon';
 
 export default class NavigationAccordion extends React.PureComponent {
-  constructor(props) {
-    super(props);
-  }
-
   renderHeader(href, label, hasChildren) {
     const { parentPage } = this.props;
     const isActive = parentPage === href;
-    const headerClasses = classnames(
-      'txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full',
-      {
-        'align-left round-l-full bg-blue-faint color-blue': isActive,
-        'color-darken50': !isActive
-      }
-    );
-    const chevronStyle = {
-      marginLeft: '3px'
-    };
-
     return (
-      <a href={href} className={headerClasses}>
+      <a
+        href={href}
+        className={classnames(
+          'px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover',
+          {
+            'bg-blue-faint color-blue': isActive,
+            'color-darken75': !isActive,
+            'flex-parent flex-parent--space-between-main': hasChildren
+          }
+        )}
+        style={{ letterSpacing: '0.05em' }}
+      >
         {label}
         {hasChildren && (
-          <span style={chevronStyle}>
-            <Icon
-              name={isActive ? 'chevron-down' : 'chevron-right'}
-              inline={true}
-            />
-          </span>
+          <Icon name={isActive ? 'chevron-up' : 'chevron-down'} inline={true} />
         )}
       </a>
     );
@@ -44,25 +34,23 @@ export default class NavigationAccordion extends React.PureComponent {
       .filter((page) => {
         return page.path !== parentPage;
       })
-      .map((page) => {
-        const isActive = activeItem === page.path;
-        const subItemClasses = classnames('py6 pl30 align-left round-full', {
-          'color-gray-dark txt-bold': isActive,
-          'color-gray': !isActive
-        });
-        return (
-          <li className={subItemClasses} key={page.title}>
-            <a className="inline-block w-full" href={page.path}>
-              {page.title}
-            </a>
-          </li>
-        );
-      });
+      .map((page) => (
+        <li
+          className={classnames('pb3 pl12 link link--gray', {
+            'txt-bold': activeItem === page.path
+          })}
+          key={page.title}
+        >
+          <a className="inline-block w-full" href={page.path}>
+            {page.title}
+          </a>
+        </li>
+      ));
 
-    return <ul>{subItemEls}</ul>;
+    return <ul className="mb6">{subItemEls}</ul>;
   }
 
-  renderSidebar() {
+  render() {
     const { navigation, parentPage } = this.props;
     const activeItem = this.props.location.pathname;
     const firstLevelItems = navigation.navTabs;
@@ -86,36 +74,17 @@ export default class NavigationAccordion extends React.PureComponent {
 
     const sidebarItems = items.map((item, index) => {
       return (
-        <React.Fragment key={index}>
-          <div className="pt6">
-            {item.header}
-            {item.body}
-          </div>
-        </React.Fragment>
+        <li key={index}>
+          {item.header}
+          {item.body}
+        </li>
       );
     });
 
-    return sidebarItems;
-  }
-
-  render() {
-    const { constants, navigation } = this.props;
-    const { SITE, BASEURL } = constants;
-    const { title, tag, path } = navigation;
-
-    const items = this.renderSidebar();
-
     return (
-      <div className="py12 none block-mm">
-        <div className="ml18 mb18">
-          <ProductMenu
-            productName={title || SITE}
-            tag={tag || undefined}
-            homePage={`${BASEURL}/${path || ''}`}
-          />
-        </div>
-        {this.renderSidebar(items)}
-      </div>
+      <nav>
+        <ul>{sidebarItems}</ul>
+      </nav>
     );
   }
 }

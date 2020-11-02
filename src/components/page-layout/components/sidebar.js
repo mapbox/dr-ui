@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Sticky from 'react-stickynode';
 import debounce from 'debounce';
-import classnames from 'classnames';
 import NavigationAccordion from '../../navigation-accordion';
+import ProductMenu from '../../product-menu/product-menu';
 import { findParentPath } from '../utils';
 
 export default class Sidebar extends React.Component {
@@ -60,7 +60,10 @@ export default class Sidebar extends React.Component {
 
   render() {
     const { stickyEnabled, bottomBoundaryValue } = this.state;
-    const { customSidebar } = this.props;
+    const { constants, navigation } = this.props;
+
+    const { SITE, BASEURL } = constants;
+    const { title, tag, path } = navigation;
 
     return (
       <div data-swiftype-index="false">
@@ -70,13 +73,15 @@ export default class Sidebar extends React.Component {
           innerZ={3}
           top={0}
         >
-          <div
-            className={classnames('', {
-              'scroll-auto-mm scroll-styled': !customSidebar
-            })}
-            id="dr-ui--page-layout-sidebar"
-          >
-            {customSidebar ? customSidebar : this.getSidebarContent()}
+          <div id="dr-ui--page-layout-sidebar">
+            <div className="my12 ml12">
+              <ProductMenu
+                productName={title || SITE}
+                tag={tag || undefined}
+                homePage={`${BASEURL}/${path || ''}`}
+              />
+            </div>
+            {this.getSidebarContent()}
           </div>
         </Sticky>
       </div>
@@ -100,11 +105,9 @@ Sidebar.propTypes = {
   }).isRequired,
   children: PropTypes.node,
   layoutConfig: PropTypes.shape({
-    sidebar: PropTypes.oneOf(['none', 'toc', 'accordion', 'sectioned']),
     hideSubItems: PropTypes.bool,
     includeFilterBar: PropTypes.bool
   }),
-  customSidebar: PropTypes.node,
   constants: PropTypes.shape({
     SITE: PropTypes.string.isRequired,
     BASEURL: PropTypes.string.isRequired

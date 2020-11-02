@@ -32,82 +32,76 @@ Array [
               }
             >
               <div
-                className="scroll-auto-mm scroll-styled"
                 id="dr-ui--page-layout-sidebar"
               >
                 <div
-                  className="py12 none block-mm"
+                  className="my12 ml12"
                 >
                   <div
-                    className="ml18 mb18"
-                  >
-                    <div
-                      className="flex-parent"
-                      style={
-                        Object {
-                          "overflow": "hidden",
-                        }
+                    className="flex-parent"
+                    style={
+                      Object {
+                        "overflow": "hidden",
                       }
-                    >
-                      <a
-                        className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
-                        href="/dr-ui/"
-                      >
-                        Search SDK for Android
-                      </a>
-                      <span
-                        className="flex-child flex-child--no-shrink mx6"
-                      >
-                        <div
-                          className="inline-block"
-                          onBlur={[Function]}
-                          onClick={[Function]}
-                          onFocus={[Function]}
-                          onKeyDown={[Function]}
-                        >
-                          <div
-                            aria-describedby="tooltip-1"
-                            className="txt-s txt-bold round px6 inline-block cursor-default border"
-                            style={
-                              Object {
-                                "background": "#f1f3fd",
-                                "borderColor": "#0428c8",
-                                "color": "#0c248d",
-                              }
-                            }
-                          >
-                            Beta
-                          </div>
-                          <div
-                            className="hide-visually"
-                            id="tooltip-1"
-                            role="tooltip"
-                          >
-                            <div
-                              className="txt-s wmax120"
-                            >
-                              This feature is in public beta and is subject to changes.
-                            </div>
-                          </div>
-                        </div>
-                      </span>
-                    </div>
-                  </div>
-                  <div
-                    className="pt6"
+                    }
                   >
                     <a
-                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full align-left round-l-full bg-blue-faint color-blue"
-                      href="/PageLayout/"
+                      className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
+                      href="/dr-ui/"
                     >
-                      Overview
-                      <span
+                      Search SDK for Android
+                    </a>
+                    <span
+                      className="flex-child flex-child--no-shrink mx6"
+                    >
+                      <div
+                        className="inline-block"
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                      >
+                        <div
+                          aria-describedby="tooltip-1"
+                          className="txt-s txt-bold round px6 inline-block cursor-default border"
+                          style={
+                            Object {
+                              "background": "#f1f3fd",
+                              "borderColor": "#0428c8",
+                              "color": "#0c248d",
+                            }
+                          }
+                        >
+                          Beta
+                        </div>
+                        <div
+                          className="hide-visually"
+                          id="tooltip-1"
+                          role="tooltip"
+                        >
+                          <div
+                            className="txt-s wmax120"
+                          >
+                            This feature is in public beta and is subject to changes.
+                          </div>
+                        </div>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+                <nav>
+                  <ul>
+                    <li>
+                      <a
+                        className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover bg-blue-faint color-blue flex-parent flex-parent--space-between-main"
+                        href="/PageLayout/"
                         style={
                           Object {
-                            "marginLeft": "3px",
+                            "letterSpacing": "0.05em",
                           }
                         }
                       >
+                        Overview
                         <svg
                           className="events-none icon inline-block align-t"
                           focusable="false"
@@ -120,96 +114,107 @@ Array [
                           }
                         >
                           <use
-                            xlinkHref="#icon-chevron-down"
+                            xlinkHref="#icon-chevron-up"
                             xmlnsXlink="http://www.w3.org/1999/xlink"
                           />
                         </svg>
-                      </span>
-                    </a>
-                    <ul>
-                      <li
-                        className="py6 pl30 align-left round-full color-gray"
+                      </a>
+                      <ul
+                        className="mb6"
                       >
-                        <a
-                          className="inline-block w-full"
-                          href="/PageLayout/layouts/"
+                        <li
+                          className="pb3 pl12 link link--gray"
                         >
-                          Layouts
-                        </a>
-                      </li>
-                      <li
-                        className="py6 pl30 align-left round-full color-gray"
+                          <a
+                            className="inline-block w-full"
+                            href="/PageLayout/layouts/"
+                          >
+                            Layouts
+                          </a>
+                        </li>
+                        <li
+                          className="pb3 pl12 link link--gray"
+                        >
+                          <a
+                            className="inline-block w-full"
+                            href="/PageLayout/navigation/"
+                          >
+                            Navigation
+                          </a>
+                        </li>
+                        <li
+                          className="pb3 pl12 link link--gray"
+                        >
+                          <a
+                            className="inline-block w-full"
+                            href="/PageLayout/images/"
+                          >
+                            Images and videos
+                          </a>
+                        </li>
+                        <li
+                          className="pb3 pl12 link link--gray"
+                        >
+                          <a
+                            className="inline-block w-full"
+                            href="/PageLayout/constants/"
+                          >
+                            Constants
+                          </a>
+                        </li>
+                        <li
+                          className="pb3 pl12 link link--gray"
+                        >
+                          <a
+                            className="inline-block w-full"
+                            href="/PageLayout/frontmatter/"
+                          >
+                            Frontmatter
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a
+                        className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                        href="/PageLayout/specification/"
+                        style={
+                          Object {
+                            "letterSpacing": "0.05em",
+                          }
+                        }
                       >
-                        <a
-                          className="inline-block w-full"
-                          href="/PageLayout/navigation/"
-                        >
-                          Navigation
-                        </a>
-                      </li>
-                      <li
-                        className="py6 pl30 align-left round-full color-gray"
+                        Specification
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                        href="/PageLayout/examples/"
+                        style={
+                          Object {
+                            "letterSpacing": "0.05em",
+                          }
+                        }
                       >
-                        <a
-                          className="inline-block w-full"
-                          href="/PageLayout/images/"
-                        >
-                          Images and videos
-                        </a>
-                      </li>
-                      <li
-                        className="py6 pl30 align-left round-full color-gray"
+                        Examples
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                        href="/PageLayout/demo/"
+                        style={
+                          Object {
+                            "letterSpacing": "0.05em",
+                          }
+                        }
                       >
-                        <a
-                          className="inline-block w-full"
-                          href="/PageLayout/constants/"
-                        >
-                          Constants
-                        </a>
-                      </li>
-                      <li
-                        className="py6 pl30 align-left round-full color-gray"
-                      >
-                        <a
-                          className="inline-block w-full"
-                          href="/PageLayout/frontmatter/"
-                        >
-                          Frontmatter
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div
-                    className="pt6"
-                  >
-                    <a
-                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
-                      href="/PageLayout/specification/"
-                    >
-                      Specification
-                    </a>
-                  </div>
-                  <div
-                    className="pt6"
-                  >
-                    <a
-                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
-                      href="/PageLayout/examples/"
-                    >
-                      Examples
-                    </a>
-                  </div>
-                  <div
-                    className="pt6"
-                  >
-                    <a
-                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
-                      href="/PageLayout/demo/"
-                    >
-                      Demo
-                    </a>
-                  </div>
-                </div>
+                        Demo
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
@@ -457,46 +462,40 @@ Array [
               }
             >
               <div
-                className="scroll-auto-mm scroll-styled"
                 id="dr-ui--page-layout-sidebar"
               >
                 <div
-                  className="py12 none block-mm"
+                  className="my12 ml12"
                 >
                   <div
-                    className="ml18 mb18"
-                  >
-                    <div
-                      className="flex-parent"
-                      style={
-                        Object {
-                          "overflow": "hidden",
-                        }
+                    className="flex-parent"
+                    style={
+                      Object {
+                        "overflow": "hidden",
                       }
-                    >
-                      <a
-                        className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
-                        href="/dr-ui/"
-                      >
-                        dr-ui
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    className="pt6"
+                    }
                   >
                     <a
-                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full align-left round-l-full bg-blue-faint color-blue"
-                      href="/PageLayout/"
+                      className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
+                      href="/dr-ui/"
                     >
-                      Overview
-                      <span
+                      dr-ui
+                    </a>
+                  </div>
+                </div>
+                <nav>
+                  <ul>
+                    <li>
+                      <a
+                        className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover bg-blue-faint color-blue flex-parent flex-parent--space-between-main"
+                        href="/PageLayout/"
                         style={
                           Object {
-                            "marginLeft": "3px",
+                            "letterSpacing": "0.05em",
                           }
                         }
                       >
+                        Overview
                         <svg
                           className="events-none icon inline-block align-t"
                           focusable="false"
@@ -509,76 +508,87 @@ Array [
                           }
                         >
                           <use
-                            xlinkHref="#icon-chevron-down"
+                            xlinkHref="#icon-chevron-up"
                             xmlnsXlink="http://www.w3.org/1999/xlink"
                           />
                         </svg>
-                      </span>
-                    </a>
-                    <ul>
-                      <li
-                        className="py6 pl30 align-left round-full color-gray"
+                      </a>
+                      <ul
+                        className="mb6"
                       >
-                        <a
-                          className="inline-block w-full"
-                          href="/PageLayout/specifications/"
+                        <li
+                          className="pb3 pl12 link link--gray"
                         >
-                          Specifications
-                        </a>
-                      </li>
-                      <li
-                        className="py6 pl30 align-left round-full color-gray"
+                          <a
+                            className="inline-block w-full"
+                            href="/PageLayout/specifications/"
+                          >
+                            Specifications
+                          </a>
+                        </li>
+                        <li
+                          className="pb3 pl12 link link--gray"
+                        >
+                          <a
+                            className="inline-block w-full"
+                            href="/PageLayout/examples/"
+                          >
+                            Examples
+                          </a>
+                        </li>
+                        <li
+                          className="pb3 pl12 link link--gray"
+                        >
+                          <a
+                            className="inline-block w-full"
+                            href="/PageLayout/demo/"
+                          >
+                            Demo
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a
+                        className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                        href="/PageLayout/specification/"
+                        style={
+                          Object {
+                            "letterSpacing": "0.05em",
+                          }
+                        }
                       >
-                        <a
-                          className="inline-block w-full"
-                          href="/PageLayout/examples/"
-                        >
-                          Examples
-                        </a>
-                      </li>
-                      <li
-                        className="py6 pl30 align-left round-full color-gray"
+                        Specification
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                        href="/PageLayout/examples/"
+                        style={
+                          Object {
+                            "letterSpacing": "0.05em",
+                          }
+                        }
                       >
-                        <a
-                          className="inline-block w-full"
-                          href="/PageLayout/demo/"
-                        >
-                          Demo
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div
-                    className="pt6"
-                  >
-                    <a
-                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
-                      href="/PageLayout/specification/"
-                    >
-                      Specification
-                    </a>
-                  </div>
-                  <div
-                    className="pt6"
-                  >
-                    <a
-                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
-                      href="/PageLayout/examples/"
-                    >
-                      Examples
-                    </a>
-                  </div>
-                  <div
-                    className="pt6"
-                  >
-                    <a
-                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
-                      href="/PageLayout/demo/"
-                    >
-                      Demo
-                    </a>
-                  </div>
-                </div>
+                        Examples
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                        href="/PageLayout/demo/"
+                        style={
+                          Object {
+                            "letterSpacing": "0.05em",
+                          }
+                        }
+                      >
+                        Demo
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
@@ -1058,46 +1068,40 @@ Array [
               }
             >
               <div
-                className="scroll-auto-mm scroll-styled"
                 id="dr-ui--page-layout-sidebar"
               >
                 <div
-                  className="py12 none block-mm"
+                  className="my12 ml12"
                 >
                   <div
-                    className="ml18 mb18"
-                  >
-                    <div
-                      className="flex-parent"
-                      style={
-                        Object {
-                          "overflow": "hidden",
-                        }
+                    className="flex-parent"
+                    style={
+                      Object {
+                        "overflow": "hidden",
                       }
-                    >
-                      <a
-                        className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
-                        href="/dr-ui/"
-                      >
-                        dr-ui
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    className="pt6"
+                    }
                   >
                     <a
-                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full align-left round-l-full bg-blue-faint color-blue"
-                      href="/PageLayout/"
+                      className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
+                      href="/dr-ui/"
                     >
-                      Overview
-                      <span
+                      dr-ui
+                    </a>
+                  </div>
+                </div>
+                <nav>
+                  <ul>
+                    <li>
+                      <a
+                        className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover bg-blue-faint color-blue flex-parent flex-parent--space-between-main"
+                        href="/PageLayout/"
                         style={
                           Object {
-                            "marginLeft": "3px",
+                            "letterSpacing": "0.05em",
                           }
                         }
                       >
+                        Overview
                         <svg
                           className="events-none icon inline-block align-t"
                           focusable="false"
@@ -1110,76 +1114,87 @@ Array [
                           }
                         >
                           <use
-                            xlinkHref="#icon-chevron-down"
+                            xlinkHref="#icon-chevron-up"
                             xmlnsXlink="http://www.w3.org/1999/xlink"
                           />
                         </svg>
-                      </span>
-                    </a>
-                    <ul>
-                      <li
-                        className="py6 pl30 align-left round-full color-gray"
+                      </a>
+                      <ul
+                        className="mb6"
                       >
-                        <a
-                          className="inline-block w-full"
-                          href="/PageLayout/specifications/"
+                        <li
+                          className="pb3 pl12 link link--gray"
                         >
-                          Specifications
-                        </a>
-                      </li>
-                      <li
-                        className="py6 pl30 align-left round-full color-gray"
+                          <a
+                            className="inline-block w-full"
+                            href="/PageLayout/specifications/"
+                          >
+                            Specifications
+                          </a>
+                        </li>
+                        <li
+                          className="pb3 pl12 link link--gray"
+                        >
+                          <a
+                            className="inline-block w-full"
+                            href="/PageLayout/examples/"
+                          >
+                            Examples
+                          </a>
+                        </li>
+                        <li
+                          className="pb3 pl12 link link--gray"
+                        >
+                          <a
+                            className="inline-block w-full"
+                            href="/PageLayout/demo/"
+                          >
+                            Demo
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a
+                        className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                        href="/PageLayout/specification/"
+                        style={
+                          Object {
+                            "letterSpacing": "0.05em",
+                          }
+                        }
                       >
-                        <a
-                          className="inline-block w-full"
-                          href="/PageLayout/examples/"
-                        >
-                          Examples
-                        </a>
-                      </li>
-                      <li
-                        className="py6 pl30 align-left round-full color-gray"
+                        Specification
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                        href="/PageLayout/examples/"
+                        style={
+                          Object {
+                            "letterSpacing": "0.05em",
+                          }
+                        }
                       >
-                        <a
-                          className="inline-block w-full"
-                          href="/PageLayout/demo/"
-                        >
-                          Demo
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div
-                    className="pt6"
-                  >
-                    <a
-                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
-                      href="/PageLayout/specification/"
-                    >
-                      Specification
-                    </a>
-                  </div>
-                  <div
-                    className="pt6"
-                  >
-                    <a
-                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
-                      href="/PageLayout/examples/"
-                    >
-                      Examples
-                    </a>
-                  </div>
-                  <div
-                    className="pt6"
-                  >
-                    <a
-                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
-                      href="/PageLayout/demo/"
-                    >
-                      Demo
-                    </a>
-                  </div>
-                </div>
+                        Examples
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                        href="/PageLayout/demo/"
+                        style={
+                          Object {
+                            "letterSpacing": "0.05em",
+                          }
+                        }
+                      >
+                        Demo
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
@@ -1382,46 +1397,40 @@ Array [
               }
             >
               <div
-                className="scroll-auto-mm scroll-styled"
                 id="dr-ui--page-layout-sidebar"
               >
                 <div
-                  className="py12 none block-mm"
+                  className="my12 ml12"
                 >
                   <div
-                    className="ml18 mb18"
-                  >
-                    <div
-                      className="flex-parent"
-                      style={
-                        Object {
-                          "overflow": "hidden",
-                        }
+                    className="flex-parent"
+                    style={
+                      Object {
+                        "overflow": "hidden",
                       }
-                    >
-                      <a
-                        className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
-                        href="/dr-ui/"
-                      >
-                        dr-ui
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    className="pt6"
+                    }
                   >
                     <a
-                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
-                      href="/PageLayout/"
+                      className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
+                      href="/dr-ui/"
                     >
-                      Overview
-                      <span
+                      dr-ui
+                    </a>
+                  </div>
+                </div>
+                <nav>
+                  <ul>
+                    <li>
+                      <a
+                        className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75 flex-parent flex-parent--space-between-main"
+                        href="/PageLayout/"
                         style={
                           Object {
-                            "marginLeft": "3px",
+                            "letterSpacing": "0.05em",
                           }
                         }
                       >
+                        Overview
                         <svg
                           className="events-none icon inline-block align-t"
                           focusable="false"
@@ -1434,44 +1443,53 @@ Array [
                           }
                         >
                           <use
-                            xlinkHref="#icon-chevron-right"
+                            xlinkHref="#icon-chevron-down"
                             xmlnsXlink="http://www.w3.org/1999/xlink"
                           />
                         </svg>
-                      </span>
-                    </a>
-                  </div>
-                  <div
-                    className="pt6"
-                  >
-                    <a
-                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
-                      href="/PageLayout/specification/"
-                    >
-                      Specification
-                    </a>
-                  </div>
-                  <div
-                    className="pt6"
-                  >
-                    <a
-                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
-                      href="/PageLayout/examples/"
-                    >
-                      Examples
-                    </a>
-                  </div>
-                  <div
-                    className="pt6"
-                  >
-                    <a
-                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
-                      href="/PageLayout/demo/"
-                    >
-                      Demo
-                    </a>
-                  </div>
-                </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                        href="/PageLayout/specification/"
+                        style={
+                          Object {
+                            "letterSpacing": "0.05em",
+                          }
+                        }
+                      >
+                        Specification
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                        href="/PageLayout/examples/"
+                        style={
+                          Object {
+                            "letterSpacing": "0.05em",
+                          }
+                        }
+                      >
+                        Examples
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                        href="/PageLayout/demo/"
+                        style={
+                          Object {
+                            "letterSpacing": "0.05em",
+                          }
+                        }
+                      >
+                        Demo
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
@@ -1783,62 +1801,70 @@ Array [
               }
             >
               <div
-                className="scroll-auto-mm scroll-styled"
                 id="dr-ui--page-layout-sidebar"
               >
                 <div
-                  className="py12 none block-mm"
+                  className="my12 ml12"
                 >
                   <div
-                    className="ml18 mb18"
-                  >
-                    <div
-                      className="flex-parent"
-                      style={
-                        Object {
-                          "overflow": "hidden",
-                        }
+                    className="flex-parent"
+                    style={
+                      Object {
+                        "overflow": "hidden",
                       }
-                    >
-                      <a
-                        className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
-                        href="/dr-ui/"
-                      >
-                        dr-ui
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    className="pt6"
+                    }
                   >
                     <a
-                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
-                      href="/PageLayout/"
+                      className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
+                      href="/dr-ui/"
                     >
-                      Overview
-                    </a>
-                  </div>
-                  <div
-                    className="pt6"
-                  >
-                    <a
-                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
-                      href="/PageLayout/specification/"
-                    >
-                      Specification
-                    </a>
-                  </div>
-                  <div
-                    className="pt6"
-                  >
-                    <a
-                      className="txt-spacing1 px18 py6 inline-block txt-m color-gray-dark txt-uppercase txt-bold w-full color-darken50"
-                      href="/PageLayout/examples/"
-                    >
-                      Examples
+                      dr-ui
                     </a>
                   </div>
                 </div>
+                <nav>
+                  <ul>
+                    <li>
+                      <a
+                        className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                        href="/PageLayout/"
+                        style={
+                          Object {
+                            "letterSpacing": "0.05em",
+                          }
+                        }
+                      >
+                        Overview
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                        href="/PageLayout/specification/"
+                        style={
+                          Object {
+                            "letterSpacing": "0.05em",
+                          }
+                        }
+                      >
+                        Specification
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                        href="/PageLayout/examples/"
+                        style={
+                          Object {
+                            "letterSpacing": "0.05em",
+                          }
+                        }
+                      >
+                        Examples
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
@@ -2131,32 +2157,30 @@ Array [
               }
             >
               <div
-                className="scroll-auto-mm scroll-styled"
                 id="dr-ui--page-layout-sidebar"
               >
                 <div
-                  className="py12 none block-mm"
+                  className="my12 ml12"
                 >
                   <div
-                    className="ml18 mb18"
-                  >
-                    <div
-                      className="flex-parent"
-                      style={
-                        Object {
-                          "overflow": "hidden",
-                        }
+                    className="flex-parent"
+                    style={
+                      Object {
+                        "overflow": "hidden",
                       }
+                    }
+                  >
+                    <a
+                      className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
+                      href="/dr-ui/"
                     >
-                      <a
-                        className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
-                        href="/dr-ui/"
-                      >
-                        dr-ui
-                      </a>
-                    </div>
+                      dr-ui
+                    </a>
                   </div>
                 </div>
+                <nav>
+                  <ul />
+                </nav>
               </div>
             </div>
           </div>
