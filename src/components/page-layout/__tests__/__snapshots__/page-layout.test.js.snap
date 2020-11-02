@@ -25,7 +25,7 @@ Array [
           }
         >
           <div
-            className="my12"
+            className="my12 border-b border--darken10 pb12"
           >
             <div
               className="flex-parent"
@@ -85,11 +85,11 @@ Array [
             <ul>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover bg-blue-faint color-blue flex-parent flex-parent--space-between-main"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover bg-blue-faint color-blue flex-parent flex-parent--space-between-main"
                   href="/PageLayout/"
                   style={
                     Object {
-                      "letterSpacing": "0.05em",
+                      "letterSpacing": "0.025em",
                     }
                   }
                 >
@@ -112,53 +112,53 @@ Array [
                   </svg>
                 </a>
                 <ul
-                  className="mb6"
+                  className="mb12 ml12"
                 >
                   <li
-                    className="pb3 pl12 link link--gray"
+                    className="mb3"
                   >
                     <a
-                      className="inline-block w-full"
+                      className="inline-block w-full color-blue-on-hover"
                       href="/PageLayout/layouts/"
                     >
                       Layouts
                     </a>
                   </li>
                   <li
-                    className="pb3 pl12 link link--gray"
+                    className="mb3"
                   >
                     <a
-                      className="inline-block w-full"
+                      className="inline-block w-full color-blue-on-hover"
                       href="/PageLayout/navigation/"
                     >
                       Navigation
                     </a>
                   </li>
                   <li
-                    className="pb3 pl12 link link--gray"
+                    className="mb3"
                   >
                     <a
-                      className="inline-block w-full"
+                      className="inline-block w-full color-blue-on-hover"
                       href="/PageLayout/images/"
                     >
                       Images and videos
                     </a>
                   </li>
                   <li
-                    className="pb3 pl12 link link--gray"
+                    className="mb3"
                   >
                     <a
-                      className="inline-block w-full"
+                      className="inline-block w-full color-blue-on-hover"
                       href="/PageLayout/constants/"
                     >
                       Constants
                     </a>
                   </li>
                   <li
-                    className="pb3 pl12 link link--gray"
+                    className="mb3"
                   >
                     <a
-                      className="inline-block w-full"
+                      className="inline-block w-full color-blue-on-hover"
                       href="/PageLayout/frontmatter/"
                     >
                       Frontmatter
@@ -168,11 +168,11 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
                   href="/PageLayout/specification/"
                   style={
                     Object {
-                      "letterSpacing": "0.05em",
+                      "letterSpacing": "0.025em",
                     }
                   }
                 >
@@ -181,11 +181,11 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
                   href="/PageLayout/examples/"
                   style={
                     Object {
-                      "letterSpacing": "0.05em",
+                      "letterSpacing": "0.025em",
                     }
                   }
                 >
@@ -194,11 +194,11 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
                   href="/PageLayout/demo/"
                   style={
                     Object {
-                      "letterSpacing": "0.05em",
+                      "letterSpacing": "0.025em",
                     }
                   }
                 >
@@ -444,7 +444,7 @@ Array [
           }
         >
           <div
-            className="my12"
+            className="my12 border-b border--darken10 pb12"
           >
             <div
               className="flex-parent"
@@ -468,11 +468,11 @@ Array [
             <ul>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover bg-blue-faint color-blue flex-parent flex-parent--space-between-main"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover bg-blue-faint color-blue flex-parent flex-parent--space-between-main"
                   href="/PageLayout/"
                   style={
                     Object {
-                      "letterSpacing": "0.05em",
+                      "letterSpacing": "0.025em",
                     }
                   }
                 >
@@ -495,33 +495,33 @@ Array [
                   </svg>
                 </a>
                 <ul
-                  className="mb6"
+                  className="mb12 ml12"
                 >
                   <li
-                    className="pb3 pl12 link link--gray"
+                    className="mb3"
                   >
                     <a
-                      className="inline-block w-full"
+                      className="inline-block w-full color-blue-on-hover"
                       href="/PageLayout/specifications/"
                     >
                       Specifications
                     </a>
                   </li>
                   <li
-                    className="pb3 pl12 link link--gray"
+                    className="mb3"
                   >
                     <a
-                      className="inline-block w-full"
+                      className="inline-block w-full color-blue-on-hover"
                       href="/PageLayout/examples/"
                     >
                       Examples
                     </a>
                   </li>
                   <li
-                    className="pb3 pl12 link link--gray"
+                    className="mb3"
                   >
                     <a
-                      className="inline-block w-full"
+                      className="inline-block w-full color-blue-on-hover"
                       href="/PageLayout/demo/"
                     >
                       Demo
@@ -531,11 +531,11 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
                   href="/PageLayout/specification/"
                   style={
                     Object {
-                      "letterSpacing": "0.05em",
+                      "letterSpacing": "0.025em",
                     }
                   }
                 >
@@ -544,11 +544,11 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
                   href="/PageLayout/examples/"
                   style={
                     Object {
-                      "letterSpacing": "0.05em",
+                      "letterSpacing": "0.025em",
                     }
                   }
                 >
@@ -557,11 +557,11 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
                   href="/PageLayout/demo/"
                   style={
                     Object {
-                      "letterSpacing": "0.05em",
+                      "letterSpacing": "0.025em",
                     }
                   }
                 >
@@ -1039,7 +1039,7 @@ Array [
           }
         >
           <div
-            className="my12"
+            className="my12 border-b border--darken10 pb12"
           >
             <div
               className="flex-parent"
@@ -1063,11 +1063,11 @@ Array [
             <ul>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover bg-blue-faint color-blue flex-parent flex-parent--space-between-main"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover bg-blue-faint color-blue flex-parent flex-parent--space-between-main"
                   href="/PageLayout/"
                   style={
                     Object {
-                      "letterSpacing": "0.05em",
+                      "letterSpacing": "0.025em",
                     }
                   }
                 >
@@ -1090,33 +1090,33 @@ Array [
                   </svg>
                 </a>
                 <ul
-                  className="mb6"
+                  className="mb12 ml12"
                 >
                   <li
-                    className="pb3 pl12 link link--gray"
+                    className="mb3"
                   >
                     <a
-                      className="inline-block w-full"
+                      className="inline-block w-full color-blue-on-hover"
                       href="/PageLayout/specifications/"
                     >
                       Specifications
                     </a>
                   </li>
                   <li
-                    className="pb3 pl12 link link--gray"
+                    className="mb3"
                   >
                     <a
-                      className="inline-block w-full"
+                      className="inline-block w-full color-blue-on-hover"
                       href="/PageLayout/examples/"
                     >
                       Examples
                     </a>
                   </li>
                   <li
-                    className="pb3 pl12 link link--gray"
+                    className="mb3"
                   >
                     <a
-                      className="inline-block w-full"
+                      className="inline-block w-full color-blue-on-hover"
                       href="/PageLayout/demo/"
                     >
                       Demo
@@ -1126,11 +1126,11 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
                   href="/PageLayout/specification/"
                   style={
                     Object {
-                      "letterSpacing": "0.05em",
+                      "letterSpacing": "0.025em",
                     }
                   }
                 >
@@ -1139,11 +1139,11 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
                   href="/PageLayout/examples/"
                   style={
                     Object {
-                      "letterSpacing": "0.05em",
+                      "letterSpacing": "0.025em",
                     }
                   }
                 >
@@ -1152,11 +1152,11 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
                   href="/PageLayout/demo/"
                   style={
                     Object {
-                      "letterSpacing": "0.05em",
+                      "letterSpacing": "0.025em",
                     }
                   }
                 >
@@ -1357,7 +1357,7 @@ Array [
           }
         >
           <div
-            className="my12"
+            className="my12 border-b border--darken10 pb12"
           >
             <div
               className="flex-parent"
@@ -1381,11 +1381,11 @@ Array [
             <ul>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75 flex-parent flex-parent--space-between-main"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover  flex-parent flex-parent--space-between-main"
                   href="/PageLayout/"
                   style={
                     Object {
-                      "letterSpacing": "0.05em",
+                      "letterSpacing": "0.025em",
                     }
                   }
                 >
@@ -1410,11 +1410,11 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
                   href="/PageLayout/specification/"
                   style={
                     Object {
-                      "letterSpacing": "0.05em",
+                      "letterSpacing": "0.025em",
                     }
                   }
                 >
@@ -1423,11 +1423,11 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
                   href="/PageLayout/examples/"
                   style={
                     Object {
-                      "letterSpacing": "0.05em",
+                      "letterSpacing": "0.025em",
                     }
                   }
                 >
@@ -1436,11 +1436,11 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
                   href="/PageLayout/demo/"
                   style={
                     Object {
-                      "letterSpacing": "0.05em",
+                      "letterSpacing": "0.025em",
                     }
                   }
                 >
@@ -1750,7 +1750,7 @@ Array [
           }
         >
           <div
-            className="my12"
+            className="my12 border-b border--darken10 pb12"
           >
             <div
               className="flex-parent"
@@ -1774,11 +1774,11 @@ Array [
             <ul>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
                   href="/PageLayout/"
                   style={
                     Object {
-                      "letterSpacing": "0.05em",
+                      "letterSpacing": "0.025em",
                     }
                   }
                 >
@@ -1787,11 +1787,11 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
                   href="/PageLayout/specification/"
                   style={
                     Object {
-                      "letterSpacing": "0.05em",
+                      "letterSpacing": "0.025em",
                     }
                   }
                 >
@@ -1800,11 +1800,11 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75 flex-parent flex-parent--space-between-main"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover  flex-parent flex-parent--space-between-main"
                   href="/PageLayout/examples/"
                   style={
                     Object {
-                      "letterSpacing": "0.05em",
+                      "letterSpacing": "0.025em",
                     }
                   }
                 >
@@ -2111,7 +2111,7 @@ Array [
           }
         >
           <div
-            className="my12"
+            className="my12 border-b border--darken10 pb12"
           >
             <div
               className="flex-parent"
@@ -2135,11 +2135,11 @@ Array [
             <ul>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
                   href="/dr-ui/overview/"
                   style={
                     Object {
-                      "letterSpacing": "0.05em",
+                      "letterSpacing": "0.025em",
                     }
                   }
                 >

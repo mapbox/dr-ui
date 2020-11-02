@@ -11,14 +11,14 @@ export default class NavigationAccordion extends React.PureComponent {
       <a
         href={href}
         className={classnames(
-          'px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover',
+          'px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover',
           {
             'bg-blue-faint color-blue': isActive,
-            'color-darken75': !isActive,
+            '': !isActive,
             'flex-parent flex-parent--space-between-main': hasChildren
           }
         )}
-        style={{ letterSpacing: '0.05em' }}
+        style={{ letterSpacing: '0.025em' }}
       >
         {label}
         {hasChildren && (
@@ -34,19 +34,19 @@ export default class NavigationAccordion extends React.PureComponent {
         return page.path !== parentPage;
       })
       .map((page) => (
-        <li
-          className={classnames('pb3 pl12 link link--gray', {
-            'txt-bold': activeItem === page.path
-          })}
-          key={page.title}
-        >
-          <a className="inline-block w-full" href={page.path}>
+        <li className="mb3" key={page.title}>
+          <a
+            className={classnames('inline-block w-full color-blue-on-hover', {
+              'color-blue': activeItem === page.path
+            })}
+            href={page.path}
+          >
             {page.title}
           </a>
         </li>
       ));
 
-    return <ul className="mb6">{subItemEls}</ul>;
+    return <ul className="mb12 ml12">{subItemEls}</ul>;
   }
 
   render() {

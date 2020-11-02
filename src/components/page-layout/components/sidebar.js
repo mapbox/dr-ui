@@ -36,7 +36,7 @@ export default class Sidebar extends React.Component {
         className="sticky-mm"
         style={{ top: 0 }}
       >
-        <div className="my12">
+        <div className="my12 border-b border--darken10 pb12">
           <ProductMenu
             productName={title || SITE}
             tag={tag || undefined}
