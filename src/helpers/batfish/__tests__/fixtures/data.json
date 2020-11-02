@@ -86,13 +86,8 @@
       }
     },
     {
-      "filePath": "./docs/src/pages/guides/index.js",
-      "path": "/dr-ui/guides/",
-      "frontMatter": {}
-    },
-    {
-      "filePath": "./docs/src/pages/guides/overview/batfish-helpers.md",
-      "path": "/dr-ui/guides/overview/batfish-helpers/",
+      "filePath": "./docs/src/pages/guides/batfish-helpers.md",
+      "path": "/dr-ui/guides/batfish-helpers/",
       "frontMatter": {
         "title": "Batfish helpers",
         "description": "Batfish data selector functions to build navigation and topic datasets.",
@@ -104,14 +99,14 @@
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
           "import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line",
           "import splitPages from '@mapbox/batfish/data/split-pages'; // eslint-disable-line",
-          "import relatedMts from '../../../../../src/helpers/batfish/__tests__/fixtures/related-mts.json';",
-          "import relatedAndroid from '../../../../../src/helpers/batfish/__tests__/fixtures/related-android.json';"
+          "import relatedMts from '../../../../src/helpers/batfish/__tests__/fixtures/related-mts.json';",
+          "import relatedAndroid from '../../../../src/helpers/batfish/__tests__/fixtures/related-android.json';"
         ]
       }
     },
     {
-      "filePath": "./docs/src/pages/guides/overview/index.md",
-      "path": "/dr-ui/guides/overview/",
+      "filePath": "./docs/src/pages/guides/index.md",
+      "path": "/dr-ui/guides/",
       "frontMatter": {
         "title": "Guides",
         "description": "Guides to building sites with Dr. UI.",
@@ -123,8 +118,8 @@
       }
     },
     {
-      "filePath": "./docs/src/pages/guides/overview/multi-structured.md",
-      "path": "/dr-ui/guides/overview/multi-structured/",
+      "filePath": "./docs/src/pages/guides/multi-structured.md",
+      "path": "/dr-ui/guides/multi-structured/",
       "frontMatter": {
         "title": "Multi-structured sites",
         "description": "How to build a site with more than one product.",
@@ -135,8 +130,8 @@
       }
     },
     {
-      "filePath": "./docs/src/pages/guides/overview/page-layout.md",
-      "path": "/dr-ui/guides/overview/page-layout/",
+      "filePath": "./docs/src/pages/guides/page-layout.md",
+      "path": "/dr-ui/guides/page-layout/",
       "frontMatter": {
         "title": "PageLayout component",
         "description": "All about building with PageLayout.",
@@ -145,15 +140,15 @@
         "contentType": "guide",
         "products": ["Documentation"],
         "prependJs": [
-          "import components from '../../../data/components'; // eslint-disable-line",
-          "import FrontMatter from '../../../components/frontmatter.js';",
-          "import OtherProps from '../../../components/other-props.js';",
-          "import LayoutUsage from '../../../components/layout-usage.js';",
-          "import frontmatter from '!raw-loader!../../../components/snippets/frontmatter.js';// eslint-disable-line",
-          "import Topbar from '../../../../../src/components/page-layout/components/topbar.js';",
+          "import components from '../../data/components'; // eslint-disable-line",
+          "import FrontMatter from '../../components/frontmatter.js';",
+          "import OtherProps from '../../components/other-props.js';",
+          "import LayoutUsage from '../../components/layout-usage.js';",
+          "import frontmatter from '!raw-loader!../../components/snippets/frontmatter.js';// eslint-disable-line",
+          "import Topbar from '../../../../src/components/page-layout/components/topbar.js';",
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
-          "import constants from '../../../constants.json';",
-          "import Note from '../../../../../src/components/note';"
+          "import constants from '../../constants.json';",
+          "import Note from '../../../../src/components/note';"
         ]
       }
     },

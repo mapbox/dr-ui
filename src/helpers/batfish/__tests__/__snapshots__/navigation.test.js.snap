@@ -1866,20 +1866,24 @@ Object {
       "parent": "/dr-ui/examples/",
       "title": "Examples",
     },
-    "/dr-ui/guides/overview/": Object {
-      "parent": "/dr-ui/guides/overview/",
+    "/dr-ui/guides/": Object {
+      "parent": "/dr-ui/guides/",
       "title": "Guides",
     },
-    "/dr-ui/guides/overview/batfish-helpers/": Object {
-      "parent": "/dr-ui/guides/overview/",
+    "/dr-ui/guides/batfish-helpers/": Object {
+      "parent": "/dr-ui/guides/",
       "title": "Guides",
     },
-    "/dr-ui/guides/overview/multi-structured/": Object {
-      "parent": "/dr-ui/guides/overview/",
+    "/dr-ui/guides/multi-structured/": Object {
+      "parent": "/dr-ui/guides/",
       "title": "Guides",
     },
-    "/dr-ui/guides/overview/page-layout/": Object {
-      "parent": "/dr-ui/guides/overview/",
+    "/dr-ui/guides/page-layout/": Object {
+      "parent": "/dr-ui/guides/",
+      "title": "Guides",
+    },
+    "/dr-ui/guides/split-pages/": Object {
+      "parent": "/dr-ui/guides/",
       "title": "Guides",
     },
     "/dr-ui/help/": Object {
@@ -1900,23 +1904,30 @@ Object {
         Object {
           "layout": "page",
           "order": 2,
-          "path": "/dr-ui/guides/overview/batfish-helpers/",
+          "path": "/dr-ui/guides/batfish-helpers/",
           "title": "Batfish helpers",
         },
         Object {
           "layout": "page",
           "order": 3,
-          "path": "/dr-ui/guides/overview/page-layout/",
+          "path": "/dr-ui/guides/page-layout/",
           "title": "PageLayout component",
         },
         Object {
           "layout": "page",
+          "order": 3,
+          "path": "/dr-ui/guides/split-pages/",
+          "splitPages": true,
+          "title": "Split pages",
+        },
+        Object {
+          "layout": "page",
           "order": 4,
-          "path": "/dr-ui/guides/overview/multi-structured/",
+          "path": "/dr-ui/guides/multi-structured/",
           "title": "Multi-structured sites",
         },
       ],
-      "path": "/dr-ui/guides/overview/",
+      "path": "/dr-ui/guides/",
       "title": "Guides",
     },
     Object {

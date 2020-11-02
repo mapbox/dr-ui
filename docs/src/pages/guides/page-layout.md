@@ -7,15 +7,15 @@ contentType: guide
 products:
   - Documentation
 prependJs:
-  - "import components from '../../../data/components'; // eslint-disable-line"
-  - "import FrontMatter from '../../../components/frontmatter.js';"
-  - "import OtherProps from '../../../components/other-props.js';"
-  - "import LayoutUsage from '../../../components/layout-usage.js';"
-  - "import frontmatter from '!raw-loader!../../../components/snippets/frontmatter.js';// eslint-disable-line"
-  - "import Topbar from '../../../../../src/components/page-layout/components/topbar.js';"
+  - "import components from '../../data/components'; // eslint-disable-line"
+  - "import FrontMatter from '../../components/frontmatter.js';"
+  - "import OtherProps from '../../components/other-props.js';"
+  - "import LayoutUsage from '../../components/layout-usage.js';"
+  - "import frontmatter from '!raw-loader!../../components/snippets/frontmatter.js';// eslint-disable-line"
+  - "import Topbar from '../../../../src/components/page-layout/components/topbar.js';"
   - "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line"
-  - "import constants from '../../../constants.json';"
-  - "import Note from '../../../../../src/components/note';"
+  - "import constants from '../../constants.json';"
+  - "import Note from '../../../../src/components/note';"
 ---
 
 The [`PageLayout`](/dr-ui/#pagelayout) component is the main controller for building pages with Dr. UI and offers five layout options. `PageLayout` provides everything from the site's navigation, to the sidebar contents, and main content area. It also includes common components like Search and Feedback.
