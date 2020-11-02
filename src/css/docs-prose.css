@@ -1,3 +1,15 @@
+/* wider limiter for PageLayout */
+@media screen and (min-width: 640px) {
+  .limiter--wide {
+    max-width: 1800px !important;
+  }
+}
+@media screen and (min-width: 800px) {
+  .limiter--wide {
+    width: 91.666666666% !important;
+  }
+}
+
 #docs-content .prose h1,
 #docs-content.prose h1 {
   margin-top: 6px;

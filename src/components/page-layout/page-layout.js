@@ -105,8 +105,8 @@ export default class PageLayout extends React.Component {
     return (
       <ErrorBoundary>
         {!noShellHeaderBuffer && <div className="shell-header-buffer" />}
-        <div className="limiter">
-          <div className="grid">
+        <div className="limiter limiter--wide">
+          <div className="grid grid--gut12">
             <ErrorBoundary>
               {this.renderSidebar(config, switchedNavigation, parentPath)}
             </ErrorBoundary>
