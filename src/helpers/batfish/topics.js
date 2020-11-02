@@ -7,7 +7,7 @@ const sortBy = (key) => {
   return (a, b) => (a[key] > b[key] ? 1 : b[key] > a[key] ? -1 : 0);
 };
 
-function buildTopics(data, append, sortingArr) {
+function buildItems({ data, append, sortingArr, itemType }) {
   let obj = {};
 
   const pages = data.pages.map((p) => ({
@@ -23,14 +23,14 @@ function buildTopics(data, append, sortingArr) {
         page.path.startsWith(parent.path)
       );
 
-      const topics = sortTopics(
-        generateTopics(parent.path, children),
+      const items = sortItems(
+        generateItems(parent.path, children, itemType),
         sortingArr
       );
 
-      if (topics.length > 0) {
+      if (items.length > 0) {
         obj[parent.path] = parent;
-        parent.topics = topics;
+        parent[itemType] = items;
       }
     });
 
@@ -38,59 +38,65 @@ function buildTopics(data, append, sortingArr) {
 }
 
 module.exports = {
-  buildTopics
+  buildItems
 };
 
-function sortTopics(topics, sortingArr) {
+function sortItems(items, sortingArr) {
   if (sortingArr) {
-    return sortTopicsByArr(topics, sortingArr);
+    return sortItemsByArr(items, sortingArr);
   } else {
-    return sortByCount(topics);
+    return sortByCount(items);
   }
 }
 
-function sortByCount(topics) {
-  return topics.sort(sortBy('count')).reverse();
+function sortByCount(items) {
+  return items.sort(sortBy('count')).reverse();
 }
 
-function sortTopicsByArr(topics, sortingArr) {
-  // set topicOrder to the index of the topic name in sortingArr
-  const preSort = topics.map((topic) => ({
-    ...topic,
-    topicOrder: sortingArr.indexOf(topic.name)
+function sortItemsByArr(items, sortingArr) {
+  // set itemOrder to the index of the item name in sortingArr
+  const preSort = items.map((item) => ({
+    ...item,
+    itemOrder: sortingArr.indexOf(item.name)
   }));
-  // create array of topics that do not have a topicOrder
-  // this happens when the topic name is not defined in the sortingArr
+  // create array of items that do not have a itemOrder
+  // this happens when the item name is not defined in the sortingArr
   // so they will get added to the bottom and then sorted by count
-  const unSorted = sortByCount(preSort.filter((f) => f.topicOrder === -1));
-  // create array of topics that have a topicOrder
-  const sorted = preSort.filter((f) => f.topicOrder > -1);
+  const unSorted = sortByCount(preSort.filter((f) => f.itemOrder === -1));
+  // create array of items that have a itemOrder
+  const sorted = preSort.filter((f) => f.itemOrder > -1);
   return sorted
-    .sort(sortBy('topicOrder')) // sort the array with topicOrder first
+    .sort(sortBy('itemOrder')) // sort the array with itemOrder first
     .concat(unSorted) // append the unsorted array
-    .map((topic) => {
-      // delete topicOrder
-      delete topic.topicOrder;
-      return topic;
+    .map((item) => {
+      // delete itemOrder
+      delete item.itemOrder;
+      return item;
     });
 }
 
-function generateTopics(path, pages) {
-  // get unique topics
-  const uniqTopics = [
+function generateItems(path, pages, itemType) {
+  // get unique Items
+  const uniqueItems = [
     ...new Set(
       pages.reduce((arr, page) => {
-        if (page.topics) arr = arr.concat(page.topics);
-        if (page.topic) arr.push(page.topic);
+        if (page[itemType]) arr = arr.concat(page[itemType]);
         return arr;
       }, [])
     )
   ];
+
   // loop through data and slot them in
-  return uniqTopics.reduce((set, topic) => {
+  return uniqueItems.reduce((set, item) => {
     const subPages = pages.reduce((arr, page) => {
-      if (page.topics) {
-        if (page.topics.indexOf(topic) > -1) {
+      if (itemType === 'level' && typeof item === 'number') {
+        item = item.toString();
+      }
+      if (itemType === 'videos' && typeof item === 'boolean' && !!item) {
+        item = item.toString();
+      }
+      if (page[itemType]) {
+        if (page[itemType].toString().indexOf(item) > -1) {
           arr.push({
             text: page.title, // needed for sectionednavigation
             url: page.path, // needed for sectionednavigation
@@ -98,8 +104,11 @@ function generateTopics(path, pages) {
           });
         }
       }
+
+      // Special case for singular topic entries
+      // This doesn't actually work because of the itemType argument in batfish config
       if (page.topic) {
-        if (page.topic === topic) {
+        if (page.topic === item) {
           arr.push({
             text: page.title, // needed for sectionednavigation
             url: page.path, // needed for sectionednavigation
@@ -107,15 +116,16 @@ function generateTopics(path, pages) {
           });
         }
       }
+
       return arr;
     }, []);
     // TODO: investigate why non-strings can be passed here
-    if (topic && typeof topic === 'string') {
+    if (item && typeof item === 'string') {
       set.push({
-        name: topic,
+        name: item,
         pages: subPages,
         count: subPages.length,
-        url: `${path}#${slugify(topic, {
+        url: `${path}#${slugify(item, {
           lower: true
         })}`
       });

@@ -4,6 +4,10 @@ import PageLayout from '../../../src/components/page-layout';
 
 import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line
 import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line
+import level from '@mapbox/batfish/data/level'; // eslint-disable-line
+import language from '@mapbox/batfish/data/language'; // eslint-disable-line
+import products from '@mapbox/batfish/data/products'; // eslint-disable-line
+import videos from '@mapbox/batfish/data/videos'; // eslint-disable-line
 import constants from '../constants';
 
 import categories from '../categories.json';

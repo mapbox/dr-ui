@@ -1,7 +1,7 @@
 const path = require('path');
 const {
   buildNavigation,
-  buildTopics,
+  buildItems,
   buildSplitPages,
   formatTopics
 } = require('../src/helpers/batfish/index.js');
@@ -40,7 +40,12 @@ module.exports = () => {
     },
     dataSelectors: {
       navigation: (data) => buildNavigation(siteBasePath, data),
-      topics: (data) => buildTopics(data, appendTopics),
+      topics: (data) =>
+        buildItems({ data, append: appendTopics, itemType: 'topics' }),
+      level: (data) => buildItems({ data, itemType: 'level' }),
+      language: (data) => buildItems({ data, itemType: 'language' }),
+      products: (data) => buildItems({ data, itemType: 'products' }),
+      videos: (data) => buildItems({ data, itemType: 'videos' }),
       splitPages: (data) => buildSplitPages(data),
       sync: (data) => {
         /* syncs data to fixtures to properly test batfish selectors */

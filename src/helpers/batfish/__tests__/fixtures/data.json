@@ -12,11 +12,13 @@
         "title": "Example 1",
         "description": "This is example 1.",
         "contentType": "example",
-        "language": ["JavaScript"],
+        "language": ["JavaScript", "Kotlin"],
         "topics": ["Navigation"],
+        "level": 1,
         "thumbnail": "header-image",
         "layout": "example",
-        "products": ["Documentation"]
+        "videos": true,
+        "products": ["Documentation", "Navigation"]
       }
     },
     {
@@ -28,6 +30,7 @@
         "contentType": "example",
         "language": ["JavaScript"],
         "topics": ["Navigation"],
+        "level": 2,
         "thumbnail": "header-image",
         "layout": "example",
         "products": ["Documentation"]
@@ -42,6 +45,7 @@
         "contentType": "example",
         "language": ["JavaScript"],
         "topics": ["Navigation", "Geocoding"],
+        "level": 3,
         "thumbnail": "header-image",
         "layout": "example",
         "products": ["Documentation"]

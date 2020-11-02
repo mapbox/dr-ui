@@ -7,6 +7,7 @@ language:
 topics:
   - Navigation
   - Geocoding
+level: 3
 thumbnail: header-image
 layout: example
 products:
