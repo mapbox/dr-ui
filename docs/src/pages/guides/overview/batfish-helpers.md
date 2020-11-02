@@ -21,7 +21,7 @@ These dataset functions often use the page's relative pathname as a unique ident
 
 ## Navigation
 
-`navigation` builds data for the dr-ui navigation components [`TabList`](https://mapbox.github.io/mr-ui/#tablist) and [`NavigationAccordion`](/dr-ui/#navigationaccordion).
+`navigation` builds data for the dr-ui navigation components like [`NavigationAccordion`](/dr-ui/#navigationaccordion).
 
 ### Arguments
 
@@ -77,8 +77,7 @@ class PageShell extends React.Component {
 
 ### Output
 
-- `navTabs`. Provides the top-level navigation for the site and is powered by the `navOrder` field in the frontMatter of those pages.
-- `accordion`. Provides the data for [`NavigationAccordion`](/dr-ui/#navigationaccordion).
+- `navTabs`. Provides the top-level navigation for the site and is powered by the `navOrder` field in the frontMatter of those pages. Provides the data for [`NavigationAccordion`](/dr-ui/#navigationaccordion).
 - `hierarchy`. Provides the parent path for each page.
 
 #### Sample

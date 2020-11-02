@@ -6,27 +6,21 @@ import NavigationAccordion from '../navigation-accordion';
 
 export default class Basic extends React.Component {
   render() {
-    const navigation = {
-      navTabs: [
-        {
-          label: 'Overview',
-          id: '/dr-ui/overview/',
-          href: '/dr-ui/overview/'
-        },
-        {
-          label: 'Examples',
-          id: '/dr-ui/examples/',
-          href: '/dr-ui/examples/'
-        }
-      ],
-      accordion: {
-        '/dr-ui/overview/': [
+    const navigation = [
+      {
+        title: 'Overview',
+        path: '/dr-ui/overview/',
+        pages: [
           {
             path: '/dr-ui/overview/permissions/',
             title: 'Permissions'
           }
-        ],
-        '/dr-ui/examples/': [
+        ]
+      },
+      {
+        title: 'Examples',
+        path: '/dr-ui/examples/',
+        pages: [
           {
             path: '/dr-ui/examples/basic/',
             title: 'Basic example'
@@ -37,7 +31,7 @@ export default class Basic extends React.Component {
           }
         ]
       }
-    };
+    ];
 
     const constants = {
       SITE: 'Dr. UI',

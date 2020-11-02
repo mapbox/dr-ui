@@ -1852,7 +1852,7 @@ Array [
                     </li>
                     <li>
                       <a
-                        className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                        className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75 flex-parent flex-parent--space-between-main"
                         href="/PageLayout/examples/"
                         style={
                           Object {
@@ -1861,6 +1861,22 @@ Array [
                         }
                       >
                         Examples
+                        <svg
+                          className="events-none icon inline-block align-t"
+                          focusable="false"
+                          role="presentation"
+                          style={
+                            Object {
+                              "height": 18,
+                              "width": 18,
+                            }
+                          }
+                        >
+                          <use
+                            xlinkHref="#icon-chevron-down"
+                            xmlnsXlink="http://www.w3.org/1999/xlink"
+                          />
+                        </svg>
                       </a>
                     </li>
                   </ul>
@@ -2179,7 +2195,21 @@ Array [
                   </div>
                 </div>
                 <nav>
-                  <ul />
+                  <ul>
+                    <li>
+                      <a
+                        className="px12 py3 inline-block txt-uppercase txt-bold round-full w-full color-blue-on-hover color-darken75"
+                        href="/dr-ui/overview/"
+                        style={
+                          Object {
+                            "letterSpacing": "0.05em",
+                          }
+                        }
+                      >
+                        Overview
+                      </a>
+                    </li>
+                  </ul>
                 </nav>
               </div>
             </div>

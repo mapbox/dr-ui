@@ -4,7 +4,6 @@ import Sticky from 'react-stickynode';
 import debounce from 'debounce';
 import NavigationAccordion from '../../navigation-accordion';
 import ProductMenu from '../../product-menu/product-menu';
-import { findParentPath } from '../utils';
 
 export default class Sidebar extends React.Component {
   constructor(props) {
@@ -33,25 +32,20 @@ export default class Sidebar extends React.Component {
     window.removeEventListener('resize', this.debounceHandleWindowResize);
   }
 
-  getParentPage() {
-    const { navigation, location } = this.props;
-    const pageIsTab = navigation.navTabs.some((tab) =>
-      Object.prototype.hasOwnProperty.call(tab, location.pathname)
-    );
-    return pageIsTab
-      ? location.pathname
-      : findParentPath(navigation, location.pathname);
-  }
-
   getSidebarContent = () => {
-    const { location, navigation, children, constants } = this.props;
-
+    const {
+      location,
+      navigation,
+      children,
+      constants,
+      parentPath
+    } = this.props;
     return (
       <NavigationAccordion
         constants={constants}
-        navigation={navigation}
+        navigation={navigation.navTabs}
         location={location}
-        parentPage={this.getParentPage()}
+        parentPage={parentPath}
       >
         {children}
       </NavigationAccordion>
@@ -61,7 +55,6 @@ export default class Sidebar extends React.Component {
   render() {
     const { stickyEnabled, bottomBoundaryValue } = this.state;
     const { constants, navigation } = this.props;
-
     const { SITE, BASEURL } = constants;
     const { title, tag, path } = navigation;
 
@@ -96,13 +89,14 @@ Sidebar.propTypes = {
     tag: PropTypes.string,
     navTabs: PropTypes.array,
     path: PropTypes.string,
-    accordion: PropTypes.object
+    hierarchy: PropTypes.object
   }).isRequired,
   frontMatter: PropTypes.shape({
     navOrder: PropTypes.number,
     headings: PropTypes.array,
     sidebarTitle: PropTypes.string
   }).isRequired,
+  parentPath: PropTypes.string,
   children: PropTypes.node,
   layoutConfig: PropTypes.shape({
     hideSubItems: PropTypes.bool,

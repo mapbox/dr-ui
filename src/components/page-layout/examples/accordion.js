@@ -34,57 +34,49 @@ export default class Basic extends React.Component {
               title: 'Overview'
             }
           },
-
-          accordion: {
-            '/PageLayout/': [
-              {
-                path: '/PageLayout/',
-                title: 'Overview'
-              },
-              {
-                path: '/PageLayout/layouts/',
-                title: 'Layouts'
-              },
-              {
-                path: '/PageLayout/navigation/',
-                title: 'Navigation'
-              },
-              {
-                path: '/PageLayout/images/',
-                title: 'Images and videos'
-              },
-              {
-                path: '/PageLayout/constants/',
-                title: 'Constants'
-              },
-              {
-                path: '/PageLayout/frontmatter/',
-                tag: 'fundamentals',
-                title: 'Frontmatter'
-              }
-            ]
-          },
-
           navTabs: [
             {
-              href: '/PageLayout/',
-              id: '/PageLayout/',
-              label: 'Overview'
+              path: '/PageLayout/',
+              title: 'Overview',
+              pages: [
+                {
+                  path: '/PageLayout/',
+                  title: 'Overview'
+                },
+                {
+                  path: '/PageLayout/layouts/',
+                  title: 'Layouts'
+                },
+                {
+                  path: '/PageLayout/navigation/',
+                  title: 'Navigation'
+                },
+                {
+                  path: '/PageLayout/images/',
+                  title: 'Images and videos'
+                },
+                {
+                  path: '/PageLayout/constants/',
+                  title: 'Constants'
+                },
+                {
+                  path: '/PageLayout/frontmatter/',
+                  tag: 'fundamentals',
+                  title: 'Frontmatter'
+                }
+              ]
             },
             {
-              href: '/PageLayout/specification/',
-              id: '/PageLayout/specification/',
-              label: 'Specification'
+              path: '/PageLayout/specification/',
+              title: 'Specification'
             },
             {
-              href: '/PageLayout/examples/',
-              id: '/PageLayout/examples/',
-              label: 'Examples'
+              path: '/PageLayout/examples/',
+              title: 'Examples'
             },
             {
-              href: '/PageLayout/demo/',
-              id: '/PageLayout/demo/',
-              label: 'Demo'
+              path: '/PageLayout/demo/',
+              title: 'Demo'
             }
           ]
         }}

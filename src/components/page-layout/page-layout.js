@@ -16,7 +16,7 @@ import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
 export default class PageLayout extends React.Component {
   // render the page's sidebar
   renderSidebar = (config, switchedNavigation, parentPath) => {
-    const { customSidebar, constants } = this.props;
+    const { constants } = this.props;
     return (
       config.sidebar !== 'none' && (
         <div className={`col col--3-mm col--12 ${config.sidebarTheme}`}>
@@ -26,7 +26,6 @@ export default class PageLayout extends React.Component {
             constants={constants}
             parentPath={parentPath}
             layoutConfig={config}
-            customSidebar={customSidebar}
           />
         </div>
       )
@@ -192,7 +191,6 @@ PageLayout.propTypes = {
 */
   navigation: PropTypes.shape({
     navTabs: PropTypes.array,
-    accordion: PropTypes.object,
     hierarchy: PropTypes.object,
     title: PropTypes.string,
     tag: PropTypes.string
@@ -232,8 +230,6 @@ PageLayout.propTypes = {
   }).isRequired,
   /** Required if using the `exampleIndex` layout along with `imageId`s. The value is the local `AppropriateImage` component. */
   AppropriateImage: PropTypes.func,
-  /** Create a completely custom sidebar. */
-  customSidebar: PropTypes.node,
   /** Append item to TabList. This is used by iOS and Android site's API reference. */
   tabListAppend: PropTypes.arrayOf(
     PropTypes.shape({

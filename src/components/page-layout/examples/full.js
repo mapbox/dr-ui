@@ -30,7 +30,12 @@ export default class Basic extends React.Component {
               title: 'Demo'
             }
           },
-          navTabs: [] // example with no navTabs
+          navTabs: [
+            {
+              title: 'Overview',
+              path: '/dr-ui/overview/'
+            }
+          ]
         }}
       >
         <React.Fragment>

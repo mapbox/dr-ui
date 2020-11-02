@@ -66,39 +66,34 @@ testCases.hideSearch = {
         },
         navTabs: [
           {
-            href: '/PageLayout/',
-            id: '/PageLayout/',
-            label: 'Overview'
+            path: '/PageLayout/',
+            title: 'Overview',
+            pages: [
+              {
+                path: '/dr-ui/overview/permissions/',
+                title: 'Permissions'
+              }
+            ]
           },
           {
-            href: '/PageLayout/specification/',
-            id: '/PageLayout/specification/',
-            label: 'Specification'
+            path: '/PageLayout/specification/',
+            title: 'Specification'
           },
           {
-            href: '/PageLayout/examples/',
-            id: '/PageLayout/examples/',
-            label: 'Examples'
+            path: '/PageLayout/examples/',
+            title: 'Examples',
+            pages: [
+              {
+                path: '/dr-ui/examples/basic/',
+                title: 'Basic example'
+              },
+              {
+                path: '/dr-ui/examples/fancy/',
+                title: 'Fancy example'
+              }
+            ]
           }
-        ],
-        accordion: {
-          '/dr-ui/overview/': [
-            {
-              path: '/dr-ui/overview/permissions/',
-              title: 'Permissions'
-            }
-          ],
-          '/dr-ui/examples/': [
-            {
-              path: '/dr-ui/examples/basic/',
-              title: 'Basic example'
-            },
-            {
-              path: '/dr-ui/examples/fancy/',
-              title: 'Fancy example'
-            }
-          ]
-        }
+        ]
       }}
     />
   )
@@ -137,25 +132,32 @@ testCases.friendOfDocs = {
             title: 'Demo'
           }
         },
-        navTabs: [],
-        accordion: {
-          '/dr-ui/overview/': [
-            {
-              path: '/dr-ui/overview/permissions/',
-              title: 'Permissions'
-            }
-          ],
-          '/dr-ui/examples/': [
-            {
-              path: '/dr-ui/examples/basic/',
-              title: 'Basic example'
-            },
-            {
-              path: '/dr-ui/examples/fancy/',
-              title: 'Fancy example'
-            }
-          ]
-        }
+        navTabs: [
+          {
+            title: 'Overview',
+            path: '/dr-ui/overview/',
+            pages: [
+              {
+                path: '/dr-ui/overview/permissions/',
+                title: 'Permissions'
+              }
+            ]
+          },
+          {
+            title: 'Examples',
+            path: '/dr-ui/examples/',
+            pages: [
+              {
+                path: '/dr-ui/examples/basic/',
+                title: 'Basic example'
+              },
+              {
+                path: '/dr-ui/examples/fancy/',
+                title: 'Fancy example'
+              }
+            ]
+          }
+        ]
       }}
     />
   )

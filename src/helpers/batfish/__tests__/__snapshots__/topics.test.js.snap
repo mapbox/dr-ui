@@ -384,7 +384,6 @@ Object {
     "description": "Replace me.",
     "fullWidthCards": true,
     "hideFeedback": true,
-    "hideTitle": true,
     "language": Array [
       "JavaScript",
     ],
@@ -500,7 +499,6 @@ Object {
     "description": "Replace me.",
     "fullWidthCards": true,
     "hideFeedback": true,
-    "hideTitle": true,
     "language": Array [
       "JavaScript",
     ],
@@ -616,7 +614,6 @@ Object {
     "description": "Replace me.",
     "fullWidthCards": true,
     "hideFeedback": true,
-    "hideTitle": true,
     "language": Array [
       "JavaScript",
     ],

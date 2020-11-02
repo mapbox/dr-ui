@@ -81,7 +81,6 @@
         "navOrder": 3,
         "layout": "example",
         "fullWidthCards": true,
-        "hideTitle": true,
         "hideFeedback": true,
         "products": ["Documentation"]
       }
@@ -244,7 +243,6 @@
         "navOrder": 4,
         "layout": "exampleIndex",
         "fullWidthCards": true,
-        "hideTitle": true,
         "products": ["Documentation"]
       }
     },

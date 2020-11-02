@@ -20,39 +20,53 @@ describe('buildNavigation', () => {
   });
 
   it('help glossary is sorted alphabetical', () => {
-    expect(buildNavigation('/help', helpDebug).accordion).toMatchSnapshot();
+    expect(buildNavigation('/help', helpDebug).navTabs).toMatchSnapshot();
   });
 
   it('accordion pages are sorted by order', () => {
-    expect(buildNavigation('/api', apiDebug).accordion).toEqual({
-      '/api/': [
-        {
-          path: '/api/',
-          title: 'Introduction'
-        },
-        {
-          path: '/api/maps/',
-          title: 'Maps service'
-        },
-        {
-          path: '/api/navigation/',
-          title: 'Navigation service'
-        },
-        {
-          path: '/api/search/',
-          title: 'Search service'
-        },
-
-        {
-          path: '/api/accounts/',
-          title: 'Accounts service'
-        },
-        {
-          path: '/api/changelog/',
-          title: 'Changelog'
-        }
-      ]
-    });
+    expect(buildNavigation('/api', apiDebug).navTabs).toEqual([
+      {
+        navOrder: 1,
+        pages: [
+          {
+            layout: 'page',
+            order: 2,
+            path: '/api/maps/',
+            splitPages: true,
+            title: 'Maps service'
+          },
+          {
+            layout: 'page',
+            order: 3,
+            path: '/api/navigation/',
+            splitPages: true,
+            title: 'Navigation service'
+          },
+          {
+            layout: 'page',
+            order: 4,
+            path: '/api/search/',
+            splitPages: true,
+            title: 'Search service'
+          },
+          {
+            layout: 'page',
+            order: 5,
+            path: '/api/accounts/',
+            splitPages: true,
+            title: 'Accounts service'
+          },
+          {
+            layout: 'page',
+            order: 6,
+            path: '/api/changelog/',
+            title: 'Changelog'
+          }
+        ],
+        path: '/api/',
+        title: 'Introduction'
+      }
+    ]);
   });
 
   it('hideFromNav, removes items', () => {

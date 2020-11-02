@@ -29,7 +29,6 @@ export default class NavigationAccordion extends React.PureComponent {
   }
   renderBody(subItems, activeItem) {
     const { parentPage } = this.props;
-
     const subItemEls = subItems
       .filter((page) => {
         return page.path !== parentPage;
@@ -51,23 +50,15 @@ export default class NavigationAccordion extends React.PureComponent {
   }
 
   render() {
-    const { navigation, parentPage } = this.props;
-    const activeItem = this.props.location.pathname;
-    const firstLevelItems = navigation.navTabs;
-
-    const items = firstLevelItems.map((pageSection) => {
-      const { label, id, href } = pageSection;
-      const secondLevelItems = navigation.accordion[pageSection.href] || [];
+    const { navigation, parentPage, location } = this.props;
+    const activeItem = location.pathname;
+    const items = navigation.map((pageSection) => {
+      const { title, path, pages } = pageSection;
       return {
-        id: id,
-        header: this.renderHeader(
-          href,
-          label,
-          secondLevelItems && secondLevelItems.length > 1
-        ),
+        header: this.renderHeader(path, title, pages && pages.length > 1),
         body:
-          pageSection.id === parentPage && secondLevelItems.length > 1
-            ? this.renderBody(secondLevelItems, activeItem)
+          path === parentPage && pages.length > 1
+            ? this.renderBody(pages, activeItem)
             : []
       };
     });
@@ -90,11 +81,13 @@ export default class NavigationAccordion extends React.PureComponent {
 }
 
 NavigationAccordion.propTypes = {
-  navigation: PropTypes.object.isRequired,
+  navigation: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      path: PropTypes.string.isRequired,
+      pages: PropTypes.array
+    })
+  ).isRequired,
   location: PropTypes.object.isRequired,
-  parentPage: PropTypes.string.isRequired,
-  constants: PropTypes.shape({
-    SITE: PropTypes.string.isRequired,
-    BASEURL: PropTypes.string.isRequired
-  }).isRequired
+  parentPage: PropTypes.string.isRequired
 };

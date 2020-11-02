@@ -5,7 +5,6 @@ contentType: example
 navOrder: 4
 layout: exampleIndex
 fullWidthCards: true
-hideTitle: true
 products:
   - Documentation
 # data lives in ./src/helpers/batfish/__tests__/fixtures/related-mts.json
