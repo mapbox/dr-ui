@@ -234,26 +234,16 @@ PageLayout.propTypes = {
     title: PropTypes.string,
     tag: PropTypes.string
   }).isRequired,
-  /** An object of pages sorted by their `topic` frontMatter field. This dataset can be generated with [@mapbox/dr-ui/helpers/batfish/topics.js](https://github.com/mapbox/dr-ui/blob/main/src/helpers/bafish/README.md).*/
-  topics: PropTypes.shape({
-    path: PropTypes.string,
-    topics: PropTypes.arrayOf(
-      PropTypes.shape({
-        count: PropTypes.number,
-        name: PropTypes.string,
-        pages: PropTypes.arrayOf(
-          PropTypes.shape({
-            title: PropTypes.string,
-            description: PropTypes.string,
-            path: PropTypes.string,
-            thumbnail: PropTypes.string,
-            level: PropTypes.number,
-            language: PropTypes.array
-          })
-        )
-      })
-    )
-  }),
+  /** An object of filters. This dataset can be generated with [@mapbox/dr-ui/helpers/batfish/filters.js](https://mapbox.github.io/dr-ui/guides/batfish-helpers/#filters).*/
+  filters: PropTypes.objectOf(
+    PropTypes.shape({
+      topics: PropTypes.array,
+      pages: PropTypes.array,
+      languages: PropTypes.array,
+      levels: PropTypes.array,
+      videos: PropTypes.array
+    })
+  ),
   /**
 - `SITE` - the name of the site.
 - `BASEURL` - the base url of the website, as used in the batfish.config.js

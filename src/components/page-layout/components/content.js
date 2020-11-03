@@ -7,10 +7,10 @@ import Feedback from '../../feedback/feedback';
 
 export default class Content extends React.Component {
   renderExamplesIndex = () => {
-    const { frontMatter, parentPath, topics, AppropriateImage } = this.props;
+    const { frontMatter, parentPath, filters, AppropriateImage } = this.props;
     return (
       <LayoutExamples
-        topics={topics[parentPath].topics}
+        filters={filters[parentPath]}
         frontMatter={frontMatter}
         sectionPath={parentPath}
         AppropriateImage={AppropriateImage}
@@ -61,8 +61,14 @@ export default class Content extends React.Component {
 
   render() {
     const { children, frontMatter, layoutConfig } = this.props;
-    const { title, unProse, hideFeedback, layout } = frontMatter;
+    let { title, unProse, hideFeedback, layout } = frontMatter;
     const { hideTitle, showCards, sidebar } = layoutConfig;
+
+    // check frontmatter then default to layout config
+    const showFeedback = hideFeedback
+      ? !hideFeedback
+      : !layoutConfig.hideFeedback;
+
     return (
       <div
         id="docs-content"
@@ -97,7 +103,7 @@ export default class Content extends React.Component {
           >
             {children}
             {showCards ? this.renderExamplesIndex() : ''}
-            {!hideFeedback && (
+            {showFeedback && (
               <div
                 className={classnames('my36', {
                   'block none-mxl': layout !== 'example' && layout !== 'full' // hide feedback at bottom of page on larger screens, unless layout is example or full (always show it on the bottom)
@@ -125,7 +131,7 @@ Content.propTypes = {
   headings: PropTypes.array,
   location: PropTypes.object.isRequired,
   parentPath: PropTypes.string,
-  topics: PropTypes.object,
+  filters: PropTypes.object,
   AppropriateImage: PropTypes.func,
   section: PropTypes.string,
   constants: PropTypes.shape({

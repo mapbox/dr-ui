@@ -3,7 +3,7 @@ title: Help
 description: Example of a Help page.
 contentType: example
 navOrder: 4
-layout: exampleIndex
+layout: full
 fullWidthCards: true
 hideTitle: true
 products:

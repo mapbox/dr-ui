@@ -67,13 +67,13 @@ The example below will turn off the feedback component for every page:
 {{frontmatter}}
 ```
 
-## Topics and navigation
+## Filters and navigation
 
-The [`PageLayout`](/dr-ui/#pagelayout) component accepts `topics` and `navigation` props to define all the topics for examples and the site's navigation system, respectively.
+The [`PageLayout`](/dr-ui/#pagelayout) component accepts `filters` and `navigation` props to define all the filters for examples and the site's navigation system, respectively.
 
 In most cases, you can use Batfish helpers to automatically generate this dataset. See the following resources on how to install these functions and use them with `PageLayout`:
 
-- [topics](/dr-ui/guides/batfish-helpers/#topics)
+- [filters](/dr-ui/guides/batfish-helpers/#filters)
 - [navigation](/dr-ui/guides/batfish-helpers/#navigation)
 
 ## Multi-structured sites

@@ -27,7 +27,7 @@ exports[`examples-page Basic renders as expected 1`] = `
         className="grid grid--gut36"
       >
         <div
-          className="mb18 col col--12 col--6-ml"
+          className="mb18 col col--12 col--4-ml"
         >
           <a
             className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
@@ -63,7 +63,7 @@ exports[`examples-page Basic renders as expected 1`] = `
           </a>
         </div>
         <div
-          className="mb18 col col--12 col--6-ml"
+          className="mb18 col col--12 col--4-ml"
         >
           <a
             className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
@@ -126,7 +126,7 @@ exports[`examples-page Basic renders as expected 1`] = `
         className="grid grid--gut36"
       >
         <div
-          className="mb18 col col--12 col--6-ml"
+          className="mb18 col col--12 col--4-ml"
         >
           <a
             className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
@@ -162,7 +162,7 @@ exports[`examples-page Basic renders as expected 1`] = `
           </a>
         </div>
         <div
-          className="mb18 col col--12 col--6-ml"
+          className="mb18 col col--12 col--4-ml"
         >
           <a
             className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
@@ -198,7 +198,7 @@ exports[`examples-page Basic renders as expected 1`] = `
           </a>
         </div>
         <div
-          className="mb18 col col--12 col--6-ml"
+          className="mb18 col col--12 col--4-ml"
         >
           <a
             className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"

@@ -3,7 +3,7 @@ title: Example 3
 description: This is example 3.
 contentType: example
 language:
-  - JavaScript
+  - Swift
 topics:
   - Navigation
   - Geocoding

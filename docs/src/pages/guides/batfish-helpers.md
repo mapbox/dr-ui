@@ -8,7 +8,7 @@ products:
   - Documentation
 prependJs:
   - "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line"
-  - "import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line"
+  - "import topics from '@mapbox/batfish/data/filters'; // eslint-disable-line"
   - "import splitPages from '@mapbox/batfish/data/split-pages'; // eslint-disable-line"
   - "import relatedMts from '../../../../src/helpers/batfish/__tests__/fixtures/related-mts.json';"
   - "import relatedAndroid from '../../../../src/helpers/batfish/__tests__/fixtures/related-android.json';"
@@ -86,27 +86,23 @@ class PageShell extends React.Component {
 {{JSON.stringify(navigation,null,2)}}
 ```
 
-## Topics
+## Filters
 
-`topics` collects all topics for subpages to build the examples (cards) layout.
+Given a group of `example` pages, the `filters` Batfish helper creates unique option lists for `topics`, `levels`, and `languages` required to power the filter feature for `exampleIndex` layout pages. It will also create an array of `videos` if any pages have `video: true` in the frontMatter.
 
 ### Arguments
 
 - `data`, object. Provided by the data selector.
-- `append`, object. Append additional data, this is helpful if you have programmatic data (like the [Mapbox GL JS Plugins](https://docs.mapbox.com/mapbox-gl-js/plugins/) or [iOS Help](https://docs.mapbox.com/ios/maps/help/)) and want to take advantage of the example layout. The [`formatTopics` helper](#format-topics-helper) can help build this dataset.
-- `sortArr`, array. An array of topics that is in the order you want the topics to display.
 
 ### Set up in batfish.config.js
 
 ```js
-const { buildTopics } = require('@mapbox/dr-ui/helpers/batfish/topics.js');
+const { buildFilters } = require('@mapbox/dr-ui/helpers/batfish/filters.js');
 
 module.exports = () => {
   return {
     dataSelectors: {
-      topics: (data) => buildTopics(data)
-      // sorted topics
-      // topics: (data) => buildTopics(data, null, ['Getting started'])
+      topics: (data) => buildFilters(data)
     }
   };
 };
@@ -116,12 +112,12 @@ module.exports = () => {
 
 ```js
 import React from 'react';
-import topics from '@mapbox/batfish/data/topics';
+import filters from '@mapbox/batfish/data/filters.js';
 
 class PageShell extends React.Component {
   render() {
     return (
-      <PageLayout topics={topics} />;
+      <PageLayout filters={filters} />;
     )
   }
 }
@@ -129,9 +125,12 @@ class PageShell extends React.Component {
 
 ### Output
 
-- The shape of topics is an object, where the top-level keys are pathnames for top-level pages that have subpages with `topics` or `topic`.
-  - Each object has a `topics`. It contains a unique list of topics, ordered by count of pages with that topic.
-    - Each topic has `pages`. It contains metadata for each page that has that topic.
+- The shape of filters is an object, where the top-level keys are pathnames for `examplesIndex` pages.
+  - Each object has a `topics` array, a unique list of topics.
+  - Each objects has `pages` array of all sub pages to display.
+  - If available, the object may have a `levels` array, a unique list of levels options.
+  - If available, the object may have a `languages` array, a unique list of language options.
+  - If available, the object may have a `videos` array, an array of all pages with `video: true` in the frontMatter.
 
 #### Sample
 
@@ -158,24 +157,24 @@ With the `formatTopics` Batfish helper, you can build this dataset and then pass
 
 ```js
 const {
-  buildTopics,
+  buildFilters,
   formatTopics
-} = require('@mapbox/dr-ui/helpers/batfish/topics.js');
+} = require('@mapbox/dr-ui/helpers/batfish/filters.js');
 const relatedHelpPages = require('./data/releated-help-pages.json');
 
 const siteBasePath = '/android';
 
 // for a single-structured site:
-const appendTopics = formatTopics(siteBasePath, 'help', relatedHelpPages);
+const appendPages = formatTopics(siteBasePath, 'help', relatedHelpPages);
 
 // for a multi-structured site:
-// const appendTopics = formatTopics(siteBasePath, 'help', relatedHelpPages, ['maps', 'navigation', 'vision']);
+// const appendPages = formatTopics(siteBasePath, 'help', relatedHelpPages, ['maps', 'navigation', 'vision']);
 
 module.exports = () => {
   return {
     siteBasePath: siteBasePath,
     dataSelectors: {
-      topics: (data) => buildTopics(data, appendTopics)
+      topics: (data) => buildFilters(data, appendPages)
     }
   };
 };
@@ -296,5 +295,5 @@ navigation: data => {
 ```
 
 2. Run `npm start` and the build process will write the JSON file to the fixture folder.
-3. In `tests/navigation.test.js` and/or `tests/topics.test.js` create a new test case that loads in `data-example.json` (rather than data.json).
+3. In `tests/navigation.test.js` and/or `tests/filters.test.js` create a new test case that loads in `data-example.json` (rather than data.json).
 4. Make any necessary changes to `data/navigation.js` and/or `data/pages.js` until all test cases pass.

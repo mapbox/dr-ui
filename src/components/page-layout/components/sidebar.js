@@ -4,7 +4,6 @@ import Sticky from 'react-stickynode';
 import debounce from 'debounce';
 import classnames from 'classnames';
 import SidebarAccordion from './layouts/accordion/sidebar';
-import SidebarExamples from './layouts/example/sidebar';
 
 const sidebarContentStickyTop = 60;
 const sidebarContentStickyTopNarrow = 0;
@@ -55,15 +54,12 @@ export default class Sidebar extends React.Component {
       children,
       parentPath,
       headings,
-      topics,
       layoutConfig
     } = this.props;
 
     const { accordion } = navigation;
 
-    const { sidebarTitle } = frontMatter;
-
-    const { hideSubItems, sidebar, includeFilterBar } = layoutConfig;
+    const { sidebar } = layoutConfig;
 
     switch (sidebar) {
       case 'accordion':
@@ -76,17 +72,6 @@ export default class Sidebar extends React.Component {
           >
             {children}
           </SidebarAccordion>
-        );
-      case 'sectioned':
-        return (
-          <SidebarExamples
-            topics={topics[parentPath].topics}
-            hideSubItems={hideSubItems}
-            sectionPath={parentPath}
-            includeFilterBar={includeFilterBar}
-            sidebarTitle={sidebarTitle}
-            location={this.props.location}
-          />
         );
     }
   };
@@ -137,7 +122,6 @@ Sidebar.propTypes = {
   }).isRequired,
   children: PropTypes.node,
   parentPath: PropTypes.string,
-  topics: PropTypes.object,
   layoutConfig: PropTypes.shape({
     sidebar: PropTypes.oneOf(['none', 'toc', 'accordion', 'sectioned']),
     hideSubItems: PropTypes.bool,

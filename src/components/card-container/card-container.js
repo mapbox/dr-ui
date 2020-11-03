@@ -5,7 +5,6 @@ import classnames from 'classnames';
 class CardContainer extends React.PureComponent {
   render() {
     const { props } = this;
-    const categoryID = props.path.split('#')[1];
     let cardClasses = 'mb18 ';
     if (!props.fullWidthCards) {
       cardClasses += `col col--12 col--${this.props.cardColSize}-ml`;
@@ -25,12 +24,17 @@ class CardContainer extends React.PureComponent {
     });
     return (
       <div>
-        <a href={props.path} className="unprose mb18 block color-blue-on-hover">
-          <h2 className="txt-bold" id={categoryID}>
-            {props.title}{' '}
-            <span data-swiftype-index="false">({props.cards.length})</span>
-          </h2>
-        </a>
+        {props.title && props.path && (
+          <a
+            href={props.path}
+            className="unprose mb18 block color-blue-on-hover"
+          >
+            <h2 className="txt-bold" id={props.path.split('#')[1]}>
+              {props.title}{' '}
+              <span data-swiftype-index="false">({props.cards.length})</span>
+            </h2>
+          </a>
+        )}
         <div className={containerClasses}>{renderedCards}</div>
       </div>
     );
@@ -38,13 +42,13 @@ class CardContainer extends React.PureComponent {
 }
 
 CardContainer.defaultProps = {
-  cardColSize: 6,
+  cardColSize: 4,
   fullWidthCards: false
 };
 
 CardContainer.propTypes = {
-  title: PropTypes.string.isRequired,
-  path: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  path: PropTypes.string,
   fullWidthCards: PropTypes.bool,
   cards: PropTypes.arrayOf(PropTypes.node).isRequired,
   cardColSize: PropTypes.oneOf([1, 2, 3, 4, 5, 6])

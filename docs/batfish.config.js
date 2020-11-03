@@ -1,15 +1,11 @@
 const path = require('path');
 const {
   buildNavigation,
-  buildItems,
-  buildSplitPages,
-  formatTopics
+  buildFilters,
+  buildSplitPages
 } = require('../src/helpers/batfish/index.js');
-const relatedJson = require('../src/helpers/batfish/__tests__/fixtures/related-mts.json');
 
 const siteBasePath = '/dr-ui';
-
-const appendTopics = formatTopics('/dr-ui', 'help', relatedJson);
 
 module.exports = () => {
   return {
@@ -40,12 +36,7 @@ module.exports = () => {
     },
     dataSelectors: {
       navigation: (data) => buildNavigation(siteBasePath, data),
-      topics: (data) =>
-        buildItems({ data, append: appendTopics, itemType: 'topics' }),
-      level: (data) => buildItems({ data, itemType: 'level' }),
-      language: (data) => buildItems({ data, itemType: 'language' }),
-      products: (data) => buildItems({ data, itemType: 'products' }),
-      videos: (data) => buildItems({ data, itemType: 'videos' }),
+      filters: (data) => buildFilters(data),
       splitPages: (data) => buildSplitPages(data),
       sync: (data) => {
         /* syncs data to fixtures to properly test batfish selectors */

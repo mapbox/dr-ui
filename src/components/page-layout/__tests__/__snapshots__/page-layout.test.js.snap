@@ -993,31 +993,7 @@ Array [
               <div
                 className="viewport-almost-mm scroll-auto-mm scroll-styled"
                 id="dr-ui--page-layout-sidebar"
-              >
-                <div
-                  className="none block-mm py12"
-                >
-                  <div
-                    className="mx24"
-                    data-swiftype-index="false"
-                  >
-                    <a
-                      className="block txt-bold color-gray py6 color-blue-on-hover"
-                      href="/PageLayout/#cool"
-                      id="undefined-sidebar"
-                    >
-                      Cool (3)
-                    </a>
-                    <a
-                      className="block txt-bold color-gray py6 color-blue-on-hover"
-                      href="/PageLayout/#awesome"
-                      id="undefined-sidebar"
-                    >
-                      Awesome (1)
-                    </a>
-                  </div>
-                </div>
-              </div>
+              />
             </div>
           </div>
         </div>
@@ -1106,312 +1082,203 @@ Array [
             <div
               className="col prose"
             >
-              <div>
-                <div>
-                  <div>
-                    <a
-                      className="unprose mb18 block color-blue-on-hover"
-                      href="/PageLayout/#cool"
-                    >
-                      <h2
-                        className="txt-bold"
-                        id="cool"
-                      >
-                        Cool
-                         
-                        <span
-                          data-swiftype-index="false"
-                        >
-                          (
-                          3
-                          )
-                        </span>
-                      </h2>
-                    </a>
-                    <div
-                      className="grid grid--gut36"
-                    >
-                      <div
-                        className="mb18 col col--12 col--6-ml"
-                      >
-                        <a
-                          className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
-                          href="/PageLayout/example-1/"
-                        >
-                          <div
-                            className="relative h120 mb6"
-                          >
-                            <div />
-                          </div>
-                          <div>
-                            <div
-                              className="mb6"
-                            >
-                              
-                              <div
-                                className="inline-block color-gray txt-s txt-bold"
-                              >
-                                <svg
-                                  className="events-none icon inline-block align-t"
-                                  focusable="false"
-                                  role="presentation"
-                                  style={
-                                    Object {
-                                      "height": 18,
-                                      "width": 18,
-                                    }
-                                  }
-                                >
-                                  <use
-                                    xlinkHref="#icon-code"
-                                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                                  />
-                                </svg>
-                                 
-                                JavaScript
-                              </div>
-                            </div>
-                            <div
-                              className="mb6"
-                            >
-                              Example 1
-                            </div>
-                            <div
-                              className="color-gray color-gray-on-hover"
-                            >
-                              Replace me.
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <div
-                        className="mb18 col col--12 col--6-ml"
-                      >
-                        <a
-                          className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
-                          href="/PageLayout/example-2/"
-                        >
-                          <div
-                            className="relative h120 mb6"
-                          >
-                            <div />
-                          </div>
-                          <div>
-                            <div
-                              className="mb6"
-                            >
-                              
-                              <div
-                                className="inline-block color-gray txt-s txt-bold"
-                              >
-                                <svg
-                                  className="events-none icon inline-block align-t"
-                                  focusable="false"
-                                  role="presentation"
-                                  style={
-                                    Object {
-                                      "height": 18,
-                                      "width": 18,
-                                    }
-                                  }
-                                >
-                                  <use
-                                    xlinkHref="#icon-code"
-                                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                                  />
-                                </svg>
-                                 
-                                JavaScript
-                              </div>
-                            </div>
-                            <div
-                              className="mb6"
-                            >
-                              Example 2
-                            </div>
-                            <div
-                              className="color-gray color-gray-on-hover"
-                            >
-                              Replace me.
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <div
-                        className="mb18 col col--12 col--6-ml"
-                      >
-                        <a
-                          className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
-                          href="/PageLayout/example-3/"
-                        >
-                          <div
-                            className="relative h120 mb6"
-                          >
-                            <div />
-                          </div>
-                          <div>
-                            <div
-                              className="mb6"
-                            >
-                              
-                              <div
-                                className="inline-block color-gray txt-s txt-bold"
-                              >
-                                <svg
-                                  className="events-none icon inline-block align-t"
-                                  focusable="false"
-                                  role="presentation"
-                                  style={
-                                    Object {
-                                      "height": 18,
-                                      "width": 18,
-                                    }
-                                  }
-                                >
-                                  <use
-                                    xlinkHref="#icon-code"
-                                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                                  />
-                                </svg>
-                                 
-                                JavaScript
-                              </div>
-                            </div>
-                            <div
-                              className="mb6"
-                            >
-                              Example 3
-                            </div>
-                            <div
-                              className="color-gray color-gray-on-hover"
-                            >
-                              Replace me.
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div>
-                    <a
-                      className="unprose mb18 block color-blue-on-hover"
-                      href="/PageLayout/#awesome"
-                    >
-                      <h2
-                        className="txt-bold"
-                        id="awesome"
-                      >
-                        Awesome
-                         
-                        <span
-                          data-swiftype-index="false"
-                        >
-                          (
-                          1
-                          )
-                        </span>
-                      </h2>
-                    </a>
-                    <div
-                      className="grid grid--gut36"
-                    >
-                      <div
-                        className="mb18 col col--12 col--6-ml"
-                      >
-                        <a
-                          className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
-                          href="/PageLayout/example-3/"
-                        >
-                          <div
-                            className="relative h120 mb6"
-                          >
-                            <div
-                              className="absolute top bottom w-full h-full round"
-                              style={
-                                Object {
-                                  "backgroundImage": "url(/files/ios-horizontal.png)",
-                                  "backgroundPosition": "center",
-                                  "backgroundRepeat": "no-repeat",
-                                  "backgroundSize": "cover",
-                                }
-                              }
-                            />
-                          </div>
-                          <div>
-                            <div
-                              className="mb6"
-                            >
-                              
-                              <div
-                                className="inline-block color-gray txt-s txt-bold"
-                              >
-                                <svg
-                                  className="events-none icon inline-block align-t"
-                                  focusable="false"
-                                  role="presentation"
-                                  style={
-                                    Object {
-                                      "height": 18,
-                                      "width": 18,
-                                    }
-                                  }
-                                >
-                                  <use
-                                    xlinkHref="#icon-code"
-                                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                                  />
-                                </svg>
-                                 
-                                JavaScript
-                              </div>
-                            </div>
-                            <div
-                              className="mb6"
-                            >
-                              Example 3
-                            </div>
-                            <div
-                              className="color-gray color-gray-on-hover"
-                            >
-                              Replace me.
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div
-                className="my36 block none-mxl"
+                className="mb36"
               >
                 <div
-                  className="dr-ui--feedback"
+                  className="mb12"
                 >
-                  <div>
-                    <h2
-                      className="unprose txt-h4 txt-fancy mb12"
+                  <div
+                    className="mb6"
+                  >
+                    <span
+                      className="inline-block txt-fancy txt-s txt-uppercase color-gray txt-spacing0 mr12"
+                      id="filterTopics"
                     >
-                      Was this 
-                      page
-                       helpful?
-                    </h2>
+                      Topics
+                    </span>
                     <button
-                      className="btn btn--s"
-                      id="dr-ui--feedback-page-yes"
+                      className="btn mr6 btn--s round flex-parent-inline flex-parent--center-cross relative"
                       onClick={[Function]}
                     >
-                      Yes
+                      Cool
+                       
+                      
                     </button>
                     <button
-                      className="btn btn--s ml6"
-                      id="dr-ui--feedback-page-no"
+                      className="btn mr6 btn--s round flex-parent-inline flex-parent--center-cross relative"
                       onClick={[Function]}
                     >
-                      No
+                      Awesome
+                       
+                      
                     </button>
+                  </div>
+                </div>
+                
+              </div>
+              <div>
+                <div
+                  className="grid grid--gut36"
+                >
+                  <div
+                    className="mb18 col col--12 col--4-ml"
+                  >
+                    <a
+                      className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+                      href="/PageLayout/example-1/"
+                    >
+                      <div
+                        className="relative h120 mb6"
+                      >
+                        <div />
+                      </div>
+                      <div>
+                        <div
+                          className="mb6"
+                        >
+                          
+                          <div
+                            className="inline-block color-gray txt-s txt-bold"
+                          >
+                            <svg
+                              className="events-none icon inline-block align-t"
+                              focusable="false"
+                              role="presentation"
+                              style={
+                                Object {
+                                  "height": 18,
+                                  "width": 18,
+                                }
+                              }
+                            >
+                              <use
+                                xlinkHref="#icon-code"
+                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                              />
+                            </svg>
+                             
+                            JavaScript
+                          </div>
+                        </div>
+                        <div
+                          className="mb6"
+                        >
+                          Example 1
+                        </div>
+                        <div
+                          className="color-gray color-gray-on-hover"
+                        >
+                          Replace me.
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    className="mb18 col col--12 col--4-ml"
+                  >
+                    <a
+                      className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+                      href="/PageLayout/example-2/"
+                    >
+                      <div
+                        className="relative h120 mb6"
+                      >
+                        <div />
+                      </div>
+                      <div>
+                        <div
+                          className="mb6"
+                        >
+                          
+                          <div
+                            className="inline-block color-gray txt-s txt-bold"
+                          >
+                            <svg
+                              className="events-none icon inline-block align-t"
+                              focusable="false"
+                              role="presentation"
+                              style={
+                                Object {
+                                  "height": 18,
+                                  "width": 18,
+                                }
+                              }
+                            >
+                              <use
+                                xlinkHref="#icon-code"
+                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                              />
+                            </svg>
+                             
+                            JavaScript
+                          </div>
+                        </div>
+                        <div
+                          className="mb6"
+                        >
+                          Example 2
+                        </div>
+                        <div
+                          className="color-gray color-gray-on-hover"
+                        >
+                          Replace me.
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    className="mb18 col col--12 col--4-ml"
+                  >
+                    <a
+                      className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+                      href="/PageLayout/example-3/"
+                    >
+                      <div
+                        className="relative h120 mb6"
+                      >
+                        <div />
+                      </div>
+                      <div>
+                        <div
+                          className="mb6"
+                        >
+                          
+                          <div
+                            className="inline-block color-gray txt-s txt-bold"
+                          >
+                            <svg
+                              className="events-none icon inline-block align-t"
+                              focusable="false"
+                              role="presentation"
+                              style={
+                                Object {
+                                  "height": 18,
+                                  "width": 18,
+                                }
+                              }
+                            >
+                              <use
+                                xlinkHref="#icon-code"
+                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                              />
+                            </svg>
+                             
+                            JavaScript
+                          </div>
+                        </div>
+                        <div
+                          className="mb6"
+                        >
+                          Example 3
+                        </div>
+                        <div
+                          className="color-gray color-gray-on-hover"
+                        >
+                          Replace me.
+                        </div>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1672,55 +1539,7 @@ Array [
               <div
                 className="viewport-almost-mm scroll-auto-mm scroll-styled"
                 id="dr-ui--page-layout-sidebar"
-              >
-                <div
-                  className="none block-mm py12"
-                >
-                  <div
-                    className="mx24"
-                    data-swiftype-index="false"
-                  >
-                    <a
-                      className="block txt-bold color-gray py12 color-blue-on-hover"
-                      href="/PageLayout/#cool"
-                      id="undefined-sidebar"
-                    >
-                      Cool (3)
-                    </a>
-                    <a
-                      className="color-blue-on-hover block mb6"
-                      href="/PageLayout/example-1/"
-                    >
-                      Example 1
-                    </a>
-                    <a
-                      className="color-blue-on-hover block mb6"
-                      href="/PageLayout/example-2/"
-                    >
-                      Example 2
-                    </a>
-                    <a
-                      className="color-blue-on-hover block mb6"
-                      href="/PageLayout/example-3/"
-                    >
-                      Example 3
-                    </a>
-                    <a
-                      className="block txt-bold color-gray py12 color-blue-on-hover"
-                      href="/PageLayout/#awesome"
-                      id="undefined-sidebar"
-                    >
-                      Awesome (1)
-                    </a>
-                    <a
-                      className="color-blue-on-hover block mb6"
-                      href="/PageLayout/example-3/"
-                    >
-                      Example 3
-                    </a>
-                  </div>
-                </div>
-              </div>
+              />
             </div>
           </div>
         </div>

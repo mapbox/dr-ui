@@ -93,3 +93,7 @@
     display: none !important;
   }
 }
+
+.txt-spacing0 {
+  letter-spacing: 0.05em;
+}

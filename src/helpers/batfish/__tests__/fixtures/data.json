@@ -17,8 +17,8 @@
         "level": 1,
         "thumbnail": "header-image",
         "layout": "example",
-        "videos": true,
-        "products": ["Documentation", "Navigation"]
+        "video": true,
+        "products": ["Documentation", "Mapbox Tiling Service"]
       }
     },
     {
@@ -43,7 +43,7 @@
         "title": "Example 3",
         "description": "This is example 3.",
         "contentType": "example",
-        "language": ["JavaScript"],
+        "language": ["Swift"],
         "topics": ["Navigation", "Geocoding"],
         "level": 3,
         "thumbnail": "header-image",
@@ -61,9 +61,6 @@
         "language": ["JavaScript"],
         "navOrder": 3,
         "layout": "example",
-        "fullWidthCards": true,
-        "hideTitle": true,
-        "hideFeedback": true,
         "products": ["Documentation"]
       }
     },
@@ -79,7 +76,7 @@
         "products": ["Documentation"],
         "prependJs": [
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
-          "import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line",
+          "import topics from '@mapbox/batfish/data/filters'; // eslint-disable-line",
           "import splitPages from '@mapbox/batfish/data/split-pages'; // eslint-disable-line",
           "import relatedMts from '../../../../src/helpers/batfish/__tests__/fixtures/related-mts.json';",
           "import relatedAndroid from '../../../../src/helpers/batfish/__tests__/fixtures/related-android.json';"
@@ -215,7 +212,7 @@
         "description": "Example of a Help page.",
         "contentType": "example",
         "navOrder": 4,
-        "layout": "exampleIndex",
+        "layout": "full",
         "fullWidthCards": true,
         "hideTitle": true,
         "products": ["Documentation"]
