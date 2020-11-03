@@ -6,7 +6,7 @@ import slugify from 'slugify';
 
 class HelpPage extends React.PureComponent {
   render() {
-    const { data, introText } = this.props;
+    const { data } = this.props;
 
     const renderedCardContainers = data.map((topic) => {
       const sectionPath = topic.title
@@ -41,12 +41,7 @@ class HelpPage extends React.PureComponent {
       (container, index) => <div key={index}>{container}</div>
     );
 
-    return (
-      <div>
-        {introText ? <p className="txt-l mb30">{introText}</p> : ''}
-        {renderedContainers}
-      </div>
-    );
+    return <div>{renderedContainers}</div>;
   }
 }
 
@@ -62,13 +57,7 @@ HelpPage.propTypes = {
         })
       ).isRequired
     })
-  ).isRequired,
-  introText: PropTypes.string
-};
-
-HelpPage.defaultProps = {
-  introText:
-    'Our Help page contains tutorials, troubleshooting guides, and other resources to help you get started.'
+  ).isRequired
 };
 
 export default HelpPage;
