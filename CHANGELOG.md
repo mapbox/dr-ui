@@ -17,6 +17,7 @@
   - Add `sticky-mxl` and `scroll-auto-mxl` classes to enable a sticky position and scrolling on displays >= 1200 pixels.
 - 🚨 Update the `navigation` Batfish helper.
   - Remove `accordion` object and moved the dataset into `navTabs` as `pages` array.
+- 🚨 Rename `ExamplePage` component to `HelpPage` to better reflect that the component will display tutorial and troubleshooting page cards for Help pages.
 
 ## 1.3.0
 
