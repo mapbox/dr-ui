@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class ExamplesPage extends React.PureComponent {
+class HelpPage extends React.PureComponent {
   render() {
     const { props } = this;
     const renderedContainers = props.cardContainers.map((container, index) => {
@@ -11,7 +11,7 @@ class ExamplesPage extends React.PureComponent {
   }
 }
 
-ExamplesPage.propTypes = {
+HelpPage.propTypes = {
   frontMatter: PropTypes.shape({
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired
@@ -19,4 +19,4 @@ ExamplesPage.propTypes = {
   cardContainers: PropTypes.arrayOf(PropTypes.node).isRequired
 };
 
-export default ExamplesPage;
+export default HelpPage;

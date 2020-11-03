@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ExamplesPage from '../../../../examples-page/examples-page';
+import HelpPage from '../../../../help-page/help-page';
 import CardContainer from '../../../../card-container/card-container';
 import Card from '../../../../card/card';
 
@@ -83,7 +83,7 @@ export default class LayoutExamples extends React.PureComponent {
     });
 
     return (
-      <ExamplesPage
+      <HelpPage
         frontMatter={frontMatter}
         cardContainers={renderedCardContainers}
       />
