@@ -31,7 +31,7 @@ function buildFilters(data) {
               .filter((f) => f.language)
               .reduce((arr, item) => [...arr, ...item.language], [])
           )
-        ],
+        ].sort(),
         videos: accordionSorter(children.filter((f) => f.video)),
         pages: accordionSorter(children)
       };

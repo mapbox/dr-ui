@@ -1088,19 +1088,19 @@ Array [
                   data-swiftype-index="false"
                 >
                   <div
-                    className="mb12"
+                    className="mb12 border-b border--darken10 pb12"
                   >
                     <div
                       className="mb6"
                     >
-                      <span
-                        className="inline-block txt-fancy txt-s txt-uppercase color-gray txt-spacing0 mr12"
+                      <div
+                        className="txt-fancy txt-s txt-uppercase color-gray txt-spacing0 mr12"
                         id="filterTopics"
                       >
                         Topics
-                      </span>
+                      </div>
                       <button
-                        className="btn mr6 btn--s round flex-parent-inline flex-parent--center-cross relative"
+                        className="btn mr6 mb6 btn--s btn--gray round flex-parent-inline flex-parent--center-cross relative"
                         onClick={[Function]}
                       >
                         <span
@@ -1111,7 +1111,7 @@ Array [
                         
                       </button>
                       <button
-                        className="btn mr6 btn--s round flex-parent-inline flex-parent--center-cross relative"
+                        className="btn mr6 mb6 btn--s btn--gray round flex-parent-inline flex-parent--center-cross relative"
                         onClick={[Function]}
                       >
                         <span

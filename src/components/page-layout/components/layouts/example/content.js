@@ -132,12 +132,17 @@ export default class LayoutExamples extends React.PureComponent {
       };
       return (
         <div className="mb6">
-          <span
+          <div
             id={`filter${title}`}
-            className="inline-block txt-fancy txt-s txt-uppercase color-gray txt-spacing0 mr12"
+            className={classnames(
+              'txt-fancy txt-s txt-uppercase color-gray txt-spacing0 mr12',
+              {
+                'inline-block': title === 'Videos'
+              }
+            )}
           >
             {title}
-          </span>
+          </div>
           {!isSwitch &&
             data.map((item) => {
               const label = title === 'Levels' ? levelMap[item] : item;
@@ -147,7 +152,7 @@ export default class LayoutExamples extends React.PureComponent {
                   key={item}
                   onClick={() => handler(item)}
                   className={classnames(
-                    'btn mr6 btn--s round flex-parent-inline flex-parent--center-cross relative',
+                    'btn mr6 mb6 btn--s btn--gray round flex-parent-inline flex-parent--center-cross relative',
                     {
                       'is-active pr18': isActive
                     }
@@ -175,6 +180,7 @@ export default class LayoutExamples extends React.PureComponent {
               <ControlSwitch
                 id={title}
                 value={activeItem}
+                themeControlSwitch="switch--s-label switch--gray"
                 aria-labelledby={`filter${title}`}
                 onChange={(value) => handler(value)}
               />
@@ -186,7 +192,7 @@ export default class LayoutExamples extends React.PureComponent {
 
     return (
       <div className="mb36" data-swiftype-index="false">
-        <div className="mb12">
+        <div className="mb12 border-b border--darken10 pb12">
           {filters.topics && filters.topics.length > 1 && (
             <FilterSection
               title="Topics"
@@ -222,7 +228,7 @@ export default class LayoutExamples extends React.PureComponent {
         </div>
         {activeTopic || activeLanguage || activeLevel || activeVideo ? (
           <div className="">
-            <div className="inline-block mr12">
+            <div className="inline-block mr12 color-gray">
               {resultsLength === 0
                 ? 'No results found.'
                 : `Found ${resultsLength} result${
@@ -231,7 +237,7 @@ export default class LayoutExamples extends React.PureComponent {
             </div>
             <button
               onClick={() => this.handleReset()}
-              className="btn btn--s btn--stroke round"
+              className="btn btn--s btn--gray btn--stroke round"
             >
               Reset filters
             </button>
