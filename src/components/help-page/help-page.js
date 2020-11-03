@@ -9,10 +9,12 @@ class HelpPage extends React.PureComponent {
     const { data, introText } = this.props;
 
     const renderedCardContainers = data.map((topic) => {
-      const sectionPath = slugify(topic.title, {
-        replacement: '-',
-        lower: true
-      });
+      const sectionPath = topic.title
+        ? `#${slugify(topic.title, {
+            replacement: '-',
+            lower: true
+          })}`
+        : undefined;
       const cardsForTopic = topic.pages.map((page) => (
         <Card
           key={page.title}
@@ -27,7 +29,7 @@ class HelpPage extends React.PureComponent {
           <CardContainer
             key={topic.title}
             title={topic.title}
-            path={`#${sectionPath}`}
+            path={sectionPath}
             fullWidthCards={true}
             cards={cardsForTopic}
           />
@@ -51,7 +53,7 @@ class HelpPage extends React.PureComponent {
 HelpPage.propTypes = {
   data: PropTypes.arrayOf(
     PropTypes.shape({
-      title: PropTypes.string.isRequired,
+      title: PropTypes.string,
       pages: PropTypes.arrayOf(
         PropTypes.shape({
           title: PropTypes.string.isRequired,

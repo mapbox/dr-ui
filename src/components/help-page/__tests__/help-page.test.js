@@ -19,6 +19,24 @@ describe('examples-page', () => {
     });
   });
 
+  describe(testCases.tutorials.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.tutorials;
+      wrapper = renderer.create(
+        React.createElement(testCase.component, testCase.props)
+      );
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
+
   describe(testCases.customIntroText.description, () => {
     let testCase;
     let wrapper;
