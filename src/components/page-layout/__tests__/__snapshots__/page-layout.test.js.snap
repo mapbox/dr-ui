@@ -1082,203 +1082,206 @@ Array [
             <div
               className="col prose"
             >
-              <div
-                className="mb36"
-              >
-                <div
-                  className="mb12"
-                >
-                  <div
-                    className="mb6"
-                  >
-                    <span
-                      className="inline-block txt-fancy txt-s txt-uppercase color-gray txt-spacing0 mr12"
-                      id="filterTopics"
-                    >
-                      Topics
-                    </span>
-                    <button
-                      className="btn mr6 btn--s round flex-parent-inline flex-parent--center-cross relative"
-                      onClick={[Function]}
-                    >
-                      Cool
-                       
-                      
-                    </button>
-                    <button
-                      className="btn mr6 btn--s round flex-parent-inline flex-parent--center-cross relative"
-                      onClick={[Function]}
-                    >
-                      Awesome
-                       
-                      
-                    </button>
-                  </div>
-                </div>
-                
-              </div>
               <div>
                 <div
-                  className="grid grid--gut36"
+                  className="mb36"
                 >
                   <div
-                    className="mb18 col col--12 col--4-ml"
+                    className="mb12"
                   >
-                    <a
-                      className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
-                      href="/PageLayout/example-1/"
+                    <div
+                      className="mb6"
+                      data-swiftype-index="false"
                     >
-                      <div
-                        className="relative h120 mb6"
+                      <span
+                        className="inline-block txt-fancy txt-s txt-uppercase color-gray txt-spacing0 mr12"
+                        id="filterTopics"
                       >
-                        <div />
-                      </div>
-                      <div>
-                        <div
-                          className="mb6"
-                        >
-                          
-                          <div
-                            className="inline-block color-gray txt-s txt-bold"
-                          >
-                            <svg
-                              className="events-none icon inline-block align-t"
-                              focusable="false"
-                              role="presentation"
-                              style={
-                                Object {
-                                  "height": 18,
-                                  "width": 18,
-                                }
-                              }
-                            >
-                              <use
-                                xlinkHref="#icon-code"
-                                xmlnsXlink="http://www.w3.org/1999/xlink"
-                              />
-                            </svg>
-                             
-                            JavaScript
-                          </div>
-                        </div>
-                        <div
-                          className="mb6"
-                        >
-                          Example 1
-                        </div>
-                        <div
-                          className="color-gray color-gray-on-hover"
-                        >
-                          Replace me.
-                        </div>
-                      </div>
-                    </a>
+                        Topics
+                      </span>
+                      <button
+                        className="btn mr6 btn--s round flex-parent-inline flex-parent--center-cross relative"
+                        onClick={[Function]}
+                      >
+                        Cool
+                         
+                        
+                      </button>
+                      <button
+                        className="btn mr6 btn--s round flex-parent-inline flex-parent--center-cross relative"
+                        onClick={[Function]}
+                      >
+                        Awesome
+                         
+                        
+                      </button>
+                    </div>
                   </div>
+                  
+                </div>
+                <div>
                   <div
-                    className="mb18 col col--12 col--4-ml"
+                    className="grid grid--gut36"
                   >
-                    <a
-                      className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
-                      href="/PageLayout/example-2/"
+                    <div
+                      className="mb18 col col--12 col--4-ml"
                     >
-                      <div
-                        className="relative h120 mb6"
+                      <a
+                        className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+                        href="/PageLayout/example-1/"
                       >
-                        <div />
-                      </div>
-                      <div>
                         <div
-                          className="mb6"
+                          className="relative h120 mb6"
                         >
-                          
+                          <div />
+                        </div>
+                        <div>
                           <div
-                            className="inline-block color-gray txt-s txt-bold"
+                            className="mb6"
                           >
-                            <svg
-                              className="events-none icon inline-block align-t"
-                              focusable="false"
-                              role="presentation"
-                              style={
-                                Object {
-                                  "height": 18,
-                                  "width": 18,
-                                }
-                              }
+                            
+                            <div
+                              className="inline-block color-gray txt-s txt-bold"
                             >
-                              <use
-                                xlinkHref="#icon-code"
-                                xmlnsXlink="http://www.w3.org/1999/xlink"
-                              />
-                            </svg>
-                             
-                            JavaScript
+                              <svg
+                                className="events-none icon inline-block align-t"
+                                focusable="false"
+                                role="presentation"
+                                style={
+                                  Object {
+                                    "height": 18,
+                                    "width": 18,
+                                  }
+                                }
+                              >
+                                <use
+                                  xlinkHref="#icon-code"
+                                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                                />
+                              </svg>
+                               
+                              JavaScript
+                            </div>
+                          </div>
+                          <div
+                            className="mb6"
+                          >
+                            Example 1
+                          </div>
+                          <div
+                            className="color-gray color-gray-on-hover"
+                          >
+                            Replace me.
                           </div>
                         </div>
-                        <div
-                          className="mb6"
-                        >
-                          Example 2
-                        </div>
-                        <div
-                          className="color-gray color-gray-on-hover"
-                        >
-                          Replace me.
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    className="mb18 col col--12 col--4-ml"
-                  >
-                    <a
-                      className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
-                      href="/PageLayout/example-3/"
+                      </a>
+                    </div>
+                    <div
+                      className="mb18 col col--12 col--4-ml"
                     >
-                      <div
-                        className="relative h120 mb6"
+                      <a
+                        className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+                        href="/PageLayout/example-2/"
                       >
-                        <div />
-                      </div>
-                      <div>
                         <div
-                          className="mb6"
+                          className="relative h120 mb6"
                         >
-                          
+                          <div />
+                        </div>
+                        <div>
                           <div
-                            className="inline-block color-gray txt-s txt-bold"
+                            className="mb6"
                           >
-                            <svg
-                              className="events-none icon inline-block align-t"
-                              focusable="false"
-                              role="presentation"
-                              style={
-                                Object {
-                                  "height": 18,
-                                  "width": 18,
-                                }
-                              }
+                            
+                            <div
+                              className="inline-block color-gray txt-s txt-bold"
                             >
-                              <use
-                                xlinkHref="#icon-code"
-                                xmlnsXlink="http://www.w3.org/1999/xlink"
-                              />
-                            </svg>
-                             
-                            JavaScript
+                              <svg
+                                className="events-none icon inline-block align-t"
+                                focusable="false"
+                                role="presentation"
+                                style={
+                                  Object {
+                                    "height": 18,
+                                    "width": 18,
+                                  }
+                                }
+                              >
+                                <use
+                                  xlinkHref="#icon-code"
+                                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                                />
+                              </svg>
+                               
+                              JavaScript
+                            </div>
+                          </div>
+                          <div
+                            className="mb6"
+                          >
+                            Example 2
+                          </div>
+                          <div
+                            className="color-gray color-gray-on-hover"
+                          >
+                            Replace me.
                           </div>
                         </div>
+                      </a>
+                    </div>
+                    <div
+                      className="mb18 col col--12 col--4-ml"
+                    >
+                      <a
+                        className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+                        href="/PageLayout/example-3/"
+                      >
                         <div
-                          className="mb6"
+                          className="relative h120 mb6"
                         >
-                          Example 3
+                          <div />
                         </div>
-                        <div
-                          className="color-gray color-gray-on-hover"
-                        >
-                          Replace me.
+                        <div>
+                          <div
+                            className="mb6"
+                          >
+                            
+                            <div
+                              className="inline-block color-gray txt-s txt-bold"
+                            >
+                              <svg
+                                className="events-none icon inline-block align-t"
+                                focusable="false"
+                                role="presentation"
+                                style={
+                                  Object {
+                                    "height": 18,
+                                    "width": 18,
+                                  }
+                                }
+                              >
+                                <use
+                                  xlinkHref="#icon-code"
+                                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                                />
+                              </svg>
+                               
+                              JavaScript
+                            </div>
+                          </div>
+                          <div
+                            className="mb6"
+                          >
+                            Example 3
+                          </div>
+                          <div
+                            className="color-gray color-gray-on-hover"
+                          >
+                            Replace me.
+                          </div>
                         </div>
-                      </div>
-                    </a>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

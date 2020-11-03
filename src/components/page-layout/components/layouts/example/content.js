@@ -18,8 +18,8 @@ export default class LayoutExamples extends React.PureComponent {
   }
 
   componentDidMount() {
+    // if url query param is set then update the state
     if ('URLSearchParams' in window) {
-      // if url query param is set then update the state
       const query = new URLSearchParams(window.location.search);
       if (query.get('topic'))
         this.setState({ activeTopic: query.get('topic') });
@@ -32,6 +32,7 @@ export default class LayoutExamples extends React.PureComponent {
     }
   }
 
+  // set the query string or delete it if value is undefined
   setQueryString = (label, value) => {
     if ('URLSearchParams' in window) {
       let searchParams = new URLSearchParams(window.location.search);
@@ -45,6 +46,7 @@ export default class LayoutExamples extends React.PureComponent {
     }
   };
 
+  // handle state and query string for "topic"
   handleTopic = (topic) => {
     const value = topic === this.state.activeTopic ? undefined : topic;
     this.setState(
@@ -57,6 +59,7 @@ export default class LayoutExamples extends React.PureComponent {
     );
   };
 
+  // handle state and query string for "language"
   handleLanguage = (language) => {
     const value = language === this.state.activeLanguage ? undefined : language;
     this.setState(
@@ -69,6 +72,7 @@ export default class LayoutExamples extends React.PureComponent {
     );
   };
 
+  // handle state and query string for "level"
   handleLevel = (level) => {
     const value = level === this.state.activeLevel ? undefined : level;
     this.setState(
@@ -81,6 +85,7 @@ export default class LayoutExamples extends React.PureComponent {
     );
   };
 
+  // handle state and query string for "videos"
   handleVideos = (bool) => {
     const value = bool === this.state.activeVideo ? false : bool;
     this.setState(
@@ -93,6 +98,7 @@ export default class LayoutExamples extends React.PureComponent {
     );
   };
 
+  // reset filters and remove query string parameters
   handleReset = () => {
     this.setState(
       {
@@ -108,6 +114,7 @@ export default class LayoutExamples extends React.PureComponent {
     );
   };
 
+  // build filters
   renderFilters = (resultsLength) => {
     const { filters } = this.props;
     const {
@@ -124,7 +131,7 @@ export default class LayoutExamples extends React.PureComponent {
         3: 'Advanced'
       };
       return (
-        <div className="mb6">
+        <div className="mb6" data-swiftype-index="false">
           <span
             id={`filter${title}`}
             className="inline-block txt-fancy txt-s txt-uppercase color-gray txt-spacing0 mr12"
@@ -230,6 +237,7 @@ export default class LayoutExamples extends React.PureComponent {
     );
   };
 
+  // return thumbnail if available
   renderThumbnail = (thumbnail, AppropriateImage) => {
     // if thumbnail has an image extenstion, handle the image
     if (/\.png|jpeg|jpg|gif$/.exec(thumbnail)) {
@@ -261,7 +269,7 @@ export default class LayoutExamples extends React.PureComponent {
     }
   };
 
-  // filters available pages based on active filters
+  // filter available pages based on active filters
   filterPages = () => {
     const { filters } = this.props;
     const {
@@ -301,7 +309,7 @@ export default class LayoutExamples extends React.PureComponent {
     const filteredPages = this.filterPages();
 
     return (
-      <React.Fragment>
+      <div>
         {this.renderFilters(filteredPages.length)}
         {filteredPages.length > 0 && (
           <CardContainer
@@ -330,7 +338,7 @@ export default class LayoutExamples extends React.PureComponent {
             ))}
           />
         )}
-      </React.Fragment>
+      </div>
     );
   }
 }

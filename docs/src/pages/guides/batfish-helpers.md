@@ -127,7 +127,7 @@ class PageShell extends React.Component {
 
 - The shape of filters is an object, where the top-level keys are pathnames for `examplesIndex` pages.
   - Each object has a `topics` array, a unique list of topics.
-  - Each objects has `pages` array of all sub pages to display.
+  - Each objects has `pages` array of all sub pages to display. The `pages` array is ordered by the `order` frontMatter property and then alphabetically by title.
   - If available, the object may have a `levels` array, a unique list of levels options.
   - If available, the object may have a `languages` array, a unique list of language options.
   - If available, the object may have a `videos` array, an array of all pages with `video: true` in the frontMatter.

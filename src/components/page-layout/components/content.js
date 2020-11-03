@@ -61,7 +61,7 @@ export default class Content extends React.Component {
 
   render() {
     const { children, frontMatter, layoutConfig } = this.props;
-    let { title, unProse, hideFeedback, layout } = frontMatter;
+    const { title, unProse, hideFeedback, layout } = frontMatter;
     const { hideTitle, showCards, sidebar } = layoutConfig;
 
     // check frontmatter then default to layout config
