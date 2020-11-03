@@ -1,4 +1,4 @@
-// builds all the data you need to power examples index layout
+// builds all the data you need to power exampleIndex layout
 // see: https://mapbox.github.io/dr-ui/batfish-helpers/#filters
 const { accordionSorter } = require('./navigation');
 

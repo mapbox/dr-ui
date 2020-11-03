@@ -157,24 +157,24 @@ With the `formatTopics` Batfish helper, you can build this dataset and then pass
 
 ```js
 const {
-  buildFilters,
+  buildTopics,
   formatTopics
-} = require('@mapbox/dr-ui/helpers/batfish/filters.js');
+} = require('@mapbox/dr-ui/helpers/batfish/topics.js');
 const relatedHelpPages = require('./data/releated-help-pages.json');
 
 const siteBasePath = '/android';
 
 // for a single-structured site:
-const appendPages = formatTopics(siteBasePath, 'help', relatedHelpPages);
+const appendTopics = formatTopics(siteBasePath, 'help', relatedHelpPages);
 
 // for a multi-structured site:
-// const appendPages = formatTopics(siteBasePath, 'help', relatedHelpPages, ['maps', 'navigation', 'vision']);
+// const appendTopics = formatTopics(siteBasePath, 'help', relatedHelpPages, ['maps', 'navigation', 'vision']);
 
 module.exports = () => {
   return {
     siteBasePath: siteBasePath,
     dataSelectors: {
-      topics: (data) => buildFilters(data, appendPages)
+      topics: (data) => buildTopics(data, appendTopics)
     }
   };
 };
