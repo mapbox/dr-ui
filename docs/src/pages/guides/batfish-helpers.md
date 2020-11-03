@@ -10,8 +10,6 @@ prependJs:
   - "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line"
   - "import topics from '@mapbox/batfish/data/filters'; // eslint-disable-line"
   - "import splitPages from '@mapbox/batfish/data/split-pages'; // eslint-disable-line"
-  - "import relatedMts from '../../../../src/helpers/batfish/__tests__/fixtures/related-mts.json';"
-  - "import relatedAndroid from '../../../../src/helpers/batfish/__tests__/fixtures/related-android.json';"
 ---
 
 Dr. UI has two functions that are used in `dataSelectors` in `batfish.config.js` to help build page metadata and site hierarchy. Each data selector has tests to assert the shape of the data.
