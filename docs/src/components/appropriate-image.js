@@ -1,4 +1,4 @@
-import imageConfig from '../img/dist/image.config.json';
+import imageConfig from '../img/image.config.json';
 
 const appropriateImagesReact = require('@mapbox/appropriate-images-react');
 
@@ -8,7 +8,7 @@ const appropriateImagesReact = require('@mapbox/appropriate-images-react');
 const AppropriateImage = appropriateImagesReact.scopeAppropriateImage(
   imageConfig,
   {
-    transformUrl: (url) => require(`../img/dist/${url}`).default, // eslint-disable-line
+    transformUrl: (url) => require(`../img/${url}`).default, // eslint-disable-line
     hiResRatio: 1.5
   }
 );
