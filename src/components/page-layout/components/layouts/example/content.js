@@ -18,19 +18,57 @@ export default class LayoutExamples extends React.PureComponent {
   }
 
   componentDidMount() {
+    const { filters } = this.props;
     // if url query param is set then update the state
     if ('URLSearchParams' in window) {
       const query = new URLSearchParams(window.location.search);
-      if (query.get('topic'))
-        this.setState({ activeTopic: query.get('topic') });
-      if (query.get('language'))
-        this.setState({ activeLanguage: query.get('language') });
-      if (query.get('level'))
-        this.setState({ activeLevel: parseInt(query.get('level')) });
-      if (query.get('videos'))
-        this.setState({ activeVideo: query.get('videos') === 'true' });
+      if (query.get('topic')) {
+        this.setStateIfValid(
+          query.get('topic'),
+          filters.topics,
+          'activeTopic',
+          'topic'
+        );
+      }
+      if (query.get('language')) {
+        this.setStateIfValid(
+          query.get('language'),
+          filters.languages,
+          'activeLanguage',
+          'language'
+        );
+      }
+      if (query.get('level')) {
+        this.setStateIfValid(
+          parseInt(query.get('level')),
+          filters.levels,
+          'activeLevel',
+          'level'
+        );
+      }
+      if (query.get('videos')) {
+        this.setStateIfValid(
+          query.get('videos') === 'true',
+          [true],
+          'activeVideo',
+          'videos'
+        );
+      }
     }
   }
+
+  // make sure query value is valid before setting the state
+  setStateIfValid = (value, options, stateName, queryParam) => {
+    // if query string value is valid, set the state
+    if (options.indexOf(value) > -1) {
+      const obj = {};
+      obj[stateName] = value;
+      this.setState(obj);
+    } else {
+      // otherwise remove the query string
+      this.setQueryString(queryParam, undefined);
+    }
+  };
 
   // set the query string or delete it if value is undefined
   setQueryString = (label, value) => {
