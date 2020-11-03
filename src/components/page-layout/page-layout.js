@@ -34,6 +34,9 @@ export default class PageLayout extends React.Component {
   // render the page's content
   renderContent = (config, parentPath, parent, hasSection) => {
     const { constants, frontMatter, location } = this.props;
+    // removes "for (Platform)" from section titles to avoid repetition
+    const trimSectionTitle = (title) =>
+      title.replace(/\sfor\s(iOS|Android|Vision|Unity)/, '');
     const crumbs = createUniqueCrumbs([
       {
         title: 'All docs',
@@ -44,7 +47,14 @@ export default class PageLayout extends React.Component {
         path: `${constants.BASEURL}/`
       },
       // if multi-structured site add the section name
-      ...(hasSection ? { title: hasSection.title, path: hasSection.path } : []),
+      ...(hasSection
+        ? [
+            {
+              title: trimSectionTitle(hasSection.title),
+              path: `${constants.BASEURL}/${hasSection.path}/`
+            }
+          ]
+        : []),
       {
         title: parent.title,
         path: parent.parent
@@ -109,7 +119,7 @@ export default class PageLayout extends React.Component {
               {this.renderContent(
                 config,
                 parentPath,
-                switchedNavigation.hierarchy[location.pathname],
+                navigation.hierarchy[location.pathname],
                 hasSection
               )}
             </ErrorBoundary>
