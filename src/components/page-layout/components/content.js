@@ -46,7 +46,7 @@ export default class Content extends React.Component {
       <aside
         data-swiftype-index="false"
         className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl"
-        style={{ top: '50px' }}
+        style={{ top: '10px' }}
       >
         {this.props.customAside ? this.props.customAside : undefined}
         {showToc && headings && headings.length > 0 && (

@@ -11,7 +11,7 @@ export default class NavigationAccordion extends React.PureComponent {
       <a
         href={href}
         className={classnames(
-          'px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover',
+          'px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover',
           {
             'bg-blue-faint color-blue': isActive,
             '': !isActive,

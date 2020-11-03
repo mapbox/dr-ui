@@ -34,7 +34,7 @@ export default class Sidebar extends React.Component {
         data-swiftype-index="false"
         id="dr-ui--page-layout-sidebar"
         className="sticky-mm"
-        style={{ top: 0 }}
+        style={{ top: '10px' }}
       >
         <div className="my12 border-b border--darken10 pb12">
           <ProductMenu

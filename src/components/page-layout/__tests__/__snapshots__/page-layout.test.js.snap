@@ -20,7 +20,7 @@ Array [
           id="dr-ui--page-layout-sidebar"
           style={
             Object {
-              "top": 0,
+              "top": "10px",
             }
           }
         >
@@ -85,7 +85,7 @@ Array [
             <ul>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover bg-blue-faint color-blue flex-parent flex-parent--space-between-main"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover bg-blue-faint color-blue flex-parent flex-parent--space-between-main"
                   href="/PageLayout/"
                   style={
                     Object {
@@ -168,7 +168,7 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
+                  className="px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover "
                   href="/PageLayout/specification/"
                   style={
                     Object {
@@ -181,7 +181,7 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
+                  className="px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover "
                   href="/PageLayout/examples/"
                   style={
                     Object {
@@ -194,7 +194,7 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
+                  className="px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover "
                   href="/PageLayout/demo/"
                   style={
                     Object {
@@ -298,7 +298,7 @@ Array [
                 data-swiftype-index="false"
                 style={
                   Object {
-                    "top": "50px",
+                    "top": "10px",
                   }
                 }
               >
@@ -439,7 +439,7 @@ Array [
           id="dr-ui--page-layout-sidebar"
           style={
             Object {
-              "top": 0,
+              "top": "10px",
             }
           }
         >
@@ -468,7 +468,7 @@ Array [
             <ul>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover bg-blue-faint color-blue flex-parent flex-parent--space-between-main"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover bg-blue-faint color-blue flex-parent flex-parent--space-between-main"
                   href="/PageLayout/"
                   style={
                     Object {
@@ -531,7 +531,7 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
+                  className="px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover "
                   href="/PageLayout/specification/"
                   style={
                     Object {
@@ -544,7 +544,7 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
+                  className="px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover "
                   href="/PageLayout/examples/"
                   style={
                     Object {
@@ -557,7 +557,7 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
+                  className="px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover "
                   href="/PageLayout/demo/"
                   style={
                     Object {
@@ -1034,7 +1034,7 @@ Array [
           id="dr-ui--page-layout-sidebar"
           style={
             Object {
-              "top": 0,
+              "top": "10px",
             }
           }
         >
@@ -1063,7 +1063,7 @@ Array [
             <ul>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover bg-blue-faint color-blue flex-parent flex-parent--space-between-main"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover bg-blue-faint color-blue flex-parent flex-parent--space-between-main"
                   href="/PageLayout/"
                   style={
                     Object {
@@ -1126,7 +1126,7 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
+                  className="px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover "
                   href="/PageLayout/specification/"
                   style={
                     Object {
@@ -1139,7 +1139,7 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
+                  className="px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover "
                   href="/PageLayout/examples/"
                   style={
                     Object {
@@ -1152,7 +1152,7 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
+                  className="px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover "
                   href="/PageLayout/demo/"
                   style={
                     Object {
@@ -1352,7 +1352,7 @@ Array [
           id="dr-ui--page-layout-sidebar"
           style={
             Object {
-              "top": 0,
+              "top": "10px",
             }
           }
         >
@@ -1381,7 +1381,7 @@ Array [
             <ul>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover  flex-parent flex-parent--space-between-main"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover  flex-parent flex-parent--space-between-main"
                   href="/PageLayout/"
                   style={
                     Object {
@@ -1410,7 +1410,7 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
+                  className="px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover "
                   href="/PageLayout/specification/"
                   style={
                     Object {
@@ -1423,7 +1423,7 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
+                  className="px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover "
                   href="/PageLayout/examples/"
                   style={
                     Object {
@@ -1436,7 +1436,7 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
+                  className="px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover "
                   href="/PageLayout/demo/"
                   style={
                     Object {
@@ -1540,7 +1540,7 @@ Array [
                 data-swiftype-index="false"
                 style={
                   Object {
-                    "top": "50px",
+                    "top": "10px",
                   }
                 }
               >
@@ -1745,7 +1745,7 @@ Array [
           id="dr-ui--page-layout-sidebar"
           style={
             Object {
-              "top": 0,
+              "top": "10px",
             }
           }
         >
@@ -1774,7 +1774,7 @@ Array [
             <ul>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
+                  className="px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover "
                   href="/PageLayout/"
                   style={
                     Object {
@@ -1787,7 +1787,7 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
+                  className="px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover "
                   href="/PageLayout/specification/"
                   style={
                     Object {
@@ -1800,7 +1800,7 @@ Array [
               </li>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover  flex-parent flex-parent--space-between-main"
+                  className="px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover  flex-parent flex-parent--space-between-main"
                   href="/PageLayout/examples/"
                   style={
                     Object {
@@ -1920,7 +1920,7 @@ Array [
                 data-swiftype-index="false"
                 style={
                   Object {
-                    "top": "50px",
+                    "top": "10px",
                   }
                 }
               >
@@ -2106,7 +2106,7 @@ Array [
           id="dr-ui--page-layout-sidebar"
           style={
             Object {
-              "top": 0,
+              "top": "10px",
             }
           }
         >
@@ -2135,7 +2135,7 @@ Array [
             <ul>
               <li>
                 <a
-                  className="px12 py3 inline-block txt-uppercase txt-fancy txt-bold round-full w-full color-blue-on-hover "
+                  className="px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover "
                   href="/dr-ui/overview/"
                   style={
                     Object {
