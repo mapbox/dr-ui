@@ -2,6 +2,11 @@
 
 exports[`examples-page Basic renders as expected 1`] = `
 <div>
+  <p
+    className="txt-l mb30"
+  >
+    Our Help page contains tutorials, troubleshooting guides, and other resources to help you get started.
+  </p>
   <div>
     <div>
       <a
@@ -9,7 +14,7 @@ exports[`examples-page Basic renders as expected 1`] = `
         href="#container-title-one"
       >
         <h2
-          className="txt-bold"
+          className="txt-bold unprose"
           id="container-title-one"
         >
           Container title one
@@ -24,29 +29,16 @@ exports[`examples-page Basic renders as expected 1`] = `
         </h2>
       </a>
       <div
-        className="grid grid--gut36"
+        className=""
       >
         <div
-          className="mb18 col col--12 col--4-ml"
+          className="mb18 border-b border--darken10"
         >
           <a
             className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
             href="path"
           >
-            <div
-              className="relative h120 mb6"
-            >
-              <div
-                className="relative h120 mb12"
-                style={
-                  Object {
-                    "backgroundImage": "url('./files/simple-map.png')",
-                    "backgroundPosition": "center",
-                    "backgroundSize": "100% auto",
-                  }
-                }
-              />
-            </div>
+            
             <div>
               
               <div
@@ -63,26 +55,13 @@ exports[`examples-page Basic renders as expected 1`] = `
           </a>
         </div>
         <div
-          className="mb18 col col--12 col--4-ml"
+          className="mb18 border-b border--darken10"
         >
           <a
             className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
             href="path"
           >
-            <div
-              className="relative h120 mb6"
-            >
-              <div
-                className="relative h120 mb12"
-                style={
-                  Object {
-                    "backgroundImage": "url('./files/simple-map.png')",
-                    "backgroundPosition": "center",
-                    "backgroundSize": "100% auto",
-                  }
-                }
-              />
-            </div>
+            
             <div>
               
               <div
@@ -108,7 +87,7 @@ exports[`examples-page Basic renders as expected 1`] = `
         href="#container-title-two"
       >
         <h2
-          className="txt-bold"
+          className="txt-bold unprose"
           id="container-title-two"
         >
           Container title two
@@ -123,29 +102,16 @@ exports[`examples-page Basic renders as expected 1`] = `
         </h2>
       </a>
       <div
-        className="grid grid--gut36"
+        className=""
       >
         <div
-          className="mb18 col col--12 col--4-ml"
+          className="mb18 border-b border--darken10"
         >
           <a
             className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
             href="path"
           >
-            <div
-              className="relative h120 mb6"
-            >
-              <div
-                className="relative h120 mb12"
-                style={
-                  Object {
-                    "backgroundImage": "url('./files/simple-map.png')",
-                    "backgroundPosition": "center",
-                    "backgroundSize": "100% auto",
-                  }
-                }
-              />
-            </div>
+            
             <div>
               
               <div
@@ -162,26 +128,13 @@ exports[`examples-page Basic renders as expected 1`] = `
           </a>
         </div>
         <div
-          className="mb18 col col--12 col--4-ml"
+          className="mb18 border-b border--darken10"
         >
           <a
             className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
             href="path"
           >
-            <div
-              className="relative h120 mb6"
-            >
-              <div
-                className="relative h120 mb12"
-                style={
-                  Object {
-                    "backgroundImage": "url('./files/simple-map.png')",
-                    "backgroundPosition": "center",
-                    "backgroundSize": "100% auto",
-                  }
-                }
-              />
-            </div>
+            
             <div>
               
               <div
@@ -198,26 +151,13 @@ exports[`examples-page Basic renders as expected 1`] = `
           </a>
         </div>
         <div
-          className="mb18 col col--12 col--4-ml"
+          className="mb18 border-b border--darken10"
         >
           <a
             className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
             href="path"
           >
-            <div
-              className="relative h120 mb6"
-            >
-              <div
-                className="relative h120 mb12"
-                style={
-                  Object {
-                    "backgroundImage": "url('./files/simple-map.png')",
-                    "backgroundPosition": "center",
-                    "backgroundSize": "100% auto",
-                  }
-                }
-              />
-            </div>
+            
             <div>
               
               <div
@@ -239,8 +179,9 @@ exports[`examples-page Basic renders as expected 1`] = `
 </div>
 `;
 
-exports[`examples-page Cards with no images and full-width renders as expected 1`] = `
+exports[`examples-page No intro text renders as expected 1`] = `
 <div>
+  
   <div>
     <div>
       <a
@@ -248,7 +189,7 @@ exports[`examples-page Cards with no images and full-width renders as expected 1
         href="#container-title-one"
       >
         <h2
-          className="txt-bold"
+          className="txt-bold unprose"
           id="container-title-one"
         >
           Container title one
@@ -321,7 +262,7 @@ exports[`examples-page Cards with no images and full-width renders as expected 1
         href="#container-title-two"
       >
         <h2
-          className="txt-bold"
+          className="txt-bold unprose"
           id="container-title-two"
         >
           Container title two

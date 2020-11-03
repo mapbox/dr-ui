@@ -19,13 +19,13 @@ describe('examples-page', () => {
     });
   });
 
-  describe(testCases.noThumbs.description, () => {
+  describe(testCases.customIntroText.description, () => {
     let testCase;
     let wrapper;
     let tree;
 
     beforeEach(() => {
-      testCase = testCases.noThumbs;
+      testCase = testCases.customIntroText;
       wrapper = renderer.create(
         React.createElement(testCase.component, testCase.props)
       );

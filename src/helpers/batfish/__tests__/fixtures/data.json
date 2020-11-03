@@ -213,9 +213,12 @@
         "contentType": "example",
         "navOrder": 4,
         "layout": "full",
-        "fullWidthCards": true,
-        "hideTitle": true,
-        "products": ["Documentation"]
+        "hideFeedback": true,
+        "products": ["Documentation"],
+        "prependJs": [
+          "import HelpPage from '../../../../src/components/help-page/help-page';",
+          "import data from '../../../../src/helpers/batfish/__tests__/fixtures/related-mts.json'"
+        ]
       }
     },
     {
