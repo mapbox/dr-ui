@@ -131,7 +131,7 @@ export default class LayoutExamples extends React.PureComponent {
         3: 'Advanced'
       };
       return (
-        <div className="mb6" data-swiftype-index="false">
+        <div className="mb6">
           <span
             id={`filter${title}`}
             className="inline-block txt-fancy txt-s txt-uppercase color-gray txt-spacing0 mr12"
@@ -153,7 +153,13 @@ export default class LayoutExamples extends React.PureComponent {
                     }
                   )}
                 >
-                  {label}{' '}
+                  <span
+                    className={classnames('', {
+                      'ml-neg6': isActive
+                    })}
+                  >
+                    {label}
+                  </span>
                   {isActive ? (
                     <span className="bg-lighten10 absolute top right bottom round-r flex-parent flex-parent--center-cross">
                       <Icon name="close" inline={true} size={14} />
@@ -179,7 +185,7 @@ export default class LayoutExamples extends React.PureComponent {
     };
 
     return (
-      <div className="mb36">
+      <div className="mb36" data-swiftype-index="false">
         <div className="mb12">
           {filters.topics && filters.topics.length > 1 && (
             <FilterSection

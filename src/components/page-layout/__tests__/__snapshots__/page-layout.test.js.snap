@@ -1085,13 +1085,13 @@ Array [
               <div>
                 <div
                   className="mb36"
+                  data-swiftype-index="false"
                 >
                   <div
                     className="mb12"
                   >
                     <div
                       className="mb6"
-                      data-swiftype-index="false"
                     >
                       <span
                         className="inline-block txt-fancy txt-s txt-uppercase color-gray txt-spacing0 mr12"
@@ -1103,16 +1103,22 @@ Array [
                         className="btn mr6 btn--s round flex-parent-inline flex-parent--center-cross relative"
                         onClick={[Function]}
                       >
-                        Cool
-                         
+                        <span
+                          className=""
+                        >
+                          Cool
+                        </span>
                         
                       </button>
                       <button
                         className="btn mr6 btn--s round flex-parent-inline flex-parent--center-cross relative"
                         onClick={[Function]}
                       >
-                        Awesome
-                         
+                        <span
+                          className=""
+                        >
+                          Awesome
+                        </span>
                         
                       </button>
                     </div>
