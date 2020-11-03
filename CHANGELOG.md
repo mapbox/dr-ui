@@ -13,6 +13,7 @@
 - Update `docs-prose.css`.
   - You can now use `.unprose` class on `#docs-content h2` elements to remove the styling.
   - Add `sticky-mxl` and `scroll-auto-mxl` classes to enable a sticky position and scrolling on displays >= 1200 pixels.
+- 🚨 Rename `ExamplePage` component to `HelpPage` to better reflect that the component will display tutorial and troubleshooting page cards for Help pages.
 
 ## 1.3.0
 
