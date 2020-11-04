@@ -53,11 +53,12 @@ export default class NavigationAccordion extends React.PureComponent {
     const { navigation, parentPage, location } = this.props;
     const activeItem = location.pathname;
     const items = navigation.map((pageSection) => {
-      const { title, path, pages } = pageSection;
+      const { title, path, pages, hideSubpages } = pageSection;
+      const hasPages = pages && pages.length > 1 && !hideSubpages;
       return {
-        header: this.renderHeader(path, title, pages && pages.length > 1),
+        header: this.renderHeader(path, title, hasPages),
         body:
-          path === parentPage && pages.length > 1
+          path === parentPage && hasPages
             ? this.renderBody(pages, activeItem)
             : []
       };
@@ -85,6 +86,7 @@ NavigationAccordion.propTypes = {
     PropTypes.shape({
       title: PropTypes.string.isRequired,
       path: PropTypes.string.isRequired,
+      hideSubpages: PropTypes.bool, // needed for /help/tutorials and /help/troublehshooting
       pages: PropTypes.array
     })
   ).isRequired,

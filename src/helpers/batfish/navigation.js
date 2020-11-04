@@ -59,6 +59,7 @@ function organizePages(pages) {
     obj[parent.path] = {
       navOrder: parent.navOrder,
       title: parent.title,
+      ...(parent.hideSubpages && { hideSubpages: parent.hideSubpages }),
       pages: findChildren(pages, parent)
     };
     return obj;
@@ -82,6 +83,9 @@ function formatPages(siteBasePath, data, sections) {
       ...(sections && { section: findSection(siteBasePath, p, sections) }),
       ...(p.frontMatter.splitPage && { splitPage: p.frontMatter.splitPage }),
       ...(p.frontMatter.splitPages && { splitPages: p.frontMatter.splitPages }),
+      ...(p.frontMatter.hideSubpages && {
+        hideSubpages: p.frontMatter.hideSubpages
+      }),
       ...(p.frontMatter.hideFromNav && {
         hideFromNav: p.frontMatter.hideFromNav
       })
