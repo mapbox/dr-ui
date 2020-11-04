@@ -15,7 +15,7 @@ Array [
         className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml "
       >
         <div
-          className="sticky-mm"
+          className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm"
           data-swiftype-index="false"
           id="dr-ui--page-layout-sidebar"
           style={
@@ -434,7 +434,7 @@ Array [
         className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml undefined"
       >
         <div
-          className="sticky-mm"
+          className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm"
           data-swiftype-index="false"
           id="dr-ui--page-layout-sidebar"
           style={
@@ -1029,7 +1029,7 @@ Array [
         className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml undefined"
       >
         <div
-          className="sticky-mm"
+          className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm"
           data-swiftype-index="false"
           id="dr-ui--page-layout-sidebar"
           style={
@@ -1347,7 +1347,7 @@ Array [
         className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml "
       >
         <div
-          className="sticky-mm"
+          className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm"
           data-swiftype-index="false"
           id="dr-ui--page-layout-sidebar"
           style={
@@ -1740,7 +1740,7 @@ Array [
         className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml "
       >
         <div
-          className="sticky-mm"
+          className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm"
           data-swiftype-index="false"
           id="dr-ui--page-layout-sidebar"
           style={
@@ -2101,7 +2101,7 @@ Array [
         className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml undefined"
       >
         <div
-          className="sticky-mm"
+          className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm"
           data-swiftype-index="false"
           id="dr-ui--page-layout-sidebar"
           style={

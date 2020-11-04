@@ -55,10 +55,14 @@ export default class PageLayout extends React.Component {
             }
           ]
         : []),
-      {
-        title: parent.title,
-        path: parent.parent
-      },
+      ...(parent && parent.title
+        ? [
+            {
+              title: parent.title,
+              path: parent.parent
+            }
+          ]
+        : []),
       {
         title: frontMatter.title,
         path: location.pathname
@@ -66,12 +70,14 @@ export default class PageLayout extends React.Component {
     ]);
     return (
       <div className="flex-child flex-child--grow">
-        <Breadcrumb
-          themeWrapper="none block-mm px24 pt12"
-          domain={false}
-          location={location}
-          links={crumbs}
-        />
+        {!frontMatter.hideBreadcrumbs && (
+          <Breadcrumb
+            themeWrapper="none block-mm px24 pt12"
+            domain={false}
+            location={location}
+            links={crumbs}
+          />
+        )}
 
         <Content
           {...this.props}
@@ -112,9 +118,11 @@ export default class PageLayout extends React.Component {
         {!noShellHeaderBuffer && <div className="shell-header-buffer" />}
         <div className="limiter limiter--wide">
           <div className="flex-parent-mm">
-            <ErrorBoundary>
-              {this.renderSidebar(config, switchedNavigation, parentPath)}
-            </ErrorBoundary>
+            {!frontMatter.hideSidebar && (
+              <ErrorBoundary>
+                {this.renderSidebar(config, switchedNavigation, parentPath)}
+              </ErrorBoundary>
+            )}
             <ErrorBoundary>
               {this.renderContent(
                 config,
@@ -185,6 +193,8 @@ PageLayout.propTypes = {
     hideFromNav: PropTypes.bool,
     hideCardLanguage: PropTypes.bool,
     hideCardDescription: PropTypes.bool,
+    hideBreadcrumbs: PropTypes.bool,
+    hideSidebar: PropTypes.bool,
     title: PropTypes.string
   }).isRequired,
   /**

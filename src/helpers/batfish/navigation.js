@@ -127,6 +127,7 @@ function buildNavTabs(organized) {
           (f) =>
             f.path !== tab.path &&
             f.layout === 'page' &&
+            !f.navOrder &&
             !f.hideFromNav &&
             !f.splitPage
         )

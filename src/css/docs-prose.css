@@ -22,8 +22,8 @@
   margin: 36px 0px 18px;
 }
 
-#docs-content .prose h3,
-#docs-content.prose h3 {
+#docs-content .prose h3:not(.unprose),
+#docs-content.prose h3:not(.unprose) {
   font-weight: normal;
   font-size: 24px;
 }

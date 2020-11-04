@@ -33,7 +33,7 @@ export default class Sidebar extends React.Component {
       <div
         data-swiftype-index="false"
         id="dr-ui--page-layout-sidebar"
-        className="sticky-mm"
+        className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm"
         style={{ top: '10px' }}
       >
         <div className="my12 border-b border--darken10 pb12">
