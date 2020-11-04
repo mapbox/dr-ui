@@ -4,6 +4,7 @@ import classnames from 'classnames';
 import LayoutExamples from './layouts/example/content.js';
 import OnThisPage from '../../on-this-page/on-this-page';
 import Feedback from '../../feedback/feedback';
+import OverviewHeader from '../../overview-header/overview-header';
 
 export default class Content extends React.Component {
   renderExamplesIndex = () => {
@@ -61,7 +62,13 @@ export default class Content extends React.Component {
 
   render() {
     const { children, frontMatter, layoutConfig } = this.props;
-    const { title, unProse, hideFeedback, layout } = frontMatter;
+    const {
+      title,
+      unProse,
+      hideFeedback,
+      layout,
+      overviewHeader
+    } = frontMatter;
     const { hideTitle, showCards, sidebar } = layoutConfig;
     return (
       <div
@@ -81,6 +88,7 @@ export default class Content extends React.Component {
             <h1 className="txt-fancy">{title}</h1>
           </div>
         )}
+        {overviewHeader && <OverviewHeader {...overviewHeader} />}
 
         <div className="grid grid--gut60">
           {(layoutConfig.aside !== 'none' || this.props.customAside) && (
@@ -120,7 +128,8 @@ Content.propTypes = {
     unProse: PropTypes.bool,
     hideFeedback: PropTypes.bool,
     headings: PropTypes.array,
-    layout: PropTypes.string
+    layout: PropTypes.string,
+    overviewHeader: PropTypes.object
   }).isRequired,
   headings: PropTypes.array,
   location: PropTypes.object.isRequired,

@@ -2,7 +2,7 @@
 
 exports[`overview-header Adds Contact Us button renders as expected 1`] = `
 <div
-  className="scroll-hidden border-b border--gray-light prose mb24"
+  className="dr-ui--overview-header border-b border--darken10 prose mb24 pr60-mxl"
 >
   <h1
     className="mb6 txt-fancy"
@@ -10,13 +10,17 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
     Mapbox SDK for Breakfast
   </h1>
   <div
-    className="relative"
+    className="flex-parent"
   >
     <div
-      className="pr12-ml mr240-ml mr0"
+      className="flex-child flex-child--grow"
     >
-      <p>
-        <span>
+      <div
+        className="mb12"
+      >
+        <span
+          className="inline-block mr6"
+        >
           Current version: 
           <code>
             v
@@ -29,7 +33,7 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
         >
           View changelog
         </a>
-      </p>
+      </div>
       <ul
         className="mb24"
         style={
@@ -138,12 +142,15 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="none block-ml w240 absolute right top"
+      className="flex-child-ml flex-child--no-shrink w300-mxl"
     >
-      <img
-        height={300}
-        src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
-      />
+      <div
+        className="none block-mxl"
+      >
+        <img
+          src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -151,7 +158,7 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
 
 exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
 <div
-  className="scroll-hidden border-b border--gray-light prose mb24"
+  className="dr-ui--overview-header border-b border--darken10 prose mb24 pr60-mxl"
 >
   <h1
     className="mb6 txt-fancy"
@@ -159,13 +166,17 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
     Mapbox SDK for Breakfast
   </h1>
   <div
-    className="relative"
+    className="flex-parent"
   >
     <div
-      className="pr12-ml mr240-ml mr0"
+      className="flex-child flex-child--grow"
     >
-      <p>
-        <span>
+      <div
+        className="mb12"
+      >
+        <span
+          className="inline-block mr6"
+        >
           Current version: 
           <code>
             v
@@ -178,7 +189,7 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
         >
           View changelog
         </a>
-      </p>
+      </div>
       <ul
         className="mb24"
         style={
@@ -327,12 +338,15 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="none block-ml w240 absolute right top"
+      className="flex-child-ml flex-child--no-shrink w300-mxl"
     >
-      <img
-        height={300}
-        src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
-      />
+      <div
+        className="none block-mxl"
+      >
+        <img
+          src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -340,7 +354,7 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
 
 exports[`overview-header Basic renders as expected 1`] = `
 <div
-  className="scroll-hidden border-b border--gray-light prose mb24"
+  className="dr-ui--overview-header border-b border--darken10 prose mb24 pr60-mxl"
 >
   <h1
     className="mb6 txt-fancy"
@@ -348,13 +362,17 @@ exports[`overview-header Basic renders as expected 1`] = `
     Mapbox SDK for Breakfast
   </h1>
   <div
-    className="relative"
+    className="flex-parent"
   >
     <div
-      className="pr12-ml mr240-ml mr0"
+      className="flex-child flex-child--grow"
     >
-      <p>
-        <span>
+      <div
+        className="mb12"
+      >
+        <span
+          className="inline-block mr6"
+        >
           Current version: 
           <code>
             v
@@ -367,7 +385,7 @@ exports[`overview-header Basic renders as expected 1`] = `
         >
           View changelog
         </a>
-      </p>
+      </div>
       <ul
         className="mb24"
         style={
@@ -510,12 +528,15 @@ exports[`overview-header Basic renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="none block-ml w240 absolute right top"
+      className="flex-child-ml flex-child--no-shrink w300-mxl"
     >
-      <img
-        height={300}
-        src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
-      />
+      <div
+        className="none block-mxl"
+      >
+        <img
+          src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -523,60 +544,59 @@ exports[`overview-header Basic renders as expected 1`] = `
 
 exports[`overview-header Beta product renders as expected 1`] = `
 <div
-  className="scroll-hidden border-b border--gray-light prose mb24"
+  className="dr-ui--overview-header border-b border--darken10 prose mb24 pr60-mxl"
 >
   <h1
     className="mb6 txt-fancy"
   >
     Mapbox Potato SDK
-    <span
-      className="ml12 inline-block relative"
-      style={
-        Object {
-          "top": "-7px",
-        }
-      }
-    >
-      <div
-        className="inline-block"
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-      >
-        <div
-          aria-describedby="tooltip-1"
-          className="txt-s txt-bold round px6 inline-block cursor-default border"
-          style={
-            Object {
-              "background": "#f1f3fd",
-              "borderColor": "#0428c8",
-              "color": "#0c248d",
-            }
-          }
-        >
-          Beta
-        </div>
-        <div
-          className="hide-visually"
-          id="tooltip-1"
-          role="tooltip"
-        >
-          <div
-            className="txt-s wmax120"
-          >
-            This feature is in public beta and is subject to changes.
-          </div>
-        </div>
-      </div>
-    </span>
   </h1>
   <div
-    className="relative"
+    className="flex-parent"
   >
     <div
-      className="pr12-ml mr240-ml mr0"
+      className="flex-child flex-child--grow"
     >
+      <div
+        className="mb12"
+      >
+        <span
+          className="mr6 inline-block"
+        >
+          <div
+            className="inline-block"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+          >
+            <div
+              aria-describedby="tooltip-1"
+              className="txt-s txt-bold round px6 inline-block cursor-default border"
+              style={
+                Object {
+                  "background": "#f1f3fd",
+                  "borderColor": "#0428c8",
+                  "color": "#0c248d",
+                }
+              }
+            >
+              Beta
+            </div>
+            <div
+              className="hide-visually"
+              id="tooltip-1"
+              role="tooltip"
+            >
+              <div
+                className="txt-s wmax120"
+              >
+                This feature is in public beta and is subject to changes.
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
       <ul
         className="mb24"
         style={
@@ -675,13 +695,15 @@ exports[`overview-header Beta product renders as expected 1`] = `
       </ul>
     </div>
     <div
-      className="none block-ml w240 absolute right top"
+      className="flex-child-ml flex-child--no-shrink w300-mxl"
     >
-      <img
-        height={499}
-        src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
-        width={800}
-      />
+      <div
+        className="none block-mxl"
+      >
+        <img
+          src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -689,7 +711,7 @@ exports[`overview-header Beta product renders as expected 1`] = `
 
 exports[`overview-header No optional props renders as expected 1`] = `
 <div
-  className="scroll-hidden border-b border--gray-light prose mb24"
+  className="dr-ui--overview-header border-b border--darken10 prose mb24 pr60-mxl"
 >
   <h1
     className="mb6 txt-fancy"
@@ -697,10 +719,10 @@ exports[`overview-header No optional props renders as expected 1`] = `
     Mapbox SDK that You've Never Heard Of
   </h1>
   <div
-    className="relative"
+    className="flex-parent"
   >
     <div
-      className="pr12-ml mr240-ml mr0"
+      className="flex-child flex-child--grow"
     >
       <ul
         className="mb24"
@@ -858,13 +880,15 @@ exports[`overview-header No optional props renders as expected 1`] = `
       </ul>
     </div>
     <div
-      className="none block-ml w240 absolute right top"
+      className="flex-child-ml flex-child--no-shrink w300-mxl"
     >
-      <img
-        height={499}
-        src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
-        width={800}
-      />
+      <div
+        className="none block-mxl"
+      >
+        <img
+          src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -872,7 +896,7 @@ exports[`overview-header No optional props renders as expected 1`] = `
 
 exports[`overview-header Some optional props renders as expected 1`] = `
 <div
-  className="scroll-hidden border-b border--gray-light prose mb24"
+  className="dr-ui--overview-header border-b border--darken10 prose mb24 pr60-mxl"
 >
   <h1
     className="mb6 txt-fancy"
@@ -880,13 +904,17 @@ exports[`overview-header Some optional props renders as expected 1`] = `
     Mapbox SDK for Breakfast
   </h1>
   <div
-    className="relative"
+    className="flex-parent"
   >
     <div
-      className="pr12-ml mr240-ml mr0"
+      className="flex-child flex-child--grow"
     >
-      <p>
-        <span>
+      <div
+        className="mb12"
+      >
+        <span
+          className="inline-block mr6"
+        >
           Current version: 
           <code>
             v
@@ -894,7 +922,7 @@ exports[`overview-header Some optional props renders as expected 1`] = `
           </code>
            
         </span>
-      </p>
+      </div>
       <ul
         className="mb24"
         style={
@@ -1031,12 +1059,15 @@ exports[`overview-header Some optional props renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="none block-ml w240 absolute right top"
+      className="flex-child-ml flex-child--no-shrink w300-mxl"
     >
-      <img
-        height={300}
-        src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
-      />
+      <div
+        className="none block-mxl"
+      >
+        <img
+          src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
+        />
+      </div>
     </div>
   </div>
 </div>

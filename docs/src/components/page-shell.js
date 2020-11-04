@@ -8,6 +8,7 @@ import constants from '../constants';
 import categories from '../categories.json';
 
 const slug = (string) => string.toLowerCase();
+const { version } = require('../../../package.json');
 
 const componentHeadings = Object.keys(categories).reduce((arr, category) => {
   arr.push({
@@ -37,7 +38,13 @@ class PageShell extends React.Component {
         frontMatter={{
           ...frontMatter,
           ...(location.pathname === '/dr-ui/components/' && {
-            headings: componentHeadings
+            headings: componentHeadings,
+            // handle dynamic values in OverviewHeader
+            overviewHeader: {
+              ...frontMatter.overviewHeader,
+              version: version,
+              image: <img src="/img/documentation-astronaut.png" alt="" />
+            }
           })
         }}
         location={location}
