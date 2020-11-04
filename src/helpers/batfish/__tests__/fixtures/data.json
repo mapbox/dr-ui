@@ -15,9 +15,6 @@
         "layout": "page",
         "contentType": "reference",
         "products": ["Documentation"],
-        "hideSubItems": false,
-        "showCards": false,
-        "includeFilterBar": true,
         "hideTitle": true,
         "unProse": true,
         "prependJs": [
@@ -226,22 +223,33 @@
       }
     },
     {
-      "filePath": "./docs/src/pages/help/index.md",
-      "path": "/dr-ui/help/",
+      "filePath": "./docs/src/pages/index.js",
+      "path": "/dr-ui/",
+      "frontMatter": {}
+    },
+    {
+      "filePath": "./docs/src/pages/troubleshooting/index.md",
+      "path": "/dr-ui/troubleshooting/",
       "frontMatter": {
-        "title": "Help",
+        "title": "Troubleshooting",
         "description": "Example of a Help page.",
         "contentType": "example",
-        "navOrder": 4,
-        "layout": "exampleIndex",
-        "fullWidthCards": true,
+        "navOrder": 5,
+        "layout": "full",
         "products": ["Documentation"]
       }
     },
     {
-      "filePath": "./docs/src/pages/index.js",
-      "path": "/dr-ui/",
-      "frontMatter": {}
+      "filePath": "./docs/src/pages/tutorials/index.md",
+      "path": "/dr-ui/tutorials/",
+      "frontMatter": {
+        "title": "Tutorials",
+        "description": "Example of a Help page.",
+        "contentType": "example",
+        "navOrder": 4,
+        "layout": "full",
+        "products": ["Documentation"]
+      }
     },
     {
       "filePath": "./node_modules/@mapbox/batfish/dist/webpack/default-not-found.js",

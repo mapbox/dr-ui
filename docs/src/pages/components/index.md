@@ -6,9 +6,6 @@ layout: page
 contentType: reference
 products:
   - Documentation
-hideSubItems: false
-showCards: false
-includeFilterBar: true
 hideTitle: true
 unProse: true
 prependJs:

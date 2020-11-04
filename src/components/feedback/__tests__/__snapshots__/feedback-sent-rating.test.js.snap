@@ -12,7 +12,7 @@ exports[`Feedback character limit Character limit ok, user can submit feedback 1
   >
     <AsideHeading>
       <h2
-        className="unprose txt-h4 txt-fancy mb12"
+        className="unprose txt-m txt-bold mb6"
       >
         Thanks for your feedback.
       </h2>
@@ -115,7 +115,7 @@ exports[`Feedback character limit Character limit too long, user cannot submit f
   >
     <AsideHeading>
       <h2
-        className="unprose txt-h4 txt-fancy mb12"
+        className="unprose txt-m txt-bold mb6"
       >
         Thanks for your feedback.
       </h2>

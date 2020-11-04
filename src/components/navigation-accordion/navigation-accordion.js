@@ -11,7 +11,7 @@ export default class NavigationAccordion extends React.PureComponent {
       <a
         href={href}
         className={classnames(
-          'px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover',
+          'px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover color-darken75',
           {
             'bg-blue-faint color-blue': isActive,
             '': !isActive,
@@ -73,7 +73,7 @@ export default class NavigationAccordion extends React.PureComponent {
     });
 
     return (
-      <nav className="ml-neg12">
+      <nav className="mx-neg12">
         <ul>{sidebarItems}</ul>
       </nav>
     );

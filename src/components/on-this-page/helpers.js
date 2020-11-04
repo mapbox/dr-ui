@@ -82,7 +82,7 @@ export function getActiveHeaderAnchor(topOffset) {
 export class AsideHeading extends React.PureComponent {
   render() {
     return (
-      <h2 id={this.props.id} className="unprose txt-h4 txt-fancy mb12">
+      <h2 id={this.props.id} className="unprose txt-m txt-bold mb6">
         {this.props.children}
       </h2>
     );

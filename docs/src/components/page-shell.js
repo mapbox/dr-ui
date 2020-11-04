@@ -36,7 +36,7 @@ class PageShell extends React.Component {
         headings={headings}
         frontMatter={{
           ...frontMatter,
-          ...(location.pathname === '/dr-ui/' && {
+          ...(location.pathname === '/dr-ui/components/' && {
             headings: componentHeadings
           })
         }}

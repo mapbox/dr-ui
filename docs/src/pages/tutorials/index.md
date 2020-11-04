@@ -1,10 +1,9 @@
 ---
-title: Help
+title: Tutorials
 description: Example of a Help page.
 contentType: example
 navOrder: 4
-layout: exampleIndex
-fullWidthCards: true
+layout: full
 products:
   - Documentation
 # data lives in ./src/helpers/batfish/__tests__/fixtures/related-mts.json
