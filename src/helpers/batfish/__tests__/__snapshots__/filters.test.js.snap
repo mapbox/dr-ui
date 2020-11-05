@@ -326,7 +326,7 @@ Object {
       },
       Object {
         "contentType": "example",
-        "description": "Another example.",
+        "description": "This is another example.",
         "language": Array [
           "JavaScript",
         ],

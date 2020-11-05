@@ -1,6 +1,6 @@
 ---
 title: Another example
-description: Another example.
+description: This is another example.
 contentType: example
 language:
   - JavaScript
