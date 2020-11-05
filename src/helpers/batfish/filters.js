@@ -103,5 +103,8 @@ function pageSorter(pages) {
 module.exports = {
   buildFilters,
   pageSorter,
-  generateTopics
+  generateTopics,
+  generateLevels,
+  combineArrays,
+  hasTopic
 };
