@@ -241,7 +241,7 @@ PageLayout.propTypes = {
       pages: PropTypes.array,
       languages: PropTypes.array,
       levels: PropTypes.array,
-      videos: PropTypes.array
+      videos: PropTypes.bool
     })
   ),
   /**

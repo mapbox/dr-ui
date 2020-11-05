@@ -1094,33 +1094,53 @@ Array [
                       className="mb6"
                     >
                       <div
-                        className="txt-fancy txt-s txt-uppercase color-gray txt-spacing0 mr12"
-                        id="filterTopics"
+                        className="relative flex-parent"
                       >
-                        Topics
+                        <div>
+                          <label
+                            className="inline-block txt-fancy txt-s color-gray txt-uppercase w70"
+                            htmlFor="topic"
+                          >
+                            Topics
+                             
+                          </label>
+                        </div>
+                        <div
+                          className="select-container flex-child ml12"
+                        >
+                          <select
+                            aria-required={true}
+                            className="select select select--s"
+                            data-test="topic-select"
+                            disabled={false}
+                            id="topic"
+                            onChange={[Function]}
+                            value=""
+                          >
+                            <option
+                              value=""
+                            >
+                              All topics
+                            </option>
+                            <option
+                              value="Cool"
+                            >
+                              Cool
+                            </option>
+                            <option
+                              value="Awesome"
+                            >
+                              Awesome
+                            </option>
+                          </select>
+                          <div
+                            className="select-arrow"
+                          />
+                        </div>
+                        <div
+                          role="alert"
+                        />
                       </div>
-                      <button
-                        className="btn mr6 mb6 btn--s btn--gray round flex-parent-inline flex-parent--center-cross relative"
-                        onClick={[Function]}
-                      >
-                        <span
-                          className=""
-                        >
-                          Cool
-                        </span>
-                        
-                      </button>
-                      <button
-                        className="btn mr6 mb6 btn--s btn--gray round flex-parent-inline flex-parent--center-cross relative"
-                        onClick={[Function]}
-                      >
-                        <span
-                          className=""
-                        >
-                          Awesome
-                        </span>
-                        
-                      </button>
                     </div>
                   </div>
                   

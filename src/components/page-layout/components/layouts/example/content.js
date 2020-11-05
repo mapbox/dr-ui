@@ -3,20 +3,27 @@ import PropTypes from 'prop-types';
 import CardContainer from '../../../../card-container/card-container';
 import Card from '../../../../card/card';
 import ControlSwitch from '@mapbox/mr-ui/control-switch';
-import Icon from '@mapbox/mr-ui/icon';
-import classnames from 'classnames';
+import ControlSelect from '@mapbox/mr-ui/control-select';
 
 export default class LayoutExamples extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      activeTopic: undefined,
-      activeLanguage: undefined,
-      activeLevel: undefined,
-      activeVideo: false,
-      activeProduct: undefined
+      topic: undefined,
+      language: undefined,
+      level: undefined,
+      videos: false,
+      product: undefined
     };
   }
+
+  handleInput = (value, id) => {
+    const obj = {};
+    obj[id] = value;
+    this.setState(obj, () => {
+      this.setQueryString(id, value);
+    });
+  };
 
   componentDidMount() {
     const { filters } = this.props;
@@ -24,26 +31,15 @@ export default class LayoutExamples extends React.PureComponent {
     if ('URLSearchParams' in window) {
       const query = new URLSearchParams(window.location.search);
       if (query.get('topic')) {
-        this.setStateIfValid(
-          query.get('topic'),
-          filters.topics,
-          'activeTopic',
-          'topic'
-        );
+        this.setStateIfValid(query.get('topic'), filters.topics, 'topic');
       }
       if (query.get('product')) {
-        this.setStateIfValid(
-          query.get('product'),
-          filters.products,
-          'activeProduct',
-          'product'
-        );
+        this.setStateIfValid(query.get('product'), filters.products, 'product');
       }
       if (query.get('language')) {
         this.setStateIfValid(
           query.get('language'),
           filters.languages,
-          'activeLanguage',
           'language'
         );
       }
@@ -51,31 +47,25 @@ export default class LayoutExamples extends React.PureComponent {
         this.setStateIfValid(
           parseInt(query.get('level')),
           filters.levels,
-          'activeLevel',
           'level'
         );
       }
       if (query.get('videos')) {
-        this.setStateIfValid(
-          query.get('videos') === 'true',
-          [true],
-          'activeVideo',
-          'videos'
-        );
+        this.setStateIfValid(query.get('videos') === 'true', [true], 'videos');
       }
     }
   }
 
   // make sure query value is valid before setting the state
-  setStateIfValid = (value, options, stateName, queryParam) => {
+  setStateIfValid = (value, options, id) => {
     // if query string value is valid, set the state
     if (options.indexOf(value) > -1) {
       const obj = {};
-      obj[stateName] = value;
+      obj[id] = value;
       this.setState(obj);
     } else {
       // otherwise remove the query string
-      this.setQueryString(queryParam, undefined);
+      this.setQueryString(id, undefined);
     }
   };
 
@@ -93,80 +83,15 @@ export default class LayoutExamples extends React.PureComponent {
     }
   };
 
-  // handle state and query string for "topic"
-  handleTopic = (topic) => {
-    const value = topic === this.state.activeTopic ? undefined : topic;
-    this.setState(
-      {
-        activeTopic: value
-      },
-      () => {
-        this.setQueryString('topic', value);
-      }
-    );
-  };
-
-  // handle state and query string for "product"
-  handleProduct = (product) => {
-    const value = product === this.state.activeProduct ? undefined : product;
-    this.setState(
-      {
-        activeProduct: value
-      },
-      () => {
-        this.setQueryString('product', value);
-      }
-    );
-  };
-
-  // handle state and query string for "language"
-  handleLanguage = (language) => {
-    const value = language === this.state.activeLanguage ? undefined : language;
-    this.setState(
-      {
-        activeLanguage: value
-      },
-      () => {
-        this.setQueryString('language', value);
-      }
-    );
-  };
-
-  // handle state and query string for "level"
-  handleLevel = (level) => {
-    const value = level === this.state.activeLevel ? undefined : level;
-    this.setState(
-      {
-        activeLevel: value
-      },
-      () => {
-        this.setQueryString('level', value);
-      }
-    );
-  };
-
-  // handle state and query string for "videos"
-  handleVideos = (bool) => {
-    const value = bool === this.state.activeVideo ? false : bool;
-    this.setState(
-      {
-        activeVideo: value
-      },
-      () => {
-        this.setQueryString('videos', value);
-      }
-    );
-  };
-
   // reset filters and remove query string parameters
   handleReset = () => {
     this.setState(
       {
-        activeTopic: undefined,
-        activeLanguage: undefined,
-        activeLevel: undefined,
-        activeVideo: false,
-        activeProduct: undefined
+        topic: undefined,
+        language: undefined,
+        level: undefined,
+        videos: false,
+        product: undefined
       },
       () => {
         // remove all query params
@@ -178,75 +103,51 @@ export default class LayoutExamples extends React.PureComponent {
   // build filters
   renderFilters = (resultsLength) => {
     const { filters } = this.props;
-    const {
-      activeTopic,
-      activeLanguage,
-      activeLevel,
-      activeVideo,
-      activeProduct
-    } = this.state;
+    const { topic, language, level, videos, product } = this.state;
 
-    const FilterSection = ({ title, data, activeItem, handler, isSwitch }) => {
+    const FilterSection = ({ title, data, activeItem, isSwitch, id }) => {
       const levelMap = {
         1: 'Beginner',
         2: 'Intermediate',
         3: 'Advanced'
       };
+      const themeLabel = 'txt-fancy txt-s color-gray txt-uppercase';
       return (
         <div className="mb6">
-          <div
-            id={`filter${title}`}
-            className={classnames(
-              'txt-fancy txt-s txt-uppercase color-gray txt-spacing0 mr12',
-              {
-                'inline-block': title === 'Videos'
-              }
-            )}
-          >
-            {title}
-          </div>
-          {!isSwitch &&
-            data.map((item) => {
-              const label = title === 'Levels' ? levelMap[item] : item;
-              const isActive = activeItem === item;
-              return (
-                <button
-                  key={item}
-                  onClick={() => handler(item)}
-                  className={classnames(
-                    'btn mr6 mb6 btn--s btn--gray round flex-parent-inline flex-parent--center-cross relative',
-                    {
-                      'is-active pr18': isActive
-                    }
-                  )}
-                >
-                  <span
-                    className={classnames('', {
-                      'ml-neg6': isActive
-                    })}
-                  >
-                    {label}
-                  </span>
-                  {isActive ? (
-                    <span className="bg-lighten10 absolute top right bottom round-r flex-parent flex-parent--center-cross">
-                      <Icon name="close" inline={true} size={14} />
-                    </span>
-                  ) : (
-                    ''
-                  )}
-                </button>
-              );
-            })}
-          {isSwitch && (
-            <div className="inline-block relative" style={{ top: '4px' }}>
-              <ControlSwitch
-                id={title}
-                value={activeItem}
-                themeControlSwitch="switch--s-label switch--gray"
-                aria-labelledby={`filter${title}`}
-                onChange={(value) => handler(value)}
-              />
-            </div>
+          {isSwitch ? (
+            <ControlSwitch
+              id={id}
+              value={activeItem}
+              label={title}
+              themeLabel={`${themeLabel} ml12`}
+              themeControlSwitch="switch--s-label switch--gray"
+              aria-labelledby={`filter${title}`}
+              onChange={(value, id) => this.handleInput(value, id)}
+            />
+          ) : (
+            <ControlSelect
+              id={id}
+              label={title}
+              value={activeItem}
+              themeLabel={`${themeLabel} w70`}
+              themeControlSelect="select select--s"
+              themeControlSelectContainer="flex-child ml12"
+              themeControlWrapper="flex-parent"
+              onChange={(value, id) => {
+                this.handleInput(value, id);
+              }}
+              options={[
+                {
+                  label: `All ${title.toLowerCase()}`,
+                  value: ''
+                }
+              ].concat(
+                data.map((datum) => ({
+                  label: title === 'Levels' ? levelMap[datum] : datum,
+                  value: datum
+                }))
+              )}
+            />
           )}
         </div>
       );
@@ -259,48 +160,44 @@ export default class LayoutExamples extends React.PureComponent {
             <FilterSection
               title="Products"
               data={filters.products}
-              activeItem={activeProduct}
-              handler={this.handleProduct}
+              id="product"
+              activeItem={product}
             />
           )}
           {filters.topics && filters.topics.length > 1 && (
             <FilterSection
               title="Topics"
               data={filters.topics}
-              activeItem={activeTopic}
-              handler={this.handleTopic}
+              id="topic"
+              activeItem={topic}
             />
           )}
           {filters.languages && filters.languages.length > 1 && (
             <FilterSection
               title="Languages"
               data={filters.languages}
-              activeItem={activeLanguage}
-              handler={this.handleLanguage}
+              id="language"
+              activeItem={language}
             />
           )}
           {filters.levels && filters.levels.length > 1 && (
             <FilterSection
               title="Levels"
               data={filters.levels}
-              activeItem={activeLevel}
-              handler={this.handleLevel}
+              id="level"
+              activeItem={level}
             />
           )}
           {filters.videos && (
             <FilterSection
-              title="Videos"
-              activeItem={activeVideo}
-              handler={this.handleVideos}
+              title="Videos only"
+              id="videos"
+              activeItem={videos}
               isSwitch={true}
             />
           )}
         </div>
-        {activeTopic ||
-        activeLanguage ||
-        activeLevel ||
-        activeVideo ||
-        activeProduct ? (
+        {topic || language || level || videos || product ? (
           <div className="">
             <div className="inline-block mr12 color-gray">
               {resultsLength === 0
@@ -358,34 +255,26 @@ export default class LayoutExamples extends React.PureComponent {
   // filter available pages based on active filters
   filterPages = () => {
     const { filters } = this.props;
-    const {
-      activeTopic,
-      activeLanguage,
-      activeLevel,
-      activeVideo,
-      activeProduct
-    } = this.state;
+    const { topic, language, level, videos, product } = this.state;
 
     let filteredPages = filters.pages;
 
-    if (activeTopic)
+    if (topic)
+      filteredPages = filteredPages.filter((f) => f.topics.indexOf(topic) > -1);
+
+    if (product)
       filteredPages = filteredPages.filter(
-        (f) => f.topics.indexOf(activeTopic) > -1
+        (f) => f.products.indexOf(product) > -1
+      );
+    if (language)
+      filteredPages = filteredPages.filter(
+        (f) => f.language.indexOf(language) > -1
       );
 
-    if (activeProduct)
-      filteredPages = filteredPages.filter(
-        (f) => f.products.indexOf(activeProduct) > -1
-      );
-    if (activeLanguage)
-      filteredPages = filteredPages.filter(
-        (f) => f.language.indexOf(activeLanguage) > -1
-      );
+    if (level)
+      filteredPages = filteredPages.filter((f) => f.level === parseInt(level));
 
-    if (activeLevel)
-      filteredPages = filteredPages.filter((f) => f.level === activeLevel);
-
-    if (activeVideo) filteredPages = filteredPages.filter((f) => f.video);
+    if (videos) filteredPages = filteredPages.filter((f) => f.video);
     return filteredPages;
   };
 
@@ -440,7 +329,7 @@ LayoutExamples.propTypes = {
     topics: PropTypes.array,
     languages: PropTypes.array,
     levels: PropTypes.array,
-    videos: PropTypes.array,
+    videos: PropTypes.bool,
     products: PropTypes.array,
     pages: PropTypes.arrayOf(
       PropTypes.shape({
@@ -450,7 +339,8 @@ LayoutExamples.propTypes = {
         thumbnail: PropTypes.string,
         level: PropTypes.number,
         language: PropTypes.array,
-        products: PropTypes.array
+        products: PropTypes.array,
+        video: PropTypes.bool
       })
     ).isRequired
   }),
