@@ -117,58 +117,8 @@ export default class ExampleIndex extends React.PureComponent {
     const { filters, frontMatter } = this.props;
     const { topic, language, level, videos, product } = this.state;
 
-    const FilterSection = ({ title, data, activeItem, isSwitch, id }) => {
-      const levelMap = {
-        1: 'Beginner',
-        2: 'Intermediate',
-        3: 'Advanced'
-      };
-      const themeLabel = 'txt-s txt-bold color-gray';
-      return (
-        <div
-          className={classnames('', {
-            mt12: isSwitch,
-            mb6: !isSwitch
-          })}
-        >
-          {isSwitch ? (
-            <ControlSwitch
-              id={id}
-              value={activeItem}
-              label={title}
-              themeLabel={`${themeLabel} ml6`}
-              themeControlSwitch="switch--s-label switch--gray"
-              onChange={(value, id) => this.handleInput(value, id)}
-            />
-          ) : (
-            <ControlSelect
-              id={id}
-              label={title}
-              value={activeItem}
-              themeLabel={`${themeLabel} w70`}
-              themeControlSelect="select select--s"
-              onChange={(value, id) => {
-                this.handleInput(value, id);
-              }}
-              options={[
-                {
-                  label: `All ${title.toLowerCase()}`,
-                  value: ''
-                }
-              ].concat(
-                data.map((datum) => ({
-                  label: title === 'Levels' ? levelMap[datum] : datum,
-                  value: datum
-                }))
-              )}
-            />
-          )}
-        </div>
-      );
-    };
-
-    return (
-      <div>
+    return frontMatter.showFilters.length > 1 ? (
+      <div className="mb18 mb0-mxl">
         <AsideHeading>Filters</AsideHeading>
 
         {filters.products &&
@@ -179,6 +129,7 @@ export default class ExampleIndex extends React.PureComponent {
               data={filters.products}
               id="product"
               activeItem={product}
+              handleInput={this.handleInput}
             />
           )}
         {filters.topics &&
@@ -189,6 +140,7 @@ export default class ExampleIndex extends React.PureComponent {
               data={filters.topics}
               id="topic"
               activeItem={topic}
+              handleInput={this.handleInput}
             />
           )}
         {filters.languages &&
@@ -199,6 +151,7 @@ export default class ExampleIndex extends React.PureComponent {
               data={filters.languages}
               id="language"
               activeItem={language}
+              handleInput={this.handleInput}
             />
           )}
         {filters.levels &&
@@ -209,6 +162,7 @@ export default class ExampleIndex extends React.PureComponent {
               data={filters.levels}
               id="level"
               activeItem={level}
+              handleInput={this.handleInput}
             />
           )}
         {filters.videos && frontMatter.showFilters.indexOf('videos') > -1 && (
@@ -217,9 +171,12 @@ export default class ExampleIndex extends React.PureComponent {
             id="videos"
             activeItem={videos}
             isSwitch={true}
+            handleInput={this.handleInput}
           />
         )}
       </div>
+    ) : (
+      ''
     );
   };
 
@@ -262,22 +219,29 @@ export default class ExampleIndex extends React.PureComponent {
 
     let filteredPages = filters.pages;
 
-    if (topic)
+    if (topic) {
       filteredPages = filteredPages.filter((f) => f.topics.indexOf(topic) > -1);
+    }
 
-    if (product)
+    if (product) {
       filteredPages = filteredPages.filter(
         (f) => f.products.indexOf(product) > -1
       );
-    if (language)
+    }
+
+    if (language) {
       filteredPages = filteredPages.filter(
         (f) => f.language.indexOf(language) > -1
       );
+    }
 
-    if (level)
+    if (level) {
       filteredPages = filteredPages.filter((f) => f.level === parseInt(level));
+    }
 
-    if (videos) filteredPages = filteredPages.filter((f) => f.video);
+    if (videos) {
+      filteredPages = filteredPages.filter((f) => f.video);
+    }
     return filteredPages;
   };
 
@@ -285,6 +249,7 @@ export default class ExampleIndex extends React.PureComponent {
     const { frontMatter, AppropriateImage } = this.props;
     // set default filters
     if (!frontMatter.showFilters) frontMatter.showFilters = filterOptions;
+
     const {
       fullWidthCards,
       hideCardDescription,
@@ -294,10 +259,11 @@ export default class ExampleIndex extends React.PureComponent {
 
     const filteredPages = this.filterPages();
     const { topic, language, level, videos, product } = this.state;
+    const showResultIndicator = topic || language || level || videos || product;
     const resultsLength = filteredPages.length;
     return (
       <ContentWrapper {...this.props} customAside={this.renderFilters()}>
-        {topic || language || level || videos || product ? (
+        {showResultIndicator && (
           <div className="mb18">
             <div className="inline-block mr12 color-gray">
               {resultsLength === 0
@@ -313,10 +279,8 @@ export default class ExampleIndex extends React.PureComponent {
               Reset filters
             </button>
           </div>
-        ) : (
-          ''
         )}
-        {filteredPages.length > 0 && (
+        {resultsLength > 0 && (
           <CardContainer
             cardColSize={cardColSize}
             fullWidthCards={fullWidthCards ? fullWidthCards : false} // default is false
@@ -378,4 +342,66 @@ ExampleIndex.propTypes = {
     showFilters: PropTypes.arrayOf(filterOptions)
   }).isRequired,
   AppropriateImage: PropTypes.func
+};
+
+class FilterSection extends React.PureComponent {
+  render() {
+    const { title, data, activeItem, isSwitch, id, handleInput } = this.props;
+    const levelMap = {
+      1: 'Beginner',
+      2: 'Intermediate',
+      3: 'Advanced'
+    };
+    const themeLabel = 'txt-s txt-bold color-darken75';
+    return (
+      <div
+        className={classnames('', {
+          mt12: isSwitch,
+          mb6: !isSwitch
+        })}
+      >
+        {isSwitch ? (
+          <ControlSwitch
+            id={id}
+            value={activeItem}
+            label={title}
+            themeLabel={`${themeLabel} ml6`}
+            themeControlSwitch="switch--s-label switch--gray"
+            onChange={(value, id) => handleInput(value, id)}
+          />
+        ) : (
+          <ControlSelect
+            id={id}
+            label={title}
+            value={activeItem}
+            themeLabel={`${themeLabel} w70`}
+            themeControlSelect="select select--s"
+            onChange={(value, id) => {
+              handleInput(value, id);
+            }}
+            options={[
+              {
+                label: `All ${title.toLowerCase()}`,
+                value: ''
+              }
+            ].concat(
+              data.map((datum) => ({
+                label: title === 'Levels' ? levelMap[datum] : datum,
+                value: datum
+              }))
+            )}
+          />
+        )}
+      </div>
+    );
+  }
+}
+
+FilterSection.propTypes = {
+  title: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  handleInput: PropTypes.func.isRequired,
+  data: PropTypes.array,
+  activeItem: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  isSwitch: PropTypes.bool
 };
