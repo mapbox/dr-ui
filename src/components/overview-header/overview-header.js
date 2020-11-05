@@ -17,18 +17,15 @@ class OverviewHeader extends React.PureComponent {
       <a href={props.changelogLink}>View changelog</a>
     );
 
-    const tag = props.tag && this.buildTag();
-
-    if (!versionEl && !changelogLinkEl && !tag) {
+    if (!versionEl && !changelogLinkEl) {
       return null;
     }
 
     return (
-      <div className="mb12">
-        {tag}
+      <p>
         {versionEl}
         {changelogLinkEl}
-      </div>
+      </p>
     );
   }
 
@@ -85,7 +82,7 @@ class OverviewHeader extends React.PureComponent {
     };
     if (!tag) return null;
     return (
-      <span className="mr6 inline-block">
+      <span className="ml12 inline-block relative" style={{ top: '-7px' }}>
         <Tag {...tagProps} />
       </span>
     );
@@ -107,7 +104,10 @@ class OverviewHeader extends React.PureComponent {
 
     return (
       <div className="dr-ui--overview-header border-b border--darken10 prose mb24 pr60-mxl">
-        <h1 className="mb6 txt-fancy">{props.title}</h1>
+        <h1 className="mb6 txt-fancy">
+          {props.title}
+          {props.tag && this.buildTag(props)}
+        </h1>
         <div className="flex-parent">
           <div className="flex-child flex-child--grow">
             {this.renderVersion()}
