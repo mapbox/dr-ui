@@ -53,7 +53,7 @@ function generateLevels(pages) {
 
 // creates an array of unique topic(s) and sorts them
 function generateTopics(pages) {
-  return [
+  const topics = [
     ...new Set(
       pages.reduce((arr, page) => {
         if (page.topics) arr = arr.concat(page.topics);
@@ -62,6 +62,10 @@ function generateTopics(pages) {
       }, [])
     )
   ].sort();
+  // check if "Getting started" topic exists
+  const index = topics.indexOf('Getting started');
+  // if "Getting started" exists, splice the array, and move "Getting started" to the front of the list
+  return index > -1 ? [...topics.splice(index, 1), ...topics] : topics;
 }
 
 function hasTopic(page, topic) {
@@ -98,5 +102,6 @@ function pageSorter(pages) {
 
 module.exports = {
   buildFilters,
-  pageSorter
+  pageSorter,
+  generateTopics
 };

@@ -348,8 +348,8 @@ Object {
       "Mapbox Tiling Service",
     ],
     "topics": Array [
-      "Geocoding",
       "Getting started",
+      "Geocoding",
       "Navigation",
     ],
     "videos": true,

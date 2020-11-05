@@ -1,5 +1,5 @@
 const { buildFilters } = require('../index.js');
-const { pageSorter } = require('../filters.js');
+const { pageSorter, generateTopics } = require('../filters.js');
 const data = require('./fixtures/data.json');
 const dataMulti = require('./fixtures/data-multi.json');
 
@@ -10,6 +10,40 @@ describe('buildFilters', () => {
 
   it('multi structure', () => {
     expect(buildFilters(dataMulti)).toMatchSnapshot();
+  });
+});
+
+describe('generateTopics', () => {
+  it('works', () => {
+    expect(
+      generateTopics([
+        {
+          topic: 'Carrot'
+        },
+        {
+          topics: ['Carrot', 'Radish']
+        },
+        {
+          topics: ['Getting started', 'Cucumber']
+        },
+        {
+          topic: 'Getting started'
+        }
+      ])
+    ).toEqual(['Getting started', 'Carrot', 'Cucumber', 'Radish']);
+    expect(
+      generateTopics([
+        {
+          topic: 'Carrot'
+        },
+        {
+          topics: ['Carrot', 'Radish']
+        },
+        {
+          topics: ['Cucumber']
+        }
+      ])
+    ).toEqual(['Carrot', 'Cucumber', 'Radish']);
   });
 });
 
