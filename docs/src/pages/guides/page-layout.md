@@ -76,6 +76,43 @@ In most cases, you can use Batfish helpers to automatically generate this datase
 - [topics](/dr-ui/guides/batfish-helpers/#topics)
 - [navigation](/dr-ui/guides/batfish-helpers/#navigation)
 
+## Overview header
+
+The main page for each docs site displays the [`OverviewHeader`](/dr-ui/#overviewheader) to orient the user to the product.
+
+To add `OverviewHeader` to your page, pass the props of the component in the frontMatter under `overviewHeader`.
+
+```yaml
+overviewHeader:
+  title: 'Dr. UI'
+  features:
+    - 'React components to build documentation sites'
+    - 'Support for IE 11 and all modern browsers'
+  changelogLink: /dr-ui/changelog/
+  installLink: https://github.com/mapbox/dr-ui/blob/main/README.md
+  ghLink: https://github.com/mapbox/dr-ui
+```
+
+To include dynamic variables, such as `version` or use the `AppropriateImage` component for the value of `image`, update the `frontMatter` prop in site's `PageLayout` component (found in `page-shell.js`).
+
+The following example is the value of the `frontMatter` prop which overrides the values of `version` and `image` in the `overviewHeader` frontMatter prop object:
+
+```js
+{
+  ...frontMatter,
+  ...frontMatter.overviewHeader && {
+      overviewHeader: {
+        ...frontMatter.overviewHeader,
+        version: myVariable,
+        image: <AppropriateImage id="documentation-astronaut" />
+      }
+    }
+  })
+}
+```
+
+This technique may also be used by multi-structured sites, although you'll need to add logic to help determine which version constant to use.
+
 ## Multi-structured sites
 
 Most docs.mapbox.com sites use a single structure, which means it documents a single product. But [iOS](https://docs.mapbox.com/ios/maps/overview/) and [Android](https://docs.mapbox.com/android/maps/overview/) use a multi-structure to document maps, navigation, and search.

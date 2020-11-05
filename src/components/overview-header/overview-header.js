@@ -8,7 +8,7 @@ class OverviewHeader extends React.PureComponent {
     const { props } = this;
 
     const versionEl = props.version !== undefined && (
-      <span>
+      <span className="inline-block mr6">
         Current version: <code>v{props.version}</code>{' '}
       </span>
     );
@@ -74,18 +74,11 @@ class OverviewHeader extends React.PureComponent {
     );
   }
 
-  buildTag = (item) => {
+  buildTag = () => {
+    const { tag, customTagProps } = this.props;
     const tagProps = {
-      theme: item.tag,
-      customLabel: item.customTagProps
-        ? item.customTagProps.customLabel
-        : undefined,
-      customTooltipText: item.customTagProps
-        ? item.customTagProps.customTooltipText
-        : undefined,
-      customStyles: item.customTagProps
-        ? item.customTagProps.customStyles
-        : undefined
+      theme: tag,
+      ...customTagProps
     };
     return (
       <span className="ml12 inline-block relative" style={{ top: '-7px' }}>
@@ -109,22 +102,24 @@ class OverviewHeader extends React.PureComponent {
     });
 
     return (
-      <div className="scroll-hidden border-b border--gray-light prose mb24">
+      <div className="dr-ui--overview-header border-b border--darken10 prose mb24 pr60-mxl">
         <h1 className="mb6 txt-fancy">
           {props.title}
           {props.tag && this.buildTag(props)}
         </h1>
-        <div className="relative">
-          <div className="pr12-ml mr240-ml mr0">
+        <div className="flex-parent">
+          <div className="flex-child flex-child--grow">
             {this.renderVersion()}
             <ul className="mb24" style={{ listStyle: 'none' }}>
               {featuresList}
             </ul>
             {this.renderFooter()}
           </div>
-          <div className="none block-ml w240 absolute right top">
-            {props.image}
-          </div>
+          {props.image && (
+            <div className="flex-child-ml flex-child--no-shrink w300-mxl">
+              <div className="none block-mxl">{props.image}</div>
+            </div>
+          )}
         </div>
       </div>
     );
@@ -132,7 +127,9 @@ class OverviewHeader extends React.PureComponent {
 }
 
 OverviewHeader.propTypes = {
+  /** features of the product */
   features: PropTypes.arrayOf(PropTypes.string).isRequired,
+  /** title of the product */
   title: PropTypes.string.isRequired,
   tag: PropTypes.oneOf(['legacy', 'beta', 'fundamentals', 'new', 'custom']),
   /* Required if tag is set to `custom` */
@@ -145,12 +142,18 @@ OverviewHeader.propTypes = {
       borderColor: PropTypes.string.isRequired
     }).isRequired
   }),
-  image: PropTypes.node.isRequired,
+  /** image of the product */
+  image: PropTypes.node,
+  /** version number of the product */
   version: PropTypes.string,
-  changelogLink: PropTypes.string, // creates a "View changelog" link
-  installLink: PropTypes.string, // creates a "Install" button
-  ghLink: PropTypes.string, // creates a "Contribute on GitHub" link
-  contactLink: PropTypes.string // creates a "Contact us" button
+  /** creates a "View changelog" link */
+  changelogLink: PropTypes.string,
+  /** creates an "Install" button */
+  installLink: PropTypes.string,
+  /** creates a "Contribute on GitHub" link */
+  ghLink: PropTypes.string,
+  /** creates a "Contact us" button */
+  contactLink: PropTypes.string
 };
 
 export default OverviewHeader;

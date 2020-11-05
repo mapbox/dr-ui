@@ -22,11 +22,7 @@ testCases.none = {
     ],
     title: "Mapbox SDK that You've Never Heard Of",
     image: (
-      <img
-        width={800}
-        height={499}
-        src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
-      />
+      <img src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg" />
     )
   }
 };
@@ -40,10 +36,7 @@ testCases.some = {
     version: '0.1.0',
     ghLink: 'https://github.com/mapbox',
     image: (
-      <img
-        height={300}
-        src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
-      />
+      <img src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg" />
     )
   }
 };
@@ -56,11 +49,7 @@ testCases.beta = {
     title: 'Mapbox Potato SDK',
     tag: 'beta',
     image: (
-      <img
-        width={800}
-        height={499}
-        src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
-      />
+      <img src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg" />
     )
   }
 };
@@ -77,10 +66,7 @@ testCases.allContactUs = {
     ghLink: 'https://github.com/mapbox',
     contactLink: 'https://www.mapbox.com/contact/',
     image: (
-      <img
-        height={300}
-        src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
-      />
+      <img src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg" />
     )
   }
 };
@@ -95,10 +81,7 @@ testCases.contactUs = {
     changelogLink: 'https://keepachangelog.com/en/0.3.0/',
     contactLink: 'https://www.mapbox.com/contact/',
     image: (
-      <img
-        height={300}
-        src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
-      />
+      <img src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg" />
     )
   }
 };
@@ -120,11 +103,7 @@ testCases.customTag = {
       }
     },
     image: (
-      <img
-        width={800}
-        height={499}
-        src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
-      />
+      <img src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg" />
     )
   }
 };
