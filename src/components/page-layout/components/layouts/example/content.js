@@ -130,7 +130,6 @@ export default class LayoutExamples extends React.PureComponent {
               label={title}
               themeLabel={`${themeLabel} ml12`}
               themeControlSwitch="switch--s-label switch--gray"
-              aria-labelledby={`filter${title}`}
               onChange={(value, id) => this.handleInput(value, id)}
             />
           ) : (
