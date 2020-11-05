@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import CardContainer from '../../../../card-container/card-container';
-import Card from '../../../../card/card';
+import CardContainer from '../../card-container/card-container';
+import { AsideHeading } from '../../on-this-page/helpers';
+import Card from '../../card/card';
+import classnames from 'classnames';
 import ControlSwitch from '@mapbox/mr-ui/control-switch';
 import ControlSelect from '@mapbox/mr-ui/control-select';
+import { ContentWrapper } from './content';
 
 // options of frontMatter.showFilters
 export const filterOptions = [
@@ -14,7 +17,7 @@ export const filterOptions = [
   'videos'
 ];
 
-export default class LayoutExamples extends React.PureComponent {
+export default class ExampleIndex extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
@@ -110,7 +113,7 @@ export default class LayoutExamples extends React.PureComponent {
   };
 
   // build filters
-  renderFilters = (resultsLength) => {
+  renderFilters = () => {
     const { filters, frontMatter } = this.props;
     const { topic, language, level, videos, product } = this.state;
 
@@ -120,15 +123,20 @@ export default class LayoutExamples extends React.PureComponent {
         2: 'Intermediate',
         3: 'Advanced'
       };
-      const themeLabel = 'txt-fancy txt-s color-gray txt-uppercase';
+      const themeLabel = 'txt-s txt-bold color-gray';
       return (
-        <div className="mb6">
+        <div
+          className={classnames('', {
+            mt12: isSwitch,
+            mb6: !isSwitch
+          })}
+        >
           {isSwitch ? (
             <ControlSwitch
               id={id}
               value={activeItem}
               label={title}
-              themeLabel={`${themeLabel} ml12`}
+              themeLabel={`${themeLabel} ml6`}
               themeControlSwitch="switch--s-label switch--gray"
               onChange={(value, id) => this.handleInput(value, id)}
             />
@@ -139,8 +147,6 @@ export default class LayoutExamples extends React.PureComponent {
               value={activeItem}
               themeLabel={`${themeLabel} w70`}
               themeControlSelect="select select--s"
-              themeControlSelectContainer="flex-child ml12"
-              themeControlWrapper="flex-parent"
               onChange={(value, id) => {
                 this.handleInput(value, id);
               }}
@@ -162,75 +168,56 @@ export default class LayoutExamples extends React.PureComponent {
     };
 
     return (
-      <div className="mb36" data-swiftype-index="false">
-        <div className="mb12 border-b border--darken10 pb12">
-          {filters.products &&
-            filters.products.length > 1 &&
-            frontMatter.showFilters.indexOf('products') > -1 && (
-              <FilterSection
-                title="Products"
-                data={filters.products}
-                id="product"
-                activeItem={product}
-              />
-            )}
-          {filters.topics &&
-            filters.topics.length > 1 &&
-            frontMatter.showFilters.indexOf('topics') > -1 && (
-              <FilterSection
-                title="Topics"
-                data={filters.topics}
-                id="topic"
-                activeItem={topic}
-              />
-            )}
-          {filters.languages &&
-            filters.languages.length > 1 &&
-            frontMatter.showFilters.indexOf('languages') > -1 && (
-              <FilterSection
-                title="Languages"
-                data={filters.languages}
-                id="language"
-                activeItem={language}
-              />
-            )}
-          {filters.levels &&
-            filters.levels.length > 1 &&
-            frontMatter.showFilters.indexOf('levels') > -1 && (
-              <FilterSection
-                title="Levels"
-                data={filters.levels}
-                id="level"
-                activeItem={level}
-              />
-            )}
-          {filters.videos && frontMatter.showFilters.indexOf('videos') > -1 && (
+      <div>
+        <AsideHeading>Filters</AsideHeading>
+
+        {filters.products &&
+          filters.products.length > 1 &&
+          frontMatter.showFilters.indexOf('products') > -1 && (
             <FilterSection
-              title="Videos only"
-              id="videos"
-              activeItem={videos}
-              isSwitch={true}
+              title="Products"
+              data={filters.products}
+              id="product"
+              activeItem={product}
             />
           )}
-        </div>
-        {topic || language || level || videos || product ? (
-          <div className="">
-            <div className="inline-block mr12 color-gray">
-              {resultsLength === 0
-                ? 'No results found.'
-                : `Found ${resultsLength} result${
-                    resultsLength === 1 ? '' : 's'
-                  }.`}
-            </div>
-            <button
-              onClick={() => this.handleReset()}
-              className="btn btn--s btn--gray btn--stroke round"
-            >
-              Reset filters
-            </button>
-          </div>
-        ) : (
-          ''
+        {filters.topics &&
+          filters.topics.length > 1 &&
+          frontMatter.showFilters.indexOf('topics') > -1 && (
+            <FilterSection
+              title="Topics"
+              data={filters.topics}
+              id="topic"
+              activeItem={topic}
+            />
+          )}
+        {filters.languages &&
+          filters.languages.length > 1 &&
+          frontMatter.showFilters.indexOf('languages') > -1 && (
+            <FilterSection
+              title="Languages"
+              data={filters.languages}
+              id="language"
+              activeItem={language}
+            />
+          )}
+        {filters.levels &&
+          filters.levels.length > 1 &&
+          frontMatter.showFilters.indexOf('levels') > -1 && (
+            <FilterSection
+              title="Levels"
+              data={filters.levels}
+              id="level"
+              activeItem={level}
+            />
+          )}
+        {filters.videos && frontMatter.showFilters.indexOf('videos') > -1 && (
+          <FilterSection
+            title="Videos only"
+            id="videos"
+            activeItem={videos}
+            isSwitch={true}
+          />
         )}
       </div>
     );
@@ -306,10 +293,29 @@ export default class LayoutExamples extends React.PureComponent {
     } = frontMatter;
 
     const filteredPages = this.filterPages();
-
+    const { topic, language, level, videos, product } = this.state;
+    const resultsLength = filteredPages.length;
     return (
-      <div>
-        {this.renderFilters(filteredPages.length)}
+      <ContentWrapper {...this.props} customAside={this.renderFilters()}>
+        {topic || language || level || videos || product ? (
+          <div className="mb18">
+            <div className="inline-block mr12 color-gray">
+              {resultsLength === 0
+                ? 'No results found.'
+                : `Found ${resultsLength} result${
+                    resultsLength === 1 ? '' : 's'
+                  }.`}
+            </div>
+            <button
+              onClick={() => this.handleReset()}
+              className="btn btn--s btn--gray btn--stroke round"
+            >
+              Reset filters
+            </button>
+          </div>
+        ) : (
+          ''
+        )}
         {filteredPages.length > 0 && (
           <CardContainer
             cardColSize={cardColSize}
@@ -337,12 +343,12 @@ export default class LayoutExamples extends React.PureComponent {
             ))}
           />
         )}
-      </div>
+      </ContentWrapper>
     );
   }
 }
 
-LayoutExamples.propTypes = {
+ExampleIndex.propTypes = {
   filters: PropTypes.shape({
     topics: PropTypes.array,
     languages: PropTypes.array,
