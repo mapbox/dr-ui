@@ -169,5 +169,6 @@ function sortAlpha(arr) {
 module.exports = {
   buildNavigation,
   findSection,
-  accordionSorter
+  accordionSorter,
+  sortAlpha
 };

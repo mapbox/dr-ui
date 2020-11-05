@@ -13,7 +13,8 @@ export default class LayoutExamples extends React.PureComponent {
       activeTopic: undefined,
       activeLanguage: undefined,
       activeLevel: undefined,
-      activeVideo: false
+      activeVideo: false,
+      activeProduct: undefined
     };
   }
 
@@ -28,6 +29,14 @@ export default class LayoutExamples extends React.PureComponent {
           filters.topics,
           'activeTopic',
           'topic'
+        );
+      }
+      if (query.get('product')) {
+        this.setStateIfValid(
+          query.get('product'),
+          filters.products,
+          'activeProduct',
+          'product'
         );
       }
       if (query.get('language')) {
@@ -97,6 +106,19 @@ export default class LayoutExamples extends React.PureComponent {
     );
   };
 
+  // handle state and query string for "product"
+  handleProduct = (product) => {
+    const value = product === this.state.activeProduct ? undefined : product;
+    this.setState(
+      {
+        activeProduct: value
+      },
+      () => {
+        this.setQueryString('product', value);
+      }
+    );
+  };
+
   // handle state and query string for "language"
   handleLanguage = (language) => {
     const value = language === this.state.activeLanguage ? undefined : language;
@@ -143,7 +165,8 @@ export default class LayoutExamples extends React.PureComponent {
         activeTopic: undefined,
         activeLanguage: undefined,
         activeLevel: undefined,
-        activeVideo: false
+        activeVideo: false,
+        activeProduct: undefined
       },
       () => {
         // remove all query params
@@ -159,7 +182,8 @@ export default class LayoutExamples extends React.PureComponent {
       activeTopic,
       activeLanguage,
       activeLevel,
-      activeVideo
+      activeVideo,
+      activeProduct
     } = this.state;
 
     const FilterSection = ({ title, data, activeItem, handler, isSwitch }) => {
@@ -231,6 +255,14 @@ export default class LayoutExamples extends React.PureComponent {
     return (
       <div className="mb36" data-swiftype-index="false">
         <div className="mb12 border-b border--darken10 pb12">
+          {filters.products && filters.products.length > 1 && (
+            <FilterSection
+              title="Products"
+              data={filters.products}
+              activeItem={activeProduct}
+              handler={this.handleProduct}
+            />
+          )}
           {filters.topics && filters.topics.length > 1 && (
             <FilterSection
               title="Topics"
@@ -255,7 +287,7 @@ export default class LayoutExamples extends React.PureComponent {
               handler={this.handleLevel}
             />
           )}
-          {filters.videos && filters.videos.length > 0 && (
+          {filters.videos && (
             <FilterSection
               title="Videos"
               activeItem={activeVideo}
@@ -264,7 +296,11 @@ export default class LayoutExamples extends React.PureComponent {
             />
           )}
         </div>
-        {activeTopic || activeLanguage || activeLevel || activeVideo ? (
+        {activeTopic ||
+        activeLanguage ||
+        activeLevel ||
+        activeVideo ||
+        activeProduct ? (
           <div className="">
             <div className="inline-block mr12 color-gray">
               {resultsLength === 0
@@ -326,7 +362,8 @@ export default class LayoutExamples extends React.PureComponent {
       activeTopic,
       activeLanguage,
       activeLevel,
-      activeVideo
+      activeVideo,
+      activeProduct
     } = this.state;
 
     let filteredPages = filters.pages;
@@ -334,6 +371,11 @@ export default class LayoutExamples extends React.PureComponent {
     if (activeTopic)
       filteredPages = filteredPages.filter(
         (f) => f.topics.indexOf(activeTopic) > -1
+      );
+
+    if (activeProduct)
+      filteredPages = filteredPages.filter(
+        (f) => f.products.indexOf(activeProduct) > -1
       );
     if (activeLanguage)
       filteredPages = filteredPages.filter(
@@ -399,6 +441,7 @@ LayoutExamples.propTypes = {
     languages: PropTypes.array,
     levels: PropTypes.array,
     videos: PropTypes.array,
+    products: PropTypes.array,
     pages: PropTypes.arrayOf(
       PropTypes.shape({
         title: PropTypes.string,
@@ -406,7 +449,8 @@ LayoutExamples.propTypes = {
         path: PropTypes.string,
         thumbnail: PropTypes.string,
         level: PropTypes.number,
-        language: PropTypes.array
+        language: PropTypes.array,
+        products: PropTypes.array
       })
     ).isRequired
   }),
