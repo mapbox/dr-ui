@@ -8,23 +8,33 @@ export default class NavigationAccordion extends React.PureComponent {
     const { parentPage } = this.props;
     const isActive = parentPage === href;
     return (
-      <a
-        href={href}
+      <div
         className={classnames(
-          'px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover color-darken75',
+          'px12 py3 flex-parent txt-uppercase txt-fancy round-full w-full color-blue-on-hover color-darken75',
           {
             'bg-blue-faint color-blue': isActive,
-            '': !isActive,
             'flex-parent flex-parent--space-between-main': hasChildren
           }
         )}
-        style={{ letterSpacing: '0.025em' }}
       >
-        {label}
+        <a
+          href={href}
+          className="flex-child flex-child--grow"
+          style={{ letterSpacing: '0.025em' }}
+        >
+          {label}
+        </a>
         {hasChildren && (
-          <Icon name={isActive ? 'chevron-up' : 'chevron-down'} inline={true} />
+          <div className="flex-child flex-child--no-shrink">
+            <button>
+              <Icon
+                name={isActive ? 'chevron-up' : 'chevron-down'}
+                inline={true}
+              />
+            </button>
+          </div>
         )}
-      </a>
+      </div>
     );
   }
   renderBody(subItems, activeItem) {
