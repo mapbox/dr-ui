@@ -155,7 +155,8 @@
           "import Topbar from '../../../../src/components/page-layout/components/topbar.js';",
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
           "import constants from '../../constants.json';",
-          "import Note from '../../../../src/components/note';"
+          "import Note from '../../../../src/components/note';",
+          "import { filterOptions } from '../../../../src/components/page-layout/components/exampleIndex';"
         ]
       }
     },
