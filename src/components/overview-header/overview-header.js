@@ -80,7 +80,6 @@ class OverviewHeader extends React.PureComponent {
       theme: tag,
       ...customTagProps
     };
-    if (!tag) return null;
     return (
       <span className="ml12 inline-block relative" style={{ top: '-7px' }}>
         <Tag {...tagProps} />
