@@ -5,6 +5,15 @@ import Card from '../../../../card/card';
 import ControlSwitch from '@mapbox/mr-ui/control-switch';
 import ControlSelect from '@mapbox/mr-ui/control-select';
 
+// options of frontMatter.showFilters
+export const filterOptions = [
+  'products',
+  'topics',
+  'languages',
+  'levels',
+  'videos'
+];
+
 export default class LayoutExamples extends React.PureComponent {
   constructor(props) {
     super(props);
@@ -102,7 +111,7 @@ export default class LayoutExamples extends React.PureComponent {
 
   // build filters
   renderFilters = (resultsLength) => {
-    const { filters } = this.props;
+    const { filters, frontMatter } = this.props;
     const { topic, language, level, videos, product } = this.state;
 
     const FilterSection = ({ title, data, activeItem, isSwitch, id }) => {
@@ -156,39 +165,47 @@ export default class LayoutExamples extends React.PureComponent {
     return (
       <div className="mb36" data-swiftype-index="false">
         <div className="mb12 border-b border--darken10 pb12">
-          {filters.products && filters.products.length > 1 && (
-            <FilterSection
-              title="Products"
-              data={filters.products}
-              id="product"
-              activeItem={product}
-            />
-          )}
-          {filters.topics && filters.topics.length > 1 && (
-            <FilterSection
-              title="Topics"
-              data={filters.topics}
-              id="topic"
-              activeItem={topic}
-            />
-          )}
-          {filters.languages && filters.languages.length > 1 && (
-            <FilterSection
-              title="Languages"
-              data={filters.languages}
-              id="language"
-              activeItem={language}
-            />
-          )}
-          {filters.levels && filters.levels.length > 1 && (
-            <FilterSection
-              title="Levels"
-              data={filters.levels}
-              id="level"
-              activeItem={level}
-            />
-          )}
-          {filters.videos && (
+          {filters.products &&
+            filters.products.length > 1 &&
+            frontMatter.showFilters.indexOf('products') > -1 && (
+              <FilterSection
+                title="Products"
+                data={filters.products}
+                id="product"
+                activeItem={product}
+              />
+            )}
+          {filters.topics &&
+            filters.topics.length > 1 &&
+            frontMatter.showFilters.indexOf('topics') > -1 && (
+              <FilterSection
+                title="Topics"
+                data={filters.topics}
+                id="topic"
+                activeItem={topic}
+              />
+            )}
+          {filters.languages &&
+            filters.languages.length > 1 &&
+            frontMatter.showFilters.indexOf('languages') > -1 && (
+              <FilterSection
+                title="Languages"
+                data={filters.languages}
+                id="language"
+                activeItem={language}
+              />
+            )}
+          {filters.levels &&
+            filters.levels.length > 1 &&
+            frontMatter.showFilters.indexOf('levels') > -1 && (
+              <FilterSection
+                title="Levels"
+                data={filters.levels}
+                id="level"
+                activeItem={level}
+              />
+            )}
+          {filters.videos && frontMatter.showFilters.indexOf('videos') > -1 && (
             <FilterSection
               title="Videos only"
               id="videos"
@@ -280,6 +297,8 @@ export default class LayoutExamples extends React.PureComponent {
 
   render() {
     const { frontMatter, AppropriateImage } = this.props;
+    // set default filters
+    if (!frontMatter.showFilters) frontMatter.showFilters = filterOptions;
     const {
       fullWidthCards,
       hideCardDescription,
@@ -350,7 +369,8 @@ LayoutExamples.propTypes = {
     fullWidthCards: PropTypes.bool,
     hideCardDescription: PropTypes.bool,
     hideCardLanguage: PropTypes.bool,
-    cardColSize: PropTypes.number
+    cardColSize: PropTypes.number,
+    showFilters: PropTypes.arrayOf(filterOptions)
   }).isRequired,
   AppropriateImage: PropTypes.func
 };
