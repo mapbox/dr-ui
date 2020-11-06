@@ -14,19 +14,23 @@ export default class NavigationAccordion extends React.Component {
     };
   }
 
+  // add item or remove it if it already exists
   setToggle = (label) => {
     const { activeToggles } = this.state;
-    // add item or remove it if it already exists in activeToggles
-    if (activeToggles.indexOf(label) > -1)
-      activeToggles.splice(activeToggles.indexOf(label), 1);
-    else activeToggles.push(label);
+    const labelIndex = activeToggles.indexOf(label);
+    if (labelIndex > -1) {
+      // label already exists, remove it from activeToggles
+      activeToggles.splice(labelIndex, 1);
+    } else {
+      // label does not exist, add it to activeToggles
+      activeToggles.push(label);
+    }
     this.setState({ activeToggles: activeToggles });
   };
 
   componentDidMount() {
-    // if the component mounts on devices > 640 width
-    // determine which navTab is active
-    // and set that to the state to open subpages (if necessary)
+    // if device width is >= 640
+    // determine which section is active and activate its toggle
     const { parentPage, navigation } = this.props;
     if (isMM) {
       navigation.forEach((nav) => {
@@ -108,12 +112,14 @@ export default class NavigationAccordion extends React.Component {
   render() {
     const { navigation, parentPage, location } = this.props;
     const { activeToggles } = this.state;
-
     const activeItem = location.pathname;
     const items = navigation.map((pageSection) => {
       const { title, id, path, pages, hideSubpages } = pageSection;
+      // the section has sub pages
       const hasPages = pages && pages.length > 1 && !hideSubpages;
-      const showPages = activeToggles.indexOf(title) > -1;
+      // the section's toggle is active
+      const isActiveToggle = activeToggles.indexOf(title) > -1;
+      // the section is active
       const isActiveSection = path === parentPage;
       const sectionId = `menu-${id}`;
       return {
@@ -121,12 +127,12 @@ export default class NavigationAccordion extends React.Component {
           path,
           title,
           hasPages,
-          showPages,
+          isActiveToggle,
           isActiveSection,
           sectionId
         ),
         body:
-          showPages && hasPages
+          isActiveToggle && hasPages
             ? this.renderBody(pages, activeItem, sectionId)
             : []
       };
