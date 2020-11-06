@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const levels = {
+export const levels = {
   1: {
-    label: 'beginner',
+    label: 'Beginner',
     color: 'green'
   },
   2: {
-    label: 'intermediate',
+    label: 'Intermediate',
     color: 'orange'
   },
   3: {
-    label: 'advanced',
+    label: 'Advanced',
     color: 'red'
   }
 };
@@ -40,7 +40,7 @@ class LevelIndicator extends React.Component {
     return (
       <div className="flex-parent flex-parent--center-cross">
         {levelSquares}
-        <div className={`inline-block color-${levelColor} ml3 txt-capitalize`}>
+        <div className={`inline-block color-${levelColor} ml3`}>
           {levelLabel}
         </div>
       </div>

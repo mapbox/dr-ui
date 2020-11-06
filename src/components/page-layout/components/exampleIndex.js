@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import CardContainer from '../../card-container/card-container';
 import { AsideHeading } from '../../on-this-page/helpers';
 import Card from '../../card/card';
+import { levels } from '../../level-indicator/level-indicator';
 import classnames from 'classnames';
 import ControlSwitch from '@mapbox/mr-ui/control-switch';
 import ControlSelect from '@mapbox/mr-ui/control-select';
@@ -347,11 +348,6 @@ ExampleIndex.propTypes = {
 class FilterSection extends React.PureComponent {
   render() {
     const { title, data, activeItem, isSwitch, id, handleInput } = this.props;
-    const levelMap = {
-      1: 'Beginner',
-      2: 'Intermediate',
-      3: 'Advanced'
-    };
     const themeLabel = 'txt-s txt-bold color-darken75';
     return (
       <div
@@ -386,7 +382,7 @@ class FilterSection extends React.PureComponent {
               }
             ].concat(
               data.map((datum) => ({
-                label: title === 'Levels' ? levelMap[datum] : datum,
+                label: title === 'Levels' ? levels[datum].label : datum,
                 value: datum
               }))
             )}
