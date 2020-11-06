@@ -5,6 +5,7 @@ const testCases = {};
 const navigation = [
   {
     title: 'Overview',
+    id: 'overview',
     path: '/dr-ui/overview/',
     pages: [
       {
@@ -15,6 +16,7 @@ const navigation = [
   },
   {
     title: 'Examples',
+    id: 'examples',
     path: '/dr-ui/examples/',
     pages: [
       {
@@ -55,6 +57,7 @@ testCases.withTags = {
       {
         title: 'Title one',
         path: 'page-one',
+        id: 'title-one',
         pages: [
           {
             title: 'Heading one',
@@ -79,7 +82,8 @@ testCases.withTags = {
       {
         title: 'Title two',
         tag: 'beta',
-        path: 'page-two'
+        path: 'page-two',
+        id: 'page-two'
       }
     ]
   }

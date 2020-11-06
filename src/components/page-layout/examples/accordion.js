@@ -38,6 +38,7 @@ export default class Basic extends React.Component {
             {
               path: '/PageLayout/',
               title: 'Overview',
+              id: 'overview',
               pages: [
                 {
                   path: '/PageLayout/',
@@ -68,15 +69,18 @@ export default class Basic extends React.Component {
             },
             {
               path: '/PageLayout/specification/',
-              title: 'Specification'
+              title: 'Specification',
+              id: 'specification'
             },
             {
               path: '/PageLayout/examples/',
-              title: 'Examples'
+              title: 'Examples',
+              id: 'examples'
             },
             {
               path: '/PageLayout/demo/',
-              title: 'Demo'
+              title: 'Demo',
+              id: 'demo'
             }
           ]
         }}

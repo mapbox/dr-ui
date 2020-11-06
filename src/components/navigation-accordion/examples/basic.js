@@ -9,6 +9,7 @@ export default class Basic extends React.Component {
     const navigation = [
       {
         title: 'Overview',
+        id: 'overview',
         path: '/dr-ui/overview/',
         pages: [
           {
@@ -19,6 +20,7 @@ export default class Basic extends React.Component {
       },
       {
         title: 'Examples',
+        id: 'examples',
         path: '/dr-ui/examples/',
         pages: [
           {

@@ -33,7 +33,8 @@ export default class Basic extends React.Component {
           navTabs: [
             {
               title: 'Overview',
-              path: '/dr-ui/overview/'
+              path: '/dr-ui/overview/',
+              id: 'overview'
             }
           ]
         }}

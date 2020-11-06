@@ -1,5 +1,6 @@
 // creates a page hierarchy based on top navigation item (as dictated by frontMatter.navOrder)
 // see: https://mapbox.github.io/dr-ui/batfish-helpers/
+const slugify = require('slugify');
 
 function buildNavigation(siteBasePath, data, sections) {
   let obj = {};
@@ -119,6 +120,10 @@ function buildNavTabs(organized) {
     return {
       ...organized[path],
       title: organized[path].title,
+      id: slugify(organized[path].title, {
+        replacement: '-',
+        lower: true
+      }),
       path: path
     };
   });
