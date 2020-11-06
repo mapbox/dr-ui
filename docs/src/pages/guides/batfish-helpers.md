@@ -131,7 +131,7 @@ class PageShell extends React.Component {
   - Each object has a `pages` array of all sub pages to display. The `pages` array is ordered by the `order` frontMatter property and then alphabetically by `title`.
   - If available, the object may have a `levels` array, a unique list of levels options.
   - If available, the object may have a `languages` array, a unique list of language options.
-  - If available, the object may have `videos: true` to indicate that some of its sub pages have `video: true` in the frontMatter.
+  - If available, the object may have `videos: true` to show that one or more sub pages have `video: true` in the frontMatter.
 
 #### Sample
 
