@@ -3,6 +3,7 @@
 exports[`buildNavigation help glossary is sorted alphabetical 1`] = `
 Array [
   Object {
+    "id": "how-mapbox-works",
     "navOrder": 2,
     "pages": Array [
       Object {
@@ -94,6 +95,7 @@ Array [
     "title": "How Mapbox Works",
   },
   Object {
+    "id": "tutorials",
     "navOrder": 3,
     "pages": Array [
       Object {
@@ -496,6 +498,7 @@ Array [
     "title": "Tutorials",
   },
   Object {
+    "id": "troubleshooting",
     "navOrder": 4,
     "pages": Array [
       Object {
@@ -698,6 +701,7 @@ Array [
     "title": "Troubleshooting",
   },
   Object {
+    "id": "glossary",
     "navOrder": 5,
     "pages": Array [
       Object {
@@ -1230,6 +1234,7 @@ Object {
   },
   "navTabs": Array [
     Object {
+      "id": "top-page",
       "navOrder": 1,
       "pages": Array [
         Object {
@@ -1250,6 +1255,7 @@ Object {
   "beta/navigation": Object {
     "navTabs": Array [
       Object {
+        "id": "overview",
         "navOrder": 1,
         "pages": Array [
           Object {
@@ -1293,12 +1299,14 @@ Object {
         "title": "Overview",
       },
       Object {
+        "id": "specification",
         "navOrder": 2,
         "pages": Array [],
         "path": "/docs-starter-kit/beta/navigation/specification/",
         "title": "Specification",
       },
       Object {
+        "id": "examples",
         "navOrder": 3,
         "pages": Array [],
         "path": "/docs-starter-kit/beta/navigation/examples/",
@@ -1666,6 +1674,7 @@ Object {
   "maps": Object {
     "navTabs": Array [
       Object {
+        "id": "overview",
         "navOrder": 1,
         "pages": Array [
           Object {
@@ -1709,12 +1718,14 @@ Object {
         "title": "Overview",
       },
       Object {
+        "id": "specification",
         "navOrder": 2,
         "pages": Array [],
         "path": "/docs-starter-kit/maps/specification/",
         "title": "Specification",
       },
       Object {
+        "id": "examples",
         "navOrder": 3,
         "pages": Array [],
         "path": "/docs-starter-kit/maps/examples/",
@@ -1727,6 +1738,7 @@ Object {
   "navigation": Object {
     "navTabs": Array [
       Object {
+        "id": "overview",
         "navOrder": 1,
         "pages": Array [
           Object {
@@ -1770,12 +1782,14 @@ Object {
         "title": "Overview",
       },
       Object {
+        "id": "specification",
         "navOrder": 2,
         "pages": Array [],
         "path": "/docs-starter-kit/navigation/specification/",
         "title": "Specification",
       },
       Object {
+        "id": "examples",
         "navOrder": 3,
         "pages": Array [],
         "path": "/docs-starter-kit/navigation/examples/",
@@ -1788,6 +1802,7 @@ Object {
   "vision": Object {
     "navTabs": Array [
       Object {
+        "id": "overview",
         "navOrder": 1,
         "pages": Array [
           Object {
@@ -1831,12 +1846,14 @@ Object {
         "title": "Overview",
       },
       Object {
+        "id": "specification",
         "navOrder": 2,
         "pages": Array [],
         "path": "/docs-starter-kit/vision/specification/",
         "title": "Specification",
       },
       Object {
+        "id": "examples",
         "navOrder": 3,
         "pages": Array [],
         "path": "/docs-starter-kit/vision/examples/",
@@ -1911,12 +1928,14 @@ Object {
   },
   "navTabs": Array [
     Object {
+      "id": "components",
       "navOrder": 1,
       "pages": Array [],
       "path": "/dr-ui/components/",
       "title": "Components",
     },
     Object {
+      "id": "guides",
       "navOrder": 2,
       "pages": Array [
         Object {
@@ -1949,18 +1968,21 @@ Object {
       "title": "Guides",
     },
     Object {
+      "id": "examples",
       "navOrder": 3,
       "pages": Array [],
       "path": "/dr-ui/examples/",
       "title": "Examples",
     },
     Object {
+      "id": "tutorials",
       "navOrder": 4,
       "pages": Array [],
       "path": "/dr-ui/tutorials/",
       "title": "Tutorials",
     },
     Object {
+      "id": "troubleshooting",
       "navOrder": 5,
       "pages": Array [],
       "path": "/dr-ui/troubleshooting/",
