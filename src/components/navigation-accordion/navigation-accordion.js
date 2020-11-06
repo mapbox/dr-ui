@@ -67,7 +67,7 @@ export default class NavigationAccordion extends React.Component {
             className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
             onClick={() => this.setToggle(label)}
             aria-label={`Toggle ${label} menu`}
-            aria-controls={`${sectionId}-menu`}
+            aria-controls={sectionId}
             aria-expanded={isActiveToggle}
           >
             <Icon
@@ -82,7 +82,9 @@ export default class NavigationAccordion extends React.Component {
   renderBody(subItems, activeItem, sectionId) {
     const { parentPage } = this.props;
     const subItemEls = subItems
-      .filter((page) => page.path !== parentPage)
+      .filter((page) => {
+        return page.path !== parentPage;
+      })
       .map((page) => (
         <li className="mb3" key={page.title}>
           <a
@@ -97,7 +99,7 @@ export default class NavigationAccordion extends React.Component {
       ));
 
     return (
-      <ul id={`${sectionId}-menu`} className="mb12 ml12">
+      <ul id={sectionId} className="mb12 ml12">
         {subItemEls}
       </ul>
     );
@@ -113,6 +115,7 @@ export default class NavigationAccordion extends React.Component {
       const hasPages = pages && pages.length > 1 && !hideSubpages;
       const showPages = activeToggles.indexOf(title) > -1;
       const isActiveSection = path === parentPage;
+      const sectionId = `menu-${id}`;
       return {
         header: this.renderHeader(
           path,
@@ -120,10 +123,12 @@ export default class NavigationAccordion extends React.Component {
           hasPages,
           showPages,
           isActiveSection,
-          id
+          sectionId
         ),
         body:
-          showPages && hasPages ? this.renderBody(pages, activeItem, id) : []
+          showPages && hasPages
+            ? this.renderBody(pages, activeItem, sectionId)
+            : []
       };
     });
 

@@ -99,7 +99,7 @@ Array [
                     Overview
                   </a>
                   <button
-                    aria-controls="overview-menu"
+                    aria-controls="menu-overview"
                     aria-expanded={false}
                     aria-label="Toggle Overview menu"
                     className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
@@ -452,7 +452,7 @@ Array [
                     Overview
                   </a>
                   <button
-                    aria-controls="overview-menu"
+                    aria-controls="menu-overview"
                     aria-expanded={false}
                     aria-label="Toggle Overview menu"
                     className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
@@ -1037,7 +1037,7 @@ Array [
                     Overview
                   </a>
                   <button
-                    aria-controls="overview-menu"
+                    aria-controls="menu-overview"
                     aria-expanded={false}
                     aria-label="Toggle Overview menu"
                     className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
@@ -1345,7 +1345,7 @@ Array [
                     Overview
                   </a>
                   <button
-                    aria-controls="Overview-menu"
+                    aria-controls="menu-overview"
                     aria-expanded={false}
                     aria-label="Toggle Overview menu"
                     className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
@@ -1796,7 +1796,7 @@ Array [
                     Examples
                   </a>
                   <button
-                    aria-controls="undefined-menu"
+                    aria-controls="menu-examples"
                     aria-expanded={false}
                     aria-label="Toggle Examples menu"
                     className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"

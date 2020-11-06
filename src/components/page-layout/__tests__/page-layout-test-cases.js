@@ -68,6 +68,7 @@ testCases.hideSearch = {
           {
             path: '/PageLayout/',
             title: 'Overview',
+            id: 'overview',
             pages: [
               {
                 path: '/dr-ui/overview/permissions/',
@@ -77,11 +78,13 @@ testCases.hideSearch = {
           },
           {
             path: '/PageLayout/specification/',
-            title: 'Specification'
+            title: 'Specification',
+            id: 'specification'
           },
           {
             path: '/PageLayout/examples/',
             title: 'Examples',
+            id: 'examples',
             pages: [
               {
                 path: '/dr-ui/examples/basic/',

@@ -38,7 +38,7 @@ export default class Basic extends React.Component {
             {
               path: '/PageLayout/',
               title: 'Overview',
-              id: 'Overview',
+              id: 'overview',
               pages: [
                 {
                   path: '/PageLayout/specifications/',
