@@ -15,6 +15,13 @@ export default class Sidebar extends React.Component {
     } = this.props;
     const { SITE, BASEURL } = constants;
     const { title, tag, path, navTabs } = navigation;
+    // check if the site only has one page (one navTab with no sub pages)
+    const isSinglePageSite =
+      navigation &&
+      navTabs &&
+      navTabs.length < 2 &&
+      (navTabs[0].pages.length === 0 || !navTabs[0].pages);
+
     return (
       <div
         data-swiftype-index="false"
@@ -31,8 +38,9 @@ export default class Sidebar extends React.Component {
         </div>
         <div
           className={classnames('', {
-            // if there is only one navTab, hide the NavigationAccordion on mobile
-            'none block-mm': navigation && navTabs && navTabs.length < 2
+            // if there is only one navTab (with no sub pages)
+            // hide the NavigationAccordion on mobile
+            'none block-mm': isSinglePageSite
           })}
         >
           <NavigationAccordion
