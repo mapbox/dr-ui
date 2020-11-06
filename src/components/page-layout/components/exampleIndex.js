@@ -84,10 +84,15 @@ export default class ExampleIndex extends React.PureComponent {
 
   // set the query string or delete it if value is undefined
   setQueryString = (label, value) => {
+    // check if browser supports URLSearchParams API
     if ('URLSearchParams' in window) {
+      // get the current query params
       let searchParams = new URLSearchParams(window.location.search);
+      // if value exists, set new query param
       if (value) searchParams.set(label, value);
+      // otherwise remove the query param
       else searchParams.delete(label);
+      // update the url with the changed query params without reloading the page
       history.pushState(
         null,
         '',
