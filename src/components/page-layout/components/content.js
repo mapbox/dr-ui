@@ -16,6 +16,8 @@ export default class Content extends React.Component {
       AppropriateImage
     } = this.props;
     const { showCards } = layoutConfig;
+    // if showCards is true, use the ExampleIndex component
+    // else use the default content wrapper to display the content
     return showCards ? (
       <ExampleIndex
         {...this.props}
