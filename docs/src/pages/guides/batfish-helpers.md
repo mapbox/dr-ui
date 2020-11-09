@@ -86,7 +86,7 @@ class PageShell extends React.Component {
 
 ## Filters
 
-Given a group of `example` pages, the `filters` Batfish helper creates unique option lists for `topics`, `levels`, and `languages` required to power the filter feature for `exampleIndex` layout pages. It will also create an array of `videos` if any pages have `video: true` in the frontMatter.
+Given a group of `example` pages, the `filters` Batfish helper creates unique option lists for `products`, `topics`, `levels`, and `languages` required to power the filter feature for `exampleIndex` layout pages. It will also create an array of `videos` if any pages have `video: true` in the frontMatter.
 
 ### Arguments
 
@@ -124,11 +124,15 @@ class PageShell extends React.Component {
 ### Output
 
 - The shape of filters is an object, where the top-level keys are pathnames for `examplesIndex` pages.
+  - Each object has a `products` array, a unique list of products.
   - Each object has a `topics` array, a unique list of topics.
-  - Each objects has `pages` array of all sub pages to display. The `pages` array is ordered by the `order` frontMatter property and then alphabetically by title.
+  - Each object has a `pages` array of all sub pages to display. The pages array is sorted in the following order:
+    1. The "Getting started" topic(s), if it exists. This will make sure the examples on product pages show getting started examples first.
+    2. By `level`, if it exists. This will make sure that beginner level tutorials will appear first on the tutorials page.
+    3. All remaining pages are sorted alphabetically by title.
   - If available, the object may have a `levels` array, a unique list of levels options.
   - If available, the object may have a `languages` array, a unique list of language options.
-  - If available, the object may have a `videos` array, an array of all pages with `video: true` in the frontMatter.
+  - If available, the object may have `videos: true` to show that one or more sub pages have `video: true` in the frontMatter.
 
 #### Sample
 

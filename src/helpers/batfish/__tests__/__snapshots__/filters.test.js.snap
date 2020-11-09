@@ -52,11 +52,12 @@ Object {
         ],
       },
     ],
+    "products": Array [],
     "topics": Array [
       "Awesome",
       "Cool",
     ],
-    "videos": Array [],
+    "videos": false,
   },
   "/docs-starter-kit/maps/examples/": Object {
     "languages": Array [
@@ -108,11 +109,12 @@ Object {
         ],
       },
     ],
+    "products": Array [],
     "topics": Array [
       "Awesome",
       "Cool",
     ],
-    "videos": Array [],
+    "videos": false,
   },
   "/docs-starter-kit/navigation/examples/": Object {
     "languages": Array [
@@ -164,11 +166,12 @@ Object {
         ],
       },
     ],
+    "products": Array [],
     "topics": Array [
       "Awesome",
       "Cool",
     ],
-    "videos": Array [],
+    "videos": false,
   },
   "/docs-starter-kit/vision/examples/": Object {
     "languages": Array [
@@ -220,11 +223,12 @@ Object {
         ],
       },
     ],
+    "products": Array [],
     "topics": Array [
       "Awesome",
       "Cool",
     ],
-    "videos": Array [],
+    "videos": false,
   },
 }
 `;
@@ -243,6 +247,25 @@ Object {
       3,
     ],
     "pages": Array [
+      Object {
+        "contentType": "example",
+        "description": "Get started with this example.",
+        "language": Array [
+          "JavaScript",
+          "Kotlin",
+        ],
+        "layout": "example",
+        "path": "/dr-ui/examples/example-4/",
+        "products": Array [
+          "Documentation",
+          "Mapbox Tiling Service",
+        ],
+        "thumbnail": "header-image",
+        "title": "Quickstart",
+        "topics": Array [
+          "Getting started",
+        ],
+      },
       Object {
         "contentType": "example",
         "description": "This is example 1.",
@@ -301,34 +324,35 @@ Object {
           "Geocoding",
         ],
       },
-    ],
-    "topics": Array [
-      "Geocoding",
-      "Navigation",
-    ],
-    "videos": Array [
       Object {
         "contentType": "example",
-        "description": "This is example 1.",
+        "description": "This is another example.",
         "language": Array [
           "JavaScript",
-          "Kotlin",
         ],
         "layout": "example",
-        "level": 1,
-        "path": "/dr-ui/examples/example-1/",
+        "path": "/dr-ui/examples/example-5/",
         "products": Array [
           "Documentation",
           "Mapbox Tiling Service",
         ],
         "thumbnail": "header-image",
-        "title": "Example 1",
+        "title": "Another example",
         "topics": Array [
           "Navigation",
         ],
-        "video": true,
       },
     ],
+    "products": Array [
+      "Documentation",
+      "Mapbox Tiling Service",
+    ],
+    "topics": Array [
+      "Getting started",
+      "Geocoding",
+      "Navigation",
+    ],
+    "videos": true,
   },
 }
 `;

@@ -52,6 +52,34 @@
       }
     },
     {
+      "filePath": "./docs/src/pages/examples/example-4.md",
+      "path": "/dr-ui/examples/example-4/",
+      "frontMatter": {
+        "title": "Quickstart",
+        "description": "Get started with this example.",
+        "contentType": "example",
+        "language": ["JavaScript", "Kotlin"],
+        "topics": ["Getting started"],
+        "thumbnail": "header-image",
+        "layout": "example",
+        "products": ["Documentation", "Mapbox Tiling Service"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/examples/example-5.md",
+      "path": "/dr-ui/examples/example-5/",
+      "frontMatter": {
+        "title": "Another example",
+        "description": "This is another example.",
+        "contentType": "example",
+        "language": ["JavaScript"],
+        "topics": ["Navigation"],
+        "thumbnail": "header-image",
+        "layout": "example",
+        "products": ["Documentation", "Mapbox Tiling Service"]
+      }
+    },
+    {
       "filePath": "./docs/src/pages/examples/index.md",
       "path": "/dr-ui/examples/",
       "frontMatter": {
@@ -125,7 +153,8 @@
           "import Topbar from '../../../../src/components/page-layout/components/topbar.js';",
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
           "import constants from '../../constants.json';",
-          "import Note from '../../../../src/components/note';"
+          "import Note from '../../../../src/components/note';",
+          "import { filterOptions } from '../../../../src/components/page-layout/components/exampleIndex';"
         ]
       }
     },

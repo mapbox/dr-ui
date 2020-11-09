@@ -57,9 +57,9 @@ exports[`card Card with image renders as expected 1`] = `
             }
           />
           <div
-            className="inline-block color-orange ml3 txt-capitalize"
+            className="inline-block color-orange ml3"
           >
-            intermediate
+            Intermediate
           </div>
         </div>
       </div>
@@ -144,9 +144,9 @@ exports[`card Card with no image renders as expected 1`] = `
             }
           />
           <div
-            className="inline-block color-orange ml3 txt-capitalize"
+            className="inline-block color-orange ml3"
           >
-            intermediate
+            Intermediate
           </div>
         </div>
       </div>

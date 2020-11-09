@@ -16,6 +16,7 @@ prependJs:
   - "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line"
   - "import constants from '../../constants.json';"
   - "import Note from '../../../../src/components/note';"
+  - "import { filterOptions } from '../../../../src/components/page-layout/components/exampleIndex';"
 ---
 
 The [`PageLayout`](/dr-ui/#pagelayout) component is the main controller for building pages with Dr. UI and offers five layout options. `PageLayout` provides everything from the site's navigation, to the sidebar contents, and main content area. It also includes common components like Search and Feedback.
@@ -75,6 +76,20 @@ In most cases, you can use Batfish helpers to automatically generate this datase
 
 - [filters](/dr-ui/guides/batfish-helpers/#filters)
 - [navigation](/dr-ui/guides/batfish-helpers/#navigation)
+
+### Filters
+
+By default an `examplesIndex` layout page (or `example` layout with `navOrder`), will display the cards for all sub pages. Filters for products, topics, languages, levels, and videos will appear if the group of sub pages has at least two options for each filter category.
+
+If you would like to remove a filter from the `exampleIndex` page, use the `showFilters` frontMatter property to list the filters that you want. The following example will only show filters for products and levels:
+
+```yaml
+showFilters:
+  - products
+  - levels
+```
+
+Available values for `showFilters`: {{ filterOptions.join(', ') }}
 
 ## Multi-structured sites
 
