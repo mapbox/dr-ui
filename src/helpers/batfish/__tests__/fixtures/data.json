@@ -179,7 +179,6 @@
           "import LayoutUsage from '../../components/layout-usage.js';",
           "import frontmatter from '!raw-loader!../../components/snippets/frontmatter.js';// eslint-disable-line",
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
-          "import constants from '../../constants.json';",
           "import Note from '../../../../src/components/note';",
           "import { filterOptions } from '../../../../src/components/page-layout/components/example-index';"
         ]
