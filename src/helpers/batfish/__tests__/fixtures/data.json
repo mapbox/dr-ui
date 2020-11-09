@@ -105,9 +105,7 @@
         "prependJs": [
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
           "import topics from '@mapbox/batfish/data/filters'; // eslint-disable-line",
-          "import splitPages from '@mapbox/batfish/data/split-pages'; // eslint-disable-line",
-          "import relatedMts from '../../../../src/helpers/batfish/__tests__/fixtures/related-mts.json';",
-          "import relatedAndroid from '../../../../src/helpers/batfish/__tests__/fixtures/related-android.json';"
+          "import splitPages from '@mapbox/batfish/data/split-pages'; // eslint-disable-line"
         ]
       }
     },
@@ -242,9 +240,12 @@
         "contentType": "example",
         "navOrder": 4,
         "layout": "full",
-        "fullWidthCards": true,
-        "hideTitle": true,
-        "products": ["Documentation"]
+        "hideFeedback": true,
+        "products": ["Documentation"],
+        "prependJs": [
+          "import HelpPage from '../../../../src/components/help-page/help-page';",
+          "import data from '../../../../src/helpers/batfish/__tests__/fixtures/related-mts.json'"
+        ]
       }
     },
     {

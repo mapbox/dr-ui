@@ -29,7 +29,7 @@ class CardContainer extends React.PureComponent {
             href={props.path}
             className="unprose mb18 block color-blue-on-hover"
           >
-            <h2 className="txt-bold" id={props.path.split('#')[1]}>
+            <h2 className="txt-bold unprose" id={props.path.split('#')[1]}>
               {props.title}{' '}
               <span data-swiftype-index="false">({props.cards.length})</span>
             </h2>

@@ -14,9 +14,10 @@
 - Update `docs-prose.css`.
   - You can now use `.unprose` class on `#docs-content h2` elements to remove the styling.
   - Add `sticky-mxl` and `scroll-auto-mxl` classes to enable a sticky position and scrolling on displays >= 1200 pixels.
-- 🚨 Rename `ExamplePage` component to `HelpPage` to better reflect that the component will display tutorial and troubleshooting page cards for Help pages.
+- 🚨 Rename `ExamplePage` component to `HelpPage` to better reflect that the component will display tutorial and troubleshooting page cards for Help pages. Adds `data` prop that accepts JSON to display cards.
 - 🚨 Update Batfish helpers:
   - 🚨 Remove `topics` Batfish helper and replace with `filters`.
+  - 🚨 Remove `formatTopics` Batfish helper. Use the `HelpPage` component.
 
 ## 1.3.0
 
