@@ -1231,7 +1231,13 @@ Object {
   "navTabs": Array [
     Object {
       "navOrder": 1,
-      "pages": Array [],
+      "pages": Array [
+        Object {
+          "layout": "page",
+          "path": "/dr-ui/level-one/b/",
+          "title": "Page b",
+        },
+      ],
       "path": "/dr-ui/level-one/",
       "title": "Top page",
     },

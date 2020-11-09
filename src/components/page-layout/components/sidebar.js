@@ -68,15 +68,10 @@ Sidebar.propTypes = {
   }).isRequired,
   frontMatter: PropTypes.shape({
     navOrder: PropTypes.number,
-    headings: PropTypes.array,
-    sidebarTitle: PropTypes.string
+    headings: PropTypes.array
   }).isRequired,
   parentPath: PropTypes.string,
   children: PropTypes.node,
-  layoutConfig: PropTypes.shape({
-    hideSubItems: PropTypes.bool,
-    includeFilterBar: PropTypes.bool
-  }),
   constants: PropTypes.shape({
     SITE: PropTypes.string.isRequired,
     BASEURL: PropTypes.string.isRequired

@@ -32,7 +32,6 @@ class PageShell extends React.Component {
 
     return (
       <PageLayout
-        includeFilterBar={true}
         filters={filters}
         headings={headings}
         frontMatter={{

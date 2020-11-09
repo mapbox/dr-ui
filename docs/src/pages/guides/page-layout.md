@@ -27,9 +27,7 @@ The [`PageLayout`](/dr-ui/#pagelayout) component comes with several layouts that
 
 {{<LayoutUsage data={{
   page:
-    'A standard interior page with a table of contents sidebar and content area. This layout is often used by tutorials and guides.',
-  accordion:
-    'This layout uses the NavigationAccordion component to organize navigation across multiple pages. This layout is often used by guides and reference pages.',
+    'A page with a table of contents sidebar and content area. This layout is used by tutorials and guides.',
   example:
     "This layout uses the SectionedNavigation component to display all topics for the site's examples. This layout is used by example pages.",
   exampleIndex:
@@ -141,10 +139,10 @@ Things to consider:
 {{<Note>}}
 The frontmatter props `navOrder` and `order` have different functions.
 
-- `navOrder` identifies a top-level page and its position in the `TabList` across the top of the page.
-- `order` sets the order for all pages in a section that uses the `accordion` layout.
+- `navOrder` identifies a top-level page and its position in the `NavigationAccordion` across the top of the page.
+- `order` sets the order for all pages in a section that uses the `page` layout.
 
-For top-level pages using the `accordion` layout, besides setting `navOrder`, you will also set `order: 1` to make sure that the top-level page appears first in the [`NavigationAccordion`](/dr-ui/#navigationaccordion)
+For top-level pages using the `page` layout, besides setting `navOrder`, you will also set `order: 1` to make sure that the top-level page appears first in the [`NavigationAccordion`](/dr-ui/#navigationaccordion)
 {{</Note>}}
 
 ## Overview header

@@ -66,10 +66,7 @@ export class ContentWrapper extends React.Component {
     const { frontMatter } = this.props;
     const { layout } = frontMatter;
     const headings = frontMatter.headings || this.props.headings;
-    const showToc =
-      headings &&
-      headings.length > 0 &&
-      (layout === 'page' || layout === 'accordion');
+    const showToc = headings && headings.length > 0 && layout === 'page';
     return (
       <aside
         data-swiftype-index="false"
@@ -96,7 +93,7 @@ export class ContentWrapper extends React.Component {
       layout,
       overviewHeader
     } = frontMatter;
-    const { hideTitle, sidebar } = layoutConfig;
+    const { hideTitle } = layoutConfig;
 
     // check frontmatter then default to layout config
     const showFeedback = hideFeedback
@@ -104,14 +101,7 @@ export class ContentWrapper extends React.Component {
       : !layoutConfig.hideFeedback;
 
     return (
-      <div
-        id="docs-content"
-        className={classnames('pr0-mm mt24', {
-          'mb60 px24-mm': sidebar !== 'none',
-          'px24-mm': sidebar === 'none',
-          'mt24-mm mt60 pt30 pt0-mm': sidebar === 'accordion' // clear the mobile sticky nav
-        })}
-      >
+      <div id="docs-content" className="pr0-mm mt24 mb60 px24-mm">
         {!hideTitle && (
           <div
             className={classnames('col prose', {
@@ -182,8 +172,7 @@ ContentWrapper.propTypes = {
     hideTitle: PropTypes.bool,
     showCards: PropTypes.bool,
     hideFeedback: PropTypes.bool,
-    aside: PropTypes.string,
-    sidebar: PropTypes.string
+    aside: PropTypes.string
   }),
   navigation: PropTypes.shape({
     hierarchy: PropTypes.object

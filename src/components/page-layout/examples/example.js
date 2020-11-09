@@ -27,7 +27,7 @@ export default class Basic extends React.Component {
           }
         }}
         location={{
-          pathname: '/PageLayout/'
+          pathname: '/PageLayout/examples/'
         }}
         frontMatter={{
           title: 'Examples',
@@ -38,12 +38,11 @@ export default class Basic extends React.Component {
         AppropriateImage={AppropriateImage}
         navigation={{
           hierarchy: {
-            '/PageLayout/': {
-              parent: '/PageLayout/',
-              title: 'Demo'
+            '/PageLayout/examples/': {
+              parent: '/PageLayout/examples/',
+              title: 'Examples'
             }
           },
-
           navTabs: [
             {
               path: '/PageLayout/',
@@ -78,7 +77,7 @@ export default class Basic extends React.Component {
           ]
         }}
         filters={{
-          '/PageLayout/': {
+          '/PageLayout/examples/': {
             contentType: 'example',
             description: 'Replace me.',
             language: ['JavaScript'],
