@@ -75,43 +75,6 @@ In most cases, you can use Batfish helpers to automatically generate this datase
 - [filters](/dr-ui/guides/batfish-helpers/#filters)
 - [navigation](/dr-ui/guides/batfish-helpers/#navigation)
 
-## Overview header
-
-The main page for each docs site displays the [`OverviewHeader`](/dr-ui/#overviewheader) to orient the user to the product.
-
-To add `OverviewHeader` to your page, pass the props of the component in the frontMatter under `overviewHeader`.
-
-```yaml
-overviewHeader:
-  title: 'Dr. UI'
-  features:
-    - 'React components to build documentation sites'
-    - 'Support for IE 11 and all modern browsers'
-  changelogLink: /dr-ui/changelog/
-  installLink: https://github.com/mapbox/dr-ui/blob/main/README.md
-  ghLink: https://github.com/mapbox/dr-ui
-```
-
-To include dynamic variables, such as `version` or use the `AppropriateImage` component for the value of `image`, update the `frontMatter` prop in site's `PageLayout` component (found in `page-shell.js`).
-
-The following example is the value of the `frontMatter` prop which overrides the values of `version` and `image` in the `overviewHeader` frontMatter prop object:
-
-```js
-{
-  ...frontMatter,
-  ...frontMatter.overviewHeader && {
-      overviewHeader: {
-        ...frontMatter.overviewHeader,
-        version: myVariable,
-        image: <AppropriateImage id="documentation-astronaut" />
-      }
-    }
-  })
-}
-```
-
-This technique may also be used by multi-structured sites, although you'll need to add logic to help determine which version constant to use.
-
 ### Filters
 
 By default an `examplesIndex` layout page (or `example` layout with `navOrder`), will display the cards for all sub pages. Filters for products, topics, languages, levels, and videos will appear if the group of sub pages has at least two options for each filter category.
@@ -183,6 +146,43 @@ The frontmatter props `navOrder` and `order` have different functions.
 
 For top-level pages using the `accordion` layout, besides setting `navOrder`, you will also set `order: 1` to make sure that the top-level page appears first in the [`NavigationAccordion`](/dr-ui/#navigationaccordion)
 {{</Note>}}
+
+## Overview header
+
+The main page for each docs site displays the [`OverviewHeader`](/dr-ui/#overviewheader) to orient the user to the product.
+
+To add `OverviewHeader` to your page, pass the props of the component in the frontMatter under `overviewHeader`.
+
+```yaml
+overviewHeader:
+  title: 'Dr. UI'
+  features:
+    - 'React components to build documentation sites'
+    - 'Support for IE 11 and all modern browsers'
+  changelogLink: /dr-ui/changelog/
+  installLink: https://github.com/mapbox/dr-ui/blob/main/README.md
+  ghLink: https://github.com/mapbox/dr-ui
+```
+
+To include dynamic variables, such as `version` or use the `AppropriateImage` component for the value of `image`, update the `frontMatter` prop in site's `PageLayout` component (found in `page-shell.js`).
+
+The following example is the value of the `frontMatter` prop which overrides the values of `version` and `image` in the `overviewHeader` frontMatter prop object:
+
+```js
+{
+  ...frontMatter,
+  ...frontMatter.overviewHeader && {
+      overviewHeader: {
+        ...frontMatter.overviewHeader,
+        version: myVariable,
+        image: <AppropriateImage id="documentation-astronaut" />
+      }
+    }
+  })
+}
+```
+
+This technique may also be used by multi-structured sites, although you'll need to add logic to help determine which version constant to use.
 
 ## Custom aside
 
