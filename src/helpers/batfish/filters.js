@@ -79,7 +79,10 @@ function sortBy(arr, prop) {
   return arr.sort((a, b) => parseInt(a[prop]) - parseInt(b[prop]));
 }
 
-// sorts pages by "Getting started" topic(s), then by level, then alphabetically by title
+// sorts the array of pages in the following order:
+// 1. The "Getting started" topic(s), if it exists. This will make sure the examples on product pages show getting started examples first.
+// 2. By `level`, if it exists. This will make sure that beginner level tutorials will appear first on the tutorials page.
+// 3. All remaining pages are sorted alphabetically by title.
 function pageSorter(pages) {
   const withTopic = pages.filter((page) => hasTopic(page, 'Getting started'));
   // exclude withTopic values

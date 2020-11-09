@@ -128,7 +128,10 @@ class PageShell extends React.Component {
 - The shape of filters is an object, where the top-level keys are pathnames for `examplesIndex` pages.
   - Each object has a `products` array, a unique list of products.
   - Each object has a `topics` array, a unique list of topics.
-  - Each object has a `pages` array of all sub pages to display. The `pages` array is ordered by the `Getting started` topic first (if it exists), then `level` (if it exists), and then sorts the remaining pages by title alphabetically.
+  - Each object has a `pages` array of all sub pages to display. The pages array is sorted in the following order:
+    1. The "Getting started" topic(s), if it exists. This will make sure the examples on product pages show getting started examples first.
+    2. By `level`, if it exists. This will make sure that beginner level tutorials will appear first on the tutorials page.
+    3. All remaining pages are sorted alphabetically by title.
   - If available, the object may have a `levels` array, a unique list of levels options.
   - If available, the object may have a `languages` array, a unique list of language options.
   - If available, the object may have `videos: true` to show that one or more sub pages have `video: true` in the frontMatter.
