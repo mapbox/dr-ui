@@ -19,7 +19,7 @@ export default class PageLayout extends React.Component {
     const { constants } = this.props;
     return (
       <div
-        className={`flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml ${config.sidebarTheme}`}
+        className={`flex-child flex-child--no-shrink w-full w180-mm w240-ml mr36-mm ${config.sidebarTheme}`}
       >
         <Sidebar
           {...this.props}
@@ -73,7 +73,7 @@ export default class PageLayout extends React.Component {
       <div className="flex-child flex-child--grow">
         {!frontMatter.hideBreadcrumbs && (
           <Breadcrumb
-            themeWrapper="none block-mm px24 pt12"
+            themeWrapper="none block-mm py12"
             domain={false}
             location={location}
             links={crumbs}

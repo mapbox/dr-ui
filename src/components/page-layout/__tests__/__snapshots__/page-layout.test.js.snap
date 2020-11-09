@@ -12,7 +12,7 @@ Array [
       className="flex-parent-mm"
     >
       <div
-        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml undefined"
+        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr36-mm undefined"
       >
         <div
           className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm px12-mm"
@@ -25,7 +25,7 @@ Array [
           }
         >
           <div
-            className="my12 border-b border--darken10 pb12"
+            className="mb12 border-b border--darken10 pb12"
           >
             <div
               className="flex-parent"
@@ -127,7 +127,7 @@ Array [
         className="flex-child flex-child--grow"
       >
         <div
-          className="dr-ui--breadcrumb none block-mm px24 pt12"
+          className="dr-ui--breadcrumb none block-mm py12"
           data-swiftype-index="false"
         >
           <a
@@ -189,7 +189,6 @@ Array [
           </span>
         </div>
         <div
-          className="pr0-mm mt24 mb60 px24-mm"
           id="docs-content"
         >
           <div
@@ -508,7 +507,7 @@ Array [
       className="flex-parent-mm"
     >
       <div
-        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml undefined"
+        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr36-mm undefined"
       >
         <div
           className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm px12-mm"
@@ -521,7 +520,7 @@ Array [
           }
         >
           <div
-            className="my12 border-b border--darken10 pb12"
+            className="mb12 border-b border--darken10 pb12"
           >
             <div
               className="flex-parent"
@@ -623,7 +622,7 @@ Array [
         className="flex-child flex-child--grow"
       >
         <div
-          className="dr-ui--breadcrumb none block-mm px24 pt12"
+          className="dr-ui--breadcrumb none block-mm py12"
           data-swiftype-index="false"
         >
           <a
@@ -711,7 +710,6 @@ Array [
           </span>
         </div>
         <div
-          className="pr0-mm mt24 mb60 px24-mm"
           id="docs-content"
         >
           <div
@@ -824,7 +822,7 @@ Array [
       className="flex-parent-mm"
     >
       <div
-        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml "
+        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr36-mm "
       >
         <div
           className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm px12-mm"
@@ -837,7 +835,7 @@ Array [
           }
         >
           <div
-            className="my12 border-b border--darken10 pb12"
+            className="mb12 border-b border--darken10 pb12"
           >
             <div
               className="flex-parent"
@@ -973,7 +971,7 @@ Array [
         className="flex-child flex-child--grow"
       >
         <div
-          className="dr-ui--breadcrumb none block-mm px24 pt12"
+          className="dr-ui--breadcrumb none block-mm py12"
           data-swiftype-index="false"
         >
           <a
@@ -1035,7 +1033,6 @@ Array [
           </span>
         </div>
         <div
-          className="pr0-mm mt24 mb60 px24-mm"
           id="docs-content"
         >
           <div
@@ -1254,7 +1251,7 @@ Array [
       className="flex-parent-mm"
     >
       <div
-        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml undefined"
+        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr36-mm undefined"
       >
         <div
           className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm px12-mm"
@@ -1267,7 +1264,7 @@ Array [
           }
         >
           <div
-            className="my12 border-b border--darken10 pb12"
+            className="mb12 border-b border--darken10 pb12"
           >
             <div
               className="flex-parent"
@@ -1314,7 +1311,7 @@ Array [
         className="flex-child flex-child--grow"
       >
         <div
-          className="dr-ui--breadcrumb none block-mm px24 pt12"
+          className="dr-ui--breadcrumb none block-mm py12"
           data-swiftype-index="false"
         >
           <a
@@ -1376,7 +1373,6 @@ Array [
           </span>
         </div>
         <div
-          className="pr0-mm mt24 mb60 px24-mm"
           id="docs-content"
         >
           <div

@@ -29,7 +29,7 @@ export default class Sidebar extends React.Component {
         className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm px12-mm"
         style={{ top: '10px' }}
       >
-        <div className="my12 border-b border--darken10 pb12">
+        <div className="mb12 border-b border--darken10 pb12">
           <ProductMenu
             productName={title || SITE}
             tag={tag || undefined}

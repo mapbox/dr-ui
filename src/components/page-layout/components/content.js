@@ -101,7 +101,7 @@ export class ContentWrapper extends React.Component {
       : !layoutConfig.hideFeedback;
 
     return (
-      <div id="docs-content" className="pr0-mm mt24 mb60 px24-mm">
+      <div id="docs-content">
         {!hideTitle && (
           <div
             className={classnames('col prose', {
