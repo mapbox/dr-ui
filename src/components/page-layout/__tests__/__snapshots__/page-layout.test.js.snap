@@ -1753,67 +1753,60 @@ Array [
       className="flex-parent-mm"
     >
       <div
-        className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
-        style={
-          Object {
-            "background": "#fbe5e5",
-            "color": "#9b3134",
-          }
-        }
+        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml undefined"
       >
         <div
-          className="flex-child mr18 none block-mm pt3"
+          className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm px12-mm"
+          data-swiftype-index="false"
+          id="dr-ui--page-layout-sidebar"
+          style={
+            Object {
+              "top": "10px",
+            }
+          }
         >
           <div
-            className="bg-red-light round-full color-red flex-parent flex-parent--center-main flex-parent--center-cross"
-            style={
-              Object {
-                "height": 50,
-                "width": 50,
-              }
-            }
+            className="my12 border-b border--darken10 pb12"
           >
-            <svg
-              className="events-none icon"
-              focusable="false"
-              role="presentation"
+            <div
+              className="flex-parent"
               style={
                 Object {
-                  "height": 40,
-                  "width": 40,
+                  "overflow": "hidden",
                 }
               }
             >
-              <use
-                xlinkHref="#icon-alert"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-              />
-            </svg>
+              <a
+                className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
+                href="/dr-ui/"
+              >
+                dr-ui
+              </a>
+            </div>
           </div>
-        </div>
-        <div
-          className="flex-child prose"
-        >
           <div
-            className="txt-bold txt-m mb6"
+            className="none block-mm"
           >
-            Something went wrong
-          </div>
-          <p>
-            We sent the error to the team. Please refresh the page to try again.
-          </p>
-          <details>
-            <summary
-              className="cursor-pointer"
+            <nav
+              className="mx-neg12"
             >
-              Error details
-            </summary>
-            <pre>
-              <code>
-                Cannot read property 'length' of undefined
-              </code>
-            </pre>
-          </details>
+              <ul>
+                <li>
+                  <a
+                    className="px12 py3 inline-block txt-uppercase txt-fancy round-full w-full color-blue-on-hover color-darken75 "
+                    href="/dr-ui/overview/"
+                    style={
+                      Object {
+                        "letterSpacing": "0.025em",
+                      }
+                    }
+                  >
+                    Overview
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
       <div

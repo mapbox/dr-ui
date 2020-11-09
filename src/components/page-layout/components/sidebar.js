@@ -20,7 +20,7 @@ export default class Sidebar extends React.Component {
       navigation &&
       navTabs &&
       navTabs.length < 2 &&
-      (navTabs[0].pages.length === 0 || !navTabs[0].pages);
+      (!navTabs[0].pages || navTabs[0].pages.length === 0);
 
     return (
       <div
