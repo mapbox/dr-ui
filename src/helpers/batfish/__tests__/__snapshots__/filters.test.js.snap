@@ -1,0 +1,358 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`buildFilters multi structure 1`] = `
+Object {
+  "/docs-starter-kit/beta/navigation/examples/": Object {
+    "languages": Array [
+      "JavaScript",
+    ],
+    "levels": Array [],
+    "pages": Array [
+      Object {
+        "contentType": "example",
+        "description": "Replace me.",
+        "language": Array [
+          "JavaScript",
+        ],
+        "layout": "example",
+        "path": "/docs-starter-kit/beta/navigation/examples/example-1/",
+        "thumbnail": "header-image",
+        "title": "Example 1",
+        "topics": Array [
+          "Cool",
+        ],
+      },
+      Object {
+        "contentType": "example",
+        "description": "Replace me.",
+        "language": Array [
+          "JavaScript",
+        ],
+        "layout": "example",
+        "path": "/docs-starter-kit/beta/navigation/examples/example-2/",
+        "thumbnail": "header-image",
+        "title": "Example 2",
+        "topics": Array [
+          "Cool",
+        ],
+      },
+      Object {
+        "contentType": "example",
+        "description": "Replace me.",
+        "language": Array [
+          "JavaScript",
+        ],
+        "layout": "example",
+        "path": "/docs-starter-kit/beta/navigation/examples/example-3/",
+        "thumbnail": "header-image",
+        "title": "Example 3",
+        "topics": Array [
+          "Cool",
+          "Awesome",
+        ],
+      },
+    ],
+    "products": Array [],
+    "topics": Array [
+      "Awesome",
+      "Cool",
+    ],
+    "videos": false,
+  },
+  "/docs-starter-kit/maps/examples/": Object {
+    "languages": Array [
+      "JavaScript",
+    ],
+    "levels": Array [],
+    "pages": Array [
+      Object {
+        "contentType": "example",
+        "description": "Replace me.",
+        "language": Array [
+          "JavaScript",
+        ],
+        "layout": "example",
+        "path": "/docs-starter-kit/maps/examples/example-1/",
+        "thumbnail": "header-image",
+        "title": "Example 1",
+        "topics": Array [
+          "Cool",
+        ],
+      },
+      Object {
+        "contentType": "example",
+        "description": "Replace me.",
+        "language": Array [
+          "JavaScript",
+        ],
+        "layout": "example",
+        "path": "/docs-starter-kit/maps/examples/example-2/",
+        "thumbnail": "header-image",
+        "title": "Example 2",
+        "topics": Array [
+          "Cool",
+        ],
+      },
+      Object {
+        "contentType": "example",
+        "description": "Replace me.",
+        "language": Array [
+          "JavaScript",
+        ],
+        "layout": "example",
+        "path": "/docs-starter-kit/maps/examples/example-3/",
+        "thumbnail": "header-image",
+        "title": "Example 3",
+        "topics": Array [
+          "Cool",
+          "Awesome",
+        ],
+      },
+    ],
+    "products": Array [],
+    "topics": Array [
+      "Awesome",
+      "Cool",
+    ],
+    "videos": false,
+  },
+  "/docs-starter-kit/navigation/examples/": Object {
+    "languages": Array [
+      "JavaScript",
+    ],
+    "levels": Array [],
+    "pages": Array [
+      Object {
+        "contentType": "example",
+        "description": "Replace me.",
+        "language": Array [
+          "JavaScript",
+        ],
+        "layout": "example",
+        "path": "/docs-starter-kit/navigation/examples/example-1/",
+        "thumbnail": "header-image",
+        "title": "Example 1",
+        "topics": Array [
+          "Cool",
+        ],
+      },
+      Object {
+        "contentType": "example",
+        "description": "Replace me.",
+        "language": Array [
+          "JavaScript",
+        ],
+        "layout": "example",
+        "path": "/docs-starter-kit/navigation/examples/example-2/",
+        "thumbnail": "header-image",
+        "title": "Example 2",
+        "topics": Array [
+          "Cool",
+        ],
+      },
+      Object {
+        "contentType": "example",
+        "description": "Replace me.",
+        "language": Array [
+          "JavaScript",
+        ],
+        "layout": "example",
+        "path": "/docs-starter-kit/navigation/examples/example-3/",
+        "thumbnail": "header-image",
+        "title": "Example 3",
+        "topics": Array [
+          "Cool",
+          "Awesome",
+        ],
+      },
+    ],
+    "products": Array [],
+    "topics": Array [
+      "Awesome",
+      "Cool",
+    ],
+    "videos": false,
+  },
+  "/docs-starter-kit/vision/examples/": Object {
+    "languages": Array [
+      "JavaScript",
+    ],
+    "levels": Array [],
+    "pages": Array [
+      Object {
+        "contentType": "example",
+        "description": "Replace me.",
+        "language": Array [
+          "JavaScript",
+        ],
+        "layout": "example",
+        "path": "/docs-starter-kit/vision/examples/example-1/",
+        "thumbnail": "header-image",
+        "title": "Example 1",
+        "topics": Array [
+          "Cool",
+        ],
+      },
+      Object {
+        "contentType": "example",
+        "description": "Replace me.",
+        "language": Array [
+          "JavaScript",
+        ],
+        "layout": "example",
+        "path": "/docs-starter-kit/vision/examples/example-2/",
+        "thumbnail": "header-image",
+        "title": "Example 2",
+        "topics": Array [
+          "Cool",
+        ],
+      },
+      Object {
+        "contentType": "example",
+        "description": "Replace me.",
+        "language": Array [
+          "JavaScript",
+        ],
+        "layout": "example",
+        "path": "/docs-starter-kit/vision/examples/example-3/",
+        "thumbnail": "header-image",
+        "title": "Example 3",
+        "topics": Array [
+          "Cool",
+          "Awesome",
+        ],
+      },
+    ],
+    "products": Array [],
+    "topics": Array [
+      "Awesome",
+      "Cool",
+    ],
+    "videos": false,
+  },
+}
+`;
+
+exports[`buildFilters single structure 1`] = `
+Object {
+  "/dr-ui/examples/": Object {
+    "languages": Array [
+      "JavaScript",
+      "Kotlin",
+      "Swift",
+    ],
+    "levels": Array [
+      1,
+      2,
+      3,
+    ],
+    "pages": Array [
+      Object {
+        "contentType": "example",
+        "description": "Get started with this example.",
+        "language": Array [
+          "JavaScript",
+          "Kotlin",
+        ],
+        "layout": "example",
+        "path": "/dr-ui/examples/example-4/",
+        "products": Array [
+          "Documentation",
+          "Mapbox Tiling Service",
+        ],
+        "thumbnail": "header-image",
+        "title": "Quickstart",
+        "topics": Array [
+          "Getting started",
+        ],
+      },
+      Object {
+        "contentType": "example",
+        "description": "This is example 1.",
+        "language": Array [
+          "JavaScript",
+          "Kotlin",
+        ],
+        "layout": "example",
+        "level": 1,
+        "path": "/dr-ui/examples/example-1/",
+        "products": Array [
+          "Documentation",
+          "Mapbox Tiling Service",
+        ],
+        "thumbnail": "header-image",
+        "title": "Example 1",
+        "topics": Array [
+          "Navigation",
+        ],
+        "video": true,
+      },
+      Object {
+        "contentType": "example",
+        "description": "This is example 2.",
+        "language": Array [
+          "JavaScript",
+        ],
+        "layout": "example",
+        "level": 2,
+        "path": "/dr-ui/examples/example-2/",
+        "products": Array [
+          "Documentation",
+        ],
+        "thumbnail": "header-image",
+        "title": "Example 2",
+        "topics": Array [
+          "Navigation",
+        ],
+      },
+      Object {
+        "contentType": "example",
+        "description": "This is example 3.",
+        "language": Array [
+          "Swift",
+        ],
+        "layout": "example",
+        "level": 3,
+        "path": "/dr-ui/examples/example-3/",
+        "products": Array [
+          "Documentation",
+        ],
+        "thumbnail": "header-image",
+        "title": "Example 3",
+        "topics": Array [
+          "Navigation",
+          "Geocoding",
+        ],
+      },
+      Object {
+        "contentType": "example",
+        "description": "This is another example.",
+        "language": Array [
+          "JavaScript",
+        ],
+        "layout": "example",
+        "path": "/dr-ui/examples/example-5/",
+        "products": Array [
+          "Documentation",
+          "Mapbox Tiling Service",
+        ],
+        "thumbnail": "header-image",
+        "title": "Another example",
+        "topics": Array [
+          "Navigation",
+        ],
+      },
+    ],
+    "products": Array [
+      "Documentation",
+      "Mapbox Tiling Service",
+    ],
+    "topics": Array [
+      "Getting started",
+      "Geocoding",
+      "Navigation",
+    ],
+    "videos": true,
+  },
+}
+`;

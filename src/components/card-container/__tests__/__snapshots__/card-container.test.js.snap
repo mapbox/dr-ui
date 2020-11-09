@@ -7,7 +7,7 @@ exports[`card-container Basic renders as expected 1`] = `
     href="#category"
   >
     <h2
-      className="txt-bold"
+      className="txt-bold unprose"
       id="category"
     >
       Category
@@ -25,7 +25,7 @@ exports[`card-container Basic renders as expected 1`] = `
     className="grid grid--gut36"
   >
     <div
-      className="mb18 col col--12 col--6-ml"
+      className="mb18 col col--12 col--4-ml"
     >
       <a
         className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
@@ -61,7 +61,7 @@ exports[`card-container Basic renders as expected 1`] = `
       </a>
     </div>
     <div
-      className="mb18 col col--12 col--6-ml"
+      className="mb18 col col--12 col--4-ml"
     >
       <a
         className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
@@ -107,7 +107,7 @@ exports[`card-container Full width renders as expected 1`] = `
     href="#another-category"
   >
     <h2
-      className="txt-bold"
+      className="txt-bold unprose"
       id="another-category"
     >
       Another category
@@ -181,7 +181,7 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
     href="#another-category"
   >
     <h2
-      className="txt-bold"
+      className="txt-bold unprose"
       id="another-category"
     >
       Another category

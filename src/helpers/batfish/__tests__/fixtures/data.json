@@ -40,11 +40,13 @@
         "title": "Example 1",
         "description": "This is example 1.",
         "contentType": "example",
-        "language": ["JavaScript"],
+        "language": ["JavaScript", "Kotlin"],
         "topics": ["Navigation"],
+        "level": 1,
         "thumbnail": "header-image",
         "layout": "example",
-        "products": ["Documentation"]
+        "video": true,
+        "products": ["Documentation", "Mapbox Tiling Service"]
       }
     },
     {
@@ -56,6 +58,7 @@
         "contentType": "example",
         "language": ["JavaScript"],
         "topics": ["Navigation"],
+        "level": 2,
         "thumbnail": "header-image",
         "layout": "example",
         "products": ["Documentation"]
@@ -68,11 +71,40 @@
         "title": "Example 3",
         "description": "This is example 3.",
         "contentType": "example",
-        "language": ["JavaScript"],
+        "language": ["Swift"],
         "topics": ["Navigation", "Geocoding"],
+        "level": 3,
         "thumbnail": "header-image",
         "layout": "example",
         "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/examples/example-4.md",
+      "path": "/dr-ui/examples/example-4/",
+      "frontMatter": {
+        "title": "Quickstart",
+        "description": "Get started with this example.",
+        "contentType": "example",
+        "language": ["JavaScript", "Kotlin"],
+        "topics": ["Getting started"],
+        "thumbnail": "header-image",
+        "layout": "example",
+        "products": ["Documentation", "Mapbox Tiling Service"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/examples/example-5.md",
+      "path": "/dr-ui/examples/example-5/",
+      "frontMatter": {
+        "title": "Another example",
+        "description": "This is another example.",
+        "contentType": "example",
+        "language": ["JavaScript"],
+        "topics": ["Navigation"],
+        "thumbnail": "header-image",
+        "layout": "example",
+        "products": ["Documentation", "Mapbox Tiling Service"]
       }
     },
     {
@@ -85,8 +117,6 @@
         "language": ["JavaScript"],
         "navOrder": 3,
         "layout": "example",
-        "fullWidthCards": true,
-        "hideFeedback": true,
         "products": ["Documentation"]
       }
     },
@@ -102,10 +132,8 @@
         "products": ["Documentation"],
         "prependJs": [
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
-          "import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line",
-          "import splitPages from '@mapbox/batfish/data/split-pages'; // eslint-disable-line",
-          "import relatedMts from '../../../../src/helpers/batfish/__tests__/fixtures/related-mts.json';",
-          "import relatedAndroid from '../../../../src/helpers/batfish/__tests__/fixtures/related-android.json';"
+          "import topics from '@mapbox/batfish/data/filters'; // eslint-disable-line",
+          "import splitPages from '@mapbox/batfish/data/split-pages'; // eslint-disable-line"
         ]
       }
     },
@@ -152,7 +180,8 @@
           "import frontmatter from '!raw-loader!../../components/snippets/frontmatter.js';// eslint-disable-line",
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
           "import constants from '../../constants.json';",
-          "import Note from '../../../../src/components/note';"
+          "import Note from '../../../../src/components/note';",
+          "import { filterOptions } from '../../../../src/components/page-layout/components/example-index';"
         ]
       }
     },
@@ -239,11 +268,16 @@
       "path": "/dr-ui/troubleshooting/",
       "frontMatter": {
         "title": "Troubleshooting",
-        "description": "Example of a Help page.",
+        "description": "Example of a Troubleshooting page.",
         "contentType": "example",
         "navOrder": 5,
         "layout": "full",
-        "products": ["Documentation"]
+        "hideFeedback": true,
+        "products": ["Documentation"],
+        "prependJs": [
+          "import HelpPage from '../../../../src/components/help-page/help-page';",
+          "import data from '../../../../src/helpers/batfish/__tests__/fixtures/related-mts.json'"
+        ]
       }
     },
     {
@@ -255,7 +289,12 @@
         "contentType": "example",
         "navOrder": 4,
         "layout": "full",
-        "products": ["Documentation"]
+        "hideFeedback": true,
+        "products": ["Documentation"],
+        "prependJs": [
+          "import HelpPage from '../../../../src/components/help-page/help-page';",
+          "import data from '../../../../src/helpers/batfish/__tests__/fixtures/related-mts.json'"
+        ]
       }
     },
     {

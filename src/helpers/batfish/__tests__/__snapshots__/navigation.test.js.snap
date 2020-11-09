@@ -1866,6 +1866,14 @@ Object {
       "parent": "/dr-ui/examples/",
       "title": "Examples",
     },
+    "/dr-ui/examples/example-4/": Object {
+      "parent": "/dr-ui/examples/",
+      "title": "Examples",
+    },
+    "/dr-ui/examples/example-5/": Object {
+      "parent": "/dr-ui/examples/",
+      "title": "Examples",
+    },
     "/dr-ui/guides/": Object {
       "parent": "/dr-ui/guides/",
       "title": "Guides",
