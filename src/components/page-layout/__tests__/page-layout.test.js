@@ -81,20 +81,4 @@ describe('page-layout', () => {
       expect(tree).toMatchSnapshot();
     });
   });
-
-  describe(testCases.hideSearch.description, () => {
-    let testCase;
-    let wrapper;
-    let tree;
-
-    beforeEach(() => {
-      testCase = testCases.hideSearch;
-      wrapper = renderer.create(testCase.element);
-      tree = wrapper.toJSON();
-    });
-
-    test('renders as expected', () => {
-      expect(tree).toMatchSnapshot();
-    });
-  });
 });

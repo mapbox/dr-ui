@@ -245,14 +245,6 @@ PageLayout.propTypes = {
   }).isRequired,
   /** Required if using the `exampleIndex` layout along with `imageId`s. The value is the local `AppropriateImage` component. */
   AppropriateImage: PropTypes.func,
-  /** Append item to TabList. This is used by iOS and Android site's API reference. */
-  tabListAppend: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      label: PropTypes.node.isRequired,
-      href: PropTypes.string.isRequired
-    })
-  ),
   /** For when headings are dynamic, this is used by API docs */
   headings: PropTypes.array,
   /** For `Search` component */
