@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PageLayout from '../../../src/components/page-layout';
-
-import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line
-import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line
+import navigation from '@mapbox/batfish/data/navigation';
+import filters from '@mapbox/batfish/data/filters';
 import constants from '../constants';
-
+import AppropriateImage from './appropriate-image';
 import categories from '../categories.json';
 
 const slug = (string) => string.toLowerCase();
@@ -34,7 +33,7 @@ class PageShell extends React.Component {
       <PageLayout
         includeFilterBar={true}
         topBarSticker={false}
-        topics={topics}
+        filters={filters}
         headings={headings}
         frontMatter={{
           ...frontMatter,
@@ -45,6 +44,7 @@ class PageShell extends React.Component {
         location={location}
         constants={constants}
         navigation={navigation}
+        AppropriateImage={AppropriateImage}
       >
         {children}
       </PageLayout>
