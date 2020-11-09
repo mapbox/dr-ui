@@ -12,7 +12,6 @@ prependJs:
   - "import OtherProps from '../../components/other-props.js';"
   - "import LayoutUsage from '../../components/layout-usage.js';"
   - "import frontmatter from '!raw-loader!../../components/snippets/frontmatter.js';// eslint-disable-line"
-  - "import Topbar from '../../../../src/components/page-layout/components/topbar.js';"
   - "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line"
   - "import constants from '../../constants.json';"
   - "import Note from '../../../../src/components/note';"
@@ -127,23 +126,15 @@ The [`PageLayout`](/dr-ui/#pagelayout) component accepts the following props for
 
 {{<OtherProps />}}
 
-## Navigation bar
+## Site navigation
 
-The navigation bar appears at the top of every page. It uses [`ProductMenu`](/dr-ui/#productmenu) to show the site title, [`Search`](/dr-ui/#search) to add search feature, and [`TabList`](https://mapbox.github.io/mr-ui/#tablist) to list the top-level pages for the site.
-
-{{
-
-  <div className=''>
-    <Topbar navigation={navigation} parentPath="/dr-ui/guides/" constants={constants} />
-    <div><em>The navigation bar for this site.</em></div>
-  </div>
-}}
+The site navigation appears at the left side of every page. It uses [`ProductMenu`](/dr-ui/#productmenu) to show the site title, and [`NavigationAccordion`](/dr-ui/#NavigationAccordion) to display all navigation links for the site starting with top-level pages.
 
 ### What are top-level pages?
 
-Top-level pages are a small set of pages that define a section of the site. These pages build the content hierarchy and act as a homepage for each section. The hierarchy is also important for telling `TabList` which section the user is now on so it can add a blue bottom border indicator.
+Top-level pages are a small set of pages that define a section of the site. These pages build the content hierarchy and act as a homepage for each section. The hierarchy is also important for telling `NavigationAccordion` which section the user is now on.
 
-For example, this page falls under [Guides](/dr-ui/guides/), a top-level page. Since you're visiting a page under the Guide's section, the Guides link in the `TabList` has a blue bottom border indicator to help show you where you are on the site.
+For example, this page falls under [Guides](/dr-ui/guides/), a top-level page. Since you're visiting a page under the Guide's section, the Guides link in the `NavigationAccordion` is styled slightly differently to help show you where you are on the site.
 
 Top-level pages almost always follow the folder structure in `src/pages/`. For example a site with the following folder structure likely uses `examples/index.md`, `help/index.md`, and `overview/index.md` as its top-level pages:
 
@@ -179,21 +170,19 @@ The frontmatter props `navOrder` and `order` have different functions.
 For top-level pages using the `accordion` layout, besides setting `navOrder`, you will also set `order: 1` to make sure that the top-level page appears first in the [`NavigationAccordion`](/dr-ui/#navigationaccordion)
 {{</Note>}}
 
-## Custom sidebars
+## Custom aside
 
-Sites like Mapbox GL JS require custom sidebars since the data is derived from multiple sources. Similarly, the [Dr. UI component's page](/dr-ui/) also uses a custom sidebar, see the example below for how to conditionally display a custom sidebar:
+Sites like Mapbox GL JS require custom asides since the data is derived from multiple sources. Similarly, the [Dr. UI component's page](/dr-ui/) also uses a custom aside, see the example below for how to conditionally display a custom sidebar:
 
 ```jsx
-import Sidebar from './sidebar';
+import Aside from './aside';
 
 class PageShell extends React.Component {
   render() {
     const { location } = this.props;
     return (
       <PageLayout
-        customSidebar={
-          location.pathname === '/dr-ui/' ? <Sidebar /> : undefined
-        }
+        customAside={location.pathname === '/dr-ui/' ? <Aside /> : undefined}
       >
         {children}
       </PageLayout>

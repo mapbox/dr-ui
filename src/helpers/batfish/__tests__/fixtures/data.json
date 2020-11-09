@@ -150,7 +150,6 @@
           "import OtherProps from '../../components/other-props.js';",
           "import LayoutUsage from '../../components/layout-usage.js';",
           "import frontmatter from '!raw-loader!../../components/snippets/frontmatter.js';// eslint-disable-line",
-          "import Topbar from '../../../../src/components/page-layout/components/topbar.js';",
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
           "import constants from '../../constants.json';",
           "import Note from '../../../../src/components/note';"
