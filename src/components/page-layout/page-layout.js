@@ -7,7 +7,7 @@ import Breadcrumb from '../breadcrumb/breadcrumb';
 import Content from './components/content';
 import Sidebar from './components/sidebar';
 import PageLayoutTopbar from './components/topbar';
-import { filterOptions } from './components/exampleIndex';
+import { filterOptions } from './components/example-index';
 import { findHasSection, findParentPath, createUniqueCrumbs } from './utils';
 
 // default configuration for each layout

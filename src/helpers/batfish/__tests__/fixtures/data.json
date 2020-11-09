@@ -154,7 +154,7 @@
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
           "import constants from '../../constants.json';",
           "import Note from '../../../../src/components/note';",
-          "import { filterOptions } from '../../../../src/components/page-layout/components/exampleIndex';"
+          "import { filterOptions } from '../../../../src/components/page-layout/components/example-index';"
         ]
       }
     },

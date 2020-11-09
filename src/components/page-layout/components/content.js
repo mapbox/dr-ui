@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ExampleIndex from './exampleIndex.js';
+import ExampleIndex from './example-index.js';
 import classnames from 'classnames';
 import OnThisPage from '../../on-this-page/on-this-page';
 import Feedback from '../../feedback/feedback';

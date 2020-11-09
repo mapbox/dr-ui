@@ -16,7 +16,7 @@ prependJs:
   - "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line"
   - "import constants from '../../constants.json';"
   - "import Note from '../../../../src/components/note';"
-  - "import { filterOptions } from '../../../../src/components/page-layout/components/exampleIndex';"
+  - "import { filterOptions } from '../../../../src/components/page-layout/components/example-index';"
 ---
 
 The [`PageLayout`](/dr-ui/#pagelayout) component is the main controller for building pages with Dr. UI and offers five layout options. `PageLayout` provides everything from the site's navigation, to the sidebar contents, and main content area. It also includes common components like Search and Feedback.
