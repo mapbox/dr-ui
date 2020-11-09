@@ -1236,7 +1236,13 @@ Object {
     Object {
       "id": "top-page",
       "navOrder": 1,
-      "pages": Array [],
+      "pages": Array [
+        Object {
+          "layout": "page",
+          "path": "/dr-ui/level-one/b/",
+          "title": "Page b",
+        },
+      ],
       "path": "/dr-ui/level-one/",
       "title": "Top page",
     },
@@ -1880,6 +1886,14 @@ Object {
       "title": "Examples",
     },
     "/dr-ui/examples/example-3/": Object {
+      "parent": "/dr-ui/examples/",
+      "title": "Examples",
+    },
+    "/dr-ui/examples/example-4/": Object {
+      "parent": "/dr-ui/examples/",
+      "title": "Examples",
+    },
+    "/dr-ui/examples/example-5/": Object {
       "parent": "/dr-ui/examples/",
       "title": "Examples",
     },

@@ -11,14 +11,17 @@
   - Remove `TopbarSticker` from `PageLayout`. The main navigation now uses the `NavigationAccordion` on the sidebar to display main pages and subpages.
   - 🚨Redesigned `NavigationAccordion` to work as site navigation menu. The component will no longer track headings. We deprecated several props and introduced new ones, please consult the [NavigationAccordion documentation](https://mapbox.github.io/dr-ui/components/#navigationaccordion).
   - Add option to add `OverviewHeader` component to the page by passing the component's properties in the frontMatter.
+  - Add filter functionality to `exampleIndex` layout. All page cards will be displayed in order of the `order` frontMatter property and then alphabetically by title. Filters will automatically appear for topics, levels, languages, and video if the pages have at least more than one unique option for each filter category. Filter selections are pushed to the query param and are set by a rendered query string.
 - Update `Feedback` component.
   - Remove background color and use `AsideHeading` component to style the component's heading.
 - Update `docs-prose.css`.
   - You can now use `.unprose` class on `#docs-content h2` elements to remove the styling.
   - Add `sticky-mxl` and `scroll-auto-mxl` classes to enable a sticky position and scrolling on displays >= 1200 pixels.
-- 🚨 Update the `navigation` Batfish helper.
-  - Remove `accordion` object and moved the dataset into `navTabs` as `pages` array.
-- 🚨 Rename `ExamplePage` component to `HelpPage` to better reflect that the component will display tutorial and troubleshooting page cards for Help pages.
+- 🚨 Rename `ExamplePage` component to `HelpPage` to better reflect that the component will display tutorial and troubleshooting page cards for Help pages. Adds `data` prop that accepts JSON to display cards.
+- 🚨 Update Batfish helpers:
+  - 🚨 Remove `topics` Batfish helper and replace with `filters`.
+  - 🚨 Remove `formatTopics` Batfish helper. Use the `HelpPage` component.
+  - 🚨 Remove `accordion` object from `navigation` and moved the dataset into `navTabs` as `pages` array.
 
 ## 1.3.0
 

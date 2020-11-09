@@ -4,16 +4,12 @@ export default {
     sidebarTheme: '' // blank sidebar background
   },
   example: {
-    aside: 'none', // do not show aside
-    hideSubItems: false, // show headings and subitems in sitebar
-    includeFilterBar: false // hide filter bar
+    aside: 'none' // do not show aside
   },
   exampleIndex: {
     aside: 'none', // do not show aside
-    hideSubItems: true, // only show sidebar headings
     showCards: true, // show example cards
-    hideFeedback: true, // hide feedback module
-    includeFilterBar: false // hide filter bar
+    hideFeedback: true // hide feedback module
   },
   full: {
     aside: 'none' // do not show aside

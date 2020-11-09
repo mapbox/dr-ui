@@ -27,19 +27,19 @@ export default class Basic extends React.Component {
           }
         }}
         location={{
-          pathname: '/PageLayout/'
+          pathname: '/PageLayout/examples/example-1/'
         }}
         frontMatter={{
-          title: 'Examples',
+          title: 'An example',
           layout: 'example',
           description: 'An example of a page.'
         }}
         AppropriateImage={AppropriateImage}
         navigation={{
           hierarchy: {
-            '/PageLayout/': {
-              parent: '/PageLayout/',
-              title: 'Demo'
+            '/PageLayout/examples/example-1/': {
+              parent: '/PageLayout/examples/',
+              title: 'Examples'
             }
           },
 
@@ -80,82 +80,17 @@ export default class Basic extends React.Component {
             }
           ]
         }}
-        topics={{
-          '/PageLayout/': {
-            contentType: 'example',
-            description: 'Replace me.',
-            language: ['JavaScript'],
-            layout: 'example',
-            navOrder: 3,
-            path: '/PageLayout/',
-            title: 'Examples',
-            topics: [
-              {
-                count: 3,
-                name: 'Cool',
-                pages: [
-                  {
-                    contentType: 'example',
-                    description: 'Replace me.',
-                    language: ['JavaScript'],
-                    layout: 'example',
-                    path: '/PageLayout/example-1/',
-                    text: 'Example 1',
-                    thumbnail: 'header-image',
-                    title: 'Example 1',
-                    topic: ['Cool'],
-                    url: '/PageLayout/example-1/'
-                  },
-                  {
-                    contentType: 'example',
-                    description: 'Replace me.',
-                    language: ['JavaScript'],
-                    layout: 'example',
-                    path: '/PageLayout/example-2/',
-                    text: 'Example 2',
-                    thumbnail: 'header-image',
-                    title: 'Example 2',
-                    topic: ['Cool'],
-                    url: '/PageLayout/example-2/'
-                  },
-                  {
-                    contentType: 'example',
-                    description: 'Replace me.',
-                    language: ['JavaScript'],
-                    layout: 'example',
-                    path: '/PageLayout/example-3/',
-                    text: 'Example 3',
-                    thumbnail: 'header-image',
-                    title: 'Example 3',
-                    topic: ['Cool', 'Awesome'],
-                    url: '/PageLayout/example-3/'
-                  }
-                ],
-                url: '/PageLayout/#cool'
-              },
-              {
-                count: 1,
-                name: 'Awesome',
-                pages: [
-                  {
-                    contentType: 'example',
-                    description: 'Replace me.',
-                    language: ['JavaScript'],
-                    layout: 'example',
-                    path: '/PageLayout/example-3/',
-                    text: 'Example 3',
-                    thumbnail: '/files/ios-horizontal.png',
-                    title: 'Example 3',
-                    topic: ['Cool', 'Awesome'],
-                    url: '/PageLayout/example-3/'
-                  }
-                ],
-                url: '/PageLayout/#awesome'
-              }
-            ]
-          }
-        }}
-      />
+      >
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </PageLayout>
     );
   }
 }

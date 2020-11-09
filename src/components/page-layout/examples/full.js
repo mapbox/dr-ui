@@ -26,14 +26,14 @@ export default class Basic extends React.Component {
         navigation={{
           hierarchy: {
             '/PageLayout/': {
-              parent: '/dr-ui/',
-              title: 'Demo'
+              parent: '/PageLayout/',
+              title: 'Overview'
             }
           },
           navTabs: [
             {
               title: 'Overview',
-              path: '/dr-ui/overview/',
+              path: '/PageLayout/',
               id: 'overview'
             }
           ]

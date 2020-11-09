@@ -3,114 +3,50 @@ Basic.
 */
 import React from 'react';
 import HelpPage from '../help-page';
-import Card from '../../card/card';
-import CardContainer from '../../card-container/card-container';
+
+const data = [
+  {
+    title: 'Container title one',
+    pages: [
+      {
+        title: 'Example one',
+        description: 'Lorem ipsum dolor sit amet.',
+        path: 'path'
+      },
+      {
+        title: 'Example two',
+        description: 'Consectetur adipisicing elit',
+        path: 'path'
+      }
+    ]
+  },
+  {
+    title: 'Container title two',
+    pages: [
+      {
+        title: 'Example one',
+        description:
+          'Ded do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        path: 'path'
+      },
+      {
+        title: 'Example two',
+        description:
+          'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        path: 'path'
+      },
+      {
+        title: 'Example two',
+        description:
+          'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+        path: 'path'
+      }
+    ]
+  }
+];
 
 export default class Basic extends React.Component {
   render() {
-    return (
-      <HelpPage
-        frontMatter={{
-          title: 'Title',
-          description: 'Description.'
-        }}
-        cardContainers={[
-          <CardContainer
-            title="Container title one"
-            path="#container-title-one"
-            fullWidthCards={false}
-            cards={[
-              <Card
-                key="0"
-                title="Example one"
-                path="path"
-                description="Lorem ipsum dolor sit amet."
-                thumbnail={
-                  <div
-                    className="relative h120 mb12"
-                    style={{
-                      backgroundImage: "url('./files/simple-map.png')",
-                      backgroundSize: '100% auto',
-                      backgroundPosition: 'center'
-                    }}
-                  />
-                }
-              />,
-              <Card
-                key="1"
-                title="Example two"
-                path="path"
-                description="Consectetur adipisicing elit"
-                thumbnail={
-                  <div
-                    className="relative h120 mb12"
-                    style={{
-                      backgroundImage: "url('./files/simple-map.png')",
-                      backgroundSize: '100% auto',
-                      backgroundPosition: 'center'
-                    }}
-                  />
-                }
-              />
-            ]}
-          />,
-          <CardContainer
-            title="Container title two"
-            path="#container-title-two"
-            fullWidthCards={false}
-            cards={[
-              <Card
-                key="0"
-                title="Example one"
-                path="path"
-                description="Ded do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                thumbnail={
-                  <div
-                    className="relative h120 mb12"
-                    style={{
-                      backgroundImage: "url('./files/simple-map.png')",
-                      backgroundSize: '100% auto',
-                      backgroundPosition: 'center'
-                    }}
-                  />
-                }
-              />,
-              <Card
-                key="1"
-                title="Example two"
-                path="path"
-                description="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                thumbnail={
-                  <div
-                    className="relative h120 mb12"
-                    style={{
-                      backgroundImage: "url('./files/simple-map.png')",
-                      backgroundSize: '100% auto',
-                      backgroundPosition: 'center'
-                    }}
-                  />
-                }
-              />,
-              <Card
-                key="2"
-                title="Example two"
-                path="path"
-                description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-                thumbnail={
-                  <div
-                    className="relative h120 mb12"
-                    style={{
-                      backgroundImage: "url('./files/simple-map.png')",
-                      backgroundSize: '100% auto',
-                      backgroundPosition: 'center'
-                    }}
-                  />
-                }
-              />
-            ]}
-          />
-        ]}
-      />
-    );
+    return <HelpPage data={data} />;
   }
 }

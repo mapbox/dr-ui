@@ -30,8 +30,8 @@ export default class Basic extends React.Component {
         navigation={{
           hierarchy: {
             '/PageLayout/': {
-              parent: '/dr-ui/',
-              title: 'Demo'
+              parent: '/PageLayout/',
+              title: 'Overview'
             }
           },
           navTabs: [
@@ -41,16 +41,16 @@ export default class Basic extends React.Component {
               id: 'overview',
               pages: [
                 {
-                  path: '/PageLayout/specifications/',
-                  title: 'Specifications'
+                  path: '/PageLayout/annotations/',
+                  title: 'Annotations'
                 },
                 {
-                  path: '/PageLayout/examples/',
-                  title: 'Examples'
+                  path: '/PageLayout/worldview/',
+                  title: 'Worldview'
                 },
                 {
-                  path: '/PageLayout/demo/',
-                  title: 'Demo'
+                  path: '/PageLayout/expressions/',
+                  title: 'Expressions'
                 }
               ]
             },

@@ -1,16 +1,13 @@
 ---
-title: Example 1
-description: This is example 1.
+title: Another example
+description: This is another example.
 contentType: example
 language:
   - JavaScript
-  - Kotlin
 topics:
   - Navigation
-level: 1
 thumbnail: header-image
 layout: example
-video: true
 products:
   - Documentation
   - Mapbox Tiling Service

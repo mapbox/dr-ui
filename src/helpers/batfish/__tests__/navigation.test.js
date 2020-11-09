@@ -23,7 +23,7 @@ describe('buildNavigation', () => {
     expect(buildNavigation('/help', helpDebug).navTabs).toMatchSnapshot();
   });
 
-  it('accordion pages are sorted by order', () => {
+  it('pages are sorted by order', () => {
     expect(buildNavigation('/api', apiDebug).navTabs).toEqual([
       {
         id: 'introduction',
@@ -78,7 +78,7 @@ describe('buildNavigation', () => {
             path: '/dr-ui/level-one/',
             frontMatter: {
               title: 'Top page',
-              layout: 'accordion',
+              layout: 'page',
               navOrder: 1
             }
           },
@@ -86,7 +86,7 @@ describe('buildNavigation', () => {
             path: '/dr-ui/level-one/a/',
             frontMatter: {
               title: 'Page a',
-              layout: 'accordion',
+              layout: 'page',
               hideFromNav: true
             }
           },
@@ -94,7 +94,7 @@ describe('buildNavigation', () => {
             path: '/dr-ui/level-one/b/',
             frontMatter: {
               title: 'Page b',
-              layout: 'accordion'
+              layout: 'page'
             }
           }
         ]

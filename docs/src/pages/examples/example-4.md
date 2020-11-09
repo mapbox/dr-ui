@@ -1,16 +1,14 @@
 ---
-title: Example 1
-description: This is example 1.
+title: Quickstart
+description: Get started with this example.
 contentType: example
 language:
   - JavaScript
   - Kotlin
 topics:
-  - Navigation
-level: 1
+  - Getting started
 thumbnail: header-image
 layout: example
-video: true
 products:
   - Documentation
   - Mapbox Tiling Service

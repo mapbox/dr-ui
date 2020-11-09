@@ -1,394 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`page-layout Accordion layout renders as expected 1`] = `
-Array [
-  <div
-    className="shell-header-buffer"
-  />,
-  <div
-    className="limiter limiter--wide"
-  >
-    <div
-      className="flex-parent-mm"
-    >
-      <div
-        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml "
-      >
-        <div
-          className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm px12-mm"
-          data-swiftype-index="false"
-          id="dr-ui--page-layout-sidebar"
-          style={
-            Object {
-              "top": "10px",
-            }
-          }
-        >
-          <div
-            className="my12 border-b border--darken10 pb12"
-          >
-            <div
-              className="flex-parent"
-              style={
-                Object {
-                  "overflow": "hidden",
-                }
-              }
-            >
-              <a
-                className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
-                href="/dr-ui/"
-              >
-                Search SDK for Android
-              </a>
-              <span
-                className="flex-child flex-child--no-shrink mx6"
-              >
-                <div
-                  className="inline-block"
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                >
-                  <div
-                    aria-describedby="tooltip-1"
-                    className="txt-s txt-bold round px6 inline-block cursor-default border"
-                    style={
-                      Object {
-                        "background": "#f1f3fd",
-                        "borderColor": "#0428c8",
-                        "color": "#0c248d",
-                      }
-                    }
-                  >
-                    Beta
-                  </div>
-                  <div
-                    className="hide-visually"
-                    id="tooltip-1"
-                    role="tooltip"
-                  >
-                    <div
-                      className="txt-s wmax120"
-                    >
-                      This feature is in public beta and is subject to changes.
-                    </div>
-                  </div>
-                </div>
-              </span>
-            </div>
-          </div>
-          <nav
-            className="mx-neg12"
-          >
-            <ul>
-              <li>
-                <div
-                  className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 bg-blue-faint color-blue flex-parent flex-parent--space-between-main"
-                >
-                  <a
-                    className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                    href="/PageLayout/"
-                    style={
-                      Object {
-                        "letterSpacing": "0.025em",
-                      }
-                    }
-                  >
-                    Overview
-                  </a>
-                  <button
-                    aria-controls="menu-overview"
-                    aria-expanded={false}
-                    aria-label="Toggle Overview menu"
-                    className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
-                    onClick={[Function]}
-                  >
-                    <svg
-                      className="events-none icon inline-block align-t"
-                      focusable="false"
-                      role="presentation"
-                      style={
-                        Object {
-                          "height": 18,
-                          "width": 18,
-                        }
-                      }
-                    >
-                      <use
-                        xlinkHref="#icon-chevron-down"
-                        xmlnsXlink="http://www.w3.org/1999/xlink"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </li>
-              <li>
-                <div
-                  className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
-                >
-                  <a
-                    className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                    href="/PageLayout/specification/"
-                    style={
-                      Object {
-                        "letterSpacing": "0.025em",
-                      }
-                    }
-                  >
-                    Specification
-                  </a>
-                </div>
-              </li>
-              <li>
-                <div
-                  className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
-                >
-                  <a
-                    className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                    href="/PageLayout/examples/"
-                    style={
-                      Object {
-                        "letterSpacing": "0.025em",
-                      }
-                    }
-                  >
-                    Examples
-                  </a>
-                </div>
-              </li>
-              <li>
-                <div
-                  className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
-                >
-                  <a
-                    className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                    href="/PageLayout/demo/"
-                    style={
-                      Object {
-                        "letterSpacing": "0.025em",
-                      }
-                    }
-                  >
-                    Demo
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <div
-        className="flex-child flex-child--grow"
-      >
-        <div
-          className="dr-ui--breadcrumb none block-mm px24 pt12"
-          data-swiftype-index="false"
-        >
-          <a
-            className="link"
-            href="https://docs.mapbox.com"
-          >
-            All docs
-          </a>
-          <span
-            className="color-gray-light inline-block px6"
-          >
-            <svg
-              className="events-none icon inline-block align-t"
-              focusable="false"
-              role="presentation"
-              style={
-                Object {
-                  "height": 18,
-                  "width": 18,
-                }
-              }
-            >
-              <use
-                xlinkHref="#icon-chevron-right"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-              />
-            </svg>
-          </span>
-          <a
-            className="link"
-            href="/dr-ui/"
-          >
-            dr-ui
-          </a>
-          <span
-            className="color-gray-light inline-block px6"
-          >
-            <svg
-              className="events-none icon inline-block align-t"
-              focusable="false"
-              role="presentation"
-              style={
-                Object {
-                  "height": 18,
-                  "width": 18,
-                }
-              }
-            >
-              <use
-                xlinkHref="#icon-chevron-right"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-              />
-            </svg>
-          </span>
-          <span
-            className="color-gray"
-          >
-            Overview
-          </span>
-        </div>
-        <div
-          className="pr0-mm mt24 mb60 px24-mm"
-          id="docs-content"
-        >
-          <div
-            className="col prose col--8-mxl col--12"
-          >
-            <h1
-              className="txt-fancy"
-            >
-              Overview
-            </h1>
-          </div>
-          <div
-            className="grid grid--gut60"
-          >
-            <div
-              className="dr-ui--page-layout-aside col col--4-mxl"
-            >
-              <aside
-                className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl"
-                data-swiftype-index="false"
-                style={
-                  Object {
-                    "top": "10px",
-                  }
-                }
-              >
-                <div
-                  className="none block-mxl"
-                >
-                  <div
-                    className="dr-ui--feedback"
-                  >
-                    <div>
-                      <h2
-                        className="unprose txt-m txt-bold mb6"
-                      >
-                        Was this 
-                        page
-                         helpful?
-                      </h2>
-                      <button
-                        className="btn btn--s"
-                        id="dr-ui--feedback-page-yes"
-                        onClick={[Function]}
-                      >
-                        Yes
-                      </button>
-                      <button
-                        className="btn btn--s ml6"
-                        id="dr-ui--feedback-page-no"
-                        onClick={[Function]}
-                      >
-                        No
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </aside>
-            </div>
-            <div
-              className="col col--8-mxl col--12 prose"
-            >
-              
-              <div
-                className="my36 block none-mxl"
-              >
-                <div
-                  className="dr-ui--feedback"
-                >
-                  <div>
-                    <h2
-                      className="unprose txt-m txt-bold mb6"
-                    >
-                      Was this 
-                      page
-                       helpful?
-                    </h2>
-                    <button
-                      className="btn btn--s"
-                      id="dr-ui--feedback-page-yes"
-                      onClick={[Function]}
-                    >
-                      Yes
-                    </button>
-                    <button
-                      className="btn btn--s ml6"
-                      id="dr-ui--feedback-page-no"
-                      onClick={[Function]}
-                    >
-                      No
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
-    className="fixed block none-mm mx24 my24 z5 bottom right"
-  >
-    <div
-      className="block mx24 my24 z5"
-    >
-      <div
-        className="inline-block"
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-      >
-        <button
-          aria-label="Back to top"
-          className="btn--blue w60 h60 px0 round-full shadow-darken25 color-white flex-parent flex-parent--center-main flex-parent--center-cross"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <svg
-            className="events-none icon"
-            focusable="false"
-            role="presentation"
-            style={
-              Object {
-                "height": 30,
-                "width": 30,
-              }
-            }
-          >
-            <use
-              xlinkHref="#icon-arrow-up"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>,
-]
-`;
-
 exports[`page-layout Example (index) layout renders as expected 1`] = `
 Array [
   <div
@@ -401,7 +12,7 @@ Array [
       className="flex-parent-mm"
     >
       <div
-        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml undefined"
+        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr36-mm undefined"
       >
         <div
           className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm px12-mm"
@@ -414,7 +25,7 @@ Array [
           }
         >
           <div
-            className="my12 border-b border--darken10 pb12"
+            className="mb12 border-b border--darken10 pb12"
           >
             <div
               className="flex-parent"
@@ -432,111 +43,115 @@ Array [
               </a>
             </div>
           </div>
-          <nav
-            className="mx-neg12"
+          <div
+            className=""
           >
-            <ul>
-              <li>
-                <div
-                  className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 bg-blue-faint color-blue flex-parent flex-parent--space-between-main"
-                >
-                  <a
-                    className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                    href="/PageLayout/"
-                    style={
-                      Object {
-                        "letterSpacing": "0.025em",
-                      }
-                    }
+            <nav
+              className="mx-neg12"
+            >
+              <ul>
+                <li>
+                  <div
+                    className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 flex-parent flex-parent--space-between-main"
                   >
-                    Overview
-                  </a>
-                  <button
-                    aria-controls="menu-overview"
-                    aria-expanded={false}
-                    aria-label="Toggle Overview menu"
-                    className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
-                    onClick={[Function]}
-                  >
-                    <svg
-                      className="events-none icon inline-block align-t"
-                      focusable="false"
-                      role="presentation"
+                    <a
+                      className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+                      href="/PageLayout/"
                       style={
                         Object {
-                          "height": 18,
-                          "width": 18,
+                          "letterSpacing": "0.025em",
                         }
                       }
                     >
-                      <use
-                        xlinkHref="#icon-chevron-down"
-                        xmlnsXlink="http://www.w3.org/1999/xlink"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </li>
-              <li>
-                <div
-                  className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
-                >
-                  <a
-                    className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                    href="/PageLayout/specification/"
-                    style={
-                      Object {
-                        "letterSpacing": "0.025em",
-                      }
-                    }
+                      Overview
+                    </a>
+                    <button
+                      aria-controls="menu-overview"
+                      aria-expanded={false}
+                      aria-label="Toggle Overview menu"
+                      className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
+                      onClick={[Function]}
+                    >
+                      <svg
+                        className="events-none icon inline-block align-t"
+                        focusable="false"
+                        role="presentation"
+                        style={
+                          Object {
+                            "height": 18,
+                            "width": 18,
+                          }
+                        }
+                      >
+                        <use
+                          xlinkHref="#icon-chevron-down"
+                          xmlnsXlink="http://www.w3.org/1999/xlink"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
                   >
-                    Specification
-                  </a>
-                </div>
-              </li>
-              <li>
-                <div
-                  className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
-                >
-                  <a
-                    className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                    href="/PageLayout/examples/"
-                    style={
-                      Object {
-                        "letterSpacing": "0.025em",
+                    <a
+                      className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+                      href="/PageLayout/specification/"
+                      style={
+                        Object {
+                          "letterSpacing": "0.025em",
+                        }
                       }
-                    }
+                    >
+                      Specification
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 bg-blue-faint color-blue"
                   >
-                    Examples
-                  </a>
-                </div>
-              </li>
-              <li>
-                <div
-                  className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
-                >
-                  <a
-                    className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                    href="/PageLayout/demo/"
-                    style={
-                      Object {
-                        "letterSpacing": "0.025em",
+                    <a
+                      className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+                      href="/PageLayout/examples/"
+                      style={
+                        Object {
+                          "letterSpacing": "0.025em",
+                        }
                       }
-                    }
+                    >
+                      Examples
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
                   >
-                    Demo
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </nav>
+                    <a
+                      className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+                      href="/PageLayout/demo/"
+                      style={
+                        Object {
+                          "letterSpacing": "0.025em",
+                        }
+                      }
+                    >
+                      Demo
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
       <div
         className="flex-child flex-child--grow"
       >
         <div
-          className="dr-ui--breadcrumb none block-mm px24 pt12"
+          className="dr-ui--breadcrumb none block-mm py12"
           data-swiftype-index="false"
         >
           <a
@@ -594,11 +209,10 @@ Array [
           <span
             className="color-gray"
           >
-            Demo
+            Examples
           </span>
         </div>
         <div
-          className="pr0-mm mt24 mb60 px24-mm"
           id="docs-content"
         >
           <div
@@ -614,314 +228,245 @@ Array [
             className="grid grid--gut60"
           >
             <div
+              className="dr-ui--page-layout-aside col col--12 col--4-mxl"
+            >
+              <aside
+                className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl"
+                data-swiftype-index="false"
+                style={
+                  Object {
+                    "top": "10px",
+                  }
+                }
+              >
+                <div
+                  className="mb18 mb0-mxl"
+                >
+                  <h2
+                    className="unprose txt-m txt-bold mb6"
+                  >
+                    Filters
+                  </h2>
+                  <div
+                    className="mb6"
+                  >
+                    <div
+                      className="relative "
+                    >
+                      <div>
+                        <label
+                          className="inline-block txt-s txt-bold color-darken75 w70"
+                          htmlFor="topic"
+                        >
+                          Topics
+                           
+                        </label>
+                      </div>
+                      <div
+                        className="select-container "
+                      >
+                        <select
+                          aria-required={true}
+                          className="select select select--s"
+                          data-test="topic-select"
+                          disabled={false}
+                          id="topic"
+                          onChange={[Function]}
+                          value=""
+                        >
+                          <option
+                            value=""
+                          >
+                            All topics
+                          </option>
+                          <option
+                            value="Cool"
+                          >
+                            Cool
+                          </option>
+                          <option
+                            value="Awesome"
+                          >
+                            Awesome
+                          </option>
+                        </select>
+                        <div
+                          className="select-arrow"
+                        />
+                      </div>
+                      <div
+                        role="alert"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </aside>
+            </div>
+            <div
               className="col prose"
             >
               <div>
-                <div>
-                  <div>
+                <div
+                  className="grid grid--gut36"
+                >
+                  <div
+                    className="mb18 col col--12 col--4-ml"
+                  >
                     <a
-                      className="unprose mb18 block color-blue-on-hover"
-                      href="/PageLayout/#cool"
-                    >
-                      <h2
-                        className="txt-bold"
-                        id="cool"
-                      >
-                        Cool
-                         
-                        <span
-                          data-swiftype-index="false"
-                        >
-                          (
-                          3
-                          )
-                        </span>
-                      </h2>
-                    </a>
-                    <div
-                      className="grid grid--gut36"
+                      className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+                      href="/PageLayout/example-1/"
                     >
                       <div
-                        className="mb18 col col--12 col--6-ml"
+                        className="relative h120 mb6"
                       >
-                        <a
-                          className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
-                          href="/PageLayout/example-1/"
-                        >
-                          <div
-                            className="relative h120 mb6"
-                          >
-                            <div />
-                          </div>
-                          <div>
-                            <div
-                              className="mb6"
-                            >
-                              
-                              <div
-                                className="inline-block color-gray txt-s txt-bold"
-                              >
-                                <svg
-                                  className="events-none icon inline-block align-t"
-                                  focusable="false"
-                                  role="presentation"
-                                  style={
-                                    Object {
-                                      "height": 18,
-                                      "width": 18,
-                                    }
-                                  }
-                                >
-                                  <use
-                                    xlinkHref="#icon-code"
-                                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                                  />
-                                </svg>
-                                 
-                                JavaScript
-                              </div>
-                            </div>
-                            <div
-                              className="mb6"
-                            >
-                              Example 1
-                            </div>
-                            <div
-                              className="color-gray color-gray-on-hover"
-                            >
-                              Replace me.
-                            </div>
-                          </div>
-                        </a>
+                        <div />
                       </div>
-                      <div
-                        className="mb18 col col--12 col--6-ml"
-                      >
-                        <a
-                          className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
-                          href="/PageLayout/example-2/"
+                      <div>
+                        <div
+                          className="mb6"
                         >
+                          
                           <div
-                            className="relative h120 mb6"
+                            className="inline-block color-gray txt-s txt-bold"
                           >
-                            <div />
-                          </div>
-                          <div>
-                            <div
-                              className="mb6"
-                            >
-                              
-                              <div
-                                className="inline-block color-gray txt-s txt-bold"
-                              >
-                                <svg
-                                  className="events-none icon inline-block align-t"
-                                  focusable="false"
-                                  role="presentation"
-                                  style={
-                                    Object {
-                                      "height": 18,
-                                      "width": 18,
-                                    }
-                                  }
-                                >
-                                  <use
-                                    xlinkHref="#icon-code"
-                                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                                  />
-                                </svg>
-                                 
-                                JavaScript
-                              </div>
-                            </div>
-                            <div
-                              className="mb6"
-                            >
-                              Example 2
-                            </div>
-                            <div
-                              className="color-gray color-gray-on-hover"
-                            >
-                              Replace me.
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <div
-                        className="mb18 col col--12 col--6-ml"
-                      >
-                        <a
-                          className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
-                          href="/PageLayout/example-3/"
-                        >
-                          <div
-                            className="relative h120 mb6"
-                          >
-                            <div />
-                          </div>
-                          <div>
-                            <div
-                              className="mb6"
-                            >
-                              
-                              <div
-                                className="inline-block color-gray txt-s txt-bold"
-                              >
-                                <svg
-                                  className="events-none icon inline-block align-t"
-                                  focusable="false"
-                                  role="presentation"
-                                  style={
-                                    Object {
-                                      "height": 18,
-                                      "width": 18,
-                                    }
-                                  }
-                                >
-                                  <use
-                                    xlinkHref="#icon-code"
-                                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                                  />
-                                </svg>
-                                 
-                                JavaScript
-                              </div>
-                            </div>
-                            <div
-                              className="mb6"
-                            >
-                              Example 3
-                            </div>
-                            <div
-                              className="color-gray color-gray-on-hover"
-                            >
-                              Replace me.
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div>
-                    <a
-                      className="unprose mb18 block color-blue-on-hover"
-                      href="/PageLayout/#awesome"
-                    >
-                      <h2
-                        className="txt-bold"
-                        id="awesome"
-                      >
-                        Awesome
-                         
-                        <span
-                          data-swiftype-index="false"
-                        >
-                          (
-                          1
-                          )
-                        </span>
-                      </h2>
-                    </a>
-                    <div
-                      className="grid grid--gut36"
-                    >
-                      <div
-                        className="mb18 col col--12 col--6-ml"
-                      >
-                        <a
-                          className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
-                          href="/PageLayout/example-3/"
-                        >
-                          <div
-                            className="relative h120 mb6"
-                          >
-                            <div
-                              className="absolute top bottom w-full h-full round"
+                            <svg
+                              className="events-none icon inline-block align-t"
+                              focusable="false"
+                              role="presentation"
                               style={
                                 Object {
-                                  "backgroundImage": "url(/files/ios-horizontal.png)",
-                                  "backgroundPosition": "center",
-                                  "backgroundRepeat": "no-repeat",
-                                  "backgroundSize": "cover",
+                                  "height": 18,
+                                  "width": 18,
                                 }
                               }
-                            />
+                            >
+                              <use
+                                xlinkHref="#icon-code"
+                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                              />
+                            </svg>
+                             
+                            JavaScript
                           </div>
-                          <div>
-                            <div
-                              className="mb6"
-                            >
-                              
-                              <div
-                                className="inline-block color-gray txt-s txt-bold"
-                              >
-                                <svg
-                                  className="events-none icon inline-block align-t"
-                                  focusable="false"
-                                  role="presentation"
-                                  style={
-                                    Object {
-                                      "height": 18,
-                                      "width": 18,
-                                    }
-                                  }
-                                >
-                                  <use
-                                    xlinkHref="#icon-code"
-                                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                                  />
-                                </svg>
-                                 
-                                JavaScript
-                              </div>
-                            </div>
-                            <div
-                              className="mb6"
-                            >
-                              Example 3
-                            </div>
-                            <div
-                              className="color-gray color-gray-on-hover"
-                            >
-                              Replace me.
-                            </div>
-                          </div>
-                        </a>
+                        </div>
+                        <div
+                          className="mb6"
+                        >
+                          Example 1
+                        </div>
+                        <div
+                          className="color-gray color-gray-on-hover"
+                        >
+                          Replace me.
+                        </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
-                </div>
-              </div>
-              <div
-                className="my36 block none-mxl"
-              >
-                <div
-                  className="dr-ui--feedback"
-                >
-                  <div>
-                    <h2
-                      className="unprose txt-m txt-bold mb6"
+                  <div
+                    className="mb18 col col--12 col--4-ml"
+                  >
+                    <a
+                      className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+                      href="/PageLayout/example-2/"
                     >
-                      Was this 
-                      page
-                       helpful?
-                    </h2>
-                    <button
-                      className="btn btn--s"
-                      id="dr-ui--feedback-page-yes"
-                      onClick={[Function]}
+                      <div
+                        className="relative h120 mb6"
+                      >
+                        <div />
+                      </div>
+                      <div>
+                        <div
+                          className="mb6"
+                        >
+                          
+                          <div
+                            className="inline-block color-gray txt-s txt-bold"
+                          >
+                            <svg
+                              className="events-none icon inline-block align-t"
+                              focusable="false"
+                              role="presentation"
+                              style={
+                                Object {
+                                  "height": 18,
+                                  "width": 18,
+                                }
+                              }
+                            >
+                              <use
+                                xlinkHref="#icon-code"
+                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                              />
+                            </svg>
+                             
+                            JavaScript
+                          </div>
+                        </div>
+                        <div
+                          className="mb6"
+                        >
+                          Example 2
+                        </div>
+                        <div
+                          className="color-gray color-gray-on-hover"
+                        >
+                          Replace me.
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    className="mb18 col col--12 col--4-ml"
+                  >
+                    <a
+                      className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+                      href="/PageLayout/example-3/"
                     >
-                      Yes
-                    </button>
-                    <button
-                      className="btn btn--s ml6"
-                      id="dr-ui--feedback-page-no"
-                      onClick={[Function]}
-                    >
-                      No
-                    </button>
+                      <div
+                        className="relative h120 mb6"
+                      >
+                        <div />
+                      </div>
+                      <div>
+                        <div
+                          className="mb6"
+                        >
+                          
+                          <div
+                            className="inline-block color-gray txt-s txt-bold"
+                          >
+                            <svg
+                              className="events-none icon inline-block align-t"
+                              focusable="false"
+                              role="presentation"
+                              style={
+                                Object {
+                                  "height": 18,
+                                  "width": 18,
+                                }
+                              }
+                            >
+                              <use
+                                xlinkHref="#icon-code"
+                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                              />
+                            </svg>
+                             
+                            JavaScript
+                          </div>
+                        </div>
+                        <div
+                          className="mb6"
+                        >
+                          Example 3
+                        </div>
+                        <div
+                          className="color-gray color-gray-on-hover"
+                        >
+                          Replace me.
+                        </div>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -986,7 +531,7 @@ Array [
       className="flex-parent-mm"
     >
       <div
-        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml undefined"
+        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr36-mm undefined"
       >
         <div
           className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm px12-mm"
@@ -999,7 +544,7 @@ Array [
           }
         >
           <div
-            className="my12 border-b border--darken10 pb12"
+            className="mb12 border-b border--darken10 pb12"
           >
             <div
               className="flex-parent"
@@ -1017,111 +562,115 @@ Array [
               </a>
             </div>
           </div>
-          <nav
-            className="mx-neg12"
+          <div
+            className=""
           >
-            <ul>
-              <li>
-                <div
-                  className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 bg-blue-faint color-blue flex-parent flex-parent--space-between-main"
-                >
-                  <a
-                    className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                    href="/PageLayout/"
-                    style={
-                      Object {
-                        "letterSpacing": "0.025em",
-                      }
-                    }
+            <nav
+              className="mx-neg12"
+            >
+              <ul>
+                <li>
+                  <div
+                    className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 flex-parent flex-parent--space-between-main"
                   >
-                    Overview
-                  </a>
-                  <button
-                    aria-controls="menu-overview"
-                    aria-expanded={false}
-                    aria-label="Toggle Overview menu"
-                    className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
-                    onClick={[Function]}
-                  >
-                    <svg
-                      className="events-none icon inline-block align-t"
-                      focusable="false"
-                      role="presentation"
+                    <a
+                      className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+                      href="/PageLayout/"
                       style={
                         Object {
-                          "height": 18,
-                          "width": 18,
+                          "letterSpacing": "0.025em",
                         }
                       }
                     >
-                      <use
-                        xlinkHref="#icon-chevron-down"
-                        xmlnsXlink="http://www.w3.org/1999/xlink"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </li>
-              <li>
-                <div
-                  className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
-                >
-                  <a
-                    className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                    href="/PageLayout/specification/"
-                    style={
-                      Object {
-                        "letterSpacing": "0.025em",
-                      }
-                    }
+                      Overview
+                    </a>
+                    <button
+                      aria-controls="menu-overview"
+                      aria-expanded={false}
+                      aria-label="Toggle Overview menu"
+                      className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
+                      onClick={[Function]}
+                    >
+                      <svg
+                        className="events-none icon inline-block align-t"
+                        focusable="false"
+                        role="presentation"
+                        style={
+                          Object {
+                            "height": 18,
+                            "width": 18,
+                          }
+                        }
+                      >
+                        <use
+                          xlinkHref="#icon-chevron-down"
+                          xmlnsXlink="http://www.w3.org/1999/xlink"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
                   >
-                    Specification
-                  </a>
-                </div>
-              </li>
-              <li>
-                <div
-                  className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
-                >
-                  <a
-                    className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                    href="/PageLayout/examples/"
-                    style={
-                      Object {
-                        "letterSpacing": "0.025em",
+                    <a
+                      className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+                      href="/PageLayout/specification/"
+                      style={
+                        Object {
+                          "letterSpacing": "0.025em",
+                        }
                       }
-                    }
+                    >
+                      Specification
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 bg-blue-faint color-blue"
                   >
-                    Examples
-                  </a>
-                </div>
-              </li>
-              <li>
-                <div
-                  className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
-                >
-                  <a
-                    className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                    href="/PageLayout/demo/"
-                    style={
-                      Object {
-                        "letterSpacing": "0.025em",
+                    <a
+                      className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+                      href="/PageLayout/examples/"
+                      style={
+                        Object {
+                          "letterSpacing": "0.025em",
+                        }
                       }
-                    }
+                    >
+                      Examples
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
                   >
-                    Demo
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </nav>
+                    <a
+                      className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+                      href="/PageLayout/demo/"
+                      style={
+                        Object {
+                          "letterSpacing": "0.025em",
+                        }
+                      }
+                    >
+                      Demo
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
       <div
         className="flex-child flex-child--grow"
       >
         <div
-          className="dr-ui--breadcrumb none block-mm px24 pt12"
+          className="dr-ui--breadcrumb none block-mm py12"
           data-swiftype-index="false"
         >
           <a
@@ -1176,14 +725,39 @@ Array [
               />
             </svg>
           </span>
+          <a
+            className="link"
+            href="/PageLayout/examples/"
+          >
+            Examples
+          </a>
+          <span
+            className="color-gray-light inline-block px6"
+          >
+            <svg
+              className="events-none icon inline-block align-t"
+              focusable="false"
+              role="presentation"
+              style={
+                Object {
+                  "height": 18,
+                  "width": 18,
+                }
+              }
+            >
+              <use
+                xlinkHref="#icon-chevron-right"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              />
+            </svg>
+          </span>
           <span
             className="color-gray"
           >
-            Demo
+            An example
           </span>
         </div>
         <div
-          className="pr0-mm mt24 mb60 px24-mm"
           id="docs-content"
         >
           <div
@@ -1192,7 +766,7 @@ Array [
             <h1
               className="txt-fancy"
             >
-              Examples
+              An example
             </h1>
           </div>
           <div
@@ -1201,7 +775,9 @@ Array [
             <div
               className="col prose"
             >
-              
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
               <div
                 className="my36"
               >
@@ -1294,7 +870,7 @@ Array [
       className="flex-parent-mm"
     >
       <div
-        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml "
+        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr36-mm "
       >
         <div
           className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm px12-mm"
@@ -1307,7 +883,7 @@ Array [
           }
         >
           <div
-            className="my12 border-b border--darken10 pb12"
+            className="mb12 border-b border--darken10 pb12"
           >
             <div
               className="flex-parent"
@@ -1325,111 +901,115 @@ Array [
               </a>
             </div>
           </div>
-          <nav
-            className="mx-neg12"
+          <div
+            className=""
           >
-            <ul>
-              <li>
-                <div
-                  className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 flex-parent flex-parent--space-between-main"
-                >
-                  <a
-                    className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                    href="/PageLayout/"
-                    style={
-                      Object {
-                        "letterSpacing": "0.025em",
-                      }
-                    }
+            <nav
+              className="mx-neg12"
+            >
+              <ul>
+                <li>
+                  <div
+                    className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 bg-blue-faint color-blue flex-parent flex-parent--space-between-main"
                   >
-                    Overview
-                  </a>
-                  <button
-                    aria-controls="menu-overview"
-                    aria-expanded={false}
-                    aria-label="Toggle Overview menu"
-                    className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
-                    onClick={[Function]}
-                  >
-                    <svg
-                      className="events-none icon inline-block align-t"
-                      focusable="false"
-                      role="presentation"
+                    <a
+                      className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+                      href="/PageLayout/"
                       style={
                         Object {
-                          "height": 18,
-                          "width": 18,
+                          "letterSpacing": "0.025em",
                         }
                       }
                     >
-                      <use
-                        xlinkHref="#icon-chevron-down"
-                        xmlnsXlink="http://www.w3.org/1999/xlink"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </li>
-              <li>
-                <div
-                  className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
-                >
-                  <a
-                    className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                    href="/PageLayout/specification/"
-                    style={
-                      Object {
-                        "letterSpacing": "0.025em",
-                      }
-                    }
+                      Overview
+                    </a>
+                    <button
+                      aria-controls="menu-overview"
+                      aria-expanded={false}
+                      aria-label="Toggle Overview menu"
+                      className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
+                      onClick={[Function]}
+                    >
+                      <svg
+                        className="events-none icon inline-block align-t"
+                        focusable="false"
+                        role="presentation"
+                        style={
+                          Object {
+                            "height": 18,
+                            "width": 18,
+                          }
+                        }
+                      >
+                        <use
+                          xlinkHref="#icon-chevron-down"
+                          xmlnsXlink="http://www.w3.org/1999/xlink"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
                   >
-                    Specification
-                  </a>
-                </div>
-              </li>
-              <li>
-                <div
-                  className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
-                >
-                  <a
-                    className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                    href="/PageLayout/examples/"
-                    style={
-                      Object {
-                        "letterSpacing": "0.025em",
+                    <a
+                      className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+                      href="/PageLayout/specification/"
+                      style={
+                        Object {
+                          "letterSpacing": "0.025em",
+                        }
                       }
-                    }
+                    >
+                      Specification
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
                   >
-                    Examples
-                  </a>
-                </div>
-              </li>
-              <li>
-                <div
-                  className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
-                >
-                  <a
-                    className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                    href="/PageLayout/demo/"
-                    style={
-                      Object {
-                        "letterSpacing": "0.025em",
+                    <a
+                      className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+                      href="/PageLayout/examples/"
+                      style={
+                        Object {
+                          "letterSpacing": "0.025em",
+                        }
                       }
-                    }
+                    >
+                      Examples
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
                   >
-                    Demo
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </nav>
+                    <a
+                      className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+                      href="/PageLayout/demo/"
+                      style={
+                        Object {
+                          "letterSpacing": "0.025em",
+                        }
+                      }
+                    >
+                      Demo
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
       <div
         className="flex-child flex-child--grow"
       >
         <div
-          className="dr-ui--breadcrumb none block-mm px24 pt12"
+          className="dr-ui--breadcrumb none block-mm py12"
           data-swiftype-index="false"
         >
           <a
@@ -1491,7 +1071,6 @@ Array [
           </span>
         </div>
         <div
-          className="pr0-mm mt24 mb60 px24-mm"
           id="docs-content"
         >
           <div
@@ -1507,7 +1086,7 @@ Array [
             className="grid grid--gut60"
           >
             <div
-              className="dr-ui--page-layout-aside col col--4-mxl"
+              className="dr-ui--page-layout-aside col col--12 col--4-mxl"
             >
               <aside
                 className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl"
@@ -1618,388 +1197,6 @@ Array [
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
-              
-              <div
-                className="my36 block none-mxl"
-              >
-                <div
-                  className="dr-ui--feedback"
-                >
-                  <div>
-                    <h2
-                      className="unprose txt-m txt-bold mb6"
-                    >
-                      Was this 
-                      page
-                       helpful?
-                    </h2>
-                    <button
-                      className="btn btn--s"
-                      id="dr-ui--feedback-page-yes"
-                      onClick={[Function]}
-                    >
-                      Yes
-                    </button>
-                    <button
-                      className="btn btn--s ml6"
-                      id="dr-ui--feedback-page-no"
-                      onClick={[Function]}
-                    >
-                      No
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
-    className="fixed block none-mm mx24 my24 z5 bottom right"
-  >
-    <div
-      className="block mx24 my24 z5"
-    >
-      <div
-        className="inline-block"
-        onBlur={[Function]}
-        onClick={[Function]}
-        onFocus={[Function]}
-        onKeyDown={[Function]}
-      >
-        <button
-          aria-label="Back to top"
-          className="btn--blue w60 h60 px0 round-full shadow-darken25 color-white flex-parent flex-parent--center-main flex-parent--center-cross"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <svg
-            className="events-none icon"
-            focusable="false"
-            role="presentation"
-            style={
-              Object {
-                "height": 30,
-                "width": 30,
-              }
-            }
-          >
-            <use
-              xlinkHref="#icon-arrow-up"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>,
-]
-`;
-
-exports[`page-layout Set hideSearch to remove Search component renders as expected 1`] = `
-Array [
-  <div
-    className="shell-header-buffer"
-  />,
-  <div
-    className="limiter limiter--wide"
-  >
-    <div
-      className="flex-parent-mm"
-    >
-      <div
-        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml "
-      >
-        <div
-          className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm px12-mm"
-          data-swiftype-index="false"
-          id="dr-ui--page-layout-sidebar"
-          style={
-            Object {
-              "top": "10px",
-            }
-          }
-        >
-          <div
-            className="my12 border-b border--darken10 pb12"
-          >
-            <div
-              className="flex-parent"
-              style={
-                Object {
-                  "overflow": "hidden",
-                }
-              }
-            >
-              <a
-                className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
-                href="/dr-ui/"
-              >
-                dr-ui
-              </a>
-            </div>
-          </div>
-          <nav
-            className="mx-neg12"
-          >
-            <ul>
-              <li>
-                <div
-                  className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
-                >
-                  <a
-                    className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                    href="/PageLayout/"
-                    style={
-                      Object {
-                        "letterSpacing": "0.025em",
-                      }
-                    }
-                  >
-                    Overview
-                  </a>
-                </div>
-              </li>
-              <li>
-                <div
-                  className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
-                >
-                  <a
-                    className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                    href="/PageLayout/specification/"
-                    style={
-                      Object {
-                        "letterSpacing": "0.025em",
-                      }
-                    }
-                  >
-                    Specification
-                  </a>
-                </div>
-              </li>
-              <li>
-                <div
-                  className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 flex-parent flex-parent--space-between-main"
-                >
-                  <a
-                    className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                    href="/PageLayout/examples/"
-                    style={
-                      Object {
-                        "letterSpacing": "0.025em",
-                      }
-                    }
-                  >
-                    Examples
-                  </a>
-                  <button
-                    aria-controls="menu-examples"
-                    aria-expanded={false}
-                    aria-label="Toggle Examples menu"
-                    className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
-                    onClick={[Function]}
-                  >
-                    <svg
-                      className="events-none icon inline-block align-t"
-                      focusable="false"
-                      role="presentation"
-                      style={
-                        Object {
-                          "height": 18,
-                          "width": 18,
-                        }
-                      }
-                    >
-                      <use
-                        xlinkHref="#icon-chevron-down"
-                        xmlnsXlink="http://www.w3.org/1999/xlink"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <div
-        className="flex-child flex-child--grow"
-      >
-        <div
-          className="dr-ui--breadcrumb none block-mm px24 pt12"
-          data-swiftype-index="false"
-        >
-          <a
-            className="link"
-            href="https://docs.mapbox.com"
-          >
-            All docs
-          </a>
-          <span
-            className="color-gray-light inline-block px6"
-          >
-            <svg
-              className="events-none icon inline-block align-t"
-              focusable="false"
-              role="presentation"
-              style={
-                Object {
-                  "height": 18,
-                  "width": 18,
-                }
-              }
-            >
-              <use
-                xlinkHref="#icon-chevron-right"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-              />
-            </svg>
-          </span>
-          <a
-            className="link"
-            href="/dr-ui/"
-          >
-            dr-ui
-          </a>
-          <span
-            className="color-gray-light inline-block px6"
-          >
-            <svg
-              className="events-none icon inline-block align-t"
-              focusable="false"
-              role="presentation"
-              style={
-                Object {
-                  "height": 18,
-                  "width": 18,
-                }
-              }
-            >
-              <use
-                xlinkHref="#icon-chevron-right"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-              />
-            </svg>
-          </span>
-          <span
-            className="color-gray"
-          >
-            Overview
-          </span>
-        </div>
-        <div
-          className="pr0-mm mt24 mb60 px24-mm"
-          id="docs-content"
-        >
-          <div
-            className="col prose col--8-mxl col--12"
-          >
-            <h1
-              className="txt-fancy"
-            >
-              Overview
-            </h1>
-          </div>
-          <div
-            className="grid grid--gut60"
-          >
-            <div
-              className="dr-ui--page-layout-aside col col--4-mxl"
-            >
-              <aside
-                className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl"
-                data-swiftype-index="false"
-                style={
-                  Object {
-                    "top": "10px",
-                  }
-                }
-              >
-                <nav
-                  aria-labelledby="on-this-page"
-                  className="dr-ui--on-this-page mb36-mxl mb18"
-                >
-                  <h2
-                    className="unprose txt-m txt-bold mb6"
-                    id="on-this-page"
-                  >
-                    On this page
-                  </h2>
-                  <ul
-                    className=""
-                  >
-                    <li
-                      className="mb3 mb6-mxl"
-                    >
-                      <a
-                        className="link inline-block link--gray"
-                        href="#section-1"
-                        style={
-                          Object {
-                            "wordBreak": "break-word",
-                          }
-                        }
-                      >
-                        Section 1
-                      </a>
-                    </li>
-                    <li
-                      className="mb3 mb6-mxl"
-                    >
-                      <a
-                        className="link inline-block link--gray"
-                        href="#section-2"
-                        style={
-                          Object {
-                            "wordBreak": "break-word",
-                          }
-                        }
-                      >
-                        Section 2
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-                <div
-                  className="none block-mxl"
-                >
-                  <div
-                    className="dr-ui--feedback"
-                  >
-                    <div>
-                      <h2
-                        className="unprose txt-m txt-bold mb6"
-                      >
-                        Was this 
-                        page
-                         helpful?
-                      </h2>
-                      <button
-                        className="btn btn--s"
-                        id="dr-ui--feedback-page-yes"
-                        onClick={[Function]}
-                      >
-                        Yes
-                      </button>
-                      <button
-                        className="btn btn--s ml6"
-                        id="dr-ui--feedback-page-no"
-                        onClick={[Function]}
-                      >
-                        No
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </aside>
-            </div>
-            <div
-              className="col col--8-mxl col--12 prose"
-            >
-              
               <div
                 className="my36 block none-mxl"
               >
@@ -2092,7 +1289,7 @@ Array [
       className="flex-parent-mm"
     >
       <div
-        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr6-mm mr18-ml undefined"
+        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr36-mm undefined"
       >
         <div
           className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm px12-mm"
@@ -2105,7 +1302,7 @@ Array [
           }
         >
           <div
-            className="my12 border-b border--darken10 pb12"
+            className="mb12 border-b border--darken10 pb12"
           >
             <div
               className="flex-parent"
@@ -2123,36 +1320,40 @@ Array [
               </a>
             </div>
           </div>
-          <nav
-            className="mx-neg12"
+          <div
+            className="none block-mm"
           >
-            <ul>
-              <li>
-                <div
-                  className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
-                >
-                  <a
-                    className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                    href="/dr-ui/overview/"
-                    style={
-                      Object {
-                        "letterSpacing": "0.025em",
-                      }
-                    }
+            <nav
+              className="mx-neg12"
+            >
+              <ul>
+                <li>
+                  <div
+                    className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 bg-blue-faint color-blue"
                   >
-                    Overview
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </nav>
+                    <a
+                      className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+                      href="/PageLayout/"
+                      style={
+                        Object {
+                          "letterSpacing": "0.025em",
+                        }
+                      }
+                    >
+                      Overview
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
       <div
         className="flex-child flex-child--grow"
       >
         <div
-          className="dr-ui--breadcrumb none block-mm px24 pt12"
+          className="dr-ui--breadcrumb none block-mm py12"
           data-swiftype-index="false"
         >
           <a
@@ -2214,7 +1415,6 @@ Array [
           </span>
         </div>
         <div
-          className="pr0-mm mt24 mb60 px24-mm"
           id="docs-content"
         >
           <div
@@ -2251,7 +1451,6 @@ Array [
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
-              
               <div
                 className="my36"
               >
