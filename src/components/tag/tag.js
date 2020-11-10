@@ -38,7 +38,7 @@ Tag.defaultProps = {
 Tag.propTypes = {
   theme: PropTypes.oneOf(['beta', 'fundamentals', 'legacy', 'new', 'custom'])
     .isRequired,
-  /** If `true`, display the tag with a smaller font and padding */
+  /** If `true`, display the tag with a smaller font and and no border */
   small: PropTypes.bool,
   /** If the theme is set to "custom", this prop is required. */
   customLabel: (props, componentName) => {
