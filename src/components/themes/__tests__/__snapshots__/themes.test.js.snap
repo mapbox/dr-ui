@@ -117,7 +117,7 @@ exports[`themes beta renders as expected 1`] = `
   >
     <div
       aria-describedby="tooltip-1"
-      className="txt-bold px6 round inline-block cursor-default border txt-s"
+      className="txt-bold px6 round inline-block cursor-default txt-s border"
       style={
         Object {
           "background": "#f1f3fd",
@@ -267,7 +267,7 @@ exports[`themes fundamentals renders as expected 1`] = `
   >
     <div
       aria-describedby="tooltip-3"
-      className="txt-bold px6 round inline-block cursor-default border txt-s"
+      className="txt-bold px6 round inline-block cursor-default txt-s border"
       style={
         Object {
           "background": "#fff0f7",
@@ -355,7 +355,7 @@ exports[`themes legacy or warning renders as expected 1`] = `
   >
     <div
       aria-describedby="tooltip-2"
-      className="txt-bold px6 round inline-block cursor-default border txt-s"
+      className="txt-bold px6 round inline-block cursor-default txt-s border"
       style={
         Object {
           "background": "#feefe2",

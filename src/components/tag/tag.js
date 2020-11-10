@@ -17,10 +17,10 @@ export default class Tag extends React.Component {
         <div
           style={theme.styles}
           className={classnames(
-            'txt-bold px6 round inline-block cursor-default border',
+            'txt-bold px6 round inline-block cursor-default',
             {
-              'txt-s': !this.props.small,
-              'txt-xs border--transparent ml-neg3': this.props.small
+              'txt-s border': !this.props.small,
+              'txt-xs ml-neg3': this.props.small
             }
           )}
         >
