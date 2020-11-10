@@ -17,7 +17,11 @@ class ProductMenu extends React.PureComponent {
         ? item.customTagProps.customStyles
         : undefined
     };
-    return <Tag {...tagProps} small={true} />;
+    return (
+      <div className="ml-neg3">
+        <Tag {...tagProps} small={true} />
+      </div>
+    );
   };
 
   render() {
