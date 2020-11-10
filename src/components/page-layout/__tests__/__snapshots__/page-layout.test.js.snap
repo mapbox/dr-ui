@@ -248,55 +248,59 @@ Array [
                     Filters
                   </h2>
                   <div
-                    className="mb6"
+                    className="grid grid--gut6"
                   >
                     <div
-                      className="relative "
+                      className="col col--6 col--4-ml col--12-mxl mb6"
                     >
-                      <div>
-                        <label
-                          className="inline-block txt-s txt-bold color-darken75 w70"
-                          htmlFor="topic"
-                        >
-                          Topics
-                           
-                        </label>
-                      </div>
                       <div
-                        className="select-container "
+                        className="relative "
                       >
-                        <select
-                          aria-required={true}
-                          className="select select select--s"
-                          data-test="topic-select"
-                          disabled={false}
-                          id="topic"
-                          onChange={[Function]}
-                          value=""
+                        <div>
+                          <label
+                            className="inline-block txt-s txt-bold color-darken75 w70"
+                            htmlFor="topic"
+                          >
+                            Topics
+                             
+                          </label>
+                        </div>
+                        <div
+                          className="select-container "
                         >
-                          <option
+                          <select
+                            aria-required={true}
+                            className="select select select--s"
+                            data-test="topic-select"
+                            disabled={false}
+                            id="topic"
+                            onChange={[Function]}
                             value=""
                           >
-                            All topics
-                          </option>
-                          <option
-                            value="Cool"
-                          >
-                            Cool
-                          </option>
-                          <option
-                            value="Awesome"
-                          >
-                            Awesome
-                          </option>
-                        </select>
+                            <option
+                              value=""
+                            >
+                              All topics
+                            </option>
+                            <option
+                              value="Cool"
+                            >
+                              Cool
+                            </option>
+                            <option
+                              value="Awesome"
+                            >
+                              Awesome
+                            </option>
+                          </select>
+                          <div
+                            className="select-arrow"
+                          />
+                        </div>
                         <div
-                          className="select-arrow"
+                          role="alert"
                         />
                       </div>
-                      <div
-                        role="alert"
-                      />
                     </div>
                   </div>
                 </div>
@@ -310,7 +314,7 @@ Array [
                   className="grid grid--gut36"
                 >
                   <div
-                    className="mb18 col col--12 col--4-ml"
+                    className="mb18 col col--12 col--6-ml"
                   >
                     <a
                       className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
@@ -363,7 +367,7 @@ Array [
                     </a>
                   </div>
                   <div
-                    className="mb18 col col--12 col--4-ml"
+                    className="mb18 col col--12 col--6-ml"
                   >
                     <a
                       className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
@@ -416,7 +420,7 @@ Array [
                     </a>
                   </div>
                   <div
-                    className="mb18 col col--12 col--4-ml"
+                    className="mb18 col col--12 col--6-ml"
                   >
                     <a
                       className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"

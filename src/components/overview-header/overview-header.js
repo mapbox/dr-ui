@@ -103,12 +103,12 @@ class OverviewHeader extends React.PureComponent {
 
     return (
       <div className="dr-ui--overview-header border-b border--darken10 prose mb24 pr60-mxl">
-        <h1 className="mb6 txt-fancy">
-          {props.title}
-          {props.tag && this.buildTag(props)}
-        </h1>
         <div className="flex-parent">
           <div className="flex-child flex-child--grow">
+            <h1 className="mb6 txt-fancy">
+              {props.title}
+              {props.tag && this.buildTag(props)}
+            </h1>
             {this.renderVersion()}
             <ul className="mb24" style={{ listStyle: 'none' }}>
               {featuresList}

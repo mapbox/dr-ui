@@ -123,63 +123,64 @@ export default class ExampleIndex extends React.PureComponent {
     const { filters, frontMatter } = this.props;
     const { topic, language, level, videos, product } = this.state;
 
-    return frontMatter.showFilters.length > 1 ? (
+    return frontMatter.showFilters.length > 0 ? (
       <div className="mb18 mb0-mxl">
         <AsideHeading>Filters</AsideHeading>
-
-        {filters.products &&
-          filters.products.length > 1 &&
-          frontMatter.showFilters.indexOf('products') > -1 && (
+        <div className="grid grid--gut6">
+          {filters.products &&
+            filters.products.length > 1 &&
+            frontMatter.showFilters.indexOf('products') > -1 && (
+              <FilterSection
+                title="Products"
+                data={filters.products}
+                id="product"
+                activeItem={product}
+                handleInput={this.handleInput}
+              />
+            )}
+          {filters.topics &&
+            filters.topics.length > 1 &&
+            frontMatter.showFilters.indexOf('topics') > -1 && (
+              <FilterSection
+                title="Topics"
+                data={filters.topics}
+                id="topic"
+                activeItem={topic}
+                handleInput={this.handleInput}
+              />
+            )}
+          {filters.languages &&
+            filters.languages.length > 1 &&
+            frontMatter.showFilters.indexOf('languages') > -1 && (
+              <FilterSection
+                title="Languages"
+                data={filters.languages}
+                id="language"
+                activeItem={language}
+                handleInput={this.handleInput}
+              />
+            )}
+          {filters.levels &&
+            filters.levels.length > 1 &&
+            frontMatter.showFilters.indexOf('levels') > -1 && (
+              <FilterSection
+                title="Levels"
+                data={filters.levels}
+                id="level"
+                activeItem={level}
+                handleInput={this.handleInput}
+              />
+            )}
+          {filters.videos && frontMatter.showFilters.indexOf('videos') > -1 && (
             <FilterSection
-              title="Products"
-              data={filters.products}
-              id="product"
-              activeItem={product}
+              title="Videos only"
+              id="videos"
+              activeItem={videos}
+              isSwitch={true}
               handleInput={this.handleInput}
             />
           )}
-        {filters.topics &&
-          filters.topics.length > 1 &&
-          frontMatter.showFilters.indexOf('topics') > -1 && (
-            <FilterSection
-              title="Topics"
-              data={filters.topics}
-              id="topic"
-              activeItem={topic}
-              handleInput={this.handleInput}
-            />
-          )}
-        {filters.languages &&
-          filters.languages.length > 1 &&
-          frontMatter.showFilters.indexOf('languages') > -1 && (
-            <FilterSection
-              title="Languages"
-              data={filters.languages}
-              id="language"
-              activeItem={language}
-              handleInput={this.handleInput}
-            />
-          )}
-        {filters.levels &&
-          filters.levels.length > 1 &&
-          frontMatter.showFilters.indexOf('levels') > -1 && (
-            <FilterSection
-              title="Levels"
-              data={filters.levels}
-              id="level"
-              activeItem={level}
-              handleInput={this.handleInput}
-            />
-          )}
-        {filters.videos && frontMatter.showFilters.indexOf('videos') > -1 && (
-          <FilterSection
-            title="Videos only"
-            id="videos"
-            activeItem={videos}
-            isSwitch={true}
-            handleInput={this.handleInput}
-          />
-        )}
+        </div>
       </div>
     ) : (
       ''
@@ -226,7 +227,11 @@ export default class ExampleIndex extends React.PureComponent {
     let filteredPages = filters.pages;
 
     if (topic) {
-      filteredPages = filteredPages.filter((f) => f.topics.indexOf(topic) > -1);
+      filteredPages = filteredPages.filter(
+        (f) =>
+          (f.topics && f.topics.indexOf(topic) > -1) ||
+          (f.topic && f.topic === topic)
+      );
     }
 
     if (product) {
@@ -356,7 +361,7 @@ class FilterSection extends React.PureComponent {
     const themeLabel = 'txt-s txt-bold color-darken75';
     return (
       <div
-        className={classnames('', {
+        className={classnames('col col--6 col--4-ml col--12-mxl', {
           mt12: isSwitch,
           mb6: !isSwitch
         })}
