@@ -9,7 +9,7 @@ export default class Basic extends React.Component {
     return (
       <PageLayout
         constants={{
-          SITE: 'dr-ui',
+          SITE: 'Mapbox Tiling Service',
           BASEURL: '/dr-ui',
           FORWARD_EVENT_WEBHOOK: {
             production: '123',
@@ -24,6 +24,7 @@ export default class Basic extends React.Component {
           layout: 'full'
         }}
         navigation={{
+          tag: 'beta',
           hierarchy: {
             '/PageLayout/': {
               parent: '/PageLayout/',
