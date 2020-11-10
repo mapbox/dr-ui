@@ -29,7 +29,7 @@
         "splitPages": true,
         "order": 5,
         "contentType": "API",
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -41,7 +41,7 @@
         "splitPages": true,
         "order": 2,
         "contentType": "API",
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -53,7 +53,7 @@
         "splitPages": true,
         "order": 3,
         "contentType": "API",
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -65,7 +65,7 @@
         "splitPages": true,
         "order": 4,
         "contentType": "API",
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -169,7 +169,7 @@
           "import { IntroServicesList } from '../components/intro-services-list';",
           "import constants from '../constants';"
         ],
-        "layout": "accordion",
+        "layout": "page",
         "navOrder": 1
       }
     },
@@ -350,7 +350,7 @@
         "description": "The Mapbox API changelog documents the changes made to all Mapbox APIs.",
         "order": 6,
         "contentType": "API",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Documentation"]
       }
     },

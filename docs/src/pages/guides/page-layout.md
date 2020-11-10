@@ -2,7 +2,7 @@
 title: PageLayout component
 description: All about building with PageLayout.
 order: 3
-layout: accordion
+layout: page
 contentType: guide
 products:
   - Documentation
@@ -12,9 +12,7 @@ prependJs:
   - "import OtherProps from '../../components/other-props.js';"
   - "import LayoutUsage from '../../components/layout-usage.js';"
   - "import frontmatter from '!raw-loader!../../components/snippets/frontmatter.js';// eslint-disable-line"
-  - "import Topbar from '../../../../src/components/page-layout/components/topbar.js';"
   - "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line"
-  - "import constants from '../../constants.json';"
   - "import Note from '../../../../src/components/note';"
   - "import { filterOptions } from '../../../../src/components/page-layout/components/example-index';"
 ---
@@ -29,9 +27,7 @@ The [`PageLayout`](/dr-ui/#pagelayout) component comes with several layouts that
 
 {{<LayoutUsage data={{
   page:
-    'A standard interior page with a table of contents sidebar and content area. This layout is often used by tutorials and guides.',
-  accordion:
-    'This layout uses the NavigationAccordion component to organize navigation across multiple pages. This layout is often used by guides and reference pages.',
+    'A page with a table of contents sidebar and content area. This layout is used by tutorials and guides.',
   example:
     "This layout uses the SectionedNavigation component to display all topics for the site's examples. This layout is used by example pages.",
   exampleIndex:
@@ -105,23 +101,15 @@ The [`PageLayout`](/dr-ui/#pagelayout) component accepts the following props for
 
 {{<OtherProps />}}
 
-## Navigation bar
+## Site navigation
 
-The navigation bar appears at the top of every page. It uses [`ProductMenu`](/dr-ui/#productmenu) to show the site title, [`Search`](/dr-ui/#search) to add search feature, and [`TabList`](https://mapbox.github.io/mr-ui/#tablist) to list the top-level pages for the site.
-
-{{
-
-  <div className=''>
-    <Topbar navigation={navigation} parentPath="/dr-ui/guides/" constants={constants} />
-    <div><em>The navigation bar for this site.</em></div>
-  </div>
-}}
+The site navigation appears at the left side of every page. It uses [`ProductMenu`](/dr-ui/#productmenu) to show the site title, and [`NavigationAccordion`](/dr-ui/#NavigationAccordion) to display all navigation links for the site starting with top-level pages.
 
 ### What are top-level pages?
 
-Top-level pages are a small set of pages that define a section of the site. These pages build the content hierarchy and act as a homepage for each section. The hierarchy is also important for telling `TabList` which section the user is now on so it can add a blue bottom border indicator.
+Top-level pages are a small set of pages that define a section of the site. These pages build the content hierarchy and act as a homepage for each section. The hierarchy is also important for telling `NavigationAccordion` which section the user is now on.
 
-For example, this page falls under [Guides](/dr-ui/guides/), a top-level page. Since you're visiting a page under the Guide's section, the Guides link in the `TabList` has a blue bottom border indicator to help show you where you are on the site.
+For example, this page falls under [Guides](/dr-ui/guides/), a top-level page. Since you're visiting a page under the Guide's section, the Guides link in the `NavigationAccordion` is styled slightly differently to help show you where you are on the site.
 
 Top-level pages almost always follow the folder structure in `src/pages/`. For example a site with the following folder structure likely uses `examples/index.md`, `help/index.md`, and `overview/index.md` as its top-level pages:
 
@@ -151,27 +139,62 @@ Things to consider:
 {{<Note>}}
 The frontmatter props `navOrder` and `order` have different functions.
 
-- `navOrder` identifies a top-level page and its position in the `TabList` across the top of the page.
-- `order` sets the order for all pages in a section that uses the `accordion` layout.
+- `navOrder` identifies a top-level page and its position in the `NavigationAccordion` across the top of the page.
+- `order` sets the order for all pages in a section that uses the `page` layout.
 
-For top-level pages using the `accordion` layout, besides setting `navOrder`, you will also set `order: 1` to make sure that the top-level page appears first in the [`NavigationAccordion`](/dr-ui/#navigationaccordion)
+For top-level pages using the `page` layout, besides setting `navOrder`, you will also set `order: 1` to make sure that the top-level page appears first in the [`NavigationAccordion`](/dr-ui/#navigationaccordion)
 {{</Note>}}
 
-## Custom sidebars
+## Overview header
 
-Sites like Mapbox GL JS require custom sidebars since the data is derived from multiple sources. Similarly, the [Dr. UI component's page](/dr-ui/) also uses a custom sidebar, see the example below for how to conditionally display a custom sidebar:
+The main page for each docs site displays the [`OverviewHeader`](/dr-ui/#overviewheader) to orient the user to the product.
+
+To add `OverviewHeader` to your page, pass the props of the component in the frontMatter under `overviewHeader`.
+
+```yaml
+overviewHeader:
+  title: 'Dr. UI'
+  features:
+    - 'React components to build documentation sites'
+    - 'Support for IE 11 and all modern browsers'
+  changelogLink: /dr-ui/changelog/
+  installLink: https://github.com/mapbox/dr-ui/blob/main/README.md
+  ghLink: https://github.com/mapbox/dr-ui
+```
+
+To include dynamic variables, such as `version` or use the `AppropriateImage` component for the value of `image`, update the `frontMatter` prop in site's `PageLayout` component (found in `page-shell.js`).
+
+The following example is the value of the `frontMatter` prop which overrides the values of `version` and `image` in the `overviewHeader` frontMatter prop object:
+
+```js
+{
+  ...frontMatter,
+  ...frontMatter.overviewHeader && {
+      overviewHeader: {
+        ...frontMatter.overviewHeader,
+        version: myVariable,
+        image: <AppropriateImage id="documentation-astronaut" />
+      }
+    }
+  })
+}
+```
+
+This technique may also be used by multi-structured sites, although you'll need to add logic to help determine which version constant to use.
+
+## Custom aside
+
+Sites like Mapbox GL JS require custom asides since the data is derived from multiple sources. Similarly, the [Dr. UI components page](/dr-ui/) also uses a custom aside, see the example below for how to conditionally display a custom sidebar:
 
 ```jsx
-import Sidebar from './sidebar';
+import Aside from './aside';
 
 class PageShell extends React.Component {
   render() {
     const { location } = this.props;
     return (
       <PageLayout
-        customSidebar={
-          location.pathname === '/dr-ui/' ? <Sidebar /> : undefined
-        }
+        customAside={location.pathname === '/dr-ui/' ? <Aside /> : undefined}
       >
         {children}
       </PageLayout>

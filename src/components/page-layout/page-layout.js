@@ -1,12 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
 import BackToTopButton from '../back-to-top-button/back-to-top-button';
 import ErrorBoundary from '../error-boundary/error-boundary';
 import Breadcrumb from '../breadcrumb/breadcrumb';
 import Content from './components/content';
 import Sidebar from './components/sidebar';
-import PageLayoutTopbar from './components/topbar';
 import { filterOptions } from './components/example-index';
 import { findHasSection, findParentPath, createUniqueCrumbs } from './utils';
 
@@ -16,52 +14,30 @@ import layoutConfig from './layout.config.js';
 import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
 
 export default class PageLayout extends React.Component {
-  // render the page's top bar navigation
-  renderTopbar = (switchedNavigation, parentPath) => {
-    const {
-      constants,
-      topBarSticker,
-      tabListAppend,
-      hideTopBar,
-      hideSearch
-    } = this.props;
-    if (hideTopBar) return null;
-    return (
-      <PageLayoutTopbar
-        {...this.props}
-        constants={constants}
-        navigation={switchedNavigation}
-        parentPath={parentPath}
-        topBarSticker={topBarSticker}
-        tabListAppend={tabListAppend}
-        hideSearch={hideSearch}
-      />
-    );
-  };
-
   // render the page's sidebar
   renderSidebar = (config, switchedNavigation, parentPath) => {
-    const { customSidebar, headings, topBarSticker } = this.props;
+    const { constants } = this.props;
     return (
-      config.sidebar !== 'none' && (
-        <div className={`col col--4-mm col--12 ${config.sidebarTheme}`}>
-          <Sidebar
-            {...this.props}
-            navigation={switchedNavigation}
-            parentPath={parentPath}
-            layoutConfig={config}
-            customSidebar={customSidebar}
-            headings={headings}
-            topBarSticker={topBarSticker}
-          />
-        </div>
-      )
+      <div
+        className={`flex-child flex-child--no-shrink w-full w180-mm w240-ml mr36-mm ${config.sidebarTheme}`}
+      >
+        <Sidebar
+          {...this.props}
+          navigation={switchedNavigation}
+          constants={constants}
+          parentPath={parentPath}
+          layoutConfig={config}
+        />
+      </div>
     );
   };
 
   // render the page's content
   renderContent = (config, parentPath, parent, hasSection) => {
     const { constants, frontMatter, location } = this.props;
+    // removes "for (Platform)" from section titles to avoid repetition
+    const trimSectionTitle = (title) =>
+      title.replace(/\sfor\s(iOS|Android|Vision|Unity)/, '');
     const crumbs = createUniqueCrumbs([
       {
         title: 'All docs',
@@ -72,28 +48,37 @@ export default class PageLayout extends React.Component {
         path: `${constants.BASEURL}/`
       },
       // if multi-structured site add the section name
-      ...(hasSection ? { title: hasSection.title, path: hasSection.path } : []),
-      {
-        title: parent.title,
-        path: parent.parent
-      },
+      ...(hasSection
+        ? [
+            {
+              title: trimSectionTitle(hasSection.title),
+              path: `${constants.BASEURL}/${hasSection.path}/`
+            }
+          ]
+        : []),
+      ...(parent && parent.title
+        ? [
+            {
+              title: parent.title,
+              path: parent.parent
+            }
+          ]
+        : []),
       {
         title: frontMatter.title,
         path: location.pathname
       }
     ]);
     return (
-      <div
-        className={classnames('col col--12', {
-          'col--8-mm': config.sidebar !== 'none'
-        })}
-      >
-        <Breadcrumb
-          themeWrapper="none block-mm px24 pt12"
-          domain={false}
-          location={location}
-          links={crumbs}
-        />
+      <div className="flex-child flex-child--grow">
+        {!frontMatter.hideBreadcrumbs && (
+          <Breadcrumb
+            themeWrapper="none block-mm py12"
+            domain={false}
+            location={location}
+            links={crumbs}
+          />
+        )}
 
         <Content
           {...this.props}
@@ -132,19 +117,18 @@ export default class PageLayout extends React.Component {
     return (
       <ErrorBoundary>
         {!noShellHeaderBuffer && <div className="shell-header-buffer" />}
-        <ErrorBoundary>
-          {this.renderTopbar(switchedNavigation, parentPath)}
-        </ErrorBoundary>
-        <div className="limiter">
-          <div className="grid">
-            <ErrorBoundary>
-              {this.renderSidebar(config, switchedNavigation, parentPath)}
-            </ErrorBoundary>
+        <div className="limiter limiter--wide">
+          <div className="flex-parent-mm">
+            {!frontMatter.hideSidebar && (
+              <ErrorBoundary>
+                {this.renderSidebar(config, switchedNavigation, parentPath)}
+              </ErrorBoundary>
+            )}
             <ErrorBoundary>
               {this.renderContent(
                 config,
                 parentPath,
-                switchedNavigation.hierarchy[location.pathname],
+                navigation.hierarchy[location.pathname],
                 hasSection
               )}
             </ErrorBoundary>
@@ -158,15 +142,6 @@ export default class PageLayout extends React.Component {
   }
 }
 
-PageLayout.defaultProps = {
-  // topbar sticker is sticky by default
-  topBarSticker: true,
-  // topbar is visible by default
-  hideTopBar: false,
-  // search is visible in TopBar by default
-  hideSearch: false
-};
-
 PageLayout.propTypes = {
   children: PropTypes.node,
   /** Provided by Batfish, the `pathname` (relative url) of the current page is required */
@@ -176,15 +151,12 @@ PageLayout.propTypes = {
   /**
 `frontMatter` prop | Description | Conditions
 ---|---|---
-`layout` | One of: `page`, `accordion`, `example`, `full`, `exampleIndex`. |
+`layout` | One of: `page`, `example`, `full`, `exampleIndex`. |
 `navOrder` | If defined with a number, the page will be added to TabList in the navigation bar. This is the canonical way for defining a top-level page. |
-`order` | Defined by number, the order that pages should appear in the sidebar's NavigationAccordion |  `accordion` layout or `sidebar: accordion`
+`order` | Defined by number, the order that pages should appear in the sidebar's NavigationAccordion |  `page` layout
 `hideTitle` | Hide the title of the page. |
 `hideFeedback` | Remove the feedback component from the bottom of the page. |
-`sidebar` | one of: `toc`, `accordion`, `sectioned`, `none` | all layouts except `none`
 `sidebarTheme` | Mapbox Assembly class names to style the sidebar container. | all layouts except `none`
-`includeFilterBar` | Add a filter bar to page using SectionedNavigation. | `example` or `exampleIndex` layouts or `sidebar: sectioned`
-`sidebarTitle` | An optional title to add to SectionedNavigation sidebar. |`example` or `exampleIndex` layouts or `sidebar: sectioned`
 `hideCardLanguage` | If `true`, hide the language from all Cards. | `exampleIndex` layout
 `hideCardDescription` | If `true`, hide the description from all Cards. | `exampleIndex` layout
 `fullWidthCards` | Makes CardContainer full width. | `exampleIndex` layout
@@ -192,47 +164,40 @@ PageLayout.propTypes = {
 `cardColSize` | A number to define the column sizes for the Cards | `exampleIndex` layout
 `unProse` | If `true`, remove the "prose" class from PageLayout. This is helpful for non-content pages. |
 `noShellHeaderBuffer` | If `true`, remove the header buffer div. This is helpful for custom headers like on the Help page. |
-`hideFromNav` | If `true`, remove an item from appearing in NavigationAccordion. (This is used in API docs.) | `accordion` layout or `sidebar: accordion`
+`hideFromNav` | If `true`, remove an item from appearing in NavigationAccordion. (This is used in API docs.) | 
+`hideBreadcrumbs` | If `true`, remove the breadcrumbs. (This is used by Help home page.) |
+`hideSidebar` | If `true`, remove the sidebar. (This is used by Help home page.) |
 `showFilters` | All filters for an exampleIndex page are shown if the data is available. Use `showFilters` to define only the filters you want the page to display. | `exampleIndex` layout
 */
   frontMatter: PropTypes.shape({
     headings: PropTypes.array, // a set of headings that is automatically generated by Batfish
     navOrder: PropTypes.number,
     order: PropTypes.number,
-    layout: PropTypes.oneOf([
-      'page',
-      'accordion',
-      'example',
-      'exampleIndex',
-      'full'
-    ]),
+    layout: PropTypes.oneOf(['page', 'example', 'exampleIndex', 'full']),
     hideTitle: PropTypes.bool,
     hideFeedback: PropTypes.bool,
-    includeFilterBar: PropTypes.bool,
-    sidebar: PropTypes.oneOf(['toc', 'accordion', 'sectioned', 'none']),
     sidebarTheme: PropTypes.string,
     showCards: PropTypes.bool,
     fullWidthCards: PropTypes.bool,
     cardColSize: PropTypes.number,
     unProse: PropTypes.bool,
     noShellHeaderBuffer: PropTypes.bool,
-    sidebarTitle: PropTypes.string,
     hideFromNav: PropTypes.bool,
     hideCardLanguage: PropTypes.bool,
     hideCardDescription: PropTypes.bool,
+    hideBreadcrumbs: PropTypes.bool,
+    hideSidebar: PropTypes.bool,
     title: PropTypes.string,
     showFilters: PropTypes.arrayOf(filterOptions)
   }).isRequired,
   /**
-- `navTabs` - links to be shown in the `TabList` of `TopBarSticker`, formatted as an array of object: `[{"href": "/overview", "id": "overview", "label": "Overview"}]`
-- `accordion` - links to be added to NavigationAccordion, formatted as an object where the top key is the main page's path: `{"/overview/": [{"path": "/overview/", "title": "Overview"}, {"path": "/overview/layouts/", "title": "Layouts"}]}`
+- `navTabs` - links to be shown in the `NavigationAccordion`, formatted as an array of object: `[{"href": "/overview", "id": "overview", "label": "Overview"}]`
 - `hierarchy` - Object of every path and their parent: `{"/overview/layous": {"parent": "/overview", "title": "Overview"}}`
 - `title` - required for multi-structured layouts, this is the title for the `ProductMenu`
 - `tag` - optional `tag` name to pass to `ProductMenu`, [see available options](#productmenu).
 */
   navigation: PropTypes.shape({
     navTabs: PropTypes.array,
-    accordion: PropTypes.object,
     hierarchy: PropTypes.object,
     title: PropTypes.string,
     tag: PropTypes.string
@@ -262,22 +227,6 @@ PageLayout.propTypes = {
   }).isRequired,
   /** Required if using the `exampleIndex` layout along with `imageId`s. The value is the local `AppropriateImage` component. */
   AppropriateImage: PropTypes.func,
-  /** If false, unstick the TopBarSticker */
-  topBarSticker: PropTypes.bool,
-  /** If true, remove the TopBar completely */
-  hideTopBar: PropTypes.bool,
-  //* If true, remove the Search component from TopBar */
-  hideSearch: PropTypes.bool,
-  /** Create a completely custom sidebar. */
-  customSidebar: PropTypes.node,
-  /** Append item to TabList. This is used by iOS and Android site's API reference. */
-  tabListAppend: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      label: PropTypes.node.isRequired,
-      href: PropTypes.string.isRequired
-    })
-  ),
   /** For when headings are dynamic, this is used by API docs */
   headings: PropTypes.array,
   /** For `Search` component */

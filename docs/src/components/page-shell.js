@@ -8,6 +8,7 @@ import AppropriateImage from './appropriate-image';
 import categories from '../categories.json';
 
 const slug = (string) => string.toLowerCase();
+const { version } = require('../../../package.json');
 
 const componentHeadings = Object.keys(categories).reduce((arr, category) => {
   arr.push({
@@ -31,14 +32,18 @@ class PageShell extends React.Component {
 
     return (
       <PageLayout
-        includeFilterBar={true}
-        topBarSticker={false}
         filters={filters}
         headings={headings}
         frontMatter={{
           ...frontMatter,
-          ...(location.pathname === '/dr-ui/' && {
-            headings: componentHeadings
+          ...(location.pathname === '/dr-ui/components/' && {
+            headings: componentHeadings,
+            // handle dynamic values in OverviewHeader
+            overviewHeader: {
+              ...frontMatter.overviewHeader,
+              version: version,
+              image: <img src="/img/documentation-astronaut.png" alt="" />
+            }
           })
         }}
         location={location}

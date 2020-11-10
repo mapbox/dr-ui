@@ -3,28 +3,15 @@ export default {
     sidebar: 'toc', // heading table of contents
     sidebarTheme: '' // blank sidebar background
   },
-  accordion: {
-    sidebar: 'accordion', // NavigationAccordion sidebar
-    sidebarTheme: 'bg-gray-faint' // sidebar background
-  },
   example: {
-    aside: 'none', // do not show aside
-    sidebar: 'sectioned', // SectionedNavigation sidebar
-    hideSubItems: false, // show headings and subitems in sitebar
-    sidebarTheme: 'bg-gray-faint', // sidebar background
-    includeFilterBar: false // hide filter bar
+    aside: 'none' // do not show aside
   },
   exampleIndex: {
     aside: 'none', // do not show aside
-    sidebar: 'sectioned', // SectionedNavigation sidebar
-    hideSubItems: true, // only show sidebar headings
     showCards: true, // show example cards
-    hideFeedback: true, // hide feedback module
-    sidebarTheme: 'bg-gray-faint', // sidebar background
-    includeFilterBar: false // hide filter bar
+    hideFeedback: true // hide feedback module
   },
   full: {
-    aside: 'none', // do not show aside
-    sidebar: 'none' // no sidebar
+    aside: 'none' // do not show aside
   }
 };

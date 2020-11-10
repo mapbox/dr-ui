@@ -1,5 +1,5 @@
 ---
-title: Help
+title: Tutorials
 description: Example of a Help page.
 contentType: example
 navOrder: 4
@@ -12,4 +12,4 @@ prependJs:
   - "import data from '../../../../src/helpers/batfish/__tests__/fixtures/related-mts.json'"
 ---
 
-{{<HelpPage data={data} />}}
+{{<HelpPage data={[{pages: data[0].pages}]} />}}

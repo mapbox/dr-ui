@@ -18,7 +18,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
           className="dr-ui--on-this-page "
         >
           <h2
-            className="unprose txt-h4 txt-fancy mb12"
+            className="unprose txt-m txt-bold mb6"
             id="on-this-page"
           >
             On this page

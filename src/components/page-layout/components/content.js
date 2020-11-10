@@ -4,6 +4,7 @@ import ExampleIndex from './example-index.js';
 import classnames from 'classnames';
 import OnThisPage from '../../on-this-page/on-this-page';
 import Feedback from '../../feedback/feedback';
+import OverviewHeader from '../../overview-header/overview-header';
 
 export default class Content extends React.Component {
   render() {
@@ -65,15 +66,12 @@ export class ContentWrapper extends React.Component {
     const { frontMatter } = this.props;
     const { layout } = frontMatter;
     const headings = frontMatter.headings || this.props.headings;
-    const showToc =
-      headings &&
-      headings.length > 0 &&
-      (layout === 'page' || layout === 'accordion');
+    const showToc = headings && headings.length > 0 && layout === 'page';
     return (
       <aside
         data-swiftype-index="false"
         className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl"
-        style={{ top: '50px' }}
+        style={{ top: '10px' }}
       >
         {this.props.customAside ? this.props.customAside : undefined}
         {showToc && headings && headings.length > 0 && (
@@ -88,8 +86,14 @@ export class ContentWrapper extends React.Component {
 
   render() {
     const { children, frontMatter, layoutConfig } = this.props;
-    const { title, unProse, hideFeedback, layout } = frontMatter;
-    const { hideTitle, sidebar } = layoutConfig;
+    const {
+      title,
+      unProse,
+      hideFeedback,
+      layout,
+      overviewHeader
+    } = frontMatter;
+    const { hideTitle } = layoutConfig;
 
     // check frontmatter then default to layout config
     const showFeedback = hideFeedback
@@ -97,14 +101,7 @@ export class ContentWrapper extends React.Component {
       : !layoutConfig.hideFeedback;
 
     return (
-      <div
-        id="docs-content"
-        className={classnames('pr0-mm mt24', {
-          'mb60 px24-mm': sidebar !== 'none',
-          'px24-mm': sidebar === 'none',
-          'mt24-mm mt60 pt30 pt0-mm': sidebar === 'accordion' // clear the mobile sticky nav
-        })}
-      >
+      <div id="docs-content">
         {!hideTitle && (
           <div
             className={classnames('col prose', {
@@ -114,6 +111,7 @@ export class ContentWrapper extends React.Component {
             <h1 className="txt-fancy">{title}</h1>
           </div>
         )}
+        {overviewHeader && <OverviewHeader {...overviewHeader} />}
 
         <div className="grid grid--gut60">
           {(layoutConfig.aside !== 'none' || this.props.customAside) && (
@@ -152,7 +150,8 @@ ContentWrapper.propTypes = {
     unProse: PropTypes.bool,
     hideFeedback: PropTypes.bool,
     headings: PropTypes.array,
-    layout: PropTypes.string
+    layout: PropTypes.string,
+    overviewHeader: PropTypes.object
   }).isRequired,
   headings: PropTypes.array,
   location: PropTypes.object.isRequired,
@@ -173,8 +172,7 @@ ContentWrapper.propTypes = {
     hideTitle: PropTypes.bool,
     showCards: PropTypes.bool,
     hideFeedback: PropTypes.bool,
-    aside: PropTypes.string,
-    sidebar: PropTypes.string
+    aside: PropTypes.string
   }),
   navigation: PropTypes.shape({
     hierarchy: PropTypes.object

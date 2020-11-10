@@ -27,7 +27,7 @@ export default class Basic extends React.Component {
           }
         }}
         location={{
-          pathname: '/PageLayout/'
+          pathname: '/PageLayout/examples/'
         }}
         frontMatter={{
           title: 'Examples',
@@ -38,36 +38,46 @@ export default class Basic extends React.Component {
         AppropriateImage={AppropriateImage}
         navigation={{
           hierarchy: {
-            '/PageLayout/': {
-              parent: '/PageLayout/',
-              title: 'Demo'
+            '/PageLayout/examples/': {
+              parent: '/PageLayout/examples/',
+              title: 'Examples'
             }
           },
           navTabs: [
             {
-              href: '/PageLayout/',
-              id: '/PageLayout/',
-              label: 'Overview'
+              path: '/PageLayout/',
+              title: 'Overview',
+              pages: [
+                {
+                  path: '/PageLayout/specifications/',
+                  title: 'Specifications'
+                },
+                {
+                  path: '/PageLayout/examples/',
+                  title: 'Examples'
+                },
+                {
+                  path: '/PageLayout/demo/',
+                  title: 'Demo'
+                }
+              ]
             },
             {
-              href: '/PageLayout/specification/',
-              id: '/PageLayout/specification/',
-              label: 'Specification'
+              path: '/PageLayout/specification/',
+              title: 'Specification'
             },
             {
-              href: '/PageLayout/examples/',
-              id: '/PageLayout/examples/',
-              label: 'Examples'
+              path: '/PageLayout/examples/',
+              title: 'Examples'
             },
             {
-              href: '/PageLayout/demo/',
-              id: '/PageLayout/demo/',
-              label: 'Demo'
+              path: '/PageLayout/demo/',
+              title: 'Demo'
             }
           ]
         }}
         filters={{
-          '/PageLayout/': {
+          '/PageLayout/examples/': {
             contentType: 'example',
             description: 'Replace me.',
             language: ['JavaScript'],

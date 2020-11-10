@@ -6,6 +6,34 @@
       "frontMatter": {}
     },
     {
+      "filePath": "./docs/src/pages/components/index.md",
+      "path": "/dr-ui/components/",
+      "frontMatter": {
+        "title": "Components",
+        "description": "UI components for Mapbox documentation projects.",
+        "navOrder": 1,
+        "layout": "page",
+        "contentType": "reference",
+        "products": ["Documentation"],
+        "hideTitle": true,
+        "unProse": true,
+        "prependJs": [
+          "import Note from '../../../../src/components/note'",
+          "import App from '../../app.js'"
+        ],
+        "overviewHeader": {
+          "title": "Dr. UI",
+          "features": [
+            "React components to build documentation sites",
+            "Support for IE 11 and all modern browsers"
+          ],
+          "changelogLink": "/dr-ui/changelog/",
+          "installLink": "https://github.com/mapbox/dr-ui/blob/main/README.md",
+          "ghLink": "https://github.com/mapbox/dr-ui"
+        }
+      }
+    },
+    {
       "filePath": "./docs/src/pages/examples/example-1.md",
       "path": "/dr-ui/examples/example-1/",
       "frontMatter": {
@@ -100,7 +128,7 @@
         "description": "Batfish data selector functions to build navigation and topic datasets.",
         "order": 2,
         "contentType": "guide",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Documentation"],
         "prependJs": [
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
@@ -115,7 +143,7 @@
       "frontMatter": {
         "title": "Guides",
         "description": "Guides to building sites with Dr. UI.",
-        "layout": "accordion",
+        "layout": "page",
         "navOrder": 2,
         "order": 1,
         "contentType": "guide",
@@ -129,7 +157,7 @@
         "title": "Multi-structured sites",
         "description": "How to build a site with more than one product.",
         "order": 4,
-        "layout": "accordion",
+        "layout": "page",
         "contentType": "guide",
         "products": ["Documentation"]
       }
@@ -141,7 +169,7 @@
         "title": "PageLayout component",
         "description": "All about building with PageLayout.",
         "order": 3,
-        "layout": "accordion",
+        "layout": "page",
         "contentType": "guide",
         "products": ["Documentation"],
         "prependJs": [
@@ -150,9 +178,7 @@
           "import OtherProps from '../../components/other-props.js';",
           "import LayoutUsage from '../../components/layout-usage.js';",
           "import frontmatter from '!raw-loader!../../components/snippets/frontmatter.js';// eslint-disable-line",
-          "import Topbar from '../../../../src/components/page-layout/components/topbar.js';",
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
-          "import constants from '../../constants.json';",
           "import Note from '../../../../src/components/note';",
           "import { filterOptions } from '../../../../src/components/page-layout/components/example-index';"
         ]
@@ -166,7 +192,7 @@
         "description": "This is the first section",
         "splitPages": true,
         "order": 3,
-        "layout": "accordion",
+        "layout": "page",
         "contentType": "API"
       }
     },
@@ -232,13 +258,18 @@
       }
     },
     {
-      "filePath": "./docs/src/pages/help/index.md",
-      "path": "/dr-ui/help/",
+      "filePath": "./docs/src/pages/index.js",
+      "path": "/dr-ui/",
+      "frontMatter": {}
+    },
+    {
+      "filePath": "./docs/src/pages/troubleshooting/index.md",
+      "path": "/dr-ui/troubleshooting/",
       "frontMatter": {
-        "title": "Help",
-        "description": "Example of a Help page.",
+        "title": "Troubleshooting",
+        "description": "Example of a Troubleshooting page.",
         "contentType": "example",
-        "navOrder": 4,
+        "navOrder": 5,
         "layout": "full",
         "hideFeedback": true,
         "products": ["Documentation"],
@@ -249,25 +280,19 @@
       }
     },
     {
-      "filePath": "./docs/src/pages/index.md",
-      "path": "/dr-ui/",
+      "filePath": "./docs/src/pages/tutorials/index.md",
+      "path": "/dr-ui/tutorials/",
       "frontMatter": {
-        "title": "Components",
-        "description": "UI components for Mapbox documentation projects.",
-        "navOrder": 1,
-        "layout": "page",
-        "contentType": "reference",
+        "title": "Tutorials",
+        "description": "Example of a Help page.",
+        "contentType": "example",
+        "navOrder": 4,
+        "layout": "full",
+        "hideFeedback": true,
         "products": ["Documentation"],
-        "hideSubItems": false,
-        "showCards": false,
-        "includeFilterBar": true,
-        "hideTitle": true,
-        "unProse": true,
         "prependJs": [
-          "import Note from '../../../src/components/note'",
-          "import OverviewHeader from '../../../src/components/overview-header'",
-          "import App from '../app.js'",
-          "const version = require('../../../package.json').version; // eslint-disable-line"
+          "import HelpPage from '../../../../src/components/help-page/help-page';",
+          "import data from '../../../../src/helpers/batfish/__tests__/fixtures/related-mts.json'"
         ]
       }
     },

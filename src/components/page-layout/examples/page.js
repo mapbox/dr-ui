@@ -30,30 +30,40 @@ export default class Basic extends React.Component {
         navigation={{
           hierarchy: {
             '/PageLayout/': {
-              parent: '/dr-ui/',
-              title: 'Demo'
+              parent: '/PageLayout/',
+              title: 'Overview'
             }
           },
           navTabs: [
             {
-              href: '/PageLayout/',
-              id: '/PageLayout/',
-              label: 'Overview'
+              path: '/PageLayout/',
+              title: 'Overview',
+              pages: [
+                {
+                  path: '/PageLayout/annotations/',
+                  title: 'Annotations'
+                },
+                {
+                  path: '/PageLayout/worldview/',
+                  title: 'Worldview'
+                },
+                {
+                  path: '/PageLayout/expressions/',
+                  title: 'Expressions'
+                }
+              ]
             },
             {
-              href: '/PageLayout/specification/',
-              id: '/PageLayout/specification/',
-              label: 'Specification'
+              path: '/PageLayout/specification/',
+              title: 'Specification'
             },
             {
-              href: '/PageLayout/examples/',
-              id: '/PageLayout/examples/',
-              label: 'Examples'
+              path: '/PageLayout/examples/',
+              title: 'Examples'
             },
             {
-              href: '/PageLayout/demo/',
-              id: '/PageLayout/demo/',
-              label: 'Demo'
+              path: '/PageLayout/demo/',
+              title: 'Demo'
             }
           ]
         }}

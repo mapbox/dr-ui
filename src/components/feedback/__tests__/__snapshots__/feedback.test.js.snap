@@ -6,7 +6,7 @@ exports[`feedback Basic renders as expected 1`] = `
 >
   <div>
     <h2
-      className="unprose txt-h4 txt-fancy mb12"
+      className="unprose txt-m txt-bold mb6"
     >
       Was this 
       page
@@ -36,7 +36,7 @@ exports[`feedback Change type renders as expected 1`] = `
 >
   <div>
     <h2
-      className="unprose txt-h4 txt-fancy mb12"
+      className="unprose txt-m txt-bold mb6"
     >
       Was this 
       section

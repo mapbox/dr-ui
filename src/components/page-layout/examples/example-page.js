@@ -27,45 +27,66 @@ export default class Basic extends React.Component {
           }
         }}
         location={{
-          pathname: '/PageLayout/'
+          pathname: '/PageLayout/examples/example-1/'
         }}
         frontMatter={{
-          title: 'Examples',
+          title: 'An example',
           layout: 'example',
           description: 'An example of a page.'
         }}
         AppropriateImage={AppropriateImage}
         navigation={{
           hierarchy: {
-            '/PageLayout/': {
-              parent: '/PageLayout/',
-              title: 'Demo'
+            '/PageLayout/examples/example-1/': {
+              parent: '/PageLayout/examples/',
+              title: 'Examples'
             }
           },
+
           navTabs: [
             {
-              href: '/PageLayout/',
-              id: '/PageLayout/',
-              label: 'Overview'
+              path: '/PageLayout/',
+              title: 'Overview',
+              pages: [
+                {
+                  path: '/PageLayout/specifications/',
+                  title: 'Specifications'
+                },
+                {
+                  path: '/PageLayout/examples/',
+                  title: 'Examples'
+                },
+                {
+                  path: '/PageLayout/demo/',
+                  title: 'Demo'
+                }
+              ]
             },
             {
-              href: '/PageLayout/specification/',
-              id: '/PageLayout/specification/',
-              label: 'Specification'
+              path: '/PageLayout/specification/',
+              title: 'Specification'
             },
             {
-              href: '/PageLayout/examples/',
-              id: '/PageLayout/examples/',
-              label: 'Examples'
+              path: '/PageLayout/examples/',
+              title: 'Examples'
             },
             {
-              href: '/PageLayout/demo/',
-              id: '/PageLayout/demo/',
-              label: 'Demo'
+              path: '/PageLayout/demo/',
+              title: 'Demo'
             }
           ]
         }}
-      />
+      >
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </PageLayout>
     );
   }
 }

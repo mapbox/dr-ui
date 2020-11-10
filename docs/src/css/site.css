@@ -2,13 +2,6 @@
   margin-bottom: 0 !important;
 }
 
-/* override sticky behavior on PageLayout and TopbarSticker */
-.sticky-outer-wrapper .sticky-inner-wrapper {
-  position: relative !important;
-  transform: none !important;
-  height: auto !important;
-}
-
 #docs-content div#dr-ui--page-layout-sidebar {
   position: relative;
   height: 50px !important;
