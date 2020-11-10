@@ -42,7 +42,7 @@ class CardContainer extends React.PureComponent {
 }
 
 CardContainer.defaultProps = {
-  cardColSize: 4,
+  cardColSize: 6,
   fullWidthCards: false
 };
 
