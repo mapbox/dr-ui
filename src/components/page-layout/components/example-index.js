@@ -226,7 +226,11 @@ export default class ExampleIndex extends React.PureComponent {
     let filteredPages = filters.pages;
 
     if (topic) {
-      filteredPages = filteredPages.filter((f) => f.topics.indexOf(topic) > -1);
+      filteredPages = filteredPages.filter(
+        (f) =>
+          (f.topics && f.topics.indexOf(topic) > -1) ||
+          (f.topic && f.topic === topic)
+      );
     }
 
     if (product) {
