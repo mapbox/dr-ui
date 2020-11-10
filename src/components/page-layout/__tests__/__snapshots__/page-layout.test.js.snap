@@ -28,7 +28,7 @@ Array [
             className="mb12 border-b border--darken10 pb12"
           >
             <div
-              className="dr-ui--product-menu relative"
+              className="dr-ui--product-menu"
             >
               <a
                 className="txt-fancy txt-l color-blue-on-hover"
@@ -522,7 +522,7 @@ Array [
             className="mb12 border-b border--darken10 pb12"
           >
             <div
-              className="dr-ui--product-menu relative"
+              className="dr-ui--product-menu"
             >
               <a
                 className="txt-fancy txt-l color-blue-on-hover"
@@ -832,7 +832,7 @@ Array [
             className="mb12 border-b border--darken10 pb12"
           >
             <div
-              className="dr-ui--product-menu relative"
+              className="dr-ui--product-menu"
             >
               <a
                 className="txt-fancy txt-l color-blue-on-hover"
@@ -1256,7 +1256,7 @@ Array [
             className="mb12 border-b border--darken10 pb12"
           >
             <div
-              className="dr-ui--product-menu relative"
+              className="dr-ui--product-menu"
             >
               <div>
                 <div

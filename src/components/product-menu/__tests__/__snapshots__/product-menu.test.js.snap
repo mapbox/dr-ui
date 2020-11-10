@@ -2,7 +2,7 @@
 
 exports[`product-menu Basic renders as expected 1`] = `
 <div
-  className="dr-ui--product-menu relative"
+  className="dr-ui--product-menu"
 >
   <a
     className="txt-fancy txt-l color-blue-on-hover"
@@ -15,7 +15,7 @@ exports[`product-menu Basic renders as expected 1`] = `
 
 exports[`product-menu Beta product renders as expected 1`] = `
 <div
-  className="dr-ui--product-menu relative"
+  className="dr-ui--product-menu"
 >
   <div>
     <div
@@ -62,7 +62,7 @@ exports[`product-menu Beta product renders as expected 1`] = `
 
 exports[`product-menu Beta product renders as expected 2`] = `
 <div
-  className="dr-ui--product-menu relative"
+  className="dr-ui--product-menu"
 >
   <div>
     <div
@@ -112,7 +112,7 @@ exports[`product-menu Custom trigger style - display only renders as expected 1`
   className="bg-gray-dark py6"
 >
   <div
-    className="dr-ui--product-menu relative"
+    className="dr-ui--product-menu"
   >
     <a
       className="txt-fancy txt-l color-white color-gray-light-on-hover"
@@ -126,7 +126,7 @@ exports[`product-menu Custom trigger style - display only renders as expected 1`
 
 exports[`product-menu Fake items, but one matches this test case's location renders as expected 1`] = `
 <div
-  className="dr-ui--product-menu relative"
+  className="dr-ui--product-menu"
 >
   <a
     className="txt-fancy txt-l color-blue-on-hover"
@@ -139,7 +139,7 @@ exports[`product-menu Fake items, but one matches this test case's location rend
 
 exports[`product-menu Product menu with something arbitrary in it renders as expected 1`] = `
 <div
-  className="dr-ui--product-menu relative"
+  className="dr-ui--product-menu"
 >
   <a
     className="txt-fancy txt-l color-blue-on-hover"

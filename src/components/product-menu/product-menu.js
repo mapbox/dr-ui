@@ -27,7 +27,7 @@ class ProductMenu extends React.PureComponent {
   render() {
     const { props } = this;
     return (
-      <div className="dr-ui--product-menu relative">
+      <div className="dr-ui--product-menu">
         {props.tag && this.buildTag(props)}
         <a
           href={props.homePage}

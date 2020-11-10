@@ -23,7 +23,7 @@ exports[`topbar-sticker Basic renders as expected 1`] = `
           }
         >
           <div
-            className="dr-ui--product-menu relative"
+            className="dr-ui--product-menu"
           >
             <a
               className="txt-fancy txt-l color-blue-on-hover"
