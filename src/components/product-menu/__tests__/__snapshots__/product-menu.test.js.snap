@@ -5,7 +5,7 @@ exports[`product-menu Basic renders as expected 1`] = `
   className="dr-ui--product-menu"
 >
   <a
-    className="txt-fancy txt-l color-blue-on-hover"
+    className="txt-fancy txt-l block color-blue-on-hover"
     href="/dr-ui/"
   >
     Mapbox product menu
@@ -17,42 +17,40 @@ exports[`product-menu Beta product renders as expected 1`] = `
 <div
   className="dr-ui--product-menu"
 >
-  <div>
+  <div
+    className="inline-block"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+  >
     <div
-      className="inline-block"
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
+      aria-describedby="tooltip-1"
+      className="txt-bold px6 round inline-block cursor-default border txt-xs border--transparent ml-neg3"
+      style={
+        Object {
+          "background": "#f1f3fd",
+          "borderColor": "#0428c8",
+          "color": "#0c248d",
+        }
+      }
+    >
+      Beta
+    </div>
+    <div
+      className="hide-visually"
+      id="tooltip-1"
+      role="tooltip"
     >
       <div
-        aria-describedby="tooltip-1"
-        className="txt-bold px6 round inline-block cursor-default border txt-xs border--transparent ml-neg3"
-        style={
-          Object {
-            "background": "#f1f3fd",
-            "borderColor": "#0428c8",
-            "color": "#0c248d",
-          }
-        }
+        className="txt-s wmax120"
       >
-        Beta
-      </div>
-      <div
-        className="hide-visually"
-        id="tooltip-1"
-        role="tooltip"
-      >
-        <div
-          className="txt-s wmax120"
-        >
-          This feature is in public beta and is subject to changes.
-        </div>
+        This feature is in public beta and is subject to changes.
       </div>
     </div>
   </div>
   <a
-    className="txt-fancy txt-l color-blue-on-hover"
+    className="txt-fancy txt-l block color-blue-on-hover"
     href="/vision/"
   >
     Vision SDK for Android
@@ -64,42 +62,40 @@ exports[`product-menu Beta product renders as expected 2`] = `
 <div
   className="dr-ui--product-menu"
 >
-  <div>
+  <div
+    className="inline-block"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+  >
     <div
-      className="inline-block"
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
+      aria-describedby="tooltip-2"
+      className="txt-bold px6 round inline-block cursor-default border txt-xs border--transparent ml-neg3"
+      style={
+        Object {
+          "background": "#f1f3fd",
+          "borderColor": "#0428c8",
+          "color": "#0c248d",
+        }
+      }
+    >
+      Beta
+    </div>
+    <div
+      className="hide-visually"
+      id="tooltip-2"
+      role="tooltip"
     >
       <div
-        aria-describedby="tooltip-2"
-        className="txt-bold px6 round inline-block cursor-default border txt-xs border--transparent ml-neg3"
-        style={
-          Object {
-            "background": "#f1f3fd",
-            "borderColor": "#0428c8",
-            "color": "#0c248d",
-          }
-        }
+        className="txt-s wmax120"
       >
-        Beta
-      </div>
-      <div
-        className="hide-visually"
-        id="tooltip-2"
-        role="tooltip"
-      >
-        <div
-          className="txt-s wmax120"
-        >
-          This feature is in public beta and is subject to changes.
-        </div>
+        This feature is in public beta and is subject to changes.
       </div>
     </div>
   </div>
   <a
-    className="txt-fancy txt-l color-blue-on-hover"
+    className="txt-fancy txt-l block color-blue-on-hover"
     href="/vision/"
   >
     Navigation SDK for Android
@@ -115,7 +111,7 @@ exports[`product-menu Custom trigger style - display only renders as expected 1`
     className="dr-ui--product-menu"
   >
     <a
-      className="txt-fancy txt-l color-white color-gray-light-on-hover"
+      className="txt-fancy txt-l block color-white color-gray-light-on-hover"
       href="/api-documentation/"
     >
       Light on dark
@@ -129,7 +125,7 @@ exports[`product-menu Fake items, but one matches this test case's location rend
   className="dr-ui--product-menu"
 >
   <a
-    className="txt-fancy txt-l color-blue-on-hover"
+    className="txt-fancy txt-l block color-blue-on-hover"
     href="/api-documentation/"
   >
     Items in here
@@ -142,7 +138,7 @@ exports[`product-menu Product menu with something arbitrary in it renders as exp
   className="dr-ui--product-menu"
 >
   <a
-    className="txt-fancy txt-l color-blue-on-hover"
+    className="txt-fancy txt-l block color-blue-on-hover"
     href="/api-documentation/"
   >
     Pizza pie

@@ -17,11 +17,7 @@ class ProductMenu extends React.PureComponent {
         ? item.customTagProps.customStyles
         : undefined
     };
-    return (
-      <div>
-        <Tag {...tagProps} small={true} />
-      </div>
-    );
+    return <Tag {...tagProps} small={true} />;
   };
 
   render() {
@@ -31,7 +27,7 @@ class ProductMenu extends React.PureComponent {
         {props.tag && this.buildTag(props)}
         <a
           href={props.homePage}
-          className={classnames('txt-fancy txt-l', {
+          className={classnames('txt-fancy txt-l block', {
             'color-white color-gray-light-on-hover': props.lightText,
             'color-blue-on-hover': !props.lightText
           })}

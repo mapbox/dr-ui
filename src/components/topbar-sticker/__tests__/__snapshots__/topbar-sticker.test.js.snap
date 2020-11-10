@@ -48,7 +48,7 @@ exports[`topbar-sticker For display only renders as expected 1`] = `
                   className="dr-ui--product-menu"
                 >
                   <a
-                    className="txt-fancy txt-l color-blue-on-hover"
+                    className="txt-fancy txt-l block color-blue-on-hover"
                     href="/dr-ui/"
                   >
                     Dr. UI
