@@ -22,6 +22,7 @@
   - 🚨 Remove `topics` Batfish helper and replace with `filters`.
   - 🚨 Remove `formatTopics` Batfish helper. Use the `HelpPage` component.
   - 🚨 Remove `accordion` object from `navigation` and moved the dataset into `navTabs` as `pages` array.
+- Replace bottom `Feedback` component on examples pages with an `Aside`.
 
 ## 1.3.0
 
