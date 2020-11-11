@@ -22,6 +22,7 @@
   - 🚨 Remove `topics` Batfish helper and replace with `filters`.
   - 🚨 Remove `formatTopics` Batfish helper. Use the `HelpPage` component.
   - 🚨 Remove `accordion` object from `navigation` and moved the dataset into `navTabs` as `pages` array.
+  - 🚨 Add `addPages` parameter to `buildNavigation` helper function to support appending arbitrary items to site navigation.
 
 ## 1.3.0
 

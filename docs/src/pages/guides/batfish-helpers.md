@@ -25,6 +25,7 @@ These dataset functions often use the page's relative pathname as a unique ident
 - `siteBasePath`, required. The function requires the `siteBasePath`.
 - `data`, object. Provided by the data selector.
 - `sections`, array. See [Shape of multi-structured sections](#shape-of-multi-structured-sections).
+- `addPages`, array. See [Shape of appended pages](#shape-of-appended-pages).
 
 ### Set up in batfish.config.js
 
@@ -170,6 +171,12 @@ class PageShell extends React.Component {
   }
 ]
 ```
+
+### Shape of appended pages
+
+- `title` (required) string. Title of the page to be appended. Example: "Tutorials".
+- `path` (required) string. Path of the page to be appended. Example: "https://docs.mapbox.com/help/tutorials?product=navigation".
+- `navOrder` (options) number. An integer denoting where the page to be appended should be placed in the order of items in the navigation accordion.
 
 ## Split pages
 
