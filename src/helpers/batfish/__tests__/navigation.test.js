@@ -26,6 +26,7 @@ describe('buildNavigation', () => {
   it('pages are sorted by order', () => {
     expect(buildNavigation('/api', apiDebug).navTabs).toEqual([
       {
+        id: 'introduction',
         navOrder: 1,
         pages: [
           {
