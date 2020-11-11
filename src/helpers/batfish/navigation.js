@@ -96,7 +96,9 @@ function formatPages(siteBasePath, data, sections) {
 function buildMultiLevels(sections, pages) {
   return sections.reduce(
     (obj, section) => {
-      const sectionPages = pages.filter((f) => f.section === section.path);
+      let sectionPages = pages.filter((f) => f.section === section.path);
+      if (section.addPages)
+        sectionPages = sectionPages.concat(section.addPages);
       const organized = organizePages(sectionPages);
       obj[section.path] = {
         path: section.path,
