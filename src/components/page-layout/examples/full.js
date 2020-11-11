@@ -34,7 +34,8 @@ export default class Basic extends React.Component {
           navTabs: [
             {
               title: 'Overview',
-              path: '/PageLayout/'
+              path: '/PageLayout/',
+              id: 'overview'
             }
           ]
         }}
