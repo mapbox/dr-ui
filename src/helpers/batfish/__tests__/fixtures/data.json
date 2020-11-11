@@ -263,40 +263,6 @@
       "frontMatter": {}
     },
     {
-      "filePath": "./docs/src/pages/troubleshooting/index.md",
-      "path": "/dr-ui/troubleshooting/",
-      "frontMatter": {
-        "title": "Troubleshooting",
-        "description": "Example of a Troubleshooting page.",
-        "contentType": "example",
-        "navOrder": 5,
-        "layout": "full",
-        "hideFeedback": true,
-        "products": ["Documentation"],
-        "prependJs": [
-          "import HelpPage from '../../../../src/components/help-page/help-page';",
-          "import data from '../../../../src/helpers/batfish/__tests__/fixtures/related-mts.json'"
-        ]
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/tutorials/index.md",
-      "path": "/dr-ui/tutorials/",
-      "frontMatter": {
-        "title": "Tutorials",
-        "description": "Example of a Help page.",
-        "contentType": "example",
-        "navOrder": 4,
-        "layout": "full",
-        "hideFeedback": true,
-        "products": ["Documentation"],
-        "prependJs": [
-          "import HelpPage from '../../../../src/components/help-page/help-page';",
-          "import data from '../../../../src/helpers/batfish/__tests__/fixtures/related-mts.json'"
-        ]
-      }
-    },
-    {
       "filePath": "./node_modules/@mapbox/batfish/dist/webpack/default-not-found.js",
       "path": "/dr-ui/404/",
       "is404": true,

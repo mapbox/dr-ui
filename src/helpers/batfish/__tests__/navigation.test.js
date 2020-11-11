@@ -160,12 +160,18 @@ describe('buildNavigation', () => {
         title: 'Introduction'
       },
       {
+        external: true,
+        id: 'tutorial',
         title: 'Tutorial',
+        pages: [],
         path: 'https://docs.mapbox.com/help/tutorials?product=api',
         navOrder: 2
       },
       {
+        external: true,
+        id: 'troubleshooting',
         title: 'Troubleshooting',
+        pages: [],
         path: 'https://docs.mapbox.com/help/troubleshooting?product=api',
         navOrder: 3
       }
@@ -252,6 +258,7 @@ describe('buildNavigation', () => {
         title: 'Examples'
       },
       {
+        external: true,
         id: 'tutorial',
         title: 'Tutorial',
         pages: [],
@@ -259,6 +266,7 @@ describe('buildNavigation', () => {
         navOrder: 4
       },
       {
+        external: true,
         id: 'troubleshooting',
         title: 'Troubleshooting',
         pages: [],

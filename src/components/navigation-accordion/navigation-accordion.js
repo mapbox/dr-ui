@@ -47,7 +47,8 @@ export default class NavigationAccordion extends React.Component {
     hasChildren,
     isActiveToggle,
     isActiveSection,
-    sectionId
+    sectionId,
+    external
   ) {
     return (
       <div
@@ -65,6 +66,11 @@ export default class NavigationAccordion extends React.Component {
           style={{ letterSpacing: '0.025em' }}
         >
           {label}
+          {external && (
+            <span className="ml3">
+              <Icon name={'share'} inline={true} />
+            </span>
+          )}
         </a>
         {hasChildren && (
           <button
@@ -114,7 +120,7 @@ export default class NavigationAccordion extends React.Component {
     const { activeToggles } = this.state;
     const activeItem = location.pathname;
     const items = navigation.map((pageSection) => {
-      const { title, id, path, pages, hideSubpages } = pageSection;
+      const { title, id, path, pages, hideSubpages, external } = pageSection;
       // the section has sub pages
       const hasPages = pages && pages.length > 0 && !hideSubpages;
       // the section's toggle is active
@@ -129,7 +135,8 @@ export default class NavigationAccordion extends React.Component {
           hasPages,
           isActiveToggle,
           isActiveSection,
-          sectionId
+          sectionId,
+          external
         ),
         body:
           isActiveToggle && hasPages
