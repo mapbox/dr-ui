@@ -187,7 +187,7 @@ OverviewHeader.propTypes = {
   ghLink: PropTypes.string,
   /** creates a "Contact us" button */
   contactLink: PropTypes.string,
-  /** Classes to apply to the OverviewHeader containter, usually an Assembly backgroun color: https://labs.mapbox.com/assembly/documentation/#Background-colors */
+  /** Classes to apply to the OverviewHeader containter, usually an Assembly background color: https://labs.mapbox.com/assembly/documentation/#Background-colors */
   theme: PropTypes.string,
   /** If `true`, the component will use white text */
   lightText: PropTypes.bool
