@@ -1,0 +1,43 @@
+{
+  "pages": [
+    {
+      "filePath": "/Users/katydecorah/Documents/GitHub/mapbox/mapbox-gl-js-docs/docs/pages/example/index.md",
+      "path": "/mapbox-gl-js/example/",
+      "frontMatter": {
+        "title": "Examples",
+        "description": "Code examples for Mapbox GL JS.",
+        "contentType": "example",
+        "layout": "example",
+        "navOrder": 2,
+        "language": ["JavaScript"],
+        "hideCardLanguage": true,
+        "hideCardDescription": true,
+        "products": ["Mapbox GL JS"]
+      }
+    },
+
+    {
+      "filePath": "/Users/katydecorah/Documents/GitHub/mapbox/mapbox-gl-js-docs/docs/pages/example/using-featuresin.js",
+      "path": "/mapbox-gl-js/example/using-featuresin/",
+      "frontMatter": {}
+    },
+    {
+      "filePath": "/Users/katydecorah/Documents/GitHub/mapbox/mapbox-gl-js-docs/docs/pages/example/toggle-worldviews.md",
+      "path": "/mapbox-gl-js/example/toggle-worldviews/",
+      "frontMatter": {
+        "title": "Change worldview of administrative boundaries",
+        "description": "Uses the `worldview` value to adjust administrative boundaries based on the map's audience. Read more about [worldviews](https://docs.mapbox.com/help/glossary/worldview/).\n",
+        "topics": ["Layers", "User interaction"],
+        "thumbnail": "toggle-worldviews",
+        "contentType": "example",
+        "layout": "example",
+        "language": ["JavaScript"],
+        "products": ["Mapbox GL JS", "Mapbox Streets tileset"],
+        "prependJs": [
+          "import Example from '../../components/example';",
+          "import html from './toggle-worldviews.html';"
+        ]
+      }
+    }
+  ]
+}
