@@ -3,9 +3,6 @@ export default {
     sidebar: 'toc', // heading table of contents
     sidebarTheme: '' // blank sidebar background
   },
-  example: {
-    aside: 'none' // do not show aside
-  },
   exampleIndex: {
     aside: 'none', // do not show aside
     showCards: true, // show example cards

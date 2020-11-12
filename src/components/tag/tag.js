@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Tooltip from '@mapbox/mr-ui/tooltip';
+import classnames from 'classnames';
 import themes from '../themes';
 
 export default class Tag extends React.Component {
@@ -15,7 +16,13 @@ export default class Tag extends React.Component {
       <Tooltip content={theme.tooltipText} maxWidth="small" placement="top">
         <div
           style={theme.styles}
-          className="txt-s txt-bold round px6 inline-block cursor-default border"
+          className={classnames(
+            'txt-bold px6 round inline-block cursor-default',
+            {
+              'txt-s border': !this.props.small,
+              'txt-xs': this.props.small
+            }
+          )}
         >
           {theme.label}
         </div>
@@ -24,10 +31,16 @@ export default class Tag extends React.Component {
   }
 }
 
+Tag.defaultProps = {
+  small: false
+};
+
 Tag.propTypes = {
   theme: PropTypes.oneOf(['beta', 'fundamentals', 'legacy', 'new', 'custom'])
     .isRequired,
-  /* If the theme is set to "custom", this prop is required. */
+  /** If `true`, display the tag with a smaller font and and no border */
+  small: PropTypes.bool,
+  /** If the theme is set to "custom", this prop is required. */
   customLabel: (props, componentName) => {
     if (props.theme === 'custom' && !props.customLabel) {
       return new Error(
