@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Icon from '@mapbox/mr-ui/icon';
+import classnames from 'classnames';
 import Tag from '../tag/tag';
 
 class OverviewHeader extends React.PureComponent {
@@ -14,7 +15,14 @@ class OverviewHeader extends React.PureComponent {
     );
 
     const changelogLinkEl = props.changelogLink && (
-      <a href={props.changelogLink}>View changelog</a>
+      <a
+        className={classnames('unprose link txt-underline', {
+          'link--white': props.lightText
+        })}
+        href={props.changelogLink}
+      >
+        View changelog
+      </a>
     );
 
     if (!versionEl && !changelogLinkEl) {
@@ -32,17 +40,24 @@ class OverviewHeader extends React.PureComponent {
   renderFooter() {
     const { props } = this;
 
+    const btnClasses = classnames('btn txt-l round inline-block unprose mr24', {
+      'btn--white color-gray-dark': props.lightText,
+      'btn--blue': !props.lightText
+    });
+
     const installLinkEl = props.installLink && (
-      <a
-        href={props.installLink}
-        className="btn txt-l round inline-block color-white unprose mr24"
-      >
+      <a href={props.installLink} className={btnClasses}>
         Install
       </a>
     );
 
     const ghLinkEl = props.ghLink && (
-      <a href={props.ghLink} className="inline-block unprose link">
+      <a
+        href={props.ghLink}
+        className={classnames('inline-block unprose link', {
+          'link--white': props.lightText
+        })}
+      >
         <span className="flex-parent flex-parent--center-cross">
           <span className="flex-child mr6">
             <Icon name="github" inline={true} />
@@ -53,10 +68,7 @@ class OverviewHeader extends React.PureComponent {
     );
 
     const contactLinkEl = props.contactLink && (
-      <a
-        href={props.contactLink}
-        className="btn txt-l round inline-block color-white unprose mr24"
-      >
+      <a href={props.contactLink} className={btnClasses}>
         Contact us
       </a>
     );
@@ -90,33 +102,48 @@ class OverviewHeader extends React.PureComponent {
   render() {
     const { props } = this;
 
-    const featuresList = props.features.map((feature, index) => {
-      return (
-        <li key={index} className="ml-neg24 flex-parent">
-          <div className="flex-child flex-child--no-shrink mr6 m3 color-gray-light">
-            <Icon name="check" inline={true} />
-          </div>
-          <div className="flex-child flex-child--grow">{feature}</div>
-        </li>
-      );
-    });
+    const featuresList = props.features
+      ? props.features.map((feature, index) => {
+          return (
+            <li key={index} className="ml-neg24 flex-parent">
+              <div className="flex-child flex-child--no-shrink mr6 m3 color-gray-light">
+                <Icon name="check" inline={true} />
+              </div>
+              <div className="flex-child flex-child--grow">{feature}</div>
+            </li>
+          );
+        })
+      : undefined;
 
     return (
-      <div className="dr-ui--overview-header border-b border--darken10 prose mb24 pr60-mxl">
+      <div
+        className={classnames(
+          `dr-ui--overview-header prose mb24 pr60-mxl ${props.background}`,
+          {
+            'border-b border--darken10': !props.background,
+            'round py12 px24': props.background,
+            'color-white': props.lightText
+          }
+        )}
+      >
         <div className="flex-parent">
           <div className="flex-child flex-child--grow">
             <h1 className="mb6 txt-fancy">
               {props.title}
               {props.tag && this.buildTag(props)}
             </h1>
+            {props.description && <p className="txt-l">{props.description}</p>}
             {this.renderVersion()}
-            <ul className="mb24" style={{ listStyle: 'none' }}>
-              {featuresList}
-            </ul>
+
+            {featuresList && (
+              <ul className="mb24" style={{ listStyle: 'none' }}>
+                {featuresList}
+              </ul>
+            )}
             {this.renderFooter()}
           </div>
           {props.image && (
-            <div className="flex-child-ml flex-child--no-shrink w300-mxl">
+            <div className="flex-child-ml flex-child--no-shrink w300-mxl align-r">
               <div className="none block-mxl">{props.image}</div>
             </div>
           )}
@@ -126,9 +153,15 @@ class OverviewHeader extends React.PureComponent {
   }
 }
 
+OverviewHeader.defaultProps = {
+  lightText: false
+};
+
 OverviewHeader.propTypes = {
   /** features of the product */
-  features: PropTypes.arrayOf(PropTypes.string).isRequired,
+  features: PropTypes.arrayOf(PropTypes.string),
+  /** description of the product */
+  description: PropTypes.string,
   /** title of the product */
   title: PropTypes.string.isRequired,
   tag: PropTypes.oneOf(['legacy', 'beta', 'fundamentals', 'new', 'custom']),
@@ -153,7 +186,11 @@ OverviewHeader.propTypes = {
   /** creates a "Contribute on GitHub" link */
   ghLink: PropTypes.string,
   /** creates a "Contact us" button */
-  contactLink: PropTypes.string
+  contactLink: PropTypes.string,
+  /** An Assembly background class (or other background class in your site's stylesheet): https://labs.mapbox.com/assembly/documentation/#Background-colors */
+  background: PropTypes.string,
+  /** If `true`, the component will use white text */
+  lightText: PropTypes.bool
 };
 
 export default OverviewHeader;

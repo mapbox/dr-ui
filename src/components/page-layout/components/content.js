@@ -100,9 +100,12 @@ export class ContentWrapper extends React.Component {
       ? !hideFeedback
       : !layoutConfig.hideFeedback;
 
+    // do not show h1 if `hideTitle: true` or `overviewHeader` is enabled
+    const showTitle = !hideTitle && !overviewHeader;
+
     return (
       <div id="docs-content">
-        {!hideTitle && (
+        {showTitle && (
           <div
             className={classnames('col prose', {
               'col--8-mxl col--12': layoutConfig.aside !== 'none'
