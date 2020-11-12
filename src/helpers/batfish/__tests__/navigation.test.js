@@ -179,25 +179,26 @@ describe('buildNavigation', () => {
   });
 
   it('multi structure - addPages works', () => {
+    const sections = [
+      {
+        path: 'maps',
+        title: 'Maps SDK for iOS'
+      }
+    ];
+    const addPages = [
+      {
+        title: 'Tutorial',
+        path: 'https://docs.mapbox.com/help/tutorials?product=api',
+        navOrder: 4
+      },
+      {
+        title: 'Troubleshooting',
+        path: 'https://docs.mapbox.com/help/troubleshooting?product=api',
+        navOrder: 5
+      }
+    ];
     expect(
-      buildNavigation(siteBasePath, dataMulti, [
-        {
-          path: 'maps',
-          title: 'Maps SDK for iOS',
-          addPages: [
-            {
-              title: 'Tutorial',
-              path: 'https://docs.mapbox.com/help/tutorials?product=api',
-              navOrder: 4
-            },
-            {
-              title: 'Troubleshooting',
-              path: 'https://docs.mapbox.com/help/troubleshooting?product=api',
-              navOrder: 5
-            }
-          ]
-        }
-      ]).maps.navTabs
+      buildNavigation(siteBasePath, dataMulti, sections, addPages).maps.navTabs
     ).toEqual([
       {
         id: 'overview',

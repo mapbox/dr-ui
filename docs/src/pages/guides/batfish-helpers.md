@@ -172,7 +172,7 @@ class PageShell extends React.Component {
 ]
 ```
 
-### Shape of appended pages
+## Shape of appended pages
 
 - `title` (required) string. Title of the page to be appended. Example: "Tutorials".
 - `path` (required) string. Path of the page to be appended. Example: "https://docs.mapbox.com/help/tutorials?product=navigation".

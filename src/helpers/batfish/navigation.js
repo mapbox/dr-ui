@@ -9,7 +9,7 @@ function buildNavigation(siteBasePath, data, sections, addPages) {
   if (addPages) pages = pages.concat(addPages);
   // if sections are defined, organize by sections first to build a multi-structured structure
   if (sections) {
-    obj = buildMultiLevels(sections, pages);
+    obj = buildMultiLevels(sections, pages, addPages);
   } else {
     // otherwise build a single structure
     const organized = organizePages(pages);
@@ -94,12 +94,11 @@ function formatPages(siteBasePath, data, sections) {
     }));
 }
 
-function buildMultiLevels(sections, pages) {
+function buildMultiLevels(sections, pages, addPages) {
   return sections.reduce(
     (obj, section) => {
       let sectionPages = pages.filter((f) => f.section === section.path);
-      if (section.addPages)
-        sectionPages = sectionPages.concat(section.addPages);
+      if (addPages) sectionPages = sectionPages.concat(addPages);
       const organized = organizePages(sectionPages);
       obj[section.path] = {
         path: section.path,
