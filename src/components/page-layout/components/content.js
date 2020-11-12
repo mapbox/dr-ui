@@ -64,9 +64,22 @@ export class ContentWrapper extends React.Component {
 
   renderAside = (showFeedback) => {
     const { frontMatter } = this.props;
-    const { layout } = frontMatter;
+    const { layout, onThisPage } = frontMatter;
     const headings = frontMatter.headings || this.props.headings;
-    const showToc = headings && headings.length > 0 && layout === 'page';
+    let showOnThisPage;
+    // By default, show `OnThisPage` only for 'page' layouts.
+    // Use `onThisPage` frontmatter to conditionally hide on page layouts or show elsewhere.
+    if (layout === 'page') {
+      typeof onThisPage !== 'undefined' && !onThisPage
+        ? (showOnThisPage = false)
+        : (showOnThisPage = true);
+    } else if (typeof onThisPage !== 'undefined' && !!onThisPage) {
+      showOnThisPage = true;
+    } else {
+      showOnThisPage = false;
+    }
+
+    const showToc = headings && headings.length > 0 && showOnThisPage;
     return (
       <aside
         data-swiftype-index="false"
@@ -151,7 +164,8 @@ ContentWrapper.propTypes = {
     hideFeedback: PropTypes.bool,
     headings: PropTypes.array,
     layout: PropTypes.string,
-    overviewHeader: PropTypes.object
+    overviewHeader: PropTypes.object,
+    onThisPage: PropTypes.bool
   }).isRequired,
   headings: PropTypes.array,
   location: PropTypes.object.isRequired,

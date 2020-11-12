@@ -8,6 +8,7 @@
   - 🚨All h2 and h3 elements that will appear as links in the `OnThisPage` component must have the class `anchor`. The `add-links-to-headings` plugin will automatically add this class to markdown headings, but if you add HTML headings to the page, then you must add the `anchor` class to each h2 and h3 element to make sure the scroll spy can detect these headings.
 - 🚨Update `PageLayout` component.
   - Add aside feature which includes the `OnThisPage` and `Feedback` components. On larger devices, the aside is stuck to the right-side of the screen. On smaller devices, `OnThisPage` moves inline below the page's title and `Feedback` will appear at the bottom of the page. The aside feature does not stick on IE 11 and remains static, but still performs the core functionality of providing anchor links.
+  - `OnThisPage` will appear on all pages with `layout: page` by default, but nowhere else. If a boolean `onThisPage` frontmatter property is supplied, this can be overridden for any page.
   - Remove `TopbarSticker` from `PageLayout`. The main navigation now uses the `NavigationAccordion` on the sidebar to display main pages and subpages.
   - 🚨Redesigned `NavigationAccordion` to work as site navigation menu. The component will no longer track headings. We deprecated several props and introduced new ones, please consult the [NavigationAccordion documentation](https://mapbox.github.io/dr-ui/components/#navigationaccordion).
   - Add option to add `OverviewHeader` component to the page by passing the component's properties in the frontMatter.
