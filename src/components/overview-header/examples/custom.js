@@ -10,7 +10,7 @@ export default class Custom extends React.Component {
       <OverviewHeader
         title="How Mapbox Works"
         description="Learn about the building blocks that Mapbox provides so you can create custom mapping applications."
-        background="bg-blue"
+        theme="bg-blue"
         lightText={true}
         image={
           <img src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg" />

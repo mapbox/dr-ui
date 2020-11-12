@@ -118,10 +118,10 @@ class OverviewHeader extends React.PureComponent {
     return (
       <div
         className={classnames(
-          `dr-ui--overview-header prose mb24 pr60-mxl ${props.background}`,
+          `dr-ui--overview-header prose mb24 pr60-mxl ${props.theme}`,
           {
-            'border-b border--darken10': !props.background,
-            'round py12 px24': props.background,
+            'border-b border--darken10': !props.theme,
+            'round py12 px24': props.theme,
             'color-white': props.lightText
           }
         )}
@@ -187,8 +187,8 @@ OverviewHeader.propTypes = {
   ghLink: PropTypes.string,
   /** creates a "Contact us" button */
   contactLink: PropTypes.string,
-  /** An Assembly background class (or other background class in your site's stylesheet): https://labs.mapbox.com/assembly/documentation/#Background-colors */
-  background: PropTypes.string,
+  /** Classes to apply to the OverviewHeader containter, usually an Assembly backgroun color: https://labs.mapbox.com/assembly/documentation/#Background-colors */
+  theme: PropTypes.string,
   /** If `true`, the component will use white text */
   lightText: PropTypes.bool
 };

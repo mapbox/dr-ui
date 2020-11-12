@@ -122,7 +122,7 @@ testCases.everything = {
     features: ['Smooth scrambled eggs', 'Vegetarian sausage', 'Fruit syrups'],
     title: 'Mapbox SDK for Breakfast',
     version: '0.1.0',
-    background: 'bg-gray-dark',
+    theme: 'bg-gray-dark',
     tag: 'beta',
     lightText: true,
     changelogLink: 'https://keepachangelog.com/en/0.3.0/',

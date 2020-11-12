@@ -18,8 +18,7 @@ overviewHeader:
   changelogLink: /dr-ui/changelog/
   installLink: https://github.com/mapbox/dr-ui/blob/main/README.md
   ghLink: https://github.com/mapbox/dr-ui
-  background: bg-purple-faint
-  # lightText: true
+  theme: bg-purple-faint
   # version: "" dynamic version is set in pages-shell.js
   # image: "" set in page-shell.js
 ---

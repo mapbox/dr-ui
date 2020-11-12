@@ -23,7 +23,7 @@
   - 🚨 Remove `formatTopics` Batfish helper. Use the `HelpPage` component.
   - 🚨 Remove `accordion` object from `navigation` and moved the dataset into `navTabs` as `pages` array.
 - Replace bottom `Feedback` component on examples pages with an `Aside`.
-- Add theming options to `OverviewHeader`: `background` to accept a background CSS class, `lightText` to enable white text, `description` to add a text description. The `features` prop is now optional.
+- Add theming options to `OverviewHeader`: `theme` to accept CSS classes to customize the container, `lightText` to enable white text, `description` to add a text description. The `features` prop is now optional.
 
 ## 1.3.0
 
