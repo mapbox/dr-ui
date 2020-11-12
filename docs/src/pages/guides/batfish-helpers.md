@@ -25,7 +25,7 @@ These dataset functions often use the page's relative pathname as a unique ident
 - `siteBasePath`, required. The function requires the `siteBasePath`.
 - `data`, object. Provided by the data selector.
 - `sections`, array. See [Shape of multi-structured sections](#shape-of-multi-structured-sections).
-- `addPages`, array. See [Shape of appended pages](#shape-of-appended-pages). This argument is for use with single-structured sites only. For multi-structured sites, see [Shape of multi-structured sections](#shape-of-multi-structured-sections).
+- `addPages`, array. See [Shape of appended pages](#shape-of-appended-pages). When using `addPages` with single-structured sites, the `sections` argument should be `null`.
 
 ### Set up in batfish.config.js
 
