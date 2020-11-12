@@ -73,7 +73,7 @@ export default class PageLayout extends React.Component {
       <div className="flex-child flex-child--grow">
         {!frontMatter.hideBreadcrumbs && (
           <Breadcrumb
-            themeWrapper="none block-mm py12"
+            themeWrapper="py12"
             domain={false}
             location={location}
             links={crumbs}
