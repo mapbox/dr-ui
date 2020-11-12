@@ -7,6 +7,7 @@ import Content from './components/content';
 import Sidebar from './components/sidebar';
 import { filterOptions } from './components/example-index';
 import { findHasSection, findParentPath, createUniqueCrumbs } from './utils';
+import classnames from 'classnames';
 
 // default configuration for each layout
 // every option can be overriden in the frontMatter
@@ -72,7 +73,11 @@ export default class PageLayout extends React.Component {
       <div className="flex-child flex-child--grow">
         {!frontMatter.hideBreadcrumbs && (
           <Breadcrumb
-            themeWrapper="py12"
+            themeWrapper={classnames('py12', {
+              // hide breadcrumbs on mobile if sidebar is on the page
+              // show breadcrumbs on mobile if sidebar is hidden from the page
+              'none block-mm': !frontMatter.hideSidebar
+            })}
             domain={false}
             location={location}
             links={crumbs}
@@ -165,7 +170,7 @@ PageLayout.propTypes = {
 `noShellHeaderBuffer` | If `true`, remove the header buffer div. This is helpful for custom headers like on the Help page. |
 `hideFromNav` | If `true`, remove an item from appearing in NavigationAccordion. (This is used in API docs.) | 
 `hideBreadcrumbs` | If `true`, remove the breadcrumbs. (This is used by Help home page.) |
-`hideSidebar` | If `true`, remove the sidebar. (This is used by Help home page.) |
+`hideSidebar` | If `true`, remove the sidebar. (This is used by Help home page and Playground.). This setting will also enable breadcrumbs to display on mobile (unless `hideBreadcrumbs: true`). |
 `showFilters` | All filters for an exampleIndex page are shown if the data is available. Use `showFilters` to define only the filters you want the page to display. | `exampleIndex` layout
 */
   frontMatter: PropTypes.shape({
