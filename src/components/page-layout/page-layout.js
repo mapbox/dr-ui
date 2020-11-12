@@ -35,27 +35,26 @@ export default class PageLayout extends React.Component {
   // render the page's content
   renderContent = (config, parentPath, parent, hasSection) => {
     const { constants, frontMatter, location } = this.props;
-    // removes "for (Platform)" from section titles to avoid repetition
-    const trimSectionTitle = (title) =>
-      title.replace(/\sfor\s(iOS|Android|Vision|Unity)/, '');
     const crumbs = createUniqueCrumbs([
       {
         title: 'All docs',
         path: 'https://docs.mapbox.com'
       },
-      {
-        title: constants.SITE,
-        path: `${constants.BASEURL}/`
-      },
-      // if multi-structured site add the section name
+      // if multi-structured show section name
+      // if single-structured show site name
       ...(hasSection
         ? [
             {
-              title: trimSectionTitle(hasSection.title),
+              title: hasSection.title,
               path: `${constants.BASEURL}/${hasSection.path}/`
             }
           ]
-        : []),
+        : [
+            {
+              title: constants.SITE,
+              path: `${constants.BASEURL}/`
+            }
+          ]),
       ...(parent && parent.title
         ? [
             {
