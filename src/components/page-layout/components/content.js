@@ -130,7 +130,7 @@ export class ContentWrapper extends React.Component {
             {showFeedback && (
               <div
                 className={classnames('my36', {
-                  'block none-mxl': layout !== 'example' && layout !== 'full' // hide feedback at bottom of page on larger screens, unless layout is example or full (always show it on the bottom)
+                  'block none-mxl': layout !== 'full' // hide feedback at bottom of page on larger screens unless layout is full (always show it on the bottom)
                 })}
               >
                 {this.renderFeedback()}
