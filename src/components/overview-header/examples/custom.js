@@ -1,5 +1,5 @@
 /*
-Change background and text with `background` and `lightText`.
+Change background color and text with `theme` and `lightText`.
 */
 import React from 'react';
 import OverviewHeader from '../overview-header';
