@@ -14,7 +14,9 @@
         "navOrder": 1,
         "layout": "page",
         "contentType": "reference",
-        "products": ["Documentation"],
+        "products": [
+          "Documentation"
+        ],
         "hideTitle": true,
         "unProse": true,
         "prependJs": [
@@ -40,13 +42,21 @@
         "title": "Example 1",
         "description": "This is example 1.",
         "contentType": "example",
-        "language": ["JavaScript", "Kotlin"],
-        "topics": ["Navigation"],
+        "language": [
+          "JavaScript",
+          "Kotlin"
+        ],
+        "topics": [
+          "Navigation"
+        ],
         "level": 1,
         "thumbnail": "header-image",
         "layout": "example",
         "video": true,
-        "products": ["Documentation", "Mapbox Tiling Service"]
+        "products": [
+          "Documentation",
+          "Mapbox Tiling Service"
+        ]
       }
     },
     {
@@ -56,12 +66,18 @@
         "title": "Example 2",
         "description": "This is example 2.",
         "contentType": "example",
-        "language": ["JavaScript"],
-        "topics": ["Navigation"],
+        "language": [
+          "JavaScript"
+        ],
+        "topics": [
+          "Navigation"
+        ],
         "level": 2,
         "thumbnail": "header-image",
         "layout": "example",
-        "products": ["Documentation"]
+        "products": [
+          "Documentation"
+        ]
       }
     },
     {
@@ -71,12 +87,19 @@
         "title": "Example 3",
         "description": "This is example 3.",
         "contentType": "example",
-        "language": ["Swift"],
-        "topics": ["Navigation", "Geocoding"],
+        "language": [
+          "Swift"
+        ],
+        "topics": [
+          "Navigation",
+          "Geocoding"
+        ],
         "level": 3,
         "thumbnail": "header-image",
         "layout": "example",
-        "products": ["Documentation"]
+        "products": [
+          "Documentation"
+        ]
       }
     },
     {
@@ -86,11 +109,19 @@
         "title": "Quickstart",
         "description": "Get started with this example.",
         "contentType": "example",
-        "language": ["JavaScript", "Kotlin"],
-        "topics": ["Getting started"],
+        "language": [
+          "JavaScript",
+          "Kotlin"
+        ],
+        "topics": [
+          "Getting started"
+        ],
         "thumbnail": "header-image",
         "layout": "example",
-        "products": ["Documentation", "Mapbox Tiling Service"]
+        "products": [
+          "Documentation",
+          "Mapbox Tiling Service"
+        ]
       }
     },
     {
@@ -100,11 +131,18 @@
         "title": "Another example",
         "description": "This is another example.",
         "contentType": "example",
-        "language": ["JavaScript"],
-        "topics": ["Navigation"],
+        "language": [
+          "JavaScript"
+        ],
+        "topics": [
+          "Navigation"
+        ],
         "thumbnail": "header-image",
         "layout": "example",
-        "products": ["Documentation", "Mapbox Tiling Service"]
+        "products": [
+          "Documentation",
+          "Mapbox Tiling Service"
+        ]
       }
     },
     {
@@ -114,10 +152,14 @@
         "title": "Examples",
         "description": "Replace me.",
         "contentType": "example",
-        "language": ["JavaScript"],
+        "language": [
+          "JavaScript"
+        ],
         "navOrder": 3,
         "layout": "example",
-        "products": ["Documentation"]
+        "products": [
+          "Documentation"
+        ]
       }
     },
     {
@@ -129,7 +171,9 @@
         "order": 2,
         "contentType": "guide",
         "layout": "page",
-        "products": ["Documentation"],
+        "products": [
+          "Documentation"
+        ],
         "prependJs": [
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
           "import topics from '@mapbox/batfish/data/filters'; // eslint-disable-line",
@@ -147,7 +191,9 @@
         "navOrder": 2,
         "order": 1,
         "contentType": "guide",
-        "products": ["Documentation"]
+        "products": [
+          "Documentation"
+        ]
       }
     },
     {
@@ -159,7 +205,9 @@
         "order": 4,
         "layout": "page",
         "contentType": "guide",
-        "products": ["Documentation"]
+        "products": [
+          "Documentation"
+        ]
       }
     },
     {
@@ -171,7 +219,9 @@
         "order": 3,
         "layout": "page",
         "contentType": "guide",
-        "products": ["Documentation"],
+        "products": [
+          "Documentation"
+        ],
         "prependJs": [
           "import components from '../../data/components'; // eslint-disable-line",
           "import FrontMatter from '../../components/frontmatter.js';",
@@ -206,7 +256,9 @@
         "splitPage": true,
         "hideFeedback": true,
         "contentType": "guide",
-        "products": ["Mapbox fundamentals"],
+        "products": [
+          "Mapbox fundamentals"
+        ],
         "prependJs": [
           "import MainPage from '!raw-loader!../index.js'; //eslint-disable-line",
           "import SubOne from '!raw-loader!./intro.md'; //eslint-disable-line",
@@ -226,7 +278,9 @@
         "order": 1,
         "splitPage": true,
         "hideFeedback": true,
-        "products": ["Documentation"],
+        "products": [
+          "Documentation"
+        ],
         "contentType": "guide"
       }
     },
@@ -239,7 +293,9 @@
         "order": 3,
         "splitPage": true,
         "hideFeedback": true,
-        "products": ["Mapbox fundamentals"],
+        "products": [
+          "Mapbox fundamentals"
+        ],
         "contentType": "guide"
       }
     },
@@ -253,7 +309,9 @@
         "splitPage": true,
         "tag": "beta",
         "hideFeedback": true,
-        "products": ["Mapbox fundamentals"],
+        "products": [
+          "Mapbox fundamentals"
+        ],
         "contentType": "guide"
       }
     },

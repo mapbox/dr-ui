@@ -22,6 +22,8 @@ These dataset functions often use the page's relative pathname as a unique ident
 
 ### Arguments
 
+Note that the `buildNavigation` function uses **named parameters**.
+
 - `siteBasePath`, required. The function requires the `siteBasePath`.
 - `data`, object. Provided by the data selector.
 - `sections`, array. See [Shape of multi-structured sections](#shape-of-multi-structured-sections).
@@ -40,7 +42,7 @@ module.exports = () => {
   return {
     siteBasePath: siteBasePath,
     dataSelectors: {
-      navigation: (data) => buildNavigation(siteBasePath, data)
+      navigation: (data) => buildNavigation({ siteBasePath, data })
     }
   };
 };
@@ -51,10 +53,14 @@ Multi-structured sites require and additional configuration array:
 ```js
 dataSelectors: {
   navigation: (data) =>
-    buildNavigation(siteBasePath, data, [
-      { path: 'maps', title: 'Maps SDK for iOS' },
-      { path: 'navigation', title: 'Navigation SDK for iOS' }
-    ]);
+    buildNavigation({
+      siteBasePath,
+      data,
+      sections: [
+        { path: 'maps', title: 'Maps SDK for iOS' },
+        { path: 'navigation', title: 'Navigation SDK for iOS' }
+      ]
+    });
 }
 ```
 
@@ -242,7 +248,7 @@ If data is not building as you expect:
 ```js
 navigation: data => {
   require('fs').writeFileSync('./tests/fixtures/data-example.json', JSON.stringify(data, null, 2))
-  return buildNavigation(siteBasePath, data)
+  return buildNavigation({ siteBasePath, data })
 },
 ```
 

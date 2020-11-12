@@ -10,21 +10,25 @@ const siteBasePath = '/docs-starter-kit';
 
 describe('buildNavigation', () => {
   it('single structure', () => {
-    expect(buildNavigation(siteBasePath, data)).toMatchSnapshot();
+    expect(buildNavigation({ siteBasePath, data })).toMatchSnapshot();
   });
 
   it('multi structure', () => {
     expect(
-      buildNavigation(siteBasePath, dataMulti, sections)
+      buildNavigation({ siteBasePath, data: dataMulti, sections })
     ).toMatchSnapshot();
   });
 
   it('help glossary is sorted alphabetical', () => {
-    expect(buildNavigation('/help', helpDebug).navTabs).toMatchSnapshot();
+    expect(
+      buildNavigation({ siteBasePath: '/help', data: helpDebug }).navTabs
+    ).toMatchSnapshot();
   });
 
   it('pages are sorted by order', () => {
-    expect(buildNavigation('/api', apiDebug).navTabs).toEqual([
+    expect(
+      buildNavigation({ siteBasePath: '/api', data: apiDebug }).navTabs
+    ).toEqual([
       {
         id: 'introduction',
         navOrder: 1,
@@ -72,50 +76,57 @@ describe('buildNavigation', () => {
 
   it('hideFromNav, removes items', () => {
     expect(
-      buildNavigation(siteBasePath, {
-        pages: [
-          {
-            path: '/dr-ui/level-one/',
-            frontMatter: {
-              title: 'Top page',
-              layout: 'page',
-              navOrder: 1
+      buildNavigation({
+        siteBasePath,
+        data: {
+          pages: [
+            {
+              path: '/dr-ui/level-one/',
+              frontMatter: {
+                title: 'Top page',
+                layout: 'page',
+                navOrder: 1
+              }
+            },
+            {
+              path: '/dr-ui/level-one/a/',
+              frontMatter: {
+                title: 'Page a',
+                layout: 'page',
+                hideFromNav: true
+              }
+            },
+            {
+              path: '/dr-ui/level-one/b/',
+              frontMatter: {
+                title: 'Page b',
+                layout: 'page'
+              }
             }
-          },
-          {
-            path: '/dr-ui/level-one/a/',
-            frontMatter: {
-              title: 'Page a',
-              layout: 'page',
-              hideFromNav: true
-            }
-          },
-          {
-            path: '/dr-ui/level-one/b/',
-            frontMatter: {
-              title: 'Page b',
-              layout: 'page'
-            }
-          }
-        ]
+          ]
+        }
       })
     ).toMatchSnapshot();
   });
 
   it('single structure - addPages works', () => {
     expect(
-      buildNavigation('/api', apiDebug, null, [
-        {
-          title: 'Tutorial',
-          path: 'https://docs.mapbox.com/help/tutorials?product=api',
-          navOrder: 2
-        },
-        {
-          title: 'Troubleshooting',
-          path: 'https://docs.mapbox.com/help/troubleshooting?product=api',
-          navOrder: 3
-        }
-      ]).navTabs
+      buildNavigation({
+        siteBasePath: '/api',
+        data: apiDebug,
+        addPages: [
+          {
+            title: 'Tutorial',
+            path: 'https://docs.mapbox.com/help/tutorials?product=api',
+            navOrder: 2
+          },
+          {
+            title: 'Troubleshooting',
+            path: 'https://docs.mapbox.com/help/troubleshooting?product=api',
+            navOrder: 3
+          }
+        ]
+      }).navTabs
     ).toEqual([
       {
         id: 'introduction',
@@ -198,7 +209,8 @@ describe('buildNavigation', () => {
       }
     ];
     expect(
-      buildNavigation(siteBasePath, dataMulti, sections, addPages).maps.navTabs
+      buildNavigation({ siteBasePath, data: dataMulti, sections, addPages })
+        .maps.navTabs
     ).toEqual([
       {
         id: 'overview',

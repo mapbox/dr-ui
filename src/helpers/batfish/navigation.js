@@ -2,7 +2,7 @@
 // see: https://mapbox.github.io/dr-ui/batfish-helpers/
 const slugify = require('slugify');
 
-function buildNavigation(siteBasePath, data, sections, addPages) {
+function buildNavigation({ siteBasePath, data, sections, addPages }) {
   let obj = {};
   // get page data ready to be organized
   let pages = formatPages(siteBasePath, data, sections);

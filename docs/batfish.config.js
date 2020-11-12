@@ -48,7 +48,7 @@ module.exports = () => {
       ]
     },
     dataSelectors: {
-      navigation: (data) => buildNavigation(siteBasePath, data, null, addPages),
+      navigation: (data) => buildNavigation({ siteBasePath, data, addPages }),
       filters: (data) => buildFilters(data),
       splitPages: (data) => buildSplitPages(data),
       sync: (data) => {
