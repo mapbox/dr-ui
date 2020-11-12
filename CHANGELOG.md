@@ -24,6 +24,7 @@
   - 🚨 Remove `accordion` object from `navigation` and moved the dataset into `navTabs` as `pages` array.
 - Add `small` prop and variant to `Tag`.
 - Remove truncation on `ProductMenu` and moves tag above the title.
+- Replace bottom `Feedback` component on examples pages with an `Aside`.
 
 ## 1.3.0
 
