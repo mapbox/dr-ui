@@ -67,16 +67,12 @@ export class ContentWrapper extends React.Component {
     const { layout, onThisPage } = frontMatter;
     const headings = frontMatter.headings || this.props.headings;
     let showOnThisPage;
-    // By default, show `OnThisPage` only for 'page' layouts.
     // Use `onThisPage` frontmatter to conditionally hide on page layouts or show elsewhere.
-    if (layout === 'page') {
-      typeof onThisPage !== 'undefined' && !onThisPage
-        ? (showOnThisPage = false)
-        : (showOnThisPage = true);
-    } else if (typeof onThisPage !== 'undefined' && !!onThisPage) {
-      showOnThisPage = true;
+    // By default, show `OnThisPage` only for 'page' layouts.
+    if (typeof onThisPage !== 'undefined') {
+      !onThisPage ? (showOnThisPage = false) : (showOnThisPage = true);
     } else {
-      showOnThisPage = false;
+      layout === 'page' ? (showOnThisPage = true) : (showOnThisPage = false);
     }
 
     const showToc = headings && headings.length > 0 && showOnThisPage;
