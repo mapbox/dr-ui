@@ -6,12 +6,12 @@ function buildNavigation(siteBasePath, data, sections, addPages) {
   let obj = {};
   // get page data ready to be organized
   let pages = formatPages(siteBasePath, data, sections);
-  if (addPages) pages = pages.concat(addPages);
   // if sections are defined, organize by sections first to build a multi-structured structure
   if (sections) {
     obj = buildMultiLevels(sections, pages, addPages);
   } else {
     // otherwise build a single structure
+    if (addPages) pages = pages.concat(addPages);
     const organized = organizePages(pages);
     obj.navTabs = buildNavTabs(organized);
     obj.hierarchy = buildHierarchy(organized);
