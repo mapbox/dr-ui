@@ -67,7 +67,10 @@ export default class NavigationAccordion extends React.Component {
         >
           {label}
           {external && (
-            <span className="ml3">
+            <span
+              className="ml3 color-darken50 relative"
+              style={{ top: '-1px' }}
+            >
               <Icon name={'share'} inline={true} />
             </span>
           )}
