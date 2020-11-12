@@ -967,6 +967,211 @@ Array [
 ]
 `;
 
+exports[`page-layout No sidebar, show Breadcrumbs on mobile renders as expected 1`] = `
+Array [
+  <div
+    className="shell-header-buffer"
+  />,
+  <div
+    className="limiter limiter--wide"
+  >
+    <div
+      className="flex-parent-mm"
+    >
+      <div
+        className="flex-child flex-child--grow"
+      >
+        <div
+          className="dr-ui--breadcrumb py12"
+          data-swiftype-index="false"
+        >
+          <span
+            className="none inline-block-mm"
+          >
+            <a
+              className="link"
+              href="https://docs.mapbox.com"
+            >
+              All docs
+            </a>
+            <span
+              className="color-gray-light inline-block-mm none px6"
+            >
+              <svg
+                className="events-none icon inline-block align-t"
+                focusable="false"
+                role="presentation"
+                style={
+                  Object {
+                    "height": 18,
+                    "width": 18,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="#icon-chevron-right"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                />
+              </svg>
+            </span>
+          </span>
+          <span
+            className=""
+          >
+            <span
+              className="color-gray-light inline-block none-mm pr6"
+            >
+              <svg
+                className="events-none icon inline-block align-t"
+                focusable="false"
+                role="presentation"
+                style={
+                  Object {
+                    "height": 18,
+                    "width": 18,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="#icon-arrow-left"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                />
+              </svg>
+            </span>
+            <a
+              className="link"
+              href="/dr-ui/"
+            >
+              Dr. UI
+            </a>
+            <span
+              className="color-gray-light inline-block-mm none px6"
+            >
+              <svg
+                className="events-none icon inline-block align-t"
+                focusable="false"
+                role="presentation"
+                style={
+                  Object {
+                    "height": 18,
+                    "width": 18,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="#icon-chevron-right"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                />
+              </svg>
+            </span>
+          </span>
+          <span
+            className="color-gray none inline-block-mm"
+          >
+            Overview
+          </span>
+        </div>
+        <div
+          id="docs-content"
+        >
+          <div
+            className="col prose"
+          >
+            <h1
+              className="txt-fancy"
+            >
+              Overview
+            </h1>
+          </div>
+          <div
+            className="grid grid--gut60"
+          >
+            <div
+              className="col prose"
+            >
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <div
+                className="my36"
+              >
+                <div
+                  className="dr-ui--feedback"
+                >
+                  <div>
+                    <h2
+                      className="unprose txt-m txt-bold mb6"
+                    >
+                      Was this 
+                      page
+                       helpful?
+                    </h2>
+                    <button
+                      className="btn btn--s"
+                      id="dr-ui--feedback-page-yes"
+                      onClick={[Function]}
+                    >
+                      Yes
+                    </button>
+                    <button
+                      className="btn btn--s ml6"
+                      id="dr-ui--feedback-page-no"
+                      onClick={[Function]}
+                    >
+                      No
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="fixed block none-mm mx24 my24 z5 bottom right"
+  >
+    <div
+      className="block mx24 my24 z5"
+    >
+      <div
+        className="inline-block"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+      >
+        <button
+          aria-label="Back to top"
+          className="btn--blue w60 h60 px0 round-full shadow-darken25 color-white flex-parent flex-parent--center-main flex-parent--center-cross"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="events-none icon"
+            focusable="false"
+            role="presentation"
+            style={
+              Object {
+                "height": 30,
+                "width": 30,
+              }
+            }
+          >
+            <use
+              xlinkHref="#icon-arrow-up"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
 exports[`page-layout Page layout renders as expected 1`] = `
 Array [
   <div
