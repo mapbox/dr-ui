@@ -33,4 +33,19 @@ describe('tag', () => {
       expect(tree).toMatchSnapshot();
     });
   });
+  describe(testCases.small.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.small;
+      wrapper = renderer.create(testCase.element);
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });

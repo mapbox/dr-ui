@@ -567,7 +567,7 @@ exports[`overview-header Beta product renders as expected 1`] = `
           >
             <div
               aria-describedby="tooltip-1"
-              className="txt-s txt-bold round px6 inline-block cursor-default border"
+              className="txt-bold px6 round inline-block cursor-default txt-s border"
               style={
                 Object {
                   "background": "#f1f3fd",
