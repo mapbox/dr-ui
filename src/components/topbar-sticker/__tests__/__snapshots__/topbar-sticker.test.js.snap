@@ -45,15 +45,10 @@ exports[`topbar-sticker For display only renders as expected 1`] = `
                 }
               >
                 <div
-                  className="flex-parent"
-                  style={
-                    Object {
-                      "overflow": "hidden",
-                    }
-                  }
+                  className="dr-ui--product-menu"
                 >
                   <a
-                    className="flex-child txt-fancy txt-l txt-truncate color-blue-on-hover"
+                    className="txt-fancy txt-l block color-blue-on-hover"
                     href="/dr-ui/"
                   >
                     Dr. UI

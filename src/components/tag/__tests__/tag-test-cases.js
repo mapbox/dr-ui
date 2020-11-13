@@ -2,6 +2,7 @@ import React from 'react';
 import Tag from '../tag';
 import Basic from '../examples/basic';
 import Custom from '../examples/custom';
+import Small from '../examples/small';
 
 const testCases = {};
 const noRenderCases = {};
@@ -38,6 +39,11 @@ testCases.new = {
 testCases.custom = {
   description: 'Custom tag',
   element: <Custom />
+};
+
+testCases.small = {
+  description: 'small variant',
+  element: <Small />
 };
 
 export { testCases, noRenderCases };

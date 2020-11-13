@@ -10,7 +10,7 @@
   - Add aside feature which includes the `OnThisPage` and `Feedback` components. On larger devices, the aside is stuck to the right-side of the screen. On smaller devices, `OnThisPage` moves inline below the page's title and `Feedback` will appear at the bottom of the page. The aside feature does not stick on IE 11 and remains static, but still performs the core functionality of providing anchor links.
   - Remove `TopbarSticker` from `PageLayout`. The main navigation now uses the `NavigationAccordion` on the sidebar to display main pages and subpages.
   - 🚨Redesigned `NavigationAccordion` to work as site navigation menu. The component will no longer track headings. We deprecated several props and introduced new ones, please consult the [NavigationAccordion documentation](https://mapbox.github.io/dr-ui/components/#navigationaccordion).
-  - Add option to add `OverviewHeader` component to the page by passing the component's properties in the frontMatter.
+  - Add option to add `OverviewHeader` component to the page by passing the component's properties in the frontMatter. When `overviewHeader` is defined in the frontMatter, then the title (h1) will not show on the page.
   - Add filter functionality to `exampleIndex` layout. All page cards will be displayed in order of the `order` frontMatter property and then alphabetically by title. Filters will automatically appear for topics, levels, languages, and video if the pages have at least more than one unique option for each filter category. Filter selections are pushed to the query param and are set by a rendered query string.
 - Update `Feedback` component.
   - Remove background color and use `AsideHeading` component to style the component's heading.
@@ -22,7 +22,10 @@
   - 🚨 Remove `topics` Batfish helper and replace with `filters`.
   - 🚨 Remove `formatTopics` Batfish helper. Use the `HelpPage` component.
   - 🚨 Remove `accordion` object from `navigation` and moved the dataset into `navTabs` as `pages` array.
+- Add `small` prop and variant to `Tag`.
+- Remove truncation on `ProductMenu` and moves tag above the title.
 - Replace bottom `Feedback` component on examples pages with an `Aside`.
+- Add theming options to `OverviewHeader`: `theme` to accept CSS classes to customize the container, `lightText` to enable white text, `description` to add a text description. The `features` prop is now optional.
 
 ## 1.3.0
 

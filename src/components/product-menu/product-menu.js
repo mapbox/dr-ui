@@ -18,26 +18,26 @@ class ProductMenu extends React.PureComponent {
         : undefined
     };
     return (
-      <span className="flex-child flex-child--no-shrink mx6">
-        <Tag {...tagProps} />
-      </span>
+      <div className="ml-neg3">
+        <Tag {...tagProps} small={true} />
+      </div>
     );
   };
 
   render() {
     const { props } = this;
     return (
-      <div className="flex-parent" style={{ overflow: 'hidden' }}>
+      <div className="dr-ui--product-menu">
+        {props.tag && this.buildTag(props)}
         <a
           href={props.homePage}
-          className={classnames('flex-child txt-fancy txt-l txt-truncate', {
+          className={classnames('txt-fancy txt-l block', {
             'color-white color-gray-light-on-hover': props.lightText,
             'color-blue-on-hover': !props.lightText
           })}
         >
           {props.productName}
         </a>
-        {props.tag && this.buildTag(props)}
       </div>
     );
   }
