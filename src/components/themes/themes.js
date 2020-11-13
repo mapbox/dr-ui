@@ -34,6 +34,7 @@ const themes = {
   default: {
     image: <Image icon="book" color="gray" />,
     label: 'Note',
+    icon: 'book',
     styles: {
       background: '#f4f7fb',
       color: '#425870'
@@ -42,6 +43,7 @@ const themes = {
   warning: {
     image: <Image icon="alert" color="orange" />,
     label: 'Warning',
+    icon: 'alert',
     styles: {
       background: '#feefe2',
       color: '#78471c',
@@ -51,14 +53,16 @@ const themes = {
   error: {
     image: <Image icon="alert" color="red" />,
     label: 'Error',
+    icon: 'alert',
     styles: {
       background: '#fbe5e5',
       color: '#9b3134'
     }
   },
   beta: {
-    image: <Image icon="marker" color="blue" />,
+    image: <Image icon="lightning" color="blue" />,
     label: 'Beta',
+    icon: 'lightning',
     tooltipText: 'This feature is in public beta and is subject to changes.',
     styles: {
       background: '#f1f3fd',
@@ -69,6 +73,7 @@ const themes = {
   new: {
     image: <Image icon="plus" color="green" />,
     label: 'New!',
+    icon: 'plus',
     tooltipText: 'This feature was released recently.',
     styles: {
       background: '#e8f5ee',
@@ -79,6 +84,7 @@ const themes = {
   download: {
     image: <Image icon="arrow-down" color="purple" />,
     label: 'Download',
+    icon: 'arrow-down',
     styles: {
       background: '#f2effa',
       color: '#452f92'
@@ -86,6 +92,7 @@ const themes = {
   },
   fundamentals: {
     label: 'Fundamentals',
+    icon: 'bookmark',
     tooltipText:
       'The concepts described here are fundamental to using this product.',
     styles: {

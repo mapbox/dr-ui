@@ -61,7 +61,8 @@ testCases.withTags = {
         pages: [
           {
             title: 'Heading one',
-            path: 'heading-one'
+            path: 'heading-one',
+            tag: 'beta'
           },
           {
             title: 'Heading two',
@@ -73,7 +74,8 @@ testCases.withTags = {
                 background: '#FEDADA',
                 color: '#bb2224',
                 borderColor: '#FD8383'
-              }
+              },
+              customIcon: 'alert'
             },
             path: 'heading-two'
           }

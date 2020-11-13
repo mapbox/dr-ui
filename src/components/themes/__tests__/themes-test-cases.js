@@ -25,8 +25,11 @@ testCases.beta = {
   description: 'beta',
   element: (
     <div>
-      <Note theme="beta">Beta note.</Note> <Tag theme="beta" />{' '}
+      <Note theme="beta">Beta note.</Note>
+      <Tag theme="beta" />
       <Tag theme="beta" small={true} />
+      <Tag theme="beta" icon={true} />
+      <Tag theme="beta" small={true} icon={true} />
     </div>
   )
 };
@@ -43,6 +46,8 @@ testCases.legacy = {
       <Note theme="legacy">legacy note</Note>
       <Tag theme="legacy" />
       <Tag theme="legacy" small={true} />
+      <Tag theme="legacy" icon={true} />
+      <Tag theme="legacy" small={true} icon={true} />
     </div>
   )
 };
@@ -53,6 +58,8 @@ testCases.fundamentals = {
     <div>
       <Tag theme="fundamentals" />
       <Tag theme="fundamentals" small={true} />
+      <Tag theme="fundamentals" icon={true} />
+      <Tag theme="fundamentals" small={true} icon={true} />
     </div>
   )
 };
@@ -65,7 +72,8 @@ const customProps = {
     background: '#FEDADA',
     color: '#DA2E30',
     borderColor: '#FD8383'
-  }
+  },
+  customIcon: 'contact'
 };
 
 testCases.custom = {
@@ -74,6 +82,8 @@ testCases.custom = {
     <div>
       <Tag {...customProps} />
       <Tag {...customProps} small={true} />
+      <Tag {...customProps} icon={true} />
+      <Tag {...customProps} small={true} icon={true} />
     </div>
   )
 };
