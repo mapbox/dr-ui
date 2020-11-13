@@ -20,8 +20,7 @@ export default class Tag extends React.Component {
           className={classnames('txt-bold round inline-block cursor-default', {
             'txt-s border': !this.props.small,
             'txt-xs': this.props.small,
-            px6: !this.props.icon,
-            '': this.props.icon
+            px6: !this.props.icon
           })}
         >
           {this.props.icon ? (
@@ -45,6 +44,7 @@ Tag.propTypes = {
     .isRequired,
   /** If `true`, display the tag with a smaller font and and no border */
   small: PropTypes.bool,
+  /** If `true`, display the icon only (no text) */
   icon: PropTypes.bool,
   /** If the theme is set to "custom", this prop is required. */
   customLabel: (props, componentName) => {
