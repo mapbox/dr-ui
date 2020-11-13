@@ -70,7 +70,7 @@ const customProps = {
   customTooltipText: 'Contact us for access to this feature.',
   customStyles: {
     background: '#FEDADA',
-    color: '#DA2E30',
+    color: '#c12325',
     borderColor: '#FD8383'
   },
   customIcon: 'contact'
