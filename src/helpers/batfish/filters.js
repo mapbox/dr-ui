@@ -4,10 +4,12 @@ const { sortAlpha } = require('./navigation');
 
 function buildFilters(data) {
   // format page data
-  const pages = data.pages.map((p) => ({
-    path: p.path, // each path is the page's primary key
-    ...p.frontMatter
-  }));
+  const pages = data.pages
+    .map((p) => ({
+      path: p.path, // each path is the page's primary key
+      ...p.frontMatter
+    }))
+    .filter((f) => f.title); // page must have title
 
   // find every example index page
   const exampleIndexPages = pages.filter(
