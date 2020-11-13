@@ -23,7 +23,9 @@
   - 🚨 Remove `topics` Batfish helper and replace with `filters`.
   - 🚨 Remove `formatTopics` Batfish helper. Use the `HelpPage` component.
   - 🚨 Remove `accordion` object from `navigation` and moved the dataset into `navTabs` as `pages` array.
-- Add `small` and `icon` props to `Tag`.
+  - 🚨 Add `addPages` parameter to `buildNavigation` helper function to support appending arbitrary items to site navigation.
+  - 🚨 Switches to named parameters for `buildNavigation`.
+- Add `small` prop and variant to `Tag`.
 - Remove truncation on `ProductMenu` and moves tag above the title.
 - Replace bottom `Feedback` component on examples pages with an `Aside`.
 - Add theming options to `OverviewHeader`: `theme` to accept CSS classes to customize the container, `lightText` to enable white text, `description` to add a text description. The `features` prop is now optional.

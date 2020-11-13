@@ -7,6 +7,19 @@ const {
 
 const siteBasePath = '/dr-ui';
 
+const addPages = [
+  {
+    title: 'Tutorials',
+    path: 'https://docs.mapbox.com/help/tutorials?product=api',
+    navOrder: 4
+  },
+  {
+    title: 'Troubleshooting',
+    path: 'https://docs.mapbox.com/help/troubleshooting?product=api',
+    navOrder: 5
+  }
+];
+
 module.exports = () => {
   return {
     siteBasePath: siteBasePath,
@@ -35,7 +48,7 @@ module.exports = () => {
       ]
     },
     dataSelectors: {
-      navigation: (data) => buildNavigation(siteBasePath, data),
+      navigation: (data) => buildNavigation({ siteBasePath, data, addPages }),
       filters: (data) => buildFilters(data),
       splitPages: (data) => buildSplitPages(data),
       sync: (data) => {

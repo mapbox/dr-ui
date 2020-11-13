@@ -2,10 +2,11 @@
 // see: https://mapbox.github.io/dr-ui/batfish-helpers/
 const slugify = require('slugify');
 
-function buildNavigation(siteBasePath, data, sections) {
+function buildNavigation({ siteBasePath, data, sections, addPages }) {
   let obj = {};
   // get page data ready to be organized
-  const pages = formatPages(siteBasePath, data, sections);
+  let pages = formatPages(siteBasePath, data, sections);
+  if (addPages) pages = pages.concat(addPages);
   // if sections are defined, organize by sections first to build a multi-structured structure
   if (sections) {
     obj = buildMultiLevels(sections, pages);
@@ -96,7 +97,9 @@ function formatPages(siteBasePath, data, sections) {
 function buildMultiLevels(sections, pages) {
   return sections.reduce(
     (obj, section) => {
-      const sectionPages = pages.filter((f) => f.section === section.path);
+      let sectionPages = pages.filter((f) => f.section === section.path);
+      if (section.addPages)
+        sectionPages = sectionPages.concat(section.addPages);
       const organized = organizePages(sectionPages);
       obj[section.path] = {
         path: section.path,
@@ -117,6 +120,7 @@ function buildMultiLevels(sections, pages) {
 
 function buildNavTabs(organized) {
   const navTabs = Object.keys(organized).map((path) => {
+    const isExternal = isUrlExternal(path);
     return {
       ...organized[path],
       title: organized[path].title,
@@ -124,7 +128,10 @@ function buildNavTabs(organized) {
         replacement: '-',
         lower: true
       }),
-      path: path
+      path: path,
+      ...(isExternal && {
+        external: true
+      })
     };
   });
 
@@ -144,6 +151,11 @@ function buildNavTabs(organized) {
     });
     return arr;
   }, []);
+}
+
+function isUrlExternal(url) {
+  const re = new RegExp('^(http|https)://', 'i');
+  return re.test(url);
 }
 
 function subPageSorter(arr) {

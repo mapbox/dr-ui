@@ -1917,14 +1917,6 @@ Object {
       "parent": "/dr-ui/guides/",
       "title": "Guides",
     },
-    "/dr-ui/troubleshooting/": Object {
-      "parent": "/dr-ui/troubleshooting/",
-      "title": "Troubleshooting",
-    },
-    "/dr-ui/tutorials/": Object {
-      "parent": "/dr-ui/tutorials/",
-      "title": "Tutorials",
-    },
   },
   "navTabs": Array [
     Object {
@@ -1973,20 +1965,6 @@ Object {
       "pages": Array [],
       "path": "/dr-ui/examples/",
       "title": "Examples",
-    },
-    Object {
-      "id": "tutorials",
-      "navOrder": 4,
-      "pages": Array [],
-      "path": "/dr-ui/tutorials/",
-      "title": "Tutorials",
-    },
-    Object {
-      "id": "troubleshooting",
-      "navOrder": 5,
-      "pages": Array [],
-      "path": "/dr-ui/troubleshooting/",
-      "title": "Troubleshooting",
     },
   ],
 }
