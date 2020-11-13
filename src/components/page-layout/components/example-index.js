@@ -272,60 +272,54 @@ export default class ExampleIndex extends React.PureComponent {
     const { topic, language, level, videos, product } = this.state;
     const showResultIndicator = topic || language || level || videos || product;
     const resultsLength = filteredPages.length;
-    const indexWrapperClasses = classnames({
-      mt18: children
-    });
     return (
       <ContentWrapper {...this.props} customAside={this.renderFilters()}>
-        {children}
-        <div className={indexWrapperClasses}>
-          {showResultIndicator && (
-            <div className="mb18">
-              <div className="inline-block mr12 color-gray">
-                {resultsLength === 0
-                  ? 'No results found.'
-                  : `Found ${resultsLength} result${
-                      resultsLength === 1 ? '' : 's'
-                    }.`}
-              </div>
-              <button
-                onClick={() => this.handleReset()}
-                className="btn btn--s btn--gray btn--stroke round"
-              >
-                Reset filters
-              </button>
+        {/* If the example index's jsxtreme is not empty, show it before the examples */}
+        {children && <div className="mb18">{children}</div>}
+        {showResultIndicator && (
+          <div className="mb18">
+            <div className="inline-block mr12 color-gray">
+              {resultsLength === 0
+                ? 'No results found.'
+                : `Found ${resultsLength} result${
+                    resultsLength === 1 ? '' : 's'
+                  }.`}
             </div>
-          )}
-          {resultsLength > 0 && (
-            <CardContainer
-              cardColSize={cardColSize}
-              fullWidthCards={fullWidthCards ? fullWidthCards : false} // default is false
-              cards={filteredPages.map((page) => (
-                <Card
-                  key={page.title}
-                  title={page.title}
-                  description={
-                    hideCardDescription ? undefined : page.description
-                  }
-                  path={page.path}
-                  thumbnail={
-                    page.thumbnail
-                      ? this.renderThumbnail(page.thumbnail, AppropriateImage)
-                      : undefined
-                  }
-                  level={page.level}
-                  language={
-                    hideCardLanguage
-                      ? undefined
-                      : page.language
-                      ? page.language.join(', ')
-                      : undefined
-                  }
-                />
-              ))}
-            />
-          )}
-        </div>
+            <button
+              onClick={() => this.handleReset()}
+              className="btn btn--s btn--gray btn--stroke round"
+            >
+              Reset filters
+            </button>
+          </div>
+        )}
+        {resultsLength > 0 && (
+          <CardContainer
+            cardColSize={cardColSize}
+            fullWidthCards={fullWidthCards ? fullWidthCards : false} // default is false
+            cards={filteredPages.map((page) => (
+              <Card
+                key={page.title}
+                title={page.title}
+                description={hideCardDescription ? undefined : page.description}
+                path={page.path}
+                thumbnail={
+                  page.thumbnail
+                    ? this.renderThumbnail(page.thumbnail, AppropriateImage)
+                    : undefined
+                }
+                level={page.level}
+                language={
+                  hideCardLanguage
+                    ? undefined
+                    : page.language
+                    ? page.language.join(', ')
+                    : undefined
+                }
+              />
+            ))}
+          />
+        )}
       </ContentWrapper>
     );
   }

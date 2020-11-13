@@ -332,172 +332,168 @@ Array [
             <div
               className="col prose"
             >
-              <div
-                className=""
-              >
-                <div>
+              <div>
+                <div
+                  className="grid grid--gut36"
+                >
                   <div
-                    className="grid grid--gut36"
+                    className="mb18 col col--12 col--6-ml"
                   >
-                    <div
-                      className="mb18 col col--12 col--6-ml"
+                    <a
+                      className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+                      href="/PageLayout/example-1/"
                     >
-                      <a
-                        className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
-                        href="/PageLayout/example-1/"
+                      <div
+                        className="relative h120 mb6"
                       >
+                        <div />
+                      </div>
+                      <div>
                         <div
-                          className="relative h120 mb6"
+                          className="mb6"
                         >
-                          <div />
-                        </div>
-                        <div>
+                          
                           <div
-                            className="mb6"
+                            className="inline-block color-gray txt-s txt-bold"
                           >
-                            
-                            <div
-                              className="inline-block color-gray txt-s txt-bold"
-                            >
-                              <svg
-                                className="events-none icon inline-block align-t"
-                                focusable="false"
-                                role="presentation"
-                                style={
-                                  Object {
-                                    "height": 18,
-                                    "width": 18,
-                                  }
+                            <svg
+                              className="events-none icon inline-block align-t"
+                              focusable="false"
+                              role="presentation"
+                              style={
+                                Object {
+                                  "height": 18,
+                                  "width": 18,
                                 }
-                              >
-                                <use
-                                  xlinkHref="#icon-code"
-                                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                                />
-                              </svg>
-                               
-                              JavaScript
-                            </div>
-                          </div>
-                          <div
-                            className="mb6"
-                          >
-                            Example 1
-                          </div>
-                          <div
-                            className="color-gray color-gray-on-hover"
-                          >
-                            Replace me.
+                              }
+                            >
+                              <use
+                                xlinkHref="#icon-code"
+                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                              />
+                            </svg>
+                             
+                            JavaScript
                           </div>
                         </div>
-                      </a>
-                    </div>
-                    <div
-                      className="mb18 col col--12 col--6-ml"
+                        <div
+                          className="mb6"
+                        >
+                          Example 1
+                        </div>
+                        <div
+                          className="color-gray color-gray-on-hover"
+                        >
+                          Replace me.
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    className="mb18 col col--12 col--6-ml"
+                  >
+                    <a
+                      className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+                      href="/PageLayout/example-2/"
                     >
-                      <a
-                        className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
-                        href="/PageLayout/example-2/"
+                      <div
+                        className="relative h120 mb6"
                       >
+                        <div />
+                      </div>
+                      <div>
                         <div
-                          className="relative h120 mb6"
+                          className="mb6"
                         >
-                          <div />
-                        </div>
-                        <div>
+                          
                           <div
-                            className="mb6"
+                            className="inline-block color-gray txt-s txt-bold"
                           >
-                            
-                            <div
-                              className="inline-block color-gray txt-s txt-bold"
-                            >
-                              <svg
-                                className="events-none icon inline-block align-t"
-                                focusable="false"
-                                role="presentation"
-                                style={
-                                  Object {
-                                    "height": 18,
-                                    "width": 18,
-                                  }
+                            <svg
+                              className="events-none icon inline-block align-t"
+                              focusable="false"
+                              role="presentation"
+                              style={
+                                Object {
+                                  "height": 18,
+                                  "width": 18,
                                 }
-                              >
-                                <use
-                                  xlinkHref="#icon-code"
-                                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                                />
-                              </svg>
-                               
-                              JavaScript
-                            </div>
-                          </div>
-                          <div
-                            className="mb6"
-                          >
-                            Example 2
-                          </div>
-                          <div
-                            className="color-gray color-gray-on-hover"
-                          >
-                            Replace me.
+                              }
+                            >
+                              <use
+                                xlinkHref="#icon-code"
+                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                              />
+                            </svg>
+                             
+                            JavaScript
                           </div>
                         </div>
-                      </a>
-                    </div>
-                    <div
-                      className="mb18 col col--12 col--6-ml"
+                        <div
+                          className="mb6"
+                        >
+                          Example 2
+                        </div>
+                        <div
+                          className="color-gray color-gray-on-hover"
+                        >
+                          Replace me.
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    className="mb18 col col--12 col--6-ml"
+                  >
+                    <a
+                      className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+                      href="/PageLayout/example-3/"
                     >
-                      <a
-                        className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
-                        href="/PageLayout/example-3/"
+                      <div
+                        className="relative h120 mb6"
                       >
+                        <div />
+                      </div>
+                      <div>
                         <div
-                          className="relative h120 mb6"
+                          className="mb6"
                         >
-                          <div />
-                        </div>
-                        <div>
+                          
                           <div
-                            className="mb6"
+                            className="inline-block color-gray txt-s txt-bold"
                           >
-                            
-                            <div
-                              className="inline-block color-gray txt-s txt-bold"
-                            >
-                              <svg
-                                className="events-none icon inline-block align-t"
-                                focusable="false"
-                                role="presentation"
-                                style={
-                                  Object {
-                                    "height": 18,
-                                    "width": 18,
-                                  }
+                            <svg
+                              className="events-none icon inline-block align-t"
+                              focusable="false"
+                              role="presentation"
+                              style={
+                                Object {
+                                  "height": 18,
+                                  "width": 18,
                                 }
-                              >
-                                <use
-                                  xlinkHref="#icon-code"
-                                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                                />
-                              </svg>
-                               
-                              JavaScript
-                            </div>
-                          </div>
-                          <div
-                            className="mb6"
-                          >
-                            Example 3
-                          </div>
-                          <div
-                            className="color-gray color-gray-on-hover"
-                          >
-                            Replace me.
+                              }
+                            >
+                              <use
+                                xlinkHref="#icon-code"
+                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                              />
+                            </svg>
+                             
+                            JavaScript
                           </div>
                         </div>
-                      </a>
-                    </div>
+                        <div
+                          className="mb6"
+                        >
+                          Example 3
+                        </div>
+                        <div
+                          className="color-gray color-gray-on-hover"
+                        >
+                          Replace me.
+                        </div>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
