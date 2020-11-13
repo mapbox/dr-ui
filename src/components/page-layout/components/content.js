@@ -26,7 +26,9 @@ export default class Content extends React.Component {
         frontMatter={frontMatter}
         sectionPath={parentPath}
         AppropriateImage={AppropriateImage}
-      />
+      >
+        {children}
+      </ExampleIndex>
     ) : (
       <ContentWrapper {...this.props}>{children}</ContentWrapper>
     );
