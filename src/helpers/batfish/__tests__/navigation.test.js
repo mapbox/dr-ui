@@ -197,12 +197,12 @@ describe('buildNavigation', () => {
         addPages: [
           {
             title: 'Tutorial',
-            path: 'https://docs.mapbox.com/help/tutorials?product=api',
+            path: 'https://docs.mapbox.com/help/tutorials?product=maps',
             navOrder: 4
           },
           {
             title: 'Troubleshooting',
-            path: 'https://docs.mapbox.com/help/troubleshooting?product=api',
+            path: 'https://docs.mapbox.com/help/troubleshooting?product=maps',
             navOrder: 5
           }
         ]
@@ -213,12 +213,13 @@ describe('buildNavigation', () => {
         addPages: [
           {
             title: 'Tutorial',
-            path: 'https://docs.mapbox.com/help/tutorials?product=api',
+            path: 'https://docs.mapbox.com/help/tutorials?product=navigation',
             navOrder: 4
           },
           {
             title: 'Troubleshooting',
-            path: 'https://docs.mapbox.com/help/troubleshooting?product=api',
+            path:
+              'https://docs.mapbox.com/help/troubleshooting?product=navigation',
             navOrder: 5
           }
         ]
@@ -290,7 +291,7 @@ describe('buildNavigation', () => {
         id: 'tutorial',
         title: 'Tutorial',
         pages: [],
-        path: 'https://docs.mapbox.com/help/tutorials?product=api',
+        path: 'https://docs.mapbox.com/help/tutorials?product=maps',
         navOrder: 4
       },
       {
@@ -298,7 +299,7 @@ describe('buildNavigation', () => {
         id: 'troubleshooting',
         title: 'Troubleshooting',
         pages: [],
-        path: 'https://docs.mapbox.com/help/troubleshooting?product=api',
+        path: 'https://docs.mapbox.com/help/troubleshooting?product=maps',
         navOrder: 5
       }
     ]);
@@ -369,7 +370,7 @@ describe('buildNavigation', () => {
         id: 'tutorial',
         title: 'Tutorial',
         pages: [],
-        path: 'https://docs.mapbox.com/help/tutorials?product=api',
+        path: 'https://docs.mapbox.com/help/tutorials?product=navigation',
         navOrder: 4
       },
       {
@@ -377,7 +378,7 @@ describe('buildNavigation', () => {
         id: 'troubleshooting',
         title: 'Troubleshooting',
         pages: [],
-        path: 'https://docs.mapbox.com/help/troubleshooting?product=api',
+        path: 'https://docs.mapbox.com/help/troubleshooting?product=navigation',
         navOrder: 5
       }
     ]);
