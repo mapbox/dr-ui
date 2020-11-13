@@ -12,6 +12,8 @@ export default class Basic extends React.Component {
         <Note theme="new">New note.</Note>
         <Tag theme="new" />
         <Tag theme="new" small={true} />
+        <Tag theme="new" icon={true} />
+        <Tag theme="new" small={true} icon={true} />
       </div>
     );
   }

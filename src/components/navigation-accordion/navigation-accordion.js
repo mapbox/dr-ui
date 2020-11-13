@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Icon from '@mapbox/mr-ui/icon';
+import Tag from '../tag/tag';
 // check if client body width is >= 640
 const isMM =
   typeof document !== 'undefined' ? document.body.clientWidth >= 640 : false;
@@ -42,14 +43,14 @@ export default class NavigationAccordion extends React.Component {
   }
 
   renderHeader(
-    href,
-    label,
+    page,
     hasChildren,
     isActiveToggle,
     isActiveSection,
     sectionId,
     external
   ) {
+    const { title, path } = page;
     return (
       <div
         className={classnames(
@@ -61,11 +62,12 @@ export default class NavigationAccordion extends React.Component {
         )}
       >
         <a
-          href={href}
+          href={path}
           className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
           style={{ letterSpacing: '0.025em' }}
         >
-          {label}
+          {title}
+          {page.tag && this.renderTag(page)}
           {external && (
             <span
               className="ml3 color-darken50 relative"
@@ -78,8 +80,8 @@ export default class NavigationAccordion extends React.Component {
         {hasChildren && (
           <button
             className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
-            onClick={() => this.setToggle(label)}
-            aria-label={`Toggle ${label} menu`}
+            onClick={() => this.setToggle(title)}
+            aria-label={`Toggle ${title} menu`}
             aria-controls={sectionId}
             aria-expanded={isActiveToggle}
           >
@@ -107,6 +109,7 @@ export default class NavigationAccordion extends React.Component {
             href={page.path}
           >
             {page.title}
+            {page.tag && this.renderTag(page)}
           </a>
         </li>
       ));
@@ -117,6 +120,19 @@ export default class NavigationAccordion extends React.Component {
       </ul>
     );
   }
+
+  renderTag = (page) => {
+    return (
+      <span className="ml6 relative" style={{ top: -1 }}>
+        <Tag
+          theme={page.tag}
+          {...page.customTagProps}
+          small={true}
+          icon={true}
+        />
+      </span>
+    );
+  };
 
   render() {
     const { navigation, parentPage, location } = this.props;
@@ -133,8 +149,7 @@ export default class NavigationAccordion extends React.Component {
       const sectionId = `menu-${id}`;
       return {
         header: this.renderHeader(
-          path,
-          title,
+          pageSection,
           hasPages,
           isActiveToggle,
           isActiveSection,
@@ -171,6 +186,7 @@ NavigationAccordion.propTypes = {
       title: PropTypes.string.isRequired,
       path: PropTypes.string.isRequired,
       id: PropTypes.string.isRequired,
+      tag: PropTypes.string,
       hideSubpages: PropTypes.bool, // needed for /help/tutorials and /help/troublehshooting
       pages: PropTypes.array
     })

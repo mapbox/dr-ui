@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Tooltip from '@mapbox/mr-ui/tooltip';
+import Icon from '@mapbox/mr-ui/icon';
 import classnames from 'classnames';
 import themes from '../themes';
 
@@ -9,22 +10,24 @@ export default class Tag extends React.Component {
     const theme = themes[this.props.theme] || {
       label: this.props.customLabel,
       tooltipText: this.props.customTooltipText,
-      styles: this.props.customStyles
+      styles: this.props.customStyles,
+      icon: this.props.customIcon
     };
-
     return (
       <Tooltip content={theme.tooltipText} maxWidth="small" placement="top">
         <div
           style={theme.styles}
-          className={classnames(
-            'txt-bold px6 round inline-block cursor-default',
-            {
-              'txt-s border': !this.props.small,
-              'txt-xs': this.props.small
-            }
-          )}
+          className={classnames('txt-bold round inline-block cursor-default', {
+            'txt-s border': !this.props.small,
+            'txt-xs': this.props.small,
+            px6: !this.props.icon
+          })}
         >
-          {theme.label}
+          {this.props.icon ? (
+            <Icon name={theme.icon} inline={true} />
+          ) : (
+            theme.label
+          )}
         </div>
       </Tooltip>
     );
@@ -32,7 +35,8 @@ export default class Tag extends React.Component {
 }
 
 Tag.defaultProps = {
-  small: false
+  small: false,
+  icon: false
 };
 
 Tag.propTypes = {
@@ -40,6 +44,8 @@ Tag.propTypes = {
     .isRequired,
   /** If `true`, display the tag with a smaller font and and no border */
   small: PropTypes.bool,
+  /** If `true`, display the icon only (no text) */
+  icon: PropTypes.bool,
   /** If the theme is set to "custom", this prop is required. */
   customLabel: (props, componentName) => {
     if (props.theme === 'custom' && !props.customLabel) {
@@ -103,6 +109,18 @@ Tag.propTypes = {
           `The "customStyles.borderColor" prop in '${componentName} is required when using the "custom" theme and must be a string'.`
         );
       }
+    }
+  },
+  /** customIcon is required if using the "custom" theme and `icon=true` */
+  customIcon: (props, componentName) => {
+    if (props.theme === 'custom' && props.icon && !props.customIcon) {
+      return new Error(
+        `The "customIcon" prop is required when using the "custom" theme and "icon" option in '${componentName}'.`
+      );
+    } else if (props.customIcon && typeof props.customIcon !== 'string') {
+      return new Error(
+        `The "customIcon" prop in ${componentName} must be a string'.`
+      );
     }
   }
 };
