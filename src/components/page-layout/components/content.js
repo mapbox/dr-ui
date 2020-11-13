@@ -63,17 +63,11 @@ export class ContentWrapper extends React.Component {
   };
 
   renderAside = (showFeedback) => {
-    const { frontMatter } = this.props;
-    const { layout, onThisPage } = frontMatter;
+    const { frontMatter, layoutConfig } = this.props;
+    const { onThisPage } = frontMatter;
     const headings = frontMatter.headings || this.props.headings;
-    let showOnThisPage;
-    // Use `onThisPage` frontmatter to conditionally hide on page layouts or show elsewhere.
-    // By default, show `OnThisPage` only for 'page' layouts.
-    if (typeof onThisPage !== 'undefined') {
-      !onThisPage ? (showOnThisPage = false) : (showOnThisPage = true);
-    } else {
-      layout === 'page' ? (showOnThisPage = true) : (showOnThisPage = false);
-    }
+
+    const showOnThisPage = onThisPage ? onThisPage : layoutConfig.onThisPage;
 
     const showToc = headings && headings.length > 0 && showOnThisPage;
     return (
@@ -182,7 +176,8 @@ ContentWrapper.propTypes = {
     hideTitle: PropTypes.bool,
     showCards: PropTypes.bool,
     hideFeedback: PropTypes.bool,
-    aside: PropTypes.string
+    aside: PropTypes.string,
+    onThisPage: PropTypes.bool
   }),
   navigation: PropTypes.shape({
     hierarchy: PropTypes.object

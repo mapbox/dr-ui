@@ -1,7 +1,7 @@
 export default {
   page: {
-    sidebar: 'toc', // heading table of contents
-    sidebarTheme: '' // blank sidebar background
+    sidebarTheme: '', // blank sidebar background
+    onThisPage: true // show an aside by default
   },
   exampleIndex: {
     aside: 'none', // do not show aside
