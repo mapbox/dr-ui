@@ -15,7 +15,6 @@
         "layout": "page",
         "contentType": "reference",
         "products": ["Documentation"],
-        "hideTitle": true,
         "unProse": true,
         "prependJs": [
           "import Note from '../../../../src/components/note'",
@@ -29,7 +28,8 @@
           ],
           "changelogLink": "/dr-ui/changelog/",
           "installLink": "https://github.com/mapbox/dr-ui/blob/main/README.md",
-          "ghLink": "https://github.com/mapbox/dr-ui"
+          "ghLink": "https://github.com/mapbox/dr-ui",
+          "theme": "bg-purple-faint"
         }
       }
     },

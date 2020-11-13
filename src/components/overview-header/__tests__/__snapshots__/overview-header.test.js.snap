@@ -2,7 +2,7 @@
 
 exports[`overview-header Adds Contact Us button renders as expected 1`] = `
 <div
-  className="dr-ui--overview-header border-b border--darken10 prose mb24 pr60-mxl"
+  className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--darken10"
 >
   <div
     className="flex-parent"
@@ -27,6 +27,7 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
            
         </span>
         <a
+          className="unprose link txt-underline"
           href="https://keepachangelog.com/en/0.3.0/"
         >
           View changelog
@@ -132,7 +133,7 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
         className="mb24"
       >
         <a
-          className="btn txt-l round inline-block color-white unprose mr24"
+          className="btn txt-l round inline-block unprose mr24 btn--blue"
           href="https://www.mapbox.com/contact/"
         >
           Contact us
@@ -140,7 +141,7 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="flex-child-ml flex-child--no-shrink w300-mxl"
+      className="flex-child-ml flex-child--no-shrink w300-mxl align-r"
     >
       <div
         className="none block-mxl"
@@ -156,7 +157,7 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
 
 exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
 <div
-  className="dr-ui--overview-header border-b border--darken10 prose mb24 pr60-mxl"
+  className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--darken10"
 >
   <div
     className="flex-parent"
@@ -181,6 +182,7 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
            
         </span>
         <a
+          className="unprose link txt-underline"
           href="https://keepachangelog.com/en/0.3.0/"
         >
           View changelog
@@ -286,13 +288,13 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
         className="mb24"
       >
         <a
-          className="btn txt-l round inline-block color-white unprose mr24"
+          className="btn txt-l round inline-block unprose mr24 btn--blue"
           href="https://www.mapbox.com/install"
         >
           Install
         </a>
         <a
-          className="btn txt-l round inline-block color-white unprose mr24"
+          className="btn txt-l round inline-block unprose mr24 btn--blue"
           href="https://www.mapbox.com/contact/"
         >
           Contact us
@@ -334,7 +336,7 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="flex-child-ml flex-child--no-shrink w300-mxl"
+      className="flex-child-ml flex-child--no-shrink w300-mxl align-r"
     >
       <div
         className="none block-mxl"
@@ -350,7 +352,7 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
 
 exports[`overview-header Basic renders as expected 1`] = `
 <div
-  className="dr-ui--overview-header border-b border--darken10 prose mb24 pr60-mxl"
+  className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--darken10"
 >
   <div
     className="flex-parent"
@@ -375,6 +377,7 @@ exports[`overview-header Basic renders as expected 1`] = `
            
         </span>
         <a
+          className="unprose link txt-underline"
           href="https://keepachangelog.com/en/0.3.0/"
         >
           View changelog
@@ -480,7 +483,7 @@ exports[`overview-header Basic renders as expected 1`] = `
         className="mb24"
       >
         <a
-          className="btn txt-l round inline-block color-white unprose mr24"
+          className="btn txt-l round inline-block unprose mr24 btn--blue"
           href="https://www.mapbox.com/install"
         >
           Install
@@ -522,7 +525,7 @@ exports[`overview-header Basic renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="flex-child-ml flex-child--no-shrink w300-mxl"
+      className="flex-child-ml flex-child--no-shrink w300-mxl align-r"
     >
       <div
         className="none block-mxl"
@@ -538,7 +541,7 @@ exports[`overview-header Basic renders as expected 1`] = `
 
 exports[`overview-header Beta product renders as expected 1`] = `
 <div
-  className="dr-ui--overview-header border-b border--darken10 prose mb24 pr60-mxl"
+  className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--darken10"
 >
   <div
     className="flex-parent"
@@ -690,7 +693,7 @@ exports[`overview-header Beta product renders as expected 1`] = `
       </ul>
     </div>
     <div
-      className="flex-child-ml flex-child--no-shrink w300-mxl"
+      className="flex-child-ml flex-child--no-shrink w300-mxl align-r"
     >
       <div
         className="none block-mxl"
@@ -706,7 +709,7 @@ exports[`overview-header Beta product renders as expected 1`] = `
 
 exports[`overview-header No optional props renders as expected 1`] = `
 <div
-  className="dr-ui--overview-header border-b border--darken10 prose mb24 pr60-mxl"
+  className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--darken10"
 >
   <div
     className="flex-parent"
@@ -875,7 +878,7 @@ exports[`overview-header No optional props renders as expected 1`] = `
       </ul>
     </div>
     <div
-      className="flex-child-ml flex-child--no-shrink w300-mxl"
+      className="flex-child-ml flex-child--no-shrink w300-mxl align-r"
     >
       <div
         className="none block-mxl"
@@ -891,7 +894,7 @@ exports[`overview-header No optional props renders as expected 1`] = `
 
 exports[`overview-header Some optional props renders as expected 1`] = `
 <div
-  className="dr-ui--overview-header border-b border--darken10 prose mb24 pr60-mxl"
+  className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--darken10"
 >
   <div
     className="flex-parent"
@@ -1052,7 +1055,7 @@ exports[`overview-header Some optional props renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="flex-child-ml flex-child--no-shrink w300-mxl"
+      className="flex-child-ml flex-child--no-shrink w300-mxl align-r"
     >
       <div
         className="none block-mxl"
