@@ -27,7 +27,7 @@ Note that the `buildNavigation` function uses **named parameters**.
 - `siteBasePath`, required. The function requires the `siteBasePath`.
 - `data`, object. Provided by the data selector.
 - `sections`, array. Used with multi-structured sections. See [Shape of multi-structured sections](#shape-of-multi-structured-sections).
-- `addPages`, array. Pages, usually external to the site, to be appended to navigation. See [Shape of appended pages](#shape-of-appended-pages).
+- `addPages`, array. Pages, usually external to the site, to be appended to navigation. See [Shape of appended pages](#shape-of-appended-pages). Not comptible with multi-structured sites when used with `buildNavigation`. See [Shape of multi-structured sections](#shape-of-multi-structured-sections) for more on appending pages to multi-structured sites.
 
 ### Set up in batfish.config.js
 
@@ -153,6 +153,7 @@ class PageShell extends React.Component {
 - `path` (required) string. Top-level folder in `src/pages`.
 - `title` (required) string. Title of the product.
 - `tag` (optional) string. Name of tag to add to [`ProductMenu`](/dr-ui/#productmenu).
+- - `addPages`, array. Pages, usually external to the site, to be appended to navigation. See [Shape of appended pages](#shape-of-appended-pages).
 
 ### Example
 
@@ -173,7 +174,19 @@ class PageShell extends React.Component {
   },
   {
     "path": "vision",
-    "title": "Vision SDK for iOS"
+    "title": "Vision SDK for iOS",
+    "addPages": [
+      {
+        "title": "Tutorial",
+        "path": "https://docs.mapbox.com/help/tutorials?product=vision",
+        "navOrder": 4
+      },
+      {
+        "title": "Troubleshooting",
+        "path": "https://docs.mapbox.com/help/troubleshooting?product=vision",
+        "navOrder": 5
+      }
+    ]
   }
 ]
 ```

@@ -193,24 +193,39 @@ describe('buildNavigation', () => {
     const sections = [
       {
         path: 'maps',
-        title: 'Maps SDK for iOS'
-      }
-    ];
-    const addPages = [
-      {
-        title: 'Tutorial',
-        path: 'https://docs.mapbox.com/help/tutorials?product=api',
-        navOrder: 4
+        title: 'Maps SDK for iOS',
+        addPages: [
+          {
+            title: 'Tutorial',
+            path: 'https://docs.mapbox.com/help/tutorials?product=api',
+            navOrder: 4
+          },
+          {
+            title: 'Troubleshooting',
+            path: 'https://docs.mapbox.com/help/troubleshooting?product=api',
+            navOrder: 5
+          }
+        ]
       },
       {
-        title: 'Troubleshooting',
-        path: 'https://docs.mapbox.com/help/troubleshooting?product=api',
-        navOrder: 5
+        path: 'navigation',
+        title: 'Navigation SDK for iOS',
+        addPages: [
+          {
+            title: 'Tutorial',
+            path: 'https://docs.mapbox.com/help/tutorials?product=api',
+            navOrder: 4
+          },
+          {
+            title: 'Troubleshooting',
+            path: 'https://docs.mapbox.com/help/troubleshooting?product=api',
+            navOrder: 5
+          }
+        ]
       }
     ];
     expect(
-      buildNavigation({ siteBasePath, data: dataMulti, sections, addPages })
-        .maps.navTabs
+      buildNavigation({ siteBasePath, data: dataMulti, sections }).maps.navTabs
     ).toEqual([
       {
         id: 'overview',
@@ -268,6 +283,85 @@ describe('buildNavigation', () => {
         navOrder: 3,
         pages: [],
         path: '/docs-starter-kit/maps/examples/',
+        title: 'Examples'
+      },
+      {
+        external: true,
+        id: 'tutorial',
+        title: 'Tutorial',
+        pages: [],
+        path: 'https://docs.mapbox.com/help/tutorials?product=api',
+        navOrder: 4
+      },
+      {
+        external: true,
+        id: 'troubleshooting',
+        title: 'Troubleshooting',
+        pages: [],
+        path: 'https://docs.mapbox.com/help/troubleshooting?product=api',
+        navOrder: 5
+      }
+    ]);
+    expect(
+      buildNavigation({ siteBasePath, data: dataMulti, sections }).navigation
+        .navTabs
+    ).toEqual([
+      {
+        id: 'overview',
+        navOrder: 1,
+        pages: [
+          {
+            layout: 'page',
+            order: 2,
+            path: '/docs-starter-kit/navigation/overview/layouts/',
+            section: 'navigation',
+            title: 'Layouts'
+          },
+          {
+            layout: 'page',
+            order: 3,
+            path: '/docs-starter-kit/navigation/overview/navigation/',
+            section: 'navigation',
+            title: 'Navigation'
+          },
+          {
+            layout: 'page',
+            order: 4,
+            path: '/docs-starter-kit/navigation/overview/images/',
+            section: 'navigation',
+            title: 'Images and videos'
+          },
+          {
+            layout: 'page',
+            order: 5,
+            path: '/docs-starter-kit/navigation/overview/constants/',
+            section: 'navigation',
+            title: 'Constants'
+          },
+          {
+            layout: 'page',
+            order: 6,
+            path: '/docs-starter-kit/navigation/overview/frontmatter/',
+            section: 'navigation',
+            tag: 'fundamentals',
+            title: 'Frontmatter'
+          }
+        ],
+        path: '/docs-starter-kit/navigation/overview/',
+        title: 'Overview'
+      },
+      {
+        id: 'specification',
+        navOrder: 2,
+        pages: [],
+        path: '/docs-starter-kit/navigation/specification/',
+        title: 'Specification'
+      },
+      {
+        id: 'examples',
+        navOrder: 3,
+        pages: [],
+        path: '/docs-starter-kit/navigation/examples/',
         title: 'Examples'
       },
       {
