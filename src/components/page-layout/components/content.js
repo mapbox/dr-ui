@@ -63,10 +63,13 @@ export class ContentWrapper extends React.Component {
   };
 
   renderAside = (showFeedback) => {
-    const { frontMatter } = this.props;
-    const { layout } = frontMatter;
+    const { frontMatter, layoutConfig } = this.props;
+    const { onThisPage } = frontMatter;
     const headings = frontMatter.headings || this.props.headings;
-    const showToc = headings && headings.length > 0 && layout === 'page';
+
+    const showOnThisPage = onThisPage ? onThisPage : layoutConfig.onThisPage;
+
+    const showToc = headings && headings.length > 0 && showOnThisPage;
     return (
       <aside
         data-swiftype-index="false"
@@ -154,7 +157,8 @@ ContentWrapper.propTypes = {
     hideFeedback: PropTypes.bool,
     headings: PropTypes.array,
     layout: PropTypes.string,
-    overviewHeader: PropTypes.object
+    overviewHeader: PropTypes.object,
+    onThisPage: PropTypes.bool
   }).isRequired,
   headings: PropTypes.array,
   location: PropTypes.object.isRequired,
@@ -175,7 +179,8 @@ ContentWrapper.propTypes = {
     hideTitle: PropTypes.bool,
     showCards: PropTypes.bool,
     hideFeedback: PropTypes.bool,
-    aside: PropTypes.string
+    aside: PropTypes.string,
+    onThisPage: PropTypes.bool
   }),
   navigation: PropTypes.shape({
     hierarchy: PropTypes.object
