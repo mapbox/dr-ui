@@ -1,5 +1,6 @@
 import React from 'react';
 import Basic from '../examples/basic';
+import Custom from '../examples/custom';
 import OverviewHeader from '../overview-header';
 
 const testCases = {};
@@ -7,6 +8,11 @@ const testCases = {};
 testCases.basic = {
   description: 'Basic',
   element: <Basic />
+};
+
+testCases.custom = {
+  description: 'Custom background',
+  element: <Custom />
 };
 
 testCases.none = {
@@ -102,6 +108,27 @@ testCases.customTag = {
         borderColor: '#FD8383'
       }
     },
+    image: (
+      <img src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg" />
+    )
+  }
+};
+
+testCases.everything = {
+  description: 'Everything.',
+  component: OverviewHeader,
+  props: {
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    features: ['Smooth scrambled eggs', 'Vegetarian sausage', 'Fruit syrups'],
+    title: 'Mapbox SDK for Breakfast',
+    version: '0.1.0',
+    theme: 'bg-gray-dark',
+    tag: 'beta',
+    lightText: true,
+    changelogLink: 'https://keepachangelog.com/en/0.3.0/',
+    installLink: 'https://www.mapbox.com/install',
+    ghLink: 'https://github.com/mapbox',
+    contactLink: 'https://www.mapbox.com/contact/',
     image: (
       <img src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg" />
     )

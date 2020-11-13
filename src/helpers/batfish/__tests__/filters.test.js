@@ -8,10 +8,19 @@ const {
 } = require('../filters.js');
 const data = require('./fixtures/data.json');
 const dataMulti = require('./fixtures/data-multi.json');
+const glJsDebug = require('./fixtures/gl-js-debug.json');
 
 describe('buildFilters', () => {
   it('single structure', () => {
     expect(buildFilters(data)).toMatchSnapshot();
+  });
+
+  it('filter out pages without titles', () => {
+    // GL JS has page redirects that do not have title
+    // and need to be filtered out to prevent errors
+    expect(() => {
+      buildFilters(glJsDebug);
+    }).not.toThrow();
   });
 
   it('multi structure', () => {
