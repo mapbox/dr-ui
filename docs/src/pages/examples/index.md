@@ -9,3 +9,5 @@ layout: example
 products:
   - Documentation
 ---
+
+This page demonstrates how an `ExampleIndex` might look.

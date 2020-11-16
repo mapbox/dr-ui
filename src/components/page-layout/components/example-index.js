@@ -257,7 +257,7 @@ export default class ExampleIndex extends React.PureComponent {
   };
 
   render() {
-    const { frontMatter, AppropriateImage } = this.props;
+    const { frontMatter, AppropriateImage, children } = this.props;
     // set default filters
     if (!frontMatter.showFilters) frontMatter.showFilters = filterOptions;
 
@@ -274,6 +274,8 @@ export default class ExampleIndex extends React.PureComponent {
     const resultsLength = filteredPages.length;
     return (
       <ContentWrapper {...this.props} customAside={this.renderFilters()}>
+        {/* If the example index's jsxtreme is not empty, show it before the examples */}
+        {children && <div className="mb18">{children}</div>}
         {showResultIndicator && (
           <div className="mb18">
             <div className="inline-block mr12 color-gray">
@@ -343,6 +345,7 @@ ExampleIndex.propTypes = {
       })
     ).isRequired
   }),
+  children: PropTypes.node,
   frontMatter: PropTypes.shape({
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
