@@ -1719,9 +1719,9 @@ Array [
           >
             <a
               className="link"
-              href="https://docs.mapbox.com"
+              href="https://mapbox.github.io/dr-ui/"
             >
-              All docs
+              Documentation
             </a>
             <span
               className="color-gray-light inline-block-mm none px6"
