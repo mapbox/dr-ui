@@ -73,7 +73,7 @@ export default class PageLayout extends React.Component {
       <div className="flex-child flex-child--grow">
         {!frontMatter.hideBreadcrumbs && (
           <Breadcrumb
-            themeWrapper={classnames('py12', {
+            themeWrapper={classnames('pt3 pb12', {
               // hide breadcrumbs on mobile if sidebar is on the page
               // show breadcrumbs on mobile if sidebar is hidden from the page
               'none block-mm': !frontMatter.hideSidebar
