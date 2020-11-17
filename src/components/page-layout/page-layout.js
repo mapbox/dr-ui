@@ -240,7 +240,7 @@ PageLayout.propTypes = {
   headings: PropTypes.array,
   /** For `Feedback` component */
   feedbackSentryDsn: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
-  /** */
+  /** The domain's title and homepage path to be added as the first Breadcrumb link */
   domain: PropTypes.shape({
     title: PropTypes.string.isRequired,
     path: PropTypes.string.isRequired
