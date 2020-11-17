@@ -21,6 +21,7 @@ export default class PageLayout extends React.Component {
     return (
       <div
         className={`flex-child flex-child--no-shrink w-full w180-mm w240-ml mr36-mm ${config.sidebarTheme}`}
+        style={{ width: '100%' /* for ie 11 support */ }}
       >
         <Sidebar
           {...this.props}
@@ -70,7 +71,10 @@ export default class PageLayout extends React.Component {
       }
     ]);
     return (
-      <div className="flex-child flex-child--grow">
+      <div
+        className="flex-child flex-child--grow"
+        style={{ width: '100%' /* for ie 11 support */ }}
+      >
         {!frontMatter.hideBreadcrumbs && (
           <Breadcrumb
             themeWrapper={classnames('py12', {
