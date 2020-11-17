@@ -193,7 +193,7 @@ PageLayout.propTypes = {
     hideBreadcrumbs: PropTypes.bool,
     hideSidebar: PropTypes.bool,
     title: PropTypes.string,
-    showFilters: PropTypes.arrayOf(filterOptions),
+    showFilters: PropTypes.arrayOf(PropTypes.oneOf(filterOptions)),
     onThisPage: PropTypes.bool
   }).isRequired,
   /**

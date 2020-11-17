@@ -118,60 +118,83 @@ export default class ExampleIndex extends React.PureComponent {
     );
   };
 
+  // return true if array has more than one item
+  hasMoreThanOne = (arr, field) => arr[field] && arr[field].length > 1;
+
+  // return true if filter appears in showFilters array
+  inShowFilters = (field) =>
+    this.props.frontMatter.showFilters.indexOf(field) > -1;
+
+  // return true if filter can be displayed
+  filterisAvailable = (filters, field) =>
+    this.hasMoreThanOne(filters, field) && this.inShowFilters(field);
+
   // build filters
   renderFilters = () => {
     const { filters, frontMatter } = this.props;
     const { topic, language, level, videos, product } = this.state;
 
-    return frontMatter.showFilters.length > 0 ? (
+    // check each filter to make sure it has more than one option
+    // and that it appears in "showFilters"
+    const availableFilters = {
+      products: this.filterisAvailable(filters, 'products'),
+      topics: this.filterisAvailable(filters, 'topics'),
+      languages: this.filterisAvailable(filters, 'languages'),
+      levels: this.filterisAvailable(filters, 'levels'),
+      videos: filters.videos && this.inShowFilters('videos')
+    };
+
+    // remove any item from showFilters that is not true in "availableFilters"
+    if (frontMatter.showFilters) {
+      frontMatter.showFilters = frontMatter.showFilters.filter(
+        (filter) => availableFilters[filter]
+      );
+    }
+
+    // if showFilters length is 0, do not show filters
+    if (frontMatter.showFilters.length === 0) return null;
+
+    return (
       <div className="mb18 mb0-mxl">
         <AsideHeading>Filters</AsideHeading>
         <div className="grid grid--gut6">
-          {filters.products &&
-            filters.products.length > 1 &&
-            frontMatter.showFilters.indexOf('products') > -1 && (
-              <FilterSection
-                title="Products"
-                data={filters.products}
-                id="product"
-                activeItem={product}
-                handleInput={this.handleInput}
-              />
-            )}
-          {filters.topics &&
-            filters.topics.length > 1 &&
-            frontMatter.showFilters.indexOf('topics') > -1 && (
-              <FilterSection
-                title="Topics"
-                data={filters.topics}
-                id="topic"
-                activeItem={topic}
-                handleInput={this.handleInput}
-              />
-            )}
-          {filters.languages &&
-            filters.languages.length > 1 &&
-            frontMatter.showFilters.indexOf('languages') > -1 && (
-              <FilterSection
-                title="Languages"
-                data={filters.languages}
-                id="language"
-                activeItem={language}
-                handleInput={this.handleInput}
-              />
-            )}
-          {filters.levels &&
-            filters.levels.length > 1 &&
-            frontMatter.showFilters.indexOf('levels') > -1 && (
-              <FilterSection
-                title="Levels"
-                data={filters.levels}
-                id="level"
-                activeItem={level}
-                handleInput={this.handleInput}
-              />
-            )}
-          {filters.videos && frontMatter.showFilters.indexOf('videos') > -1 && (
+          {availableFilters.products && (
+            <FilterSection
+              title="Products"
+              data={filters.products}
+              id="product"
+              activeItem={product}
+              handleInput={this.handleInput}
+            />
+          )}
+          {availableFilters.topics && (
+            <FilterSection
+              title="Topics"
+              data={filters.topics}
+              id="topic"
+              activeItem={topic}
+              handleInput={this.handleInput}
+            />
+          )}
+          {availableFilters.languages && (
+            <FilterSection
+              title="Languages"
+              data={filters.languages}
+              id="language"
+              activeItem={language}
+              handleInput={this.handleInput}
+            />
+          )}
+          {availableFilters.levels && (
+            <FilterSection
+              title="Levels"
+              data={filters.levels}
+              id="level"
+              activeItem={level}
+              handleInput={this.handleInput}
+            />
+          )}
+          {availableFilters.videos && (
             <FilterSection
               title="Videos only"
               id="videos"
@@ -182,8 +205,6 @@ export default class ExampleIndex extends React.PureComponent {
           )}
         </div>
       </div>
-    ) : (
-      ''
     );
   };
 
@@ -353,7 +374,7 @@ ExampleIndex.propTypes = {
     hideCardDescription: PropTypes.bool,
     hideCardLanguage: PropTypes.bool,
     cardColSize: PropTypes.number,
-    showFilters: PropTypes.arrayOf(filterOptions)
+    showFilters: PropTypes.arrayOf(PropTypes.oneOf(filterOptions))
   }).isRequired,
   AppropriateImage: PropTypes.func
 };
