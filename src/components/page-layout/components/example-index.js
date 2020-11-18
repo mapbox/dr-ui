@@ -350,7 +350,7 @@ ExampleIndex.propTypes = {
     hideCardDescription: PropTypes.bool,
     hideCardLanguage: PropTypes.bool,
     cardColSize: PropTypes.number,
-    showFilters: PropTypes.arrayOf(filterOptions)
+    showFilters: PropTypes.arrayOf(PropTypes.oneOf(filterOptions))
   }).isRequired,
   AppropriateImage: PropTypes.func
 };
