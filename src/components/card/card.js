@@ -56,7 +56,7 @@ class Card extends React.Component {
 Card.propTypes = {
   title: PropTypes.string.isRequired,
   path: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.string,
   thumbnail: PropTypes.node,
   level: PropTypes.node,
   language: PropTypes.string
