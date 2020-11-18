@@ -5,33 +5,31 @@ import LevelIndicator from '../level-indicator/level-indicator';
 
 class Card extends React.Component {
   render() {
-    const { props } = this;
+    const { thumbnail, level, language, description, path, title } = this.props;
     let renderedThumbnail = '';
     let renderedLevel = '';
     let renderedLanguage = '';
-    if (props.thumbnail) {
-      renderedThumbnail = (
-        <div className="relative h120 mb6">{props.thumbnail}</div>
-      );
+    if (thumbnail) {
+      renderedThumbnail = <div className="relative h120 mb6">{thumbnail}</div>;
     }
-    if (props.level) {
+    if (level) {
       renderedLevel = (
         <div className="inline-block mr18 txt-s txt-bold">
-          <LevelIndicator level={props.level} />
+          <LevelIndicator level={level} />
         </div>
       );
     }
-    if (props.language) {
+    if (language) {
       renderedLanguage = (
         <div className="inline-block color-gray txt-s txt-bold">
-          <Icon name="code" inline={true} /> {props.language}
+          <Icon name="code" inline={true} /> {language}
         </div>
       );
     }
     return (
       <a
         className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
-        href={this.props.path}
+        href={path}
       >
         {renderedThumbnail}
         <div>
@@ -43,10 +41,10 @@ class Card extends React.Component {
           ) : (
             ''
           )}
-          <div className="mb6">{this.props.title}</div>
-          <div className="color-gray color-gray-on-hover">
-            {this.props.description}
-          </div>
+          <div className="mb6">{title}</div>
+          {description && (
+            <div className="color-gray color-gray-on-hover">{description}</div>
+          )}
         </div>
       </a>
     );
