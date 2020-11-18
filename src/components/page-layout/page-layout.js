@@ -14,6 +14,9 @@ import classnames from 'classnames';
 import layoutConfig from './layout.config.js';
 import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
 
+/* prevent flex-child from overflowing on IE 11 */
+const ie11FlexChild = { width: '100%' };
+
 export default class PageLayout extends React.Component {
   // render the page's sidebar
   renderSidebar = (config, switchedNavigation, parentPath) => {
@@ -21,7 +24,7 @@ export default class PageLayout extends React.Component {
     return (
       <div
         className={`flex-child flex-child--no-shrink w-full w180-mm w240-ml mr36-mm ${config.sidebarTheme}`}
-        style={{ width: '100%' /* for ie 11 support */ }}
+        style={ie11FlexChild}
       >
         <Sidebar
           {...this.props}
@@ -71,10 +74,7 @@ export default class PageLayout extends React.Component {
       }
     ]);
     return (
-      <div
-        className="flex-child flex-child--grow"
-        style={{ width: '100%' /* for ie 11 support */ }}
-      >
+      <div className="flex-child flex-child--grow" style={ie11FlexChild}>
         {!frontMatter.hideBreadcrumbs && (
           <Breadcrumb
             themeWrapper={classnames('py12', {
