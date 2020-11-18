@@ -12,7 +12,6 @@ import classnames from 'classnames';
 // default configuration for each layout
 // every option can be overriden in the frontMatter
 import layoutConfig from './layout.config.js';
-import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
 
 export default class PageLayout extends React.Component {
   // render the page's sidebar
@@ -35,12 +34,9 @@ export default class PageLayout extends React.Component {
 
   // render the page's content
   renderContent = (config, parentPath, parent, hasSection) => {
-    const { constants, frontMatter, location } = this.props;
+    const { constants, frontMatter, location, domain } = this.props;
     const crumbs = createUniqueCrumbs([
-      {
-        title: 'All docs',
-        path: 'https://docs.mapbox.com'
-      },
+      domain,
       // if multi-structured show section name
       // if single-structured show site name
       ...(hasSection
@@ -73,7 +69,7 @@ export default class PageLayout extends React.Component {
       <div className="flex-child flex-child--grow">
         {!frontMatter.hideBreadcrumbs && (
           <Breadcrumb
-            themeWrapper={classnames('py12', {
+            themeWrapper={classnames('pt3 pb12', {
               // hide breadcrumbs on mobile if sidebar is on the page
               // show breadcrumbs on mobile if sidebar is hidden from the page
               'none block-mm': !frontMatter.hideSidebar
@@ -145,6 +141,13 @@ export default class PageLayout extends React.Component {
     );
   }
 }
+
+PageLayout.defaultProps = {
+  domain: {
+    title: 'All docs',
+    path: 'https://docs.mapbox.com'
+  }
+};
 
 PageLayout.propTypes = {
   children: PropTypes.node,
@@ -235,10 +238,11 @@ PageLayout.propTypes = {
   AppropriateImage: PropTypes.func,
   /** For when headings are dynamic, this is used by API docs */
   headings: PropTypes.array,
-  /** For `Search` component */
-  placeholder: PropTypes.string,
-  /** For `Search` component */
-  connector: PropTypes.instanceOf(SiteSearchAPIConnector),
   /** For `Feedback` component */
-  feedbackSentryDsn: PropTypes.oneOfType([PropTypes.bool, PropTypes.string])
+  feedbackSentryDsn: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  /** The domain's title and homepage path to be added as the first Breadcrumb link */
+  domain: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    path: PropTypes.string.isRequired
+  })
 };

@@ -146,7 +146,7 @@ Array [
         className="flex-child flex-child--grow"
       >
         <div
-          className="dr-ui--breadcrumb py12 none block-mm"
+          className="dr-ui--breadcrumb pt3 pb12 none block-mm"
           data-swiftype-index="false"
         >
           <span
@@ -728,7 +728,7 @@ Array [
         className="flex-child flex-child--grow"
       >
         <div
-          className="dr-ui--breadcrumb py12 none block-mm"
+          className="dr-ui--breadcrumb pt3 pb12 none block-mm"
           data-swiftype-index="false"
         >
           <span
@@ -1008,7 +1008,7 @@ Array [
         className="flex-child flex-child--grow"
       >
         <div
-          className="dr-ui--breadcrumb py12"
+          className="dr-ui--breadcrumb pt3 pb12"
           data-swiftype-index="false"
         >
           <span
@@ -1344,7 +1344,7 @@ Array [
         className="flex-child flex-child--grow"
       >
         <div
-          className="dr-ui--breadcrumb py12 none block-mm"
+          className="dr-ui--breadcrumb pt3 pb12 none block-mm"
           data-swiftype-index="false"
         >
           <span
@@ -1747,7 +1747,7 @@ Array [
         className="flex-child flex-child--grow"
       >
         <div
-          className="dr-ui--breadcrumb py12 none block-mm"
+          className="dr-ui--breadcrumb pt3 pb12 none block-mm"
           data-swiftype-index="false"
         >
           <span
@@ -1755,9 +1755,9 @@ Array [
           >
             <a
               className="link"
-              href="https://docs.mapbox.com"
+              href="https://mapbox.github.io/dr-ui/"
             >
-              All docs
+              Documentation
             </a>
             <span
               className="color-gray-light inline-block-mm none px6"
