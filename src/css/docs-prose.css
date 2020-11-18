@@ -4,6 +4,11 @@
     max-width: 1800px !important;
   }
 }
+@media screen and (min-width: 800px) {
+  .limiter--wide {
+    width: 91.666666666% !important; /* override limiter */
+  }
+}
 
 #docs-content .prose h1,
 #docs-content.prose h1 {
