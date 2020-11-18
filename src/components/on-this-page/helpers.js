@@ -45,10 +45,15 @@ export function getActiveHeaderAnchor(topOffset) {
   // if there are no found header anchors, return undefined
   if (!headersAnchors || headersAnchors.length === 0) return undefined;
 
-  const firstAnchorUnderViewportTop = headersAnchors.find((anchor) => {
+  const anchorsUnderViewportTop = headersAnchors.filter((anchor) => {
     const { top } = anchor.getBoundingClientRect();
-    return top >= topOffset;
+    if (top >= topOffset) return anchor;
   });
+
+  const firstAnchorUnderViewportTop =
+    anchorsUnderViewportTop && anchorsUnderViewportTop.length
+      ? anchorsUnderViewportTop[0]
+      : undefined;
 
   const lastAnchor = headersAnchors[headersAnchors.length - 1];
 
