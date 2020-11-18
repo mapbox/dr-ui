@@ -1,5 +1,5 @@
 /*
-"full" layout.
+"full" layout with custom "domain" prop
 */
 import React from 'react';
 import PageLayout from '../page-layout';
@@ -15,6 +15,10 @@ export default class Basic extends React.Component {
             production: '123',
             staging: '123'
           }
+        }}
+        domain={{
+          title: 'Documentation',
+          path: 'https://mapbox.github.io/dr-ui/'
         }}
         location={{
           pathname: '/PageLayout/'
