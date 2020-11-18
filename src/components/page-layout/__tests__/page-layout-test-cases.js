@@ -27,6 +27,107 @@ testCases.examplePage = {
   element: <ExamplePage />
 };
 
+testCases.examplePageFilters = {
+  description:
+    'Example page layout, does not show filters because "showFilters" sets only "topics" and "topics" has one option.',
+  element: (
+    <PageLayout
+      constants={{
+        SITE: 'dr-ui',
+        BASEURL: '/dr-ui',
+        FORWARD_EVENT_WEBHOOK: {
+          production: '123',
+          staging: '123'
+        }
+      }}
+      location={{
+        pathname: '/PageLayout/examples/'
+      }}
+      frontMatter={{
+        title: 'Examples',
+        layout: 'exampleIndex',
+        description: 'Lots of handy examples.',
+        fullWidthCards: true,
+        showFilters: ['topics']
+      }}
+      navigation={{
+        hierarchy: {
+          '/PageLayout/examples/': {
+            parent: '/PageLayout/examples/',
+            title: 'Examples'
+          }
+        },
+        navTabs: [
+          {
+            path: '/PageLayout/',
+            title: 'Overview',
+            id: 'overview'
+          },
+          {
+            path: '/PageLayout/examples/',
+            title: 'Examples',
+            id: 'examples'
+          }
+        ]
+      }}
+      filters={{
+        '/PageLayout/examples/': {
+          contentType: 'example',
+          description: 'Replace me.',
+          layout: 'example',
+          navOrder: 3,
+          path: '/PageLayout/',
+          title: 'Examples',
+          topics: ['Getting started'],
+          languages: ['Java', 'JavaScript'],
+          products: ['Documentation', 'Mapbox GL JS'],
+          pages: [
+            {
+              contentType: 'example',
+              description: 'Replace me.',
+              language: ['JavaScript'],
+              layout: 'example',
+              path: '/PageLayout/example-1/',
+              text: 'Example 1',
+              thumbnail: 'header-image',
+              title: 'Example 1',
+              topics: ['Getting started'],
+              products: ['Documentation', 'Mapbox GL JS'],
+              url: '/PageLayout/example-1/'
+            },
+            {
+              contentType: 'example',
+              description: 'Replace me.',
+              language: ['JavaScript'],
+              layout: 'example',
+              path: '/PageLayout/example-2/',
+              text: 'Example 2',
+              thumbnail: 'header-image',
+              title: 'Example 2',
+              topics: ['Getting started'],
+              products: ['Documentation', 'Mapbox GL JS'],
+              url: '/PageLayout/example-2/'
+            },
+            {
+              contentType: 'example',
+              description: 'Replace me.',
+              language: ['Java'],
+              layout: 'example',
+              path: '/PageLayout/example-3/',
+              text: 'Example 3',
+              thumbnail: 'header-image',
+              title: 'Example 3',
+              topics: ['Getting started'],
+              products: ['Documentation', 'Mapbox GL JS'],
+              url: '/PageLayout/example-3/'
+            }
+          ]
+        }
+      }}
+    />
+  )
+};
+
 testCases.noSidebar = {
   description: 'No sidebar, show Breadcrumbs on mobile',
   element: (
