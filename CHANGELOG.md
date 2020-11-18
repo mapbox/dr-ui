@@ -1,5 +1,9 @@
 # Changelog
 
+## Main
+
+- Improve color contrast on `LevelIndicator`.
+
 ## 1.3.0
 
 - Add new props to `Search` to allow further customization by other subdomains. [#329](https://github.com/mapbox/dr-ui/pull/329)

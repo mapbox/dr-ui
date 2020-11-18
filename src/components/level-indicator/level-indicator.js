@@ -25,7 +25,8 @@ class LevelIndicator extends React.Component {
 
     // Make the "difficulty level" squares
     const levelSquares = Object.keys(levels).map((level) => {
-      const squareColor = level > props.level ? 'gray-light' : levelColor;
+      const squareColor =
+        level > props.level ? `${levelColor}-light` : levelColor;
       return (
         <div
           key={level}
@@ -38,9 +39,9 @@ class LevelIndicator extends React.Component {
       );
     });
     return (
-      <div className="flex-parent flex-parent--center-cross">
+      <div className="dr-ui--level-indicator flex-parent flex-parent--center-cross">
         {levelSquares}
-        <div className={`inline-block color-${levelColor} ml3 txt-capitalize`}>
+        <div className="inline-block color-gray ml3 txt-capitalize">
           {levelLabel}
         </div>
       </div>
