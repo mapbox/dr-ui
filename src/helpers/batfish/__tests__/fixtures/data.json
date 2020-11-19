@@ -134,8 +134,7 @@
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
           "import topics from '@mapbox/batfish/data/filters'; // eslint-disable-line",
           "import splitPages from '@mapbox/batfish/data/split-pages'; // eslint-disable-line"
-        ],
-        "tag": "fundamentals"
+        ]
       }
     },
     {
