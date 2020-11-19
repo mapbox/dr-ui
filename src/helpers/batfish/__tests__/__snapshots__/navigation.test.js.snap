@@ -1934,6 +1934,7 @@ Object {
           "layout": "page",
           "order": 2,
           "path": "/dr-ui/guides/batfish-helpers/",
+          "tag": "fundamentals",
           "title": "Batfish helpers",
         },
         Object {
