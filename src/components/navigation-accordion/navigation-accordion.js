@@ -101,7 +101,13 @@ export default class NavigationAccordion extends React.Component {
         return page.path !== parentPage;
       })
       .map((page) => (
-        <li className="mb3" key={page.title}>
+        <li
+          // Required on parents containing tags to prevent unwanted scrollbars on IE
+          className={classnames('mb3', {
+            'scroll-hidden': page.tag
+          })}
+          key={page.title}
+        >
           <a
             className={classnames('inline-block w-full color-blue-on-hover', {
               'color-blue': activeItem === page.path
