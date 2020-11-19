@@ -93,37 +93,36 @@ export default class Basic extends React.Component {
             pages: [
               {
                 contentType: 'example',
-                description: 'Replace me.',
+                description:
+                  'Initialize a map in an HTML element with Mapbox GL JS.',
                 language: ['JavaScript'],
                 layout: 'example',
                 path: '/PageLayout/example-1/',
-                text: 'Example 1',
                 thumbnail: 'header-image',
-                title: 'Example 1',
+                title: 'Display a map',
                 topics: ['Cool'],
                 url: '/PageLayout/example-1/'
               },
               {
                 contentType: 'example',
-                description: 'Replace me.',
+                description: 'Add a default Marker to the map.',
                 language: ['JavaScript'],
                 layout: 'example',
                 path: '/PageLayout/example-2/',
-                text: 'Example 2',
                 thumbnail: 'header-image',
-                title: 'Example 2',
+                title: 'Add a default marker',
                 topics: ['Cool'],
                 url: '/PageLayout/example-2/'
               },
               {
                 contentType: 'example',
-                description: 'Replace me.',
+                description:
+                  'Create a 3D indoor map with the fill-extrude-height paint property.',
                 language: ['JavaScript'],
                 layout: 'example',
                 path: '/PageLayout/example-3/',
-                text: 'Example 3',
                 thumbnail: 'header-image',
-                title: 'Example 3',
+                title: 'Extrude polygons for 3D indoor mapping',
                 topics: ['Cool', 'Awesome'],
                 url: '/PageLayout/example-3/'
               }

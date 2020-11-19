@@ -7,6 +7,7 @@ import { levels } from '../../level-indicator/level-indicator';
 import classnames from 'classnames';
 import ControlSwitch from '@mapbox/mr-ui/control-switch';
 import ControlSelect from '@mapbox/mr-ui/control-select';
+import ControlText from '@mapbox/mr-ui/control-text';
 import { ContentWrapper } from './content';
 
 // options of frontMatter.showFilters
@@ -14,8 +15,9 @@ export const filterOptions = [
   'products',
   'topics',
   'languages',
-  'levels',
-  'videos'
+  'level',
+  'videos',
+  'search'
 ];
 
 export default class ExampleIndex extends React.PureComponent {
@@ -26,7 +28,8 @@ export default class ExampleIndex extends React.PureComponent {
       language: undefined,
       level: undefined,
       videos: false,
-      product: undefined
+      product: undefined,
+      search: undefined
     };
   }
 
@@ -62,6 +65,9 @@ export default class ExampleIndex extends React.PureComponent {
           filters.levels,
           'level'
         );
+      }
+      if (query.get('search')) {
+        this.setState({ search: `${query.get('search')}` });
       }
       if (query.get('videos')) {
         this.setStateIfValid(query.get('videos') === 'true', [true], 'videos');
@@ -109,7 +115,8 @@ export default class ExampleIndex extends React.PureComponent {
         language: undefined,
         level: undefined,
         videos: false,
-        product: undefined
+        product: undefined,
+        search: undefined
       },
       () => {
         // remove all query params
@@ -132,7 +139,7 @@ export default class ExampleIndex extends React.PureComponent {
   // build filters
   renderFilters = () => {
     const { filters, frontMatter } = this.props;
-    const { topic, language, level, videos, product } = this.state;
+    const { topic, language, level, videos, product, search } = this.state;
 
     // check each filter to make sure it has more than one option
     // and that it appears in "showFilters"
@@ -141,7 +148,8 @@ export default class ExampleIndex extends React.PureComponent {
       topics: this.filterisAvailable(filters, 'topics'),
       languages: this.filterisAvailable(filters, 'languages'),
       levels: this.filterisAvailable(filters, 'levels'),
-      videos: filters.videos && this.inShowFilters('videos')
+      videos: filters.videos && this.inShowFilters('videos'),
+      search: this.inShowFilters('search')
     };
 
     // remove any item from showFilters that is not true in "availableFilters"
@@ -158,6 +166,16 @@ export default class ExampleIndex extends React.PureComponent {
       <div className="mb18 mb0-mxl">
         <AsideHeading>Filters</AsideHeading>
         <div className="grid grid--gut6">
+          {availableFilters.search && (
+            <FilterSection
+              title="Search"
+              id="search"
+              activeItem={search}
+              handleInput={this.handleInput}
+              isText={true}
+              placeholder="Search title and description&hellip;"
+            />
+          )}
           {availableFilters.products && (
             <FilterSection
               title="Products"
@@ -243,7 +261,7 @@ export default class ExampleIndex extends React.PureComponent {
   // filter available pages based on active filters
   filterPages = () => {
     const { filters } = this.props;
-    const { topic, language, level, videos, product } = this.state;
+    const { topic, language, level, videos, product, search } = this.state;
 
     let filteredPages = filters.pages;
 
@@ -274,6 +292,16 @@ export default class ExampleIndex extends React.PureComponent {
     if (videos) {
       filteredPages = filteredPages.filter((f) => f.video);
     }
+
+    if (search) {
+      const trimmedSearch = search.toLowerCase().trim();
+      filteredPages = filteredPages.filter(
+        (f) =>
+          (f.title && f.title.toLowerCase().indexOf(trimmedSearch) > -1) ||
+          (f.description &&
+            f.description.toLowerCase().indexOf(trimmedSearch) > -1)
+      );
+    }
     return filteredPages;
   };
 
@@ -290,8 +318,9 @@ export default class ExampleIndex extends React.PureComponent {
     } = frontMatter;
 
     const filteredPages = this.filterPages();
-    const { topic, language, level, videos, product } = this.state;
-    const showResultIndicator = topic || language || level || videos || product;
+    const { topic, language, level, videos, product, search } = this.state;
+    const showResultIndicator =
+      topic || language || level || videos || product || search;
     const resultsLength = filteredPages.length;
     return (
       <ContentWrapper {...this.props} customAside={this.renderFilters()}>
@@ -380,9 +409,73 @@ ExampleIndex.propTypes = {
 };
 
 class FilterSection extends React.PureComponent {
-  render() {
-    const { title, data, activeItem, isSwitch, id, handleInput } = this.props;
+  renderInput = () => {
+    const {
+      title,
+      data,
+      activeItem,
+      isSwitch,
+      id,
+      handleInput,
+      isText,
+      placeholder
+    } = this.props;
     const themeLabel = 'txt-s txt-bold color-darken75';
+
+    if (isText)
+      return (
+        <ControlText
+          placeholder={placeholder}
+          id={id}
+          value={activeItem}
+          onChange={(value, id) => handleInput(value, id)}
+          themeControlInput="input input--s relative wmax180"
+          themeLabel={themeLabel}
+          label={title}
+          style={{
+            top: '2px'
+          }} /* make input align with select on smaller screens */
+        />
+      );
+    else if (isSwitch)
+      return (
+        <ControlSwitch
+          id={id}
+          value={activeItem}
+          label={title}
+          themeLabel={`${themeLabel} ml6`}
+          themeControlSwitch="switch--s-label switch--gray"
+          onChange={(value, id) => handleInput(value, id)}
+        />
+      );
+    else
+      return (
+        <ControlSelect
+          id={id}
+          label={title}
+          value={activeItem}
+          themeLabel={`${themeLabel} w70`}
+          themeControlSelect="select select--s"
+          onChange={(value, id) => {
+            handleInput(value, id);
+          }}
+          options={[
+            {
+              label: `All ${title.toLowerCase()}`,
+              value: ''
+            }
+          ].concat(
+            data.map((datum) => ({
+              label: title === 'Levels' ? levels[datum].label : datum,
+              value: datum
+            }))
+          )}
+        />
+      );
+  };
+
+  render() {
+    const { isSwitch } = this.props;
     return (
       <div
         className={classnames('col col--6 col--4-ml col--12-mxl', {
@@ -390,38 +483,7 @@ class FilterSection extends React.PureComponent {
           mb6: !isSwitch
         })}
       >
-        {isSwitch ? (
-          <ControlSwitch
-            id={id}
-            value={activeItem}
-            label={title}
-            themeLabel={`${themeLabel} ml6`}
-            themeControlSwitch="switch--s-label switch--gray"
-            onChange={(value, id) => handleInput(value, id)}
-          />
-        ) : (
-          <ControlSelect
-            id={id}
-            label={title}
-            value={activeItem}
-            themeLabel={`${themeLabel} w70`}
-            themeControlSelect="select select--s"
-            onChange={(value, id) => {
-              handleInput(value, id);
-            }}
-            options={[
-              {
-                label: `All ${title.toLowerCase()}`,
-                value: ''
-              }
-            ].concat(
-              data.map((datum) => ({
-                label: title === 'Levels' ? levels[datum].label : datum,
-                value: datum
-              }))
-            )}
-          />
-        )}
+        {this.renderInput()}
       </div>
     );
   }
@@ -433,5 +495,7 @@ FilterSection.propTypes = {
   handleInput: PropTypes.func.isRequired,
   data: PropTypes.array,
   activeItem: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
-  isSwitch: PropTypes.bool
+  isSwitch: PropTypes.bool,
+  isText: PropTypes.bool,
+  placeholder: PropTypes.string
 };
