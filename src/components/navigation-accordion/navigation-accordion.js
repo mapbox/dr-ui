@@ -100,19 +100,27 @@ export default class NavigationAccordion extends React.Component {
       .filter((page) => {
         return page.path !== parentPage;
       })
-      .map((page) => (
-        <li className="mb3" key={page.title}>
-          <a
-            className={classnames('inline-block w-full color-blue-on-hover', {
-              'color-blue': activeItem === page.path
-            })}
-            href={page.path}
-          >
-            {page.title}
-            {page.tag && this.renderTag(page)}
-          </a>
-        </li>
-      ));
+      .map((page) => {
+        // Required on parents containing tags to prevent unwanted
+        // scrollbars on IE
+        const overflowClasses = classnames('mb3', {
+          'scroll-hidden': page.tag
+        });
+
+        return (
+          <li className={overflowClasses} key={page.title}>
+            <a
+              className={classnames('inline-block w-full color-blue-on-hover', {
+                'color-blue': activeItem === page.path
+              })}
+              href={page.path}
+            >
+              {page.title}
+              {page.tag && this.renderTag(page)}
+            </a>
+          </li>
+        );
+      });
 
     return (
       <ul id={sectionId} className="mb12 ml12">
