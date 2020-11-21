@@ -34,12 +34,7 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
         </a>
       </p>
       <ul
-        className="mb24"
-        style={
-          Object {
-            "listStyle": "none",
-          }
-        }
+        className="unprose mb24 ml24"
       >
         <li
           className="ml-neg24 flex-parent"
@@ -189,12 +184,7 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
         </a>
       </p>
       <ul
-        className="mb24"
-        style={
-          Object {
-            "listStyle": "none",
-          }
-        }
+        className="unprose mb24 ml24"
       >
         <li
           className="ml-neg24 flex-parent"
@@ -384,12 +374,7 @@ exports[`overview-header Basic renders as expected 1`] = `
         </a>
       </p>
       <ul
-        className="mb24"
-        style={
-          Object {
-            "listStyle": "none",
-          }
-        }
+        className="unprose mb24 ml24"
       >
         <li
           className="ml-neg24 flex-parent"
@@ -596,12 +581,7 @@ exports[`overview-header Beta product renders as expected 1`] = `
         </span>
       </h1>
       <ul
-        className="mb24"
-        style={
-          Object {
-            "listStyle": "none",
-          }
-        }
+        className="unprose mb24 ml24"
       >
         <li
           className="ml-neg24 flex-parent"
@@ -723,12 +703,7 @@ exports[`overview-header No optional props renders as expected 1`] = `
         Mapbox SDK that You've Never Heard Of
       </h1>
       <ul
-        className="mb24"
-        style={
-          Object {
-            "listStyle": "none",
-          }
-        }
+        className="unprose mb24 ml24"
       >
         <li
           className="ml-neg24 flex-parent"
@@ -920,12 +895,7 @@ exports[`overview-header Some optional props renders as expected 1`] = `
         </span>
       </p>
       <ul
-        className="mb24"
-        style={
-          Object {
-            "listStyle": "none",
-          }
-        }
+        className="unprose mb24 ml24"
       >
         <li
           className="ml-neg24 flex-parent"
