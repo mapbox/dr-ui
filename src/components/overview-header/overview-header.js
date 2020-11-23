@@ -136,9 +136,7 @@ class OverviewHeader extends React.PureComponent {
             {this.renderVersion()}
 
             {featuresList && (
-              <ul className="mb24" style={{ listStyle: 'none' }}>
-                {featuresList}
-              </ul>
+              <ul className="unprose mb24 ml24">{featuresList}</ul>
             )}
             {this.renderFooter()}
           </div>
