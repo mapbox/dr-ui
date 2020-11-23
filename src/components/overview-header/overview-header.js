@@ -126,7 +126,7 @@ class OverviewHeader extends React.PureComponent {
           }
         )}
       >
-        <div className="flex-parent">
+        <div className="flex-parent flex-parent--center-cross">
           <div className="flex-child flex-child--grow">
             <h1 className="mb6 txt-fancy">
               {props.title}

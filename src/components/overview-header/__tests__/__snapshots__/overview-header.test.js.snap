@@ -5,7 +5,7 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
   className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--darken10"
 >
   <div
-    className="flex-parent"
+    className="flex-parent flex-parent--center-cross"
   >
     <div
       className="flex-child flex-child--grow"
@@ -155,7 +155,7 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
   className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--darken10"
 >
   <div
-    className="flex-parent"
+    className="flex-parent flex-parent--center-cross"
   >
     <div
       className="flex-child flex-child--grow"
@@ -345,7 +345,7 @@ exports[`overview-header Basic renders as expected 1`] = `
   className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--darken10"
 >
   <div
-    className="flex-parent"
+    className="flex-parent flex-parent--center-cross"
   >
     <div
       className="flex-child flex-child--grow"
@@ -529,7 +529,7 @@ exports[`overview-header Beta product renders as expected 1`] = `
   className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--darken10"
 >
   <div
-    className="flex-parent"
+    className="flex-parent flex-parent--center-cross"
   >
     <div
       className="flex-child flex-child--grow"
@@ -692,7 +692,7 @@ exports[`overview-header No optional props renders as expected 1`] = `
   className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--darken10"
 >
   <div
-    className="flex-parent"
+    className="flex-parent flex-parent--center-cross"
   >
     <div
       className="flex-child flex-child--grow"
@@ -872,7 +872,7 @@ exports[`overview-header Some optional props renders as expected 1`] = `
   className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--darken10"
 >
   <div
-    className="flex-parent"
+    className="flex-parent flex-parent--center-cross"
   >
     <div
       className="flex-child flex-child--grow"
