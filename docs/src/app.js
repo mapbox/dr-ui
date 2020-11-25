@@ -20,6 +20,7 @@ export default class App extends React.Component {
           </h2>
           {categories[category].map((comp) => {
             const component = components.filter((f) => f.name === comp)[0];
+            if (!component) return;
             return (
               <div
                 key={component.name}

@@ -31,28 +31,30 @@ class PageShell extends React.Component {
     const { children, location, frontMatter, headings } = this.props;
 
     return (
-      <PageLayout
-        filters={filters}
-        headings={headings}
-        frontMatter={{
-          ...frontMatter,
-          ...(location.pathname === '/dr-ui/components/' && {
-            headings: componentHeadings,
-            // handle dynamic values in OverviewHeader
-            overviewHeader: {
-              ...frontMatter.overviewHeader,
-              version: version,
-              image: <img src="/img/documentation-astronaut.png" alt="" />
-            }
-          })
-        }}
-        location={location}
-        constants={constants}
-        navigation={navigation}
-        AppropriateImage={AppropriateImage}
-      >
-        {children}
-      </PageLayout>
+      <div className="py18">
+        <PageLayout
+          filters={filters}
+          headings={headings}
+          frontMatter={{
+            ...frontMatter,
+            ...(location.pathname === '/dr-ui/components/' && {
+              headings: componentHeadings,
+              // handle dynamic values in OverviewHeader
+              overviewHeader: {
+                ...frontMatter.overviewHeader,
+                version: version,
+                image: <img src="/img/documentation-astronaut.png" alt="" />
+              }
+            })
+          }}
+          location={location}
+          constants={constants}
+          navigation={navigation}
+          AppropriateImage={AppropriateImage}
+        >
+          {children}
+        </PageLayout>
+      </div>
     );
   }
 }
