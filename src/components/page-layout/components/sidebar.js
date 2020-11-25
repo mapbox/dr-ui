@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import NavigationAccordion from '../../navigation-accordion';
 import ProductMenu from '../../product-menu/product-menu';
+import Search from '../../search/search';
 import classnames from 'classnames';
 
 export default class Sidebar extends React.Component {
@@ -11,7 +12,8 @@ export default class Sidebar extends React.Component {
       navigation,
       location,
       children,
-      parentPath
+      parentPath,
+      hideSearch
     } = this.props;
     const { SITE, BASEURL } = constants;
     const { title, tag, path, navTabs } = navigation;
@@ -29,12 +31,19 @@ export default class Sidebar extends React.Component {
         className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm px12-mm"
         style={{ top: '10px' }}
       >
-        <div className="mb12 border-b border--darken10 pb12">
-          <ProductMenu
-            productName={title || SITE}
-            tag={tag || undefined}
-            homePage={`${BASEURL}/${path || ''}`}
-          />
+        <div className="mb6 border-b border--darken10">
+          <div className="mb6">
+            <ProductMenu
+              productName={title || SITE}
+              tag={tag || undefined}
+              homePage={`${BASEURL}/${path || ''}`}
+            />
+          </div>
+          {!hideSearch && (
+            <div className="pb6">
+              <Search {...this.props} site={SITE} />
+            </div>
+          )}
         </div>
         <div
           className={classnames('', {
@@ -75,5 +84,6 @@ Sidebar.propTypes = {
   constants: PropTypes.shape({
     SITE: PropTypes.string.isRequired,
     BASEURL: PropTypes.string.isRequired
-  }).isRequired
+  }).isRequired,
+  hideSearch: PropTypes.bool
 };
