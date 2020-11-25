@@ -3,7 +3,7 @@
 exports[`level-indicator Basic renders as expected 1`] = `
 <div>
   <div
-    className="flex-parent flex-parent--center-cross"
+    className="dr-ui--level-indicator flex-parent flex-parent--center-cross"
   >
     <div
       className="inline-block w6 bg-green align-middle mr3"
@@ -15,7 +15,7 @@ exports[`level-indicator Basic renders as expected 1`] = `
       }
     />
     <div
-      className="inline-block w6 bg-gray-light align-middle mr3"
+      className="inline-block w6 bg-green-light align-middle mr3"
       style={
         Object {
           "borderRadius": "1px",
@@ -24,7 +24,7 @@ exports[`level-indicator Basic renders as expected 1`] = `
       }
     />
     <div
-      className="inline-block w6 bg-gray-light align-middle mr3"
+      className="inline-block w6 bg-green-light align-middle mr3"
       style={
         Object {
           "borderRadius": "1px",
@@ -33,13 +33,13 @@ exports[`level-indicator Basic renders as expected 1`] = `
       }
     />
     <div
-      className="inline-block color-green ml3"
+      className="inline-block color-gray ml3"
     >
       Beginner
     </div>
   </div>
   <div
-    className="flex-parent flex-parent--center-cross"
+    className="dr-ui--level-indicator flex-parent flex-parent--center-cross"
   >
     <div
       className="inline-block w6 bg-orange align-middle mr3"
@@ -60,7 +60,7 @@ exports[`level-indicator Basic renders as expected 1`] = `
       }
     />
     <div
-      className="inline-block w6 bg-gray-light align-middle mr3"
+      className="inline-block w6 bg-orange-light align-middle mr3"
       style={
         Object {
           "borderRadius": "1px",
@@ -69,13 +69,13 @@ exports[`level-indicator Basic renders as expected 1`] = `
       }
     />
     <div
-      className="inline-block color-orange ml3"
+      className="inline-block color-gray ml3"
     >
       Intermediate
     </div>
   </div>
   <div
-    className="flex-parent flex-parent--center-cross"
+    className="dr-ui--level-indicator flex-parent flex-parent--center-cross"
   >
     <div
       className="inline-block w6 bg-red align-middle mr3"
@@ -105,7 +105,7 @@ exports[`level-indicator Basic renders as expected 1`] = `
       }
     />
     <div
-      className="inline-block color-red ml3"
+      className="inline-block color-gray ml3"
     >
       Advanced
     </div>
