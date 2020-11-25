@@ -1,27 +1,14 @@
 export default {
   page: {
-    sidebar: 'toc', // heading table of contents
-    sidebarTheme: '' // blank sidebar background
-  },
-  accordion: {
-    sidebar: 'accordion', // NavigationAccordion sidebar
-    sidebarTheme: 'bg-gray-faint' // sidebar background
-  },
-  example: {
-    sidebar: 'sectioned', // SectionedNavigation sidebar
-    hideSubItems: false, // show headings and subitems in sitebar
-    sidebarTheme: 'bg-gray-faint', // sidebar background
-    includeFilterBar: false // hide filter bar
+    sidebarTheme: '', // blank sidebar background
+    onThisPage: true // show an aside by default
   },
   exampleIndex: {
-    sidebar: 'sectioned', // SectionedNavigation sidebar
-    hideSubItems: true, // only show sidebar headings
+    aside: 'none', // do not show aside
     showCards: true, // show example cards
-    hideFeedback: true, // hide feedback module
-    sidebarTheme: 'bg-gray-faint', // sidebar background
-    includeFilterBar: false // hide filter bar
+    hideFeedback: true // hide feedback module
   },
   full: {
-    sidebar: 'none' // no sidebar
+    aside: 'none' // do not show aside
   }
 };

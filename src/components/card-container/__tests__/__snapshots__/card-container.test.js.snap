@@ -7,7 +7,7 @@ exports[`card-container Basic renders as expected 1`] = `
     href="#category"
   >
     <h2
-      className="txt-bold"
+      className="txt-bold unprose"
       id="category"
     >
       Category
@@ -107,7 +107,7 @@ exports[`card-container Full width renders as expected 1`] = `
     href="#another-category"
   >
     <h2
-      className="txt-bold"
+      className="txt-bold unprose"
       id="another-category"
     >
       Another category
@@ -181,7 +181,7 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
     href="#another-category"
   >
     <h2
-      className="txt-bold"
+      className="txt-bold unprose"
       id="another-category"
     >
       Another category

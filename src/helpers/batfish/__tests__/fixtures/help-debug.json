@@ -29,7 +29,7 @@
         "topics": ["Access tokens"],
         "products": ["Account app", "Tokens API"],
         "contentType": "guide",
-        "layout": "accordion",
+        "layout": "page",
         "order": 2,
         "popularGuide": true
       }
@@ -48,7 +48,7 @@
           "import { datasetSample } from '../../snippets/dataset';"
         ],
         "contentType": "guide",
-        "layout": "accordion",
+        "layout": "page",
         "order": 4
       }
     },
@@ -72,7 +72,7 @@
           "import RelatedPage from '@mapbox/dr-ui/related-page';"
         ],
         "contentType": "guide",
-        "layout": "accordion",
+        "layout": "page",
         "order": 7
       }
     },
@@ -86,7 +86,7 @@
         "topics": ["Satellite"],
         "products": ["Mapbox Satellite tileset", "Raster Tiles API"],
         "contentType": "guide",
-        "layout": "accordion",
+        "layout": "page",
         "order": 11
       }
     },
@@ -106,7 +106,7 @@
           "import { DemoStatic } from '../../components/demo-static';"
         ],
         "contentType": "guide",
-        "layout": "accordion",
+        "layout": "page",
         "order": 12
       }
     },
@@ -125,7 +125,7 @@
           "Uploads API"
         ],
         "contentType": "guide",
-        "layout": "accordion",
+        "layout": "page",
         "order": 14
       }
     },
@@ -139,7 +139,7 @@
         "topics": ["Unity"],
         "products": ["Maps SDK for Unity"],
         "contentType": "guide",
-        "layout": "accordion",
+        "layout": "page",
         "order": 13
       }
     },
@@ -154,7 +154,7 @@
         "prependJs": [
           "import UserAccessToken from '../../components/user-access-token';"
         ],
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -164,7 +164,7 @@
         "title": "annotation",
         "description": "An annotation is a defined location on a map in the Mapbox Maps SDK for iOS.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Maps SDK for iOS"]
       }
     },
@@ -175,7 +175,7 @@
         "title": "attribution",
         "description": "Attribution is the combination of two visual elements that are placed on all Mapbox maps, stating that a map was created with Mapbox tools and data.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": [
           "Mapbox GL JS",
           "Mapbox.js",
@@ -197,7 +197,7 @@
         "prependJs": [
           "import { LegacyNote } from '../../components/legacy-note';"
         ],
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -219,7 +219,7 @@
           "Mapbox Studio"
         ],
         "prependJs": ["import * as constants from '../../constants';"],
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -238,7 +238,7 @@
         ],
         "contentType": "glossary",
         "prependJs": ["import * as constants from '../../constants';"],
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -257,7 +257,7 @@
           "import * as constants from '../../constants';",
           "import DemoIframe from '@mapbox/dr-ui/demo-iframe';"
         ],
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -271,7 +271,7 @@
         "prependJs": [
           "import { LegacyNote } from '../../components/legacy-note';"
         ],
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -286,7 +286,7 @@
           "import { LegacyNote } from '../../components/legacy-note';",
           "import RelatedPage from '@mapbox/dr-ui/related-page';"
         ],
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -300,7 +300,7 @@
           "import Button from '@mapbox/mr-ui/button';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox Studio", "Uploads API"]
       }
     },
@@ -315,7 +315,7 @@
           "import Note from '@mapbox/dr-ui/note';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": [
           "Mapbox Studio",
           "Mapbox GL JS",
@@ -331,7 +331,7 @@
         "title": "dataset ID",
         "description": "Use the dataset ID to make requests related to the dataset using the Datasets API.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Datasets API", "Mapbox Studio"]
       }
     },
@@ -342,7 +342,7 @@
         "title": "dataset",
         "description": "A dataset is an editable collection of GeoJSON features.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox Studio", "Datasets API"]
       }
     },
@@ -356,7 +356,7 @@
           "import UserAccessToken from '../../components/user-access-token';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Datasets API", "Mapbox Studio"]
       }
     },
@@ -370,7 +370,7 @@
           "import UserAccessToken from '../../components/user-access-token';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Directions API"]
       }
     },
@@ -385,7 +385,7 @@
           "import RelatedPage from '@mapbox/dr-ui/related-page';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": [
           "Mapbox GL JS",
           "Maps SDK for Android",
@@ -402,7 +402,7 @@
         "description": "Feature querying is the process by which features in a tileset are identified at a specific location.",
         "prependJs": ["import * as constants from '../../constants';"],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": [
           "Mapbox GL JS",
           "Maps SDK for Android",
@@ -418,7 +418,7 @@
         "title": "feature",
         "description": "A geospatial feature refers to an individual point, line, or polygon in a dataset or in a tileset.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Documentation"]
       }
     },
@@ -430,7 +430,7 @@
         "description": "A filter, also known as a predicate within iOS and macOS, gives you fine-grained control over the content of a style layer.",
         "prependJs": ["import * as constants from '../../constants';"],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox Style Specification"]
       }
     },
@@ -441,7 +441,7 @@
         "title": "font stack",
         "description": "A font stack is a collection of fonts that belong to an individual layer within a style.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": [
           "Mapbox Style Specification",
           "Styles API",
@@ -460,7 +460,7 @@
           "import UserAccessToken from '../../components/user-access-token';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Geocoding API"]
       }
     },
@@ -471,7 +471,7 @@
         "title": "geocoding",
         "description": "Geocoding is the process of taking an address or name of a place and converting it into latitude and longitude values.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Geocoding API", "Java SDK"]
       }
     },
@@ -486,7 +486,7 @@
           "import Button from '@mapbox/mr-ui/button';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Documentation"]
       }
     },
@@ -501,7 +501,7 @@
           "import Button from '@mapbox/mr-ui/button';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox Studio"]
       }
     },
@@ -517,7 +517,7 @@
           "import * as constants from '../../constants';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox GL JS", "Styles API"]
       }
     },
@@ -554,7 +554,7 @@
           "import UserAccessToken from '../../components/user-access-token';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Isochrone API"]
       }
     },
@@ -569,7 +569,7 @@
           "import Button from '@mapbox/mr-ui/button';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox Studio"]
       }
     },
@@ -581,7 +581,7 @@
         "description": "Latitude and longitude are a pair of numbers (coordinates) used to describe a position on the plane of a geographic coordinate system.",
         "prependJs": ["import Note from '@mapbox/dr-ui/note';"],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Documentation"]
       }
     },
@@ -592,7 +592,7 @@
         "title": "style layer",
         "description": "A style layer is used to add styling rules to a specific subset of data in a map style.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox Style Specification", "Mapbox Studio"]
       }
     },
@@ -603,7 +603,7 @@
         "title": "Leaflet",
         "description": "Leaflet is an open-source web mapping library that forms the basis of Mapbox.js.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox.js"]
       }
     },
@@ -614,7 +614,7 @@
         "title": "layout and paint properties",
         "description": "Layout and paint properties are two sub-properties of a layer that decides how data from the layer is rendered in maps that use Mapbox GL.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox Style Specification", "Mapbox GL JS"]
       }
     },
@@ -625,7 +625,7 @@
         "title": "Maki icon set",
         "description": "The Maki icon set is used in map styles. It includes common point of interest icons.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Documentation"]
       }
     },
@@ -636,7 +636,7 @@
         "title": "map ID",
         "description": "Map ID is a deprecated term for the unique identifier used to identify a tileset. This identifier is now called a tileset ID.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "prependJs": ["import Note from '@mapbox/dr-ui/note';"],
         "products": ["Documentation"]
       }
@@ -648,7 +648,7 @@
         "title": "map loads",
         "description": "A map load occurs whenever a Mapbox GL JS `Map` object is initialized on a webpage. It is used to track map usage on the web.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "prependJs": ["import * as constants from '../../constants';"],
         "products": ["Mapbox GL JS", "Account app"]
       }
@@ -663,7 +663,7 @@
           "import UserAccessToken from '../../components/user-access-token';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Map Matching API"]
       }
     },
@@ -675,7 +675,7 @@
         "description": "Map views were formerly used as a unit of measurement to track map usage on the web. Map views are now deprecated.",
         "prependJs": ["import Note from '@mapbox/dr-ui/note';"],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Documentation"]
       }
     },
@@ -686,7 +686,7 @@
         "title": "Mapbox Maps SDK for Android",
         "description": "The Mapbox Maps SDK for Android is an open-source toolset for building mapping applications for Android devices.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Maps SDK for Android"]
       }
     },
@@ -698,7 +698,7 @@
         "description": "The Mapbox components for Framer X can be used to add interactive maps to Framer prototypes.",
         "prependJs": ["import Note from '@mapbox/dr-ui/note';"],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Documentation"]
       }
     },
@@ -712,7 +712,7 @@
           "import { LegacyNote } from '../../components/legacy-note';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Documentation"]
       }
     },
@@ -723,7 +723,7 @@
         "title": "Mapbox GL JS",
         "description": "Mapbox GL JS is a JavaScript library that uses Mapbox GL to render interactive maps.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox GL JS"]
       }
     },
@@ -734,7 +734,7 @@
         "title": "Mapbox GL",
         "description": "Mapbox GL is a suite of open-source libraries for embedding customizable and responsive client-side maps in web, mobile, and desktop applications.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": [
           "Mapbox Studio",
           "Mapbox GL JS",
@@ -750,7 +750,7 @@
         "title": "Mapbox Maps SDK for iOS",
         "description": "The Mapbox Maps SDK for iOS is an open-source toolset for building mapping applications for iPhone and iPad devices.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Maps SDK for iOS"]
       }
     },
@@ -764,7 +764,7 @@
           "import { LegacyNote } from '../../components/legacy-note';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox.js"]
       }
     },
@@ -775,7 +775,7 @@
         "title": "Mapbox Maps SDK for Unity",
         "description": "The Mapbox Maps SDK for Unity is an open-source toolset for building location-based augmented and virtual reality applications with Unity, using real map data.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Maps SDK for Unity"]
       }
     },
@@ -786,7 +786,7 @@
         "title": "Mapbox Navigation SDKs",
         "description": "The Mapbox Navigation SDKs for iOS and Android provide open-source toolsets for integrating turn-by-turn navigation within mobile applications.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": [
           "Navigation SDK for Android",
           "Navigation SDK for iOS",
@@ -805,7 +805,7 @@
           "import UserAccessToken from '../../components/user-access-token';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": [
           "Mapbox Satellite tileset",
           "Mapbox Studio",
@@ -827,7 +827,7 @@
           "import RelatedPage from '@mapbox/dr-ui/related-page';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox Studio Classic"]
       }
     },
@@ -838,7 +838,7 @@
         "title": "Mapbox Studio",
         "description": "Mapbox Studio is a web application for creating map styles and managing your datasets and tilesets.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox Studio"]
       }
     },
@@ -853,7 +853,7 @@
           "import UserAccessToken from '../../components/user-access-token';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox Tiling Service"]
       }
     },
@@ -864,7 +864,7 @@
         "title": "Mapnik",
         "description": "Mapnik is an open-source toolkit for developing mapping applications.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox Studio Classic", "Raster Tiles API"]
       }
     },
@@ -875,7 +875,7 @@
         "title": "Maps SDK for React Native",
         "description": "The Maps SDK for React Native is a community-managed React Native library for integrating Mapbox maps into mobile apps.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Documentation"]
       }
     },
@@ -886,7 +886,7 @@
         "title": "marker",
         "description": "A marker is a visual representation of a specific coordinate on a map.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": [
           "Mapbox Studio",
           "Mapbox GL JS",
@@ -902,7 +902,7 @@
         "title": "Mapbox Matrix API elements",
         "description": "Elements are the source and destination coordinate pairs used in a Mapbox Matrix API request.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Matrix API"]
       }
     },
@@ -916,7 +916,7 @@
           "import UserAccessToken from '../../components/user-access-token';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Matrix API"]
       }
     },
@@ -931,7 +931,7 @@
           "import Button from '@mapbox/mr-ui/button';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox Studio"]
       }
     },
@@ -942,7 +942,7 @@
         "title": "monthly active users",
         "description": "Monthly active users (MAU) is the number of users who accessed Mapbox services within your applications during a given month.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": [
           "Maps SDK for iOS",
           "Maps SDK for Android",
@@ -961,7 +961,7 @@
         "title": "OpenStreetMap",
         "description": "OpenStreetMap is a collaborative mapping project that creates a world map.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Documentation"]
       }
     },
@@ -973,7 +973,7 @@
         "description": "An offline region is a defined region of a map that is available for use in conditions with limited or no network connection.",
         "prependJs": ["import * as constants from '../../constants';"],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Maps SDK for iOS", "Maps SDK for Android"]
       }
     },
@@ -987,7 +987,7 @@
           "import UserAccessToken from '../../components/user-access-token';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Optimization API"]
       }
     },
@@ -998,7 +998,7 @@
         "title": "overzoom",
         "description": "Overzoom is the result of a tileset being zoomed in beyond its given zoom extent.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Documentation"]
       }
     },
@@ -1009,7 +1009,7 @@
         "title": "point",
         "description": "A point is a geospatial feature defined by one pair of latitude and longitude coordinates.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Documentation"]
       }
     },
@@ -1021,7 +1021,7 @@
         "description": "Projections are methods of transforming the coordinates of locations on the planet to a two-dimensional plane.",
         "prependJs": ["import RelatedPage from '@mapbox/dr-ui/related-page';"],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Documentation"]
       }
     },
@@ -1032,7 +1032,7 @@
         "title": "quadtree",
         "description": "Map tiles are stored in a quadtree data structure.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Documentation"]
       }
     },
@@ -1048,7 +1048,7 @@
           "import UserAccessToken from '../../components/user-access-token';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Raster Tiles API"]
       }
     },
@@ -1059,7 +1059,7 @@
         "title": "raster data",
         "description": "Raster data is a pixel-based data format used in raster tilesets.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": [
           "Mapbox Style Specification",
           "Mapbox Studio",
@@ -1076,7 +1076,7 @@
         "title": "routing profile",
         "description": "A routing profile is a set of rules that a routing engine uses to find the optimal route between two points.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": [
           "Directions API",
           "Isochrone API",
@@ -1097,7 +1097,7 @@
           "import Button from '@mapbox/mr-ui/button';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox Studio"]
       }
     },
@@ -1108,7 +1108,7 @@
         "title": "runtime styling",
         "description": "Runtime styling allows you to dynamically change the map style displayed on your Mapbox map in real time.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Maps SDK for iOS", "Maps SDK for Android"]
       }
     },
@@ -1122,7 +1122,7 @@
           "import { LegacyNote } from '../../components/legacy-note';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox.js", "Static Images API"]
       }
     },
@@ -1133,7 +1133,7 @@
         "title": "SKU tokens",
         "description": "SKU tokens are used by some SDKs for tracking usage.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox GL JS", "Maps SDK for iOS", "Maps SDK for Android"]
       }
     },
@@ -1144,7 +1144,7 @@
         "title": "source layer",
         "description": "A source layer is an individual layer of data within a source.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": [
           "Mapbox Studio",
           "Mapbox GL JS",
@@ -1159,7 +1159,7 @@
         "title": "source",
         "description": "A source supplies the data that Mapbox GL displays on a map.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox Style Specification"]
       }
     },
@@ -1171,7 +1171,7 @@
         "description": "A sprite is a single image that contains all the icons included in a style.",
         "prependJs": ["import RelatedPage from '@mapbox/dr-ui/related-page';"],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": [
           "Mapbox Studio",
           "Styles API",
@@ -1189,7 +1189,7 @@
           "import UserAccessToken from '../../components/user-access-token';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Static Tiles API", "Mapbox.js"]
       }
     },
@@ -1204,7 +1204,7 @@
           "import UserAccessToken from '../../components/user-access-token';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Static Images API"]
       }
     },
@@ -1215,7 +1215,7 @@
         "title": "style component",
         "description": "A style component is a collection of related map features that you style as a single unit in the Mapbox Studio style editor. Each component can contain one or more layers.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "prependJs": [
           "import Browser from '@mapbox/dr-ui/browser';",
           "import StyleComponentBetaNote from '../../components/temporary/style-component-beta-note';",
@@ -1233,7 +1233,7 @@
         "description": "A style ID is a map style's unique identifier.",
         "prependJs": ["import constants from '../../constants';"],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Styles API", "Mapbox Studio"]
       }
     },
@@ -1248,7 +1248,7 @@
           "import UserAccessToken from '../../components/user-access-token';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Vector Tiles API", "Mapbox GL JS"]
       }
     },
@@ -1264,7 +1264,7 @@
           "import Icon from '@mapbox/mr-ui/icon';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Styles API", "Mapbox Studio"]
       }
     },
@@ -1275,7 +1275,7 @@
         "title": "style",
         "description": "A style is a JSON document that defines the visual appearance of a map.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": [
           "Mapbox Style Specification",
           "Mapbox Studio",
@@ -1293,7 +1293,7 @@
           "import UserAccessToken from '../../components/user-access-token';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Styles API"]
       }
     },
@@ -1309,7 +1309,7 @@
           "import Button from '@mapbox/mr-ui/button';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Styles API", "Mapbox Studio"]
       }
     },
@@ -1320,7 +1320,7 @@
         "title": "symbol layer",
         "description": "A symbol layer is a layer in which icons or text are added to a Mapbox map.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": [
           "Mapbox Style Specification",
           "Maps SDK for iOS",
@@ -1336,7 +1336,7 @@
         "title": "telemetry",
         "description": "Telemetry is a process in which automatic sensors create and update maps by gathering anonymized data about where and how people are moving.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Maps SDK for Android", "Maps SDK for iOS"]
       }
     },
@@ -1351,7 +1351,7 @@
           "import Button from '@mapbox/mr-ui/button';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox Studio"]
       }
     },
@@ -1362,7 +1362,7 @@
         "title": "TileJSON",
         "description": "TileJSON is a format for describing tilesets.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox Tiling Service"]
       }
     },
@@ -1376,7 +1376,7 @@
           "import { LegacyNote } from '../../components/legacy-note';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Documentation"]
       }
     },
@@ -1390,7 +1390,7 @@
           "import UserAccessToken from '../../components/user-access-token';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Tilequery API"]
       }
     },
@@ -1401,7 +1401,7 @@
         "title": "tileset ID",
         "description": "Tileset IDs, previously known as Map IDs, are used to identify vector and raster tilesets.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "prependJs": [
           "import Icon from '@mapbox/mr-ui/icon';",
           "import Note from '@mapbox/dr-ui/note';",
@@ -1418,7 +1418,7 @@
         "description": "This feature is in beta. Tileset recipes describe how tileset source data should look and behave when a tileset is published by Mapbox Tiling Service (MTS).",
         "prependJs": ["import Note from '@mapbox/dr-ui/note';"],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox Tiling Service"]
       }
     },
@@ -1430,7 +1430,7 @@
         "description": "This feature is in beta. Tileset sources are line-delimited GeoJSON sources used to create new tilesets using Mapbox Tiling Service (MTS).",
         "prependJs": ["import Note from '@mapbox/dr-ui/note';"],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox Tiling Service"]
       }
     },
@@ -1442,7 +1442,7 @@
         "description": "A tileset is a collection of raster or vector data broken up into a uniform grid of square tiles at 22 preset zoom levels.",
         "prependJs": ["import Note from '@mapbox/dr-ui/note';"],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": [
           "Mapbox Tiling Service",
           "Mapbox GL JS",
@@ -1463,7 +1463,7 @@
           "import UserAccessToken from '../../components/user-access-token';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Tokens API"]
       }
     },
@@ -1474,7 +1474,7 @@
         "title": "Turf.js",
         "description": "Turf.js is an open-source JavaScript library used for spatial analysis.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox GL JS", "Java SDK"]
       }
     },
@@ -1488,7 +1488,7 @@
           "import UserAccessToken from '../../components/user-access-token';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Uploads API"]
       }
     },
@@ -1504,7 +1504,7 @@
           "import UserAccessToken from '../../components/user-access-token';"
         ],
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Vector Tiles API"]
       }
     },
@@ -1515,7 +1515,7 @@
         "title": "vector tiles",
         "description": "A vector tile is a lightweight data format for storing geospatial vector data, such as points, lines, and polygons.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": [
           "Mapbox GL JS",
           "Mapbox Vector Tile Specification",
@@ -1530,7 +1530,7 @@
         "title": "WordPress map block",
         "description": "The WordPress map block allows WordPress users to add a Mapbox map to any post or page.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Documentation"]
       }
     },
@@ -1541,7 +1541,7 @@
         "title": "worldview",
         "description": "In Mapbox vector tilesets, the \"worldview\" data field is used to identify geographic features whose characteristics are defined differently by various groups.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "prependJs": [
           "import Note from '@mapbox/dr-ui/note';",
           "import { DemoLink } from '../../components/demo-link';"
@@ -1561,7 +1561,7 @@
         "title": "zoom extent",
         "description": "The zoom extent is the range of zoom levels at which a tileset is visible.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Mapbox Style Specification", "Mapbox Studio"]
       }
     },
@@ -2466,7 +2466,7 @@
           "import UserAccessToken from '../../components/user-access-token';"
         ],
         "contentType": "guide",
-        "layout": "accordion",
+        "layout": "page",
         "order": 6
       }
     },
@@ -2490,7 +2490,7 @@
         "contentType": "guide",
         "contentTypeTitle": "How Mapbox works",
         "navOrder": 2,
-        "layout": "accordion",
+        "layout": "page",
         "order": 1,
         "noShellHeaderBuffer": true,
         "products": ["Documentation"]
@@ -2515,7 +2515,7 @@
         ],
         "prependJs": ["import DemoIframe from '@mapbox/dr-ui/demo-iframe';"],
         "contentType": "guide",
-        "layout": "accordion",
+        "layout": "page",
         "order": 8
       }
     },
@@ -2539,7 +2539,7 @@
           "import Icon from '@mapbox/mr-ui/icon';"
         ],
         "contentType": "guide",
-        "layout": "accordion",
+        "layout": "page",
         "order": 10
       }
     },
@@ -2567,7 +2567,7 @@
           "import DemoIframe from '@mapbox/dr-ui/demo-iframe';"
         ],
         "contentType": "guide",
-        "layout": "accordion",
+        "layout": "page",
         "order": 9
       }
     },
@@ -2593,7 +2593,7 @@
           "import CompareWebUseCases from '../../components/diagrams/compare-web-use-cases';"
         ],
         "contentType": "guide",
-        "layout": "accordion",
+        "layout": "page",
         "order": 15
       }
     },
@@ -2604,7 +2604,7 @@
         "title": "zoom level",
         "description": "A zoom level determines how much of a map is visible.",
         "contentType": "glossary",
-        "layout": "accordion",
+        "layout": "page",
         "prependJs": ["import ZoomLevelCss from '../css/zoom-level.css';"],
         "products": ["Documentation"]
       }
@@ -3672,7 +3672,7 @@
           "import DemoIframe from '@mapbox/dr-ui/demo-iframe';"
         ],
         "contentType": "guide",
-        "layout": "accordion",
+        "layout": "page",
         "order": 5
       }
     },
@@ -4313,7 +4313,7 @@
           "import Note from '@mapbox/dr-ui/note';"
         ],
         "contentType": "guide",
-        "layout": "accordion",
+        "layout": "page",
         "order": 3
       }
     },

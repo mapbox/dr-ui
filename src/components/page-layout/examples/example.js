@@ -27,47 +27,61 @@ export default class Basic extends React.Component {
           }
         }}
         location={{
-          pathname: '/PageLayout/'
+          pathname: '/PageLayout/examples/'
         }}
         frontMatter={{
           title: 'Examples',
-          layout: 'example',
+          layout: 'exampleIndex',
           description: 'Lots of handy examples.',
           navOrder: 1
         }}
         AppropriateImage={AppropriateImage}
         navigation={{
           hierarchy: {
-            '/PageLayout/': {
-              parent: '/PageLayout/',
-              title: 'Demo'
+            '/PageLayout/examples/': {
+              parent: '/PageLayout/examples/',
+              title: 'Examples'
             }
           },
           navTabs: [
             {
-              href: '/PageLayout/',
-              id: '/PageLayout/',
-              label: 'Overview'
+              path: '/PageLayout/',
+              title: 'Overview',
+              id: 'overview',
+              pages: [
+                {
+                  path: '/PageLayout/specifications/',
+                  title: 'Specifications'
+                },
+                {
+                  path: '/PageLayout/examples/',
+                  title: 'Examples'
+                },
+                {
+                  path: '/PageLayout/demo/',
+                  title: 'Demo'
+                }
+              ]
             },
             {
-              href: '/PageLayout/specification/',
-              id: '/PageLayout/specification/',
-              label: 'Specification'
+              path: '/PageLayout/specification/',
+              title: 'Specification',
+              id: 'specification'
             },
             {
-              href: '/PageLayout/examples/',
-              id: '/PageLayout/examples/',
-              label: 'Examples'
+              path: '/PageLayout/examples/',
+              title: 'Examples',
+              id: 'examples'
             },
             {
-              href: '/PageLayout/demo/',
-              id: '/PageLayout/demo/',
-              label: 'Demo'
+              path: '/PageLayout/demo/',
+              title: 'Demo',
+              id: 'demo'
             }
           ]
         }}
-        topics={{
-          '/PageLayout/': {
+        filters={{
+          '/PageLayout/examples/': {
             contentType: 'example',
             description: 'Replace me.',
             language: ['JavaScript'],
@@ -75,68 +89,42 @@ export default class Basic extends React.Component {
             navOrder: 3,
             path: '/PageLayout/',
             title: 'Examples',
-            topics: [
+            topics: ['Cool', 'Awesome'],
+            pages: [
               {
-                count: 3,
-                name: 'Cool',
-                pages: [
-                  {
-                    contentType: 'example',
-                    description: 'Replace me.',
-                    language: ['JavaScript'],
-                    layout: 'example',
-                    path: '/PageLayout/example-1/',
-                    text: 'Example 1',
-                    thumbnail: 'header-image',
-                    title: 'Example 1',
-                    topic: ['Cool'],
-                    url: '/PageLayout/example-1/'
-                  },
-                  {
-                    contentType: 'example',
-                    description: 'Replace me.',
-                    language: ['JavaScript'],
-                    layout: 'example',
-                    path: '/PageLayout/example-2/',
-                    text: 'Example 2',
-                    thumbnail: 'header-image',
-                    title: 'Example 2',
-                    topic: ['Cool'],
-                    url: '/PageLayout/example-2/'
-                  },
-                  {
-                    contentType: 'example',
-                    description: 'Replace me.',
-                    language: ['JavaScript'],
-                    layout: 'example',
-                    path: '/PageLayout/example-3/',
-                    text: 'Example 3',
-                    thumbnail: 'header-image',
-                    title: 'Example 3',
-                    topic: ['Cool', 'Awesome'],
-                    url: '/PageLayout/example-3/'
-                  }
-                ],
-                url: '/PageLayout/#cool'
+                contentType: 'example',
+                description:
+                  'Initialize a map in an HTML element with Mapbox GL JS.',
+                language: ['JavaScript'],
+                layout: 'example',
+                path: '/PageLayout/example-1/',
+                thumbnail: 'header-image',
+                title: 'Display a map',
+                topics: ['Cool'],
+                url: '/PageLayout/example-1/'
               },
               {
-                count: 1,
-                name: 'Awesome',
-                pages: [
-                  {
-                    contentType: 'example',
-                    description: 'Replace me.',
-                    language: ['JavaScript'],
-                    layout: 'example',
-                    path: '/PageLayout/example-3/',
-                    text: 'Example 3',
-                    thumbnail: '/files/ios-horizontal.png',
-                    title: 'Example 3',
-                    topic: ['Cool', 'Awesome'],
-                    url: '/PageLayout/example-3/'
-                  }
-                ],
-                url: '/PageLayout/#awesome'
+                contentType: 'example',
+                description: 'Add a default Marker to the map.',
+                language: ['JavaScript'],
+                layout: 'example',
+                path: '/PageLayout/example-2/',
+                thumbnail: 'header-image',
+                title: 'Add a default marker',
+                topics: ['Cool'],
+                url: '/PageLayout/example-2/'
+              },
+              {
+                contentType: 'example',
+                description:
+                  'Create a 3D indoor map with the fill-extrude-height paint property.',
+                language: ['JavaScript'],
+                layout: 'example',
+                path: '/PageLayout/example-3/',
+                thumbnail: 'header-image',
+                title: 'Extrude polygons for 3D indoor mapping',
+                topics: ['Cool', 'Awesome'],
+                url: '/PageLayout/example-3/'
               }
             ]
           }

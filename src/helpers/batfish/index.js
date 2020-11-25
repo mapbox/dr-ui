@@ -1,11 +1,9 @@
 const { buildNavigation } = require('./navigation');
-const { buildTopics } = require('./topics');
+const { buildFilters } = require('./filters');
 const { buildSplitPages } = require('./split-pages');
-const { formatTopics } = require('./format-topics');
 
 module.exports = {
   buildNavigation,
-  buildTopics,
-  buildSplitPages,
-  formatTopics
+  buildFilters,
+  buildSplitPages
 };

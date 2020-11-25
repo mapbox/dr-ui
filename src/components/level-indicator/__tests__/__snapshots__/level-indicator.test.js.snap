@@ -33,9 +33,9 @@ exports[`level-indicator Basic renders as expected 1`] = `
       }
     />
     <div
-      className="inline-block color-gray ml3 txt-capitalize"
+      className="inline-block color-gray ml3"
     >
-      beginner
+      Beginner
     </div>
   </div>
   <div
@@ -69,9 +69,9 @@ exports[`level-indicator Basic renders as expected 1`] = `
       }
     />
     <div
-      className="inline-block color-gray ml3 txt-capitalize"
+      className="inline-block color-gray ml3"
     >
-      intermediate
+      Intermediate
     </div>
   </div>
   <div
@@ -105,9 +105,9 @@ exports[`level-indicator Basic renders as expected 1`] = `
       }
     />
     <div
-      className="inline-block color-gray ml3 txt-capitalize"
+      className="inline-block color-gray ml3"
     >
-      advanced
+      Advanced
     </div>
   </div>
 </div>
