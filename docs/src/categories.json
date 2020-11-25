@@ -28,10 +28,6 @@
     "PageLayout",
     "OnThisPage",
     "BackToTopButton",
-    "GlossaryCard",
-    "GlossaryImage",
-    "GlossaryPage",
-    "GlossarySection",
     "OverviewHeader",
     "NavigationAccordion",
     "NavigationDropdown",
@@ -51,6 +47,7 @@
     "BookletImage",
     "ContactImage",
     "ExampleImage",
+    "GlossaryImage",
     "PlaygroundImage",
     "TroubleshootImage"
   ]

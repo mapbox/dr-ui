@@ -30,6 +30,7 @@
 - Replace bottom `Feedback` component on examples pages with an `Aside`.
 - Allow passing children to the `ExamplesIndex` component.
 - Add theming options to `OverviewHeader`: `theme` to accept CSS classes to customize the container, `lightText` to enable white text, `description` to add a text description. The `features` prop is now optional.
+- 🚨Deprecate `GlossaryCard`, `GlossaryPage`, and `GlossarySection` components.
 
 ## 1.3.0
 
