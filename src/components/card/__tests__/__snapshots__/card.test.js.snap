@@ -12,7 +12,7 @@ exports[`card Card with image renders as expected 1`] = `
       className="relative h120 mb12"
       style={
         Object {
-          "backgroundImage": "url('./files/simple-map.png')",
+          "backgroundImage": "url('/files/simple-map.png')",
           "backgroundPosition": "center",
           "backgroundSize": "100% auto",
         }
@@ -199,7 +199,7 @@ exports[`card Card without description renders as expected 1`] = `
       className="relative h120 mb12"
       style={
         Object {
-          "backgroundImage": "url('./files/simple-map.png')",
+          "backgroundImage": "url('/files/simple-map.png')",
           "backgroundPosition": "center",
           "backgroundSize": "100% auto",
         }
