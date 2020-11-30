@@ -93,9 +93,7 @@
     "react-helmet": "^6.1.0",
     "react-test-renderer": "^16.13.1",
     "rehype-slug": "^3.0.0",
-    "remark": "^12.0.0",
     "remark-cli": "^8.0.1",
-    "remark-html": "^11.0.2",
     "remark-lint-heading-increment": "^2.0.1",
     "unist-util-visit": "^2.0.3"
   },
