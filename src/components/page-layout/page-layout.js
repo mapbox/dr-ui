@@ -150,7 +150,8 @@ PageLayout.defaultProps = {
   domain: {
     title: 'All docs',
     path: 'https://docs.mapbox.com'
-  }
+  },
+  hideSearch: false
 };
 
 PageLayout.propTypes = {
@@ -248,5 +249,7 @@ PageLayout.propTypes = {
   domain: PropTypes.shape({
     title: PropTypes.string.isRequired,
     path: PropTypes.string.isRequired
-  })
+  }),
+  /** Hide Search component from the sidebar */
+  hideSearch: PropTypes.bool
 };

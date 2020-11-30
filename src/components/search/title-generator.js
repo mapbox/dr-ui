@@ -1,11 +1,12 @@
+const contextlessTitles = ['Introduction', 'Overview', 'Guides'];
+
 export function titleGenerator(title, subsite, site) {
   // create array for formatted title: {title} | {subsite} | {site}
   const titleArr = [];
   // do not push a title that is "Introduction" or "Overview"
   if (
     title &&
-    title !== 'Introduction' &&
-    title !== 'Overview' &&
+    contextlessTitles.indexOf(title) === -1 && // do not push a title that lacks context
     (subsite || site)
   )
     titleArr.push(title);

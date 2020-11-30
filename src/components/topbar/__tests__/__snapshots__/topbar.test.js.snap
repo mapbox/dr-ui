@@ -46,12 +46,12 @@ exports[`topbar-sticker Basic renders as expected 1`] = `
             <div>
               <div>
                 <button
-                  className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke"
+                  className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round w-full"
                   onClick={[Function]}
                   style={Object {}}
                 >
                   <span
-                    className="mr6"
+                    className="mr6 color-gray"
                   >
                     <svg
                       className="icon w18 h18"
@@ -62,7 +62,11 @@ exports[`topbar-sticker Basic renders as expected 1`] = `
                     </svg>
                   </span>
                    
-                  Search
+                  <span
+                    className="color-gray"
+                  >
+                    Search
+                  </span>
                 </button>
               </div>
             </div>

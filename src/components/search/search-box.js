@@ -161,7 +161,8 @@ class SearchBox extends React.Component {
                     >
                       <svg
                         className={classnames('icon color-gray', {
-                          'w24 h24': this.state.useModal
+                          'w24 h24': this.state.useModal,
+                          'w18 h18': !this.state.useModal
                         })}
                       >
                         <title>Search</title>
@@ -284,9 +285,10 @@ class SearchBox extends React.Component {
           <div>
             <button
               className={classnames(
-                'flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke',
+                'flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round',
                 {
-                  'btn--white': this.props.background !== 'light'
+                  'btn--white': this.props.background !== 'light',
+                  'w-full': !this.props.narrow
                 }
               )}
               style={
@@ -298,7 +300,8 @@ class SearchBox extends React.Component {
             >
               <span
                 className={classnames('', {
-                  mr6: !this.props.narrow
+                  mr6: !this.props.narrow,
+                  'color-gray': this.props.background === 'light'
                 })}
               >
                 <svg className="icon w18 h18">
@@ -306,7 +309,15 @@ class SearchBox extends React.Component {
                   <use xlinkHref="#icon-search" />
                 </svg>
               </span>{' '}
-              {!this.props.narrow && 'Search'}
+              {!this.props.narrow && (
+                <span
+                  className={classnames('', {
+                    'color-gray': this.props.background === 'light'
+                  })}
+                >
+                  Search
+                </span>
+              )}
             </button>
             {this.renderModal()}
           </div>

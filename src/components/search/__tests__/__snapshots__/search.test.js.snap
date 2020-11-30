@@ -7,12 +7,12 @@ exports[`search Basic search with \`site\` set to show filter toggle. Open https
   <div>
     <div>
       <button
-        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke"
+        className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round w-full"
         onClick={[Function]}
         style={Object {}}
       >
         <span
-          className="mr6"
+          className="mr6 color-gray"
         >
           <svg
             className="icon w18 h18"
@@ -23,7 +23,11 @@ exports[`search Basic search with \`site\` set to show filter toggle. Open https
           </svg>
         </span>
          
-        Search
+        <span
+          className="color-gray"
+        >
+          Search
+        </span>
       </button>
     </div>
   </div>
@@ -37,12 +41,12 @@ exports[`search Basic search. Open https://app.swiftype.com/engines/docs/analyti
   <div>
     <div>
       <button
-        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke"
+        className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round w-full"
         onClick={[Function]}
         style={Object {}}
       >
         <span
-          className="mr6"
+          className="mr6 color-gray"
         >
           <svg
             className="icon w18 h18"
@@ -53,7 +57,11 @@ exports[`search Basic search. Open https://app.swiftype.com/engines/docs/analyti
           </svg>
         </span>
          
-        Search
+        <span
+          className="color-gray"
+        >
+          Search
+        </span>
       </button>
     </div>
   </div>
@@ -84,7 +92,7 @@ exports[`search Search with \`disableModal\` option set. Open https://app.swifty
             className="absolute flex-parent flex-parent--center-cross flex-parent--center-main w36 h36"
           >
             <svg
-              className="icon color-gray"
+              className="icon color-gray w18 h18"
             >
               <title>
                 Search
@@ -123,7 +131,7 @@ exports[`search Search with \`narrow\` option set. Open https://app.swiftype.com
   <div>
     <div>
       <button
-        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke"
+        className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round"
         onClick={[Function]}
         style={
           Object {
@@ -133,7 +141,7 @@ exports[`search Search with \`narrow\` option set. Open https://app.swiftype.com
         }
       >
         <span
-          className=""
+          className="color-gray"
         >
           <svg
             className="icon w18 h18"
@@ -160,12 +168,12 @@ exports[`search Search with custom connector. Open https://app.swiftype.com/engi
   <div>
     <div>
       <button
-        className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke"
+        className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round w-full"
         onClick={[Function]}
         style={Object {}}
       >
         <span
-          className="mr6"
+          className="mr6 color-gray"
         >
           <svg
             className="icon w18 h18"
@@ -176,7 +184,11 @@ exports[`search Search with custom connector. Open https://app.swiftype.com/engi
           </svg>
         </span>
          
-        Search
+        <span
+          className="color-gray"
+        >
+          Search
+        </span>
       </button>
     </div>
   </div>
@@ -196,7 +208,7 @@ exports[`search Search with dark background, custom placeholder. Open https://ap
       <div>
         <div>
           <button
-            className="flex-parent flex-parent--center-cross flex-parent--center-main btn btn--stroke btn--white"
+            className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round btn--white w-full"
             onClick={[Function]}
             style={Object {}}
           >
@@ -212,7 +224,11 @@ exports[`search Search with dark background, custom placeholder. Open https://ap
               </svg>
             </span>
              
-            Search
+            <span
+              className=""
+            >
+              Search
+            </span>
           </button>
         </div>
       </div>
