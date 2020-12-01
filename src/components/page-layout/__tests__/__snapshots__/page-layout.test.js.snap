@@ -47,7 +47,7 @@ Array [
               </div>
             </div>
             <div
-              className="pb6"
+              className="mb6 h36"
             >
               <div
                 className="h36 relative"
@@ -678,7 +678,7 @@ Array [
               </div>
             </div>
             <div
-              className="pb6"
+              className="mb6 h36"
             >
               <div
                 className="h36 relative"
@@ -1348,7 +1348,7 @@ Array [
               </div>
             </div>
             <div
-              className="pb6"
+              className="mb6 h36"
             >
               <div
                 className="h36 relative"
@@ -1875,7 +1875,7 @@ Array [
               </div>
             </div>
             <div
-              className="pb6"
+              className="mb6 h36"
             >
               <div
                 className="h36 relative"
