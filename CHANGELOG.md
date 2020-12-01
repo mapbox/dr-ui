@@ -1,5 +1,7 @@
 # Changelog
 
+## 2.0.0
+
 - Add `Breadcrumb` component. This component is included as a feature in `PageLayout`. [#331](https://github.com/mapbox/dr-ui/pull/331).
 - Add `OnThisPage` component. This component displays headings on the page and performs scroll spy to indicate where you are on the page.
   - 🚨This update removes the need for the `@mapbox/dr-ui/plugins/create-sections` plugin and it is now deprecated. You can safely remove it from your `batfish.config.js`.
