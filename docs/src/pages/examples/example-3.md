@@ -3,10 +3,11 @@ title: Example 3
 description: This is example 3.
 contentType: example
 language:
-  - JavaScript
+  - Swift
 topics:
   - Navigation
   - Geocoding
+level: 3
 thumbnail: header-image
 layout: example
 products:

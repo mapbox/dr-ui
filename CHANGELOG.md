@@ -1,5 +1,36 @@
 # Changelog
 
+- Add `Breadcrumb` component. This component is included as a feature in `PageLayout`. [#331](https://github.com/mapbox/dr-ui/pull/331).
+- Add `OnThisPage` component. This component displays headings on the page and performs scroll spy to indicate where you are on the page.
+  - 🚨This update removes the need for the `@mapbox/dr-ui/plugins/create-sections` plugin and it is now deprecated. You can safely remove it from your `batfish.config.js`.
+  - 🚨All h2 and h3 elements that will appear as links in the `OnThisPage` component must have the class `anchor`. The `add-links-to-headings` plugin will automatically add this class to markdown headings, but if you add HTML headings to the page, then you must add the `anchor` class to each h2 and h3 element to make sure the scroll spy can detect these headings.
+- 🚨Update `PageLayout` component.
+  - Add aside feature which includes the `OnThisPage` and `Feedback` components. On larger devices, the aside is stuck to the right-side of the screen. On smaller devices, `OnThisPage` moves inline below the page's title and `Feedback` will appear at the bottom of the page. The aside feature does not stick on IE 11 and remains static, but still performs the core functionality of providing anchor links.
+  - `OnThisPage` will appear on all pages with `layout: page` by default, but nowhere else. If a boolean `onThisPage` frontmatter property is supplied, this can be overridden for any page.
+  - Remove `TopbarSticker` from `PageLayout`. The main navigation now uses the `NavigationAccordion` on the sidebar to display main pages and subpages.
+  - 🚨Redesigned `NavigationAccordion` to work as site navigation menu. The component will no longer track headings. We deprecated several props and introduced new ones, please consult the [NavigationAccordion documentation](https://mapbox.github.io/dr-ui/components/#navigationaccordion).
+  - Add option to add `OverviewHeader` component to the page by passing the component's properties in the frontMatter. When `overviewHeader` is defined in the frontMatter, then the title (h1) will not show on the page.
+  - Add filter functionality to `exampleIndex` layout. All page cards will be displayed in order of the `order` frontMatter property and then alphabetically by title. Filters will automatically appear for topics, levels, languages, and video if the pages have at least more than one unique option for each filter category. Filter selections are pushed to the query param and are set by a rendered query string.
+- Update `Feedback` component.
+  - Remove background color and use `AsideHeading` component to style the component's heading.
+- Update `docs-prose.css`.
+  - You can now use `.unprose` class on `#docs-content h2` elements to remove the styling.
+  - Add `sticky-mxl` and `scroll-auto-mxl` classes to enable a sticky position and scrolling on displays >= 1200 pixels.
+- 🚨 Rename `ExamplePage` component to `HelpPage` to better reflect that the component will display tutorial and troubleshooting page cards for Help pages. Adds `data` prop that accepts JSON to display cards.
+- 🚨 Update Batfish helpers:
+  - 🚨 Remove `topics` Batfish helper and replace with `filters`.
+  - 🚨 Remove `formatTopics` Batfish helper. Use the `HelpPage` component.
+  - 🚨 Remove `accordion` object from `navigation` and moved the dataset into `navTabs` as `pages` array.
+  - 🚨 Add `addPages` parameter to `buildNavigation` helper function to support appending arbitrary items to site navigation.
+  - 🚨 Switches to named parameters for `buildNavigation`.
+- Add `small` prop and variant to `Tag`.
+- Remove truncation on `ProductMenu` and moves tag above the title.
+- Replace bottom `Feedback` component on examples pages with an `Aside`.
+- Allow passing children to the `ExamplesIndex` component.
+- Add theming options to `OverviewHeader`: `theme` to accept CSS classes to customize the container, `lightText` to enable white text, `description` to add a text description. The `features` prop is now optional.
+- 🚨Deprecate `GlossaryCard`, `GlossaryPage`, and `GlossarySection` components.
+- Improve color contrast on `LevelIndicator`.
+
 ## 1.3.0
 
 - Add new props to `Search` to allow further customization by other subdomains. [#329](https://github.com/mapbox/dr-ui/pull/329)

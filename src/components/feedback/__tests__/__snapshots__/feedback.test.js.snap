@@ -2,64 +2,60 @@
 
 exports[`feedback Basic renders as expected 1`] = `
 <div
-  className="bg-gray-faint py12 px18 round color-gray"
+  className="dr-ui--feedback"
 >
   <div>
-    <div>
-      <div
-        className="mb6"
-      >
-        Was this 
-        page
-         helpful?
-      </div>
-      <button
-        className="btn btn--s"
-        id="dr-ui--feedback-lnglat-yes"
-        onClick={[Function]}
-      >
-        Yes
-      </button>
-      <button
-        className="btn btn--s ml6"
-        id="dr-ui--feedback-lnglat-no"
-        onClick={[Function]}
-      >
-        No
-      </button>
-    </div>
+    <h2
+      className="unprose txt-m txt-bold mb6"
+    >
+      Was this 
+      page
+       helpful?
+    </h2>
+    <button
+      className="btn btn--s"
+      id="dr-ui--feedback-lnglat-yes"
+      onClick={[Function]}
+    >
+      Yes
+    </button>
+    <button
+      className="btn btn--s ml6"
+      id="dr-ui--feedback-lnglat-no"
+      onClick={[Function]}
+    >
+      No
+    </button>
   </div>
 </div>
 `;
 
 exports[`feedback Change type renders as expected 1`] = `
 <div
-  className="bg-gray-faint py12 px18 round color-gray"
+  className="dr-ui--feedback"
 >
   <div>
-    <div>
-      <div
-        className="mb6"
-      >
-        Was this 
-        section
-         helpful?
-      </div>
-      <button
-        className="btn btn--s"
-        id="dr-ui--feedback-page-yes"
-        onClick={[Function]}
-      >
-        Yes
-      </button>
-      <button
-        className="btn btn--s ml6"
-        id="dr-ui--feedback-page-no"
-        onClick={[Function]}
-      >
-        No
-      </button>
-    </div>
+    <h2
+      className="unprose txt-m txt-bold mb6"
+    >
+      Was this 
+      section
+       helpful?
+    </h2>
+    <button
+      className="btn btn--s"
+      id="dr-ui--feedback-page-yes"
+      onClick={[Function]}
+    >
+      Yes
+    </button>
+    <button
+      className="btn btn--s ml6"
+      id="dr-ui--feedback-page-no"
+      onClick={[Function]}
+    >
+      No
+    </button>
   </div>
 </div>
 `;

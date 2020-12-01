@@ -532,7 +532,7 @@ exports[`note A note to flag information about a beta release/product renders as
         }
       >
         <use
-          xlinkHref="#icon-marker"
+          xlinkHref="#icon-lightning"
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>

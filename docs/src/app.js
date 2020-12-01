@@ -15,11 +15,12 @@ export default class App extends React.Component {
     const componentEls = Object.keys(categories).map((category) => {
       return (
         <div key={category}>
-          <h2 className="txt-fancy txt-h3" id={category.toLowerCase()}>
+          <h2 className="txt-fancy txt-h3 anchor" id={category.toLowerCase()}>
             {category}
           </h2>
-          {categories[category].sort().map((comp) => {
+          {categories[category].map((comp) => {
             const component = components.filter((f) => f.name === comp)[0];
+            if (!component) return;
             return (
               <div
                 key={component.name}

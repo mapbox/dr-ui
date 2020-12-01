@@ -1,7 +1,7 @@
 ---
 title: Guides
 description: Guides to building sites with Dr. UI.
-layout: accordion
+layout: page
 navOrder: 2
 order: 1
 contentType: guide

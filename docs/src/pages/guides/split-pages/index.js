@@ -3,9 +3,8 @@ title: Split pages
 description: This is the first section
 splitPages: true
 order: 3
-layout: accordion
+layout: page
 contentType: API
-hideFeedback: true
 ---*/
 
 import React from 'react';

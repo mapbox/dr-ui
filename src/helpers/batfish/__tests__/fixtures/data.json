@@ -6,17 +6,47 @@
       "frontMatter": {}
     },
     {
+      "filePath": "./docs/src/pages/components/index.md",
+      "path": "/dr-ui/components/",
+      "frontMatter": {
+        "title": "Components",
+        "description": "UI components for Mapbox documentation projects.",
+        "navOrder": 1,
+        "layout": "page",
+        "contentType": "reference",
+        "products": ["Documentation"],
+        "unProse": true,
+        "prependJs": [
+          "import Note from '../../../../src/components/note'",
+          "import App from '../../app.js'"
+        ],
+        "overviewHeader": {
+          "title": "Dr. UI",
+          "features": [
+            "React components to build documentation sites",
+            "Support for IE 11 and all modern browsers"
+          ],
+          "changelogLink": "/dr-ui/changelog/",
+          "installLink": "https://github.com/mapbox/dr-ui/blob/main/README.md",
+          "ghLink": "https://github.com/mapbox/dr-ui",
+          "theme": "bg-purple-faint"
+        }
+      }
+    },
+    {
       "filePath": "./docs/src/pages/examples/example-1.md",
       "path": "/dr-ui/examples/example-1/",
       "frontMatter": {
         "title": "Example 1",
         "description": "This is example 1.",
         "contentType": "example",
-        "language": ["JavaScript"],
+        "language": ["JavaScript", "Kotlin"],
         "topics": ["Navigation"],
+        "level": 1,
         "thumbnail": "header-image",
         "layout": "example",
-        "products": ["Documentation"]
+        "video": true,
+        "products": ["Documentation", "Mapbox Tiling Service"]
       }
     },
     {
@@ -28,6 +58,7 @@
         "contentType": "example",
         "language": ["JavaScript"],
         "topics": ["Navigation"],
+        "level": 2,
         "thumbnail": "header-image",
         "layout": "example",
         "products": ["Documentation"]
@@ -40,11 +71,40 @@
         "title": "Example 3",
         "description": "This is example 3.",
         "contentType": "example",
-        "language": ["JavaScript"],
+        "language": ["Swift"],
         "topics": ["Navigation", "Geocoding"],
+        "level": 3,
         "thumbnail": "header-image",
         "layout": "example",
         "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/examples/example-4.md",
+      "path": "/dr-ui/examples/example-4/",
+      "frontMatter": {
+        "title": "Quickstart",
+        "description": "Get started with this example.",
+        "contentType": "example",
+        "language": ["JavaScript", "Kotlin"],
+        "topics": ["Getting started"],
+        "thumbnail": "header-image",
+        "layout": "example",
+        "products": ["Documentation", "Mapbox Tiling Service"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/examples/example-5.md",
+      "path": "/dr-ui/examples/example-5/",
+      "frontMatter": {
+        "title": "Another example",
+        "description": "This is another example.",
+        "contentType": "example",
+        "language": ["JavaScript"],
+        "topics": ["Navigation"],
+        "thumbnail": "header-image",
+        "layout": "example",
+        "products": ["Documentation", "Mapbox Tiling Service"]
       }
     },
     {
@@ -57,8 +117,6 @@
         "language": ["JavaScript"],
         "navOrder": 3,
         "layout": "example",
-        "fullWidthCards": true,
-        "hideTitle": true,
         "products": ["Documentation"]
       }
     },
@@ -70,15 +128,12 @@
         "description": "Batfish data selector functions to build navigation and topic datasets.",
         "order": 2,
         "contentType": "guide",
-        "hideFeedback": true,
-        "layout": "accordion",
+        "layout": "page",
         "products": ["Documentation"],
         "prependJs": [
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
-          "import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line",
-          "import splitPages from '@mapbox/batfish/data/split-pages'; // eslint-disable-line",
-          "import relatedMts from '../../../../src/helpers/batfish/__tests__/fixtures/related-mts.json';",
-          "import relatedAndroid from '../../../../src/helpers/batfish/__tests__/fixtures/related-android.json';"
+          "import topics from '@mapbox/batfish/data/filters'; // eslint-disable-line",
+          "import splitPages from '@mapbox/batfish/data/split-pages'; // eslint-disable-line"
         ]
       }
     },
@@ -88,7 +143,7 @@
       "frontMatter": {
         "title": "Guides",
         "description": "Guides to building sites with Dr. UI.",
-        "layout": "accordion",
+        "layout": "page",
         "navOrder": 2,
         "order": 1,
         "contentType": "guide",
@@ -102,8 +157,7 @@
         "title": "Multi-structured sites",
         "description": "How to build a site with more than one product.",
         "order": 4,
-        "layout": "accordion",
-        "hideFeedback": true,
+        "layout": "page",
         "contentType": "guide",
         "products": ["Documentation"]
       }
@@ -115,8 +169,7 @@
         "title": "PageLayout component",
         "description": "All about building with PageLayout.",
         "order": 3,
-        "layout": "accordion",
-        "hideFeedback": true,
+        "layout": "page",
         "contentType": "guide",
         "products": ["Documentation"],
         "prependJs": [
@@ -125,10 +178,9 @@
           "import OtherProps from '../../components/other-props.js';",
           "import LayoutUsage from '../../components/layout-usage.js';",
           "import frontmatter from '!raw-loader!../../components/snippets/frontmatter.js';// eslint-disable-line",
-          "import Topbar from '../../../../src/components/page-layout/components/topbar.js';",
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
-          "import constants from '../../constants.json';",
-          "import Note from '../../../../src/components/note';"
+          "import Note from '../../../../src/components/note';",
+          "import { filterOptions } from '../../../../src/components/page-layout/components/example-index';"
         ]
       }
     },
@@ -140,9 +192,8 @@
         "description": "This is the first section",
         "splitPages": true,
         "order": 3,
-        "layout": "accordion",
-        "contentType": "API",
-        "hideFeedback": true
+        "layout": "page",
+        "contentType": "API"
       }
     },
     {
@@ -207,41 +258,9 @@
       }
     },
     {
-      "filePath": "./docs/src/pages/help/index.md",
-      "path": "/dr-ui/help/",
-      "frontMatter": {
-        "title": "Help",
-        "description": "Example of a Help page.",
-        "contentType": "example",
-        "navOrder": 4,
-        "layout": "example",
-        "fullWidthCards": true,
-        "hideTitle": true,
-        "products": ["Documentation"]
-      }
-    },
-    {
-      "filePath": "./docs/src/pages/index.md",
+      "filePath": "./docs/src/pages/index.js",
       "path": "/dr-ui/",
-      "frontMatter": {
-        "title": "Components",
-        "description": "UI components for Mapbox documentation projects.",
-        "navOrder": 1,
-        "layout": "example",
-        "contentType": "reference",
-        "products": ["Documentation"],
-        "hideSubItems": false,
-        "showCards": false,
-        "includeFilterBar": true,
-        "hideTitle": true,
-        "unProse": true,
-        "prependJs": [
-          "import Note from '../../../src/components/note'",
-          "import OverviewHeader from '../../../src/components/overview-header'",
-          "import App from '../app.js'",
-          "const version = require('../../../package.json').version; // eslint-disable-line"
-        ]
-      }
+      "frontMatter": {}
     },
     {
       "filePath": "./node_modules/@mapbox/batfish/dist/webpack/default-not-found.js",

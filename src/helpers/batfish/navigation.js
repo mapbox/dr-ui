@@ -1,10 +1,12 @@
 // creates a page hierarchy based on top navigation item (as dictated by frontMatter.navOrder)
 // see: https://mapbox.github.io/dr-ui/batfish-helpers/
+const slugify = require('slugify');
 
-function buildNavigation(siteBasePath, data, sections) {
+function buildNavigation({ siteBasePath, data, sections, addPages }) {
   let obj = {};
   // get page data ready to be organized
-  const pages = formatPages(siteBasePath, data, sections);
+  let pages = formatPages(siteBasePath, data, sections);
+  if (addPages) pages = pages.concat(addPages);
   // if sections are defined, organize by sections first to build a multi-structured structure
   if (sections) {
     obj = buildMultiLevels(sections, pages);
@@ -12,7 +14,6 @@ function buildNavigation(siteBasePath, data, sections) {
     // otherwise build a single structure
     const organized = organizePages(pages);
     obj.navTabs = buildNavTabs(organized);
-    obj.accordion = buildAccordion(organized);
     obj.hierarchy = buildHierarchy(organized);
   }
   return obj;
@@ -60,6 +61,7 @@ function organizePages(pages) {
     obj[parent.path] = {
       navOrder: parent.navOrder,
       title: parent.title,
+      ...(parent.hideSubpages && { hideSubpages: parent.hideSubpages }),
       pages: findChildren(pages, parent)
     };
     return obj;
@@ -83,6 +85,9 @@ function formatPages(siteBasePath, data, sections) {
       ...(sections && { section: findSection(siteBasePath, p, sections) }),
       ...(p.frontMatter.splitPage && { splitPage: p.frontMatter.splitPage }),
       ...(p.frontMatter.splitPages && { splitPages: p.frontMatter.splitPages }),
+      ...(p.frontMatter.hideSubpages && {
+        hideSubpages: p.frontMatter.hideSubpages
+      }),
       ...(p.frontMatter.hideFromNav && {
         hideFromNav: p.frontMatter.hideFromNav
       })
@@ -92,14 +97,15 @@ function formatPages(siteBasePath, data, sections) {
 function buildMultiLevels(sections, pages) {
   return sections.reduce(
     (obj, section) => {
-      const sectionPages = pages.filter((f) => f.section === section.path);
+      let sectionPages = pages.filter((f) => f.section === section.path);
+      if (section.addPages)
+        sectionPages = sectionPages.concat(section.addPages);
       const organized = organizePages(sectionPages);
       obj[section.path] = {
         path: section.path,
         title: section.title,
         ...(section.tag && { tag: section.tag }),
-        navTabs: buildNavTabs(organized, section),
-        accordion: buildAccordion(organized)
+        navTabs: buildNavTabs(organized)
       };
 
       obj.hierarchy = Object.assign(
@@ -113,34 +119,46 @@ function buildMultiLevels(sections, pages) {
 }
 
 function buildNavTabs(organized) {
-  return Object.keys(organized).map((path) => {
+  const navTabs = Object.keys(organized).map((path) => {
+    const isExternal = isUrlExternal(path);
     return {
-      label: organized[path].title,
-      id: path,
-      href: path
+      ...organized[path],
+      title: organized[path].title,
+      id: slugify(organized[path].title, {
+        replacement: '-',
+        lower: true
+      }),
+      path: path,
+      ...(isExternal && {
+        external: true
+      })
     };
   });
+
+  return navTabs.reduce((arr, tab) => {
+    arr.push({
+      ...tab,
+      pages: subPageSorter(
+        organized[tab.path].pages.filter(
+          (f) =>
+            f.path !== tab.path &&
+            f.layout === 'page' &&
+            !f.navOrder &&
+            !f.hideFromNav &&
+            !f.splitPage
+        )
+      )
+    });
+    return arr;
+  }, []);
 }
 
-function buildAccordion(organized) {
-  return Object.keys(organized).reduce((obj, path) => {
-    const pages = organized[path].pages.filter(
-      (f) => !f.hideFromNav && f.layout === 'accordion'
-    );
-    const sortedPages = accordionSorter(pages);
-    if (sortedPages.length > 0) {
-      obj[path] = sortedPages.map((p) => ({
-        title: p.title,
-        path: p.path,
-        ...(p.tag && { tag: p.tag }),
-        ...(p.customTagProps && { customTagProps: p.customTagProps })
-      }));
-    }
-    return obj;
-  }, {});
+function isUrlExternal(url) {
+  const re = new RegExp('^(http|https)://', 'i');
+  return re.test(url);
 }
 
-function accordionSorter(arr) {
+function subPageSorter(arr) {
   const formatted = arr.map((item) => ({
     ...item,
     // assign an empty string if there is no title
@@ -168,5 +186,6 @@ function sortAlpha(arr) {
 
 module.exports = {
   buildNavigation,
-  findSection
+  findSection,
+  sortAlpha
 };

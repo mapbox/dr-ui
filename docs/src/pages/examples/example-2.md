@@ -6,6 +6,7 @@ language:
   - JavaScript
 topics:
   - Navigation
+level: 2
 thumbnail: header-image
 layout: example
 products:

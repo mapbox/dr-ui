@@ -30,10 +30,7 @@ export default class FrontMatter extends React.Component {
                   <tr key={opt}>
                     <td>{opt}</td>
                     <td>
-                      {val.name}{' '}
-                      {val.value
-                        ? `(${val.value.map((v) => v.value).join(', ')})`
-                        : ''}
+                      {val.name} {JSON.stringify(val.value)}
                     </td>
                     <td>{val.required ? 'TRUE' : 'FALSE'}</td>
                   </tr>

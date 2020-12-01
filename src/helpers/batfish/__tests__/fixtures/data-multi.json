@@ -79,7 +79,7 @@
         "description": "How to store constants in your repository.",
         "contentType": "reference",
         "order": 5,
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -93,7 +93,7 @@
         "order": 6,
         "beta": ["A beta section"],
         "tag": "fundamentals",
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -107,7 +107,7 @@
         "prependJs": [
           "import AppropriateImage from '../../../components/appropriate-image';"
         ],
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -121,7 +121,7 @@
           "import OverviewHeader from '@mapbox/dr-ui/overview-header';",
           "import AppropriateImage from '../../../components/appropriate-image';"
         ],
-        "layout": "accordion",
+        "layout": "page",
         "order": 1,
         "navOrder": 1,
         "contentType": "guide"
@@ -135,7 +135,7 @@
         "description": "Learn about different layout options.",
         "contentType": "guide",
         "order": 2,
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -146,7 +146,7 @@
         "description": "How to add pages to the top and side navigation.",
         "contentType": "guide",
         "order": 3,
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -230,7 +230,7 @@
         "description": "How to store constants in your repository.",
         "contentType": "reference",
         "order": 5,
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -244,7 +244,7 @@
         "order": 6,
         "beta": ["A beta section"],
         "tag": "fundamentals",
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -258,7 +258,7 @@
         "prependJs": [
           "import AppropriateImage from '../../../components/appropriate-image';"
         ],
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -272,7 +272,7 @@
           "import OverviewHeader from '@mapbox/dr-ui/overview-header';",
           "import AppropriateImage from '../../../components/appropriate-image';"
         ],
-        "layout": "accordion",
+        "layout": "page",
         "order": 1,
         "navOrder": 1,
         "contentType": "guide"
@@ -286,7 +286,7 @@
         "description": "Learn about different layout options.",
         "contentType": "guide",
         "order": 2,
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -297,7 +297,7 @@
         "description": "How to add pages to the top and side navigation.",
         "contentType": "guide",
         "order": 3,
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -381,7 +381,7 @@
         "description": "How to store constants in your repository.",
         "contentType": "reference",
         "order": 5,
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -395,7 +395,7 @@
         "order": 6,
         "beta": ["A beta section"],
         "tag": "fundamentals",
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -409,7 +409,7 @@
         "prependJs": [
           "import AppropriateImage from '../../../components/appropriate-image';"
         ],
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -423,7 +423,7 @@
           "import OverviewHeader from '@mapbox/dr-ui/overview-header';",
           "import AppropriateImage from '../../../components/appropriate-image';"
         ],
-        "layout": "accordion",
+        "layout": "page",
         "order": 1,
         "navOrder": 1,
         "contentType": "guide"
@@ -437,7 +437,7 @@
         "description": "Learn about different layout options.",
         "contentType": "guide",
         "order": 2,
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -448,7 +448,7 @@
         "description": "How to add pages to the top and side navigation.",
         "contentType": "guide",
         "order": 3,
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -532,7 +532,7 @@
         "description": "How to store constants in your repository.",
         "contentType": "reference",
         "order": 5,
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -546,7 +546,7 @@
         "order": 6,
         "beta": ["A beta section"],
         "tag": "fundamentals",
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -560,7 +560,7 @@
         "prependJs": [
           "import AppropriateImage from '../../../../components/appropriate-image';"
         ],
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -574,7 +574,7 @@
           "import OverviewHeader from '@mapbox/dr-ui/overview-header';",
           "import AppropriateImage from '../../../../components/appropriate-image';"
         ],
-        "layout": "accordion",
+        "layout": "page",
         "order": 1,
         "navOrder": 1,
         "contentType": "guide"
@@ -588,7 +588,7 @@
         "description": "Learn about different layout options.",
         "contentType": "guide",
         "order": 2,
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {
@@ -599,7 +599,7 @@
         "description": "How to add pages to the top and side navigation.",
         "contentType": "guide",
         "order": 3,
-        "layout": "accordion"
+        "layout": "page"
       }
     },
     {

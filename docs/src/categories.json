@@ -26,11 +26,8 @@
   ],
   "Layout": [
     "PageLayout",
+    "OnThisPage",
     "BackToTopButton",
-    "GlossaryCard",
-    "GlossaryImage",
-    "GlossaryPage",
-    "GlossarySection",
     "OverviewHeader",
     "NavigationAccordion",
     "NavigationDropdown",
@@ -40,7 +37,8 @@
     "TopbarSticker",
     "Card",
     "CardContainer",
-    "ExamplesPage",
+    "HelpPage",
+    "Breadcrumb",
     "AnalyticsShell",
     "ErrorBoundary"
   ],
@@ -49,6 +47,7 @@
     "BookletImage",
     "ContactImage",
     "ExampleImage",
+    "GlossaryImage",
     "PlaygroundImage",
     "TroubleshootImage"
   ]
