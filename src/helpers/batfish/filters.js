@@ -64,10 +64,15 @@ function generateTopics(pages) {
       }, [])
     )
   ].sort();
-  // check if "Getting started" topic exists
-  const index = topics.indexOf('Getting started');
-  // if "Getting started" exists, splice the array, and move "Getting started" to the front of the list
-  return index > -1 ? [...topics.splice(index, 1), ...topics] : topics;
+  // check if "Getting started" topic exists (en and jp)
+  const indexEn = topics.indexOf('Getting started');
+  const indexJp = topics.indexOf('まず始めに');
+  // if exists, splice the array, and move "Getting started/まず始めに" to the front of the list
+  return [
+    ...(indexEn > -1 ? [...topics.splice(indexEn, 1)] : []),
+    ...(indexJp > -1 ? [...topics.splice(indexJp, 1)] : []),
+    ...topics
+  ];
 }
 
 function hasTopic(page, topic) {

@@ -123,6 +123,25 @@ describe('generateTopics', () => {
       ])
     ).toEqual(['Carrot', 'Cucumber', 'Radish']);
   });
+
+  it('sorted and unique, jp', () => {
+    expect(
+      generateTopics([
+        {
+          topic: 'データの可視化'
+        },
+        {
+          topics: ['データの可視化', 'Webアプリ']
+        },
+        {
+          topics: ['まず始めに', 'カメラ']
+        },
+        {
+          topic: 'まず始めに'
+        }
+      ])
+    ).toEqual(['まず始めに', 'Webアプリ', 'カメラ', 'データの可視化']);
+  });
 });
 
 describe('pageSorter', () => {
