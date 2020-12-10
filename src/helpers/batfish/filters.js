@@ -2,6 +2,11 @@
 // see: https://mapbox.github.io/dr-ui/batfish-helpers/#filters
 const { sortAlpha } = require('./navigation');
 
+const gettingStarted = {
+  en: 'Getting started',
+  jp: 'まず始めに'
+};
+
 function buildFilters(data) {
   // format page data
   const pages = data.pages
@@ -64,10 +69,15 @@ function generateTopics(pages) {
       }, [])
     )
   ].sort();
-  // check if "Getting started" topic exists
-  const index = topics.indexOf('Getting started');
-  // if "Getting started" exists, splice the array, and move "Getting started" to the front of the list
-  return index > -1 ? [...topics.splice(index, 1), ...topics] : topics;
+  // check if "Getting started" topic exists (en and jp)
+  const indexEn = topics.indexOf(gettingStarted.en);
+  const indexJp = topics.indexOf(gettingStarted.jp);
+  // if exists, splice the array, and move "Getting started/まず始めに" to the front of the list
+  return [
+    ...(indexEn > -1 ? [...topics.splice(indexEn, 1)] : []),
+    ...(indexJp > -1 ? [...topics.splice(indexJp, 1)] : []),
+    ...topics
+  ];
 }
 
 function hasTopic(page, topic) {
@@ -86,18 +96,22 @@ function sortBy(arr, prop) {
 // 2. By `level`, if it exists. This will make sure that beginner level tutorials will appear first on the tutorials page.
 // 3. All remaining pages are sorted alphabetically by title.
 function pageSorter(pages) {
-  const withTopic = pages.filter((page) => hasTopic(page, 'Getting started'));
+  const withTopicEn = pages.filter((page) => hasTopic(page, gettingStarted.en));
+  const withTopicJp = pages.filter((page) => hasTopic(page, gettingStarted.jp));
+  const notGettingStarted = (page) =>
+    !hasTopic(page, gettingStarted.en) && !hasTopic(page, gettingStarted.jp);
   // exclude withTopic values
-  const withLevel = pages
-    .filter((x) => !withTopic.includes(x))
-    .filter((page) => page.level && !hasTopic(page, 'Getting started'));
+  const withLevel = pages.filter(
+    (page) => page.level && notGettingStarted(page)
+  );
   // exclude withTopic and withLevel values
-  const theRest = pages
-    .filter((x) => !withLevel.includes(x) && !withTopic.includes(x))
-    .filter((page) => !page.level && !hasTopic(page, 'Getting started'));
+  const theRest = pages.filter(
+    (page) => !page.level && notGettingStarted(page)
+  );
   return [
     // add items with topic
-    ...withTopic,
+    ...withTopicEn,
+    ...withTopicJp,
     // add items with level and sort them by level
     ...sortBy(withLevel, 'level'),
     // add all other items and sort them alphabetically by title

@@ -123,6 +123,25 @@ describe('generateTopics', () => {
       ])
     ).toEqual(['Carrot', 'Cucumber', 'Radish']);
   });
+
+  it('sorted and unique, jp', () => {
+    expect(
+      generateTopics([
+        {
+          topic: 'データの可視化'
+        },
+        {
+          topics: ['データの可視化', 'Webアプリ']
+        },
+        {
+          topics: ['まず始めに', 'カメラ']
+        },
+        {
+          topic: 'まず始めに'
+        }
+      ])
+    ).toEqual(['まず始めに', 'Webアプリ', 'カメラ', 'データの可視化']);
+  });
 });
 
 describe('pageSorter', () => {
@@ -130,7 +149,8 @@ describe('pageSorter', () => {
     expect(
       pageSorter([
         {
-          title: 'Donkey'
+          title: 'Donkey',
+          topic: '3D'
         },
         {
           title: 'Spider Monkey',
@@ -138,7 +158,8 @@ describe('pageSorter', () => {
         },
         {
           title: 'Zebra',
-          topic: 'Getting started'
+          topic: 'Getting started',
+          level: 3
         },
         {
           title: 'Zedonk',
@@ -150,25 +171,44 @@ describe('pageSorter', () => {
         }
       ])
     ).toEqual([
-      {
-        title: 'Zebra',
-        topic: 'Getting started'
-      },
-      {
-        title: 'Zedonk',
-        topics: ['Getting started']
-      },
-      {
-        title: 'Spider Monkey',
-        level: 1
-      },
-      {
-        title: 'Giraffe',
-        level: 3
-      },
-      {
-        title: 'Donkey'
-      }
+      { title: 'Zebra', topic: 'Getting started', level: 3 },
+      { title: 'Zedonk', topics: ['Getting started'] },
+      { level: 1, title: 'Spider Monkey' },
+      { level: 3, title: 'Giraffe' },
+      { title: 'Donkey', topic: '3D' }
+    ]);
+  });
+
+  it('works, jp', () => {
+    expect(
+      pageSorter([
+        {
+          title: 'Donkey',
+          topic: 'Webアプリ'
+        },
+        {
+          title: 'Spider Monkey',
+          level: 1
+        },
+        {
+          title: 'Zebra',
+          topic: 'まず始めに'
+        },
+        {
+          title: 'Zedonk',
+          topics: ['まず始めに']
+        },
+        {
+          title: 'Giraffe',
+          level: 3
+        }
+      ])
+    ).toEqual([
+      { title: 'Zebra', topic: 'まず始めに' },
+      { title: 'Zedonk', topics: ['まず始めに'] },
+      { level: 1, title: 'Spider Monkey' },
+      { level: 3, title: 'Giraffe' },
+      { title: 'Donkey', topic: 'Webアプリ' }
     ]);
   });
 });
