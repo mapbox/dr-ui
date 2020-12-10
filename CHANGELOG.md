@@ -1,5 +1,9 @@
 # Changelog
 
+## Main
+
+- Update the filter Batfish helper to sort "まず始めに" (Getting started) to start of the topic list. [#381](https://github.com/mapbox/dr-ui/pull/381).
+
 ## 2.0.0
 
 - Add `Breadcrumb` component. This component is included as a feature in `PageLayout`. [#331](https://github.com/mapbox/dr-ui/pull/331).
