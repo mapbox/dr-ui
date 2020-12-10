@@ -1,6 +1,6 @@
 # Changelog
 
-## Main
+## 2.1.0
 
 - Update the filter Batfish helper to sort "まず始めに" (Getting started) to start of the topic list. [#381](https://github.com/mapbox/dr-ui/pull/381).
 
