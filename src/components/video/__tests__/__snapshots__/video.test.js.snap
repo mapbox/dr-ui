@@ -7,7 +7,7 @@ exports[`video Basic renders as expected 1`] = `
     className="block mx-auto"
     loop={true}
     muted={true}
-    src="/files/browser-example.mp4"
+    src="../files/browser-example.mp4"
     title="A video!"
     type="video/mp4"
     width="100%"
@@ -16,7 +16,7 @@ exports[`video Basic renders as expected 1`] = `
       Your browser doesn't support HTML5 video. Here is a
        
       <a
-        href="/files/browser-example.mp4"
+        href="../files/browser-example.mp4"
       >
         link to the video
       </a>
@@ -32,7 +32,7 @@ exports[`video Reduced motion renders as expected 1`] = `
     className="block mx-auto"
     controls={true}
     muted={true}
-    src="/files/browser-example.mp4"
+    src="../files/browser-example.mp4"
     title="A video!"
     type="video/mp4"
     width="100%"
@@ -41,7 +41,7 @@ exports[`video Reduced motion renders as expected 1`] = `
       Your browser doesn't support HTML5 video. Here is a
        
       <a
-        href="/files/browser-example.mp4"
+        href="../files/browser-example.mp4"
       >
         link to the video
       </a>

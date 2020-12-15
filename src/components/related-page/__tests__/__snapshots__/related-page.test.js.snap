@@ -876,7 +876,7 @@ exports[`related-page video renders as expected 1`] = `
           <img
             alt=""
             className="w-full block round h-full mb24 mb0-ml"
-            src="/files/vimeo_thumb.jpg"
+            src="../files/vimeo_thumb.jpg"
           />
         </div>
         <div
