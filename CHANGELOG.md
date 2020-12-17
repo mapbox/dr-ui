@@ -1,6 +1,6 @@
 # Changelog
 
-## Main
+## 2.1.2
 
 - Remove `mbxMetadata` when the component unmounts in `AnalyticsShell`. [#383](https://github.com/mapbox/dr-ui/pull/383).
 
