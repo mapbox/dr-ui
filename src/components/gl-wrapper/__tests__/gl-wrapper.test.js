@@ -3,10 +3,17 @@ import { testCases } from './gl-wrapper-test-cases.js';
 
 describe('gl-wrapper', () => {
   describe(testCases.basic.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.basic;
+      wrapper = renderer.create(testCase.element);
+      tree = wrapper.toJSON();
+    });
+
     test('renders as expected', () => {
-      const testCase = testCases.basic;
-      const wrapper = renderer.create(testCase.element);
-      const tree = wrapper.toJSON();
       expect(tree).toMatchSnapshot();
     });
   });
