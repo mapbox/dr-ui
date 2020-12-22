@@ -9,13 +9,5 @@ describe('gl-wrapper', () => {
       const tree = wrapper.toJSON();
       expect(tree).toMatchSnapshot();
     });
-
-    test('renders IE 11 message', () => {
-      global.document.documentMode = 11;
-      const testCase = testCases.basic;
-      const wrapper = renderer.create(testCase.element);
-      const tree = wrapper.toJSON();
-      expect(tree).toMatchSnapshot();
-    });
   });
 });
