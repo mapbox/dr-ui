@@ -30,6 +30,13 @@ export default class AnalyticsShell extends React.Component {
     }
   }
 
+  componentWillUnmount() {
+    // remove mapbox metadata when the component unmounts
+    // this helps prevent unwanted data from being pushed to Segment
+    // if the component doesn't mount properly
+    if (window.mbxMetadata) window.mbxMetadata = undefined;
+  }
+
   render() {
     const { location, children, domain } = this.props;
     return (

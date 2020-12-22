@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.0
+
+- Remove `mbxMetadata` when the component unmounts in `AnalyticsShell`. [#383](https://github.com/mapbox/dr-ui/pull/383).
+
 ## 2.1.1
 
 - Fix `pageSorter` function in filter Batfish helper to sort "まず始めに" (Getting started) to top of the list.
