@@ -1,5 +1,9 @@
 # Changelog
 
+## Main
+
+- Update `GlWrapper` component to check for Internet Explorer and provide reason for when the issue is not Internet Explorer or WebGL support. [#387](https://github.com/mapbox/dr-ui/pull/387)
+
 ## 2.2.0
 
 - Remove `mbxMetadata` when the component unmounts in `AnalyticsShell`. [#383](https://github.com/mapbox/dr-ui/pull/383).

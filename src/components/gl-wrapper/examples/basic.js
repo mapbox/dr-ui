@@ -6,6 +6,6 @@ import GLWrapper from '../gl-wrapper';
 
 export default class Basic extends React.Component {
   render() {
-    return <GLWrapper>Your browser has GL enabled!</GLWrapper>;
+    return <GLWrapper>Your browser supports Mapbox GL!</GLWrapper>;
   }
 }
