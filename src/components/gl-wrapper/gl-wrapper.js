@@ -49,7 +49,7 @@ export default class GLWrapper extends React.Component {
   };
 
   determineReason = () => {
-    const reason = notSupportedReason();
+    const reason = this.props.reason ? this.props.reason : notSupportedReason();
     if (reason === 'insufficient ECMAScript 6 support')
       return this.renderIEMessage();
     if (reason === 'insufficient WebGL support') return this.renderGLMessage();
@@ -69,5 +69,8 @@ export default class GLWrapper extends React.Component {
 }
 
 GLWrapper.propTypes = {
-  children: PropTypes.node.isRequired
+  /* The content that should be displayed if the browser supports Mapbox GL. */
+  children: PropTypes.node.isRequired,
+  /* Override the GL supported reason (often used for testing). */
+  reason: PropTypes.string
 };
