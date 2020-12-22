@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import supported from '@mapbox/mapbox-gl-supported';
+import { supported, notSupportedReason } from '@mapbox/mapbox-gl-supported';
 import Note from '../note';
 
 export default class GLWrapper extends React.Component {
@@ -47,16 +47,22 @@ export default class GLWrapper extends React.Component {
       </React.Fragment>
     );
   };
+
+  determineReason = () => {
+    const reason = notSupportedReason();
+    if (reason === 'insufficient ECMAScript 6 support')
+      return this.renderIEMessage();
+    if (reason === 'insufficient WebGL support') return this.renderGLMessage();
+    else return `Mapbox GL is unsupported due to ${reason}.`;
+  };
   render() {
     // wait for supported() to push to state
     if (this.state.supported === undefined) return <div />;
-    const isIe11 =
-      typeof window !== 'undefined' && window.document.documentMode;
     return this.state.supported ? (
       this.props.children
     ) : (
       <Note title="Mapbox GL unsupported" theme="warning">
-        {isIe11 ? this.renderIEMessage() : this.renderGLMessage()}
+        {this.determineReason()}
       </Note>
     );
   }

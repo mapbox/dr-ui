@@ -88,23 +88,7 @@ exports[`demo-iframe Basic renders as expected 1`] = `
     >
       Mapbox GL unsupported
     </div>
-    Mapbox GL requires
-     
-    <a
-      className="link"
-      href="https://caniuse.com/#feat=webgl"
-    >
-      WebGL support
-    </a>
-    . Please check that you are using a supported browser and that
-     
-    <a
-      className="link"
-      href="https://get.webgl.org/"
-    >
-      WebGL is enabled
-    </a>
-    .
+    Mapbox GL is unsupported due to insufficient worker support.
   </div>
 </div>
 `;
@@ -159,23 +143,7 @@ exports[`demo-iframe With token renders as expected 1`] = `
     >
       Mapbox GL unsupported
     </div>
-    Mapbox GL requires
-     
-    <a
-      className="link"
-      href="https://caniuse.com/#feat=webgl"
-    >
-      WebGL support
-    </a>
-    . Please check that you are using a supported browser and that
-     
-    <a
-      className="link"
-      href="https://get.webgl.org/"
-    >
-      WebGL is enabled
-    </a>
-    .
+    Mapbox GL is unsupported due to insufficient worker support.
   </div>
 </div>
 `;
