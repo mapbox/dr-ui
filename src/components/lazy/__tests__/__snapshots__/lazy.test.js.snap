@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Lazy Basic renders as expected 1`] = `
+<div
+  className="relative"
+  style={
+    Object {
+      "height": 500,
+    }
+  }
+>
+  <div
+    className="flex-parent flex-parent--center-cross flex-parent--center-main absolute top right bottom left bg-darken10 z5 round"
+  >
+    <div
+      className="flex-child loading"
+    />
+  </div>
+</div>
+`;
