@@ -5,7 +5,7 @@ exports[`Lazy Basic renders as expected 1`] = `
   className="relative"
   style={
     Object {
-      "height": 500,
+      "height": 30,
     }
   }
 >
