@@ -4,13 +4,13 @@ import ErrorBoundary from '../error-boundary/error-boundary';
 
 export default class Lazy extends React.PureComponent {
   render() {
-    const { height, component } = this.props;
+    const { lazyHeight, component } = this.props;
     const LazyLoadComponent = React.lazy(component);
     return (
       <ErrorBoundary>
         <Suspense
           fallback={
-            <div style={{ height: height }} className="relative">
+            <div style={{ height: lazyHeight }} className="relative">
               <div className="flex-parent flex-parent--center-cross flex-parent--center-main absolute top right bottom left bg-darken10 z5 round">
                 <div className="flex-child loading"></div>
               </div>
@@ -30,5 +30,5 @@ Lazy.propTypes = {
   Example: `component={() => import('../components/example.js')}`*/
   component: PropTypes.func.isRequired,
   /** Height of the component. This is needed to set the height of the loader to prevent content shift when the component loads. */
-  height: PropTypes.number.isRequired
+  lazyHeight: PropTypes.number.isRequired
 };
