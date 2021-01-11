@@ -67,7 +67,7 @@ exports[`Feedback character limit Character limit ok, user can submit feedback 1
         >
           <div
             className="absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s"
-            data-test="dr-ui--feedback-page-counter"
+            id="dr-ui--feedback-page-counter"
           >
             974
           </div>
@@ -78,8 +78,8 @@ exports[`Feedback character limit Character limit ok, user can submit feedback 1
       >
         <button
           className="btn btn--s mb6 mr12 inline-block"
-          data-test="dr-ui--feedback-page-submit"
           disabled={false}
+          id="dr-ui--feedback-page-submit"
           onClick={[Function]}
         >
           Send feedback
@@ -170,7 +170,7 @@ exports[`Feedback character limit Character limit too long, user cannot submit f
         >
           <div
             className="absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s color-red"
-            data-test="dr-ui--feedback-page-counter"
+            id="dr-ui--feedback-page-counter"
           >
             -340
           </div>
@@ -181,8 +181,8 @@ exports[`Feedback character limit Character limit too long, user cannot submit f
       >
         <button
           className="btn btn--s mb6 mr12 inline-block"
-          data-test="dr-ui--feedback-page-submit"
           disabled={true}
+          id="dr-ui--feedback-page-submit"
           onClick={[Function]}
         >
           Send feedback
@@ -193,7 +193,7 @@ exports[`Feedback character limit Character limit too long, user cannot submit f
         >
           <span
             className="color-red txt-s bg-red-faint round inline-block py3 px12"
-            data-test="dr-ui--feedback-page-overlimit"
+            id="dr-ui--feedback-page-overlimit"
           >
             <Icon
               inline={true}
@@ -282,8 +282,8 @@ exports[`Sent helpful rating snapshot snapshot 1`] = `
     >
       <button
         className="btn btn--s mb6 mr12 inline-block"
-        data-test="dr-ui--feedback-page-submit"
         disabled={true}
+        id="dr-ui--feedback-page-submit"
         onClick={[Function]}
       >
         Send feedback

@@ -2,7 +2,7 @@
 
 ## Main
 
-- Replace "id" with "data-test" in Feedback component.
+- Add `position` prop to `Feedback` component to identify place on page. [#390](https://github.com/mapbox/dr-ui/pull/390)
 
 ## 2.3.0
 

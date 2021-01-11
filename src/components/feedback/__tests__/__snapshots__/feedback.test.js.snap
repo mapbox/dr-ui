@@ -14,14 +14,14 @@ exports[`feedback Basic renders as expected 1`] = `
     </h2>
     <button
       className="btn btn--s"
-      data-test="dr-ui--feedback-lnglat-yes"
+      id="dr-ui--feedback-lnglat-yes"
       onClick={[Function]}
     >
       Yes
     </button>
     <button
       className="btn btn--s ml6"
-      data-test="dr-ui--feedback-lnglat-no"
+      id="dr-ui--feedback-lnglat-no"
       onClick={[Function]}
     >
       No
@@ -44,14 +44,14 @@ exports[`feedback Change type renders as expected 1`] = `
     </h2>
     <button
       className="btn btn--s"
-      data-test="dr-ui--feedback-page-yes"
+      id="dr-ui--feedback-page-yes"
       onClick={[Function]}
     >
       Yes
     </button>
     <button
       className="btn btn--s ml6"
-      data-test="dr-ui--feedback-page-no"
+      id="dr-ui--feedback-page-no"
       onClick={[Function]}
     >
       No
