@@ -62,10 +62,10 @@ Lazy.propTypes = {
 
   Example: `lazyComponent={() => import('../components/example.js')}`*/
   lazyComponent: PropTypes.func.isRequired,
-  /** Height of the component. This is needed to set the height of the loader to prevent content shift when the component loads. */
+  /** Height of the component. This is needed to set the height of the loader to prevent content shift when the component loads. Accepts a number. Required if `lazyClasses` is not defined. */
   lazyHeight: (props, propName, componentName) =>
     heightOrClasses(props, propName, componentName),
-  /** Classes to describe the height of the component, when `lazyHeight` will not suffice. */
+  /** Classes to describe the height of the component, when `lazyHeight` will not suffice.  Accepts a string. Required if `lazyHeight` is not defined. */
   lazyClasses: (props, propName, componentName) =>
     heightOrClasses(props, propName, componentName)
 };
