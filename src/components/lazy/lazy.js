@@ -1,24 +1,27 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import ErrorBoundary from '../error-boundary/error-boundary';
+import loadable from '@loadable/component';
 
-export default class Lazy extends React.PureComponent {
+export default class Lazy extends React.Component {
   render() {
     const { lazyHeight, component } = this.props;
-    const LazyLoadComponent = React.lazy(component);
+    const LazyLoadComponent = loadable(component, {
+      fallback: (
+        <div style={{ height: lazyHeight }} className="relative">
+          <div className="flex-parent flex-parent--center-cross flex-parent--center-main absolute top right bottom left bg-darken10 z5 round">
+            <div
+              className={`flex-child loading${
+                lazyHeight < 60 ? ' loading--s' : ''
+              }`}
+            ></div>
+          </div>
+        </div>
+      )
+    });
     return (
       <ErrorBoundary>
-        <Suspense
-          fallback={
-            <div style={{ height: lazyHeight }} className="relative">
-              <div className="flex-parent flex-parent--center-cross flex-parent--center-main absolute top right bottom left bg-darken10 z5 round">
-                <div className="flex-child loading"></div>
-              </div>
-            </div>
-          }
-        >
-          <LazyLoadComponent {...this.props} />
-        </Suspense>
+        <LazyLoadComponent {...this.props} />
       </ErrorBoundary>
     );
   }
