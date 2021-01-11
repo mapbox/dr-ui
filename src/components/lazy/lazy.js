@@ -6,22 +6,21 @@ import loadable from '@loadable/component';
 export default class Lazy extends React.Component {
   render() {
     const { lazyHeight, lazyComponent } = this.props;
-    const LazyLoadComponent = loadable(lazyComponent, {
-      fallback: (
-        <div style={{ height: lazyHeight }} className="relative">
-          <div className="flex-parent flex-parent--center-cross flex-parent--center-main absolute top right bottom left bg-darken10 z5 round">
-            <div
-              className={`flex-child loading${
-                lazyHeight < 60 ? ' loading--s' : ''
-              }`}
-            ></div>
-          </div>
+    const LazyLoadComponent = loadable(lazyComponent);
+    const Loader = () => (
+      <div style={{ height: lazyHeight }} className="relative">
+        <div className="flex-parent flex-parent--center-cross flex-parent--center-main absolute top right bottom left bg-darken10 z5 round">
+          <div
+            className={`flex-child loading${
+              lazyHeight < 60 ? ' loading--s' : ''
+            }`}
+          ></div>
         </div>
-      )
-    });
+      </div>
+    );
     return (
       <ErrorBoundary>
-        <LazyLoadComponent {...this.props} />
+        <LazyLoadComponent fallback={<Loader />} {...this.props} />
       </ErrorBoundary>
     );
   }
