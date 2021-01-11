@@ -17,4 +17,20 @@ describe('Lazy', () => {
       expect(tree).toMatchSnapshot();
     });
   });
+
+  describe(testCases.larger.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.larger;
+      wrapper = renderer.create(testCase.element);
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });
