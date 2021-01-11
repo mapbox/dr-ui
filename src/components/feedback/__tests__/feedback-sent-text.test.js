@@ -34,7 +34,7 @@ describe('Sent text feedback', () => {
     });
     // simulate typing feedback
     feedback
-      .find('[data-test="dr-ui--feedback-page-text"]')
+      .find('#dr-ui--feedback-page-text')
       .at(0)
       .props()
       .onChange('cool beans!');
