@@ -13,7 +13,7 @@ exports[`Lazy A larger example renders as expected 1`] = `
     className="flex-parent flex-parent--center-cross flex-parent--center-main absolute top right bottom left bg-darken10 z5 round"
   >
     <div
-      className="flex-child loading"
+      className="flex-child loading loading--s"
     />
   </div>
 </div>
@@ -21,12 +21,8 @@ exports[`Lazy A larger example renders as expected 1`] = `
 
 exports[`Lazy Basic renders as expected 1`] = `
 <div
-  className="relative"
-  style={
-    Object {
-      "height": 30,
-    }
-  }
+  className="relative h30-mm h36"
+  style={Object {}}
 >
   <div
     className="flex-parent flex-parent--center-cross flex-parent--center-main absolute top right bottom left bg-darken10 z5 round"

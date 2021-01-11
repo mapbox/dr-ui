@@ -8,7 +8,7 @@ export default class Basic extends React.PureComponent {
   render() {
     return (
       <Lazy
-        lazyHeight={30}
+        lazyClasses="h30-mm h36"
         lazyComponent={() => import('../../search/examples/basic.js')}
       />
     );
