@@ -30,13 +30,42 @@ export default class Lazy extends React.Component {
   }
 }
 
+/* prop function to assert that lazyHeight or lazyClasses is defined and is the right type */
+const heightOrClasses = (props, propName, componentName) => {
+  if (!props.lazyClasses && !props.lazyHeight) {
+    return new Error(
+      `You must define \`lazyClasses\` or \`lazyHeight\` in ${componentName}`
+    );
+  }
+  if (
+    propName === 'lazyClasses' &&
+    props.lazyClasses &&
+    typeof props.lazyClasses !== 'string'
+  ) {
+    return new Error(
+      `\`lazyClasses\` must be a string, received ${typeof props.lazyClasses}`
+    );
+  }
+  if (
+    propName === 'lazyHeight' &&
+    props.lazyHeight &&
+    typeof props.lazyHeight !== 'number'
+  ) {
+    return new Error(
+      `\`lazyClasses\` must be a number, received ${typeof props.lazyHeight}`
+    );
+  }
+};
+
 Lazy.propTypes = {
   /** Dynamic import function with path to the component. The file containing the component must be a default export. 
 
   Example: `lazyComponent={() => import('../components/example.js')}`*/
   lazyComponent: PropTypes.func.isRequired,
   /** Height of the component. This is needed to set the height of the loader to prevent content shift when the component loads. */
-  lazyHeight: PropTypes.number,
+  lazyHeight: (props, propName, componentName) =>
+    heightOrClasses(props, propName, componentName),
   /** Classes to describe the height of the component, when `lazyHeight` will not suffice. */
-  lazyClasses: PropTypes.string
+  lazyClasses: (props, propName, componentName) =>
+    heightOrClasses(props, propName, componentName)
 };
