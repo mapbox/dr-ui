@@ -42,9 +42,13 @@ class Feedback extends React.Component {
       replacement: '-',
       lower: true
     });
-    return `dr-ui--feedback-${
-      this.props.position ? `${this.props.position}-` : ''
-    }${section}-${el}`;
+    const position = this.props.position
+      ? `${slugify(this.props.position, {
+          replacement: '-',
+          lower: true
+        })}-`
+      : '';
+    return `dr-ui--feedback-${position}${section}-${el}`;
   };
 
   // pushes the text feedback to the state as the user types
