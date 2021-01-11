@@ -215,7 +215,7 @@ class Feedback extends React.Component {
               </div>
               <div className="relative">
                 <ControlTextarea
-                  data-test={this.createId('text')}
+                  id={this.createId('text')}
                   themeControlWrapper="bg-white mb6"
                   onChange={this.handleText}
                   value={this.state.feedback}

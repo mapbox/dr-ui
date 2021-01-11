@@ -30,7 +30,7 @@ exports[`Feedback character limit Character limit ok, user can submit feedback 1
         className="relative"
       >
         <ControlTextarea
-          data-test="dr-ui--feedback-page-text"
+          id="dr-ui--feedback-page-text"
           noAuto={false}
           onChange={[Function]}
           optional={false}
@@ -39,6 +39,7 @@ exports[`Feedback character limit Character limit ok, user can submit feedback 1
           value="Lorem ipsum dolor sit amet"
         >
           <ControlWrapper
+            id="dr-ui--feedback-page-text"
             themeControlWrapper="bg-white mb6"
           >
             <div
@@ -47,7 +48,9 @@ exports[`Feedback character limit Character limit ok, user can submit feedback 1
               <textarea
                 aria-required={true}
                 className="textarea hmin120"
-                data-test="dr-ui--feedback-page-text"
+                data-test="dr-ui--feedback-page-text-textarea"
+                id="dr-ui--feedback-page-text"
+                name="dr-ui--feedback-page-text"
                 onChange={[Function]}
                 value="Lorem ipsum dolor sit amet"
               />
@@ -130,7 +133,7 @@ exports[`Feedback character limit Character limit too long, user cannot submit f
         className="relative"
       >
         <ControlTextarea
-          data-test="dr-ui--feedback-page-text"
+          id="dr-ui--feedback-page-text"
           noAuto={false}
           onChange={[Function]}
           optional={false}
@@ -139,6 +142,7 @@ exports[`Feedback character limit Character limit too long, user cannot submit f
           value="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         >
           <ControlWrapper
+            id="dr-ui--feedback-page-text"
             themeControlWrapper="bg-white mb6"
           >
             <div
@@ -147,7 +151,9 @@ exports[`Feedback character limit Character limit too long, user cannot submit f
               <textarea
                 aria-required={true}
                 className="textarea hmin120"
-                data-test="dr-ui--feedback-page-text"
+                data-test="dr-ui--feedback-page-text-textarea"
+                id="dr-ui--feedback-page-text"
+                name="dr-ui--feedback-page-text"
                 onChange={[Function]}
                 value="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
               />
@@ -257,7 +263,7 @@ exports[`Sent helpful rating snapshot snapshot 1`] = `
       className="relative"
     >
       <ControlTextarea
-        data-test="dr-ui--feedback-page-text"
+        id="dr-ui--feedback-page-text"
         noAuto={false}
         onChange={[Function]}
         optional={false}
