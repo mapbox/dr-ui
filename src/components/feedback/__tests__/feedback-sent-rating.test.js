@@ -27,7 +27,7 @@ describe('Sent helpful rating - yes', () => {
     }
   });
   test('clicked yes', () => {
-    feedback.find('#dr-ui--feedback-page-yes').simulate('click');
+    feedback.find('[data-test="dr-ui--feedback-page-yes"]').simulate('click');
     expect(feedback.state()).toEqual({
       event: {
         event: 'Sent docs feedback',
@@ -90,7 +90,7 @@ describe('Sent helpful rating - no', () => {
     }
   });
   test('clicked no', () => {
-    feedback.find('#dr-ui--feedback-page-no').simulate('click');
+    feedback.find('[data-test="dr-ui--feedback-page-no"]').simulate('click');
     expect(feedback.state()).toEqual({
       event: {
         event: 'Sent docs feedback',
@@ -160,19 +160,21 @@ describe('Feedback character limit', () => {
     });
     // make sure submit button is not disabled
     const submitBtn = feedback
-      .find('#dr-ui--feedback-page-submit')
+      .find('[data-test="dr-ui--feedback-page-submit"]')
       .at(0)
       .props();
     expect(submitBtn.disabled).toBe(false);
 
     // make sure overlimit warning is not shown
     const overlimitWarning = feedback
-      .find('#dr-ui--feedback-page-overlimit')
+      .find('[data-test="dr-ui--feedback-page-overlimit"]')
       .at(0);
     expect(overlimitWarning.exists()).toBe(false);
 
     // make sure character counter is equal
-    const charCounter = feedback.find('#dr-ui--feedback-page-counter').at(0);
+    const charCounter = feedback
+      .find('[data-test="dr-ui--feedback-page-counter"]')
+      .at(0);
     expect(charCounter.props().children).toEqual(974);
     // snapshot
     expect(toJson(feedback)).toMatchSnapshot();
@@ -186,19 +188,21 @@ describe('Feedback character limit', () => {
     });
     // make sure submit button is disabled
     const submitBtn = feedback
-      .find('#dr-ui--feedback-page-submit')
+      .find('[data-test="dr-ui--feedback-page-submit"]')
       .at(0)
       .props();
     expect(submitBtn.disabled).toBe(true);
 
     // make sure overlimit warning is shown
     const overlimitWarning = feedback
-      .find('#dr-ui--feedback-page-overlimit')
+      .find('[data-test="dr-ui--feedback-page-overlimit"]')
       .at(0);
     expect(overlimitWarning.exists()).toBe(true);
 
     // make sure character counter is equal
-    const charCounter = feedback.find('#dr-ui--feedback-page-counter').at(0);
+    const charCounter = feedback
+      .find('[data-test="dr-ui--feedback-page-counter"]')
+      .at(0);
     expect(charCounter.props().children).toEqual(-340);
     // snapshot
     expect(toJson(feedback)).toMatchSnapshot();

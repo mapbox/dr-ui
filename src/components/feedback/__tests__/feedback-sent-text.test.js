@@ -34,12 +34,15 @@ describe('Sent text feedback', () => {
     });
     // simulate typing feedback
     feedback
-      .find('#dr-ui--feedback-page-text')
+      .find('[data-test="dr-ui--feedback-page-text"]')
       .at(0)
       .props()
       .onChange('cool beans!');
     // simulate submit button click
-    feedback.find('#dr-ui--feedback-page-submit').at(0).simulate('click');
+    feedback
+      .find('[data-test="dr-ui--feedback-page-submit"]')
+      .at(0)
+      .simulate('click');
 
     expect(feedback.state()).toEqual({
       event: {

@@ -184,14 +184,14 @@ class Feedback extends React.Component {
           <div>
             <AsideHeading>Was this {this.props.type} helpful?</AsideHeading>
             <button
-              id={this.createId('yes')}
+              data-test={this.createId('yes')}
               onClick={() => this.handleYesNo(true)}
               className="btn btn--s"
             >
               Yes
             </button>
             <button
-              id={this.createId('no')}
+              data-test={this.createId('no')}
               onClick={() => this.handleYesNo(false)}
               className="btn btn--s ml6"
             >
@@ -215,7 +215,7 @@ class Feedback extends React.Component {
               </div>
               <div className="relative">
                 <ControlTextarea
-                  id={this.createId('text')}
+                  data-test={this.createId('text')}
                   themeControlWrapper="bg-white mb6"
                   onChange={this.handleText}
                   value={this.state.feedback}
@@ -228,7 +228,7 @@ class Feedback extends React.Component {
               </div>
               <div className="mb12">
                 <button
-                  id={this.createId('submit')}
+                  data-test={this.createId('submit')}
                   disabled={
                     this.state.feedback === undefined ||
                     this.state.feedback.length < 3 || // disable button unless more than 3 characters are typed
@@ -267,7 +267,7 @@ class FeedbackCounter extends React.Component {
   render() {
     return (
       <div
-        id={this.props.createId('counter')}
+        data-test={this.props.createId('counter')}
         className={classnames(
           'absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s',
           {
@@ -292,7 +292,7 @@ class FeedbackOverlimitWarning extends React.Component {
   render() {
     return (
       <span
-        id={this.props.createId('overlimit')}
+        data-test={this.props.createId('overlimit')}
         className="color-red txt-s bg-red-faint round inline-block py3 px12"
       >
         <Icon name="alert" inline={true} /> Your message is over the{' '}
