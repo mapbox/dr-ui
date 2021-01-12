@@ -52,7 +52,7 @@ const heightOrClasses = (props, propName, componentName) => {
     typeof props.lazyHeight !== 'number'
   ) {
     return new Error(
-      `\`lazyClasses\` must be a number, received ${typeof props.lazyHeight}`
+      `\`lazyHeight\` must be a number, received ${typeof props.lazyHeight}`
     );
   }
 };
