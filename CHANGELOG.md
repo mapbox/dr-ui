@@ -2,6 +2,8 @@
 
 ## Performance
 
+- Add Lazy component. [#392](https://github.com/mapbox/dr-ui/pull/392)
+
 ## 2.3.0
 
 - Update `GlWrapper` component to check for Internet Explorer and provide reason for when the issue is not Internet Explorer or WebGL support. [#387](https://github.com/mapbox/dr-ui/pull/387)
