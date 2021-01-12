@@ -1,6 +1,8 @@
 # Changelog
 
-## Lazy
+## Performance
+
+- Add Lazy component. [#392](https://github.com/mapbox/dr-ui/pull/392)
 
 ## 2.3.0
 
