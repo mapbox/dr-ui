@@ -151,6 +151,21 @@
       }
     },
     {
+      "filePath": "./docs/src/pages/guides/lazy.md",
+      "path": "/dr-ui/guides/lazy/",
+      "frontMatter": {
+        "title": "Lazy loading",
+        "description": "Learn when to use lazy loading.",
+        "order": 5,
+        "layout": "page",
+        "contentType": "guide",
+        "products": ["Documentation"],
+        "prependJs": [
+          "import Lazy from '../../../../src/components/lazy/lazy';"
+        ]
+      }
+    },
+    {
       "filePath": "./docs/src/pages/guides/multi-structured.md",
       "path": "/dr-ui/guides/multi-structured/",
       "frontMatter": {
@@ -260,6 +275,12 @@
     {
       "filePath": "./docs/src/pages/index.js",
       "path": "/dr-ui/",
+      "frontMatter": {}
+    },
+    {
+      "filePath": "./node_modules/@mapbox/batfish/dist/webpack/default-not-found.js",
+      "path": "/dr-ui/404/",
+      "is404": true,
       "frontMatter": {}
     }
   ]
