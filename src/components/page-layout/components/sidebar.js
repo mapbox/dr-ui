@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import NavigationAccordion from '../../navigation-accordion';
 import ProductMenu from '../../product-menu/product-menu';
-import Lazy from '../../lazy/lazy';
+import Search from '../../search/search';
 import classnames from 'classnames';
 
 export default class Sidebar extends React.Component {
@@ -42,12 +42,7 @@ export default class Sidebar extends React.Component {
           {!hideSearch && (
             /* set height to prevent content shift as Search component loads */
             <div className="mb6 h36">
-              <Lazy
-                lazyComponent={() => import('../../search/search')}
-                lazyClasses="h30-mm h36"
-                {...this.props}
-                site={SITE}
-              />
+              <Search {...this.props} site={SITE} />
             </div>
           )}
         </div>

@@ -50,16 +50,31 @@ Array [
               className="mb6 h36"
             >
               <div
-                className="relative h30-mm h36"
-                style={Object {}}
+                className="h36 relative"
               >
-                <div
-                  className="flex-parent flex-parent--center-cross flex-parent--center-main absolute top right bottom left bg-darken10 z5 round"
+                <button
+                  className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round w-full"
+                  onClick={[Function]}
+                  style={Object {}}
                 >
-                  <div
-                    className="flex-child loading loading--s"
-                  />
-                </div>
+                  <span
+                    className="mr6 color-gray"
+                  >
+                    <svg
+                      className="icon w18 h18"
+                    >
+                      <use
+                        xlinkHref="#icon-search"
+                      />
+                    </svg>
+                  </span>
+                   
+                  <span
+                    className="color-gray"
+                  >
+                    Search
+                  </span>
+                </button>
               </div>
             </div>
           </div>
@@ -662,16 +677,31 @@ Array [
               className="mb6 h36"
             >
               <div
-                className="relative h30-mm h36"
-                style={Object {}}
+                className="h36 relative"
               >
-                <div
-                  className="flex-parent flex-parent--center-cross flex-parent--center-main absolute top right bottom left bg-darken10 z5 round"
+                <button
+                  className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round w-full"
+                  onClick={[Function]}
+                  style={Object {}}
                 >
-                  <div
-                    className="flex-child loading loading--s"
-                  />
-                </div>
+                  <span
+                    className="mr6 color-gray"
+                  >
+                    <svg
+                      className="icon w18 h18"
+                    >
+                      <use
+                        xlinkHref="#icon-search"
+                      />
+                    </svg>
+                  </span>
+                   
+                  <span
+                    className="color-gray"
+                  >
+                    Search
+                  </span>
+                </button>
               </div>
             </div>
           </div>
@@ -1313,16 +1343,31 @@ Array [
               className="mb6 h36"
             >
               <div
-                className="relative h30-mm h36"
-                style={Object {}}
+                className="h36 relative"
               >
-                <div
-                  className="flex-parent flex-parent--center-cross flex-parent--center-main absolute top right bottom left bg-darken10 z5 round"
+                <button
+                  className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round w-full"
+                  onClick={[Function]}
+                  style={Object {}}
                 >
-                  <div
-                    className="flex-child loading loading--s"
-                  />
-                </div>
+                  <span
+                    className="mr6 color-gray"
+                  >
+                    <svg
+                      className="icon w18 h18"
+                    >
+                      <use
+                        xlinkHref="#icon-search"
+                      />
+                    </svg>
+                  </span>
+                   
+                  <span
+                    className="color-gray"
+                  >
+                    Search
+                  </span>
+                </button>
               </div>
             </div>
           </div>
@@ -1821,16 +1866,31 @@ Array [
               className="mb6 h36"
             >
               <div
-                className="relative h30-mm h36"
-                style={Object {}}
+                className="h36 relative"
               >
-                <div
-                  className="flex-parent flex-parent--center-cross flex-parent--center-main absolute top right bottom left bg-darken10 z5 round"
+                <button
+                  className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round w-full"
+                  onClick={[Function]}
+                  style={Object {}}
                 >
-                  <div
-                    className="flex-child loading loading--s"
-                  />
-                </div>
+                  <span
+                    className="mr6 color-gray"
+                  >
+                    <svg
+                      className="icon w18 h18"
+                    >
+                      <use
+                        xlinkHref="#icon-search"
+                      />
+                    </svg>
+                  </span>
+                   
+                  <span
+                    className="color-gray"
+                  >
+                    Search
+                  </span>
+                </button>
               </div>
             </div>
           </div>
