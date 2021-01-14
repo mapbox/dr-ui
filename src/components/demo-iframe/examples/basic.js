@@ -6,6 +6,8 @@ import DemoIframe from '../demo-iframe';
 
 export default class Basic extends React.Component {
   render() {
-    return <DemoIframe src="../files/ios-horizontal.png" />;
+    return (
+      <DemoIframe title="Light map style" src="../files/ios-horizontal.png" />
+    );
   }
 }
