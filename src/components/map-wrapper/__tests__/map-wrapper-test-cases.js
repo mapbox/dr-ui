@@ -13,7 +13,7 @@ testCases.basic = {
 noRenderCases.ie = {
   description: "reason='insufficient ECMAScript 6 support'",
   element: (
-    <MapWrapper reason="insufficient ECMAScript 6 support">
+    <MapWrapper height={36} reason="insufficient ECMAScript 6 support">
       Your browser supports Mapbox GL!
     </MapWrapper>
   )
@@ -22,7 +22,7 @@ noRenderCases.ie = {
 noRenderCases.webgl = {
   description: "reason='insufficient WebGL support'",
   element: (
-    <MapWrapper reason="insufficient WebGL support">
+    <MapWrapper height={36} reason="insufficient WebGL support">
       Your browser supports Mapbox GL!
     </MapWrapper>
   )
