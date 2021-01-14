@@ -2,10 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import NavigationAccordion from '../../navigation-accordion';
 import ProductMenu from '../../product-menu/product-menu';
-import Lazy from '../../lazy/lazy';
 import classnames from 'classnames';
 
 export default class Sidebar extends React.Component {
+  constructor() {
+    super();
+    this.state = { searchComponent: <div>loading</div> };
+  }
+
+  componentDidMount() {
+    import('../../search/search').then((AppModule) => {
+      this.setState({ searchComponent: <AppModule.default /> });
+    });
+  }
   render() {
     const {
       constants,
@@ -41,14 +50,7 @@ export default class Sidebar extends React.Component {
           </div>
           {!hideSearch && (
             /* set height to prevent content shift as Search component loads */
-            <div className="mb6 h36">
-              <Lazy
-                lazyComponent={() => import('../../search/search')}
-                lazyClasses="h30-mm h36"
-                {...this.props}
-                site={SITE}
-              />
-            </div>
+            <div className="mb6 h36">{this.state.searchComponent}</div>
           )}
         </div>
         <div

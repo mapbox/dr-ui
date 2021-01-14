@@ -49,17 +49,8 @@ Array [
             <div
               className="mb6 h36"
             >
-              <div
-                className="relative h30-mm h36"
-                style={Object {}}
-              >
-                <div
-                  className="flex-parent flex-parent--center-cross flex-parent--center-main absolute top right bottom left bg-darken10 z5 round"
-                >
-                  <div
-                    className="flex-child loading loading--s"
-                  />
-                </div>
+              <div>
+                loading
               </div>
             </div>
           </div>
@@ -661,17 +652,8 @@ Array [
             <div
               className="mb6 h36"
             >
-              <div
-                className="relative h30-mm h36"
-                style={Object {}}
-              >
-                <div
-                  className="flex-parent flex-parent--center-cross flex-parent--center-main absolute top right bottom left bg-darken10 z5 round"
-                >
-                  <div
-                    className="flex-child loading loading--s"
-                  />
-                </div>
+              <div>
+                loading
               </div>
             </div>
           </div>
@@ -1312,17 +1294,8 @@ Array [
             <div
               className="mb6 h36"
             >
-              <div
-                className="relative h30-mm h36"
-                style={Object {}}
-              >
-                <div
-                  className="flex-parent flex-parent--center-cross flex-parent--center-main absolute top right bottom left bg-darken10 z5 round"
-                >
-                  <div
-                    className="flex-child loading loading--s"
-                  />
-                </div>
+              <div>
+                loading
               </div>
             </div>
           </div>
@@ -1820,17 +1793,8 @@ Array [
             <div
               className="mb6 h36"
             >
-              <div
-                className="relative h30-mm h36"
-                style={Object {}}
-              >
-                <div
-                  className="flex-parent flex-parent--center-cross flex-parent--center-main absolute top right bottom left bg-darken10 z5 round"
-                >
-                  <div
-                    className="flex-child loading loading--s"
-                  />
-                </div>
+              <div>
+                loading
               </div>
             </div>
           </div>
