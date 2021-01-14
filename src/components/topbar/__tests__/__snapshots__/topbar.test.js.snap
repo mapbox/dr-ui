@@ -43,29 +43,33 @@ exports[`topbar-sticker Basic renders as expected 1`] = `
           <div
             className="h36 relative"
           >
-            <button
-              className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round w-full"
-              onClick={[Function]}
-              style={Object {}}
-            >
-              <span
-                className="mr6 color-gray"
-              >
-                <svg
-                  className="icon w18 h18"
+            <div>
+              <div>
+                <button
+                  className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round w-full"
+                  onClick={[Function]}
+                  style={Object {}}
                 >
-                  <use
-                    xlinkHref="#icon-search"
-                  />
-                </svg>
-              </span>
-               
-              <span
-                className="color-gray"
-              >
-                Search
-              </span>
-            </button>
+                  <span
+                    className="mr6 color-gray"
+                  >
+                    <svg
+                      className="icon w18 h18"
+                    >
+                      <use
+                        xlinkHref="#icon-search"
+                      />
+                    </svg>
+                  </span>
+                   
+                  <span
+                    className="color-gray"
+                  >
+                    Search
+                  </span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

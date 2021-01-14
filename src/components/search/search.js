@@ -3,41 +3,84 @@ import 'react-app-polyfill/stable';
 import React from 'react';
 import PropTypes from 'prop-types';
 import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
-import { SearchButton } from './search-box';
-import Lazy from '../lazy/lazy';
+import { SearchProvider, WithSearch } from '@elastic/react-search-ui';
+import SearchBox from './search-box';
 
 class Search extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      searchComponent: undefined
-    };
-  }
-  openModal = () => {
-    this.setState({
-      searchComponent: (
-        <Lazy
-          lazyClasses="h30-mm h36"
-          openModal={true}
-          {...this.props}
-          lazyComponent={() => import('./search-provider')}
-        />
-      )
-    });
-  };
   render() {
-    const { background, narrow } = this.props;
-    const { searchComponent } = this.state;
+    const { props } = this;
     return (
-      searchComponent || (
-        <div className="h36 relative">
-          <SearchButton
-            openModal={this.openModal}
-            background={background}
-            narrow={narrow}
-          />
-        </div>
-      )
+      <SearchProvider
+        config={{
+          apiConnector: props.connector,
+          initialState: {
+            resultsPerPage: 10
+          },
+          trackUrlState: props.resultsOnly ? false : true, // do not push search query to URL if using resultsOnly
+          searchQuery: {
+            facets: {
+              site: { type: 'value' }
+            }
+          }
+        }}
+      >
+        <WithSearch
+          mapContextToProps={({
+            isLoading,
+            searchTerm,
+            setSearchTerm,
+            results,
+            trackClickThrough,
+            wasSearched,
+            reset
+          }) => ({
+            isLoading,
+            searchTerm,
+            setSearchTerm,
+            results,
+            trackClickThrough,
+            wasSearched,
+            reset
+          })}
+        >
+          {({
+            isLoading,
+            searchTerm,
+            setSearchTerm,
+            results,
+            trackClickThrough,
+            wasSearched,
+            reset
+          }) => {
+            return (
+              <div
+                className={`${this.props.resultsOnly ? '' : 'h36 '}relative`}
+              >
+                <SearchBox
+                  searchTerm={searchTerm}
+                  trackClickThrough={trackClickThrough}
+                  setSearchTerm={setSearchTerm}
+                  results={results}
+                  wasSearched={wasSearched}
+                  placeholder={props.placeholder}
+                  isLoading={isLoading}
+                  inputId={props.inputId}
+                  background={props.background}
+                  narrow={props.narrow}
+                  disableModal={props.disableModal || props.resultsOnly} // disable modal if resultsOnly === true
+                  site={props.site}
+                  reset={reset}
+                  resultsOnly={props.resultsOnly}
+                  segmentTrackEvent={props.segmentTrackEvent}
+                  overrideSearchTerm={props.overrideSearchTerm}
+                  themeCompact={props.themeCompact}
+                  emptyResultMessage={props.emptyResultMessage}
+                />
+              </div>
+            );
+          }}
+        </WithSearch>
+      </SearchProvider>
     );
   }
 }

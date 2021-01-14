@@ -8,11 +8,11 @@ import { getFilterValueDisplay } from '@elastic/react-search-ui-views/lib/view-h
 import { Facet } from '@elastic/react-search-ui';
 import classnames from 'classnames';
 
-export class SearchBox extends React.Component {
+class SearchBox extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      modalOpen: this.props.openModal,
+      modalOpen: false,
       useModal: !this.props.disableModal
     };
     this.openModal = this.openModal.bind(this);
@@ -283,11 +283,42 @@ export class SearchBox extends React.Component {
           )
         ) : (
           <div>
-            <SearchButton
-              background={this.props.background}
-              narrow={this.props.narrow}
-              openModal={this.openModal}
-            />
+            <button
+              className={classnames(
+                'flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round',
+                {
+                  'btn--white': this.props.background !== 'light',
+                  'w-full': !this.props.narrow
+                }
+              )}
+              style={
+                this.props.narrow
+                  ? { paddingLeft: '12px', paddingRight: '12px' }
+                  : {}
+              }
+              onClick={this.openModal}
+            >
+              <span
+                className={classnames('', {
+                  mr6: !this.props.narrow,
+                  'color-gray': this.props.background === 'light'
+                })}
+              >
+                <svg className="icon w18 h18">
+                  {this.props.narrow && <title>Search</title>}
+                  <use xlinkHref="#icon-search" />
+                </svg>
+              </span>{' '}
+              {!this.props.narrow && (
+                <span
+                  className={classnames('', {
+                    'color-gray': this.props.background === 'light'
+                  })}
+                >
+                  Search
+                </span>
+              )}
+            </button>
             {this.renderModal()}
           </div>
         )}
@@ -314,52 +345,7 @@ SearchBox.propTypes = {
   segmentTrackEvent: PropTypes.string,
   overrideSearchTerm: PropTypes.string,
   themeCompact: PropTypes.bool,
-  emptyResultMessage: PropTypes.node,
-  openModal: PropTypes.bool
+  emptyResultMessage: PropTypes.node
 };
 
-export class SearchButton extends React.Component {
-  render() {
-    const { background, narrow, openModal } = this.props;
-    return (
-      <button
-        className={classnames(
-          'flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round',
-          {
-            'btn--white': background !== 'light',
-            'w-full': !narrow
-          }
-        )}
-        style={narrow ? { paddingLeft: '12px', paddingRight: '12px' } : {}}
-        onClick={openModal}
-      >
-        <span
-          className={classnames('', {
-            mr6: !narrow,
-            'color-gray': background === 'light'
-          })}
-        >
-          <svg className="icon w18 h18">
-            {narrow && <title>Search</title>}
-            <use xlinkHref="#icon-search" />
-          </svg>
-        </span>{' '}
-        {!narrow && (
-          <span
-            className={classnames('', {
-              'color-gray': background === 'light'
-            })}
-          >
-            Search
-          </span>
-        )}
-      </button>
-    );
-  }
-}
-
-SearchButton.propTypes = {
-  narrow: PropTypes.bool,
-  background: PropTypes.oneOf(['light', 'dark']),
-  openModal: PropTypes.func.isRequired
-};
+export default SearchBox;
