@@ -1,6 +1,6 @@
 import React from 'react';
 import Basic from '../examples/basic';
-import GLWrapper from '../../gl-wrapper';
+import MapWrapper from '../../map-wrapper';
 
 const testCases = {};
 const noRenderCases = {};
@@ -13,18 +13,18 @@ testCases.basic = {
 noRenderCases.ie = {
   description: "reason='insufficient ECMAScript 6 support'",
   element: (
-    <GLWrapper reason="insufficient ECMAScript 6 support">
+    <MapWrapper reason="insufficient ECMAScript 6 support">
       Your browser supports Mapbox GL!
-    </GLWrapper>
+    </MapWrapper>
   )
 };
 
 noRenderCases.webgl = {
   description: "reason='insufficient WebGL support'",
   element: (
-    <GLWrapper reason="insufficient WebGL support">
+    <MapWrapper reason="insufficient WebGL support">
       Your browser supports Mapbox GL!
-    </GLWrapper>
+    </MapWrapper>
   )
 };
 

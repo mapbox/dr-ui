@@ -1,7 +1,7 @@
 import renderer from 'react-test-renderer';
-import { testCases, noRenderCases } from './gl-wrapper-test-cases.js';
+import { testCases, noRenderCases } from './map-wrapper-test-cases.js';
 
-describe('gl-wrapper', () => {
+describe('map-wrapper', () => {
   describe(testCases.basic.description, () => {
     let testCase;
     let wrapper;

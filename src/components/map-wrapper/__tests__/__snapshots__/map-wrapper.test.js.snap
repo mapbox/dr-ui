@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`gl-wrapper Basic renders as expected 1`] = `
+exports[`map-wrapper Basic renders as expected 1`] = `
 <div
   className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
   style={
@@ -53,7 +53,7 @@ exports[`gl-wrapper Basic renders as expected 1`] = `
 </div>
 `;
 
-exports[`gl-wrapper reason='insufficient ECMAScript 6 support' renders as expected 1`] = `
+exports[`map-wrapper reason='insufficient ECMAScript 6 support' renders as expected 1`] = `
 <div
   className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
   style={
@@ -136,7 +136,7 @@ exports[`gl-wrapper reason='insufficient ECMAScript 6 support' renders as expect
 </div>
 `;
 
-exports[`gl-wrapper reason='insufficient WebGL support' renders as expected 1`] = `
+exports[`map-wrapper reason='insufficient WebGL support' renders as expected 1`] = `
 <div
   className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
   style={

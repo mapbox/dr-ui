@@ -2,10 +2,10 @@
 Basic.
 */
 import React from 'react';
-import GLWrapper from '../gl-wrapper';
+import MapWrapper from '../map-wrapper';
 
 export default class Basic extends React.Component {
   render() {
-    return <GLWrapper>Your browser supports Mapbox GL!</GLWrapper>;
+    return <MapWrapper>Your browser supports Mapbox GL!</MapWrapper>;
   }
 }

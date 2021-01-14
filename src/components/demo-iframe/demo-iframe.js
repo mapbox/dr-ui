@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ChevronousText from '@mapbox/mr-ui/chevronous-text';
-import GLWrapper from '../gl-wrapper/gl-wrapper';
+import MapWrapper from '../map-wrapper/map-wrapper';
 
 export default class DemoIframe extends React.Component {
   static defaultProps = {
@@ -49,7 +49,7 @@ export default class DemoIframe extends React.Component {
       </div>
     );
 
-    return props.gl ? <GLWrapper>{contents}</GLWrapper> : contents;
+    return props.gl ? <MapWrapper>{contents}</MapWrapper> : contents;
   }
 }
 
