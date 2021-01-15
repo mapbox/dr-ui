@@ -35,7 +35,6 @@ testCases.missing = {
   component: DemoIframe,
   description: 'Missing token will return null component',
   props: {
-    height: 400,
     title: 'Static API request',
     src:
       'https://api.mapbox.com/styles/v1/examples/cjj0b5ie80ec32so5uo8ox21m.html?fresh=true&title=true&access_token=MapboxAccessToken#15/40.751589/-73.986485/-28/60'
