@@ -1905,10 +1905,6 @@ Object {
       "parent": "/dr-ui/guides/",
       "title": "Guides",
     },
-    "/dr-ui/guides/lazy/": Object {
-      "parent": "/dr-ui/guides/",
-      "title": "Guides",
-    },
     "/dr-ui/guides/multi-structured/": Object {
       "parent": "/dr-ui/guides/",
       "title": "Guides",
@@ -1958,12 +1954,6 @@ Object {
           "order": 4,
           "path": "/dr-ui/guides/multi-structured/",
           "title": "Multi-structured sites",
-        },
-        Object {
-          "layout": "page",
-          "order": 5,
-          "path": "/dr-ui/guides/lazy/",
-          "title": "Lazy loading",
         },
       ],
       "path": "/dr-ui/guides/",

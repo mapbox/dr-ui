@@ -2,12 +2,12 @@
 Basic.
 */
 import React from 'react';
-import DemoIframe from '../demo-iframe';
+import MapWrapper from '../map-wrapper';
 
 export default class Basic extends React.Component {
   render() {
     return (
-      <DemoIframe title="Light map style" src="../files/ios-horizontal.png" />
+      <MapWrapper height={300}>Your browser supports Mapbox GL!</MapWrapper>
     );
   }
 }
