@@ -1,51 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`demo-iframe \`gl\` is false renders as expected 1`] = `
-<div>
-  <iframe
-    height={400}
-    src="https://giphy.com/embed/ule4vhcY1xEKQ"
-    title="Cool gif"
-    width="100%"
-  />
-  <a
-    className="link"
-    href="https://giphy.com/embed/ule4vhcY1xEKQ"
-  >
-    <span>
-      View fullscreen
-       
-      <span
-        className="txt-nowrap"
-      >
-        demo
-        <svg
-          className="events-none icon inline-block align-t"
-          focusable="false"
-          role="presentation"
-          style={
-            Object {
-              "height": "1.5em",
-              "width": "1.5em",
-            }
-          }
-        >
-          <use
-            xlinkHref="#icon-chevron-right"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-          />
-        </svg>
-      </span>
-    </span>
-  </a>
-</div>
-`;
-
-exports[`demo-iframe Basic renders as expected 1`] = `
+exports[`map-wrapper Basic renders as expected 1`] = `
 <div
   style={
     Object {
-      "minHeight": 430,
+      "minHeight": 300,
     }
   }
 >
@@ -102,13 +61,11 @@ exports[`demo-iframe Basic renders as expected 1`] = `
 </div>
 `;
 
-exports[`demo-iframe Missing token will return null component renders as expected 1`] = `null`;
-
-exports[`demo-iframe With token renders as expected 1`] = `
+exports[`map-wrapper reason='insufficient ECMAScript 6 support' renders as expected 1`] = `
 <div
   style={
     Object {
-      "minHeight": 430,
+      "minHeight": 36,
     }
   }
 >
@@ -159,7 +116,114 @@ exports[`demo-iframe With token renders as expected 1`] = `
       >
         Mapbox GL unsupported
       </div>
-      Mapbox GL is unsupported due to insufficient worker support.
+      Starting with v2.0.0, Mapbox GL JS is no longer compatible with any version of Internet Explorer. If you need to support Internet Explorer, consider using the
+       
+      <a
+        href="https://docs.mapbox.com/api/maps/static-images/"
+      >
+        Mapbox Static Images API
+      </a>
+       
+      for non-interactive maps or using the
+       
+      <a
+        href="https://docs.mapbox.com/api/maps/static-tiles/"
+      >
+        Mapbox Static Tiles API
+      </a>
+       
+      with another library (for example,
+       
+      <a
+        href="https://docs.mapbox.com/mapbox.js/"
+      >
+        Mapbox.js
+      </a>
+       or
+       
+      <a
+        href="https://leafletjs.com/"
+      >
+        Leaflet
+      </a>
+      ) for interactive maps.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`map-wrapper reason='insufficient WebGL support' renders as expected 1`] = `
+<div
+  style={
+    Object {
+      "minHeight": 36,
+    }
+  }
+>
+  <div
+    className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
+    style={
+      Object {
+        "background": "#feefe2",
+        "color": "#78471c",
+      }
+    }
+  >
+    <div
+      className="flex-child mr18 none block-mm pt3"
+    >
+      <div
+        className="bg-orange-light round-full color-orange flex-parent flex-parent--center-main flex-parent--center-cross"
+        style={
+          Object {
+            "height": 50,
+            "width": 50,
+          }
+        }
+      >
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 40,
+              "width": 40,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-alert"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="flex-child prose"
+    >
+      <div
+        className="txt-bold txt-m mb6"
+      >
+        Mapbox GL unsupported
+      </div>
+      Mapbox GL requires
+       
+      <a
+        className="link"
+        href="https://caniuse.com/#feat=webgl"
+      >
+        WebGL support
+      </a>
+      . Please check that you are using a supported browser and that
+       
+      <a
+        className="link"
+        href="https://get.webgl.org/"
+      >
+        WebGL is enabled
+      </a>
+      .
     </div>
   </div>
 </div>
