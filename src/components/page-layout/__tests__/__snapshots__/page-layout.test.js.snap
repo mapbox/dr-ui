@@ -13,11 +13,6 @@ Array [
     >
       <div
         className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr36-mm undefined"
-        style={
-          Object {
-            "width": "100%",
-          }
-        }
       >
         <div
           className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm px12-mm"
@@ -188,11 +183,6 @@ Array [
       </div>
       <div
         className="flex-child flex-child--grow"
-        style={
-          Object {
-            "width": "100%",
-          }
-        }
       >
         <div
           className="dr-ui--breadcrumb pt3 pb12 none block-mm"
@@ -644,11 +634,6 @@ Array [
     >
       <div
         className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr36-mm undefined"
-        style={
-          Object {
-            "width": "100%",
-          }
-        }
       >
         <div
           className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm px12-mm"
@@ -819,11 +804,6 @@ Array [
       </div>
       <div
         className="flex-child flex-child--grow"
-        style={
-          Object {
-            "width": "100%",
-          }
-        }
       >
         <div
           className="dr-ui--breadcrumb pt3 pb12 none block-mm"
@@ -1104,11 +1084,6 @@ Array [
     >
       <div
         className="flex-child flex-child--grow"
-        style={
-          Object {
-            "width": "100%",
-          }
-        }
       >
         <div
           className="dr-ui--breadcrumb pt3 pb12"
@@ -1314,11 +1289,6 @@ Array [
     >
       <div
         className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr36-mm "
-        style={
-          Object {
-            "width": "100%",
-          }
-        }
       >
         <div
           className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm px12-mm"
@@ -1489,11 +1459,6 @@ Array [
       </div>
       <div
         className="flex-child flex-child--grow"
-        style={
-          Object {
-            "width": "100%",
-          }
-        }
       >
         <div
           className="dr-ui--breadcrumb pt3 pb12 none block-mm"
@@ -1805,11 +1770,6 @@ Array [
     >
       <div
         className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr36-mm undefined"
-        style={
-          Object {
-            "width": "100%",
-          }
-        }
       >
         <div
           className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm px12-mm"
@@ -1941,11 +1901,6 @@ Array [
       </div>
       <div
         className="flex-child flex-child--grow"
-        style={
-          Object {
-            "width": "100%",
-          }
-        }
       >
         <div
           className="dr-ui--breadcrumb pt3 pb12 none block-mm"
