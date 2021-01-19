@@ -13,9 +13,6 @@ import classnames from 'classnames';
 // every option can be overriden in the frontMatter
 import layoutConfig from './layout.config.js';
 
-/* prevent flex-child from overflowing on IE 11 */
-const ie11FlexChild = { width: '100%' };
-
 export default class PageLayout extends React.Component {
   // render the page's sidebar
   renderSidebar = (config, switchedNavigation, parentPath) => {
@@ -23,7 +20,6 @@ export default class PageLayout extends React.Component {
     return (
       <div
         className={`flex-child flex-child--no-shrink w-full w180-mm w240-ml mr36-mm ${config.sidebarTheme}`}
-        style={ie11FlexChild}
       >
         <Sidebar
           {...this.props}
@@ -70,7 +66,7 @@ export default class PageLayout extends React.Component {
       }
     ]);
     return (
-      <div className="flex-child flex-child--grow" style={ie11FlexChild}>
+      <div className="flex-child flex-child--grow">
         {!frontMatter.hideBreadcrumbs && (
           <Breadcrumb
             themeWrapper={classnames('pt3 pb12', {
