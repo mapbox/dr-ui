@@ -134,7 +134,9 @@
   },
   "browserslist": [
     "> 5%",
-    "last 2 versions"
+    "last 2 versions",
+    "not IE 11",
+    "not dead"
   ],
   "prettier": "@mapbox/prettier-config-docs",
   "husky": {
