@@ -43,7 +43,7 @@ VimeoModal.propTypes = {
 // creates the video thumbnail with play button overlay
 export class VimeoThumbnail extends React.Component {
   render() {
-    const { image } = this.props;
+    const { children } = this.props;
     return (
       <React.Fragment>
         <div
@@ -59,18 +59,14 @@ export class VimeoThumbnail extends React.Component {
         >
           <VimeoPlayImage />
         </div>
-        <img
-          alt=""
-          className="w-full block round h-full mb24 mb0-ml"
-          src={image}
-        />
+        <div className="h-full mb24 mb0-ml">{children}</div>
       </React.Fragment>
     );
   }
 }
 
 VimeoThumbnail.propTypes = {
-  image: PropTypes.string.isRequired
+  children: PropTypes.node.isRequired
 };
 
 // creates play button icon
