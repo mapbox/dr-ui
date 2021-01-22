@@ -1,7 +1,8 @@
 # Changelog
 
-## Performance
+## 3.0.0
 
+- 🚨 Remove support for IE 11.
 - 🚨 Rename `GLWrapper` as `MapWrapper`.
   - You must define the `height` of the map. This will set the height of the loader to prevent a content layout shift after the map loads.
 - `DemoIframe` has a required `title` prop to provide a description of the iframe's content.
