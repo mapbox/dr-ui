@@ -73,7 +73,7 @@ class RelatedPage extends React.Component {
         label: 'video',
         color: 'purple',
         image: props.vimeoThumbnail ? (
-          <VimeoThumbnail image={props.vimeoThumbnail} />
+          <VimeoThumbnail>{props.vimeoThumbnail}</VimeoThumbnail>
         ) : (
           <VimeoPlayImage fallbackIcon={true} />
         )
@@ -164,7 +164,7 @@ RelatedPage.defaultProps = {
 };
 
 RelatedPage.propTypes = {
-  // Required. The content-type of the related page.
+  /** The content-type of the related page. */
   contentType: PropTypes.oneOf([
     'example',
     'glossary',
@@ -175,11 +175,11 @@ RelatedPage.propTypes = {
     'video',
     'default'
   ]),
-  // Required. Title of the related page in the context of the current page.
+  /** Title of the related page in the context of the current page. */
   title: PropTypes.string.isRequired,
-  // Required. Description of the related page in the context of the current page.
+  /** Description of the related page in the context of the current page. */
   children: PropTypes.node.isRequired,
-  // Required if `vimeoId` is not set. The link to the related page.
+  /** The link to the related page. Required if `vimeoId` is not set.  */
   url: (props, propName, componentName) => {
     if (props[propName] && typeof props[propName] !== 'string') {
       return new Error(
@@ -202,7 +202,7 @@ RelatedPage.propTypes = {
       );
     }
   },
-  // Required if `url` is not set. Pass a vimeoId to open the video in a modal.
+  /** The vimeoId of the video. Required if `url` is not set. */
   vimeoId: (props, propName, componentName) => {
     if (props[propName] && typeof props[propName] !== 'string') {
       return new Error(
@@ -217,7 +217,7 @@ RelatedPage.propTypes = {
       );
     }
   },
-  // Optional. Pass a thumbnail image of the video or an play button icon will be the fallback.
+  /** A thumbnail image of the video (using AppropriateImage). If undefined a play button icon will be the fallback. */
   vimeoThumbnail: (props, propName, componentName) => {
     if (
       props.contentType &&
@@ -227,6 +227,9 @@ RelatedPage.propTypes = {
       return new Error(
         `\`${propName}\` only works with \`contentType=video\` in ${componentName}`
       );
+    else if (props.vimeoThumbnail && typeof props.vimeoThumbnail === 'string') {
+      return new Error(`\`${propName}\` must be an AppropriateImage instance`);
+    }
   }
 };
 

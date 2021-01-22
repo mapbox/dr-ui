@@ -21,7 +21,7 @@ MapWrapper.propTypes = {
   /* Override the GL supported reason (often used for testing). */
   reason: PropTypes.string,
   /* The height of map. Required to prevent layout shift. */
-  height: PropTypes.number.isRequired
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
 };
 
 class Map extends React.Component {

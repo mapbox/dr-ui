@@ -5,6 +5,7 @@
 - 🚨 Rename `GLWrapper` as `MapWrapper`.
   - You must define the `height` of the map. This will set the height of the loader to prevent a content layout shift after the map loads.
 - `DemoIframe` has a required `title` prop to provide a description of the iframe's content.
+- 🚨The `vimeoThumbnail` prop in `RelatedPage` no longer accepts a string. It must be an `AppropriateImage` instance. Example: `vimeoThumbnail='./img/map-image.jpg'` becomes `vimeoThumbnail={<AppropriateImage alt='' imageId='map-image' />}`
 
 ## 2.3.0
 
