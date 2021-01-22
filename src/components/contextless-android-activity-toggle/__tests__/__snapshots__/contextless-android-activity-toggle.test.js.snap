@@ -35,7 +35,7 @@ exports[`contextless-android-activity-toggle Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "map<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getStyle</span><span class=\\"token punctuation\\">(</span><span class=\\"token keyword\\">new</span> <span class=\\"token class-name\\">Style<span class=\\"token punctuation\\">.</span>OnStyleLoaded</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                    "__html": "map<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getStyle</span><span class=\\"token punctuation\\">(</span><span class=\\"token keyword\\">new</span> <span class=\\"token class-name\\">Style</span><span class=\\"token punctuation\\">.</span><span class=\\"token class-name\\">OnStyleLoaded</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
                   }
                 }
                 style={
@@ -500,7 +500,7 @@ exports[`contextless-android-activity-toggle Two languages renders as expected 1
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "map<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getStyle</span><span class=\\"token punctuation\\">(</span><span class=\\"token keyword\\">new</span> <span class=\\"token class-name\\">Style<span class=\\"token punctuation\\">.</span>OnStyleLoaded</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                    "__html": "map<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getStyle</span><span class=\\"token punctuation\\">(</span><span class=\\"token keyword\\">new</span> <span class=\\"token class-name\\">Style</span><span class=\\"token punctuation\\">.</span><span class=\\"token class-name\\">OnStyleLoaded</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
                   }
                 }
                 style={
