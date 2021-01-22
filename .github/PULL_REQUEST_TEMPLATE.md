@@ -22,6 +22,5 @@ Open the test cases app locally on:
 - [ ] Firefox, no errors logged to console.
 - [ ] Safari, no errors logged to console.
 - [ ] Edge, no errors logged to console.
-- [ ] IE11, no errors logged to console.
 - [ ] Mobile Safari, no errors logged to console.
 - [ ] Android Chrome, no errors logged to console.

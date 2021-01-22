@@ -1,6 +1,6 @@
 {
   "name": "@mapbox/dr-ui",
-  "version": "3.0.0-perf.8",
+  "version": "3.0.0-perf.11",
   "description": "Mapbox frontend tools for documentation websites.",
   "main": "index.js",
   "scripts": {
@@ -35,13 +35,11 @@
   },
   "homepage": "https://github.com/mapbox/dr-ui#readme",
   "devDependencies": {
-    "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.11.4",
-    "@babel/plugin-proposal-class-properties": "^7.10.4",
-    "@babel/plugin-transform-arrow-functions": "^7.10.4",
-    "@babel/plugin-transform-object-assign": "^7.10.4",
-    "@babel/preset-env": "^7.11.0",
-    "@babel/preset-react": "^7.10.4",
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
     "@mapbox/appropriate-images-react": "^1.0.0",
     "@mapbox/batfish": "^2.1.0",
     "@mapbox/copyeditor": "^0.10.0",
@@ -111,7 +109,6 @@
     "github-slugger": "^1.3.0",
     "hastscript": "^5.0.0",
     "prismjs": "^1.21.0",
-    "react-app-polyfill": "^1.0.5",
     "react-aria-modal": "^4.0.0",
     "react-html-parser": "^2.0.2",
     "react-stickynode": "^2.1.1",
@@ -141,7 +138,8 @@
     "last 4 Safari versions",
     "iOS >= 7",
     "Android >= 4.4",
-    "IE >= 11"
+    "not IE 11",
+    "not dead"
   ],
   "prettier": "@mapbox/prettier-config-docs",
   "husky": {

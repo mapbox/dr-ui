@@ -156,7 +156,7 @@ overviewHeader:
   title: 'Dr. UI'
   features:
     - 'React components to build documentation sites'
-    - 'Support for IE 11 and all modern browsers'
+    - 'Support for all modern browsers'
   changelogLink: /dr-ui/changelog/
   installLink: https://github.com/mapbox/dr-ui/blob/main/README.md
   ghLink: https://github.com/mapbox/dr-ui

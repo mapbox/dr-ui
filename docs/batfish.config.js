@@ -47,7 +47,6 @@ module.exports = () => {
         require('../src/plugins/make-table-scroll')
       ]
     },
-    devBrowserslist: false, // allow site to load on IE 11
     dataSelectors: {
       navigation: (data) => buildNavigation({ siteBasePath, data, addPages }),
       filters: (data) => buildFilters(data),
