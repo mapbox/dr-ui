@@ -29,9 +29,9 @@ The [`PageLayout`](/dr-ui/#pagelayout) component comes with several layouts that
   page:
     'A page with a table of contents sidebar and content area. This layout is used by tutorials and guides.',
   example:
-    "This layout uses the SectionedNavigation component to display all topics for the site's examples. This layout is used by example pages.",
+    "A page with a content area (and optional table of contents) sidebar. This layout is used by example pages.",
   exampleIndex:
-    'This layout builds a homepage for an examples section. It organizes each example using the Cards component and uses the SectionedNavigation component to display all topics on the sidebar.',
+    'This layout builds a homepage for an examples section. It organizes each example using the Cards component and displays a filter.',
   full:
     'This layout does not have a sidebar or standard content area. This layout is used for building a custom layout.'
 }} />}}
