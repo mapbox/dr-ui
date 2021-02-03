@@ -121,6 +121,21 @@
       }
     },
     {
+      "filePath": "./docs/src/pages/guides/a11y.md",
+      "path": "/dr-ui/guides/a11y/",
+      "frontMatter": {
+        "title": "Accessibility test page",
+        "description": "Page for testing accessibility of components.",
+        "layout": "page",
+        "order": 6,
+        "contentType": "guide",
+        "products": ["Documentation"],
+        "prependJs": [
+          "import Note from '../../../../src/components/note/note';"
+        ]
+      }
+    },
+    {
       "filePath": "./docs/src/pages/guides/batfish-helpers.md",
       "path": "/dr-ui/guides/batfish-helpers/",
       "frontMatter": {

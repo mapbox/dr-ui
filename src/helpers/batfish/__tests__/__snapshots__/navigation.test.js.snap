@@ -1901,6 +1901,10 @@ Object {
       "parent": "/dr-ui/guides/",
       "title": "Guides",
     },
+    "/dr-ui/guides/a11y/": Object {
+      "parent": "/dr-ui/guides/",
+      "title": "Guides",
+    },
     "/dr-ui/guides/batfish-helpers/": Object {
       "parent": "/dr-ui/guides/",
       "title": "Guides",
@@ -1954,6 +1958,12 @@ Object {
           "order": 4,
           "path": "/dr-ui/guides/multi-structured/",
           "title": "Multi-structured sites",
+        },
+        Object {
+          "layout": "page",
+          "order": 6,
+          "path": "/dr-ui/guides/a11y/",
+          "title": "Accessibility test page",
         },
       ],
       "path": "/dr-ui/guides/",
