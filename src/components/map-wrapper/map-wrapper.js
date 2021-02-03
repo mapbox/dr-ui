@@ -3,7 +3,28 @@ import PropTypes from 'prop-types';
 import { supported, notSupportedReason } from '@mapbox/mapbox-gl-supported';
 import Note from '../note';
 
-export default class GLWrapper extends React.Component {
+/* set height of map to prevent content shift while mapbox-gl-support makes its decision */
+export default class MapWrapper extends React.Component {
+  render() {
+    const { reason, children, height } = this.props;
+    return (
+      <div style={{ minHeight: height }}>
+        <Map reason={reason}>{children}</Map>
+      </div>
+    );
+  }
+}
+
+MapWrapper.propTypes = {
+  /* The content that should be displayed if the browser supports Mapbox GL. */
+  children: PropTypes.node.isRequired,
+  /* Override the GL supported reason (often used for testing). */
+  reason: PropTypes.string,
+  /* The height of map. Required to prevent layout shift. */
+  height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
+};
+
+class Map extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -68,7 +89,7 @@ export default class GLWrapper extends React.Component {
   }
 }
 
-GLWrapper.propTypes = {
+Map.propTypes = {
   /* The content that should be displayed if the browser supports Mapbox GL. */
   children: PropTypes.node.isRequired,
   /* Override the GL supported reason (often used for testing). */

@@ -24,7 +24,7 @@
           "title": "Dr. UI",
           "features": [
             "React components to build documentation sites",
-            "Support for IE 11 and all modern browsers"
+            "Support for all modern browsers"
           ],
           "changelogLink": "/dr-ui/changelog/",
           "installLink": "https://github.com/mapbox/dr-ui/blob/main/README.md",
@@ -118,6 +118,21 @@
         "navOrder": 3,
         "layout": "example",
         "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/guides/a11y.md",
+      "path": "/dr-ui/guides/a11y/",
+      "frontMatter": {
+        "title": "Accessibility test page",
+        "description": "Page for testing accessibility of components.",
+        "layout": "page",
+        "order": 6,
+        "contentType": "guide",
+        "products": ["Documentation"],
+        "prependJs": [
+          "import Note from '../../../../src/components/note/note';"
+        ]
       }
     },
     {
@@ -260,6 +275,12 @@
     {
       "filePath": "./docs/src/pages/index.js",
       "path": "/dr-ui/",
+      "frontMatter": {}
+    },
+    {
+      "filePath": "./node_modules/@mapbox/batfish/dist/webpack/default-not-found.js",
+      "path": "/dr-ui/404/",
+      "is404": true,
       "frontMatter": {}
     }
   ]

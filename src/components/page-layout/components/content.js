@@ -47,7 +47,7 @@ Content.propTypes = {
 };
 
 export class ContentWrapper extends React.Component {
-  renderFeedback = () => {
+  renderFeedback = (position) => {
     const { location, section, layoutConfig } = this.props;
     const { layout } = layoutConfig;
 
@@ -59,6 +59,7 @@ export class ContentWrapper extends React.Component {
         site={SITE}
         location={location}
         section={section}
+        position={position}
         webhook={FORWARD_EVENT_WEBHOOK}
       />
     );
@@ -83,7 +84,7 @@ export class ContentWrapper extends React.Component {
           <OnThisPage headings={headings} themeWrapper="mb36-mxl mb18" />
         )}
         {showFeedback && (
-          <div className="none block-mxl">{this.renderFeedback()}</div>
+          <div className="none block-mxl">{this.renderFeedback('aside')}</div>
         )}
       </aside>
     );
@@ -141,7 +142,7 @@ export class ContentWrapper extends React.Component {
                   'block none-mxl': layout !== 'full' // hide feedback at bottom of page on larger screens unless layout is full (always show it on the bottom)
                 })}
               >
-                {this.renderFeedback()}
+                {this.renderFeedback('bottom')}
               </div>
             )}
           </div>
