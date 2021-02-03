@@ -28,4 +28,4 @@ Open the test cases app locally on:
 ## Before merge
 
 - [ ] Add entry to CHANGELOG.md to describe changes.
-- [ ] If updating dependencies or creating a release, run `npx browserslist@latest --update-db` to update the [browsers data](https://github.com/browserslist/browserslist#browsers-data-updating) and commit any changes to package-lock.json.
+- [ ] If updating dependencies or creating a release, run `npx browserslist@latest --update-db` to update the [browser data](https://github.com/browserslist/browserslist#browsers-data-updating) and commit any changes to package-lock.json.
