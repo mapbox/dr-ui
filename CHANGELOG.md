@@ -1,8 +1,13 @@
 # Changelog
 
-## Main
+## 3.0.0
 
-- Add `position` prop to `Feedback` component to identify place on page. [#390](https://github.com/mapbox/dr-ui/pull/390)
+- 🚨 Remove support for IE 11.
+- 🚨 Rename `GLWrapper` as `MapWrapper`.
+  - You must define the `height` of the map. This will set the height of the loader to prevent a content layout shift after the map loads.
+- `DemoIframe` has a required `title` prop to provide a description of the iframe's content.
+- 🚨The `vimeoThumbnail` prop in `RelatedPage` no longer accepts a string. It must be an `AppropriateImage` instance. Example: `vimeoThumbnail='./img/map-image.jpg'` becomes `vimeoThumbnail={<AppropriateImage alt='' imageId='map-image' />}`
+- Add `position` prop to `Feedback` component to identify place on page.
 
 ## 2.3.0
 
