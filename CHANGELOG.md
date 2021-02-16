@@ -2,7 +2,7 @@
 
 ## 3.0.1
 
-- Fix docs-prose.css to not apply blue color to code elements that are descendants of elements with `anchor` class (headings).
+- Fix docs-prose.css to not apply blue color to code elements that are descendants of elements with `anchor` class (headings). [#409](https://github.com/mapbox/dr-ui/pull/409)
 
 ## 3.0.0
 
