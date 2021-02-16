@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.0.1
+
+- Fix docs-prose.css to not apply blue color to code elements that are descendants of elements with `anchor` class (headings).
+
 ## 3.0.0
 
 - 🚨 Remove support for IE 11.
