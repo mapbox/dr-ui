@@ -1,6 +1,6 @@
 # Changelog
 
-## Main
+## 3.1.0
 
 - Update prismjs, rehype-prism. [#411](https://github.com/mapbox/dr-ui/pull/411)
 - 🚨 Deprecates `HelpPage`, `NavigationDropdown`, `SectionedNavigation`, `TopbarSticker`, and `Topbar` components. [#407](https://github.com/mapbox/dr-ui/pull/407)
