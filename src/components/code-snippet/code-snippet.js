@@ -72,7 +72,7 @@ CodeSnippet.propTypes = {
   filename: PropTypes.string, // (optional) name of the file to add context to the code block
   maxHeight: PropTypes.number, // (optional) maximum height of the code block, default is set at 300
   edit: PropTypes.shape({
-    css: PropTypes.string.isRequired, // CSS panel contents
+    css: PropTypes.string, // CSS panel contents
     js: PropTypes.string.isRequired, // JS panel contents
     html: PropTypes.string.isRequired, // HTML panel contents
     head: PropTypes.string, // extra html to add to the head of the document (CodePen)
