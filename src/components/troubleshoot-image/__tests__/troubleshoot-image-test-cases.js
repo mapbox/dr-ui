@@ -1,10 +1,12 @@
+import React from 'react';
 import TroubleshootImage from '../troubleshoot-image';
+import Basic from '../examples/basic';
 
 const testCases = {};
 
 testCases.basic = {
-  component: TroubleshootImage,
-  description: 'Basic'
+  description: 'Basic',
+  element: <Basic />
 };
 
 testCases.bigger = {

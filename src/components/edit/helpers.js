@@ -17,7 +17,7 @@ export function extractor(fullHtml) {
 
   // extract inline css from html, append to css var, then remove from html output
   if (moreCss) {
-    moreCss.forEach(c => {
+    moreCss.forEach((c) => {
       css += c.replace(/<[^>]*>/g, '');
     });
     html = `${html.replace(cssRegex, '')}`;
@@ -27,7 +27,7 @@ export function extractor(fullHtml) {
   if (fullHtml.match(srcRegex)) {
     const srcArr = fullHtml
       .match(srcRegex)
-      .map(src => src.replace('src=', '').replace(/["']/g, ''));
+      .map((src) => src.replace('src=', '').replace(/["']/g, ''));
     resources.js = resources.js.concat(srcArr);
     html = `${html.replace(/<script[\s\S]*?>[\s\S]*?<\/script>/g, '')}`;
   }
@@ -35,7 +35,7 @@ export function extractor(fullHtml) {
   if (fullHtml.match(hrefRegex)) {
     const hrefArr = fullHtml
       .match(hrefRegex)
-      .map(src => src.replace('href=', '').replace(/["']/g, ''));
+      .map((src) => src.replace('href=', '').replace(/["']/g, ''));
     resources.css = resources.css.concat(hrefArr);
     html = `${html.replace(/<link[\s\S]*?>/g, '')}`;
   }

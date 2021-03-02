@@ -12,9 +12,7 @@ describe('search', () => {
 
     beforeEach(() => {
       testCase = testCases.basic;
-      wrapper = renderer.create(
-        React.createElement(testCase.component, testCase.props)
-      );
+      wrapper = renderer.create(testCase.element);
       tree = wrapper.toJSON();
     });
 
@@ -64,9 +62,7 @@ describe('search', () => {
 
     beforeEach(() => {
       testCase = testCases.disableModal;
-      wrapper = renderer.create(
-        React.createElement(testCase.component, testCase.props)
-      );
+      wrapper = renderer.create(testCase.element);
       tree = wrapper.toJSON();
     });
 
@@ -75,7 +71,7 @@ describe('search', () => {
     });
 
     test('input element exists', () => {
-      visit(tree, 'input', node => {
+      visit(tree, 'input', (node) => {
         expect(node.type).toBe('input');
       });
     });
@@ -88,9 +84,7 @@ describe('search', () => {
 
     beforeEach(() => {
       testCase = testCases.narrow;
-      wrapper = renderer.create(
-        React.createElement(testCase.component, testCase.props)
-      );
+      wrapper = renderer.create(testCase.element);
       tree = wrapper.toJSON();
     });
 
@@ -99,25 +93,9 @@ describe('search', () => {
     });
 
     test('title element exists [a11y]', () => {
-      visit(tree, 'title', node => {
+      visit(tree, 'title', (node) => {
         expect(node.children[0]).toBe('Search');
       });
-    });
-  });
-
-  describe(testCases.withLayout.description, () => {
-    let testCase;
-    let wrapper;
-    let tree;
-
-    beforeEach(() => {
-      testCase = testCases.withLayout;
-      wrapper = renderer.create(testCase.element);
-      tree = wrapper.toJSON();
-    });
-
-    test('renders as expected', () => {
-      expect(tree).toMatchSnapshot();
     });
   });
 
@@ -141,6 +119,22 @@ describe('search', () => {
     test('uses provided connector', () => {
       expect(testCase.props.connector).toBeInstanceOf(SiteSearchAPIConnector);
       expect(testCase.props.connector.engineKey).toBe('123');
+    });
+  });
+
+  describe(testCases.resultsOnly.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.resultsOnly;
+      wrapper = renderer.create(testCase.element);
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
     });
   });
 });

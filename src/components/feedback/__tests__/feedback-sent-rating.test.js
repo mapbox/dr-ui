@@ -1,10 +1,7 @@
 import React from 'react';
 import Feedback from '..';
 import toJson from 'enzyme-to-json';
-import { configure, shallow, mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-
-configure({ adapter: new Adapter() });
+import { shallow, mount } from 'enzyme';
 
 describe('Sent helpful rating - yes', () => {
   const feedback = mount(
@@ -14,19 +11,21 @@ describe('Sent helpful rating - yes', () => {
         pathname: '/mapbox-gl-js/api/',
         hash: '#lnglat'
       }}
-      user={{
-        id: 'crocsfan19',
-        email: 'crocsfan19@mapbox.com',
-        plan: {
-          id: 'starter'
-        }
-      }}
       webhook={{
         production: '',
         staging: ''
       }}
     />
   );
+  feedback.setState({
+    user: {
+      id: 'crocsfan19',
+      email: 'crocsfan19@mapbox.com',
+      plan: {
+        id: 'starter'
+      }
+    }
+  });
   test('clicked yes', () => {
     feedback.find('#dr-ui--feedback-page-yes').simulate('click');
     expect(feedback.state()).toEqual({
@@ -54,7 +53,14 @@ describe('Sent helpful rating - yes', () => {
       },
       feedback: undefined,
       feedbackSent: undefined,
-      helpful: true
+      helpful: true,
+      user: {
+        id: 'crocsfan19',
+        email: 'crocsfan19@mapbox.com',
+        plan: {
+          id: 'starter'
+        }
+      }
     });
   });
 });
@@ -67,19 +73,22 @@ describe('Sent helpful rating - no', () => {
         pathname: '/mapbox-gl-js/api/',
         hash: '#lnglat'
       }}
-      user={{
-        id: 'crocsfan19',
-        email: 'crocsfan19@mapbox.com',
-        plan: {
-          id: 'starter'
-        }
-      }}
       webhook={{
         production: '',
         staging: ''
       }}
     />
   );
+
+  feedback.setState({
+    user: {
+      id: 'crocsfan19',
+      email: 'crocsfan19@mapbox.com',
+      plan: {
+        id: 'starter'
+      }
+    }
+  });
   test('clicked no', () => {
     feedback.find('#dr-ui--feedback-page-no').simulate('click');
     expect(feedback.state()).toEqual({
@@ -107,7 +116,14 @@ describe('Sent helpful rating - no', () => {
       },
       feedback: undefined,
       feedbackSent: undefined,
-      helpful: false
+      helpful: false,
+      user: {
+        id: 'crocsfan19',
+        email: 'crocsfan19@mapbox.com',
+        plan: {
+          id: 'starter'
+        }
+      }
     });
   });
 });

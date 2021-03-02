@@ -1,34 +1,22 @@
 /* eslint-disable xss/no-mixed-html */
-
+import React from 'react';
 import CodeSnippet from '../code-snippet';
 import { highlightHtml } from '../../highlight/html';
 import * as helpers from '../../edit/helpers.js';
+import Basic from '../examples/basic';
+import Everything from '../examples/everything';
 
 const testCases = {};
 const noRenderCases = {};
 
+testCases.basic = {
+  description: 'A basic CodeSnippey',
+  element: <Basic />
+};
+
 testCases.everything = {
-  component: CodeSnippet,
   description: 'A CodeSnippet with every feature (edit buttons, title)',
-  props: {
-    code: `<h1>hi</h1>`,
-    highlighter: () => highlightHtml,
-    filename: 'index.html',
-    edit: {
-      html: '<h1>gurd murn!</h1>',
-      css: 'h1 {color: red}',
-      js: "console.log('hurn')",
-      resources: {
-        js: [],
-        css: []
-      },
-      frontMatter: {
-        title: 'My Code',
-        description: 'cool code by mapbox',
-        pathname: '/site'
-      }
-    }
-  }
+  element: <Everything />
 };
 
 testCases.noEdit = {

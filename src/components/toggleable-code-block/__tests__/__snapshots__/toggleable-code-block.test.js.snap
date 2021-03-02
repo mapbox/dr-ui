@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
+exports[`toggleable-code-block Basic renders as expected 1`] = `
 <div
   className="my24"
 >
@@ -236,7 +236,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
             className="pr12 py3 bg-white"
             style={
               Object {
-                "paddingLeft": 26.45,
+                "paddingLeft": 55.349999999999994,
               }
             }
           >
@@ -245,7 +245,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
               data-content={2}
               style={
                 Object {
-                  "marginLeft": -20.45,
+                  "marginLeft": -49.349999999999994,
                   "marginTop": -3,
                 }
               }
@@ -338,7 +338,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
             className="pr12 py3 bg-white"
             style={
               Object {
-                "paddingLeft": 26.45,
+                "paddingLeft": 55.349999999999994,
               }
             }
           >
@@ -347,7 +347,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
               data-content={5}
               style={
                 Object {
-                  "marginLeft": -20.45,
+                  "marginLeft": -49.349999999999994,
                   "marginTop": -3,
                 }
               }
@@ -371,7 +371,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
             className="pr12 py3 bg-white"
             style={
               Object {
-                "paddingLeft": 26.45,
+                "paddingLeft": 55.349999999999994,
               }
             }
           >
@@ -380,7 +380,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
               data-content={6}
               style={
                 Object {
-                  "marginLeft": -20.45,
+                  "marginLeft": -49.349999999999994,
                   "marginTop": -3,
                 }
               }
@@ -404,7 +404,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
             className="pr12 py3 bg-white"
             style={
               Object {
-                "paddingLeft": 26.45,
+                "paddingLeft": 55.349999999999994,
               }
             }
           >
@@ -413,7 +413,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
               data-content={7}
               style={
                 Object {
-                  "marginLeft": -20.45,
+                  "marginLeft": -49.349999999999994,
                   "marginTop": -3,
                 }
               }
@@ -437,7 +437,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
             className="pr12 py3 bg-white"
             style={
               Object {
-                "paddingLeft": 26.45,
+                "paddingLeft": 55.349999999999994,
               }
             }
           >
@@ -446,7 +446,7 @@ exports[`toggleable-code-block Java highlighting renders as expected 1`] = `
               data-content={8}
               style={
                 Object {
-                  "marginLeft": -20.45,
+                  "marginLeft": -49.349999999999994,
                   "marginTop": -3,
                 }
               }

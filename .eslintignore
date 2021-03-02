@@ -1,11 +1,10 @@
-node_modules
 *.log
-dist
 coverage
 .DS_Store
-**/_batfish*
-src/docs/data
-src/components/*/index.js
-packages/**/package-lock.json
+_batfish*
 pkg
 src/test-cases-app/component-index.js
+dist
+docs/src/data/components.js
+_site*
+docs/src/components/snippets/

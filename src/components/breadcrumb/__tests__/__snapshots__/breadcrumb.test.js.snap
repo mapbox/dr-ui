@@ -1,0 +1,342 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb Basic renders as expected 1`] = `
+<div
+  className="dr-ui--breadcrumb "
+  data-swiftype-index="false"
+>
+  <span
+    className="none inline-block-mm"
+  >
+    <a
+      className="link"
+      href="/mapbox-gl-js/"
+    >
+      Mapbox GL JS
+    </a>
+    <span
+      className="color-gray-light inline-block-mm none px6"
+    >
+      <svg
+        className="events-none icon inline-block align-t"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 18,
+            "width": 18,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-chevron-right"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </span>
+  </span>
+  <span
+    className=""
+  >
+    <span
+      className="color-gray-light inline-block none-mm pr6"
+    >
+      <svg
+        className="events-none icon inline-block align-t"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 18,
+            "width": 18,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-arrow-left"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </span>
+    <a
+      className="link"
+      href="/mapbox-gl-js/examples/"
+    >
+      Examples
+    </a>
+    <span
+      className="color-gray-light inline-block-mm none px6"
+    >
+      <svg
+        className="events-none icon inline-block align-t"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 18,
+            "width": 18,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-chevron-right"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </span>
+  </span>
+  <span
+    className="color-gray none inline-block-mm"
+  >
+    Display a map
+  </span>
+</div>
+`;
+
+exports[`Breadcrumb Example of Platform docs site renders as expected 1`] = `
+<div
+  className="dr-ui--breadcrumb "
+  data-swiftype-index="false"
+>
+  <span
+    className="none inline-block-mm"
+  >
+    <a
+      className="link"
+      href="https://platform.mapbox.com"
+    >
+      Platform
+    </a>
+    <span
+      className="color-gray-light inline-block-mm none px6"
+    >
+      <svg
+        className="events-none icon inline-block align-t"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 18,
+            "width": 18,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-chevron-right"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </span>
+  </span>
+  <span
+    className="none inline-block-mm"
+  >
+    <a
+      className="link"
+      href="/developer-experience/ci-systems/"
+    >
+      CI Systems
+    </a>
+    <span
+      className="color-gray-light inline-block-mm none px6"
+    >
+      <svg
+        className="events-none icon inline-block align-t"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 18,
+            "width": 18,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-chevron-right"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </span>
+  </span>
+  <span
+    className=""
+  >
+    <span
+      className="color-gray-light inline-block none-mm pr6"
+    >
+      <svg
+        className="events-none icon inline-block align-t"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 18,
+            "width": 18,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-arrow-left"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </span>
+    <a
+      className="link"
+      href="/developer-experience/ci-systems/reference/"
+    >
+      Reference
+    </a>
+    <span
+      className="color-gray-light inline-block-mm none px6"
+    >
+      <svg
+        className="events-none icon inline-block align-t"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 18,
+            "width": 18,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-chevron-right"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </span>
+  </span>
+  <span
+    className="color-gray none inline-block-mm"
+  >
+    Managing credentials
+  </span>
+</div>
+`;
+
+exports[`Breadcrumb Has subsite renders as expected 1`] = `
+<div
+  className="dr-ui--breadcrumb "
+  data-swiftype-index="false"
+>
+  <span
+    className="none inline-block-mm"
+  >
+    <a
+      className="link"
+      href="/android/"
+    >
+      Android
+    </a>
+    <span
+      className="color-gray-light inline-block-mm none px6"
+    >
+      <svg
+        className="events-none icon inline-block align-t"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 18,
+            "width": 18,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-chevron-right"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </span>
+  </span>
+  <span
+    className="none inline-block-mm"
+  >
+    <a
+      className="link"
+      href="/android/maps/overview/"
+    >
+      Maps SDK
+    </a>
+    <span
+      className="color-gray-light inline-block-mm none px6"
+    >
+      <svg
+        className="events-none icon inline-block align-t"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 18,
+            "width": 18,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-chevron-right"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </span>
+  </span>
+  <span
+    className=""
+  >
+    <span
+      className="color-gray-light inline-block none-mm pr6"
+    >
+      <svg
+        className="events-none icon inline-block align-t"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 18,
+            "width": 18,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-arrow-left"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </span>
+    <a
+      className="link"
+      href="/android/maps/overview/"
+    >
+      Overview
+    </a>
+    <span
+      className="color-gray-light inline-block-mm none px6"
+    >
+      <svg
+        className="events-none icon inline-block align-t"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 18,
+            "width": 18,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-chevron-right"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </span>
+  </span>
+  <span
+    className="color-gray none inline-block-mm"
+  >
+    Camera
+  </span>
+</div>
+`;
+
+exports[`Breadcrumb Hide breadcrumb if there is only one item renders as expected 1`] = `null`;

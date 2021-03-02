@@ -11,7 +11,7 @@ export default class ToggleableCodeBlock extends React.Component {
     limitHeight: true
   };
 
-  renderSnippet = code => {
+  renderSnippet = (code) => {
     const {
       highlightedCode,
       limitHeight,
@@ -48,7 +48,7 @@ export default class ToggleableCodeBlock extends React.Component {
     return (
       <CodeToggle
         id={id}
-        onChange={value => {
+        onChange={(value) => {
           changeLanguage(value);
         }}
         options={options}
@@ -56,7 +56,7 @@ export default class ToggleableCodeBlock extends React.Component {
     );
   };
 
-  checkPreference = language => {
+  checkPreference = (language) => {
     const { selectedLanguage } = this.props;
     return selectedLanguage === language;
   };

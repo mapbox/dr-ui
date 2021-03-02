@@ -52,7 +52,8 @@ pre[class*='language-'] {
 }
 
 .namespace {
-  opacity: 0.7;
+  opacity: 1 !important;
+  color: #b43b71; /* bg-dark-pink */
 }
 
 .token.property,

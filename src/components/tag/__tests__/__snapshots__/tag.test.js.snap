@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`back-top-top-button Beta tag renders as expected 1`] = `
+exports[`tag Beta tag renders as expected 1`] = `
 <div
   className="inline-block"
   onBlur={[Function]}
@@ -10,7 +10,7 @@ exports[`back-top-top-button Beta tag renders as expected 1`] = `
 >
   <div
     aria-describedby="tooltip-1"
-    className="txt-s txt-bold round px6 inline-block cursor-default border"
+    className="txt-bold round inline-block cursor-default txt-s border px6"
     style={
       Object {
         "background": "#f1f3fd",
@@ -24,6 +24,76 @@ exports[`back-top-top-button Beta tag renders as expected 1`] = `
   <div
     className="hide-visually"
     id="tooltip-1"
+    role="tooltip"
+  >
+    <div
+      className="txt-s wmax120"
+    >
+      This feature is in public beta and is subject to changes.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`tag Custom tag renders as expected 1`] = `
+<div
+  className="inline-block"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+>
+  <div
+    aria-describedby="tooltip-2"
+    className="txt-bold round inline-block cursor-default txt-s border px6"
+    style={
+      Object {
+        "background": "#FEDADA",
+        "borderColor": "#FD8383",
+        "color": "#bb2224",
+      }
+    }
+  >
+    Limited access
+  </div>
+  <div
+    className="hide-visually"
+    id="tooltip-2"
+    role="tooltip"
+  >
+    <div
+      className="txt-s wmax120"
+    >
+      Contact us for access to this feature.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`tag small variant renders as expected 1`] = `
+<div
+  className="inline-block"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+>
+  <div
+    aria-describedby="tooltip-3"
+    className="txt-bold round inline-block cursor-default txt-xs px6"
+    style={
+      Object {
+        "background": "#f1f3fd",
+        "borderColor": "#0428c8",
+        "color": "#0c248d",
+      }
+    }
+  >
+    Beta
+  </div>
+  <div
+    className="hide-visually"
+    id="tooltip-3"
     role="tooltip"
   >
     <div

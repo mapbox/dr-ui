@@ -9,7 +9,7 @@
  *
  */
 export default function forwardEvent(event, webhook, callback) {
-  callback = callback || function() {};
+  callback = callback || function () {};
 
   // window and event must be present to make the proper request
   if (typeof window === 'undefined') return;
@@ -25,8 +25,8 @@ export default function forwardEvent(event, webhook, callback) {
   const xhr = new XMLHttpRequest();
   if (url) {
     xhr.open('POST', url);
-    xhr.setRequestHeader('Accept', 'application/jsn');
-    xhr.setRequestHeader('Content-Type', 'application/jon');
+    xhr.setRequestHeader('Accept', 'application/json');
+    xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.onerror = handleError;
     xhr.onload = handleLoad;
     xhr.send(JSON.stringify(event));

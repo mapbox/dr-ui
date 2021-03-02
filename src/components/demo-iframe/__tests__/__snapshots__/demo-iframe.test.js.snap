@@ -3,8 +3,9 @@
 exports[`demo-iframe \`gl\` is false renders as expected 1`] = `
 <div>
   <iframe
-    height="400px"
+    height={400}
     src="https://giphy.com/embed/ule4vhcY1xEKQ"
+    title="Cool gif"
     width="100%"
   />
   <a
@@ -42,69 +43,61 @@ exports[`demo-iframe \`gl\` is false renders as expected 1`] = `
 
 exports[`demo-iframe Basic renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
   style={
     Object {
-      "background": "#feefe2",
-      "color": "#78471c",
+      "minHeight": 430,
     }
   }
 >
   <div
-    className="flex-child mr18 none block-mm pt3"
+    className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
+    style={
+      Object {
+        "background": "#feefe2",
+        "color": "#78471c",
+      }
+    }
   >
     <div
-      className="bg-orange-light round-full color-orange flex-parent flex-parent--center-main flex-parent--center-cross"
-      style={
-        Object {
-          "height": 50,
-          "width": 50,
-        }
-      }
+      className="flex-child mr18 none block-mm pt3"
     >
-      <svg
-        className="events-none icon"
-        focusable="false"
-        role="presentation"
+      <div
+        className="bg-orange-light round-full color-orange flex-parent flex-parent--center-main flex-parent--center-cross"
         style={
           Object {
-            "height": 40,
-            "width": 40,
+            "height": 50,
+            "width": 50,
           }
         }
       >
-        <use
-          xlinkHref="#icon-alert"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        />
-      </svg>
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 40,
+              "width": 40,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-alert"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </div>
     </div>
-  </div>
-  <div
-    className="flex-child prose"
-  >
     <div
-      className="txt-bold txt-m mb6"
+      className="flex-child prose"
     >
-      Mapbox GL unsupported
+      <div
+        className="txt-bold txt-m mb6"
+      >
+        Mapbox GL unsupported
+      </div>
+      Mapbox GL is unsupported due to insufficient worker support.
     </div>
-    Mapbox GL requires
-     
-    <a
-      className="link"
-      href="https://caniuse.com/#feat=webgl"
-    >
-      WebGL support
-    </a>
-    . Please check that you are using a supported browser and that
-     
-    <a
-      className="link"
-      href="https://get.webgl.org/"
-    >
-      WebGL is enabled
-    </a>
-    .
   </div>
 </div>
 `;
@@ -113,69 +106,61 @@ exports[`demo-iframe Missing token will return null component renders as expecte
 
 exports[`demo-iframe With token renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
   style={
     Object {
-      "background": "#feefe2",
-      "color": "#78471c",
+      "minHeight": 430,
     }
   }
 >
   <div
-    className="flex-child mr18 none block-mm pt3"
+    className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
+    style={
+      Object {
+        "background": "#feefe2",
+        "color": "#78471c",
+      }
+    }
   >
     <div
-      className="bg-orange-light round-full color-orange flex-parent flex-parent--center-main flex-parent--center-cross"
-      style={
-        Object {
-          "height": 50,
-          "width": 50,
-        }
-      }
+      className="flex-child mr18 none block-mm pt3"
     >
-      <svg
-        className="events-none icon"
-        focusable="false"
-        role="presentation"
+      <div
+        className="bg-orange-light round-full color-orange flex-parent flex-parent--center-main flex-parent--center-cross"
         style={
           Object {
-            "height": 40,
-            "width": 40,
+            "height": 50,
+            "width": 50,
           }
         }
       >
-        <use
-          xlinkHref="#icon-alert"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        />
-      </svg>
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 40,
+              "width": 40,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-alert"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </div>
     </div>
-  </div>
-  <div
-    className="flex-child prose"
-  >
     <div
-      className="txt-bold txt-m mb6"
+      className="flex-child prose"
     >
-      Mapbox GL unsupported
+      <div
+        className="txt-bold txt-m mb6"
+      >
+        Mapbox GL unsupported
+      </div>
+      Mapbox GL is unsupported due to insufficient worker support.
     </div>
-    Mapbox GL requires
-     
-    <a
-      className="link"
-      href="https://caniuse.com/#feat=webgl"
-    >
-      WebGL support
-    </a>
-    . Please check that you are using a supported browser and that
-     
-    <a
-      className="link"
-      href="https://get.webgl.org/"
-    >
-      WebGL is enabled
-    </a>
-    .
   </div>
 </div>
 `;

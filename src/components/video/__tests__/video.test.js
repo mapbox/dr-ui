@@ -9,7 +9,7 @@ describe('video', () => {
     let tree;
 
     beforeEach(() => {
-      window.matchMedia = jest.fn().mockImplementation(query => {
+      window.matchMedia = jest.fn().mockImplementation((query) => {
         return {
           matches: false,
           media: query,
@@ -20,9 +20,7 @@ describe('video', () => {
       });
 
       testCase = testCases.basic;
-      wrapper = renderer.create(
-        React.createElement(testCase.component, testCase.props)
-      );
+      wrapper = renderer.create(testCase.element);
       tree = wrapper.toJSON();
     });
 
@@ -37,7 +35,7 @@ describe('video', () => {
     let tree;
 
     beforeEach(() => {
-      window.matchMedia = jest.fn().mockImplementation(query => {
+      window.matchMedia = jest.fn().mockImplementation((query) => {
         return {
           matches: true,
           media: query,

@@ -1,0 +1,49 @@
+{
+  "Features": [
+    "Feedback",
+    "LevelIndicator",
+    "Note",
+    "RelatedPage",
+    "Search",
+    "Tag",
+    "Browser",
+    "DemoIframe",
+    "MapWrapper",
+    "Phone",
+    "Video"
+  ],
+  "Code": [
+    "AndroidLayoutCodeBlock",
+    "CodeSnippet",
+    "CodeSnippetTitle",
+    "CodeToggle",
+    "ContextlessAndroidActivityToggle",
+    "ContextlessIosViewControllerToggle",
+    "Edit",
+    "Highlight",
+    "NumberedCodeSnippet",
+    "ToggleableCodeBlock"
+  ],
+  "Layout": [
+    "PageLayout",
+    "OnThisPage",
+    "BackToTopButton",
+    "OverviewHeader",
+    "NavigationAccordion",
+    "ProductMenu",
+    "Card",
+    "CardContainer",
+    "Breadcrumb",
+    "AnalyticsShell",
+    "ErrorBoundary"
+  ],
+  "Images": [
+    "BookImage",
+    "BookletImage",
+    "ContactImage",
+    "ExampleImage",
+    "GlossaryImage",
+    "PlaygroundImage",
+    "TroubleshootImage"
+  ]
+}

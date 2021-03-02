@@ -6,7 +6,7 @@ import Icon from '@mapbox/mr-ui/icon';
 import { titleGenerator } from './title-generator';
 
 class SearchResult extends React.Component {
-  returnRaw = item => {
+  returnRaw = (item) => {
     if (item && item.raw && typeof item.raw !== 'string')
       return item.raw.join(', ');
     else return item && item.raw ? item.raw : '';
@@ -14,8 +14,12 @@ class SearchResult extends React.Component {
 
   render() {
     const { props } = this;
-    const getItemProps = props.downshiftProps.getItemProps;
-    const highlighted = props.downshiftProps.highlightedIndex === props.index;
+    const getItemProps = props.downshiftProps
+      ? props.downshiftProps.getItemProps
+      : () => {};
+    const highlighted =
+      props.downshiftProps &&
+      props.downshiftProps.highlightedIndex === props.index;
     const site = this.returnRaw(props.result.site);
     const subsite = this.returnRaw(props.result.subsite);
     const type = this.returnRaw(props.result.contentType);
@@ -29,12 +33,12 @@ class SearchResult extends React.Component {
     const resultTitle = titleGenerator(title, subsite, site).reverse();
     return (
       <div
-        className="py12 px18"
         {...getItemProps({
           key: props.result.id.raw,
           item: props.result,
-          className: `${highlighted &&
-            'bg-gray-faint'} py12 px18 link--gray cursor-pointer`
+          className: `${highlighted && 'bg-gray-faint'} px12 ${
+            props.themeCompact ? 'py6 txt-s' : 'py12'
+          } link--gray cursor-pointer`
         })}
       >
         {title && url && (
@@ -97,7 +101,8 @@ class SearchResult extends React.Component {
 SearchResult.propTypes = {
   result: PropTypes.object,
   index: PropTypes.number,
-  downshiftProps: PropTypes.object
+  downshiftProps: PropTypes.object,
+  themeCompact: PropTypes.bool
 };
 
 export default SearchResult;

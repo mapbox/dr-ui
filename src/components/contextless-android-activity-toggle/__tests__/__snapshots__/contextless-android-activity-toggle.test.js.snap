@@ -35,139 +35,7 @@ exports[`contextless-android-activity-toggle Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "map<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getStyle</span><span class=\\"token punctuation\\">(</span><span class=\\"token keyword\\">new</span> <span class=\\"token class-name\\">Style</span><span class=\\"token punctuation\\">.</span><span class=\\"token class-name\\">OnStyleLoaded</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
-                  }
-                }
-                style={
-                  Object {
-                    "marginLeft": 14.45,
-                    "textIndent": -14.45,
-                  }
-                }
-              />
-            </div>
-            <div
-              className="pr12"
-              style={
-                Object {
-                  "paddingLeft": 26.45,
-                }
-              }
-            >
-              <div
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "<span class=\\"token annotation punctuation\\">@Override</span>",
-                  }
-                }
-                style={
-                  Object {
-                    "marginLeft": 14.45,
-                    "textIndent": -14.45,
-                  }
-                }
-              />
-            </div>
-            <div
-              className="pr12"
-              style={
-                Object {
-                  "paddingLeft": 26.45,
-                }
-              }
-            >
-              <div
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "<span class=\\"token keyword\\">public</span> <span class=\\"token keyword\\">void</span> <span class=\\"token function\\">onStyleLoaded</span><span class=\\"token punctuation\\">(</span><span class=\\"token annotation punctuation\\">@NonNull</span> <span class=\\"token class-name\\">Style</span> style<span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
-                  }
-                }
-                style={
-                  Object {
-                    "marginLeft": 14.45,
-                    "textIndent": -14.45,
-                  }
-                }
-              />
-            </div>
-            <div
-              className="pr12"
-              style={
-                Object {
-                  "paddingLeft": 26.45,
-                }
-              }
-            >
-              <div
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": " ",
-                  }
-                }
-                style={
-                  Object {
-                    "marginLeft": 14.45,
-                    "textIndent": -14.45,
-                  }
-                }
-              />
-            </div>
-            <div
-              className="pr12"
-              style={
-                Object {
-                  "paddingLeft": 40.9,
-                }
-              }
-            >
-              <div
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "<span class=\\"token class-name\\">Layer</span> settlementLabelLayer <span class=\\"token operator\\">=</span> style<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getLayer</span><span class=\\"token punctuation\\">(</span><span class=\\"token string\\">\\"settlement-label\\"</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
-                  }
-                }
-                style={
-                  Object {
-                    "marginLeft": 14.45,
-                    "textIndent": -14.45,
-                  }
-                }
-              />
-            </div>
-            <div
-              className="pr12"
-              style={
-                Object {
-                  "paddingLeft": 40.9,
-                }
-              }
-            >
-              <div
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": " ",
-                  }
-                }
-                style={
-                  Object {
-                    "marginLeft": 14.45,
-                    "textIndent": -14.45,
-                  }
-                }
-              />
-            </div>
-            <div
-              className="pr12"
-              style={
-                Object {
-                  "paddingLeft": 40.9,
-                }
-              }
-            >
-              <div
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "<span class=\\"token keyword\\">if</span> <span class=\\"token punctuation\\">(</span>settlementLabelLayer <span class=\\"token operator\\">!=</span> <span class=\\"token keyword\\">null</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                    "__html": "map<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getStyle</span><span class=\\"token punctuation\\">(</span><span class=\\"token keyword\\">new</span> <span class=\\"token class-name\\">Style<span class=\\"token punctuation\\">.</span>OnStyleLoaded</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
                   }
                 }
                 style={
@@ -189,7 +57,7 @@ exports[`contextless-android-activity-toggle Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "settlementLabelLayer<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">setProperties</span><span class=\\"token punctuation\\">(</span><span class=\\"token function\\">textField</span><span class=\\"token punctuation\\">(</span><span class=\\"token string\\">\\"{name_ru}\\"</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
+                    "__html": "<span class=\\"token annotation punctuation\\">@Override</span>",
                   }
                 }
                 style={
@@ -204,36 +72,14 @@ exports[`contextless-android-activity-toggle Basic renders as expected 1`] = `
               className="pr12"
               style={
                 Object {
-                  "paddingLeft": 40.9,
+                  "paddingLeft": 55.349999999999994,
                 }
               }
             >
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token punctuation\\">}</span>",
-                  }
-                }
-                style={
-                  Object {
-                    "marginLeft": 14.45,
-                    "textIndent": -14.45,
-                  }
-                }
-              />
-            </div>
-            <div
-              className="pr12"
-              style={
-                Object {
-                  "paddingLeft": 26.45,
-                }
-              }
-            >
-              <div
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "<span class=\\"token punctuation\\">}</span>",
+                    "__html": "<span class=\\"token keyword\\">public</span> <span class=\\"token keyword\\">void</span> <span class=\\"token function\\">onStyleLoaded</span><span class=\\"token punctuation\\">(</span><span class=\\"token annotation punctuation\\">@NonNull</span> <span class=\\"token class-name\\">Style</span> style<span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
                   }
                 }
                 style={
@@ -249,6 +95,160 @@ exports[`contextless-android-activity-toggle Basic renders as expected 1`] = `
               style={
                 Object {
                   "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": " ",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 69.8,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token class-name\\">Layer</span> settlementLabelLayer <span class=\\"token operator\\">=</span> style<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getLayer</span><span class=\\"token punctuation\\">(</span><span class=\\"token string\\">\\"settlement-label\\"</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": " ",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 69.8,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token keyword\\">if</span> <span class=\\"token punctuation\\">(</span>settlementLabelLayer <span class=\\"token operator\\">!=</span> <span class=\\"token keyword\\">null</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 84.25,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "settlementLabelLayer<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">setProperties</span><span class=\\"token punctuation\\">(</span><span class=\\"token function\\">textField</span><span class=\\"token punctuation\\">(</span><span class=\\"token string\\">\\"{name_ru}\\"</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 69.8,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token punctuation\\">}</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 55.349999999999994,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token punctuation\\">}</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 40.9,
                 }
               }
             >
@@ -500,7 +500,7 @@ exports[`contextless-android-activity-toggle Two languages renders as expected 1
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "map<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getStyle</span><span class=\\"token punctuation\\">(</span><span class=\\"token keyword\\">new</span> <span class=\\"token class-name\\">Style</span><span class=\\"token punctuation\\">.</span><span class=\\"token class-name\\">OnStyleLoaded</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                    "__html": "map<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getStyle</span><span class=\\"token punctuation\\">(</span><span class=\\"token keyword\\">new</span> <span class=\\"token class-name\\">Style<span class=\\"token punctuation\\">.</span>OnStyleLoaded</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
                   }
                 }
                 style={
@@ -559,7 +559,7 @@ exports[`contextless-android-activity-toggle Two languages renders as expected 1
               className="pr12"
               style={
                 Object {
-                  "paddingLeft": 26.45,
+                  "paddingLeft": 12,
                 }
               }
             >
@@ -603,7 +603,7 @@ exports[`contextless-android-activity-toggle Two languages renders as expected 1
               className="pr12"
               style={
                 Object {
-                  "paddingLeft": 40.9,
+                  "paddingLeft": 12,
                 }
               }
             >

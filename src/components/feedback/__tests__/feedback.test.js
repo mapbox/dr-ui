@@ -10,9 +10,7 @@ describe('feedback', () => {
 
     beforeEach(() => {
       testCase = testCases.basic;
-      wrapper = renderer.create(
-        React.createElement(testCase.component, testCase.props)
-      );
+      wrapper = renderer.create(testCase.element);
       tree = wrapper.toJSON();
     });
 
@@ -31,22 +29,6 @@ describe('feedback', () => {
       wrapper = renderer.create(
         React.createElement(testCase.component, testCase.props)
       );
-      tree = wrapper.toJSON();
-    });
-
-    test('renders as expected', () => {
-      expect(tree).toMatchSnapshot();
-    });
-  });
-
-  describe(testCases.common.description, () => {
-    let testCase;
-    let wrapper;
-    let tree;
-
-    beforeEach(() => {
-      testCase = testCases.common;
-      wrapper = renderer.create(testCase.element);
       tree = wrapper.toJSON();
     });
 

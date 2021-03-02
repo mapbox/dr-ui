@@ -873,11 +873,11 @@ exports[`related-page video renders as expected 1`] = `
               />
             </svg>
           </div>
-          <img
-            alt=""
-            className="w-full block round h-full mb24 mb0-ml"
-            src="assets/vimeo_thumb.jpg"
-          />
+          <div
+            className="h-full mb24 mb0-ml"
+          >
+            <div />
+          </div>
         </div>
         <div
           className="flex-child wmin180"

@@ -1,0 +1,41 @@
+.prose pre {
+  margin-bottom: 0 !important;
+}
+
+#docs-content div#dr-ui--page-layout-sidebar {
+  position: relative;
+  height: 50px !important;
+}
+@media screen and (min-width: 640px) {
+  #docs-content #dr-ui--page-layout-sidebar.scroll-auto-mm {
+    overflow: unset !important;
+  }
+}
+#docs-content .sticky-outer-wrapper {
+  position: sticky !important;
+  top: 0px !important;
+}
+
+pre,
+.prose pre {
+  max-height: 300px;
+  margin-bottom: 18px !important;
+}
+
+/* set height on examples to prevent page from shifting once their resources load */
+.component-example-demoiframe,
+.component-example-browser,
+.component-example-phone,
+.component-example-video {
+  height: 500px;
+}
+
+/* Prevent tables from overflowing */
+.prose table {
+  table-layout: fixed;
+}
+table pre,
+table code,
+.prose td {
+  word-break: break-word;
+}

@@ -1,4 +1,6 @@
+import React from 'react';
 import ContextlessIosViewControllerToggle from '../contextless-ios-view-controller-toggle';
+import Basic from '../examples/basic';
 
 const testCases = {};
 
@@ -55,15 +57,8 @@ NSLocale *spanish = [NSLocale localeWithLocaleIdentifier:@"es"];
 layer.text = [layer.text mgl_expressionLocalizedIntoLocale:spanish];`;
 
 testCases.basic = {
-  component: ContextlessIosViewControllerToggle,
   description: 'Basic',
-  props: {
-    context: contextSwift,
-    id: 'test-java-only',
-    swift: swift,
-    limitHeight: true,
-    onCopy: () => {}
-  }
+  element: <Basic />
 };
 
 testCases.twoLang = {

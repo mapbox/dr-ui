@@ -12,6 +12,7 @@ exports[`back-top-top-button Just the button renders as expected 1`] = `
     onKeyDown={[Function]}
   >
     <button
+      aria-label="Back to top"
       className="btn--blue w60 h60 px0 round-full shadow-darken25 color-white flex-parent flex-parent--center-main flex-parent--center-cross"
       disabled={false}
       onClick={[Function]}
