@@ -4,13 +4,6 @@ import ComponentSection from './components/component-section';
 import categories from './categories.json';
 
 export default class App extends React.Component {
-  componentDidMount() {
-    // override SectionedNavigation scroll
-    const sideBar = document.getElementById('dr-ui--page-layout-sidebar');
-    if (!sideBar) return;
-    sideBar.scrollTop = 0;
-  }
-
   render() {
     const componentEls = Object.keys(categories).map((category) => {
       return (

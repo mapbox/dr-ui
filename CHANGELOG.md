@@ -3,12 +3,15 @@
 ## Main
 
 - Update prismjs, rehype-prism.
+- 🚨 Deprecates `HelpPage`, `NavigationDropdown`, `SectionedNavigation`, `TopbarSticker`, and `Topbar` components. [#407](https://github.com/mapbox/dr-ui/pull/407)
 
 ## 3.0.1
 
 - Fix docs-prose.css to not apply blue color to code elements that are descendants of elements with `anchor` class (headings). [#409](https://github.com/mapbox/dr-ui/pull/409)
 
 ## 3.0.0
+
+This release drops support for Internet Explorer and makes small performance and accessibility improvements. [#393](https://github.com/mapbox/dr-ui/issues/393)
 
 - 🚨 Remove support for IE 11.
 - 🚨 Rename `GLWrapper` as `MapWrapper`.
