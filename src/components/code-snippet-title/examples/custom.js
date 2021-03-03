@@ -5,7 +5,7 @@ import React from 'react';
 import CodeSnippetTitle from '../code-snippet-title';
 import CodeToggle from '../../code-toggle';
 
-export default class Custom extends React.Component {
+export default class Custom extends React.PureComponent {
   render() {
     return (
       <CodeSnippetTitle

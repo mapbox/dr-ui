@@ -269,7 +269,7 @@ class Feedback extends React.Component {
 }
 
 // character counter that appears in the bottom-right of the feedback textarea
-class FeedbackCounter extends React.Component {
+class FeedbackCounter extends React.PureComponent {
   render() {
     return (
       <div
@@ -294,7 +294,7 @@ FeedbackCounter.propTypes = {
 };
 
 // inline warning message that will appear if the user enters > 1000 characters in the feedback textarea
-class FeedbackOverlimitWarning extends React.Component {
+class FeedbackOverlimitWarning extends React.PureComponent {
   render() {
     return (
       <span

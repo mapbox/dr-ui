@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default class ContactImage extends React.Component {
+export default class ContactImage extends React.PureComponent {
   render() {
     const { props } = this;
     return (

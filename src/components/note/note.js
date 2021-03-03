@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import themes from '../themes';
 
-class Note extends React.Component {
+class Note extends React.PureComponent {
   render() {
     const { theme, title, children } = this.props;
     return (

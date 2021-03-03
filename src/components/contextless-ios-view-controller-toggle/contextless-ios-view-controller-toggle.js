@@ -4,7 +4,7 @@ import ToggleableCodeBlock from '../toggleable-code-block/toggleable-code-block'
 import { highlightSwift } from '../highlight/swift';
 import { highlightObjectivec } from '../highlight/objectivec';
 
-export default class ContextlessIosViewControllerToggle extends React.Component {
+export default class ContextlessIosViewControllerToggle extends React.PureComponent {
   static defaultProps = {
     limitHeight: true
   };

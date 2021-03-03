@@ -6,7 +6,7 @@ import OnThisPage from '../../on-this-page/on-this-page';
 import Feedback from '../../feedback/feedback';
 import OverviewHeader from '../../overview-header/overview-header';
 
-export default class Content extends React.Component {
+export default class Content extends React.PureComponent {
   render() {
     const {
       children,

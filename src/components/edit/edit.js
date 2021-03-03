@@ -17,7 +17,7 @@ function meta(frontMatter) {
 }
 
 // creates a form wrapper for each platform
-class Form extends React.Component {
+class Form extends React.PureComponent {
   render() {
     let classes = `inline-block`;
     if (this.props.classes) classes += ` ${this.props.classes}`;
@@ -35,7 +35,7 @@ class Form extends React.Component {
 }
 
 // creates the actual button that the user can click
-class Button extends React.Component {
+class Button extends React.PureComponent {
   render() {
     const platform = this.props.platform;
     const btnClass = 'btn btn--s cursor-pointer round';
@@ -55,7 +55,7 @@ class Button extends React.Component {
   }
 }
 
-export default class Edit extends React.Component {
+export default class Edit extends React.PureComponent {
   render() {
     let { css, js, html, head, resources, frontMatter } = this.props;
     const projectMeta = meta(frontMatter);

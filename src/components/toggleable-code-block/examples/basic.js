@@ -5,7 +5,7 @@ import React from 'react';
 import ToggleableCodeBlock from '../toggleable-code-block';
 import { highlightJava } from '../../highlight/java';
 
-export default class Basic extends React.Component {
+export default class Basic extends React.PureComponent {
   render() {
     const javaCodeSnippet = `
     public class MainActivity extends AppCompatActivity {
