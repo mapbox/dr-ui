@@ -93,6 +93,15 @@ const themes = {
       color: '#cf1c61',
       borderColor: '#fd8ac0'
     }
+  },
+  pricing: {
+    image: <Image icon="cart" color="green" />,
+    label: 'Download',
+    styles: {
+      background: '#e8f5ee',
+      color: '#15603d',
+      borderColor: '#378645'
+    }
   }
 };
 /* duplicate themes */
