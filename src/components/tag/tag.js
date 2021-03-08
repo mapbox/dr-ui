@@ -25,8 +25,14 @@ export default class Tag extends React.Component {
 }
 
 Tag.propTypes = {
-  theme: PropTypes.oneOf(['beta', 'fundamentals', 'legacy', 'new', 'custom'])
-    .isRequired,
+  theme: PropTypes.oneOf([
+    'beta',
+    'fundamentals',
+    'legacy',
+    'new',
+    'custom',
+    'pricing'
+  ]).isRequired,
   /* If the theme is set to "custom", this prop is required. */
   customLabel: (props, componentName) => {
     if (props.theme === 'custom' && !props.customLabel) {

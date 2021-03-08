@@ -97,6 +97,7 @@ const themes = {
   pricing: {
     image: <Image icon="creditcard" color="green" />,
     label: 'Pricing',
+    tooltipText: "This contains information about this product's pricing.",
     styles: {
       background: '#e8f5ee',
       color: '#15603d',

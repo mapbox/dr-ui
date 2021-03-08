@@ -40,4 +40,12 @@ testCases.custom = {
   element: <Custom />
 };
 
+testCases.pricing = {
+  component: Tag,
+  description: 'Pricing tag',
+  props: {
+    theme: 'pricing'
+  }
+};
+
 export { testCases, noRenderCases };
