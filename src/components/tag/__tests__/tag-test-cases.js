@@ -42,7 +42,8 @@ testCases.pricing = {
   description: 'Pricing tag',
   props: {
     theme: 'pricing'
-  };
+  }
+};
 
 testCases.custom = {
   description: 'Custom tag',
