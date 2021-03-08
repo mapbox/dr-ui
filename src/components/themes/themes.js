@@ -95,8 +95,8 @@ const themes = {
     }
   },
   pricing: {
-    image: <Image icon="cart" color="green" />,
-    label: 'Download',
+    image: <Image icon="creditcard" color="green" />,
+    label: 'Pricing',
     styles: {
       background: '#e8f5ee',
       color: '#15603d',
