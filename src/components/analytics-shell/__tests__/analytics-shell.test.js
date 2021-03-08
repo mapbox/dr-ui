@@ -31,6 +31,16 @@ describe('AnalyticsShell', () => {
       });
     });
 
+    test('mbxMetadata', () => {
+      const wrapper = mount(testCase.element);
+      expect(global.mbxMetadata).toEqual({
+        product: 'Documentation',
+        service: 'Platform'
+      });
+      wrapper.unmount();
+      expect(global.mbxMetadata).toBeUndefined();
+    });
+
     test('web-analytics init', () => {
       mount(testCase.element);
       expect(window.initializeMapboxAnalytics).toHaveBeenCalledWith({

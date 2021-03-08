@@ -7,7 +7,7 @@ exports[`card-container Basic renders as expected 1`] = `
     href="#category"
   >
     <h2
-      className="txt-bold"
+      className="txt-bold unprose"
       id="category"
     >
       Category
@@ -38,7 +38,7 @@ exports[`card-container Basic renders as expected 1`] = `
             className="relative h120 mb12"
             style={
               Object {
-                "backgroundImage": "url('./files/simple-map.png')",
+                "backgroundImage": "url('../files/simple-map.png')",
                 "backgroundPosition": "center",
                 "backgroundSize": "100% auto",
               }
@@ -74,7 +74,7 @@ exports[`card-container Basic renders as expected 1`] = `
             className="relative h120 mb12"
             style={
               Object {
-                "backgroundImage": "url('./files/simple-map.png')",
+                "backgroundImage": "url('../files/simple-map.png')",
                 "backgroundPosition": "center",
                 "backgroundSize": "100% auto",
               }
@@ -107,7 +107,7 @@ exports[`card-container Full width renders as expected 1`] = `
     href="#another-category"
   >
     <h2
-      className="txt-bold"
+      className="txt-bold unprose"
       id="another-category"
     >
       Another category
@@ -181,7 +181,7 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
     href="#another-category"
   >
     <h2
-      className="txt-bold"
+      className="txt-bold unprose"
       id="another-category"
     >
       Another category
@@ -212,7 +212,7 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
             className="relative h120 mb12"
             style={
               Object {
-                "backgroundImage": "url('./files/simple-map.png')",
+                "backgroundImage": "url('../files/simple-map.png')",
                 "backgroundPosition": "center",
                 "backgroundSize": "100% auto",
               }
@@ -248,7 +248,7 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
             className="relative h120 mb12"
             style={
               Object {
-                "backgroundImage": "url('./files/simple-map.png')",
+                "backgroundImage": "url('../files/simple-map.png')",
                 "backgroundPosition": "center",
                 "backgroundSize": "100% auto",
               }
@@ -284,7 +284,7 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
             className="relative h120 mb12"
             style={
               Object {
-                "backgroundImage": "url('./files/simple-map.png')",
+                "backgroundImage": "url('../files/simple-map.png')",
                 "backgroundPosition": "center",
                 "backgroundSize": "100% auto",
               }
@@ -320,7 +320,7 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
             className="relative h120 mb12"
             style={
               Object {
-                "backgroundImage": "url('./files/simple-map.png')",
+                "backgroundImage": "url('../files/simple-map.png')",
                 "backgroundPosition": "center",
                 "backgroundSize": "100% auto",
               }

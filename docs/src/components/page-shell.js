@@ -1,31 +1,60 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PageLayout from '../../../src/components/page-layout';
-
-import Sidebar from './sidebar';
-import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line
-import topics from '@mapbox/batfish/data/topics'; // eslint-disable-line
+import navigation from '@mapbox/batfish/data/navigation';
+import filters from '@mapbox/batfish/data/filters';
 import constants from '../constants';
+import AppropriateImage from './appropriate-image';
+import categories from '../categories.json';
+
+const slug = (string) => string.toLowerCase();
+const { version } = require('../../../package.json');
+
+const componentHeadings = Object.keys(categories).reduce((arr, category) => {
+  arr.push({
+    text: category,
+    slug: slug(category),
+    level: 2
+  });
+  categories[category].forEach((item) => {
+    arr.push({
+      text: item,
+      slug: slug(item),
+      level: 3
+    });
+  });
+  return arr;
+}, []);
 
 class PageShell extends React.Component {
   render() {
     const { children, location, frontMatter, headings } = this.props;
+
     return (
-      <PageLayout
-        includeFilterBar={true}
-        topBarSticker={false}
-        topics={topics}
-        headings={headings}
-        frontMatter={frontMatter}
-        location={location}
-        constants={constants}
-        navigation={navigation}
-        customSidebar={
-          location.pathname === '/dr-ui/' ? <Sidebar /> : undefined
-        }
-      >
-        {children}
-      </PageLayout>
+      <div className="py18">
+        <PageLayout
+          filters={filters}
+          headings={headings}
+          frontMatter={{
+            ...frontMatter,
+            ...(location.pathname === '/dr-ui/components/' && {
+              headings: componentHeadings,
+              // handle dynamic values in OverviewHeader
+              overviewHeader: {
+                ...frontMatter.overviewHeader,
+                version: version,
+                image: <img src="/img/documentation-astronaut.png" alt="" />
+              }
+            })
+          }}
+          location={location}
+          constants={constants}
+          navigation={navigation}
+          AppropriateImage={AppropriateImage}
+        >
+          {children}
+        </PageLayout>
+      </div>
     );
   }
 }

@@ -2,8 +2,7 @@
 title: Multi-structured sites
 description: How to build a site with more than one product.
 order: 4
-layout: accordion
-hideFeedback: true
+layout: page
 contentType: guide
 products:
   - Documentation
@@ -68,10 +67,10 @@ See [Shape of multi-structured sections](/dr-ui/guides/batfish-helpers/#shape-of
 
 1. In `batfish.config.js`, below the required packages and above the Batfish configuration function, create a constant, add the `subsites` constant you created in the previous step.
 2. In the Batfish configuration function, find `navigation` in `dataSelectors`.
-3. Add a third argument to the `buildNavigation` function to include the `subsites` constant you created in the first step:
+3. Add a `sections` argument to the `buildNavigation` function to include the `subsites` constant you created in the first step:
 
 ```
-navigation: data => buildNavigation(siteBasePath, data, subsites),
+navigation: data => buildNavigation({ siteBasePath, data, sections: subsites }),
 ```
 
 4. The site's navigation data selector can now support your multi-structured site.

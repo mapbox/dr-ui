@@ -19,10 +19,7 @@ export default class Basic extends React.Component {
         installLink="https://www.mapbox.com/install"
         ghLink="https://github.com/mapbox"
         image={
-          <img
-            height={300}
-            src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
-          />
+          <img src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg" />
         }
       />
     );

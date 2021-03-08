@@ -7,7 +7,10 @@ import AnalyticsShell from '../analytics-shell';
 export default class Basic extends React.Component {
   render() {
     return (
-      <AnalyticsShell location={{ pathname: '/dr-ui/' }}>
+      <AnalyticsShell
+        mbxMetadata={{ product: 'Documentation', service: 'Platform' }}
+        location={{ pathname: '/dr-ui/' }}
+      >
         Hello world!
       </AnalyticsShell>
     );

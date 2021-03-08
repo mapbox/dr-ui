@@ -1,5 +1,5 @@
 /*
-"full" layout.
+"full" layout with custom "domain" prop
 */
 import React from 'react';
 import PageLayout from '../page-layout';
@@ -9,12 +9,16 @@ export default class Basic extends React.Component {
     return (
       <PageLayout
         constants={{
-          SITE: 'dr-ui',
+          SITE: 'Mapbox Tiling Service',
           BASEURL: '/dr-ui',
           FORWARD_EVENT_WEBHOOK: {
             production: '123',
             staging: '123'
           }
+        }}
+        domain={{
+          title: 'Documentation',
+          path: 'https://mapbox.github.io/dr-ui/'
         }}
         location={{
           pathname: '/PageLayout/'
@@ -24,13 +28,20 @@ export default class Basic extends React.Component {
           layout: 'full'
         }}
         navigation={{
+          tag: 'beta',
           hierarchy: {
             '/PageLayout/': {
-              parent: '/dr-ui/',
-              title: 'Demo'
+              parent: '/PageLayout/',
+              title: 'Overview'
             }
           },
-          navTabs: [] // example with no navTabs
+          navTabs: [
+            {
+              title: 'Overview',
+              path: '/PageLayout/',
+              id: 'overview'
+            }
+          ]
         }}
       >
         <React.Fragment>

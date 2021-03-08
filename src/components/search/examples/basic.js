@@ -7,6 +7,6 @@ import Search from '../search';
 
 export default class Example extends React.Component {
   render() {
-    return <Search site="API" />;
+    return <Search inputId="example-search" site="API" />;
   }
 }

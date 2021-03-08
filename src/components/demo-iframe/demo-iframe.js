@@ -1,13 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ChevronousText from '@mapbox/mr-ui/chevronous-text';
-import GLWrapper from '../gl-wrapper/gl-wrapper';
+import MapWrapper from '../map-wrapper/map-wrapper';
 
 export default class DemoIframe extends React.Component {
-  static defaultProps = {
-    gl: true
-  };
-
   constructor(props) {
     super(props);
     this.state = {
@@ -26,35 +22,53 @@ export default class DemoIframe extends React.Component {
   }
 
   render() {
-    const { props } = this;
+    let { src, title, gl } = this.props;
+    const { mapboxAccessToken } = this.state;
     // check to see if the src is making a request to mapbox api
-    const makeRequest = props.src.indexOf('MapboxAccessToken') > -1;
+    const makeRequest = src.indexOf('MapboxAccessToken') > -1;
     // if it's making a request and the mapboxAccessToken hasn't loaded yet
     // return null (nothing) until it has loaded
-    if (makeRequest && !this.state.mapboxAccessToken) {
+    if (makeRequest && !mapboxAccessToken) {
       return null;
     }
     // if the src has an `access_token` value, replace it with mapboxAccessToken
     // otherwise use the src as is
-    const src = makeRequest
-      ? props.src.replace('MapboxAccessToken', this.state.mapboxAccessToken)
-      : props.src;
+    src = makeRequest
+      ? src.replace('MapboxAccessToken', mapboxAccessToken)
+      : src;
+
+    const iframeHeight = 400;
 
     const contents = (
       <div>
-        <iframe src={src} width="100%" height="400px" />
+        <iframe title={title} src={src} width="100%" height={iframeHeight} />
         <a href={src} className="link">
           <ChevronousText text="View fullscreen demo" />
         </a>
       </div>
     );
 
-    return props.gl ? <GLWrapper>{contents}</GLWrapper> : contents;
+    return gl ? (
+      <MapWrapper height={iframeHeight + 30 /* add space for demo link */}>
+        {contents}
+      </MapWrapper>
+    ) : (
+      contents
+    );
   }
 }
 
+DemoIframe.defaultProps = {
+  gl: true
+};
+
 DemoIframe.propTypes = {
-  src: PropTypes.string.isRequired, // absolute URL src for iframe
-  gl: PropTypes.bool, // set to false if the iframe does not use GL
-  MapboxAccessToken: PropTypes.string // optional token value
+  /** The absolute url to the iframe. */
+  src: PropTypes.string.isRequired,
+  /** The iframe content contains Mapbox GL. Default `true`. */
+  gl: PropTypes.bool,
+  /** Replace instance of `MapboxAccessToken` in the `src` prop with the value of this Mapbox access token. */
+  MapboxAccessToken: PropTypes.string,
+  /** A title to describe the content of the iframe. */
+  title: PropTypes.string.isRequired
 };

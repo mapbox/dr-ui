@@ -36,4 +36,10 @@ describe('titleGenerator', () => {
   it('no "Introduction" as title', () => {
     expect(tagger.titleGenerator('Introduction', 'iOS')).toEqual(['iOS']);
   });
+
+  it('no "Guides" as title', () => {
+    expect(tagger.titleGenerator('Guides', 'Mapbox Tiling Service')).toEqual([
+      'Mapbox Tiling Service'
+    ]);
+  });
 });

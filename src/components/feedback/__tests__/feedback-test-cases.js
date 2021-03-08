@@ -40,7 +40,7 @@ testCases.noSentry = {
     },
     feedbackSentryDsn: false,
     preferredLanguage: 'Swift',
-    section: 'LngLat',
+    section: 'Maps',
     location: {
       pathname: '/dr-ui/api/',
       hash: '#lnglat'

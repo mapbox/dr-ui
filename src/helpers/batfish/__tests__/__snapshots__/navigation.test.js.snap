@@ -1,492 +1,1223 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`buildNavigation help glossary is sorted alphabetical 1`] = `
-Object {
-  "/help/glossary/": Array [
-    Object {
-      "path": "/help/glossary/access-token/",
-      "title": "access token",
-    },
-    Object {
-      "path": "/help/glossary/annotation/",
-      "title": "annotation",
-    },
-    Object {
-      "path": "/help/glossary/attribution/",
-      "title": "attribution",
-    },
-    Object {
-      "path": "/help/glossary/baselayer/",
-      "title": "baselayer",
-    },
-    Object {
-      "path": "/help/glossary/bearing/",
-      "title": "bearing",
-    },
-    Object {
-      "path": "/help/glossary/bounding-box/",
-      "title": "bounding box",
-    },
-    Object {
-      "path": "/help/glossary/camera/",
-      "title": "camera",
-    },
-    Object {
-      "path": "/help/glossary/cartocss/",
-      "title": "CartoCSS",
-    },
-    Object {
-      "path": "/help/glossary/classic-style/",
-      "title": "classic style",
-    },
-    Object {
-      "path": "/help/glossary/csv/",
-      "title": "CSV",
-    },
-    Object {
-      "path": "/help/glossary/data-driven-styling/",
-      "title": "data-driven styling",
-    },
-    Object {
-      "path": "/help/glossary/dataset/",
-      "title": "dataset",
-    },
-    Object {
-      "path": "/help/glossary/dataset-id/",
-      "title": "dataset ID",
-    },
-    Object {
-      "path": "/help/glossary/datasets-api/",
-      "title": "Datasets API",
-    },
-    Object {
-      "path": "/help/glossary/directions-api/",
-      "title": "Directions API",
-    },
-    Object {
-      "path": "/help/glossary/expression/",
-      "title": "expression",
-    },
-    Object {
-      "path": "/help/glossary/features/",
-      "title": "feature",
-    },
-    Object {
-      "path": "/help/glossary/feature-querying/",
-      "title": "feature querying",
-    },
-    Object {
-      "path": "/help/glossary/filter/",
-      "title": "filter",
-    },
-    Object {
-      "path": "/help/glossary/font-stack/",
-      "title": "font stack",
-    },
-    Object {
-      "path": "/help/glossary/geocoding/",
-      "title": "geocoding",
-    },
-    Object {
-      "path": "/help/glossary/geocoding-api/",
-      "title": "Geocoding API",
-    },
-    Object {
-      "path": "/help/glossary/geojson/",
-      "title": "GeoJSON",
-    },
-    Object {
-      "path": "/help/glossary/gpx/",
-      "title": "GPX",
-    },
-    Object {
-      "path": "/help/glossary/iframe/",
-      "title": "iframe",
-    },
-    Object {
-      "path": "/help/glossary/isochrone-api/",
-      "title": "Isochrone API",
-    },
-    Object {
-      "path": "/help/glossary/kml/",
-      "title": "KML",
-    },
-    Object {
-      "path": "/help/glossary/lat-lon/",
-      "title": "latitude and longitude",
-    },
-    Object {
-      "path": "/help/glossary/layout-paint-property/",
-      "title": "layout and paint properties",
-    },
-    Object {
-      "path": "/help/glossary/leaflet/",
-      "title": "Leaflet",
-    },
-    Object {
-      "path": "/help/glossary/maki/",
-      "title": "Maki icon set",
-    },
-    Object {
-      "path": "/help/glossary/map-id/",
-      "title": "map ID",
-    },
-    Object {
-      "path": "/help/glossary/map-loads/",
-      "title": "map loads",
-    },
-    Object {
-      "path": "/help/glossary/map-matching-api/",
-      "title": "Map Matching API",
-    },
-    Object {
-      "path": "/help/glossary/map-view/",
-      "title": "map view",
-    },
-    Object {
-      "path": "/help/glossary/mapbox-components-for-framer-x/",
-      "title": "Mapbox components for Framer X",
-    },
-    Object {
-      "path": "/help/glossary/mapbox-editor/",
-      "title": "Mapbox Editor",
-    },
-    Object {
-      "path": "/help/glossary/mapbox-gl/",
-      "title": "Mapbox GL",
-    },
-    Object {
-      "path": "/help/glossary/mapbox-gl-js/",
-      "title": "Mapbox GL JS",
-    },
-    Object {
-      "path": "/help/glossary/mapbox-android-sdk/",
-      "title": "Mapbox Maps SDK for Android",
-    },
-    Object {
-      "path": "/help/glossary/mapbox-ios-sdk/",
-      "title": "Mapbox Maps SDK for iOS",
-    },
-    Object {
-      "path": "/help/glossary/mapbox-maps-sdk-for-unity/",
-      "title": "Mapbox Maps SDK for Unity",
-    },
-    Object {
-      "path": "/help/glossary/matrix-api-elements/",
-      "title": "Mapbox Matrix API elements",
-    },
-    Object {
-      "path": "/help/glossary/mapbox-navigation-sdk/",
-      "title": "Mapbox Navigation SDKs",
-    },
-    Object {
-      "path": "/help/glossary/mapbox-satellite/",
-      "title": "Mapbox Satellite",
-    },
-    Object {
-      "path": "/help/glossary/mapbox-studio/",
-      "title": "Mapbox Studio",
-    },
-    Object {
-      "path": "/help/glossary/mapbox-studio-classic/",
-      "title": "Mapbox Studio Classic",
-    },
-    Object {
-      "path": "/help/glossary/mapbox-tiling-service/",
-      "title": "Mapbox Tiling Service (MTS)",
-    },
-    Object {
-      "path": "/help/glossary/mapbox-js/",
-      "title": "Mapbox.js",
-    },
-    Object {
-      "path": "/help/glossary/mapnik/",
-      "title": "Mapnik",
-    },
-    Object {
-      "path": "/help/glossary/maps-sdk-for-react-native/",
-      "title": "Maps SDK for React Native",
-    },
-    Object {
-      "path": "/help/glossary/marker/",
-      "title": "marker",
-    },
-    Object {
-      "path": "/help/glossary/matrix-api/",
-      "title": "Matrix API",
-    },
-    Object {
-      "path": "/help/glossary/mbtiles/",
-      "title": "MBTiles",
-    },
-    Object {
-      "path": "/help/glossary/monthly-active-users/",
-      "title": "monthly active users",
-    },
-    Object {
-      "path": "/help/glossary/offline-region/",
-      "title": "offline regions and offline packs",
-    },
-    Object {
-      "path": "/help/glossary/osm/",
-      "title": "OpenStreetMap",
-    },
-    Object {
-      "path": "/help/glossary/optimization-api/",
-      "title": "Optimization API",
-    },
-    Object {
-      "path": "/help/glossary/overzoom/",
-      "title": "overzoom",
-    },
-    Object {
-      "path": "/help/glossary/point/",
-      "title": "point",
-    },
-    Object {
-      "path": "/help/glossary/projection/",
-      "title": "projection",
-    },
-    Object {
-      "path": "/help/glossary/quadtree/",
-      "title": "quadtree",
-    },
-    Object {
-      "path": "/help/glossary/raster/",
-      "title": "raster data",
-    },
-    Object {
-      "path": "/help/glossary/raster-tiles-api/",
-      "title": "Raster Tiles API",
-    },
-    Object {
-      "path": "/help/glossary/routing-profile/",
-      "title": "routing profile",
-    },
-    Object {
-      "path": "/help/glossary/runtime-styling/",
-      "title": "runtime styling",
-    },
-    Object {
-      "path": "/help/glossary/shapefile/",
-      "title": "shapefile",
-    },
-    Object {
-      "path": "/help/glossary/simplestyle/",
-      "title": "simplestyle",
-    },
-    Object {
-      "path": "/help/glossary/sku-token/",
-      "title": "SKU tokens",
-    },
-    Object {
-      "path": "/help/glossary/source/",
-      "title": "source",
-    },
-    Object {
-      "path": "/help/glossary/source-layer/",
-      "title": "source layer",
-    },
-    Object {
-      "path": "/help/glossary/sprite/",
-      "title": "sprite",
-    },
-    Object {
-      "path": "/help/glossary/static-images-api/",
-      "title": "Static Images API",
-    },
-    Object {
-      "path": "/help/glossary/static-tiles-api/",
-      "title": "Static Tiles API",
-    },
-    Object {
-      "path": "/help/glossary/style/",
-      "title": "style",
-    },
-    Object {
-      "path": "/help/glossary/style-component/",
-      "title": "style component",
-    },
-    Object {
-      "path": "/help/glossary/style-id/",
-      "title": "style ID",
-    },
-    Object {
-      "path": "/help/glossary/layer/",
-      "title": "style layer",
-    },
-    Object {
-      "path": "/help/glossary/style-url/",
-      "title": "style URL",
-    },
-    Object {
-      "path": "/help/glossary/style-optimized-vector-tiles/",
-      "title": "style-optimized vector tiles",
-    },
-    Object {
-      "path": "/help/glossary/styles-api/",
-      "title": "Styles API",
-    },
-    Object {
-      "path": "/help/glossary/svg/",
-      "title": "SVG",
-    },
-    Object {
-      "path": "/help/glossary/symbol-layer/",
-      "title": "symbol layer",
-    },
-    Object {
-      "path": "/help/glossary/telemetry/",
-      "title": "telemetry",
-    },
-    Object {
-      "path": "/help/glossary/tiff/",
-      "title": "TIFF",
-    },
-    Object {
-      "path": "/help/glossary/tilejson/",
-      "title": "TileJSON",
-    },
-    Object {
-      "path": "/help/glossary/tilemill/",
-      "title": "TileMill",
-    },
-    Object {
-      "path": "/help/glossary/tilequery-api/",
-      "title": "Tilequery API",
-    },
-    Object {
-      "path": "/help/glossary/tileset/",
-      "title": "tileset",
-    },
-    Object {
-      "path": "/help/glossary/tileset-id/",
-      "title": "tileset ID",
-    },
-    Object {
-      "path": "/help/glossary/tileset-recipe/",
-      "title": "tileset recipe",
-    },
-    Object {
-      "path": "/help/glossary/tileset-source/",
-      "title": "tileset source",
-    },
-    Object {
-      "path": "/help/glossary/tokens-api/",
-      "title": "Tokens API",
-    },
-    Object {
-      "path": "/help/glossary/turf/",
-      "title": "Turf.js",
-    },
-    Object {
-      "path": "/help/glossary/uploads-api/",
-      "title": "Uploads API",
-    },
-    Object {
-      "path": "/help/glossary/vector-tiles/",
-      "title": "vector tiles",
-    },
-    Object {
-      "path": "/help/glossary/vector-tiles-api/",
-      "title": "Vector Tiles API",
-    },
-    Object {
-      "path": "/help/glossary/wordpress/",
-      "title": "WordPress map block",
-    },
-    Object {
-      "path": "/help/glossary/worldview/",
-      "title": "worldview",
-    },
-    Object {
-      "path": "/help/glossary/zoom-extent/",
-      "title": "zoom extent",
-    },
-    Object {
-      "path": "/help/glossary/zoom-level/",
-      "title": "zoom level",
-    },
-  ],
-  "/help/how-mapbox-works/": Array [
-    Object {
-      "path": "/help/how-mapbox-works/",
-      "title": "How Mapbox Works",
-    },
-    Object {
-      "path": "/help/how-mapbox-works/access-tokens/",
-      "title": "Access tokens",
-    },
-    Object {
-      "path": "/help/how-mapbox-works/attribution/",
-      "title": "Attribution",
-    },
-    Object {
-      "path": "/help/how-mapbox-works/creating-data/",
-      "title": "Create new data",
-    },
-    Object {
-      "path": "/help/how-mapbox-works/directions/",
-      "title": "Directions",
-    },
-    Object {
-      "path": "/help/how-mapbox-works/geocoding/",
-      "title": "Geocoding",
-    },
-    Object {
-      "path": "/help/how-mapbox-works/geospatial-analysis/",
-      "title": "Spatial analysis",
-    },
-    Object {
-      "path": "/help/how-mapbox-works/map-design/",
-      "title": "Map design",
-    },
-    Object {
-      "path": "/help/how-mapbox-works/mapbox-data/",
-      "title": "Our map data",
-    },
-    Object {
-      "path": "/help/how-mapbox-works/mobile-apps/",
-      "title": "Mobile applications",
-    },
-    Object {
-      "path": "/help/how-mapbox-works/satellite-imagery/",
-      "title": "Satellite imagery",
-    },
-    Object {
-      "path": "/help/how-mapbox-works/static-maps/",
-      "title": "Static and print maps",
-    },
-    Object {
-      "path": "/help/how-mapbox-works/unity/",
-      "title": "Unity applications",
-    },
-    Object {
-      "path": "/help/how-mapbox-works/uploading-data/",
-      "title": "Upload data",
-    },
-    Object {
-      "path": "/help/how-mapbox-works/web-apps/",
-      "title": "Web applications",
-    },
-  ],
-}
+Array [
+  Object {
+    "id": "how-mapbox-works",
+    "navOrder": 2,
+    "pages": Array [
+      Object {
+        "layout": "page",
+        "order": 2,
+        "path": "/help/how-mapbox-works/access-tokens/",
+        "title": "Access tokens",
+      },
+      Object {
+        "layout": "page",
+        "order": 3,
+        "path": "/help/how-mapbox-works/attribution/",
+        "title": "Attribution",
+      },
+      Object {
+        "layout": "page",
+        "order": 4,
+        "path": "/help/how-mapbox-works/creating-data/",
+        "title": "Create new data",
+      },
+      Object {
+        "layout": "page",
+        "order": 5,
+        "path": "/help/how-mapbox-works/directions/",
+        "title": "Directions",
+      },
+      Object {
+        "layout": "page",
+        "order": 6,
+        "path": "/help/how-mapbox-works/geocoding/",
+        "title": "Geocoding",
+      },
+      Object {
+        "layout": "page",
+        "order": 7,
+        "path": "/help/how-mapbox-works/geospatial-analysis/",
+        "title": "Spatial analysis",
+      },
+      Object {
+        "layout": "page",
+        "order": 8,
+        "path": "/help/how-mapbox-works/map-design/",
+        "title": "Map design",
+      },
+      Object {
+        "layout": "page",
+        "order": 9,
+        "path": "/help/how-mapbox-works/mapbox-data/",
+        "title": "Our map data",
+      },
+      Object {
+        "layout": "page",
+        "order": 10,
+        "path": "/help/how-mapbox-works/mobile-apps/",
+        "title": "Mobile applications",
+      },
+      Object {
+        "layout": "page",
+        "order": 11,
+        "path": "/help/how-mapbox-works/satellite-imagery/",
+        "title": "Satellite imagery",
+      },
+      Object {
+        "layout": "page",
+        "order": 12,
+        "path": "/help/how-mapbox-works/static-maps/",
+        "title": "Static and print maps",
+      },
+      Object {
+        "layout": "page",
+        "order": 13,
+        "path": "/help/how-mapbox-works/unity/",
+        "title": "Unity applications",
+      },
+      Object {
+        "layout": "page",
+        "order": 14,
+        "path": "/help/how-mapbox-works/uploading-data/",
+        "title": "Upload data",
+      },
+      Object {
+        "layout": "page",
+        "order": 15,
+        "path": "/help/how-mapbox-works/web-apps/",
+        "title": "Web applications",
+      },
+    ],
+    "path": "/help/how-mapbox-works/",
+    "title": "How Mapbox Works",
+  },
+  Object {
+    "id": "tutorials",
+    "navOrder": 3,
+    "pages": Array [
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/add-3d-buildings-studio/",
+        "title": "Add 3D buildings to a Mapbox Studio style",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/arcgis-online-mapbox-basemap/",
+        "title": "Add a Mapbox Studio style as a basemap in ArcGIS Online",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/carto/",
+        "title": "Add a Mapbox style to a CARTO map",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/custom-markers-gl-js/",
+        "title": "Add custom markers in Mapbox GL JS",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/mapbox-arcgis-qgis/",
+        "title": "Add Mapbox maps as layers in ArcGIS and QGIS with WMTS",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/markers/",
+        "title": "Add markers to a map",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/overpass-turbo/",
+        "title": "Add OpenStreetMap data to your Mapbox project",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/add-points-pt-1/",
+        "title": "Add points to a web map, part 1: create a dataset",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/add-points-pt-2/",
+        "title": "Add points to a web map, part 2: create a style",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/add-points-pt-3/",
+        "title": "Add points to a web map, part 3: add interactivity",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/analysis-with-turf/",
+        "title": "Analyze data with Turf.js and Mapbox GL JS",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/analysis-with-turf-mapbox-js/",
+        "title": "Analyze data with Turf.js and Mapbox.js",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/android-vision-ar-customization/",
+        "title": "AR customization using Mapbox Vision SDK for Android",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/ios-vision-ar-customization/",
+        "title": "AR customization using Mapbox Vision SDK for iOS",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/android-navigation-sdk/",
+        "title": "Build a navigation app for Android",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/ios-navigation-sdk/",
+        "title": "Build a navigation app for iOS",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/building-a-store-locator/",
+        "title": "Build a store locator using Mapbox GL JS",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/building-a-store-locator-js/",
+        "title": "Build a store locator using Mapbox.js",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/indoor-floorplans/",
+        "title": "Build indoor floorplans with Mapbox",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/android-global-china-mix/",
+        "title": "Build one set of code for China and global map styles",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/create-a-custom-style/",
+        "title": "Create a custom style",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/create-a-map-in-unity/",
+        "title": "Create a map in Unity",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/ios-swiftui/",
+        "title": "Create a map view compatible with SwiftUI",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/create-a-timezone-finder-with-mapbox-tilequery-api/",
+        "title": "Create a timezone finder with Mapbox Tilequery API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/power-bi/",
+        "title": "Create data visualizations with the Mapbox Visual for Power BI",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/create-interactive-hover-effects-with-mapbox-gl-js/",
+        "title": "Create interactive hover effects with Mapbox GL JS",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/get-started-tokens-api/",
+        "title": "Creating access tokens with the Tokens API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/android-vision-custom-detections-tutorial/",
+        "title": "Custom detections using Mapbox Vision SDK for Android",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/unity-custom-map-style/",
+        "title": "Custom map styles in Unity",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/customize-label-text/",
+        "title": "Customize label text for a single label",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/android-dds-circle-layer/",
+        "title": "Data-driven styling for Android",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/data-joins-with-mapbox-boundaries/",
+        "title": "Data-joins with Mapbox Boundaries",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/android-vision-poi-drawing/",
+        "title": "Draw points of interest using the Mapbox Vision SDK for Android",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/ios-vision-poi-drawing/",
+        "title": "Draw points of interest using the Mapbox Vision SDK for iOS",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/ios-vision-safety-alerts/",
+        "title": "Draw safety alerts using the Mapbox Vision SDK for iOS",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/extend-mapbox-boundaries/",
+        "title": "Extend Mapbox Boundaries",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/extending-interactivity/",
+        "title": "Extend with Mapbox.js",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/find-elevations-with-tilequery-api/",
+        "title": "Find elevations with the Tilequery API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/first-steps-android-sdk/",
+        "title": "First steps with the Mapbox Maps SDK for Android",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/first-steps-ios-sdk/",
+        "title": "First steps with the Mapbox Maps SDK for iOS",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/optimization-api/",
+        "title": "Generate an optimized route with the Optimization API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/georeferencing-imagery/",
+        "title": "Georeference imagery",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/get-started-mts-and-tilesets-cli/",
+        "title": "Get started using Mapbox Tiling Service and the Tilesets CLI",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/ios-dds-circle-layer/",
+        "title": "Get started with expressions using the Mapbox Maps SDK for iOS",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/get-started-mapbox-boundaries/",
+        "title": "Get started with Mapbox Boundaries",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/get-started-mapbox-boundaries-v1/",
+        "title": "Get started with Mapbox Boundaries v1",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/get-started-mapbox-boundaries-v2/",
+        "title": "Get started with Mapbox Boundaries v2",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/mapbox-gl-js-expressions/",
+        "title": "Get started with Mapbox GL JS expressions",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/get-started-isochrone-api/",
+        "title": "Get started with the Isochrone API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/get-started-map-matching-api/",
+        "title": "Get started with the Map Matching API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/getting-started-directions-api/",
+        "title": "Getting started with the Mapbox Directions API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/improve-perceived-performance-with-static/",
+        "title": "Improve perceived performance of Mapbox GL JS using the Static Images API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/local-search-geocoding-api/",
+        "title": "Local search with the Geocoding API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/power-bi-choropleth-map/",
+        "title": "Make a choropleth map with the Mapbox Visual for Power BI",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/choropleth-studio-gl-pt-1/",
+        "title": "Make a choropleth map, part 1: create a style",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/choropleth-studio-gl-pt-2/",
+        "title": "Make a choropleth map, part 2: add interactivity",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/tilequery-healthy-food-finder/",
+        "title": "Make a healthy food finder with the Tilequery API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/make-a-heatmap-with-mapbox-gl-js/",
+        "title": "Make a heatmap with Mapbox GL JS",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/studio-heatmap-tutorial/",
+        "title": "Make a heatmap with Mapbox Studio",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/point-in-polygon-query-with-mapbox-boundaries/",
+        "title": "Point-in-polygon query with Mapbox Boundaries",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/processing-satellite-imagery/",
+        "title": "Processing satellite imagery",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/route-avoidance-with-turf-mapbox-directions/",
+        "title": "Route avoidance with the Directions API and Turf.js",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/android-runtime-styling-intro/",
+        "title": "Runtime styling for Android",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/show-changes-over-time/",
+        "title": "Show changes over time with Mapbox GL JS",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/geocode-and-sort-stores/",
+        "title": "Sort stores by distance",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/style-single-country/",
+        "title": "Style a single country",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/google-to-mapbox/",
+        "title": "Switch from Google Maps to Mapbox",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/android-location-listening/",
+        "title": "Tracking device location for Android",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/upload-curl/",
+        "title": "Upload to Mapbox using cURL",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/use-mapbox-gl-js-with-react/",
+        "title": "Use Mapbox GL JS in a React app",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/mapbox-with-openlayers/",
+        "title": "Use Mapbox with OpenLayers",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/use-mapbox-js-as-fallback/",
+        "title": "Use Mapbox.js as a fallback",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/android-vision-sdk-usb-camera/",
+        "title": "Use the Mapbox Vision SDK for Android with an external USB camera",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/geofencing-with-isochrones-and-tilesets/",
+        "title": "Using geofences for location-based notifications and events",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/static-images-style-params/",
+        "title": "Using style parameters with the Static Images API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/add-gradient-route-line-video/",
+        "title": "Video: Add a gradient route line to a map",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/customize-label-text-video/",
+        "title": "Video: Customize or hide text for a single label",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/update-studio-classic-style-video/",
+        "title": "Video: Recreate a classic style in modern Mapbox Studio",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/tutorials/markers-js/",
+        "title": "Work with markers in Mapbox.js",
+      },
+    ],
+    "path": "/help/tutorials/",
+    "title": "Tutorials",
+  },
+  Object {
+    "id": "troubleshooting",
+    "navOrder": 4,
+    "pages": Array [
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/access-elevation-data/",
+        "title": "Access elevation data",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/address-geocoding-format-guide/",
+        "title": "Address geocoding format guide",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/adjust-tileset-zoom-extent/",
+        "title": "Adjust the zoom extent of your tileset",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/blank-tiles/",
+        "title": "Blank or missing map tiles",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/mapbox-browser-support/",
+        "title": "Browser support",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/change-language/",
+        "title": "Change your map’s label language",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/collaboration-best-practices/",
+        "title": "Collaboration best practices",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/cors-errors/",
+        "title": "CORS errors",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/csv-upload-errors/",
+        "title": "CSV file errors",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/postgis-data-studio-format/",
+        "title": "Get your PostGIS data ready for Mapbox Studio",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/implementation-support/",
+        "title": "How to get support while building with Mapbox",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/account-lockout/",
+        "title": "How to regain access to your account",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/how-to-use-mapbox-securely/",
+        "title": "How to use Mapbox securely",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/mapbox-gl-js-performance/",
+        "title": "Improve the performance of Mapbox GL JS maps",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/integrate-mapbox-visual-with-power-bi/",
+        "title": "Integrate the Mapbox Visual with Microsoft Power BI",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/private-access-token-android-and-ios/",
+        "title": "Keep access tokens private in open source iOS and Android apps",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/large-data-tippecanoe/",
+        "title": "Manage large data files for Mapbox Studio with Tippecanoe",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/manage-fontstacks/",
+        "title": "Manage your fontstacks",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/manage-tileset-costs/",
+        "title": "Manage your tileset processing and tileset hosting costs",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/streets-v8-migration-guide/",
+        "title": "Migrate from Mapbox Streets v7 to v8",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/migrate-legacy-static-images-api/",
+        "title": "Migrating to the modern Static Images API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/migrate-legacy-static-tiles-api/",
+        "title": "Migrating to the modern Static Tiles API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/mobile-offline/",
+        "title": "Offline maps",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/optimize-map-label-placement/",
+        "title": "Optimize map label placement",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/reporting-a-problem/",
+        "title": "Report a problem with the map",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/reduce-tileset-sources/",
+        "title": "Source limits in Mapbox Studio styles",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/transfer-styles-between-accounts/",
+        "title": "Transfer styles between accounts",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/transition-from-mapbox-js-to-mapbox-gl-js/",
+        "title": "Transition from Mapbox.js to Mapbox GL JS",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/raster-transparency-issues/",
+        "title": "Troubleshoot raster image with black background",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/ios-sdk-submission/",
+        "title": "Troubleshooting App Store submission with the Mapbox Maps SDK for iOS",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/ios-sdk-installation/",
+        "title": "Troubleshooting Mapbox Maps SDK for iOS installation",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/studio-svg-upload-errors/",
+        "title": "Troubleshooting SVG image errors in Mapbox Studio",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/android-apk-size/",
+        "title": "Understanding Android APK size",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/ios-framework-size/",
+        "title": "Understanding iOS framework size",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/uploads/",
+        "title": "Upload data to Mapbox",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/use-custom-mapbox-styles-in-tableau/",
+        "title": "Use custom Mapbox styles in Tableau",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/using-recolorable-images-in-mapbox-maps/",
+        "title": "Using recolorable images in Mapbox maps",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/firewalls/",
+        "title": "Working with firewalls",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/troubleshooting/working-with-large-geojson-data/",
+        "title": "Working with large GeoJSON sources in Mapbox GL JS",
+      },
+    ],
+    "path": "/help/troubleshooting/",
+    "title": "Troubleshooting",
+  },
+  Object {
+    "id": "glossary",
+    "navOrder": 5,
+    "pages": Array [
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/access-token/",
+        "title": "access token",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/annotation/",
+        "title": "annotation",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/attribution/",
+        "title": "attribution",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/baselayer/",
+        "title": "baselayer",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/bearing/",
+        "title": "bearing",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/bounding-box/",
+        "title": "bounding box",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/camera/",
+        "title": "camera",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/cartocss/",
+        "title": "CartoCSS",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/classic-style/",
+        "title": "classic style",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/csv/",
+        "title": "CSV",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/data-driven-styling/",
+        "title": "data-driven styling",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/dataset/",
+        "title": "dataset",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/dataset-id/",
+        "title": "dataset ID",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/datasets-api/",
+        "title": "Datasets API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/directions-api/",
+        "title": "Directions API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/expression/",
+        "title": "expression",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/features/",
+        "title": "feature",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/feature-querying/",
+        "title": "feature querying",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/filter/",
+        "title": "filter",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/font-stack/",
+        "title": "font stack",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/geocoding/",
+        "title": "geocoding",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/geocoding-api/",
+        "title": "Geocoding API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/geojson/",
+        "title": "GeoJSON",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/gpx/",
+        "title": "GPX",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/iframe/",
+        "title": "iframe",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/isochrone-api/",
+        "title": "Isochrone API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/kml/",
+        "title": "KML",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/lat-lon/",
+        "title": "latitude and longitude",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/layout-paint-property/",
+        "title": "layout and paint properties",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/leaflet/",
+        "title": "Leaflet",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/maki/",
+        "title": "Maki icon set",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/map-id/",
+        "title": "map ID",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/map-loads/",
+        "title": "map loads",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/map-matching-api/",
+        "title": "Map Matching API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/map-view/",
+        "title": "map view",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/mapbox-components-for-framer-x/",
+        "title": "Mapbox components for Framer X",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/mapbox-editor/",
+        "title": "Mapbox Editor",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/mapbox-gl/",
+        "title": "Mapbox GL",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/mapbox-gl-js/",
+        "title": "Mapbox GL JS",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/mapbox-android-sdk/",
+        "title": "Mapbox Maps SDK for Android",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/mapbox-ios-sdk/",
+        "title": "Mapbox Maps SDK for iOS",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/mapbox-maps-sdk-for-unity/",
+        "title": "Mapbox Maps SDK for Unity",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/matrix-api-elements/",
+        "title": "Mapbox Matrix API elements",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/mapbox-navigation-sdk/",
+        "title": "Mapbox Navigation SDKs",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/mapbox-satellite/",
+        "title": "Mapbox Satellite",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/mapbox-studio/",
+        "title": "Mapbox Studio",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/mapbox-studio-classic/",
+        "title": "Mapbox Studio Classic",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/mapbox-tiling-service/",
+        "title": "Mapbox Tiling Service (MTS)",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/mapbox-js/",
+        "title": "Mapbox.js",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/mapnik/",
+        "title": "Mapnik",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/maps-sdk-for-react-native/",
+        "title": "Maps SDK for React Native",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/marker/",
+        "title": "marker",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/matrix-api/",
+        "title": "Matrix API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/mbtiles/",
+        "title": "MBTiles",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/monthly-active-users/",
+        "title": "monthly active users",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/offline-region/",
+        "title": "offline regions and offline packs",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/osm/",
+        "title": "OpenStreetMap",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/optimization-api/",
+        "title": "Optimization API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/overzoom/",
+        "title": "overzoom",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/point/",
+        "title": "point",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/projection/",
+        "title": "projection",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/quadtree/",
+        "title": "quadtree",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/raster/",
+        "title": "raster data",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/raster-tiles-api/",
+        "title": "Raster Tiles API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/routing-profile/",
+        "title": "routing profile",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/runtime-styling/",
+        "title": "runtime styling",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/shapefile/",
+        "title": "shapefile",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/simplestyle/",
+        "title": "simplestyle",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/sku-token/",
+        "title": "SKU tokens",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/source/",
+        "title": "source",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/source-layer/",
+        "title": "source layer",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/sprite/",
+        "title": "sprite",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/static-images-api/",
+        "title": "Static Images API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/static-tiles-api/",
+        "title": "Static Tiles API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/style/",
+        "title": "style",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/style-component/",
+        "title": "style component",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/style-id/",
+        "title": "style ID",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/layer/",
+        "title": "style layer",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/style-url/",
+        "title": "style URL",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/style-optimized-vector-tiles/",
+        "title": "style-optimized vector tiles",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/styles-api/",
+        "title": "Styles API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/svg/",
+        "title": "SVG",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/symbol-layer/",
+        "title": "symbol layer",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/telemetry/",
+        "title": "telemetry",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/tiff/",
+        "title": "TIFF",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/tilejson/",
+        "title": "TileJSON",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/tilemill/",
+        "title": "TileMill",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/tilequery-api/",
+        "title": "Tilequery API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/tileset/",
+        "title": "tileset",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/tileset-id/",
+        "title": "tileset ID",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/tileset-recipe/",
+        "title": "tileset recipe",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/tileset-source/",
+        "title": "tileset source",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/tokens-api/",
+        "title": "Tokens API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/turf/",
+        "title": "Turf.js",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/uploads-api/",
+        "title": "Uploads API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/vector-tiles/",
+        "title": "vector tiles",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/vector-tiles-api/",
+        "title": "Vector Tiles API",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/wordpress/",
+        "title": "WordPress map block",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/worldview/",
+        "title": "worldview",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/zoom-extent/",
+        "title": "zoom extent",
+      },
+      Object {
+        "layout": "page",
+        "path": "/help/glossary/zoom-level/",
+        "title": "zoom level",
+      },
+    ],
+    "path": "/help/glossary/",
+    "title": "Glossary",
+  },
+]
 `;
 
 exports[`buildNavigation hideFromNav, removes items 1`] = `
 Object {
-  "accordion": Object {
-    "/dr-ui/level-one/": Array [
-      Object {
-        "path": "/dr-ui/level-one/b/",
-        "title": "Page b",
-      },
-      Object {
-        "path": "/dr-ui/level-one/",
-        "title": "Top page",
-      },
-    ],
-  },
   "hierarchy": Object {
     "/dr-ui/level-one/": Object {
       "parent": "/dr-ui/level-one/",
@@ -503,9 +1234,17 @@ Object {
   },
   "navTabs": Array [
     Object {
-      "href": "/dr-ui/level-one/",
-      "id": "/dr-ui/level-one/",
-      "label": "Top page",
+      "id": "top-page",
+      "navOrder": 1,
+      "pages": Array [
+        Object {
+          "layout": "page",
+          "path": "/dr-ui/level-one/b/",
+          "title": "Page b",
+        },
+      ],
+      "path": "/dr-ui/level-one/",
+      "title": "Top page",
     },
   ],
 }
@@ -514,50 +1253,64 @@ Object {
 exports[`buildNavigation multi structure 1`] = `
 Object {
   "beta/navigation": Object {
-    "accordion": Object {
-      "/docs-starter-kit/beta/navigation/overview/": Array [
-        Object {
-          "path": "/docs-starter-kit/beta/navigation/overview/",
-          "title": "Overview",
-        },
-        Object {
-          "path": "/docs-starter-kit/beta/navigation/overview/layouts/",
-          "title": "Layouts",
-        },
-        Object {
-          "path": "/docs-starter-kit/beta/navigation/overview/navigation/",
-          "title": "Navigation",
-        },
-        Object {
-          "path": "/docs-starter-kit/beta/navigation/overview/images/",
-          "title": "Images and videos",
-        },
-        Object {
-          "path": "/docs-starter-kit/beta/navigation/overview/constants/",
-          "title": "Constants",
-        },
-        Object {
-          "path": "/docs-starter-kit/beta/navigation/overview/frontmatter/",
-          "tag": "fundamentals",
-          "title": "Frontmatter",
-        },
-      ],
-    },
     "navTabs": Array [
       Object {
-        "href": "/docs-starter-kit/beta/navigation/overview/",
-        "id": "/docs-starter-kit/beta/navigation/overview/",
-        "label": "Overview",
+        "id": "overview",
+        "navOrder": 1,
+        "pages": Array [
+          Object {
+            "layout": "page",
+            "order": 2,
+            "path": "/docs-starter-kit/beta/navigation/overview/layouts/",
+            "section": "beta/navigation",
+            "title": "Layouts",
+          },
+          Object {
+            "layout": "page",
+            "order": 3,
+            "path": "/docs-starter-kit/beta/navigation/overview/navigation/",
+            "section": "beta/navigation",
+            "title": "Navigation",
+          },
+          Object {
+            "layout": "page",
+            "order": 4,
+            "path": "/docs-starter-kit/beta/navigation/overview/images/",
+            "section": "beta/navigation",
+            "title": "Images and videos",
+          },
+          Object {
+            "layout": "page",
+            "order": 5,
+            "path": "/docs-starter-kit/beta/navigation/overview/constants/",
+            "section": "beta/navigation",
+            "title": "Constants",
+          },
+          Object {
+            "layout": "page",
+            "order": 6,
+            "path": "/docs-starter-kit/beta/navigation/overview/frontmatter/",
+            "section": "beta/navigation",
+            "tag": "fundamentals",
+            "title": "Frontmatter",
+          },
+        ],
+        "path": "/docs-starter-kit/beta/navigation/overview/",
+        "title": "Overview",
       },
       Object {
-        "href": "/docs-starter-kit/beta/navigation/specification/",
-        "id": "/docs-starter-kit/beta/navigation/specification/",
-        "label": "Specification",
+        "id": "specification",
+        "navOrder": 2,
+        "pages": Array [],
+        "path": "/docs-starter-kit/beta/navigation/specification/",
+        "title": "Specification",
       },
       Object {
-        "href": "/docs-starter-kit/beta/navigation/examples/",
-        "id": "/docs-starter-kit/beta/navigation/examples/",
-        "label": "Examples",
+        "id": "examples",
+        "navOrder": 3,
+        "pages": Array [],
+        "path": "/docs-starter-kit/beta/navigation/examples/",
+        "title": "Examples",
       },
     ],
     "path": "beta/navigation",
@@ -919,150 +1672,192 @@ Object {
     },
   },
   "maps": Object {
-    "accordion": Object {
-      "/docs-starter-kit/maps/overview/": Array [
-        Object {
-          "path": "/docs-starter-kit/maps/overview/",
-          "title": "Overview",
-        },
-        Object {
-          "path": "/docs-starter-kit/maps/overview/layouts/",
-          "title": "Layouts",
-        },
-        Object {
-          "path": "/docs-starter-kit/maps/overview/navigation/",
-          "title": "Navigation",
-        },
-        Object {
-          "path": "/docs-starter-kit/maps/overview/images/",
-          "title": "Images and videos",
-        },
-        Object {
-          "path": "/docs-starter-kit/maps/overview/constants/",
-          "title": "Constants",
-        },
-        Object {
-          "path": "/docs-starter-kit/maps/overview/frontmatter/",
-          "tag": "fundamentals",
-          "title": "Frontmatter",
-        },
-      ],
-    },
     "navTabs": Array [
       Object {
-        "href": "/docs-starter-kit/maps/overview/",
-        "id": "/docs-starter-kit/maps/overview/",
-        "label": "Overview",
+        "id": "overview",
+        "navOrder": 1,
+        "pages": Array [
+          Object {
+            "layout": "page",
+            "order": 2,
+            "path": "/docs-starter-kit/maps/overview/layouts/",
+            "section": "maps",
+            "title": "Layouts",
+          },
+          Object {
+            "layout": "page",
+            "order": 3,
+            "path": "/docs-starter-kit/maps/overview/navigation/",
+            "section": "maps",
+            "title": "Navigation",
+          },
+          Object {
+            "layout": "page",
+            "order": 4,
+            "path": "/docs-starter-kit/maps/overview/images/",
+            "section": "maps",
+            "title": "Images and videos",
+          },
+          Object {
+            "layout": "page",
+            "order": 5,
+            "path": "/docs-starter-kit/maps/overview/constants/",
+            "section": "maps",
+            "title": "Constants",
+          },
+          Object {
+            "layout": "page",
+            "order": 6,
+            "path": "/docs-starter-kit/maps/overview/frontmatter/",
+            "section": "maps",
+            "tag": "fundamentals",
+            "title": "Frontmatter",
+          },
+        ],
+        "path": "/docs-starter-kit/maps/overview/",
+        "title": "Overview",
       },
       Object {
-        "href": "/docs-starter-kit/maps/specification/",
-        "id": "/docs-starter-kit/maps/specification/",
-        "label": "Specification",
+        "id": "specification",
+        "navOrder": 2,
+        "pages": Array [],
+        "path": "/docs-starter-kit/maps/specification/",
+        "title": "Specification",
       },
       Object {
-        "href": "/docs-starter-kit/maps/examples/",
-        "id": "/docs-starter-kit/maps/examples/",
-        "label": "Examples",
+        "id": "examples",
+        "navOrder": 3,
+        "pages": Array [],
+        "path": "/docs-starter-kit/maps/examples/",
+        "title": "Examples",
       },
     ],
     "path": "maps",
     "title": "Maps SDK for iOS",
   },
   "navigation": Object {
-    "accordion": Object {
-      "/docs-starter-kit/navigation/overview/": Array [
-        Object {
-          "path": "/docs-starter-kit/navigation/overview/",
-          "title": "Overview",
-        },
-        Object {
-          "path": "/docs-starter-kit/navigation/overview/layouts/",
-          "title": "Layouts",
-        },
-        Object {
-          "path": "/docs-starter-kit/navigation/overview/navigation/",
-          "title": "Navigation",
-        },
-        Object {
-          "path": "/docs-starter-kit/navigation/overview/images/",
-          "title": "Images and videos",
-        },
-        Object {
-          "path": "/docs-starter-kit/navigation/overview/constants/",
-          "title": "Constants",
-        },
-        Object {
-          "path": "/docs-starter-kit/navigation/overview/frontmatter/",
-          "tag": "fundamentals",
-          "title": "Frontmatter",
-        },
-      ],
-    },
     "navTabs": Array [
       Object {
-        "href": "/docs-starter-kit/navigation/overview/",
-        "id": "/docs-starter-kit/navigation/overview/",
-        "label": "Overview",
+        "id": "overview",
+        "navOrder": 1,
+        "pages": Array [
+          Object {
+            "layout": "page",
+            "order": 2,
+            "path": "/docs-starter-kit/navigation/overview/layouts/",
+            "section": "navigation",
+            "title": "Layouts",
+          },
+          Object {
+            "layout": "page",
+            "order": 3,
+            "path": "/docs-starter-kit/navigation/overview/navigation/",
+            "section": "navigation",
+            "title": "Navigation",
+          },
+          Object {
+            "layout": "page",
+            "order": 4,
+            "path": "/docs-starter-kit/navigation/overview/images/",
+            "section": "navigation",
+            "title": "Images and videos",
+          },
+          Object {
+            "layout": "page",
+            "order": 5,
+            "path": "/docs-starter-kit/navigation/overview/constants/",
+            "section": "navigation",
+            "title": "Constants",
+          },
+          Object {
+            "layout": "page",
+            "order": 6,
+            "path": "/docs-starter-kit/navigation/overview/frontmatter/",
+            "section": "navigation",
+            "tag": "fundamentals",
+            "title": "Frontmatter",
+          },
+        ],
+        "path": "/docs-starter-kit/navigation/overview/",
+        "title": "Overview",
       },
       Object {
-        "href": "/docs-starter-kit/navigation/specification/",
-        "id": "/docs-starter-kit/navigation/specification/",
-        "label": "Specification",
+        "id": "specification",
+        "navOrder": 2,
+        "pages": Array [],
+        "path": "/docs-starter-kit/navigation/specification/",
+        "title": "Specification",
       },
       Object {
-        "href": "/docs-starter-kit/navigation/examples/",
-        "id": "/docs-starter-kit/navigation/examples/",
-        "label": "Examples",
+        "id": "examples",
+        "navOrder": 3,
+        "pages": Array [],
+        "path": "/docs-starter-kit/navigation/examples/",
+        "title": "Examples",
       },
     ],
     "path": "navigation",
     "title": "Navigation SDK for iOS",
   },
   "vision": Object {
-    "accordion": Object {
-      "/docs-starter-kit/vision/overview/": Array [
-        Object {
-          "path": "/docs-starter-kit/vision/overview/",
-          "title": "Overview",
-        },
-        Object {
-          "path": "/docs-starter-kit/vision/overview/layouts/",
-          "title": "Layouts",
-        },
-        Object {
-          "path": "/docs-starter-kit/vision/overview/navigation/",
-          "title": "Navigation",
-        },
-        Object {
-          "path": "/docs-starter-kit/vision/overview/images/",
-          "title": "Images and videos",
-        },
-        Object {
-          "path": "/docs-starter-kit/vision/overview/constants/",
-          "title": "Constants",
-        },
-        Object {
-          "path": "/docs-starter-kit/vision/overview/frontmatter/",
-          "tag": "fundamentals",
-          "title": "Frontmatter",
-        },
-      ],
-    },
     "navTabs": Array [
       Object {
-        "href": "/docs-starter-kit/vision/overview/",
-        "id": "/docs-starter-kit/vision/overview/",
-        "label": "Overview",
+        "id": "overview",
+        "navOrder": 1,
+        "pages": Array [
+          Object {
+            "layout": "page",
+            "order": 2,
+            "path": "/docs-starter-kit/vision/overview/layouts/",
+            "section": "vision",
+            "title": "Layouts",
+          },
+          Object {
+            "layout": "page",
+            "order": 3,
+            "path": "/docs-starter-kit/vision/overview/navigation/",
+            "section": "vision",
+            "title": "Navigation",
+          },
+          Object {
+            "layout": "page",
+            "order": 4,
+            "path": "/docs-starter-kit/vision/overview/images/",
+            "section": "vision",
+            "title": "Images and videos",
+          },
+          Object {
+            "layout": "page",
+            "order": 5,
+            "path": "/docs-starter-kit/vision/overview/constants/",
+            "section": "vision",
+            "title": "Constants",
+          },
+          Object {
+            "layout": "page",
+            "order": 6,
+            "path": "/docs-starter-kit/vision/overview/frontmatter/",
+            "section": "vision",
+            "tag": "fundamentals",
+            "title": "Frontmatter",
+          },
+        ],
+        "path": "/docs-starter-kit/vision/overview/",
+        "title": "Overview",
       },
       Object {
-        "href": "/docs-starter-kit/vision/specification/",
-        "id": "/docs-starter-kit/vision/specification/",
-        "label": "Specification",
+        "id": "specification",
+        "navOrder": 2,
+        "pages": Array [],
+        "path": "/docs-starter-kit/vision/specification/",
+        "title": "Specification",
       },
       Object {
-        "href": "/docs-starter-kit/vision/examples/",
-        "id": "/docs-starter-kit/vision/examples/",
-        "label": "Examples",
+        "id": "examples",
+        "navOrder": 3,
+        "pages": Array [],
+        "path": "/docs-starter-kit/vision/examples/",
+        "title": "Examples",
       },
     ],
     "path": "vision",
@@ -1073,59 +1868,9 @@ Object {
 
 exports[`buildNavigation single structure 1`] = `
 Object {
-  "accordion": Object {
-    "/dr-ui/": Array [
-      Object {
-        "path": "/dr-ui/guides/",
-        "title": "Guides",
-      },
-      Object {
-        "path": "/dr-ui/guides/batfish-helpers/",
-        "title": "Batfish helpers",
-      },
-      Object {
-        "path": "/dr-ui/guides/page-layout/",
-        "title": "PageLayout component",
-      },
-      Object {
-        "path": "/dr-ui/guides/split-pages/",
-        "title": "Split pages",
-      },
-      Object {
-        "path": "/dr-ui/guides/multi-structured/",
-        "title": "Multi-structured sites",
-      },
-    ],
-    "/dr-ui/guides/": Array [
-      Object {
-        "path": "/dr-ui/guides/",
-        "title": "Guides",
-      },
-      Object {
-        "path": "/dr-ui/guides/batfish-helpers/",
-        "title": "Batfish helpers",
-      },
-      Object {
-        "path": "/dr-ui/guides/page-layout/",
-        "title": "PageLayout component",
-      },
-      Object {
-        "path": "/dr-ui/guides/split-pages/",
-        "title": "Split pages",
-      },
-      Object {
-        "path": "/dr-ui/guides/multi-structured/",
-        "title": "Multi-structured sites",
-      },
-    ],
-  },
   "hierarchy": Object {
-    "/dr-ui/": Object {
-      "parent": "/dr-ui/",
-      "title": "Components",
-    },
-    "/dr-ui/changelog/": Object {
-      "parent": "/dr-ui/",
+    "/dr-ui/components/": Object {
+      "parent": "/dr-ui/components/",
       "title": "Components",
     },
     "/dr-ui/examples/": Object {
@@ -1144,7 +1889,19 @@ Object {
       "parent": "/dr-ui/examples/",
       "title": "Examples",
     },
+    "/dr-ui/examples/example-4/": Object {
+      "parent": "/dr-ui/examples/",
+      "title": "Examples",
+    },
+    "/dr-ui/examples/example-5/": Object {
+      "parent": "/dr-ui/examples/",
+      "title": "Examples",
+    },
     "/dr-ui/guides/": Object {
+      "parent": "/dr-ui/guides/",
+      "title": "Guides",
+    },
+    "/dr-ui/guides/a11y/": Object {
       "parent": "/dr-ui/guides/",
       "title": "Guides",
     },
@@ -1164,31 +1921,60 @@ Object {
       "parent": "/dr-ui/guides/",
       "title": "Guides",
     },
-    "/dr-ui/help/": Object {
-      "parent": "/dr-ui/help/",
-      "title": "Help",
-    },
   },
   "navTabs": Array [
     Object {
-      "href": "/dr-ui/",
-      "id": "/dr-ui/",
-      "label": "Components",
+      "id": "components",
+      "navOrder": 1,
+      "pages": Array [],
+      "path": "/dr-ui/components/",
+      "title": "Components",
     },
     Object {
-      "href": "/dr-ui/guides/",
-      "id": "/dr-ui/guides/",
-      "label": "Guides",
+      "id": "guides",
+      "navOrder": 2,
+      "pages": Array [
+        Object {
+          "layout": "page",
+          "order": 2,
+          "path": "/dr-ui/guides/batfish-helpers/",
+          "title": "Batfish helpers",
+        },
+        Object {
+          "layout": "page",
+          "order": 3,
+          "path": "/dr-ui/guides/page-layout/",
+          "title": "PageLayout component",
+        },
+        Object {
+          "layout": "page",
+          "order": 3,
+          "path": "/dr-ui/guides/split-pages/",
+          "splitPages": true,
+          "title": "Split pages",
+        },
+        Object {
+          "layout": "page",
+          "order": 4,
+          "path": "/dr-ui/guides/multi-structured/",
+          "title": "Multi-structured sites",
+        },
+        Object {
+          "layout": "page",
+          "order": 6,
+          "path": "/dr-ui/guides/a11y/",
+          "title": "Accessibility test page",
+        },
+      ],
+      "path": "/dr-ui/guides/",
+      "title": "Guides",
     },
     Object {
-      "href": "/dr-ui/examples/",
-      "id": "/dr-ui/examples/",
-      "label": "Examples",
-    },
-    Object {
-      "href": "/dr-ui/help/",
-      "id": "/dr-ui/help/",
-      "label": "Help",
+      "id": "examples",
+      "navOrder": 3,
+      "pages": Array [],
+      "path": "/dr-ui/examples/",
+      "title": "Examples",
     },
   ],
 }

@@ -8,7 +8,7 @@
     "Tag",
     "Browser",
     "DemoIframe",
-    "GLWrapper",
+    "MapWrapper",
     "Phone",
     "Video"
   ],
@@ -26,21 +26,14 @@
   ],
   "Layout": [
     "PageLayout",
+    "OnThisPage",
     "BackToTopButton",
-    "GlossaryCard",
-    "GlossaryImage",
-    "GlossaryPage",
-    "GlossarySection",
     "OverviewHeader",
     "NavigationAccordion",
-    "NavigationDropdown",
     "ProductMenu",
-    "SectionedNavigation",
-    "Topbar",
-    "TopbarSticker",
     "Card",
     "CardContainer",
-    "ExamplesPage",
+    "Breadcrumb",
     "AnalyticsShell",
     "ErrorBoundary"
   ],
@@ -49,6 +42,7 @@
     "BookletImage",
     "ContactImage",
     "ExampleImage",
+    "GlossaryImage",
     "PlaygroundImage",
     "TroubleshootImage"
   ]

@@ -1,15 +1,24 @@
 const path = require('path');
 const {
   buildNavigation,
-  buildTopics,
-  buildSplitPages,
-  formatTopics
+  buildFilters,
+  buildSplitPages
 } = require('../src/helpers/batfish/index.js');
-const relatedJson = require('../src/helpers/batfish/__tests__/fixtures/related-mts.json');
 
 const siteBasePath = '/dr-ui';
 
-const appendTopics = formatTopics('/dr-ui', 'help', relatedJson);
+const addPages = [
+  {
+    title: 'Tutorials',
+    path: 'https://docs.mapbox.com/help/tutorials?product=api',
+    navOrder: 4
+  },
+  {
+    title: 'Troubleshooting',
+    path: 'https://docs.mapbox.com/help/troubleshooting?product=api',
+    navOrder: 5
+  }
+];
 
 module.exports = () => {
   return {
@@ -35,13 +44,12 @@ module.exports = () => {
         require('rehype-slug'),
         require('@mapbox/rehype-prism'),
         require('../src/plugins/add-links-to-headings'),
-        require('../src/plugins/create-sections'),
         require('../src/plugins/make-table-scroll')
       ]
     },
     dataSelectors: {
-      navigation: (data) => buildNavigation(siteBasePath, data),
-      topics: (data) => buildTopics(data, appendTopics),
+      navigation: (data) => buildNavigation({ siteBasePath, data, addPages }),
+      filters: (data) => buildFilters(data),
       splitPages: (data) => buildSplitPages(data),
       sync: (data) => {
         /* syncs data to fixtures to properly test batfish selectors */
