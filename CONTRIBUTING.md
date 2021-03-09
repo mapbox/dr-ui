@@ -62,9 +62,11 @@ src/components/[component-name]/
 
 The `build` command creates a `pkg/` directory that contains the code we want to publish, organized the way we want it. So `pkg/` is the directory that we publish. `pkg/package.json` is a clone of `package.json` but with `private: true` removed.
 
-1. Document changes in the CHANGELOG and commit the file.
-1. Run `npm version <major|minor|patch>` to increment the version number in package.json and package-lock.json. This will automatically create a commit and tag for the release.
-1. Push your commit.
-1. Build the `pkg/` directory: `npm run build`.
-1. `cd` into the `pkg/` directory and publish the new version on npm: `mbx npm publish`.
-1. `cd` back to the root directory and run `npm run deploy-docs` to deploy the catalog site.
+Once all changes are on the main branch and the CHANGELOG is updated, follow these steps:
+
+1. From the `main` branch, make sure you pulled the latest.
+2. Run `npm version <major|minor|patch>` to increment the version number in package.json and package-lock.json. This will automatically create a commit and tag for the release.
+3. Push your commit.
+5. Run `npm ci` and then `npm run build`.
+6. Run `cd pkg/` to change into the pkg directory and then publish the new version on npm: `mbx npm publish`.
+7. `cd` back to the root directory and run `npm run deploy-docs` to deploy the catalog site.
