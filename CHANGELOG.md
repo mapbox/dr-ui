@@ -1,6 +1,6 @@
 # Changelog
 
-## 3.1.1
+## 3.2.0
 
 - - Add `pricing` theme to `Note`. [#416](https://github.com/mapbox/dr-ui/pull/416)
 
