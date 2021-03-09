@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.1
+
+- - Add `pricing` theme to `Note`. [#416](https://github.com/mapbox/dr-ui/pull/416)
+
 ## 3.1.0
 
 - Update prismjs, rehype-prism. [#411](https://github.com/mapbox/dr-ui/pull/411)
