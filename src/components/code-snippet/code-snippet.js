@@ -10,7 +10,14 @@ import { highlightThemeCss } from '../highlight/theme-css.js';
 class CodeSnippet extends React.Component {
   editButtons = () => {
     // show edit buttons if edit object and all required props are present
-    const { edit, editClasses, editStyles } = this.props;
+    const { edit, maxHeight } = this.props;
+    let { editClasses, editStyles } = this.props;
+
+    // if maxHeight is set, move the Edit buttons above the CodeSnippet
+    if (maxHeight) {
+      (editClasses = 'absolute-mm right mb3 mt-neg36-mm'), (editStyles = {});
+    }
+
     return edit &&
       edit.css &&
       edit.html &&
@@ -75,7 +82,7 @@ CodeSnippet.propTypes = {
   highlighter: PropTypes.func.isRequired,
   /** Name of the file to add context to the code block. */
   filename: PropTypes.string,
-  /** The maximum height of the code block. */
+  /** The maximum height of the code block. If set, the Edit buttons (if enabled) will move above the CodeSnippet. */
   maxHeight: PropTypes.number,
   /** Classes to add to the Edit component container */
   editClasses: PropTypes.string,

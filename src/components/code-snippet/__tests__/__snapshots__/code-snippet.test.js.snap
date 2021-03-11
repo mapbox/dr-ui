@@ -949,7 +949,7 @@ See the example: https://docs.mapbox.com//mapbox-gl-js/example/simple-map/"
 </div>
 `;
 
-exports[`CodeSnippet CodeSnippet with edit buttons, maxHeight, editClasses, and editStyles. renders as expected 1`] = `
+exports[`CodeSnippet CodeSnippet with edit buttons with maxHeight. renders as expected 1`] = `
 <div
   data-swiftype-index="false"
 >
