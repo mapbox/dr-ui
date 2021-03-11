@@ -66,10 +66,11 @@ testCases.withHelpers = {
 
 testCases.maxHeight = {
   component: CodeSnippet,
-  description: 'CodeSnippet with edit buttons and maxHeight',
+  description:
+    'CodeSnippet with edit buttons, maxHeight, editClasses, and editStyles.',
   props: {
     code: fullHtml,
-    maxHeight: 100,
+    maxHeight: 150,
     editClasses: 'absolute-mm right mb3 mt-neg36-mm',
     editStyles: {},
     edit: {

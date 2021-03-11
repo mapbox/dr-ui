@@ -949,7 +949,7 @@ See the example: https://docs.mapbox.com//mapbox-gl-js/example/simple-map/"
 </div>
 `;
 
-exports[`CodeSnippet CodeSnippet with edit buttons and maxHeight renders as expected 1`] = `
+exports[`CodeSnippet CodeSnippet with edit buttons, maxHeight, editClasses, and editStyles. renders as expected 1`] = `
 <div
   data-swiftype-index="false"
 >
@@ -1076,7 +1076,7 @@ See the example: https://docs.mapbox.com//mapbox-gl-js/example/simple-map/"
       className="relative round z0 scroll-styled scroll-auto"
       style={
         Object {
-          "maxHeight": 100,
+          "maxHeight": 150,
         }
       }
     >
