@@ -15,7 +15,8 @@ class CodeSnippet extends React.Component {
 
     // if maxHeight is set, move the Edit buttons above the CodeSnippet
     if (maxHeight) {
-      (editClasses = 'absolute-mm right mb3 mt-neg36-mm'), (editStyles = {});
+      editClasses = 'absolute-mm right mb3 mt-neg36-mm';
+      editStyles = {};
     }
 
     return edit &&
