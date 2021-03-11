@@ -1,6 +1,6 @@
 # Changelog
 
-## Main
+## 3.3.0
 
 - When `maxHeight` is set, move `Edit` buttons in `CodeSnippet` above the code. [#420](https://github.com/mapbox/dr-ui/pull/420)
 
