@@ -21,7 +21,7 @@ exports[`CodeSnippet A CodeSnippet with every feature (edit buttons, title) rend
     className="relative prose"
   >
     <div
-      className="absolute-mm mb6 mb0-mm top right mr36-mm z2"
+      className="absolute-mm right mb6 mb0-mm top mr36-mm z2"
       style={
         Object {
           "marginTop": "4px",
@@ -226,7 +226,7 @@ exports[`CodeSnippet CodeSnippet with edit buttons and extractor renders as expe
     className="relative prose"
   >
     <div
-      className="absolute-mm mb6 mb0-mm top right mr36-mm z2"
+      className="absolute-mm right mb6 mb0-mm top mr36-mm z2"
       style={
         Object {
           "marginTop": "4px",

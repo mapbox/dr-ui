@@ -6,26 +6,25 @@ import MrCodeSnippet from '@mapbox/mr-ui/code-snippet';
 import CodeSnippetTitle from '../code-snippet-title';
 import Edit from '../edit';
 import { highlightThemeCss } from '../highlight/theme-css.js';
+import classnames from 'classnames';
 
 class CodeSnippet extends React.Component {
   editButtons = () => {
     // show edit buttons if edit object and all required props are present
     const { edit, maxHeight } = this.props;
-    let { editClasses, editStyles } = this.props;
-
-    // if maxHeight is set, move the Edit buttons above the CodeSnippet
-    if (maxHeight) {
-      editClasses = 'absolute-mm right mb3 mt-neg36-mm';
-      editStyles = {};
-    }
-
     return edit &&
       edit.css &&
       edit.html &&
       edit.js &&
       edit.frontMatter.title &&
       edit.frontMatter.description ? (
-      <div className={editClasses} style={editStyles}>
+      <div
+        className={classnames('absolute-mm right', {
+          'mb6 mb0-mm top mr36-mm z2': !maxHeight,
+          'mb3 mt-neg36-mm': maxHeight // if maxHeight is set, move the Edit buttons above the CodeSnippet
+        })}
+        style={maxHeight ? {} : { marginTop: '4px' }}
+      >
         <Edit
           css={edit.css}
           html={edit.html}
@@ -71,11 +70,6 @@ class CodeSnippet extends React.Component {
   }
 }
 
-CodeSnippet.defaultProps = {
-  editClasses: 'absolute-mm mb6 mb0-mm top right mr36-mm z2',
-  editStyles: { marginTop: '4px' }
-};
-
 CodeSnippet.propTypes = {
   /** The raw code. */
   code: PropTypes.string.isRequired,
@@ -85,10 +79,6 @@ CodeSnippet.propTypes = {
   filename: PropTypes.string,
   /** The maximum height of the code block. If set, the Edit buttons (if enabled) will move above the CodeSnippet. */
   maxHeight: PropTypes.number,
-  /** Classes to add to the Edit component container */
-  editClasses: PropTypes.string,
-  /** Styles to add to the Edit component container */
-  editStyles: PropTypes.object,
   /** Enables the Edit in CodePen/JSFiddle buttons */
   edit: PropTypes.shape({
     /** Contents for the CSS panel. */

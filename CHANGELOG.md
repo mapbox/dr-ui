@@ -2,7 +2,7 @@
 
 ## Main
 
-- Add `editClasses` and `editStyles` props to `CodeSnippet` and automatically move the `Edit` buttons in `CodeSnippet` above the code when `maxHeight` is set. [#420](https://github.com/mapbox/dr-ui/pull/420)
+- When `maxHeight` is set, move `Edit` buttons in `CodeSnippet` above the code. [#420](https://github.com/mapbox/dr-ui/pull/420)
 
 ## 3.2.0
 
