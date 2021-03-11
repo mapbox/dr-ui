@@ -970,7 +970,7 @@ exports[`CodeSnippet CodeSnippet with edit buttons with maxHeight. renders as ex
     className="relative prose"
   >
     <div
-      className="absolute-mm right mb3 mt-neg36-mm"
+      className="absolute-mm right mb6 mb0-mm mt-neg36-mm"
       style={Object {}}
     >
       <form

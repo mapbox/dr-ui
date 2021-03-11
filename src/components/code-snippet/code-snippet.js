@@ -19,9 +19,9 @@ class CodeSnippet extends React.Component {
       edit.frontMatter.title &&
       edit.frontMatter.description ? (
       <div
-        className={classnames('absolute-mm right', {
-          'mb6 mb0-mm top mr36-mm z2': !maxHeight,
-          'mb3 mt-neg36-mm': maxHeight // if maxHeight is set, move the Edit buttons above the CodeSnippet
+        className={classnames('absolute-mm right mb6 mb0-mm', {
+          'top mr36-mm z2': !maxHeight, // set Edit next to CopyButton
+          'mt-neg36-mm': maxHeight // set Edit above CodeSnippet
         })}
         style={maxHeight ? {} : { marginTop: '4px' }}
       >
