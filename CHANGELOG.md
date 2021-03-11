@@ -1,8 +1,12 @@
 # Changelog
 
+## Main
+
+- When `maxHeight` is set, move `Edit` buttons in `CodeSnippet` above the code. [#420](https://github.com/mapbox/dr-ui/pull/420)
+
 ## 3.2.0
 
-- - Add `pricing` theme to `Note`. [#416](https://github.com/mapbox/dr-ui/pull/416)
+- Add `pricing` theme to `Note`. [#416](https://github.com/mapbox/dr-ui/pull/416)
 
 ## 3.1.0
 

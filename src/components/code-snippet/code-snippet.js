@@ -6,11 +6,12 @@ import MrCodeSnippet from '@mapbox/mr-ui/code-snippet';
 import CodeSnippetTitle from '../code-snippet-title';
 import Edit from '../edit';
 import { highlightThemeCss } from '../highlight/theme-css.js';
+import classnames from 'classnames';
 
 class CodeSnippet extends React.Component {
   editButtons = () => {
     // show edit buttons if edit object and all required props are present
-    const edit = this.props.edit;
+    const { edit, maxHeight } = this.props;
     return edit &&
       edit.css &&
       edit.html &&
@@ -18,8 +19,11 @@ class CodeSnippet extends React.Component {
       edit.frontMatter.title &&
       edit.frontMatter.description ? (
       <div
-        className="absolute-mm mb6 mb0-mm top right mr36-mm z2"
-        style={{ marginTop: '4px' }}
+        className={classnames('absolute-mm right mb6 mb0-mm', {
+          'top mr36-mm z2': !maxHeight, // set Edit next to CopyButton
+          'mt-neg36-mm': maxHeight // set Edit above CodeSnippet
+        })}
+        style={maxHeight ? {} : { marginTop: '4px' }}
       >
         <Edit
           css={edit.css}
@@ -67,22 +71,31 @@ class CodeSnippet extends React.Component {
 }
 
 CodeSnippet.propTypes = {
-  code: PropTypes.string.isRequired, // raw code
-  highlighter: PropTypes.func.isRequired, // the dr-ui/highlight function, example: highlighter={() => highlightJson}. You must also import the function in your frontmatter.
-  filename: PropTypes.string, // (optional) name of the file to add context to the code block
-  maxHeight: PropTypes.number, // (optional) maximum height of the code block, default is set at 300
+  /** The raw code. */
+  code: PropTypes.string.isRequired,
+  /** The dr-ui/highlight function, example: "highlighter={() => highlightJson}". You must also import the function in your frontmatter. */
+  highlighter: PropTypes.func.isRequired,
+  /** Name of the file to add context to the code block. */
+  filename: PropTypes.string,
+  /** The maximum height of the code block. If set, the Edit buttons (if enabled) will move above the CodeSnippet. */
+  maxHeight: PropTypes.number,
+  /** Enables the Edit in CodePen/JSFiddle buttons */
   edit: PropTypes.shape({
-    css: PropTypes.string, // CSS panel contents
-    js: PropTypes.string.isRequired, // JS panel contents
-    html: PropTypes.string.isRequired, // HTML panel contents
-    head: PropTypes.string, // extra html to add to the head of the document (CodePen)
+    /** Contents for the CSS panel. */
+    css: PropTypes.string,
+    /** Contents for the JavaScript panel. */
+    js: PropTypes.string.isRequired,
+    /** Contents for the HTML panel. */
+    html: PropTypes.string.isRequired,
+    /* Extra HTML to add to the head of the document, used by CodePen. */
+    head: PropTypes.string,
     frontMatter: PropTypes.shape({
       title: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
       pathname: PropTypes.string.isRequired
     }),
+    /** Absolute URLs to CDNs that are required by the code. */
     resources: PropTypes.shape({
-      // absolute URLs to CDNs
       js: PropTypes.array,
       css: PropTypes.array
     })
