@@ -13,7 +13,6 @@ class CodeSnippet extends React.Component {
     // show edit buttons if edit object and all required props are present
     const { edit, maxHeight } = this.props;
     return edit &&
-      edit.css &&
       edit.html &&
       edit.js &&
       edit.frontMatter.title &&
