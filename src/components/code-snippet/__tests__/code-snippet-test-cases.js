@@ -83,4 +83,23 @@ testCases.maxHeight = {
   }
 };
 
+testCases.noCss = {
+  component: CodeSnippet,
+  description: 'CodeSnippet with edit buttons without CSS.',
+  props: {
+    code: fullHtml,
+    edit: {
+      html: code.html,
+      js: code.js,
+      resources: code.resources,
+      frontMatter: {
+        description: 'Initialize a map in an HTML element with Mapbox GL JS.',
+        pathname: '/mapbox-gl-js/example/simple-map/',
+        title: 'Display a map'
+      }
+    },
+    highlighter: () => highlightHtml
+  }
+};
+
 export { testCases, noRenderCases };

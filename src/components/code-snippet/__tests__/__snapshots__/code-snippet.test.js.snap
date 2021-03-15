@@ -1693,6 +1693,733 @@ See the example: https://docs.mapbox.com//mapbox-gl-js/example/simple-map/"
 </div>
 `;
 
+exports[`CodeSnippet CodeSnippet with edit buttons without CSS. renders as expected 1`] = `
+<div
+  data-swiftype-index="false"
+>
+  <div
+    className="relative prose"
+  >
+    <div
+      className="absolute-mm right mb6 mb0-mm top mr36-mm z2"
+      style={
+        Object {
+          "marginTop": "4px",
+        }
+      }
+    >
+      <form
+        action="https://jsfiddle.net/api/post/library/pure/"
+        className="inline-block"
+        method="POST"
+        target="_blank"
+      >
+        <input
+          className="btn btn--s cursor-pointer round"
+          onClick={[Function]}
+          style={
+            Object {
+              "border": 0,
+            }
+          }
+          type="submit"
+          value="Edit in JSFiddle"
+        />
+        <input
+          name="wrap"
+          type="hidden"
+          value="b"
+        />
+        <input
+          name="css"
+          type="hidden"
+        />
+        <input
+          name="html"
+          type="hidden"
+          value="
+<div id='map'></div>
+
+
+"
+        />
+        <input
+          name="js"
+          type="hidden"
+          value="
+mapboxgl.accessToken = '<your access token here>';
+var map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+    center: [-74.50, 40], // starting position [lng, lat]
+    zoom: 9 // starting zoom
+});
+"
+        />
+        <input
+          name="title"
+          type="hidden"
+          value="Display a map"
+        />
+        <input
+          name="resources"
+          type="hidden"
+          value={
+            Array [
+              "https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js",
+              "https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css",
+            ]
+          }
+        />
+        <input
+          name="description"
+          type="hidden"
+          value="Initialize a map in an HTML element with Mapbox GL JS.
+
+See the example: https://docs.mapbox.com//mapbox-gl-js/example/simple-map/"
+        />
+      </form>
+      <form
+        action="https://codepen.io/pen/define"
+        className="inline-block ml6"
+        method="POST"
+        target="_blank"
+      >
+        <input
+          name="data"
+          type="hidden"
+          value="{\\"title\\":\\"Display a map\\",\\"html\\":\\"\\\\n<div id='map'></div>\\\\n\\\\n\\\\n\\",\\"html_pre_processor\\":\\"none\\",\\"description\\":\\"Initialize a map in an HTML element with Mapbox GL JS.\\\\n\\\\nSee the example: [https://docs.mapbox.com//mapbox-gl-js/example/simple-map/](https://docs.mapbox.com//mapbox-gl-js/example/simple-map/)\\",\\"tags\\":[\\"mapbox\\",\\"maps\\"],\\"css_pre_processor\\":\\"none\\",\\"js\\":\\"\\\\nmapboxgl.accessToken = '<your access token here>';\\\\nvar map = new mapboxgl.Map({\\\\n    container: 'map', // container id\\\\n    style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location\\\\n    center: [-74.50, 40], // starting position [lng, lat]\\\\n    zoom: 9 // starting zoom\\\\n});\\\\n\\",\\"js_pre_processor\\":\\"none\\",\\"css_external\\":\\"https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css\\",\\"js_external\\":\\"https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js\\"}"
+        />
+        <input
+          className="btn btn--s cursor-pointer round"
+          onClick={[Function]}
+          style={
+            Object {
+              "border": 0,
+            }
+          }
+          type="submit"
+          value="Edit in CodePen"
+        />
+      </form>
+    </div>
+    <div
+      className="relative round z0 scroll-styled"
+      style={Object {}}
+    >
+      <pre>
+        <code
+          className="px0 hljs"
+        >
+          <div
+            className="relative z2"
+            data-chunk-code="chunk-0"
+          >
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token doctype\\"><span class=\\"token punctuation\\">&lt;!</span><span class=\\"token doctype-tag\\">DOCTYPE</span> <span class=\\"token name\\">html</span><span class=\\"token punctuation\\">></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>html</span><span class=\\"token punctuation\\">></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>head</span><span class=\\"token punctuation\\">></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>meta</span> <span class=\\"token attr-name\\">charset</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">'</span>utf-8<span class=\\"token punctuation\\">'</span></span> <span class=\\"token punctuation\\">/></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>title</span><span class=\\"token punctuation\\">></span></span>Display a map<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;/</span>title</span><span class=\\"token punctuation\\">></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>meta</span> <span class=\\"token attr-name\\">name</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">'</span>viewport<span class=\\"token punctuation\\">'</span></span> <span class=\\"token attr-name\\">content</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">'</span>initial-scale=1,maximum-scale=1,user-scalable=no<span class=\\"token punctuation\\">'</span></span> <span class=\\"token punctuation\\">/></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>script</span> <span class=\\"token attr-name\\">src</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">'</span>https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js<span class=\\"token punctuation\\">'</span></span><span class=\\"token punctuation\\">></span></span><span class=\\"token script\\"></span><span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;/</span>script</span><span class=\\"token punctuation\\">></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>link</span> <span class=\\"token attr-name\\">href</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">'</span>https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css<span class=\\"token punctuation\\">'</span></span> <span class=\\"token attr-name\\">rel</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">'</span>stylesheet<span class=\\"token punctuation\\">'</span></span> <span class=\\"token punctuation\\">/></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>style</span><span class=\\"token punctuation\\">></span></span><span class=\\"token style\\"><span class=\\"token language-css\\">",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 40.9,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token selector\\">body</span> <span class=\\"token punctuation\\">{</span> <span class=\\"token property\\">margin</span><span class=\\"token punctuation\\">:</span> 0<span class=\\"token punctuation\\">;</span> <span class=\\"token property\\">padding</span><span class=\\"token punctuation\\">:</span> 0<span class=\\"token punctuation\\">;</span> <span class=\\"token punctuation\\">}</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 69.8,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token selector\\">#map</span> <span class=\\"token punctuation\\">{</span> <span class=\\"token property\\">position</span><span class=\\"token punctuation\\">:</span> absolute<span class=\\"token punctuation\\">;</span> <span class=\\"token property\\">top</span><span class=\\"token punctuation\\">:</span> 0<span class=\\"token punctuation\\">;</span> <span class=\\"token property\\">bottom</span><span class=\\"token punctuation\\">:</span> 0<span class=\\"token punctuation\\">;</span> <span class=\\"token property\\">width</span><span class=\\"token punctuation\\">:</span> 100%<span class=\\"token punctuation\\">;</span> <span class=\\"token punctuation\\">}</span><span class=\\"token punctuation\\">;</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "</span></span><span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;/</span>style</span><span class=\\"token punctuation\\">></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;/</span>head</span><span class=\\"token punctuation\\">></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>body</span><span class=\\"token punctuation\\">></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>div</span> <span class=\\"token attr-name\\">id</span><span class=\\"token attr-value\\"><span class=\\"token punctuation attr-equals\\">=</span><span class=\\"token punctuation\\">'</span>map<span class=\\"token punctuation\\">'</span></span><span class=\\"token punctuation\\">></span></span><span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;/</span>div</span><span class=\\"token punctuation\\">></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;</span>script</span><span class=\\"token punctuation\\">></span></span><span class=\\"token script\\"><span class=\\"token language-javascript\\">",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "mapboxgl<span class=\\"token punctuation\\">.</span>accessToken <span class=\\"token operator\\">=</span> <span class=\\"token string\\">'&lt;your access token here>'</span><span class=\\"token punctuation\\">;</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token keyword\\">var</span> map <span class=\\"token operator\\">=</span> <span class=\\"token keyword\\">new</span> <span class=\\"token class-name\\">mapboxgl<span class=\\"token punctuation\\">.</span>Map</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">{</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 40.9,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "container<span class=\\"token operator\\">:</span> <span class=\\"token string\\">'map'</span><span class=\\"token punctuation\\">,</span> <span class=\\"token comment\\">// container id</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 40.9,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "style<span class=\\"token operator\\">:</span> <span class=\\"token string\\">'mapbox://styles/mapbox/streets-v11'</span><span class=\\"token punctuation\\">,</span> <span class=\\"token comment\\">// stylesheet location</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 40.9,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "center<span class=\\"token operator\\">:</span> <span class=\\"token punctuation\\">[</span><span class=\\"token operator\\">-</span><span class=\\"token number\\">74.50</span><span class=\\"token punctuation\\">,</span> <span class=\\"token number\\">40</span><span class=\\"token punctuation\\">]</span><span class=\\"token punctuation\\">,</span> <span class=\\"token comment\\">// starting position [lng, lat]</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 40.9,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "zoom<span class=\\"token operator\\">:</span> <span class=\\"token number\\">9</span> <span class=\\"token comment\\">// starting zoom</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token punctuation\\">}</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "</span></span><span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;/</span>script</span><span class=\\"token punctuation\\">></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": " ",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;/</span>body</span><span class=\\"token punctuation\\">></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 12,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "<span class=\\"token tag\\"><span class=\\"token tag\\"><span class=\\"token punctuation\\">&lt;/</span>html</span><span class=\\"token punctuation\\">></span></span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+          </div>
+        </code>
+      </pre>
+      <div
+        className="absolute z2 top right mr6 mt6 color-white"
+      />
+    </div>
+  </div>
+</div>
+`;
+
 exports[`CodeSnippet CodeSnippet without edit buttons renders as expected 1`] = `
 <div
   data-swiftype-index="false"
