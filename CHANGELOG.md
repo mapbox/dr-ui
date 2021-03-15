@@ -2,7 +2,7 @@
 
 ## Main
 
-- The `edit.css` prop is optional when displaying `Edit` in `CodeSnippet`.
+- The `edit.css` prop is optional when displaying `Edit` in `CodeSnippet`. [#421](https://github.com/mapbox/dr-ui/pull/421)
 
 ## 3.3.0
 
