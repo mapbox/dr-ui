@@ -1,5 +1,17 @@
 # Changelog
 
+## 3.3.1
+
+- The `edit.css` prop is optional when displaying `Edit` in `CodeSnippet`. [#421](https://github.com/mapbox/dr-ui/pull/421)
+
+## 3.3.0
+
+- When `maxHeight` is set, move `Edit` buttons in `CodeSnippet` above the code. [#420](https://github.com/mapbox/dr-ui/pull/420)
+
+## 3.2.0
+
+- Add `pricing` theme to `Note`. [#416](https://github.com/mapbox/dr-ui/pull/416)
+
 ## 3.1.0
 
 - Update prismjs, rehype-prism. [#411](https://github.com/mapbox/dr-ui/pull/411)

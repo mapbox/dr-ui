@@ -64,4 +64,53 @@ testCases.withHelpers = {
   }
 };
 
+testCases.maxHeight = {
+  component: CodeSnippet,
+  description: 'CodeSnippet with edit buttons with maxHeight.',
+  props: {
+    code: fullHtml,
+    maxHeight: 150,
+    edit: {
+      ...code,
+      frontMatter: {
+        description: 'Initialize a map in an HTML element with Mapbox GL JS.',
+        pathname: '/mapbox-gl-js/example/simple-map/',
+        title: 'Display a map'
+      }
+    },
+    highlighter: () => highlightHtml,
+    filename: 'index.html'
+  }
+};
+
+testCases.noCss = {
+  component: CodeSnippet,
+  description: 'CodeSnippet with edit buttons without CSS.',
+  props: {
+    code: `<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello world!</title>
+</head>
+<body>
+<h1 id="h1">Hello world!</h1>
+<script>
+document.getElementById('h1').style.color = 'red';
+</script>
+</body>
+</html>`,
+    edit: {
+      html: '<h1 id="h1">Hello world!</h1>',
+      js: `document.getElementById('h1').style.color = 'red';`,
+      frontMatter: {
+        description: 'Change the text color of an HTML element to red.',
+        pathname: '/mapbox-gl-js/example/hello-world/',
+        title: 'Style an HTML element in JavaScript'
+      }
+    },
+    highlighter: () => highlightHtml
+  }
+};
+
 export { testCases, noRenderCases };

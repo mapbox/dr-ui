@@ -88,4 +88,15 @@ testCases.custom = {
   )
 };
 
+testCases.pricing = {
+  description: 'pricing information',
+  element: (
+    <div>
+      {' '}
+      <Note theme="pricing">pricing note</Note>
+      <Tag theme="pricing" />
+    </div>
+  )
+};
+
 export { testCases, noRenderCases };

@@ -42,7 +42,8 @@ Note.propTypes = {
     'legacy',
     'beta',
     'default',
-    'new'
+    'new',
+    'pricing'
   ])
 };
 

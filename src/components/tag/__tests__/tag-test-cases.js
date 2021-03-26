@@ -37,6 +37,14 @@ testCases.new = {
   }
 };
 
+testCases.pricing = {
+  component: Tag,
+  description: 'Pricing tag',
+  props: {
+    theme: 'pricing'
+  }
+};
+
 testCases.custom = {
   description: 'Custom tag',
   element: <Custom />
