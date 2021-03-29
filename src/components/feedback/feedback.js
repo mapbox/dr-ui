@@ -15,7 +15,7 @@ const anonymousId = uuidv4(); // creates an anonymousId fallback if user is not 
 const environment = env();
 const location = typeof window !== 'undefined' ? window.location : undefined;
 
-class Feedback extends React.Component {
+class Feedback extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {

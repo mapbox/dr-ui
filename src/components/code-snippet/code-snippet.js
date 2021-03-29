@@ -8,7 +8,7 @@ import Edit from '../edit';
 import { highlightThemeCss } from '../highlight/theme-css.js';
 import classnames from 'classnames';
 
-class CodeSnippet extends React.Component {
+class CodeSnippet extends React.PureComponent {
   editButtons = () => {
     // show edit buttons if edit object and all required props are present
     const { edit, maxHeight } = this.props;

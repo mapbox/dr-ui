@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ChevronousText from '@mapbox/mr-ui/chevronous-text';
 import MapWrapper from '../map-wrapper/map-wrapper';
 
-export default class DemoIframe extends React.Component {
+export default class DemoIframe extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {

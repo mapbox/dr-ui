@@ -46,7 +46,7 @@ Content.propTypes = {
   })
 };
 
-export class ContentWrapper extends React.Component {
+export class ContentWrapper extends React.PureComponent {
   renderFeedback = (position) => {
     const { location, section, layoutConfig } = this.props;
     const { layout } = layoutConfig;

@@ -24,7 +24,7 @@ MapWrapper.propTypes = {
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
 };
 
-class Map extends React.Component {
+class Map extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
