@@ -3,62 +3,33 @@ import PropTypes from 'prop-types';
 import Downshift from 'downshift';
 import SearchModal from './search-modal';
 import SearchResult from './search-result';
-import debounce from 'debounce';
 import { getFilterValueDisplay } from '@elastic/react-search-ui-views/lib/view-helpers';
 import { Facet } from '@elastic/react-search-ui';
 import classnames from 'classnames';
 
-class SearchBox extends React.Component {
+class SearchBox extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      modalOpen: false,
-      useModal: !this.props.disableModal
+      modalOpen: true, // open model for a smooth transition from the facade
+      useModal: this.props.useModal
     };
-    this.openModal = this.openModal.bind(this);
-    this.closeModal = this.closeModal.bind(this);
-    this.renderModal = this.renderModal.bind(this);
-    this.renderSearchBar = this.renderSearchBar.bind(this);
-    this.singleLinksFacet = this.singleLinksFacet.bind(this);
-    this.checkWidth = debounce(() => {
-      const width = document.body.clientWidth;
-      this.setState({
-        useModal: width > 640 && !this.props.disableModal
-      });
-    }, 200);
-
     // if resultsOnly and overrideSearchTerm, set the search term
     if (this.props.resultsOnly && this.props.overrideSearchTerm) {
       props.setSearchTerm(this.props.overrideSearchTerm);
     }
   }
 
-  componentDidMount() {
-    this.checkWidth();
-    window.addEventListener('resize', this.checkWidth);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.checkWidth);
-  }
-
-  openModal() {
+  openModal = () => {
     this.setState({ modalOpen: true });
-  }
+  };
 
-  closeModal() {
+  closeModal = () => {
     this.props.reset();
     this.setState({ modalOpen: false });
-  }
+  };
 
-  singleLinksFacet = ({
-    className, // eslint-disable-line
-    label, // eslint-disable-line
-    onRemove,
-    onSelect,
-    options,
-    values = []
-  }) => {
+  singleLinksFacet = ({ onRemove, onSelect, options, values = [] }) => {
     const value = values[0];
     const siteFilter = options.filter(
       (opt) => opt.value === this.props.site
@@ -108,7 +79,7 @@ class SearchBox extends React.Component {
     );
   };
 
-  renderSearchBar() {
+  renderSearchBar = () => {
     const { props } = this;
     return (
       <Downshift
@@ -184,6 +155,7 @@ class SearchBox extends React.Component {
                     ref={(input) => {
                       this.docsSeachInput = input;
                     }}
+                    autoFocus={true} // auto focus input for a smooth transition from the facade
                     placeholder={this.props.placeholder}
                     className={classnames('input bg-white', {
                       'px60 h60 txt-l': this.state.useModal,
@@ -252,9 +224,9 @@ class SearchBox extends React.Component {
         }}
       </Downshift>
     );
-  }
+  };
 
-  renderModal() {
+  renderModal = () => {
     const { props } = this;
     if (!this.state.modalOpen) {
       return null;
@@ -268,7 +240,7 @@ class SearchBox extends React.Component {
         <div>{this.renderSearchBar()}</div>
       </SearchModal>
     );
-  }
+  };
 
   render() {
     // hide results until overrideSearchTerm not null
@@ -288,6 +260,7 @@ class SearchBox extends React.Component {
                 'flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round',
                 {
                   'btn--white': this.props.background !== 'light',
+                  wmax30: this.props.narrow,
                   'w-full': !this.props.narrow
                 }
               )}
@@ -345,7 +318,8 @@ SearchBox.propTypes = {
   segmentTrackEvent: PropTypes.string,
   overrideSearchTerm: PropTypes.string,
   themeCompact: PropTypes.bool,
-  emptyResultMessage: PropTypes.node
+  emptyResultMessage: PropTypes.node,
+  useModal: PropTypes.bool.isRequired
 };
 
 export default SearchBox;
