@@ -2,6 +2,10 @@
 
 ## 4.0.0
 
+- 🚨The `CodeSnippet` prop `highlighter` no longer accepts an arrow function.
+  - Before: `highlighter={() => highlightJson}`
+  - After: `highlighter={highlightJson}`
+
 ## 3.3.1
 
 - The `edit.css` prop is optional when displaying `Edit` in `CodeSnippet`. [#421](https://github.com/mapbox/dr-ui/pull/421)
