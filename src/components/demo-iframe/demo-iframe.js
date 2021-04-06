@@ -22,7 +22,8 @@ export default class DemoIframe extends React.PureComponent {
   }
 
   render() {
-    let { src, title, gl } = this.props;
+    let { src } = this.props;
+    const { title, gl } = this.props;
     const { mapboxAccessToken } = this.state;
     // check to see if the src is making a request to mapbox api
     const makeRequest = src.indexOf('MapboxAccessToken') > -1;

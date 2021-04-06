@@ -6,8 +6,8 @@ import stripMd from 'remove-markdown';
 
 // formats the metadata
 function meta(frontMatter) {
-  let description = frontMatter.description,
-    path = `https://docs.mapbox.com/${frontMatter.pathname}`;
+  let description = frontMatter.description;
+  const path = `https://docs.mapbox.com/${frontMatter.pathname}`;
   description += `\n\nSee the example: [${path}](${path})`;
   return {
     title: frontMatter.title,
@@ -57,7 +57,7 @@ class Button extends React.PureComponent {
 
 export default class Edit extends React.PureComponent {
   render() {
-    let { css, js, html, head, resources, frontMatter } = this.props;
+    const { css, js, html, head, resources, frontMatter } = this.props;
     const projectMeta = meta(frontMatter);
     return (
       <>
