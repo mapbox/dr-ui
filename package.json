@@ -40,6 +40,7 @@
     "@babel/plugin-proposal-class-properties": "^7.12.13",
     "@babel/preset-env": "^7.12.13",
     "@babel/preset-react": "^7.12.13",
+    "@loadable/babel-plugin": "^5.13.2",
     "@mapbox/appropriate-images-react": "^2.0.0",
     "@mapbox/batfish": "^2.1.0",
     "@mapbox/copyeditor": "^0.10.0",
