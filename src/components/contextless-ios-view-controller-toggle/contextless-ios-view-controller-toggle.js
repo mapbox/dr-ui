@@ -5,10 +5,6 @@ import { highlightSwift } from '../highlight/swift';
 import { highlightObjectivec } from '../highlight/objectivec';
 
 export default class ContextlessIosViewControllerToggle extends React.PureComponent {
-  static defaultProps = {
-    limitHeight: true
-  };
-
   render() {
     const { id, context, objectiveC, swift, limitHeight } = this.props;
 
@@ -62,6 +58,10 @@ export default class ContextlessIosViewControllerToggle extends React.PureCompon
     );
   }
 }
+
+ContextlessIosViewControllerToggle.defaultProps = {
+  limitHeight: true
+};
 
 ContextlessIosViewControllerToggle.propTypes = {
   /* Intended to be hooked up to `context` in the format
