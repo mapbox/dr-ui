@@ -15,6 +15,7 @@ class SearchBox extends React.Component {
       modalOpen: false,
       useModal: !this.props.disableModal
     };
+    this.docsSeachInput = React.createRef;
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
     this.renderModal = this.renderModal.bind(this);
@@ -64,6 +65,24 @@ class SearchBox extends React.Component {
       (opt) => opt.value === this.props.site
     )[0];
 
+    function handleSiteFilter(e) {
+      e.preventDefault();
+      // track click
+      if (window && window.analytics) {
+        analytics.track(this.props.segmentTrackEvent, {
+          query: this.props.searchTerm,
+          toggle: true,
+          site: this.props.site
+        });
+      }
+      onSelect(siteFilter.value);
+    }
+
+    function handleAllFilter(e) {
+      e.preventDefault();
+      onRemove(value);
+    }
+
     return siteFilter ? (
       <div className="py12 border-b border--gray-faint mx6">
         <div className="toggle-group">
@@ -73,18 +92,7 @@ class SearchBox extends React.Component {
               className={`toggle py3 ${
                 value === siteFilter.value ? 'bg-gray color-white' : ''
               }`}
-              onClick={(e) => {
-                e.preventDefault();
-                // track click
-                if (window && window.analytics) {
-                  analytics.track(this.props.segmentTrackEvent, {
-                    query: this.props.searchTerm,
-                    toggle: true,
-                    site: this.props.site
-                  });
-                }
-                onSelect(siteFilter.value);
-              }}
+              onClick={handleSiteFilter}
             >
               {getFilterValueDisplay(siteFilter.value)}
             </button>
@@ -92,10 +100,7 @@ class SearchBox extends React.Component {
 
           <div className="toggle-container">
             <button
-              onClick={(e) => {
-                e.preventDefault();
-                onRemove(value);
-              }}
+              onClick={handleAllFilter}
               className={`toggle py3 ${!value ? 'bg-gray color-white' : ''}`}
             >
               All docs
@@ -109,33 +114,51 @@ class SearchBox extends React.Component {
   };
 
   renderSearchBar() {
-    const { props } = this;
+    const {
+      inputId,
+      searchTerm,
+      trackClickThrough,
+      segmentTrackEvent,
+      setSearchTerm,
+      resultsOnly,
+      isLoading,
+      wasSearched,
+      themeCompact,
+      emptyResultMessage
+    } = this.props;
+
+    function handleSelection(selection) {
+      // track click
+      if (window && window.analytics) {
+        analytics.track(segmentTrackEvent, {
+          query: searchTerm,
+          clicked: selection.url.raw
+        });
+      }
+      trackClickThrough(selection.id.raw); // track selection click through
+      window.open(selection.url.raw, '_self'); // open selection in current window
+    }
+    function handleInputChange(newValue) {
+      if (searchTerm === newValue) return;
+      setSearchTerm(newValue, { debounce: 1500 });
+      // track query
+      if (window && window.analytics) {
+        analytics.track(segmentTrackEvent, {
+          query: newValue
+        });
+      }
+    }
+
+    function handleItemToString() {
+      return searchTerm;
+    }
     return (
       <Downshift
-        id={this.props.inputId}
-        inputValue={this.props.searchTerm}
-        onChange={(selection) => {
-          // track click
-          if (window && window.analytics) {
-            analytics.track(this.props.segmentTrackEvent, {
-              query: this.props.searchTerm,
-              clicked: selection.url.raw
-            });
-          }
-          this.props.trackClickThrough(selection.id.raw); // track selection click through
-          window.open(selection.url.raw, '_self'); // open selection in current window
-        }}
-        onInputValueChange={(newValue) => {
-          if (props.searchTerm === newValue) return;
-          props.setSearchTerm(newValue, { debounce: 1500 });
-          // track query
-          if (window && window.analytics) {
-            analytics.track(this.props.segmentTrackEvent, {
-              query: newValue
-            });
-          }
-        }}
-        itemToString={() => props.searchTerm}
+        id={inputId}
+        inputValue={searchTerm}
+        onChange={handleSelection}
+        onInputValueChange={handleInputChange}
+        itemToString={handleItemToString}
       >
         {(downshiftProps) => {
           const {
@@ -147,7 +170,7 @@ class SearchBox extends React.Component {
 
           return (
             <div>
-              {!props.resultsOnly && (
+              {!resultsOnly && (
                 <React.Fragment>
                   <label className="cursor-pointer" {...getLabelProps()}>
                     <div
@@ -181,25 +204,21 @@ class SearchBox extends React.Component {
                     )}
                   </label>
                   <input
-                    ref={(input) => {
-                      this.docsSeachInput = input;
-                    }}
+                    ref={this.docsSeachInput}
                     placeholder={this.props.placeholder}
                     className={classnames('input bg-white', {
                       'px60 h60 txt-l': this.state.useModal,
                       'px36 h36': !this.state.useModal
                     })}
                     {...getInputProps({
-                      onFocus: () => {
-                        openMenu();
-                      }
+                      onFocus: openMenu
                     })}
                   />
                 </React.Fragment>
               )}
-              {(isOpen || props.resultsOnly) && props.searchTerm && (
+              {(isOpen || resultsOnly) && searchTerm && (
                 <React.Fragment>
-                  {props.isLoading && (
+                  {isLoading && (
                     <div className="w-full h360 bg-white opacity75 absolute">
                       <div className="loading mx-auto mt60" />
                     </div>
@@ -208,7 +227,7 @@ class SearchBox extends React.Component {
                     className={classnames(
                       'color-text round mt3 bg-white w-full align-l',
                       {
-                        'hmax360 scroll-auto scroll-styled absolute shadow-darken25 z4': !props.resultsOnly
+                        'hmax360 scroll-auto scroll-styled absolute shadow-darken25 z4': !resultsOnly
                       }
                     )}
                   >
@@ -219,8 +238,7 @@ class SearchBox extends React.Component {
                         label="Site"
                         view={this.singleLinksFacet}
                       />
-
-                      {props.wasSearched &&
+                      {wasSearched &&
                         (this.props.results.length ? (
                           <ul>
                             {this.props.results.map((result, index) => (
@@ -229,18 +247,18 @@ class SearchBox extends React.Component {
                                 result={result}
                                 index={index}
                                 downshiftProps={downshiftProps}
-                                themeCompact={props.themeCompact}
+                                themeCompact={themeCompact}
                               />
                             ))}
                           </ul>
                         ) : (
                           <div
                             className={classnames('px12', {
-                              'py6 txt-s': props.themeCompact,
-                              'py12 prose': !props.themeCompact
+                              'py6 txt-s': themeCompact,
+                              'py12 prose': !themeCompact
                             })}
                           >
-                            {props.emptyResultMessage}
+                            {emptyResultMessage}
                           </div>
                         ))}
                     </React.Fragment>

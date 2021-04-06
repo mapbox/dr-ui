@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import ControlToggleSet from '@mapbox/mr-ui/control-toggle-set';
 
 class CodeToggle extends React.Component {
+  handleChange = (value) => {
+    this.props.onChange(value);
+  };
   render() {
     const { props } = this;
     const language = props.options.filter((option) => {
@@ -19,9 +22,7 @@ class CodeToggle extends React.Component {
         id={props.id}
         themeToggleGroup="bg-blue py3 px3"
         themeToggle="txt-s py3 toggle--white toggle--active-blue"
-        onChange={(value) => {
-          props.onChange(value);
-        }}
+        onChange={this.handleChange}
         value={language}
         options={options}
       />

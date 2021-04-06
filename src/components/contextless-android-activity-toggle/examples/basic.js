@@ -44,7 +44,6 @@ export default class Basic extends React.Component {
         id="test-java-only"
         java={java}
         limitHeight={true}
-        onCopy={() => {}}
       />
     );
   }

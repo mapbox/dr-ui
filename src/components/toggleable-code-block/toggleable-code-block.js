@@ -41,15 +41,10 @@ export default class ToggleableCodeBlock extends React.Component {
 
   renderToggle = () => {
     const { id, changeLanguage, options } = this.props;
-    return (
-      <CodeToggle
-        id={id}
-        onChange={(value) => {
-          changeLanguage(value);
-        }}
-        options={options}
-      />
-    );
+    function handleChange(value) {
+      changeLanguage(value);
+    }
+    return <CodeToggle id={id} onChange={handleChange} options={options} />;
   };
 
   checkPreference = (language) => {

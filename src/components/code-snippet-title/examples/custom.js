@@ -7,6 +7,7 @@ import CodeToggle from '../../code-toggle';
 
 export default class Custom extends React.Component {
   render() {
+    function handleChange() {}
     return (
       <CodeSnippetTitle
         filename="ViewController"
@@ -14,7 +15,7 @@ export default class Custom extends React.Component {
         toggle={
           <CodeToggle
             id="some-id"
-            onChange={() => {}}
+            onChange={handleChange}
             options={[
               {
                 label: 'Swift',

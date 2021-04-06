@@ -25,7 +25,7 @@ export default class Basic extends React.Component {
     return (
       <CodeSnippet
         code={swiftCodeSnippet}
-        highlighter={() => highlightSwift}
+        highlighter={highlightSwift}
         highlightThemeCss={highlightThemeCss}
       />
     );

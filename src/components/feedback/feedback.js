@@ -57,7 +57,8 @@ class Feedback extends React.Component {
   };
 
   // handles when user clicks YES or NO button
-  handleYesNo = (helpful) => {
+  handleYesNo = (e) => {
+    const helpful = e.target.value === 'true'; // make the value boolean
     // sets user rating to the state
     this.setState({ helpful }, () => {
       // creates event to send to Segment and sets it to the state
@@ -191,14 +192,16 @@ class Feedback extends React.Component {
             <AsideHeading>Was this {this.props.type} helpful?</AsideHeading>
             <button
               id={this.createId('yes')}
-              onClick={() => this.handleYesNo(true)}
+              onClick={this.handleYesNo}
+              value={true}
               className="btn btn--s"
             >
               Yes
             </button>
             <button
               id={this.createId('no')}
-              onClick={() => this.handleYesNo(false)}
+              onClick={this.handleYesNo}
+              value={false}
               className="btn btn--s ml6"
             >
               No

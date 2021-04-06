@@ -76,17 +76,18 @@ export class VimeoPlayImage extends React.Component {
     // to add the circle background
     const IconWrapper = ({ wrap, children }) =>
       this.props.fallbackIcon ? wrap(children) : children;
+    function handleIcon(children) {
+      return (
+        <div
+          style={{ width: 55, height: 55, padding: '15px 12px 15px 18px' }}
+          className="bg-purple-light round-full"
+        >
+          {children}
+        </div>
+      );
+    }
     return (
-      <IconWrapper
-        wrap={(children) => (
-          <div
-            style={{ width: 55, height: 55, padding: '15px 12px 15px 18px' }}
-            className="bg-purple-light round-full"
-          >
-            {children}
-          </div>
-        )}
-      >
+      <IconWrapper wrap={handleIcon}>
         <svg
           viewBox="0 0 20 20"
           width="100%"

@@ -42,12 +42,17 @@ class CodeSnippet extends React.Component {
     const filename = this.props.filename;
     return filename && <CodeSnippetTitle filename={filename} />;
   };
+
   render() {
     const { code, maxHeight, highlighter } = this.props;
-    const highlightedCode = highlighter()(code);
+    const highlightedCode = highlighter(code);
     // only load the component if we have `code` and `highlighter`
     if (!highlighter && !code) return;
     // wrap the component in appcontext so we can get the user's token
+    function onCopy() {
+      if (window && window.analytics)
+        analytics.track('Copied example with clipboard');
+    }
     return (
       <div data-swiftype-index="false">
         {this.codeSnippetTitle()}
@@ -59,9 +64,7 @@ class CodeSnippet extends React.Component {
             {...this.props}
             highlightThemeCss={highlightThemeCss}
             highlightedCode={highlightedCode}
-            onCopy={() => {
-              analytics.track('Copied example with clipboard');
-            }}
+            onCopy={onCopy}
           />
         </div>
       </div>
@@ -72,7 +75,7 @@ class CodeSnippet extends React.Component {
 CodeSnippet.propTypes = {
   /** The raw code. */
   code: PropTypes.string.isRequired,
-  /** The dr-ui/highlight function, example: "highlighter={() => highlightJson}". You must also import the function in your frontmatter. */
+  /** The dr-ui/highlight function, example: "highlighter={highlightJson}". You must also import the function in your frontmatter. */
   highlighter: PropTypes.func.isRequired,
   /** Name of the file to add context to the code block. */
   filename: PropTypes.string,

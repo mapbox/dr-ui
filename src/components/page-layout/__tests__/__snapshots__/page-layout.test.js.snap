@@ -110,6 +110,7 @@ Array [
                       aria-label="Toggle Overview menu"
                       className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
                       onClick={[Function]}
+                      value="Overview"
                     >
                       <svg
                         className="events-none icon inline-block align-t"
@@ -741,6 +742,7 @@ Array [
                       aria-label="Toggle Overview menu"
                       className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
                       onClick={[Function]}
+                      value="Overview"
                     >
                       <svg
                         className="events-none icon inline-block align-t"
@@ -990,6 +992,7 @@ Array [
                         className="btn btn--s"
                         id="dr-ui--feedback-aside-page-yes"
                         onClick={[Function]}
+                        value={true}
                       >
                         Yes
                       </button>
@@ -997,6 +1000,7 @@ Array [
                         className="btn btn--s ml6"
                         id="dr-ui--feedback-aside-page-no"
                         onClick={[Function]}
+                        value={false}
                       >
                         No
                       </button>
@@ -1029,6 +1033,7 @@ Array [
                       className="btn btn--s"
                       id="dr-ui--feedback-bottom-page-yes"
                       onClick={[Function]}
+                      value={true}
                     >
                       Yes
                     </button>
@@ -1036,6 +1041,7 @@ Array [
                       className="btn btn--s ml6"
                       id="dr-ui--feedback-bottom-page-no"
                       onClick={[Function]}
+                      value={false}
                     >
                       No
                     </button>
@@ -1239,6 +1245,7 @@ Array [
                       className="btn btn--s"
                       id="dr-ui--feedback-bottom-page-yes"
                       onClick={[Function]}
+                      value={true}
                     >
                       Yes
                     </button>
@@ -1246,6 +1253,7 @@ Array [
                       className="btn btn--s ml6"
                       id="dr-ui--feedback-bottom-page-no"
                       onClick={[Function]}
+                      value={false}
                     >
                       No
                     </button>
@@ -1411,6 +1419,7 @@ Array [
                       aria-label="Toggle Overview menu"
                       className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
                       onClick={[Function]}
+                      value="Overview"
                     >
                       <svg
                         className="events-none icon inline-block align-t"
@@ -1675,6 +1684,7 @@ Array [
                         className="btn btn--s"
                         id="dr-ui--feedback-aside-page-yes"
                         onClick={[Function]}
+                        value={true}
                       >
                         Yes
                       </button>
@@ -1682,6 +1692,7 @@ Array [
                         className="btn btn--s ml6"
                         id="dr-ui--feedback-aside-page-no"
                         onClick={[Function]}
+                        value={false}
                       >
                         No
                       </button>
@@ -1730,6 +1741,7 @@ Array [
                       className="btn btn--s"
                       id="dr-ui--feedback-bottom-page-yes"
                       onClick={[Function]}
+                      value={true}
                     >
                       Yes
                     </button>
@@ -1737,6 +1749,7 @@ Array [
                       className="btn btn--s ml6"
                       id="dr-ui--feedback-bottom-page-no"
                       onClick={[Function]}
+                      value={false}
                     >
                       No
                     </button>
@@ -2092,6 +2105,7 @@ Array [
                       className="btn btn--s"
                       id="dr-ui--feedback-bottom-page-yes"
                       onClick={[Function]}
+                      value={true}
                     >
                       Yes
                     </button>
@@ -2099,6 +2113,7 @@ Array [
                       className="btn btn--s ml6"
                       id="dr-ui--feedback-bottom-page-no"
                       onClick={[Function]}
+                      value={false}
                     >
                       No
                     </button>

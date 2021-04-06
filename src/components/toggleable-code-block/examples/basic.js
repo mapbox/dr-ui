@@ -21,6 +21,8 @@ export default class Basic extends React.Component {
     }
     `;
 
+    function handleChange() {}
+
     return (
       <ToggleableCodeBlock
         id="test-java-filename"
@@ -33,7 +35,7 @@ export default class Basic extends React.Component {
             [5, 8]
           ]
         }}
-        changeLanguage={() => {}}
+        changeLanguage={handleChange}
         filename="ThisIsAFile.extension"
         link="https://github.com/mapbox/"
         limitHeight={true}

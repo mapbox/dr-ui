@@ -134,6 +134,10 @@ export default class NumberedCodeSnippet extends React.PureComponent {
     this.firstLiveElement = element;
   };
 
+  toggleLines = () => {
+    this.setState({ expanded: !this.state.expanded });
+  };
+
   render() {
     const { props } = this;
 
@@ -338,19 +342,9 @@ export default class NumberedCodeSnippet extends React.PureComponent {
         );
       } else if (!codeChunk.live && lineEls.length) {
         const expandCollapseButtons = this.state.expanded ? (
-          <HideLines
-            onClick={() => {
-              this.setState({ expanded: !this.state.expanded });
-            }}
-          >
-            {lineEls}
-          </HideLines>
+          <HideLines onClick={this.toggleLines}>{lineEls}</HideLines>
         ) : (
-          <ShowLines
-            onClick={() => {
-              this.setState({ expanded: !this.state.expanded });
-            }}
-          />
+          <ShowLines onClick={this.toggleLines} />
         );
         codeElements.push(
           <div
@@ -369,6 +363,10 @@ export default class NumberedCodeSnippet extends React.PureComponent {
         );
       }
 
+      function onCopyChunk() {
+        props.onCopy(++liveChunkCount);
+      }
+
       if (codeChunk.live) {
         highlightElements.push(
           <div
@@ -380,9 +378,6 @@ export default class NumberedCodeSnippet extends React.PureComponent {
             <div className="bg-blue h-full" />
           </div>
         );
-
-        const chunkIndex = ++liveChunkCount;
-        const onCopyChunk = () => this.props.onCopy(chunkIndex);
 
         if (props.onCopy) {
           copyElements.push(

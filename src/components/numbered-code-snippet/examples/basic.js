@@ -51,6 +51,10 @@ export default class Basic extends React.Component {
         }
     }`;
 
+    function handleCopy() {
+      console.log('Copied!');
+    }
+
     return (
       <NumberedCodeSnippet
         code={code}
@@ -58,7 +62,7 @@ export default class Basic extends React.Component {
         maxHeight={450}
         highlightThemeCss={highlightThemeCss}
         copyRanges={[[6, 17]]}
-        onCopy={() => {}}
+        onCopy={handleCopy}
       />
     );
   }

@@ -5,11 +5,12 @@ import React from 'react';
 import CodeToggle from '../code-toggle';
 
 export default class Basic extends React.Component {
+  handleChange = () => {};
   render() {
     return (
       <CodeToggle
         id="one"
-        onChange={() => {}}
+        onChange={this.handleChange}
         options={[
           {
             label: 'Swift',

@@ -336,7 +336,7 @@ export default class ExampleIndex extends React.PureComponent {
                   }.`}
             </div>
             <button
-              onClick={() => this.handleReset()}
+              onClick={this.handleReset}
               className="btn btn--s btn--gray btn--stroke round"
             >
               Reset filters
@@ -409,6 +409,7 @@ ExampleIndex.propTypes = {
 };
 
 class FilterSection extends React.PureComponent {
+  handleInput = (value, id) => this.props.handleInput(value, id);
   renderInput = () => {
     const {
       title,
@@ -416,7 +417,6 @@ class FilterSection extends React.PureComponent {
       activeItem,
       isSwitch,
       id,
-      handleInput,
       isText,
       placeholder
     } = this.props;
@@ -428,7 +428,7 @@ class FilterSection extends React.PureComponent {
           placeholder={placeholder}
           id={id}
           value={activeItem}
-          onChange={(value, id) => handleInput(value, id)}
+          onChange={this.handleInput}
           themeControlInput="input input--s relative wmax180"
           themeLabel={themeLabel}
           label={title}
@@ -445,7 +445,7 @@ class FilterSection extends React.PureComponent {
           label={title}
           themeLabel={`${themeLabel} ml6`}
           themeControlSwitch="switch--s-label switch--gray"
-          onChange={(value, id) => handleInput(value, id)}
+          onChange={this.handleInput}
         />
       );
     else
@@ -456,9 +456,7 @@ class FilterSection extends React.PureComponent {
           value={activeItem}
           themeLabel={`${themeLabel} w70`}
           themeControlSelect="select select--s"
-          onChange={(value, id) => {
-            handleInput(value, id);
-          }}
+          onChange={this.handleInput}
           options={[
             {
               label: `All ${title.toLowerCase()}`,

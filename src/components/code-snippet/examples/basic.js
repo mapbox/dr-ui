@@ -8,10 +8,7 @@ import { highlightHtml } from '../../highlight/html';
 export default class Basic extends React.Component {
   render() {
     return (
-      <CodeSnippet
-        code={`<h1>Hello world!</h1>`}
-        highlighter={() => highlightHtml}
-      />
+      <CodeSnippet code={`<h1>Hello world!</h1>`} highlighter={highlightHtml} />
     );
   }
 }

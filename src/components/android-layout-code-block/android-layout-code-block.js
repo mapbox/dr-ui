@@ -15,6 +15,12 @@ export default class AndroidLayoutCodeBlock extends React.Component {
   };
 
   render() {
+    function onCopy() {
+      if (window && window.analytics) {
+        analytics.track('Copied AndroidLayoutCodeBlock to clipboard');
+      }
+    }
+
     return (
       <div className="my24">
         {this.props.filename && this.renderTitle()}
@@ -24,7 +30,7 @@ export default class AndroidLayoutCodeBlock extends React.Component {
               code={this.props.code}
               highlightedCode={highlightXml(this.props.code)}
               highlightThemeCss={highlightThemeCss}
-              onCopy={() => {}}
+              onCopy={onCopy}
             />
           </div>
         )}
