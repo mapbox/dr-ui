@@ -255,7 +255,7 @@ class PageShell extends React.Component {
 
 ## Prepare sitemap
 
-`prepareSitemap` creates a data file that lists all files with `hideFromSearchEngines: true` set in the page's frontMatter. Use this generated file with Batfish's [`sitemap.ignoreFile`](https://github.com/mapbox/batfish/blob/main/docs/configuration.md#sitemap) option to generate a sitemap that excludes any paths in the prepared file.
+`prepareSitemap` creates a data file that lists all files with `hideFromSearchEngines: true` or `splitPage: true` set in the page's frontMatter. Use this generated file with Batfish's [`sitemap.ignoreFile`](https://github.com/mapbox/batfish/blob/main/docs/configuration.md#sitemap) option to generate a sitemap that excludes any paths in the prepared file.
 
 ### Arguments
 
