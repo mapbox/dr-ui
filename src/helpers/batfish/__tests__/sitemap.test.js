@@ -64,8 +64,8 @@ describe('prepareSitemap', () => {
     ]);
   });
 
-  // check that sitemap matches snapshot
   // travis is configured to run this test file again after build
+  // this test asserts the URLs in the sitemap
   if (existsSync(siteMap)) {
     it('sitemap', () => {
       const contents = readFileSync(siteMap, 'utf-8')
