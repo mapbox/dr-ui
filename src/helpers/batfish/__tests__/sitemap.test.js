@@ -73,7 +73,22 @@ describe('prepareSitemap', () => {
           /(?<=(<loc>))(.*)+?(?=(<\/loc>))/gm // eslint-disable-line
         )
         .sort();
-      expect(contents).toMatchSnapshot();
+      expect(contents).toEqual([
+        'https://mapbox.github.io/dr-ui/changelog',
+        'https://mapbox.github.io/dr-ui/components',
+        'https://mapbox.github.io/dr-ui/examples',
+        'https://mapbox.github.io/dr-ui/examples/example-1',
+        'https://mapbox.github.io/dr-ui/examples/example-2',
+        'https://mapbox.github.io/dr-ui/examples/example-3',
+        'https://mapbox.github.io/dr-ui/examples/example-4',
+        'https://mapbox.github.io/dr-ui/examples/example-5',
+        'https://mapbox.github.io/dr-ui/guides',
+        'https://mapbox.github.io/dr-ui/guides/a11y',
+        'https://mapbox.github.io/dr-ui/guides/batfish-helpers',
+        'https://mapbox.github.io/dr-ui/guides/multi-structured',
+        'https://mapbox.github.io/dr-ui/guides/page-layout',
+        'https://mapbox.github.io/dr-ui/guides/split-pages'
+      ]);
     });
   }
 });
