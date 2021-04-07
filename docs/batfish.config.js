@@ -56,7 +56,8 @@ module.exports = () => {
       navigation: (data) => buildNavigation({ siteBasePath, data, addPages }),
       filters: (data) => buildFilters(data),
       splitPages: (data) => buildSplitPages(data),
-      sitemapIgnore: ({ pages }) => prepareSitemap({ pages, siteBasePath }),
+      sitemapIgnore: ({ pages }) =>
+        prepareSitemap({ pages, siteBasePath, docsPath: 'docs' }),
       sync: (data) => {
         /* syncs data to fixtures to properly test batfish selectors */
         const sortBy = (key) => {

@@ -18,4 +18,22 @@ describe('prepareSitemap', () => {
     ].map((f) => f.replace(process.cwd(), ''));
     expect(ignoreFile).toEqual(['/_site/index.html', '/_site/assets/']);
   });
+
+  it('with docsPath', () => {
+    const ignoreFile = prepareSitemap({
+      pages,
+      siteBasePath,
+      docsPath: 'docs'
+    }).map((f) => f.replace(process.cwd(), ''));
+    expect(ignoreFile).toEqual(['/docs/_site/index.html']);
+  });
+
+  it('with outputDirectory', () => {
+    const ignoreFile = prepareSitemap({
+      pages,
+      siteBasePath,
+      outputDirectory: '_batfish_site'
+    }).map((f) => f.replace(process.cwd(), ''));
+    expect(ignoreFile).toEqual(['/_batfish_site/index.html']);
+  });
 });
