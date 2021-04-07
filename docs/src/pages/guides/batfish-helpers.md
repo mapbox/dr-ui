@@ -262,7 +262,7 @@ class PageShell extends React.Component {
 - `data`, object. Provided by the data selector.
 - `siteBasePath`, string. The site's `siteBasePath` as defined in the Batfish config.
 - `outputDirectory`, string. Batfish's `outputDirectory`. Default `_site`.
-- `docsPath`, string. The directory that `batfish.config.js` lives in, if not in the root. The use of this argument is uncommon.
+- `docsPath`, string. The directory that `batfish.config.js` lives in, if not in the root. (It's unlikely that you will use this option.)
 
 ### Set up in batfish.config.js
 
