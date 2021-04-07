@@ -1,6 +1,8 @@
 const prepareSitemap = require('../sitemap');
 const { pages } = require('./fixtures/data.json');
+const { existsSync, readFileSync } = require('fs');
 
+const siteMap = './docs/_site/sitemap.xml';
 const siteBasePath = '/dr-ui';
 
 describe('prepareSitemap', () => {
@@ -61,4 +63,12 @@ describe('prepareSitemap', () => {
       '/_batfish_site/index.html'
     ]);
   });
+
+  // check that sitemap matches snapshot
+  // travis is configured to run this test file again after build
+  if (existsSync(siteMap)) {
+    it('sitemap', () => {
+      expect(readFileSync(siteMap, 'utf-8')).toMatchSnapshot();
+    });
+  }
 });
