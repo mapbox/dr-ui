@@ -68,9 +68,11 @@ describe('prepareSitemap', () => {
   // travis is configured to run this test file again after build
   if (existsSync(siteMap)) {
     it('sitemap', () => {
-      const contents = readFileSync(siteMap, 'utf-8').match(
-        /(?<=(<loc>))(.*)+?(?=(<\/loc>))/gm // eslint-disable-line
-      );
+      const contents = readFileSync(siteMap, 'utf-8')
+        .match(
+          /(?<=(<loc>))(.*)+?(?=(<\/loc>))/gm // eslint-disable-line
+        )
+        .sort();
       expect(contents).toMatchSnapshot();
     });
   }
