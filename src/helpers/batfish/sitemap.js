@@ -6,9 +6,13 @@ function prepareSitemap({
   docsPath = '',
   outputDirectory = '_site'
 }) {
-  // find pages with `hideFromSearchEngines: true` in frontMatter
+  // find pages with `hideFromSearchEngines: true` in frontMatter or `splitPage: true`
+  // we do not want these pages to appear in the sitemap
   return pages
-    .filter(({ frontMatter }) => frontMatter.hideFromSearchEngines)
+    .filter(
+      ({ frontMatter }) =>
+        frontMatter.hideFromSearchEngines || frontMatter.splitPage
+    )
     .map(({ path }) => {
       // fix root index path to return full path
       if (path === `${siteBasePath}/`) {
