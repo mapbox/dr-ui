@@ -173,7 +173,7 @@ The following example is the value of the `frontMatter` prop which overrides the
       overviewHeader: {
         ...frontMatter.overviewHeader,
         version: myVariable,
-        image: <AppropriateImage id="documentation-astronaut" />
+        image: <AppropriateImage alt="" id="documentation-astronaut" />
       }
     }
   })
