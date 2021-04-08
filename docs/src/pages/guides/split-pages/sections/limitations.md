@@ -5,7 +5,7 @@ order: 3
 splitPage: true
 hideFeedback: true
 products:
-  - Mapbox fundamentals
+  - Documentation
 contentType: guide
 ---
 
