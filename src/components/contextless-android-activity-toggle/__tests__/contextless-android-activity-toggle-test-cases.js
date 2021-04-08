@@ -70,7 +70,7 @@ testCases.basic = {
 
 testCases.twoLang = {
   component: ContextlessAndroidActivityToggle,
-  description: 'Two languages',
+  description: 'Two languages (code toggle not interactive)',
   props: {
     context: contextJava,
     id: 'test-java-kotlin',
@@ -95,7 +95,7 @@ testCases.kotlinOnly = {
 
 testCases.filename = {
   component: ContextlessAndroidActivityToggle,
-  description: 'Two languages with filename',
+  description: 'Two languages with filename  (code toggle not interactive)',
   props: {
     context: contextKotlin,
     id: 'test-java-kotlin-filename',
@@ -110,7 +110,7 @@ testCases.filename = {
 
 testCases.copyRange = {
   component: ContextlessAndroidActivityToggle,
-  description: 'Two languages with copy ranges',
+  description: 'Two languages with copy ranges (code toggle not interactive)',
   props: {
     context: contextKotlin,
     id: 'test-java-kotlin-copy-range',

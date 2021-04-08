@@ -6,13 +6,13 @@ const testCases = {};
 const noRenderCases = {};
 
 testCases.basic = {
-  description: 'Swift preferred',
+  description: 'Swift preferred (interactive)',
   element: <Basic />
 };
 
 testCases.objectiveC = {
   component: CodeToggle,
-  description: 'Objective C preferred',
+  description: 'Objective C preferred (not interactive)',
   props: {
     id: 'two',
     onChange: () => {},
@@ -33,7 +33,7 @@ testCases.objectiveC = {
 
 testCases.objectiveC2 = {
   component: CodeToggle,
-  description: 'Java preferred',
+  description: 'Java preferred (not interactive)',
   props: {
     id: 'three',
     onChange: () => {},

@@ -123,7 +123,7 @@ exports[`contextless-ios-view-controller-toggle Basic renders as expected 1`] = 
 </div>
 `;
 
-exports[`contextless-ios-view-controller-toggle Two languages renders as expected 1`] = `
+exports[`contextless-ios-view-controller-toggle Two languages (code toggle is not interactive) renders as expected 1`] = `
 <div
   className="my24 prose"
 >
