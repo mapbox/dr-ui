@@ -2,6 +2,8 @@
 
 ## 4.0.0
 
+- Load the `Search` component with a facade to improve performance. [#430](https://github.com/mapbox/dr-ui/pull/430)
+
 ## 3.3.1
 
 - The `edit.css` prop is optional when displaying `Edit` in `CodeSnippet`. [#421](https://github.com/mapbox/dr-ui/pull/421)
