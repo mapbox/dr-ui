@@ -233,7 +233,9 @@ class SearchBox extends React.Component {
         ) : (
           <div>
             <SearchButton
-              backgroun={this.props.background}
+              isFacade={false}
+              onClick={this.openModal}
+              background={this.props.background}
               narrow={this.props.narrow}
             />
             {this.renderModal()}

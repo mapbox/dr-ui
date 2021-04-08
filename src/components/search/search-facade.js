@@ -34,9 +34,13 @@ SearchFacade.propTypes = {
 
 export class SearchButton extends React.PureComponent {
   render() {
-    const { background, narrow } = this.props;
+    const { background, narrow, isFacade, onClick } = this.props;
+    const Element = isFacade ? 'div' : 'button';
+    const buttonProps = {
+      ...(!isFacade && { onClick })
+    };
     return (
-      <div
+      <Element
         className={classnames(
           'flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6',
           {
@@ -45,6 +49,7 @@ export class SearchButton extends React.PureComponent {
             'w-full': !narrow
           }
         )}
+        {...buttonProps}
         style={narrow ? { paddingLeft: '12px', paddingRight: '12px' } : {}}
       >
         <span
@@ -67,18 +72,21 @@ export class SearchButton extends React.PureComponent {
             Search
           </span>
         )}
-      </div>
+      </Element>
     );
   }
 }
 
 SearchButton.defaultProps = {
-  background: 'light'
+  background: 'light',
+  isFacade: true
 };
 
 SearchButton.propTypes = {
   background: PropTypes.oneOf(['light', 'dark']),
-  narrow: PropTypes.bool
+  narrow: PropTypes.bool,
+  isFacade: PropTypes.bool,
+  onClick: PropTypes.func
 };
 
 export class SearchInput extends React.PureComponent {
