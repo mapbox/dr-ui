@@ -39,8 +39,8 @@ export default class Search extends React.PureComponent {
 
   render() {
     const { loadSearch, useModal } = this.state;
-    /* Show SearchFacade until the user clicks the SearchButton or focuses on the SearchInput */
-    /* Then lazy load the rest of the search component */
+    /* Show SearchFacade until the user clicks or focuses on it */
+    /* Then load the search component */
     return loadSearch || this.props.overrideSearchTerm !== undefined ? (
       <LazyLoadComponent useModal={useModal} {...this.props} />
     ) : (
