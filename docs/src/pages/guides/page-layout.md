@@ -17,13 +17,13 @@ prependJs:
   - "import { filterOptions } from '../../../../src/components/page-layout/components/example-index';"
 ---
 
-The [`PageLayout`](/dr-ui/#pagelayout) component is the main controller for building pages with Dr. UI and offers five layout options. `PageLayout` provides everything from the site's navigation, to the sidebar contents, and main content area. It also includes common components like Search and Feedback.
+The [`PageLayout`](/dr-ui/components/#pagelayout) component is the main controller for building pages with Dr. UI and offers five layout options. `PageLayout` provides everything from the site's navigation, to the sidebar contents, and main content area. It also includes common components like Search and Feedback.
 
 While the [docs-starter-kit](https://github.com/mapbox/docs-starter-kit) configures `PageLayout` with the most common setup, this guide describes all available options to working and customizing the component.
 
 ## Layouts
 
-The [`PageLayout`](/dr-ui/#pagelayout) component comes with several layouts that you define in your page's frontmatter. Each layout is a set of opinionated configurations, but you have the option to customize the layout by setting additional frontmatter fields.
+The [`PageLayout`](/dr-ui/components/#pagelayout) component comes with several layouts that you define in your page's frontmatter. Each layout is a set of opinionated configurations, but you have the option to customize the layout by setting additional frontmatter fields.
 
 {{<LayoutUsage data={{
   page:
@@ -56,7 +56,7 @@ You can set any of the following `frontMatter` props from the frontmatter in you
 
 ### How can I set defaults for multiple pages or an entire site?
 
-When you create your [`PageLayout`](/dr-ui/#pagelayout) component in your site's page shell, you can define or redefine the frontmatter object.
+When you create your [`PageLayout`](/dr-ui/components/#pagelayout) component in your site's page shell, you can define or redefine the frontmatter object.
 
 The example below will turn off the feedback component for every page:
 
@@ -66,7 +66,7 @@ The example below will turn off the feedback component for every page:
 
 ## Filters and navigation
 
-The [`PageLayout`](/dr-ui/#pagelayout) component accepts `filters` and `navigation` props to define all the filters for examples and the site's navigation system, respectively.
+The [`PageLayout`](/dr-ui/components/#pagelayout) component accepts `filters` and `navigation` props to define all the filters for examples and the site's navigation system, respectively.
 
 In most cases, you can use Batfish helpers to automatically generate this dataset. See the following resources on how to install these functions and use them with `PageLayout`:
 
@@ -91,19 +91,19 @@ Available values for `showFilters`: {{ filterOptions.join(', ') }}
 
 Most docs.mapbox.com sites use a single structure, which means it documents a single product. But [iOS](https://docs.mapbox.com/ios/maps/overview/) and [Android](https://docs.mapbox.com/android/maps/overview/) use a multi-structure to document maps, navigation, and search.
 
-The [navigation](/dr-ui/guides/batfish-helpers/#navigation) Batfish helper function can handle multi-structured sites and build the `navigation` dataset required for [`PageLayout`](/dr-ui/#pagelayout) automatically. You will need to include a configuration object to define each part of the site. See [shape of multi-structured sections](/dr-ui/guides/batfish-helpers/#shape-of-multi-structured-sections) for how to write a configuration object.
+The [navigation](/dr-ui/guides/batfish-helpers/#navigation) Batfish helper function can handle multi-structured sites and build the `navigation` dataset required for [`PageLayout`](/dr-ui/components/#pagelayout) automatically. You will need to include a configuration object to define each part of the site. See [shape of multi-structured sections](/dr-ui/guides/batfish-helpers/#shape-of-multi-structured-sections) for how to write a configuration object.
 
 **See the [Multi-structured guide](/dr-ui/guides/multi-structured/) for steps on building a new site.**
 
 ## Other `PageLayout` props
 
-The [`PageLayout`](/dr-ui/#pagelayout) component accepts the following props for you to further customize your site:
+The [`PageLayout`](/dr-ui/components/#pagelayout) component accepts the following props for you to further customize your site:
 
 {{<OtherProps />}}
 
 ## Site navigation
 
-The site navigation appears at the left side of every page. It uses [`ProductMenu`](/dr-ui/#productmenu) to show the site title, and [`NavigationAccordion`](/dr-ui/#NavigationAccordion) to display all navigation links for the site starting with top-level pages.
+The site navigation appears at the left side of every page. It uses [`ProductMenu`](/dr-ui/components/#productmenu) to show the site title, and [`NavigationAccordion`](/dr-ui/components/#NavigationAccordion) to display all navigation links for the site starting with top-level pages.
 
 ### What are top-level pages?
 
@@ -142,12 +142,12 @@ The frontmatter props `navOrder` and `order` have different functions.
 - `navOrder` identifies a top-level page and its position in the `NavigationAccordion` across the top of the page.
 - `order` sets the order for all pages in a section that uses the `page` layout.
 
-For top-level pages using the `page` layout, besides setting `navOrder`, you will also set `order: 1` to make sure that the top-level page appears first in the [`NavigationAccordion`](/dr-ui/#navigationaccordion)
+For top-level pages using the `page` layout, besides setting `navOrder`, you will also set `order: 1` to make sure that the top-level page appears first in the [`NavigationAccordion`](/dr-ui/components/#navigationaccordion)
 {{</Note>}}
 
 ## Overview header
 
-The main page for each docs site displays the [`OverviewHeader`](/dr-ui/#overviewheader) to orient the user to the product.
+The main page for each docs site displays the [`OverviewHeader`](/dr-ui/components/#overviewheader) to orient the user to the product.
 
 To add `OverviewHeader` to your page, pass the props of the component in the frontMatter under `overviewHeader`.
 
@@ -173,7 +173,7 @@ The following example is the value of the `frontMatter` prop which overrides the
       overviewHeader: {
         ...frontMatter.overviewHeader,
         version: myVariable,
-        image: <AppropriateImage id="documentation-astronaut" />
+        image: <AppropriateImage alt="" id="documentation-astronaut" />
       }
     }
   })
@@ -184,7 +184,7 @@ This technique may also be used by multi-structured sites, although you'll need 
 
 ## Custom aside
 
-Sites like Mapbox GL JS require custom asides since the data is derived from multiple sources. Similarly, the [Dr. UI components page](/dr-ui/) also uses a custom aside, see the example below for how to conditionally display a custom sidebar:
+Sites like Mapbox GL JS require custom asides since the data is derived from multiple sources. Similarly, the [Dr. UI components page](/dr-ui/components/) also uses a custom aside, see the example below for how to conditionally display a custom sidebar:
 
 ```jsx
 import Aside from './aside';
