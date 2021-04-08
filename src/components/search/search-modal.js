@@ -4,7 +4,12 @@ import AriaModal from 'react-aria-modal';
 import Icon from '@mapbox/mr-ui/icon';
 import getWindow from '@mapbox/mr-ui/utils/get-window';
 
-export default class Modal extends React.PureComponent {
+export default class Modal extends React.Component {
+  constructor(props) {
+    super(props);
+    this.setDialogEl = this.setDialogEl.bind(this);
+  }
+
   componentDidMount() {
     if (!this.dialogEl || typeof window === 'undefined') return;
     this.scrollTimeout = getWindow().setTimeout(() => {
@@ -21,9 +26,9 @@ export default class Modal extends React.PureComponent {
     getWindow().clearTimeout(this.scrollTimeout);
   }
 
-  setDialogEl = (el) => {
+  setDialogEl(el) {
     this.dialogEl = el;
-  };
+  }
 
   render() {
     const { props } = this;

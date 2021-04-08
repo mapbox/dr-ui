@@ -34,7 +34,14 @@ class SearchBox extends React.PureComponent {
     this.setState({ modalOpen: false });
   }
 
-  singleLinksFacet = ({ onRemove, onSelect, options, values = [] }) => {
+  singleLinksFacet = ({
+    className, // eslint-disable-line
+    label, // eslint-disable-line
+    onRemove,
+    onSelect,
+    options,
+    values = []
+  }) => {
     const value = values[0];
     const siteFilter = options.filter(
       (opt) => opt.value === this.props.site
