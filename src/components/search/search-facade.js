@@ -10,17 +10,21 @@ export class SearchFacade extends React.PureComponent {
     if (this.props.resultsOnly) return <div />;
     return (
       <div className="h36 relative">
-        <button
-          className="w-full block"
-          onClick={this.props.loadSearch}
-          {...buttonProps}
-        >
-          {this.props.useModal ? (
-            <SearchButton {...this.props} />
-          ) : (
-            <SearchInput {...this.props} />
-          )}
-        </button>
+        <div>
+          <div>
+            <button
+              className="w-full block"
+              onClick={this.props.loadSearch}
+              {...buttonProps}
+            >
+              {this.props.useModal ? (
+                <SearchButton {...this.props} />
+              ) : (
+                <SearchInput {...this.props} />
+              )}
+            </button>
+          </div>
+        </div>
       </div>
     );
   }
