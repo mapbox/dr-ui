@@ -75,28 +75,29 @@ exports[`search Search with \`disableModal\` option set. Open https://app.swifty
   <button
     className="w-full block"
     onClick={[Function]}
-    onFocus={[Function]}
   >
-    <label>
-      <div
-        className="absolute flex-parent flex-parent--center-cross flex-parent--center-main w36 h36"
+    <div
+      className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+      style={Object {}}
+    >
+      <span
+        className="mr6 color-gray"
       >
         <svg
-          className="icon color-gray w18 h18"
+          className="icon w18 h18"
         >
-          <title>
-            Search
-          </title>
           <use
             xlinkHref="#icon-search"
           />
         </svg>
-      </div>
-    </label>
-    <input
-      className="input bg-white px36 h36"
-      placeholder="Search docs.mapbox.com"
-    />
+      </span>
+       
+      <span
+        className="color-gray"
+      >
+        Search
+      </span>
+    </div>
   </button>
 </div>
 `;
