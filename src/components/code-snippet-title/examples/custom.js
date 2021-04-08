@@ -6,6 +6,14 @@ import CodeSnippetTitle from '../code-snippet-title';
 import CodeToggle from '../../code-toggle';
 
 export default class Custom extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      language: 'swift'
+    };
+  }
+
+  changeLanguage = (language) => this.setState({ language });
   render() {
     return (
       <CodeSnippetTitle
@@ -14,17 +22,17 @@ export default class Custom extends React.PureComponent {
         toggle={
           <CodeToggle
             id="some-id"
-            onChange={() => {}}
+            onChange={this.changeLanguage}
             options={[
               {
                 label: 'Swift',
                 language: 'swift',
-                preferredLanguage: true
+                preferredLanguage: this.state.language === 'swift'
               },
               {
                 label: 'Objective-C',
                 language: 'objectiveC',
-                preferredLanguage: false
+                preferredLanguage: this.state.language === 'objectiveC'
               }
             ]}
           />

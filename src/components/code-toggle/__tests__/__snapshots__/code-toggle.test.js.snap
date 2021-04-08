@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`code-toggle Java preferred renders as expected 1`] = `
+exports[`code-toggle Java preferred (not interactive) renders as expected 1`] = `
 <div
   className="relative "
 >
@@ -88,7 +88,7 @@ exports[`code-toggle Java preferred renders as expected 1`] = `
 </div>
 `;
 
-exports[`code-toggle Objective C preferred renders as expected 1`] = `
+exports[`code-toggle Objective C preferred (not interactive) renders as expected 1`] = `
 <div
   className="relative "
 >
@@ -142,7 +142,7 @@ exports[`code-toggle Objective C preferred renders as expected 1`] = `
 </div>
 `;
 
-exports[`code-toggle Swift preferred renders as expected 1`] = `
+exports[`code-toggle Swift preferred (interactive) renders as expected 1`] = `
 <div
   className="relative "
 >
