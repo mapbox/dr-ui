@@ -52,37 +52,33 @@ Array [
               <div
                 className="h36 relative"
               >
-                <div>
-                  <div>
-                    <button
-                      className="w-full block"
-                      onClick={[Function]}
+                <button
+                  className="w-full block"
+                  onClick={[Function]}
+                >
+                  <div
+                    className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+                    style={Object {}}
+                  >
+                    <span
+                      className="mr6 color-gray"
                     >
-                      <div
-                        className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
-                        style={Object {}}
+                      <svg
+                        className="icon w18 h18"
                       >
-                        <span
-                          className="mr6 color-gray"
-                        >
-                          <svg
-                            className="icon w18 h18"
-                          >
-                            <use
-                              xlinkHref="#icon-search"
-                            />
-                          </svg>
-                        </span>
-                         
-                        <span
-                          className="color-gray"
-                        >
-                          Search
-                        </span>
-                      </div>
-                    </button>
+                        <use
+                          xlinkHref="#icon-search"
+                        />
+                      </svg>
+                    </span>
+                     
+                    <span
+                      className="color-gray"
+                    >
+                      Search
+                    </span>
                   </div>
-                </div>
+                </button>
               </div>
             </div>
           </div>
@@ -687,37 +683,33 @@ Array [
               <div
                 className="h36 relative"
               >
-                <div>
-                  <div>
-                    <button
-                      className="w-full block"
-                      onClick={[Function]}
+                <button
+                  className="w-full block"
+                  onClick={[Function]}
+                >
+                  <div
+                    className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+                    style={Object {}}
+                  >
+                    <span
+                      className="mr6 color-gray"
                     >
-                      <div
-                        className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
-                        style={Object {}}
+                      <svg
+                        className="icon w18 h18"
                       >
-                        <span
-                          className="mr6 color-gray"
-                        >
-                          <svg
-                            className="icon w18 h18"
-                          >
-                            <use
-                              xlinkHref="#icon-search"
-                            />
-                          </svg>
-                        </span>
-                         
-                        <span
-                          className="color-gray"
-                        >
-                          Search
-                        </span>
-                      </div>
-                    </button>
+                        <use
+                          xlinkHref="#icon-search"
+                        />
+                      </svg>
+                    </span>
+                     
+                    <span
+                      className="color-gray"
+                    >
+                      Search
+                    </span>
                   </div>
-                </div>
+                </button>
               </div>
             </div>
           </div>
@@ -1361,37 +1353,33 @@ Array [
               <div
                 className="h36 relative"
               >
-                <div>
-                  <div>
-                    <button
-                      className="w-full block"
-                      onClick={[Function]}
+                <button
+                  className="w-full block"
+                  onClick={[Function]}
+                >
+                  <div
+                    className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+                    style={Object {}}
+                  >
+                    <span
+                      className="mr6 color-gray"
                     >
-                      <div
-                        className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
-                        style={Object {}}
+                      <svg
+                        className="icon w18 h18"
                       >
-                        <span
-                          className="mr6 color-gray"
-                        >
-                          <svg
-                            className="icon w18 h18"
-                          >
-                            <use
-                              xlinkHref="#icon-search"
-                            />
-                          </svg>
-                        </span>
-                         
-                        <span
-                          className="color-gray"
-                        >
-                          Search
-                        </span>
-                      </div>
-                    </button>
+                        <use
+                          xlinkHref="#icon-search"
+                        />
+                      </svg>
+                    </span>
+                     
+                    <span
+                      className="color-gray"
+                    >
+                      Search
+                    </span>
                   </div>
-                </div>
+                </button>
               </div>
             </div>
           </div>
@@ -1892,37 +1880,33 @@ Array [
               <div
                 className="h36 relative"
               >
-                <div>
-                  <div>
-                    <button
-                      className="w-full block"
-                      onClick={[Function]}
+                <button
+                  className="w-full block"
+                  onClick={[Function]}
+                >
+                  <div
+                    className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+                    style={Object {}}
+                  >
+                    <span
+                      className="mr6 color-gray"
                     >
-                      <div
-                        className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
-                        style={Object {}}
+                      <svg
+                        className="icon w18 h18"
                       >
-                        <span
-                          className="mr6 color-gray"
-                        >
-                          <svg
-                            className="icon w18 h18"
-                          >
-                            <use
-                              xlinkHref="#icon-search"
-                            />
-                          </svg>
-                        </span>
-                         
-                        <span
-                          className="color-gray"
-                        >
-                          Search
-                        </span>
-                      </div>
-                    </button>
+                        <use
+                          xlinkHref="#icon-search"
+                        />
+                      </svg>
+                    </span>
+                     
+                    <span
+                      className="color-gray"
+                    >
+                      Search
+                    </span>
                   </div>
-                </div>
+                </button>
               </div>
             </div>
           </div>

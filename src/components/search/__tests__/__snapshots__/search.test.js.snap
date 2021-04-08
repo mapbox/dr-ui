@@ -4,37 +4,33 @@ exports[`search Basic search with \`site\` set to show filter toggle. Open https
 <div
   className="h36 relative"
 >
-  <div>
-    <div>
-      <button
-        className="w-full block"
-        onClick={[Function]}
+  <button
+    className="w-full block"
+    onClick={[Function]}
+  >
+    <div
+      className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+      style={Object {}}
+    >
+      <span
+        className="mr6 color-gray"
       >
-        <div
-          className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
-          style={Object {}}
+        <svg
+          className="icon w18 h18"
         >
-          <span
-            className="mr6 color-gray"
-          >
-            <svg
-              className="icon w18 h18"
-            >
-              <use
-                xlinkHref="#icon-search"
-              />
-            </svg>
-          </span>
-           
-          <span
-            className="color-gray"
-          >
-            Search
-          </span>
-        </div>
-      </button>
+          <use
+            xlinkHref="#icon-search"
+          />
+        </svg>
+      </span>
+       
+      <span
+        className="color-gray"
+      >
+        Search
+      </span>
     </div>
-  </div>
+  </button>
 </div>
 `;
 
@@ -42,37 +38,33 @@ exports[`search Basic search. Open https://app.swiftype.com/engines/docs/analyti
 <div
   className="h36 relative"
 >
-  <div>
-    <div>
-      <button
-        className="w-full block"
-        onClick={[Function]}
+  <button
+    className="w-full block"
+    onClick={[Function]}
+  >
+    <div
+      className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+      style={Object {}}
+    >
+      <span
+        className="mr6 color-gray"
       >
-        <div
-          className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
-          style={Object {}}
+        <svg
+          className="icon w18 h18"
         >
-          <span
-            className="mr6 color-gray"
-          >
-            <svg
-              className="icon w18 h18"
-            >
-              <use
-                xlinkHref="#icon-search"
-              />
-            </svg>
-          </span>
-           
-          <span
-            className="color-gray"
-          >
-            Search
-          </span>
-        </div>
-      </button>
+          <use
+            xlinkHref="#icon-search"
+          />
+        </svg>
+      </span>
+       
+      <span
+        className="color-gray"
+      >
+        Search
+      </span>
     </div>
-  </div>
+  </button>
 </div>
 `;
 
@@ -80,37 +72,33 @@ exports[`search Search with \`disableModal\` option set. Open https://app.swifty
 <div
   className="h36 relative"
 >
-  <div>
-    <div>
-      <button
-        className="w-full block"
-        onClick={[Function]}
+  <button
+    className="w-full block"
+    onClick={[Function]}
+  >
+    <div
+      className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+      style={Object {}}
+    >
+      <span
+        className="mr6 color-gray"
       >
-        <div
-          className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
-          style={Object {}}
+        <svg
+          className="icon w18 h18"
         >
-          <span
-            className="mr6 color-gray"
-          >
-            <svg
-              className="icon w18 h18"
-            >
-              <use
-                xlinkHref="#icon-search"
-              />
-            </svg>
-          </span>
-           
-          <span
-            className="color-gray"
-          >
-            Search
-          </span>
-        </div>
-      </button>
+          <use
+            xlinkHref="#icon-search"
+          />
+        </svg>
+      </span>
+       
+      <span
+        className="color-gray"
+      >
+        Search
+      </span>
     </div>
-  </div>
+  </button>
 </div>
 `;
 
@@ -118,40 +106,36 @@ exports[`search Search with \`narrow\` option set. Open https://app.swiftype.com
 <div
   className="h36 relative"
 >
-  <div>
-    <div>
-      <button
-        className="w-full block"
-        onClick={[Function]}
+  <button
+    className="w-full block"
+    onClick={[Function]}
+  >
+    <div
+      className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 wmax30"
+      style={
+        Object {
+          "paddingLeft": "12px",
+          "paddingRight": "12px",
+        }
+      }
+    >
+      <span
+        className="color-gray"
       >
-        <div
-          className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 wmax30"
-          style={
-            Object {
-              "paddingLeft": "12px",
-              "paddingRight": "12px",
-            }
-          }
+        <svg
+          className="icon w18 h18"
         >
-          <span
-            className="color-gray"
-          >
-            <svg
-              className="icon w18 h18"
-            >
-              <title>
-                Search
-              </title>
-              <use
-                xlinkHref="#icon-search"
-              />
-            </svg>
-          </span>
-           
-        </div>
-      </button>
+          <title>
+            Search
+          </title>
+          <use
+            xlinkHref="#icon-search"
+          />
+        </svg>
+      </span>
+       
     </div>
-  </div>
+  </button>
 </div>
 `;
 
@@ -159,37 +143,33 @@ exports[`search Search with custom connector. Open https://app.swiftype.com/engi
 <div
   className="h36 relative"
 >
-  <div>
-    <div>
-      <button
-        className="w-full block"
-        onClick={[Function]}
+  <button
+    className="w-full block"
+    onClick={[Function]}
+  >
+    <div
+      className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+      style={Object {}}
+    >
+      <span
+        className="mr6 color-gray"
       >
-        <div
-          className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
-          style={Object {}}
+        <svg
+          className="icon w18 h18"
         >
-          <span
-            className="mr6 color-gray"
-          >
-            <svg
-              className="icon w18 h18"
-            >
-              <use
-                xlinkHref="#icon-search"
-              />
-            </svg>
-          </span>
-           
-          <span
-            className="color-gray"
-          >
-            Search
-          </span>
-        </div>
-      </button>
+          <use
+            xlinkHref="#icon-search"
+          />
+        </svg>
+      </span>
+       
+      <span
+        className="color-gray"
+      >
+        Search
+      </span>
     </div>
-  </div>
+  </button>
 </div>
 `;
 
@@ -203,37 +183,33 @@ exports[`search Search with dark background, custom placeholder. Open https://ap
     <div
       className="h36 relative"
     >
-      <div>
-        <div>
-          <button
-            className="w-full block"
-            onClick={[Function]}
+      <button
+        className="w-full block"
+        onClick={[Function]}
+      >
+        <div
+          className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 btn--white w-full"
+          style={Object {}}
+        >
+          <span
+            className="mr6"
           >
-            <div
-              className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 btn--white w-full"
-              style={Object {}}
+            <svg
+              className="icon w18 h18"
             >
-              <span
-                className="mr6"
-              >
-                <svg
-                  className="icon w18 h18"
-                >
-                  <use
-                    xlinkHref="#icon-search"
-                  />
-                </svg>
-              </span>
-               
-              <span
-                className=""
-              >
-                Search
-              </span>
-            </div>
-          </button>
+              <use
+                xlinkHref="#icon-search"
+              />
+            </svg>
+          </span>
+           
+          <span
+            className=""
+          >
+            Search
+          </span>
         </div>
-      </div>
+      </button>
     </div>
   </div>
 </div>
