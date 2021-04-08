@@ -50,7 +50,7 @@ Array [
               className="mb6 h36"
             >
               <div
-                className="h36 relative"
+                className="relative h36"
               >
                 <button
                   className="w-full block"
@@ -681,7 +681,7 @@ Array [
               className="mb6 h36"
             >
               <div
-                className="h36 relative"
+                className="relative h36"
               >
                 <button
                   className="w-full block"
@@ -1351,7 +1351,7 @@ Array [
               className="mb6 h36"
             >
               <div
-                className="h36 relative"
+                className="relative h36"
               >
                 <button
                   className="w-full block"
@@ -1878,7 +1878,7 @@ Array [
               className="mb6 h36"
             >
               <div
-                className="h36 relative"
+                className="relative h36"
               >
                 <button
                   className="w-full block"

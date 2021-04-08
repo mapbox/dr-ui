@@ -4,6 +4,7 @@ import { SearchFacade } from './search-facade';
 import loadable from '@loadable/component';
 import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
 import debounce from 'debounce';
+import classnames from 'classnames';
 
 const LazyLoadComponent = loadable(() => import('./search-provider.js'));
 
@@ -41,14 +42,22 @@ export default class Search extends React.PureComponent {
     const { loadSearch, useModal } = this.state;
     /* Show SearchFacade until the user clicks or focuses on it */
     /* Then load the search component */
-    return loadSearch || this.props.overrideSearchTerm !== undefined ? (
-      <LazyLoadComponent useModal={useModal} {...this.props} />
-    ) : (
-      <SearchFacade
-        useModal={useModal}
-        loadSearch={this.loadSearch}
-        {...this.props}
-      />
+    return (
+      <div
+        className={classnames('relative', {
+          h36: !this.props.resultsOnly
+        })}
+      >
+        {loadSearch || this.props.overrideSearchTerm !== undefined ? (
+          <LazyLoadComponent useModal={useModal} {...this.props} />
+        ) : (
+          <SearchFacade
+            useModal={useModal}
+            loadSearch={this.loadSearch}
+            {...this.props}
+          />
+        )}
+      </div>
     );
   }
 }

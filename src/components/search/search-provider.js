@@ -50,19 +50,17 @@ class Search extends React.PureComponent {
             reset
           }) => {
             return (
-              <div className={`${resultsOnly ? '' : 'h36 '}relative`}>
-                <SearchBox
-                  searchTerm={searchTerm}
-                  trackClickThrough={trackClickThrough}
-                  setSearchTerm={setSearchTerm}
-                  results={results}
-                  wasSearched={wasSearched}
-                  isLoading={isLoading}
-                  reset={reset}
-                  {...this.props}
-                  useModal={useModal && !resultsOnly} // disable modal if resultsOnly === true
-                />
-              </div>
+              <SearchBox
+                searchTerm={searchTerm}
+                trackClickThrough={trackClickThrough}
+                setSearchTerm={setSearchTerm}
+                results={results}
+                wasSearched={wasSearched}
+                isLoading={isLoading}
+                reset={reset}
+                {...this.props}
+                useModal={useModal && !resultsOnly} // disable modal if resultsOnly === true
+              />
             );
           }}
         </WithSearch>
