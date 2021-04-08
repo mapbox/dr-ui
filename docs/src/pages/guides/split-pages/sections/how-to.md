@@ -6,7 +6,7 @@ splitPage: true
 hideFeedback: true
 contentType: guide
 products:
-  - Mapbox fundamentals
+  - Documentation
 prependJs:
   - "import MainPage from '!raw-loader!../index.js'; //eslint-disable-line"
   - "import SubOne from '!raw-loader!./intro.md'; //eslint-disable-line"

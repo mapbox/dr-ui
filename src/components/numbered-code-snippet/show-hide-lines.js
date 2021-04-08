@@ -6,12 +6,6 @@ const containerClasses =
   'wfull bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s';
 
 class HideLines extends React.PureComponent {
-  static propTypes = {
-    /** The content that should be hidden on click. */
-    children: PropTypes.node.isRequired,
-    /** A callback that is invoked when the line is clicked. */
-    onClick: PropTypes.func.isRequired
-  };
   render() {
     return (
       <div>
@@ -33,11 +27,14 @@ class HideLines extends React.PureComponent {
   }
 }
 
+HideLines.propTypes = {
+  /** The content that should be hidden on click. */
+  children: PropTypes.node.isRequired,
+  /** A callback that is invoked when the line is clicked. */
+  onClick: PropTypes.func.isRequired
+};
+
 class ShowLines extends React.PureComponent {
-  static propTypes = {
-    /** A callback that is invoked when the line is clicked. */
-    onClick: PropTypes.func.isRequired
-  };
   render() {
     return (
       <div
@@ -59,5 +56,10 @@ class ShowLines extends React.PureComponent {
     );
   }
 }
+
+ShowLines.propTypes = {
+  /** A callback that is invoked when the line is clicked. */
+  onClick: PropTypes.func.isRequired
+};
 
 export { HideLines, ShowLines };
