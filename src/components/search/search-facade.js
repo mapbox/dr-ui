@@ -28,7 +28,6 @@ export class SearchFacade extends React.PureComponent {
 
 SearchFacade.propTypes = {
   loadSearch: PropTypes.func.isRequired,
-  disableModal: PropTypes.bool.isRequired,
   resultsOnly: PropTypes.bool.isRequired,
   useModal: PropTypes.bool.isRequired
 };
