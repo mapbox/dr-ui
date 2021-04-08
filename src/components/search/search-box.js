@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import Downshift from 'downshift';
 import SearchModal from './search-modal';
 import SearchResult from './search-result';
+import { SearchInput, SearchButton } from './search-facade';
 import { getFilterValueDisplay } from '@elastic/react-search-ui-views/lib/view-helpers';
 import { Facet } from '@elastic/react-search-ui';
 import classnames from 'classnames';
-import { SearchInput, SearchButton } from './search-facade';
 
 class SearchBox extends React.Component {
   constructor(props) {
@@ -225,21 +225,21 @@ class SearchBox extends React.Component {
       ? this.props.overrideSearchTerm === undefined
       : false;
     return (
-      <>
+      <div>
         {!this.props.useModal ? (
           !hideResultsOnly && (
             <div className="w-full">{this.renderSearchBar()}</div>
           )
         ) : (
-          <>
+          <div>
             <SearchButton
               backgroun={this.props.background}
               narrow={this.props.narrow}
             />
             {this.renderModal()}
-          </>
+          </div>
         )}
-      </>
+      </div>
     );
   }
 }
