@@ -14,22 +14,27 @@ class SearchBox extends React.PureComponent {
       modalOpen: true, // open model for a smooth transition from the facade
       useModal: this.props.useModal
     };
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+    this.renderModal = this.renderModal.bind(this);
+    this.renderSearchBar = this.renderSearchBar.bind(this);
+    this.singleLinksFacet = this.singleLinksFacet.bind(this);
     // if resultsOnly and overrideSearchTerm, set the search term
     if (this.props.resultsOnly && this.props.overrideSearchTerm) {
       props.setSearchTerm(this.props.overrideSearchTerm);
     }
   }
 
-  openModal = () => {
+  openModal() {
     this.setState({ modalOpen: true });
-  };
+  }
 
-  closeModal = () => {
+  closeModal() {
     this.props.reset();
     this.setState({ modalOpen: false });
-  };
+  }
 
-  singleLinksFacet = ({ onRemove, onSelect, options, values = [] }) => {
+  singleLinksFacet({ onRemove, onSelect, options, values = [] }) {
     const value = values[0];
     const siteFilter = options.filter(
       (opt) => opt.value === this.props.site
@@ -77,9 +82,9 @@ class SearchBox extends React.PureComponent {
     ) : (
       ''
     );
-  };
+  }
 
-  renderSearchBar = () => {
+  renderSearchBar() {
     const { props } = this;
     return (
       <Downshift
@@ -224,9 +229,9 @@ class SearchBox extends React.PureComponent {
         }}
       </Downshift>
     );
-  };
+  }
 
-  renderModal = () => {
+  renderModal() {
     const { props } = this;
     if (!this.state.modalOpen) {
       return null;
@@ -240,7 +245,7 @@ class SearchBox extends React.PureComponent {
         <div>{this.renderSearchBar()}</div>
       </SearchModal>
     );
-  };
+  }
 
   render() {
     // hide results until overrideSearchTerm not null
