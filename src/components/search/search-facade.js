@@ -72,8 +72,12 @@ export class SearchButton extends React.PureComponent {
   }
 }
 
+SearchButton.defaultProps = {
+  background: 'light'
+};
+
 SearchButton.propTypes = {
-  background: PropTypes.oneOf(['light', 'dark']).isRequired,
+  background: PropTypes.oneOf(['light', 'dark']),
   narrow: PropTypes.bool
 };
 

@@ -6,7 +6,7 @@ import SearchResult from './search-result';
 import { getFilterValueDisplay } from '@elastic/react-search-ui-views/lib/view-helpers';
 import { Facet } from '@elastic/react-search-ui';
 import classnames from 'classnames';
-import { SearchInput } from './search-facade';
+import { SearchInput, SearchButton } from './search-facade';
 
 class SearchBox extends React.Component {
   constructor(props) {
@@ -225,54 +225,21 @@ class SearchBox extends React.Component {
       ? this.props.overrideSearchTerm === undefined
       : false;
     return (
-      <div>
+      <>
         {!this.props.useModal ? (
           !hideResultsOnly && (
             <div className="w-full">{this.renderSearchBar()}</div>
           )
         ) : (
-          <div>
-            <button
-              className={classnames(
-                'flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round',
-                {
-                  'btn--white': this.props.background !== 'light',
-                  wmax30: this.props.narrow,
-                  'w-full': !this.props.narrow
-                }
-              )}
-              style={
-                this.props.narrow
-                  ? { paddingLeft: '12px', paddingRight: '12px' }
-                  : {}
-              }
-              onClick={this.openModal}
-            >
-              <span
-                className={classnames('', {
-                  mr6: !this.props.narrow,
-                  'color-gray': this.props.background === 'light'
-                })}
-              >
-                <svg className="icon w18 h18">
-                  {this.props.narrow && <title>Search</title>}
-                  <use xlinkHref="#icon-search" />
-                </svg>
-              </span>{' '}
-              {!this.props.narrow && (
-                <span
-                  className={classnames('', {
-                    'color-gray': this.props.background === 'light'
-                  })}
-                >
-                  Search
-                </span>
-              )}
-            </button>
+          <>
+            <SearchButton
+              backgroun={this.props.background}
+              narrow={this.props.narrow}
+            />
             {this.renderModal()}
-          </div>
+          </>
         )}
-      </div>
+      </>
     );
   }
 }
