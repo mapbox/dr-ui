@@ -184,7 +184,7 @@ This technique may also be used by multi-structured sites, although you'll need 
 
 ## Custom aside
 
-Sites like Mapbox GL JS require custom asides since the data is derived from multiple sources. Similarly, the [Dr. UI components page](/dr-ui/) also uses a custom aside, see the example below for how to conditionally display a custom sidebar:
+Sites like Mapbox GL JS require custom asides since the data is derived from multiple sources. Similarly, the [Dr. UI components page](/dr-ui/components/) also uses a custom aside, see the example below for how to conditionally display a custom sidebar:
 
 ```jsx
 import Aside from './aside';
