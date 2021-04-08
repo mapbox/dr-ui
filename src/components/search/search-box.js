@@ -11,8 +11,7 @@ class SearchBox extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      modalOpen: true, // open model for a smooth transition from the facade
-      useModal: this.props.useModal
+      modalOpen: true // open model for a smooth transition from the facade
     };
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
@@ -137,15 +136,15 @@ class SearchBox extends React.Component {
                       className={classnames(
                         'absolute flex-parent flex-parent--center-cross flex-parent--center-main',
                         {
-                          'w60 h60': this.state.useModal,
-                          'w36 h36': !this.state.useModal
+                          'w60 h60': props.useModal,
+                          'w36 h36': !props.useModal
                         }
                       )}
                     >
                       <svg
                         className={classnames('icon color-gray', {
-                          'w24 h24': this.state.useModal,
-                          'w18 h18': !this.state.useModal
+                          'w24 h24': props.useModal,
+                          'w18 h18': !props.useModal
                         })}
                       >
                         <title>Search</title>
@@ -156,7 +155,7 @@ class SearchBox extends React.Component {
                       <div
                         className="loading loading--s absolute bg-white"
                         style={{
-                          top: this.state.useModal ? '21px' : '10px',
+                          top: props.useModal ? '21px' : '10px',
                           right: '26px',
                           zIndex: 5
                         }}
@@ -170,8 +169,8 @@ class SearchBox extends React.Component {
                     autoFocus={true} // auto focus input for a smooth transition from the facade
                     placeholder={this.props.placeholder}
                     className={classnames('input bg-white', {
-                      'px60 h60 txt-l': this.state.useModal,
-                      'px36 h36': !this.state.useModal
+                      'px60 h60 txt-l': props.useModal,
+                      'px36 h36': !props.useModal
                     })}
                     {...getInputProps({
                       onFocus: () => {
@@ -261,7 +260,7 @@ class SearchBox extends React.Component {
       : false;
     return (
       <div>
-        {!this.state.useModal ? (
+        {!this.props.useModal ? (
           !hideResultsOnly && (
             <div className="w-full">{this.renderSearchBar()}</div>
           )

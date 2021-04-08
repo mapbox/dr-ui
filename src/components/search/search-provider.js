@@ -5,7 +5,7 @@ import SearchBox from './search-box';
 
 class Search extends React.PureComponent {
   render() {
-    const { connector, resultsOnly, disableModal } = this.props;
+    const { connector, resultsOnly, useModal } = this.props;
     return (
       <SearchProvider
         config={{
@@ -60,7 +60,7 @@ class Search extends React.PureComponent {
                   isLoading={isLoading}
                   reset={reset}
                   {...this.props}
-                  useModal={!disableModal && !resultsOnly} // disable modal if resultsOnly === true
+                  useModal={useModal && !resultsOnly} // disable modal if resultsOnly === true
                 />
               </div>
             );
@@ -74,7 +74,7 @@ class Search extends React.PureComponent {
 Search.propTypes = {
   connector: PropTypes.object.isRequired,
   resultsOnly: PropTypes.bool.isRequired,
-  disableModal: PropTypes.bool.isRequired
+  useModal: PropTypes.bool.isRequired
 };
 
 export default Search;
