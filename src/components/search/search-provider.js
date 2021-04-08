@@ -60,7 +60,7 @@ class Search extends React.PureComponent {
                   isLoading={isLoading}
                   reset={reset}
                   {...this.props}
-                  disableModal={disableModal || resultsOnly} // disable modal if resultsOnly === true
+                  useModal={!disableModal && !resultsOnly} // disable modal if resultsOnly === true
                 />
               </div>
             );

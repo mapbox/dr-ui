@@ -311,7 +311,6 @@ SearchBox.propTypes = {
   background: PropTypes.oneOf(['light', 'dark']).isRequired,
   inputId: PropTypes.string,
   narrow: PropTypes.bool,
-  disableModal: PropTypes.bool,
   site: PropTypes.string,
   wasSearched: PropTypes.bool,
   resultsOnly: PropTypes.bool,

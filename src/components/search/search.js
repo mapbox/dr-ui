@@ -10,7 +10,10 @@ const LazyLoadComponent = loadable(() => import('./search-provider.js'));
 export default class Search extends React.PureComponent {
   constructor(props) {
     super(props);
-    this.state = { loadSearch: false, useModal: !this.props.disableModal };
+    this.state = {
+      loadSearch: false,
+      useModal: !this.props.disableModal || !this.props.resultsOnly
+    };
   }
 
   loadSearch = () => {
