@@ -19,7 +19,7 @@ These dataset functions often use the page's relative pathname as a unique ident
 
 ## Navigation
 
-`navigation` builds data for the dr-ui navigation components like [`NavigationAccordion`](/dr-ui/#navigationaccordion).
+`navigation` builds data for the dr-ui navigation components like [`NavigationAccordion`](/dr-ui/components/#navigationaccordion).
 
 ### Arguments
 
@@ -82,7 +82,7 @@ class PageShell extends React.Component {
 
 ### Output
 
-- `navTabs`. Provides the top-level navigation for the site and is powered by the `navOrder` field in the frontMatter of those pages. Provides the data for [`NavigationAccordion`](/dr-ui/#navigationaccordion).
+- `navTabs`. Provides the top-level navigation for the site and is powered by the `navOrder` field in the frontMatter of those pages. Provides the data for [`NavigationAccordion`](/dr-ui/components/#navigationaccordion).
 - `hierarchy`. Provides the parent path for each page.
 
 #### Sample
@@ -153,7 +153,7 @@ class PageShell extends React.Component {
 
 - `path` (required) string. Top-level folder in `src/pages`.
 - `title` (required) string. Title of the product.
-- `tag` (optional) string. Name of tag to add to [`ProductMenu`](/dr-ui/#productmenu).
+- `tag` (optional) string. Name of tag to add to [`ProductMenu`](/dr-ui/components/#productmenu).
 - - `addPages`, array. Pages, usually external to the site, to be appended to navigation. See [Shape of appended pages](#shape-of-appended-pages).
 
 ### Example

@@ -222,7 +222,7 @@
         "splitPage": true,
         "hideFeedback": true,
         "contentType": "guide",
-        "products": ["Mapbox fundamentals"],
+        "products": ["Documentation"],
         "prependJs": [
           "import MainPage from '!raw-loader!../index.js'; //eslint-disable-line",
           "import SubOne from '!raw-loader!./intro.md'; //eslint-disable-line",
@@ -255,7 +255,7 @@
         "order": 3,
         "splitPage": true,
         "hideFeedback": true,
-        "products": ["Mapbox fundamentals"],
+        "products": ["Documentation"],
         "contentType": "guide"
       }
     },
@@ -269,7 +269,7 @@
         "splitPage": true,
         "tag": "beta",
         "hideFeedback": true,
-        "products": ["Mapbox fundamentals"],
+        "products": ["Documentation"],
         "contentType": "guide"
       }
     },

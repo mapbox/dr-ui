@@ -400,7 +400,7 @@ exports[`contextless-android-activity-toggle Kotlin only renders as expected 1`]
 </div>
 `;
 
-exports[`contextless-android-activity-toggle Two languages renders as expected 1`] = `
+exports[`contextless-android-activity-toggle Two languages (code toggle not interactive) renders as expected 1`] = `
 <div
   className="my24 prose"
 >

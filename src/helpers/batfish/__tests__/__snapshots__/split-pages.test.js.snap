@@ -85,7 +85,7 @@ Object {
             "import { highlightHtml } from '../../../../../../src/components/highlight/html';",
           ],
           "products": Array [
-            "Mapbox fundamentals",
+            "Documentation",
           ],
           "splitPage": true,
           "title": "How to use spit pages",
@@ -129,7 +129,7 @@ Object {
           "hideFeedback": true,
           "order": 3,
           "products": Array [
-            "Mapbox fundamentals",
+            "Documentation",
           ],
           "splitPage": true,
           "title": "Limitations",
@@ -153,7 +153,7 @@ Object {
           "hideFeedback": true,
           "order": 4,
           "products": Array [
-            "Mapbox fundamentals",
+            "Documentation",
           ],
           "splitPage": true,
           "tag": "beta",
