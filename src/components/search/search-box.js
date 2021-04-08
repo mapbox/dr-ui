@@ -6,6 +6,7 @@ import SearchResult from './search-result';
 import { getFilterValueDisplay } from '@elastic/react-search-ui-views/lib/view-helpers';
 import { Facet } from '@elastic/react-search-ui';
 import classnames from 'classnames';
+import { SearchInput } from './search-facade';
 
 class SearchBox extends React.Component {
   constructor(props) {
@@ -131,48 +132,13 @@ class SearchBox extends React.Component {
             <div>
               {!props.resultsOnly && (
                 <React.Fragment>
-                  <label className="cursor-pointer" {...getLabelProps()}>
-                    <div
-                      className={classnames(
-                        'absolute flex-parent flex-parent--center-cross flex-parent--center-main',
-                        {
-                          'w60 h60': props.useModal,
-                          'w36 h36': !props.useModal
-                        }
-                      )}
-                    >
-                      <svg
-                        className={classnames('icon color-gray', {
-                          'w24 h24': props.useModal,
-                          'w18 h18': !props.useModal
-                        })}
-                      >
-                        <title>Search</title>
-                        <use xlinkHref="#icon-search" />
-                      </svg>
-                    </div>
-                    {this.props.isLoading && (
-                      <div
-                        className="loading loading--s absolute bg-white"
-                        style={{
-                          top: props.useModal ? '21px' : '10px',
-                          right: '26px',
-                          zIndex: 5
-                        }}
-                      />
-                    )}
-                  </label>
-                  <input
-                    ref={(input) => {
-                      this.docsSeachInput = input;
-                    }}
-                    autoFocus={true} // auto focus input for a smooth transition from the facade
-                    placeholder={this.props.placeholder}
-                    className={classnames('input bg-white', {
-                      'px60 h60 txt-l': props.useModal,
-                      'px36 h36': !props.useModal
-                    })}
-                    {...getInputProps({
+                  <SearchInput
+                    autoFocus={true}
+                    isLoading={props.isLoading}
+                    useModal={props.useModal}
+                    placeholder={props.placeholder}
+                    getLabelProps={getLabelProps}
+                    getInputProps={getInputProps({
                       onFocus: () => {
                         openMenu();
                       }
