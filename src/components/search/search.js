@@ -1,24 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { SearchFacade } from './search-facade';
-import loadable from '@loadable/component';
 import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
 import debounce from 'debounce';
 import classnames from 'classnames';
-
-const LazyLoadComponent = loadable(() => import('./search-provider.js'));
 
 export default class Search extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      loadSearch: false,
+      SearchProvider: undefined,
       useModal: !this.props.disableModal || !this.props.resultsOnly
     };
   }
 
   loadSearch = () => {
-    this.setState({ loadSearch: true });
+    import(
+      /* webpackChunkName: "search-provider" */
+      './search-provider.js'
+    ).then((component) => {
+      this.setState({ SearchProvider: component.default });
+    });
   };
 
   /* Use SearchInput on smaller screens, SearchButton on larger screens (unless disableModal) */
@@ -34,22 +36,28 @@ export default class Search extends React.PureComponent {
     window.addEventListener('resize', this.checkWidth, { passive: true });
   }
 
+  componentDidUpdate(prevProps) {
+    if (prevProps.overrideSearchTerm !== this.props.overrideSearchTerm) {
+      this.loadSearch();
+    }
+  }
+
   componentWillUnmount() {
     window.removeEventListener('resize', this.checkWidth, { passive: true });
   }
 
   render() {
-    const { loadSearch, useModal } = this.state;
+    const { SearchProvider, useModal } = this.state;
     /* Show SearchFacade until the user clicks or focuses on it */
-    /* Then load the search component */
+    /* Then load the SearchComponent */
     return (
       <div
         className={classnames('relative', {
           h36: !this.props.resultsOnly
         })}
       >
-        {loadSearch || this.props.overrideSearchTerm !== undefined ? (
-          <LazyLoadComponent useModal={useModal} {...this.props} />
+        {SearchProvider ? (
+          <SearchProvider useModal={useModal} {...this.props} />
         ) : (
           <SearchFacade
             useModal={useModal}
