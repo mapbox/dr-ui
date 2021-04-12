@@ -2,6 +2,8 @@
 
 ## 4.0.0
 
+- Improve color contrast on code and anchor elements. [#434](https://github.com/mapbox/dr-ui/pull/434)
+
 ## 3.3.1
 
 - The `edit.css` prop is optional when displaying `Edit` in `CodeSnippet`. [#421](https://github.com/mapbox/dr-ui/pull/421)
