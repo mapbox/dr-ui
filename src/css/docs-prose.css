@@ -40,6 +40,7 @@
 
 /* set code links to slightly darker blue */
 /* this rule does not apply to elements with the "anchor" class (which are headings) */
+.prose :not(.anchor) > code a,
 .prose :not(.anchor) > a code {
   color: #2b50f0;
 }
