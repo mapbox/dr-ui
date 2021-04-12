@@ -2,6 +2,8 @@
 
 ## 4.0.0
 
+- Enable eslint-plugin-jsx-a11y. [#435](https://github.com/mapbox/dr-ui/pull/435)
+
 ## 3.3.1
 
 - The `edit.css` prop is optional when displaying `Edit` in `CodeSnippet`. [#421](https://github.com/mapbox/dr-ui/pull/421)
