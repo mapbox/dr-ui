@@ -18,7 +18,7 @@ export default class Example extends React.Component {
           aria-label="Select a product"
           defaultValue=""
           value={this.state.query}
-          onChange={this.handleSelect}
+          onBlur={this.handleSelect}
         >
           <option value="" disabled>
             Select a product

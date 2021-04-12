@@ -15,6 +15,7 @@ export class VimeoModal extends React.Component {
         <div className="py36">
           <div style={{ padding: '62.5% 0 0 0', position: 'relative' }}>
             <iframe
+              title={title}
               src={`https://player.vimeo.com/video/${vimeoId}?title=0&byline=0&portrait=0`}
               style={{
                 position: 'absolute',
