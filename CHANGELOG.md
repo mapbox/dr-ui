@@ -2,6 +2,8 @@
 
 ## 4.0.0
 
+- Enforce use of React PureComponents to improve performance. [#414](https://github.com/mapbox/dr-ui/pull/414)
+
 ## 3.3.1
 
 - The `edit.css` prop is optional when displaying `Edit` in `CodeSnippet`. [#421](https://github.com/mapbox/dr-ui/pull/421)

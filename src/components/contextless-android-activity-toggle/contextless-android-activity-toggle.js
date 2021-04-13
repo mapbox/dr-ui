@@ -22,7 +22,7 @@ export function findSelectedCode(kotlin, java, preference) {
   return selectedCode;
 }
 
-export default class ContextlessAndroidActivityToggle extends React.Component {
+export default class ContextlessAndroidActivityToggle extends React.PureComponent {
   checkPreference = (language) => {
     return this.props.context.preferredLanguage.android === language;
   };

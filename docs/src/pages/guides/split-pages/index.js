@@ -19,7 +19,7 @@ import PageShell from '../../../components/page-shell';
 // Import splitPage function
 import splitPages from '@mapbox/batfish/data/split-pages'; // eslint-disable-line
 
-export default class Page extends React.Component {
+export default class Page extends React.PureComponent {
   render() {
     const { location } = this.props;
     // Override the combines headings in the sidebar

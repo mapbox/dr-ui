@@ -53,7 +53,7 @@ function combine(pages, field) {
 }
 
 function getHeadings(page) {
-  let headings = [];
+  const headings = [];
   const content = fs.readFileSync(page.filePath, 'utf-8');
   const ast = unified().use(remark).use(frontmatter, ['yaml']).parse(content);
   visit(ast, 'heading', (node) => {

@@ -5,7 +5,7 @@ import React from 'react';
 import Phone from '../phone';
 import Video from '../../video';
 
-export default class Basic extends React.Component {
+export default class Basic extends React.PureComponent {
   render() {
     return (
       <Phone mode="landscape" platform="ios">

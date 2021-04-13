@@ -26,7 +26,7 @@ const componentHeadings = Object.keys(categories).reduce((arr, category) => {
   return arr;
 }, []);
 
-class PageShell extends React.Component {
+class PageShell extends React.PureComponent {
   render() {
     const { children, location, frontMatter, headings } = this.props;
 

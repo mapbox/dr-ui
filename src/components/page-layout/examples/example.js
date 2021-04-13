@@ -14,7 +14,7 @@ const AppropriateImage = scopeAppropriateImage({
   }
 });
 
-export default class Basic extends React.Component {
+export default class Basic extends React.PureComponent {
   render() {
     return (
       <PageLayout

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default class PlaygroundImage extends React.Component {
+export default class PlaygroundImage extends React.PureComponent {
   render() {
     return (
       <svg width={this.props.size} height={this.props.size} viewBox="0 0 60 60">
