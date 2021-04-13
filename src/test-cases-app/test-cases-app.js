@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import ReactTestKitchen from '@mapbox/react-test-kitchen';
 import componentIndex from './component-index'; // eslint-disable-line
 
-class App extends React.Component {
+class App extends React.PureComponent {
   render() {
     return (
       <ReactTestKitchen projectTitle="dr-ui" componentIndex={componentIndex} />

@@ -4,7 +4,7 @@ Basic.
 import React from 'react';
 import OnThisPage from '../on-this-page';
 
-export default class Basic extends React.Component {
+export default class Basic extends React.PureComponent {
   render() {
     return (
       <div className="limiter">

@@ -5,7 +5,7 @@ import React from 'react';
 import Note from '../../note/note';
 import Tag from '../../tag/tag';
 
-export default class Basic extends React.Component {
+export default class Basic extends React.PureComponent {
   render() {
     return (
       <div>

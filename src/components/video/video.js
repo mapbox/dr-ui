@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default class Video extends React.Component {
+export default class Video extends React.PureComponent {
   render() {
     let videoProps = {
       autoPlay: true,

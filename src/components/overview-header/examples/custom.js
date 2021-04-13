@@ -4,7 +4,7 @@ Change background color and text with `theme` and `lightText`.
 import React from 'react';
 import OverviewHeader from '../overview-header';
 
-export default class Custom extends React.Component {
+export default class Custom extends React.PureComponent {
   render() {
     return (
       <OverviewHeader

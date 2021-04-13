@@ -6,7 +6,7 @@ import CodeSnippetTitle from '../code-snippet-title/code-snippet-title';
 import CodeToggle from '../code-toggle/code-toggle';
 import { highlightThemeCss } from '../highlight/theme-css.js';
 
-export default class ToggleableCodeBlock extends React.Component {
+export default class ToggleableCodeBlock extends React.PureComponent {
   renderSnippet = (code) => {
     const {
       highlightedCode,
