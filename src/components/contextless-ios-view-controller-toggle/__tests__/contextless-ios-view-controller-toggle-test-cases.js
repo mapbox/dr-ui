@@ -63,7 +63,7 @@ testCases.basic = {
 
 testCases.twoLang = {
   component: ContextlessIosViewControllerToggle,
-  description: 'Two languages',
+  description: 'Two languages (code toggle is not interactive)',
   props: {
     context: contextSwift,
     id: 'test-java-kotlin',
@@ -75,7 +75,7 @@ testCases.twoLang = {
 
 testCases.filename = {
   component: ContextlessIosViewControllerToggle,
-  description: 'Two languages with filename',
+  description: 'Two languages with filename (code toggle is not interactive)',
   props: {
     context: contextObjectiveC,
     id: 'test-java-kotlin-filename',
@@ -89,7 +89,8 @@ testCases.filename = {
 
 testCases.copyRange = {
   component: ContextlessIosViewControllerToggle,
-  description: 'Two languages with copy ranges',
+  description:
+    'Two languages with copy ranges (code toggle is not interactive)',
   props: {
     context: contextObjectiveC,
     id: 'test-java-kotlin-copy-range',

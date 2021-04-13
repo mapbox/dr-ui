@@ -2,6 +2,8 @@
 
 ## 4.0.0
 
+- Enforce use of React PureComponents to improve performance. [#414](https://github.com/mapbox/dr-ui/pull/414)
+- Improve color contrast on code and anchor elements. [#434](https://github.com/mapbox/dr-ui/pull/434)
 - 🚨The `CodeSnippet` prop `highlighter` no longer accepts an arrow function.
   - Before: `highlighter={() => highlightJson}`
   - After: `highlighter={highlightJson}`

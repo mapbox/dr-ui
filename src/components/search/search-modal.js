@@ -4,7 +4,7 @@ import AriaModal from 'react-aria-modal';
 import Icon from '@mapbox/mr-ui/icon';
 import getWindow from '@mapbox/mr-ui/utils/get-window';
 
-export default class Modal extends React.Component {
+export default class Modal extends React.PureComponent {
   constructor(props) {
     super(props);
     this.setDialogEl = this.setDialogEl.bind(this);

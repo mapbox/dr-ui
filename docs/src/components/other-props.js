@@ -1,7 +1,7 @@
 import React from 'react';
 import components from '../data/components';
 
-export default class OtherProps extends React.Component {
+export default class OtherProps extends React.PureComponent {
   render() {
     const { props } = components.find((f) => f.name === 'PageLayout');
     const exclude = [

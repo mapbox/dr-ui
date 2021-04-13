@@ -5,7 +5,7 @@ import Icon from '@mapbox/mr-ui/icon';
 import classnames from 'classnames';
 import themes from '../themes';
 
-export default class Tag extends React.Component {
+export default class Tag extends React.PureComponent {
   render() {
     const theme = themes[this.props.theme] || {
       label: this.props.customLabel,
@@ -40,8 +40,14 @@ Tag.defaultProps = {
 };
 
 Tag.propTypes = {
-  theme: PropTypes.oneOf(['beta', 'fundamentals', 'legacy', 'new', 'custom', 'pricing'])
-    .isRequired,
+  theme: PropTypes.oneOf([
+    'beta',
+    'fundamentals',
+    'legacy',
+    'new',
+    'custom',
+    'pricing'
+  ]).isRequired,
   /** If `true`, display the tag with a smaller font and and no border */
   small: PropTypes.bool,
   /** If `true`, display the icon only (no text) */

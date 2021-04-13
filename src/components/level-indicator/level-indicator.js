@@ -16,7 +16,7 @@ export const levels = {
   }
 };
 
-class LevelIndicator extends React.Component {
+class LevelIndicator extends React.PureComponent {
   render() {
     const { props } = this;
     // // Get supplies in order for constructing the difficulty level bits

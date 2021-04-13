@@ -4,7 +4,7 @@ Basic.
 import React from 'react';
 import ContextlessAndroidActivityToggle from '../contextless-android-activity-toggle';
 
-export default class Basic extends React.Component {
+export default class Basic extends React.PureComponent {
   render() {
     const contextJava = {
       languages: {

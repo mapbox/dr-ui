@@ -5,9 +5,16 @@ import React from 'react';
 import CodeSnippetTitle from '../code-snippet-title';
 import CodeToggle from '../../code-toggle';
 
-export default class Custom extends React.Component {
+export default class Custom extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      language: 'swift'
+    };
+  }
+
+  changeLanguage = (language) => this.setState({ language });
   render() {
-    function handleChange() {}
     return (
       <CodeSnippetTitle
         filename="ViewController"
@@ -15,17 +22,17 @@ export default class Custom extends React.Component {
         toggle={
           <CodeToggle
             id="some-id"
-            onChange={handleChange}
+            onChange={this.changeLanguage}
             options={[
               {
                 label: 'Swift',
                 language: 'swift',
-                preferredLanguage: true
+                preferredLanguage: this.state.language === 'swift'
               },
               {
                 label: 'Objective-C',
                 language: 'objectiveC',
-                preferredLanguage: false
+                preferredLanguage: this.state.language === 'objectiveC'
               }
             ]}
           />

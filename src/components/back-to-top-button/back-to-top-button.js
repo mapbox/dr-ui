@@ -3,7 +3,7 @@ import Button from '@mapbox/mr-ui/button';
 import Icon from '@mapbox/mr-ui/icon';
 import PopoverTrigger from '@mapbox/mr-ui/popover-trigger';
 
-export default class BackToTopButton extends React.Component {
+export default class BackToTopButton extends React.PureComponent {
   render() {
     function handleClick() {
       document.documentElement.scrollTop = 0; // fallback

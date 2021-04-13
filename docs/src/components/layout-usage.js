@@ -2,7 +2,7 @@ import React from 'react';
 import components from '../data/components';
 import layoutConfig from '../../../src/components/page-layout/layout.config.js';
 
-export default class LayoutUsage extends React.Component {
+export default class LayoutUsage extends React.PureComponent {
   render() {
     const layouts = components
       .find((f) => f.name === 'PageLayout')

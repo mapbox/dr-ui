@@ -8,7 +8,7 @@ import { getFilterValueDisplay } from '@elastic/react-search-ui-views/lib/view-h
 import { Facet } from '@elastic/react-search-ui';
 import classnames from 'classnames';
 
-class SearchBox extends React.Component {
+class SearchBox extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {

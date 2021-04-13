@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Icon from '@mapbox/mr-ui/icon';
 import classnames from 'classnames';
 
-export default class Breadcrumb extends React.Component {
+export default class Breadcrumb extends React.PureComponent {
   render() {
     const { links, location, themeWrapper } = this.props;
     const secondLastItem = links.length - 2;

@@ -6,7 +6,7 @@ import NumberedCodeSnippet from '../numbered-code-snippet';
 import { highlightSwift } from '../../highlight/swift';
 import { highlightThemeCss } from '../../highlight/theme-css.js';
 
-export default class Basic extends React.Component {
+export default class Basic extends React.PureComponent {
   render() {
     const code = `import UIKit
     import Mapbox
