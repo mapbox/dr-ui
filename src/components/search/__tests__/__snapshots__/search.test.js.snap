@@ -139,7 +139,7 @@ exports[`search Search with \`narrow\` option set. Open https://app.swiftype.com
 </div>
 `;
 
-exports[`search Search with custom connector. Open https://app.swiftype.com/engines/docs/analytics/live while developing to watch query usage. renders as expected 1`] = `
+exports[`search Search with custom connector. renders as expected 1`] = `
 <div
   className="relative h36"
 >
