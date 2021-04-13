@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Icon from '@mapbox/mr-ui/icon';
 
-export default class CodeSnippetTitle extends React.Component {
+export default class CodeSnippetTitle extends React.PureComponent {
   renderFilename = () => {
     return (
       <div className="inline-block txt-bold mb6 color-gray-dark">

@@ -4,7 +4,7 @@ Basic.
 import React from 'react';
 import NavigationAccordion from '../navigation-accordion';
 
-export default class Basic extends React.Component {
+export default class Basic extends React.PureComponent {
   render() {
     const navigation = [
       {

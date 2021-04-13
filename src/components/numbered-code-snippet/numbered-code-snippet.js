@@ -401,7 +401,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
     });
 
     /* Prevent the default x-axis padding because each line pads itself. */
-    let codeClasses = 'px0 hljs';
+    const codeClasses = 'px0 hljs';
 
     let copyAllButton = null;
     if (props.copyRanges === undefined && props.onCopy) {

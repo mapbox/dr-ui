@@ -1,7 +1,7 @@
 // build metadata for each page
 export function buildMeta(frontMatter, pathname, navigation) {
   const hasSection = findHasSection(navigation, pathname);
-  let subsite =
+  const subsite =
     frontMatter.subsite || hasSection ? hasSection.title : undefined;
   return {
     pathname: pathname,

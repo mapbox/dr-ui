@@ -4,7 +4,7 @@ Custom.
 import React from 'react';
 import Tag from '../tag';
 
-export default class Custom extends React.Component {
+export default class Custom extends React.PureComponent {
   render() {
     return (
       <Tag

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import SplitPage from '../../../src/components/page-layout/split-page';
 import constants from '../constants.json';
 
-export default class SplitPageShell extends React.Component {
+export default class SplitPageShell extends React.PureComponent {
   render() {
     const { children } = this.props;
     return (

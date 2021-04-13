@@ -6,7 +6,7 @@ import { highlightSwift } from '../swift';
 import { highlightThemeCss } from '../theme-css.js';
 import CodeSnippet from '../../code-snippet';
 
-export default class Basic extends React.Component {
+export default class Basic extends React.PureComponent {
   render() {
     const swiftCodeSnippet = `
     import Mapbox

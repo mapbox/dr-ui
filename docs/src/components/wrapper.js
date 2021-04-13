@@ -21,7 +21,7 @@ addRouteChangeEndListener(() => {
   pageLoadingIndicator.end();
 });
 
-class ApplicationWrapper extends React.Component {
+class ApplicationWrapper extends React.PureComponent {
   render() {
     return (
       <div>

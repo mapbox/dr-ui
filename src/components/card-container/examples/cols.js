@@ -5,7 +5,7 @@ import React from 'react';
 import CardContainer from '../card-container';
 import Card from '../../card/card';
 
-export default class Example extends React.Component {
+export default class Example extends React.PureComponent {
   render() {
     return (
       <CardContainer
