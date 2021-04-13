@@ -40,14 +40,8 @@ Tag.defaultProps = {
 };
 
 Tag.propTypes = {
-  theme: PropTypes.oneOf([
-    'beta',
-    'fundamentals',
-    'legacy',
-    'new',
-    'custom',
-    'pricing'
-  ]).isRequired,
+  theme: PropTypes.oneOf(['beta', 'fundamentals', 'legacy', 'new', 'custom', 'pricing'])
+    .isRequired,
   /** If `true`, display the tag with a smaller font and and no border */
   small: PropTypes.bool,
   /** If `true`, display the icon only (no text) */
