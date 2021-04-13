@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { SearchProvider, WithSearch } from '@elastic/react-search-ui';
-import SearchBox from './search-box';
+import { SearchBox } from './search-box';
 
 class Search extends React.PureComponent {
   render() {

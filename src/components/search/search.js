@@ -14,6 +14,7 @@ export default class Search extends React.PureComponent {
     };
   }
 
+  /* Wait to load the full Search component */
   loadSearch = () => {
     import(
       /* webpackChunkName: "search-provider" */
@@ -36,8 +37,12 @@ export default class Search extends React.PureComponent {
     window.addEventListener('resize', this.checkWidth, { passive: true });
   }
 
+  /* If using `overrideSearchTerm`, don't load the full Search component until overrideSearchTerm is set */
   componentDidUpdate(prevProps) {
-    if (prevProps.overrideSearchTerm !== this.props.overrideSearchTerm) {
+    if (
+      prevProps.overrideSearchTerm !== this.props.overrideSearchTerm &&
+      this.state.SearchProvider === undefined
+    ) {
       this.loadSearch();
     }
   }
