@@ -34,7 +34,7 @@ export default class Search extends React.PureComponent {
 
   componentDidMount() {
     this.checkWidth();
-    window.addEventListener('resize', this.checkWidth, { passive: true });
+    window.addEventListener('resize', this.checkWidth);
   }
 
   /* If using `overrideSearchTerm`, don't load the full Search component until overrideSearchTerm is set */
@@ -48,7 +48,7 @@ export default class Search extends React.PureComponent {
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.checkWidth, { passive: true });
+    window.removeEventListener('resize', this.checkWidth);
   }
 
   render() {
