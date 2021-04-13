@@ -16,7 +16,7 @@ import layoutConfig from './layout.config.js';
 /* prevent flex-child from overflowing in Edge */
 const edgeFlexChild = { width: '100%' };
 
-export default class PageLayout extends React.Component {
+export default class PageLayout extends React.PureComponent {
   // render the page's sidebar
   renderSidebar = (config, switchedNavigation, parentPath) => {
     const { constants } = this.props;

@@ -5,7 +5,7 @@ import ProductMenu from '../../product-menu/product-menu';
 import Search from '../../search/search';
 import classnames from 'classnames';
 
-export default class Sidebar extends React.Component {
+export default class Sidebar extends React.PureComponent {
   render() {
     const {
       constants,

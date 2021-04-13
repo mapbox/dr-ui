@@ -10,7 +10,7 @@ import PlaygroundImage from '../playground-image/playground-image';
 import { VimeoModal, VimeoThumbnail, VimeoPlayImage } from './vimeo';
 import classnames from 'classnames';
 
-class RelatedPage extends React.Component {
+class RelatedPage extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = { modalOpen: false };

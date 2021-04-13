@@ -1,7 +1,7 @@
 import React from 'react';
 import components from '../data/components';
 
-export default class FrontMatter extends React.Component {
+export default class FrontMatter extends React.PureComponent {
   render() {
     const { frontMatter } = components.find(
       (f) => f.name === 'PageLayout'

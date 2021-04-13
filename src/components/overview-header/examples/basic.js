@@ -4,7 +4,7 @@ Basic.
 import React from 'react';
 import OverviewHeader from '../overview-header';
 
-export default class Basic extends React.Component {
+export default class Basic extends React.PureComponent {
   render() {
     return (
       <OverviewHeader
