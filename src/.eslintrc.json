@@ -1,9 +1,5 @@
 {
-  "extends": [
-    "../conf/eslint-config-base.json",
-    "@mapbox/eslint-config-docs",
-    "plugin:jsx-a11y/recommended"
-  ],
+  "extends": ["../conf/eslint-config-base.json", "@mapbox/eslint-config-docs"],
   "rules": {
     "es/no-object-assign": "off",
     "react/static-property-placement": ["error", "property assignment"]
