@@ -5,7 +5,7 @@ import ReactHtmlParser from 'react-html-parser';
 import Icon from '@mapbox/mr-ui/icon';
 import { titleGenerator } from './title-generator';
 
-class SearchResult extends React.Component {
+class SearchResult extends React.PureComponent {
   returnRaw = (item) => {
     if (item && item.raw && typeof item.raw !== 'string')
       return item.raw.join(', ');

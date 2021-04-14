@@ -2,7 +2,9 @@
 
 ## 4.0.0
 
-- Create `prepareSitemap` Batfish helper to improve sitemap. See [`prepareSitemap`](https://mapbox.github.io/dr-ui/guides/batfish-helpers/#prepare-sitemap) for instructions on how to add the `dataSelector` to your Batfish configuration. You will also want to add the following to the top of any redirect files so that they will be excluded from the sitemap:
+- Enforce use of React PureComponents to improve performance. [#414](https://github.com/mapbox/dr-ui/pull/414)
+- Improve color contrast on code and anchor elements. [#434](https://github.com/mapbox/dr-ui/pull/434)
+- Create `prepareSitemap` Batfish helper to improve sitemap. [#427](https://github.com/mapbox/dr-ui/pull/427). See [`prepareSitemap`](https://mapbox.github.io/dr-ui/guides/batfish-helpers/#prepare-sitemap) for instructions on how to add the `dataSelector` to your Batfish configuration. You will also want to add the following to the top of any redirect files so that they will be excluded from the sitemap:
 
 ```js
 /*---

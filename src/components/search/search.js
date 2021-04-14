@@ -4,7 +4,7 @@ import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
 import { SearchProvider, WithSearch } from '@elastic/react-search-ui';
 import SearchBox from './search-box';
 
-class Search extends React.Component {
+class Search extends React.PureComponent {
   render() {
     const { props } = this;
     return (

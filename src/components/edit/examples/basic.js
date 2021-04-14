@@ -4,7 +4,7 @@ Basic.
 import React from 'react';
 import Edit from '../edit';
 
-export default class Basic extends React.Component {
+export default class Basic extends React.PureComponent {
   render() {
     return (
       <Edit

@@ -5,7 +5,7 @@ import React from 'react';
 import CodeSnippet from '../code-snippet';
 import { highlightHtml } from '../../highlight/html';
 
-export default class Everything extends React.Component {
+export default class Everything extends React.PureComponent {
   render() {
     return (
       <CodeSnippet
