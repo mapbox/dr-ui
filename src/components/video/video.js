@@ -73,12 +73,7 @@ export default class Video extends React.PureComponent {
         {!isPlaying && (
           <button
             onClick={this.playVideo}
-            className="bg-darken75 round absolute cursor-pointer z1"
-            style={{
-              width: '30%',
-              height: '36%',
-              padding: '4% 9% 1%'
-            }}
+            className="bg-darken75 bg-darken50-on-hover w60 h60 py12 px12 w120-mm h120-mm py18-mm px18-mm round cursor-pointer z1 absolute"
           >
             <VimeoPlayImage />
           </button>
