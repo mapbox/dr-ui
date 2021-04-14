@@ -114,4 +114,13 @@ testCases.download = {
   }
 };
 
+testCases.pricing = {
+  component: Note,
+  description: 'A note to flag information about how a product is priced',
+  props: {
+    theme: 'pricing',
+    children: htmlSample()
+  }
+};
+
 export { testCases, noRenderCases };

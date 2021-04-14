@@ -2,326 +2,201 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Icon from '@mapbox/mr-ui/icon';
-import NavigationDropdown from '../navigation-dropdown/navigation-dropdown';
-import debounce from 'debounce';
 import Tag from '../tag/tag';
+// check if client body width is >= 640
+const isMM =
+  typeof document !== 'undefined' ? document.body.clientWidth >= 640 : false;
 
-const debounceVal = 50;
-
-class NavigationAccordion extends React.PureComponent {
-  constructor(props) {
-    super(props);
+export default class NavigationAccordion extends React.Component {
+  constructor() {
+    super();
     this.state = {
-      activeh2: '',
-      activeh3: ''
+      activeToggles: []
     };
-    this.activeSidebar = React.createRef();
-    this.onScrollLive = this.onScrollLive.bind(this);
   }
+
+  // add item or remove it if it already exists
+  setToggle = (label) => {
+    const { activeToggles } = this.state;
+    const labelIndex = activeToggles.indexOf(label);
+    if (labelIndex > -1) {
+      // label already exists, remove it from activeToggles
+      activeToggles.splice(labelIndex, 1);
+    } else {
+      // label does not exist, add it to activeToggles
+      activeToggles.push(label);
+    }
+    this.setState({ activeToggles: activeToggles });
+  };
 
   componentDidMount() {
-    this.onScroll = debounce(this.onScrollLive, debounceVal);
-    document.addEventListener('scroll', this.onScroll);
-    this.onScrollLive();
-    this.scrollToActiveSideBar();
-  }
-
-  componentWillUnmount() {
-    document.removeEventListener('scroll', this.onScroll);
-  }
-
-  onScrollLive() {
-    const sections = document.querySelectorAll(`div.section-h2`);
-    if (!sections.length) return;
-    for (let i = 0; i < sections.length; i++) {
-      // find the active section
-      if (sections[i].getBoundingClientRect().bottom > 0) {
-        this.setState({
-          activeh2: sections[i].getElementsByTagName('h2')[0]
-            ? sections[i].getElementsByTagName('h2')[0].id
-            : ''
-        });
-        // find the active subheading within the section
-        const subheadings = sections[i].querySelectorAll(`div.section-h3`);
-        // if there are no subheadings, clear out the activeh3
-        if (!subheadings.length) this.setState({ activeh3: undefined });
-        for (let s = 0; s < subheadings.length; s++) {
-          if (subheadings[s].getBoundingClientRect().bottom > 0) {
-            this.setState({
-              activeh3: subheadings[s].getElementsByTagName('h3')[0]
-                ? subheadings[s].getElementsByTagName('h3')[0].id
-                : ''
-            });
-            return;
-          }
+    // if device width is >= 640
+    // determine which section is active and activate its toggle
+    const { parentPage, navigation } = this.props;
+    if (isMM) {
+      navigation.forEach((nav) => {
+        if (nav.path === parentPage) {
+          this.setToggle(nav.title);
         }
-        return;
-      }
+      });
     }
   }
 
-  buildTag = (item) => {
-    const tagProps = {
-      theme: item.tag,
-      customLabel: item.customTagProps
-        ? item.customTagProps.customLabel
-        : undefined,
-      customTooltipText: item.customTagProps
-        ? item.customTagProps.customTooltipText
-        : undefined,
-      customStyles: item.customTagProps
-        ? item.customTagProps.customStyles
-        : undefined
-    };
+  renderHeader(
+    page,
+    hasChildren,
+    isActiveToggle,
+    isActiveSection,
+    sectionId,
+    external
+  ) {
+    const { title, path } = page;
     return (
-      <span className="ml6">
-        <Tag {...tagProps} />
+      <div
+        className={classnames(
+          'px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75',
+          {
+            'bg-blue-faint color-blue': isActiveSection,
+            'flex-parent flex-parent--space-between-main': hasChildren
+          }
+        )}
+      >
+        <a
+          href={path}
+          className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+          style={{ letterSpacing: '0.025em' }}
+        >
+          {title}
+          {page.tag && this.renderTag(page)}
+          {external && (
+            <span
+              className="ml3 color-darken50 relative"
+              style={{ top: '-1px' }}
+            >
+              <Icon name={'share'} inline={true} />
+            </span>
+          )}
+        </a>
+        {hasChildren && (
+          <button
+            className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
+            onClick={() => this.setToggle(title)}
+            aria-label={`Toggle ${title} menu`}
+            aria-controls={sectionId}
+            aria-expanded={isActiveToggle}
+          >
+            <Icon
+              name={isActiveToggle ? 'chevron-up' : 'chevron-down'}
+              inline={true}
+            />
+          </button>
+        )}
+      </div>
+    );
+  }
+  renderBody(subItems, activeItem, sectionId) {
+    const { parentPage } = this.props;
+    const subItemEls = subItems
+      .filter((page) => {
+        return page.path !== parentPage;
+      })
+      .map((page) => (
+        <li
+          // Required on parents containing tags to prevent unwanted scrollbars on IE
+          className={classnames('mb3', {
+            'scroll-hidden': page.tag
+          })}
+          key={page.title}
+        >
+          <a
+            className={classnames('inline-block w-full color-blue-on-hover', {
+              'color-blue': activeItem === page.path
+            })}
+            href={page.path}
+          >
+            {page.title}
+            {page.tag && this.renderTag(page)}
+          </a>
+        </li>
+      ));
+
+    return (
+      <ul id={sectionId} className="mb12 ml12">
+        {subItemEls}
+      </ul>
+    );
+  }
+
+  renderTag = (page) => {
+    return (
+      <span className="ml6 relative" style={{ top: -1 }}>
+        <Tag
+          theme={page.tag}
+          {...page.customTagProps}
+          small={true}
+          icon={true}
+        />
       </span>
     );
   };
 
-  // utility function to find ancestor via selector (sel) of a specified element (el)
-  findAncestor = (el, sel) => {
-    while (
-      (el = el.parentElement) &&
-      !(el.matches || el.matchesSelector).call(el, sel)
-    );
-    return el;
-  };
-
-  scrollToActiveSideBar = () => {
-    const sideBar = document.getElementById('dr-ui--page-layout-sidebar');
-    // if there is no sidebar then we can't scroll to anything.
-    if (!sideBar) return;
-    // [1] scroll to hash location (h2 or h3) if it exists
-    if (window && window.location.hash) {
-      // find the heading item in the scrollbar
-      let heading = document.getElementById(`${window.location.hash}-sidebar`);
-      // h3 will return 0 because initially it's parent (ul.none)  makes the h3 sidebar item invisible with no offsetTop
-      // we will remove the 'none' class from the ul
-      // then find the heading again now that it's visibile and has an offsetTop
-      if (heading && heading.offsetTop === 0) {
-        const parent = this.findAncestor(heading, 'ul.none');
-        if (parent) parent.classList.remove('none');
-        heading = document.getElementById(`${window.location.hash}-sidebar`);
-      }
-      // if the heading exists and offsetTop > 0; scroll to that item in the sidebar
-      if (heading && heading.offsetTop > 0) {
-        sideBar.scrollTop = heading.offsetTop;
-        return;
-      }
-    }
-
-    // [2] if there's no heading, then scroll to open title item
-    if (this.activeSidebar.current) {
-      sideBar.scrollTop = this.activeSidebar.current.offsetTop;
-    }
-  };
-
   render() {
-    const { props, state } = this;
-    function itemClasses(isActive) {
-      return classnames('color-blue-on-hover', {
-        'txt-bold': isActive
-      });
-    }
+    const { navigation, parentPage, location } = this.props;
+    const { activeToggles } = this.state;
+    const activeItem = location.pathname;
+    const items = navigation.map((pageSection) => {
+      const { title, id, path, pages, hideSubpages, external } = pageSection;
+      // the section has sub pages
+      const hasPages = pages && pages.length > 0 && !hideSubpages;
+      // the section's toggle is active
+      const isActiveToggle = activeToggles.indexOf(title) > -1;
+      // the section is active
+      const isActiveSection = path === parentPage;
+      const sectionId = `menu-${id}`;
+      return {
+        header: this.renderHeader(
+          pageSection,
+          hasPages,
+          isActiveToggle,
+          isActiveSection,
+          sectionId,
+          external
+        ),
+        body:
+          isActiveToggle && hasPages
+            ? this.renderBody(pages, activeItem, sectionId)
+            : []
+      };
+    });
 
-    const secondLevelContent =
-      props.contents.secondLevelItems &&
-      props.contents.secondLevelItems.map((item) => {
-        const isActive = state.activeh2 === item.path;
-        let openSubItems = isActive;
-        const subItems =
-          item.thirdLevelItems &&
-          item.thirdLevelItems.map((subItem) => {
-            const isActive = state.activeh3 === subItem.path;
-            if (isActive) openSubItems = true;
-            return (
-              <li
-                key={subItem.path}
-                className="mt6"
-                style={
-                  subItem.icon && { textIndent: '-24px', marginLeft: '11px' }
-                }
-              >
-                <a
-                  href={`#${subItem.path}`}
-                  id={`#${subItem.path}-sidebar`}
-                  className={itemClasses(isActive)}
-                >
-                  {subItem.icon && (
-                    <span className="mr6 w18 h18 align-middle inline-block bg-gray-faint round-full">
-                      <Icon size={16} name={subItem.icon} />
-                    </span>
-                  )}
+    const sidebarItems = items.map((item, index) => {
+      return (
+        <li key={index}>
+          {item.header}
+          {item.body}
+        </li>
+      );
+    });
 
-                  {subItem.title}
-                  {subItem.tag ? this.buildTag(subItem) : ''}
-                </a>
-              </li>
-            );
-          });
-        return (
-          <li key={item.path} className="mb6">
-            <a
-              href={`#${item.path}`}
-              id={`#${item.path}-sidebar`}
-              className={itemClasses(isActive)}
-            >
-              {item.title}
-              {item.tag ? this.buildTag(item) : ''}
-            </a>
-            <ul className={openSubItems ? 'pl12 color-darken75' : 'none'}>
-              {subItems}
-            </ul>
-          </li>
-        );
-      });
-    const firstLevelContent = props.contents.firstLevelItems.map(
-      (page, index) => {
-        const title = page.title;
-        let icon = null;
-        const isActive = this.props.currentPath === page.path;
-        const breakLineClasses = classnames('py3 ', {
-          'border-t border--gray-light': index !== 0
-        });
-        const textClasses = classnames('pl12 py12 txt-bold txt-m flex-child', {
-          'color-black': isActive
-        });
-        const activeSectionClasses = classnames('px12 block-mm none', {
-          'bg-lighten75': isActive
-        });
-        if (!isActive) {
-          icon = (
-            <div className="flex-child flex-child--no-shrink">
-              <Icon name="chevron-down" className="icon color-gray h24 w24" />
-            </div>
-          );
-        }
-        let renderedSecondLevelContent = '';
-        if (isActive && secondLevelContent && secondLevelContent.length > 0) {
-          renderedSecondLevelContent = (
-            <div className="ml24 pt0">
-              <ul className="txt-m pb12 inline-block-mm none unprose">
-                {secondLevelContent}
-              </ul>
-            </div>
-          );
-        }
-
-        return (
-          <div
-            key={index}
-            className={activeSectionClasses}
-            ref={isActive ? this.activeSidebar : undefined}
-          >
-            <div className={breakLineClasses}>
-              <a
-                href={page.path}
-                className="color-blue-on-hover color-gray text-decoration-none unprose flex-parent flex-parent--space-between-main flex-parent--center-cross"
-              >
-                <div className={textClasses}>
-                  {title}
-                  {page.tag ? this.buildTag(page) : ''}
-                </div>
-                {icon}
-              </a>
-              {renderedSecondLevelContent}
-            </div>
-          </div>
-        );
-      }
-    );
     return (
-      <div className="dr-ui--navigation-accordion">
-        <div className="block-mm none">{firstLevelContent}</div>
-        <div className="none-mm block bg-gray-faint px24 py24">
-          <NavigationDropdown
-            currentPath={props.currentPath}
-            dropdownOptions={props.contents.firstLevelItems}
-            onChange={props.onDropdownChange}
-          />
-        </div>
-      </div>
+      <nav className="mx-neg12">
+        <ul>{sidebarItems}</ul>
+      </nav>
     );
   }
 }
 
 NavigationAccordion.propTypes = {
-  currentPath: PropTypes.string,
-  contents: PropTypes.shape({
-    firstLevelItems: PropTypes.arrayOf(
-      PropTypes.shape({
-        title: PropTypes.string.isRequired,
-        tag: PropTypes.oneOf([
-          'legacy',
-          'beta',
-          'fundamentals',
-          'new',
-          'custom'
-        ]),
-        /* Required if tag is set to `custom` */
-        customTagProps: PropTypes.shape({
-          customLabel: PropTypes.string.isRequired,
-          customTooltipText: PropTypes.string.isRequired,
-          customStyles: PropTypes.shape({
-            background: PropTypes.string.isRequired,
-            color: PropTypes.string.isRequired,
-            borderColor: PropTypes.string.isRequired
-          }).isRequired
-        }),
-        path: PropTypes.string.isRequired
-      })
-    ).isRequired,
-    secondLevelItems: PropTypes.arrayOf(
-      PropTypes.shape({
-        title: PropTypes.string.isRequired,
-        tag: PropTypes.oneOf([
-          'legacy',
-          'beta',
-          'fundamentals',
-          'new',
-          'custom'
-        ]),
-        /* Required if tag is set to `custom` */
-        customTagProps: PropTypes.shape({
-          customLabel: PropTypes.string.isRequired,
-          customTooltipText: PropTypes.string.isRequired,
-          customStyles: PropTypes.shape({
-            background: PropTypes.string.isRequired,
-            color: PropTypes.string.isRequired,
-            borderColor: PropTypes.string.isRequired
-          }).isRequired
-        }),
-        path: PropTypes.string.isRequired,
-        thirdLevelItems: PropTypes.arrayOf(
-          PropTypes.shape({
-            title: PropTypes.string.isRequired,
-            icon: PropTypes.string,
-            tag: PropTypes.oneOf([
-              'legacy',
-              'beta',
-              'fundamentals',
-              'new',
-              'custom'
-            ]),
-            /* Required if tag is set to `custom` */
-            customTagProps: PropTypes.shape({
-              customLabel: PropTypes.string.isRequired,
-              customTooltipText: PropTypes.string.isRequired,
-              customStyles: PropTypes.shape({
-                background: PropTypes.string.isRequired,
-                color: PropTypes.string.isRequired,
-                borderColor: PropTypes.string.isRequired
-              }).isRequired
-            }),
-            path: PropTypes.string.isRequired
-          })
-        )
-      })
-    )
-  }),
-  onDropdownChange: PropTypes.func
+  navigation: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      path: PropTypes.string.isRequired,
+      id: PropTypes.string.isRequired,
+      tag: PropTypes.string,
+      hideSubpages: PropTypes.bool, // needed for /help/tutorials and /help/troublehshooting
+      pages: PropTypes.array
+    })
+  ).isRequired,
+  location: PropTypes.object.isRequired,
+  parentPage: PropTypes.string.isRequired
 };
-
-export default NavigationAccordion;

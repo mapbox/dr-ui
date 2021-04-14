@@ -1,10 +1,8 @@
 language: node_js
-node_js:
-  - '10'
 sudo: false
 notifications:
   email: false
 
 scripts:
-  - npm run build-docs
   - npm test
+  - npm run build-docs

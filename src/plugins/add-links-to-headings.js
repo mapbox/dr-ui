@@ -33,6 +33,7 @@ module.exports = () => {
       },
       children: headingNode.children
     };
+    headingNode.properties.className = 'anchor'; // required by OnThisPage component to identify headings
     headingNode.children = [linkNode];
   }
 };

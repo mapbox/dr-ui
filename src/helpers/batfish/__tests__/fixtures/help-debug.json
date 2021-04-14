@@ -1,0 +1,4327 @@
+{
+  "pages": [
+    {
+      "filePath": "/help/src/pages/index.md",
+      "path": "/help/",
+      "frontMatter": {
+        "title": "Help",
+        "description": "Find resources to help you build with Mapbox.",
+        "toc": "none",
+        "color": "gray-dark",
+        "layout": "full",
+        "order": 1,
+        "prependJs": ["import Home from '../components/home.js';"],
+        "hideTitle": true,
+        "hideFeedback": true,
+        "unProse": true,
+        "noShellHeaderBuffer": true,
+        "contentType": "guide",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/how-mapbox-works/access-tokens.md",
+      "path": "/help/how-mapbox-works/access-tokens/",
+      "frontMatter": {
+        "title": "Access tokens",
+        "description": "Learn how access tokens work and how to create and manage your access tokens.",
+        "image": "/img/narrative/access-token.svg",
+        "topics": ["Access tokens"],
+        "products": ["Account app", "Tokens API"],
+        "contentType": "guide",
+        "layout": "page",
+        "order": 2,
+        "popularGuide": true
+      }
+    },
+    {
+      "filePath": "/help/src/pages/how-mapbox-works/creating-data.md",
+      "path": "/help/how-mapbox-works/creating-data/",
+      "frontMatter": {
+        "title": "Create new data",
+        "description": "Learn how datasets work and how to create geospatial data from scratch using Mapbox.",
+        "image": "/img/narrative/data-create.svg",
+        "topics": ["Datasets"],
+        "products": ["Datasets API", "Mapbox Studio"],
+        "prependJs": [
+          "import { HmwDemo } from '../../components/hmw-demo';",
+          "import { datasetSample } from '../../snippets/dataset';"
+        ],
+        "contentType": "guide",
+        "layout": "page",
+        "order": 4
+      }
+    },
+    {
+      "filePath": "/help/src/pages/how-mapbox-works/geospatial-analysis.md",
+      "path": "/help/how-mapbox-works/geospatial-analysis/",
+      "frontMatter": {
+        "title": "Spatial analysis",
+        "description": "Learn how spatial analysis with Turf works and how to use Turf in your web application.",
+        "image": "/img/narrative/analysis.svg",
+        "topics": ["Analysis"],
+        "products": [
+          "Mapbox GL JS",
+          "Maps SDK for Android",
+          "Maps SDK for iOS"
+        ],
+        "prependJs": [
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import javaSdkTurfVideo from '../../video/how-mapbox-works--geospatial-analysis--java-sdk-turf.mp4';",
+          "import PhoneFrame from '../../components/phone-frame';",
+          "import RelatedPage from '@mapbox/dr-ui/related-page';"
+        ],
+        "contentType": "guide",
+        "layout": "page",
+        "order": 7
+      }
+    },
+    {
+      "filePath": "/help/src/pages/how-mapbox-works/satellite-imagery.md",
+      "path": "/help/how-mapbox-works/satellite-imagery/",
+      "frontMatter": {
+        "title": "Satellite imagery",
+        "description": "Learn how satellite imagery works and how to use it in your next Mapbox project.",
+        "image": "/img/narrative/satellite.svg",
+        "topics": ["Satellite"],
+        "products": ["Mapbox Satellite tileset", "Raster Tiles API"],
+        "contentType": "guide",
+        "layout": "page",
+        "order": 11
+      }
+    },
+    {
+      "filePath": "/help/src/pages/how-mapbox-works/static-maps.md",
+      "path": "/help/how-mapbox-works/static-maps/",
+      "frontMatter": {
+        "title": "Static and print maps",
+        "description": "Learn how the Mapbox Static Images API works and how to create static maps.",
+        "image": "/img/narrative/print.svg",
+        "topics": ["Static maps"],
+        "products": ["Mapbox Studio", "Static Images API"],
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import { DemoStatic } from '../../components/demo-static';"
+        ],
+        "contentType": "guide",
+        "layout": "page",
+        "order": 12
+      }
+    },
+    {
+      "filePath": "/help/src/pages/how-mapbox-works/uploading-data.md",
+      "path": "/help/how-mapbox-works/uploading-data/",
+      "frontMatter": {
+        "title": "Upload data",
+        "description": "Learn the difference between tilesets and datasets, how the upload process works, and techniques for uploading.",
+        "image": "/img/narrative/data-upload.svg",
+        "topics": ["Uploads"],
+        "products": [
+          "Datasets API",
+          "Mapbox Studio",
+          "Mapbox Tiling Service",
+          "Uploads API"
+        ],
+        "contentType": "guide",
+        "layout": "page",
+        "order": 14
+      }
+    },
+    {
+      "filePath": "/help/src/pages/how-mapbox-works/unity.md",
+      "path": "/help/how-mapbox-works/unity/",
+      "frontMatter": {
+        "title": "Unity applications",
+        "description": "Learn how the Mapbox Maps SDK for Unity works, how to use it, and how to get started building applications.",
+        "image": "/img/narrative/game-develop.svg",
+        "topics": ["Unity"],
+        "products": ["Maps SDK for Unity"],
+        "contentType": "guide",
+        "layout": "page",
+        "order": 13
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/access-token.md",
+      "path": "/help/glossary/access-token/",
+      "frontMatter": {
+        "title": "access token",
+        "description": "Mapbox uses access tokens to associate your account with your requests to Mapbox API resources.",
+        "contentType": "glossary",
+        "products": ["Account app"],
+        "prependJs": [
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/annotation.md",
+      "path": "/help/glossary/annotation/",
+      "frontMatter": {
+        "title": "annotation",
+        "description": "An annotation is a defined location on a map in the Mapbox Maps SDK for iOS.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Maps SDK for iOS"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/attribution.md",
+      "path": "/help/glossary/attribution/",
+      "frontMatter": {
+        "title": "attribution",
+        "description": "Attribution is the combination of two visual elements that are placed on all Mapbox maps, stating that a map was created with Mapbox tools and data.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": [
+          "Mapbox GL JS",
+          "Mapbox.js",
+          "Maps SDK for Android",
+          "Maps SDK for iOS",
+          "Maps SDK for Unity",
+          "Static Images API"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/baselayer.md",
+      "path": "/help/glossary/baselayer/",
+      "frontMatter": {
+        "title": "baselayer",
+        "description": "A baselayer was a map style designed in Mapbox Studio Classic. Mapbox Studio, the modern alternative to Mapbox Studio Classic, does not use baselayers.",
+        "contentType": "glossary",
+        "products": ["Mapbox Studio Classic"],
+        "prependJs": [
+          "import { LegacyNote } from '../../components/legacy-note';"
+        ],
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/bearing.md",
+      "path": "/help/glossary/bearing/",
+      "frontMatter": {
+        "title": "bearing",
+        "description": "Bearing is the direction you're facing, as measured from a compass.",
+        "contentType": "glossary",
+        "products": [
+          "Directions API",
+          "Mapbox GL JS",
+          "Maps SDK for Android",
+          "Maps SDK for iOS",
+          "Navigation SDK for Android",
+          "Navigation SDK for iOS",
+          "Optimization API",
+          "Static Images API",
+          "Mapbox Studio"
+        ],
+        "prependJs": ["import * as constants from '../../constants';"],
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/bounding-box.md",
+      "path": "/help/glossary/bounding-box/",
+      "frontMatter": {
+        "title": "bounding box",
+        "description": "A bounding box is a mechanism for describing a particular area of a map.",
+        "products": [
+          "Geocoding API",
+          "Mapbox GL JS",
+          "Mapbox.js",
+          "Maps SDK for Android",
+          "Maps SDK for iOS",
+          "Java SDK"
+        ],
+        "contentType": "glossary",
+        "prependJs": ["import * as constants from '../../constants';"],
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/camera.md",
+      "path": "/help/glossary/camera/",
+      "frontMatter": {
+        "title": "camera",
+        "description": "In maps that use Mapbox GL, the camera is a map's field of view.",
+        "contentType": "glossary",
+        "products": [
+          "Mapbox GL JS",
+          "Maps SDK for Android",
+          "Maps SDK for iOS"
+        ],
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';"
+        ],
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/cartocss.md",
+      "path": "/help/glossary/cartocss/",
+      "frontMatter": {
+        "title": "CartoCSS",
+        "description": "CartoCSS was a language used by Mapbox Studio Classic to build classic styles. Mapbox Studio, the modern alternative to Mapbox Studio Classic, does not use CartoCSS.",
+        "contentType": "glossary",
+        "products": ["Mapbox Studio Classic"],
+        "prependJs": [
+          "import { LegacyNote } from '../../components/legacy-note';"
+        ],
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/classic-style.md",
+      "path": "/help/glossary/classic-style/",
+      "frontMatter": {
+        "title": "classic style",
+        "description": "A classic style was a map style made with Mapbox Studio Classic. Mapbox Studio, the modern alternative to Mapbox Studio Classic, does not use classic styles.",
+        "contentType": "glossary",
+        "products": ["Mapbox Studio Classic"],
+        "prependJs": [
+          "import { LegacyNote } from '../../components/legacy-note';",
+          "import RelatedPage from '@mapbox/dr-ui/related-page';"
+        ],
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/csv.md",
+      "path": "/help/glossary/csv/",
+      "frontMatter": {
+        "title": "CSV",
+        "description": "The CSV (comma-separated values) format can be used for mapping if the file contains geographic information.",
+        "prependJs": [
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import Button from '@mapbox/mr-ui/button';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox Studio", "Uploads API"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/data-driven-styling.md",
+      "path": "/help/glossary/data-driven-styling/",
+      "frontMatter": {
+        "title": "data-driven styling",
+        "description": "Data-driven styling allows you to style spatial data based on its properties.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": [
+          "Mapbox Studio",
+          "Mapbox GL JS",
+          "Maps SDK for iOS",
+          "Maps SDK for Android"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/dataset-id.md",
+      "path": "/help/glossary/dataset-id/",
+      "frontMatter": {
+        "title": "dataset ID",
+        "description": "Use the dataset ID to make requests related to the dataset using the Datasets API.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Datasets API", "Mapbox Studio"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/dataset.md",
+      "path": "/help/glossary/dataset/",
+      "frontMatter": {
+        "title": "dataset",
+        "description": "A dataset is an editable collection of GeoJSON features.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox Studio", "Datasets API"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/datasets-api.md",
+      "path": "/help/glossary/datasets-api/",
+      "frontMatter": {
+        "title": "Datasets API",
+        "description": "The Mapbox Datasets API allows you to read, create, update, and remove datasets and dataset features.",
+        "prependJs": [
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Datasets API", "Mapbox Studio"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/directions-api.md",
+      "path": "/help/glossary/directions-api/",
+      "frontMatter": {
+        "title": "Directions API",
+        "description": "With the Mapbox Directions API, you can add routing with turn-by-turn directions to your map.",
+        "prependJs": [
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Directions API"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/expression.md",
+      "path": "/help/glossary/expression/",
+      "frontMatter": {
+        "title": "expression",
+        "description": "An expression defines a formula for computing the value of any layout property, paint property, or filter within a map style.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import RelatedPage from '@mapbox/dr-ui/related-page';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": [
+          "Mapbox GL JS",
+          "Maps SDK for Android",
+          "Maps SDK for iOS",
+          "Mapbox Style Specification"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/feature-querying.md",
+      "path": "/help/glossary/feature-querying/",
+      "frontMatter": {
+        "title": "feature querying",
+        "description": "Feature querying is the process by which features in a tileset are identified at a specific location.",
+        "prependJs": ["import * as constants from '../../constants';"],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": [
+          "Mapbox GL JS",
+          "Maps SDK for Android",
+          "Maps SDK for iOS",
+          "Maps SDK for Unity"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/features.md",
+      "path": "/help/glossary/features/",
+      "frontMatter": {
+        "title": "feature",
+        "description": "A geospatial feature refers to an individual point, line, or polygon in a dataset or in a tileset.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/filter.md",
+      "path": "/help/glossary/filter/",
+      "frontMatter": {
+        "title": "filter",
+        "description": "A filter, also known as a predicate within iOS and macOS, gives you fine-grained control over the content of a style layer.",
+        "prependJs": ["import * as constants from '../../constants';"],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox Style Specification"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/font-stack.md",
+      "path": "/help/glossary/font-stack/",
+      "frontMatter": {
+        "title": "font stack",
+        "description": "A font stack is a collection of fonts that belong to an individual layer within a style.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": [
+          "Mapbox Style Specification",
+          "Styles API",
+          "Mapbox GL JS",
+          "Mapbox Studio"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/geocoding-api.md",
+      "path": "/help/glossary/geocoding-api/",
+      "frontMatter": {
+        "title": "Geocoding API",
+        "description": "The Mapbox Geocoding API performs two main tasks, forward geocoding and reverse geocoding.",
+        "prependJs": [
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Geocoding API"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/geocoding.md",
+      "path": "/help/glossary/geocoding/",
+      "frontMatter": {
+        "title": "geocoding",
+        "description": "Geocoding is the process of taking an address or name of a place and converting it into latitude and longitude values.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Geocoding API", "Java SDK"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/geojson.md",
+      "path": "/help/glossary/geojson/",
+      "frontMatter": {
+        "title": "GeoJSON",
+        "description": "GeoJSON is a file format for representing map data. Mapbox web services and APIs serve geospatial data as GeoJSON.",
+        "prependJs": [
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import Button from '@mapbox/mr-ui/button';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/gpx.md",
+      "path": "/help/glossary/gpx/",
+      "frontMatter": {
+        "title": "GPX",
+        "description": "GPX (GPS eXchange format) is a data format commonly created from GPS receivers.",
+        "prependJs": [
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import Button from '@mapbox/mr-ui/button';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox Studio"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/iframe.md",
+      "path": "/help/glossary/iframe/",
+      "frontMatter": {
+        "title": "iframe",
+        "description": "An iframe is an HTML element that allows you to embed a map into a website.",
+        "prependJs": [
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import * as constants from '../../constants';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox GL JS", "Styles API"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/index.md",
+      "path": "/help/glossary/",
+      "frontMatter": {
+        "title": "Glossary",
+        "description": "Find Mapbox-related terms and their definitions.",
+        "cardDescription": "Find Mapbox-related terms and their definitions.",
+        "color": "orange",
+        "headerImage": "/help/img/categories/glossary.svg",
+        "navOrder": 5,
+        "layout": "full",
+        "order": 1,
+        "hideFeedback": true,
+        "prependJs": [
+          "import GlossaryPage from '@mapbox/dr-ui/glossary-page';",
+          "import listGlossaryTerms from '@mapbox/batfish/data/list-glossary-terms'; // eslint-disable-line"
+        ],
+        "noShellHeaderBuffer": true,
+        "hideTitle": true,
+        "contentType": "glossary",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/isochrone-api.md",
+      "path": "/help/glossary/isochrone-api/",
+      "frontMatter": {
+        "title": "Isochrone API",
+        "description": "The Mapbox Isochrone API allows you to request polygon or line features that show areas that are reachable within a specified amount of time from a location.",
+        "prependJs": [
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Isochrone API"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/kml.md",
+      "path": "/help/glossary/kml/",
+      "frontMatter": {
+        "title": "KML",
+        "description": "KML is a geospatial file format that’s commonly used in Google products.",
+        "prependJs": [
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import Button from '@mapbox/mr-ui/button';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox Studio"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/lat-lon.md",
+      "path": "/help/glossary/lat-lon/",
+      "frontMatter": {
+        "title": "latitude and longitude",
+        "description": "Latitude and longitude are a pair of numbers (coordinates) used to describe a position on the plane of a geographic coordinate system.",
+        "prependJs": ["import Note from '@mapbox/dr-ui/note';"],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/layer.md",
+      "path": "/help/glossary/layer/",
+      "frontMatter": {
+        "title": "style layer",
+        "description": "A style layer is used to add styling rules to a specific subset of data in a map style.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox Style Specification", "Mapbox Studio"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/leaflet.md",
+      "path": "/help/glossary/leaflet/",
+      "frontMatter": {
+        "title": "Leaflet",
+        "description": "Leaflet is an open-source web mapping library that forms the basis of Mapbox.js.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox.js"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/layout-paint-property.md",
+      "path": "/help/glossary/layout-paint-property/",
+      "frontMatter": {
+        "title": "layout and paint properties",
+        "description": "Layout and paint properties are two sub-properties of a layer that decides how data from the layer is rendered in maps that use Mapbox GL.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox Style Specification", "Mapbox GL JS"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/maki.md",
+      "path": "/help/glossary/maki/",
+      "frontMatter": {
+        "title": "Maki icon set",
+        "description": "The Maki icon set is used in map styles. It includes common point of interest icons.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/map-id.md",
+      "path": "/help/glossary/map-id/",
+      "frontMatter": {
+        "title": "map ID",
+        "description": "Map ID is a deprecated term for the unique identifier used to identify a tileset. This identifier is now called a tileset ID.",
+        "contentType": "glossary",
+        "layout": "page",
+        "prependJs": ["import Note from '@mapbox/dr-ui/note';"],
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/map-loads.md",
+      "path": "/help/glossary/map-loads/",
+      "frontMatter": {
+        "title": "map loads",
+        "description": "A map load occurs whenever a Mapbox GL JS `Map` object is initialized on a webpage. It is used to track map usage on the web.",
+        "contentType": "glossary",
+        "layout": "page",
+        "prependJs": ["import * as constants from '../../constants';"],
+        "products": ["Mapbox GL JS", "Account app"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/map-matching-api.md",
+      "path": "/help/glossary/map-matching-api/",
+      "frontMatter": {
+        "title": "Map Matching API",
+        "description": "The Mapbox Map Matching API allows you to take recorded traces, such as the data from a GPS tracker, and snap them to the OpenStreetMap road and path network.",
+        "prependJs": [
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Map Matching API"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/map-view.md",
+      "path": "/help/glossary/map-view/",
+      "frontMatter": {
+        "title": "map view",
+        "description": "Map views were formerly used as a unit of measurement to track map usage on the web. Map views are now deprecated.",
+        "prependJs": ["import Note from '@mapbox/dr-ui/note';"],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/mapbox-android-sdk.md",
+      "path": "/help/glossary/mapbox-android-sdk/",
+      "frontMatter": {
+        "title": "Mapbox Maps SDK for Android",
+        "description": "The Mapbox Maps SDK for Android is an open-source toolset for building mapping applications for Android devices.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Maps SDK for Android"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/mapbox-components-for-framer-x.md",
+      "path": "/help/glossary/mapbox-components-for-framer-x/",
+      "frontMatter": {
+        "title": "Mapbox components for Framer X",
+        "description": "The Mapbox components for Framer X can be used to add interactive maps to Framer prototypes.",
+        "prependJs": ["import Note from '@mapbox/dr-ui/note';"],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/mapbox-editor.md",
+      "path": "/help/glossary/mapbox-editor/",
+      "frontMatter": {
+        "title": "Mapbox Editor",
+        "description": "Mapbox Editor was an online interface for designing maps that has been deprecated. Mapbox Studio is the modern alternative to Mapbox Editor.",
+        "prependJs": [
+          "import { LegacyNote } from '../../components/legacy-note';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/mapbox-gl-js.md",
+      "path": "/help/glossary/mapbox-gl-js/",
+      "frontMatter": {
+        "title": "Mapbox GL JS",
+        "description": "Mapbox GL JS is a JavaScript library that uses Mapbox GL to render interactive maps.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox GL JS"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/mapbox-gl.md",
+      "path": "/help/glossary/mapbox-gl/",
+      "frontMatter": {
+        "title": "Mapbox GL",
+        "description": "Mapbox GL is a suite of open-source libraries for embedding customizable and responsive client-side maps in web, mobile, and desktop applications.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": [
+          "Mapbox Studio",
+          "Mapbox GL JS",
+          "Maps SDK for iOS",
+          "Maps SDK for Android"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/mapbox-ios-sdk.md",
+      "path": "/help/glossary/mapbox-ios-sdk/",
+      "frontMatter": {
+        "title": "Mapbox Maps SDK for iOS",
+        "description": "The Mapbox Maps SDK for iOS is an open-source toolset for building mapping applications for iPhone and iPad devices.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Maps SDK for iOS"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/mapbox-js.md",
+      "path": "/help/glossary/mapbox-js/",
+      "frontMatter": {
+        "title": "Mapbox.js",
+        "description": "Mapbox.js is no longer in active development. Mapbox.js is a JavaScript library that allows you to add a map to your website.",
+        "prependJs": [
+          "import { LegacyNote } from '../../components/legacy-note';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox.js"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/mapbox-maps-sdk-for-unity.md",
+      "path": "/help/glossary/mapbox-maps-sdk-for-unity/",
+      "frontMatter": {
+        "title": "Mapbox Maps SDK for Unity",
+        "description": "The Mapbox Maps SDK for Unity is an open-source toolset for building location-based augmented and virtual reality applications with Unity, using real map data.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Maps SDK for Unity"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/mapbox-navigation-sdk.md",
+      "path": "/help/glossary/mapbox-navigation-sdk/",
+      "frontMatter": {
+        "title": "Mapbox Navigation SDKs",
+        "description": "The Mapbox Navigation SDKs for iOS and Android provide open-source toolsets for integrating turn-by-turn navigation within mobile applications.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": [
+          "Navigation SDK for Android",
+          "Navigation SDK for iOS",
+          "Directions API"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/mapbox-satellite.md",
+      "path": "/help/glossary/mapbox-satellite/",
+      "frontMatter": {
+        "title": "Mapbox Satellite",
+        "description": "Mapbox Satellite is a global tileset of high-resolution satellite imagery.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": [
+          "Mapbox Satellite tileset",
+          "Mapbox Studio",
+          "Mapbox GL JS",
+          "Maps SDK for iOS",
+          "Maps SDK for Android",
+          "Raster Tiles API"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/mapbox-studio-classic.md",
+      "path": "/help/glossary/mapbox-studio-classic/",
+      "frontMatter": {
+        "title": "Mapbox Studio Classic",
+        "description": "Mapbox Studio Classic was a desktop application for designing classic styles. Mapbox Studio is the modern alternative to Mapbox Studio Classic.",
+        "prependJs": [
+          "import { LegacyNote } from '../../components/legacy-note';",
+          "import RelatedPage from '@mapbox/dr-ui/related-page';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox Studio Classic"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/mapbox-studio.md",
+      "path": "/help/glossary/mapbox-studio/",
+      "frontMatter": {
+        "title": "Mapbox Studio",
+        "description": "Mapbox Studio is a web application for creating map styles and managing your datasets and tilesets.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox Studio"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/mapbox-tiling-service.md",
+      "path": "/help/glossary/mapbox-tiling-service/",
+      "frontMatter": {
+        "title": "Mapbox Tiling Service (MTS)",
+        "description": "Mapbox Tiling Service (MTS) allows you to list, delete, and retrieve TileJSON metadata for raster and vector tilesets.",
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox Tiling Service"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/mapnik.md",
+      "path": "/help/glossary/mapnik/",
+      "frontMatter": {
+        "title": "Mapnik",
+        "description": "Mapnik is an open-source toolkit for developing mapping applications.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox Studio Classic", "Raster Tiles API"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/maps-sdk-for-react-native.md",
+      "path": "/help/glossary/maps-sdk-for-react-native/",
+      "frontMatter": {
+        "title": "Maps SDK for React Native",
+        "description": "The Maps SDK for React Native is a community-managed React Native library for integrating Mapbox maps into mobile apps.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/marker.md",
+      "path": "/help/glossary/marker/",
+      "frontMatter": {
+        "title": "marker",
+        "description": "A marker is a visual representation of a specific coordinate on a map.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": [
+          "Mapbox Studio",
+          "Mapbox GL JS",
+          "Maps SDK for iOS",
+          "Maps SDK for Android"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/matrix-api-elements.md",
+      "path": "/help/glossary/matrix-api-elements/",
+      "frontMatter": {
+        "title": "Mapbox Matrix API elements",
+        "description": "Elements are the source and destination coordinate pairs used in a Mapbox Matrix API request.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Matrix API"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/matrix-api.md",
+      "path": "/help/glossary/matrix-api/",
+      "frontMatter": {
+        "title": "Matrix API",
+        "description": "The Mapbox Matrix API calculates travel times between many points in one API request.",
+        "prependJs": [
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Matrix API"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/mbtiles.md",
+      "path": "/help/glossary/mbtiles/",
+      "frontMatter": {
+        "title": "MBTiles",
+        "description": "MBTiles is a file format for storing tilesets.",
+        "prependJs": [
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import Button from '@mapbox/mr-ui/button';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox Studio"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/monthly-active-users.md",
+      "path": "/help/glossary/monthly-active-users/",
+      "frontMatter": {
+        "title": "monthly active users",
+        "description": "Monthly active users (MAU) is the number of users who accessed Mapbox services within your applications during a given month.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": [
+          "Maps SDK for iOS",
+          "Maps SDK for Android",
+          "Navigation SDK for iOS",
+          "Navigation SDK for Android",
+          "Vision SDK for iOS",
+          "Vision SDK for Android",
+          "Maps SDK for Unity"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/osm.md",
+      "path": "/help/glossary/osm/",
+      "frontMatter": {
+        "title": "OpenStreetMap",
+        "description": "OpenStreetMap is a collaborative mapping project that creates a world map.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/offline-region.md",
+      "path": "/help/glossary/offline-region/",
+      "frontMatter": {
+        "title": "offline regions and offline packs",
+        "description": "An offline region is a defined region of a map that is available for use in conditions with limited or no network connection.",
+        "prependJs": ["import * as constants from '../../constants';"],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Maps SDK for iOS", "Maps SDK for Android"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/optimization-api.md",
+      "path": "/help/glossary/optimization-api/",
+      "frontMatter": {
+        "title": "Optimization API",
+        "description": "The Mapbox Optimization API returns a duration-optimized route between provided input coordinates.",
+        "prependJs": [
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Optimization API"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/overzoom.md",
+      "path": "/help/glossary/overzoom/",
+      "frontMatter": {
+        "title": "overzoom",
+        "description": "Overzoom is the result of a tileset being zoomed in beyond its given zoom extent.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/point.md",
+      "path": "/help/glossary/point/",
+      "frontMatter": {
+        "title": "point",
+        "description": "A point is a geospatial feature defined by one pair of latitude and longitude coordinates.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/projection.md",
+      "path": "/help/glossary/projection/",
+      "frontMatter": {
+        "title": "projection",
+        "description": "Projections are methods of transforming the coordinates of locations on the planet to a two-dimensional plane.",
+        "prependJs": ["import RelatedPage from '@mapbox/dr-ui/related-page';"],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/quadtree.md",
+      "path": "/help/glossary/quadtree/",
+      "frontMatter": {
+        "title": "quadtree",
+        "description": "Map tiles are stored in a quadtree data structure.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/raster-tiles-api.md",
+      "path": "/help/glossary/raster-tiles-api/",
+      "frontMatter": {
+        "title": "Raster Tiles API",
+        "description": "The Mapbox Raster Tiles API allows you to request a single tile from a Mapbox-hosted raster tileset.",
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import * as constants from '../../constants';",
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Raster Tiles API"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/raster.md",
+      "path": "/help/glossary/raster/",
+      "frontMatter": {
+        "title": "raster data",
+        "description": "Raster data is a pixel-based data format used in raster tilesets.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": [
+          "Mapbox Style Specification",
+          "Mapbox Studio",
+          "Maps SDK for iOS",
+          "Maps SDK for Android",
+          "Raster Tiles API"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/routing-profile.md",
+      "path": "/help/glossary/routing-profile/",
+      "frontMatter": {
+        "title": "routing profile",
+        "description": "A routing profile is a set of rules that a routing engine uses to find the optimal route between two points.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": [
+          "Directions API",
+          "Isochrone API",
+          "Map Matching API",
+          "Matrix API",
+          "Optimization API"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/shapefile.md",
+      "path": "/help/glossary/shapefile/",
+      "frontMatter": {
+        "title": "shapefile",
+        "description": "A shapefile is a file format for storing geographic vector data.",
+        "prependJs": [
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import Button from '@mapbox/mr-ui/button';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox Studio"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/runtime-styling.md",
+      "path": "/help/glossary/runtime-styling/",
+      "frontMatter": {
+        "title": "runtime styling",
+        "description": "Runtime styling allows you to dynamically change the map style displayed on your Mapbox map in real time.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Maps SDK for iOS", "Maps SDK for Android"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/simplestyle.md",
+      "path": "/help/glossary/simplestyle/",
+      "frontMatter": {
+        "title": "simplestyle",
+        "description": "Simplestyle is an open source specification for styling GeoJSON data used in Mapbox.js and in GeoJSON overlays in the Static Images API.",
+        "prependJs": [
+          "import { LegacyNote } from '../../components/legacy-note';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox.js", "Static Images API"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/sku-token.md",
+      "path": "/help/glossary/sku-token/",
+      "frontMatter": {
+        "title": "SKU tokens",
+        "description": "SKU tokens are used by some SDKs for tracking usage.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox GL JS", "Maps SDK for iOS", "Maps SDK for Android"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/source-layer.md",
+      "path": "/help/glossary/source-layer/",
+      "frontMatter": {
+        "title": "source layer",
+        "description": "A source layer is an individual layer of data within a source.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": [
+          "Mapbox Studio",
+          "Mapbox GL JS",
+          "Mapbox Style Specification"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/source.md",
+      "path": "/help/glossary/source/",
+      "frontMatter": {
+        "title": "source",
+        "description": "A source supplies the data that Mapbox GL displays on a map.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox Style Specification"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/sprite.md",
+      "path": "/help/glossary/sprite/",
+      "frontMatter": {
+        "title": "sprite",
+        "description": "A sprite is a single image that contains all the icons included in a style.",
+        "prependJs": ["import RelatedPage from '@mapbox/dr-ui/related-page';"],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": [
+          "Mapbox Studio",
+          "Styles API",
+          "Mapbox Style Specification"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/static-tiles-api.md",
+      "path": "/help/glossary/static-tiles-api/",
+      "frontMatter": {
+        "title": "Static Tiles API",
+        "description": "The Mapbox Static Tiles API serves raster tiles generated from a Mapbox GL style.",
+        "prependJs": [
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Static Tiles API", "Mapbox.js"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/static-images-api.md",
+      "path": "/help/glossary/static-images-api/",
+      "frontMatter": {
+        "title": "Static Images API",
+        "description": "The Mapbox Static Images API allows you to request a standalone, static image of a map generated from a Mapbox GL-based style.",
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Static Images API"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/style-component.md",
+      "path": "/help/glossary/style-component/",
+      "frontMatter": {
+        "title": "style component",
+        "description": "A style component is a collection of related map features that you style as a single unit in the Mapbox Studio style editor. Each component can contain one or more layers.",
+        "contentType": "glossary",
+        "layout": "page",
+        "prependJs": [
+          "import Browser from '@mapbox/dr-ui/browser';",
+          "import StyleComponentBetaNote from '../../components/temporary/style-component-beta-note';",
+          "import Video from '@mapbox/dr-ui/video';",
+          "import Overview from '../../video/glossary--style-components--overview.mp4';"
+        ],
+        "products": ["Mapbox Studio"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/style-id.md",
+      "path": "/help/glossary/style-id/",
+      "frontMatter": {
+        "title": "style ID",
+        "description": "A style ID is a map style's unique identifier.",
+        "prependJs": ["import constants from '../../constants';"],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Styles API", "Mapbox Studio"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/style-optimized-vector-tiles.md",
+      "path": "/help/glossary/style-optimized-vector-tiles/",
+      "frontMatter": {
+        "title": "style-optimized vector tiles",
+        "description": "Style-optimized vector tiles remove any layers or features in a tile that are not represented by a given Mapbox style.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Vector Tiles API", "Mapbox GL JS"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/style-url.md",
+      "path": "/help/glossary/style-url/",
+      "frontMatter": {
+        "title": "style URL",
+        "description": "A style URL allows you to reference a style created with Mapbox Studio.",
+        "prependJs": [
+          "import constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import Icon from '@mapbox/mr-ui/icon';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Styles API", "Mapbox Studio"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/style.md",
+      "path": "/help/glossary/style/",
+      "frontMatter": {
+        "title": "style",
+        "description": "A style is a JSON document that defines the visual appearance of a map.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": [
+          "Mapbox Style Specification",
+          "Mapbox Studio",
+          "Styles API"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/styles-api.md",
+      "path": "/help/glossary/styles-api/",
+      "frontMatter": {
+        "title": "Styles API",
+        "description": "The Mapbox Styles API allows you to programmatically read and write map styles, fonts, and sprites.",
+        "prependJs": [
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Styles API"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/svg.md",
+      "path": "/help/glossary/svg/",
+      "frontMatter": {
+        "title": "SVG",
+        "description": "Scalable Vector Graphics (SVG) is a markup language for describing two-dimensional vector graphics.",
+        "prependJs": [
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import Button from '@mapbox/mr-ui/button';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Styles API", "Mapbox Studio"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/symbol-layer.md",
+      "path": "/help/glossary/symbol-layer/",
+      "frontMatter": {
+        "title": "symbol layer",
+        "description": "A symbol layer is a layer in which icons or text are added to a Mapbox map.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": [
+          "Mapbox Style Specification",
+          "Maps SDK for iOS",
+          "Maps SDK for Android",
+          "Mapbox GL JS"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/telemetry.md",
+      "path": "/help/glossary/telemetry/",
+      "frontMatter": {
+        "title": "telemetry",
+        "description": "Telemetry is a process in which automatic sensors create and update maps by gathering anonymized data about where and how people are moving.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Maps SDK for Android", "Maps SDK for iOS"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/tiff.md",
+      "path": "/help/glossary/tiff/",
+      "frontMatter": {
+        "title": "TIFF",
+        "description": "TIFF is a file format for saving raster images.",
+        "prependJs": [
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import Button from '@mapbox/mr-ui/button';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox Studio"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/tilejson.md",
+      "path": "/help/glossary/tilejson/",
+      "frontMatter": {
+        "title": "TileJSON",
+        "description": "TileJSON is a format for describing tilesets.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox Tiling Service"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/tilemill.md",
+      "path": "/help/glossary/tilemill/",
+      "frontMatter": {
+        "title": "TileMill",
+        "description": "TileMill was a desktop application for designing maps that has been deprecated. Mapbox Studio is the modern alternative to TileMill.",
+        "prependJs": [
+          "import { LegacyNote } from '../../components/legacy-note';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/tilequery-api.md",
+      "path": "/help/glossary/tilequery-api/",
+      "frontMatter": {
+        "title": "Tilequery API",
+        "description": "The Mapbox Tilequery API allows you to retrieve data about specific features from a vector tileset, based on a given latitude and longitude.",
+        "prependJs": [
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Tilequery API"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/tileset-id.md",
+      "path": "/help/glossary/tileset-id/",
+      "frontMatter": {
+        "title": "tileset ID",
+        "description": "Tileset IDs, previously known as Map IDs, are used to identify vector and raster tilesets.",
+        "contentType": "glossary",
+        "layout": "page",
+        "prependJs": [
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "products": ["Mapbox Tiling Service"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/tileset-recipe.md",
+      "path": "/help/glossary/tileset-recipe/",
+      "frontMatter": {
+        "title": "tileset recipe",
+        "description": "This feature is in beta. Tileset recipes describe how tileset source data should look and behave when a tileset is published by Mapbox Tiling Service (MTS).",
+        "prependJs": ["import Note from '@mapbox/dr-ui/note';"],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox Tiling Service"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/tileset-source.md",
+      "path": "/help/glossary/tileset-source/",
+      "frontMatter": {
+        "title": "tileset source",
+        "description": "This feature is in beta. Tileset sources are line-delimited GeoJSON sources used to create new tilesets using Mapbox Tiling Service (MTS).",
+        "prependJs": ["import Note from '@mapbox/dr-ui/note';"],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox Tiling Service"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/tileset.md",
+      "path": "/help/glossary/tileset/",
+      "frontMatter": {
+        "title": "tileset",
+        "description": "A tileset is a collection of raster or vector data broken up into a uniform grid of square tiles at 22 preset zoom levels.",
+        "prependJs": ["import Note from '@mapbox/dr-ui/note';"],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": [
+          "Mapbox Tiling Service",
+          "Mapbox GL JS",
+          "Uploads API",
+          "Mapbox Studio",
+          "Maps SDK for iOS",
+          "Maps SDK for Android"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/tokens-api.md",
+      "path": "/help/glossary/tokens-api/",
+      "frontMatter": {
+        "title": "Tokens API",
+        "description": "The Mapbox Tokens API allows you to create, edit, and delete access tokens.",
+        "prependJs": [
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Tokens API"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/turf.md",
+      "path": "/help/glossary/turf/",
+      "frontMatter": {
+        "title": "Turf.js",
+        "description": "Turf.js is an open-source JavaScript library used for spatial analysis.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox GL JS", "Java SDK"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/uploads-api.md",
+      "path": "/help/glossary/uploads-api/",
+      "frontMatter": {
+        "title": "Uploads API",
+        "description": "The Mapbox Uploads API transforms geographic data into tilesets that can be used with maps and geographic applications.",
+        "prependJs": [
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Uploads API"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/vector-tiles-api.md",
+      "path": "/help/glossary/vector-tiles-api/",
+      "frontMatter": {
+        "title": "Vector Tiles API",
+        "description": "The Mapbox Vector Tiles API allows you to request a single tile from a Mapbox-hosted vector tileset.",
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import * as constants from '../../constants';",
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Vector Tiles API"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/vector-tiles.md",
+      "path": "/help/glossary/vector-tiles/",
+      "frontMatter": {
+        "title": "vector tiles",
+        "description": "A vector tile is a lightweight data format for storing geospatial vector data, such as points, lines, and polygons.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": [
+          "Mapbox GL JS",
+          "Mapbox Vector Tile Specification",
+          "Vector Tiles API"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/wordpress.md",
+      "path": "/help/glossary/wordpress/",
+      "frontMatter": {
+        "title": "WordPress map block",
+        "description": "The WordPress map block allows WordPress users to add a Mapbox map to any post or page.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/worldview.md",
+      "path": "/help/glossary/worldview/",
+      "frontMatter": {
+        "title": "worldview",
+        "description": "In Mapbox vector tilesets, the \"worldview\" data field is used to identify geographic features whose characteristics are defined differently by various groups.",
+        "contentType": "glossary",
+        "layout": "page",
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import { DemoLink } from '../../components/demo-link';"
+        ],
+        "products": [
+          "Mapbox Style Specification",
+          "Mapbox GL JS",
+          "Mapbox Boundaries",
+          "Mapbox Streets tileset"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/zoom-extent.md",
+      "path": "/help/glossary/zoom-extent/",
+      "frontMatter": {
+        "title": "zoom extent",
+        "description": "The zoom extent is the range of zoom levels at which a tileset is visible.",
+        "contentType": "glossary",
+        "layout": "page",
+        "products": ["Mapbox Style Specification", "Mapbox Studio"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/access-elevation-data.md",
+      "path": "/help/troubleshooting/access-elevation-data/",
+      "frontMatter": {
+        "title": "Access elevation data",
+        "description": "Learn how to access elevation data in Mapbox tilesets.",
+        "topics": ["Data"],
+        "products": [
+          "Mapbox Terrain tileset",
+          "Tilequery API",
+          "Mapbox Terrain-RGB tileset"
+        ],
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/account-lockout.md",
+      "path": "/help/troubleshooting/account-lockout/",
+      "frontMatter": {
+        "title": "How to regain access to your account",
+        "description": "Learn to troubleshoot common account lockout scenarios.",
+        "topics": ["Access tokens", "Map design", "Data"],
+        "products": ["Account app"],
+        "prependJs": ["import Icon from '@mapbox/mr-ui/icon';"],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/address-geocoding-format-guide.md",
+      "path": "/help/troubleshooting/address-geocoding-format-guide/",
+      "frontMatter": {
+        "title": "Address geocoding format guide",
+        "description": "Follow these best practices when formatting addresses for geocoding.",
+        "topics": ["Geocoding"],
+        "products": ["Geocoding API"],
+        "prependJs": [
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/adjust-tileset-zoom-extent.md",
+      "path": "/help/troubleshooting/adjust-tileset-zoom-extent/",
+      "frontMatter": {
+        "title": "Adjust the zoom extent of your tileset",
+        "description": "Learn how to manually adjust the zoom extent of your tilesets.",
+        "topics": ["Uploads", "Data", "Map design", "Web apps"],
+        "products": ["Mapbox Studio", "Mapbox Tiling Service", "Uploads API"],
+        "prependJs": ["import Note from '@mapbox/dr-ui/note';"],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/android-apk-size.md",
+      "path": "/help/troubleshooting/android-apk-size/",
+      "frontMatter": {
+        "title": "Understanding Android APK size",
+        "description": "Learn how to measure and optimize your Android app’s size.",
+        "topics": ["Mobile apps"],
+        "products": ["Maps SDK for Android"],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/blank-tiles.md",
+      "path": "/help/troubleshooting/blank-tiles/",
+      "frontMatter": {
+        "title": "Blank or missing map tiles",
+        "description": "Learn why you may be seeing blank or missing tiles.",
+        "topics": ["Data", "Map design", "Web apps"],
+        "products": ["Mapbox GL JS", "Mapbox Studio", "Mapbox.js"],
+        "prependJs": [
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/change-language.md",
+      "path": "/help/troubleshooting/change-language/",
+      "frontMatter": {
+        "title": "Change your map’s label language",
+        "description": "Learn about available languages and how to change your map’s language.",
+        "topics": ["Data", "Map design"],
+        "products": [
+          "Mapbox GL JS",
+          "Mapbox Studio",
+          "Maps SDK for Android",
+          "Maps SDK for iOS",
+          "Navigation SDK for Android",
+          "Navigation SDK for iOS"
+        ],
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import StyleComponentBetaNote from '../../components/temporary/style-component-beta-note';",
+          "import IosViewControllerToggle from '../../components/context-dependent/ios-view-controller-toggle';",
+          "import AndroidActivityToggle from '../../components/context-dependent/android-activity-toggle';",
+          "import generalSwiftCode from '../../snippets/manual/change-language--general-swift.swift';",
+          "import generalObjcCode from '../../snippets/manual/change-language--general-objc.m';",
+          "import specificSwiftCode from '../../snippets/manual/change-language--specific-swift.swift';",
+          "import specificObjcCode from '../../snippets/manual/change-language--specific-objc.m';"
+        ],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/cors-errors.md",
+      "path": "/help/troubleshooting/cors-errors/",
+      "frontMatter": {
+        "title": "CORS errors",
+        "description": "Learn how to address CORS errors.",
+        "topics": ["Web apps"],
+        "products": ["Mapbox.js"],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/firewalls.md",
+      "path": "/help/troubleshooting/firewalls/",
+      "frontMatter": {
+        "title": "Working with firewalls",
+        "description": "General troubleshooting tips and some configuration guidance for working with Mapbox behind a firewall.",
+        "topics": ["Web apps"],
+        "products": ["Mapbox fundamentals"],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/csv-upload-errors.md",
+      "path": "/help/troubleshooting/csv-upload-errors/",
+      "frontMatter": {
+        "title": "CSV file errors",
+        "description": "Learn how to fix errors when uploading CSV files.",
+        "topics": ["Data", "Uploads"],
+        "products": ["Mapbox Studio", "Uploads API"],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/index.md",
+      "path": "/help/troubleshooting/",
+      "frontMatter": {
+        "title": "Troubleshooting",
+        "description": "Resolve common issues across Mapbox products.",
+        "cardDescription": "Resolve common issues across Mapbox products.",
+        "color": "red",
+        "headerImage": "/help/img/categories/troubleshoot.svg",
+        "navOrder": 4,
+        "layout": "example",
+        "order": 1,
+        "hideTitle": true,
+        "fullWidthCards": true,
+        "noShellHeaderBuffer": true,
+        "contentType": "troubleshooting",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/integrate-mapbox-visual-with-power-bi.md",
+      "path": "/help/troubleshooting/integrate-mapbox-visual-with-power-bi/",
+      "frontMatter": {
+        "title": "Integrate the Mapbox Visual with Microsoft Power BI",
+        "description": "General configuration guidance and tips for using the Mapbox Visual in Microsoft Power BI.",
+        "topics": ["Third party integration"],
+        "products": ["Mapbox Visual for Microsoft Power BI"],
+        "prependJs": ["import Icon from '@mapbox/mr-ui/icon';"],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/ios-framework-size.md",
+      "path": "/help/troubleshooting/ios-framework-size/",
+      "frontMatter": {
+        "title": "Understanding iOS framework size",
+        "description": "Learn how to measure and optimize your iOS app’s size.",
+        "topics": ["Mobile apps"],
+        "products": ["Maps SDK for iOS"],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/ios-sdk-installation.md",
+      "path": "/help/troubleshooting/ios-sdk-installation/",
+      "frontMatter": {
+        "title": "Troubleshooting Mapbox Maps SDK for iOS installation",
+        "description": "Learn how to troubleshoot frequently seen issues when installing the Mapbox Maps SDK for iOS.",
+        "topics": ["Mobile apps"],
+        "products": ["Maps SDK for iOS"],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/large-data-tippecanoe.md",
+      "path": "/help/troubleshooting/large-data-tippecanoe/",
+      "frontMatter": {
+        "title": "Manage large data files for Mapbox Studio with Tippecanoe",
+        "description": "Learn how to manage big data files and make a scale-independent view of your data.",
+        "topics": ["Uploads", "Data"],
+        "products": ["Mapbox Studio"],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/ios-sdk-submission.md",
+      "path": "/help/troubleshooting/ios-sdk-submission/",
+      "frontMatter": {
+        "title": "Troubleshooting App Store submission with the Mapbox Maps SDK for iOS",
+        "description": "Learn how to troubleshoot frequently seen issues when submitting applications built with the Mapbox Maps SDK for iOS to the App Store.",
+        "topics": ["Mobile apps"],
+        "products": ["Maps SDK for iOS"],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/manage-fontstacks.md",
+      "path": "/help/troubleshooting/manage-fontstacks/",
+      "frontMatter": {
+        "title": "Manage your fontstacks",
+        "description": "Learn how to manage fontstacks for optimal rendering.",
+        "topics": ["Map design"],
+        "products": ["Mapbox Studio"],
+        "contentType": "troubleshooting",
+        "layout": "page",
+        "prependJs": [
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import Browser from '@mapbox/dr-ui/browser';",
+          "import StyleComponentBetaNote from '../../components/temporary/style-component-beta-note';",
+          "import Video from '@mapbox/dr-ui/video';",
+          "import Components from '../../video/troubleshooting--manage-fontstacks--components.mp4';"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/mapbox-browser-support.md",
+      "path": "/help/troubleshooting/mapbox-browser-support/",
+      "frontMatter": {
+        "title": "Browser support",
+        "description": "Learn which browsers support each Mapbox product.",
+        "topics": ["Data", "Map design", "Web apps"],
+        "products": ["Mapbox GL JS", "Mapbox Studio", "Mapbox.js"],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/migrate-legacy-static-images-api.md",
+      "path": "/help/troubleshooting/migrate-legacy-static-images-api/",
+      "frontMatter": {
+        "title": "Migrating to the modern Static Images API",
+        "description": "Tools and tips for updating to the modern Static Images API.",
+        "topics": ["Web apps", "Static maps"],
+        "products": [
+          "Mapbox GL JS",
+          "Mapbox Studio",
+          "Raster Tiles API",
+          "Static Images API"
+        ],
+        "prependJs": [
+          "import { highlightSwift } from '@mapbox/dr-ui/highlight/swift';",
+          "import MigrationCodeExample from '../../components/migration-code-example';",
+          "import { staticTemplate, staticCustom } from '../../data/migrate';",
+          "import RelatedPage from '@mapbox/dr-ui/related-page';"
+        ],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/optimize-map-label-placement.md",
+      "path": "/help/troubleshooting/optimize-map-label-placement/",
+      "frontMatter": {
+        "title": "Optimize map label placement",
+        "description": "Optimize label placement on web and mobile maps.",
+        "topics": ["Map design"],
+        "products": [
+          "Mapbox GL JS",
+          "Mapbox Studio",
+          "Mapbox Style Specification",
+          "Mapbox Tiling Service",
+          "Maps SDK for Android"
+        ],
+        "prependJs": [
+          "import GlWrapper from '@mapbox/dr-ui/gl-wrapper';",
+          "import { CollisionBoxes } from '../../components/diagrams/collision-boxes';",
+          "import { VariableLabelDiagram } from '../../components/diagrams/variable-label-diagram';"
+        ],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/postgis-data-studio-format.md",
+      "path": "/help/troubleshooting/postgis-data-studio-format/",
+      "frontMatter": {
+        "title": "Get your PostGIS data ready for Mapbox Studio",
+        "description": "Methods to re-format, query, and export PostGIS data into a Mapbox Studio ready format.",
+        "topics": ["Uploads"],
+        "products": ["Mapbox Studio"],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/private-access-token-android-and-ios.md",
+      "path": "/help/troubleshooting/private-access-token-android-and-ios/",
+      "frontMatter": {
+        "title": "Keep access tokens private in open source iOS and Android apps",
+        "description": "Learn how to protect your access tokens so that they aren't used by others.",
+        "topics": ["Mobile apps"],
+        "products": ["Maps SDK for Android", "Maps SDK for iOS"],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/raster-transparency-issues.md",
+      "path": "/help/troubleshooting/raster-transparency-issues/",
+      "frontMatter": {
+        "title": "Troubleshoot raster image with black background",
+        "description": "Learn how to fix raster images that display black backgrounds.",
+        "topics": ["Data", "Uploads"],
+        "products": ["Mapbox GL JS", "Mapbox Studio"],
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/reduce-tileset-sources.md",
+      "path": "/help/troubleshooting/reduce-tileset-sources/",
+      "frontMatter": {
+        "title": "Source limits in Mapbox Studio styles",
+        "description": "Read about strategies for reducing the number of tileset sources in Mapbox Studio styles.",
+        "topics": ["Data", "Map design"],
+        "products": ["Mapbox Studio"],
+        "contentType": "troubleshooting",
+        "layout": "page",
+        "prependJs": [
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import Video from '@mapbox/dr-ui/video';",
+          "import StyleReference from '../../video/reduce-tileset-sources-style-reference.mp4';",
+          "import SourceCompositing from '../../video/reduce-tileset-sources-source-compositing.mp4';"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/reporting-a-problem.md",
+      "path": "/help/troubleshooting/reporting-a-problem/",
+      "frontMatter": {
+        "title": "Report a problem with the map",
+        "description": "Learn how to report errors on Mapbox maps.",
+        "topics": ["Data"],
+        "products": [
+          "Mapbox Satellite tileset",
+          "Mapbox Streets tileset",
+          "Directions API",
+          "Geocoding API"
+        ],
+        "contentType": "troubleshooting",
+        "layout": "page",
+        "feedback": false
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/studio-svg-upload-errors.md",
+      "path": "/help/troubleshooting/studio-svg-upload-errors/",
+      "frontMatter": {
+        "title": "Troubleshooting SVG image errors in Mapbox Studio",
+        "description": "Learn how to fix SVG upload errors in Mapbox Studio.",
+        "topics": ["Map design"],
+        "products": ["Mapbox Studio", "Styles API"],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/transfer-styles-between-accounts.md",
+      "path": "/help/troubleshooting/transfer-styles-between-accounts/",
+      "frontMatter": {
+        "title": "Transfer styles between accounts",
+        "description": "Learn how to transfer Mapbox styles between accounts.",
+        "topics": ["Data", "Map design"],
+        "products": ["Mapbox GL JS", "Mapbox Studio"],
+        "contentType": "troubleshooting",
+        "layout": "page",
+        "prependJs": [
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import RelatedPage from '@mapbox/dr-ui/related-page';"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/use-custom-mapbox-styles-in-tableau.md",
+      "path": "/help/troubleshooting/use-custom-mapbox-styles-in-tableau/",
+      "frontMatter": {
+        "title": "Use custom Mapbox styles in Tableau",
+        "description": "General configuration guidance and tips for using custom Mapbox maps in Tableau.",
+        "topics": ["Third party integration"],
+        "products": ["Mapbox Studio"],
+        "prependJs": [
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import AppropriateImage from '../../components/appropriate-image';"
+        ],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/add-gradient-route-line-video.md",
+      "path": "/help/tutorials/add-gradient-route-line-video/",
+      "frontMatter": {
+        "title": "Video: Add a gradient route line to a map",
+        "description": "Use a helper library add a multi-colored line to a static map image.",
+        "thumbnail": "tutorials--add-gradient-route-line-video--thumbnail",
+        "level": 1,
+        "topics": ["Map design", "Static maps"],
+        "products": ["Static Images API"],
+        "language": ["JavaScript"],
+        "contentType": "tutorial",
+        "layout": "page",
+        "prependJs": ["import Video from '../../components/temporary/video';"],
+        "video": true
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/add-points-pt-2.md",
+      "path": "/help/tutorials/add-points-pt-2/",
+      "frontMatter": {
+        "title": "Add points to a web map, part 2: create a style",
+        "description": "Add a tileset to a template style and upload custom icons in Mapbox Studio.",
+        "thumbnail": "tutorials--add-points-pt-2--thumbnail",
+        "level": 1,
+        "topics": ["Uploads", "Map design"],
+        "products": ["Mapbox GL JS", "Mapbox Studio"],
+        "language": ["No code"],
+        "prependJs": [
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import Button from '@mapbox/mr-ui/button';",
+          "import Video from '@mapbox/dr-ui/video';",
+          "import Publish from '../../video/tutorials--add-points-pt-2--publish.mp4';",
+          "import UploadSvg from '../../video/tutorials--add-points-pt-2--upload-svg.mp4';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/add-points-pt-1.md",
+      "path": "/help/tutorials/add-points-pt-1/",
+      "frontMatter": {
+        "title": "Add points to a web map, part 1: create a dataset",
+        "description": "Create a new dataset containing points.",
+        "thumbnail": "tutorials--add-points-pt-1--thumbnail",
+        "level": 1,
+        "topics": ["Uploads", "Datasets", "Geocoding"],
+        "products": ["Mapbox GL JS", "Mapbox Studio"],
+        "language": ["No code"],
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import Button from '@mapbox/mr-ui/button';",
+          "import RelatedPage from '@mapbox/dr-ui/related-page';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/add-points-pt-3.md",
+      "path": "/help/tutorials/add-points-pt-3/",
+      "frontMatter": {
+        "title": "Add points to a web map, part 3: add interactivity",
+        "description": "Add popups when markers are clicked using Mapbox GL JS.",
+        "thumbnail": "tutorials--add-points-to-a-map--thumbnail",
+        "level": 1,
+        "topics": ["Web apps"],
+        "language": ["JavaScript"],
+        "products": ["Mapbox GL JS", "Mapbox Studio"],
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/arcgis-online-mapbox-basemap.md",
+      "path": "/help/tutorials/arcgis-online-mapbox-basemap/",
+      "frontMatter": {
+        "title": "Add a Mapbox Studio style as a basemap in ArcGIS Online",
+        "description": "Add your map as a basemap to ArcGIS Online.",
+        "thumbnail": "tutorials--arcgis-online-mapbox-basemap--thumbnail",
+        "level": 2,
+        "topics": ["Third party integration"],
+        "products": ["Mapbox Studio"],
+        "language": ["No code"],
+        "prereq": "Familiarity with and access to ArcGIS Online.",
+        "prependJs": [
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import AppropriateImage from '../../components/appropriate-image';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/carto.md",
+      "path": "/help/tutorials/carto/",
+      "frontMatter": {
+        "title": "Add a Mapbox style to a CARTO map",
+        "description": "Add your map as a basemap to CARTO.",
+        "thumbnail": "tutorials--carto--thumbnail",
+        "level": 1,
+        "topics": ["Third party integration"],
+        "products": ["Mapbox Studio"],
+        "language": ["No code"],
+        "prependJs": ["import Icon from '@mapbox/mr-ui/icon';"],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/create-a-map-in-unity.md",
+      "path": "/help/tutorials/create-a-map-in-unity/",
+      "frontMatter": {
+        "title": "Create a map in Unity",
+        "description": "Use the Mapbox Maps SDK for Unity to create a visualization of 3D buildings on top of a 3D terrain map for use in a Unity application.",
+        "thumbnail": "tutorials--create-a-map-in-unity--thumbnail",
+        "level": 1,
+        "topics": ["Unity"],
+        "products": ["Maps SDK for Unity"],
+        "language": ["No code"],
+        "prereq": "Familiarity with Unity.",
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/customize-label-text.md",
+      "path": "/help/tutorials/customize-label-text/",
+      "frontMatter": {
+        "title": "Customize label text for a single label",
+        "description": "Use expressions in Mapbox Studio to alter a single label.",
+        "thumbnail": "tutorials--customize-label-text--thumbnail",
+        "level": 1,
+        "topics": ["Data", "Map design"],
+        "products": ["Mapbox Studio"],
+        "language": ["No code"],
+        "contentType": "tutorial",
+        "layout": "page",
+        "prependJs": [
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import StyleComponentBetaNote from '../../components/temporary/style-component-beta-note';",
+          "import RelatedPage from '@mapbox/dr-ui/related-page';"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/customize-label-text-video.md",
+      "path": "/help/tutorials/customize-label-text-video/",
+      "frontMatter": {
+        "title": "Video: Customize or hide text for a single label",
+        "description": "Change or hide a label by applying a data condition or filter.",
+        "thumbnail": "tutorials--customize-label-text-video--thumbnail",
+        "level": 1,
+        "topics": ["Data", "Map design"],
+        "products": ["Mapbox Studio"],
+        "language": ["No code"],
+        "contentType": "tutorial",
+        "layout": "page",
+        "prependJs": ["import Video from '../../components/temporary/video';"],
+        "video": true
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/georeferencing-imagery.md",
+      "path": "/help/tutorials/georeferencing-imagery/",
+      "frontMatter": {
+        "title": "Georeference imagery",
+        "description": "Take your non-georeferenced aerial image or historical map and get it onto a Mapbox map with the help of QGIS.",
+        "thumbnail": "tutorials--georeferencing-imagery--thumbnail",
+        "level": 3,
+        "topics": ["Uploads", "Satellite", "Third party integration"],
+        "products": ["Mapbox GL JS", "Mapbox Studio", "Uploads API"],
+        "language": ["No code"],
+        "prereq": "Familiarity with QGIS.",
+        "prependJs": [
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import Button from '@mapbox/mr-ui/button';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/get-started-tokens-api.md",
+      "path": "/help/tutorials/get-started-tokens-api/",
+      "frontMatter": {
+        "title": "Creating access tokens with the Tokens API",
+        "description": "Walk through creating permanent and temporary access tokens using the Tokens API.",
+        "category": "Tutorials",
+        "level": 2,
+        "topics": ["Access tokens"],
+        "products": ["Tokens API"],
+        "language": ["cURL"],
+        "thumbnail": "tutorials--get-started-tokens-api--thumbnail",
+        "prereq": "Familiarity with APIs and using the command line.",
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import UserName from '../../components/username';",
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import TokenPlaceholder from '../../components/token-placeholder';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/google-to-mapbox.md",
+      "path": "/help/tutorials/google-to-mapbox/",
+      "frontMatter": {
+        "title": "Switch from Google Maps to Mapbox",
+        "description": "Are you using the Google Maps API? This guide walks you through how to convert a Google web map to a Mapbox web map using Mapbox GL JS.",
+        "thumbnail": "tutorials--google-to-mapbox--thumbnail",
+        "level": 2,
+        "topics": ["Web apps"],
+        "products": ["Mapbox GL JS"],
+        "language": ["JavaScript"],
+        "prereq": "Familiarity with front-end development concepts.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/index.md",
+      "path": "/help/tutorials/",
+      "frontMatter": {
+        "title": "Tutorials",
+        "description": "Find a step-by-step guide to help you get started or take your project to the next level.",
+        "cardDescription": "Find a step-by-step guide to help you get started or take your project to the next level.",
+        "color": "green",
+        "headerImage": "/help/img/categories/tutorial.svg",
+        "navOrder": 3,
+        "layout": "example",
+        "order": 1,
+        "hideTitle": true,
+        "noShellHeaderBuffer": true,
+        "contentType": "tutorial",
+        "language": ["No code"],
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/indoor-floorplans.md",
+      "path": "/help/tutorials/indoor-floorplans/",
+      "frontMatter": {
+        "title": "Build indoor floorplans with Mapbox",
+        "description": "Upload a floorplan to create an indoor map.",
+        "thumbnail": "tutorials--indoor-floorplans--thumbnail",
+        "level": 3,
+        "topics": ["Uploads", "Map design", "Third party integration"],
+        "products": ["Mapbox GL JS", "Mapbox Studio", "Mapbox.js"],
+        "language": ["Varies"],
+        "prereq": "Familiarity with GIS.",
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/mapbox-arcgis-qgis.md",
+      "path": "/help/tutorials/mapbox-arcgis-qgis/",
+      "frontMatter": {
+        "title": "Add Mapbox maps as layers in ArcGIS and QGIS with WMTS",
+        "description": "Learn how to add Mapbox maps as layers in ArcGIS and QGIS with WMTS.",
+        "thumbnail": "tutorials--mapbox-arcgis-qgis--thumbnail",
+        "level": 2,
+        "topics": ["Third party integration"],
+        "products": ["Mapbox Studio"],
+        "language": ["No code"],
+        "prereq": "Familiarity with and access to ArcGIS.",
+        "prependJs": [
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import AppropriateImage from '../../components/appropriate-image';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/mapbox-with-openlayers.md",
+      "path": "/help/tutorials/mapbox-with-openlayers/",
+      "frontMatter": {
+        "title": "Use Mapbox with OpenLayers",
+        "description": "Learn how to use Mapbox with OpenLayers.",
+        "thumbnail": "tutorials--mapbox-with-openlayers--thumbnail",
+        "level": 2,
+        "topics": ["Third party integration"],
+        "products": ["Mapbox Studio", "Raster Tiles API", "Static Tiles API"],
+        "language": ["JavaScript"],
+        "prereq": "Familiarity with front-end development concepts.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/markers.md",
+      "path": "/help/tutorials/markers/",
+      "frontMatter": {
+        "title": "Add markers to a map",
+        "description": "There are many ways to add markers to the map. This guide will help you identify the best method for your use case.",
+        "thumbnail": "tutorials--markers--thumbnail",
+        "level": 1,
+        "topics": ["Web apps"],
+        "products": [
+          "Mapbox GL JS",
+          "Mapbox Studio",
+          "Maps SDK for iOS",
+          "Maps SDK for Android",
+          "Static Images API"
+        ],
+        "language": ["Varies"],
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import MarkerExample from '../../components/diagrams/marker-example';",
+          "import * as constants from '../../constants';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page",
+        "popularGuide": true
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/point-in-polygon-query-with-mapbox-boundaries.md",
+      "path": "/help/tutorials/point-in-polygon-query-with-mapbox-boundaries/",
+      "frontMatter": {
+        "title": "Point-in-polygon query with Mapbox Boundaries",
+        "description": "Query data in v2 of the Mapbox Boundaries tileset.",
+        "level": 2,
+        "topics": ["Data"],
+        "language": ["JavaScript"],
+        "products": ["Mapbox Boundaries", "Tilequery API"],
+        "thumbnail": "tutorials--point-in-polygon-query-with-enterprise-boundaries--thumbnail",
+        "prereq": "Familiarity with front-end development and access to Mapbox Boundaries.",
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/overpass-turbo.md",
+      "path": "/help/tutorials/overpass-turbo/",
+      "frontMatter": {
+        "title": "Add OpenStreetMap data to your Mapbox project",
+        "description": "Learn how to export OpenStreetMap data to be used in your Mapbox project.",
+        "thumbnail": "tutorials--overpass-turbo--thumbnail",
+        "level": 2,
+        "topics": ["Data", "Uploads"],
+        "products": ["Mapbox Studio"],
+        "language": ["No code"],
+        "prereq": "Learn to navigate the OpenStreetMap tagging system.",
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/style-single-country.md",
+      "path": "/help/tutorials/style-single-country/",
+      "frontMatter": {
+        "title": "Style a single country",
+        "description": "Find and upload open source data to style in Mapbox Studio.",
+        "thumbnail": "tutorials--style-single-country--thumbnail",
+        "level": 1,
+        "topics": ["Uploads", "Map design"],
+        "products": ["Mapbox Studio"],
+        "language": ["No code"],
+        "contentType": "tutorial",
+        "layout": "page",
+        "prependJs": [
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import Video from '@mapbox/dr-ui/video';",
+          "import StyleCreate from '../../video/style-single-country-style-create.mp4';",
+          "import Icon from '@mapbox/mr-ui/icon';"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/unity-custom-map-style.md",
+      "path": "/help/tutorials/unity-custom-map-style/",
+      "frontMatter": {
+        "title": "Custom map styles in Unity",
+        "description": "Use a custom map style from Mapbox Studio in a Unity application.",
+        "thumbnail": "tutorials--unity-custom-map-style--thumbnail",
+        "level": 2,
+        "topics": ["Unity"],
+        "products": ["Maps SDK for Unity"],
+        "language": ["No code"],
+        "prereq": "Familiarity with Unity.",
+        "prependJs": ["import Icon from '@mapbox/mr-ui/icon';"],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/upload-curl.md",
+      "path": "/help/tutorials/upload-curl/",
+      "frontMatter": {
+        "title": "Upload to Mapbox using cURL",
+        "description": "Learn how to use the Mapbox Uploads API.",
+        "thumbnail": "tutorials--upload-curl--thumbnail",
+        "level": 3,
+        "topics": ["Uploads"],
+        "products": ["Uploads API"],
+        "language": ["cURL"],
+        "prereq": "Familiarity with cURL.",
+        "prependJs": ["import Note from '@mapbox/dr-ui/note';"],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/update-studio-classic-style-video.md",
+      "path": "/help/tutorials/update-studio-classic-style-video/",
+      "frontMatter": {
+        "title": "Video: Recreate a classic style in modern Mapbox Studio",
+        "description": "Follow these steps to modernize your favorite Mapbox Studio Classic style.",
+        "thumbnail": "tutorials--update-studio-classic-style-video--thumbnail",
+        "level": 1,
+        "topics": ["Map design"],
+        "products": ["Mapbox Studio"],
+        "language": ["No code"],
+        "contentType": "tutorial",
+        "layout": "page",
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import Video from '../../components/temporary/video';"
+        ],
+        "video": true
+      }
+    },
+    {
+      "filePath": "/help/src/pages/how-mapbox-works/geocoding.md",
+      "path": "/help/how-mapbox-works/geocoding/",
+      "frontMatter": {
+        "title": "Geocoding",
+        "description": "Learn how geocoding works and how to use geocoding in your next Mapbox project.",
+        "image": "/img/narrative/geocoding.svg",
+        "topics": ["Geocoding"],
+        "products": ["Geocoding API", "Java SDK"],
+        "prependJs": [
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import ChevronousText from '@mapbox/mr-ui/chevronous-text';",
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "guide",
+        "layout": "page",
+        "order": 6
+      }
+    },
+    {
+      "filePath": "/help/src/pages/how-mapbox-works/index.md",
+      "path": "/help/how-mapbox-works/",
+      "frontMatter": {
+        "title": "How Mapbox Works",
+        "description": "Learn about the building blocks that Mapbox provides so you can create custom mapping applications.",
+        "cardDescription": "Learn how the Mapbox platform works.",
+        "headerImage": "/help/img/categories/guide.svg",
+        "color": "cyan",
+        "prependJs": [
+          "import constants from '../../constants.json';",
+          "import ChevronousText from '@mapbox/mr-ui/chevronous-text';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import { DemoStatic } from '../../components/demo-static';",
+          "import { HmwMapSources } from '../../components/diagrams/hmw-map-sources';",
+          "import GLWrapper from '@mapbox/dr-ui/gl-wrapper';"
+        ],
+        "contentType": "guide",
+        "contentTypeTitle": "How Mapbox works",
+        "navOrder": 2,
+        "layout": "page",
+        "order": 1,
+        "noShellHeaderBuffer": true,
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/how-mapbox-works/map-design.md",
+      "path": "/help/how-mapbox-works/map-design/",
+      "frontMatter": {
+        "title": "Map design",
+        "description": "Learn how Mapbox styles work and where you can go to learn more and get started designing your map.",
+        "image": "/img/narrative/design.svg",
+        "topics": ["Map design"],
+        "products": [
+          "Mapbox GL JS",
+          "Mapbox Studio",
+          "Mapbox Style Specification",
+          "Maps SDK for Android",
+          "Maps SDK for iOS",
+          "Static Images API",
+          "Styles API"
+        ],
+        "prependJs": ["import DemoIframe from '@mapbox/dr-ui/demo-iframe';"],
+        "contentType": "guide",
+        "layout": "page",
+        "order": 8
+      }
+    },
+    {
+      "filePath": "/help/src/pages/how-mapbox-works/mobile-apps.md",
+      "path": "/help/how-mapbox-works/mobile-apps/",
+      "frontMatter": {
+        "title": "Mobile applications",
+        "description": "Learn how the Mapbox mobile SDKs work and how to add Mapbox maps to a mobile application.",
+        "image": "/img/narrative/mobile-develop.svg",
+        "topics": ["Mobile apps"],
+        "products": [
+          "Java SDK",
+          "Maps SDK for Android",
+          "Maps SDK for iOS",
+          "Navigation SDK for Android",
+          "Navigation SDK for iOS"
+        ],
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Icon from '@mapbox/mr-ui/icon';"
+        ],
+        "contentType": "guide",
+        "layout": "page",
+        "order": 10
+      }
+    },
+    {
+      "filePath": "/help/src/pages/how-mapbox-works/mapbox-data.md",
+      "path": "/help/how-mapbox-works/mapbox-data/",
+      "frontMatter": {
+        "title": "Our map data",
+        "description": "Learn about Mapbox’s map data, where it comes from, and how you can leverage it in your next project.",
+        "image": "/img/narrative/data.svg",
+        "topics": ["Data"],
+        "products": [
+          "Mapbox Boundaries",
+          "Mapbox Satellite tileset",
+          "Mapbox Streets tileset",
+          "Mapbox Studio",
+          "Mapbox Terrain-RGB tileset",
+          "Mapbox Terrain tileset",
+          "Mapbox Traffic tileset",
+          "Vector Tiles API",
+          "Raster Tiles API"
+        ],
+        "prependJs": [
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';"
+        ],
+        "contentType": "guide",
+        "layout": "page",
+        "order": 9
+      }
+    },
+    {
+      "filePath": "/help/src/pages/how-mapbox-works/web-apps.md",
+      "path": "/help/how-mapbox-works/web-apps/",
+      "frontMatter": {
+        "title": "Web applications",
+        "description": "Learn how Mapbox’s JavaScript libraries work and how to integrate them into your web applications.",
+        "image": "/img/narrative/web-develop.svg",
+        "topics": ["Web apps"],
+        "products": [
+          "Mapbox GL JS",
+          "Mapbox.js",
+          "Static Images API",
+          "Static Tiles API"
+        ],
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import { LegacyNote } from '../../components/legacy-note';",
+          "import CompareWebUseCases from '../../components/diagrams/compare-web-use-cases';"
+        ],
+        "contentType": "guide",
+        "layout": "page",
+        "order": 15
+      }
+    },
+    {
+      "filePath": "/help/src/pages/glossary/zoom-level.md",
+      "path": "/help/glossary/zoom-level/",
+      "frontMatter": {
+        "title": "zoom level",
+        "description": "A zoom level determines how much of a map is visible.",
+        "contentType": "glossary",
+        "layout": "page",
+        "prependJs": ["import ZoomLevelCss from '../css/zoom-level.css';"],
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/collaboration-best-practices.md",
+      "path": "/help/troubleshooting/collaboration-best-practices/",
+      "frontMatter": {
+        "title": "Collaboration best practices",
+        "description": "Learn best practices for setting up an account and collaborating on projects.",
+        "topics": ["Access tokens", "Map design", "Data"],
+        "products": ["Account app", "Mapbox Studio", "Tokens API"],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/how-to-use-mapbox-securely.md",
+      "path": "/help/troubleshooting/how-to-use-mapbox-securely/",
+      "frontMatter": {
+        "title": "How to use Mapbox securely",
+        "description": "Learn how to use Mapbox securely.",
+        "topics": [
+          "Data",
+          "Map design",
+          "Web apps",
+          "Access tokens",
+          "Mobile apps"
+        ],
+        "products": [
+          "Account app",
+          "Mapbox GL JS",
+          "Mapbox Tiling Service",
+          "Tokens API",
+          "Uploads API"
+        ],
+        "prependJs": [
+          "import ChevronousText from '@mapbox/mr-ui/chevronous-text';"
+        ],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/implementation-support.md",
+      "path": "/help/troubleshooting/implementation-support/",
+      "frontMatter": {
+        "title": "How to get support while building with Mapbox",
+        "description": "Learn about all the different options for support while you are building location applications with Mapbox.",
+        "topics": [
+          "Data",
+          "Map design",
+          "Mobile apps",
+          "Third party integration",
+          "Web apps"
+        ],
+        "products": ["Mapbox fundamentals", "Support"],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/manage-tileset-costs.md",
+      "path": "/help/troubleshooting/manage-tileset-costs/",
+      "frontMatter": {
+        "title": "Manage your tileset processing and tileset hosting costs",
+        "description": "Follow these practices to optimize your tileset processing and tileset hosting costs when you tile data using Mapbox Tiling Service (MTS) or the Mapbox Uploads API.",
+        "topics": ["Data", "Uploads"],
+        "products": ["Mapbox Studio", "Mapbox Tiling Service", "Uploads API"],
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import Icon from '@mapbox/mr-ui/icon';"
+        ],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/migrate-legacy-static-tiles-api.md",
+      "path": "/help/troubleshooting/migrate-legacy-static-tiles-api/",
+      "frontMatter": {
+        "title": "Migrating to the modern Static Tiles API",
+        "description": "Update your Leaflet.js or Mapbox.js implementation to use the modern Mapbox Static Tiles API.",
+        "topics": ["Web apps"],
+        "products": [
+          "Mapbox GL JS",
+          "Mapbox Studio",
+          "Mapbox.js",
+          "Raster Tiles API",
+          "Static Tiles API",
+          "Styles API"
+        ],
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import { highlightJsx } from '@mapbox/dr-ui/highlight/jsx';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import MigrationCodeExample from '../../components/migration-code-example';",
+          "import { leaflet, mapboxJS } from '../../data/migrate';",
+          "import RelatedPage from '@mapbox/dr-ui/related-page';",
+          "import * as constants from '../../constants';"
+        ],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/mobile-offline.md",
+      "path": "/help/troubleshooting/mobile-offline/",
+      "frontMatter": {
+        "title": "Offline maps",
+        "description": "Learn about how offline maps work.",
+        "topics": ["Mobile apps"],
+        "products": [
+          "Maps SDK for Android",
+          "Maps SDK for iOS",
+          "Raster Tiles API",
+          "Vector Tiles API"
+        ],
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import ChevronousText from '@mapbox/mr-ui/chevronous-text';",
+          "import Note from '@mapbox/dr-ui/note';"
+        ],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/transition-from-mapbox-js-to-mapbox-gl-js.md",
+      "path": "/help/troubleshooting/transition-from-mapbox-js-to-mapbox-gl-js/",
+      "frontMatter": {
+        "title": "Transition from Mapbox.js to Mapbox GL JS",
+        "description": "Learn about transitioning from using Mapbox.js to using Mapbox GL JS in your apps.",
+        "topics": ["Web apps"],
+        "products": [
+          "Mapbox GL JS",
+          "Mapbox Studio",
+          "Mapbox Style Specification",
+          "Mapbox.js"
+        ],
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import Note from '@mapbox/dr-ui/note';"
+        ],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/using-recolorable-images-in-mapbox-maps.md",
+      "path": "/help/troubleshooting/using-recolorable-images-in-mapbox-maps/",
+      "frontMatter": {
+        "title": "Using recolorable images in Mapbox maps",
+        "description": "Learn how Mapbox uses recolorable images in maps including SDF-enabled images and iOS's template rendering mode.",
+        "topics": ["Map design"],
+        "products": [
+          "Mapbox GL JS",
+          "Mapbox Studio",
+          "Mapbox Style Specification",
+          "Maps SDK for Android",
+          "Maps SDK for iOS"
+        ],
+        "prependJs": [
+          "import constants from '../../constants';",
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import Button from '@mapbox/mr-ui/button';",
+          "import PhoneFrame from '../../components/phone-frame';",
+          "import AndroidActivityToggle from '../../components/context-dependent/android-activity-toggle';",
+          "import IosViewControllerToggle from '../../components/context-dependent/ios-view-controller-toggle'",
+          "import swiftCode from '../../snippets/sdf-examples/ios-example.swift';",
+          "import javaCode from '../../snippets/sdf-examples/android-example.java';"
+        ],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/add-3d-buildings-studio.md",
+      "path": "/help/tutorials/add-3d-buildings-studio/",
+      "frontMatter": {
+        "title": "Add 3D buildings to a Mapbox Studio style",
+        "description": "Add a 3D building layer to a map style in Mapbox Studio.",
+        "thumbnail": "tutorials--add-3d-buildings-studio--thumbnail",
+        "topics": ["Map design"],
+        "products": ["Mapbox Streets tileset", "Mapbox Studio", "Uploads API"],
+        "level": 1,
+        "language": ["No code"],
+        "prependJs": [
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import { ColorSwatch } from '../../components/color-swatch';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import StyleComponentBetaNote from '../../components/temporary/style-component-beta-note';",
+          "import Video from '@mapbox/dr-ui/video';",
+          "import RelatedPage from '@mapbox/dr-ui/related-page';",
+          "import ChangePitch from '../../video/tutorials--add-3d-buildings--change-pitch.mp4';",
+          "import ChangeOpacity from '../../video/tutorials--add-3d-buildings--change-opacity.mp4';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/working-with-large-geojson-data.md",
+      "path": "/help/troubleshooting/working-with-large-geojson-data/",
+      "frontMatter": {
+        "title": "Working with large GeoJSON sources in Mapbox GL JS",
+        "description": "Strategies for handling large GeoJSON sources with GL JS.",
+        "topics": ["Web apps", "Data"],
+        "products": ["Mapbox GL JS", "Mapbox Studio", "Uploads API"],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/analysis-with-turf-mapbox-js.md",
+      "path": "/help/tutorials/analysis-with-turf-mapbox-js/",
+      "frontMatter": {
+        "title": "Analyze data with Turf.js and Mapbox.js",
+        "description": "Using Turf.js, you can add some spatial analysis to your map to solve problems. This guide walks through an example of Turf.js and Mapbox.js in a real-world context.",
+        "thumbnail": "tutorials--analysis-with-turf-mapbox-js--thumbnail",
+        "level": 2,
+        "topics": ["Web apps", "Analysis"],
+        "language": ["JavaScript"],
+        "products": ["Mapbox.js"],
+        "prereq": "Familiarity with front-end development concepts.",
+        "legacy": true,
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import { LegacyNote } from '../../components/legacy-note';",
+          "import { hospitalsLex } from '../../snippets/hospitals-lex';",
+          "import { librariesLex } from '../../snippets/libraries-lex';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/android-dds-circle-layer.md",
+      "path": "/help/tutorials/android-dds-circle-layer/",
+      "frontMatter": {
+        "title": "Data-driven styling for Android",
+        "description": "Create a map for Android that styles a circle based on a data attribute.",
+        "thumbnail": "tutorials--android-dds-circle-layer--thumbnail",
+        "level": 2,
+        "topics": ["Mobile apps"],
+        "products": ["Mapbox Studio", "Uploads API", "Maps SDK for Android"],
+        "language": ["Java"],
+        "prereq": "An Android application with a map view set up and familiarity with Android Studio and Java.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Button from '@mapbox/mr-ui/button';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import CodeSnippetTitle from '@mapbox/dr-ui/code-snippet-title';",
+          "import AndroidLayoutCodeBlock from '@mapbox/dr-ui/android-layout-code-block';",
+          "import AndroidActivityToggle from '../../components/context-dependent/android-activity-toggle';",
+          "import javaCode from '../../snippets/android-tutorial-demos/data-driven-styling-activity--all-java.java';",
+          "import xmlLayoutCode from '../../snippets/android-tutorial-demos/data-driven-styling--all-layout.xml';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import PhoneFrame from '../../components/phone-frame';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/android-location-listening.md",
+      "path": "/help/tutorials/android-location-listening/",
+      "frontMatter": {
+        "title": "Tracking device location for Android",
+        "description": "Display a Mapbox map on an Android device and receive updates on the device's current location.",
+        "thumbnail": "tutorials--android-location-listening--thumbnail",
+        "level": 2,
+        "topics": ["Mobile apps"],
+        "language": ["Java"],
+        "products": ["Maps SDK for Android"],
+        "prereq": "Familiarity with Android Studio and Java.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import CodeSnippetTitle from '@mapbox/dr-ui/code-snippet-title';",
+          "import AndroidLayoutCodeBlock from '@mapbox/dr-ui/android-layout-code-block';",
+          "import AndroidActivityToggle from '../../components/context-dependent/android-activity-toggle';",
+          "import javaCode from '../../snippets/android-tutorial-demos/location-tracking-activity--all-java.java';",
+          "import xmlLayoutCode from '../../snippets/android-tutorial-demos/location-tracking-activity--all-layout.xml';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import PhoneFrame from '../../components/phone-frame';",
+          "import AppropriateImage from '../../components/appropriate-image';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/android-runtime-styling-intro.md",
+      "path": "/help/tutorials/android-runtime-styling-intro/",
+      "frontMatter": {
+        "title": "Runtime styling for Android",
+        "description": "Change various properties of a map based on user interaction and other \"runtime\" situations.",
+        "thumbnail": "tutorials--android-runtime-styling-intro--thumbnail",
+        "level": 2,
+        "topics": ["Mobile apps"],
+        "language": ["Java"],
+        "products": ["Maps SDK for Android", "Mapbox Studio"],
+        "prereq": "An Android application with a map view set up and familiarity with Android Studio and Java.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import CodeSnippetTitle from '@mapbox/dr-ui/code-snippet-title';",
+          "import AndroidLayoutCodeBlock from '@mapbox/dr-ui/android-layout-code-block';",
+          "import AndroidActivityToggle from '../../components/context-dependent/android-activity-toggle';",
+          "import javaCode from '../../snippets/android-tutorial-demos/runtime-styling-activity--all-java.java';",
+          "import xmlLayoutCode from '../../snippets/android-tutorial-demos/runtime-styling--all-layout.xml';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import PhoneFrame from '../../components/phone-frame';",
+          "import finalVideo from '../../video/tutorials--android-runtime-styling-intro--final.mp4';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/android-vision-ar-customization.md",
+      "path": "/help/tutorials/android-vision-ar-customization/",
+      "frontMatter": {
+        "title": "AR customization using Mapbox Vision SDK for Android",
+        "description": "Use the Mapbox Vision SDK for Android to add AR navigation to an application and customize some visual elements.",
+        "topics": ["Mobile apps", "Vision"],
+        "products": ["Vision SDK for Android"],
+        "thumbnail": "tutorials--ar-customization-thumbnail",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import ARCustomizationTutorial from '../../video/tutorials-ar-customization.mp4'",
+          "import ARLaneColorChange from '../../video/vision-ar-customization-1-lane-color-change.mp4'",
+          "import ARLaneWidthChange from '../../video/vision-ar-customization-2-LaneWidthChange.mp4'",
+          "import ARLaneChevronsChange from '../../video/vision-ar-customization-3-ChevronLength.mp4'",
+          "import AREnableFence from '../../video/vision-ar-customization-4-EnableFence.mp4'",
+          "import ARFenceColorChange from '../../video/vision-ar-customization-5-FenceColorChange.mp4'",
+          "import ARFenceHeightChange from '../../video/vision-ar-customization-6-FenceHeightChange.mp4'",
+          "import ARFenceVerticalOffsetChange from '../../video/vision-ar-customization-7-FenceVerticalOffset.mp4'",
+          "import ARFenceHorizontalOffsetChange from '../../video/vision-ar-customization-8-FenceHorizontalOffset.mp4'",
+          "import ARFenceSectionsCountChange from '../../video/vision-ar-customization-9-FenceArrowsCountChange.mp4'",
+          "import ARRestoreToDefaults from '../../video/vision-ar-customization-10-RestoreToDefault.mp4'",
+          "import AndroidActivityToggle from '../../components/context-dependent/android-activity-toggle';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import PhoneFrame from '../../components/phone-frame';",
+          "import javaCode from '../../snippets/android-tutorial-demos/vision--ar-customization.java';",
+          "import kotlinCode from '../../snippets/android-tutorial-demos/vision--ar-customization.kt';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page",
+        "prereq": "Familiarity with Java / Kotlin.",
+        "level": 1,
+        "language": ["Java", "Kotlin"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/android-vision-custom-detections-tutorial.md",
+      "path": "/help/tutorials/android-vision-custom-detections-tutorial/",
+      "frontMatter": {
+        "title": "Custom detections using Mapbox Vision SDK for Android",
+        "description": "Draw custom detections using device built-in camera.",
+        "thumbnail": "tutorials--vision-custom-detections-image",
+        "level": 2,
+        "topics": ["Mobile apps", "Vision"],
+        "products": ["Vision SDK for Android"],
+        "prereq": "Familiarity with Android Studio and Java / Kotlin.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import AndroidActivityToggle from '../../components/context-dependent/android-activity-toggle';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import javaCode from '../../snippets/android-tutorial-demos/vision--custom-detections.java';",
+          "import kotlinCode from '../../snippets/android-tutorial-demos/vision--custom-detections.kt';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page",
+        "language": ["Java", "Kotlin"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/building-a-store-locator-js.md",
+      "path": "/help/tutorials/building-a-store-locator-js/",
+      "frontMatter": {
+        "title": "Build a store locator using Mapbox.js",
+        "description": "Build a map application with Mapbox.js. This guide walks you through all the code that you need to build a store locator.",
+        "thumbnail": "tutorials--building-a-store-locator-js--thumbnail",
+        "level": 3,
+        "topics": ["Web apps"],
+        "products": ["Mapbox.js"],
+        "language": ["JavaScript"],
+        "prereq": "Familiarity with front-end development concepts. Some advanced JavaScript required.",
+        "legacy": true,
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import { LegacyNote } from '../../components/legacy-note';",
+          "import { sweetgreenLocations } from '../../snippets/sweetgreen-locations';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import Button from '@mapbox/mr-ui/button';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/create-a-custom-style.md",
+      "path": "/help/tutorials/create-a-custom-style/",
+      "frontMatter": {
+        "title": "Create a custom style",
+        "description": "Alter a template style to create a custom map style.",
+        "thumbnail": "tutorials--create-a-custom-style--thumbnail",
+        "level": 1,
+        "topics": ["Map design"],
+        "products": ["Mapbox Studio"],
+        "language": ["No code"],
+        "prependJs": [
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import Browser from '@mapbox/dr-ui/browser';",
+          "import { ColorSwatch } from '../../components/color-swatch';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import StyleComponentBetaNote from '../../components/temporary/style-component-beta-note';",
+          "import Video from '@mapbox/dr-ui/video';",
+          "import ColorPallete from '../../video/tutorials--create-a-custom-style--color-pallete.mp4';",
+          "import OverrideWater from '../../video/tutorials--create-a-custom-style--override-water.mp4';",
+          "import Buildings from '../../video/tutorials--create-a-custom-style--3d-buildings.mp4';",
+          "import DataCondition from '../../video/tutorials--create-a-custom-style--data-condition.mp4';",
+          "import AddAComponent from '../../video/tutorials--create-a-custom-style--add-a-component.mp4';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page",
+        "popularGuide": true
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/choropleth-studio-gl-pt-1.md",
+      "path": "/help/tutorials/choropleth-studio-gl-pt-1/",
+      "frontMatter": {
+        "title": "Make a choropleth map, part 1: create a style",
+        "description": "Upload custom data to Mapbox Studio, add it to a template style, and use filters to style your data.",
+        "thumbnail": "tutorials--choropleth-studio-gl-pt-1--thumbnail",
+        "level": 1,
+        "topics": ["Uploads", "Map design"],
+        "products": ["Mapbox Studio", "Mapbox GL JS"],
+        "language": ["No code"],
+        "prependJs": [
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import StyleComponentBetaNote from '../../components/temporary/style-component-beta-note';",
+          "import Video from '@mapbox/dr-ui/video';",
+          "import NewLayer from '../../video/tutorials--choropleth-studio-gl-pt-1--new-layer.mp4';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/choropleth-studio-gl-pt-2.md",
+      "path": "/help/tutorials/choropleth-studio-gl-pt-2/",
+      "frontMatter": {
+        "title": "Make a choropleth map, part 2: add interactivity",
+        "description": "Publish your style with Mapbox GL JS, create a legend, and add interactive elements.",
+        "thumbnail": "tutorials--choropleth-studio-gl-pt-2--thumbnail",
+        "level": 2,
+        "topics": ["Uploads", "Map design", "Web apps"],
+        "products": ["Mapbox Studio", "Mapbox GL JS"],
+        "language": ["JavaScript"],
+        "prereq": "Familiarity with front-end development concepts.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/create-a-timezone-finder-with-mapbox-tilequery-api.md",
+      "path": "/help/tutorials/create-a-timezone-finder-with-mapbox-tilequery-api/",
+      "frontMatter": {
+        "title": "Create a timezone finder with Mapbox Tilequery API",
+        "description": "Create a timezone finder app with Mapbox Tilequery API.",
+        "thumbnail": "tutorials--create-a-timezone-finder-with-mapbox-tilequery-api--thumbnail",
+        "topics": ["Data", "Web apps"],
+        "products": ["Mapbox Studio", "Tilequery API", "Uploads API"],
+        "level": 2,
+        "language": ["JavaScript"],
+        "prereq": "Familiarity with front-end development concepts including JavaScript and API calls.",
+        "prependJs": [
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/custom-markers-gl-js.md",
+      "path": "/help/tutorials/custom-markers-gl-js/",
+      "frontMatter": {
+        "title": "Add custom markers in Mapbox GL JS",
+        "description": "Add custom HTML markers, style them, and add tooltips with Mapbox GL JS.",
+        "thumbnail": "tutorials--custom-markers-gl-js--thumbnail",
+        "level": 2,
+        "topics": ["Web apps"],
+        "products": ["Mapbox GL JS"],
+        "language": ["JavaScript"],
+        "prereq": "Familiarity with front-end development concepts.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import Button from '@mapbox/mr-ui/button';",
+          "import RelatedPage from '@mapbox/dr-ui/related-page';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/extend-mapbox-boundaries.md",
+      "path": "/help/tutorials/extend-mapbox-boundaries/",
+      "frontMatter": {
+        "title": "Extend Mapbox Boundaries",
+        "description": "Extend the Mapbox Boundaries tileset.",
+        "level": 3,
+        "topics": ["Data"],
+        "products": ["Mapbox Boundaries", "Mapbox Studio", "Uploads API"],
+        "language": ["No code"],
+        "thumbnail": "tutorials--extend-enterprise-boundaries--thumbnail",
+        "prereq": "Familiarity with front-end development, command line tools, and GIS. Access to Mapbox Boundaries.",
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import Video from '@mapbox/dr-ui/video';",
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import SchoolDistrictStyle from '../../video/tutorials--extend-mapbox-boundaries--school-district-style.mp4';",
+          "import RenameShapefileFields from '../../video/tutorials--extend-mapbox-boundaries--rename-shapefile-fields.mp4';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/extending-interactivity.md",
+      "path": "/help/tutorials/extending-interactivity/",
+      "frontMatter": {
+        "title": "Extend with Mapbox.js",
+        "description": "Meet Mapbox.js - the toolset for creating interactions and greater customization of your map and data.",
+        "thumbnail": "tutorials--extending-interactivity--thumbnail",
+        "level": 2,
+        "topics": ["Web apps"],
+        "products": ["Mapbox.js"],
+        "language": ["JavaScript"],
+        "prereq": "Familiarity with front-end development concepts.",
+        "legacy": true,
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import { LegacyNote } from '../../components/legacy-note';",
+          "import { geojsonSample } from '../../snippets/geojson-sample';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/first-steps-android-sdk.md",
+      "path": "/help/tutorials/first-steps-android-sdk/",
+      "frontMatter": {
+        "title": "First steps with the Mapbox Maps SDK for Android",
+        "description": "Walk through installing the Mapbox Maps SDK for Android, getting a map on the screen, and changing the map style.",
+        "thumbnail": "tutorials--first-steps-android-sdk--thumbnail",
+        "level": 1,
+        "topics": ["Mobile apps"],
+        "products": ["Maps SDK for Android"],
+        "language": ["Java"],
+        "prereq": "Completion of the [Mapbox Maps SDK for Android installation process](https://docs.mapbox.com/android/maps/overview/#install-the-maps-sdk) and familiarity with Android Studio and Java.",
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import AndroidLayoutCodeBlock from '@mapbox/dr-ui/android-layout-code-block';",
+          "import AndroidActivityToggle from '../../components/context-dependent/android-activity-toggle';",
+          "import javaCode from '../../snippets/android-tutorial-demos/first-steps-activity--all-java.java';",
+          "import xmlLayoutCode from '../../snippets/android-tutorial-demos/first-steps--all-layout.xml';",
+          "import PhoneFrame from '../../components/phone-frame';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/first-steps-ios-sdk.md",
+      "path": "/help/tutorials/first-steps-ios-sdk/",
+      "frontMatter": {
+        "title": "First steps with the Mapbox Maps SDK for iOS",
+        "description": "Walk through installing the Mapbox Maps SDK for iOS, getting a map on the screen, and placing a pin on it.",
+        "thumbnail": "tutorials--first-steps-ios-sdk--thumbnail",
+        "level": 1,
+        "topics": ["Mobile apps"],
+        "products": ["Maps SDK for iOS"],
+        "language": ["Swift", "Objective-C"],
+        "prereq": "Familiarity with Xcode and either Swift or Objective-C, and completion of the Mapbox Maps SDK for iOS installation guide.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import IosViewControllerToggle from '../../components/context-dependent/ios-view-controller-toggle'",
+          "import swiftCode from '../../snippets/ios-sdk-examples/first-steps-ios-sdk--all-swift.swift';",
+          "import objectivecCode from '../../snippets/ios-sdk-examples/first-steps-ios-sdk--all-objc.m';",
+          "import PhoneFrame from '../../components/phone-frame';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/get-started-mapbox-boundaries-v1.md",
+      "path": "/help/tutorials/get-started-mapbox-boundaries-v1/",
+      "frontMatter": {
+        "title": "Get started with Mapbox Boundaries v1",
+        "description": "Get started with v1 of the Mapbox Boundaries tileset.",
+        "level": 2,
+        "platform": "web",
+        "topics": ["Data"],
+        "products": ["Mapbox Boundaries", "Mapbox GL JS"],
+        "language": ["No code"],
+        "thumbnail": "tutorials--get-started-enterprise-boundaries--thumbnail",
+        "prereq": "Familiarity with front-end development and access to Mapbox Boundaries.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import { LegacyNote } from '../../components/legacy-note';",
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page",
+        "hideFromSearchEngines": true
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/get-started-mapbox-boundaries-v2.md",
+      "path": "/help/tutorials/get-started-mapbox-boundaries-v2/",
+      "frontMatter": {
+        "title": "Get started with Mapbox Boundaries v2",
+        "description": "Get started with v2 of the Mapbox Boundaries tileset.",
+        "category": "Tutorials",
+        "level": 2,
+        "topics": ["Data"],
+        "products": ["Mapbox Boundaries", "Mapbox GL JS"],
+        "language": ["No code"],
+        "thumbnail": "tutorials--get-started-enterprise-boundaries--thumbnail",
+        "prereq": "Familiarity with front-end development and access to Mapbox Boundaries.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import { LegacyNote } from '../../components/legacy-note';",
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page",
+        "hideFromSearchEngines": true
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/get-started-mapbox-boundaries.md",
+      "path": "/help/tutorials/get-started-mapbox-boundaries/",
+      "frontMatter": {
+        "title": "Get started with Mapbox Boundaries",
+        "description": "Get started with v3 of the Mapbox Boundaries tileset.",
+        "category": "Tutorials",
+        "level": 2,
+        "topics": ["Data"],
+        "products": ["Mapbox Boundaries", "Mapbox GL JS"],
+        "language": ["No code"],
+        "thumbnail": "tutorials--get-started-enterprise-boundaries--thumbnail",
+        "prereq": "Familiarity with front-end development and access to Mapbox Boundaries.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/get-started-mts-and-tilesets-cli.md",
+      "path": "/help/tutorials/get-started-mts-and-tilesets-cli/",
+      "frontMatter": {
+        "title": "Get started using Mapbox Tiling Service and the Tilesets CLI",
+        "description": "This feature is in beta. Learn how to use the Tilesets CLI, a tool for accessing Mapbox Tiling Service (MTS), to create new Mapbox tilesets.",
+        "thumbnail": "tutorials--get-started-mts-and-tilesets-cli--thumbnail",
+        "topics": ["Uploads"],
+        "products": ["Mapbox Tiling Service"],
+        "level": 3,
+        "language": ["Command line"],
+        "prereq": "Successful installation of the Tilesets CLI",
+        "prependJs": [
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import Button from '@mapbox/mr-ui/button';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/improve-perceived-performance-with-static.md",
+      "path": "/help/tutorials/improve-perceived-performance-with-static/",
+      "frontMatter": {
+        "title": "Improve perceived performance of Mapbox GL JS using the Static Images API",
+        "description": "Use the Static Images API to create an instant image of your map while Mapbox GL JS loads in the background.",
+        "thumbnail": "tutorial--improve-perceived-performance-with-static--thumbnail",
+        "topics": ["Web apps", "Static maps"],
+        "products": ["Mapbox GL JS", "Static Images API"],
+        "level": 2,
+        "language": ["JavaScript"],
+        "prereq": "Familiarity with front-end development concepts including JavaScript and API calls.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import Video from '@mapbox/dr-ui/video';",
+          "import loadTime from '../../video/dynamic-map-load-time-compressed.mp4'"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/ios-dds-circle-layer.md",
+      "path": "/help/tutorials/ios-dds-circle-layer/",
+      "frontMatter": {
+        "title": "Get started with expressions using the Mapbox Maps SDK for iOS",
+        "description": "Create a map for iOS that styles a circle based on a data attribute.",
+        "thumbnail": "tutorials--ios-dds-circle-layer--thumbnail",
+        "level": 2,
+        "topics": ["Mobile apps"],
+        "products": ["Maps SDK for iOS", "Mapbox Studio"],
+        "language": ["Swift", "Objective-C"],
+        "prereq": "Familiarity with Xcode and either Swift or Objective-C, and completion of the Mapbox Maps SDK for iOS installation guide.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import IosViewControllerToggle from '../../components/context-dependent/ios-view-controller-toggle'",
+          "import swiftCode from '../../snippets/ios-sdk-examples/expressions--all-swift.swift';",
+          "import objectivecCode from '../../snippets/ios-sdk-examples/expressions--all-objc.m';",
+          "import PhoneFrame from '../../components/phone-frame';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/ios-swiftui.md",
+      "path": "/help/tutorials/ios-swiftui/",
+      "frontMatter": {
+        "title": "Create a map view compatible with SwiftUI",
+        "description": "Learn how to use the Mapbox Maps SDK for iOS with SwiftUI to create a map view, add an annotation, and add a fill layer to the map.",
+        "thumbnail": "tutorials--ios-swiftui--thumbnail",
+        "level": 2,
+        "topics": ["Mobile apps"],
+        "products": ["Maps SDK for iOS"],
+        "language": ["Swift"],
+        "prereq": "Familiarity with Xcode 11 and Swift, and completion of the Mapbox Maps SDK for iOS installation guide.",
+        "contentType": "tutorial",
+        "layout": "page",
+        "prependJs": [
+          "import constants from '../../constants';",
+          "import CodeSnippetTitle from '@mapbox/dr-ui/code-snippet-title';",
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import PhoneFrame from '../../components/phone-frame';"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/ios-vision-ar-customization.md",
+      "path": "/help/tutorials/ios-vision-ar-customization/",
+      "frontMatter": {
+        "title": "AR customization using Mapbox Vision SDK for iOS",
+        "description": "Use the Mapbox Vision SDK for iOS to add AR navigation to an application and customize some visual elements.",
+        "topics": ["Mobile apps", "Vision"],
+        "products": ["Vision SDK for iOS"],
+        "thumbnail": "tutorials--ar-customization-thumbnail",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import ARCustomizationTutorial from '../../video/tutorials-ar-customization.mp4'",
+          "import ARLaneColorChange from '../../video/vision-ar-customization-1-lane-color-change.mp4'",
+          "import ARLaneWidthChange from '../../video/vision-ar-customization-2-LaneWidthChange.mp4'",
+          "import ARLaneChevronsChange from '../../video/vision-ar-customization-3-ChevronLength.mp4'",
+          "import AREnableFence from '../../video/vision-ar-customization-4-EnableFence.mp4'",
+          "import ARFenceColorChange from '../../video/vision-ar-customization-5-FenceColorChange.mp4'",
+          "import ARFenceHeightChange from '../../video/vision-ar-customization-6-FenceHeightChange.mp4'",
+          "import ARFenceVerticalOffsetChange from '../../video/vision-ar-customization-7-FenceVerticalOffset.mp4'",
+          "import ARFenceHorizontalOffsetChange from '../../video/vision-ar-customization-8-FenceHorizontalOffset.mp4'",
+          "import ARFenceSectionsCountChange from '../../video/vision-ar-customization-9-FenceArrowsCountChange.mp4'",
+          "import ARRestoreToDefaults from '../../video/vision-ar-customization-10-RestoreToDefault.mp4'",
+          "import IphoneFrame from '../../components/phone-frame'",
+          "import IosViewControllerToggle from '../../components/context-dependent/ios-view-controller-toggle';",
+          "import swiftCode from '../../snippets/ios-sdk-examples/ar-customization.swift';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page",
+        "prereq": "Familiarity with Xcode and Swift, and completion of the Mapbox Vision SDK for iOS [Install and configure guide](https://docs.mapbox.com/ios/vision/overview/install-and-configure/).",
+        "level": 1,
+        "language": ["Swift"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/ios-vision-poi-drawing.md",
+      "path": "/help/tutorials/ios-vision-poi-drawing/",
+      "frontMatter": {
+        "title": "Draw points of interest using the Mapbox Vision SDK for iOS",
+        "description": "Use coordinate transformations to draw a point of interest (POI) on the screen from its geolocation using the Vision SDK for iOS.",
+        "thumbnail": "tutorials--vision-poi-drawing--thumbnail",
+        "contentType": "tutorial",
+        "layout": "page",
+        "level": 3,
+        "prereq": "Familiarity with Xcode and Swift, and completion of the Mapbox Vision SDK for iOS `Install and configure` guide.",
+        "topics": ["Mobile apps", "Vision"],
+        "products": ["Vision SDK for iOS"],
+        "language": ["Swift"],
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import POIDemo from '../../video/tutorials--vision-poi-drawing--demo.mp4'",
+          "import IosViewControllerToggle from '../../components/context-dependent/ios-view-controller-toggle'",
+          "import swiftCode from '../../snippets/ios-sdk-examples/vision--poi-drawing.swift';",
+          "import PhoneFrame from '../../components/phone-frame';",
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import Button from '@mapbox/mr-ui/button';"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/ios-vision-safety-alerts.md",
+      "path": "/help/tutorials/ios-vision-safety-alerts/",
+      "frontMatter": {
+        "title": "Draw safety alerts using the Mapbox Vision SDK for iOS",
+        "description": "Use Vision Safety module to read the situation on the road and create custom safety alerts.",
+        "thumbnail": "tutorials--vision-safety-alerts-drawing--thumbnail",
+        "contentType": "tutorial",
+        "layout": "page",
+        "level": 2,
+        "prereq": "Familiarity with Xcode and Swift, and completion of the Mapbox Vision SDK for iOS `Install and configure` guide.",
+        "topics": ["Mobile apps", "Vision"],
+        "products": ["Vision SDK for iOS"],
+        "language": ["Swift"],
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import Button from '@mapbox/mr-ui/button';",
+          "import SafetyAlertsDemo from '../../video/tutorials--vision-safety-alerts--demo.mp4'",
+          "import IosViewControllerToggle from '../../components/context-dependent/ios-view-controller-toggle'",
+          "import swiftCode from '../../snippets/ios-sdk-examples/vision--safety-alerts-drawing.swift';",
+          "import PhoneFrame from '../../components/phone-frame';"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/make-a-heatmap-with-mapbox-gl-js.md",
+      "path": "/help/tutorials/make-a-heatmap-with-mapbox-gl-js/",
+      "frontMatter": {
+        "title": "Make a heatmap with Mapbox GL JS",
+        "description": "Add custom HTML markers, style them, and add tooltips with Mapbox GL JS.",
+        "thumbnail": "tutorials--make-a-heatmap-with-mapbox-gl-js--thumbnail",
+        "level": 2,
+        "topics": ["Web apps", "Map design", "Data"],
+        "products": ["Mapbox GL JS"],
+        "language": ["JavaScript"],
+        "prereq": "Familiarity with front-end development concepts.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import Button from '@mapbox/mr-ui/button';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/mapbox-gl-js-expressions.md",
+      "path": "/help/tutorials/mapbox-gl-js-expressions/",
+      "frontMatter": {
+        "title": "Get started with Mapbox GL JS expressions",
+        "description": "Learn how to write expressions in Mapbox GL JS.",
+        "thumbnail": "tutorials--mapbox-gl-js-expressions--thumbnail",
+        "level": 2,
+        "prereq": "Familiarity with front-end development concepts.",
+        "topics": ["Web apps", "Map design"],
+        "products": ["Mapbox GL JS", "Mapbox Style Specification"],
+        "language": ["JavaScript"],
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import Button from '@mapbox/mr-ui/button';",
+          "import Video from '@mapbox/dr-ui/video';",
+          "import ZoomExpression from '../../video/tutorials--mapbox-gl-js-expressions--zoom-expression.mp4';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/power-bi-choropleth-map.md",
+      "path": "/help/tutorials/power-bi-choropleth-map/",
+      "frontMatter": {
+        "title": "Make a choropleth map with the Mapbox Visual for Power BI",
+        "description": "Create a choropleth data map with the Mapbox Visual for Microsoft Power BI.",
+        "thumbnail": "tutorials--power-bi-choropleth-map--thumbnail",
+        "topics": ["Third party integration"],
+        "products": ["Mapbox Visual for Microsoft Power BI"],
+        "level": 2,
+        "language": ["No code"],
+        "prereq": "Familiarity with Microsoft Power BI.",
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import Button from '@mapbox/mr-ui/button';",
+          "import AppropriateImage from '../../components/appropriate-image';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/power-bi.md",
+      "path": "/help/tutorials/power-bi/",
+      "frontMatter": {
+        "title": "Create data visualizations with the Mapbox Visual for Power BI",
+        "description": "Use Microsoft Power BI to create a custom data visualization.",
+        "thumbnail": "tutorials--power-bi--thumbnail",
+        "level": 2,
+        "topics": ["Third party integration"],
+        "products": ["Mapbox Visual for Microsoft Power BI"],
+        "language": ["No code"],
+        "prereq": "Familiarity with Microsoft Power BI.",
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import Button from '@mapbox/mr-ui/button';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/static-images-style-params.md",
+      "path": "/help/tutorials/static-images-style-params/",
+      "frontMatter": {
+        "title": "Using style parameters with the Static Images API",
+        "description": "This tutorial demonstrates how you can apply custom styles to a Static Image by including style parameters in the API request.",
+        "thumbnail": "tutorials--static-images-style-params--thumbnail",
+        "topics": ["Map design", "Static maps"],
+        "products": ["Static Images API"],
+        "level": 2,
+        "language": ["JavaScript"],
+        "prereq": "Familiarity with front-end development concepts.",
+        "prependJs": [
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import AppropriateImage from '../../components/appropriate-image';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/studio-heatmap-tutorial.md",
+      "path": "/help/tutorials/studio-heatmap-tutorial/",
+      "frontMatter": {
+        "title": "Make a heatmap with Mapbox Studio",
+        "description": "Learn how to add and configure a heatmap layer using Mapbox Studio.",
+        "thumbnail": "tutorials--studio-heatmap-tutorial--thumbnail",
+        "topics": ["Map design"],
+        "products": ["Mapbox Studio"],
+        "level": 1,
+        "language": ["No code"],
+        "prependJs": [
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import Browser from '@mapbox/dr-ui/browser';",
+          "import Button from '@mapbox/mr-ui/button';",
+          "import { ColorSwatch } from '../../components/color-swatch';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import Video from '@mapbox/dr-ui/video';",
+          "import LayerType from '../../video/tutorials--studio-heatmap-tutorial--layer-type.mp4';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/use-mapbox-js-as-fallback.md",
+      "path": "/help/tutorials/use-mapbox-js-as-fallback/",
+      "frontMatter": {
+        "title": "Use Mapbox.js as a fallback",
+        "description": "Create a web app that uses Mapbox.js and the Static Tiles API when WebGL is not supported.",
+        "thumbnail": "tutorials--use-mapbox-js-as-fallback--thumbnail",
+        "topics": ["Web apps", "Static maps"],
+        "products": ["Mapbox GL JS", "Mapbox.js", "Static Tiles API"],
+        "level": 2,
+        "language": ["JavaScript"],
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import CodeSnippet from '../../components/code-snippet';",
+          "import ChevronousText from '@mapbox/mr-ui/chevronous-text';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import { highlightHtml } from '@mapbox/dr-ui/highlight/html';"
+        ],
+        "prereq": "Familiarity with front-end development concepts.",
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/how-mapbox-works/directions.md",
+      "path": "/help/how-mapbox-works/directions/",
+      "frontMatter": {
+        "title": "Directions",
+        "description": "Learn how Mapbox’s directions services work and how to add directions services to applications across platforms.",
+        "image": "/img/narrative/directions.svg",
+        "topics": ["Navigation"],
+        "products": [
+          "Directions API",
+          "Java SDK",
+          "Map Matching API",
+          "Mapbox GL JS",
+          "Mapbox.js",
+          "Matrix API",
+          "Navigation SDK for Android",
+          "Navigation SDK for iOS",
+          "Optimization API",
+          "Traffic data"
+        ],
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import ChevronousText from '@mapbox/mr-ui/chevronous-text';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';"
+        ],
+        "contentType": "guide",
+        "layout": "page",
+        "order": 5
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/mapbox-gl-js-performance.md",
+      "path": "/help/troubleshooting/mapbox-gl-js-performance/",
+      "frontMatter": {
+        "title": "Improve the performance of Mapbox GL JS maps",
+        "description": "Learn how to improve the performance of your Mapbox GL JS maps.",
+        "topics": ["Web apps", "Map design", "Uploads"],
+        "products": [
+          "Mapbox GL JS",
+          "Mapbox Studio",
+          "Static Images API",
+          "Uploads API",
+          "Vector Tiles API"
+        ],
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import Icon from '@mapbox/mr-ui/icon';"
+        ],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/streets-v8-migration-guide.md",
+      "path": "/help/troubleshooting/streets-v8-migration-guide/",
+      "frontMatter": {
+        "title": "Migrate from Mapbox Streets v7 to v8",
+        "description": "Tips for upgrading to the latest Mapbox base map tileset.",
+        "topics": ["Data", "Map design"],
+        "products": [
+          "Mapbox Streets tileset",
+          "Mapbox Studio",
+          "Mapbox Style Specification"
+        ],
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import GlWrapper from '@mapbox/dr-ui/gl-wrapper';",
+          "import SymbolrankScalerank from '../../components/diagrams/symbolrank-scalerank';",
+          "import FilterrankLocalrank from '../../components/diagrams/filterrank-localrank';"
+        ],
+        "contentType": "troubleshooting",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/troubleshooting/uploads.md",
+      "path": "/help/troubleshooting/uploads/",
+      "frontMatter": {
+        "title": "Upload data to Mapbox",
+        "description": "Learn how to prepare data for upload, interpret error messages, and troubleshoot failed uploads.",
+        "topics": ["Uploads"],
+        "products": [
+          "Datasets API",
+          "Mapbox Studio",
+          "Mapbox Tiling Service",
+          "Tilequery API",
+          "Uploads API"
+        ],
+        "prependJs": ["import Note from '@mapbox/dr-ui/note';"],
+        "contentType": "troubleshooting",
+        "layout": "page",
+        "popularGuide": true
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/analysis-with-turf.md",
+      "path": "/help/tutorials/analysis-with-turf/",
+      "frontMatter": {
+        "title": "Analyze data with Turf.js and Mapbox GL JS",
+        "description": "Using Turf.js, add spatial analysis to our map to solve problems. This guide walks through an example of Turf.js and Mapbox GL JS in a real-world context.",
+        "thumbnail": "tutorials--analysis-with-turf--thumbnail",
+        "level": 2,
+        "topics": ["Web apps", "Analysis"],
+        "products": ["Mapbox GL JS"],
+        "language": ["JavaScript"],
+        "prereq": "Familiarity with front-end development concepts.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/android-global-china-mix.md",
+      "path": "/help/tutorials/android-global-china-mix/",
+      "frontMatter": {
+        "title": "Build one set of code for China and global map styles",
+        "description": "Determine whether the device is in China and then load a corresponding map style.",
+        "thumbnail": "tutorials--android-china-global-mix--thumbnail",
+        "level": 2,
+        "topics": ["Mobile apps"],
+        "language": ["Java"],
+        "products": ["Maps SDK for Android", "Plugins for Android"],
+        "prereq": "Familiarity with Android Studio and Java and completion of the [Tracking device location for Android](/help/tutorials/android-location-listening/) tutorial.",
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import AndroidActivityToggle from '../../components/context-dependent/android-activity-toggle';",
+          "import javaCode from '../../snippets/android-tutorial-demos/global-china-mix-activity--all-java.java';",
+          "import PhoneFrame from '../../components/phone-frame';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/android-navigation-sdk.md",
+      "path": "/help/tutorials/android-navigation-sdk/",
+      "frontMatter": {
+        "title": "Build a navigation app for Android",
+        "description": "Integrate navigation into any Android application.",
+        "thumbnail": "tutorials--android-navigation-sdk--thumbnail",
+        "level": 3,
+        "topics": ["Mobile apps", "Navigation"],
+        "language": ["Java"],
+        "products": ["Navigation SDK for Android"],
+        "prereq": "Familiarity with Android Studio and Java.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import CodeSnippetTitle from '@mapbox/dr-ui/code-snippet-title';",
+          "import AndroidLayoutCodeBlock from '@mapbox/dr-ui/android-layout-code-block';",
+          "import AndroidActivityToggle from '../../components/context-dependent/android-activity-toggle';",
+          "import javaCode from '../../snippets/android-tutorial-demos/navigation-activity--all-java.java';",
+          "import xmlLayoutCode from '../../snippets/android-tutorial-demos/navigation--all-layout.xml';",
+          "import xmlColorsCode from '../../snippets/android-tutorial-demos/navigation--all-colors.xml';",
+          "import xmlStylesCode from '../../snippets/android-tutorial-demos/navigation--all-styles.xml';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import PhoneFrame from '../../components/phone-frame';",
+          "import finalVideo from '../../video/tutorials--android-navigation-sdk--final.mp4';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/android-vision-sdk-usb-camera.md",
+      "path": "/help/tutorials/android-vision-sdk-usb-camera/",
+      "frontMatter": {
+        "title": "Use the Mapbox Vision SDK for Android with an external USB camera",
+        "description": "Implement a custom VideoSource that feeds video stream from the USB camera to the Mapbox Vision SDK for Android.",
+        "thumbnail": "tutorials--vision-usb-camera",
+        "level": 3,
+        "topics": ["Mobile apps", "Vision"],
+        "products": ["Vision SDK for Android"],
+        "language": ["Kotlin", "Java"],
+        "prereq": "Familiarity with the Vision SDK, Android Studio, and Kotlin or Java.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import CodeSnippetTitle from '@mapbox/dr-ui/code-snippet-title';",
+          "import AndroidActivityToggle from '../../components/context-dependent/android-activity-toggle';",
+          "import javaCode from '../../snippets/android-tutorial-demos/vision-usb-camera--all.java';",
+          "import kotlinCode from '../../snippets/android-tutorial-demos/vision-usb-camera--all.kt';",
+          "import AppropriateImage from '../../components/appropriate-image';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/data-joins-with-mapbox-boundaries.md",
+      "path": "/help/tutorials/data-joins-with-mapbox-boundaries/",
+      "frontMatter": {
+        "title": "Data-joins with Mapbox Boundaries",
+        "description": "Join data with v2 of the Mapbox Boundaries tileset.",
+        "level": 3,
+        "topics": ["Data"],
+        "products": ["Mapbox Boundaries", "Mapbox GL JS"],
+        "language": ["JavaScript"],
+        "thumbnail": "tutorials--data-joins-with-enterprise-boundaries--thumbnail",
+        "prereq": "Familiarity with front-end development and access to Mapbox Boundaries.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import Video from '@mapbox/dr-ui/video';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import ChoroplethDemo from '../../video/tutorials--data-joins-with-mapbox-boundaries--choropleth-demo.mp4';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/find-elevations-with-tilequery-api.md",
+      "path": "/help/tutorials/find-elevations-with-tilequery-api/",
+      "frontMatter": {
+        "title": "Find elevations with the Tilequery API",
+        "description": "Use the Mapbox Tilequery API and the Mapbox Terrain tileset to create an app that returns the elevation at a specified coordinate.",
+        "thumbnail": "tutorials--find-elevations-with-tilequery-api--thumbnail",
+        "topics": ["Data", "Web apps"],
+        "products": ["Tilequery API", "Mapbox GL JS", "Mapbox Terrain tileset"],
+        "level": 2,
+        "language": ["JavaScript"],
+        "prereq": "Familiarity with front-end development concepts.",
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import * as constants from '../../constants';",
+          "import AppropriateImage from '../../components/appropriate-image';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/get-started-isochrone-api.md",
+      "path": "/help/tutorials/get-started-isochrone-api/",
+      "frontMatter": {
+        "title": "Get started with the Isochrone API",
+        "description": "Create a web app using the Mapbox Isochrone API that allows users to visualize how far they could walk, bike, or drive within a given amount of time.",
+        "thumbnail": "tutorials--get-started-isochrone-api--thumbnail",
+        "topics": ["Web apps", "Navigation"],
+        "products": ["Isochrone API", "Mapbox GL JS"],
+        "level": 2,
+        "language": ["JavaScript"],
+        "prereq": "Familiarity with front-end development concepts.",
+        "prependJs": [
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import * as constants from '../../constants';",
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import Note from '@mapbox/dr-ui/note';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/geofencing-with-isochrones-and-tilesets.md",
+      "path": "/help/tutorials/geofencing-with-isochrones-and-tilesets/",
+      "frontMatter": {
+        "title": "Using geofences for location-based notifications and events",
+        "description": "Create isochrones with the Mapbox Isochrone and Mapbox Tiling Service, and perform geofencing with the Mapbox Tilequery API.",
+        "thumbnail": "tutorials--geofence-isochrones--header",
+        "topics": ["Web apps", "Navigation"],
+        "products": ["Isochrone API", "Mapbox Tiling Service", "Tilequery API"],
+        "level": 3,
+        "language": ["JavaScript"],
+        "prereq": "Familiarity with front-end development concepts including JavaScript and API calls.",
+        "prependJs": [
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import Button from '@mapbox/mr-ui/button';",
+          "import Icon from '@mapbox/mr-ui/icon';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/getting-started-directions-api.md",
+      "path": "/help/tutorials/getting-started-directions-api/",
+      "frontMatter": {
+        "title": "Getting started with the Mapbox Directions API",
+        "description": "Add routing capabilities to your application with the Mapbox Directions API.",
+        "thumbnail": "tutorials--getting-started-directions-api--thumbnail",
+        "level": 1,
+        "language": ["JavaScript"],
+        "topics": ["Navigation"],
+        "products": ["Directions API", "Mapbox GL JS"],
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/ios-navigation-sdk.md",
+      "path": "/help/tutorials/ios-navigation-sdk/",
+      "frontMatter": {
+        "title": "Build a navigation app for iOS",
+        "description": "Integrate navigation into any iOS application.",
+        "thumbnail": "tutorials--ios-navigation-sdk--thumbnail",
+        "level": 3,
+        "topics": ["Mobile apps", "Navigation"],
+        "products": ["Navigation SDK for iOS"],
+        "language": ["Swift"],
+        "prereq": "Familiarity with Xcode, Swift, and CocoaPods or Carthage.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import IosViewControllerToggle from '../../components/context-dependent/ios-view-controller-toggle'",
+          "import swiftCode from '../../snippets/ios-sdk-examples/navigation--all-swift.swift';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/local-search-geocoding-api.md",
+      "path": "/help/tutorials/local-search-geocoding-api/",
+      "frontMatter": {
+        "title": "Local search with the Geocoding API",
+        "description": "This tutorial guides you through the process of creating a local search app using optional parameters from the Mapbox Geocoding API.",
+        "thumbnail": "tutorials--local-search-geocoding-api--thumbnail",
+        "level": 2,
+        "language": ["JavaScript"],
+        "prereq": "Familiarity with front-end development concepts.",
+        "topics": ["Web apps", "Geocoding"],
+        "products": ["Geocoding API", "Mapbox GL JS"],
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/markers-js.md",
+      "path": "/help/tutorials/markers-js/",
+      "frontMatter": {
+        "title": "Work with markers in Mapbox.js",
+        "description": "Add custom, interactive markers to your map with Mapbox.js.",
+        "thumbnail": "tutorials--markers-js--thumbnail",
+        "level": 2,
+        "topics": ["Web apps"],
+        "products": ["Mapbox.js"],
+        "legacy": true,
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import { LegacyNote } from '../../components/legacy-note';",
+          "import { DemoStatic } from '../../components/demo-static';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page",
+        "language": ["JavaScript"]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/show-changes-over-time.md",
+      "path": "/help/tutorials/show-changes-over-time/",
+      "frontMatter": {
+        "title": "Show changes over time with Mapbox GL JS",
+        "description": "Build a map application with Mapbox GL JS to visualize changes in data over time.",
+        "thumbnail": "tutorials--show-data-change-over-time--thumbnail",
+        "level": 3,
+        "topics": ["Web apps"],
+        "products": ["Mapbox GL JS"],
+        "language": ["JavaScript"],
+        "prereq": "Familiarity with front-end development concepts. Some advanced JavaScript required.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import Button from '@mapbox/mr-ui/button';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/optimization-api.md",
+      "path": "/help/tutorials/optimization-api/",
+      "frontMatter": {
+        "title": "Generate an optimized route with the Optimization API",
+        "description": "Use the Mapbox Optimization API to generate a duration-optimized route between several points.",
+        "thumbnail": "tutorials--optimization-api--thumbnail",
+        "level": 3,
+        "platform": "web",
+        "topics": ["Web apps", "Navigation"],
+        "products": ["Optimization API", "Mapbox GL JS"],
+        "language": ["JavaScript"],
+        "prereq": "Advanced JavaScript required.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/use-mapbox-gl-js-with-react.md",
+      "path": "/help/tutorials/use-mapbox-gl-js-with-react/",
+      "frontMatter": {
+        "title": "Use Mapbox GL JS in a React app",
+        "description": "Create a React web app that uses Mapbox GL JS to render a map.",
+        "thumbnail": "tutorials--use-mapbox-gl-js-with-react--thumbnail",
+        "topics": ["Web apps"],
+        "products": ["Mapbox GL JS"],
+        "level": 2,
+        "language": ["JavaScript"],
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import { TutorialMapboxGlJsAndReact } from '../../components/tutorials/use-mapbox-gl-js-with-react';",
+          "import GLWrapper from '@mapbox/dr-ui/gl-wrapper';",
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import CodeSnippet from '../../components/code-snippet';",
+          "import { highlightJson } from '@mapbox/dr-ui/highlight/json';",
+          "import { highlightHtml } from '@mapbox/dr-ui/highlight/html';",
+          "import { highlightJsx } from '@mapbox/dr-ui/highlight/jsx';",
+          "import { highlightCss } from '@mapbox/dr-ui/highlight/css';",
+          "import Icon from '@mapbox/mr-ui/icon';"
+        ],
+        "prereq": "Familiarity with React and front-end development concepts.",
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/processing-satellite-imagery.md",
+      "path": "/help/tutorials/processing-satellite-imagery/",
+      "frontMatter": {
+        "title": "Processing satellite imagery",
+        "description": "Learn how to find satellite raster data, process it using the Rasterio command-line tool, and publish it on a webpage.",
+        "thumbnail": "tutorials--processing-satellite-imagery--thumbnail",
+        "level": 3,
+        "topics": ["Analysis", "Satellite"],
+        "products": ["Mapbox GL JS", "Mapbox Studio"],
+        "language": ["JavaScript"],
+        "prereq": "Familiarity with front-end development concepts. Some advanced JavaScript required.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import AppropriateImage from '../../components/appropriate-image';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/create-interactive-hover-effects-with-mapbox-gl-js.md",
+      "path": "/help/tutorials/create-interactive-hover-effects-with-mapbox-gl-js/",
+      "frontMatter": {
+        "title": "Create interactive hover effects with Mapbox GL JS",
+        "description": "Use feature state and expressions with Mapbox GL JS to dynamically style individual features in a map that shows earthquakes from the past week.",
+        "thumbnail": "tutorials--create-interactive-hover-effects-with-mapbox-gl-js--thumbnail",
+        "topics": ["Web apps"],
+        "products": ["Mapbox GL JS"],
+        "level": 2,
+        "language": ["JavaScript"],
+        "prereq": "Familiarity with front-end development concepts.",
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import * as constants from '../../constants';",
+          "import AppropriateImage from '../../components/appropriate-image';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/get-started-map-matching-api.md",
+      "path": "/help/tutorials/get-started-map-matching-api/",
+      "frontMatter": {
+        "title": "Get started with the Map Matching API",
+        "description": "Create a web app that uses the Mapbox Map Matching API to allow users to specify their own driving route.",
+        "thumbnail": "tutorials--get-started-map-matching-api--thumbnail",
+        "topics": ["Navigation", "Web apps"],
+        "products": ["Map Matching API", "Mapbox GL JS"],
+        "level": 2,
+        "language": ["JavaScript"],
+        "prereq": "Familiarity with front-end development concepts.",
+        "prependJs": [
+          "import Note from '@mapbox/dr-ui/note';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import * as constants from '../../constants';",
+          "import AppropriateImage from '../../components/appropriate-image';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/route-avoidance-with-turf-mapbox-directions.md",
+      "path": "/help/tutorials/route-avoidance-with-turf-mapbox-directions/",
+      "frontMatter": {
+        "title": "Route avoidance with the Directions API and Turf.js",
+        "description": "Learn how to build route avoidance into your navigation app using the Mapbox Directions API, Turf.js, and Mapbox GL JS.",
+        "thumbnail": "tutorials--analysis-with-turf--thumbnail",
+        "level": 3,
+        "topics": ["Web apps", "Analysis"],
+        "products": ["Directions API", "Mapbox GL JS"],
+        "language": ["JavaScript"],
+        "prereq": "Familiarity with front-end development concepts.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/tilequery-healthy-food-finder.md",
+      "path": "/help/tutorials/tilequery-healthy-food-finder/",
+      "frontMatter": {
+        "title": "Make a healthy food finder with the Tilequery API",
+        "description": "Create a web app that uses the Mapbox Tilequery API in concert with the Mapbox Geocoding API to show all stores that sell food that are located within one mile of a query point.",
+        "thumbnail": "tutorials--tilequery-healthy-food-finder--thumbnail",
+        "topics": ["Data", "Geocoding", "Web apps"],
+        "products": [
+          "Tilequery API",
+          "Mapbox GL JS",
+          "Mapbox Studio",
+          "Geocoding API"
+        ],
+        "level": 2,
+        "language": ["JavaScript"],
+        "prereq": "Familiarity with front-end development concepts.",
+        "prependJs": [
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import Button from '@mapbox/mr-ui/button';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import * as constants from '../../constants';",
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import { ColorSwatch } from '../../components/color-swatch';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/android-vision-poi-drawing.md",
+      "path": "/help/tutorials/android-vision-poi-drawing/",
+      "frontMatter": {
+        "title": "Draw points of interest using the Mapbox Vision SDK for Android",
+        "description": "Use coordinate transformations to draw a point of interest (POI) on the screen from its geolocation using the Vision SDK for Android.",
+        "thumbnail": "tutorials--vision-poi-drawing--thumbnail",
+        "contentType": "tutorial",
+        "layout": "page",
+        "level": 3,
+        "prereq": "Familiarity with Android Studio and Kotlin or Java. Completion of the Mapbox Vision SDK for Android `Install and configure` guide.",
+        "topics": ["Mobile apps", "Vision"],
+        "products": ["Vision SDK for Android"],
+        "language": ["Java", "Kotlin"],
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import AndroidActivityToggle from '../../components/context-dependent/android-activity-toggle';",
+          "import javaCode from '../../snippets/android-tutorial-demos/vision--draw-poi.java';",
+          "import PhoneFrame from '../../components/phone-frame';",
+          "import kotlinCode from '../../snippets/android-tutorial-demos/vision--draw-poi.kt';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import POIDemo from '../../video/tutorials--vision-poi-drawing--demo.mp4'",
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import Button from '@mapbox/mr-ui/button';"
+        ]
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/building-a-store-locator.md",
+      "path": "/help/tutorials/building-a-store-locator/",
+      "frontMatter": {
+        "title": "Build a store locator using Mapbox GL JS",
+        "description": "Build a map application with Mapbox GL JS. This guide walks you through all the code that you need to build a store locator.",
+        "thumbnail": "tutorials--building-a-store-locator--thumbnail",
+        "level": 3,
+        "topics": ["Web apps"],
+        "products": ["Mapbox GL JS"],
+        "language": ["JavaScript"],
+        "prereq": "Familiarity with front-end development concepts. Some advanced JavaScript required.",
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import { sweetgreenLocations } from '../../snippets/sweetgreen-locations';",
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import { DemoLink } from '../../components/demo-link';",
+          "import Button from '@mapbox/mr-ui/button';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/tutorials/geocode-and-sort-stores.md",
+      "path": "/help/tutorials/geocode-and-sort-stores/",
+      "frontMatter": {
+        "title": "Sort stores by distance",
+        "description": "This guide walks you through all the code that you need to build a store locator which lets you search for the nearest location.",
+        "thumbnail": "tutorials--geocode-and-sort--thumbnail",
+        "level": 3,
+        "language": ["JavaScript"],
+        "prereq": "Familiarity with front-end development concepts. Some advanced JavaScript required.",
+        "topics": ["Web apps", "Geocoding"],
+        "products": ["Geocoding API", "Mapbox GL JS"],
+        "prependJs": [
+          "import Icon from '@mapbox/mr-ui/icon';",
+          "import DemoIframe from '@mapbox/dr-ui/demo-iframe';",
+          "import * as constants from '../../constants';",
+          "import UserAccessToken from '../../components/user-access-token';"
+        ],
+        "contentType": "tutorial",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/help/src/pages/how-mapbox-works/attribution.md",
+      "path": "/help/how-mapbox-works/attribution/",
+      "frontMatter": {
+        "title": "Attribution",
+        "description": "Learn when, why, and how you are required to add attribution to applications built with Mapbox.",
+        "image": "/img/narrative/attribution.svg",
+        "topics": ["Attribution"],
+        "products": [
+          "Directions API",
+          "Isochrone API",
+          "Mapbox GL JS",
+          "Mapbox Satellite tileset",
+          "Mapbox Streets tileset",
+          "Mapbox Studio",
+          "Mapbox.js",
+          "Maps SDK for Android",
+          "Maps SDK for iOS",
+          "Maps SDK for Unity",
+          "Static Images API"
+        ],
+        "prependJs": [
+          "import * as constants from '../../constants';",
+          "import AppropriateImage from '../../components/appropriate-image';",
+          "import Note from '@mapbox/dr-ui/note';"
+        ],
+        "contentType": "guide",
+        "layout": "page",
+        "order": 3
+      }
+    },
+    {
+      "filePath": "/help/node_modules/@mapbox/batfish/dist/webpack/default-not-found.js",
+      "path": "/help/404/",
+      "is404": true,
+      "frontMatter": {}
+    }
+  ]
+}

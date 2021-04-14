@@ -99,22 +99,6 @@ describe('search', () => {
     });
   });
 
-  describe(testCases.withLayout.description, () => {
-    let testCase;
-    let wrapper;
-    let tree;
-
-    beforeEach(() => {
-      testCase = testCases.withLayout;
-      wrapper = renderer.create(testCase.element);
-      tree = wrapper.toJSON();
-    });
-
-    test('renders as expected', () => {
-      expect(tree).toMatchSnapshot();
-    });
-  });
-
   describe(testCases.withConnector.description, () => {
     let testCase;
     let wrapper;
@@ -135,6 +119,22 @@ describe('search', () => {
     test('uses provided connector', () => {
       expect(testCase.props.connector).toBeInstanceOf(SiteSearchAPIConnector);
       expect(testCase.props.connector.engineKey).toBe('123');
+    });
+  });
+
+  describe(testCases.resultsOnly.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.resultsOnly;
+      wrapper = renderer.create(testCase.element);
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
     });
   });
 });

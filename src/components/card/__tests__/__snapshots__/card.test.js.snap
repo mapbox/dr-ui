@@ -12,7 +12,7 @@ exports[`card Card with image renders as expected 1`] = `
       className="relative h120 mb12"
       style={
         Object {
-          "backgroundImage": "url('https://i.giphy.com/media/A9lgUYVqLeRb2/giphy.gif')",
+          "backgroundImage": "url('../files/simple-map.png')",
           "backgroundPosition": "center",
           "backgroundSize": "100% auto",
         }
@@ -27,7 +27,7 @@ exports[`card Card with image renders as expected 1`] = `
         className="inline-block mr18 txt-s txt-bold"
       >
         <div
-          className="flex-parent flex-parent--center-cross"
+          className="dr-ui--level-indicator flex-parent flex-parent--center-cross"
         >
           <div
             className="inline-block w6 bg-orange align-middle mr3"
@@ -48,7 +48,7 @@ exports[`card Card with image renders as expected 1`] = `
             }
           />
           <div
-            className="inline-block w6 bg-gray-light align-middle mr3"
+            className="inline-block w6 bg-orange-light align-middle mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -57,9 +57,9 @@ exports[`card Card with image renders as expected 1`] = `
             }
           />
           <div
-            className="inline-block color-orange ml3 txt-capitalize"
+            className="inline-block color-gray ml3"
           >
-            intermediate
+            Intermediate
           </div>
         </div>
       </div>
@@ -114,7 +114,7 @@ exports[`card Card with no image renders as expected 1`] = `
         className="inline-block mr18 txt-s txt-bold"
       >
         <div
-          className="flex-parent flex-parent--center-cross"
+          className="dr-ui--level-indicator flex-parent flex-parent--center-cross"
         >
           <div
             className="inline-block w6 bg-orange align-middle mr3"
@@ -135,7 +135,7 @@ exports[`card Card with no image renders as expected 1`] = `
             }
           />
           <div
-            className="inline-block w6 bg-gray-light align-middle mr3"
+            className="inline-block w6 bg-orange-light align-middle mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -144,9 +144,9 @@ exports[`card Card with no image renders as expected 1`] = `
             }
           />
           <div
-            className="inline-block color-orange ml3 txt-capitalize"
+            className="inline-block color-gray ml3"
           >
-            intermediate
+            Intermediate
           </div>
         </div>
       </div>
@@ -182,6 +182,101 @@ exports[`card Card with no image renders as expected 1`] = `
       className="color-gray color-gray-on-hover"
     >
       This card is still cool despite not having a thumbnail.
+    </div>
+  </div>
+</a>
+`;
+
+exports[`card Card without description renders as expected 1`] = `
+<a
+  className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+  href="url"
+>
+  <div
+    className="relative h120 mb6"
+  >
+    <div
+      className="relative h120 mb12"
+      style={
+        Object {
+          "backgroundImage": "url('../files/simple-map.png')",
+          "backgroundPosition": "center",
+          "backgroundSize": "100% auto",
+        }
+      }
+    />
+  </div>
+  <div>
+    <div
+      className="mb6"
+    >
+      <div
+        className="inline-block mr18 txt-s txt-bold"
+      >
+        <div
+          className="dr-ui--level-indicator flex-parent flex-parent--center-cross"
+        >
+          <div
+            className="inline-block w6 bg-orange align-middle mr3"
+            style={
+              Object {
+                "borderRadius": "1px",
+                "height": "8px",
+              }
+            }
+          />
+          <div
+            className="inline-block w6 bg-orange align-middle mr3"
+            style={
+              Object {
+                "borderRadius": "1px",
+                "height": "8px",
+              }
+            }
+          />
+          <div
+            className="inline-block w6 bg-orange-light align-middle mr3"
+            style={
+              Object {
+                "borderRadius": "1px",
+                "height": "8px",
+              }
+            }
+          />
+          <div
+            className="inline-block color-gray ml3"
+          >
+            Intermediate
+          </div>
+        </div>
+      </div>
+      <div
+        className="inline-block color-gray txt-s txt-bold"
+      >
+        <svg
+          className="events-none icon inline-block align-t"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 18,
+              "width": 18,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-code"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+         
+        JavaScript
+      </div>
+    </div>
+    <div
+      className="mb6"
+    >
+      My cool card without a description
     </div>
   </div>
 </a>

@@ -25,8 +25,8 @@ export default function forwardEvent(event, webhook, callback) {
   const xhr = new XMLHttpRequest();
   if (url) {
     xhr.open('POST', url);
-    xhr.setRequestHeader('Accept', 'application/jsn');
-    xhr.setRequestHeader('Content-Type', 'application/jon');
+    xhr.setRequestHeader('Accept', 'application/json');
+    xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.onerror = handleError;
     xhr.onload = handleLoad;
     xhr.send(JSON.stringify(event));

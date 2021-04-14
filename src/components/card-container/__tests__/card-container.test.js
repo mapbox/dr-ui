@@ -33,4 +33,20 @@ describe('card-container', () => {
       expect(tree).toMatchSnapshot();
     });
   });
+
+  describe(testCases.cols.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.cols;
+      wrapper = renderer.create(testCase.element);
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });

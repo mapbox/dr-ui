@@ -1,3 +1,15 @@
+/* wider limiter for PageLayout */
+@media screen and (min-width: 640px) {
+  .limiter--wide {
+    max-width: 1800px !important;
+  }
+}
+@media screen and (min-width: 800px) {
+  .limiter--wide {
+    width: 91.666666666% !important; /* override limiter */
+  }
+}
+
 #docs-content .prose h1,
 #docs-content.prose h1 {
   margin-top: 6px;
@@ -5,26 +17,31 @@
   font-size: 36px;
 }
 
-#docs-content .prose h2,
-#docs-content.prose h2 {
+#docs-content .prose h2:not(.unprose),
+#docs-content.prose h2:not(.unprose) {
   font-weight: normal !important;
   font-size: 30px;
   border-top: 1px solid !important;
   border-color: #d6dee8 !important;
-  padding-top: 60px;
+  padding-top: 30px;
   margin: 36px 0px 18px;
 }
 
-#docs-content .prose h3,
-#docs-content.prose h3 {
+#docs-content .prose h3:not(.unprose),
+#docs-content.prose h3:not(.unprose) {
   font-weight: normal;
   font-size: 24px;
-  padding-top: 40px;
 }
 
 /* make links darker in Note to improve color contrast */
 .dr-ui--note a {
   color: #3151df !important;
+}
+
+/* set code links to slightly darker blue */
+/* this rule does not apply to elements with the "anchor" class (which are headings) */
+.prose :not(.anchor) > a code {
+  color: #2b50f0;
 }
 
 /* set max-height for code examples */
@@ -63,4 +80,45 @@
     overflow: auto !important;
     -webkit-overflow-scrolling: touch;
   }
+
+  .sticky-mm {
+    position: sticky;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sticky-mxl {
+    position: sticky;
+  }
+
+  .scroll-auto-mxl {
+    overflow: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* move aside to right on larger screens */
+  .dr-ui--page-layout-aside {
+    order: 2;
+  }
+
+  /* lessen scale of Aside's OnThisPage links on larger screens */
+  .dr-ui--page-layout-aside .dr-ui--on-this-page li {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* on smaller screens always hide h3s in Aside's OnThisPage */
+  .dr-ui--page-layout-aside .dr-ui--on-this-page li ul {
+    display: none !important;
+  }
+}
+
+.txt-spacing0 {
+  letter-spacing: 0.05em;
+}
+
+.w70 {
+  width: 70px;
 }

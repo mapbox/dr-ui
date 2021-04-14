@@ -1,5 +1,165 @@
 # Changelog
 
+## 3.3.1
+
+- The `edit.css` prop is optional when displaying `Edit` in `CodeSnippet`. [#421](https://github.com/mapbox/dr-ui/pull/421)
+
+## 3.3.0
+
+- When `maxHeight` is set, move `Edit` buttons in `CodeSnippet` above the code. [#420](https://github.com/mapbox/dr-ui/pull/420)
+
+## 3.2.0
+
+- Add `pricing` theme to `Note`. [#416](https://github.com/mapbox/dr-ui/pull/416)
+
+## 3.1.0
+
+- Update prismjs, rehype-prism. [#411](https://github.com/mapbox/dr-ui/pull/411)
+- 🚨 Deprecates `HelpPage`, `NavigationDropdown`, `SectionedNavigation`, `TopbarSticker`, and `Topbar` components. [#407](https://github.com/mapbox/dr-ui/pull/407)
+- Make `css` optional in `Edit` and `CodeSnippet` components. [#293](https://github.com/mapbox/dr-ui/pull/293)
+- Make `filename` required for `CodeSnippetTitle`. [#413](https://github.com/mapbox/dr-ui/pull/413)
+
+## 3.0.1
+
+- Fix docs-prose.css to not apply blue color to code elements that are descendants of elements with `anchor` class (headings). [#409](https://github.com/mapbox/dr-ui/pull/409)
+
+## 3.0.0
+
+This release drops support for Internet Explorer and makes small performance and accessibility improvements. [#393](https://github.com/mapbox/dr-ui/issues/393)
+
+- 🚨 Remove support for IE 11.
+- 🚨 Rename `GLWrapper` as `MapWrapper`.
+  - You must define the `height` of the map. This will set the height of the loader to prevent a content layout shift after the map loads.
+- `DemoIframe` has a required `title` prop to provide a description of the iframe's content.
+- 🚨The `vimeoThumbnail` prop in `RelatedPage` no longer accepts a string. It must be an `AppropriateImage` instance. Example: `vimeoThumbnail='./img/map-image.jpg'` becomes `vimeoThumbnail={<AppropriateImage alt='' imageId='map-image' />}`
+- Add `position` prop to `Feedback` component to identify place on page.
+- Improve color contrast on syntax highlighting.
+
+## 2.3.0
+
+- Update `GlWrapper` component to check for Internet Explorer and provide reason for when the issue is not Internet Explorer or WebGL support. [#387](https://github.com/mapbox/dr-ui/pull/387)
+
+## 2.2.0
+
+- Remove `mbxMetadata` when the component unmounts in `AnalyticsShell`. [#383](https://github.com/mapbox/dr-ui/pull/383).
+
+## 2.1.1
+
+- Fix `pageSorter` function in filter Batfish helper to sort "まず始めに" (Getting started) to top of the list.
+
+## 2.1.0
+
+- Update the filter Batfish helper to sort "まず始めに" (Getting started) to start of the topic list. [#381](https://github.com/mapbox/dr-ui/pull/381).
+
+## 2.0.0
+
+- Add `Breadcrumb` component. This component is included as a feature in `PageLayout`. [#331](https://github.com/mapbox/dr-ui/pull/331).
+- Add `OnThisPage` component. This component displays headings on the page and performs scroll spy to indicate where you are on the page.
+  - 🚨This update removes the need for the `@mapbox/dr-ui/plugins/create-sections` plugin and it is now deprecated. You can safely remove it from your `batfish.config.js`.
+  - 🚨All h2 and h3 elements that will appear as links in the `OnThisPage` component must have the class `anchor`. The `add-links-to-headings` plugin will automatically add this class to markdown headings, but if you add HTML headings to the page, then you must add the `anchor` class to each h2 and h3 element to make sure the scroll spy can detect these headings.
+- 🚨Update `PageLayout` component.
+  - Add aside feature which includes the `OnThisPage` and `Feedback` components. On larger devices, the aside is stuck to the right-side of the screen. On smaller devices, `OnThisPage` moves inline below the page's title and `Feedback` will appear at the bottom of the page. The aside feature does not stick on IE 11 and remains static, but still performs the core functionality of providing anchor links.
+  - `OnThisPage` will appear on all pages with `layout: page` by default, but nowhere else. If a boolean `onThisPage` frontmatter property is supplied, this can be overridden for any page.
+  - Remove `TopbarSticker` from `PageLayout`. The main navigation now uses the `NavigationAccordion` on the sidebar to display main pages and subpages.
+  - 🚨Redesigned `NavigationAccordion` to work as site navigation menu. The component will no longer track headings. We deprecated several props and introduced new ones, please consult the [NavigationAccordion documentation](https://mapbox.github.io/dr-ui/components/#navigationaccordion).
+  - Add option to add `OverviewHeader` component to the page by passing the component's properties in the frontMatter. When `overviewHeader` is defined in the frontMatter, then the title (h1) will not show on the page.
+  - Add filter functionality to `exampleIndex` layout. All page cards will be displayed in order of the `order` frontMatter property and then alphabetically by title. Filters will automatically appear for topics, levels, languages, and video if the pages have at least more than one unique option for each filter category. Filter selections are pushed to the query param and are set by a rendered query string.
+- Update `Feedback` component.
+  - Remove background color and use `AsideHeading` component to style the component's heading.
+- Update `docs-prose.css`.
+  - You can now use `.unprose` class on `#docs-content h2` elements to remove the styling.
+  - Add `sticky-mxl` and `scroll-auto-mxl` classes to enable a sticky position and scrolling on displays >= 1200 pixels.
+- 🚨 Rename `ExamplePage` component to `HelpPage` to better reflect that the component will display tutorial and troubleshooting page cards for Help pages. Adds `data` prop that accepts JSON to display cards.
+- 🚨 Update Batfish helpers:
+  - 🚨 Remove `topics` Batfish helper and replace with `filters`.
+  - 🚨 Remove `formatTopics` Batfish helper. Use the `HelpPage` component.
+  - 🚨 Remove `accordion` object from `navigation` and moved the dataset into `navTabs` as `pages` array.
+  - 🚨 Add `addPages` parameter to `buildNavigation` helper function to support appending arbitrary items to site navigation.
+  - 🚨 Switches to named parameters for `buildNavigation`.
+- Add `small` prop and variant to `Tag`.
+- Remove truncation on `ProductMenu` and moves tag above the title.
+- Replace bottom `Feedback` component on examples pages with an `Aside`.
+- Allow passing children to the `ExamplesIndex` component.
+- Add theming options to `OverviewHeader`: `theme` to accept CSS classes to customize the container, `lightText` to enable white text, `description` to add a text description. The `features` prop is now optional.
+- 🚨Deprecate `GlossaryCard`, `GlossaryPage`, and `GlossarySection` components.
+- Improve color contrast on `LevelIndicator`.
+
+## 1.3.0
+
+- Add new props to `Search` to allow further customization by other subdomains. [#329](https://github.com/mapbox/dr-ui/pull/329)
+  - Add `resultsOnly` and `overrideSearchTerm` that will display only the Swiftype results for the given search term.
+  - Add `themeCompact` to condense result padding when enabled.
+  - Add `emptyResultMessage` to change the message when Swiftype returns no results for a query.
+  - Add `segmentTrackEvent` to change the name of the Segment event that is capture during a search.
+
+## 1.2.0
+
+- Set new `referrer` tag in `Feedback`.
+- Bump Sentry version to `5.24.2`.
+
+## 1.1.6
+
+- Add `hideSearch` prop to `PageLayout` to remove the `Search` component in `PageLayoutTopbar`.
+
+## 1.1.5
+
+- Add `hideTopBar` prop to `PageLayout` to completely remove `PageLayoutTopbar`.
+
+## 1.1.4
+
+- Fix truncation on `ProductMenu`.
+
+## 1.1.3
+
+- Fix xhr headers in ForwardEvent function.
+
+## 1.1.2
+
+- Set `minHeight` on `PageLayoutTopbar` to prevent layout shift as the `Search` component loads.
+
+## 1.1.1
+
+- Fix margin on `Search` in `PageLayout`.
+
+## 1.1.0
+
+- Fix element spacing within `PageLayoutTopbar`.
+- Add `formatTopics` Batfish helper function. [#328](https://github.com/mapbox/dr-ui/pull/328)
+
+## 1.0.2
+
+- Fix the `connector` prop in `PageLayout`.
+
+## 1.0.1
+
+- Fix the `type` prop in `PageLayout`'s `Feedback` component.
+
+## 1.0.0
+
+Introducing layouts in `PageLayout`. See the [`PageLayout`](http://mapbox.github.io/dr-ui/guides/page-layout/) guide for more information on building with this component.
+
+- Add `AnalyticsShell` component. [#307](https://github.com/mapbox/dr-ui/pull/307)
+- Add Batfish helpers: `navigation` and `topics`. [#310](https://github.com/mapbox/dr-ui/pull/310)
+- Add Batfish helper: `split-pages`. [#317](https://github.com/mapbox/dr-ui/pull/317)
+- Update `PageLayout` to accept layouts. [#309](https://github.com/mapbox/dr-ui/pull/309)
+  - The added layouts: `page`, `accordion`, `example`, `full`, `exampleIndex`.
+  - 🚨 The following props are deprecated and are no longer configurable: `sidebarTitle`, `sidebarContent`, `sidebarContentStickyTop`, `sidebarContentStickyTopNarrow`, `sidebarStackedOnNarrowScreens`, `sideBarColSize`, `interactiveClass`.
+  - `sidebarTheme` is now defined from the `frontMatter` object.
+  - Component now includes `TopbarSticker/Topbar`, `Search`, and `Feedback` components.
+- 🚨 The `user` props is deprecated in `Feedback`. The component will now fetch this data and you can safely remove the `user` prop from this component. [#324](https://github.com/mapbox/dr-ui/pull/324)
+- Update dependencies. [#326](https://github.com/mapbox/dr-ui/pull/326)
+- Add `cardColSize` prop to `CardContainer` to adjust size of cards.
+
+## 0.30.0
+
+- Add `ErrorBoundary` component. [#272](https://github.com/mapbox/dr-ui/pull/272)
+- Pin the version numbers for all search-ui dependencies. [#321](https://github.com/mapbox/dr-ui/pull/321)
+
+## 0.29.2
+
+- Add aria-label to `BackToTopButton`. [#290](https://github.com/mapbox/dr-ui/pull/290)
+- Update `@sentry/browser` and add it as a peer dependency along with `react`, `react-dom`, `@mapbox/mr-ui`, and `@mapbox/mbx-assembly`. [#292](https://github.com/mapbox/dr-ui/pull/292)
+
 ## 0.29.1
 
 - Remove `limiter` from `Topbar`. [#282](https://github.com/mapbox/dr-ui/pull/282)

@@ -7,15 +7,12 @@ import Icon from '@mapbox/mr-ui/icon';
 import * as Sentry from '@sentry/browser';
 import classnames from 'classnames';
 import slugify from 'slugify';
+import env from '../analytics-shell/env';
+import { AsideHeading } from '../on-this-page/helpers';
 
 const feedbackLimit = 1000; // character limit for the feedback textarea
 const anonymousId = uuidv4(); // creates an anonymousId fallback if user is not logged or we cant get their info
-const environment =
-  typeof window !== 'undefined'
-    ? /(^|\S+\.)mapbox\.com/.test(window.location.host)
-      ? 'production'
-      : 'staging'
-    : undefined;
+const environment = env();
 const location = typeof window !== 'undefined' ? window.location : undefined;
 
 class Feedback extends React.Component {
@@ -25,8 +22,18 @@ class Feedback extends React.Component {
       helpful: undefined,
       feedback: undefined,
       feedbackSent: undefined,
-      event: undefined
+      event: undefined,
+      user: undefined
     };
+  }
+  componentDidMount() {
+    if (typeof MapboxPageShell !== 'undefined') {
+      MapboxPageShell.afterUserCheck(() => {
+        this.setState({
+          user: MapboxPageShell.getUser() || undefined
+        });
+      });
+    }
   }
 
   // creates a unique id for an element
@@ -35,7 +42,13 @@ class Feedback extends React.Component {
       replacement: '-',
       lower: true
     });
-    return `dr-ui--feedback-${section}-${el}`;
+    const position = this.props.position
+      ? `${slugify(this.props.position, {
+          replacement: '-',
+          lower: true
+        })}-`
+      : '';
+    return `dr-ui--feedback-${position}${section}-${el}`;
   };
 
   // pushes the text feedback to the state as the user types
@@ -76,8 +89,8 @@ class Feedback extends React.Component {
     return {
       event: 'Sent docs feedback',
       // set user if available else set anonymousId (needed for forward-event request)
-      ...(this.props.user && this.props.user.id
-        ? { userId: this.props.user.id }
+      ...(this.state.user && this.state.user.id
+        ? { userId: this.state.user.id }
         : { anonymousId: anonymousId }),
       properties: {
         // true, false
@@ -91,13 +104,13 @@ class Feedback extends React.Component {
         // get page context
         page: this.props.location || undefined,
         // set user if available else set anonymousId (needed for Mode)
-        ...(this.props.user && this.props.user.id
-          ? { userId: this.props.user.id }
+        ...(this.state.user && this.state.user.id
+          ? { userId: this.state.user.id }
           : { anonymousId: anonymousId }),
-        ...(!this.props.user && { anonymousId: anonymousId }),
+        ...(!this.state.user && { anonymousId: anonymousId }),
         // set plan, if available
-        ...(this.props.user &&
-          this.props.user.plan && { plan: this.props.user.plan.id }),
+        ...(this.state.user &&
+          this.state.user.plan && { plan: this.state.user.plan.id }),
         // get environment: staging or production
         environment: environment,
         // get full window location
@@ -134,6 +147,8 @@ class Feedback extends React.Component {
     Sentry.configureScope((scope) => {
       // set tag for site name
       scope.setTag('site', this.props.site);
+      // set tag for referrer, if available
+      if ('referrer' in document) scope.setTag('referrer', document.referrer);
       // set tag for the user's boolean rating
       scope.setTag('helpful', this.state.helpful);
       // set tag for the section of the page (if available)
@@ -142,16 +157,16 @@ class Feedback extends React.Component {
       if (this.props.preferredLanguage)
         scope.setTag('preferredLanguage', this.props.preferredLanguage);
       // set tags for the user's plan (if available)
-      if (this.props.user && this.props.user.plan && this.props.user.plan.id)
-        scope.setTag('plan', this.props.user.plan.id);
+      if (this.state.user && this.state.user.plan && this.state.user.plan.id)
+        scope.setTag('plan', this.state.user.plan.id);
       // set user attributes (if available)
-      if (this.props.user) {
+      if (this.state.user) {
         Sentry.setUser({
-          ...(this.props.user.id && { username: this.props.user.id }),
-          ...(this.props.user.email && { email: this.props.user.email }),
-          ...(this.props.user.plan &&
-            this.props.user.plan.id && {
-              data: { plan: this.props.user.plan.id }
+          ...(this.state.user.id && { username: this.state.user.id }),
+          ...(this.state.user.email && { email: this.state.user.email }),
+          ...(this.state.user.plan &&
+            this.state.user.plan.id && {
+              data: { plan: this.state.user.plan.id }
             })
         });
       }
@@ -170,94 +185,84 @@ class Feedback extends React.Component {
       : feedbackLimit;
     const feedbackOverLimit = feedbackLength < 0;
     return (
-      <div className="bg-gray-faint py12 px18 round color-gray">
-        <div>
-          {this.state.helpful === undefined && (
-            <div>
-              <div className="mb6">Was this {this.props.type} helpful?</div>
-              <button
-                id={this.createId('yes')}
-                onClick={() => this.handleYesNo(true)}
-                className="btn btn--s"
-              >
-                Yes
-              </button>
-              <button
-                id={this.createId('no')}
-                onClick={() => this.handleYesNo(false)}
-                className="btn btn--s ml6"
-              >
-                No
-              </button>
-            </div>
-          )}
+      <div className="dr-ui--feedback">
+        {this.state.helpful === undefined && (
+          <div>
+            <AsideHeading>Was this {this.props.type} helpful?</AsideHeading>
+            <button
+              id={this.createId('yes')}
+              onClick={() => this.handleYesNo(true)}
+              className="btn btn--s"
+            >
+              Yes
+            </button>
+            <button
+              id={this.createId('no')}
+              onClick={() => this.handleYesNo(false)}
+              className="btn btn--s ml6"
+            >
+              No
+            </button>
+          </div>
+        )}
 
-          {this.state.helpful !== undefined && (
-            <div>
-              <div className="inline-block bg-green color-white round-full w18 h18 align-middle mr3 mb3">
-                <Icon name="check" />
-              </div>{' '}
-              Thanks for your feedback.
-            </div>
-          )}
+        {this.state.helpful !== undefined && (
+          <AsideHeading>Thanks for your feedback.</AsideHeading>
+        )}
 
-          {this.state.helpful !== undefined &&
-            this.state.feedbackSent === undefined && (
-              <div className="mt12">
-                <div className="mb6">
-                  If you have more specific feedback
-                  {this.state.helpful === false &&
-                    ` on how we can improve this ${this.props.type}`}
-                  , you can provide it below (optional):
-                </div>
-                <div className="relative">
-                  <ControlTextarea
-                    id={this.createId('text')}
-                    themeControlWrapper="bg-white mb6"
-                    onChange={this.handleText}
-                    value={this.state.feedback}
-                  />
-                  <FeedbackCounter
-                    createId={this.createId}
-                    feedbackOverLimit={feedbackOverLimit}
-                    feedbackLength={feedbackLength}
-                  />
-                </div>
-                <div className="mb12">
-                  <button
-                    id={this.createId('submit')}
-                    disabled={
-                      this.state.feedback === undefined ||
-                      this.state.feedback.length < 3 || // disable button unless more than 3 characters are typed
-                      feedbackOverLimit
-                    }
-                    className="btn btn--s mb6 mr12 inline-block"
-                    onClick={this.handleSubmitFeedback}
-                  >
-                    Send feedback
-                  </button>
-                  {feedbackOverLimit && (
-                    <FeedbackOverlimitWarning
-                      createId={this.createId}
-                      feedbackLimit={feedbackLimit}
-                    />
-                  )}
-                </div>
-
-                <div className="txt-s txt-em">
-                  This form is for documentation feedback. If you have a
-                  technical question about how to use a Mapbox product,{' '}
-                  <a
-                    href="https://support.mapbox.com/hc/en-us"
-                    className="link"
-                  >
-                    contact Support
-                  </a>
-                  .
-                </div>
+        {this.state.helpful !== undefined &&
+          this.state.feedbackSent === undefined && (
+            <div className="mt12">
+              <div className="mb6">
+                If you have more specific feedback
+                {this.state.helpful === false &&
+                  ` on how we can improve this ${this.props.type}`}
+                , you can provide it below (optional):
               </div>
-            )}
-        </div>
+              <div className="relative">
+                <ControlTextarea
+                  id={this.createId('text')}
+                  themeControlWrapper="bg-white mb6"
+                  onChange={this.handleText}
+                  value={this.state.feedback}
+                />
+                <FeedbackCounter
+                  createId={this.createId}
+                  feedbackOverLimit={feedbackOverLimit}
+                  feedbackLength={feedbackLength}
+                />
+              </div>
+              <div className="mb12">
+                <button
+                  id={this.createId('submit')}
+                  disabled={
+                    this.state.feedback === undefined ||
+                    this.state.feedback.length < 3 || // disable button unless more than 3 characters are typed
+                    feedbackOverLimit
+                  }
+                  className="btn btn--s mb6 mr12 inline-block"
+                  onClick={this.handleSubmitFeedback}
+                >
+                  Send feedback
+                </button>
+                {feedbackOverLimit && (
+                  <FeedbackOverlimitWarning
+                    createId={this.createId}
+                    feedbackLimit={feedbackLimit}
+                  />
+                )}
+              </div>
+
+              <div className="txt-s txt-em">
+                This form is for documentation feedback. If you have a technical
+                question about how to use a Mapbox product,{' '}
+                <a href="https://support.mapbox.com/hc/en-us" className="link">
+                  contact Support
+                </a>
+                .
+              </div>
+            </div>
+          )}
       </div>
     );
   }
@@ -309,22 +314,25 @@ FeedbackOverlimitWarning.propTypes = {
 };
 
 Feedback.propTypes = {
-  type: PropTypes.string, // type of content the user is a evaluating
-  site: PropTypes.string.isRequired, // the site name, same value as the `site` value passed to ReactPageShell
-  section: PropTypes.string, // name of section the feedack component falls under
-  location: PropTypes.object.isRequired, // this prop is generated by batfish and provides context for the current page
+  /** The type of content the user is a evaluating. */
+  type: PropTypes.string,
+  /** The site name. This is same value as the `site` value passed to ReactPageShell. */
+  site: PropTypes.string.isRequired,
+  /** The name of section the feedback component falls under. This is used by multi-structured sites. */
+  section: PropTypes.string,
+  /** This prop is generated by Batfish and provides location context for the current page. */
+  location: PropTypes.object.isRequired,
+  /** The staging and production webhook URLs to send forward event data to. */
   webhook: PropTypes.shape({
     staging: PropTypes.string.isRequired,
     production: PropTypes.string.isRequired
-  }), // staging and production webhook URLs to send forward event data to
-  user: PropTypes.shape({
-    // user object if available
-    id: PropTypes.string,
-    email: PropTypes.string,
-    plan: PropTypes.shape({ id: PropTypes.string })
   }),
-  preferredLanguage: PropTypes.string, // preferred code language if available
-  feedbackSentryDsn: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]) // Sentry DSN (URL) to send text feedback to for issue management or "false" to not send feedback to Sentry
+  /** The user's preferred code language, if available. */
+  preferredLanguage: PropTypes.string,
+  /** The Sentry DSN (URL) to send text feedback to for issue management or `false` to prevent sending feedback to Sentry. */
+  feedbackSentryDsn: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  /** The position of the feedback component on the page, this value creates unique `id` attributes. This is used in PageLayout where the Feedback component appears in the Aside and bottom of the page (as defined by the device width). */
+  position: PropTypes.string
 };
 
 Feedback.defaultProps = {

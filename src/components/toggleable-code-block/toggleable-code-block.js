@@ -7,10 +7,6 @@ import CodeToggle from '../code-toggle/code-toggle';
 import { highlightThemeCss } from '../highlight/theme-css.js';
 
 export default class ToggleableCodeBlock extends React.Component {
-  static defaultProps = {
-    limitHeight: true
-  };
-
   renderSnippet = (code) => {
     const {
       highlightedCode,
@@ -72,6 +68,10 @@ export default class ToggleableCodeBlock extends React.Component {
     );
   }
 }
+
+ToggleableCodeBlock.defaultProps = {
+  limitHeight: true
+};
 
 ToggleableCodeBlock.propTypes = {
   /* A unique `id` is required for the language toggle. */

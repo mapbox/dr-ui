@@ -2,10 +2,10 @@
 
 exports[`product-menu Basic renders as expected 1`] = `
 <div
-  className="flex-parent"
+  className="dr-ui--product-menu"
 >
   <a
-    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+    className="txt-fancy txt-l block color-blue-on-hover"
     href="/dr-ui/"
   >
     Mapbox product menu
@@ -15,16 +15,10 @@ exports[`product-menu Basic renders as expected 1`] = `
 
 exports[`product-menu Beta product renders as expected 1`] = `
 <div
-  className="flex-parent"
+  className="dr-ui--product-menu"
 >
-  <a
-    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
-    href="/vision/"
-  >
-    Vision SDK for Android
-  </a>
-  <span
-    className="flex-child mx6"
+  <div
+    className="ml-neg3"
   >
     <div
       className="inline-block"
@@ -35,7 +29,7 @@ exports[`product-menu Beta product renders as expected 1`] = `
     >
       <div
         aria-describedby="tooltip-1"
-        className="txt-s txt-bold round px6 inline-block cursor-default border"
+        className="txt-bold round inline-block cursor-default txt-xs px6"
         style={
           Object {
             "background": "#f1f3fd",
@@ -58,22 +52,22 @@ exports[`product-menu Beta product renders as expected 1`] = `
         </div>
       </div>
     </div>
-  </span>
+  </div>
+  <a
+    className="txt-fancy txt-l block color-blue-on-hover"
+    href="/vision/"
+  >
+    Vision SDK for Android
+  </a>
 </div>
 `;
 
 exports[`product-menu Beta product renders as expected 2`] = `
 <div
-  className="flex-parent"
+  className="dr-ui--product-menu"
 >
-  <a
-    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
-    href="/vision/"
-  >
-    Navigation SDK for Android
-  </a>
-  <span
-    className="flex-child mx6"
+  <div
+    className="ml-neg3"
   >
     <div
       className="inline-block"
@@ -84,7 +78,7 @@ exports[`product-menu Beta product renders as expected 2`] = `
     >
       <div
         aria-describedby="tooltip-2"
-        className="txt-s txt-bold round px6 inline-block cursor-default border"
+        className="txt-bold round inline-block cursor-default txt-xs px6"
         style={
           Object {
             "background": "#f1f3fd",
@@ -107,7 +101,13 @@ exports[`product-menu Beta product renders as expected 2`] = `
         </div>
       </div>
     </div>
-  </span>
+  </div>
+  <a
+    className="txt-fancy txt-l block color-blue-on-hover"
+    href="/vision/"
+  >
+    Navigation SDK for Android
+  </a>
 </div>
 `;
 
@@ -116,10 +116,10 @@ exports[`product-menu Custom trigger style - display only renders as expected 1`
   className="bg-gray-dark py6"
 >
   <div
-    className="flex-parent"
+    className="dr-ui--product-menu"
   >
     <a
-      className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-white color-gray-light-on-hover"
+      className="txt-fancy txt-l block color-white color-gray-light-on-hover"
       href="/api-documentation/"
     >
       Light on dark
@@ -130,10 +130,10 @@ exports[`product-menu Custom trigger style - display only renders as expected 1`
 
 exports[`product-menu Fake items, but one matches this test case's location renders as expected 1`] = `
 <div
-  className="flex-parent"
+  className="dr-ui--product-menu"
 >
   <a
-    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+    className="txt-fancy txt-l block color-blue-on-hover"
     href="/api-documentation/"
   >
     Items in here
@@ -143,10 +143,10 @@ exports[`product-menu Fake items, but one matches this test case's location rend
 
 exports[`product-menu Product menu with something arbitrary in it renders as expected 1`] = `
 <div
-  className="flex-parent"
+  className="dr-ui--product-menu"
 >
   <a
-    className="wmax240-ml wmax180-mm txt-fancy txt-l block txt-truncate color-blue-on-hover"
+    className="txt-fancy txt-l block color-blue-on-hover"
     href="/api-documentation/"
   >
     Pizza pie

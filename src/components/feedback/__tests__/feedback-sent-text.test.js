@@ -1,10 +1,7 @@
 import React from 'react';
 import Feedback from '..';
 import toJson from 'enzyme-to-json';
-import { configure, shallow, mount } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-
-configure({ adapter: new Adapter() });
+import { shallow, mount } from 'enzyme';
 
 describe('Sent text feedback', () => {
   const feedback = mount(
@@ -14,19 +11,21 @@ describe('Sent text feedback', () => {
         pathname: '/mapbox-gl-js/api/',
         hash: '#lnglat'
       }}
-      user={{
-        id: 'crocsfan19',
-        email: 'crocsfan19@mapbox.com',
-        plan: {
-          id: 'starter'
-        }
-      }}
       webhook={{
         production: '',
         staging: ''
       }}
     />
   );
+  feedback.setState({
+    user: {
+      id: 'crocsfan19',
+      email: 'crocsfan19@mapbox.com',
+      plan: {
+        id: 'starter'
+      }
+    }
+  });
 
   test('clicked yes and sent feedback', () => {
     // click yes
@@ -71,7 +70,14 @@ describe('Sent text feedback', () => {
       },
       feedback: 'cool beans!',
       feedbackSent: true,
-      helpful: true
+      helpful: true,
+      user: {
+        id: 'crocsfan19',
+        email: 'crocsfan19@mapbox.com',
+        plan: {
+          id: 'starter'
+        }
+      }
     });
   });
 });

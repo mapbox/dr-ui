@@ -1,0 +1,523 @@
+{
+  "pages": [
+    {
+      "filePath": "/api-documentation/src/pages/legacy/analytics.md",
+      "path": "/api/legacy/analytics/",
+      "frontMatter": {
+        "title": "Analytics",
+        "description": "The Mapbox Analytics API returns API usage for services by resource.",
+        "contentType": "API",
+        "hideFromSearchEngines": true,
+        "products": ["Analytics API"],
+        "prependJs": [
+          "import FormatEndpoint from '../../components/format-endpoint.js';",
+          "import TokenPlaceholder from '../../components/token-placeholder';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import constants from '../../constants';"
+        ],
+        "layout": "page",
+        "hideFeedback": true,
+        "hideFromNav": true
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/accounts/index.js",
+      "path": "/api/accounts/",
+      "frontMatter": {
+        "title": "Accounts service",
+        "description": "Overview of the Mapbox Accounts service APIs.",
+        "splitPages": true,
+        "order": 5,
+        "contentType": "API",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/maps/index.js",
+      "path": "/api/maps/",
+      "frontMatter": {
+        "title": "Maps service",
+        "description": "Overview of the Mapbox Maps service APIs.",
+        "splitPages": true,
+        "order": 2,
+        "contentType": "API",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/navigation/index.js",
+      "path": "/api/navigation/",
+      "frontMatter": {
+        "title": "Navigation service",
+        "description": "Overview of the Mapbox Navigation service APIs.",
+        "splitPages": true,
+        "order": 3,
+        "contentType": "API",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/search/index.js",
+      "path": "/api/search/",
+      "frontMatter": {
+        "title": "Search service",
+        "description": "Overview of the Mapbox Search service APIs.",
+        "splitPages": true,
+        "order": 4,
+        "contentType": "API",
+        "layout": "page"
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/navigation/apis/http-post.md",
+      "path": "/api/navigation/apis/http-post/",
+      "frontMatter": {
+        "title": "Using HTTP POST",
+        "description": "The Directions API and Map Matching API both support access using the HTTP POST method.",
+        "contentType": "API",
+        "products": ["Documentation"],
+        "prependJs": [
+          "import UserAccessToken from '../../../components/user-access-token';",
+          "import constants from '../../../constants';"
+        ],
+        "splitPage": true,
+        "order": 1
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/maps/apis/fonts.md",
+      "path": "/api/maps/apis/fonts/",
+      "frontMatter": {
+        "title": "Fonts",
+        "description": "The Mapbox Fonts API provides you with a programmatic way to interact with fonts in your map styles.",
+        "contentType": "API",
+        "products": ["Fonts API"],
+        "prependJs": [
+          "import UserAccessToken from '../../../components/user-access-token';",
+          "import TokenPlaceholder from '../../../components/token-placeholder';",
+          "import UserName from '../../../components/username';",
+          "import FormatEndpoint from '../../../components/format-endpoint.js';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import constants from '../../../constants';"
+        ],
+        "splitPage": true,
+        "order": 10
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/maps/apis/raster-tiles.md",
+      "path": "/api/maps/apis/raster-tiles/",
+      "frontMatter": {
+        "title": "Raster Tiles",
+        "description": "The Mapbox Raster Tiles API serves raster tiles generated from satellite imagery tilesets and tilesets generated from raster data uploaded to Mapbox.com.",
+        "contentType": "API",
+        "products": ["Raster Tiles API"],
+        "prependJs": [
+          "import UserAccessToken from '../../../components/user-access-token';",
+          "import FormatEndpoint from '../../../components/format-endpoint.js';",
+          "import constants from '../../../constants';"
+        ],
+        "splitPage": true,
+        "order": 2
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/maps/apis/static-tiles.md",
+      "path": "/api/maps/apis/static-tiles/",
+      "frontMatter": {
+        "title": "Static Tiles",
+        "description": "The Mapbox Static Tiles API returns raster tiles generated from Mapbox Studio styles that can be used with web mapping libraries like Mapbox.js, Leaflet, or OpenLayers to make slippy maps.",
+        "contentType": "API",
+        "products": ["Static Tiles API"],
+        "prependJs": [
+          "import UserAccessToken from '../../../components/user-access-token';",
+          "import FormatEndpoint from '../../../components/format-endpoint.js';",
+          "import constants from '../../../constants';"
+        ],
+        "splitPage": true,
+        "order": 4
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/maps/apis/vector-tiles.md",
+      "path": "/api/maps/apis/vector-tiles/",
+      "frontMatter": {
+        "title": "Vector Tiles",
+        "description": "The Mapbox Vector Tiles API serves vector tiles generated from Mapbox Studio styles.",
+        "contentType": "API",
+        "products": ["Vector Tiles API"],
+        "prependJs": [
+          "import UserAccessToken from '../../../components/user-access-token';",
+          "import FormatEndpoint from '../../../components/format-endpoint.js';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import constants from '../../../constants';"
+        ],
+        "splitPage": true,
+        "order": 1
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/index.md",
+      "path": "/api/",
+      "frontMatter": {
+        "title": "Introduction",
+        "description": "An introduction to the Mapbox web services APIs.",
+        "order": 1,
+        "contentType": "API",
+        "products": ["Documentation"],
+        "prependJs": [
+          "import { IntroServicesList } from '../components/intro-services-list';",
+          "import constants from '../constants';"
+        ],
+        "layout": "page",
+        "navOrder": 1
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/legacy/map-matching-v4.md",
+      "path": "/api/legacy/map-matching-v4/",
+      "frontMatter": {
+        "title": "Map Matching V4",
+        "description": "The Mapbox Map Matching API snaps fuzzy, inaccurate traces from a GPS unit or a phone to the OpenStreetMap road and path network using the Directions API.",
+        "contentType": "API",
+        "hideFromSearchEngines": true,
+        "products": ["Map Matching API"],
+        "prependJs": [
+          "import FormatEndpoint from '../../components/format-endpoint.js';",
+          "import { LegacyNote } from '../../components/legacy-note';"
+        ],
+        "layout": "page",
+        "hideFeedback": true,
+        "hideFromNav": true
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/legacy/static-classic.md",
+      "path": "/api/legacy/static-classic/",
+      "frontMatter": {
+        "title": "Legacy Static Images",
+        "description": "The Mapbox Legacy Static Images API serves legacy Mapbox Studio Classic styles.",
+        "contentType": "API",
+        "hideFromSearchEngines": true,
+        "products": ["Static Images API"],
+        "prependJs": [
+          "import FormatEndpoint from '../../components/format-endpoint.js';",
+          "import { LegacyNote } from '../../components/legacy-note';"
+        ],
+        "layout": "page",
+        "hideFeedback": true,
+        "hideFromNav": true
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/legacy/maps.md",
+      "path": "/api/legacy/maps/",
+      "frontMatter": {
+        "title": "Legacy Maps",
+        "description": "The Mapbox Legacy Maps API supports the retrieval of tilesets as embeddable HTML slippy maps.",
+        "contentType": "API",
+        "hideFromSearchEngines": true,
+        "products": ["Maps API"],
+        "prependJs": [
+          "import UserAccessToken from '../../components/user-access-token';",
+          "import FormatEndpoint from '../../components/format-endpoint.js';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import constants from '../../constants';",
+          "import { LegacyNote } from '../../components/legacy-note';"
+        ],
+        "layout": "page",
+        "hideFeedback": true,
+        "hideFromNav": true
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/navigation/apis/isochrone.md",
+      "path": "/api/navigation/apis/isochrone/",
+      "frontMatter": {
+        "title": "Isochrone",
+        "description": "The Mapbox Isochrone API computes areas that are reachable within a specified amount of time from a location.",
+        "contentType": "API",
+        "products": ["Isochrone API"],
+        "prependJs": [
+          "import UserAccessToken from '../../../components/user-access-token';",
+          "import FormatEndpoint from '../../../components/format-endpoint.js';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import constants from '../../../constants';",
+          "import RelatedPage from '@mapbox/dr-ui/related-page';"
+        ],
+        "splitPage": true,
+        "order": 3
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/navigation/apis/matrix.md",
+      "path": "/api/navigation/apis/matrix/",
+      "frontMatter": {
+        "title": "Matrix",
+        "description": "The Mapbox Matrix API returns travel times between many points.",
+        "contentType": "API",
+        "products": ["Matrix API"],
+        "prependJs": [
+          "import UserAccessToken from '../../../components/user-access-token';",
+          "import FormatEndpoint from '../../../components/format-endpoint.js';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import constants from '../../../constants';"
+        ],
+        "splitPage": true,
+        "order": 5
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/navigation/apis/optimization.md",
+      "path": "/api/navigation/apis/optimization/",
+      "frontMatter": {
+        "title": "Optimization",
+        "description": "The Mapbox Optimization API returns a duration-optimized route between the input coordinates.",
+        "contentType": "API",
+        "products": ["Optimization API"],
+        "prependJs": [
+          "import UserAccessToken from '../../../components/user-access-token';",
+          "import FormatEndpoint from '../../../components/format-endpoint.js';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import constants from '../../../constants';"
+        ],
+        "splitPage": true,
+        "order": 6
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/maps/apis/tilequery.md",
+      "path": "/api/maps/apis/tilequery/",
+      "frontMatter": {
+        "title": "Tilequery",
+        "description": "The Mapbox Tilequery API allows you to retrieve data about specific features from a vector tileset.",
+        "preview": true,
+        "contentType": "API",
+        "products": ["Tilequery API"],
+        "prependJs": [
+          "import UserAccessToken from '../../../components/user-access-token';",
+          "import FormatEndpoint from '../../../components/format-endpoint.js';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import RelatedPage from '@mapbox/dr-ui/related-page';",
+          "import constants from '../../../constants';"
+        ],
+        "splitPage": true,
+        "order": 6
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/maps/apis/uploads.md",
+      "path": "/api/maps/apis/uploads/",
+      "frontMatter": {
+        "title": "Uploads",
+        "description": "The Mapbox Uploads API transforms geographic data into tilesets that can be used with maps and geographic applications.",
+        "contentType": "API",
+        "products": ["Uploads API"],
+        "prependJs": [
+          "import TokenPlaceholder from '../../../components/token-placeholder';",
+          "import UserName from '../../../components/username';",
+          "import FormatEndpoint from '../../../components/format-endpoint.js';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import constants from '../../../constants';"
+        ],
+        "splitPage": true,
+        "order": 7
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/legacy/directions-v4.md",
+      "path": "/api/legacy/directions-v4/",
+      "frontMatter": {
+        "title": "Directions v4",
+        "description": "The Mapbox Directions API will show you how to get where you're going.",
+        "contentType": "API",
+        "hideFromSearchEngines": true,
+        "products": ["Directions API"],
+        "prependJs": [
+          "import FormatEndpoint from '../../components/format-endpoint.js';",
+          "import { LegacyNote } from '../../components/legacy-note';"
+        ],
+        "layout": "page",
+        "hideFeedback": true,
+        "hideFromNav": true
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/changelog/index.md",
+      "path": "/api/changelog/",
+      "frontMatter": {
+        "title": "Changelog",
+        "description": "The Mapbox API changelog documents the changes made to all Mapbox APIs.",
+        "order": 6,
+        "contentType": "API",
+        "layout": "page",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/accounts/apis/tokens.md",
+      "path": "/api/accounts/apis/tokens/",
+      "frontMatter": {
+        "title": "Tokens",
+        "description": "The Mapbox Tokens API provides a programmatic way of interacting with access tokens.",
+        "contentType": "API",
+        "products": ["Tokens API"],
+        "prependJs": [
+          "import UserAccessToken from '../../../components/user-access-token';",
+          "import TokenPlaceholder from '../../../components/token-placeholder';",
+          "import UserName from '../../../components/username';",
+          "import TempTokenExpires from '../../../components/temp-token-expires';",
+          "import FormatEndpoint from '../../../components/format-endpoint.js';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import constants from '../../../constants';"
+        ],
+        "order": 1,
+        "splitPage": true
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/maps/apis/datasets.md",
+      "path": "/api/maps/apis/datasets/",
+      "frontMatter": {
+        "title": "Datasets",
+        "description": "The Mapbox Datasets API offers persistent storage for custom geographic data.",
+        "contentType": "API",
+        "products": ["Datasets API"],
+        "prependJs": [
+          "import UserAccessToken from '../../../components/user-access-token';",
+          "import TokenPlaceholder from '../../../components/token-placeholder';",
+          "import UserName from '../../../components/username';",
+          "import FormatEndpoint from '../../../components/format-endpoint.js';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import constants from '../../../constants';"
+        ],
+        "splitPage": true,
+        "order": 9
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/maps/apis/static-images.md",
+      "path": "/api/maps/apis/static-images/",
+      "frontMatter": {
+        "title": "Static Images",
+        "description": "The Mapbox Static Images API returns static images generated from vector map styles.",
+        "contentType": "API",
+        "products": ["Static Images API"],
+        "prependJs": [
+          "import UserAccessToken from '../../../components/user-access-token';",
+          "import FormatEndpoint from '../../../components/format-endpoint.js';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import RelatedPage from '@mapbox/dr-ui/related-page';",
+          "import constants from '../../../constants';"
+        ],
+        "splitPage": true,
+        "order": 3
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/navigation/apis/map-matching.md",
+      "path": "/api/navigation/apis/map-matching/",
+      "frontMatter": {
+        "title": "Map Matching",
+        "description": "The Mapbox Map Matching API snaps fuzzy, inaccurate traces to the OpenStreetMap road and path network.",
+        "contentType": "API",
+        "products": ["Map Matching API"],
+        "prependJs": [
+          "import UserAccessToken from '../../../components/user-access-token';",
+          "import FormatEndpoint from '../../../components/format-endpoint.js';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import constants from '../../../constants';"
+        ],
+        "splitPage": true,
+        "order": 4
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/maps/apis/styles.md",
+      "path": "/api/maps/apis/styles/",
+      "frontMatter": {
+        "title": "Styles",
+        "description": "The Mapbox Styles API lets you read and change map styles, fonts, and images.",
+        "contentType": "API",
+        "products": ["Styles API"],
+        "prependJs": [
+          "import UserAccessToken from '../../../components/user-access-token';",
+          "import TokenPlaceholder from '../../../components/token-placeholder';",
+          "import UserName from '../../../components/username';",
+          "import FormatEndpoint from '../../../components/format-endpoint.js';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import constants from '../../../constants';"
+        ],
+        "splitPage": true,
+        "order": 5
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/maps/apis/mapbox-tiling-service.md",
+      "path": "/api/maps/apis/mapbox-tiling-service/",
+      "frontMatter": {
+        "title": "Mapbox Tiling Service",
+        "description": "Mapbox Tiling Service (MTS) supports reading metadata for raster and vector tilesets as well as creating and reading tileset sources, recipes, and vector tilesets.",
+        "tag": "beta",
+        "contentType": "API",
+        "products": ["Mapbox Tiling Service"],
+        "prependJs": [
+          "import UserAccessToken from '../../../components/user-access-token';",
+          "import TokenPlaceholder from '../../../components/token-placeholder';",
+          "import UserName from '../../../components/username';",
+          "import FormatEndpoint from '../../../components/format-endpoint.js';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import constants from '../../../constants';",
+          "import Tag from '@mapbox/dr-ui/tag';",
+          "import TilesetBetaNote from '../../../components/tileset-beta-note.js';"
+        ],
+        "splitPage": true,
+        "order": 8
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/navigation/apis/directions.md",
+      "path": "/api/navigation/apis/directions/",
+      "frontMatter": {
+        "title": "Directions",
+        "description": "The Mapbox Directions API calculates optimal routes and produces turn-by-turn instructions.",
+        "contentType": "API",
+        "products": ["Directions API"],
+        "prependJs": [
+          "import UserAccessToken from '../../../components/user-access-token';",
+          "import FormatEndpoint from '../../../components/format-endpoint.js';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import constants from '../../../constants';",
+          "import RelatedPage from '@mapbox/dr-ui/related-page';"
+        ],
+        "splitPage": true,
+        "order": 2
+      }
+    },
+    {
+      "filePath": "/api-documentation/src/pages/search/apis/geocoding.md",
+      "path": "/api/search/apis/geocoding/",
+      "frontMatter": {
+        "title": "Geocoding",
+        "description": "The Mapbox Geocoding API runs forward and reverse geocoding queries.",
+        "contentType": "API",
+        "products": ["Geocoding API"],
+        "prependJs": [
+          "import UserAccessToken from '../../../components/user-access-token';",
+          "import FormatEndpoint from '../../../components/format-endpoint.js';",
+          "import Note from '@mapbox/dr-ui/note';",
+          "import constants from '../../../constants';",
+          "import RelatedPage from '@mapbox/dr-ui/related-page';"
+        ],
+        "splitPage": true,
+        "order": 1
+      }
+    },
+    {
+      "filePath": "/api-documentation/node_modules/@mapbox/batfish/dist/webpack/default-not-found.js",
+      "path": "/api/404/",
+      "is404": true,
+      "frontMatter": {}
+    }
+  ]
+}

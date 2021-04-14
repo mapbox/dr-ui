@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`buildSplitPages 1`] = `
+Object {
+  "/dr-ui/guides/split-pages/": Object {
+    "filePath": "./docs/src/pages/guides/split-pages/index.js",
+    "frontMatter": Object {
+      "contentType": "API",
+      "description": "This is the first section",
+      "layout": "page",
+      "order": 3,
+      "splitPages": true,
+      "title": "Split pages",
+    },
+    "headings": Array [
+      Object {
+        "level": 2,
+        "slug": "how-to-use-split-pages",
+        "text": "How to use split pages",
+      },
+      Object {
+        "level": 3,
+        "slug": "1-create-the-main-page",
+        "text": "1. Create the main page",
+      },
+      Object {
+        "level": 3,
+        "slug": "2-create-the-split-pages",
+        "text": "2. Create the split pages",
+      },
+      Object {
+        "level": 3,
+        "slug": "3-update-the-batfish-configuration",
+        "text": "3. Update the Batfish configuration",
+      },
+      Object {
+        "level": 3,
+        "slug": "4-create-redirects",
+        "text": "4. Create redirects",
+      },
+      Object {
+        "level": 2,
+        "slug": "limitations",
+        "text": "Limitations",
+      },
+      Object {
+        "level": 2,
+        "slug": "tag-debugger",
+        "tag": "beta",
+        "text": "Tag debugger",
+      },
+    ],
+    "pages": Array [
+      Object {
+        "filePath": "./docs/src/pages/guides/split-pages/sections/intro.md",
+        "frontMatter": Object {
+          "contentType": "guide",
+          "description": "An introduction to use split pages.",
+          "hideFeedback": true,
+          "order": 1,
+          "products": Array [
+            "Documentation",
+          ],
+          "splitPage": true,
+          "title": "Introduction to split pages",
+        },
+        "headings": Array [],
+        "order": 1,
+        "path": "/dr-ui/guides/split-pages/sections/intro/",
+        "slug": "introduction-to-split-pages",
+      },
+      Object {
+        "filePath": "./docs/src/pages/guides/split-pages/sections/how-to.md",
+        "frontMatter": Object {
+          "contentType": "guide",
+          "description": "An introduction to use split pages.",
+          "hideFeedback": true,
+          "order": 2,
+          "prependJs": Array [
+            "import MainPage from '!raw-loader!../index.js'; //eslint-disable-line",
+            "import SubOne from '!raw-loader!./intro.md'; //eslint-disable-line",
+            "import SplitPageShell from '!raw-loader!../../../../components/split-page-shell.js'; //eslint-disable-line",
+            "import CodeSnippet from '../../../../../../src/components/code-snippet/code-snippet';",
+            "import { highlightJsx } from '../../../../../../src/components/highlight/jsx';",
+            "import { highlightHtml } from '../../../../../../src/components/highlight/html';",
+          ],
+          "products": Array [
+            "Mapbox fundamentals",
+          ],
+          "splitPage": true,
+          "title": "How to use spit pages",
+        },
+        "headings": Array [
+          Object {
+            "level": 2,
+            "slug": "how-to-use-split-pages",
+            "text": "How to use split pages",
+          },
+          Object {
+            "level": 3,
+            "slug": "1-create-the-main-page",
+            "text": "1. Create the main page",
+          },
+          Object {
+            "level": 3,
+            "slug": "2-create-the-split-pages",
+            "text": "2. Create the split pages",
+          },
+          Object {
+            "level": 3,
+            "slug": "3-update-the-batfish-configuration",
+            "text": "3. Update the Batfish configuration",
+          },
+          Object {
+            "level": 3,
+            "slug": "4-create-redirects",
+            "text": "4. Create redirects",
+          },
+        ],
+        "order": 2,
+        "path": "/dr-ui/guides/split-pages/sections/how-to/",
+        "slug": "how-to-use-spit-pages",
+      },
+      Object {
+        "filePath": "./docs/src/pages/guides/split-pages/sections/limitations.md",
+        "frontMatter": Object {
+          "contentType": "guide",
+          "description": "Limitations to the split page pattern.",
+          "hideFeedback": true,
+          "order": 3,
+          "products": Array [
+            "Mapbox fundamentals",
+          ],
+          "splitPage": true,
+          "title": "Limitations",
+        },
+        "headings": Array [
+          Object {
+            "level": 2,
+            "slug": "limitations",
+            "text": "Limitations",
+          },
+        ],
+        "order": 3,
+        "path": "/dr-ui/guides/split-pages/sections/limitations/",
+        "slug": "limitations",
+      },
+      Object {
+        "filePath": "./docs/src/pages/guides/split-pages/sections/tag-debugger.md",
+        "frontMatter": Object {
+          "contentType": "guide",
+          "description": "Limitations to the split page pattern.",
+          "hideFeedback": true,
+          "order": 4,
+          "products": Array [
+            "Mapbox fundamentals",
+          ],
+          "splitPage": true,
+          "tag": "beta",
+          "title": "Tag debugger",
+        },
+        "headings": Array [
+          Object {
+            "level": 2,
+            "slug": "tag-debugger",
+            "tag": "beta",
+            "text": "Tag debugger",
+          },
+        ],
+        "order": 4,
+        "path": "/dr-ui/guides/split-pages/sections/tag-debugger/",
+        "slug": "tag-debugger",
+      },
+    ],
+    "path": "/dr-ui/guides/split-pages/",
+  },
+}
+`;
