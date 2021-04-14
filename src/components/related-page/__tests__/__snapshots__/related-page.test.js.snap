@@ -821,7 +821,7 @@ exports[`related-page tutorial renders as expected 1`] = `
 `;
 
 exports[`related-page video renders as expected 1`] = `
-<a
+<button
   className="unprose block cursor-pointer color-purple color-purple-dark-on-hover transition mb18"
   onClick={[Function]}
 >
@@ -906,11 +906,11 @@ exports[`related-page video renders as expected 1`] = `
       </div>
     </div>
   </div>
-</a>
+</button>
 `;
 
 exports[`related-page video with svg image fallback renders as expected 1`] = `
-<a
+<button
   className="unprose block cursor-pointer color-purple color-purple-dark-on-hover transition mb18"
   onClick={[Function]}
 >
@@ -987,5 +987,5 @@ exports[`related-page video with svg image fallback renders as expected 1`] = `
       </div>
     </div>
   </div>
-</a>
+</button>
 `;
