@@ -142,6 +142,7 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
         className="none block-mxl"
       >
         <img
+          alt=""
           src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
         />
       </div>
@@ -332,6 +333,7 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
         className="none block-mxl"
       >
         <img
+          alt=""
           src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
         />
       </div>
@@ -516,6 +518,7 @@ exports[`overview-header Basic renders as expected 1`] = `
         className="none block-mxl"
       >
         <img
+          alt=""
           src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
         />
       </div>
@@ -679,6 +682,7 @@ exports[`overview-header Beta product renders as expected 1`] = `
         className="none block-mxl"
       >
         <img
+          alt=""
           src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
         />
       </div>
@@ -859,6 +863,7 @@ exports[`overview-header No optional props renders as expected 1`] = `
         className="none block-mxl"
       >
         <img
+          alt=""
           src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
         />
       </div>
@@ -1031,6 +1036,7 @@ exports[`overview-header Some optional props renders as expected 1`] = `
         className="none block-mxl"
       >
         <img
+          alt=""
           src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
         />
       </div>

@@ -4,7 +4,7 @@ Icon.
 import React from 'react';
 import Tag from '../tag';
 
-export default class Icon extends React.Component {
+export default class Icon extends React.PureComponent {
   render() {
     return (
       <div>

@@ -242,6 +242,7 @@ exports[`search Set \`resultsOnly: true\` to true. Select an item to see search 
   <select
     aria-label="Select a product"
     defaultValue=""
+    onBlur={[Function]}
     onChange={[Function]}
   >
     <option

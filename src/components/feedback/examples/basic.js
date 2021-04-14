@@ -4,7 +4,7 @@ Basic.
 import React from 'react';
 import Feedback from '../feedback';
 
-export default class Basic extends React.Component {
+export default class Basic extends React.PureComponent {
   render() {
     return (
       <Feedback

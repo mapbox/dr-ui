@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ControlToggleSet from '@mapbox/mr-ui/control-toggle-set';
 
-class CodeToggle extends React.Component {
+class CodeToggle extends React.PureComponent {
   render() {
     const { props } = this;
     const language = props.options.filter((option) => {

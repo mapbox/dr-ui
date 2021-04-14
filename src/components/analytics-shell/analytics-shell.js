@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import * as Sentry from '@sentry/browser';
 import env from './env';
 
-export default class AnalyticsShell extends React.Component {
+export default class AnalyticsShell extends React.PureComponent {
   componentDidMount() {
     const {
       disableWebAnalytics,

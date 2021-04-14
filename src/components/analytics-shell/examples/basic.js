@@ -4,7 +4,7 @@ The AnalyticsShell adds [Sentry](https://docs.sentry.io/error-reporting/configur
 import React from 'react';
 import AnalyticsShell from '../analytics-shell';
 
-export default class Basic extends React.Component {
+export default class Basic extends React.PureComponent {
   render() {
     return (
       <AnalyticsShell

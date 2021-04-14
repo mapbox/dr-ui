@@ -4,7 +4,7 @@ import { supported, notSupportedReason } from '@mapbox/mapbox-gl-supported';
 import Note from '../note';
 
 /* set height of map to prevent content shift while mapbox-gl-support makes its decision */
-export default class MapWrapper extends React.Component {
+export default class MapWrapper extends React.PureComponent {
   render() {
     const { reason, children, height } = this.props;
     return (
@@ -24,7 +24,7 @@ MapWrapper.propTypes = {
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
 };
 
-class Map extends React.Component {
+class Map extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default class ExampleImage extends React.Component {
+export default class ExampleImage extends React.PureComponent {
   render() {
     const { props } = this;
     return (

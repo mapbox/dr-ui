@@ -103,7 +103,7 @@ Most subsites include:
 
 - An `overview/` folder that contains a collection of guides and the homepage for the subsite
   - For example: `src/maps/overview/index.md`.
-  - The homepage usually includes the [`OverviewHeader`](/dr-ui/#overviewheader) component at the top of the page to define the product for that subsite.
+  - The homepage usually includes the [`OverviewHeader`](/dr-ui/components/#overviewheader) component at the top of the page to define the product for that subsite.
 - The `index.js` in the subsite's root folder is usually a redirect to the overview homepage:
 
 ```js

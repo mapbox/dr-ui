@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Modal from '@mapbox/mr-ui/modal';
 
 // creates the modal
-export class VimeoModal extends React.Component {
+export class VimeoModal extends React.PureComponent {
   render() {
     const { vimeoId, closeModal, title } = this.props;
     return (
@@ -15,6 +15,7 @@ export class VimeoModal extends React.Component {
         <div className="py36">
           <div style={{ padding: '62.5% 0 0 0', position: 'relative' }}>
             <iframe
+              title={title}
               src={`https://player.vimeo.com/video/${vimeoId}?title=0&byline=0&portrait=0`}
               style={{
                 position: 'absolute',
@@ -41,7 +42,7 @@ VimeoModal.propTypes = {
 };
 
 // creates the video thumbnail with play button overlay
-export class VimeoThumbnail extends React.Component {
+export class VimeoThumbnail extends React.PureComponent {
   render() {
     const { children } = this.props;
     return (
@@ -70,7 +71,7 @@ VimeoThumbnail.propTypes = {
 };
 
 // creates play button icon
-export class VimeoPlayImage extends React.Component {
+export class VimeoPlayImage extends React.PureComponent {
   render() {
     // if fallbackIcon, then use the icon wrapper
     // to add the circle background

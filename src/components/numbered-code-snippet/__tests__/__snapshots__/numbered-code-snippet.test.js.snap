@@ -19,8 +19,8 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
         className="relative z2 h30"
         data-chunk-code="chunk-0"
       >
-        <div
-          className="wfull bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
+        <button
+          className="w-full bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
           onClick={[Function]}
         >
           <div
@@ -77,7 +77,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           >
             show hidden lines
           </div>
-        </div>
+        </button>
       </div>
       <div
         className="relative z2"
@@ -484,8 +484,8 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
         className="relative z2 h30"
         data-chunk-code="chunk-2"
       >
-        <div
-          className="wfull bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
+        <button
+          className="w-full bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
           onClick={[Function]}
         >
           <div
@@ -542,7 +542,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           >
             show hidden lines
           </div>
-        </div>
+        </button>
       </div>
     </code>
   </pre>
@@ -2238,8 +2238,8 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
         className="relative z2 h30"
         data-chunk-code="chunk-2"
       >
-        <div
-          className="wfull bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
+        <button
+          className="w-full bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
           onClick={[Function]}
         >
           <div
@@ -2296,7 +2296,7 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
           >
             show hidden lines
           </div>
-        </div>
+        </button>
       </div>
     </code>
   </pre>
@@ -2345,8 +2345,8 @@ exports[`numbered-code-snippet Last line renders as expected 1`] = `
         className="relative z2 h30"
         data-chunk-code="chunk-0"
       >
-        <div
-          className="wfull bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
+        <button
+          className="w-full bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
           onClick={[Function]}
         >
           <div
@@ -2403,7 +2403,7 @@ exports[`numbered-code-snippet Last line renders as expected 1`] = `
           >
             show hidden lines
           </div>
-        </div>
+        </button>
       </div>
       <div
         className="relative z2"

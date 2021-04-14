@@ -4,7 +4,7 @@ Basic.
 import React from 'react';
 import AndroidLayoutCodeBlock from '../android-layout-code-block';
 
-export default class Basic extends React.Component {
+export default class Basic extends React.PureComponent {
   render() {
     const code = `<?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
