@@ -65,18 +65,16 @@ export default class Video extends React.PureComponent {
 
     return (
       <div
-        className="relative"
+        className="relative flex-parent flex-parent--center-main flex-parent--center-cross"
         onMouseOver={this.onHover}
         onMouseLeave={this.onOut}
+        onFocus={this.onHover}
       >
         {!isPlaying && (
           <button
             onClick={this.playVideo}
             className="bg-darken75 round absolute cursor-pointer z1"
             style={{
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
               width: '30%',
               height: '36%',
               padding: '4% 9% 1%'

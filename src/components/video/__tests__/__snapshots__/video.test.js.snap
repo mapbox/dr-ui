@@ -2,7 +2,8 @@
 
 exports[`video Basic renders as expected 1`] = `
 <div
-  className="relative"
+  className="relative flex-parent flex-parent--center-main flex-parent--center-cross"
+  onFocus={[Function]}
   onMouseLeave={[Function]}
   onMouseOver={[Function]}
 >
@@ -12,10 +13,7 @@ exports[`video Basic renders as expected 1`] = `
     style={
       Object {
         "height": "36%",
-        "left": "50%",
         "padding": "4% 9% 1%",
-        "top": "50%",
-        "transform": "translate(-50%, -50%)",
         "width": "30%",
       }
     }
@@ -67,7 +65,8 @@ exports[`video Basic renders as expected 1`] = `
 
 exports[`video Reduced motion renders as expected 1`] = `
 <div
-  className="relative"
+  className="relative flex-parent flex-parent--center-main flex-parent--center-cross"
+  onFocus={[Function]}
   onMouseLeave={[Function]}
   onMouseOver={[Function]}
 >
@@ -77,10 +76,7 @@ exports[`video Reduced motion renders as expected 1`] = `
     style={
       Object {
         "height": "36%",
-        "left": "50%",
         "padding": "4% 9% 1%",
-        "top": "50%",
-        "transform": "translate(-50%, -50%)",
         "width": "30%",
       }
     }

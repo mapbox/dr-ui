@@ -4,7 +4,7 @@ Disable autoplay and loop
 import React from 'react';
 import Video from '../video';
 
-export default class Example extends React.Component {
+export default class Example extends React.PureComponent {
   render() {
     return (
       <Video
