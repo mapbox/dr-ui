@@ -2,24 +2,25 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { VimeoPlayImage } from '../related-page/vimeo';
 
-export default class Video extends React.Component {
+export default class Video extends React.PureComponent {
   constructor(props) {
     super(props);
+    // by default: assume the users prefers reduced motion
     this.state = {
-      isPlaying: false, // assume the video is not playing
-      autoPlay: undefined, // turn off autoplay by default
-      loop: undefined // turn off loop by default
+      isPlaying: false, // the video is not playing
+      autoPlay: undefined, // turn off autoplay
+      loop: undefined // turn off loop
     };
     this.video = React.createRef();
   }
 
   componentDidMount() {
-    // check if user prefers reduced motion
+    // check the users preference
     const prefersReducedMotion =
       typeof window !== 'undefined'
         ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
         : false;
-    // if they don't prefer reduced motion, set video props
+    // if `prefers-reduced-motion: reduce` is not set, use props to override state defaults
     if (!prefersReducedMotion) {
       this.setState({
         autoPlay: this.props.autoplay,
@@ -61,6 +62,7 @@ export default class Video extends React.Component {
       autoPlay,
       loop
     };
+
     return (
       <div
         className="relative"
@@ -97,8 +99,8 @@ export default class Video extends React.Component {
           onPause={this.onStop}
         >
           <p>
-            Your browser doesn't support HTML5 video. Here is a{' '}
-            <a href={this.props.src}>link to the video</a> instead.
+            Your browser doesn't support HTML5 video. Open{' '}
+            <a href={this.props.src}>link to the video</a>.
           </p>
         </video>
       </div>
@@ -106,14 +108,19 @@ export default class Video extends React.Component {
   }
 }
 
+// default props are only set if the user does not prefer reduced motion
 Video.defaultProps = {
   autoplay: true,
   loop: true
 };
 
 Video.propTypes = {
+  /** The path to the video. */
   src: PropTypes.string.isRequired,
+  /** The title of the video. */
   title: PropTypes.string.isRequired,
+  /** If true, the video will autoplay unless the user prefers reduced motion.*/
   autoplay: PropTypes.bool,
+  /** If true, the video will loop unless the user prefers reduced motion. */
   loop: PropTypes.bool
 };

@@ -52,14 +52,14 @@ exports[`video Basic renders as expected 1`] = `
     width="100%"
   >
     <p>
-      Your browser doesn't support HTML5 video. Here is a
+      Your browser doesn't support HTML5 video. Open
        
       <a
         href="../files/browser-example.mp4"
       >
         link to the video
       </a>
-       instead.
+      .
     </p>
   </video>
 </div>
@@ -115,14 +115,14 @@ exports[`video Reduced motion renders as expected 1`] = `
     width="100%"
   >
     <p>
-      Your browser doesn't support HTML5 video. Here is a
+      Your browser doesn't support HTML5 video. Open
        
       <a
         href="../files/browser-example.mp4"
       >
         link to the video
       </a>
-       instead.
+      .
     </p>
   </video>
 </div>
