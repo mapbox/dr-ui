@@ -12,11 +12,11 @@ const prefersReducedMotion =
     : false;
 
 testCases.basic = {
-  description: `Basic. Your settings${
-    !prefersReducedMotion && ' do not '
+  description: `Basic. Your system settings${
+    prefersReducedMotion ? ' ' : ' do not '
   }prefer reduced motion, the video will${
     prefersReducedMotion ? ' not ' : ' '
-  }autoplay.`,
+  }autoplay (unless your browser settings block autoplay).`,
   element: <Basic />
 };
 

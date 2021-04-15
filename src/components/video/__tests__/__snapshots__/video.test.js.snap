@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`video Basic. Your settings do not prefer reduced motion, the video will autoplay. renders as expected 1`] = `
+exports[`video Basic. Your system settings do not prefer reduced motion, the video will autoplay (unless your browser settings block autoplay). renders as expected 1`] = `
 <div
   className="relative flex-parent flex-parent--center-main flex-parent--center-cross"
   onFocus={[Function]}
