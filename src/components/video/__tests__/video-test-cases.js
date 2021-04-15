@@ -6,13 +6,23 @@ import Video from '../video';
 const testCases = {};
 const noRenderCases = {};
 
+const prefersReducedMotion =
+  typeof window !== 'undefined' && window.matchMedia !== undefined
+    ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    : false;
+
 testCases.basic = {
-  description: 'Basic',
+  description: `Basic. Your settings${
+    !prefersReducedMotion && ' do not '
+  }prefer reduced motion, the video will${
+    prefersReducedMotion ? ' not ' : ' '
+  }autoplay.`,
   element: <Basic />
 };
 
 testCases.settings = {
-  description: 'Turn off autoplay and loop',
+  description:
+    'The video will not autoplay. Sets autoplay={false} and loop={false}',
   element: <Settings />
 };
 

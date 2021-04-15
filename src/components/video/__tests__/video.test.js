@@ -29,6 +29,32 @@ describe('video', () => {
     });
   });
 
+  describe(testCases.settings.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      window.matchMedia = jest.fn().mockImplementation((query) => {
+        return {
+          matches: false,
+          media: query,
+          onchange: null,
+          addListener: jest.fn(),
+          removeListener: jest.fn()
+        };
+      });
+
+      testCase = testCases.settings;
+      wrapper = renderer.create(testCase.element);
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
+
   describe(noRenderCases.reducedMotion.description, () => {
     let testCase;
     let wrapper;
