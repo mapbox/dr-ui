@@ -37,6 +37,7 @@ exports[`video Basic renders as expected 1`] = `
     onEnded={[Function]}
     onPause={[Function]}
     onPlay={[Function]}
+    playsInline={true}
     src="../files/browser-example.mp4"
     title="A video!"
     type="video/mp4"

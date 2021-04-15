@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/media-has-caption */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { VimeoPlayImage } from '../related-page/vimeo';
@@ -55,12 +56,14 @@ export default class Video extends React.PureComponent {
   };
 
   render() {
-    const { src, title } = this.props;
+    const { src, title, muted } = this.props;
     const { isPlaying, autoPlay, loop } = this.state;
 
     const videoProps = {
       autoPlay,
-      loop
+      playsInline: autoPlay, // needed for autoPlay in ios and safari
+      loop,
+      muted
     };
 
     return (
@@ -80,7 +83,6 @@ export default class Video extends React.PureComponent {
         )}
         <video
           {...videoProps}
-          muted
           width="100%"
           className="block mx-auto"
           src={src}
@@ -104,7 +106,8 @@ export default class Video extends React.PureComponent {
 // default props are only set if the user does not prefer reduced motion
 Video.defaultProps = {
   autoplay: true,
-  loop: true
+  loop: true,
+  muted: true
 };
 
 Video.propTypes = {
@@ -115,5 +118,7 @@ Video.propTypes = {
   /** If true, the video will autoplay unless the user prefers reduced motion.*/
   autoplay: PropTypes.bool,
   /** If true, the video will loop unless the user prefers reduced motion. */
-  loop: PropTypes.bool
+  loop: PropTypes.bool,
+  /** If true, the video will be muted. */
+  muted: PropTypes.bool
 };
