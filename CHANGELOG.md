@@ -15,6 +15,7 @@ hideFromSearchEngines: true
 
 - Replace `id` with `aria-label` in `VimeoPlayImage` to prevent duplicated `id`s when more than one instance is on the same page. [#438](https://github.com/mapbox/dr-ui/pull/438)
 - Make `filename` optional for `CodeSnippetTitle`.
+- Make `Video` disable autoplay by default. [#276](https://github.com/mapbox/dr-ui/pull/276)
 
 ## 3.3.1
 
