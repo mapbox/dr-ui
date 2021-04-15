@@ -313,18 +313,13 @@ exports[`phone iOS landscape renders as expected 1`] = `
           onClick={[Function]}
         >
           <svg
-            aria-labelledby="play-icon-title"
+            aria-label="Play"
             fill="#fff"
             focusable="false"
             role="img"
             viewBox="0 0 20 20"
             width="100%"
           >
-            <title
-              id="play-icon-title"
-            >
-              Play
-            </title>
             <polygon
               points="1,0 20,10 1,20"
             />
