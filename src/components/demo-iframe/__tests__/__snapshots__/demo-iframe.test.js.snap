@@ -105,62 +105,42 @@ exports[`demo-iframe Basic renders as expected 1`] = `
 exports[`demo-iframe Missing token will return null component renders as expected 1`] = `null`;
 
 exports[`demo-iframe With token renders as expected 1`] = `
-<div
-  style={
-    Object {
-      "minHeight": 430,
-    }
-  }
->
-  <div
-    className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
-    style={
-      Object {
-        "background": "#feefe2",
-        "color": "#78471c",
-      }
-    }
+<div>
+  <iframe
+    height={400}
+    src="https://api.mapbox.com/styles/v1/examples/cjj0b5ie80ec32so5uo8ox21m.html?fresh=true&title=true&access_token=p.key10101010101010101010#15/40.751589/-73.986485/-28/60"
+    title="Static API request"
+    width="100%"
+  />
+  <a
+    className="link"
+    href="https://api.mapbox.com/styles/v1/examples/cjj0b5ie80ec32so5uo8ox21m.html?fresh=true&title=true&access_token=p.key10101010101010101010#15/40.751589/-73.986485/-28/60"
   >
-    <div
-      className="flex-child mr18 none block-mm pt3"
-    >
-      <div
-        className="bg-orange-light round-full color-orange flex-parent flex-parent--center-main flex-parent--center-cross"
-        style={
-          Object {
-            "height": 50,
-            "width": 50,
-          }
-        }
+    <span>
+      View fullscreen
+       
+      <span
+        className="txt-nowrap"
       >
+        demo
         <svg
-          className="events-none icon"
+          className="events-none icon inline-block align-t"
           focusable="false"
           role="presentation"
           style={
             Object {
-              "height": 40,
-              "width": 40,
+              "height": "1.5em",
+              "width": "1.5em",
             }
           }
         >
           <use
-            xlinkHref="#icon-alert"
+            xlinkHref="#icon-chevron-right"
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
-      </div>
-    </div>
-    <div
-      className="flex-child prose"
-    >
-      <div
-        className="txt-bold txt-m mb6"
-      >
-        Mapbox GL unsupported
-      </div>
-      Mapbox GL is unsupported due to insufficient worker support.
-    </div>
-  </div>
+      </span>
+    </span>
+  </a>
 </div>
 `;

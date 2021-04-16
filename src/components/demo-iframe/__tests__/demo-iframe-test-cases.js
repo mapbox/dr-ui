@@ -10,14 +10,15 @@ testCases.basic = {
   element: <Basic />
 };
 
-testCases.token = {
+noRenderCases.token = {
   component: DemoIframe,
   description: 'With token',
   props: {
     src:
       'https://api.mapbox.com/styles/v1/examples/cjj0b5ie80ec32so5uo8ox21m.html?fresh=true&title=true&access_token=MapboxAccessToken#15/40.751589/-73.986485/-28/60',
     title: 'Static API request',
-    MapboxAccessToken: 'p.key10101010101010101010'
+    MapboxAccessToken: 'p.key10101010101010101010',
+    gl: false
   }
 };
 
