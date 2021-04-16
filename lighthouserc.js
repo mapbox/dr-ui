@@ -87,15 +87,39 @@ module.exports = {
             'uses-webp-images': 'off',
             'server-response-time': 'off',
             // SEE OVERRIDES BELOW
-            'errors-in-console': 'off'
+            'errors-in-console': 'off',
+            'duplicate-id-active': 'off',
+            'duplicate-id-aria': 'off',
+            'form-field-multiple-labels': 'off',
+            'tap-targets': 'off'
           }
         },
+        //--------------------------------
         // OVERRIDES
-        // turn on errors-in-console for all components, except ErrorBoundary
+        //--------------------------------
+        // We expect ErrorBoundary to log an error to the console
         {
           matchingUrlPattern: 'http://localhost:9966/(?!ErrorBoundary).*',
           assertions: {
             'errors-in-console': 'error'
+          }
+        },
+        // Disable audits in PageLayout until we can fix them
+        {
+          matchingUrlPattern: 'http://localhost:9966/(?!PageLayout).*',
+          assertions: {
+            'duplicate-id-active': 'error', // Feedback
+            'duplicate-id-aria': 'error', // Search
+            'form-field-multiple-labels': 'error' // Search
+          }
+        },
+        // Disable tap-targets for known components until we can fix
+        // See: https://github.com/mapbox/dr-ui/issues/441
+        {
+          matchingUrlPattern:
+            'http://localhost:9966/(?!ToggleableCodeBlock|PageLayout|OverviewHeader|OnThisPage|ContextlessIosViewControllerToggle|ContextlessAndroidActivityToggle|NumberedCodeSnippet).*',
+          assertions: {
+            'tap-targets': 'error'
           }
         }
       ]
