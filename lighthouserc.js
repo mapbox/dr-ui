@@ -1,7 +1,7 @@
 const path = require('path');
 const glob = require('glob');
 const pascalCase = require('pascal-case');
-const execa = require('execa');
+const { execSync } = require('child_process');
 
 // set true if lighthouse should only check files in the diff
 const filterByDiff = true;
@@ -9,13 +9,12 @@ const filterByDiff = true;
 function getComponents() {
   let diff;
   if (filterByDiff) {
-    const { stdout } = execa.sync(
-      'git diff origin/main --name-only -- src/components/',
-      {
-        shell: true
-      }
-    );
-    diff = stdout.split('\n');
+    diff = execSync('git diff origin/main --name-only -- src/components/', {
+      shell: true
+    })
+      .toString()
+      .trim()
+      .split('\n');
   }
   return glob
     .sync(path.join('./src/components', '**/*-test-cases.js'))
@@ -43,6 +42,8 @@ const urls = getComponents();
 if (!urls.length) {
   process.exit(0);
 }
+
+console.log(`Running Lighthouse on ${urls.length} test cases.`);
 
 // https://github.com/GoogleChrome/lighthouse-ci/blob/main/docs/configuration.md
 module.exports = {
