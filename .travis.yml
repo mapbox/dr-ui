@@ -1,8 +1,7 @@
 language: node_js
-sudo: false
 notifications:
   email: false
-scripts:
+script:
   - npm test
   - npm run build-docs
   # run sitemap tests after build to assert sitemap is correct
@@ -14,3 +13,6 @@ addons:
   chrome: stable
 before_install:
   - npm install -g @lhci/cli@0.7.x
+before_script:
+  - git remote set-branches --add origin main
+  - git fetch

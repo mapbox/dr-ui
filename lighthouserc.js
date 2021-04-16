@@ -4,14 +4,17 @@ const pascalCase = require('pascal-case');
 const execa = require('execa');
 
 // set true if lighthouse should only check files in the diff
-const filterByDiff = false;
+const filterByDiff = true;
 
 function getComponents() {
   let diff;
   if (filterByDiff) {
-    const { stdout } = execa.sync('git diff --name-only main src/components/', {
-      shell: true
-    });
+    const { stdout } = execa.sync(
+      'git diff origin/main --name-only -- src/components/',
+      {
+        shell: true
+      }
+    );
     diff = stdout.split('\n');
   }
   return glob
@@ -35,6 +38,11 @@ function getComponents() {
 }
 
 const urls = getComponents();
+
+// if there are no files in the diff, exit without failure
+if (!urls.length) {
+  process.exit(0);
+}
 
 // https://github.com/GoogleChrome/lighthouse-ci/blob/main/docs/configuration.md
 module.exports = {
