@@ -62,12 +62,13 @@ export default class Video extends React.PureComponent {
     const videoProps = {
       autoPlay,
       loop,
-      muted
+      muted,
+      playsInline
     };
 
     return (
       <div
-        className="relative flex-parent flex-parent--center-main flex-parent--center-cross"
+        className="relative flex-parent flex-parent--center-main flex-parent--center-cross bg-gray"
         onMouseOver={this.onHover}
         onMouseLeave={this.onOut}
         onFocus={this.onHover}
@@ -84,14 +85,13 @@ export default class Video extends React.PureComponent {
           {...videoProps}
           width="100%"
           className="block mx-auto"
-          src={src}
+          src={`${src}#t=0.1`} // the hash enables preview on iOS
           type="video/mp4"
           title={title}
           ref={this.video}
           onPlay={this.onPlay}
           onEnded={this.onStop}
           onPause={this.onStop}
-          playsInline={playsInline}
         >
           <p>
             Your browser doesn't support HTML5 video. Open{' '}

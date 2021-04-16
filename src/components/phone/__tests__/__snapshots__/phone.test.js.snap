@@ -303,7 +303,7 @@ exports[`phone iOS landscape renders as expected 1`] = `
       className="relative"
     >
       <div
-        className="relative flex-parent flex-parent--center-main flex-parent--center-cross"
+        className="relative flex-parent flex-parent--center-main flex-parent--center-cross bg-gray"
         onFocus={[Function]}
         onMouseLeave={[Function]}
         onMouseOver={[Function]}
@@ -334,7 +334,7 @@ exports[`phone iOS landscape renders as expected 1`] = `
           onPause={[Function]}
           onPlay={[Function]}
           playsInline={true}
-          src="../files/browser-example.mp4"
+          src="../files/browser-example.mp4#t=0.1"
           title="example"
           type="video/mp4"
           width="100%"
