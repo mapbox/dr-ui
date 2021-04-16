@@ -15,6 +15,7 @@ export class VimeoModal extends React.PureComponent {
         <div className="py36">
           <div style={{ padding: '62.5% 0 0 0', position: 'relative' }}>
             <iframe
+              title={title}
               src={`https://player.vimeo.com/video/${vimeoId}?title=0&byline=0&portrait=0`}
               style={{
                 position: 'absolute',
@@ -91,11 +92,10 @@ export class VimeoPlayImage extends React.PureComponent {
           viewBox="0 0 20 20"
           width="100%"
           focusable="false"
-          aria-labelledby="play-icon-title"
+          aria-label="Play"
           role="img"
           fill={this.props.fallbackIcon ? '#7753eb' : '#fff'}
         >
-          <title id="play-icon-title">Play</title>
           <polygon points="1,0 20,10 1,20" />
         </svg>
       </IconWrapper>
