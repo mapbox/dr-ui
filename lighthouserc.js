@@ -9,7 +9,7 @@ const filterByDiff = true;
 function getComponents() {
   let diff;
   if (filterByDiff) {
-    diff = execSync('git diff origin/main --name-only -- src/components/', {
+    diff = execSync('git diff origin/4.0.0 --name-only -- src/components/', {
       shell: true
     })
       .toString()
