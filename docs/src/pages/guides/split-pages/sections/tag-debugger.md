@@ -6,7 +6,7 @@ splitPage: true
 tag: beta
 hideFeedback: true
 products:
-  - Mapbox fundamentals
+  - Documentation
 contentType: guide
 ---
 

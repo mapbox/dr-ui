@@ -5,7 +5,16 @@ import React from 'react';
 import ToggleableCodeBlock from '../toggleable-code-block';
 import { highlightJava } from '../../highlight/java';
 
-export default class Basic extends React.Component {
+export default class Basic extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      language: 'java'
+    };
+  }
+
+  changeLanguage = (language) => this.setState({ language });
+
   render() {
     const javaCodeSnippet = `
     public class MainActivity extends AppCompatActivity {
@@ -33,7 +42,7 @@ export default class Basic extends React.Component {
             [5, 8]
           ]
         }}
-        changeLanguage={() => {}}
+        changeLanguage={this.changeLanguage}
         filename="ThisIsAFile.extension"
         link="https://github.com/mapbox/"
         limitHeight={true}
@@ -41,27 +50,27 @@ export default class Basic extends React.Component {
           {
             label: 'JavaScript',
             language: 'javascript',
-            preferredLanguage: false
+            preferredLanguage: this.state.language === 'javascript'
           },
           {
             label: 'Swift',
             language: 'swift',
-            preferredLanguage: false
+            preferredLanguage: this.state.language === 'swift'
           },
           {
             label: 'Objective-C',
             language: 'objectiveC',
-            preferredLanguage: false
+            preferredLanguage: this.state.language === 'objectiveC'
           },
           {
             label: 'Java',
             language: 'java',
-            preferredLanguage: true
+            preferredLanguage: this.state.language === 'java'
           },
           {
             label: 'Kotlin',
             language: 'kotlin',
-            preferredLanguage: false
+            preferredLanguage: this.state.language === 'kotlin'
           }
         ]}
       />

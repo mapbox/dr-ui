@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Icon from '@mapbox/mr-ui/icon';
 import LevelIndicator from '../level-indicator/level-indicator';
 
-class Card extends React.Component {
+class Card extends React.PureComponent {
   render() {
     const { thumbnail, level, language, description, path, title } = this.props;
     let renderedThumbnail = '';

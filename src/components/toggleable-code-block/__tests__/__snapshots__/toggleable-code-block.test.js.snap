@@ -168,8 +168,8 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
           className="relative z2 h30"
           data-chunk-code="chunk-0"
         >
-          <div
-            className="wfull bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
+          <button
+            className="w-full bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
             onClick={[Function]}
           >
             <div
@@ -226,7 +226,7 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
             >
               show hidden lines
             </div>
-          </div>
+          </button>
         </div>
         <div
           className="relative z2"
@@ -270,8 +270,8 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
           className="relative z2 h30"
           data-chunk-code="chunk-2"
         >
-          <div
-            className="wfull bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
+          <button
+            className="w-full bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
             onClick={[Function]}
           >
             <div
@@ -328,7 +328,7 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
             >
               show hidden lines
             </div>
-          </div>
+          </button>
         </div>
         <div
           className="relative z2"
@@ -471,8 +471,8 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
           className="relative z2 h30"
           data-chunk-code="chunk-4"
         >
-          <div
-            className="wfull bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
+          <button
+            className="w-full bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
             onClick={[Function]}
           >
             <div
@@ -529,7 +529,7 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
             >
               show hidden lines
             </div>
-          </div>
+          </button>
         </div>
       </code>
     </pre>

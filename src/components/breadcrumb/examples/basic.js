@@ -4,7 +4,7 @@ Display breadcrumbs for a page.
 import React from 'react';
 import Breadcrumb from '../breadcrumb';
 
-export default class Basic extends React.Component {
+export default class Basic extends React.PureComponent {
   render() {
     return (
       <Breadcrumb

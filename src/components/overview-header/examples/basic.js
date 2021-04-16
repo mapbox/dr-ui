@@ -4,7 +4,7 @@ Basic.
 import React from 'react';
 import OverviewHeader from '../overview-header';
 
-export default class Basic extends React.Component {
+export default class Basic extends React.PureComponent {
   render() {
     return (
       <OverviewHeader
@@ -19,7 +19,10 @@ export default class Basic extends React.Component {
         installLink="https://www.mapbox.com/install"
         ghLink="https://github.com/mapbox"
         image={
-          <img src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg" />
+          <img
+            alt=""
+            src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
+          />
         }
       />
     );

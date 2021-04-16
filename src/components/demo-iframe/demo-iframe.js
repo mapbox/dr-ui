@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ChevronousText from '@mapbox/mr-ui/chevronous-text';
 import MapWrapper from '../map-wrapper/map-wrapper';
 
-export default class DemoIframe extends React.Component {
+export default class DemoIframe extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
@@ -22,7 +22,8 @@ export default class DemoIframe extends React.Component {
   }
 
   render() {
-    let { src, title, gl } = this.props;
+    let { src } = this.props;
+    const { title, gl } = this.props;
     const { mapboxAccessToken } = this.state;
     // check to see if the src is making a request to mapbox api
     const makeRequest = src.indexOf('MapboxAccessToken') > -1;

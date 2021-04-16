@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Feedback from '../feedback/feedback';
 
-export default class SplitPage extends React.Component {
+export default class SplitPage extends React.PureComponent {
   renderFeedback = () => {
     const { frontMatter, location, constants } = this.props;
     return (

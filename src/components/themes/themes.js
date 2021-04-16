@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Icon from '@mapbox/mr-ui/icon';
 
-class Image extends React.Component {
+class Image extends React.PureComponent {
   render() {
     const { color, icon } = this.props;
     return (

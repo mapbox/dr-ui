@@ -4,7 +4,7 @@
 import React from 'react';
 import PageLayout from '../page-layout';
 
-export default class Basic extends React.Component {
+export default class Basic extends React.PureComponent {
   render() {
     return (
       <PageLayout
