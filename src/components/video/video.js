@@ -6,7 +6,7 @@ import { VimeoPlayImage } from '../related-page/vimeo';
 export default class Video extends React.PureComponent {
   constructor(props) {
     super(props);
-    // by default: assume the users prefers reduced motion
+    // by default, Video will assume that the user prefers reduced motion
     this.state = {
       isPlaying: false, // the video is not playing
       autoPlay: undefined, // turn off autoplay
