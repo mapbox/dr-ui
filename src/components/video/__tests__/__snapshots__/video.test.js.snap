@@ -82,6 +82,7 @@ exports[`video Reduced motion renders as expected 1`] = `
     onEnded={[Function]}
     onPause={[Function]}
     onPlay={[Function]}
+    playsInline={true}
     src="../files/browser-example.mp4"
     title="A video!"
     type="video/mp4"
@@ -133,7 +134,7 @@ exports[`video The video will not autoplay. Sets autoplay={false} and loop={fals
     onEnded={[Function]}
     onPause={[Function]}
     onPlay={[Function]}
-    playsInline={false}
+    playsInline={true}
     src="./files/browser-example.mp4"
     title="A video!"
     type="video/mp4"

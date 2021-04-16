@@ -56,12 +56,11 @@ export default class Video extends React.PureComponent {
   };
 
   render() {
-    const { src, title, muted } = this.props;
+    const { src, title, muted, playsInline } = this.props;
     const { isPlaying, autoPlay, loop } = this.state;
 
     const videoProps = {
       autoPlay,
-      playsInline: autoPlay, // needed for autoPlay in ios and safari
       loop,
       muted
     };
@@ -92,6 +91,7 @@ export default class Video extends React.PureComponent {
           onPlay={this.onPlay}
           onEnded={this.onStop}
           onPause={this.onStop}
+          playsInline={playsInline}
         >
           <p>
             Your browser doesn't support HTML5 video. Open{' '}
@@ -107,7 +107,8 @@ export default class Video extends React.PureComponent {
 Video.defaultProps = {
   autoplay: true,
   loop: true,
-  muted: true
+  muted: true,
+  playsInline: true
 };
 
 Video.propTypes = {
@@ -120,5 +121,7 @@ Video.propTypes = {
   /** If true, the video will loop unless the user prefers reduced motion. */
   loop: PropTypes.bool,
   /** If true, the video will be muted. */
-  muted: PropTypes.bool
+  muted: PropTypes.bool,
+  /** If true, the video will play on the page for iOS/Safari. If false, the video open fullscreen on play. */
+  playsInline: PropTypes.bool
 };
