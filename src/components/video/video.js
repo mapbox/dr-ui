@@ -6,11 +6,11 @@ import { VimeoPlayImage } from '../related-page/vimeo';
 export default class Video extends React.PureComponent {
   constructor(props) {
     super(props);
-    // by default, Video will assume that the user prefers reduced motion
+    // By default, Video will assume that the user prefers reduced motion
     this.state = {
-      isPlaying: false, // the video is not playing
-      autoPlay: undefined, // turn off autoplay
-      loop: undefined // turn off loop
+      isPlaying: false, // The video is not playing
+      autoPlay: undefined, // Turn off autoplay
+      loop: undefined // Turn off loop
     };
     this.video = React.createRef();
   }
@@ -56,14 +56,15 @@ export default class Video extends React.PureComponent {
   };
 
   render() {
-    const { src, title, muted, playsInline } = this.props;
+    const { src, title, muted, playsInline, poster } = this.props;
     const { isPlaying, autoPlay, loop } = this.state;
 
     const videoProps = {
       autoPlay,
       loop,
       muted,
-      playsInline
+      playsInline,
+      poster
     };
 
     return (
@@ -108,7 +109,8 @@ Video.defaultProps = {
   autoplay: true,
   loop: true,
   muted: true,
-  playsInline: true
+  playsInline: true,
+  poster: undefined
 };
 
 Video.propTypes = {
@@ -123,5 +125,7 @@ Video.propTypes = {
   /** If true, the video will be muted. */
   muted: PropTypes.bool,
   /** If true, the video will play on the page for iOS/Safari. If false, the video open fullscreen on play. */
-  playsInline: PropTypes.bool
+  playsInline: PropTypes.bool,
+  /** A path to a preview image for the video. */
+  poster: PropTypes.string
 };
