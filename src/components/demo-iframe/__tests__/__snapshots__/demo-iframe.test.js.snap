@@ -104,7 +104,7 @@ exports[`demo-iframe Basic renders as expected 1`] = `
 
 exports[`demo-iframe Missing token will return null component renders as expected 1`] = `null`;
 
-exports[`demo-iframe With token renders as expected 1`] = `
+exports[`demo-iframe Overrides the MapboxAccessToken with another token renders as expected 1`] = `
 <div>
   <iframe
     height={400}
