@@ -2,7 +2,13 @@ language: node_js
 sudo: false
 notifications:
   email: false
-
 scripts:
   - npm test
   - npm run build-docs
+  - lhci autorun
+
+# dependencies of lhci:
+addons:
+  chrome: stable
+before_install:
+  - npm install -g @lhci/cli@0.7.x

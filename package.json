@@ -76,6 +76,7 @@
     "eslint-plugin-xss": "^0.1.10",
     "execa": "^0.10.0",
     "gh-pages": "^3.1.0",
+    "glob": "^7.1.6",
     "hard-rejection": "^1.0.0",
     "husky": "^4.3.8",
     "jest": "^26.6.3",
