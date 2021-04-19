@@ -409,7 +409,6 @@ ExampleIndex.propTypes = {
 };
 
 class FilterSection extends React.PureComponent {
-  handleInput = (value, id) => this.props.handleInput(value, id);
   renderInput = () => {
     const {
       title,
@@ -428,7 +427,7 @@ class FilterSection extends React.PureComponent {
           placeholder={placeholder}
           id={id}
           value={activeItem}
-          onChange={this.handleInput}
+          onChange={this.props.handleInput}
           themeControlInput="input input--s relative wmax180"
           themeLabel={themeLabel}
           label={title}
@@ -445,7 +444,7 @@ class FilterSection extends React.PureComponent {
           label={title}
           themeLabel={`${themeLabel} ml6`}
           themeControlSwitch="switch--s-label switch--gray"
-          onChange={this.handleInput}
+          onChange={this.props.handleInput}
         />
       );
     else
@@ -456,7 +455,7 @@ class FilterSection extends React.PureComponent {
           value={activeItem}
           themeLabel={`${themeLabel} w70`}
           themeControlSelect="select select--s"
-          onChange={this.handleInput}
+          onChange={this.props.handleInput}
           options={[
             {
               label: `All ${title.toLowerCase()}`,
