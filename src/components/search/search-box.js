@@ -36,7 +36,7 @@ class SearchBox extends React.PureComponent {
 
   componentDidMount() {
     this.checkWidth();
-    window.addEventListener('resize', this.checkWidth);
+    window.addEventListener('resize', this.checkWidth, { passive: true });
   }
 
   componentWillUnmount() {

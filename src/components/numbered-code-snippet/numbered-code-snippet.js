@@ -30,7 +30,9 @@ export default class NumberedCodeSnippet extends React.PureComponent {
      * whenever the window is resized.
      */
     this.adjustPositions();
-    getWindow().addEventListener('resize', this.adjustPositionsResize);
+    getWindow().addEventListener('resize', this.adjustPositionsResize, {
+      passive: true
+    });
 
     /**
      * Set the syntax highlighting theme.

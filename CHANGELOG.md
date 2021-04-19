@@ -15,6 +15,7 @@ hideFromSearchEngines: true
 
 - Replace `id` with `aria-label` in `VimeoPlayImage` to prevent duplicated `id`s when more than one instance is on the same page. [#438](https://github.com/mapbox/dr-ui/pull/438)
 - Make `filename` optional for `CodeSnippetTitle`.
+- Use passive event listeners on `Search`, `NumberedCodeSnippet`, and `OnThisPage` to improve performance. [#437](https://github.com/mapbox/dr-ui/pull/437)
 - 🚨The `CodeSnippet` prop `highlighter` no longer accepts an arrow function.
   - Before: `highlighter={() => highlightJson}`
   - After: `highlighter={highlightJson}`
