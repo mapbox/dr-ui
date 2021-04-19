@@ -143,6 +143,12 @@ export default class NumberedCodeSnippet extends React.PureComponent {
   render() {
     const { props } = this;
 
+    function onCopy() {
+      if (window && window.analytics) {
+        analytics.track('Copied NumberedCodeSnippet to clipboard');
+      }
+    }
+
     const rawCodeLines = props.code.trim().split('\n');
 
     /* If highlightedCode is not provided, show raw code. */
@@ -253,7 +259,6 @@ export default class NumberedCodeSnippet extends React.PureComponent {
     const highlightElements = [];
     const copyElements = [];
     let previousCount = 0;
-    let liveChunkCount = -1; // Incremented to give CopyButtons an identifier
     allChunks.forEach((codeChunk, i) => {
       const chunkId = `chunk-${i}`;
       const lineEls = codeChunk.highlightedLines.map((line, i) => {
@@ -365,10 +370,6 @@ export default class NumberedCodeSnippet extends React.PureComponent {
         );
       }
 
-      function onCopyChunk() {
-        props.onCopy(++liveChunkCount);
-      }
-
       if (codeChunk.live) {
         highlightElements.push(
           <div
@@ -381,18 +382,16 @@ export default class NumberedCodeSnippet extends React.PureComponent {
           </div>
         );
 
-        if (props.onCopy) {
-          copyElements.push(
-            <div
-              key={i}
-              data-chunk-copy={chunkId}
-              className="absolute z3 right mr3 color-white"
-              style={{ opacity: 0, transition: 'opacity 300ms linear' }}
-            >
-              <CopyButton text={codeChunk.raw} onCopy={onCopyChunk} />
-            </div>
-          );
-        }
+        copyElements.push(
+          <div
+            key={i}
+            data-chunk-copy={chunkId}
+            className="absolute z3 right mr3 color-white"
+            style={{ opacity: 0, transition: 'opacity 300ms linear' }}
+          >
+            <CopyButton text={codeChunk.raw} onCopy={onCopy} />
+          </div>
+        );
       }
       previousCount = previousCount + lineEls.length;
     });
@@ -401,10 +400,10 @@ export default class NumberedCodeSnippet extends React.PureComponent {
     const codeClasses = 'px0 hljs';
 
     let copyAllButton = null;
-    if (props.copyRanges === undefined && props.onCopy) {
+    if (props.copyRanges === undefined) {
       copyAllButton = (
         <div className="absolute z2 top right mr6 mt6 color-white">
-          <CopyButton text={props.code} onCopy={props.onCopy} />
+          <CopyButton text={props.code} onCopy={onCopy} />
         </div>
       );
     }
@@ -458,11 +457,6 @@ NumberedCodeSnippet.propTypes = {
    * A maximum height for the snippet. If the code exceeds this height, the snippet will scroll internally.
    */
   maxHeight: PropTypes.number,
-  /**
-   * A callback that is invoked when the snippet (or a chunk of the snippet) is copied. If `copyRanges`
-   * are provided, the callback is passed the index (0-based) of the chunk that was copied.
-   */
-  onCopy: PropTypes.func,
   /**
    * CSS that styles the highlighted code.
    */
