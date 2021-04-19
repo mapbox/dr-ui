@@ -33,7 +33,7 @@ exports[`video Basic. Your system settings do not prefer reduced motion, the vid
     onPause={[Function]}
     onPlay={[Function]}
     playsInline={true}
-    src="../files/browser-example.mp4#t=0.1"
+    src="../files/browser-example.mp4"
     title="A video!"
     type="video/mp4"
     width="100%"
@@ -83,7 +83,7 @@ exports[`video Reduced motion renders as expected 1`] = `
     onPause={[Function]}
     onPlay={[Function]}
     playsInline={true}
-    src="../files/browser-example.mp4#t=0.1"
+    src="../files/browser-example.mp4"
     title="A video!"
     type="video/mp4"
     width="100%"
@@ -135,7 +135,7 @@ exports[`video The video will not autoplay. Sets autoplay={false} and loop={fals
     onPause={[Function]}
     onPlay={[Function]}
     playsInline={true}
-    src="./files/browser-example.mp4#t=0.1"
+    src="./files/browser-example.mp4"
     title="A video!"
     type="video/mp4"
     width="100%"

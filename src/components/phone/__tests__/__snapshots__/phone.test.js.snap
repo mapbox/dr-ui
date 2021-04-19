@@ -334,7 +334,7 @@ exports[`phone iOS landscape renders as expected 1`] = `
           onPause={[Function]}
           onPlay={[Function]}
           playsInline={true}
-          src="../files/browser-example.mp4#t=0.1"
+          src="../files/browser-example.mp4"
           title="example"
           type="video/mp4"
           width="100%"

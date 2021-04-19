@@ -86,7 +86,7 @@ export default class Video extends React.PureComponent {
           {...videoProps}
           width="100%"
           className="block mx-auto"
-          src={`${src}#t=0.1`} // the hash enables preview on iOS
+          src={src}
           type="video/mp4"
           title={title}
           ref={this.video}
