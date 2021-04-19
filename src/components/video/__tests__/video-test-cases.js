@@ -1,6 +1,7 @@
 import React from 'react';
 import Basic from '../examples/basic';
 import Settings from '../examples/settings';
+import Poster from '../examples/poster';
 import Video from '../video';
 
 const testCases = {};
@@ -24,6 +25,12 @@ testCases.settings = {
   description:
     'The video will not autoplay. Sets autoplay={false} and loop={false}',
   element: <Settings />
+};
+
+testCases.poster = {
+  description:
+    'The video will not autoplay. Uses `poster` to set preview image.',
+  element: <Poster />
 };
 
 noRenderCases.reducedMotion = {

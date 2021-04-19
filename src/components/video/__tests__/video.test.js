@@ -55,6 +55,22 @@ describe('video', () => {
     });
   });
 
+  describe(testCases.poster.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = testCases.poster;
+      wrapper = renderer.create(testCase.element);
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
+
   describe(noRenderCases.reducedMotion.description, () => {
     let testCase;
     let wrapper;

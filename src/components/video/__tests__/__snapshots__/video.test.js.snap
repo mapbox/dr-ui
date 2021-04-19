@@ -153,3 +153,56 @@ exports[`video The video will not autoplay. Sets autoplay={false} and loop={fals
   </video>
 </div>
 `;
+
+exports[`video The video will not autoplay. Uses \`poster\` to set preview image. renders as expected 1`] = `
+<div
+  className="relative flex-parent flex-parent--center-main flex-parent--center-cross bg-gray"
+  onFocus={[Function]}
+  onMouseLeave={[Function]}
+  onMouseOver={[Function]}
+>
+  <button
+    className="bg-darken75 bg-darken50-on-hover w60 h60 py12 px12 w120-mm h120-mm py18-mm px18-mm round cursor-pointer z1 absolute"
+    onClick={[Function]}
+  >
+    <svg
+      aria-label="Play"
+      fill="#fff"
+      focusable="false"
+      role="img"
+      viewBox="0 0 20 20"
+      width="100%"
+    >
+      <polygon
+        points="1,0 20,10 1,20"
+      />
+    </svg>
+  </button>
+  <video
+    autoPlay={false}
+    className="block mx-auto"
+    loop={true}
+    muted={true}
+    onEnded={[Function]}
+    onPause={[Function]}
+    onPlay={[Function]}
+    playsInline={true}
+    poster="./files/browser-example-mp4-poster.png"
+    src="./files/browser-example.mp4"
+    title="A video!"
+    type="video/mp4"
+    width="100%"
+  >
+    <p>
+      Your browser doesn't support HTML5 video. Open
+       
+      <a
+        href="./files/browser-example.mp4"
+      >
+        link to the video
+      </a>
+      .
+    </p>
+  </video>
+</div>
+`;
