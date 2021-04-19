@@ -135,7 +135,7 @@ exports[`video The video will not autoplay. Sets autoplay={false} and loop={fals
     onPause={[Function]}
     onPlay={[Function]}
     playsInline={true}
-    src="./files/browser-example.mp4"
+    src="../files/browser-example.mp4"
     title="A video!"
     type="video/mp4"
     width="100%"
@@ -144,7 +144,7 @@ exports[`video The video will not autoplay. Sets autoplay={false} and loop={fals
       Your browser doesn't support HTML5 video. Open
        
       <a
-        href="./files/browser-example.mp4"
+        href="../files/browser-example.mp4"
       >
         link to the video
       </a>
@@ -187,8 +187,8 @@ exports[`video The video will not autoplay. Uses \`poster\` to set preview image
     onPause={[Function]}
     onPlay={[Function]}
     playsInline={true}
-    poster="./files/browser-example-mp4-poster.png"
-    src="./files/browser-example.mp4"
+    poster="../files/browser-example-mp4-poster.png"
+    src="../files/browser-example.mp4"
     title="A video!"
     type="video/mp4"
     width="100%"
@@ -197,7 +197,7 @@ exports[`video The video will not autoplay. Uses \`poster\` to set preview image
       Your browser doesn't support HTML5 video. Open
        
       <a
-        href="./files/browser-example.mp4"
+        href="../files/browser-example.mp4"
       >
         link to the video
       </a>

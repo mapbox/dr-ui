@@ -9,8 +9,8 @@ export default class Example extends React.PureComponent {
     return (
       <Video
         autoplay={false}
-        poster="./files/browser-example-mp4-poster.png"
-        src="./files/browser-example.mp4"
+        poster="../files/browser-example-mp4-poster.png"
+        src="../files/browser-example.mp4"
         title="A video!"
       />
     );

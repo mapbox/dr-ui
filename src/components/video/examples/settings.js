@@ -10,7 +10,7 @@ export default class Example extends React.PureComponent {
       <Video
         autoplay={false}
         loop={false}
-        src="./files/browser-example.mp4"
+        src="../files/browser-example.mp4"
         title="A video!"
       />
     );
