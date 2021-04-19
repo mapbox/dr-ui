@@ -19,6 +19,7 @@ export default class Example extends React.Component {
           defaultValue=""
           value={this.state.query}
           onChange={this.handleSelect}
+          onBlur={this.handleSelect}
         >
           <option value="" disabled>
             Select a product

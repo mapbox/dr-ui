@@ -3,25 +3,25 @@ import PropTypes from 'prop-types';
 import Icon from '@mapbox/mr-ui/icon';
 
 const containerClasses =
-  'wfull bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s';
+  'w-full bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s';
 
 class HideLines extends React.PureComponent {
   render() {
     return (
       <div>
-        <div
+        <button
           className={`${containerClasses} h30 bg-darken5`}
           onClick={this.props.onClick}
         >
           <Icon name="chevron-down" size={12} inline={true} /> hide lines
-        </div>
+        </button>
         {this.props.children}
-        <div
+        <button
           className={`${containerClasses} h30 bg-darken5`}
           onClick={this.props.onClick}
         >
           <Icon name="chevron-up" size={12} inline={true} /> hide lines
-        </div>
+        </button>
       </div>
     );
   }
@@ -37,7 +37,7 @@ HideLines.propTypes = {
 class ShowLines extends React.PureComponent {
   render() {
     return (
-      <div
+      <button
         className={`${containerClasses} h30 flex-parent flex-parent--center-cross`}
         onClick={this.props.onClick}
       >
@@ -52,7 +52,7 @@ class ShowLines extends React.PureComponent {
         <div className="flex-child" style={{ marginLeft: '8px' }}>
           show hidden lines
         </div>
-      </div>
+      </button>
     );
   }
 }

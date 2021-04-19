@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { testCases } from './demo-iframe-test-cases.js';
+import { testCases, noRenderCases } from './demo-iframe-test-cases.js';
 
 describe('demo-iframe', () => {
   describe(testCases.basic.description, () => {
@@ -19,13 +19,13 @@ describe('demo-iframe', () => {
     });
   });
 
-  describe(testCases.token.description, () => {
+  describe(noRenderCases.token.description, () => {
     let testCase;
     let wrapper;
     let tree;
 
     beforeEach(() => {
-      testCase = testCases.token;
+      testCase = noRenderCases.token;
       wrapper = renderer.create(
         React.createElement(testCase.component, testCase.props)
       );

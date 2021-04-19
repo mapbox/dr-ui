@@ -148,7 +148,8 @@
         "prependJs": [
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
           "import topics from '@mapbox/batfish/data/filters'; // eslint-disable-line",
-          "import splitPages from '@mapbox/batfish/data/split-pages'; // eslint-disable-line"
+          "import splitPages from '@mapbox/batfish/data/split-pages'; // eslint-disable-line",
+          "import sitemapIgnore from '@mapbox/batfish/data/sitemap-ignore'; // eslint-disable-line"
         ]
       }
     },
@@ -275,7 +276,9 @@
     {
       "filePath": "./docs/src/pages/index.js",
       "path": "/dr-ui/",
-      "frontMatter": {}
+      "frontMatter": {
+        "hideFromSearchEngines": true
+      }
     },
     {
       "filePath": "./node_modules/@mapbox/batfish/dist/webpack/default-not-found.js",
