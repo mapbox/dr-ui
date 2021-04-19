@@ -4,6 +4,9 @@ import Icon from '@mapbox/mr-ui/icon';
 import PopoverTrigger from '@mapbox/mr-ui/popover-trigger';
 
 export default class BackToTopButton extends React.PureComponent {
+  getPopoverContent = () => {
+    return <div className="txt-s">Back to top!</div>;
+  };
   render() {
     function handleClick() {
       document.documentElement.scrollTop = 0; // fallback
@@ -14,7 +17,7 @@ export default class BackToTopButton extends React.PureComponent {
         <PopoverTrigger
           respondsToClick={false}
           respondsToHover={true}
-          content={<div className="txt-s">Back to top!</div>}
+          content={this.getPopoverContent}
           popoverProps={{
             alignment: 'center',
             placement: 'top',
