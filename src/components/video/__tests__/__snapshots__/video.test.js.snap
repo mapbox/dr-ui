@@ -102,7 +102,7 @@ exports[`video Reduced motion renders as expected 1`] = `
 </div>
 `;
 
-exports[`video The video will not autoplay. Sets autoplay={false} and loop={false} renders as expected 1`] = `
+exports[`video The video will not autoplay. Sets autoplay={false} and loop={false}. A preview image will not appear on iOS. renders as expected 1`] = `
 <div
   className="relative flex-parent flex-parent--center-main flex-parent--center-cross bg-gray"
   onFocus={[Function]}

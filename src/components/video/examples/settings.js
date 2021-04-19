@@ -1,5 +1,5 @@
 /*
-Disable autoplay and loop
+Disable `autoplay` and `loop`.
 */
 import React from 'react';
 import Video from '../video';

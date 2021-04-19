@@ -23,7 +23,7 @@ testCases.basic = {
 
 testCases.settings = {
   description:
-    'The video will not autoplay. Sets autoplay={false} and loop={false}',
+    'The video will not autoplay. Sets autoplay={false} and loop={false}. A preview image will not appear on iOS.',
   element: <Settings />
 };
 
