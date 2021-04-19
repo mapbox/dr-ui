@@ -20,11 +20,16 @@ export default class ToggleableCodeBlock extends React.PureComponent {
       maxHeight: limitHeight ? 480 : undefined,
       highlightThemeCss: highlightThemeCss
     };
+    function onCopy() {
+      if (window && window.analytics) {
+        analytics.track('Copied ToggleableCodeBlock to clipboard');
+      }
+    }
     if (copyRanges) {
       snippetProps.copyRanges = copyRanges[selectedLanguage];
       return <NumberedCodeSnippet {...snippetProps} />;
     } else {
-      return <CodeSnippet {...snippetProps} />;
+      return <CodeSnippet onCopy={onCopy} {...snippetProps} />;
     }
   };
 
