@@ -4,6 +4,7 @@ import CodeSnippet from '@mapbox/mr-ui/code-snippet';
 import NumberedCodeSnippet from '../numbered-code-snippet/numbered-code-snippet';
 import CodeSnippetTitle from '../code-snippet-title/code-snippet-title';
 import CodeToggle from '../code-toggle/code-toggle';
+import onCopy from '../code-snippet/on-copy';
 import { highlightThemeCss } from '../highlight/theme-css.js';
 
 export default class ToggleableCodeBlock extends React.PureComponent {
@@ -20,11 +21,6 @@ export default class ToggleableCodeBlock extends React.PureComponent {
       maxHeight: limitHeight ? 480 : undefined,
       highlightThemeCss: highlightThemeCss
     };
-    function onCopy() {
-      if (window && window.analytics) {
-        analytics.track('Copied ToggleableCodeBlock to clipboard');
-      }
-    }
     if (copyRanges) {
       snippetProps.copyRanges = copyRanges[selectedLanguage];
       return <NumberedCodeSnippet {...snippetProps} />;

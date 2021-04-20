@@ -4,6 +4,7 @@ import debounce from 'debounce';
 import classnames from 'classnames';
 import CopyButton from '@mapbox/mr-ui/copy-button';
 import { HideLines, ShowLines } from './show-hide-lines';
+import onCopy from '../code-snippet/on-copy';
 
 function getWindow() {
   if (typeof window === undefined) {
@@ -142,12 +143,6 @@ export default class NumberedCodeSnippet extends React.PureComponent {
 
   render() {
     const { props } = this;
-
-    function onCopy() {
-      if (window && window.analytics) {
-        analytics.track('Copied NumberedCodeSnippet to clipboard');
-      }
-    }
 
     const rawCodeLines = props.code.trim().split('\n');
 

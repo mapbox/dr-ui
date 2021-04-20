@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import CodeSnippet from '@mapbox/mr-ui/code-snippet';
 import CodeSnippetTitle from '../code-snippet-title/code-snippet-title';
+import onCopy from '../code-snippet/on-copy';
 import { highlightXml } from '../highlight/xml';
 import { highlightThemeCss } from '../highlight/theme-css.js';
 
@@ -15,12 +16,6 @@ export default class AndroidLayoutCodeBlock extends React.PureComponent {
   };
 
   render() {
-    function onCopy() {
-      if (window && window.analytics) {
-        analytics.track('Copied AndroidLayoutCodeBlock to clipboard');
-      }
-    }
-
     return (
       <div className="my24">
         {this.props.filename && this.renderTitle()}

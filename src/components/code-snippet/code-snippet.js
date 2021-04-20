@@ -7,6 +7,7 @@ import CodeSnippetTitle from '../code-snippet-title';
 import Edit from '../edit';
 import { highlightThemeCss } from '../highlight/theme-css.js';
 import classnames from 'classnames';
+import onCopy from './on-copy';
 
 class CodeSnippet extends React.PureComponent {
   editButtons = () => {
@@ -49,10 +50,6 @@ class CodeSnippet extends React.PureComponent {
     // only load the component if we have `code` and `highlighter`
     if (!highlighter && !code) return;
     // wrap the component in appcontext so we can get the user's token
-    function onCopy() {
-      if (window && window.analytics)
-        analytics.track('Copied example with clipboard');
-    }
     return (
       <div data-swiftype-index="false">
         {this.codeSnippetTitle()}
