@@ -10,7 +10,7 @@ export default class Everything extends React.PureComponent {
     return (
       <CodeSnippet
         code={`<h1>Hello world!</h1>`}
-        highlighter={() => highlightHtml}
+        highlighter={highlightHtml}
         filename="index.html"
         edit={{
           html: '<h1>Hello world!</h1>',

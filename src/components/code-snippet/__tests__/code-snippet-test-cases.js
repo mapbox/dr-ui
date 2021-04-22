@@ -24,7 +24,7 @@ testCases.noEdit = {
   description: 'CodeSnippet without edit buttons',
   props: {
     code: `<h1>hi</h1>`,
-    highlighter: () => highlightHtml,
+    highlighter: highlightHtml,
     filename: 'index.html'
   }
 };
@@ -34,7 +34,7 @@ testCases.noTitle = {
   description: 'CodeSnippet without title',
   props: {
     code: `<h1>hi</h1>`,
-    highlighter: () => highlightHtml
+    highlighter: highlightHtml
   }
 };
 
@@ -59,7 +59,7 @@ testCases.withHelpers = {
         title: 'Display a map'
       }
     },
-    highlighter: () => highlightHtml,
+    highlighter: highlightHtml,
     filename: 'index.html'
   }
 };
@@ -78,7 +78,7 @@ testCases.maxHeight = {
         title: 'Display a map'
       }
     },
-    highlighter: () => highlightHtml,
+    highlighter: highlightHtml,
     filename: 'index.html'
   }
 };
@@ -109,7 +109,7 @@ document.getElementById('h1').style.color = 'red';
         title: 'Style an HTML element in JavaScript'
       }
     },
-    highlighter: () => highlightHtml
+    highlighter: highlightHtml
   }
 };
 

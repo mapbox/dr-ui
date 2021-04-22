@@ -16,7 +16,8 @@ export default class NavigationAccordion extends React.Component {
   }
 
   // add item or remove it if it already exists
-  setToggle = (label) => {
+  setToggle = (e) => {
+    const label = e && e.target ? e.target.value : e;
     const { activeToggles } = this.state;
     const labelIndex = activeToggles.indexOf(label);
     if (labelIndex > -1) {
@@ -80,10 +81,11 @@ export default class NavigationAccordion extends React.Component {
         {hasChildren && (
           <button
             className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
-            onClick={() => this.setToggle(title)}
+            onClick={this.setToggle}
             aria-label={`Toggle ${title} menu`}
             aria-controls={sectionId}
             aria-expanded={isActiveToggle}
+            value={title}
           >
             <Icon
               name={isActiveToggle ? 'chevron-up' : 'chevron-down'}

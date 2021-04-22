@@ -18,6 +18,10 @@ hideFromSearchEngines: true
 - Use passive event listeners on `Search`, `NumberedCodeSnippet`, and `OnThisPage` to improve performance. [#437](https://github.com/mapbox/dr-ui/pull/437)
 - Make `Video` disable autoplay by default. [#276](https://github.com/mapbox/dr-ui/pull/276)
 - Load the `Search` component with a facade to improve performance. [#430](https://github.com/mapbox/dr-ui/pull/430)
+- 🚨 The `NumberedCodeSnippet` prop `onCopy` is deprecated and will automatically send a track event to Segment.
+- 🚨 The `CodeSnippet` prop `highlighter` no longer accepts an arrow function.
+  - Before: `highlighter={() => highlightJson}`
+  - After: `highlighter={highlightJson}`
 
 ## 3.3.1
 

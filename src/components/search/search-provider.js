@@ -6,6 +6,27 @@ import { SearchBox } from './search-box';
 class Search extends React.PureComponent {
   render() {
     const { connector, resultsOnly, useModal } = this.props;
+
+    function handleMapContext({
+      isLoading,
+      searchTerm,
+      setSearchTerm,
+      results,
+      trackClickThrough,
+      wasSearched,
+      reset
+    }) {
+      return {
+        isLoading,
+        searchTerm,
+        setSearchTerm,
+        results,
+        trackClickThrough,
+        wasSearched,
+        reset
+      };
+    }
+
     return (
       <SearchProvider
         config={{
@@ -21,25 +42,7 @@ class Search extends React.PureComponent {
           }
         }}
       >
-        <WithSearch
-          mapContextToProps={({
-            isLoading,
-            searchTerm,
-            setSearchTerm,
-            results,
-            trackClickThrough,
-            wasSearched,
-            reset
-          }) => ({
-            isLoading,
-            searchTerm,
-            setSearchTerm,
-            results,
-            trackClickThrough,
-            wasSearched,
-            reset
-          })}
-        >
+        <WithSearch mapContextToProps={handleMapContext}>
           {({
             isLoading,
             searchTerm,

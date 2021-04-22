@@ -185,7 +185,7 @@ testCases.objc = {
   description: 'Objective C highlighting',
   props: {
     code: objectiveCCodeSnippet,
-    highlighter: () => highlightObjectivec,
+    highlighter: highlightObjectivec,
     highlightThemeCss: highlightThemeCss
   }
 };
@@ -195,7 +195,7 @@ testCases.java = {
   description: 'Java highlighting',
   props: {
     code: javaCodeSnippet,
-    highlighter: () => highlightJava,
+    highlighter: highlightJava,
     highlightThemeCss: highlightThemeCss
   }
 };
@@ -205,7 +205,7 @@ testCases.json = {
   description: 'JSON highlighting',
   props: {
     code: jsonCodeSnippet,
-    highlighter: () => highlightJson,
+    highlighter: highlightJson,
     highlightThemeCss: highlightThemeCss
   }
 };
@@ -215,7 +215,7 @@ testCases.jsx = {
   description: 'JSX highlighting',
   props: {
     code: jsxCodeSnippet,
-    highlighter: () => highlightJsx,
+    highlighter: highlightJsx,
     highlightThemeCss: highlightThemeCss
   }
 };
@@ -225,7 +225,7 @@ testCases.html = {
   description: 'HTML highlighting',
   props: {
     code: htmlCodeSnippet,
-    highlighter: () => highlightHtml,
+    highlighter: highlightHtml,
     highlightThemeCss: highlightThemeCss
   }
 };
@@ -235,7 +235,7 @@ testCases.xml = {
   description: 'XML highlighting',
   props: {
     code: xmlCodeSnippet,
-    highlighter: () => highlightXml,
+    highlighter: highlightXml,
     highlightThemeCss: highlightThemeCss
   }
 };
@@ -245,7 +245,7 @@ testCases.kotlin = {
   description: 'Kotlin highlighting',
   props: {
     code: kotlinCodeSnippet,
-    highlighter: () => highlightKotlin,
+    highlighter: highlightKotlin,
     highlightThemeCss: highlightThemeCss
   }
 };
@@ -255,7 +255,7 @@ testCases.css = {
   description: 'CSS highlighting',
   props: {
     code: cssCodeSnippet,
-    highlighter: () => highlightCss,
+    highlighter: highlightCss,
     highlightThemeCss: highlightThemeCss
   }
 };
@@ -265,7 +265,7 @@ testCases.groovy = {
   description: 'Groovy highlighting',
   props: {
     code: groovyCodeSnippet,
-    highlighter: () => highlightGroovy,
+    highlighter: highlightGroovy,
     highlightThemeCss: highlightThemeCss
   }
 };

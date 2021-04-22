@@ -8,6 +8,10 @@ export default class BackToTopButton extends React.PureComponent {
     return <div className="txt-s">Back to top!</div>;
   };
   render() {
+    function handleClick() {
+      document.documentElement.scrollTop = 0; // fallback
+      window.scroll(0, 0);
+    }
     return (
       <div className="block mx24 my24 z5">
         <PopoverTrigger
@@ -21,10 +25,7 @@ export default class BackToTopButton extends React.PureComponent {
           }}
         >
           <Button
-            onClick={() => {
-              document.documentElement.scrollTop = 0; // fallback
-              window.scroll(0, 0);
-            }}
+            onClick={handleClick}
             passthroughProps={{
               className:
                 'btn--blue w60 h60 px0 round-full shadow-darken25 color-white flex-parent flex-parent--center-main flex-parent--center-cross',
