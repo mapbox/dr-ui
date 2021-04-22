@@ -3,19 +3,15 @@ const glob = require('glob');
 const pascalCase = require('pascal-case');
 const { execSync } = require('child_process');
 
-// set true if lighthouse should only check files in the diff
-const filterByDiff = true;
+function getTestCases() {
+  // filter the diff to return the file names of components that have changes
+  const diff = execSync('git diff origin/main --name-only -- src/components/', {
+    shell: true
+  })
+    .toString()
+    .trim()
+    .split('\n');
 
-function getComponents() {
-  let diff;
-  if (filterByDiff) {
-    diff = execSync('git diff origin/main --name-only -- src/components/', {
-      shell: true
-    })
-      .toString()
-      .trim()
-      .split('\n');
-  }
   return glob
     .sync(path.join('./src/components', '**/*-test-cases.js'))
     .reduce((arr, component) => {
@@ -23,20 +19,16 @@ function getComponents() {
       const kebabCaseName = itemBaseName.replace(/-test-cases$/, '');
       const pascalCaseName = pascalCase(kebabCaseName);
       const file = `http://localhost:9966/${pascalCaseName}`;
-      if (filterByDiff) {
-        const hasChanged = diff.filter((d) => d.includes(kebabCaseName));
-        if (hasChanged.length) {
-          arr.push(file);
-        }
-      } else {
+      // filter testcases to only return those that have changes
+      const hasChanged = diff.filter((d) => d.includes(kebabCaseName));
+      if (hasChanged.length) {
         arr.push(file);
       }
-
       return arr;
     }, []);
 }
 
-const urls = getComponents();
+const urls = getTestCases();
 
 // if there are no files in the diff, exit without failure
 if (!urls.length) {
@@ -62,7 +54,7 @@ module.exports = {
           assertions: {
             // KEEP A WATCH ON THESE
             deprecations: 'off',
-            'dom-size': 'off',
+
             // TURN OFF AUDITS THAT WILL BE FIXED UPSTREAM
             'font-display': 'off', // in assembly
             'uses-passive-event-listeners': 'off', // in mr-ui
@@ -70,6 +62,7 @@ module.exports = {
             'meta-description': 'off',
             canonical: 'off',
             // TURN OFF PERFORMANCE AUDITS
+            'dom-size': 'off',
             'unsized-images': 'off',
             'uses-responsive-images': 'off',
             'preload-lcp-image': 'off',
@@ -114,6 +107,9 @@ module.exports = {
           }
         },
         // Disable audits in PageLayout until we can fix them
+        // These are not production-level issues
+        // they are only triggered because the testcase page
+        // has more than one PageLayout component
         {
           matchingUrlPattern: 'http://localhost:9966/(?!PageLayout).*',
           assertions: {
