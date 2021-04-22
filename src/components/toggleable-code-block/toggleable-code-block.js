@@ -4,6 +4,7 @@ import CodeSnippet from '@mapbox/mr-ui/code-snippet';
 import NumberedCodeSnippet from '../numbered-code-snippet/numbered-code-snippet';
 import CodeSnippetTitle from '../code-snippet-title/code-snippet-title';
 import CodeToggle from '../code-toggle/code-toggle';
+import onCopy from '../code-snippet/on-copy';
 import { highlightThemeCss } from '../highlight/theme-css.js';
 
 export default class ToggleableCodeBlock extends React.PureComponent {
@@ -18,14 +19,13 @@ export default class ToggleableCodeBlock extends React.PureComponent {
       code: code,
       highlightedCode: highlightedCode,
       maxHeight: limitHeight ? 480 : undefined,
-      highlightThemeCss: highlightThemeCss,
-      onCopy: () => {}
+      highlightThemeCss: highlightThemeCss
     };
     if (copyRanges) {
       snippetProps.copyRanges = copyRanges[selectedLanguage];
       return <NumberedCodeSnippet {...snippetProps} />;
     } else {
-      return <CodeSnippet {...snippetProps} />;
+      return <CodeSnippet onCopy={onCopy} {...snippetProps} />;
     }
   };
 
@@ -41,15 +41,7 @@ export default class ToggleableCodeBlock extends React.PureComponent {
 
   renderToggle = () => {
     const { id, changeLanguage, options } = this.props;
-    return (
-      <CodeToggle
-        id={id}
-        onChange={(value) => {
-          changeLanguage(value);
-        }}
-        options={options}
-      />
-    );
+    return <CodeToggle id={id} onChange={changeLanguage} options={options} />;
   };
 
   checkPreference = (language) => {

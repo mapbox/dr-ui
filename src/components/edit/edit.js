@@ -39,17 +39,18 @@ class Button extends React.PureComponent {
   render() {
     const platform = this.props.platform;
     const btnClass = 'btn btn--s cursor-pointer round';
+    function onClick() {
+      if (window && window.analytics) {
+        analytics.track(`Clicked Edit in ${platform}`);
+      }
+    }
     return (
       <input
         style={{ border: 0 }}
         type="submit"
         className={btnClass}
         value={`Edit in ${platform}`}
-        onClick={() => {
-          if (window && window.analytics) {
-            analytics.track(`Clicked Edit in ${platform}`);
-          }
-        }}
+        onClick={onClick}
       />
     );
   }

@@ -76,8 +76,7 @@ testCases.twoLang = {
     id: 'test-java-kotlin',
     java: java,
     kotlin: kotlin,
-    limitHeight: true,
-    onCopy: () => {}
+    limitHeight: true
   }
 };
 
@@ -88,8 +87,7 @@ testCases.kotlinOnly = {
     context: contextJava,
     id: 'test-kotlin-only',
     kotlin: kotlin,
-    limitHeight: true,
-    onCopy: () => {}
+    limitHeight: true
   }
 };
 
@@ -103,8 +101,7 @@ testCases.filename = {
     link: 'https://github.com/mapbox/',
     java: java,
     kotlin: kotlin,
-    limitHeight: true,
-    onCopy: () => {}
+    limitHeight: true
   }
 };
 
@@ -119,7 +116,6 @@ testCases.copyRange = {
     java: java,
     kotlin: kotlin,
     limitHeight: true,
-    onCopy: () => {},
     copyRanges: {
       java: [[3, 4]],
       kotlin: [[2, 3]]

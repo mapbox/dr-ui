@@ -39,7 +39,6 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)`;
         id="test-swift-only"
         swift={swift}
         limitHeight={true}
-        onCopy={() => {}}
       />
     );
   }

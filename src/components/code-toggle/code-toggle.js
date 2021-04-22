@@ -19,9 +19,7 @@ class CodeToggle extends React.PureComponent {
         id={props.id}
         themeToggleGroup="bg-blue py3 px3"
         themeToggle="txt-s py3 toggle--white toggle--active-blue"
-        onChange={(value) => {
-          props.onChange(value);
-        }}
+        onChange={props.onChange}
         value={language}
         options={options}
       />

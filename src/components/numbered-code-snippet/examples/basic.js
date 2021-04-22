@@ -58,7 +58,6 @@ export default class Basic extends React.PureComponent {
         maxHeight={450}
         highlightThemeCss={highlightThemeCss}
         copyRanges={[[6, 17]]}
-        onCopy={() => {}}
       />
     );
   }
