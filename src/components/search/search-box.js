@@ -1,19 +1,19 @@
+/* eslint-disable jsx-a11y/no-autofocus */
+/* this component uses a facade and it must transfer the focus from SearchFacade to the SearchBox */
 import React from 'react';
 import PropTypes from 'prop-types';
 import Downshift from 'downshift';
 import SearchModal from './search-modal';
 import SearchResult from './search-result';
-import debounce from 'debounce';
 import { getFilterValueDisplay } from '@elastic/react-search-ui-views/lib/view-helpers';
 import { Facet } from '@elastic/react-search-ui';
 import classnames from 'classnames';
 
-class SearchBox extends React.PureComponent {
+export class SearchBox extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      modalOpen: false,
-      useModal: !this.props.disableModal
+      modalOpen: true // open model for a smooth transition from the facade
     };
     this.docsSeachInput = React.createRef;
     this.openModal = this.openModal.bind(this);
@@ -21,26 +21,10 @@ class SearchBox extends React.PureComponent {
     this.renderModal = this.renderModal.bind(this);
     this.renderSearchBar = this.renderSearchBar.bind(this);
     this.singleLinksFacet = this.singleLinksFacet.bind(this);
-    this.checkWidth = debounce(() => {
-      const width = document.body.clientWidth;
-      this.setState({
-        useModal: width > 640 && !this.props.disableModal
-      });
-    }, 200);
-
     // if resultsOnly and overrideSearchTerm, set the search term
     if (this.props.resultsOnly && this.props.overrideSearchTerm) {
       props.setSearchTerm(this.props.overrideSearchTerm);
     }
-  }
-
-  componentDidMount() {
-    this.checkWidth();
-    window.addEventListener('resize', this.checkWidth, { passive: true });
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.checkWidth);
   }
 
   openModal() {
@@ -124,7 +108,9 @@ class SearchBox extends React.PureComponent {
       isLoading,
       wasSearched,
       themeCompact,
-      emptyResultMessage
+      emptyResultMessage,
+      placeholder,
+      useModal
     } = this.props;
 
     function handleSelection(selection) {
@@ -172,45 +158,13 @@ class SearchBox extends React.PureComponent {
             <div>
               {!resultsOnly && (
                 <React.Fragment>
-                  <label className="cursor-pointer" {...getLabelProps()}>
-                    <div
-                      className={classnames(
-                        'absolute flex-parent flex-parent--center-cross flex-parent--center-main',
-                        {
-                          'w60 h60': this.state.useModal,
-                          'w36 h36': !this.state.useModal
-                        }
-                      )}
-                    >
-                      <svg
-                        className={classnames('icon color-gray', {
-                          'w24 h24': this.state.useModal,
-                          'w18 h18': !this.state.useModal
-                        })}
-                      >
-                        <title>Search</title>
-                        <use xlinkHref="#icon-search" />
-                      </svg>
-                    </div>
-                    {this.props.isLoading && (
-                      <div
-                        className="loading loading--s absolute bg-white"
-                        style={{
-                          top: this.state.useModal ? '21px' : '10px',
-                          right: '26px',
-                          zIndex: 5
-                        }}
-                      />
-                    )}
-                  </label>
-                  <input
-                    ref={this.docsSeachInput}
-                    placeholder={this.props.placeholder}
-                    className={classnames('input bg-white', {
-                      'px60 h60 txt-l': this.state.useModal,
-                      'px36 h36': !this.state.useModal
-                    })}
-                    {...getInputProps({
+                  <SearchInput
+                    autoFocus={true}
+                    isLoading={isLoading}
+                    useModal={useModal}
+                    placeholder={placeholder}
+                    getLabelProps={getLabelProps}
+                    getInputProps={getInputProps({
                       onFocus: openMenu
                     })}
                   />
@@ -295,48 +249,18 @@ class SearchBox extends React.PureComponent {
       : false;
     return (
       <div>
-        {!this.state.useModal ? (
+        {!this.props.useModal ? (
           !hideResultsOnly && (
             <div className="w-full">{this.renderSearchBar()}</div>
           )
         ) : (
           <div>
-            <button
-              className={classnames(
-                'flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round',
-                {
-                  'btn--white': this.props.background !== 'light',
-                  'w-full': !this.props.narrow
-                }
-              )}
-              style={
-                this.props.narrow
-                  ? { paddingLeft: '12px', paddingRight: '12px' }
-                  : {}
-              }
+            <SearchButton
+              isFacade={false}
               onClick={this.openModal}
-            >
-              <span
-                className={classnames('', {
-                  mr6: !this.props.narrow,
-                  'color-gray': this.props.background === 'light'
-                })}
-              >
-                <svg className="icon w18 h18">
-                  {this.props.narrow && <title>Search</title>}
-                  <use xlinkHref="#icon-search" />
-                </svg>
-              </span>{' '}
-              {!this.props.narrow && (
-                <span
-                  className={classnames('', {
-                    'color-gray': this.props.background === 'light'
-                  })}
-                >
-                  Search
-                </span>
-              )}
-            </button>
+              background={this.props.background}
+              narrow={this.props.narrow}
+            />
             {this.renderModal()}
           </div>
         )}
@@ -356,14 +280,145 @@ SearchBox.propTypes = {
   background: PropTypes.oneOf(['light', 'dark']).isRequired,
   inputId: PropTypes.string,
   narrow: PropTypes.bool,
-  disableModal: PropTypes.bool,
   site: PropTypes.string,
   wasSearched: PropTypes.bool,
   resultsOnly: PropTypes.bool,
   segmentTrackEvent: PropTypes.string,
   overrideSearchTerm: PropTypes.string,
   themeCompact: PropTypes.bool,
-  emptyResultMessage: PropTypes.node
+  emptyResultMessage: PropTypes.node,
+  useModal: PropTypes.bool.isRequired
 };
 
-export default SearchBox;
+export class SearchButton extends React.PureComponent {
+  render() {
+    const { background, narrow, isFacade, onClick } = this.props;
+    const Element = isFacade ? 'div' : 'button';
+    const buttonProps = {
+      ...(!isFacade && { onClick })
+    };
+    return (
+      <Element
+        className={classnames(
+          'flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6',
+          {
+            'btn--white': background !== 'light',
+            wmax30: narrow,
+            'w-full': !narrow
+          }
+        )}
+        {...buttonProps}
+        style={narrow ? { paddingLeft: '12px', paddingRight: '12px' } : {}}
+      >
+        <span
+          className={classnames('', {
+            mr6: !narrow,
+            'color-gray': background === 'light'
+          })}
+        >
+          <svg className="icon w18 h18">
+            {narrow && <title>Search</title>}
+            <use xlinkHref="#icon-search" />
+          </svg>
+        </span>{' '}
+        {!narrow && (
+          <span
+            className={classnames('', {
+              'color-gray': background === 'light'
+            })}
+          >
+            Search
+          </span>
+        )}
+      </Element>
+    );
+  }
+}
+
+SearchButton.defaultProps = {
+  background: 'light',
+  isFacade: true
+};
+
+SearchButton.propTypes = {
+  background: PropTypes.oneOf(['light', 'dark']),
+  narrow: PropTypes.bool,
+  isFacade: PropTypes.bool,
+  onClick: PropTypes.func
+};
+
+export class SearchInput extends React.PureComponent {
+  render() {
+    const {
+      placeholder,
+      getLabelProps,
+      useModal,
+      getInputProps,
+      autoFocus,
+      isLoading
+    } = this.props;
+    const labelProps = {
+      ...(getLabelProps && getLabelProps())
+    };
+    const inputProps = {
+      ...(getInputProps && getInputProps)
+    };
+    return (
+      <>
+        <label className="cursor-pointer" {...labelProps}>
+          <div
+            className={classnames(
+              'absolute flex-parent flex-parent--center-cross flex-parent--center-main',
+              {
+                'w60 h60': useModal,
+                'w36 h36': !useModal
+              }
+            )}
+          >
+            <svg
+              className={classnames('icon color-gray', {
+                'w24 h24': useModal,
+                'w18 h18': !useModal
+              })}
+            >
+              <title>Search</title>
+              <use xlinkHref="#icon-search" />
+            </svg>
+          </div>
+          {isLoading && (
+            <div
+              className="loading loading--s absolute bg-white"
+              style={{
+                top: useModal ? '21px' : '10px',
+                right: '26px',
+                zIndex: 5
+              }}
+            />
+          )}
+        </label>
+        <input
+          autoFocus={autoFocus}
+          placeholder={placeholder}
+          className={classnames('input bg-white', {
+            'px60 h60 txt-l': useModal,
+            'px36 h36': !useModal
+          })}
+          {...inputProps}
+        />
+      </>
+    );
+  }
+}
+
+SearchInput.propTypes = {
+  autoFocus: false
+};
+
+SearchInput.propTypes = {
+  getLabelProps: PropTypes.func,
+  getInputProps: PropTypes.object,
+  useModal: PropTypes.bool.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  autoFocus: PropTypes.bool,
+  isLoading: PropTypes.bool
+};
