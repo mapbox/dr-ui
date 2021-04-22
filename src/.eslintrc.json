@@ -2,7 +2,6 @@
   "extends": ["../conf/eslint-config-base.json", "@mapbox/eslint-config-docs"],
   "rules": {
     "es/no-object-assign": "off",
-    "react/static-property-placement": ["error", "property assignment"],
-    "react/jsx-no-bind": "error"
+    "react/static-property-placement": ["error", "property assignment"]
   }
 }

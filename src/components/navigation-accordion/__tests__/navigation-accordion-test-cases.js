@@ -1,50 +1,12 @@
+import React from 'react';
 import NavigationAccordion from '../navigation-accordion';
+import Basic from '../examples/basic';
 
 const testCases = {};
 
-const navigation = [
-  {
-    title: 'Overview',
-    id: 'overview',
-    path: '/dr-ui/overview/',
-    pages: [
-      {
-        path: '/dr-ui/overview/permissions/',
-        title: 'Permissions'
-      }
-    ]
-  },
-  {
-    title: 'Examples',
-    id: 'examples',
-    path: '/dr-ui/examples/',
-    pages: [
-      {
-        path: '/dr-ui/examples/basic/',
-        title: 'Basic example'
-      },
-      {
-        path: '/dr-ui/examples/fancy/',
-        title: 'Fancy example'
-      }
-    ]
-  }
-];
-
-const constants = {
-  SITE: 'Dr. UI',
-  BASEURL: '/dr-ui/'
-};
-
 testCases.basic = {
   description: 'Basic NavigationAccordion',
-  component: NavigationAccordion,
-  props: {
-    navigation: navigation,
-    location: { pathName: '/dr-ui/overview/' },
-    parentPage: '/dr-ui/overview/',
-    constants: { constants }
-  }
+  element: <Basic />
 };
 
 testCases.withTags = {

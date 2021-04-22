@@ -5,6 +5,17 @@
 - Enforce use of React PureComponents to improve performance. [#414](https://github.com/mapbox/dr-ui/pull/414)
 - Improve color contrast on code and anchor elements. [#434](https://github.com/mapbox/dr-ui/pull/434)
 - Enable eslint-plugin-jsx-a11y. [#435](https://github.com/mapbox/dr-ui/pull/435)
+- Enable react/jsx-no-bind. [#442](https://github.com/mapbox/dr-ui/pull/442)
+- Replace `id` with `aria-label` in `VimeoPlayImage` to prevent duplicated `id`s when more than one instance is on the same page. [#438](https://github.com/mapbox/dr-ui/pull/438)
+- Make `filename` optional for `CodeSnippetTitle`.
+- Use passive event listeners on `Search`, `NumberedCodeSnippet`, and `OnThisPage` to improve performance. [#437](https://github.com/mapbox/dr-ui/pull/437)
+- Make `Video` disable autoplay by default. [#276](https://github.com/mapbox/dr-ui/pull/276)
+- Load the `Search` component with a facade to improve performance. [#430](https://github.com/mapbox/dr-ui/pull/430)
+- 🚨 The `NumberedCodeSnippet` prop `onCopy` is deprecated and will automatically send a track event to Segment. [#442](https://github.com/mapbox/dr-ui/pull/442)
+- 🚨 The `CodeSnippet` prop `highlighter` no longer accepts an arrow function. [#442](https://github.com/mapbox/dr-ui/pull/442)
+  - Before: `highlighter={() => highlightJson}`
+  - After: `highlighter={highlightJson}`
+- Update devDependencies.
 - Create `prepareSitemap` Batfish helper to improve sitemap. [#427](https://github.com/mapbox/dr-ui/pull/427). See [`prepareSitemap`](https://mapbox.github.io/dr-ui/guides/batfish-helpers/#prepare-sitemap) for instructions on how to add the `dataSelector` to your Batfish configuration. You will also want to add the following to the top of any redirect files so that they will be excluded from the sitemap:
 
 ```js
@@ -12,16 +23,6 @@
 hideFromSearchEngines: true
 ---*/
 ```
-
-- Replace `id` with `aria-label` in `VimeoPlayImage` to prevent duplicated `id`s when more than one instance is on the same page. [#438](https://github.com/mapbox/dr-ui/pull/438)
-- Make `filename` optional for `CodeSnippetTitle`.
-- Use passive event listeners on `Search`, `NumberedCodeSnippet`, and `OnThisPage` to improve performance. [#437](https://github.com/mapbox/dr-ui/pull/437)
-- Make `Video` disable autoplay by default. [#276](https://github.com/mapbox/dr-ui/pull/276)
-- Load the `Search` component with a facade to improve performance. [#430](https://github.com/mapbox/dr-ui/pull/430)
-- 🚨 The `NumberedCodeSnippet` prop `onCopy` is deprecated and will automatically send a track event to Segment.
-- 🚨 The `CodeSnippet` prop `highlighter` no longer accepts an arrow function.
-  - Before: `highlighter={() => highlightJson}`
-  - After: `highlighter={highlightJson}`
 
 ## 3.3.1
 

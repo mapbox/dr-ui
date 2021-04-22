@@ -24,9 +24,10 @@ const srcDir = path.resolve(rootDir, 'src/components');
 // Compile all src files that we want in the package ... so that excludes
 // tests and examples.
 function compileComponents() {
-  return execa.shell(
+  return execa.command(
     `babel "${rootDir}/src/components" --out-dir ${outputDir} --ignore "**/examples","**/__tests__" --config-file ${rootDir}/babel.config.js`,
     {
+      shell: true,
       cwd: srcDir,
       stdio: 'inherit'
     }
@@ -34,9 +35,10 @@ function compileComponents() {
 }
 
 function compileHelpers() {
-  return execa.shell(
+  return execa.command(
     `babel "${rootDir}/src/helpers" --out-dir ${outputDir}/helpers --ignore "${rootDir}/src/helpers/**/__tests__" --config-file ${rootDir}/babel.config.js`,
     {
+      shell: true,
       cwd: srcDir,
       stdio: 'inherit'
     }
@@ -44,9 +46,10 @@ function compileHelpers() {
 }
 
 function compilePlugins() {
-  return execa.shell(
+  return execa.command(
     `babel "${rootDir}/src/plugins" --out-dir ${outputDir}/plugins --config-file ${rootDir}/babel.config.js`,
     {
+      shell: true,
       cwd: srcDir,
       stdio: 'inherit'
     }
