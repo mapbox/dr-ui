@@ -22,6 +22,7 @@ hideFromSearchEngines: true
 - 🚨 The `CodeSnippet` prop `highlighter` no longer accepts an arrow function.
   - Before: `highlighter={() => highlightJson}`
   - After: `highlighter={highlightJson}`
+- Update devDependencies.
 
 ## 3.3.1
 
