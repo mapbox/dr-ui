@@ -22,7 +22,8 @@
     "serve-static-docs": "batfish serve-static --config='docs/batfish.config.js'",
     "deploy-docs": "npm run build-docs && gh-pages -d docs/_site",
     "lint-md": "remark docs/src/pages/",
-    "test-content": "copyeditor docs/src/pages --dict docs/local.dic"
+    "test-content": "copyeditor docs/src/pages --dict docs/local.dic",
+    "lighthouse": "lhci autorun"
   },
   "repository": {
     "type": "git",

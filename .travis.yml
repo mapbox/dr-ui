@@ -6,7 +6,7 @@ script:
   - npm run build-docs
   # run sitemap tests after build to assert sitemap is correct
   - jest src/helpers/batfish/__tests__/sitemap.test.js
-  - lhci autorun
+  - npm run lighthouse
 
 # dependencies of lhci:
 addons:
