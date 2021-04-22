@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-autofocus */
+/* this component uses a facade and it must transfer the focus from SearchFacade to the SearchBox */
 import React from 'react';
 import PropTypes from 'prop-types';
 import Downshift from 'downshift';
