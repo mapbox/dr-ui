@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { testCases } from './search-test-cases';
+import { testCases, noRenderCases } from './search-test-cases';
 import visit from 'unist-util-visit';
 import SiteSearchAPIConnector from '@elastic/search-ui-site-search-connector';
 
@@ -99,13 +99,13 @@ describe('search', () => {
     });
   });
 
-  describe(testCases.withConnector.description, () => {
+  describe(noRenderCases.withConnector.description, () => {
     let testCase;
     let wrapper;
     let tree;
 
     beforeEach(() => {
-      testCase = testCases.withConnector;
+      testCase = noRenderCases.withConnector;
       wrapper = renderer.create(
         React.createElement(testCase.component, testCase.props)
       );

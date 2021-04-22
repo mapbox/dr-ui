@@ -7,6 +7,7 @@ import Narrow from '../examples/narrow';
 import Results from './results';
 
 let testCases = {};
+const noRenderCases = {};
 
 testCases.basic = {
   description: 'Basic search.',
@@ -42,7 +43,7 @@ testCases.narrow = {
   element: <Narrow />
 };
 
-testCases.withConnector = {
+noRenderCases.withConnector = {
   component: Search,
   description: 'Search with custom connector.',
   props: {
@@ -70,4 +71,4 @@ testCases = Object.keys(testCases).reduce((obj, item) => {
   return obj;
 }, {});
 
-export { testCases };
+export { testCases, noRenderCases };

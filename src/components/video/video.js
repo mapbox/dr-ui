@@ -2,13 +2,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { VimeoPlayImage } from '../related-page/vimeo';
-/* 
-* The state defines the user's preferences for the video settings (autoplay and loop).
-* The props for Video will only be taken into account if the user does not prefer reduced motion.
-* In `componentDidMount`, Video will determine the user's settings. 
-*  - If the user prefers reduced motion, then Video will use the `state` for the video settings.
-*  - If the user does not prefer reduced motion, then Video will use the props for the video settings.
-*/
+/*
+ * The state defines the user's preferences for the video settings (autoplay and loop).
+ * The props for Video will only be taken into account if the user does not prefer reduced motion.
+ * In `componentDidMount`, Video will determine the user's settings.
+ *  - If the user prefers reduced motion, then Video will use the `state` for the video settings.
+ *  - If the user does not prefer reduced motion, then Video will use the props for the video settings.
+ */
 export default class Video extends React.PureComponent {
   constructor(props) {
     super(props);
