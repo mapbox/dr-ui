@@ -16,6 +16,7 @@ hideFromSearchEngines: true
 - Replace `id` with `aria-label` in `VimeoPlayImage` to prevent duplicated `id`s when more than one instance is on the same page. [#438](https://github.com/mapbox/dr-ui/pull/438)
 - Make `filename` optional for `CodeSnippetTitle`.
 - Use passive event listeners on `Search`, `NumberedCodeSnippet`, and `OnThisPage` to improve performance. [#437](https://github.com/mapbox/dr-ui/pull/437)
+- Make `Video` disable autoplay by default. [#276](https://github.com/mapbox/dr-ui/pull/276)
 - Load the `Search` component with a facade to improve performance. [#430](https://github.com/mapbox/dr-ui/pull/430)
 
 ## 3.3.1
