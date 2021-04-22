@@ -1,3 +1,218 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`navigation-accordion Basic NavigationAccordion renders as expected 1`] = `null`;
+exports[`navigation-accordion Basic NavigationAccordion renders as expected 1`] = `
+<nav
+  className="mx-neg12"
+>
+  <ul>
+    <li>
+      <div
+        className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 flex-parent flex-parent--space-between-main"
+      >
+        <a
+          className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+          href="/dr-ui/overview/"
+          style={
+            Object {
+              "letterSpacing": "0.025em",
+            }
+          }
+        >
+          Overview
+        </a>
+        <button
+          aria-controls="menu-overview"
+          aria-expanded={false}
+          aria-label="Toggle Overview menu"
+          className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
+          onClick={[Function]}
+          value="Overview"
+        >
+          <svg
+            className="events-none icon inline-block align-t"
+            focusable="false"
+            role="presentation"
+            style={
+              Object {
+                "height": 18,
+                "width": 18,
+              }
+            }
+          >
+            <use
+              xlinkHref="#icon-chevron-down"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            />
+          </svg>
+        </button>
+      </div>
+    </li>
+    <li>
+      <div
+        className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 flex-parent flex-parent--space-between-main"
+      >
+        <a
+          className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+          href="/dr-ui/examples/"
+          style={
+            Object {
+              "letterSpacing": "0.025em",
+            }
+          }
+        >
+          Examples
+        </a>
+        <button
+          aria-controls="menu-examples"
+          aria-expanded={false}
+          aria-label="Toggle Examples menu"
+          className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
+          onClick={[Function]}
+          value="Examples"
+        >
+          <svg
+            className="events-none icon inline-block align-t"
+            focusable="false"
+            role="presentation"
+            style={
+              Object {
+                "height": 18,
+                "width": 18,
+              }
+            }
+          >
+            <use
+              xlinkHref="#icon-chevron-down"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            />
+          </svg>
+        </button>
+      </div>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`navigation-accordion Titles with tags renders as expected 1`] = `
+<nav
+  className="mx-neg12"
+>
+  <ul>
+    <li>
+      <div
+        className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 bg-blue-faint color-blue flex-parent flex-parent--space-between-main"
+      >
+        <a
+          className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+          href="page-one"
+          style={
+            Object {
+              "letterSpacing": "0.025em",
+            }
+          }
+        >
+          Title one
+        </a>
+        <button
+          aria-controls="menu-title-one"
+          aria-expanded={false}
+          aria-label="Toggle Title one menu"
+          className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
+          onClick={[Function]}
+          value="Title one"
+        >
+          <svg
+            className="events-none icon inline-block align-t"
+            focusable="false"
+            role="presentation"
+            style={
+              Object {
+                "height": 18,
+                "width": 18,
+              }
+            }
+          >
+            <use
+              xlinkHref="#icon-chevron-down"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            />
+          </svg>
+        </button>
+      </div>
+    </li>
+    <li>
+      <div
+        className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
+      >
+        <a
+          className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+          href="page-two"
+          style={
+            Object {
+              "letterSpacing": "0.025em",
+            }
+          }
+        >
+          Title two
+          <span
+            className="ml6 relative"
+            style={
+              Object {
+                "top": -1,
+              }
+            }
+          >
+            <div
+              className="inline-block"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+            >
+              <div
+                aria-describedby="tooltip-1"
+                className="txt-bold round inline-block cursor-default txt-xs"
+                style={
+                  Object {
+                    "background": "#f1f3fd",
+                    "borderColor": "#0428c8",
+                    "color": "#0c248d",
+                  }
+                }
+              >
+                <svg
+                  className="events-none icon inline-block align-t"
+                  focusable="false"
+                  role="presentation"
+                  style={
+                    Object {
+                      "height": 18,
+                      "width": 18,
+                    }
+                  }
+                >
+                  <use
+                    xlinkHref="#icon-lightning"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  />
+                </svg>
+              </div>
+              <div
+                className="hide-visually"
+                id="tooltip-1"
+                role="tooltip"
+              >
+                <div
+                  className="txt-s wmax120"
+                >
+                  This feature is in public beta and is subject to changes.
+                </div>
+              </div>
+            </div>
+          </span>
+        </a>
+      </div>
+    </li>
+  </ul>
+</nav>
+`;
