@@ -13,13 +13,12 @@ function prepareSitemap({
       ({ frontMatter }) =>
         frontMatter.hideFromSearchEngines || frontMatter.splitPage
     )
-    .map(({ path }) => {
-      // fix root index path to return full path
-      if (path === `${siteBasePath}/`) {
-        return path.replace(
-          join(siteBasePath, '/'),
-          join(process.cwd(), docsPath, outputDirectory, 'index.html')
-        );
+    .map(({ path, filePath }) => {
+      // append index.html to files ending in index.js
+      if (filePath.endsWith('index.js')) {
+        return path
+          .replace(siteBasePath, join(process.cwd(), docsPath, outputDirectory))
+          .replace(/\/$/, '/index.html');
       } else {
         return path.replace(
           siteBasePath,
