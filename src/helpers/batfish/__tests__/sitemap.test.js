@@ -64,6 +64,55 @@ describe('prepareSitemap', () => {
     ]);
   });
 
+  it('append index.html to files ending in index.js', () => {
+    const ignoreFile = prepareSitemap({
+      pages: [
+        {
+          filePath: '/android-docs/src/pages/index.js',
+          path: '/android/',
+          frontMatter: {
+            hideFromSearchEngines: true
+          }
+        },
+        {
+          filePath: '/android-docs/src/pages/core/index.js',
+          path: '/android/core/',
+          frontMatter: {
+            hideFromSearchEngines: true
+          }
+        },
+        {
+          filePath: '/android-docs/src/pages/java/index.js',
+          path: '/android/java/',
+          frontMatter: {
+            hideFromSearchEngines: true
+          }
+        },
+        {
+          filePath: '/android-docs/src/pages/core/api-reference/index.md',
+          path: '/android/core/api-reference/',
+          frontMatter: {
+            title: 'API Reference'
+          }
+        },
+        {
+          filePath: '/android-docs/src/pages/core/guides/hidden.md',
+          path: '/android/core/guides/hidden/',
+          frontMatter: {
+            hideFromSearchEngines: true
+          }
+        }
+      ],
+      siteBasePath: '/android'
+    }).map((f) => f.replace(process.cwd(), ''));
+    expect(ignoreFile).toEqual([
+      '/_site/index.html',
+      '/_site/core/index.html',
+      '/_site/java/index.html',
+      '/_site/core/guides/hidden/'
+    ]);
+  });
+
   // travis is configured to run this test file again after build
   // this test asserts the URLs in the sitemap
   if (existsSync(siteMap)) {

@@ -1,6 +1,6 @@
 {
   "name": "@mapbox/dr-ui",
-  "version": "4.0.0-alpha.6",
+  "version": "4.0.0-alpha.8",
   "description": "Mapbox frontend tools for documentation websites.",
   "main": "index.js",
   "scripts": {
@@ -42,7 +42,7 @@
     "@babel/preset-env": "^7.13.15",
     "@babel/preset-react": "^7.13.13",
     "@mapbox/appropriate-images-react": "^2.1.0",
-    "@mapbox/batfish": "^2.2.0",
+    "@mapbox/batfish": "^2.3.0",
     "@mapbox/copyeditor": "^0.10.0",
     "@mapbox/eslint-config-docs": "^1.7.0",
     "@mapbox/eslint-config-mapbox": "^3.0.0",
