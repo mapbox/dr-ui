@@ -49,14 +49,16 @@ export class SearchBox extends React.PureComponent {
       (opt) => opt.value === this.props.site
     )[0];
 
+    const { segmentTrackEvent, searchTerm, site } = this.props;
+
     function handleSiteFilter(e) {
       e.preventDefault();
       // track click
       if (window && window.analytics) {
-        analytics.track(this.props.segmentTrackEvent, {
-          query: this.props.searchTerm,
+        analytics.track(segmentTrackEvent, {
+          query: searchTerm,
           toggle: true,
-          site: this.props.site
+          site: site
         });
       }
       onSelect(siteFilter.value);
