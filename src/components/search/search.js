@@ -111,8 +111,9 @@ Search.defaultProps = {
     engineName: 'docs',
     documentType: ['page'],
     beforeSearchCall: (
+      // if no results, retry with spelling suggestion
       existingSearchOptions,
-      next // if no results, retry with spelling suggestion
+      next
     ) =>
       next({
         ...existingSearchOptions,
