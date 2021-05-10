@@ -16,6 +16,7 @@
   - Before: `highlighter={() => highlightJson}`
   - After: `highlighter={highlightJson}`
 - Update devDependencies.
+- Configure `Search` to use the [Swiftype API's `spelling` option](https://swiftype.com/documentation/site-search/searching/spelling) to retry in cases where a typo is suspected.
 - Create `prepareSitemap` Batfish helper to improve sitemap. [#427](https://github.com/mapbox/dr-ui/pull/427). See [`prepareSitemap`](https://mapbox.github.io/dr-ui/guides/batfish-helpers/#prepare-sitemap) for instructions on how to add the `dataSelector` to your Batfish configuration. You will also want to add the following to the top of any redirect files so that they will be excluded from the sitemap:
 
 ```js
