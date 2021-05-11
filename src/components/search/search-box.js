@@ -106,7 +106,7 @@ export class SearchBox extends React.PureComponent {
     // Track query in Sentry
     Sentry.init({
       dsn: 'https://cbf0479a2c93421db53d4dd20df6dc52@o5937.ingest.sentry.io/5736949',
-      environment: 'dr-ui'
+      environment: 'main'
     });
     Sentry.configureScope((scope) => {
       scope.setFingerprint(searchTerm);
