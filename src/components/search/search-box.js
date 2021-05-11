@@ -8,6 +8,7 @@ import SearchResult from './search-result';
 import { getFilterValueDisplay } from '@elastic/react-search-ui-views/lib/view-helpers';
 import { Facet } from '@elastic/react-search-ui';
 import classnames from 'classnames';
+import * as Sentry from '@sentry/browser';
 
 export class SearchBox extends React.PureComponent {
   constructor(props) {
@@ -21,6 +22,7 @@ export class SearchBox extends React.PureComponent {
     this.renderModal = this.renderModal.bind(this);
     this.renderSearchBar = this.renderSearchBar.bind(this);
     this.singleLinksFacet = this.singleLinksFacet.bind(this);
+    this.renderNoResult = this.renderNoResult.bind(this);
     // if resultsOnly and overrideSearchTerm, set the search term
     if (this.props.resultsOnly && this.props.overrideSearchTerm) {
       props.setSearchTerm(this.props.overrideSearchTerm);
@@ -49,14 +51,16 @@ export class SearchBox extends React.PureComponent {
       (opt) => opt.value === this.props.site
     )[0];
 
+    const { segmentTrackEvent, searchTerm, site } = this.props;
+
     function handleSiteFilter(e) {
       e.preventDefault();
       // track click
       if (window && window.analytics) {
-        analytics.track(this.props.segmentTrackEvent, {
-          query: this.props.searchTerm,
+        analytics.track(segmentTrackEvent, {
+          query: searchTerm,
           toggle: true,
-          site: this.props.site
+          site: site
         });
       }
       onSelect(siteFilter.value);
@@ -97,6 +101,30 @@ export class SearchBox extends React.PureComponent {
     );
   };
 
+  renderNoResult() {
+    const { themeCompact, emptyResultMessage, searchTerm } = this.props;
+    // Track query in Sentry
+    Sentry.init({
+      dsn: 'https://cbf0479a2c93421db53d4dd20df6dc52@o5937.ingest.sentry.io/5736949',
+      environment: 'main'
+    });
+    Sentry.configureScope((scope) => {
+      scope.setFingerprint(searchTerm);
+      Sentry.captureMessage(searchTerm);
+    });
+    // Return message
+    return (
+      <div
+        className={classnames('px12', {
+          'py6 txt-s': themeCompact,
+          'py12 prose': !themeCompact
+        })}
+      >
+        {emptyResultMessage}
+      </div>
+    );
+  }
+
   renderSearchBar() {
     const {
       inputId,
@@ -108,7 +136,6 @@ export class SearchBox extends React.PureComponent {
       isLoading,
       wasSearched,
       themeCompact,
-      emptyResultMessage,
       placeholder,
       useModal
     } = this.props;
@@ -147,12 +174,8 @@ export class SearchBox extends React.PureComponent {
         itemToString={handleItemToString}
       >
         {(downshiftProps) => {
-          const {
-            getInputProps,
-            isOpen,
-            getLabelProps,
-            openMenu
-          } = downshiftProps;
+          const { getInputProps, isOpen, getLabelProps, openMenu } =
+            downshiftProps;
 
           return (
             <div>
@@ -181,7 +204,8 @@ export class SearchBox extends React.PureComponent {
                     className={classnames(
                       'color-text round mt3 bg-white w-full align-l',
                       {
-                        'hmax360 scroll-auto scroll-styled absolute shadow-darken25 z4': !resultsOnly
+                        'hmax360 scroll-auto scroll-styled absolute shadow-darken25 z4':
+                          !resultsOnly
                       }
                     )}
                   >
@@ -206,14 +230,7 @@ export class SearchBox extends React.PureComponent {
                             ))}
                           </ul>
                         ) : (
-                          <div
-                            className={classnames('px12', {
-                              'py6 txt-s': themeCompact,
-                              'py12 prose': !themeCompact
-                            })}
-                          >
-                            {emptyResultMessage}
-                          </div>
+                          this.renderNoResult()
                         ))}
                     </React.Fragment>
                   </div>

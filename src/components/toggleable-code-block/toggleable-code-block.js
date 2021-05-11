@@ -9,12 +9,8 @@ import { highlightThemeCss } from '../highlight/theme-css.js';
 
 export default class ToggleableCodeBlock extends React.PureComponent {
   renderSnippet = (code) => {
-    const {
-      highlightedCode,
-      limitHeight,
-      copyRanges,
-      selectedLanguage
-    } = this.props;
+    const { highlightedCode, limitHeight, copyRanges, selectedLanguage } =
+      this.props;
     const snippetProps = {
       code: code,
       highlightedCode: highlightedCode,

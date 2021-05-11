@@ -109,7 +109,16 @@ Search.defaultProps = {
   connector: new SiteSearchAPIConnector({
     engineKey: 'zpAwGSb8YMXtF9yDeS5K', // public engine key
     engineName: 'docs',
-    documentType: ['page']
+    documentType: ['page'],
+    beforeSearchCall: (
+      // if no results, retry with spelling suggestion
+      existingSearchOptions,
+      next
+    ) =>
+      next({
+        ...existingSearchOptions,
+        spelling: 'retry'
+      })
   }),
   resultsOnly: false,
   segmentTrackEvent: 'Searched docs',

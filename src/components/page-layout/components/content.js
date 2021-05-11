@@ -92,13 +92,8 @@ export class ContentWrapper extends React.PureComponent {
 
   render() {
     const { children, frontMatter, layoutConfig } = this.props;
-    const {
-      title,
-      unProse,
-      hideFeedback,
-      layout,
-      overviewHeader
-    } = frontMatter;
+    const { title, unProse, hideFeedback, layout, overviewHeader } =
+      frontMatter;
     const { hideTitle } = layoutConfig;
 
     // check frontmatter then default to layout config
