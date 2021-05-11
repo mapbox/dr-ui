@@ -8,6 +8,7 @@ import SearchResult from './search-result';
 import { getFilterValueDisplay } from '@elastic/react-search-ui-views/lib/view-helpers';
 import { Facet } from '@elastic/react-search-ui';
 import classnames from 'classnames';
+import * as Sentry from '@sentry/browser';
 
 export class SearchBox extends React.PureComponent {
   constructor(props) {
@@ -21,6 +22,7 @@ export class SearchBox extends React.PureComponent {
     this.renderModal = this.renderModal.bind(this);
     this.renderSearchBar = this.renderSearchBar.bind(this);
     this.singleLinksFacet = this.singleLinksFacet.bind(this);
+    this.renderNoResult = this.renderNoResult.bind(this);
     // if resultsOnly and overrideSearchTerm, set the search term
     if (this.props.resultsOnly && this.props.overrideSearchTerm) {
       props.setSearchTerm(this.props.overrideSearchTerm);
@@ -99,6 +101,31 @@ export class SearchBox extends React.PureComponent {
     );
   };
 
+  renderNoResult() {
+    const { themeCompact, emptyResultMessage, searchTerm } = this.props;
+    // Track query in Sentry
+    Sentry.init({
+      dsn:
+        'https://cbf0479a2c93421db53d4dd20df6dc52@o5937.ingest.sentry.io/5736949',
+      environment: 'dr-ui'
+    });
+    Sentry.configureScope((scope) => {
+      scope.setFingerprint(searchTerm);
+      Sentry.captureMessage(searchTerm);
+    });
+    // Return message
+    return (
+      <div
+        className={classnames('px12', {
+          'py6 txt-s': themeCompact,
+          'py12 prose': !themeCompact
+        })}
+      >
+        {emptyResultMessage}
+      </div>
+    );
+  }
+
   renderSearchBar() {
     const {
       inputId,
@@ -110,7 +137,6 @@ export class SearchBox extends React.PureComponent {
       isLoading,
       wasSearched,
       themeCompact,
-      emptyResultMessage,
       placeholder,
       useModal
     } = this.props;
@@ -208,14 +234,7 @@ export class SearchBox extends React.PureComponent {
                             ))}
                           </ul>
                         ) : (
-                          <div
-                            className={classnames('px12', {
-                              'py6 txt-s': themeCompact,
-                              'py12 prose': !themeCompact
-                            })}
-                          >
-                            {emptyResultMessage}
-                          </div>
+                          this.renderNoResult()
                         ))}
                     </React.Fragment>
                   </div>
