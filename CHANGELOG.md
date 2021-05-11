@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.0.1
+
+- In `Search` component, fix logic to prevent queries with results from being sent to Sentry.
+
 ## 4.0.0
 
 - Enforce use of React PureComponents to improve performance. [#414](https://github.com/mapbox/dr-ui/pull/414)

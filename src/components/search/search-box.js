@@ -103,7 +103,12 @@ export class SearchBox extends React.PureComponent {
   componentDidUpdate(prevProps) {
     const { isLoading, results, searchTerm } = this.props;
 
-    if (results !== prevProps.results && !isLoading && searchTerm) {
+    if (
+      results !== prevProps.results &&
+      !isLoading &&
+      searchTerm &&
+      !results.length
+    ) {
       // if no results, send query to Sentry
       Sentry.init({
         dsn: 'https://cbf0479a2c93421db53d4dd20df6dc52@o5937.ingest.sentry.io/5736949',
