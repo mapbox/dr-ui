@@ -1,5 +1,6 @@
 function cleanIosViewController(content) {
-  let namingPattern = /\n?NSString \*?const \*?MBXExample\w+ = @"(\w+)";\n?\s+?/;
+  let namingPattern =
+    /\n?NSString \*?const \*?MBXExample\w+ = @"(\w+)";\n?\s+?/;
   if (/@objc\((\w+)\)\n?\s+?/.test(content))
     namingPattern = /@objc\((\w+)\)\n?\s+?/;
   if (content.match(namingPattern)) {

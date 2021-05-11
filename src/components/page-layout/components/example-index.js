@@ -410,15 +410,8 @@ ExampleIndex.propTypes = {
 
 class FilterSection extends React.PureComponent {
   renderInput = () => {
-    const {
-      title,
-      data,
-      activeItem,
-      isSwitch,
-      id,
-      isText,
-      placeholder
-    } = this.props;
+    const { title, data, activeItem, isSwitch, id, isText, placeholder } =
+      this.props;
     const themeLabel = 'txt-s txt-bold color-darken75';
 
     if (isText)

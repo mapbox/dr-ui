@@ -14,8 +14,7 @@ noRenderCases.token = {
   component: DemoIframe,
   description: 'Overrides the MapboxAccessToken with another token',
   props: {
-    src:
-      'https://api.mapbox.com/styles/v1/examples/cjj0b5ie80ec32so5uo8ox21m.html?fresh=true&title=true&access_token=MapboxAccessToken#15/40.751589/-73.986485/-28/60',
+    src: 'https://api.mapbox.com/styles/v1/examples/cjj0b5ie80ec32so5uo8ox21m.html?fresh=true&title=true&access_token=MapboxAccessToken#15/40.751589/-73.986485/-28/60',
     title: 'Static API request',
     MapboxAccessToken: 'p.key10101010101010101010',
     gl: false
@@ -37,8 +36,7 @@ testCases.missing = {
   description: 'Missing token will return null component',
   props: {
     title: 'Static API request',
-    src:
-      'https://api.mapbox.com/styles/v1/examples/cjj0b5ie80ec32so5uo8ox21m.html?fresh=true&title=true&access_token=MapboxAccessToken#15/40.751589/-73.986485/-28/60'
+    src: 'https://api.mapbox.com/styles/v1/examples/cjj0b5ie80ec32so5uo8ox21m.html?fresh=true&title=true&access_token=MapboxAccessToken#15/40.751589/-73.986485/-28/60'
   }
 };
 

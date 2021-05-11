@@ -105,8 +105,7 @@ export class SearchBox extends React.PureComponent {
     const { themeCompact, emptyResultMessage, searchTerm } = this.props;
     // Track query in Sentry
     Sentry.init({
-      dsn:
-        'https://cbf0479a2c93421db53d4dd20df6dc52@o5937.ingest.sentry.io/5736949',
+      dsn: 'https://cbf0479a2c93421db53d4dd20df6dc52@o5937.ingest.sentry.io/5736949',
       environment: 'dr-ui'
     });
     Sentry.configureScope((scope) => {
@@ -175,12 +174,8 @@ export class SearchBox extends React.PureComponent {
         itemToString={handleItemToString}
       >
         {(downshiftProps) => {
-          const {
-            getInputProps,
-            isOpen,
-            getLabelProps,
-            openMenu
-          } = downshiftProps;
+          const { getInputProps, isOpen, getLabelProps, openMenu } =
+            downshiftProps;
 
           return (
             <div>
@@ -209,7 +204,8 @@ export class SearchBox extends React.PureComponent {
                     className={classnames(
                       'color-text round mt3 bg-white w-full align-l',
                       {
-                        'hmax360 scroll-auto scroll-styled absolute shadow-darken25 z4': !resultsOnly
+                        'hmax360 scroll-auto scroll-styled absolute shadow-darken25 z4':
+                          !resultsOnly
                       }
                     )}
                   >
