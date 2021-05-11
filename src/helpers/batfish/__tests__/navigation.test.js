@@ -218,8 +218,7 @@ describe('buildNavigation', () => {
           },
           {
             title: 'Troubleshooting',
-            path:
-              'https://docs.mapbox.com/help/troubleshooting?product=navigation',
+            path: 'https://docs.mapbox.com/help/troubleshooting?product=navigation',
             navOrder: 5
           }
         ]

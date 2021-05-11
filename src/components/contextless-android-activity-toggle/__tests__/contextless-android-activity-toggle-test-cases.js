@@ -70,14 +70,13 @@ testCases.basic = {
 
 testCases.twoLang = {
   component: ContextlessAndroidActivityToggle,
-  description: 'Two languages',
+  description: 'Two languages (code toggle not interactive)',
   props: {
     context: contextJava,
     id: 'test-java-kotlin',
     java: java,
     kotlin: kotlin,
-    limitHeight: true,
-    onCopy: () => {}
+    limitHeight: true
   }
 };
 
@@ -88,14 +87,13 @@ testCases.kotlinOnly = {
     context: contextJava,
     id: 'test-kotlin-only',
     kotlin: kotlin,
-    limitHeight: true,
-    onCopy: () => {}
+    limitHeight: true
   }
 };
 
 testCases.filename = {
   component: ContextlessAndroidActivityToggle,
-  description: 'Two languages with filename',
+  description: 'Two languages with filename  (code toggle not interactive)',
   props: {
     context: contextKotlin,
     id: 'test-java-kotlin-filename',
@@ -103,14 +101,13 @@ testCases.filename = {
     link: 'https://github.com/mapbox/',
     java: java,
     kotlin: kotlin,
-    limitHeight: true,
-    onCopy: () => {}
+    limitHeight: true
   }
 };
 
 testCases.copyRange = {
   component: ContextlessAndroidActivityToggle,
-  description: 'Two languages with copy ranges',
+  description: 'Two languages with copy ranges (code toggle not interactive)',
   props: {
     context: contextKotlin,
     id: 'test-java-kotlin-copy-range',
@@ -119,7 +116,6 @@ testCases.copyRange = {
     java: java,
     kotlin: kotlin,
     limitHeight: true,
-    onCopy: () => {},
     copyRanges: {
       java: [[3, 4]],
       kotlin: [[2, 3]]

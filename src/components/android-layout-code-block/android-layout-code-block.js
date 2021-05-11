@@ -2,10 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import CodeSnippet from '@mapbox/mr-ui/code-snippet';
 import CodeSnippetTitle from '../code-snippet-title/code-snippet-title';
+import onCopy from '../code-snippet/on-copy';
 import { highlightXml } from '../highlight/xml';
 import { highlightThemeCss } from '../highlight/theme-css.js';
 
-export default class AndroidLayoutCodeBlock extends React.Component {
+export default class AndroidLayoutCodeBlock extends React.PureComponent {
   renderTitle = () => {
     const titleProps = {
       filename: this.props.filename,
@@ -24,7 +25,7 @@ export default class AndroidLayoutCodeBlock extends React.Component {
               code={this.props.code}
               highlightedCode={highlightXml(this.props.code)}
               highlightThemeCss={highlightThemeCss}
-              onCopy={() => {}}
+              onCopy={onCopy}
             />
           </div>
         )}

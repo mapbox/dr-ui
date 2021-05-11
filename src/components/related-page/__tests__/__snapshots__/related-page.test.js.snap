@@ -821,7 +821,7 @@ exports[`related-page tutorial renders as expected 1`] = `
 `;
 
 exports[`related-page video renders as expected 1`] = `
-<a
+<button
   className="unprose block cursor-pointer color-purple color-purple-dark-on-hover transition mb18"
   onClick={[Function]}
 >
@@ -856,18 +856,13 @@ exports[`related-page video renders as expected 1`] = `
             }
           >
             <svg
-              aria-labelledby="play-icon-title"
+              aria-label="Play"
               fill="#fff"
               focusable="false"
               role="img"
               viewBox="0 0 20 20"
               width="100%"
             >
-              <title
-                id="play-icon-title"
-              >
-                Play
-              </title>
               <polygon
                 points="1,0 20,10 1,20"
               />
@@ -906,11 +901,11 @@ exports[`related-page video renders as expected 1`] = `
       </div>
     </div>
   </div>
-</a>
+</button>
 `;
 
 exports[`related-page video with svg image fallback renders as expected 1`] = `
-<a
+<button
   className="unprose block cursor-pointer color-purple color-purple-dark-on-hover transition mb18"
   onClick={[Function]}
 >
@@ -942,18 +937,13 @@ exports[`related-page video with svg image fallback renders as expected 1`] = `
             }
           >
             <svg
-              aria-labelledby="play-icon-title"
+              aria-label="Play"
               fill="#7753eb"
               focusable="false"
               role="img"
               viewBox="0 0 20 20"
               width="100%"
             >
-              <title
-                id="play-icon-title"
-              >
-                Play
-              </title>
               <polygon
                 points="1,0 20,10 1,20"
               />
@@ -987,5 +977,5 @@ exports[`related-page video with svg image fallback renders as expected 1`] = `
       </div>
     </div>
   </div>
-</a>
+</button>
 `;

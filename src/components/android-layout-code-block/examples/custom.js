@@ -4,7 +4,7 @@ With filename and GitHub link.
 import React from 'react';
 import AndroidLayoutCodeBlock from '../android-layout-code-block';
 
-export default class Custom extends React.Component {
+export default class Custom extends React.PureComponent {
   render() {
     const code = `<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"

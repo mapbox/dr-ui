@@ -18,8 +18,7 @@ testCases.troubleshooting = {
     title: 'Collaboration best practices',
     children:
       'Learn best practices for setting up an account and collaborating on projects.',
-    url:
-      'https://docs.mapbox.com/help/troubleshooting/collaboration-best-practices/'
+    url: 'https://docs.mapbox.com/help/troubleshooting/collaboration-best-practices/'
   }
 };
 
@@ -31,8 +30,7 @@ testCases.guide = {
     title: 'Access tokens',
     children:
       'Learn how access tokens work and how to create and manage your access tokens.',
-    url:
-      'https://docs.mapbox.com/help/troubleshooting/collaboration-best-practices/'
+    url: 'https://docs.mapbox.com/help/troubleshooting/collaboration-best-practices/'
   }
 };
 
@@ -54,8 +52,7 @@ testCases.example = {
     contentType: 'example',
     title: 'Add a vector tile source',
     children: 'Add a vector source to a map and display it as a layer.',
-    url:
-      'https://docs.mapbox.com/android/maps/examples/add-a-vector-tile-source/'
+    url: 'https://docs.mapbox.com/android/maps/examples/add-a-vector-tile-source/'
   }
 };
 
@@ -96,8 +93,7 @@ testCases.videoNoVimeo = {
     title: 'How to eject a Style Component in Mapbox Studio',
     children:
       'Style Components provide sensible defaults and quick opportunities for customization by optimizing the most common property changes for styles and packaging them into simple drop-down options, sliders, and toggles.',
-    url:
-      'https://docs.mapbox.com/android/maps/examples/add-a-vector-tile-source/'
+    url: 'https://docs.mapbox.com/android/maps/examples/add-a-vector-tile-source/'
   }
 };
 

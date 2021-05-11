@@ -5,12 +5,12 @@ import React from 'react';
 import CodeSnippet from '../code-snippet';
 import { highlightHtml } from '../../highlight/html';
 
-export default class Everything extends React.Component {
+export default class Everything extends React.PureComponent {
   render() {
     return (
       <CodeSnippet
         code={`<h1>Hello world!</h1>`}
-        highlighter={() => highlightHtml}
+        highlighter={highlightHtml}
         filename="index.html"
         edit={{
           html: '<h1>Hello world!</h1>',

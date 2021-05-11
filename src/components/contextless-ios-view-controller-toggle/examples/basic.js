@@ -4,7 +4,7 @@ Basic.
 import React from 'react';
 import ContextlessIosViewControllerToggle from '../contextless-ios-view-controller-toggle';
 
-export default class Basic extends React.Component {
+export default class Basic extends React.PureComponent {
   render() {
     const contextSwift = {
       languages: {
@@ -39,7 +39,6 @@ layer.text = layer.text.mgl_expressionLocalized(into: spanish)`;
         id="test-swift-only"
         swift={swift}
         limitHeight={true}
-        onCopy={() => {}}
       />
     );
   }

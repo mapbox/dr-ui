@@ -6,8 +6,8 @@ import stripMd from 'remove-markdown';
 
 // formats the metadata
 function meta(frontMatter) {
-  let description = frontMatter.description,
-    path = `https://docs.mapbox.com/${frontMatter.pathname}`;
+  let description = frontMatter.description;
+  const path = `https://docs.mapbox.com/${frontMatter.pathname}`;
   description += `\n\nSee the example: [${path}](${path})`;
   return {
     title: frontMatter.title,
@@ -17,7 +17,7 @@ function meta(frontMatter) {
 }
 
 // creates a form wrapper for each platform
-class Form extends React.Component {
+class Form extends React.PureComponent {
   render() {
     let classes = `inline-block`;
     if (this.props.classes) classes += ` ${this.props.classes}`;
@@ -35,29 +35,30 @@ class Form extends React.Component {
 }
 
 // creates the actual button that the user can click
-class Button extends React.Component {
+class Button extends React.PureComponent {
   render() {
     const platform = this.props.platform;
     const btnClass = 'btn btn--s cursor-pointer round';
+    function onClick() {
+      if (window && window.analytics) {
+        analytics.track(`Clicked Edit in ${platform}`);
+      }
+    }
     return (
       <input
         style={{ border: 0 }}
         type="submit"
         className={btnClass}
         value={`Edit in ${platform}`}
-        onClick={() => {
-          if (window && window.analytics) {
-            analytics.track(`Clicked Edit in ${platform}`);
-          }
-        }}
+        onClick={onClick}
       />
     );
   }
 }
 
-export default class Edit extends React.Component {
+export default class Edit extends React.PureComponent {
   render() {
-    let { css, js, html, head, resources, frontMatter } = this.props;
+    const { css, js, html, head, resources, frontMatter } = this.props;
     const projectMeta = meta(frontMatter);
     return (
       <>

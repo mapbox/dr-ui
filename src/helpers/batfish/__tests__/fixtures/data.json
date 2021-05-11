@@ -148,7 +148,8 @@
         "prependJs": [
           "import navigation from '@mapbox/batfish/data/navigation'; // eslint-disable-line",
           "import topics from '@mapbox/batfish/data/filters'; // eslint-disable-line",
-          "import splitPages from '@mapbox/batfish/data/split-pages'; // eslint-disable-line"
+          "import splitPages from '@mapbox/batfish/data/split-pages'; // eslint-disable-line",
+          "import sitemapIgnore from '@mapbox/batfish/data/sitemap-ignore'; // eslint-disable-line"
         ]
       }
     },
@@ -221,7 +222,7 @@
         "splitPage": true,
         "hideFeedback": true,
         "contentType": "guide",
-        "products": ["Mapbox fundamentals"],
+        "products": ["Documentation"],
         "prependJs": [
           "import MainPage from '!raw-loader!../index.js'; //eslint-disable-line",
           "import SubOne from '!raw-loader!./intro.md'; //eslint-disable-line",
@@ -254,7 +255,7 @@
         "order": 3,
         "splitPage": true,
         "hideFeedback": true,
-        "products": ["Mapbox fundamentals"],
+        "products": ["Documentation"],
         "contentType": "guide"
       }
     },
@@ -268,14 +269,16 @@
         "splitPage": true,
         "tag": "beta",
         "hideFeedback": true,
-        "products": ["Mapbox fundamentals"],
+        "products": ["Documentation"],
         "contentType": "guide"
       }
     },
     {
       "filePath": "./docs/src/pages/index.js",
       "path": "/dr-ui/",
-      "frontMatter": {}
+      "frontMatter": {
+        "hideFromSearchEngines": true
+      }
     },
     {
       "filePath": "./node_modules/@mapbox/batfish/dist/webpack/default-not-found.js",

@@ -15,7 +15,7 @@ const anonymousId = uuidv4(); // creates an anonymousId fallback if user is not 
 const environment = env();
 const location = typeof window !== 'undefined' ? window.location : undefined;
 
-class Feedback extends React.Component {
+class Feedback extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
@@ -57,7 +57,8 @@ class Feedback extends React.Component {
   };
 
   // handles when user clicks YES or NO button
-  handleYesNo = (helpful) => {
+  handleYesNo = (e) => {
+    const helpful = e.target.value === 'true'; // make the value boolean
     // sets user rating to the state
     this.setState({ helpful }, () => {
       // creates event to send to Segment and sets it to the state
@@ -191,14 +192,16 @@ class Feedback extends React.Component {
             <AsideHeading>Was this {this.props.type} helpful?</AsideHeading>
             <button
               id={this.createId('yes')}
-              onClick={() => this.handleYesNo(true)}
+              onClick={this.handleYesNo}
+              value={true}
               className="btn btn--s"
             >
               Yes
             </button>
             <button
               id={this.createId('no')}
-              onClick={() => this.handleYesNo(false)}
+              onClick={this.handleYesNo}
+              value={false}
               className="btn btn--s ml6"
             >
               No
@@ -269,7 +272,7 @@ class Feedback extends React.Component {
 }
 
 // character counter that appears in the bottom-right of the feedback textarea
-class FeedbackCounter extends React.Component {
+class FeedbackCounter extends React.PureComponent {
   render() {
     return (
       <div
@@ -294,7 +297,7 @@ FeedbackCounter.propTypes = {
 };
 
 // inline warning message that will appear if the user enters > 1000 characters in the feedback textarea
-class FeedbackOverlimitWarning extends React.Component {
+class FeedbackOverlimitWarning extends React.PureComponent {
   render() {
     return (
       <span

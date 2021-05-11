@@ -9,8 +9,7 @@ const {
 describe('peerDependencies are up-to-date', () => {
   test(`@sentry/browser`, () => {
     expect(
-      dependencies['@sentry/browser'] ===
-        `^${peerDependencies['@sentry/browser']}`
+      dependencies['@sentry/browser'] === peerDependencies['@sentry/browser']
     ).toBeTruthy();
   });
 

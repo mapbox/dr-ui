@@ -50,35 +50,35 @@ Array [
               className="mb6 h36"
             >
               <div
-                className="h36 relative"
+                className="relative h36"
               >
-                <div>
-                  <div>
-                    <button
-                      className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round w-full"
-                      onClick={[Function]}
-                      style={Object {}}
+                <button
+                  className="w-full block"
+                  onClick={[Function]}
+                >
+                  <div
+                    className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+                    style={Object {}}
+                  >
+                    <span
+                      className="mr6 color-gray"
                     >
-                      <span
-                        className="mr6 color-gray"
+                      <svg
+                        className="icon w18 h18"
                       >
-                        <svg
-                          className="icon w18 h18"
-                        >
-                          <use
-                            xlinkHref="#icon-search"
-                          />
-                        </svg>
-                      </span>
-                       
-                      <span
-                        className="color-gray"
-                      >
-                        Search
-                      </span>
-                    </button>
+                        <use
+                          xlinkHref="#icon-search"
+                        />
+                      </svg>
+                    </span>
+                     
+                    <span
+                      className="color-gray"
+                    >
+                      Search
+                    </span>
                   </div>
-                </div>
+                </button>
               </div>
             </div>
           </div>
@@ -110,6 +110,7 @@ Array [
                       aria-label="Toggle Overview menu"
                       className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
                       onClick={[Function]}
+                      value="Overview"
                     >
                       <svg
                         className="events-none icon inline-block align-t"
@@ -681,35 +682,35 @@ Array [
               className="mb6 h36"
             >
               <div
-                className="h36 relative"
+                className="relative h36"
               >
-                <div>
-                  <div>
-                    <button
-                      className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round w-full"
-                      onClick={[Function]}
-                      style={Object {}}
+                <button
+                  className="w-full block"
+                  onClick={[Function]}
+                >
+                  <div
+                    className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+                    style={Object {}}
+                  >
+                    <span
+                      className="mr6 color-gray"
                     >
-                      <span
-                        className="mr6 color-gray"
+                      <svg
+                        className="icon w18 h18"
                       >
-                        <svg
-                          className="icon w18 h18"
-                        >
-                          <use
-                            xlinkHref="#icon-search"
-                          />
-                        </svg>
-                      </span>
-                       
-                      <span
-                        className="color-gray"
-                      >
-                        Search
-                      </span>
-                    </button>
+                        <use
+                          xlinkHref="#icon-search"
+                        />
+                      </svg>
+                    </span>
+                     
+                    <span
+                      className="color-gray"
+                    >
+                      Search
+                    </span>
                   </div>
-                </div>
+                </button>
               </div>
             </div>
           </div>
@@ -741,6 +742,7 @@ Array [
                       aria-label="Toggle Overview menu"
                       className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
                       onClick={[Function]}
+                      value="Overview"
                     >
                       <svg
                         className="events-none icon inline-block align-t"
@@ -990,6 +992,7 @@ Array [
                         className="btn btn--s"
                         id="dr-ui--feedback-aside-page-yes"
                         onClick={[Function]}
+                        value={true}
                       >
                         Yes
                       </button>
@@ -997,6 +1000,7 @@ Array [
                         className="btn btn--s ml6"
                         id="dr-ui--feedback-aside-page-no"
                         onClick={[Function]}
+                        value={false}
                       >
                         No
                       </button>
@@ -1029,6 +1033,7 @@ Array [
                       className="btn btn--s"
                       id="dr-ui--feedback-bottom-page-yes"
                       onClick={[Function]}
+                      value={true}
                     >
                       Yes
                     </button>
@@ -1036,6 +1041,7 @@ Array [
                       className="btn btn--s ml6"
                       id="dr-ui--feedback-bottom-page-no"
                       onClick={[Function]}
+                      value={false}
                     >
                       No
                     </button>
@@ -1239,6 +1245,7 @@ Array [
                       className="btn btn--s"
                       id="dr-ui--feedback-bottom-page-yes"
                       onClick={[Function]}
+                      value={true}
                     >
                       Yes
                     </button>
@@ -1246,6 +1253,7 @@ Array [
                       className="btn btn--s ml6"
                       id="dr-ui--feedback-bottom-page-no"
                       onClick={[Function]}
+                      value={false}
                     >
                       No
                     </button>
@@ -1351,35 +1359,35 @@ Array [
               className="mb6 h36"
             >
               <div
-                className="h36 relative"
+                className="relative h36"
               >
-                <div>
-                  <div>
-                    <button
-                      className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round w-full"
-                      onClick={[Function]}
-                      style={Object {}}
+                <button
+                  className="w-full block"
+                  onClick={[Function]}
+                >
+                  <div
+                    className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+                    style={Object {}}
+                  >
+                    <span
+                      className="mr6 color-gray"
                     >
-                      <span
-                        className="mr6 color-gray"
+                      <svg
+                        className="icon w18 h18"
                       >
-                        <svg
-                          className="icon w18 h18"
-                        >
-                          <use
-                            xlinkHref="#icon-search"
-                          />
-                        </svg>
-                      </span>
-                       
-                      <span
-                        className="color-gray"
-                      >
-                        Search
-                      </span>
-                    </button>
+                        <use
+                          xlinkHref="#icon-search"
+                        />
+                      </svg>
+                    </span>
+                     
+                    <span
+                      className="color-gray"
+                    >
+                      Search
+                    </span>
                   </div>
-                </div>
+                </button>
               </div>
             </div>
           </div>
@@ -1411,6 +1419,7 @@ Array [
                       aria-label="Toggle Overview menu"
                       className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
                       onClick={[Function]}
+                      value="Overview"
                     >
                       <svg
                         className="events-none icon inline-block align-t"
@@ -1675,6 +1684,7 @@ Array [
                         className="btn btn--s"
                         id="dr-ui--feedback-aside-page-yes"
                         onClick={[Function]}
+                        value={true}
                       >
                         Yes
                       </button>
@@ -1682,6 +1692,7 @@ Array [
                         className="btn btn--s ml6"
                         id="dr-ui--feedback-aside-page-no"
                         onClick={[Function]}
+                        value={false}
                       >
                         No
                       </button>
@@ -1730,6 +1741,7 @@ Array [
                       className="btn btn--s"
                       id="dr-ui--feedback-bottom-page-yes"
                       onClick={[Function]}
+                      value={true}
                     >
                       Yes
                     </button>
@@ -1737,6 +1749,7 @@ Array [
                       className="btn btn--s ml6"
                       id="dr-ui--feedback-bottom-page-no"
                       onClick={[Function]}
+                      value={false}
                     >
                       No
                     </button>
@@ -1878,35 +1891,35 @@ Array [
               className="mb6 h36"
             >
               <div
-                className="h36 relative"
+                className="relative h36"
               >
-                <div>
-                  <div>
-                    <button
-                      className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round w-full"
-                      onClick={[Function]}
-                      style={Object {}}
+                <button
+                  className="w-full block"
+                  onClick={[Function]}
+                >
+                  <div
+                    className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+                    style={Object {}}
+                  >
+                    <span
+                      className="mr6 color-gray"
                     >
-                      <span
-                        className="mr6 color-gray"
+                      <svg
+                        className="icon w18 h18"
                       >
-                        <svg
-                          className="icon w18 h18"
-                        >
-                          <use
-                            xlinkHref="#icon-search"
-                          />
-                        </svg>
-                      </span>
-                       
-                      <span
-                        className="color-gray"
-                      >
-                        Search
-                      </span>
-                    </button>
+                        <use
+                          xlinkHref="#icon-search"
+                        />
+                      </svg>
+                    </span>
+                     
+                    <span
+                      className="color-gray"
+                    >
+                      Search
+                    </span>
                   </div>
-                </div>
+                </button>
               </div>
             </div>
           </div>
@@ -2092,6 +2105,7 @@ Array [
                       className="btn btn--s"
                       id="dr-ui--feedback-bottom-page-yes"
                       onClick={[Function]}
+                      value={true}
                     >
                       Yes
                     </button>
@@ -2099,6 +2113,7 @@ Array [
                       className="btn btn--s ml6"
                       id="dr-ui--feedback-bottom-page-no"
                       onClick={[Function]}
+                      value={false}
                     >
                       No
                     </button>

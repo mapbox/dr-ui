@@ -24,7 +24,7 @@ export default class ComponentExample extends React.Component {
       <div className="border border--gray-light round-tl">
         <CodeSnippet
           code={decodeJsx(this.props.code)}
-          highlighter={() => highlightJsx}
+          highlighter={highlightJsx}
         />
       </div>
     );

@@ -58,8 +58,7 @@ testCases.domain = {
         },
         {
           title: 'Managing credentials',
-          path:
-            '/developer-experience/ci-systems/reference/managing-credentials/'
+          path: '/developer-experience/ci-systems/reference/managing-credentials/'
         }
       ]}
       location={{

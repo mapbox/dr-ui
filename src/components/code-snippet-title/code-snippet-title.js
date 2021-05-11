@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Icon from '@mapbox/mr-ui/icon';
 
-export default class CodeSnippetTitle extends React.Component {
+export default class CodeSnippetTitle extends React.PureComponent {
   renderFilename = () => {
     return (
       <div className="inline-block txt-bold mb6 color-gray-dark">
@@ -42,7 +42,7 @@ export default class CodeSnippetTitle extends React.Component {
 CodeSnippetTitle.propTypes = {
   /* Filename to be displayed as a kind of title. Can be a specific filename like
   `RuntimeStylingActivity.java` or a general filename like `Activity`. */
-  filename: PropTypes.string.isRequired,
+  filename: PropTypes.string,
   /* Optional `link` to a GitHub file. If this is set, the rendered component
   will include a "View on Github" link. */
   link: function (props, propName, componentName) {

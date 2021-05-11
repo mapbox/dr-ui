@@ -10,7 +10,7 @@ import PlaygroundImage from '../playground-image/playground-image';
 import { VimeoModal, VimeoThumbnail, VimeoPlayImage } from './vimeo';
 import classnames from 'classnames';
 
-class RelatedPage extends React.Component {
+class RelatedPage extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = { modalOpen: false };
@@ -109,11 +109,16 @@ class RelatedPage extends React.Component {
       wmin180: showVideoThumbnail
     });
 
+    const Element = showVideoModal ? 'button' : 'a';
+    const elementProps = {
+      ...(showVideoModal && { onClick: this.handleClick }),
+      ...(!showVideoModal && { href: props.url })
+    };
+
     return (
       <React.Fragment>
-        <a
-          onClick={showVideoModal ? this.handleClick : undefined}
-          href={showVideoModal ? undefined : props.url}
+        <Element
+          {...elementProps}
           className={`unprose block cursor-pointer color-${theme.color} color-${theme.color}-dark-on-hover transition mb18`}
         >
           <div
@@ -152,7 +157,7 @@ class RelatedPage extends React.Component {
               </div>
             )}
           </div>
-        </a>
+        </Element>
         {showVideoModal && this.renderModal()}
       </React.Fragment>
     );

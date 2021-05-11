@@ -93,7 +93,7 @@ export default class ExampleIndex extends React.PureComponent {
     // check if browser supports URLSearchParams API
     if ('URLSearchParams' in window) {
       // get the current query params
-      let searchParams = new URLSearchParams(window.location.search);
+      const searchParams = new URLSearchParams(window.location.search);
       // if value exists, set new query param
       if (value) searchParams.set(label, value);
       // otherwise remove the query param
@@ -336,7 +336,7 @@ export default class ExampleIndex extends React.PureComponent {
                   }.`}
             </div>
             <button
-              onClick={() => this.handleReset()}
+              onClick={this.handleReset}
               className="btn btn--s btn--gray btn--stroke round"
             >
               Reset filters
@@ -410,16 +410,8 @@ ExampleIndex.propTypes = {
 
 class FilterSection extends React.PureComponent {
   renderInput = () => {
-    const {
-      title,
-      data,
-      activeItem,
-      isSwitch,
-      id,
-      handleInput,
-      isText,
-      placeholder
-    } = this.props;
+    const { title, data, activeItem, isSwitch, id, isText, placeholder } =
+      this.props;
     const themeLabel = 'txt-s txt-bold color-darken75';
 
     if (isText)
@@ -428,7 +420,7 @@ class FilterSection extends React.PureComponent {
           placeholder={placeholder}
           id={id}
           value={activeItem}
-          onChange={(value, id) => handleInput(value, id)}
+          onChange={this.props.handleInput}
           themeControlInput="input input--s relative wmax180"
           themeLabel={themeLabel}
           label={title}
@@ -445,7 +437,7 @@ class FilterSection extends React.PureComponent {
           label={title}
           themeLabel={`${themeLabel} ml6`}
           themeControlSwitch="switch--s-label switch--gray"
-          onChange={(value, id) => handleInput(value, id)}
+          onChange={this.props.handleInput}
         />
       );
     else
@@ -456,9 +448,7 @@ class FilterSection extends React.PureComponent {
           value={activeItem}
           themeLabel={`${themeLabel} w70`}
           themeControlSelect="select select--s"
-          onChange={(value, id) => {
-            handleInput(value, id);
-          }}
+          onChange={this.props.handleInput}
           options={[
             {
               label: `All ${title.toLowerCase()}`,

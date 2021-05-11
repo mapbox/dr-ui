@@ -6,7 +6,7 @@ splitPage: true
 hideFeedback: true
 contentType: guide
 products:
-  - Mapbox fundamentals
+  - Documentation
 prependJs:
   - "import MainPage from '!raw-loader!../index.js'; //eslint-disable-line"
   - "import SubOne from '!raw-loader!./intro.md'; //eslint-disable-line"
@@ -34,7 +34,7 @@ The main page is where you will combine all the partial markdown files.
 
 #### Example
 
-{{ <div className="mb18"><CodeSnippet code={`${MainPage}`} highlighter={() => highlightJsx} filename="src/pages/guides/split-pages/index.js" /></div>}}
+{{ <div className="mb18"><CodeSnippet code={`${MainPage}`} highlighter={highlightJsx} filename="src/pages/guides/split-pages/index.js" /></div>}}
 
 ### 2. Create the split pages
 
@@ -46,7 +46,7 @@ The main page is where you will combine all the partial markdown files.
 
 #### Example
 
-{{ <CodeSnippet code={`${SubOne}`} highlighter={() => highlightHtml} filename="src/pages/guides/split-pages/sections/intro.md" />}}
+{{ <CodeSnippet code={`${SubOne}`} highlighter={highlightHtml} filename="src/pages/guides/split-pages/sections/intro.md" />}}
 
 ### 3. Update the Batfish configuration
 
@@ -63,7 +63,7 @@ Use the [SplitPage component](https://github.com/mapbox/dr-ui/blob/main/src/comp
 
 ##### Example
 
-{{ <CodeSnippet code={`${SplitPageShell}`} highlighter={() => highlightJsx} filename="src/components/split-page-shell.js" />}}
+{{ <CodeSnippet code={`${SplitPageShell}`} highlighter={highlightJsx} filename="src/components/split-page-shell.js" />}}
 
 #### Define SplitPage wrapper in the Batfish configuration
 
@@ -79,7 +79,7 @@ getWrapper: resource => {
  } else {
    return path.join(__dirname, 'src/components/page-shell.js')
  }
-}`} highlighter={() => highlightJsx} filename="batfish.config.js" />}}
+}`} highlighter={highlightJsx} filename="batfish.config.js" />}}
 
 - If you do not want the Feedback component to appear after each section (or partial markdown file), you can reference `@mapbox/dr-ui/page-layout/split-page` instead of the local `split-page-shell.js` in `batfish.config.js`.
 - You can turn off the Feedback component from any partial markdown file by setting `hideFeedback: true` in the frontmatter of the desired section.
@@ -103,7 +103,7 @@ dataSelectors: {
 splitPages: (data) => buildSplitPages(data)
 }
 };
-};`} highlighter={() => highlightJsx} filename="batfish.config.js" />}}
+};`} highlighter={highlightJsx} filename="batfish.config.js" />}}
 
 ### 4. Create redirects
 

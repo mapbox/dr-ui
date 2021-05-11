@@ -26,7 +26,7 @@ export default class OnThisPage extends React.PureComponent {
     if (isMXL) {
       // create a debounced event listener on "scroll"
       this.onScroll = debounce(this.setActiveLink, 50);
-      document.addEventListener('scroll', this.onScroll);
+      document.addEventListener('scroll', this.onScroll, { passive: true });
       // set active link on load
       this.setActiveLink();
     }

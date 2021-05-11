@@ -66,8 +66,7 @@ testCases.noCollapse = {
     copyRanges: [
       [21, 23],
       [38, 38]
-    ],
-    onCopy: () => {}
+    ]
   }
 };
 
@@ -79,8 +78,7 @@ testCases.firstLine = {
     highlightedCode: highlightSwift(code),
     maxHeight: 450,
     highlightThemeCss: highlightThemeCss,
-    copyRanges: [[1, 5]],
-    onCopy: () => {}
+    copyRanges: [[1, 5]]
   }
 };
 
@@ -92,8 +90,7 @@ testCases.lastLine = {
     highlightedCode: highlightSwift(code),
     maxHeight: 450,
     highlightThemeCss: highlightThemeCss,
-    copyRanges: [[38, 42]],
-    onCopy: () => {}
+    copyRanges: [[38, 42]]
   }
 };
 

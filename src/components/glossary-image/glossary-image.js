@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default class GlossaryImage extends React.Component {
+export default class GlossaryImage extends React.PureComponent {
   render() {
     const { props } = this;
     return (
