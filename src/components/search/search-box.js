@@ -22,7 +22,6 @@ export class SearchBox extends React.PureComponent {
     this.renderModal = this.renderModal.bind(this);
     this.renderSearchBar = this.renderSearchBar.bind(this);
     this.singleLinksFacet = this.singleLinksFacet.bind(this);
-    this.renderNoResult = this.renderNoResult.bind(this);
     // if resultsOnly and overrideSearchTerm, set the search term
     if (this.props.resultsOnly && this.props.overrideSearchTerm) {
       props.setSearchTerm(this.props.overrideSearchTerm);
@@ -101,28 +100,22 @@ export class SearchBox extends React.PureComponent {
     );
   };
 
-  renderNoResult() {
-    const { themeCompact, emptyResultMessage, searchTerm } = this.props;
-    // Track query in Sentry
-    Sentry.init({
-      dsn: 'https://cbf0479a2c93421db53d4dd20df6dc52@o5937.ingest.sentry.io/5736949',
-      environment: 'main'
-    });
-    Sentry.configureScope((scope) => {
-      scope.setFingerprint(searchTerm);
-      Sentry.captureMessage(searchTerm);
-    });
-    // Return message
-    return (
-      <div
-        className={classnames('px12', {
-          'py6 txt-s': themeCompact,
-          'py12 prose': !themeCompact
-        })}
-      >
-        {emptyResultMessage}
-      </div>
-    );
+  componentDidUpdate(prevProps) {
+    const { isLoading, results, searchTerm } = this.props;
+
+    if (results !== prevProps.results && !isLoading && searchTerm) {
+      // if no results, send query to Sentry
+      console.log('searchTerm', searchTerm);
+      // Track query in Sentry
+      Sentry.init({
+        dsn: 'https://cbf0479a2c93421db53d4dd20df6dc52@o5937.ingest.sentry.io/5736949',
+        environment: 'dr-ui'
+      });
+      Sentry.configureScope((scope) => {
+        scope.setFingerprint(searchTerm);
+        Sentry.captureMessage(searchTerm);
+      });
+    }
   }
 
   renderSearchBar() {
@@ -136,6 +129,7 @@ export class SearchBox extends React.PureComponent {
       isLoading,
       wasSearched,
       themeCompact,
+      emptyResultMessage,
       placeholder,
       useModal
     } = this.props;
@@ -230,7 +224,14 @@ export class SearchBox extends React.PureComponent {
                             ))}
                           </ul>
                         ) : (
-                          this.renderNoResult()
+                          <div
+                            className={classnames('px12', {
+                              'py6 txt-s': themeCompact,
+                              'py12 prose': !themeCompact
+                            })}
+                          >
+                            {emptyResultMessage}
+                          </div>
                         ))}
                     </React.Fragment>
                   </div>
