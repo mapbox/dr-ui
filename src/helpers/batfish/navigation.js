@@ -110,6 +110,7 @@ function formatPages(siteBasePath, data, sections) {
     .filter((f) => !f.is404) // remove the batfish 404 page
     .map((p) => ({
       title: p.frontMatter.title,
+      description: p.frontMatter.description,
       path: p.path,
       ...(p.frontMatter.navOrder && { navOrder: p.frontMatter.navOrder }),
       ...(p.frontMatter.order && { order: p.frontMatter.order }),

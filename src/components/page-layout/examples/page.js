@@ -17,14 +17,15 @@ export default class Basic extends React.PureComponent {
           }
         }}
         location={{
-          pathname: '/PageLayout/overview/worldview/sub-page-one/'
+          pathname: '/PageLayout/overview/worldview/border-styling/'
         }}
         frontMatter={{
-          title: 'Sub page one',
+          title: 'Border styling',
           layout: 'page',
+          groupOrder: 2,
           headings: [
-            { text: 'Section 1', slug: 'section-1', level: 2 },
-            { text: 'Section 2', slug: 'section-2', level: 2 }
+            { text: 'Set a filter', slug: 'set-a-filter', level: 2 },
+            { text: 'Style the line', slug: 'style-the-line', level: 2 }
           ]
         }}
         navigation={{
@@ -37,7 +38,7 @@ export default class Basic extends React.PureComponent {
               parent: '/PageLayout/overview/',
               title: 'Overview'
             },
-            '/PageLayout/overview/worldview/sub-page-one/': {
+            '/PageLayout/overview/worldview/border-styling/': {
               parent: '/PageLayout/overview/worldview/',
               title: 'Worldview'
             }
@@ -57,18 +58,27 @@ export default class Basic extends React.PureComponent {
                   title: 'Worldview',
                   subPages: [
                     {
-                      title: 'Sub page one',
-                      path: '/PageLayout/overview/worldview/sub-page-one/',
+                      title: 'Available worldviews',
+                      description:
+                        'Identify geographic features whose characteristics are defined differently by audiences belonging to various regional, cultural, or political groups.',
+                      path: '/PageLayout/overview/worldview/avilable-worldviews/',
+                      groupOrder: 1,
                       id: 'sp-one'
                     },
                     {
-                      title: 'Sub page two',
-                      path: '/PageLayout/overview/worldview/sub-page-two/',
+                      title: 'Border styling',
+                      description:
+                        'When creating a map style with a tileset that uses worldviews, you must apply a filter to any layers that include a worldview data field.',
+                      path: '/PageLayout/overview/worldview/border-styling/',
+                      groupOrder: 2,
                       id: 'sp-two'
                     },
                     {
-                      title: 'Sub page three',
-                      path: '/PageLayout/overview/worldview/sub-page-three/',
+                      title: 'Data sources',
+                      description:
+                        'Some Mapbox vector tilesets, including Mapbox Streets v8 and Boundaries v3, include the worldview data field in several layers.',
+                      path: '/PageLayout/overview/worldview/data-sources/',
+                      groupOrder: 3,
                       id: 'sp-three'
                     }
                   ]
@@ -107,7 +117,7 @@ export default class Basic extends React.PureComponent {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <h2 id="section-1">Section 1</h2>
+          <h2 id="section-1">Set a filter</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -117,7 +127,7 @@ export default class Basic extends React.PureComponent {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <h2 id="section-2">Section 2</h2>
+          <h2 id="section-2">Style the line</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
