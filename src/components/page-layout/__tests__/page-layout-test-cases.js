@@ -59,7 +59,7 @@ testCases.examplePageFilters = {
         },
         navTabs: [
           {
-            path: '/PageLayout/',
+            path: '/PageLayout/overview/',
             title: 'Overview',
             id: 'overview'
           },

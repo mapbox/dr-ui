@@ -17,10 +17,10 @@ export default class Basic extends React.PureComponent {
           }
         }}
         location={{
-          pathname: '/PageLayout/'
+          pathname: '/PageLayout/overview/worldview/sub-page-one/'
         }}
         frontMatter={{
-          title: 'Overview',
+          title: 'Sub page one',
           layout: 'page',
           headings: [
             { text: 'Section 1', slug: 'section-1', level: 2 },
@@ -29,27 +29,52 @@ export default class Basic extends React.PureComponent {
         }}
         navigation={{
           hierarchy: {
-            '/PageLayout/': {
+            '/PageLayout/overview/': {
               parent: '/PageLayout/',
               title: 'Overview'
+            },
+            '/PageLayout/overview/worldview/': {
+              parent: '/PageLayout/overview/',
+              title: 'Overview'
+            },
+            '/PageLayout/overview/worldview/sub-page-one/': {
+              parent: '/PageLayout/overview/worldview/',
+              title: 'Worldview'
             }
           },
           navTabs: [
             {
-              path: '/PageLayout/',
+              path: '/PageLayout/overview/',
               title: 'Overview',
               id: 'overview',
               pages: [
                 {
-                  path: '/PageLayout/annotations/',
+                  path: '/PageLayout/overview/annotations/',
                   title: 'Annotations'
                 },
                 {
-                  path: '/PageLayout/worldview/',
-                  title: 'Worldview'
+                  path: '/PageLayout/overview/worldview/',
+                  title: 'Worldview',
+                  subPages: [
+                    {
+                      title: 'Sub page one',
+                      path: '/PageLayout/overview/worldview/sub-page-one/',
+                      id: 'sp-one'
+                    },
+                    {
+                      title: 'Sub page two',
+                      path: '/PageLayout/overview/worldview/sub-page-two/',
+                      id: 'sp-two'
+                    },
+                    {
+                      title: 'Sub page three',
+                      path: '/PageLayout/overview/worldview/sub-page-three/',
+                      id: 'sp-three'
+                    }
+                  ]
                 },
                 {
-                  path: '/PageLayout/expressions/',
+                  path: '/PageLayout/overview/expressions/',
                   title: 'Expressions'
                 }
               ]

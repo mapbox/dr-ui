@@ -45,7 +45,7 @@ export default class Basic extends React.PureComponent {
 
           navTabs: [
             {
-              path: '/PageLayout/',
+              path: '/PageLayout/overview/',
               title: 'Overview',
               id: 'overview',
               pages: [
