@@ -1,5 +1,6 @@
 import React from 'react';
 import Page from '../examples/page';
+import GroupIndex from '../examples/group-index-page';
 import Example from '../examples/example';
 import ExamplePage from '../examples/example-page';
 import Full from '../examples/full';
@@ -15,6 +16,11 @@ testCases.full = {
 testCases.page = {
   description: 'Page layout',
   element: <Page />
+};
+
+testCases.groupIndexPage = {
+  description: 'Page layout: group index',
+  element: <GroupIndex />
 };
 
 testCases.example = {

@@ -6,6 +6,7 @@ import OnThisPage from '../../on-this-page/on-this-page';
 import Feedback from '../../feedback/feedback';
 import OverviewHeader from '../../overview-header/overview-header';
 import NextPrevPage from '../../next-prev-page/next-prev-page.js';
+import GuideGroupIndex from '../../guide-group-index/guide-group-index.js';
 
 export default class Content extends React.PureComponent {
   render() {
@@ -132,6 +133,12 @@ export class ContentWrapper extends React.PureComponent {
             })}
           >
             {children}
+            {frontMatter.group && (
+              <GuideGroupIndex
+                pathname={location.pathname}
+                navigation={navigation}
+              />
+            )}
             {frontMatter.groupOrder && (
               <div className="mt36 pt36 border-t border--gray-light">
                 <NextPrevPage
@@ -167,7 +174,8 @@ ContentWrapper.propTypes = {
     layout: PropTypes.string,
     overviewHeader: PropTypes.object,
     onThisPage: PropTypes.bool,
-    groupOrder: PropTypes.number
+    groupOrder: PropTypes.number,
+    group: PropTypes.bool
   }).isRequired,
   headings: PropTypes.array,
   location: PropTypes.object.isRequired,
