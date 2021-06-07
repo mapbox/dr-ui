@@ -47,3 +47,30 @@ export function createUniqueCrumbs(links) {
     return arr;
   }, []);
 }
+
+function getGuidesNavTabs(array) {
+  return array.find((x) => x.title === 'Guides');
+}
+
+export function getSubPages(navigation, pathname, frontMatter) {
+  let sectionPath;
+  let pages;
+  let subPages;
+  if (navigation.hierarchy[pathname].section) {
+    sectionPath = navigation.hierarchy[pathname].section.path;
+  }
+  if (sectionPath) {
+    pages = getGuidesNavTabs(navigation[sectionPath].navTabs).pages;
+  } else if (getGuidesNavTabs(navigation.navTabs)) {
+    pages = getGuidesNavTabs(navigation.navTabs).pages;
+  }
+  if (frontMatter.group) {
+    subPages = pages && pages.find((x) => x.path === pathname).subPages;
+  } else {
+    subPages =
+      pages &&
+      pages.find((x) => x.path === navigation.hierarchy[pathname].parent)
+        .subPages;
+  }
+  return subPages;
+}

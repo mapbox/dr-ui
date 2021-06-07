@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ChevronousText from '@mapbox/mr-ui/chevronous-text';
 import classnames from 'classnames';
+import { getSubPages } from '../utils.js';
 
 export default class NextPrevPage extends React.PureComponent {
   renderLink(page, label) {
@@ -29,16 +30,7 @@ export default class NextPrevPage extends React.PureComponent {
 
   render() {
     const { pathname, frontMatter, navigation } = this.props;
-    const sectionPath = navigation.hierarchy[pathname].section
-      ? navigation.hierarchy[pathname].section.path
-      : undefined;
-    const pages = sectionPath
-      ? navigation[sectionPath].navTabs.find((x) => x.title === 'Guides').pages
-      : navigation.navTabs.find((x) => x.title === 'Guides').pages;
-    const subPages =
-      pages &&
-      pages.find((x) => x.path === navigation.hierarchy[pathname].parent)
-        .subPages;
+    const subPages = getSubPages(navigation, pathname, frontMatter);
     const nextPage =
       subPages &&
       subPages.find((x) => x.groupOrder === frontMatter.groupOrder + 1);

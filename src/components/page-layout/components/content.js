@@ -137,6 +137,7 @@ export class ContentWrapper extends React.PureComponent {
               <GuideGroupIndex
                 pathname={location.pathname}
                 navigation={navigation}
+                frontMatter={frontMatter}
               />
             )}
             {frontMatter.groupOrder && (

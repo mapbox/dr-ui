@@ -181,7 +181,7 @@ export default class NavigationAccordion extends React.Component {
       // the section's toggle is active
       const isActiveToggle = activeToggles.indexOf(title) > -1;
       // the section is active
-      const isActiveSection = parentPage.indexOf(path) > -1;
+      const isActiveSection = parentPage && parentPage.indexOf(path) > -1;
       const sectionId = `menu-${id}`;
       return {
         header: this.renderHeader(
