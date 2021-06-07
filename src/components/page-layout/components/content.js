@@ -5,8 +5,8 @@ import classnames from 'classnames';
 import OnThisPage from '../../on-this-page/on-this-page';
 import Feedback from '../../feedback/feedback';
 import OverviewHeader from '../../overview-header/overview-header';
-import NextPrevPage from '../../next-prev-page/next-prev-page.js';
-import GuideGroupIndex from '../../guide-group-index/guide-group-index.js';
+import NextPrevPage from './next-prev-page.js';
+import GuideGroupIndex from './guide-group-index.js';
 
 export default class Content extends React.PureComponent {
   render() {
