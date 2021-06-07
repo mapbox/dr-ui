@@ -33,8 +33,8 @@ export default class NextPrevPage extends React.PureComponent {
       ? navigation.hierarchy[pathname].section.path
       : undefined;
     const pages = sectionPath
-      ? navigation[sectionPath].navTabs[0].pages
-      : navigation.navTabs[0].pages;
+      ? navigation[sectionPath].navTabs.find((x) => x.title === 'Guides').pages
+      : navigation.navTabs.find((x) => x.title === 'Guides').pages;
     const subPages =
       pages &&
       pages.find((x) => x.path === navigation.hierarchy[pathname].parent)
