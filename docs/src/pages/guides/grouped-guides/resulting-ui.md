@@ -11,5 +11,5 @@ products:
 This section of the catalog site illustrates how grouped guides look and work including:
 
 - A summary page layout (using `GuideGroupIndex`) on the `index.md` page.
-- A list of grouped guides in the sidebar (in the `NavigationAccordion`) that is displayed when the group title is clicked (in this case, "Grouped guides"). The list of grouped guides will be hidden when you click on a different item in the sidebar.
+- A list of grouped guides in the sidebar (in the `NavigationAccordion`) that is displayed when the group title is clicked (in this case, "Grouped guides"). The `NavigationAccordion` will hide the list of grouped guides when you click on a different item in the sidebar.
 - Links to next and previous guides in the group (using `NextPrevPage`) at the bottom of the main content in guides that are grouped.
