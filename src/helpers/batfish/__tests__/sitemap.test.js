@@ -123,7 +123,6 @@ describe('prepareSitemap', () => {
         )
         .sort();
       expect(contents).toEqual([
-        'https://mapbox.github.io/dr-ui/404',
         'https://mapbox.github.io/dr-ui/changelog',
         'https://mapbox.github.io/dr-ui/components',
         'https://mapbox.github.io/dr-ui/examples',
