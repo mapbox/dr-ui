@@ -103,11 +103,10 @@ export default class NavigationAccordion extends React.Component {
         <li key={subPage.title}>
           <a
             href={subPage.path}
-            style={{ marginLeft: -2 }}
             className={classnames(
-              'pl12 inline-block w-full color-blue-on-hover cursor-pointer',
+              'pl12 inline-block w-full color-blue-on-hover border-l border--gray-light border-l--2',
               {
-                'color-blue border-l border--blue border-l--2':
+                'color-blue':
                   activeItem === subPage.path
               }
             )}
@@ -118,20 +117,19 @@ export default class NavigationAccordion extends React.Component {
       );
     });
     return (
-      <ul className="mb6 border-l border--gray-light border-l--2">{subs}</ul>
+      <ul className="mb6 ml3">{subs}</ul>
     );
   }
   renderBody(subItems, activeItem, sectionId) {
     const subItemEls = subItems
       .filter((page) => !page.groupOrder || page.groupOrder === undefined)
       .map((page) => (
-        <React.Fragment>
+        <React.Fragment key={page.title}>
           <li
             // Required on parents containing tags to prevent unwanted scrollbars on IE
             className={classnames('mb3', {
               'scroll-hidden': page.tag
             })}
-            key={page.title}
           >
             <a
               className={classnames('inline-block w-full color-blue-on-hover', {

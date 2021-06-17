@@ -31,12 +31,10 @@ function findSection(siteBasePath, page, sections) {
 function buildHierarchy(pages, organized, section) {
   // Create an object containing the title for each
   // path that is the index for a group of guides
-  const groups = {};
-  pages.forEach((page) => {
-    if (page.group) {
-      groups[page.path] = page.title;
-    }
-  });
+  const groups = pages.reduce((obj, page) => {
+    if (page.group) obj[page.path] = page.title;
+    return obj;
+  }, {});
   // Iterate through the organized pages
   return Object.keys(organized).reduce((obj, contentType) => {
     organized[contentType].pages.map((page) => {
@@ -69,7 +67,7 @@ function findChildren(pages, parent) {
   // Filter and sort pages
   const sortedPages = pages
     .filter((page) => page.path.startsWith(parent.path))
-    .filter((page) => !page.splitPage)
+    .filter((page) => !page.splitPage) // exclude individual `splitPage` from navAccordion
     .sort((a, b) => parseInt(a.order) - parseInt(b.order));
   // Find all pages that are group indexes, and add a
   // subPages key to the object and set the value to an array

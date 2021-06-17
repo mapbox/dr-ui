@@ -12,7 +12,7 @@ export default class GuideGroupIndex extends React.PureComponent {
         {subPages &&
           subPages.map((subpage, i) => {
             return (
-              <div
+              <div key={subpage.title}
                 className={classnames(
                   'flex-parent flex-parent--start-cross mb12',
                   {
