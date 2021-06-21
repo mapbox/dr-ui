@@ -6,14 +6,15 @@ export default class CategoryConfusing extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      feedback: undefined
+      feedback: undefined,
+      overLimit: false
     };
     this.handleFeedback = this.handleFeedback.bind(this);
     this.submit = this.submit.bind(this);
   }
 
-  handleFeedback(value) {
-    this.setState({ feedback: value });
+  handleFeedback({ value, overLimit }) {
+    this.setState({ feedback: value, overLimit });
   }
 
   submit() {
@@ -21,7 +22,7 @@ export default class CategoryConfusing extends React.PureComponent {
   }
 
   render() {
-    const { feedback } = this.state;
+    const { feedback, overLimit } = this.state;
     const { option, placeholder } = this.props;
     return (
       <>
@@ -32,7 +33,10 @@ export default class CategoryConfusing extends React.PureComponent {
           onChange={this.handleFeedback}
           placeholder={placeholder}
         />
-        <FeedbackButton onClick={this.submit} disabled={!feedback} />
+        <FeedbackButton
+          onClick={this.submit}
+          disabled={!feedback || overLimit}
+        />
       </>
     );
   }

@@ -206,6 +206,7 @@ exports[`Workflow 2 - Something is confusing 1`] = `
                   </ControlTextarea>
                   <div
                     className="absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s"
+                    id="feedback-length"
                   >
                     1000
                   </div>

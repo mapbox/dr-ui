@@ -6,7 +6,7 @@ import ControlCheckboxSet from '@mapbox/mr-ui/control-checkbox-set';
 export default class CategoryLike extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { value: [], feedback: '' };
+    this.state = { value: [], feedback: '', overLimit: false };
     this.handleChange = this.handleChange.bind(this);
     this.handleFeedback = this.handleFeedback.bind(this);
     this.submit = this.submit.bind(this);
@@ -16,8 +16,8 @@ export default class CategoryLike extends React.Component {
     this.setState({ value });
   }
 
-  handleFeedback(feedback) {
-    this.setState({ feedback });
+  handleFeedback({ value, overLimit }) {
+    this.setState({ feedback: value, overLimit });
   }
 
   submit() {
@@ -28,7 +28,7 @@ export default class CategoryLike extends React.Component {
   }
 
   render() {
-    const { value, feedback } = this.state;
+    const { value, feedback, overLimit } = this.state;
     const { options, leadText, placeholder } = this.props;
     const onlySomethingElse =
       value.length === 1 && value[0] === 'Something else';
@@ -55,7 +55,9 @@ export default class CategoryLike extends React.Component {
         )}
         <FeedbackButton
           onClick={this.submit}
-          disabled={!value.length || (!feedback && onlySomethingElse)}
+          disabled={
+            !value.length || (!feedback && onlySomethingElse) || overLimit
+          }
         />
       </>
     );

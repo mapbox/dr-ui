@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ControlTextarea from '@mapbox/mr-ui/control-textarea';
+import Icon from '@mapbox/mr-ui/icon';
 import classnames from 'classnames';
 
 // character limit for the feedback textarea
@@ -11,20 +12,24 @@ export class FeedbackTextarea extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      feedback: undefined
+      feedback: ''
     };
   }
 
   handleFeedback = (value) => {
     this.setState({ feedback: value }, () => {
-      this.props.onChange(value);
+      this.props.onChange({ value, overLimit: this.isOverLimit() });
     });
   };
+
+  isOverLimit() {
+    return this.state.feedback.length > feedbackLimit;
+  }
 
   renderOverLimit = (feedbackLength) => {
     return (
       <div
-        id="overlimit"
+        id="feedback-overlimit"
         className="color-red txt-s bg-red-faint round py3 pl6 pr12 mt6"
       >
         <Icon name="alert" inline={true} /> Your message is over the{' '}
@@ -38,7 +43,7 @@ export class FeedbackTextarea extends React.PureComponent {
     const feedbackLength = this.state.feedback
       ? feedbackLimit - this.state.feedback.length
       : feedbackLimit;
-    const feedbackOverLimit = feedbackLength < 0;
+    const feedbackOverLimit = this.isOverLimit();
     return (
       <>
         <div className="relative">
@@ -52,6 +57,7 @@ export class FeedbackTextarea extends React.PureComponent {
             placeholder={placeholder}
           />
           <div
+            id="feedback-length"
             className={classnames(
               'absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s',
               {

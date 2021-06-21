@@ -4,7 +4,7 @@ import React from 'react';
 import Feedback from '../feedback';
 import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import { expectThankYou } from './shared';
+import { expectThankYou, testTextArea } from './shared';
 
 describe('Workflow', () => {
   const feedback = mount(
@@ -56,16 +56,7 @@ describe('Workflow', () => {
   });
 
   test('4 - Enter text feedback', () => {
-    const textarea = feedback.find('textarea');
-    textarea.simulate('change', {
-      target: {
-        value:
-          "I found a sandwich and I want to know why there isn't any mayonnaise."
-      }
-    });
-    // The button is enabled after the user submits text feedback
-    const submitButton = feedback.find('button#dr-ui--feedback-submit-button');
-    expect(submitButton.props().disabled).toBeFalsy();
+    testTextArea(feedback);
   });
 
   test('5 - Submit feedback', () => {

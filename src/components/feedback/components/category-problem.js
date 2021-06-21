@@ -8,7 +8,8 @@ export default class CategoryProblem extends React.PureComponent {
     super(props);
     this.state = {
       value: undefined,
-      feedback: undefined
+      feedback: undefined,
+      overLimit: false
     };
     this.handleRadios = this.handleRadios.bind(this);
     this.handleFeedback = this.handleFeedback.bind(this);
@@ -17,8 +18,8 @@ export default class CategoryProblem extends React.PureComponent {
   handleRadios(value) {
     this.setState({ value });
   }
-  handleFeedback(value) {
-    this.setState({ feedback: value });
+  handleFeedback({ value, overLimit }) {
+    this.setState({ feedback: value, overLimit });
   }
 
   submit() {
@@ -29,7 +30,7 @@ export default class CategoryProblem extends React.PureComponent {
   }
 
   render() {
-    const { value, feedback } = this.state;
+    const { value, feedback, overLimit } = this.state;
     const { options, leadText } = this.props;
     return (
       <>
@@ -54,7 +55,10 @@ export default class CategoryProblem extends React.PureComponent {
               onChange={this.handleFeedback}
               placeholder={options[value].placeholder}
             />
-            <FeedbackButton onClick={this.submit} disabled={!feedback} />
+            <FeedbackButton
+              onClick={this.submit}
+              disabled={!feedback || overLimit}
+            />
           </>
         )}
       </>
