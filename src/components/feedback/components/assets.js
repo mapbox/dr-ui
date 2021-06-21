@@ -14,19 +14,20 @@ export class FeedbackTextarea extends React.PureComponent {
     this.state = {
       feedback: ''
     };
+    this.handleFeedback = this.handleFeedback.bind(this);
   }
 
-  handleFeedback = (value) => {
+  handleFeedback(value) {
     this.setState({ feedback: value }, () => {
       this.props.onChange({ value, overLimit: this.isOverLimit() });
     });
-  };
+  }
 
   isOverLimit() {
     return this.state.feedback.length > feedbackLimit;
   }
 
-  renderOverLimit = (feedbackLength) => {
+  renderOverLimit(feedbackLength) {
     return (
       <div
         id="feedback-overlimit"
@@ -36,7 +37,7 @@ export class FeedbackTextarea extends React.PureComponent {
         {feedbackLength} character limit.
       </div>
     );
-  };
+  }
 
   render() {
     const { id, label, placeholder, value } = this.props;
