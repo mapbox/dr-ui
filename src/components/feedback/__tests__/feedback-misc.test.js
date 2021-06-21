@@ -1,6 +1,7 @@
 import React from 'react';
 import Feedback, { returnGenericType } from '../feedback';
 import { mount } from 'enzyme';
+import toJson from 'enzyme-to-json';
 
 test('Feedback too long', () => {
   const feedback = mount(
@@ -37,6 +38,29 @@ test('Feedback too long', () => {
   // Submit button is disabled when user enters too long text
   const submitBtn = feedback.find('#dr-ui--feedback-submit-button');
   expect(submitBtn.props().disabled).toBeTruthy();
+});
+
+test('Generate snapshot for feedback confirmation', () => {
+  const feedback = mount(
+    <Feedback
+      site="dr-ui"
+      location={{
+        pathname: '/mapbox-gl-js/api/',
+        hash: '#lnglat'
+      }}
+      webhook={{
+        production: '',
+        staging: ''
+      }}
+    />
+  );
+  feedback.setState({
+    isOpen: true,
+    sentFeedback: true,
+    category: 'Something is confusing',
+    feedback: 'I do not understand'
+  });
+  expect(toJson(feedback)).toMatchSnapshot();
 });
 
 test('returnGenericType', () => {

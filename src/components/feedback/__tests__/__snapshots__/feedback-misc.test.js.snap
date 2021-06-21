@@ -1,0 +1,195 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Generate snapshot for feedback confirmation 1`] = `
+<Feedback
+  feedbackSentryDsn="https://eccc8b561b9a461990309b01d33d54e3@sentry.io/1848287"
+  location={
+    Object {
+      "hash": "#lnglat",
+      "pathname": "/mapbox-gl-js/api/",
+    }
+  }
+  site="dr-ui"
+  type="page"
+  webhook={
+    Object {
+      "production": "",
+      "staging": "",
+    }
+  }
+>
+  <FeedbackWrapper>
+    <div
+      className="dr-ui--feedback wmax300"
+    >
+      <div
+        className="bg-gray-faint round py12 px12"
+      >
+        <div
+          className="flex-parent flex-parent--column"
+        >
+          <div
+            className="flex-child flex-parent flex-parent--space-between-main w-full mb12"
+          >
+            <div
+              className="flex-child txt-bold"
+            />
+            <div
+              className="flex-child"
+            >
+              <Tooltip
+                alignment="center"
+                block={false}
+                coloring="light"
+                content="Close feedback"
+                disabled={false}
+                maxWidth="medium"
+                padding="small"
+                placement="top"
+                respondsToClick={false}
+                textSize="s"
+              >
+                <PopoverTrigger
+                  block={false}
+                  content={
+                    <div
+                      className="txt-s wmax240"
+                    >
+                      Close feedback
+                    </div>
+                  }
+                  disabled={false}
+                  popoverProps={
+                    Object {
+                      "alignment": "center",
+                      "coloring": "light",
+                      "hasPointer": true,
+                      "hideWhenAnchorIsOffscreen": true,
+                      "padding": "small",
+                      "passthroughProps": Object {
+                        "id": null,
+                        "role": "tooltip",
+                      },
+                      "placement": "top",
+                    }
+                  }
+                  receiveFocus={false}
+                  renderHiddenContent={true}
+                  respondsToClick={false}
+                  respondsToFocus={true}
+                  respondsToHover={true}
+                  trapFocus={false}
+                >
+                  <div
+                    className="inline-block"
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                  >
+                    <button
+                      aria-describedby={null}
+                      aria-label="Close feedback"
+                      className="link--gray"
+                      onClick={[Function]}
+                    >
+                      <Icon
+                        inline={false}
+                        name="close"
+                        passthroughProps={Object {}}
+                        size={18}
+                      >
+                        <svg
+                          className="events-none icon"
+                          focusable="false"
+                          role="presentation"
+                          style={
+                            Object {
+                              "height": 18,
+                              "width": 18,
+                            }
+                          }
+                        >
+                          <use
+                            xlinkHref="#icon-close"
+                            xmlnsXlink="http://www.w3.org/1999/xlink"
+                          />
+                        </svg>
+                      </Icon>
+                    </button>
+                    <div
+                      className="hide-visually"
+                      id={null}
+                      role="tooltip"
+                    >
+                      <div
+                        className="txt-s wmax240"
+                      >
+                        Close feedback
+                      </div>
+                    </div>
+                  </div>
+                </PopoverTrigger>
+              </Tooltip>
+            </div>
+          </div>
+          <div
+            className="flex-child mb6 prose"
+          >
+            <div
+              className="align-center prose relative"
+            >
+              <div
+                className="mt-neg30 inline-block"
+              >
+                <BookImage
+                  size={75}
+                >
+                  <svg
+                    height={75}
+                    viewBox="0 0 108 108"
+                    width={75}
+                  >
+                    <circle
+                      cx="53"
+                      cy="55"
+                      fill="#47b9f3"
+                      r="45"
+                    />
+                    <rect
+                      fill="#1274c6"
+                      height="34.501"
+                      rx="5.219"
+                      ry="5.219"
+                      transform="rotate(.605 53.4 58.455)"
+                      width="52.254"
+                      x="27.273"
+                      y="41.204"
+                    />
+                    <path
+                      d="M64.1 34.848s-9.912-.76-10.008 8.42-.093 24.736-.093 24.736S58.822 64.96 62.79 65l15.404.163A1.788 1.788 0 0 0 80 63.393l.281-26.601A1.773 1.773 0 0 0 78.527 35z"
+                      fill="#309ef9"
+                    />
+                    <path
+                      d="M43.971 34.157s10.21-.563 10.11 8.821S53.998 68 53.998 68s-5.25-2.957-9.331-3L28.78 64.83A1.786 1.786 0 0 1 27 63.04l.288-27.286A1.786 1.786 0 0 1 29.106 34z"
+                      fill="#0d84fd"
+                    />
+                  </svg>
+                </BookImage>
+              </div>
+              <p>
+                <strong>
+                  Thank you!
+                </strong>
+              </p>
+              <p>
+                Our documentation team will read your feedback. Thank you for helping us improve this page.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </FeedbackWrapper>
+</Feedback>
+`;
