@@ -1,0 +1,247 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Workflow 2 - Something is confusing 1`] = `
+<Feedback
+  feedbackSentryDsn="https://eccc8b561b9a461990309b01d33d54e3@sentry.io/1848287"
+  location={
+    Object {
+      "hash": "#lnglat",
+      "pathname": "/mapbox-gl-js/api/",
+    }
+  }
+  site="dr-ui"
+  type="page"
+  webhook={
+    Object {
+      "production": "",
+      "staging": "",
+    }
+  }
+>
+  <FeedbackWrapper
+    title="Something is confusing"
+  >
+    <div
+      className="dr-ui--feedback wmax300"
+    >
+      <div
+        className="bg-gray-faint round py12 px12"
+      >
+        <div
+          className="flex-parent flex-parent--column"
+        >
+          <div
+            className="flex-child flex-parent flex-parent--space-between-main w-full mb12"
+          >
+            <div
+              className="flex-child txt-bold"
+            >
+              Something is confusing
+            </div>
+            <div
+              className="flex-child"
+            >
+              <Tooltip
+                alignment="center"
+                block={false}
+                coloring="light"
+                content="Close feedback"
+                disabled={false}
+                maxWidth="medium"
+                padding="small"
+                placement="top"
+                respondsToClick={false}
+                textSize="s"
+              >
+                <PopoverTrigger
+                  block={false}
+                  content={
+                    <div
+                      className="txt-s wmax240"
+                    >
+                      Close feedback
+                    </div>
+                  }
+                  disabled={false}
+                  popoverProps={
+                    Object {
+                      "alignment": "center",
+                      "coloring": "light",
+                      "hasPointer": true,
+                      "hideWhenAnchorIsOffscreen": true,
+                      "padding": "small",
+                      "passthroughProps": Object {
+                        "id": "tooltip-2",
+                        "role": "tooltip",
+                      },
+                      "placement": "top",
+                    }
+                  }
+                  receiveFocus={false}
+                  renderHiddenContent={true}
+                  respondsToClick={false}
+                  respondsToFocus={true}
+                  respondsToHover={true}
+                  trapFocus={false}
+                >
+                  <div
+                    className="inline-block"
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                  >
+                    <button
+                      aria-describedby="tooltip-2"
+                      aria-label="Close feedback"
+                      className="link--gray"
+                      onClick={[Function]}
+                    >
+                      <Icon
+                        inline={false}
+                        name="close"
+                        passthroughProps={Object {}}
+                        size={18}
+                      >
+                        <svg
+                          className="events-none icon"
+                          focusable="false"
+                          role="presentation"
+                          style={
+                            Object {
+                              "height": 18,
+                              "width": 18,
+                            }
+                          }
+                        >
+                          <use
+                            xlinkHref="#icon-close"
+                            xmlnsXlink="http://www.w3.org/1999/xlink"
+                          />
+                        </svg>
+                      </Icon>
+                    </button>
+                    <div
+                      className="hide-visually"
+                      id="tooltip-2"
+                      role="tooltip"
+                    >
+                      <div
+                        className="txt-s wmax240"
+                      >
+                        Close feedback
+                      </div>
+                    </div>
+                  </div>
+                </PopoverTrigger>
+              </Tooltip>
+            </div>
+          </div>
+          <div
+            className="flex-child mb6 prose"
+          >
+            <CategoryConfusing
+              option="What about this page is confusing?"
+              placeholder="Let us know what is confusing."
+              submitFeedback={[Function]}
+            >
+              <FeedbackTextarea
+                id="feedback-problem-textarea"
+                label="What about this page is confusing?"
+                onChange={[Function]}
+                placeholder="Let us know what is confusing."
+              >
+                <div
+                  className="relative"
+                >
+                  <ControlTextarea
+                    id="feedback-problem-textarea"
+                    label="What about this page is confusing?"
+                    noAuto={false}
+                    onChange={[Function]}
+                    optional={false}
+                    placeholder="Let us know what is confusing."
+                    themeControlTextarea="textarea hmin120 bg-white"
+                    themeLabel="txt-m mb6"
+                    value=""
+                  >
+                    <ControlWrapper
+                      id="feedback-problem-textarea"
+                      themeControlWrapper=""
+                    >
+                      <div
+                        className="relative "
+                      >
+                        <ControlLabel
+                          id="feedback-problem-textarea"
+                          optional={false}
+                          text="What about this page is confusing?"
+                          themeLabel="txt-m mb6"
+                        >
+                          <div>
+                            <label
+                              className="inline-block txt-m mb6"
+                              htmlFor="feedback-problem-textarea"
+                            >
+                              What about this page is confusing?
+                               
+                            </label>
+                          </div>
+                        </ControlLabel>
+                        <textarea
+                          aria-required={true}
+                          className="textarea hmin120 bg-white"
+                          data-test="feedback-problem-textarea-textarea"
+                          id="feedback-problem-textarea"
+                          name="feedback-problem-textarea"
+                          onChange={[Function]}
+                          placeholder="Let us know what is confusing."
+                          value=""
+                        />
+                        <div
+                          role="alert"
+                        />
+                      </div>
+                    </ControlWrapper>
+                  </ControlTextarea>
+                  <div
+                    className="absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s"
+                  >
+                    1000
+                  </div>
+                </div>
+              </FeedbackTextarea>
+              <FeedbackButton
+                disabled={true}
+                onClick={[Function]}
+              >
+                <button
+                  className="btn mt6"
+                  disabled={true}
+                  id="dr-ui--feedback-submit-button"
+                  onClick={[Function]}
+                >
+                  Submit feedback
+                </button>
+              </FeedbackButton>
+            </CategoryConfusing>
+          </div>
+          <div
+            className="flex-child color-gray"
+          >
+            Need help?
+             
+            <button
+              className="link"
+              onClick={[Function]}
+              value="Contact support"
+            >
+              Contact support
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </FeedbackWrapper>
+</Feedback>
+`;

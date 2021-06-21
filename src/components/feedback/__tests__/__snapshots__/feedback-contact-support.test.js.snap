@@ -1,0 +1,371 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Workflow 1 - Open feedback 1`] = `
+<Feedback
+  feedbackSentryDsn="https://eccc8b561b9a461990309b01d33d54e3@sentry.io/1848287"
+  location={
+    Object {
+      "hash": "#lnglat",
+      "pathname": "/mapbox-gl-js/api/",
+    }
+  }
+  site="dr-ui"
+  type="page"
+  webhook={
+    Object {
+      "production": "",
+      "staging": "",
+    }
+  }
+>
+  <FeedbackWrapper
+    title="Share your feedback"
+  >
+    <div
+      className="dr-ui--feedback wmax300"
+    >
+      <div
+        className="bg-gray-faint round py12 px12"
+      >
+        <div
+          className="flex-parent flex-parent--column"
+        >
+          <div
+            className="flex-child flex-parent flex-parent--space-between-main w-full mb12"
+          >
+            <div
+              className="flex-child txt-bold"
+            >
+              Share your feedback
+            </div>
+            <div
+              className="flex-child"
+            >
+              <Tooltip
+                alignment="center"
+                block={false}
+                coloring="light"
+                content="Close feedback"
+                disabled={false}
+                maxWidth="medium"
+                padding="small"
+                placement="top"
+                respondsToClick={false}
+                textSize="s"
+              >
+                <PopoverTrigger
+                  block={false}
+                  content={
+                    <div
+                      className="txt-s wmax240"
+                    >
+                      Close feedback
+                    </div>
+                  }
+                  disabled={false}
+                  popoverProps={
+                    Object {
+                      "alignment": "center",
+                      "coloring": "light",
+                      "hasPointer": true,
+                      "hideWhenAnchorIsOffscreen": true,
+                      "padding": "small",
+                      "passthroughProps": Object {
+                        "id": "tooltip-1",
+                        "role": "tooltip",
+                      },
+                      "placement": "top",
+                    }
+                  }
+                  receiveFocus={false}
+                  renderHiddenContent={true}
+                  respondsToClick={false}
+                  respondsToFocus={true}
+                  respondsToHover={true}
+                  trapFocus={false}
+                >
+                  <div
+                    className="inline-block"
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                  >
+                    <button
+                      aria-describedby="tooltip-1"
+                      aria-label="Close feedback"
+                      className="link--gray"
+                      onClick={[Function]}
+                    >
+                      <Icon
+                        inline={false}
+                        name="close"
+                        passthroughProps={Object {}}
+                        size={18}
+                      >
+                        <svg
+                          className="events-none icon"
+                          focusable="false"
+                          role="presentation"
+                          style={
+                            Object {
+                              "height": 18,
+                              "width": 18,
+                            }
+                          }
+                        >
+                          <use
+                            xlinkHref="#icon-close"
+                            xmlnsXlink="http://www.w3.org/1999/xlink"
+                          />
+                        </svg>
+                      </Icon>
+                    </button>
+                    <div
+                      className="hide-visually"
+                      id="tooltip-1"
+                      role="tooltip"
+                    >
+                      <div
+                        className="txt-s wmax240"
+                      >
+                        Close feedback
+                      </div>
+                    </div>
+                  </div>
+                </PopoverTrigger>
+              </Tooltip>
+            </div>
+          </div>
+          <div
+            className="flex-child mb6 prose"
+          >
+            <button
+              className="btn w-full mb6"
+              key="I like this page"
+              onClick={[Function]}
+              value="I like this page"
+            >
+              I like this page
+            </button>
+            <button
+              className="btn w-full mb6"
+              key="Report a problem"
+              onClick={[Function]}
+              value="Report a problem"
+            >
+              Report a problem
+            </button>
+            <button
+              className="btn w-full mb6"
+              key="Something is confusing"
+              onClick={[Function]}
+              value="Something is confusing"
+            >
+              Something is confusing
+            </button>
+          </div>
+          <div
+            className="flex-child color-gray"
+          >
+            Need help?
+             
+            <button
+              className="link"
+              onClick={[Function]}
+              value="Contact support"
+            >
+              Contact support
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </FeedbackWrapper>
+</Feedback>
+`;
+
+exports[`Workflow 2 - Contact support 1`] = `
+<Feedback
+  feedbackSentryDsn="https://eccc8b561b9a461990309b01d33d54e3@sentry.io/1848287"
+  location={
+    Object {
+      "hash": "#lnglat",
+      "pathname": "/mapbox-gl-js/api/",
+    }
+  }
+  site="dr-ui"
+  type="page"
+  webhook={
+    Object {
+      "production": "",
+      "staging": "",
+    }
+  }
+>
+  <FeedbackWrapper
+    title="Share your feedback"
+  >
+    <div
+      className="dr-ui--feedback wmax300"
+    >
+      <div
+        className="bg-gray-faint round py12 px12"
+      >
+        <div
+          className="flex-parent flex-parent--column"
+        >
+          <div
+            className="flex-child flex-parent flex-parent--space-between-main w-full mb12"
+          >
+            <div
+              className="flex-child txt-bold"
+            >
+              Share your feedback
+            </div>
+            <div
+              className="flex-child"
+            >
+              <Tooltip
+                alignment="center"
+                block={false}
+                coloring="light"
+                content="Close feedback"
+                disabled={false}
+                maxWidth="medium"
+                padding="small"
+                placement="top"
+                respondsToClick={false}
+                textSize="s"
+              >
+                <PopoverTrigger
+                  block={false}
+                  content={
+                    <div
+                      className="txt-s wmax240"
+                    >
+                      Close feedback
+                    </div>
+                  }
+                  disabled={false}
+                  popoverProps={
+                    Object {
+                      "alignment": "center",
+                      "coloring": "light",
+                      "hasPointer": true,
+                      "hideWhenAnchorIsOffscreen": true,
+                      "padding": "small",
+                      "passthroughProps": Object {
+                        "id": "tooltip-2",
+                        "role": "tooltip",
+                      },
+                      "placement": "top",
+                    }
+                  }
+                  receiveFocus={false}
+                  renderHiddenContent={true}
+                  respondsToClick={false}
+                  respondsToFocus={true}
+                  respondsToHover={true}
+                  trapFocus={false}
+                >
+                  <div
+                    className="inline-block"
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                  >
+                    <button
+                      aria-describedby="tooltip-2"
+                      aria-label="Close feedback"
+                      className="link--gray"
+                      onClick={[Function]}
+                    >
+                      <Icon
+                        inline={false}
+                        name="close"
+                        passthroughProps={Object {}}
+                        size={18}
+                      >
+                        <svg
+                          className="events-none icon"
+                          focusable="false"
+                          role="presentation"
+                          style={
+                            Object {
+                              "height": 18,
+                              "width": 18,
+                            }
+                          }
+                        >
+                          <use
+                            xlinkHref="#icon-close"
+                            xmlnsXlink="http://www.w3.org/1999/xlink"
+                          />
+                        </svg>
+                      </Icon>
+                    </button>
+                    <div
+                      className="hide-visually"
+                      id="tooltip-2"
+                      role="tooltip"
+                    >
+                      <div
+                        className="txt-s wmax240"
+                      >
+                        Close feedback
+                      </div>
+                    </div>
+                  </div>
+                </PopoverTrigger>
+              </Tooltip>
+            </div>
+          </div>
+          <div
+            className="flex-child mb6 prose"
+          >
+            <button
+              className="btn w-full mb6"
+              key="I like this page"
+              onClick={[Function]}
+              value="I like this page"
+            >
+              I like this page
+            </button>
+            <button
+              className="btn w-full mb6"
+              key="Report a problem"
+              onClick={[Function]}
+              value="Report a problem"
+            >
+              Report a problem
+            </button>
+            <button
+              className="btn w-full mb6"
+              key="Something is confusing"
+              onClick={[Function]}
+              value="Something is confusing"
+            >
+              Something is confusing
+            </button>
+          </div>
+          <div
+            className="flex-child color-gray"
+          >
+            Need help?
+             
+            <button
+              className="link"
+              onClick={[Function]}
+              value="Contact support"
+            >
+              Contact support
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </FeedbackWrapper>
+</Feedback>
+`;

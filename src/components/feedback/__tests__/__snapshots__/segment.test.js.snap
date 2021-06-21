@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createSegmentEvent anonymous user 1 - Open feedback 1`] = `
+Object {
+  "anonymousId": "7a6b4852-bacf-40e1-ae42-d91c4003f464",
+  "event": "Sent docs feedback",
+  "properties": Object {
+    "anonymousId": "7a6b4852-bacf-40e1-ae42-d91c4003f464",
+    "category": undefined,
+    "categoryType": undefined,
+    "environment": "staging",
+    "helpful": undefined,
+    "location": Object {
+      "hash": "#lnglat",
+      "host": undefined,
+      "hostname": undefined,
+      "href": undefined,
+      "origin": undefined,
+      "pathname": "/dr-ui/feedback/",
+      "search": undefined,
+    },
+    "page": Object {
+      "hash": "#lnglat",
+      "pathname": "/dr-ui/feedback/",
+    },
+    "section": "LngLat",
+    "sessionId": "1624292376749-7a6b4852-bacf-40e1-ae42-d91c4003f464",
+    "site": "dr-ui",
+  },
+}
+`;
+
+exports[`createSegmentEvent anonymous user 2 - Report a problem 1`] = `
+Object {
+  "anonymousId": "7a6b4852-bacf-40e1-ae42-d91c4003f464",
+  "event": "Sent docs feedback",
+  "properties": Object {
+    "anonymousId": "7a6b4852-bacf-40e1-ae42-d91c4003f464",
+    "category": "Report a problem",
+    "categoryType": undefined,
+    "environment": "staging",
+    "helpful": false,
+    "location": Object {
+      "hash": "#lnglat",
+      "host": undefined,
+      "hostname": undefined,
+      "href": undefined,
+      "origin": undefined,
+      "pathname": "/dr-ui/feedback/",
+      "search": undefined,
+    },
+    "page": Object {
+      "hash": "#lnglat",
+      "pathname": "/dr-ui/feedback/",
+    },
+    "section": "LngLat",
+    "sessionId": "1624292376749-7a6b4852-bacf-40e1-ae42-d91c4003f464",
+    "site": "dr-ui",
+  },
+}
+`;
+
+exports[`createSegmentEvent anonymous user 3 - Something is missing 1`] = `
+Object {
+  "anonymousId": "7a6b4852-bacf-40e1-ae42-d91c4003f464",
+  "event": "Sent docs feedback",
+  "properties": Object {
+    "anonymousId": "7a6b4852-bacf-40e1-ae42-d91c4003f464",
+    "category": "Report a problem",
+    "categoryType": "Something is missing",
+    "environment": "staging",
+    "feedback": "My mind!",
+    "helpful": false,
+    "location": Object {
+      "hash": "#lnglat",
+      "host": undefined,
+      "hostname": undefined,
+      "href": undefined,
+      "origin": undefined,
+      "pathname": "/dr-ui/feedback/",
+      "search": undefined,
+    },
+    "page": Object {
+      "hash": "#lnglat",
+      "pathname": "/dr-ui/feedback/",
+    },
+    "section": "LngLat",
+    "sessionId": "1624292376749-7a6b4852-bacf-40e1-ae42-d91c4003f464",
+    "site": "dr-ui",
+  },
+}
+`;
+
+exports[`createSegmentEvent logged in user 1 - Open feedback 1`] = `
+Object {
+  "event": "Sent docs feedback",
+  "properties": Object {
+    "category": undefined,
+    "categoryType": undefined,
+    "environment": "staging",
+    "helpful": undefined,
+    "location": Object {
+      "hash": "#lnglat",
+      "host": undefined,
+      "hostname": undefined,
+      "href": undefined,
+      "origin": undefined,
+      "pathname": "/dr-ui/feedback/",
+      "search": undefined,
+    },
+    "page": Object {
+      "hash": "#lnglat",
+      "pathname": "/dr-ui/feedback/",
+    },
+    "plan": "starter",
+    "section": "LngLat",
+    "sessionId": "1624292376749-7a6b4852-bacf-40e1-ae42-d91c4003f464",
+    "site": "dr-ui",
+    "userId": "friend-of-the-docs",
+  },
+  "userId": "friend-of-the-docs",
+}
+`;
+
+exports[`createSegmentEvent logged in user 2 - Report a problem 1`] = `
+Object {
+  "event": "Sent docs feedback",
+  "properties": Object {
+    "category": "Report a problem",
+    "categoryType": undefined,
+    "environment": "staging",
+    "helpful": false,
+    "location": Object {
+      "hash": "#lnglat",
+      "host": undefined,
+      "hostname": undefined,
+      "href": undefined,
+      "origin": undefined,
+      "pathname": "/dr-ui/feedback/",
+      "search": undefined,
+    },
+    "page": Object {
+      "hash": "#lnglat",
+      "pathname": "/dr-ui/feedback/",
+    },
+    "plan": "starter",
+    "section": "LngLat",
+    "sessionId": "1624292376749-7a6b4852-bacf-40e1-ae42-d91c4003f464",
+    "site": "dr-ui",
+    "userId": "friend-of-the-docs",
+  },
+  "userId": "friend-of-the-docs",
+}
+`;
+
+exports[`createSegmentEvent logged in user 3 - Something is missing 1`] = `
+Object {
+  "event": "Sent docs feedback",
+  "properties": Object {
+    "category": "Report a problem",
+    "categoryType": "Something is missing",
+    "environment": "staging",
+    "feedback": "My mind!",
+    "helpful": false,
+    "location": Object {
+      "hash": "#lnglat",
+      "host": undefined,
+      "hostname": undefined,
+      "href": undefined,
+      "origin": undefined,
+      "pathname": "/dr-ui/feedback/",
+      "search": undefined,
+    },
+    "page": Object {
+      "hash": "#lnglat",
+      "pathname": "/dr-ui/feedback/",
+    },
+    "plan": "starter",
+    "section": "LngLat",
+    "sessionId": "1624292376749-7a6b4852-bacf-40e1-ae42-d91c4003f464",
+    "site": "dr-ui",
+    "userId": "friend-of-the-docs",
+  },
+  "userId": "friend-of-the-docs",
+}
+`;

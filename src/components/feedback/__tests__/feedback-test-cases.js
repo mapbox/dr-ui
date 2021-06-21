@@ -15,13 +15,11 @@ testCases.type = {
   component: Feedback,
   description: 'Change type',
   props: {
-    type: 'section',
+    type: 'section on AccessToken',
     site: 'dr-ui',
     webhook: {
-      staging:
-        'https://evj5gwoa8j.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
-      production:
-        'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook'
+      staging: 'staging-webhook',
+      production: 'production-webhook'
     },
     location: {}
   }
@@ -33,10 +31,8 @@ testCases.noSentry = {
   props: {
     site: 'dr-ui',
     webhook: {
-      staging:
-        'https://evj5gwoa8j.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
-      production:
-        'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook'
+      staging: 'staging-webhook',
+      production: 'production-webhook'
     },
     feedbackSentryDsn: false,
     preferredLanguage: 'Swift',

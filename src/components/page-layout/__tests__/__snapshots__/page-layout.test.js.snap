@@ -977,35 +977,13 @@ Array [
                 <div
                   className="none block-mxl"
                 >
-                  <div
-                    className="dr-ui--feedback"
+                  <button
+                    className="btn"
+                    onClick={[Function]}
+                    value="Share"
                   >
-                    <div>
-                      <h2
-                        className="unprose txt-m txt-bold mb6"
-                      >
-                        Was this 
-                        example
-                         helpful?
-                      </h2>
-                      <button
-                        className="btn btn--s"
-                        id="dr-ui--feedback-aside-page-yes"
-                        onClick={[Function]}
-                        value={true}
-                      >
-                        Yes
-                      </button>
-                      <button
-                        className="btn btn--s ml6"
-                        id="dr-ui--feedback-aside-page-no"
-                        onClick={[Function]}
-                        value={false}
-                      >
-                        No
-                      </button>
-                    </div>
-                  </div>
+                    Share your feedback
+                  </button>
                 </div>
               </aside>
             </div>
@@ -1018,35 +996,13 @@ Array [
               <div
                 className="my36 block none-mxl"
               >
-                <div
-                  className="dr-ui--feedback"
+                <button
+                  className="btn"
+                  onClick={[Function]}
+                  value="Share"
                 >
-                  <div>
-                    <h2
-                      className="unprose txt-m txt-bold mb6"
-                    >
-                      Was this 
-                      example
-                       helpful?
-                    </h2>
-                    <button
-                      className="btn btn--s"
-                      id="dr-ui--feedback-bottom-page-yes"
-                      onClick={[Function]}
-                      value={true}
-                    >
-                      Yes
-                    </button>
-                    <button
-                      className="btn btn--s ml6"
-                      id="dr-ui--feedback-bottom-page-no"
-                      onClick={[Function]}
-                      value={false}
-                    >
-                      No
-                    </button>
-                  </div>
-                </div>
+                  Share your feedback
+                </button>
               </div>
             </div>
           </div>
@@ -1230,35 +1186,13 @@ Array [
               <div
                 className="my36"
               >
-                <div
-                  className="dr-ui--feedback"
+                <button
+                  className="btn"
+                  onClick={[Function]}
+                  value="Share"
                 >
-                  <div>
-                    <h2
-                      className="unprose txt-m txt-bold mb6"
-                    >
-                      Was this 
-                      page
-                       helpful?
-                    </h2>
-                    <button
-                      className="btn btn--s"
-                      id="dr-ui--feedback-bottom-page-yes"
-                      onClick={[Function]}
-                      value={true}
-                    >
-                      Yes
-                    </button>
-                    <button
-                      className="btn btn--s ml6"
-                      id="dr-ui--feedback-bottom-page-no"
-                      onClick={[Function]}
-                      value={false}
-                    >
-                      No
-                    </button>
-                  </div>
-                </div>
+                  Share your feedback
+                </button>
               </div>
             </div>
           </div>
@@ -1669,35 +1603,13 @@ Array [
                 <div
                   className="none block-mxl"
                 >
-                  <div
-                    className="dr-ui--feedback"
+                  <button
+                    className="btn"
+                    onClick={[Function]}
+                    value="Share"
                   >
-                    <div>
-                      <h2
-                        className="unprose txt-m txt-bold mb6"
-                      >
-                        Was this 
-                        page
-                         helpful?
-                      </h2>
-                      <button
-                        className="btn btn--s"
-                        id="dr-ui--feedback-aside-page-yes"
-                        onClick={[Function]}
-                        value={true}
-                      >
-                        Yes
-                      </button>
-                      <button
-                        className="btn btn--s ml6"
-                        id="dr-ui--feedback-aside-page-no"
-                        onClick={[Function]}
-                        value={false}
-                      >
-                        No
-                      </button>
-                    </div>
-                  </div>
+                    Share your feedback
+                  </button>
                 </div>
               </aside>
             </div>
@@ -1726,35 +1638,13 @@ Array [
               <div
                 className="my36 block none-mxl"
               >
-                <div
-                  className="dr-ui--feedback"
+                <button
+                  className="btn"
+                  onClick={[Function]}
+                  value="Share"
                 >
-                  <div>
-                    <h2
-                      className="unprose txt-m txt-bold mb6"
-                    >
-                      Was this 
-                      page
-                       helpful?
-                    </h2>
-                    <button
-                      className="btn btn--s"
-                      id="dr-ui--feedback-bottom-page-yes"
-                      onClick={[Function]}
-                      value={true}
-                    >
-                      Yes
-                    </button>
-                    <button
-                      className="btn btn--s ml6"
-                      id="dr-ui--feedback-bottom-page-no"
-                      onClick={[Function]}
-                      value={false}
-                    >
-                      No
-                    </button>
-                  </div>
-                </div>
+                  Share your feedback
+                </button>
               </div>
             </div>
           </div>
@@ -2090,35 +1980,13 @@ Array [
               <div
                 className="my36"
               >
-                <div
-                  className="dr-ui--feedback"
+                <button
+                  className="btn"
+                  onClick={[Function]}
+                  value="Share"
                 >
-                  <div>
-                    <h2
-                      className="unprose txt-m txt-bold mb6"
-                    >
-                      Was this 
-                      page
-                       helpful?
-                    </h2>
-                    <button
-                      className="btn btn--s"
-                      id="dr-ui--feedback-bottom-page-yes"
-                      onClick={[Function]}
-                      value={true}
-                    >
-                      Yes
-                    </button>
-                    <button
-                      className="btn btn--s ml6"
-                      id="dr-ui--feedback-bottom-page-no"
-                      onClick={[Function]}
-                      value={false}
-                    >
-                      No
-                    </button>
-                  </div>
-                </div>
+                  Share your feedback
+                </button>
               </div>
             </div>
           </div>
