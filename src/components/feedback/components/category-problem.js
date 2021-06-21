@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FeedbackTextarea, FeedbackButton } from './assets.js';
+import { FeedbackTextarea, FeedbackButton } from './forms.js';
 import ControlRadioSet from '@mapbox/mr-ui/control-radio-set';
 
 export default class CategoryProblem extends React.PureComponent {

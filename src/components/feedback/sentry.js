@@ -1,7 +1,7 @@
 import * as Sentry from '@sentry/browser';
 import env from '../analytics-shell/env';
 
-const { feedbackLimit } = require('./components/assets.js');
+const { feedbackLimit } = require('./components/forms.js');
 
 // Send feedback to Sentry for triaging
 export function sendToSentry({ state, props }) {

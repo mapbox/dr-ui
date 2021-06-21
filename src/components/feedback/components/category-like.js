@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FeedbackTextarea, FeedbackButton } from './assets.js';
+import { FeedbackTextarea, FeedbackButton } from './forms.js';
 import ControlCheckboxSet from '@mapbox/mr-ui/control-checkbox-set';
 
 export default class CategoryLike extends React.Component {

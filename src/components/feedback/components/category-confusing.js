@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FeedbackTextarea, FeedbackButton } from './assets.js';
+import { FeedbackTextarea, FeedbackButton } from './forms.js';
 
 export default class CategoryConfusing extends React.PureComponent {
   constructor(props) {
