@@ -83,6 +83,10 @@ class RelatedPage extends React.PureComponent {
         image: <PlaygroundImage />,
         color: 'gray'
       },
+      next: {
+        label: 'next',
+        color: 'gray'
+      },
       default: {
         label: 'related',
         color: 'gray'
@@ -178,6 +182,7 @@ RelatedPage.propTypes = {
     'troubleshooting',
     'playground',
     'video',
+    'next',
     'default'
   ]),
   /** Title of the related page in the context of the current page. */

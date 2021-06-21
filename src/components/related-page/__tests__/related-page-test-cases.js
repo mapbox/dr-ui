@@ -116,4 +116,15 @@ testCases.fallback = {
   }
 };
 
+testCases.next = {
+  component: RelatedPage,
+  description: 'next',
+  props: {
+    contentType: 'next',
+    title: 'Add a vector tile source',
+    children: 'Add a vector source to a map and display it as a layer.',
+    url: 'https://docs.mapbox.com/android/maps/examples/add-a-vector-tile-source/'
+  }
+};
+
 export { testCases };
