@@ -13,7 +13,7 @@ export function sendToSentry({ state, props }) {
   Sentry.init({
     dsn: feedbackSentryDsn,
     maxValueLength: feedbackLimit,
-    environment: 'development' // env() // for dev only SWAP BACK
+    environment: env()
   });
   // configure data to send with feeedback
   Sentry.configureScope((scope) => {
