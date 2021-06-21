@@ -13,11 +13,7 @@ export default class NextPrevPage extends React.PureComponent {
     // If there isn't a next page, return an empty div
     if (!nextPage) return <div />;
     return (
-      <RelatedPage
-        contentType="next"
-        title={nextPage.title}
-        url={nextPage.path}
-      >
+      <RelatedPage label="Next" title={nextPage.title} url={nextPage.path}>
         {nextPage.description}
       </RelatedPage>
     );
