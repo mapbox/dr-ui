@@ -16,6 +16,16 @@ export function sendToSentry({ state, props }) {
     maxValueLength: feedbackLimit,
     environment: env()
   });
+  // set user attributes (if available)
+  if (user) {
+    Sentry.setUser({
+      ...(user.id && { username: user.id }),
+      ...(user.plan &&
+        user.plan.id && {
+          data: { plan: user.plan.id }
+        })
+    });
+  }
   // configure data to send with feeedback
   Sentry.configureScope((scope) => {
     // set tag for site name
@@ -34,16 +44,6 @@ export function sendToSentry({ state, props }) {
     if (preferredLanguage) scope.setTag('preferredLanguage', preferredLanguage);
     // set tags for the user's plan (if available)
     if (user && user.plan && user.plan.id) scope.setTag('plan', user.plan.id);
-    // set user attributes (if available)
-    if (user) {
-      Sentry.setUser({
-        ...(user.id && { username: user.id }),
-        ...(user.plan &&
-          user.plan.id && {
-            data: { plan: user.plan.id }
-          })
-      });
-    }
     // set the message as "info" (rather than warning)
     scope.setLevel('info');
   });
