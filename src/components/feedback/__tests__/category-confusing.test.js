@@ -76,9 +76,7 @@ describe('Workflow', () => {
     });
     test('Check UI element state', () => {
       // The button is disabled until the user selects an option
-      const submitButton = feedback.find(
-        'button#dr-ui--feedback-submit-button'
-      );
+      const submitButton = feedback.find('button#feedback-submit-button');
       expect(submitButton.props().disabled).toBeTruthy();
       expect(toJson(feedback)).toMatchSnapshot();
     });
@@ -116,7 +114,7 @@ describe('Workflow', () => {
 
   describe('4 - Submit feedback', () => {
     test('Click submit, set state', () => {
-      const btn = feedback.find('#dr-ui--feedback-submit-button');
+      const btn = feedback.find('#feedback-submit-button');
       btn.simulate('click');
       expect(feedback.state().sentFeedback).toBeTruthy();
       expect(feedback.state().feedback).toEqual(

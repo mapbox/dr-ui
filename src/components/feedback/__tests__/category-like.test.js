@@ -77,9 +77,7 @@ describe('Workflow', () => {
       // The textarea is not available until the user selects an option
       expect(feedback.find('textarea').exists()).toBeFalsy();
       // The button is disabled until the user selects an option
-      const submitButton = feedback.find(
-        'button#dr-ui--feedback-submit-button'
-      );
+      const submitButton = feedback.find('button#feedback-submit-button');
       expect(submitButton.props().disabled).toBeTruthy();
       expect(toJson(feedback)).toMatchSnapshot();
     });
@@ -120,9 +118,7 @@ describe('Workflow', () => {
       // The textarea is now available
       expect(feedback.find('textarea').exists()).toBeTruthy();
       // The button is enabled now
-      const submitButton = feedback.find(
-        'button#dr-ui--feedback-submit-button'
-      );
+      const submitButton = feedback.find('button#feedback-submit-button');
       expect(submitButton.props().disabled).toBeFalsy();
     });
   });
@@ -134,7 +130,7 @@ describe('Workflow', () => {
 
   describe('5 - Submit feedback', () => {
     test('Click submit, set state', () => {
-      const btn = feedback.find('#dr-ui--feedback-submit-button');
+      const btn = feedback.find('#feedback-submit-button');
       btn.simulate('click');
       expect(feedback.state().sentFeedback).toBeTruthy();
       expect(feedback.state().category).toEqual('I like this page');
@@ -229,9 +225,7 @@ describe('Workflow, Something else', () => {
       // The textarea is now available
       expect(feedback.find('textarea').exists()).toBeTruthy();
       // The button is disabled (until text entered)
-      const submitButton = feedback.find(
-        'button#dr-ui--feedback-submit-button'
-      );
+      const submitButton = feedback.find('button#feedback-submit-button');
       expect(submitButton.props().disabled).toBeTruthy();
     });
   });
@@ -243,7 +237,7 @@ describe('Workflow, Something else', () => {
 
   describe('3 - Submit feedback', () => {
     test('Click submit, set state', () => {
-      const btn = feedback.find('#dr-ui--feedback-submit-button');
+      const btn = feedback.find('#feedback-submit-button');
       btn.simulate('click');
       expect(feedback.state().sentFeedback).toBeTruthy();
       expect(feedback.state().category).toEqual('I like this page');
@@ -340,16 +334,14 @@ describe('Workflow, Select multiple; do not submit text feedback', () => {
       // The textarea is now available
       expect(feedback.find('textarea').exists()).toBeTruthy();
       // The button is enabled now
-      const submitButton = feedback.find(
-        'button#dr-ui--feedback-submit-button'
-      );
+      const submitButton = feedback.find('button#feedback-submit-button');
       expect(submitButton.props().disabled).toBeFalsy();
     });
   });
 
   describe('2 - Submit feedback', () => {
     test('Click submit, set state', () => {
-      const btn = feedback.find('#dr-ui--feedback-submit-button');
+      const btn = feedback.find('#feedback-submit-button');
       btn.simulate('click');
       expect(feedback.state().sentFeedback).toBeTruthy();
       expect(feedback.state().category).toEqual('I like this page');

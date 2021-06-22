@@ -88,7 +88,7 @@ export class FeedbackButton extends React.PureComponent {
     const { onClick, disabled } = this.props;
     return (
       <button
-        id="dr-ui--feedback-submit-button"
+        id="feedback-submit-button"
         onClick={onClick}
         disabled={disabled}
         className="btn mt6"

@@ -78,7 +78,7 @@ describe('Workflow', () => {
       // The textarea and button is not available until the user selects an option
       expect(feedback.find('textarea').exists()).toBeFalsy();
       expect(
-        feedback.find('button#dr-ui--feedback-submit-button').exists()
+        feedback.find('button#feedback-submit-button').exists()
       ).toBeFalsy();
       expect(toJson(feedback)).toMatchSnapshot();
     });
@@ -126,9 +126,7 @@ describe('Workflow', () => {
         'What error do you see and when did you encounter it? '
       );
       // The button is disabled until the user submits text feedback
-      const submitButton = feedback.find(
-        'button#dr-ui--feedback-submit-button'
-      );
+      const submitButton = feedback.find('button#feedback-submit-button');
       expect(submitButton.props().disabled).toBeTruthy();
     });
   });
@@ -140,7 +138,7 @@ describe('Workflow', () => {
 
   describe('5 - Submit feedback', () => {
     test('Click submit, set state', () => {
-      const submitButton = feedback.find('#dr-ui--feedback-submit-button');
+      const submitButton = feedback.find('#feedback-submit-button');
       submitButton.simulate('click');
       expect(feedback.state().sentFeedback).toBeTruthy();
       expect(feedback.state().category).toEqual('Report a problem');

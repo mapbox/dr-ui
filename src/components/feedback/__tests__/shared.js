@@ -26,7 +26,7 @@ export function textTooLong(feedback) {
   );
   // Submit button is disabled when user enters too long text
   expect(
-    feedback.find('#dr-ui--feedback-submit-button').props().disabled
+    feedback.find('#feedback-submit-button').props().disabled
   ).toBeTruthy();
 }
 
@@ -39,8 +39,6 @@ export function textJustRight(feedback) {
     }
   });
   // Button is enabled now that user submitted feedback
-  expect(
-    feedback.find('#dr-ui--feedback-submit-button').props().disabled
-  ).toBeFalsy();
+  expect(feedback.find('#feedback-submit-button').props().disabled).toBeFalsy();
   expect(feedback.find('#feedback-length').text()).toEqual('931');
 }

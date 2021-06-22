@@ -402,7 +402,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
                 <button
                   className="btn mt6"
                   disabled={true}
-                  id="dr-ui--feedback-submit-button"
+                  id="feedback-submit-button"
                   onClick={[Function]}
                 >
                   Submit feedback

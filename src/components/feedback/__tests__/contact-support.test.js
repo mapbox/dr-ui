@@ -3,15 +3,8 @@ import Feedback from '../feedback';
 import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import forwardEvent from '../forward-event';
-import * as Sentry from '@sentry/browser';
 
-jest.mock('@sentry/browser');
 jest.mock('../forward-event');
-
-const SentryMockScope = { setTag: jest.fn(), setLevel: jest.fn() };
-Sentry.configureScope.mockImplementation((callback) => {
-  callback(SentryMockScope);
-});
 
 describe('Workflow', () => {
   afterAll(() => {
@@ -38,9 +31,6 @@ describe('Workflow', () => {
       const btn = feedback.find('button');
       btn.simulate('click');
       expect(feedback.state().isOpen).toBeTruthy();
-    });
-    test('Do not send data to Sentry', () => {
-      expect(Sentry.init).not.toHaveBeenCalled();
     });
     test('Send data to Segment', () => {
       expect(forwardEvent).toHaveBeenCalledWith(
