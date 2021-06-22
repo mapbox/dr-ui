@@ -27,7 +27,7 @@ const INITIAL_STATE = {
   contactSupport: false // the users clicked contact support
 };
 
-export default class Feedback extends React.PureComponent {
+class Feedback extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
@@ -243,3 +243,5 @@ Feedback.defaultProps = {
   feedbackSentryDsn:
     'https://eccc8b561b9a461990309b01d33d54e3@sentry.io/1848287'
 };
+
+export default Feedback;
