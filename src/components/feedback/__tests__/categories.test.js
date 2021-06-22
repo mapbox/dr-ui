@@ -9,17 +9,29 @@ test('returnGenericType', () => {
 });
 
 describe('categories', () => {
-  test('default', () => {
+  describe('data shape', () => {
+    const allCategories = categories({
+      type: 'page',
+      submitFeedback: jest.fn()
+    });
+    Object.keys(allCategories).forEach((category) => {
+      const { helpful, component } = allCategories[category];
+      test('must have `helpful`', () =>
+        expect(typeof helpful === 'boolean').toBeTruthy());
+      test('must have `component`', () => expect(component).toBeDefined());
+    });
+  });
+  test('type: default', () => {
     expect(
       categories({ type: 'page', submitFeedback: jest.fn() })
     ).toMatchSnapshot();
   });
-  test('example page', () => {
+  test('type: example', () => {
     expect(
       categories({ type: 'example', submitFeedback: jest.fn() })
     ).toMatchSnapshot();
   });
-  test('sectioned feedback', () => {
+  test('type: (sectioned feedback)', () => {
     expect(
       categories({ type: 'section on AccessToken', submitFeedback: jest.fn() })
     ).toMatchSnapshot();

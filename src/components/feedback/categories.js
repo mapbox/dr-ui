@@ -5,6 +5,12 @@ import CategoryLike from './components/category-like.js';
 import CategoryProblem from './components/category-problem.js';
 import CategoryConfusing from './components/category-confusing.js';
 
+// This function holds the majority of text for the Feedback component
+// It returns an object:
+// - The key is the category's name
+// - `helpful` infers if the user found the content helpful
+// - `component` returns the component for the category
+// To add, remove, or change the categories, update the object and the Feedback will automatically update with your changes.
 export function categories({ type, submitFeedback }) {
   const genericType = returnGenericType(type);
   return {
