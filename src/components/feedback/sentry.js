@@ -9,6 +9,7 @@ export function sendToSentry({ state, props }) {
   // If feedbackSentryDsn is set to false, do not submit to Sentry
   if (feedbackSentryDsn === false) return;
   const { helpful, user, feedback, category, categoryType } = state;
+  const referrer = 'referrer' in document;
   // initialize Sentry project to send the feedback
   Sentry.init({
     dsn: feedbackSentryDsn,
@@ -22,9 +23,9 @@ export function sendToSentry({ state, props }) {
     // set tag for category
     scope.setTag('category', category);
     // set tag for category type
-    scope.setTag('categoryType', categoryType);
+    if (categoryType) scope.setTag('categoryType', categoryType);
     // set tag for referrer, if available
-    if ('referrer' in document) scope.setTag('referrer', document.referrer);
+    if (referrer) scope.setTag('referrer', document.referrer);
     // set tag for the user's boolean rating
     scope.setTag('helpful', helpful);
     // set tag for the section of the page (if available)

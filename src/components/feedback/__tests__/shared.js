@@ -8,7 +8,7 @@ export function expectThankYou(feedback) {
 
 // Asserts that the textarea will show an error message when the character limit is met
 // and the submit button becomes disabled
-export function testTextArea(feedback) {
+export function textTooLong(feedback) {
   const textarea = feedback.find('textarea');
   // Add too much text
   textarea.simulate('change', {
@@ -28,6 +28,10 @@ export function testTextArea(feedback) {
   expect(
     feedback.find('#dr-ui--feedback-submit-button').props().disabled
   ).toBeTruthy();
+}
+
+export function textJustRight(feedback) {
+  const textarea = feedback.find('textarea');
   textarea.simulate('change', {
     target: {
       value:

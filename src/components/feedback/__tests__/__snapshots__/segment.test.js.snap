@@ -8,6 +8,7 @@ Object {
     "anonymousId": "7a6b4852-bacf-40e1-ae42-d91c4003f464",
     "category": undefined,
     "categoryType": undefined,
+    "contactSupport": false,
     "environment": "staging",
     "helpful": undefined,
     "page": Object {
@@ -29,6 +30,7 @@ Object {
     "anonymousId": "7a6b4852-bacf-40e1-ae42-d91c4003f464",
     "category": "Report a problem",
     "categoryType": undefined,
+    "contactSupport": false,
     "environment": "staging",
     "helpful": false,
     "page": Object {
@@ -50,6 +52,7 @@ Object {
     "anonymousId": "7a6b4852-bacf-40e1-ae42-d91c4003f464",
     "category": "Report a problem",
     "categoryType": "Something is missing",
+    "contactSupport": false,
     "environment": "staging",
     "feedback": "My mind!",
     "helpful": false,
@@ -70,6 +73,7 @@ Object {
   "properties": Object {
     "category": undefined,
     "categoryType": undefined,
+    "contactSupport": false,
     "environment": "staging",
     "helpful": undefined,
     "page": Object {
@@ -92,6 +96,7 @@ Object {
   "properties": Object {
     "category": "Report a problem",
     "categoryType": undefined,
+    "contactSupport": false,
     "environment": "staging",
     "helpful": false,
     "page": Object {
@@ -114,6 +119,7 @@ Object {
   "properties": Object {
     "category": "Report a problem",
     "categoryType": "Something is missing",
+    "contactSupport": false,
     "environment": "staging",
     "feedback": "My mind!",
     "helpful": false,

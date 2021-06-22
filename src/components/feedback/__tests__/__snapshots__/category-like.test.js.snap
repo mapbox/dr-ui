@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Workflow 2 - I like this page 1`] = `
+exports[`Workflow 2 - I like this page Check UI element state 1`] = `
 <Feedback
   feedbackSentryDsn="https://eccc8b561b9a461990309b01d33d54e3@sentry.io/1848287"
   location={
@@ -71,7 +71,7 @@ exports[`Workflow 2 - I like this page 1`] = `
                       "hideWhenAnchorIsOffscreen": true,
                       "padding": "small",
                       "passthroughProps": Object {
-                        "id": "tooltip-2",
+                        "id": "tooltip-6",
                         "role": "tooltip",
                       },
                       "placement": "top",
@@ -92,7 +92,7 @@ exports[`Workflow 2 - I like this page 1`] = `
                     onKeyDown={[Function]}
                   >
                     <button
-                      aria-describedby="tooltip-2"
+                      aria-describedby="tooltip-6"
                       aria-label="Close feedback"
                       className="link--gray"
                       onClick={[Function]}
@@ -123,7 +123,7 @@ exports[`Workflow 2 - I like this page 1`] = `
                     </button>
                     <div
                       className="hide-visually"
-                      id="tooltip-2"
+                      id="tooltip-6"
                       role="tooltip"
                     >
                       <div

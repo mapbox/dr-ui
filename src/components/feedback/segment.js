@@ -17,7 +17,8 @@ export function createSegmentEvent({ state, props }) {
     feedback,
     sessionId,
     category,
-    categoryType
+    categoryType,
+    contactSupport
   } = state;
   const { site, section, location } = props;
   // set user if available else set anonymousId (needed for forward-event request)
@@ -36,6 +37,8 @@ export function createSegmentEvent({ state, props }) {
       category,
       // the sub type for the category
       categoryType,
+      // the user clicked "contact support" button
+      contactSupport,
       // text feedback, if available
       ...(feedback && { feedback: feedback }),
       // name of current site (important for filtering in Mode)
