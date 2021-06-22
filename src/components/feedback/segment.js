@@ -9,7 +9,7 @@ export function sendToSegment({ state, props }) {
 }
 
 // Creates event to send to Segment
-export function createSegmentEvent({ state, props }) {
+function createSegmentEvent({ state, props }) {
   const {
     user,
     anonymousId,
