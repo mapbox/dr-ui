@@ -95,6 +95,7 @@ exports[`Workflow 2 - Report a problem Check UI element state 1`] = `
                       aria-describedby="tooltip-2"
                       aria-label="Close feedback"
                       className="link--gray"
+                      id="feedback-close-button"
                       onClick={[Function]}
                     >
                       <Icon

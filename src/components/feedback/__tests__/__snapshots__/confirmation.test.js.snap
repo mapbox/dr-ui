@@ -91,6 +91,7 @@ exports[`Generate snapshot for feedback confirmation 1`] = `
                       aria-describedby={null}
                       aria-label="Close feedback"
                       className="link--gray"
+                      id="feedback-close-button"
                       onClick={[Function]}
                     >
                       <Icon

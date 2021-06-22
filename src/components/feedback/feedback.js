@@ -123,6 +123,7 @@ class Feedback extends React.PureComponent {
               <div className="flex-child">
                 <Tooltip content="Close feedback">
                   <button
+                    id="feedback-close-button"
                     aria-label="Close feedback"
                     onClick={this.closeFeedback}
                     className="link--gray"
@@ -233,9 +234,7 @@ Feedback.propTypes = {
   /** The user's preferred code language, if available. */
   preferredLanguage: PropTypes.string,
   /** The Sentry DSN (URL) to send text feedback to for issue management or `false` to prevent sending feedback to Sentry. */
-  feedbackSentryDsn: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-  /** The position of the feedback component on the page, this value creates unique `id` attributes. This is used in PageLayout where the Feedback component appears in the Aside and bottom of the page (as defined by the device width). */
-  position: PropTypes.string
+  feedbackSentryDsn: PropTypes.oneOfType([PropTypes.string, PropTypes.bool])
 };
 
 Feedback.defaultProps = {
