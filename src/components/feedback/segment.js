@@ -49,17 +49,7 @@ export function createSegmentEvent({ state, props }) {
       // set plan, if available
       ...(user && user.plan && { plan: user.plan.id }),
       // get environment: staging or production
-      environment: env(),
-      // get full window location
-      location: {
-        hash: location.hash,
-        host: location.host,
-        hostname: location.hostname,
-        href: location.href,
-        origin: location.origin,
-        pathname: location.pathname,
-        search: location.search
-      }
+      environment: env()
     }
   };
 }

@@ -46,15 +46,6 @@ describe('Workflow', () => {
           categoryType: undefined,
           environment: 'staging',
           helpful: undefined,
-          location: {
-            hash: '#lnglat',
-            host: undefined,
-            hostname: undefined,
-            href: undefined,
-            origin: undefined,
-            pathname: '/mapbox-gl-js/api/',
-            search: undefined
-          },
           page: { hash: '#lnglat', pathname: '/mapbox-gl-js/api/' },
           section: undefined,
           sessionId: expect.anything(),
@@ -62,7 +53,7 @@ describe('Workflow', () => {
         }
       },
       { production: '', staging: '' },
-      expect.anything()
+      expect.any(Function)
     );
   });
 
@@ -90,15 +81,6 @@ describe('Workflow', () => {
           categoryType: undefined,
           environment: 'staging',
           helpful: true,
-          location: {
-            hash: '#lnglat',
-            host: undefined,
-            hostname: undefined,
-            href: undefined,
-            origin: undefined,
-            pathname: '/mapbox-gl-js/api/',
-            search: undefined
-          },
           page: { hash: '#lnglat', pathname: '/mapbox-gl-js/api/' },
           section: undefined,
           sessionId: expect.anything(),
@@ -106,7 +88,7 @@ describe('Workflow', () => {
         }
       },
       { production: '', staging: '' },
-      expect.anything()
+      expect.any(Function)
     );
   });
 
@@ -173,15 +155,6 @@ describe('Workflow', () => {
           feedback:
             "I found a sandwich and I want to know why there isn't any mayonnaise.",
           helpful: true,
-          location: {
-            hash: '#lnglat',
-            host: undefined,
-            hostname: undefined,
-            href: undefined,
-            origin: undefined,
-            pathname: '/mapbox-gl-js/api/',
-            search: undefined
-          },
           page: { hash: '#lnglat', pathname: '/mapbox-gl-js/api/' },
           section: undefined,
           sessionId: expect.anything(),
@@ -189,7 +162,7 @@ describe('Workflow', () => {
         }
       },
       { production: '', staging: '' },
-      expect.anything()
+      expect.any(Function)
     );
   });
 });
