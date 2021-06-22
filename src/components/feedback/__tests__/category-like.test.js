@@ -5,6 +5,16 @@ import Feedback from '../feedback';
 import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import { expectThankYou, testTextArea } from './shared';
+import forwardEvent from '../forward-event';
+import * as Sentry from '@sentry/browser';
+
+jest.mock('@sentry/browser');
+jest.mock('../forward-event');
+
+const SentryMockScope = { setTag: jest.fn(), setLevel: jest.fn() };
+Sentry.configureScope.mockImplementation((callback) => {
+  callback(SentryMockScope);
+});
 
 describe('Workflow', () => {
   const feedback = mount(
@@ -25,6 +35,35 @@ describe('Workflow', () => {
     const btn = feedback.find('button');
     btn.simulate('click');
     expect(feedback.state().isOpen).toBeTruthy();
+    expect(Sentry.init).not.toHaveBeenCalled();
+    expect(forwardEvent).toHaveBeenCalledWith(
+      {
+        anonymousId: expect.anything(),
+        event: 'Sent docs feedback',
+        properties: {
+          anonymousId: expect.anything(),
+          category: undefined,
+          categoryType: undefined,
+          environment: 'staging',
+          helpful: undefined,
+          location: {
+            hash: '#lnglat',
+            host: undefined,
+            hostname: undefined,
+            href: undefined,
+            origin: undefined,
+            pathname: '/mapbox-gl-js/api/',
+            search: undefined
+          },
+          page: { hash: '#lnglat', pathname: '/mapbox-gl-js/api/' },
+          section: undefined,
+          sessionId: expect.anything(),
+          site: 'dr-ui'
+        }
+      },
+      { production: '', staging: '' },
+      expect.anything()
+    );
   });
 
   test('2 - I like this page', () => {
@@ -38,6 +77,37 @@ describe('Workflow', () => {
     const submitButton = feedback.find('button#dr-ui--feedback-submit-button');
     expect(submitButton.props().disabled).toBeTruthy();
     expect(toJson(feedback)).toMatchSnapshot();
+    // Send nothing to Sentry
+    expect(Sentry.init).not.toHaveBeenCalled();
+    // Send an event to Segment
+    expect(forwardEvent).toHaveBeenCalledWith(
+      {
+        anonymousId: expect.anything(),
+        event: 'Sent docs feedback',
+        properties: {
+          anonymousId: expect.anything(),
+          category: 'I like this page',
+          categoryType: undefined,
+          environment: 'staging',
+          helpful: true,
+          location: {
+            hash: '#lnglat',
+            host: undefined,
+            hostname: undefined,
+            href: undefined,
+            origin: undefined,
+            pathname: '/mapbox-gl-js/api/',
+            search: undefined
+          },
+          page: { hash: '#lnglat', pathname: '/mapbox-gl-js/api/' },
+          section: undefined,
+          sessionId: expect.anything(),
+          site: 'dr-ui'
+        }
+      },
+      { production: '', staging: '' },
+      expect.anything()
+    );
   });
 
   test('3 - Select option', () => {
@@ -51,6 +121,7 @@ describe('Workflow', () => {
     // The button is enabled now
     const submitButton = feedback.find('button#dr-ui--feedback-submit-button');
     expect(submitButton.props().disabled).toBeFalsy();
+    expect(Sentry.init).not.toHaveBeenCalled();
   });
 
   test('4 - Enter text feedback', () => {
@@ -68,6 +139,58 @@ describe('Workflow', () => {
     );
     // After submit, expect to see the thank you message
     expectThankYou(feedback);
+  });
+
+  test('6 - On submit, send to Sentry', () => {
+    expect(Sentry.init).toHaveBeenCalledWith({
+      dsn: expect.anything(),
+      environment: 'staging',
+      maxValueLength: 1000
+    });
+    expect(SentryMockScope.setTag.mock.calls).toEqual([
+      ['site', 'dr-ui'],
+      ['category', 'I like this page'],
+      ['categoryType', 'I found what I need'],
+      ['referrer', ''],
+      ['helpful', true]
+    ]);
+    expect(SentryMockScope.setLevel).toHaveBeenCalledWith('info');
+    expect(Sentry.captureMessage).toHaveBeenCalledWith(
+      "I found a sandwich and I want to know why there isn't any mayonnaise."
+    );
+  });
+
+  test('7 - On submit, send to Segment', () => {
+    expect(forwardEvent).toHaveBeenCalledWith(
+      {
+        anonymousId: expect.anything(),
+        event: 'Sent docs feedback',
+        properties: {
+          anonymousId: expect.anything(),
+          category: 'I like this page',
+          categoryType: 'I found what I need',
+          environment: 'staging',
+          feedback:
+            "I found a sandwich and I want to know why there isn't any mayonnaise.",
+          helpful: true,
+          location: {
+            hash: '#lnglat',
+            host: undefined,
+            hostname: undefined,
+            href: undefined,
+            origin: undefined,
+            pathname: '/mapbox-gl-js/api/',
+            search: undefined
+          },
+          page: { hash: '#lnglat', pathname: '/mapbox-gl-js/api/' },
+          section: undefined,
+          sessionId: expect.anything(),
+          site: 'dr-ui'
+        }
+      },
+      { production: '', staging: '' },
+      expect.anything()
+    );
   });
 });
 
