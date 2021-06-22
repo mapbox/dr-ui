@@ -1,61 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`categories type: (sectioned feedback) 1`] = `
-Object {
-  "I like this content": Object {
-    "component": <CategoryLike
-      leadText="Tell us what you like about this section on AccessToken."
-      options={
-        Array [
-          "I found what I need",
-          "The information is accurate",
-          "The content is easy to understand",
-          "Something else",
-        ]
-      }
-      placeholder="What did you like?"
-      submitFeedback={[MockFunction]}
-    />,
-    "helpful": true,
-  },
-  "Report a problem": Object {
-    "component": <CategoryProblem
-      leadText="Tell us more about what's happening with this section on AccessToken."
-      options={
-        Object {
-          "I see an error message": Object {
-            "placeholder": "Let us know about the error message you see.",
-            "question": "What error do you see and when did you encounter it?",
-          },
-          "Something else": Object {
-            "placeholder": "Let us know more about the problem.",
-            "question": "Describe the problem.",
-          },
-          "Something is incorrect or doesn't work": Object {
-            "placeholder": "Let us know what is incorrect or doesn't work.",
-            "question": "What is incorrect or doesn't work and where on the content does it appear?",
-          },
-          "Something is missing": Object {
-            "placeholder": "Let us know what is missing.",
-            "question": "What information are you looking for?",
-          },
-        }
-      }
-      submitFeedback={[MockFunction]}
-    />,
-    "helpful": false,
-  },
-  "Something is confusing": Object {
-    "component": <CategoryConfusing
-      option="What about this section on AccessToken is confusing?"
-      placeholder="Let us know what is confusing."
-      submitFeedback={[MockFunction]}
-    />,
-    "helpful": false,
-  },
-}
-`;
-
 exports[`categories type: default 1`] = `
 Object {
   "I like this page": Object {
@@ -160,6 +104,62 @@ Object {
   "Something is confusing": Object {
     "component": <CategoryConfusing
       option="What about this example is confusing?"
+      placeholder="Let us know what is confusing."
+      submitFeedback={[MockFunction]}
+    />,
+    "helpful": false,
+  },
+}
+`;
+
+exports[`categories type: sectioned feedback 1`] = `
+Object {
+  "I like this content": Object {
+    "component": <CategoryLike
+      leadText="Tell us what you like about this section on AccessToken."
+      options={
+        Array [
+          "I found what I need",
+          "The information is accurate",
+          "The content is easy to understand",
+          "Something else",
+        ]
+      }
+      placeholder="What did you like?"
+      submitFeedback={[MockFunction]}
+    />,
+    "helpful": true,
+  },
+  "Report a problem": Object {
+    "component": <CategoryProblem
+      leadText="Tell us more about what's happening with this section on AccessToken."
+      options={
+        Object {
+          "I see an error message": Object {
+            "placeholder": "Let us know about the error message you see.",
+            "question": "What error do you see and when did you encounter it?",
+          },
+          "Something else": Object {
+            "placeholder": "Let us know more about the problem.",
+            "question": "Describe the problem.",
+          },
+          "Something is incorrect or doesn't work": Object {
+            "placeholder": "Let us know what is incorrect or doesn't work.",
+            "question": "What is incorrect or doesn't work and where on the content does it appear?",
+          },
+          "Something is missing": Object {
+            "placeholder": "Let us know what is missing.",
+            "question": "What information are you looking for?",
+          },
+        }
+      }
+      submitFeedback={[MockFunction]}
+    />,
+    "helpful": false,
+  },
+  "Something is confusing": Object {
+    "component": <CategoryConfusing
+      option="What about this section on AccessToken is confusing?"
       placeholder="Let us know what is confusing."
       submitFeedback={[MockFunction]}
     />,

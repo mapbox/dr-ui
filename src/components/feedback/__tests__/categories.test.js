@@ -31,7 +31,7 @@ describe('categories', () => {
       categories({ type: 'example', submitFeedback: jest.fn() })
     ).toMatchSnapshot();
   });
-  test('type: (sectioned feedback)', () => {
+  test('type: sectioned feedback', () => {
     expect(
       categories({ type: 'section on AccessToken', submitFeedback: jest.fn() })
     ).toMatchSnapshot();
