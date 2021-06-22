@@ -4,18 +4,12 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import CategoryLike from './components/category-like.js';
-import CategoryProblem from './components/category-problem.js';
-import CategoryConfusing from './components/category-confusing.js';
 import BookImage from '../book-image/book-image';
-
 import Tooltip from '@mapbox/mr-ui/tooltip';
 import Icon from '@mapbox/mr-ui/icon';
-
+import { categories } from './categories';
 import { sendToSegment } from './segment';
 import { sendToSentry } from './sentry';
-
 import uuidv4 from 'uuid/v4';
 
 const anonymousId = uuidv4();
@@ -33,85 +27,7 @@ const INITIAL_STATE = {
   contactSupport: false // the users clicked contact support
 };
 
-// Returns a generic type name for sectioned feedback
-export function returnGenericType(type) {
-  // Safe types that we will not swap for "content" in genericType
-  const allowedTypes = ['page', 'example', 'playground'];
-  // Replaces sectioned feedback "type" with a generic type to make button size predictable
-  return allowedTypes.includes(type) ? type : 'content';
-}
-
 export default class Feedback extends React.PureComponent {
-  // This function contains the data for each category
-  // and its corresponding category component.
-  // By having the data in one place, we can make updates faster.
-  // We can also replace "page" for Feedback with `type` in one place.
-  categories = () => {
-    const { type } = this.props;
-    const genericType = returnGenericType(type);
-    return {
-      [`I like this ${genericType}`]: {
-        helpful: true,
-        component: (
-          <CategoryLike
-            leadText={`Tell us what you like about this ${type}.`}
-            placeholder="What did you like?"
-            options={[
-              'I found what I need',
-              'The information is accurate',
-              `The ${genericType} is easy to understand`,
-              'Something else'
-            ]}
-            submitFeedback={this.submitFeedback}
-          />
-        )
-      },
-      'Report a problem': {
-        helpful: false,
-        component: (
-          <CategoryProblem
-            leadText={`Tell us more about what's happening with this ${type}.`}
-            options={{
-              "Something is incorrect or doesn't work": {
-                question: `What is incorrect or doesn't work and where on the ${genericType} does it appear?`,
-                placeholder: "Let us know what is incorrect or doesn't work."
-              },
-              'I see an error message': {
-                question:
-                  'What error do you see and when did you encounter it?',
-                placeholder: 'Let us know about the error message you see.'
-              },
-              'Something is missing': {
-                question: 'What information are you looking for?',
-                placeholder: 'Let us know what is missing.'
-              },
-              'Something else': {
-                question: 'Describe the problem.',
-                placeholder: 'Let us know more about the problem.'
-              }
-            }}
-            submitFeedback={this.submitFeedback}
-          />
-        )
-      },
-      'Something is confusing': {
-        helpful: false,
-        component: (
-          <CategoryConfusing
-            option={`What about this ${type} is confusing?`}
-            placeholder="Let us know what is confusing."
-            submitFeedback={this.submitFeedback}
-          />
-        )
-      }
-    };
-  };
-
-  // Reusable language.
-  language = {
-    cta: 'Share your feedback'
-  };
-
   constructor(props) {
     super(props);
     this.state = {
@@ -126,7 +42,13 @@ export default class Feedback extends React.PureComponent {
     this.renderWrapper = this.renderWrapper.bind(this);
   }
 
-  /* User opens feedback */
+  // This function returns data for each category and its corresponding category component.
+  // By having the data in one place, we can make updates faster.
+  // We can also replace "page" for Feedback with `type` in one place for sectioned feedback.
+  categories = () =>
+    categories({ type: this.props.type, submitFeedback: this.submitFeedback });
+
+  // User opens feedback
   openFeedback() {
     if (
       this.state.user === undefined &&
@@ -138,7 +60,6 @@ export default class Feedback extends React.PureComponent {
         });
       });
     }
-    // Create unique ID to track the session
     this.setState(
       {
         anonymousId: anonymousId,
@@ -146,8 +67,9 @@ export default class Feedback extends React.PureComponent {
         isOpen: true
       },
       () => {
+        const { state, props } = this;
         // Add row to Segment
-        sendToSegment({ state: this.state, props: this.props });
+        sendToSegment({ state: state, props });
       }
     );
   }
@@ -156,29 +78,35 @@ export default class Feedback extends React.PureComponent {
   // Set helpfulness rating based on category
   selectCategory(event) {
     const category = event.target.value;
+    // Retrieve value of "helpful" for the selected category
     const { helpful } = this.categories()[category];
     this.setState({ category, helpful }, () => {
       // Add row to Segment
-      sendToSegment({ state: this.state, props: this.props });
+      const { state, props } = this;
+      sendToSegment({ state, props });
     });
   }
 
+  // User clicks the "Contact support" linke
   selectSupport() {
     this.setState({ contactSupport: true }, () => {
       // Add row to Segment
-      sendToSegment({ state: this.state, props: this.props });
+      const { state, props } = this;
+      sendToSegment({ state, props });
       window.location.assign('https://support.mapbox.com/');
     });
   }
 
-  /* User submits feedback */
+  // User submits feedback
   submitFeedback({ categoryType, feedback }) {
     this.setState({ categoryType, feedback, sentFeedback: true }, () => {
-      sendToSegment({ state: this.state, props: this.props });
-      sendToSentry({ state: this.state, props: this.props });
+      const { state, props } = this;
+      sendToSegment({ state, props });
+      sendToSentry({ state, props });
     });
   }
 
+  // User closes feedback
   closeFeedback() {
     this.setState({ ...INITIAL_STATE });
   }
@@ -235,7 +163,7 @@ export default class Feedback extends React.PureComponent {
     if (!isOpen) {
       return (
         <button value="Share" onClick={this.openFeedback} className="btn">
-          {this.language.cta}
+          Share your feedback
         </button>
       );
     }
@@ -243,7 +171,7 @@ export default class Feedback extends React.PureComponent {
     if (isOpen && !category) {
       return (
         <FeedbackWrapper
-          title={`${this.language.cta}${
+          title={`Share your feedback${
             type !== 'page' ? ` for this ${type}` : ''
           }`}
         >
