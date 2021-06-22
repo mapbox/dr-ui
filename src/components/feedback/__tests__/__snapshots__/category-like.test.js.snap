@@ -45,7 +45,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
                 alignment="center"
                 block={false}
                 coloring="light"
-                content="Close feedback"
+                content="Close"
                 disabled={false}
                 maxWidth="medium"
                 padding="small"
@@ -59,7 +59,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
                     <div
                       className="txt-s wmax240"
                     >
-                      Close feedback
+                      Close
                     </div>
                   }
                   disabled={false}
@@ -93,7 +93,6 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
                   >
                     <button
                       aria-describedby="tooltip-6"
-                      aria-label="Close feedback"
                       className="link--gray"
                       id="feedback-close-button"
                       onClick={[Function]}
@@ -130,7 +129,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
                       <div
                         className="txt-s wmax240"
                       >
-                        Close feedback
+                        Close
                       </div>
                     </div>
                   </div>

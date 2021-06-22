@@ -41,7 +41,7 @@ exports[`Generate snapshot for feedback confirmation 1`] = `
                 alignment="center"
                 block={false}
                 coloring="light"
-                content="Close feedback"
+                content="Close"
                 disabled={false}
                 maxWidth="medium"
                 padding="small"
@@ -55,7 +55,7 @@ exports[`Generate snapshot for feedback confirmation 1`] = `
                     <div
                       className="txt-s wmax240"
                     >
-                      Close feedback
+                      Close
                     </div>
                   }
                   disabled={false}
@@ -89,7 +89,6 @@ exports[`Generate snapshot for feedback confirmation 1`] = `
                   >
                     <button
                       aria-describedby={null}
-                      aria-label="Close feedback"
                       className="link--gray"
                       id="feedback-close-button"
                       onClick={[Function]}
@@ -126,7 +125,7 @@ exports[`Generate snapshot for feedback confirmation 1`] = `
                       <div
                         className="txt-s wmax240"
                       >
-                        Close feedback
+                        Close
                       </div>
                     </div>
                   </div>

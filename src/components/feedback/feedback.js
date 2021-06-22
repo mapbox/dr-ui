@@ -121,10 +121,9 @@ class Feedback extends React.PureComponent {
             <div className="flex-child flex-parent flex-parent--space-between-main w-full mb12">
               <div className="flex-child txt-bold">{title}</div>
               <div className="flex-child">
-                <Tooltip content="Close feedback">
+                <Tooltip content="Close">
                   <button
                     id="feedback-close-button"
-                    aria-label="Close feedback"
                     onClick={this.closeFeedback}
                     className="link--gray"
                   >
