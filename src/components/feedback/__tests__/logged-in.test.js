@@ -72,7 +72,7 @@ describe('Workflow with logged in user information', () => {
   describe('2 - Something is confusing', () => {
     test('Select Something is confusing, then set state', () => {
       const btn = feedback.find('button[value="Something is confusing"]');
-      btn.simulate('click', { target: { value: 'Something is confusing' } }); // the event doesn't get sent automatically?
+      btn.simulate('click', { target: { value: 'Something is confusing' } });
       expect(feedback.state().category).toEqual('Something is confusing');
       expect(feedback.state().helpful).toBeFalsy();
     });

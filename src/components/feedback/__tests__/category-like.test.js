@@ -69,7 +69,7 @@ describe('Workflow', () => {
   describe('2 - I like this page', () => {
     test('Select I like this page, then set state', () => {
       const btn = feedback.find('button[value="I like this page"]');
-      btn.simulate('click', { target: { value: 'I like this page' } }); // the event doesn't get sent automatically?
+      btn.simulate('click', { target: { value: 'I like this page' } });
       expect(feedback.state().category).toEqual('I like this page');
       expect(feedback.state().helpful).toBeTruthy();
     });
