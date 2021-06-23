@@ -1,4 +1,3 @@
-/* eslint es/no-computed-properties: off */
 /* eslint react/no-unused-state: off */
 /* eslint react/no-unused-prop-types: off */
 
