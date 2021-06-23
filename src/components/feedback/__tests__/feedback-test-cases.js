@@ -18,8 +18,10 @@ testCases.type = {
     type: 'section on AccessToken',
     site: 'dr-ui',
     webhook: {
-      staging: 'staging-webhook',
-      production: 'production-webhook'
+      staging:
+        'https://evj5gwoa8j.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
+      production:
+        'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook'
     },
     location: {}
   }

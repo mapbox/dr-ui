@@ -10,8 +10,10 @@ export default class Basic extends React.PureComponent {
       <Feedback
         site="dr-ui"
         webhook={{
-          staging: 'staging-webhook',
-          production: 'production-webhook'
+          staging:
+            'https://evj5gwoa8j.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
+          production:
+            'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook'
         }}
         preferredLanguage="Swift"
         section="LngLat"
