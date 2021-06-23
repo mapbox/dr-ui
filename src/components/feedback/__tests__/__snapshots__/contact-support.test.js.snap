@@ -93,6 +93,7 @@ exports[`Workflow 2 - Contact support Click button, then set state 1`] = `
                   >
                     <button
                       aria-describedby="tooltip-2"
+                      aria-label="Close feedback"
                       className="link--gray"
                       id="feedback-close-button"
                       onClick={[Function]}

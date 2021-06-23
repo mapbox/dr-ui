@@ -31,7 +31,7 @@ export class FeedbackTextarea extends React.PureComponent {
     return (
       <div
         id="feedback-overlimit"
-        className="color-red txt-s bg-red-faint round py3 pl6 pr12 mt6"
+        className="color-red-dark txt-s bg-red-faint round py3 pl6 pr12 mt6"
       >
         <Icon name="alert" inline={true} /> Your message is over the{' '}
         {feedbackLength} character limit.
@@ -62,7 +62,7 @@ export class FeedbackTextarea extends React.PureComponent {
             className={classnames(
               'absolute bottom right mb6 mr6 txt-mono bg-lighten75 px3 txt-s',
               {
-                'color-red': this.feedbackOverLimit
+                'color-red-dark': feedbackOverLimit
               }
             )}
           >

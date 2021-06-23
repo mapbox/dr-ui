@@ -127,6 +127,7 @@ class Feedback extends React.PureComponent {
                 <Tooltip content="Close">
                   <button
                     id="feedback-close-button"
+                    aria-label="Close feedback"
                     onClick={this.closeFeedback}
                     className="link--gray"
                   >
