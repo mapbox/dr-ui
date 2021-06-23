@@ -118,7 +118,7 @@
     "remove-markdown": "^0.3.0",
     "slugify": "^1.5.0",
     "unified": "^9.2.1",
-    "uuid": "^3.4.0"
+    "uuid": "^8.3.2"
   },
   "peerDependencies": {
     "@mapbox/mr-ui": "^0.10.0",

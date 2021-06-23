@@ -10,7 +10,7 @@ import Icon from '@mapbox/mr-ui/icon';
 import { categories } from './categories';
 import { sendToSegment } from './segment';
 import { sendToSentry } from './sentry';
-import uuidv4 from 'uuid/v4';
+import { v4 as uuidv4 } from 'uuid';
 
 const anonymousId = uuidv4();
 
