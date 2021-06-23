@@ -25,23 +25,4 @@ testCases.type = {
   }
 };
 
-testCases.noSentry = {
-  component: Feedback,
-  description: 'Does not send text feedback to Sentry',
-  props: {
-    site: 'dr-ui',
-    webhook: {
-      staging: 'staging-webhook',
-      production: 'production-webhook'
-    },
-    feedbackSentryDsn: false,
-    preferredLanguage: 'Swift',
-    section: 'Maps',
-    location: {
-      pathname: '/dr-ui/api/',
-      hash: '#lnglat'
-    }
-  }
-};
-
 export { testCases };
