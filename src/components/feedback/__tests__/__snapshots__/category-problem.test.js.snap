@@ -142,7 +142,7 @@ exports[`Workflow 2 - Report a problem Check UI element state 1`] = `
             className="flex-child mb6 prose"
           >
             <CategoryProblem
-              leadText="Tell us more about what's happening with this page."
+              leadText="Tell us more about what's happening."
               options={
                 Object {
                   "I see an error message": Object {
@@ -166,7 +166,7 @@ exports[`Workflow 2 - Report a problem Check UI element state 1`] = `
               submitFeedback={[Function]}
             >
               <p>
-                Tell us more about what's happening with this page.
+                Tell us more about what's happening.
               </p>
               <div
                 className="mb6"
@@ -196,7 +196,7 @@ exports[`Workflow 2 - Report a problem Check UI element state 1`] = `
                       },
                     ]
                   }
-                  themeRadio="mr6 radio--blue radio--s-label inline-block flex-child"
+                  themeRadio="mr6 radio--gray radio--s-label inline-block"
                   themeRadioContainer="txt-s block mb6 flex-parent"
                   value=""
                 >
@@ -227,7 +227,7 @@ exports[`Workflow 2 - Report a problem Check UI element state 1`] = `
                               value="Something is incorrect or doesn't work"
                             />
                             <div
-                              className="mr6 radio--blue radio--s-label inline-block flex-child radio"
+                              className="mr6 radio--gray radio--s-label inline-block radio"
                             />
                             Something is incorrect or doesn't work
                           </label>
@@ -244,7 +244,7 @@ exports[`Workflow 2 - Report a problem Check UI element state 1`] = `
                               value="I see an error message"
                             />
                             <div
-                              className="mr6 radio--blue radio--s-label inline-block flex-child radio"
+                              className="mr6 radio--gray radio--s-label inline-block radio"
                             />
                             I see an error message
                           </label>
@@ -261,7 +261,7 @@ exports[`Workflow 2 - Report a problem Check UI element state 1`] = `
                               value="Something is missing"
                             />
                             <div
-                              className="mr6 radio--blue radio--s-label inline-block flex-child radio"
+                              className="mr6 radio--gray radio--s-label inline-block radio"
                             />
                             Something is missing
                           </label>
@@ -278,7 +278,7 @@ exports[`Workflow 2 - Report a problem Check UI element state 1`] = `
                               value="Something else"
                             />
                             <div
-                              className="mr6 radio--blue radio--s-label inline-block flex-child radio"
+                              className="mr6 radio--gray radio--s-label inline-block radio"
                             />
                             Something else
                           </label>

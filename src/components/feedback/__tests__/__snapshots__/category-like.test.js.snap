@@ -184,7 +184,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
                     },
                   ]
                 }
-                themeCheckbox="mr6 inline-block checkbox--blue checkbox--s-label flex-child"
+                themeCheckbox="mr6 inline-block checkbox--gray checkbox--s-label"
                 themeCheckboxContainer="txt-s block mb6 flex-parent"
                 value={Array []}
               >
@@ -231,7 +231,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
                             value="I found what I need"
                           />
                           <div
-                            className="mr6 inline-block checkbox--blue checkbox--s-label flex-child checkbox"
+                            className="mr6 inline-block checkbox--gray checkbox--s-label checkbox"
                           >
                             <Icon
                               inline={false}
@@ -274,7 +274,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
                             value="The information is accurate"
                           />
                           <div
-                            className="mr6 inline-block checkbox--blue checkbox--s-label flex-child checkbox"
+                            className="mr6 inline-block checkbox--gray checkbox--s-label checkbox"
                           >
                             <Icon
                               inline={false}
@@ -317,7 +317,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
                             value="The page is easy to understand"
                           />
                           <div
-                            className="mr6 inline-block checkbox--blue checkbox--s-label flex-child checkbox"
+                            className="mr6 inline-block checkbox--gray checkbox--s-label checkbox"
                           >
                             <Icon
                               inline={false}
@@ -360,7 +360,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
                             value="Something else"
                           />
                           <div
-                            className="mr6 inline-block checkbox--blue checkbox--s-label flex-child checkbox"
+                            className="mr6 inline-block checkbox--gray checkbox--s-label checkbox"
                           >
                             <Icon
                               inline={false}

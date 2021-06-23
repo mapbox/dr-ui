@@ -34,7 +34,9 @@ export function categories({ type, submitFeedback }) {
       helpful: false,
       children: (
         <CategoryProblem
-          leadText={`Tell us more about what's happening with this ${type}.`}
+          leadText={`Tell us more about what's happening${
+            type !== 'page' ? ` with this ${type}` : ''
+          }.`}
           options={{
             "Something is incorrect or doesn't work": {
               question: `What is incorrect or doesn't work and where on the ${genericType} does it appear?`,
@@ -61,7 +63,7 @@ export function categories({ type, submitFeedback }) {
       helpful: false,
       children: (
         <CategoryConfusing
-          option={`What about this ${type} is confusing?`}
+          option={`What about this ${type} is confusing? How can we improve the content?`}
           placeholder="Let us know what is confusing."
           submitFeedback={submitFeedback}
         />

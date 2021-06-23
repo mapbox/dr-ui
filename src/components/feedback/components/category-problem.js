@@ -39,6 +39,7 @@ export default class CategoryProblem extends React.PureComponent {
           <ControlRadioSet
             id="feedback-problem-options"
             onChange={this.handleRadios}
+            themeRadio="mr6 radio--gray radio--s-label inline-block"
             value={value}
             options={Object.keys(options).map((option) => ({
               value: option,

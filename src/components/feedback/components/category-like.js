@@ -38,6 +38,7 @@ export default class CategoryLike extends React.Component {
         <ControlCheckboxSet
           legend="Select all that apply"
           value={value}
+          themeCheckbox="mr6 inline-block checkbox--gray checkbox--s-label"
           id="feedback-category-like"
           onChange={this.handleChange}
           options={options.map((option) => ({

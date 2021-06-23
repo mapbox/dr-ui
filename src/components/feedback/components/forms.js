@@ -60,7 +60,7 @@ export class FeedbackTextarea extends React.PureComponent {
           <div
             id="feedback-length"
             className={classnames(
-              'absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s',
+              'absolute bottom right mb6 mr6 txt-mono bg-lighten75 px3 txt-s',
               {
                 'color-red': this.feedbackOverLimit
               }

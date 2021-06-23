@@ -142,13 +142,13 @@ exports[`Workflow 2 - Something is confusing Check UI element state 1`] = `
             className="flex-child mb6 prose"
           >
             <CategoryConfusing
-              option="What about this page is confusing?"
+              option="What about this page is confusing? How can we improve the content?"
               placeholder="Let us know what is confusing."
               submitFeedback={[Function]}
             >
               <FeedbackTextarea
                 id="feedback-problem-textarea"
-                label="What about this page is confusing?"
+                label="What about this page is confusing? How can we improve the content?"
                 onChange={[Function]}
                 placeholder="Let us know what is confusing."
               >
@@ -157,7 +157,7 @@ exports[`Workflow 2 - Something is confusing Check UI element state 1`] = `
                 >
                   <ControlTextarea
                     id="feedback-problem-textarea"
-                    label="What about this page is confusing?"
+                    label="What about this page is confusing? How can we improve the content?"
                     noAuto={false}
                     onChange={[Function]}
                     optional={false}
@@ -176,7 +176,7 @@ exports[`Workflow 2 - Something is confusing Check UI element state 1`] = `
                         <ControlLabel
                           id="feedback-problem-textarea"
                           optional={false}
-                          text="What about this page is confusing?"
+                          text="What about this page is confusing? How can we improve the content?"
                           themeLabel="txt-m mb6"
                         >
                           <div>
@@ -184,7 +184,7 @@ exports[`Workflow 2 - Something is confusing Check UI element state 1`] = `
                               className="inline-block txt-m mb6"
                               htmlFor="feedback-problem-textarea"
                             >
-                              What about this page is confusing?
+                              What about this page is confusing? How can we improve the content?
                                
                             </label>
                           </div>
@@ -206,7 +206,7 @@ exports[`Workflow 2 - Something is confusing Check UI element state 1`] = `
                     </ControlWrapper>
                   </ControlTextarea>
                   <div
-                    className="absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s"
+                    className="absolute bottom right mb6 mr6 txt-mono bg-lighten75 px3 txt-s"
                     id="feedback-length"
                   >
                     1000

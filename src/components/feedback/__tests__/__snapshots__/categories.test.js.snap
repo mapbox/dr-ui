@@ -20,7 +20,7 @@ Object {
   },
   "Report a problem": Object {
     "children": <CategoryProblem
-      leadText="Tell us more about what's happening with this page."
+      leadText="Tell us more about what's happening."
       options={
         Object {
           "I see an error message": Object {
@@ -47,7 +47,7 @@ Object {
   },
   "Something is confusing": Object {
     "children": <CategoryConfusing
-      option="What about this page is confusing?"
+      option="What about this page is confusing? How can we improve the content?"
       placeholder="Let us know what is confusing."
       submitFeedback={[MockFunction]}
     />,
@@ -103,7 +103,7 @@ Object {
   },
   "Something is confusing": Object {
     "children": <CategoryConfusing
-      option="What about this example is confusing?"
+      option="What about this example is confusing? How can we improve the content?"
       placeholder="Let us know what is confusing."
       submitFeedback={[MockFunction]}
     />,
@@ -159,7 +159,7 @@ Object {
   },
   "Something is confusing": Object {
     "children": <CategoryConfusing
-      option="What about this section on AccessToken is confusing?"
+      option="What about this section on AccessToken is confusing? How can we improve the content?"
       placeholder="Let us know what is confusing."
       submitFeedback={[MockFunction]}
     />,
