@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Redesign `Feedback` component to introduce categories. [#462](https://github.com/mapbox/dr-ui/pull/462)
+
 ## 4.0.1
 
 - In `Search` component, fix logic to prevent queries with results from being sent to Sentry.
