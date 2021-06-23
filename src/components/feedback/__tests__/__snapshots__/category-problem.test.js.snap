@@ -19,6 +19,7 @@ exports[`Workflow 2 - Report a problem Check UI element state 1`] = `
   }
 >
   <FeedbackWrapper
+    helpful={false}
     title="Report a problem"
   >
     <div

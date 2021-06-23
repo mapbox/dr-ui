@@ -19,6 +19,7 @@ exports[`Workflow with logged in user information 2 - Something is confusing Che
   }
 >
   <FeedbackWrapper
+    helpful={false}
     title="Something is confusing"
   >
     <div

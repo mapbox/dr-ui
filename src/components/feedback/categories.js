@@ -16,7 +16,7 @@ export function categories({ type, submitFeedback }) {
   return {
     [`I like this ${genericType}`]: {
       helpful: true,
-      component: (
+      children: (
         <CategoryLike
           leadText={`Tell us what you like about this ${type}.`}
           placeholder="What did you like?"
@@ -32,7 +32,7 @@ export function categories({ type, submitFeedback }) {
     },
     'Report a problem': {
       helpful: false,
-      component: (
+      children: (
         <CategoryProblem
           leadText={`Tell us more about what's happening with this ${type}.`}
           options={{
@@ -59,7 +59,7 @@ export function categories({ type, submitFeedback }) {
     },
     'Something is confusing': {
       helpful: false,
-      component: (
+      children: (
         <CategoryConfusing
           option={`What about this ${type} is confusing?`}
           placeholder="Let us know what is confusing."

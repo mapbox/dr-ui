@@ -15,10 +15,10 @@ describe('categories', () => {
       submitFeedback: jest.fn()
     });
     Object.keys(allCategories).forEach((category) => {
-      const { helpful, component } = allCategories[category];
+      const { helpful, children } = allCategories[category];
       test('must have `helpful`', () =>
         expect(typeof helpful === 'boolean').toBeTruthy());
-      test('must have `component`', () => expect(component).toBeDefined());
+      test('must have `children`', () => expect(children).toBeDefined());
     });
   });
   test('type: default', () => {

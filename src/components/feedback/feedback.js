@@ -112,8 +112,11 @@ class Feedback extends React.PureComponent {
   }
 
   // Creates a wrapper for the Feedback component
-  renderWrapper({ children, title }) {
+  renderWrapper({ children, title, helpful }) {
     const { sentFeedback } = this.state;
+    // show "Contact support" only when the user hasn't submitted feedback
+    // and the chosen category infers not helpful feedbak
+    const showContactSupport = !sentFeedback && !helpful;
     return (
       <div className="dr-ui--feedback wmax300">
         <div className="bg-gray-faint round py12 px12">
@@ -133,7 +136,7 @@ class Feedback extends React.PureComponent {
               </div>
             </div>
             <div className="flex-child mb6 prose">{children}</div>
-            {!sentFeedback && (
+            {showContactSupport && (
               <div className="flex-child color-gray">
                 Need help?{' '}
                 <button
@@ -209,9 +212,7 @@ class Feedback extends React.PureComponent {
     }
     // Middle stages: Select category and complete the category workflow
     return (
-      <FeedbackWrapper title={category}>
-        {this.categories()[category].component}
-      </FeedbackWrapper>
+      <FeedbackWrapper title={category} {...this.categories()[category]} />
     );
   }
 }

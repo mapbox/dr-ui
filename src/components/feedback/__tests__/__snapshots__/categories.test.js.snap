@@ -3,7 +3,7 @@
 exports[`categories type: default 1`] = `
 Object {
   "I like this page": Object {
-    "component": <CategoryLike
+    "children": <CategoryLike
       leadText="Tell us what you like about this page."
       options={
         Array [
@@ -19,7 +19,7 @@ Object {
     "helpful": true,
   },
   "Report a problem": Object {
-    "component": <CategoryProblem
+    "children": <CategoryProblem
       leadText="Tell us more about what's happening with this page."
       options={
         Object {
@@ -46,7 +46,7 @@ Object {
     "helpful": false,
   },
   "Something is confusing": Object {
-    "component": <CategoryConfusing
+    "children": <CategoryConfusing
       option="What about this page is confusing?"
       placeholder="Let us know what is confusing."
       submitFeedback={[MockFunction]}
@@ -59,7 +59,7 @@ Object {
 exports[`categories type: example 1`] = `
 Object {
   "I like this example": Object {
-    "component": <CategoryLike
+    "children": <CategoryLike
       leadText="Tell us what you like about this example."
       options={
         Array [
@@ -75,7 +75,7 @@ Object {
     "helpful": true,
   },
   "Report a problem": Object {
-    "component": <CategoryProblem
+    "children": <CategoryProblem
       leadText="Tell us more about what's happening with this example."
       options={
         Object {
@@ -102,7 +102,7 @@ Object {
     "helpful": false,
   },
   "Something is confusing": Object {
-    "component": <CategoryConfusing
+    "children": <CategoryConfusing
       option="What about this example is confusing?"
       placeholder="Let us know what is confusing."
       submitFeedback={[MockFunction]}
@@ -115,7 +115,7 @@ Object {
 exports[`categories type: sectioned feedback 1`] = `
 Object {
   "I like this content": Object {
-    "component": <CategoryLike
+    "children": <CategoryLike
       leadText="Tell us what you like about this section on AccessToken."
       options={
         Array [
@@ -131,7 +131,7 @@ Object {
     "helpful": true,
   },
   "Report a problem": Object {
-    "component": <CategoryProblem
+    "children": <CategoryProblem
       leadText="Tell us more about what's happening with this section on AccessToken."
       options={
         Object {
@@ -158,7 +158,7 @@ Object {
     "helpful": false,
   },
   "Something is confusing": Object {
-    "component": <CategoryConfusing
+    "children": <CategoryConfusing
       option="What about this section on AccessToken is confusing?"
       placeholder="Let us know what is confusing."
       submitFeedback={[MockFunction]}

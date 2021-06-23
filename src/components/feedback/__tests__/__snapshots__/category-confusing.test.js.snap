@@ -19,6 +19,7 @@ exports[`Workflow 2 - Something is confusing Check UI element state 1`] = `
   }
 >
   <FeedbackWrapper
+    helpful={false}
     title="Something is confusing"
   >
     <div

@@ -19,6 +19,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
   }
 >
   <FeedbackWrapper
+    helpful={true}
     title="I like this page"
   >
     <div
@@ -409,19 +410,6 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
                 </button>
               </FeedbackButton>
             </CategoryLike>
-          </div>
-          <div
-            className="flex-child color-gray"
-          >
-            Need help?
-             
-            <button
-              className="link"
-              onClick={[Function]}
-              value="Contact support"
-            >
-              Contact support
-            </button>
           </div>
         </div>
       </div>
