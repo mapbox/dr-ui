@@ -165,11 +165,13 @@ exports[`Workflow with logged in user information 2 - Something is confusing Che
                     placeholder="Let us know what is confusing."
                     themeControlTextarea="textarea hmin120 bg-white"
                     themeLabel="txt-m mb6"
+                    validationError=""
                     value=""
                   >
                     <ControlWrapper
                       id="feedback-problem-textarea"
                       themeControlWrapper=""
+                      validationError=""
                     >
                       <div
                         className="relative "
@@ -207,7 +209,7 @@ exports[`Workflow with logged in user information 2 - Something is confusing Che
                     </ControlWrapper>
                   </ControlTextarea>
                   <div
-                    className="absolute bottom right mb6 mr6 txt-mono bg-lighten75 px3 txt-s"
+                    className="absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s"
                     id="feedback-length"
                   >
                     1000

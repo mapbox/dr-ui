@@ -20,10 +20,8 @@ export function textTooLong(feedback) {
   });
   const feedbackLength = feedback.find('#feedback-length');
   expect(feedbackLength.text()).toEqual('-1070');
-  const overLimit = feedback.find('#feedback-overlimit');
-  expect(overLimit.text()).toEqual(
-    ' Your message is over the 1000 character limit.'
-  );
+  const overLimit = feedback.find('div[role="alert"] div');
+  expect(overLimit.text()).toEqual('Your feedback is over the limit.');
   // Submit button is disabled when user enters too long text
   expect(
     feedback.find('#feedback-submit-button').props().disabled

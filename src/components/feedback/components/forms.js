@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ControlTextarea from '@mapbox/mr-ui/control-textarea';
-import Icon from '@mapbox/mr-ui/icon';
 import classnames from 'classnames';
 
 // character limit for the feedback textarea
@@ -27,24 +26,11 @@ export class FeedbackTextarea extends React.PureComponent {
     return this.state.feedback.length > feedbackLimit;
   }
 
-  renderOverLimit(feedbackLength) {
-    return (
-      <div
-        id="feedback-overlimit"
-        className="color-red-dark txt-s bg-red-faint round py3 pl6 pr12 mt6"
-      >
-        <Icon name="alert" inline={true} /> Your message is over the{' '}
-        {feedbackLength} character limit.
-      </div>
-    );
-  }
-
   render() {
     const { id, label, placeholder, value } = this.props;
     const feedbackLength = this.state.feedback
       ? feedbackLimit - this.state.feedback.length
       : feedbackLimit;
-    const feedbackOverLimit = this.isOverLimit();
     return (
       <>
         <div className="relative">
@@ -56,20 +42,22 @@ export class FeedbackTextarea extends React.PureComponent {
             value={value}
             onChange={this.handleFeedback}
             placeholder={placeholder}
+            validationError={
+              this.isOverLimit() ? 'Your feedback is over the limit' : ''
+            }
           />
           <div
             id="feedback-length"
             className={classnames(
-              'absolute bottom right mb6 mr6 txt-mono bg-lighten75 px3 txt-s',
+              'absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s',
               {
-                'color-red-dark': feedbackOverLimit
+                'color-red-dark': this.isOverLimit()
               }
             )}
           >
             {feedbackLength}
           </div>
         </div>
-        {feedbackOverLimit && this.renderOverLimit(feedbackLimit)}
       </>
     );
   }
