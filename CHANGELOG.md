@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.0.2
+
+- Fix `Video` to use a promise when handling `play()`. [#459](https://github.com/mapbox/dr-ui/pull/459)
+
 ## 4.0.1
 
 - In `Search` component, fix logic to prevent queries with results from being sent to Sentry.
