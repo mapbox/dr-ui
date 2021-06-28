@@ -18,15 +18,15 @@ exports[`navigation-accordion Basic NavigationAccordion renders as expected 1`] 
             }
           }
         >
-          Overview
+          Guides
         </a>
         <button
-          aria-controls="menu-overview"
+          aria-controls="menu-guides"
           aria-expanded={false}
-          aria-label="Toggle Overview menu"
+          aria-label="Toggle Guides menu"
           className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
           onClick={[Function]}
-          value="Overview"
+          value="Guides"
         >
           <svg
             className="events-none icon inline-block align-t"

@@ -287,7 +287,7 @@ describe('buildNavigation', () => {
           }
         ],
         path: '/docs-starter-kit/maps/overview/',
-        title: 'Guides'
+        title: 'Overview'
       },
       {
         id: 'specification',
@@ -372,7 +372,7 @@ describe('buildNavigation', () => {
           }
         ],
         path: '/docs-starter-kit/navigation/overview/',
-        title: 'Guides'
+        title: 'Overview'
       },
       {
         id: 'specification',
