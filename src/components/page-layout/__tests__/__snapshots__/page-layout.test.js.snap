@@ -95,7 +95,7 @@ Array [
                   >
                     <a
                       className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                      href="/PageLayout/overview/"
+                      href="/PageLayout/guides/"
                       style={
                         Object {
                           "letterSpacing": "0.025em",
@@ -727,7 +727,7 @@ Array [
                   >
                     <a
                       className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                      href="/PageLayout/overview/"
+                      href="/PageLayout/guides/"
                       style={
                         Object {
                           "letterSpacing": "0.025em",
@@ -1404,7 +1404,7 @@ Array [
                   >
                     <a
                       className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-                      href="/PageLayout/overview/"
+                      href="/PageLayout/guides/"
                       style={
                         Object {
                           "letterSpacing": "0.025em",
@@ -1573,7 +1573,7 @@ Array [
           >
             <a
               className="link"
-              href="/PageLayout/overview/"
+              href="/PageLayout/guides/"
             >
               Overview
             </a>
@@ -1623,7 +1623,7 @@ Array [
             </span>
             <a
               className="link"
-              href="/PageLayout/overview/worldview/"
+              href="/PageLayout/guides/worldview/"
             >
               Worldview
             </a>

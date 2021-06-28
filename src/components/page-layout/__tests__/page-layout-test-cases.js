@@ -65,9 +65,9 @@ testCases.examplePageFilters = {
         },
         navTabs: [
           {
-            path: '/PageLayout/overview/',
-            title: 'Overview',
-            id: 'overview'
+            path: '/PageLayout/guides/',
+            title: 'Guides',
+            id: 'guides'
           },
           {
             path: '/PageLayout/examples/',
@@ -150,7 +150,7 @@ testCases.noSidebar = {
         pathname: '/PageLayout/'
       }}
       frontMatter={{
-        title: 'Overview',
+        title: 'Guides',
         layout: 'full',
         hideSidebar: true
       }}
@@ -158,14 +158,14 @@ testCases.noSidebar = {
         hierarchy: {
           '/PageLayout/': {
             parent: '/PageLayout/',
-            title: 'Overview'
+            title: 'Guides'
           }
         },
         navTabs: [
           {
-            title: 'Overview',
+            title: 'Guides',
             path: '/PageLayout/',
-            id: 'overview'
+            id: 'guides'
           }
         ]
       }}

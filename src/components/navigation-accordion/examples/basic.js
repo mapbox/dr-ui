@@ -8,13 +8,14 @@ export default class Basic extends React.PureComponent {
   render() {
     const navigation = [
       {
-        title: 'Overview',
-        id: 'overview',
-        path: '/dr-ui/overview/',
+        title: 'Guides',
+        id: 'guides',
+        path: '/dr-ui/guides/',
         pages: [
           {
-            path: '/dr-ui/overview/permissions/',
-            title: 'Permissions'
+            path: '/dr-ui/guides/permissions/',
+            title: 'Permissions',
+            id: 'permissions'
           }
         ]
       },
@@ -25,11 +26,13 @@ export default class Basic extends React.PureComponent {
         pages: [
           {
             path: '/dr-ui/examples/basic/',
-            title: 'Basic example'
+            title: 'Basic example',
+            id: 'basic-example'
           },
           {
             path: '/dr-ui/examples/fancy/',
-            title: 'Fancy example'
+            title: 'Fancy example',
+            id: 'fancy-example'
           }
         ]
       }

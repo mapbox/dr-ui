@@ -17,7 +17,7 @@ export default class Basic extends React.PureComponent {
           }
         }}
         location={{
-          pathname: '/PageLayout/overview/worldview/'
+          pathname: '/PageLayout/guides/worldview/'
         }}
         frontMatter={{
           title: 'Worldview',
@@ -27,38 +27,40 @@ export default class Basic extends React.PureComponent {
         }}
         navigation={{
           hierarchy: {
-            '/PageLayout/overview/': {
+            '/PageLayout/guides/': {
               parent: '/PageLayout/',
-              title: 'Overview'
+              title: 'Guides'
             },
-            '/PageLayout/overview/worldview/': {
-              parent: '/PageLayout/overview/',
-              title: 'Overview'
+            '/PageLayout/guides/worldview/': {
+              parent: '/PageLayout/guides/',
+              title: 'Guides'
             },
-            '/PageLayout/overview/worldview/border-styling/': {
-              parent: '/PageLayout/overview/worldview/',
+            '/PageLayout/guides/worldview/border-styling/': {
+              parent: '/PageLayout/guides/worldview/',
               title: 'Worldview'
             }
           },
           navTabs: [
             {
-              path: '/PageLayout/overview/',
-              title: 'Overview',
-              id: 'overview',
+              path: '/PageLayout/guides/',
+              title: 'Guides',
+              id: 'guides',
               pages: [
                 {
-                  path: '/PageLayout/overview/annotations/',
-                  title: 'Annotations'
+                  path: '/PageLayout/guides/annotations/',
+                  title: 'Annotations',
+                  id: 'annotations'
                 },
                 {
-                  path: '/PageLayout/overview/worldview/',
+                  path: '/PageLayout/guides/worldview/',
                   title: 'Worldview',
+                  id: 'worldview',
                   subPages: [
                     {
                       title: 'Available worldviews',
                       description:
                         'Identify geographic features whose characteristics are defined differently by audiences belonging to various regional, cultural, or political groups.',
-                      path: '/PageLayout/overview/worldview/avilable-worldviews/',
+                      path: '/PageLayout/guides/worldview/avilable-worldviews/',
                       groupOrder: 1,
                       id: 'sp-one'
                     },
@@ -66,7 +68,7 @@ export default class Basic extends React.PureComponent {
                       title: 'Border styling',
                       description:
                         'When creating a map style with a tileset that uses worldviews, you must apply a filter to any layers that include a worldview data field.',
-                      path: '/PageLayout/overview/worldview/border-styling/',
+                      path: '/PageLayout/guides/worldview/border-styling/',
                       groupOrder: 2,
                       id: 'sp-two'
                     },
@@ -74,15 +76,16 @@ export default class Basic extends React.PureComponent {
                       title: 'Data sources',
                       description:
                         'Some Mapbox vector tilesets, including Mapbox Streets v8 and Boundaries v3, include the worldview data field in several layers.',
-                      path: '/PageLayout/overview/worldview/data-sources/',
+                      path: '/PageLayout/guides/worldview/data-sources/',
                       groupOrder: 3,
                       id: 'sp-three'
                     }
                   ]
                 },
                 {
-                  path: '/PageLayout/overview/expressions/',
-                  title: 'Expressions'
+                  path: '/PageLayout/guides/expressions/',
+                  title: 'Expressions',
+                  id: 'expressions'
                 }
               ]
             },
