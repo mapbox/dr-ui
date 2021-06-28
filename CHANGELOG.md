@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 4.0.2
 
 - Fix `sortVersions` for prerelease versions greater than 10. [#464](https://github.com/mapbox/dr-ui/pull/464)
 
