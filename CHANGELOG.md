@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Fix `sortVersions` for prerelease versions greater than 10. [#464](https://github.com/mapbox/dr-ui/pull/464)
+
 ## 4.0.1
 
 - In `Search` component, fix logic to prevent queries with results from being sent to Sentry.
