@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Workflow 2 - Something is confusing Check UI element state 1`] = `
+exports[`Workflow 3 - Enter feedback Cannot submit feedback yet 1`] = `
 <Feedback
   feedbackSentryDsn="https://eccc8b561b9a461990309b01d33d54e3@sentry.io/1848287"
   location={

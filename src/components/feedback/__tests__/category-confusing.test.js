@@ -74,12 +74,6 @@ describe('Workflow', () => {
       expect(feedback.state().category).toEqual('Something is confusing');
       expect(feedback.state().helpful).toBeFalsy();
     });
-    test('Check UI element state', () => {
-      // The button is disabled until the user selects an option
-      const submitButton = feedback.find('button#feedback-submit-button');
-      expect(submitButton.props().disabled).toBeTruthy();
-      expect(toJson(feedback)).toMatchSnapshot();
-    });
     test('Do not send data to Sentry', () => {
       expect(Sentry.init).not.toHaveBeenCalled();
     });
@@ -108,6 +102,12 @@ describe('Workflow', () => {
   });
 
   describe('3 - Enter feedback', () => {
+    test('Cannot submit feedback yet', () => {
+      // The submit feedback button is disabled until the user enters text
+      const submitButton = feedback.find('button#feedback-submit-button');
+      expect(submitButton.props().disabled).toBeTruthy();
+      expect(toJson(feedback)).toMatchSnapshot();
+    });
     test('Text over limit', () => textTooLong(feedback));
     test('Text under limit', () => textJustRight(feedback));
   });
