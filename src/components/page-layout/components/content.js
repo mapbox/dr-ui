@@ -5,7 +5,7 @@ import classnames from 'classnames';
 import OnThisPage from '../../on-this-page/on-this-page';
 import Feedback from '../../feedback/feedback';
 import OverviewHeader from '../../overview-header/overview-header';
-import NextPrevPage from './next-prev-page.js';
+import NextPage from './next-page.js';
 import GuideGroupIndex from './guide-group-index.js';
 
 export default class Content extends React.PureComponent {
@@ -141,8 +141,8 @@ export class ContentWrapper extends React.PureComponent {
               />
             )}
             {frontMatter.groupOrder && (
-              <div className="mt36 pt36 border-t border--gray-light">
-                <NextPrevPage
+              <div className="mt36">
+                <NextPage
                   pathname={location.pathname}
                   navigation={navigation}
                   frontMatter={frontMatter}

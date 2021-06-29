@@ -1784,100 +1784,80 @@ Array [
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
               <div
-                className="mt36 pt36 border-t border--gray-light"
+                className="mt36"
               >
-                <div
-                  className="flex-parent flex-parent--space-between-main"
+                <a
+                  className="unprose block cursor-pointer color-gray color-gray-dark-on-hover transition mb18"
+                  href="/PageLayout/guides/worldview/data-sources/"
                 >
-                  <a
-                    className="flex-child unprose block wmax240 color-gray color-gray-dark-on-hover"
-                    href="/PageLayout/guides/worldview/avilable-worldviews/"
+                  <div
+                    className="round flex-parent flex-parent--stretch-cross border border--gray-light border--gray-dark-on-hover border--2 transition"
                   >
                     <div
-                      className="txt-s txt-fancy txt-uppercase"
+                      className="flex-child flex-child--grow px18 pt30 pb18"
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
                     >
-                      <span>
-                        <span
-                          className="txt-nowrap"
+                      <div
+                        className="flex-parent flex-parent--row"
+                      >
+                        <div
+                          className="flex-child"
                         >
-                          <svg
-                            className="events-none icon inline-block align-t"
-                            focusable="false"
-                            role="presentation"
+                          <div
+                            className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-gray-dark"
                             style={
                               Object {
-                                "height": "1.5em",
-                                "width": "1.5em",
+                                "color": undefined,
                               }
                             }
                           >
-                            <use
-                              xlinkHref="#icon-chevron-left"
-                              xmlnsXlink="http://www.w3.org/1999/xlink"
-                            />
-                          </svg>
-                          Previous
-                        </span>
-                         
-                        
-                      </span>
-                    </div>
-                    <div
-                      className="txt-bold"
-                    >
-                      Available worldviews
-                    </div>
-                    <div
-                      className="txt-s none block-ml"
-                    >
-                      Identify geographic features whose characteristics are defined differently by audiences belonging to various regional, cultural, or political groups.
-                    </div>
-                  </a>
-                  <a
-                    className="flex-child unprose block wmax240 color-gray color-gray-dark-on-hover align-r"
-                    href="/PageLayout/guides/worldview/data-sources/"
-                  >
-                    <div
-                      className="txt-s txt-fancy txt-uppercase"
-                    >
-                      <span>
-                        
-                         
-                        <span
-                          className="txt-nowrap"
-                        >
-                          Next
-                          <svg
-                            className="events-none icon inline-block align-t"
-                            focusable="false"
-                            role="presentation"
-                            style={
-                              Object {
-                                "height": "1.5em",
-                                "width": "1.5em",
-                              }
-                            }
+                            Next
+                          </div>
+                          <div
+                            className="color-gray-dark color-black-on-hover transition"
                           >
-                            <use
-                              xlinkHref="#icon-chevron-right"
-                              xmlnsXlink="http://www.w3.org/1999/xlink"
-                            />
-                          </svg>
-                        </span>
-                      </span>
+                            <div
+                              className="txt-bold"
+                            >
+                              Data sources
+                            </div>
+                            Some Mapbox vector tilesets, including Mapbox Streets v8 and Boundaries v3, include the worldview data field in several layers.
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div
-                      className="txt-bold"
+                      className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+                      style={
+                        Object {
+                          "borderColor": "inherit",
+                          "borderLeftWidth": "2px",
+                        }
+                      }
                     >
-                      Data sources
+                      <svg
+                        className="events-none icon"
+                        focusable="false"
+                        role="presentation"
+                        style={
+                          Object {
+                            "height": 30,
+                            "width": 30,
+                          }
+                        }
+                      >
+                        <use
+                          xlinkHref="#icon-chevron-right"
+                          xmlnsXlink="http://www.w3.org/1999/xlink"
+                        />
+                      </svg>
                     </div>
-                    <div
-                      className="txt-s none block-ml"
-                    >
-                      Some Mapbox vector tilesets, including Mapbox Streets v8 and Boundaries v3, include the worldview data field in several layers.
-                    </div>
-                  </a>
-                </div>
+                  </div>
+                </a>
               </div>
               <div
                 className="my36 block none-mxl"

@@ -91,6 +91,9 @@ class RelatedPage extends React.PureComponent {
 
     const theme = contentTypes[this.props.contentType];
 
+    // When label prop is set, override theme label
+    if (props.label) theme.label = props.label;
+
     const showVideoModal = props.vimeoId && props.contentType === 'video';
     const showVideoThumbnail =
       this.props.contentType === 'video' && props.vimeoThumbnail;
@@ -178,8 +181,11 @@ RelatedPage.propTypes = {
     'troubleshooting',
     'playground',
     'video',
+    'next',
     'default'
   ]),
+  /** Override the label name. This value is set by the `contentType`, but you can override it when needed. */
+  label: PropTypes.string,
   /** Title of the related page in the context of the current page. */
   title: PropTypes.string.isRequired,
   /** Description of the related page in the context of the current page. */
