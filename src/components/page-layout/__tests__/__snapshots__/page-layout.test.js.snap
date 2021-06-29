@@ -1786,7 +1786,78 @@ Array [
               <div
                 className="mt36"
               >
-                <div />
+                <a
+                  className="unprose block cursor-pointer color-gray color-gray-dark-on-hover transition mb18"
+                  href="/PageLayout/guides/worldview/data-sources/"
+                >
+                  <div
+                    className="round flex-parent flex-parent--stretch-cross border border--gray-light border--gray-dark-on-hover border--2 transition"
+                  >
+                    <div
+                      className="flex-child flex-child--grow px18 pt30 pb18"
+                      style={
+                        Object {
+                          "flex": 1,
+                        }
+                      }
+                    >
+                      <div
+                        className="flex-parent flex-parent--row"
+                      >
+                        <div
+                          className="flex-child"
+                        >
+                          <div
+                            className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-gray-dark"
+                            style={
+                              Object {
+                                "color": undefined,
+                              }
+                            }
+                          >
+                            Next
+                          </div>
+                          <div
+                            className="color-gray-dark color-black-on-hover transition"
+                          >
+                            <div
+                              className="txt-bold"
+                            >
+                              Data sources
+                            </div>
+                            Some Mapbox vector tilesets, including Mapbox Streets v8 and Boundaries v3, include the worldview data field in several layers.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+                      style={
+                        Object {
+                          "borderColor": "inherit",
+                          "borderLeftWidth": "2px",
+                        }
+                      }
+                    >
+                      <svg
+                        className="events-none icon"
+                        focusable="false"
+                        role="presentation"
+                        style={
+                          Object {
+                            "height": 30,
+                            "width": 30,
+                          }
+                        }
+                      >
+                        <use
+                          xlinkHref="#icon-chevron-right"
+                          xmlnsXlink="http://www.w3.org/1999/xlink"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </a>
               </div>
               <div
                 className="my36 block none-mxl"
