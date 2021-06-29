@@ -106,8 +106,7 @@ export default class NavigationAccordion extends React.Component {
             className={classnames(
               'pl12 inline-block w-full color-blue-on-hover border-l border--gray-light border-l--2',
               {
-                'color-blue':
-                  activeItem === subPage.path
+                'color-blue': activeItem === subPage.path
               }
             )}
           >
@@ -116,9 +115,7 @@ export default class NavigationAccordion extends React.Component {
         </li>
       );
     });
-    return (
-      <ul className="mb6 ml3">{subs}</ul>
-    );
+    return <ul className="mb6 ml3">{subs}</ul>;
   }
   renderBody(subItems, activeItem, sectionId) {
     const subItemEls = subItems
@@ -133,8 +130,7 @@ export default class NavigationAccordion extends React.Component {
           >
             <a
               className={classnames('inline-block w-full color-blue-on-hover', {
-                'color-blue': activeItem === page.path,
-                'txt-bold': activeItem.indexOf(page.path) > -1 && page.subPages
+                'color-blue': activeItem === page.path
               })}
               href={page.path}
             >
@@ -226,13 +222,13 @@ NavigationAccordion.propTypes = {
         PropTypes.shape({
           title: PropTypes.string.isRequired,
           path: PropTypes.string.isRequired,
-          id: PropTypes.string,
+          id: PropTypes.string.isRequired,
           tag: PropTypes.string,
           subPages: PropTypes.arrayOf(
             PropTypes.shape({
               title: PropTypes.string.isRequired,
               path: PropTypes.string.isRequired,
-              id: PropTypes.string
+              id: PropTypes.string.isRequired
             })
           )
         })

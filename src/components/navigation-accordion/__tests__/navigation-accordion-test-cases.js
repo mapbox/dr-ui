@@ -24,10 +24,13 @@ testCases.withTags = {
           {
             title: 'Heading one',
             path: 'heading-one',
+            id: 'heading-one',
             tag: 'beta'
           },
           {
             title: 'Heading two',
+            path: 'heading-two',
+            id: 'heading-two',
             tag: 'custom',
             customTagProps: {
               customLabel: 'Custom',
@@ -38,8 +41,7 @@ testCases.withTags = {
                 borderColor: '#FD8383'
               },
               customIcon: 'alert'
-            },
-            path: 'heading-two'
+            }
           }
         ]
       },
