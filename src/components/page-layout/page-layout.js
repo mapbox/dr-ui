@@ -222,7 +222,7 @@ PageLayout.propTypes = {
   }).isRequired,
   /**
 - `navTabs` - links to be shown in the `NavigationAccordion`, formatted as an array of object: `[{"href": "/overview", "id": "overview", "label": "Overview"}]`
-- `hierarchy` - Object of every path and their parent: `{"/guides/layous": {"parent": "/overview", "title": "Overview"}}`
+- `hierarchy` - Object of every path and their parent: `{"/guides/layouts": {"parent": "/guides", "title": "Guides"}}`
 - `title` - required for multi-structured layouts, this is the title for the `ProductMenu`
 - `tag` - optional `tag` name to pass to `ProductMenu`, [see available options](#productmenu).
 */
