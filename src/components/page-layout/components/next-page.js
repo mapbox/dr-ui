@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import RelatedPage from '../../related-page';
 import { getSubPages } from '../utils.js';
 
-export default class NextPrevPage extends React.PureComponent {
+export default class NextPage extends React.PureComponent {
   render() {
     const { pathname, frontMatter, navigation } = this.props;
     const subPages = getSubPages(navigation, pathname, frontMatter);
@@ -20,7 +20,7 @@ export default class NextPrevPage extends React.PureComponent {
   }
 }
 
-NextPrevPage.propTypes = {
+NextPage.propTypes = {
   pathname: PropTypes.string.isRequired,
   frontMatter: PropTypes.shape({
     groupOrder: PropTypes.number
