@@ -66,7 +66,7 @@ export function getSubPages(navigation, pathname, frontMatter) {
   }
   if (frontMatter.group) {
     subPages = pages && pages.find((x) => x.path === pathname).subPages;
-  } else {
+  } else if (frontMatter.groupOrder) {
     subPages =
       pages &&
       pages.find((x) => x.path === navigation.hierarchy[pathname].parent)

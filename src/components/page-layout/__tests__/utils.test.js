@@ -31,13 +31,29 @@ describe('getSubPages', () => {
         parent: '/PageLayout/',
         title: 'Guides'
       },
+      '/PageLayout/guides/annotations/': {
+        parent: '/PageLayout/guides/',
+        title: 'Guides'
+      },
       '/PageLayout/guides/worldview/': {
         parent: '/PageLayout/guides/',
         title: 'Guides'
       },
+      '/PageLayout/guides/worldview/avilable-worldviews/': {
+        parent: '/PageLayout/guides/worldview/',
+        title: 'Worldview'
+      },
       '/PageLayout/guides/worldview/border-styling/': {
         parent: '/PageLayout/guides/worldview/',
         title: 'Worldview'
+      },
+      '/PageLayout/guides/worldview/data-sources/': {
+        parent: '/PageLayout/guides/worldview/',
+        title: 'Worldview'
+      },
+      '/PageLayout/guides/expressions/': {
+        parent: '/PageLayout/guides/',
+        title: 'Guides'
       }
     },
     navTabs: [
@@ -89,21 +105,6 @@ describe('getSubPages', () => {
             id: 'expressions'
           }
         ]
-      },
-      {
-        path: '/PageLayout/specification/',
-        title: 'Specification',
-        id: 'specification'
-      },
-      {
-        path: '/PageLayout/examples/',
-        title: 'Examples',
-        id: 'examples'
-      },
-      {
-        path: '/PageLayout/demo/',
-        title: 'Demo',
-        id: 'demo'
       }
     ]
   };
