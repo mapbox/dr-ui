@@ -50,7 +50,7 @@
     "@mapbox/mbx-assembly": "^0.31.0",
     "@mapbox/prettier-config-docs": "^0.2.1",
     "@mapbox/react-test-kitchen": "^0.3.0",
-    "@mapbox/rehype-prism": "^0.6.0",
+    "@mapbox/rehype-prism": "^0.7.0",
     "@mapbox/remark-config-docs": "^0.14.0",
     "@mapbox/remark-lint-link-text": "^0.6.0",
     "@mapbox/remark-lint-mapbox": "^2.9.0",
