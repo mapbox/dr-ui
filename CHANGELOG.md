@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Update prismjs, rehype-prism. [#466](https://github.com/mapbox/dr-ui/pull/466)
+
 ## 4.0.2
 
 - Fix `sortVersions` for prerelease versions greater than 10. [#464](https://github.com/mapbox/dr-ui/pull/464)
