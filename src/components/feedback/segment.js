@@ -48,7 +48,8 @@ function createSegmentEvent({ state, props }) {
       // get page context
       page: location || undefined,
       // set user if available else set anonymousId (needed for Mode)
-      ...identity,
+      userId: user && user.id ? user.id : undefined,
+      anonymousId: anonymousId,
       // set plan, if available
       ...(user && user.plan && { plan: user.plan.id }),
       // get environment: staging or production

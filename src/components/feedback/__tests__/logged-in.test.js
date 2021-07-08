@@ -49,6 +49,7 @@ describe('Workflow with logged in user information', () => {
         {
           event: 'Sent docs feedback',
           properties: {
+            anonymousId: expect.anything(),
             category: undefined,
             categoryType: undefined,
             contactSupport: false,
@@ -90,6 +91,7 @@ describe('Workflow with logged in user information', () => {
         {
           event: 'Sent docs feedback',
           properties: {
+            anonymousId: expect.anything(),
             category: 'Something is confusing',
             categoryType: undefined,
             contactSupport: false,
@@ -156,6 +158,7 @@ describe('Workflow with logged in user information', () => {
         {
           event: 'Sent docs feedback',
           properties: {
+            anonymousId: expect.anything(),
             category: 'Something is confusing',
             categoryType: undefined,
             contactSupport: false,
