@@ -184,7 +184,9 @@ exports[`Generate snapshot for feedback confirmation 1`] = `
                 </strong>
               </p>
               <p>
-                Our documentation team will read your feedback. Thank you for helping us improve this page.
+                Our documentation team will read your feedback. Thank you for helping us improve this 
+                page
+                .
               </p>
             </div>
           </div>

@@ -204,7 +204,7 @@ class Feedback extends React.PureComponent {
             </p>
             <p>
               Our documentation team will read your feedback. Thank you for
-              helping us improve this page.
+              helping us improve this {this.props.type}.
             </p>
           </div>
         </FeedbackWrapper>
