@@ -146,10 +146,22 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
               leadText="Tell us what you like about this page."
               options={
                 Array [
-                  "I found what I need",
-                  "The information is accurate",
-                  "The page is easy to understand",
-                  "Something else",
+                  Object {
+                    "label": "I found what I need",
+                    "value": "I found what I need",
+                  },
+                  Object {
+                    "label": "The information is accurate",
+                    "value": "The information is accurate",
+                  },
+                  Object {
+                    "label": "The page is easy to understand",
+                    "value": "Easy to understand",
+                  },
+                  Object {
+                    "label": "Something else",
+                    "value": "Something else",
+                  },
                 ]
               }
               placeholder="What did you like?"
@@ -177,7 +189,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
                     },
                     Object {
                       "label": "The page is easy to understand",
-                      "value": "The page is easy to understand",
+                      "value": "Easy to understand",
                     },
                     Object {
                       "label": "Something else",
@@ -305,7 +317,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
                         </label>
                         <label
                           className="checkbox-container txt-s block mb6 flex-parent"
-                          key="The page is easy to understand"
+                          key="Easy to understand"
                         >
                           <input
                             aria-checked={false}
@@ -315,7 +327,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
                             onChange={[Function]}
                             role="checkbox"
                             type="checkbox"
-                            value="The page is easy to understand"
+                            value="Easy to understand"
                           />
                           <div
                             className="mr6 inline-block checkbox--gray checkbox--s-label checkbox"

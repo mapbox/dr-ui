@@ -20,11 +20,18 @@ export function categories({ type, submitFeedback }) {
         <CategoryLike
           leadText={`Tell us what you like about this ${type}.`}
           placeholder="What did you like?"
+          // NOTE: changing the `value` will affect reporting in Mode and Sentry
           options={[
-            'I found what I need',
-            'The information is accurate',
-            `The ${genericType} is easy to understand`,
-            'Something else'
+            { label: 'I found what I need', value: 'I found what I need' },
+            {
+              label: 'The information is accurate',
+              value: 'The information is accurate'
+            },
+            {
+              label: `The ${genericType} is easy to understand`,
+              value: 'Easy to understand'
+            },
+            { label: 'Something else', value: 'Something else' }
           ]}
           submitFeedback={submitFeedback}
         />
@@ -37,6 +44,7 @@ export function categories({ type, submitFeedback }) {
           leadText={`Tell us more about what's happening${
             type !== 'page' ? ` with this ${type}` : ''
           }.`}
+          // NOTE: changing the `value` will affect reporting in Mode and Sentry
           options={{
             "Something is incorrect or doesn't work": {
               question: `What is incorrect or doesn't work and where on the ${genericType} does it appear?`,

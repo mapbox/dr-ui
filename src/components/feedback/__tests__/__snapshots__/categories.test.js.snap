@@ -7,10 +7,22 @@ Object {
       leadText="Tell us what you like about this page."
       options={
         Array [
-          "I found what I need",
-          "The information is accurate",
-          "The page is easy to understand",
-          "Something else",
+          Object {
+            "label": "I found what I need",
+            "value": "I found what I need",
+          },
+          Object {
+            "label": "The information is accurate",
+            "value": "The information is accurate",
+          },
+          Object {
+            "label": "The page is easy to understand",
+            "value": "Easy to understand",
+          },
+          Object {
+            "label": "Something else",
+            "value": "Something else",
+          },
         ]
       }
       placeholder="What did you like?"
@@ -63,10 +75,22 @@ Object {
       leadText="Tell us what you like about this example."
       options={
         Array [
-          "I found what I need",
-          "The information is accurate",
-          "The example is easy to understand",
-          "Something else",
+          Object {
+            "label": "I found what I need",
+            "value": "I found what I need",
+          },
+          Object {
+            "label": "The information is accurate",
+            "value": "The information is accurate",
+          },
+          Object {
+            "label": "The example is easy to understand",
+            "value": "Easy to understand",
+          },
+          Object {
+            "label": "Something else",
+            "value": "Something else",
+          },
         ]
       }
       placeholder="What did you like?"
@@ -119,10 +143,22 @@ Object {
       leadText="Tell us what you like about this section on AccessToken."
       options={
         Array [
-          "I found what I need",
-          "The information is accurate",
-          "The content is easy to understand",
-          "Something else",
+          Object {
+            "label": "I found what I need",
+            "value": "I found what I need",
+          },
+          Object {
+            "label": "The information is accurate",
+            "value": "The information is accurate",
+          },
+          Object {
+            "label": "The content is easy to understand",
+            "value": "Easy to understand",
+          },
+          Object {
+            "label": "Something else",
+            "value": "Something else",
+          },
         ]
       }
       placeholder="What did you like?"

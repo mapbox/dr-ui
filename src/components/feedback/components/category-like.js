@@ -41,10 +41,7 @@ export default class CategoryLike extends React.Component {
           themeCheckbox="mr6 inline-block checkbox--gray checkbox--s-label"
           id="feedback-category-like"
           onChange={this.handleChange}
-          options={options.map((option) => ({
-            value: option,
-            label: option
-          }))}
+          options={options}
         />
         {value.length > 0 && (
           <FeedbackTextarea
