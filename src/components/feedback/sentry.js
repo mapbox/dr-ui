@@ -8,7 +8,8 @@ export function sendToSentry({ state, props }) {
   const { site, section, preferredLanguage, feedbackSentryDsn } = props;
   // If feedbackSentryDsn is set to false, do not submit to Sentry
   if (feedbackSentryDsn === false) return;
-  const { helpful, user, feedback, category, categoryType } = state;
+  const { helpful, user, feedback, category, categoryType, anonymousId } =
+    state;
   const referrer = 'referrer' in document;
   // initialize Sentry project to send the feedback
   Sentry.init({
@@ -46,6 +47,8 @@ export function sendToSentry({ state, props }) {
     if (user && user.plan && user.plan.id) scope.setTag('plan', user.plan.id);
     // set the message as "info" (rather than warning)
     scope.setLevel('info');
+    // create fingerprint to prevent feedback from grouping together, important for text-less positive feedback
+    scope.setFingerprint([site, category, anonymousId, new Date()]);
     // capture the feedback as a message
     Sentry.captureMessage(feedback);
   });

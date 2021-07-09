@@ -14,7 +14,11 @@ import * as Sentry from '@sentry/browser';
 jest.mock('@sentry/browser');
 jest.mock('../forward-event');
 
-const SentryMockScope = { setTag: jest.fn(), setLevel: jest.fn() };
+const SentryMockScope = {
+  setTag: jest.fn(),
+  setLevel: jest.fn(),
+  setFingerprint: jest.fn()
+};
 Sentry.withScope.mockImplementation((callback) => {
   callback(SentryMockScope);
 });
@@ -164,6 +168,12 @@ describe('Workflow', () => {
         ['helpful', true]
       ]);
       expect(SentryMockScope.setLevel).toHaveBeenCalledWith('info');
+      expect(SentryMockScope.setFingerprint).toHaveBeenCalledWith([
+        'dr-ui',
+        'I like this page',
+        expect.anything(),
+        expect.any(Date)
+      ]);
       expect(Sentry.captureMessage).toHaveBeenCalledWith(
         "I found a sandwich and I want to know why there isn't any mayonnaise."
       );
@@ -273,6 +283,12 @@ describe('Workflow, Something else', () => {
         ['helpful', true]
       ]);
       expect(SentryMockScope.setLevel).toHaveBeenCalledWith('info');
+      expect(SentryMockScope.setFingerprint).toHaveBeenCalledWith([
+        'dr-ui',
+        'I like this page',
+        expect.anything(),
+        expect.any(Date)
+      ]);
       expect(Sentry.captureMessage).toHaveBeenCalledWith(
         "I found a sandwich and I want to know why there isn't any mayonnaise."
       );
@@ -378,6 +394,12 @@ describe('Workflow, Select multiple; do not submit text feedback', () => {
         ['helpful', true]
       ]);
       expect(SentryMockScope.setLevel).toHaveBeenCalledWith('info');
+      expect(SentryMockScope.setFingerprint).toHaveBeenCalledWith([
+        'dr-ui',
+        'I like this page',
+        expect.anything(),
+        expect.any(Date)
+      ]);
       expect(Sentry.captureMessage).toHaveBeenCalledWith('');
     });
 

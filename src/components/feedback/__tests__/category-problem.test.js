@@ -14,7 +14,11 @@ import * as Sentry from '@sentry/browser';
 jest.mock('@sentry/browser');
 jest.mock('../forward-event');
 
-const SentryMockScope = { setTag: jest.fn(), setLevel: jest.fn() };
+const SentryMockScope = {
+  setTag: jest.fn(),
+  setLevel: jest.fn(),
+  setFingerprint: jest.fn()
+};
 Sentry.withScope.mockImplementation((callback) => {
   callback(SentryMockScope);
 });
@@ -173,6 +177,12 @@ describe('Workflow', () => {
         ['helpful', false]
       ]);
       expect(SentryMockScope.setLevel).toHaveBeenCalledWith('info');
+      expect(SentryMockScope.setFingerprint).toHaveBeenCalledWith([
+        'dr-ui',
+        'Report a problem',
+        expect.anything(),
+        expect.any(Date)
+      ]);
       expect(Sentry.captureMessage).toHaveBeenCalledWith(
         "I found a sandwich and I want to know why there isn't any mayonnaise."
       );
