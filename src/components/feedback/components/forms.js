@@ -5,6 +5,7 @@ import classnames from 'classnames';
 
 // character limit for the feedback textarea
 export const feedbackLimit = 1000;
+export const feedbackMinimum = 3;
 
 // Textarea for the user to submit text feedback
 export class FeedbackTextarea extends React.PureComponent {
@@ -27,7 +28,8 @@ export class FeedbackTextarea extends React.PureComponent {
   }
 
   render() {
-    const { id, label, placeholder, value } = this.props;
+    const { id, label, placeholder, value, validationErrorMinimum } =
+      this.props;
     const feedbackLength = this.state.feedback
       ? feedbackLimit - this.state.feedback.length
       : feedbackLimit;
@@ -43,7 +45,8 @@ export class FeedbackTextarea extends React.PureComponent {
             onChange={this.handleFeedback}
             placeholder={placeholder}
             validationError={
-              this.isOverLimit() ? 'Your feedback is over the limit' : ''
+              (validationErrorMinimum ? 'Tell us more' : '') ||
+              (this.isOverLimit() ? 'Your feedback is over the limit' : '')
             }
           />
           <div
@@ -68,7 +71,8 @@ FeedbackTextarea.propTypes = {
   onChange: PropTypes.func.isRequired,
   label: PropTypes.string,
   placeholder: PropTypes.string,
-  value: PropTypes.string
+  value: PropTypes.string,
+  validationErrorMinimum: PropTypes.bool.isRequired
 };
 
 export class FeedbackButton extends React.PureComponent {

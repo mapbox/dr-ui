@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FeedbackTextarea, FeedbackButton } from './forms.js';
+import { FeedbackTextarea, FeedbackButton, feedbackMinimum } from './forms.js';
 import ControlRadioSet from '@mapbox/mr-ui/control-radio-set';
 
 export default class CategoryProblem extends React.PureComponent {
@@ -9,7 +9,8 @@ export default class CategoryProblem extends React.PureComponent {
     this.state = {
       value: undefined,
       feedback: undefined,
-      overLimit: false
+      overLimit: false,
+      validationErrorMinimum: false
     };
     this.handleRadios = this.handleRadios.bind(this);
     this.handleFeedback = this.handleFeedback.bind(this);
@@ -18,19 +19,32 @@ export default class CategoryProblem extends React.PureComponent {
   handleRadios(value) {
     this.setState({ value });
   }
-  handleFeedback({ value, overLimit }) {
-    this.setState({ feedback: value, overLimit });
-  }
 
-  submit() {
-    this.props.submitFeedback({
-      categoryType: this.state.value,
-      feedback: this.state.feedback
+  handleFeedback({ value, overLimit }) {
+    const { validationErrorMinimum, feedback } = this.state;
+    this.setState({ feedback: value, overLimit }, () => {
+      // remove validation error as the user is typing and reaches feedbackMinimum
+      if (validationErrorMinimum && feedback.length >= feedbackMinimum) {
+        this.setState({ validationErrorMinimum: false });
+      }
     });
   }
 
+  submit() {
+    const { feedback, value } = this.state;
+    const { submitFeedback } = this.props;
+    if (feedback.trim().length < feedbackMinimum) {
+      this.setState({ validationErrorMinimum: true });
+    } else {
+      submitFeedback({
+        categoryType: value,
+        feedback
+      });
+    }
+  }
+
   render() {
-    const { value, feedback, overLimit } = this.state;
+    const { value, feedback, overLimit, validationErrorMinimum } = this.state;
     const { options, leadText } = this.props;
     return (
       <>
@@ -55,6 +69,7 @@ export default class CategoryProblem extends React.PureComponent {
               value={feedback}
               onChange={this.handleFeedback}
               placeholder={options[value].placeholder}
+              validationErrorMinimum={validationErrorMinimum}
             />
             <FeedbackButton
               onClick={this.submit}

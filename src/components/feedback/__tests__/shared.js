@@ -28,6 +28,23 @@ export function textTooLong(feedback) {
   ).toBeTruthy();
 }
 
+// Asserts that the textarea will show an error message when the number of characters
+// has not met the minimum
+export function textTooShort(feedback) {
+  const textarea = feedback.find('textarea');
+  const submitButton = feedback.find('#feedback-submit-button');
+  textarea.simulate('change', {
+    target: {
+      value: ' '
+    }
+  });
+  submitButton.simulate('click');
+  expect(feedback.find('#feedback-length').text()).toEqual('999');
+  expect(feedback.find('div[role="alert"] div').text()).toEqual(
+    'Tell us more.'
+  );
+}
+
 export function textJustRight(feedback) {
   const textarea = feedback.find('textarea');
   textarea.simulate('change', {

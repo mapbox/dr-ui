@@ -152,6 +152,7 @@ exports[`Workflow 3 - Enter feedback Cannot submit feedback yet 1`] = `
                 label="What about this page is confusing? How can we improve the content?"
                 onChange={[Function]}
                 placeholder="Let us know what is confusing."
+                validationErrorMinimum={false}
               >
                 <div
                   className="relative"

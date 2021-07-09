@@ -2,7 +2,12 @@ import React from 'react';
 import Feedback from '../feedback';
 import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import { expectThankYou, textTooLong, textJustRight } from './shared';
+import {
+  expectThankYou,
+  textTooLong,
+  textJustRight,
+  textTooShort
+} from './shared';
 import forwardEvent from '../forward-event';
 import * as Sentry from '@sentry/browser';
 
@@ -235,6 +240,7 @@ describe('Workflow, Something else', () => {
 
   describe('2 - Enter text feedback', () => {
     test('Text over limit', () => textTooLong(feedback));
+    test('Text under minimum', () => textTooShort(feedback));
     test('Text under limit', () => textJustRight(feedback));
   });
 

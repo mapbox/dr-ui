@@ -152,6 +152,7 @@ exports[`Workflow with logged in user information 2 - Something is confusing Che
                 label="What about this page is confusing? How can we improve the content?"
                 onChange={[Function]}
                 placeholder="Let us know what is confusing."
+                validationErrorMinimum={false}
               >
                 <div
                   className="relative"

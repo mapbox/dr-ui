@@ -1,28 +1,41 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FeedbackTextarea, FeedbackButton } from './forms.js';
+import { FeedbackTextarea, FeedbackButton, feedbackMinimum } from './forms.js';
 
 export default class CategoryConfusing extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
       feedback: undefined,
-      overLimit: false
+      overLimit: false,
+      validationErrorMinimum: false
     };
     this.handleFeedback = this.handleFeedback.bind(this);
     this.submit = this.submit.bind(this);
   }
 
   handleFeedback({ value, overLimit }) {
-    this.setState({ feedback: value, overLimit });
+    const { validationErrorMinimum, feedback } = this.state;
+    this.setState({ feedback: value, overLimit }, () => {
+      // remove validation error as the user is typing and reaches feedbackMinimum
+      if (validationErrorMinimum && feedback.length >= feedbackMinimum) {
+        this.setState({ validationErrorMinimum: false });
+      }
+    });
   }
 
   submit() {
-    this.props.submitFeedback({ feedback: this.state.feedback });
+    const { feedback } = this.state;
+    const { submitFeedback } = this.props;
+    if (feedback.trim().length < feedbackMinimum) {
+      this.setState({ validationErrorMinimum: true });
+    } else {
+      submitFeedback({ feedback });
+    }
   }
 
   render() {
-    const { feedback, overLimit } = this.state;
+    const { feedback, overLimit, validationErrorMinimum } = this.state;
     const { option, placeholder } = this.props;
     return (
       <>
@@ -32,6 +45,7 @@ export default class CategoryConfusing extends React.PureComponent {
           value={feedback}
           onChange={this.handleFeedback}
           placeholder={placeholder}
+          validationErrorMinimum={validationErrorMinimum}
         />
         <FeedbackButton
           onClick={this.submit}

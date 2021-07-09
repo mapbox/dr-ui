@@ -1,12 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FeedbackTextarea, FeedbackButton } from './forms.js';
+import { FeedbackTextarea, FeedbackButton, feedbackMinimum } from './forms.js';
 import ControlCheckboxSet from '@mapbox/mr-ui/control-checkbox-set';
 
 export default class CategoryLike extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { value: [], feedback: '', overLimit: false };
+    this.state = {
+      value: [],
+      feedback: '',
+      overLimit: false,
+      validationErrorMinimum: false
+    };
     this.handleChange = this.handleChange.bind(this);
     this.handleFeedback = this.handleFeedback.bind(this);
     this.submit = this.submit.bind(this);
@@ -17,21 +22,39 @@ export default class CategoryLike extends React.Component {
   }
 
   handleFeedback({ value, overLimit }) {
-    this.setState({ feedback: value, overLimit });
-  }
-
-  submit() {
-    this.props.submitFeedback({
-      categoryType: this.state.value.join(','),
-      feedback: this.state.feedback
+    const { validationErrorMinimum, feedback } = this.state;
+    this.setState({ feedback: value, overLimit }, () => {
+      // remove validation error as the user is typing and reaches feedbackMinimum
+      if (validationErrorMinimum && feedback.length >= feedbackMinimum) {
+        this.setState({ validationErrorMinimum: false });
+      }
     });
   }
 
+  submit() {
+    const { feedback, value } = this.state;
+    const { submitFeedback } = this.props;
+    // textarea length validated on when "Something else" is the only selected type
+    if (feedback.trim().length < feedbackMinimum && this.onlySomethingElse()) {
+      this.setState({ validationErrorMinimum: true });
+    } else {
+      submitFeedback({
+        categoryType: value.join(','),
+        feedback: feedback
+      });
+    }
+  }
+
+  onlySomethingElse() {
+    return (
+      this.state.value.length === 1 && this.state.value[0] === 'Something else'
+    );
+  }
+
   render() {
-    const { value, feedback, overLimit } = this.state;
+    const { value, feedback, overLimit, validationErrorMinimum } = this.state;
     const { options, leadText, placeholder } = this.props;
-    const onlySomethingElse =
-      value.length === 1 && value[0] === 'Something else';
+
     return (
       <>
         <p>{leadText}</p>
@@ -49,12 +72,15 @@ export default class CategoryLike extends React.Component {
             onChange={this.handleFeedback}
             id="feedback-category-like-textarea"
             placeholder={placeholder}
+            validationErrorMinimum={validationErrorMinimum}
           />
         )}
         <FeedbackButton
           onClick={this.submit}
           disabled={
-            !value.length || (!feedback && onlySomethingElse) || overLimit
+            !value.length ||
+            (!feedback && this.onlySomethingElse()) ||
+            overLimit
           }
         />
       </>
