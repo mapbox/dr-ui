@@ -8,7 +8,7 @@ import * as Sentry from '@sentry/browser';
 jest.mock('@sentry/browser');
 
 const SentryMockScope = { setTag: jest.fn(), setLevel: jest.fn() };
-Sentry.configureScope.mockImplementation((callback) => {
+Sentry.withScope.mockImplementation((callback) => {
   callback(SentryMockScope);
 });
 

@@ -10,7 +10,7 @@ jest.mock('@sentry/browser');
 jest.mock('../forward-event');
 
 const SentryMockScope = { setTag: jest.fn(), setLevel: jest.fn() };
-Sentry.configureScope.mockImplementation((callback) => {
+Sentry.withScope.mockImplementation((callback) => {
   callback(SentryMockScope);
 });
 

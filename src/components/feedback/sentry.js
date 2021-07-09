@@ -27,7 +27,7 @@ export function sendToSentry({ state, props }) {
     });
   }
   // configure data to send with feeedback
-  Sentry.configureScope((scope) => {
+  Sentry.withScope((scope) => {
     // set tag for site name
     scope.setTag('site', site);
     // set tag for category
@@ -46,7 +46,7 @@ export function sendToSentry({ state, props }) {
     if (user && user.plan && user.plan.id) scope.setTag('plan', user.plan.id);
     // set the message as "info" (rather than warning)
     scope.setLevel('info');
+    // capture the feedback as a message
+    Sentry.captureMessage(feedback);
   });
-  // capture the feedback as a message
-  Sentry.captureMessage(feedback);
 }
