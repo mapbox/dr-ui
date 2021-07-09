@@ -54,6 +54,7 @@ describe('Workflow', () => {
             categoryType: undefined,
             contactSupport: false,
             environment: 'staging',
+            exited: false,
             helpful: undefined,
             page: { hash: '#lnglat', pathname: '/mapbox-gl-js/api/' },
             section: undefined,
@@ -88,6 +89,7 @@ describe('Workflow', () => {
             categoryType: undefined,
             contactSupport: false,
             environment: 'staging',
+            exited: false,
             helpful: false,
             page: { hash: '#lnglat', pathname: '/mapbox-gl-js/api/' },
             section: undefined,
@@ -153,6 +155,7 @@ describe('Workflow', () => {
             category: 'Something is confusing',
             contactSupport: false,
             environment: 'staging',
+            exited: false,
             feedback:
               "I found a sandwich and I want to know why there isn't any mayonnaise.",
             helpful: false,

@@ -23,7 +23,9 @@ const INITIAL_STATE = {
   categoryType: undefined, // the select feedback category type
   feedback: undefined, // the value of the textarea
   sentFeedback: false, // the user submitted feedback
-  contactSupport: false // the users clicked contact support
+  contactSupport: false, // the users clicked contact support
+  helpful: undefined, // helpfulness rating as assigned by the selected category
+  exited: false // if true, the user clicked "close" before submitting feedback
 };
 
 class Feedback extends React.PureComponent {
@@ -107,6 +109,12 @@ class Feedback extends React.PureComponent {
 
   // User closes feedback
   closeFeedback() {
+    const { state, props } = this;
+    sendToSegment({
+      state: { ...state, exited: state.sentFeedback ? false : true },
+      props
+    });
+    // reset state
     this.setState({ ...INITIAL_STATE });
   }
 

@@ -54,6 +54,7 @@ describe('Workflow with logged in user information', () => {
             categoryType: undefined,
             contactSupport: false,
             environment: 'staging',
+            exited: false,
             helpful: undefined,
             page: { hash: undefined, pathname: '/mapbox-gl-js/api/' },
             plan: 'starter',
@@ -96,6 +97,7 @@ describe('Workflow with logged in user information', () => {
             categoryType: undefined,
             contactSupport: false,
             environment: 'staging',
+            exited: false,
             helpful: false,
             page: { hash: undefined, pathname: '/mapbox-gl-js/api/' },
             plan: 'starter',
@@ -165,6 +167,7 @@ describe('Workflow with logged in user information', () => {
             feedback:
               "I found a sandwich and I want to know why there isn't any mayonnaise.",
             environment: 'staging',
+            exited: false,
             helpful: false,
             page: { hash: undefined, pathname: '/mapbox-gl-js/api/' },
             plan: 'starter',

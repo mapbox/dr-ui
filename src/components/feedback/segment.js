@@ -18,7 +18,8 @@ function createSegmentEvent({ state, props }) {
     sessionId,
     category,
     categoryType,
-    contactSupport
+    contactSupport,
+    exited
   } = state;
   const { site, section, location } = props;
   // set user if available else set anonymousId (needed for forward-event request)
@@ -41,6 +42,8 @@ function createSegmentEvent({ state, props }) {
       contactSupport,
       // text feedback, if available
       ...(feedback && { feedback: feedback }),
+      // if true, the user exited/closed feedback before submitting
+      exited,
       // name of current site (important for filtering in Mode)
       site,
       // (optional) name of section for longer pagers, helpful for fitering in Mode and identifying section areas
