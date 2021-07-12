@@ -41,7 +41,7 @@ export function textTooShort(feedback) {
   submitButton.simulate('click');
   expect(feedback.find('#feedback-length').text()).toEqual('999');
   expect(feedback.find('div[role="alert"] div').text()).toEqual(
-    'Tell us more.'
+    'Tell us more!'
   );
 }
 

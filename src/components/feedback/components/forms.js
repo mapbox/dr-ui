@@ -45,7 +45,7 @@ export class FeedbackTextarea extends React.PureComponent {
             onChange={this.handleFeedback}
             placeholder={placeholder}
             validationError={
-              (validationErrorMinimum ? 'Tell us more' : '') ||
+              (validationErrorMinimum ? 'Tell us more!' : '') ||
               (this.isOverLimit() ? 'Your feedback is over the limit' : '')
             }
           />
