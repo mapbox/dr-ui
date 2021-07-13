@@ -106,7 +106,7 @@ export default class Basic extends React.PureComponent {
             }
           ]
         }}
-      ></PageLayout>
+      />
     );
   }
 }
