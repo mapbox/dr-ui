@@ -222,13 +222,13 @@ NavigationAccordion.propTypes = {
         PropTypes.shape({
           title: PropTypes.string.isRequired,
           path: PropTypes.string.isRequired,
-          id: PropTypes.string.isRequired,
+          id: PropTypes.string,
           tag: PropTypes.string,
           subPages: PropTypes.arrayOf(
             PropTypes.shape({
               title: PropTypes.string.isRequired,
               path: PropTypes.string.isRequired,
-              id: PropTypes.string.isRequired
+              id: PropTypes.string
             })
           )
         })
