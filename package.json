@@ -98,9 +98,9 @@
     "unist-util-visit": "^2.0.3"
   },
   "dependencies": {
-    "@elastic/react-search-ui": "^1.5.1",
-    "@elastic/react-search-ui-views": "^1.5.1",
-    "@elastic/search-ui-site-search-connector": "^1.5.1",
+    "@elastic/react-search-ui": "^1.7.0",
+    "@elastic/react-search-ui-views": "^1.7.0",
+    "@elastic/search-ui-site-search-connector": "^1.7.0",
     "@mapbox/mapbox-gl-supported": "^2.0.0",
     "@mapbox/mr-ui": "^0.10.0",
     "@sentry/browser": "6.3.6",
