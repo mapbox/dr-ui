@@ -2,9 +2,11 @@
 
 ## Unreleased
 
+- 🚨 Redesign `Feedback` component to introduce categories. [#462](https://github.com/mapbox/dr-ui/pull/462)
 - Update prismjs, rehype-prism. [#466](https://github.com/mapbox/dr-ui/pull/466)
 - Fix `Video` to use a promise when handling `play()`. [#459](https://github.com/mapbox/dr-ui/pull/459)
-- Redesign `Feedback` component to introduce categories. [#462](https://github.com/mapbox/dr-ui/pull/462)
+- Update search-ui dependencies. [#467](https://github.com/mapbox/dr-ui/pull/467)
+- Update devDependencies. [#468](https://github.com/mapbox/dr-ui/pull/468)
 
 ## 4.0.2
 
