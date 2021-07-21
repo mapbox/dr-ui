@@ -9,3 +9,4 @@ docs/src/pages/changelog.md
 docs/src/data/components.js
 docs/src/prism.css
 _site*
+.eslintcache
