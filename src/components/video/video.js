@@ -2,6 +2,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { VimeoPlayImage } from '../related-page/vimeo';
+import * as Sentry from '@sentry/browser';
+
 /*
  * The state defines the user's preferences for the video settings (autoplay and loop).
  * The props for Video will only be taken into account if the user does not prefer reduced motion.
@@ -58,7 +60,12 @@ export default class Video extends React.PureComponent {
 
   // play the video
   playVideo = () => {
-    this.video.current.play();
+    const playPromise = this.video.current.play();
+    if (playPromise !== undefined) {
+      playPromise
+        .then(() => this.setState({ isPlaying: true }))
+        .catch((error) => Sentry.captureException(error));
+    }
   };
 
   render() {

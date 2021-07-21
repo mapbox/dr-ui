@@ -1,5 +1,16 @@
 # Changelog
 
+## Unreleased
+
+- Update prismjs, rehype-prism. [#466](https://github.com/mapbox/dr-ui/pull/466)
+- Fix `Video` to use a promise when handling `play()`. [#459](https://github.com/mapbox/dr-ui/pull/459)
+- Update search-ui dependencies. [#467](https://github.com/mapbox/dr-ui/pull/467)
+- Update devDependencies. [#468](https://github.com/mapbox/dr-ui/pull/468)
+
+## 4.0.2
+
+- Fix `sortVersions` for prerelease versions greater than 10. [#464](https://github.com/mapbox/dr-ui/pull/464)
+
 ## 4.0.1
 
 - In `Search` component, fix logic to prevent queries with results from being sent to Sentry.

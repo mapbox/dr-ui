@@ -1,8 +1,5 @@
 const compareVersions = require('compare-versions');
 
-const sortBy = (key) => (a, b) =>
-  a[key] > b[key] ? 1 : b[key] > a[key] ? -1 : 0;
-
 export function sortVersions(versions) {
   // make sure versions are in order
   const allVersionsOrdered = versions.sort(compareVersions).reverse();
@@ -40,7 +37,9 @@ export function sortVersions(versions) {
   const newestPreRelease =
     sortPreReleases &&
     sortPreReleases
-      .sort(sortBy('version'))
+      .sort((a, b) => {
+        return compareVersions(a.version, b.version);
+      })
       .reverse()
       .reduce((arr, v) => {
         // do not push pre releases of lastest stable
