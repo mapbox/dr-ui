@@ -6,6 +6,7 @@
 - Fix `Video` to use a promise when handling `play()`. [#459](https://github.com/mapbox/dr-ui/pull/459)
 - Update search-ui dependencies. [#467](https://github.com/mapbox/dr-ui/pull/467)
 - Update devDependencies. [#468](https://github.com/mapbox/dr-ui/pull/468)
+- Add `babel-plugin-transform-react-remove-prop-types` to babel.config.js and use ES6 modules. [#456](https://github.com/mapbox/dr-ui/pull/456)
 
 ## 4.0.2
 
