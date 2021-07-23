@@ -37,7 +37,9 @@ export function sortVersions(versions) {
   const newestPreRelease =
     sortPreReleases &&
     sortPreReleases
-      .sort((a, b) => { return compareVersions(a.version, b.version); })
+      .sort((a, b) => {
+        return compareVersions(a.version, b.version);
+      })
       .reverse()
       .reduce((arr, v) => {
         // do not push pre releases of lastest stable
