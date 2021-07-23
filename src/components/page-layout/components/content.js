@@ -80,7 +80,7 @@ export class ContentWrapper extends React.PureComponent {
       >
         {this.props.customAside ? this.props.customAside : undefined}
         {showToc && headings && headings.length > 0 && (
-          <OnThisPage headings={headings} themeWrapper="mb36-mxl mb18" />
+          <OnThisPage headings={headings} themeWrapper="mb24-mxl mb18" />
         )}
         {showFeedback && (
           <div className="none block-mxl">{this.renderFeedback()}</div>

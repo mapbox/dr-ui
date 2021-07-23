@@ -1557,7 +1557,7 @@ Array [
               >
                 <nav
                   aria-labelledby="on-this-page"
-                  className="dr-ui--on-this-page mb36-mxl mb18"
+                  className="dr-ui--on-this-page mb24-mxl mb18"
                 >
                   <h2
                     className="unprose txt-m txt-bold mb6"
