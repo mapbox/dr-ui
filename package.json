@@ -1,6 +1,6 @@
 {
   "name": "@mapbox/dr-ui",
-  "version": "4.0.2",
+  "version": "4.1.0-alpha.0",
   "description": "Mapbox frontend tools for documentation websites.",
   "main": "index.js",
   "scripts": {
