@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 import * as Sentry from '@sentry/browser';
+import { Integrations as TracingIntegrations } from '@sentry/tracing';
 import env from './env';
 
 export default class AnalyticsShell extends React.PureComponent {
@@ -11,6 +12,7 @@ export default class AnalyticsShell extends React.PureComponent {
       disableSentry,
       webAnalytics,
       sentry,
+      sentryPerformance,
       mbxMetadata
     } = this.props;
     // set mapbox metadata before initializing analytics
@@ -25,7 +27,8 @@ export default class AnalyticsShell extends React.PureComponent {
     if (!disableSentry) {
       Sentry.init({
         ...sentry,
-        environment: env()
+        environment: env(),
+        ...sentryPerformance
       });
     }
   }
@@ -59,6 +62,12 @@ AnalyticsShell.defaultProps = {
   sentry: {
     dsn: 'https://6ba8cfeeedad4fb7acb8576f0fd6e266@sentry.io/1384508'
   },
+  sentryPerformance: {
+    // This enables automatic instrumentation (highly recommended)
+    integrations: [new TracingIntegrations.BrowserTracing()],
+    // To set a uniform sample rate
+    tracesSampleRate: 0.2
+  },
   // do not disable web-analytics by default
   disableWebAnalytics: false,
   // default web-analytics options, disable Drift by default
@@ -81,6 +90,11 @@ AnalyticsShell.propTypes = {
   /** Customize [Sentry options](https://docs.sentry.io/error-reporting/configuration/?platform=browser). */
   sentry: PropTypes.shape({
     dsn: PropTypes.string
+  }),
+  /** Customize [Sentry performance monitoring options](https://docs.sentry.io/platforms/javascript/performance/). To disable tracing, set this value as an empty object: `sentryPerformance={{}}`*/
+  sentryPerformance: PropTypes.shape({
+    integrations: PropTypes.array,
+    tracesSampleRate: PropTypes.number
   }),
   /** Customize [web-analytics options](https://github.com/mapbox/web-analytics). */
   webAnalytics: PropTypes.object,
