@@ -87,19 +87,19 @@ AnalyticsShell.propTypes = {
   }).isRequired,
   /** Production website domain. */
   domain: PropTypes.string,
+  /** If `true`, Sentry will not initialize. */
+  disableSentry: PropTypes.bool,
   /** Customize [Sentry options](https://docs.sentry.io/error-reporting/configuration/?platform=browser). */
   sentry: PropTypes.shape({
     dsn: PropTypes.string
   }),
-  /** Customize [Sentry performance monitoring options](https://docs.sentry.io/platforms/javascript/performance/). To disable tracing, set this value as an empty object: `sentryPerformance={{}}`*/
+  /** Customize [Sentry performance monitoring options](https://docs.sentry.io/platforms/javascript/performance/). To disable performance, set this value as an empty object: `sentryPerformance={{}}`*/
   sentryPerformance: PropTypes.shape({
     integrations: PropTypes.array,
     tracesSampleRate: PropTypes.number
   }),
   /** Customize [web-analytics options](https://github.com/mapbox/web-analytics). */
   webAnalytics: PropTypes.object,
-  /** If `true`, Sentry will not initialize. */
-  disableSentry: PropTypes.bool,
   /** If `true`, Mapbox analytics (`initializeMapboxAnalytics`) will not initialize. */
   disableWebAnalytics: PropTypes.bool,
   /** Object of properties to send to Segment */
