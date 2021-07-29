@@ -106,6 +106,7 @@
     "@mapbox/mapbox-gl-supported": "^2.0.0",
     "@mapbox/mr-ui": "^0.10.0",
     "@sentry/browser": "6.10.0",
+    "@sentry/tracing": "6.10.0",
     "classnames": "^2.3.1",
     "compare-versions": "^3.6.0",
     "debounce": "^1.2.1",
