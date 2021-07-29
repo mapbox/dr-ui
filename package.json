@@ -1,6 +1,6 @@
 {
   "name": "@mapbox/dr-ui",
-  "version": "4.1.0-alpha.1",
+  "version": "4.1.0-alpha.2",
   "description": "Mapbox frontend tools for documentation websites.",
   "main": "index.js",
   "scripts": {
@@ -105,7 +105,8 @@
     "@elastic/search-ui-site-search-connector": "^1.7.0",
     "@mapbox/mapbox-gl-supported": "^2.0.0",
     "@mapbox/mr-ui": "^0.10.0",
-    "@sentry/browser": "6.3.6",
+    "@sentry/browser": "6.10.0",
+    "@sentry/tracing": "6.10.0",
     "classnames": "^2.3.1",
     "compare-versions": "^3.6.0",
     "debounce": "^1.2.1",
@@ -125,7 +126,7 @@
   "peerDependencies": {
     "@mapbox/mr-ui": "^0.10.0",
     "@mapbox/mbx-assembly": "^0.31.0",
-    "@sentry/browser": "6.3.6",
+    "@sentry/browser": "6.10.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   },
