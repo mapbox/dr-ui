@@ -104,33 +104,8 @@ describe('Click "close" after submitting feedback', () => {
     const close = feedback.find('button#feedback-close-button');
     close.simulate('click');
   });
-  test('Send data to Segment', () => {
-    expect(forwardEvent).toHaveBeenCalledWith(
-      {
-        anonymousId: '123',
-        event: 'Sent docs feedback',
-        properties: {
-          anonymousId: '123',
-          category: 'Something is confusing',
-          categoryType: undefined,
-          contactSupport: false,
-          environment: 'staging',
-          exited: false, // This is false because they did not exit early
-          feedback: 'I do not understand',
-          helpful: false,
-          page: {
-            hash: '#lnglat',
-            pathname: '/mapbox-gl-js/api/'
-          },
-          section: undefined,
-          sessionId: undefined,
-          site: 'dr-ui',
-          userId: undefined
-        }
-      },
-      { production: '', staging: '' },
-      expect.any(Function)
-    );
+  test('Do not send data to Segment after close', () => {
+    expect(forwardEvent).not.toHaveBeenCalledWith();
   });
   test('Reset state', () => {
     expect(feedback.state()).toEqual({

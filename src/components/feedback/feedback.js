@@ -110,10 +110,14 @@ class Feedback extends React.PureComponent {
   // User closes feedback
   closeFeedback() {
     const { state, props } = this;
-    sendToSegment({
-      state: { ...state, exited: state.sentFeedback ? false : true },
-      props
-    });
+    // do not send to Segment if they sent feedback
+    // otherwise their data will get sent twice (once from submitFeedback and then again here)
+    if (!state.sentFeedback) {
+      sendToSegment({
+        state: { ...state, exited: true },
+        props
+      });
+    }
     // reset state
     this.setState({ ...INITIAL_STATE });
   }
