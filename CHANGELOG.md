@@ -9,6 +9,7 @@
 - Update devDependencies. [#468](https://github.com/mapbox/dr-ui/pull/468)
 - Add `babel-plugin-transform-react-remove-prop-types` to babel.config.js and use ES6 modules. [#456](https://github.com/mapbox/dr-ui/pull/456)
 - Add Sentry tracing to the `AnalyticsShell` with added `sentryPerformance` prop. [#469](https://github.com/mapbox/dr-ui/pull/469)
+- Make `sortVersions` a common JS module. [#470](https://github.com/mapbox/dr-ui/pull/470)
 
 ## 4.0.2
 
