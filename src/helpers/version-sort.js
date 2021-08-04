@@ -1,6 +1,6 @@
 const compareVersions = require('compare-versions');
 
-export function sortVersions(versions) {
+function sortVersions(versions) {
   // make sure versions are in order
   const allVersionsOrdered = versions.sort(compareVersions).reverse();
   // get the latest stable version
@@ -61,3 +61,7 @@ export function sortVersions(versions) {
     versionsToDisplay
   };
 }
+
+module.exports = {
+  sortVersions
+};
