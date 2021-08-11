@@ -1,6 +1,6 @@
 {
   "name": "@mapbox/dr-ui",
-  "version": "4.1.0-alpha.3",
+  "version": "4.2.0-beta.5",
   "description": "Mapbox frontend tools for documentation websites.",
   "main": "index.js",
   "scripts": {
@@ -40,7 +40,7 @@
     "@babel/core": "^7.14.8",
     "@babel/plugin-proposal-class-properties": "^7.14.5",
     "@babel/plugin-transform-modules-commonjs": "^7.14.5",
-    "@babel/preset-env": "^7.14.8",
+    "@babel/preset-env": "^7.14.9",
     "@babel/preset-react": "^7.14.5",
     "@mapbox/appropriate-images-react": "^2.1.0",
     "@mapbox/batfish": "^2.3.0",
@@ -105,8 +105,8 @@
     "@elastic/search-ui-site-search-connector": "^1.7.0",
     "@mapbox/mapbox-gl-supported": "^2.0.0",
     "@mapbox/mr-ui": "^0.10.0",
-    "@sentry/browser": "6.10.0",
-    "@sentry/tracing": "6.10.0",
+    "@sentry/browser": "6.11.0",
+    "@sentry/tracing": "6.11.0",
     "classnames": "^2.3.1",
     "compare-versions": "^3.6.0",
     "debounce": "^1.2.1",
@@ -121,12 +121,12 @@
     "remove-markdown": "^0.3.0",
     "slugify": "^1.5.0",
     "unified": "^9.2.1",
-    "uuid": "^3.4.0"
+    "uuid": "^8.3.2"
   },
   "peerDependencies": {
     "@mapbox/mr-ui": "^0.10.0",
     "@mapbox/mbx-assembly": "^0.31.0",
-    "@sentry/browser": "6.10.0",
+    "@sentry/browser": "6.11.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   },
