@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 4.1.0
 
 - 🚨 Redesign `Feedback` component to introduce categories. [#462](https://github.com/mapbox/dr-ui/pull/462)
 - Update prismjs, rehype-prism. [#466](https://github.com/mapbox/dr-ui/pull/466)
