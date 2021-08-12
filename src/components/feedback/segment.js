@@ -5,7 +5,9 @@ import env from '../analytics-shell/env';
 // Send the event to Segment with forward event
 export function sendToSegment({ state, props }) {
   const event = createSegmentEvent({ state, props });
-  forwardEvent(event, props.webhook, (err) => Sentry.captureException(err));
+  forwardEvent(event, props.webhook, (err) => {
+    if (err) Sentry.captureException(err);
+  });
 }
 
 // Creates event to send to Segment

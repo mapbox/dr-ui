@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.1.1
+
+- Fix error handling in `Feedback` component to only send error to Sentry if `forwardEvent` returns one.
+
 ## 4.1.0
 
 - 🚨 Redesign `Feedback` component to introduce categories. [#462](https://github.com/mapbox/dr-ui/pull/462)
