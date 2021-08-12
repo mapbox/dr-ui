@@ -2,7 +2,7 @@
 
 ## 4.1.1
 
-- Fix error handling in `Feedback` component to only send error to Sentry if `forwardEvent` returns one.
+- Fix error handling in `Feedback` component to only send error to Sentry if `forwardEvent` returns one. [#473](https://github.com/mapbox/dr-ui/pull/473)
 
 ## 4.1.0
 
