@@ -20,15 +20,19 @@ export default function forwardEvent(event, webhook, callback) {
   // then determines which webhook to post to
   const isProduction = /(^|\S+\.)mapbox\.com/.test(window.location.host);
   const url = isProduction ? webhook.production : webhook.staging;
-  if (!url) return handleError('forward-event missing POST url');
+
   // builds the xhr request to post the Segment event to the webhook
   const xhr = new XMLHttpRequest();
-  xhr.open('POST', url);
-  xhr.setRequestHeader('Accept', 'application/json');
-  xhr.setRequestHeader('Content-Type', 'application/json');
-  xhr.onerror = handleError;
-  xhr.onload = handleLoad;
-  xhr.send(JSON.stringify(event));
+  if (url) {
+    xhr.open('POST', url);
+    xhr.setRequestHeader('Accept', 'application/json');
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.onerror = handleError;
+    xhr.onload = handleLoad;
+    xhr.send(JSON.stringify(event));
+  } else {
+    handleError('forward-event missing POST url');
+  }
 
   // handles posting the Segment event to the webhook URL
   function handleLoad() {
@@ -48,7 +52,7 @@ export default function forwardEvent(event, webhook, callback) {
     const error = new Error('[' + xhr.status + ' HTTP error] ' + message);
     error.statusCode = xhr.status;
     error.response = xhr.response;
-    return handleError(error);
+    handleError(error);
   }
 
   // handles xhr error
