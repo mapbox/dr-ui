@@ -15,7 +15,7 @@ testCases.type = {
   component: Feedback,
   description: 'Change type',
   props: {
-    type: 'section',
+    type: 'section on AccessToken',
     site: 'dr-ui',
     webhook: {
       staging:
@@ -24,27 +24,6 @@ testCases.type = {
         'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook'
     },
     location: {}
-  }
-};
-
-testCases.noSentry = {
-  component: Feedback,
-  description: 'Does not send text feedback to Sentry',
-  props: {
-    site: 'dr-ui',
-    webhook: {
-      staging:
-        'https://evj5gwoa8j.execute-api.us-east-1.amazonaws.com/hookshot/webhook',
-      production:
-        'https://2n40g6lyc9.execute-api.us-east-1.amazonaws.com/hookshot/webhook'
-    },
-    feedbackSentryDsn: false,
-    preferredLanguage: 'Swift',
-    section: 'Maps',
-    location: {
-      pathname: '/dr-ui/api/',
-      hash: '#lnglat'
-    }
   }
 };
 

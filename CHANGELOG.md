@@ -1,12 +1,15 @@
 # Changelog
 
-## Unreleased
+## 4.1.0
 
+- 🚨 Redesign `Feedback` component to introduce categories. [#462](https://github.com/mapbox/dr-ui/pull/462)
 - Update prismjs, rehype-prism. [#466](https://github.com/mapbox/dr-ui/pull/466)
 - Fix `Video` to use a promise when handling `play()`. [#459](https://github.com/mapbox/dr-ui/pull/459)
 - Update search-ui dependencies. [#467](https://github.com/mapbox/dr-ui/pull/467)
 - Update devDependencies. [#468](https://github.com/mapbox/dr-ui/pull/468)
 - Add `babel-plugin-transform-react-remove-prop-types` to babel.config.js and use ES6 modules. [#456](https://github.com/mapbox/dr-ui/pull/456)
+- Add Sentry tracing to the `AnalyticsShell` with added `sentryPerformance` prop. [#469](https://github.com/mapbox/dr-ui/pull/469)
+- Make `sortVersions` a common JS module. [#470](https://github.com/mapbox/dr-ui/pull/470)
 
 ## 4.0.2
 

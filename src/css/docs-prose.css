@@ -34,8 +34,14 @@
 }
 
 /* make links darker in Note to improve color contrast */
+.dr-ui--feedback .link,
 .dr-ui--note a {
   color: #3151df !important;
+}
+
+/* improve contrast for color-gray on bg-gray-faint */
+.dr-ui--feedback .color-gray {
+  color: #577390 !important;
 }
 
 /* set code links to slightly darker blue */

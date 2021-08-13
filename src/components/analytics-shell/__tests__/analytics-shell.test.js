@@ -3,6 +3,7 @@ import renderer from 'react-test-renderer';
 import AnalyticsShell from '../analytics-shell';
 import { testCases } from './analytics-shell-test-cases.js';
 import * as Sentry from '@sentry/browser';
+import { Integrations as TracingIntegrations } from '@sentry/tracing';
 import { mount } from 'enzyme';
 
 jest.mock('@sentry/browser');
@@ -27,7 +28,9 @@ describe('AnalyticsShell', () => {
       mount(testCase.element);
       expect(Sentry.init).toHaveBeenCalledWith({
         dsn: 'https://6ba8cfeeedad4fb7acb8576f0fd6e266@sentry.io/1384508',
-        environment: 'staging'
+        environment: 'staging',
+        integrations: [new TracingIntegrations.BrowserTracing()],
+        tracesSampleRate: 0.2
       });
     });
 
@@ -64,6 +67,7 @@ describe('AnalyticsShell', () => {
     mount(
       <AnalyticsShell
         sentry={{ dsn: 'abcd!' }}
+        sentryPerformance={{}} // disable performance
         location={{ pathname: '/dr-ui/' }}
       >
         Hello world!
