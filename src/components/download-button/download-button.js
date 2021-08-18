@@ -3,8 +3,7 @@ import Button from '@mapbox/mr-ui/button';
 import IconText from '@mapbox/mr-ui/icon-text';
 import PropTypes from 'prop-types';
 
-// eslint-disable-next-line react/prefer-stateless-function
-export default class DownloadButton extends React.Component {
+export default class DownloadButton extends React.PureComponent {
   render() {
     const { fileType, href } = this.props;
     const fileName = href
