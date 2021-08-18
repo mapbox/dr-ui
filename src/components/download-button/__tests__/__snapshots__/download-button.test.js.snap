@@ -1,10 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DownloadButton Basic renders as expected 1`] = `
+exports[`DownloadButton Default DownloadButton renders as expected 1`] = `
 <a
   className="btn btn--blue round-full py12 px24 txt-s"
-  download="atlas-architecture-diagram"
-  href="../files/atlas-architecture-diagram.pdf"
+  href="../files/airports.csv"
 >
   <span
     className="flex-parent flex-parent--center-cross"
@@ -33,7 +32,7 @@ exports[`DownloadButton Basic renders as expected 1`] = `
       className="flex-child"
     >
       Download 
-      PDF
+      CSV
     </span>
   </span>
 </a>

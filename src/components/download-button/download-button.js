@@ -14,9 +14,11 @@ export default class DownloadButton extends React.Component {
       .replace(/\.\w+$/, '');
 
     if (fileType === 'CSV') {
-      <Button href={href}>
-        <IconText iconBefore="arrow-down">Download {fileType}</IconText>
-      </Button>;
+      return (
+        <Button href={href}>
+          <IconText iconBefore="arrow-down">Download {fileType}</IconText>
+        </Button>
+      );
     } else {
       return (
         <Button href={href} passthroughProps={{ download: fileName }}>
@@ -28,6 +30,6 @@ export default class DownloadButton extends React.Component {
 }
 
 DownloadButton.propTypes = {
-  href: PropTypes.string,
+  href: PropTypes.string.isRequired,
   fileType: PropTypes.oneOf(['CSV', 'PDF', 'PNG']).isRequired
 };

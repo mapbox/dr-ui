@@ -28,6 +28,7 @@
     "PageLayout",
     "OnThisPage",
     "BackToTopButton",
+    "DownloadButton",
     "OverviewHeader",
     "NavigationAccordion",
     "ProductMenu",
