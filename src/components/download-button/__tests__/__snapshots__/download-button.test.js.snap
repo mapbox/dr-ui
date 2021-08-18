@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DownloadButton Basic renders as expected 1`] = `
+<a
+  className="btn btn--blue round-full py12 px24 txt-s"
+  download="atlas-architecture-diagram"
+  href="../files/atlas-architecture-diagram.pdf"
+>
+  <span
+    className="flex-parent flex-parent--center-cross"
+  >
+    <span
+      className="flex-child mr3"
+    >
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 18,
+            "width": 18,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-arrow-down"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </span>
+    <span
+      className="flex-child"
+    >
+      Download 
+      PDF
+    </span>
+  </span>
+</a>
+`;
