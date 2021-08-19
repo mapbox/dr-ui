@@ -103,7 +103,7 @@ class Feedback extends React.PureComponent {
     this.setState({ categoryType, feedback, sentFeedback: true }, () => {
       const { state, props } = this;
       sendToSegment({ state, props });
-      sendToSentry({ state, props });
+      if (feedback) sendToSentry({ state, props });
     });
   }
 
