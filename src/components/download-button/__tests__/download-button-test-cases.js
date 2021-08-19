@@ -28,4 +28,17 @@ testCases.png = {
   }
 };
 
+testCases.prose = {
+  description: 'DownloadButton with prose class',
+  props: {
+    fileType: 'PNG',
+    href: '../files/shop-15.png'
+  },
+  element: (
+    <div className="prose">
+      <DownloadButton href="../files/shop-15.png" />
+    </div>
+  )
+};
+
 export { testCases, noRenderCases };
