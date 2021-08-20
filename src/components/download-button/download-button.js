@@ -30,5 +30,5 @@ export default class DownloadButton extends React.PureComponent {
 
 DownloadButton.propTypes = {
   href: PropTypes.string.isRequired,
-  fileType: PropTypes.oneOf(['CSV', 'PDF', 'PNG']).isRequired
+  fileType: PropTypes.oneOf(['CSV', 'PDF', 'PNG', 'ZIP']).isRequired
 };

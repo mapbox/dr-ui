@@ -28,6 +28,15 @@ testCases.png = {
   }
 };
 
+testCases.zip = {
+  component: DownloadButton,
+  description: 'DownloadButton for ZIP',
+  props: {
+    fileType: 'ZIP',
+    href: '../files/test-zip.gz'
+  }
+};
+
 testCases.prose = {
   description: 'DownloadButton with prose class',
   props: {
