@@ -21,7 +21,7 @@ export default class DownloadButton extends React.PureComponent {
     } else {
       return (
         <Button href={href} passthroughProps={{ download: fileName }}>
-          <IconText iconBefore="arrow-down">Download {fileType}</IconText>
+          <IconText iconBefore="arrow-down">Download {fileType} file</IconText>
         </Button>
       );
     }
