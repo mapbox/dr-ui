@@ -15,7 +15,7 @@ export default class DownloadButton extends React.PureComponent {
     if (fileType === 'CSV') {
       return (
         <Button href={href}>
-          <IconText iconBefore="arrow-down">Download {fileType}</IconText>
+          <IconText iconBefore="arrow-down">Download {fileType} file</IconText>
         </Button>
       );
     } else {
