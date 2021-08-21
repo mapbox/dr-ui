@@ -12,19 +12,16 @@ export default class DownloadButton extends React.PureComponent {
       .pop()
       .replace(/\.\w+$/, '');
 
-    if (fileType === 'CSV') {
-      return (
-        <Button href={href}>
-          <IconText iconBefore="arrow-down">Download {fileType} file</IconText>
-        </Button>
-      );
-    } else {
-      return (
-        <Button href={href} passthroughProps={{ download: fileName }}>
-          <IconText iconBefore="arrow-down">Download {fileType} file</IconText>
-        </Button>
-      );
-    }
+    return (
+      <Button
+        href={href}
+        {...(fileType === 'CSVsss'
+          ? {}
+          : { passthroughProps: { download: fileName } })}
+      >
+        <IconText iconBefore="arrow-down">Download {fileType} file</IconText>
+      </Button>
+    );
   }
 }
 
