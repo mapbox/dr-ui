@@ -5,9 +5,10 @@ import PropTypes from 'prop-types';
 
 export default class DownloadButton extends React.PureComponent {
   render() {
-    const { fileType, href } = this.props;
+    const { href } = this.props;
+    const fileType = href.split('.').pop().toUpperCase();
+    console.log(fileType);
     const fileName = href
-      .toString()
       .split('/')
       .pop()
       .replace(/\.\w+$/, '');
@@ -15,7 +16,7 @@ export default class DownloadButton extends React.PureComponent {
     return (
       <Button
         href={href}
-        {...(fileType === 'CSV'
+        {...(fileType === 'csv'
           ? {}
           : { passthroughProps: { download: fileName } })}
       >
@@ -26,6 +27,5 @@ export default class DownloadButton extends React.PureComponent {
 }
 
 DownloadButton.propTypes = {
-  href: PropTypes.string.isRequired,
-  fileType: PropTypes.oneOf(['CSV', 'PDF', 'PNG', 'ZIP']).isRequired
+  href: PropTypes.string.isRequired
 };

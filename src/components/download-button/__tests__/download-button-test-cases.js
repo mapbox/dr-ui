@@ -14,7 +14,6 @@ testCases.pdf = {
   component: DownloadButton,
   description: 'DownloadButton for PDF',
   props: {
-    fileType: 'PDF',
     href: '../files/atlas-architecture-diagram.pdf'
   }
 };
@@ -23,7 +22,6 @@ testCases.png = {
   component: DownloadButton,
   description: 'DownloadButton for PNG',
   props: {
-    fileType: 'PNG',
     href: '../files/shop-15.png'
   }
 };
@@ -32,7 +30,6 @@ testCases.zip = {
   component: DownloadButton,
   description: 'DownloadButton for ZIP',
   props: {
-    fileType: 'ZIP',
     href: '../files/test-zip.gz'
   }
 };
@@ -41,7 +38,7 @@ testCases.prose = {
   description: 'DownloadButton with prose class',
   element: (
     <div className="prose">
-      <DownloadButton fileType="PNG" href="../files/shop-15.png" />
+      <DownloadButton href="../files/shop-15.png" />
     </div>
   )
 };
