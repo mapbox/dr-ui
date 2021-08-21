@@ -15,7 +15,7 @@ export default class DownloadButton extends React.PureComponent {
     return (
       <Button
         href={href}
-        {...(fileType === 'CSVsss'
+        {...(fileType === 'CSV'
           ? {}
           : { passthroughProps: { download: fileName } })}
       >
