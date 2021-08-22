@@ -19,7 +19,13 @@ export default class DownloadButton extends React.PureComponent {
         href={href}
         {...(fileType === 'CSV'
           ? {}
-          : { passthroughProps: { download: fileName } })}
+          : {
+              passthroughProps: {
+                download: fileName,
+                className:
+                  'unprose btn btn--blue round-full py12 px24 txt-s my18'
+              }
+            })}
       >
         <IconText iconBefore="arrow-down">
           {text || 'Download ' + fileType + ' file'}

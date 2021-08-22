@@ -127,16 +127,6 @@
   }
 }
 
-a.btn.btn--blue {
-  color: #fff;
-  text-decoration: none;
-  margin: 18px 0;
-}
-
-a.btn.btn--blue:hover {
-  color: #fff;
-}
-
 .txt-spacing0 {
   letter-spacing: 0.05em;
 }
