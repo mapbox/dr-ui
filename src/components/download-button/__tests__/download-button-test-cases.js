@@ -28,9 +28,10 @@ testCases.png = {
 
 testCases.zip = {
   component: DownloadButton,
-  description: 'DownloadButton for ZIP',
+  description: 'DownloadButton with optional text',
   props: {
-    href: '../files/test-zip.gz'
+    href: '../files/test-gzip.csv.gz',
+    text: 'Download for iOS'
   }
 };
 
