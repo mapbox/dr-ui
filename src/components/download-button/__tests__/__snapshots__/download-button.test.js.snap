@@ -2,7 +2,8 @@
 
 exports[`DownloadButton Default DownloadButton renders as expected 1`] = `
 <a
-  className="btn btn--blue round-full py12 px24 txt-s"
+  className="unprose btn btn--blue round-full py12 px24 txt-s my18"
+  download="airports.csv"
   href="../files/airports.csv"
 >
   <span
