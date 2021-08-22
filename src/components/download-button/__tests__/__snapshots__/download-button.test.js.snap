@@ -31,8 +31,7 @@ exports[`DownloadButton Default DownloadButton renders as expected 1`] = `
     <span
       className="flex-child"
     >
-      Download 
-      CSV
+      Download CSV file
     </span>
   </span>
 </a>
