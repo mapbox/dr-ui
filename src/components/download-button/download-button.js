@@ -26,6 +26,8 @@ export default class DownloadButton extends React.PureComponent {
 }
 
 DownloadButton.propTypes = {
+  /** File path to resource that will be downloaded. */
   href: PropTypes.string.isRequired,
+  /** Optional custom button text. If this prop is not used, the text will default to "Download {file type}". */
   text: PropTypes.string
 };
