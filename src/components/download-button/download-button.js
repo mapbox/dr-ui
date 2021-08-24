@@ -18,7 +18,7 @@ export default class DownloadButton extends React.PureComponent {
         }}
       >
         <IconText iconBefore="arrow-down">
-          {text || 'Download ' + fileType + ' file'}
+          {text || 'Download ' + fileType}
         </IconText>
       </Button>
     );
