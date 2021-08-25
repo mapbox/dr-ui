@@ -1,3 +1,4 @@
+import React from 'react';
 import renderer from 'react-test-renderer';
 import { testCases } from './download-button-test-cases.js';
 
@@ -25,7 +26,9 @@ describe('DownloadButton', () => {
 
     beforeEach(() => {
       testCase = testCases.png;
-      wrapper = renderer.create(testCase.element);
+      wrapper = renderer.create(
+        React.createElement(testCase.component, testCase.props)
+      );
       tree = wrapper.toJSON();
     });
 
@@ -41,7 +44,9 @@ describe('DownloadButton', () => {
 
     beforeEach(() => {
       testCase = testCases.zip;
-      wrapper = renderer.create(testCase.element);
+      wrapper = renderer.create(
+        React.createElement(testCase.component, testCase.props)
+      );
       tree = wrapper.toJSON();
     });
 
