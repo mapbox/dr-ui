@@ -10,7 +10,8 @@
     "DemoIframe",
     "MapWrapper",
     "Phone",
-    "Video"
+    "Video",
+    "DownloadButton"
   ],
   "Code": [
     "AndroidLayoutCodeBlock",
@@ -28,7 +29,6 @@
     "PageLayout",
     "OnThisPage",
     "BackToTopButton",
-    "DownloadButton",
     "OverviewHeader",
     "NavigationAccordion",
     "ProductMenu",
