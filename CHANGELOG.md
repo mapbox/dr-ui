@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Add `DownloadButton` component. [#331](https://github.com/mapbox/dr-ui/pull/474).
+
 ## 4.1.1
 
 - Fix error handling in `Feedback` component to only send error to Sentry if `forwardEvent` returns one. [#473](https://github.com/mapbox/dr-ui/pull/473)
