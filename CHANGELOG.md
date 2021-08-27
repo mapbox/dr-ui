@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Add `DownloadButton` component. [#331](https://github.com/mapbox/dr-ui/pull/474).
+
 ## 4.1.2
 
 - Update `Feedback` to only send an event to Sentry if feedback exists. [#475](https://github.com/mapbox/dr-ui/pull/475)
