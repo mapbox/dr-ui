@@ -64,7 +64,7 @@ The `build` command creates a `pkg/` directory that contains the code we want to
 
 Once all changes are on the main branch, follow these steps:
 
-1. Update the CHANGELOG.md with a commit like "Prepare vX.X.X"
+1. Update CHANGELOG.md with a commit like "Prepare vX.X.X"
 2. From the `main` branch, make sure you pulled the latest.
 3. Run `npm version <major|minor|patch>` to increment the version number in package.json and package-lock.json. This will automatically create a commit and tag for the release.
 4. Push your commit.
