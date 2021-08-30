@@ -21,19 +21,19 @@ testCases.subSite = {
         },
         {
           title: 'Maps SDK',
-          path: '/android/maps/overview/'
+          path: '/android/maps/guides/'
         },
         {
-          title: 'Overview',
-          path: '/android/maps/overview/'
+          title: 'Guides',
+          path: '/android/maps/guides/'
         },
         {
           title: 'Camera',
-          path: '/android/maps/overview/camera/'
+          path: '/android/maps/guides/camera/'
         }
       ]}
       location={{
-        pathname: '/android/maps/overview/camera/'
+        pathname: '/android/maps/guides/camera/'
       }}
     />
   )

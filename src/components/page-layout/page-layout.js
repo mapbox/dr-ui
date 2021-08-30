@@ -38,32 +38,47 @@ export default class PageLayout extends React.PureComponent {
 
   // render the page's content
   renderContent = (config, parentPath, parent, hasSection) => {
-    const { constants, frontMatter, location, domain } = this.props;
+    const { constants, frontMatter, location, domain, navigation } = this.props;
+    // If multi-structured show section name
+    // If single-structured show site name
+    const sectionItem = hasSection
+      ? [
+          {
+            title: hasSection.title,
+            path: `${constants.BASEURL}/${hasSection.path}/`
+          }
+        ]
+      : [
+          {
+            title: constants.SITE,
+            path: `${constants.BASEURL}/`
+          }
+        ];
+    // If there is a parent page, include it. This is typically
+    // the content type.
+    const parentItem =
+      parent && parent.title
+        ? [{ title: parent.title, path: parent.parent }]
+        : [];
+    // If the page is part of a group of guides, include another
+    // level between the content type and the current page.
+    const grandparentPath =
+      frontMatter.groupOrder && parent.parent.match(/(.*\/)(.*\/)$/)[1];
+    const grandparentItem = frontMatter.groupOrder
+      ? [
+          {
+            title: navigation.hierarchy[grandparentPath].title,
+            path: grandparentPath
+          }
+        ]
+      : [];
     const crumbs = createUniqueCrumbs([
+      // Always include the domain.
       domain,
-      // if multi-structured show section name
-      // if single-structured show site name
-      ...(hasSection
-        ? [
-            {
-              title: hasSection.title,
-              path: `${constants.BASEURL}/${hasSection.path}/`
-            }
-          ]
-        : [
-            {
-              title: constants.SITE,
-              path: `${constants.BASEURL}/`
-            }
-          ]),
-      ...(parent && parent.title
-        ? [
-            {
-              title: parent.title,
-              path: parent.parent
-            }
-          ]
-        : []),
+      ...sectionItem,
+      ...grandparentItem,
+      ...parentItem,
+      // Always include the current page.
       {
         title: frontMatter.title,
         path: location.pathname
@@ -202,11 +217,12 @@ PageLayout.propTypes = {
     hideSidebar: PropTypes.bool,
     title: PropTypes.string,
     showFilters: PropTypes.arrayOf(PropTypes.oneOf(filterOptions)),
-    onThisPage: PropTypes.bool
+    onThisPage: PropTypes.bool,
+    groupOrder: PropTypes.number
   }).isRequired,
   /**
 - `navTabs` - links to be shown in the `NavigationAccordion`, formatted as an array of object: `[{"href": "/overview", "id": "overview", "label": "Overview"}]`
-- `hierarchy` - Object of every path and their parent: `{"/overview/layous": {"parent": "/overview", "title": "Overview"}}`
+- `hierarchy` - Object of every path and their parent: `{"/guides/layouts": {"parent": "/guides", "title": "Guides"}}`
 - `title` - required for multi-structured layouts, this is the title for the `ProductMenu`
 - `tag` - optional `tag` name to pass to `ProductMenu`, [see available options](#productmenu).
 */

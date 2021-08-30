@@ -11,22 +11,22 @@ exports[`navigation-accordion Basic NavigationAccordion renders as expected 1`] 
       >
         <a
           className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-          href="/dr-ui/overview/"
+          href="/dr-ui/guides/"
           style={
             Object {
               "letterSpacing": "0.025em",
             }
           }
         >
-          Overview
+          Guides
         </a>
         <button
-          aria-controls="menu-overview"
+          aria-controls="menu-guides"
           aria-expanded={false}
-          aria-label="Toggle Overview menu"
+          aria-label="Toggle Guides menu"
           className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
           onClick={[Function]}
-          value="Overview"
+          value="Guides"
         >
           <svg
             className="events-none icon inline-block align-t"

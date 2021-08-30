@@ -154,6 +154,55 @@
       }
     },
     {
+      "filePath": "./docs/src/pages/guides/grouped-guides/file-structure.md",
+      "path": "/dr-ui/guides/grouped-guides/file-structure/",
+      "frontMatter": {
+        "title": "File structure",
+        "description": "How to set up your src/pages/ folder to use grouped guides.",
+        "groupOrder": 1,
+        "contentType": "guide",
+        "layout": "page",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/guides/grouped-guides/frontmatter.md",
+      "path": "/dr-ui/guides/grouped-guides/frontmatter/",
+      "frontMatter": {
+        "title": "Frontmatter",
+        "description": "There are two frontmatter fields needed to make grouped guides work: group and groupOrder.",
+        "groupOrder": 2,
+        "contentType": "guide",
+        "layout": "page",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/guides/grouped-guides/index.md",
+      "path": "/dr-ui/guides/grouped-guides/",
+      "frontMatter": {
+        "title": "Grouped guides",
+        "description": "Create a group of guides that related to a single topic.",
+        "order": 3,
+        "contentType": "guide",
+        "layout": "page",
+        "group": true,
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/guides/grouped-guides/resulting-ui.md",
+      "path": "/dr-ui/guides/grouped-guides/resulting-ui/",
+      "frontMatter": {
+        "title": "Resulting UI",
+        "description": "This section of the catalog site illustrates how grouped guides look and work.",
+        "groupOrder": 3,
+        "contentType": "guide",
+        "layout": "page",
+        "products": ["Documentation"]
+      }
+    },
+    {
       "filePath": "./docs/src/pages/guides/index.md",
       "path": "/dr-ui/guides/",
       "frontMatter": {
