@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Add `DownloadButton` component. [#331](https://github.com/mapbox/dr-ui/pull/474).
+- Fix bug in `Feedback` textarea where the cursor jumped to end of text. [#477](https://github.com/mapbox/dr-ui/pull/477).
 
 ## 4.1.2
 
