@@ -13,13 +13,13 @@
         <loc>https://mapbox.github.io/dr-ui/components</loc>
     </url>
     <url>
-        <loc>https://mapbox.github.io/dr-ui/examples/example-2</loc>
-    </url>
-    <url>
         <loc>https://mapbox.github.io/dr-ui/examples/example-1</loc>
     </url>
     <url>
         <loc>https://mapbox.github.io/dr-ui/examples/example-3</loc>
+    </url>
+    <url>
+        <loc>https://mapbox.github.io/dr-ui/guides/a11y</loc>
     </url>
     <url>
         <loc>https://mapbox.github.io/dr-ui/examples/example-4</loc>
@@ -37,21 +37,21 @@
         <loc>https://mapbox.github.io/dr-ui/guides/page-layout</loc>
     </url>
     <url>
-        <loc>https://mapbox.github.io/dr-ui/guides/multi-structured</loc>
-    </url>
-    <url>
         <loc>https://mapbox.github.io/dr-ui/guides/split-pages</loc>
     </url>
     <url>
-        <loc>https://mapbox.github.io/dr-ui/guides/grouped-guides/frontmatter</loc>
+        <loc>https://mapbox.github.io/dr-ui/guides/multi-structured</loc>
     </url>
     <url>
-        <loc>https://mapbox.github.io/dr-ui/guides/a11y</loc>
+        <loc>https://mapbox.github.io/dr-ui/examples/example-2</loc>
+    </url>
+    <url>
+        <loc>https://mapbox.github.io/dr-ui/guides/grouped-guides/file-structure</loc>
     </url>
     <url>
         <loc>https://mapbox.github.io/dr-ui/guides/grouped-guides/resulting-ui</loc>
     </url>
     <url>
-        <loc>https://mapbox.github.io/dr-ui/guides/grouped-guides/file-structure</loc>
+        <loc>https://mapbox.github.io/dr-ui/guides/grouped-guides/frontmatter</loc>
     </url>
 </urlset>
