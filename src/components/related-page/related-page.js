@@ -181,7 +181,6 @@ RelatedPage.propTypes = {
     'troubleshooting',
     'playground',
     'video',
-    'next',
     'default'
   ]),
   /** Override the label name. This value is set by the `contentType`, but you can override it when needed. */
