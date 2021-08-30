@@ -28,8 +28,8 @@ export class FeedbackTextarea extends React.PureComponent {
   }
 
   render() {
-    const { id, label, placeholder, value, validationErrorMinimum } =
-      this.props;
+    const { id, label, placeholder, validationErrorMinimum } = this.props;
+    const { feedback } = this.state;
     const feedbackLength = this.state.feedback
       ? feedbackLimit - this.state.feedback.length
       : feedbackLimit;
@@ -41,7 +41,7 @@ export class FeedbackTextarea extends React.PureComponent {
             themeLabel="txt-m mb6"
             id={id}
             label={label}
-            value={value}
+            value={feedback}
             onChange={this.handleFeedback}
             placeholder={placeholder}
             validationError={
@@ -71,7 +71,6 @@ FeedbackTextarea.propTypes = {
   onChange: PropTypes.func.isRequired,
   label: PropTypes.string,
   placeholder: PropTypes.string,
-  value: PropTypes.string,
   validationErrorMinimum: PropTypes.bool.isRequired
 };
 
