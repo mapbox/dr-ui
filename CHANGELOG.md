@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.2.1
+
+- Fix release 
+
 ## 4.2.0
 
 - Add `DownloadButton` component. [#474](https://github.com/mapbox/dr-ui/pull/474).
