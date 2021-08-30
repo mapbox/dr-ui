@@ -34,32 +34,34 @@ export class FeedbackTextarea extends React.PureComponent {
       ? feedbackLimit - this.state.feedback.length
       : feedbackLimit;
     return (
-      <div className="relative">
-        <ControlTextarea
-          themeControlTextarea="textarea hmin120 bg-white"
-          themeLabel="txt-m mb6"
-          id={id}
-          label={label}
-          value={feedback}
-          onChange={this.handleFeedback}
-          placeholder={placeholder}
-          validationError={
-            (validationErrorMinimum ? 'Tell us more!' : '') ||
-            (this.isOverLimit() ? 'Your feedback is over the limit' : '')
-          }
-        />
-        <div
-          id="feedback-length"
-          className={classnames(
-            'absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s',
-            {
-              'color-red-dark': this.isOverLimit()
+      <>
+        <div className="relative">
+          <ControlTextarea
+            themeControlTextarea="textarea hmin120 bg-white"
+            themeLabel="txt-m mb6"
+            id={id}
+            label={label}
+            value={feedback}
+            onChange={this.handleFeedback}
+            placeholder={placeholder}
+            validationError={
+              (validationErrorMinimum ? 'Tell us more!' : '') ||
+              (this.isOverLimit() ? 'Your feedback is over the limit' : '')
             }
-          )}
-        >
-          {feedbackLength}
+          />
+          <div
+            id="feedback-length"
+            className={classnames(
+              'absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s',
+              {
+                'color-red-dark': this.isOverLimit()
+              }
+            )}
+          >
+            {feedbackLength}
+          </div>
         </div>
-      </div>
+      </>
     );
   }
 }
