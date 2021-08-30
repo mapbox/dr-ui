@@ -3,7 +3,7 @@
 ## Unreleased
 
 - Add `DownloadButton` component. [#474](https://github.com/mapbox/dr-ui/pull/474).
-- Add grouped guides functionality to `NavigationAccordion`. [#453](https://github.com/mapbox/dr-ui/pull/453).
+- Add [grouped guides functionality](https://mapbox.github.io/mr-ui/dr-ui/guides/grouped-guides/) to `NavigationAccordion`. [#453](https://github.com/mapbox/dr-ui/pull/453).
 
 ## 4.1.2
 
