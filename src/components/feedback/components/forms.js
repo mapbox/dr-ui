@@ -28,40 +28,38 @@ export class FeedbackTextarea extends React.PureComponent {
   }
 
   render() {
-    const { id, label, placeholder, value, validationErrorMinimum } =
-      this.props;
+    const { id, label, placeholder, validationErrorMinimum } = this.props;
+    const { feedback } = this.state;
     const feedbackLength = this.state.feedback
       ? feedbackLimit - this.state.feedback.length
       : feedbackLimit;
     return (
-      <>
-        <div className="relative">
-          <ControlTextarea
-            themeControlTextarea="textarea hmin120 bg-white"
-            themeLabel="txt-m mb6"
-            id={id}
-            label={label}
-            value={value}
-            onChange={this.handleFeedback}
-            placeholder={placeholder}
-            validationError={
-              (validationErrorMinimum ? 'Tell us more!' : '') ||
-              (this.isOverLimit() ? 'Your feedback is over the limit' : '')
+      <div className="relative">
+        <ControlTextarea
+          themeControlTextarea="textarea hmin120 bg-white"
+          themeLabel="txt-m mb6"
+          id={id}
+          label={label}
+          value={feedback}
+          onChange={this.handleFeedback}
+          placeholder={placeholder}
+          validationError={
+            (validationErrorMinimum ? 'Tell us more!' : '') ||
+            (this.isOverLimit() ? 'Your feedback is over the limit' : '')
+          }
+        />
+        <div
+          id="feedback-length"
+          className={classnames(
+            'absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s',
+            {
+              'color-red-dark': this.isOverLimit()
             }
-          />
-          <div
-            id="feedback-length"
-            className={classnames(
-              'absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s',
-              {
-                'color-red-dark': this.isOverLimit()
-              }
-            )}
-          >
-            {feedbackLength}
-          </div>
+          )}
+        >
+          {feedbackLength}
         </div>
-      </>
+      </div>
     );
   }
 }
@@ -71,7 +69,6 @@ FeedbackTextarea.propTypes = {
   onChange: PropTypes.func.isRequired,
   label: PropTypes.string,
   placeholder: PropTypes.string,
-  value: PropTypes.string,
   validationErrorMinimum: PropTypes.bool.isRequired
 };
 
