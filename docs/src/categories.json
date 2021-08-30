@@ -10,7 +10,8 @@
     "DemoIframe",
     "MapWrapper",
     "Phone",
-    "Video"
+    "Video",
+    "DownloadButton"
   ],
   "Code": [
     "AndroidLayoutCodeBlock",

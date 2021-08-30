@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DownloadButton Default DownloadButton renders as expected 1`] = `
+<a
+  className="unprose btn btn--blue round-full py12 px24 txt-s my18"
+  download="airports.csv"
+  href="../files/airports.csv"
+>
+  <span
+    className="flex-parent flex-parent--center-cross"
+  >
+    <span
+      className="flex-child mr3"
+    >
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 18,
+            "width": 18,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-arrow-down"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </span>
+    <span
+      className="flex-child"
+    >
+      Download CSV
+    </span>
+  </span>
+</a>
+`;
+
+exports[`DownloadButton DownloadButton for PNG renders as expected 1`] = `
+<a
+  className="unprose btn btn--blue round-full py12 px24 txt-s my18"
+  download="shop-15.png"
+  href="../files/shop-15.png"
+>
+  <span
+    className="flex-parent flex-parent--center-cross"
+  >
+    <span
+      className="flex-child mr3"
+    >
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 18,
+            "width": 18,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-arrow-down"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </span>
+    <span
+      className="flex-child"
+    >
+      Download PNG
+    </span>
+  </span>
+</a>
+`;
+
+exports[`DownloadButton DownloadButton with optional text renders as expected 1`] = `
+<a
+  className="unprose btn btn--blue round-full py12 px24 txt-s my18"
+  download="test-gzip.csv.gz"
+  href="../files/test-gzip.csv.gz"
+>
+  <span
+    className="flex-parent flex-parent--center-cross"
+  >
+    <span
+      className="flex-child mr3"
+    >
+      <svg
+        className="events-none icon"
+        focusable="false"
+        role="presentation"
+        style={
+          Object {
+            "height": 18,
+            "width": 18,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-arrow-down"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+    </span>
+    <span
+      className="flex-child"
+    >
+      Download for iOS
+    </span>
+  </span>
+</a>
+`;
+
+exports[`DownloadButton DownloadButton with prose class renders as expected 1`] = `
+<div
+  className="prose"
+>
+  <a
+    className="unprose btn btn--blue round-full py12 px24 txt-s my18"
+    download="shop-15.png"
+    href="../files/shop-15.png"
+  >
+    <span
+      className="flex-parent flex-parent--center-cross"
+    >
+      <span
+        className="flex-child mr3"
+      >
+        <svg
+          className="events-none icon"
+          focusable="false"
+          role="presentation"
+          style={
+            Object {
+              "height": 18,
+              "width": 18,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-arrow-down"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+      </span>
+      <span
+        className="flex-child"
+      >
+        Download PNG
+      </span>
+    </span>
+  </a>
+</div>
+`;

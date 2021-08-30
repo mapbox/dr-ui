@@ -380,27 +380,8 @@ describe('Workflow, Select multiple; do not submit text feedback', () => {
       expectThankYou(feedback);
     });
 
-    test('Then send to Sentry', () => {
-      expect(Sentry.init).toHaveBeenCalledWith({
-        dsn: expect.anything(),
-        environment: 'staging',
-        maxValueLength: 1000
-      });
-      expect(SentryMockScope.setTag.mock.calls).toEqual([
-        ['site', 'dr-ui'],
-        ['category', 'I like this page'],
-        ['categoryType', 'Something else,The information is accurate'],
-        ['referrer', ''],
-        ['helpful', true]
-      ]);
-      expect(SentryMockScope.setLevel).toHaveBeenCalledWith('info');
-      expect(SentryMockScope.setFingerprint).toHaveBeenCalledWith([
-        'dr-ui',
-        'I like this page',
-        expect.anything(),
-        expect.any(Date)
-      ]);
-      expect(Sentry.captureMessage).toHaveBeenCalledWith('');
+    test('Do not send to Sentry', () => {
+      expect(Sentry.init).not.toHaveBeenCalled();
     });
 
     test('Then send to Segment', () => {
