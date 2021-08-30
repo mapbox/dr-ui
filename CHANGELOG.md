@@ -2,7 +2,8 @@
 
 ## Unreleased
 
-- Add `DownloadButton` component. [#331](https://github.com/mapbox/dr-ui/pull/474).
+- Add `DownloadButton` component. [#474](https://github.com/mapbox/dr-ui/pull/474).
+- Add [grouped guides functionality](https://mapbox.github.io/mr-ui/dr-ui/guides/grouped-guides/) to `NavigationAccordion`. [#453](https://github.com/mapbox/dr-ui/pull/453).
 - Fix bug in `Feedback` textarea where the cursor jumped to end of text. [#477](https://github.com/mapbox/dr-ui/pull/477).
 
 ## 4.1.2

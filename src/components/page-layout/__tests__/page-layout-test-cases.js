@@ -1,5 +1,6 @@
 import React from 'react';
 import Page from '../examples/page';
+import GroupIndex from '../examples/group-index-page';
 import Example from '../examples/example';
 import ExamplePage from '../examples/example-page';
 import Full from '../examples/full';
@@ -15,6 +16,11 @@ testCases.full = {
 testCases.page = {
   description: 'Page layout',
   element: <Page />
+};
+
+testCases.groupIndexPage = {
+  description: 'Page layout: group index',
+  element: <GroupIndex />
 };
 
 testCases.example = {
@@ -59,9 +65,9 @@ testCases.examplePageFilters = {
         },
         navTabs: [
           {
-            path: '/PageLayout/',
-            title: 'Overview',
-            id: 'overview'
+            path: '/PageLayout/guides/',
+            title: 'Guides',
+            id: 'guides'
           },
           {
             path: '/PageLayout/examples/',
@@ -144,7 +150,7 @@ testCases.noSidebar = {
         pathname: '/PageLayout/'
       }}
       frontMatter={{
-        title: 'Overview',
+        title: 'Guides',
         layout: 'full',
         hideSidebar: true
       }}
@@ -152,14 +158,14 @@ testCases.noSidebar = {
         hierarchy: {
           '/PageLayout/': {
             parent: '/PageLayout/',
-            title: 'Overview'
+            title: 'Guides'
           }
         },
         navTabs: [
           {
-            title: 'Overview',
+            title: 'Guides',
             path: '/PageLayout/',
-            id: 'overview'
+            id: 'guides'
           }
         ]
       }}

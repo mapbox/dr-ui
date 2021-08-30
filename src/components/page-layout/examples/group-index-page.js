@@ -17,16 +17,13 @@ export default class Basic extends React.PureComponent {
           }
         }}
         location={{
-          pathname: '/PageLayout/guides/worldview/border-styling/'
+          pathname: '/PageLayout/guides/worldview/'
         }}
         frontMatter={{
-          title: 'Border styling',
+          title: 'Worldview',
           layout: 'page',
-          groupOrder: 2,
-          headings: [
-            { text: 'Set a filter', slug: 'set-a-filter', level: 2 },
-            { text: 'Style the line', slug: 'style-the-line', level: 2 }
-          ]
+          group: true,
+          headings: []
         }}
         navigation={{
           hierarchy: {
@@ -109,39 +106,7 @@ export default class Basic extends React.PureComponent {
             }
           ]
         }}
-      >
-        <React.Fragment>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <h2 id="set-a-filter">Set a filter</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <h2 id="style-the-line">Style the line</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </React.Fragment>
-      </PageLayout>
+      />
     );
   }
 }

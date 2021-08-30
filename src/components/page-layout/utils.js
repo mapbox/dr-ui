@@ -47,3 +47,38 @@ export function createUniqueCrumbs(links) {
     return arr;
   }, []);
 }
+
+function getGuidesNavTabs(array) {
+  return array.find((x) => x.title === 'Guides');
+}
+
+export function getSubPages(navigation, pathname, frontMatter) {
+  let sectionPath;
+  let pages;
+  let subPages;
+  // If the current page is a part of a section (a multi-structured
+  // site) then set sectionPath to the current section.
+  if (navigation.hierarchy[pathname].section) {
+    sectionPath = navigation.hierarchy[pathname].section.path;
+  }
+  // Get all pages for the repo or for the section if the current
+  // page is part of a section (a multi-structured site).
+  if (sectionPath) {
+    pages = getGuidesNavTabs(navigation[sectionPath].navTabs).pages;
+  } else if (getGuidesNavTabs(navigation.navTabs)) {
+    pages = getGuidesNavTabs(navigation.navTabs).pages;
+  }
+  // Get the relevant subPages. If the current page is the
+  // grouped guide index, get the `subPages` for that path.
+  // If the current page is one of the grouped guides, get its
+  // sibling pages within the current group.
+  if (frontMatter.group) {
+    subPages = pages && pages.find((x) => x.path === pathname).subPages;
+  } else if (frontMatter.groupOrder) {
+    subPages =
+      pages &&
+      pages.find((x) => x.path === navigation.hierarchy[pathname].parent)
+        .subPages;
+  }
+  return subPages;
+}
