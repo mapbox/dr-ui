@@ -36,7 +36,7 @@ export default class NavigationAccordion extends React.Component {
     // if device width is >= 640
     // determine which section is active and activate its toggle
     const { parentPage, navigation } = this.props;
-    if (isMM) {
+    if (isMM && parentPage) {
       navigation.forEach((nav) => {
         if (parentPage.indexOf(nav.path) > -1) {
           this.setToggle(nav.title);
