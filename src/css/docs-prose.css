@@ -90,16 +90,6 @@
     -webkit-overflow-scrolling: touch;
   }
 
-  .sticky-mm {
-    position: sticky;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .sticky-mxl {
-    position: sticky;
-  }
-
   .scroll-auto-mxl {
     overflow: auto !important;
     -webkit-overflow-scrolling: touch;
