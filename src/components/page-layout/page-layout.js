@@ -136,7 +136,7 @@ export default class PageLayout extends React.PureComponent {
     return (
       <ErrorBoundary>
         {!noShellHeaderBuffer && <div className="shell-header-buffer" />}
-        <div className="limiter limiter--wide">
+        <div className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm">
           <div className="flex-parent-mm">
             {!frontMatter.hideSidebar && (
               <ErrorBoundary>
