@@ -7,7 +7,7 @@ import OnThisPage from '../on-this-page';
 export default class Basic extends React.PureComponent {
   render() {
     return (
-      <div className="limiter">
+      <div className="wmax1200 w-11/12-mm w-5/6-ml mx-auto px24 px0-mm">
         <div className="grid grid--gut60">
           <div className="col col--5-mxl col--12 relative dr-ui--page-layout-aside">
             <div className="sticky-mxl top">
