@@ -3,9 +3,6 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Icon from '@mapbox/mr-ui/icon';
 import Tag from '../tag/tag';
-// check if client body width is >= 640
-const isMM =
-  typeof document !== 'undefined' ? document.body.clientWidth >= 640 : false;
 
 export default class NavigationAccordion extends React.Component {
   constructor() {
@@ -31,10 +28,15 @@ export default class NavigationAccordion extends React.Component {
   };
 
   componentDidMount() {
+    // check if client body width is >= 640
+    const isMM =
+      typeof document !== 'undefined'
+        ? document.body.clientWidth >= 640
+        : false;
     // if device width is >= 640
     // determine which section is active and activate its toggle
     const { parentPage, navigation } = this.props;
-    if (isMM) {
+    if (isMM && parentPage) {
       navigation.forEach((nav) => {
         if (parentPage.indexOf(nav.path) > -1) {
           this.setToggle(nav.title);

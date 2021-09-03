@@ -127,4 +127,20 @@ testCases.withSubPages = {
   }
 };
 
+testCases.noParent = {
+  description: 'An active (hidden) page without a parent',
+  component: NavigationAccordion,
+  props: {
+    location: { pathname: 'heading-one' },
+    parentPage: undefined,
+    navigation: [
+      {
+        title: 'Title one',
+        path: 'page-one',
+        id: 'title-one'
+      }
+    ]
+  }
+};
+
 export { testCases };
