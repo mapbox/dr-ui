@@ -124,6 +124,7 @@
     "uuid": "^8.3.2"
   },
   "peerDependencies": {
+    "@mapbox/mr-ui": "^0.12.0",
     "@mapbox/mbx-assembly": "^1.1.1",
     "@sentry/browser": "6.11.0",
     "react": "^16.14.0",
