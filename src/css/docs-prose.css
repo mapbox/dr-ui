@@ -1,10 +1,8 @@
-#docs-content .prose h1,
 #docs-content.prose h1 {
   margin-top: 6px;
   margin-bottom: 30px;
 }
 
-#docs-content .prose h2:not(.unprose),
 #docs-content.prose h2:not(.unprose) {
   font-weight: normal !important;
   border-top: 1px solid !important;
@@ -13,7 +11,6 @@
   margin: 36px 0px 18px;
 }
 
-#docs-content .prose h3:not(.unprose),
 #docs-content.prose h3:not(.unprose) {
   font-weight: normal;
 }
