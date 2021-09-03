@@ -6,7 +6,7 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="limiter limiter--wide"
+    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm"
   >
     <div
       className="flex-parent-mm"
@@ -638,7 +638,7 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="limiter limiter--wide"
+    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm"
   >
     <div
       className="flex-parent-mm"
@@ -1059,7 +1059,7 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="limiter limiter--wide"
+    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm"
   >
     <div
       className="flex-parent-mm"
@@ -1249,7 +1249,7 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="limiter limiter--wide"
+    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm"
   >
     <div
       className="flex-parent-mm"
@@ -1837,7 +1837,7 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="limiter limiter--wide"
+    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm"
   >
     <div
       className="flex-parent-mm"

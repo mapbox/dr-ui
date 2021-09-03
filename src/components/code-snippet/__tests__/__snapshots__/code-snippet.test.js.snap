@@ -1073,7 +1073,7 @@ See the example: https://docs.mapbox.com//mapbox-gl-js/example/simple-map/"
       </form>
     </div>
     <div
-      className="relative round z0 scroll-styled scroll-auto"
+      className="relative round z0 scroll-styled overflow-auto"
       style={
         Object {
           "maxHeight": 150,
