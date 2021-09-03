@@ -63,14 +63,14 @@
 }
 
 @media screen and (min-width: 640px) {
-  .scroll-auto-mm {
+  .overflow-auto-mm {
     overflow: auto !important;
     -webkit-overflow-scrolling: touch;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .scroll-auto-mxl {
+  .overflow-auto-mxl {
     overflow: auto !important;
     -webkit-overflow-scrolling: touch;
   }
