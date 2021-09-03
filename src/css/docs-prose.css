@@ -31,11 +31,6 @@
   color: #2b50f0;
 }
 
-/* increase color-gray contrast on code elements */
-.color-gray code {
-  color: #56728f;
-}
-
 /* set max-height for code examples */
 .prose pre[class*='language-'] {
   max-height: 300px;
