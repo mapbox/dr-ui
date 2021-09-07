@@ -8,7 +8,7 @@ class Browser extends React.PureComponent {
     return (
       <div className="shadow-darken25 round bg-white">
         <div className="bg-gray h30-mm h18 round-t">
-          <div className="color-white flex-parent flex-parent--center-cross h30-mm h18 px6">
+          <div className="color-white flex flex--center-cross h30-mm h18 px6">
             <span className="color-red-light">
               <Icon name="circle" />
             </span>
@@ -21,20 +21,14 @@ class Browser extends React.PureComponent {
           </div>
         </div>
         <div className="block-mm none">
-          <div className="h30 bg-gray-faint color-gray flex-parent flex-parent--space-between-main px6 flex-parent--center-cross">
-            <div
-              style={{ width: '70px' }}
-              className="flex-parent-inline flex-parent--space-between-main flex-parent--center-cross mr18"
-            >
+          <div className="h30 bg-gray-faint color-gray flex flex--space-between-main px6 flex--center-cross">
+            <div className="inline-flex flex--space-between-main flex--center-cross mr18 w70">
               <Icon name="arrow-left" />
               <Icon name="arrow-right" />
               <Icon name="rotate" />
             </div>
-            <div className="w120 h18 bg-white round-full flex-child--grow px12" />
-            <div
-              style={{ width: '70px' }}
-              className="flex-parent-inline flex-parent--space-between-main align-r flex-parent--center-cross ml18"
-            >
+            <div className="w120 h18 bg-white round-full flex-child-grow px12" />
+            <div className="inline-flex flex--space-between-main align-r flex--center-cross ml18 w70">
               <Icon name="heart" />
               <Icon name="mapbox" />
               <Icon name="menu" />
