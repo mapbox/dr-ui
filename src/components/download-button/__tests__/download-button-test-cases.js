@@ -35,6 +35,14 @@ testCases.zip = {
   }
 };
 
+testCases.geojson = {
+  component: DownloadButton,
+  description: 'DownloadButton for GeoJSON',
+  props: {
+    href: '../files/sample.geojson'
+  }
+};
+
 testCases.prose = {
   description: 'DownloadButton with prose class',
   element: (
