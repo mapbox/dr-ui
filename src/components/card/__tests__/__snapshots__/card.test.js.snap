@@ -30,7 +30,7 @@ exports[`card Card with image renders as expected 1`] = `
           className="dr-ui--level-indicator flex flex--center-cross"
         >
           <div
-            className="w6 bg-orange align-middle mr3"
+            className="w6 bg-orange mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -39,7 +39,7 @@ exports[`card Card with image renders as expected 1`] = `
             }
           />
           <div
-            className="w6 bg-orange align-middle mr3"
+            className="w6 bg-orange mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -48,7 +48,7 @@ exports[`card Card with image renders as expected 1`] = `
             }
           />
           <div
-            className="w6 bg-orange-light align-middle mr3"
+            className="w6 bg-orange-light mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -117,7 +117,7 @@ exports[`card Card with no image renders as expected 1`] = `
           className="dr-ui--level-indicator flex flex--center-cross"
         >
           <div
-            className="w6 bg-orange align-middle mr3"
+            className="w6 bg-orange mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -126,7 +126,7 @@ exports[`card Card with no image renders as expected 1`] = `
             }
           />
           <div
-            className="w6 bg-orange align-middle mr3"
+            className="w6 bg-orange mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -135,7 +135,7 @@ exports[`card Card with no image renders as expected 1`] = `
             }
           />
           <div
-            className="w6 bg-orange-light align-middle mr3"
+            className="w6 bg-orange-light mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -217,7 +217,7 @@ exports[`card Card without description renders as expected 1`] = `
           className="dr-ui--level-indicator flex flex--center-cross"
         >
           <div
-            className="w6 bg-orange align-middle mr3"
+            className="w6 bg-orange mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -226,7 +226,7 @@ exports[`card Card without description renders as expected 1`] = `
             }
           />
           <div
-            className="w6 bg-orange align-middle mr3"
+            className="w6 bg-orange mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -235,7 +235,7 @@ exports[`card Card without description renders as expected 1`] = `
             }
           />
           <div
-            className="w6 bg-orange-light align-middle mr3"
+            className="w6 bg-orange-light mr3"
             style={
               Object {
                 "borderRadius": "1px",
