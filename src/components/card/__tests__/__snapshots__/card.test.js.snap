@@ -27,10 +27,10 @@ exports[`card Card with image renders as expected 1`] = `
         className="inline-block mr18 txt-s txt-bold"
       >
         <div
-          className="dr-ui--level-indicator flex-parent flex-parent--center-cross"
+          className="dr-ui--level-indicator flex flex--center-cross"
         >
           <div
-            className="inline-block w6 bg-orange align-middle mr3"
+            className="w6 bg-orange align-middle mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -39,7 +39,7 @@ exports[`card Card with image renders as expected 1`] = `
             }
           />
           <div
-            className="inline-block w6 bg-orange align-middle mr3"
+            className="w6 bg-orange align-middle mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -48,7 +48,7 @@ exports[`card Card with image renders as expected 1`] = `
             }
           />
           <div
-            className="inline-block w6 bg-orange-light align-middle mr3"
+            className="w6 bg-orange-light align-middle mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -57,7 +57,7 @@ exports[`card Card with image renders as expected 1`] = `
             }
           />
           <div
-            className="inline-block color-gray ml3"
+            className="color-gray ml3"
           >
             Intermediate
           </div>
@@ -114,10 +114,10 @@ exports[`card Card with no image renders as expected 1`] = `
         className="inline-block mr18 txt-s txt-bold"
       >
         <div
-          className="dr-ui--level-indicator flex-parent flex-parent--center-cross"
+          className="dr-ui--level-indicator flex flex--center-cross"
         >
           <div
-            className="inline-block w6 bg-orange align-middle mr3"
+            className="w6 bg-orange align-middle mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -126,7 +126,7 @@ exports[`card Card with no image renders as expected 1`] = `
             }
           />
           <div
-            className="inline-block w6 bg-orange align-middle mr3"
+            className="w6 bg-orange align-middle mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -135,7 +135,7 @@ exports[`card Card with no image renders as expected 1`] = `
             }
           />
           <div
-            className="inline-block w6 bg-orange-light align-middle mr3"
+            className="w6 bg-orange-light align-middle mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -144,7 +144,7 @@ exports[`card Card with no image renders as expected 1`] = `
             }
           />
           <div
-            className="inline-block color-gray ml3"
+            className="color-gray ml3"
           >
             Intermediate
           </div>
@@ -214,10 +214,10 @@ exports[`card Card without description renders as expected 1`] = `
         className="inline-block mr18 txt-s txt-bold"
       >
         <div
-          className="dr-ui--level-indicator flex-parent flex-parent--center-cross"
+          className="dr-ui--level-indicator flex flex--center-cross"
         >
           <div
-            className="inline-block w6 bg-orange align-middle mr3"
+            className="w6 bg-orange align-middle mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -226,7 +226,7 @@ exports[`card Card without description renders as expected 1`] = `
             }
           />
           <div
-            className="inline-block w6 bg-orange align-middle mr3"
+            className="w6 bg-orange align-middle mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -235,7 +235,7 @@ exports[`card Card without description renders as expected 1`] = `
             }
           />
           <div
-            className="inline-block w6 bg-orange-light align-middle mr3"
+            className="w6 bg-orange-light align-middle mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -244,7 +244,7 @@ exports[`card Card without description renders as expected 1`] = `
             }
           />
           <div
-            className="inline-block color-gray ml3"
+            className="color-gray ml3"
           >
             Intermediate
           </div>
