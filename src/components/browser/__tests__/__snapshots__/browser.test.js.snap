@@ -8,7 +8,7 @@ exports[`browser With image renders as expected 1`] = `
     className="bg-gray h30-mm h18 round-t"
   >
     <div
-      className="color-white flex-parent flex-parent--center-cross h30-mm h18 px6"
+      className="color-white flex flex--center-cross h30-mm h18 px6"
     >
       <span
         className="color-red-light"
@@ -76,15 +76,10 @@ exports[`browser With image renders as expected 1`] = `
     className="block-mm none"
   >
     <div
-      className="h30 bg-gray-faint color-gray flex-parent flex-parent--space-between-main px6 flex-parent--center-cross"
+      className="h30 bg-gray-faint color-gray flex flex--space-between-main px6 flex--center-cross"
     >
       <div
-        className="flex-parent-inline flex-parent--space-between-main flex-parent--center-cross mr18"
-        style={
-          Object {
-            "width": "70px",
-          }
-        }
+        className="inline-flex flex--space-between-main flex--center-cross mr18 w70"
       >
         <svg
           className="events-none icon"
@@ -136,15 +131,10 @@ exports[`browser With image renders as expected 1`] = `
         </svg>
       </div>
       <div
-        className="w120 h18 bg-white round-full flex-child--grow px12"
+        className="w120 h18 bg-white round-full flex-child-grow px12"
       />
       <div
-        className="flex-parent-inline flex-parent--space-between-main align-r flex-parent--center-cross ml18"
-        style={
-          Object {
-            "width": "70px",
-          }
-        }
+        className="inline-flex flex--space-between-main align-r flex--center-cross ml18 w70"
       >
         <svg
           className="events-none icon"
@@ -213,7 +203,7 @@ exports[`browser With video renders as expected 1`] = `
     className="bg-gray h30-mm h18 round-t"
   >
     <div
-      className="color-white flex-parent flex-parent--center-cross h30-mm h18 px6"
+      className="color-white flex flex--center-cross h30-mm h18 px6"
     >
       <span
         className="color-red-light"
@@ -281,15 +271,10 @@ exports[`browser With video renders as expected 1`] = `
     className="block-mm none"
   >
     <div
-      className="h30 bg-gray-faint color-gray flex-parent flex-parent--space-between-main px6 flex-parent--center-cross"
+      className="h30 bg-gray-faint color-gray flex flex--space-between-main px6 flex--center-cross"
     >
       <div
-        className="flex-parent-inline flex-parent--space-between-main flex-parent--center-cross mr18"
-        style={
-          Object {
-            "width": "70px",
-          }
-        }
+        className="inline-flex flex--space-between-main flex--center-cross mr18 w70"
       >
         <svg
           className="events-none icon"
@@ -341,15 +326,10 @@ exports[`browser With video renders as expected 1`] = `
         </svg>
       </div>
       <div
-        className="w120 h18 bg-white round-full flex-child--grow px12"
+        className="w120 h18 bg-white round-full flex-child-grow px12"
       />
       <div
-        className="flex-parent-inline flex-parent--space-between-main align-r flex-parent--center-cross ml18"
-        style={
-          Object {
-            "width": "70px",
-          }
-        }
+        className="inline-flex flex--space-between-main align-r flex--center-cross ml18 w70"
       >
         <svg
           className="events-none icon"
