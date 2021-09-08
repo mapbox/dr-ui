@@ -1,8 +1,16 @@
 # Changelog
 
+## Unreleased
+
+- 🚨 Update to Assembly v1.
+
+## 4.2.2
+
+- Fix issue in `NavigationAccordion` to handle pages that do not have a parent. [#479](https://github.com/mapbox/dr-ui/pull/479)
+
 ## 4.2.1
 
-- Fix release 
+- Fix release
 
 ## 4.2.0
 

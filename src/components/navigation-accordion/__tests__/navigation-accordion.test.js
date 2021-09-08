@@ -36,4 +36,28 @@ describe('navigation-accordion', () => {
       expect(tree).toMatchSnapshot();
     });
   });
+
+  describe(testCases.noParent.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      Object.defineProperty(document, 'body', {
+        value: {
+          clientWidth: 1000
+        }
+      });
+
+      testCase = testCases.noParent;
+      wrapper = renderer.create(
+        React.createElement(testCase.component, testCase.props)
+      );
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });
