@@ -6,7 +6,7 @@ exports[`level-indicator Basic renders as expected 1`] = `
     className="dr-ui--level-indicator flex flex--center-cross"
   >
     <div
-      className="w6 bg-green mr3"
+      className="w6 bg-green flex-child-no-shrink mr3"
       style={
         Object {
           "borderRadius": "1px",
@@ -15,7 +15,7 @@ exports[`level-indicator Basic renders as expected 1`] = `
       }
     />
     <div
-      className="w6 bg-green-light mr3"
+      className="w6 bg-green-light flex-child-no-shrink mr3"
       style={
         Object {
           "borderRadius": "1px",
@@ -24,7 +24,7 @@ exports[`level-indicator Basic renders as expected 1`] = `
       }
     />
     <div
-      className="w6 bg-green-light mr3"
+      className="w6 bg-green-light flex-child-no-shrink mr3"
       style={
         Object {
           "borderRadius": "1px",
@@ -42,7 +42,7 @@ exports[`level-indicator Basic renders as expected 1`] = `
     className="dr-ui--level-indicator flex flex--center-cross"
   >
     <div
-      className="w6 bg-orange mr3"
+      className="w6 bg-orange flex-child-no-shrink mr3"
       style={
         Object {
           "borderRadius": "1px",
@@ -51,7 +51,7 @@ exports[`level-indicator Basic renders as expected 1`] = `
       }
     />
     <div
-      className="w6 bg-orange mr3"
+      className="w6 bg-orange flex-child-no-shrink mr3"
       style={
         Object {
           "borderRadius": "1px",
@@ -60,7 +60,7 @@ exports[`level-indicator Basic renders as expected 1`] = `
       }
     />
     <div
-      className="w6 bg-orange-light mr3"
+      className="w6 bg-orange-light flex-child-no-shrink mr3"
       style={
         Object {
           "borderRadius": "1px",
@@ -78,7 +78,7 @@ exports[`level-indicator Basic renders as expected 1`] = `
     className="dr-ui--level-indicator flex flex--center-cross"
   >
     <div
-      className="w6 bg-red mr3"
+      className="w6 bg-red flex-child-no-shrink mr3"
       style={
         Object {
           "borderRadius": "1px",
@@ -87,7 +87,7 @@ exports[`level-indicator Basic renders as expected 1`] = `
       }
     />
     <div
-      className="w6 bg-red mr3"
+      className="w6 bg-red flex-child-no-shrink mr3"
       style={
         Object {
           "borderRadius": "1px",
@@ -96,7 +96,7 @@ exports[`level-indicator Basic renders as expected 1`] = `
       }
     />
     <div
-      className="w6 bg-red mr3"
+      className="w6 bg-red flex-child-no-shrink mr3"
       style={
         Object {
           "borderRadius": "1px",

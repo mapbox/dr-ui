@@ -34,7 +34,7 @@ class LevelIndicator extends React.PureComponent {
             height: '8px',
             borderRadius: '1px'
           }}
-          className={`w6 bg-${squareColor} mr3`}
+          className={`w6 bg-${squareColor} flex-child-no-shrink mr3`}
         />
       );
     });
