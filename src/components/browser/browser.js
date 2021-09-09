@@ -21,7 +21,7 @@ class Browser extends React.PureComponent {
           </div>
         </div>
         <div className="block-mm none">
-          <div className="h30 bg-gray-faint color-gray flex flex--space-between-main px6 flex--center-cross">
+          <div className="h30 bg-gray-lighter color-gray flex flex--space-between-main px6 flex--center-cross">
             <div className="inline-flex flex--space-between-main flex--center-cross mr18 w70">
               <Icon name="arrow-left" />
               <Icon name="arrow-right" />
