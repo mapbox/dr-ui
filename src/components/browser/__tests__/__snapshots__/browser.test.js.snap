@@ -76,7 +76,7 @@ exports[`browser With image renders as expected 1`] = `
     className="block-mm none"
   >
     <div
-      className="h30 bg-gray-faint color-gray flex flex--space-between-main px6 flex--center-cross"
+      className="h30 bg-gray-lighter color-gray flex flex--space-between-main px6 flex--center-cross"
     >
       <div
         className="inline-flex flex--space-between-main flex--center-cross mr18 w70"
@@ -271,7 +271,7 @@ exports[`browser With video renders as expected 1`] = `
     className="block-mm none"
   >
     <div
-      className="h30 bg-gray-faint color-gray flex flex--space-between-main px6 flex--center-cross"
+      className="h30 bg-gray-lighter color-gray flex flex--space-between-main px6 flex--center-cross"
     >
       <div
         className="inline-flex flex--space-between-main flex--center-cross mr18 w70"
