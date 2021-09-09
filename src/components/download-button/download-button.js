@@ -6,8 +6,12 @@ import PropTypes from 'prop-types';
 export default class DownloadButton extends React.PureComponent {
   render() {
     const { href, text } = this.props;
-    const fileType = href.split('.').pop().toUpperCase();
+    let fileType = href.split('.').pop().toUpperCase();
     const fileName = href.split('/').pop();
+
+    if (fileType === 'GEOJSON') {
+      fileType = 'GeoJSON';
+    }
 
     return (
       <Button
