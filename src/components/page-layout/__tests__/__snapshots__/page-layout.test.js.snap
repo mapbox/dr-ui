@@ -593,7 +593,7 @@ Array [
     className="fixed block none-mm mx24 my24 z5 bottom right"
   >
     <div
-      className="block mx24 my24 z5"
+      className="mx24 my24 z5"
     >
       <div
         className="inline-block"
@@ -604,7 +604,7 @@ Array [
       >
         <button
           aria-label="Back to top"
-          className="btn--blue w60 h60 px0 round-full shadow-darken25 color-white flex-parent flex-parent--center-main flex-parent--center-cross"
+          className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
           disabled={false}
           onClick={[Function]}
           type="button"
@@ -1014,7 +1014,7 @@ Array [
     className="fixed block none-mm mx24 my24 z5 bottom right"
   >
     <div
-      className="block mx24 my24 z5"
+      className="mx24 my24 z5"
     >
       <div
         className="inline-block"
@@ -1025,7 +1025,7 @@ Array [
       >
         <button
           aria-label="Back to top"
-          className="btn--blue w60 h60 px0 round-full shadow-darken25 color-white flex-parent flex-parent--center-main flex-parent--center-cross"
+          className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
           disabled={false}
           onClick={[Function]}
           type="button"
@@ -1204,7 +1204,7 @@ Array [
     className="fixed block none-mm mx24 my24 z5 bottom right"
   >
     <div
-      className="block mx24 my24 z5"
+      className="mx24 my24 z5"
     >
       <div
         className="inline-block"
@@ -1215,7 +1215,7 @@ Array [
       >
         <button
           aria-label="Back to top"
-          className="btn--blue w60 h60 px0 round-full shadow-darken25 color-white flex-parent flex-parent--center-main flex-parent--center-cross"
+          className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
           disabled={false}
           onClick={[Function]}
           type="button"
@@ -1792,7 +1792,7 @@ Array [
     className="fixed block none-mm mx24 my24 z5 bottom right"
   >
     <div
-      className="block mx24 my24 z5"
+      className="mx24 my24 z5"
     >
       <div
         className="inline-block"
@@ -1803,7 +1803,7 @@ Array [
       >
         <button
           aria-label="Back to top"
-          className="btn--blue w60 h60 px0 round-full shadow-darken25 color-white flex-parent flex-parent--center-main flex-parent--center-cross"
+          className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
           disabled={false}
           onClick={[Function]}
           type="button"
@@ -2127,7 +2127,7 @@ Array [
     className="fixed block none-mm mx24 my24 z5 bottom right"
   >
     <div
-      className="block mx24 my24 z5"
+      className="mx24 my24 z5"
     >
       <div
         className="inline-block"
@@ -2138,7 +2138,7 @@ Array [
       >
         <button
           aria-label="Back to top"
-          className="btn--blue w60 h60 px0 round-full shadow-darken25 color-white flex-parent flex-parent--center-main flex-parent--center-cross"
+          className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
           disabled={false}
           onClick={[Function]}
           type="button"

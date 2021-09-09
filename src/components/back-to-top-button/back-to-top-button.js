@@ -13,7 +13,7 @@ export default class BackToTopButton extends React.PureComponent {
       window.scroll(0, 0);
     }
     return (
-      <div className="block mx24 my24 z5">
+      <div className="mx24 my24 z5">
         <PopoverTrigger
           respondsToClick={false}
           respondsToHover={true}
@@ -28,7 +28,7 @@ export default class BackToTopButton extends React.PureComponent {
             onClick={handleClick}
             passthroughProps={{
               className:
-                'btn--blue w60 h60 px0 round-full shadow-darken25 color-white flex-parent flex-parent--center-main flex-parent--center-cross',
+                'btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross',
               'aria-label': 'Back to top'
             }}
           >
