@@ -6,6 +6,10 @@ This release updates to Assembly v1. [#481](https://github.com/mapbox/dr-ui/pull
 
 - 🚨 Replace `customStyles` prop in `Tag` with `customBorder`, `customColor,` and `customBackground`. The new props accept class names.
 
+## 4.2.3
+
+- Fix casing for `DownloadButton` with GeoJSON filetype. [#484](https://github.com/mapbox/dr-ui/pull/484)
+
 ## 4.2.2
 
 - Fix issue in `NavigationAccordion` to handle pages that do not have a parent. [#479](https://github.com/mapbox/dr-ui/pull/479)
