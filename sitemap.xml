@@ -4,22 +4,22 @@
         <loc>https://mapbox.github.io/dr-ui/changelog</loc>
     </url>
     <url>
+        <loc>https://mapbox.github.io/dr-ui/components</loc>
+    </url>
+    <url>
         <loc>https://mapbox.github.io/dr-ui/examples</loc>
     </url>
     <url>
         <loc>https://mapbox.github.io/dr-ui/guides</loc>
     </url>
     <url>
-        <loc>https://mapbox.github.io/dr-ui/components</loc>
-    </url>
-    <url>
         <loc>https://mapbox.github.io/dr-ui/examples/example-1</loc>
     </url>
     <url>
-        <loc>https://mapbox.github.io/dr-ui/examples/example-3</loc>
+        <loc>https://mapbox.github.io/dr-ui/examples/example-2</loc>
     </url>
     <url>
-        <loc>https://mapbox.github.io/dr-ui/guides/a11y</loc>
+        <loc>https://mapbox.github.io/dr-ui/examples/example-3</loc>
     </url>
     <url>
         <loc>https://mapbox.github.io/dr-ui/examples/example-4</loc>
@@ -28,10 +28,16 @@
         <loc>https://mapbox.github.io/dr-ui/examples/example-5</loc>
     </url>
     <url>
+        <loc>https://mapbox.github.io/dr-ui/guides/a11y</loc>
+    </url>
+    <url>
         <loc>https://mapbox.github.io/dr-ui/guides/batfish-helpers</loc>
     </url>
     <url>
         <loc>https://mapbox.github.io/dr-ui/guides/grouped-guides</loc>
+    </url>
+    <url>
+        <loc>https://mapbox.github.io/dr-ui/guides/multi-structured</loc>
     </url>
     <url>
         <loc>https://mapbox.github.io/dr-ui/guides/page-layout</loc>
@@ -40,18 +46,12 @@
         <loc>https://mapbox.github.io/dr-ui/guides/split-pages</loc>
     </url>
     <url>
-        <loc>https://mapbox.github.io/dr-ui/guides/multi-structured</loc>
-    </url>
-    <url>
-        <loc>https://mapbox.github.io/dr-ui/examples/example-2</loc>
-    </url>
-    <url>
         <loc>https://mapbox.github.io/dr-ui/guides/grouped-guides/file-structure</loc>
     </url>
     <url>
-        <loc>https://mapbox.github.io/dr-ui/guides/grouped-guides/resulting-ui</loc>
+        <loc>https://mapbox.github.io/dr-ui/guides/grouped-guides/frontmatter</loc>
     </url>
     <url>
-        <loc>https://mapbox.github.io/dr-ui/guides/grouped-guides/frontmatter</loc>
+        <loc>https://mapbox.github.io/dr-ui/guides/grouped-guides/resulting-ui</loc>
     </url>
 </urlset>
