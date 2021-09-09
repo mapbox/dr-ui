@@ -34,14 +34,14 @@ class LevelIndicator extends React.PureComponent {
             height: '8px',
             borderRadius: '1px'
           }}
-          className={`inline-block w6 bg-${squareColor} align-middle mr3`}
+          className={`w6 bg-${squareColor} flex-child-no-shrink mr3`}
         />
       );
     });
     return (
-      <div className="dr-ui--level-indicator flex-parent flex-parent--center-cross">
+      <div className="dr-ui--level-indicator flex flex--center-cross">
         {levelSquares}
-        <div className="inline-block color-gray ml3">{levelLabel}</div>
+        <div className="color-gray ml3">{levelLabel}</div>
       </div>
     );
   }
