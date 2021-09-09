@@ -9,19 +9,13 @@ exports[`map-wrapper Basic renders as expected 1`] = `
   }
 >
   <div
-    className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
-    style={
-      Object {
-        "background": "#feefe2",
-        "color": "#78471c",
-      }
-    }
+    className="dr-ui--note py18 px18 round flex mb18 bg-orange-faint color-orange-dark"
   >
     <div
-      className="flex-child mr18 none block-mm pt3"
+      className="mr18 none block-mm pt3"
     >
       <div
-        className="bg-orange-light round-full color-orange flex-parent flex-parent--center-main flex-parent--center-cross"
+        className="bg-orange-lighter round-full color-orange flex flex--center-main flex--center-cross"
         style={
           Object {
             "height": 50,
@@ -48,10 +42,10 @@ exports[`map-wrapper Basic renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="flex-child prose"
+      className="w-full prose"
     >
       <div
-        className="txt-bold txt-m mb6"
+        className="txt-bold mb6"
       >
         Mapbox GL unsupported
       </div>
@@ -70,19 +64,13 @@ exports[`map-wrapper reason='insufficient ECMAScript 6 support' renders as expec
   }
 >
   <div
-    className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
-    style={
-      Object {
-        "background": "#feefe2",
-        "color": "#78471c",
-      }
-    }
+    className="dr-ui--note py18 px18 round flex mb18 bg-orange-faint color-orange-dark"
   >
     <div
-      className="flex-child mr18 none block-mm pt3"
+      className="mr18 none block-mm pt3"
     >
       <div
-        className="bg-orange-light round-full color-orange flex-parent flex-parent--center-main flex-parent--center-cross"
+        className="bg-orange-lighter round-full color-orange flex flex--center-main flex--center-cross"
         style={
           Object {
             "height": 50,
@@ -109,10 +97,10 @@ exports[`map-wrapper reason='insufficient ECMAScript 6 support' renders as expec
       </div>
     </div>
     <div
-      className="flex-child prose"
+      className="w-full prose"
     >
       <div
-        className="txt-bold txt-m mb6"
+        className="txt-bold mb6"
       >
         Mapbox GL unsupported
       </div>
@@ -161,19 +149,13 @@ exports[`map-wrapper reason='insufficient WebGL support' renders as expected 1`]
   }
 >
   <div
-    className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
-    style={
-      Object {
-        "background": "#feefe2",
-        "color": "#78471c",
-      }
-    }
+    className="dr-ui--note py18 px18 round flex mb18 bg-orange-faint color-orange-dark"
   >
     <div
-      className="flex-child mr18 none block-mm pt3"
+      className="mr18 none block-mm pt3"
     >
       <div
-        className="bg-orange-light round-full color-orange flex-parent flex-parent--center-main flex-parent--center-cross"
+        className="bg-orange-lighter round-full color-orange flex flex--center-main flex--center-cross"
         style={
           Object {
             "height": 50,
@@ -200,10 +182,10 @@ exports[`map-wrapper reason='insufficient WebGL support' renders as expected 1`]
       </div>
     </div>
     <div
-      className="flex-child prose"
+      className="w-full prose"
     >
       <div
-        className="txt-bold txt-m mb6"
+        className="txt-bold mb6"
       >
         Mapbox GL unsupported
       </div>

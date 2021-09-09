@@ -167,11 +167,9 @@ OverviewHeader.propTypes = {
   customTagProps: PropTypes.shape({
     customLabel: PropTypes.string.isRequired,
     customTooltipText: PropTypes.string.isRequired,
-    customStyles: PropTypes.shape({
-      background: PropTypes.string.isRequired,
-      color: PropTypes.string.isRequired,
-      borderColor: PropTypes.string.isRequired
-    }).isRequired
+    customBackground: PropTypes.string.isRequired,
+    customColor: PropTypes.string.isRequired,
+    customBorder: PropTypes.string.isRequired
   }),
   /** image of the product */
   image: PropTypes.node,

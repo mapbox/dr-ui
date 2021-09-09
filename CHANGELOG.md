@@ -2,7 +2,9 @@
 
 ## Unreleased
 
-- 🚨 Update to Assembly v1.
+🚨 Update to Assembly v1.
+
+- Replaced `customStyles` prop in `Tag` with `customBorder`, `customColor,` and `customBackground`. The new props accept class names.
 
 ## 4.2.2
 

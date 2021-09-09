@@ -13,8 +13,15 @@ class ProductMenu extends React.PureComponent {
       customTooltipText: item.customTagProps
         ? item.customTagProps.customTooltipText
         : undefined,
-      customStyles: item.customTagProps
-        ? item.customTagProps.customStyles
+
+      customBackground: item.customTagProps
+        ? item.customTagProps.customBackground
+        : undefined,
+      customColor: item.customTagProps
+        ? item.customTagProps.customColor
+        : undefined,
+      customBorder: item.customTagProps
+        ? item.customTagProps.customBorder
         : undefined
     };
     return (
@@ -51,11 +58,9 @@ ProductMenu.propTypes = {
   customTagProps: PropTypes.shape({
     customLabel: PropTypes.string.isRequired,
     customTooltipText: PropTypes.string.isRequired,
-    customStyles: PropTypes.shape({
-      background: PropTypes.string.isRequired,
-      color: PropTypes.string.isRequired,
-      borderColor: PropTypes.string.isRequired
-    }).isRequired
+    customBackground: PropTypes.string.isRequired,
+    customColor: PropTypes.string.isRequired,
+    customBorder: PropTypes.string.isRequired
   }),
   lightText: PropTypes.bool,
   homePage: PropTypes.string.isRequired

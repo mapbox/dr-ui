@@ -7,7 +7,7 @@ class Image extends React.PureComponent {
     const { color, icon } = this.props;
     return (
       <div
-        className={`bg-${color}-light round-full color-${color} flex-parent flex-parent--center-main flex-parent--center-cross`}
+        className={`bg-${color}-lighter round-full color-${color} flex flex--center-main flex--center-cross`}
         style={{ width: 50, height: 50 }}
       >
         <Icon name={icon} size={40} />
@@ -35,81 +35,73 @@ const themes = {
     image: <Image icon="book" color="gray" />,
     label: 'Note',
     icon: 'book',
-    styles: {
-      background: '#f4f7fb',
-      color: '#425870'
-    }
+
+    background: 'bg-gray-faint',
+    color: 'color-gray-dark'
   },
   warning: {
     image: <Image icon="alert" color="orange" />,
     label: 'Warning',
     icon: 'alert',
-    styles: {
-      background: '#feefe2',
-      color: '#78471c',
-      borderColor: '#ba6e2c'
-    }
+
+    background: 'bg-orange-faint',
+    color: 'color-orange-dark',
+    border: 'border--orange-dark'
   },
   error: {
     image: <Image icon="alert" color="red" />,
     label: 'Error',
     icon: 'alert',
-    styles: {
-      background: '#fbe5e5',
-      color: '#9b3134'
-    }
+
+    background: 'bg-red-faint',
+    color: 'color-red-dark'
   },
   beta: {
     image: <Image icon="lightning" color="blue" />,
     label: 'Beta',
     icon: 'lightning',
     tooltipText: 'This feature is in public beta and is subject to changes.',
-    styles: {
-      background: '#f1f3fd',
-      color: '#0c248d',
-      borderColor: '#0428c8'
-    }
+
+    background: 'bg-blue-faint',
+    color: 'color-blue-dark',
+    border: 'border--blue-dark'
   },
   new: {
     image: <Image icon="plus" color="green" />,
     label: 'New!',
     icon: 'plus',
     tooltipText: 'This feature was released recently.',
-    styles: {
-      background: '#e8f5ee',
-      color: '#15603d',
-      borderColor: '#378645'
-    }
+
+    background: 'bg-green-faint',
+    color: 'color-green-dark',
+    border: 'border--green-dark'
   },
   download: {
     image: <Image icon="arrow-down" color="purple" />,
     label: 'Download',
     icon: 'arrow-down',
-    styles: {
-      background: '#f2effa',
-      color: '#452f92'
-    }
+
+    background: 'bg-purple-faint',
+    color: 'color-purple-dark'
   },
   fundamentals: {
     label: 'Fundamentals',
     icon: 'bookmark',
     tooltipText:
       'The concepts described here are fundamental to using this product.',
-    styles: {
-      background: '#fff0f7',
-      color: '#cf1c61',
-      borderColor: '#fd8ac0'
-    }
+
+    background: 'bg-pink-faint',
+    color: 'color-pink-dark',
+    border: 'border--pink-dark'
   },
   pricing: {
     image: <Image icon="creditcard" color="green" />,
     label: 'Pricing',
     tooltipText: 'This contains information about product pricing.',
-    styles: {
-      background: '#e8f5ee',
-      color: '#15603d',
-      borderColor: '#378645'
-    }
+
+    background: 'bg-green-faint',
+    color: 'color-green-dark',
+    border: 'border--green-dark'
   }
 };
 /* duplicate themes */
