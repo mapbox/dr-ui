@@ -2,7 +2,7 @@
 
 ## 4.2.3
 
-- Fix casing for `DownloadButton` with GeoJSON filetype [#484](https://github.com/mapbox/dr-ui/pull/484)
+- Fix casing for `DownloadButton` with GeoJSON filetype. [#484](https://github.com/mapbox/dr-ui/pull/484)
 
 ## 4.2.2
 
