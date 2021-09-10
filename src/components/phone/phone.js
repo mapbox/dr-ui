@@ -16,22 +16,19 @@ class Phone extends React.PureComponent {
         'shadow-darken25 mx-auto border border--gray-dark relative bg-darken75',
         {
           wmax300: portrait,
-          'wmax600 flex-parent': landscape
+          'wmax600 flex': landscape
         }
       ),
       containerStyles: {
         borderRadius: '30px',
         borderWidth: '12px'
       },
-      notchContainerClasses: classnames(
-        'flex-parent flex-parent--center-cross z1 relative',
-        {
-          'h-auto': landscape,
-          w18: landscape && ios,
-          'bg-gray-dark w36 pl12': android && landscape,
-          'round-t-full': portrait && ios
-        }
-      ),
+      notchContainerClasses: classnames('flex flex--center-cross z1 relative', {
+        'h-auto': landscape,
+        w18: landscape && ios,
+        'bg-gray-dark w36 pl12': android && landscape,
+        'round-t-full': portrait && ios
+      }),
       notchContainerStyles: {
         borderRadius:
           portrait || (android && landscape) ? '0' : '18px 18px 0 0 '
@@ -59,16 +56,13 @@ class Phone extends React.PureComponent {
         marginRight: portrait && '-10px',
         bottom: landscape && '-10px'
       },
-      notchClasses: classnames(
-        'bg-gray-dark flex-child flex-child--grow flex-parent relative',
-        {
-          'flex-parent--center-main mx-auto': portrait,
-          'h18 wmax120': portrait && ios,
-          'h120 flex-parent--center-main flex-parent--column flex-parent--column-reverse':
-            landscape && ios,
-          'w-full h36 pt12': android && portrait
-        }
-      ),
+      notchClasses: classnames('bg-gray-dark flex-child-grow flex relative', {
+        'flex--center-main mx-auto': portrait,
+        'h18 wmax120': portrait && ios,
+        'h120 flex--center-main flex--column flex--column-reverse':
+          landscape && ios,
+        'w-full h36 pt12': android && portrait
+      }),
       notchStyles: {
         borderRadius: portrait
           ? ios
@@ -78,11 +72,11 @@ class Phone extends React.PureComponent {
           ? '0 12px 12px 0'
           : '0'
       },
-      speakerClasses: classnames('bg-lighten10 round-full flex-child', {
+      speakerClasses: classnames('bg-gray-deep round-full', {
         'w60 h6': portrait,
         'h60 w6': landscape
       }),
-      cameraClasses: classnames('bg-lighten10 round-full w6 h6 flex-child', {
+      cameraClasses: classnames('bg-gray-deep round-full w6 h6', {
         'ml6 mr-neg12': portrait && ios,
         'mb6 mt-neg12': landscape && ios,
         relative: android && portrait,
@@ -120,21 +114,21 @@ class Phone extends React.PureComponent {
         'h3 round-b w24 none block-mm': landscape
       }),
       soundContainerClasses: classnames(
-        'flex-parent absolute flex-parent--space-between-main',
+        'flex absolute flex--space-between-main',
         {
-          'flex-parent--column h60': portrait,
+          'flex--column h60': portrait,
           w60: landscape
         }
       ),
       receiverClasses: classnames(
-        'flex-parent bg-gray-dark flex-parent--center-main flex-parent--center-cross',
+        'flex bg-gray-dark flex--center-main flex--center-cross',
         {
           h36: portrait,
           w36: landscape
         }
       ),
       screenClasses: classnames(
-        'relative flex-parent flex-parent--center-cross flex-parent--center-main ',
+        'relative flex flex--center-cross flex--center-main ',
         {
           'hmin120-mm hmin60': landscape,
           hmin300: portrait
@@ -198,7 +192,7 @@ class Phone extends React.PureComponent {
         </div>
         {/* screen */}
         <div style={config.screenStyles} className={config.screenClasses}>
-          <div className="loading loading--dark absolute z0" />
+          <div className="loading mx-auto loading--dark absolute z0" />
           <div className="relative">{props.children}</div>
         </div>
         {/* receiver */}
