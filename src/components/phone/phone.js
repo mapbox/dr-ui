@@ -11,6 +11,8 @@ class Phone extends React.PureComponent {
     const portrait = props.mode === 'portrait';
     const landscape = props.mode === 'landscape';
 
+    const frameHex = '#0e2127'; // bg-gray-dark
+
     const config = {
       containerClasses: classnames(
         'shadow-darken25 mx-auto border border--gray-dark relative bg-darken75',
@@ -23,34 +25,32 @@ class Phone extends React.PureComponent {
         borderRadius: '30px',
         borderWidth: '12px'
       },
-      notchContainerClasses: classnames('flex flex--center-cross z1 relative', {
+      notchContainerClasses: classnames('flex flex--center-cross z2 relative', {
         'h-auto': landscape,
         w18: landscape && ios,
         'bg-gray-dark w36 pl12': android && landscape,
         'round-t-full': portrait && ios
       }),
       notchContainerStyles: {
-        borderRadius:
-          portrait || (android && landscape) ? '0' : '18px 18px 0 0 '
+        borderRadius: portrait || (android && landscape) ? '0' : '18px 18px 0 0'
       },
-      notchCurveLeftClasses: classnames('absolute  ', {
+      notchCurveLeftClasses: classnames('absolute', {
         'top left': portrait
       }),
       notchCurveLeftStyles: {
         background: `radial-gradient(circle at ${
           portrait ? 'bottom left' : 'right top'
-        }, transparent 0, transparent 75%, #23374d 75%, #23374d 100%)`,
+        }, transparent 0, transparent 75%, ${frameHex} 75%, ${frameHex} 100%)`,
         height: '10px',
         width: '10px',
         marginLeft: portrait && '-10px',
         top: landscape && '-10px'
       },
-      notchCurveRightClasses: classnames('absolute ', {
+      notchCurveRightClasses: classnames('absolute', {
         'top right': portrait
       }),
       notchCurveRightStyles: {
-        background:
-          'radial-gradient(circle at bottom right, transparent 0, transparent 75%, #23374d 75%, #23374d 100%)',
+        background: `radial-gradient(circle at bottom right, transparent 0, transparent 75%, ${frameHex} 75%, ${frameHex} 100%)`,
         height: '10px',
         width: '10px',
         marginRight: portrait && '-10px',
@@ -128,7 +128,7 @@ class Phone extends React.PureComponent {
         }
       ),
       screenClasses: classnames(
-        'relative flex flex--center-cross flex--center-main ',
+        'relative flex flex--center-cross flex--center-main z1',
         {
           'hmin120-mm hmin60': landscape,
           hmin300: portrait
@@ -193,7 +193,7 @@ class Phone extends React.PureComponent {
         {/* screen */}
         <div style={config.screenStyles} className={config.screenClasses}>
           <div className="loading mx-auto loading--dark absolute z0" />
-          <div className="relative">{props.children}</div>
+          <div className="relative overflow-hidden">{props.children}</div>
         </div>
         {/* receiver */}
         {android && (
