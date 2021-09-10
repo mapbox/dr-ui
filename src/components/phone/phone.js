@@ -15,7 +15,7 @@ class Phone extends React.PureComponent {
 
     const config = {
       containerClasses: classnames(
-        'shadow-darken25 mx-auto border border--gray-dark relative bg-darken75',
+        'shadow-darken25 mx-auto border border--gray-dark relative bg-gray-deep',
         {
           wmax300: portrait,
           'wmax600 flex': landscape
@@ -192,7 +192,7 @@ class Phone extends React.PureComponent {
         </div>
         {/* screen */}
         <div style={config.screenStyles} className={config.screenClasses}>
-          <div className="loading mx-auto loading--dark absolute z0" />
+          <div className="loading loading--dark absolute z0" />
           <div className="relative overflow-hidden">{props.children}</div>
         </div>
         {/* receiver */}
