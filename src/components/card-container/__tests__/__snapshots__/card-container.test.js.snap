@@ -28,7 +28,7 @@ exports[`card-container Basic renders as expected 1`] = `
       className="mb18 col col--12 col--6-ml"
     >
       <a
-        className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+        className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
         href="path"
       >
         <div
@@ -46,7 +46,6 @@ exports[`card-container Basic renders as expected 1`] = `
           />
         </div>
         <div>
-          
           <div
             className="mb6"
           >
@@ -64,7 +63,7 @@ exports[`card-container Basic renders as expected 1`] = `
       className="mb18 col col--12 col--6-ml"
     >
       <a
-        className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+        className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
         href="path"
       >
         <div
@@ -82,7 +81,6 @@ exports[`card-container Basic renders as expected 1`] = `
           />
         </div>
         <div>
-          
           <div
             className="mb6"
           >
@@ -128,12 +126,10 @@ exports[`card-container Full width renders as expected 1`] = `
       className="mb18 border-b border--darken10"
     >
       <a
-        className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+        className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
         href="path"
       >
-        
         <div>
-          
           <div
             className="mb6"
           >
@@ -151,12 +147,10 @@ exports[`card-container Full width renders as expected 1`] = `
       className="mb18 border-b border--darken10"
     >
       <a
-        className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+        className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
         href="path"
       >
-        
         <div>
-          
           <div
             className="mb6"
           >
@@ -202,7 +196,7 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
       className="mb18 col col--12 col--3-ml"
     >
       <a
-        className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+        className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
         href="path"
       >
         <div
@@ -220,7 +214,6 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
           />
         </div>
         <div>
-          
           <div
             className="mb6"
           >
@@ -238,7 +231,7 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
       className="mb18 col col--12 col--3-ml"
     >
       <a
-        className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+        className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
         href="path"
       >
         <div
@@ -256,7 +249,6 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
           />
         </div>
         <div>
-          
           <div
             className="mb6"
           >
@@ -274,7 +266,7 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
       className="mb18 col col--12 col--3-ml"
     >
       <a
-        className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+        className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
         href="path"
       >
         <div
@@ -292,7 +284,6 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
           />
         </div>
         <div>
-          
           <div
             className="mb6"
           >
@@ -310,7 +301,7 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
       className="mb18 col col--12 col--3-ml"
     >
       <a
-        className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+        className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
         href="path"
       >
         <div
@@ -328,7 +319,6 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
           />
         </div>
         <div>
-          
           <div
             className="mb6"
           >
