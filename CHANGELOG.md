@@ -2,7 +2,9 @@
 
 ## Unreleased
 
-- 🚨 Update to Assembly v1.
+This release updates to Assembly v1. [#481](https://github.com/mapbox/dr-ui/pull/481)
+
+- 🚨 Replace `customStyles` prop in `Tag` with `customBorder`, `customColor,` and `customBackground`. The new props accept class names.
 
 ## 4.2.3
 

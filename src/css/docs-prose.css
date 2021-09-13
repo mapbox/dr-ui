@@ -21,7 +21,7 @@
 /* make links darker in Note to improve color contrast */
 .dr-ui--feedback .link,
 .dr-ui--note a {
-  color: #3151df !important;
+  color: #3f5eeb !important;
 }
 
 /* set code links to slightly darker blue */

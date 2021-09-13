@@ -117,11 +117,9 @@ testCases.customTag = {
     customTagProps: {
       customLabel: 'Custom',
       customTooltipText: 'This is a custom tag.',
-      customStyles: {
-        background: '#FEDADA',
-        color: '#bb2224',
-        borderColor: '#FD8383'
-      }
+      customBackground: 'bg-red-light',
+      customColor: 'color-red-dark',
+      customBorder: 'border--red'
     },
     image: (
       <img

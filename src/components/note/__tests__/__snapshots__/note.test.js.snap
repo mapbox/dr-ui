@@ -2,19 +2,13 @@
 
 exports[`note A legacy note, has same styling as warning renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
-  style={
-    Object {
-      "background": "#feefe2",
-      "color": "#78471c",
-    }
-  }
+  className="dr-ui--note py18 px18 round flex mb18 bg-orange-faint color-orange-dark"
 >
   <div
-    className="flex-child mr18 none block-mm pt3"
+    className="mr18 none block-mm pt3"
   >
     <div
-      className="bg-orange-light round-full color-orange flex-parent flex-parent--center-main flex-parent--center-cross"
+      className="bg-orange-lighter round-full color-orange flex flex--center-main flex--center-cross"
       style={
         Object {
           "height": 50,
@@ -41,10 +35,10 @@ exports[`note A legacy note, has same styling as warning renders as expected 1`]
     </div>
   </div>
   <div
-    className="flex-child prose"
+    className="w-full prose"
   >
     <div
-      className="txt-bold txt-m mb6"
+      className="txt-bold mb6"
     >
       Warning
     </div>
@@ -168,19 +162,13 @@ exports[`note A legacy note, has same styling as warning renders as expected 1`]
 
 exports[`note A note to display an error with steps or links on how to troubleshoot. renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
-  style={
-    Object {
-      "background": "#fbe5e5",
-      "color": "#9b3134",
-    }
-  }
+  className="dr-ui--note py18 px18 round flex mb18 bg-red-faint color-red-dark"
 >
   <div
-    className="flex-child mr18 none block-mm pt3"
+    className="mr18 none block-mm pt3"
   >
     <div
-      className="bg-red-light round-full color-red flex-parent flex-parent--center-main flex-parent--center-cross"
+      className="bg-red-lighter round-full color-red flex flex--center-main flex--center-cross"
       style={
         Object {
           "height": 50,
@@ -207,10 +195,10 @@ exports[`note A note to display an error with steps or links on how to troublesh
     </div>
   </div>
   <div
-    className="flex-child prose"
+    className="w-full prose"
   >
     <div
-      className="txt-bold txt-m mb6"
+      className="txt-bold mb6"
     >
       Error
     </div>
@@ -334,19 +322,13 @@ exports[`note A note to display an error with steps or links on how to troublesh
 
 exports[`note A note to display with a message about new products or features. renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
-  style={
-    Object {
-      "background": "#e8f5ee",
-      "color": "#15603d",
-    }
-  }
+  className="dr-ui--note py18 px18 round flex mb18 bg-green-faint color-green-dark"
 >
   <div
-    className="flex-child mr18 none block-mm pt3"
+    className="mr18 none block-mm pt3"
   >
     <div
-      className="bg-green-light round-full color-green flex-parent flex-parent--center-main flex-parent--center-cross"
+      className="bg-green-lighter round-full color-green flex flex--center-main flex--center-cross"
       style={
         Object {
           "height": 50,
@@ -373,10 +355,10 @@ exports[`note A note to display with a message about new products or features. r
     </div>
   </div>
   <div
-    className="flex-child prose"
+    className="w-full prose"
   >
     <div
-      className="txt-bold txt-m mb6"
+      className="txt-bold mb6"
     >
       New!
     </div>
@@ -500,19 +482,13 @@ exports[`note A note to display with a message about new products or features. r
 
 exports[`note A note to flag information about a beta release/product renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
-  style={
-    Object {
-      "background": "#f1f3fd",
-      "color": "#0c248d",
-    }
-  }
+  className="dr-ui--note py18 px18 round flex mb18 bg-blue-faint color-blue-dark"
 >
   <div
-    className="flex-child mr18 none block-mm pt3"
+    className="mr18 none block-mm pt3"
   >
     <div
-      className="bg-blue-light round-full color-blue flex-parent flex-parent--center-main flex-parent--center-cross"
+      className="bg-blue-lighter round-full color-blue flex flex--center-main flex--center-cross"
       style={
         Object {
           "height": 50,
@@ -539,10 +515,10 @@ exports[`note A note to flag information about a beta release/product renders as
     </div>
   </div>
   <div
-    className="flex-child prose"
+    className="w-full prose"
   >
     <div
-      className="txt-bold txt-m mb6"
+      className="txt-bold mb6"
     >
       Beta
     </div>
@@ -666,19 +642,13 @@ exports[`note A note to flag information about a beta release/product renders as
 
 exports[`note A warning note to let the user know something has changed or will change. renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
-  style={
-    Object {
-      "background": "#feefe2",
-      "color": "#78471c",
-    }
-  }
+  className="dr-ui--note py18 px18 round flex mb18 bg-orange-faint color-orange-dark"
 >
   <div
-    className="flex-child mr18 none block-mm pt3"
+    className="mr18 none block-mm pt3"
   >
     <div
-      className="bg-orange-light round-full color-orange flex-parent flex-parent--center-main flex-parent--center-cross"
+      className="bg-orange-lighter round-full color-orange flex flex--center-main flex--center-cross"
       style={
         Object {
           "height": 50,
@@ -705,10 +675,10 @@ exports[`note A warning note to let the user know something has changed or will 
     </div>
   </div>
   <div
-    className="flex-child prose"
+    className="w-full prose"
   >
     <div
-      className="txt-bold txt-m mb6"
+      className="txt-bold mb6"
     >
       Be careful
     </div>
@@ -832,19 +802,13 @@ exports[`note A warning note to let the user know something has changed or will 
 
 exports[`note Default note renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
-  style={
-    Object {
-      "background": "#f4f7fb",
-      "color": "#425870",
-    }
-  }
+  className="dr-ui--note py18 px18 round flex mb18 bg-gray-faint color-gray-dark"
 >
   <div
-    className="flex-child mr18 none block-mm pt3"
+    className="mr18 none block-mm pt3"
   >
     <div
-      className="bg-gray-light round-full color-gray flex-parent flex-parent--center-main flex-parent--center-cross"
+      className="bg-gray-lighter round-full color-gray flex flex--center-main flex--center-cross"
       style={
         Object {
           "height": 50,
@@ -871,10 +835,10 @@ exports[`note Default note renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="flex-child prose"
+    className="w-full prose"
   >
     <div
-      className="txt-bold txt-m mb6"
+      className="txt-bold mb6"
     >
       Note
     </div>
@@ -887,19 +851,13 @@ exports[`note Default note renders as expected 1`] = `
 
 exports[`note Note with custom title. renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
-  style={
-    Object {
-      "background": "#f4f7fb",
-      "color": "#425870",
-    }
-  }
+  className="dr-ui--note py18 px18 round flex mb18 bg-gray-faint color-gray-dark"
 >
   <div
-    className="flex-child mr18 none block-mm pt3"
+    className="mr18 none block-mm pt3"
   >
     <div
-      className="bg-gray-light round-full color-gray flex-parent flex-parent--center-main flex-parent--center-cross"
+      className="bg-gray-lighter round-full color-gray flex flex--center-main flex--center-cross"
       style={
         Object {
           "height": 50,
@@ -926,10 +884,10 @@ exports[`note Note with custom title. renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="flex-child prose"
+    className="w-full prose"
   >
     <div
-      className="txt-bold txt-m mb6"
+      className="txt-bold mb6"
     >
       A very important note
     </div>
@@ -1053,19 +1011,13 @@ exports[`note Note with custom title. renders as expected 1`] = `
 
 exports[`note download renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
-  style={
-    Object {
-      "background": "#f2effa",
-      "color": "#452f92",
-    }
-  }
+  className="dr-ui--note py18 px18 round flex mb18 bg-purple-faint color-purple-dark"
 >
   <div
-    className="flex-child mr18 none block-mm pt3"
+    className="mr18 none block-mm pt3"
   >
     <div
-      className="bg-purple-light round-full color-purple flex-parent flex-parent--center-main flex-parent--center-cross"
+      className="bg-purple-lighter round-full color-purple flex flex--center-main flex--center-cross"
       style={
         Object {
           "height": 50,
@@ -1092,10 +1044,10 @@ exports[`note download renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="flex-child prose"
+    className="w-full prose"
   >
     <div
-      className="txt-bold txt-m mb6"
+      className="txt-bold mb6"
     >
       Download from vision.mapbox.com/install
     </div>
