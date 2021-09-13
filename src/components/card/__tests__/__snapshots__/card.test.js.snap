@@ -21,44 +21,75 @@ exports[`card Card with image renders as expected 1`] = `
   </div>
   <div>
     <div
-      className="inline-block mr18 txt-s txt-bold"
+      className="flex mb6 txt-bold color-gray txt-s"
     >
       <div
-        className="dr-ui--level-indicator flex flex--center-cross"
+        className="mr12"
       >
         <div
-          className="w6 bg-orange flex-child-no-shrink mr3"
-          style={
-            Object {
-              "borderRadius": "1px",
-              "height": "8px",
-            }
-          }
-        />
-        <div
-          className="w6 bg-orange flex-child-no-shrink mr3"
-          style={
-            Object {
-              "borderRadius": "1px",
-              "height": "8px",
-            }
-          }
-        />
-        <div
-          className="w6 bg-orange-light flex-child-no-shrink mr3"
-          style={
-            Object {
-              "borderRadius": "1px",
-              "height": "8px",
-            }
-          }
-        />
-        <div
-          className="color-gray ml3"
+          className="dr-ui--level-indicator flex flex--center-cross"
         >
-          Intermediate
+          <div
+            className="w6 bg-orange flex-child-no-shrink mr3"
+            style={
+              Object {
+                "borderRadius": "1px",
+                "height": "8px",
+              }
+            }
+          />
+          <div
+            className="w6 bg-orange flex-child-no-shrink mr3"
+            style={
+              Object {
+                "borderRadius": "1px",
+                "height": "8px",
+              }
+            }
+          />
+          <div
+            className="w6 bg-orange-light flex-child-no-shrink mr3"
+            style={
+              Object {
+                "borderRadius": "1px",
+                "height": "8px",
+              }
+            }
+          />
+          <div
+            className="color-gray ml3"
+          >
+            Intermediate
+          </div>
         </div>
       </div>
+      <span
+        className="flex flex--center-cross"
+      >
+        <span
+          className="mr6"
+        >
+          <svg
+            className="events-none icon"
+            focusable="false"
+            role="presentation"
+            style={
+              Object {
+                "height": 18,
+                "width": 18,
+              }
+            }
+          >
+            <use
+              xlinkHref="#icon-code"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            />
+          </svg>
+        </span>
+        <span>
+          JavaScript
+        </span>
+      </span>
     </div>
     <div
       className="mb6"
@@ -81,44 +112,75 @@ exports[`card Card with no image renders as expected 1`] = `
 >
   <div>
     <div
-      className="inline-block mr18 txt-s txt-bold"
+      className="flex mb6 txt-bold color-gray txt-s"
     >
       <div
-        className="dr-ui--level-indicator flex flex--center-cross"
+        className="mr12"
       >
         <div
-          className="w6 bg-orange flex-child-no-shrink mr3"
-          style={
-            Object {
-              "borderRadius": "1px",
-              "height": "8px",
-            }
-          }
-        />
-        <div
-          className="w6 bg-orange flex-child-no-shrink mr3"
-          style={
-            Object {
-              "borderRadius": "1px",
-              "height": "8px",
-            }
-          }
-        />
-        <div
-          className="w6 bg-orange-light flex-child-no-shrink mr3"
-          style={
-            Object {
-              "borderRadius": "1px",
-              "height": "8px",
-            }
-          }
-        />
-        <div
-          className="color-gray ml3"
+          className="dr-ui--level-indicator flex flex--center-cross"
         >
-          Intermediate
+          <div
+            className="w6 bg-orange flex-child-no-shrink mr3"
+            style={
+              Object {
+                "borderRadius": "1px",
+                "height": "8px",
+              }
+            }
+          />
+          <div
+            className="w6 bg-orange flex-child-no-shrink mr3"
+            style={
+              Object {
+                "borderRadius": "1px",
+                "height": "8px",
+              }
+            }
+          />
+          <div
+            className="w6 bg-orange-light flex-child-no-shrink mr3"
+            style={
+              Object {
+                "borderRadius": "1px",
+                "height": "8px",
+              }
+            }
+          />
+          <div
+            className="color-gray ml3"
+          >
+            Intermediate
+          </div>
         </div>
       </div>
+      <span
+        className="flex flex--center-cross"
+      >
+        <span
+          className="mr6"
+        >
+          <svg
+            className="events-none icon"
+            focusable="false"
+            role="presentation"
+            style={
+              Object {
+                "height": 18,
+                "width": 18,
+              }
+            }
+          >
+            <use
+              xlinkHref="#icon-code"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            />
+          </svg>
+        </span>
+        <span>
+          JavaScript
+        </span>
+      </span>
     </div>
     <div
       className="mb6"
@@ -155,44 +217,75 @@ exports[`card Card without description renders as expected 1`] = `
   </div>
   <div>
     <div
-      className="inline-block mr18 txt-s txt-bold"
+      className="flex mb6 txt-bold color-gray txt-s"
     >
       <div
-        className="dr-ui--level-indicator flex flex--center-cross"
+        className="mr12"
       >
         <div
-          className="w6 bg-orange flex-child-no-shrink mr3"
-          style={
-            Object {
-              "borderRadius": "1px",
-              "height": "8px",
-            }
-          }
-        />
-        <div
-          className="w6 bg-orange flex-child-no-shrink mr3"
-          style={
-            Object {
-              "borderRadius": "1px",
-              "height": "8px",
-            }
-          }
-        />
-        <div
-          className="w6 bg-orange-light flex-child-no-shrink mr3"
-          style={
-            Object {
-              "borderRadius": "1px",
-              "height": "8px",
-            }
-          }
-        />
-        <div
-          className="color-gray ml3"
+          className="dr-ui--level-indicator flex flex--center-cross"
         >
-          Intermediate
+          <div
+            className="w6 bg-orange flex-child-no-shrink mr3"
+            style={
+              Object {
+                "borderRadius": "1px",
+                "height": "8px",
+              }
+            }
+          />
+          <div
+            className="w6 bg-orange flex-child-no-shrink mr3"
+            style={
+              Object {
+                "borderRadius": "1px",
+                "height": "8px",
+              }
+            }
+          />
+          <div
+            className="w6 bg-orange-light flex-child-no-shrink mr3"
+            style={
+              Object {
+                "borderRadius": "1px",
+                "height": "8px",
+              }
+            }
+          />
+          <div
+            className="color-gray ml3"
+          >
+            Intermediate
+          </div>
         </div>
       </div>
+      <span
+        className="flex flex--center-cross"
+      >
+        <span
+          className="mr6"
+        >
+          <svg
+            className="events-none icon"
+            focusable="false"
+            role="presentation"
+            style={
+              Object {
+                "height": 18,
+                "width": 18,
+              }
+            }
+          >
+            <use
+              xlinkHref="#icon-code"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            />
+          </svg>
+        </span>
+        <span>
+          JavaScript
+        </span>
+      </span>
     </div>
     <div
       className="mb6"

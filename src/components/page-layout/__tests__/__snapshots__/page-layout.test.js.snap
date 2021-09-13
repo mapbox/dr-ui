@@ -436,30 +436,35 @@ Array [
                       </div>
                       <div>
                         <div
-                          className="mb6"
+                          className="flex mb6 txt-bold color-gray txt-s"
                         >
-                          <div
-                            className="inline-block color-gray txt-s txt-bold"
+                          <span
+                            className="flex flex--center-cross"
                           >
-                            <svg
-                              className="events-none icon inline-block align-t"
-                              focusable="false"
-                              role="presentation"
-                              style={
-                                Object {
-                                  "height": 18,
-                                  "width": 18,
-                                }
-                              }
+                            <span
+                              className="mr6"
                             >
-                              <use
-                                xlinkHref="#icon-code"
-                                xmlnsXlink="http://www.w3.org/1999/xlink"
-                              />
-                            </svg>
-                             
-                            JavaScript
-                          </div>
+                              <svg
+                                className="events-none icon"
+                                focusable="false"
+                                role="presentation"
+                                style={
+                                  Object {
+                                    "height": 18,
+                                    "width": 18,
+                                  }
+                                }
+                              >
+                                <use
+                                  xlinkHref="#icon-code"
+                                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                                />
+                              </svg>
+                            </span>
+                            <span>
+                              JavaScript
+                            </span>
+                          </span>
                         </div>
                         <div
                           className="mb6"
@@ -488,30 +493,35 @@ Array [
                       </div>
                       <div>
                         <div
-                          className="mb6"
+                          className="flex mb6 txt-bold color-gray txt-s"
                         >
-                          <div
-                            className="inline-block color-gray txt-s txt-bold"
+                          <span
+                            className="flex flex--center-cross"
                           >
-                            <svg
-                              className="events-none icon inline-block align-t"
-                              focusable="false"
-                              role="presentation"
-                              style={
-                                Object {
-                                  "height": 18,
-                                  "width": 18,
-                                }
-                              }
+                            <span
+                              className="mr6"
                             >
-                              <use
-                                xlinkHref="#icon-code"
-                                xmlnsXlink="http://www.w3.org/1999/xlink"
-                              />
-                            </svg>
-                             
-                            JavaScript
-                          </div>
+                              <svg
+                                className="events-none icon"
+                                focusable="false"
+                                role="presentation"
+                                style={
+                                  Object {
+                                    "height": 18,
+                                    "width": 18,
+                                  }
+                                }
+                              >
+                                <use
+                                  xlinkHref="#icon-code"
+                                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                                />
+                              </svg>
+                            </span>
+                            <span>
+                              JavaScript
+                            </span>
+                          </span>
                         </div>
                         <div
                           className="mb6"
@@ -540,30 +550,35 @@ Array [
                       </div>
                       <div>
                         <div
-                          className="mb6"
+                          className="flex mb6 txt-bold color-gray txt-s"
                         >
-                          <div
-                            className="inline-block color-gray txt-s txt-bold"
+                          <span
+                            className="flex flex--center-cross"
                           >
-                            <svg
-                              className="events-none icon inline-block align-t"
-                              focusable="false"
-                              role="presentation"
-                              style={
-                                Object {
-                                  "height": 18,
-                                  "width": 18,
-                                }
-                              }
+                            <span
+                              className="mr6"
                             >
-                              <use
-                                xlinkHref="#icon-code"
-                                xmlnsXlink="http://www.w3.org/1999/xlink"
-                              />
-                            </svg>
-                             
-                            JavaScript
-                          </div>
+                              <svg
+                                className="events-none icon"
+                                focusable="false"
+                                role="presentation"
+                                style={
+                                  Object {
+                                    "height": 18,
+                                    "width": 18,
+                                  }
+                                }
+                              >
+                                <use
+                                  xlinkHref="#icon-code"
+                                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                                />
+                              </svg>
+                            </span>
+                            <span>
+                              JavaScript
+                            </span>
+                          </span>
                         </div>
                         <div
                           className="mb6"
