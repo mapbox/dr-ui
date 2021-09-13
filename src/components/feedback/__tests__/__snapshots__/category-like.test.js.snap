@@ -198,7 +198,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
                   ]
                 }
                 themeCheckbox="mr6 inline-block checkbox--gray checkbox--s-label"
-                themeCheckboxContainer="txt-s block mb6 flex"
+                themeCheckboxContainer="txt-s block mb6 flex-parent"
                 value={Array []}
               >
                 <ControlWrapper
@@ -230,7 +230,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
                         id="feedback-category-like"
                       >
                         <label
-                          className="checkbox-container txt-s block mb6 flex"
+                          className="checkbox-container txt-s block mb6 flex-parent"
                           key="I found what I need"
                         >
                           <input
@@ -273,7 +273,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
                           I found what I need
                         </label>
                         <label
-                          className="checkbox-container txt-s block mb6 flex"
+                          className="checkbox-container txt-s block mb6 flex-parent"
                           key="The information is accurate"
                         >
                           <input
@@ -316,7 +316,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
                           The information is accurate
                         </label>
                         <label
-                          className="checkbox-container txt-s block mb6 flex"
+                          className="checkbox-container txt-s block mb6 flex-parent"
                           key="Easy to understand"
                         >
                           <input
@@ -359,7 +359,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
                           The page is easy to understand
                         </label>
                         <label
-                          className="checkbox-container txt-s block mb6 flex"
+                          className="checkbox-container txt-s block mb6 flex-parent"
                           key="Something else"
                         >
                           <input

@@ -7,10 +7,10 @@ exports[`DownloadButton Default DownloadButton renders as expected 1`] = `
   href="../files/airports.csv"
 >
   <span
-    className="flex flex--center-cross"
+    className="flex-parent flex-parent--center-cross"
   >
     <span
-      className="mr6"
+      className="flex-child mr3"
     >
       <svg
         className="events-none icon"
@@ -29,7 +29,9 @@ exports[`DownloadButton Default DownloadButton renders as expected 1`] = `
         />
       </svg>
     </span>
-    <span>
+    <span
+      className="flex-child"
+    >
       Download CSV
     </span>
   </span>
@@ -43,10 +45,10 @@ exports[`DownloadButton DownloadButton for PNG renders as expected 1`] = `
   href="../files/shop-15.png"
 >
   <span
-    className="flex flex--center-cross"
+    className="flex-parent flex-parent--center-cross"
   >
     <span
-      className="mr6"
+      className="flex-child mr3"
     >
       <svg
         className="events-none icon"
@@ -65,7 +67,9 @@ exports[`DownloadButton DownloadButton for PNG renders as expected 1`] = `
         />
       </svg>
     </span>
-    <span>
+    <span
+      className="flex-child"
+    >
       Download PNG
     </span>
   </span>
@@ -79,10 +83,10 @@ exports[`DownloadButton DownloadButton with optional text renders as expected 1`
   href="../files/test-gzip.csv.gz"
 >
   <span
-    className="flex flex--center-cross"
+    className="flex-parent flex-parent--center-cross"
   >
     <span
-      className="mr6"
+      className="flex-child mr3"
     >
       <svg
         className="events-none icon"
@@ -101,7 +105,9 @@ exports[`DownloadButton DownloadButton with optional text renders as expected 1`
         />
       </svg>
     </span>
-    <span>
+    <span
+      className="flex-child"
+    >
       Download for iOS
     </span>
   </span>
@@ -118,10 +124,10 @@ exports[`DownloadButton DownloadButton with prose class renders as expected 1`] 
     href="../files/shop-15.png"
   >
     <span
-      className="flex flex--center-cross"
+      className="flex-parent flex-parent--center-cross"
     >
       <span
-        className="mr6"
+        className="flex-child mr3"
       >
         <svg
           className="events-none icon"
@@ -140,7 +146,9 @@ exports[`DownloadButton DownloadButton with prose class renders as expected 1`] 
           />
         </svg>
       </span>
-      <span>
+      <span
+        className="flex-child"
+      >
         Download PNG
       </span>
     </span>

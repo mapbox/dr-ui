@@ -198,7 +198,7 @@ exports[`Workflow 2 - Report a problem Check UI element state 1`] = `
                     ]
                   }
                   themeRadio="mr6 radio--gray radio--s-label inline-block"
-                  themeRadioContainer="txt-s block mb6 flex"
+                  themeRadioContainer="txt-s block mb6 flex-parent"
                   value=""
                 >
                   <ControlWrapper
@@ -216,7 +216,7 @@ exports[`Workflow 2 - Report a problem Check UI element state 1`] = `
                           role="radiogroup"
                         >
                           <label
-                            className="radio-container txt-s block mb6 flex"
+                            className="radio-container txt-s block mb6 flex-parent"
                             key="Something is incorrect or doesn't work"
                           >
                             <input
@@ -233,7 +233,7 @@ exports[`Workflow 2 - Report a problem Check UI element state 1`] = `
                             Something is incorrect or doesn't work
                           </label>
                           <label
-                            className="radio-container txt-s block mb6 flex"
+                            className="radio-container txt-s block mb6 flex-parent"
                             key="I see an error message"
                           >
                             <input
@@ -250,7 +250,7 @@ exports[`Workflow 2 - Report a problem Check UI element state 1`] = `
                             I see an error message
                           </label>
                           <label
-                            className="radio-container txt-s block mb6 flex"
+                            className="radio-container txt-s block mb6 flex-parent"
                             key="Something is missing"
                           >
                             <input
@@ -267,7 +267,7 @@ exports[`Workflow 2 - Report a problem Check UI element state 1`] = `
                             Something is missing
                           </label>
                           <label
-                            className="radio-container txt-s block mb6 flex"
+                            className="radio-container txt-s block mb6 flex-parent"
                             key="Something else"
                           >
                             <input
