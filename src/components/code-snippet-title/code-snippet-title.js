@@ -28,12 +28,12 @@ export default class CodeSnippetTitle extends React.PureComponent {
   render() {
     const { link, toggle } = this.props;
     return (
-      <div className="flex-parent-mm flex-parent--space-between-main-mm mb6">
-        <div className="flex-child">
+      <div className="flex-mm flex--space-between-main-mm mb6">
+        <div>
           {this.renderFilename()}
           {link && this.renderLink()}
         </div>
-        {toggle && <div className="flex-child">{toggle}</div>}
+        {toggle && <div>{toggle}</div>}
       </div>
     );
   }
