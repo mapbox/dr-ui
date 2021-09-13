@@ -2,11 +2,9 @@
 
 exports[`code-snippet-title Basic renders as expected 1`] = `
 <div
-  className="flex-parent-mm flex-parent--space-between-main-mm mb6"
+  className="flex-mm flex--space-between-main-mm mb6"
 >
-  <div
-    className="flex-child"
-  >
+  <div>
     <div
       className="inline-block txt-bold mb6 color-gray-dark"
     >
@@ -45,11 +43,9 @@ exports[`code-snippet-title Basic renders as expected 1`] = `
 
 exports[`code-snippet-title With a toggle renders as expected 1`] = `
 <div
-  className="flex-parent-mm flex-parent--space-between-main-mm mb6"
+  className="flex-mm flex--space-between-main-mm mb6"
 >
-  <div
-    className="flex-child"
-  >
+  <div>
     <div
       className="inline-block txt-bold mb6 color-gray-dark"
     >
@@ -83,9 +79,7 @@ exports[`code-snippet-title With a toggle renders as expected 1`] = `
       </a>
     </div>
   </div>
-  <div
-    className="flex-child"
-  >
+  <div>
     <div
       className="relative "
     >
