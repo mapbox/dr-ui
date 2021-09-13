@@ -5,11 +5,9 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
   className="my24"
 >
   <div
-    className="flex-parent-mm flex-parent--space-between-main-mm mb6"
+    className="flex-mm flex--space-between-main-mm mb6"
   >
-    <div
-      className="flex-child"
-    >
+    <div>
       <div
         className="inline-block txt-bold mb6 color-gray-dark"
       >
@@ -43,9 +41,7 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
         </a>
       </div>
     </div>
-    <div
-      className="flex-child"
-    >
+    <div>
       <div
         className="relative "
       >
