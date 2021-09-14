@@ -2,7 +2,7 @@
 
 exports[`phone Android landscape renders as expected 1`] = `
 <div
-  className="shadow-darken25 mx-auto border border--gray-dark relative bg-darken75 wmax600 flex-parent"
+  className="shadow-darken25 mx-auto border border--gray-dark relative bg-gray-deep wmax600 flex"
   style={
     Object {
       "borderRadius": "30px",
@@ -31,7 +31,7 @@ exports[`phone Android landscape renders as expected 1`] = `
     }
   />
   <div
-    className="flex-parent flex-parent--center-cross z1 relative h-auto bg-gray-dark w36 pl12"
+    className="flex flex--center-cross z2 relative h-auto bg-gray-dark w36 pl12"
     style={
       Object {
         "borderRadius": "0",
@@ -39,7 +39,7 @@ exports[`phone Android landscape renders as expected 1`] = `
     }
   >
     <div
-      className="bg-gray-dark flex-child flex-child--grow flex-parent relative"
+      className="bg-gray-dark flex-child-grow flex relative"
       style={
         Object {
           "borderRadius": "0",
@@ -47,10 +47,10 @@ exports[`phone Android landscape renders as expected 1`] = `
       }
     >
       <div
-        className="bg-lighten10 round-full flex-child h60 w6"
+        className="bg-gray-deep round-full h60 w6"
       />
       <div
-        className="bg-lighten10 round-full w6 h6 flex-child absolute"
+        className="bg-gray-deep round-full w6 h6 absolute"
         style={
           Object {
             "bottom": "-12px",
@@ -62,7 +62,7 @@ exports[`phone Android landscape renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="relative flex-parent flex-parent--center-cross flex-parent--center-main  hmin120-mm hmin60"
+    className="relative flex flex--center-cross flex--center-main z1 hmin120-mm hmin60"
     style={
       Object {
         "borderRadius": undefined,
@@ -78,7 +78,7 @@ exports[`phone Android landscape renders as expected 1`] = `
       className="loading loading--dark absolute z0"
     />
     <div
-      className="relative"
+      className="relative overflow-hidden"
     >
       <img
         alt="example"
@@ -87,10 +87,10 @@ exports[`phone Android landscape renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="flex-parent bg-gray-dark flex-parent--center-main flex-parent--center-cross w36"
+    className="flex bg-gray-dark flex--center-main flex--center-cross w36"
   >
     <div
-      className="bg-lighten10 round-full flex-child h60 w6"
+      className="bg-gray-deep round-full h60 w6"
     />
   </div>
 </div>
@@ -98,7 +98,7 @@ exports[`phone Android landscape renders as expected 1`] = `
 
 exports[`phone Android portrait renders as expected 1`] = `
 <div
-  className="shadow-darken25 mx-auto border border--gray-dark relative bg-darken75 wmax300"
+  className="shadow-darken25 mx-auto border border--gray-dark relative bg-gray-deep wmax300"
   style={
     Object {
       "borderRadius": "30px",
@@ -127,7 +127,7 @@ exports[`phone Android portrait renders as expected 1`] = `
     }
   />
   <div
-    className="flex-parent flex-parent--center-cross z1 relative"
+    className="flex flex--center-cross z2 relative"
     style={
       Object {
         "borderRadius": "0",
@@ -135,7 +135,7 @@ exports[`phone Android portrait renders as expected 1`] = `
     }
   >
     <div
-      className="bg-gray-dark flex-child flex-child--grow flex-parent relative flex-parent--center-main mx-auto w-full h36 pt12"
+      className="bg-gray-dark flex-child-grow flex relative flex--center-main mx-auto w-full h36 pt12"
       style={
         Object {
           "borderRadius": "0",
@@ -143,10 +143,10 @@ exports[`phone Android portrait renders as expected 1`] = `
       }
     >
       <div
-        className="bg-lighten10 round-full flex-child w60 h6"
+        className="bg-gray-deep round-full w60 h6"
       />
       <div
-        className="bg-lighten10 round-full w6 h6 flex-child relative"
+        className="bg-gray-deep round-full w6 h6 relative"
         style={
           Object {
             "bottom": undefined,
@@ -158,7 +158,7 @@ exports[`phone Android portrait renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="relative flex-parent flex-parent--center-cross flex-parent--center-main  hmin300"
+    className="relative flex flex--center-cross flex--center-main z1 hmin300"
     style={
       Object {
         "borderRadius": undefined,
@@ -174,7 +174,7 @@ exports[`phone Android portrait renders as expected 1`] = `
       className="loading loading--dark absolute z0"
     />
     <div
-      className="relative"
+      className="relative overflow-hidden"
     >
       <img
         alt="example"
@@ -183,10 +183,10 @@ exports[`phone Android portrait renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="flex-parent bg-gray-dark flex-parent--center-main flex-parent--center-cross h36"
+    className="flex bg-gray-dark flex--center-main flex--center-cross h36"
   >
     <div
-      className="bg-lighten10 round-full flex-child w60 h6"
+      className="bg-gray-deep round-full w60 h6"
     />
   </div>
 </div>
@@ -194,7 +194,7 @@ exports[`phone Android portrait renders as expected 1`] = `
 
 exports[`phone iOS landscape renders as expected 1`] = `
 <div
-  className="shadow-darken25 mx-auto border border--gray-dark relative bg-darken75 wmax600 flex-parent"
+  className="shadow-darken25 mx-auto border border--gray-dark relative bg-gray-deep wmax600 flex"
   style={
     Object {
       "borderRadius": "30px",
@@ -213,7 +213,7 @@ exports[`phone iOS landscape renders as expected 1`] = `
     }
   />
   <div
-    className="flex-parent absolute flex-parent--space-between-main w60"
+    className="flex absolute flex--space-between-main w60"
     style={
       Object {
         "bottom": "-15px",
@@ -229,15 +229,15 @@ exports[`phone iOS landscape renders as expected 1`] = `
     />
   </div>
   <div
-    className="flex-parent flex-parent--center-cross z1 relative h-auto w18"
+    className="flex flex--center-cross z2 relative h-auto w18"
     style={
       Object {
-        "borderRadius": "18px 18px 0 0 ",
+        "borderRadius": "18px 18px 0 0",
       }
     }
   >
     <div
-      className="bg-gray-dark flex-child flex-child--grow flex-parent relative h120 flex-parent--center-main flex-parent--column flex-parent--column-reverse"
+      className="bg-gray-dark flex-child-grow flex relative h120 flex--center-main flex--column flex--column-reverse"
       style={
         Object {
           "borderRadius": "0 12px 12px 0",
@@ -245,10 +245,10 @@ exports[`phone iOS landscape renders as expected 1`] = `
       }
     >
       <div
-        className="absolute  "
+        className="absolute"
         style={
           Object {
-            "background": "radial-gradient(circle at right top, transparent 0, transparent 75%, #23374d 75%, #23374d 100%)",
+            "background": "radial-gradient(circle at right top, transparent 0, transparent 75%, #0e2127 75%, #0e2127 100%)",
             "height": "10px",
             "marginLeft": false,
             "top": "-10px",
@@ -257,10 +257,10 @@ exports[`phone iOS landscape renders as expected 1`] = `
         }
       />
       <div
-        className="bg-lighten10 round-full flex-child h60 w6"
+        className="bg-gray-deep round-full h60 w6"
       />
       <div
-        className="bg-lighten10 round-full w6 h6 flex-child mb6 mt-neg12"
+        className="bg-gray-deep round-full w6 h6 mb6 mt-neg12"
         style={
           Object {
             "bottom": undefined,
@@ -270,10 +270,10 @@ exports[`phone iOS landscape renders as expected 1`] = `
         }
       />
       <div
-        className="absolute "
+        className="absolute"
         style={
           Object {
-            "background": "radial-gradient(circle at bottom right, transparent 0, transparent 75%, #23374d 75%, #23374d 100%)",
+            "background": "radial-gradient(circle at bottom right, transparent 0, transparent 75%, #0e2127 75%, #0e2127 100%)",
             "bottom": "-10px",
             "height": "10px",
             "marginRight": false,
@@ -284,7 +284,7 @@ exports[`phone iOS landscape renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="relative flex-parent flex-parent--center-cross flex-parent--center-main  hmin120-mm hmin60"
+    className="relative flex flex--center-cross flex--center-main z1 hmin120-mm hmin60"
     style={
       Object {
         "borderRadius": "18px",
@@ -300,7 +300,7 @@ exports[`phone iOS landscape renders as expected 1`] = `
       className="loading loading--dark absolute z0"
     />
     <div
-      className="relative"
+      className="relative overflow-hidden"
     >
       <div
         className="relative flex-parent flex-parent--center-main flex-parent--center-cross bg-gray"
@@ -358,7 +358,7 @@ exports[`phone iOS landscape renders as expected 1`] = `
 
 exports[`phone iOS portrait renders as expected 1`] = `
 <div
-  className="shadow-darken25 mx-auto border border--gray-dark relative bg-darken75 wmax300"
+  className="shadow-darken25 mx-auto border border--gray-dark relative bg-gray-deep wmax300"
   style={
     Object {
       "borderRadius": "30px",
@@ -377,7 +377,7 @@ exports[`phone iOS portrait renders as expected 1`] = `
     }
   />
   <div
-    className="flex-parent absolute flex-parent--space-between-main flex-parent--column h60"
+    className="flex absolute flex--space-between-main flex--column h60"
     style={
       Object {
         "left": "-15px",
@@ -393,7 +393,7 @@ exports[`phone iOS portrait renders as expected 1`] = `
     />
   </div>
   <div
-    className="flex-parent flex-parent--center-cross z1 relative round-t-full"
+    className="flex flex--center-cross z2 relative round-t-full"
     style={
       Object {
         "borderRadius": "0",
@@ -401,7 +401,7 @@ exports[`phone iOS portrait renders as expected 1`] = `
     }
   >
     <div
-      className="bg-gray-dark flex-child flex-child--grow flex-parent relative flex-parent--center-main mx-auto h18 wmax120"
+      className="bg-gray-dark flex-child-grow flex relative flex--center-main mx-auto h18 wmax120"
       style={
         Object {
           "borderRadius": "0 0 12px 12px",
@@ -409,10 +409,10 @@ exports[`phone iOS portrait renders as expected 1`] = `
       }
     >
       <div
-        className="absolute   top left"
+        className="absolute top left"
         style={
           Object {
-            "background": "radial-gradient(circle at bottom left, transparent 0, transparent 75%, #23374d 75%, #23374d 100%)",
+            "background": "radial-gradient(circle at bottom left, transparent 0, transparent 75%, #0e2127 75%, #0e2127 100%)",
             "height": "10px",
             "marginLeft": "-10px",
             "top": false,
@@ -421,10 +421,10 @@ exports[`phone iOS portrait renders as expected 1`] = `
         }
       />
       <div
-        className="bg-lighten10 round-full flex-child w60 h6"
+        className="bg-gray-deep round-full w60 h6"
       />
       <div
-        className="bg-lighten10 round-full w6 h6 flex-child ml6 mr-neg12"
+        className="bg-gray-deep round-full w6 h6 ml6 mr-neg12"
         style={
           Object {
             "bottom": undefined,
@@ -434,10 +434,10 @@ exports[`phone iOS portrait renders as expected 1`] = `
         }
       />
       <div
-        className="absolute  top right"
+        className="absolute top right"
         style={
           Object {
-            "background": "radial-gradient(circle at bottom right, transparent 0, transparent 75%, #23374d 75%, #23374d 100%)",
+            "background": "radial-gradient(circle at bottom right, transparent 0, transparent 75%, #0e2127 75%, #0e2127 100%)",
             "bottom": false,
             "height": "10px",
             "marginRight": "-10px",
@@ -448,7 +448,7 @@ exports[`phone iOS portrait renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="relative flex-parent flex-parent--center-cross flex-parent--center-main  hmin300"
+    className="relative flex flex--center-cross flex--center-main z1 hmin300"
     style={
       Object {
         "borderRadius": "18px",
@@ -464,7 +464,7 @@ exports[`phone iOS portrait renders as expected 1`] = `
       className="loading loading--dark absolute z0"
     />
     <div
-      className="relative"
+      className="relative overflow-hidden"
     >
       <img
         alt="example"
