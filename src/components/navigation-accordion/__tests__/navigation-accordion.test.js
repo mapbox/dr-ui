@@ -23,6 +23,7 @@ describe('navigation-accordion', () => {
       const component = mount(testCase.element);
       // subpages are not visible
       expect(component.find('#menu-guides').exists()).toBeFalsy();
+      // find then click first chevron-down button
       const navLink = component.find('button').first();
       navLink.simulate('click');
       // after click, subpages are visible
