@@ -20,13 +20,15 @@ describe('navigation-accordion', () => {
     });
 
     test('toggle navigation', () => {
+      // mount the test case
       const component = mount(testCase.element);
-      // subpages are not visible
+      // assert that subpages are not visible
       expect(component.find('#menu-guides').exists()).toBeFalsy();
-      // find then click first chevron-down button
+      // find the first button (chevron-down icon)
       const navLink = component.find('button').first();
+      // click the button
       navLink.simulate('click');
-      // after click, subpages are visible
+      // after click, assert that subpages are now visible
       component.update();
       expect(component.find('#menu-guides').exists()).toBeTruthy();
     });
