@@ -31,10 +31,7 @@ export default class Breadcrumb extends React.PureComponent {
     };
 
     return links.length > 1 ? (
-      <div
-        className={`dr-ui--breadcrumb ${themeWrapper}`}
-        data-swiftype-index="false"
-      >
+      <div className={`${themeWrapper}`} data-swiftype-index="false">
         {links.map((link, index) => {
           return link.path !== location.pathname ? (
             <Link key={link.title} href={link.path} index={index}>

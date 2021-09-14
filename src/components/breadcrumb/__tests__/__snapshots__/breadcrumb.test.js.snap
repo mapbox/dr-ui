@@ -2,7 +2,7 @@
 
 exports[`Breadcrumb Basic renders as expected 1`] = `
 <div
-  className="dr-ui--breadcrumb "
+  className=""
   data-swiftype-index="false"
 >
   <span
@@ -95,7 +95,7 @@ exports[`Breadcrumb Basic renders as expected 1`] = `
 
 exports[`Breadcrumb Example of Platform docs site renders as expected 1`] = `
 <div
-  className="dr-ui--breadcrumb "
+  className=""
   data-swiftype-index="false"
 >
   <span
@@ -218,7 +218,7 @@ exports[`Breadcrumb Example of Platform docs site renders as expected 1`] = `
 
 exports[`Breadcrumb Has subsite renders as expected 1`] = `
 <div
-  className="dr-ui--breadcrumb "
+  className=""
   data-swiftype-index="false"
 >
   <span
