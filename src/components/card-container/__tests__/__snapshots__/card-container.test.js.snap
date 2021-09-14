@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`card-container Basic renders as expected 1`] = `
-<div>
+<div
+  className="dr-ui--card-container"
+>
   <a
     className="unprose mb18 block color-blue-on-hover"
     href="#category"
@@ -25,7 +27,7 @@ exports[`card-container Basic renders as expected 1`] = `
     className="grid grid--gut36"
   >
     <div
-      className="mb18 col col--12 col--6-ml"
+      className="mb18 col w-full w-1/2-ml"
     >
       <a
         className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
@@ -60,7 +62,7 @@ exports[`card-container Basic renders as expected 1`] = `
       </a>
     </div>
     <div
-      className="mb18 col col--12 col--6-ml"
+      className="mb18 col w-full w-1/2-ml"
     >
       <a
         className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
@@ -99,7 +101,9 @@ exports[`card-container Basic renders as expected 1`] = `
 `;
 
 exports[`card-container Full width renders as expected 1`] = `
-<div>
+<div
+  className="dr-ui--card-container"
+>
   <a
     className="unprose mb18 block color-blue-on-hover"
     href="#another-category"
@@ -169,7 +173,9 @@ exports[`card-container Full width renders as expected 1`] = `
 `;
 
 exports[`card-container Use cardColSize renders as expected 1`] = `
-<div>
+<div
+  className="dr-ui--card-container"
+>
   <a
     className="unprose mb18 block color-blue-on-hover"
     href="#another-category"
@@ -193,7 +199,7 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
     className="grid grid--gut36"
   >
     <div
-      className="mb18 col col--12 col--3-ml"
+      className="mb18 col w-full w-1/4-ml"
     >
       <a
         className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
@@ -228,7 +234,7 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
       </a>
     </div>
     <div
-      className="mb18 col col--12 col--3-ml"
+      className="mb18 col w-full w-1/4-ml"
     >
       <a
         className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
@@ -263,7 +269,7 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
       </a>
     </div>
     <div
-      className="mb18 col col--12 col--3-ml"
+      className="mb18 col w-full w-1/4-ml"
     >
       <a
         className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
@@ -298,7 +304,7 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
       </a>
     </div>
     <div
-      className="mb18 col col--12 col--3-ml"
+      className="mb18 col w-full w-1/4-ml"
     >
       <a
         className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"

@@ -207,7 +207,7 @@ PageLayout.propTypes = {
     sidebarTheme: PropTypes.string,
     showCards: PropTypes.bool,
     fullWidthCards: PropTypes.bool,
-    cardColSize: PropTypes.number,
+    cardColSize: PropTypes.string,
     unProse: PropTypes.bool,
     noShellHeaderBuffer: PropTypes.bool,
     hideFromNav: PropTypes.bool,
