@@ -439,10 +439,10 @@ Array [
                           className="flex mb6 txt-bold color-gray txt-s"
                         >
                           <span
-                            className="flex flex--center-cross"
+                            className="flex-parent flex-parent--center-cross"
                           >
                             <span
-                              className="mr6"
+                              className="flex-child mr3"
                             >
                               <svg
                                 className="events-none icon"
@@ -461,7 +461,9 @@ Array [
                                 />
                               </svg>
                             </span>
-                            <span>
+                            <span
+                              className="flex-child"
+                            >
                               JavaScript
                             </span>
                           </span>
@@ -496,10 +498,10 @@ Array [
                           className="flex mb6 txt-bold color-gray txt-s"
                         >
                           <span
-                            className="flex flex--center-cross"
+                            className="flex-parent flex-parent--center-cross"
                           >
                             <span
-                              className="mr6"
+                              className="flex-child mr3"
                             >
                               <svg
                                 className="events-none icon"
@@ -518,7 +520,9 @@ Array [
                                 />
                               </svg>
                             </span>
-                            <span>
+                            <span
+                              className="flex-child"
+                            >
                               JavaScript
                             </span>
                           </span>
@@ -553,10 +557,10 @@ Array [
                           className="flex mb6 txt-bold color-gray txt-s"
                         >
                           <span
-                            className="flex flex--center-cross"
+                            className="flex-parent flex-parent--center-cross"
                           >
                             <span
-                              className="mr6"
+                              className="flex-child mr3"
                             >
                               <svg
                                 className="events-none icon"
@@ -575,7 +579,9 @@ Array [
                                 />
                               </svg>
                             </span>
-                            <span>
+                            <span
+                              className="flex-child"
+                            >
                               JavaScript
                             </span>
                           </span>
