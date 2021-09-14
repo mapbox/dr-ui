@@ -64,10 +64,10 @@ exports[`card Card with image renders as expected 1`] = `
         </div>
       </div>
       <span
-        className="flex-parent flex-parent--center-cross"
+        className="flex flex--center-cross"
       >
         <span
-          className="flex-child mr3"
+          className="mr6"
         >
           <svg
             className="events-none icon"
@@ -86,9 +86,7 @@ exports[`card Card with image renders as expected 1`] = `
             />
           </svg>
         </span>
-        <span
-          className="flex-child"
-        >
+        <span>
           JavaScript
         </span>
       </span>
@@ -157,10 +155,10 @@ exports[`card Card with no image renders as expected 1`] = `
         </div>
       </div>
       <span
-        className="flex-parent flex-parent--center-cross"
+        className="flex flex--center-cross"
       >
         <span
-          className="flex-child mr3"
+          className="mr6"
         >
           <svg
             className="events-none icon"
@@ -179,9 +177,7 @@ exports[`card Card with no image renders as expected 1`] = `
             />
           </svg>
         </span>
-        <span
-          className="flex-child"
-        >
+        <span>
           JavaScript
         </span>
       </span>
@@ -264,10 +260,10 @@ exports[`card Card without description renders as expected 1`] = `
         </div>
       </div>
       <span
-        className="flex-parent flex-parent--center-cross"
+        className="flex flex--center-cross"
       >
         <span
-          className="flex-child mr3"
+          className="mr6"
         >
           <svg
             className="events-none icon"
@@ -286,9 +282,7 @@ exports[`card Card without description renders as expected 1`] = `
             />
           </svg>
         </span>
-        <span
-          className="flex-child"
-        >
+        <span>
           JavaScript
         </span>
       </span>
