@@ -131,10 +131,10 @@ class Feedback extends React.PureComponent {
     return (
       <div className="dr-ui--feedback wmax300">
         <div className="bg-gray-faint round py12 px12">
-          <div className="flex-parent flex-parent--column">
-            <div className="flex-child flex-parent flex-parent--space-between-main w-full mb12">
-              <div className="flex-child txt-bold">{title}</div>
-              <div className="flex-child">
+          <div className="flex flex--column">
+            <div className="flex flex--space-between-main w-full mb12">
+              <div className="txt-bold">{title}</div>
+              <div>
                 <Tooltip content="Close">
                   <button
                     id="feedback-close-button"
@@ -147,9 +147,9 @@ class Feedback extends React.PureComponent {
                 </Tooltip>
               </div>
             </div>
-            <div className="flex-child mb6 prose">{children}</div>
+            <div className="mb6 prose">{children}</div>
             {showContactSupport && (
-              <div className="flex-child color-gray">
+              <div className="color-gray">
                 Need help?{' '}
                 <button
                   className="link"
