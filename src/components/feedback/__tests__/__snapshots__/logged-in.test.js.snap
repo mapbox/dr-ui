@@ -29,19 +29,17 @@ exports[`Workflow with logged in user information 2 - Something is confusing Che
         className="bg-gray-faint round py12 px12"
       >
         <div
-          className="flex-parent flex-parent--column"
+          className="flex flex--column"
         >
           <div
-            className="flex-child flex-parent flex-parent--space-between-main w-full mb12"
+            className="flex flex--space-between-main w-full mb12"
           >
             <div
-              className="flex-child txt-bold"
+              className="txt-bold"
             >
               Something is confusing
             </div>
-            <div
-              className="flex-child"
-            >
+            <div>
               <Tooltip
                 alignment="center"
                 block={false}
@@ -140,7 +138,7 @@ exports[`Workflow with logged in user information 2 - Something is confusing Che
             </div>
           </div>
           <div
-            className="flex-child mb6 prose"
+            className="mb6 prose"
           >
             <CategoryConfusing
               option="What about this page is confusing? How can we improve the content?"
@@ -233,7 +231,7 @@ exports[`Workflow with logged in user information 2 - Something is confusing Che
             </CategoryConfusing>
           </div>
           <div
-            className="flex-child color-gray"
+            className="color-gray"
           >
             Need help?
              
