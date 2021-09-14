@@ -1,6 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { testCases } from './navigation-accordion-test-cases.js';
+import { mount } from 'enzyme';
 
 describe('navigation-accordion', () => {
   describe(testCases.basic.description, () => {
@@ -16,6 +17,8 @@ describe('navigation-accordion', () => {
 
     test('renders as expected', () => {
       expect(tree).toMatchSnapshot();
+      const navLink = mount(testCase.element).find('button').first();
+      navLink.simulate('click');
     });
   });
 
