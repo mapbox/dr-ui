@@ -17,8 +17,17 @@ describe('navigation-accordion', () => {
 
     test('renders as expected', () => {
       expect(tree).toMatchSnapshot();
-      const navLink = mount(testCase.element).find('button').first();
+    });
+
+    test('toggle navigation', () => {
+      const component = mount(testCase.element);
+      // subpages are not visible
+      expect(component.find('#menu-guides').exists()).toBeFalsy();
+      const navLink = component.find('button').first();
       navLink.simulate('click');
+      // after click, subpages are visible
+      component.update();
+      expect(component.find('#menu-guides').exists()).toBeTruthy();
     });
   });
 
