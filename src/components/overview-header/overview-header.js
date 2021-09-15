@@ -41,7 +41,7 @@ class OverviewHeader extends React.PureComponent {
   renderFooter() {
     const { lightText, installLink, ghLink, contactLink } = this.props;
 
-    const btnClasses = classnames('btn unprose round mr12 mb3', {
+    const btnClasses = classnames('btn round unprose mr12 mb3', {
       'btn--white color-gray-dark': lightText,
       'btn--blue': !lightText
     });

@@ -129,7 +129,7 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
         className="mb24 flex-mm flex--center-cross"
       >
         <a
-          className="btn unprose round mr12 mb3 btn--blue"
+          className="btn round unprose mr12 mb3 btn--blue"
           href="https://www.mapbox.com/contact/"
         >
           Contact us
@@ -281,13 +281,13 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
         className="mb24 flex-mm flex--center-cross"
       >
         <a
-          className="btn unprose round mr12 mb3 btn--blue"
+          className="btn round unprose mr12 mb3 btn--blue"
           href="https://www.mapbox.com/install"
         >
           Install
         </a>
         <a
-          className="btn unprose round mr12 mb3 btn--blue"
+          className="btn round unprose mr12 mb3 btn--blue"
           href="https://www.mapbox.com/contact/"
         >
           Contact us
@@ -471,7 +471,7 @@ exports[`overview-header Basic renders as expected 1`] = `
         className="mb24 flex-mm flex--center-cross"
       >
         <a
-          className="btn unprose round mr12 mb3 btn--blue"
+          className="btn round unprose mr12 mb3 btn--blue"
           href="https://www.mapbox.com/install"
         >
           Install
