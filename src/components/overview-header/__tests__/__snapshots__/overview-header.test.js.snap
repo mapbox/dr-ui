@@ -15,9 +15,7 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
       >
         Mapbox SDK for Breakfast
       </h1>
-      <div
-        className="mb12"
-      >
+      <p>
         <span
           className="mr6"
         >
@@ -33,7 +31,7 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
         >
           View changelog
         </a>
-      </div>
+      </p>
       <ul
         className="unprose mb18"
       >
@@ -167,9 +165,7 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
       >
         Mapbox SDK for Breakfast
       </h1>
-      <div
-        className="mb12"
-      >
+      <p>
         <span
           className="mr6"
         >
@@ -185,7 +181,7 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
         >
           View changelog
         </a>
-      </div>
+      </p>
       <ul
         className="unprose mb18"
       >
@@ -357,9 +353,7 @@ exports[`overview-header Basic renders as expected 1`] = `
       >
         Mapbox SDK for Breakfast
       </h1>
-      <div
-        className="mb12"
-      >
+      <p>
         <span
           className="mr6"
         >
@@ -375,7 +369,7 @@ exports[`overview-header Basic renders as expected 1`] = `
         >
           View changelog
         </a>
-      </div>
+      </p>
       <ul
         className="unprose mb18"
       >
@@ -879,9 +873,7 @@ exports[`overview-header Some optional props renders as expected 1`] = `
       >
         Mapbox SDK for Breakfast
       </h1>
-      <div
-        className="mb12"
-      >
+      <p>
         <span
           className="mr6"
         >
@@ -891,7 +883,7 @@ exports[`overview-header Some optional props renders as expected 1`] = `
             0.1.0
           </code>
         </span>
-      </div>
+      </p>
       <ul
         className="unprose mb18"
       >

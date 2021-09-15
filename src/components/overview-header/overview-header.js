@@ -31,10 +31,10 @@ class OverviewHeader extends React.PureComponent {
     }
 
     return (
-      <div className="mb12">
+      <p>
         {versionEl}
         {changelogLinkEl}
-      </div>
+      </p>
     );
   }
 
