@@ -131,18 +131,16 @@ exports[`contextless-ios-view-controller-toggle Two languages (code toggle is no
     className="my24"
   >
     <div
-      className="flex-parent-mm flex-parent--space-between-main-mm mb6"
+      className="flex-mm flex--space-between-main-mm mb6"
     >
       <div
-        className="flex-child"
+        className="flex-mm"
       >
         <div
-          className="inline-block txt-bold mb6 color-gray-dark"
+          className="txt-bold color-gray-dar mb6"
         />
       </div>
-      <div
-        className="flex-child"
-      >
+      <div>
         <div
           className="relative "
         >
