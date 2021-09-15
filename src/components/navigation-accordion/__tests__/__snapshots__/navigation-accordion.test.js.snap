@@ -7,16 +7,11 @@ exports[`navigation-accordion An active (hidden) page without a parent renders a
   <ul>
     <li>
       <div
-        className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
+        className="px12 flex txt-uppercase txt-fancy round-full w-full color-text"
       >
         <a
-          className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+          className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
           href="page-one"
-          style={
-            Object {
-              "letterSpacing": "0.025em",
-            }
-          }
         >
           Title one
         </a>
@@ -33,16 +28,11 @@ exports[`navigation-accordion Basic NavigationAccordion renders as expected 1`] 
   <ul>
     <li>
       <div
-        className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 flex-parent flex-parent--space-between-main"
+        className="px12 flex txt-uppercase txt-fancy round-full w-full color-text flex flex--space-between-main"
       >
         <a
-          className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+          className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
           href="/dr-ui/guides/"
-          style={
-            Object {
-              "letterSpacing": "0.025em",
-            }
-          }
         >
           Guides
         </a>
@@ -50,7 +40,7 @@ exports[`navigation-accordion Basic NavigationAccordion renders as expected 1`] 
           aria-controls="menu-guides"
           aria-expanded={false}
           aria-label="Toggle Guides menu"
-          className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
+          className="flex-child-no-shrink color-blue-on-hover px12 px0-mm"
           onClick={[Function]}
           value="Guides"
         >
@@ -75,16 +65,11 @@ exports[`navigation-accordion Basic NavigationAccordion renders as expected 1`] 
     </li>
     <li>
       <div
-        className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 flex-parent flex-parent--space-between-main"
+        className="px12 flex txt-uppercase txt-fancy round-full w-full color-text flex flex--space-between-main"
       >
         <a
-          className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+          className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
           href="/dr-ui/examples/"
-          style={
-            Object {
-              "letterSpacing": "0.025em",
-            }
-          }
         >
           Examples
         </a>
@@ -92,7 +77,7 @@ exports[`navigation-accordion Basic NavigationAccordion renders as expected 1`] 
           aria-controls="menu-examples"
           aria-expanded={false}
           aria-label="Toggle Examples menu"
-          className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
+          className="flex-child-no-shrink color-blue-on-hover px12 px0-mm"
           onClick={[Function]}
           value="Examples"
         >
@@ -126,16 +111,11 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
   <ul>
     <li>
       <div
-        className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 bg-blue-faint color-blue flex-parent flex-parent--space-between-main"
+        className="px12 flex txt-uppercase txt-fancy round-full w-full color-text bg-blue-faint color-blue flex flex--space-between-main"
       >
         <a
-          className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+          className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
           href="page-one"
-          style={
-            Object {
-              "letterSpacing": "0.025em",
-            }
-          }
         >
           Title one
         </a>
@@ -143,7 +123,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
           aria-controls="menu-title-one"
           aria-expanded={false}
           aria-label="Toggle Title one menu"
-          className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
+          className="flex-child-no-shrink color-blue-on-hover px12 px0-mm"
           onClick={[Function]}
           value="Title one"
         >
@@ -168,16 +148,11 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
     </li>
     <li>
       <div
-        className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
+        className="px12 flex txt-uppercase txt-fancy round-full w-full color-text"
       >
         <a
-          className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+          className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
           href="page-two"
-          style={
-            Object {
-              "letterSpacing": "0.025em",
-            }
-          }
         >
           Title two
           <span
