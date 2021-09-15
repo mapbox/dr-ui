@@ -1,25 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Icon from '@mapbox/mr-ui/icon';
+import IconText from '@mapbox/mr-ui/icon-text';
 import classnames from 'classnames';
 import Tag from '../tag/tag';
 
 class OverviewHeader extends React.PureComponent {
   renderVersion() {
-    const { props } = this;
+    const { version, changelogLink, lightText } = this.props;
 
-    const versionEl = props.version !== undefined && (
-      <span className="inline-block mr6">
-        Current version: <code>v{props.version}</code>{' '}
+    const versionEl = version !== undefined && (
+      <span className="mr6">
+        Current version: <code>v{version}</code>
       </span>
     );
 
-    const changelogLinkEl = props.changelogLink && (
+    const changelogLinkEl = changelogLink && (
       <a
-        className={classnames('unprose link txt-underline', {
-          'link--white': props.lightText
+        className={classnames('link unprose txt-underline', {
+          'link--white': lightText
         })}
-        href={props.changelogLink}
+        href={changelogLink}
       >
         View changelog
       </a>
@@ -30,45 +31,42 @@ class OverviewHeader extends React.PureComponent {
     }
 
     return (
-      <p>
+      <div className="mb12">
         {versionEl}
         {changelogLinkEl}
-      </p>
+      </div>
     );
   }
 
   renderFooter() {
-    const { props } = this;
+    const { lightText, installLink, ghLink, contactLink } = this.props;
 
-    const btnClasses = classnames('btn txt-l round inline-block unprose mr24', {
-      'btn--white color-gray-dark': props.lightText,
-      'btn--blue': !props.lightText
+    const btnClasses = classnames('btn unprose round mr12 mb3', {
+      'btn--white color-gray-dark': lightText,
+      'btn--blue': !lightText
     });
 
-    const installLinkEl = props.installLink && (
-      <a href={props.installLink} className={btnClasses}>
+    const installLinkEl = installLink && (
+      <a href={installLink} className={btnClasses}>
         Install
       </a>
     );
 
-    const ghLinkEl = props.ghLink && (
+    const ghLinkEl = ghLink && (
       <a
-        href={props.ghLink}
-        className={classnames('inline-block unprose link', {
-          'link--white': props.lightText
+        href={ghLink}
+        className={classnames('unprose link block', {
+          'link--white': lightText
         })}
       >
-        <span className="flex-parent flex-parent--center-cross">
-          <span className="flex-child mr6">
-            <Icon name="github" inline={true} />
-          </span>
-          <span className="flex-child">Contribute on GitHub</span>
-        </span>
+        <IconText iconBefore="github" inline={true}>
+          Contribute on GitHub
+        </IconText>
       </a>
     );
 
-    const contactLinkEl = props.contactLink && (
-      <a href={props.contactLink} className={btnClasses}>
+    const contactLinkEl = contactLink && (
+      <a href={contactLink} className={btnClasses}>
         Contact us
       </a>
     );
@@ -78,7 +76,7 @@ class OverviewHeader extends React.PureComponent {
     }
 
     return (
-      <div className="mb24">
+      <div className="mb24 flex-mm flex--center-cross">
         {installLinkEl}
         {contactLinkEl}
         {ghLinkEl}
@@ -93,56 +91,53 @@ class OverviewHeader extends React.PureComponent {
       ...customTagProps
     };
     return (
-      <span className="ml12 inline-block relative" style={{ top: '-7px' }}>
+      <span className="ml12 inline-block relative" style={{ top: -7 }}>
         <Tag {...tagProps} />
       </span>
     );
   };
 
   render() {
-    const { props } = this;
+    const { features, theme, lightText, title, tag, description, image } =
+      this.props;
 
-    const featuresList = props.features
-      ? props.features.map((feature, index) => {
-          return (
-            <li key={index} className="ml-neg24 flex-parent">
-              <div className="flex-child flex-child--no-shrink mr6 m3 color-gray-light">
-                <Icon name="check" inline={true} />
-              </div>
-              <div className="flex-child flex-child--grow">{feature}</div>
-            </li>
-          );
-        })
-      : undefined;
+    const featuresList =
+      features &&
+      features.map((feature) => (
+        <li key={feature} className="flex">
+          <div className="flex-child-no-shrink mr6 color-gray">
+            <Icon name="check" inline={true} />
+          </div>
+          <div className="flex-child-grow">{feature}</div>
+        </li>
+      ));
 
     return (
       <div
         className={classnames(
-          `dr-ui--overview-header prose mb24 pr60-mxl ${props.theme}`,
+          `dr-ui--overview-header prose mb24 pr60-mxl ${theme}`,
           {
-            'border-b border--darken10': !props.theme,
-            'round py12 px24': props.theme,
-            'color-white': props.lightText
+            'border-b border--darken10': !theme,
+            'round py12 px24': theme,
+            'color-white': lightText
           }
         )}
       >
-        <div className="flex-parent flex-parent--center-cross">
-          <div className="flex-child flex-child--grow">
+        <div className="flex flex--center-cross">
+          <div className="flex-child-grow">
             <h1 className="mb6 txt-fancy">
-              {props.title}
-              {props.tag && this.buildTag(props)}
+              {title}
+              {tag && this.buildTag(this.props)}
             </h1>
-            {props.description && <p className="txt-l">{props.description}</p>}
+            {description && <p className="txt-l">{description}</p>}
             {this.renderVersion()}
 
-            {featuresList && (
-              <ul className="unprose mb24 ml24">{featuresList}</ul>
-            )}
+            {featuresList && <ul className="unprose mb18">{featuresList}</ul>}
             {this.renderFooter()}
           </div>
-          {props.image && (
-            <div className="flex-child-ml flex-child--no-shrink w300-mxl align-r">
-              <div className="none block-mxl">{props.image}</div>
+          {image && (
+            <div className="flex-child-ml flex-child-no-shrink w300-mxl align-r">
+              <div className="none block-mxl">{image}</div>
             </div>
           )}
         </div>
