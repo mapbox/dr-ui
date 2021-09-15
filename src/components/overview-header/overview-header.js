@@ -17,7 +17,7 @@ class OverviewHeader extends React.PureComponent {
 
     const changelogLinkEl = changelogLink && (
       <a
-        className={classnames('link unprose txt-underline', {
+        className={classnames('unprose link txt-underline', {
           'link--white': lightText
         })}
         href={changelogLink}

@@ -28,7 +28,7 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
           </code>
         </span>
         <a
-          className="link unprose txt-underline"
+          className="unprose link txt-underline"
           href="https://keepachangelog.com/en/0.3.0/"
         >
           View changelog
@@ -180,7 +180,7 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
           </code>
         </span>
         <a
-          className="link unprose txt-underline"
+          className="unprose link txt-underline"
           href="https://keepachangelog.com/en/0.3.0/"
         >
           View changelog
@@ -370,7 +370,7 @@ exports[`overview-header Basic renders as expected 1`] = `
           </code>
         </span>
         <a
-          className="link unprose txt-underline"
+          className="unprose link txt-underline"
           href="https://keepachangelog.com/en/0.3.0/"
         >
           View changelog
