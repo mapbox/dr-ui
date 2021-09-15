@@ -193,7 +193,7 @@ export class SearchBox extends React.PureComponent {
               {(isOpen || resultsOnly) && searchTerm && (
                 <React.Fragment>
                   {isLoading && (
-                    <div className="w-full h360 bg-white opacity75 absolute">
+                    <div className="w-full h360 bg-lighten75 absolute z1">
                       <div className="loading mx-auto mt60" />
                     </div>
                   )}
@@ -201,7 +201,7 @@ export class SearchBox extends React.PureComponent {
                     className={classnames(
                       'color-text round mt3 bg-white w-full align-l',
                       {
-                        'hmax360 scroll-auto scroll-styled absolute shadow-darken25 z4':
+                        'hmax360 overflow-auto scroll-styled absolute shadow-darken25 z4':
                           !resultsOnly
                       }
                     )}
@@ -321,7 +321,7 @@ export class SearchButton extends React.PureComponent {
     return (
       <Element
         className={classnames(
-          'flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6',
+          'flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6',
           {
             'btn--white': background !== 'light',
             wmax30: narrow,
@@ -389,7 +389,7 @@ export class SearchInput extends React.PureComponent {
         <label className="cursor-pointer" {...labelProps}>
           <div
             className={classnames(
-              'absolute flex-parent flex-parent--center-cross flex-parent--center-main',
+              'absolute flex flex--center-cross flex--center-main',
               {
                 'w60 h60': useModal,
                 'w36 h36': !useModal
@@ -408,10 +408,10 @@ export class SearchInput extends React.PureComponent {
           </div>
           {isLoading && (
             <div
-              className="loading loading--s absolute bg-white"
+              className="loading w24 h24 absolute bg-white"
               style={{
-                top: useModal ? '21px' : '10px',
-                right: '26px',
+                top: useModal ? '17px' : '10px',
+                right: '24px',
                 zIndex: 5
               }}
             />
@@ -420,7 +420,7 @@ export class SearchInput extends React.PureComponent {
         <input
           autoFocus={autoFocus}
           placeholder={placeholder}
-          className={classnames('input bg-white', {
+          className={classnames('input bg-white txt-color', {
             'px60 h60 txt-l': useModal,
             'px36 h36': !useModal
           })}

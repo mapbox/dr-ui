@@ -28,7 +28,7 @@ export default class Example extends React.Component {
           <option value="Geocoding">Geocoding</option>
           <option value="Banana">Banana</option>
         </select>
-        <div className="hmax360 scroll-auto scroll-styled">
+        <div className="hmax360 overflow-auto scroll-styled">
           <Search
             inputId="search6"
             overrideSearchTerm={this.state.query}
