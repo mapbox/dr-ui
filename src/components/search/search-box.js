@@ -193,7 +193,7 @@ export class SearchBox extends React.PureComponent {
               {(isOpen || resultsOnly) && searchTerm && (
                 <React.Fragment>
                   {isLoading && (
-                    <div className="w-full h360 bg-lighten75 absolute z1">
+                    <div className="w-full h360 bg-lighten75 absolute z5">
                       <div className="loading mx-auto mt60" />
                     </div>
                   )}
@@ -408,12 +408,13 @@ export class SearchInput extends React.PureComponent {
           </div>
           {isLoading && (
             <div
-              className="loading w24 h24 absolute bg-white"
-              style={{
-                top: useModal ? '17px' : '10px',
-                right: '24px',
-                zIndex: 5
-              }}
+              className={classnames(
+                'loading w24 h24 absolute top right bg-white z5',
+                {
+                  'mt6 mr18': !useModal,
+                  'mt18 mr24': useModal
+                }
+              )}
             />
           )}
         </label>
