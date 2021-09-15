@@ -149,7 +149,7 @@ class Feedback extends React.PureComponent {
             </div>
             <div className="mb6 prose">{children}</div>
             {showContactSupport && (
-              <div className="color-gray">
+              <div className="color-text">
                 Need help?{' '}
                 <button
                   className="link"
