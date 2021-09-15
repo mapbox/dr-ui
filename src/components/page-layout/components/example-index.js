@@ -402,7 +402,7 @@ ExampleIndex.propTypes = {
     fullWidthCards: PropTypes.bool,
     hideCardDescription: PropTypes.bool,
     hideCardLanguage: PropTypes.bool,
-    cardColSize: PropTypes.number,
+    cardColSize: PropTypes.string,
     showFilters: PropTypes.arrayOf(PropTypes.oneOf(filterOptions))
   }).isRequired,
   AppropriateImage: PropTypes.func

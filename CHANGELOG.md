@@ -5,6 +5,7 @@
 This release updates to Assembly v1. [#481](https://github.com/mapbox/dr-ui/pull/481)
 
 - 🚨 Replace `customStyles` prop in `Tag` with `customBorder`, `customColor,` and `customBackground`. The new props accept class names.
+- 🚨 `CardContainer` no longer accepts a number for `cardColSize`, choose: `'1/4'` for 4 cards or `'1/3'` for 3 cards per row. The default is `'1/2'` for 2 cards per row.
 
 ## 4.2.3
 

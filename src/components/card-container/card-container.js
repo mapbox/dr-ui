@@ -4,45 +4,40 @@ import classnames from 'classnames';
 
 class CardContainer extends React.PureComponent {
   render() {
-    const { props } = this;
-    let cardClasses = 'mb18 ';
-    if (!props.fullWidthCards) {
-      cardClasses += `col col--12 col--${this.props.cardColSize}-ml`;
-    } else {
-      cardClasses += 'border-b border--darken10';
-    }
-
-    const containerClasses = classnames('', {
-      'grid grid--gut36': !props.fullWidthCards
-    });
-    const renderedCards = props.cards.map((card, index) => {
-      return (
-        <div key={index} className={cardClasses}>
-          {card}
-        </div>
-      );
-    });
+    const { fullWidthCards, cards, title, path, cardColSize } = this.props;
+    const cardClasses = `mb18 ${
+      fullWidthCards
+        ? 'border-b border--darken10'
+        : `col w-full w-${cardColSize}-ml`
+    }`;
+    const renderedCards = cards.map((card, index) => (
+      <div key={index} className={cardClasses}>
+        {card}
+      </div>
+    ));
     return (
-      <div>
-        {props.title && props.path && (
-          <a
-            href={props.path}
-            className="unprose mb18 block color-blue-on-hover"
-          >
-            <h2 className="txt-bold unprose" id={props.path.split('#')[1]}>
-              {props.title}{' '}
-              <span data-swiftype-index="false">({props.cards.length})</span>
+      <div className="dr-ui--card-container">
+        {title && path && (
+          <a href={path} className="unprose mb18 block color-blue-on-hover">
+            <h2 className="txt-bold unprose" id={path.split('#')[1]}>
+              {title} <span data-swiftype-index="false">({cards.length})</span>
             </h2>
           </a>
         )}
-        <div className={containerClasses}>{renderedCards}</div>
+        <div
+          className={classnames({
+            'grid grid--gut36': !fullWidthCards
+          })}
+        >
+          {renderedCards}
+        </div>
       </div>
     );
   }
 }
 
 CardContainer.defaultProps = {
-  cardColSize: 6,
+  cardColSize: '1/2',
   fullWidthCards: false
 };
 
@@ -51,7 +46,7 @@ CardContainer.propTypes = {
   path: PropTypes.string,
   fullWidthCards: PropTypes.bool,
   cards: PropTypes.arrayOf(PropTypes.node).isRequired,
-  cardColSize: PropTypes.oneOf([1, 2, 3, 4, 5, 6])
+  cardColSize: PropTypes.oneOf(['1/4', '1/3', '1/2'])
 };
 
 export default CardContainer;
