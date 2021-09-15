@@ -165,7 +165,7 @@ exports[`Workflow 2 - Contact support Click button, then set state 1`] = `
             </button>
           </div>
           <div
-            className="color-gray"
+            className="color-text"
           >
             Need help?
              

@@ -293,7 +293,7 @@ exports[`Workflow 2 - Report a problem Check UI element state 1`] = `
             </CategoryProblem>
           </div>
           <div
-            className="color-gray"
+            className="color-text"
           >
             Need help?
              

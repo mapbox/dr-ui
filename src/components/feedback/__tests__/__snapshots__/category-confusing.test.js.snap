@@ -231,7 +231,7 @@ exports[`Workflow 3 - Enter feedback Cannot submit feedback yet 1`] = `
             </CategoryConfusing>
           </div>
           <div
-            className="color-gray"
+            className="color-text"
           >
             Need help?
              
