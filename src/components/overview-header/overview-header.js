@@ -55,7 +55,7 @@ class OverviewHeader extends React.PureComponent {
     const ghLinkEl = ghLink && (
       <a
         href={ghLink}
-        className={classnames('unprose link block', {
+        className={classnames('block unprose link', {
           'link--white': lightText
         })}
       >
@@ -91,7 +91,7 @@ class OverviewHeader extends React.PureComponent {
       ...customTagProps
     };
     return (
-      <span className="ml12 inline-block relative" style={{ top: -7 }}>
+      <span className="ml12 inline-block relative" style={{ top: '-7px' }}>
         <Tag {...tagProps} />
       </span>
     );

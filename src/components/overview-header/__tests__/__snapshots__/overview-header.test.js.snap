@@ -293,7 +293,7 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
           Contact us
         </a>
         <a
-          className="unprose link block"
+          className="block unprose link"
           href="https://github.com/mapbox"
         >
           <span
@@ -477,7 +477,7 @@ exports[`overview-header Basic renders as expected 1`] = `
           Install
         </a>
         <a
-          className="unprose link block"
+          className="block unprose link"
           href="https://github.com/mapbox"
         >
           <span
@@ -544,7 +544,7 @@ exports[`overview-header Beta product renders as expected 1`] = `
           className="ml12 inline-block relative"
           style={
             Object {
-              "top": -7,
+              "top": "-7px",
             }
           }
         >
@@ -987,7 +987,7 @@ exports[`overview-header Some optional props renders as expected 1`] = `
         className="mb24 flex-mm flex--center-cross"
       >
         <a
-          className="unprose link block"
+          className="block unprose link"
           href="https://github.com/mapbox"
         >
           <span
