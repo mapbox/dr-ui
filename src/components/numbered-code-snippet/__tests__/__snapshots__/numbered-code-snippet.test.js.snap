@@ -2,7 +2,7 @@
 
 exports[`numbered-code-snippet Basic renders as expected 1`] = `
 <div
-  className="prose relative round z0 scroll-styled scroll-auto"
+  className="prose relative round z0 scroll-styled overflow-auto"
   style={
     Object {
       "maxHeight": 450,
@@ -20,12 +20,10 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
         data-chunk-code="chunk-0"
       >
         <button
-          className="w-full bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
+          className="w-full bg-gray-lighter color-gray-dark color-text-on-hover pl12 py6 cursor-pointer txt-s h30 flex flex--center-cross"
           onClick={[Function]}
         >
-          <div
-            className="flex-child"
-          >
+          <div>
             <div
               className="mb-neg3"
             >
@@ -68,7 +66,6 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
             </div>
           </div>
           <div
-            className="flex-child"
             style={
               Object {
                 "marginLeft": "8px",
@@ -92,7 +89,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={6}
             style={
               Object {
@@ -125,7 +122,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={7}
             style={
               Object {
@@ -158,7 +155,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={8}
             style={
               Object {
@@ -191,7 +188,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={9}
             style={
               Object {
@@ -224,7 +221,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={10}
             style={
               Object {
@@ -257,7 +254,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={11}
             style={
               Object {
@@ -290,7 +287,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={12}
             style={
               Object {
@@ -323,7 +320,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={13}
             style={
               Object {
@@ -356,7 +353,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={14}
             style={
               Object {
@@ -389,7 +386,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={15}
             style={
               Object {
@@ -422,7 +419,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={16}
             style={
               Object {
@@ -455,7 +452,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={17}
             style={
               Object {
@@ -485,12 +482,10 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
         data-chunk-code="chunk-2"
       >
         <button
-          className="w-full bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
+          className="w-full bg-gray-lighter color-gray-dark color-text-on-hover pl12 py6 cursor-pointer txt-s h30 flex flex--center-cross"
           onClick={[Function]}
         >
-          <div
-            className="flex-child"
-          >
+          <div>
             <div
               className="mb-neg3"
             >
@@ -533,7 +528,6 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
             </div>
           </div>
           <div
-            className="flex-child"
             style={
               Object {
                 "marginLeft": "8px",
@@ -574,7 +568,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
 
 exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
 <div
-  className="prose relative round z0 scroll-styled scroll-auto"
+  className="prose relative round z0 scroll-styled overflow-auto"
   style={
     Object {
       "maxHeight": 450,
@@ -600,7 +594,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={1}
             style={
               Object {
@@ -633,7 +627,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={2}
             style={
               Object {
@@ -666,7 +660,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={3}
             style={
               Object {
@@ -699,7 +693,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={4}
             style={
               Object {
@@ -732,7 +726,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={5}
             style={
               Object {
@@ -765,7 +759,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={6}
             style={
               Object {
@@ -798,7 +792,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={7}
             style={
               Object {
@@ -831,7 +825,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={8}
             style={
               Object {
@@ -864,7 +858,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={9}
             style={
               Object {
@@ -897,7 +891,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={10}
             style={
               Object {
@@ -930,7 +924,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={11}
             style={
               Object {
@@ -963,7 +957,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={12}
             style={
               Object {
@@ -996,7 +990,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={13}
             style={
               Object {
@@ -1029,7 +1023,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={14}
             style={
               Object {
@@ -1062,7 +1056,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={15}
             style={
               Object {
@@ -1095,7 +1089,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={16}
             style={
               Object {
@@ -1128,7 +1122,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={17}
             style={
               Object {
@@ -1161,7 +1155,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={18}
             style={
               Object {
@@ -1194,7 +1188,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={19}
             style={
               Object {
@@ -1227,7 +1221,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={20}
             style={
               Object {
@@ -1265,7 +1259,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={21}
             style={
               Object {
@@ -1298,7 +1292,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={22}
             style={
               Object {
@@ -1331,7 +1325,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={23}
             style={
               Object {
@@ -1369,7 +1363,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={24}
             style={
               Object {
@@ -1402,7 +1396,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={25}
             style={
               Object {
@@ -1435,7 +1429,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={26}
             style={
               Object {
@@ -1468,7 +1462,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={27}
             style={
               Object {
@@ -1501,7 +1495,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={28}
             style={
               Object {
@@ -1534,7 +1528,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={29}
             style={
               Object {
@@ -1567,7 +1561,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={30}
             style={
               Object {
@@ -1600,7 +1594,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={31}
             style={
               Object {
@@ -1633,7 +1627,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={32}
             style={
               Object {
@@ -1666,7 +1660,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={33}
             style={
               Object {
@@ -1699,7 +1693,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={34}
             style={
               Object {
@@ -1732,7 +1726,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={35}
             style={
               Object {
@@ -1765,7 +1759,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={36}
             style={
               Object {
@@ -1798,7 +1792,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={37}
             style={
               Object {
@@ -1836,7 +1830,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={38}
             style={
               Object {
@@ -1874,7 +1868,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={39}
             style={
               Object {
@@ -1907,7 +1901,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={40}
             style={
               Object {
@@ -1940,7 +1934,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={41}
             style={
               Object {
@@ -1973,7 +1967,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w36"
+            className="absolute fl color-text align-r pr6 w36"
             data-content={42}
             style={
               Object {
@@ -2051,7 +2045,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
 
 exports[`numbered-code-snippet First line renders as expected 1`] = `
 <div
-  className="prose relative round z0 scroll-styled scroll-auto"
+  className="prose relative round z0 scroll-styled overflow-auto"
   style={
     Object {
       "maxHeight": 450,
@@ -2077,7 +2071,7 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={1}
             style={
               Object {
@@ -2110,7 +2104,7 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={2}
             style={
               Object {
@@ -2143,7 +2137,7 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={3}
             style={
               Object {
@@ -2176,7 +2170,7 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={4}
             style={
               Object {
@@ -2209,7 +2203,7 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={5}
             style={
               Object {
@@ -2239,12 +2233,10 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
         data-chunk-code="chunk-2"
       >
         <button
-          className="w-full bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
+          className="w-full bg-gray-lighter color-gray-dark color-text-on-hover pl12 py6 cursor-pointer txt-s h30 flex flex--center-cross"
           onClick={[Function]}
         >
-          <div
-            className="flex-child"
-          >
+          <div>
             <div
               className="mb-neg3"
             >
@@ -2287,7 +2279,6 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
             </div>
           </div>
           <div
-            className="flex-child"
             style={
               Object {
                 "marginLeft": "8px",
@@ -2328,7 +2319,7 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
 
 exports[`numbered-code-snippet Last line renders as expected 1`] = `
 <div
-  className="prose relative round z0 scroll-styled scroll-auto"
+  className="prose relative round z0 scroll-styled overflow-auto"
   style={
     Object {
       "maxHeight": 450,
@@ -2346,12 +2337,10 @@ exports[`numbered-code-snippet Last line renders as expected 1`] = `
         data-chunk-code="chunk-0"
       >
         <button
-          className="w-full bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
+          className="w-full bg-gray-lighter color-gray-dark color-text-on-hover pl12 py6 cursor-pointer txt-s h30 flex flex--center-cross"
           onClick={[Function]}
         >
-          <div
-            className="flex-child"
-          >
+          <div>
             <div
               className="mb-neg3"
             >
@@ -2394,7 +2383,6 @@ exports[`numbered-code-snippet Last line renders as expected 1`] = `
             </div>
           </div>
           <div
-            className="flex-child"
             style={
               Object {
                 "marginLeft": "8px",
@@ -2418,7 +2406,7 @@ exports[`numbered-code-snippet Last line renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={38}
             style={
               Object {
@@ -2451,7 +2439,7 @@ exports[`numbered-code-snippet Last line renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={39}
             style={
               Object {
@@ -2484,7 +2472,7 @@ exports[`numbered-code-snippet Last line renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={40}
             style={
               Object {
@@ -2517,7 +2505,7 @@ exports[`numbered-code-snippet Last line renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={41}
             style={
               Object {
@@ -2550,7 +2538,7 @@ exports[`numbered-code-snippet Last line renders as expected 1`] = `
           }
         >
           <div
-            className="absolute fl color-gray align-r pr6 w30 py3"
+            className="absolute fl color-text align-r pr6 w30 py3"
             data-content={42}
             style={
               Object {
