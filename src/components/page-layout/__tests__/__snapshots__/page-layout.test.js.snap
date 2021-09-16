@@ -39,7 +39,7 @@ Array [
                 className="dr-ui--product-menu"
               >
                 <a
-                  className="txt-fancy txt-l block color-blue-on-hover"
+                  className="txt-fancy txt-l block color-blue-on-hover color-text"
                   href="/dr-ui/"
                 >
                   dr-ui
@@ -685,7 +685,7 @@ Array [
                 className="dr-ui--product-menu"
               >
                 <a
-                  className="txt-fancy txt-l block color-blue-on-hover"
+                  className="txt-fancy txt-l block color-blue-on-hover color-text"
                   href="/dr-ui/"
                 >
                   dr-ui
@@ -1296,7 +1296,7 @@ Array [
                 className="dr-ui--product-menu"
               >
                 <a
-                  className="txt-fancy txt-l block color-blue-on-hover"
+                  className="txt-fancy txt-l block color-blue-on-hover color-text"
                   href="/dr-ui/"
                 >
                   dr-ui
@@ -1913,7 +1913,7 @@ Array [
                   </div>
                 </div>
                 <a
-                  className="txt-fancy txt-l block color-blue-on-hover"
+                  className="txt-fancy txt-l block color-blue-on-hover color-text"
                   href="/dr-ui/"
                 >
                   Mapbox Tiling Service
