@@ -29,19 +29,17 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
         className="bg-gray-faint round py12 px12"
       >
         <div
-          className="flex-parent flex-parent--column"
+          className="flex flex--column"
         >
           <div
-            className="flex-child flex-parent flex-parent--space-between-main w-full mb12"
+            className="flex flex--space-between-main w-full mb12"
           >
             <div
-              className="flex-child txt-bold"
+              className="txt-bold"
             >
               I like this page
             </div>
-            <div
-              className="flex-child"
-            >
+            <div>
               <Tooltip
                 alignment="center"
                 block={false}
@@ -140,7 +138,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
             </div>
           </div>
           <div
-            className="flex-child mb6 prose"
+            className="mb6 prose"
           >
             <CategoryLike
               leadText="Tell us what you like about this page."

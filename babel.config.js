@@ -7,8 +7,9 @@ module.exports = {
     'babel-plugin-transform-react-remove-prop-types'
   ],
   env: {
-    // When running `test` Jest will enable compilation from ECMAScript modules to CommonJS automatically
+    // When running `test` and `start` Jest and ReactTestKitchen will enable compilation from ECMAScript modules to CommonJS automatically
     test: {
+      presets: [['@babel/preset-env'], '@babel/preset-react'],
       plugins: ['@babel/plugin-transform-modules-commonjs']
     }
   }

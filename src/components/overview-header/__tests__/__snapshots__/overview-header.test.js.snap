@@ -5,10 +5,10 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
   className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--darken10"
 >
   <div
-    className="flex-parent flex-parent--center-cross"
+    className="flex flex--center-cross"
   >
     <div
-      className="flex-child flex-child--grow"
+      className="flex-child-grow"
     >
       <h1
         className="mb6 txt-fancy"
@@ -17,14 +17,13 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
       </h1>
       <p>
         <span
-          className="inline-block mr6"
+          className="mr6"
         >
           Current version: 
           <code>
             v
             0.1.0
           </code>
-           
         </span>
         <a
           className="unprose link txt-underline"
@@ -34,13 +33,13 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
         </a>
       </p>
       <ul
-        className="unprose mb24 ml24"
+        className="unprose mb18"
       >
         <li
-          className="ml-neg24 flex-parent"
+          className="flex"
         >
           <div
-            className="flex-child flex-child--no-shrink mr6 m3 color-gray-light"
+            className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
               className="events-none icon inline-block align-t"
@@ -60,16 +59,16 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
             </svg>
           </div>
           <div
-            className="flex-child flex-child--grow"
+            className="flex-child-grow"
           >
             Smooth scrambled eggs
           </div>
         </li>
         <li
-          className="ml-neg24 flex-parent"
+          className="flex"
         >
           <div
-            className="flex-child flex-child--no-shrink mr6 m3 color-gray-light"
+            className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
               className="events-none icon inline-block align-t"
@@ -89,16 +88,16 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
             </svg>
           </div>
           <div
-            className="flex-child flex-child--grow"
+            className="flex-child-grow"
           >
             Vegetarian sausage
           </div>
         </li>
         <li
-          className="ml-neg24 flex-parent"
+          className="flex"
         >
           <div
-            className="flex-child flex-child--no-shrink mr6 m3 color-gray-light"
+            className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
               className="events-none icon inline-block align-t"
@@ -118,17 +117,17 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
             </svg>
           </div>
           <div
-            className="flex-child flex-child--grow"
+            className="flex-child-grow"
           >
             Fruit syrups
           </div>
         </li>
       </ul>
       <div
-        className="mb24"
+        className="mb24 flex-mm flex--center-cross"
       >
         <a
-          className="btn txt-l round inline-block unprose mr24 btn--blue"
+          className="btn round unprose mr12 mb3 btn--blue"
           href="https://www.mapbox.com/contact/"
         >
           Contact us
@@ -136,7 +135,7 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="flex-child-ml flex-child--no-shrink w300-mxl align-r"
+      className="flex-child-ml flex-child-no-shrink w300-mxl align-r"
     >
       <div
         className="none block-mxl"
@@ -156,10 +155,10 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
   className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--darken10"
 >
   <div
-    className="flex-parent flex-parent--center-cross"
+    className="flex flex--center-cross"
   >
     <div
-      className="flex-child flex-child--grow"
+      className="flex-child-grow"
     >
       <h1
         className="mb6 txt-fancy"
@@ -168,14 +167,13 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
       </h1>
       <p>
         <span
-          className="inline-block mr6"
+          className="mr6"
         >
           Current version: 
           <code>
             v
             0.1.0
           </code>
-           
         </span>
         <a
           className="unprose link txt-underline"
@@ -185,13 +183,13 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
         </a>
       </p>
       <ul
-        className="unprose mb24 ml24"
+        className="unprose mb18"
       >
         <li
-          className="ml-neg24 flex-parent"
+          className="flex"
         >
           <div
-            className="flex-child flex-child--no-shrink mr6 m3 color-gray-light"
+            className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
               className="events-none icon inline-block align-t"
@@ -211,16 +209,16 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
             </svg>
           </div>
           <div
-            className="flex-child flex-child--grow"
+            className="flex-child-grow"
           >
             Smooth scrambled eggs
           </div>
         </li>
         <li
-          className="ml-neg24 flex-parent"
+          className="flex"
         >
           <div
-            className="flex-child flex-child--no-shrink mr6 m3 color-gray-light"
+            className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
               className="events-none icon inline-block align-t"
@@ -240,16 +238,16 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
             </svg>
           </div>
           <div
-            className="flex-child flex-child--grow"
+            className="flex-child-grow"
           >
             Vegetarian sausage
           </div>
         </li>
         <li
-          className="ml-neg24 flex-parent"
+          className="flex"
         >
           <div
-            className="flex-child flex-child--no-shrink mr6 m3 color-gray-light"
+            className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
               className="events-none icon inline-block align-t"
@@ -269,39 +267,39 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
             </svg>
           </div>
           <div
-            className="flex-child flex-child--grow"
+            className="flex-child-grow"
           >
             Fruit syrups
           </div>
         </li>
       </ul>
       <div
-        className="mb24"
+        className="mb24 flex-mm flex--center-cross"
       >
         <a
-          className="btn txt-l round inline-block unprose mr24 btn--blue"
+          className="btn round unprose mr12 mb3 btn--blue"
           href="https://www.mapbox.com/install"
         >
           Install
         </a>
         <a
-          className="btn txt-l round inline-block unprose mr24 btn--blue"
+          className="btn round unprose mr12 mb3 btn--blue"
           href="https://www.mapbox.com/contact/"
         >
           Contact us
         </a>
         <a
-          className="inline-block unprose link"
+          className="block unprose link"
           href="https://github.com/mapbox"
         >
           <span
-            className="flex-parent flex-parent--center-cross"
+            className="inline-flex flex--center-cross"
           >
             <span
-              className="flex-child mr6"
+              className="mr6"
             >
               <svg
-                className="events-none icon inline-block align-t"
+                className="events-none icon"
                 focusable="false"
                 role="presentation"
                 style={
@@ -317,9 +315,7 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
                 />
               </svg>
             </span>
-            <span
-              className="flex-child"
-            >
+            <span>
               Contribute on GitHub
             </span>
           </span>
@@ -327,7 +323,7 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="flex-child-ml flex-child--no-shrink w300-mxl align-r"
+      className="flex-child-ml flex-child-no-shrink w300-mxl align-r"
     >
       <div
         className="none block-mxl"
@@ -347,10 +343,10 @@ exports[`overview-header Basic renders as expected 1`] = `
   className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--darken10"
 >
   <div
-    className="flex-parent flex-parent--center-cross"
+    className="flex flex--center-cross"
   >
     <div
-      className="flex-child flex-child--grow"
+      className="flex-child-grow"
     >
       <h1
         className="mb6 txt-fancy"
@@ -359,14 +355,13 @@ exports[`overview-header Basic renders as expected 1`] = `
       </h1>
       <p>
         <span
-          className="inline-block mr6"
+          className="mr6"
         >
           Current version: 
           <code>
             v
             0.1.0
           </code>
-           
         </span>
         <a
           className="unprose link txt-underline"
@@ -376,13 +371,13 @@ exports[`overview-header Basic renders as expected 1`] = `
         </a>
       </p>
       <ul
-        className="unprose mb24 ml24"
+        className="unprose mb18"
       >
         <li
-          className="ml-neg24 flex-parent"
+          className="flex"
         >
           <div
-            className="flex-child flex-child--no-shrink mr6 m3 color-gray-light"
+            className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
               className="events-none icon inline-block align-t"
@@ -402,16 +397,16 @@ exports[`overview-header Basic renders as expected 1`] = `
             </svg>
           </div>
           <div
-            className="flex-child flex-child--grow"
+            className="flex-child-grow"
           >
             Smooth scrambled eggs
           </div>
         </li>
         <li
-          className="ml-neg24 flex-parent"
+          className="flex"
         >
           <div
-            className="flex-child flex-child--no-shrink mr6 m3 color-gray-light"
+            className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
               className="events-none icon inline-block align-t"
@@ -431,16 +426,16 @@ exports[`overview-header Basic renders as expected 1`] = `
             </svg>
           </div>
           <div
-            className="flex-child flex-child--grow"
+            className="flex-child-grow"
           >
             Vegetarian sausage
           </div>
         </li>
         <li
-          className="ml-neg24 flex-parent"
+          className="flex"
         >
           <div
-            className="flex-child flex-child--no-shrink mr6 m3 color-gray-light"
+            className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
               className="events-none icon inline-block align-t"
@@ -460,33 +455,33 @@ exports[`overview-header Basic renders as expected 1`] = `
             </svg>
           </div>
           <div
-            className="flex-child flex-child--grow"
+            className="flex-child-grow"
           >
             Fruit syrups
           </div>
         </li>
       </ul>
       <div
-        className="mb24"
+        className="mb24 flex-mm flex--center-cross"
       >
         <a
-          className="btn txt-l round inline-block unprose mr24 btn--blue"
+          className="btn round unprose mr12 mb3 btn--blue"
           href="https://www.mapbox.com/install"
         >
           Install
         </a>
         <a
-          className="inline-block unprose link"
+          className="block unprose link"
           href="https://github.com/mapbox"
         >
           <span
-            className="flex-parent flex-parent--center-cross"
+            className="inline-flex flex--center-cross"
           >
             <span
-              className="flex-child mr6"
+              className="mr6"
             >
               <svg
-                className="events-none icon inline-block align-t"
+                className="events-none icon"
                 focusable="false"
                 role="presentation"
                 style={
@@ -502,9 +497,7 @@ exports[`overview-header Basic renders as expected 1`] = `
                 />
               </svg>
             </span>
-            <span
-              className="flex-child"
-            >
+            <span>
               Contribute on GitHub
             </span>
           </span>
@@ -512,7 +505,7 @@ exports[`overview-header Basic renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="flex-child-ml flex-child--no-shrink w300-mxl align-r"
+      className="flex-child-ml flex-child-no-shrink w300-mxl align-r"
     >
       <div
         className="none block-mxl"
@@ -532,10 +525,10 @@ exports[`overview-header Beta product renders as expected 1`] = `
   className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--darken10"
 >
   <div
-    className="flex-parent flex-parent--center-cross"
+    className="flex flex--center-cross"
   >
     <div
-      className="flex-child flex-child--grow"
+      className="flex-child-grow"
     >
       <h1
         className="mb6 txt-fancy"
@@ -577,13 +570,13 @@ exports[`overview-header Beta product renders as expected 1`] = `
         </span>
       </h1>
       <ul
-        className="unprose mb24 ml24"
+        className="unprose mb18"
       >
         <li
-          className="ml-neg24 flex-parent"
+          className="flex"
         >
           <div
-            className="flex-child flex-child--no-shrink mr6 m3 color-gray-light"
+            className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
               className="events-none icon inline-block align-t"
@@ -603,16 +596,16 @@ exports[`overview-header Beta product renders as expected 1`] = `
             </svg>
           </div>
           <div
-            className="flex-child flex-child--grow"
+            className="flex-child-grow"
           >
             Chips
           </div>
         </li>
         <li
-          className="ml-neg24 flex-parent"
+          className="flex"
         >
           <div
-            className="flex-child flex-child--no-shrink mr6 m3 color-gray-light"
+            className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
               className="events-none icon inline-block align-t"
@@ -632,16 +625,16 @@ exports[`overview-header Beta product renders as expected 1`] = `
             </svg>
           </div>
           <div
-            className="flex-child flex-child--grow"
+            className="flex-child-grow"
           >
             Tots
           </div>
         </li>
         <li
-          className="ml-neg24 flex-parent"
+          className="flex"
         >
           <div
-            className="flex-child flex-child--no-shrink mr6 m3 color-gray-light"
+            className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
               className="events-none icon inline-block align-t"
@@ -661,7 +654,7 @@ exports[`overview-header Beta product renders as expected 1`] = `
             </svg>
           </div>
           <div
-            className="flex-child flex-child--grow"
+            className="flex-child-grow"
           >
             Fries
           </div>
@@ -669,7 +662,7 @@ exports[`overview-header Beta product renders as expected 1`] = `
       </ul>
     </div>
     <div
-      className="flex-child-ml flex-child--no-shrink w300-mxl align-r"
+      className="flex-child-ml flex-child-no-shrink w300-mxl align-r"
     >
       <div
         className="none block-mxl"
@@ -689,10 +682,10 @@ exports[`overview-header No optional props renders as expected 1`] = `
   className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--darken10"
 >
   <div
-    className="flex-parent flex-parent--center-cross"
+    className="flex flex--center-cross"
   >
     <div
-      className="flex-child flex-child--grow"
+      className="flex-child-grow"
     >
       <h1
         className="mb6 txt-fancy"
@@ -700,13 +693,13 @@ exports[`overview-header No optional props renders as expected 1`] = `
         Mapbox SDK that You've Never Heard Of
       </h1>
       <ul
-        className="unprose mb24 ml24"
+        className="unprose mb18"
       >
         <li
-          className="ml-neg24 flex-parent"
+          className="flex"
         >
           <div
-            className="flex-child flex-child--no-shrink mr6 m3 color-gray-light"
+            className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
               className="events-none icon inline-block align-t"
@@ -726,16 +719,16 @@ exports[`overview-header No optional props renders as expected 1`] = `
             </svg>
           </div>
           <div
-            className="flex-child flex-child--grow"
+            className="flex-child-grow"
           >
             a
           </div>
         </li>
         <li
-          className="ml-neg24 flex-parent"
+          className="flex"
         >
           <div
-            className="flex-child flex-child--no-shrink mr6 m3 color-gray-light"
+            className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
               className="events-none icon inline-block align-t"
@@ -755,16 +748,16 @@ exports[`overview-header No optional props renders as expected 1`] = `
             </svg>
           </div>
           <div
-            className="flex-child flex-child--grow"
+            className="flex-child-grow"
           >
             b
           </div>
         </li>
         <li
-          className="ml-neg24 flex-parent"
+          className="flex"
         >
           <div
-            className="flex-child flex-child--no-shrink mr6 m3 color-gray-light"
+            className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
               className="events-none icon inline-block align-t"
@@ -784,16 +777,16 @@ exports[`overview-header No optional props renders as expected 1`] = `
             </svg>
           </div>
           <div
-            className="flex-child flex-child--grow"
+            className="flex-child-grow"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tristique orci, eget blandit justo. In quis ultrices ante. Mauris et vehicula arcu, et tincidunt mi. Integer eget tristique risus, eu tristique risus. Aliquam vel lectus eu magna finibus malesuada non a felis. Integer tincidunt rutrum urna ac mattis. Phasellus consequat tempus hendrerit.
           </div>
         </li>
         <li
-          className="ml-neg24 flex-parent"
+          className="flex"
         >
           <div
-            className="flex-child flex-child--no-shrink mr6 m3 color-gray-light"
+            className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
               className="events-none icon inline-block align-t"
@@ -813,16 +806,16 @@ exports[`overview-header No optional props renders as expected 1`] = `
             </svg>
           </div>
           <div
-            className="flex-child flex-child--grow"
+            className="flex-child-grow"
           >
             c
           </div>
         </li>
         <li
-          className="ml-neg24 flex-parent"
+          className="flex"
         >
           <div
-            className="flex-child flex-child--no-shrink mr6 m3 color-gray-light"
+            className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
               className="events-none icon inline-block align-t"
@@ -842,7 +835,7 @@ exports[`overview-header No optional props renders as expected 1`] = `
             </svg>
           </div>
           <div
-            className="flex-child flex-child--grow"
+            className="flex-child-grow"
           >
             d
           </div>
@@ -850,7 +843,7 @@ exports[`overview-header No optional props renders as expected 1`] = `
       </ul>
     </div>
     <div
-      className="flex-child-ml flex-child--no-shrink w300-mxl align-r"
+      className="flex-child-ml flex-child-no-shrink w300-mxl align-r"
     >
       <div
         className="none block-mxl"
@@ -870,10 +863,10 @@ exports[`overview-header Some optional props renders as expected 1`] = `
   className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--darken10"
 >
   <div
-    className="flex-parent flex-parent--center-cross"
+    className="flex flex--center-cross"
   >
     <div
-      className="flex-child flex-child--grow"
+      className="flex-child-grow"
     >
       <h1
         className="mb6 txt-fancy"
@@ -882,24 +875,23 @@ exports[`overview-header Some optional props renders as expected 1`] = `
       </h1>
       <p>
         <span
-          className="inline-block mr6"
+          className="mr6"
         >
           Current version: 
           <code>
             v
             0.1.0
           </code>
-           
         </span>
       </p>
       <ul
-        className="unprose mb24 ml24"
+        className="unprose mb18"
       >
         <li
-          className="ml-neg24 flex-parent"
+          className="flex"
         >
           <div
-            className="flex-child flex-child--no-shrink mr6 m3 color-gray-light"
+            className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
               className="events-none icon inline-block align-t"
@@ -919,16 +911,16 @@ exports[`overview-header Some optional props renders as expected 1`] = `
             </svg>
           </div>
           <div
-            className="flex-child flex-child--grow"
+            className="flex-child-grow"
           >
             Smooth scrambled eggs
           </div>
         </li>
         <li
-          className="ml-neg24 flex-parent"
+          className="flex"
         >
           <div
-            className="flex-child flex-child--no-shrink mr6 m3 color-gray-light"
+            className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
               className="events-none icon inline-block align-t"
@@ -948,16 +940,16 @@ exports[`overview-header Some optional props renders as expected 1`] = `
             </svg>
           </div>
           <div
-            className="flex-child flex-child--grow"
+            className="flex-child-grow"
           >
             Vegetarian sausage
           </div>
         </li>
         <li
-          className="ml-neg24 flex-parent"
+          className="flex"
         >
           <div
-            className="flex-child flex-child--no-shrink mr6 m3 color-gray-light"
+            className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
               className="events-none icon inline-block align-t"
@@ -977,27 +969,27 @@ exports[`overview-header Some optional props renders as expected 1`] = `
             </svg>
           </div>
           <div
-            className="flex-child flex-child--grow"
+            className="flex-child-grow"
           >
             Fruit syrups
           </div>
         </li>
       </ul>
       <div
-        className="mb24"
+        className="mb24 flex-mm flex--center-cross"
       >
         <a
-          className="inline-block unprose link"
+          className="block unprose link"
           href="https://github.com/mapbox"
         >
           <span
-            className="flex-parent flex-parent--center-cross"
+            className="inline-flex flex--center-cross"
           >
             <span
-              className="flex-child mr6"
+              className="mr6"
             >
               <svg
-                className="events-none icon inline-block align-t"
+                className="events-none icon"
                 focusable="false"
                 role="presentation"
                 style={
@@ -1013,9 +1005,7 @@ exports[`overview-header Some optional props renders as expected 1`] = `
                 />
               </svg>
             </span>
-            <span
-              className="flex-child"
-            >
+            <span>
               Contribute on GitHub
             </span>
           </span>
@@ -1023,7 +1013,7 @@ exports[`overview-header Some optional props renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="flex-child-ml flex-child--no-shrink w300-mxl align-r"
+      className="flex-child-ml flex-child-no-shrink w300-mxl align-r"
     >
       <div
         className="none block-mxl"
