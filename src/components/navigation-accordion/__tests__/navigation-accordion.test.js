@@ -1,6 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { testCases } from './navigation-accordion-test-cases.js';
+import { mount } from 'enzyme';
 
 describe('navigation-accordion', () => {
   describe(testCases.basic.description, () => {
@@ -16,6 +17,20 @@ describe('navigation-accordion', () => {
 
     test('renders as expected', () => {
       expect(tree).toMatchSnapshot();
+    });
+
+    test('toggle navigation', () => {
+      // mount the test case
+      const component = mount(testCase.element);
+      // assert that subpages are not visible
+      expect(component.find('#menu-guides').exists()).toBeFalsy();
+      // find the first button (chevron-down icon)
+      const navLink = component.find('button').first();
+      // click the button
+      navLink.simulate('click');
+      // after click, assert that subpages are now visible
+      component.update();
+      expect(component.find('#menu-guides').exists()).toBeTruthy();
     });
   });
 
