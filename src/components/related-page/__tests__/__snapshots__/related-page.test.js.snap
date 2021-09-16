@@ -6,10 +6,10 @@ exports[`related-page Use \`label\` prop renders as expected 1`] = `
   href="https://docs.mapbox.com/android/maps/examples/add-a-vector-tile-source/"
 >
   <div
-    className="round flex-parent flex-parent--stretch-cross border border--gray-light border--gray-dark-on-hover border--2 transition"
+    className="round flex flex--stretch-cross border border--gray-light border--gray-dark-on-hover border--2 transition"
   >
     <div
-      className="flex-child flex-child--grow px18 pt30 pb18"
+      className="flex-child-grow px18 pt30 pb18"
       style={
         Object {
           "flex": 1,
@@ -17,10 +17,10 @@ exports[`related-page Use \`label\` prop renders as expected 1`] = `
       }
     >
       <div
-        className="flex-parent flex-parent--row"
+        className="flex flex--row"
       >
         <div
-          className="flex-child"
+          className=""
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-gray-dark"
@@ -46,7 +46,7 @@ exports[`related-page Use \`label\` prop renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+      className="flex-child-no-shrink w30 flex flex--center-cross border-l"
       style={
         Object {
           "borderColor": "inherit",
@@ -81,10 +81,10 @@ exports[`related-page example renders as expected 1`] = `
   href="https://docs.mapbox.com/android/maps/examples/add-a-vector-tile-source/"
 >
   <div
-    className="round flex-parent flex-parent--stretch-cross border border--pink-light border--pink-dark-on-hover border--2 transition"
+    className="round flex flex--stretch-cross border border--pink-light border--pink-dark-on-hover border--2 transition"
   >
     <div
-      className="flex-child flex-child--grow px18 pt30 pb18"
+      className="flex-child-grow px18 pt30 pb18"
       style={
         Object {
           "flex": 1,
@@ -92,10 +92,10 @@ exports[`related-page example renders as expected 1`] = `
       }
     >
       <div
-        className="flex-parent flex-parent--row"
+        className="flex flex--row"
       >
         <div
-          className="flex-child pt6 mr18 none block-mm"
+          className="pt6 mr18 none block-mm"
         >
           <svg
             height={60}
@@ -147,7 +147,7 @@ exports[`related-page example renders as expected 1`] = `
           </svg>
         </div>
         <div
-          className="flex-child"
+          className=""
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-pink-dark"
@@ -173,7 +173,7 @@ exports[`related-page example renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+      className="flex-child-no-shrink w30 flex flex--center-cross border-l"
       style={
         Object {
           "borderColor": "inherit",
@@ -208,10 +208,10 @@ exports[`related-page fallback with children renders as expected 1`] = `
   href="https://docs.mapbox.com/"
 >
   <div
-    className="round flex-parent flex-parent--stretch-cross border border--gray-light border--gray-dark-on-hover border--2 transition"
+    className="round flex flex--stretch-cross border border--gray-light border--gray-dark-on-hover border--2 transition"
   >
     <div
-      className="flex-child flex-child--grow px18 pt30 pb18"
+      className="flex-child-grow px18 pt30 pb18"
       style={
         Object {
           "flex": 1,
@@ -219,10 +219,10 @@ exports[`related-page fallback with children renders as expected 1`] = `
       }
     >
       <div
-        className="flex-parent flex-parent--row"
+        className="flex flex--row"
       >
         <div
-          className="flex-child"
+          className=""
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-gray-dark"
@@ -250,7 +250,7 @@ exports[`related-page fallback with children renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+      className="flex-child-no-shrink w30 flex flex--center-cross border-l"
       style={
         Object {
           "borderColor": "inherit",
@@ -285,10 +285,10 @@ exports[`related-page glossary renders as expected 1`] = `
   href="https://docs.mapbox.com/help/glossary/zoom-level/"
 >
   <div
-    className="round flex-parent flex-parent--stretch-cross border border--orange-light border--orange-dark-on-hover border--2 transition"
+    className="round flex flex--stretch-cross border border--orange-light border--orange-dark-on-hover border--2 transition"
   >
     <div
-      className="flex-child flex-child--grow px18 pt30 pb18"
+      className="flex-child-grow px18 pt30 pb18"
       style={
         Object {
           "flex": 1,
@@ -296,10 +296,10 @@ exports[`related-page glossary renders as expected 1`] = `
       }
     >
       <div
-        className="flex-parent flex-parent--row"
+        className="flex flex--row"
       >
         <div
-          className="flex-child pt6 mr18 none block-mm"
+          className="pt6 mr18 none block-mm"
         >
           <svg
             height={60}
@@ -363,7 +363,7 @@ exports[`related-page glossary renders as expected 1`] = `
           </svg>
         </div>
         <div
-          className="flex-child"
+          className=""
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 "
@@ -389,7 +389,7 @@ exports[`related-page glossary renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+      className="flex-child-no-shrink w30 flex flex--center-cross border-l"
       style={
         Object {
           "borderColor": "inherit",
@@ -424,10 +424,10 @@ exports[`related-page guide renders as expected 1`] = `
   href="https://docs.mapbox.com/help/troubleshooting/collaboration-best-practices/"
 >
   <div
-    className="round flex-parent flex-parent--stretch-cross border border--blue-light border--blue-dark-on-hover border--2 transition"
+    className="round flex flex--stretch-cross border border--blue-light border--blue-dark-on-hover border--2 transition"
   >
     <div
-      className="flex-child flex-child--grow px18 pt30 pb18"
+      className="flex-child-grow px18 pt30 pb18"
       style={
         Object {
           "flex": 1,
@@ -435,10 +435,10 @@ exports[`related-page guide renders as expected 1`] = `
       }
     >
       <div
-        className="flex-parent flex-parent--row"
+        className="flex flex--row"
       >
         <div
-          className="flex-child pt6 mr18 none block-mm"
+          className="pt6 mr18 none block-mm"
         >
           <svg
             height={60}
@@ -472,7 +472,7 @@ exports[`related-page guide renders as expected 1`] = `
           </svg>
         </div>
         <div
-          className="flex-child"
+          className=""
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-blue-dark"
@@ -498,7 +498,7 @@ exports[`related-page guide renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+      className="flex-child-no-shrink w30 flex flex--center-cross border-l"
       style={
         Object {
           "borderColor": "inherit",
@@ -533,10 +533,10 @@ exports[`related-page playground renders as expected 1`] = `
   href="https://docs.mapbox.com/playground/tilequery/"
 >
   <div
-    className="round flex-parent flex-parent--stretch-cross border border--gray-light border--gray-dark-on-hover border--2 transition"
+    className="round flex flex--stretch-cross border border--gray-light border--gray-dark-on-hover border--2 transition"
   >
     <div
-      className="flex-child flex-child--grow px18 pt30 pb18"
+      className="flex-child-grow px18 pt30 pb18"
       style={
         Object {
           "flex": 1,
@@ -544,10 +544,10 @@ exports[`related-page playground renders as expected 1`] = `
       }
     >
       <div
-        className="flex-parent flex-parent--row"
+        className="flex flex--row"
       >
         <div
-          className="flex-child pt6 mr18 none block-mm"
+          className="pt6 mr18 none block-mm"
         >
           <svg
             height={60}
@@ -605,7 +605,7 @@ exports[`related-page playground renders as expected 1`] = `
           </svg>
         </div>
         <div
-          className="flex-child"
+          className=""
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-gray-dark"
@@ -631,7 +631,7 @@ exports[`related-page playground renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+      className="flex-child-no-shrink w30 flex flex--center-cross border-l"
       style={
         Object {
           "borderColor": "inherit",
@@ -666,10 +666,10 @@ exports[`related-page troubleshooting renders as expected 1`] = `
   href="https://docs.mapbox.com/help/troubleshooting/collaboration-best-practices/"
 >
   <div
-    className="round flex-parent flex-parent--stretch-cross border border--red-light border--red-dark-on-hover border--2 transition"
+    className="round flex flex--stretch-cross border border--red-light border--red-dark-on-hover border--2 transition"
   >
     <div
-      className="flex-child flex-child--grow px18 pt30 pb18"
+      className="flex-child-grow px18 pt30 pb18"
       style={
         Object {
           "flex": 1,
@@ -677,10 +677,10 @@ exports[`related-page troubleshooting renders as expected 1`] = `
       }
     >
       <div
-        className="flex-parent flex-parent--row"
+        className="flex flex--row"
       >
         <div
-          className="flex-child pt6 mr18 none block-mm"
+          className="pt6 mr18 none block-mm"
         >
           <svg
             height={60}
@@ -723,7 +723,7 @@ exports[`related-page troubleshooting renders as expected 1`] = `
           </svg>
         </div>
         <div
-          className="flex-child"
+          className=""
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-red-dark"
@@ -749,7 +749,7 @@ exports[`related-page troubleshooting renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+      className="flex-child-no-shrink w30 flex flex--center-cross border-l"
       style={
         Object {
           "borderColor": "inherit",
@@ -784,10 +784,10 @@ exports[`related-page tutorial renders as expected 1`] = `
   href="https://docs.mapbox.com/help/tutorials/first-steps-android-sdk/"
 >
   <div
-    className="round flex-parent flex-parent--stretch-cross border border--green-light border--green-dark-on-hover border--2 transition"
+    className="round flex flex--stretch-cross border border--green-light border--green-dark-on-hover border--2 transition"
   >
     <div
-      className="flex-child flex-child--grow px18 pt30 pb18"
+      className="flex-child-grow px18 pt30 pb18"
       style={
         Object {
           "flex": 1,
@@ -795,10 +795,10 @@ exports[`related-page tutorial renders as expected 1`] = `
       }
     >
       <div
-        className="flex-parent flex-parent--row"
+        className="flex flex--row"
       >
         <div
-          className="flex-child pt6 mr18 none block-mm"
+          className="pt6 mr18 none block-mm"
         >
           <svg
             height={60}
@@ -840,7 +840,7 @@ exports[`related-page tutorial renders as expected 1`] = `
           </svg>
         </div>
         <div
-          className="flex-child"
+          className=""
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 "
@@ -866,7 +866,7 @@ exports[`related-page tutorial renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+      className="flex-child-no-shrink w30 flex flex--center-cross border-l"
       style={
         Object {
           "borderColor": "inherit",
@@ -901,10 +901,10 @@ exports[`related-page video renders as expected 1`] = `
   onClick={[Function]}
 >
   <div
-    className="round flex-parent flex-parent--stretch-cross border border--purple-light border--purple-dark-on-hover border--2 transition"
+    className="round flex flex--stretch-cross border border--purple-light border--purple-dark-on-hover border--2 transition"
   >
     <div
-      className="flex-child flex-child--grow px18 pt30 pb18"
+      className="flex-child-grow px18 pt30 pb18"
       style={
         Object {
           "flex": 1,
@@ -912,10 +912,10 @@ exports[`related-page video renders as expected 1`] = `
       }
     >
       <div
-        className="flex-parent-ml flex-parent--start-cross"
+        className="flex-ml flex--start-cross"
       >
         <div
-          className="flex-child relative w-full wmin120 wmax240-ml mr18-ml mt-neg12"
+          className="relative w-full wmin120 wmax240-ml mr18-ml mt-neg12"
         >
           <div
             className="bg-darken75 round absolute"
@@ -950,7 +950,7 @@ exports[`related-page video renders as expected 1`] = `
           </div>
         </div>
         <div
-          className="flex-child wmin180"
+          className="wmin180"
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-purple-dark"
@@ -985,10 +985,10 @@ exports[`related-page video with svg image fallback renders as expected 1`] = `
   onClick={[Function]}
 >
   <div
-    className="round flex-parent flex-parent--stretch-cross border border--purple-light border--purple-dark-on-hover border--2 transition"
+    className="round flex flex--stretch-cross border border--purple-light border--purple-dark-on-hover border--2 transition"
   >
     <div
-      className="flex-child flex-child--grow px18 pt30 pb18"
+      className="flex-child-grow px18 pt30 pb18"
       style={
         Object {
           "flex": 1,
@@ -996,10 +996,10 @@ exports[`related-page video with svg image fallback renders as expected 1`] = `
       }
     >
       <div
-        className="flex-parent flex-parent--row"
+        className="flex flex--row"
       >
         <div
-          className="flex-child pt6 mr18 none block-mm"
+          className="pt6 mr18 none block-mm"
         >
           <div
             className="bg-purple-light round-full"
@@ -1026,7 +1026,7 @@ exports[`related-page video with svg image fallback renders as expected 1`] = `
           </div>
         </div>
         <div
-          className="flex-child"
+          className=""
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-purple-dark"
