@@ -5,15 +5,13 @@ import Icon from '@mapbox/mr-ui/icon';
 export default class CodeSnippetTitle extends React.PureComponent {
   renderFilename = () => {
     return (
-      <div className="inline-block txt-bold mb6 color-gray-dark">
-        {this.props.filename}
-      </div>
+      <div className="txt-bold color-gray-dar mb6">{this.props.filename}</div>
     );
   };
 
   renderLink = () => {
     return (
-      <div className="inline-block ml12-mm">
+      <div className="ml12-mm">
         <a
           className="unprose link"
           href={this.props.link}
@@ -28,12 +26,12 @@ export default class CodeSnippetTitle extends React.PureComponent {
   render() {
     const { link, toggle } = this.props;
     return (
-      <div className="flex-parent-mm flex-parent--space-between-main-mm mb6">
-        <div className="flex-child">
+      <div className="flex-mm flex--space-between-main-mm mb6">
+        <div className="flex-mm">
           {this.renderFilename()}
           {link && this.renderLink()}
         </div>
-        {toggle && <div className="flex-child">{toggle}</div>}
+        {toggle && <div>{toggle}</div>}
       </div>
     );
   }
