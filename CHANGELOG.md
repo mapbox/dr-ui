@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Handle `NavigiationAccordion` when there is no `activeItem`. [#495](https://github.com/mapbox/dr-ui/pull/495)
+
 ## 4.2.3
 
 - Fix casing for `DownloadButton` with GeoJSON filetype. [#484](https://github.com/mapbox/dr-ui/pull/484)

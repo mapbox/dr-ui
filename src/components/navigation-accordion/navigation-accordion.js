@@ -140,7 +140,8 @@ export default class NavigationAccordion extends React.Component {
               {page.tag && this.renderTag(page)}
             </a>
           </li>
-          {activeItem.indexOf(page.path) > -1 &&
+          {activeItem &&
+            activeItem.includes(page.path) &&
             page.subPages &&
             this.renderSubPages(page.subPages, activeItem)}
         </React.Fragment>
