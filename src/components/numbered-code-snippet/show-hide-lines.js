@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Icon from '@mapbox/mr-ui/icon';
 
 const containerClasses =
-  'w-full bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s';
+  'w-full bg-gray-lighter color-gray-dark color-text-on-hover pl12 py6 cursor-pointer txt-s';
 
 class HideLines extends React.PureComponent {
   render() {
