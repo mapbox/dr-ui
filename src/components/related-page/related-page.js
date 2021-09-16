@@ -99,16 +99,16 @@ class RelatedPage extends React.PureComponent {
       this.props.contentType === 'video' && props.vimeoThumbnail;
 
     const contentContainerClasses = classnames('', {
-      'flex-parent-ml flex-parent--start-cross': showVideoThumbnail,
-      'flex-parent flex-parent--row': !showVideoThumbnail
+      'flex-ml flex--start-cross': showVideoThumbnail,
+      'flex flex--row': !showVideoThumbnail
     });
 
-    const imageClasses = classnames('flex-child', {
+    const imageClasses = classnames('', {
       'relative w-full wmin120 wmax240-ml mr18-ml mt-neg12': showVideoThumbnail,
       'pt6 mr18 none block-mm': !showVideoThumbnail
     });
 
-    const contentClasses = classnames('flex-child', {
+    const contentClasses = classnames('', {
       wmin180: showVideoThumbnail
     });
 
@@ -125,12 +125,9 @@ class RelatedPage extends React.PureComponent {
           className={`unprose block cursor-pointer color-${theme.color} color-${theme.color}-dark-on-hover transition mb18`}
         >
           <div
-            className={`round flex-parent flex-parent--stretch-cross border border--${theme.color}-light border--${theme.color}-dark-on-hover border--2 transition`}
+            className={`round flex flex--stretch-cross border border--${theme.color}-light border--${theme.color}-dark-on-hover border--2 transition`}
           >
-            <div
-              className="flex-child flex-child--grow px18 pt30 pb18"
-              style={{ flex: 1 }}
-            >
+            <div className="flex-child-grow px18 pt30 pb18" style={{ flex: 1 }}>
               <div className={contentContainerClasses}>
                 {theme.image && (
                   <div className={imageClasses}>{theme.image}</div>
@@ -153,7 +150,7 @@ class RelatedPage extends React.PureComponent {
             </div>
             {!showVideoModal && (
               <div
-                className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+                className="flex-child-no-shrink w30 flex flex--center-cross border-l"
                 style={{ borderColor: 'inherit', borderLeftWidth: '2px' }}
               >
                 <Icon name="chevron-right" size={30} />
