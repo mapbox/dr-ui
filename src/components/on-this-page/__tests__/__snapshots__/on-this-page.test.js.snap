@@ -8,7 +8,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
     className="grid grid--gut60"
   >
     <div
-      className="col col--5-mxl col--12 relative dr-ui--page-layout-aside"
+      className="col w-5/12-mxl w-full relative dr-ui--page-layout-aside"
     >
       <div
         className="sticky-mxl top"
@@ -135,7 +135,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
                     }
                   >
                     <div
-                      className="color-darken75 mr6 w18 h18 bg-gray-faint round-full flex-parent-inline flex-parent--center-main flex-parent--center-cross relative ml-neg12"
+                      className="color-darken75 mr6 w18 h18 bg-gray-faint round-full inline-flex flex--center-main flex--center-cross relative ml-neg12"
                       style={
                         Object {
                           "top": 3,
@@ -175,7 +175,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
                     }
                   >
                     <div
-                      className="color-darken75 mr6 w18 h18 bg-gray-faint round-full flex-parent-inline flex-parent--center-main flex-parent--center-cross relative ml-neg12"
+                      className="color-darken75 mr6 w18 h18 bg-gray-faint round-full inline-flex flex--center-main flex--center-cross relative ml-neg12"
                       style={
                         Object {
                           "top": 3,
@@ -215,7 +215,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
                     }
                   >
                     <div
-                      className="color-darken75 mr6 w18 h18 bg-gray-faint round-full flex-parent-inline flex-parent--center-main flex-parent--center-cross relative ml-neg12"
+                      className="color-darken75 mr6 w18 h18 bg-gray-faint round-full inline-flex flex--center-main flex--center-cross relative ml-neg12"
                       style={
                         Object {
                           "top": 3,
@@ -264,7 +264,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="col col--7-mxl col--12 prose pb600"
+      className="col w-7/12-mxl w-full prose pb600"
     >
       <h2
         className="anchor"

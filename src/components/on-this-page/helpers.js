@@ -103,7 +103,7 @@ export class HeadingIcon extends React.PureComponent {
   render() {
     return (
       <div
-        className="color-darken75 mr6 w18 h18 bg-gray-faint round-full flex-parent-inline flex-parent--center-main flex-parent--center-cross relative ml-neg12"
+        className="color-darken75 mr6 w18 h18 bg-gray-faint round-full inline-flex flex--center-main flex--center-cross relative ml-neg12"
         style={{ top: 3 }}
       >
         <Icon size={16} name={this.props.name} />

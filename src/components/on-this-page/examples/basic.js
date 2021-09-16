@@ -9,7 +9,7 @@ export default class Basic extends React.PureComponent {
     return (
       <div className="wmax1200 w-11/12-mm w-5/6-ml mx-auto px24 px0-mm">
         <div className="grid grid--gut60">
-          <div className="col col--5-mxl col--12 relative dr-ui--page-layout-aside">
+          <div className="col w-5/12-mxl w-full relative dr-ui--page-layout-aside">
             <div className="sticky-mxl top">
               <OnThisPage
                 headings={[
@@ -55,7 +55,7 @@ export default class Basic extends React.PureComponent {
             </div>
           </div>
 
-          <div className="col col--7-mxl col--12 prose pb600">
+          <div className="col w-7/12-mxl w-full prose pb600">
             <h2 id="heading-1" className="anchor">
               Heading 1
             </h2>
