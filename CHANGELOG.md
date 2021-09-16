@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Handle `NavigiationAccordion` when there is no `activeItem`. [#495](https://github.com/mapbox/dr-ui/pull/495)
+- Added new `height` prop to `DemoIframe` component. [#506](https://github.com/mapbox/dr-ui/pull/506)
 
 ## 4.2.3
 
