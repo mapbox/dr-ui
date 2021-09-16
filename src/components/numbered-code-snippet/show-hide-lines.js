@@ -38,10 +38,10 @@ class ShowLines extends React.PureComponent {
   render() {
     return (
       <button
-        className={`${containerClasses} h30 flex-parent flex-parent--center-cross`}
+        className={`${containerClasses} h30 flex flex--center-cross`}
         onClick={this.props.onClick}
       >
-        <div className="flex-child">
+        <div>
           <div className="mb-neg3">
             <Icon name="chevron-up" size={12} />
           </div>
@@ -49,9 +49,7 @@ class ShowLines extends React.PureComponent {
             <Icon name="chevron-down" size={12} />
           </div>
         </div>
-        <div className="flex-child" style={{ marginLeft: '8px' }}>
-          show hidden lines
-        </div>
+        <div style={{ marginLeft: '8px' }}>show hidden lines</div>
       </button>
     );
   }

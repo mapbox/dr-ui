@@ -262,7 +262,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
         if (codeChunk.live) lineClasses += ' py3 bg-white';
         if (!codeChunk.live && props.copyRanges !== undefined) {
           if (props.collapseLines) {
-            lineClasses += this.state.expanded ? '' : ' h0 scroll-hidden';
+            lineClasses += this.state.expanded ? '' : ' h0 overflow-hidden';
           }
         }
 
@@ -404,7 +404,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
     }
 
     let containerClasses = 'prose relative round z0 scroll-styled';
-    if (props.maxHeight !== undefined) containerClasses += ' scroll-auto';
+    if (props.maxHeight !== undefined) containerClasses += ' overflow-auto';
 
     const containerStyles = {};
     if (props.maxHeight !== undefined)
