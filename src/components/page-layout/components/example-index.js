@@ -447,7 +447,7 @@ class FilterSection extends React.PureComponent {
           label={title}
           value={activeItem}
           themeLabel={`${themeLabel} w70`}
-          themeControlSelect="select select--s"
+          themeControlSelect="select select--s py3 pl6 select--stroke"
           onChange={this.props.handleInput}
           options={[
             {
