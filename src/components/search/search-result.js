@@ -63,7 +63,7 @@ class SearchResult extends React.PureComponent {
             <div className="txt-s">
               {type ? (
                 <div className="inline-block">
-                  <span className="">
+                  <span>
                     <Icon size={12} name="book" inline={true} />
                   </span>
                   <span className="ml3 txt-capitalize">{type}</span>
@@ -74,7 +74,7 @@ class SearchResult extends React.PureComponent {
 
               {language ? (
                 <div className="ml12 inline-block">
-                  <span className="">
+                  <span>
                     <Icon size={12} name="code" inline={true} />
                   </span>
                   <span className="ml6">{language}</span>

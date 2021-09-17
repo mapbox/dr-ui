@@ -57,7 +57,7 @@ Array [
                   onClick={[Function]}
                 >
                   <div
-                    className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+                    className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
                     style={Object {}}
                   >
                     <span
@@ -683,7 +683,7 @@ Array [
                   onClick={[Function]}
                 >
                   <div
-                    className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+                    className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
                     style={Object {}}
                   >
                     <span
@@ -1274,7 +1274,7 @@ Array [
                   onClick={[Function]}
                 >
                   <div
-                    className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+                    className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
                     style={Object {}}
                   >
                     <span
@@ -1871,7 +1871,7 @@ Array [
                   onClick={[Function]}
                 >
                   <div
-                    className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+                    className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
                     style={Object {}}
                   >
                     <span
