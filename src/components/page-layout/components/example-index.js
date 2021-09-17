@@ -468,7 +468,7 @@ class FilterSection extends React.PureComponent {
     const { isSwitch } = this.props;
     return (
       <div
-        className={classnames('col col--6 col--4-ml col--12-mxl', {
+        className={classnames('col w-1/2 w-1/3-ml w-full-mxl', {
           mt12: isSwitch,
           mb6: !isSwitch
         })}

@@ -34,7 +34,7 @@ exports[`Workflow 2 - Contact support Click button, then set state 1`] = `
             className="flex flex--space-between-main w-full mb12"
           >
             <div
-              className="txt-bold"
+              className="txt-bold color-text"
             >
               Share your feedback
             </div>

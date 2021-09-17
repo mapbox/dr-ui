@@ -14,17 +14,14 @@ export default class GuideGroupIndex extends React.PureComponent {
             return (
               <div
                 key={subpage.title}
-                className={classnames(
-                  'flex-parent-ml flex-parent--start-cross mb12',
-                  {
-                    'border-b border--gray-light pb12': i < subPages.length - 1
-                  }
-                )}
+                className={classnames('flex-ml flex--start-cross mb12', {
+                  'border-b border--gray-light pb12': i < subPages.length - 1
+                })}
               >
-                <div className="flex-child-ml flex-child--no-shrink txt-bold w240 my0-ml mt18 mb12">
+                <div className="flex-child-ml flex-child-no-shrink txt-bold w240 my0-ml mt18 mb12">
                   <a href={subpage.path}>{subpage.title}</a>
                 </div>
-                <div className="flex-child-ml flex-child--grow">
+                <div className="flex-child-ml flex-child-grow">
                   {subpage.description}
                 </div>
               </div>

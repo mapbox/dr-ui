@@ -75,15 +75,15 @@ export default class OnThisPage extends React.PureComponent {
           className={classnames('', {
             none: isChild && !active,
             'block pl12': isChild && active,
-            my6: isChild
+            my3: isChild
           })}
         >
           {headings.map((heading) => {
             return (
               <li
                 key={heading.id}
-                className={classnames('mb3', {
-                  'mb6-mxl': !isChild
+                className={classnames('', {
+                  'mb3-mxl': !isChild
                 })}
               >
                 <a
@@ -112,7 +112,7 @@ export default class OnThisPage extends React.PureComponent {
     return (
       <nav
         aria-labelledby="on-this-page"
-        className={`dr-ui--on-this-page ${themeWrapper}`}
+        className={`dr-ui--on-this-page color-text ${themeWrapper}`}
       >
         <AsideHeading id="on-this-page">On this page</AsideHeading>
         <Headings headings={sections} />

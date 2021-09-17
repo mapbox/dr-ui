@@ -2,12 +2,12 @@
 
 exports[`navigation-accordion An active (hidden) page without a parent renders as expected 1`] = `
 <nav
-  className="mx-neg12"
+  className="mx-neg12 color-text"
 >
   <ul>
     <li>
       <div
-        className="px12 flex txt-uppercase txt-fancy round-full w-full color-text"
+        className="px12 flex txt-uppercase txt-fancy round-full w-full"
       >
         <a
           className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -23,12 +23,12 @@ exports[`navigation-accordion An active (hidden) page without a parent renders a
 
 exports[`navigation-accordion Basic NavigationAccordion renders as expected 1`] = `
 <nav
-  className="mx-neg12"
+  className="mx-neg12 color-text"
 >
   <ul>
     <li>
       <div
-        className="px12 flex txt-uppercase txt-fancy round-full w-full color-text flex flex--space-between-main"
+        className="px12 flex txt-uppercase txt-fancy round-full w-full flex flex--space-between-main"
       >
         <a
           className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -65,7 +65,7 @@ exports[`navigation-accordion Basic NavigationAccordion renders as expected 1`] 
     </li>
     <li>
       <div
-        className="px12 flex txt-uppercase txt-fancy round-full w-full color-text flex flex--space-between-main"
+        className="px12 flex txt-uppercase txt-fancy round-full w-full flex flex--space-between-main"
       >
         <a
           className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -106,12 +106,12 @@ exports[`navigation-accordion Basic NavigationAccordion renders as expected 1`] 
 
 exports[`navigation-accordion Titles with tags renders as expected 1`] = `
 <nav
-  className="mx-neg12"
+  className="mx-neg12 color-text"
 >
   <ul>
     <li>
       <div
-        className="px12 flex txt-uppercase txt-fancy round-full w-full color-text bg-blue-faint color-blue flex flex--space-between-main"
+        className="px12 flex txt-uppercase txt-fancy round-full w-full bg-blue-faint color-blue-deep flex flex--space-between-main"
       >
         <a
           className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -148,7 +148,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
     </li>
     <li>
       <div
-        className="px12 flex txt-uppercase txt-fancy round-full w-full color-text"
+        className="px12 flex txt-uppercase txt-fancy round-full w-full"
       >
         <a
           className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"

@@ -9,10 +9,10 @@ Array [
     className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm"
   >
     <div
-      className="flex-parent-mm"
+      className="flex-mm"
     >
       <div
-        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr36-mm undefined"
+        className="flex-child-no-shrink w-full w180-mm w240-ml mr36-mm undefined"
         style={
           Object {
             "width": "100%",
@@ -86,12 +86,12 @@ Array [
             className=""
           >
             <nav
-              className="mx-neg12"
+              className="mx-neg12 color-text"
             >
               <ul>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text flex flex--space-between-main"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full flex flex--space-between-main"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -128,7 +128,7 @@ Array [
                 </li>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -140,7 +140,7 @@ Array [
                 </li>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text bg-blue-faint color-blue"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full bg-blue-faint color-blue-deep"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -152,7 +152,7 @@ Array [
                 </li>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -168,7 +168,7 @@ Array [
         </div>
       </div>
       <div
-        className="flex-child flex-child--grow"
+        className="flex-child-grow"
         style={
           Object {
             "width": "100%",
@@ -269,7 +269,7 @@ Array [
           id="docs-content"
         >
           <div
-            className="col prose"
+            className="col col--auto prose"
           >
             <h1
               className="txt-fancy"
@@ -281,7 +281,7 @@ Array [
             className="grid grid--gut60"
           >
             <div
-              className="dr-ui--page-layout-aside col col--12 col--4-mxl"
+              className="dr-ui--page-layout-aside col w-full w-1/3-mxl"
             >
               <aside
                 className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl"
@@ -304,7 +304,7 @@ Array [
                     className="grid grid--gut6"
                   >
                     <div
-                      className="col col--6 col--4-ml col--12-mxl mb6"
+                      className="col w-1/2 w-1/3-ml w-full-mxl mb6"
                     >
                       <div
                         className="relative "
@@ -340,7 +340,7 @@ Array [
                       </div>
                     </div>
                     <div
-                      className="col col--6 col--4-ml col--12-mxl mb6"
+                      className="col w-1/2 w-1/3-ml w-full-mxl mb6"
                     >
                       <div
                         className="relative "
@@ -396,7 +396,7 @@ Array [
               </aside>
             </div>
             <div
-              className="col prose"
+              className="col col--auto prose"
             >
               <div
                 className="dr-ui--card-container"
@@ -635,10 +635,10 @@ Array [
     className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm"
   >
     <div
-      className="flex-parent-mm"
+      className="flex-mm"
     >
       <div
-        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr36-mm undefined"
+        className="flex-child-no-shrink w-full w180-mm w240-ml mr36-mm undefined"
         style={
           Object {
             "width": "100%",
@@ -712,12 +712,12 @@ Array [
             className=""
           >
             <nav
-              className="mx-neg12"
+              className="mx-neg12 color-text"
             >
               <ul>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text flex flex--space-between-main"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full flex flex--space-between-main"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -754,7 +754,7 @@ Array [
                 </li>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -766,7 +766,7 @@ Array [
                 </li>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text bg-blue-faint color-blue"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full bg-blue-faint color-blue-deep"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -778,7 +778,7 @@ Array [
                 </li>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -794,7 +794,7 @@ Array [
         </div>
       </div>
       <div
-        className="flex-child flex-child--grow"
+        className="flex-child-grow"
         style={
           Object {
             "width": "100%",
@@ -925,7 +925,7 @@ Array [
           id="docs-content"
         >
           <div
-            className="col prose col--8-mxl col--12"
+            className="col col--auto prose w-2/3-mxl w-full"
           >
             <h1
               className="txt-fancy"
@@ -937,7 +937,7 @@ Array [
             className="grid grid--gut60"
           >
             <div
-              className="dr-ui--page-layout-aside col col--12 col--4-mxl"
+              className="dr-ui--page-layout-aside col w-full w-1/3-mxl"
             >
               <aside
                 className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl"
@@ -962,7 +962,7 @@ Array [
               </aside>
             </div>
             <div
-              className="col col--8-mxl col--12 prose"
+              className="col col--auto w-2/3-mxl w-full prose"
             >
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -1036,10 +1036,10 @@ Array [
     className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm"
   >
     <div
-      className="flex-parent-mm"
+      className="flex-mm"
     >
       <div
-        className="flex-child flex-child--grow"
+        className="flex-child-grow"
         style={
           Object {
             "width": "100%",
@@ -1140,7 +1140,7 @@ Array [
           id="docs-content"
         >
           <div
-            className="col prose"
+            className="col col--auto prose"
           >
             <h1
               className="txt-fancy"
@@ -1152,7 +1152,7 @@ Array [
             className="grid grid--gut60"
           >
             <div
-              className="col prose"
+              className="col col--auto prose"
             >
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -1226,10 +1226,10 @@ Array [
     className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm"
   >
     <div
-      className="flex-parent-mm"
+      className="flex-mm"
     >
       <div
-        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr36-mm "
+        className="flex-child-no-shrink w-full w180-mm w240-ml mr36-mm "
         style={
           Object {
             "width": "100%",
@@ -1303,12 +1303,12 @@ Array [
             className=""
           >
             <nav
-              className="mx-neg12"
+              className="mx-neg12 color-text"
             >
               <ul>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text bg-blue-faint color-blue flex flex--space-between-main"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full bg-blue-faint color-blue-deep flex flex--space-between-main"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -1345,7 +1345,7 @@ Array [
                 </li>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -1357,7 +1357,7 @@ Array [
                 </li>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -1369,7 +1369,7 @@ Array [
                 </li>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -1385,7 +1385,7 @@ Array [
         </div>
       </div>
       <div
-        className="flex-child flex-child--grow"
+        className="flex-child-grow"
         style={
           Object {
             "width": "100%",
@@ -1546,7 +1546,7 @@ Array [
           id="docs-content"
         >
           <div
-            className="col prose col--8-mxl col--12"
+            className="col col--auto prose w-2/3-mxl w-full"
           >
             <h1
               className="txt-fancy"
@@ -1558,7 +1558,7 @@ Array [
             className="grid grid--gut60"
           >
             <div
-              className="dr-ui--page-layout-aside col col--12 col--4-mxl"
+              className="dr-ui--page-layout-aside col w-full w-1/3-mxl"
             >
               <aside
                 className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl"
@@ -1571,7 +1571,7 @@ Array [
               >
                 <nav
                   aria-labelledby="on-this-page"
-                  className="dr-ui--on-this-page mb24-mxl mb18"
+                  className="dr-ui--on-this-page color-text mb24-mxl mb18"
                 >
                   <h2
                     className="unprose txt-m txt-bold mb6"
@@ -1583,7 +1583,7 @@ Array [
                     className=""
                   >
                     <li
-                      className="mb3 mb6-mxl"
+                      className="mb3-mxl"
                     >
                       <a
                         className="link inline-block link--gray"
@@ -1598,7 +1598,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="mb3 mb6-mxl"
+                      className="mb3-mxl"
                     >
                       <a
                         className="link inline-block link--gray"
@@ -1628,7 +1628,7 @@ Array [
               </aside>
             </div>
             <div
-              className="col col--8-mxl col--12 prose"
+              className="col col--auto w-2/3-mxl w-full prose"
             >
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -1794,10 +1794,10 @@ Array [
     className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm"
   >
     <div
-      className="flex-parent-mm"
+      className="flex-mm"
     >
       <div
-        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr36-mm undefined"
+        className="flex-child-no-shrink w-full w180-mm w240-ml mr36-mm undefined"
         style={
           Object {
             "width": "100%",
@@ -1900,12 +1900,12 @@ Array [
             className="none block-mm"
           >
             <nav
-              className="mx-neg12"
+              className="mx-neg12 color-text"
             >
               <ul>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text bg-blue-faint color-blue"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full bg-blue-faint color-blue-deep"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -1921,7 +1921,7 @@ Array [
         </div>
       </div>
       <div
-        className="flex-child flex-child--grow"
+        className="flex-child-grow"
         style={
           Object {
             "width": "100%",
@@ -2022,7 +2022,7 @@ Array [
           id="docs-content"
         >
           <div
-            className="col prose"
+            className="col col--auto prose"
           >
             <h1
               className="txt-fancy"
@@ -2034,7 +2034,7 @@ Array [
             className="grid grid--gut60"
           >
             <div
-              className="col prose"
+              className="col col--auto prose"
             >
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

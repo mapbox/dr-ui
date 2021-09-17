@@ -35,7 +35,7 @@ exports[`Workflow 3 - Enter feedback Cannot submit feedback yet 1`] = `
             className="flex flex--space-between-main w-full mb12"
           >
             <div
-              className="txt-bold"
+              className="txt-bold color-text"
             >
               Something is confusing
             </div>
