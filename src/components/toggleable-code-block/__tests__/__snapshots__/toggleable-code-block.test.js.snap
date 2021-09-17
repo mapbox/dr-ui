@@ -167,7 +167,7 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
           data-chunk-code="chunk-0"
         >
           <button
-            className="w-full bg-gray-lighter color-gray-dark color-text-on-hover pl12 py6 cursor-pointer txt-s h30 flex flex--center-cross"
+            className="w-full bg-blue-faint color-blue-dark color-blue-on-hover pl12 py6 cursor-pointer txt-s h30 flex flex--center-cross"
             onClick={[Function]}
           >
             <div>
@@ -266,7 +266,7 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
           data-chunk-code="chunk-2"
         >
           <button
-            className="w-full bg-gray-lighter color-gray-dark color-text-on-hover pl12 py6 cursor-pointer txt-s h30 flex flex--center-cross"
+            className="w-full bg-blue-faint color-blue-dark color-blue-on-hover pl12 py6 cursor-pointer txt-s h30 flex flex--center-cross"
             onClick={[Function]}
           >
             <div>
@@ -464,7 +464,7 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
           data-chunk-code="chunk-4"
         >
           <button
-            className="w-full bg-gray-lighter color-gray-dark color-text-on-hover pl12 py6 cursor-pointer txt-s h30 flex flex--center-cross"
+            className="w-full bg-blue-faint color-blue-dark color-blue-on-hover pl12 py6 cursor-pointer txt-s h30 flex flex--center-cross"
             onClick={[Function]}
           >
             <div>
