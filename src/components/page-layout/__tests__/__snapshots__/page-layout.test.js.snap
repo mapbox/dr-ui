@@ -1657,10 +1657,10 @@ Array [
                   href="/PageLayout/guides/worldview/data-sources/"
                 >
                   <div
-                    className="round flex-parent flex-parent--stretch-cross border border--gray-light border--gray-dark-on-hover border--2 transition"
+                    className="round flex flex--stretch-cross border border--gray-light border--gray-dark-on-hover border--2 transition"
                   >
                     <div
-                      className="flex-child flex-child--grow px18 pt30 pb18"
+                      className="flex-child-grow px18 pt30 pb18"
                       style={
                         Object {
                           "flex": 1,
@@ -1668,18 +1668,13 @@ Array [
                       }
                     >
                       <div
-                        className="flex-parent flex-parent--row"
+                        className="flex flex--row"
                       >
                         <div
-                          className="flex-child"
+                          className=""
                         >
                           <div
                             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-gray-dark"
-                            style={
-                              Object {
-                                "color": undefined,
-                              }
-                            }
                           >
                             Next
                           </div>
@@ -1697,7 +1692,7 @@ Array [
                       </div>
                     </div>
                     <div
-                      className="flex-child flex-child--no-shrink w30 flex-parent flex-parent--center-cross border-l"
+                      className="flex-child-no-shrink w30 flex flex--center-cross border-l"
                       style={
                         Object {
                           "borderColor": "inherit",
