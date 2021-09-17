@@ -23,7 +23,8 @@
     "deploy-docs": "npm run build-docs && gh-pages -d docs/_site",
     "lint-md": "remark docs/src/pages/",
     "test-content": "copyeditor docs/src/pages --dict docs/local.dic",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lighthouse": "lhci autorun"
   },
   "repository": {
     "type": "git",
