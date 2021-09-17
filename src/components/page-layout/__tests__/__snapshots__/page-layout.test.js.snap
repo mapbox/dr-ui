@@ -1735,11 +1735,6 @@ Array [
                         >
                           <div
                             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-gray-dark"
-                            style={
-                              Object {
-                                "color": undefined,
-                              }
-                            }
                           >
                             Next
                           </div>

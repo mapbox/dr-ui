@@ -24,11 +24,6 @@ exports[`related-page Use \`label\` prop renders as expected 1`] = `
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-gray-dark"
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
           >
             next
           </div>
@@ -151,11 +146,6 @@ exports[`related-page example renders as expected 1`] = `
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-pink-dark"
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
           >
             example
           </div>
@@ -226,11 +216,6 @@ exports[`related-page fallback with children renders as expected 1`] = `
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-gray-dark"
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
           >
             related
           </div>
@@ -366,12 +351,7 @@ exports[`related-page glossary renders as expected 1`] = `
           className=""
         >
           <div
-            className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 "
-            style={
-              Object {
-                "color": "#a7662c",
-              }
-            }
+            className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-orange-dark"
           >
             glossary
           </div>
@@ -476,11 +456,6 @@ exports[`related-page guide renders as expected 1`] = `
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-blue-dark"
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
           >
             guide
           </div>
@@ -609,11 +584,6 @@ exports[`related-page playground renders as expected 1`] = `
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-gray-dark"
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
           >
             playground
           </div>
@@ -727,11 +697,6 @@ exports[`related-page troubleshooting renders as expected 1`] = `
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-red-dark"
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
           >
             troubleshooting
           </div>
@@ -843,12 +808,7 @@ exports[`related-page tutorial renders as expected 1`] = `
           className=""
         >
           <div
-            className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 "
-            style={
-              Object {
-                "color": "#1b7d4f",
-              }
-            }
+            className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-green-dark"
           >
             tutorial
           </div>
@@ -954,11 +914,6 @@ exports[`related-page video renders as expected 1`] = `
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-purple-dark"
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
           >
             video
           </div>
@@ -1030,11 +985,6 @@ exports[`related-page video with svg image fallback renders as expected 1`] = `
         >
           <div
             className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-purple-dark"
-            style={
-              Object {
-                "color": undefined,
-              }
-            }
           >
             video
           </div>
