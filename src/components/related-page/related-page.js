@@ -45,8 +45,7 @@ class RelatedPage extends React.PureComponent {
       tutorial: {
         label: 'tutorial',
         image: <BookletImage />,
-        color: 'green',
-        a11yColor: '#1b7d4f'
+        color: 'green'
       },
       troubleshooting: {
         label: 'troubleshooting',
@@ -61,8 +60,7 @@ class RelatedPage extends React.PureComponent {
       glossary: {
         label: 'glossary',
         image: <GlossaryImage />,
-        color: 'orange',
-        a11yColor: '#a7662c'
+        color: 'orange'
       },
       example: {
         label: 'example',
@@ -134,10 +132,7 @@ class RelatedPage extends React.PureComponent {
                 )}
                 <div className={contentClasses}>
                   <div
-                    style={{ color: theme.a11yColor }}
-                    className={`txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 ${
-                      !theme.a11yColor ? `color-${theme.color}-dark` : ''
-                    }`}
+                    className={`txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 ${`color-${theme.color}-dark`}`}
                   >
                     {theme.label}
                   </div>
