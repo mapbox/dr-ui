@@ -10,3 +10,4 @@ docs/src/data/components.js
 docs/src/prism.css
 _site*
 .lighthouseci
+.eslintcache

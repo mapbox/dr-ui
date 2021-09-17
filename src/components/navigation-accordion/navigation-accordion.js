@@ -3,9 +3,6 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Icon from '@mapbox/mr-ui/icon';
 import Tag from '../tag/tag';
-// check if client body width is >= 640
-const isMM =
-  typeof document !== 'undefined' ? document.body.clientWidth >= 640 : false;
 
 export default class NavigationAccordion extends React.Component {
   constructor() {
@@ -31,12 +28,17 @@ export default class NavigationAccordion extends React.Component {
   };
 
   componentDidMount() {
+    // check if client body width is >= 640
+    const isMM =
+      typeof document !== 'undefined'
+        ? document.body.clientWidth >= 640
+        : false;
     // if device width is >= 640
     // determine which section is active and activate its toggle
     const { parentPage, navigation } = this.props;
-    if (isMM) {
+    if (isMM && parentPage) {
       navigation.forEach((nav) => {
-        if (nav.path === parentPage) {
+        if (parentPage.indexOf(nav.path) > -1) {
           this.setToggle(nav.title);
         }
       });
@@ -96,30 +98,53 @@ export default class NavigationAccordion extends React.Component {
       </div>
     );
   }
-  renderBody(subItems, activeItem, sectionId) {
-    const { parentPage } = this.props;
-    const subItemEls = subItems
-      .filter((page) => {
-        return page.path !== parentPage;
-      })
-      .map((page) => (
-        <li
-          // Required on parents containing tags to prevent unwanted scrollbars on IE
-          className={classnames('mb3', {
-            'scroll-hidden': page.tag
-          })}
-          key={page.title}
-        >
+  // Create list of grouped guides
+  renderSubPages(subPages, activeItem) {
+    const subs = subPages.map((subPage) => {
+      return (
+        <li key={subPage.title}>
           <a
-            className={classnames('inline-block w-full color-blue-on-hover', {
-              'color-blue': activeItem === page.path
-            })}
-            href={page.path}
+            href={subPage.path}
+            className={classnames(
+              'pl12 inline-block w-full color-blue-on-hover border-l border--gray-light border-l--2',
+              {
+                'color-blue': activeItem === subPage.path
+              }
+            )}
           >
-            {page.title}
-            {page.tag && this.renderTag(page)}
+            {subPage.title}
           </a>
         </li>
+      );
+    });
+    return <ul className="mb6 ml3">{subs}</ul>;
+  }
+  renderBody(subItems, activeItem, sectionId) {
+    const subItemEls = subItems
+      .filter((page) => !page.groupOrder || page.groupOrder === undefined)
+      .map((page) => (
+        <React.Fragment key={page.title}>
+          <li
+            // Required on parents containing tags to prevent unwanted scrollbars on IE
+            className={classnames('mb3', {
+              'scroll-hidden': page.tag
+            })}
+          >
+            <a
+              className={classnames('inline-block w-full color-blue-on-hover', {
+                'color-blue': activeItem === page.path
+              })}
+              href={page.path}
+            >
+              {page.title}
+              {page.tag && this.renderTag(page)}
+            </a>
+          </li>
+          {activeItem &&
+            activeItem.includes(page.path) &&
+            page.subPages &&
+            this.renderSubPages(page.subPages, activeItem)}
+        </React.Fragment>
       ));
 
     return (
@@ -153,7 +178,7 @@ export default class NavigationAccordion extends React.Component {
       // the section's toggle is active
       const isActiveToggle = activeToggles.indexOf(title) > -1;
       // the section is active
-      const isActiveSection = path === parentPage;
+      const isActiveSection = parentPage && parentPage.indexOf(path) > -1;
       const sectionId = `menu-${id}`;
       return {
         header: this.renderHeader(
@@ -196,7 +221,21 @@ NavigationAccordion.propTypes = {
       id: PropTypes.string.isRequired,
       tag: PropTypes.string,
       hideSubpages: PropTypes.bool, // needed for /help/tutorials and /help/troublehshooting
-      pages: PropTypes.array
+      pages: PropTypes.arrayOf(
+        PropTypes.shape({
+          title: PropTypes.string.isRequired,
+          path: PropTypes.string.isRequired,
+          id: PropTypes.string,
+          tag: PropTypes.string,
+          subPages: PropTypes.arrayOf(
+            PropTypes.shape({
+              title: PropTypes.string.isRequired,
+              path: PropTypes.string.isRequired,
+              id: PropTypes.string
+            })
+          )
+        })
+      )
     })
   ).isRequired,
   location: PropTypes.object.isRequired,

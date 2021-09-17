@@ -1,0 +1,315 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Workflow 2 - Report a problem Check UI element state 1`] = `
+<Feedback
+  feedbackSentryDsn="https://eccc8b561b9a461990309b01d33d54e3@sentry.io/1848287"
+  location={
+    Object {
+      "hash": "#lnglat",
+      "pathname": "/mapbox-gl-js/api/",
+    }
+  }
+  site="dr-ui"
+  type="page"
+  webhook={
+    Object {
+      "production": "",
+      "staging": "",
+    }
+  }
+>
+  <FeedbackWrapper
+    helpful={false}
+    title="Report a problem"
+  >
+    <div
+      className="dr-ui--feedback wmax300"
+    >
+      <div
+        className="bg-gray-faint round py12 px12"
+      >
+        <div
+          className="flex-parent flex-parent--column"
+        >
+          <div
+            className="flex-child flex-parent flex-parent--space-between-main w-full mb12"
+          >
+            <div
+              className="flex-child txt-bold"
+            >
+              Report a problem
+            </div>
+            <div
+              className="flex-child"
+            >
+              <Tooltip
+                alignment="center"
+                block={false}
+                coloring="light"
+                content="Close"
+                disabled={false}
+                maxWidth="medium"
+                padding="small"
+                placement="top"
+                respondsToClick={false}
+                textSize="s"
+              >
+                <PopoverTrigger
+                  block={false}
+                  content={
+                    <div
+                      className="txt-s wmax240"
+                    >
+                      Close
+                    </div>
+                  }
+                  disabled={false}
+                  popoverProps={
+                    Object {
+                      "alignment": "center",
+                      "coloring": "light",
+                      "hasPointer": true,
+                      "hideWhenAnchorIsOffscreen": true,
+                      "padding": "small",
+                      "passthroughProps": Object {
+                        "id": "tooltip-2",
+                        "role": "tooltip",
+                      },
+                      "placement": "top",
+                    }
+                  }
+                  receiveFocus={false}
+                  renderHiddenContent={true}
+                  respondsToClick={false}
+                  respondsToFocus={true}
+                  respondsToHover={true}
+                  trapFocus={false}
+                >
+                  <div
+                    className="inline-block"
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onKeyDown={[Function]}
+                  >
+                    <button
+                      aria-describedby="tooltip-2"
+                      aria-label="Close feedback"
+                      className="link--gray"
+                      id="feedback-close-button"
+                      onClick={[Function]}
+                    >
+                      <Icon
+                        inline={false}
+                        name="close"
+                        passthroughProps={Object {}}
+                        size={18}
+                      >
+                        <svg
+                          className="events-none icon"
+                          focusable="false"
+                          role="presentation"
+                          style={
+                            Object {
+                              "height": 18,
+                              "width": 18,
+                            }
+                          }
+                        >
+                          <use
+                            xlinkHref="#icon-close"
+                            xmlnsXlink="http://www.w3.org/1999/xlink"
+                          />
+                        </svg>
+                      </Icon>
+                    </button>
+                    <div
+                      className="hide-visually"
+                      id="tooltip-2"
+                      role="tooltip"
+                    >
+                      <div
+                        className="txt-s wmax240"
+                      >
+                        Close
+                      </div>
+                    </div>
+                  </div>
+                </PopoverTrigger>
+              </Tooltip>
+            </div>
+          </div>
+          <div
+            className="flex-child mb6 prose"
+          >
+            <CategoryProblem
+              leadText="Tell us more about what's happening."
+              options={
+                Object {
+                  "I see an error message": Object {
+                    "placeholder": "Let us know about the error message you see.",
+                    "question": "What error do you see and when did you encounter it?",
+                  },
+                  "Something else": Object {
+                    "placeholder": "Let us know more about the problem.",
+                    "question": "Describe the problem.",
+                  },
+                  "Something is incorrect or doesn't work": Object {
+                    "placeholder": "Let us know what is incorrect or doesn't work.",
+                    "question": "What is incorrect or doesn't work and where on the page does it appear?",
+                  },
+                  "Something is missing": Object {
+                    "placeholder": "Let us know what is missing.",
+                    "question": "What information are you looking for?",
+                  },
+                }
+              }
+              submitFeedback={[Function]}
+            >
+              <p>
+                Tell us more about what's happening.
+              </p>
+              <div
+                className="mb6"
+              >
+                <ControlRadioSet
+                  autoFocus={false}
+                  id="feedback-problem-options"
+                  onChange={[Function]}
+                  optional={false}
+                  options={
+                    Array [
+                      Object {
+                        "label": "Something is incorrect or doesn't work",
+                        "value": "Something is incorrect or doesn't work",
+                      },
+                      Object {
+                        "label": "I see an error message",
+                        "value": "I see an error message",
+                      },
+                      Object {
+                        "label": "Something is missing",
+                        "value": "Something is missing",
+                      },
+                      Object {
+                        "label": "Something else",
+                        "value": "Something else",
+                      },
+                    ]
+                  }
+                  themeRadio="mr6 radio--gray radio--s-label inline-block"
+                  themeRadioContainer="txt-s block mb6 flex-parent"
+                  value=""
+                >
+                  <ControlWrapper
+                    id="feedback-problem-options"
+                    themeControlWrapper=""
+                  >
+                    <div
+                      className="relative "
+                    >
+                      <fieldset>
+                        <div
+                          aria-required={true}
+                          data-test="feedback-problem-options-input"
+                          id="feedback-problem-options"
+                          role="radiogroup"
+                        >
+                          <label
+                            className="radio-container txt-s block mb6 flex-parent"
+                            key="Something is incorrect or doesn't work"
+                          >
+                            <input
+                              autoFocus={false}
+                              checked={false}
+                              name="feedback-problem-options"
+                              onChange={[Function]}
+                              type="radio"
+                              value="Something is incorrect or doesn't work"
+                            />
+                            <div
+                              className="mr6 radio--gray radio--s-label inline-block radio"
+                            />
+                            Something is incorrect or doesn't work
+                          </label>
+                          <label
+                            className="radio-container txt-s block mb6 flex-parent"
+                            key="I see an error message"
+                          >
+                            <input
+                              autoFocus={false}
+                              checked={false}
+                              name="feedback-problem-options"
+                              onChange={[Function]}
+                              type="radio"
+                              value="I see an error message"
+                            />
+                            <div
+                              className="mr6 radio--gray radio--s-label inline-block radio"
+                            />
+                            I see an error message
+                          </label>
+                          <label
+                            className="radio-container txt-s block mb6 flex-parent"
+                            key="Something is missing"
+                          >
+                            <input
+                              autoFocus={false}
+                              checked={false}
+                              name="feedback-problem-options"
+                              onChange={[Function]}
+                              type="radio"
+                              value="Something is missing"
+                            />
+                            <div
+                              className="mr6 radio--gray radio--s-label inline-block radio"
+                            />
+                            Something is missing
+                          </label>
+                          <label
+                            className="radio-container txt-s block mb6 flex-parent"
+                            key="Something else"
+                          >
+                            <input
+                              autoFocus={false}
+                              checked={false}
+                              name="feedback-problem-options"
+                              onChange={[Function]}
+                              type="radio"
+                              value="Something else"
+                            />
+                            <div
+                              className="mr6 radio--gray radio--s-label inline-block radio"
+                            />
+                            Something else
+                          </label>
+                        </div>
+                      </fieldset>
+                      <div
+                        role="alert"
+                      />
+                    </div>
+                  </ControlWrapper>
+                </ControlRadioSet>
+              </div>
+            </CategoryProblem>
+          </div>
+          <div
+            className="flex-child color-gray"
+          >
+            Need help?
+             
+            <button
+              className="link"
+              onClick={[Function]}
+              value="Contact support"
+            >
+              Contact support
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </FeedbackWrapper>
+</Feedback>
+`;

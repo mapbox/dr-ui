@@ -5,6 +5,8 @@ import classnames from 'classnames';
 import OnThisPage from '../../on-this-page/on-this-page';
 import Feedback from '../../feedback/feedback';
 import OverviewHeader from '../../overview-header/overview-header';
+import NextPage from './next-page.js';
+import GuideGroupIndex from './guide-group-index.js';
 
 export default class Content extends React.PureComponent {
   render() {
@@ -47,7 +49,7 @@ Content.propTypes = {
 };
 
 export class ContentWrapper extends React.PureComponent {
-  renderFeedback = (position) => {
+  renderFeedback = () => {
     const { location, section, layoutConfig } = this.props;
     const { layout } = layoutConfig;
 
@@ -59,7 +61,6 @@ export class ContentWrapper extends React.PureComponent {
         site={SITE}
         location={location}
         section={section}
-        position={position}
         webhook={FORWARD_EVENT_WEBHOOK}
       />
     );
@@ -81,17 +82,18 @@ export class ContentWrapper extends React.PureComponent {
       >
         {this.props.customAside ? this.props.customAside : undefined}
         {showToc && headings && headings.length > 0 && (
-          <OnThisPage headings={headings} themeWrapper="mb36-mxl mb18" />
+          <OnThisPage headings={headings} themeWrapper="mb24-mxl mb18" />
         )}
         {showFeedback && (
-          <div className="none block-mxl">{this.renderFeedback('aside')}</div>
+          <div className="none block-mxl">{this.renderFeedback()}</div>
         )}
       </aside>
     );
   };
 
   render() {
-    const { children, frontMatter, layoutConfig } = this.props;
+    const { children, frontMatter, layoutConfig, navigation, location } =
+      this.props;
     const { title, unProse, hideFeedback, layout, overviewHeader } =
       frontMatter;
     const { hideTitle } = layoutConfig;
@@ -123,7 +125,6 @@ export class ContentWrapper extends React.PureComponent {
               {this.renderAside(showFeedback)}
             </div>
           )}
-
           <div
             className={classnames('col', {
               'col--8-mxl col--12': layoutConfig.aside !== 'none',
@@ -131,13 +132,29 @@ export class ContentWrapper extends React.PureComponent {
             })}
           >
             {children}
+            {frontMatter.group && (
+              <GuideGroupIndex
+                pathname={location.pathname}
+                navigation={navigation}
+                frontMatter={frontMatter}
+              />
+            )}
+            {frontMatter.groupOrder && (
+              <div className="mt36">
+                <NextPage
+                  pathname={location.pathname}
+                  navigation={navigation}
+                  frontMatter={frontMatter}
+                />
+              </div>
+            )}
             {showFeedback && (
               <div
                 className={classnames('my36', {
                   'block none-mxl': layout !== 'full' // hide feedback at bottom of page on larger screens unless layout is full (always show it on the bottom)
                 })}
               >
-                {this.renderFeedback('bottom')}
+                {this.renderFeedback()}
               </div>
             )}
           </div>
@@ -156,7 +173,9 @@ ContentWrapper.propTypes = {
     headings: PropTypes.array,
     layout: PropTypes.string,
     overviewHeader: PropTypes.object,
-    onThisPage: PropTypes.bool
+    onThisPage: PropTypes.bool,
+    groupOrder: PropTypes.number,
+    group: PropTypes.bool
   }).isRequired,
   headings: PropTypes.array,
   location: PropTypes.object.isRequired,

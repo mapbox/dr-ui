@@ -5,6 +5,8 @@ const allIosVersions = require('./sample/ios.json');
 
 describe('pre-release', () => {
   const arr = [
+    '4.9.0-beta.2',
+    '4.9.0-beta.10',
     '4.9.0-beta.1',
     '4.9.0-alpha.2',
     '4.9.0-alpha.1',
@@ -17,6 +19,8 @@ describe('pre-release', () => {
 
   test(`allVersionsOrdered`, () => {
     expect(sortVersions(arr).allVersionsOrdered).toEqual([
+      '4.9.0-beta.10',
+      '4.9.0-beta.2',
       '4.9.0-beta.1',
       '4.9.0-alpha.2',
       '4.9.0-alpha.1',
@@ -38,6 +42,8 @@ describe('pre-release', () => {
 
   test(`newestPreRelease`, () => {
     expect(sortVersions(arr).newestPreRelease).toEqual([
+      '4.9.0-beta.10',
+      '4.9.0-beta.2',
       '4.9.0-beta.1',
       '4.9.0-alpha.2',
       '4.9.0-alpha.1'

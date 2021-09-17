@@ -134,6 +134,10 @@ describe('prepareSitemap', () => {
         'https://mapbox.github.io/dr-ui/guides',
         'https://mapbox.github.io/dr-ui/guides/a11y',
         'https://mapbox.github.io/dr-ui/guides/batfish-helpers',
+        'https://mapbox.github.io/dr-ui/guides/grouped-guides',
+        'https://mapbox.github.io/dr-ui/guides/grouped-guides/file-structure',
+        'https://mapbox.github.io/dr-ui/guides/grouped-guides/frontmatter',
+        'https://mapbox.github.io/dr-ui/guides/grouped-guides/resulting-ui',
         'https://mapbox.github.io/dr-ui/guides/multi-structured',
         'https://mapbox.github.io/dr-ui/guides/page-layout',
         'https://mapbox.github.io/dr-ui/guides/split-pages'

@@ -34,6 +34,7 @@ describe('buildNavigation', () => {
         navOrder: 1,
         pages: [
           {
+            description: 'Overview of the Mapbox Maps service APIs.',
             layout: 'page',
             order: 2,
             path: '/api/maps/',
@@ -41,6 +42,7 @@ describe('buildNavigation', () => {
             title: 'Maps service'
           },
           {
+            description: 'Overview of the Mapbox Navigation service APIs.',
             layout: 'page',
             order: 3,
             path: '/api/navigation/',
@@ -48,6 +50,7 @@ describe('buildNavigation', () => {
             title: 'Navigation service'
           },
           {
+            description: 'Overview of the Mapbox Search service APIs.',
             layout: 'page',
             order: 4,
             path: '/api/search/',
@@ -55,6 +58,7 @@ describe('buildNavigation', () => {
             title: 'Search service'
           },
           {
+            description: 'Overview of the Mapbox Accounts service APIs.',
             layout: 'page',
             order: 5,
             path: '/api/accounts/',
@@ -62,6 +66,8 @@ describe('buildNavigation', () => {
             title: 'Accounts service'
           },
           {
+            description:
+              'The Mapbox API changelog documents the changes made to all Mapbox APIs.',
             layout: 'page',
             order: 6,
             path: '/api/changelog/',
@@ -133,6 +139,7 @@ describe('buildNavigation', () => {
         navOrder: 1,
         pages: [
           {
+            description: 'Overview of the Mapbox Maps service APIs.',
             layout: 'page',
             order: 2,
             path: '/api/maps/',
@@ -140,6 +147,7 @@ describe('buildNavigation', () => {
             title: 'Maps service'
           },
           {
+            description: 'Overview of the Mapbox Navigation service APIs.',
             layout: 'page',
             order: 3,
             path: '/api/navigation/',
@@ -147,6 +155,7 @@ describe('buildNavigation', () => {
             title: 'Navigation service'
           },
           {
+            description: 'Overview of the Mapbox Search service APIs.',
             layout: 'page',
             order: 4,
             path: '/api/search/',
@@ -154,6 +163,7 @@ describe('buildNavigation', () => {
             title: 'Search service'
           },
           {
+            description: 'Overview of the Mapbox Accounts service APIs.',
             layout: 'page',
             order: 5,
             path: '/api/accounts/',
@@ -161,6 +171,8 @@ describe('buildNavigation', () => {
             title: 'Accounts service'
           },
           {
+            description:
+              'The Mapbox API changelog documents the changes made to all Mapbox APIs.',
             layout: 'page',
             order: 6,
             path: '/api/changelog/',
@@ -232,6 +244,7 @@ describe('buildNavigation', () => {
         navOrder: 1,
         pages: [
           {
+            description: 'Learn about different layout options.',
             layout: 'page',
             order: 2,
             path: '/docs-starter-kit/maps/overview/layouts/',
@@ -239,6 +252,7 @@ describe('buildNavigation', () => {
             title: 'Layouts'
           },
           {
+            description: 'How to add pages to the top and side navigation.',
             layout: 'page',
             order: 3,
             path: '/docs-starter-kit/maps/overview/navigation/',
@@ -246,6 +260,7 @@ describe('buildNavigation', () => {
             title: 'Navigation'
           },
           {
+            description: 'How to add images, videos, gifs.',
             layout: 'page',
             order: 4,
             path: '/docs-starter-kit/maps/overview/images/',
@@ -253,6 +268,7 @@ describe('buildNavigation', () => {
             title: 'Images and videos'
           },
           {
+            description: 'How to store constants in your repository.',
             layout: 'page',
             order: 5,
             path: '/docs-starter-kit/maps/overview/constants/',
@@ -260,6 +276,8 @@ describe('buildNavigation', () => {
             title: 'Constants'
           },
           {
+            description:
+              'Learn about all the options for adding data to your page.',
             layout: 'page',
             order: 6,
             path: '/docs-starter-kit/maps/overview/frontmatter/',
@@ -311,6 +329,7 @@ describe('buildNavigation', () => {
         navOrder: 1,
         pages: [
           {
+            description: 'Learn about different layout options.',
             layout: 'page',
             order: 2,
             path: '/docs-starter-kit/navigation/overview/layouts/',
@@ -318,6 +337,7 @@ describe('buildNavigation', () => {
             title: 'Layouts'
           },
           {
+            description: 'How to add pages to the top and side navigation.',
             layout: 'page',
             order: 3,
             path: '/docs-starter-kit/navigation/overview/navigation/',
@@ -325,6 +345,7 @@ describe('buildNavigation', () => {
             title: 'Navigation'
           },
           {
+            description: 'How to add images, videos, gifs.',
             layout: 'page',
             order: 4,
             path: '/docs-starter-kit/navigation/overview/images/',
@@ -332,6 +353,7 @@ describe('buildNavigation', () => {
             title: 'Images and videos'
           },
           {
+            description: 'How to store constants in your repository.',
             layout: 'page',
             order: 5,
             path: '/docs-starter-kit/navigation/overview/constants/',
@@ -339,6 +361,8 @@ describe('buildNavigation', () => {
             title: 'Constants'
           },
           {
+            description:
+              'Learn about all the options for adding data to your page.',
             layout: 'page',
             order: 6,
             path: '/docs-starter-kit/navigation/overview/frontmatter/',

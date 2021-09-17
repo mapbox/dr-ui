@@ -24,7 +24,7 @@ export default class Basic extends React.PureComponent {
           pathname: '/PageLayout/'
         }}
         frontMatter={{
-          title: 'Overview',
+          title: 'Guides',
           layout: 'full'
         }}
         navigation={{
@@ -32,14 +32,14 @@ export default class Basic extends React.PureComponent {
           hierarchy: {
             '/PageLayout/': {
               parent: '/PageLayout/',
-              title: 'Overview'
+              title: 'Guides'
             }
           },
           navTabs: [
             {
-              title: 'Overview',
+              title: 'Guides',
               path: '/PageLayout/',
-              id: 'overview'
+              id: 'guides'
             }
           ]
         }}

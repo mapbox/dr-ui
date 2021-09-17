@@ -1,5 +1,54 @@
 # Changelog
 
+## Unreleased
+
+- Handle `NavigiationAccordion` when there is no `activeItem`. [#495](https://github.com/mapbox/dr-ui/pull/495)
+
+## 4.2.3
+
+- Fix casing for `DownloadButton` with GeoJSON filetype. [#484](https://github.com/mapbox/dr-ui/pull/484)
+
+## 4.2.2
+
+- Fix issue in `NavigationAccordion` to handle pages that do not have a parent. [#479](https://github.com/mapbox/dr-ui/pull/479)
+
+## 4.2.1
+
+- Fix release
+
+## 4.2.0
+
+- Add `DownloadButton` component. [#474](https://github.com/mapbox/dr-ui/pull/474).
+- Add [grouped guides functionality](https://mapbox.github.io/mr-ui/dr-ui/guides/grouped-guides/) to `NavigationAccordion`. [#453](https://github.com/mapbox/dr-ui/pull/453).
+- Fix bug in `Feedback` textarea where the cursor jumped to end of text. [#477](https://github.com/mapbox/dr-ui/pull/477).
+
+## 4.1.2
+
+- Update `Feedback` to only send an event to Sentry if feedback exists. [#475](https://github.com/mapbox/dr-ui/pull/475)
+
+## 4.1.1
+
+- Fix error handling in `Feedback` component to only send error to Sentry if `forwardEvent` returns one. [#473](https://github.com/mapbox/dr-ui/pull/473)
+
+## 4.1.0
+
+- 🚨 Redesign `Feedback` component to introduce categories. [#462](https://github.com/mapbox/dr-ui/pull/462)
+- Update prismjs, rehype-prism. [#466](https://github.com/mapbox/dr-ui/pull/466)
+- Fix `Video` to use a promise when handling `play()`. [#459](https://github.com/mapbox/dr-ui/pull/459)
+- Update search-ui dependencies. [#467](https://github.com/mapbox/dr-ui/pull/467)
+- Update devDependencies. [#468](https://github.com/mapbox/dr-ui/pull/468)
+- Add `babel-plugin-transform-react-remove-prop-types` to babel.config.js and use ES6 modules. [#456](https://github.com/mapbox/dr-ui/pull/456)
+- Add Sentry tracing to the `AnalyticsShell` with added `sentryPerformance` prop. [#469](https://github.com/mapbox/dr-ui/pull/469)
+- Make `sortVersions` a common JS module. [#470](https://github.com/mapbox/dr-ui/pull/470)
+
+## 4.0.2
+
+- Fix `sortVersions` for prerelease versions greater than 10. [#464](https://github.com/mapbox/dr-ui/pull/464)
+
+## 4.0.1
+
+- In `Search` component, fix logic to prevent queries with results from being sent to Sentry.
+
 ## 4.0.0
 
 - Enforce use of React PureComponents to improve performance. [#414](https://github.com/mapbox/dr-ui/pull/414)

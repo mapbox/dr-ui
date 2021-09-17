@@ -14,7 +14,7 @@ function buildNavigation({ siteBasePath, data, sections, addPages }) {
     // otherwise build a single structure
     const organized = organizePages(pages);
     obj.navTabs = buildNavTabs(organized);
-    obj.hierarchy = buildHierarchy(organized);
+    obj.hierarchy = buildHierarchy(pages, organized);
   }
   return obj;
 }
@@ -28,11 +28,30 @@ function findSection(siteBasePath, page, sections) {
   }, '');
 }
 
-function buildHierarchy(organized, section) {
-  return Object.keys(organized).reduce((obj, group) => {
-    organized[group].pages.map((page) => {
-      (obj[page.path] = {}), (obj[page.path].title = organized[group].title);
-      obj[page.path].parent = group;
+function buildHierarchy(pages, organized, section) {
+  // Create an object containing the title for each
+  // path that is the index for a group of guides
+  const groups = pages.reduce((obj, page) => {
+    if (page.group) obj[page.path] = page.title;
+    return obj;
+  }, {});
+  // Iterate through the organized pages
+  return Object.keys(organized).reduce((obj, contentType) => {
+    organized[contentType].pages.map((page) => {
+      // Create keys in the accumulator
+      obj[page.path] = {};
+      // If the page is in a group of guides
+      if (page.groupOrder) {
+        // Get the path of the group index
+        const groupPath = page.path.match(/(.*\/)(.*\/)$/)[1];
+        // Get the title from the object of groups created above
+        obj[page.path].title = groups[groupPath];
+        obj[page.path].parent = groupPath;
+      } else {
+        obj[page.path].title = organized[contentType].title;
+        obj[page.path].parent = contentType;
+      }
+      // If there's a section, add it to the object
       if (section) {
         obj[page.path].section = {
           title: section.title,
@@ -45,10 +64,25 @@ function buildHierarchy(organized, section) {
 }
 
 function findChildren(pages, parent) {
-  return pages
+  // Filter and sort pages
+  const sortedPages = pages
     .filter((page) => page.path.startsWith(parent.path))
     .filter((page) => !page.splitPage) // exclude individual `splitPage` from navAccordion
     .sort((a, b) => parseInt(a.order) - parseInt(b.order));
+  // Find all pages that are group indexes, and add a
+  // subPages key to the object and set the value to an array
+  // of guides and sort them by the groupOrder
+  sortedPages
+    .filter((page) => page.group === true)
+    .forEach((page) => {
+      page.subPages = sortedPages
+        .filter(
+          (subPage) =>
+            subPage.groupOrder && subPage.path.indexOf(page.path) > -1
+        )
+        .sort((a, b) => parseInt(a.groupOrder) - parseInt(b.groupOrder));
+    });
+  return sortedPages;
 }
 
 function organizePages(pages) {
@@ -74,9 +108,12 @@ function formatPages(siteBasePath, data, sections) {
     .filter((f) => !f.is404) // remove the batfish 404 page
     .map((p) => ({
       title: p.frontMatter.title,
+      description: p.frontMatter.description,
       path: p.path,
-      ...(p.frontMatter.order && { order: p.frontMatter.order }),
       ...(p.frontMatter.navOrder && { navOrder: p.frontMatter.navOrder }),
+      ...(p.frontMatter.order && { order: p.frontMatter.order }),
+      ...(p.frontMatter.groupOrder && { groupOrder: p.frontMatter.groupOrder }),
+      ...(p.frontMatter.group && { group: p.frontMatter.group }),
       ...(p.frontMatter.tag && { tag: p.frontMatter.tag }),
       ...(p.frontMatter.customTagProps && {
         customTagProps: p.frontMatter.customTagProps
@@ -110,7 +147,7 @@ function buildMultiLevels(sections, pages) {
 
       obj.hierarchy = Object.assign(
         obj.hierarchy,
-        buildHierarchy(organized, section)
+        buildHierarchy(pages, organized, section)
       );
       return obj;
     },
