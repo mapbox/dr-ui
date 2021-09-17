@@ -35,7 +35,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
             className="flex flex--space-between-main w-full mb12"
           >
             <div
-              className="txt-bold color-text"
+              className="txt-bold"
             >
               I like this page
             </div>

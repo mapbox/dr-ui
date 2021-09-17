@@ -15,7 +15,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
       >
         <nav
           aria-labelledby="on-this-page"
-          className="dr-ui--on-this-page color-text "
+          className="dr-ui--on-this-page "
         >
           <h2
             className="unprose txt-m txt-bold mb6"
@@ -27,7 +27,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
             className=""
           >
             <li
-              className="mb3-mxl"
+              className="mb3 mb6-mxl"
             >
               <a
                 className="link inline-block link--gray"
@@ -41,10 +41,10 @@ exports[`OnThisPage Basic renders as expected 1`] = `
                 Heading 1
               </a>
               <ul
-                className="none my3"
+                className="none my6"
               >
                 <li
-                  className=""
+                  className="mb3"
                 >
                   <a
                     className="link inline-block link--gray"
@@ -59,7 +59,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
                   </a>
                 </li>
                 <li
-                  className=""
+                  className="mb3"
                 >
                   <a
                     className="link inline-block link--gray"
@@ -74,7 +74,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
                   </a>
                 </li>
                 <li
-                  className=""
+                  className="mb3"
                 >
                   <a
                     className="link inline-block link--gray"
@@ -91,7 +91,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
               </ul>
             </li>
             <li
-              className="mb3-mxl"
+              className="mb3 mb6-mxl"
             >
               <a
                 className="link inline-block link--gray"
@@ -106,7 +106,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
               </a>
             </li>
             <li
-              className="mb3-mxl"
+              className="mb3 mb6-mxl"
             >
               <a
                 className="link inline-block link--gray"
@@ -120,10 +120,10 @@ exports[`OnThisPage Basic renders as expected 1`] = `
                 Heading 3
               </a>
               <ul
-                className="none my3"
+                className="none my6"
               >
                 <li
-                  className=""
+                  className="mb3"
                 >
                   <a
                     className="link inline-block link--gray"
@@ -163,7 +163,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
                   </a>
                 </li>
                 <li
-                  className=""
+                  className="mb3"
                 >
                   <a
                     className="link inline-block link--gray"
@@ -203,7 +203,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
                   </a>
                 </li>
                 <li
-                  className=""
+                  className="mb3"
                 >
                   <a
                     className="link inline-block link--gray"
@@ -245,7 +245,7 @@ exports[`OnThisPage Basic renders as expected 1`] = `
               </ul>
             </li>
             <li
-              className="mb3-mxl"
+              className="mb3 mb6-mxl"
             >
               <a
                 className="link inline-block link--gray"

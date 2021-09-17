@@ -57,7 +57,7 @@ export default class NavigationAccordion extends React.Component {
     return (
       <div
         className={classnames(
-          'px12 flex txt-uppercase txt-fancy round-full w-full',
+          'px12 flex txt-uppercase txt-fancy round-full w-full color-text',
           {
             'bg-blue-faint color-blue-deep': isActiveSection,
             'flex flex--space-between-main': hasChildren
@@ -202,7 +202,7 @@ export default class NavigationAccordion extends React.Component {
     });
 
     return (
-      <nav className="mx-neg12 color-text">
+      <nav className="mx-neg12">
         <ul>{sidebarItems}</ul>
       </nav>
     );

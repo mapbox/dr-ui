@@ -83,15 +83,15 @@ Array [
             </div>
           </div>
           <div
-            className=""
+            className="color-text"
           >
             <nav
-              className="mx-neg12 color-text"
+              className="mx-neg12"
             >
               <ul>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full flex flex--space-between-main"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text flex flex--space-between-main"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -128,7 +128,7 @@ Array [
                 </li>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -140,7 +140,7 @@ Array [
                 </li>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full bg-blue-faint color-blue-deep"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text bg-blue-faint color-blue-deep"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -152,7 +152,7 @@ Array [
                 </li>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -284,7 +284,7 @@ Array [
               className="dr-ui--page-layout-aside col w-full w-1/3-mxl"
             >
               <aside
-                className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl"
+                className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl color-text"
                 data-swiftype-index="false"
                 style={
                   Object {
@@ -709,15 +709,15 @@ Array [
             </div>
           </div>
           <div
-            className=""
+            className="color-text"
           >
             <nav
-              className="mx-neg12 color-text"
+              className="mx-neg12"
             >
               <ul>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full flex flex--space-between-main"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text flex flex--space-between-main"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -754,7 +754,7 @@ Array [
                 </li>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -766,7 +766,7 @@ Array [
                 </li>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full bg-blue-faint color-blue-deep"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text bg-blue-faint color-blue-deep"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -778,7 +778,7 @@ Array [
                 </li>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -940,7 +940,7 @@ Array [
               className="dr-ui--page-layout-aside col w-full w-1/3-mxl"
             >
               <aside
-                className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl"
+                className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl color-text"
                 data-swiftype-index="false"
                 style={
                   Object {
@@ -968,7 +968,7 @@ Array [
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
               <div
-                className="my36 block none-mxl"
+                className="my36 color-text block none-mxl"
               >
                 <button
                   className="btn"
@@ -1158,7 +1158,7 @@ Array [
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
               <div
-                className="my36"
+                className="my36 color-text"
               >
                 <button
                   className="btn"
@@ -1300,15 +1300,15 @@ Array [
             </div>
           </div>
           <div
-            className=""
+            className="color-text"
           >
             <nav
-              className="mx-neg12 color-text"
+              className="mx-neg12"
             >
               <ul>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full bg-blue-faint color-blue-deep flex flex--space-between-main"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text bg-blue-faint color-blue-deep flex flex--space-between-main"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -1345,7 +1345,7 @@ Array [
                 </li>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -1357,7 +1357,7 @@ Array [
                 </li>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -1369,7 +1369,7 @@ Array [
                 </li>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -1561,7 +1561,7 @@ Array [
               className="dr-ui--page-layout-aside col w-full w-1/3-mxl"
             >
               <aside
-                className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl"
+                className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl color-text"
                 data-swiftype-index="false"
                 style={
                   Object {
@@ -1571,7 +1571,7 @@ Array [
               >
                 <nav
                   aria-labelledby="on-this-page"
-                  className="dr-ui--on-this-page color-text mb24-mxl mb18"
+                  className="dr-ui--on-this-page mb24-mxl mb18"
                 >
                   <h2
                     className="unprose txt-m txt-bold mb6"
@@ -1583,7 +1583,7 @@ Array [
                     className=""
                   >
                     <li
-                      className="mb3-mxl"
+                      className="mb3 mb6-mxl"
                     >
                       <a
                         className="link inline-block link--gray"
@@ -1598,7 +1598,7 @@ Array [
                       </a>
                     </li>
                     <li
-                      className="mb3-mxl"
+                      className="mb3 mb6-mxl"
                     >
                       <a
                         className="link inline-block link--gray"
@@ -1726,7 +1726,7 @@ Array [
                 </a>
               </div>
               <div
-                className="my36 block none-mxl"
+                className="my36 color-text block none-mxl"
               >
                 <button
                   className="btn"
@@ -1897,15 +1897,15 @@ Array [
             </div>
           </div>
           <div
-            className="none block-mm"
+            className="color-text none block-mm"
           >
             <nav
-              className="mx-neg12 color-text"
+              className="mx-neg12"
             >
               <ul>
                 <li>
                   <div
-                    className="px12 flex txt-uppercase txt-fancy round-full w-full bg-blue-faint color-blue-deep"
+                    className="px12 flex txt-uppercase txt-fancy round-full w-full color-text bg-blue-faint color-blue-deep"
                   >
                     <a
                       className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
@@ -2056,7 +2056,7 @@ Array [
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
               <div
-                className="my36"
+                className="my36 color-text"
               >
                 <button
                   className="btn"

@@ -77,7 +77,7 @@ export class ContentWrapper extends React.PureComponent {
     return (
       <aside
         data-swiftype-index="false"
-        className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl"
+        className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl color-text"
         style={{ top: '10px' }}
       >
         {this.props.customAside ? this.props.customAside : undefined}
@@ -150,7 +150,7 @@ export class ContentWrapper extends React.PureComponent {
             )}
             {showFeedback && (
               <div
-                className={classnames('my36', {
+                className={classnames('my36 color-text', {
                   'block none-mxl': layout !== 'full' // hide feedback at bottom of page on larger screens unless layout is full (always show it on the bottom)
                 })}
               >

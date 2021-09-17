@@ -133,7 +133,7 @@ class Feedback extends React.PureComponent {
         <div className="bg-gray-faint round py12 px12">
           <div className="flex flex--column">
             <div className="flex flex--space-between-main w-full mb12">
-              <div className="txt-bold color-text">{title}</div>
+              <div className="txt-bold">{title}</div>
               <div>
                 <Tooltip content="Close">
                   <button
