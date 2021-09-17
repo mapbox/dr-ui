@@ -128,11 +128,9 @@ function LabeledDefaultValue(props) {
   }
 
   return (
-    <div className="flex-parent mb3">
-      <div className="flex-child flex-child--no-shrink color-gray">
-        {props.title}:
-      </div>
-      <div className="ml6 flex-child flex-child--grow">
+    <div className="flex mb3">
+      <div className="flex-child-no-shrink color-gray">{props.title}:</div>
+      <div className="ml6 flex-child-grow">
         <DefaultValueDisplay value={props.value} />
       </div>
     </div>
