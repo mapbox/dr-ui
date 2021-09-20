@@ -91,7 +91,7 @@ function sortedProps(propsData) {
 
 function PropRow(props) {
   const required = !props.required ? null : (
-    <span className="txt-xs txt-mono ml6 bg-purple-faint color-purple px6 py3 round">
+    <span className="txt-xs txt-mono ml6 bg-purple-faint color-purple-deep px6 py3 round">
       REQUIRED
     </span>
   );
