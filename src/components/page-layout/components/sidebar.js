@@ -47,7 +47,7 @@ export default class Sidebar extends React.PureComponent {
           )}
         </div>
         <div
-          className={classnames('', {
+          className={classnames('color-text', {
             // if there is only one navTab (with no sub pages)
             // hide the NavigationAccordion on mobile
             'none block-mm': isSinglePageSite

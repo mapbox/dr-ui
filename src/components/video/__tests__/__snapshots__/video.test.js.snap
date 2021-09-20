@@ -2,7 +2,7 @@
 
 exports[`video Basic. Your system settings do not prefer reduced motion, the video will autoplay (unless your browser settings block autoplay). renders as expected 1`] = `
 <div
-  className="relative flex-parent flex-parent--center-main flex-parent--center-cross bg-gray"
+  className="relative flex flex--center-main flex--center-cross bg-gray"
   onFocus={[Function]}
   onMouseLeave={[Function]}
   onMouseOver={[Function]}
@@ -54,7 +54,7 @@ exports[`video Basic. Your system settings do not prefer reduced motion, the vid
 
 exports[`video Reduced motion renders as expected 1`] = `
 <div
-  className="relative flex-parent flex-parent--center-main flex-parent--center-cross bg-gray"
+  className="relative flex flex--center-main flex--center-cross bg-gray"
   onFocus={[Function]}
   onMouseLeave={[Function]}
   onMouseOver={[Function]}
@@ -104,7 +104,7 @@ exports[`video Reduced motion renders as expected 1`] = `
 
 exports[`video The video will not autoplay. Sets autoplay={false} and loop={false}. A preview image will not appear on iOS. renders as expected 1`] = `
 <div
-  className="relative flex-parent flex-parent--center-main flex-parent--center-cross bg-gray"
+  className="relative flex flex--center-main flex--center-cross bg-gray"
   onFocus={[Function]}
   onMouseLeave={[Function]}
   onMouseOver={[Function]}
@@ -156,7 +156,7 @@ exports[`video The video will not autoplay. Sets autoplay={false} and loop={fals
 
 exports[`video The video will not autoplay. Uses \`poster\` to set preview image. renders as expected 1`] = `
 <div
-  className="relative flex-parent flex-parent--center-main flex-parent--center-cross bg-gray"
+  className="relative flex flex--center-main flex--center-cross bg-gray"
   onFocus={[Function]}
   onMouseLeave={[Function]}
   onMouseOver={[Function]}
