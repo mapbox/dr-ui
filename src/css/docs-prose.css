@@ -15,6 +15,7 @@
 }
 
 /* make links darker in Note to improve color contrast */
+.dr-ui--overview-header .link,
 .dr-ui--feedback .link,
 .dr-ui--note a {
   color: #3f5eeb !important;
