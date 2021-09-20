@@ -303,7 +303,7 @@ exports[`phone iOS landscape renders as expected 1`] = `
       className="relative overflow-hidden"
     >
       <div
-        className="relative flex-parent flex-parent--center-main flex-parent--center-cross bg-gray"
+        className="relative flex flex--center-main flex--center-cross bg-gray"
         onFocus={[Function]}
         onMouseLeave={[Function]}
         onMouseOver={[Function]}
