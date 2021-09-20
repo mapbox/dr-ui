@@ -57,7 +57,7 @@ export default class NavigationAccordion extends React.Component {
     return (
       <div
         className={classnames(
-          'px12 flex txt-uppercase txt-fancy round-full w-full color-text',
+          'px12 flex txt-uppercase txt-fancy round-full w-full',
           {
             'bg-blue-faint color-blue-deep': isActiveSection,
             'flex flex--space-between-main': hasChildren
