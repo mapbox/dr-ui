@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Handle `NavigiationAccordion` when there is no `activeItem`. [#495](https://github.com/mapbox/dr-ui/pull/495)
+- Move "I like..." category to bottom in `Feedback` component. [#518](https://github.com/mapbox/dr-ui/pull/518)
 
 ## 4.2.3
 

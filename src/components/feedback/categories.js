@@ -14,29 +14,6 @@ import CategoryConfusing from './components/category-confusing.js';
 export function categories({ type, submitFeedback }) {
   const genericType = returnGenericType(type);
   return {
-    [`I like this ${genericType}`]: {
-      helpful: true,
-      children: (
-        <CategoryLike
-          leadText={`Tell us what you like about this ${type}.`}
-          placeholder="What did you like?"
-          // NOTE: changing the `value` will affect reporting in Mode and Sentry
-          options={[
-            { label: 'I found what I need', value: 'I found what I need' },
-            {
-              label: 'The information is accurate',
-              value: 'The information is accurate'
-            },
-            {
-              label: `The ${genericType} is easy to understand`,
-              value: 'Easy to understand'
-            },
-            { label: 'Something else', value: 'Something else' }
-          ]}
-          submitFeedback={submitFeedback}
-        />
-      )
-    },
     'Report a problem': {
       helpful: false,
       children: (
@@ -73,6 +50,29 @@ export function categories({ type, submitFeedback }) {
         <CategoryConfusing
           option={`What about this ${type} is confusing? How can we improve the content?`}
           placeholder="Let us know what is confusing."
+          submitFeedback={submitFeedback}
+        />
+      )
+    },
+    [`I like this ${genericType}`]: {
+      helpful: true,
+      children: (
+        <CategoryLike
+          leadText={`Tell us what you like about this ${type}.`}
+          placeholder="What did you like?"
+          // NOTE: changing the `value` will affect reporting in Mode and Sentry
+          options={[
+            { label: 'I found what I need', value: 'I found what I need' },
+            {
+              label: 'The information is accurate',
+              value: 'The information is accurate'
+            },
+            {
+              label: `The ${genericType} is easy to understand`,
+              value: 'Easy to understand'
+            },
+            { label: 'Something else', value: 'Something else' }
+          ]}
           submitFeedback={submitFeedback}
         />
       )

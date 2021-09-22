@@ -143,14 +143,6 @@ exports[`Workflow 2 - Contact support Click button, then set state 1`] = `
           >
             <button
               className="btn w-full mb6"
-              key="I like this page"
-              onClick={[Function]}
-              value="I like this page"
-            >
-              I like this page
-            </button>
-            <button
-              className="btn w-full mb6"
               key="Report a problem"
               onClick={[Function]}
               value="Report a problem"
@@ -164,6 +156,14 @@ exports[`Workflow 2 - Contact support Click button, then set state 1`] = `
               value="Something is confusing"
             >
               Something is confusing
+            </button>
+            <button
+              className="btn w-full mb6"
+              key="I like this page"
+              onClick={[Function]}
+              value="I like this page"
+            >
+              I like this page
             </button>
           </div>
           <div
