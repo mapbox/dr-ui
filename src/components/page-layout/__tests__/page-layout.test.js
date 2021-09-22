@@ -88,6 +88,12 @@ describe('page-layout', () => {
     let tree;
 
     beforeEach(() => {
+      Object.defineProperty(document, 'body', {
+        value: {
+          clientWidth: 1000
+        }
+      });
+
       testCase = testCases.groupIndexPage;
       wrapper = renderer.create(testCase.element);
       tree = wrapper.toJSON();

@@ -1937,7 +1937,7 @@ Array [
                     </a>
                     <button
                       aria-controls="menu-guides"
-                      aria-expanded={false}
+                      aria-expanded={true}
                       aria-label="Toggle Guides menu"
                       className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
                       onClick={[Function]}
@@ -1955,12 +1955,75 @@ Array [
                         }
                       >
                         <use
-                          xlinkHref="#icon-chevron-down"
+                          xlinkHref="#icon-chevron-up"
                           xmlnsXlink="http://www.w3.org/1999/xlink"
                         />
                       </svg>
                     </button>
                   </div>
+                  <ul
+                    className="mb12 ml12"
+                    id="menu-guides"
+                  >
+                    <li
+                      className="mb3"
+                    >
+                      <a
+                        className="inline-block w-full color-blue-on-hover"
+                        href="/PageLayout/guides/annotations/"
+                      >
+                        Annotations
+                      </a>
+                    </li>
+                    <li
+                      className="mb3"
+                    >
+                      <a
+                        className="inline-block w-full color-blue-on-hover color-blue"
+                        href="/PageLayout/guides/worldview/"
+                      >
+                        Worldview
+                      </a>
+                    </li>
+                    <ul
+                      className="mb6 ml3"
+                    >
+                      <li>
+                        <a
+                          className="pl12 inline-block w-full color-blue-on-hover border-l border--gray-light border-l--2"
+                          href="/PageLayout/guides/worldview/avilable-worldviews/"
+                        >
+                          Available worldviews
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="pl12 inline-block w-full color-blue-on-hover border-l border--gray-light border-l--2"
+                          href="/PageLayout/guides/worldview/border-styling/"
+                        >
+                          Border styling
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="pl12 inline-block w-full color-blue-on-hover border-l border--gray-light border-l--2"
+                          href="/PageLayout/guides/worldview/data-sources/"
+                        >
+                          Data sources
+                        </a>
+                      </li>
+                    </ul>
+                    <li
+                      className="mb3"
+                    >
+                      <a
+                        className="inline-block w-full color-blue-on-hover"
+                        href="/PageLayout/guides/expressions/"
+                      >
+                        Expressions
+                      </a>
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <div
