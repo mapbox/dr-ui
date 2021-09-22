@@ -2189,58 +2189,79 @@ Array [
             <div
               className="col col--8-mxl col--12 prose"
             >
-              <div
-                className="flex-parent-ml flex-parent--start-cross mb12 border-b border--gray-light pb12"
-              >
+              <div>
                 <div
-                  className="flex-child-ml flex-child--no-shrink txt-bold w240 my0-ml mt18 mb12"
+                  className=""
                 >
-                  <a
-                    href="/PageLayout/guides/worldview/avilable-worldviews/"
+                  <div
+                    className="mb18 border-b border--darken10"
                   >
-                    Available worldviews
-                  </a>
-                </div>
-                <div
-                  className="flex-child-ml flex-child--grow"
-                >
-                  Identify geographic features whose characteristics are defined differently by audiences belonging to various regional, cultural, or political groups.
-                </div>
-              </div>
-              <div
-                className="flex-parent-ml flex-parent--start-cross mb12 border-b border--gray-light pb12"
-              >
-                <div
-                  className="flex-child-ml flex-child--no-shrink txt-bold w240 my0-ml mt18 mb12"
-                >
-                  <a
-                    href="/PageLayout/guides/worldview/border-styling/"
+                    <a
+                      className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+                      href="/PageLayout/guides/worldview/avilable-worldviews/"
+                    >
+                      
+                      <div>
+                        
+                        <div
+                          className="mb6"
+                        >
+                          Available worldviews
+                        </div>
+                        <div
+                          className="color-gray color-gray-on-hover"
+                        >
+                          Identify geographic features whose characteristics are defined differently by audiences belonging to various regional, cultural, or political groups.
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    className="mb18 border-b border--darken10"
                   >
-                    Border styling
-                  </a>
-                </div>
-                <div
-                  className="flex-child-ml flex-child--grow"
-                >
-                  When creating a map style with a tileset that uses worldviews, you must apply a filter to any layers that include a worldview data field.
-                </div>
-              </div>
-              <div
-                className="flex-parent-ml flex-parent--start-cross mb12"
-              >
-                <div
-                  className="flex-child-ml flex-child--no-shrink txt-bold w240 my0-ml mt18 mb12"
-                >
-                  <a
-                    href="/PageLayout/guides/worldview/data-sources/"
+                    <a
+                      className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+                      href="/PageLayout/guides/worldview/border-styling/"
+                    >
+                      
+                      <div>
+                        
+                        <div
+                          className="mb6"
+                        >
+                          Border styling
+                        </div>
+                        <div
+                          className="color-gray color-gray-on-hover"
+                        >
+                          When creating a map style with a tileset that uses worldviews, you must apply a filter to any layers that include a worldview data field.
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    className="mb18 border-b border--darken10"
                   >
-                    Data sources
-                  </a>
-                </div>
-                <div
-                  className="flex-child-ml flex-child--grow"
-                >
-                  Some Mapbox vector tilesets, including Mapbox Streets v8 and Boundaries v3, include the worldview data field in several layers.
+                    <a
+                      className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+                      href="/PageLayout/guides/worldview/data-sources/"
+                    >
+                      
+                      <div>
+                        
+                        <div
+                          className="mb6"
+                        >
+                          Data sources
+                        </div>
+                        <div
+                          className="color-gray color-gray-on-hover"
+                        >
+                          Some Mapbox vector tilesets, including Mapbox Streets v8 and Boundaries v3, include the worldview data field in several layers.
+                        </div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div
