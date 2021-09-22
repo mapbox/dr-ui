@@ -12,8 +12,13 @@ export default class GuideGroupIndex extends React.PureComponent {
     return (
       <CardContainer
         fullWidthCards={true}
-        cards={subPages.map((page) => (
-          <Card key={page.title} {...page} />
+        cards={subPages.map(({ title, description, path }) => (
+          <Card
+            key={title}
+            title={title}
+            description={description}
+            path={path}
+          />
         ))}
       />
     );
