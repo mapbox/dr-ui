@@ -1831,6 +1831,478 @@ Array [
 ]
 `;
 
+exports[`page-layout Page layout: group index renders as expected 1`] = `
+Array [
+  <div
+    className="shell-header-buffer"
+  />,
+  <div
+    className="limiter limiter--wide"
+  >
+    <div
+      className="flex-parent-mm"
+    >
+      <div
+        className="flex-child flex-child--no-shrink w-full w180-mm w240-ml mr36-mm "
+        style={
+          Object {
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm px12-mm"
+          data-swiftype-index="false"
+          id="dr-ui--page-layout-sidebar"
+          style={
+            Object {
+              "top": "10px",
+            }
+          }
+        >
+          <div
+            className="mb6 border-b border--darken10"
+          >
+            <div
+              className="mb6"
+            >
+              <div
+                className="dr-ui--product-menu"
+              >
+                <a
+                  className="txt-fancy txt-l block color-blue-on-hover"
+                  href="/dr-ui/"
+                >
+                  dr-ui
+                </a>
+              </div>
+            </div>
+            <div
+              className="mb6 h36"
+            >
+              <div
+                className="relative h36"
+              >
+                <button
+                  className="w-full block"
+                  onClick={[Function]}
+                >
+                  <div
+                    className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+                    style={Object {}}
+                  >
+                    <span
+                      className="mr6 color-gray"
+                    >
+                      <svg
+                        className="icon w18 h18"
+                      >
+                        <use
+                          xlinkHref="#icon-search"
+                        />
+                      </svg>
+                    </span>
+                     
+                    <span
+                      className="color-gray"
+                    >
+                      Search
+                    </span>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            className=""
+          >
+            <nav
+              className="mx-neg12"
+            >
+              <ul>
+                <li>
+                  <div
+                    className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75 bg-blue-faint color-blue flex-parent flex-parent--space-between-main"
+                  >
+                    <a
+                      className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+                      href="/PageLayout/guides/"
+                      style={
+                        Object {
+                          "letterSpacing": "0.025em",
+                        }
+                      }
+                    >
+                      Guides
+                    </a>
+                    <button
+                      aria-controls="menu-guides"
+                      aria-expanded={false}
+                      aria-label="Toggle Guides menu"
+                      className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
+                      onClick={[Function]}
+                      value="Guides"
+                    >
+                      <svg
+                        className="events-none icon inline-block align-t"
+                        focusable="false"
+                        role="presentation"
+                        style={
+                          Object {
+                            "height": 18,
+                            "width": 18,
+                          }
+                        }
+                      >
+                        <use
+                          xlinkHref="#icon-chevron-down"
+                          xmlnsXlink="http://www.w3.org/1999/xlink"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
+                  >
+                    <a
+                      className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+                      href="/PageLayout/specification/"
+                      style={
+                        Object {
+                          "letterSpacing": "0.025em",
+                        }
+                      }
+                    >
+                      Specification
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
+                  >
+                    <a
+                      className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+                      href="/PageLayout/examples/"
+                      style={
+                        Object {
+                          "letterSpacing": "0.025em",
+                        }
+                      }
+                    >
+                      Examples
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div
+                    className="px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75"
+                  >
+                    <a
+                      className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
+                      href="/PageLayout/demo/"
+                      style={
+                        Object {
+                          "letterSpacing": "0.025em",
+                        }
+                      }
+                    >
+                      Demo
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div
+        className="flex-child flex-child--grow"
+        style={
+          Object {
+            "width": "100%",
+          }
+        }
+      >
+        <div
+          className="dr-ui--breadcrumb pt3 pb12 none block-mm"
+          data-swiftype-index="false"
+        >
+          <span
+            className="none inline-block-mm"
+          >
+            <a
+              className="link"
+              href="https://docs.mapbox.com"
+            >
+              All docs
+            </a>
+            <span
+              className="color-gray-light inline-block-mm none px6"
+            >
+              <svg
+                className="events-none icon inline-block align-t"
+                focusable="false"
+                role="presentation"
+                style={
+                  Object {
+                    "height": 18,
+                    "width": 18,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="#icon-chevron-right"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                />
+              </svg>
+            </span>
+          </span>
+          <span
+            className="none inline-block-mm"
+          >
+            <a
+              className="link"
+              href="/dr-ui/"
+            >
+              dr-ui
+            </a>
+            <span
+              className="color-gray-light inline-block-mm none px6"
+            >
+              <svg
+                className="events-none icon inline-block align-t"
+                focusable="false"
+                role="presentation"
+                style={
+                  Object {
+                    "height": 18,
+                    "width": 18,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="#icon-chevron-right"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                />
+              </svg>
+            </span>
+          </span>
+          <span
+            className=""
+          >
+            <span
+              className="color-gray-light inline-block none-mm pr6"
+            >
+              <svg
+                className="events-none icon inline-block align-t"
+                focusable="false"
+                role="presentation"
+                style={
+                  Object {
+                    "height": 18,
+                    "width": 18,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="#icon-arrow-left"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                />
+              </svg>
+            </span>
+            <a
+              className="link"
+              href="/PageLayout/guides/"
+            >
+              Guides
+            </a>
+            <span
+              className="color-gray-light inline-block-mm none px6"
+            >
+              <svg
+                className="events-none icon inline-block align-t"
+                focusable="false"
+                role="presentation"
+                style={
+                  Object {
+                    "height": 18,
+                    "width": 18,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="#icon-chevron-right"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                />
+              </svg>
+            </span>
+          </span>
+          <span
+            className="color-gray none inline-block-mm"
+          >
+            Worldview
+          </span>
+        </div>
+        <div
+          id="docs-content"
+        >
+          <div
+            className="col prose col--8-mxl col--12"
+          >
+            <h1
+              className="txt-fancy"
+            >
+              Worldview
+            </h1>
+          </div>
+          <div
+            className="grid grid--gut60"
+          >
+            <div
+              className="dr-ui--page-layout-aside col col--12 col--4-mxl"
+            >
+              <aside
+                className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl"
+                data-swiftype-index="false"
+                style={
+                  Object {
+                    "top": "10px",
+                  }
+                }
+              >
+                <div
+                  className="none block-mxl"
+                >
+                  <button
+                    className="btn"
+                    onClick={[Function]}
+                    value="Share"
+                  >
+                    Share your feedback
+                  </button>
+                </div>
+              </aside>
+            </div>
+            <div
+              className="col col--8-mxl col--12 prose"
+            >
+              <div
+                className="flex-parent-ml flex-parent--start-cross mb12 border-b border--gray-light pb12"
+              >
+                <div
+                  className="flex-child-ml flex-child--no-shrink txt-bold w240 my0-ml mt18 mb12"
+                >
+                  <a
+                    href="/PageLayout/guides/worldview/avilable-worldviews/"
+                  >
+                    Available worldviews
+                  </a>
+                </div>
+                <div
+                  className="flex-child-ml flex-child--grow"
+                >
+                  Identify geographic features whose characteristics are defined differently by audiences belonging to various regional, cultural, or political groups.
+                </div>
+              </div>
+              <div
+                className="flex-parent-ml flex-parent--start-cross mb12 border-b border--gray-light pb12"
+              >
+                <div
+                  className="flex-child-ml flex-child--no-shrink txt-bold w240 my0-ml mt18 mb12"
+                >
+                  <a
+                    href="/PageLayout/guides/worldview/border-styling/"
+                  >
+                    Border styling
+                  </a>
+                </div>
+                <div
+                  className="flex-child-ml flex-child--grow"
+                >
+                  When creating a map style with a tileset that uses worldviews, you must apply a filter to any layers that include a worldview data field.
+                </div>
+              </div>
+              <div
+                className="flex-parent-ml flex-parent--start-cross mb12"
+              >
+                <div
+                  className="flex-child-ml flex-child--no-shrink txt-bold w240 my0-ml mt18 mb12"
+                >
+                  <a
+                    href="/PageLayout/guides/worldview/data-sources/"
+                  >
+                    Data sources
+                  </a>
+                </div>
+                <div
+                  className="flex-child-ml flex-child--grow"
+                >
+                  Some Mapbox vector tilesets, including Mapbox Streets v8 and Boundaries v3, include the worldview data field in several layers.
+                </div>
+              </div>
+              <div
+                className="my36 block none-mxl"
+              >
+                <button
+                  className="btn"
+                  onClick={[Function]}
+                  value="Share"
+                >
+                  Share your feedback
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="fixed block none-mm mx24 my24 z5 bottom right"
+  >
+    <div
+      className="block mx24 my24 z5"
+    >
+      <div
+        className="inline-block"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+      >
+        <button
+          aria-label="Back to top"
+          className="btn--blue w60 h60 px0 round-full shadow-darken25 color-white flex-parent flex-parent--center-main flex-parent--center-cross"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            className="events-none icon"
+            focusable="false"
+            role="presentation"
+            style={
+              Object {
+                "height": 30,
+                "width": 30,
+              }
+            }
+          >
+            <use
+              xlinkHref="#icon-arrow-up"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
 exports[`page-layout full layout renders as expected 1`] = `
 Array [
   <div
