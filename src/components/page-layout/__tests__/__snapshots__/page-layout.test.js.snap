@@ -1984,35 +1984,35 @@ Array [
                       >
                         Worldview
                       </a>
+                      <ul
+                        className="mb6 ml3"
+                      >
+                        <li>
+                          <a
+                            className="pl12 inline-block w-full color-blue-on-hover border-l border--gray-light border-l--2"
+                            href="/PageLayout/guides/worldview/avilable-worldviews/"
+                          >
+                            Available worldviews
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            className="pl12 inline-block w-full color-blue-on-hover border-l border--gray-light border-l--2"
+                            href="/PageLayout/guides/worldview/border-styling/"
+                          >
+                            Border styling
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            className="pl12 inline-block w-full color-blue-on-hover border-l border--gray-light border-l--2"
+                            href="/PageLayout/guides/worldview/data-sources/"
+                          >
+                            Data sources
+                          </a>
+                        </li>
+                      </ul>
                     </li>
-                    <ul
-                      className="mb6 ml3"
-                    >
-                      <li>
-                        <a
-                          className="pl12 inline-block w-full color-blue-on-hover border-l border--gray-light border-l--2"
-                          href="/PageLayout/guides/worldview/avilable-worldviews/"
-                        >
-                          Available worldviews
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="pl12 inline-block w-full color-blue-on-hover border-l border--gray-light border-l--2"
-                          href="/PageLayout/guides/worldview/border-styling/"
-                        >
-                          Border styling
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="pl12 inline-block w-full color-blue-on-hover border-l border--gray-light border-l--2"
-                          href="/PageLayout/guides/worldview/data-sources/"
-                        >
-                          Data sources
-                        </a>
-                      </li>
-                    </ul>
                     <li
                       className="mb3"
                     >

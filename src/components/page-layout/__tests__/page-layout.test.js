@@ -88,6 +88,7 @@ describe('page-layout', () => {
     let tree;
 
     beforeEach(() => {
+      /* Force snapshot at desktop view, so we can capture the NavigationAccordion for grouped guides */
       Object.defineProperty(document, 'body', {
         value: {
           clientWidth: 1000
