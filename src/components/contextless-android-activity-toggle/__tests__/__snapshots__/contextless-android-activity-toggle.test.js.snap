@@ -9,7 +9,7 @@ exports[`contextless-android-activity-toggle Basic renders as expected 1`] = `
   >
     
     <div
-      className="relative round z0 scroll-styled overflow-auto"
+      className="relative round z0 scroll-styled scroll-auto"
       style={
         Object {
           "maxHeight": 480,
@@ -286,7 +286,7 @@ exports[`contextless-android-activity-toggle Kotlin only renders as expected 1`]
   >
     
     <div
-      className="relative round z0 scroll-styled overflow-auto"
+      className="relative round z0 scroll-styled scroll-auto"
       style={
         Object {
           "maxHeight": 480,
@@ -474,7 +474,7 @@ exports[`contextless-android-activity-toggle Two languages (code toggle not inte
       </div>
     </div>
     <div
-      className="relative round z0 scroll-styled overflow-auto"
+      className="relative round z0 scroll-styled scroll-auto"
       style={
         Object {
           "maxHeight": 480,

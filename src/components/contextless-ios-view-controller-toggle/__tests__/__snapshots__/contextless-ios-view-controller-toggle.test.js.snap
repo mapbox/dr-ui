@@ -9,7 +9,7 @@ exports[`contextless-ios-view-controller-toggle Basic renders as expected 1`] = 
   >
     
     <div
-      className="relative round z0 scroll-styled overflow-auto"
+      className="relative round z0 scroll-styled scroll-auto"
       style={
         Object {
           "maxHeight": 480,
@@ -197,7 +197,7 @@ exports[`contextless-ios-view-controller-toggle Two languages (code toggle is no
       </div>
     </div>
     <div
-      className="relative round z0 scroll-styled overflow-auto"
+      className="relative round z0 scroll-styled scroll-auto"
       style={
         Object {
           "maxHeight": 480,
