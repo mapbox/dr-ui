@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Handle `NavigiationAccordion` when there is no `activeItem`. [#495](https://github.com/mapbox/dr-ui/pull/495)
+- Updates `GuideGroupIndex` in `PageLayout` to use `CardContainer` to display full width cards. [#519](https://github.com/mapbox/dr-ui/pull/519)
 
 ## 4.2.3
 
