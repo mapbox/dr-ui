@@ -982,7 +982,7 @@ exports[`syntax-highlighting Swift highlighting renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token keyword\\">import</span> <span class=\\"token builtin\\">Mapbox</span>",
+                    "__html": "<span class=\\"token keyword\\">import</span> <span class=\\"token class-name\\">Mapbox</span>",
                   }
                 }
                 style={
@@ -1004,7 +1004,7 @@ exports[`syntax-highlighting Swift highlighting renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token keyword\\">class</span> <span class=\\"token class-name\\">ViewController</span><span class=\\"token punctuation\\">:</span> <span class=\\"token builtin\\">UIViewController</span> <span class=\\"token punctuation\\">{</span>",
+                    "__html": "<span class=\\"token keyword\\">class</span> <span class=\\"token class-name\\">ViewController</span><span class=\\"token punctuation\\">:</span> <span class=\\"token class-name\\">UIViewController</span> <span class=\\"token punctuation\\">{</span>",
                   }
                 }
                 style={
@@ -1026,7 +1026,7 @@ exports[`syntax-highlighting Swift highlighting renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token keyword\\">override</span> <span class=\\"token keyword\\">func</span> <span class=\\"token function\\">viewDidLoad</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                    "__html": "<span class=\\"token keyword\\">override</span> <span class=\\"token keyword\\">func</span> <span class=\\"token function-definition function\\">viewDidLoad</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
                   }
                 }
                 style={
@@ -1092,7 +1092,7 @@ exports[`syntax-highlighting Swift highlighting renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token keyword\\">let</span> url <span class=\\"token operator\\">=</span> <span class=\\"token function\\">URL</span><span class=\\"token punctuation\\">(</span>string<span class=\\"token punctuation\\">:</span> <span class=\\"token string\\">\\"mapbox://styles/mapbox/streets-v10\\"</span><span class=\\"token punctuation\\">)</span>",
+                    "__html": "<span class=\\"token keyword\\">let</span> url <span class=\\"token operator\\">=</span> <span class=\\"token function\\">URL</span><span class=\\"token punctuation\\">(</span>string<span class=\\"token punctuation\\">:</span> <span class=\\"token string-literal\\"><span class=\\"token string\\">\\"mapbox://styles/mapbox/streets-v10\\"</span></span><span class=\\"token punctuation\\">)</span>",
                   }
                 }
                 style={
@@ -1114,7 +1114,7 @@ exports[`syntax-highlighting Swift highlighting renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token keyword\\">let</span> mapView <span class=\\"token operator\\">=</span> <span class=\\"token function\\">MGLMapView</span><span class=\\"token punctuation\\">(</span>frame<span class=\\"token punctuation\\">:</span> view<span class=\\"token punctuation\\">.</span>bounds<span class=\\"token punctuation\\">,</span> styleURL<span class=\\"token punctuation\\">:</span> url<span class=\\"token punctuation\\">)</span>",
+                    "__html": "<span class=\\"token keyword\\">let</span> mapView <span class=\\"token operator\\">=</span> <span class=\\"token class-name\\">MGLMapView</span><span class=\\"token punctuation\\">(</span>frame<span class=\\"token punctuation\\">:</span> view<span class=\\"token punctuation\\">.</span>bounds<span class=\\"token punctuation\\">,</span> styleURL<span class=\\"token punctuation\\">:</span> url<span class=\\"token punctuation\\">)</span>",
                   }
                 }
                 style={
@@ -1158,7 +1158,7 @@ exports[`syntax-highlighting Swift highlighting renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "mapView<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">setCenter</span><span class=\\"token punctuation\\">(</span><span class=\\"token function\\">CLLocationCoordinate2D</span><span class=\\"token punctuation\\">(</span>latitude<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">59.31</span><span class=\\"token punctuation\\">,</span> longitude<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">18.06</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">,</span> zoomLevel<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">9</span><span class=\\"token punctuation\\">,</span> animated<span class=\\"token punctuation\\">:</span> <span class=\\"token boolean\\">false</span><span class=\\"token punctuation\\">)</span>",
+                    "__html": "mapView<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">setCenter</span><span class=\\"token punctuation\\">(</span><span class=\\"token class-name\\">CLLocationCoordinate2D</span><span class=\\"token punctuation\\">(</span>latitude<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">59.31</span><span class=\\"token punctuation\\">,</span> longitude<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">18.06</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">,</span> zoomLevel<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">9</span><span class=\\"token punctuation\\">,</span> animated<span class=\\"token punctuation\\">:</span> <span class=\\"token boolean\\">false</span><span class=\\"token punctuation\\">)</span>",
                   }
                 }
                 style={

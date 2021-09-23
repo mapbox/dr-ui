@@ -102,7 +102,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "<span class=\\"token keyword\\">override</span> <span class=\\"token keyword\\">func</span> <span class=\\"token function\\">viewDidLoad</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                "__html": "<span class=\\"token keyword\\">override</span> <span class=\\"token keyword\\">func</span> <span class=\\"token function-definition function\\">viewDidLoad</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
               }
             }
             style={
@@ -201,7 +201,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "<span class=\\"token keyword\\">let</span> mapView <span class=\\"token operator\\">=</span> <span class=\\"token function\\">MGLMapView</span><span class=\\"token punctuation\\">(</span>frame<span class=\\"token punctuation\\">:</span> view<span class=\\"token punctuation\\">.</span>bounds<span class=\\"token punctuation\\">)</span>",
+                "__html": "<span class=\\"token keyword\\">let</span> mapView <span class=\\"token operator\\">=</span> <span class=\\"token class-name\\">MGLMapView</span><span class=\\"token punctuation\\">(</span>frame<span class=\\"token punctuation\\">:</span> view<span class=\\"token punctuation\\">.</span>bounds<span class=\\"token punctuation\\">)</span>",
               }
             }
             style={
@@ -234,7 +234,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "mapView<span class=\\"token punctuation\\">.</span>styleURL <span class=\\"token operator\\">=</span> <span class=\\"token builtin\\">MGLStyle</span><span class=\\"token punctuation\\">.</span>lightStyleURL",
+                "__html": "mapView<span class=\\"token punctuation\\">.</span>styleURL <span class=\\"token operator\\">=</span> <span class=\\"token class-name\\">MGLStyle</span><span class=\\"token punctuation\\">.</span>lightStyleURL",
               }
             }
             style={
@@ -333,7 +333,7 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "mapView<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">setCenter</span><span class=\\"token punctuation\\">(</span><span class=\\"token function\\">CLLocationCoordinate2D</span><span class=\\"token punctuation\\">(</span>latitude<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">44.971</span><span class=\\"token punctuation\\">,</span> longitude<span class=\\"token punctuation\\">:</span> <span class=\\"token operator\\">-</span><span class=\\"token number\\">93.261</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">,</span> zoomLevel<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">10</span><span class=\\"token punctuation\\">,</span> animated<span class=\\"token punctuation\\">:</span> <span class=\\"token boolean\\">false</span><span class=\\"token punctuation\\">)</span>",
+                "__html": "mapView<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">setCenter</span><span class=\\"token punctuation\\">(</span><span class=\\"token class-name\\">CLLocationCoordinate2D</span><span class=\\"token punctuation\\">(</span>latitude<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">44.971</span><span class=\\"token punctuation\\">,</span> longitude<span class=\\"token punctuation\\">:</span> <span class=\\"token operator\\">-</span><span class=\\"token number\\">93.261</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">,</span> zoomLevel<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">10</span><span class=\\"token punctuation\\">,</span> animated<span class=\\"token punctuation\\">:</span> <span class=\\"token boolean\\">false</span><span class=\\"token punctuation\\">)</span>",
               }
             }
             style={
@@ -607,7 +607,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "<span class=\\"token keyword\\">import</span> <span class=\\"token builtin\\">UIKit</span>",
+                "__html": "<span class=\\"token keyword\\">import</span> <span class=\\"token class-name\\">UIKit</span>",
               }
             }
             style={
@@ -640,7 +640,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "<span class=\\"token keyword\\">import</span> <span class=\\"token builtin\\">Mapbox</span>",
+                "__html": "<span class=\\"token keyword\\">import</span> <span class=\\"token class-name\\">Mapbox</span>",
               }
             }
             style={
@@ -706,7 +706,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "<span class=\\"token keyword\\">class</span> <span class=\\"token class-name\\">DDSCircleLayerTutorialViewController</span><span class=\\"token punctuation\\">:</span> <span class=\\"token builtin\\">UIViewController</span><span class=\\"token punctuation\\">,</span> <span class=\\"token builtin\\">MGLMapViewDelegate</span> <span class=\\"token punctuation\\">{</span>",
+                "__html": "<span class=\\"token keyword\\">class</span> <span class=\\"token class-name\\">DDSCircleLayerTutorialViewController</span><span class=\\"token punctuation\\">:</span> <span class=\\"token class-name\\">UIViewController</span><span class=\\"token punctuation\\">,</span> <span class=\\"token class-name\\">MGLMapViewDelegate</span> <span class=\\"token punctuation\\">{</span>",
               }
             }
             style={
@@ -772,7 +772,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "<span class=\\"token keyword\\">override</span> <span class=\\"token keyword\\">func</span> <span class=\\"token function\\">viewDidLoad</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                "__html": "<span class=\\"token keyword\\">override</span> <span class=\\"token keyword\\">func</span> <span class=\\"token function-definition function\\">viewDidLoad</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
               }
             }
             style={
@@ -871,7 +871,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "<span class=\\"token keyword\\">let</span> mapView <span class=\\"token operator\\">=</span> <span class=\\"token function\\">MGLMapView</span><span class=\\"token punctuation\\">(</span>frame<span class=\\"token punctuation\\">:</span> view<span class=\\"token punctuation\\">.</span>bounds<span class=\\"token punctuation\\">)</span>",
+                "__html": "<span class=\\"token keyword\\">let</span> mapView <span class=\\"token operator\\">=</span> <span class=\\"token class-name\\">MGLMapView</span><span class=\\"token punctuation\\">(</span>frame<span class=\\"token punctuation\\">:</span> view<span class=\\"token punctuation\\">.</span>bounds<span class=\\"token punctuation\\">)</span>",
               }
             }
             style={
@@ -904,7 +904,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "mapView<span class=\\"token punctuation\\">.</span>styleURL <span class=\\"token operator\\">=</span> <span class=\\"token builtin\\">MGLStyle</span><span class=\\"token punctuation\\">.</span>lightStyleURL",
+                "__html": "mapView<span class=\\"token punctuation\\">.</span>styleURL <span class=\\"token operator\\">=</span> <span class=\\"token class-name\\">MGLStyle</span><span class=\\"token punctuation\\">.</span>lightStyleURL",
               }
             }
             style={
@@ -1003,7 +1003,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "mapView<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">setCenter</span><span class=\\"token punctuation\\">(</span><span class=\\"token function\\">CLLocationCoordinate2D</span><span class=\\"token punctuation\\">(</span>latitude<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">44.971</span><span class=\\"token punctuation\\">,</span> longitude<span class=\\"token punctuation\\">:</span> <span class=\\"token operator\\">-</span><span class=\\"token number\\">93.261</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">,</span> zoomLevel<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">10</span><span class=\\"token punctuation\\">,</span> animated<span class=\\"token punctuation\\">:</span> <span class=\\"token boolean\\">false</span><span class=\\"token punctuation\\">)</span>",
+                "__html": "mapView<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">setCenter</span><span class=\\"token punctuation\\">(</span><span class=\\"token class-name\\">CLLocationCoordinate2D</span><span class=\\"token punctuation\\">(</span>latitude<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">44.971</span><span class=\\"token punctuation\\">,</span> longitude<span class=\\"token punctuation\\">:</span> <span class=\\"token operator\\">-</span><span class=\\"token number\\">93.261</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">,</span> zoomLevel<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">10</span><span class=\\"token punctuation\\">,</span> animated<span class=\\"token punctuation\\">:</span> <span class=\\"token boolean\\">false</span><span class=\\"token punctuation\\">)</span>",
               }
             }
             style={
@@ -1201,7 +1201,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "<span class=\\"token keyword\\">func</span> <span class=\\"token function\\">mapView</span><span class=\\"token punctuation\\">(</span><span class=\\"token number\\">_</span> mapView<span class=\\"token punctuation\\">:</span> <span class=\\"token builtin\\">MGLMapView</span><span class=\\"token punctuation\\">,</span> didFinishLoading style<span class=\\"token punctuation\\">:</span> <span class=\\"token builtin\\">MGLStyle</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                "__html": "<span class=\\"token keyword\\">func</span> <span class=\\"token function-definition function\\">mapView</span><span class=\\"token punctuation\\">(</span><span class=\\"token omit keyword\\">_</span> mapView<span class=\\"token punctuation\\">:</span> <span class=\\"token class-name\\">MGLMapView</span><span class=\\"token punctuation\\">,</span> didFinishLoading style<span class=\\"token punctuation\\">:</span> <span class=\\"token class-name\\">MGLStyle</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
               }
             }
             style={
@@ -1272,7 +1272,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "<span class=\\"token keyword\\">let</span> source <span class=\\"token operator\\">=</span> <span class=\\"token function\\">MGLVectorTileSource</span><span class=\\"token punctuation\\">(</span>identifier<span class=\\"token punctuation\\">:</span> <span class=\\"token string\\">\\"historical-places\\"</span><span class=\\"token punctuation\\">,</span> configurationURL<span class=\\"token punctuation\\">:</span> <span class=\\"token function\\">URL</span><span class=\\"token punctuation\\">(</span>string<span class=\\"token punctuation\\">:</span> <span class=\\"token string\\">\\"mapbox://examples.5zzwbooj\\"</span><span class=\\"token punctuation\\">)</span><span class=\\"token operator\\">!</span><span class=\\"token punctuation\\">)</span>",
+                "__html": "<span class=\\"token keyword\\">let</span> source <span class=\\"token operator\\">=</span> <span class=\\"token class-name\\">MGLVectorTileSource</span><span class=\\"token punctuation\\">(</span>identifier<span class=\\"token punctuation\\">:</span> <span class=\\"token string-literal\\"><span class=\\"token string\\">\\"historical-places\\"</span></span><span class=\\"token punctuation\\">,</span> configurationURL<span class=\\"token punctuation\\">:</span> <span class=\\"token function\\">URL</span><span class=\\"token punctuation\\">(</span>string<span class=\\"token punctuation\\">:</span> <span class=\\"token string-literal\\"><span class=\\"token string\\">\\"mapbox://examples.5zzwbooj\\"</span></span><span class=\\"token punctuation\\">)</span><span class=\\"token operator\\">!</span><span class=\\"token punctuation\\">)</span>",
               }
             }
             style={
@@ -1409,7 +1409,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "<span class=\\"token keyword\\">let</span> layer <span class=\\"token operator\\">=</span> <span class=\\"token function\\">MGLCircleStyleLayer</span><span class=\\"token punctuation\\">(</span>identifier<span class=\\"token punctuation\\">:</span> <span class=\\"token string\\">\\"landmarks\\"</span><span class=\\"token punctuation\\">,</span> source<span class=\\"token punctuation\\">:</span> source<span class=\\"token punctuation\\">)</span>",
+                "__html": "<span class=\\"token keyword\\">let</span> layer <span class=\\"token operator\\">=</span> <span class=\\"token class-name\\">MGLCircleStyleLayer</span><span class=\\"token punctuation\\">(</span>identifier<span class=\\"token punctuation\\">:</span> <span class=\\"token string-literal\\"><span class=\\"token string\\">\\"landmarks\\"</span></span><span class=\\"token punctuation\\">,</span> source<span class=\\"token punctuation\\">:</span> source<span class=\\"token punctuation\\">)</span>",
               }
             }
             style={
@@ -1475,7 +1475,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "layer<span class=\\"token punctuation\\">.</span>sourceLayerIdentifier <span class=\\"token operator\\">=</span> <span class=\\"token string\\">\\"HPC_landmarks-b60kqn\\"</span>",
+                "__html": "layer<span class=\\"token punctuation\\">.</span>sourceLayerIdentifier <span class=\\"token operator\\">=</span> <span class=\\"token string-literal\\"><span class=\\"token string\\">\\"HPC_landmarks-b60kqn\\"</span></span>",
               }
             }
             style={
@@ -1541,7 +1541,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "layer<span class=\\"token punctuation\\">.</span>circleColor <span class=\\"token operator\\">=</span> <span class=\\"token function\\">NSExpression</span><span class=\\"token punctuation\\">(</span>forConstantValue<span class=\\"token punctuation\\">:</span> #<span class=\\"token function\\">colorLiteral</span><span class=\\"token punctuation\\">(</span>red<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">0.67</span><span class=\\"token punctuation\\">,</span> green<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">0.28</span><span class=\\"token punctuation\\">,</span> blue<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">0.13</span><span class=\\"token punctuation\\">,</span> alpha<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">1</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">)</span>",
+                "__html": "layer<span class=\\"token punctuation\\">.</span>circleColor <span class=\\"token operator\\">=</span> <span class=\\"token class-name\\">NSExpression</span><span class=\\"token punctuation\\">(</span>forConstantValue<span class=\\"token punctuation\\">:</span> <span class=\\"token literal constant\\">#colorLiteral</span><span class=\\"token punctuation\\">(</span>red<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">0.67</span><span class=\\"token punctuation\\">,</span> green<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">0.28</span><span class=\\"token punctuation\\">,</span> blue<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">0.13</span><span class=\\"token punctuation\\">,</span> alpha<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">1</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">)</span>",
               }
             }
             style={
@@ -1607,7 +1607,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "layer<span class=\\"token punctuation\\">.</span>circleOpacity <span class=\\"token operator\\">=</span> <span class=\\"token function\\">NSExpression</span><span class=\\"token punctuation\\">(</span>forConstantValue<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">0.8</span><span class=\\"token punctuation\\">)</span>",
+                "__html": "layer<span class=\\"token punctuation\\">.</span>circleOpacity <span class=\\"token operator\\">=</span> <span class=\\"token class-name\\">NSExpression</span><span class=\\"token punctuation\\">(</span>forConstantValue<span class=\\"token punctuation\\">:</span> <span class=\\"token number\\">0.8</span><span class=\\"token punctuation\\">)</span>",
               }
             }
             style={
@@ -1706,7 +1706,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "<span class=\\"token number\\">10</span><span class=\\"token punctuation\\">:</span> <span class=\\"token function\\">NSExpression</span><span class=\\"token punctuation\\">(</span>format<span class=\\"token punctuation\\">:</span> <span class=\\"token string\\">\\"(2018 - Constructi) / 30\\"</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">,</span>",
+                "__html": "<span class=\\"token number\\">10</span><span class=\\"token punctuation\\">:</span> <span class=\\"token class-name\\">NSExpression</span><span class=\\"token punctuation\\">(</span>format<span class=\\"token punctuation\\">:</span> <span class=\\"token string-literal\\"><span class=\\"token string\\">\\"(2018 - Constructi) / 30\\"</span></span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">,</span>",
               }
             }
             style={
@@ -1739,7 +1739,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "<span class=\\"token number\\">13</span><span class=\\"token punctuation\\">:</span> <span class=\\"token function\\">NSExpression</span><span class=\\"token punctuation\\">(</span>format<span class=\\"token punctuation\\">:</span> <span class=\\"token string\\">\\"(2018 - Constructi) / 10\\"</span><span class=\\"token punctuation\\">)</span>",
+                "__html": "<span class=\\"token number\\">13</span><span class=\\"token punctuation\\">:</span> <span class=\\"token class-name\\">NSExpression</span><span class=\\"token punctuation\\">(</span>format<span class=\\"token punctuation\\">:</span> <span class=\\"token string-literal\\"><span class=\\"token string\\">\\"(2018 - Constructi) / 10\\"</span></span><span class=\\"token punctuation\\">)</span>",
               }
             }
             style={
@@ -1843,7 +1843,7 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "layer<span class=\\"token punctuation\\">.</span>circleRadius <span class=\\"token operator\\">=</span> <span class=\\"token function\\">NSExpression</span><span class=\\"token punctuation\\">(</span>format<span class=\\"token punctuation\\">:</span> <span class=\\"token string\\">\\"mgl_interpolate:withCurveType:parameters:stops:($zoomLevel, 'linear', nil, %@)\\"</span><span class=\\"token punctuation\\">,</span> zoomStops<span class=\\"token punctuation\\">)</span>",
+                "__html": "layer<span class=\\"token punctuation\\">.</span>circleRadius <span class=\\"token operator\\">=</span> <span class=\\"token class-name\\">NSExpression</span><span class=\\"token punctuation\\">(</span>format<span class=\\"token punctuation\\">:</span> <span class=\\"token string-literal\\"><span class=\\"token string\\">\\"mgl_interpolate:withCurveType:parameters:stops:($zoomLevel, 'linear', nil, %@)\\"</span></span><span class=\\"token punctuation\\">,</span> zoomStops<span class=\\"token punctuation\\">)</span>",
               }
             }
             style={
@@ -2084,7 +2084,7 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "<span class=\\"token keyword\\">import</span> <span class=\\"token builtin\\">UIKit</span>",
+                "__html": "<span class=\\"token keyword\\">import</span> <span class=\\"token class-name\\">UIKit</span>",
               }
             }
             style={
@@ -2117,7 +2117,7 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "<span class=\\"token keyword\\">import</span> <span class=\\"token builtin\\">Mapbox</span>",
+                "__html": "<span class=\\"token keyword\\">import</span> <span class=\\"token class-name\\">Mapbox</span>",
               }
             }
             style={
@@ -2183,7 +2183,7 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "<span class=\\"token keyword\\">class</span> <span class=\\"token class-name\\">DDSCircleLayerTutorialViewController</span><span class=\\"token punctuation\\">:</span> <span class=\\"token builtin\\">UIViewController</span><span class=\\"token punctuation\\">,</span> <span class=\\"token builtin\\">MGLMapViewDelegate</span> <span class=\\"token punctuation\\">{</span>",
+                "__html": "<span class=\\"token keyword\\">class</span> <span class=\\"token class-name\\">DDSCircleLayerTutorialViewController</span><span class=\\"token punctuation\\">:</span> <span class=\\"token class-name\\">UIViewController</span><span class=\\"token punctuation\\">,</span> <span class=\\"token class-name\\">MGLMapViewDelegate</span> <span class=\\"token punctuation\\">{</span>",
               }
             }
             style={
@@ -2419,7 +2419,7 @@ exports[`numbered-code-snippet Last line renders as expected 1`] = `
           <div
             dangerouslySetInnerHTML={
               Object {
-                "__html": "layer<span class=\\"token punctuation\\">.</span>circleRadius <span class=\\"token operator\\">=</span> <span class=\\"token function\\">NSExpression</span><span class=\\"token punctuation\\">(</span>format<span class=\\"token punctuation\\">:</span> <span class=\\"token string\\">\\"mgl_interpolate:withCurveType:parameters:stops:($zoomLevel, 'linear', nil, %@)\\"</span><span class=\\"token punctuation\\">,</span> zoomStops<span class=\\"token punctuation\\">)</span>",
+                "__html": "layer<span class=\\"token punctuation\\">.</span>circleRadius <span class=\\"token operator\\">=</span> <span class=\\"token class-name\\">NSExpression</span><span class=\\"token punctuation\\">(</span>format<span class=\\"token punctuation\\">:</span> <span class=\\"token string-literal\\"><span class=\\"token string\\">\\"mgl_interpolate:withCurveType:parameters:stops:($zoomLevel, 'linear', nil, %@)\\"</span></span><span class=\\"token punctuation\\">,</span> zoomStops<span class=\\"token punctuation\\">)</span>",
               }
             }
             style={

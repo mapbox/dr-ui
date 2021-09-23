@@ -57,7 +57,7 @@ exports[`contextless-ios-view-controller-toggle Basic renders as expected 1`] = 
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token keyword\\">let</span> layer <span class=\\"token operator\\">=</span> style<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">layer</span><span class=\\"token punctuation\\">(</span>withIdentifier<span class=\\"token punctuation\\">:</span> <span class=\\"token string\\">\\"place-city-sm\\"</span><span class=\\"token punctuation\\">)</span> <span class=\\"token keyword\\">as</span><span class=\\"token operator\\">!</span> <span class=\\"token builtin\\">MGLSymbolStyleLayer</span>",
+                    "__html": "<span class=\\"token keyword\\">let</span> layer <span class=\\"token operator\\">=</span> style<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">layer</span><span class=\\"token punctuation\\">(</span>withIdentifier<span class=\\"token punctuation\\">:</span> <span class=\\"token string-literal\\"><span class=\\"token string\\">\\"place-city-sm\\"</span></span><span class=\\"token punctuation\\">)</span> <span class=\\"token keyword\\">as</span><span class=\\"token operator\\">!</span> <span class=\\"token class-name\\">MGLSymbolStyleLayer</span>",
                   }
                 }
                 style={
@@ -79,7 +79,7 @@ exports[`contextless-ios-view-controller-toggle Basic renders as expected 1`] = 
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token keyword\\">let</span> spanish <span class=\\"token operator\\">=</span> <span class=\\"token function\\">Locale</span><span class=\\"token punctuation\\">(</span>identifier<span class=\\"token punctuation\\">:</span> <span class=\\"token string\\">\\"es\\"</span><span class=\\"token punctuation\\">)</span>",
+                    "__html": "<span class=\\"token keyword\\">let</span> spanish <span class=\\"token operator\\">=</span> <span class=\\"token class-name\\">Locale</span><span class=\\"token punctuation\\">(</span>identifier<span class=\\"token punctuation\\">:</span> <span class=\\"token string-literal\\"><span class=\\"token string\\">\\"es\\"</span></span><span class=\\"token punctuation\\">)</span>",
                   }
                 }
                 style={
@@ -243,7 +243,7 @@ exports[`contextless-ios-view-controller-toggle Two languages (code toggle is no
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token keyword\\">let</span> layer <span class=\\"token operator\\">=</span> style<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">layer</span><span class=\\"token punctuation\\">(</span>withIdentifier<span class=\\"token punctuation\\">:</span> <span class=\\"token string\\">\\"place-city-sm\\"</span><span class=\\"token punctuation\\">)</span> <span class=\\"token keyword\\">as</span><span class=\\"token operator\\">!</span> <span class=\\"token builtin\\">MGLSymbolStyleLayer</span>",
+                    "__html": "<span class=\\"token keyword\\">let</span> layer <span class=\\"token operator\\">=</span> style<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">layer</span><span class=\\"token punctuation\\">(</span>withIdentifier<span class=\\"token punctuation\\">:</span> <span class=\\"token string-literal\\"><span class=\\"token string\\">\\"place-city-sm\\"</span></span><span class=\\"token punctuation\\">)</span> <span class=\\"token keyword\\">as</span><span class=\\"token operator\\">!</span> <span class=\\"token class-name\\">MGLSymbolStyleLayer</span>",
                   }
                 }
                 style={
@@ -265,7 +265,7 @@ exports[`contextless-ios-view-controller-toggle Two languages (code toggle is no
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token keyword\\">let</span> spanish <span class=\\"token operator\\">=</span> <span class=\\"token function\\">Locale</span><span class=\\"token punctuation\\">(</span>identifier<span class=\\"token punctuation\\">:</span> <span class=\\"token string\\">\\"es\\"</span><span class=\\"token punctuation\\">)</span>",
+                    "__html": "<span class=\\"token keyword\\">let</span> spanish <span class=\\"token operator\\">=</span> <span class=\\"token class-name\\">Locale</span><span class=\\"token punctuation\\">(</span>identifier<span class=\\"token punctuation\\">:</span> <span class=\\"token string-literal\\"><span class=\\"token string\\">\\"es\\"</span></span><span class=\\"token punctuation\\">)</span>",
                   }
                 }
                 style={
