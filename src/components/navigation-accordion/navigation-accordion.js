@@ -119,28 +119,27 @@ export default class NavigationAccordion extends React.Component {
     const subItemEls = subItems
       .filter((page) => !page.groupOrder || page.groupOrder === undefined)
       .map((page) => (
-        <React.Fragment key={page.title}>
-          <li
-            // Required on parents containing tags to prevent unwanted scrollbars on IE
-            className={classnames('mb3', {
-              'overflow-hidden': page.tag
+        <li
+          key={page.title}
+          // Required on parents containing tags to prevent unwanted scrollbars on IE
+          className={classnames('mb3', {
+            'overflow-hidden': page.tag
+          })}
+        >
+          <a
+            className={classnames('inline-block w-full color-blue-on-hover', {
+              'color-blue': activeItem === page.path
             })}
+            href={page.path}
           >
-            <a
-              className={classnames('inline-block w-full color-blue-on-hover', {
-                'color-blue': activeItem === page.path
-              })}
-              href={page.path}
-            >
-              {page.title}
-              {page.tag && this.renderTag(page)}
-            </a>
-          </li>
+            {page.title}
+            {page.tag && this.renderTag(page)}
+          </a>
           {activeItem &&
             activeItem.includes(page.path) &&
             page.subPages &&
             this.renderSubPages(page.subPages, activeItem)}
-        </React.Fragment>
+        </li>
       ));
 
     return (

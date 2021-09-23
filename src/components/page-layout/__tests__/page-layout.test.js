@@ -81,4 +81,27 @@ describe('page-layout', () => {
       expect(tree).toMatchSnapshot();
     });
   });
+
+  describe(testCases.groupIndexPage.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      /* Force snapshot at desktop view, so we can capture the NavigationAccordion for grouped guides */
+      Object.defineProperty(document, 'body', {
+        value: {
+          clientWidth: 1000
+        }
+      });
+
+      testCase = testCases.groupIndexPage;
+      wrapper = renderer.create(testCase.element);
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
 });
