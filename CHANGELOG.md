@@ -1,12 +1,12 @@
 # Changelog
 
-## Unreleased
+## 5.0.0-beta.0
 
 This release updates to Assembly v1. [#481](https://github.com/mapbox/dr-ui/pull/481)
 
-- Update to mr-ui@1.1.0.
 - 🚨 Replace `customStyles` prop in `Tag` with `customBorder`, `customColor,` and `customBackground`. The new props accept class names.
 - 🚨 `CardContainer` no longer accepts a number for `cardColSize`, choose: `'1/4'` for 4 cards or `'1/3'` for 3 cards per row. The default is `'1/2'` for 2 cards per row.
+- Update to mr-ui@1.1.0.
 - Handle `NavigiationAccordion` when there is no `activeItem`. [#495](https://github.com/mapbox/dr-ui/pull/495)
 - Move "I like..." category to bottom in `Feedback` component. [#518](https://github.com/mapbox/dr-ui/pull/518)
 - Decrease Sentry `tracesSampleRate` to `0.05`. [#517](https://github.com/mapbox/dr-ui/pull/517)
