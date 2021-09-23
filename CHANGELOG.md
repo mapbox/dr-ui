@@ -5,6 +5,7 @@
 - Handle `NavigiationAccordion` when there is no `activeItem`. [#495](https://github.com/mapbox/dr-ui/pull/495)
 - Move "I like..." category to bottom in `Feedback` component. [#518](https://github.com/mapbox/dr-ui/pull/518)
 - Decrease Sentry `tracesSampleRate` to `0.05`. [#517](https://github.com/mapbox/dr-ui/pull/517)
+- Updates `GuideGroupIndex` in `PageLayout` to use `CardContainer` to display full width cards. [#519](https://github.com/mapbox/dr-ui/pull/519)
 
 ## 4.2.3
 
