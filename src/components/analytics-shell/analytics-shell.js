@@ -66,7 +66,7 @@ AnalyticsShell.defaultProps = {
     // This enables automatic instrumentation (highly recommended)
     integrations: [new TracingIntegrations.BrowserTracing()],
     // To set a uniform sample rate
-    tracesSampleRate: 0.2
+    tracesSampleRate: 0.05
   },
   // do not disable web-analytics by default
   disableWebAnalytics: false,

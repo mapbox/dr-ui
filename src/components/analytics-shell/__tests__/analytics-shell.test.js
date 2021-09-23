@@ -30,7 +30,7 @@ describe('AnalyticsShell', () => {
         dsn: 'https://6ba8cfeeedad4fb7acb8576f0fd6e266@sentry.io/1384508',
         environment: 'staging',
         integrations: [new TracingIntegrations.BrowserTracing()],
-        tracesSampleRate: 0.2
+        tracesSampleRate: 0.05
       });
     });
 
