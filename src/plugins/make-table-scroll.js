@@ -15,7 +15,7 @@ module.exports = () => {
 
   function visitor(node, index, parent) {
     if (node.tagName && node.tagName === 'table') {
-      parent.children[index] = h('div.scroll-auto.mb18', node);
+      parent.children[index] = h('div.overflow-auto.mb18', node);
     }
   }
 };
