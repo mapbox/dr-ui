@@ -2,7 +2,7 @@
 
 exports[`overview-header Adds Contact Us button renders as expected 1`] = `
 <div
-  className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--darken10"
+  className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--gray-light"
 >
   <div
     className="flex flex--center-cross"
@@ -152,7 +152,7 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
 
 exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
 <div
-  className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--darken10"
+  className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--gray-light"
 >
   <div
     className="flex flex--center-cross"
@@ -340,7 +340,7 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
 
 exports[`overview-header Basic renders as expected 1`] = `
 <div
-  className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--darken10"
+  className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--gray-light"
 >
   <div
     className="flex flex--center-cross"
@@ -522,7 +522,7 @@ exports[`overview-header Basic renders as expected 1`] = `
 
 exports[`overview-header Beta product renders as expected 1`] = `
 <div
-  className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--darken10"
+  className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--gray-light"
 >
   <div
     className="flex flex--center-cross"
@@ -679,7 +679,7 @@ exports[`overview-header Beta product renders as expected 1`] = `
 
 exports[`overview-header No optional props renders as expected 1`] = `
 <div
-  className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--darken10"
+  className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--gray-light"
 >
   <div
     className="flex flex--center-cross"
@@ -860,7 +860,7 @@ exports[`overview-header No optional props renders as expected 1`] = `
 
 exports[`overview-header Some optional props renders as expected 1`] = `
 <div
-  className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--darken10"
+  className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--gray-light"
 >
   <div
     className="flex flex--center-cross"
