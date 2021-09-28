@@ -8,6 +8,7 @@
   border-top: 1px solid !important;
   border-color: #bccbd7 !important;
   margin: 36px 0px 18px;
+  padding-top: 30px;
 }
 
 #docs-content .prose h3:not(.unprose) {
