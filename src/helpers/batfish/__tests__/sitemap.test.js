@@ -132,7 +132,6 @@ describe('prepareSitemap', () => {
         'https://mapbox.github.io/dr-ui/examples/example-4',
         'https://mapbox.github.io/dr-ui/examples/example-5',
         'https://mapbox.github.io/dr-ui/guides',
-        'https://mapbox.github.io/dr-ui/guides/a11y',
         'https://mapbox.github.io/dr-ui/guides/batfish-helpers',
         'https://mapbox.github.io/dr-ui/guides/grouped-guides',
         'https://mapbox.github.io/dr-ui/guides/grouped-guides/file-structure',
@@ -140,7 +139,10 @@ describe('prepareSitemap', () => {
         'https://mapbox.github.io/dr-ui/guides/grouped-guides/resulting-ui',
         'https://mapbox.github.io/dr-ui/guides/multi-structured',
         'https://mapbox.github.io/dr-ui/guides/page-layout',
-        'https://mapbox.github.io/dr-ui/guides/split-pages'
+        'https://mapbox.github.io/dr-ui/guides/split-pages',
+        'https://mapbox.github.io/dr-ui/guides/test-pages',
+        'https://mapbox.github.io/dr-ui/guides/test-pages/a11y',
+        'https://mapbox.github.io/dr-ui/guides/test-pages/headings'
       ]);
     });
   }
