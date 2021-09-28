@@ -137,7 +137,7 @@ exports[`themes Custom tag renders as expected 1`] = `
 
 exports[`themes Default renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex mb18 bg-gray-faint color-gray-dark"
+  className="dr-ui--note py18 px18 round flex mb18 bg-gray-faint color-text"
 >
   <div
     className="mr18 none block-mm pt3"

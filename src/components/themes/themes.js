@@ -35,15 +35,13 @@ const themes = {
     image: <Image icon="book" color="gray" />,
     label: 'Note',
     icon: 'book',
-
     background: 'bg-gray-faint',
-    color: 'color-gray-dark'
+    color: 'color-text'
   },
   warning: {
     image: <Image icon="alert" color="orange" />,
     label: 'Warning',
     icon: 'alert',
-
     background: 'bg-orange-faint',
     color: 'color-orange-dark',
     border: 'border--orange-dark'
@@ -52,7 +50,6 @@ const themes = {
     image: <Image icon="alert" color="red" />,
     label: 'Error',
     icon: 'alert',
-
     background: 'bg-red-faint',
     color: 'color-red-dark'
   },
@@ -61,7 +58,6 @@ const themes = {
     label: 'Beta',
     icon: 'lightning',
     tooltipText: 'This feature is in public beta and is subject to changes.',
-
     background: 'bg-blue-faint',
     color: 'color-blue-dark',
     border: 'border--blue-dark'
@@ -71,7 +67,6 @@ const themes = {
     label: 'New!',
     icon: 'plus',
     tooltipText: 'This feature was released recently.',
-
     background: 'bg-green-faint',
     color: 'color-green-dark',
     border: 'border--green-dark'
@@ -80,7 +75,6 @@ const themes = {
     image: <Image icon="arrow-down" color="purple" />,
     label: 'Download',
     icon: 'arrow-down',
-
     background: 'bg-purple-faint',
     color: 'color-purple-dark'
   },
@@ -89,7 +83,6 @@ const themes = {
     icon: 'bookmark',
     tooltipText:
       'The concepts described here are fundamental to using this product.',
-
     background: 'bg-pink-faint',
     color: 'color-pink-dark',
     border: 'border--pink-dark'
@@ -98,7 +91,6 @@ const themes = {
     image: <Image icon="creditcard" color="green" />,
     label: 'Pricing',
     tooltipText: 'This contains information about product pricing.',
-
     background: 'bg-green-faint',
     color: 'color-green-dark',
     border: 'border--green-dark'
