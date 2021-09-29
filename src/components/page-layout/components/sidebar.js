@@ -28,7 +28,7 @@ export default class Sidebar extends React.PureComponent {
       <div
         data-swiftype-index="false"
         id="dr-ui--page-layout-sidebar"
-        className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm px12-mm"
+        className="sticky-mm scroll-auto-mm scroll-styled h-viewport-11/12-mm px12-mm"
         style={{ top: '10px' }}
       >
         <div className="mb6 border-b border--darken10">
