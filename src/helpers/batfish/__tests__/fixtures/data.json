@@ -122,21 +122,6 @@
       }
     },
     {
-      "filePath": "./docs/src/pages/guides/a11y.md",
-      "path": "/dr-ui/guides/a11y/",
-      "frontMatter": {
-        "title": "Accessibility test page",
-        "description": "Page for testing accessibility of components.",
-        "layout": "page",
-        "order": 6,
-        "contentType": "guide",
-        "products": ["Documentation"],
-        "prependJs": [
-          "import Note from '../../../../src/components/note/note';"
-        ]
-      }
-    },
-    {
       "filePath": "./docs/src/pages/guides/batfish-helpers.md",
       "path": "/dr-ui/guides/batfish-helpers/",
       "frontMatter": {
@@ -324,17 +309,51 @@
       }
     },
     {
+      "filePath": "./docs/src/pages/guides/test-pages/a11y.md",
+      "path": "/dr-ui/guides/test-pages/a11y/",
+      "frontMatter": {
+        "title": "Accessibility test page",
+        "description": "Page for testing accessibility of components.",
+        "layout": "page",
+        "groupOrder": 1,
+        "contentType": "guide",
+        "products": ["Documentation"],
+        "prependJs": [
+          "import Note from '../../../../../src/components/note/note';"
+        ]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/guides/test-pages/headings.md",
+      "path": "/dr-ui/guides/test-pages/headings/",
+      "frontMatter": {
+        "title": "Headings",
+        "description": "Page for testing headings.",
+        "layout": "page",
+        "groupOrder": 2,
+        "contentType": "guide",
+        "products": ["Documentation"]
+      }
+    },
+    {
+      "filePath": "./docs/src/pages/guides/test-pages/index.md",
+      "path": "/dr-ui/guides/test-pages/",
+      "frontMatter": {
+        "title": "Test pages",
+        "description": "A group of test pages.",
+        "order": 6,
+        "contentType": "guide",
+        "layout": "page",
+        "group": true,
+        "products": ["Documentation"]
+      }
+    },
+    {
       "filePath": "./docs/src/pages/index.js",
       "path": "/dr-ui/",
       "frontMatter": {
         "hideFromSearchEngines": true
       }
-    },
-    {
-      "filePath": "./node_modules/@mapbox/batfish/dist/webpack/default-not-found.js",
-      "path": "/dr-ui/404/",
-      "is404": true,
-      "frontMatter": {}
     }
   ]
 }
