@@ -105,7 +105,12 @@ class OverviewHeader extends React.PureComponent {
       features &&
       features.map((feature) => (
         <li key={feature} className="flex">
-          <div className="flex-child-no-shrink mr6 color-gray">
+          <div
+            className={classnames('flex-child-no-shrink mr6', {
+              'color-gray': !lightText,
+              'color-white': lightText
+            })}
+          >
             <Icon name="check" inline={true} />
           </div>
           <div className="flex-child-grow">{feature}</div>
@@ -117,7 +122,7 @@ class OverviewHeader extends React.PureComponent {
         className={classnames(
           `dr-ui--overview-header prose mb24 pr60-mxl ${theme}`,
           {
-            'border-b border--darken10': !theme,
+            'border-b border--gray-light': !theme,
             'round py12 px24': theme,
             'color-white': lightText
           }
