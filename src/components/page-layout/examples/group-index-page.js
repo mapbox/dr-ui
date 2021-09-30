@@ -73,7 +73,7 @@ export default class Basic extends React.PureComponent {
                       id: 'sp-two'
                     },
                     {
-                      title: 'Web services APIs',
+                      title: 'Data sources',
                       description:
                         'Some Mapbox vector tilesets, including Mapbox Streets v8 and Boundaries v3, include the worldview data field in several layers.',
                       path: '/PageLayout/guides/worldview/data-sources/',

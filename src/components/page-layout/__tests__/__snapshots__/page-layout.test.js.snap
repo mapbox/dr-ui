@@ -1952,7 +1952,7 @@ Array [
                             className="pl12 inline-block w-full color-blue-on-hover border-l border--gray-light border-l--2"
                             href="/PageLayout/guides/worldview/data-sources/"
                           >
-                            Web services APIs
+                            Data sources
                           </a>
                         </li>
                       </ul>
@@ -2240,7 +2240,7 @@ Array [
                         <div
                           className="mb6"
                         >
-                          Web services APIs
+                          Data sources
                         </div>
                         <div
                           className="color-gray color-gray-on-hover"
