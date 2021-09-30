@@ -57,7 +57,7 @@ export default class Basic extends React.PureComponent {
                   id: 'worldview',
                   subPages: [
                     {
-                      title: 'Available worldviews',
+                      title: 'Web maps using older library versions',
                       description:
                         'Identify geographic features whose characteristics are defined differently by audiences belonging to various regional, cultural, or political groups.',
                       path: '/PageLayout/guides/worldview/avilable-worldviews/',
@@ -65,7 +65,7 @@ export default class Basic extends React.PureComponent {
                       id: 'sp-one'
                     },
                     {
-                      title: 'Border styling',
+                      title: 'Mobile applications using older SDK versions',
                       description:
                         'When creating a map style with a tileset that uses worldviews, you must apply a filter to any layers that include a worldview data field.',
                       path: '/PageLayout/guides/worldview/border-styling/',
@@ -73,7 +73,7 @@ export default class Basic extends React.PureComponent {
                       id: 'sp-two'
                     },
                     {
-                      title: 'Data sources',
+                      title: 'Web services APIs',
                       description:
                         'Some Mapbox vector tilesets, including Mapbox Streets v8 and Boundaries v3, include the worldview data field in several layers.',
                       path: '/PageLayout/guides/worldview/data-sources/',

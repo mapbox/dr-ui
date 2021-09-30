@@ -1929,22 +1929,22 @@ Array [
                         Worldview
                       </a>
                       <ul
-                        className="mb6 ml3"
+                        className="my6 ml3 txt-ms"
                       >
                         <li>
                           <a
-                            className="pl12 inline-block w-full color-blue-on-hover border-l border--gray-light border-l--2"
+                            className="pl12 inline-block w-full color-blue-on-hover border-l border--gray-light border-l--2 pb6"
                             href="/PageLayout/guides/worldview/avilable-worldviews/"
                           >
-                            Available worldviews
+                            Web maps using older library versions
                           </a>
                         </li>
                         <li>
                           <a
-                            className="pl12 inline-block w-full color-blue-on-hover border-l border--gray-light border-l--2"
+                            className="pl12 inline-block w-full color-blue-on-hover border-l border--gray-light border-l--2 pb6"
                             href="/PageLayout/guides/worldview/border-styling/"
                           >
-                            Border styling
+                            Mobile applications using older SDK versions
                           </a>
                         </li>
                         <li>
@@ -1952,7 +1952,7 @@ Array [
                             className="pl12 inline-block w-full color-blue-on-hover border-l border--gray-light border-l--2"
                             href="/PageLayout/guides/worldview/data-sources/"
                           >
-                            Data sources
+                            Web services APIs
                           </a>
                         </li>
                       </ul>
@@ -2198,7 +2198,7 @@ Array [
                         <div
                           className="mb6"
                         >
-                          Available worldviews
+                          Web maps using older library versions
                         </div>
                         <div
                           className="color-gray color-gray-on-hover"
@@ -2219,7 +2219,7 @@ Array [
                         <div
                           className="mb6"
                         >
-                          Border styling
+                          Mobile applications using older SDK versions
                         </div>
                         <div
                           className="color-gray color-gray-on-hover"
@@ -2240,7 +2240,7 @@ Array [
                         <div
                           className="mb6"
                         >
-                          Data sources
+                          Web services APIs
                         </div>
                         <div
                           className="color-gray color-gray-on-hover"
