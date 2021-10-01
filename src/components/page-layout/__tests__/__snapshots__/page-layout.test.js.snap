@@ -20,7 +20,7 @@ Array [
         }
       >
         <div
-          className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm px12-mm"
+          className="sticky-mm overflow-auto-mm scroll-styled h-viewport-11/12-mm px12-mm"
           data-swiftype-index="false"
           id="dr-ui--page-layout-sidebar"
           style={
@@ -284,7 +284,7 @@ Array [
               className="dr-ui--page-layout-aside col w-full w-1/3-mxl"
             >
               <aside
-                className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl color-text"
+                className="overflow-auto-mxl scroll-styled h-viewport-11/12-mxl sticky-mxl color-text"
                 data-swiftype-index="false"
                 style={
                   Object {
@@ -646,7 +646,7 @@ Array [
         }
       >
         <div
-          className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm px12-mm"
+          className="sticky-mm overflow-auto-mm scroll-styled h-viewport-11/12-mm px12-mm"
           data-swiftype-index="false"
           id="dr-ui--page-layout-sidebar"
           style={
@@ -940,7 +940,7 @@ Array [
               className="dr-ui--page-layout-aside col w-full w-1/3-mxl"
             >
               <aside
-                className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl color-text"
+                className="overflow-auto-mxl scroll-styled h-viewport-11/12-mxl sticky-mxl color-text"
                 data-swiftype-index="false"
                 style={
                   Object {
@@ -1237,7 +1237,7 @@ Array [
         }
       >
         <div
-          className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm px12-mm"
+          className="sticky-mm overflow-auto-mm scroll-styled h-viewport-11/12-mm px12-mm"
           data-swiftype-index="false"
           id="dr-ui--page-layout-sidebar"
           style={
@@ -1561,7 +1561,7 @@ Array [
               className="dr-ui--page-layout-aside col w-full w-1/3-mxl"
             >
               <aside
-                className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl color-text"
+                className="overflow-auto-mxl scroll-styled h-viewport-11/12-mxl sticky-mxl color-text"
                 data-swiftype-index="false"
                 style={
                   Object {
@@ -1800,7 +1800,7 @@ Array [
         }
       >
         <div
-          className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm px12-mm"
+          className="sticky-mm overflow-auto-mm scroll-styled h-viewport-11/12-mm px12-mm"
           data-swiftype-index="false"
           id="dr-ui--page-layout-sidebar"
           style={
@@ -2157,7 +2157,7 @@ Array [
               className="dr-ui--page-layout-aside col w-full w-1/3-mxl"
             >
               <aside
-                className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl color-text"
+                className="overflow-auto-mxl scroll-styled h-viewport-11/12-mxl sticky-mxl color-text"
                 data-swiftype-index="false"
                 style={
                   Object {
@@ -2332,7 +2332,7 @@ Array [
         }
       >
         <div
-          className="sticky-mm scroll-auto-mm scroll-styled viewport-almost-mm px12-mm"
+          className="sticky-mm overflow-auto-mm scroll-styled h-viewport-11/12-mm px12-mm"
           data-swiftype-index="false"
           id="dr-ui--page-layout-sidebar"
           style={
