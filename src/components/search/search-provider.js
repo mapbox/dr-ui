@@ -5,7 +5,7 @@ import { SearchBox } from './search-box';
 
 class Search extends React.PureComponent {
   render() {
-    const { connector, resultsOnly, useModal } = this.props;
+    const { connector, resultsOnly, useModal, resetFacade } = this.props;
 
     function handleMapContext({
       isLoading,
@@ -61,6 +61,7 @@ class Search extends React.PureComponent {
                 wasSearched={wasSearched}
                 isLoading={isLoading}
                 reset={reset}
+                resetFacade={resetFacade}
                 {...this.props}
                 useModal={useModal && !resultsOnly} // disable modal if resultsOnly === true
               />
@@ -75,7 +76,8 @@ class Search extends React.PureComponent {
 Search.propTypes = {
   connector: PropTypes.object.isRequired,
   resultsOnly: PropTypes.bool.isRequired,
-  useModal: PropTypes.bool.isRequired
+  useModal: PropTypes.bool.isRequired,
+  resetFacade: PropTypes.func
 };
 
 export default Search;

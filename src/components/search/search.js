@@ -12,6 +12,7 @@ export default class Search extends React.PureComponent {
       SearchProvider: undefined,
       useModal: !this.props.disableModal || !this.props.resultsOnly
     };
+    this.resetFacade = this.resetFacade.bind(this);
   }
 
   /* Wait to load the full Search component */
@@ -35,6 +36,12 @@ export default class Search extends React.PureComponent {
   componentDidMount() {
     this.checkWidth();
     window.addEventListener('resize', this.checkWidth, { passive: true });
+  }
+
+  resetFacade() {
+    this.setState({ SearchProvider: undefined }, () => {
+      window.history.pushState({}, document.title, window.location.pathname);
+    });
   }
 
   /* If using `overrideSearchTerm`, don't load the full Search component until overrideSearchTerm is set */
@@ -62,7 +69,11 @@ export default class Search extends React.PureComponent {
         })}
       >
         {SearchProvider ? (
-          <SearchProvider useModal={useModal} {...this.props} />
+          <SearchProvider
+            resetFacade={this.resetFacade}
+            useModal={useModal}
+            {...this.props}
+          />
         ) : (
           <SearchFacade
             useModal={useModal}

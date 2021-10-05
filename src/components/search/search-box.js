@@ -34,6 +34,7 @@ export class SearchBox extends React.PureComponent {
 
   closeModal() {
     this.props.reset();
+    this.props.resetFacade();
     this.setState({ modalOpen: false });
   }
 
@@ -308,7 +309,8 @@ SearchBox.propTypes = {
   overrideSearchTerm: PropTypes.string,
   themeCompact: PropTypes.bool,
   emptyResultMessage: PropTypes.node,
-  useModal: PropTypes.bool.isRequired
+  useModal: PropTypes.bool.isRequired,
+  resetFacade: PropTypes.func
 };
 
 export class SearchButton extends React.PureComponent {
