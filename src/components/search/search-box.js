@@ -14,7 +14,8 @@ export class SearchBox extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      modalOpen: true // open model for a smooth transition from the facade
+      modalOpen: true, // open model for a smooth transition from the facade
+      dropdownOpen: false // dropdown state
     };
     this.docsSeachInput = React.createRef;
     this.openModal = this.openModal.bind(this);
@@ -22,6 +23,7 @@ export class SearchBox extends React.PureComponent {
     this.renderModal = this.renderModal.bind(this);
     this.renderSearchBar = this.renderSearchBar.bind(this);
     this.singleLinksFacet = this.singleLinksFacet.bind(this);
+    this.onStateChange = this.onStateChange.bind(this);
     // if resultsOnly and overrideSearchTerm, set the search term
     if (this.props.resultsOnly && this.props.overrideSearchTerm) {
       props.setSearchTerm(this.props.overrideSearchTerm, {
@@ -103,8 +105,16 @@ export class SearchBox extends React.PureComponent {
     );
   };
 
-  componentDidUpdate(prevProps) {
+  componentDidUpdate(prevProps, prevState) {
     const { isLoading, results, searchTerm } = this.props;
+    const { dropdownOpen } = this.state;
+
+    if (dropdownOpen !== prevState.dropdownOpen) {
+      // Reset to facade once dropdown closes
+      if (dropdownOpen === false) {
+        this.props.resetFacade();
+      }
+    }
 
     if (
       results !== prevProps.results &&
@@ -122,6 +132,10 @@ export class SearchBox extends React.PureComponent {
         Sentry.captureMessage(searchTerm);
       });
     }
+  }
+
+  onStateChange({ isOpen }) {
+    this.setState({ dropdownOpen: isOpen });
   }
 
   renderSearchBar() {
@@ -165,6 +179,7 @@ export class SearchBox extends React.PureComponent {
     function handleItemToString() {
       return searchTerm;
     }
+
     return (
       <Downshift
         id={inputId}
@@ -172,6 +187,7 @@ export class SearchBox extends React.PureComponent {
         onChange={handleSelection}
         onInputValueChange={handleInputChange}
         itemToString={handleItemToString}
+        onStateChange={this.onStateChange}
       >
         {(downshiftProps) => {
           const { getInputProps, isOpen, getLabelProps, openMenu } =
