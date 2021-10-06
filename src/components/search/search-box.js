@@ -24,7 +24,9 @@ export class SearchBox extends React.PureComponent {
     this.singleLinksFacet = this.singleLinksFacet.bind(this);
     // if resultsOnly and overrideSearchTerm, set the search term
     if (this.props.resultsOnly && this.props.overrideSearchTerm) {
-      props.setSearchTerm(this.props.overrideSearchTerm);
+      props.setSearchTerm(this.props.overrideSearchTerm, {
+        shouldClearFilters: false
+      });
     }
   }
 
@@ -151,7 +153,7 @@ export class SearchBox extends React.PureComponent {
     }
     function handleInputChange(newValue) {
       if (searchTerm === newValue) return;
-      setSearchTerm(newValue, { debounce: 1500 });
+      setSearchTerm(newValue, { debounce: 1500, shouldClearFilters: false });
       // track query
       if (window && window.analytics) {
         analytics.track(segmentTrackEvent, {
