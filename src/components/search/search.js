@@ -38,9 +38,11 @@ export default class Search extends React.PureComponent {
     window.addEventListener('resize', this.checkWidth, { passive: true });
   }
 
+  /* When the user closes the modal, reset back to a facade */
   resetFacade() {
     this.setState({ SearchProvider: undefined }, () => {
-      window.history.pushState({}, document.title, window.location.pathname);
+      /* Remove Swiftype query string from the URL */
+      history.pushState(null, '', window.location.pathname);
     });
   }
 
