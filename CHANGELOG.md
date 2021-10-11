@@ -1,6 +1,6 @@
 # Changelog
 
-## 5.0.0-beta.0
+## 5.0.0
 
 This release updates to Assembly v1. [#481](https://github.com/mapbox/dr-ui/pull/481)
 
