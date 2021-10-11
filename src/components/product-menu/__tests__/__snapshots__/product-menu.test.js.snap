@@ -5,7 +5,7 @@ exports[`product-menu Basic renders as expected 1`] = `
   className="dr-ui--product-menu"
 >
   <a
-    className="txt-fancy txt-l block color-blue-on-hover"
+    className="txt-fancy txt-l block color-blue-on-hover color-text"
     href="/dr-ui/"
   >
     Mapbox product menu
@@ -29,14 +29,7 @@ exports[`product-menu Beta product renders as expected 1`] = `
     >
       <div
         aria-describedby="tooltip-1"
-        className="txt-bold round inline-block cursor-default txt-xs px6"
-        style={
-          Object {
-            "background": "#f1f3fd",
-            "borderColor": "#0428c8",
-            "color": "#0c248d",
-          }
-        }
+        className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs px6"
       >
         Beta
       </div>
@@ -54,7 +47,7 @@ exports[`product-menu Beta product renders as expected 1`] = `
     </div>
   </div>
   <a
-    className="txt-fancy txt-l block color-blue-on-hover"
+    className="txt-fancy txt-l block color-blue-on-hover color-text"
     href="/vision/"
   >
     Vision SDK for Android
@@ -78,14 +71,7 @@ exports[`product-menu Beta product renders as expected 2`] = `
     >
       <div
         aria-describedby="tooltip-2"
-        className="txt-bold round inline-block cursor-default txt-xs px6"
-        style={
-          Object {
-            "background": "#f1f3fd",
-            "borderColor": "#0428c8",
-            "color": "#0c248d",
-          }
-        }
+        className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs px6"
       >
         Beta
       </div>
@@ -103,7 +89,7 @@ exports[`product-menu Beta product renders as expected 2`] = `
     </div>
   </div>
   <a
-    className="txt-fancy txt-l block color-blue-on-hover"
+    className="txt-fancy txt-l block color-blue-on-hover color-text"
     href="/vision/"
   >
     Navigation SDK for Android
@@ -133,7 +119,7 @@ exports[`product-menu Fake items, but one matches this test case's location rend
   className="dr-ui--product-menu"
 >
   <a
-    className="txt-fancy txt-l block color-blue-on-hover"
+    className="txt-fancy txt-l block color-blue-on-hover color-text"
     href="/api-documentation/"
   >
     Items in here
@@ -146,7 +132,7 @@ exports[`product-menu Product menu with something arbitrary in it renders as exp
   className="dr-ui--product-menu"
 >
   <a
-    className="txt-fancy txt-l block color-blue-on-hover"
+    className="txt-fancy txt-l block color-blue-on-hover color-text"
     href="/api-documentation/"
   >
     Pizza pie

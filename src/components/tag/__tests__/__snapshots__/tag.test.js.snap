@@ -10,14 +10,7 @@ exports[`tag Beta tag renders as expected 1`] = `
 >
   <div
     aria-describedby="tooltip-1"
-    className="txt-bold round inline-block cursor-default txt-s border px6"
-    style={
-      Object {
-        "background": "#f1f3fd",
-        "borderColor": "#0428c8",
-        "color": "#0c248d",
-      }
-    }
+    className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-s border px6"
   >
     Beta
   </div>
@@ -45,14 +38,7 @@ exports[`tag Custom tag renders as expected 1`] = `
 >
   <div
     aria-describedby="tooltip-2"
-    className="txt-bold round inline-block cursor-default txt-s border px6"
-    style={
-      Object {
-        "background": "#FEDADA",
-        "borderColor": "#FD8383",
-        "color": "#bb2224",
-      }
-    }
+    className="txt-bold round inline-block cursor-default bg-red-light color-red-dark border--red txt-s border px6"
   >
     Limited access
   </div>
@@ -80,14 +66,7 @@ exports[`tag small variant renders as expected 1`] = `
 >
   <div
     aria-describedby="tooltip-3"
-    className="txt-bold round inline-block cursor-default txt-xs px6"
-    style={
-      Object {
-        "background": "#f1f3fd",
-        "borderColor": "#0428c8",
-        "color": "#0c248d",
-      }
-    }
+    className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs px6"
   >
     Beta
   </div>

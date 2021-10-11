@@ -11,11 +11,9 @@ export default class Custom extends React.PureComponent {
         theme="custom"
         customLabel="Limited access"
         customTooltipText="Contact us for access to this feature."
-        customStyles={{
-          background: '#FEDADA',
-          color: '#bb2224',
-          borderColor: '#FD8383'
-        }}
+        customBackground="bg-red-light"
+        customColor="color-red-dark"
+        customBorder="border--red"
       />
     );
   }

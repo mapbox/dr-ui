@@ -77,7 +77,7 @@ export class ContentWrapper extends React.PureComponent {
     return (
       <aside
         data-swiftype-index="false"
-        className="scroll-auto-mxl scroll-styled viewport-almost-mxl sticky-mxl"
+        className="overflow-auto-mxl scroll-styled h-viewport-11/12-mxl sticky-mxl color-text"
         style={{ top: '10px' }}
       >
         {this.props.customAside ? this.props.customAside : undefined}
@@ -110,8 +110,8 @@ export class ContentWrapper extends React.PureComponent {
       <div id="docs-content">
         {showTitle && (
           <div
-            className={classnames('col prose', {
-              'col--8-mxl col--12': layoutConfig.aside !== 'none'
+            className={classnames('col col--auto prose', {
+              'w-2/3-mxl w-full': layoutConfig.aside !== 'none'
             })}
           >
             <h1 className="txt-fancy">{title}</h1>
@@ -121,13 +121,13 @@ export class ContentWrapper extends React.PureComponent {
 
         <div className="grid grid--gut60">
           {(layoutConfig.aside !== 'none' || this.props.customAside) && (
-            <div className="dr-ui--page-layout-aside col col--12 col--4-mxl">
+            <div className="dr-ui--page-layout-aside col w-full w-1/3-mxl">
               {this.renderAside(showFeedback)}
             </div>
           )}
           <div
-            className={classnames('col', {
-              'col--8-mxl col--12': layoutConfig.aside !== 'none',
+            className={classnames('col col--auto', {
+              'w-2/3-mxl w-full': layoutConfig.aside !== 'none',
               prose: unProse !== true
             })}
           >
@@ -150,7 +150,7 @@ export class ContentWrapper extends React.PureComponent {
             )}
             {showFeedback && (
               <div
-                className={classnames('my36', {
+                className={classnames('my36 color-text', {
                   'block none-mxl': layout !== 'full' // hide feedback at bottom of page on larger screens unless layout is full (always show it on the bottom)
                 })}
               >

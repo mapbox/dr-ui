@@ -1,47 +1,24 @@
-/* wider limiter for PageLayout */
-@media screen and (min-width: 640px) {
-  .limiter--wide {
-    max-width: 1800px !important;
-  }
-}
-@media screen and (min-width: 800px) {
-  .limiter--wide {
-    width: 91.666666666% !important; /* override limiter */
-  }
-}
-
-#docs-content .prose h1,
-#docs-content.prose h1 {
+#docs-content .prose h1 {
   margin-top: 6px;
   margin-bottom: 30px;
-  font-size: 36px;
 }
 
-#docs-content .prose h2:not(.unprose),
-#docs-content.prose h2:not(.unprose) {
+#docs-content .prose h2:not(.unprose) {
   font-weight: normal !important;
-  font-size: 30px;
   border-top: 1px solid !important;
-  border-color: #d6dee8 !important;
-  padding-top: 30px;
+  border-color: #bccbd7 !important;
   margin: 36px 0px 18px;
+  padding-top: 30px;
 }
 
-#docs-content .prose h3:not(.unprose),
-#docs-content.prose h3:not(.unprose) {
+#docs-content .prose h3:not(.unprose) {
   font-weight: normal;
-  font-size: 24px;
 }
 
 /* make links darker in Note to improve color contrast */
 .dr-ui--feedback .link,
 .dr-ui--note a {
-  color: #3151df !important;
-}
-
-/* improve contrast for color-gray on bg-gray-faint */
-.dr-ui--feedback .color-gray {
-  color: #577390 !important;
+  color: #3f5eeb !important;
 }
 
 /* set code links to slightly darker blue */
@@ -49,11 +26,6 @@
 .prose :not(.anchor) > code a,
 .prose :not(.anchor) > a code {
   color: #2b50f0;
-}
-
-/* increase color-gray contrast on code elements */
-.color-gray code {
-  color: #56728f;
 }
 
 /* set max-height for code examples */
@@ -88,22 +60,14 @@
 }
 
 @media screen and (min-width: 640px) {
-  .scroll-auto-mm {
+  .overflow-auto-mm {
     overflow: auto !important;
     -webkit-overflow-scrolling: touch;
-  }
-
-  .sticky-mm {
-    position: sticky;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .sticky-mxl {
-    position: sticky;
-  }
-
-  .scroll-auto-mxl {
+  .overflow-auto-mxl {
     overflow: auto !important;
     -webkit-overflow-scrolling: touch;
   }
@@ -125,10 +89,6 @@
   .dr-ui--page-layout-aside .dr-ui--on-this-page li ul {
     display: none !important;
   }
-}
-
-.txt-spacing0 {
-  letter-spacing: 0.05em;
 }
 
 .w70 {

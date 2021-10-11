@@ -5,13 +5,13 @@ exports[`CodeSnippet A CodeSnippet with every feature (edit buttons, title) rend
   data-swiftype-index="false"
 >
   <div
-    className="flex-parent-mm flex-parent--space-between-main-mm mb6"
+    className="flex-mm flex--space-between-main-mm mb6"
   >
     <div
-      className="flex-child"
+      className="flex-mm"
     >
       <div
-        className="inline-block txt-bold mb6 color-gray-dark"
+        className="txt-bold color-gray-dar mb6"
       >
         index.html
       </div>
@@ -210,13 +210,13 @@ exports[`CodeSnippet CodeSnippet with edit buttons and extractor renders as expe
   data-swiftype-index="false"
 >
   <div
-    className="flex-parent-mm flex-parent--space-between-main-mm mb6"
+    className="flex-mm flex--space-between-main-mm mb6"
   >
     <div
-      className="flex-child"
+      className="flex-mm"
     >
       <div
-        className="inline-block txt-bold mb6 color-gray-dark"
+        className="txt-bold color-gray-dar mb6"
       >
         index.html
       </div>
@@ -954,13 +954,13 @@ exports[`CodeSnippet CodeSnippet with edit buttons with maxHeight. renders as ex
   data-swiftype-index="false"
 >
   <div
-    className="flex-parent-mm flex-parent--space-between-main-mm mb6"
+    className="flex-mm flex--space-between-main-mm mb6"
   >
     <div
-      className="flex-child"
+      className="flex-mm"
     >
       <div
-        className="inline-block txt-bold mb6 color-gray-dark"
+        className="txt-bold color-gray-dar mb6"
       >
         index.html
       </div>
@@ -1073,7 +1073,7 @@ See the example: https://docs.mapbox.com//mapbox-gl-js/example/simple-map/"
       </form>
     </div>
     <div
-      className="relative round z0 scroll-styled scroll-auto"
+      className="relative round z0 scroll-styled overflow-auto"
       style={
         Object {
           "maxHeight": 150,
@@ -2100,13 +2100,13 @@ exports[`CodeSnippet CodeSnippet without edit buttons renders as expected 1`] = 
   data-swiftype-index="false"
 >
   <div
-    className="flex-parent-mm flex-parent--space-between-main-mm mb6"
+    className="flex-mm flex--space-between-main-mm mb6"
   >
     <div
-      className="flex-child"
+      className="flex-mm"
     >
       <div
-        className="inline-block txt-bold mb6 color-gray-dark"
+        className="txt-bold color-gray-dar mb6"
       >
         index.html
       </div>

@@ -11,14 +11,7 @@ exports[`themes Custom tag renders as expected 1`] = `
   >
     <div
       aria-describedby="tooltip-13"
-      className="txt-bold round inline-block cursor-default txt-s border px6"
-      style={
-        Object {
-          "background": "#FEDADA",
-          "borderColor": "#FD8383",
-          "color": "#c12325",
-        }
-      }
+      className="txt-bold round inline-block cursor-default bg-red-light color-red-dark border--red txt-s border px6"
     >
       Limited access
     </div>
@@ -43,14 +36,7 @@ exports[`themes Custom tag renders as expected 1`] = `
   >
     <div
       aria-describedby="tooltip-14"
-      className="txt-bold round inline-block cursor-default txt-xs px6"
-      style={
-        Object {
-          "background": "#FEDADA",
-          "borderColor": "#FD8383",
-          "color": "#c12325",
-        }
-      }
+      className="txt-bold round inline-block cursor-default bg-red-light color-red-dark border--red txt-xs px6"
     >
       Limited access
     </div>
@@ -75,14 +61,7 @@ exports[`themes Custom tag renders as expected 1`] = `
   >
     <div
       aria-describedby="tooltip-15"
-      className="txt-bold round inline-block cursor-default txt-s border"
-      style={
-        Object {
-          "background": "#FEDADA",
-          "borderColor": "#FD8383",
-          "color": "#c12325",
-        }
-      }
+      className="txt-bold round inline-block cursor-default bg-red-light color-red-dark border--red txt-s border"
     >
       <svg
         className="events-none icon inline-block align-t"
@@ -122,14 +101,7 @@ exports[`themes Custom tag renders as expected 1`] = `
   >
     <div
       aria-describedby="tooltip-16"
-      className="txt-bold round inline-block cursor-default txt-xs"
-      style={
-        Object {
-          "background": "#FEDADA",
-          "borderColor": "#FD8383",
-          "color": "#c12325",
-        }
-      }
+      className="txt-bold round inline-block cursor-default bg-red-light color-red-dark border--red txt-xs"
     >
       <svg
         className="events-none icon inline-block align-t"
@@ -165,19 +137,13 @@ exports[`themes Custom tag renders as expected 1`] = `
 
 exports[`themes Default renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
-  style={
-    Object {
-      "background": "#f4f7fb",
-      "color": "#425870",
-    }
-  }
+  className="dr-ui--note py18 px18 round flex mb18 bg-gray-faint color-text"
 >
   <div
-    className="flex-child mr18 none block-mm pt3"
+    className="mr18 none block-mm pt3"
   >
     <div
-      className="bg-gray-light round-full color-gray flex-parent flex-parent--center-main flex-parent--center-cross"
+      className="bg-gray-lighter round-full color-gray flex flex--center-main flex--center-cross"
       style={
         Object {
           "height": 50,
@@ -204,10 +170,10 @@ exports[`themes Default renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="flex-child prose"
+    className="w-full prose"
   >
     <div
-      className="txt-bold txt-m mb6"
+      className="txt-bold mb6"
     >
       Note
     </div>
@@ -219,19 +185,13 @@ exports[`themes Default renders as expected 1`] = `
 exports[`themes beta renders as expected 1`] = `
 <div>
   <div
-    className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
-    style={
-      Object {
-        "background": "#f1f3fd",
-        "color": "#0c248d",
-      }
-    }
+    className="dr-ui--note py18 px18 round flex mb18 bg-blue-faint color-blue-dark"
   >
     <div
-      className="flex-child mr18 none block-mm pt3"
+      className="mr18 none block-mm pt3"
     >
       <div
-        className="bg-blue-light round-full color-blue flex-parent flex-parent--center-main flex-parent--center-cross"
+        className="bg-blue-lighter round-full color-blue flex flex--center-main flex--center-cross"
         style={
           Object {
             "height": 50,
@@ -258,10 +218,10 @@ exports[`themes beta renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="flex-child prose"
+      className="w-full prose"
     >
       <div
-        className="txt-bold txt-m mb6"
+        className="txt-bold mb6"
       >
         Beta
       </div>
@@ -277,14 +237,7 @@ exports[`themes beta renders as expected 1`] = `
   >
     <div
       aria-describedby="tooltip-1"
-      className="txt-bold round inline-block cursor-default txt-s border px6"
-      style={
-        Object {
-          "background": "#f1f3fd",
-          "borderColor": "#0428c8",
-          "color": "#0c248d",
-        }
-      }
+      className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-s border px6"
     >
       Beta
     </div>
@@ -309,14 +262,7 @@ exports[`themes beta renders as expected 1`] = `
   >
     <div
       aria-describedby="tooltip-2"
-      className="txt-bold round inline-block cursor-default txt-xs px6"
-      style={
-        Object {
-          "background": "#f1f3fd",
-          "borderColor": "#0428c8",
-          "color": "#0c248d",
-        }
-      }
+      className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs px6"
     >
       Beta
     </div>
@@ -341,14 +287,7 @@ exports[`themes beta renders as expected 1`] = `
   >
     <div
       aria-describedby="tooltip-3"
-      className="txt-bold round inline-block cursor-default txt-s border"
-      style={
-        Object {
-          "background": "#f1f3fd",
-          "borderColor": "#0428c8",
-          "color": "#0c248d",
-        }
-      }
+      className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-s border"
     >
       <svg
         className="events-none icon inline-block align-t"
@@ -388,14 +327,7 @@ exports[`themes beta renders as expected 1`] = `
   >
     <div
       aria-describedby="tooltip-4"
-      className="txt-bold round inline-block cursor-default txt-xs"
-      style={
-        Object {
-          "background": "#f1f3fd",
-          "borderColor": "#0428c8",
-          "color": "#0c248d",
-        }
-      }
+      className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs"
     >
       <svg
         className="events-none icon inline-block align-t"
@@ -431,19 +363,13 @@ exports[`themes beta renders as expected 1`] = `
 
 exports[`themes download renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
-  style={
-    Object {
-      "background": "#f2effa",
-      "color": "#452f92",
-    }
-  }
+  className="dr-ui--note py18 px18 round flex mb18 bg-purple-faint color-purple-dark"
 >
   <div
-    className="flex-child mr18 none block-mm pt3"
+    className="mr18 none block-mm pt3"
   >
     <div
-      className="bg-purple-light round-full color-purple flex-parent flex-parent--center-main flex-parent--center-cross"
+      className="bg-purple-lighter round-full color-purple flex flex--center-main flex--center-cross"
       style={
         Object {
           "height": 50,
@@ -470,10 +396,10 @@ exports[`themes download renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="flex-child prose"
+    className="w-full prose"
   >
     <div
-      className="txt-bold txt-m mb6"
+      className="txt-bold mb6"
     >
       Download
     </div>
@@ -484,19 +410,13 @@ exports[`themes download renders as expected 1`] = `
 
 exports[`themes error renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
-  style={
-    Object {
-      "background": "#fbe5e5",
-      "color": "#9b3134",
-    }
-  }
+  className="dr-ui--note py18 px18 round flex mb18 bg-red-faint color-red-dark"
 >
   <div
-    className="flex-child mr18 none block-mm pt3"
+    className="mr18 none block-mm pt3"
   >
     <div
-      className="bg-red-light round-full color-red flex-parent flex-parent--center-main flex-parent--center-cross"
+      className="bg-red-lighter round-full color-red flex flex--center-main flex--center-cross"
       style={
         Object {
           "height": 50,
@@ -523,10 +443,10 @@ exports[`themes error renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="flex-child prose"
+    className="w-full prose"
   >
     <div
-      className="txt-bold txt-m mb6"
+      className="txt-bold mb6"
     >
       Error
     </div>
@@ -546,14 +466,7 @@ exports[`themes fundamentals renders as expected 1`] = `
   >
     <div
       aria-describedby="tooltip-9"
-      className="txt-bold round inline-block cursor-default txt-s border px6"
-      style={
-        Object {
-          "background": "#fff0f7",
-          "borderColor": "#fd8ac0",
-          "color": "#cf1c61",
-        }
-      }
+      className="txt-bold round inline-block cursor-default bg-pink-faint color-pink-dark border--pink-dark txt-s border px6"
     >
       Fundamentals
     </div>
@@ -578,14 +491,7 @@ exports[`themes fundamentals renders as expected 1`] = `
   >
     <div
       aria-describedby="tooltip-10"
-      className="txt-bold round inline-block cursor-default txt-xs px6"
-      style={
-        Object {
-          "background": "#fff0f7",
-          "borderColor": "#fd8ac0",
-          "color": "#cf1c61",
-        }
-      }
+      className="txt-bold round inline-block cursor-default bg-pink-faint color-pink-dark border--pink-dark txt-xs px6"
     >
       Fundamentals
     </div>
@@ -610,14 +516,7 @@ exports[`themes fundamentals renders as expected 1`] = `
   >
     <div
       aria-describedby="tooltip-11"
-      className="txt-bold round inline-block cursor-default txt-s border"
-      style={
-        Object {
-          "background": "#fff0f7",
-          "borderColor": "#fd8ac0",
-          "color": "#cf1c61",
-        }
-      }
+      className="txt-bold round inline-block cursor-default bg-pink-faint color-pink-dark border--pink-dark txt-s border"
     >
       <svg
         className="events-none icon inline-block align-t"
@@ -657,14 +556,7 @@ exports[`themes fundamentals renders as expected 1`] = `
   >
     <div
       aria-describedby="tooltip-12"
-      className="txt-bold round inline-block cursor-default txt-xs"
-      style={
-        Object {
-          "background": "#fff0f7",
-          "borderColor": "#fd8ac0",
-          "color": "#cf1c61",
-        }
-      }
+      className="txt-bold round inline-block cursor-default bg-pink-faint color-pink-dark border--pink-dark txt-xs"
     >
       <svg
         className="events-none icon inline-block align-t"
@@ -701,19 +593,13 @@ exports[`themes fundamentals renders as expected 1`] = `
 exports[`themes legacy or warning renders as expected 1`] = `
 <div>
   <div
-    className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
-    style={
-      Object {
-        "background": "#feefe2",
-        "color": "#78471c",
-      }
-    }
+    className="dr-ui--note py18 px18 round flex mb18 bg-orange-faint color-orange-dark"
   >
     <div
-      className="flex-child mr18 none block-mm pt3"
+      className="mr18 none block-mm pt3"
     >
       <div
-        className="bg-orange-light round-full color-orange flex-parent flex-parent--center-main flex-parent--center-cross"
+        className="bg-orange-lighter round-full color-orange flex flex--center-main flex--center-cross"
         style={
           Object {
             "height": 50,
@@ -740,10 +626,10 @@ exports[`themes legacy or warning renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="flex-child prose"
+      className="w-full prose"
     >
       <div
-        className="txt-bold txt-m mb6"
+        className="txt-bold mb6"
       >
         Legacy
       </div>
@@ -759,14 +645,7 @@ exports[`themes legacy or warning renders as expected 1`] = `
   >
     <div
       aria-describedby="tooltip-5"
-      className="txt-bold round inline-block cursor-default txt-s border px6"
-      style={
-        Object {
-          "background": "#feefe2",
-          "borderColor": "#ba6e2c",
-          "color": "#78471c",
-        }
-      }
+      className="txt-bold round inline-block cursor-default bg-orange-faint color-orange-dark border--orange-dark txt-s border px6"
     >
       Legacy
     </div>
@@ -791,14 +670,7 @@ exports[`themes legacy or warning renders as expected 1`] = `
   >
     <div
       aria-describedby="tooltip-6"
-      className="txt-bold round inline-block cursor-default txt-xs px6"
-      style={
-        Object {
-          "background": "#feefe2",
-          "borderColor": "#ba6e2c",
-          "color": "#78471c",
-        }
-      }
+      className="txt-bold round inline-block cursor-default bg-orange-faint color-orange-dark border--orange-dark txt-xs px6"
     >
       Legacy
     </div>
@@ -823,14 +695,7 @@ exports[`themes legacy or warning renders as expected 1`] = `
   >
     <div
       aria-describedby="tooltip-7"
-      className="txt-bold round inline-block cursor-default txt-s border"
-      style={
-        Object {
-          "background": "#feefe2",
-          "borderColor": "#ba6e2c",
-          "color": "#78471c",
-        }
-      }
+      className="txt-bold round inline-block cursor-default bg-orange-faint color-orange-dark border--orange-dark txt-s border"
     >
       <svg
         className="events-none icon inline-block align-t"
@@ -870,14 +735,7 @@ exports[`themes legacy or warning renders as expected 1`] = `
   >
     <div
       aria-describedby="tooltip-8"
-      className="txt-bold round inline-block cursor-default txt-xs"
-      style={
-        Object {
-          "background": "#feefe2",
-          "borderColor": "#ba6e2c",
-          "color": "#78471c",
-        }
-      }
+      className="txt-bold round inline-block cursor-default bg-orange-faint color-orange-dark border--orange-dark txt-xs"
     >
       <svg
         className="events-none icon inline-block align-t"

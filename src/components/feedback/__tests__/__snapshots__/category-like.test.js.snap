@@ -29,19 +29,17 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
         className="bg-gray-faint round py12 px12"
       >
         <div
-          className="flex-parent flex-parent--column"
+          className="flex flex--column"
         >
           <div
-            className="flex-child flex-parent flex-parent--space-between-main w-full mb12"
+            className="flex flex--space-between-main w-full mb12"
           >
             <div
-              className="flex-child txt-bold"
+              className="txt-bold"
             >
               I like this page
             </div>
-            <div
-              className="flex-child"
-            >
+            <div>
               <Tooltip
                 alignment="center"
                 block={false}
@@ -140,7 +138,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
             </div>
           </div>
           <div
-            className="flex-child mb6 prose"
+            className="mb6 prose"
           >
             <CategoryLike
               leadText="Tell us what you like about this page."
@@ -198,7 +196,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
                   ]
                 }
                 themeCheckbox="mr6 inline-block checkbox--gray checkbox--s-label"
-                themeCheckboxContainer="txt-s block mb6 flex-parent"
+                themeCheckboxContainer="txt-s block mb6 flex"
                 value={Array []}
               >
                 <ControlWrapper
@@ -230,7 +228,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
                         id="feedback-category-like"
                       >
                         <label
-                          className="checkbox-container txt-s block mb6 flex-parent"
+                          className="checkbox-container txt-s block mb6 flex"
                           key="I found what I need"
                         >
                           <input
@@ -273,7 +271,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
                           I found what I need
                         </label>
                         <label
-                          className="checkbox-container txt-s block mb6 flex-parent"
+                          className="checkbox-container txt-s block mb6 flex"
                           key="The information is accurate"
                         >
                           <input
@@ -316,7 +314,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
                           The information is accurate
                         </label>
                         <label
-                          className="checkbox-container txt-s block mb6 flex-parent"
+                          className="checkbox-container txt-s block mb6 flex"
                           key="Easy to understand"
                         >
                           <input
@@ -359,7 +357,7 @@ exports[`Workflow 2 - I like this page Check UI element state 1`] = `
                           The page is easy to understand
                         </label>
                         <label
-                          className="checkbox-container txt-s block mb6 flex-parent"
+                          className="checkbox-container txt-s block mb6 flex"
                           key="Something else"
                         >
                           <input

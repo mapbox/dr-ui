@@ -9,7 +9,7 @@ exports[`contextless-ios-view-controller-toggle Basic renders as expected 1`] = 
   >
     
     <div
-      className="relative round z0 scroll-styled scroll-auto"
+      className="relative round z0 scroll-styled overflow-auto"
       style={
         Object {
           "maxHeight": 480,
@@ -131,18 +131,16 @@ exports[`contextless-ios-view-controller-toggle Two languages (code toggle is no
     className="my24"
   >
     <div
-      className="flex-parent-mm flex-parent--space-between-main-mm mb6"
+      className="flex-mm flex--space-between-main-mm mb6"
     >
       <div
-        className="flex-child"
+        className="flex-mm"
       >
         <div
-          className="inline-block txt-bold mb6 color-gray-dark"
+          className="txt-bold color-gray-dar mb6"
         />
       </div>
-      <div
-        className="flex-child"
-      >
+      <div>
         <div
           className="relative "
         >
@@ -197,7 +195,7 @@ exports[`contextless-ios-view-controller-toggle Two languages (code toggle is no
       </div>
     </div>
     <div
-      className="relative round z0 scroll-styled scroll-auto"
+      className="relative round z0 scroll-styled overflow-auto"
       style={
         Object {
           "maxHeight": 480,

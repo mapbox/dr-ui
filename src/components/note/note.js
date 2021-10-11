@@ -5,22 +5,14 @@ import themes from '../themes';
 class Note extends React.PureComponent {
   render() {
     const { theme, title, children } = this.props;
+    const { label, image, background, color } = themes[theme];
     return (
       <div
-        className="dr-ui--note py18 px18 round flex-parent flex-parent--row mb18"
-        style={{
-          background: themes[theme].styles.background,
-          color: themes[theme].styles.color
-        }}
+        className={`dr-ui--note py18 px18 round flex mb18 ${background} ${color}`}
       >
-        <div className="flex-child mr18 none block-mm pt3">
-          {themes[theme].image}
-        </div>
-
-        <div className="flex-child prose">
-          <div className="txt-bold txt-m mb6">
-            {title || themes[theme].label}
-          </div>
+        <div className="mr18 none block-mm pt3">{image}</div>
+        <div className="w-full prose">
+          <div className="txt-bold mb6">{title || label}</div>
           {children}
         </div>
       </div>

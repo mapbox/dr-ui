@@ -10,18 +10,23 @@ export default class Tag extends React.PureComponent {
     const theme = themes[this.props.theme] || {
       label: this.props.customLabel,
       tooltipText: this.props.customTooltipText,
-      styles: this.props.customStyles,
+      border: this.props.customBorder,
+      background: this.props.customBackground,
+      color: this.props.customColor,
       icon: this.props.customIcon
     };
     return (
       <Tooltip content={theme.tooltipText} maxWidth="small" placement="top">
         <div
           style={theme.styles}
-          className={classnames('txt-bold round inline-block cursor-default', {
-            'txt-s border': !this.props.small,
-            'txt-xs': this.props.small,
-            px6: !this.props.icon
-          })}
+          className={classnames(
+            `txt-bold round inline-block cursor-default ${theme.background} ${theme.color} ${theme.border}`,
+            {
+              'txt-s border': !this.props.small,
+              'txt-xs': this.props.small,
+              px6: !this.props.icon
+            }
+          )}
         >
           {this.props.icon ? (
             <Icon name={theme.icon} inline={true} />
@@ -53,80 +58,30 @@ Tag.propTypes = {
   /** If `true`, display the icon only (no text) */
   icon: PropTypes.bool,
   /** If the theme is set to "custom", this prop is required. */
-  customLabel: (props, componentName) => {
-    if (props.theme === 'custom' && !props.customLabel) {
-      return new Error(
-        `The "customLabel" prop is required when using the "custom" theme in '${componentName}'.`
-      );
-    } else if (
-      props.theme === 'custom' &&
-      typeof props.customLabel !== 'string'
-    ) {
-      return new Error(
-        `The "customLabel" prop in '${componentName} must be a string'.`
-      );
-    }
-  },
-  /* If the theme is set to "custom", this prop is required. */
-  customTooltipText: (props, componentName) => {
-    if (props.theme === 'custom' && !props.customTooltipText) {
-      return new Error(
-        `The "customTooltipText" prop is required when using the "custom" theme in '${componentName}'.`
-      );
-    } else if (
-      props.theme === 'custom' &&
-      typeof props.customTooltipText !== 'string'
-    ) {
-      return new Error(
-        `The "customTooltipText" prop in '${componentName} must be a string'.`
-      );
-    }
-  },
-  /* If the theme is set to "custom", this prop is required. */
-  customStyles: (props, componentName) => {
-    if (props.theme === 'custom') {
-      if (!props.customStyles) {
-        return new Error(
-          `The "customStyles" prop is required when using the "custom" theme in '${componentName}'.`
-        );
-      } else if (typeof props.customStyles !== 'object') {
-        return new Error(
-          `The "customStyles" prop in '${componentName} must be an object'.`
-        );
-      } else if (
-        !props.customStyles.background ||
-        typeof props.customStyles.background !== 'string'
-      ) {
-        return new Error(
-          `The "customStyles.background" prop in '${componentName} is required when using the "custom" theme and must be a string'.`
-        );
-      } else if (
-        !props.customStyles.color ||
-        typeof props.customStyles.color !== 'string'
-      ) {
-        return new Error(
-          `The "customStyles.color" prop in '${componentName} is required when using the "custom" theme and must be a string'.`
-        );
-      } else if (
-        !props.customStyles.borderColor ||
-        typeof props.customStyles.borderColor !== 'string'
-      ) {
-        return new Error(
-          `The "customStyles.borderColor" prop in '${componentName} is required when using the "custom" theme and must be a string'.`
-        );
-      }
-    }
-  },
+  customLabel: (props, currentProp, componentName) =>
+    validateCustomProp(props, currentProp, componentName),
+  /** If the theme is set to "custom", this prop is required. */
+  customTooltipText: (props, currentProp, componentName) =>
+    validateCustomProp(props, currentProp, componentName),
+  /** If the theme is set to "custom", this `customBorder` is required. The value must be a class name. */
+  customBorder: (props, currentProp, componentName) =>
+    validateCustomProp(props, currentProp, componentName),
+  /** If the theme is set to "custom", this `customColor` is required. The value must be a class name. */
+  customColor: (props, currentProp, componentName) =>
+    validateCustomProp(props, currentProp, componentName),
+  /** If the theme is set to "custom", this `customBackground` is required. The value must be a class name. */
+  customBackground: (props, currentProp, componentName) =>
+    validateCustomProp(props, currentProp, componentName),
   /** customIcon is required if using the "custom" theme and `icon=true` */
-  customIcon: (props, componentName) => {
-    if (props.theme === 'custom' && props.icon && !props.customIcon) {
-      return new Error(
-        `The "customIcon" prop is required when using the "custom" theme and "icon" option in '${componentName}'.`
-      );
-    } else if (props.customIcon && typeof props.customIcon !== 'string') {
-      return new Error(
-        `The "customIcon" prop in ${componentName} must be a string'.`
-      );
-    }
-  }
+  customIcon: (props, currentProp, componentName) =>
+    props.icon && validateCustomProp(props, currentProp, componentName)
 };
+
+function validateCustomProp(props, currentProp, componentName) {
+  if (props.theme !== 'custom') return;
+  if (!currentProp || typeof props[currentProp] !== 'string') {
+    return new Error(
+      `The "${currentProp}" prop in \`${componentName}\` is required when using the "custom" theme and must be a string.`
+    );
+  }
+}

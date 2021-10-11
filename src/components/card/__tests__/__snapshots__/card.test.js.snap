@@ -2,7 +2,7 @@
 
 exports[`card Card with image renders as expected 1`] = `
 <a
-  className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+  className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
   href="url"
 >
   <div
@@ -21,16 +21,16 @@ exports[`card Card with image renders as expected 1`] = `
   </div>
   <div>
     <div
-      className="mb6"
+      className="flex mb6 txt-bold color-gray txt-s"
     >
       <div
-        className="inline-block mr18 txt-s txt-bold"
+        className="mr12"
       >
         <div
-          className="dr-ui--level-indicator flex-parent flex-parent--center-cross"
+          className="dr-ui--level-indicator flex flex--center-cross"
         >
           <div
-            className="inline-block w6 bg-orange align-middle mr3"
+            className="w6 bg-orange flex-child-no-shrink mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -39,7 +39,7 @@ exports[`card Card with image renders as expected 1`] = `
             }
           />
           <div
-            className="inline-block w6 bg-orange align-middle mr3"
+            className="w6 bg-orange flex-child-no-shrink mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -48,7 +48,7 @@ exports[`card Card with image renders as expected 1`] = `
             }
           />
           <div
-            className="inline-block w6 bg-orange-light align-middle mr3"
+            className="w6 bg-orange-light flex-child-no-shrink mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -57,34 +57,39 @@ exports[`card Card with image renders as expected 1`] = `
             }
           />
           <div
-            className="inline-block color-gray ml3"
+            className="color-gray ml3"
           >
             Intermediate
           </div>
         </div>
       </div>
-      <div
-        className="inline-block color-gray txt-s txt-bold"
+      <span
+        className="flex flex--center-cross"
       >
-        <svg
-          className="events-none icon inline-block align-t"
-          focusable="false"
-          role="presentation"
-          style={
-            Object {
-              "height": 18,
-              "width": 18,
-            }
-          }
+        <span
+          className="mr6"
         >
-          <use
-            xlinkHref="#icon-code"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-          />
-        </svg>
-         
-        JavaScript
-      </div>
+          <svg
+            className="events-none icon"
+            focusable="false"
+            role="presentation"
+            style={
+              Object {
+                "height": 18,
+                "width": 18,
+              }
+            }
+          >
+            <use
+              xlinkHref="#icon-code"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            />
+          </svg>
+        </span>
+        <span>
+          JavaScript
+        </span>
+      </span>
     </div>
     <div
       className="mb6"
@@ -102,22 +107,21 @@ exports[`card Card with image renders as expected 1`] = `
 
 exports[`card Card with no image renders as expected 1`] = `
 <a
-  className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+  className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
   href="url"
 >
-  
   <div>
     <div
-      className="mb6"
+      className="flex mb6 txt-bold color-gray txt-s"
     >
       <div
-        className="inline-block mr18 txt-s txt-bold"
+        className="mr12"
       >
         <div
-          className="dr-ui--level-indicator flex-parent flex-parent--center-cross"
+          className="dr-ui--level-indicator flex flex--center-cross"
         >
           <div
-            className="inline-block w6 bg-orange align-middle mr3"
+            className="w6 bg-orange flex-child-no-shrink mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -126,7 +130,7 @@ exports[`card Card with no image renders as expected 1`] = `
             }
           />
           <div
-            className="inline-block w6 bg-orange align-middle mr3"
+            className="w6 bg-orange flex-child-no-shrink mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -135,7 +139,7 @@ exports[`card Card with no image renders as expected 1`] = `
             }
           />
           <div
-            className="inline-block w6 bg-orange-light align-middle mr3"
+            className="w6 bg-orange-light flex-child-no-shrink mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -144,34 +148,39 @@ exports[`card Card with no image renders as expected 1`] = `
             }
           />
           <div
-            className="inline-block color-gray ml3"
+            className="color-gray ml3"
           >
             Intermediate
           </div>
         </div>
       </div>
-      <div
-        className="inline-block color-gray txt-s txt-bold"
+      <span
+        className="flex flex--center-cross"
       >
-        <svg
-          className="events-none icon inline-block align-t"
-          focusable="false"
-          role="presentation"
-          style={
-            Object {
-              "height": 18,
-              "width": 18,
-            }
-          }
+        <span
+          className="mr6"
         >
-          <use
-            xlinkHref="#icon-code"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-          />
-        </svg>
-         
-        JavaScript
-      </div>
+          <svg
+            className="events-none icon"
+            focusable="false"
+            role="presentation"
+            style={
+              Object {
+                "height": 18,
+                "width": 18,
+              }
+            }
+          >
+            <use
+              xlinkHref="#icon-code"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            />
+          </svg>
+        </span>
+        <span>
+          JavaScript
+        </span>
+      </span>
     </div>
     <div
       className="mb6"
@@ -189,7 +198,7 @@ exports[`card Card with no image renders as expected 1`] = `
 
 exports[`card Card without description renders as expected 1`] = `
 <a
-  className="color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+  className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
   href="url"
 >
   <div
@@ -208,16 +217,16 @@ exports[`card Card without description renders as expected 1`] = `
   </div>
   <div>
     <div
-      className="mb6"
+      className="flex mb6 txt-bold color-gray txt-s"
     >
       <div
-        className="inline-block mr18 txt-s txt-bold"
+        className="mr12"
       >
         <div
-          className="dr-ui--level-indicator flex-parent flex-parent--center-cross"
+          className="dr-ui--level-indicator flex flex--center-cross"
         >
           <div
-            className="inline-block w6 bg-orange align-middle mr3"
+            className="w6 bg-orange flex-child-no-shrink mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -226,7 +235,7 @@ exports[`card Card without description renders as expected 1`] = `
             }
           />
           <div
-            className="inline-block w6 bg-orange align-middle mr3"
+            className="w6 bg-orange flex-child-no-shrink mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -235,7 +244,7 @@ exports[`card Card without description renders as expected 1`] = `
             }
           />
           <div
-            className="inline-block w6 bg-orange-light align-middle mr3"
+            className="w6 bg-orange-light flex-child-no-shrink mr3"
             style={
               Object {
                 "borderRadius": "1px",
@@ -244,34 +253,39 @@ exports[`card Card without description renders as expected 1`] = `
             }
           />
           <div
-            className="inline-block color-gray ml3"
+            className="color-gray ml3"
           >
             Intermediate
           </div>
         </div>
       </div>
-      <div
-        className="inline-block color-gray txt-s txt-bold"
+      <span
+        className="flex flex--center-cross"
       >
-        <svg
-          className="events-none icon inline-block align-t"
-          focusable="false"
-          role="presentation"
-          style={
-            Object {
-              "height": 18,
-              "width": 18,
-            }
-          }
+        <span
+          className="mr6"
         >
-          <use
-            xlinkHref="#icon-code"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-          />
-        </svg>
-         
-        JavaScript
-      </div>
+          <svg
+            className="events-none icon"
+            focusable="false"
+            role="presentation"
+            style={
+              Object {
+                "height": 18,
+                "width": 18,
+              }
+            }
+          >
+            <use
+              xlinkHref="#icon-code"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            />
+          </svg>
+        </span>
+        <span>
+          JavaScript
+        </span>
+      </span>
     </div>
     <div
       className="mb6"

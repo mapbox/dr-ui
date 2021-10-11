@@ -57,32 +57,28 @@ export default class NavigationAccordion extends React.Component {
     return (
       <div
         className={classnames(
-          'px12 flex-parent txt-uppercase txt-fancy round-full w-full color-darken75',
+          'px12 flex txt-uppercase txt-fancy round-full w-full',
           {
-            'bg-blue-faint color-blue': isActiveSection,
-            'flex-parent flex-parent--space-between-main': hasChildren
+            'bg-blue-faint color-blue-deep': isActiveSection,
+            'flex flex--space-between-main': hasChildren
           }
         )}
       >
         <a
           href={path}
-          className="flex-child flex-child--grow  color-blue-on-hover py6 py3-mm"
-          style={{ letterSpacing: '0.025em' }}
+          className="flex-child-grow color-blue-on-hover py6 py3-mm txt-spacing05"
         >
           {title}
           {page.tag && this.renderTag(page)}
           {external && (
-            <span
-              className="ml3 color-darken50 relative"
-              style={{ top: '-1px' }}
-            >
+            <span className="ml3 color-gray">
               <Icon name={'share'} inline={true} />
             </span>
           )}
         </a>
         {hasChildren && (
           <button
-            className="flex-child flex-child--no-shrink color-blue-on-hover px12 px0-mm"
+            className="flex-child-no-shrink color-blue-on-hover px12 px0-mm"
             onClick={this.setToggle}
             aria-label={`Toggle ${title} menu`}
             aria-controls={sectionId}
@@ -127,7 +123,7 @@ export default class NavigationAccordion extends React.Component {
           key={page.title}
           // Required on parents containing tags to prevent unwanted scrollbars on IE
           className={classnames('mb3', {
-            'scroll-hidden': page.tag
+            'overflow-hidden': page.tag
           })}
         >
           <a

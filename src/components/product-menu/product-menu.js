@@ -4,39 +4,24 @@ import Tag from '../tag/tag';
 import classnames from 'classnames';
 
 class ProductMenu extends React.PureComponent {
-  buildTag = (item) => {
-    const tagProps = {
-      theme: item.tag,
-      customLabel: item.customTagProps
-        ? item.customTagProps.customLabel
-        : undefined,
-      customTooltipText: item.customTagProps
-        ? item.customTagProps.customTooltipText
-        : undefined,
-      customStyles: item.customTagProps
-        ? item.customTagProps.customStyles
-        : undefined
-    };
-    return (
-      <div className="ml-neg3">
-        <Tag {...tagProps} small={true} />
-      </div>
-    );
-  };
-
   render() {
-    const { props } = this;
+    const { tag, customTagProps, lightText, productName, homePage } =
+      this.props;
     return (
       <div className="dr-ui--product-menu">
-        {props.tag && this.buildTag(props)}
+        {tag && (
+          <div className="ml-neg3">
+            <Tag theme={tag} {...customTagProps} small={true} />
+          </div>
+        )}
         <a
-          href={props.homePage}
+          href={homePage}
           className={classnames('txt-fancy txt-l block', {
-            'color-white color-gray-light-on-hover': props.lightText,
-            'color-blue-on-hover': !props.lightText
+            'color-white color-gray-light-on-hover': lightText,
+            'color-blue-on-hover color-text': !lightText
           })}
         >
-          {props.productName}
+          {productName}
         </a>
       </div>
     );
@@ -51,11 +36,9 @@ ProductMenu.propTypes = {
   customTagProps: PropTypes.shape({
     customLabel: PropTypes.string.isRequired,
     customTooltipText: PropTypes.string.isRequired,
-    customStyles: PropTypes.shape({
-      background: PropTypes.string.isRequired,
-      color: PropTypes.string.isRequired,
-      borderColor: PropTypes.string.isRequired
-    }).isRequired
+    customBackground: PropTypes.string.isRequired,
+    customColor: PropTypes.string.isRequired,
+    customBorder: PropTypes.string.isRequired
   }),
   lightText: PropTypes.bool,
   homePage: PropTypes.string.isRequired

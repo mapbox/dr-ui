@@ -1,9 +1,6 @@
 import renderer from 'react-test-renderer';
-import ColorContrastChecker from 'color-contrast-checker';
 import { testCases } from './themes-test-cases';
 import themes from '../themes';
-
-const ccc = new ColorContrastChecker();
 
 describe('themes', () => {
   Object.keys(themes).forEach((theme) => {
@@ -21,20 +18,9 @@ describe('themes', () => {
         });
       }
 
-      test('has styles', () => {
-        expect(themes[theme].styles).toBeDefined();
-        expect(typeof themes[theme].styles).toBe('object');
-        expect(themes[theme].styles.background).toBeDefined();
-        expect(themes[theme].styles.color).toBeDefined();
-      });
-
-      test(`styles color and background contrast is WCAG AA compliant`, () => {
-        expect(
-          ccc.isLevelAA(
-            themes[theme].styles.color,
-            themes[theme].styles.background
-          )
-        ).toBeTruthy();
+      test('has background, color', () => {
+        expect(themes[theme].background).toBeDefined();
+        expect(themes[theme].color).toBeDefined();
       });
     });
   });

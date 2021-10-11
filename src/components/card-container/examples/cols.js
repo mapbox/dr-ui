@@ -11,7 +11,7 @@ export default class Example extends React.PureComponent {
       <CardContainer
         title="Another category"
         path="#another-category"
-        cardColSize={3}
+        cardColSize="1/4"
         cards={[
           <Card
             key="0"

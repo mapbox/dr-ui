@@ -9,7 +9,7 @@ exports[`search Basic search with \`site\` set to show filter toggle. Open https
     onClick={[Function]}
   >
     <div
-      className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+      className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
       style={Object {}}
     >
       <span
@@ -43,7 +43,7 @@ exports[`search Basic search. Open https://app.swiftype.com/engines/docs/analyti
     onClick={[Function]}
   >
     <div
-      className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+      className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
       style={Object {}}
     >
       <span
@@ -77,7 +77,7 @@ exports[`search Search with \`disableModal\` option set. Open https://app.swifty
     onClick={[Function]}
   >
     <div
-      className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+      className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
       style={Object {}}
     >
       <span
@@ -111,7 +111,7 @@ exports[`search Search with \`narrow\` option set. Open https://app.swiftype.com
     onClick={[Function]}
   >
     <div
-      className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 wmax30"
+      className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 wmax30"
       style={
         Object {
           "paddingLeft": "12px",
@@ -148,7 +148,7 @@ exports[`search Search with custom connector. renders as expected 1`] = `
     onClick={[Function]}
   >
     <div
-      className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+      className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
       style={Object {}}
     >
       <span
@@ -188,7 +188,7 @@ exports[`search Search with dark background, custom placeholder. Open https://ap
         onClick={[Function]}
       >
         <div
-          className="flex-parent flex-parent--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 btn--white w-full"
+          className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 btn--white w-full"
           style={Object {}}
         >
           <span
@@ -246,7 +246,7 @@ exports[`search Set \`resultsOnly: true\` to true. Select an item to see search 
     </option>
   </select>
   <div
-    className="hmax360 scroll-auto scroll-styled"
+    className="hmax360 overflow-auto scroll-styled"
   >
     <div
       className="relative"

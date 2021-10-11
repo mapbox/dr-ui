@@ -2155,10 +2155,6 @@ Object {
       "parent": "/dr-ui/guides/",
       "title": "Guides",
     },
-    "/dr-ui/guides/a11y/": Object {
-      "parent": "/dr-ui/guides/",
-      "title": "Guides",
-    },
     "/dr-ui/guides/batfish-helpers/": Object {
       "parent": "/dr-ui/guides/",
       "title": "Guides",
@@ -2190,6 +2186,18 @@ Object {
     "/dr-ui/guides/split-pages/": Object {
       "parent": "/dr-ui/guides/",
       "title": "Guides",
+    },
+    "/dr-ui/guides/test-pages/": Object {
+      "parent": "/dr-ui/guides/",
+      "title": "Guides",
+    },
+    "/dr-ui/guides/test-pages/a11y/": Object {
+      "parent": "/dr-ui/guides/test-pages/",
+      "title": "Test pages",
+    },
+    "/dr-ui/guides/test-pages/headings/": Object {
+      "parent": "/dr-ui/guides/test-pages/",
+      "title": "Test pages",
     },
   },
   "navTabs": Array [
@@ -2265,10 +2273,34 @@ Object {
           "title": "Multi-structured sites",
         },
         Object {
-          "description": "Page for testing accessibility of components.",
+          "description": "A group of test pages.",
+          "group": true,
           "layout": "page",
           "order": 6,
-          "path": "/dr-ui/guides/a11y/",
+          "path": "/dr-ui/guides/test-pages/",
+          "subPages": Array [
+            Object {
+              "description": "Page for testing accessibility of components.",
+              "groupOrder": 1,
+              "layout": "page",
+              "path": "/dr-ui/guides/test-pages/a11y/",
+              "title": "Accessibility test page",
+            },
+            Object {
+              "description": "Page for testing headings.",
+              "groupOrder": 2,
+              "layout": "page",
+              "path": "/dr-ui/guides/test-pages/headings/",
+              "title": "Headings",
+            },
+          ],
+          "title": "Test pages",
+        },
+        Object {
+          "description": "Page for testing accessibility of components.",
+          "groupOrder": 1,
+          "layout": "page",
+          "path": "/dr-ui/guides/test-pages/a11y/",
           "title": "Accessibility test page",
         },
         Object {
@@ -2284,6 +2316,13 @@ Object {
           "layout": "page",
           "path": "/dr-ui/guides/grouped-guides/frontmatter/",
           "title": "Frontmatter",
+        },
+        Object {
+          "description": "Page for testing headings.",
+          "groupOrder": 2,
+          "layout": "page",
+          "path": "/dr-ui/guides/test-pages/headings/",
+          "title": "Headings",
         },
         Object {
           "description": "This section of the catalog site illustrates how grouped guides look and work.",

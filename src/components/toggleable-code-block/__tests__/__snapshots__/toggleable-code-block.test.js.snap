@@ -5,18 +5,18 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
   className="my24"
 >
   <div
-    className="flex-parent-mm flex-parent--space-between-main-mm mb6"
+    className="flex-mm flex--space-between-main-mm mb6"
   >
     <div
-      className="flex-child"
+      className="flex-mm"
     >
       <div
-        className="inline-block txt-bold mb6 color-gray-dark"
+        className="txt-bold color-gray-dar mb6"
       >
         ThisIsAFile.extension
       </div>
       <div
-        className="inline-block ml12-mm"
+        className="ml12-mm"
       >
         <a
           className="unprose link"
@@ -43,9 +43,7 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
         </a>
       </div>
     </div>
-    <div
-      className="flex-child"
-    >
+    <div>
       <div
         className="relative "
       >
@@ -151,7 +149,7 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="prose relative round z0 scroll-styled scroll-auto"
+    className="prose relative round z0 scroll-styled overflow-auto"
     style={
       Object {
         "maxHeight": 480,
@@ -169,12 +167,10 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
           data-chunk-code="chunk-0"
         >
           <button
-            className="w-full bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
+            className="w-full bg-blue-faint color-blue-dark color-blue-on-hover pl12 py6 cursor-pointer txt-s h30 flex flex--center-cross"
             onClick={[Function]}
           >
-            <div
-              className="flex-child"
-            >
+            <div>
               <div
                 className="mb-neg3"
               >
@@ -217,7 +213,6 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
               </div>
             </div>
             <div
-              className="flex-child"
               style={
                 Object {
                   "marginLeft": "8px",
@@ -241,7 +236,7 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
             }
           >
             <div
-              className="absolute fl color-gray align-r pr6 w30 py3"
+              className="absolute fl color-text align-r pr6 w30 py3"
               data-content={2}
               style={
                 Object {
@@ -271,12 +266,10 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
           data-chunk-code="chunk-2"
         >
           <button
-            className="w-full bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
+            className="w-full bg-blue-faint color-blue-dark color-blue-on-hover pl12 py6 cursor-pointer txt-s h30 flex flex--center-cross"
             onClick={[Function]}
           >
-            <div
-              className="flex-child"
-            >
+            <div>
               <div
                 className="mb-neg3"
               >
@@ -319,7 +312,6 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
               </div>
             </div>
             <div
-              className="flex-child"
               style={
                 Object {
                   "marginLeft": "8px",
@@ -343,7 +335,7 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
             }
           >
             <div
-              className="absolute fl color-gray align-r pr6 w30 py3"
+              className="absolute fl color-text align-r pr6 w30 py3"
               data-content={5}
               style={
                 Object {
@@ -376,7 +368,7 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
             }
           >
             <div
-              className="absolute fl color-gray align-r pr6 w30 py3"
+              className="absolute fl color-text align-r pr6 w30 py3"
               data-content={6}
               style={
                 Object {
@@ -409,7 +401,7 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
             }
           >
             <div
-              className="absolute fl color-gray align-r pr6 w30 py3"
+              className="absolute fl color-text align-r pr6 w30 py3"
               data-content={7}
               style={
                 Object {
@@ -442,7 +434,7 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
             }
           >
             <div
-              className="absolute fl color-gray align-r pr6 w30 py3"
+              className="absolute fl color-text align-r pr6 w30 py3"
               data-content={8}
               style={
                 Object {
@@ -472,12 +464,10 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
           data-chunk-code="chunk-4"
         >
           <button
-            className="w-full bg-gray-faint color-gray-dark color-gray-on-hover pl12 py6 cursor-pointer txt-s h30 flex-parent flex-parent--center-cross"
+            className="w-full bg-blue-faint color-blue-dark color-blue-on-hover pl12 py6 cursor-pointer txt-s h30 flex flex--center-cross"
             onClick={[Function]}
           >
-            <div
-              className="flex-child"
-            >
+            <div>
               <div
                 className="mb-neg3"
               >
@@ -520,7 +510,6 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
               </div>
             </div>
             <div
-              className="flex-child"
               style={
                 Object {
                   "marginLeft": "8px",

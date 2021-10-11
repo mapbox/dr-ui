@@ -22,7 +22,7 @@ export default class PageLayout extends React.PureComponent {
     const { constants } = this.props;
     return (
       <div
-        className={`flex-child flex-child--no-shrink w-full w180-mm w240-ml mr36-mm ${config.sidebarTheme}`}
+        className={`flex-child-no-shrink w-full w180-mm w240-ml mr36-mm ${config.sidebarTheme}`}
         style={edgeFlexChild}
       >
         <Sidebar
@@ -85,7 +85,7 @@ export default class PageLayout extends React.PureComponent {
       }
     ]);
     return (
-      <div className="flex-child flex-child--grow" style={edgeFlexChild}>
+      <div className="flex-child-grow" style={edgeFlexChild}>
         {!frontMatter.hideBreadcrumbs && (
           <Breadcrumb
             themeWrapper={classnames('pt3 pb12', {
@@ -136,8 +136,8 @@ export default class PageLayout extends React.PureComponent {
     return (
       <ErrorBoundary>
         {!noShellHeaderBuffer && <div className="shell-header-buffer" />}
-        <div className="limiter limiter--wide">
-          <div className="flex-parent-mm">
+        <div className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm">
+          <div className="flex-mm">
             {!frontMatter.hideSidebar && (
               <ErrorBoundary>
                 {this.renderSidebar(config, switchedNavigation, parentPath)}
@@ -207,7 +207,7 @@ PageLayout.propTypes = {
     sidebarTheme: PropTypes.string,
     showCards: PropTypes.bool,
     fullWidthCards: PropTypes.bool,
-    cardColSize: PropTypes.number,
+    cardColSize: PropTypes.string,
     unProse: PropTypes.bool,
     noShellHeaderBuffer: PropTypes.bool,
     hideFromNav: PropTypes.bool,

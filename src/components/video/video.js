@@ -82,7 +82,7 @@ export default class Video extends React.PureComponent {
 
     return (
       <div
-        className="relative flex-parent flex-parent--center-main flex-parent--center-cross bg-gray"
+        className="relative flex flex--center-main flex--center-cross bg-gray"
         onMouseOver={this.onHover}
         onMouseLeave={this.onOut}
         onFocus={this.onHover}
