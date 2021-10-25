@@ -144,5 +144,9 @@
   "lint-staged": {
     "*.js": "eslint --cache --fix",
     "*.{js,css,html,json,yml,md}": "prettier --write"
+  },
+  "engines": {
+    "node": ">=14",
+    "npm": "^7"
   }
 }
