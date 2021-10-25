@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Adjust spacing and size of `subPages` in `GroupedGuides`. [#526](https://github.com/mapbox/dr-ui/pull/526)
+
 ## 5.0.0
 
 This release updates to Assembly v1. [#481](https://github.com/mapbox/dr-ui/pull/481)
