@@ -120,7 +120,7 @@
   "peerDependencies": {
     "@mapbox/mbx-assembly": "^1.2.0",
     "@mapbox/mr-ui": "^1.1.0",
-    "@sentry/browser": "^6.13.2",
+    "@sentry/browser": "^6.13.3",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   },
