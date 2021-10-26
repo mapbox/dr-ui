@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Adjust spacing and size of `subPages` in `GroupedGuides`. [#526](https://github.com/mapbox/dr-ui/pull/526)
+- Update devDependencies.
 
 ## 5.0.0
 
