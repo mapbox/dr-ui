@@ -1,0 +1,15 @@
+# Please see the documentation for all configuration options:
+# https://help.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'daily'
+    reviewers:
+      - '@mapbox/docs'
+    allow:
+      - dependency-name: '@mapbox/prettier-config-docs'
+      - dependency-name: '@mapbox/eslint-config-docs'
+      - dependency-name: '@mapbox/remark-config-docs'

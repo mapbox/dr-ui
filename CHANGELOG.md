@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Adjust spacing and size of `subPages` in `GroupedGuides`. [#526](https://github.com/mapbox/dr-ui/pull/526)
+- Require Node 14 and npm 7.
 
 ## 5.0.0
 
