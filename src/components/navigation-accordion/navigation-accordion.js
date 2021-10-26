@@ -96,7 +96,7 @@ export default class NavigationAccordion extends React.Component {
   }
   // Create list of grouped guides
   renderSubPages(subPages, activeItem) {
-    const subs = subPages.map((subPage) => {
+    const subs = subPages.map((subPage, index) => {
       return (
         <li key={subPage.title}>
           <a
@@ -104,7 +104,8 @@ export default class NavigationAccordion extends React.Component {
             className={classnames(
               'pl12 inline-block w-full color-blue-on-hover border-l border--gray-light border-l--2',
               {
-                'color-blue': activeItem === subPage.path
+                'color-blue': activeItem === subPage.path,
+                pb6: subPages.length - 1 !== index
               }
             )}
           >
@@ -113,7 +114,7 @@ export default class NavigationAccordion extends React.Component {
         </li>
       );
     });
-    return <ul className="mb6 ml3">{subs}</ul>;
+    return <ul className="my6 ml3 txt-ms">{subs}</ul>;
   }
   renderBody(subItems, activeItem, sectionId) {
     const subItemEls = subItems
