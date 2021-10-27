@@ -82,6 +82,7 @@
     "@elastic/react-search-ui-views": "^1.7.0",
     "@elastic/search-ui-site-search-connector": "^1.7.0",
     "@mapbox/mapbox-gl-supported": "^2.0.0",
+    "@sentry/browser": "^6.13.3",
     "@sentry/tracing": "^6.13.3",
     "classnames": "^2.3.1",
     "compare-versions": "^3.6.0",
@@ -102,7 +103,6 @@
   "peerDependencies": {
     "@mapbox/mbx-assembly": "^1.2.0",
     "@mapbox/mr-ui": "^1.1.0",
-    "@sentry/browser": "^6.13.3",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   },
