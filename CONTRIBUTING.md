@@ -69,5 +69,5 @@ Once all changes are on the main branch, follow these steps:
 3. Run `npm version <major|minor|patch>` to increment the version number in package.json and package-lock.json. This will automatically create a commit and tag for the release.
 4. Push your commit.
 5. Run `npm ci` and then `npm run build`.
-6. Run `cd pkg/` to change into the pkg directory and then publish the new version on npm: `mbx npm publish`.
+6. Run `cd pkg/` to change into the pkg directory and then publish the new version on npm: `npm i && mbx npm publish`.
 7. `cd` back to the root directory and run `npm run deploy-docs` to deploy the catalog site.
