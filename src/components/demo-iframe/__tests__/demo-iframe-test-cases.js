@@ -44,7 +44,7 @@ testCases.height = {
   component: DemoIframe,
   description: 'Custom height used for iframe.',
   props: {
-    title: 'Static API request',
+    title: 'Light map style',
     src: './files/ios-horizontal.png',
     height: 100
   }
