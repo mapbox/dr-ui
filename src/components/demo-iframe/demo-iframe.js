@@ -23,7 +23,7 @@ export default class DemoIframe extends React.PureComponent {
 
   render() {
     let { src } = this.props;
-    const { title, gl } = this.props;
+    const { title, gl, height } = this.props;
     const { mapboxAccessToken } = this.state;
     // check to see if the src is making a request to mapbox api
     const makeRequest = src.indexOf('MapboxAccessToken') > -1;
@@ -38,11 +38,9 @@ export default class DemoIframe extends React.PureComponent {
       ? src.replace('MapboxAccessToken', mapboxAccessToken)
       : src;
 
-    const iframeHeight = 400;
-
     const contents = (
       <div>
-        <iframe title={title} src={src} width="100%" height={iframeHeight} />
+        <iframe title={title} src={src} width="100%" height={height} />
         <a href={src} className="link">
           <ChevronousText text="View fullscreen demo" />
         </a>
@@ -50,7 +48,7 @@ export default class DemoIframe extends React.PureComponent {
     );
 
     return gl ? (
-      <MapWrapper height={iframeHeight + 30 /* add space for demo link */}>
+      <MapWrapper height={height + 30 /* add space for demo link */}>
         {contents}
       </MapWrapper>
     ) : (
@@ -60,7 +58,8 @@ export default class DemoIframe extends React.PureComponent {
 }
 
 DemoIframe.defaultProps = {
-  gl: true
+  gl: true,
+  height: 400
 };
 
 DemoIframe.propTypes = {
@@ -71,5 +70,7 @@ DemoIframe.propTypes = {
   /** Replace instance of `MapboxAccessToken` in the `src` prop with the value of this Mapbox access token. */
   MapboxAccessToken: PropTypes.string,
   /** A title to describe the content of the iframe. */
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  /** Height of iframe in pixels. Default `400`. */
+  height: PropTypes.number
 };
