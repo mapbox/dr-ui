@@ -40,4 +40,14 @@ testCases.missing = {
   }
 };
 
+testCases.height = {
+  component: DemoIframe,
+  description: 'Custom height used for iframe.',
+  props: {
+    title: 'Light map style',
+    src: './files/ios-horizontal.png',
+    height: 100
+  }
+};
+
 export { testCases, noRenderCases };
