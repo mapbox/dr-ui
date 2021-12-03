@@ -101,6 +101,7 @@ export default class PageLayout extends React.PureComponent {
 
         <Content
           {...this.props}
+          section={hasSection ? hasSection.path : undefined}
           parentPath={parentPath}
           layoutConfig={config}
         />
