@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Allow other sections, other than "Guides", to work with `GuideGroupIndex`.
+
 ## 5.1.1
 
 - Move `@sentry/browser` to `dependencies`.
