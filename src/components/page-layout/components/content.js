@@ -92,8 +92,14 @@ export class ContentWrapper extends React.PureComponent {
   };
 
   render() {
-    const { children, frontMatter, layoutConfig, navigation, location } =
-      this.props;
+    const {
+      children,
+      frontMatter,
+      layoutConfig,
+      navigation,
+      location,
+      section
+    } = this.props;
     const { title, unProse, hideFeedback, layout, overviewHeader } =
       frontMatter;
     const { hideTitle } = layoutConfig;
@@ -135,7 +141,7 @@ export class ContentWrapper extends React.PureComponent {
             {frontMatter.group && (
               <GuideGroupIndex
                 pathname={location.pathname}
-                navigation={navigation}
+                navigation={section ? navigation[section] : navigation}
                 frontMatter={frontMatter}
               />
             )}
