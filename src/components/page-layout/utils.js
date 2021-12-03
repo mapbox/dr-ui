@@ -48,37 +48,28 @@ export function createUniqueCrumbs(links) {
   }, []);
 }
 
-function getGuidesNavTabs(array) {
-  return array.find((x) => x.title === 'Guides');
+/**
+ * Recursive function to return the subpages for a group index
+ */
+function findPages(arr, pathname) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].path === pathname) return arr[i];
+    if (arr[i].pages) {
+      return findPages(arr[i].pages, pathname);
+    }
+  }
 }
 
-export function getSubPages(navigation, pathname, frontMatter) {
-  let sectionPath;
-  let pages;
-  let subPages;
-  // If the current page is a part of a section (a multi-structured
-  // site) then set sectionPath to the current section.
-  if (navigation.hierarchy[pathname].section) {
-    sectionPath = navigation.hierarchy[pathname].section.path;
-  }
-  // Get all pages for the repo or for the section if the current
-  // page is part of a section (a multi-structured site).
-  if (sectionPath) {
-    pages = getGuidesNavTabs(navigation[sectionPath].navTabs).pages;
-  } else if (getGuidesNavTabs(navigation.navTabs)) {
-    pages = getGuidesNavTabs(navigation.navTabs).pages;
-  }
-  // Get the relevant subPages. If the current page is the
-  // grouped guide index, get the `subPages` for that path.
-  // If the current page is one of the grouped guides, get its
-  // sibling pages within the current group.
-  if (frontMatter.group) {
-    subPages = pages && pages.find((x) => x.path === pathname).subPages;
-  } else if (frontMatter.groupOrder) {
-    subPages =
-      pages &&
-      pages.find((x) => x.path === navigation.hierarchy[pathname].parent)
-        .subPages;
-  }
-  return subPages;
+/**
+ * Returns the subpages for grouped guides
+ */
+export function getSubPages(navigation, pathname, frontmatter) {
+  // get the group index's parent path
+  const path = frontmatter.group
+    ? pathname
+    : findParentPath(navigation, pathname);
+  // get the object for the group index, including subPages
+  const groupIndex = findPages(navigation.navTabs, path);
+  // return subPages, if it exists
+  return groupIndex && groupIndex.subPages ? groupIndex.subPages : [];
 }

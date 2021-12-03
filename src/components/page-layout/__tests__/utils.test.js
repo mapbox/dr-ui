@@ -326,7 +326,20 @@ describe('getSubPages', () => {
           group: true
         }
       )
-    ).toMatchInlineSnapshot(`undefined`);
+    ).toMatchInlineSnapshot(`
+      Array [
+        Object {
+          "groupOrder": 1,
+          "path": "/documentation/style-guide/content-types/example/",
+          "title": "Example",
+        },
+        Object {
+          "groupOrder": 1,
+          "path": "/documentation/style-guide/content-types/tutorial/",
+          "title": "Tutorial",
+        },
+      ]
+    `);
   });
 
   test('grouped guides, pathname not set on index', () => {
