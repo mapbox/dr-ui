@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.1.2
+- Update @mapbox/remark-config-docs. [#531](https://github.com/mapbox/dr-ui/pull/531)
+- Add optional height prop to DemoIframe. [#532](https://github.com/mapbox/dr-ui/pull/531)
+
 ## 5.1.1
 
 - Move `@sentry/browser` to `dependencies`.
