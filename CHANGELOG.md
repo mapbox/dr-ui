@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.1.3
+
+- fix bug in GroupGuideIndex that expected hardcode title 'Guides' for root doc
+
 ## 5.1.2
 - Update @mapbox/remark-config-docs. [#531](https://github.com/mapbox/dr-ui/pull/531)
 - Add optional height prop to DemoIframe. [#532](https://github.com/mapbox/dr-ui/pull/531)
