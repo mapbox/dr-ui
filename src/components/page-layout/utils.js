@@ -50,7 +50,8 @@ export function createUniqueCrumbs(links) {
 
 function getGuidesNavTabs(array) {
   // Find root page of guide by hardcoded name, or in case of JP translation, order in navigation
-  return array.find(x => x.title === 'Guides' || x.navOrder == 1);}
+  return array.find((x) => x.title === 'Guides' || x.navOrder === 1);
+}
 
 export function getSubPages(navigation, pathname, frontMatter) {
   let sectionPath;

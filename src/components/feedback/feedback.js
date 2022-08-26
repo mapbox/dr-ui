@@ -177,7 +177,11 @@ class Feedback extends React.PureComponent {
     // Initial stage: the user has not clicked on feedback
     if (!isOpen) {
       return (
-        <button value="Share" onClick={this.openFeedback} className="btn">
+        <button
+          value="Share"
+          onClick={this.openFeedback}
+          className="btn btn--gray btn--stroke"
+        >
           Share your feedback
         </button>
       );
@@ -194,7 +198,7 @@ class Feedback extends React.PureComponent {
             <button
               value={category}
               onClick={this.selectCategory}
-              className="btn w-full mb6"
+              className="btn btn--gray w-full mb6"
               key={category}
             >
               {category}

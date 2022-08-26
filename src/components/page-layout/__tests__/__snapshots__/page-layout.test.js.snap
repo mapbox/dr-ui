@@ -952,7 +952,7 @@ Array [
                   className="none block-mxl"
                 >
                   <button
-                    className="btn"
+                    className="btn btn--gray btn--stroke"
                     onClick={[Function]}
                     value="Share"
                   >
@@ -971,7 +971,7 @@ Array [
                 className="my36 color-text block none-mxl"
               >
                 <button
-                  className="btn"
+                  className="btn btn--gray btn--stroke"
                   onClick={[Function]}
                   value="Share"
                 >
@@ -1161,7 +1161,7 @@ Array [
                 className="my36 color-text"
               >
                 <button
-                  className="btn"
+                  className="btn btn--gray btn--stroke"
                   onClick={[Function]}
                   value="Share"
                 >
@@ -1618,7 +1618,7 @@ Array [
                   className="none block-mxl"
                 >
                   <button
-                    className="btn"
+                    className="btn btn--gray btn--stroke"
                     onClick={[Function]}
                     value="Share"
                   >
@@ -1724,7 +1724,7 @@ Array [
                 className="my36 color-text block none-mxl"
               >
                 <button
-                  className="btn"
+                  className="btn btn--gray btn--stroke"
                   onClick={[Function]}
                   value="Share"
                 >
@@ -2169,7 +2169,7 @@ Array [
                   className="none block-mxl"
                 >
                   <button
-                    className="btn"
+                    className="btn btn--gray btn--stroke"
                     onClick={[Function]}
                     value="Share"
                   >
@@ -2256,7 +2256,7 @@ Array [
                 className="my36 color-text block none-mxl"
               >
                 <button
-                  className="btn"
+                  className="btn btn--gray btn--stroke"
                   onClick={[Function]}
                   value="Share"
                 >
@@ -2586,7 +2586,7 @@ Array [
                 className="my36 color-text"
               >
                 <button
-                  className="btn"
+                  className="btn btn--gray btn--stroke"
                   onClick={[Function]}
                   value="Share"
                 >

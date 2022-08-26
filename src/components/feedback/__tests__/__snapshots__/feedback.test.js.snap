@@ -2,7 +2,7 @@
 
 exports[`feedback Basic renders as expected 1`] = `
 <button
-  className="btn"
+  className="btn btn--gray btn--stroke"
   onClick={[Function]}
   value="Share"
 >
@@ -12,7 +12,7 @@ exports[`feedback Basic renders as expected 1`] = `
 
 exports[`feedback Change type renders as expected 1`] = `
 <button
-  className="btn"
+  className="btn btn--gray btn--stroke"
   onClick={[Function]}
   value="Share"
 >
