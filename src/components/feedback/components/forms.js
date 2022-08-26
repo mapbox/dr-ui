@@ -82,7 +82,7 @@ export class FeedbackButton extends React.PureComponent {
         id="feedback-submit-button"
         onClick={onClick}
         disabled={disabled}
-        className="btn mt6"
+        className="btn btn--gray mt6"
       >
         Submit feedback
       </button>

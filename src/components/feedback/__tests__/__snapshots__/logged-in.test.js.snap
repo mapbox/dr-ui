@@ -220,7 +220,7 @@ exports[`Workflow with logged in user information 2 - Something is confusing Che
                 onClick={[Function]}
               >
                 <button
-                  className="btn mt6"
+                  className="btn btn--gray mt6"
                   disabled={true}
                   id="feedback-submit-button"
                   onClick={[Function]}
