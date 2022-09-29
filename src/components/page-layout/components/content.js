@@ -8,6 +8,57 @@ import OverviewHeader from '../../overview-header/overview-header';
 import NextPage from './next-page.js';
 import GuideGroupIndex from './guide-group-index.js';
 
+import themes from '../../themes';
+
+class SignupBanner extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = { isLoggedIn: true };
+  }
+
+  componentDidMount() {
+    if (typeof MapboxPageShell !== 'undefined') {
+      MapboxPageShell.afterUserCheck(() => {
+        this.setState({
+          isLoggedIn: !!MapboxPageShell.getUser()
+        });
+      });
+    } else {
+      // if no MapboxPageShell, show the component (necessary when developing dr-ui)
+      this.setState({
+        isLoggedIn: false
+      });
+    }
+  }
+
+  render() {
+    if (this.state.isLoggedIn) return null;
+    const { background, color } = themes['default'];
+    return (
+      <div
+        className={`dr-ui--signup-banner py18 px18 round flex mb18 ${background} ${color}`}
+      >
+        <div className="w-full prose flex flex--column-mxl">
+          <div className="flex-child-grow">
+            <div className="txt-bold mb6">Ready to get started?</div>
+            <div className="txt-ms mb18-mxl">
+              Create a free account to start building with Mapbox.
+            </div>
+          </div>
+          <div className="flex flex--center-cross flex-child-no-shrink">
+            <a
+              href="https://account.mapbox.com/auth/signup"
+              className="btn btn--blue round-full unprose"
+            >
+              Sign Up
+            </a>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
 export default class Content extends React.PureComponent {
   render() {
     const {
@@ -84,6 +135,7 @@ export class ContentWrapper extends React.PureComponent {
         {showToc && headings && headings.length > 0 && (
           <OnThisPage headings={headings} themeWrapper="mb24-mxl mb18" />
         )}
+        <SignupBanner />
         {showFeedback && (
           <div className="none block-mxl">{this.renderFeedback()}</div>
         )}
@@ -154,6 +206,7 @@ export class ContentWrapper extends React.PureComponent {
                   'block none-mxl': layout !== 'full' // hide feedback at bottom of page on larger screens unless layout is full (always show it on the bottom)
                 })}
               >
+                <SignupBanner />
                 {this.renderFeedback()}
               </div>
             )}
