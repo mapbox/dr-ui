@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.1.5
+
+- add a sign up banner call to action in the `PageLayout` component
+
 ## 5.1.4
 
 - change styling for `feedback` buttons from solid blue to gray with outline
