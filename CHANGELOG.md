@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.1.6
+
+- add a sign up banner call to action in the `PageLayout` component (no changes, but the wrong directory was mistakenly published as v5.1.5)
+
 ## 5.1.5
 
 - add a sign up banner call to action in the `PageLayout` component
