@@ -1,0 +1,36 @@
+# based on https://github.com/mapbox/mapbox-gl-directions/blob/master/.circleci/config.yml
+version: 2.1
+
+workflows:
+  default:
+    jobs:
+      - build-and-test
+
+jobs:
+  build-and-test:
+    docker:
+      - image: cimg/node:16.10.0
+    working_directory: ~/dr-ui
+    steps:
+      - checkout
+      - run:
+          name: Install mbx-ci
+          command: |
+            curl -Ls https://mapbox-release-engineering.s3.amazonaws.com/mbx-ci/latest/mbx-ci-linux-amd64 > ~/mbx-ci && chmod 755 ~/mbx-ci
+
+      - run:
+          name: Get NPM Token
+          command: |
+            export NPM_TOKEN=$(~/mbx-ci npm token) &&
+            echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+      - run:
+          name: Install Dependencies
+          command: |
+            npm ci
+      - run:
+          name: Test and Build
+          # run sitemap tests after build to assert sitemap is correct
+          command: |
+            npm test &&
+            npm run build-docs &&
+            ./node_modules/.bin/jest src/helpers/batfish/__tests__/sitemap.test.js
