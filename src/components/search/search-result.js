@@ -43,7 +43,7 @@ class SearchResult extends React.PureComponent {
       >
         {title && url && (
           <div className="block link--gray">
-            <div className="mb3">
+            <div className="mb3 txt-s">
               <span className="txt-bold">
                 {resultTitle.map((t, index) => {
                   return (
@@ -58,7 +58,26 @@ class SearchResult extends React.PureComponent {
               </span>
             </div>
 
-            <div className="mb6">{ReactHtmlParser(excerpt)}</div>
+            <div className="mb6 txt-ms">
+              {ReactHtmlParser(excerpt, {
+                transform: (node, i) => {
+                  if (node.name === 'em') {
+                    return (
+                      <em
+                        key={i}
+                        className="txt-underline txt-bold"
+                        style={{
+                          color: '#4264fb'
+                        }}
+                      >
+                        {' '}
+                        {node.children[0].data}
+                      </em>
+                    );
+                  }
+                }
+              })}
+            </div>
 
             <div className="txt-s">
               {type ? (

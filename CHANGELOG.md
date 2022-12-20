@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.1.7
+
+- Improve Search by lowering the debounce timout, removing loading spinners, styling highlighted words in the search results, and some other styling tweaks
+
 ## 5.1.6
 
 - add a sign up banner call to action in the `PageLayout` component (no changes, but the wrong directory was mistakenly published as v5.1.5)

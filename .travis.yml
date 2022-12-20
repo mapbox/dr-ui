@@ -9,10 +9,5 @@ scripts:
   # run sitemap tests after build to assert sitemap is correct
   - jest src/helpers/batfish/__tests__/sitemap.test.js
 
-before_install:
-  # Install mbx-ci and make it executable.
-  - curl -Ls https://mapbox-release-engineering.s3.amazonaws.com/mbx-ci/latest/mbx-ci-linux-amd64 > mbx-ci && chmod 755 ./mbx-ci
-  - export MBX_CI_DOMAIN=o619qyc20d.execute-api.us-east-1.amazonaws.com
-  - ./mbx-ci npm token --write-file
 install:
-  - npm ci
+  - npm install --production

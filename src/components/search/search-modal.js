@@ -63,9 +63,11 @@ export default class Modal extends React.PureComponent {
       titleText: props.accessibleTitle,
       getApplicationNode: props.getApplicationNode,
       underlayProps: { 'data-popover-ignore-clicks': true },
-      underlayClass: 'bg-darken50 px12 py12 px60-mm py60-mm ',
+      underlayClass: 'px12 py12 px60-mm py60-mm ',
       underlayStyle: {
-        zIndex: 4
+        zIndex: 4,
+        backdropFilter: 'blur(4px)',
+        backgroundColor: 'rgba(0,0,0,.2)'
       }
     };
 

@@ -1,0 +1,33 @@
+# based on https://github.com/mapbox/mapbox-gl-directions/blob/master/.circleci/config.yml
+version: 2.1
+orbs:
+  aws-cli: circleci/aws-cli@3.1.4
+  browser-tools: circleci/browser-tools@1.4.0
+
+workflows:
+  default:
+    jobs:
+      - build-and-test
+
+jobs:
+  build-and-test:
+    docker:
+      - image: cimg/node:14.20.0
+    working_directory: ~/dr-ui
+    steps:
+      - checkout
+      - run:
+          name: Install mbx-ci
+          command: |
+            curl -Ls https://mapbox-release-engineering.s3.amazonaws.com/mbx-ci/latest/mbx-ci-darwin-amd64 > ./mbx-ci &&
+            chmod 755 ./mbx-ci
+
+      - run:
+          name: Get NPM Token
+          command: |
+            export NPM_TOKEN=$(./mbx-ci npm token) &&
+            echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+      - run:
+          name: Install Dependencies
+          command: |
+            npm ci
