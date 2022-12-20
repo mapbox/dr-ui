@@ -74,12 +74,13 @@ export function getSubPages(navigation, pathname, frontMatter) {
   // If the current page is one of the grouped guides, get its
   // sibling pages within the current group.
   if (frontMatter.group) {
-    subPages = pages && pages.find((x) => x.path === pathname).subPages;
+    const thisPage = pages.find((x) => x.path === pathname);
+    subPages = thisPage ? thisPage.subPages : [];
   } else if (frontMatter.groupOrder) {
-    subPages =
+    const parentPage =
       pages &&
-      pages.find((x) => x.path === navigation.hierarchy[pathname].parent)
-        .subPages;
+      pages.find((x) => x.path === navigation.hierarchy[pathname].parent);
+    subPages = parentPage ? parentPage.subPages : [];
   }
   return subPages;
 }
