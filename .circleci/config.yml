@@ -14,6 +14,8 @@ jobs:
     docker:
       - image: cimg/node:14.20.0
     working_directory: ~/dr-ui
+    environment:
+      MBX_CI_DOMAIN: o619qyc20d.execute-api.us-east-1.amazonaws.com
     steps:
       - checkout
       - run:
@@ -23,8 +25,7 @@ jobs:
       - run:
           name: Get NPM Token
           command: |
-            export NPM_TOKEN=$(./mbx-ci npm token) &&
-            echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+            ./mbx-ci npm token --write-file
       - run:
           name: Install Dependencies
           command: |
