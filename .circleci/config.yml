@@ -13,12 +13,17 @@ jobs:
   build-and-test:
     docker:
       - image: cimg/node:14.20.0
-    environment:
-      MBX_CI_DOMAIN: o619qyc20d.execute-api.us-east-1.amazonaws.com
+    working_directory: ~/dr-ui
     steps:
       - checkout
-      - run: curl -Ls https://mapbox-release-engineering.s3.amazonaws.com/mbx-ci/latest/mbx-ci-linux-amd64 > mbx-ci && chmod 755 ./mbx-ci
-      - run: ./mbx-ci npm token --write-file
+      - run:
+          name: Install mbx-ci
+          command: |
+            curl -Ls https://mapbox-release-engineering.s3.amazonaws.com/mbx-ci/latest/mbx-ci-linux-amd64 > ./mbx-ci && chmod 755 ./mbx-ci
+      - run:
+          name: Get NPM Token
+          command: |
+            ./mbx-ci npm token --write-file
       - run:
           name: Install Dependencies
           command: |
