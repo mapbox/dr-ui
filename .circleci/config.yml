@@ -23,7 +23,8 @@ jobs:
       - run:
           name: Get NPM Token
           command: |
-            ./mbx-ci npm token --write-file
+            export NPM_TOKEN=$(./mbx-ci npm token) &&
+            echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
       - run:
           name: Install Dependencies
           command: |
