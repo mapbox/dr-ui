@@ -3,6 +3,7 @@
 ## 5.1.7
 
 - Move CI from TravisCI to CircleCI (as we can no longer install private npm packages on public repos with travisCI)
+- Improve Search by lowering the debounce timout, removing loading spinners, styling highlighted words in the search results, and some other styling tweaks
 
 ## 5.1.6
 

@@ -150,7 +150,7 @@ export class SearchBox extends React.PureComponent {
     }
     function handleInputChange(newValue) {
       if (searchTerm === newValue) return;
-      setSearchTerm(newValue, { debounce: 1500 });
+      setSearchTerm(newValue, { debounce: 200 });
       // track query
       if (window && window.analytics) {
         analytics.track(segmentTrackEvent, {
@@ -192,11 +192,6 @@ export class SearchBox extends React.PureComponent {
               )}
               {(isOpen || resultsOnly) && searchTerm && (
                 <React.Fragment>
-                  {isLoading && (
-                    <div className="w-full h360 bg-lighten75 absolute z5">
-                      <div className="loading mx-auto mt60" />
-                    </div>
-                  )}
                   <div
                     className={classnames(
                       'color-text round mt3 bg-white w-full align-l',
@@ -370,14 +365,8 @@ SearchButton.propTypes = {
 
 export class SearchInput extends React.PureComponent {
   render() {
-    const {
-      placeholder,
-      getLabelProps,
-      useModal,
-      getInputProps,
-      autoFocus,
-      isLoading
-    } = this.props;
+    const { placeholder, getLabelProps, useModal, getInputProps, autoFocus } =
+      this.props;
     const labelProps = {
       ...(getLabelProps && getLabelProps())
     };
@@ -386,7 +375,7 @@ export class SearchInput extends React.PureComponent {
     };
     return (
       <>
-        <label className="cursor-pointer" {...labelProps}>
+        <label className="cursor-pointer" {...labelProps} htmlFor="searchInput">
           <div
             className={classnames(
               'absolute flex flex--center-cross flex--center-main',
@@ -406,26 +395,19 @@ export class SearchInput extends React.PureComponent {
               <use xlinkHref="#icon-search" />
             </svg>
           </div>
-          {isLoading && (
-            <div
-              className={classnames(
-                'loading w24 h24 absolute top right bg-white z5',
-                {
-                  'mt6 mr18': !useModal,
-                  'mt18 mr24': useModal
-                }
-              )}
-            />
-          )}
         </label>
         <input
+          id="searchInput"
           autoFocus={autoFocus}
           placeholder={placeholder}
-          className={classnames('input bg-white txt-color', {
-            'px60 h60 txt-l': useModal,
+          className={classnames('input bg-white txt-color shadow-darken25', {
+            'px60 h60': useModal,
             'px36 h36': !useModal
           })}
           {...inputProps}
+          style={{
+            boxShadow: 'none'
+          }}
         />
       </>
     );
