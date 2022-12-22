@@ -71,3 +71,20 @@ Once all changes are on the main branch, follow these steps:
 5. Run `npm ci` and then `npm run build`.
 6. Run `cd pkg/` to change into the pkg directory and then publish the new version on npm: `mbx npm publish`.
 7. `cd` back to the root directory and run `npm run deploy-docs` to deploy the catalog site.
+
+## Automatically create Pull Requests for docs sites
+
+A new release needs to be deployed on the various docs sites that consume `dr-ui`. `scripts/create-pull-request.sh` includes a sequence of shell commands to navigate to a docs repo on your local dev environment, run `npm install @mapbox/dr-ui` to install a specific version of `dr-ui`, commit `package.json` and `package.lock` to a new branch, and create a github pull request.
+
+This script should be run from the root of this repository, and requires you to have [github cli](https://cli.github.com/) installed.
+
+To use:
+
+- Authenticate with github cli by running `gh login`
+- From the root of this repository, run `node scripts/create-pull-request [dr-ui version] [docs-repo]`
+
+`docs-repo` is the name of the directory for a docs repo that is already cloned to your local environment and is in the same directory as this repository.
+
+Example: `node scripts/create-pull-request 5.1.7 mapbox-gl-js-docs`
+
+Repeat for all docs sites that need the update, and merge PRs through your normal workflow.
