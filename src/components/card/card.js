@@ -6,7 +6,8 @@ import LevelIndicator from '../level-indicator/level-indicator';
 
 class Card extends React.PureComponent {
   render() {
-    const { thumbnail, level, language, description, path, title } = this.props;
+    const { thumbnail, level, language, description, path, link, title } =
+      this.props;
     const renderedThumbnail = thumbnail && (
       <div className="relative h120 mb6">{thumbnail}</div>
     );
@@ -19,10 +20,20 @@ class Card extends React.PureComponent {
       <IconText iconBefore="code">{language}</IconText>
     );
 
+    let externalLinkAttributes;
+
+    if (link) {
+      externalLinkAttributes = {
+        target: '_blank',
+        rel: 'nooopener noreferrer'
+      };
+    }
+
     return (
       <a
         className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
-        href={path}
+        href={link || path}
+        {...externalLinkAttributes}
       >
         {renderedThumbnail}
         <div>
@@ -32,7 +43,14 @@ class Card extends React.PureComponent {
               {renderedLanguage}
             </div>
           )}
-          <div className="mb6">{title}</div>
+          <div className="mb6 flex flex--center-cross">
+            {title}{' '}
+            {link && (
+              <svg className="icon ml3 mt3">
+                <use xlinkHref="#icon-share" />
+              </svg>
+            )}
+          </div>
           {description && (
             <div className="color-gray color-gray-on-hover">{description}</div>
           )}
@@ -48,7 +66,8 @@ Card.propTypes = {
   description: PropTypes.string,
   thumbnail: PropTypes.node,
   level: PropTypes.node,
-  language: PropTypes.string
+  language: PropTypes.string,
+  link: PropTypes.string
 };
 
 export default Card;
