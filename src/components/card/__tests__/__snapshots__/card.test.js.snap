@@ -92,9 +92,10 @@ exports[`card Card with image renders as expected 1`] = `
       </span>
     </div>
     <div
-      className="mb6"
+      className="mb6 flex flex--center-cross"
     >
       My cool card
+       
     </div>
     <div
       className="color-gray color-gray-on-hover"
@@ -183,9 +184,10 @@ exports[`card Card with no image renders as expected 1`] = `
       </span>
     </div>
     <div
-      className="mb6"
+      className="mb6 flex flex--center-cross"
     >
       My cool card
+       
     </div>
     <div
       className="color-gray color-gray-on-hover"
@@ -288,9 +290,10 @@ exports[`card Card without description renders as expected 1`] = `
       </span>
     </div>
     <div
-      className="mb6"
+      className="mb6 flex flex--center-cross"
     >
       My cool card without a description
+       
     </div>
   </div>
 </a>

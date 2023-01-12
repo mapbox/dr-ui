@@ -449,9 +449,10 @@ Array [
                           </span>
                         </div>
                         <div
-                          className="mb6"
+                          className="mb6 flex flex--center-cross"
                         >
                           Display a map
+                           
                         </div>
                         <div
                           className="color-gray color-gray-on-hover"
@@ -506,9 +507,10 @@ Array [
                           </span>
                         </div>
                         <div
-                          className="mb6"
+                          className="mb6 flex flex--center-cross"
                         >
                           Add a default marker
+                           
                         </div>
                         <div
                           className="color-gray color-gray-on-hover"
@@ -563,9 +565,10 @@ Array [
                           </span>
                         </div>
                         <div
-                          className="mb6"
+                          className="mb6 flex flex--center-cross"
                         >
                           Extrude polygons for 3D indoor mapping
+                           
                         </div>
                         <div
                           className="color-gray color-gray-on-hover"
@@ -2196,9 +2199,10 @@ Array [
                     >
                       <div>
                         <div
-                          className="mb6"
+                          className="mb6 flex flex--center-cross"
                         >
                           Web maps using older library versions
+                           
                         </div>
                         <div
                           className="color-gray color-gray-on-hover"
@@ -2217,9 +2221,10 @@ Array [
                     >
                       <div>
                         <div
-                          className="mb6"
+                          className="mb6 flex flex--center-cross"
                         >
                           Mobile applications using older SDK versions
+                           
                         </div>
                         <div
                           className="color-gray color-gray-on-hover"
@@ -2238,9 +2243,10 @@ Array [
                     >
                       <div>
                         <div
-                          className="mb6"
+                          className="mb6 flex flex--center-cross"
                         >
                           Data sources
+                           
                         </div>
                         <div
                           className="color-gray color-gray-on-hover"

@@ -49,9 +49,10 @@ exports[`card-container Basic renders as expected 1`] = `
         </div>
         <div>
           <div
-            className="mb6"
+            className="mb6 flex flex--center-cross"
           >
             Example one
+             
           </div>
           <div
             className="color-gray color-gray-on-hover"
@@ -84,9 +85,10 @@ exports[`card-container Basic renders as expected 1`] = `
         </div>
         <div>
           <div
-            className="mb6"
+            className="mb6 flex flex--center-cross"
           >
             Example two
+             
           </div>
           <div
             className="color-gray color-gray-on-hover"
@@ -135,9 +137,10 @@ exports[`card-container Full width renders as expected 1`] = `
       >
         <div>
           <div
-            className="mb6"
+            className="mb6 flex flex--center-cross"
           >
             Example one
+             
           </div>
           <div
             className="color-gray color-gray-on-hover"
@@ -156,9 +159,10 @@ exports[`card-container Full width renders as expected 1`] = `
       >
         <div>
           <div
-            className="mb6"
+            className="mb6 flex flex--center-cross"
           >
             Example two
+             
           </div>
           <div
             className="color-gray color-gray-on-hover"
@@ -221,9 +225,10 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
         </div>
         <div>
           <div
-            className="mb6"
+            className="mb6 flex flex--center-cross"
           >
             Example one
+             
           </div>
           <div
             className="color-gray color-gray-on-hover"
@@ -256,9 +261,10 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
         </div>
         <div>
           <div
-            className="mb6"
+            className="mb6 flex flex--center-cross"
           >
             Example two
+             
           </div>
           <div
             className="color-gray color-gray-on-hover"
@@ -291,9 +297,10 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
         </div>
         <div>
           <div
-            className="mb6"
+            className="mb6 flex flex--center-cross"
           >
             Example one
+             
           </div>
           <div
             className="color-gray color-gray-on-hover"
@@ -326,9 +333,10 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
         </div>
         <div>
           <div
-            className="mb6"
+            className="mb6 flex flex--center-cross"
           >
             Example two
+             
           </div>
           <div
             className="color-gray color-gray-on-hover"
