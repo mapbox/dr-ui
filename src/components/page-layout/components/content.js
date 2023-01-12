@@ -36,7 +36,7 @@ class SignupBanner extends React.PureComponent {
     const { background, color } = themes['default'];
     return (
       <div
-        className={`dr-ui--signup-banner py18 px18 round flex mb18 ${background} ${color}`}
+        className={`dr-ui--signup-banner py18 px18 round flex mt18 mb18 ${background} ${color}`}
       >
         <div className="w-full prose flex flex--column-mxl">
           <div className="flex-child-grow">
