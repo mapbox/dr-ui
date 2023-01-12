@@ -366,6 +366,7 @@ export default class ExampleIndex extends React.PureComponent {
                     ? page.language.join(', ')
                     : undefined
                 }
+                link={page.link}
               />
             ))}
           />
