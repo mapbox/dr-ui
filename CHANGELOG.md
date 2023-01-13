@@ -1,8 +1,16 @@
 # Changelog
 
+## 5.1.10
+
+- Added Mapbox Developers Discord button to PageLayout and content on right aside as a call-to-action
+
+## 5.1.9
+
+- Publishing error
+
 ## 5.1.8
 
-- Added "Mapbox Developers Discord" button to PageLayout / content on right aside as a call-to-action.
+- Add external link feature to example cards
 
 ## 5.1.7
 
