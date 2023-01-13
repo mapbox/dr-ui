@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.1.8
+
+- Added "Mapbox Developers Discord" button to PageLayout / content on right aside as a call-to-action.
+
 ## 5.1.7
 
 - Move CI from TravisCI to CircleCI (as we can no longer install private npm packages on public repos with travisCI)
