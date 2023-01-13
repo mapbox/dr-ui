@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import ExampleIndex from './example-index.js';
 import classnames from 'classnames';
 import OnThisPage from '../../on-this-page/on-this-page';
@@ -7,57 +8,8 @@ import Feedback from '../../feedback/feedback';
 import OverviewHeader from '../../overview-header/overview-header';
 import NextPage from './next-page.js';
 import GuideGroupIndex from './guide-group-index.js';
-
-import themes from '../../themes';
-
-class SignupBanner extends React.PureComponent {
-  constructor(props) {
-    super(props);
-    this.state = { isLoggedIn: true };
-  }
-
-  componentDidMount() {
-    if (typeof MapboxPageShell !== 'undefined') {
-      MapboxPageShell.afterUserCheck(() => {
-        this.setState({
-          isLoggedIn: !!MapboxPageShell.getUser()
-        });
-      });
-    } else {
-      // if no MapboxPageShell, show the component (necessary when developing dr-ui)
-      this.setState({
-        isLoggedIn: false
-      });
-    }
-  }
-
-  render() {
-    if (this.state.isLoggedIn) return null;
-    const { background, color } = themes['default'];
-    return (
-      <div
-        className={`dr-ui--signup-banner py18 px18 round flex mt18 mb18 ${background} ${color}`}
-      >
-        <div className="w-full prose flex flex--column-mxl">
-          <div className="flex-child-grow">
-            <div className="txt-bold mb6">Ready to get started?</div>
-            <div className="txt-ms mb18-mxl">
-              Create a free account to start building with Mapbox.
-            </div>
-          </div>
-          <div className="flex flex--center-cross flex-child-no-shrink">
-            <a
-              href="https://account.mapbox.com/auth/signup"
-              className="btn btn--blue round-full unprose"
-            >
-              Sign Up
-            </a>
-          </div>
-        </div>
-      </div>
-    );
-  }
-}
+import SignupBanner from './signup-banner.js';
+import DiscordCTA from './discord-cta.js';
 
 export default class Content extends React.PureComponent {
   render() {
@@ -136,6 +88,9 @@ export class ContentWrapper extends React.PureComponent {
           <OnThisPage headings={headings} themeWrapper="mb24-mxl mb18" />
         )}
         <SignupBanner />
+        <div className={'my18 color-text none block-mxl'}>
+          <DiscordCTA />
+        </div>
         {showFeedback && (
           <div className="none block-mxl">{this.renderFeedback()}</div>
         )}
@@ -207,6 +162,7 @@ export class ContentWrapper extends React.PureComponent {
                 })}
               >
                 <SignupBanner />
+                <DiscordCTA />
                 {this.renderFeedback()}
               </div>
             )}
