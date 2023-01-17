@@ -81,7 +81,7 @@ This script should be run from the root of this repository, and requires you to 
 To use:
 
 - Authenticate with github cli by running `gh login`
-- From the root of this repository, run `node scripts/create-pull-request [dr-ui version] [docs-repo]`
+- From the root of this repository, run `sh scripts/create-pull-request.sh [dr-ui version] [docs-repo]`
 
 `docs-repo` is the name of the directory for a docs repo that is already cloned to your local environment and is in the same directory as this repository.
 
