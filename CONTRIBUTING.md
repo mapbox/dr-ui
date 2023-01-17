@@ -85,6 +85,6 @@ To use:
 
 `docs-repo` is the name of the directory for a docs repo that is already cloned to your local environment and is in the same directory as this repository.
 
-Example: `node scripts/create-pull-request 5.1.7 mapbox-gl-js-docs`
+Example: `sh scripts/create-pull-request.sh 5.1.11 mapbox-gl-js-docs`
 
 Repeat for all docs sites that need the update, and merge PRs through your normal workflow.
