@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '@mapbox/mr-ui/button';
 import Icon from '@mapbox/mr-ui/icon';
-import PopoverTrigger from '@mapbox/mr-ui/popover-trigger';
+import PopoverTrigger from '@mapbox/mr-ui/popover';
 
 export default class BackToTopButton extends React.PureComponent {
   getPopoverContent = () => {
