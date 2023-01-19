@@ -1,12 +1,10 @@
 import React from 'react';
-import Button from '@mapbox/mr-ui/button';
 import Icon from '@mapbox/mr-ui/icon';
-import PopoverTrigger from '@mapbox/mr-ui/popover';
+import Tooltip from '@mapbox/mr-ui/tooltip';
 
 export default class BackToTopButton extends React.PureComponent {
-  getPopoverContent = () => {
-    return <div className="txt-s">Back to top!</div>;
-  };
+  getPopoverContent = (<div className="txt-s">Back to top!</div>);
+
   render() {
     function handleClick() {
       document.documentElement.scrollTop = 0; // fallback
@@ -14,27 +12,15 @@ export default class BackToTopButton extends React.PureComponent {
     }
     return (
       <div className="mx24 my24 z5">
-        <PopoverTrigger
-          respondsToClick={false}
-          respondsToHover={true}
-          content={this.getPopoverContent}
-          popoverProps={{
-            alignment: 'center',
-            placement: 'top',
-            padding: 'small'
-          }}
-        >
-          <Button
+        <Tooltip content={this.getPopoverContent}>
+          <button
             onClick={handleClick}
-            passthroughProps={{
-              className:
-                'btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross',
-              'aria-label': 'Back to top'
-            }}
+            className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
+            ariaLabel="Back to top"
           >
             <Icon name="arrow-up" size={30} />
-          </Button>
-        </PopoverTrigger>
+          </button>
+        </Tooltip>
       </div>
     );
   }
