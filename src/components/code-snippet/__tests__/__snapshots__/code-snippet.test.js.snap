@@ -144,9 +144,6 @@ See the example: https://docs.mapbox.com//dr-ui"
           </div>
         </code>
       </pre>
-      <div
-        className="absolute z2 top right mr6 mt6 color-white"
-      />
     </div>
   </div>
 </div>
@@ -197,9 +194,6 @@ exports[`CodeSnippet A basic CodeSnippey renders as expected 1`] = `
           </div>
         </code>
       </pre>
-      <div
-        className="absolute z2 top right mr6 mt6 color-white"
-      />
     </div>
   </div>
 </div>
@@ -941,9 +935,6 @@ See the example: https://docs.mapbox.com//mapbox-gl-js/example/simple-map/"
           </div>
         </code>
       </pre>
-      <div
-        className="absolute z2 top right mr6 mt6 color-white"
-      />
     </div>
   </div>
 </div>
@@ -1685,9 +1676,6 @@ See the example: https://docs.mapbox.com//mapbox-gl-js/example/simple-map/"
           </div>
         </code>
       </pre>
-      <div
-        className="absolute z2 top right mr6 mt6 color-white"
-      />
     </div>
   </div>
 </div>
@@ -2087,9 +2075,6 @@ See the example: https://docs.mapbox.com//mapbox-gl-js/example/hello-world/"
           </div>
         </code>
       </pre>
-      <div
-        className="absolute z2 top right mr6 mt6 color-white"
-      />
     </div>
   </div>
 </div>
@@ -2153,9 +2138,6 @@ exports[`CodeSnippet CodeSnippet without edit buttons renders as expected 1`] = 
           </div>
         </code>
       </pre>
-      <div
-        className="absolute z2 top right mr6 mt6 color-white"
-      />
     </div>
   </div>
 </div>
@@ -2206,9 +2188,6 @@ exports[`CodeSnippet CodeSnippet without title renders as expected 1`] = `
           </div>
         </code>
       </pre>
-      <div
-        className="absolute z2 top right mr6 mt6 color-white"
-      />
     </div>
   </div>
 </div>

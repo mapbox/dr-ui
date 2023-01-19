@@ -21,29 +21,17 @@ exports[`product-menu Beta product renders as expected 1`] = `
     className="ml-neg3"
   >
     <div
-      className="inline-block"
+      className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs px6"
+      data-state="closed"
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
-      onKeyDown={[Function]}
+      onPointerDown={[Function]}
+      onPointerLeave={[Function]}
+      onPointerMove={[Function]}
+      style={Object {}}
     >
-      <div
-        aria-describedby="tooltip-1"
-        className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs px6"
-      >
-        Beta
-      </div>
-      <div
-        className="hide-visually"
-        id="tooltip-1"
-        role="tooltip"
-      >
-        <div
-          className="txt-s wmax120"
-        >
-          This feature is in public beta and is subject to changes.
-        </div>
-      </div>
+      Beta
     </div>
   </div>
   <a
@@ -63,29 +51,17 @@ exports[`product-menu Beta product renders as expected 2`] = `
     className="ml-neg3"
   >
     <div
-      className="inline-block"
+      className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs px6"
+      data-state="closed"
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
-      onKeyDown={[Function]}
+      onPointerDown={[Function]}
+      onPointerLeave={[Function]}
+      onPointerMove={[Function]}
+      style={Object {}}
     >
-      <div
-        aria-describedby="tooltip-2"
-        className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs px6"
-      >
-        Beta
-      </div>
-      <div
-        className="hide-visually"
-        id="tooltip-2"
-        role="tooltip"
-      >
-        <div
-          className="txt-s wmax120"
-        >
-          This feature is in public beta and is subject to changes.
-        </div>
-      </div>
+      Beta
     </div>
   </div>
   <a

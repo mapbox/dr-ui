@@ -3,134 +3,124 @@
 exports[`themes Custom tag renders as expected 1`] = `
 <div>
   <div
-    className="inline-block"
+    className="txt-bold round inline-block cursor-default bg-red-light color-red-dark border--red txt-s border px6"
+    data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
-    onKeyDown={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={Object {}}
   >
-    <div
-      aria-describedby="tooltip-13"
-      className="txt-bold round inline-block cursor-default bg-red-light color-red-dark border--red txt-s border px6"
-    >
-      Limited access
-    </div>
-    <div
-      className="hide-visually"
-      id="tooltip-13"
-      role="tooltip"
-    >
-      <div
-        className="txt-s wmax120"
-      >
-        Contact us for access to this feature.
-      </div>
-    </div>
+    Limited access
   </div>
   <div
-    className="inline-block"
+    className="txt-bold round inline-block cursor-default bg-red-light color-red-dark border--red txt-xs px6"
+    data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
-    onKeyDown={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={Object {}}
   >
-    <div
-      aria-describedby="tooltip-14"
-      className="txt-bold round inline-block cursor-default bg-red-light color-red-dark border--red txt-xs px6"
-    >
-      Limited access
-    </div>
-    <div
-      className="hide-visually"
-      id="tooltip-14"
-      role="tooltip"
-    >
-      <div
-        className="txt-s wmax120"
-      >
-        Contact us for access to this feature.
-      </div>
-    </div>
+    Limited access
   </div>
   <div
-    className="inline-block"
+    className="txt-bold round inline-block cursor-default bg-red-light color-red-dark border--red txt-s border"
+    data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
-    onKeyDown={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={Object {}}
   >
-    <div
-      aria-describedby="tooltip-15"
-      className="txt-bold round inline-block cursor-default bg-red-light color-red-dark border--red txt-s border"
-    >
-      <svg
-        className="events-none icon inline-block align-t"
-        focusable="false"
-        role="presentation"
-        style={
-          Object {
-            "height": 18,
-            "width": 18,
-          }
+    <svg
+      aria-hidden="true"
+      className="events-none icon inline-block align-t"
+      data-testid="icon-contact"
+      focusable="false"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
         }
-      >
-        <use
-          xlinkHref="#icon-contact"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        />
-      </svg>
-    </div>
-    <div
-      className="hide-visually"
-      id="tooltip-15"
-      role="tooltip"
+      }
     >
-      <div
-        className="txt-s wmax120"
-      >
-        Contact us for access to this feature.
-      </div>
-    </div>
+      <use
+        xlinkHref="#icon-contact"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+    <span
+      style={
+        Object {
+          "border": 0,
+          "clip": "rect(0, 0, 0, 0)",
+          "height": 1,
+          "margin": -1,
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "absolute",
+          "whiteSpace": "nowrap",
+          "width": 1,
+          "wordWrap": "normal",
+        }
+      }
+    >
+      contact
+    </span>
   </div>
   <div
-    className="inline-block"
+    className="txt-bold round inline-block cursor-default bg-red-light color-red-dark border--red txt-xs"
+    data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
-    onKeyDown={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={Object {}}
   >
-    <div
-      aria-describedby="tooltip-16"
-      className="txt-bold round inline-block cursor-default bg-red-light color-red-dark border--red txt-xs"
-    >
-      <svg
-        className="events-none icon inline-block align-t"
-        focusable="false"
-        role="presentation"
-        style={
-          Object {
-            "height": 18,
-            "width": 18,
-          }
+    <svg
+      aria-hidden="true"
+      className="events-none icon inline-block align-t"
+      data-testid="icon-contact"
+      focusable="false"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
         }
-      >
-        <use
-          xlinkHref="#icon-contact"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        />
-      </svg>
-    </div>
-    <div
-      className="hide-visually"
-      id="tooltip-16"
-      role="tooltip"
+      }
     >
-      <div
-        className="txt-s wmax120"
-      >
-        Contact us for access to this feature.
-      </div>
-    </div>
+      <use
+        xlinkHref="#icon-contact"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+    <span
+      style={
+        Object {
+          "border": 0,
+          "clip": "rect(0, 0, 0, 0)",
+          "height": 1,
+          "margin": -1,
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "absolute",
+          "whiteSpace": "nowrap",
+          "width": 1,
+          "wordWrap": "normal",
+        }
+      }
+    >
+      contact
+    </span>
   </div>
 </div>
 `;
@@ -152,9 +142,10 @@ exports[`themes Default renders as expected 1`] = `
       }
     >
       <svg
+        aria-hidden="true"
         className="events-none icon"
+        data-testid="icon-book"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 40,
@@ -167,6 +158,24 @@ exports[`themes Default renders as expected 1`] = `
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        book
+      </span>
     </div>
   </div>
   <div
@@ -200,9 +209,10 @@ exports[`themes beta renders as expected 1`] = `
         }
       >
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-lightning"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 40,
@@ -215,6 +225,24 @@ exports[`themes beta renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          lightning
+        </span>
       </div>
     </div>
     <div
@@ -229,134 +257,124 @@ exports[`themes beta renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="inline-block"
+    className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-s border px6"
+    data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
-    onKeyDown={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={Object {}}
   >
-    <div
-      aria-describedby="tooltip-1"
-      className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-s border px6"
-    >
-      Beta
-    </div>
-    <div
-      className="hide-visually"
-      id="tooltip-1"
-      role="tooltip"
-    >
-      <div
-        className="txt-s wmax120"
-      >
-        This feature is in public beta and is subject to changes.
-      </div>
-    </div>
+    Beta
   </div>
   <div
-    className="inline-block"
+    className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs px6"
+    data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
-    onKeyDown={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={Object {}}
   >
-    <div
-      aria-describedby="tooltip-2"
-      className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs px6"
-    >
-      Beta
-    </div>
-    <div
-      className="hide-visually"
-      id="tooltip-2"
-      role="tooltip"
-    >
-      <div
-        className="txt-s wmax120"
-      >
-        This feature is in public beta and is subject to changes.
-      </div>
-    </div>
+    Beta
   </div>
   <div
-    className="inline-block"
+    className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-s border"
+    data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
-    onKeyDown={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={Object {}}
   >
-    <div
-      aria-describedby="tooltip-3"
-      className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-s border"
-    >
-      <svg
-        className="events-none icon inline-block align-t"
-        focusable="false"
-        role="presentation"
-        style={
-          Object {
-            "height": 18,
-            "width": 18,
-          }
+    <svg
+      aria-hidden="true"
+      className="events-none icon inline-block align-t"
+      data-testid="icon-lightning"
+      focusable="false"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
         }
-      >
-        <use
-          xlinkHref="#icon-lightning"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        />
-      </svg>
-    </div>
-    <div
-      className="hide-visually"
-      id="tooltip-3"
-      role="tooltip"
+      }
     >
-      <div
-        className="txt-s wmax120"
-      >
-        This feature is in public beta and is subject to changes.
-      </div>
-    </div>
+      <use
+        xlinkHref="#icon-lightning"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+    <span
+      style={
+        Object {
+          "border": 0,
+          "clip": "rect(0, 0, 0, 0)",
+          "height": 1,
+          "margin": -1,
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "absolute",
+          "whiteSpace": "nowrap",
+          "width": 1,
+          "wordWrap": "normal",
+        }
+      }
+    >
+      lightning
+    </span>
   </div>
   <div
-    className="inline-block"
+    className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs"
+    data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
-    onKeyDown={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={Object {}}
   >
-    <div
-      aria-describedby="tooltip-4"
-      className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs"
-    >
-      <svg
-        className="events-none icon inline-block align-t"
-        focusable="false"
-        role="presentation"
-        style={
-          Object {
-            "height": 18,
-            "width": 18,
-          }
+    <svg
+      aria-hidden="true"
+      className="events-none icon inline-block align-t"
+      data-testid="icon-lightning"
+      focusable="false"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
         }
-      >
-        <use
-          xlinkHref="#icon-lightning"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        />
-      </svg>
-    </div>
-    <div
-      className="hide-visually"
-      id="tooltip-4"
-      role="tooltip"
+      }
     >
-      <div
-        className="txt-s wmax120"
-      >
-        This feature is in public beta and is subject to changes.
-      </div>
-    </div>
+      <use
+        xlinkHref="#icon-lightning"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+    <span
+      style={
+        Object {
+          "border": 0,
+          "clip": "rect(0, 0, 0, 0)",
+          "height": 1,
+          "margin": -1,
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "absolute",
+          "whiteSpace": "nowrap",
+          "width": 1,
+          "wordWrap": "normal",
+        }
+      }
+    >
+      lightning
+    </span>
   </div>
 </div>
 `;
@@ -378,9 +396,10 @@ exports[`themes download renders as expected 1`] = `
       }
     >
       <svg
+        aria-hidden="true"
         className="events-none icon"
+        data-testid="icon-arrow-down"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 40,
@@ -393,6 +412,24 @@ exports[`themes download renders as expected 1`] = `
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        arrow-down
+      </span>
     </div>
   </div>
   <div
@@ -425,9 +462,10 @@ exports[`themes error renders as expected 1`] = `
       }
     >
       <svg
+        aria-hidden="true"
         className="events-none icon"
+        data-testid="icon-alert"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 40,
@@ -440,6 +478,24 @@ exports[`themes error renders as expected 1`] = `
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        alert
+      </span>
     </div>
   </div>
   <div
@@ -458,134 +514,124 @@ exports[`themes error renders as expected 1`] = `
 exports[`themes fundamentals renders as expected 1`] = `
 <div>
   <div
-    className="inline-block"
+    className="txt-bold round inline-block cursor-default bg-pink-faint color-pink-dark border--pink-dark txt-s border px6"
+    data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
-    onKeyDown={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={Object {}}
   >
-    <div
-      aria-describedby="tooltip-9"
-      className="txt-bold round inline-block cursor-default bg-pink-faint color-pink-dark border--pink-dark txt-s border px6"
-    >
-      Fundamentals
-    </div>
-    <div
-      className="hide-visually"
-      id="tooltip-9"
-      role="tooltip"
-    >
-      <div
-        className="txt-s wmax120"
-      >
-        The concepts described here are fundamental to using this product.
-      </div>
-    </div>
+    Fundamentals
   </div>
   <div
-    className="inline-block"
+    className="txt-bold round inline-block cursor-default bg-pink-faint color-pink-dark border--pink-dark txt-xs px6"
+    data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
-    onKeyDown={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={Object {}}
   >
-    <div
-      aria-describedby="tooltip-10"
-      className="txt-bold round inline-block cursor-default bg-pink-faint color-pink-dark border--pink-dark txt-xs px6"
-    >
-      Fundamentals
-    </div>
-    <div
-      className="hide-visually"
-      id="tooltip-10"
-      role="tooltip"
-    >
-      <div
-        className="txt-s wmax120"
-      >
-        The concepts described here are fundamental to using this product.
-      </div>
-    </div>
+    Fundamentals
   </div>
   <div
-    className="inline-block"
+    className="txt-bold round inline-block cursor-default bg-pink-faint color-pink-dark border--pink-dark txt-s border"
+    data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
-    onKeyDown={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={Object {}}
   >
-    <div
-      aria-describedby="tooltip-11"
-      className="txt-bold round inline-block cursor-default bg-pink-faint color-pink-dark border--pink-dark txt-s border"
-    >
-      <svg
-        className="events-none icon inline-block align-t"
-        focusable="false"
-        role="presentation"
-        style={
-          Object {
-            "height": 18,
-            "width": 18,
-          }
+    <svg
+      aria-hidden="true"
+      className="events-none icon inline-block align-t"
+      data-testid="icon-bookmark"
+      focusable="false"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
         }
-      >
-        <use
-          xlinkHref="#icon-bookmark"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        />
-      </svg>
-    </div>
-    <div
-      className="hide-visually"
-      id="tooltip-11"
-      role="tooltip"
+      }
     >
-      <div
-        className="txt-s wmax120"
-      >
-        The concepts described here are fundamental to using this product.
-      </div>
-    </div>
+      <use
+        xlinkHref="#icon-bookmark"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+    <span
+      style={
+        Object {
+          "border": 0,
+          "clip": "rect(0, 0, 0, 0)",
+          "height": 1,
+          "margin": -1,
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "absolute",
+          "whiteSpace": "nowrap",
+          "width": 1,
+          "wordWrap": "normal",
+        }
+      }
+    >
+      bookmark
+    </span>
   </div>
   <div
-    className="inline-block"
+    className="txt-bold round inline-block cursor-default bg-pink-faint color-pink-dark border--pink-dark txt-xs"
+    data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
-    onKeyDown={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={Object {}}
   >
-    <div
-      aria-describedby="tooltip-12"
-      className="txt-bold round inline-block cursor-default bg-pink-faint color-pink-dark border--pink-dark txt-xs"
-    >
-      <svg
-        className="events-none icon inline-block align-t"
-        focusable="false"
-        role="presentation"
-        style={
-          Object {
-            "height": 18,
-            "width": 18,
-          }
+    <svg
+      aria-hidden="true"
+      className="events-none icon inline-block align-t"
+      data-testid="icon-bookmark"
+      focusable="false"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
         }
-      >
-        <use
-          xlinkHref="#icon-bookmark"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        />
-      </svg>
-    </div>
-    <div
-      className="hide-visually"
-      id="tooltip-12"
-      role="tooltip"
+      }
     >
-      <div
-        className="txt-s wmax120"
-      >
-        The concepts described here are fundamental to using this product.
-      </div>
-    </div>
+      <use
+        xlinkHref="#icon-bookmark"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+    <span
+      style={
+        Object {
+          "border": 0,
+          "clip": "rect(0, 0, 0, 0)",
+          "height": 1,
+          "margin": -1,
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "absolute",
+          "whiteSpace": "nowrap",
+          "width": 1,
+          "wordWrap": "normal",
+        }
+      }
+    >
+      bookmark
+    </span>
   </div>
 </div>
 `;
@@ -608,9 +654,10 @@ exports[`themes legacy or warning renders as expected 1`] = `
         }
       >
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-alert"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 40,
@@ -623,6 +670,24 @@ exports[`themes legacy or warning renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          alert
+        </span>
       </div>
     </div>
     <div
@@ -637,134 +702,124 @@ exports[`themes legacy or warning renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="inline-block"
+    className="txt-bold round inline-block cursor-default bg-orange-faint color-orange-dark border--orange-dark txt-s border px6"
+    data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
-    onKeyDown={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={Object {}}
   >
-    <div
-      aria-describedby="tooltip-5"
-      className="txt-bold round inline-block cursor-default bg-orange-faint color-orange-dark border--orange-dark txt-s border px6"
-    >
-      Legacy
-    </div>
-    <div
-      className="hide-visually"
-      id="tooltip-5"
-      role="tooltip"
-    >
-      <div
-        className="txt-s wmax120"
-      >
-        This feature is no longer in active development.
-      </div>
-    </div>
+    Legacy
   </div>
   <div
-    className="inline-block"
+    className="txt-bold round inline-block cursor-default bg-orange-faint color-orange-dark border--orange-dark txt-xs px6"
+    data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
-    onKeyDown={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={Object {}}
   >
-    <div
-      aria-describedby="tooltip-6"
-      className="txt-bold round inline-block cursor-default bg-orange-faint color-orange-dark border--orange-dark txt-xs px6"
-    >
-      Legacy
-    </div>
-    <div
-      className="hide-visually"
-      id="tooltip-6"
-      role="tooltip"
-    >
-      <div
-        className="txt-s wmax120"
-      >
-        This feature is no longer in active development.
-      </div>
-    </div>
+    Legacy
   </div>
   <div
-    className="inline-block"
+    className="txt-bold round inline-block cursor-default bg-orange-faint color-orange-dark border--orange-dark txt-s border"
+    data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
-    onKeyDown={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={Object {}}
   >
-    <div
-      aria-describedby="tooltip-7"
-      className="txt-bold round inline-block cursor-default bg-orange-faint color-orange-dark border--orange-dark txt-s border"
-    >
-      <svg
-        className="events-none icon inline-block align-t"
-        focusable="false"
-        role="presentation"
-        style={
-          Object {
-            "height": 18,
-            "width": 18,
-          }
+    <svg
+      aria-hidden="true"
+      className="events-none icon inline-block align-t"
+      data-testid="icon-alert"
+      focusable="false"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
         }
-      >
-        <use
-          xlinkHref="#icon-alert"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        />
-      </svg>
-    </div>
-    <div
-      className="hide-visually"
-      id="tooltip-7"
-      role="tooltip"
+      }
     >
-      <div
-        className="txt-s wmax120"
-      >
-        This feature is no longer in active development.
-      </div>
-    </div>
+      <use
+        xlinkHref="#icon-alert"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+    <span
+      style={
+        Object {
+          "border": 0,
+          "clip": "rect(0, 0, 0, 0)",
+          "height": 1,
+          "margin": -1,
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "absolute",
+          "whiteSpace": "nowrap",
+          "width": 1,
+          "wordWrap": "normal",
+        }
+      }
+    >
+      alert
+    </span>
   </div>
   <div
-    className="inline-block"
+    className="txt-bold round inline-block cursor-default bg-orange-faint color-orange-dark border--orange-dark txt-xs"
+    data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
-    onKeyDown={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={Object {}}
   >
-    <div
-      aria-describedby="tooltip-8"
-      className="txt-bold round inline-block cursor-default bg-orange-faint color-orange-dark border--orange-dark txt-xs"
-    >
-      <svg
-        className="events-none icon inline-block align-t"
-        focusable="false"
-        role="presentation"
-        style={
-          Object {
-            "height": 18,
-            "width": 18,
-          }
+    <svg
+      aria-hidden="true"
+      className="events-none icon inline-block align-t"
+      data-testid="icon-alert"
+      focusable="false"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
         }
-      >
-        <use
-          xlinkHref="#icon-alert"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        />
-      </svg>
-    </div>
-    <div
-      className="hide-visually"
-      id="tooltip-8"
-      role="tooltip"
+      }
     >
-      <div
-        className="txt-s wmax120"
-      >
-        This feature is no longer in active development.
-      </div>
-    </div>
+      <use
+        xlinkHref="#icon-alert"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+    <span
+      style={
+        Object {
+          "border": 0,
+          "clip": "rect(0, 0, 0, 0)",
+          "height": 1,
+          "margin": -1,
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "absolute",
+          "whiteSpace": "nowrap",
+          "width": 1,
+          "wordWrap": "normal",
+        }
+      }
+    >
+      alert
+    </span>
   </div>
 </div>
 `;

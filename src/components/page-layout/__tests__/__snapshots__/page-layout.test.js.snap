@@ -108,9 +108,10 @@ Array [
                       value="Guides"
                     >
                       <svg
+                        aria-hidden="true"
                         className="events-none icon inline-block align-t"
+                        data-testid="icon-chevron-down"
                         focusable="false"
-                        role="presentation"
                         style={
                           Object {
                             "height": 18,
@@ -123,6 +124,24 @@ Array [
                           xmlnsXlink="http://www.w3.org/1999/xlink"
                         />
                       </svg>
+                      <span
+                        style={
+                          Object {
+                            "border": 0,
+                            "clip": "rect(0, 0, 0, 0)",
+                            "height": 1,
+                            "margin": -1,
+                            "overflow": "hidden",
+                            "padding": 0,
+                            "position": "absolute",
+                            "whiteSpace": "nowrap",
+                            "width": 1,
+                            "wordWrap": "normal",
+                          }
+                        }
+                      >
+                        chevron-down
+                      </span>
                     </button>
                   </div>
                 </li>
@@ -192,9 +211,10 @@ Array [
               className="color-gray-light inline-block-mm none px6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon inline-block align-t"
+                data-testid="icon-chevron-right"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -207,6 +227,24 @@ Array [
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                chevron-right
+              </span>
             </span>
           </span>
           <span
@@ -216,9 +254,10 @@ Array [
               className="color-gray-light inline-block none-mm pr6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon inline-block align-t"
+                data-testid="icon-arrow-left"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -231,6 +270,24 @@ Array [
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                arrow-left
+              </span>
             </span>
             <a
               className="link"
@@ -242,9 +299,10 @@ Array [
               className="color-gray-light inline-block-mm none px6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon inline-block align-t"
+                data-testid="icon-chevron-right"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -257,6 +315,24 @@ Array [
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                chevron-right
+              </span>
             </span>
           </span>
           <span
@@ -312,7 +388,10 @@ Array [
                         <div>
                           <label
                             className="inline-block txt-s txt-bold color-darken75"
-                            htmlFor="search"
+                            id="radix-0"
+                            onClick={[Function]}
+                            onMouseDown={[Function]}
+                            role="label"
                           >
                             Search
                              
@@ -321,7 +400,7 @@ Array [
                         <input
                           aria-required={true}
                           className="input input--s relative wmax180"
-                          data-test="search-input"
+                          data-testid="search-input"
                           id="search"
                           name="search"
                           onChange={[Function]}
@@ -348,7 +427,10 @@ Array [
                         <div>
                           <label
                             className="inline-block txt-s txt-bold color-darken75 w70"
-                            htmlFor="topic"
+                            id="radix-1"
+                            onClick={[Function]}
+                            onMouseDown={[Function]}
+                            role="label"
                           >
                             Topics
                              
@@ -360,7 +442,7 @@ Array [
                           <select
                             aria-required={true}
                             className="select select select--s py3 pl6 select--stroke"
-                            data-test="topic-select"
+                            data-testid="topic-select"
                             disabled={false}
                             id="topic"
                             onChange={[Function]}
@@ -436,9 +518,10 @@ Array [
                           className="ml6"
                         >
                           <svg
+                            aria-hidden="true"
                             className="events-none icon inline-block align-t"
+                            data-testid="icon-arrow-right"
                             focusable="false"
-                            role="presentation"
                             style={
                               Object {
                                 "height": 18,
@@ -451,6 +534,24 @@ Array [
                               xmlnsXlink="http://www.w3.org/1999/xlink"
                             />
                           </svg>
+                          <span
+                            style={
+                              Object {
+                                "border": 0,
+                                "clip": "rect(0, 0, 0, 0)",
+                                "height": 1,
+                                "margin": -1,
+                                "overflow": "hidden",
+                                "padding": 0,
+                                "position": "absolute",
+                                "whiteSpace": "nowrap",
+                                "width": 1,
+                                "wordWrap": "normal",
+                              }
+                            }
+                          >
+                            arrow-right
+                          </span>
                         </span>
                       </span>
                     </div>
@@ -490,9 +591,10 @@ Array [
                               className="mr6"
                             >
                               <svg
+                                aria-hidden="true"
                                 className="events-none icon"
+                                data-testid="icon-code"
                                 focusable="false"
-                                role="presentation"
                                 style={
                                   Object {
                                     "height": 18,
@@ -505,6 +607,24 @@ Array [
                                   xmlnsXlink="http://www.w3.org/1999/xlink"
                                 />
                               </svg>
+                              <span
+                                style={
+                                  Object {
+                                    "border": 0,
+                                    "clip": "rect(0, 0, 0, 0)",
+                                    "height": 1,
+                                    "margin": -1,
+                                    "overflow": "hidden",
+                                    "padding": 0,
+                                    "position": "absolute",
+                                    "whiteSpace": "nowrap",
+                                    "width": 1,
+                                    "wordWrap": "normal",
+                                  }
+                                }
+                              >
+                                code
+                              </span>
                             </span>
                             <span>
                               JavaScript
@@ -548,9 +668,10 @@ Array [
                               className="mr6"
                             >
                               <svg
+                                aria-hidden="true"
                                 className="events-none icon"
+                                data-testid="icon-code"
                                 focusable="false"
-                                role="presentation"
                                 style={
                                   Object {
                                     "height": 18,
@@ -563,6 +684,24 @@ Array [
                                   xmlnsXlink="http://www.w3.org/1999/xlink"
                                 />
                               </svg>
+                              <span
+                                style={
+                                  Object {
+                                    "border": 0,
+                                    "clip": "rect(0, 0, 0, 0)",
+                                    "height": 1,
+                                    "margin": -1,
+                                    "overflow": "hidden",
+                                    "padding": 0,
+                                    "position": "absolute",
+                                    "whiteSpace": "nowrap",
+                                    "width": 1,
+                                    "wordWrap": "normal",
+                                  }
+                                }
+                              >
+                                code
+                              </span>
                             </span>
                             <span>
                               JavaScript
@@ -606,9 +745,10 @@ Array [
                               className="mr6"
                             >
                               <svg
+                                aria-hidden="true"
                                 className="events-none icon"
+                                data-testid="icon-code"
                                 focusable="false"
-                                role="presentation"
                                 style={
                                   Object {
                                     "height": 18,
@@ -621,6 +761,24 @@ Array [
                                   xmlnsXlink="http://www.w3.org/1999/xlink"
                                 />
                               </svg>
+                              <span
+                                style={
+                                  Object {
+                                    "border": 0,
+                                    "clip": "rect(0, 0, 0, 0)",
+                                    "height": 1,
+                                    "margin": -1,
+                                    "overflow": "hidden",
+                                    "padding": 0,
+                                    "position": "absolute",
+                                    "whiteSpace": "nowrap",
+                                    "width": 1,
+                                    "wordWrap": "normal",
+                                  }
+                                }
+                              >
+                                code
+                              </span>
                             </span>
                             <span>
                               JavaScript
@@ -655,38 +813,53 @@ Array [
     <div
       className="mx24 my24 z5"
     >
-      <div
-        className="inline-block"
+      <button
+        ariaLabel="Back to top"
+        className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
+        data-state="closed"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
+        onPointerDown={[Function]}
+        onPointerLeave={[Function]}
+        onPointerMove={[Function]}
       >
-        <button
-          aria-label="Back to top"
-          className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <svg
-            className="events-none icon"
-            focusable="false"
-            role="presentation"
-            style={
-              Object {
-                "height": 30,
-                "width": 30,
-              }
+        <svg
+          aria-hidden="true"
+          className="events-none icon"
+          data-testid="icon-arrow-up"
+          focusable="false"
+          style={
+            Object {
+              "height": 30,
+              "width": 30,
             }
-          >
-            <use
-              xlinkHref="#icon-arrow-up"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-            />
-          </svg>
-        </button>
-      </div>
+          }
+        >
+          <use
+            xlinkHref="#icon-arrow-up"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          arrow-up
+        </span>
+      </button>
     </div>
   </div>,
 ]
@@ -800,9 +973,10 @@ Array [
                       value="Guides"
                     >
                       <svg
+                        aria-hidden="true"
                         className="events-none icon inline-block align-t"
+                        data-testid="icon-chevron-down"
                         focusable="false"
-                        role="presentation"
                         style={
                           Object {
                             "height": 18,
@@ -815,6 +989,24 @@ Array [
                           xmlnsXlink="http://www.w3.org/1999/xlink"
                         />
                       </svg>
+                      <span
+                        style={
+                          Object {
+                            "border": 0,
+                            "clip": "rect(0, 0, 0, 0)",
+                            "height": 1,
+                            "margin": -1,
+                            "overflow": "hidden",
+                            "padding": 0,
+                            "position": "absolute",
+                            "whiteSpace": "nowrap",
+                            "width": 1,
+                            "wordWrap": "normal",
+                          }
+                        }
+                      >
+                        chevron-down
+                      </span>
                     </button>
                   </div>
                 </li>
@@ -884,9 +1076,10 @@ Array [
               className="color-gray-light inline-block-mm none px6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon inline-block align-t"
+                data-testid="icon-chevron-right"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -899,6 +1092,24 @@ Array [
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                chevron-right
+              </span>
             </span>
           </span>
           <span
@@ -914,9 +1125,10 @@ Array [
               className="color-gray-light inline-block-mm none px6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon inline-block align-t"
+                data-testid="icon-chevron-right"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -929,6 +1141,24 @@ Array [
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                chevron-right
+              </span>
             </span>
           </span>
           <span
@@ -938,9 +1168,10 @@ Array [
               className="color-gray-light inline-block none-mm pr6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon inline-block align-t"
+                data-testid="icon-arrow-left"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -953,6 +1184,24 @@ Array [
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                arrow-left
+              </span>
             </span>
             <a
               className="link"
@@ -964,9 +1213,10 @@ Array [
               className="color-gray-light inline-block-mm none px6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon inline-block align-t"
+                data-testid="icon-chevron-right"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -979,6 +1229,24 @@ Array [
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                chevron-right
+              </span>
             </span>
           </span>
           <span
@@ -1057,9 +1325,10 @@ Array [
                           className="ml6"
                         >
                           <svg
+                            aria-hidden="true"
                             className="events-none icon inline-block align-t"
+                            data-testid="icon-arrow-right"
                             focusable="false"
-                            role="presentation"
                             style={
                               Object {
                                 "height": 18,
@@ -1072,6 +1341,24 @@ Array [
                               xmlnsXlink="http://www.w3.org/1999/xlink"
                             />
                           </svg>
+                          <span
+                            style={
+                              Object {
+                                "border": 0,
+                                "clip": "rect(0, 0, 0, 0)",
+                                "height": 1,
+                                "margin": -1,
+                                "overflow": "hidden",
+                                "padding": 0,
+                                "position": "absolute",
+                                "whiteSpace": "nowrap",
+                                "width": 1,
+                                "wordWrap": "normal",
+                              }
+                            }
+                          >
+                            arrow-right
+                          </span>
                         </span>
                       </span>
                     </div>
@@ -1139,9 +1426,10 @@ Array [
                         className="ml6"
                       >
                         <svg
+                          aria-hidden="true"
                           className="events-none icon inline-block align-t"
+                          data-testid="icon-arrow-right"
                           focusable="false"
-                          role="presentation"
                           style={
                             Object {
                               "height": 18,
@@ -1154,6 +1442,24 @@ Array [
                             xmlnsXlink="http://www.w3.org/1999/xlink"
                           />
                         </svg>
+                        <span
+                          style={
+                            Object {
+                              "border": 0,
+                              "clip": "rect(0, 0, 0, 0)",
+                              "height": 1,
+                              "margin": -1,
+                              "overflow": "hidden",
+                              "padding": 0,
+                              "position": "absolute",
+                              "whiteSpace": "nowrap",
+                              "width": 1,
+                              "wordWrap": "normal",
+                            }
+                          }
+                        >
+                          arrow-right
+                        </span>
                       </span>
                     </span>
                   </div>
@@ -1178,38 +1484,53 @@ Array [
     <div
       className="mx24 my24 z5"
     >
-      <div
-        className="inline-block"
+      <button
+        ariaLabel="Back to top"
+        className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
+        data-state="closed"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
+        onPointerDown={[Function]}
+        onPointerLeave={[Function]}
+        onPointerMove={[Function]}
       >
-        <button
-          aria-label="Back to top"
-          className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <svg
-            className="events-none icon"
-            focusable="false"
-            role="presentation"
-            style={
-              Object {
-                "height": 30,
-                "width": 30,
-              }
+        <svg
+          aria-hidden="true"
+          className="events-none icon"
+          data-testid="icon-arrow-up"
+          focusable="false"
+          style={
+            Object {
+              "height": 30,
+              "width": 30,
             }
-          >
-            <use
-              xlinkHref="#icon-arrow-up"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-            />
-          </svg>
-        </button>
-      </div>
+          }
+        >
+          <use
+            xlinkHref="#icon-arrow-up"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          arrow-up
+        </span>
+      </button>
     </div>
   </div>,
 ]
@@ -1251,9 +1572,10 @@ Array [
               className="color-gray-light inline-block-mm none px6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon inline-block align-t"
+                data-testid="icon-chevron-right"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -1266,6 +1588,24 @@ Array [
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                chevron-right
+              </span>
             </span>
           </span>
           <span
@@ -1275,9 +1615,10 @@ Array [
               className="color-gray-light inline-block none-mm pr6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon inline-block align-t"
+                data-testid="icon-arrow-left"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -1290,6 +1631,24 @@ Array [
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                arrow-left
+              </span>
             </span>
             <a
               className="link"
@@ -1301,9 +1660,10 @@ Array [
               className="color-gray-light inline-block-mm none px6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon inline-block align-t"
+                data-testid="icon-chevron-right"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -1316,6 +1676,24 @@ Array [
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                chevron-right
+              </span>
             </span>
           </span>
           <span
@@ -1388,9 +1766,10 @@ Array [
                         className="ml6"
                       >
                         <svg
+                          aria-hidden="true"
                           className="events-none icon inline-block align-t"
+                          data-testid="icon-arrow-right"
                           focusable="false"
-                          role="presentation"
                           style={
                             Object {
                               "height": 18,
@@ -1403,6 +1782,24 @@ Array [
                             xmlnsXlink="http://www.w3.org/1999/xlink"
                           />
                         </svg>
+                        <span
+                          style={
+                            Object {
+                              "border": 0,
+                              "clip": "rect(0, 0, 0, 0)",
+                              "height": 1,
+                              "margin": -1,
+                              "overflow": "hidden",
+                              "padding": 0,
+                              "position": "absolute",
+                              "whiteSpace": "nowrap",
+                              "width": 1,
+                              "wordWrap": "normal",
+                            }
+                          }
+                        >
+                          arrow-right
+                        </span>
                       </span>
                     </span>
                   </div>
@@ -1427,38 +1824,53 @@ Array [
     <div
       className="mx24 my24 z5"
     >
-      <div
-        className="inline-block"
+      <button
+        ariaLabel="Back to top"
+        className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
+        data-state="closed"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
+        onPointerDown={[Function]}
+        onPointerLeave={[Function]}
+        onPointerMove={[Function]}
       >
-        <button
-          aria-label="Back to top"
-          className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <svg
-            className="events-none icon"
-            focusable="false"
-            role="presentation"
-            style={
-              Object {
-                "height": 30,
-                "width": 30,
-              }
+        <svg
+          aria-hidden="true"
+          className="events-none icon"
+          data-testid="icon-arrow-up"
+          focusable="false"
+          style={
+            Object {
+              "height": 30,
+              "width": 30,
             }
-          >
-            <use
-              xlinkHref="#icon-arrow-up"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-            />
-          </svg>
-        </button>
-      </div>
+          }
+        >
+          <use
+            xlinkHref="#icon-arrow-up"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          arrow-up
+        </span>
+      </button>
     </div>
   </div>,
 ]
@@ -1572,9 +1984,10 @@ Array [
                       value="Guides"
                     >
                       <svg
+                        aria-hidden="true"
                         className="events-none icon inline-block align-t"
+                        data-testid="icon-chevron-down"
                         focusable="false"
-                        role="presentation"
                         style={
                           Object {
                             "height": 18,
@@ -1587,6 +2000,24 @@ Array [
                           xmlnsXlink="http://www.w3.org/1999/xlink"
                         />
                       </svg>
+                      <span
+                        style={
+                          Object {
+                            "border": 0,
+                            "clip": "rect(0, 0, 0, 0)",
+                            "height": 1,
+                            "margin": -1,
+                            "overflow": "hidden",
+                            "padding": 0,
+                            "position": "absolute",
+                            "whiteSpace": "nowrap",
+                            "width": 1,
+                            "wordWrap": "normal",
+                          }
+                        }
+                      >
+                        chevron-down
+                      </span>
                     </button>
                   </div>
                 </li>
@@ -1656,9 +2087,10 @@ Array [
               className="color-gray-light inline-block-mm none px6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon inline-block align-t"
+                data-testid="icon-chevron-right"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -1671,6 +2103,24 @@ Array [
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                chevron-right
+              </span>
             </span>
           </span>
           <span
@@ -1686,9 +2136,10 @@ Array [
               className="color-gray-light inline-block-mm none px6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon inline-block align-t"
+                data-testid="icon-chevron-right"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -1701,6 +2152,24 @@ Array [
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                chevron-right
+              </span>
             </span>
           </span>
           <span
@@ -1716,9 +2185,10 @@ Array [
               className="color-gray-light inline-block-mm none px6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon inline-block align-t"
+                data-testid="icon-chevron-right"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -1731,6 +2201,24 @@ Array [
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                chevron-right
+              </span>
             </span>
           </span>
           <span
@@ -1740,9 +2228,10 @@ Array [
               className="color-gray-light inline-block none-mm pr6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon inline-block align-t"
+                data-testid="icon-arrow-left"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -1755,6 +2244,24 @@ Array [
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                arrow-left
+              </span>
             </span>
             <a
               className="link"
@@ -1766,9 +2273,10 @@ Array [
               className="color-gray-light inline-block-mm none px6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon inline-block align-t"
+                data-testid="icon-chevron-right"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -1781,6 +2289,24 @@ Array [
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                chevron-right
+              </span>
             </span>
           </span>
           <span
@@ -1904,9 +2430,10 @@ Array [
                           className="ml6"
                         >
                           <svg
+                            aria-hidden="true"
                             className="events-none icon inline-block align-t"
+                            data-testid="icon-arrow-right"
                             focusable="false"
-                            role="presentation"
                             style={
                               Object {
                                 "height": 18,
@@ -1919,6 +2446,24 @@ Array [
                               xmlnsXlink="http://www.w3.org/1999/xlink"
                             />
                           </svg>
+                          <span
+                            style={
+                              Object {
+                                "border": 0,
+                                "clip": "rect(0, 0, 0, 0)",
+                                "height": 1,
+                                "margin": -1,
+                                "overflow": "hidden",
+                                "padding": 0,
+                                "position": "absolute",
+                                "whiteSpace": "nowrap",
+                                "width": 1,
+                                "wordWrap": "normal",
+                              }
+                            }
+                          >
+                            arrow-right
+                          </span>
                         </span>
                       </span>
                     </div>
@@ -2011,9 +2556,10 @@ Array [
                       }
                     >
                       <svg
+                        aria-hidden="true"
                         className="events-none icon"
+                        data-testid="icon-chevron-right"
                         focusable="false"
-                        role="presentation"
                         style={
                           Object {
                             "height": 30,
@@ -2026,6 +2572,24 @@ Array [
                           xmlnsXlink="http://www.w3.org/1999/xlink"
                         />
                       </svg>
+                      <span
+                        style={
+                          Object {
+                            "border": 0,
+                            "clip": "rect(0, 0, 0, 0)",
+                            "height": 1,
+                            "margin": -1,
+                            "overflow": "hidden",
+                            "padding": 0,
+                            "position": "absolute",
+                            "whiteSpace": "nowrap",
+                            "width": 1,
+                            "wordWrap": "normal",
+                          }
+                        }
+                      >
+                        chevron-right
+                      </span>
                     </div>
                   </div>
                 </a>
@@ -2073,9 +2637,10 @@ Array [
                         className="ml6"
                       >
                         <svg
+                          aria-hidden="true"
                           className="events-none icon inline-block align-t"
+                          data-testid="icon-arrow-right"
                           focusable="false"
-                          role="presentation"
                           style={
                             Object {
                               "height": 18,
@@ -2088,6 +2653,24 @@ Array [
                             xmlnsXlink="http://www.w3.org/1999/xlink"
                           />
                         </svg>
+                        <span
+                          style={
+                            Object {
+                              "border": 0,
+                              "clip": "rect(0, 0, 0, 0)",
+                              "height": 1,
+                              "margin": -1,
+                              "overflow": "hidden",
+                              "padding": 0,
+                              "position": "absolute",
+                              "whiteSpace": "nowrap",
+                              "width": 1,
+                              "wordWrap": "normal",
+                            }
+                          }
+                        >
+                          arrow-right
+                        </span>
                       </span>
                     </span>
                   </div>
@@ -2112,38 +2695,53 @@ Array [
     <div
       className="mx24 my24 z5"
     >
-      <div
-        className="inline-block"
+      <button
+        ariaLabel="Back to top"
+        className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
+        data-state="closed"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
+        onPointerDown={[Function]}
+        onPointerLeave={[Function]}
+        onPointerMove={[Function]}
       >
-        <button
-          aria-label="Back to top"
-          className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <svg
-            className="events-none icon"
-            focusable="false"
-            role="presentation"
-            style={
-              Object {
-                "height": 30,
-                "width": 30,
-              }
+        <svg
+          aria-hidden="true"
+          className="events-none icon"
+          data-testid="icon-arrow-up"
+          focusable="false"
+          style={
+            Object {
+              "height": 30,
+              "width": 30,
             }
-          >
-            <use
-              xlinkHref="#icon-arrow-up"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-            />
-          </svg>
-        </button>
-      </div>
+          }
+        >
+          <use
+            xlinkHref="#icon-arrow-up"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          arrow-up
+        </span>
+      </button>
     </div>
   </div>,
 ]
@@ -2257,9 +2855,10 @@ Array [
                       value="Guides"
                     >
                       <svg
+                        aria-hidden="true"
                         className="events-none icon inline-block align-t"
+                        data-testid="icon-chevron-up"
                         focusable="false"
-                        role="presentation"
                         style={
                           Object {
                             "height": 18,
@@ -2272,6 +2871,24 @@ Array [
                           xmlnsXlink="http://www.w3.org/1999/xlink"
                         />
                       </svg>
+                      <span
+                        style={
+                          Object {
+                            "border": 0,
+                            "clip": "rect(0, 0, 0, 0)",
+                            "height": 1,
+                            "margin": -1,
+                            "overflow": "hidden",
+                            "padding": 0,
+                            "position": "absolute",
+                            "whiteSpace": "nowrap",
+                            "width": 1,
+                            "wordWrap": "normal",
+                          }
+                        }
+                      >
+                        chevron-up
+                      </span>
                     </button>
                   </div>
                   <ul
@@ -2404,9 +3021,10 @@ Array [
               className="color-gray-light inline-block-mm none px6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon inline-block align-t"
+                data-testid="icon-chevron-right"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -2419,6 +3037,24 @@ Array [
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                chevron-right
+              </span>
             </span>
           </span>
           <span
@@ -2434,9 +3070,10 @@ Array [
               className="color-gray-light inline-block-mm none px6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon inline-block align-t"
+                data-testid="icon-chevron-right"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -2449,6 +3086,24 @@ Array [
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                chevron-right
+              </span>
             </span>
           </span>
           <span
@@ -2458,9 +3113,10 @@ Array [
               className="color-gray-light inline-block none-mm pr6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon inline-block align-t"
+                data-testid="icon-arrow-left"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -2473,6 +3129,24 @@ Array [
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                arrow-left
+              </span>
             </span>
             <a
               className="link"
@@ -2484,9 +3158,10 @@ Array [
               className="color-gray-light inline-block-mm none px6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon inline-block align-t"
+                data-testid="icon-chevron-right"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -2499,6 +3174,24 @@ Array [
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                chevron-right
+              </span>
             </span>
           </span>
           <span
@@ -2577,9 +3270,10 @@ Array [
                           className="ml6"
                         >
                           <svg
+                            aria-hidden="true"
                             className="events-none icon inline-block align-t"
+                            data-testid="icon-arrow-right"
                             focusable="false"
-                            role="presentation"
                             style={
                               Object {
                                 "height": 18,
@@ -2592,6 +3286,24 @@ Array [
                               xmlnsXlink="http://www.w3.org/1999/xlink"
                             />
                           </svg>
+                          <span
+                            style={
+                              Object {
+                                "border": 0,
+                                "clip": "rect(0, 0, 0, 0)",
+                                "height": 1,
+                                "margin": -1,
+                                "overflow": "hidden",
+                                "padding": 0,
+                                "position": "absolute",
+                                "whiteSpace": "nowrap",
+                                "width": 1,
+                                "wordWrap": "normal",
+                              }
+                            }
+                          >
+                            arrow-right
+                          </span>
                         </span>
                       </span>
                     </div>
@@ -2730,9 +3442,10 @@ Array [
                         className="ml6"
                       >
                         <svg
+                          aria-hidden="true"
                           className="events-none icon inline-block align-t"
+                          data-testid="icon-arrow-right"
                           focusable="false"
-                          role="presentation"
                           style={
                             Object {
                               "height": 18,
@@ -2745,6 +3458,24 @@ Array [
                             xmlnsXlink="http://www.w3.org/1999/xlink"
                           />
                         </svg>
+                        <span
+                          style={
+                            Object {
+                              "border": 0,
+                              "clip": "rect(0, 0, 0, 0)",
+                              "height": 1,
+                              "margin": -1,
+                              "overflow": "hidden",
+                              "padding": 0,
+                              "position": "absolute",
+                              "whiteSpace": "nowrap",
+                              "width": 1,
+                              "wordWrap": "normal",
+                            }
+                          }
+                        >
+                          arrow-right
+                        </span>
                       </span>
                     </span>
                   </div>
@@ -2769,38 +3500,53 @@ Array [
     <div
       className="mx24 my24 z5"
     >
-      <div
-        className="inline-block"
+      <button
+        ariaLabel="Back to top"
+        className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
+        data-state="closed"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
+        onPointerDown={[Function]}
+        onPointerLeave={[Function]}
+        onPointerMove={[Function]}
       >
-        <button
-          aria-label="Back to top"
-          className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <svg
-            className="events-none icon"
-            focusable="false"
-            role="presentation"
-            style={
-              Object {
-                "height": 30,
-                "width": 30,
-              }
+        <svg
+          aria-hidden="true"
+          className="events-none icon"
+          data-testid="icon-arrow-up"
+          focusable="false"
+          style={
+            Object {
+              "height": 30,
+              "width": 30,
             }
-          >
-            <use
-              xlinkHref="#icon-arrow-up"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-            />
-          </svg>
-        </button>
-      </div>
+          }
+        >
+          <use
+            xlinkHref="#icon-arrow-up"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          arrow-up
+        </span>
+      </button>
     </div>
   </div>,
 ]
@@ -2848,29 +3594,17 @@ Array [
                   className="ml-neg3"
                 >
                   <div
-                    className="inline-block"
+                    className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs px6"
+                    data-state="closed"
                     onBlur={[Function]}
                     onClick={[Function]}
                     onFocus={[Function]}
-                    onKeyDown={[Function]}
+                    onPointerDown={[Function]}
+                    onPointerLeave={[Function]}
+                    onPointerMove={[Function]}
+                    style={Object {}}
                   >
-                    <div
-                      aria-describedby="tooltip-1"
-                      className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs px6"
-                    >
-                      Beta
-                    </div>
-                    <div
-                      className="hide-visually"
-                      id="tooltip-1"
-                      role="tooltip"
-                    >
-                      <div
-                        className="txt-s wmax120"
-                      >
-                        This feature is in public beta and is subject to changes.
-                      </div>
-                    </div>
+                    Beta
                   </div>
                 </div>
                 <a
@@ -2966,9 +3700,10 @@ Array [
               className="color-gray-light inline-block-mm none px6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon inline-block align-t"
+                data-testid="icon-chevron-right"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -2981,6 +3716,24 @@ Array [
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                chevron-right
+              </span>
             </span>
           </span>
           <span
@@ -2990,9 +3743,10 @@ Array [
               className="color-gray-light inline-block none-mm pr6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon inline-block align-t"
+                data-testid="icon-arrow-left"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -3005,6 +3759,24 @@ Array [
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                arrow-left
+              </span>
             </span>
             <a
               className="link"
@@ -3016,9 +3788,10 @@ Array [
               className="color-gray-light inline-block-mm none px6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon inline-block align-t"
+                data-testid="icon-chevron-right"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -3031,6 +3804,24 @@ Array [
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                chevron-right
+              </span>
             </span>
           </span>
           <span
@@ -3119,9 +3910,10 @@ Array [
                         className="ml6"
                       >
                         <svg
+                          aria-hidden="true"
                           className="events-none icon inline-block align-t"
+                          data-testid="icon-arrow-right"
                           focusable="false"
-                          role="presentation"
                           style={
                             Object {
                               "height": 18,
@@ -3134,6 +3926,24 @@ Array [
                             xmlnsXlink="http://www.w3.org/1999/xlink"
                           />
                         </svg>
+                        <span
+                          style={
+                            Object {
+                              "border": 0,
+                              "clip": "rect(0, 0, 0, 0)",
+                              "height": 1,
+                              "margin": -1,
+                              "overflow": "hidden",
+                              "padding": 0,
+                              "position": "absolute",
+                              "whiteSpace": "nowrap",
+                              "width": 1,
+                              "wordWrap": "normal",
+                            }
+                          }
+                        >
+                          arrow-right
+                        </span>
                       </span>
                     </span>
                   </div>
@@ -3158,38 +3968,53 @@ Array [
     <div
       className="mx24 my24 z5"
     >
-      <div
-        className="inline-block"
+      <button
+        ariaLabel="Back to top"
+        className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
+        data-state="closed"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
-        onKeyDown={[Function]}
+        onPointerDown={[Function]}
+        onPointerLeave={[Function]}
+        onPointerMove={[Function]}
       >
-        <button
-          aria-label="Back to top"
-          className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <svg
-            className="events-none icon"
-            focusable="false"
-            role="presentation"
-            style={
-              Object {
-                "height": 30,
-                "width": 30,
-              }
+        <svg
+          aria-hidden="true"
+          className="events-none icon"
+          data-testid="icon-arrow-up"
+          focusable="false"
+          style={
+            Object {
+              "height": 30,
+              "width": 30,
             }
-          >
-            <use
-              xlinkHref="#icon-arrow-up"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-            />
-          </svg>
-        </button>
-      </div>
+          }
+        >
+          <use
+            xlinkHref="#icon-arrow-up"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          arrow-up
+        </span>
+      </button>
     </div>
   </div>,
 ]

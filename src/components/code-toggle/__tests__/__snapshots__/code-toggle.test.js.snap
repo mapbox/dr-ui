@@ -4,84 +4,86 @@ exports[`code-toggle Java preferred (not interactive) renders as expected 1`] = 
 <div
   className="relative "
 >
-  <fieldset>
-    <div
-      aria-required={true}
-      className="toggle-group round-full bg-blue py3 px3"
-      data-test="three-input"
-      id="three"
-      role="radiogroup"
+  <div
+    aria-required={true}
+    className="toggle-group round-full bg-blue py3 px3"
+    data-testid="three-input"
+    id="three"
+    role="radiogroup"
+  >
+    <label
+      className="toggle-container "
     >
-      <label
-        className="toggle-container "
+      <input
+        autoFocus={false}
+        checked={false}
+        data-testid="three-0-input"
+        name="three"
+        onChange={[Function]}
+        type="radio"
+        value="javascript"
+      />
+      <div
+        className="txt-s py3 toggle--white toggle--active-blue toggle"
       >
-        <input
-          autoFocus={false}
-          checked={false}
-          name="three"
-          onChange={[Function]}
-          type="radio"
-          value="javascript"
-        />
-        <div
-          className="txt-s py3 toggle--white toggle--active-blue toggle"
-        >
-          JavaScript
-        </div>
-      </label>
-      <label
-        className="toggle-container "
+        JavaScript
+      </div>
+    </label>
+    <label
+      className="toggle-container "
+    >
+      <input
+        autoFocus={false}
+        checked={true}
+        data-testid="three-1-input"
+        name="three"
+        onChange={[Function]}
+        type="radio"
+        value="java"
+      />
+      <div
+        className="txt-s py3 toggle--white toggle--active-blue toggle"
       >
-        <input
-          autoFocus={false}
-          checked={true}
-          name="three"
-          onChange={[Function]}
-          type="radio"
-          value="java"
-        />
-        <div
-          className="txt-s py3 toggle--white toggle--active-blue toggle"
-        >
-          Java
-        </div>
-      </label>
-      <label
-        className="toggle-container "
+        Java
+      </div>
+    </label>
+    <label
+      className="toggle-container "
+    >
+      <input
+        autoFocus={false}
+        checked={false}
+        data-testid="three-2-input"
+        name="three"
+        onChange={[Function]}
+        type="radio"
+        value="swift"
+      />
+      <div
+        className="txt-s py3 toggle--white toggle--active-blue toggle"
       >
-        <input
-          autoFocus={false}
-          checked={false}
-          name="three"
-          onChange={[Function]}
-          type="radio"
-          value="swift"
-        />
-        <div
-          className="txt-s py3 toggle--white toggle--active-blue toggle"
-        >
-          Swift
-        </div>
-      </label>
-      <label
-        className="toggle-container "
+        Swift
+      </div>
+    </label>
+    <label
+      className="toggle-container "
+    >
+      <input
+        autoFocus={false}
+        checked={false}
+        data-testid="three-3-input"
+        name="three"
+        onChange={[Function]}
+        type="radio"
+        value="objectiveC"
+      />
+      <div
+        className="txt-s py3 toggle--white toggle--active-blue toggle"
       >
-        <input
-          autoFocus={false}
-          checked={false}
-          name="three"
-          onChange={[Function]}
-          type="radio"
-          value="objectiveC"
-        />
-        <div
-          className="txt-s py3 toggle--white toggle--active-blue toggle"
-        >
-          Objective-C
-        </div>
-      </label>
-    </div>
-  </fieldset>
+        Objective-C
+      </div>
+    </label>
+  </div>
   <div
     role="alert"
   />
@@ -92,50 +94,50 @@ exports[`code-toggle Objective C preferred (not interactive) renders as expected
 <div
   className="relative "
 >
-  <fieldset>
-    <div
-      aria-required={true}
-      className="toggle-group round-full bg-blue py3 px3"
-      data-test="two-input"
-      id="two"
-      role="radiogroup"
+  <div
+    aria-required={true}
+    className="toggle-group round-full bg-blue py3 px3"
+    data-testid="two-input"
+    id="two"
+    role="radiogroup"
+  >
+    <label
+      className="toggle-container "
     >
-      <label
-        className="toggle-container "
+      <input
+        autoFocus={false}
+        checked={false}
+        data-testid="two-0-input"
+        name="two"
+        onChange={[Function]}
+        type="radio"
+        value="swift"
+      />
+      <div
+        className="txt-s py3 toggle--white toggle--active-blue toggle"
       >
-        <input
-          autoFocus={false}
-          checked={false}
-          name="two"
-          onChange={[Function]}
-          type="radio"
-          value="swift"
-        />
-        <div
-          className="txt-s py3 toggle--white toggle--active-blue toggle"
-        >
-          Swift
-        </div>
-      </label>
-      <label
-        className="toggle-container "
+        Swift
+      </div>
+    </label>
+    <label
+      className="toggle-container "
+    >
+      <input
+        autoFocus={false}
+        checked={true}
+        data-testid="two-1-input"
+        name="two"
+        onChange={[Function]}
+        type="radio"
+        value="objectiveC"
+      />
+      <div
+        className="txt-s py3 toggle--white toggle--active-blue toggle"
       >
-        <input
-          autoFocus={false}
-          checked={true}
-          name="two"
-          onChange={[Function]}
-          type="radio"
-          value="objectiveC"
-        />
-        <div
-          className="txt-s py3 toggle--white toggle--active-blue toggle"
-        >
-          Objective-C
-        </div>
-      </label>
-    </div>
-  </fieldset>
+        Objective-C
+      </div>
+    </label>
+  </div>
   <div
     role="alert"
   />
@@ -146,50 +148,50 @@ exports[`code-toggle Swift preferred (interactive) renders as expected 1`] = `
 <div
   className="relative "
 >
-  <fieldset>
-    <div
-      aria-required={true}
-      className="toggle-group round-full bg-blue py3 px3"
-      data-test="one-input"
-      id="one"
-      role="radiogroup"
+  <div
+    aria-required={true}
+    className="toggle-group round-full bg-blue py3 px3"
+    data-testid="one-input"
+    id="one"
+    role="radiogroup"
+  >
+    <label
+      className="toggle-container "
     >
-      <label
-        className="toggle-container "
+      <input
+        autoFocus={false}
+        checked={true}
+        data-testid="one-0-input"
+        name="one"
+        onChange={[Function]}
+        type="radio"
+        value="swift"
+      />
+      <div
+        className="txt-s py3 toggle--white toggle--active-blue toggle"
       >
-        <input
-          autoFocus={false}
-          checked={true}
-          name="one"
-          onChange={[Function]}
-          type="radio"
-          value="swift"
-        />
-        <div
-          className="txt-s py3 toggle--white toggle--active-blue toggle"
-        >
-          Swift
-        </div>
-      </label>
-      <label
-        className="toggle-container "
+        Swift
+      </div>
+    </label>
+    <label
+      className="toggle-container "
+    >
+      <input
+        autoFocus={false}
+        checked={false}
+        data-testid="one-1-input"
+        name="one"
+        onChange={[Function]}
+        type="radio"
+        value="objectiveC"
+      />
+      <div
+        className="txt-s py3 toggle--white toggle--active-blue toggle"
       >
-        <input
-          autoFocus={false}
-          checked={false}
-          name="one"
-          onChange={[Function]}
-          type="radio"
-          value="objectiveC"
-        />
-        <div
-          className="txt-s py3 toggle--white toggle--active-blue toggle"
-        >
-          Objective-C
-        </div>
-      </label>
-    </div>
-  </fieldset>
+        Objective-C
+      </div>
+    </label>
+  </div>
   <div
     role="alert"
   />

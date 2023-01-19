@@ -20,9 +20,10 @@ exports[`demo-iframe \`gl\` is false renders as expected 1`] = `
       >
         demo
         <svg
+          aria-hidden="true"
           className="events-none icon inline-block align-t"
+          data-testid="icon-chevron-right"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": "1.5em",
@@ -35,6 +36,24 @@ exports[`demo-iframe \`gl\` is false renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          chevron-right
+        </span>
       </span>
     </span>
   </a>
@@ -65,9 +84,10 @@ exports[`demo-iframe Basic renders as expected 1`] = `
         }
       >
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-alert"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 40,
@@ -80,6 +100,24 @@ exports[`demo-iframe Basic renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          alert
+        </span>
       </div>
     </div>
     <div
@@ -118,9 +156,10 @@ exports[`demo-iframe Overrides the MapboxAccessToken with another token renders 
       >
         demo
         <svg
+          aria-hidden="true"
           className="events-none icon inline-block align-t"
+          data-testid="icon-chevron-right"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": "1.5em",
@@ -133,6 +172,24 @@ exports[`demo-iframe Overrides the MapboxAccessToken with another token renders 
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          chevron-right
+        </span>
       </span>
     </span>
   </a>

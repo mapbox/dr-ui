@@ -2,84 +2,48 @@
 
 exports[`tag Beta tag renders as expected 1`] = `
 <div
-  className="inline-block"
+  className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-s border px6"
+  data-state="closed"
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
-  onKeyDown={[Function]}
+  onPointerDown={[Function]}
+  onPointerLeave={[Function]}
+  onPointerMove={[Function]}
+  style={Object {}}
 >
-  <div
-    aria-describedby="tooltip-1"
-    className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-s border px6"
-  >
-    Beta
-  </div>
-  <div
-    className="hide-visually"
-    id="tooltip-1"
-    role="tooltip"
-  >
-    <div
-      className="txt-s wmax120"
-    >
-      This feature is in public beta and is subject to changes.
-    </div>
-  </div>
+  Beta
 </div>
 `;
 
 exports[`tag Custom tag renders as expected 1`] = `
 <div
-  className="inline-block"
+  className="txt-bold round inline-block cursor-default bg-red-light color-red-dark border--red txt-s border px6"
+  data-state="closed"
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
-  onKeyDown={[Function]}
+  onPointerDown={[Function]}
+  onPointerLeave={[Function]}
+  onPointerMove={[Function]}
+  style={Object {}}
 >
-  <div
-    aria-describedby="tooltip-2"
-    className="txt-bold round inline-block cursor-default bg-red-light color-red-dark border--red txt-s border px6"
-  >
-    Limited access
-  </div>
-  <div
-    className="hide-visually"
-    id="tooltip-2"
-    role="tooltip"
-  >
-    <div
-      className="txt-s wmax120"
-    >
-      Contact us for access to this feature.
-    </div>
-  </div>
+  Limited access
 </div>
 `;
 
 exports[`tag small variant renders as expected 1`] = `
 <div
-  className="inline-block"
+  className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs px6"
+  data-state="closed"
   onBlur={[Function]}
   onClick={[Function]}
   onFocus={[Function]}
-  onKeyDown={[Function]}
+  onPointerDown={[Function]}
+  onPointerLeave={[Function]}
+  onPointerMove={[Function]}
+  style={Object {}}
 >
-  <div
-    aria-describedby="tooltip-3"
-    className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs px6"
-  >
-    Beta
-  </div>
-  <div
-    className="hide-visually"
-    id="tooltip-3"
-    role="tooltip"
-  >
-    <div
-      className="txt-s wmax120"
-    >
-      This feature is in public beta and is subject to changes.
-    </div>
-  </div>
+  Beta
 </div>
 `;

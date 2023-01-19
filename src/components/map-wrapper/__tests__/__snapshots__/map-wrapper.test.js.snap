@@ -24,9 +24,10 @@ exports[`map-wrapper Basic renders as expected 1`] = `
         }
       >
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-alert"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 40,
@@ -39,6 +40,24 @@ exports[`map-wrapper Basic renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          alert
+        </span>
       </div>
     </div>
     <div
@@ -79,9 +98,10 @@ exports[`map-wrapper reason='insufficient ECMAScript 6 support' renders as expec
         }
       >
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-alert"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 40,
@@ -94,6 +114,24 @@ exports[`map-wrapper reason='insufficient ECMAScript 6 support' renders as expec
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          alert
+        </span>
       </div>
     </div>
     <div
@@ -164,9 +202,10 @@ exports[`map-wrapper reason='insufficient WebGL support' renders as expected 1`]
         }
       >
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-alert"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 40,
@@ -179,6 +218,24 @@ exports[`map-wrapper reason='insufficient WebGL support' renders as expected 1`]
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          alert
+        </span>
       </div>
     </div>
     <div

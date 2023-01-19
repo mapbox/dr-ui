@@ -40,99 +40,428 @@ exports[`Workflow 2 - Contact support Click button, then set state 1`] = `
             </div>
             <div>
               <Tooltip
-                alignment="center"
-                block={false}
-                coloring="light"
                 content="Close"
-                disabled={false}
-                maxWidth="medium"
-                padding="small"
-                placement="top"
-                respondsToClick={false}
-                textSize="s"
               >
-                <PopoverTrigger
-                  block={false}
-                  content={
-                    <div
-                      className="txt-s wmax240"
-                    >
-                      Close
-                    </div>
-                  }
-                  disabled={false}
-                  popoverProps={
-                    Object {
-                      "alignment": "center",
-                      "coloring": "light",
-                      "hasPointer": true,
-                      "hideWhenAnchorIsOffscreen": true,
-                      "padding": "small",
-                      "passthroughProps": Object {
-                        "id": "tooltip-2",
-                        "role": "tooltip",
-                      },
-                      "placement": "top",
+                <TooltipProvider>
+                  <TooltipProviderProvider
+                    delayDuration={700}
+                    disableHoverableContent={false}
+                    isOpenDelayed={true}
+                    isPointerInTransitRef={
+                      Object {
+                        "current": false,
+                      }
                     }
-                  }
-                  receiveFocus={false}
-                  renderHiddenContent={true}
-                  respondsToClick={false}
-                  respondsToFocus={true}
-                  respondsToHover={true}
-                  trapFocus={false}
-                >
-                  <div
-                    className="inline-block"
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onKeyDown={[Function]}
+                    onClose={[Function]}
+                    onOpen={[Function]}
+                    onPointerInTransitChange={[Function]}
                   >
-                    <button
-                      aria-describedby="tooltip-2"
-                      aria-label="Close feedback"
-                      className="link--gray"
-                      id="feedback-close-button"
-                      onClick={[Function]}
+                    <Tooltip
+                      delayDuration={150}
                     >
-                      <Icon
-                        inline={false}
-                        name="close"
-                        passthroughProps={Object {}}
-                        size={18}
+                      <Popper
+                        __scopePopper={
+                          Object {
+                            "Popper": Array [
+                              Object {
+                                "$$typeof": Symbol(react.context),
+                                "Consumer": Object {
+                                  "$$typeof": Symbol(react.context),
+                                  "_calculateChangedBits": null,
+                                  "_context": [Circular],
+                                },
+                                "Provider": Object {
+                                  "$$typeof": Symbol(react.provider),
+                                  "_context": [Circular],
+                                },
+                                "_calculateChangedBits": null,
+                                "_currentRenderer": Object {},
+                                "_currentRenderer2": null,
+                                "_currentValue": undefined,
+                                "_currentValue2": undefined,
+                                "_threadCount": 0,
+                              },
+                              Object {
+                                "$$typeof": Symbol(react.context),
+                                "Consumer": Object {
+                                  "$$typeof": Symbol(react.context),
+                                  "_calculateChangedBits": null,
+                                  "_context": [Circular],
+                                },
+                                "Provider": Object {
+                                  "$$typeof": Symbol(react.provider),
+                                  "_context": [Circular],
+                                },
+                                "_calculateChangedBits": null,
+                                "_currentRenderer": null,
+                                "_currentRenderer2": null,
+                                "_currentValue": undefined,
+                                "_currentValue2": undefined,
+                                "_threadCount": 0,
+                              },
+                              Object {
+                                "$$typeof": Symbol(react.context),
+                                "Consumer": Object {
+                                  "$$typeof": Symbol(react.context),
+                                  "_calculateChangedBits": null,
+                                  "_context": [Circular],
+                                },
+                                "Provider": Object {
+                                  "$$typeof": Symbol(react.provider),
+                                  "_context": [Circular],
+                                },
+                                "_calculateChangedBits": null,
+                                "_currentRenderer": null,
+                                "_currentRenderer2": null,
+                                "_currentValue": Object {
+                                  "hasParent": false,
+                                  "positionUpdateFns": Set {},
+                                },
+                                "_currentValue2": Object {
+                                  "hasParent": false,
+                                  "positionUpdateFns": Set {},
+                                },
+                                "_threadCount": 0,
+                              },
+                            ],
+                          }
+                        }
                       >
-                        <svg
-                          className="events-none icon"
-                          focusable="false"
-                          role="presentation"
-                          style={
+                        <PopperProvider
+                          anchor={
+                            <button
+                              aria-label="Close feedback"
+                              class="link--gray"
+                              data-state="closed"
+                              id="feedback-close-button"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="events-none icon"
+                                data-testid="icon-close"
+                                focusable="false"
+                                style="width: 18px; height: 18px;"
+                              >
+                                <use
+                                  xlink:href="#icon-close"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                />
+                              </svg>
+                              <span
+                                style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+                              >
+                                close
+                              </span>
+                            </button>
+                          }
+                          onAnchorChange={[Function]}
+                          scope={
                             Object {
-                              "height": 18,
-                              "width": 18,
+                              "Popper": Array [
+                                Object {
+                                  "$$typeof": Symbol(react.context),
+                                  "Consumer": Object {
+                                    "$$typeof": Symbol(react.context),
+                                    "_calculateChangedBits": null,
+                                    "_context": [Circular],
+                                  },
+                                  "Provider": Object {
+                                    "$$typeof": Symbol(react.provider),
+                                    "_context": [Circular],
+                                  },
+                                  "_calculateChangedBits": null,
+                                  "_currentRenderer": Object {},
+                                  "_currentRenderer2": null,
+                                  "_currentValue": undefined,
+                                  "_currentValue2": undefined,
+                                  "_threadCount": 0,
+                                },
+                                Object {
+                                  "$$typeof": Symbol(react.context),
+                                  "Consumer": Object {
+                                    "$$typeof": Symbol(react.context),
+                                    "_calculateChangedBits": null,
+                                    "_context": [Circular],
+                                  },
+                                  "Provider": Object {
+                                    "$$typeof": Symbol(react.provider),
+                                    "_context": [Circular],
+                                  },
+                                  "_calculateChangedBits": null,
+                                  "_currentRenderer": null,
+                                  "_currentRenderer2": null,
+                                  "_currentValue": undefined,
+                                  "_currentValue2": undefined,
+                                  "_threadCount": 0,
+                                },
+                                Object {
+                                  "$$typeof": Symbol(react.context),
+                                  "Consumer": Object {
+                                    "$$typeof": Symbol(react.context),
+                                    "_calculateChangedBits": null,
+                                    "_context": [Circular],
+                                  },
+                                  "Provider": Object {
+                                    "$$typeof": Symbol(react.provider),
+                                    "_context": [Circular],
+                                  },
+                                  "_calculateChangedBits": null,
+                                  "_currentRenderer": null,
+                                  "_currentRenderer2": null,
+                                  "_currentValue": Object {
+                                    "hasParent": false,
+                                    "positionUpdateFns": Set {},
+                                  },
+                                  "_currentValue2": Object {
+                                    "hasParent": false,
+                                    "positionUpdateFns": Set {},
+                                  },
+                                  "_threadCount": 0,
+                                },
+                              ],
                             }
                           }
                         >
-                          <use
-                            xlinkHref="#icon-close"
-                            xmlnsXlink="http://www.w3.org/1999/xlink"
-                          />
-                        </svg>
-                      </Icon>
-                    </button>
-                    <div
-                      className="hide-visually"
-                      id="tooltip-2"
-                      role="tooltip"
-                    >
-                      <div
-                        className="txt-s wmax240"
-                      >
-                        Close
-                      </div>
-                    </div>
-                  </div>
-                </PopoverTrigger>
+                          <TooltipProvider
+                            contentId="radix-1"
+                            disableHoverableContent={false}
+                            onClose={[Function]}
+                            onOpen={[Function]}
+                            onTriggerChange={[Function]}
+                            onTriggerEnter={[Function]}
+                            onTriggerLeave={[Function]}
+                            open={false}
+                            stateAttribute="closed"
+                            trigger={
+                              <button
+                                aria-label="Close feedback"
+                                class="link--gray"
+                                data-state="closed"
+                                id="feedback-close-button"
+                              >
+                                <svg
+                                  aria-hidden="true"
+                                  class="events-none icon"
+                                  data-testid="icon-close"
+                                  focusable="false"
+                                  style="width: 18px; height: 18px;"
+                                >
+                                  <use
+                                    xlink:href="#icon-close"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  />
+                                </svg>
+                                <span
+                                  style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+                                >
+                                  close
+                                </span>
+                              </button>
+                            }
+                          >
+                            <ForwardRef>
+                              <TooltipTrigger
+                                asChild={true}
+                              >
+                                <PopperAnchor
+                                  __scopePopper={
+                                    Object {
+                                      "Popper": Array [
+                                        Object {
+                                          "$$typeof": Symbol(react.context),
+                                          "Consumer": Object {
+                                            "$$typeof": Symbol(react.context),
+                                            "_calculateChangedBits": null,
+                                            "_context": [Circular],
+                                          },
+                                          "Provider": Object {
+                                            "$$typeof": Symbol(react.provider),
+                                            "_context": [Circular],
+                                          },
+                                          "_calculateChangedBits": null,
+                                          "_currentRenderer": Object {},
+                                          "_currentRenderer2": null,
+                                          "_currentValue": undefined,
+                                          "_currentValue2": undefined,
+                                          "_threadCount": 0,
+                                        },
+                                        Object {
+                                          "$$typeof": Symbol(react.context),
+                                          "Consumer": Object {
+                                            "$$typeof": Symbol(react.context),
+                                            "_calculateChangedBits": null,
+                                            "_context": [Circular],
+                                          },
+                                          "Provider": Object {
+                                            "$$typeof": Symbol(react.provider),
+                                            "_context": [Circular],
+                                          },
+                                          "_calculateChangedBits": null,
+                                          "_currentRenderer": null,
+                                          "_currentRenderer2": null,
+                                          "_currentValue": undefined,
+                                          "_currentValue2": undefined,
+                                          "_threadCount": 0,
+                                        },
+                                        Object {
+                                          "$$typeof": Symbol(react.context),
+                                          "Consumer": Object {
+                                            "$$typeof": Symbol(react.context),
+                                            "_calculateChangedBits": null,
+                                            "_context": [Circular],
+                                          },
+                                          "Provider": Object {
+                                            "$$typeof": Symbol(react.provider),
+                                            "_context": [Circular],
+                                          },
+                                          "_calculateChangedBits": null,
+                                          "_currentRenderer": null,
+                                          "_currentRenderer2": null,
+                                          "_currentValue": Object {
+                                            "hasParent": false,
+                                            "positionUpdateFns": Set {},
+                                          },
+                                          "_currentValue2": Object {
+                                            "hasParent": false,
+                                            "positionUpdateFns": Set {},
+                                          },
+                                          "_threadCount": 0,
+                                        },
+                                      ],
+                                    }
+                                  }
+                                  asChild={true}
+                                >
+                                  <Primitive.div
+                                    asChild={true}
+                                  >
+                                    <Slot>
+                                      <SlotClone>
+                                        <Primitive.button
+                                          asChild={true}
+                                          data-state="closed"
+                                          onBlur={[Function]}
+                                          onClick={[Function]}
+                                          onFocus={[Function]}
+                                          onPointerDown={[Function]}
+                                          onPointerLeave={[Function]}
+                                          onPointerMove={[Function]}
+                                        >
+                                          <Slot
+                                            data-state="closed"
+                                            onBlur={[Function]}
+                                            onClick={[Function]}
+                                            onFocus={[Function]}
+                                            onPointerDown={[Function]}
+                                            onPointerLeave={[Function]}
+                                            onPointerMove={[Function]}
+                                          >
+                                            <SlotClone
+                                              data-state="closed"
+                                              onBlur={[Function]}
+                                              onClick={[Function]}
+                                              onFocus={[Function]}
+                                              onPointerDown={[Function]}
+                                              onPointerLeave={[Function]}
+                                              onPointerMove={[Function]}
+                                            >
+                                              <button
+                                                aria-label="Close feedback"
+                                                className="link--gray"
+                                                data-state="closed"
+                                                id="feedback-close-button"
+                                                onBlur={[Function]}
+                                                onClick={[Function]}
+                                                onFocus={[Function]}
+                                                onPointerDown={[Function]}
+                                                onPointerLeave={[Function]}
+                                                onPointerMove={[Function]}
+                                              >
+                                                <Icon
+                                                  name="close"
+                                                >
+                                                  <AccessibleIcon
+                                                    label="close"
+                                                  >
+                                                    <svg
+                                                      aria-hidden="true"
+                                                      className="events-none icon"
+                                                      data-testid="icon-close"
+                                                      focusable="false"
+                                                      style={
+                                                        Object {
+                                                          "height": 18,
+                                                          "width": 18,
+                                                        }
+                                                      }
+                                                    >
+                                                      <use
+                                                        xlinkHref="#icon-close"
+                                                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                                                      />
+                                                    </svg>
+                                                    <VisuallyHidden>
+                                                      <Primitive.span
+                                                        style={
+                                                          Object {
+                                                            "border": 0,
+                                                            "clip": "rect(0, 0, 0, 0)",
+                                                            "height": 1,
+                                                            "margin": -1,
+                                                            "overflow": "hidden",
+                                                            "padding": 0,
+                                                            "position": "absolute",
+                                                            "whiteSpace": "nowrap",
+                                                            "width": 1,
+                                                            "wordWrap": "normal",
+                                                          }
+                                                        }
+                                                      >
+                                                        <span
+                                                          style={
+                                                            Object {
+                                                              "border": 0,
+                                                              "clip": "rect(0, 0, 0, 0)",
+                                                              "height": 1,
+                                                              "margin": -1,
+                                                              "overflow": "hidden",
+                                                              "padding": 0,
+                                                              "position": "absolute",
+                                                              "whiteSpace": "nowrap",
+                                                              "width": 1,
+                                                              "wordWrap": "normal",
+                                                            }
+                                                          }
+                                                        >
+                                                          close
+                                                        </span>
+                                                      </Primitive.span>
+                                                    </VisuallyHidden>
+                                                  </AccessibleIcon>
+                                                </Icon>
+                                              </button>
+                                            </SlotClone>
+                                          </Slot>
+                                        </Primitive.button>
+                                      </SlotClone>
+                                    </Slot>
+                                  </Primitive.div>
+                                </PopperAnchor>
+                              </TooltipTrigger>
+                            </ForwardRef>
+                            <TooltipPortal>
+                              <TooltipPortalProvider>
+                                <Presence
+                                  present={false}
+                                />
+                              </TooltipPortalProvider>
+                            </TooltipPortal>
+                          </TooltipProvider>
+                        </PopperProvider>
+                      </Popper>
+                    </Tooltip>
+                  </TooltipProviderProvider>
+                </TooltipProvider>
               </Tooltip>
             </div>
           </div>
