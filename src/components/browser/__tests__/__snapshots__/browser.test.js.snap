@@ -14,9 +14,10 @@ exports[`browser With image renders as expected 1`] = `
         className="color-red-light"
       >
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-circle"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 18,
@@ -29,14 +30,33 @@ exports[`browser With image renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          circle
+        </span>
       </span>
       <span
         className="color-yellow-light"
       >
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-circle"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 18,
@@ -49,14 +69,33 @@ exports[`browser With image renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          circle
+        </span>
       </span>
       <span
         className="color-green-light"
       >
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-circle"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 18,
@@ -69,6 +108,24 @@ exports[`browser With image renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          circle
+        </span>
       </span>
     </div>
   </div>
@@ -82,9 +139,10 @@ exports[`browser With image renders as expected 1`] = `
         className="inline-flex flex--space-between-main flex--center-cross mr18 w70"
       >
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-arrow-left"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 18,
@@ -97,10 +155,29 @@ exports[`browser With image renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          arrow-left
+        </span>
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-arrow-right"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 18,
@@ -113,10 +190,29 @@ exports[`browser With image renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          arrow-right
+        </span>
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-rotate"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 18,
@@ -129,6 +225,24 @@ exports[`browser With image renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          rotate
+        </span>
       </div>
       <div
         className="w120 h18 bg-white round-full flex-child-grow px12"
@@ -137,9 +251,10 @@ exports[`browser With image renders as expected 1`] = `
         className="inline-flex flex--space-between-main align-r flex--center-cross ml18 w70"
       >
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-heart"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 18,
@@ -152,10 +267,29 @@ exports[`browser With image renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          heart
+        </span>
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-mapbox"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 18,
@@ -168,10 +302,29 @@ exports[`browser With image renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          mapbox
+        </span>
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-menu"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 18,
@@ -184,6 +337,24 @@ exports[`browser With image renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          menu
+        </span>
       </div>
     </div>
   </div>
@@ -209,9 +380,10 @@ exports[`browser With video renders as expected 1`] = `
         className="color-red-light"
       >
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-circle"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 18,
@@ -224,14 +396,33 @@ exports[`browser With video renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          circle
+        </span>
       </span>
       <span
         className="color-yellow-light"
       >
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-circle"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 18,
@@ -244,14 +435,33 @@ exports[`browser With video renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          circle
+        </span>
       </span>
       <span
         className="color-green-light"
       >
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-circle"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 18,
@@ -264,6 +474,24 @@ exports[`browser With video renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          circle
+        </span>
       </span>
     </div>
   </div>
@@ -277,9 +505,10 @@ exports[`browser With video renders as expected 1`] = `
         className="inline-flex flex--space-between-main flex--center-cross mr18 w70"
       >
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-arrow-left"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 18,
@@ -292,10 +521,29 @@ exports[`browser With video renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          arrow-left
+        </span>
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-arrow-right"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 18,
@@ -308,10 +556,29 @@ exports[`browser With video renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          arrow-right
+        </span>
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-rotate"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 18,
@@ -324,6 +591,24 @@ exports[`browser With video renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          rotate
+        </span>
       </div>
       <div
         className="w120 h18 bg-white round-full flex-child-grow px12"
@@ -332,9 +617,10 @@ exports[`browser With video renders as expected 1`] = `
         className="inline-flex flex--space-between-main align-r flex--center-cross ml18 w70"
       >
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-heart"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 18,
@@ -347,10 +633,29 @@ exports[`browser With video renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          heart
+        </span>
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-mapbox"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 18,
@@ -363,10 +668,29 @@ exports[`browser With video renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          mapbox
+        </span>
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-menu"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 18,
@@ -379,6 +703,24 @@ exports[`browser With video renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          menu
+        </span>
       </div>
     </div>
   </div>

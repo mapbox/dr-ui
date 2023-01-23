@@ -2,6 +2,7 @@
 
 exports[`DownloadButton Default DownloadButton renders as expected 1`] = `
 <a
+  aria-label="primary"
   className="unprose btn btn--blue round-full py12 px24 txt-s my18"
   download="airports.csv"
   href="../files/airports.csv"
@@ -13,9 +14,10 @@ exports[`DownloadButton Default DownloadButton renders as expected 1`] = `
       className="mr6"
     >
       <svg
+        aria-hidden="true"
         className="events-none icon"
+        data-testid="icon-arrow-down"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 18,
@@ -28,6 +30,24 @@ exports[`DownloadButton Default DownloadButton renders as expected 1`] = `
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        arrow-down
+      </span>
     </span>
     <span>
       Download CSV
@@ -38,6 +58,7 @@ exports[`DownloadButton Default DownloadButton renders as expected 1`] = `
 
 exports[`DownloadButton DownloadButton for PNG renders as expected 1`] = `
 <a
+  aria-label="primary"
   className="unprose btn btn--blue round-full py12 px24 txt-s my18"
   download="shop-15.png"
   href="../files/shop-15.png"
@@ -49,9 +70,10 @@ exports[`DownloadButton DownloadButton for PNG renders as expected 1`] = `
       className="mr6"
     >
       <svg
+        aria-hidden="true"
         className="events-none icon"
+        data-testid="icon-arrow-down"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 18,
@@ -64,6 +86,24 @@ exports[`DownloadButton DownloadButton for PNG renders as expected 1`] = `
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        arrow-down
+      </span>
     </span>
     <span>
       Download PNG
@@ -74,6 +114,7 @@ exports[`DownloadButton DownloadButton for PNG renders as expected 1`] = `
 
 exports[`DownloadButton DownloadButton with optional text renders as expected 1`] = `
 <a
+  aria-label="primary"
   className="unprose btn btn--blue round-full py12 px24 txt-s my18"
   download="test-gzip.csv.gz"
   href="../files/test-gzip.csv.gz"
@@ -85,9 +126,10 @@ exports[`DownloadButton DownloadButton with optional text renders as expected 1`
       className="mr6"
     >
       <svg
+        aria-hidden="true"
         className="events-none icon"
+        data-testid="icon-arrow-down"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 18,
@@ -100,6 +142,24 @@ exports[`DownloadButton DownloadButton with optional text renders as expected 1`
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        arrow-down
+      </span>
     </span>
     <span>
       Download for iOS
@@ -113,6 +173,7 @@ exports[`DownloadButton DownloadButton with prose class renders as expected 1`] 
   className="prose"
 >
   <a
+    aria-label="primary"
     className="unprose btn btn--blue round-full py12 px24 txt-s my18"
     download="shop-15.png"
     href="../files/shop-15.png"
@@ -124,9 +185,10 @@ exports[`DownloadButton DownloadButton with prose class renders as expected 1`] 
         className="mr6"
       >
         <svg
+          aria-hidden="true"
           className="events-none icon"
+          data-testid="icon-arrow-down"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 18,
@@ -139,6 +201,24 @@ exports[`DownloadButton DownloadButton with prose class renders as expected 1`] 
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          arrow-down
+        </span>
       </span>
       <span>
         Download PNG

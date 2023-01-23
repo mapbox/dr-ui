@@ -660,9 +660,6 @@ exports[`android-layout-code-block Basic renders as expected 1`] = `
           </div>
         </code>
       </pre>
-      <div
-        className="absolute z2 top right mr6 mt6 color-white"
-      />
     </div>
   </div>
 </div>
@@ -692,9 +689,10 @@ exports[`android-layout-code-block With link to GitHub file renders as expected 
           title="View activity_styles_runtime_styling on GitHub"
         >
           <svg
+            aria-hidden="true"
             className="events-none icon inline-block align-t"
+            data-testid="icon-github"
             focusable="false"
-            role="presentation"
             style={
               Object {
                 "height": 18,
@@ -707,6 +705,24 @@ exports[`android-layout-code-block With link to GitHub file renders as expected 
               xmlnsXlink="http://www.w3.org/1999/xlink"
             />
           </svg>
+          <span
+            style={
+              Object {
+                "border": 0,
+                "clip": "rect(0, 0, 0, 0)",
+                "height": 1,
+                "margin": -1,
+                "overflow": "hidden",
+                "padding": 0,
+                "position": "absolute",
+                "whiteSpace": "nowrap",
+                "width": 1,
+                "wordWrap": "normal",
+              }
+            }
+          >
+            github
+          </span>
            View on GitHub
         </a>
       </div>
@@ -1280,9 +1296,6 @@ exports[`android-layout-code-block With link to GitHub file renders as expected 
           </div>
         </code>
       </pre>
-      <div
-        className="absolute z2 top right mr6 mt6 color-white"
-      />
     </div>
   </div>
 </div>

@@ -42,9 +42,10 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
             className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
+              aria-hidden="true"
               className="events-none icon inline-block align-t"
+              data-testid="icon-check"
               focusable="false"
-              role="presentation"
               style={
                 Object {
                   "height": 18,
@@ -57,6 +58,24 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
                 xmlnsXlink="http://www.w3.org/1999/xlink"
               />
             </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              check
+            </span>
           </div>
           <div
             className="flex-child-grow"
@@ -71,9 +90,10 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
             className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
+              aria-hidden="true"
               className="events-none icon inline-block align-t"
+              data-testid="icon-check"
               focusable="false"
-              role="presentation"
               style={
                 Object {
                   "height": 18,
@@ -86,6 +106,24 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
                 xmlnsXlink="http://www.w3.org/1999/xlink"
               />
             </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              check
+            </span>
           </div>
           <div
             className="flex-child-grow"
@@ -100,9 +138,10 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
             className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
+              aria-hidden="true"
               className="events-none icon inline-block align-t"
+              data-testid="icon-check"
               focusable="false"
-              role="presentation"
               style={
                 Object {
                   "height": 18,
@@ -115,6 +154,24 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
                 xmlnsXlink="http://www.w3.org/1999/xlink"
               />
             </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              check
+            </span>
           </div>
           <div
             className="flex-child-grow"
@@ -192,9 +249,10 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
             className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
+              aria-hidden="true"
               className="events-none icon inline-block align-t"
+              data-testid="icon-check"
               focusable="false"
-              role="presentation"
               style={
                 Object {
                   "height": 18,
@@ -207,6 +265,24 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
                 xmlnsXlink="http://www.w3.org/1999/xlink"
               />
             </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              check
+            </span>
           </div>
           <div
             className="flex-child-grow"
@@ -221,9 +297,10 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
             className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
+              aria-hidden="true"
               className="events-none icon inline-block align-t"
+              data-testid="icon-check"
               focusable="false"
-              role="presentation"
               style={
                 Object {
                   "height": 18,
@@ -236,6 +313,24 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
                 xmlnsXlink="http://www.w3.org/1999/xlink"
               />
             </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              check
+            </span>
           </div>
           <div
             className="flex-child-grow"
@@ -250,9 +345,10 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
             className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
+              aria-hidden="true"
               className="events-none icon inline-block align-t"
+              data-testid="icon-check"
               focusable="false"
-              role="presentation"
               style={
                 Object {
                   "height": 18,
@@ -265,6 +361,24 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
                 xmlnsXlink="http://www.w3.org/1999/xlink"
               />
             </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              check
+            </span>
           </div>
           <div
             className="flex-child-grow"
@@ -299,9 +413,10 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
               className="mr6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon"
+                data-testid="icon-github"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -314,6 +429,24 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                github
+              </span>
             </span>
             <span>
               Contribute on GitHub
@@ -380,9 +513,10 @@ exports[`overview-header Basic renders as expected 1`] = `
             className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
+              aria-hidden="true"
               className="events-none icon inline-block align-t"
+              data-testid="icon-check"
               focusable="false"
-              role="presentation"
               style={
                 Object {
                   "height": 18,
@@ -395,6 +529,24 @@ exports[`overview-header Basic renders as expected 1`] = `
                 xmlnsXlink="http://www.w3.org/1999/xlink"
               />
             </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              check
+            </span>
           </div>
           <div
             className="flex-child-grow"
@@ -409,9 +561,10 @@ exports[`overview-header Basic renders as expected 1`] = `
             className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
+              aria-hidden="true"
               className="events-none icon inline-block align-t"
+              data-testid="icon-check"
               focusable="false"
-              role="presentation"
               style={
                 Object {
                   "height": 18,
@@ -424,6 +577,24 @@ exports[`overview-header Basic renders as expected 1`] = `
                 xmlnsXlink="http://www.w3.org/1999/xlink"
               />
             </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              check
+            </span>
           </div>
           <div
             className="flex-child-grow"
@@ -438,9 +609,10 @@ exports[`overview-header Basic renders as expected 1`] = `
             className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
+              aria-hidden="true"
               className="events-none icon inline-block align-t"
+              data-testid="icon-check"
               focusable="false"
-              role="presentation"
               style={
                 Object {
                   "height": 18,
@@ -453,6 +625,24 @@ exports[`overview-header Basic renders as expected 1`] = `
                 xmlnsXlink="http://www.w3.org/1999/xlink"
               />
             </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              check
+            </span>
           </div>
           <div
             className="flex-child-grow"
@@ -481,9 +671,10 @@ exports[`overview-header Basic renders as expected 1`] = `
               className="mr6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon"
+                data-testid="icon-github"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -496,6 +687,24 @@ exports[`overview-header Basic renders as expected 1`] = `
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                github
+              </span>
             </span>
             <span>
               Contribute on GitHub
@@ -543,29 +752,17 @@ exports[`overview-header Beta product renders as expected 1`] = `
           }
         >
           <div
-            className="inline-block"
+            className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-s border px6"
+            data-state="closed"
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
-            onKeyDown={[Function]}
+            onPointerDown={[Function]}
+            onPointerLeave={[Function]}
+            onPointerMove={[Function]}
+            style={Object {}}
           >
-            <div
-              aria-describedby="tooltip-1"
-              className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-s border px6"
-            >
-              Beta
-            </div>
-            <div
-              className="hide-visually"
-              id="tooltip-1"
-              role="tooltip"
-            >
-              <div
-                className="txt-s wmax120"
-              >
-                This feature is in public beta and is subject to changes.
-              </div>
-            </div>
+            Beta
           </div>
         </span>
       </h1>
@@ -579,9 +776,10 @@ exports[`overview-header Beta product renders as expected 1`] = `
             className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
+              aria-hidden="true"
               className="events-none icon inline-block align-t"
+              data-testid="icon-check"
               focusable="false"
-              role="presentation"
               style={
                 Object {
                   "height": 18,
@@ -594,6 +792,24 @@ exports[`overview-header Beta product renders as expected 1`] = `
                 xmlnsXlink="http://www.w3.org/1999/xlink"
               />
             </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              check
+            </span>
           </div>
           <div
             className="flex-child-grow"
@@ -608,9 +824,10 @@ exports[`overview-header Beta product renders as expected 1`] = `
             className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
+              aria-hidden="true"
               className="events-none icon inline-block align-t"
+              data-testid="icon-check"
               focusable="false"
-              role="presentation"
               style={
                 Object {
                   "height": 18,
@@ -623,6 +840,24 @@ exports[`overview-header Beta product renders as expected 1`] = `
                 xmlnsXlink="http://www.w3.org/1999/xlink"
               />
             </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              check
+            </span>
           </div>
           <div
             className="flex-child-grow"
@@ -637,9 +872,10 @@ exports[`overview-header Beta product renders as expected 1`] = `
             className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
+              aria-hidden="true"
               className="events-none icon inline-block align-t"
+              data-testid="icon-check"
               focusable="false"
-              role="presentation"
               style={
                 Object {
                   "height": 18,
@@ -652,6 +888,24 @@ exports[`overview-header Beta product renders as expected 1`] = `
                 xmlnsXlink="http://www.w3.org/1999/xlink"
               />
             </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              check
+            </span>
           </div>
           <div
             className="flex-child-grow"
@@ -702,9 +956,10 @@ exports[`overview-header No optional props renders as expected 1`] = `
             className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
+              aria-hidden="true"
               className="events-none icon inline-block align-t"
+              data-testid="icon-check"
               focusable="false"
-              role="presentation"
               style={
                 Object {
                   "height": 18,
@@ -717,6 +972,24 @@ exports[`overview-header No optional props renders as expected 1`] = `
                 xmlnsXlink="http://www.w3.org/1999/xlink"
               />
             </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              check
+            </span>
           </div>
           <div
             className="flex-child-grow"
@@ -731,9 +1004,10 @@ exports[`overview-header No optional props renders as expected 1`] = `
             className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
+              aria-hidden="true"
               className="events-none icon inline-block align-t"
+              data-testid="icon-check"
               focusable="false"
-              role="presentation"
               style={
                 Object {
                   "height": 18,
@@ -746,6 +1020,24 @@ exports[`overview-header No optional props renders as expected 1`] = `
                 xmlnsXlink="http://www.w3.org/1999/xlink"
               />
             </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              check
+            </span>
           </div>
           <div
             className="flex-child-grow"
@@ -760,9 +1052,10 @@ exports[`overview-header No optional props renders as expected 1`] = `
             className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
+              aria-hidden="true"
               className="events-none icon inline-block align-t"
+              data-testid="icon-check"
               focusable="false"
-              role="presentation"
               style={
                 Object {
                   "height": 18,
@@ -775,6 +1068,24 @@ exports[`overview-header No optional props renders as expected 1`] = `
                 xmlnsXlink="http://www.w3.org/1999/xlink"
               />
             </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              check
+            </span>
           </div>
           <div
             className="flex-child-grow"
@@ -789,9 +1100,10 @@ exports[`overview-header No optional props renders as expected 1`] = `
             className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
+              aria-hidden="true"
               className="events-none icon inline-block align-t"
+              data-testid="icon-check"
               focusable="false"
-              role="presentation"
               style={
                 Object {
                   "height": 18,
@@ -804,6 +1116,24 @@ exports[`overview-header No optional props renders as expected 1`] = `
                 xmlnsXlink="http://www.w3.org/1999/xlink"
               />
             </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              check
+            </span>
           </div>
           <div
             className="flex-child-grow"
@@ -818,9 +1148,10 @@ exports[`overview-header No optional props renders as expected 1`] = `
             className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
+              aria-hidden="true"
               className="events-none icon inline-block align-t"
+              data-testid="icon-check"
               focusable="false"
-              role="presentation"
               style={
                 Object {
                   "height": 18,
@@ -833,6 +1164,24 @@ exports[`overview-header No optional props renders as expected 1`] = `
                 xmlnsXlink="http://www.w3.org/1999/xlink"
               />
             </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              check
+            </span>
           </div>
           <div
             className="flex-child-grow"
@@ -894,9 +1243,10 @@ exports[`overview-header Some optional props renders as expected 1`] = `
             className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
+              aria-hidden="true"
               className="events-none icon inline-block align-t"
+              data-testid="icon-check"
               focusable="false"
-              role="presentation"
               style={
                 Object {
                   "height": 18,
@@ -909,6 +1259,24 @@ exports[`overview-header Some optional props renders as expected 1`] = `
                 xmlnsXlink="http://www.w3.org/1999/xlink"
               />
             </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              check
+            </span>
           </div>
           <div
             className="flex-child-grow"
@@ -923,9 +1291,10 @@ exports[`overview-header Some optional props renders as expected 1`] = `
             className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
+              aria-hidden="true"
               className="events-none icon inline-block align-t"
+              data-testid="icon-check"
               focusable="false"
-              role="presentation"
               style={
                 Object {
                   "height": 18,
@@ -938,6 +1307,24 @@ exports[`overview-header Some optional props renders as expected 1`] = `
                 xmlnsXlink="http://www.w3.org/1999/xlink"
               />
             </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              check
+            </span>
           </div>
           <div
             className="flex-child-grow"
@@ -952,9 +1339,10 @@ exports[`overview-header Some optional props renders as expected 1`] = `
             className="flex-child-no-shrink mr6 color-gray"
           >
             <svg
+              aria-hidden="true"
               className="events-none icon inline-block align-t"
+              data-testid="icon-check"
               focusable="false"
-              role="presentation"
               style={
                 Object {
                   "height": 18,
@@ -967,6 +1355,24 @@ exports[`overview-header Some optional props renders as expected 1`] = `
                 xmlnsXlink="http://www.w3.org/1999/xlink"
               />
             </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              check
+            </span>
           </div>
           <div
             className="flex-child-grow"
@@ -989,9 +1395,10 @@ exports[`overview-header Some optional props renders as expected 1`] = `
               className="mr6"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon"
+                data-testid="icon-github"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 18,
@@ -1004,6 +1411,24 @@ exports[`overview-header Some optional props renders as expected 1`] = `
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                github
+              </span>
             </span>
             <span>
               Contribute on GitHub

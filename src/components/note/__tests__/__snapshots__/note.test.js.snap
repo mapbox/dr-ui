@@ -17,9 +17,10 @@ exports[`note A legacy note, has same styling as warning renders as expected 1`]
       }
     >
       <svg
+        aria-hidden="true"
         className="events-none icon"
+        data-testid="icon-alert"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 40,
@@ -32,6 +33,24 @@ exports[`note A legacy note, has same styling as warning renders as expected 1`]
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        alert
+      </span>
     </div>
   </div>
   <div
@@ -177,9 +196,10 @@ exports[`note A note to display an error with steps or links on how to troublesh
       }
     >
       <svg
+        aria-hidden="true"
         className="events-none icon"
+        data-testid="icon-alert"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 40,
@@ -192,6 +212,24 @@ exports[`note A note to display an error with steps or links on how to troublesh
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        alert
+      </span>
     </div>
   </div>
   <div
@@ -337,9 +375,10 @@ exports[`note A note to display with a message about new products or features. r
       }
     >
       <svg
+        aria-hidden="true"
         className="events-none icon"
+        data-testid="icon-plus"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 40,
@@ -352,6 +391,24 @@ exports[`note A note to display with a message about new products or features. r
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        plus
+      </span>
     </div>
   </div>
   <div
@@ -497,9 +554,10 @@ exports[`note A note to flag information about a beta release/product renders as
       }
     >
       <svg
+        aria-hidden="true"
         className="events-none icon"
+        data-testid="icon-lightning"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 40,
@@ -512,6 +570,24 @@ exports[`note A note to flag information about a beta release/product renders as
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        lightning
+      </span>
     </div>
   </div>
   <div
@@ -657,9 +733,10 @@ exports[`note A warning note to let the user know something has changed or will 
       }
     >
       <svg
+        aria-hidden="true"
         className="events-none icon"
+        data-testid="icon-alert"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 40,
@@ -672,6 +749,24 @@ exports[`note A warning note to let the user know something has changed or will 
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        alert
+      </span>
     </div>
   </div>
   <div
@@ -817,9 +912,10 @@ exports[`note Default note renders as expected 1`] = `
       }
     >
       <svg
+        aria-hidden="true"
         className="events-none icon"
+        data-testid="icon-book"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 40,
@@ -832,6 +928,24 @@ exports[`note Default note renders as expected 1`] = `
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        book
+      </span>
     </div>
   </div>
   <div
@@ -866,9 +980,10 @@ exports[`note Note with custom title. renders as expected 1`] = `
       }
     >
       <svg
+        aria-hidden="true"
         className="events-none icon"
+        data-testid="icon-book"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 40,
@@ -881,6 +996,24 @@ exports[`note Note with custom title. renders as expected 1`] = `
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        book
+      </span>
     </div>
   </div>
   <div
@@ -1026,9 +1159,10 @@ exports[`note download renders as expected 1`] = `
       }
     >
       <svg
+        aria-hidden="true"
         className="events-none icon"
+        data-testid="icon-arrow-down"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 40,
@@ -1041,6 +1175,24 @@ exports[`note download renders as expected 1`] = `
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        arrow-down
+      </span>
     </div>
   </div>
   <div

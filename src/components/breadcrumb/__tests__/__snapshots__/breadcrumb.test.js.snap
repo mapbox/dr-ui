@@ -18,9 +18,10 @@ exports[`Breadcrumb Basic renders as expected 1`] = `
       className="color-gray-light inline-block-mm none px6"
     >
       <svg
+        aria-hidden="true"
         className="events-none icon inline-block align-t"
+        data-testid="icon-chevron-right"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 18,
@@ -33,6 +34,24 @@ exports[`Breadcrumb Basic renders as expected 1`] = `
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        chevron-right
+      </span>
     </span>
   </span>
   <span
@@ -42,9 +61,10 @@ exports[`Breadcrumb Basic renders as expected 1`] = `
       className="color-gray-light inline-block none-mm pr6"
     >
       <svg
+        aria-hidden="true"
         className="events-none icon inline-block align-t"
+        data-testid="icon-arrow-left"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 18,
@@ -57,6 +77,24 @@ exports[`Breadcrumb Basic renders as expected 1`] = `
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        arrow-left
+      </span>
     </span>
     <a
       className="link"
@@ -68,9 +106,10 @@ exports[`Breadcrumb Basic renders as expected 1`] = `
       className="color-gray-light inline-block-mm none px6"
     >
       <svg
+        aria-hidden="true"
         className="events-none icon inline-block align-t"
+        data-testid="icon-chevron-right"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 18,
@@ -83,6 +122,24 @@ exports[`Breadcrumb Basic renders as expected 1`] = `
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        chevron-right
+      </span>
     </span>
   </span>
   <span
@@ -111,9 +168,10 @@ exports[`Breadcrumb Example of Platform docs site renders as expected 1`] = `
       className="color-gray-light inline-block-mm none px6"
     >
       <svg
+        aria-hidden="true"
         className="events-none icon inline-block align-t"
+        data-testid="icon-chevron-right"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 18,
@@ -126,6 +184,24 @@ exports[`Breadcrumb Example of Platform docs site renders as expected 1`] = `
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        chevron-right
+      </span>
     </span>
   </span>
   <span
@@ -141,9 +217,10 @@ exports[`Breadcrumb Example of Platform docs site renders as expected 1`] = `
       className="color-gray-light inline-block-mm none px6"
     >
       <svg
+        aria-hidden="true"
         className="events-none icon inline-block align-t"
+        data-testid="icon-chevron-right"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 18,
@@ -156,6 +233,24 @@ exports[`Breadcrumb Example of Platform docs site renders as expected 1`] = `
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        chevron-right
+      </span>
     </span>
   </span>
   <span
@@ -165,9 +260,10 @@ exports[`Breadcrumb Example of Platform docs site renders as expected 1`] = `
       className="color-gray-light inline-block none-mm pr6"
     >
       <svg
+        aria-hidden="true"
         className="events-none icon inline-block align-t"
+        data-testid="icon-arrow-left"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 18,
@@ -180,6 +276,24 @@ exports[`Breadcrumb Example of Platform docs site renders as expected 1`] = `
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        arrow-left
+      </span>
     </span>
     <a
       className="link"
@@ -191,9 +305,10 @@ exports[`Breadcrumb Example of Platform docs site renders as expected 1`] = `
       className="color-gray-light inline-block-mm none px6"
     >
       <svg
+        aria-hidden="true"
         className="events-none icon inline-block align-t"
+        data-testid="icon-chevron-right"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 18,
@@ -206,6 +321,24 @@ exports[`Breadcrumb Example of Platform docs site renders as expected 1`] = `
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        chevron-right
+      </span>
     </span>
   </span>
   <span
@@ -234,9 +367,10 @@ exports[`Breadcrumb Has subsite renders as expected 1`] = `
       className="color-gray-light inline-block-mm none px6"
     >
       <svg
+        aria-hidden="true"
         className="events-none icon inline-block align-t"
+        data-testid="icon-chevron-right"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 18,
@@ -249,6 +383,24 @@ exports[`Breadcrumb Has subsite renders as expected 1`] = `
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        chevron-right
+      </span>
     </span>
   </span>
   <span
@@ -264,9 +416,10 @@ exports[`Breadcrumb Has subsite renders as expected 1`] = `
       className="color-gray-light inline-block-mm none px6"
     >
       <svg
+        aria-hidden="true"
         className="events-none icon inline-block align-t"
+        data-testid="icon-chevron-right"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 18,
@@ -279,6 +432,24 @@ exports[`Breadcrumb Has subsite renders as expected 1`] = `
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        chevron-right
+      </span>
     </span>
   </span>
   <span
@@ -288,9 +459,10 @@ exports[`Breadcrumb Has subsite renders as expected 1`] = `
       className="color-gray-light inline-block none-mm pr6"
     >
       <svg
+        aria-hidden="true"
         className="events-none icon inline-block align-t"
+        data-testid="icon-arrow-left"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 18,
@@ -303,6 +475,24 @@ exports[`Breadcrumb Has subsite renders as expected 1`] = `
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        arrow-left
+      </span>
     </span>
     <a
       className="link"
@@ -314,9 +504,10 @@ exports[`Breadcrumb Has subsite renders as expected 1`] = `
       className="color-gray-light inline-block-mm none px6"
     >
       <svg
+        aria-hidden="true"
         className="events-none icon inline-block align-t"
+        data-testid="icon-chevron-right"
         focusable="false"
-        role="presentation"
         style={
           Object {
             "height": 18,
@@ -329,6 +520,24 @@ exports[`Breadcrumb Has subsite renders as expected 1`] = `
           xmlnsXlink="http://www.w3.org/1999/xlink"
         />
       </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        chevron-right
+      </span>
     </span>
   </span>
   <span

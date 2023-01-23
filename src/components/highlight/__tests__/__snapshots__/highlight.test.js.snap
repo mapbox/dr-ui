@@ -243,9 +243,6 @@ exports[`syntax-highlighting CSS highlighting renders as expected 1`] = `
           </div>
         </code>
       </pre>
-      <div
-        className="absolute z2 top right mr6 mt6 color-white"
-      />
     </div>
   </div>
 </div>
@@ -516,9 +513,6 @@ exports[`syntax-highlighting Java highlighting renders as expected 1`] = `
           </div>
         </code>
       </pre>
-      <div
-        className="absolute z2 top right mr6 mt6 color-white"
-      />
     </div>
   </div>
 </div>
@@ -943,9 +937,6 @@ exports[`syntax-highlighting Objective C highlighting renders as expected 1`] = 
           </div>
         </code>
       </pre>
-      <div
-        className="absolute z2 top right mr6 mt6 color-white"
-      />
     </div>
   </div>
 </div>
@@ -1216,9 +1207,6 @@ exports[`syntax-highlighting Swift highlighting renders as expected 1`] = `
           </div>
         </code>
       </pre>
-      <div
-        className="absolute z2 top right mr6 mt6 color-white"
-      />
     </div>
   </div>
 </div>

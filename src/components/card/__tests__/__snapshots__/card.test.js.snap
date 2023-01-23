@@ -70,9 +70,10 @@ exports[`card Card with image renders as expected 1`] = `
           className="mr6"
         >
           <svg
+            aria-hidden="true"
             className="events-none icon"
+            data-testid="icon-code"
             focusable="false"
-            role="presentation"
             style={
               Object {
                 "height": 18,
@@ -85,6 +86,24 @@ exports[`card Card with image renders as expected 1`] = `
               xmlnsXlink="http://www.w3.org/1999/xlink"
             />
           </svg>
+          <span
+            style={
+              Object {
+                "border": 0,
+                "clip": "rect(0, 0, 0, 0)",
+                "height": 1,
+                "margin": -1,
+                "overflow": "hidden",
+                "padding": 0,
+                "position": "absolute",
+                "whiteSpace": "nowrap",
+                "width": 1,
+                "wordWrap": "normal",
+              }
+            }
+          >
+            code
+          </span>
         </span>
         <span>
           JavaScript
@@ -162,9 +181,10 @@ exports[`card Card with no image renders as expected 1`] = `
           className="mr6"
         >
           <svg
+            aria-hidden="true"
             className="events-none icon"
+            data-testid="icon-code"
             focusable="false"
-            role="presentation"
             style={
               Object {
                 "height": 18,
@@ -177,6 +197,24 @@ exports[`card Card with no image renders as expected 1`] = `
               xmlnsXlink="http://www.w3.org/1999/xlink"
             />
           </svg>
+          <span
+            style={
+              Object {
+                "border": 0,
+                "clip": "rect(0, 0, 0, 0)",
+                "height": 1,
+                "margin": -1,
+                "overflow": "hidden",
+                "padding": 0,
+                "position": "absolute",
+                "whiteSpace": "nowrap",
+                "width": 1,
+                "wordWrap": "normal",
+              }
+            }
+          >
+            code
+          </span>
         </span>
         <span>
           JavaScript
@@ -268,9 +306,10 @@ exports[`card Card without description renders as expected 1`] = `
           className="mr6"
         >
           <svg
+            aria-hidden="true"
             className="events-none icon"
+            data-testid="icon-code"
             focusable="false"
-            role="presentation"
             style={
               Object {
                 "height": 18,
@@ -283,6 +322,24 @@ exports[`card Card without description renders as expected 1`] = `
               xmlnsXlink="http://www.w3.org/1999/xlink"
             />
           </svg>
+          <span
+            style={
+              Object {
+                "border": 0,
+                "clip": "rect(0, 0, 0, 0)",
+                "height": 1,
+                "margin": -1,
+                "overflow": "hidden",
+                "padding": 0,
+                "position": "absolute",
+                "whiteSpace": "nowrap",
+                "width": 1,
+                "wordWrap": "normal",
+              }
+            }
+          >
+            code
+          </span>
         </span>
         <span>
           JavaScript

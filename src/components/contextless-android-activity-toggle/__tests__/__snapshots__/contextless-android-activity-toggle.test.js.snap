@@ -269,9 +269,6 @@ exports[`contextless-android-activity-toggle Basic renders as expected 1`] = `
           </div>
         </code>
       </pre>
-      <div
-        className="absolute z2 top right mr6 mt6 color-white"
-      />
     </div>
   </div>
 </div>
@@ -392,9 +389,6 @@ exports[`contextless-android-activity-toggle Kotlin only renders as expected 1`]
           </div>
         </code>
       </pre>
-      <div
-        className="absolute z2 top right mr6 mt6 color-white"
-      />
     </div>
   </div>
 </div>
@@ -421,50 +415,50 @@ exports[`contextless-android-activity-toggle Two languages (code toggle not inte
         <div
           className="relative "
         >
-          <fieldset>
-            <div
-              aria-required={true}
-              className="toggle-group round-full bg-blue py3 px3"
-              data-test="test-java-kotlin-input"
-              id="test-java-kotlin"
-              role="radiogroup"
+          <div
+            aria-required={true}
+            className="toggle-group round-full bg-blue py3 px3"
+            data-testid="test-java-kotlin-input"
+            id="test-java-kotlin"
+            role="radiogroup"
+          >
+            <label
+              className="toggle-container "
             >
-              <label
-                className="toggle-container "
+              <input
+                autoFocus={false}
+                checked={true}
+                data-testid="test-java-kotlin-0-input"
+                name="test-java-kotlin"
+                onChange={[Function]}
+                type="radio"
+                value="java"
+              />
+              <div
+                className="txt-s py3 toggle--white toggle--active-blue toggle"
               >
-                <input
-                  autoFocus={false}
-                  checked={true}
-                  name="test-java-kotlin"
-                  onChange={[Function]}
-                  type="radio"
-                  value="java"
-                />
-                <div
-                  className="txt-s py3 toggle--white toggle--active-blue toggle"
-                >
-                  Java
-                </div>
-              </label>
-              <label
-                className="toggle-container "
+                Java
+              </div>
+            </label>
+            <label
+              className="toggle-container "
+            >
+              <input
+                autoFocus={false}
+                checked={false}
+                data-testid="test-java-kotlin-1-input"
+                name="test-java-kotlin"
+                onChange={[Function]}
+                type="radio"
+                value="kotlin"
+              />
+              <div
+                className="txt-s py3 toggle--white toggle--active-blue toggle"
               >
-                <input
-                  autoFocus={false}
-                  checked={false}
-                  name="test-java-kotlin"
-                  onChange={[Function]}
-                  type="radio"
-                  value="kotlin"
-                />
-                <div
-                  className="txt-s py3 toggle--white toggle--active-blue toggle"
-                >
-                  Kotlin
-                </div>
-              </label>
-            </div>
-          </fieldset>
+                Kotlin
+              </div>
+            </label>
+          </div>
           <div
             role="alert"
           />
@@ -732,9 +726,6 @@ exports[`contextless-android-activity-toggle Two languages (code toggle not inte
           </div>
         </code>
       </pre>
-      <div
-        className="absolute z2 top right mr6 mt6 color-white"
-      />
     </div>
   </div>
 </div>

@@ -4,37 +4,52 @@ exports[`back-top-top-button Just the button renders as expected 1`] = `
 <div
   className="mx24 my24 z5"
 >
-  <div
-    className="inline-block"
+  <button
+    ariaLabel="Back to top"
+    className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
+    data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
-    onKeyDown={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
   >
-    <button
-      aria-label="Back to top"
-      className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
-      disabled={false}
-      onClick={[Function]}
-      type="button"
-    >
-      <svg
-        className="events-none icon"
-        focusable="false"
-        role="presentation"
-        style={
-          Object {
-            "height": 30,
-            "width": 30,
-          }
+    <svg
+      aria-hidden="true"
+      className="events-none icon"
+      data-testid="icon-arrow-up"
+      focusable="false"
+      style={
+        Object {
+          "height": 30,
+          "width": 30,
         }
-      >
-        <use
-          xlinkHref="#icon-arrow-up"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        />
-      </svg>
-    </button>
-  </div>
+      }
+    >
+      <use
+        xlinkHref="#icon-arrow-up"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+    <span
+      style={
+        Object {
+          "border": 0,
+          "clip": "rect(0, 0, 0, 0)",
+          "height": 1,
+          "margin": -1,
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "absolute",
+          "whiteSpace": "nowrap",
+          "width": 1,
+          "wordWrap": "normal",
+        }
+      }
+    >
+      arrow-up
+    </span>
+  </button>
 </div>
 `;

@@ -28,9 +28,10 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
               className="mb-neg3"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon"
+                data-testid="icon-chevron-up"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 12,
@@ -43,14 +44,33 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                chevron-up
+              </span>
             </div>
             <div
               className="mt-neg3"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon"
+                data-testid="icon-chevron-down"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 12,
@@ -63,6 +83,24 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                chevron-down
+              </span>
             </div>
           </div>
           <div
@@ -490,9 +528,10 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
               className="mb-neg3"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon"
+                data-testid="icon-chevron-up"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 12,
@@ -505,14 +544,33 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                chevron-up
+              </span>
             </div>
             <div
               className="mt-neg3"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon"
+                data-testid="icon-chevron-down"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 12,
@@ -525,6 +583,24 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                chevron-down
+              </span>
             </div>
           </div>
           <div
@@ -562,7 +638,92 @@ exports[`numbered-code-snippet Basic renders as expected 1`] = `
         "transition": "opacity 300ms linear",
       }
     }
-  />
+  >
+    <div
+      aria-label="Copy"
+      data-clipboard-text="        override func viewDidLoad() {
+            super.viewDidLoad()
+
+            let mapView = MGLMapView(frame: view.bounds)
+            mapView.styleURL = MGLStyle.lightStyleURL
+            mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+
+            mapView.setCenter(CLLocationCoordinate2D(latitude: 44.971, longitude: -93.261), zoomLevel: 10, animated: false)
+
+            mapView.delegate = self
+            view.addSubview(mapView)
+        }
+"
+      data-testid="copy-button"
+      onClick={[Function]}
+      role="button"
+    >
+      <span
+        style={
+          Object {
+            "display": "contents",
+          }
+        }
+      >
+        <div
+          aria-controls="radix-0"
+          aria-expanded={false}
+          aria-haspopup="dialog"
+          data-state="closed"
+          onClick={[Function]}
+          type="button"
+        >
+          <button
+            className="btn btn--xs py3 px3 round"
+            data-state="closed"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onPointerDown={[Function]}
+            onPointerLeave={[Function]}
+            onPointerMove={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="events-none icon"
+              data-testid="icon-clipboard"
+              focusable="false"
+              style={
+                Object {
+                  "height": 18,
+                  "width": 18,
+                }
+              }
+            >
+              <use
+                xlinkHref="#icon-clipboard"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              />
+            </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              clipboard
+            </span>
+          </button>
+        </div>
+      </span>
+    </div>
+  </div>
 </div>
 `;
 
@@ -2029,7 +2190,83 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
         "transition": "opacity 300ms linear",
       }
     }
-  />
+  >
+    <div
+      aria-label="Copy"
+      data-clipboard-text="        let source = MGLVectorTileSource(identifier: \\"historical-places\\", configurationURL: URL(string: \\"mapbox://examples.5zzwbooj\\")!)
+
+        style.addSource(source)
+"
+      data-testid="copy-button"
+      onClick={[Function]}
+      role="button"
+    >
+      <span
+        style={
+          Object {
+            "display": "contents",
+          }
+        }
+      >
+        <div
+          aria-controls="radix-1"
+          aria-expanded={false}
+          aria-haspopup="dialog"
+          data-state="closed"
+          onClick={[Function]}
+          type="button"
+        >
+          <button
+            className="btn btn--xs py3 px3 round"
+            data-state="closed"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onPointerDown={[Function]}
+            onPointerLeave={[Function]}
+            onPointerMove={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="events-none icon"
+              data-testid="icon-clipboard"
+              focusable="false"
+              style={
+                Object {
+                  "height": 18,
+                  "width": 18,
+                }
+              }
+            >
+              <use
+                xlinkHref="#icon-clipboard"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              />
+            </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              clipboard
+            </span>
+          </button>
+        </div>
+      </span>
+    </div>
+  </div>
   <div
     className="absolute z3 right mr3 color-white"
     data-chunk-copy="chunk-3"
@@ -2039,7 +2276,81 @@ exports[`numbered-code-snippet Don't collapse lines renders as expected 1`] = `
         "transition": "opacity 300ms linear",
       }
     }
-  />
+  >
+    <div
+      aria-label="Copy"
+      data-clipboard-text="        layer.circleRadius = NSExpression(format: \\"mgl_interpolate:withCurveType:parameters:stops:($zoomLevel, 'linear', nil, %@)\\", zoomStops)
+"
+      data-testid="copy-button"
+      onClick={[Function]}
+      role="button"
+    >
+      <span
+        style={
+          Object {
+            "display": "contents",
+          }
+        }
+      >
+        <div
+          aria-controls="radix-2"
+          aria-expanded={false}
+          aria-haspopup="dialog"
+          data-state="closed"
+          onClick={[Function]}
+          type="button"
+        >
+          <button
+            className="btn btn--xs py3 px3 round"
+            data-state="closed"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onPointerDown={[Function]}
+            onPointerLeave={[Function]}
+            onPointerMove={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="events-none icon"
+              data-testid="icon-clipboard"
+              focusable="false"
+              style={
+                Object {
+                  "height": 18,
+                  "width": 18,
+                }
+              }
+            >
+              <use
+                xlinkHref="#icon-clipboard"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              />
+            </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              clipboard
+            </span>
+          </button>
+        </div>
+      </span>
+    </div>
+  </div>
 </div>
 `;
 
@@ -2241,9 +2552,10 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
               className="mb-neg3"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon"
+                data-testid="icon-chevron-up"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 12,
@@ -2256,14 +2568,33 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                chevron-up
+              </span>
             </div>
             <div
               className="mt-neg3"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon"
+                data-testid="icon-chevron-down"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 12,
@@ -2276,6 +2607,24 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                chevron-down
+              </span>
             </div>
           </div>
           <div
@@ -2313,7 +2662,85 @@ exports[`numbered-code-snippet First line renders as expected 1`] = `
         "transition": "opacity 300ms linear",
       }
     }
-  />
+  >
+    <div
+      aria-label="Copy"
+      data-clipboard-text="import UIKit
+import Mapbox
+
+class DDSCircleLayerTutorialViewController: UIViewController, MGLMapViewDelegate {
+
+"
+      data-testid="copy-button"
+      onClick={[Function]}
+      role="button"
+    >
+      <span
+        style={
+          Object {
+            "display": "contents",
+          }
+        }
+      >
+        <div
+          aria-controls="radix-3"
+          aria-expanded={false}
+          aria-haspopup="dialog"
+          data-state="closed"
+          onClick={[Function]}
+          type="button"
+        >
+          <button
+            className="btn btn--xs py3 px3 round"
+            data-state="closed"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onPointerDown={[Function]}
+            onPointerLeave={[Function]}
+            onPointerMove={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="events-none icon"
+              data-testid="icon-clipboard"
+              focusable="false"
+              style={
+                Object {
+                  "height": 18,
+                  "width": 18,
+                }
+              }
+            >
+              <use
+                xlinkHref="#icon-clipboard"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              />
+            </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              clipboard
+            </span>
+          </button>
+        </div>
+      </span>
+    </div>
+  </div>
 </div>
 `;
 
@@ -2345,9 +2772,10 @@ exports[`numbered-code-snippet Last line renders as expected 1`] = `
               className="mb-neg3"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon"
+                data-testid="icon-chevron-up"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 12,
@@ -2360,14 +2788,33 @@ exports[`numbered-code-snippet Last line renders as expected 1`] = `
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                chevron-up
+              </span>
             </div>
             <div
               className="mt-neg3"
             >
               <svg
+                aria-hidden="true"
                 className="events-none icon"
+                data-testid="icon-chevron-down"
                 focusable="false"
-                role="presentation"
                 style={
                   Object {
                     "height": 12,
@@ -2380,6 +2827,24 @@ exports[`numbered-code-snippet Last line renders as expected 1`] = `
                   xmlnsXlink="http://www.w3.org/1999/xlink"
                 />
               </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                chevron-down
+              </span>
             </div>
           </div>
           <div
@@ -2587,6 +3052,84 @@ exports[`numbered-code-snippet Last line renders as expected 1`] = `
         "transition": "opacity 300ms linear",
       }
     }
-  />
+  >
+    <div
+      aria-label="Copy"
+      data-clipboard-text="        layer.circleRadius = NSExpression(format: \\"mgl_interpolate:withCurveType:parameters:stops:($zoomLevel, 'linear', nil, %@)\\", zoomStops)
+
+        style.addLayer(layer)
+    }
+}
+"
+      data-testid="copy-button"
+      onClick={[Function]}
+      role="button"
+    >
+      <span
+        style={
+          Object {
+            "display": "contents",
+          }
+        }
+      >
+        <div
+          aria-controls="radix-4"
+          aria-expanded={false}
+          aria-haspopup="dialog"
+          data-state="closed"
+          onClick={[Function]}
+          type="button"
+        >
+          <button
+            className="btn btn--xs py3 px3 round"
+            data-state="closed"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onPointerDown={[Function]}
+            onPointerLeave={[Function]}
+            onPointerMove={[Function]}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="events-none icon"
+              data-testid="icon-clipboard"
+              focusable="false"
+              style={
+                Object {
+                  "height": 18,
+                  "width": 18,
+                }
+              }
+            >
+              <use
+                xlinkHref="#icon-clipboard"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              />
+            </svg>
+            <span
+              style={
+                Object {
+                  "border": 0,
+                  "clip": "rect(0, 0, 0, 0)",
+                  "height": 1,
+                  "margin": -1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "absolute",
+                  "whiteSpace": "nowrap",
+                  "width": 1,
+                  "wordWrap": "normal",
+                }
+              }
+            >
+              clipboard
+            </span>
+          </button>
+        </div>
+      </span>
+    </div>
+  </div>
 </div>
 `;

@@ -21,9 +21,10 @@ exports[`code-snippet-title Basic renders as expected 1`] = `
         title="View MainActivity.java on GitHub"
       >
         <svg
+          aria-hidden="true"
           className="events-none icon inline-block align-t"
+          data-testid="icon-github"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 18,
@@ -36,6 +37,24 @@ exports[`code-snippet-title Basic renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          github
+        </span>
          View on GitHub
       </a>
     </div>
@@ -64,9 +83,10 @@ exports[`code-snippet-title With a toggle renders as expected 1`] = `
         title="View ViewController on GitHub"
       >
         <svg
+          aria-hidden="true"
           className="events-none icon inline-block align-t"
+          data-testid="icon-github"
           focusable="false"
-          role="presentation"
           style={
             Object {
               "height": 18,
@@ -79,6 +99,24 @@ exports[`code-snippet-title With a toggle renders as expected 1`] = `
             xmlnsXlink="http://www.w3.org/1999/xlink"
           />
         </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          github
+        </span>
          View on GitHub
       </a>
     </div>
@@ -87,50 +125,50 @@ exports[`code-snippet-title With a toggle renders as expected 1`] = `
     <div
       className="relative "
     >
-      <fieldset>
-        <div
-          aria-required={true}
-          className="toggle-group round-full bg-blue py3 px3"
-          data-test="some-id-input"
-          id="some-id"
-          role="radiogroup"
+      <div
+        aria-required={true}
+        className="toggle-group round-full bg-blue py3 px3"
+        data-testid="some-id-input"
+        id="some-id"
+        role="radiogroup"
+      >
+        <label
+          className="toggle-container "
         >
-          <label
-            className="toggle-container "
+          <input
+            autoFocus={false}
+            checked={true}
+            data-testid="some-id-0-input"
+            name="some-id"
+            onChange={[Function]}
+            type="radio"
+            value="swift"
+          />
+          <div
+            className="txt-s py3 toggle--white toggle--active-blue toggle"
           >
-            <input
-              autoFocus={false}
-              checked={true}
-              name="some-id"
-              onChange={[Function]}
-              type="radio"
-              value="swift"
-            />
-            <div
-              className="txt-s py3 toggle--white toggle--active-blue toggle"
-            >
-              Swift
-            </div>
-          </label>
-          <label
-            className="toggle-container "
+            Swift
+          </div>
+        </label>
+        <label
+          className="toggle-container "
+        >
+          <input
+            autoFocus={false}
+            checked={false}
+            data-testid="some-id-1-input"
+            name="some-id"
+            onChange={[Function]}
+            type="radio"
+            value="objectiveC"
+          />
+          <div
+            className="txt-s py3 toggle--white toggle--active-blue toggle"
           >
-            <input
-              autoFocus={false}
-              checked={false}
-              name="some-id"
-              onChange={[Function]}
-              type="radio"
-              value="objectiveC"
-            />
-            <div
-              className="txt-s py3 toggle--white toggle--active-blue toggle"
-            >
-              Objective-C
-            </div>
-          </label>
-        </div>
-      </fieldset>
+            Objective-C
+          </div>
+        </label>
+      </div>
       <div
         role="alert"
       />
