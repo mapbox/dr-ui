@@ -74,7 +74,10 @@ Once all changes are on the main branch, follow these steps:
 
 ## Automatically create Pull Requests for docs sites
 
-A new release needs to be deployed on the various docs sites that consume `dr-ui`. `scripts/create-pull-request.sh` includes a sequence of shell commands to navigate to a docs repo on your local dev environment, run `npm install @mapbox/dr-ui` to install a specific version of `dr-ui`, commit `package.json` and `package.lock` to a new branch, and create a github pull request.
+A new release needs to be deployed on the various docs sites that consume `dr-ui`. Two scripts have been configured to perform this task. Both scripts do the same task, so please choose one option and run that only.
+
+### First Script
+The first script, `scripts/create-pull-request.sh`, includes a sequence of shell commands to navigate to a docs repo on your local dev environment, run `npm install @mapbox/dr-ui` to install a specific version of `dr-ui`, commit `package.json` and `package.lock` to a new branch, and create a github pull request. It must be run once for every docs repo using dr-ui, a total of 16.
 
 This script should be run from the root of this repository, and requires you to have [github cli](https://cli.github.com/) installed.
 
@@ -85,6 +88,21 @@ To use:
 
 `docs-repo` is the name of the directory for a docs repo that is already cloned to your local environment and is in the same directory as this repository.
 
-Example: `sh scripts/create-pull-request.sh 5.1.11 mapbox-gl-js-docs`
+Example: `sh scripts/create-pull-request.sh 5.1.12 mapbox-gl-js-docs`
 
 Repeat for all docs sites that need the update, and merge PRs through your normal workflow.
+
+### Second Script
+The second script, `scripts/update-dr-ui-all.sh`, includes the sequence of shell commands of the first script, but copied for each repo that must be updated. It should be run only one time total.
+
+This script should be run from the root of this repository, and requires you to have [github cli](https://cli.github.com/) installed.
+
+To use:
+
+- Authenticate with github cli by running `gh login`
+- From the root of this repository, run `sh scripts/update-dr-ui-all.sh [dr-ui version]`
+
+Example: `sh scripts/update-dr-ui-all.sh 5.1.12`
+
+
+Again, run this script only once, and merge PRs through your normal workflow.
