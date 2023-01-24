@@ -2,7 +2,7 @@
 
 ## 5.1.11
 
-- Updated mr-ui from v1.0.0 to v.2.1.4
+- Updated mr-ui from v1.0.0 to v2.1.4
 
 ## 5.1.10
 
