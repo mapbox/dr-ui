@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.1.11
+
+- Updated mr-ui from v1.0.0 to v.2.1.4
+
 ## 5.1.10
 
 - Added Mapbox Developers Discord button to PageLayout and content on right aside as a call-to-action
