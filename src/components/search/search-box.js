@@ -14,7 +14,9 @@ export class SearchBox extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      modalOpen: true // open model for a smooth transition from the facade
+      // there is a new instance of SearchBox every time SearchProvider renders,
+      // this lets us control whether the modal should appear on first render
+      modalOpen: props.initialModalOpen
     };
     this.docsSeachInput = React.createRef;
     this.openModal = this.openModal.bind(this);
@@ -285,6 +287,10 @@ export class SearchBox extends React.PureComponent {
   }
 }
 
+SearchBox.defaultProps = {
+  initialModalOpen: false
+};
+
 SearchBox.propTypes = {
   searchTerm: PropTypes.string,
   trackClickThrough: PropTypes.func,
@@ -303,7 +309,8 @@ SearchBox.propTypes = {
   overrideSearchTerm: PropTypes.string,
   themeCompact: PropTypes.bool,
   emptyResultMessage: PropTypes.node,
-  useModal: PropTypes.bool.isRequired
+  useModal: PropTypes.bool.isRequired,
+  initialModalOpen: PropTypes.bool
 };
 
 export class SearchButton extends React.PureComponent {

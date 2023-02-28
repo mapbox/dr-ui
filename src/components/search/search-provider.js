@@ -4,8 +4,22 @@ import { SearchProvider, WithSearch } from '@elastic/react-search-ui';
 import { SearchBox } from './search-box';
 
 class Search extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      firstRender: true // used to trigger the search modal only on the first click of SearchFacade
+    };
+  }
+
+  componentWillReceiveProps() {
+    this.setState({
+      firstRender: false
+    });
+  }
+
   render() {
     const { connector, resultsOnly, useModal } = this.props;
+    const { firstRender } = this.state;
 
     function handleMapContext({
       isLoading,
@@ -63,6 +77,7 @@ class Search extends React.PureComponent {
                 reset={reset}
                 {...this.props}
                 useModal={useModal && !resultsOnly} // disable modal if resultsOnly === true
+                initialModalOpen={firstRender}
               />
             );
           }}
