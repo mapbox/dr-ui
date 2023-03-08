@@ -120,8 +120,7 @@ function pageSorter(pages) {
     ...withTopicJp,
     // add items with level and sort them by level
     ...sortBy(withLevel, 'level'),
-    // add items with nonLevelOrder and sort them by order
-    // DON'T USE nonLevelOrder and level at the same time...they don't interact well. :(
+    // add items with order and sort them by order
     ...sortBy(withOrder, 'order'),
     // add all other items and sort them alphabetically by title
     ...sortAlpha(theRest)
