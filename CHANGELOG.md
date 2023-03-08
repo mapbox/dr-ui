@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.1.12
+
+- 'order' frontmatter enabled to order GL JS examples
+
 ## 5.1.11
 
 - Updated mr-ui from v1.0.0 to v2.1.4
