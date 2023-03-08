@@ -104,16 +104,25 @@ function pageSorter(pages) {
   const withLevel = pages.filter(
     (page) => page.level && notGettingStarted(page)
   );
+
+  const withOrder = pages.filter(
+    (page) => page.order && notGettingStarted(page)
+  );
+
   // exclude withTopic and withLevel values
   const theRest = pages.filter(
-    (page) => !page.level && notGettingStarted(page)
+    (page) => !page.level && !page.order && notGettingStarted(page)
   );
+
   return [
     // add items with topic
     ...withTopicEn,
     ...withTopicJp,
     // add items with level and sort them by level
     ...sortBy(withLevel, 'level'),
+    // add items with nonLevelOrder and sort them by order
+    // DON'T USE nonLevelOrder and level at the same time...they don't interact well. :(
+    ...sortBy(withOrder, 'order'),
     // add all other items and sort them alphabetically by title
     ...sortAlpha(theRest)
   ];
