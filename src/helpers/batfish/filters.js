@@ -104,16 +104,30 @@ function pageSorter(pages) {
   const withLevel = pages.filter(
     (page) => page.level && notGettingStarted(page)
   );
+
+  const withOrder = pages.filter(
+    (page) => page.order && notGettingStarted(page)
+  );
+
   // exclude withTopic and withLevel values
   const theRest = pages.filter(
-    (page) => !page.level && notGettingStarted(page)
+    (page) => !page.level && !page.order && notGettingStarted(page)
   );
+
+  // sortedByLevelOrder prevents 'level' and 'order' from interacting.
+  // DO NOT USE 'level' AND 'order' IN THE SAME FRONTMATTER.
+  // If you do, this filter will completely ignore `order`.
+  let sortedByLevelOrOrder = sortBy(withLevel, 'level');
+  if (withLevel.length === 0) {
+    sortedByLevelOrOrder = sortBy(withOrder, 'order');
+  }
+
   return [
     // add items with topic
     ...withTopicEn,
     ...withTopicJp,
-    // add items with level and sort them by level
-    ...sortBy(withLevel, 'level'),
+    // add items sorted by level, or by order if level does not exist in the collection of items
+    ...sortedByLevelOrOrder,
     // add all other items and sort them alphabetically by title
     ...sortAlpha(theRest)
   ];
