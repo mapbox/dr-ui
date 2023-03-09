@@ -114,17 +114,30 @@ function pageSorter(pages) {
     (page) => !page.level && !page.order && notGettingStarted(page)
   );
 
-  return [
-    // add items with topic
-    ...withTopicEn,
-    ...withTopicJp,
-    // add items with level and sort them by level
-    ...sortBy(withLevel, 'level'),
-    // add items with order and sort them by order
-    ...sortBy(withOrder, 'order'),
-    // add all other items and sort them alphabetically by title
-    ...sortAlpha(theRest)
-  ];
+  // If / else prevents 'level' and 'order' from interacting.
+  // DO NOT USE 'level' AND 'order' IN THE SAME FRONTMATTER.
+  // If you do, this filter will completely ignore `order`.
+  if (withLevel.length > 0) {
+    return [
+      // add items with topic
+      ...withTopicEn,
+      ...withTopicJp,
+      // add items with level and sort them by level
+      ...sortBy(withLevel, 'level'),
+      // add all other items and sort them alphabetically by title
+      ...sortAlpha(theRest)
+    ];
+  } else {
+    return [
+      // add items with topic
+      ...withTopicEn,
+      ...withTopicJp,
+      // add items with order and sort them by order
+      ...sortBy(withOrder, 'order'),
+      // add all other items and sort them alphabetically by title
+      ...sortAlpha(theRest)
+    ];
+  }
 }
 
 module.exports = {
