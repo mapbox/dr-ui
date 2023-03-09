@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.1.13
+
+- fix collisions between 'order' and 'level' frontmatter ordering
+
 ## 5.1.12
 
 - 'order' frontmatter enabled to order GL JS examples
