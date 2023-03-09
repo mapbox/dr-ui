@@ -145,7 +145,7 @@ describe('generateTopics', () => {
 });
 
 describe('pageSorter', () => {
-  it('works', () => {
+  it('works, level', () => {
     expect(
       pageSorter([
         {
@@ -179,7 +179,41 @@ describe('pageSorter', () => {
     ]);
   });
 
-  it('works, jp', () => {
+  it('works, order', () => {
+    expect(
+      pageSorter([
+        {
+          title: 'Donkey',
+          topic: '3D'
+        },
+        {
+          title: 'Spider Monkey',
+          order: 1
+        },
+        {
+          title: 'Zebra',
+          topic: 'Getting started',
+          order: 3
+        },
+        {
+          title: 'Zedonk',
+          topics: ['Getting started']
+        },
+        {
+          title: 'Giraffe',
+          order: 3
+        }
+      ])
+    ).toEqual([
+      { title: 'Zebra', topic: 'Getting started', order: 3 },
+      { title: 'Zedonk', topics: ['Getting started'] },
+      { order: 1, title: 'Spider Monkey' },
+      { order: 3, title: 'Giraffe' },
+      { title: 'Donkey', topic: '3D' }
+    ]);
+  });
+
+  it('works, level, jp', () => {
     expect(
       pageSorter([
         {
@@ -208,6 +242,39 @@ describe('pageSorter', () => {
       { title: 'Zedonk', topics: ['まず始めに'] },
       { level: 1, title: 'Spider Monkey' },
       { level: 3, title: 'Giraffe' },
+      { title: 'Donkey', topic: 'Webアプリ' }
+    ]);
+  });
+
+  it('works, order, jp', () => {
+    expect(
+      pageSorter([
+        {
+          title: 'Donkey',
+          topic: 'Webアプリ'
+        },
+        {
+          title: 'Spider Monkey',
+          order: 1
+        },
+        {
+          title: 'Zebra',
+          topic: 'まず始めに'
+        },
+        {
+          title: 'Zedonk',
+          topics: ['まず始めに']
+        },
+        {
+          title: 'Giraffe',
+          order: 3
+        }
+      ])
+    ).toEqual([
+      { title: 'Zebra', topic: 'まず始めに' },
+      { title: 'Zedonk', topics: ['まず始めに'] },
+      { order: 1, title: 'Spider Monkey' },
+      { order: 3, title: 'Giraffe' },
       { title: 'Donkey', topic: 'Webアプリ' }
     ]);
   });
