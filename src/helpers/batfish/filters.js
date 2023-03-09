@@ -118,7 +118,7 @@ function pageSorter(pages) {
   // DO NOT USE 'level' AND 'order' IN THE SAME FRONTMATTER.
   // If you do, this filter will completely ignore `order`.
   let sortedByLevelOrOrder = sortBy(withLevel, 'level');
-  if (withLevel.length > 0) {
+  if (withLevel.length === 0) {
     sortedByLevelOrOrder = sortBy(withOrder, 'order');
   }
 
