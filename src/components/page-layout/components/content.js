@@ -161,8 +161,14 @@ export class ContentWrapper extends React.PureComponent {
                   'block none-mxl': layout !== 'full' // hide feedback at bottom of page on larger screens unless layout is full (always show it on the bottom)
                 })}
               >
-                <SignupBanner />
-                <DiscordCTA />
+                <div className="flex mx-neg12">
+                  <div className="w-1/2 px6">
+                    <SignupBanner />
+                  </div>
+                  <div className="w-1/2 px6">
+                    <DiscordCTA />
+                  </div>
+                </div>
                 {this.renderFeedback()}
               </div>
             )}
