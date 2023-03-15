@@ -626,9 +626,7 @@ Array [
                                 code
                               </span>
                             </span>
-                            <span>
-                              JavaScript
-                            </span>
+                            JavaScript
                           </span>
                         </div>
                         <div
@@ -703,9 +701,7 @@ Array [
                                 code
                               </span>
                             </span>
-                            <span>
-                              JavaScript
-                            </span>
+                            JavaScript
                           </span>
                         </div>
                         <div
@@ -780,9 +776,7 @@ Array [
                                 code
                               </span>
                             </span>
-                            <span>
-                              JavaScript
-                            </span>
+                            JavaScript
                           </span>
                         </div>
                         <div
@@ -814,7 +808,7 @@ Array [
       className="mx24 my24 z5"
     >
       <button
-        ariaLabel="Back to top"
+        aria-label="Back to top"
         className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
         data-state="closed"
         onBlur={[Function]}
@@ -1485,7 +1479,7 @@ Array [
       className="mx24 my24 z5"
     >
       <button
-        ariaLabel="Back to top"
+        aria-label="Back to top"
         className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
         data-state="closed"
         onBlur={[Function]}
@@ -1825,7 +1819,7 @@ Array [
       className="mx24 my24 z5"
     >
       <button
-        ariaLabel="Back to top"
+        aria-label="Back to top"
         className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
         data-state="closed"
         onBlur={[Function]}
@@ -2696,7 +2690,7 @@ Array [
       className="mx24 my24 z5"
     >
       <button
-        ariaLabel="Back to top"
+        aria-label="Back to top"
         className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
         data-state="closed"
         onBlur={[Function]}
@@ -3501,7 +3495,7 @@ Array [
       className="mx24 my24 z5"
     >
       <button
-        ariaLabel="Back to top"
+        aria-label="Back to top"
         className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
         data-state="closed"
         onBlur={[Function]}
@@ -3969,7 +3963,7 @@ Array [
       className="mx24 my24 z5"
     >
       <button
-        ariaLabel="Back to top"
+        aria-label="Back to top"
         className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
         data-state="closed"
         onBlur={[Function]}

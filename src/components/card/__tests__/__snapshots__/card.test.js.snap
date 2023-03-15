@@ -105,9 +105,7 @@ exports[`card Card with image renders as expected 1`] = `
             code
           </span>
         </span>
-        <span>
-          JavaScript
-        </span>
+        JavaScript
       </span>
     </div>
     <div
@@ -216,9 +214,7 @@ exports[`card Card with no image renders as expected 1`] = `
             code
           </span>
         </span>
-        <span>
-          JavaScript
-        </span>
+        JavaScript
       </span>
     </div>
     <div
@@ -341,9 +337,7 @@ exports[`card Card without description renders as expected 1`] = `
             code
           </span>
         </span>
-        <span>
-          JavaScript
-        </span>
+        JavaScript
       </span>
     </div>
     <div

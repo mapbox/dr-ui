@@ -448,9 +448,7 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
                 github
               </span>
             </span>
-            <span>
-              Contribute on GitHub
-            </span>
+            Contribute on GitHub
           </span>
         </a>
       </div>
@@ -706,9 +704,7 @@ exports[`overview-header Basic renders as expected 1`] = `
                 github
               </span>
             </span>
-            <span>
-              Contribute on GitHub
-            </span>
+            Contribute on GitHub
           </span>
         </a>
       </div>
@@ -1430,9 +1426,7 @@ exports[`overview-header Some optional props renders as expected 1`] = `
                 github
               </span>
             </span>
-            <span>
-              Contribute on GitHub
-            </span>
+            Contribute on GitHub
           </span>
         </a>
       </div>
