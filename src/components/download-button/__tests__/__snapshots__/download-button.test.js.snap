@@ -49,9 +49,7 @@ exports[`DownloadButton Default DownloadButton renders as expected 1`] = `
         arrow-down
       </span>
     </span>
-    <span>
-      Download CSV
-    </span>
+    Download CSV
   </span>
 </a>
 `;
@@ -105,9 +103,7 @@ exports[`DownloadButton DownloadButton for PNG renders as expected 1`] = `
         arrow-down
       </span>
     </span>
-    <span>
-      Download PNG
-    </span>
+    Download PNG
   </span>
 </a>
 `;
@@ -161,9 +157,7 @@ exports[`DownloadButton DownloadButton with optional text renders as expected 1`
         arrow-down
       </span>
     </span>
-    <span>
-      Download for iOS
-    </span>
+    Download for iOS
   </span>
 </a>
 `;
@@ -220,9 +214,7 @@ exports[`DownloadButton DownloadButton with prose class renders as expected 1`] 
           arrow-down
         </span>
       </span>
-      <span>
-        Download PNG
-      </span>
+      Download PNG
     </span>
   </a>
 </div>

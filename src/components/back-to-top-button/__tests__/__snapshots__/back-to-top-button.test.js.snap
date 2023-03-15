@@ -5,7 +5,7 @@ exports[`back-top-top-button Just the button renders as expected 1`] = `
   className="mx24 my24 z5"
 >
   <button
-    ariaLabel="Back to top"
+    aria-label="Back to top"
     className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
     data-state="closed"
     onBlur={[Function]}

@@ -16,7 +16,7 @@ export default class BackToTopButton extends React.PureComponent {
           <button
             onClick={handleClick}
             className="btn btn--blue w60 h60 round-full shadow-darken25 flex flex--center-main flex--center-cross"
-            ariaLabel="Back to top"
+            aria-label="Back to top"
           >
             <Icon name="arrow-up" size={30} />
           </button>
