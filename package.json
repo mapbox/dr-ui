@@ -17,9 +17,9 @@
     "prebuild": "npm run build-theme-css",
     "build": "scripts/build-module-indexes.js && scripts/build-package.js",
     "prepare-docs": "cpy ./src/test-cases-app/files/* ./docs/src/pages/files/ && cpy CHANGELOG.md ./docs/src/pages/ --rename=changelog.md && scripts/build-module-indexes.js && scripts/build-docs-data.js",
-    "start-docs": "npm run prepare-docs && batfish start --config='docs/batfish.config.js'",
-    "build-docs": "npm run prepare-docs && batfish build --config='docs/batfish.config.js'",
-    "serve-static-docs": "batfish serve-static --config='docs/batfish.config.js'",
+    "start-docs": "npm run prepare-docs && NODE_OPTIONS=--openssl-legacy-provider batfish start --config='docs/batfish.config.js'",
+    "build-docs": "npm run prepare-docs && NODE_OPTIONS=--openssl-legacy-provider batfish build --config='docs/batfish.config.js'",
+    "serve-static-docs": "NODE_OPTIONS=--openssl-legacy-provider batfish serve-static --config='docs/batfish.config.js'",
     "deploy-docs": "npm run build-docs && gh-pages -d docs/_site",
     "lint-md": "remark docs/src/pages/",
     "test-content": "copyeditor docs/src/pages --dict docs/local.dic",
@@ -128,7 +128,7 @@
     "*.{js,css,html,json,yml,md}": "prettier --write"
   },
   "engines": {
-    "node": ">=14",
-    "npm": "^7"
+    "node": ">=18",
+    "npm": ">=9"
   }
 }
