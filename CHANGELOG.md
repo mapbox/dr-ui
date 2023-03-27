@@ -1,5 +1,10 @@
 # Changelog
 
+## 5.1.14
+
+- fix layout of CTA boxes on wide screens (#556)
+- bump mr-ui to 2.4.0, fix ariaLabel console warning (#555)
+
 ## 5.1.13
 
 - fix collisions between 'order' and 'level' frontmatter ordering
