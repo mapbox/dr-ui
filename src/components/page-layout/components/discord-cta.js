@@ -5,7 +5,7 @@ export default class DiscordCTA extends React.PureComponent {
   render() {
     return (
       <a
-        className="dr-ui--signup-banner py18 px18 round-bold flex mt18 mb18 color-blue txt-ms flex flex--center-cross link bg-blue-lighter-on-hover transition"
+        className="dr-ui--discord-banner py18 px18 round-bold flex color-blue txt-ms flex flex--center-cross link bg-blue-lighter-on-hover transition"
         style={{
           backgroundColor: '#ECF1FD'
         }}

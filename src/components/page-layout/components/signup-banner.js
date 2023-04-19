@@ -28,10 +28,10 @@ export default class SignupBanner extends React.PureComponent {
     const { background, color } = themes['default'];
     return (
       <div
-        className={`dr-ui--signup-banner py18 px18 round-bold flex mt18 mb18 ${background} ${color}`}
+        className={`dr-ui--signup-banner py18 px18 round-bold flex ${background} ${color}`}
       >
-        <div className="w-full prose flex flex--wrap">
-          <div className="flex-child-grow">
+        <div className="w-full prose flex flex--wrap" style={{ rowGap: 10 }}>
+          <div className="flex-child-grow mr12">
             <div className="txt-bold mb6">Ready to get started?</div>
             <div className="txt-ms mb18-mxl">
               Create a free account to start building with Mapbox.

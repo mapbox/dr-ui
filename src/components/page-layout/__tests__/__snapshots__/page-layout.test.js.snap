@@ -476,10 +476,13 @@ Array [
                   </div>
                 </div>
                 <div
-                  className="my18 color-text none block-mxl"
+                  className="mb18"
+                />
+                <div
+                  className="my18 color-text none block-mxl mb-18"
                 >
                   <a
-                    className="dr-ui--signup-banner py18 px18 round-bold flex mt18 mb18 color-blue txt-ms flex flex--center-cross link bg-blue-lighter-on-hover transition"
+                    className="dr-ui--discord-banner py18 px18 round-bold flex color-blue txt-ms flex flex--center-cross link bg-blue-lighter-on-hover transition"
                     href="https://discord.gg/uMpcC5RmJh"
                     rel="noopener noreferrer"
                     style={
@@ -1277,10 +1280,13 @@ Array [
                 }
               >
                 <div
-                  className="my18 color-text none block-mxl"
+                  className="mb18"
+                />
+                <div
+                  className="my18 color-text none block-mxl mb-18"
                 >
                   <a
-                    className="dr-ui--signup-banner py18 px18 round-bold flex mt18 mb18 color-blue txt-ms flex flex--center-cross link bg-blue-lighter-on-hover transition"
+                    className="dr-ui--discord-banner py18 px18 round-bold flex color-blue txt-ms flex flex--center-cross link bg-blue-lighter-on-hover transition"
                     href="https://discord.gg/uMpcC5RmJh"
                     rel="noopener noreferrer"
                     style={
@@ -1381,16 +1387,16 @@ Array [
                 className="my36 color-text block none-mxl"
               >
                 <div
-                  className="flex mx-neg12"
+                  className="flex mx-neg6 flex--wrap"
                 >
                   <div
-                    className="w-1/2 px6"
+                    className="w-full w-1/2-ml px6 flex-child-no-shrink mb18"
                   />
                   <div
-                    className="w-1/2 px6"
+                    className="w-full w-1/2-ml px6 flex-child-no-shrink mb18"
                   >
                     <a
-                      className="dr-ui--signup-banner py18 px18 round-bold flex mt18 mb18 color-blue txt-ms flex flex--center-cross link bg-blue-lighter-on-hover transition"
+                      className="dr-ui--discord-banner py18 px18 round-bold flex color-blue txt-ms flex flex--center-cross link bg-blue-lighter-on-hover transition"
                       href="https://discord.gg/uMpcC5RmJh"
                       rel="noopener noreferrer"
                       style={
@@ -1732,16 +1738,16 @@ Array [
                 className="my36 color-text"
               >
                 <div
-                  className="flex mx-neg12"
+                  className="flex mx-neg6 flex--wrap"
                 >
                   <div
-                    className="w-1/2 px6"
+                    className="w-full w-1/2-ml px6 flex-child-no-shrink mb18"
                   />
                   <div
-                    className="w-1/2 px6"
+                    className="w-full w-1/2-ml px6 flex-child-no-shrink mb18"
                   >
                     <a
-                      className="dr-ui--signup-banner py18 px18 round-bold flex mt18 mb18 color-blue txt-ms flex flex--center-cross link bg-blue-lighter-on-hover transition"
+                      className="dr-ui--discord-banner py18 px18 round-bold flex color-blue txt-ms flex flex--center-cross link bg-blue-lighter-on-hover transition"
                       href="https://discord.gg/uMpcC5RmJh"
                       rel="noopener noreferrer"
                       style={
@@ -2404,10 +2410,13 @@ Array [
                   </ul>
                 </nav>
                 <div
-                  className="my18 color-text none block-mxl"
+                  className="mb18"
+                />
+                <div
+                  className="my18 color-text none block-mxl mb-18"
                 >
                   <a
-                    className="dr-ui--signup-banner py18 px18 round-bold flex mt18 mb18 color-blue txt-ms flex flex--center-cross link bg-blue-lighter-on-hover transition"
+                    className="dr-ui--discord-banner py18 px18 round-bold flex color-blue txt-ms flex flex--center-cross link bg-blue-lighter-on-hover transition"
                     href="https://discord.gg/uMpcC5RmJh"
                     rel="noopener noreferrer"
                     style={
@@ -2614,16 +2623,16 @@ Array [
                 className="my36 color-text block none-mxl"
               >
                 <div
-                  className="flex mx-neg12"
+                  className="flex mx-neg6 flex--wrap"
                 >
                   <div
-                    className="w-1/2 px6"
+                    className="w-full w-1/2-ml px6 flex-child-no-shrink mb18"
                   />
                   <div
-                    className="w-1/2 px6"
+                    className="w-full w-1/2-ml px6 flex-child-no-shrink mb18"
                   >
                     <a
-                      className="dr-ui--signup-banner py18 px18 round-bold flex mt18 mb18 color-blue txt-ms flex flex--center-cross link bg-blue-lighter-on-hover transition"
+                      className="dr-ui--discord-banner py18 px18 round-bold flex color-blue txt-ms flex flex--center-cross link bg-blue-lighter-on-hover transition"
                       href="https://discord.gg/uMpcC5RmJh"
                       rel="noopener noreferrer"
                       style={
@@ -3255,10 +3264,13 @@ Array [
                 }
               >
                 <div
-                  className="my18 color-text none block-mxl"
+                  className="mb18"
+                />
+                <div
+                  className="my18 color-text none block-mxl mb-18"
                 >
                   <a
-                    className="dr-ui--signup-banner py18 px18 round-bold flex mt18 mb18 color-blue txt-ms flex flex--center-cross link bg-blue-lighter-on-hover transition"
+                    className="dr-ui--discord-banner py18 px18 round-bold flex color-blue txt-ms flex flex--center-cross link bg-blue-lighter-on-hover transition"
                     href="https://discord.gg/uMpcC5RmJh"
                     rel="noopener noreferrer"
                     style={
@@ -3430,16 +3442,16 @@ Array [
                 className="my36 color-text block none-mxl"
               >
                 <div
-                  className="flex mx-neg12"
+                  className="flex mx-neg6 flex--wrap"
                 >
                   <div
-                    className="w-1/2 px6"
+                    className="w-full w-1/2-ml px6 flex-child-no-shrink mb18"
                   />
                   <div
-                    className="w-1/2 px6"
+                    className="w-full w-1/2-ml px6 flex-child-no-shrink mb18"
                   >
                     <a
-                      className="dr-ui--signup-banner py18 px18 round-bold flex mt18 mb18 color-blue txt-ms flex flex--center-cross link bg-blue-lighter-on-hover transition"
+                      className="dr-ui--discord-banner py18 px18 round-bold flex color-blue txt-ms flex flex--center-cross link bg-blue-lighter-on-hover transition"
                       href="https://discord.gg/uMpcC5RmJh"
                       rel="noopener noreferrer"
                       style={
@@ -3909,16 +3921,16 @@ Array [
                 className="my36 color-text"
               >
                 <div
-                  className="flex mx-neg12"
+                  className="flex mx-neg6 flex--wrap"
                 >
                   <div
-                    className="w-1/2 px6"
+                    className="w-full w-1/2-ml px6 flex-child-no-shrink mb18"
                   />
                   <div
-                    className="w-1/2 px6"
+                    className="w-full w-1/2-ml px6 flex-child-no-shrink mb18"
                   >
                     <a
-                      className="dr-ui--signup-banner py18 px18 round-bold flex mt18 mb18 color-blue txt-ms flex flex--center-cross link bg-blue-lighter-on-hover transition"
+                      className="dr-ui--discord-banner py18 px18 round-bold flex color-blue txt-ms flex flex--center-cross link bg-blue-lighter-on-hover transition"
                       href="https://discord.gg/uMpcC5RmJh"
                       rel="noopener noreferrer"
                       style={
