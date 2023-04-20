@@ -87,8 +87,11 @@ export class ContentWrapper extends React.PureComponent {
         {showToc && headings && headings.length > 0 && (
           <OnThisPage headings={headings} themeWrapper="mb24-mxl mb18" />
         )}
-        <SignupBanner />
-        <div className={'my18 color-text none block-mxl'}>
+        <div className="mb18">
+          <SignupBanner />
+        </div>
+
+        <div className="my18 color-text none block-mxl mb-18">
           <DiscordCTA />
         </div>
         {showFeedback && (
@@ -161,11 +164,11 @@ export class ContentWrapper extends React.PureComponent {
                   'block none-mxl': layout !== 'full' // hide feedback at bottom of page on larger screens unless layout is full (always show it on the bottom)
                 })}
               >
-                <div className="flex mx-neg12">
-                  <div className="w-1/2 px6">
+                <div className="flex mx-neg6 flex--wrap">
+                  <div className="w-full w-1/2-ml px6 flex-child-no-shrink mb18">
                     <SignupBanner />
                   </div>
-                  <div className="w-1/2 px6">
+                  <div className="w-full w-1/2-ml px6 flex-child-no-shrink mb18">
                     <DiscordCTA />
                   </div>
                 </div>
