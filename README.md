@@ -12,8 +12,8 @@ UI components for Mapbox documentation projects.
 
 **Requirements**
 
-- Node 14
-- npm 7
+- Node 18
+- npm 9
 
 If you're not sure if your Node and NPM versions are up to date, run `nvm use` before installing dependencies. If you don't have NVM installed, you can [find installation instructions here](https://github.com/nvm-sh/nvm/blob/master/README.md#installing-and-updating).
 
