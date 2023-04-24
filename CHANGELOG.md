@@ -1,5 +1,10 @@
 # Changelog
 
+## 5.2.0
+
+- css and layout tweaks for the CTA buttons (#558)
+- update engines to node 18 and npm 9 (#557)
+
 ## 5.1.14
 
 - fix layout of CTA boxes on wide screens (#556)
