@@ -45,7 +45,7 @@
     "@mapbox/appropriate-images-react": "^2.1.0",
     "@mapbox/batfish": "^2.3.0",
     "@mapbox/copyeditor": "^0.10.0",
-    "@mapbox/eslint-config-docs": "^2.0.0",
+    "@mapbox/eslint-config-docs": "^3.0.0",
     "@mapbox/jsxtreme-markdown": "^1.0.0",
     "@mapbox/prettier-config-docs": "^1.0.0",
     "@mapbox/react-test-kitchen": "^0.4.0",
