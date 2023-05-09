@@ -388,10 +388,8 @@ Array [
                         <div>
                           <label
                             className="inline-block txt-s txt-bold color-darken75"
-                            id="radix-0"
-                            onClick={[Function]}
+                            htmlFor="search"
                             onMouseDown={[Function]}
-                            role="label"
                           >
                             Search
                              
@@ -427,10 +425,8 @@ Array [
                         <div>
                           <label
                             className="inline-block txt-s txt-bold color-darken75 w70"
-                            id="radix-1"
-                            onClick={[Function]}
+                            htmlFor="topic"
                             onMouseDown={[Function]}
-                            role="label"
                           >
                             Topics
                              

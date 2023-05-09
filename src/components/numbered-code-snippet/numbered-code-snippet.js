@@ -7,7 +7,7 @@ import { HideLines, ShowLines } from './show-hide-lines';
 import onCopy from '../code-snippet/on-copy';
 
 function getWindow() {
-  if (typeof window === undefined) {
+  if (typeof window === 'undefined') {
     throw new Error('window not available');
   }
   return window;
@@ -292,6 +292,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
         if (codeChunk.live) blueLineWidth = 6;
 
         /* eslint-disable react/no-danger */
+        /* eslint-disable react/no-unknown-property */
         return (
           <div key={i} className={lineClasses} style={{ paddingLeft }}>
             <div
@@ -318,6 +319,7 @@ export default class NumberedCodeSnippet extends React.PureComponent {
           </div>
         );
         /* eslint-enable react/no-danger */
+        /* eslint-enable react/no-unknown-property */
       });
 
       /* For the first live chunk, add a ref. */

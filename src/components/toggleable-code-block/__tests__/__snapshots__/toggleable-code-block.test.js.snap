@@ -710,7 +710,7 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
           }
         >
           <div
-            aria-controls="radix-0"
+            aria-controls="radix-1"
             aria-expanded={false}
             aria-haspopup="dialog"
             data-state="closed"
@@ -797,7 +797,7 @@ exports[`toggleable-code-block Basic renders as expected 1`] = `
           }
         >
           <div
-            aria-controls="radix-1"
+            aria-controls="radix-3"
             aria-expanded={false}
             aria-haspopup="dialog"
             data-state="closed"

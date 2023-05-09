@@ -512,47 +512,30 @@ exports[`Workflow with logged in user information 2 - Something is confusing Che
                               asChild={true}
                               htmlFor="feedback-problem-textarea"
                             >
-                              <LabelProvider
-                                controlRef={
-                                  Object {
-                                    "current": null,
-                                  }
-                                }
-                                id="radix-0"
+                              <Primitive.label
+                                asChild={true}
+                                htmlFor="feedback-problem-textarea"
+                                onMouseDown={[Function]}
                               >
-                                <Primitive.span
-                                  asChild={true}
-                                  id="radix-0"
-                                  onClick={[Function]}
+                                <Slot
+                                  htmlFor="feedback-problem-textarea"
                                   onMouseDown={[Function]}
-                                  role="label"
                                 >
-                                  <Slot
-                                    id="radix-0"
-                                    onClick={[Function]}
+                                  <SlotClone
+                                    htmlFor="feedback-problem-textarea"
                                     onMouseDown={[Function]}
-                                    role="label"
                                   >
-                                    <SlotClone
-                                      id="radix-0"
-                                      onClick={[Function]}
+                                    <label
+                                      className="inline-block txt-m mb6"
+                                      htmlFor="feedback-problem-textarea"
                                       onMouseDown={[Function]}
-                                      role="label"
                                     >
-                                      <label
-                                        className="inline-block txt-m mb6"
-                                        id="radix-0"
-                                        onClick={[Function]}
-                                        onMouseDown={[Function]}
-                                        role="label"
-                                      >
-                                        What about this page is confusing? How can we improve the content?
-                                         
-                                      </label>
-                                    </SlotClone>
-                                  </Slot>
-                                </Primitive.span>
-                              </LabelProvider>
+                                      What about this page is confusing? How can we improve the content?
+                                       
+                                    </label>
+                                  </SlotClone>
+                                </Slot>
+                              </Primitive.label>
                             </Label>
                           </div>
                         </ControlLabel>

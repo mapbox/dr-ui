@@ -9,7 +9,3 @@ updates:
       interval: 'daily'
     reviewers:
       - '@mapbox/docs'
-    allow:
-      - dependency-name: '@mapbox/prettier-config-docs'
-      - dependency-name: '@mapbox/eslint-config-docs'
-      - dependency-name: '@mapbox/remark-config-docs'
