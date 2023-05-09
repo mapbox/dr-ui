@@ -66,6 +66,7 @@ export default class OnThisPage extends React.PureComponent {
     if (!headings) return <div />;
     const sections = buildSections(headings);
 
+    // eslint-disable-next-line react/prop-types
     const Headings = ({ headings, isChild, active }) => {
       if (!headings || !headings.length) {
         return null;
@@ -97,11 +98,13 @@ export default class OnThisPage extends React.PureComponent {
                   {heading.icon && <HeadingIcon name={heading.icon} />}
                   {heading.value}
                 </a>
+                {/* eslint-disable react/no-this-in-sfc */}
                 <Headings
                   isChild
                   active={this.isActive(heading)}
                   headings={heading.children}
                 />
+                {/* eslint-enable react/no-this-in-sfc */}
               </li>
             );
           })}
