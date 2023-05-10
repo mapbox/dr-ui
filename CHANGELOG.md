@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.2.1
+
+- various dependency updates
+
 ## 5.2.0
 
 - css and layout tweaks for the CTA buttons (#558)
