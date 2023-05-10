@@ -52,6 +52,11 @@ Content.propTypes = {
 };
 
 export class ContentWrapper extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.swiftypeRelatedContentRef = React.createRef();
+  }
+
   renderFeedback = () => {
     const { location, section, layoutConfig } = this.props;
     const { layout } = layoutConfig;
@@ -97,9 +102,23 @@ export class ContentWrapper extends React.PureComponent {
         {showFeedback && (
           <div className="none block-mxl">{this.renderFeedback()}</div>
         )}
+        <div ref={this.swiftypeRelatedContentRef} />
       </aside>
     );
   };
+
+  componentDidMount() {
+    const script = document.createElement('script');
+
+    script.setAttribute('data-st-module', 'em_xs6HtrNXkCR164C6NtTu');
+    script.src = '//s.swiftypecdn.com/modules/v1/embed.js';
+    script.async = true;
+    // script.defer = true;
+
+    // document.body.appendChild(script);
+
+    this.swiftypeRelatedContentRef.current.appendChild(script);
+  }
 
   render() {
     const { children, frontMatter, layoutConfig, navigation, location } =
@@ -171,6 +190,7 @@ export class ContentWrapper extends React.PureComponent {
                   <div className="w-full w-1/2-ml px6 flex-child-no-shrink mb18">
                     <DiscordCTA />
                   </div>
+                  O HAI THERE
                 </div>
                 {this.renderFeedback()}
               </div>
