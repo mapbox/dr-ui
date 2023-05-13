@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Downshift from 'downshift';
 import SearchModal from './search-modal';
 import SearchResult from './search-result';
-import { getFilterValueDisplay } from '@elastic/react-search-ui-views/lib/cjs/view-helpers';
+import { getFilterValueDisplay } from '@elastic/react-search-ui-views/lib/view-helpers';
 import { Facet } from '@elastic/react-search-ui';
 import classnames from 'classnames';
 import * as Sentry from '@sentry/browser';
