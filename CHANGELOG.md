@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.2.3
+
+- styling fix to Note component to prevent text overflow
+
 ## 5.2.2
 
 - roll back elastic dependencies to v1.7.0 (#572)
