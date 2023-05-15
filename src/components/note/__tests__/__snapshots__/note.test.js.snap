@@ -54,7 +54,7 @@ exports[`note A legacy note, has same styling as warning renders as expected 1`]
     </div>
   </div>
   <div
-    className="w-full prose"
+    className="w-full prose wmin0"
   >
     <div
       className="txt-bold mb6"
@@ -233,7 +233,7 @@ exports[`note A note to display an error with steps or links on how to troublesh
     </div>
   </div>
   <div
-    className="w-full prose"
+    className="w-full prose wmin0"
   >
     <div
       className="txt-bold mb6"
@@ -412,7 +412,7 @@ exports[`note A note to display with a message about new products or features. r
     </div>
   </div>
   <div
-    className="w-full prose"
+    className="w-full prose wmin0"
   >
     <div
       className="txt-bold mb6"
@@ -591,7 +591,7 @@ exports[`note A note to flag information about a beta release/product renders as
     </div>
   </div>
   <div
-    className="w-full prose"
+    className="w-full prose wmin0"
   >
     <div
       className="txt-bold mb6"
@@ -770,7 +770,7 @@ exports[`note A warning note to let the user know something has changed or will 
     </div>
   </div>
   <div
-    className="w-full prose"
+    className="w-full prose wmin0"
   >
     <div
       className="txt-bold mb6"
@@ -949,7 +949,7 @@ exports[`note Default note renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="w-full prose"
+    className="w-full prose wmin0"
   >
     <div
       className="txt-bold mb6"
@@ -1017,7 +1017,7 @@ exports[`note Note with custom title. renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="w-full prose"
+    className="w-full prose wmin0"
   >
     <div
       className="txt-bold mb6"
@@ -1196,7 +1196,7 @@ exports[`note download renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="w-full prose"
+    className="w-full prose wmin0"
   >
     <div
       className="txt-bold mb6"

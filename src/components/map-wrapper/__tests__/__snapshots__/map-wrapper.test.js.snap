@@ -61,7 +61,7 @@ exports[`map-wrapper Basic renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="w-full prose"
+      className="w-full prose wmin0"
     >
       <div
         className="txt-bold mb6"
@@ -135,7 +135,7 @@ exports[`map-wrapper reason='insufficient ECMAScript 6 support' renders as expec
       </div>
     </div>
     <div
-      className="w-full prose"
+      className="w-full prose wmin0"
     >
       <div
         className="txt-bold mb6"
@@ -239,7 +239,7 @@ exports[`map-wrapper reason='insufficient WebGL support' renders as expected 1`]
       </div>
     </div>
     <div
-      className="w-full prose"
+      className="w-full prose wmin0"
     >
       <div
         className="txt-bold mb6"

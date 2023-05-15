@@ -56,7 +56,7 @@ exports[`error-boundary Trigger error renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="w-full prose"
+    className="w-full prose wmin0"
   >
     <div
       className="txt-bold mb6"
@@ -136,7 +136,7 @@ exports[`error-boundary Trigger error with custom title and note contents render
     </div>
   </div>
   <div
-    className="w-full prose"
+    className="w-full prose wmin0"
   >
     <div
       className="txt-bold mb6"

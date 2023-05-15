@@ -179,7 +179,7 @@ exports[`themes Default renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="w-full prose"
+    className="w-full prose wmin0"
   >
     <div
       className="txt-bold mb6"
@@ -246,7 +246,7 @@ exports[`themes beta renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="w-full prose"
+      className="w-full prose wmin0"
     >
       <div
         className="txt-bold mb6"
@@ -433,7 +433,7 @@ exports[`themes download renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="w-full prose"
+    className="w-full prose wmin0"
   >
     <div
       className="txt-bold mb6"
@@ -499,7 +499,7 @@ exports[`themes error renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="w-full prose"
+    className="w-full prose wmin0"
   >
     <div
       className="txt-bold mb6"
@@ -691,7 +691,7 @@ exports[`themes legacy or warning renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="w-full prose"
+      className="w-full prose wmin0"
     >
       <div
         className="txt-bold mb6"

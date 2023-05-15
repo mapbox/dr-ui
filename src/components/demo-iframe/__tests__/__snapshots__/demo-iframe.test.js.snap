@@ -121,7 +121,7 @@ exports[`demo-iframe Basic renders as expected 1`] = `
       </div>
     </div>
     <div
-      className="w-full prose"
+      className="w-full prose wmin0"
     >
       <div
         className="txt-bold mb6"
