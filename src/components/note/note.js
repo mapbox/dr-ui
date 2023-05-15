@@ -11,7 +11,7 @@ class Note extends React.PureComponent {
         className={`dr-ui--note py18 px18 round flex mb18 ${background} ${color}`}
       >
         <div className="mr18 none block-mm pt3">{image}</div>
-        <div className="w-full prose">
+        <div className="w-full prose wmin0">
           <div className="txt-bold mb6">{title || label}</div>
           {children}
         </div>

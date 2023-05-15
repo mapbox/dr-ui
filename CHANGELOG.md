@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.2.3
+
+- add min-width:0 to Note component
+
 ## 5.2.2
 
 - roll back elastic dependencies to v1.7.0 (#572)
