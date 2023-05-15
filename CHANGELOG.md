@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.2.2
+
+- roll back elastic dependencies to v1.7.0 (#572)
+
 ## 5.2.1
 
 - various dependency updates
