@@ -84,7 +84,7 @@
     "@mapbox/mapbox-gl-supported": "^2.0.1",
     "@mapbox/mr-ui": "2.5.1",
     "@sentry/browser": "^6.13.3",
-    "@sentry/tracing": "^6.13.3",
+    "@sentry/tracing": "^7.60.1",
     "classnames": "^2.3.1",
     "compare-versions": "^3.6.0",
     "debounce": "^1.2.1",
