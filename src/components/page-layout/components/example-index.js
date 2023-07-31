@@ -165,7 +165,7 @@ export default class ExampleIndex extends React.PureComponent {
     return (
       <div className="mb18 mb0-mxl">
         <AsideHeading>Filters</AsideHeading>
-        <div className="grid grid--gut6">
+        <div className="grid grid--gut6 mb18">
           {availableFilters.search && (
             <FilterSection
               title="Search"
