@@ -21,7 +21,7 @@ exports[`product-menu Beta product renders as expected 1`] = `
     className="ml-neg3"
   >
     <div
-      className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs px6"
+      className="round inline-block cursor-default txt-xs px6"
       data-state="closed"
       onBlur={[Function]}
       onClick={[Function]}
@@ -29,9 +29,16 @@ exports[`product-menu Beta product renders as expected 1`] = `
       onPointerDown={[Function]}
       onPointerLeave={[Function]}
       onPointerMove={[Function]}
-      style={Object {}}
+      style={
+        Object {
+          "backgroundColor": "#CBE4FF",
+          "color": "#23262D",
+          "fontFamily": "CeraPRO",
+          "fontWeight": 500,
+        }
+      }
     >
-      Beta
+      BETA
     </div>
   </div>
   <a
@@ -51,7 +58,7 @@ exports[`product-menu Beta product renders as expected 2`] = `
     className="ml-neg3"
   >
     <div
-      className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs px6"
+      className="round inline-block cursor-default txt-xs px6"
       data-state="closed"
       onBlur={[Function]}
       onClick={[Function]}
@@ -59,9 +66,16 @@ exports[`product-menu Beta product renders as expected 2`] = `
       onPointerDown={[Function]}
       onPointerLeave={[Function]}
       onPointerMove={[Function]}
-      style={Object {}}
+      style={
+        Object {
+          "backgroundColor": "#CBE4FF",
+          "color": "#23262D",
+          "fontFamily": "CeraPRO",
+          "fontWeight": 500,
+        }
+      }
     >
-      Beta
+      BETA
     </div>
   </div>
   <a

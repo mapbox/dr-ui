@@ -81,7 +81,7 @@ export class ContentWrapper extends React.PureComponent {
       <aside
         data-swiftype-index="false"
         className="overflow-auto-mxl scroll-styled h-viewport-11/12-mxl sticky-mxl color-text"
-        style={{ top: '10px' }}
+        style={{ top: '84px' }}
       >
         {this.props.customAside ? this.props.customAside : undefined}
         {showToc && headings && headings.length > 0 && (

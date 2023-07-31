@@ -25,7 +25,7 @@ Array [
           id="dr-ui--page-layout-sidebar"
           style={
             Object {
-              "top": "10px",
+              "top": "84px",
             }
           }
         >
@@ -57,7 +57,7 @@ Array [
                   onClick={[Function]}
                 >
                   <div
-                    className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+                    className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round-bold mb6 w-full"
                     style={Object {}}
                   >
                     <span
@@ -75,7 +75,7 @@ Array [
                     <span
                       className="color-gray"
                     >
-                      Search
+                      Search docs.mapbox.com
                     </span>
                   </div>
                 </button>
@@ -364,7 +364,7 @@ Array [
                 data-swiftype-index="false"
                 style={
                   Object {
-                    "top": "10px",
+                    "top": "84px",
                   }
                 }
               >
@@ -377,7 +377,7 @@ Array [
                     Filters
                   </h2>
                   <div
-                    className="grid grid--gut6"
+                    className="grid grid--gut6 mb18"
                   >
                     <div
                       className="col w-1/2 w-1/3-ml w-full-mxl mb6"
@@ -883,7 +883,7 @@ Array [
           id="dr-ui--page-layout-sidebar"
           style={
             Object {
-              "top": "10px",
+              "top": "84px",
             }
           }
         >
@@ -915,7 +915,7 @@ Array [
                   onClick={[Function]}
                 >
                   <div
-                    className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+                    className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round-bold mb6 w-full"
                     style={Object {}}
                   >
                     <span
@@ -933,7 +933,7 @@ Array [
                     <span
                       className="color-gray"
                     >
-                      Search
+                      Search docs.mapbox.com
                     </span>
                   </div>
                 </button>
@@ -1271,7 +1271,7 @@ Array [
                 data-swiftype-index="false"
                 style={
                   Object {
-                    "top": "10px",
+                    "top": "84px",
                   }
                 }
               >
@@ -1919,7 +1919,7 @@ Array [
           id="dr-ui--page-layout-sidebar"
           style={
             Object {
-              "top": "10px",
+              "top": "84px",
             }
           }
         >
@@ -1951,7 +1951,7 @@ Array [
                   onClick={[Function]}
                 >
                   <div
-                    className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+                    className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round-bold mb6 w-full"
                     style={Object {}}
                   >
                     <span
@@ -1969,7 +1969,7 @@ Array [
                     <span
                       className="color-gray"
                     >
-                      Search
+                      Search docs.mapbox.com
                     </span>
                   </div>
                 </button>
@@ -2356,7 +2356,7 @@ Array [
                 data-swiftype-index="false"
                 style={
                   Object {
-                    "top": "10px",
+                    "top": "84px",
                   }
                 }
               >
@@ -2804,7 +2804,7 @@ Array [
           id="dr-ui--page-layout-sidebar"
           style={
             Object {
-              "top": "10px",
+              "top": "84px",
             }
           }
         >
@@ -2836,7 +2836,7 @@ Array [
                   onClick={[Function]}
                 >
                   <div
-                    className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+                    className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round-bold mb6 w-full"
                     style={Object {}}
                   >
                     <span
@@ -2854,7 +2854,7 @@ Array [
                     <span
                       className="color-gray"
                     >
-                      Search
+                      Search docs.mapbox.com
                     </span>
                   </div>
                 </button>
@@ -3255,7 +3255,7 @@ Array [
                 data-swiftype-index="false"
                 style={
                   Object {
-                    "top": "10px",
+                    "top": "84px",
                   }
                 }
               >
@@ -3623,7 +3623,7 @@ Array [
           id="dr-ui--page-layout-sidebar"
           style={
             Object {
-              "top": "10px",
+              "top": "84px",
             }
           }
         >
@@ -3640,7 +3640,7 @@ Array [
                   className="ml-neg3"
                 >
                   <div
-                    className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs px6"
+                    className="round inline-block cursor-default txt-xs px6"
                     data-state="closed"
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -3648,9 +3648,16 @@ Array [
                     onPointerDown={[Function]}
                     onPointerLeave={[Function]}
                     onPointerMove={[Function]}
-                    style={Object {}}
+                    style={
+                      Object {
+                        "backgroundColor": "#CBE4FF",
+                        "color": "#23262D",
+                        "fontFamily": "CeraPRO",
+                        "fontWeight": 500,
+                      }
+                    }
                   >
-                    Beta
+                    BETA
                   </div>
                 </div>
                 <a
@@ -3672,7 +3679,7 @@ Array [
                   onClick={[Function]}
                 >
                   <div
-                    className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+                    className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round-bold mb6 w-full"
                     style={Object {}}
                   >
                     <span
@@ -3690,7 +3697,7 @@ Array [
                     <span
                       className="color-gray"
                     >
-                      Search
+                      Search docs.mapbox.com
                     </span>
                   </div>
                 </button>
