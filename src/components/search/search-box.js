@@ -278,6 +278,7 @@ export class SearchBox extends React.PureComponent {
               onClick={this.openModal}
               background={this.props.background}
               narrow={this.props.narrow}
+              placeholder={this.props.placeholder}
             />
             {this.renderModal()}
           </div>
@@ -315,7 +316,7 @@ SearchBox.propTypes = {
 
 export class SearchButton extends React.PureComponent {
   render() {
-    const { background, narrow, isFacade, onClick } = this.props;
+    const { background, narrow, isFacade, onClick, placeholder } = this.props;
     const Element = isFacade ? 'div' : 'button';
     const buttonProps = {
       ...(!isFacade && { onClick })
@@ -323,7 +324,7 @@ export class SearchButton extends React.PureComponent {
     return (
       <Element
         className={classnames(
-          'flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6',
+          'flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round-bold mb6',
           {
             'btn--white': background !== 'light',
             wmax30: narrow,
@@ -350,7 +351,7 @@ export class SearchButton extends React.PureComponent {
               'color-gray': background === 'light'
             })}
           >
-            Search
+            {placeholder || 'Search'}
           </span>
         )}
       </Element>
@@ -367,7 +368,8 @@ SearchButton.propTypes = {
   background: PropTypes.oneOf(['light', 'dark']),
   narrow: PropTypes.bool,
   isFacade: PropTypes.bool,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
+  placeholder: PropTypes.string
 };
 
 export class SearchInput extends React.PureComponent {
@@ -387,17 +389,15 @@ export class SearchInput extends React.PureComponent {
             className={classnames(
               'absolute flex flex--center-cross flex--center-main',
               {
-                'w60 h60': useModal,
-                'w36 h36': !useModal
+                'w60 h60': useModal
               }
             )}
+            style={{
+              height: !useModal && 48,
+              width: !useModal && 48
+            }}
           >
-            <svg
-              className={classnames('icon color-gray', {
-                'w24 h24': useModal,
-                'w18 h18': !useModal
-              })}
-            >
+            <svg className={classnames('icon color-darken50 w24 h24')}>
               <title>Search</title>
               <use xlinkHref="#icon-search" />
             </svg>
@@ -407,12 +407,14 @@ export class SearchInput extends React.PureComponent {
           id="searchInput"
           autoFocus={autoFocus}
           placeholder={placeholder}
-          className={classnames('input bg-white txt-color shadow-darken25', {
+          className={classnames('input bg-white txt-color round-bold', {
             'px60 h60': useModal,
-            'px36 h36': !useModal
+            'border border--darken50': !useModal
           })}
           {...inputProps}
           style={{
+            height: !useModal && 48,
+            paddingLeft: !useModal && 48,
             boxShadow: 'none'
           }}
         />

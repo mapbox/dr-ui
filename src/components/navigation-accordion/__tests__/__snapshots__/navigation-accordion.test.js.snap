@@ -221,7 +221,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
             }
           >
             <div
-              className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs"
+              className="round inline-block cursor-default txt-xs"
               data-state="closed"
               onBlur={[Function]}
               onClick={[Function]}
@@ -229,7 +229,14 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
               onPointerDown={[Function]}
               onPointerLeave={[Function]}
               onPointerMove={[Function]}
-              style={Object {}}
+              style={
+                Object {
+                  "backgroundColor": "#CBE4FF",
+                  "color": "#23262D",
+                  "fontFamily": "CeraPRO",
+                  "fontWeight": 500,
+                }
+              }
             >
               <svg
                 aria-hidden="true"
