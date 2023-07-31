@@ -4,7 +4,7 @@ exports[`error-boundary Basic renders as expected 1`] = `"This content does not 
 
 exports[`error-boundary Trigger error renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex mb18 bg-red-faint color-red-dark"
+  className="dr-ui--note py18 px18 round flex mb18 bg-red-faint undefined"
 >
   <div
     className="mr18 none block-mm pt3"
@@ -84,7 +84,7 @@ exports[`error-boundary Trigger error renders as expected 1`] = `
 
 exports[`error-boundary Trigger error with custom title and note contents renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex mb18 bg-red-faint color-red-dark"
+  className="dr-ui--note py18 px18 round flex mb18 bg-red-faint undefined"
 >
   <div
     className="mr18 none block-mm pt3"

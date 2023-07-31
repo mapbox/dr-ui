@@ -3,7 +3,7 @@
 exports[`themes Custom tag renders as expected 1`] = `
 <div>
   <div
-    className="txt-bold round inline-block cursor-default bg-red-light color-red-dark border--red txt-s border px6"
+    className="round inline-block cursor-default txt-s px6 bg-red-light"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -11,12 +11,18 @@ exports[`themes Custom tag renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "color": "#23262D",
+        "fontFamily": "CeraPRO",
+        "fontWeight": 500,
+      }
+    }
   >
     Limited access
   </div>
   <div
-    className="txt-bold round inline-block cursor-default bg-red-light color-red-dark border--red txt-xs px6"
+    className="round inline-block cursor-default txt-xs px6 bg-red-light"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -24,12 +30,18 @@ exports[`themes Custom tag renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "color": "#23262D",
+        "fontFamily": "CeraPRO",
+        "fontWeight": 500,
+      }
+    }
   >
     Limited access
   </div>
   <div
-    className="txt-bold round inline-block cursor-default bg-red-light color-red-dark border--red txt-s border"
+    className="round inline-block cursor-default txt-s bg-red-light"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -37,7 +49,13 @@ exports[`themes Custom tag renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "color": "#23262D",
+        "fontFamily": "CeraPRO",
+        "fontWeight": 500,
+      }
+    }
   >
     <svg
       aria-hidden="true"
@@ -76,7 +94,7 @@ exports[`themes Custom tag renders as expected 1`] = `
     </span>
   </div>
   <div
-    className="txt-bold round inline-block cursor-default bg-red-light color-red-dark border--red txt-xs"
+    className="round inline-block cursor-default txt-xs bg-red-light"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -84,7 +102,13 @@ exports[`themes Custom tag renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "color": "#23262D",
+        "fontFamily": "CeraPRO",
+        "fontWeight": 500,
+      }
+    }
   >
     <svg
       aria-hidden="true"
@@ -127,7 +151,7 @@ exports[`themes Custom tag renders as expected 1`] = `
 
 exports[`themes Default renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex mb18 bg-gray-faint color-text"
+  className="dr-ui--note py18 px18 round flex mb18 bg-gray-faint undefined"
 >
   <div
     className="mr18 none block-mm pt3"
@@ -184,7 +208,7 @@ exports[`themes Default renders as expected 1`] = `
     <div
       className="txt-bold mb6"
     >
-      Note
+      NOTE
     </div>
     Default note
   </div>
@@ -194,7 +218,7 @@ exports[`themes Default renders as expected 1`] = `
 exports[`themes beta renders as expected 1`] = `
 <div>
   <div
-    className="dr-ui--note py18 px18 round flex mb18 bg-blue-faint color-blue-dark"
+    className="dr-ui--note py18 px18 round flex mb18 undefined undefined"
   >
     <div
       className="mr18 none block-mm pt3"
@@ -251,13 +275,13 @@ exports[`themes beta renders as expected 1`] = `
       <div
         className="txt-bold mb6"
       >
-        Beta
+        BETA
       </div>
       Beta note.
     </div>
   </div>
   <div
-    className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-s border px6"
+    className="round inline-block cursor-default txt-s px6"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -265,12 +289,19 @@ exports[`themes beta renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "backgroundColor": "#CBE4FF",
+        "color": "#23262D",
+        "fontFamily": "CeraPRO",
+        "fontWeight": 500,
+      }
+    }
   >
-    Beta
+    BETA
   </div>
   <div
-    className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs px6"
+    className="round inline-block cursor-default txt-xs px6"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -278,12 +309,19 @@ exports[`themes beta renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "backgroundColor": "#CBE4FF",
+        "color": "#23262D",
+        "fontFamily": "CeraPRO",
+        "fontWeight": 500,
+      }
+    }
   >
-    Beta
+    BETA
   </div>
   <div
-    className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-s border"
+    className="round inline-block cursor-default txt-s"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -291,7 +329,14 @@ exports[`themes beta renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "backgroundColor": "#CBE4FF",
+        "color": "#23262D",
+        "fontFamily": "CeraPRO",
+        "fontWeight": 500,
+      }
+    }
   >
     <svg
       aria-hidden="true"
@@ -330,7 +375,7 @@ exports[`themes beta renders as expected 1`] = `
     </span>
   </div>
   <div
-    className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs"
+    className="round inline-block cursor-default txt-xs"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -338,7 +383,14 @@ exports[`themes beta renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "backgroundColor": "#CBE4FF",
+        "color": "#23262D",
+        "fontFamily": "CeraPRO",
+        "fontWeight": 500,
+      }
+    }
   >
     <svg
       aria-hidden="true"
@@ -381,7 +433,7 @@ exports[`themes beta renders as expected 1`] = `
 
 exports[`themes download renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex mb18 bg-purple-faint color-purple-dark"
+  className="dr-ui--note py18 px18 round flex mb18 bg-purple-faint undefined"
 >
   <div
     className="mr18 none block-mm pt3"
@@ -438,7 +490,7 @@ exports[`themes download renders as expected 1`] = `
     <div
       className="txt-bold mb6"
     >
-      Download
+      DOWNLOAD
     </div>
     download note
   </div>
@@ -447,7 +499,7 @@ exports[`themes download renders as expected 1`] = `
 
 exports[`themes error renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex mb18 bg-red-faint color-red-dark"
+  className="dr-ui--note py18 px18 round flex mb18 bg-red-faint undefined"
 >
   <div
     className="mr18 none block-mm pt3"
@@ -504,7 +556,7 @@ exports[`themes error renders as expected 1`] = `
     <div
       className="txt-bold mb6"
     >
-      Error
+      ERROR
     </div>
     error note
   </div>
@@ -514,7 +566,7 @@ exports[`themes error renders as expected 1`] = `
 exports[`themes fundamentals renders as expected 1`] = `
 <div>
   <div
-    className="txt-bold round inline-block cursor-default bg-pink-faint color-pink-dark border--pink-dark txt-s border px6"
+    className="round inline-block cursor-default txt-s px6 bg-pink-faint"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -522,12 +574,18 @@ exports[`themes fundamentals renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "color": "#23262D",
+        "fontFamily": "CeraPRO",
+        "fontWeight": 500,
+      }
+    }
   >
-    Fundamentals
+    FUNDAMENTALS
   </div>
   <div
-    className="txt-bold round inline-block cursor-default bg-pink-faint color-pink-dark border--pink-dark txt-xs px6"
+    className="round inline-block cursor-default txt-xs px6 bg-pink-faint"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -535,12 +593,18 @@ exports[`themes fundamentals renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "color": "#23262D",
+        "fontFamily": "CeraPRO",
+        "fontWeight": 500,
+      }
+    }
   >
-    Fundamentals
+    FUNDAMENTALS
   </div>
   <div
-    className="txt-bold round inline-block cursor-default bg-pink-faint color-pink-dark border--pink-dark txt-s border"
+    className="round inline-block cursor-default txt-s bg-pink-faint"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -548,7 +612,13 @@ exports[`themes fundamentals renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "color": "#23262D",
+        "fontFamily": "CeraPRO",
+        "fontWeight": 500,
+      }
+    }
   >
     <svg
       aria-hidden="true"
@@ -587,7 +657,7 @@ exports[`themes fundamentals renders as expected 1`] = `
     </span>
   </div>
   <div
-    className="txt-bold round inline-block cursor-default bg-pink-faint color-pink-dark border--pink-dark txt-xs"
+    className="round inline-block cursor-default txt-xs bg-pink-faint"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -595,7 +665,13 @@ exports[`themes fundamentals renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "color": "#23262D",
+        "fontFamily": "CeraPRO",
+        "fontWeight": 500,
+      }
+    }
   >
     <svg
       aria-hidden="true"
@@ -696,13 +772,13 @@ exports[`themes legacy or warning renders as expected 1`] = `
       <div
         className="txt-bold mb6"
       >
-        Legacy
+        LEGACY
       </div>
       legacy note
     </div>
   </div>
   <div
-    className="txt-bold round inline-block cursor-default bg-orange-faint color-orange-dark border--orange-dark txt-s border px6"
+    className="round inline-block cursor-default txt-s px6 bg-orange-faint"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -710,12 +786,18 @@ exports[`themes legacy or warning renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "color": "#23262D",
+        "fontFamily": "CeraPRO",
+        "fontWeight": 500,
+      }
+    }
   >
-    Legacy
+    LEGACY
   </div>
   <div
-    className="txt-bold round inline-block cursor-default bg-orange-faint color-orange-dark border--orange-dark txt-xs px6"
+    className="round inline-block cursor-default txt-xs px6 bg-orange-faint"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -723,12 +805,18 @@ exports[`themes legacy or warning renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "color": "#23262D",
+        "fontFamily": "CeraPRO",
+        "fontWeight": 500,
+      }
+    }
   >
-    Legacy
+    LEGACY
   </div>
   <div
-    className="txt-bold round inline-block cursor-default bg-orange-faint color-orange-dark border--orange-dark txt-s border"
+    className="round inline-block cursor-default txt-s bg-orange-faint"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -736,7 +824,13 @@ exports[`themes legacy or warning renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "color": "#23262D",
+        "fontFamily": "CeraPRO",
+        "fontWeight": 500,
+      }
+    }
   >
     <svg
       aria-hidden="true"
@@ -775,7 +869,7 @@ exports[`themes legacy or warning renders as expected 1`] = `
     </span>
   </div>
   <div
-    className="txt-bold round inline-block cursor-default bg-orange-faint color-orange-dark border--orange-dark txt-xs"
+    className="round inline-block cursor-default txt-xs bg-orange-faint"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -783,7 +877,13 @@ exports[`themes legacy or warning renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "color": "#23262D",
+        "fontFamily": "CeraPRO",
+        "fontWeight": 500,
+      }
+    }
   >
     <svg
       aria-hidden="true"

@@ -9,7 +9,7 @@ export default class Custom extends React.PureComponent {
     return (
       <Tag
         theme="custom"
-        customLabel="Limited access"
+        customLabel="LIMITED ACCESS"
         customTooltipText="Contact us for access to this feature."
         customBackground="bg-red-light"
         customColor="color-red-dark"

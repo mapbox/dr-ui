@@ -12,8 +12,17 @@
       .dr-ui--navigation-accordion {
         max-width: 400px;
       }
+
+      /* load CeraPRO 500 in the test app, we expect it to be available on all docs sites via docs-page-shell */
+      @font-face {
+        font-family: 'CeraPRO';
+        font-weight: 500;
+        src: url('https://assets.website-files.com/6050a76fa6a633d5d54ae714/6050ab4346858de0e05420ae_Cera%20Pro%20Medium.woff2')
+          format('woff2');
+      }
     </style>
   </head>
+
   <body id="docs-content">
     <script src="test-cases-app.js"></script>
   </body>

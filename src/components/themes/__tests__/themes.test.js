@@ -19,8 +19,9 @@ describe('themes', () => {
       }
 
       test('has background, color', () => {
-        expect(themes[theme].background).toBeDefined();
-        expect(themes[theme].color).toBeDefined();
+        expect(
+          themes[theme].background || themes[theme].styles.backgroundColor
+        ).toBeDefined();
       });
     });
   });

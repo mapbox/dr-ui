@@ -2,7 +2,7 @@
 
 exports[`tag Beta tag renders as expected 1`] = `
 <div
-  className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-s border px6"
+  className="round inline-block cursor-default txt-s px6"
   data-state="closed"
   onBlur={[Function]}
   onClick={[Function]}
@@ -10,15 +10,22 @@ exports[`tag Beta tag renders as expected 1`] = `
   onPointerDown={[Function]}
   onPointerLeave={[Function]}
   onPointerMove={[Function]}
-  style={Object {}}
+  style={
+    Object {
+      "backgroundColor": "#CBE4FF",
+      "color": "#23262D",
+      "fontFamily": "CeraPRO",
+      "fontWeight": 500,
+    }
+  }
 >
-  Beta
+  BETA
 </div>
 `;
 
 exports[`tag Custom tag renders as expected 1`] = `
 <div
-  className="txt-bold round inline-block cursor-default bg-red-light color-red-dark border--red txt-s border px6"
+  className="round inline-block cursor-default txt-s px6 bg-red-light"
   data-state="closed"
   onBlur={[Function]}
   onClick={[Function]}
@@ -26,15 +33,21 @@ exports[`tag Custom tag renders as expected 1`] = `
   onPointerDown={[Function]}
   onPointerLeave={[Function]}
   onPointerMove={[Function]}
-  style={Object {}}
+  style={
+    Object {
+      "color": "#23262D",
+      "fontFamily": "CeraPRO",
+      "fontWeight": 500,
+    }
+  }
 >
-  Limited access
+  LIMITED ACCESS
 </div>
 `;
 
 exports[`tag small variant renders as expected 1`] = `
 <div
-  className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs px6"
+  className="round inline-block cursor-default txt-xs px6"
   data-state="closed"
   onBlur={[Function]}
   onClick={[Function]}
@@ -42,8 +55,15 @@ exports[`tag small variant renders as expected 1`] = `
   onPointerDown={[Function]}
   onPointerLeave={[Function]}
   onPointerMove={[Function]}
-  style={Object {}}
+  style={
+    Object {
+      "backgroundColor": "#CBE4FF",
+      "color": "#23262D",
+      "fontFamily": "CeraPRO",
+      "fontWeight": 500,
+    }
+  }
 >
-  Beta
+  BETA
 </div>
 `;
