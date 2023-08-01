@@ -9,14 +9,14 @@ exports[`search Basic search with \`site\` set to show filter toggle. Open https
     onClick={[Function]}
   >
     <div
-      className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round-bold mb6 w-full"
+      className="flex flex--center-cross btn--gray color-gray-light bg-white btn--stroke py6 pl6 pr12 round mb6 txt-s w-full"
       style={Object {}}
     >
       <span
         className="mr6 color-gray"
       >
         <svg
-          className="icon w18 h18"
+          className="icon w18 h18 block"
         >
           <use
             xlinkHref="#icon-search"
@@ -27,7 +27,7 @@ exports[`search Basic search with \`site\` set to show filter toggle. Open https
       <span
         className="color-gray"
       >
-        Search docs.mapbox.com
+        Search
       </span>
     </div>
   </button>
@@ -43,14 +43,14 @@ exports[`search Basic search. Open https://app.swiftype.com/engines/docs/analyti
     onClick={[Function]}
   >
     <div
-      className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round-bold mb6 w-full"
+      className="flex flex--center-cross btn--gray color-gray-light bg-white btn--stroke py6 pl6 pr12 round mb6 txt-s w-full"
       style={Object {}}
     >
       <span
         className="mr6 color-gray"
       >
         <svg
-          className="icon w18 h18"
+          className="icon w18 h18 block"
         >
           <use
             xlinkHref="#icon-search"
@@ -61,7 +61,7 @@ exports[`search Basic search. Open https://app.swiftype.com/engines/docs/analyti
       <span
         className="color-gray"
       >
-        Search docs.mapbox.com
+        Search
       </span>
     </div>
   </button>
@@ -80,14 +80,14 @@ exports[`search Search with \`disableModal\` option set. Open https://app.swifty
       onClick={[Function]}
     >
       <div
-        className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round-bold mb6 w-full"
+        className="flex flex--center-cross btn--gray color-gray-light bg-white btn--stroke py6 pl6 pr12 round mb6 txt-s w-full"
         style={Object {}}
       >
         <span
           className="mr6 color-gray"
         >
           <svg
-            className="icon w18 h18"
+            className="icon w18 h18 block"
           >
             <use
               xlinkHref="#icon-search"
@@ -98,7 +98,7 @@ exports[`search Search with \`disableModal\` option set. Open https://app.swifty
         <span
           className="color-gray"
         >
-          Search docs.mapbox.com
+          Search
         </span>
       </div>
     </button>
@@ -115,7 +115,7 @@ exports[`search Search with \`narrow\` option set. Open https://app.swiftype.com
     onClick={[Function]}
   >
     <div
-      className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round-bold mb6 wmax30"
+      className="flex flex--center-cross btn--gray color-gray-light bg-white btn--stroke py6 pl6 pr12 round mb6 txt-s wmax30"
       style={
         Object {
           "paddingLeft": "12px",
@@ -127,7 +127,7 @@ exports[`search Search with \`narrow\` option set. Open https://app.swiftype.com
         className="color-gray"
       >
         <svg
-          className="icon w18 h18"
+          className="icon w18 h18 block"
         >
           <title>
             Search
@@ -152,14 +152,14 @@ exports[`search Search with custom connector. renders as expected 1`] = `
     onClick={[Function]}
   >
     <div
-      className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round-bold mb6 w-full"
+      className="flex flex--center-cross btn--gray color-gray-light bg-white btn--stroke py6 pl6 pr12 round mb6 txt-s w-full"
       style={Object {}}
     >
       <span
         className="mr6 color-gray"
       >
         <svg
-          className="icon w18 h18"
+          className="icon w18 h18 block"
         >
           <use
             xlinkHref="#icon-search"
@@ -170,7 +170,7 @@ exports[`search Search with custom connector. renders as expected 1`] = `
       <span
         className="color-gray"
       >
-        Search docs.mapbox.com
+        Search
       </span>
     </div>
   </button>
@@ -192,14 +192,14 @@ exports[`search Search with dark background, custom placeholder. Open https://ap
         onClick={[Function]}
       >
         <div
-          className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round-bold mb6 btn--white w-full"
+          className="flex flex--center-cross btn--gray color-gray-light bg-white btn--stroke py6 pl6 pr12 round mb6 txt-s btn--white w-full"
           style={Object {}}
         >
           <span
             className="mr6"
           >
             <svg
-              className="icon w18 h18"
+              className="icon w18 h18 block"
             >
               <use
                 xlinkHref="#icon-search"

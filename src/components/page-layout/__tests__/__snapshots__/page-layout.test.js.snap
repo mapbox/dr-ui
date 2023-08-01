@@ -6,7 +6,7 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm"
+    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm mt24 mt0-mm"
   >
     <div
       className="flex-mm"
@@ -47,7 +47,7 @@ Array [
               </div>
             </div>
             <div
-              className="mb6 h36"
+              className="mb6 h60 h36-mm"
             >
               <div
                 className="relative h36"
@@ -57,14 +57,14 @@ Array [
                   onClick={[Function]}
                 >
                   <div
-                    className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round-bold mb6 w-full"
+                    className="flex flex--center-cross btn--gray color-gray-light bg-white btn--stroke py6 pl6 pr12 round mb6 txt-s w-full"
                     style={Object {}}
                   >
                     <span
                       className="mr6 color-gray"
                     >
                       <svg
-                        className="icon w18 h18"
+                        className="icon w18 h18 block"
                       >
                         <use
                           xlinkHref="#icon-search"
@@ -75,7 +75,7 @@ Array [
                     <span
                       className="color-gray"
                     >
-                      Search docs.mapbox.com
+                      Search
                     </span>
                   </div>
                 </button>
@@ -864,7 +864,7 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm"
+    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm mt24 mt0-mm"
   >
     <div
       className="flex-mm"
@@ -905,7 +905,7 @@ Array [
               </div>
             </div>
             <div
-              className="mb6 h36"
+              className="mb6 h60 h36-mm"
             >
               <div
                 className="relative h36"
@@ -915,14 +915,14 @@ Array [
                   onClick={[Function]}
                 >
                   <div
-                    className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round-bold mb6 w-full"
+                    className="flex flex--center-cross btn--gray color-gray-light bg-white btn--stroke py6 pl6 pr12 round mb6 txt-s w-full"
                     style={Object {}}
                   >
                     <span
                       className="mr6 color-gray"
                     >
                       <svg
-                        className="icon w18 h18"
+                        className="icon w18 h18 block"
                       >
                         <use
                           xlinkHref="#icon-search"
@@ -933,7 +933,7 @@ Array [
                     <span
                       className="color-gray"
                     >
-                      Search docs.mapbox.com
+                      Search
                     </span>
                   </div>
                 </button>
@@ -1549,7 +1549,7 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm"
+    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm mt24 mt0-mm"
   >
     <div
       className="flex-mm"
@@ -1900,7 +1900,7 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm"
+    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm mt24 mt0-mm"
   >
     <div
       className="flex-mm"
@@ -1941,7 +1941,7 @@ Array [
               </div>
             </div>
             <div
-              className="mb6 h36"
+              className="mb6 h60 h36-mm"
             >
               <div
                 className="relative h36"
@@ -1951,14 +1951,14 @@ Array [
                   onClick={[Function]}
                 >
                   <div
-                    className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round-bold mb6 w-full"
+                    className="flex flex--center-cross btn--gray color-gray-light bg-white btn--stroke py6 pl6 pr12 round mb6 txt-s w-full"
                     style={Object {}}
                   >
                     <span
                       className="mr6 color-gray"
                     >
                       <svg
-                        className="icon w18 h18"
+                        className="icon w18 h18 block"
                       >
                         <use
                           xlinkHref="#icon-search"
@@ -1969,7 +1969,7 @@ Array [
                     <span
                       className="color-gray"
                     >
-                      Search docs.mapbox.com
+                      Search
                     </span>
                   </div>
                 </button>
@@ -2785,7 +2785,7 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm"
+    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm mt24 mt0-mm"
   >
     <div
       className="flex-mm"
@@ -2826,7 +2826,7 @@ Array [
               </div>
             </div>
             <div
-              className="mb6 h36"
+              className="mb6 h60 h36-mm"
             >
               <div
                 className="relative h36"
@@ -2836,14 +2836,14 @@ Array [
                   onClick={[Function]}
                 >
                   <div
-                    className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round-bold mb6 w-full"
+                    className="flex flex--center-cross btn--gray color-gray-light bg-white btn--stroke py6 pl6 pr12 round mb6 txt-s w-full"
                     style={Object {}}
                   >
                     <span
                       className="mr6 color-gray"
                     >
                       <svg
-                        className="icon w18 h18"
+                        className="icon w18 h18 block"
                       >
                         <use
                           xlinkHref="#icon-search"
@@ -2854,7 +2854,7 @@ Array [
                     <span
                       className="color-gray"
                     >
-                      Search docs.mapbox.com
+                      Search
                     </span>
                   </div>
                 </button>
@@ -3604,7 +3604,7 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm"
+    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm mt24 mt0-mm"
   >
     <div
       className="flex-mm"
@@ -3669,7 +3669,7 @@ Array [
               </div>
             </div>
             <div
-              className="mb6 h36"
+              className="mb6 h60 h36-mm"
             >
               <div
                 className="relative h36"
@@ -3679,14 +3679,14 @@ Array [
                   onClick={[Function]}
                 >
                   <div
-                    className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round-bold mb6 w-full"
+                    className="flex flex--center-cross btn--gray color-gray-light bg-white btn--stroke py6 pl6 pr12 round mb6 txt-s w-full"
                     style={Object {}}
                   >
                     <span
                       className="mr6 color-gray"
                     >
                       <svg
-                        className="icon w18 h18"
+                        className="icon w18 h18 block"
                       >
                         <use
                           xlinkHref="#icon-search"
@@ -3697,7 +3697,7 @@ Array [
                     <span
                       className="color-gray"
                     >
-                      Search docs.mapbox.com
+                      Search
                     </span>
                   </div>
                 </button>

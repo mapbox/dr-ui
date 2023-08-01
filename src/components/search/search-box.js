@@ -324,7 +324,7 @@ export class SearchButton extends React.PureComponent {
     return (
       <Element
         className={classnames(
-          'flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round-bold mb6',
+          'flex flex--center-cross btn--gray color-gray-light bg-white btn--stroke py6 pl6 pr12 round mb6 txt-s',
           {
             'btn--white': background !== 'light',
             wmax30: narrow,
@@ -340,7 +340,7 @@ export class SearchButton extends React.PureComponent {
             'color-gray': background === 'light'
           })}
         >
-          <svg className="icon w18 h18">
+          <svg className="icon w18 h18 block">
             {narrow && <title>Search</title>}
             <use xlinkHref="#icon-search" />
           </svg>

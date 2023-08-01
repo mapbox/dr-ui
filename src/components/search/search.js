@@ -104,7 +104,7 @@ Search.propTypes = {
 
 Search.defaultProps = {
   background: 'light',
-  placeholder: 'Search docs.mapbox.com',
+  placeholder: 'Search',
   inputId: 'docs-search',
   connector: new SiteSearchAPIConnector({
     engineKey: 'zpAwGSb8YMXtF9yDeS5K', // public engine key

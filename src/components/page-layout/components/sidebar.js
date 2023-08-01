@@ -41,7 +41,7 @@ export default class Sidebar extends React.PureComponent {
           </div>
           {!hideSearch && (
             /* set height to prevent content shift as Search component loads */
-            <div className="mb6 h36">
+            <div className="mb6 h60 h36-mm">
               <Search {...this.props} site={SITE} />
             </div>
           )}
