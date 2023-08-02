@@ -2,7 +2,7 @@
 
 exports[`search Basic search with \`site\` set to show filter toggle. Open https://app.swiftype.com/engines/docs/analytics/live while developing to watch query usage. renders as expected 1`] = `
 <div
-  className="relative h36"
+  className="relative"
 >
   <button
     className="w-full block"
@@ -36,7 +36,7 @@ exports[`search Basic search with \`site\` set to show filter toggle. Open https
 
 exports[`search Basic search. Open https://app.swiftype.com/engines/docs/analytics/live while developing to watch query usage. renders as expected 1`] = `
 <div
-  className="relative h36"
+  className="relative"
 >
   <button
     className="w-full block"
@@ -73,7 +73,7 @@ exports[`search Search with \`disableModal\` option set. Open https://app.swifty
   className="py6 px6"
 >
   <div
-    className="relative h36"
+    className="relative"
   >
     <button
       className="w-full block"
@@ -108,7 +108,7 @@ exports[`search Search with \`disableModal\` option set. Open https://app.swifty
 
 exports[`search Search with \`narrow\` option set. Open https://app.swiftype.com/engines/docs/analytics/live while developing to watch query usage. renders as expected 1`] = `
 <div
-  className="relative h36"
+  className="relative"
 >
   <button
     className="w-full block"
@@ -145,7 +145,7 @@ exports[`search Search with \`narrow\` option set. Open https://app.swiftype.com
 
 exports[`search Search with custom connector. renders as expected 1`] = `
 <div
-  className="relative h36"
+  className="relative"
 >
   <button
     className="w-full block"
@@ -185,7 +185,7 @@ exports[`search Search with dark background, custom placeholder. Open https://ap
     className="w-full"
   >
     <div
-      className="relative h36"
+      className="relative"
     >
       <button
         className="w-full block"

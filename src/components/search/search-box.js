@@ -1,14 +1,16 @@
 /* eslint-disable jsx-a11y/no-autofocus */
 /* this component uses a facade and it must transfer the focus from SearchFacade to the SearchBox */
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Downshift from 'downshift';
-import SearchModal from './search-modal';
-import SearchResult from './search-result';
 import { getFilterValueDisplay } from '@elastic/react-search-ui-views/lib/view-helpers';
 import { Facet } from '@elastic/react-search-ui';
 import classnames from 'classnames';
 import * as Sentry from '@sentry/browser';
+import Icon from '@mapbox/mr-ui/icon';
+
+import SearchModal from './search-modal';
+import SearchResult from './search-result';
 
 export class SearchBox extends React.PureComponent {
   constructor(props) {
@@ -187,7 +189,13 @@ export class SearchBox extends React.PureComponent {
                     placeholder={placeholder}
                     getLabelProps={getLabelProps}
                     getInputProps={getInputProps({
-                      onFocus: openMenu
+                      onFocus: openMenu,
+                      onKeyDown: (e) => {
+                        // clear value on escape
+                        if (e.keyCode === 27) {
+                          this.props.reset();
+                        }
+                      }
                     })}
                   />
                 </React.Fragment>
@@ -254,6 +262,7 @@ export class SearchBox extends React.PureComponent {
         accessibleTitle="Search bar"
         onExit={this.closeModal}
         initialFocus={`#${props.inputId}-input`}
+        isLoading={this.props.isLoading}
       >
         <div>{this.renderSearchBar()}</div>
       </SearchModal>
@@ -372,56 +381,116 @@ SearchButton.propTypes = {
   placeholder: PropTypes.string
 };
 
-export class SearchInput extends React.PureComponent {
-  render() {
-    const { placeholder, getLabelProps, useModal, getInputProps, autoFocus } =
-      this.props;
-    const labelProps = {
-      ...(getLabelProps && getLabelProps())
-    };
-    const inputProps = {
-      ...(getInputProps && getInputProps)
-    };
-    return (
-      <>
-        <label className="cursor-pointer" {...labelProps} htmlFor="searchInput">
-          <div
-            className={classnames(
-              'absolute flex flex--center-cross flex--center-main',
-              {
-                'w60 h60': useModal
-              }
-            )}
-            style={{
-              height: !useModal && 48,
-              width: !useModal && 48
-            }}
-          >
-            <svg className={classnames('icon color-darken50 w24 h24')}>
-              <title>Search</title>
-              <use xlinkHref="#icon-search" />
-            </svg>
-          </div>
-        </label>
-        <input
-          id="searchInput"
-          autoFocus={autoFocus}
-          placeholder={placeholder}
-          className={classnames('input bg-white txt-color round-bold', {
-            'px60 h60': useModal,
-            'border border--darken50': !useModal
-          })}
-          {...inputProps}
+export const SearchInput = (props) => {
+  const {
+    placeholder,
+    getLabelProps,
+    useModal,
+    getInputProps,
+    autoFocus,
+    isLoading
+  } = props;
+
+  const [isFocused, setIsFocused] = useState(autoFocus);
+
+  function handleInputFocus() {
+    setIsFocused(true);
+  }
+
+  function handleInputBlur() {
+    setIsFocused(false);
+  }
+
+  const labelProps = {
+    ...(getLabelProps && getLabelProps())
+  };
+  const inputProps = {
+    ...(getInputProps && getInputProps)
+  };
+
+  const { value, onChange } = inputProps;
+
+  function handleCloseButtonClick() {
+    // clear the input
+    onChange({
+      target: {
+        value: ''
+      }
+    });
+  }
+
+  return (
+    <>
+      <label className="cursor-pointer" {...labelProps} htmlFor="searchInput">
+        <div
+          className={classnames(
+            'absolute flex flex--center-cross flex--center-main',
+            {
+              'w60 h60': useModal
+            }
+          )}
           style={{
             height: !useModal && 48,
-            paddingLeft: !useModal && 48,
-            boxShadow: 'none'
+            width: !useModal && 48
           }}
-        />
-      </>
-    );
-  }
-}
+        >
+          <svg className={classnames('icon color-darken50 w24 h24')}>
+            <title>Search</title>
+            <use xlinkHref="#icon-search" />
+          </svg>
+        </div>
+      </label>
+      <input
+        id="searchInput"
+        autoFocus={autoFocus}
+        placeholder={placeholder}
+        className={classnames('input bg-white txt-color round-bold', {
+          'px60 h60': useModal,
+          'border border--gray-lighter border--gray-on-hover border--blue-on-active':
+            !useModal,
+          'is-active': isFocused
+        })}
+        {...inputProps}
+        style={{
+          height: !useModal && 48,
+          paddingLeft: !useModal && 48,
+          paddingRight: !useModal && 48,
+          boxShadow: 'none'
+        }}
+        onFocus={handleInputFocus}
+        onBlur={handleInputBlur}
+      />
+      {!isLoading && value && value.length && (
+        <div
+          className={classnames('absolute top right', {
+            mt12: !useModal,
+            mt18: useModal
+          })}
+        >
+          <button
+            type="button"
+            className="link px12 link--gray"
+            onClick={handleCloseButtonClick}
+          >
+            <Icon name="close" size={24} />
+          </button>
+        </div>
+      )}
+      {isLoading && (
+        <div
+          className={classnames('absolute top right', {
+            mt12: !useModal,
+            mt18: useModal
+          })}
+        >
+          <div className="px12 h24 flex flex--center-cross">
+            <div className="loading loading--s"></div>
+          </div>
+        </div>
+      )}
+    </>
+  );
+};
 
 SearchInput.propTypes = {
   autoFocus: false

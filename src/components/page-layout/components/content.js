@@ -80,7 +80,7 @@ export class ContentWrapper extends React.PureComponent {
     return (
       <aside
         data-swiftype-index="false"
-        className="overflow-auto-mxl scroll-styled h-viewport-11/12-mxl sticky-mxl color-text"
+        className="overflow-auto-mxl scroll-styled sticky-mxl color-text"
         style={{ top: '84px' }}
       >
         {this.props.customAside ? this.props.customAside : undefined}
@@ -129,7 +129,7 @@ export class ContentWrapper extends React.PureComponent {
         )}
         {overviewHeader && <OverviewHeader {...overviewHeader} />}
 
-        <div className="grid grid--gut60">
+        <div className="grid grid--gut60 mb120">
           {(layoutConfig.aside !== 'none' || this.props.customAside) && (
             <div className="dr-ui--page-layout-aside col w-full w-1/3-mxl">
               {this.renderAside(showFeedback)}

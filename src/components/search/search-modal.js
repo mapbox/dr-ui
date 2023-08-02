@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import AriaModal from 'react-aria-modal';
-import Icon from '@mapbox/mr-ui/icon';
 import getWindow from '@mapbox/mr-ui/utils/get-window';
 
 export default class Modal extends React.PureComponent {
@@ -33,29 +32,12 @@ export default class Modal extends React.PureComponent {
   render() {
     const { props } = this;
 
-    let closeButton = null;
-    if (props.onExit) {
-      closeButton = (
-        <div className="absolute top right mt12">
-          <button
-            type="button"
-            className="btn btn--white color-gray mr6"
-            onClick={props.onExit}
-            data-test="modal-close"
-          >
-            <Icon name="close" size={24} />
-          </button>
-        </div>
-      );
-    }
-
     const dialogBody = (
       <div
         ref={this.setDialogEl}
         className="relative wmax-full w600 bg-white round px0 py0"
       >
         {props.children}
-        {closeButton}
       </div>
     );
 
@@ -90,6 +72,7 @@ Modal.propTypes = {
   onExit: PropTypes.func,
   getApplicationNode: PropTypes.func,
   initialFocus: PropTypes.string,
+  isLoading: PropTypes.bool,
   children: PropTypes.node.isRequired
 };
 

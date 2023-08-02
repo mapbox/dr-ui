@@ -6,7 +6,7 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm mt24 mt0-mm"
+    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm mt24 mt18-mm"
   >
     <div
       className="flex-mm"
@@ -50,7 +50,7 @@ Array [
               className="mb6 h60 h36-mm"
             >
               <div
-                className="relative h36"
+                className="relative"
               >
                 <button
                   className="w-full block"
@@ -354,13 +354,13 @@ Array [
             </h1>
           </div>
           <div
-            className="grid grid--gut60"
+            className="grid grid--gut60 mb120"
           >
             <div
               className="dr-ui--page-layout-aside col w-full w-1/3-mxl"
             >
               <aside
-                className="overflow-auto-mxl scroll-styled h-viewport-11/12-mxl sticky-mxl color-text"
+                className="overflow-auto-mxl scroll-styled sticky-mxl color-text"
                 data-swiftype-index="false"
                 style={
                   Object {
@@ -864,7 +864,7 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm mt24 mt0-mm"
+    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm mt24 mt18-mm"
   >
     <div
       className="flex-mm"
@@ -908,7 +908,7 @@ Array [
               className="mb6 h60 h36-mm"
             >
               <div
-                className="relative h36"
+                className="relative"
               >
                 <button
                   className="w-full block"
@@ -1261,13 +1261,13 @@ Array [
             </h1>
           </div>
           <div
-            className="grid grid--gut60"
+            className="grid grid--gut60 mb120"
           >
             <div
               className="dr-ui--page-layout-aside col w-full w-1/3-mxl"
             >
               <aside
-                className="overflow-auto-mxl scroll-styled h-viewport-11/12-mxl sticky-mxl color-text"
+                className="overflow-auto-mxl scroll-styled sticky-mxl color-text"
                 data-swiftype-index="false"
                 style={
                   Object {
@@ -1549,7 +1549,7 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm mt24 mt0-mm"
+    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm mt24 mt18-mm"
   >
     <div
       className="flex-mm"
@@ -1722,7 +1722,7 @@ Array [
             </h1>
           </div>
           <div
-            className="grid grid--gut60"
+            className="grid grid--gut60 mb120"
           >
             <div
               className="col col--auto prose"
@@ -1900,7 +1900,7 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm mt24 mt0-mm"
+    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm mt24 mt18-mm"
   >
     <div
       className="flex-mm"
@@ -1944,7 +1944,7 @@ Array [
               className="mb6 h60 h36-mm"
             >
               <div
-                className="relative h36"
+                className="relative"
               >
                 <button
                   className="w-full block"
@@ -2346,13 +2346,13 @@ Array [
             </h1>
           </div>
           <div
-            className="grid grid--gut60"
+            className="grid grid--gut60 mb120"
           >
             <div
               className="dr-ui--page-layout-aside col w-full w-1/3-mxl"
             >
               <aside
-                className="overflow-auto-mxl scroll-styled h-viewport-11/12-mxl sticky-mxl color-text"
+                className="overflow-auto-mxl scroll-styled sticky-mxl color-text"
                 data-swiftype-index="false"
                 style={
                   Object {
@@ -2785,7 +2785,7 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm mt24 mt0-mm"
+    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm mt24 mt18-mm"
   >
     <div
       className="flex-mm"
@@ -2829,7 +2829,7 @@ Array [
               className="mb6 h60 h36-mm"
             >
               <div
-                className="relative h36"
+                className="relative"
               >
                 <button
                   className="w-full block"
@@ -3245,13 +3245,13 @@ Array [
             </h1>
           </div>
           <div
-            className="grid grid--gut60"
+            className="grid grid--gut60 mb120"
           >
             <div
               className="dr-ui--page-layout-aside col w-full w-1/3-mxl"
             >
               <aside
-                className="overflow-auto-mxl scroll-styled h-viewport-11/12-mxl sticky-mxl color-text"
+                className="overflow-auto-mxl scroll-styled sticky-mxl color-text"
                 data-swiftype-index="false"
                 style={
                   Object {
@@ -3604,7 +3604,7 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm mt24 mt0-mm"
+    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm mt24 mt18-mm"
   >
     <div
       className="flex-mm"
@@ -3672,7 +3672,7 @@ Array [
               className="mb6 h60 h36-mm"
             >
               <div
-                className="relative h36"
+                className="relative"
               >
                 <button
                   className="w-full block"
@@ -3896,7 +3896,7 @@ Array [
             </h1>
           </div>
           <div
-            className="grid grid--gut60"
+            className="grid grid--gut60 mb120"
           >
             <div
               className="col col--auto prose"
