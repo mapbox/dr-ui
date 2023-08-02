@@ -1,0 +1,96 @@
+#docs-content .prose h1 {
+  margin-top: 6px;
+  margin-bottom: 30px;
+}
+
+#docs-content .prose h2:not(.unprose) {
+  font-weight: normal !important;
+  border-top: 1px solid !important;
+  border-color: #bccbd7 !important;
+  margin: 36px 0px 18px;
+  padding-top: 30px;
+}
+
+#docs-content .prose h3:not(.unprose) {
+  font-weight: normal;
+}
+
+/* make links darker in Note to improve color contrast */
+.dr-ui--feedback .link,
+.dr-ui--note a {
+  color: #3f5eeb !important;
+}
+
+/* set code links to slightly darker blue */
+/* this rule does not apply to elements with the "anchor" class (which are headings) */
+.prose :not(.anchor) > code a,
+.prose :not(.anchor) > a code {
+  color: #2b50f0;
+}
+
+/* set max-height for code examples */
+.prose pre[class*='language-'] {
+  max-height: 300px;
+  overflow: auto;
+}
+
+/* styled scrollbars for long (x or y) code examples */
+.prose pre::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background: transparent;
+}
+.prose pre::-webkit-scrollbar:hover {
+  background: transparent;
+}
+.prose pre::-webkit-scrollbar-track {
+  background: none;
+}
+.prose pre::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+  width: 6px;
+  border-radius: 3px;
+}
+.prose pre::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.35);
+}
+.prose pre::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+
+@media screen and (min-width: 640px) {
+  .overflow-auto-mm {
+    overflow: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overflow-auto-mxl {
+    overflow: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* move aside to right on larger screens */
+  .dr-ui--page-layout-aside {
+    order: 2;
+  }
+
+  /* lessen scale of Aside's OnThisPage links on larger screens */
+  .dr-ui--page-layout-aside .dr-ui--on-this-page li {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* on smaller screens always hide h3s in Aside's OnThisPage */
+  .dr-ui--page-layout-aside .dr-ui--on-this-page li ul {
+    display: none !important;
+  }
+}
+
+.w70 {
+  width: 70px;
+}
