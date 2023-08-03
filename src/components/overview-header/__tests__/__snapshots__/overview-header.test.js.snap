@@ -748,7 +748,7 @@ exports[`overview-header Beta product renders as expected 1`] = `
           }
         >
           <div
-            className="round inline-block cursor-default txt-s px6"
+            className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-s px6"
             data-state="closed"
             onBlur={[Function]}
             onClick={[Function]}
@@ -759,9 +759,6 @@ exports[`overview-header Beta product renders as expected 1`] = `
             style={
               Object {
                 "backgroundColor": "#CBE4FF",
-                "color": "#23262D",
-                "fontFamily": "CeraPRO",
-                "fontWeight": 500,
               }
             }
           >

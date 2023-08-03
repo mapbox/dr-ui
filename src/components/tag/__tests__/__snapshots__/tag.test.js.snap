@@ -2,7 +2,7 @@
 
 exports[`tag Beta tag renders as expected 1`] = `
 <div
-  className="round inline-block cursor-default txt-s px6"
+  className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-s px6"
   data-state="closed"
   onBlur={[Function]}
   onClick={[Function]}
@@ -13,9 +13,6 @@ exports[`tag Beta tag renders as expected 1`] = `
   style={
     Object {
       "backgroundColor": "#CBE4FF",
-      "color": "#23262D",
-      "fontFamily": "CeraPRO",
-      "fontWeight": 500,
     }
   }
 >
@@ -25,7 +22,7 @@ exports[`tag Beta tag renders as expected 1`] = `
 
 exports[`tag Custom tag renders as expected 1`] = `
 <div
-  className="round inline-block cursor-default txt-s px6 bg-red-light"
+  className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-s px6 bg-red-light"
   data-state="closed"
   onBlur={[Function]}
   onClick={[Function]}
@@ -33,13 +30,7 @@ exports[`tag Custom tag renders as expected 1`] = `
   onPointerDown={[Function]}
   onPointerLeave={[Function]}
   onPointerMove={[Function]}
-  style={
-    Object {
-      "color": "#23262D",
-      "fontFamily": "CeraPRO",
-      "fontWeight": 500,
-    }
-  }
+  style={Object {}}
 >
   LIMITED ACCESS
 </div>
@@ -47,7 +38,7 @@ exports[`tag Custom tag renders as expected 1`] = `
 
 exports[`tag small variant renders as expected 1`] = `
 <div
-  className="round inline-block cursor-default txt-xs px6"
+  className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-xs px6"
   data-state="closed"
   onBlur={[Function]}
   onClick={[Function]}
@@ -58,9 +49,6 @@ exports[`tag small variant renders as expected 1`] = `
   style={
     Object {
       "backgroundColor": "#CBE4FF",
-      "color": "#23262D",
-      "fontFamily": "CeraPRO",
-      "fontWeight": 500,
     }
   }
 >

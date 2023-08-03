@@ -19,13 +19,10 @@ export default class Tag extends React.PureComponent {
       <Tooltip content={theme.tooltipText} maxWidth="small" placement="top">
         <div
           style={{
-            ...theme.styles,
-            color: '#23262D',
-            fontFamily: 'CeraPRO',
-            fontWeight: 500
+            ...theme.styles
           }}
           className={classnames(
-            `round inline-block cursor-default`,
+            `round inline-block cursor-default txt-fancy-medium color-gray-dark`,
             {
               'txt-s': !this.props.small,
               'txt-xs': this.props.small,

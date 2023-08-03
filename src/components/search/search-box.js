@@ -333,7 +333,7 @@ export class SearchButton extends React.PureComponent {
     return (
       <Element
         className={classnames(
-          'flex flex--center-cross btn--gray color-gray-light bg-white btn--stroke py6 pl6 pr12 round mb6 txt-s',
+          'flex flex--center-cross bg-white border--gray-lighter border border--gray-on-hover border--blue-on-active py6 pl6 pr12 round txt-s',
           {
             'btn--white': background !== 'light',
             wmax30: narrow,

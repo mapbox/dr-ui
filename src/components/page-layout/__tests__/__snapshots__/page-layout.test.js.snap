@@ -57,7 +57,7 @@ Array [
                   onClick={[Function]}
                 >
                   <div
-                    className="flex flex--center-cross btn--gray color-gray-light bg-white btn--stroke py6 pl6 pr12 round mb6 txt-s w-full"
+                    className="flex flex--center-cross bg-white border--gray-lighter border border--gray-on-hover border--blue-on-active py6 pl6 pr12 round txt-s w-full"
                     style={Object {}}
                   >
                     <span
@@ -915,7 +915,7 @@ Array [
                   onClick={[Function]}
                 >
                   <div
-                    className="flex flex--center-cross btn--gray color-gray-light bg-white btn--stroke py6 pl6 pr12 round mb6 txt-s w-full"
+                    className="flex flex--center-cross bg-white border--gray-lighter border border--gray-on-hover border--blue-on-active py6 pl6 pr12 round txt-s w-full"
                     style={Object {}}
                   >
                     <span
@@ -1951,7 +1951,7 @@ Array [
                   onClick={[Function]}
                 >
                   <div
-                    className="flex flex--center-cross btn--gray color-gray-light bg-white btn--stroke py6 pl6 pr12 round mb6 txt-s w-full"
+                    className="flex flex--center-cross bg-white border--gray-lighter border border--gray-on-hover border--blue-on-active py6 pl6 pr12 round txt-s w-full"
                     style={Object {}}
                   >
                     <span
@@ -2836,7 +2836,7 @@ Array [
                   onClick={[Function]}
                 >
                   <div
-                    className="flex flex--center-cross btn--gray color-gray-light bg-white btn--stroke py6 pl6 pr12 round mb6 txt-s w-full"
+                    className="flex flex--center-cross bg-white border--gray-lighter border border--gray-on-hover border--blue-on-active py6 pl6 pr12 round txt-s w-full"
                     style={Object {}}
                   >
                     <span
@@ -3640,7 +3640,7 @@ Array [
                   className="ml-neg3"
                 >
                   <div
-                    className="round inline-block cursor-default txt-xs px6"
+                    className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-xs px6"
                     data-state="closed"
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -3651,9 +3651,6 @@ Array [
                     style={
                       Object {
                         "backgroundColor": "#CBE4FF",
-                        "color": "#23262D",
-                        "fontFamily": "CeraPRO",
-                        "fontWeight": 500,
                       }
                     }
                   >
@@ -3679,7 +3676,7 @@ Array [
                   onClick={[Function]}
                 >
                   <div
-                    className="flex flex--center-cross btn--gray color-gray-light bg-white btn--stroke py6 pl6 pr12 round mb6 txt-s w-full"
+                    className="flex flex--center-cross bg-white border--gray-lighter border border--gray-on-hover border--blue-on-active py6 pl6 pr12 round txt-s w-full"
                     style={Object {}}
                   >
                     <span

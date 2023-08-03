@@ -221,7 +221,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
             }
           >
             <div
-              className="round inline-block cursor-default txt-xs"
+              className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-xs"
               data-state="closed"
               onBlur={[Function]}
               onClick={[Function]}
@@ -232,9 +232,6 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
               style={
                 Object {
                   "backgroundColor": "#CBE4FF",
-                  "color": "#23262D",
-                  "fontFamily": "CeraPRO",
-                  "fontWeight": 500,
                 }
               }
             >

@@ -21,7 +21,7 @@ exports[`product-menu Beta product renders as expected 1`] = `
     className="ml-neg3"
   >
     <div
-      className="round inline-block cursor-default txt-xs px6"
+      className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-xs px6"
       data-state="closed"
       onBlur={[Function]}
       onClick={[Function]}
@@ -32,9 +32,6 @@ exports[`product-menu Beta product renders as expected 1`] = `
       style={
         Object {
           "backgroundColor": "#CBE4FF",
-          "color": "#23262D",
-          "fontFamily": "CeraPRO",
-          "fontWeight": 500,
         }
       }
     >
@@ -58,7 +55,7 @@ exports[`product-menu Beta product renders as expected 2`] = `
     className="ml-neg3"
   >
     <div
-      className="round inline-block cursor-default txt-xs px6"
+      className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-xs px6"
       data-state="closed"
       onBlur={[Function]}
       onClick={[Function]}
@@ -69,9 +66,6 @@ exports[`product-menu Beta product renders as expected 2`] = `
       style={
         Object {
           "backgroundColor": "#CBE4FF",
-          "color": "#23262D",
-          "fontFamily": "CeraPRO",
-          "fontWeight": 500,
         }
       }
     >
