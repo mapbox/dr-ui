@@ -10,7 +10,7 @@ import {
 
 if (typeof window !== 'undefined') {
   import(
-    /* webpackChunkName: "assembly-js" */ '@mapbox/mbx-assembly/dist/assembly.js'
+    /* webpackChunkName: "assembly-js" */ '@mapbox/mbx-assembly-docs/dist/assembly.js'
   );
 }
 
