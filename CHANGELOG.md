@@ -1,5 +1,12 @@
 # Changelog
 
+## 5.3.0
+
+- updates for the docs redesign project:
+  - use new Cera font classes from `mbx-assembly-docs`
+  - style updates to Search, Tag
+  - PageLayout updates to accomodate new sticky header from `docs-page-shell`
+
 ## 5.2.3
 
 - styling fix to Note component to prevent text overflow
