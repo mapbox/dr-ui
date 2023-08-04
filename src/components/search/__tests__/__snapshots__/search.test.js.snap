@@ -2,21 +2,21 @@
 
 exports[`search Basic search with \`site\` set to show filter toggle. Open https://app.swiftype.com/engines/docs/analytics/live while developing to watch query usage. renders as expected 1`] = `
 <div
-  className="relative h36"
+  className="relative"
 >
   <button
     className="w-full block"
     onClick={[Function]}
   >
     <div
-      className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+      className="flex flex--center-cross bg-white border--gray-lighter border border--gray-on-hover border--blue-on-active py6 pl6 pr12 round txt-s w-full"
       style={Object {}}
     >
       <span
         className="mr6 color-gray"
       >
         <svg
-          className="icon w18 h18"
+          className="icon w18 h18 block"
         >
           <use
             xlinkHref="#icon-search"
@@ -36,21 +36,21 @@ exports[`search Basic search with \`site\` set to show filter toggle. Open https
 
 exports[`search Basic search. Open https://app.swiftype.com/engines/docs/analytics/live while developing to watch query usage. renders as expected 1`] = `
 <div
-  className="relative h36"
+  className="relative"
 >
   <button
     className="w-full block"
     onClick={[Function]}
   >
     <div
-      className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+      className="flex flex--center-cross bg-white border--gray-lighter border border--gray-on-hover border--blue-on-active py6 pl6 pr12 round txt-s w-full"
       style={Object {}}
     >
       <span
         className="mr6 color-gray"
       >
         <svg
-          className="icon w18 h18"
+          className="icon w18 h18 block"
         >
           <use
             xlinkHref="#icon-search"
@@ -70,48 +70,52 @@ exports[`search Basic search. Open https://app.swiftype.com/engines/docs/analyti
 
 exports[`search Search with \`disableModal\` option set. Open https://app.swiftype.com/engines/docs/analytics/live while developing to watch query usage. renders as expected 1`] = `
 <div
-  className="relative h36"
+  className="py6 px6"
 >
-  <button
-    className="w-full block"
-    onClick={[Function]}
+  <div
+    className="relative"
   >
-    <div
-      className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
-      style={Object {}}
+    <button
+      className="w-full block"
+      onClick={[Function]}
     >
-      <span
-        className="mr6 color-gray"
+      <div
+        className="flex flex--center-cross bg-white border--gray-lighter border border--gray-on-hover border--blue-on-active py6 pl6 pr12 round txt-s w-full"
+        style={Object {}}
       >
-        <svg
-          className="icon w18 h18"
+        <span
+          className="mr6 color-gray"
         >
-          <use
-            xlinkHref="#icon-search"
-          />
-        </svg>
-      </span>
-       
-      <span
-        className="color-gray"
-      >
-        Search
-      </span>
-    </div>
-  </button>
+          <svg
+            className="icon w18 h18 block"
+          >
+            <use
+              xlinkHref="#icon-search"
+            />
+          </svg>
+        </span>
+         
+        <span
+          className="color-gray"
+        >
+          Search
+        </span>
+      </div>
+    </button>
+  </div>
 </div>
 `;
 
 exports[`search Search with \`narrow\` option set. Open https://app.swiftype.com/engines/docs/analytics/live while developing to watch query usage. renders as expected 1`] = `
 <div
-  className="relative h36"
+  className="relative"
 >
   <button
     className="w-full block"
     onClick={[Function]}
   >
     <div
-      className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 wmax30"
+      className="flex flex--center-cross bg-white border--gray-lighter border border--gray-on-hover border--blue-on-active py6 pl6 pr12 round txt-s wmax30"
       style={
         Object {
           "paddingLeft": "12px",
@@ -123,7 +127,7 @@ exports[`search Search with \`narrow\` option set. Open https://app.swiftype.com
         className="color-gray"
       >
         <svg
-          className="icon w18 h18"
+          className="icon w18 h18 block"
         >
           <title>
             Search
@@ -141,21 +145,21 @@ exports[`search Search with \`narrow\` option set. Open https://app.swiftype.com
 
 exports[`search Search with custom connector. renders as expected 1`] = `
 <div
-  className="relative h36"
+  className="relative"
 >
   <button
     className="w-full block"
     onClick={[Function]}
   >
     <div
-      className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+      className="flex flex--center-cross bg-white border--gray-lighter border border--gray-on-hover border--blue-on-active py6 pl6 pr12 round txt-s w-full"
       style={Object {}}
     >
       <span
         className="mr6 color-gray"
       >
         <svg
-          className="icon w18 h18"
+          className="icon w18 h18 block"
         >
           <use
             xlinkHref="#icon-search"
@@ -181,21 +185,21 @@ exports[`search Search with dark background, custom placeholder. Open https://ap
     className="w-full"
   >
     <div
-      className="relative h36"
+      className="relative"
     >
       <button
         className="w-full block"
         onClick={[Function]}
       >
         <div
-          className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 btn--white w-full"
+          className="flex flex--center-cross bg-white border--gray-lighter border border--gray-on-hover border--blue-on-active py6 pl6 pr12 round txt-s btn--white w-full"
           style={Object {}}
         >
           <span
             className="mr6"
           >
             <svg
-              className="icon w18 h18"
+              className="icon w18 h18 block"
             >
               <use
                 xlinkHref="#icon-search"
@@ -206,7 +210,7 @@ exports[`search Search with dark background, custom placeholder. Open https://ap
           <span
             className=""
           >
-            Search
+            SEARCH!
           </span>
         </div>
       </button>

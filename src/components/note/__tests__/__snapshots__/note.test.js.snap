@@ -1,187 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`note A legacy note, has same styling as warning renders as expected 1`] = `
-<div
-  className="dr-ui--note py18 px18 round flex mb18 bg-orange-faint color-orange-dark"
->
-  <div
-    className="mr18 none block-mm pt3"
-  >
-    <div
-      className="bg-orange-lighter round-full color-orange flex flex--center-main flex--center-cross"
-      style={
-        Object {
-          "height": 50,
-          "width": 50,
-        }
-      }
-    >
-      <svg
-        aria-hidden="true"
-        className="events-none icon"
-        data-testid="icon-alert"
-        focusable="false"
-        style={
-          Object {
-            "height": 40,
-            "width": 40,
-          }
-        }
-      >
-        <use
-          xlinkHref="#icon-alert"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        />
-      </svg>
-      <span
-        style={
-          Object {
-            "border": 0,
-            "clip": "rect(0, 0, 0, 0)",
-            "height": 1,
-            "margin": -1,
-            "overflow": "hidden",
-            "padding": 0,
-            "position": "absolute",
-            "whiteSpace": "nowrap",
-            "width": 1,
-            "wordWrap": "normal",
-          }
-        }
-      >
-        alert
-      </span>
-    </div>
-  </div>
-  <div
-    className="w-full prose wmin0"
-  >
-    <div
-      className="txt-bold mb6"
-    >
-      Warning
-    </div>
-    <div>
-      <p>
-        You can create custom styles with
-         
-        <a
-          href="https://studio.mapbox.com"
-        >
-          Mapbox Studio
-        </a>
-         and then add them to your app. To programmatically add one of your custom styles to your
-         
-        <code>
-          mapboxMap
-        </code>
-        , head to your
-         
-        <a
-          href="https://studio.mapbox.com/styles/"
-        >
-          styles page
-        </a>
-        , copy your style's 
-        <a
-          href="/help/glossary/style-url/"
-        >
-          style URL
-        </a>
-        , and then add it to your 
-        <code>
-          mapboxMap
-        </code>
-         object with
-         
-        <code>
-          setStyleUrl();
-        </code>
-        :
-      </p>
-      <pre
-        className=" language-java"
-      >
-        <code
-          className=" language-java"
-        >
-          mapboxMap
-          <span
-            className="token punctuation"
-          >
-            .
-          </span>
-          <span
-            className="token function"
-          >
-            setStyle
-          </span>
-          <span
-            className="token punctuation"
-          >
-            (
-          </span>
-          <span
-            className="token keyword"
-          >
-            new
-          </span>
-           
-          <span
-            className="token class-name"
-          >
-            Style
-          </span>
-          <span
-            className="token punctuation"
-          >
-            .
-          </span>
-          <span
-            className="token class-name"
-          >
-            Builder
-          </span>
-          <span
-            className="token punctuation"
-          >
-            (
-          </span>
-          <span
-            className="token punctuation"
-          >
-            )
-          </span>
-          <span
-            className="token punctuation"
-          >
-            .
-          </span>
-          <span
-            className="token function"
-          >
-            fromUri
-          </span>
-          <span
-            className="token punctuation"
-          >
-            (
-          </span>
-          <span
-            className="token string"
-          >
-            "mapbox://styles/your-mapbox-username/your-style-ID"
-          </span>
-        </code>
-      </pre>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`note A note to display an error with steps or links on how to troubleshoot. renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex mb18 bg-red-faint color-red-dark"
+  className="dr-ui--note py18 px18 round flex mb18 bg-red-faint undefined"
 >
   <div
     className="mr18 none block-mm pt3"
@@ -238,7 +59,7 @@ exports[`note A note to display an error with steps or links on how to troublesh
     <div
       className="txt-bold mb6"
     >
-      Error
+      ERROR
     </div>
     <div>
       <p>
@@ -360,7 +181,7 @@ exports[`note A note to display an error with steps or links on how to troublesh
 
 exports[`note A note to display with a message about new products or features. renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex mb18 bg-green-faint color-green-dark"
+  className="dr-ui--note py18 px18 round flex mb18 undefined undefined"
 >
   <div
     className="mr18 none block-mm pt3"
@@ -417,7 +238,7 @@ exports[`note A note to display with a message about new products or features. r
     <div
       className="txt-bold mb6"
     >
-      New!
+      NEW
     </div>
     <div>
       <p>
@@ -539,7 +360,7 @@ exports[`note A note to display with a message about new products or features. r
 
 exports[`note A note to flag information about a beta release/product renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex mb18 bg-blue-faint color-blue-dark"
+  className="dr-ui--note py18 px18 round flex mb18 undefined undefined"
 >
   <div
     className="mr18 none block-mm pt3"
@@ -596,7 +417,186 @@ exports[`note A note to flag information about a beta release/product renders as
     <div
       className="txt-bold mb6"
     >
-      Beta
+      BETA
+    </div>
+    <div>
+      <p>
+        You can create custom styles with
+         
+        <a
+          href="https://studio.mapbox.com"
+        >
+          Mapbox Studio
+        </a>
+         and then add them to your app. To programmatically add one of your custom styles to your
+         
+        <code>
+          mapboxMap
+        </code>
+        , head to your
+         
+        <a
+          href="https://studio.mapbox.com/styles/"
+        >
+          styles page
+        </a>
+        , copy your style's 
+        <a
+          href="/help/glossary/style-url/"
+        >
+          style URL
+        </a>
+        , and then add it to your 
+        <code>
+          mapboxMap
+        </code>
+         object with
+         
+        <code>
+          setStyleUrl();
+        </code>
+        :
+      </p>
+      <pre
+        className=" language-java"
+      >
+        <code
+          className=" language-java"
+        >
+          mapboxMap
+          <span
+            className="token punctuation"
+          >
+            .
+          </span>
+          <span
+            className="token function"
+          >
+            setStyle
+          </span>
+          <span
+            className="token punctuation"
+          >
+            (
+          </span>
+          <span
+            className="token keyword"
+          >
+            new
+          </span>
+           
+          <span
+            className="token class-name"
+          >
+            Style
+          </span>
+          <span
+            className="token punctuation"
+          >
+            .
+          </span>
+          <span
+            className="token class-name"
+          >
+            Builder
+          </span>
+          <span
+            className="token punctuation"
+          >
+            (
+          </span>
+          <span
+            className="token punctuation"
+          >
+            )
+          </span>
+          <span
+            className="token punctuation"
+          >
+            .
+          </span>
+          <span
+            className="token function"
+          >
+            fromUri
+          </span>
+          <span
+            className="token punctuation"
+          >
+            (
+          </span>
+          <span
+            className="token string"
+          >
+            "mapbox://styles/your-mapbox-username/your-style-ID"
+          </span>
+        </code>
+      </pre>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`note A note to flag information about legacy products renders as expected 1`] = `
+<div
+  className="dr-ui--note py18 px18 round flex mb18 bg-orange-faint color-orange-dark"
+>
+  <div
+    className="mr18 none block-mm pt3"
+  >
+    <div
+      className="bg-orange-lighter round-full color-orange flex flex--center-main flex--center-cross"
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
+    >
+      <svg
+        aria-hidden="true"
+        className="events-none icon"
+        data-testid="icon-alert"
+        focusable="false"
+        style={
+          Object {
+            "height": 40,
+            "width": 40,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-alert"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        alert
+      </span>
+    </div>
+  </div>
+  <div
+    className="w-full prose wmin0"
+  >
+    <div
+      className="txt-bold mb6"
+    >
+      LEGACY
     </div>
     <div>
       <p>
@@ -897,7 +897,7 @@ exports[`note A warning note to let the user know something has changed or will 
 
 exports[`note Default note renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex mb18 bg-gray-faint color-text"
+  className="dr-ui--note py18 px18 round flex mb18 bg-gray-faint undefined"
 >
   <div
     className="mr18 none block-mm pt3"
@@ -954,7 +954,7 @@ exports[`note Default note renders as expected 1`] = `
     <div
       className="txt-bold mb6"
     >
-      Note
+      NOTE
     </div>
     <p>
       Here is a little thing to note.
@@ -965,7 +965,7 @@ exports[`note Default note renders as expected 1`] = `
 
 exports[`note Note with custom title. renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex mb18 bg-gray-faint color-text"
+  className="dr-ui--note py18 px18 round flex mb18 bg-gray-faint undefined"
 >
   <div
     className="mr18 none block-mm pt3"
@@ -1144,7 +1144,7 @@ exports[`note Note with custom title. renders as expected 1`] = `
 
 exports[`note download renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex mb18 bg-purple-faint color-purple-dark"
+  className="dr-ui--note py18 px18 round flex mb18 bg-purple-faint undefined"
 >
   <div
     className="mr18 none block-mm pt3"

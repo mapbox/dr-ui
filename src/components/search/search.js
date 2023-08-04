@@ -56,11 +56,7 @@ export default class Search extends React.PureComponent {
     /* Show SearchFacade until the user clicks or focuses on it */
     /* Then load the SearchComponent */
     return (
-      <div
-        className={classnames('relative', {
-          h36: !this.props.resultsOnly
-        })}
-      >
+      <div className={classnames('relative')}>
         {SearchProvider ? (
           <SearchProvider useModal={useModal} {...this.props} />
         ) : (
@@ -104,7 +100,7 @@ Search.propTypes = {
 
 Search.defaultProps = {
   background: 'light',
-  placeholder: 'Search docs.mapbox.com',
+  placeholder: 'Search',
   inputId: 'docs-search',
   connector: new SiteSearchAPIConnector({
     engineKey: 'zpAwGSb8YMXtF9yDeS5K', // public engine key

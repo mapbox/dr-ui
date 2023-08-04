@@ -6,7 +6,7 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm"
+    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm mt24 mt18-mm"
   >
     <div
       className="flex-mm"
@@ -25,7 +25,7 @@ Array [
           id="dr-ui--page-layout-sidebar"
           style={
             Object {
-              "top": "10px",
+              "top": "84px",
             }
           }
         >
@@ -47,24 +47,24 @@ Array [
               </div>
             </div>
             <div
-              className="mb6 h36"
+              className="mb6 h60 h36-mm"
             >
               <div
-                className="relative h36"
+                className="relative"
               >
                 <button
                   className="w-full block"
                   onClick={[Function]}
                 >
                   <div
-                    className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+                    className="flex flex--center-cross bg-white border--gray-lighter border border--gray-on-hover border--blue-on-active py6 pl6 pr12 round txt-s w-full"
                     style={Object {}}
                   >
                     <span
                       className="mr6 color-gray"
                     >
                       <svg
-                        className="icon w18 h18"
+                        className="icon w18 h18 block"
                       >
                         <use
                           xlinkHref="#icon-search"
@@ -354,17 +354,17 @@ Array [
             </h1>
           </div>
           <div
-            className="grid grid--gut60"
+            className="grid grid--gut60 mb120"
           >
             <div
               className="dr-ui--page-layout-aside col w-full w-1/3-mxl"
             >
               <aside
-                className="overflow-auto-mxl scroll-styled h-viewport-11/12-mxl sticky-mxl color-text"
+                className="overflow-auto-mxl scroll-styled sticky-mxl color-text"
                 data-swiftype-index="false"
                 style={
                   Object {
-                    "top": "10px",
+                    "top": "84px",
                   }
                 }
               >
@@ -377,7 +377,7 @@ Array [
                     Filters
                   </h2>
                   <div
-                    className="grid grid--gut6"
+                    className="grid grid--gut6 mb18"
                   >
                     <div
                       className="col w-1/2 w-1/3-ml w-full-mxl mb6"
@@ -864,7 +864,7 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm"
+    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm mt24 mt18-mm"
   >
     <div
       className="flex-mm"
@@ -883,7 +883,7 @@ Array [
           id="dr-ui--page-layout-sidebar"
           style={
             Object {
-              "top": "10px",
+              "top": "84px",
             }
           }
         >
@@ -905,24 +905,24 @@ Array [
               </div>
             </div>
             <div
-              className="mb6 h36"
+              className="mb6 h60 h36-mm"
             >
               <div
-                className="relative h36"
+                className="relative"
               >
                 <button
                   className="w-full block"
                   onClick={[Function]}
                 >
                   <div
-                    className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+                    className="flex flex--center-cross bg-white border--gray-lighter border border--gray-on-hover border--blue-on-active py6 pl6 pr12 round txt-s w-full"
                     style={Object {}}
                   >
                     <span
                       className="mr6 color-gray"
                     >
                       <svg
-                        className="icon w18 h18"
+                        className="icon w18 h18 block"
                       >
                         <use
                           xlinkHref="#icon-search"
@@ -1261,17 +1261,17 @@ Array [
             </h1>
           </div>
           <div
-            className="grid grid--gut60"
+            className="grid grid--gut60 mb120"
           >
             <div
               className="dr-ui--page-layout-aside col w-full w-1/3-mxl"
             >
               <aside
-                className="overflow-auto-mxl scroll-styled h-viewport-11/12-mxl sticky-mxl color-text"
+                className="overflow-auto-mxl scroll-styled sticky-mxl color-text"
                 data-swiftype-index="false"
                 style={
                   Object {
-                    "top": "10px",
+                    "top": "84px",
                   }
                 }
               >
@@ -1549,7 +1549,7 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm"
+    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm mt24 mt18-mm"
   >
     <div
       className="flex-mm"
@@ -1722,7 +1722,7 @@ Array [
             </h1>
           </div>
           <div
-            className="grid grid--gut60"
+            className="grid grid--gut60 mb120"
           >
             <div
               className="col col--auto prose"
@@ -1900,7 +1900,7 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm"
+    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm mt24 mt18-mm"
   >
     <div
       className="flex-mm"
@@ -1919,7 +1919,7 @@ Array [
           id="dr-ui--page-layout-sidebar"
           style={
             Object {
-              "top": "10px",
+              "top": "84px",
             }
           }
         >
@@ -1941,24 +1941,24 @@ Array [
               </div>
             </div>
             <div
-              className="mb6 h36"
+              className="mb6 h60 h36-mm"
             >
               <div
-                className="relative h36"
+                className="relative"
               >
                 <button
                   className="w-full block"
                   onClick={[Function]}
                 >
                   <div
-                    className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+                    className="flex flex--center-cross bg-white border--gray-lighter border border--gray-on-hover border--blue-on-active py6 pl6 pr12 round txt-s w-full"
                     style={Object {}}
                   >
                     <span
                       className="mr6 color-gray"
                     >
                       <svg
-                        className="icon w18 h18"
+                        className="icon w18 h18 block"
                       >
                         <use
                           xlinkHref="#icon-search"
@@ -2346,17 +2346,17 @@ Array [
             </h1>
           </div>
           <div
-            className="grid grid--gut60"
+            className="grid grid--gut60 mb120"
           >
             <div
               className="dr-ui--page-layout-aside col w-full w-1/3-mxl"
             >
               <aside
-                className="overflow-auto-mxl scroll-styled h-viewport-11/12-mxl sticky-mxl color-text"
+                className="overflow-auto-mxl scroll-styled sticky-mxl color-text"
                 data-swiftype-index="false"
                 style={
                   Object {
-                    "top": "10px",
+                    "top": "84px",
                   }
                 }
               >
@@ -2785,7 +2785,7 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm"
+    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm mt24 mt18-mm"
   >
     <div
       className="flex-mm"
@@ -2804,7 +2804,7 @@ Array [
           id="dr-ui--page-layout-sidebar"
           style={
             Object {
-              "top": "10px",
+              "top": "84px",
             }
           }
         >
@@ -2826,24 +2826,24 @@ Array [
               </div>
             </div>
             <div
-              className="mb6 h36"
+              className="mb6 h60 h36-mm"
             >
               <div
-                className="relative h36"
+                className="relative"
               >
                 <button
                   className="w-full block"
                   onClick={[Function]}
                 >
                   <div
-                    className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+                    className="flex flex--center-cross bg-white border--gray-lighter border border--gray-on-hover border--blue-on-active py6 pl6 pr12 round txt-s w-full"
                     style={Object {}}
                   >
                     <span
                       className="mr6 color-gray"
                     >
                       <svg
-                        className="icon w18 h18"
+                        className="icon w18 h18 block"
                       >
                         <use
                           xlinkHref="#icon-search"
@@ -3245,17 +3245,17 @@ Array [
             </h1>
           </div>
           <div
-            className="grid grid--gut60"
+            className="grid grid--gut60 mb120"
           >
             <div
               className="dr-ui--page-layout-aside col w-full w-1/3-mxl"
             >
               <aside
-                className="overflow-auto-mxl scroll-styled h-viewport-11/12-mxl sticky-mxl color-text"
+                className="overflow-auto-mxl scroll-styled sticky-mxl color-text"
                 data-swiftype-index="false"
                 style={
                   Object {
-                    "top": "10px",
+                    "top": "84px",
                   }
                 }
               >
@@ -3604,7 +3604,7 @@ Array [
     className="shell-header-buffer"
   />,
   <div
-    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm"
+    className="wmax1800 w-11/12-mm w-11/12-ml mx-auto px24 px0-mm mt24 mt18-mm"
   >
     <div
       className="flex-mm"
@@ -3623,7 +3623,7 @@ Array [
           id="dr-ui--page-layout-sidebar"
           style={
             Object {
-              "top": "10px",
+              "top": "84px",
             }
           }
         >
@@ -3640,7 +3640,7 @@ Array [
                   className="ml-neg3"
                 >
                   <div
-                    className="txt-bold round inline-block cursor-default bg-blue-faint color-blue-dark border--blue-dark txt-xs px6"
+                    className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-xs px6"
                     data-state="closed"
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -3648,9 +3648,13 @@ Array [
                     onPointerDown={[Function]}
                     onPointerLeave={[Function]}
                     onPointerMove={[Function]}
-                    style={Object {}}
+                    style={
+                      Object {
+                        "backgroundColor": "#CBE4FF",
+                      }
+                    }
                   >
-                    Beta
+                    BETA
                   </div>
                 </div>
                 <a
@@ -3662,24 +3666,24 @@ Array [
               </div>
             </div>
             <div
-              className="mb6 h36"
+              className="mb6 h60 h36-mm"
             >
               <div
-                className="relative h36"
+                className="relative"
               >
                 <button
                   className="w-full block"
                   onClick={[Function]}
                 >
                   <div
-                    className="flex flex--center-cross btn--gray color-gray-light btn btn--stroke py3 pl6 pr12 round mb6 w-full"
+                    className="flex flex--center-cross bg-white border--gray-lighter border border--gray-on-hover border--blue-on-active py6 pl6 pr12 round txt-s w-full"
                     style={Object {}}
                   >
                     <span
                       className="mr6 color-gray"
                     >
                       <svg
-                        className="icon w18 h18"
+                        className="icon w18 h18 block"
                       >
                         <use
                           xlinkHref="#icon-search"
@@ -3889,7 +3893,7 @@ Array [
             </h1>
           </div>
           <div
-            className="grid grid--gut60"
+            className="grid grid--gut60 mb120"
           >
             <div
               className="col col--auto prose"

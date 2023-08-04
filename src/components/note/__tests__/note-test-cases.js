@@ -123,4 +123,13 @@ testCases.pricing = {
   }
 };
 
+testCases.legacy = {
+  component: Note,
+  description: 'A note to flag information about legacy products',
+  props: {
+    theme: 'legacy',
+    children: htmlSample()
+  }
+};
+
 export { testCases, noRenderCases };

@@ -35,7 +35,11 @@ testCases.dark = {
 
 testCases.disableModal = {
   description: 'Search with `disableModal` option set.',
-  element: <DisableModal />
+  element: (
+    <div className="py6 px6">
+      <DisableModal />
+    </div>
+  )
 };
 
 testCases.narrow = {

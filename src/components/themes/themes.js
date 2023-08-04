@@ -33,14 +33,13 @@ Image.propTypes = {
 const themes = {
   default: {
     image: <Image icon="book" color="gray" />,
-    label: 'Note',
+    label: 'NOTE',
     icon: 'book',
-    background: 'bg-gray-faint',
-    color: 'color-text'
+    background: 'bg-gray-faint'
   },
   warning: {
     image: <Image icon="alert" color="orange" />,
-    label: 'Warning',
+    label: 'WARNING',
     icon: 'alert',
     background: 'bg-orange-faint',
     color: 'color-orange-dark',
@@ -48,57 +47,51 @@ const themes = {
   },
   error: {
     image: <Image icon="alert" color="red" />,
-    label: 'Error',
+    label: 'ERROR',
     icon: 'alert',
-    background: 'bg-red-faint',
-    color: 'color-red-dark'
+    background: 'bg-red-faint'
   },
   beta: {
     image: <Image icon="lightning" color="blue" />,
-    label: 'Beta',
+    label: 'BETA',
     icon: 'lightning',
     tooltipText: 'This feature is in public beta and is subject to changes.',
-    background: 'bg-blue-faint',
-    color: 'color-blue-dark',
-    border: 'border--blue-dark'
+    styles: {
+      backgroundColor: '#CBE4FF'
+    }
   },
   new: {
     image: <Image icon="plus" color="green" />,
-    label: 'New!',
+    label: 'NEW',
     icon: 'plus',
     tooltipText: 'This feature was released recently.',
-    background: 'bg-green-faint',
-    color: 'color-green-dark',
-    border: 'border--green-dark'
+    styles: {
+      backgroundColor: '#C9F2DD'
+    }
   },
   download: {
     image: <Image icon="arrow-down" color="purple" />,
-    label: 'Download',
+    label: 'DOWNLOAD',
     icon: 'arrow-down',
-    background: 'bg-purple-faint',
-    color: 'color-purple-dark'
+    background: 'bg-purple-faint'
   },
   fundamentals: {
-    label: 'Fundamentals',
+    label: 'FUNDAMENTALS',
     icon: 'bookmark',
     tooltipText:
       'The concepts described here are fundamental to using this product.',
-    background: 'bg-pink-faint',
-    color: 'color-pink-dark',
-    border: 'border--pink-dark'
+    background: 'bg-pink-faint'
   },
   pricing: {
     image: <Image icon="creditcard" color="green" />,
-    label: 'Pricing',
+    label: 'PRICING',
     tooltipText: 'This contains information about product pricing.',
-    background: 'bg-green-faint',
-    color: 'color-green-dark',
-    border: 'border--green-dark'
+    background: 'bg-green-faint'
   }
 };
 /* duplicate themes */
 themes.legacy = Object.assign({}, themes.warning);
-themes.legacy.label = 'Legacy';
+themes.legacy.label = 'LEGACY';
 themes.legacy.tooltipText = 'This feature is no longer in active development.';
 
 export default themes;
