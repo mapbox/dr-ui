@@ -32,6 +32,7 @@ exports[`product-menu Beta product renders as expected 1`] = `
       style={
         Object {
           "backgroundColor": "#CBE4FF",
+          "paddingTop": 1,
         }
       }
     >
@@ -66,6 +67,7 @@ exports[`product-menu Beta product renders as expected 2`] = `
       style={
         Object {
           "backgroundColor": "#CBE4FF",
+          "paddingTop": 1,
         }
       }
     >

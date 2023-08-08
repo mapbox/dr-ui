@@ -232,6 +232,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
               style={
                 Object {
                   "backgroundColor": "#CBE4FF",
+                  "paddingTop": 1,
                 }
               }
             >

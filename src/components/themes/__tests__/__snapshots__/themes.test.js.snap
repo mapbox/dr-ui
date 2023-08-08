@@ -11,7 +11,11 @@ exports[`themes Custom tag renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
   >
     Limited access
   </div>
@@ -24,7 +28,11 @@ exports[`themes Custom tag renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
   >
     Limited access
   </div>
@@ -37,7 +45,11 @@ exports[`themes Custom tag renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
   >
     <svg
       aria-hidden="true"
@@ -84,7 +96,11 @@ exports[`themes Custom tag renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
   >
     <svg
       aria-hidden="true"
@@ -268,6 +284,7 @@ exports[`themes beta renders as expected 1`] = `
     style={
       Object {
         "backgroundColor": "#CBE4FF",
+        "paddingTop": 1,
       }
     }
   >
@@ -285,6 +302,7 @@ exports[`themes beta renders as expected 1`] = `
     style={
       Object {
         "backgroundColor": "#CBE4FF",
+        "paddingTop": 1,
       }
     }
   >
@@ -302,6 +320,7 @@ exports[`themes beta renders as expected 1`] = `
     style={
       Object {
         "backgroundColor": "#CBE4FF",
+        "paddingTop": 1,
       }
     }
   >
@@ -353,6 +372,7 @@ exports[`themes beta renders as expected 1`] = `
     style={
       Object {
         "backgroundColor": "#CBE4FF",
+        "paddingTop": 1,
       }
     }
   >
@@ -538,7 +558,11 @@ exports[`themes fundamentals renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
   >
     FUNDAMENTALS
   </div>
@@ -551,7 +575,11 @@ exports[`themes fundamentals renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
   >
     FUNDAMENTALS
   </div>
@@ -564,7 +592,11 @@ exports[`themes fundamentals renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
   >
     <svg
       aria-hidden="true"
@@ -611,7 +643,11 @@ exports[`themes fundamentals renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
   >
     <svg
       aria-hidden="true"
@@ -726,7 +762,11 @@ exports[`themes legacy or warning renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
   >
     LEGACY
   </div>
@@ -739,7 +779,11 @@ exports[`themes legacy or warning renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
   >
     LEGACY
   </div>
@@ -752,7 +796,11 @@ exports[`themes legacy or warning renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
   >
     <svg
       aria-hidden="true"
@@ -799,7 +847,11 @@ exports[`themes legacy or warning renders as expected 1`] = `
     onPointerDown={[Function]}
     onPointerLeave={[Function]}
     onPointerMove={[Function]}
-    style={Object {}}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
   >
     <svg
       aria-hidden="true"

@@ -13,6 +13,7 @@ exports[`tag Beta tag renders as expected 1`] = `
   style={
     Object {
       "backgroundColor": "#CBE4FF",
+      "paddingTop": 1,
     }
   }
 >
@@ -30,7 +31,11 @@ exports[`tag Custom tag renders as expected 1`] = `
   onPointerDown={[Function]}
   onPointerLeave={[Function]}
   onPointerMove={[Function]}
-  style={Object {}}
+  style={
+    Object {
+      "paddingTop": 1,
+    }
+  }
 >
   LIMITED ACCESS
 </div>
@@ -49,6 +54,7 @@ exports[`tag small variant renders as expected 1`] = `
   style={
     Object {
       "backgroundColor": "#CBE4FF",
+      "paddingTop": 1,
     }
   }
 >
