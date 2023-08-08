@@ -146,6 +146,6 @@ OnThisPage.propTypes = {
 };
 
 OnThisPage.defaultProps = {
-  topOffset: 50,
+  topOffset: 120,
   themeWrapper: ''
 };
