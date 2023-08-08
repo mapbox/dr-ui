@@ -5,10 +5,10 @@ import { prefixUrl } from '@mapbox/batfish/modules/prefix-url';
 import md from '../md';
 import entries from 'object.entries';
 import IconText from '@mapbox/mr-ui/icon-text';
-import AppropriateImage from '../../../docs/src/components/appropriate-image';
 
 export default class Plugins extends React.PureComponent {
   render() {
+    const AppropriateImage = this.props.AppropriateImage;
     return (
       <div>
         <div id="plugins" className="plugins-page" data-swiftype-index="true">
@@ -88,5 +88,6 @@ export default class Plugins extends React.PureComponent {
 }
 
 Plugins.propTypes = {
-  pluginData: PropTypes.object.isRequired
+  pluginData: PropTypes.object.isRequired,
+  AppropriateImage
 };
