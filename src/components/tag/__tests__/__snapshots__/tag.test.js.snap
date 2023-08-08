@@ -2,7 +2,7 @@
 
 exports[`tag Beta tag renders as expected 1`] = `
 <div
-  className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-s px6"
+  className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-faint color-blue-dark txt-s px6"
   data-state="closed"
   onBlur={[Function]}
   onClick={[Function]}
@@ -12,7 +12,6 @@ exports[`tag Beta tag renders as expected 1`] = `
   onPointerMove={[Function]}
   style={
     Object {
-      "backgroundColor": "#CBE4FF",
       "paddingTop": 1,
     }
   }
@@ -23,7 +22,7 @@ exports[`tag Beta tag renders as expected 1`] = `
 
 exports[`tag Custom tag renders as expected 1`] = `
 <div
-  className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-s px6 bg-red-light"
+  className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-red-light color-red-dark txt-s px6"
   data-state="closed"
   onBlur={[Function]}
   onClick={[Function]}
@@ -43,7 +42,7 @@ exports[`tag Custom tag renders as expected 1`] = `
 
 exports[`tag small variant renders as expected 1`] = `
 <div
-  className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-xs px6"
+  className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-faint color-blue-dark txt-xs px6"
   data-state="closed"
   onBlur={[Function]}
   onClick={[Function]}
@@ -53,7 +52,6 @@ exports[`tag small variant renders as expected 1`] = `
   onPointerMove={[Function]}
   style={
     Object {
-      "backgroundColor": "#CBE4FF",
       "paddingTop": 1,
     }
   }

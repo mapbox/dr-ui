@@ -3,7 +3,7 @@
 exports[`themes Custom tag renders as expected 1`] = `
 <div>
   <div
-    className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-s px6 bg-red-light"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-red-light color-red-dark txt-s px6"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -20,7 +20,7 @@ exports[`themes Custom tag renders as expected 1`] = `
     Limited access
   </div>
   <div
-    className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-xs px6 bg-red-light"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-red-light color-red-dark txt-xs px6"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -37,7 +37,7 @@ exports[`themes Custom tag renders as expected 1`] = `
     Limited access
   </div>
   <div
-    className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-s bg-red-light"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-red-light color-red-dark txt-s"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -88,7 +88,7 @@ exports[`themes Custom tag renders as expected 1`] = `
     </span>
   </div>
   <div
-    className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-xs bg-red-light"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-red-light color-red-dark txt-xs"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -143,7 +143,7 @@ exports[`themes Custom tag renders as expected 1`] = `
 
 exports[`themes Default renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex mb18 bg-gray-faint undefined"
+  className="dr-ui--note py18 px18 round flex mb18 bg-gray-faint color-text"
 >
   <div
     className="mr18 none block-mm pt3"
@@ -210,7 +210,7 @@ exports[`themes Default renders as expected 1`] = `
 exports[`themes beta renders as expected 1`] = `
 <div>
   <div
-    className="dr-ui--note py18 px18 round flex mb18 undefined undefined"
+    className="dr-ui--note py18 px18 round flex mb18 bg-blue-faint color-blue-dark"
   >
     <div
       className="mr18 none block-mm pt3"
@@ -273,7 +273,7 @@ exports[`themes beta renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-s px6"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-faint color-blue-dark txt-s px6"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -283,7 +283,6 @@ exports[`themes beta renders as expected 1`] = `
     onPointerMove={[Function]}
     style={
       Object {
-        "backgroundColor": "#CBE4FF",
         "paddingTop": 1,
       }
     }
@@ -291,7 +290,7 @@ exports[`themes beta renders as expected 1`] = `
     BETA
   </div>
   <div
-    className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-xs px6"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-faint color-blue-dark txt-xs px6"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -301,7 +300,6 @@ exports[`themes beta renders as expected 1`] = `
     onPointerMove={[Function]}
     style={
       Object {
-        "backgroundColor": "#CBE4FF",
         "paddingTop": 1,
       }
     }
@@ -309,7 +307,7 @@ exports[`themes beta renders as expected 1`] = `
     BETA
   </div>
   <div
-    className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-s"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-faint color-blue-dark txt-s"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -319,7 +317,6 @@ exports[`themes beta renders as expected 1`] = `
     onPointerMove={[Function]}
     style={
       Object {
-        "backgroundColor": "#CBE4FF",
         "paddingTop": 1,
       }
     }
@@ -361,7 +358,7 @@ exports[`themes beta renders as expected 1`] = `
     </span>
   </div>
   <div
-    className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-xs"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-faint color-blue-dark txt-xs"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -371,7 +368,6 @@ exports[`themes beta renders as expected 1`] = `
     onPointerMove={[Function]}
     style={
       Object {
-        "backgroundColor": "#CBE4FF",
         "paddingTop": 1,
       }
     }
@@ -417,7 +413,7 @@ exports[`themes beta renders as expected 1`] = `
 
 exports[`themes download renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex mb18 bg-purple-faint undefined"
+  className="dr-ui--note py18 px18 round flex mb18 bg-purple-faint color-purple-dark"
 >
   <div
     className="mr18 none block-mm pt3"
@@ -483,7 +479,7 @@ exports[`themes download renders as expected 1`] = `
 
 exports[`themes error renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex mb18 bg-red-faint undefined"
+  className="dr-ui--note py18 px18 round flex mb18 bg-red-faint color-red-dark"
 >
   <div
     className="mr18 none block-mm pt3"
@@ -550,7 +546,7 @@ exports[`themes error renders as expected 1`] = `
 exports[`themes fundamentals renders as expected 1`] = `
 <div>
   <div
-    className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-s px6 bg-pink-faint"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-pink-faint color-pink-dark txt-s px6"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -567,7 +563,7 @@ exports[`themes fundamentals renders as expected 1`] = `
     FUNDAMENTALS
   </div>
   <div
-    className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-xs px6 bg-pink-faint"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-pink-faint color-pink-dark txt-xs px6"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -584,7 +580,7 @@ exports[`themes fundamentals renders as expected 1`] = `
     FUNDAMENTALS
   </div>
   <div
-    className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-s bg-pink-faint"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-pink-faint color-pink-dark txt-s"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -635,7 +631,7 @@ exports[`themes fundamentals renders as expected 1`] = `
     </span>
   </div>
   <div
-    className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-xs bg-pink-faint"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-pink-faint color-pink-dark txt-xs"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -754,7 +750,7 @@ exports[`themes legacy or warning renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-s px6 bg-orange-faint"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-orange-faint color-orange-dark txt-s px6"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -771,7 +767,7 @@ exports[`themes legacy or warning renders as expected 1`] = `
     LEGACY
   </div>
   <div
-    className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-xs px6 bg-orange-faint"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-orange-faint color-orange-dark txt-xs px6"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -788,7 +784,7 @@ exports[`themes legacy or warning renders as expected 1`] = `
     LEGACY
   </div>
   <div
-    className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-s bg-orange-faint"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-orange-faint color-orange-dark txt-s"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -839,7 +835,7 @@ exports[`themes legacy or warning renders as expected 1`] = `
     </span>
   </div>
   <div
-    className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-xs bg-orange-faint"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-orange-faint color-orange-dark txt-xs"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}

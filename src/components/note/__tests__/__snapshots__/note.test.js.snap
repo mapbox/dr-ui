@@ -2,7 +2,7 @@
 
 exports[`note A note to display an error with steps or links on how to troubleshoot. renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex mb18 bg-red-faint undefined"
+  className="dr-ui--note py18 px18 round flex mb18 bg-red-faint color-red-dark"
 >
   <div
     className="mr18 none block-mm pt3"
@@ -181,7 +181,7 @@ exports[`note A note to display an error with steps or links on how to troublesh
 
 exports[`note A note to display with a message about new products or features. renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex mb18 undefined undefined"
+  className="dr-ui--note py18 px18 round flex mb18 bg-green-faint color-green-dark"
 >
   <div
     className="mr18 none block-mm pt3"
@@ -360,7 +360,7 @@ exports[`note A note to display with a message about new products or features. r
 
 exports[`note A note to flag information about a beta release/product renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex mb18 undefined undefined"
+  className="dr-ui--note py18 px18 round flex mb18 bg-blue-faint color-blue-dark"
 >
   <div
     className="mr18 none block-mm pt3"
@@ -897,7 +897,7 @@ exports[`note A warning note to let the user know something has changed or will 
 
 exports[`note Default note renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex mb18 bg-gray-faint undefined"
+  className="dr-ui--note py18 px18 round flex mb18 bg-gray-faint color-text"
 >
   <div
     className="mr18 none block-mm pt3"
@@ -965,7 +965,7 @@ exports[`note Default note renders as expected 1`] = `
 
 exports[`note Note with custom title. renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex mb18 bg-gray-faint undefined"
+  className="dr-ui--note py18 px18 round flex mb18 bg-gray-faint color-text"
 >
   <div
     className="mr18 none block-mm pt3"
@@ -1144,7 +1144,7 @@ exports[`note Note with custom title. renders as expected 1`] = `
 
 exports[`note download renders as expected 1`] = `
 <div
-  className="dr-ui--note py18 px18 round flex mb18 bg-purple-faint undefined"
+  className="dr-ui--note py18 px18 round flex mb18 bg-purple-faint color-purple-dark"
 >
   <div
     className="mr18 none block-mm pt3"

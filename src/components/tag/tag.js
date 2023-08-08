@@ -23,13 +23,12 @@ export default class Tag extends React.PureComponent {
             paddingTop: 1
           }}
           className={classnames(
-            `round inline-block cursor-default txt-fancy-medium color-gray-dark`,
+            `txt-fancy-medium round inline-block cursor-default color-gray-dark ${theme.background} ${theme.color}`,
             {
               'txt-s': !this.props.small,
               'txt-xs': this.props.small,
               px6: !this.props.icon
-            },
-            theme.background
+            }
           )}
         >
           {this.props.icon ? (
