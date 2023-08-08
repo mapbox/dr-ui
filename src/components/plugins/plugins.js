@@ -8,7 +8,7 @@ import IconText from '@mapbox/mr-ui/icon-text';
 
 export default class Plugins extends React.PureComponent {
   render() {
-    const AppropriateImage = this.props.AppropriateImage;
+    const { AppropriateImage } = this.props;
     return (
       <div>
         <div id="plugins" className="plugins-page" data-swiftype-index="true">
@@ -89,5 +89,5 @@ export default class Plugins extends React.PureComponent {
 
 Plugins.propTypes = {
   pluginData: PropTypes.object.isRequired,
-  AppropriateImage
+  AppropriateImage: PropTypes.node
 };
