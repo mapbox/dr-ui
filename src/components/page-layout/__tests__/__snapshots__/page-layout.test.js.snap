@@ -25,7 +25,7 @@ Array [
           id="dr-ui--page-layout-sidebar"
           style={
             Object {
-              "top": "84px",
+              "top": 88,
             }
           }
         >
@@ -883,7 +883,7 @@ Array [
           id="dr-ui--page-layout-sidebar"
           style={
             Object {
-              "top": "84px",
+              "top": 88,
             }
           }
         >
@@ -1919,7 +1919,7 @@ Array [
           id="dr-ui--page-layout-sidebar"
           style={
             Object {
-              "top": "84px",
+              "top": 88,
             }
           }
         >
@@ -2804,7 +2804,7 @@ Array [
           id="dr-ui--page-layout-sidebar"
           style={
             Object {
-              "top": "84px",
+              "top": 88,
             }
           }
         >
@@ -3623,7 +3623,7 @@ Array [
           id="dr-ui--page-layout-sidebar"
           style={
             Object {
-              "top": "84px",
+              "top": 88,
             }
           }
         >
@@ -3651,6 +3651,7 @@ Array [
                     style={
                       Object {
                         "backgroundColor": "#CBE4FF",
+                        "paddingTop": 1,
                       }
                     }
                   >

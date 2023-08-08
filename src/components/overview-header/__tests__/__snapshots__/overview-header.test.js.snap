@@ -759,6 +759,7 @@ exports[`overview-header Beta product renders as expected 1`] = `
             style={
               Object {
                 "backgroundColor": "#CBE4FF",
+                "paddingTop": 1,
               }
             }
           >
