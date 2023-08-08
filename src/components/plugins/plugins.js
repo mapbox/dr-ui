@@ -88,5 +88,5 @@ export default class Plugins extends React.PureComponent {
 }
 
 Plugins.propTypes = {
-  pluginData: PropTypes.object
+  pluginData: PropTypes.object.isRequired
 };
