@@ -95,9 +95,12 @@
     "prismjs": "^1.24.1",
     "react-aria-modal": "^4.0.0",
     "react-html-parser": "^2.0.2",
+    "remark": "^14.0.3",
     "remark-frontmatter": "^3.0.0",
     "remark-parse": "^9.0.0",
+    "remark-react": "^9.0.1",
     "remove-markdown": "^0.3.0",
+    "slugg": "^1.2.1",
     "slugify": "^1.6.0",
     "unified": "^9.2.2",
     "uuid": "^8.3.2"
