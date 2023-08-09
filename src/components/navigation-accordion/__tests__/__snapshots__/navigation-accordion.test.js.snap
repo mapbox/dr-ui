@@ -221,7 +221,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
             }
           >
             <div
-              className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-xs"
+              className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-faint color-blue-dark txt-xs"
               data-state="closed"
               onBlur={[Function]}
               onClick={[Function]}
@@ -231,7 +231,6 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
               onPointerMove={[Function]}
               style={
                 Object {
-                  "backgroundColor": "#CBE4FF",
                   "paddingTop": 1,
                 }
               }

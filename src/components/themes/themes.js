@@ -35,6 +35,7 @@ const themes = {
     image: <Image icon="book" color="gray" />,
     label: 'NOTE',
     icon: 'book',
+    color: 'color-text',
     background: 'bg-gray-faint'
   },
   warning: {
@@ -49,44 +50,50 @@ const themes = {
     image: <Image icon="alert" color="red" />,
     label: 'ERROR',
     icon: 'alert',
-    background: 'bg-red-faint'
+    background: 'bg-red-faint',
+    color: 'color-red-dark'
   },
   beta: {
     image: <Image icon="lightning" color="blue" />,
     label: 'BETA',
     icon: 'lightning',
     tooltipText: 'This feature is in public beta and is subject to changes.',
-    styles: {
-      backgroundColor: '#CBE4FF'
-    }
+    background: 'bg-blue-faint',
+    color: 'color-blue-dark',
+    border: 'border--blue-dark'
   },
   new: {
     image: <Image icon="plus" color="green" />,
     label: 'NEW',
     icon: 'plus',
     tooltipText: 'This feature was released recently.',
-    styles: {
-      backgroundColor: '#C9F2DD'
-    }
+    background: 'bg-green-faint',
+    color: 'color-green-dark',
+    border: 'border--green-dark'
   },
   download: {
     image: <Image icon="arrow-down" color="purple" />,
     label: 'DOWNLOAD',
     icon: 'arrow-down',
-    background: 'bg-purple-faint'
+    background: 'bg-purple-faint',
+    color: 'color-purple-dark'
   },
   fundamentals: {
     label: 'FUNDAMENTALS',
     icon: 'bookmark',
     tooltipText:
       'The concepts described here are fundamental to using this product.',
-    background: 'bg-pink-faint'
+    background: 'bg-pink-faint',
+    color: 'color-pink-dark',
+    border: 'border--pink-dark'
   },
   pricing: {
     image: <Image icon="creditcard" color="green" />,
     label: 'PRICING',
     tooltipText: 'This contains information about product pricing.',
-    background: 'bg-green-faint'
+    background: 'bg-green-faint',
+    color: 'color-green-dark',
+    border: 'border--green-dark'
   }
 };
 /* duplicate themes */

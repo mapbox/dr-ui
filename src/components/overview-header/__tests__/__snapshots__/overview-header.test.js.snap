@@ -748,7 +748,7 @@ exports[`overview-header Beta product renders as expected 1`] = `
           }
         >
           <div
-            className="round inline-block cursor-default txt-fancy-medium color-gray-dark txt-s px6"
+            className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-faint color-blue-dark txt-s px6"
             data-state="closed"
             onBlur={[Function]}
             onClick={[Function]}
@@ -758,7 +758,6 @@ exports[`overview-header Beta product renders as expected 1`] = `
             onPointerMove={[Function]}
             style={
               Object {
-                "backgroundColor": "#CBE4FF",
                 "paddingTop": 1,
               }
             }
