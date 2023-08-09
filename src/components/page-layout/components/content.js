@@ -80,8 +80,8 @@ export class ContentWrapper extends React.PureComponent {
     return (
       <aside
         data-swiftype-index="false"
-        className="overflow-auto-mxl scroll-styled sticky-mxl color-text"
-        style={{ top: '84px' }}
+        className="overflow-auto-mxl scroll-styled sticky-mxl color-text pb18"
+        style={{ top: '88px' }}
       >
         {this.props.customAside ? this.props.customAside : undefined}
         {showToc && headings && headings.length > 0 && (
@@ -91,7 +91,7 @@ export class ContentWrapper extends React.PureComponent {
           <SignupBanner />
         </div>
 
-        <div className="my18 color-text none block-mxl mb-18">
+        <div className="my18 color-text none block-mxl mb18">
           <DiscordCTA />
         </div>
         {showFeedback && (
@@ -129,7 +129,7 @@ export class ContentWrapper extends React.PureComponent {
         )}
         {overviewHeader && <OverviewHeader {...overviewHeader} />}
 
-        <div className="grid grid--gut60 mb120">
+        <div className="grid grid--gut60">
           {(layoutConfig.aside !== 'none' || this.props.customAside) && (
             <div className="dr-ui--page-layout-aside col w-full w-1/3-mxl">
               {this.renderAside(showFeedback)}
@@ -137,7 +137,7 @@ export class ContentWrapper extends React.PureComponent {
           )}
           <div
             className={classnames('col col--auto', {
-              'w-2/3-mxl w-full': layoutConfig.aside !== 'none',
+              'w-2/3-mxl w-full pb18': layoutConfig.aside !== 'none',
               prose: unProse !== true
             })}
           >
