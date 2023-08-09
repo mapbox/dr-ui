@@ -64,6 +64,11 @@
     overflow: auto !important;
     -webkit-overflow-scrolling: touch;
   }
+
+  /* calculated sidebar height allows for scrolling when content is longer than viewable area */
+  #dr-ui--page-layout-sidebar {
+    max-height: calc(100vh - 88px) !important;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -81,6 +86,11 @@
   .dr-ui--page-layout-aside .dr-ui--on-this-page li {
     font-size: 14px;
     line-height: 1.4;
+  }
+
+  /* calculated aside height allows for scrolling when content is longer than viewable area */
+  .dr-ui--page-layout-aside aside {
+    max-height: calc(100vh - 88px) !important;
   }
 }
 
