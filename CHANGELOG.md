@@ -1,5 +1,12 @@
 # Changelog
 
+## 5.4.0
+
+- Create Plugins component (#595)
+- improve sidebar and aside scroll UX (#598)
+- restore theme color classnames (#597)
+- CSS fixes (#596)
+
 ## 5.3.0
 
 - updates for the docs redesign project:
