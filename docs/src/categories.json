@@ -36,7 +36,9 @@
     "CardContainer",
     "Breadcrumb",
     "AnalyticsShell",
-    "ErrorBoundary"
+    "ErrorBoundary",
+    "Md",
+    "Plugins"
   ],
   "Images": [
     "BookImage",
