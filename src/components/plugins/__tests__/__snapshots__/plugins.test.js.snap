@@ -1,0 +1,200 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Plugins Basic renders as expected 1`] = `
+<div>
+  <div
+    className="plugins-page"
+    data-swiftype-index="true"
+    id="plugins"
+  >
+    <div>
+      <h2
+        className="anchor"
+      >
+        <a
+          className="unprose color-blue-on-hover"
+          href="#ios-plugins"
+          id="ios-plugins"
+          style={
+            Object {
+              "marginTop": "-30px",
+            }
+          }
+        >
+          iOS plugins
+           (
+          2
+          )
+        </a>
+      </h2>
+      <div
+        className="pb24"
+      >
+        <p>
+          Plugins offer features and functionality related to map controls and other things that users can touch or interact with, like draw tools, map export tools, directions and geocoding controls, and more.
+        </p>
+      </div>
+      <div
+        className="pb18 mb18 border-b border--darken10 flex flex--column flex--row-mm"
+      >
+        <div
+          className="round relative mr24-mm flex-child-no-shrink mb12 mb0-mm h180 w-full w-1/3-mm"
+        >
+          <div />
+        </div>
+        <div
+          className="flex-child-grow"
+        >
+          <div
+            className="mb6 txt-bold"
+          >
+            mapbox-gl-compare
+          </div>
+          <div
+            className="color-gray color-gray-on-hover mb6 prose"
+          >
+            <p>
+              Enables users to compare two maps by swiping left and right.
+            </p>
+          </div>
+          <div
+            className=""
+          >
+            <div>
+              <a
+                className="link link--blue"
+                href="https://github.com/mapbox/mapbox-gl-compare"
+              >
+                <span
+                  className="flex flex--center-cross"
+                >
+                  <span
+                    className="mr6"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="events-none icon"
+                      data-testid="icon-github"
+                      focusable="false"
+                      style={
+                        Object {
+                          "height": 18,
+                          "width": 18,
+                        }
+                      }
+                    >
+                      <use
+                        xlinkHref="#icon-github"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                      />
+                    </svg>
+                    <span
+                      style={
+                        Object {
+                          "border": 0,
+                          "clip": "rect(0, 0, 0, 0)",
+                          "height": 1,
+                          "margin": -1,
+                          "overflow": "hidden",
+                          "padding": 0,
+                          "position": "absolute",
+                          "whiteSpace": "nowrap",
+                          "width": 1,
+                          "wordWrap": "normal",
+                        }
+                      }
+                    >
+                      github
+                    </span>
+                  </span>
+                  View this project
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="pb18 mb18 border-b border--darken10 flex flex--column flex--row-mm"
+      >
+        <div
+          className="round relative mr24-mm flex-child-no-shrink mb12 mb0-mm h180 w-full w-1/3-mm"
+        >
+          <div />
+        </div>
+        <div
+          className="flex-child-grow"
+        >
+          <div
+            className="mb6 txt-bold"
+          >
+            mapbox-gl-controls
+          </div>
+          <div
+            className="color-gray color-gray-on-hover mb6 prose"
+          >
+            <p>
+              Adds controls for a ruler, style inspector, localization, and style switcher.
+            </p>
+          </div>
+          <div
+            className=""
+          >
+            <div>
+              <a
+                className="link link--blue"
+                href="https://github.com/bravecow/mapbox-gl-controls"
+              >
+                <span
+                  className="flex flex--center-cross"
+                >
+                  <span
+                    className="mr6"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="events-none icon"
+                      data-testid="icon-github"
+                      focusable="false"
+                      style={
+                        Object {
+                          "height": 18,
+                          "width": 18,
+                        }
+                      }
+                    >
+                      <use
+                        xlinkHref="#icon-github"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                      />
+                    </svg>
+                    <span
+                      style={
+                        Object {
+                          "border": 0,
+                          "clip": "rect(0, 0, 0, 0)",
+                          "height": 1,
+                          "margin": -1,
+                          "overflow": "hidden",
+                          "padding": 0,
+                          "position": "absolute",
+                          "whiteSpace": "nowrap",
+                          "width": 1,
+                          "wordWrap": "normal",
+                        }
+                      }
+                    >
+                      github
+                    </span>
+                  </span>
+                  View this project
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
