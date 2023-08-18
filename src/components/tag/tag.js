@@ -23,7 +23,9 @@ export default class Tag extends React.PureComponent {
             paddingTop: 1
           }}
           className={classnames(
-            `txt-fancy-medium round inline-block cursor-default color-gray-dark ${theme.background} ${theme.color}`,
+            `txt-fancy-medium round inline-block cursor-default color-gray-dark ${
+              this.props.customBackground || theme.tagBackground
+            } ${this.props.customColor ? theme.color : 'color-gray-dark'}`,
             {
               'txt-s': !this.props.small,
               'txt-xs': this.props.small,

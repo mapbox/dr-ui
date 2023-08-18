@@ -21,7 +21,7 @@ exports[`product-menu Beta product renders as expected 1`] = `
     className="ml-neg3"
   >
     <div
-      className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-faint color-blue-dark txt-xs px6"
+      className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-lighter color-gray-dark txt-xs px6"
       data-state="closed"
       onBlur={[Function]}
       onClick={[Function]}
@@ -55,7 +55,7 @@ exports[`product-menu Beta product renders as expected 2`] = `
     className="ml-neg3"
   >
     <div
-      className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-faint color-blue-dark txt-xs px6"
+      className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-lighter color-gray-dark txt-xs px6"
       data-state="closed"
       onBlur={[Function]}
       onClick={[Function]}
