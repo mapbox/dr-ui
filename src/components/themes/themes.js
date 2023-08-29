@@ -36,13 +36,15 @@ const themes = {
     label: 'NOTE',
     icon: 'book',
     color: 'color-text',
-    background: 'bg-gray-faint'
+    background: 'bg-gray-faint',
+    tagBackground: 'bg-gray-lighter'
   },
   warning: {
     image: <Image icon="alert" color="orange" />,
     label: 'WARNING',
     icon: 'alert',
     background: 'bg-orange-faint',
+    tagBackground: 'bg-orange-lighter',
     color: 'color-orange-dark',
     border: 'border--orange-dark'
   },
@@ -51,6 +53,7 @@ const themes = {
     label: 'ERROR',
     icon: 'alert',
     background: 'bg-red-faint',
+    tagBackground: 'bg-red-lighter',
     color: 'color-red-dark'
   },
   beta: {
@@ -59,6 +62,7 @@ const themes = {
     icon: 'lightning',
     tooltipText: 'This feature is in public beta and is subject to changes.',
     background: 'bg-blue-faint',
+    tagBackground: 'bg-blue-lighter',
     color: 'color-blue-dark',
     border: 'border--blue-dark'
   },
@@ -68,6 +72,7 @@ const themes = {
     icon: 'plus',
     tooltipText: 'This feature was released recently.',
     background: 'bg-green-faint',
+    tagBackground: 'bg-green-lighter',
     color: 'color-green-dark',
     border: 'border--green-dark'
   },
@@ -76,6 +81,7 @@ const themes = {
     label: 'DOWNLOAD',
     icon: 'arrow-down',
     background: 'bg-purple-faint',
+    tagBackground: 'bg-purple-lighter',
     color: 'color-purple-dark'
   },
   fundamentals: {
@@ -84,6 +90,7 @@ const themes = {
     tooltipText:
       'The concepts described here are fundamental to using this product.',
     background: 'bg-pink-faint',
+    tagBackground: 'bg-pink-lighter',
     color: 'color-pink-dark',
     border: 'border--pink-dark'
   },
@@ -92,6 +99,7 @@ const themes = {
     label: 'PRICING',
     tooltipText: 'This contains information about product pricing.',
     background: 'bg-green-faint',
+    tagBackground: 'bg-green-lighter',
     color: 'color-green-dark',
     border: 'border--green-dark'
   }

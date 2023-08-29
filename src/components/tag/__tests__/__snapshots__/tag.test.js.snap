@@ -2,7 +2,7 @@
 
 exports[`tag Beta tag renders as expected 1`] = `
 <div
-  className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-faint color-blue-dark txt-s px6"
+  className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-lighter color-gray-dark txt-s px6"
   data-state="closed"
   onBlur={[Function]}
   onClick={[Function]}
@@ -42,7 +42,7 @@ exports[`tag Custom tag renders as expected 1`] = `
 
 exports[`tag small variant renders as expected 1`] = `
 <div
-  className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-faint color-blue-dark txt-xs px6"
+  className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-lighter color-gray-dark txt-xs px6"
   data-state="closed"
   onBlur={[Function]}
   onClick={[Function]}

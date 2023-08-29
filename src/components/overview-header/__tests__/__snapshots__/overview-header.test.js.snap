@@ -748,7 +748,7 @@ exports[`overview-header Beta product renders as expected 1`] = `
           }
         >
           <div
-            className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-faint color-blue-dark txt-s px6"
+            className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-lighter color-gray-dark txt-s px6"
             data-state="closed"
             onBlur={[Function]}
             onClick={[Function]}
