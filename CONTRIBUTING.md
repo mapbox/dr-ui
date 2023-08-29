@@ -29,6 +29,15 @@ To run the tests:
 npm test
 ```
 
+## Local development in a documentation site
+
+To test local changes to dr-ui in a documentation site, use `npx link`:
+
+1. Build dr-ui with `npm run build`. The `/pkg` directory will be populated with the built files.
+2. From the root of the consuming documentation site, run `npx link ../dr-ui/pkg` (this assumes the docs site and dr-ui share the same parent directory).
+3. Start the development server on the consuming docs site: `npm start`. You should see any dr-ui changes that were built in step 1.
+4. After making changes to dr-ui, save and build (step 1). The changes will be available when the consuming site is reloaded.
+
 ## Tests
 
 Every component should have a `__tests__` directory with the following files:
@@ -77,6 +86,7 @@ Once all changes are on the main branch, follow these steps:
 A new release needs to be deployed on the various docs sites that consume `dr-ui`. Two scripts have been configured to perform this task. Both scripts do the same task, so please choose one option and run that only.
 
 ### First Script
+
 The first script, `scripts/create-pull-request.sh`, includes a sequence of shell commands to navigate to a docs repo on your local dev environment, run `npm install @mapbox/dr-ui` to install a specific version of `dr-ui`, commit `package.json` and `package.lock` to a new branch, and create a github pull request. It must be run once for every docs repo using dr-ui, a total of 16.
 
 This script should be run from the root of this repository, and requires you to have [github cli](https://cli.github.com/) installed.
@@ -93,6 +103,7 @@ Example: `sh scripts/create-pull-request.sh 5.1.12 mapbox-gl-js-docs`
 Repeat for all docs sites that need the update, and merge PRs through your normal workflow.
 
 ### Second Script
+
 The second script, `scripts/update-dr-ui-all.sh`, includes the sequence of shell commands of the first script, but copied for each repo that must be updated. It should be run only one time total.
 
 This script should be run from the root of this repository, and requires you to have [github cli](https://cli.github.com/) installed.
@@ -103,6 +114,5 @@ To use:
 - From the root of this repository, run `sh scripts/update-dr-ui-all.sh [dr-ui version]`
 
 Example: `sh scripts/update-dr-ui-all.sh 5.1.12`
-
 
 Again, run this script only once, and merge PRs through your normal workflow.
