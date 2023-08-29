@@ -221,7 +221,7 @@ exports[`navigation-accordion Titles with tags renders as expected 1`] = `
             }
           >
             <div
-              className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-faint color-blue-dark txt-xs"
+              className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-lighter color-gray-dark txt-xs"
               data-state="closed"
               onBlur={[Function]}
               onClick={[Function]}

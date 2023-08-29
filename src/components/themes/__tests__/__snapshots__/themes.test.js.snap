@@ -273,7 +273,7 @@ exports[`themes beta renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-faint color-blue-dark txt-s px6"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-lighter color-gray-dark txt-s px6"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -290,7 +290,7 @@ exports[`themes beta renders as expected 1`] = `
     BETA
   </div>
   <div
-    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-faint color-blue-dark txt-xs px6"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-lighter color-gray-dark txt-xs px6"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -307,7 +307,7 @@ exports[`themes beta renders as expected 1`] = `
     BETA
   </div>
   <div
-    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-faint color-blue-dark txt-s"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-lighter color-gray-dark txt-s"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -358,7 +358,7 @@ exports[`themes beta renders as expected 1`] = `
     </span>
   </div>
   <div
-    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-faint color-blue-dark txt-xs"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-lighter color-gray-dark txt-xs"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -546,7 +546,7 @@ exports[`themes error renders as expected 1`] = `
 exports[`themes fundamentals renders as expected 1`] = `
 <div>
   <div
-    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-pink-faint color-pink-dark txt-s px6"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-pink-lighter color-gray-dark txt-s px6"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -563,7 +563,7 @@ exports[`themes fundamentals renders as expected 1`] = `
     FUNDAMENTALS
   </div>
   <div
-    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-pink-faint color-pink-dark txt-xs px6"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-pink-lighter color-gray-dark txt-xs px6"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -580,7 +580,7 @@ exports[`themes fundamentals renders as expected 1`] = `
     FUNDAMENTALS
   </div>
   <div
-    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-pink-faint color-pink-dark txt-s"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-pink-lighter color-gray-dark txt-s"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -631,7 +631,7 @@ exports[`themes fundamentals renders as expected 1`] = `
     </span>
   </div>
   <div
-    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-pink-faint color-pink-dark txt-xs"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-pink-lighter color-gray-dark txt-xs"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -750,7 +750,7 @@ exports[`themes legacy or warning renders as expected 1`] = `
     </div>
   </div>
   <div
-    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-orange-faint color-orange-dark txt-s px6"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-orange-lighter color-gray-dark txt-s px6"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -767,7 +767,7 @@ exports[`themes legacy or warning renders as expected 1`] = `
     LEGACY
   </div>
   <div
-    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-orange-faint color-orange-dark txt-xs px6"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-orange-lighter color-gray-dark txt-xs px6"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -784,7 +784,7 @@ exports[`themes legacy or warning renders as expected 1`] = `
     LEGACY
   </div>
   <div
-    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-orange-faint color-orange-dark txt-s"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-orange-lighter color-gray-dark txt-s"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -835,7 +835,7 @@ exports[`themes legacy or warning renders as expected 1`] = `
     </span>
   </div>
   <div
-    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-orange-faint color-orange-dark txt-xs"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-orange-lighter color-gray-dark txt-xs"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
