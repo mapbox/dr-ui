@@ -3,7 +3,7 @@
 exports[`themes Custom tag renders as expected 1`] = `
 <div>
   <div
-    className="txt-fancy-medium round inline-block cursor-default color-gray-dark undefined color-red-dark txt-s px6"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-red-light color-red-dark txt-s px6"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -20,7 +20,7 @@ exports[`themes Custom tag renders as expected 1`] = `
     Limited access
   </div>
   <div
-    className="txt-fancy-medium round inline-block cursor-default color-gray-dark undefined color-red-dark txt-xs px6"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-red-light color-red-dark txt-xs px6"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -37,7 +37,7 @@ exports[`themes Custom tag renders as expected 1`] = `
     Limited access
   </div>
   <div
-    className="txt-fancy-medium round inline-block cursor-default color-gray-dark undefined color-red-dark txt-s"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-red-light color-red-dark txt-s"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
@@ -88,7 +88,7 @@ exports[`themes Custom tag renders as expected 1`] = `
     </span>
   </div>
   <div
-    className="txt-fancy-medium round inline-block cursor-default color-gray-dark undefined color-red-dark txt-xs"
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-red-light color-red-dark txt-xs"
     data-state="closed"
     onBlur={[Function]}
     onClick={[Function]}
