@@ -1,5 +1,11 @@
 # Changelog
 
+
+## 5.5.0
+
+- Add `tagBackground` to each theme for use in Tag component (#602)
+- Decorate unordered lists with a gray bullet (#603)
+
 ## 5.4.0
 
 - Create Plugins component (#595)
