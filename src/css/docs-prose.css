@@ -59,6 +59,23 @@
   background: transparent;
 }
 
+/* decorate unordered lists with a gray bullet */
+.prose ul {
+  list-style: none !important;
+}
+
+.prose ul:not(.unprose) > li::before,
+.list-item::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: #1f3349;
+  opacity: 0.15;
+  position: absolute;
+  margin: 9px 0 0 -18px;
+}
+
 @media screen and (min-width: 640px) {
   .overflow-auto-mm {
     overflow: auto !important;
