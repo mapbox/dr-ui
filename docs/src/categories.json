@@ -1,17 +1,18 @@
 {
   "Features": [
+    "Browser",
+    "DemoIframe",
+    "DownloadButton",
     "Feedback",
     "LevelIndicator",
+    "MapWrapper",
     "Note",
+    "Phone",
     "RelatedPage",
     "Search",
     "Tag",
-    "Browser",
-    "DemoIframe",
-    "MapWrapper",
-    "Phone",
     "Video",
-    "DownloadButton"
+    "VideoModal"
   ],
   "Code": [
     "AndroidLayoutCodeBlock",
