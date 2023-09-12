@@ -82,7 +82,7 @@
     "@elastic/react-search-ui-views": "1.7.0",
     "@elastic/search-ui-site-search-connector": "1.7.0",
     "@mapbox/mapbox-gl-supported": "^2.0.1",
-    "@mapbox/mr-ui": "2.5.1",
+    "@mapbox/mr-ui": "2.7.0",
     "@sentry/browser": "^6.13.3",
     "@sentry/tracing": "^6.13.3",
     "classnames": "^2.3.1",
