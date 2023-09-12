@@ -1,48 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Modal from '@mapbox/mr-ui/modal';
-
-// creates the modal
-export class VimeoModal extends React.PureComponent {
-  render() {
-    const { vimeoId, closeModal, title } = this.props;
-    return (
-      <Modal
-        accessibleTitle={`Video: ${title}`}
-        padding="none"
-        onExit={closeModal}
-      >
-        <div className="py36">
-          <div style={{ padding: '62.5% 0 0 0', position: 'relative' }}>
-            <iframe
-              title={title}
-              src={`https://player.vimeo.com/video/${vimeoId}?title=0&byline=0&portrait=0`}
-              style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%'
-              }}
-              frameBorder="0"
-              allow="autoplay; fullscreen"
-              allowFullScreen
-            />
-          </div>
-        </div>
-      </Modal>
-    );
-  }
-}
-
-VimeoModal.propTypes = {
-  vimeoId: PropTypes.string.isRequired,
-  closeModal: PropTypes.func.isRequired,
-  title: PropTypes.string.isRequired
-};
 
 // creates the video thumbnail with play button overlay
-export class VimeoThumbnail extends React.PureComponent {
+export class VideoThumbnail extends React.PureComponent {
   render() {
     const { children } = this.props;
     return (
@@ -58,7 +18,7 @@ export class VimeoThumbnail extends React.PureComponent {
             padding: '4% 9% 1%'
           }}
         >
-          <VimeoPlayImage />
+          <VideoPlayImage />
         </div>
         <div className="h-full mb24 mb0-ml">{children}</div>
       </React.Fragment>
@@ -66,12 +26,12 @@ export class VimeoThumbnail extends React.PureComponent {
   }
 }
 
-VimeoThumbnail.propTypes = {
+VideoThumbnail.propTypes = {
   children: PropTypes.node.isRequired
 };
 
 // creates play button icon
-export class VimeoPlayImage extends React.PureComponent {
+export class VideoPlayImage extends React.PureComponent {
   render() {
     // if fallbackIcon, then use the icon wrapper
     // to add the circle background
@@ -104,10 +64,10 @@ export class VimeoPlayImage extends React.PureComponent {
   }
 }
 
-VimeoPlayImage.defaultProps = {
+VideoPlayImage.defaultProps = {
   fallbackIcon: false
 };
 
-VimeoPlayImage.propTypes = {
+VideoPlayImage.propTypes = {
   fallbackIcon: PropTypes.bool
 };
