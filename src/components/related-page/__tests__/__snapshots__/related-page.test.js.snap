@@ -1,5 +1,94 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`related-page Use \`label\` prop renders as expected 1`] = `
+<a
+  className="unprose block cursor-pointer color-gray color-gray-dark-on-hover transition mb18"
+  href="https://docs.mapbox.com/android/maps/examples/add-a-vector-tile-source/"
+>
+  <div
+    className="round flex flex--stretch-cross border border--gray-light border--gray-dark-on-hover border--2 transition"
+  >
+    <div
+      className="flex-child-grow px18 pt30 pb18"
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <div
+        className="flex flex--row"
+      >
+        <div
+          className=""
+        >
+          <div
+            className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-gray-dark"
+          >
+            next
+          </div>
+          <div
+            className="color-gray-dark color-black-on-hover transition"
+          >
+            <div
+              className="txt-bold"
+            >
+              Add a vector tile source
+            </div>
+            Add a vector source to a map and display it as a layer.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="flex-child-no-shrink w30 flex flex--center-cross border-l"
+      style={
+        Object {
+          "borderColor": "inherit",
+          "borderLeftWidth": "2px",
+        }
+      }
+    >
+      <svg
+        aria-hidden="true"
+        className="events-none icon"
+        data-testid="icon-chevron-right"
+        focusable="false"
+        style={
+          Object {
+            "height": 30,
+            "width": 30,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-chevron-right"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        chevron-right
+      </span>
+    </div>
+  </div>
+</a>
+`;
+
 exports[`related-page example renders as expected 1`] = `
 <a
   className="unprose block cursor-pointer color-pink color-pink-dark-on-hover transition mb18"
