@@ -17,8 +17,8 @@ export default class VideoModal extends React.PureComponent {
           style={{
             width: '65vw',
             maxWidth: '1140px',
-            // 62.5% === 16:9 aspect ratio
-            padding: '62.5% 0 0 0',
+            // 56.25% === 16:9 aspect ratio
+            padding: '56.25% 0 0 0',
             position: 'relative'
           }}
         >
