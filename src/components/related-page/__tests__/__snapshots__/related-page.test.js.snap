@@ -1058,7 +1058,10 @@ exports[`related-page video renders as expected 1`] = `
           <div
             className="h-full mb24 mb0-ml"
           >
-            <div />
+            <img
+              alt="Youtube Video Thumbnail"
+              src="https://img.youtube.com/vi/tTw358pE6qk/maxresdefault.jpg"
+            />
           </div>
         </div>
         <div
@@ -1075,80 +1078,9 @@ exports[`related-page video renders as expected 1`] = `
             <div
               className="txt-bold"
             >
-              How to eject a Style Component in Mapbox Studio
+              How to create a map style with a template
             </div>
-            Style Components provide sensible defaults and quick opportunities for customization by optimizing the most common property changes for styles and packaging them into simple drop-down options, sliders, and toggles.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</button>
-`;
-
-exports[`related-page video with svg image fallback renders as expected 1`] = `
-<button
-  className="unprose block cursor-pointer color-purple color-purple-dark-on-hover transition mb18"
-  onClick={[Function]}
->
-  <div
-    className="round flex flex--stretch-cross border border--purple-light border--purple-dark-on-hover border--2 transition"
-  >
-    <div
-      className="flex-child-grow px18 pt30 pb18"
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    >
-      <div
-        className="flex flex--row"
-      >
-        <div
-          className="pt6 mr18 none block-mm"
-        >
-          <div
-            className="bg-purple-light round-full"
-            style={
-              Object {
-                "height": 55,
-                "padding": "15px 12px 15px 18px",
-                "width": 55,
-              }
-            }
-          >
-            <svg
-              aria-label="Play"
-              fill="#7753eb"
-              focusable="false"
-              role="img"
-              viewBox="0 0 20 20"
-              width="100%"
-            >
-              <polygon
-                points="1,0 20,10 1,20"
-              />
-            </svg>
-          </div>
-        </div>
-        <div
-          className=""
-        >
-          <div
-            className="txt-fancy txt-uppercase txt-s txt-spacing1 mt-neg12 mb6 color-purple-dark"
-          >
-            video
-          </div>
-          <div
-            className="color-gray-dark color-black-on-hover transition"
-          >
-            <div
-              className="txt-bold"
-            >
-              How to eject a Style Component in Mapbox Studio
-            </div>
-            Style Components provide sensible defaults and quick opportunities for customization by optimizing the most common property changes for styles and packaging them into simple drop-down options, sliders, and toggles.
+            Learn how to use the Mapbox Studio style editor to create a new custom style based on a template style.
           </div>
         </div>
       </div>

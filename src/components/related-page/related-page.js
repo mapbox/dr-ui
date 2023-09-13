@@ -7,8 +7,9 @@ import BookImage from '../book-image/book-image';
 import GlossaryImage from '../glossary-image/glossary-image';
 import ExampleImage from '../example-image/example-image';
 import PlaygroundImage from '../playground-image/playground-image';
-import { VimeoModal, VimeoThumbnail, VimeoPlayImage } from './vimeo';
+import VideoModal from '../video-modal/video-modal';
 import classnames from 'classnames';
+import { VideoThumbnail, VideoPlayImage } from './video';
 
 class RelatedPage extends React.PureComponent {
   constructor(props) {
@@ -17,7 +18,7 @@ class RelatedPage extends React.PureComponent {
   }
 
   handleClick = () => {
-    if (this.props.vimeoId) {
+    if (this.props.youtubeId) {
       this.setState({ modalOpen: true });
       if (window && window.analytics) {
         analytics.track('Opened video from RelatedPage');
@@ -32,10 +33,10 @@ class RelatedPage extends React.PureComponent {
       return null;
     }
     return (
-      <VimeoModal
+      <VideoModal
         title={this.props.title}
         closeModal={this.closeModal}
-        vimeoId={this.props.vimeoId}
+        youtubeId={this.props.youtubeId}
       />
     );
   }
@@ -70,10 +71,15 @@ class RelatedPage extends React.PureComponent {
       video: {
         label: 'video',
         color: 'purple',
-        image: props.vimeoThumbnail ? (
-          <VimeoThumbnail>{props.vimeoThumbnail}</VimeoThumbnail>
+        image: props.youtubeId ? (
+          <VideoThumbnail>
+            <img
+              src={`https://img.youtube.com/vi/${this.props.youtubeId}/maxresdefault.jpg`}
+              alt="Youtube Video Thumbnail"
+            />
+          </VideoThumbnail>
         ) : (
-          <VimeoPlayImage fallbackIcon={true} />
+          <VideoPlayImage fallbackIcon={true} />
         )
       },
       playground: {
@@ -92,9 +98,8 @@ class RelatedPage extends React.PureComponent {
     // When label prop is set, override theme label
     if (props.label) theme.label = props.label;
 
-    const showVideoModal = props.vimeoId && props.contentType === 'video';
-    const showVideoThumbnail =
-      this.props.contentType === 'video' && props.vimeoThumbnail;
+    const showVideoModal = props.youtubeId && props.contentType === 'video';
+    const showVideoThumbnail = props.contentType === 'video' && props.youtubeId;
 
     const contentContainerClasses = classnames('', {
       'flex-ml flex--start-cross': showVideoThumbnail,
@@ -181,7 +186,7 @@ RelatedPage.propTypes = {
   title: PropTypes.string.isRequired,
   /** Description of the related page in the context of the current page. */
   children: PropTypes.node.isRequired,
-  /** The link to the related page. Required if `vimeoId` is not set.  */
+  /** The link to the related page. Required if `youtubeId` is not set.  */
   url: (props, propName, componentName) => {
     if (props[propName] && typeof props[propName] !== 'string') {
       return new Error(
@@ -196,16 +201,16 @@ RelatedPage.propTypes = {
       );
     }
     if (
-      (!props.vimeoId && !props[propName]) ||
-      (props.vimeoId && props[propName])
+      (!props.youtubeId && !props[propName]) ||
+      (props.youtubeId && props[propName])
     ) {
       return new Error(
-        `\`url\` or \`vimeoId\` must be supplied to ${componentName}.`
+        `\`url\` or \`youtubeId\` must be supplied to ${componentName}.`
       );
     }
   },
-  /** The vimeoId of the video. Required if `url` is not set. */
-  vimeoId: (props, propName, componentName) => {
+  /** The youtubeId of the video. Required if `url` is not set. */
+  youtubeId: (props, propName, componentName) => {
     if (props[propName] && typeof props[propName] !== 'string') {
       return new Error(
         `\`${propName}\` expected a string, but received ${typeof props[
@@ -215,22 +220,8 @@ RelatedPage.propTypes = {
     }
     if ((!props.url && !props[propName]) || (props.url && props[propName])) {
       return new Error(
-        `\`url\` or \`vimeoId\` must be supplied to ${componentName}.`
+        `\`url\` or \`youtubeId\` must be supplied to ${componentName}.`
       );
-    }
-  },
-  /** A thumbnail image of the video (using AppropriateImage). If undefined a play button icon will be the fallback. */
-  vimeoThumbnail: (props, propName, componentName) => {
-    if (
-      props.contentType &&
-      props.contentType !== 'video' &&
-      props.vimeoThumbnail
-    )
-      return new Error(
-        `\`${propName}\` only works with \`contentType=video\` in ${componentName}`
-      );
-    else if (props.vimeoThumbnail && typeof props.vimeoThumbnail === 'string') {
-      return new Error(`\`${propName}\` must be an AppropriateImage instance`);
     }
   }
 };

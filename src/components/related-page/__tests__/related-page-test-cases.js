@@ -73,19 +73,7 @@ testCases.video = {
   element: <VideoExample />
 };
 
-testCases.videoNoImage = {
-  component: RelatedPage,
-  description: 'video with svg image fallback',
-  props: {
-    contentType: 'video',
-    title: 'How to eject a Style Component in Mapbox Studio',
-    children:
-      'Style Components provide sensible defaults and quick opportunities for customization by optimizing the most common property changes for styles and packaging them into simple drop-down options, sliders, and toggles.',
-    vimeoId: '378704089'
-  }
-};
-
-testCases.videoNoVimeo = {
+testCases.videoWithUrl = {
   component: RelatedPage,
   description: 'video with url (no modal)',
   props: {
@@ -93,7 +81,7 @@ testCases.videoNoVimeo = {
     title: 'How to eject a Style Component in Mapbox Studio',
     children:
       'Style Components provide sensible defaults and quick opportunities for customization by optimizing the most common property changes for styles and packaging them into simple drop-down options, sliders, and toggles.',
-    url: 'https://docs.mapbox.com/android/maps/examples/add-a-vector-tile-source/'
+    url: 'https://www.youtube.com/watch?v=thsIXX3OmB0'
   }
 };
 

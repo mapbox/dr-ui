@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/media-has-caption */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { VimeoPlayImage } from '../related-page/vimeo';
+import { VideoPlayImage } from '../related-page/video';
 import * as Sentry from '@sentry/browser';
 
 /*
@@ -92,7 +92,7 @@ export default class Video extends React.PureComponent {
             onClick={this.playVideo}
             className="bg-darken75 bg-darken50-on-hover w60 h60 py12 px12 w120-mm h120-mm py18-mm px18-mm round cursor-pointer z1 absolute"
           >
-            <VimeoPlayImage />
+            <VideoPlayImage />
           </button>
         )}
         <video
