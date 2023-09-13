@@ -1,8 +1,8 @@
 # Changelog
 
-## 5.6.0
+## 6.0.0
 
-- Update the VideoModal component to have a smaller width [#605](https://github.com/mapbox/dr-ui/pull/605)
+- Update the VideoModal component to have a smaller width [#605](https://github.com/mapbox/dr-ui/pull/60)
 - Update RelatedPage component to display YouTube videos [#604](https://github.com/mapbox/dr-ui/pull/604)
 
 ## 5.5.0
