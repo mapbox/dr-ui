@@ -15,10 +15,11 @@ export default class VideoModal extends React.PureComponent {
       >
         <div
           style={{
-            width: '80vw',
-            height: '45vw',
+            width: '65vw',
             maxWidth: '1140px',
-            maxHeight: '641px'
+            // 62.5% === 16:9 aspect ratio
+            padding: '62.5% 0 0 0',
+            position: 'relative'
           }}
         >
           <iframe
@@ -31,7 +32,13 @@ export default class VideoModal extends React.PureComponent {
             frameBorder="0"
             allow="autoplay; fullscreen"
             allowFullScreen
-            style={{ display: 'block' }}
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%'
+            }}
           />
         </div>
       </Modal>
