@@ -11,28 +11,28 @@ export default class VideoModal extends React.PureComponent {
         padding="none"
         margin="large"
         onExit={closeModal}
+        size="auto"
       >
-        <div className="py36">
-          <div style={{ padding: '62.5% 0 0 0', position: 'relative' }}>
-            <iframe
-              id="ytplayer"
-              type="text/html"
-              width="640"
-              height="360"
-              title={title}
-              src={`https://www.youtube.com/embed/${youtubeId}?autoplay=1&origin=http://example.com`}
-              style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%'
-              }}
-              frameBorder="0"
-              allow="autoplay; fullscreen"
-              allowFullScreen
-            />
-          </div>
+        <div
+          style={{
+            width: '80vw',
+            height: '45vw',
+            maxWidth: '1140px',
+            maxHeight: '641px'
+          }}
+        >
+          <iframe
+            id="ytplayer"
+            type="text/html"
+            width="100%"
+            height="100%"
+            title={title}
+            src={`https://www.youtube.com/embed/${youtubeId}?autoplay=1&origin=http://docs.mapbox.com`}
+            frameBorder="0"
+            allow="autoplay; fullscreen"
+            allowFullScreen
+            style={{ display: 'block' }}
+          />
         </div>
       </Modal>
     );
