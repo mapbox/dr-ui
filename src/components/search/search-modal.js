@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import AriaModal from 'react-aria-modal';
-import getWindow from '@mapbox/mr-ui/utils/get-window';
 
 export default class Modal extends React.PureComponent {
   constructor(props) {
@@ -11,7 +10,7 @@ export default class Modal extends React.PureComponent {
 
   componentDidMount() {
     if (!this.dialogEl || typeof window === 'undefined') return;
-    this.scrollTimeout = getWindow().setTimeout(() => {
+    this.scrollTimeout = window.setTimeout(() => {
       const offsetParent = this.dialogEl.offsetParent;
       if (offsetParent.tagName === 'BODY' || offsetParent.tagName === 'HTML') {
         return;
@@ -22,7 +21,7 @@ export default class Modal extends React.PureComponent {
 
   componentWillUnmount() {
     if (typeof window === 'undefined') return;
-    getWindow().clearTimeout(this.scrollTimeout);
+    window.clearTimeout(this.scrollTimeout);
   }
 
   setDialogEl(el) {
