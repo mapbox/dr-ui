@@ -92,31 +92,31 @@ export const GlossaryIcon = () => (
 const helpCardData = [
   {
     id: 'getting-started',
-    icon: GettingStartedIcon,
+    icon: <GettingStartedIcon />,
     highlightColor: 'blue-light',
     link: '/help/getting-started'
   },
   {
     id: 'tutorials',
-    icon: TutorialsIcon,
+    icon: <TutorialsIcon />,
     highlightColor: 'green-light',
     link: '/help/tutorials'
   },
   {
     id: 'how-to-videos',
-    icon: HowToVideosIcon,
+    icon: <HowToVideosIcon />,
     highlightColor: 'purple-light',
     link: '/help/how-to-videos'
   },
   {
     id: 'troubleshooting',
-    icon: TroubleshootingIcon,
+    icon: <TroubleshootingIcon />,
     highlightColor: 'red-light',
     link: '/help/troubleshooting'
   },
   {
     id: 'glossary',
-    icon: GlossaryIcon,
+    icon: <GlossaryIcon />,
     highlightColor: 'orange-light',
     link: '/help/glossary'
   }

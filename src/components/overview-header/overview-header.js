@@ -158,7 +158,7 @@ class OverviewHeader extends React.PureComponent {
                     width: 36
                   }}
                 >
-                  {titleIcon()}
+                  {titleIcon}
                 </div>
               )}
             </div>

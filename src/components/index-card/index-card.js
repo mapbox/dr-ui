@@ -68,7 +68,7 @@ const CardContent = ({
       >
         {icon && (
           <div className="mr12" style={{ height: 28, width: 28 }}>
-            {icon()}
+            {icon}
           </div>
         )}
         <h3
@@ -146,7 +146,6 @@ const CardContent = ({
 
 const IndexCard = (props) => {
   const { title, link, isLinkList } = props;
-  console.log('here', props);
   return (
     <div
       key={title}

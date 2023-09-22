@@ -1,0 +1,228 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index-card Basic use as a product card with links renders as expected 1`] = `
+<div
+  className="col w-full w-1/2-mm w-1/3-ml w-1/4-mxl mb18"
+  style={
+    Object {
+      "marginBottom": false,
+    }
+  }
+>
+  <div
+    className="h-full"
+  >
+    <div
+      className="drui-index-card relative flex overflow-hidden h-full round-bold drui-index-card-hoverable"
+      style={
+        Object {
+          "boxShadow": "0px 2px 5px 0px #5F7E9B59",
+        }
+      }
+    >
+      <div
+        className="px18 py18 flex flex--column"
+      >
+        <div
+          className="flex flex--center-cross"
+        >
+          <h3
+            className="txt-fancy txt-l mb12"
+            style={
+              Object {
+                "fontSize": 18,
+                "lineHeight": "18px",
+              }
+            }
+          >
+            <span
+              className="mr6"
+            >
+              Mapbox GL JS
+            </span>
+            <div
+              className="inline-block mr6 relative"
+              style={
+                Object {
+                  "top": -2,
+                }
+              }
+            >
+              <div
+                className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-faint color-blue-dark txt-s px6"
+                data-state="closed"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onPointerDown={[Function]}
+                onPointerLeave={[Function]}
+                onPointerMove={[Function]}
+                style={
+                  Object {
+                    "paddingTop": 1,
+                  }
+                }
+              >
+                PRIVATE PREVIEW
+              </div>
+            </div>
+          </h3>
+        </div>
+        <p
+          className="txt-m mb12 color-gray-deep flex-child-grow txt-fancy-regular"
+          style={
+            Object {
+              "minHeight": 48,
+            }
+          }
+        >
+          Add custom interactive maps to web applications.
+        </p>
+        <div
+          className="flex flex--wrap"
+        >
+          <div
+            className="mt6 card-button mr6"
+          >
+            <a
+              aria-label="Mapbox GL JS"
+              className="btn btn--stroke round-full pb6 txt-xs txt-nowrap color-gray-deep px12 color-white-on-hover shadow-white-on-hover txt-fancy-regular bg-green-light-on-hover"
+              href="https://docs.mapbox.com/mapbox-gl-js/"
+              style={
+                Object {
+                  "fontSize": 14,
+                  "fontWeight": 500,
+                  "lineHeight": "17px",
+                  "paddingTop": "7px",
+                }
+              }
+            >
+              GL JS Docs
+            </a>
+          </div>
+          <div
+            className="mt6 card-button"
+          >
+            <a
+              aria-label="Mapbox GL JS"
+              className="btn btn--stroke round-full pb6 txt-xs txt-nowrap color-gray-deep px12 color-white-on-hover shadow-white-on-hover txt-fancy-regular bg-green-light-on-hover"
+              href="https://docs.mapbox.com/mapbox-gl-js/plugins/#framework-integrations"
+              style={
+                Object {
+                  "fontSize": 14,
+                  "fontWeight": 500,
+                  "lineHeight": "17px",
+                  "paddingTop": "7px",
+                }
+              }
+            >
+              JS Frameworks
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`index-card Use as a help section card renders as expected 1`] = `
+<div
+  className="col w-full w-1/2-mm w-1/3-ml w-1/4-mxl mb18"
+  style={
+    Object {
+      "marginBottom": false,
+    }
+  }
+>
+  <div
+    className="h-full"
+  >
+    <a
+      href="https://docs.mapbox.com/help/tutorials"
+    >
+      <div
+        className="drui-index-card relative flex overflow-hidden h-full round-bold drui-index-card-hoverable"
+        style={
+          Object {
+            "boxShadow": "0px 2px 5px 0px #5F7E9B59",
+          }
+        }
+      >
+        <div
+          className="flex-child-no-shrink bg-green-light"
+          style={
+            Object {
+              "width": 4,
+            }
+          }
+        />
+        <div
+          className="px18 py18 flex flex--column"
+        >
+          <div
+            className="flex flex--center-cross mb12"
+          >
+            <div
+              className="mr12"
+              style={
+                Object {
+                  "height": 28,
+                  "width": 28,
+                }
+              }
+            >
+              <svg
+                fill="none"
+                height="100%"
+                viewBox="0 0 28 28"
+                width="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="#2FC078"
+                  height="28"
+                  rx="6"
+                  width="28"
+                />
+                <path
+                  d="M14 5C10.6863 5 8 7.8206 8 11.3C8 12.4142 8.28628 13.4753 8.80399 14.4221C8.81342 14.4401 10.4274 17.1032 10.5714 17.6H17.4286C17.57 17.1059 19.1789 14.4617 19.1694 14.4779C19.7034 13.5212 20 12.4322 20 11.3C20 7.8206 17.3137 5 14 5ZM14 8.6C14.4731 8.6 14.8571 9.0032 14.8571 9.5C14.8571 9.9968 14.4731 10.4 14 10.4C13.5269 10.4 13.1429 10.8032 13.1429 11.3C13.1429 11.7968 12.7589 12.2 12.2857 12.2C11.8126 12.2 11.4286 11.7968 11.4286 11.3C11.4286 9.8087 12.5797 8.6 14 8.6ZM10.5714 19.4C10.5714 21.3881 12.1066 23 14 23C15.8934 23 17.4286 21.3881 17.4286 19.4H10.5714Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <h3
+              className="txt-fancy txt-l"
+              style={
+                Object {
+                  "fontSize": 18,
+                  "lineHeight": "18px",
+                }
+              }
+            >
+              <span
+                className="mr6"
+              >
+                Tutorials
+              </span>
+            </h3>
+          </div>
+          <p
+            className="txt-m mb12 color-gray-deep flex-child-grow txt-fancy-regular"
+            style={
+              Object {
+                "minHeight": 48,
+              }
+            }
+          >
+            Step by Step guides to help you get started or level up.
+          </p>
+          <div
+            className="flex flex--wrap"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+`;
