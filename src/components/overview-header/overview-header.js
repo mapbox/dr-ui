@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 import Icon from '@mapbox/mr-ui/icon';
 import IconText from '@mapbox/mr-ui/icon-text';
 import classnames from 'classnames';
+
 import Tag from '../tag/tag';
+import { cardBoxShadow } from '../index-card/index-card';
 
 class OverviewHeader extends React.PureComponent {
   renderVersion() {
@@ -98,8 +100,18 @@ class OverviewHeader extends React.PureComponent {
   };
 
   render() {
-    const { features, theme, lightText, title, tag, description, image } =
-      this.props;
+    const {
+      features,
+      theme = '',
+      lightText,
+      title,
+      tag,
+      description,
+      image,
+      highlightColor,
+      card,
+      titleIcon
+    } = this.props;
 
     const featuresList =
       features &&
@@ -117,24 +129,44 @@ class OverviewHeader extends React.PureComponent {
         </li>
       ));
 
-    return (
+    const overviewHeaderContent = (
       <div
         className={classnames(
-          `dr-ui--overview-header prose mb24 pr60-mxl ${theme}`,
+          `dr-ui--overview-header prose pr60-mxl ${theme}`,
           {
-            'border-b border--gray-light': !theme,
-            'round py12 px24': theme,
-            'color-white': lightText
+            'border-b border--gray-light': !theme && !card,
+            round: theme,
+            'py12 px24': theme || card,
+            'color-white': lightText,
+            mb24: !card,
+            mb12: card
           }
         )}
       >
         <div className="flex flex--center-cross">
           <div className="flex-child-grow">
-            <h1 className="mb6 txt-fancy">
-              {title}
-              {tag && this.buildTag(this.props)}
-            </h1>
-            {description && <p className="txt-l">{description}</p>}
+            <div className="flex flex--center-cross flex--row-reverse flex--end-main">
+              <h1 className="mb6 txt-fancy">
+                {title}
+                {tag && this.buildTag(this.props)}
+              </h1>
+              {titleIcon && (
+                <div
+                  className="mr18 relative"
+                  style={{
+                    height: 36,
+                    width: 36
+                  }}
+                >
+                  {titleIcon()}
+                </div>
+              )}
+            </div>
+            {description && (
+              <p className="txt-l txt-fancy-regular color-gray-deep">
+                {description}
+              </p>
+            )}
             {this.renderVersion()}
 
             {featuresList && <ul className="unprose mb18">{featuresList}</ul>}
@@ -148,6 +180,25 @@ class OverviewHeader extends React.PureComponent {
         </div>
       </div>
     );
+
+    if (card) {
+      return (
+        <div
+          className="flex overflow-hidden round-bold mt18 mb30"
+          style={{ boxShadow: cardBoxShadow }}
+        >
+          {card && (
+            <div
+              className={`flex-child-no-shrink bg-${highlightColor}`}
+              style={{ width: 7 }}
+            ></div>
+          )}
+          {overviewHeaderContent}
+        </div>
+      );
+    }
+
+    return overviewHeaderContent;
   }
 }
 
@@ -162,6 +213,8 @@ OverviewHeader.propTypes = {
   description: PropTypes.string,
   /** title of the product */
   title: PropTypes.string.isRequired,
+  /** an image to display to the left of the title, used in the help docs */
+  titleIcon: PropTypes.node,
   tag: PropTypes.oneOf(['legacy', 'beta', 'fundamentals', 'new', 'custom']),
   /* Required if tag is set to `custom` */
   customTagProps: PropTypes.shape({
@@ -186,7 +239,11 @@ OverviewHeader.propTypes = {
   /** Classes to apply to the OverviewHeader containter, usually an Assembly background color: https://labs.mapbox.com/assembly/documentation/#Background-colors */
   theme: PropTypes.string,
   /** If `true`, the component will use white text */
-  lightText: PropTypes.bool
+  lightText: PropTypes.bool,
+  /** The highlight color, adds a thin colored line to the left used in the help docs */
+  highlightColor: PropTypes.string,
+  /**  If `true`, render a card-style container with shadow, used in the help docs*/
+  card: PropTypes.bool
 };
 
 export default OverviewHeader;

@@ -2,7 +2,7 @@
 
 exports[`overview-header Adds Contact Us button renders as expected 1`] = `
 <div
-  className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--gray-light"
+  className="dr-ui--overview-header prose pr60-mxl undefined border-b border--gray-light mb24"
 >
   <div
     className="flex flex--center-cross"
@@ -10,11 +10,15 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
     <div
       className="flex-child-grow"
     >
-      <h1
-        className="mb6 txt-fancy"
+      <div
+        className="flex flex--center-cross flex--row-reverse flex--end-main"
       >
-        Mapbox SDK for Breakfast
-      </h1>
+        <h1
+          className="mb6 txt-fancy"
+        >
+          Mapbox SDK for Breakfast
+        </h1>
+      </div>
       <p>
         <span
           className="mr6"
@@ -209,7 +213,7 @@ exports[`overview-header Adds Contact Us button renders as expected 1`] = `
 
 exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
 <div
-  className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--gray-light"
+  className="dr-ui--overview-header prose pr60-mxl undefined border-b border--gray-light mb24"
 >
   <div
     className="flex flex--center-cross"
@@ -217,11 +221,15 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
     <div
       className="flex-child-grow"
     >
-      <h1
-        className="mb6 txt-fancy"
+      <div
+        className="flex flex--center-cross flex--row-reverse flex--end-main"
       >
-        Mapbox SDK for Breakfast
-      </h1>
+        <h1
+          className="mb6 txt-fancy"
+        >
+          Mapbox SDK for Breakfast
+        </h1>
+      </div>
       <p>
         <span
           className="mr6"
@@ -471,7 +479,7 @@ exports[`overview-header All, plus Contact Us button renders as expected 1`] = `
 
 exports[`overview-header Basic renders as expected 1`] = `
 <div
-  className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--gray-light"
+  className="dr-ui--overview-header prose pr60-mxl undefined border-b border--gray-light mb24"
 >
   <div
     className="flex flex--center-cross"
@@ -479,11 +487,15 @@ exports[`overview-header Basic renders as expected 1`] = `
     <div
       className="flex-child-grow"
     >
-      <h1
-        className="mb6 txt-fancy"
+      <div
+        className="flex flex--center-cross flex--row-reverse flex--end-main"
       >
-        Mapbox SDK for Breakfast
-      </h1>
+        <h1
+          className="mb6 txt-fancy"
+        >
+          Mapbox SDK for Breakfast
+        </h1>
+      </div>
       <p>
         <span
           className="mr6"
@@ -727,7 +739,7 @@ exports[`overview-header Basic renders as expected 1`] = `
 
 exports[`overview-header Beta product renders as expected 1`] = `
 <div
-  className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--gray-light"
+  className="dr-ui--overview-header prose pr60-mxl undefined border-b border--gray-light mb24"
 >
   <div
     className="flex flex--center-cross"
@@ -735,37 +747,41 @@ exports[`overview-header Beta product renders as expected 1`] = `
     <div
       className="flex-child-grow"
     >
-      <h1
-        className="mb6 txt-fancy"
+      <div
+        className="flex flex--center-cross flex--row-reverse flex--end-main"
       >
-        Mapbox Potato SDK
-        <span
-          className="ml12 inline-block relative"
-          style={
-            Object {
-              "top": "-7px",
-            }
-          }
+        <h1
+          className="mb6 txt-fancy"
         >
-          <div
-            className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-lighter color-gray-dark txt-s px6"
-            data-state="closed"
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onPointerDown={[Function]}
-            onPointerLeave={[Function]}
-            onPointerMove={[Function]}
+          Mapbox Potato SDK
+          <span
+            className="ml12 inline-block relative"
             style={
               Object {
-                "paddingTop": 1,
+                "top": "-7px",
               }
             }
           >
-            BETA
-          </div>
-        </span>
-      </h1>
+            <div
+              className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-lighter color-gray-dark txt-s px6"
+              data-state="closed"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onPointerDown={[Function]}
+              onPointerLeave={[Function]}
+              onPointerMove={[Function]}
+              style={
+                Object {
+                  "paddingTop": 1,
+                }
+              }
+            >
+              BETA
+            </div>
+          </span>
+        </h1>
+      </div>
       <ul
         className="unprose mb18"
       >
@@ -933,7 +949,7 @@ exports[`overview-header Beta product renders as expected 1`] = `
 
 exports[`overview-header No optional props renders as expected 1`] = `
 <div
-  className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--gray-light"
+  className="dr-ui--overview-header prose pr60-mxl undefined border-b border--gray-light mb24"
 >
   <div
     className="flex flex--center-cross"
@@ -941,11 +957,15 @@ exports[`overview-header No optional props renders as expected 1`] = `
     <div
       className="flex-child-grow"
     >
-      <h1
-        className="mb6 txt-fancy"
+      <div
+        className="flex flex--center-cross flex--row-reverse flex--end-main"
       >
-        Mapbox SDK that You've Never Heard Of
-      </h1>
+        <h1
+          className="mb6 txt-fancy"
+        >
+          Mapbox SDK that You've Never Heard Of
+        </h1>
+      </div>
       <ul
         className="unprose mb18"
       >
@@ -1209,7 +1229,7 @@ exports[`overview-header No optional props renders as expected 1`] = `
 
 exports[`overview-header Some optional props renders as expected 1`] = `
 <div
-  className="dr-ui--overview-header prose mb24 pr60-mxl undefined border-b border--gray-light"
+  className="dr-ui--overview-header prose pr60-mxl undefined border-b border--gray-light mb24"
 >
   <div
     className="flex flex--center-cross"
@@ -1217,11 +1237,15 @@ exports[`overview-header Some optional props renders as expected 1`] = `
     <div
       className="flex-child-grow"
     >
-      <h1
-        className="mb6 txt-fancy"
+      <div
+        className="flex flex--center-cross flex--row-reverse flex--end-main"
       >
-        Mapbox SDK for Breakfast
-      </h1>
+        <h1
+          className="mb6 txt-fancy"
+        >
+          Mapbox SDK for Breakfast
+        </h1>
+      </div>
       <p>
         <span
           className="mr6"

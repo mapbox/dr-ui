@@ -3,6 +3,8 @@ import Basic from '../examples/basic';
 import Custom from '../examples/custom';
 import OverviewHeader from '../overview-header';
 
+import { GettingStartedIcon } from '../../../helpers/help-card-data';
+
 const testCases = {};
 
 testCases.basic = {
@@ -151,6 +153,19 @@ testCases.everything = {
         src="https://farm2.staticflickr.com/1790/29050447978_41e671dcd5_o.jpg"
       />
     )
+  }
+};
+
+testCases.card = {
+  description:
+    'Card Mode (adds an icon and highlight color, used in the help docs)',
+  component: OverviewHeader,
+  props: {
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    title: 'Mapbox SDK for Breakfast',
+    highlightColor: 'blue',
+    titleIcon: GettingStartedIcon,
+    card: true
   }
 };
 
