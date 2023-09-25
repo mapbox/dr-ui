@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.1.0
+
+- add IndexCard, helpCardData, build a card mode for OverviewHeader [#608](https://github.com/mapbox/dr-ui/pull/608)
+
 ## 6.0.1
 
 - remove calls to `mr-ui` `getWindow` util [#607](https://github.com/mapbox/dr-ui/pull/607)
