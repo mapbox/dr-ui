@@ -37,11 +37,11 @@ export default class Breadcrumb extends React.PureComponent {
       >
         {links.map((link, index) => {
           return link.path !== location.pathname ? (
-            <Link key={link.title} href={link.path} index={index}>
+            <Link key={index} href={link.path} index={index}>
               {link.title}
             </Link>
           ) : (
-            <span key={link.title} className="color-gray none inline-block-mm">
+            <span key={index} className="color-gray none inline-block-mm">
               {link.title}
             </span>
           );
