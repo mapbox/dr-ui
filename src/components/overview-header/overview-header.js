@@ -152,11 +152,7 @@ class OverviewHeader extends React.PureComponent {
               </h1>
               {titleIcon && (
                 <div
-                  className="mr18 relative"
-                  style={{
-                    height: 36,
-                    width: 36
-                  }}
+                  className="mr18 w36 h36 relative"
                 >
                   {titleIcon}
                 </div>
