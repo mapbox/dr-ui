@@ -164,7 +164,7 @@ testCases.card = {
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
     title: 'Mapbox SDK for Breakfast',
     highlightColor: 'blue',
-    titleIcon: GettingStartedIcon,
+    titleIcon: <GettingStartedIcon />,
     card: true
   }
 };
