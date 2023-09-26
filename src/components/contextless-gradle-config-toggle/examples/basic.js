@@ -10,38 +10,42 @@ export default class Basic extends React.PureComponent {
       languages: {
         gradle: [
           {
-            label: 'Groovy',
-            value: 'groovy'
-          },
-          {
             label: 'Kotlin',
             value: 'kotlin'
+          },
+          {
+            label: 'Groovy',
+            value: 'groovy'
           }
         ]
       },
       preferredLanguage: {
-        gradle: 'groovy'
+        gradle: 'kotlin'
       },
       changeLanguage: {
         gradle: () => {}
       }
     };
 
-    const groovy = `map.getStyle(new Style.OnStyleLoaded() {
-      @Override
-      public void onStyleLoaded(@NonNull Style style) {
+    const groovy = `android {
+  defaultConfig {
+      minSdkVersion 21
+      targetSdkVersion 27
+  }
+}`;
 
-        Layer settlementLabelLayer = style.getLayer("settlement-label");
+    const kotlin = `android {
+  defaultConfig {
+      minSdkVersion(21)
+      targetSdkVersion(27)
+  }
+}`;
 
-        if (settlementLabelLayer != null) {
-          settlementLabelLayer.setProperties(textField("{name_ru}"));
-        }
-      }
-    });`;
     return (
       <ContextlessGradleConfigToggle
         context={contextGroovy}
-        id="test-groovy-only"
+        id="test-groovy-kotlin"
+        kotlin={kotlin}
         groovy={groovy}
         limitHeight={true}
       />

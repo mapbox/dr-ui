@@ -7,7 +7,70 @@ exports[`contextless-gradle-config-toggle Basic renders as expected 1`] = `
   <div
     className="my24"
   >
-    
+    <div
+      className="flex-mm flex--space-between-main-mm mb6"
+    >
+      <div
+        className="flex-mm"
+      >
+        <div
+          className="txt-bold color-gray-dar mb6"
+        />
+      </div>
+      <div>
+        <div
+          className="relative "
+        >
+          <div
+            aria-required={true}
+            className="toggle-group round-full bg-blue py3 px3"
+            data-testid="test-groovy-kotlin-input"
+            id="test-groovy-kotlin"
+            role="radiogroup"
+          >
+            <label
+              className="toggle-container "
+            >
+              <input
+                autoFocus={false}
+                checked={true}
+                data-testid="test-groovy-kotlin-0-input"
+                name="test-groovy-kotlin"
+                onChange={[Function]}
+                type="radio"
+                value="kotlin"
+              />
+              <div
+                className="txt-s py3 toggle--white toggle--active-blue toggle"
+              >
+                Kotlin
+              </div>
+            </label>
+            <label
+              className="toggle-container "
+            >
+              <input
+                autoFocus={false}
+                checked={false}
+                data-testid="test-groovy-kotlin-1-input"
+                name="test-groovy-kotlin"
+                onChange={[Function]}
+                type="radio"
+                value="groovy"
+              />
+              <div
+                className="txt-s py3 toggle--white toggle--active-blue toggle"
+              >
+                Groovy
+              </div>
+            </label>
+          </div>
+          <div
+            role="alert"
+          />
+        </div>
+      </div>
+    </div>
     <div
       className="relative round z0 scroll-styled overflow-auto"
       style={
@@ -35,7 +98,29 @@ exports[`contextless-gradle-config-toggle Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "map<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getStyle</span><span class=\\"token punctuation\\">(</span><span class=\\"token keyword\\">new</span> <span class=\\"token class-name\\">Style<span class=\\"token punctuation\\">.</span>OnStyleLoaded</span><span class=\\"token punctuation\\">(</span><span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                    "__html": "android <span class=\\"token punctuation\\">{</span>",
+                  }
+                }
+                style={
+                  Object {
+                    "marginLeft": 14.45,
+                    "textIndent": -14.45,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="pr12"
+              style={
+                Object {
+                  "paddingLeft": 26.45,
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "defaultConfig <span class=\\"token punctuation\\">{</span>",
                   }
                 }
                 style={
@@ -57,7 +142,7 @@ exports[`contextless-gradle-config-toggle Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token annotation punctuation\\">@Override</span>",
+                    "__html": "<span class=\\"token function\\">minSdkVersion</span><span class=\\"token punctuation\\">(</span><span class=\\"token number\\">21</span><span class=\\"token punctuation\\">)</span>",
                   }
                 }
                 style={
@@ -79,7 +164,7 @@ exports[`contextless-gradle-config-toggle Basic renders as expected 1`] = `
               <div
                 dangerouslySetInnerHTML={
                   Object {
-                    "__html": "<span class=\\"token keyword\\">public</span> <span class=\\"token keyword\\">void</span> <span class=\\"token function\\">onStyleLoaded</span><span class=\\"token punctuation\\">(</span><span class=\\"token annotation punctuation\\">@NonNull</span> Style style<span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                    "__html": "<span class=\\"token function\\">targetSdkVersion</span><span class=\\"token punctuation\\">(</span><span class=\\"token number\\">27</span><span class=\\"token punctuation\\">)</span>",
                   }
                 }
                 style={
@@ -94,117 +179,7 @@ exports[`contextless-gradle-config-toggle Basic renders as expected 1`] = `
               className="pr12"
               style={
                 Object {
-                  "paddingLeft": 12,
-                }
-              }
-            >
-              <div
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": " ",
-                  }
-                }
-                style={
-                  Object {
-                    "marginLeft": 14.45,
-                    "textIndent": -14.45,
-                  }
-                }
-              />
-            </div>
-            <div
-              className="pr12"
-              style={
-                Object {
-                  "paddingLeft": 69.8,
-                }
-              }
-            >
-              <div
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "Layer settlementLabelLayer <span class=\\"token operator\\">=</span> style<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getLayer</span><span class=\\"token punctuation\\">(</span><span class=\\"token interpolation-string\\"><span class=\\"token string\\">\\"settlement-label\\"</span></span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
-                  }
-                }
-                style={
-                  Object {
-                    "marginLeft": 14.45,
-                    "textIndent": -14.45,
-                  }
-                }
-              />
-            </div>
-            <div
-              className="pr12"
-              style={
-                Object {
-                  "paddingLeft": 12,
-                }
-              }
-            >
-              <div
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": " ",
-                  }
-                }
-                style={
-                  Object {
-                    "marginLeft": 14.45,
-                    "textIndent": -14.45,
-                  }
-                }
-              />
-            </div>
-            <div
-              className="pr12"
-              style={
-                Object {
-                  "paddingLeft": 69.8,
-                }
-              }
-            >
-              <div
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "<span class=\\"token keyword\\">if</span> <span class=\\"token punctuation\\">(</span>settlementLabelLayer <span class=\\"token operator\\">!=</span> null<span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
-                  }
-                }
-                style={
-                  Object {
-                    "marginLeft": 14.45,
-                    "textIndent": -14.45,
-                  }
-                }
-              />
-            </div>
-            <div
-              className="pr12"
-              style={
-                Object {
-                  "paddingLeft": 84.25,
-                }
-              }
-            >
-              <div
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "settlementLabelLayer<span class=\\"token punctuation\\">.</span><span class=\\"token function\\">setProperties</span><span class=\\"token punctuation\\">(</span><span class=\\"token function\\">textField</span><span class=\\"token punctuation\\">(</span><span class=\\"token interpolation-string\\"><span class=\\"token string\\">\\"{name_ru}\\"</span></span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
-                  }
-                }
-                style={
-                  Object {
-                    "marginLeft": 14.45,
-                    "textIndent": -14.45,
-                  }
-                }
-              />
-            </div>
-            <div
-              className="pr12"
-              style={
-                Object {
-                  "paddingLeft": 69.8,
+                  "paddingLeft": 26.45,
                 }
               }
             >
@@ -226,7 +201,7 @@ exports[`contextless-gradle-config-toggle Basic renders as expected 1`] = `
               className="pr12"
               style={
                 Object {
-                  "paddingLeft": 55.349999999999994,
+                  "paddingLeft": 12,
                 }
               }
             >
@@ -234,28 +209,6 @@ exports[`contextless-gradle-config-toggle Basic renders as expected 1`] = `
                 dangerouslySetInnerHTML={
                   Object {
                     "__html": "<span class=\\"token punctuation\\">}</span>",
-                  }
-                }
-                style={
-                  Object {
-                    "marginLeft": 14.45,
-                    "textIndent": -14.45,
-                  }
-                }
-              />
-            </div>
-            <div
-              className="pr12"
-              style={
-                Object {
-                  "paddingLeft": 40.9,
-                }
-              }
-            >
-              <div
-                dangerouslySetInnerHTML={
-                  Object {
-                    "__html": "<span class=\\"token punctuation\\">}</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
                   }
                 }
                 style={
@@ -361,26 +314,8 @@ exports[`contextless-gradle-config-toggle Two languages (code toggle not interac
             >
               <input
                 autoFocus={false}
-                checked={true}
-                data-testid="test-groovy-kotlin-0-input"
-                name="test-groovy-kotlin"
-                onChange={[Function]}
-                type="radio"
-                value="groovy"
-              />
-              <div
-                className="txt-s py3 toggle--white toggle--active-blue toggle"
-              >
-                Groovy
-              </div>
-            </label>
-            <label
-              className="toggle-container "
-            >
-              <input
-                autoFocus={false}
                 checked={false}
-                data-testid="test-groovy-kotlin-1-input"
+                data-testid="test-groovy-kotlin-0-input"
                 name="test-groovy-kotlin"
                 onChange={[Function]}
                 type="radio"
@@ -390,6 +325,24 @@ exports[`contextless-gradle-config-toggle Two languages (code toggle not interac
                 className="txt-s py3 toggle--white toggle--active-blue toggle"
               >
                 Kotlin
+              </div>
+            </label>
+            <label
+              className="toggle-container "
+            >
+              <input
+                autoFocus={false}
+                checked={true}
+                data-testid="test-groovy-kotlin-1-input"
+                name="test-groovy-kotlin"
+                onChange={[Function]}
+                type="radio"
+                value="groovy"
+              />
+              <div
+                className="txt-s py3 toggle--white toggle--active-blue toggle"
+              >
+                Groovy
               </div>
             </label>
           </div>

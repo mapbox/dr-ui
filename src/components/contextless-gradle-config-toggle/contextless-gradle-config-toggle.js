@@ -12,12 +12,12 @@ export function findSelectedCode(kotlin, groovy, preference) {
   } else if (groovy === undefined) {
     /* If there is no groovy code, use kotlin. */
     selectedCode = kotlin;
-  } else if (preference === 'kotlin') {
+  } else if (preference === 'groovy') {
     /** If there is both groovy and kotlin code,
      * use the preferred language. */
-    selectedCode = kotlin;
-  } else {
     selectedCode = groovy;
+  } else {
+    selectedCode = kotlin;
   }
   return selectedCode;
 }
@@ -53,14 +53,14 @@ export default class ContextlessGradleConfigToggle extends React.PureComponent {
         kotlin && groovy
           ? [
               {
-                label: 'Groovy',
-                language: 'groovy',
-                preferredLanguage: this.checkPreference('groovy')
-              },
-              {
                 label: 'Kotlin',
                 language: 'kotlin',
                 preferredLanguage: this.checkPreference('kotlin')
+              },
+              {
+                label: 'Groovy',
+                language: 'groovy',
+                preferredLanguage: this.checkPreference('groovy')
               }
             ]
           : undefined
