@@ -20,6 +20,7 @@
     "CodeSnippetTitle",
     "CodeToggle",
     "ContextlessAndroidActivityToggle",
+    "ContextlessGradleConfigToggle",
     "ContextlessIosViewControllerToggle",
     "Edit",
     "Highlight",
