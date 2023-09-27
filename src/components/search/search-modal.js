@@ -47,8 +47,7 @@ export default class Modal extends React.PureComponent {
       underlayClass: 'px60 py120 ',
       underlayStyle: {
         zIndex: 10,
-        backdropFilter: 'blur(4px)',
-        backgroundColor: 'rgba(0,0,0,.2)'
+        backgroundColor: 'rgba(14,33,39,.5)'
       }
     };
 
