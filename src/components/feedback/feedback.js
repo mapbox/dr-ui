@@ -111,12 +111,24 @@ const Feedback = (props) => {
       <div className="txt-fancy txt-m flex flex--center-cross">
         Was this {type} helpful?
         <span className="ml18" style={{ lineHeight: 0 }}>
-          <Button size="medium" width="small" corners onClick={openYesFeedback}>
+          <Button
+            size="medium"
+            width="small"
+            corners
+            passthroughProps={{ id: 'feedback-button-yes' }}
+            onClick={openYesFeedback}
+          >
             <IconText iconBefore={<ThumbsUpIcon />}>Yes</IconText>
           </Button>
         </span>
         <span className="ml12" style={{ lineHeight: 0 }}>
-          <Button size="medium" width="small" corners onClick={openNoFeedback}>
+          <Button
+            size="medium"
+            width="small"
+            corners
+            passthroughProps={{ id: 'feedback-button-no' }}
+            onClick={openNoFeedback}
+          >
             <IconText iconBefore={<ThumbsDownIcon />}>No</IconText>
           </Button>
         </span>

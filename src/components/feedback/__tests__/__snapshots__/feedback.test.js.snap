@@ -19,6 +19,7 @@ exports[`feedback Basic renders as expected 1`] = `
       aria-label="primary"
       className="btn btn--blue round py6 px12 txt-s"
       disabled={false}
+      id="feedback-button-yes"
       onClick={[Function]}
       type="button"
     >
@@ -62,6 +63,7 @@ exports[`feedback Basic renders as expected 1`] = `
       aria-label="primary"
       className="btn btn--blue round py6 px12 txt-s"
       disabled={false}
+      id="feedback-button-no"
       onClick={[Function]}
       type="button"
     >
@@ -115,6 +117,7 @@ exports[`feedback Change type renders as expected 1`] = `
       aria-label="primary"
       className="btn btn--blue round py6 px12 txt-s"
       disabled={false}
+      id="feedback-button-yes"
       onClick={[Function]}
       type="button"
     >
@@ -158,6 +161,7 @@ exports[`feedback Change type renders as expected 1`] = `
       aria-label="primary"
       className="btn btn--blue round py6 px12 txt-s"
       disabled={false}
+      id="feedback-button-no"
       onClick={[Function]}
       type="button"
     >

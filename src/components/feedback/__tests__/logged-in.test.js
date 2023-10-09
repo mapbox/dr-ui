@@ -41,7 +41,7 @@ describe('Workflow with logged in user information', () => {
 
   describe('1 - Open feedback', () => {
     test('Click yes button, check if correct menu appears', () => {
-      const btn = feedback.find('button').first();
+      const btn = feedback.find('button#feedback-button-yes');
       btn.simulate('click');
       expect(feedback.find('#yes-options-list').exists()).toBeTruthy();
     });

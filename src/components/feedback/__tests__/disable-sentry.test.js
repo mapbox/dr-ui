@@ -32,7 +32,7 @@ describe('Does not send event to Sentry', () => {
     />
   );
   // Click the Yes button
-  const btn = feedback.find('button').first();
+  const btn = feedback.find('button#feedback-button-yes');
   btn.simulate('click');
 
   describe('Choose an option and submit feedback', () => {

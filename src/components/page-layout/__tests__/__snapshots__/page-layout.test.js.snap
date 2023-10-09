@@ -1389,6 +1389,7 @@ Array [
                       aria-label="primary"
                       className="btn btn--blue round py6 px12 txt-s"
                       disabled={false}
+                      id="feedback-button-yes"
                       onClick={[Function]}
                       type="button"
                     >
@@ -1432,6 +1433,7 @@ Array [
                       aria-label="primary"
                       className="btn btn--blue round py6 px12 txt-s"
                       disabled={false}
+                      id="feedback-button-no"
                       onClick={[Function]}
                       type="button"
                     >
@@ -1830,6 +1832,7 @@ Array [
                       aria-label="primary"
                       className="btn btn--blue round py6 px12 txt-s"
                       disabled={false}
+                      id="feedback-button-yes"
                       onClick={[Function]}
                       type="button"
                     >
@@ -1873,6 +1876,7 @@ Array [
                       aria-label="primary"
                       className="btn btn--blue round py6 px12 txt-s"
                       disabled={false}
+                      id="feedback-button-no"
                       onClick={[Function]}
                       type="button"
                     >
@@ -2794,6 +2798,7 @@ Array [
                       aria-label="primary"
                       className="btn btn--blue round py6 px12 txt-s"
                       disabled={false}
+                      id="feedback-button-yes"
                       onClick={[Function]}
                       type="button"
                     >
@@ -2837,6 +2842,7 @@ Array [
                       aria-label="primary"
                       className="btn btn--blue round py6 px12 txt-s"
                       disabled={false}
+                      id="feedback-button-no"
                       onClick={[Function]}
                       type="button"
                     >
@@ -3692,6 +3698,7 @@ Array [
                       aria-label="primary"
                       className="btn btn--blue round py6 px12 txt-s"
                       disabled={false}
+                      id="feedback-button-yes"
                       onClick={[Function]}
                       type="button"
                     >
@@ -3735,6 +3742,7 @@ Array [
                       aria-label="primary"
                       className="btn btn--blue round py6 px12 txt-s"
                       disabled={false}
+                      id="feedback-button-no"
                       onClick={[Function]}
                       type="button"
                     >
@@ -4265,6 +4273,7 @@ Array [
                       aria-label="primary"
                       className="btn btn--blue round py6 px12 txt-s"
                       disabled={false}
+                      id="feedback-button-yes"
                       onClick={[Function]}
                       type="button"
                     >
@@ -4308,6 +4317,7 @@ Array [
                       aria-label="primary"
                       className="btn btn--blue round py6 px12 txt-s"
                       disabled={false}
+                      id="feedback-button-no"
                       onClick={[Function]}
                       type="button"
                     >

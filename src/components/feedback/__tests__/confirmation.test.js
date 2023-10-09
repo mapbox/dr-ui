@@ -20,7 +20,7 @@ test('Generate snapshot for feedback confirmation', () => {
   );
 
   // click Yes
-  const btn = feedback.find('button').first();
+  const btn = feedback.find('button#feedback-button-yes');
   btn.simulate('click');
 
   // choose 'Solved my problem'
