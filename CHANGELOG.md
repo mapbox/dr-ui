@@ -1,5 +1,14 @@
 # Changelog
 
+## 6.2.0
+
+- Refactor feedback component [#606](https://github.com/mapbox/dr-ui/pull/606)
+- update search modal background to match mr-ui/modal [#612](https://github.com/mapbox/dr-ui/pull/612)
+- style index card title/tag for proper vertical spacing when wrapped [#611](https://github.com/mapbox/dr-ui/pull/611)
+- fix breadcrumb key [#610](https://github.com/mapbox/dr-ui/pull/610)
+- Pass in GettingStartedIcon instance to OverviewHeader test case [#609](https://github.com/mapbox/dr-ui/pull/609)
+- Dependency updates
+
 ## 6.1.0
 
 - add IndexCard, helpCardData, build a card mode for OverviewHeader [#608](https://github.com/mapbox/dr-ui/pull/608)
