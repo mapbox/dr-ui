@@ -1,237 +1,163 @@
 /* eslint react/no-unused-state: off */
 /* eslint react/no-unused-prop-types: off */
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import BookImage from '../book-image/book-image';
-import Tooltip from '@mapbox/mr-ui/tooltip';
-import Icon from '@mapbox/mr-ui/icon';
-import { categories } from './categories';
+import Button from '@mapbox/mr-ui/button';
+import IconText from '@mapbox/mr-ui/icon-text';
 import { sendToSegment } from './segment';
 import { sendToSentry } from './sentry';
+import OptionsList from './components/options-list';
 import { v4 as uuidv4 } from 'uuid';
+import { ThumbsUpIcon, ThumbsDownIcon } from './components/icons';
 
-const anonymousId = uuidv4();
-
-// Store the initial state so that we can quickly reset it when the user closes feedback
-const INITIAL_STATE = {
-  user: undefined, // Mapbox user id
-  anonymousId: undefined, // generated annonymousid
-  sessionId: undefined, // unique session id
-  isOpen: false, // the user click the button
-  category: undefined, // the selected feedback category
-  categoryType: undefined, // the select feedback category type
-  feedback: undefined, // the value of the textarea
-  sentFeedback: false, // the user submitted feedback
-  contactSupport: false, // the users clicked contact support
-  helpful: undefined, // helpfulness rating as assigned by the selected category
-  exited: false // if true, the user clicked "close" before submitting feedback
+const FeedbackWrapper = ({ children }) => {
+  return (
+    <div className="dr-ui--feedback">
+      <div className="flex flex--column">
+        <div className="mb6 prose">{children}</div>
+      </div>
+    </div>
+  );
 };
 
-class Feedback extends React.PureComponent {
-  constructor(props) {
-    super(props);
-    this.state = {
-      ...INITIAL_STATE
-    };
-    this.openFeedback = this.openFeedback.bind(this);
-    this.submitFeedback = this.submitFeedback.bind(this);
-    this.closeFeedback = this.closeFeedback.bind(this);
-    this.selectCategory = this.selectCategory.bind(this);
-    this.categories = this.categories.bind(this);
-    this.selectSupport = this.selectSupport.bind(this);
-    this.renderWrapper = this.renderWrapper.bind(this);
+FeedbackWrapper.propTypes = {
+  children: PropTypes.node
+};
+
+const Feedback = (props) => {
+  const { type } = props;
+
+  const [user, setUser] = useState(undefined);
+  const [anonymousId, setAnonymousId] = useState(undefined);
+  const [sessionId, setSessionId] = useState(undefined);
+  const [isOpen, setIsOpen] = useState(false);
+  const [categoryType, setCategoryType] = useState(undefined);
+  const [sentFeedback, setSentFeedback] = useState(false);
+  const [helpful, setHelpful] = useState(undefined);
+  const [feedback, setFeedback] = useState();
+
+  const anAnonymousId = uuidv4();
+
+  function openYesFeedback() {
+    setHelpful(true);
   }
 
-  // This function returns data for each category and its corresponding category component.
-  // By having the data in one place, we can make updates faster.
-  // We can also replace "page" for Feedback with `type` in one place for sectioned feedback.
-  categories = () =>
-    categories({ type: this.props.type, submitFeedback: this.submitFeedback });
+  function openNoFeedback() {
+    setHelpful(false);
+  }
+
+  useEffect(() => {
+    if (helpful !== undefined) {
+      openFeedback();
+    }
+  }, [helpful]);
+
+  useEffect(() => {
+    if (isOpen) {
+      // Add row to Segment when the user first interacts with the component
+      sendToSegment({ state: gatherState(), props });
+    }
+  }, [isOpen]);
+
+  function gatherState() {
+    return {
+      user,
+      anonymousId,
+      sessionId,
+      isOpen,
+      sentFeedback,
+      helpful,
+      category: helpful ? 'helpful' : 'not helpful',
+      categoryType,
+      feedback
+    };
+  }
 
   // User opens feedback
-  openFeedback() {
-    if (
-      this.state.user === undefined &&
-      typeof MapboxPageShell !== 'undefined'
-    ) {
+  function openFeedback() {
+    if (user === undefined && typeof MapboxPageShell !== 'undefined') {
       MapboxPageShell.afterUserCheck(() => {
-        this.setState({
-          user: MapboxPageShell.getUser() || undefined
-        });
+        setUser(MapboxPageShell.getUser() || undefined);
       });
     }
-    this.setState(
-      {
-        anonymousId: anonymousId,
-        sessionId: `${Date.now()}-${anonymousId}`,
-        isOpen: true
-      },
-      () => {
-        const { state, props } = this;
-        // Add row to Segment
-        sendToSegment({ state: state, props });
-      }
-    );
+
+    setAnonymousId(anAnonymousId);
+    setSessionId(`${Date.now()}-${anAnonymousId}`);
+    setIsOpen(true);
   }
 
-  // User select the feedback category
-  // Set helpfulness rating based on category
-  selectCategory(event) {
-    const category = event.target.value;
-    // Retrieve value of "helpful" for the selected category
-    const { helpful } = this.categories()[category];
-    this.setState({ category, helpful }, () => {
-      // Add row to Segment
-      const { state, props } = this;
-      sendToSegment({ state, props });
-    });
+  function handleCategoryTypeChange(value) {
+    setCategoryType(value);
   }
 
-  // User clicks the "Contact support" linke
-  selectSupport() {
-    this.setState({ contactSupport: true }, () => {
-      // Add row to Segment
-      const { state, props } = this;
-      sendToSegment({ state, props });
-      window.location.assign('https://support.mapbox.com/');
-    });
+  function handleFeedbackChange(value) {
+    setFeedback(value);
   }
 
   // User submits feedback
-  submitFeedback({ categoryType, feedback }) {
-    this.setState({ categoryType, feedback, sentFeedback: true }, () => {
-      const { state, props } = this;
-      sendToSegment({ state, props });
-      if (feedback) sendToSentry({ state, props });
-    });
+  function submitFeedback() {
+    setSentFeedback(true);
+    sendToSegment({ state: gatherState(), props });
+    sendToSentry({ state: gatherState(), props });
   }
 
-  // User closes feedback
-  closeFeedback() {
-    const { state, props } = this;
-    // do not send to Segment if they sent feedback
-    // otherwise their data will get sent twice (once from submitFeedback and then again here)
-    if (!state.sentFeedback) {
-      sendToSegment({
-        state: { ...state, exited: true },
-        props
-      });
-    }
-    // reset state
-    this.setState({ ...INITIAL_STATE });
-  }
+  /** This component returns early to improve code clarity **/
 
-  // Creates a wrapper for the Feedback component
-  renderWrapper({ children, title, helpful }) {
-    const { sentFeedback } = this.state;
-    // show "Contact support" only when the user hasn't submitted feedback
-    // and the chosen category infers not helpful feedbak
-    const showContactSupport = !sentFeedback && !helpful;
+  // Initial stage: the user has not clicked on feedback
+  if (!isOpen) {
     return (
-      <div className="dr-ui--feedback wmax300">
-        <div className="bg-gray-faint round py12 px12">
-          <div className="flex flex--column">
-            <div className="flex flex--space-between-main w-full mb12">
-              <div className="txt-bold">{title}</div>
-              <div>
-                <Tooltip content="Close">
-                  <button
-                    id="feedback-close-button"
-                    aria-label="Close feedback"
-                    onClick={this.closeFeedback}
-                    className="link--gray"
-                  >
-                    <Icon name="close" />
-                  </button>
-                </Tooltip>
-              </div>
-            </div>
-            <div className="mb6 prose">{children}</div>
-            {showContactSupport && (
-              <div className="color-text">
-                Need help?{' '}
-                <button
-                  className="link"
-                  value="Contact support"
-                  onClick={this.selectSupport}
-                >
-                  Contact support
-                </button>
-              </div>
-            )}
-          </div>
-        </div>
+      <div className="txt-fancy txt-m flex flex--center-cross">
+        Was this {type} helpful?
+        <span className="ml18" style={{ lineHeight: 0 }}>
+          <Button size="medium" width="small" corners onClick={openYesFeedback}>
+            <IconText iconBefore={<ThumbsUpIcon />}>Yes</IconText>
+          </Button>
+        </span>
+        <span className="ml12" style={{ lineHeight: 0 }}>
+          <Button size="medium" width="small" corners onClick={openNoFeedback}>
+            <IconText iconBefore={<ThumbsDownIcon />}>No</IconText>
+          </Button>
+        </span>
       </div>
     );
   }
 
-  render() {
-    const { isOpen, category, sentFeedback } = this.state;
-    const { type } = this.props;
-
-    const FeedbackWrapper = (props) => this.renderWrapper(props);
-
-    /** This component returns early to improve code clarity **/
-
-    // Initial stage: the user has not clicked on feedback
-    if (!isOpen) {
-      return (
-        <button
-          value="Share"
-          onClick={this.openFeedback}
-          className="btn btn--gray btn--stroke"
-        >
-          Share your feedback
-        </button>
-      );
-    }
-    // Second stage: select the category
-    if (isOpen && !category) {
-      return (
-        <FeedbackWrapper
-          title={`Share your feedback${
-            type !== 'page' ? ` for this ${type}` : ''
-          }`}
-        >
-          {Object.keys(this.categories()).map((category) => (
-            <button
-              value={category}
-              onClick={this.selectCategory}
-              className="btn btn--gray w-full mb6"
-              key={category}
-            >
-              {category}
-            </button>
-          ))}
-        </FeedbackWrapper>
-      );
-    }
-    // Final stage: a confirmation after the user sends feedback
-    if (isOpen && category && sentFeedback) {
-      return (
-        <FeedbackWrapper>
-          <div className="align-center prose relative">
-            <div className="mt-neg30 inline-block">
-              <BookImage size={75} />
-            </div>
-            <p>
-              <strong>Thank you!</strong>
-            </p>
-            <p>
-              Our documentation team will read your feedback. Thank you for
-              helping us improve this {this.props.type}.
-            </p>
-          </div>
-        </FeedbackWrapper>
-      );
-    }
-    // Middle stages: Select category and complete the category workflow
+  // Final stage: a confirmation after the user sends feedback
+  if (isOpen && sentFeedback) {
     return (
-      <FeedbackWrapper title={category} {...this.categories()[category]} />
+      <FeedbackWrapper>
+        <div className="align-center prose relative">
+          <div className="inline-block">
+            <BookImage size={75} />
+          </div>
+          <p>
+            <strong>Thank you!</strong>
+          </p>
+          <p>
+            Our documentation team will read your feedback. Thank you for
+            helping us improve this {type}.
+          </p>
+        </div>
+      </FeedbackWrapper>
     );
   }
-}
+  // Middle stages: Select category and complete the category workflow
+  return (
+    <FeedbackWrapper>
+      <OptionsList
+        type={type}
+        helpful={helpful}
+        categoryType={categoryType}
+        onCategoryTypeChange={handleCategoryTypeChange}
+        feedback={feedback}
+        onFeedbackChange={handleFeedbackChange}
+        onSubmit={submitFeedback}
+      />
+    </FeedbackWrapper>
+  );
+};
 
 Feedback.propTypes = {
   /** The type of content the user is a evaluating. */

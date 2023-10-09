@@ -69,7 +69,7 @@ export class ContentWrapper extends React.PureComponent {
     );
   };
 
-  renderAside = (showFeedback) => {
+  renderAside = () => {
     const { frontMatter, layoutConfig } = this.props;
     const { onThisPage } = frontMatter;
     const headings = frontMatter.headings || this.props.headings;
@@ -94,9 +94,6 @@ export class ContentWrapper extends React.PureComponent {
         <div className="my18 color-text none block-mxl mb18">
           <DiscordCTA />
         </div>
-        {showFeedback && (
-          <div className="none block-mxl">{this.renderFeedback()}</div>
-        )}
       </aside>
     );
   };
@@ -159,21 +156,23 @@ export class ContentWrapper extends React.PureComponent {
               </div>
             )}
             {showFeedback && (
-              <div
-                className={classnames('my36 color-text', {
-                  'block none-mxl': layout !== 'full' // hide feedback at bottom of page on larger screens unless layout is full (always show it on the bottom)
-                })}
-              >
-                <div className="flex mx-neg6 flex--wrap">
-                  <div className="w-full w-1/2-ml px6 flex-child-no-shrink mb18">
-                    <SignupBanner />
-                  </div>
-                  <div className="w-full w-1/2-ml px6 flex-child-no-shrink mb18">
-                    <DiscordCTA />
+              <>
+                <div className="pt60 pb30">{this.renderFeedback()}</div>
+                <div
+                  className={classnames('my36 color-text', {
+                    'block none-mxl': layout !== 'full' // hide feedback at bottom of page on larger screens unless layout is full (always show it on the bottom)
+                  })}
+                >
+                  <div className="flex mx-neg6 flex--wrap">
+                    <div className="w-full w-1/2-ml px6 flex-child-no-shrink mb18">
+                      <SignupBanner />
+                    </div>
+                    <div className="w-full w-1/2-ml px6 flex-child-no-shrink mb18">
+                      <DiscordCTA />
+                    </div>
                   </div>
                 </div>
-                {this.renderFeedback()}
-              </div>
+              </>
             )}
           </div>
         </div>

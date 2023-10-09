@@ -2,6 +2,7 @@ import React from 'react';
 import Feedback from '../feedback';
 import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
+import { textJustRight } from './shared';
 
 test('Generate snapshot for feedback confirmation', () => {
   const feedback = mount(
@@ -17,11 +18,16 @@ test('Generate snapshot for feedback confirmation', () => {
       }}
     />
   );
-  feedback.setState({
-    isOpen: true,
-    sentFeedback: true,
-    category: 'Something is confusing',
-    feedback: 'I do not understand'
-  });
+
+  // click Yes
+  const btn = feedback.find('button').first();
+  btn.simulate('click');
+
+  // choose 'Solved my problem'
+  const radioInput = feedback.find('input').first();
+  radioInput.simulate('change', { target: { value: 'solved-my-problem' } });
+
+  textJustRight(feedback);
+
   expect(toJson(feedback)).toMatchSnapshot();
 });

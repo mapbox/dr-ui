@@ -19,7 +19,7 @@ export class FeedbackTextarea extends React.PureComponent {
 
   handleFeedback(value) {
     this.setState({ feedback: value }, () => {
-      this.props.onChange({ value, overLimit: this.isOverLimit() });
+      this.props.onChange(value);
     });
   }
 
@@ -35,9 +35,9 @@ export class FeedbackTextarea extends React.PureComponent {
       : feedbackLimit;
     return (
       <>
-        <div className="relative">
+        <div className="relative mt12">
           <ControlTextarea
-            themeControlTextarea="textarea hmin120 bg-white"
+            themeControlTextarea="textarea hmin60 bg-white txt-ms"
             themeLabel="txt-m mb6"
             id={id}
             label={label}
@@ -82,9 +82,9 @@ export class FeedbackButton extends React.PureComponent {
         id="feedback-submit-button"
         onClick={onClick}
         disabled={disabled}
-        className="btn btn--gray mt6"
+        className="btn btn--blue mt6"
       >
-        Submit feedback
+        Submit
       </button>
     );
   }

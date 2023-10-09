@@ -20,453 +20,381 @@ exports[`Generate snapshot for feedback confirmation 1`] = `
 >
   <FeedbackWrapper>
     <div
-      className="dr-ui--feedback wmax300"
+      className="dr-ui--feedback"
     >
       <div
-        className="bg-gray-faint round py12 px12"
+        className="flex flex--column"
       >
         <div
-          className="flex flex--column"
+          className="mb6 prose"
         >
-          <div
-            className="flex flex--space-between-main w-full mb12"
+          <OptionsList
+            categoryType="solved-my-problem"
+            feedback="I found a sandwich and I want to know why there isn't any mayonnaise."
+            helpful={true}
+            onCategoryTypeChange={[Function]}
+            onFeedbackChange={[Function]}
+            onSubmit={[Function]}
+            type="page"
           >
             <div
-              className="txt-bold"
-            />
-            <div>
-              <Tooltip
-                content="Close"
-              >
-                <TooltipProvider>
-                  <TooltipProviderProvider
-                    delayDuration={700}
-                    disableHoverableContent={false}
-                    isOpenDelayed={true}
-                    isPointerInTransitRef={
-                      Object {
-                        "current": false,
-                      }
-                    }
-                    onClose={[Function]}
-                    onOpen={[Function]}
-                    onPointerInTransitChange={[Function]}
-                  >
-                    <Tooltip
-                      delayDuration={150}
-                    >
-                      <Popper
-                        __scopePopper={
-                          Object {
-                            "Popper": Array [
-                              Object {
-                                "$$typeof": Symbol(react.context),
-                                "Consumer": Object {
-                                  "$$typeof": Symbol(react.context),
-                                  "_calculateChangedBits": null,
-                                  "_context": [Circular],
-                                },
-                                "Provider": Object {
-                                  "$$typeof": Symbol(react.provider),
-                                  "_context": [Circular],
-                                },
-                                "_calculateChangedBits": null,
-                                "_currentRenderer": Object {},
-                                "_currentRenderer2": null,
-                                "_currentValue": undefined,
-                                "_currentValue2": undefined,
-                                "_threadCount": 0,
-                              },
-                              Object {
-                                "$$typeof": Symbol(react.context),
-                                "Consumer": Object {
-                                  "$$typeof": Symbol(react.context),
-                                  "_calculateChangedBits": null,
-                                  "_context": [Circular],
-                                },
-                                "Provider": Object {
-                                  "$$typeof": Symbol(react.provider),
-                                  "_context": [Circular],
-                                },
-                                "_calculateChangedBits": null,
-                                "_currentRenderer": null,
-                                "_currentRenderer2": null,
-                                "_currentValue": undefined,
-                                "_currentValue2": undefined,
-                                "_threadCount": 0,
-                              },
-                              Object {
-                                "$$typeof": Symbol(react.context),
-                                "Consumer": Object {
-                                  "$$typeof": Symbol(react.context),
-                                  "_calculateChangedBits": null,
-                                  "_context": [Circular],
-                                },
-                                "Provider": Object {
-                                  "$$typeof": Symbol(react.provider),
-                                  "_context": [Circular],
-                                },
-                                "_calculateChangedBits": null,
-                                "_currentRenderer": null,
-                                "_currentRenderer2": null,
-                                "_currentValue": Object {
-                                  "hasParent": false,
-                                  "positionUpdateFns": Set {},
-                                },
-                                "_currentValue2": Object {
-                                  "hasParent": false,
-                                  "positionUpdateFns": Set {},
-                                },
-                                "_threadCount": 0,
-                              },
-                            ],
-                          }
-                        }
-                      >
-                        <PopperProvider
-                          anchor={null}
-                          onAnchorChange={[Function]}
-                          scope={
-                            Object {
-                              "Popper": Array [
-                                Object {
-                                  "$$typeof": Symbol(react.context),
-                                  "Consumer": Object {
-                                    "$$typeof": Symbol(react.context),
-                                    "_calculateChangedBits": null,
-                                    "_context": [Circular],
-                                  },
-                                  "Provider": Object {
-                                    "$$typeof": Symbol(react.provider),
-                                    "_context": [Circular],
-                                  },
-                                  "_calculateChangedBits": null,
-                                  "_currentRenderer": Object {},
-                                  "_currentRenderer2": null,
-                                  "_currentValue": undefined,
-                                  "_currentValue2": undefined,
-                                  "_threadCount": 0,
-                                },
-                                Object {
-                                  "$$typeof": Symbol(react.context),
-                                  "Consumer": Object {
-                                    "$$typeof": Symbol(react.context),
-                                    "_calculateChangedBits": null,
-                                    "_context": [Circular],
-                                  },
-                                  "Provider": Object {
-                                    "$$typeof": Symbol(react.provider),
-                                    "_context": [Circular],
-                                  },
-                                  "_calculateChangedBits": null,
-                                  "_currentRenderer": null,
-                                  "_currentRenderer2": null,
-                                  "_currentValue": undefined,
-                                  "_currentValue2": undefined,
-                                  "_threadCount": 0,
-                                },
-                                Object {
-                                  "$$typeof": Symbol(react.context),
-                                  "Consumer": Object {
-                                    "$$typeof": Symbol(react.context),
-                                    "_calculateChangedBits": null,
-                                    "_context": [Circular],
-                                  },
-                                  "Provider": Object {
-                                    "$$typeof": Symbol(react.provider),
-                                    "_context": [Circular],
-                                  },
-                                  "_calculateChangedBits": null,
-                                  "_currentRenderer": null,
-                                  "_currentRenderer2": null,
-                                  "_currentValue": Object {
-                                    "hasParent": false,
-                                    "positionUpdateFns": Set {},
-                                  },
-                                  "_currentValue2": Object {
-                                    "hasParent": false,
-                                    "positionUpdateFns": Set {},
-                                  },
-                                  "_threadCount": 0,
-                                },
-                              ],
-                            }
-                          }
-                        >
-                          <TooltipProvider
-                            contentId=""
-                            disableHoverableContent={false}
-                            onClose={[Function]}
-                            onOpen={[Function]}
-                            onTriggerChange={[Function]}
-                            onTriggerEnter={[Function]}
-                            onTriggerLeave={[Function]}
-                            open={false}
-                            stateAttribute="closed"
-                            trigger={null}
-                          >
-                            <ForwardRef>
-                              <TooltipTrigger
-                                asChild={true}
-                              >
-                                <PopperAnchor
-                                  __scopePopper={
-                                    Object {
-                                      "Popper": Array [
-                                        Object {
-                                          "$$typeof": Symbol(react.context),
-                                          "Consumer": Object {
-                                            "$$typeof": Symbol(react.context),
-                                            "_calculateChangedBits": null,
-                                            "_context": [Circular],
-                                          },
-                                          "Provider": Object {
-                                            "$$typeof": Symbol(react.provider),
-                                            "_context": [Circular],
-                                          },
-                                          "_calculateChangedBits": null,
-                                          "_currentRenderer": Object {},
-                                          "_currentRenderer2": null,
-                                          "_currentValue": undefined,
-                                          "_currentValue2": undefined,
-                                          "_threadCount": 0,
-                                        },
-                                        Object {
-                                          "$$typeof": Symbol(react.context),
-                                          "Consumer": Object {
-                                            "$$typeof": Symbol(react.context),
-                                            "_calculateChangedBits": null,
-                                            "_context": [Circular],
-                                          },
-                                          "Provider": Object {
-                                            "$$typeof": Symbol(react.provider),
-                                            "_context": [Circular],
-                                          },
-                                          "_calculateChangedBits": null,
-                                          "_currentRenderer": null,
-                                          "_currentRenderer2": null,
-                                          "_currentValue": undefined,
-                                          "_currentValue2": undefined,
-                                          "_threadCount": 0,
-                                        },
-                                        Object {
-                                          "$$typeof": Symbol(react.context),
-                                          "Consumer": Object {
-                                            "$$typeof": Symbol(react.context),
-                                            "_calculateChangedBits": null,
-                                            "_context": [Circular],
-                                          },
-                                          "Provider": Object {
-                                            "$$typeof": Symbol(react.provider),
-                                            "_context": [Circular],
-                                          },
-                                          "_calculateChangedBits": null,
-                                          "_currentRenderer": null,
-                                          "_currentRenderer2": null,
-                                          "_currentValue": Object {
-                                            "hasParent": false,
-                                            "positionUpdateFns": Set {},
-                                          },
-                                          "_currentValue2": Object {
-                                            "hasParent": false,
-                                            "positionUpdateFns": Set {},
-                                          },
-                                          "_threadCount": 0,
-                                        },
-                                      ],
-                                    }
-                                  }
-                                  asChild={true}
-                                >
-                                  <Primitive.div
-                                    asChild={true}
-                                  >
-                                    <Slot>
-                                      <SlotClone>
-                                        <Primitive.button
-                                          asChild={true}
-                                          data-state="closed"
-                                          onBlur={[Function]}
-                                          onClick={[Function]}
-                                          onFocus={[Function]}
-                                          onPointerDown={[Function]}
-                                          onPointerLeave={[Function]}
-                                          onPointerMove={[Function]}
-                                        >
-                                          <Slot
-                                            data-state="closed"
-                                            onBlur={[Function]}
-                                            onClick={[Function]}
-                                            onFocus={[Function]}
-                                            onPointerDown={[Function]}
-                                            onPointerLeave={[Function]}
-                                            onPointerMove={[Function]}
-                                          >
-                                            <SlotClone
-                                              data-state="closed"
-                                              onBlur={[Function]}
-                                              onClick={[Function]}
-                                              onFocus={[Function]}
-                                              onPointerDown={[Function]}
-                                              onPointerLeave={[Function]}
-                                              onPointerMove={[Function]}
-                                            >
-                                              <button
-                                                aria-label="Close feedback"
-                                                className="link--gray"
-                                                data-state="closed"
-                                                id="feedback-close-button"
-                                                onBlur={[Function]}
-                                                onClick={[Function]}
-                                                onFocus={[Function]}
-                                                onPointerDown={[Function]}
-                                                onPointerLeave={[Function]}
-                                                onPointerMove={[Function]}
-                                              >
-                                                <Icon
-                                                  name="close"
-                                                >
-                                                  <AccessibleIcon
-                                                    label="close"
-                                                  >
-                                                    <svg
-                                                      aria-hidden="true"
-                                                      className="events-none icon"
-                                                      data-testid="icon-close"
-                                                      focusable="false"
-                                                      style={
-                                                        Object {
-                                                          "height": 18,
-                                                          "width": 18,
-                                                        }
-                                                      }
-                                                    >
-                                                      <use
-                                                        xlinkHref="#icon-close"
-                                                        xmlnsXlink="http://www.w3.org/1999/xlink"
-                                                      />
-                                                    </svg>
-                                                    <VisuallyHidden>
-                                                      <Primitive.span
-                                                        style={
-                                                          Object {
-                                                            "border": 0,
-                                                            "clip": "rect(0, 0, 0, 0)",
-                                                            "height": 1,
-                                                            "margin": -1,
-                                                            "overflow": "hidden",
-                                                            "padding": 0,
-                                                            "position": "absolute",
-                                                            "whiteSpace": "nowrap",
-                                                            "width": 1,
-                                                            "wordWrap": "normal",
-                                                          }
-                                                        }
-                                                      >
-                                                        <span
-                                                          style={
-                                                            Object {
-                                                              "border": 0,
-                                                              "clip": "rect(0, 0, 0, 0)",
-                                                              "height": 1,
-                                                              "margin": -1,
-                                                              "overflow": "hidden",
-                                                              "padding": 0,
-                                                              "position": "absolute",
-                                                              "whiteSpace": "nowrap",
-                                                              "width": 1,
-                                                              "wordWrap": "normal",
-                                                            }
-                                                          }
-                                                        >
-                                                          close
-                                                        </span>
-                                                      </Primitive.span>
-                                                    </VisuallyHidden>
-                                                  </AccessibleIcon>
-                                                </Icon>
-                                              </button>
-                                            </SlotClone>
-                                          </Slot>
-                                        </Primitive.button>
-                                      </SlotClone>
-                                    </Slot>
-                                  </Primitive.div>
-                                </PopperAnchor>
-                              </TooltipTrigger>
-                            </ForwardRef>
-                            <TooltipPortal>
-                              <TooltipPortalProvider>
-                                <Presence
-                                  present={false}
-                                />
-                              </TooltipPortalProvider>
-                            </TooltipPortal>
-                          </TooltipProvider>
-                        </PopperProvider>
-                      </Popper>
-                    </Tooltip>
-                  </TooltipProviderProvider>
-                </TooltipProvider>
-              </Tooltip>
-            </div>
-          </div>
-          <div
-            className="mb6 prose"
-          >
-            <div
-              className="align-center prose relative"
+              id="yes-options-list"
             >
-              <div
-                className="mt-neg30 inline-block"
+              <p
+                className="txt-fancy txt-m"
               >
-                <BookImage
-                  size={75}
+                What did you like?
+              </p>
+              <ControlRadioSet
+                id="feedback-category-like"
+                onChange={[Function]}
+                options={
+                  Array [
+                    Object {
+                      "label": <LabelItem
+                        onFeedbackChange={[Function]}
+                        selected={false}
+                        subTitle="Accurately describes the product or feature."
+                        title="Accurate"
+                      />,
+                      "value": "accurate",
+                    },
+                    Object {
+                      "label": <LabelItem
+                        onFeedbackChange={[Function]}
+                        selected={true}
+                        subTitle="Helped me resolve an issue."
+                        title="Solved my problem"
+                      />,
+                      "value": "solved-my-problem",
+                    },
+                    Object {
+                      "label": <LabelItem
+                        onFeedbackChange={[Function]}
+                        selected={false}
+                        subTitle="Easy to follow and comprehend."
+                        title="Easy to understand"
+                      />,
+                      "value": "easy-to-understand",
+                    },
+                    Object {
+                      "label": <LabelItem
+                        onFeedbackChange={[Function]}
+                        selected={false}
+                        subTitle="Convinced me to adopt the product or feature."
+                        title="Helped me decide to use the product"
+                      />,
+                      "value": "helped-decide-to-use",
+                    },
+                    Object {
+                      "label": <LabelItem
+                        onFeedbackChange={[Function]}
+                        selected={false}
+                        title="Another reason"
+                      />,
+                      "value": "another-reason",
+                    },
+                  ]
+                }
+                themeRadioContainer="txt-m block mb6 flex"
+                value="solved-my-problem"
+              >
+                <ControlWrapper
+                  id="feedback-category-like"
                 >
-                  <svg
-                    height={75}
-                    viewBox="0 0 108 108"
-                    width={75}
+                  <div
+                    className="relative "
                   >
-                    <circle
-                      cx="53"
-                      cy="55"
-                      fill="#47b9f3"
-                      r="45"
+                    <div
+                      aria-required={true}
+                      data-testid="feedback-category-like-input"
+                      id="feedback-category-like"
+                      role="radiogroup"
+                    >
+                      <label
+                        className="radio-container txt-m block mb6 flex cursor-pointer"
+                        key="accurate"
+                      >
+                        <input
+                          autoFocus={false}
+                          checked={false}
+                          data-testid="feedback-category-like-0-input"
+                          name="feedback-category-like"
+                          onChange={[Function]}
+                          type="radio"
+                          value="accurate"
+                        />
+                        <div
+                          className="mr6 radio--blue radio--s-label inline-block radio"
+                        />
+                        <LabelItem
+                          onFeedbackChange={[Function]}
+                          selected={false}
+                          subTitle="Accurately describes the product or feature."
+                          title="Accurate"
+                        >
+                          <div
+                            className="flex-child-grow"
+                            style={
+                              Object {
+                                "position": "relative",
+                                "top": "-3px",
+                              }
+                            }
+                          >
+                            <div
+                              className="txt-ms"
+                            >
+                              Accurate
+                            </div>
+                            <div
+                              className="txt-light txt-s"
+                            >
+                              Accurately describes the product or feature.
+                            </div>
+                          </div>
+                        </LabelItem>
+                      </label>
+                      <label
+                        className="radio-container txt-m block mb6 flex cursor-pointer"
+                        key="solved-my-problem"
+                      >
+                        <input
+                          autoFocus={false}
+                          checked={true}
+                          data-testid="feedback-category-like-1-input"
+                          name="feedback-category-like"
+                          onChange={[Function]}
+                          type="radio"
+                          value="solved-my-problem"
+                        />
+                        <div
+                          className="mr6 radio--blue radio--s-label inline-block radio"
+                        />
+                        <LabelItem
+                          onFeedbackChange={[Function]}
+                          selected={true}
+                          subTitle="Helped me resolve an issue."
+                          title="Solved my problem"
+                        >
+                          <div
+                            className="flex-child-grow"
+                            style={
+                              Object {
+                                "position": "relative",
+                                "top": "-3px",
+                              }
+                            }
+                          >
+                            <div
+                              className="txt-ms"
+                            >
+                              Solved my problem
+                            </div>
+                            <div
+                              className="txt-light txt-s"
+                            >
+                              Helped me resolve an issue.
+                            </div>
+                            <FeedbackTextarea
+                              id="feedback"
+                              onChange={[Function]}
+                              placeholder="(Optional) Try to be as specific as possible."
+                            >
+                              <div
+                                className="relative mt12"
+                              >
+                                <ControlTextarea
+                                  id="feedback"
+                                  onChange={[Function]}
+                                  placeholder="(Optional) Try to be as specific as possible."
+                                  themeControlTextarea="textarea hmin60 bg-white txt-ms"
+                                  themeLabel="txt-m mb6"
+                                  validationError=""
+                                  value="I found a sandwich and I want to know why there isn't any mayonnaise."
+                                >
+                                  <ControlWrapper
+                                    id="feedback"
+                                    validationError=""
+                                  >
+                                    <div
+                                      className="relative "
+                                    >
+                                      <textarea
+                                        aria-required={true}
+                                        className="textarea hmin60 bg-white txt-ms"
+                                        data-testid="feedback-textarea"
+                                        id="feedback"
+                                        name="feedback"
+                                        onChange={[Function]}
+                                        placeholder="(Optional) Try to be as specific as possible."
+                                        value="I found a sandwich and I want to know why there isn't any mayonnaise."
+                                      />
+                                      <div
+                                        role="alert"
+                                      />
+                                    </div>
+                                  </ControlWrapper>
+                                </ControlTextarea>
+                                <div
+                                  className="absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s"
+                                  id="feedback-length"
+                                >
+                                  931
+                                </div>
+                              </div>
+                            </FeedbackTextarea>
+                          </div>
+                        </LabelItem>
+                      </label>
+                      <label
+                        className="radio-container txt-m block mb6 flex cursor-pointer"
+                        key="easy-to-understand"
+                      >
+                        <input
+                          autoFocus={false}
+                          checked={false}
+                          data-testid="feedback-category-like-2-input"
+                          name="feedback-category-like"
+                          onChange={[Function]}
+                          type="radio"
+                          value="easy-to-understand"
+                        />
+                        <div
+                          className="mr6 radio--blue radio--s-label inline-block radio"
+                        />
+                        <LabelItem
+                          onFeedbackChange={[Function]}
+                          selected={false}
+                          subTitle="Easy to follow and comprehend."
+                          title="Easy to understand"
+                        >
+                          <div
+                            className="flex-child-grow"
+                            style={
+                              Object {
+                                "position": "relative",
+                                "top": "-3px",
+                              }
+                            }
+                          >
+                            <div
+                              className="txt-ms"
+                            >
+                              Easy to understand
+                            </div>
+                            <div
+                              className="txt-light txt-s"
+                            >
+                              Easy to follow and comprehend.
+                            </div>
+                          </div>
+                        </LabelItem>
+                      </label>
+                      <label
+                        className="radio-container txt-m block mb6 flex cursor-pointer"
+                        key="helped-decide-to-use"
+                      >
+                        <input
+                          autoFocus={false}
+                          checked={false}
+                          data-testid="feedback-category-like-3-input"
+                          name="feedback-category-like"
+                          onChange={[Function]}
+                          type="radio"
+                          value="helped-decide-to-use"
+                        />
+                        <div
+                          className="mr6 radio--blue radio--s-label inline-block radio"
+                        />
+                        <LabelItem
+                          onFeedbackChange={[Function]}
+                          selected={false}
+                          subTitle="Convinced me to adopt the product or feature."
+                          title="Helped me decide to use the product"
+                        >
+                          <div
+                            className="flex-child-grow"
+                            style={
+                              Object {
+                                "position": "relative",
+                                "top": "-3px",
+                              }
+                            }
+                          >
+                            <div
+                              className="txt-ms"
+                            >
+                              Helped me decide to use the product
+                            </div>
+                            <div
+                              className="txt-light txt-s"
+                            >
+                              Convinced me to adopt the product or feature.
+                            </div>
+                          </div>
+                        </LabelItem>
+                      </label>
+                      <label
+                        className="radio-container txt-m block mb6 flex cursor-pointer"
+                        key="another-reason"
+                      >
+                        <input
+                          autoFocus={false}
+                          checked={false}
+                          data-testid="feedback-category-like-4-input"
+                          name="feedback-category-like"
+                          onChange={[Function]}
+                          type="radio"
+                          value="another-reason"
+                        />
+                        <div
+                          className="mr6 radio--blue radio--s-label inline-block radio"
+                        />
+                        <LabelItem
+                          onFeedbackChange={[Function]}
+                          selected={false}
+                          title="Another reason"
+                        >
+                          <div
+                            className="flex-child-grow"
+                            style={
+                              Object {
+                                "position": "relative",
+                                "top": "-3px",
+                              }
+                            }
+                          >
+                            <div
+                              className="txt-ms"
+                            >
+                              Another reason
+                            </div>
+                          </div>
+                        </LabelItem>
+                      </label>
+                    </div>
+                    <div
+                      role="alert"
                     />
-                    <rect
-                      fill="#1274c6"
-                      height="34.501"
-                      rx="5.219"
-                      ry="5.219"
-                      transform="rotate(.605 53.4 58.455)"
-                      width="52.254"
-                      x="27.273"
-                      y="41.204"
-                    />
-                    <path
-                      d="M64.1 34.848s-9.912-.76-10.008 8.42-.093 24.736-.093 24.736S58.822 64.96 62.79 65l15.404.163A1.788 1.788 0 0 0 80 63.393l.281-26.601A1.773 1.773 0 0 0 78.527 35z"
-                      fill="#309ef9"
-                    />
-                    <path
-                      d="M43.971 34.157s10.21-.563 10.11 8.821S53.998 68 53.998 68s-5.25-2.957-9.331-3L28.78 64.83A1.786 1.786 0 0 1 27 63.04l.288-27.286A1.786 1.786 0 0 1 29.106 34z"
-                      fill="#0d84fd"
-                    />
-                  </svg>
-                </BookImage>
-              </div>
-              <p>
-                <strong>
-                  Thank you!
-                </strong>
-              </p>
-              <p>
-                Our documentation team will read your feedback. Thank you for helping us improve this 
-                page
-                .
-              </p>
+                  </div>
+                </ControlWrapper>
+              </ControlRadioSet>
+              <FeedbackButton
+                disabled={false}
+                onClick={[Function]}
+              >
+                <button
+                  className="btn btn--blue mt6"
+                  disabled={false}
+                  id="feedback-submit-button"
+                  onClick={[Function]}
+                >
+                  Submit
+                </button>
+              </FeedbackButton>
             </div>
-          </div>
+          </OptionsList>
         </div>
       </div>
     </div>

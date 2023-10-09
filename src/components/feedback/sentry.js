@@ -27,7 +27,7 @@ export function sendToSentry({ state, props }) {
         })
     });
   }
-  // configure data to send with feeedback
+  // configure data to send with feedback
   Sentry.withScope((scope) => {
     // set tag for site name
     scope.setTag('site', site);
@@ -50,6 +50,6 @@ export function sendToSentry({ state, props }) {
     // create fingerprint to prevent feedback from grouping together, important for text-less positive feedback
     scope.setFingerprint([site, category, anonymousId, new Date()]);
     // capture the feedback as a message
-    Sentry.captureMessage(feedback);
+    Sentry.captureMessage(feedback || `${category} - ${categoryType}`);
   });
 }
