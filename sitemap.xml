@@ -7,10 +7,25 @@
         <loc>https://mapbox.github.io/dr-ui/changelog</loc>
     </url>
     <url>
+        <loc>https://mapbox.github.io/dr-ui/examples</loc>
+    </url>
+    <url>
         <loc>https://mapbox.github.io/dr-ui/guides</loc>
     </url>
     <url>
-        <loc>https://mapbox.github.io/dr-ui/examples</loc>
+        <loc>https://mapbox.github.io/dr-ui/examples/example-1</loc>
+    </url>
+    <url>
+        <loc>https://mapbox.github.io/dr-ui/examples/example-3</loc>
+    </url>
+    <url>
+        <loc>https://mapbox.github.io/dr-ui/examples/example-2</loc>
+    </url>
+    <url>
+        <loc>https://mapbox.github.io/dr-ui/examples/example-4</loc>
+    </url>
+    <url>
+        <loc>https://mapbox.github.io/dr-ui/examples/example-5</loc>
     </url>
     <url>
         <loc>https://mapbox.github.io/dr-ui/guides/batfish-helpers</loc>
@@ -28,22 +43,7 @@
         <loc>https://mapbox.github.io/dr-ui/guides/split-pages</loc>
     </url>
     <url>
-        <loc>https://mapbox.github.io/dr-ui/examples/example-1</loc>
-    </url>
-    <url>
-        <loc>https://mapbox.github.io/dr-ui/examples/example-2</loc>
-    </url>
-    <url>
         <loc>https://mapbox.github.io/dr-ui/guides/test-pages</loc>
-    </url>
-    <url>
-        <loc>https://mapbox.github.io/dr-ui/examples/example-3</loc>
-    </url>
-    <url>
-        <loc>https://mapbox.github.io/dr-ui/examples/example-5</loc>
-    </url>
-    <url>
-        <loc>https://mapbox.github.io/dr-ui/examples/example-4</loc>
     </url>
     <url>
         <loc>https://mapbox.github.io/dr-ui/guides/grouped-guides/file-structure</loc>
