@@ -27,7 +27,7 @@ exports[`index-card Basic use as a product card with links renders as expected 1
           className="flex flex--center-cross"
         >
           <h3
-            className="txt-fancy txt-l mb12"
+            className="txt-fancy txt-l mb-neg6 flex flex--wrap flex--center-cross mb12"
             style={
               Object {
                 "fontSize": 18,
@@ -35,13 +35,13 @@ exports[`index-card Basic use as a product card with links renders as expected 1
               }
             }
           >
-            <span
-              className="mr6"
+            <div
+              className="mr6 mb6 txt-nowrap"
             >
               Mapbox GL JS
-            </span>
+            </div>
             <div
-              className="inline-block mr6 relative"
+              className="inline-block mr6 mb6 relative txt-nowrap"
               style={
                 Object {
                   "top": -2,
@@ -192,7 +192,7 @@ exports[`index-card Use as a help section card renders as expected 1`] = `
               </svg>
             </div>
             <h3
-              className="txt-fancy txt-l"
+              className="txt-fancy txt-l mb-neg6 flex flex--wrap flex--center-cross"
               style={
                 Object {
                   "fontSize": 18,
@@ -200,11 +200,11 @@ exports[`index-card Use as a help section card renders as expected 1`] = `
                 }
               }
             >
-              <span
-                className="mr6"
+              <div
+                className="mr6 mb6 txt-nowrap"
               >
                 Tutorials
-              </span>
+              </div>
             </h3>
           </div>
           <p

@@ -72,17 +72,23 @@ const CardContent = ({
           </div>
         )}
         <h3
-          className={classnames('txt-fancy txt-l', {
-            mb12: !icon
-          })}
+          className={classnames(
+            'txt-fancy txt-l mb-neg6 flex flex--wrap flex--center-cross',
+            {
+              mb12: !icon
+            }
+          )}
           style={{
             fontSize: 18,
             lineHeight: '18px'
           }}
         >
-          <span className="mr6">{title}</span>
+          <div className="mr6 mb6 txt-nowrap">{title}</div>
           {tag && (
-            <div className="inline-block mr6 relative" style={{ top: -2 }}>
+            <div
+              className="inline-block mr6 mb6 relative txt-nowrap"
+              style={{ top: -2 }}
+            >
               {tag}
             </div>
           )}
