@@ -104,7 +104,7 @@
     "slugg": "^1.2.1",
     "slugify": "^1.6.0",
     "unified": "^9.2.2",
-    "uuid": "^8.3.2"
+    "uuid": "^9.0.0"
   },
   "peerDependencies": {
     "@mapbox/mbx-assembly-docs": "^0.1.0",
