@@ -12,40 +12,26 @@ export function sendToSegment({ state, props }) {
 
 // Creates event to send to Segment
 function createSegmentEvent({ state, props }) {
-  const {
-    user,
-    anonymousId,
-    helpful,
-    feedback,
-    sessionId,
-    category,
-    categoryType,
-    contactSupport,
-    exited
-  } = state;
+  const { user, anonymousId, feedback, sessionId, category, categoryType } =
+    state;
   const { site, section, location } = props;
   // set user if available else set anonymousId (needed for forward-event request)
   const identity = {
     ...(user && user.id ? { userId: user.id } : { anonymousId: anonymousId })
   };
+
   return {
     event: 'Sent docs feedback',
     ...identity,
     properties: {
-      // true, false
-      helpful,
       // the unique id for the feedbak session
       sessionId,
-      // the feedback category that the user selected
+      // the feedback category that the user selected (helpful for yes, unhelpful for no)
       category,
       // the sub type for the category
       categoryType,
-      // the user clicked "contact support" button
-      contactSupport,
       // text feedback, if available
       ...(feedback && { feedback: feedback }),
-      // if true, the user exited/closed feedback before submitting
-      exited,
       // name of current site (important for filtering in Mode)
       site,
       // (optional) name of section for longer pagers, helpful for fitering in Mode and identifying section areas

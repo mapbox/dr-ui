@@ -31,25 +31,21 @@ describe('Does not send event to Sentry', () => {
       }}
     />
   );
-  // Add state to skip ahead of the workflow
-  feedback.setState({
-    isOpen: true,
-    category: 'Something is confusing'
-  });
+  // Click the Yes button
+  const btn = feedback.find('button#feedback-button-yes');
+  btn.simulate('click');
 
-  describe('Submit feedback', () => {
+  describe('Choose an option and submit feedback', () => {
+    test('Check that submit button is enabled after an option is selected', () => {
+      const radioInput = feedback.find('input').first();
+      radioInput.simulate('change', { target: { value: 'solved-my-problem' } });
+    });
+
     test('Enter text feedback', () => textJustRight(feedback));
-    test('Click submit, set state', () => {
+
+    test('After submit, expect to see the thank you message', () => {
       const submitButton = feedback.find('#feedback-submit-button');
       submitButton.simulate('click');
-      expect(feedback.state().sentFeedback).toBeTruthy();
-      expect(feedback.state().category).toEqual('Something is confusing');
-      expect(feedback.state().categoryType).toEqual();
-      expect(feedback.state().feedback).toEqual(
-        "I found a sandwich and I want to know why there isn't any mayonnaise."
-      );
-    });
-    test('After submit, expect to see the thank you message', () => {
       expectThankYou(feedback);
     });
     test('Sentry is not called', () => {

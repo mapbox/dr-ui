@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Workflow with logged in user information 2 - Something is confusing Check UI element state 1`] = `
+exports[`Workflow with logged in user information 2 - Select an option Check that submit button is enabled after an option is selected 1`] = `
 <Feedback
   feedbackSentryDsn="https://eccc8b561b9a461990309b01d33d54e3@sentry.io/1848287"
   location={
@@ -18,579 +18,382 @@ exports[`Workflow with logged in user information 2 - Something is confusing Che
     }
   }
 >
-  <FeedbackWrapper
-    helpful={false}
-    title="Something is confusing"
-  >
+  <FeedbackWrapper>
     <div
-      className="dr-ui--feedback wmax300"
+      className="dr-ui--feedback"
     >
       <div
-        className="bg-gray-faint round py12 px12"
+        className="flex flex--column"
       >
         <div
-          className="flex flex--column"
+          className="mb6 prose"
         >
-          <div
-            className="flex flex--space-between-main w-full mb12"
+          <OptionsList
+            categoryType="solved-my-problem"
+            helpful={true}
+            onCategoryTypeChange={[Function]}
+            onFeedbackChange={[Function]}
+            onSubmit={[Function]}
+            type="page"
           >
             <div
-              className="txt-bold"
+              id="yes-options-list"
             >
-              Something is confusing
-            </div>
-            <div>
-              <Tooltip
-                content="Close"
+              <p
+                className="txt-fancy txt-m"
               >
-                <TooltipProvider>
-                  <TooltipProviderProvider
-                    delayDuration={700}
-                    disableHoverableContent={false}
-                    isOpenDelayed={true}
-                    isPointerInTransitRef={
-                      Object {
-                        "current": false,
-                      }
-                    }
-                    onClose={[Function]}
-                    onOpen={[Function]}
-                    onPointerInTransitChange={[Function]}
-                  >
-                    <Tooltip
-                      delayDuration={150}
-                    >
-                      <Popper
-                        __scopePopper={
-                          Object {
-                            "Popper": Array [
-                              Object {
-                                "$$typeof": Symbol(react.context),
-                                "Consumer": Object {
-                                  "$$typeof": Symbol(react.context),
-                                  "_calculateChangedBits": null,
-                                  "_context": [Circular],
-                                },
-                                "Provider": Object {
-                                  "$$typeof": Symbol(react.provider),
-                                  "_context": [Circular],
-                                },
-                                "_calculateChangedBits": null,
-                                "_currentRenderer": Object {},
-                                "_currentRenderer2": null,
-                                "_currentValue": undefined,
-                                "_currentValue2": undefined,
-                                "_threadCount": 0,
-                              },
-                              Object {
-                                "$$typeof": Symbol(react.context),
-                                "Consumer": Object {
-                                  "$$typeof": Symbol(react.context),
-                                  "_calculateChangedBits": null,
-                                  "_context": [Circular],
-                                },
-                                "Provider": Object {
-                                  "$$typeof": Symbol(react.provider),
-                                  "_context": [Circular],
-                                },
-                                "_calculateChangedBits": null,
-                                "_currentRenderer": null,
-                                "_currentRenderer2": null,
-                                "_currentValue": undefined,
-                                "_currentValue2": undefined,
-                                "_threadCount": 0,
-                              },
-                              Object {
-                                "$$typeof": Symbol(react.context),
-                                "Consumer": Object {
-                                  "$$typeof": Symbol(react.context),
-                                  "_calculateChangedBits": null,
-                                  "_context": [Circular],
-                                },
-                                "Provider": Object {
-                                  "$$typeof": Symbol(react.provider),
-                                  "_context": [Circular],
-                                },
-                                "_calculateChangedBits": null,
-                                "_currentRenderer": null,
-                                "_currentRenderer2": null,
-                                "_currentValue": Object {
-                                  "hasParent": false,
-                                  "positionUpdateFns": Set {},
-                                },
-                                "_currentValue2": Object {
-                                  "hasParent": false,
-                                  "positionUpdateFns": Set {},
-                                },
-                                "_threadCount": 0,
-                              },
-                            ],
-                          }
-                        }
-                      >
-                        <PopperProvider
-                          anchor={
-                            <button
-                              aria-label="Close feedback"
-                              class="link--gray"
-                              data-state="closed"
-                              id="feedback-close-button"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="events-none icon"
-                                data-testid="icon-close"
-                                focusable="false"
-                                style="width: 18px; height: 18px;"
-                              >
-                                <use
-                                  xlink:href="#icon-close"
-                                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                                />
-                              </svg>
-                              <span
-                                style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
-                              >
-                                close
-                              </span>
-                            </button>
-                          }
-                          onAnchorChange={[Function]}
-                          scope={
-                            Object {
-                              "Popper": Array [
-                                Object {
-                                  "$$typeof": Symbol(react.context),
-                                  "Consumer": Object {
-                                    "$$typeof": Symbol(react.context),
-                                    "_calculateChangedBits": null,
-                                    "_context": [Circular],
-                                  },
-                                  "Provider": Object {
-                                    "$$typeof": Symbol(react.provider),
-                                    "_context": [Circular],
-                                  },
-                                  "_calculateChangedBits": null,
-                                  "_currentRenderer": Object {},
-                                  "_currentRenderer2": null,
-                                  "_currentValue": undefined,
-                                  "_currentValue2": undefined,
-                                  "_threadCount": 0,
-                                },
-                                Object {
-                                  "$$typeof": Symbol(react.context),
-                                  "Consumer": Object {
-                                    "$$typeof": Symbol(react.context),
-                                    "_calculateChangedBits": null,
-                                    "_context": [Circular],
-                                  },
-                                  "Provider": Object {
-                                    "$$typeof": Symbol(react.provider),
-                                    "_context": [Circular],
-                                  },
-                                  "_calculateChangedBits": null,
-                                  "_currentRenderer": null,
-                                  "_currentRenderer2": null,
-                                  "_currentValue": undefined,
-                                  "_currentValue2": undefined,
-                                  "_threadCount": 0,
-                                },
-                                Object {
-                                  "$$typeof": Symbol(react.context),
-                                  "Consumer": Object {
-                                    "$$typeof": Symbol(react.context),
-                                    "_calculateChangedBits": null,
-                                    "_context": [Circular],
-                                  },
-                                  "Provider": Object {
-                                    "$$typeof": Symbol(react.provider),
-                                    "_context": [Circular],
-                                  },
-                                  "_calculateChangedBits": null,
-                                  "_currentRenderer": null,
-                                  "_currentRenderer2": null,
-                                  "_currentValue": Object {
-                                    "hasParent": false,
-                                    "positionUpdateFns": Set {},
-                                  },
-                                  "_currentValue2": Object {
-                                    "hasParent": false,
-                                    "positionUpdateFns": Set {},
-                                  },
-                                  "_threadCount": 0,
-                                },
-                              ],
-                            }
-                          }
-                        >
-                          <TooltipProvider
-                            contentId="radix-1"
-                            disableHoverableContent={false}
-                            onClose={[Function]}
-                            onOpen={[Function]}
-                            onTriggerChange={[Function]}
-                            onTriggerEnter={[Function]}
-                            onTriggerLeave={[Function]}
-                            open={false}
-                            stateAttribute="closed"
-                            trigger={
-                              <button
-                                aria-label="Close feedback"
-                                class="link--gray"
-                                data-state="closed"
-                                id="feedback-close-button"
-                              >
-                                <svg
-                                  aria-hidden="true"
-                                  class="events-none icon"
-                                  data-testid="icon-close"
-                                  focusable="false"
-                                  style="width: 18px; height: 18px;"
-                                >
-                                  <use
-                                    xlink:href="#icon-close"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                  />
-                                </svg>
-                                <span
-                                  style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
-                                >
-                                  close
-                                </span>
-                              </button>
-                            }
-                          >
-                            <ForwardRef>
-                              <TooltipTrigger
-                                asChild={true}
-                              >
-                                <PopperAnchor
-                                  __scopePopper={
-                                    Object {
-                                      "Popper": Array [
-                                        Object {
-                                          "$$typeof": Symbol(react.context),
-                                          "Consumer": Object {
-                                            "$$typeof": Symbol(react.context),
-                                            "_calculateChangedBits": null,
-                                            "_context": [Circular],
-                                          },
-                                          "Provider": Object {
-                                            "$$typeof": Symbol(react.provider),
-                                            "_context": [Circular],
-                                          },
-                                          "_calculateChangedBits": null,
-                                          "_currentRenderer": Object {},
-                                          "_currentRenderer2": null,
-                                          "_currentValue": undefined,
-                                          "_currentValue2": undefined,
-                                          "_threadCount": 0,
-                                        },
-                                        Object {
-                                          "$$typeof": Symbol(react.context),
-                                          "Consumer": Object {
-                                            "$$typeof": Symbol(react.context),
-                                            "_calculateChangedBits": null,
-                                            "_context": [Circular],
-                                          },
-                                          "Provider": Object {
-                                            "$$typeof": Symbol(react.provider),
-                                            "_context": [Circular],
-                                          },
-                                          "_calculateChangedBits": null,
-                                          "_currentRenderer": null,
-                                          "_currentRenderer2": null,
-                                          "_currentValue": undefined,
-                                          "_currentValue2": undefined,
-                                          "_threadCount": 0,
-                                        },
-                                        Object {
-                                          "$$typeof": Symbol(react.context),
-                                          "Consumer": Object {
-                                            "$$typeof": Symbol(react.context),
-                                            "_calculateChangedBits": null,
-                                            "_context": [Circular],
-                                          },
-                                          "Provider": Object {
-                                            "$$typeof": Symbol(react.provider),
-                                            "_context": [Circular],
-                                          },
-                                          "_calculateChangedBits": null,
-                                          "_currentRenderer": null,
-                                          "_currentRenderer2": null,
-                                          "_currentValue": Object {
-                                            "hasParent": false,
-                                            "positionUpdateFns": Set {},
-                                          },
-                                          "_currentValue2": Object {
-                                            "hasParent": false,
-                                            "positionUpdateFns": Set {},
-                                          },
-                                          "_threadCount": 0,
-                                        },
-                                      ],
-                                    }
-                                  }
-                                  asChild={true}
-                                >
-                                  <Primitive.div
-                                    asChild={true}
-                                  >
-                                    <Slot>
-                                      <SlotClone>
-                                        <Primitive.button
-                                          asChild={true}
-                                          data-state="closed"
-                                          onBlur={[Function]}
-                                          onClick={[Function]}
-                                          onFocus={[Function]}
-                                          onPointerDown={[Function]}
-                                          onPointerLeave={[Function]}
-                                          onPointerMove={[Function]}
-                                        >
-                                          <Slot
-                                            data-state="closed"
-                                            onBlur={[Function]}
-                                            onClick={[Function]}
-                                            onFocus={[Function]}
-                                            onPointerDown={[Function]}
-                                            onPointerLeave={[Function]}
-                                            onPointerMove={[Function]}
-                                          >
-                                            <SlotClone
-                                              data-state="closed"
-                                              onBlur={[Function]}
-                                              onClick={[Function]}
-                                              onFocus={[Function]}
-                                              onPointerDown={[Function]}
-                                              onPointerLeave={[Function]}
-                                              onPointerMove={[Function]}
-                                            >
-                                              <button
-                                                aria-label="Close feedback"
-                                                className="link--gray"
-                                                data-state="closed"
-                                                id="feedback-close-button"
-                                                onBlur={[Function]}
-                                                onClick={[Function]}
-                                                onFocus={[Function]}
-                                                onPointerDown={[Function]}
-                                                onPointerLeave={[Function]}
-                                                onPointerMove={[Function]}
-                                              >
-                                                <Icon
-                                                  name="close"
-                                                >
-                                                  <AccessibleIcon
-                                                    label="close"
-                                                  >
-                                                    <svg
-                                                      aria-hidden="true"
-                                                      className="events-none icon"
-                                                      data-testid="icon-close"
-                                                      focusable="false"
-                                                      style={
-                                                        Object {
-                                                          "height": 18,
-                                                          "width": 18,
-                                                        }
-                                                      }
-                                                    >
-                                                      <use
-                                                        xlinkHref="#icon-close"
-                                                        xmlnsXlink="http://www.w3.org/1999/xlink"
-                                                      />
-                                                    </svg>
-                                                    <VisuallyHidden>
-                                                      <Primitive.span
-                                                        style={
-                                                          Object {
-                                                            "border": 0,
-                                                            "clip": "rect(0, 0, 0, 0)",
-                                                            "height": 1,
-                                                            "margin": -1,
-                                                            "overflow": "hidden",
-                                                            "padding": 0,
-                                                            "position": "absolute",
-                                                            "whiteSpace": "nowrap",
-                                                            "width": 1,
-                                                            "wordWrap": "normal",
-                                                          }
-                                                        }
-                                                      >
-                                                        <span
-                                                          style={
-                                                            Object {
-                                                              "border": 0,
-                                                              "clip": "rect(0, 0, 0, 0)",
-                                                              "height": 1,
-                                                              "margin": -1,
-                                                              "overflow": "hidden",
-                                                              "padding": 0,
-                                                              "position": "absolute",
-                                                              "whiteSpace": "nowrap",
-                                                              "width": 1,
-                                                              "wordWrap": "normal",
-                                                            }
-                                                          }
-                                                        >
-                                                          close
-                                                        </span>
-                                                      </Primitive.span>
-                                                    </VisuallyHidden>
-                                                  </AccessibleIcon>
-                                                </Icon>
-                                              </button>
-                                            </SlotClone>
-                                          </Slot>
-                                        </Primitive.button>
-                                      </SlotClone>
-                                    </Slot>
-                                  </Primitive.div>
-                                </PopperAnchor>
-                              </TooltipTrigger>
-                            </ForwardRef>
-                            <TooltipPortal>
-                              <TooltipPortalProvider>
-                                <Presence
-                                  present={false}
-                                />
-                              </TooltipPortalProvider>
-                            </TooltipPortal>
-                          </TooltipProvider>
-                        </PopperProvider>
-                      </Popper>
-                    </Tooltip>
-                  </TooltipProviderProvider>
-                </TooltipProvider>
-              </Tooltip>
-            </div>
-          </div>
-          <div
-            className="mb6 prose"
-          >
-            <CategoryConfusing
-              option="What about this page is confusing? How can we improve the content?"
-              placeholder="Let us know what is confusing."
-              submitFeedback={[Function]}
-            >
-              <FeedbackTextarea
-                id="feedback-problem-textarea"
-                label="What about this page is confusing? How can we improve the content?"
+                What did you like?
+              </p>
+              <ControlRadioSet
+                id="feedback-category-like"
                 onChange={[Function]}
-                placeholder="Let us know what is confusing."
-                validationErrorMinimum={false}
+                options={
+                  Array [
+                    Object {
+                      "label": <LabelItem
+                        onFeedbackChange={[Function]}
+                        selected={false}
+                        subTitle="Accurately describes the product or feature."
+                        title="Accurate"
+                      />,
+                      "value": "accurate",
+                    },
+                    Object {
+                      "label": <LabelItem
+                        onFeedbackChange={[Function]}
+                        selected={true}
+                        subTitle="Helped me resolve an issue."
+                        title="Solved my problem"
+                      />,
+                      "value": "solved-my-problem",
+                    },
+                    Object {
+                      "label": <LabelItem
+                        onFeedbackChange={[Function]}
+                        selected={false}
+                        subTitle="Easy to follow and comprehend."
+                        title="Easy to understand"
+                      />,
+                      "value": "easy-to-understand",
+                    },
+                    Object {
+                      "label": <LabelItem
+                        onFeedbackChange={[Function]}
+                        selected={false}
+                        subTitle="Convinced me to adopt the product or feature."
+                        title="Helped me decide to use the product"
+                      />,
+                      "value": "helped-decide-to-use",
+                    },
+                    Object {
+                      "label": <LabelItem
+                        onFeedbackChange={[Function]}
+                        selected={false}
+                        title="Another reason"
+                      />,
+                      "value": "another-reason",
+                    },
+                  ]
+                }
+                themeRadioContainer="txt-m block mb6 flex"
+                value="solved-my-problem"
               >
-                <div
-                  className="relative"
+                <ControlWrapper
+                  id="feedback-category-like"
                 >
-                  <ControlTextarea
-                    id="feedback-problem-textarea"
-                    label="What about this page is confusing? How can we improve the content?"
-                    onChange={[Function]}
-                    placeholder="Let us know what is confusing."
-                    themeControlTextarea="textarea hmin120 bg-white"
-                    themeLabel="txt-m mb6"
-                    validationError=""
-                    value=""
+                  <div
+                    className="relative "
                   >
-                    <ControlWrapper
-                      id="feedback-problem-textarea"
-                      validationError=""
+                    <div
+                      aria-required={true}
+                      data-testid="feedback-category-like-input"
+                      id="feedback-category-like"
+                      role="radiogroup"
                     >
-                      <div
-                        className="relative "
+                      <label
+                        className="radio-container txt-m block mb6 flex cursor-pointer"
+                        key="accurate"
                       >
-                        <ControlLabel
-                          id="feedback-problem-textarea"
-                          optional={false}
-                          text="What about this page is confusing? How can we improve the content?"
-                          themeLabel="txt-m mb6"
-                        >
-                          <div>
-                            <Label
-                              asChild={true}
-                              htmlFor="feedback-problem-textarea"
-                            >
-                              <Primitive.label
-                                asChild={true}
-                                htmlFor="feedback-problem-textarea"
-                                onMouseDown={[Function]}
-                              >
-                                <Slot
-                                  htmlFor="feedback-problem-textarea"
-                                  onMouseDown={[Function]}
-                                >
-                                  <SlotClone
-                                    htmlFor="feedback-problem-textarea"
-                                    onMouseDown={[Function]}
-                                  >
-                                    <label
-                                      className="inline-block txt-m mb6"
-                                      htmlFor="feedback-problem-textarea"
-                                      onMouseDown={[Function]}
-                                    >
-                                      What about this page is confusing? How can we improve the content?
-                                       
-                                    </label>
-                                  </SlotClone>
-                                </Slot>
-                              </Primitive.label>
-                            </Label>
-                          </div>
-                        </ControlLabel>
-                        <textarea
-                          aria-required={true}
-                          className="textarea hmin120 bg-white"
-                          data-testid="feedback-problem-textarea-textarea"
-                          id="feedback-problem-textarea"
-                          name="feedback-problem-textarea"
+                        <input
+                          autoFocus={false}
+                          checked={false}
+                          data-testid="feedback-category-like-0-input"
+                          name="feedback-category-like"
                           onChange={[Function]}
-                          placeholder="Let us know what is confusing."
-                          value=""
+                          type="radio"
+                          value="accurate"
                         />
                         <div
-                          role="alert"
+                          className="mr6 radio--blue radio--s-label inline-block radio"
                         />
-                      </div>
-                    </ControlWrapper>
-                  </ControlTextarea>
-                  <div
-                    className="absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s"
-                    id="feedback-length"
-                  >
-                    1000
+                        <LabelItem
+                          onFeedbackChange={[Function]}
+                          selected={false}
+                          subTitle="Accurately describes the product or feature."
+                          title="Accurate"
+                        >
+                          <div
+                            className="flex-child-grow"
+                            style={
+                              Object {
+                                "position": "relative",
+                                "top": "-3px",
+                              }
+                            }
+                          >
+                            <div
+                              className="txt-ms"
+                            >
+                              Accurate
+                            </div>
+                            <div
+                              className="txt-light txt-s"
+                            >
+                              Accurately describes the product or feature.
+                            </div>
+                          </div>
+                        </LabelItem>
+                      </label>
+                      <label
+                        className="radio-container txt-m block mb6 flex cursor-pointer"
+                        key="solved-my-problem"
+                      >
+                        <input
+                          autoFocus={false}
+                          checked={true}
+                          data-testid="feedback-category-like-1-input"
+                          name="feedback-category-like"
+                          onChange={[Function]}
+                          type="radio"
+                          value="solved-my-problem"
+                        />
+                        <div
+                          className="mr6 radio--blue radio--s-label inline-block radio"
+                        />
+                        <LabelItem
+                          onFeedbackChange={[Function]}
+                          selected={true}
+                          subTitle="Helped me resolve an issue."
+                          title="Solved my problem"
+                        >
+                          <div
+                            className="flex-child-grow"
+                            style={
+                              Object {
+                                "position": "relative",
+                                "top": "-3px",
+                              }
+                            }
+                          >
+                            <div
+                              className="txt-ms"
+                            >
+                              Solved my problem
+                            </div>
+                            <div
+                              className="txt-light txt-s"
+                            >
+                              Helped me resolve an issue.
+                            </div>
+                            <FeedbackTextarea
+                              id="feedback"
+                              onChange={[Function]}
+                              placeholder="(Optional) Try to be as specific as possible."
+                            >
+                              <div
+                                className="relative mt12"
+                              >
+                                <ControlTextarea
+                                  id="feedback"
+                                  onChange={[Function]}
+                                  placeholder="(Optional) Try to be as specific as possible."
+                                  themeControlTextarea="textarea hmin60 bg-white txt-ms"
+                                  themeLabel="txt-m mb6"
+                                  validationError=""
+                                  value=""
+                                >
+                                  <ControlWrapper
+                                    id="feedback"
+                                    validationError=""
+                                  >
+                                    <div
+                                      className="relative "
+                                    >
+                                      <textarea
+                                        aria-required={true}
+                                        className="textarea hmin60 bg-white txt-ms"
+                                        data-testid="feedback-textarea"
+                                        id="feedback"
+                                        name="feedback"
+                                        onChange={[Function]}
+                                        placeholder="(Optional) Try to be as specific as possible."
+                                        value=""
+                                      />
+                                      <div
+                                        role="alert"
+                                      />
+                                    </div>
+                                  </ControlWrapper>
+                                </ControlTextarea>
+                                <div
+                                  className="absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s"
+                                  id="feedback-length"
+                                >
+                                  1000
+                                </div>
+                              </div>
+                            </FeedbackTextarea>
+                          </div>
+                        </LabelItem>
+                      </label>
+                      <label
+                        className="radio-container txt-m block mb6 flex cursor-pointer"
+                        key="easy-to-understand"
+                      >
+                        <input
+                          autoFocus={false}
+                          checked={false}
+                          data-testid="feedback-category-like-2-input"
+                          name="feedback-category-like"
+                          onChange={[Function]}
+                          type="radio"
+                          value="easy-to-understand"
+                        />
+                        <div
+                          className="mr6 radio--blue radio--s-label inline-block radio"
+                        />
+                        <LabelItem
+                          onFeedbackChange={[Function]}
+                          selected={false}
+                          subTitle="Easy to follow and comprehend."
+                          title="Easy to understand"
+                        >
+                          <div
+                            className="flex-child-grow"
+                            style={
+                              Object {
+                                "position": "relative",
+                                "top": "-3px",
+                              }
+                            }
+                          >
+                            <div
+                              className="txt-ms"
+                            >
+                              Easy to understand
+                            </div>
+                            <div
+                              className="txt-light txt-s"
+                            >
+                              Easy to follow and comprehend.
+                            </div>
+                          </div>
+                        </LabelItem>
+                      </label>
+                      <label
+                        className="radio-container txt-m block mb6 flex cursor-pointer"
+                        key="helped-decide-to-use"
+                      >
+                        <input
+                          autoFocus={false}
+                          checked={false}
+                          data-testid="feedback-category-like-3-input"
+                          name="feedback-category-like"
+                          onChange={[Function]}
+                          type="radio"
+                          value="helped-decide-to-use"
+                        />
+                        <div
+                          className="mr6 radio--blue radio--s-label inline-block radio"
+                        />
+                        <LabelItem
+                          onFeedbackChange={[Function]}
+                          selected={false}
+                          subTitle="Convinced me to adopt the product or feature."
+                          title="Helped me decide to use the product"
+                        >
+                          <div
+                            className="flex-child-grow"
+                            style={
+                              Object {
+                                "position": "relative",
+                                "top": "-3px",
+                              }
+                            }
+                          >
+                            <div
+                              className="txt-ms"
+                            >
+                              Helped me decide to use the product
+                            </div>
+                            <div
+                              className="txt-light txt-s"
+                            >
+                              Convinced me to adopt the product or feature.
+                            </div>
+                          </div>
+                        </LabelItem>
+                      </label>
+                      <label
+                        className="radio-container txt-m block mb6 flex cursor-pointer"
+                        key="another-reason"
+                      >
+                        <input
+                          autoFocus={false}
+                          checked={false}
+                          data-testid="feedback-category-like-4-input"
+                          name="feedback-category-like"
+                          onChange={[Function]}
+                          type="radio"
+                          value="another-reason"
+                        />
+                        <div
+                          className="mr6 radio--blue radio--s-label inline-block radio"
+                        />
+                        <LabelItem
+                          onFeedbackChange={[Function]}
+                          selected={false}
+                          title="Another reason"
+                        >
+                          <div
+                            className="flex-child-grow"
+                            style={
+                              Object {
+                                "position": "relative",
+                                "top": "-3px",
+                              }
+                            }
+                          >
+                            <div
+                              className="txt-ms"
+                            >
+                              Another reason
+                            </div>
+                          </div>
+                        </LabelItem>
+                      </label>
+                    </div>
+                    <div
+                      role="alert"
+                    />
                   </div>
-                </div>
-              </FeedbackTextarea>
+                </ControlWrapper>
+              </ControlRadioSet>
               <FeedbackButton
-                disabled={true}
+                disabled={false}
                 onClick={[Function]}
               >
                 <button
-                  className="btn btn--gray mt6"
-                  disabled={true}
+                  className="btn btn--blue mt6"
+                  disabled={false}
                   id="feedback-submit-button"
                   onClick={[Function]}
                 >
-                  Submit feedback
+                  Submit
                 </button>
               </FeedbackButton>
-            </CategoryConfusing>
-          </div>
-          <div
-            className="color-text"
-          >
-            Need help?
-             
-            <button
-              className="link"
-              onClick={[Function]}
-              value="Contact support"
-            >
-              Contact support
-            </button>
-          </div>
+            </div>
+          </OptionsList>
         </div>
       </div>
     </div>
