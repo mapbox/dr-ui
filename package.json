@@ -74,7 +74,7 @@
     "react-docgen": "^5.3.1",
     "react-helmet": "^6.1.0",
     "react-test-renderer": "^16.14.0",
-    "rehype-slug": "^4.0.1",
+    "rehype-slug": "^6.0.0",
     "unist-util-visit": "^2.0.3"
   },
   "dependencies": {
