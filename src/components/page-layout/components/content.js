@@ -54,7 +54,11 @@ Content.propTypes = {
 export class ContentWrapper extends React.PureComponent {
   renderFeedback = () => {
     const { location, section, layoutConfig } = this.props;
-    const { layout } = layoutConfig;
+    // Check contentType to see if it's 'playground'
+    const { layout, contentType } = layoutConfig;
+    // Adapt conditional below to set Type as needed.
+    console.log(contentType);
+    // TODO check contentType when layout === example
 
     const { SITE, FORWARD_EVENT_WEBHOOK } = this.props.constants;
     return (
@@ -210,6 +214,7 @@ ContentWrapper.propTypes = {
   }).isRequired,
   layoutConfig: PropTypes.shape({
     layout: PropTypes.string,
+    contentType: PropTypes.string,
     hideTitle: PropTypes.bool,
     showCards: PropTypes.bool,
     hideFeedback: PropTypes.bool,
