@@ -213,7 +213,6 @@ ContentWrapper.propTypes = {
     }).isRequired
   }).isRequired,
   layoutConfig: PropTypes.shape({
-    layout: PropTypes.string,
     contentType: PropTypes.string,
     hideTitle: PropTypes.bool,
     showCards: PropTypes.bool,
