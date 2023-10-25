@@ -54,13 +54,17 @@ Content.propTypes = {
 export class ContentWrapper extends React.PureComponent {
   renderFeedback = () => {
     const { location, section, layoutConfig } = this.props;
-    const { layout } = layoutConfig;
+    const { contentType } = layoutConfig;
+    let feedbackType = '';
+    if (contentType === 'example' || contentType === 'playground') {
+      feedbackType = contentType;
+    }
 
     const { SITE, FORWARD_EVENT_WEBHOOK } = this.props.constants;
     return (
       <Feedback
         {...this.props}
-        type={layout === 'example' ? 'example' : undefined}
+        type={feedbackType ? feedbackType : undefined}
         site={SITE}
         location={location}
         section={section}
@@ -209,7 +213,7 @@ ContentWrapper.propTypes = {
     }).isRequired
   }).isRequired,
   layoutConfig: PropTypes.shape({
-    layout: PropTypes.string,
+    contentType: PropTypes.string,
     hideTitle: PropTypes.bool,
     showCards: PropTypes.bool,
     hideFeedback: PropTypes.bool,
