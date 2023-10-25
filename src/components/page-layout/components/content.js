@@ -54,8 +54,12 @@ Content.propTypes = {
 export class ContentWrapper extends React.PureComponent {
   renderFeedback = () => {
     const { location, section, layoutConfig } = this.props;
-    // Check contentType to see if it's 'playground'
-    const { layout, contentType } = layoutConfig;
+    // Check contentType to see if it's 'playground' or 'example'
+    const { contentType } = layoutConfig;
+    let feedbackType = '';
+    if (contentType === 'example' || contentType === 'playground') {
+      feedbackType = contentType;
+    }
     // Adapt conditional below to set Type as needed.
     console.log(contentType);
     // TODO check contentType when layout === example
@@ -64,7 +68,7 @@ export class ContentWrapper extends React.PureComponent {
     return (
       <Feedback
         {...this.props}
-        type={layout === 'example' ? 'example' : undefined}
+        type={feedbackType ? feedbackType : undefined}
         site={SITE}
         location={location}
         section={section}
