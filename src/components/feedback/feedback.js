@@ -27,7 +27,6 @@ FeedbackWrapper.propTypes = {
 };
 
 const Feedback = (props) => {
-  console.log('props are', props);
   const { type } = props;
 
   const [user, setUser] = useState(undefined);
