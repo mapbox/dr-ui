@@ -28,7 +28,7 @@ Note that the `buildNavigation` function uses **named parameters**.
 - `siteBasePath`, required. The function requires the `siteBasePath`.
 - `data`, object. Provided by the data selector.
 - `sections`, array. Used with multi-structured sections. See [Shape of multi-structured sections](#shape-of-multi-structured-sections).
-- `addPages`, array. Pages, usually external to the site, to be appended to navigation. See [Shape of appended pages](#shape-of-appended-pages). Not comptible with multi-structured sites when used with `buildNavigation`. See [Shape of multi-structured sections](#shape-of-multi-structured-sections) for more on appending pages to multi-structured sites.
+- `addPages`, array. Pages, usually external to the site, to be appended to navigation. See [Shape of appended pages](#shape-of-appended-pages). Not compatible with multi-structured sites when used with `buildNavigation`. See [Shape of multi-structured sections](#shape-of-multi-structured-sections) for more on appending pages to multi-structured sites.
 
 ### Set up in batfish.config.js
 

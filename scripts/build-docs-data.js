@@ -111,15 +111,14 @@ function generateDocsData() {
     })
     .then(_.compact)
     .then((componentObjectStrings) => `[${componentObjectStrings.join(',')}]`)
-    .then((componentArrayString) => {
+    .then(async (componentArrayString) => {
       const code = `
         'use strict';
         const React = require('react');
         module.exports = ${componentArrayString}`;
-      return pify(fs.writeFile)(
-        dataFilename,
-        prettier.format(code, { parser: 'babel' })
-      );
+
+      const content = await prettier.format(code, { parser: 'babel' });
+      return pify(fs.writeFile)(dataFilename, content);
     });
 }
 
