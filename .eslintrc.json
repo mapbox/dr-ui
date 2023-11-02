@@ -1,4 +1,12 @@
 {
   "root": true,
-  "extends": "./conf/eslint-config-base.json"
+  "extends": "./conf/eslint-config-base.json",
+  "env": {
+    "node": true,
+    "es6": true
+  },
+
+  "parserOptions": {
+    "ecmaVersion": 8
+  }
 }

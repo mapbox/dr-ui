@@ -76,6 +76,13 @@ module.exports = () => {
           JSON.stringify({ pages: pages }, null, 2)
         );
       }
-    }
+    },
+    webpackLoaders: [
+      {
+        test: /\.mjs/,
+        include: /node_modules/,
+        type: 'javascript/auto'
+      }
+    ]
   };
 };

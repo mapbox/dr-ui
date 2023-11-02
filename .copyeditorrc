@@ -1,0 +1,19 @@
+{
+    "allow": [
+        "Batfish",
+        "pathname",
+        "frontmatter",
+        "remark-lint-mapbox",
+        "linter",
+        "pathnames",
+        "SplitPage",
+        "scrollspy",
+        "subsites",
+        "subsite",
+        "subsite's",
+        "README",
+        "dataSelector",
+        "subpages",
+        "dr-ui"
+    ]
+}
