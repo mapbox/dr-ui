@@ -1,5 +1,12 @@
 # Changelog
 
+## 6.3.0
+
+- Updates dependencies
+- Refactors build-docs-data to use new async methods of prettier which were introduced in a downstream dependency
+- Uses a beta release of copyeditor which uses .copyeditorrc instead of a local .dict file
+- Adds 'playground' as type for feedback component [#620](https://github.com/mapbox/dr-ui/pull/620)
+
 ## 6.2.0
 
 - Refactor feedback component [#606](https://github.com/mapbox/dr-ui/pull/606)
