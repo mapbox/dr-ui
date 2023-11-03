@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.4.0
+
+- Update the peer dependency entry for `mbx-assembly-docs` to prevent resolution errors in consuming repos.
+
 ## 6.3.0
 
 - Updates dependencies
