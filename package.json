@@ -107,7 +107,7 @@
     "uuid": "^9.0.0"
   },
   "peerDependencies": {
-    "@mapbox/mbx-assembly-docs": "^0.1.0",
+    "@mapbox/mbx-assembly-docs": ">=0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   },
