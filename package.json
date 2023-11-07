@@ -1,0 +1,55 @@
+{
+  "name": "@mapbox/dr-ui",
+  "version": "6.4.1",
+  "description": "Mapbox frontend tools for documentation websites.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mapbox/dr-ui.git"
+  },
+  "author": "Mapbox",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/mapbox/dr-ui/issues"
+  },
+  "homepage": "https://github.com/mapbox/dr-ui#readme",
+  "dependencies": {
+    "@elastic/react-search-ui": "1.7.0",
+    "@elastic/react-search-ui-views": "1.7.0",
+    "@elastic/search-ui-site-search-connector": "1.7.0",
+    "@mapbox/mapbox-gl-supported": "^2.0.1",
+    "@mapbox/mr-ui": "^2.7.0",
+    "@sentry/browser": "^6.13.3",
+    "@sentry/tracing": "^6.13.3",
+    "classnames": "^2.3.1",
+    "codesandbox": "^2.2.3",
+    "compare-versions": "^3.6.0",
+    "debounce": "^1.2.1",
+    "downshift": "^6.1.7",
+    "github-slugger": "^1.4.0",
+    "hastscript": "^6.0.0",
+    "object.entries": "^1.1.6",
+    "prismjs": "^1.24.1",
+    "react-aria-modal": "^4.0.0",
+    "react-html-parser": "^2.0.2",
+    "remark": "^10.0.1",
+    "remark-frontmatter": "^3.0.0",
+    "remark-parse": "^9.0.0",
+    "remark-react": "^5.0.1",
+    "remove-markdown": "^0.3.0",
+    "slugg": "^1.2.1",
+    "slugify": "^1.6.0",
+    "unified": "^9.2.2",
+    "uuid": "^9.0.0"
+  },
+  "peerDependencies": {
+    "@mapbox/mbx-assembly-docs": ">=0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "prettier": "@mapbox/prettier-config-docs",
+  "engines": {
+    "node": ">=18",
+    "npm": "^9"
+  }
+}
