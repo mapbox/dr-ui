@@ -119,6 +119,7 @@ CodeSnippet.propTypes = {
       css: PropTypes.array
     })
   }),
+  /** Enables the Edit in CodeSandbox button for react code */
   jsxEdit: PropTypes.bool
 };
 

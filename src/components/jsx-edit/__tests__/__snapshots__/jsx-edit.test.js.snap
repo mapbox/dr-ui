@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`edit Basic example renders as expected 1`] = `
+exports[`jsx-edit Basic example renders as expected 1`] = `
 <form
   action="https://codesandbox.io/api/v1/sandboxes/define"
   method="POST"

@@ -3,7 +3,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { getParameters } from 'codesandbox/lib/api/define';
-import { Button } from '../edit/edit';
+import Button from '../edit/button';
 
 export default class JsxEdit extends React.PureComponent {
   render() {

@@ -3,6 +3,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import stripMd from 'remove-markdown';
+import Button from './button';
 
 // formats the metadata
 function meta(frontMatter) {
@@ -30,28 +31,6 @@ class Form extends React.PureComponent {
       >
         {this.props.children}
       </form>
-    );
-  }
-}
-
-// creates the actual button that the user can click
-export class Button extends React.PureComponent {
-  render() {
-    const platform = this.props.platform;
-    const btnClass = 'btn btn--s cursor-pointer round';
-    function onClick() {
-      if (window && window.analytics) {
-        analytics.track(`Clicked Edit in ${platform}`);
-      }
-    }
-    return (
-      <input
-        style={{ border: 0 }}
-        type="submit"
-        className={btnClass}
-        value={`Edit in ${platform}`}
-        onClick={onClick}
-      />
     );
   }
 }

@@ -1,7 +1,7 @@
 import renderer from 'react-test-renderer';
 import { testCases } from './jsx-edit-test-cases.js';
 
-describe('edit', () => {
+describe('jsx-edit', () => {
   describe(testCases.basic.description, () => {
     let testCase;
     let wrapper;
