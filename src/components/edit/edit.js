@@ -35,7 +35,7 @@ class Form extends React.PureComponent {
 }
 
 // creates the actual button that the user can click
-class Button extends React.PureComponent {
+export class Button extends React.PureComponent {
   render() {
     const platform = this.props.platform;
     const btnClass = 'btn btn--s cursor-pointer round';

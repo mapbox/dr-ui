@@ -961,8 +961,12 @@ exports[`CodeSnippet CodeSnippet with edit buttons with maxHeight. renders as ex
     className="relative prose"
   >
     <div
-      className="absolute-mm right mb6 mb0-mm mt-neg36-mm"
-      style={Object {}}
+      className="absolute-mm right mb6 mb0-mm top mr36-mm z2"
+      style={
+        Object {
+          "marginTop": "4px",
+        }
+      }
     >
       <form
         action="https://jsfiddle.net/api/post/library/pure/"

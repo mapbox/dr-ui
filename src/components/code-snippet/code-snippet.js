@@ -5,26 +5,46 @@ import PropTypes from 'prop-types';
 import MrCodeSnippet from '@mapbox/mr-ui/code-snippet';
 import CodeSnippetTitle from '../code-snippet-title';
 import Edit from '../edit';
+import JSXEdit from '../jsx-edit';
 import { highlightThemeCss } from '../highlight/theme-css.js';
 import classnames from 'classnames';
 import onCopy from './on-copy';
 
+const EditWrapper = ({ maxHeight, children }) => (
+  <div
+    className={classnames('absolute-mm right mb6 mb0-mm', {
+      'top mr36-mm z2': !maxHeight, // set Edit next to CopyButton
+      'mt-neg36-mm': maxHeight // set Edit above CodeSnippet
+    })}
+    style={maxHeight ? {} : { marginTop: '4px' }}
+  >
+    {children}
+  </div>
+);
+
+EditWrapper.propTypes = {
+  maxHeight: PropTypes.number,
+  children: PropTypes.node
+};
+
 class CodeSnippet extends React.PureComponent {
   editButtons = () => {
     // show edit buttons if edit object and all required props are present
-    const { edit, maxHeight } = this.props;
+    const { edit, jsxEdit, maxHeight, code } = this.props;
+    if (jsxEdit) {
+      return (
+        <EditWrapper maxHeight={maxHeight}>
+          <JSXEdit code={code} />
+        </EditWrapper>
+      );
+    }
+
     return edit &&
       edit.html &&
       edit.js &&
       edit.frontMatter.title &&
       edit.frontMatter.description ? (
-      <div
-        className={classnames('absolute-mm right mb6 mb0-mm', {
-          'top mr36-mm z2': !maxHeight, // set Edit next to CopyButton
-          'mt-neg36-mm': maxHeight // set Edit above CodeSnippet
-        })}
-        style={maxHeight ? {} : { marginTop: '4px' }}
-      >
+      <EditWrapper>
         <Edit
           css={edit.css}
           html={edit.html}
@@ -33,7 +53,7 @@ class CodeSnippet extends React.PureComponent {
           resources={edit.resources}
           frontMatter={edit.frontMatter}
         />
-      </div>
+      </EditWrapper>
     ) : (
       ''
     );
@@ -98,7 +118,8 @@ CodeSnippet.propTypes = {
       js: PropTypes.array,
       css: PropTypes.array
     })
-  })
+  }),
+  jsxEdit: PropTypes.bool
 };
 
 export default CodeSnippet;

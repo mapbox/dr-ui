@@ -2,6 +2,8 @@
 import React from 'react';
 import CodeSnippet from '../code-snippet';
 import { highlightHtml } from '../../highlight/html';
+import { highlightJsx } from '../../highlight/jsx';
+
 import * as helpers from '../../edit/helpers.js';
 import Basic from '../examples/basic';
 import Everything from '../examples/everything';
@@ -110,6 +112,32 @@ document.getElementById('h1').style.color = 'red';
       }
     },
     highlighter: highlightHtml
+  }
+};
+
+testCases.jsx = {
+  component: CodeSnippet,
+  description:
+    'CodeSnippet with JSX highlighting and edit in codesandbox button.',
+  props: {
+    code: `function MyButton() {
+  return (
+    <button>
+      I'm a button
+    </button>
+  );
+}
+
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Welcome to my app</h1>
+      <MyButton />
+    </div>
+  );
+}`,
+    jsxEdit: true,
+    highlighter: highlightJsx
   }
 };
 

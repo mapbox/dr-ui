@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`edit Basic example renders as expected 1`] = `
+<form
+  action="https://codesandbox.io/api/v1/sandboxes/define"
+  method="POST"
+  target="_blank"
+>
+  <input
+    name="parameters"
+    type="hidden"
+    value="N4IgZglgNgpgziAXKADgQwMYGs0HMYB0AVnAPYB2SoGFALjObVSACYwoNvkYTzMBOMTE0QgoaenCYAaEIOEBaFqQC2SMRPgyQKtCgBGpAB4LcUdeMlMAvrdkBBFCmIJkIGowYjwAV260ICgACAFkATwAhH1paCgAKAEog4AAdciCgwVoffnS4tIyMgB59aNjyAD4CwoyASQByFSC0INKYimrigHo28qr0oISAbjTrNLSYIxRSflogtjA0Hyg5sD8MAODwxxRE5OqsnLzOoKKWCAA3fprigAsARgqAdRgoGhUYINiglTDmpyKXQe1xuRXCUXa6S6IO65yu1WGoxA1lkEHIbCMLmYHnojHUEBU01mQQASkINtJkkEAMq0fgQDYhUhsILWIJgfiqIIpOTk2g8kYDG6FAlEubAIIYeT0EmkUhzNkcrk8-QbJSqLoYKC8RgCk7C0UzOY8ghdKRhWBwAgYOBwPVC4Xch0GwlGoI7dmcpomro7e2Owr6m4eKSZOVzAC8kulMFl8riygwPg-jAI-FoAFFYCnaBEwrUWPk5OGeQlEc6bpz5QRBOiYPx8hXhUVafTGcyYDCA4Uih7oUHm11WwzaEy2F3heXu0Fkai65jbrQVOY3DivOozpcghAWBGVSWQBVAXCKrOQObLdbbdi6OvRIYWH9Uk2brp-Lg0YgggAGQXTjLoCw5zkLgX6_gOhRjC-GQAMS6Cg-zQYU0xwBAmzkF-aD6GQUDRDAf7_rEKBgQR06GO0KgkRBNQAO47rQtxfvc37fgApKRjpQdOyK2EAA"
+  />
+  <input
+    name="query"
+    type="hidden"
+    value="file=/App.js"
+  />
+  <input
+    className="btn btn--s cursor-pointer round"
+    onClick={[Function]}
+    style={
+      Object {
+        "border": 0,
+      }
+    }
+    type="submit"
+    value="Edit in CodeSandbox"
+  />
+</form>
+`;
