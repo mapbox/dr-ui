@@ -1,5 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 // button used by Edit and JsxEdit for exporting code to jsfiddle, codesandbox, etc
 class Button extends React.PureComponent {
@@ -24,7 +24,6 @@ class Button extends React.PureComponent {
 }
 
 Button.propTypes = {
-  platform: propTypes.string
+  platform: PropTypes.oneOf(['JSFiddle', 'CodePen']).isRequired
 };
-
 export default Button;

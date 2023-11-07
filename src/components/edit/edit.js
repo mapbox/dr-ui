@@ -94,10 +94,6 @@ Form.propTypes = {
   classes: PropTypes.string
 };
 
-Button.propTypes = {
-  platform: PropTypes.oneOf(['JSFiddle', 'CodePen']).isRequired
-};
-
 Edit.propTypes = {
   css: PropTypes.string, // CSS panel contents
   js: PropTypes.string.isRequired, // JS panel contents

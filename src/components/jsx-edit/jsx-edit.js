@@ -72,10 +72,6 @@ export default class JsxEdit extends React.PureComponent {
   }
 }
 
-Button.propTypes = {
-  platform: PropTypes.oneOf(['JSFiddle', 'CodePen']).isRequired
-};
-
 JsxEdit.propTypes = {
   code: PropTypes.string
 };
