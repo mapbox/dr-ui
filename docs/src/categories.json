@@ -22,6 +22,7 @@
     "ContextlessAndroidActivityToggle",
     "ContextlessIosViewControllerToggle",
     "Edit",
+    "JsxEdit",
     "Highlight",
     "NumberedCodeSnippet",
     "ToggleableCodeBlock"

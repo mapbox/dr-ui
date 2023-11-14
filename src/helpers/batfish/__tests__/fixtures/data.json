@@ -354,6 +354,12 @@
       "frontMatter": {
         "hideFromSearchEngines": true
       }
+    },
+    {
+      "filePath": "./node_modules/@mapbox/batfish/dist/webpack/default-not-found.js",
+      "path": "/dr-ui/404/",
+      "is404": true,
+      "frontMatter": {}
     }
   ]
 }
