@@ -86,6 +86,7 @@ export const FaqIcon = () => (
     />
   </svg>
 );
+
 export const GlossaryIcon = () => (
   <svg
     width="100%"
@@ -131,7 +132,7 @@ const helpCardData = [
     link: '/help/troubleshooting'
   },
   {
-    id: 'FAQ',
+    id: 'faq',
     icon: <FaqIcon />,
     highlightColor: 'yellow-light',
     link: '/help/faq'
