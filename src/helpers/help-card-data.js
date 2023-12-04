@@ -126,12 +126,6 @@ const helpCardData = [
     link: '/help/how-to-videos'
   },
   {
-    id: 'troubleshooting',
-    icon: <TroubleshootingIcon />,
-    highlightColor: 'red-light',
-    link: '/help/troubleshooting'
-  },
-  {
     id: 'faq',
     icon: <FaqIcon />,
     highlightColor: 'turquoise',
@@ -142,6 +136,12 @@ const helpCardData = [
     icon: <GlossaryIcon />,
     highlightColor: 'orange-light',
     link: '/help/glossary'
+  },
+  {
+    id: 'troubleshooting',
+    icon: <TroubleshootingIcon />,
+    highlightColor: 'red-light',
+    link: '/help/troubleshooting'
   }
 ];
 
