@@ -11,14 +11,19 @@ class Card extends React.PureComponent {
     this.state = {
       isHovered: false
     };
+
+    this.toggleHover = this.toggleHover.bind(this);
   }
+
+  toggleHover() {
+    this.setState((prevState) => ({
+      isHovered: !prevState.isHovered
+    }));
+  }
+
   render() {
     const { isHovered } = this.state;
-    const toggleHover = () => {
-      this.setState((prevState) => ({
-        isHovered: !prevState.isHovered
-      }));
-    };
+
     const { thumbnail, level, language, description, path, link, title } =
       this.props;
     const renderedThumbnail = thumbnail && (
@@ -46,10 +51,8 @@ class Card extends React.PureComponent {
       <a
         className="dr-ui--card text-color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
         href={link || path}
-        // eslint-disable-next-line react/jsx-no-bind
-        onMouseEnter={toggleHover}
-        // eslint-disable-next-line react/jsx-no-bind
-        onMouseLeave={toggleHover}
+        onMouseEnter={this.toggleHover}
+        onMouseLeave={this.toggleHover}
         {...externalLinkAttributes}
       >
         {renderedThumbnail}
