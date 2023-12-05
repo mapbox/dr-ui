@@ -571,15 +571,19 @@ Array [
                     className="mb18 col w-full w-1/2-ml"
                   >
                     <a
-                      className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+                      className="dr-ui--card text-color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
                       href="/PageLayout/example-1/"
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
                     >
                       <div
                         className="relative h120 mb6"
                       >
                         <div />
                       </div>
-                      <div>
+                      <div
+                        className="transition"
+                      >
                         <div
                           className="flex mb6 txt-bold color-gray txt-s"
                         >
@@ -629,13 +633,42 @@ Array [
                           </span>
                         </div>
                         <div
-                          className="mb6 flex flex--center-cross"
+                          className="mb6 flex txt-bold flex--center-cross"
                         >
-                          Display a map
-                           
+                          <div>
+                            Display a map
+                             
+                          </div>
+                          <div
+                            className="w60"
+                          >
+                            <svg
+                              className="transition"
+                              fill="none"
+                              height="11"
+                              style={
+                                Object {
+                                  "marginLeft": "10px",
+                                  "opacity": "0",
+                                }
+                              }
+                              viewBox="0 0 11 11"
+                              width="11"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M5.292 0L10.314 5.022V5.49L5.292 10.494L3.87 9.072L6.732 6.21L5.508 6.264H0V4.212H5.508L6.696 4.266L3.87 1.44L5.292 0Z"
+                                fill="#3478F3"
+                              />
+                            </svg>
+                          </div>
                         </div>
                         <div
-                          className="color-gray color-gray-on-hover"
+                          style={
+                            Object {
+                              "color": "#757d82",
+                            }
+                          }
                         >
                           Initialize a map in an HTML element with Mapbox GL JS.
                         </div>
@@ -646,15 +679,19 @@ Array [
                     className="mb18 col w-full w-1/2-ml"
                   >
                     <a
-                      className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+                      className="dr-ui--card text-color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
                       href="/PageLayout/example-2/"
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
                     >
                       <div
                         className="relative h120 mb6"
                       >
                         <div />
                       </div>
-                      <div>
+                      <div
+                        className="transition"
+                      >
                         <div
                           className="flex mb6 txt-bold color-gray txt-s"
                         >
@@ -704,13 +741,42 @@ Array [
                           </span>
                         </div>
                         <div
-                          className="mb6 flex flex--center-cross"
+                          className="mb6 flex txt-bold flex--center-cross"
                         >
-                          Add a default marker
-                           
+                          <div>
+                            Add a default marker
+                             
+                          </div>
+                          <div
+                            className="w60"
+                          >
+                            <svg
+                              className="transition"
+                              fill="none"
+                              height="11"
+                              style={
+                                Object {
+                                  "marginLeft": "10px",
+                                  "opacity": "0",
+                                }
+                              }
+                              viewBox="0 0 11 11"
+                              width="11"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M5.292 0L10.314 5.022V5.49L5.292 10.494L3.87 9.072L6.732 6.21L5.508 6.264H0V4.212H5.508L6.696 4.266L3.87 1.44L5.292 0Z"
+                                fill="#3478F3"
+                              />
+                            </svg>
+                          </div>
                         </div>
                         <div
-                          className="color-gray color-gray-on-hover"
+                          style={
+                            Object {
+                              "color": "#757d82",
+                            }
+                          }
                         >
                           Add a default Marker to the map.
                         </div>
@@ -721,15 +787,19 @@ Array [
                     className="mb18 col w-full w-1/2-ml"
                   >
                     <a
-                      className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+                      className="dr-ui--card text-color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
                       href="/PageLayout/example-3/"
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
                     >
                       <div
                         className="relative h120 mb6"
                       >
                         <div />
                       </div>
-                      <div>
+                      <div
+                        className="transition"
+                      >
                         <div
                           className="flex mb6 txt-bold color-gray txt-s"
                         >
@@ -779,13 +849,42 @@ Array [
                           </span>
                         </div>
                         <div
-                          className="mb6 flex flex--center-cross"
+                          className="mb6 flex txt-bold flex--center-cross"
                         >
-                          Extrude polygons for 3D indoor mapping
-                           
+                          <div>
+                            Extrude polygons for 3D indoor mapping
+                             
+                          </div>
+                          <div
+                            className="w60"
+                          >
+                            <svg
+                              className="transition"
+                              fill="none"
+                              height="11"
+                              style={
+                                Object {
+                                  "marginLeft": "10px",
+                                  "opacity": "0",
+                                }
+                              }
+                              viewBox="0 0 11 11"
+                              width="11"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M5.292 0L10.314 5.022V5.49L5.292 10.494L3.87 9.072L6.732 6.21L5.508 6.264H0V4.212H5.508L6.696 4.266L3.87 1.44L5.292 0Z"
+                                fill="#3478F3"
+                              />
+                            </svg>
+                          </div>
                         </div>
                         <div
-                          className="color-gray color-gray-on-hover"
+                          style={
+                            Object {
+                              "color": "#757d82",
+                            }
+                          }
                         >
                           Create a 3D indoor map with the fill-extrude-height paint property.
                         </div>
@@ -3613,18 +3712,51 @@ Array [
                     className="mb18 border-b border--darken10"
                   >
                     <a
-                      className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+                      className="dr-ui--card text-color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
                       href="/PageLayout/guides/worldview/avilable-worldviews/"
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
                     >
-                      <div>
+                      <div
+                        className="transition"
+                      >
                         <div
-                          className="mb6 flex flex--center-cross"
+                          className="mb6 flex txt-bold flex--center-cross"
                         >
-                          Web maps using older library versions
-                           
+                          <div>
+                            Web maps using older library versions
+                             
+                          </div>
+                          <div
+                            className="w60"
+                          >
+                            <svg
+                              className="transition"
+                              fill="none"
+                              height="11"
+                              style={
+                                Object {
+                                  "marginLeft": "10px",
+                                  "opacity": "0",
+                                }
+                              }
+                              viewBox="0 0 11 11"
+                              width="11"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M5.292 0L10.314 5.022V5.49L5.292 10.494L3.87 9.072L6.732 6.21L5.508 6.264H0V4.212H5.508L6.696 4.266L3.87 1.44L5.292 0Z"
+                                fill="#3478F3"
+                              />
+                            </svg>
+                          </div>
                         </div>
                         <div
-                          className="color-gray color-gray-on-hover"
+                          style={
+                            Object {
+                              "color": "#757d82",
+                            }
+                          }
                         >
                           Identify geographic features whose characteristics are defined differently by audiences belonging to various regional, cultural, or political groups.
                         </div>
@@ -3635,18 +3767,51 @@ Array [
                     className="mb18 border-b border--darken10"
                   >
                     <a
-                      className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+                      className="dr-ui--card text-color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
                       href="/PageLayout/guides/worldview/border-styling/"
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
                     >
-                      <div>
+                      <div
+                        className="transition"
+                      >
                         <div
-                          className="mb6 flex flex--center-cross"
+                          className="mb6 flex txt-bold flex--center-cross"
                         >
-                          Mobile applications using older SDK versions
-                           
+                          <div>
+                            Mobile applications using older SDK versions
+                             
+                          </div>
+                          <div
+                            className="w60"
+                          >
+                            <svg
+                              className="transition"
+                              fill="none"
+                              height="11"
+                              style={
+                                Object {
+                                  "marginLeft": "10px",
+                                  "opacity": "0",
+                                }
+                              }
+                              viewBox="0 0 11 11"
+                              width="11"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M5.292 0L10.314 5.022V5.49L5.292 10.494L3.87 9.072L6.732 6.21L5.508 6.264H0V4.212H5.508L6.696 4.266L3.87 1.44L5.292 0Z"
+                                fill="#3478F3"
+                              />
+                            </svg>
+                          </div>
                         </div>
                         <div
-                          className="color-gray color-gray-on-hover"
+                          style={
+                            Object {
+                              "color": "#757d82",
+                            }
+                          }
                         >
                           When creating a map style with a tileset that uses worldviews, you must apply a filter to any layers that include a worldview data field.
                         </div>
@@ -3657,18 +3822,51 @@ Array [
                     className="mb18 border-b border--darken10"
                   >
                     <a
-                      className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+                      className="dr-ui--card text-color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
                       href="/PageLayout/guides/worldview/data-sources/"
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
                     >
-                      <div>
+                      <div
+                        className="transition"
+                      >
                         <div
-                          className="mb6 flex flex--center-cross"
+                          className="mb6 flex txt-bold flex--center-cross"
                         >
-                          Data sources
-                           
+                          <div>
+                            Data sources
+                             
+                          </div>
+                          <div
+                            className="w60"
+                          >
+                            <svg
+                              className="transition"
+                              fill="none"
+                              height="11"
+                              style={
+                                Object {
+                                  "marginLeft": "10px",
+                                  "opacity": "0",
+                                }
+                              }
+                              viewBox="0 0 11 11"
+                              width="11"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M5.292 0L10.314 5.022V5.49L5.292 10.494L3.87 9.072L6.732 6.21L5.508 6.264H0V4.212H5.508L6.696 4.266L3.87 1.44L5.292 0Z"
+                                fill="#3478F3"
+                              />
+                            </svg>
+                          </div>
                         </div>
                         <div
-                          className="color-gray color-gray-on-hover"
+                          style={
+                            Object {
+                              "color": "#757d82",
+                            }
+                          }
                         >
                           Some Mapbox vector tilesets, including Mapbox Streets v8 and Boundaries v3, include the worldview data field in several layers.
                         </div>

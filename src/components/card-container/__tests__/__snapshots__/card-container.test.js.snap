@@ -30,8 +30,10 @@ exports[`card-container Basic renders as expected 1`] = `
       className="mb18 col w-full w-1/2-ml"
     >
       <a
-        className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+        className="dr-ui--card text-color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
         href="path"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
       >
         <div
           className="relative h120 mb6"
@@ -47,15 +49,46 @@ exports[`card-container Basic renders as expected 1`] = `
             }
           />
         </div>
-        <div>
+        <div
+          className="transition"
+        >
           <div
-            className="mb6 flex flex--center-cross"
+            className="mb6 flex txt-bold flex--center-cross"
           >
-            Example one
-             
+            <div>
+              Example one
+               
+            </div>
+            <div
+              className="w60"
+            >
+              <svg
+                className="transition"
+                fill="none"
+                height="11"
+                style={
+                  Object {
+                    "marginLeft": "10px",
+                    "opacity": "0",
+                  }
+                }
+                viewBox="0 0 11 11"
+                width="11"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.292 0L10.314 5.022V5.49L5.292 10.494L3.87 9.072L6.732 6.21L5.508 6.264H0V4.212H5.508L6.696 4.266L3.87 1.44L5.292 0Z"
+                  fill="#3478F3"
+                />
+              </svg>
+            </div>
           </div>
           <div
-            className="color-gray color-gray-on-hover"
+            style={
+              Object {
+                "color": "#757d82",
+              }
+            }
           >
             description
           </div>
@@ -66,8 +99,10 @@ exports[`card-container Basic renders as expected 1`] = `
       className="mb18 col w-full w-1/2-ml"
     >
       <a
-        className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+        className="dr-ui--card text-color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
         href="path"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
       >
         <div
           className="relative h120 mb6"
@@ -83,15 +118,46 @@ exports[`card-container Basic renders as expected 1`] = `
             }
           />
         </div>
-        <div>
+        <div
+          className="transition"
+        >
           <div
-            className="mb6 flex flex--center-cross"
+            className="mb6 flex txt-bold flex--center-cross"
           >
-            Example two
-             
+            <div>
+              Example two
+               
+            </div>
+            <div
+              className="w60"
+            >
+              <svg
+                className="transition"
+                fill="none"
+                height="11"
+                style={
+                  Object {
+                    "marginLeft": "10px",
+                    "opacity": "0",
+                  }
+                }
+                viewBox="0 0 11 11"
+                width="11"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.292 0L10.314 5.022V5.49L5.292 10.494L3.87 9.072L6.732 6.21L5.508 6.264H0V4.212H5.508L6.696 4.266L3.87 1.44L5.292 0Z"
+                  fill="#3478F3"
+                />
+              </svg>
+            </div>
           </div>
           <div
-            className="color-gray color-gray-on-hover"
+            style={
+              Object {
+                "color": "#757d82",
+              }
+            }
           >
             description
           </div>
@@ -132,18 +198,51 @@ exports[`card-container Full width renders as expected 1`] = `
       className="mb18 border-b border--darken10"
     >
       <a
-        className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+        className="dr-ui--card text-color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
         href="path"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
       >
-        <div>
+        <div
+          className="transition"
+        >
           <div
-            className="mb6 flex flex--center-cross"
+            className="mb6 flex txt-bold flex--center-cross"
           >
-            Example one
-             
+            <div>
+              Example one
+               
+            </div>
+            <div
+              className="w60"
+            >
+              <svg
+                className="transition"
+                fill="none"
+                height="11"
+                style={
+                  Object {
+                    "marginLeft": "10px",
+                    "opacity": "0",
+                  }
+                }
+                viewBox="0 0 11 11"
+                width="11"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.292 0L10.314 5.022V5.49L5.292 10.494L3.87 9.072L6.732 6.21L5.508 6.264H0V4.212H5.508L6.696 4.266L3.87 1.44L5.292 0Z"
+                  fill="#3478F3"
+                />
+              </svg>
+            </div>
           </div>
           <div
-            className="color-gray color-gray-on-hover"
+            style={
+              Object {
+                "color": "#757d82",
+              }
+            }
           >
             description
           </div>
@@ -154,18 +253,51 @@ exports[`card-container Full width renders as expected 1`] = `
       className="mb18 border-b border--darken10"
     >
       <a
-        className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+        className="dr-ui--card text-color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
         href="path"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
       >
-        <div>
+        <div
+          className="transition"
+        >
           <div
-            className="mb6 flex flex--center-cross"
+            className="mb6 flex txt-bold flex--center-cross"
           >
-            Example two
-             
+            <div>
+              Example two
+               
+            </div>
+            <div
+              className="w60"
+            >
+              <svg
+                className="transition"
+                fill="none"
+                height="11"
+                style={
+                  Object {
+                    "marginLeft": "10px",
+                    "opacity": "0",
+                  }
+                }
+                viewBox="0 0 11 11"
+                width="11"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.292 0L10.314 5.022V5.49L5.292 10.494L3.87 9.072L6.732 6.21L5.508 6.264H0V4.212H5.508L6.696 4.266L3.87 1.44L5.292 0Z"
+                  fill="#3478F3"
+                />
+              </svg>
+            </div>
           </div>
           <div
-            className="color-gray color-gray-on-hover"
+            style={
+              Object {
+                "color": "#757d82",
+              }
+            }
           >
             description
           </div>
@@ -206,8 +338,10 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
       className="mb18 col w-full w-1/4-ml"
     >
       <a
-        className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+        className="dr-ui--card text-color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
         href="path"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
       >
         <div
           className="relative h120 mb6"
@@ -223,15 +357,46 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
             }
           />
         </div>
-        <div>
+        <div
+          className="transition"
+        >
           <div
-            className="mb6 flex flex--center-cross"
+            className="mb6 flex txt-bold flex--center-cross"
           >
-            Example one
-             
+            <div>
+              Example one
+               
+            </div>
+            <div
+              className="w60"
+            >
+              <svg
+                className="transition"
+                fill="none"
+                height="11"
+                style={
+                  Object {
+                    "marginLeft": "10px",
+                    "opacity": "0",
+                  }
+                }
+                viewBox="0 0 11 11"
+                width="11"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.292 0L10.314 5.022V5.49L5.292 10.494L3.87 9.072L6.732 6.21L5.508 6.264H0V4.212H5.508L6.696 4.266L3.87 1.44L5.292 0Z"
+                  fill="#3478F3"
+                />
+              </svg>
+            </div>
           </div>
           <div
-            className="color-gray color-gray-on-hover"
+            style={
+              Object {
+                "color": "#757d82",
+              }
+            }
           >
             description
           </div>
@@ -242,8 +407,10 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
       className="mb18 col w-full w-1/4-ml"
     >
       <a
-        className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+        className="dr-ui--card text-color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
         href="path"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
       >
         <div
           className="relative h120 mb6"
@@ -259,15 +426,46 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
             }
           />
         </div>
-        <div>
+        <div
+          className="transition"
+        >
           <div
-            className="mb6 flex flex--center-cross"
+            className="mb6 flex txt-bold flex--center-cross"
           >
-            Example two
-             
+            <div>
+              Example two
+               
+            </div>
+            <div
+              className="w60"
+            >
+              <svg
+                className="transition"
+                fill="none"
+                height="11"
+                style={
+                  Object {
+                    "marginLeft": "10px",
+                    "opacity": "0",
+                  }
+                }
+                viewBox="0 0 11 11"
+                width="11"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.292 0L10.314 5.022V5.49L5.292 10.494L3.87 9.072L6.732 6.21L5.508 6.264H0V4.212H5.508L6.696 4.266L3.87 1.44L5.292 0Z"
+                  fill="#3478F3"
+                />
+              </svg>
+            </div>
           </div>
           <div
-            className="color-gray color-gray-on-hover"
+            style={
+              Object {
+                "color": "#757d82",
+              }
+            }
           >
             description
           </div>
@@ -278,8 +476,10 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
       className="mb18 col w-full w-1/4-ml"
     >
       <a
-        className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+        className="dr-ui--card text-color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
         href="path"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
       >
         <div
           className="relative h120 mb6"
@@ -295,15 +495,46 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
             }
           />
         </div>
-        <div>
+        <div
+          className="transition"
+        >
           <div
-            className="mb6 flex flex--center-cross"
+            className="mb6 flex txt-bold flex--center-cross"
           >
-            Example one
-             
+            <div>
+              Example one
+               
+            </div>
+            <div
+              className="w60"
+            >
+              <svg
+                className="transition"
+                fill="none"
+                height="11"
+                style={
+                  Object {
+                    "marginLeft": "10px",
+                    "opacity": "0",
+                  }
+                }
+                viewBox="0 0 11 11"
+                width="11"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.292 0L10.314 5.022V5.49L5.292 10.494L3.87 9.072L6.732 6.21L5.508 6.264H0V4.212H5.508L6.696 4.266L3.87 1.44L5.292 0Z"
+                  fill="#3478F3"
+                />
+              </svg>
+            </div>
           </div>
           <div
-            className="color-gray color-gray-on-hover"
+            style={
+              Object {
+                "color": "#757d82",
+              }
+            }
           >
             description
           </div>
@@ -314,8 +545,10 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
       className="mb18 col w-full w-1/4-ml"
     >
       <a
-        className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+        className="dr-ui--card text-color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
         href="path"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
       >
         <div
           className="relative h120 mb6"
@@ -331,15 +564,46 @@ exports[`card-container Use cardColSize renders as expected 1`] = `
             }
           />
         </div>
-        <div>
+        <div
+          className="transition"
+        >
           <div
-            className="mb6 flex flex--center-cross"
+            className="mb6 flex txt-bold flex--center-cross"
           >
-            Example two
-             
+            <div>
+              Example two
+               
+            </div>
+            <div
+              className="w60"
+            >
+              <svg
+                className="transition"
+                fill="none"
+                height="11"
+                style={
+                  Object {
+                    "marginLeft": "10px",
+                    "opacity": "0",
+                  }
+                }
+                viewBox="0 0 11 11"
+                width="11"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.292 0L10.314 5.022V5.49L5.292 10.494L3.87 9.072L6.732 6.21L5.508 6.264H0V4.212H5.508L6.696 4.266L3.87 1.44L5.292 0Z"
+                  fill="#3478F3"
+                />
+              </svg>
+            </div>
           </div>
           <div
-            className="color-gray color-gray-on-hover"
+            style={
+              Object {
+                "color": "#757d82",
+              }
+            }
           >
             description
           </div>
