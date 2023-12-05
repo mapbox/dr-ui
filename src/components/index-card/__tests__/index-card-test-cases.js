@@ -1,6 +1,6 @@
 import React from 'react';
 import IndexCard from '../index-card';
-import { TutorialsIcon } from '../../../helpers/help-card-data';
+import { TutorialsIcon } from '../../../helpers/icons';
 
 import Basic from '../examples/basic';
 

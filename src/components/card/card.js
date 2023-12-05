@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import IconText from '@mapbox/mr-ui/icon-text';
+import { RightArrow } from '../icons/RightArrow';
 
 import LevelIndicator from '../level-indicator/level-indicator';
 
@@ -62,23 +63,7 @@ class Card extends React.PureComponent {
           <div className="mb6 flex txt-bold flex--center-cross">
             <div>{title} </div>
             <div className="w60">
-              <svg
-                className="transition"
-                style={{
-                  marginLeft: isHovered ? '15px' : '10px',
-                  opacity: isHovered ? '1' : '0'
-                }}
-                width="11"
-                height="11"
-                viewBox="0 0 11 11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5.292 0L10.314 5.022V5.49L5.292 10.494L3.87 9.072L6.732 6.21L5.508 6.264H0V4.212H5.508L6.696 4.266L3.87 1.44L5.292 0Z"
-                  fill="#3478F3"
-                />
-              </svg>
+              <RightArrow isHovered={isHovered} />
             </div>
 
             {link && (

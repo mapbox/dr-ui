@@ -3,7 +3,7 @@ import Basic from '../examples/basic';
 import Custom from '../examples/custom';
 import OverviewHeader from '../overview-header';
 
-import { GettingStartedIcon } from '../../../helpers/help-card-data';
+import { GettingStartedIcon } from '../../../helpers/icons';
 
 const testCases = {};
 
