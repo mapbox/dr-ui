@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export class RightArrow extends React.PureComponent {
+export default class RightArrow extends React.PureComponent {
   render() {
     const { isHovered } = this.props;
     return (

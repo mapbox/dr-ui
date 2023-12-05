@@ -1,11 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import IconText from '@mapbox/mr-ui/icon-text';
-import { RightArrow } from '../icons/RightArrow';
+import RightArrow from '../icons/icons';
 
 import LevelIndicator from '../level-indicator/level-indicator';
-
-//        style={{ background: isHovered ? 'lightblue' : 'white' }}
 
 class Card extends React.PureComponent {
   constructor(props) {
@@ -15,12 +13,12 @@ class Card extends React.PureComponent {
     };
   }
   render() {
-    function toggleHover() {
+    const { isHovered } = this.state;
+    const toggleHover = () => {
       this.setState((prevState) => ({
         isHovered: !prevState.isHovered
       }));
-    }
-    const { isHovered } = this.state;
+    };
     const { thumbnail, level, language, description, path, link, title } =
       this.props;
     const renderedThumbnail = thumbnail && (
@@ -48,7 +46,9 @@ class Card extends React.PureComponent {
       <a
         className="dr-ui--card text-color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
         href={link || path}
+        // eslint-disable-next-line react/jsx-no-bind
         onMouseEnter={toggleHover}
+        // eslint-disable-next-line react/jsx-no-bind
         onMouseLeave={toggleHover}
         {...externalLinkAttributes}
       >
