@@ -2,8 +2,10 @@
 
 exports[`card Card with image renders as expected 1`] = `
 <a
-  className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+  className="dr-ui--card text-color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
   href="url"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
 >
   <div
     className="relative h120 mb6"
@@ -19,7 +21,9 @@ exports[`card Card with image renders as expected 1`] = `
       }
     />
   </div>
-  <div>
+  <div
+    className="transition"
+  >
     <div
       className="flex mb6 txt-bold color-gray txt-s"
     >
@@ -109,13 +113,42 @@ exports[`card Card with image renders as expected 1`] = `
       </span>
     </div>
     <div
-      className="mb6 flex flex--center-cross"
+      className="mb6 flex txt-bold flex--center-cross"
     >
-      My cool card
-       
+      <div>
+        My cool card
+         
+      </div>
+      <div
+        className="w60"
+      >
+        <svg
+          className="transition"
+          fill="none"
+          height="11"
+          style={
+            Object {
+              "marginLeft": "10px",
+              "opacity": "0",
+            }
+          }
+          viewBox="0 0 11 11"
+          width="11"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5.292 0L10.314 5.022V5.49L5.292 10.494L3.87 9.072L6.732 6.21L5.508 6.264H0V4.212H5.508L6.696 4.266L3.87 1.44L5.292 0Z"
+            fill="#3478F3"
+          />
+        </svg>
+      </div>
     </div>
     <div
-      className="color-gray color-gray-on-hover"
+      style={
+        Object {
+          "color": "#757d82",
+        }
+      }
     >
       This card is very cool.
     </div>
@@ -125,10 +158,14 @@ exports[`card Card with image renders as expected 1`] = `
 
 exports[`card Card with no image renders as expected 1`] = `
 <a
-  className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+  className="dr-ui--card text-color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
   href="url"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
 >
-  <div>
+  <div
+    className="transition"
+  >
     <div
       className="flex mb6 txt-bold color-gray txt-s"
     >
@@ -218,13 +255,42 @@ exports[`card Card with no image renders as expected 1`] = `
       </span>
     </div>
     <div
-      className="mb6 flex flex--center-cross"
+      className="mb6 flex txt-bold flex--center-cross"
     >
-      My cool card
-       
+      <div>
+        My cool card
+         
+      </div>
+      <div
+        className="w60"
+      >
+        <svg
+          className="transition"
+          fill="none"
+          height="11"
+          style={
+            Object {
+              "marginLeft": "10px",
+              "opacity": "0",
+            }
+          }
+          viewBox="0 0 11 11"
+          width="11"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5.292 0L10.314 5.022V5.49L5.292 10.494L3.87 9.072L6.732 6.21L5.508 6.264H0V4.212H5.508L6.696 4.266L3.87 1.44L5.292 0Z"
+            fill="#3478F3"
+          />
+        </svg>
+      </div>
     </div>
     <div
-      className="color-gray color-gray-on-hover"
+      style={
+        Object {
+          "color": "#757d82",
+        }
+      }
     >
       This card is still cool despite not having a thumbnail.
     </div>
@@ -234,8 +300,10 @@ exports[`card Card with no image renders as expected 1`] = `
 
 exports[`card Card without description renders as expected 1`] = `
 <a
-  className="dr-ui--card color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
+  className="dr-ui--card text-color-gray-dark transition color-blue-on-hover round clip inline-block w-full unprose pb18"
   href="url"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
 >
   <div
     className="relative h120 mb6"
@@ -251,7 +319,9 @@ exports[`card Card without description renders as expected 1`] = `
       }
     />
   </div>
-  <div>
+  <div
+    className="transition"
+  >
     <div
       className="flex mb6 txt-bold color-gray txt-s"
     >
@@ -341,10 +411,35 @@ exports[`card Card without description renders as expected 1`] = `
       </span>
     </div>
     <div
-      className="mb6 flex flex--center-cross"
+      className="mb6 flex txt-bold flex--center-cross"
     >
-      My cool card without a description
-       
+      <div>
+        My cool card without a description
+         
+      </div>
+      <div
+        className="w60"
+      >
+        <svg
+          className="transition"
+          fill="none"
+          height="11"
+          style={
+            Object {
+              "marginLeft": "10px",
+              "opacity": "0",
+            }
+          }
+          viewBox="0 0 11 11"
+          width="11"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5.292 0L10.314 5.022V5.49L5.292 10.494L3.87 9.072L6.732 6.21L5.508 6.264H0V4.212H5.508L6.696 4.266L3.87 1.44L5.292 0Z"
+            fill="#3478F3"
+          />
+        </svg>
+      </div>
     </div>
   </div>
 </a>
