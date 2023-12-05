@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.5.0
+
+- Added new FAQ content type to `helpers/help-card-data.js`, separated help icons into `helpers/icons` and upgraded `src/components/card.js` to have hover styles and a RightArrow icon for the card
+
 ## 6.4.1
 
 - Publish peer dependency change indicated in 6.4.0 but erroneously not published.
