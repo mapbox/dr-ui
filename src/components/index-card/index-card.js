@@ -141,6 +141,14 @@ const CardContent = ({
                   }}
                 >
                   {link.title}
+                  {link.tag && (
+                    <div
+                      className="inline-block ml6 relative txt-nowrap"
+                      style={{ top: -1 }}
+                    >
+                      {link.tag}
+                    </div>
+                  )}
                 </Button>
               </div>
             );

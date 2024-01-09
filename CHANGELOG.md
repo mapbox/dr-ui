@@ -1,5 +1,9 @@
 # Changelog
 
+## main
+
+- Add a way to display tags for links in `src/components/index-card.js`.
+
 ## 6.5.0
 
 - Added new FAQ content type to `helpers/help-card-data.js`, separated help icons into `helpers/icons` and upgraded `src/components/card.js` to have hover styles and a RightArrow icon for the card
