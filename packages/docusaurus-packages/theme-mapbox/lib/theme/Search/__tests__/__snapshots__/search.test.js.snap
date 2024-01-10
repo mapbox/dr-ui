@@ -1,0 +1,262 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`search Basic search with \`site\` set to show filter toggle. Open https://app.swiftype.com/engines/docs/analytics/live while developing to watch query usage. renders as expected 1`] = `
+<div
+  className="relative"
+>
+  <button
+    className="w-full block"
+    onClick={[Function]}
+  >
+    <div
+      className="flex flex--center-cross bg-white border--gray-lighter border border--gray-on-hover border--blue-on-active py6 pl6 pr12 round txt-s w-full"
+      style={Object {}}
+    >
+      <span
+        className="mr6 color-gray"
+      >
+        <svg
+          className="icon w18 h18 block"
+        >
+          <use
+            xlinkHref="#icon-search"
+          />
+        </svg>
+      </span>
+       
+      <span
+        className="color-gray"
+      >
+        Search
+      </span>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`search Basic search. Open https://app.swiftype.com/engines/docs/analytics/live while developing to watch query usage. renders as expected 1`] = `
+<div
+  className="relative"
+>
+  <button
+    className="w-full block"
+    onClick={[Function]}
+  >
+    <div
+      className="flex flex--center-cross bg-white border--gray-lighter border border--gray-on-hover border--blue-on-active py6 pl6 pr12 round txt-s w-full"
+      style={Object {}}
+    >
+      <span
+        className="mr6 color-gray"
+      >
+        <svg
+          className="icon w18 h18 block"
+        >
+          <use
+            xlinkHref="#icon-search"
+          />
+        </svg>
+      </span>
+       
+      <span
+        className="color-gray"
+      >
+        Search
+      </span>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`search Search with \`disableModal\` option set. Open https://app.swiftype.com/engines/docs/analytics/live while developing to watch query usage. renders as expected 1`] = `
+<div
+  className="py6 px6"
+>
+  <div
+    className="relative"
+  >
+    <button
+      className="w-full block"
+      onClick={[Function]}
+    >
+      <div
+        className="flex flex--center-cross bg-white border--gray-lighter border border--gray-on-hover border--blue-on-active py6 pl6 pr12 round txt-s w-full"
+        style={Object {}}
+      >
+        <span
+          className="mr6 color-gray"
+        >
+          <svg
+            className="icon w18 h18 block"
+          >
+            <use
+              xlinkHref="#icon-search"
+            />
+          </svg>
+        </span>
+         
+        <span
+          className="color-gray"
+        >
+          Search
+        </span>
+      </div>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`search Search with \`narrow\` option set. Open https://app.swiftype.com/engines/docs/analytics/live while developing to watch query usage. renders as expected 1`] = `
+<div
+  className="relative"
+>
+  <button
+    className="w-full block"
+    onClick={[Function]}
+  >
+    <div
+      className="flex flex--center-cross bg-white border--gray-lighter border border--gray-on-hover border--blue-on-active py6 pl6 pr12 round txt-s wmax30"
+      style={
+        Object {
+          "paddingLeft": "12px",
+          "paddingRight": "12px",
+        }
+      }
+    >
+      <span
+        className="color-gray"
+      >
+        <svg
+          className="icon w18 h18 block"
+        >
+          <title>
+            Search
+          </title>
+          <use
+            xlinkHref="#icon-search"
+          />
+        </svg>
+      </span>
+       
+    </div>
+  </button>
+</div>
+`;
+
+exports[`search Search with custom connector. renders as expected 1`] = `
+<div
+  className="relative"
+>
+  <button
+    className="w-full block"
+    onClick={[Function]}
+  >
+    <div
+      className="flex flex--center-cross bg-white border--gray-lighter border border--gray-on-hover border--blue-on-active py6 pl6 pr12 round txt-s w-full"
+      style={Object {}}
+    >
+      <span
+        className="mr6 color-gray"
+      >
+        <svg
+          className="icon w18 h18 block"
+        >
+          <use
+            xlinkHref="#icon-search"
+          />
+        </svg>
+      </span>
+       
+      <span
+        className="color-gray"
+      >
+        Search
+      </span>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`search Search with dark background, custom placeholder. Open https://app.swiftype.com/engines/docs/analytics/live while developing to watch query usage. renders as expected 1`] = `
+<div
+  className="py24 px24 bg-gray-dark"
+>
+  <div
+    className="w-full"
+  >
+    <div
+      className="relative"
+    >
+      <button
+        className="w-full block"
+        onClick={[Function]}
+      >
+        <div
+          className="flex flex--center-cross bg-white border--gray-lighter border border--gray-on-hover border--blue-on-active py6 pl6 pr12 round txt-s btn--white w-full"
+          style={Object {}}
+        >
+          <span
+            className="mr6"
+          >
+            <svg
+              className="icon w18 h18 block"
+            >
+              <use
+                xlinkHref="#icon-search"
+              />
+            </svg>
+          </span>
+           
+          <span
+            className=""
+          >
+            SEARCH!
+          </span>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`search Set \`resultsOnly: true\` to true. Select an item to see search results, with a custom message when there are no search results for a particular query. Open https://app.swiftype.com/engines/docs/analytics/live while developing to watch query usage. renders as expected 1`] = `
+<div>
+  <select
+    aria-label="Select a product"
+    defaultValue=""
+    onBlur={[Function]}
+    onChange={[Function]}
+  >
+    <option
+      disabled={true}
+      value=""
+    >
+      Select a product
+    </option>
+    <option
+      value="Studio"
+    >
+      Studio
+    </option>
+    <option
+      value="Geocoding"
+    >
+      Geocoding
+    </option>
+    <option
+      value="Banana"
+    >
+      Banana
+    </option>
+  </select>
+  <div
+    className="hmax360 overflow-auto scroll-styled"
+  >
+    <div
+      className="relative"
+    >
+      <div />
+    </div>
+  </div>
+</div>
+`;

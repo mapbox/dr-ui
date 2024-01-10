@@ -1,0 +1,402 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Workflow with logged in user information 2 - Select an option Check that submit button is enabled after an option is selected 1`] = `
+<Feedback
+  feedbackSentryDsn="https://eccc8b561b9a461990309b01d33d54e3@sentry.io/1848287"
+  location={
+    Object {
+      "hash": undefined,
+      "pathname": "/mapbox-gl-js/api/",
+    }
+  }
+  site="dr-ui"
+  type="page"
+  webhook={
+    Object {
+      "production": "",
+      "staging": "",
+    }
+  }
+>
+  <FeedbackWrapper>
+    <div
+      className="dr-ui--feedback"
+    >
+      <div
+        className="flex flex--column"
+      >
+        <div
+          className="mb6 prose"
+        >
+          <OptionsList
+            categoryType="solved-my-problem"
+            helpful={true}
+            onCategoryTypeChange={[Function]}
+            onFeedbackChange={[Function]}
+            onSubmit={[Function]}
+            type="page"
+          >
+            <div
+              id="yes-options-list"
+            >
+              <p
+                className="txt-fancy txt-m"
+              >
+                What did you like?
+              </p>
+              <ControlRadioSet
+                id="feedback-category-like"
+                onChange={[Function]}
+                options={
+                  Array [
+                    Object {
+                      "label": <LabelItem
+                        onFeedbackChange={[Function]}
+                        selected={false}
+                        subTitle="Accurately describes the product or feature."
+                        title="Accurate"
+                      />,
+                      "value": "accurate",
+                    },
+                    Object {
+                      "label": <LabelItem
+                        onFeedbackChange={[Function]}
+                        selected={true}
+                        subTitle="Helped me resolve an issue."
+                        title="Solved my problem"
+                      />,
+                      "value": "solved-my-problem",
+                    },
+                    Object {
+                      "label": <LabelItem
+                        onFeedbackChange={[Function]}
+                        selected={false}
+                        subTitle="Easy to follow and comprehend."
+                        title="Easy to understand"
+                      />,
+                      "value": "easy-to-understand",
+                    },
+                    Object {
+                      "label": <LabelItem
+                        onFeedbackChange={[Function]}
+                        selected={false}
+                        subTitle="Convinced me to adopt the product or feature."
+                        title="Helped me decide to use the product"
+                      />,
+                      "value": "helped-decide-to-use",
+                    },
+                    Object {
+                      "label": <LabelItem
+                        onFeedbackChange={[Function]}
+                        selected={false}
+                        title="Another reason"
+                      />,
+                      "value": "another-reason",
+                    },
+                  ]
+                }
+                themeRadioContainer="txt-m block mb6 flex"
+                value="solved-my-problem"
+              >
+                <ControlWrapper
+                  id="feedback-category-like"
+                >
+                  <div
+                    className="relative "
+                  >
+                    <div
+                      aria-required={true}
+                      data-testid="feedback-category-like-input"
+                      id="feedback-category-like"
+                      role="radiogroup"
+                    >
+                      <label
+                        className="radio-container txt-m block mb6 flex cursor-pointer"
+                        key="accurate"
+                      >
+                        <input
+                          autoFocus={false}
+                          checked={false}
+                          data-testid="feedback-category-like-0-input"
+                          name="feedback-category-like"
+                          onChange={[Function]}
+                          type="radio"
+                          value="accurate"
+                        />
+                        <div
+                          className="mr6 radio--blue radio--s-label inline-block radio"
+                        />
+                        <LabelItem
+                          onFeedbackChange={[Function]}
+                          selected={false}
+                          subTitle="Accurately describes the product or feature."
+                          title="Accurate"
+                        >
+                          <div
+                            className="flex-child-grow"
+                            style={
+                              Object {
+                                "position": "relative",
+                                "top": "-3px",
+                              }
+                            }
+                          >
+                            <div
+                              className="txt-ms"
+                            >
+                              Accurate
+                            </div>
+                            <div
+                              className="txt-light txt-s"
+                            >
+                              Accurately describes the product or feature.
+                            </div>
+                          </div>
+                        </LabelItem>
+                      </label>
+                      <label
+                        className="radio-container txt-m block mb6 flex cursor-pointer"
+                        key="solved-my-problem"
+                      >
+                        <input
+                          autoFocus={false}
+                          checked={true}
+                          data-testid="feedback-category-like-1-input"
+                          name="feedback-category-like"
+                          onChange={[Function]}
+                          type="radio"
+                          value="solved-my-problem"
+                        />
+                        <div
+                          className="mr6 radio--blue radio--s-label inline-block radio"
+                        />
+                        <LabelItem
+                          onFeedbackChange={[Function]}
+                          selected={true}
+                          subTitle="Helped me resolve an issue."
+                          title="Solved my problem"
+                        >
+                          <div
+                            className="flex-child-grow"
+                            style={
+                              Object {
+                                "position": "relative",
+                                "top": "-3px",
+                              }
+                            }
+                          >
+                            <div
+                              className="txt-ms"
+                            >
+                              Solved my problem
+                            </div>
+                            <div
+                              className="txt-light txt-s"
+                            >
+                              Helped me resolve an issue.
+                            </div>
+                            <FeedbackTextarea
+                              id="feedback"
+                              onChange={[Function]}
+                              placeholder="(Optional) Try to be as specific as possible."
+                            >
+                              <div
+                                className="relative mt12"
+                              >
+                                <ControlTextarea
+                                  id="feedback"
+                                  onChange={[Function]}
+                                  placeholder="(Optional) Try to be as specific as possible."
+                                  themeControlTextarea="textarea hmin60 bg-white txt-ms"
+                                  themeLabel="txt-m mb6"
+                                  validationError=""
+                                  value=""
+                                >
+                                  <ControlWrapper
+                                    id="feedback"
+                                    validationError=""
+                                  >
+                                    <div
+                                      className="relative "
+                                    >
+                                      <textarea
+                                        aria-required={true}
+                                        className="textarea hmin60 bg-white txt-ms"
+                                        data-testid="feedback-textarea"
+                                        id="feedback"
+                                        name="feedback"
+                                        onChange={[Function]}
+                                        placeholder="(Optional) Try to be as specific as possible."
+                                        value=""
+                                      />
+                                      <div
+                                        role="alert"
+                                      />
+                                    </div>
+                                  </ControlWrapper>
+                                </ControlTextarea>
+                                <div
+                                  className="absolute bottom right mb6 mr18 txt-mono bg-lighten75 px3 txt-s"
+                                  id="feedback-length"
+                                >
+                                  1000
+                                </div>
+                              </div>
+                            </FeedbackTextarea>
+                          </div>
+                        </LabelItem>
+                      </label>
+                      <label
+                        className="radio-container txt-m block mb6 flex cursor-pointer"
+                        key="easy-to-understand"
+                      >
+                        <input
+                          autoFocus={false}
+                          checked={false}
+                          data-testid="feedback-category-like-2-input"
+                          name="feedback-category-like"
+                          onChange={[Function]}
+                          type="radio"
+                          value="easy-to-understand"
+                        />
+                        <div
+                          className="mr6 radio--blue radio--s-label inline-block radio"
+                        />
+                        <LabelItem
+                          onFeedbackChange={[Function]}
+                          selected={false}
+                          subTitle="Easy to follow and comprehend."
+                          title="Easy to understand"
+                        >
+                          <div
+                            className="flex-child-grow"
+                            style={
+                              Object {
+                                "position": "relative",
+                                "top": "-3px",
+                              }
+                            }
+                          >
+                            <div
+                              className="txt-ms"
+                            >
+                              Easy to understand
+                            </div>
+                            <div
+                              className="txt-light txt-s"
+                            >
+                              Easy to follow and comprehend.
+                            </div>
+                          </div>
+                        </LabelItem>
+                      </label>
+                      <label
+                        className="radio-container txt-m block mb6 flex cursor-pointer"
+                        key="helped-decide-to-use"
+                      >
+                        <input
+                          autoFocus={false}
+                          checked={false}
+                          data-testid="feedback-category-like-3-input"
+                          name="feedback-category-like"
+                          onChange={[Function]}
+                          type="radio"
+                          value="helped-decide-to-use"
+                        />
+                        <div
+                          className="mr6 radio--blue radio--s-label inline-block radio"
+                        />
+                        <LabelItem
+                          onFeedbackChange={[Function]}
+                          selected={false}
+                          subTitle="Convinced me to adopt the product or feature."
+                          title="Helped me decide to use the product"
+                        >
+                          <div
+                            className="flex-child-grow"
+                            style={
+                              Object {
+                                "position": "relative",
+                                "top": "-3px",
+                              }
+                            }
+                          >
+                            <div
+                              className="txt-ms"
+                            >
+                              Helped me decide to use the product
+                            </div>
+                            <div
+                              className="txt-light txt-s"
+                            >
+                              Convinced me to adopt the product or feature.
+                            </div>
+                          </div>
+                        </LabelItem>
+                      </label>
+                      <label
+                        className="radio-container txt-m block mb6 flex cursor-pointer"
+                        key="another-reason"
+                      >
+                        <input
+                          autoFocus={false}
+                          checked={false}
+                          data-testid="feedback-category-like-4-input"
+                          name="feedback-category-like"
+                          onChange={[Function]}
+                          type="radio"
+                          value="another-reason"
+                        />
+                        <div
+                          className="mr6 radio--blue radio--s-label inline-block radio"
+                        />
+                        <LabelItem
+                          onFeedbackChange={[Function]}
+                          selected={false}
+                          title="Another reason"
+                        >
+                          <div
+                            className="flex-child-grow"
+                            style={
+                              Object {
+                                "position": "relative",
+                                "top": "-3px",
+                              }
+                            }
+                          >
+                            <div
+                              className="txt-ms"
+                            >
+                              Another reason
+                            </div>
+                          </div>
+                        </LabelItem>
+                      </label>
+                    </div>
+                    <div
+                      role="alert"
+                    />
+                  </div>
+                </ControlWrapper>
+              </ControlRadioSet>
+              <FeedbackButton
+                disabled={false}
+                onClick={[Function]}
+              >
+                <button
+                  className="btn btn--blue mt6"
+                  disabled={false}
+                  id="feedback-submit-button"
+                  onClick={[Function]}
+                >
+                  Submit
+                </button>
+              </FeedbackButton>
+            </div>
+          </OptionsList>
+        </div>
+      </div>
+    </div>
+  </FeedbackWrapper>
+</Feedback>
+`;

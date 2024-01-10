@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tag Beta tag renders as expected 1`] = `
+<div
+  className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-lighter color-gray-dark txt-s px6"
+  data-state="closed"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onPointerDown={[Function]}
+  onPointerLeave={[Function]}
+  onPointerMove={[Function]}
+  style={
+    Object {
+      "paddingTop": 1,
+    }
+  }
+>
+  BETA
+</div>
+`;
+
+exports[`tag Custom tag renders as expected 1`] = `
+<div
+  className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-red-light color-red-dark txt-s px6"
+  data-state="closed"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onPointerDown={[Function]}
+  onPointerLeave={[Function]}
+  onPointerMove={[Function]}
+  style={
+    Object {
+      "paddingTop": 1,
+    }
+  }
+>
+  LIMITED ACCESS
+</div>
+`;
+
+exports[`tag small variant renders as expected 1`] = `
+<div
+  className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-lighter color-gray-dark txt-xs px6"
+  data-state="closed"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onPointerDown={[Function]}
+  onPointerLeave={[Function]}
+  onPointerMove={[Function]}
+  style={
+    Object {
+      "paddingTop": 1,
+    }
+  }
+>
+  BETA
+</div>
+`;

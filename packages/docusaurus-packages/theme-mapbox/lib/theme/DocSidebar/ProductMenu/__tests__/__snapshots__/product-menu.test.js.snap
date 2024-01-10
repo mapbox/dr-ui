@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`product-menu Basic renders as expected 1`] = `
+<div
+  className="dr-ui--product-menu"
+>
+  <a
+    className="txt-fancy txt-l block color-blue-on-hover color-text"
+    href="/dr-ui/"
+  >
+    Mapbox product menu
+  </a>
+</div>
+`;
+
+exports[`product-menu Beta product renders as expected 1`] = `
+<div
+  className="dr-ui--product-menu"
+>
+  <div
+    className="ml-neg3"
+  >
+    <div
+      className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-lighter color-gray-dark txt-xs px6"
+      data-state="closed"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onPointerDown={[Function]}
+      onPointerLeave={[Function]}
+      onPointerMove={[Function]}
+      style={
+        Object {
+          "paddingTop": 1,
+        }
+      }
+    >
+      BETA
+    </div>
+  </div>
+  <a
+    className="txt-fancy txt-l block color-blue-on-hover color-text"
+    href="/vision/"
+  >
+    Vision SDK for Android
+  </a>
+</div>
+`;
+
+exports[`product-menu Beta product renders as expected 2`] = `
+<div
+  className="dr-ui--product-menu"
+>
+  <div
+    className="ml-neg3"
+  >
+    <div
+      className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-lighter color-gray-dark txt-xs px6"
+      data-state="closed"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onPointerDown={[Function]}
+      onPointerLeave={[Function]}
+      onPointerMove={[Function]}
+      style={
+        Object {
+          "paddingTop": 1,
+        }
+      }
+    >
+      BETA
+    </div>
+  </div>
+  <a
+    className="txt-fancy txt-l block color-blue-on-hover color-text"
+    href="/vision/"
+  >
+    Navigation SDK for Android
+  </a>
+</div>
+`;
+
+exports[`product-menu Custom trigger style - display only renders as expected 1`] = `
+<div
+  className="bg-gray-dark py6"
+>
+  <div
+    className="dr-ui--product-menu"
+  >
+    <a
+      className="txt-fancy txt-l block color-white color-gray-light-on-hover"
+      href="/api-documentation/"
+    >
+      Light on dark
+    </a>
+  </div>
+</div>
+`;
+
+exports[`product-menu Fake items, but one matches this test case's location renders as expected 1`] = `
+<div
+  className="dr-ui--product-menu"
+>
+  <a
+    className="txt-fancy txt-l block color-blue-on-hover color-text"
+    href="/api-documentation/"
+  >
+    Items in here
+  </a>
+</div>
+`;
+
+exports[`product-menu Product menu with something arbitrary in it renders as expected 1`] = `
+<div
+  className="dr-ui--product-menu"
+>
+  <a
+    className="txt-fancy txt-l block color-blue-on-hover color-text"
+    href="/api-documentation/"
+  >
+    Pizza pie
+  </a>
+</div>
+`;

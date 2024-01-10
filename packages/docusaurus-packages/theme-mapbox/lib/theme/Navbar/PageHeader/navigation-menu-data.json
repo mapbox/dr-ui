@@ -1,0 +1,13 @@
+{
+  "language": "en",
+  "logoSiteTitle": "Docs",
+  "all": "All docs",
+  "homepage": "https://www.mapbox.com",
+  "nav": [
+    { "title": "Maps", "href": "https://docs.mapbox.com/#maps" },
+    { "title": "Navigation", "href": "https://docs.mapbox.com/#navigation" },
+    { "title": "Search", "href": "https://docs.mapbox.com/#search" },
+    { "title": "Data", "href": "https://docs.mapbox.com/#data" },
+    { "title": "Help", "href": "https://docs.mapbox.com/help/" }
+  ]
+}

@@ -1,0 +1,269 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`map-wrapper Basic renders as expected 1`] = `
+<div
+  style={
+    Object {
+      "minHeight": 300,
+    }
+  }
+>
+  <div
+    className="dr-ui--note py18 px18 round flex mb18 bg-orange-faint color-orange-dark"
+  >
+    <div
+      className="mr18 none block-mm pt3"
+    >
+      <div
+        className="bg-orange-lighter round-full color-orange flex flex--center-main flex--center-cross"
+        style={
+          Object {
+            "height": 50,
+            "width": 50,
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="events-none icon"
+          data-testid="icon-alert"
+          focusable="false"
+          style={
+            Object {
+              "height": 40,
+              "width": 40,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-alert"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          alert
+        </span>
+      </div>
+    </div>
+    <div
+      className="w-full prose wmin0"
+    >
+      <div
+        className="txt-bold mb6"
+      >
+        Mapbox GL unsupported
+      </div>
+      Mapbox GL is unsupported due to insufficient worker support.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`map-wrapper reason='insufficient ECMAScript 6 support' renders as expected 1`] = `
+<div
+  style={
+    Object {
+      "minHeight": 36,
+    }
+  }
+>
+  <div
+    className="dr-ui--note py18 px18 round flex mb18 bg-orange-faint color-orange-dark"
+  >
+    <div
+      className="mr18 none block-mm pt3"
+    >
+      <div
+        className="bg-orange-lighter round-full color-orange flex flex--center-main flex--center-cross"
+        style={
+          Object {
+            "height": 50,
+            "width": 50,
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="events-none icon"
+          data-testid="icon-alert"
+          focusable="false"
+          style={
+            Object {
+              "height": 40,
+              "width": 40,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-alert"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          alert
+        </span>
+      </div>
+    </div>
+    <div
+      className="w-full prose wmin0"
+    >
+      <div
+        className="txt-bold mb6"
+      >
+        Mapbox GL unsupported
+      </div>
+      Starting with v2.0.0, Mapbox GL JS is no longer compatible with any version of Internet Explorer. If you need to support Internet Explorer, consider using the
+       
+      <a
+        href="https://docs.mapbox.com/api/maps/static-images/"
+      >
+        Mapbox Static Images API
+      </a>
+       
+      for non-interactive maps or using the
+       
+      <a
+        href="https://docs.mapbox.com/api/maps/static-tiles/"
+      >
+        Mapbox Static Tiles API
+      </a>
+       
+      with another library (for example,
+       
+      <a
+        href="https://docs.mapbox.com/mapbox.js/"
+      >
+        Mapbox.js
+      </a>
+       or
+       
+      <a
+        href="https://leafletjs.com/"
+      >
+        Leaflet
+      </a>
+      ) for interactive maps.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`map-wrapper reason='insufficient WebGL support' renders as expected 1`] = `
+<div
+  style={
+    Object {
+      "minHeight": 36,
+    }
+  }
+>
+  <div
+    className="dr-ui--note py18 px18 round flex mb18 bg-orange-faint color-orange-dark"
+  >
+    <div
+      className="mr18 none block-mm pt3"
+    >
+      <div
+        className="bg-orange-lighter round-full color-orange flex flex--center-main flex--center-cross"
+        style={
+          Object {
+            "height": 50,
+            "width": 50,
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="events-none icon"
+          data-testid="icon-alert"
+          focusable="false"
+          style={
+            Object {
+              "height": 40,
+              "width": 40,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-alert"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          alert
+        </span>
+      </div>
+    </div>
+    <div
+      className="w-full prose wmin0"
+    >
+      <div
+        className="txt-bold mb6"
+      >
+        Mapbox GL unsupported
+      </div>
+      Mapbox GL requires
+       
+      <a
+        className="link"
+        href="https://caniuse.com/#feat=webgl"
+      >
+        WebGL support
+      </a>
+      . Please check that you are using a supported browser and that
+       
+      <a
+        className="link"
+        href="https://get.webgl.org/"
+      >
+        WebGL is enabled
+      </a>
+      .
+    </div>
+  </div>
+</div>
+`;

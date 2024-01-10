@@ -1,0 +1,860 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`toggleable-code-block Basic renders as expected 1`] = `
+<div
+  className="my24"
+>
+  <div
+    className="flex-mm flex--space-between-main-mm mb6"
+  >
+    <div
+      className="flex-mm"
+    >
+      <div
+        className="txt-bold color-gray-dar mb6"
+      >
+        ThisIsAFile.extension
+      </div>
+      <div
+        className="ml12-mm"
+      >
+        <a
+          className="unprose link"
+          href="https://github.com/mapbox/"
+          title="View ThisIsAFile.extension on GitHub"
+        >
+          <svg
+            aria-hidden="true"
+            className="events-none icon inline-block align-t"
+            data-testid="icon-github"
+            focusable="false"
+            style={
+              Object {
+                "height": 18,
+                "width": 18,
+              }
+            }
+          >
+            <use
+              xlinkHref="#icon-github"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            />
+          </svg>
+          <span
+            style={
+              Object {
+                "border": 0,
+                "clip": "rect(0, 0, 0, 0)",
+                "height": 1,
+                "margin": -1,
+                "overflow": "hidden",
+                "padding": 0,
+                "position": "absolute",
+                "whiteSpace": "nowrap",
+                "width": 1,
+                "wordWrap": "normal",
+              }
+            }
+          >
+            github
+          </span>
+           View on GitHub
+        </a>
+      </div>
+    </div>
+    <div>
+      <div
+        className="relative "
+      >
+        <div
+          aria-required={true}
+          className="toggle-group round-full bg-blue py3 px3"
+          data-testid="test-java-filename-input"
+          id="test-java-filename"
+          role="radiogroup"
+        >
+          <label
+            className="toggle-container "
+          >
+            <input
+              autoFocus={false}
+              checked={false}
+              data-testid="test-java-filename-0-input"
+              name="test-java-filename"
+              onChange={[Function]}
+              type="radio"
+              value="javascript"
+            />
+            <div
+              className="txt-s py3 toggle--white toggle--active-blue toggle"
+            >
+              JavaScript
+            </div>
+          </label>
+          <label
+            className="toggle-container "
+          >
+            <input
+              autoFocus={false}
+              checked={false}
+              data-testid="test-java-filename-1-input"
+              name="test-java-filename"
+              onChange={[Function]}
+              type="radio"
+              value="swift"
+            />
+            <div
+              className="txt-s py3 toggle--white toggle--active-blue toggle"
+            >
+              Swift
+            </div>
+          </label>
+          <label
+            className="toggle-container "
+          >
+            <input
+              autoFocus={false}
+              checked={false}
+              data-testid="test-java-filename-2-input"
+              name="test-java-filename"
+              onChange={[Function]}
+              type="radio"
+              value="objectiveC"
+            />
+            <div
+              className="txt-s py3 toggle--white toggle--active-blue toggle"
+            >
+              Objective-C
+            </div>
+          </label>
+          <label
+            className="toggle-container "
+          >
+            <input
+              autoFocus={false}
+              checked={true}
+              data-testid="test-java-filename-3-input"
+              name="test-java-filename"
+              onChange={[Function]}
+              type="radio"
+              value="java"
+            />
+            <div
+              className="txt-s py3 toggle--white toggle--active-blue toggle"
+            >
+              Java
+            </div>
+          </label>
+          <label
+            className="toggle-container "
+          >
+            <input
+              autoFocus={false}
+              checked={false}
+              data-testid="test-java-filename-4-input"
+              name="test-java-filename"
+              onChange={[Function]}
+              type="radio"
+              value="kotlin"
+            />
+            <div
+              className="txt-s py3 toggle--white toggle--active-blue toggle"
+            >
+              Kotlin
+            </div>
+          </label>
+        </div>
+        <div
+          role="alert"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="prose relative round z0 scroll-styled overflow-auto"
+    style={
+      Object {
+        "maxHeight": 480,
+      }
+    }
+  >
+    <pre
+      className="py0 px0 txt-break-word mb0"
+    >
+      <code
+        className="px0 hljs"
+      >
+        <div
+          className="relative z2 h30"
+          data-chunk-code="chunk-0"
+        >
+          <button
+            className="w-full bg-blue-faint color-blue-dark color-blue-on-hover pl12 py6 cursor-pointer txt-s h30 flex flex--center-cross"
+            onClick={[Function]}
+          >
+            <div>
+              <div
+                className="mb-neg3"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="events-none icon"
+                  data-testid="icon-chevron-up"
+                  focusable="false"
+                  style={
+                    Object {
+                      "height": 12,
+                      "width": 12,
+                    }
+                  }
+                >
+                  <use
+                    xlinkHref="#icon-chevron-up"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  />
+                </svg>
+                <span
+                  style={
+                    Object {
+                      "border": 0,
+                      "clip": "rect(0, 0, 0, 0)",
+                      "height": 1,
+                      "margin": -1,
+                      "overflow": "hidden",
+                      "padding": 0,
+                      "position": "absolute",
+                      "whiteSpace": "nowrap",
+                      "width": 1,
+                      "wordWrap": "normal",
+                    }
+                  }
+                >
+                  chevron-up
+                </span>
+              </div>
+              <div
+                className="mt-neg3"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="events-none icon"
+                  data-testid="icon-chevron-down"
+                  focusable="false"
+                  style={
+                    Object {
+                      "height": 12,
+                      "width": 12,
+                    }
+                  }
+                >
+                  <use
+                    xlinkHref="#icon-chevron-down"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  />
+                </svg>
+                <span
+                  style={
+                    Object {
+                      "border": 0,
+                      "clip": "rect(0, 0, 0, 0)",
+                      "height": 1,
+                      "margin": -1,
+                      "overflow": "hidden",
+                      "padding": 0,
+                      "position": "absolute",
+                      "whiteSpace": "nowrap",
+                      "width": 1,
+                      "wordWrap": "normal",
+                    }
+                  }
+                >
+                  chevron-down
+                </span>
+              </div>
+            </div>
+            <div
+              style={
+                Object {
+                  "marginLeft": "8px",
+                }
+              }
+            >
+              show hidden lines
+            </div>
+          </button>
+        </div>
+        <div
+          className="relative z2"
+          data-chunk-code="chunk-1"
+        >
+          <div
+            className="pr12 py3 bg-white"
+            style={
+              Object {
+                "paddingLeft": 55.349999999999994,
+              }
+            }
+          >
+            <div
+              className="absolute fl color-text align-r pr6 w30 py3"
+              data-content={2}
+              style={
+                Object {
+                  "marginLeft": -49.349999999999994,
+                  "marginTop": -3,
+                }
+              }
+              unselectable="on"
+            />
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<span class=\\"token keyword\\">private</span> <span class=\\"token class-name\\">MapView</span> mapView<span class=\\"token punctuation\\">;</span>",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 43.349999999999994,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="relative z2 h30"
+          data-chunk-code="chunk-2"
+        >
+          <button
+            className="w-full bg-blue-faint color-blue-dark color-blue-on-hover pl12 py6 cursor-pointer txt-s h30 flex flex--center-cross"
+            onClick={[Function]}
+          >
+            <div>
+              <div
+                className="mb-neg3"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="events-none icon"
+                  data-testid="icon-chevron-up"
+                  focusable="false"
+                  style={
+                    Object {
+                      "height": 12,
+                      "width": 12,
+                    }
+                  }
+                >
+                  <use
+                    xlinkHref="#icon-chevron-up"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  />
+                </svg>
+                <span
+                  style={
+                    Object {
+                      "border": 0,
+                      "clip": "rect(0, 0, 0, 0)",
+                      "height": 1,
+                      "margin": -1,
+                      "overflow": "hidden",
+                      "padding": 0,
+                      "position": "absolute",
+                      "whiteSpace": "nowrap",
+                      "width": 1,
+                      "wordWrap": "normal",
+                    }
+                  }
+                >
+                  chevron-up
+                </span>
+              </div>
+              <div
+                className="mt-neg3"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="events-none icon"
+                  data-testid="icon-chevron-down"
+                  focusable="false"
+                  style={
+                    Object {
+                      "height": 12,
+                      "width": 12,
+                    }
+                  }
+                >
+                  <use
+                    xlinkHref="#icon-chevron-down"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  />
+                </svg>
+                <span
+                  style={
+                    Object {
+                      "border": 0,
+                      "clip": "rect(0, 0, 0, 0)",
+                      "height": 1,
+                      "margin": -1,
+                      "overflow": "hidden",
+                      "padding": 0,
+                      "position": "absolute",
+                      "whiteSpace": "nowrap",
+                      "width": 1,
+                      "wordWrap": "normal",
+                    }
+                  }
+                >
+                  chevron-down
+                </span>
+              </div>
+            </div>
+            <div
+              style={
+                Object {
+                  "marginLeft": "8px",
+                }
+              }
+            >
+              show hidden lines
+            </div>
+          </button>
+        </div>
+        <div
+          className="relative z2"
+          data-chunk-code="chunk-3"
+        >
+          <div
+            className="pr12 py3 bg-white"
+            style={
+              Object {
+                "paddingLeft": 55.349999999999994,
+              }
+            }
+          >
+            <div
+              className="absolute fl color-text align-r pr6 w30 py3"
+              data-content={5}
+              style={
+                Object {
+                  "marginLeft": -49.349999999999994,
+                  "marginTop": -3,
+                }
+              }
+              unselectable="on"
+            />
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<span class=\\"token keyword\\">protected</span> <span class=\\"token keyword\\">void</span> <span class=\\"token function\\">onCreate</span><span class=\\"token punctuation\\">(</span><span class=\\"token class-name\\">Bundle</span> savedInstanceState<span class=\\"token punctuation\\">)</span> <span class=\\"token punctuation\\">{</span>",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 43.349999999999994,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12 py3 bg-white"
+            style={
+              Object {
+                "paddingLeft": 55.349999999999994,
+              }
+            }
+          >
+            <div
+              className="absolute fl color-text align-r pr6 w30 py3"
+              data-content={6}
+              style={
+                Object {
+                  "marginLeft": -49.349999999999994,
+                  "marginTop": -3,
+                }
+              }
+              unselectable="on"
+            />
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<span class=\\"token keyword\\">super</span><span class=\\"token punctuation\\">.</span><span class=\\"token function\\">onCreate</span><span class=\\"token punctuation\\">(</span>savedInstanceState<span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 43.349999999999994,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12 py3 bg-white"
+            style={
+              Object {
+                "paddingLeft": 55.349999999999994,
+              }
+            }
+          >
+            <div
+              className="absolute fl color-text align-r pr6 w30 py3"
+              data-content={7}
+              style={
+                Object {
+                  "marginLeft": -49.349999999999994,
+                  "marginTop": -3,
+                }
+              }
+              unselectable="on"
+            />
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<span class=\\"token class-name\\">Mapbox</span><span class=\\"token punctuation\\">.</span><span class=\\"token function\\">getInstance</span><span class=\\"token punctuation\\">(</span><span class=\\"token keyword\\">this</span><span class=\\"token punctuation\\">,</span> <span class=\\"token string\\">\\"your-token\\"</span><span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 43.349999999999994,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+          <div
+            className="pr12 py3 bg-white"
+            style={
+              Object {
+                "paddingLeft": 55.349999999999994,
+              }
+            }
+          >
+            <div
+              className="absolute fl color-text align-r pr6 w30 py3"
+              data-content={8}
+              style={
+                Object {
+                  "marginLeft": -49.349999999999994,
+                  "marginTop": -3,
+                }
+              }
+              unselectable="on"
+            />
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<span class=\\"token function\\">setContentView</span><span class=\\"token punctuation\\">(</span><span class=\\"token class-name\\">R</span><span class=\\"token punctuation\\">.</span>layout<span class=\\"token punctuation\\">.</span>activity_main<span class=\\"token punctuation\\">)</span><span class=\\"token punctuation\\">;</span>",
+                }
+              }
+              style={
+                Object {
+                  "marginLeft": 43.349999999999994,
+                  "textIndent": -14.45,
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="relative z2 h30"
+          data-chunk-code="chunk-4"
+        >
+          <button
+            className="w-full bg-blue-faint color-blue-dark color-blue-on-hover pl12 py6 cursor-pointer txt-s h30 flex flex--center-cross"
+            onClick={[Function]}
+          >
+            <div>
+              <div
+                className="mb-neg3"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="events-none icon"
+                  data-testid="icon-chevron-up"
+                  focusable="false"
+                  style={
+                    Object {
+                      "height": 12,
+                      "width": 12,
+                    }
+                  }
+                >
+                  <use
+                    xlinkHref="#icon-chevron-up"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  />
+                </svg>
+                <span
+                  style={
+                    Object {
+                      "border": 0,
+                      "clip": "rect(0, 0, 0, 0)",
+                      "height": 1,
+                      "margin": -1,
+                      "overflow": "hidden",
+                      "padding": 0,
+                      "position": "absolute",
+                      "whiteSpace": "nowrap",
+                      "width": 1,
+                      "wordWrap": "normal",
+                    }
+                  }
+                >
+                  chevron-up
+                </span>
+              </div>
+              <div
+                className="mt-neg3"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="events-none icon"
+                  data-testid="icon-chevron-down"
+                  focusable="false"
+                  style={
+                    Object {
+                      "height": 12,
+                      "width": 12,
+                    }
+                  }
+                >
+                  <use
+                    xlinkHref="#icon-chevron-down"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  />
+                </svg>
+                <span
+                  style={
+                    Object {
+                      "border": 0,
+                      "clip": "rect(0, 0, 0, 0)",
+                      "height": 1,
+                      "margin": -1,
+                      "overflow": "hidden",
+                      "padding": 0,
+                      "position": "absolute",
+                      "whiteSpace": "nowrap",
+                      "width": 1,
+                      "wordWrap": "normal",
+                    }
+                  }
+                >
+                  chevron-down
+                </span>
+              </div>
+            </div>
+            <div
+              style={
+                Object {
+                  "marginLeft": "8px",
+                }
+              }
+            >
+              show hidden lines
+            </div>
+          </button>
+        </div>
+      </code>
+    </pre>
+    <div
+      className="absolute left right z2 w6"
+      data-chunk-overlay="chunk-1"
+      style={
+        Object {
+          "opacity": 0,
+        }
+      }
+    >
+      <div
+        className="bg-blue h-full"
+      />
+    </div>
+    <div
+      className="absolute left right z2 w6"
+      data-chunk-overlay="chunk-3"
+      style={
+        Object {
+          "opacity": 0,
+        }
+      }
+    >
+      <div
+        className="bg-blue h-full"
+      />
+    </div>
+    <div
+      className="absolute z3 right mr3 color-white"
+      data-chunk-copy="chunk-1"
+      style={
+        Object {
+          "opacity": 0,
+          "transition": "opacity 300ms linear",
+        }
+      }
+    >
+      <div
+        aria-label="Copy"
+        data-clipboard-text="      private MapView mapView;
+"
+        data-testid="copy-button"
+        onClick={[Function]}
+        role="button"
+      >
+        <span
+          style={
+            Object {
+              "display": "contents",
+            }
+          }
+        >
+          <div
+            aria-controls="radix-1"
+            aria-expanded={false}
+            aria-haspopup="dialog"
+            data-state="closed"
+            onClick={[Function]}
+            type="button"
+          >
+            <button
+              className="btn btn--xs py3 px3 round"
+              data-state="closed"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onPointerDown={[Function]}
+              onPointerLeave={[Function]}
+              onPointerMove={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                className="events-none icon"
+                data-testid="icon-clipboard"
+                focusable="false"
+                style={
+                  Object {
+                    "height": 18,
+                    "width": 18,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="#icon-clipboard"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                />
+              </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                clipboard
+              </span>
+            </button>
+          </div>
+        </span>
+      </div>
+    </div>
+    <div
+      className="absolute z3 right mr3 color-white"
+      data-chunk-copy="chunk-3"
+      style={
+        Object {
+          "opacity": 0,
+          "transition": "opacity 300ms linear",
+        }
+      }
+    >
+      <div
+        aria-label="Copy"
+        data-clipboard-text="      protected void onCreate(Bundle savedInstanceState) {
+      super.onCreate(savedInstanceState);
+      Mapbox.getInstance(this, \\"your-token\\");
+      setContentView(R.layout.activity_main);
+"
+        data-testid="copy-button"
+        onClick={[Function]}
+        role="button"
+      >
+        <span
+          style={
+            Object {
+              "display": "contents",
+            }
+          }
+        >
+          <div
+            aria-controls="radix-3"
+            aria-expanded={false}
+            aria-haspopup="dialog"
+            data-state="closed"
+            onClick={[Function]}
+            type="button"
+          >
+            <button
+              className="btn btn--xs py3 px3 round"
+              data-state="closed"
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onPointerDown={[Function]}
+              onPointerLeave={[Function]}
+              onPointerMove={[Function]}
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                className="events-none icon"
+                data-testid="icon-clipboard"
+                focusable="false"
+                style={
+                  Object {
+                    "height": 18,
+                    "width": 18,
+                  }
+                }
+              >
+                <use
+                  xlinkHref="#icon-clipboard"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                />
+              </svg>
+              <span
+                style={
+                  Object {
+                    "border": 0,
+                    "clip": "rect(0, 0, 0, 0)",
+                    "height": 1,
+                    "margin": -1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "whiteSpace": "nowrap",
+                    "width": 1,
+                    "wordWrap": "normal",
+                  }
+                }
+              >
+                clipboard
+              </span>
+            </button>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

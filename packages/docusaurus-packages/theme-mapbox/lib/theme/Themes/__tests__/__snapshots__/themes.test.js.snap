@@ -1,0 +1,889 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`themes Custom tag renders as expected 1`] = `
+<div>
+  <div
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-red-light color-red-dark txt-s px6"
+    data-state="closed"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
+  >
+    Limited access
+  </div>
+  <div
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-red-light color-red-dark txt-xs px6"
+    data-state="closed"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
+  >
+    Limited access
+  </div>
+  <div
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-red-light color-red-dark txt-s"
+    data-state="closed"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="events-none icon inline-block align-t"
+      data-testid="icon-contact"
+      focusable="false"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
+        }
+      }
+    >
+      <use
+        xlinkHref="#icon-contact"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+    <span
+      style={
+        Object {
+          "border": 0,
+          "clip": "rect(0, 0, 0, 0)",
+          "height": 1,
+          "margin": -1,
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "absolute",
+          "whiteSpace": "nowrap",
+          "width": 1,
+          "wordWrap": "normal",
+        }
+      }
+    >
+      contact
+    </span>
+  </div>
+  <div
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-red-light color-red-dark txt-xs"
+    data-state="closed"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="events-none icon inline-block align-t"
+      data-testid="icon-contact"
+      focusable="false"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
+        }
+      }
+    >
+      <use
+        xlinkHref="#icon-contact"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+    <span
+      style={
+        Object {
+          "border": 0,
+          "clip": "rect(0, 0, 0, 0)",
+          "height": 1,
+          "margin": -1,
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "absolute",
+          "whiteSpace": "nowrap",
+          "width": 1,
+          "wordWrap": "normal",
+        }
+      }
+    >
+      contact
+    </span>
+  </div>
+</div>
+`;
+
+exports[`themes Default renders as expected 1`] = `
+<div
+  className="dr-ui--note py18 px18 round flex mb18 bg-gray-faint color-text"
+>
+  <div
+    className="mr18 none block-mm pt3"
+  >
+    <div
+      className="bg-gray-lighter round-full color-gray flex flex--center-main flex--center-cross"
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
+    >
+      <svg
+        aria-hidden="true"
+        className="events-none icon"
+        data-testid="icon-book"
+        focusable="false"
+        style={
+          Object {
+            "height": 40,
+            "width": 40,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-book"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        book
+      </span>
+    </div>
+  </div>
+  <div
+    className="w-full prose wmin0"
+  >
+    <div
+      className="txt-bold mb6"
+    >
+      NOTE
+    </div>
+    Default note
+  </div>
+</div>
+`;
+
+exports[`themes beta renders as expected 1`] = `
+<div>
+  <div
+    className="dr-ui--note py18 px18 round flex mb18 bg-blue-faint color-blue-dark"
+  >
+    <div
+      className="mr18 none block-mm pt3"
+    >
+      <div
+        className="bg-blue-lighter round-full color-blue flex flex--center-main flex--center-cross"
+        style={
+          Object {
+            "height": 50,
+            "width": 50,
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="events-none icon"
+          data-testid="icon-lightning"
+          focusable="false"
+          style={
+            Object {
+              "height": 40,
+              "width": 40,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-lightning"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          lightning
+        </span>
+      </div>
+    </div>
+    <div
+      className="w-full prose wmin0"
+    >
+      <div
+        className="txt-bold mb6"
+      >
+        BETA
+      </div>
+      Beta note.
+    </div>
+  </div>
+  <div
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-lighter color-gray-dark txt-s px6"
+    data-state="closed"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
+  >
+    BETA
+  </div>
+  <div
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-lighter color-gray-dark txt-xs px6"
+    data-state="closed"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
+  >
+    BETA
+  </div>
+  <div
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-lighter color-gray-dark txt-s"
+    data-state="closed"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="events-none icon inline-block align-t"
+      data-testid="icon-lightning"
+      focusable="false"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
+        }
+      }
+    >
+      <use
+        xlinkHref="#icon-lightning"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+    <span
+      style={
+        Object {
+          "border": 0,
+          "clip": "rect(0, 0, 0, 0)",
+          "height": 1,
+          "margin": -1,
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "absolute",
+          "whiteSpace": "nowrap",
+          "width": 1,
+          "wordWrap": "normal",
+        }
+      }
+    >
+      lightning
+    </span>
+  </div>
+  <div
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-blue-lighter color-gray-dark txt-xs"
+    data-state="closed"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="events-none icon inline-block align-t"
+      data-testid="icon-lightning"
+      focusable="false"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
+        }
+      }
+    >
+      <use
+        xlinkHref="#icon-lightning"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+    <span
+      style={
+        Object {
+          "border": 0,
+          "clip": "rect(0, 0, 0, 0)",
+          "height": 1,
+          "margin": -1,
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "absolute",
+          "whiteSpace": "nowrap",
+          "width": 1,
+          "wordWrap": "normal",
+        }
+      }
+    >
+      lightning
+    </span>
+  </div>
+</div>
+`;
+
+exports[`themes download renders as expected 1`] = `
+<div
+  className="dr-ui--note py18 px18 round flex mb18 bg-purple-faint color-purple-dark"
+>
+  <div
+    className="mr18 none block-mm pt3"
+  >
+    <div
+      className="bg-purple-lighter round-full color-purple flex flex--center-main flex--center-cross"
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
+    >
+      <svg
+        aria-hidden="true"
+        className="events-none icon"
+        data-testid="icon-arrow-down"
+        focusable="false"
+        style={
+          Object {
+            "height": 40,
+            "width": 40,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-arrow-down"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        arrow-down
+      </span>
+    </div>
+  </div>
+  <div
+    className="w-full prose wmin0"
+  >
+    <div
+      className="txt-bold mb6"
+    >
+      DOWNLOAD
+    </div>
+    download note
+  </div>
+</div>
+`;
+
+exports[`themes error renders as expected 1`] = `
+<div
+  className="dr-ui--note py18 px18 round flex mb18 bg-red-faint color-red-dark"
+>
+  <div
+    className="mr18 none block-mm pt3"
+  >
+    <div
+      className="bg-red-lighter round-full color-red flex flex--center-main flex--center-cross"
+      style={
+        Object {
+          "height": 50,
+          "width": 50,
+        }
+      }
+    >
+      <svg
+        aria-hidden="true"
+        className="events-none icon"
+        data-testid="icon-alert"
+        focusable="false"
+        style={
+          Object {
+            "height": 40,
+            "width": 40,
+          }
+        }
+      >
+        <use
+          xlinkHref="#icon-alert"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+        />
+      </svg>
+      <span
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0, 0, 0, 0)",
+            "height": 1,
+            "margin": -1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": 1,
+            "wordWrap": "normal",
+          }
+        }
+      >
+        alert
+      </span>
+    </div>
+  </div>
+  <div
+    className="w-full prose wmin0"
+  >
+    <div
+      className="txt-bold mb6"
+    >
+      ERROR
+    </div>
+    error note
+  </div>
+</div>
+`;
+
+exports[`themes fundamentals renders as expected 1`] = `
+<div>
+  <div
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-pink-lighter color-gray-dark txt-s px6"
+    data-state="closed"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
+  >
+    FUNDAMENTALS
+  </div>
+  <div
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-pink-lighter color-gray-dark txt-xs px6"
+    data-state="closed"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
+  >
+    FUNDAMENTALS
+  </div>
+  <div
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-pink-lighter color-gray-dark txt-s"
+    data-state="closed"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="events-none icon inline-block align-t"
+      data-testid="icon-bookmark"
+      focusable="false"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
+        }
+      }
+    >
+      <use
+        xlinkHref="#icon-bookmark"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+    <span
+      style={
+        Object {
+          "border": 0,
+          "clip": "rect(0, 0, 0, 0)",
+          "height": 1,
+          "margin": -1,
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "absolute",
+          "whiteSpace": "nowrap",
+          "width": 1,
+          "wordWrap": "normal",
+        }
+      }
+    >
+      bookmark
+    </span>
+  </div>
+  <div
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-pink-lighter color-gray-dark txt-xs"
+    data-state="closed"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="events-none icon inline-block align-t"
+      data-testid="icon-bookmark"
+      focusable="false"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
+        }
+      }
+    >
+      <use
+        xlinkHref="#icon-bookmark"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+    <span
+      style={
+        Object {
+          "border": 0,
+          "clip": "rect(0, 0, 0, 0)",
+          "height": 1,
+          "margin": -1,
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "absolute",
+          "whiteSpace": "nowrap",
+          "width": 1,
+          "wordWrap": "normal",
+        }
+      }
+    >
+      bookmark
+    </span>
+  </div>
+</div>
+`;
+
+exports[`themes legacy or warning renders as expected 1`] = `
+<div>
+  <div
+    className="dr-ui--note py18 px18 round flex mb18 bg-orange-faint color-orange-dark"
+  >
+    <div
+      className="mr18 none block-mm pt3"
+    >
+      <div
+        className="bg-orange-lighter round-full color-orange flex flex--center-main flex--center-cross"
+        style={
+          Object {
+            "height": 50,
+            "width": 50,
+          }
+        }
+      >
+        <svg
+          aria-hidden="true"
+          className="events-none icon"
+          data-testid="icon-alert"
+          focusable="false"
+          style={
+            Object {
+              "height": 40,
+              "width": 40,
+            }
+          }
+        >
+          <use
+            xlinkHref="#icon-alert"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          />
+        </svg>
+        <span
+          style={
+            Object {
+              "border": 0,
+              "clip": "rect(0, 0, 0, 0)",
+              "height": 1,
+              "margin": -1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "absolute",
+              "whiteSpace": "nowrap",
+              "width": 1,
+              "wordWrap": "normal",
+            }
+          }
+        >
+          alert
+        </span>
+      </div>
+    </div>
+    <div
+      className="w-full prose wmin0"
+    >
+      <div
+        className="txt-bold mb6"
+      >
+        LEGACY
+      </div>
+      legacy note
+    </div>
+  </div>
+  <div
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-orange-lighter color-gray-dark txt-s px6"
+    data-state="closed"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
+  >
+    LEGACY
+  </div>
+  <div
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-orange-lighter color-gray-dark txt-xs px6"
+    data-state="closed"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
+  >
+    LEGACY
+  </div>
+  <div
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-orange-lighter color-gray-dark txt-s"
+    data-state="closed"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="events-none icon inline-block align-t"
+      data-testid="icon-alert"
+      focusable="false"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
+        }
+      }
+    >
+      <use
+        xlinkHref="#icon-alert"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+    <span
+      style={
+        Object {
+          "border": 0,
+          "clip": "rect(0, 0, 0, 0)",
+          "height": 1,
+          "margin": -1,
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "absolute",
+          "whiteSpace": "nowrap",
+          "width": 1,
+          "wordWrap": "normal",
+        }
+      }
+    >
+      alert
+    </span>
+  </div>
+  <div
+    className="txt-fancy-medium round inline-block cursor-default color-gray-dark bg-orange-lighter color-gray-dark txt-xs"
+    data-state="closed"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onPointerDown={[Function]}
+    onPointerLeave={[Function]}
+    onPointerMove={[Function]}
+    style={
+      Object {
+        "paddingTop": 1,
+      }
+    }
+  >
+    <svg
+      aria-hidden="true"
+      className="events-none icon inline-block align-t"
+      data-testid="icon-alert"
+      focusable="false"
+      style={
+        Object {
+          "height": 18,
+          "width": 18,
+        }
+      }
+    >
+      <use
+        xlinkHref="#icon-alert"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+      />
+    </svg>
+    <span
+      style={
+        Object {
+          "border": 0,
+          "clip": "rect(0, 0, 0, 0)",
+          "height": 1,
+          "margin": -1,
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "absolute",
+          "whiteSpace": "nowrap",
+          "width": 1,
+          "wordWrap": "normal",
+        }
+      }
+    >
+      alert
+    </span>
+  </div>
+</div>
+`;

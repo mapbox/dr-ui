@@ -1,0 +1,164 @@
+/* override user-menu colors */
+.um-wrapper .um-link {
+  color: #007afc !important;
+}
+
+.um-wrapper .um-link:hover {
+  color: #0062ca !important;
+}
+
+.um-wrapper .um-btn {
+  background-color: #007afc !important;
+}
+
+.um-wrapper .um-btn:hover {
+  color: #fff !important;
+  background-color: #0062ca !important;
+}
+
+.um-wrapper a.um-color-blue-on-hover:hover {
+  color: #007afc !important;
+}
+
+/* accounts for the sticky header when scrolling to an anchor indicated in the URL hash or clicking an anchor */
+.anchor {
+  scroll-margin-top: 68px;
+}
+
+/* kapa.ai color overrides */
+.mantine-Modal-header {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+/* Hide Kapa.ai on mobile */
+@media only screen and (max-width: 640px) {
+  .mantine-Button-root {
+    display: none;
+  }
+}
+
+.mantine-Modal-header h3,
+#kapa-widget-container .mantine-Text-root {
+  font-family: 'Cera' !important;
+}
+/* end kapa.ai color overrides */
+
+/* Menu transitions */
+/* If you change the speed of these transitions, you must also update the timeout value in
+  ./page-shell-script/menu-pointer-positioner.js#setPointerResetTimeout  */
+.shell-animated-menu,
+.shell-animated-menu__pointer,
+.shell-mobile-nav__backdrop {
+  transition:
+    opacity 0.25s,
+    visibility 0.25s,
+    transform 0.25s,
+    -webkit-transform 0.25s;
+}
+
+.shell-mobile-nav__backdrop {
+  will-change: opacity;
+}
+
+.shell-animated-menu__pointer {
+  -webkit-transform: translateX(-50%) translateY(0);
+  transform: translateX(-50%) translateY(0);
+}
+
+.shell-animated-menu__pointer--visible {
+  -webkit-transform: translateX(-50%) translateY(-100%);
+  transform: translateX(-50%) translateY(-100%);
+}
+
+.shell-animated-menu {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translate(0, 0, 0) scale(0.95);
+  transform: translate(0, 0, 0) scale(0.95);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  visibility: hidden;
+}
+
+.shell-animated-menu--visible {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translate(0, 0, 0) scale(1);
+  transform: translate(0, 0, 0) scale(1);
+  visibility: visible;
+}
+
+.shell-mb-logo--white,
+.shell-mobile-nav__logo--overlay {
+  transition:
+    opacity 0.125s,
+    visibility 0.125s;
+}
+
+.shell-mb-logo--white {
+  opacity: 1;
+}
+
+.shell-mobile-nav__logo--overlay,
+.shell-mobile-nav__backdrop {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.shell-mobile-nav--visible .shell-mobile-nav__trigger,
+.shell-mobile-nav--visible .shell-mobile-nav__trigger:hover {
+  color: #000;
+}
+
+.shell-mobile-nav--visible .shell-mb-logo--white {
+  opacity: 0;
+}
+
+.shell-mobile-nav--visible .shell-mobile-nav__logo--overlay,
+.shell-mobile-nav__backdrop--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.shell-mobile-nav__trigger__bar--top,
+.shell-mobile-nav__trigger__bar--middle,
+.shell-mobile-nav__trigger__bar--bottom {
+  opacity: 1;
+  transition:
+    opacity 0.25s,
+    transform 0.25s;
+  -webkit-transform: translateY(0) rotate(0deg) scale(1);
+  transform: translateY(0) rotate(0deg) scale(1);
+}
+
+.shell-mobile-nav__trigger__bar--middle {
+  -webkit-transform-origin: 9px 9px;
+  transform-origin: 9px 9px;
+}
+
+.shell-mobile-nav__trigger__bar--top {
+  -webkit-transform-origin: 9px 5px;
+  transform-origin: 9px 5px;
+}
+
+.shell-mobile-nav__trigger__bar--bottom {
+  -webkit-transform-origin: 9px 13px;
+  transform-origin: 9px 13px;
+}
+
+.shell-mobile-nav--visible .shell-mobile-nav__trigger__bar--middle {
+  opacity: 0;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.shell-mobile-nav--visible .shell-mobile-nav__trigger__bar--top {
+  -webkit-transform: translateY(4px) rotate(45deg);
+  transform: translateY(4px) rotate(45deg);
+}
+
+.shell-mobile-nav--visible .shell-mobile-nav__trigger__bar--bottom {
+  -webkit-transform: translateY(-4px) rotate(-45deg);
+  transform: translateY(-4px) rotate(-45deg);
+}
