@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.6.0
+
+- Added icon for a new Dive Deeper section on the Help page.
+
 ## 6.5.0
 
 - Added new FAQ content type to `helpers/help-card-data.js`, separated help icons into `helpers/icons` and upgraded `src/components/card.js` to have hover styles and a RightArrow icon for the card
