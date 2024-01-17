@@ -17,6 +17,12 @@ const helpCardData = [
     link: '/help/getting-started'
   },
   {
+    id: 'dive-deeper',
+    icon: <DiveDeeperIcon />,
+    highlightColor: 'yellow-light',
+    link: '/help/dive-deeper'
+  },
+  {
     id: 'tutorials',
     icon: <TutorialsIcon />,
     highlightColor: 'green-light',
