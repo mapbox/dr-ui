@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   GettingStartedIcon,
+  DiveDeeperIcon,
   TutorialsIcon,
   HowToVideosIcon,
   FaqIcon,
@@ -15,6 +16,12 @@ const helpCardData = [
     icon: <GettingStartedIcon />,
     highlightColor: 'blue-light',
     link: '/help/getting-started'
+  },
+  {
+    id: 'dive-deeper',
+    icon: <DiveDeeperIcon />,
+    highlightColor: 'yellow-light',
+    link: '/help/dive-deeper'
   },
   {
     id: 'tutorials',
