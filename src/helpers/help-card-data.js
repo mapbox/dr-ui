@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   GettingStartedIcon,
+  DiveDeeperIcon,
   TutorialsIcon,
   HowToVideosIcon,
   FaqIcon,
