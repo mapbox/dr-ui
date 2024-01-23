@@ -86,18 +86,25 @@ exports[`index-card Basic use as a product card with links renders as expected 1
           >
             <a
               aria-label="Mapbox GL JS"
-              className="btn btn--stroke round-full pb6 txt-xs txt-nowrap color-gray-deep px12 color-white-on-hover shadow-white-on-hover txt-fancy-regular bg-green-light-on-hover"
+              className="btn btn--stroke round-full pb6 txt-xs txt-nowrap color-gray-deep px12 color-white-on-hover shadow-white-on-hover txt-fancy-regular flex bg-green-light-on-hover"
               href="https://docs.mapbox.com/mapbox-gl-js/"
               style={
                 Object {
                   "fontSize": 14,
                   "fontWeight": 500,
                   "lineHeight": "17px",
-                  "paddingTop": "7px",
                 }
               }
             >
-              GL JS Docs
+              <div
+                style={
+                  Object {
+                    "paddingTop": 1,
+                  }
+                }
+              >
+                GL JS Docs
+              </div>
             </a>
           </div>
           <div
@@ -105,18 +112,25 @@ exports[`index-card Basic use as a product card with links renders as expected 1
           >
             <a
               aria-label="Mapbox GL JS"
-              className="btn btn--stroke round-full pb6 txt-xs txt-nowrap color-gray-deep px12 color-white-on-hover shadow-white-on-hover txt-fancy-regular bg-green-light-on-hover"
+              className="btn btn--stroke round-full pb6 txt-xs txt-nowrap color-gray-deep px12 color-white-on-hover shadow-white-on-hover txt-fancy-regular flex bg-green-light-on-hover"
               href="https://docs.mapbox.com/mapbox-gl-js/plugins/#framework-integrations"
               style={
                 Object {
                   "fontSize": 14,
                   "fontWeight": 500,
                   "lineHeight": "17px",
-                  "paddingTop": "7px",
                 }
               }
             >
-              JS Frameworks
+              <div
+                style={
+                  Object {
+                    "paddingTop": 1,
+                  }
+                }
+              >
+                JS Frameworks
+              </div>
             </a>
           </div>
         </div>
