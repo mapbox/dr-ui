@@ -151,16 +151,23 @@ const CardContent = ({
 );
 
 const IndexCard = (props) => {
-  const { title, link, isLinkList } = props;
+  const { title, link, isLinkList, colSize } = props;
+  // Col size defaults to w-1/4-mxl if no prop is specified
+  const cols = colSize ? colSize : '1/4';
+  const colsMed = cols.slice(0, -1) + (parseInt(cols.slice(-1), 10) - 1);
+
   return (
     <div
       key={title}
       style={{
         marginBottom: isLinkList && 40
       }}
-      className={classnames('col w-full w-1/2-mm w-1/3-ml w-1/4-mxl', {
-        mb18: !isLinkList
-      })}
+      className={classnames(
+        `col w-full w-1/2-mm w-${colsMed}-ml w-${cols}-mxl`,
+        {
+          mb18: !isLinkList
+        }
+      )}
     >
       <div className="h-full">
         {link ? (
