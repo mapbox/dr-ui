@@ -154,7 +154,7 @@ const IndexCard = (props) => {
   const { title, link, isLinkList, colSize } = props;
   // Col size defaults to w-1/4-mxl if no prop is specified
   const cols = colSize ? colSize : '1/4';
-  const colsMed = cols.slice(0, -1) + (parseInt(cols.slice(-1), 10) - 1);
+  const colsMed = cols.slice(0, -1) + (parseInt(cols.slice(-1)) - 1);
 
   return (
     <div
