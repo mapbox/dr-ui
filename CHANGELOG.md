@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.7.0
+
+- Added `colSize` prop to <IndexCard> component to enable more flexible layouts with index card.
+- Bump `mbx-assembly-docs` version
+
 ## 6.6.0
 
 - Added icon for a new Dive Deeper section on the Help page.
