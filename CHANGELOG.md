@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.7.1
+
+- Bump version to fix improperly published code (root instead of `/pkg`) to npm
+
 ## 6.7.0
 
 - Added `colSize` prop to <IndexCard> component to enable more flexible layouts with index card.
