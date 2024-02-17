@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Button from '@mapbox/mr-ui/button';
+import Icon from '@mapbox/mr-ui/icon';
 
 export const cardBoxShadow = '0px 2px 5px 0px #5F7E9B59';
 
@@ -129,18 +130,22 @@ const CardContent = ({
                   passthroughProps={{
                     'aria-label': link.tooltip,
                     className: classnames(
-                      'btn btn--stroke round-full pb6 txt-xs txt-nowrap color-gray-deep px12 color-white-on-hover shadow-white-on-hover txt-fancy-regular',
+                      'btn btn--stroke round-full pb6 txt-xs txt-nowrap color-gray-deep px12 color-white-on-hover shadow-white-on-hover txt-fancy-regular flex',
                       `bg-${sectionColor}-on-hover`
                     ),
                     style: {
                       fontSize: 14,
                       fontWeight: 500,
-                      lineHeight: '17px',
-                      paddingTop: '7px'
+                      lineHeight: '17px'
                     }
                   }}
                 >
-                  {link.title}
+                  {link.icon && (
+                    <div className="mr3">
+                      <Icon name={link.icon} />
+                    </div>
+                  )}
+                  <div style={{ paddingTop: 1 }}>{link.title}</div>
                 </Button>
               </div>
             );
