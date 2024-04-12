@@ -1,3 +1,6 @@
+## Note:  DR-UI is no longer being maintained.
+As of April 2024, docs.mapbox.com has migrated to a new infrastructure and dr-ui components have been migrated to [docusaurus-packages](https://github.com/mapbox/docusaurus-packages)
+
 # @mapbox/dr-ui
 
 [![Build Status](https://travis-ci.com/mapbox/dr-ui.svg?branch=main)](https://travis-ci.com/mapbox/dr-ui)
