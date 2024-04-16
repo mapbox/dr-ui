@@ -79,7 +79,7 @@
     "unist-util-visit": "^2.0.3"
   },
   "dependencies": {
-    "@elastic/react-search-ui": "1.7.0",
+    "@elastic/react-search-ui": "1.21.1",
     "@elastic/react-search-ui-views": "1.7.0",
     "@elastic/search-ui-site-search-connector": "1.7.0",
     "@mapbox/mapbox-gl-supported": "^2.0.1",
